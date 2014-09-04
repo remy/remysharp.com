@@ -4,7 +4,6 @@ var http = require('http');
 var st = require('st');
 var glob = require('glob');
 var harp = require('harp');
-// var server = require('harp-static');
 var outputPath = __dirname + '/www';
 var port = process.env.PORT || 9000;
 var router = require('router');
@@ -23,15 +22,8 @@ function pad(number, totalCharacters, character) {
 
 // redirects
 route.get('*', function (req, res, next) {
-  req.originalURL = req.url;
-  req.url = req.url.replace(/\?.*$/, '');
-
-  if (req.url.match(/.\/$/)) {
-    res.writeHead(302, { 'location': req.url.replace(/(.)\/$/, '$1')});
-    res.end();
-    return;
-  }
-
+  // required by harp because it thinks I'm using express...
+  req.originalUrl = req.url;
   next();
 });
 
@@ -47,19 +39,25 @@ route.get('/{blog}?/{post}', function (req, res, next) {
 });
 
 
-route.get(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*$)/, function (req, res, next) {
+route.get(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*$)(\/)?/, function (req, res, next) {
   var params = req.params;
   var post = blogs[params[4]];
 
-  if (post) {
+  if (post && post.date) {
     // test if the date matches
 
     // note that with moment, we're specifying the parse format
-    var date = moment(post.date, 'YYYY-MM-DD');
+    var date = moment(post.date.split(' ')[0]);
     var requestDate = params.slice(1, 4).join('-');
 
-    if (!date.isSame(requestDate)) {
+    if (date.format('YYYY-MM-DD') !== requestDate) {
       return next();
+    }
+
+    if (params[5] === '/') {
+      res.writeHead(302, { 'location': req.url.replace(/(.)\/$/, '$1')});
+      res.end();
+      return;
     }
 
     req.url = '/blog/' + params[4];
@@ -68,24 +66,7 @@ route.get(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*$)/, function
   next();
 });
 
-// lastly...
-route.get('*', function (req, res, next) {
-  req.url = req.url.replace(/\?.*$/, '').replace(/(.)\/$/, '$1');
-  if (htmlFiles.indexOf(req.url + '.html') !== -1) {
-    // then we requested /foo/bar and we know there's a
-    // generated file that matches
-    req.url += '.html';
-  }
-
-  mount(req, res, function serve404() {
-    res.writeHead(404);
-    res.end(fourohfour);
-  });
-});
-
-var server = function (root, port) {
-  fourohfour = require('fs').readFileSync(root + '/404.html');
-
+var server = function (root) {
   glob('**/*.html', {
     cwd: root,
     dot: false
@@ -102,15 +83,40 @@ var server = function (root, port) {
     passthrough: true // pass through if not found, so we can send 404
   });
 
-  http.createServer(route).listen(port || process.env.PORT);
+  console.log('Running harp-static on ' + port);
+  http.createServer(route).listen(port);
 };
 
-harp.compile(__dirname, outputPath, function(errors){
-  if(errors) {
-    console.log(JSON.stringify(errors, null, 2));
-    process.exit(1);
-  }
+if (process.env.NODE_ENV === 'production') {
+  // lastly...
+  route.get('*', function (req, res, next) {
+    req.url = req.url.replace(/\?.*$/, '').replace(/(.)\/$/, '$1');
+    if (htmlFiles.indexOf(req.url + '.html') !== -1) {
+      // then we requested /foo/bar and we know there's a
+      // generated file that matches
+      req.url += '.html';
+    }
 
-  console.log('Running harp-static on ' + port);
-  server(outputPath, port);
-});
+    mount(req, res, function serve404() {
+      res.writeHead(404);
+      res.end(fourohfour);
+    });
+  });
+  harp.compile(__dirname, outputPath, function(errors){
+    if(errors) {
+      console.log(JSON.stringify(errors, null, 2));
+      process.exit(1);
+    }
+
+    fourohfour = require('fs').readFileSync(outputPath + '/404.html');
+
+    server(outputPath, port);
+  });
+} else {
+  route.get('*', harp.mount(__dirname + '/public'));
+  route.get('*', function (req, res) {
+    req.url = '/404';
+    harp.mount(__dirname + '/public')(req, res);
+  });
+  server(__dirname + '/public');
+}

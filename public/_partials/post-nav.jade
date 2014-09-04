@@ -18,6 +18,6 @@ each post, i in posts.sort(function(a,b){ a = new Date(a.date); b = new Date(b.d
       //- The actual links
       ul.post-nav
         if next
-          li.next: a(href="#{ next.slug }" title="#{ next.title }") Next
+          li.next: a(href="/#{ moment(next.date).format('YYYY/MM/DD') }/#{ next.slug }" title="#{ next.title }") Next
         if prev
-          li.prev: a(href="#{ prev.slug }" title="#{ prev.title }") Previous
+          li.prev: a(href="/#{ moment(prev.date).format('YYYY/MM/DD') }/#{ prev.slug }" title="#{ prev.title }") Previous

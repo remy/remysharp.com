@@ -31,6 +31,9 @@ body(id="#{current.source}-page")
   footer.site-footer.clearfix
     p.vcard All content by <a class="url fn" href="#{url}">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.
 
-  script(type="text/javascript" src="/js/jquery.fitvids.js")
-  script(type="text/javascript" src="/js/highlight.min.js")
-  script(type="text/javascript" src="/js/index.js")
+  script(src="http://code.jquery.com/jquery-1.11.1.min.js")
+  script.
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+  script(src="/js/jquery.fitvids.js")
+  script(src="/js/highlight.min.js")
+  script(src="/js/index.js")

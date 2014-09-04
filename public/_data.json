@@ -1,4 +1,7 @@
 {
+  "rss": {
+    "layout": false
+  },
   "about": {
     "title": "About",
     "date": "2008-02-29 12:22:50",

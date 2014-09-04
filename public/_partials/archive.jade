@@ -1,0 +1,9 @@
+posts = partial('posts')
+
+extends _partials/layout
+
+block
+  - var f = filter || current.path.slice(-2, -1)[0];
+  ul
+  each post in posts
+    li= post.title

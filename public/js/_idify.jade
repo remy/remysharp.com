@@ -1,0 +1,1 @@
+- return yield ? yield.replace(/<h(\d)>(.*?)<\/h\d>/g, function (all, n, title) {var id = title.replace(/&.*?;/g, '').replace(/[^\w]/g, '').toLowerCase(); return '<h' + n + ' id="' + id + '">' + title + '</h' + n + '>'; }) : '';

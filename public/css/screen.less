@@ -1,3 +1,12 @@
+/* Mixin */
+.transition (@prop: all, @time: 1s, @ease: linear) {
+  -webkit-transition: @prop @time @ease;
+  -moz-transition: @prop @time @ease;
+  -o-transition: @prop @time @ease;
+  -ms-transition: @prop @time @ease;
+  transition: @prop @time @ease;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -74,16 +83,15 @@ img {
 a {
   color: #00126C;
   text-decoration: underline;
-}
 
-a:hover,
-a:focus {
-  background: #1F296C;
-  color: #fff;
-  text-decoration: none;
-  outline: 3px solid #1F296C;
+  &:hover,
+  &:focus {
+    background: #1F296C;
+    color: #fff;
+    text-decoration: none;
+    outline: 3px solid #1F296C;
+  }
 }
-
 
 h3, h4, h5, h6 {
   font-weight: 200;
@@ -124,10 +132,10 @@ blockquote {
   padding: 10px;
   margin: 10px 0;
   font-size: 95%;
-}
 
-blockquote p {
-  margin: 18px 0;
+  p {
+    margin: 18px 0;
+  }
 }
 
 em {
@@ -136,21 +144,55 @@ em {
 
 code {
   font-family: menlo, monaco, courier, 'courier new', 'lucida console', monospace;
+  background: rgb(232, 230, 230);
+  padding: 2px;
+  font-size: 0.9rem;
 }
 
 pre {
   font-family: menlo, monaco, courier, 'courier new', 'lucida console', monospace;
   margin: 10px 0;
+  background: rgb(248, 248, 248);
+  line-height: 1.475;
+  color: #555;
+  border: 1px solid #e9e9e9;
+  border-radius: 2px;
+  direction: ltr;
+  text-align: left;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  word-wrap: break-word;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  -o-hyphens: none;
+  hyphens: none;
+  overflow-x: scroll;
+  display: block;
+  width: 100%;
+  overflow: auto;
+  max-width: 100%;
+
+  code {
+    word-wrap: -moz-break-word;
+    word-wrap: break-word;
+    white-space: pre;
+    word-wrap: normal;
+    display: table-cell !important;
+    /* because iOS is just weird */
+    -webkit-text-size-adjust: none;
+  }
 }
 
 ol {
   line-height: 1.3;
   list-style-type: decimal;
   list-style-position: outside;
-}
 
-ol li {
-  margin-left: 22px;
+  li {
+    margin-left: 22px;
+  }
 }
 
 ul {
@@ -185,11 +227,10 @@ textarea {
   padding: 6px;
   border: 1px solid #aaa;
   background: #fff no-repeat scroll -3px -3px;
-}
 
-input:focus,
-textarea:focus {
-  border: 1px solid #666;
+  &:focus {
+    border: 1px solid #666;
+  }
 }
 
 label {
@@ -211,107 +252,60 @@ body > footer {
   font-size: 90%;
   text-align: center;
   background: black;
+
+  p {
+    line-height: 24px;
+  }
+
+  a {
+    color: #444;
+
+    &:hover,
+    &:focus {
+      background-color: #444;
+      color: #000;
+      outline: 2px solid #444;
+    }
+  }
 }
 
-body > footer p {
-  line-height: 24px;
-}
+.post {
+  h1.title,
+  h2.title {
+    background: #eee;
+    padding: 20px 60px;
+    color: #000;
+    margin: 20px 0 20px 0;
 
-body > footer a {
-  color: #444;
-}
+    a {
+      color: black;
+      text-decoration: none;
 
-body > footer a:hover,
-body > footer a:focus {
-  background-color: #444;
-  color: #000;
-  outline: 2px solid #444;
-}
+      &:focus,
+      &:hover {
+        background: none;
+        text-decoration: underline;
+        outline: none;
+      }
+    }
+  }
 
-.post h2.title,
-.post h1.title {
-  background: #eee;
-  padding: 20px 60px;
-  color: #000;
-  margin: 20px 0 20px 0;
-}
+  h1.title {
+    margin-top: 0;
+  }
 
-.post h1.title {
-  margin-top: 0;
-}
+  h2.title {
+    padding: 20px;
+  }
 
-.post h2.title {
-  padding: 20px;
-}
-
-.post header h2.title {
-  padding: 20px 60px
-}
-
-.post h2.title a,
-.post h1.title a {
-  color: black;
-  text-decoration: none;
-}
-
-.post h2.title a:hover,
-.post h2.title a:focus,
-.post h1.title a:hover,
-.post h1.title a:focus {
-  background: none;
-  text-decoration: underline;
-  outline: none;
-}
-
-code {
-  background: rgb(232, 230, 230);
-  padding: 2px;
-  font-size: 0.9rem;
-}
-
-
-pre {
-  background: rgb(248, 248, 248);
-  /*padding: .576em 1.2em .864em .972em;*/
-  /*margin: 0 0 1.667em;*/
-  line-height: 1.475;
-  /*font-size: 1.05em;*/
-  color: #555;
-  border: 1px solid #e9e9e9;
-  border-radius: 2px;
-  direction: ltr;
-  text-align: left;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
-  tab-size: 2;
-  word-wrap: break-word;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  -o-hyphens: none;
-  hyphens: none;
-  overflow-x: scroll;
-  display: block;
-  width: 100%;
-  overflow: auto;
-  max-width: 100%
+  header h2.title {
+    padding: 20px 60px
+  }
 }
 
 .hljs {
   background: #EAEEEF;
   color: #555;
-}
-
-pre code {
-  word-wrap: -moz-break-word;
-  word-wrap: break-word;
-  white-space: pre;
-  word-wrap: normal;
-  /*margin: -0.125em 0;*/
-  /*padding: 25px !important;*/
-  display: table-cell !important;
-  /* because iOS is just weird */
-  -webkit-text-size-adjust: none;
 }
 
 .post-content,
@@ -382,16 +376,43 @@ ul.flickr {
   float: right;
   width: 160px;
   margin-bottom: 20px;
+
+  a {
+    background: transparent;
+    outline: none;
+  }
+
+  img {
+    display: block;
+  }
+
+  li {
+    margin: 1px;
+    height: 75px;
+    width: 75px;
+    display: block;
+    float: left;
+    padding: 0;
+    .transition(opacity, 200ms, ease-out)
+  }
+
+  &:hover {
+    li {
+      opacity: 0.5;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
 }
 
-ul.flickr li {
-  margin: 1px;
-}
 
 small.edit {
   margin-left: 10px;
   font-size: 50%;
-  opacity: 0.5;
+  opacity: 0;
 }
 
 ul.post-nav {
@@ -400,49 +421,46 @@ ul.post-nav {
   padding: 0;
   margin: 0;
   font-size: 90%;
-}
+  li {
+    display: inline;
+    padding-top: 20px;
 
-ul.post-nav li {
-  display: inline;
-  padding-top: 20px;
-}
+    &.prev {
+      float: left;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      &:before {
+        content: '« ';
+      }
+    }
 
-ul.post-nav li.prev {
-  float: left;
-  padding-bottom: 20px;
-  padding-left: 20px;
-}
+    &.next {
+      float: right;
+      padding-right: 20px;
 
-ul.post-nav li.prev:before {
-  content: '« ';
-}
-
-ul.post-nav li.next {
-  float: right;
-  padding-right: 20px;
-}
-
-ul.post-nav li.next:after {
-  content: ' »';
+      &:after {
+        content: ' »';
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-  .post-content, 
-  .comments { 
-    margin-left: 0; 
-    margin-right: 0; 
+  .post-content,
+  .comments {
+    margin-left: 0;
+    margin-right: 0;
     padding: 0 10px;
   }
-  
+
   #index-page h1.title,
   #index-page h2.title,
   .post h1.title {
     margin: 0;
     padding: 10px;
   }
-  
+
   body > footer {
     font-size: 80%;
   }
-  
 }
