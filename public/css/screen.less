@@ -413,6 +413,11 @@ small.edit {
   margin-left: 10px;
   font-size: 50%;
   opacity: 0;
+  .transition(opacity, 50ms, ease-out)
+}
+
+h1:hover small.edit {
+  opacity: 0.5;
 }
 
 ul.post-nav {

@@ -7,7 +7,7 @@ infinite loop, but *how* to find that code was a mission.
 
 <!--more-->
 
-[![http://d.pr/i/Tvcn+](http://d.pr/i/Tvcn+)](http://d.pr/i/Tvcn)
+[![/images/high-cpu.png](/images/high-cpu.png)](/images/high-cpu.png)
 
 ## Getting help
 
@@ -32,7 +32,7 @@ A huge, huge thanks to Vyacheslav for his solution - what a star!
 ## Getting a stacktrace from an infinite loop
 
 You need `gdb` to attach to the process, set a breakpoint in the next runtime
-stack guard (I believe this is the [Chrome "kill/wait" box](http://d.pr/i/fztx)),
+stack guard (I believe this is the [Chrome "kill/wait" box](/images/stylus-nuke.png)),
 then continue execution.
 
 The process breaks correctly, then you insert an exception that causes a full

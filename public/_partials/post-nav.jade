@@ -1,8 +1,9 @@
 posts = []
-for post, slug in public.blog._data
+blogs = public.blog || public.public.blog
+for post, slug in blogs._data
   if post.date && post.published!==false
     - post.slug = slug
-    - posts.push(public.blog._data[slug])
+    - posts.push(blogs._data[slug])
 
 //- Iterate over the posts array
 each post, i in posts.sort(function(a,b){ a = new Date(a.date); b = new Date(b.date); return b<a?-1:b>a?1:0; }).reverse().slice(0, postlimit)

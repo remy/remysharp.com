@@ -1,6 +1,11 @@
-- return Object.keys(public.blog._data).map(function (slug) {
--   var post = public.blog._data[slug];
+if !moment
+  != partial('../js/moment')
+
+- var blog = public.blog; // || public.public.blog;
+- return Object.keys(blog._data).map(function (slug) {
+-   var post = blog._data[slug];
 -   post.slug = slug;
+-   post.url = site_url + '/' + moment(post.date).format('YYYY/MM/DD') + '/' + post.slug;
 -   return post;
 - }).sort(function(a,b){
 -   if (!a.date) return 0;

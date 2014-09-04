@@ -21,13 +21,13 @@ function pad(number, totalCharacters, character) {
 
 
 // redirects
-route.get('*', function (req, res, next) {
+route.all('*', function (req, res, next) {
   // required by harp because it thinks I'm using express...
   req.originalUrl = req.url;
   next();
 });
 
-route.get('/{blog}?/{post}', function (req, res, next) {
+route.all('/{blog}?/{post}', function (req, res, next) {
   var post = blogs[req.params.post];
   if (post) {
     var url = moment(post.date).format('/YYYY/MM/DD/') + req.params.post;
@@ -39,7 +39,7 @@ route.get('/{blog}?/{post}', function (req, res, next) {
 });
 
 
-route.get(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*$)(\/)?/, function (req, res, next) {
+route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*$)(\/)?/, function (req, res, next) {
   var params = req.params;
   var post = blogs[params[4]];
 
@@ -113,10 +113,10 @@ if (process.env.NODE_ENV === 'production') {
     server(outputPath, port);
   });
 } else {
-  route.get('*', harp.mount(__dirname + '/public'));
-  route.get('*', function (req, res) {
+  route.all('*', harp.mount(__dirname));
+  route.all('*', function (req, res) {
     req.url = '/404';
-    harp.mount(__dirname + '/public')(req, res);
+    harp.mount(__dirname)(req, res);
   });
   server(__dirname + '/public');
 }

@@ -1,0 +1,28 @@
+posts = partial('_partials/posts', { postlimit: 20 })
+
+doctype xml
+rss(version='2.0'
+  xmlns:content='http://purl.org/rss/1.0/modules/content/'
+  xmlns:wfw='http://wellformedweb.org/CommentAPI/'
+  xmlns:dc='http://purl.org/dc/elements/1.1/'
+  xmlns:atom='http://www.w3.org/2005/Atom'
+  xmlns:sy='http://purl.org/rss/1.0/modules/syndication/'
+  xmlns:slash='http://purl.org/rss/1.0/modules/slash/')
+  channel
+    title #{ site_title }
+    atom:link(href="#{ site_url }/feed/" rel="self" type="application/rss+xml")
+    link #{ site_url }
+    description #{ site_description }
+    lastBuildDate #{ moment(posts[0].date).format('ddd, DD MMM YYYY H:mm:ss +0000') }
+    language en-US
+    sy:updatePeriod hourly
+    sy:updateFrequency 1
+
+    each post in posts
+      item
+        title #{ post.title }
+        guid(isPermaLink="false")= post.slug
+        link #{ post.url }
+        pubDate #{ moment(post.date).format('ddd, DD MMM YYYY H:mm:ss +0000') }
+        description <![CDATA[!{ partial('blog/' + post.slug).replace(/<h1>.*?<\/h1>/, '').split('<!--more-->')[0].replace(/(<([^>]+)>)/ig, '').trim() }]]>
+        content:encoded <![CDATA[!{ partial('blog/' + post.slug).replace(/<h1>.*?<\/h1>/, '').replace(/<!--more-->\s\n+/m, '') }]]>

@@ -7,8 +7,8 @@ html#remysharp-com
 head
   meta(charset="utf-8")
   meta(http-equiv="X-UA-Compatible" content="IE=edge")
-  title= title
-  meta(name="description",content="#{description}")
+  title= title || site_title
+  meta(name="description",content="#{site_description}")
   meta(name="HandheldFriendly" content="True")
   meta(name="viewport" content="width=device-width, initial-scale=1.0")
 
@@ -22,7 +22,7 @@ head
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-    ga('create', 'UA-1656750-1', 'auto');
+    ga('create', '#{analytics}', 'auto');
     ga('send', 'pageview');
 body(id="#{current.source}-page")
   != partial(prefix + '/js/moment')

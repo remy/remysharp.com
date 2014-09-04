@@ -13,7 +13,7 @@ block content
             a(href="/#{current.source}")= title
           else
             a(href="/#{current.source}")= altTitle
-          small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/blog#{current.source}.md") (edit)
+          small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/blog/#{current.source}.md") (edit)
 
         .post-content
           - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
