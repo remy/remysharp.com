@@ -108,10 +108,15 @@ if (process.env.NODE_ENV === 'production') {
       req.url += '.html';
     }
 
-    mount(req, res, function serve404() {
+    if (mount) {
+      mount(req, res, function serve404() {
+        res.writeHead(404);
+        res.end(fourohfour);
+      });
+    } else {
       res.writeHead(404);
-      res.end(fourohfour);
-    });
+      res.end();
+    }
   });
 
   console.log('Running harp-static on ' + port);
