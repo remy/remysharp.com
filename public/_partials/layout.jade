@@ -26,9 +26,11 @@ head
     ga('send', 'pageview');
 body(id="#{current.path.join('-')}-page")
 
+  != partial(prefix + '/_partials/page-nav')
+
   block content
 
-  footer.site-footer.clearfix.flex
+  footer.site-footer.clearfix.flex.subpanel
     .flex-item.archives
       h2 Archives
       ul
@@ -40,13 +42,13 @@ body(id="#{current.path.join('-')}-page")
       h2 Links
       ul
         li: a(href="/about") About Remy
-        li: a(target="_blank" href="/rss.xml") RSS feed
+        li: a(target="_blank" href="/feed.xml") RSS feed
         li: a(target="_blank" href="https://github.com/remy") On GitHub
         li: a(target="_blank" href="https://twitter.com/rem") On Twitter
-        li: a(target="_blank" href="http://lanyrd.com/rem") Speaking
+        li: a(target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/") Presentations
     .flex-item.license
       h2 License
-      p.vcard All content by <a class="url fn" href="#{url}">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.
+      p.vcard All content by <a class="url fn" href="#{site_url}">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.
       :markdown
         All code and content for this blog is available as [open source on GitHub](https://github.com/remy/remysharp.com).
 
@@ -56,7 +58,6 @@ body(id="#{current.path.join('-')}-page")
   script(src="/js/jquery.fitvids.js")
   script(src="/js/highlight.min.js")
   script(src="/js/index.js")
-
   //
     |  
     |  

@@ -10,4 +10,9 @@
 -   a = +new Date(a.date);
 -   b = +new Date(b.date);
 -   return a-b;
-- }).reverse().slice(0, postlimit)
+- }).reverse().filter(function (post) {
+-   if (filter) {
+-      return filter(post);
+-   }
+-   return post;
+- }).slice(0, postlimit)

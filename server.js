@@ -1,6 +1,7 @@
 'use strict';
 
 var http = require('http');
+var fs = require('fs');
 var st = require('st');
 var glob = require('glob');
 var harp = require('harp');
@@ -14,19 +15,20 @@ var mount;
 var moment = require('moment');
 var htmlFiles = [];
 
+Object.keys(blogs).forEach(function (slug) {
+  if (blogs[slug].tags.length) {
+    blogs[slug].tags.forEach(function (tag) {
+      fs.mkdir(__dirname + '/public/tag/' + tag, function () {});
+    });
+  }
+});
+
 // this line, although dirty, ensures that Harp templates
 // have access to moment - which given the whole partial
 // import hack doesn't work consistently across dynamic vs
 // compiled, this is the cleanest solution.
 global.moment = moment;
 
-function pad(number, totalCharacters, character) {
-  var string = String(number);
-  return string.length < totalCharacters ? (Array(totalCharacters + 1).join(character || '0') + string).slice(-totalCharacters) : string;
-}
-
-
-// redirects
 route.all('*', function (req, res, next) {
   // required by harp because it thinks I'm using express...
   req.originalUrl = req.url;

@@ -1,3 +1,6 @@
+@subpanel-background: lighten(black, 10%);
+@subpanel-color: lighten(@subpanel-background, 40%);
+
 /* Mixins */
 .transition (@prop: all, @time: 1s, @ease: linear) {
   -webkit-transition: @prop @time @ease;
@@ -380,6 +383,7 @@ textarea {
 
 .post-content,
 .comments {
+  position: relative;
   margin: 0 40px 20px 40px;
   padding: 0 20px;
 }
@@ -432,52 +436,56 @@ time {
   vertical-align: bottom;
 }
 
-ul.elsewhere {
-  clear: left;
-  padding: 0;
-  padding-left: 13px;
-}
-
-ul.flickr {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-left: 10px;
-  float: right;
-  width: 160px;
-  margin-bottom: 20px;
-
-  a {
-    background: transparent;
-    outline: none;
-  }
-
-  img {
-    display: block;
-  }
-
-  li {
-    margin: 1px;
-    height: 75px;
-    width: 75px;
-    display: block;
-    float: left;
+.elsewhere {
+  ul.elsewhere {
+    clear: left;
     padding: 0;
-    .transition(opacity, 200ms, ease-out)
+    padding-left: 13px;
+    margin-right: 180px;
   }
 
-  &:hover {
-    li {
-      opacity: 0.5;
+  ul.flickr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+    padding: 0;
+    float: right;
+    width: 160px;
+    margin: 0 20px;
 
-      &:hover {
-        opacity: 1;
+    a {
+      background: transparent;
+      outline: none;
+    }
+
+    img {
+      display: block;
+    }
+
+    li {
+      margin: 1px;
+      height: 75px;
+      width: 75px;
+      display: block;
+      float: left;
+      padding: 0;
+      .transition(opacity, 200ms, ease-out)
+    }
+
+    &:hover {
+      li {
+        opacity: 0.5;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
+
   }
 
 }
-
 
 small.edit {
   margin-left: 10px;
@@ -527,32 +535,30 @@ small.date {
   margin-left: 10px;
 }
 
-body > footer {
-  @bg: lighten(black, 10%);
 
-  // margin: 0 40px 20px 40px;
-  padding: 10px 60px;
-  clear: both;
-  // padding: 10px;
-  color: #444;
-  font-size: 90%;
-  // text-align: center;
-  color: lighten(@bg, 40%);
-  background: @bg;
-
-  p {
-    line-height: 24px;
-  }
-
+.subpanel {
+  background: @subpanel-background;
+  color: @subpanel-color;
   a {
-    color: lighten(@bg, 50%);
+    color: lighten(@subpanel-background, 50%);
 
     &:hover,
     &:focus {
       background-color: #444;
-      color: #000;
+      color: lighten(@subpanel-background, 70%);
       outline: 2px solid #444;
     }
+  }
+}
+
+
+body > footer {
+  padding: 10px 60px;
+  clear: both;
+  font-size: 90%;
+
+  p {
+    line-height: 24px;
   }
 
   ul {
@@ -570,7 +576,7 @@ body > footer {
   .license  { .flex(4, 7); }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 720px) {
   body {
     font-size: 90%;
     line-height: 28px;
@@ -591,12 +597,28 @@ body > footer {
   }
 
   body > footer {
-    font-size: 80%;
     padding: 0 10px;
+
+    p { line-height: 18px; }
 
     .archives { .flex(1 auto); }
     .links    { .flex(1 auto); }
     .license  { .flex(2 auto); }
 
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .elsewhere {
+    ul.elsewhere {
+      margin-right: 0;
+    }
+    ul.flickr {
+      position: relative;
+      width: 310px;
+      float: none;
+      margin: 20px auto;
+      overflow: hidden;
+    }
   }
 }

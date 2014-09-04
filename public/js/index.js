@@ -53,19 +53,20 @@ function loadFlickr() {
 
 }
 
-if (window.location.hash.indexOf('#comments') > 0) {
-  loadDisqus();
-}
+// if (window.location.hash.indexOf('#comments') > 0) {
+//   loadDisqus();
+// }
 
 if (comments) {
-  var commentsOffset = findTop(comments);
+  loadDisqus();
+  // var commentsOffset = findTop(comments);
 
-  window.onscroll = function () {
-    if(!disqusLoaded && window.pageYOffset > commentsOffset - 1500) {
-      console.log('load comments, NOW!!');
-      loadDisqus();
-    }
-  };
+  // window.onscroll = function () {
+  //   if(!disqusLoaded && window.pageYOffset > commentsOffset - 1500) {
+  //     console.log('load comments, NOW!!');
+  //     loadDisqus();
+  //   }
+  // };
 }
 
 if ($('#index-page').length) {
