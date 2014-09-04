@@ -95,8 +95,7 @@ var server = function (root) {
     passthrough: true // pass through if not found, so we can send 404
   });
 
-  console.log('Running harp-static on ' + port);
-  http.createServer(route).listen(port);
+  console.log('compilation complete');
 };
 
 if (process.env.NODE_ENV === 'production') {
@@ -114,6 +113,10 @@ if (process.env.NODE_ENV === 'production') {
       res.end(fourohfour);
     });
   });
+
+  console.log('Running harp-static on ' + port);
+  http.createServer(route).listen(port);
+
   harp.compile(__dirname, outputPath, function(errors){
     if(errors) {
       console.log(JSON.stringify(errors, null, 2));
