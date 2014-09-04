@@ -29,8 +29,26 @@ body(id="#{current.path.join('-')}-page")
 
   block content
 
-  footer.site-footer.clearfix
-    p.vcard All content by <a class="url fn" href="#{url}">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.
+  footer.site-footer.clearfix.flex
+    .flex-item.archives
+      h2 Archives
+      ul
+        li: a(href="/archive") All years
+        - var thisyear = moment().format('YYYY') * 1
+        while thisyear >= 2006
+          li: a(href="/#{ thisyear }") #{ thisyear-- }
+    .flex-item.links
+      h2 Links
+      ul
+        li: a(href="/about") About Remy
+        li: a(target="_blank" href="https://github.com/remy") On GitHub
+        li: a(target="_blank" href="https://twitter.com/rem") On Twitter
+        li: a(target="_blank" href="http://lanyrd.com/rem") Speaking
+    .flex-item.license
+      h2 License
+      p.vcard All content by <a class="url fn" href="#{url}">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.
+      :markdown
+        All code and content for this blog is available as [open source on GitHub](https://github.com/remy/remysharp.com).
 
   script(src="http://code.jquery.com/jquery-1.11.1.min.js")
   script.

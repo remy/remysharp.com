@@ -23,7 +23,7 @@ If you want to get in touch to discuss a potential project, please feel free to 
 
 ## A Short History
 
-The nice people at .net magazine were nice enough to interview me, so you can [read about how I got in to this industry and what keeps me excited](http://www.netmagazine.com/interviews/remy-sharp-learning-breaking-stuff).
+The nice people at .net magazine were nice enough to interview me, so you can [read about how I got in to this industry and what keeps me excited](http://www.creativebloq.com/html5/remy-sharp-learning-breaking-stuff-11125970).
 
 Brought up in Worthing (a sorry town, originally filled with old folk, now brimming with chavs), slipped through Boundstone high school, on to Worthing Sixth Form (oh - the good times) then after receiving an automatic acceptance to my second choice on the morning of my results, I guessed that I may not have done so well.  I went through clearing taking Computer Information Systems Design at [Kingston](http://cism.kingston.ac.uk/).
 
@@ -51,10 +51,8 @@ Phew - sorry, that wasn't really a short history!
 
 Other places you can find me on the web:
 
-* <a rel="me" href="http://github.com/remy">Github</a>
-* <a rel="me" href="http://twitter.com/rem">Twitter</a>
-* <a rel="me" href="http://www.linkedin.com/in/remysharp">LinkedIn</a>
-* <a rel="me" href="http://lanyrd.com/people/rem/">Lanyrd</a>
-* <a rel="me" href="http://www.last.fm/user/remysharp">Last.fm</a>
-* <a rel="me" href="http://upcoming.yahoo.com/user/93082/">Upcoming</a>
-* <a rel="me" href="http://technorati.com/people/technorati/remysharp">Technorati</a>
+* [Github](http://github.com/remy)
+* [Twitter](http://twitter.com/rem)
+* [LinkedIn](http://www.linkedin.com/in/remysharp)
+* [Lanyrd](http://lanyrd.com/people/rem/)
+* [Last.fm](http://www.last.fm/user/remysharp)

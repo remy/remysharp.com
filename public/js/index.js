@@ -73,4 +73,4 @@ if ($('#index-page').length) {
 }
 
 hljs.initHighlightingOnLoad();
-$('.entrytext').fitVids();
+$('.post').fitVids();

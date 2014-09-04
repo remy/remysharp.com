@@ -1,4 +1,4 @@
-/* Mixin */
+/* Mixins */
 .transition (@prop: all, @time: 1s, @ease: linear) {
   -webkit-transition: @prop @time @ease;
   -moz-transition: @prop @time @ease;
@@ -7,11 +7,107 @@
   transition: @prop @time @ease;
 }
 
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.flexbox(@dir:row, @justifycontent:flex-start) {
+  width:100%;
+  display:-webkit-box;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display: -webkit-flex;
+  display:flex;
+
+  .flexdirection(@dir);
+  .flexjustify(@justifycontent);
+
+  .no-flexboxlegacy & { .clearfix();
+    > * { float:left; }
+  }
+}
+
+.flexdirection(@dir:row) when(@dir = row) {
+  -webkit-box-orient:horizontal;
+  -moz-box-orient:horizontal;
+  -ms-box-orient:horizontal;
+}
+.flexdirection(@dir:row) when(@dir = column) {
+  -webkit-box-orient:vertical;
+  -moz-box-orient:vertical;
+  -ms-box-orient:vertical;
+}
+.flexdirection(@dir) {
+  -webkit-flex-direction:@dir;
+  -ms-flex-direction:@dir;
+  flex-direction:@dir;
+}
+
+.flexjustify(@jc: flex-start) when(@jc = flex-start) {
+  -webkit-box-pack:start;
+  -moz-box-pack:start;
+  -ms-box-pack:start;
+}
+.flexjustify(@jc: flex-start) when(@jc = flex-end) {
+  -webkit-box-pack:end;
+  -moz-box-pack:end;
+  -ms-box-pack:end;
+}
+.flexjustify(@jc: flex-start) when(@jc = space-between) {
+  -webkit-box-pack:justify;
+  -moz-box-pack:justify;
+  -ms-box-pack:justify;
+}
+.flexjustify(@jc) {
+  -webkit-justify-content:@jc;
+  justify-content:@jc;
+}
+
+.flex(@var: 1, @total: 1) {
+  -webkit-box-flex:@var;
+  -moz-box-flex:@var;
+  -webkit-flex:@var;
+  -ms-flex:@var;
+  flex:@var;
+  // .no-flexbox & {
+  //   width: @var/@total*100%;
+  // }
+}
+
+.order(@number){
+  -webkit-box-ordinal-group: @number;
+  -moz-box-ordinal-group: @number;
+  -ms-flex-order: @number;
+  -webkit-order: @number;
+  order: @number;
+}
+
+
+// // Flex Direction and Wrap
+// // - applies to: flex containers
+// // <flex-direction> || <flex-wrap>
+.flex-flow(@flow) {
+  -webkit-flex-flow: @flow;
+     -moz-flex-flow: @flow;
+      -ms-flex-flow: @flow;
+          flex-flow: @flow;
+}
+
+// slap it on everything styles
 * {
   box-sizing: border-box;
 }
 
-/** RESET (http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/) */
+// RESET (http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/)
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,10 +125,6 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-size: 100%;
   font-family: inherit;
   vertical-align: baseline;
-}
-/* remember to define focus styles! */
-:focus {
-  outline: 0;
 }
 body {
   line-height: 1;
@@ -59,7 +151,7 @@ blockquote, q {
   quotes: "" "";
 }
 
-/** Unreset - base elements */
+// here be my styles
 
 html {
   font-size: 120%;
@@ -71,6 +163,7 @@ body {
   font: 0.625em 'helvetica neue', arial, sans-serif;
   font-size: 100%;
   font-weight: 200;
+  line-height: 32px;
   background: rgb(255, 255, 255);
   margin: 0 auto 15px auto;
   max-width: 800px;
@@ -93,14 +186,10 @@ a {
   }
 }
 
-h3, h4, h5, h6 {
-  font-weight: 200;
-  margin: 16px 0;
-}
-
 h1 {
   font-size: 180%;
   font-weight: 600;
+  line-height: 42px;
 }
 
 h2 {
@@ -112,9 +201,13 @@ h3 {
   font-size: 120%;
 }
 
+h3, h4, h5, h6 {
+  font-weight: 200;
+  margin: 16px 0;
+}
+
 p {
   margin: 28px 0;
-  line-height: 32px;
 }
 
 small {
@@ -243,30 +336,6 @@ label {
 textarea {
   height: 100px;
   width: 97%;
-}
-
-body > footer {
-  clear: both;
-  padding: 10px;
-  color: #444;
-  font-size: 90%;
-  text-align: center;
-  background: black;
-
-  p {
-    line-height: 24px;
-  }
-
-  a {
-    color: #444;
-
-    &:hover,
-    &:focus {
-      background-color: #444;
-      color: #000;
-      outline: 2px solid #444;
-    }
-  }
 }
 
 .post {
@@ -458,7 +527,55 @@ small.date {
   margin-left: 10px;
 }
 
+body > footer {
+  @bg: lighten(black, 10%);
+
+  // margin: 0 40px 20px 40px;
+  padding: 10px 60px;
+  clear: both;
+  // padding: 10px;
+  color: #444;
+  font-size: 90%;
+  // text-align: center;
+  color: lighten(@bg, 40%);
+  background: @bg;
+
+  p {
+    line-height: 24px;
+  }
+
+  a {
+    color: lighten(@bg, 50%);
+
+    &:hover,
+    &:focus {
+      background-color: #444;
+      color: #000;
+      outline: 2px solid #444;
+    }
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  .license p {
+    margin-top: 12px;
+  }
+
+  .flexbox();
+  .flex-flow(row wrap);
+  .archives { .flex(2, 7); }
+  .links    { .flex(3, 7); }
+  .license  { .flex(4, 7); }
+}
+
 @media only screen and (max-width: 1024px) {
+  body {
+    font-size: 90%;
+    line-height: 28px;
+  }
+
   .post-content,
   .comments {
     margin-left: 0;
@@ -475,5 +592,11 @@ small.date {
 
   body > footer {
     font-size: 80%;
+    padding: 0 10px;
+
+    .archives { .flex(1 auto); }
+    .links    { .flex(1 auto); }
+    .license  { .flex(2 auto); }
+
   }
 }
