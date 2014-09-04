@@ -1,0 +1,12 @@
+tag = filter === undefined ? current.path.slice(-2, -1)[0] : filter;
+posts = partial('posts', { filter: function (post) { return post.tags.indexOf(tag) !== -1 } })
+.post
+  h1.title Tagged with "#{ tag }"
+  .post-content
+    ul
+      while posts.length
+        post = posts.shift()
+        if post.date
+          li
+            a(href="#{ post.relative }") #{ post.title }
+            small.date #{ moment(post.date).format('D-MMM YYYY')}
