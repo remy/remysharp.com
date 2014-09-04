@@ -272,6 +272,7 @@ body > footer {
 .post {
   h1.title,
   h2.title {
+    position: relative;
     background: #eee;
     padding: 20px 60px;
     color: #000;
@@ -413,7 +414,9 @@ small.edit {
   margin-left: 10px;
   font-size: 50%;
   opacity: 0;
-  .transition(opacity, 50ms, ease-out)
+  .transition(opacity, 50ms, ease-out);
+  position: absolute;
+  bottom: 20px;
 }
 
 h1:hover small.edit {
