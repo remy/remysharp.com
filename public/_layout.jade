@@ -1,0 +1,15 @@
+extends _partials/layout
+
+block content
+  main.content(role="main")
+    if current.source === 'index'
+      != yield
+    else
+      article.post
+        h1.title
+          a(href="/#{current.source}")= title
+          small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/blog#{current.source}.md") (edit)
+
+        .post-content
+          - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
+          != yield

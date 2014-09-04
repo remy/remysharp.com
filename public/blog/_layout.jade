@@ -1,0 +1,29 @@
+extends ../_partials/layout
+
+block content
+  nav.main-nav.clearfix
+    != partial('../_partials/post-nav')
+    //- a.back-button.icon-arrow-left(href="#{url}") Home
+    //- a.subscribe-button.icon-feed(href="#{url}/rss/") Subscribe
+
+  main.content(role="main")
+    article.post
+      h1.title
+        a(href="/blog/#{current.source}" rel="bookmark" title="Permanent Link: #{title}")= title
+        small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/blog#{current.source}.md") (edit)
+
+      .post-content
+        //- strip the h1 out of the body as we printed it above as the permalink
+        - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
+        != yield
+
+        p.follow You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p>
+
+      .comments
+        h2 Comments
+        #disqus_thread
+        script.
+          var disqus_shortname = 'remysharp';
+          var disqus_url = 'http://remysharp.com/#{moment(date, 'YYYY-MM-DD HH:mm:ss').format('YYYY/MM/DD')}/#{current.source}/';
+        noscript Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        a.dsq-brlink(href="http://disqus.com") comments powered by <span class="logo-disqus">Disqus</span></a>

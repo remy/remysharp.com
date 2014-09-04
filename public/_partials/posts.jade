@@ -1,0 +1,10 @@
+- return Object.keys(public.blog._data).map(function (slug) {
+-   var post = public.blog._data[slug];
+-   post.slug = slug;
+-   return post;
+- }).sort(function(a,b){
+-   if (!a.date) return 0;
+-   a = +new Date(a.date);
+-   b = +new Date(b.date);
+-   return a-b;
+- }).reverse().slice(0, postlimit)

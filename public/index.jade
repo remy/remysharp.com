@@ -1,0 +1,55 @@
+posts = partial('_partials/posts', { postlimit: 1 })
+latest = posts[0]
+
+h1.title
+  img.icon.photo(alt="Remy Sharp's blog" src="http://twitter.com/api/users/profile_image/rem" height=50 width=50)
+  | &nbsp;Welcome!
+
+.post-content.addr
+  :markdown
+    Hello and welcome to my <a class="url" href="#{url}">b:log</a>. I'm <span class="fn n">Remy Sharp</span>, a developer running my own business called <a class="org url" href="http://leftlogic.com">Left Logic</a> out of <span class="locality">Brighton</span>, <abbr title="United Kingdom">UK</abbr>. This place will mostly concentrate on <a href="/tag/web/">web</a> with a touch of <a href="/tag/business/">business</a> – but has some other  <a href="/tag/personal/">personal pieces</a> too</a>. Enjoy!
+
+pre.
+  #{JSON.stringify(latest, '', 2)}
+
+article.post
+  header.post-header
+    h2.title
+      //- a(href="/blog/#{latest.slug}")= latest.title
+  section.post-excerpt.post-content
+    //- != partial('blog/' + latest.slug).split('<!--more-->')[0].replace(/<h1>.*?<\/h1>/, '').trim()
+    p
+      a(href="/blog/#{latest.slug}") Read the rest of this entry &raquo;
+
+article.post
+  header.post-header
+    h2.title Remy Elsewhere
+  .post-content
+    ul.elsewhere
+      li
+        a(href="http://twitter.com/rem" rel="me" title="tweet, tweet") @rem &gt; follow me on Twitter
+        | &nbsp;- tweet, tweet
+      li
+        a(href="http://pinboard.in/u:rem" rel="me" title="link goodness") Bookmarks
+        | &nbsp;- link goodness
+      li
+        a(href="http://flickr.com/photos/remysharp" rel="me" title="some for fun, some for geek") Flickr
+        | &nbsp;- some for fun, some for geek
+      li
+        a(href="http://github.com/remy/" rel="me" title="Fork me!") Github
+        | &nbsp;- Fork me!
+      li
+        a(href="http://hacks.remysharp.com" rel="me" title="for the stuff that falls between the cracks") Hacks and demos
+        | &nbsp;- for the stuff that falls between the cracks
+      li
+        a(href="http://jqueryfordesigners.com" rel="me" title="tutorials &amp; screencasts") jQuery for Designers
+        | &nbsp;- tutorials &amp; screencasts
+      li
+        a(href="http://leftlogic.com" rel="me" title="my business: hire me") Left Logic
+        | &nbsp;- my business: hire me
+      li
+        a(href="http://www.ihatemusic.com" rel="me" title="old skool palm apps") Palm Apps
+        | &nbsp;- old skool palm apps
+      li
+        a(href="http://lanyrd.com/people/rem/" rel="me" title="my conf talks") Talks on Lanyrd
+        | &nbsp;- my conf talks
