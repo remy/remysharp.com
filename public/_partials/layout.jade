@@ -24,8 +24,9 @@ head
 
     ga('create', '#{analytics}', 'auto');
     ga('send', 'pageview');
-body(id="#{current.source}-page")
+body(id="#{current.path.join('-')}-page")
   != partial(prefix + '/js/moment')
+
   block content
 
   footer.site-footer.clearfix

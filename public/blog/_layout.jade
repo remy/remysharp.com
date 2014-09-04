@@ -10,7 +10,7 @@ block content
     article.post
       h1.title
         a(href="/blog/#{current.source}" rel="bookmark" title="Permanent Link: #{title}")= title
-        small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/blog#{current.source}.md") (edit)
+        small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/blog/#{current.source}.md") (edit)
 
       .post-content
         //- strip the h1 out of the body as we printed it above as the permalink

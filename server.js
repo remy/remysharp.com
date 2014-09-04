@@ -38,8 +38,7 @@ route.all('/{blog}?/{post}', function (req, res, next) {
   next();
 });
 
-
-route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*$)(\/)?/, function (req, res, next) {
+route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/, function (req, res, next) {
   var params = req.params;
   var post = blogs[params[4]];
 
@@ -63,6 +62,11 @@ route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*$)(\/)?/, fun
     req.url = '/blog/' + params[4];
   }
 
+  next();
+});
+
+route.all(/^\/([0-9]{4})(\/?)$/, function (req, res, next) {
+  req.url = '/archive/' + req.params[1] + '/';
   next();
 });
 

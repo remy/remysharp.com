@@ -6,6 +6,7 @@ if !moment
 -   var post = blog._data[slug];
 -   post.slug = slug;
 -   post.url = site_url + '/' + moment(post.date).format('YYYY/MM/DD') + '/' + post.slug;
+-   post.relative = '/' + moment(post.date).format('YYYY/MM/DD') + '/' + post.slug;
 -   return post;
 - }).sort(function(a,b){
 -   if (!a.date) return 0;
