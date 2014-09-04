@@ -1,7 +1,4 @@
-if !moment
-  != partial('../js/moment')
-
-- var blog = public.blog; // || public.public.blog;
+- var blog = public.blog || public.public.blog;
 - return Object.keys(blog._data).map(function (slug) {
 -   var post = blog._data[slug];
 -   post.slug = slug;

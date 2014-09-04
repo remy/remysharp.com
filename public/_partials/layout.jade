@@ -25,7 +25,6 @@ head
     ga('create', '#{analytics}', 'auto');
     ga('send', 'pageview');
 body(id="#{current.path.join('-')}-page")
-  != partial(prefix + '/js/moment')
 
   block content
 
@@ -41,6 +40,7 @@ body(id="#{current.path.join('-')}-page")
       h2 Links
       ul
         li: a(href="/about") About Remy
+        li: a(target="_blank" href="/rss.xml") RSS feed
         li: a(target="_blank" href="https://github.com/remy") On GitHub
         li: a(target="_blank" href="https://twitter.com/rem") On Twitter
         li: a(target="_blank" href="http://lanyrd.com/rem") Speaking
