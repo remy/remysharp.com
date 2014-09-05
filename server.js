@@ -138,5 +138,8 @@ if (process.env.NODE_ENV === 'production') {
     req.url = '/404';
     harp.mount(__dirname)(req, res);
   });
+  console.log('Running harp-static on ' + port);
+  http.createServer(route).listen(port);
+
   server(__dirname + '/public');
 }

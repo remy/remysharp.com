@@ -26,7 +26,7 @@ head
     ga('send', 'pageview');
 body(id="#{current.path.join('-')}-page")
 
-  != partial(prefix + '/_partials/page-nav')
+  != partial('_partials/page-nav')
 
   block content
 
