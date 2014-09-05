@@ -124,16 +124,8 @@ function run() {
     console.log('Running harp-static on ' + port);
     http.createServer(route).listen(port);
 
-    harp.compile(__dirname, outputPath, function(errors){
-      if(errors) {
-        console.log(JSON.stringify(errors, null, 2));
-        process.exit(1);
-      }
-
-      fourohfour = require('fs').readFileSync(outputPath + '/404.html');
-
-      server(outputPath, port);
-    });
+    fourohfour = require('fs').readFileSync(outputPath + '/404.html');
+    server(outputPath, port);
   } else {
     route.all('*', harp.mount(__dirname));
     route.all('*', function (req, res) {
