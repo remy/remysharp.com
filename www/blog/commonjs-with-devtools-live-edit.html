@@ -1,0 +1,125 @@
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>CommonJS modules with live edit in devtools</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-13', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-commonjs-with-devtools-live-edit-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/06/17/call-for-proposals-at-full-frontal-2014" title="Call for proposals at Full Frontal 2014">Next</a></li><li class="prev"><a href="/2014/05/23/where-is-that-console-log" title="Where is that console.log?">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/commonjs-with-devtools-live-edit" rel="bookmark" title="Permanent Link: CommonJS modules with live edit in devtools">CommonJS modules with live edit in devtools</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/commonjs-with-devtools-live-edit.md">(edit)</a></small></h1><div class="post-content">
+<p>As you might know, I&#39;m a big fan of <a href="http://www.youtube.com/playlist?list=PLXmT1r4krsTq7w7hDV6zfirrs4NJlzJX5">Chrome devtools&#39; live edit and workspaces</a> (video playlist), and it&#39;s this workflow that&#39;s kept me away from <a href="http://browserify.org">Browserify</a>. </p>
+<p>So I went about creating an experiment that allowed me to use CommonJS modules in development <em>and</em> that allowed me to edit and save directly in devtools <em>without</em> a build step.</p>
+<!--more-->
+
+<h2>Some context</h2>
+<p>As far as I know, Browserify is the bees knees for using CommonJS modules in the client side. However, it&#39;s also got a build step. I know it supports sourcemaps, but I&#39;ve personally had mixed (about 20%) success with sourcemaps, and particularly when it comes to saving directly in devtools.</p>
+<p>I&#39;m happy with a build step for production, but not in dev. I want to know the files I&#39;m working with are being saved to disk without any extra steps.</p>
+<p>It&#39;s entirely possible I&#39;ve reinvented the wheel here (feel free to point me in the right direction!).</p>
+<p>So...I had a go at re-inventing the <code>require</code> method...</p>
+<h2>Demo</h2>
+<p>For your viewing pleasure, here&#39;s the experiment using my dev require.js. It supports CommonJS modules. I&#39;ve only tested a few levels deep, and it&#39;s <em>only</em> for client side code.</p>
+<p>The main requirements were to ensure:</p>
+<ol>
+<li>Line numbers in the console mapped correctly to the line in the file</li>
+<li>Saving the file would commit the save to disk</li>
+<li>Saving the file would update memory</li>
+</ol>
+<p>These <em>kinda</em> work as you&#39;ll see in the video.</p>
+<iframe width="1280" height="720" src="//www.youtube.com/embed/uHxxcnJi4BE?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<h2>How it works</h2>
+<p>Pretty simple (and stupid) really, require.js is just this:</p>
+<pre><code>function require(path) {
+  var xhr = new XMLHttpRequest();
+
+  if (path[0] === &#39;.&#39;) {
+    path = path.substr(2);
+  }
+
+  path += &#39;.js&#39;;
+
+  var module = {
+    exports: {}
+  };
+
+  xhr.open(&#39;GET&#39;, path, false); // sync
+  xhr.send();
+
+  var code = xhr.responseText;
+
+  if (code.indexOf(&#39;//# sourceURL&#39;) === -1) {
+    code += &#39;\n\n//# sourceURL=&#39; + path;
+  }
+
+  eval(code);
+
+  return module.exports;
+}</code></pre>
+<p>The code boils down to:</p>
+<ol>
+<li>Make an <em>synchronous</em> XHR call to the script</li>
+<li>Insert a <code>sourceURL</code> in the code so devtools knows what file it was</li>
+<li>Create a <code>module</code> object in scope</li>
+<li>Then eval and return the updated <code>module.exports</code></li>
+</ol>
+<p>Pretty filthy really. Also obviously missing the require path resolution.</p>
+<p>I&#39;ve created a little repo with the <a href="https://github.com/remy/require-for-dev">code I used in the demo on github</a> too.</p>
+<h2>Known and potential issues</h2>
+<ul>
+<li>Using the <code>setInterval</code> you may have noticed in foo.js, when changing the code, devtools loses access to the <code>app</code> variable. Unsure why.</li>
+<li>Using Workspaces is a no-no, it seems to get really confused and <em>very</em> sticky about what&#39;s in memory (i.e. the file shown in sources does not match what&#39;s being run)</li>
+<li>The full require resolution isn&#39;t implemented at all (so only relative URLs are loaded)</li>
+<li>Saving the file in devtools will insert the <code>sourceURL</code> in the file permanently</li>
+<li>I&#39;m not 100% of the security of the modules - in fact I&#39;m pretty sure (since they&#39;re not running inside a new document context) that there would be namespace collision (which is kind of the point of CommonJS to avoid!!!)</li>
+<li>Probably a lot more potential issues - like I said, this is an <em>experiment</em>!</li>
+</ul>
+<h2>Does it really work?</h2>
+<p>I&#39;m not sure. It&#39;s not perfect, and I&#39;m not 100% sure it&#39;s 100% usable...so I&#39;m classing this as a failed experiment.</p>
+<p>I thought about seeing if I could make an iframe on the fly, and inject the content, but the iframe would have to be appended to the document to execute the code, and the code is only executed on the &quot;next tick&quot;, i.e. <em>after</em> the <code>return module.exports</code> so the module would be loaded, but the code would not. Poop.</p>
+<p>On the upside, I figured it was worth sharing, because some bright mind might just solve the memory linking issues that I&#39;m seeing or create some clever work around.</p>
+<p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2014/05/30/commonjs-with-devtools-live-edit/';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js"></script><script src="/js/index.js"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body>

@@ -1,0 +1,95 @@
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>on AIR Tour: London</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-13', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-on-air-tour-london-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2008/04/14/pronounceablely-random" title="Pronounceablely Random">Next</a></li><li class="prev"><a href="/2008/04/09/air-textmate-bundle" title="AIR TextMate Bundle">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/on-air-tour-london" rel="bookmark" title="Permanent Link: on AIR Tour: London">on AIR Tour: London</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/on-air-tour-london.md">(edit)</a></small></h1><div class="post-content">
+<p><img src="http://remysharp.com/wp-content/uploads/2008/04/air.jpg" alt="Air" title="Air" style="float: left; margin: 5px 5px 0 0;" height="132" width="99" /> Adobe hit London yesterday with their <a href="http://onair.adobe.com/">on AIR tour</a> and I had a seat.</p>
+<p>I&#39;d been initially interested in AIR last year when I realised it was be a good entry point to developing a desktop app for the Mac (I&#39;ve dabbled in Objective-C - but I can&#39;t get my head around the square brackets!)</p>
+<p>Overall and excellent day and some great presentations.</p>
+<!--more-->
+
+<h2 style="clear: left;">Why AIR?</h2>
+
+<p>I was attracted to AIR because I&#39;ve got the skill-set that allows to dive straight in: HTML, CSS and JavaScript.</p>
+<p>Although, I think, AIR is immediately associated with Flex and Flash type technology - there doesn&#39;t seem to be any disadvantage whichever way you approach it - it&#39;s just a case of what are you more comfortable working with.</p>
+<h2>The Day</h2>
+<p>It was free to register for tickets, and I never for a minute thought they would sell out.  I may have been naive, but the spread offered by Adobe was excellent.</p>
+<p>I&#39;ve not been to an event entirely designed to promote a product, but free food and drink throughout the day, lunch provided, free beers at the end of the day and <a href="http://www.flickr.com/photos/remysharp/2268147045/in/set-72157600666145464/">Guitar Hero 3</a> available for some battle mode action (which I managed to completely fluff - I blame the XBox 360, I&#39;m used to the Wii!).</p>
+<p>I didn&#39;t come away feeling like Adobe had force fed me AIR, I came away with a great experience of the day, I had actually learnt something new and I was keen to try out my new skills.</p>
+<h2>Presentations</h2>
+<p>I&#39;ve attended a few conferences, and @media Ajax was the closest conference to my developer heart...until this one.</p>
+<p>The presentations would often break out of the keynote slides to dive in to the code and run live demos.  Right up front there was one presentation on using Flex Builder and directly after building AIR apps using JavaScript - first example using TextMate: perfect.</p>
+<p>The quality of the presentations were <em>generally</em> very high.  There were a few comedy moments/presentations where the app being demonstrated refused to come out to play (I can&#39;t bring myself to name the app!) - but it highlighted the importance of good interface design, i.e. if it requires the Internet to work, make sure you <a href="http://livedocs.adobe.com/air/1/jslr/air/net/URLMonitor.html">sniff for a connection</a> first!</p>
+<p>One of the best presentations detailed the security model AIR apps followed and why it should be followed. A splathering of notes:</p>
+<ul>
+<li>Apps uses <a href="http://livedocs.adobe.com/air/1/devappshtml/help.html?content=ProgrammingHTMLAndJavaScript_10.html">sandbox</a> <a href="http://www.adobe.com/devnet/air/ajax/quickstart/sandbox_bridge.html">bridging</a> - i.e. doesn&#39;t let the app import anything without specifically having to handle it.</li>
+<li>Recommend you can auto update to get new features in to your app, and in particular bug patches. This should even be the first thing you build in to your app.</li>
+<li>Following functionality is restricted: eval(), innerHTML, &lt;script&gt;, document.write()</li>
+<li>You can load content and expose in to the sandbox via <code>parentSandboxBridge</code></li>
+<li>You can import but it&#39;s done explicitly via Loader class - and you should use XMLSignatureValidator to ensure the imported content really does come from you.</li>
+<li>See customUpdateUI for greater control over installing updates.  It invokes the currently installed app, with an &#39;application update event&#39; - then you handle the update yourself.  </li>
+</ul>
+<h2>Sans Flex Builder</h2>
+<p>Being the TextMate fan that I am, I was extremely pleased to see a live demo by <a href="http://blog.kevinhoyt.org/">Kevin Hoyt</a> using TextMate.  There are existing Air TextMate bundles out on the tubes, but none that had the API completion.</p>
+<p>Which is why I went about parsing the JavaScript API and dropping it in to a <a href="/downloads/Air.tmbundle.zip">Air TextMate bundle</a> - finished before the last presentation was over :-) </p>
+<h2>Some Titbits</h2>
+<p>Finally, here&#39;s a randomly ordered bunch of info I left with:</p>
+<ul>
+<li>Mac, PC and Linux runtimes all run with Safari 3.0 render engine, and the WebKit will be upgraded, and hence support SVG and CSS animations.  Although this may be more like a 2.0 release, they are planning to upgrade WebKit as it continues to upgrade.</li>
+<li>AIR 1.1 will support multi-language (mid-2008)</li>
+<li>You can include libraries via swf files, using script tags such as: <code>type=&quot;application/x-shockwave&quot;</code></li>
+<li>Install badges are the best way to install the app (a link from your web site that will trigger the install process).  You can customise these as much as you want - but you&#39;ll have to do the donkey work yourself as it&#39;s still quite new. Although there is a <a href="http://labs.adobe.com/wiki/index.php/AIR_Badge">beta badge</a> available.</li>
+<li>When placing a menu, you need to sniff the OS (since MS Windows a locked each individual window).</li>
+</ul>
+<h2>Finally</h2>
+<p>If you have the chance, you&#39;re interested in JavaScript and the tour is nearby - I highly recommend signing up if there&#39;s space left.</p>
+<p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2008/04/11/on-air-tour-london/';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js"></script><script src="/js/index.js"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body>

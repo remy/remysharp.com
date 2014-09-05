@@ -1,0 +1,64 @@
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>My Workflow v2: Mobile, DevTools &amp; LiveReload</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-13', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-my-workflow-v2-mobile-devtools-livereload-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2013/05/27/configuring-wifi-for-your-raspberry-pi-using-your-mac" title="Configuring wifi for your Raspberry Pi using your Mac">Next</a></li><li class="prev"><a href="/2013/05/13/tracegl-for-javascript-debugging" title="tracegl for JavaScript debugging">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/my-workflow-v2-mobile-devtools-livereload" rel="bookmark" title="Permanent Link: My Workflow v2: Mobile, DevTools &amp; LiveReload">My Workflow v2: Mobile, DevTools &amp; LiveReload</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/my-workflow-v2-mobile-devtools-livereload.md">(edit)</a></small></h1><div class="post-content">
+<p>Since I&#39;m sat at <a href="http://mobilism.nl/2013">Mobilism 2013</a> I think it&#39;s worth sharing my recent mobile (mainly CSS) workflow. It&#39;s not rocket science, but it&#39;s a nice follow on from <a href="http://remysharp.com/2012/12/21/my-workflow-never-having-to-leave-devtools/">my workflow with devtools</a> I shared a few months back.</p>
+<iframe width="1280" height="720" src="http://www.youtube.com/embed/tIabBQatvD8?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<p>It simply boils down to using <a href="http://livereload.com/">LiveReload</a> on the page, using DevTools with the &quot;Save As&quot; functionality on the CSS, then simply make the change on the desktop using DevTools, which automatically saves to file, which causes LiveReload to trigger a reload on all devices (perhaps frustratingly on the desktop too), but also the remote devices - mobile or otherwise - to refresh allowing me a quick glance to make sure the styles look right.</p>
+<p>Simple.</p>
+<h2>What it should be</h2>
+<p>There is an ideal workflow, and I believe this is the way it&#39;s supposed to work (but maybe the browser isn&#39;t quite there just yet, but it feels like it&#39;s just around the corner).</p>
+<p>You connect your mobile browser (Android Chrome in this case), run <code>adb</code> (and I think I saw a browser extension that makes this easy during some of the Google IO 2013 videos), open Chrome (Canary works) and navigate to <code>chrome://inspect</code> and you&#39;ll be able to launch the devtools for that page.</p>
+<p>From <em>those</em> devtools I imagine I should be able to edit and save to disk and it would remove the requirement for LiveReload (though this doesn&#39;t solve working with iOS).  Pretty cool.</p>
+<p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2013/05/16/my-workflow-v2-mobile-devtools-livereload/';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js"></script><script src="/js/index.js"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body>

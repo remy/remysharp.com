@@ -1,0 +1,85 @@
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>jQuery &amp; Ext</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-13', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-jquery-ext-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2007/04/30/isight-fun" title="iSight fun">Next</a></li><li class="prev"><a href="/2007/04/20/performance-profiling-javascript" title="Performance profiling JavaScript">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/jquery-ext" rel="bookmark" title="Permanent Link: jQuery &amp; Ext">jQuery &amp; Ext</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/jquery-ext.md">(edit)</a></small></h1><div class="post-content">
+<p>I&#39;ve started playing with <a href="http://extjs.com">Ext</a> with <a href="http://jquery.com">jQuery</a>, and although the tutorials on the Ext web site are superb, I found that I hit a few stumbling blocks - so I&#39;ve written up the little gotchas.</p>
+<!--more-->
+
+<h2>Example</h2>
+<p>I mocked up a quick <a href="http://remysharp.com/wp-content/uploads/2007/04/ext_layout.html">Ext with jQuery example</a> to create a framed layout.  Below is some information on how I got to the final output.</p>
+<h2>Custom Builds</h2>
+<p>Firstly, the best thing about Ext is the ability to <a href="http://extjs.com/download/build">dynamically build</a> what you need for your app.</p>
+<p>You can base Ext on <a href="http://developer.yahoo.com/yui/">Yahoo! UI</a>, <a href="http://jquery.com">jQuery</a> or <a href="http://www.prototypejs.org/">Prototype</a>, then you can pick a chose the functionality you want supported.  Excellent if you want to reduce the overhead on your servers.</p>
+<h2>Ext Support</h2>
+<p>The <a href="http://extjs.com/learn-about-ext-javascript-library">tutorials</a> and introduction on the Ext web site is very good though not yet in abundance.</p>
+<p>The problem is coming from the jQuery corner, this all looks new to me, and very much like YUI (i.e. the function names).</p>
+<h2>Problems I faced</h2>
+<h3>My assumptions</h3>
+<p>When I heard Ext was to support jQuery - I thought the syntax would be similar, and it would done using the same chaining methods.  This was totally wrong.</p>
+<p>Ext support jQuery is simply that Ext was written for YUI originally - now you can use it with jQuery, <strong>without</strong> the need to include the YUI.  Beyond that it&#39;s just another library, albeit an awesome one.</p>
+<h3>Missing scripts</h3>
+<p>The first stumbling block in getting Ext working with jQuery was the missing script: <a href="http://remysharp.com/js/jquery-plugins.js">jquery-plugins.js</a>.  Once that had been added, things got a little easier.</p>
+<h3>HTML</h3>
+<p>Where I really fell down, embarrassingly, was the HTML.  The API examples don&#39;t really talk about the underlying HTML and how it should be structured.  </p>
+<p>I initially thought the HTML produced itself, but quickly realised this was madness and would negate the unobtrusiveness of the libraries.</p>
+<p>If you lift the HTML used in the samples, and make sure you match the IDs properly, then the examples will work.</p>
+<p>The result of not having the HTML correct was:</p>
+<p><code>el has no properties</code></p>
+<p>With jQuery, if you try to execute a function against elements that have not been found, so long as it&#39;s in a chained call, it won&#39;t throw an error - and that&#39;s what threw me, since I wasn&#39;t used to seeing errors!</p>
+<h3>Sometime breaks without JavaScript</h3>
+<p>I found that if I turned JavaScript off, sometimes the page wouldn&#39;t render at all.  It would just remain blank.  </p>
+<p>I&#39;ve not investigated this further because I know this is relatively new so I expect it was just a teething problem.</p>
+<h2>Ext with jQuery</h2>
+<p>Overall it looks like the bag has opened up for faster web application development (I&#39;m already working on my first jQuery + Ext app). </p>
+<p>Watch this space for some examples and tutorials.</p>
+<p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2007/04/20/jquery-ext/';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js"></script><script src="/js/index.js"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body>

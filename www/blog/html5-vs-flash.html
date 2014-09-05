@@ -1,0 +1,95 @@
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>HTML5 vs. Flash</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-13', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-html5-vs-flash-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2010/02/14/slicehost-nodejs-websockets" title="Slicehost, Node.js &amp; WebSockets">Next</a></li><li class="prev"><a href="/2010/01/03/goodnight-2009" title="Goodnight 2009">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/html5-vs-flash" rel="bookmark" title="Permanent Link: HTML5 vs. Flash">HTML5 vs. Flash</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/html5-vs-flash.md">(edit)</a></small></h1><div class="post-content">
+<p>First of all I wanted to make the title of this post &quot;HTML5 <em>and</em> Flash&quot;, but I know it&#39;s going to bait more readers if I say versus. I should state for the record that for the foreseeable future I think Flash has a valid place on the web, and I don&#39;t personally see it as an <em>us and them</em> web.</p>
+<p>Stephen Shankland, writer for CNET News got in touch and asked me to comment on an <a href="http://news.cnet.com/8301-30685_3-20000037-264.html">article he was writing</a>, posing me the questions in this post. Unfortunately my reply got to him to late and he had to go to post without my answers, but I thought that it would be worthwhile sharing my views via my own blog instead.</p>
+<!--more-->
+
+<blockquote>
+<p>How far is HTML (and SVG and CSS and WebGL and JavaScript) to reproducing what Flash can do today?</p>
+</blockquote>
+<p>HTML, SVG, CSS and JavaScript are very far along to replacing a lot of what I see Flash doing today - but it should be noted my browsing style is general usage, rather than gaming or interactive videos - which Flash is good at.  </p>
+<p>WebGL is very much at an early stage in it&#39;s development, only really (currently) appearing in the nightly builds of Webkit and Firefox, equally I&#39;ve seen videos from Mozilla putting WebGL on to a Nokia device with no optimisation and it being able to render pretty well.  </p>
+<p>There&#39;s lots of examples of apps and effects that have been achieve using Flash in the first decade of this century, but today we can build these using Open Web technologies.  This ranges from the simple image galleries to full fledged word processors.  Adobe released Buzzword which relies on Flash, but on the other side we have Google Docs which relies entirely on the Open Web.</p>
+<blockquote>
+<p>Would you like to see Flash replaced by HTML?</p>
+</blockquote>
+<p>I personally don&#39;t think HTML will replace Flash.  I think HTML5 and the Open Web will replace Flash where Flash has been used as a stopgap.  sIFR is used to bring &quot;custom&quot; fonts to the browser, but now we have really good support for native custom fonts via the CSS fonts module, and products like TypeKit and FontDeck are making it easy for web authors to include those custom fonts without the need of Flash.</p>
+<p>The native video element will (eventually) allow us to drop using Flash for video.  Flash has done an awesome job of pulling the braces up on browsers for the last decade, and we&#39;ve needed it, but Flash is so much more than just video or font rendering.  I think the smart developers aren&#39;t won&#39;t be worried about native browser functionality making Flash redundant for noddy tasks, no doubt they&#39;ll be thankful to not have to build <em>another</em> video player.</p>
+<p>As much as I&#39;d like to see Open Web technology do everything, I still think we&#39;re a long way off HTML being able to able to natively replace applications such as <a href="http://aviary.com">Aviary</a> and games like <a href="http://channel4.com/bowstreetrunner">Bow Street Runner</a>.</p>
+<p>Equally, as I mentioned before SVG is one technology that has come along, and with the help of the svgweb JavaScript library, SVG works in IE.  This library of course gets IE to support SVG via Flash.  It translate the SVG markup on to a Flash canvas proving that Flash still has a place on the web as a bridging technology as well as it&#39;s intended use.</p>
+<blockquote>
+<p>How serious do you think the H.264/Ogg Theora matter is with the HTML5 video codec?</p>
+</blockquote>
+<p>It&#39;s hard to say.  Personally it doesn&#39;t make much difference to me if I have to encode once, twice or three times.  Encoding is a background task so I set my converter off when I produce my screencasts and after an arbitrary amount of time I&#39;ll have some files to upload - obviously if you have masses of video to encode the disk usage is going to be a possible issue for you.</p>
+<p>The problem lies with patents, which is why Firefox and Opera won&#39;t implement H.264 - but the politics and patents are for smarter people than me.  There&#39;s also the fear that we as content producers could be liable for license costs to the patent owners of H.264.</p>
+<p>On the other hand, the company that own the patent for H.264 has elected not to collect royalties until 2016 - when they may again choose not to collect royalties.  Flash developers have been using H.264 for some time already  and there hasn&#39;t been any retribution for them, but for now I&#39;ll be producing both H.264 and Ogg Theora encoded content.</p>
+<p>I&#39;ll be watching this topic closely to see how browsers deal with the two codecs.</p>
+<blockquote>
+<p>As HTML etc. gets what Flash has today, do you think Flash will move upstream and remain relevant, become optional, or what?</p>
+</blockquote>
+<p>I think two things will happen.  Firstly I do think that Flash will move (or remain in some cases) upstream, and continue to push what&#39;s capable within the browser.  Gaming is a great example of an arena that Flash excels at.  The second thing I think we&#39;ll see is Flash developers taking the progressive enhancement approach to applications, relying more on HTML based solutions and enhancing upwards using Flash - Jeffrey Zeldman posted a great article recently <a href="http://www.zeldman.com/2010/02/01/flash-ipad-standards/">suggesting exactly that</a>.</p>
+<blockquote>
+<p>How difficult is it for a Web developer today to use the fragmented Open Web standards vs. the more consistent Flash?</p>
+</blockquote>
+<p>I don&#39;t think it&#39;s too hard at at all, but it really depends on what technology you choose.  Web Storage has pretty solid support in the latest browsers (if not the nightly builds), but it&#39;s relatively easy to patch missing support just using JavaScript which would map sessionStorage to the <a href="http://ajaxian.com/archives/whats-in-a-windowname">window.name hack</a> and localStorage to cookies.</p>
+<p>Geolocation can be detected and made use of if it&#39;s available, whilst those without the functionality can still map their position using something like Google Maps or a text field, thus taking a progressive enhancement approach.</p>
+<p>Offline applications on the other hand can&#39;t be achieved if the technology isn&#39;t available - so it really depends on the application, it&#39;s use and whether you have a specific platform in mind for deployment (which generally I wouldn&#39;t encourage, but we know it happens).</p>
+<p>Flash developers definitely have an easier time when it comes to deployment environment - in fact I&#39;ve met a number of Flash developers now that said they made the shift from JavaScript and HTML years ago to Flash because of the appeal of a single environment: the Flash runtime.  </p>
+<blockquote>
+<p>Anything else on the subject?</p>
+</blockquote>
+<p>As I said at the start of this post, I don&#39;t see this as an <em>us and them</em>, Open Web and Flash. I do see HTML5 plugging the areas that have been held up by Flash for the first decade of this century, and there are other areas that HTML5 supports that Flash doesn&#39;t - but Flash could even make use of, such as Offline Applications.</p>
+<p>It&#39;s an exciting time on the web again where browsers are implementing features that make it an even more powerful platform to develop on. I for one, am keen as mustard to get building with the new shiny toys they&#39;re giving us. Equally, I&#39;m certain Flash will continue to be used to build awesome shit (and probably some not so  awesome shit) for a long time yet.</p>
+<p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2010/02/08/html5-vs-flash/';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js"></script><script src="/js/index.js"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body>

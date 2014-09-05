@@ -1,0 +1,119 @@
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Pronounceablely Random</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-13', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-pronounceablely-random-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2008/04/24/stop-using-openid-why-how" title="Stop Using OpenID - Why &amp; How">Next</a></li><li class="prev"><a href="/2008/04/11/on-air-tour-london" title="on AIR Tour: London">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/pronounceablely-random" rel="bookmark" title="Permanent Link: Pronounceablely Random">Pronounceablely Random</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/pronounceablely-random.md">(edit)</a></small></h1><div class="post-content">
+<p>If you work in a secure(ish) environment then you&#39;ll be changing passwords on a regular basis. An old colleague and I came up with a script that would generate a password based on fictional words from a dictionary lookup.</p>
+<p>Then we/he realised that this could actually be generated on the fly, be completely random and still be pronounceable.</p>
+<!--more-->
+
+<p>The pattern to use is: vowel, consonant, vowel, consonant then vowel.  Once you&#39;ve got your 5 letter password, we would append a 3 digit number on the end to really tighten the password (since these were used to access root accounts). For example:</p>
+<p><style type="text/css" media="screen">
+  div.passwordExample p {
+    text-align: center;
+    font-family: Georgia, Times;
+    margin: 50px 0!important;
+    font-size: 400%;
+  }
+</style></p>
+<p><script type="text/javascript" charset="utf-8">
+function generatePassword(limit, inclNumbers) {
+    var vowels = &#39;aeiou&#39;.split(&#39;&#39;);
+    var constonants = &#39;bcdfghjklmnpqrstvwxyz&#39;.split(&#39;&#39;);
+    var word = &#39;&#39;, i, num;</p>
+<pre><code>if (!limit) limit = 8;
+
+for (i = 0; i &lt; (inclNumbers ? limit - 3 : limit); i++) {
+    if (i % 2 == 0) { // even = vowels
+        word += vowels[Math.floor(Math.random() * 4)]; 
+    } else {
+        word += constonants[Math.floor(Math.random() * 20)];
+    } 
+}
+
+if (inclNumbers) {
+    num = Math.floor(Math.random() * 99) + &#39;&#39;;
+    if (num.length == 1) num = &#39;00&#39; + num;
+    else if (num.length == 2) num = &#39;0&#39; + num;
+    word += num;
+}
+
+return word.substr(0, limit);</code></pre>
+<p>}</p>
+<p>// wrap the numbers in a class to 
+document.write(&#39;<div class="passwordExample"><p>&#39; + generatePassword(5) + &#39;</p></div>&#39;);
+</script></p>
+<noscript><p>You&#39;ll need JavaScript enabled to see the live example.</p></noscript>
+
+<p>The above example is based on the <a href="http://codedumper.com/password-generator-js">JavaScript password generator</a>.</p>
+<p>The really nice thing about this process is that it can also be used to generate URLs and keep them pronounceable - which means you can <em>say</em> it to someone, and they should be able to type it out.  I use this code to generate the URLs for <a href="http://codedumper.com">Code Dumper</a>.</p>
+<p>Here&#39;s the function for PHP:</p>
+<pre><code>function GeneratePassword( $limit = 8 ) {
+  $vowels = array('a', 'e', 'i', 'o', 'u');
+  $const = array('b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n', 'p', 'q', 'r', 's', 't', 'v', 'w', 'x', 'y', 'z');
+
+  $word = '';
+
+  for ($i = 0; $i &gt; ($limit - 3); $i++) {
+    if ($i % 2 == 0) { // even = vowels
+      $word .= $vowels[rand(0, 4)]; 
+    } else {
+      $word .= $const[rand(0, 20)];
+    } 
+  }
+
+  $num = rand(0,999);
+  str_pad($num, 3, '0', STR_PAD_LEFT);
+
+  return substr($word . $num, 0, $limit);
+}</code></pre>
+<p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2008/04/14/pronounceablely-random/';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js"></script><script src="/js/index.js"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body>

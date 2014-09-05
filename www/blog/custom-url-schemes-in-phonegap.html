@@ -1,0 +1,109 @@
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Custom URL schemes in PhoneGap</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-13', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-custom-url-schemes-in-phonegap-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2010/10/04/websockets-in-phonegap-projects" title="WebSockets in PhoneGap Projects">Next</a></li><li class="prev"><a href="/2010/08/30/universal-launch-images-with-phonegap" title="Universal launch images with PhoneGap">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/custom-url-schemes-in-phonegap" rel="bookmark" title="Permanent Link: Custom URL schemes in PhoneGap">Custom URL schemes in PhoneGap</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/custom-url-schemes-in-phonegap.md">(edit)</a></small></h1><div class="post-content">
+<p>With <a href="http://marbles2.com">Marbles2</a> for iOS I wanted people to be able to click on a url, like <a href="http://marbles2.com/app/?seed=2A72367A"><a href="http://marbles2.com/app/?seed=2A72367A">http://marbles2.com/app/?seed=2A72367A</a></a> and if the app is installed on the iOS device, for it to launch Marbles2 and initialise with the &quot;seed&quot; passed in.</p>
+<p>It required a change to the iPhone PhoneGap project, which has been since <a href="http://github.com/phonegap/phonegap-iphone/commit/ab5b6270e2f669e021ba1f6e78361abc12d81104">merged in to the git hosted code</a>, so I&#39;m going to show you what to do and how to access this info.</p>
+<div class="update">A personal note (possibly just for me) this was not posted on 2010-09-01 - it was written in advance and scheduled for this date. In the end, published some months after this date.</div>
+
+<!--more-->
+
+<h2>Associating the custom url scheme</h2>
+<p>You need to edit your app-Info.plist (where app is &quot;marbles&quot; in my case), and add the &quot;URL types&quot; key and follow the directions on the <a href="http://developer.apple.com/iphone/library/documentation/iphone/conceptual/iphoneosprogrammingguide/StandardBehaviors/StandardBehaviors.html#//apple_ref/doc/uid/TP40007072-CH4-SW50">iOS reference</a>. In the end it should look a little like the screenshot below, where &quot;marbles&quot; is the custom url scheme, and &quot;com.leftlogic.${PRODUCT_NAME}&quot; is my product identifier.</p>
+<p><img src="http://remysharp.com/images/info-plist.png" width="600" /></p>
+<h2>Accessing the custom url data</h2>
+<p>If you&#39;re using the latest version of the PhoneGap iPhone project, then when you hit the url that looks like:</p>
+<p><a href="marbles:///?seed=2A72367A">marbles:///?seed=2A72367A</a></p>
+<p>Hitting the link whilst in your device (or simulator) will launch the app you installed with the associated custom url scheme, and PhoneGap will introduce a new object on the global scope called <code>Invoke_params</code>. So to access the &quot;seed&quot; argument, I do:</p>
+<pre><code>alert('Seed is ' + window.Invoke_params.seed);</code></pre>
+
+<p>Simple, eh? Now you&#39;ve got a way to pass in custom arguments to launch your app.</p>
+<h2>Dual web and native support</h2>
+<p>Now that the native PhoneGap version of Marbles2 supports the custom url, what about the url I posted, say to Twitter? </p>
+<p>The way Marbles2 works is that if you visit the web version, and you pass in a seed (this is the way to play other people&#39;s sequence of boards), and you have the native version installed - I want to send you to the native app.</p>
+<p>The way I manage this is that when you hit the web version of Marbles2, it checks for a seed on the url. If there is, it tries to open an iframe pointing to the custom url scheme. If the app is installed, this will cause the app to be launched (though it&#39;ll prompt before opening the app). Since the native app doesn&#39;t have the seed on the <code>window.location</code> object, I&#39;m able to use <em>exactly the same</em> code between the native app and the web app using a simple bit of code like this:</p>
+<pre><code>// if the url contains "seed=xyz" then this code will run
+window.location.search.replace(/bseed=([^&=]*)b/, function (m, seed) {
+  var iframe = getIFrame();
+  document.body.appendChild(iframe);
+
+  // discard the iframe when it's finished
+  iframe.onload = function () {
+    document.body.removeChild(iframe);
+  };
+
+  // this pops up an ugly window in Mobile WebKit - would be nice to suppress it
+  // but if the native app is installed, it will launch Marbles2 and pass in
+  // the game seed.
+  iframe.contentWindow.location = 'marbles:///?seed=' + seed;
+
+  // carry on as normal, if the custom url doesn't do anything, 
+  // initialise the game with the passed in "seed"
+  Marbles.seed(seed); // handle the web based game using the seed
+});
+
+// create an iframe that's on the page, but hidden visibly
+function getIFrame() {
+  var iframe = document.createElement('iframe');
+  iframe.style.visibility = 'none';
+  iframe.style.position = 'absolute';
+  iframe.style.left = '-999px';
+  iframe.style.height = '1px';
+  iframe.style.width = '1px';
+  return iframe;
+}</code></pre>
+
+<h2>Marbles2</h2>
+<p>Do have a play with the <a href="http://marbles2.com">online version</a> and I&#39;ll be posting the native version to the iTunes store in the next month or so, so you&#39;ll be able to see the effect if you don&#39;t already play around with it yourself.</p>
+<p>If you want to learn more about PhoneGap, my conference Full Frontal, is running a <a href="http://2010.full-frontal.org/workshops#phonegap">full day workshop with Brian LeRoux</a> entirely on  PhoneGap, so check it out!</p>
+<p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2010/09/01/custom-url-schemes-in-phonegap/';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js"></script><script src="/js/index.js"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body>

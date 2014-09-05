@@ -1,0 +1,97 @@
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>maxlength plugin</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-13', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-maxlength-plugin-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2008/07/04/jquery-api-update-offline-and-anywhere" title="jQuery API Update: offline and anywhere">Next</a></li><li class="prev"><a href="/2008/06/24/query-string-to-object-via-regex" title="Query String to Object via regex">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/maxlength-plugin" rel="bookmark" title="Permanent Link: maxlength plugin">maxlength plugin</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/maxlength-plugin.md">(edit)</a></small></h1><div class="post-content">
+<p>It&#39;s a fairly common design pattern to want to limit the number of characters the user can input in a field whilst giving feedback to the user on how much they have left.</p>
+<p>So I&#39;ve built a little jQuery plugin to do the work for me.</p>
+<!--more-->
+
+<h2>Maxlength Plugin</h2>
+<p>The plugin simply reports back the number of characters left the user has, with a few extra bells and whistles.</p>
+<p><a href="http://remysharp.com/downloads/jquery.maxlength.js">Download the maxlength jQuery plugin</a></p>
+<h2>Demonstration</h2>
+<p><a href="http://remysharp.com/demo/maxlength.html">View the maxlength demo</a></p>
+<p>This demo shows off two example, one limiting on characters and one limiting on words.</p>
+<h2>Example Code</h2>
+<pre><code>&lt;form action=&quot;/comment&quot;&gt;
+  &lt;p&gt;Characters left: &lt;span class=&quot;charsLeft&quot;&gt;10&lt;/span&gt;&lt;/p&gt;
+  &lt;textarea maxlength=&quot;10&quot; class=&quot;limited&quot;&gt;&lt;/textarea&gt;
+&lt;/form&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $('textarea.limited').maxlength({
+    'feedback' : '.charsLeft'
+  });
+&lt;/script&gt;</code></pre>
+
+<p>The default version of the maxlength plugin reads the <code>maxlength</code> attribute from the text element.  However, since this isn&#39;t a valid HTML attribute if added to a <code>textarea</code> you can configure the plugin to read the value from a hidden input:</p>
+<pre><code>&lt;form action=&quot;/comment&quot;&gt;
+  &lt;p&gt;Characters left: &lt;span class=&quot;charsLeft&quot;&gt;10&lt;/span&gt;&lt;/p&gt;
+  &lt;textarea class=&quot;limited&quot;&gt;&lt;/textarea&gt;
+  &lt;input type=&quot;hidden&quot; name=&quot;maxlength&quot; value=&quot;10&quot; /&gt;
+&lt;/form&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+  $('textarea.limited').maxlength({
+    'feedback' : '.charsLeft',
+    'useInput' : true
+  });
+&lt;/script&gt;</code></pre>
+
+<p>The plugin can be applied to <code>input</code> elements, but if you want to limit by words, rather than characters, you need to put the maxlength as a hidden input (otherwise the browser will use it&#39;s default behaviour to limit the user&#39;s input).</p>
+<h3>Plugin Options</h3>
+<ul>
+<li>feedback - the selector for the element that gives the user feedback. Note that this will be relative to the form the plugin is run against.</li>
+<li>hardLimit - whether to stop the user being able to keep adding characters. Defaults to true.</li>
+<li>useInput - whether to look for a hidden input named &#39;maxlength&#39; instead of the maxlength attribute. Defaults to false.</li>
+<li>words - limit by characters or words, set this to true to limit by words. Defaults to false.</li>
+</ul>
+<p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2008/06/30/maxlength-plugin/';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js"></script><script src="/js/index.js"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body>

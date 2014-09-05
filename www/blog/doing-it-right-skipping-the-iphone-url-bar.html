@@ -1,0 +1,84 @@
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Doing it right: skipping the iPhone url bar</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-13', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-doing-it-right-skipping-the-iphone-url-bar-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2010/08/24/dynamic-favicons" title="Dynamic favicons">Next</a></li><li class="prev"><a href="/2010/07/21/throttling-function-calls" title="Throttling function calls">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/doing-it-right-skipping-the-iphone-url-bar" rel="bookmark" title="Permanent Link: Doing it right: skipping the iPhone url bar">Doing it right: skipping the iPhone url bar</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/doing-it-right-skipping-the-iphone-url-bar.md">(edit)</a></small></h1><div class="post-content">
+<p><strong>Important</strong>: As of iOS7, this technique no longer works (because Apple &quot;fixed&quot; it).</p>
+<p>With some mobile web sites when visited on the iPhone, you may want to skip past the url bar (something I&#39;m not sure if it&#39;s possible, or even worth doing on other mobiles). There&#39;s a simple solution to doing this, but doing it right is the real trick.</p>
+<!--more-->
+
+<p>Below are two screenshots from the mobile view of <a href="http://full-frontal.org">Full Frontal, my JavaScript conference</a>:</p>
+<p><img width="280" style="margin-right: 20px;" src="http://remysharp.com/images/ff-with-bar.png" alt="Full Frontal with the url bar" /><img  width="280" src="http://remysharp.com/images/ff-without-bar.png" alt="Full Frontal without the url bar" /> </p>
+<p>Making the iPhone hide the url bar is fairly simple, you need run the following JavaScript:</p>
+<pre><code>window.scrollTo(0, 1);</code></pre>
+
+<p>However there&#39;s the question of when? You have to do this once the height is correct so that the iPhone can scroll to the first pixel of the document, otherwise it will try, then the height will load forcing the url bar back in to view.</p>
+<p>You could wait until the images have loaded and the <code>window.onload</code> event fires, but this doesn&#39;t always work, if everything is cached, the event fires too early and the <code>scrollTo</code> never has a chance to jump. Here&#39;s an example using <code>window.onload</code>: <a href="http://jsbin.com/edifu4/4/"><a href="http://jsbin.com/edifu4/4/">http://jsbin.com/edifu4/4/</a></a></p>
+<p>I personally use a timer for 1 second - which is enough time on a mobile device while you wait to render, but long enough that it doesn&#39;t fire too early:</p>
+<pre><code>setTimeout(function () {
+  window.scrollTo(0, 1);
+}, 1000);</code></pre>
+
+<p>However, you only want this to setup if it&#39;s an iPhone (or just mobile) browser, so a sneaky sniff (I don&#39;t generally encourage this, but I&#39;m comfortable with this to prevent &quot;normal&quot; desktop browsers from jumping one pixel):</p>
+<pre><code>/mobile/i.test(navigator.userAgent) && setTimeout(function () {
+  window.scrollTo(0, 1);
+}, 1000);</code></pre>
+
+<p>The very last part of this, and this is the part that seems to be missing from some examples I&#39;ve seen around the web is this: if the user specifically linked to a url fragment, i.e. the url has a hash on it, you <em>don&#39;t</em> want to jump. So if I navigate to <a href="http://full-frontal.org/tickets#dayconf"><a href="http://full-frontal.org/tickets#dayconf">http://full-frontal.org/tickets#dayconf</a></a> - I want the browser to scroll <em>naturally</em> to the element whose id is <em>dayconf</em>, and not jump to the top using <code>scrollTo(0, 1)</code>:</p>
+<pre><code>/mobi/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+  if (!pageYOffset) window.scrollTo(0, 1);
+}, 1000);</code></pre>
+
+<div class="update"><strong>Updated 24-July-2012</strong> added <a href="#comment-360208">Daniel&#39;s Davis&#39; suggestion</a> so this doesn&#39;t match Opera Mobile. In fact it&#39;s worth noting this only works on an iPhone Safari browser (and Android Browser - but not Chrome for Android?) - so perhaps we could tighten the nasty browser sniffing further?</div>
+
+<p>Try this out on an iPhone (or simulator) <a href="http://jsbin.com/edifu4/10"><a href="http://jsbin.com/edifu4/10">http://jsbin.com/edifu4/10</a></a> and you&#39;ll see it will only scroll when you&#39;ve landed on the page without a url fragment.</p>
+<p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2010/08/05/doing-it-right-skipping-the-iphone-url-bar/';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js"></script><script src="/js/index.js"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body>

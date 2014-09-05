@@ -1,0 +1,100 @@
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>link elements block DOM parsing too</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-13', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-link-elements-block-dom-parsing-too-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2011/07/18/input-range-polyfill" title="input range polyfill">Next</a></li><li class="prev"><a href="/2011/06/06/in-memory-of-tia" title="In memory of Tia">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/link-elements-block-dom-parsing-too" rel="bookmark" title="Permanent Link: link elements block DOM parsing too">link elements block DOM parsing too</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/link-elements-block-dom-parsing-too.md">(edit)</a></small></h1><div class="post-content">
+<p>Today we&#39;re pretty well versed with how JavaScript works. We know that <code>script</code> elements block rendering (well, actually blocks the parsing, which thus delays the rendering), and we know why8. Sure, so we put the <code>script</code> elements at the end of the document. But did you know that <code>link</code> elements block too?</p>
+<p><small>* <code>document.write</code> can affect the DOM tree, so the parsing makes sure these happen synchronously</small>
+<!--more--></p>
+<h2>Sure I did, so what?</h2>
+<p>In the past it wasn&#39;t likely that you would include an externally linked CSS asset, but that&#39;s changed today. Today we have services providing fonts, at that point you&#39;re linking to an external service from your head element (because we put CSS in the head, and script at the end of the body).</p>
+<p>If that service hangs for whatever reason, it&#39;ll hang your page too.  Something we&#39;ve spent a long time in the JavaScript community working to avoid, and now we risk repeating ourselves.</p>
+<h2>Why does this happen?</h2>
+<p>What&#39;s a little frustrating is that I can completely understand why a <code>script</code> element would block parsing the DOM (and thus block rendering), but I can&#39;t see why an external stylesheet would.</p>
+<p>Perhaps it&#39;s because we could include dynamic content via CSS - but I doubt it. Dynamic content doesn&#39;t actually appear in the DOM tree, so I&#39;d guess that it&#39;s not blocking the parsing process.  So what else could it be?  Suggestions in the comments please!</p>
+<p>Perhaps this is a bug?  Safari, Chrome and Firefox suffer from this issue.  Opera doesn&#39;t (but then, does it also block on JavaScript - I have a feeling it doesn&#39;t).  I didn&#39;t test IE (partly because I was sure it would, partly because I didn&#39;t want to start my VM - if someone could confirm, that would be super).</p>
+<p>Right now, I&#39;m not sure what&#39;s at the root cause, but I do know it&#39;s putting some web sites at risk.</p>
+<div class="update"><p><strong>Updated 12-June 2011</strong> after further investigation by zcorpan (aka Simon Pieters) and Stepan Reznikov (via their comments below), what we&#39;re actually seeing is <strong>render</strong> blocking, and not <em>parsing</em> blocking.</p><p>However, it does, from looking at tests, block JavaScript <em>after</em> the hanging <code>link</code> element from running - which is definitely weird.</p>
+<p>There&#39;s two example for you - both need the console open: <a href="http://remysharp.com/demo/hang.html">hang example where content ready fires before CSS has loaded</a>, <a href="http://remysharp.com/demo/hang-with-script.html">hang example where script waits for CSS before it can run</a></p>
+</div>
+
+<h2>Example</h2>
+<p>This url will show the hanging: <a href="http://jsbin.com/agumu4/3/"><a href="http://jsbin.com/agumu4/3/">http://jsbin.com/agumu4/3/</a></a> - make sure you have a web console open and refresh to watch the state change.</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=utf-8 /&gt;
+&lt;title&gt;Hang test&lt;/title&gt;
+&lt;script&gt;
+// script in head to debug state change
+console.log(&#39;doc state: &#39; + document.readyState);
+
+document.onreadystatechange = function () {
+  console.log(&#39;doc state change: &#39; + document.readyState);
+};
+&lt;/script&gt;
+&lt;link href=&quot;http://hang.nodester.com/hang.css?5000&quot; rel=&quot;stylesheet&quot; /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Hello World&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<h2>Testing</h2>
+<p>I&#39;ve created a simple hanging service that you can reuse yourself.  It&#39;s running on <a href="http://nodejs.org">Node</a> so there&#39;s no worry of nuking the machine due to the hang (as opposed to using PHP to test using a sleep - which <em>would</em> nuke a public machine). </p>
+<p>To test include the following url: <a href="http://hang.nodester.com/file.type?ms"><a href="http://hang.nodester.com/file.type?ms">http://hang.nodester.com/file.type?ms</a></a></p>
+<p>i.e. <a href="http://hang.nodester.com/foo.css?2000"><a href="http://hang.nodester.com/foo.css?2000">http://hang.nodester.com/foo.css?2000</a></a> will return a file with a CSS mime type and hang for 2000 milliseconds.</p>
+<p>The best way to determine when the DOM is loaded (or loading) when you can&#39;t see the output is to listen for the <code>readystatechange</code> event (<a href="https://twitter.com/3rdeden/status/78363201082896384">ht</a>). So in my test, I&#39;ve included some script that tells me where the DOM is up to, and I can visually confirm whether the <code>link</code> element is hanging.</p>
+<h2>What about font includes?</h2>
+<p>I also tested including hanging fonts via CSS, i.e. if you copied the @font-face declarations, but the font service was down: this <em>does not</em> hang the page. However, you do suffer from the <a href="http://www.bluerobot.com/web/css/fouc.asp/" title="Flash of Unstyled Content (FOUC)">FOUC</a>, but that&#39;s a whole different issue.</p>
+<h2>The fix</h2>
+<p>As per anything that hangs: do it asynchronously to the DOM rendering - or rather <em>after</em> the DOM has done most, if not all of the parsing.  That is, to use JavaScript to insert the <code>link</code> element once the DOM - or rather <em>content</em> is ready.  Here&#39;s a simple example: <a href="http://jsbin.com/agumu4/4"><a href="http://jsbin.com/agumu4/4">http://jsbin.com/agumu4/4</a></a> - note that the <code>readystate</code> says it&#39;s still loading, that&#39;s because my DOM doesn&#39;t fully load when the JavaScript appends the <code>link</code> element (i.e. it doesn&#39;t wait for an event, it&#39;s just at the bottom of the document).</p>
+<p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2011/06/08/link-elements-block-dom-parsing-too/';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js"></script><script src="/js/index.js"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body>

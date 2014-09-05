@@ -1,0 +1,102 @@
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Let's get Dashcode working again</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-13', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-lets-get-dashcode-working-again-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2007/08/17/w3csitescom-harmful" title="w3csites.com harmful?">Next</a></li><li class="prev"><a href="/2007/07/26/lastfm-recent-album-artwork-plugin" title="Last.fm Recent Album Artwork Plugin">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/lets-get-dashcode-working-again" rel="bookmark" title="Permanent Link: Let's get Dashcode working again">Let's get Dashcode working again</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/lets-get-dashcode-working-again.md">(edit)</a></small></h1><div class="post-content">
+<div class="update">
+    <p><strong>Update:</strong> why is it you always find the solution after you post a work around?  Anyway, you can patch both <a href="http://alex.clst.org/dbd/?p=561">Intel</a> and <a href="http://alex.clst.org/dbd/?p=562">PPC</a> based Dashcode apps using the information found at <a href="http://alex.clst.org/dbd/?p=561">alex.clst.org</a></p>
+</div>
+
+<p>Dashcode has expired on time, but Leopard wasn&#39;t delivered on time, and now we&#39;re left for at least 3 more months without this excellent, free development environment.</p>
+<p>Since Apple don&#39;t seem to be releasing another beta until Leopard is out it looks like we&#39;re forced to look to alternative methods of widget development.  So, either someone needs to get in there and patch Dashcode around the expiry or you can use <a href="http://remysharp.com/2007/07/30/lets-get-dashcode-working-again/#script">my script</a> to get it going again.</p>
+<!--more-->
+
+<h2>Patch around the expiry</h2>
+<p>Sadly for the time being, I&#39;ve not too familiar with Objective-C and developing for the Mac.  However programs run on logic, so this is how far I&#39;ve got:</p>
+<ol>
+<li>The date we&#39;re looking for is <strong>2007-07-15</strong></li>
+<li>I&#39;ve run <code>strings</code> on the Dashcode package and <code>grep</code>&#39;ed for the date to no avail</li>
+<li>It makes sense to think the expiry is being checked using two <a href="http://developer.apple.com/documentation/Cocoa/Reference/Foundation/Classes/NSCalendarDate_Class/Reference/Reference.html">NSCalendarDate</a> to compare and continue</li>
+<li>Running the ObjectAlloc app (/Developer/Applications/Performance Tools/) I can see the NSCalendarDate objects being created, and most importantly, can see one of the objects contains: 2007-07-15 00:00:00 +0100, and the other &#39;now&#39;.</li>
+<li>Based on all of this, I have to assume the date is hardcoded in to either the binary or it&#39;s resources, therefore it can be changed - it just needs the year leaping forward.</li>
+</ol>
+<p><img src="http://remysharp.com/wp-content/uploads/2007/07/dashcode-memory-inspection.png" alt="Dashcode Memory Inspection"></p>
+<p>If anyone comes up with a patch or hack - that would be superb.</p>
+<h2 id="script">Using AppleScript to get around the expiry</h2>
+
+<p>I&#39;ve managed to knock together a simple AppleScript that will reset the date, run Dashcode and then set the date back.  The only prerequisite is that you set the date and time automatically via the Date &amp; Time System Preference panel.</p>
+<p><a href="applescript://com.apple.scripteditor?action=new&amp;script=set%20username%20to%20%22YOURUSERNAME%22%0Dset%20passwd%20to%20%22YOURPASSWORD%22%0Dset%20bypass_year%20to%20%222007%22%0Dset%20bypass_month%20to%20%2205%22%0Dset%20bypass_day%20to%20%2214%22%0D%0Dset%20date_cmd%20to%20%22date%20%22%20%26%20bypass_month%20%26%20bypass_day%20%26%20%22%60date%20%2B%25H%25M%60%22%20%26%20bypass_year%0D%0Ddo%20shell%20script%20date_cmd%20user%20name%20username%20password%20passwd%20with%20administrator%20privileges%0D%0Dtell%20application%20%22Finder%22%0D%09run%20application%20%22Dashcode%22%0Dend%20tell%0D%0Dtell%20application%20%22System%20Preferences%22%0D%09activate%0D%09set%20current%20pane%20to%20pane%20%22Date%20%26%20Time%22%0D%09quit%20%22System%20Preferences%22%0Dend%20tell%0D%0Dtell%20application%20%22Dashcode%22%0D%09activate%0Dend%20tell">View the AppleScript in your Script Editor</a></p>
+<pre><code>set username to "YOURUSERNAME"
+set passwd to "YOURPASSWORD"
+set bypass_year to "2007"
+set bypass_month to "05"
+set bypass_day to "14"
+
+set date_cmd to "date " &amp; bypass_month &amp; bypass_day &amp; "`date +%H%M`" &amp; bypass_year
+
+-- set the date to allow Dashcode to open
+do shell script date_cmd user name username password passwd with administrator privileges
+
+tell application "Finder"
+    run application "Dashcode"
+end tell
+
+tell application "System Preferences"
+    activate
+    -- forces a reset on the date
+    set current pane to pane "Date &amp; Time"
+    quit "System Preferences"
+end tell
+
+tell application "Dashcode"
+    activate
+end tell</code></pre><p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2007/07/30/lets-get-dashcode-working-again/';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js"></script><script src="/js/index.js"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body>

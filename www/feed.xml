@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Fri, 15 Aug 2014 14:38:14 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>In the middle with &lt;center&gt;</title><guid isPermaLink="false">in-the-middle-with-center</guid><link>http://remysharp.com/2014/08/15/in-the-middle-with-center</link><pubDate>Fri, 15 Aug 2014 14:38:14 +0000</pubDate><description><![CDATA[I posted a tweet recently that confused some people. They might have thought I was trolling or being sarcastic!
+
+The &lt;center&gt; tag is awesome. Why have I been avoiding it all these years?
+
+Seriously. It is. But I feel like I may have to defend my opinion on this one!]]></description><content:encoded><![CDATA[
+<p>I posted a <a href="https://twitter.com/rem/status/499629513983406080">tweet</a> recently that confused some people. They might have thought I was trolling or being sarcastic!</p>
+<blockquote>
+<p>The <code>&lt;center&gt;</code> tag is awesome. Why have I been avoiding it all these years?</p>
+</blockquote>
+<p>Seriously. It is. But I feel like I may have to defend my opinion on this one!</p>
+<h2>It&#39;s <em>easier</em></h2>
+<p>I want to centre some text. My brain has a fork in it&#39;s process:</p>
+<ol>
+<li>I use <code>&lt;center&gt;</code></li>
+<li>I don&#39;t use <code>&lt;center&gt;</code> and choose from an array of CSS based options</li>
+</ol>
+<p>Let&#39;s entertain option 2 for a moment. Here&#39;s my code:</p>
+<pre><code>&lt;p&gt;The witch had a cat and a very tall hat,&lt;/p&gt;
+&lt;p&gt;And long ginger hair which she wore in a plait.&lt;/p&gt;
+&lt;p&gt;By: Julia Donaldson and Axel Sheffler&lt;/p&gt;</code></pre>
+<p>I want the author credit to be centre aligned. This is the cost with option 2:</p>
+<ol>
+<li>Add a class to the last <code>p</code> tag</li>
+<li><em>Think</em> of an appropriate name, perhaps &quot;credit&quot;</li>
+<li>Create a new style sheet file</li>
+<li>Add the <code>link</code> tag to the <code>head</code> of my document</li>
+<li>Remember to add <code>rel=&quot;stylesheet&quot;</code> or it won&#39;t work</li>
+<li>Add 3 lines of CSS</li>
+</ol>
+<p>As such:</p>
+<pre><code>.credit {
+  text-align: center;
+}</code></pre>
+<p>Not much work.</p>
+<p>Now compared to using the <code>center</code> tag:</p>
+<ol>
+<li>Add <code>center</code> tag around content</li>
+<li>No, there is no step two. Got you there for a second, right?</li>
+</ol>
+<h2>But...but...semantics!</h2>
+<p>Okay. Semantics. Let&#39;s keep the deeper conversation aside for a minute, but what I&#39;ve seen argued is: the <code>center</code> element doesn&#39;t have any semantic value.</p>
+<p>So instead you might use a <code>span</code> or a <code>div</code> instead (and yes, sure, if you were just centring a paragraph, you&#39;d use a <code>p</code> and CSS as above).</p>
+<p>But now you&#39;re using an element without any semantic meaning, and then adding CSS (and probably classes) to centre align.</p>
+<p>Instead, why not, use <code>center</code>, which has &quot;no semantic meaning&quot; and benefit from the default browser styling that you get for free. Just like you do for different heading levels. Or for <code>sup</code> or <code>small</code>?</p>
+<h2>Yeah, but it&#39;s deprecated!</h2>
+<p>Actually, according to the W3C validator, the element is <em>obsolete</em> - which sounds a little harsher.</p>
+<p>But then, so what? The beauty of HTML is that it works, as busted as you can make it, browsers will make it work.</p>
+<p>Old pages written with <code>font</code> tags and <code>big</code> still work, and there&#39;s a <a href="http://www.w3.org/TR/CSS2/sample.html">well defined spec</a> for browser vendors that support HTML4 as to how HTML4 elements should be styled. HTML4 moved to recommendation in 1999, and HTML5 has still not reached recommendation phase (at time of writing it&#39;s Candidate Recommendation as of 31 July 2014).</p>
+<p>My point being: browsers will support the HTML4 elements for a long...long time. I&#39;d be prepared to bet that HTML4, and <code>center</code> styling will be supported beyond the lifetime of this blog (and any other of my sites).</p>
+<p>So it&#39;s deprecated. But it works. And that&#39;s basically the web summed up: <strong>but it works.</strong></p>
+<h2>More center?</h2>
+<p>Yep, I&#39;ve convinced myself, I&#39;ll be using <code>center</code> just a little more often (than previously not at all). Maybe you&#39;ll reconsider pulling it back in to your toolbox!</p>
+]]></content:encoded></item><item><title>Time doesn’t heal</title><guid isPermaLink="false">time-doesnt-heal</guid><link>http://remysharp.com/2014/08/11/time-doesnt-heal</link><pubDate>Mon, 11 Aug 2014 13:00:06 +0000</pubDate><description><![CDATA[My wife and I lost our daughter at full term in the last throes of labour to stillbirth. It was the darkest time of my life.
+Over the coming months we&#39;d hear the phrase &quot;time heals&quot;. It doesn&#39;t.
+How would it? We lost our daughter. She&#39;ll be 4 this year. I still miss her. My heart still yearns for her. I still cry for her.
+Time won&#39;t ever heal this hole in our lives. It shouldn&#39;t either. 
+Time can heal cuts and pains, so those cuts go away and you don&#39;t think of them again. But the loss of our daughter? Time will remind us over and over again that she&#39;s not here. Her first Christmas, first birthday, the birth of our son, our family coming together for a group photo, when she was supposed to join school. Over and over and over.
+Time gave us room to grow stronger. And not quickly, in that &quot;you&#39;re so strong&quot; way. But slowly. Over many many months and many years.
+As time goes on, I started to accept this hole in my life as part of my life. 
+Time didn&#39;t heal me, but I was able to begin to bear the weight of her loss. Just like going to the gym and lifting weights, I&#39;d gained the strength, but it&#39;s taken a long, long time. And I&#39;m not healed. I never will be. I&#39;m just able to carry more.
+You just get stronger. You have to.
+It doesn&#39;t mean it doesn&#39;t hurt anymore. It does. I&#39;m just able to carry that pain and make it mine and part of me, because I&#39;ve learnt how to.
+Time doesn&#39;t heal. It just looks that way from the outside in.
+Reposted from The Pastry Box Project]]></description><content:encoded><![CDATA[
+<p>My wife and I lost our daughter at full term in the last throes of labour to stillbirth. It was the darkest time of my life.</p>
+<p>Over the coming months we&#39;d hear the phrase &quot;time heals&quot;. <strong>It doesn&#39;t</strong>.</p>
+<p>How would it? We lost our daughter. She&#39;ll be 4 this year. I still miss her. My heart still yearns for her. I still cry for her.</p>
+<p>Time won&#39;t ever heal this hole in our lives. It shouldn&#39;t either. </p>
+<p>Time can heal cuts and pains, so those cuts go away and you don&#39;t think of them again. But the loss of our daughter? Time will remind us over and over again that she&#39;s not here. Her first Christmas, first birthday, the birth of our son, our family coming together for a group photo, when she was supposed to join school. Over and over and over.</p>
+<p>Time gave us room to grow <em>stronger</em>. And not quickly, in that &quot;you&#39;re so strong&quot; way. But slowly. Over many many months and many years.</p>
+<p>As time goes on, I started to accept this hole in my life as <em>part of my life</em>. </p>
+<p>Time didn&#39;t heal me, but I was able to <em>begin</em> to bear the weight of her loss. Just like going to the gym and lifting weights, I&#39;d gained the strength, but it&#39;s taken a long, long time. And I&#39;m not healed. I never will be. I&#39;m just able to carry more.</p>
+<p>You just get stronger. You have to.</p>
+<p>It doesn&#39;t mean it doesn&#39;t hurt anymore. It does. I&#39;m just able to carry that pain and make it mine and part of me, because I&#39;ve learnt how to.</p>
+<p>Time doesn&#39;t heal. It just looks that way from the outside in.</p>
+<p><small>Reposted from <a href="https://the-pastry-box-project.net/remy-sharp/2014-july-3">The Pastry Box Project</a></small></p>
+]]></content:encoded></item><item><title>Automatic permalinks for blog posts</title><guid isPermaLink="false">automatic-permalinks-for-blog-posts</guid><link>http://remysharp.com/2014/08/08/automatic-permalinks-for-blog-posts</link><pubDate>Fri, 08 Aug 2014 14:00:38 +0000</pubDate><description><![CDATA[There&#39;s been so many times that I&#39;ve wished I could quickly link to a specific
+headline in an article, but there&#39;s no id attributes on the tag...so I can&#39;t.
+But then there&#39;s nothing I can do to fix it, because it actually requires the
+blog author to overhaul their site to add ids to all the heading tags which
+may not be a quick job.
+So, my dear blog author, here&#39;s my work around until you do serve ids in
+your headings.]]></description><content:encoded><![CDATA[
+<p>There&#39;s been so many times that I&#39;ve wished I could quickly link to a specific
+headline in an article, but there&#39;s no <code>id</code> attributes on the tag...so I can&#39;t.</p>
+<p>But then there&#39;s nothing I can do to fix it, because it actually requires the
+blog author to overhaul their site to add <code>id</code>s to all the heading tags which
+may not be a quick job.</p>
+<p>So, my dear blog author, here&#39;s my work around until you <em>do</em> serve <code>id</code>s in
+your headings.</p>
+<h2>JavaScript to generated permalinks</h2>
+<p>We&#39;re going to add a single JavaScript file that will crawl through all our
+heading elements, and convert the text of the heading into an <code>id</code>.</p>
+<p>Then, if there&#39;s a hash fragment in the URL, the window will jump down to the
+named element. Thus &quot;faking&quot; permalink support.</p>
+<h2>The id</h2>
+<p>The <code>id</code> attribute is only applied if there&#39;s no <code>id</code> on the heading element
+and is simply a regular expression that strips away anything that isn&#39;t an
+alphanumeric and converts it to lowercase.</p>
+<p>So a heading that reads: &quot;What does a Pro account get you?&quot; is converted to
+<code>whatdoesaproaccountgetyou</code>. <a href="http://jsbin.com/help/pro#whatdoesaproaccountgetyou">Pretty simple</a>.</p>
+<h2>Exposing the link</h2>
+<p>Inspired by Github&#39;s readme permalinks, when you hover near the left of the
+title then you&#39;ll see a ¶ character that is clickable and gives the reader the
+permalink.</p>
+<p>This style is injected via the JavaScript, and it&#39;s quite possible you&#39;ll need
+to tweak it a little to get it style correctly on your own site (but it&#39;s pretty
+small).</p>
+<h2>Usage</h2>
+<p>Simple. <a href="https://github.com/remy/permalink">Download the script</a>. Then just slap
+the script in the footer of your site (or after all your heading tags) and it&#39;ll
+upgrade your headings for your visitors:</p>
+<pre><code>&lt;script src=&quot;js/permalink.js&quot;&gt;&lt;/script&gt;</code></pre>
+<p>Now I can share headline specific links to <em>your</em> site whilst all you needed to
+do was add one line. Thank you!</p>
+]]></content:encoded></item><item><title>The 'what time did my son wake up?' project</title><guid isPermaLink="false">arduino-wake-up-time</guid><link>http://remysharp.com/2014/08/05/arduino-wake-up-time</link><pubDate>Tue, 05 Aug 2014 10:53:19 +0000</pubDate><description><![CDATA[My 2 1/2 year old son wakes up before us during the spring and summer. He turns his light on fully, and plays until he&#39;s bored, then calls for us to join us in bed in the morning.
+The problem was: exactly when was he waking, because it would affect how tired he was in the day (and affect nap times). So I built a tiny Arduino prototype :-)]]></description><content:encoded><![CDATA[
+<p>My 2 1/2 year old son wakes up before us during the spring and summer. He turns his light on fully, and plays until he&#39;s bored, then calls for us to join us in bed in the morning.</p>
+<p>The problem was: exactly <em>when</em> was he waking, because it would affect how tired he was in the day (and affect nap times). So I built a tiny Arduino prototype :-) </p>
+<h2>The grand plan</h2>
+<p>The grand plan was to use a TinyAT85 chip (because I like micro projects), with 4 digit 7 segment LED, a photoresistor, a push button (to reset) and a real time clock (RTC module). </p>
+<p>This would be in some sort of housing, and I&#39;d use Sugru with their magnets to stick to his lamp. </p>
+<p>The idea being that the unit would attach magnetically to his lamp and be in a sleep state (though actually there&#39;s smarter approaches I could use to <em>actually</em> be in a sleep state). </p>
+<p>When the light is switched on, the photoresistor picks up a value higher than 950, and the time is displayed and fixed on the LED display. You then hit the reset button to go back to sleep state.</p>
+<h2>The reality</h2>
+<p>7 segment LED displays, wired up regularly take up a <em>lot</em> of pins, even more so when there&#39;s four! This combined with the fact that TinyAT85 s only have 5 available pins for data, meant I&#39;d need to use one of the adafruit LED backpacks (which I didn&#39;t have to hand), and then I didn&#39;t know if I could use an SPI pin with the SDA and SCL pins required to run the RTC module - so I decided to stick to the prototype for now.</p>
+<h2>The prototype</h2>
+<p>I had a LCD module handy, which I&#39;d use instead of the LED display. I also always prototype using an Arduino Uno, so it&#39;s simpler (and a lot bigger).</p>
+<p>From there it was very simple. A lot of copy and paste from the adafruit website and then just writing the logic into my code:</p>
+<ul>
+<li>If the light sensor value goes above 850, then the light is on.</li>
+<li>Grab the time from the RTC module</li>
+<li>Display the time on the LCD</li>
+<li>If the push button is ‘LOW‘ then reset and clear the display</li>
+<li>As an additional bonus, if the light value drops below 300, it means the light is off, and reset (which saves pressing reset at night)</li>
+</ul>
+<p>Here&#39;s the code: <a href="https://gist.github.com/remy/11264660#file-light-time-pde">light-time.pde</a></p>
+<p>And the prototype wired up:</p>
+<p><img src="https://farm6.staticflickr.com/5333/13975246696_3d7bcc89e6_o.jpg" alt=" https://farm6.staticflickr.com/5333/13975246696_3d7bcc89e6_o.jpg"></p>
+<h2>The grand conclusion</h2>
+<p>After carefully wiring everything up, placing the arduino in my son&#39;s room and covering the lights so it wouldn&#39;t keep him up, I headed to bed keep to discover the time he was actually rising.</p>
+<p>The morning came, he woke me and my wife up early (as expected), and I trotted into his room to discover...the battery had died.</p>
+<p>Yep. Polling all the time is going to burn the battery out, and indeed what I need is an interrupt (based on the light levels ideally). So that&#39;s the plan for version 2...when I get around to it. For now, filling up failed projects!</p>
+]]></content:encoded></item><item><title>Call for proposals at Full Frontal 2014</title><guid isPermaLink="false">call-for-proposals-at-full-frontal-2014</guid><link>http://remysharp.com/2014/06/17/call-for-proposals-at-full-frontal-2014</link><pubDate>Tue, 17 Jun 2014 12:51:12 +0000</pubDate><description><![CDATA[Full Frontal has it&#39;s ticket release date(s!) and as usual, I&#39;m already carefully curating the content I want to hear at Full Frontal, but I always make sure I allot a few positions for CFP - because let&#39;s face it: I don&#39;t know, what I don&#39;t know.]]></description><content:encoded><![CDATA[
+<p><a href="http://2014.full-frontal.org">Full Frontal</a> has it&#39;s ticket release date(s!) and as usual, I&#39;m already carefully curating the content I want to hear at Full Frontal, but I always make sure I allot a few positions for CFP - because let&#39;s face it: I don&#39;t know, what I don&#39;t know.</p>
+<p>So, if you think you&#39;ve got something to share, then get in touch. I&#39;ve included a few guidelines as to what I prefer from a proposal, and given you an idea of the kinds of topics I&#39;m interested in hearing about this year.</p>
+<h2>Proposal topic advice</h2>
+<p>I&#39;ve also included what you can expect as a speaker at our event too.</p>
+<p>Topics that interest me:</p>
+<ul>
+<li>Web technology used outside of browsers</li>
+<li>What we can learn in web development from other technology/disciplines</li>
+<li>Debugging in new and unexpected ways</li>
+<li>The future of the web/the future and how the web will be part of that</li>
+<li>SysOP problems for JavaScript/node devs</li>
+<li>Performance and squeezing insanity through the pipeline</li>
+<li>Large scale application design problems that specifically applies to small scale</li>
+<li>&quot;You&#39;re doing it wrong&quot;</li>
+</ul>
+<p>If you want to get an idea of the audience or who you proposal is for, the answer is simple: me. I curate for content that <em>I want to hear and see</em>. So if you (roughly) know my work, then you know the audience.</p>
+<p>Topics that don&#39;t work, unless they&#39;re genuinely going to change the World, then CFPs like these generally fall to the bottom of the pile (sorry!):</p>
+<ul>
+<li>Library specific talks</li>
+<li>Your company&#39;s new product</li>
+<li>Talks that are very similar to previous Full Frontal talks</li>
+</ul>
+<p>Send me the title of your talk, an outline of the talk and any extra information you want me to know about the idea: <a href="mailto:events@leftlogic.com?subject=FF2014%20speaking%20propsal">events@leftlogic.com</a></p>
+<p>If your proposal (is genuine and) comes in <strong>before 14 July 5pm UK time</strong> then we&#39;ll give early access to buy a ticket before the second wave of tickets are released. Regardless, if your proposal is selected, we&#39;ll refund your conference ticket if you bought one.</p>
+<h2>Our promise to you</h2>
+<p>All our speakers are treated the same. We will:</p>
+<ul>
+<li>Pay for your travel. If you&#39;re flying long haul, we&#39;ll upgrade you to premium class (or whatever the name is for &quot;above economy&quot;)</li>
+<li>Put you up in our &quot;speaker hotel&quot;. It&#39;s not that sexy, but it&#39;s right in town and two minutes walk from our venue. We&#39;re also open to offering the hotel stay. If you want an extra day or two here and there, then that&#39;s cool too (obviously if everyone does this, it breaks our bank, but so far it&#39;s worked)</li>
+<li>Arrange your travel and help you with anything you need ahead of the event</li>
+<li>We can, if you need or want it, provide you with a mifi preloaded with data</li>
+<li>All your food and drinks provided for you during the day before and the day of the conference (don&#39;t expect to buy a drink at the after party)</li>
+<li>40 minute talk, generally we don&#39;t do Q&amp;A and it&#39;s best to err on the side of &quot;there is no wifi&quot;</li>
+<li>£500 honourium - I know it&#39;s not much, but it&#39;s a bit of spending money to say thanks</li>
+<li>A free pass to the following year of Full Frontal, and for evermore part of our growing and much loved speaker alumni</li>
+</ul>
+<p>So I hope to hear from you soon!</p>
+]]></content:encoded></item><item><title>CommonJS modules with live edit in devtools</title><guid isPermaLink="false">commonjs-with-devtools-live-edit</guid><link>http://remysharp.com/2014/05/30/commonjs-with-devtools-live-edit</link><pubDate>Fri, 30 May 2014 12:07:56 +0000</pubDate><description><![CDATA[As you might know, I&#39;m a big fan of Chrome devtools&#39; live edit and workspaces (video playlist), and it&#39;s this workflow that&#39;s kept me away from Browserify. 
+So I went about creating an experiment that allowed me to use CommonJS modules in development and that allowed me to edit and save directly in devtools without a build step.]]></description><content:encoded><![CDATA[
+<p>As you might know, I&#39;m a big fan of <a href="http://www.youtube.com/playlist?list=PLXmT1r4krsTq7w7hDV6zfirrs4NJlzJX5">Chrome devtools&#39; live edit and workspaces</a> (video playlist), and it&#39;s this workflow that&#39;s kept me away from <a href="http://browserify.org">Browserify</a>. </p>
+<p>So I went about creating an experiment that allowed me to use CommonJS modules in development <em>and</em> that allowed me to edit and save directly in devtools <em>without</em> a build step.</p>
+<h2>Some context</h2>
+<p>As far as I know, Browserify is the bees knees for using CommonJS modules in the client side. However, it&#39;s also got a build step. I know it supports sourcemaps, but I&#39;ve personally had mixed (about 20%) success with sourcemaps, and particularly when it comes to saving directly in devtools.</p>
+<p>I&#39;m happy with a build step for production, but not in dev. I want to know the files I&#39;m working with are being saved to disk without any extra steps.</p>
+<p>It&#39;s entirely possible I&#39;ve reinvented the wheel here (feel free to point me in the right direction!).</p>
+<p>So...I had a go at re-inventing the <code>require</code> method...</p>
+<h2>Demo</h2>
+<p>For your viewing pleasure, here&#39;s the experiment using my dev require.js. It supports CommonJS modules. I&#39;ve only tested a few levels deep, and it&#39;s <em>only</em> for client side code.</p>
+<p>The main requirements were to ensure:</p>
+<ol>
+<li>Line numbers in the console mapped correctly to the line in the file</li>
+<li>Saving the file would commit the save to disk</li>
+<li>Saving the file would update memory</li>
+</ol>
+<p>These <em>kinda</em> work as you&#39;ll see in the video.</p>
+<iframe width="1280" height="720" src="//www.youtube.com/embed/uHxxcnJi4BE?rel=0" frameborder="0" allowfullscreen></iframe>
+
+<h2>How it works</h2>
+<p>Pretty simple (and stupid) really, require.js is just this:</p>
+<pre><code>function require(path) {
+  var xhr = new XMLHttpRequest();
+
+  if (path[0] === &#39;.&#39;) {
+    path = path.substr(2);
+  }
+
+  path += &#39;.js&#39;;
+
+  var module = {
+    exports: {}
+  };
+
+  xhr.open(&#39;GET&#39;, path, false); // sync
+  xhr.send();
+
+  var code = xhr.responseText;
+
+  if (code.indexOf(&#39;//# sourceURL&#39;) === -1) {
+    code += &#39;\n\n//# sourceURL=&#39; + path;
+  }
+
+  eval(code);
+
+  return module.exports;
+}</code></pre>
+<p>The code boils down to:</p>
+<ol>
+<li>Make an <em>synchronous</em> XHR call to the script</li>
+<li>Insert a <code>sourceURL</code> in the code so devtools knows what file it was</li>
+<li>Create a <code>module</code> object in scope</li>
+<li>Then eval and return the updated <code>module.exports</code></li>
+</ol>
+<p>Pretty filthy really. Also obviously missing the require path resolution.</p>
+<p>I&#39;ve created a little repo with the <a href="https://github.com/remy/require-for-dev">code I used in the demo on github</a> too.</p>
+<h2>Known and potential issues</h2>
+<ul>
+<li>Using the <code>setInterval</code> you may have noticed in foo.js, when changing the code, devtools loses access to the <code>app</code> variable. Unsure why.</li>
+<li>Using Workspaces is a no-no, it seems to get really confused and <em>very</em> sticky about what&#39;s in memory (i.e. the file shown in sources does not match what&#39;s being run)</li>
+<li>The full require resolution isn&#39;t implemented at all (so only relative URLs are loaded)</li>
+<li>Saving the file in devtools will insert the <code>sourceURL</code> in the file permanently</li>
+<li>I&#39;m not 100% of the security of the modules - in fact I&#39;m pretty sure (since they&#39;re not running inside a new document context) that there would be namespace collision (which is kind of the point of CommonJS to avoid!!!)</li>
+<li>Probably a lot more potential issues - like I said, this is an <em>experiment</em>!</li>
+</ul>
+<h2>Does it really work?</h2>
+<p>I&#39;m not sure. It&#39;s not perfect, and I&#39;m not 100% sure it&#39;s 100% usable...so I&#39;m classing this as a failed experiment.</p>
+<p>I thought about seeing if I could make an iframe on the fly, and inject the content, but the iframe would have to be appended to the document to execute the code, and the code is only executed on the &quot;next tick&quot;, i.e. <em>after</em> the <code>return module.exports</code> so the module would be loaded, but the code would not. Poop.</p>
+<p>On the upside, I figured it was worth sharing, because some bright mind might just solve the memory linking issues that I&#39;m seeing or create some clever work around.</p>
+]]></content:encoded></item><item><title>Where is that console.log?</title><guid isPermaLink="false">where-is-that-console-log</guid><link>http://remysharp.com/2014/05/23/where-is-that-console-log</link><pubDate>Fri, 23 May 2014 12:16:21 +0000</pubDate><description><![CDATA[Did you ever have phantom console.log - or more specifically you&#39;ve no idea 
+where it was happening?
+I have. This tiny bit of code will help you identify where the logging is 
+being called from. The nice thing is it works in the browser and in node.]]></description><content:encoded><![CDATA[
+<p>Did you ever have phantom <code>console.log</code> - or more specifically you&#39;ve no idea 
+where it was happening?</p>
+<p>I have. This tiny bit of code will help you identify <em>where</em> the logging is 
+being called from. The nice thing is it works in the browser <em>and</em> in node.</p>
+<p><small>Honourable mention: <a href="https://medium.com/@garychambers108/b3cc6fd0dafd">@garychambers108&#39;s</a> node.js better logging - I&#39;ve been wanting to do something about my rogue consoles and Gary&#39;s article kicked me in to action.</small></p>
+<h2>Upgrading log to show <em>where</em> logging is happening</h2>
+<pre><code>[&#39;log&#39;, &#39;warn&#39;].forEach(function(method) {
+  var old = console[method];
+  console[method] = function() {
+    var stack = (new Error()).stack.split(/\n/);
+    // Chrome includes a single &quot;Error&quot; line, FF doesn&#39;t.
+    if (stack[0].indexOf(&#39;Error&#39;) === 0) {
+      stack = stack.slice(1);
+    }
+    var args = [].slice.apply(arguments).concat([stack[1].trim()]);
+    return old.apply(console, args);
+  };
+});</code></pre>
+<p>If you include this as high as possible in your code base, all subsequent <code>console.log</code> (or <code>warn</code>) calls will include the line the call was made from:</p>
+<p><img src="http://remysharp.com/images/where-logging.png" style="border: 1px solid #ccc; display: block; margin: 0 auto; max-width: 100%"></p>
+<p>Here&#39;s a simplified demo: <a href="http://jsbin.com/wataw/2/edit?js,console"><a href="http://jsbin.com/wataw/2/edit?js,console">http://jsbin.com/wataw/2/edit?js,console</a></a></p>
+<p>All the code is doing is rewriting the <code>log</code> and <code>warn</code> methods and appending the location of the call at the end of the log. Note that I&#39;m not overloading the <code>error</code> method because it comes with it&#39;s own stacktrace.</p>
+<p>The location of the call is deduced using <code>new Error</code>, then looking at the <code>stack</code> property (disclaimer: this won&#39;t work in <em>all</em> browsers - I&#39;ve only tested in Firefox, Chrome and Node).</p>
+<p>Simple. Now I can hunt down those rogue logs and remove them from the codebase.</p>
+]]></content:encoded></item><item><title>On Chrome hiding URLs to protect users from phishing</title><guid isPermaLink="false">on-chrome-hiding-urls-to-protect-users-from-phishing</guid><link>http://remysharp.com/2014/05/04/on-chrome-hiding-urls-to-protect-users-from-phishing</link><pubDate>Sun, 04 May 2014 19:10:46 +0000</pubDate><description><![CDATA[Jake and Jeremy have posted about how chrome is experimenting with a way to protect users from phishing. Jake is pro the approach, Jeremy against. Read their posts: Jake&#39;s and Jeremy&#39;s.]]></description><content:encoded><![CDATA[
+<p>Jake and Jeremy have posted about how chrome is experimenting with a way to protect users from phishing. Jake is pro the approach, Jeremy against. Read their posts: <a href="http://jakearchibald.com/2014/improving-the-url-bar/">Jake&#39;s</a> and <a href="http://adactio.com/journal/6779/">Jeremy&#39;s</a>.</p>
+<p><em>Please note, this post is unedited – and written on a tablet!</em></p>
+<p>What I&#39;m posting is a proposal for an alternative approach (that I couldn&#39;t fit, and didn&#39;t want to fit into 140 characters!).</p>
+<p>Instead of hiding the URL entirely, take the lead from what exist now (the path is semi-opaque), <strong>but in addition the subdomain is truncated</strong> and dimmed the same way long paths are. </p>
+<p>The point is to get the <em>actual domain</em> across to the visitor, so how about this for a solution:</p>
+<p><img src="http://remysharp.com/images/jake-evil-better.png" alt="http://remysharp.com/images/jake-evil-better.png"></p>
+<p>Note that the URL is shown in the browser tab (because in this example, there&#39;s no <code>title</code> element), this should also be used to highlight the actual domain, and not default to showing the full URL.</p>
+<p>When compared to the current situation:</p>
+<p><img src="http://remysharp.com/images/jake-evil.png" alt="http://remysharp.com/images/jake-evil.png"></p>
+<p>The change (which I&#39;d expect across all Chrome browsers, i.e. mobile too) is:</p>
+<ul>
+<li>Semi-opaque pathname</li>
+<li>Semi-opaque subdomains (cname)</li>
+<li>Truncate long paths to ellipsis</li>
+<li><strong>Truncate any preceding subdomains with ellipsis (with sensible defaults, like it would show <code>www</code> or perhaps the final subdomain fragment)</strong></li>
+<li>When the <code>title</code> element is missing, match the text displayed in the tab title to the truncated URL shown in the URL bar.</li>
+</ul>
+<p>I&#39;ll note that most browsers already highlight the domain part of the URL, but the point I&#39;m trying to make with my proposed mockup, is that everything before the domain (the jakearchibald.com part), <strong>should be truncated <em>as well as</em> dimmed</strong>.</p>
+<p>Perhaps this is a strong enough move to make clear to visitors exactly what URL they&#39;re on, whilst still communicating that they&#39;re visiting a specific URL and not just the root of the domain.</p>
+]]></content:encoded></item><item><title>Feature based development</title><guid isPermaLink="false">feature-based-development</guid><link>http://remysharp.com/2014/03/17/feature-based-development</link><pubDate>Mon, 17 Mar 2014 17:14:35 +0000</pubDate><description><![CDATA[Recently we changed the way we were working on JS Bin. Instead of pushing new
+features whenever it took my fancy - which could result in success or equally
+some kind of breakage - we&#39;re now pushing new features under feature flags and
+it&#39;s proving to be really quite powerful (and fun).]]></description><content:encoded><![CDATA[
+<p>Recently we changed the way we were working on JS Bin. Instead of pushing new
+features whenever it took my fancy - which could result in success or equally
+some kind of breakage - we&#39;re now pushing new features under feature flags and
+it&#39;s proving to be really quite powerful (and fun).</p>
+<h2>feature-gateway</h2>
+<p>The module is up on npm and can be installed via <code>npm install feature-gateway</code>. It&#39;s not specifically for Node (in that it&#39;ll work on the client side too), but if you put your feature test in the client, it&#39;s obviously easy for a visitor to hack.</p>
+<p>It&#39;s got tests and it up on github under <a href="https://github.com/remy/feature-gateway">remy/feature-gateway</a> for anyone to learn from or use.</p>
+<h2>Simple example</h2>
+<p>The library I&#39;ve written is extremely simple (and purposely so). It&#39;s used in regular <code>if</code> conditionals, as part of Express routing and inside our Handlebar templates.</p>
+<p>If we have a feature called &quot;ssl-login&quot; that we&#39;re testing, the router might look like this:</p>
+<pre><code>app.get(&#39;/login&#39;, features.route(&#39;ssl-login&#39;), renderSecureLogin);
+app.get(&#39;/login&#39;, showLogin); // the old way</code></pre>
+<p>And an example in a Handlebars template to access the &quot;sandbox&quot; feature:</p>
+<pre><code>{{#feature request &quot;sandbox&quot;}}
+  &lt;button&gt;Launch sandbox&lt;/button&gt;
+{{else}}
+  &lt;a href=&quot;/...&quot;&gt;Find out about upcoming Sandbox feature&lt;/a&gt;
+{{/feature}}</code></pre>
+<p>Aside: I&#39;m not 100% happy with the template requiring the <code>request</code> object being passed, but it&#39;s neccessary right now (unless someone can answer my <a href="http://stackoverflow.com/questions/21972729/is-it-possible-to-bind-a-handlebars-helper-before-render-using-express-hbs">SO question</a>) - though I&#39;ve been told that Handlebars 2 might allow a way to bind the helper to objects.</p>
+<p>There&#39;s more examples of actual usage in the <a href="https://github.com/remy/feature-gateway/blob/master/README.md">README</a> for the feature-gateway project.</p>
+<h2>How the feature flag works</h2>
+<p>The feature flag is a gateway to a part of functionality, that tests some particular value, and if true, the user has access to the feature. </p>
+<p>The way JS Bin works is that all our feature tests accept the (http) request object. From here, since in our case, the user&#39;s session is also attached to the request object we can use a wide range of tests:</p>
+<ul>
+<li>Does the logged in user have a &quot;pro&quot; flag on their account?</li>
+<li>Does the request include a specific cookie value?</li>
+<li>Does the request come from a specific IP address or range?</li>
+<li>Is the logged in user part of an alpha test group?</li>
+</ul>
+<h2>Two methods of implementation</h2>
+<p>So far we&#39;ve used them for two specific uses. The first is simple: new features are wrapped in the feature test. For example: adding the ability to create private bins is <em>new</em> functionality.</p>
+<p>The second is quite a bit more complicated: existing functionality is running side-by-side with functionality that&#39;s only accessible via a feature flag. For example <em>changing</em> the way the login &amp; register works requires that the old way still works, whilst the new way can be accessed via the feature flag. I&#39;ll be honest, this can get tricky.</p>
+<h2>Continued development</h2>
+<p>Feature flags seem to be working really well for us on JS Bin, and I&#39;d definitely recommend using them in some way if you can. The obvious next step is tying in some kind of analytics, then A/B testing and then I&#39;m sure more ideas will follow.</p>
+]]></content:encoded></item><item><title>You're paying to speak</title><guid isPermaLink="false">youre-paying-to-speak</guid><link>http://remysharp.com/2014/03/07/youre-paying-to-speak</link><pubDate>Fri, 07 Mar 2014 16:19:02 +0000</pubDate><description><![CDATA[There are many, many new speakers coming to the web community with their stories and standing up on stage and sharing. I applaud them. It&#39;s a scary thing to stand on stage and share your ideas. And there are many, many hours of work that goes in to the presentations.
+I&#39;m talking to people like me who speak for the love of sharing knowledge.
+TL;DR If an event is not covering your expenses (travel &amp; hotel) then you are paying to speak at their event.]]></description><content:encoded><![CDATA[
+<p>There are many, many new speakers coming to the web community with their stories and standing up on stage and sharing. I applaud them. It&#39;s a scary thing to stand on stage and share your ideas. And there are many, many hours of work that goes in to the presentations.</p>
+<p>I&#39;m talking to people like me who speak for the love of sharing knowledge.</p>
+<p><strong>TL;DR</strong> If an event is not covering your expenses (travel &amp; hotel) then <strong>you are paying to speak at their event</strong>.</p>
+<h2>What it costs you</h2>
+<ol>
+<li>Your time working on slides when you could be working on project work</li>
+<li>Your flight or train or taxi costs</li>
+<li>Your hotel cost</li>
+<li>Your time on the day at the event</li>
+</ol>
+<p>Yes, you might generate work during some awesome-high-fiving-network session. Really? Okay. Yes, you have a &quot;free ticket&quot;, but most new speakers I know have their head in their presentation until it&#39;s over.</p>
+<p>So you&#39;re out of pocket. And for what?</p>
+<h2>What costs them</h2>
+<p>Well, nothing. In fact you&#39;re providing content. And you&#39;re doing more than that. You&#39;re filling up the speaker roster with fresh and new content that&#39;s likely never been seen before. You&#39;re also auditioning for them, if you&#39;re good, they&#39;ll want you back, and their audience will have seen that you&#39;re good and buy more tickets to their event.</p>
+<p>I know Flash on the Beach/Reason used this last &quot;audition&quot; technique, but in a positive way (to be very, very clear: Reasons is good, they do it right). They called it the Lift Pitch. 5 minutes (or 2 minutes this year) to get your idea across. Audience votes on the best one, and that potential speakers is invited back the next year to speak, and they&#39;re paid like every other speaker.</p>
+<p>Then there&#39;s the video that they&#39;ll release, which is more content for them, branded and perpetuating their brand. That <em>you</em> gave them, at your own expense.</p>
+<h2>A free ticket?</h2>
+<p>It seems only the big events that do this kind of thing. And with big events, come big venues.</p>
+<p>By comparison, Full Frontal has 278 seats. No more, no less. So free tickets aren&#39;t something I give away willingly (one of my policies is that all previous years speakers are given a free ticket to the following year). So it <em>costs</em> me, the organiser, to give away a free ticket.</p>
+<p>Now compare to Future Of, they have anything from 800 person capacity (based on it being in The Brewery again). If they sell out in minutes (or even days) then a free ticket has a high value. But they don&#39;t. A free ticket is worth near to nothing (<a href="#comment-607594">please also take a minute to read Lou&#39;s reply—the conference producer for Future Insights</a>).</p>
+<h2>Wouldn&#39;t they be out of pocket with so many speakers?</h2>
+<p>That&#39;s what a budget is for - which comes from ticket sales and sponsorship agreements. <strong>It is part of their budget because without a speaker, they have no content to sell</strong>. The answer is no, they would not be out of pocket.</p>
+<h2>What do I want?</h2>
+<p>Dear event: treat your content providers with dignity. At the absolute least, pay their expenses. Indeed, <a href="http://www.andybudd.com/archives/2013/08/paying_speakers_is_better_for_everybody/">they should be paid too</a>.</p>
+<h2>Which events are doing this?</h2>
+<p>So here&#39;s where I want your help. I&#39;m happy to list these events, and if you know (for absolute sure) that there&#39;s an event making you pay to speak, then comment (anonymously if you want), post me a tweet or email me (remy at remysharp), and I&#39;ll add it to a list here.</p>
+<p>If you&#39;re an organiser of one of these events or work for one of these companies, please get in touch if this is wrong or you&#39;ve fixed your mistake - I&#39;ll happily remove any event from this list.</p>
+<ul>
+<li>Future Insights and the Future of Web Design (et al) don&#39;t cover most of their rising stars&#39; costs</li>
+<li>SxSWi don&#39;t cover the vast majority of speakers and panelists</li>
+<li>Webconf Riga</li>
+<li>Drupal conf</li>
+<li>The anonymous event that <a href="https://gist.github.com/csswizardry/d1bd31e3ada9f5f5a6a6">approached Harry Roberts</a></li>
+<li>FITC</li>
+<li>Fluent</li>
+</ul>
+<p><strong>Important:</strong> there are always the odd exceptions to these, as you&#39;ll read the comments below, but it&#39;s the default policy that I believe should be changed and part of the budget for profit and non-profit.</p>
+<p><strong>Please also read the comments</strong> below fully as they include details of how some events have changed their policies over the years (like Velocity) and tells of personal experiences.</p>
+]]></content:encoded></item><item><title>Hack failing: cheat</title><guid isPermaLink="false">cheat</guid><link>http://remysharp.com/2014/01/27/cheat</link><pubDate>Mon, 27 Jan 2014 14:00:45 +0000</pubDate><description><![CDATA[It&#39;s January and it&#39;s likely you&#39;ve got a New Year&#39;s resolution burning away. Forming new habits takes 66 days. Whether it&#39;s a diet change, lifestyle change, starting a podcast, diary, blog, photo journal or some other goal. 66 days is a long time to do something that is different from your normal routine.
+So the secret I&#39;ve discovered, if you couldn&#39;t guess, is to cheat. It&#39;s the secret to all success. And there&#39;s logic behind this, so stick with me.
+Success is rather binary, so the moment that you fail to post your weekly podcast is the first big failure. You&#39;ve let your audience down. The second time you miss it, you&#39;re pretty much dead and you may well have already considered &quot;what&#39;s the point in continuing?&quot;. I&#39;ve certainly felt the same when I said I&#39;d stop drinking, or the previous times I&#39;ve &quot;started&quot; going to the gym.
+There&#39;re two things to consider:
+
+Make the goal extremely easy.
+Plan to fail.
+
+Making the goal easy allows you to build up later. If you aim to publish every two months instead of every month. Or even less, maybe once a quarter. Then if you&#39;re feeling ambitious you either record and bank a podcast for another date, or release a special episode.
+The same with the gym. Aim low, and keep it simple. If once a week is a change to your life, start there, don&#39;t start with 5 times a week.
+Planning to fail is incredibly easy and equally powerful. I&#39;ll do this in general conversation where, ahead of explaining something I&#39;m not confident of, I&#39;ll pre-emptively apologise for mistakes. I&#39;ve planned for failing to explain something.
+If your goal is a new diet or to quit drinking or quit smoking (or quit anything), plan to fall off the wagon. Because when you don&#39;t plan to fail, when you fail, you&#39;ve failed, and that&#39;s it, you might as well not bother. But if you do plan to fail, when you fail, it&#39;s no big deal, it was part of the plan. It was your intention to fail. So you&#39;re still on track, and you&#39;re still making positive progress.
+So cheat.
+Don&#39;t make it hard to achieve, make it hard to give up.
+Plan to fail. Plan to cheat.
+Reposted from The Pastry Box Project]]></description><content:encoded><![CDATA[
+<p>It&#39;s January and it&#39;s likely you&#39;ve got a New Year&#39;s resolution burning away. Forming new habits takes <a href="http://www.telegraph.co.uk/health/healthnews/5857845/It-takes-66-days-to-form-a-habit.html">66 days</a>. Whether it&#39;s a diet change, lifestyle change, starting a podcast, diary, blog, photo journal or some other goal. 66 days is a long time to do something that is different from your normal routine.</p>
+<p>So the secret I&#39;ve discovered, if you couldn&#39;t guess, is to cheat. It&#39;s the secret to all success. And there&#39;s logic behind this, so stick with me.</p>
+<p>Success is rather binary, so the moment that you fail to post your weekly podcast is the first big failure. You&#39;ve let your audience down. The second time you miss it, you&#39;re pretty much dead and you may well have already considered &quot;what&#39;s the point in continuing?&quot;. I&#39;ve certainly felt the same when I said I&#39;d stop drinking, or the previous times I&#39;ve &quot;started&quot; going to the gym.</p>
+<p>There&#39;re two things to consider:</p>
+<ol>
+<li>Make the goal extremely easy.</li>
+<li>Plan to fail.</li>
+</ol>
+<p>Making the goal easy allows you to build up later. If you aim to publish every two months instead of every month. Or even less, maybe once a quarter. Then if you&#39;re feeling ambitious you either record and bank a podcast for another date, or release a special episode.</p>
+<p>The same with the gym. Aim low, and keep it simple. If once a week is a change to your life, start there, don&#39;t start with 5 times a week.</p>
+<p>Planning to fail is incredibly easy and equally powerful. I&#39;ll do this in general conversation where, ahead of explaining something I&#39;m not confident of, I&#39;ll pre-emptively apologise for mistakes. I&#39;ve <em>planned for failing</em> to explain something.</p>
+<p>If your goal is a new diet or to quit drinking or quit smoking (or quit anything), <em>plan to fall off the wagon</em>. Because when you don&#39;t plan to fail, when you fail, you&#39;ve failed, and that&#39;s it, you might as well not bother. But if you do plan to fail, when you fail, it&#39;s no big deal, it was part of the plan. It was your intention to fail. So you&#39;re still on track, and you&#39;re still making <em>positive</em> progress.</p>
+<p><em>So cheat.</em></p>
+<p>Don&#39;t make it hard to achieve, make it hard to give up.</p>
+<p><strong>Plan to fail. Plan to cheat.</strong></p>
+<p><small>Reposted from <a href="http://the-pastry-box-project.net/remy-sharp/2014-january-3">The Pastry Box Project</a></small></p>
+]]></content:encoded></item><item><title>nodemon 1.0</title><guid isPermaLink="false">nodemon-1-0</guid><link>http://remysharp.com/2014/01/20/nodemon-1-0</link><pubDate>Mon, 20 Jan 2014 13:00:02 +0000</pubDate><description><![CDATA[For the past few months I&#39;ve been working on a re-factor of nodemon. The two main drivers were to make the code base easier to maintain and to make nodemon more extendible.
+Nodemon is a command line utility to detect file changes and restart your application. Typically node apps, but it can restart any kind of program, ruby, python, make commands and more.
+A bit of background
+Originally nodemon was a simple one file script, only a few hundred lines, if that. As more people used it in different environments for completely different things, more code was added (to properly support windows for instance), and more people committed changes.
+I came across Michael Brooks and Fil Maj&#39;s slides from jsconf.us 2013 on building a better cli and though I hadn&#39;t seen the talk, I got a lot of inspiration from the slides, and went ahead to try to break nodemon up in to much, much smaller components. This would make it (I hoped) easier to maintain, but also to narrow down where bugs were occurring.
+It also allowed me the opportunity to write tests. Something I&#39;ve always been poor at doing in the first place, so this was a great excuse to ensure they were in place from the get go.
+It took about 4 months of snatching a few hours in the evening here and there, but eventually my pull request was ready to be merged, and 1.0.0 went live on 29-Dec 2013.
+What&#39;s new
+A lot of bugs have been closed, though it&#39;s likely these bugs didn&#39;t affect you, because nodemon is used in such a wide range of environments, weird things would come up.
+The headlines are:
+
+global and local configs
+exec map
+requireable
+tests
+auto update notification
+nodemon.io site, because...well, just because.
+sweet logo (and amazing contributions from the community) by @aesthetics-io
+
+More control over your config
+Nodemon still supports the old plain text .nodemonignore file, but now firstly looks for a nodemon.json file in your present working directory, then for the same file in your home directory. Since the config file is JSON, you can preconfigure nodemon with any command you use on the CLI.
+The old config file only allowed you to specific what you wanted to ignore, but now you can define what you want to ignore and what you want to watch.
+If you always ignore public/* in your project and want verbose on, as I do, then you can have a global nodemon.json that states just that:
+{
+  "ignore": "public/*",
+  "verbose": true
+}
+
+And if some project is getting too verbose for my liking, I can just use the CLI to quiet it down, and the CLI takes priority:
+$ nodemon -q
+
+Now it&#39;ll ignore public/ but not echo out any nodemon messages.
+Out of the box, nodemon will also ignore everything in .git and node_modules/**/node_modules, but of course you can add to that or change it yourself. More defaults can be found in the project repo.
+&quot;execMap&quot;
+This feature allows you to predefine what application runs what extension, and if it were me, I&#39;d put this in the global nodemon.json so it&#39;s always used.
+By default, the exec map includes support for python and ruby:
+{
+  "execMap": {
+    "py": "python",
+    "rb": "ruby"
+  }
+}
+
+If you&#39;re like some users on the edge of the future and want to always use node in harmony mode, then that&#39;s simple:
+{
+  "execMap": {
+    "js": "node --harmony"
+    "py": "python",
+    "rb": "ruby"
+  }
+}
+
+Now nodemon will fire up .js files with node --harmony. This means it&#39;s super easy to make nodemon run with any application from a single global config. I&#39;m also open to suggestions for further exec map support (so long as it&#39;s cross platform), so do get in touch if you have an idea.
+Requireable
+There&#39;s a nodemon grunt plugin by Chris Wren, but he had to spawn nodemon from his code. I wanted it so that he could include nodemon directly and have more control.
+So nodemon now supports being required in as a module. It&#39;s pretty cool :)
+It also means that Chris&#39; grunt plugin can make some cool integrations (if nodemon detects a restart, his plugin will trigger a browser reload using live reload).
+It also means that there&#39;s already a gulp plugin using nodemon.
+Required nodemon gives you a way of communicating through events. Everything ranging from when nodemon restarts (which includes an array of filenames that triggered the reload), to nodemon&#39;s logging, to the spawned script&#39;s stdout.
+Tests
+I&#39;m using Mocha for tests and wear the Travis badge with pride on pass (and less pride on fail!).
+There&#39;s just over 100 tests for nodemon right now, ranging from small internal tests (like CLI parse testing) to tests that forks nodemon, that in turn spawn a web server and force crashes to ensure everything stops and starts correctly.
+It&#39;s actually quite tricky to get the timing right (so the forked tests tend to be littered with setTimeout to make sure we have clear delays between start up and touching files).
+The compound that with different behaviour on Mac (which I&#39;m working from), on Linux and on Windows, and Travis runs on Linux so I had fun switching between 100% tests passing on my mac to jumping inside of vagrant to figure out why Linux wasn&#39;t passing 100%. Definitely a few lessons learnt (which I&#39;ve quickly forgotten now they pass!).
+Update notification
+Nodemon original had zero dependencies, which I was proud of (not sure why), but I came across update-notifier which mostly works, but there&#39;s issues I&#39;ve raised and not heard back on (which worries me a little), but I do I know that users have been notified successfully of updates (at time of writing, nodemon is already 1.0.12).
+So I bit the bullet and took on a dependency, and I think it&#39;s paying off - people are keeping with the most bug free version of nodemon.
+Sweet logo
+First, I was so amazed and impressed by user contributions to logo ideas for nodemon. In the end, you folk (or at least people on twitter and github) voted for this one below (which I also like - along with a few others), and I reckon it could make a pretty cool sticker for the laptop. What do you think?
+
+So get updating:
+npm install -g nodemon@latest]]></description><content:encoded><![CDATA[
+<p>For the past few months I&#39;ve been working on a re-factor of <a href="http://github.com/remy/nodemon">nodemon</a>. The two main drivers were to make the code base easier to maintain and to make nodemon more extendible.</p>
+<p>Nodemon is a command line utility to detect file changes and restart your application. Typically node apps, but it can restart any kind of program, ruby, python, make commands and more.</p>
+<h2>A bit of background</h2>
+<p>Originally nodemon was a simple one file script, only a few hundred lines, if that. As more people used it in different environments for completely different things, more code was added (to properly support windows for instance), and more people committed changes.</p>
+<p>I came across <a href="https://github.com/mwbrooks">Michael Brooks</a> and <a href="https://github.com/filmaj">Fil Maj</a>&#39;s slides from jsconf.us 2013 on <a href="http://michaelbrooks.ca/deck/2013-node-brigade/">building a better cli</a> and though I hadn&#39;t seen the talk, I got a lot of inspiration from the slides, and went ahead to try to break nodemon up in to much, much smaller components. This would make it (I hoped) easier to maintain, but also to narrow down where bugs were occurring.</p>
+<p>It also allowed me the opportunity to write tests. Something I&#39;ve always been poor at doing in the first place, so this was a great excuse to ensure they were in place from the get go.</p>
+<p>It took about 4 months of snatching a few hours in the evening here and there, but eventually my <a href="https://github.com/remy/nodemon/pull/200">pull request</a> was ready to be merged, and 1.0.0 went <a href="https://github.com/remy/nodemon/compare/v0.7.10...v1.0.0">live on 29-Dec 2013</a>.</p>
+<h2>What&#39;s new</h2>
+<p>A lot of bugs have been closed, though it&#39;s likely these bugs didn&#39;t affect you, because nodemon is used in such a wide range of environments, weird things would come up.</p>
+<p>The headlines are:</p>
+<ul>
+<li>global and local configs</li>
+<li>exec map</li>
+<li>requireable</li>
+<li>tests</li>
+<li>auto update notification</li>
+<li><a href="http://nodemon.io">nodemon.io</a> site, because...well, just because.</li>
+<li>sweet logo (and <a href="https://github.com/remy/nodemon/issues/217">amazing contributions</a> from the community) by <a href="https://github.com/aesthetics-io">@aesthetics-io</a></li>
+</ul>
+<h2>More control over your config</h2>
+<p>Nodemon still supports the old plain text <code>.nodemonignore</code> file, but now firstly looks for a <code>nodemon.json</code> file in your present working directory, then for the same file in your home directory. Since the config file is JSON, you can preconfigure nodemon with any command you use on the CLI.</p>
+<p>The old config file only allowed you to specific what you wanted to ignore, but now you can define what you want to ignore <em>and</em> what you want to <em>watch</em>.</p>
+<p>If you <em>always</em> ignore <code>public/*</code> in your project and want verbose on, as I do, then you can have a global <code>nodemon.json</code> that states just that:</p>
+<pre><code>{
+  "ignore": "public/*",
+  "verbose": true
+}</code></pre>
+
+<p>And if some project is getting too verbose for my liking, I can just use the CLI to quiet it down, and the CLI takes priority:</p>
+<pre><code>$ nodemon -q</code></pre>
+
+<p>Now it&#39;ll ignore <code>public/</code> but not echo out any nodemon messages.</p>
+<p>Out of the box, nodemon will also ignore everything in <code>.git</code> and <code>node_modules/**/node_modules</code>, but of course you can add to that or change it yourself. More <a href="https://github.com/remy/nodemon/blob/master/lib/config/defaults.js">defaults can be found</a> in the project repo.</p>
+<h2>&quot;execMap&quot;</h2>
+<p>This feature allows you to predefine what application runs what extension, and if it were me, I&#39;d put this in the global <code>nodemon.json</code> so it&#39;s always used.</p>
+<p>By default, the exec map includes support for python and ruby:</p>
+<pre><code>{
+  "execMap": {
+    "py": "python",
+    "rb": "ruby"
+  }
+}</code></pre>
+
+<p>If you&#39;re like some users on the edge of the future and want to always use node in harmony mode, then that&#39;s simple:</p>
+<pre><code>{
+  "execMap": {
+    "js": "node --harmony"
+    "py": "python",
+    "rb": "ruby"
+  }
+}</code></pre>
+
+<p>Now nodemon will fire up .js files with <code>node --harmony</code>. This means it&#39;s super easy to make nodemon run with any application from a single global config. I&#39;m also <a href="https://github.com/remy/nodemon/blob/master/lib/config/defaults.js#L7">open to suggestions</a> for further exec map support (so long as it&#39;s cross platform), so do get in touch if you have an idea.</p>
+<h2>Requireable</h2>
+<p>There&#39;s a nodemon <a href="https://github.com/ChrisWren/grunt-nodemon">grunt plugin</a> by Chris Wren, but he had to spawn nodemon from his code. I wanted it so that he could include nodemon directly and have more control.</p>
+<p>So nodemon now supports being required in as a module. It&#39;s pretty cool :)</p>
+<p>It also means that Chris&#39; grunt plugin can make <a href="https://github.com/ChrisWren/grunt-nodemon#advanced-usage">some cool integrations</a> (if nodemon detects a restart, his plugin will trigger a browser reload using live reload).</p>
+<p>It also means that there&#39;s already a <a href="https://npmjs.org/package/gulp-nodemon">gulp plugin</a> using nodemon.</p>
+<p>Required nodemon gives you a way of communicating through <a href="https://github.com/remy/nodemon/blob/master/doc/events.md">events</a>. Everything ranging from when nodemon restarts (which includes an array of filenames that triggered the reload), to nodemon&#39;s logging, to the spawned script&#39;s stdout.</p>
+<h2>Tests</h2>
+<p>I&#39;m using Mocha for tests and wear the <a href="https://travis-ci.org/remy/nodemon">Travis badge</a> with pride on pass (and less pride on fail!).</p>
+<p>There&#39;s just over <a href="https://travis-ci.org/remy/nodemon/jobs/17161118">100 tests</a> for nodemon right now, ranging from small internal tests (like CLI parse testing) to tests that forks nodemon, that in turn spawn a web server and force crashes to ensure everything stops and starts correctly.</p>
+<p>It&#39;s actually quite tricky to get the timing right (so the forked tests tend to be littered with <code>setTimeout</code> to make sure we have clear delays between start up and touching files).</p>
+<p>The compound that with different behaviour on Mac (which I&#39;m working from), on Linux and on Windows, and Travis runs on Linux so I had fun switching between 100% tests passing on my mac to jumping inside of vagrant to figure out why Linux wasn&#39;t passing 100%. Definitely a few lessons learnt (which I&#39;ve quickly forgotten now they pass!).</p>
+<h2>Update notification</h2>
+<p>Nodemon original had zero dependencies, which I was proud of (not sure why), but I came across <a href="https://github.com/yeoman/update-notifier/">update-notifier</a> which <em>mostly</em> works, but there&#39;s <a href="https://github.com/yeoman/update-notifier/issues">issues</a> I&#39;ve raised and not heard back on (which worries me a little), but I do I know that users have been notified successfully of updates (at time of writing, nodemon is already 1.0.12).</p>
+<p>So I bit the bullet and took on a dependency, and <em>I think</em> it&#39;s paying off - people are keeping with the most bug free version of nodemon.</p>
+<h2>Sweet logo</h2>
+<p>First, I was so amazed and impressed by user contributions to logo ideas for nodemon. In the end, you folk (or at least people on twitter and github) voted for this one below (which I also like - along with a few others), and I reckon it could make a pretty cool sticker for the laptop. What do you think?</p>
+<p><img style="display: block; margin: 0 auto; max-width: 100%;" src="http://remysharp.com/images/nodemon.png"></p>
+<p>So get updating:</p>
+<pre><code>npm install -g nodemon@latest</code></pre>]]></content:encoded></item><item><title>My 2013</title><guid isPermaLink="false">my-2013</guid><link>http://remysharp.com/2013/12/31/my-2013</link><pubDate>Tue, 31 Dec 2013 11:43:10 +0000</pubDate><description><![CDATA[As I&#39;ve said before, this post is
+entirely for me to be able to look back at my year and remember what the
+highlights were (and this year is a very me-me-me post!). Equally, I&#39;m honoured that you&#39;re reading this and I hope you
+make it to the end (though I appologise in advance for the pictures, there&#39;s
+much more skin than my usual blog posts!).]]></description><content:encoded><![CDATA[
+<p>As I&#39;ve <a href="http://remysharp.com/tag/newyear/">said before</a>, this post is
+entirely for me to be able to look back at my year and remember what the
+highlights were (and this year is a very me-me-me post!). Equally, I&#39;m honoured that you&#39;re reading this and I hope you
+make it to the end (though I appologise in advance for the pictures, there&#39;s
+much more skin than my usual blog posts!).</p>
+<h2>Professional</h2>
+<p>My <a href="http://leftlogic.com">business</a> is (actually) 7 years old and it&#39;s been slow
+to grow (entirely my fault/design). But even though the rest of the world seems
+like it&#39;s in a recession, it also seems like the web industry is doing just fine
+in it&#39;s little bubble, and as is Left Logic. Business is split between agency
+work, <a href="http://leftlogic.com/training">training</a> and the conference, <a href="http://full-frontal.org">Full Frontal</a>.</p>
+<h3>Business</h3>
+<p>It&#39;s been all change on the dev side of Left Logic. <a href="https://twitter.com/binarytales">Jon&#39;s</a> gone full time freelance and <a href="https://twitter.com/phuunet">Tom</a> got snapped up
+by Twitter (to work on Tweetdeck in London).</p>
+<p>But through hiring, Left Logic now has <a href="http://twitter.com/fabienallouis">Fabien O&#39;Carroll</a> joining at the very start of January and I&#39;m <a href="http://leftlogic.com/hiring">still hiring</a> to find a potential second position. What I&#39;m particularly excited about is that I&#39;ll be focusing both mine and Fabien&#39;s time entirely on <a href="http://jsbin.com">JS Bin</a> to see if I can make JS Bin self sustaining.</p>
+<h3>JS Bin</h3>
+<p>JS Bin turned <a href="http://remysharp.com/2013/08/14/jsbin-5th-birthday/">5 years old</a> this September, and this is when I decided that I want to try to make it run itself.
+There&#39;s many issue opens (both for bugs and features) but also my own vision.</p>
+<p>So I&#39;m working with <a href="http://twitter.com/yandle">Danny Hope</a> (who&#39;s worked on the
+UX on JS Bin for around 4 years) and we (Left Logic) will be investing lots of
+time and resource into seeing the vision through.</p>
+<p>The sustainability will come through pro accounts, so look out for that aiming
+to launch at the start of February.</p>
+<h3>Speaking</h3>
+<p><img class="withcredit" src="http://remysharp.com/images/2013-speaking.jpg?1" title="Photo by Marc Thiele"><span class="credit">Photo by Marc Thiele</span></p>
+<p>I had the honour of being invited <em>back</em> to jsconf.us to speak and only
+spoke at a total of 10 events this year. Which is good as I&#39;m down on my 12 the
+year before and am trying to actively reduce this in favour of spending more time
+at home/in the UK.</p>
+<p>My proudest speaking gig (if there&#39;s such a thing) was being asked to <a href="http://lanyrd.com/2013/guest-lecturer-by-remy-sharp/">share my
+experience</a> (slides &amp; video)
+with students at Portsmouth University (and was able to <a href="http://webeyedea.info/wp/thank-you-remy/">give the talk again</a> at Tower Hamlets College). For me personally and professionally, it&#39;s
+pretty daunting to speak to final year students, about to fly the coop, offering
+opinons about avoiding a &quot;real job&quot; and flying solo - but it was a really
+positive experience all round.</p>
+<h3>Full Frontal</h3>
+<p><img class="withcredit" src="http://remysharp.com/images/2013-full-frontal.jpg"><span class="credit">Photo by Dan Govan</span></p>
+<p>This year we sold out in a record 11 minutes, whilst also causing a DDoS attack
+on our ticketing system! As a result, we created <a href="http://2013.full-frontal.org/sideview">Side View</a>
+which was also a huge success.</p>
+<p>Full Frontal was made up of careful content curation, whilst Side View (though
+also carefully curated) was made up of amazing proposals that didn&#39;t quite make
+it through to Full Frontal. Basically I got to have my cake <em>and</em> eat it.</p>
+<p>Please do check out the <a href="http://www.youtube.com/playlist?list=PLXmT1r4krsTrjhwBWKLzxdNjb9ZCb_cFI">videos on youtube</a> (both Full Frontal and Side View will be available).</p>
+<h3>Other projects and things to be chuffed with</h3>
+<p>Left Logic <strong>supported <a href="https://www.codeclub.org.uk/">CodeClub</a></strong>, although only in
+a small way (probably) compared to bigger companies, I was able to donate some
+cash for a couple of different needs. I&#39;m a huge fan of what CodeClub does, and
+truly think what they&#39;re doing is an inspiration to us all. Go find out what
+they&#39;re doing, and even volunteering if you can.</p>
+<p>I paid for a <strong><a href="http://remysharp.com/2013/03/22/id-like-to-send-you-to-the-bacon-conference/">ticket for a &quot;deserving&quot;</a> young individual to attend the Bacon Conference</strong>, as I was
+asked (in a rather awesome video - in the link previously), but none of my team
+could make it, I asked the public to suggest someone, and I&#39;d random select an
+individual to pay for their ticket. I think I&#39;d like to do something similar
+again next year.</p>
+<p><img class="withcredit" src="http://remysharp.com/images/2013-cern.jpg?1"><span class="credit dark">Photo by Anna Pantelia/CERN</span></p>
+<p>I was asked to <a href="http://home.web.cern.ch/about/updates/2013/09/dream-team-web-developers-recreate-line-mode-browser">join a team</a> <strong>going to CERN to re-create the <a href="http://line-mode.cern.ch/">first line-mode web browser</a></strong>. It was an amazing experience both in the project
+that we had to build in the two days that we were there, but also the sheer scale
+of the projects going on at CERN. Because I was so focused on our deadline, it
+didn&#39;t really sink in until we returned back home, but still a very proud
+<a href="http://first-website.web.cern.ch/blog/lmb-hack-days-remy-sharp">moment for me</a>
+(this is the interview link).</p>
+<p><strong><a href="http://thenodefirm.com/blog/2013/10/21/remy-sharp-partner/">Joining the NodeFirm</a></strong>. A meaty collection of individuals that are serving Node based projects, so it&#39;s a real
+honour to be part of the Firm. It doesn&#39;t change how Left Logic is run, but
+simply that I&#39;m a resource to the Firm and that collective effort goes in to the
+training material supplied.</p>
+<p>As well as a few project releases:</p>
+<ul>
+<li><a href="http://nodemon.io">nodemon</a> - complete rewrite and accompanying site</li>
+<li><a href="http://5minfork.com">5minfork</a> - the 10 minute email for github repos</li>
+<li><a href="http://headshots.leftlogic.com">Head Shots</a> - a WebRTC project built for Google IO</li>
+<li><a href="http://tentoring.com">Tentoring</a> - a day hack with <a href="http://twitter.com/stef">Stef Lewandowski</a> winning (one of two) best projects during <a href="http://dolectures.com/">Do Startups</a></li>
+<li><a href="https://github.com/remy/min.js">min.js</a> and <a href="https://github.com/remy/bind">bind.js</a> - microlibraries to do selectors and events, and object to DOM binding (respectively)</li>
+</ul>
+<p>Finally, <a href="http://brucelawson.co.uk">Bruce</a> and I are working to release <a href="http://introducinghtml5.com">Introducing HTML5</a> as a free online book early in 2014. We&#39;ve got about 5 chapters transcribed, and I&#39;ll start releasing it as soon as there&#39;s some design in place.</p>
+<h2>Personal</h2>
+<p>This year has been quite a big personal (positive) year for me. The biggest
+thing has been my health. Since Tia was born in 2010, I never returned to the gym
+(where I was doing spin classes at least twice a week). So my 2013 new years
+resolution was to quit the gym (I&#39;d been paying for over 2 years having never
+gone). The second part that I wasn&#39;t telling people, was to join immediately,
+and return to the gym (one that was close to work and walking distance).</p>
+<p>This is the difference in my face in the last year:</p>
+<p><img src="http://farm6.staticflickr.com/5485/11605407676_c06bd6c44e_b_d.jpg" alt="http://farm6.staticflickr.com/5485/11605407676_c06bd6c44e_b_d.jpg"></p>
+<p>My BMI is always high (read: obese) because I&#39;m 5&#39;6 and of stocky build, so I&#39;ve
+generally ignored it, but I bought a set of fitbit
+<a href="http://www.fitbit.com/uk/aria">Aria scales</a>, and it was telling me that <strong>my body
+fat was 30%: which <em>is</em> obese</strong>. This isn&#39;t the kind of obese that has trouble
+getting out of bed. This is &quot;obese&quot; your heart could give out and you could
+leave your young son without a father to grow up with. I needed to change. At
+peak, I was 14 stone and 30% fat, and horribly embarrassed about my body since...
+I don&#39;t know, around age 22!</p>
+<p>But I&#39;ve long known that going to the gym wasn&#39;t enough, my diet had to change
+too. I&#39;d read a lot around the Paleo diet, and took inspiration from that. From
+February 2013 onwards my new diet (note I was not <em>on a diet</em>) was simple:
+<em>no wheat or dairy</em>. And cheat. Always, always, cheat. I&#39;ll come back to this.</p>
+<p>My <strong>aim was to get my body fat to 25%</strong> (0.1% above &quot;average&quot;) by May (because jsconf.us was in May, and I knew it was in the sun where I&#39;d hope not feel my usual horrible embarrassment
+about taking my shirt off in public). Anything beyond that was based on relative
+success.</p>
+<p>Lunch times became impossible, especially after finding my favourite sandwich
+shop only 6 months before. In the UK, if you&#39;re not having sandwiches for lunch,
+it&#39;s likely you&#39;re not eating lunch! It took about 2 months for the craving to
+end (it turns out it might be linked to the <a href="http://www.telegraph.co.uk/health/healthnews/5857845/It-takes-66-days-to-form-a-habit.html">66 days to form a new habit</a>).</p>
+<p>At the same time, I joined a gym in Brighton (LA Fitness, the gym is generally
+rubbish, but it&#39;s something better than nothing), and my rules were: 3 days a week, first thing in the morning (since I couldn&#39;t find any other time in the day), lift heavy,
+and always increase the weight. I didn&#39;t really know what I was doing, but I was making gains.
+I&#39;ll come back to what I focused on and what I do now.</p>
+<p>By 22 April I had my body fat down to 26.5% and I decided to get a personal trainer.
+The combined cost of the gym and a PT meant more outgoings, but then this is
+money I was investing in my heath.</p>
+<p>By May 29 (jsconf deadline) <strong>my body fat was 24%</strong> (I was now out of the obese
+category and in to &quot;average&quot;). I was very, <em>very</em> proud of myself.</p>
+<p>I set a new goal: 17% by my birthday (September).</p>
+<p>I made it. <em>Just</em>. <strong>17.9% on September 7th.</strong></p>
+<p>I&#39;ve had a bunch of travel and conferences (where drinking seems to always
+happen, which messes with my diet), so I&#39;ve come back up from 17%, and by the end
+of the year not managed to get back to (yet). But that&#39;s okay. I&#39;ve finished my
+year on <strong>19% body fat</strong>. In the year, and at peak, I&#39;ve lost 25lbs of fat (that&#39;s just over
+10kg of lard) (this is a chart of fat mass over the last year):</p>
+<p><img src="http://remysharp.com/images/1y.png?1" alt="http://remysharp.com/images/1y.png?1"></p>
+<p>And yes, here come my obligatory semi-nude pictures (trust me, they&#39;re not too bad, and the &quot;good&quot; picture has more favourable lighting, but there&#39;s no photoshop going on - I promise!). It&#39;s useful, ne-powerful, to capture these, because over the months I questioned whether this was worth it, is the work I&#39;m doing really making any difference? And honestly, it&#39;s hard to capture that first chubby picture (and in fact I wish I had taken one from the very start, but this was from March - a month in) because it&#39;s not how I saw myself in my mind&#39;s eye. Once I had it though, I had a benchmark to measure change against. I&#39;d keep taking the pictures around every other month, and I could <em>see</em> the difference which is a big confidence boost that things are doing well.</p>
+<p><img src="http://farm4.staticflickr.com/3714/11604646335_6cd6e3780e_b_d.jpg" alt="http://farm4.staticflickr.com/3714/11604646335_6cd6e3780e_b_d.jpg"></p>
+<p>I&#39;ve still got a little further to go in my goals, but I&#39;m happy with my progress.
+I feel healthy and strong for my son. I love that I can throw him around when we
+play, and I don&#39;t feel out of breath.</p>
+<p>I&#39;ve lost access to my entire wardrobe because I&#39;ve dropped a t-shirt size (from
+large to medium) and my trousers from (up to) 38 inch to 32 inch (edging on 30 -
+the size I was when I was 18!). The biggest goal for 2014 is to ensure that I
+continue these new routines in my life - something I feel won&#39;t be too hard to
+achieve.</p>
+<h3>A few important lessons I learnt</h3>
+<p><strong>Cheat.</strong> When I went to the gym earlier in my youth, if I missed the gym, I had
+failed. If you fail, then you start from scratch again, and that&#39;s hard and
+disheartening so I was more prone to giving up.</p>
+<p>By cheating, and planning to cheat, I was able to fail without really failing.</p>
+<p>If I had no choice in food, I could say today was a cheat day, so I could have
+milk or cookies or pizza or ice cream, or <a href="http://www.flickr.com/photos/remysharp/9437135405/">all of these in a day</a>. If I missed the gym because I was away or was
+ill (or hurt), it was allowable, and I hadn&#39;t failed. This meant that it wasn&#39;t
+a slip up or mistake, simply: part of the plan.</p>
+<p><strong>Diet is 70%.</strong> Without a healthy diet I wouldn&#39;t have made the gains I did. In
+fact I know (because I tested this with Julie) that even <em>without</em> the gym, I
+would have made good process entirely on diet change. But it&#39;s super important
+that the food isn&#39;t unpleasant. I&#39;m not a believer in the types of routines that
+can&#39;t be sustained (for me) like fasting. I&#39;ve heard of some people who use this
+technique effectively, but really dislike those days. For me, diet change is
+something that needs to be something that I can enjoy, and is in place in 10
+years to come. No wheat and dairy is doable for me. I&#39;ve also naturally cut down
+on drinking (which frankly I&#39;ve always been pretty rubbish at anyway).</p>
+<p><strong>Strength training is all I need.</strong> Using compound lifts and simple routines
+gets me a long way. I&#39;m using the <a href="http://stronglifts.com/stronglifts-5x5-beginner-strength-training-program/">5x5</a> routine right now, and with the PT was following strength
+training routines. I get all the cardio anyone would need from the lifting I do.</p>
+<p>My routine (currently today) consists of squat (115kg), deadlift (140kg), bench press (75kg), bent over row (80kg) and overhead press (45kg) - and that&#39;s <em>it</em>. Each successful
+5x5 the weight is increased by 2.5kg.</p>
+<p><strong>I faint when blood is taken!</strong> I decided to get a full blood analysis done to
+try to understand what the make up was (WRT testosterone, cortisol, etc). They
+were supposed to take 5 vials. They managed 3 before I completely blacked out!
+My first time every fainting, and definitely an experience to remember!</p>
+<h2>Our family</h2>
+<p>Finally, and most importantly and excitedly, we&#39;re expecting a little girl at the beginning of May 2014. We only just announced
+this to the &quot;public&quot; via twitter and it&#39;s been a very different pregnancy so far.</p>
+<p>It&#39;s still a very emotional and a lot of complicated feelings - but this will
+always be true after losing Tia. None the less, we&#39;re all excited and we&#39;re both
+looking forward to her arrival in 2014.</p>
+<p><img style="width: 50%;" src="http://farm4.staticflickr.com/3812/11606101694_9f866be1bb_o_d.jpg"><img style="width: 50%;" src="http://farm8.staticflickr.com/7414/11583719974_dfb446cc90_o_d.jpg"></p>
+]]></content:encoded></item><item><title>Using watches in my devtools workflow</title><guid isPermaLink="false">using-watches-in-my-devtools-workflow</guid><link>http://remysharp.com/2013/11/27/using-watches-in-my-devtools-workflow</link><pubDate>Wed, 27 Nov 2013 10:00:23 +0000</pubDate><description><![CDATA[I&#39;ve recently found that I&#39;m able to optimise my workflow inside of devtools
+using &quot;Watch Expressions&quot; which I&#39;ve found (for me) is often left untouched.]]></description><content:encoded><![CDATA[
+<p>I&#39;ve recently found that I&#39;m able to optimise <a href="http://remysharp.com/2013/07/18/my-workflow-v3-full-coding-stack/">my workflow</a> inside of devtools
+using &quot;Watch Expressions&quot; which I&#39;ve found (for me) is often left untouched.</p>
+<h2>Using watches</h2>
+<p>The video below works through the real example where I&#39;m using watches to get
+visual feedback whilst developing.</p>
+<iframe width="1280" height="720" src="//www.youtube.com/embed/_gL4FCchTEI?hd=1" frameborder="0" allowfullscreen></iframe>
+
+<h2>The console up/enter workflow</h2>
+<p>Typically if I had a bug, I would use the console to re-run my code and check
+the result until it worked. Since I&#39;m already editing functional code that&#39;s
+being live-updated inside V8 it means my workflow is already pretty slick.</p>
+<p><img src="http://remysharp.com/images/watch.gif" style="border:1px solid #999; float:right;margin-left: 5px; margin-bottom: 5px; width: 40%;">But this cursor up, enter workflow can be improved. The code that I&#39;m running in the console can actually be moved to the watch expressions panel.</p>
+<h2>Changing my workflow</h2>
+<p>With my expression in the watch expressions panel, and whilst I&#39;m still in a <em>paused state</em> of execution in the code, I can go ahead and edit the code directly inside devtools, and each time I hit save on the file, V8 will reload the function in memory, and my watch updates, which gives me a real-time preview of the result. And that&#39;s it. Very neat.</p>
+]]></content:encoded></item><item><title>What is codecasting?</title><guid isPermaLink="false">what-is-codecasting</guid><link>http://remysharp.com/2013/11/14/what-is-codecasting</link><pubDate>Thu, 14 Nov 2013 17:59:17 +0000</pubDate><description><![CDATA[Codecasting is the process of recording your coding session, and casting it out to any number of participants, generally in real-time.
+JS Bin supports codecasting out of the box, for free, to both registered and anonymous users. Just share your bin&#39;s url with /watch instead of /edit.]]></description><content:encoded><![CDATA[
+<p>Codecasting is the process of recording your coding session, and casting it out to any number of participants, generally in real-time.</p>
+<p>JS Bin supports codecasting out of the box, for free, to both registered and anonymous users. Just share your bin&#39;s url with <code>/watch</code> instead of <code>/edit</code>.</p>
+<h2>My backstory with codecasting</h2>
+<p>September 28th 2008 is when <a href="http://remysharp.com/2008/10/06/js-bin-for-collaborative-javascript-debugging/">jsbin was put live for the first time</a>. There&#39;s somewhat of a backstory as to why I created it, and there&#39;s even a precursor site I built. That&#39;s since faded into obscurity.</p>
+<p>It was December 2008 I went to visit <a href="http://adactio.com">Jeremy</a> &amp; <a href="http://andybudd.com">Andy</a> at the <a href="http://clearleft.com">Clearleft</a> offices to ask their advice about the first workshop I would run (Iceweb 2008 in Reykjavik, Iceland). I sat down and told them my fantasy would be to use jsbin (<a href="http://www.flickr.com/photos/remysharp/4284906136/">the 2008 version</a>) and anything I typed on my presenter machine, the student could follow along and see the code, and could switch back and forth from the output to the code on their own machine.</p>
+<p>I referred to this as Codecasting*.</p>
+<p><small>* It was a term that had come naturally to me, and I&#39;m pretty sure I found an entry in Wikipedia way back and felt disappointed I hadn&#39;t invented the term, but now (2013) I look for the wiki page and I can&#39;t find anything. I digress.</small></p>
+<p>The problem was streaming and persistent connections were hard (for me) with a <a href="http://en.wikipedia.org/wiki/LAMP_%28software_bundle%29">LAMP</a> stack.</p>
+<p>In fact, I did get a <a href="https://github.com/remy/jsbin/tree/e895c32089ac1bd310b5d91aecabda219f2eccea">version working using cometd and the bayeux protocol</a>, and recall testing it with John Resig (partly because jsbin&#39;s simplicity was inspired by his <a href="http://ejohn.org/apps/learn/">Learning Advanced JavaScript site</a>).  It did just about work, but I knew it couldn&#39;t handle a lot of users because Apache would eventually bail.</p>
+<p>So I left it.</p>
+<p>...until I saw Ryan Dahl present Node.js at jsconf.eu nearly a year later in 2009. Codecasting suddenly was a) easy, and b) JavaSript based.</p>
+<h2>Hacking codecasting in to jsbin</h2>
+<p>A year later, I built (a still unfinished) <a href="http://forbind.net/">Förbind</a> - as &quot;Sockets as a Service&quot; site. This would be the ground work for adding codecasting to jsbin. In fact, there&#39;s still a link on the homepage to the <a href="http://jsbin.com/edifi3/1/edit">bin</a> that you could enable codecasting with (note that this doesn&#39;t work anymore - because codecasting is now native to jsbin).</p>
+<p>In the few days that I built Förbind (a swedish word for join, or as I liked to think: connect), the codecasting was surprisingly stable.</p>
+<p>But then my life around that time was hard, and jsbin (version 2) was <a href="https://github.com/remy/jsbin/tree/v2.9.16">still written in PHP</a> and I wanted native support for codecasting. So began the big rewrite of jsbin in the start of 2012.</p>
+<p>Here&#39;s a video of the first implementation of codecasting in JS Bin back in late 2010. Note that codecasting wasn&#39;t and isn&#39;t limited to a single browser or single machine, JS Bin&#39;s version could run on multiple machines at once and all different types of browsers (though the Förbind version relied on Socket.IO, the current version doesn&#39;t and it relies entirely on EventSource and polyfilled techniques).</p>
+<iframe src="//www.youtube.com/embed/FjusnOgJE_I" frameborder="0" allowfullscreen></iframe>
+
+<h2>Native codecasting in jsbin</h2>
+<p>As of version 3 of jsbin, released in June 2012, codecasting is possible out of the box.</p>
+<p>Take any bin you&#39;ve created, and instead of /edit in the url, change it to /watch, and any number of participants can watch you live code, and the output will automatically update as they watch.</p>
+<p>If you (the owner of the bin) creates a new revision, this update will automatically propagate to the participants and they&#39;ll continue to be able to watch your work.</p>
+<p>If the participant wants to create their own copy, they can just create a clone, and now they have a copy from that point in time.</p>
+<p><small>This is also referred to as &quot;Professor Mode&quot; for pro users of CodePen (I believe). Codecasting in jsbin will remain free, even after pro users are added.</small></p>
+<h2>How it works in jsbin</h2>
+<p>Since v3 of jsbin saves pretty much every keystroke, when a save occurs on the server side, it triggers a &quot;ping&quot; event. This is listened to by the <code>EventSource</code> code. The code looks up the bin&#39;s url, and if anyone is listening, it pushes down the new code for that particular panel.</p>
+<p>Both the full output views and the codecasting views listening to this EventSource endpoint, and since EventSource can be polyfilled, it works like a charm on all platforms. Simple.</p>
+<p>In the future (of JS Bin) codecasts will be recordable and let you play them back (at a later date) and allowing you to add audio, video, annotations and anything else you want to create tutorials and examples of your work.</p>
+]]></content:encoded></item><item><title>A self destructive web</title><guid isPermaLink="false">a-self-destructive-web</guid><link>http://remysharp.com/2013/10/22/a-self-destructive-web</link><pubDate>Tue, 22 Oct 2013 12:31:32 +0000</pubDate><description><![CDATA[I&#39;m finding myself more and more nowadays interested in content that self destructs, or rather: expires after time and will no longer exist.
+This post is more me dropping my thoughts on a page rather than having fully explored the idea (yet). Please note this post is also unedited (which I may use to my advantage and edit over time...we&#39;ll see).]]></description><content:encoded><![CDATA[
+<p>I&#39;m finding myself more and more nowadays interested in content that <a href="https://twitter.com/rem/status/392601422480805888">self destructs</a>, or rather: expires after time and will no longer exist.</p>
+<p>This post is more <em>me dropping my thoughts on a page</em> rather than having fully explored the idea (yet). Please note this post is also unedited (which I may use to my advantage and edit over time...we&#39;ll see).</p>
+<h2>Saving is &quot;forever&quot;?</h2>
+<p>From an early age I&#39;ve played and worked with computers. I always understood that I was creating programs that would be <strong>saved</strong>.</p>
+<p>That simple idea of saving, be it to a physical tape (I was a Spectrum user) or fast forward to the 90s when I published my first web pages - it was simply naughts and ones and since it was stored digitally&dagger;, it could be copied over and over. When it was on a server, all it needed is the server to stay plugged in or even cached on another server and boom, you&#39;ve just unlocked <em>forever</em>.</p>
+<p><small>&dagger; Sure, the tape drive wasn&#39;t digital, but you&#39;ll forgive me.</small></p>
+<p>But the simple fact is: we have to make an effort to preserve. Server drives crash, data gets lost, companies disappear (my first site was on lineone.net if anyone remember that - now long gone), domains expire and people die.</p>
+<p>So what is <em>forever</em>? Maybe there&#39;s an unspoken expiry? But when the expiry is in decades I feel like I conflate this with forever. I don&#39;t feel like the web community has been going long enough to see that long expiry showing it&#39;s face. Maybe we&#39;ve got another 20-30 years to go.</p>
+<h2>Should it last forever?</h2>
+<p>I <em>was</em> just looking at <a href="http://twitter.com/stef">Stef Lewandowski&#39;s</a> tweet about their new hack <a href="http://writing.makeshift.io/pieces/introducing-linkydink">Linkydin</a>. A nice idea, but I was asking myself: surely these links have context in <em>time</em>.</p>
+<p>If you&#39;re sharing a group of links in a team, should that information expire? What good is it a year (or more) later to new team members, and in fact could it share old and busted knowledge that&#39;s been superceeded by better information? <em>I don&#39;t know</em>.</p>
+<p>Then I read <a href="http://twitter.com/neave">Paul Neave&#39;s</a> post <a href="http://blog.neave.com/post/64669185529/why-i-create-for-the-web">&quot;Why I create for the web&quot;</a> and he boils it down to the humble hyperlink. Except the way I <em>found</em> his post was through a tweet. A tweet that a) I will unlikely find again (because twitter&#39;s archive search is limited) and b) goes <em>through</em> twitter&#39;s own link shortening service. If that service is shut down, then that hyperlink is sent to the grave (note that this isn&#39;t the point of @neave&#39;s post - but it got me thinking).</p>
+<p>I recently looked at Snapchat. Content that purposely destroys itself, I can only assume, because it&#39;s relevant for that moment &dagger;. I also remember someone having a blog that would slowly remove all the blog posts one at a time over a period of time (and it would look like the articles were fading out at the bottom of the site).</p>
+<p><small>&dagger; Though Snapchat might <a href="http://blog.snapchat.com/post/50060403002/how-snaps-are-stored-and-deleted">not destroy the data on the phone</a> it is actually removed from their server, which, to me, means it&#39;ll expire from existence <em>somehow</em> eventually.</small></p>
+<p>I like these later two because they&#39;ve thought specifically about time and how it should be addressed. My own blog, I haven&#39;t thought about time. I haven&#39;t thought about whether it&#39;ll shutdown after I die. I&#39;ve long stopped posting to <a href="http://jqueryfordesigners.com/">jQuery for Designers</a> but I&#39;ll keep the domain renewed...but for how long? </p>
+<p><strong>Should sites be retired to the archive.org?</strong></p>
+<p>I don&#39;t know. A lot of these questions are why I&#39;ve asked Jeremy Keith to <a href="http://2013.full-frontal.org/#time">speak at Full Frontal</a> whereby he chose the title &quot;Time&quot;. I expect he&#39;ll add a lot of clarity to some of my thoughts, but no doubt raise a good deal of new questions.</p>
+<h2>Everything ends</h2>
+<p>Everything has an expiry. Nothing lasts forever, but maybe my expectations need to adjust on the web. If something lasts a few years on the web that&#39;s a good thing. If I can get my data out of a web service, then that&#39;s a good thing too (because I&#39;m now responsible for my content, like photos which I care about).</p>
+<p>I&#39;m just very interested in seeing more services taking advantage of expiry as a feature. Heck, we buy and own (small) pets because the expiry is a feature! Why don&#39;t we use this more on the web?</p>
+]]></content:encoded></item><item><title>A Side View: front end dev conference</title><guid isPermaLink="false">a-side-view-front-end-dev-conference</guid><link>http://remysharp.com/2013/10/17/a-side-view-front-end-dev-conference</link><pubDate>Thu, 17 Oct 2013 11:00:32 +0000</pubDate><description><![CDATA[As the curator of Full Frontal I&#39;m extremely proud of our event and it&#39;s content, and this year we sold out in 11 minutes. 
+That was good and bad. The bad being that lots of people missed out.
+So I&#39;m running a side event called: Side View on Saturday 9th November in Brighton, UK.
+It&#39;s 6 front end sessions for £50+VAT. Frankly I think it&#39;s a steal, but then I get to go free (because I&#39;m running it!).
+Full details of each talk and the link to buy tickets is here:
+http://2013.full-frontal.org/sideview
+I&#39;d love for you to come along, and equally if you can spread the word that would really help. Full Frontal sells out quickly, but getting the word out about a new event is always harder.
+Also, we&#39;re still looking for a single sponsor for the event who would get exclusive rights over sponsorship. If you&#39;re interested (or know a company) please get in touch (a contact link is on the page above).
+Thanks, and please do spread the word!]]></description><content:encoded><![CDATA[
+<p>As the curator of <a href="http://2013.full-frontal.org">Full Frontal</a> I&#39;m extremely proud of our event and it&#39;s content, and this year we sold out in 11 minutes. </p>
+<p>That was good <em>and</em> bad. The bad being that lots of people missed out.</p>
+<p>So I&#39;m running a side event called: Side View on Saturday 9th November in Brighton, UK.</p>
+<p>It&#39;s 6 front end sessions for £50+VAT. Frankly I think it&#39;s a steal, but then I get to go free (because I&#39;m running it!).</p>
+<p>Full details of each talk and the link to buy tickets is here:</p>
+<p><a href="http://2013.full-frontal.org/sideview"><a href="http://2013.full-frontal.org/sideview">http://2013.full-frontal.org/sideview</a></a></p>
+<p>I&#39;d love for you to come along, and equally if you can spread the word that would really help. Full Frontal sells out quickly, but getting the word out about a new event is always harder.</p>
+<p>Also, we&#39;re still looking for a single sponsor for the event who would get exclusive rights over sponsorship. If you&#39;re interested (or know a company) please get in touch (a contact link is on the page above).</p>
+<p>Thanks, and please do spread the word!</p>
+]]></content:encoded></item><item><title>I am hiring</title><guid isPermaLink="false">i-am-hiring</guid><link>http://remysharp.com/2013/09/24/i-am-hiring</link><pubDate>Tue, 24 Sep 2013 14:23:06 +0000</pubDate><description><![CDATA[My small company, Left Logic is now actively hiring.
+Left Logic is based in the heart of Brighton, my favourite part actually: The
+North Laine.
+
+The company is a front end development and JavaScript specialist. I add
+JavaScript separately, because Node applications feature a lot in the projects
+we&#39;ve worked on.
+Technology stack includes:
+
+node
+git
+grunt
+devtools
+express / handlebars / mongoose
+heroku
+mysql
+mocha (though we could be a lot better at testing)
+and more!
+
+A typical day could be:
+
+working on jsbin.com feature development and bug fixes
+working on client projects (one particular client who has a complicated/intesting idea shop)
+hacking on tools like twitterwall, twitter lib or any other side projects I&#39;ve built
+being support staff at one of our workshops or at Full Frontal (or related events)
+experimenting with hardware and JavaScript (this is rare, but something I&#39;m interested in adding to)
+attending conferences
+
+I also run flexible hours in the office. I (Remy) would typically be in the office Tuesday to Friday, but working evening or weekend hours. You&#39;re expected to be able to manage your own hours, and the aim is to get the work done rather than clock your hours.
+If you&#39;re interested in applying, please email jobs@leftlogic.com with a covering email as to why you&#39;re the person for the job and links to your github profile (or equally some portfolio that shows off your coding chops).]]></description><content:encoded><![CDATA[
+<p>My small company, <a href="http://leftlogic.com">Left Logic</a> is now actively hiring.</p>
+<p>Left Logic is based in the heart of Brighton, my favourite part actually: The
+North Laine.</p>
+<p><img src="http://instagram.com/p/cdj9tCqar4/media/?size=m" alt="http://instagram.com/p/cdj9tCqar4/media/?size=m"><img src="http://instagram.com/p/Jh2hhSKalh/media/?t=m" alt="http://instagram.com/p/Jh2hhSKalh/media/?size=m"></p>
+<p>The company is a front end development <em>and</em> JavaScript specialist. I add
+JavaScript separately, because Node applications feature a lot in the projects
+we&#39;ve worked on.</p>
+<p>Technology stack includes:</p>
+<ul>
+<li>node</li>
+<li>git</li>
+<li>grunt</li>
+<li>devtools</li>
+<li>express / handlebars / mongoose</li>
+<li>heroku</li>
+<li>mysql</li>
+<li>mocha (though we could be a lot better at testing)</li>
+<li>and more!</li>
+</ul>
+<p>A typical day could be:</p>
+<ul>
+<li>working on jsbin.com feature development and bug fixes</li>
+<li>working on client projects (one particular client who has a complicated/intesting idea shop)</li>
+<li>hacking on tools like twitterwall, twitter lib or any <a href="http://github.com/remy/">other side projects</a> I&#39;ve built</li>
+<li>being support staff at one of our workshops or at Full Frontal (or related events)</li>
+<li>experimenting with hardware and JavaScript (this is rare, but something I&#39;m interested in adding to)</li>
+<li>attending conferences</li>
+</ul>
+<p>I also run flexible hours in the office. I (Remy) would typically be in the office Tuesday to Friday, but working evening or weekend hours. You&#39;re expected to be able to manage your own hours, and the aim is to get the work done rather than clock your hours.</p>
+<p>If you&#39;re interested in applying, please email <a href="mailto:jobs@leftlogic.com">jobs@leftlogic.com</a> with a covering email as to why you&#39;re the person for the job and links to your github profile (or equally some portfolio that shows off your coding chops).</p>
+]]></content:encoded></item><item><title>How I fixed an anonymous infinite loop in jsbin</title><guid isPermaLink="false">how-i-fixed-an-anonymous-infinite-loop-in-jsbin</guid><link>http://remysharp.com/2013/09/11/how-i-fixed-an-anonymous-infinite-loop-in-jsbin</link><pubDate>Wed, 11 Sep 2013 12:16:37 +0000</pubDate><description><![CDATA[If you&#39;re a frequent user of jsbin, you might have noticed that on the odd
+occasion that it was unreachable. I&#39;ve got alarms in place that notify me of
+problems, but the root cause was unknown to me. The result looked like an
+infinite loop, but how to find that code was a mission.]]></description><content:encoded><![CDATA[
+<p>If you&#39;re a frequent user of jsbin, you might have noticed that on the odd
+occasion that it was unreachable. I&#39;ve got alarms in place that notify me of
+problems, but the root cause was unknown to me. The result <em>looked</em> like an
+infinite loop, but <em>how</em> to find that code was a mission.</p>
+<p><a href="/images/high-cpu.png"><img src="/images/high-cpu.png" alt="/images/high-cpu.png"></a></p>
+<h2>Getting help</h2>
+<p>I&#39;ve posted a few times on twitter to attempt to get some help, but really 140
+characters doesn&#39;t express the problem at all.</p>
+<p>The problem boils down to: how do you find an infinite loop on server-side code
+when you can&#39;t replicate the bug. Tools like nodetime and New Relic wouldn&#39;t
+work because the code would be stuck in a tight loop which these tools wouldn&#39;t
+have breathing space to request a memory snapshot. i.e. it&#39;s complicated!</p>
+<p>Finally I posted on Google Plus (rather than here because it was more of a throw
+away question), and this is when <a href="https://plus.google.com/u/0/111090511249453178320">Vyacheslav Egorov</a> replied (who I understand worked on the V8 engine
+).</p>
+<p>His suggestion was to attach to the process, and run a core dump. Basically
+voodoo black magic ninja server stuff I didn&#39;t quite understand - but he posted
+directions!</p>
+<p>A huge, huge thanks to Vyacheslav for his solution - what a star!</p>
+<h2>Getting a stacktrace from an infinite loop</h2>
+<p>You need <code>gdb</code> to attach to the process, set a breakpoint in the next runtime
+stack guard (I believe this is the <a href="/images/stylus-nuke.png">Chrome &quot;kill/wait&quot; box</a>),
+then continue execution.</p>
+<p>The process breaks correctly, then you insert an exception that causes a full
+(and super detailed) stacktrace (this is in STDERR - or STDOUT - but it&#39;s not in
+the <code>gdb</code>, so I found it in my server logs).</p>
+<p>This is Vyacheslav&#39;s <a href="https://gist.github.com/mraleph/6453431">gist</a> that showed the process, and his <a href="https://plus.google.com/u/0/109330852418236875528/posts/8SApsxDTDTh">explanation</a> (in the comments towards the end):</p>
+<pre><code>$ cat test.js
+function foo () { while (true) { } }
+function bar () { return foo(); }
+bar();
+$ node test.js &amp;
+$ gdb attach $(pidof node)
+0x00000bf778c63d5f in ?? ()
+(gdb) b v8::internal::Runtime_StackGuard
+Breakpoint 1 at 0x84a1f0
+(gdb) print &#39;v8::V8::TerminateExecution&#39;(0)
+$2 = 0
+(gdb) c
+Continuing.
+
+Breakpoint 1, 0x000000000084a1f0 in v8::internal::Runtime_StackGuard(v8::internal::Arguments, v8::internal::Isolate*) ()
+(gdb) print V8_Fatal(&quot;a&quot;, 11, &quot;c&quot;)
+
+
+#
+# Fatal error in a, line 11
+# c
+#
+
+
+==== Stack trace ============================================
+
+Security context: 0x11330e857229 &lt;JS Object&gt;#0#
+    1: foo(aka foo) [/home/mraleph/test.js:~1] (this=0)
+    2: bar [/home/mraleph/test.js:2] (this=0x11330e857349 &lt;JS Global Object&gt;#1#)
+    3: /* anonymous */ [/home/mraleph/test.js:3] (this=0xb6d64f79f11 &lt;an Object&gt;#2#,exports=0xb6d64f79f11 &lt;an Object&gt;#2#,require=0xb6d64f7c651 &lt;JS Function require&gt;#3#,module=0xb6d64f79e19 &lt;a Module&gt;#4#,__filename=0xb6d64f76a69 &lt;String[38]: /home/mraleph/test.js&gt;,__dirname=0xb6d64f7cfb1 &lt;String[30]: /home/mraleph&gt;)
+
+/// and so forth</code></pre>
+<h2>The cause in jsbin</h2>
+<p>I found a very detailed stacktrace in my logs (I&#39;m currently using forever with
+jsbin in production).</p>
+<p>My stacktrace started like this:</p>
+<pre><code>#
+# Fatal error in a, line 11
+# c
+#
+
+
+==== Stack trace ============================================
+
+Security context: 0x21783c406b71 &lt;JS Object&gt;#0#
+    1: new constructor(aka Token) [/WWW/jsbin/node_modules/stylus/lib/token.js:~22] (this=0x1bf223f440d1 &lt;a Token&gt;#1#,type=0x2cb2b9cfbc39 &lt;String[3]: eos&gt;,val=0x21783c404121 &lt;undefined&gt;)
+    2: arguments adaptor frame: 1-&gt;2
+    4: eos [/WWW/jsbin/node_modules/stylus/lib/lexer.js:216] (this=0x1bdbdd256941 &lt;a Lexer&gt;#2#)
+    5: advance [/WWW/jsbin/node_modules/stylus/lib/lexer.js:~155] (this=0x1bdbdd256941 &lt;a Lexer&gt;#2#)</code></pre>
+<p>...and as I suspected it was linked to a processor (stylus in this case).</p>
+<p>As I scroll further through the stacktrace I also found the &quot;Key&quot; heading which
+I was lucky to an entry like this:</p>
+<pre><code>str: 0x25b2767e3809 &lt;String[22]\: h1{color:red;}\n\nblink{&gt;</code></pre>
+<p>Then further down I found the SQL string which would lead me to the bin that
+could consistently reproduce the bug:</p>
+<pre><code>sql: 0x25b2767e6d29 &lt;String[280]: UPDATE `sandbox` SET `css`=&#39;h1{color:red;}\n\nblink{&#39;, `settings`=&#39;{\&quot;processors\&quot;:{\&quot;css\&quot;:\&quot;stylus\&quot;}}&#39;, `created`=&#39;2013-09-11T09:27:12.613Z&#39; WHERE `url`=&#39;aHOVoMe&#39; AND `revision`=&#39;2&#39; AND `streaming_key`=&#39;8c47219c1d3f1e25c368fa82687b00f2&#39; AND `streaming_key`!=&#39;&#39; AND `active`=&#39;y&#39;&gt;</code></pre>
+<p>So I knew ow that the processor was Stylus and the CSS panel would crash when it
+contained, quite simply:</p>
+<pre><code>blink {</code></pre>
+<p>So I&#39;ve patched jsbin by removing Stylus support (which appears wasn&#39;t particularly
+popular anyway) and I&#39;ll fix properly by creating a daemon process to handle the
+processors (and add SASS support along the way).</p>
+<p>Though an interesting lesson is how to discover the super tricky bugs in node.</p>
+]]></content:encoded></item><item><title>JS Bin's 5th birthday &amp; news</title><guid isPermaLink="false">jsbin-5th-birthday</guid><link>http://remysharp.com/2013/08/14/jsbin-5th-birthday</link><pubDate>Wed, 14 Aug 2013 14:00:07 +0000</pubDate><description><![CDATA[28th September marks jsbin 5th birthday. jsbin was launched back in 2008 and has been a dear project close to my heart. So in celebration, I&#39;m going to run a fun competition and announce some important news here today.]]></description><content:encoded><![CDATA[
+<p>28th September marks <a href="http://jsbin.com">jsbin</a> <strong>5th</strong> birthday. jsbin was <a href="http://remysharp.com/2008/10/06/js-bin-for-collaborative-javascript-debugging/">launched back</a> in 2008 and has been a dear project close to my heart. So in celebration, I&#39;m going to run a fun competition and announce some important news here today.</p>
+<h2>Competition</h2>
+<p>Late last night Max Ogden posted a <a href="https://twitter.com/maxogden/status/367408597254148096">tweet</a> linking to some <a href="http://imgur.com/a/FywLp#11">visual representations</a> of mathematical problems.</p>
+<p>Instantly I thought I&#39;d love to see code for these (but they&#39;re all animated gifs) - so I put it to you: <strong>create (js)bins that replicate these visualisations (probably using canvas), and prizes shall be received!</strong></p>
+<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/FywLp/embed#11"></iframe>
+
+<h3>Prizes</h3>
+<p>For the first of each of the full images that are solved, I&#39;ll post you a jsbin sticker (perfect for your laptop).</p>
+<p>Solve 5 or more (previously unsolved visualisations), and I&#39;ll send you a jsbin T-shirt.</p>
+<p>Behind closed doors, Dave, the jsbin robot has been getting a bit of design love, and I&#39;ll be showing off his new super-duper vector form very soon - obviously perfect for stickers and T-shirt.</p>
+<p>Then two random entries will be selected for a lifetime pro jsbin account...whaaaaat? &quot;What are these pro accounts @rem speaks of?&quot;. Read on my friend :-)</p>
+<h3>Winners</h3>
+<p>All those entries will get a sticker in the post. Those who entered 5 or more, I&#39;ll be in touch to get you a t-shirt. The winner(s) of the pro accounts are: Rafael Couto and Rob Aldred (I decided on the spur of the moment to give away two accounts).</p>
+<p>Pro accounts I had hoped would be live by the end of September, but there&#39;s more work to be done, but you will be the very, very first pro users of JS Bin - congratulations!</p>
+<p>And in case you wondered how I picked the winners, here&#39;s a video of me doing it: <a href="http://quick.as/y5uozj"><a href="http://quick.as/y5uozj">http://quick.as/y5uozj</a></a></p>
+<h3>Terms</h3>
+<ul>
+<li>The deadline is 27-September 23:59 UK time (BST)</li>
+<li>Post the solution on jsbin.com</li>
+<li>It&#39;s better (for you) if you&#39;re a registered user (it&#39;s totally free and even easier now we added github auth a while ago)</li>
+<li>Either send a tweet hashtaged #jsbin on twitter, or post it here in the comments</li>
+<li>It&#39;s first come, first serve, so if there&#39;s an easy animated gif, then go for it, but it needs to match the animated gif</li>
+</ul>
+<h3>Solved so far...</h3>
+<div class="gallery">
+
+<p>By <a href="https://twitter.com/thebabydino">Ana Tudor</a> - using nothing but CSS &amp; HTML!</p>
+
+<ul>
+<li><img src="http://i.imgur.com/LKA2W0vs.jpg" alt="http://i.imgur.com/LKA2W0vs.jpg" /> <a href="http://jsbin.com/uzawum/5/edit">solution</a></li>
+<li><img src="http://i.imgur.com/awEIRSEs.jpg" alt="http://i.imgur.com/awEIRSEs.jpg" /> <a href="http://jsbin.com/ezevep/2/edit">solution</a></li>
+<li><img src="http://i.imgur.com/0eC7n05s.jpg" alt="http://i.imgur.com/0eC7n05s.jpg" /> <a href="http://jsbin.com/ikegun/4/edit">solution</a></li>
+<li><img src="http://i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/azewek/10/edit">solution</a></li>
+<li><img src="http://i.imgur.com/sS69ox2s.jpg" alt="http://i.imgur.com/sS69ox2s.jpg" /> <a href="http://jsbin.com/oxipib/6/edit">solution</a></li>
+<li><img src="http://i.imgur.com/RDK9R7Cs.jpg" alt="http://i.imgur.com/RDK9R7Cs.jpg" /> <a href="http://jsbin.com/ufesog/3/edit">solution</a></li>
+<li><img src="http://i.imgur.com/vWJylrBs.jpg" alt="http://i.imgur.com/vWJylrBs.jpg" /> <a href="http://jsbin.com/odoqit/4/edit">solution</a></li>
+</ul>
+
+
+<p>By <a href="http://twitter.com/seb_ly">Seb Lee-Delise</a>:</p>
+
+<ul>
+<li><img src="http://i.imgur.com/0eC7n05s.jpg" alt="http://i.imgur.com/0eC7n05s.jpg" /> <a href="http://jsbin.com/ekajoc/5/edit">solution</a></li>
+<li><img src="http://i.imgur.com/ItzXHYds.jpg" alt="http://i.imgur.com/ItzXHYds.jpg" /> <a href="http://jsbin.com/avazat/2/edit">solution</a></li>
+<li><img src="http://i.imgur.com/z9Du5yos.jpg" alt="http://i.imgur.com/z9Du5yos.jpg" /> <a href="http://jsbin.com/ovihor/1/edit">solution</a></li>
+<li><img src="http://i.imgur.com/zbH9pofs.jpg" alt="http://i.imgur.com/zbH9pofs.jpg" /> <a href="http://jsbin.com/uvecub/1/edit">solution</a></li>
+<li><img src="http://i.imgur.com/rgfCtols.jpg" alt="http://i.imgur.com/rgfCtols.jpg" /> <a href="http://jsbin.com/ujopes/3/edit">solution</a></li>
+</ul>
+
+
+<p>By <a href="http://twitter.com/alawatthe">@alawatthe</a>:</p>
+
+<ul>
+<li><img src="http://i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/akavad/1/edit">solution</a></li>
+<li><img src="http://i.imgur.com/iPJoKj6s.jpg" alt="http://i.imgur.com/iPJoKj6s.jpg" /> <a href="http://jsbin.com/owiqoq/1/edit">solution</a></li>
+<li><img src="http://i.imgur.com/UdH39ZXs.jpg" alt="http://i.imgur.com/UdH39ZXs.jpg" /> <a href="http://jsbin.com/amorab/1/edit">solution</a></li>
+<li><img src="http://i.imgur.com/Ooag3C6s.jpg" alt="http://i.imgur.com/Ooag3C6s.jpg" /> <a href="http://jsbin.com/iruyus/1/edit">solution</a></li>
+<li><img src="http://i.imgur.com/93ryWxfs.jpg" alt="http://i.imgur.com/93ryWxfs.jpg" /> <a href="http://jsbin.com/afofov/2/edit">solution</a></li>
+</ul>
+
+
+<p>By <a href="https://twitter.com/loktar00">Jason Brown</a>:</p>
+
+<ul>
+<li><img src="http://i.imgur.com/S1TWW4vs.jpg" alt="http://i.imgur.com/S1TWW4vs.jpg" /> <a href="http://jsbin.com/uxisus/4/edit">solution</a></li>
+<li><img src="http://i.imgur.com/rTtr4fEs.jpg" alt="http://i.imgur.com/rTtr4fEs.jpg" /> <a href="http://jsbin.com/akorem/1/edit">solution</a></li>
+<li><img src="http://i.imgur.com/uiaAeb7s.jpg" alt="http://i.imgur.com/uiaAeb7s.jpg" /> <a href="http://jsbin.com/ojiwex/2/edit">solution</a></li>
+<li><img src="http://i.imgur.com/9uGXXpbs.jpg" alt="http://i.imgur.com/9uGXXpbs.jpg" /> <a href="http://jsbin.com/oFoZaJe/1/edit">solution</a></li>
+<li><img src="http://i.imgur.com/9vwaC6ls.jpg" alt="http://i.imgur.com/9vwaC6ls.jpg" /> <a href="http://jsbin.com/ajimeho/2/edit?js,output">solution</a></li>
+</ul>
+
+
+<p>By <a href="https://twitter.com/chinchang457">Kushagra Gour</a>:</p>
+
+<ul>
+<li><img src="http://i.imgur.com/ueYvu8is.jpg" alt="http://i.imgur.com/ueYvu8is.jpg" /> <a href="http://jsbin.com/uLoJuda/1/edit">solution</a></li>
+<li><img src="http://i.imgur.com/59VBDWts.jpg" alt="http://i.imgur.com/59VBDWts.jpg" /> <a href="http://jsbin.com/uyOcUgA/5/edit">solution</a></li>
+<li><img src="http://i.imgur.com/kzRu0V5s.jpg" alt="http://i.imgur.com/kzRu0V5s.jpg" /> <a href="http://jsbin.com/aliBUWo/13/edit">solution</a></li>
+<li><img src="http://i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/uXudoNA/2/edit">solution</a></li>
+<li><img src="http://i.imgur.com/iGkKiOus.jpg" alt="http://i.imgur.com/iGkKiOus.jpg" /> <a href="http://jsbin.com/isUz/4/edit">solution</a></li>
+<li><img src="http://i.imgur.com/RDK9R7Cs.jpg" alt="http://i.imgur.com/RDK9R7Cs.jpg" /> <a href="http://jsbin.com/erAG/14/edit">solution</a></li>
+</ul>
+
+
+<p>By <a href="https://twitter.com/msvaljek">Marko Švaljek</a>:</p>
+
+<ul>
+<li><img src="http://i.imgur.com/CuzTPTRs.jpg" alt="http://i.imgur.com/CuzTPTRs.jpg" /> <a href="http://jsbin.com/idIXaDe/4/edit?html,js,output">solution</a></li>
+<li><img src="http://i.imgur.com/LlpGldrs.jpg" alt="http://i.imgur.com/LlpGldrs.jpg" /> <a href="http://jsbin.com/EGOfaxI/1/edit?js,output">solution</a></li>
+<li><img src="http://i.imgur.com/4ibsGlIs.jpg" alt="http://i.imgur.com/4ibsGlIs.jpg" /> <a href="http://jsbin.com/EnOXuh/4/edit?js,output">solution</a></li>
+</ul>
+
+
+<p>Others:</p>
+
+<ul>
+<li><img src="http://i.imgur.com/beZsUves.jpg" alt="http://i.imgur.com/beZsUves.jpg" /> <a href="http://jsbin.com/irisag/2/edit">solution</a> by <a href="https://twitter.com/shovemedia">Jon Williams</a></li>
+<li><img src="http://i.imgur.com/LFFz3abs.jpg" alt="http://i.imgur.com/LFFz3abs.jpg" /> <a href="http://jsbin.com/iruquq/20/edit">solution</a> by <a href="https://twitter.com/robaldred">Rob Aldred</a></li>
+<li><img src="http://i.imgur.com/fso6HEMs.jpg" alt="http://i.imgur.com/fso6HEMs.jpg" /> <a href="http://jsbin.com/ugAfUVI/1/edit">solution</a> by <a href="https://twitter.com/jackrugile">Jack Rugile</a></li>
+<li><img src="http://i.imgur.com/OjcHC4ks.jpg" alt="http://i.imgur.com/OjcHC4ks.jpg" /> <a href="http://jsbin.com/udelemo/3/edit">solution</a> by <a href="https://twitter.com/Aptary">Ed Ball</a></li>
+<li><img src="http://i.imgur.com/ItzXHYds.jpg" alt="http://i.imgur.com/ItzXHYds.jpg" /> <a href="http://jsbin.com/ePaXEzO/6/edit?js,output">solution</a> by <a href="https://twitter.com/rrrrrrichard">Richard Icke</a></li>
+<li><img src="http://i.imgur.com/JXbWegds.jpg" alt="http://i.imgur.com/JXbWegds.jpg" /> <a href="http://jsbin.com/Evitomu/1/edit?css,output">solution</a> by <a href="https://twitter.com/rafaelcastrocou">Rafael Couto</a></li>
+</ul>
+
+
+</div>
+
+<h2>News: side project moves to full time focus</h2>
+<p>For some time now we&#39;ve* been asking the question: can jsbin sustain itself to support its own development?</p>
+<p>&quot;we&quot; refers to myself and <a href="http://twitter.com/yandle">Danny Hope</a> who has contributed his time since 2009 on the UX of jsbin.</p>
+<p>In short, I&#39;m now full time on jsbin (as of this week until the foreseeable future), and intend to support the development time by creating Pro user accounts (details will be revealed later).</p>
+<p>Aside from the new features that pro users will get, the pro account will help keep jsbin 100% free for freely available educational uses (in schools, universities and community training). Those good people will be able to get free training accounts so they can continue help young students and new-comers with jsbin in their tool belt.</p>
+<p>Education is very important to me, and pro accounts allows jsbin to keep iterating with features I want to see land, and to help fix any issues that cause issue for both general users and those students stuck working with limited access to tech (like the version of jsbin that works without a web connection and entirely from a usb stick with zero install).</p>
+<p>If you want heads up when jsbin pro accounts go live, <a href="http://jsbin.com">register (for free) with jsbin</a> - as I&#39;ll email registered users first.</p>
+<h3>How jsbin&#39;s development cycle works now</h3>
+<p>At present (as of the day of this post) jsbin only gets development resource from either myself or my team when client work stops, ie. there&#39;s a break in paid development - then I move on to features or bug fixes.</p>
+<p>In addition, jsbin&#39;s hosting fees are around £6K ($9.5K) per year (and yes, I&#39;m careful about how and what I host, so I&#39;m not looking for alternative solutions). Then there&#39;s my employees time on jsbin that I pay for.</p>
+<p>Overall, not only does jsbin not cover its costs, but it has a deficit of several thousands. One that for a long time, I&#39;ve been happy to incur.</p>
+<h3>Healthy competition</h3>
+<p>Since jsbin launched in September 2008, jsfiddle came to the market - which was fine: two freely available apps as side projects. But then last year Chris Coyier (and team) launched CodePen, and what&#39;s important is that it has a business model around the product. From I can see, it&#39;s doing well too: I can&#39;t speak for the business, but general popularity across the web is growing well.</p>
+<p>So why can&#39;t jsbin sustain itself? I&#39;m not sure.</p>
+<h3>The dirty word: money</h3>
+<p>I always told myself jsbin would be free, ad-free and totally open.  That I wouldn&#39;t ask users for cash, because...why should I ask to be paid?</p>
+<p>What a idiotic thought.</p>
+<p>It&#39;s not that I want to get rich on jsbin, but where I got the impression it was okay to <em>lose</em> money was acceptable - I&#39;ve no clue.</p>
+<p>Over the last 3 months I&#39;ve been meeting <em>real</em> people who use jsbin (and some that didn&#39;t and used codepen instead), and I asked them about their use, their understanding of functionality and this is what I&#39;ve finally come to conclude:</p>
+<ol>
+<li>There&#39;s lots of people who <em>want</em> to pay/donate for a jsbin account</li>
+<li>There&#39;s lots of people who don&#39;t fully know what jsbin can do</li>
+</ol>
+<h3>Addressing features</h3>
+<p>jsbin is rich with features that (most) people don&#39;t know about. That&#39;s partly because we&#39;ve taken a held back approach to the UI - in that you arrive at jsbin, and what&#39;s the thing you want to do? Code: so we present the code panels and try to keep that the focus. I still feel that&#39;s right, but the <a href="http://jsbin.com/welcome/edit">welcome</a> page that was added back in June 2012 will be removed, and introduction and integrated help is a new focus for us.</p>
+<p>We&#39;ve also started a new learning centre for jsbin: <a href="http://learn.jsbin.com">learn.jsbin.com</a>. Currently it&#39;s a skeletal site with only two real posts, but more to come: <a href="http://github.com/jsbin-org/learn">github.com/jsbin-org/learn</a> - which will be updated and added to regularly.</p>
+<h2>Important notes</h2>
+<p>It&#39;s worth stating so it&#39;s clear:</p>
+<ol>
+<li>jsbin will remain open source and available on github as it is today</li>
+<li>All current functionality will remain free to all users (there&#39;s some ways of hacking jsbin that may move to pro accounts though)</li>
+<li>Those individuals offering free training (to students, children and doing a good thing) on a regular basis can apply for a <strong>free</strong> pro and training accounts for jsbin.</li>
+</ol>
+<h2>Exciting times ahead</h2>
+<p>For me, it&#39;s kind of a big deal to now turn my focus 100% to jsbin, and instead of getting home from work and thinking what bugs can I squash before I hit the sack, now I can spend my day focusing  on this tool.</p>
+<p>Really the big question is: will the pro features and <em>your</em> sign ups (and let&#39;s face it: your <em>cash</em>) be able to support that position?  I hope so, and indeed I hope to bring someone else on board full time to work on jsbin in the future too (maybe that could be you?).</p>
+]]></content:encoded></item></channel></rss>
