@@ -98,48 +98,64 @@ var server = function (root) {
   console.log('compilation complete');
 };
 
-if (process.env.NODE_ENV === 'production') {
-  // lastly...
-  route.get('*', function (req, res, next) {
-    req.url = req.url.replace(/\?.*$/, '').replace(/(.)\/$/, '$1');
-    if (htmlFiles.indexOf(req.url + '.html') !== -1) {
-      // then we requested /foo/bar and we know there's a
-      // generated file that matches
-      req.url += '.html';
-    }
+function run() {
 
-    if (mount) {
-      mount(req, res, function serve404() {
+  if (process.env.NODE_ENV === 'production') {
+    // lastly...
+    route.get('*', function (req, res, next) {
+      req.url = req.url.replace(/\?.*$/, '').replace(/(.)\/$/, '$1');
+      if (htmlFiles.indexOf(req.url + '.html') !== -1) {
+        // then we requested /foo/bar and we know there's a
+        // generated file that matches
+        req.url += '.html';
+      }
+
+      if (mount) {
+        mount(req, res, function serve404() {
+          res.writeHead(404);
+          res.end(fourohfour);
+        });
+      } else {
         res.writeHead(404);
-        res.end(fourohfour);
-      });
-    } else {
-      res.writeHead(404);
-      res.end();
-    }
-  });
+        res.end();
+      }
+    });
 
-  console.log('Running harp-static on ' + port);
-  http.createServer(route).listen(port);
+    console.log('Running harp-static on ' + port);
+    http.createServer(route).listen(port);
 
+    harp.compile(__dirname, outputPath, function(errors){
+      if(errors) {
+        console.log(JSON.stringify(errors, null, 2));
+        process.exit(1);
+      }
+
+      fourohfour = require('fs').readFileSync(outputPath + '/404.html');
+
+      server(outputPath, port);
+    });
+  } else {
+    route.all('*', harp.mount(__dirname));
+    route.all('*', function (req, res) {
+      req.url = '/404';
+      harp.mount(__dirname)(req, res);
+    });
+    console.log('Running harp-static on ' + port);
+    http.createServer(route).listen(port);
+
+    server(__dirname + '/public');
+  }
+}
+
+if (process.argv[2] === 'compile') {
   harp.compile(__dirname, outputPath, function(errors){
     if(errors) {
       console.log(JSON.stringify(errors, null, 2));
       process.exit(1);
     }
 
-    fourohfour = require('fs').readFileSync(outputPath + '/404.html');
-
-    server(outputPath, port);
+    process.exit(0);
   });
 } else {
-  route.all('*', harp.mount(__dirname));
-  route.all('*', function (req, res) {
-    req.url = '/404';
-    harp.mount(__dirname)(req, res);
-  });
-  console.log('Running harp-static on ' + port);
-  http.createServer(route).listen(port);
-
-  server(__dirname + '/public');
+  run();
 }

@@ -341,6 +341,11 @@ textarea {
   width: 97%;
 }
 
+.anchor:hover {
+  background: transparent;
+  outline: none;
+}
+
 .post {
   h1.title,
   h2.title {
@@ -508,24 +513,26 @@ ul.post-nav {
   font-size: 90%;
   li {
     display: inline;
-    padding-top: 20px;
+    padding: 10px 20px;
+    float: right;
+    padding-right: 20px;
 
-    &.prev {
+    &.home {
       float: left;
-      padding-bottom: 20px;
       padding-left: 20px;
-      &:before {
-        content: '« ';
-      }
     }
 
     &.next {
-      float: right;
-      padding-right: 20px;
-
       &:after {
         content: ' »';
       }
+    }
+
+    &.prev {
+      &:before {
+        content: '« ';
+      }
+
     }
   }
 }
