@@ -12,7 +12,7 @@ h1.title
 article.post
   header.post-header
     h2.title
-      a(href="/blog/#{latest.slug}")= latest.title
+      a(href="#{latest.relative}")= latest.title
   section.post-excerpt.post-content
     != partial('blog/' + latest.slug).split('<!--more-->')[0].replace(/<h1>.*?<\/h1>/, '').trim()
     p
