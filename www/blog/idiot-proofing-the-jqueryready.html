@@ -3,7 +3,7 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-1656750-13', 'auto');
+ga('create', 'UA-1656750-1', 'auto');
 ga('send', 'pageview');</script></head><body id="blog-idiot-proofing-the-jqueryready-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2008/03/11/when-should-we-stop-caring-about-ie6" title="When should we stop caring about IE6?">Next</a></li><li class="prev"><a href="/2008/03/06/ie8-hands-on-a-developers-view" title="IE8 hands on: a developer's view">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/idiot-proofing-the-jqueryready" rel="bookmark" title="Permanent Link: Idiot Proofing the jQuery.ready">Idiot Proofing the jQuery.ready</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/idiot-proofing-the-jqueryready.md">(edit)</a></small></h1><div class="post-content">
 <p>I&#39;m always writing quick prototypes of ideas I&#39;ve got, and often they&#39;ll include some quick jQuery.</p>
 <p>However, for reasons unbeknownst to me, about 1/3 of the time I forget to wrap the statements in a <code>.ready()</code> function, and since I have the habit of putting my <code>script</code> tags in the <code>head</code> - the code never fires.  Sometimes it takes me a few minutes before I realise the simplicity of my mistake.  </p>

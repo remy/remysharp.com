@@ -3,7 +3,7 @@
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-1656750-13', 'auto');
+ga('create', 'UA-1656750-1', 'auto');
 ga('send', 'pageview');</script></head><body id="blog-link-elements-block-dom-parsing-too-page"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2011/07/18/input-range-polyfill" title="input range polyfill">Next</a></li><li class="prev"><a href="/2011/06/06/in-memory-of-tia" title="In memory of Tia">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/blog/link-elements-block-dom-parsing-too" rel="bookmark" title="Permanent Link: link elements block DOM parsing too">link elements block DOM parsing too</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/link-elements-block-dom-parsing-too.md">(edit)</a></small></h1><div class="post-content">
 <p>Today we&#39;re pretty well versed with how JavaScript works. We know that <code>script</code> elements block rendering (well, actually blocks the parsing, which thus delays the rendering), and we know why8. Sure, so we put the <code>script</code> elements at the end of the document. But did you know that <code>link</code> elements block too?</p>
 <p><small>* <code>document.write</code> can affect the DOM tree, so the parsing makes sure these happen synchronously</small>
