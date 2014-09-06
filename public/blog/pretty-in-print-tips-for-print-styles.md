@@ -11,8 +11,10 @@ You don't need to have a completely separate page for print either.  All too oft
 
 Rather than having one screen style sheet and one for print ([there are 8 others by the way](http://meyerweb.com/eric/articles/webrev/200001.html)), it should be a lot easier to use the print style sheet **on top of** the screen style to change the appearance of your site - remembering that you may still want to retain some branding.
 
-`<link media="screen,print" rel="stylesheet" type="text/css" href="/css/main.css" />
-<link media="print" rel="stylesheet" type="text/css" href="/css/print.css" />`
+```
+<link media="screen,print" rel="stylesheet" type="text/css" href="/css/main.css" />
+<link media="print" rel="stylesheet" type="text/css" href="/css/print.css" />
+```
 
 ## Have an easy way to test your print style
 
@@ -20,7 +22,15 @@ You can waste precious time going back and forth from the normal page to the pri
 
 This is what I do so I can request any page and include '?print\_style' to preview my print style:
 
-<code>&lt;link media="&lt;?php echo isset($\_GET['print\_style']) ? 'screen' : 'print'; ?&gt;" rel="stylesheet" type="text/css" href="/css/print.css" /&gt;</code>
+```
+<link media="<?php
+  if (isset($\_GET['print\_style'])) {
+    echo 'screen';
+  else
+    echo 'print';
+  }
+?>" rel="stylesheet" type="text/css" href="/css/print.css" />
+```
 
 ## Remove redundant blocks
 
@@ -34,11 +44,11 @@ Then look through the page and find anything that does not constitute as informa
 
 ## Think about the contrast
 
-If you're site is light text on a dark background, switch it around for the print style sheet. 
+If you're site is light text on a dark background, switch it around for the print style sheet.
 
 Try to think about how much ink you want to use up.  This isn't so relevant on small blocks of text or images, but you should consider it.
 
-A point for discussion, is [some sites](http://bbc.co.uk) offer a high contrast version of their site for people with visual impairment - are there printers that support this as an option, or should we in fact keep the high contrast on print?  
+A point for discussion, is [some sites](http://bbc.co.uk) offer a high contrast version of their site for people with visual impairment - are there printers that support this as an option, or should we in fact keep the high contrast on print?
 
 I suspect the best solution is to test whether they have selected a high contrast view, and use an alternative print style sheet matching the user's needs.
 
@@ -46,7 +56,7 @@ I suspect the best solution is to test whether they have selected a high contras
 
 ### Width
 
-Set your print width out to 100%.  
+Set your print width out to 100%.
 
 From a practical point of view, the best way to achieve this is to set 'width: 100%' on the BODY tag and 'width: auto' on any container elements with fixed widths that should be stretched out.
 
@@ -56,14 +66,15 @@ The problem with print, is that you can't follow the links on the page, and most
 
 You can help by expanding out the links and abbreviations in the print style, using the pseudo selector ':after'.
 
-<pre>A:after {
+```css
+A:after {
   content: " (" attr(href) ")";
 }
 
 ABBR:after {
   content: " (" attr(title) ")";
 }
-</pre>
+```
 
 Note that <abbr title="Internet Explorer">IE</abbr> (up to, and including 7) still doesn't support this selector, so you've made the Firefox and Safari users lives a little easier.
 
