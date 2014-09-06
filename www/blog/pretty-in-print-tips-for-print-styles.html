@@ -1,4 +1,4 @@
-<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Pretty in Print: tips for print styles</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html><html id="remysharp-com"></html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Pretty in Print: tips for print styles</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css"><link rel="stylesheet" type="text/css" href="/css/github.css"><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
@@ -11,38 +11,42 @@ ga('send', 'pageview');</script></head><body id="blog-pretty-in-print-tips-for-p
 
 <h2>Build on top of what you have</h2>
 <p>Rather than having one screen style sheet and one for print (<a href="http://meyerweb.com/eric/articles/webrev/200001.html">there are 8 others by the way</a>), it should be a lot easier to use the print style sheet <strong>on top of</strong> the screen style to change the appearance of your site - remembering that you may still want to retain some branding.</p>
-<p>`<link media="screen,print" rel="stylesheet" type="text/css" href="/css/main.css" /></p>
-<p><link media="print" rel="stylesheet" type="text/css" href="/css/print.css" />`</p>
+<pre><code>&lt;link media=&quot;screen,print&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/main.css&quot; /&gt;
+&lt;link media=&quot;print&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/print.css&quot; /&gt;</code></pre>
 <h2>Have an easy way to test your print style</h2>
 <p>You can waste precious time going back and forth from the normal page to the print preview - so build in a method of previewing the print style (note you can also use the <a href="http://getfirefox.com">Firefox</a> developer toolbar &gt; CSS &gt; Display CSS by media type).</p>
 <p>This is what I do so I can request any page and include &#39;?print_style&#39; to preview my print style:</p>
-<p><code>&lt;link media=&quot;&lt;?php echo isset($_GET[&#39;print_style&#39;]) ? &#39;screen&#39; : &#39;print&#39;; ?&gt;&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/print.css&quot; /&gt;</code></p>
+<pre><code>&lt;link media=&quot;&lt;?php
+  if (isset($\_GET[&#39;print\_style&#39;])) {
+    echo &#39;screen&#39;;
+  else
+    echo &#39;print&#39;;
+  }
+?&gt;&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/css/print.css&quot; /&gt;</code></pre>
 <h2>Remove redundant blocks</h2>
 <p>Remove the header, remove the footer<sup>&dagger;</sup> and remove the sidebar.</p>
 <p><small>&dagger; But remember to keep your copyright</small></p>
 <p>Then look through the page and find anything that does not constitute as information, or would not be useful once the page is printed - and get rid of it.  A simple example can be seen on my blog - I&#39;ve removed the comments form in the print style sheet.</p>
 <p><strong>Do not</strong> remove anything that would constitute as information to the customer or user.</p>
 <h2>Think about the contrast</h2>
-<p>If you&#39;re site is light text on a dark background, switch it around for the print style sheet. </p>
+<p>If you&#39;re site is light text on a dark background, switch it around for the print style sheet.</p>
 <p>Try to think about how much ink you want to use up.  This isn&#39;t so relevant on small blocks of text or images, but you should consider it.</p>
-<p>A point for discussion, is <a href="http://bbc.co.uk">some sites</a> offer a high contrast version of their site for people with visual impairment - are there printers that support this as an option, or should we in fact keep the high contrast on print?  </p>
+<p>A point for discussion, is <a href="http://bbc.co.uk">some sites</a> offer a high contrast version of their site for people with visual impairment - are there printers that support this as an option, or should we in fact keep the high contrast on print?</p>
 <p>I suspect the best solution is to test whether they have selected a high contrast view, and use an alternative print style sheet matching the user&#39;s needs.</p>
 <h2>Make it work on paper</h2>
 <h3>Width</h3>
-<p>Set your print width out to 100%.  </p>
+<p>Set your print width out to 100%.</p>
 <p>From a practical point of view, the best way to achieve this is to set &#39;width: 100%&#39; on the BODY tag and &#39;width: auto&#39; on any container elements with fixed widths that should be stretched out.</p>
 <h3>Expand out links and abbreviations</h3>
 <p>The problem with print, is that you can&#39;t follow the links on the page, and most times you can&#39;t see where the links would have gone.</p>
 <p>You can help by expanding out the links and abbreviations in the print style, using the pseudo selector &#39;:after&#39;.</p>
-<pre>A:after {
-  content: " (" attr(href) ")";
+<pre><code class="language-css">A:after {
+  content: &quot; (&quot; attr(href) &quot;)&quot;;
 }
 
 ABBR:after {
-  content: " (" attr(title) ")";
-}
-</pre>
-
+  content: &quot; (&quot; attr(title) &quot;)&quot;;
+}</code></pre>
 <p>Note that <abbr title="Internet Explorer">IE</abbr> (up to, and including 7) still doesn&#39;t support this selector, so you&#39;ve made the Firefox and Safari users lives a little easier.</p>
 <h2>Let the user decide</h2>
 <p>If possible, let the user decide what should be included in the printout. This would mean using a server-side script to generate the print style on the fly.</p>
