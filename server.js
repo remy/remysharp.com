@@ -27,6 +27,12 @@ route.all('*', function (req, res, next) {
   next();
 });
 
+route.all('/feed/', function (req, res, next) {
+  // required by harp because it thinks I'm using express...
+  req.url = '/feed.xml';
+  next();
+});
+
 route.all('/{blog}?/{post}', function (req, res, next) {
   var post = blogs[req.params.post];
   if (post) {
