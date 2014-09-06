@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "node_modules/.bin/harp compile",
+    "build": "node server.js compile",
     "start": "node_modules/.bin/harp start"
   },
   "author": "Remy Sharp",
@@ -15,6 +16,7 @@
     "router": "~0.6.2",
     "st": "~0.5.1",
     "glob": "~4.0.5",
-    "moment": "~2.8.2"
+    "moment": "~2.8.2",
+    "semver": "~3.0.1"
   }
 }
