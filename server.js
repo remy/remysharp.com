@@ -15,14 +15,6 @@ var mount;
 var moment = require('moment');
 var htmlFiles = [];
 
-Object.keys(blogs).forEach(function (slug) {
-  if (blogs[slug].tags.length) {
-    blogs[slug].tags.forEach(function (tag) {
-      fs.mkdir(__dirname + '/public/tag/' + tag, function () {});
-    });
-  }
-});
-
 // this line, although dirty, ensures that Harp templates
 // have access to moment - which given the whole partial
 // import hack doesn't work consistently across dynamic vs
