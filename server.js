@@ -39,7 +39,7 @@ route.all(/\/downloads\/(.*)$/, function (req, res, next) {
 });
 
 route.all('/wp-content/uploads/{year}/{month}/{filename}', function (req, res, next) {
-  res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params>filename });
+  res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params.filename });
   res.end();
 });
 
