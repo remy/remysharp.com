@@ -33,6 +33,16 @@ route.all('/feed/', function (req, res, next) {
   next();
 });
 
+route.all(/\/downloads\/(.*)$/, function (req, res, next) {
+  res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params[1] });
+  res.end();
+});
+
+route.all('/wp-content/uploads/{year}/{month}/{filename}', function (req, res, next) {
+  res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params>filename });
+  res.end();
+});
+
 route.all('/{blog}?/{post}', function (req, res, next) {
   var post = blogs[req.params.post];
   if (post) {
