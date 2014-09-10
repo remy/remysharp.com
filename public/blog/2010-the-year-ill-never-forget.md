@@ -18,7 +18,7 @@ I also got to run a number of workshops, including running the jQuery for Design
 
 ### Projects
 
-The biggest (new) project was [Introducing HTML5](http://introducinghtml5.com/ "Introducing HTML5: Bruce Lawson and Remy Sharp") with [Bruce Lawson](http://brucelawson.co.uk/ "Bruce Lawson&#8217;s  personal site"). What an honour to be asked to co-author the book with Bruce.  It was a really good experience (although there were definitely some struggles with the editors ::grrr::) and all in all I'm actually rather proud of the book we put together.  When I ask around November time, we had sold a "respectable" number of books so far. 
+The biggest (new) project was [Introducing HTML5](http://introducinghtml5.com/ "Introducing HTML5: Bruce Lawson and Remy Sharp") with [Bruce Lawson](http://brucelawson.co.uk/ "Bruce Lawson&#8217;s  personal site"). What an honour to be asked to co-author the book with Bruce.  It was a really good experience (although there were definitely some struggles with the editors ::grrr::) and all in all I'm actually rather proud of the book we put together.  When I ask around November time, we had sold a "respectable" number of books so far.
 
 ![Covers of Introducing HTML5](http://remysharp.com/images/2010/html5.jpg)
 
@@ -28,7 +28,7 @@ Then there was [Full Frontal 2010](http://2010.full-frontal.org).  The first Ful
 
 [Left Logic](http://leftlogic.com/ "Left Logic - Specialist Web Development"), my business, has also been doing well.  This year I've done business with the likes of the [BBC](http://www.bbc.co.uk/ "BBC - Homepage") and [Google](http://www.google.com/ "Google") - both of which are respectable clients, along with a fistful of other *equally* respectable clients.  Right towards the end of the year I was asked to work on a couple of really exciting small projects.  One I'm now sure won't make the light of day (sadly) the other should go live very early in the new year.  No doubt I'll [tweet about it](http://twitter.com/rem) come release day.
 
-Finally, I started working on a(nother) personal project called: [FÃ¶rbind](http://forbind.net). It's a real-time sockets service designed to make adding real-time easy as pie to your application.  It's still very early days yet, but what's exciting to me, aside from the socket side, is the fact the entire application is written in JavaScript on top of [Node](http://nodejs.org/ "node.js").  Something to keep my skills sharpened.
+Finally, I started working on a(nother) personal project called: [Förbind](http://forbind.net). It's a real-time sockets service designed to make adding real-time easy as pie to your application.  It's still very early days yet, but what's exciting to me, aside from the socket side, is the fact the entire application is written in JavaScript on top of [Node](http://nodejs.org/ "node.js").  Something to keep my skills sharpened.
 
 ![Screenshot of Forbind](http://remysharp.com/images/2010/forbind.gif)
 
@@ -38,7 +38,7 @@ Finally, I started working on a(nother) personal project called: [FÃ¶rbind](ht
 
 <h3 id="tia">Little Tia Sharp</h3>
 
-This year was all about Tia for me. [Julie](http://twitter.com/julieanne) fell pregnant at the end of 2009, and 2010 we watched together as our lives prepared to change. Except in the last moments, Tia was lost. 
+This year was all about Tia for me. [Julie](http://twitter.com/julieanne) fell pregnant at the end of 2009, and 2010 we watched together as our lives prepared to change. Except in the last moments, Tia was lost.
 
 She was born on 31st August 2010, we're both still grieving her loss now 4 months later - and I fully expect we will do for a long time to come. Each day comes with its own highs and lows and I'm seeing life through very different eyes than I did only a short while ago.
 

@@ -31,7 +31,7 @@ New apps/web apps/services I discovered during the event (in order of appearance
 
 ## The Best Bits
 
-Frankly the idea of going to a two day event where I knew absolutely no one, coupled with my exceptionally poor networking and small talk skills was a little bit daunting.  
+Frankly the idea of going to a two day event where I knew absolutely no one, coupled with my exceptionally poor networking and small talk skills was a little bit daunting.
 
 However, the sessions were superb.  A great effort on [Carsonified](http://www.carsonified.com/ "Carsonified") (formally [Carson Systems](http://www.carsonsystems.com/ "Carson Systems Ltd.")) part.
 
@@ -64,7 +64,7 @@ Quick list of mobile bits if you're interested:
 
 Although [John Resig](http://ejohn.org/ "John Resig - JavaScript, Programming, and Web Applications") wasn't there to speak about [jQuery](http://jquery.com/ "jQuery: The Write Less, Do More, JavaScript Library") is would only be polite to thank him for it.
 
-[His talk](http://ejohn.org/blog/future-of-firefox-and-javascript/) covered how JavaScript is moving forward, and particularly JavaScript 2, how it will be available in IE, albeit kicking and [screaming](http://wiki.mozilla.org/Tamarin:ScreamingMonkey).  
+[His talk](http://ejohn.org/blog/future-of-firefox-and-javascript/) covered how JavaScript is moving forward, and particularly JavaScript 2, how it will be available in IE, albeit kicking and [screaming](http://wiki.mozilla.org/Tamarin:ScreamingMonkey).
 
 Our conversation spurred me on to [Rhino](http://www.mozilla.org/rhino/ "Rhino - JavaScript for Java") and [some server side DOM parsing](http://ejohn.org/blog/bringing-the-browser-to-the-server/) (which I'll be posting on separately).
 
@@ -88,7 +88,7 @@ Listening to [Matt Mullenweg](http://photomatt.net/) and not only realising that
 
 I've never seen [Diggnation](http://www.diggnation.com/) before, so the idea of it being filmed live wasn't that exciting (particular as I was on my own).  The only thing I get excited about is the prospect, and actually having, snowboarding holidays, and perhaps sticking IE one after cracking some bug - aside from that, I'm pretty unimpressed by most things.
 
-The Â£3 bottle of Becks helped (yep, Â£3, ouch!), but the biggest thing I was surprised about, and still can't get my head around, was the some 1,000 (perhaps...) techies, standing, shouting, whooping, and yelling for Diggnation and Kevin Rose.  It felt quite wrong!
+The £3 bottle of Becks helped (yep, £3, ouch!), but the biggest thing I was surprised about, and still can't get my head around, was the some 1,000 (perhaps...) techies, standing, shouting, whooping, and yelling for Diggnation and Kevin Rose.  It felt quite wrong!
 
 All that said, I really did laugh out loud and hard at the comedy [Alex Albrecht](http://en.wikipedia.org/wiki/Alex_Albrecht) had somehow produced by playing against straight guy Kevin Rose.
 

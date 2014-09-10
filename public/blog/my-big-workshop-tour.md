@@ -8,11 +8,11 @@ Last year, a few months before [Julie](http://twitter.com/julieanne) and I were 
 
 Phase 1 of the project was to canvas the community, you folks, as to where I should bring my workshops.  I knew I could run them in Brighton again (since I live here) and I was pretty confident I could sell the workshops in London, but really, after taking part in events like [Speak the Web](http://speaktheweb.org) I wanted to also be able to take the workshops beyond London for a change. Give the northern (and other) communities the chance to not travel so damn far for training.
 
-Phase 2 was selling the tickets, and I had talked with friends and colleagues about how to price the workshops for some time, and I didn't want to run these workshops for the usual prices (anywhere from Â£400 upwards for a full day). 
+Phase 2 was selling the tickets, and I had talked with friends and colleagues about how to price the workshops for some time, and I didn't want to run these workshops for the usual prices (anywhere from £400 upwards for a full day).
 
-At some point I was considering whether I could run the workshops for free, but that was eventually ruled out because a) it would have devalued the workshops entirely, b) some people would book a ticket, but wouldn't come, c) probably most importantly to me - I simply couldn't afford to do it.  I am my business.  There's no big corporation behind me, so during the time I'm doing public speaking or training, I'm not drumming up business at home. 
+At some point I was considering whether I could run the workshops for free, but that was eventually ruled out because a) it would have devalued the workshops entirely, b) some people would book a ticket, but wouldn't come, c) probably most importantly to me - I simply couldn't afford to do it.  I am my business.  There's no big corporation behind me, so during the time I'm doing public speaking or training, I'm not drumming up business at home.
 
-I also looked at sponsorship, but in the end, decided that I could run the workshops for about half price at Â£200 each, and hopefully this would open these up to the freelancers and much smaller companies.
+I also looked at sponsorship, but in the end, decided that I could run the workshops for about half price at £200 each, and hopefully this would open these up to the freelancers and much smaller companies.
 
 The real challenge has actually been getting the word out to freelancers and companies out in those cities you folks suggested I come train in.
 

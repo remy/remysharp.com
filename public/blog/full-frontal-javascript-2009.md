@@ -9,7 +9,7 @@ What started as a bit of complaining and wanted to scratch my own itch, ended up
 <!--more-->
 ## Leading up to the idea
 
-JavaScript is a passion for me. My hair stands on end when I talk about what can be done in this little language many have learned to love. I fell in love with JavaScript over 10 years ago when I realised I just needed a browser and notepad to code with. No compilers, no downloading tools, no SDKs. Just notepad and my imagination. 
+JavaScript is a passion for me. My hair stands on end when I talk about what can be done in this little language many have learned to love. I fell in love with JavaScript over 10 years ago when I realised I just needed a browser and notepad to code with. No compilers, no downloading tools, no SDKs. Just notepad and my imagination.
 
 True, back then, my imagination was limited compared to today, but it's something that has kept me excited over a good number of years.
 
@@ -19,7 +19,7 @@ JS Conf US turned out to be a massive success (well played [Chris Williams](http
 
 Once I had been convinced by Julie it was something we could do, I went about hand picking my speakers, and then announcing the conference. This also meant that there were no sponsored slots available, something I had been asked about after we launched, but I felt it was important to me to keep the content on topic and free of any sales pitches.
 
-I was also adamant that the cost of the ticket should be cheap enough that *I* would be happy to go along. Sometimes you don't know how much you'll get out of a conference, so when faced with a Â£500 ticket price it's tough to justify, especially if you're a freelancer. I felt that around the Â£100 mark made it a much easier decision to make, freelancers and full timers alike.
+I was also adamant that the cost of the ticket should be cheap enough that *I* would be happy to go along. Sometimes you don't know how much you'll get out of a conference, so when faced with a £500 ticket price it's tough to justify, especially if you're a freelancer. I felt that around the £100 mark made it a much easier decision to make, freelancers and full timers alike.
 
 ## Going from 90 to 250
 

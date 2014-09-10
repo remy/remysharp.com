@@ -25,7 +25,7 @@ The strongest message I took away from this film was: life can stop war, dead in
 
 Rating: 5 out of 5 stars.
 
-Directed by: [Alfonso CuarÃ³n][Alfonso]
+Directed by: [Alfonso Cuarón][Alfonso]
 
 A powerful and moving film, gritty photography with great performances all round.
 

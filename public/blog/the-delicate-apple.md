@@ -22,7 +22,7 @@ I arrived at work, and peeled open my bag.  Slipped out the laptop, and here's w
 
 <img id="image45" alt="Apple Close Splat" src="http://remysharp.com/wp-content/uploads/2006/12/image_00022.jpg" />
 
-The next step is insurance, but when Julie ordered our insurance, explicitly stating that we need cover for a Â£2000 laptop, The AA seemed miss it.
+The next step is insurance, but when Julie ordered our insurance, explicitly stating that we need cover for a £2000 laptop, The AA seemed miss it.
 
 She was disputing it with them yesterday (or a few days ago) and they were pulling up the phone logs.  Now we're chasing them hard to fix their mistake and get a new laptop.
 

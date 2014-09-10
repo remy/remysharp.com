@@ -40,7 +40,7 @@ Since I use iShowU, I've also set it to automatically hide (via the prefs) when 
 
 ### Recording
 
-I use [iShowU](http://www.shinywhitebox.com/home/home.html "iShowU").  There's been a lot of fuss over [ScreenFlow](http://www.varasoftware.com/products/screenflow/ "Vara Software : ScreenFlow - Professional Screencasting Studio") and it definitely looks like hot stuff, but iShowU comes in at around Â£20 odd - which makes it a good starting app.  I think the decision depends on the contents of your screencasts.
+I use [iShowU](http://www.shinywhitebox.com/home/home.html "iShowU").  There's been a lot of fuss over [ScreenFlow](http://www.varasoftware.com/products/screenflow/ "Vara Software : ScreenFlow - Professional Screencasting Studio") and it definitely looks like hot stuff, but iShowU comes in at around £20 odd - which makes it a good starting app.  I think the decision depends on the contents of your screencasts.
 
 Key logging - I occasionally use [KeyCastr](http://stephendeken.net/wiki/software/keycastr/ "stephendeken.net"), it's free and helps when you're using control keys.
 
@@ -68,7 +68,7 @@ Rehearse, rehearse, rehearse.  In fact, I often fluff my screencasts 3 or 4 time
 
 ### Hardware
 
-If you can get yourself a good mic, then I'd recommend the [Samson C01U](http://www.samsontech.com/products/productpage.cfm?prodID=1810).  The sound is much better than the internal mic, but you'll have to boost the sound a bit, since the internal mics are really sensitive.  The Samson costs about Â£60, on top of which I've got a pop filter, and because I don't have a proper boom to hold the mic, it's all a bit precarious when recording!
+If you can get yourself a good mic, then I'd recommend the [Samson C01U](http://www.samsontech.com/products/productpage.cfm?prodID=1810).  The sound is much better than the internal mic, but you'll have to boost the sound a bit, since the internal mics are really sensitive.  The Samson costs about £60, on top of which I've got a pop filter, and because I don't have a proper boom to hold the mic, it's all a bit precarious when recording!
 
 ## Hosting
 

@@ -9,7 +9,7 @@ So they were pulling out the original call recording taken when Julie placed the
 <!--more-->
 
 3pm on Thursday, after phoning the AA an untold number of time, they finally confirm:
-<blockquote>We've check our records and laptop <span style="font-weight: bold">is</span> covered for Â£2000 damage in and out of your home.</blockquote>
+<blockquote>We've check our records and laptop <span style="font-weight: bold">is</span> covered for £2000 damage in and out of your home.</blockquote>
 Phew!
 
 I get transferred through to claims, and through a few false starts (being cut off, etc) I finally placed the claim.
@@ -22,7 +22,7 @@ My laptop was almost 2 years old, and I was aiming to buy a new one next year...
 
 I spoke to IT Assured and they arranged a pick up for the following Tuesday (just gone) and they would asset it over the next 5 days.
 
-I had already gone to the trouble of finding a quote for replacing the screen, so I knew that it would cost me around Â£750 including VAT.  A new MacBook Pro would cost Â£1,400.  ::sigh::
+I had already gone to the trouble of finding a quote for replacing the screen, so I knew that it would cost me around £750 including VAT.  A new MacBook Pro would cost £1,400.  ::sigh::
 
 Then I receive a phone call on Wednesday (yesterday):
 <blockquote>Mr Sharp, we've assessed your laptop, and we have decided it is...</blockquote>

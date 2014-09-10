@@ -17,7 +17,7 @@ I managed to plot the [London to Brighton route](http://tinyurl.com/2brzzu) on G
 
 We set out at 8:30am (getting past the start line around 8:45am).  We hadn't slept too well that night because of ropy sleeping conditions and not being used to all the bloody police sirens going through Clapham.  We may have even been able to start at 6:30!
 
-We hit pretty serious congestion throughout our ride, it took us an hour to get to Mitcham, only 4 miles from our starting point.  
+We hit pretty serious congestion throughout our ride, it took us an hour to get to Mitcham, only 4 miles from our starting point.
 
 Further down the route, we came to [entire standstill](http://flickr.com/photos/remysharp/564197158/in/set-72157600389505524/) and all you could see was helmet after helmet after helmet.  It didn't turn out to be an accident (as we thought it might be) - it was just a tight bend where **everyone** was [forced off their bikes to walk](http://flickr.com/photos/remysharp/564605183/in/set-72157600389505524/).
 
@@ -29,7 +29,7 @@ Julie made it to the top of the beacon, I broke off half over half way.  The vas
 
 We finally pulled in to Brighton around 4:15pm.  A total of 7 1/2 hours to ride 54 miles.  At the start they said it was an average 7 hour bike ride, but the delays that we encountered throughout the day must have had a big impact on that time.  Julie had made the journey in 5 hours 4 years ago and said that she hadn't gone at much of a different pace to ours that day.
 
-All in all, Julie and I raised almost Â£600 for British Heart Foundation, I hit a top speed of 35-40mph (peak) and we had a pretty amazing day.
+All in all, Julie and I raised almost £600 for British Heart Foundation, I hit a top speed of 35-40mph (peak) and we had a pretty amazing day.
 
 ## Pictures
 

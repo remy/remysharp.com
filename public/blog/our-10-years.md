@@ -16,7 +16,7 @@ The invite, for example was prepared with snippets of time over about a month.  
 
 Heist was found by looking at some of the Brighton venues.  We knew we weren't expecting hundreds of people - probably at best 75, so we didn't want to end up having to guarantee turn out, or the turnover at the bar.
 
-Heist offered the downstairs room for Â£175, which had a private bar (though bottles and shorts only) sofas, room to dance, private loos and private sound system - in particular - that we could plug an iPod in to.
+Heist offered the downstairs room for £175, which had a private bar (though bottles and shorts only) sofas, room to dance, private loos and private sound system - in particular - that we could plug an iPod in to.
 
 Admittedly we booked it in September - because we expected to be fighting of the the various Christmas dos.
 

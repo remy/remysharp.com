@@ -1,6 +1,6 @@
 # When's a static IP not a static IP? When it's with Plusnet
 
-When [we](/about) moved back from Canada I went through the usual job of checking out all the best <abbr title="Internet Service Providers">ISP</abbr>s.  
+When [we](/about) moved back from Canada I went through the usual job of checking out all the best <abbr title="Internet Service Providers">ISP</abbr>s.
 
 There was also a couple of prerequisites:
 
@@ -8,7 +8,7 @@ There was also a couple of prerequisites:
 2. Static IP.
 3. Good reputation with customer services.
 
-Finally through reading around the Net and general recommendations from colleagues, I settled on [Plusnet](http://plus.net)'s Â£22.99 per month for a 2mb static IP.
+Finally through reading around the Net and general recommendations from colleagues, I settled on [Plusnet](http://plus.net)'s £22.99 per month for a 2mb static IP.
 
 Turns out lately, I was wrong on all three fronts.
 
@@ -25,7 +25,7 @@ I leave all the details of the problem, "yes, it's plugged in, yes, it's turned 
 
 <small>&dagger; i.e. treat everyone like an idiot and chances are you'll fix most problems.</small>
 
-Once they've got all my info, they tell me it'll be **8 hours** before I can expect *any* response!  
+Once they've got all my info, they tell me it'll be **8 hours** before I can expect *any* response!
 
 Okay, well, I'm not a business user, so maybe that's why.
 
@@ -39,7 +39,7 @@ Hang on.  My Internet is down, how am I going to log it?  More importantly, the 
 
 ## Second Problems
 
-So, over the next few days the connection continues to drop in and out throughout the day.  
+So, over the next few days the connection continues to drop in and out throughout the day.
 
 I keep logging the problems on their support pages (once the Internet is back up...obviously).
 
@@ -61,7 +61,7 @@ Then on the 7th of September:
 
 Damn!  So I got straight back to them explaining that it was still going down, asking how, suddenly the problem has fixed itself (oh - if programming was just as easy!).
 
-I start logging the connection via a quick ping script.  Yep, the Internet is still going down.  
+I start logging the connection via a quick ping script.  Yep, the Internet is still going down.
 
 Plusnet are now saying that there was a problem, but the recent issues could be due to my modem timing out.  Wow, what a coincident.  My modem suddenly screwing up, just days after their Internet problems have magically resolved themselves.
 
@@ -73,12 +73,12 @@ The net is up, but there's something wrong.  I get on to the sysadmins, tell the
 
 Something's amiss.  I'm told to check my IP.
 
-Well, let me put it like this: my static IP, nope, that's gone, lost, misplaced, hidden, who knows?  I'm now on a dynamic IP range.  
+Well, let me put it like this: my static IP, nope, that's gone, lost, misplaced, hidden, who knows?  I'm now on a dynamic IP range.
 
 By this point I was raging.  I sent a message via their support forms, desperately trying not to swear, leaving points like: outraged, compensation and apology.
 
 This explains why my <acronym title="Secure Shell">SSH</acronym> is blocked, and why my email isn't sending.
 
-While Plusnet are offering 8mb at Â£9.99, and I'm paying double for a 2mb and static...well, really non-static connection.
+While Plusnet are offering 8mb at £9.99, and I'm paying double for a 2mb and static...well, really non-static connection.
 
 I really am getting screwed.  Time to switch me thinks.
