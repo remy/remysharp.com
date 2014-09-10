@@ -9,6 +9,7 @@ var outputPath = __dirname + '/www';
 var port = process.env.PORT || 9000;
 var router = require('router');
 var blogs = require('./public/blog/_data.json');
+var slugs = Object.keys(blogs);
 var route = router();
 var fourohfour = '';
 var mount;
@@ -21,28 +22,38 @@ var htmlFiles = [];
 // compiled, this is the cleanest solution.
 global.moment = moment;
 
+// required by harp because it thinks I'm using express...
 route.all('*', function (req, res, next) {
-  // required by harp because it thinks I'm using express...
   req.originalUrl = req.url;
   next();
 });
 
+/* legacy for feedburner */
 route.all('/feed/', function (req, res, next) {
   // required by harp because it thinks I'm using express...
   req.url = '/feed.xml';
   next();
 });
 
+/* redirect to s3 hosted urls */
 route.all(/\/downloads\/(.*)$/, function (req, res, next) {
   res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params[1] });
   res.end();
 });
 
+/* redirect to s3 hosted urls */
 route.all('/wp-content/uploads/{year}/{month}/{filename}', function (req, res, next) {
   res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params.filename });
   res.end();
 });
 
+/* redirect to s3 hosted urls */
+route.all('/demo/{filename}', function (req, res, next) {
+  res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params.filename });
+  res.end();
+});
+
+/* redirect /blog/{slug} to the date formatted url */
 route.all('/{blog}?/{post}', function (req, res, next) {
   var post = blogs[req.params.post];
   if (post) {
@@ -54,6 +65,7 @@ route.all('/{blog}?/{post}', function (req, res, next) {
   next();
 });
 
+/* main url handler: /{year}/{month}/{day}/{slug} */
 route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/, function (req, res, next) {
   var params = req.params;
   var post = blogs[params[4]];
@@ -81,12 +93,32 @@ route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/, fu
   next();
 });
 
+/* handle /{year} in url */
 route.all(/^\/([0-9]{4})(\/?)$/, function (req, res, next) {
   req.url = '/archive/' + req.params[1] + '/';
   next();
 });
 
+/* match slug partial and redirect to post */
+route.all(/^\/([\w\d\-]+)(\/?)$/, function (req, res, next) {
+  var match = slugs.filter(function (slug) {
+    return slug.indexOf(req.params[1]) !== -1;
+  });
+
+  if (match.length) {
+    var post = blogs[match[0]];
+    var url = moment(post.date).format('/YYYY/MM/DD/') + match[0];
+    res.writeHead(302, { 'location': url });
+    res.end();
+    return;
+  }
+
+  next();
+});
+
 var server = function (root) {
+  // manually glob all the .html files so that we can navigate
+  // without .html on the end of the urls
   glob('**/*.html', {
     cwd: root,
     dot: false
@@ -96,6 +128,7 @@ var server = function (root) {
     });
   });
 
+  // use st module for static cached routing
   mount = st({
     path: root,
     url: '/',
@@ -107,10 +140,12 @@ var server = function (root) {
 };
 
 function run() {
-
   if (process.env.NODE_ENV === 'production') {
     // lastly...
     route.get('*', function (req, res, next) {
+
+      // simplify the url (remove the ?search) and test if
+      // we have a file that exists (in `htmlFiles`)
       req.url = req.url.replace(/\?.*$/, '').replace(/(.)\/$/, '$1');
       if (htmlFiles.indexOf(req.url + '.html') !== -1) {
         // then we requested /foo/bar and we know there's a
@@ -118,6 +153,8 @@ function run() {
         req.url += '.html';
       }
 
+      // if our server is ready, respond using the st module
+      // and if it's a 404, respond with `serve404`.
       if (mount) {
         mount(req, res, function serve404() {
           res.writeHead(404);
@@ -135,6 +172,8 @@ function run() {
     fourohfour = require('fs').readFileSync(outputPath + '/404.html');
     server(outputPath, port);
   } else {
+    // this is used for offline development, where harp is
+    // rebuilding all files on the fly.
     route.all('*', harp.mount(__dirname));
     route.all('*', function (req, res) {
       req.url = '/404';
