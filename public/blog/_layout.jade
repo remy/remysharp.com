@@ -1,13 +1,15 @@
+
 extends ../_partials/layout
 
 block content
+  permalink = '/' + moment(date).format('YYYY/MM/DD') + '/' + current.source;
   nav.main-nav.clearfix.subpanel
     != partial('../_partials/post-nav')
 
   main.content(role="main")
     article.post
       h1.title
-        a(href="/blog/#{current.source}" rel="bookmark" title="Permanent Link: #{title}")= title
+        a(href="#{permalink}" rel="bookmark" title="Permanent Link: #{title}")= title
         small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/blog/#{current.source}.md") (edit)
 
       .post-content
@@ -22,6 +24,6 @@ block content
         #disqus_thread
         script.
           var disqus_shortname = 'remysharp';
-          var disqus_url = 'http://remysharp.com/#{moment(date, 'YYYY-MM-DD HH:mm:ss').format('YYYY/MM/DD')}/#{current.source}/';
+          var disqus_url = 'http://remysharp.com#{permalink}/';
         noscript Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
         a.dsq-brlink(href="http://disqus.com") comments powered by <span class="logo-disqus">Disqus</span></a>
