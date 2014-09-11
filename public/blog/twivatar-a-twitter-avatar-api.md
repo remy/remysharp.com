@@ -20,7 +20,7 @@ Twivatar is a [RESTful](http://en.wikipedia.org/wiki/Representational_State_Tran
 ## Usage
 
 Usage
-<pre><code>&lt;img src=&quot;http://twivatar.org/[screen_name]&quot; /&gt;</code></pre>
+<pre><code>&lt;img src=&quot;http://twivatar.org/[screen_name]&quot;&gt;</code></pre>
 
 Alternatively you can specify the size image you want from:
 
@@ -29,7 +29,7 @@ Alternatively you can specify the size image you want from:
 * bigger (73x73)
 * original
 
-<pre><code>&lt;img src=&quot;http://twivatar.org/[screen_name]/[size]&quot; /&gt;</code></pre>
+<pre><code>&lt;img src=&quot;http://twivatar.org/[screen_name]/[size]&quot;&gt;</code></pre>
 
 I've also got the app [whitelisted](http://apiwiki.twitter.com/Rate-limiting) so there's no worries about it being blocked from Twitter.
 
