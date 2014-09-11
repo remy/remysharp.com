@@ -9,6 +9,7 @@ var outputPath = __dirname + '/www';
 var port = process.env.PORT || 9000;
 var router = require('router');
 var blogs = require('./public/blog/_data.json');
+var pages = Object.keys(require('./public/_data.json'));
 var slugs = Object.keys(blogs);
 var route = router();
 var Promise = require('promise');
@@ -104,13 +105,19 @@ route.all(/^\/([0-9]{4})(\/?)$/, function (req, res, next) {
 
 /* match slug partial and redirect to post */
 route.all(/^\/([\w\d\-]+)(\/?)$/, function (req, res, next) {
+  // first check it's not a static file in /public
+  if (pages.indexOf(req.params[1]) !== -1) {
+    return next();
+  }
+
   var match = slugs.filter(function (slug) {
     return slug.indexOf(req.params[1]) !== -1;
   });
 
   if (match.length) {
-    var post = blogs[match[0]];
-    var url = moment(post.date).format('/YYYY/MM/DD/') + match[0];
+    var matched = match.slice(-1).pop(); // use the latest
+    var post = blogs[matched];
+    var url = moment(post.date).format('/YYYY/MM/DD/') + matched;
     res.writeHead(302, { 'location': url });
     res.end();
     return;

@@ -1,6 +1,8 @@
 (function () {
-
   'use strict';
+
+
+
   var className = 'anchor';
   var idcache = {};
   var count = 0;
@@ -46,7 +48,10 @@
   }
 
   function permalink(){
-    var $ = document.querySelectorAll.bind(document);
+    var root = document.getElementsByClassName('post-content')[0];
+    var $ = function (s) {
+      return root.querySelectorAll(s);
+    };
 
     var anchor = document.createElement('a');
     anchor.className = className;
