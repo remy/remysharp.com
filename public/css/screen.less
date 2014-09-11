@@ -238,6 +238,38 @@ em {
   font-style: italic;
 }
 
+del {
+  text-decoration: strike;
+  color: rgb(164, 164, 164);
+
+  a {
+    color: rgb(164, 164, 164);
+  }
+
+  &:before {
+    font-weight: bold;
+    content: '- ';
+    color: red;
+    position: absolute;
+    left: 25px;
+    font-size: 80%;
+  }
+}
+
+
+ins {
+  text-decoration: none;
+
+  &:before {
+    font-weight: bold;
+    color: green;
+    font-size: 80%;
+    content: '+ ';
+    position: absolute;
+    left: 23px;
+  }
+}
+
 code {
   font-family: menlo, monaco, courier, 'courier new', 'lucida console', monospace;
   background: rgb(232, 230, 230);
@@ -423,15 +455,23 @@ textarea {
 
 .update{
   border: 1px solid #212121;
-  padding: 5px 14px;
+  padding: 14px 14px;
   background-color: #FFFDA3;
   background-color: hsla(59, 100%, 82%, 0.3);
   border-color: hsla(59, 100%, 40%, 1);
   margin: 24px 0;
-}
 
-.update small {
-  display: block;
+  small {
+    display: block;
+  }
+
+  p:first-child {
+    margin-top: 0px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .post-meta {
