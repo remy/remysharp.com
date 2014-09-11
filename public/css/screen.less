@@ -224,7 +224,7 @@ strong {
 }
 
 blockquote {
-  background: #e6e6e6 url(../images/quote.gif) no-repeat -7px bottom;
+  background: #F6F6F6 url(../images/quote.gif) no-repeat -7px bottom;
   padding: 10px;
   margin: 10px 0;
   font-size: 95%;
@@ -394,28 +394,57 @@ textarea {
   outline: none;
 }
 
-.post {
-  h1.title,
-  h2.title {
-    position: relative;
-    background: #eee;
-    padding: 20px 60px;
-    color: #000;
-    margin: 20px 0 20px 0;
+h1.title,
+h2.title {
+  position: relative;
+  background: #eee;
+  padding: 20px 60px;
+  color: #000;
+  margin: 20px 0 20px 0;
+
+  a {
+    color: black;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      background: none;
+      text-decoration: underline;
+      outline: none;
+    }
+  }
+}
+
+#index-page {
+  @index-heading-bg: lighten(#000, 80%);
+
+  h1, h2 {
+    color: white;
 
     a {
-      color: black;
-      text-decoration: none;
-
-      &:focus,
-      &:hover {
-        background: none;
-        text-decoration: underline;
-        outline: none;
-      }
+      color: white;
     }
   }
 
+  h1 {
+    background: multiply(@index-heading-bg, #555);
+  }
+
+  article:nth-child(3n+0) h2.title {
+    background: multiply(@index-heading-bg, #888);
+  }
+
+  article:nth-child(3n+1) h2.title {
+    background: multiply(@index-heading-bg, #aaa);
+  }
+
+  article:nth-child(3n+2) h2.title {
+    background: multiply(@index-heading-bg, #ccc);
+  }
+
+}
+
+.post {
   h1.title {
     margin-top: 0;
   }
@@ -483,7 +512,7 @@ time {
 }
 
 #index-page h1.title {
-  background: rgb(238, 238, 238);
+  // background: rgb(238, 238, 238);
   margin: 0;
   margin-bottom: 20px;
   line-height: 48px;
@@ -497,8 +526,8 @@ time {
   vertical-align: bottom;
 }
 
-.elsewhere {
-  ul.elsewhere {
+.lists {
+  ul {
     clear: left;
     padding: 0;
     padding-left: 20px;

@@ -12,17 +12,27 @@ h1.title
 article.post
   header.post-header
     h2.title
-      a(href="#{latest.relative}")= latest.title
+      a(href="#{latest.relative}") Latest: #{ latest.title }
   section.post-excerpt.post-content
     != partial('blog/' + latest.slug).split('<!--more-->')[0].replace(/<h1>.*?<\/h1>/, '').trim()
     p
       a(href="/blog/#{latest.slug}") Read the rest of this entry &raquo;
 
-article.post.elsewhere
+article.post.lists
+  header.post-header
+    h2.title Recently Updated
+  .post-content
+    ul
+      each post in recent
+        li
+          a(href="#{ public.blog._data[post.slug].relative }") #{ public.blog._data[post.slug].title }
+          small &nbsp;updated #{ moment(post.date).fromNow() }
+
+article.post.lists
   header.post-header
     h2.title Remy Elsewhere
   .post-content
-    ul.elsewhere
+    ul
       li
         a(href="http://twitter.com/rem" rel="me" title="tweet, tweet") @rem &gt; follow me on Twitter
         | &nbsp;- tweet, tweet

@@ -11,9 +11,11 @@ var router = require('router');
 var blogs = require('./public/blog/_data.json');
 var slugs = Object.keys(blogs);
 var route = router();
+var Promise = require('promise');
 var fourohfour = '';
 var mount;
 var moment = require('moment');
+var pkg = require('./package');
 var htmlFiles = [];
 
 // this line, although dirty, ensures that Harp templates
@@ -21,6 +23,7 @@ var htmlFiles = [];
 // import hack doesn't work consistently across dynamic vs
 // compiled, this is the cleanest solution.
 global.moment = moment;
+global.version = pkg.version;
 
 // required by harp because it thinks I'm using express...
 route.all('*', function (req, res, next) {
@@ -186,15 +189,33 @@ function run() {
   }
 }
 
-if (process.argv[2] === 'compile') {
-  harp.compile(__dirname, outputPath, function(errors){
-    if(errors) {
-      console.log(JSON.stringify(errors, null, 2));
-      process.exit(1);
-    }
-
-    process.exit(0);
+function stat(filename) {
+  return new Promise(function (resolve, reject) {
+    fs.stat(__dirname + '/public/blog/' + filename + '.md', function (error, stat) {
+      if (error) {
+        resolve({ slug: filename, date: new Date(0) });
+      } else {
+        resolve({ slug: filename, date: stat.mtime });
+      }
+    });
   });
-} else {
-  run();
 }
+
+Promise.all(slugs.map(stat)).then(function (dates) {
+  global.recent = dates.sort(function (a, b) {
+    return a.date.getTime() - b.date.getTime();
+  }).reverse().slice(0, 3);
+
+  if (process.argv[2] === 'compile') {
+    harp.compile(__dirname, outputPath, function(errors){
+      if(errors) {
+        console.log(JSON.stringify(errors, null, 2));
+        process.exit(1);
+      }
+
+      process.exit(0);
+    });
+  } else {
+    run();
+  }
+});
