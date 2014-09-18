@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Fri, 15 Aug 2014 14:38:14 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>In the middle with &lt;center&gt;</title><guid isPermaLink="false">in-the-middle-with-center</guid><link>http://remysharp.com/2014/08/15/in-the-middle-with-center</link><pubDate>Fri, 15 Aug 2014 14:38:14 +0000</pubDate><description><![CDATA[I posted a tweet recently that confused some people. They might have thought I was trolling or being sarcastic!
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Thu, 18 Sep 2014 12:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>WordPress -&gt; Ghost -&gt; Harp (part 1)</title><guid isPermaLink="false">wordpress-ghost-harp-pt1</guid><link>http://remysharp.com/2014/09/18/wordpress-ghost-harp-pt1</link><pubDate>Thu, 18 Sep 2014 12:00:00 +0000</pubDate><description><![CDATA[I&#39;ve been running my &quot;b:log&quot; on WordPress since late 2006, but today I give you the node backed blog.
+This is a two part blog post, the first covering why I moved, what I tried and a few of the high level issues I ran in to. Part two will cover some of the technical detail that goes in to running my blog on the new node platform.
+These posts are not intended as walkthrough on how to do it yourself, but simply sharing my experience and bumps I ran into on the way, hoping to impart some useful knowledge along the way.]]></description><content:encoded><![CDATA[
+<p>I&#39;ve been running my &quot;b:log&quot; on WordPress since late <a href="/2006">2006</a>, but today I give you the node backed blog.</p>
+<p>This is a two part blog post, the first covering why I moved, what I tried and a few of the high level issues I ran in to. Part two will cover some of the technical detail that goes in to running my blog on the new node platform.</p>
+<p>These posts are not intended as walkthrough on how to do it yourself, but simply sharing my experience and bumps I ran into on the way, hoping to impart some useful knowledge along the way.</p>
+<hr>
+<p>Over the years I&#39;ve had all the injections of Viagra adverts and the like over and over and over. Whenever I want to change anything, I&#39;d tend to give up, and for a few years now, I&#39;ve really wanted the source of my blog posts available in (something like) github.</p>
+<p>This post is about the move and how I run my blog now.</p>
+<h2>My goals</h2>
+<p>In a totally ideal world, I wanted:</p>
+<ul>
+<li>A fast blogging platform (not particularly for publishing, but for serving)</li>
+<li>Backed by JavaScript (Node specifically) - because it&#39;s the most familiar language to me</li>
+<li>Edit links for posts to go to github allowing anyone to make a suggested edit</li>
+<li>Archives and tag listings</li>
+<li>URLs would be customisable (because I have old URLs that I want to support)</li>
+<li>Could run on a free hosting platform like Heroku</li>
+<li>As a bonus, I could hack and improve the system</li>
+</ul>
+<p>TL;DR here&#39;s the full source of my blog as it is today, on github: <a href="github.com/remy/remysharp.com"><a href="https://github.com/remy/remysharp.com/">https://github.com/remy/remysharp.com/</a></a>.</p>
+<h2>Ghost</h2>
+<p>I knew that I wanted to move to a node backed platform. Ghost seemed like the best fit, and I&#39;ve had the pleasure of meeting and listening to John O&#39;Nolan and Hannah Wolfe speak about Ghost, and I complete buy into the philosophy.</p>
+<p>Exporting WordPress posts (and pages) to Ghost was actually very simple (I used the developer version of Ghost locally).</p>
+<p>The only bump in the road was the error messaging during the Ghost import was pretty vague. But checking the devtools console yielded the answer, a 324 from my server during the upload process. So I tweaked nginx to allow for larger files to be uploaded and bosh. Fixed.</p>
+<p>The next trick was the comments - which Disqus seemed like the default that everyone moves to. Obviously nothing to do with Ghost, but this process was tricky. The best advice I can give if you&#39;re doing this and keep hitting failed imports is: validate the XML (w3c validator is just fine), and hand-fix the invalid XML.</p>
+<h3>Why I didn&#39;t stick with Ghost</h3>
+<p>For the record, I think Ghost is an excellent platform for most users, particularly if they&#39;re coming to blogging for the first time or wanting to shift away from WordPress.</p>
+<p>However, being a developer I wanted to add a few custom tweaks, specifically I wanted an archive page, a handful of URL rewrite rules and a few of the Ghost ways of doing things weren&#39;t quite what I wanted.</p>
+<p>One particular example is all my old WordPress posts had split markers in them which Ghost doesn&#39;t support. They do have support for creating excepts, but if you want HTML you can&#39;t (at time of writing) append a read more to the link.</p>
+<p>I tried to contribute to the Ghost project, but I ended up going down a rabbit hole for what was effectively a tiny change (submitting a pull request to a Ghost dependency Downsize).</p>
+<p>The (understandable) problem is that Hannah and the Ghost team are producing code that works in a great deal of environments and so a quick PR here and there are great, but I can understand why they&#39;re not merged in right away if at all: there&#39;s a much bigger picture to consider.</p>
+<p>I thought about just forking Ghost and permanently running my own version, but there&#39;s a fairly big system to inherit when all I&#39;m doing is serving pages...which I had done with Harp.js before.</p>
+<p>So I made the jump to Harp.</p>
+<h3>Ghost to Harp</h3>
+<p>Harp is a static site generator. I&#39;ve used it in the past for <a href="http://2014.full-frontal.org">our conference site</a> this year and for the <a href="http://jsbin.com/help">JS Bin help &amp; blog</a> so I was already familiar with it.</p>
+<p>However, harp requires static markdown files, so I went about connecting to the Ghost database via sqlite3 and exporting each of these records out as a static HTML file, whilst building up the <code>_data.json</code> file required by harp to represent the metadata.</p>
+<p>The code I used to convert is on github here: <a href="https://github.com/remy/ghost-harp">remy/ghost-harp</a>. <em>Disclaimer</em>: I wrote this for my own database and requirements, so this may not work for you out of the box.</p>
+<p>The conversion process is pretty simple, read the sqlite database, write to files. So I ended up with a folder structure like this:</p>
+<pre><code class="language-nohighlight">.
+├── harp.json
+└── public
+    ├── _data.json
+    ├── about.md
+    ├── blog
+    │   ├── 2007-moments.md
+    │   ├── 8-questions-after-ie-pissed-the-community-off.md
+    │   ├── _data.json
+    │   ├── _drafts
+    │   │   ├── _data.json
+    │   │   ├── my-velveteen-rabbit.md
+    │   │   └── why-i-prefer-mobile-web-apps-to-native-apps.md
+    │   ├── a-better-twitter-search.md
+    │   ├── wordpress-tagging-and-textmate.md
+    │   └── youre-paying-to-speak.md
+    ├── talks.md
+    └── twitter.md</code></pre>
+<p>Some contents are going to be in HTML, but Ghost seemed to put my HTML posts in the markdown column (and since it&#39;s valid, it doesn&#39;t really matter).</p>
+<p>One significant tweak I made was to put the post title <em>into</em> the post itself. For example, if you look at the source <a href="https://github.com/remy/remysharp.com/blob/master/public/about.md">about</a> page, you&#39;ll see the title in the markdown. Ghost separates out the title and the body when you&#39;re editing, but I wanted a single markdown file.</p>
+<p>The next task was to fire up harp and have it running from my newly generated <code>public</code> directory.</p>
+<h2>Harp</h2>
+<p>Now that all my content is in the <code>public/blog</code> directory (via my little rewrite script) harp could serve my content. Using a simple (empty) <code>harp.json</code> as the config, harp automatically knows to serve anything under <code>public</code> as the root of the site (i.e. <code>/blog/foo</code> will serve the file <code>/public/blog/foo.md</code>):</p>
+<p>My specific requirements for using harp were:</p>
+<ul>
+<li>Serves <em>static</em> content (so I&#39;d have to compile to static .html)</li>
+<li>Serves in production <em>without</em> the <code>.html</code> extension visible</li>
+<li>Support rewriting of URLs, so that I could maintain my original URL structure of <code>/&lt;year&gt;/&lt;month&gt;/&lt;day&gt;/&lt;post&gt;</code> rather than pointing to <code>/blog/&lt;post&gt;</code></li>
+<li>I <em>really</em> wanted an archive, since I was simplifying a lot of my blog design, and losing a <em>lot</em> of navigation</li>
+</ul>
+<p>In the end, I had to create my own custom <code>server.js</code> that would run a bespoke router (I did use an existing library, but I needed changes, so I forked my own copy).</p>
+<p>Harp certainly made things harder than using Ghost, but I had the flexability I needed.</p>
+<p>I&#39;m particularly proud of the <a href="/archive">archive</a> page, partly because I managed to write it entirely with Jade (which over the years I&#39;m slowly starting to warm to) and partly because I now have a page that lists <em>all</em> my posts since the first in 2006!</p>
+<p>The version I&#39;m running today satisfies all the goals I outlined at the start of the project, and more.</p>
+<p>A few bonus features I built are:</p>
+<ul>
+<li>I can add <code>/edit</code> to any page to quickly jump to github to edit (along with edit links being on all the posts)</li>
+<li>All the old demos and uploads from my WordPress site are hosted on Amazon S3 and redirected to via my <code>server.js</code></li>
+<li>My development environment is slightly different to production, such as drafts are visible and the disqus comments are removed</li>
+</ul>
+<p>The <em>one</em> thing I&#39;d like harp to be better at would be knowing what to regenerate. Due to this my release process involves rebuilding the entire blog site (~300 posts) and then pushing the changes to github and then heroku (where I&#39;m now hosting my blog) - though this is effectively an rsync, so it&#39;s not everything that goes up.</p>
+<h2>The final product</h2>
+<p>The final product and platform consists of:</p>
+<ul>
+<li>Statically generated content in <code>/www</code></li>
+<li>Source control in github</li>
+<li>Production is hosted on a single dyno on Heroku</li>
+<li>Using <a href="https://dnsimple.com/r/5bc02f2ef8976f">dnsimple</a> for <code>ALIAS</code> hosting to the heroku instance (so I can serve &quot;naked&quot; domains)</li>
+<li>CloudFlare fronts the production blog</li>
+<li>The major and minor version are used to cachebust the CSS &amp; JavaScript, due to this, it means changes to content are a patch release and all others are minor (or major) releases</li>
+<li>The release process is a bash-like makefile that does all the compiling and revisioning for me</li>
+</ul>
+<p>So my whole release process for this blog post is now:</p>
+<pre><code class="language-bash">$ make release-patch publish</code></pre>
+<p>And boom, just like that, you&#39;re reading the post!</p>
+<p>In part 2, I&#39;ll explain some of the code that&#39;s used to drive my blog and some of the tricks I had to use to get harp to play exactly the way I wanted.</p>
+]]></content:encoded></item><item><title>In the middle with &lt;center&gt;</title><guid isPermaLink="false">in-the-middle-with-center</guid><link>http://remysharp.com/2014/08/15/in-the-middle-with-center</link><pubDate>Fri, 15 Aug 2014 14:38:14 +0000</pubDate><description><![CDATA[I posted a tweet recently that confused some people. They might have thought I was trolling or being sarcastic!
 
 The &lt;center&gt; tag is awesome. Why have I been avoiding it all these years?
 
@@ -960,148 +1055,4 @@ contained, quite simply:</p>
 popular anyway) and I&#39;ll fix properly by creating a daemon process to handle the
 processors (and add SASS support along the way).</p>
 <p>Though an interesting lesson is how to discover the super tricky bugs in node.</p>
-]]></content:encoded></item><item><title>JS Bin's 5th birthday &amp; news</title><guid isPermaLink="false">jsbin-5th-birthday</guid><link>http://remysharp.com/2013/08/14/jsbin-5th-birthday</link><pubDate>Wed, 14 Aug 2013 14:00:07 +0000</pubDate><description><![CDATA[28th September marks jsbin 5th birthday. jsbin was launched back in 2008 and has been a dear project close to my heart. So in celebration, I&#39;m going to run a fun competition and announce some important news here today.]]></description><content:encoded><![CDATA[
-<p>28th September marks <a href="http://jsbin.com">jsbin</a> <strong>5th</strong> birthday. jsbin was <a href="http://remysharp.com/2008/10/06/js-bin-for-collaborative-javascript-debugging/">launched back</a> in 2008 and has been a dear project close to my heart. So in celebration, I&#39;m going to run a fun competition and announce some important news here today.</p>
-<h2>Competition</h2>
-<p>Late last night Max Ogden posted a <a href="https://twitter.com/maxogden/status/367408597254148096">tweet</a> linking to some <a href="http://imgur.com/a/FywLp#11">visual representations</a> of mathematical problems.</p>
-<p>Instantly I thought I&#39;d love to see code for these (but they&#39;re all animated gifs) - so I put it to you: <strong>create (js)bins that replicate these visualisations (probably using canvas), and prizes shall be received!</strong></p>
-<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/FywLp/embed#11"></iframe>
-
-<h3>Prizes</h3>
-<p>For the first of each of the full images that are solved, I&#39;ll post you a jsbin sticker (perfect for your laptop).</p>
-<p>Solve 5 or more (previously unsolved visualisations), and I&#39;ll send you a jsbin T-shirt.</p>
-<p>Behind closed doors, Dave, the jsbin robot has been getting a bit of design love, and I&#39;ll be showing off his new super-duper vector form very soon - obviously perfect for stickers and T-shirt.</p>
-<p>Then two random entries will be selected for a lifetime pro jsbin account...whaaaaat? &quot;What are these pro accounts @rem speaks of?&quot;. Read on my friend :-)</p>
-<h3>Winners</h3>
-<p>All those entries will get a sticker in the post. Those who entered 5 or more, I&#39;ll be in touch to get you a t-shirt. The winner(s) of the pro accounts are: Rafael Couto and Rob Aldred (I decided on the spur of the moment to give away two accounts).</p>
-<p>Pro accounts I had hoped would be live by the end of September, but there&#39;s more work to be done, but you will be the very, very first pro users of JS Bin - congratulations!</p>
-<p>And in case you wondered how I picked the winners, here&#39;s a video of me doing it: <a href="http://quick.as/y5uozj"><a href="http://quick.as/y5uozj">http://quick.as/y5uozj</a></a></p>
-<h3>Terms</h3>
-<ul>
-<li>The deadline is 27-September 23:59 UK time (BST)</li>
-<li>Post the solution on jsbin.com</li>
-<li>It&#39;s better (for you) if you&#39;re a registered user (it&#39;s totally free and even easier now we added github auth a while ago)</li>
-<li>Either send a tweet hashtaged #jsbin on twitter, or post it here in the comments</li>
-<li>It&#39;s first come, first serve, so if there&#39;s an easy animated gif, then go for it, but it needs to match the animated gif</li>
-</ul>
-<h3>Solved so far...</h3>
-<div class="gallery">
-
-<p>By <a href="https://twitter.com/thebabydino">Ana Tudor</a> - using nothing but CSS &amp; HTML!</p>
-
-<ul>
-<li><img src="http://i.imgur.com/LKA2W0vs.jpg" alt="http://i.imgur.com/LKA2W0vs.jpg" /> <a href="http://jsbin.com/uzawum/5/edit">solution</a></li>
-<li><img src="http://i.imgur.com/awEIRSEs.jpg" alt="http://i.imgur.com/awEIRSEs.jpg" /> <a href="http://jsbin.com/ezevep/2/edit">solution</a></li>
-<li><img src="http://i.imgur.com/0eC7n05s.jpg" alt="http://i.imgur.com/0eC7n05s.jpg" /> <a href="http://jsbin.com/ikegun/4/edit">solution</a></li>
-<li><img src="http://i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/azewek/10/edit">solution</a></li>
-<li><img src="http://i.imgur.com/sS69ox2s.jpg" alt="http://i.imgur.com/sS69ox2s.jpg" /> <a href="http://jsbin.com/oxipib/6/edit">solution</a></li>
-<li><img src="http://i.imgur.com/RDK9R7Cs.jpg" alt="http://i.imgur.com/RDK9R7Cs.jpg" /> <a href="http://jsbin.com/ufesog/3/edit">solution</a></li>
-<li><img src="http://i.imgur.com/vWJylrBs.jpg" alt="http://i.imgur.com/vWJylrBs.jpg" /> <a href="http://jsbin.com/odoqit/4/edit">solution</a></li>
-</ul>
-
-
-<p>By <a href="http://twitter.com/seb_ly">Seb Lee-Delise</a>:</p>
-
-<ul>
-<li><img src="http://i.imgur.com/0eC7n05s.jpg" alt="http://i.imgur.com/0eC7n05s.jpg" /> <a href="http://jsbin.com/ekajoc/5/edit">solution</a></li>
-<li><img src="http://i.imgur.com/ItzXHYds.jpg" alt="http://i.imgur.com/ItzXHYds.jpg" /> <a href="http://jsbin.com/avazat/2/edit">solution</a></li>
-<li><img src="http://i.imgur.com/z9Du5yos.jpg" alt="http://i.imgur.com/z9Du5yos.jpg" /> <a href="http://jsbin.com/ovihor/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/zbH9pofs.jpg" alt="http://i.imgur.com/zbH9pofs.jpg" /> <a href="http://jsbin.com/uvecub/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/rgfCtols.jpg" alt="http://i.imgur.com/rgfCtols.jpg" /> <a href="http://jsbin.com/ujopes/3/edit">solution</a></li>
-</ul>
-
-
-<p>By <a href="http://twitter.com/alawatthe">@alawatthe</a>:</p>
-
-<ul>
-<li><img src="http://i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/akavad/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/iPJoKj6s.jpg" alt="http://i.imgur.com/iPJoKj6s.jpg" /> <a href="http://jsbin.com/owiqoq/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/UdH39ZXs.jpg" alt="http://i.imgur.com/UdH39ZXs.jpg" /> <a href="http://jsbin.com/amorab/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/Ooag3C6s.jpg" alt="http://i.imgur.com/Ooag3C6s.jpg" /> <a href="http://jsbin.com/iruyus/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/93ryWxfs.jpg" alt="http://i.imgur.com/93ryWxfs.jpg" /> <a href="http://jsbin.com/afofov/2/edit">solution</a></li>
-</ul>
-
-
-<p>By <a href="https://twitter.com/loktar00">Jason Brown</a>:</p>
-
-<ul>
-<li><img src="http://i.imgur.com/S1TWW4vs.jpg" alt="http://i.imgur.com/S1TWW4vs.jpg" /> <a href="http://jsbin.com/uxisus/4/edit">solution</a></li>
-<li><img src="http://i.imgur.com/rTtr4fEs.jpg" alt="http://i.imgur.com/rTtr4fEs.jpg" /> <a href="http://jsbin.com/akorem/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/uiaAeb7s.jpg" alt="http://i.imgur.com/uiaAeb7s.jpg" /> <a href="http://jsbin.com/ojiwex/2/edit">solution</a></li>
-<li><img src="http://i.imgur.com/9uGXXpbs.jpg" alt="http://i.imgur.com/9uGXXpbs.jpg" /> <a href="http://jsbin.com/oFoZaJe/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/9vwaC6ls.jpg" alt="http://i.imgur.com/9vwaC6ls.jpg" /> <a href="http://jsbin.com/ajimeho/2/edit?js,output">solution</a></li>
-</ul>
-
-
-<p>By <a href="https://twitter.com/chinchang457">Kushagra Gour</a>:</p>
-
-<ul>
-<li><img src="http://i.imgur.com/ueYvu8is.jpg" alt="http://i.imgur.com/ueYvu8is.jpg" /> <a href="http://jsbin.com/uLoJuda/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/59VBDWts.jpg" alt="http://i.imgur.com/59VBDWts.jpg" /> <a href="http://jsbin.com/uyOcUgA/5/edit">solution</a></li>
-<li><img src="http://i.imgur.com/kzRu0V5s.jpg" alt="http://i.imgur.com/kzRu0V5s.jpg" /> <a href="http://jsbin.com/aliBUWo/13/edit">solution</a></li>
-<li><img src="http://i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/uXudoNA/2/edit">solution</a></li>
-<li><img src="http://i.imgur.com/iGkKiOus.jpg" alt="http://i.imgur.com/iGkKiOus.jpg" /> <a href="http://jsbin.com/isUz/4/edit">solution</a></li>
-<li><img src="http://i.imgur.com/RDK9R7Cs.jpg" alt="http://i.imgur.com/RDK9R7Cs.jpg" /> <a href="http://jsbin.com/erAG/14/edit">solution</a></li>
-</ul>
-
-
-<p>By <a href="https://twitter.com/msvaljek">Marko Švaljek</a>:</p>
-
-<ul>
-<li><img src="http://i.imgur.com/CuzTPTRs.jpg" alt="http://i.imgur.com/CuzTPTRs.jpg" /> <a href="http://jsbin.com/idIXaDe/4/edit?html,js,output">solution</a></li>
-<li><img src="http://i.imgur.com/LlpGldrs.jpg" alt="http://i.imgur.com/LlpGldrs.jpg" /> <a href="http://jsbin.com/EGOfaxI/1/edit?js,output">solution</a></li>
-<li><img src="http://i.imgur.com/4ibsGlIs.jpg" alt="http://i.imgur.com/4ibsGlIs.jpg" /> <a href="http://jsbin.com/EnOXuh/4/edit?js,output">solution</a></li>
-</ul>
-
-
-<p>Others:</p>
-
-<ul>
-<li><img src="http://i.imgur.com/beZsUves.jpg" alt="http://i.imgur.com/beZsUves.jpg" /> <a href="http://jsbin.com/irisag/2/edit">solution</a> by <a href="https://twitter.com/shovemedia">Jon Williams</a></li>
-<li><img src="http://i.imgur.com/LFFz3abs.jpg" alt="http://i.imgur.com/LFFz3abs.jpg" /> <a href="http://jsbin.com/iruquq/20/edit">solution</a> by <a href="https://twitter.com/robaldred">Rob Aldred</a></li>
-<li><img src="http://i.imgur.com/fso6HEMs.jpg" alt="http://i.imgur.com/fso6HEMs.jpg" /> <a href="http://jsbin.com/ugAfUVI/1/edit">solution</a> by <a href="https://twitter.com/jackrugile">Jack Rugile</a></li>
-<li><img src="http://i.imgur.com/OjcHC4ks.jpg" alt="http://i.imgur.com/OjcHC4ks.jpg" /> <a href="http://jsbin.com/udelemo/3/edit">solution</a> by <a href="https://twitter.com/Aptary">Ed Ball</a></li>
-<li><img src="http://i.imgur.com/ItzXHYds.jpg" alt="http://i.imgur.com/ItzXHYds.jpg" /> <a href="http://jsbin.com/ePaXEzO/6/edit?js,output">solution</a> by <a href="https://twitter.com/rrrrrrichard">Richard Icke</a></li>
-<li><img src="http://i.imgur.com/JXbWegds.jpg" alt="http://i.imgur.com/JXbWegds.jpg" /> <a href="http://jsbin.com/Evitomu/1/edit?css,output">solution</a> by <a href="https://twitter.com/rafaelcastrocou">Rafael Couto</a></li>
-</ul>
-
-
-</div>
-
-<h2>News: side project moves to full time focus</h2>
-<p>For some time now we&#39;ve* been asking the question: can jsbin sustain itself to support its own development?</p>
-<p>&quot;we&quot; refers to myself and <a href="http://twitter.com/yandle">Danny Hope</a> who has contributed his time since 2009 on the UX of jsbin.</p>
-<p>In short, I&#39;m now full time on jsbin (as of this week until the foreseeable future), and intend to support the development time by creating Pro user accounts (details will be revealed later).</p>
-<p>Aside from the new features that pro users will get, the pro account will help keep jsbin 100% free for freely available educational uses (in schools, universities and community training). Those good people will be able to get free training accounts so they can continue help young students and new-comers with jsbin in their tool belt.</p>
-<p>Education is very important to me, and pro accounts allows jsbin to keep iterating with features I want to see land, and to help fix any issues that cause issue for both general users and those students stuck working with limited access to tech (like the version of jsbin that works without a web connection and entirely from a usb stick with zero install).</p>
-<p>If you want heads up when jsbin pro accounts go live, <a href="http://jsbin.com">register (for free) with jsbin</a> - as I&#39;ll email registered users first.</p>
-<h3>How jsbin&#39;s development cycle works now</h3>
-<p>At present (as of the day of this post) jsbin only gets development resource from either myself or my team when client work stops, ie. there&#39;s a break in paid development - then I move on to features or bug fixes.</p>
-<p>In addition, jsbin&#39;s hosting fees are around £6K ($9.5K) per year (and yes, I&#39;m careful about how and what I host, so I&#39;m not looking for alternative solutions). Then there&#39;s my employees time on jsbin that I pay for.</p>
-<p>Overall, not only does jsbin not cover its costs, but it has a deficit of several thousands. One that for a long time, I&#39;ve been happy to incur.</p>
-<h3>Healthy competition</h3>
-<p>Since jsbin launched in September 2008, jsfiddle came to the market - which was fine: two freely available apps as side projects. But then last year Chris Coyier (and team) launched CodePen, and what&#39;s important is that it has a business model around the product. From I can see, it&#39;s doing well too: I can&#39;t speak for the business, but general popularity across the web is growing well.</p>
-<p>So why can&#39;t jsbin sustain itself? I&#39;m not sure.</p>
-<h3>The dirty word: money</h3>
-<p>I always told myself jsbin would be free, ad-free and totally open.  That I wouldn&#39;t ask users for cash, because...why should I ask to be paid?</p>
-<p>What a idiotic thought.</p>
-<p>It&#39;s not that I want to get rich on jsbin, but where I got the impression it was okay to <em>lose</em> money was acceptable - I&#39;ve no clue.</p>
-<p>Over the last 3 months I&#39;ve been meeting <em>real</em> people who use jsbin (and some that didn&#39;t and used codepen instead), and I asked them about their use, their understanding of functionality and this is what I&#39;ve finally come to conclude:</p>
-<ol>
-<li>There&#39;s lots of people who <em>want</em> to pay/donate for a jsbin account</li>
-<li>There&#39;s lots of people who don&#39;t fully know what jsbin can do</li>
-</ol>
-<h3>Addressing features</h3>
-<p>jsbin is rich with features that (most) people don&#39;t know about. That&#39;s partly because we&#39;ve taken a held back approach to the UI - in that you arrive at jsbin, and what&#39;s the thing you want to do? Code: so we present the code panels and try to keep that the focus. I still feel that&#39;s right, but the <a href="http://jsbin.com/welcome/edit">welcome</a> page that was added back in June 2012 will be removed, and introduction and integrated help is a new focus for us.</p>
-<p>We&#39;ve also started a new learning centre for jsbin: <a href="http://learn.jsbin.com">learn.jsbin.com</a>. Currently it&#39;s a skeletal site with only two real posts, but more to come: <a href="http://github.com/jsbin-org/learn">github.com/jsbin-org/learn</a> - which will be updated and added to regularly.</p>
-<h2>Important notes</h2>
-<p>It&#39;s worth stating so it&#39;s clear:</p>
-<ol>
-<li>jsbin will remain open source and available on github as it is today</li>
-<li>All current functionality will remain free to all users (there&#39;s some ways of hacking jsbin that may move to pro accounts though)</li>
-<li>Those individuals offering free training (to students, children and doing a good thing) on a regular basis can apply for a <strong>free</strong> pro and training accounts for jsbin.</li>
-</ol>
-<h2>Exciting times ahead</h2>
-<p>For me, it&#39;s kind of a big deal to now turn my focus 100% to jsbin, and instead of getting home from work and thinking what bugs can I squash before I hit the sack, now I can spend my day focusing  on this tool.</p>
-<p>Really the big question is: will the pro features and <em>your</em> sign ups (and let&#39;s face it: your <em>cash</em>) be able to support that position?  I hope so, and indeed I hope to bring someone else on board full time to work on jsbin in the future too (maybe that could be you?).</p>
 ]]></content:encoded></item></channel></rss>
