@@ -6,15 +6,16 @@ define release
 	j.version = \"$$NEXT_VERSION\";\
 	var s = JSON.stringify(j, null, 2);\
 	require('fs').writeFileSync('./package.json', s);" && \
+	node server.js compile && \
 	git add -- www && \
 	git commit -m "v$$NEXT_VERSION" -- package.json www && \
 	git tag "$$NEXT_VERSION" -m "v$$NEXT_VERSION"
 endef
 
-build:
+compile:
 	@node server.js compile
 
-release-patch: build
+release-patch:
 	@$(call release,patch)
 
 release-minor: build
