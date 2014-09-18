@@ -16,13 +16,14 @@ block content
         - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
         != yield
 
-        p.follow You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><!-- or <iframe style="border: 0; vertical-align: text-top; margin: 0; padding: 0;" src="https://www.gittip.com/rem/widget.html" width="62pt" height="22pt"></iframe> if you find my work useful!--></p>
+        p.follow You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span>
 
-      .comments
-        h2 Comments
-        #disqus_thread
-        script.
-          var disqus_shortname = 'remysharp';
-          var disqus_url = 'http://remysharp.com#{permalink}/';
-        noscript Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        a.dsq-brlink(href="http://disqus.com") comments powered by <span class="logo-disqus">Disqus</span></a>
+      if environment == "production"
+        .comments
+          h2 Comments
+          #disqus_thread
+          script.
+            var disqus_shortname = 'remysharp';
+            var disqus_url = 'http://remysharp.com#{permalink}/';
+          noscript Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+          a.dsq-brlink(href="http://disqus.com") comments powered by <span class="logo-disqus">Disqus</span></a>

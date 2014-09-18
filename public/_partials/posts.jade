@@ -11,6 +11,9 @@
 -   b = +new Date(b.date);
 -   return a-b;
 - }).reverse().filter(function (post) {
+-   if (environment == "production" && post.published===false) {
+-     return false;
+-   }
 -   if (filter) {
 -      return filter(post);
 -   }

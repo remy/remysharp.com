@@ -1,7 +1,7 @@
 posts = []
 blogs = public.blog || public.public.blog
 for post, slug in blogs._data
-  if post.date && post.published!==false
+  if post.date && (environment == "production" && post.published!==false) || (environment == "development")
     - post.slug = slug
     - posts.push(blogs._data[slug])
 
