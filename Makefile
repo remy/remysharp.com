@@ -18,10 +18,10 @@ compile:
 release-patch:
 	@$(call release,patch)
 
-release-minor: build
+release-minor:
 	@$(call release,minor)
 
-release-major: build
+release-major:
 	@$(call release,major)
 
 test:
