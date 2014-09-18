@@ -13,11 +13,11 @@
   "license": "MIT",
   "dependencies": {
     "harp": "~0.13.0",
-    "router": "~0.6.2",
     "st": "~0.5.1",
     "glob": "~4.0.5",
     "moment": "~2.8.2",
     "semver": "~3.0.1",
-    "promise": "~6.0.0"
+    "promise": "~6.0.0",
+    "router-stupid": "~0.7.0"
   }
 }

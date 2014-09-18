@@ -7,7 +7,7 @@ var glob = require('glob');
 var harp = require('harp');
 var outputPath = __dirname + '/www';
 var port = process.env.PORT || 9000;
-var router = require('router');
+var router = require('router-stupid');
 var blogs = require('./public/blog/_data.json');
 var pages = Object.keys(require('./public/_data.json'));
 var slugs = Object.keys(blogs);
@@ -24,11 +24,16 @@ var htmlFiles = [];
 // import hack doesn't work consistently across dynamic vs
 // compiled, this is the cleanest solution.
 global.moment = moment;
-global.version = pkg.version;
 
-// required by harp because it thinks I'm using express...
+// we use versions to cachebust our CSS & JS, but we only
+// cachebust on minor or major releases. A new blog post is
+// considered a patch, and therefore doesn't require a rebuild
+// of the entire /www directory.
+global.version = pkg.version.split('.').slice(0, 2).join('.');
+
+// // required by harp because it thinks I'm using express...
 route.all('*', function (req, res, next) {
-  req.originalUrl = req.url;
+  console.log('serving ' + req.url);
   next();
 });
 
@@ -43,6 +48,37 @@ route.all('/feed/', function (req, res, next) {
 route.all(/\/downloads\/(.*)$/, function (req, res, next) {
   res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params[1] });
   res.end();
+});
+
+/* allow fast redirects to edit pages */
+route.get(/^\/(.*)\/edit(\/)?$/, function (req, res, next) {
+  var match = [];
+
+  // first check it's not a static file in /public
+  if (pages.indexOf(req.params[1]) !== -1) {
+    match = [req.params[1]];
+  }
+
+  if (match.length === 0) {
+    if (req.params[1].indexOf('/') !== -1) {
+      // just take the last bit and assume this this is a blog post
+      match = req.params[1].split('/').slice(-1);
+      match[0] = 'blog/' + match[0];
+    } else {
+      match = slugs.filter(function (slug) {
+        return slug.indexOf(req.params[1]) !== -1;
+      }).map(function (s) {
+        return s = 'blog/' + s;
+      });
+    }
+  }
+
+  if (match.length) {
+    res.writeHead(302, { 'location': 'https://github.com/remy/remysharp.com/blob/master/public/' + match.shift() + '.md' });
+    return res.end();
+  }
+
+  next();
 });
 
 /* redirect to s3 hosted urls */
@@ -91,6 +127,7 @@ route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/, fu
       return;
     }
 
+    // this allows Harp to pick up the correct post
     req.url = '/blog/' + params[4];
   }
 
@@ -98,13 +135,13 @@ route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/, fu
 });
 
 /* handle /{year} in url */
-route.all(/^\/([0-9]{4})(\/?)$/, function (req, res, next) {
+route.get(/^\/([0-9]{4})(\/?)$/, function (req, res, next) {
   req.url = '/archive/' + req.params[1] + '/';
   next();
 });
 
 /* match slug partial and redirect to post */
-route.all(/^\/([\w\d\-]+)(\/?)$/, function (req, res, next) {
+route.all(/^\/([a-z0-9\-]+)(\/?)$/i, function (req, res, next) {
   // first check it's not a static file in /public
   if (pages.indexOf(req.params[1]) !== -1) {
     return next();
@@ -214,6 +251,7 @@ Promise.all(slugs.map(stat)).then(function (dates) {
   }).reverse().slice(0, 3);
 
   if (process.argv[2] === 'compile') {
+    process.env.NODE_ENV = 'production';
     harp.compile(__dirname, outputPath, function(errors){
       if(errors) {
         console.log(JSON.stringify(errors, null, 2));
