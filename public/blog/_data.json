@@ -3109,7 +3109,7 @@
   "wordpress-ghost-harp-pt1": {
     "title": "WordPress -> Ghost -> Harp (part 1)",
     "date": "2014-09-18 12:00:00",
-    "published": false,
+    "published": true,
     "tags": [
       "web"
     ]
