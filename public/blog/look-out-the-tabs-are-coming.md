@@ -4,9 +4,9 @@ Steve Jobs announced Leopard will be available in spring 2007 and then handed ou
 
 This has then spawned a number of preview sites ([quickly getting nailed by Apple](http://www.crunchnotes.com/?p=268)), and a number of videos on [You Tube](http://youtube.com).
 
-One thing I've noticed are is the tabs are coming!â€ 
+One thing I've noticed are is the tabs are coming!*
 
-<small>â€  Sorry if someone else noticed this ages ago :-|</small>
+<small>* Sorry if someone else noticed this ages ago :-|</small>
 
 
 <!--more-->

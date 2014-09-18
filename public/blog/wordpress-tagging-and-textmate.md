@@ -18,9 +18,9 @@ Job number 2: get tags recognised in the blogging TextMate bundle.
 
 This was pretty simple after a bit of trial and error.  After hunting around, installing plugins I didn't want/need/understand, I found: [Ultimate Tag Warrior 3](http://www.neato.co.nz/ultimate-tag-warrior).
 
-The install is straight forward and you can start tagging pretty quickly from the web interface.  
+The install is straight forward and you can start tagging pretty quickly from the web interface.
 
-Luckily the theme that I had chosen<sup>â€ </sup> supported <abbr title="Ultimate Tag Warriro">UTW</abbr> out of the box.
+Luckily the theme that I had chosen<sup>*</sup> supported <abbr title="Ultimate Tag Warriro">UTW</abbr> out of the box.
 
 <small>Yes, I know, I should really design my own blog layout, but I wanted something quick and dirty running, and this theme, I thought, is actually not bad.</small>
 
@@ -52,7 +52,7 @@ Step 2: [How to make ecto work with Ultimate Tag Warrior - Part II](http://www.r
 
 Ignore the '[ecto](http://ecto.kung-foo.tv/archives/000991.php)' part - it's a blogging software product, but it'll do for our purposes.
 
-**The key change you need** is *mt_keywords* to **mt_tags**.  
+**The key change you need** is *mt_keywords* to **mt_tags**.
 
 ### Tweaking the Blogging Bundle
 
@@ -62,7 +62,7 @@ Find the following line:
 
 <pre><code>@post['mt_tags'] = @headers['tags'] if @headers['tags']</code></pre>
 
-Then copy it below the 
+Then copy it below the
 
 <pre><code>elsif self.mode == 'wp'</code></pre>
 

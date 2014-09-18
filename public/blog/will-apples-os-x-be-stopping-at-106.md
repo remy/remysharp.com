@@ -28,18 +28,18 @@ By my reckoning (and little more Wikipedia browsing), the only [big cat](http://
 
 There are others: the Snow Leopard and Clouded Leopard - but I ruled them out because, well, we're going have Leopard this year...and we don't want to repeat do we?
 
-There's also an [Onza](http://en.wikipedia.org/wiki/Onza), but a) I'm not sure very many people will realise this is (supposed to be) classed as a big cat, and b) 
+There's also an [Onza](http://en.wikipedia.org/wiki/Onza), but a) I'm not sure very many people will realise this is (supposed to be) classed as a big cat, and b)
 > Texas Tech University researchers concluded that the onza is most likely a genetic variant of puma, but not a distinct cat species
 
 *Source: [http://en.wikipedia.org/wiki/Onza](http://en.wikipedia.org/wiki/Onza)*
 
-So, all in all it sounds like Lion should be next, and then...what?  The end of OS X?  The end of big kitty codenames?  
+So, all in all it sounds like Lion should be next, and then...what?  The end of OS X?  The end of big kitty codenames?
 
 <img src="http://remysharp.com/wp-content/uploads/2007/01/lion.jpg" alt="Lonely Lion" title="Lonely Lion" style="float: right; padding: 0 0 10px 10px; border: 0;" />I think some cat loving Apple employee might just be foregoing his next Christmas bonus!  I can here them now...[cue fantasy sequence]...
 
-> What do you mean there's no more big cats left?  What did you think we would do a "[Microsoft Word](http://en.wikipedia.org/wiki/Ms_word#Versions)" and just make the numbers up? â€ 
+> What do you mean there's no more big cats left?  What did you think we would do a "[Microsoft Word](http://en.wikipedia.org/wiki/Ms_word#Versions)" and just make the numbers up? *
 
-<small>â€  i.e. MS Word 1, 2, 6, 7, 8...etc.</small>
+<small>* i.e. MS Word 1, 2, 6, 7, 8...etc.</small>
 
 Either way - I'm looking forward to what Apple can pull out of the bag.
 

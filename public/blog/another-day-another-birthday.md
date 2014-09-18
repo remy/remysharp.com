@@ -13,15 +13,15 @@ It just you wake up, and for a moment, the most important moment, it's just anot
 
 I worked on a [Left Logic](http://leftlogic.com) proposal on the train.  I spent the morning brain-waving a pretty serious performance problem - which I thought I solved, but my prototypes proved otherwise.  Took my hour lunch.  Yes.  Mulled over the performance problem some more, and snuck in a game of [GTA](http://www.rockstargames.com/libertycitystories/gta_lcs.html) on the [PSP](http://yourpsp.com) - cheeky I know, but I won which was a nice birthday treat.
 
-Got the train home.  It was late, then delayed, then cancelled.  Took a different train home.  
+Got the train home.  It was late, then delayed, then cancelled.  Took a different train home.
 
 Sweated.  Lots.  More than lots.  Anyone who knows me, it was a lot!
 
-Then Julie surprisedâ€  me, and we went out for a rather full, floating boat Chinese meal.
+Then Julie surprised* me, and we went out for a rather full, floating boat Chinese meal.
 
 Being 28 is no different to 27.  Except, perhaps, 28 is the age I will be when I go fully self employed and run [Left Logic](http://leftlogic.com) full time.
 
-<small>â€  Nothing surprises me.  Sad for me I know.</small>
+<small>* Nothing surprises me.  Sad for me I know.</small>
 
 Since I've just worked out how to upload photos when I'm editing my blog in [TextMate](http://macromates.com) - here's a picture of my enjoying some fine wine on my 28th.
 

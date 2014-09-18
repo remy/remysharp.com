@@ -1,8 +1,8 @@
 # How Mac IE taught me better CSS
 
-Generally when you say you've done your browser testing it will mostly take place on a <abbr title="Personal Computer">PC</abbr>, and at the very least, it will be <abbr title="Microsoft's Internet Explorer">IE</abbr>â€ .
+Generally when you say you've done your browser testing it will mostly take place on a <abbr title="Personal Computer">PC</abbr>, and at the very least, it will be <abbr title="Microsoft's Internet Explorer">IE</abbr>*.
 
-<small>â€  No matter how much we developers or designers complain that IE isn't standards compliant, and Firefox is the way, the [World still prefers IE](http://www.w3counter.com/globalstats/) (at time of writing!).</small>
+<small>* No matter how much we developers or designers complain that IE isn't standards compliant, and Firefox is the way, the [World still prefers IE](http://www.w3counter.com/globalstats/) (at time of writing!).</small>
 
 However, being that I've just started my company, I want to start on the right foot.  That means I'll be aiming to support the Big Three Safari (I'm a Mac user - it's always going to come first!), Firefox and IE.
 

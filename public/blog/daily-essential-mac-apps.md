@@ -53,11 +53,11 @@ Adium's site also hosts a huge collections of plugins - I enjoy the Shakespeare 
 
 ## MenuCalendarClock
 
-* **What:** Missing date status menu<sup>â€ </sup> app
+* **What:** Missing date status menu<sup>*</sup> app
 * **Type:** Shareware / $19
 * **Homepage:** [objectpark.net](http://www.objectpark.net/mcc.html)
 
-â€  The status menu is the menu in the top left.
+* The status menu is the menu in the top left.
 
 Useful popup calendar for the status menu, driven entirely from the iCal calendars.  Shows a little drop down of the month with a list (and search feature) of the upcoming events and tasks.
 

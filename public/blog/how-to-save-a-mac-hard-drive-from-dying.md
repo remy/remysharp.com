@@ -2,11 +2,11 @@
 
 Recently [Apple](http://www.apple.com) brought out the latest update to iTunes - with the promise of [cool features](/2006/09/12/itunes-first-look/): cover flow, gapless playback and other bits and bobs.
 
-Some users have reported bugs in the new version (I even spotted one<sup>â€ </sup>), but little did Andrew, an old school friend, realise that the biggest feature he would benefit from would be the bricking<sup>â€ â€ </sup> of his iBook.  [He was less than impressed](http://cultcollectors.com/blog/index.php/2006/09/13/video-killed-the-radio-star/).
+Some users have reported bugs in the new version (I even spotted one<sup>*</sup>), but little did Andrew, an old school friend, realise that the biggest feature he would benefit from would be the bricking<sup>**</sup> of his iBook.  [He was less than impressed](http://cultcollectors.com/blog/index.php/2006/09/13/video-killed-the-radio-star/).
 
-<small>â€  Whilst playing a shared playlist, and iTunes is in the background - each song will play twice.  Odd.</small>
+<small>* Whilst playing a shared playlist, and iTunes is in the background - each song will play twice.  Odd.</small>
 
-<small>â€ â€  The process of nuking a machine so badly that the only thing it's good for is holding paper down on a windy day.</small>
+<small>** The process of nuking a machine so badly that the only thing it's good for is holding paper down on a windy day.</small>
 
 Andrew's machine would boot, but it would hang on the a blank screen and the log in smiley window would never come up.
 
@@ -31,9 +31,9 @@ Boot the sad machine up in target mode and the other (happy) machine will see it
 
 ## Step 1 - BTFU
 
-Now that you've got the drive available, assume the worst.  The worst outcome is you can't recover the drive, and you'll need to buy a new one.  
+Now that you've got the drive available, assume the worst.  The worst outcome is you can't recover the drive, and you'll need to buy a new one.
 
-Back the f\*\*\* up.  Copy anything that you can't recover else where to the happy mac.  
+Back the f\*\*\* up.  Copy anything that you can't recover else where to the happy mac.
 
 If you find that the backup crashes or hangs at any point, **pull the firewire out** and reboot the sad machine.  It'll be fine, it's likely that the bad part of the disk has been accessed and the drive can't be read.
 
@@ -41,9 +41,9 @@ Start the process again and avoid the *area* that caused the backup to hang.  De
 
 ## Step 2 - Disk Repair
 
-While the sad machine is connected to the happy machine, open Disk Utility (hiding in the Applications -> Utility folder).  You should find the external firewire drive listed.  
+While the sad machine is connected to the happy machine, open Disk Utility (hiding in the Applications -> Utility folder).  You should find the external firewire drive listed.
 
-**Don't, repeat: don't, go and nuke the happy machine's drive.**  You're your own worst enemy if you do! 
+**Don't, repeat: don't, go and nuke the happy machine's drive.**  You're your own worst enemy if you do!
 
 Select to 'repair' the firewire drive, and let the Disk Utility go about it's business.  It can take quite a while, so go get a coffee, make a sandwich or whatever takes your fancy.
 
@@ -59,9 +59,9 @@ The Disk Utility had created a handy directory pointing out all the corrupt file
 
 `/Damaged Files/`
 
-Ingeniously named, this directory contains symlinks<sup>â€ </sup> to the individual files that are corrupted.
+Ingeniously named, this directory contains symlinks<sup>*</sup> to the individual files that are corrupted.
 
-<small>â€  A symlink is a file that *points* to the original file.  Akin to a shortcut, but it's the UNIX name (plus, they're smarter than shortcuts, but that's another conversation).</small>
+<small>* A symlink is a file that *points* to the original file.  Akin to a shortcut, but it's the UNIX name (plus, they're smarter than shortcuts, but that's another conversation).</small>
 
 Caveat: The following all assumes the happy mac is the same OS as the sad mac.  You will need to get these files manually (explained below).
 
@@ -77,8 +77,8 @@ Download [Pacifist](http://www.charlessoft.com) and install the app.  Use Pacifi
 
 Using Terminal (you might want to familiarise yourself a little with UNIX type commands via [Google](http://www.google.com/search?q=mac+terminal)) you can show where the symlink points to (the command I use is 'ls -ltr'):
 
-	$ ls -ltr 
-	
+	$ ls -ltr
+
 	drwxr-xr-x     4 root  wheel   136 Jan 14  2006 Versions/
 	lrwxr-xr-x     1 root  wheel    26 Jan 14  2006 Resources@ -> Versions/Current/Resources
 	lrwxr-xr-x     1 root  wheel    30 Jan 14  2006 BezelServices@ -> Versions/Current/BezelServices
@@ -112,7 +112,7 @@ Once all the files are copied across, you're done.
 
 ## Step 4 - Hit and Hope
 
-Reboot the sad mac.  Go through the rigour of updates and let it do it's thing.  We had to leave Andrew's machine for several hours while iTunes poured through the gapless playback processing - though it looked like it had hung.  
+Reboot the sad mac.  Go through the rigour of updates and let it do it's thing.  We had to leave Andrew's machine for several hours while iTunes poured through the gapless playback processing - though it looked like it had hung.
 
 It **had** managed to boot back in to the OS and programs were running, so we allowed iTunes to get on with it.
 
