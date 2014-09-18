@@ -31,11 +31,15 @@ global.moment = moment;
 // of the entire /www directory.
 global.version = pkg.version.split('.').slice(0, 2).join('.');
 
-// // required by harp because it thinks I'm using express...
-route.all('*', function (req, res, next) {
-  console.log('serving ' + req.url);
-  next();
-});
+global.modified = function (filename) {
+  var stat = null;
+  try {
+    stat = fs.statSync(__dirname + '/public/' + filename + '.md');
+    return stat.mtime;
+  } catch (e) {
+    return new Date(0);
+  }
+};
 
 /* legacy for feedburner */
 route.all('/feed/', function (req, res, next) {

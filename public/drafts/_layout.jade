@@ -1,0 +1,32 @@
+extends ../_partials/layout
+
+block content
+  nav.main-nav.clearfix.subpanel
+    != partial('../_partials/page-nav')
+
+  permalink = '/drafts/' + current.source;
+
+  - var timestamp = '';
+  if current.source !== 'index'
+    timestamp = modified('/drafts/' + current.source);
+
+  main.content(role="main")
+    div.warning
+     | Draft posts are a work in progress.&nbsp;
+     if timestamp
+       | Last edited #{ moment(timestamp).format('D-MMM YYYY') }
+
+    article.post
+      if current.source !== 'index'
+        h1.title
+          a(href="#{permalink}")= title
+          small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/drafts/#{current.source}.md") (edit)
+      else
+        h1.title Drafts
+
+      .post-content
+        //- strip the h1 out of the body as we printed it above as the permalink
+        - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
+        != yield
+
+        p.update Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.

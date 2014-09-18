@@ -1,6 +1,6 @@
 # My  Velveteen Rabbit
 
-<img src="http://remysharp.com/images/spring.jpg?" alt="The Velveteen Rabbit" style="display: block; max-width: 100%; margin: 0 auto">
+<img src="http://remysharp.com/images/spring.jpg?" alt="The Velveteen Rabbit" style="display: block; max-width: 100%; width: 80%; margin: 0 auto">
 
 This is the Velveteen Rabbit. The same picture hangs in my house.
 

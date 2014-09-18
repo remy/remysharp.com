@@ -1,4 +1,7 @@
 {
+  "index": {
+    "layout": true
+  },
   "what-went-in-to-remote-tilt-com": {
     "title": "What went in to remote-tilt.com",
     "date": "2012-02-01 17:27:11",
@@ -39,6 +42,15 @@
     "published": false,
     "tags": [
       "web"
+    ]
+  },
+  "muddling-your-way-in-real-time": {
+    "title": "Muddling your way in real time",
+    "date": "2014-09-30 12:00:00",
+    "published": false,
+    "tags": [
+      "web",
+      "html5"
     ]
   }
 }
