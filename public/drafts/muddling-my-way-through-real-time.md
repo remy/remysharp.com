@@ -1,4 +1,4 @@
-# Muddling your way in real time
+# Muddling my way through real time
 
 Real time demand is a core part of our internet experience, let alone expectation.
 
@@ -6,11 +6,15 @@ Twitter is probably the crowning application of real time I can think of. Hittin
 
 Today we have real time journalism, data, feedback, communication between our teams, from our code and tests. Heck, we can create a brand new virtual machine in under 60 seconds ready to deploy a new site.
 
+I recently returned from jsconf.eu 2014, and sitting in the office, only days later I kept catching myself thinking "I'll just watch the video from jsconf–" - but what video? They filmed their events, but somehow I was expecting the event to have already fully edited, titled, uploaded and release *all* their videos! I know some events that do do this ([lxjs](http://lxjs.org) for one) - but these aren't the norm. At what point did I have this (I think) unreasonable expectation on information on the web?
+
 On demand and real time is the world we live in today. And if you can't handle the demand, your visitor will head off elsewhere.
 
 <!--more-->
 
-![Muddling your way in real time](/images/muddling-in-real-time-cover.png)
+![Muddling your way in real time](/images/muddling-in-real-time-cover.gif)
+
+---
 
 I think its important to distinguish between what's technically real time and what a user perceives as real time. The later being important and the former being arbitrary.
 
@@ -22,7 +26,10 @@ This is my own story of how I discovered the web in real time, what I've done ov
 
 My first experience with a real time web was around 2002. I worked for many years on a finance research web site, and stock prices were an important aspect of data.
 
+
 If you wanted live prices on your site at the time, there would be expensive licences with the London Stock Exchange and some form of Java Applet on your site. We settled for a recurring job that grabbed a 15 minute delayed price CSV file from Yahoo.
+
+<img style="width: 40%; display: block; margin: 0 auto;" src="/images/hahabusiness.jpg" title="What it's like to work for the finance sector">
 
 The meant that our prices would be "15 minute delayed" (which was a normal expectation of prices shown on free web sites) but for the subsequent 15 minutes the prices would go stale.
 
@@ -33,6 +40,8 @@ The page had a [heatmap](http://en.wikipedia.org/wiki/Heat_map) of the FTSE100 p
 What made this page magical though, was I ran the usual "select text test". i.e. if I can select the text, then it's "of the web". If I can't, it's Flash or Java Applets (and right clicking would discover which). But this *was* web. There was a DOM.
 
 ![Hemscott from 2002](/images/hemscott.gif)
+
+<small>(Appologies for the poor picture above: the internet really *doesn't* remember!)</small>
 
 I spent quite a lot of time poking around some compressed JavaScript, looking at the DOM updating (this was back in the Firebug days so there was no [break on DOM subtree modification](https://developer.chrome.com/devtools/docs/dom-and-styles#setting-dom-breakpoints)).
 
@@ -145,7 +154,7 @@ var server = http.createServer(function (req, res) {
 server.listen(8080);
 ```
 
-This code is saved to `server.js` and run using `node server.js` and now I can visit `localhost:8080` on my machine, and it should start logging, in 2 second increments "and now more messages..." ([sample code including disconnect handling](https://gist.github.com/remy/50f1758a74242d51a90f)).
+This code is saved to `server.js` and run using `node server.js` and now I can visit `localhost:8080` on my machine, and it should start logging, in 2 second increments "and now more messages..." ([live demo version that writes to the DOM](http://lit-thicket-2959.herokuapp.com/)).
 
 A comet server has a bit more to it, but with this simple few lines of code we can create as many persistent connection as we like and our server will continue to accept requests.
 
@@ -161,9 +170,13 @@ As time passed, using Flash and various hacks to achieve real time eventually la
 
 That's to say, today we have *three* native client side solutions to communicating with the server:
 
-1. Ajax. Well known. Well loved. Well understood. The XHR2 spec takes the API further and gives us much more functionality.
-2. WebSockets. Bi-directional, persistent sockets, that can be made across origin.
-3. EventSource. Push based server *events*, that automatically reconnect when the connection is dropped.
+1. [Ajax](http://caniuse.com/#search=xhr2). Well known. Well loved. Well understood. The XHR2 spec takes the API further and gives us much more functionality.
+2. [WebSockets](http://caniuse.com/#search=websockets). Bi-directional, persistent sockets, that can be made across origin.
+3. [EventSource](http://caniuse.com/#search=eventsource). Push based server *events*, that automatically reconnect when the connection is dropped.
+
+These standards are good because: all browsers implementing new features will implement these features in an interopable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through [polyfills]()).
+
+
 
 ## So, what's next?
 
@@ -186,6 +199,9 @@ As I'm sure many of you know, the node module repository is rife with libraries 
 
 What's particularly useful about many of these libraries is that they provide both sides of the infrastructure required to achieve real time, and usually require very little to get started.
 
+### Socket.IO
+
+Possibly the most well known, and recently moved to 1.0.
 
 
 * libraries
