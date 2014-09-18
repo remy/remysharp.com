@@ -314,7 +314,7 @@ it&#39;s proving to be really quite powerful (and fun).</p>
 <pre><code>app.get(&#39;/login&#39;, features.route(&#39;ssl-login&#39;), renderSecureLogin);
 app.get(&#39;/login&#39;, showLogin); // the old way</code></pre>
 <p>And an example in a Handlebars template to access the &quot;sandbox&quot; feature:</p>
-<pre><code>{{#feature request &quot;sandbox&quot;}}
+<pre><code class="language-handlebars">{{#feature request &quot;sandbox&quot;}}
   &lt;button&gt;Launch sandbox&lt;/button&gt;
 {{else}}
   &lt;a href=&quot;/...&quot;&gt;Find out about upcoming Sandbox feature&lt;/a&gt;
@@ -322,7 +322,7 @@ app.get(&#39;/login&#39;, showLogin); // the old way</code></pre>
 <p>Aside: I&#39;m not 100% happy with the template requiring the <code>request</code> object being passed, but it&#39;s neccessary right now (unless someone can answer my <a href="http://stackoverflow.com/questions/21972729/is-it-possible-to-bind-a-handlebars-helper-before-render-using-express-hbs">SO question</a>) - though I&#39;ve been told that Handlebars 2 might allow a way to bind the helper to objects.</p>
 <p>There&#39;s more examples of actual usage in the <a href="https://github.com/remy/feature-gateway/blob/master/README.md">README</a> for the feature-gateway project.</p>
 <h2>How the feature flag works</h2>
-<p>The feature flag is a gateway to a part of functionality, that tests some particular value, and if true, the user has access to the feature. </p>
+<p>The feature flag is a gateway to a part of functionality, that tests some particular value, and if true, the user has access to the feature.</p>
 <p>The way JS Bin works is that all our feature tests accept the (http) request object. From here, since in our case, the user&#39;s session is also attached to the request object we can use a wide range of tests:</p>
 <ul>
 <li>Does the logged in user have a &quot;pro&quot; flag on their account?</li>
