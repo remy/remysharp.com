@@ -1,28 +1,32 @@
-<!DOCTYPE html><html id="remysharp-com"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Muddling your way in real time</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css?2.5"><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.5"><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html><html id="remysharp-com"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Muddling my way through real time</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css?2.5"><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.5"><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-muddling-your-way-in-real-time-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/18/wordpress-ghost-harp-pt1" title="WordPress -&gt; Ghost -&gt; Harp (part 1)">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 17-Sep 2014</div><article class="post"><h1 class="title"><a href="/drafts/muddling-your-way-in-real-time">Muddling your way in real time</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/muddling-your-way-in-real-time.md">(edit)</a></small></h1><div class="post-content">
+ga('send', 'pageview');</script></head><body id="drafts-muddling-my-way-through-real-time-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/18/wordpress-ghost-harp-pt1" title="WordPress -&gt; Ghost -&gt; Harp (part 1)">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 18-Sep 2014</div><article class="post"><h1 class="title"><a href="/drafts/muddling-my-way-through-real-time">Muddling my way through real time</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/muddling-my-way-through-real-time.md">(edit)</a></small></h1><div class="post-content">
 <p>Real time demand is a core part of our internet experience, let alone expectation.</p>
 <p>Twitter is probably the crowning application of real time I can think of. Hitting the mass audience and industries across the board.</p>
 <p>Today we have real time journalism, data, feedback, communication between our teams, from our code and tests. Heck, we can create a brand new virtual machine in under 60 seconds ready to deploy a new site.</p>
+<p>I recently returned from jsconf.eu 2014, and sitting in the office, only days later I kept catching myself thinking &quot;I&#39;ll just watch the video from jsconf–&quot; - but what video? They filmed their events, but somehow I was expecting the event to have already fully edited, titled, uploaded and release <em>all</em> their videos! I know some events that do do this (<a href="http://lxjs.org">lxjs</a> for one) - but these aren&#39;t the norm. At what point did I have this (I think) unreasonable expectation on information on the web?</p>
 <p>On demand and real time is the world we live in today. And if you can&#39;t handle the demand, your visitor will head off elsewhere.</p>
 <!--more-->
 
-<p><img src="/images/muddling-in-real-time-cover.png" alt="Muddling your way in real time"></p>
+<p><img src="/images/muddling-in-real-time-cover.gif" alt="Muddling your way in real time"></p>
+<hr>
 <p>I think its important to distinguish between what&#39;s technically real time and what a user perceives as real time. The later being important and the former being arbitrary.</p>
 <p>Some applications have been know to respond <em>so</em> quickly that they had to introduce a fake delay to meet their users expectations. Specifically: when the program responded so instantly, the user thought something was wrong. With a small delay and a touch of UI feedback (along the lines of &quot;we&#39;ve processing your request&quot;), the user <em>felt</em> the a application was more responsive. (TODO provide references).</p>
 <p>This is my own story of how I discovered the web in real time, what I&#39;ve done over the years and how I use node.js to simplify what used to be very technical problem.</p>
 <h2>In the beginning...</h2>
 <p>My first experience with a real time web was around 2002. I worked for many years on a finance research web site, and stock prices were an important aspect of data.</p>
 <p>If you wanted live prices on your site at the time, there would be expensive licences with the London Stock Exchange and some form of Java Applet on your site. We settled for a recurring job that grabbed a 15 minute delayed price CSV file from Yahoo.</p>
+<p><img style="width: 40%; display: block; margin: 0 auto;" src="/images/hahabusiness.jpg" title="What it's like to work for the finance sector"></p>
 <p>The meant that our prices would be &quot;15 minute delayed&quot; (which was a normal expectation of prices shown on free web sites) but for the subsequent 15 minutes the prices would go stale.</p>
 <p>It was one afternoon that one of the data collection team asked me to take a look at one of the finance research sites that they were looking at: Hemscott (I should add the original pages have long since left the web).</p>
 <p>The page had a <a href="http://en.wikipedia.org/wiki/Heat_map">heatmap</a> of the FTSE100 prices. What made this particular page interesting is that the prices were changing in real time, and the red/green/sneutral were also changing, so there was a clear visual feedback system to show me this data was live.</p>
 <p>What made this page magical though, was I ran the usual &quot;select text test&quot;. i.e. if I can select the text, then it&#39;s &quot;of the web&quot;. If I can&#39;t, it&#39;s Flash or Java Applets (and right clicking would discover which). But this <em>was</em> web. There was a DOM.</p>
 <p><img src="/images/hemscott.gif" alt="Hemscott from 2002"></p>
+<p><small>(Appologies for the poor picture above: the internet really <em>doesn&#39;t</em> remember!)</small></p>
 <p>I spent quite a lot of time poking around some compressed JavaScript, looking at the DOM updating (this was back in the Firebug days so there was no <a href="https://developer.chrome.com/devtools/docs/dom-and-styles#setting-dom-breakpoints">break on DOM subtree modification</a>).</p>
 <p>Hemscott had been able to do what we could not: real time prices, using web technology. <strong>It was magic.</strong> That&#39;s all I could ascertain.</p>
 <hr>
@@ -90,7 +94,7 @@ var server = http.createServer(function (req, res) {
 });
 
 server.listen(8080);</code></pre>
-<p>This code is saved to <code>server.js</code> and run using <code>node server.js</code> and now I can visit <code>localhost:8080</code> on my machine, and it should start logging, in 2 second increments &quot;and now more messages...&quot; (<a href="https://gist.github.com/remy/50f1758a74242d51a90f">sample code including disconnect handling</a>).</p>
+<p>This code is saved to <code>server.js</code> and run using <code>node server.js</code> and now I can visit <code>localhost:8080</code> on my machine, and it should start logging, in 2 second increments &quot;and now more messages...&quot; (<a href="http://lit-thicket-2959.herokuapp.com/">live demo version that writes to the DOM</a>).</p>
 <p>A comet server has a bit more to it, but with this simple few lines of code we can create as many persistent connection as we like and our server will continue to accept requests.</p>
 <p>During the timeout, the server isn&#39;t &quot;sleeping&quot;, it&#39;s <em>waiting</em> for the next event, be it the time it to fire, or for another request to come in.</p>
 <p>Equally we can easily give the server <em>more</em> things to do with the single event loop. It could be collecting live prices from a server, or making APIs calls, or have its own scheduling task all inside the single program <em>because</em> of the way node.js is architectured.</p>
@@ -99,10 +103,11 @@ server.listen(8080);</code></pre>
 <p>As time passed, using Flash and various hacks to achieve real time eventually landed into the standards, typically under the umbrella term of HTML5.</p>
 <p>That&#39;s to say, today we have <em>three</em> native client side solutions to communicating with the server:</p>
 <ol>
-<li>Ajax. Well known. Well loved. Well understood. The XHR2 spec takes the API further and gives us much more functionality.</li>
-<li>WebSockets. Bi-directional, persistent sockets, that can be made across origin.</li>
-<li>EventSource. Push based server <em>events</em>, that automatically reconnect when the connection is dropped.</li>
+<li><a href="http://caniuse.com/#search=xhr2">Ajax</a>. Well known. Well loved. Well understood. The XHR2 spec takes the API further and gives us much more functionality.</li>
+<li><a href="http://caniuse.com/#search=websockets">WebSockets</a>. Bi-directional, persistent sockets, that can be made across origin.</li>
+<li><a href="http://caniuse.com/#search=eventsource">EventSource</a>. Push based server <em>events</em>, that automatically reconnect when the connection is dropped.</li>
 </ol>
+<p>These standards are good because: all browsers implementing new features will implement these features in an interopable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through <a href="">polyfills</a>).</p>
 <h2>So, what&#39;s next?</h2>
 <p>Now we live in a world where both the client side <em>and</em> server side has been solved and is simple to work with, what can we actually do?</p>
 <p>Here&#39;s a few examples of where I&#39;ve used node.js for real time:</p>
@@ -118,6 +123,8 @@ server.listen(8080);</code></pre>
 <h2>Core npm modules</h2>
 <p>As I&#39;m sure many of you know, the node module repository is rife with libraries to do just about <a href="https://www.npmjs.org/package/true">everything</a>. The libraries that handle real time communication have been baked, and run through the mill pretty hard and there&#39;s lot of good choice nowadays.</p>
 <p>What&#39;s particularly useful about many of these libraries is that they provide both sides of the infrastructure required to achieve real time, and usually require very little to get started.</p>
+<h3>Socket.IO</h3>
+<p>Possibly the most well known, and recently moved to 1.0.</p>
 <ul>
 <li>libraries</li>
 <li>npm</li>
