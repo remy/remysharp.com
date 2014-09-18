@@ -24,11 +24,13 @@ If we have a feature called "ssl-login" that we're testing, the router might loo
 
 And an example in a Handlebars template to access the "sandbox" feature:
 
-    {{#feature request "sandbox"}}
-      <button>Launch sandbox</button>
-    {{else}}
-      <a href="/...">Find out about upcoming Sandbox feature</a>
-    {{/feature}}
+```handlebars
+{{#feature request "sandbox"}}
+  <button>Launch sandbox</button>
+{{else}}
+  <a href="/...">Find out about upcoming Sandbox feature</a>
+{{/feature}}
+```
 
 Aside: I'm not 100% happy with the template requiring the `request` object being passed, but it's neccessary right now (unless someone can answer my [SO question](http://stackoverflow.com/questions/21972729/is-it-possible-to-bind-a-handlebars-helper-before-render-using-express-hbs)) - though I've been told that Handlebars 2 might allow a way to bind the helper to objects.
 
@@ -36,7 +38,7 @@ There's more examples of actual usage in the [README](https://github.com/remy/fe
 
 ## How the feature flag works
 
-The feature flag is a gateway to a part of functionality, that tests some particular value, and if true, the user has access to the feature. 
+The feature flag is a gateway to a part of functionality, that tests some particular value, and if true, the user has access to the feature.
 
 The way JS Bin works is that all our feature tests accept the (http) request object. From here, since in our case, the user's session is also attached to the request object we can use a wide range of tests:
 
