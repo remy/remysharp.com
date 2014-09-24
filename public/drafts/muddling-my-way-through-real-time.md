@@ -1,14 +1,20 @@
 # Muddling my way through real time
 
+## Thesis
+
+If your business deals with data on the web, then that data must be handled in real time, otherwise you're doing your user a disservice.
+
+## Real time
+
 Real time demand is a core part of our internet experience, let alone expectation.
 
 Twitter is probably the crowning application of real time I can think of. Hitting the mass audience and industries across the board.
 
-Today we have real time journalism, data, feedback, communication between our teams, from our code and tests. Heck, we can create a brand new virtual machine in under 60 seconds ready to deploy a new site.
+Today we have real time journalism, data, feedback, communication between our teams, from our code and tests. Heck, we can create a brand new virtual machine in under 60 seconds ready to deploy a new site. *Back in my day*&trade; that process would take 2 weeks!
 
-I recently returned from jsconf.eu 2014, and sitting in the office, only days later I kept catching myself thinking "I'll just watch the video from jsconf–" - but what video? They filmed their events, but somehow I was expecting the event to have already fully edited, titled, uploaded and release *all* their videos! I know some events that do do this ([lxjs](http://lxjs.org) for one) - but these aren't the norm. At what point did I have this (I think) unreasonable expectation on information on the web?
+I recently returned from jsconf.eu 2014, and sitting in the office, only days later I kept catching myself thinking "I'll just watch the video from jsconf" – but what video? They filmed their events, but somehow I was expecting the event to have already fully edited, titled, uploaded and release *all* their videos! I know some events that do do this ([lxjs](http://lxjs.org) for one) – but these aren't the norm. At what point did I have this (I think) unreasonable expectation on information on the web?
 
-On demand and real time is the world we live in today. And if you can't handle the demand, your visitor will head off elsewhere.
+*On demand* and *real time* is a normal part of the world we live in today. And if you can't handle the pressure, your visitor will likely head off elsewhere.
 
 <!--more-->
 
@@ -16,22 +22,66 @@ On demand and real time is the world we live in today. And if you can't handle t
 
 ---
 
-I think its important to distinguish between what's technically real time and what a user perceives as real time. The later being important and the former being arbitrary.
+I think it's important to define what *I think* "real time" means. [Guillermo Rauch](http://www.devthought.com/) (creator of Socket.IO) has a [few](https://www.youtube.com/watch?v=Ar9R-CX217o) [excellent](https://www.youtube.com/watch?v=_8CykecwKhw) talks on the topic, and he describes real time as:
 
-Some applications have been know to respond *so* quickly that they had to introduce a fake delay to meet their users expectations. Specifically: when the program responded so instantly, the user thought something was wrong. With a small delay and a touch of UI feedback (along the lines of "we've processing your request"), the user *felt* the a application was more responsive. (TODO provide references).
+- Fast
+- Self-updating
+
+I'd go further to say (for me) it needs to be:
+
+- *Instant*
+- Self-updating
+
+I think it's also important to distinguish between what's technically real time and what a user perceives as real time. The later being important and the former being arbitrary.
+
+Some applications have been know to respond *so* quickly that they had to introduce a fake delay to meet their users expectations Specifically: when the program responded so instantly, the user thought something was wrong. With a small delay and a touch of UI feedback (along the lines of "we've processing your request"), the user *felt* the a application was more responsive.
+
+Inversely you might get a push notification to your phone that someone's mentioned you in a tweet, but when you go to twitter, it can't connect to update itself. Or *you* post a tweet and it doesn't appear in your timeline for ages if you're on a slow connection. In this case, we want a "self-updating", and one that can handle errors.
+
 
 This is my own story of how I discovered the web in real time, what I've done over the years and how I use node.js to simplify what used to be very technical problem.
 
-## In the beginning...
+## My first introduction to real time on the web
 
 My first experience with a real time web was around 2002. I worked for many years on a finance research web site, and stock prices were an important aspect of data.
-
 
 If you wanted live prices on your site at the time, there would be expensive licences with the London Stock Exchange and some form of Java Applet on your site. We settled for a recurring job that grabbed a 15 minute delayed price CSV file from Yahoo.
 
 <img style="width: 40%; display: block; margin: 0 auto;" src="/images/hahabusiness.jpg" title="What it's like to work for the finance sector">
 
 The meant that our prices would be "15 minute delayed" (which was a normal expectation of prices shown on free web sites) but for the subsequent 15 minutes the prices would go stale.
+
+What does that look like?
+
+```js
+function updatePrices() {
+  $.get('/prices?stock=MSFT', function (data) {
+    renderPrices(data);
+    setTimeout(updatePrices, 60 * 1000);
+  });
+}
+```
+
+Notice that we're polling using an ajax GET request every minute, in an attempt to get the fresh price when it arrives. The timing looks like this:
+
+```nohighlight
+09:14 MSFT=$46.68
+09:15 ...no change
+09:16 ...no change
+09:17 ...
+09:18 ...
+...
+09:23 ...
+09:24 MSFT=$46.68
+09:25 ...no change
+```
+
+It's also important to realise that all those "no change" requests were wasteful, both because the client is constantly making XHR requests, but the server is also having to deal with requests when the data hasn't changed at all.
+
+The server is the "ultimate source of truth" and what we want is the *server* to *push* the prices to the client.
+
+---
+
 
 It was one afternoon that one of the data collection team asked me to take a look at one of the finance research sites that they were looking at: Hemscott (I should add the original pages have long since left the web).
 
@@ -55,17 +105,7 @@ Essentially a very similar technique that's used in today's [WebSocket polyfill]
 
 In the mean time Google released Google Talk which was the big tipping point in the web's history for shifting from a request/response pattern, to a server-push pattern, Ajax and Comet respectively.
 
-## From an annoyance to the real time web
-
-Comet is a term that [Alex Russell](http://infrequently.org) (of Dojo fame, and now simply known as The Oracle at Google/he works on Blink) [defined](http://infrequently.org/2006/03/comet-low-latency-data-for-the-browser/) as a method to push data from the server to the client (the browser).
-
-Comet is not a specific technology, but more of an abstracted process. The implementation varied, and frankly at the time, was better suited to system engineers rather than your cowboy developer...like me.
-
-Comet *could* involve any mix of iframes (of course!), long polling, XHR, long running script tags, and so on. To add to complexity, there were oddly named protocols like the Bayeux protocol and BOSH.
-
-All things that provided barrier to entry, but real time, rightly, was hard.
-
----
+## The origins of Comet
 
 Google launched GTalk in 2005 (as part of Gmail) and at the time Google were employing ex-Microsoft developers to solve a very, *very* specific problem. GTalk used long lived iframes to push the chat events up to the client.
 
@@ -81,21 +121,31 @@ And so a stable server push technology emerged.
 
 ---
 
-Real time appeared more and more across the web. There was even a product for the finance industry called LightStreamer (which I was even asked by my managers to reverse engineer...which was fun with packed minified files...).
+Comet was coined by [Alex Russell](http://infrequently.org) (of Dojo fame, and now simply known as The&nbsp;Oracle™ at Google/he works on Blink) [defined](http://infrequently.org/2006/03/comet-low-latency-data-for-the-browser/) as a method to push data from the server to the client (the browser).
 
-The real hurdle is that there's *two* parts to real time: client *and* the server.
+Comet is not a specific technology, but more of an abstracted process. The implementation varied, and frankly at the time, was better suited to system engineers rather than your cowboy developer...like me.
 
-The usual set up for a server in the mid-2000s was to use a [LAMP stack](http://en.wikipedia.org/wiki/LAMP_(software_bundle)). The A standing for Apache was the main sticking point.
+Comet *could* involve any mix of iframes (of course!), long polling, XHR, long running script tags, and so on. To add to complexity, there were oddly named protocols like the Bayeux protocol and BOSH.
+
+All things that provided barrier to entry, but real time, rightly, was hard. Real time appeared more and more across the web.
+
+---
+
+**The real hurdle is that there's *two* parts to real time: client *and* the server.**
+
+---
+
+The usual set up for a server in the mid-2000s was to use a [LAMP stack](http://en.wikipedia.org/wiki/LAMP_(software_bundle). Apache being the main sticking point.
 
 Apache is designed (out of the box) to run and spawn a number of processes to deal with concurrent requests.
 
-So if you have 100 apache processes waiting to deal with web requests, and you have 101 requests, the 101st user will have to wait until there's a free process before apache can respond.
+So if you have 5 apache processes waiting to deal with web requests, and you have 6 requests, the 6th user will have to wait until there's a free process before apache can respond.
 
 This is usually find when you're deal with a request/response situation, apache is fast for that. But when you're keeping connections open to allow a server to *push* a message to the client, you saturate the available apache processes.
 
-What does this mean in practise? If you have 100 processes and 101 streaming requests, the 101st *will never* receive a response. And to that user, the site is hanging indefinitely.
+What does this mean in practise? If you have 5 processes and 6 streaming *requests*, the 6th *will never* receive a response. And to that user, the site is hanging indefinitely.
 
-The solution to the server issue is evented server. If I recall correctly, this would be :Twisted for Python, Jakarta for Java, Juggernaut for Ruby, etc. But they were non-trivial to set up. I'll explain an evented server later.
+The solution to the server issue is evented server. If I recall correctly, this would be: Twisted for Python, Jakarta for Java, Juggernaut for Ruby, etc. But they were non-trivial to set up.
 
 Come 2009 and Ryan Dahl.
 
@@ -123,11 +173,11 @@ function main
 end function
 ```
 
-In a browser, the `get_next_message` could be the user moving the mouse, or clicking, or an XHR request completing, or a render, or some JavaScript being run. The point being is that the loop waits for a task, then processes that task.
+In a browser, the `get_next_message` could be the user clicking the mouse, or an XHR request completing, or a render, or some JavaScript being run. The point being is that the loop waits for a task, then processes that task.
 
 This is where node.js makes concurrent requests (i.e. holding 100s if not 1000s of open connections to clients) easy.
 
-### Hello world of real time
+### helloworld.js of streaming servers
 
 As Ryan demoed in his talk 5 years ago, the code following is the simple proof that comet servers are incredibly simple with Node. The key with the server side is being able to hang inbound requests *whilst* also getting on with other work, like accepting more inbound requests.
 
@@ -174,7 +224,7 @@ That's to say, today we have *three* native client side solutions to communicati
 2. [WebSockets](http://caniuse.com/#search=websockets). Bi-directional, persistent sockets, that can be made across origin.
 3. [EventSource](http://caniuse.com/#search=eventsource). Push based server *events*, that automatically reconnect when the connection is dropped.
 
-These standards are good because: all browsers implementing new features will implement these features in an interopable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through [polyfills]()).
+These standards are good because: all browsers implementing new features will implement these features in an interopable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through [polyfills](http://html5please.com/#eventsource)).
 
 
 
@@ -203,12 +253,24 @@ What's particularly useful about many of these libraries is that they provide bo
 
 Possibly the most well known, and recently moved to 1.0.
 
-
 * libraries
 * npm
-* socket.io
+* socket.io (1.0)
+* primus.io
 * options
 * notes about mobile!!!
+
+## Scaling
+
+This is a problem on both the server side *and* the client. The server side you want to use the same techniques you'd use for regular web traffic: [HAProxy](http://www.haproxy.org/), [node-http-proxy](https://github.com/nodejitsu/node-http-proxy), nginx, etc. [Nicholas Zakas has an excellent article](http://tech.blog.box.com/2014/06/node-js-high-availability-at-box/) on scaling with HAProxy.
+
+On the client, the issue is saturating the concurrent connections you can have per origin. The [HTTP 1.1 spec](http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html#sec8) states the following for persistent connections:
+
+> Clients that use persistent connections SHOULD limit the number of simultaneous connections that they maintain to a given server. A single-user client SHOULD NOT maintain more than 2 connections with any server or proxy. These guidelines are intended to improve HTTP response times and avoid congestion.
+
+However we know that [Chrome has increased](http://www.chromium.org/developers/design-documents/network-stack#TOC-Connection-Management) this default from 2 to 6 per origin. It doesn't matter what the per browser implementation issue is because they're all *quite* low.
+
+One solution that I know of is (and I believe Facebook do this) is to generate a random origin address (usually of the CNAME) so your socket is connecting to `ws://e01938e4.example.com` and this is aliased back on to your socket server. This way you constantly generate a new origin for the socket to connect through and you don't hit the early limit of 6 (or so) concurrent connections.
 
 ## Long-latency real time feedback
 
@@ -219,6 +281,28 @@ This period length is unknown (i.e. we could be cloning a large project which ta
 Easily with node.js.
 
 [example]
+
+
+## TODO
+
+- scaling: more machines, haproxy, node-proxy
+- auth: lift session off http request and add to socket - show example?
+- ebay: real-time in shopping (how many people watching right now)
+- github: someone commented (or pushed a change)
+- Long polling is important for UX because you can communicate progress...5minfork.com - long tasks (forking on github, transcoding audio, video, parsing large jobs, etc)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
