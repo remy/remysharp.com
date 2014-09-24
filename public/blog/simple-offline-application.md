@@ -18,7 +18,7 @@ Yep, that's it. Since the application cache automatically includes the file that
 
 Make sure you're serving the manifest file correctly, if you're not sure, check out the [HTML5 Doctor introduction to offline applications](http://html5doctor.com/go-offline-with-application-cache/), but otherwise, that's it.
 
-When I went away this last week, I wrote a little Boggle clone, and wanted it work offline on the plane - so I added this technique to the [single file app](http://rem.im/boggle/) (it's only the board and a countdown, not interactive).
+When I went away this last week, I wrote a little Boggle clone, and wanted it work offline on the plane - so I added this technique to the [single file app](http://rem.io/boggle/) (it's only the board and a countdown, not interactive).
 
 Dirt simple, but totally reusable!
 

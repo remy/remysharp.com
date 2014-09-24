@@ -80,7 +80,7 @@ From there I kicked off the server (by default it listens for "iphone"):
 <pre><code>cd twitter-nodejs-websocket
 node server.js &lt;username&gt; &lt;password&gt;</code></pre>
 
-Now on my other "normal" server (though the smoothness of slicehost, I'm now thinking of porting across all my sites) hosts a simple web page (from the example in the git repo) that streams the latest tweets found by the server and should be viewed on a WebSocket enabled browser, i.e. Google Chrome (dev channel) or Webkit nightly: [http://rem.im/relay-tweets.html](http://rem.im/relay-tweets.html) (note that I'll be running this demo for a while, but it may well be taken down in the future). Here's a screenshot in case I've shut it down and moved on:
+Now on my other "normal" server (though the smoothness of slicehost, I'm now thinking of porting across all my sites) hosts a simple web page (from the example in the git repo) that streams the latest tweets found by the server and should be viewed on a WebSocket enabled browser, i.e. Google Chrome (dev channel) or Webkit nightly: [http://rem.io/relay-tweets.html](http://rem.io/relay-tweets.html) (note that I'll be running this demo for a while, but it may well be taken down in the future). Here's a screenshot in case I've shut it down and moved on:
 
 ![Screenshot of streaming tweets](http://remysharp.com/images/twitter-stream.png "Screenshot of streaming tweets")
 
@@ -88,7 +88,7 @@ The core code to run the socket is simply this:
 
 <pre><code>ws = new WebSocket("ws://&lt;host&gt;:8080/");
 
-ws.onmessage = function(event) { 
+ws.onmessage = function(event) {
   var data = JSON.parse(event.data);
   var $p = $(twitterlib.render(data)); // uses <a href="http://github.com/remy/twitterlib">Twitterlib.js</a>
   if ($('#tweets > li').length > 15) {
@@ -96,7 +96,7 @@ ws.onmessage = function(event) {
       $(this).remove();
     });
   }
-  
+
   $('#tweets').prepend($p);
   $p.slideDown(140);
 };
