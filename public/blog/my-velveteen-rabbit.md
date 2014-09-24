@@ -1,6 +1,6 @@
-# My  Velveteen Rabbit
+# My Velveteen Rabbit
 
-<img src="http://remysharp.com/images/spring.jpg?" alt="The Velveteen Rabbit" style="display: block; max-width: 100%; width: 80%; margin: 0 auto">
+<img src="/images/spring.jpg?" alt="The Velveteen Rabbit" style="display: block; max-width: 100%; width: 40%; margin: 0 auto; margin-right: 20px; float: left;">
 
 This is the Velveteen Rabbit. The same picture hangs in my house.
 
@@ -33,3 +33,5 @@ In that moment, that tiny moment, the Velveteen Rabbit does exist, against all o
 I always think of Tia when I look at that picture. She's not here any more. She doesn't exist in my world today. But she's always with me. She *has* left a mark. In my heart. I think of her and miss her. Other people can't see that, but she *is* here, with me.
 
 A person doesn't have to be with you for you to love them. Just remember them. And love them. And they'll live on, with you.
+
+<small>Reposted from <a href="https://the-pastry-box-project.net/remy-sharp/2014-august-26">The Pastry Box Project</a></small>

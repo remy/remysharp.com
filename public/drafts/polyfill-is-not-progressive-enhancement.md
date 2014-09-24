@@ -4,15 +4,9 @@ Jeffrey Zeldman once [wrote](https://twitter.com/zeldman/status/1249289365798420
 
 > Polyfill: a heap of JavaScript dumped on old browsers to give them text-shadows. (Try progressive enhancement instead)
 
-He missed the point entirely of polyfills, and I've been on the fence for a long time as to whether anything should be said.
+
 
 <!--more-->
-
-## Am I picking on Zeldman?
-
-No, or at least I'm not aiming to. Zeldman has (currently) over 1/4 million twitter followers, he achieved [legend-dary status](http://www.youtube.com/watch?v=xV6p0n6dayg#t=0m6s) ages ago, and frankly knows his shit pretty well.
-
-But this (old) tweet is wrong. This post isn't intended as a criticism, more that I want to clarify what the *point* of the polyfilling technique is.
 
 What spurred me to write this post, and is particularly important to me, is the message that's being sent out. If polyfilling truly was just heaping JavaScript in to old browsers, then it would be a **bad idea**, and should be abandoned. Entirely. I wouldn't encourage using the process at all. But it's not that at all, and the suggestion of using progressive enhancement is correct, *but incorrect as an alternative method*.
 
@@ -52,4 +46,4 @@ It's not "try progressive enhancement *instead*", but progressive enhancement sh
 
 Don't write a CSS parser *just* so you can polyfill text-shadow. That's just stupid.
 
-You *do* however, see polyfills being applied at the server side during the build process, something autoprefixer or Myth - which does polyfill, but does it before the user even sees a byte of your code.
+Do use polyfills applied at the server side during the build process, something like autoprefixer or Myth - which does polyfill, but does it before the user even sees a byte of your code.

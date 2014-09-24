@@ -220,9 +220,9 @@ As time passed, using Flash and various hacks to achieve real time eventually la
 
 That's to say, today we have *three* native client side solutions to communicating with the server:
 
-1. [Ajax](http://caniuse.com/#search=xhr2). Well known. Well loved. Well understood. The XHR2 spec takes the API further and gives us much more functionality.
-2. [WebSockets](http://caniuse.com/#search=websockets). Bi-directional, persistent sockets, that can be made across origin.
-3. [EventSource](http://caniuse.com/#search=eventsource). Push based server *events*, that automatically reconnect when the connection is dropped.
+1. Ajax & [XHR2](http://caniuse.com/#search=xhr2). Well known. Well loved. Well understood. The XHR2 spec takes the API further and gives us much more functionality.
+* [EventSource](http://caniuse.com/#search=eventsource). Push based server *events*, that automatically reconnect when the connection is dropped.
+* [WebSockets](http://caniuse.com/#search=websockets). Bi-directional, persistent sockets, that can be made across origin.
 
 These standards are good because: all browsers implementing new features will implement these features in an interopable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through [polyfills](http://html5please.com/#eventsource)).
 
@@ -249,16 +249,17 @@ As I'm sure many of you know, the node module repository is rife with libraries 
 
 What's particularly useful about many of these libraries is that they provide both sides of the infrastructure required to achieve real time, and usually require very little to get started.
 
-### Socket.IO
+The two libraries that I would encourage you to gravitate towards are [Socket.IO](http://socket.io) (v1.x) and [Primus](http://primus.io).
 
-Possibly the most well known, and recently moved to 1.0.
+### Socket abstraction
 
-* libraries
-* npm
-* socket.io (1.0)
-* primus.io
-* options
-* notes about mobile!!!
+Normally I prefer to be quite close to the metal, and I generally code directly with the native APIs, but in this case, both libraries give me an abstraction layer that's *built upon*. This means if I want to multiplex or have specific events emitting on a socket, it's easy as it either comes with the library (in Socket.IO's case) or can be added via middleware (for Primus).
+
+For my examples, I'll use Primus.
+
+## Primus
+
+
 
 ## Scaling
 
