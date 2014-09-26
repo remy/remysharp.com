@@ -265,6 +265,8 @@ For my examples, I'll use Primus.
 
 This is a problem on both the server side *and* the client. The server side you want to use the same techniques you'd use for regular web traffic: [HAProxy](http://www.haproxy.org/), [node-http-proxy](https://github.com/nodejitsu/node-http-proxy), nginx, etc. [Nicholas Zakas has an excellent article](http://tech.blog.box.com/2014/06/node-js-high-availability-at-box/) on scaling with HAProxy.
 
+### Client side
+
 On the client, the issue is saturating the concurrent connections you can have per origin. The [HTTP 1.1 spec](http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html#sec8) states the following for persistent connections:
 
 > Clients that use persistent connections SHOULD limit the number of simultaneous connections that they maintain to a given server. A single-user client SHOULD NOT maintain more than 2 connections with any server or proxy. These guidelines are intended to improve HTTP response times and avoid congestion.
@@ -272,6 +274,24 @@ On the client, the issue is saturating the concurrent connections you can have p
 However we know that [Chrome has increased](http://www.chromium.org/developers/design-documents/network-stack#TOC-Connection-Management) this default from 2 to 6 per origin. It doesn't matter what the per browser implementation issue is because they're all *quite* low.
 
 One solution that I know of is (and I believe Facebook do this) is to generate a random origin address (usually of the CNAME) so your socket is connecting to `ws://e01938e4.example.com` and this is aliased back on to your socket server. This way you constantly generate a new origin for the socket to connect through and you don't hit the early limit of 6 (or so) concurrent connections.
+
+### Server side
+
+Once you scale horizontally with a proxy - or even just drag a Heroku dyno to 11 - you'll be asking yourself how does a socket connected to `server A` talk to a socket connected to `server B`?
+
+The solution I've been exploring is using Primus' middleware combo of [metroplex](https://github.com/primus/metroplex) and [omega-supreme](https://github.com/primus/omega-supreme/) (yes, there's a Transformer theme!).
+
+Metroplex registers your server in a Redis database (version 2.6 or above is required - brew seemed to ship 2.4) upon startup (which *should* auto unregister after 5 minutes of idle). That way you can query redis to ask what servers are also active:
+
+```js
+primus.metroplex.servers(function (err, servers) {
+  console.log('other servers: %d', servers.length, servers);
+});
+```
+
+Note that the address for the server is the same address as the webserver that your Primus instance is bound to.
+
+
 
 ## Long-latency real time feedback
 
