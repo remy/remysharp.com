@@ -1,10 +1,8 @@
 # Muddling my way through real time
 
-## Thesis
-
 If your business deals with data on the web, then that data must be handled in real time, otherwise you're doing your user a disservice.
 
-## Real time
+---
 
 Real time demand is a core part of our internet experience, let alone expectation.
 
@@ -21,6 +19,28 @@ I recently returned from jsconf.eu 2014, and sitting in the office, only days la
 ![Muddling your way in real time](/images/muddling-in-real-time-cover.gif)
 
 ---
+
+## Contents
+
+1. [What is real time to you](#what-is-real-time-to-you)
+2. [My first introduction to real time on the web](#my-first-introduction-to-real-time-on-the-web)
+3. [The origins of Comet](#the-origins-of-comet)
+4. [Node is introduced](#node-is-introduced)
+  * [The event loop](#the-event-loop)
+  * [helloworld.js of streaming servers](#helloworldjs-of-streaming-servers)
+5. [Codifying into standards](#codifying-into-standards)
+6. [So, what's next?](#so-whats-next)
+7. [Core npm modules](#core-npm-modules)
+  * [Socket abstraction](#socket-abstraction)
+8. [Primus](#primus)
+9. [Scaling](#scaling)
+  * [Client side](#client-side)
+  * [Server side](#server-side)
+10. [Long-latency real time feedback](#long-latency-real-time-feedback)
+
+
+
+## What is real time to you?
 
 I think it's important to define what *I think* "real time" means. [Guillermo Rauch](http://www.devthought.com/) (creator of Socket.IO) has a [few](https://www.youtube.com/watch?v=Ar9R-CX217o) [excellent](https://www.youtube.com/watch?v=_8CykecwKhw) talks on the topic, and he describes real time as:
 
@@ -226,8 +246,6 @@ That's to say, today we have *three* native client side solutions to communicati
 
 These standards are good because: all browsers implementing new features will implement these features in an interopable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through [polyfills](http://html5please.com/#eventsource)).
 
-
-
 ## So, what's next?
 
 Now we live in a world where both the client side *and* server side has been solved and is simple to work with, what can we actually do?
@@ -255,11 +273,74 @@ The two libraries that I would encourage you to gravitate towards are [Socket.IO
 
 Normally I prefer to be quite close to the metal, and I generally code directly with the native APIs, but in this case, both libraries give me an abstraction layer that's *built upon*. This means if I want to multiplex or have specific events emitting on a socket, it's easy as it either comes with the library (in Socket.IO's case) or can be added via middleware (for Primus).
 
-For my examples, I'll use Primus.
+The benefits of each, as I seem them are:
+
+- Socket.IO: will test and degrade down to the best technology to sustain a persistent connection
+- Primus: provides a common low level interface to communicate with socket libraries and to "prevent module lock-in", but of specific interest is the middleware selection
+
+For my examples, I'm using Primus with the `websocket` transformer.
 
 ## Primus
 
+Primus used both on the server side and client side. I'm using express for my examples, so we bind Primus to the express http server:
 
+```js
+// setup express
+var express = require('express');
+var app = express();
+var server = require('http').createServer(app);
+
+var Primus = require('primus');
+
+// now instantiate primus with our express server
+var primus = new Primus(server, {
+  transformer: 'websockets'
+});
+
+// add the emit middleware letting me define my own event types
+primus.use('emit', require('primus-emit'));
+
+// when we get a connection...
+primus.on('connection', function (spark) {
+  // the socket is referred to as a "spark"
+
+  // respond to ping events with a pong
+  spark.on('ping', function () {
+    spark.emit('pong');
+  });
+});
+```
+
+The client side is simple and small, and also has the ability to emit (rather than *just* `primus.on('data', fn)` and `primus.write(data)`) because the server includes the [emit](https://github.com/primus/emit) middleware:
+
+```html
+<!-- magic script provided by primus, note that -->
+<!-- this can saved and served as a static file -->
+<script src="/primus/primus.js"></script>
+<script>
+var primus = Primus.connect('/');
+
+primus.on('pong', function () {
+  alert('Pong received loud and clear');
+});
+
+primus.emit('ping');
+</script>
+```
+
+That's it. The source for my [face-tap game is on github](https://github.com/remy/face-hit-game) and can be seen on [game.rem.io](http://game.rem.io) and be sure to try it whilst you have the [scoreboard](http://game.rem.io/scores) open.
+
+The game uses Primus to communicate, but also includes a broadcast function to all except "me":
+
+```js
+function broadcast(event, data, source) {
+  primus.forEach(function (spark) {
+    if (spark.id !== source.id) {
+      spark.emit(event, data);
+    }
+  });
+}
+```
 
 ## Scaling
 
