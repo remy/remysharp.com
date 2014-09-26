@@ -4,10 +4,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-muddling-my-way-through-real-time-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/24/my-velveteen-rabbit" title="My  Velveteen Rabbit">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 24-Sep 2014</div><article class="post"><h1 class="title"><a href="/drafts/muddling-my-way-through-real-time">Muddling my way through real time</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/muddling-my-way-through-real-time.md">(edit)</a></small></h1><div class="post-content">
-<h2>Thesis</h2>
+ga('send', 'pageview');</script></head><body id="drafts-muddling-my-way-through-real-time-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/24/my-velveteen-rabbit" title="My  Velveteen Rabbit">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 26-Sep 2014</div><article class="post"><h1 class="title"><a href="/drafts/muddling-my-way-through-real-time">Muddling my way through real time</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/muddling-my-way-through-real-time.md">(edit)</a></small></h1><div class="post-content">
 <p>If your business deals with data on the web, then that data must be handled in real time, otherwise you&#39;re doing your user a disservice.</p>
-<h2>Real time</h2>
+<hr>
 <p>Real time demand is a core part of our internet experience, let alone expectation.</p>
 <p>Twitter is probably the crowning application of real time I can think of. Hitting the mass audience and industries across the board.</p>
 <p>Today we have real time journalism, data, feedback, communication between our teams, from our code and tests. Heck, we can create a brand new virtual machine in under 60 seconds ready to deploy a new site. <em>Back in my day</em>&trade; that process would take 2 weeks!</p>
@@ -17,6 +16,31 @@ ga('send', 'pageview');</script></head><body id="drafts-muddling-my-way-through-
 
 <p><img src="/images/muddling-in-real-time-cover.gif" alt="Muddling your way in real time"></p>
 <hr>
+<h2>Contents</h2>
+<ol>
+<li><a href="#what-is-real-time-to-you">What is real time to you</a></li>
+<li><a href="#my-first-introduction-to-real-time-on-the-web">My first introduction to real time on the web</a></li>
+<li><a href="#the-origins-of-comet">The origins of Comet</a></li>
+<li><a href="#node-is-introduced">Node is introduced</a><ul>
+<li><a href="#the-event-loop">The event loop</a></li>
+<li><a href="#helloworldjs-of-streaming-servers">helloworld.js of streaming servers</a></li>
+</ul>
+</li>
+<li><a href="#codifying-into-standards">Codifying into standards</a></li>
+<li><a href="#so-whats-next">So, what&#39;s next?</a></li>
+<li><a href="#core-npm-modules">Core npm modules</a><ul>
+<li><a href="#socket-abstraction">Socket abstraction</a></li>
+</ul>
+</li>
+<li><a href="#primus">Primus</a></li>
+<li><a href="#scaling">Scaling</a><ul>
+<li><a href="#client-side">Client side</a></li>
+<li><a href="#server-side">Server side</a></li>
+</ul>
+</li>
+<li><a href="#long-latency-real-time-feedback">Long-latency real time feedback</a></li>
+</ol>
+<h2>What is real time to you?</h2>
 <p>I think it&#39;s important to define what <em>I think</em> &quot;real time&quot; means. <a href="http://www.devthought.com/">Guillermo Rauch</a> (creator of Socket.IO) has a <a href="https://www.youtube.com/watch?v=Ar9R-CX217o">few</a> <a href="https://www.youtube.com/watch?v=_8CykecwKhw">excellent</a> talks on the topic, and he describes real time as:</p>
 <ul>
 <li>Fast</li>
@@ -160,16 +184,77 @@ server.listen(8080);</code></pre>
 <p>The two libraries that I would encourage you to gravitate towards are <a href="http://socket.io">Socket.IO</a> (v1.x) and <a href="http://primus.io">Primus</a>.</p>
 <h3>Socket abstraction</h3>
 <p>Normally I prefer to be quite close to the metal, and I generally code directly with the native APIs, but in this case, both libraries give me an abstraction layer that&#39;s <em>built upon</em>. This means if I want to multiplex or have specific events emitting on a socket, it&#39;s easy as it either comes with the library (in Socket.IO&#39;s case) or can be added via middleware (for Primus).</p>
-<p>For my examples, I&#39;ll use Primus.</p>
+<p>The benefits of each, as I seem them are:</p>
+<ul>
+<li>Socket.IO: will test and degrade down to the best technology to sustain a persistent connection</li>
+<li>Primus: provides a common low level interface to communicate with socket libraries and to &quot;prevent module lock-in&quot;, but of specific interest is the middleware selection</li>
+</ul>
+<p>For my examples, I&#39;m using Primus with the <code>websocket</code> transformer.</p>
 <h2>Primus</h2>
+<p>Primus used both on the server side and client side. I&#39;m using express for my examples, so we bind Primus to the express http server:</p>
+<pre><code class="language-js">// setup express
+var express = require(&#39;express&#39;);
+var app = express();
+var server = require(&#39;http&#39;).createServer(app);
+
+var Primus = require(&#39;primus&#39;);
+
+// now instantiate primus with our express server
+var primus = new Primus(server, {
+  transformer: &#39;websockets&#39;
+});
+
+// add the emit middleware letting me define my own event types
+primus.use(&#39;emit&#39;, require(&#39;primus-emit&#39;));
+
+// when we get a connection...
+primus.on(&#39;connection&#39;, function (spark) {
+  // the socket is referred to as a &quot;spark&quot;
+
+  // respond to ping events with a pong
+  spark.on(&#39;ping&#39;, function () {
+    spark.emit(&#39;pong&#39;);
+  });
+});</code></pre>
+<p>The client side is simple and small, and also has the ability to emit (rather than <em>just</em> <code>primus.on(&#39;data&#39;, fn)</code> and <code>primus.write(data)</code>) because the server includes the <a href="https://github.com/primus/emit">emit</a> middleware:</p>
+<pre><code class="language-html">&lt;!-- magic script provided by primus, note that --&gt;
+&lt;!-- this can saved and served as a static file --&gt;
+&lt;script src=&quot;/primus/primus.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+var primus = Primus.connect(&#39;/&#39;);
+
+primus.on(&#39;pong&#39;, function () {
+  alert(&#39;Pong received loud and clear&#39;);
+});
+
+primus.emit(&#39;ping&#39;);
+&lt;/script&gt;</code></pre>
+<p>That&#39;s it. The source for my <a href="https://github.com/remy/face-hit-game">face-tap game is on github</a> and can be seen on <a href="http://game.rem.io">game.rem.io</a> and be sure to try it whilst you have the <a href="http://game.rem.io/scores">scoreboard</a> open.</p>
+<p>The game uses Primus to communicate, but also includes a broadcast function to all except &quot;me&quot;:</p>
+<pre><code class="language-js">function broadcast(event, data, source) {
+  primus.forEach(function (spark) {
+    if (spark.id !== source.id) {
+      spark.emit(event, data);
+    }
+  });
+}</code></pre>
 <h2>Scaling</h2>
 <p>This is a problem on both the server side <em>and</em> the client. The server side you want to use the same techniques you&#39;d use for regular web traffic: <a href="http://www.haproxy.org/">HAProxy</a>, <a href="https://github.com/nodejitsu/node-http-proxy">node-http-proxy</a>, nginx, etc. <a href="http://tech.blog.box.com/2014/06/node-js-high-availability-at-box/">Nicholas Zakas has an excellent article</a> on scaling with HAProxy.</p>
+<h3>Client side</h3>
 <p>On the client, the issue is saturating the concurrent connections you can have per origin. The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html#sec8">HTTP 1.1 spec</a> states the following for persistent connections:</p>
 <blockquote>
 <p>Clients that use persistent connections SHOULD limit the number of simultaneous connections that they maintain to a given server. A single-user client SHOULD NOT maintain more than 2 connections with any server or proxy. These guidelines are intended to improve HTTP response times and avoid congestion.</p>
 </blockquote>
 <p>However we know that <a href="http://www.chromium.org/developers/design-documents/network-stack#TOC-Connection-Management">Chrome has increased</a> this default from 2 to 6 per origin. It doesn&#39;t matter what the per browser implementation issue is because they&#39;re all <em>quite</em> low.</p>
 <p>One solution that I know of is (and I believe Facebook do this) is to generate a random origin address (usually of the CNAME) so your socket is connecting to <code>ws://e01938e4.example.com</code> and this is aliased back on to your socket server. This way you constantly generate a new origin for the socket to connect through and you don&#39;t hit the early limit of 6 (or so) concurrent connections.</p>
+<h3>Server side</h3>
+<p>Once you scale horizontally with a proxy - or even just drag a Heroku dyno to 11 - you&#39;ll be asking yourself how does a socket connected to <code>server A</code> talk to a socket connected to <code>server B</code>?</p>
+<p>The solution I&#39;ve been exploring is using Primus&#39; middleware combo of <a href="https://github.com/primus/metroplex">metroplex</a> and <a href="https://github.com/primus/omega-supreme/">omega-supreme</a> (yes, there&#39;s a Transformer theme!).</p>
+<p>Metroplex registers your server in a Redis database (version 2.6 or above is required - brew seemed to ship 2.4) upon startup (which <em>should</em> auto unregister after 5 minutes of idle). That way you can query redis to ask what servers are also active:</p>
+<pre><code class="language-js">primus.metroplex.servers(function (err, servers) {
+  console.log(&#39;other servers: %d&#39;, servers.length, servers);
+});</code></pre>
+<p>Note that the address for the server is the same address as the webserver that your Primus instance is bound to.</p>
 <h2>Long-latency real time feedback</h2>
 <p>One aspect that particularly interests me is long running requests. For example, when I created 5minfork (a site that clones a github repo and hosts it for 5 minutes), there&#39;s a point when the user requests to clone a git repo and there&#39;s a latency period.</p>
 <p>This period length is unknown (i.e. we could be cloning a large project which takes time), but we do know that it&#39;s not instant. So how do we communicate to the user that work is in progress and <em>most importantly</em> tell the user that the work is done and they can proceed?</p>
