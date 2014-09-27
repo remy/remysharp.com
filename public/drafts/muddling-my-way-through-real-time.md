@@ -14,6 +14,10 @@ I recently returned from jsconf.eu 2014, and sitting in the office, only days la
 
 *On demand* and *real time* is a normal part of the world we live in today. And if you can't handle the pressure, your visitor will likely head off elsewhere.
 
+---
+
+This is my write up of the talk I've given on the subject. [Slides are also available](https://speakerdeck.com/rem/muddling-my-way-through-real-time) - though do not include much information on their own.
+
 <!--more-->
 
 ![Muddling your way in real time](/images/muddling-in-real-time-cover.gif)
@@ -354,7 +358,11 @@ On the client, the issue is saturating the concurrent connections you can have p
 
 However we know that [Chrome has increased](http://www.chromium.org/developers/design-documents/network-stack#TOC-Connection-Management) this default from 2 to 6 per origin. It doesn't matter what the per browser implementation issue is because they're all *quite* low.
 
-One solution that I know of is (and I believe Facebook do this) is to generate a random origin address (usually of the CNAME) so your socket is connecting to `ws://e01938e4.example.com` and this is aliased back on to your socket server. This way you constantly generate a new origin for the socket to connect through and you don't hit the early limit of 6 (or so) concurrent connections.
+One solution that I know of is (and I believe Facebook also do this) is to generate a random origin address (usually a CNAME) so your socket is connecting to `ws://e01938e4.example.com` and this is aliased back on to your socket server. This way you constantly generate a new origin for the socket to connect through and you don't hit the early limit of 6 (or so) concurrent connections.
+
+If I was using Heroku to scale, I'd add the domain `*.example.com` to the list of domains in the settings panel for the app.
+
+Now `anything.example.com` will land on my Heroku app and I can bypass the browser's limit on persistent connections by origin.
 
 ### Server side
 
