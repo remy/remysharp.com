@@ -180,6 +180,13 @@ Taking a lead from [Makefile recipes for Node.js packages](https://andreypopp.co
 $ make release-minor publish
 ```
 
-This will build out my blog, with a bumped version that's used for cache busting (and `release-patch` does not do any cache busting) and then publish it all to Heroku for live consumption.
+The `release-*` tasks will:
 
-And that's it! Here's the full running [source to remysharp.com](https://github.com/remy/remysharp.com).
+1. Bump the package version (according to patch/minor/major)
+2. Compile Harp to static files
+3. Commit all changes and tag
+4. Push to github
+
+The version bump has to happen first so that the version I used to cache bust in the compiled output is correct (otherwise you bump after the compilation, and then your released version is one step ahead of the version that appears in the source).
+
+And that's it! Here's the full running [source to remysharp.com](https://github.com/remy/remysharp.com) - feel free to help yourself to anything that's useful for your own blogs or sites.
