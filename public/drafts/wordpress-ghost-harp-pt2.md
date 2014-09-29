@@ -6,14 +6,14 @@ I wrote about moving away from WordPress to Ghost and then to Harp in [part 1](/
 
 ## Technical overview
 
-I'm using [Harp](http://harpjs.com) which is incredibly easy to get running with, but I'm also running Harp as a dependencies inside my own custom node web server which allows me to add a few bells a whistles to my implementation.
+I'm using [Harp](http://harpjs.com) which is incredibly easy to get running with, but I'm also running Harp as a dependency inside my own custom node web server which allows me to add a few bells a whistles to my implementation.
 
-* Custom URL rewriting
-* Static caching
-* Use of special helpers inside Harp, such as [moment.js](http://momentjs.com)
-* List of recently modified posts
-* Archive & tag pages without the repetition of files
-* Makefile based release process
+* [Custom URL rewriting](#custom-url-rewriting)
+* [Static caching](#static-caching)
+* [Use of special helpers inside Harp, such as moment.js](#use-of-special-helpers-inside-harp)
+* [List of recently modified posts](#list-of-recently-modified-posts)
+* [Archive & tag pages without the repetition of files](#archive--tag-pages-without-the-repetition-of-files)
+* [Makefile based release process](#makefile-based-release-process)
 
 ## Custom URL rewriting
 
@@ -182,4 +182,4 @@ $ make release-minor publish
 
 This will build out my blog, with a bumped version that's used for cache busting (and `release-patch` does not do any cache busting) and then publish it all to Heroku for live consumption.
 
-And that's it!
+And that's it! Here's the full running [source to remysharp.com](https://github.com/remy/remysharp.com).
