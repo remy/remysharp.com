@@ -4,19 +4,19 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-wordpress-ghost-harp-pt2-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/24/my-velveteen-rabbit" title="My  Velveteen Rabbit">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 28-Sep 2014</div><article class="post"><h1 class="title"><a href="/drafts/wordpress-ghost-harp-pt2">WordPress to Ghost to Harp: part 2</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/wordpress-ghost-harp-pt2.md">(edit)</a></small></h1><div class="post-content">
+ga('send', 'pageview');</script></head><body id="drafts-wordpress-ghost-harp-pt2-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/24/my-velveteen-rabbit" title="My  Velveteen Rabbit">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 29-Sep 2014</div><article class="post"><h1 class="title"><a href="/drafts/wordpress-ghost-harp-pt2">WordPress to Ghost to Harp: part 2</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/wordpress-ghost-harp-pt2.md">(edit)</a></small></h1><div class="post-content">
 <p>I wrote about moving away from WordPress to Ghost and then to Harp in <a href="/2014/09/18/wordpress-ghost-harp-pt1">part 1</a>, this post details some of the specifics of my blog&#39;s implementation.</p>
 <!--more-->
 
 <h2>Technical overview</h2>
-<p>I&#39;m using <a href="http://harpjs.com">Harp</a> which is incredibly easy to get running with, but I&#39;m also running Harp as a dependencies inside my own custom node web server which allows me to add a few bells a whistles to my implementation.</p>
+<p>I&#39;m using <a href="http://harpjs.com">Harp</a> which is incredibly easy to get running with, but I&#39;m also running Harp as a dependency inside my own custom node web server which allows me to add a few bells a whistles to my implementation.</p>
 <ul>
-<li>Custom URL rewriting</li>
-<li>Static caching</li>
-<li>Use of special helpers inside Harp, such as <a href="http://momentjs.com">moment.js</a></li>
-<li>List of recently modified posts</li>
-<li>Archive &amp; tag pages without the repetition of files</li>
-<li>Makefile based release process</li>
+<li><a href="#custom-url-rewriting">Custom URL rewriting</a></li>
+<li><a href="#static-caching">Static caching</a></li>
+<li><a href="#use-of-special-helpers-inside-harp">Use of special helpers inside Harp, such as moment.js</a></li>
+<li><a href="#list-of-recently-modified-posts">List of recently modified posts</a></li>
+<li><a href="#archive--tag-pages-without-the-repetition-of-files">Archive &amp; tag pages without the repetition of files</a></li>
+<li><a href="#makefile-based-release-process">Makefile based release process</a></li>
 </ul>
 <h2>Custom URL rewriting</h2>
 <p>Since I was porting an existing blog, I wanted to ensure that the URLs didn&#39;t change. This meant supported my old <code>/year/month/day/title</code> format. Which over the years I dislike, but when I moved to Harp, I decided to drop the date from the body of my posts and allow the URL to speak for that metadata.</p>
@@ -125,7 +125,7 @@ posts = partial(&#39;posts&#39;, { filter: function (post) { return post.tags.in
 <p>Taking a lead from <a href="https://andreypopp.com/posts/2013-05-16-makefile-recipes-for-node-js.html">Makefile recipes for Node.js packages</a>, my <a href="https://github.com/remy/remysharp.com/blob/master/Makefile">makefile</a> allows me to run commands like:</p>
 <pre><code class="language-bash">$ make release-minor publish</code></pre>
 <p>This will build out my blog, with a bumped version that&#39;s used for cache busting (and <code>release-patch</code> does not do any cache busting) and then publish it all to Heroku for live consumption.</p>
-<p>And that&#39;s it!</p>
+<p>And that&#39;s it! Here&#39;s the full running <a href="https://github.com/remy/remysharp.com">source to remysharp.com</a>.</p>
 <p class="update">Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.</p></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
 </div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.6"></script><script src="/js/index.js?2.6"></script><!--  
   
