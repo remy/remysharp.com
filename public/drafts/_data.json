@@ -36,14 +36,6 @@
       "web"
     ]
   },
-  "wordpress-ghost-harp-pt2": {
-    "title": "WordPress to Ghost to Harp: part 2",
-    "date": "2014-09-29 12:00:00",
-    "published": false,
-    "tags": [
-      "web"
-    ]
-  },
   "muddling-my-way-through-real-time": {
     "title": "Muddling my way through real time",
     "date": "2014-09-30 12:00:00",
@@ -52,5 +44,12 @@
       "web",
       "html5"
     ]
+  },
+  "what-is-a-web-app": {
+    "title": "What is a \"Web App\"?",
+    "date": "2014-09-30 12:00:00",
+    "published": false,
+    "tags": [
+    "web"]
   }
 }
