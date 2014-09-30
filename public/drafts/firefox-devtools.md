@@ -20,3 +20,11 @@ A week of Firefox devtools.
 - Box model view: isn't clear what is padding/margin/etc - since everything is highlighted when I hover over box model. Took me a while to cognitively link the value to the visual area on the page
 - Changing the padding in the box model view was very/unusably slow
 - Responsive view: Great tool, would be great if I could use the cursors to change the height & width of the
+
+## Misc issues
+
+- Keyboard shortcuts seem to exist, but the documentation seemed to be lacking. I found the browser shortcuts webpage (which wouldn't be useful if coding offline), but it only listed a few
+
+## Misc awesome
+
+- Event listeners on DOM nodes visible from the inspector view *and* being able to set breakpoints directly from there - very cool.
