@@ -168,7 +168,7 @@ body {
   padding: 0;
   font: 0.625em 'helvetica neue', arial, sans-serif;
   font-size: 100%;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 32px;
   background: rgb(255, 255, 255);
   margin: 0 auto 15px auto;
@@ -180,8 +180,8 @@ img {
 }
 
 hr {
+  border: 0;
   border-top: 1px solid #aaa;
-  border-bottom: 0;
 }
 
 a {
@@ -695,7 +695,7 @@ body > footer {
   color: #fff;
   font-size: 120%;
   font-weight: bold;
-  border: 10px dotted darken(#FF4136, 30%)
+  border: 10px dashed darken(#FF4136, 30%)
 }
 
 @media only screen and (max-width: 720px) {
@@ -729,6 +729,10 @@ body > footer {
   small.edit {
     bottom: 0;
     left: 0;
+  }
+
+  .warning {
+    padding: 10px;
   }
 
   body > footer {
