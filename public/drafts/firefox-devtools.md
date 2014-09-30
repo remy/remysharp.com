@@ -1,6 +1,6 @@
 # Firefox devtools notes
 
-A week of Firefox devtools.
+A week of Firefox devtools. Please note that this document is for me to recall issues (or good things) I encountered during immercing myself in devtools (instead of Chrome devtools) and I am also recording screencasts of my sessions which (I may edit) and hope to send to the devtools team (if they think it'll be useful).
 
 ---
 
