@@ -292,9 +292,14 @@ Primus used both on the server side and client side. I'm using express for my ex
 // setup express
 var express = require('express');
 var app = express();
+var Primus = require('primus');
+
+// configure express
+app.use(express.static('.'));
 var server = require('http').createServer(app);
 
-var Primus = require('primus');
+// start the web server
+server.listen(process.env.PORT || 8000);
 
 // now instantiate primus with our express server
 var primus = new Primus(server, {
@@ -306,7 +311,7 @@ primus.use('emit', require('primus-emit'));
 
 // when we get a connection...
 primus.on('connection', function (spark) {
-  // the socket is referred to as a "spark"
+  // the inbound socket is referred to as a "spark"
 
   // respond to ping events with a pong
   spark.on('ping', function () {
@@ -332,7 +337,7 @@ primus.emit('ping');
 </script>
 ```
 
-That's it. The source for my [face-tap game is on github](https://github.com/remy/face-hit-game) and can be seen on [game.rem.io](http://game.rem.io) and be sure to try it whilst you have the [scoreboard](http://game.rem.io/scores) open.
+[Here's a live demo](http://sheltered-wave-6638.herokuapp.com/) (for what it's worth!). That's really all there is to it. The source for my [face-tap game is on github](https://github.com/remy/face-hit-game) and can be seen on [game.rem.io](http://game.rem.io) and be sure to try it whilst you have the [scoreboard](http://game.rem.io/scores) open.
 
 The game uses Primus to communicate, but also includes a broadcast function to all except "me":
 
@@ -373,6 +378,20 @@ The solution I've been exploring is using Primus' middleware combo of [metroplex
 Metroplex registers your server in a Redis database (version 2.6 or above is required - brew seemed to ship 2.4) upon startup (which *should* auto unregister after 5 minutes of idle). That way you can query redis to ask what servers are also active:
 
 ```js
+// I'm passing in a redis instance so that all my
+// instances of this server connect to the _same_
+// redis database.
+var primus = new Primus(server, {
+  transformer: 'websockets',
+  redis: redis,
+});
+
+// add the Primus middleware (after instantiation)
+primus.use('metroplex', require('metroplex'));
+primus.use('omega-supreme', require('omega-supreme'));
+primus.use('emit', require('primus-emit'));
+
+// now I can query the registered servers
 primus.metroplex.servers(function (err, servers) {
   console.log('other servers: %d', servers.length, servers);
 });
@@ -380,6 +399,37 @@ primus.metroplex.servers(function (err, servers) {
 
 Note that the address for the server is the same address as the webserver that your Primus instance is bound to.
 
+Then with omega-supreme, you can forward messages to known servers. So if `server A` knows that `server B` is active, it can forwad broadcast messages to `server B`:
+
+```
+primus.forward(server, data, function (error, data) {
+  // data contains the number of sparks that got the message
+});
+```
+
+The above example, `server` would be the address of `server B`. Now if we upgrade the `broadcast` function from above, it would look like this:
+
+```
+function broadcast(event, data, source) {
+  // query which servers are registered to our redis db
+  primus.metroplex.servers(function (err, servers) {
+    servers.forEach(function (server) {
+      primus.forward(server, {
+        emit: [event, data]
+      }, noop);
+    });
+  });
+
+  // note that the primus forward will handle this for us
+  primus.forEach(function (spark) {
+    if (spark.id !== source.id) {
+      spark.emit(event, data);
+    }
+  });
+}
+```
+
+Note that for omega-supreme to support the `emit` method for named events, instead of passing in `data` as the second argument to `primus.forward`, you pass in an object that simply contains `emit: [event, data]`. This will then fire the named events as I'm using them in my code.
 
 
 ## Long-latency real time feedback
@@ -395,9 +445,6 @@ Easily with node.js.
 
 ## TODO
 
-- scaling: more machines, haproxy, node-proxy
-- auth: lift session off http request and add to socket - show example?
-- ebay: real-time in shopping (how many people watching right now)
 - github: someone commented (or pushed a change)
 - Long polling is important for UX because you can communicate progress...5minfork.com - long tasks (forking on github, transcoding audio, video, parsing large jobs, etc)
 
