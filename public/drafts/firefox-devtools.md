@@ -4,7 +4,7 @@ A week of Firefox devtools. Please note that this document is for me to recall i
 
 ---
 
-35.0a1 (2014-09-30)
+Build: 35.0a1 (2014-09-30)
 
 ## Task: change font weight
 
@@ -21,7 +21,7 @@ A week of Firefox devtools. Please note that this document is for me to recall i
 - Changing the padding in the box model view was very/unusably slow
 - Responsive view: Great tool, would be great if I could use the cursors to change the height & width of the
 
-## Task: fix jsbin's linting not appearing
+## Task: fix jsbin's linting not appearing (note: run in Firefox, not Nightly - sorry!)
 
 - Most time spent in debugging panel to solve this problem
 - Find is excellent, really like that I can use special commands like ! and @ for code wide or function definition searches.
