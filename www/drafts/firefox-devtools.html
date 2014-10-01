@@ -4,10 +4,10 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/30/wordpress-ghost-harp-pt2" title="WordPress -&gt; Ghost -&gt; Harp (part 2)">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 30-Sep 2014</div><article class="post"><h1 class="title"><a href="/drafts/firefox-devtools"></a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/firefox-devtools.md">(edit)</a></small></h1><div class="post-content">
+ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/30/wordpress-ghost-harp-pt2" title="WordPress -&gt; Ghost -&gt; Harp (part 2)">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 1-Oct 2014</div><article class="post"><h1 class="title"><a href="/drafts/firefox-devtools"></a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/firefox-devtools.md">(edit)</a></small></h1><div class="post-content">
 <p>A week of Firefox devtools. Please note that this document is for me to recall issues (or good things) I encountered during immercing myself in devtools (instead of Chrome devtools) and I am also recording screencasts of my sessions which (I may edit) and hope to send to the devtools team (if they think it&#39;ll be useful).</p>
 <hr>
-<p>35.0a1 (2014-09-30)</p>
+<p>Build: 35.0a1 (2014-09-30)</p>
 <h2>Task: change font weight</h2>
 <ul>
 <li>Increase font size - hover information and style editor code complete is not aligned</li>
@@ -23,6 +23,19 @@ ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><
 <li>Changing the padding in the box model view was very/unusably slow</li>
 <li>Responsive view: Great tool, would be great if I could use the cursors to change the height &amp; width of the</li>
 </ul>
+<h2>Task: fix jsbin&#39;s linting not appearing (note: run in Firefox, not Nightly - sorry!)</h2>
+<ul>
+<li>Most time spent in debugging panel to solve this problem</li>
+<li>Find is excellent, really like that I can use special commands like ! and @ for code wide or function definition searches.</li>
+<li>Find&#39;s function definition search having the object property next to function name is very useful</li>
+<li>Also really liked the stack trace breadcrumbs across the top of the source - very easy to navigate</li>
+<li>Had some weird issues where the debugger would get lost, and no longer be in a paused state</li>
+<li>Big issue when code was paused and I stepped back using stack trace, it would jump to totally arbitrary line of code, and not the executed line, however the green arrow indicating the execution took &quot;this route&quot; was a very useful visual tool</li>
+<li>Was a shame that I couldn&#39;t change the code whilst in a paused state - I&#39;m very used to debugging this way in chrome</li>
+<li>I tried to hide away the list of source files…and managed, but then couldn&#39;t get it back - and then the hover to inspect object would randomly cause the source list to reappear (then vanish), so the ui would jump under my cursor a lot</li>
+<li>Hover to inspect was quite powerful, though I found it hard to get the actual property that I was interested in</li>
+</ul>
+<hr>
 <h2>Misc issues</h2>
 <ul>
 <li>Keyboard shortcuts seem to exist, but the documentation seemed to be lacking. I found the browser shortcuts webpage (which wouldn&#39;t be useful if coding offline), but it only listed a few</li>
@@ -30,6 +43,7 @@ ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><
 <h2>Misc awesome</h2>
 <ul>
 <li>Event listeners on DOM nodes visible from the inspector view <em>and</em> being able to set breakpoints directly from there - very cool.</li>
+<li>Find (cmd+o and cmd+p - same effect) is very cool with the command prefixes: ! @ # *</li>
 </ul>
 <p class="update">Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.</p></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
 </div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.10"></script><script src="/js/index.js?2.10"></script><!--  
