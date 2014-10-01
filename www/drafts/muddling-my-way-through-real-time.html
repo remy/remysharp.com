@@ -1,10 +1,10 @@
-<!DOCTYPE html><html id="remysharp-com"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Muddling my way through real time</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css?2.9"><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.9"><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html><html id="remysharp-com"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Muddling my way through real time</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css?2.10"><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.10"><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-muddling-my-way-through-real-time-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/30/wordpress-ghost-harp-pt2" title="WordPress -&gt; Ghost -&gt; Harp (part 2)">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 27-Sep 2014</div><article class="post"><h1 class="title"><a href="/drafts/muddling-my-way-through-real-time">Muddling my way through real time</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/muddling-my-way-through-real-time.md">(edit)</a></small></h1><div class="post-content">
+ga('send', 'pageview');</script></head><body id="drafts-muddling-my-way-through-real-time-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/30/wordpress-ghost-harp-pt2" title="WordPress -&gt; Ghost -&gt; Harp (part 2)">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 1-Oct 2014</div><article class="post"><h1 class="title"><a href="/drafts/muddling-my-way-through-real-time">Muddling my way through real time</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/muddling-my-way-through-real-time.md">(edit)</a></small></h1><div class="post-content">
 <p>If your business deals with data on the web, then that data must be handled in real time, otherwise you&#39;re doing your user a disservice.</p>
 <hr>
 <p>Real time demand is a core part of our internet experience, let alone expectation.</p>
@@ -197,9 +197,14 @@ server.listen(8080);</code></pre>
 <pre><code class="language-js">// setup express
 var express = require(&#39;express&#39;);
 var app = express();
+var Primus = require(&#39;primus&#39;);
+
+// configure express
+app.use(express.static(&#39;.&#39;));
 var server = require(&#39;http&#39;).createServer(app);
 
-var Primus = require(&#39;primus&#39;);
+// start the web server
+server.listen(process.env.PORT || 8000);
 
 // now instantiate primus with our express server
 var primus = new Primus(server, {
@@ -211,7 +216,7 @@ primus.use(&#39;emit&#39;, require(&#39;primus-emit&#39;));
 
 // when we get a connection...
 primus.on(&#39;connection&#39;, function (spark) {
-  // the socket is referred to as a &quot;spark&quot;
+  // the inbound socket is referred to as a &quot;spark&quot;
 
   // respond to ping events with a pong
   spark.on(&#39;ping&#39;, function () {
@@ -231,7 +236,7 @@ primus.on(&#39;pong&#39;, function () {
 
 primus.emit(&#39;ping&#39;);
 &lt;/script&gt;</code></pre>
-<p>That&#39;s it. The source for my <a href="https://github.com/remy/face-hit-game">face-tap game is on github</a> and can be seen on <a href="http://game.rem.io">game.rem.io</a> and be sure to try it whilst you have the <a href="http://game.rem.io/scores">scoreboard</a> open.</p>
+<p><a href="http://sheltered-wave-6638.herokuapp.com/">Here&#39;s a live demo</a> (for what it&#39;s worth!). That&#39;s really all there is to it. The source for my <a href="https://github.com/remy/face-hit-game">face-tap game is on github</a> and can be seen on <a href="http://game.rem.io">game.rem.io</a> and be sure to try it whilst you have the <a href="http://game.rem.io/scores">scoreboard</a> open.</p>
 <p>The game uses Primus to communicate, but also includes a broadcast function to all except &quot;me&quot;:</p>
 <pre><code class="language-js">function broadcast(event, data, source) {
   primus.forEach(function (spark) {
@@ -255,10 +260,47 @@ primus.emit(&#39;ping&#39;);
 <p>Once you scale horizontally with a proxy - or even just drag a Heroku dyno to 11 - you&#39;ll be asking yourself how does a socket connected to <code>server A</code> talk to a socket connected to <code>server B</code>?</p>
 <p>The solution I&#39;ve been exploring is using Primus&#39; middleware combo of <a href="https://github.com/primus/metroplex">metroplex</a> and <a href="https://github.com/primus/omega-supreme/">omega-supreme</a> (yes, there&#39;s a Transformer theme!).</p>
 <p>Metroplex registers your server in a Redis database (version 2.6 or above is required - brew seemed to ship 2.4) upon startup (which <em>should</em> auto unregister after 5 minutes of idle). That way you can query redis to ask what servers are also active:</p>
-<pre><code class="language-js">primus.metroplex.servers(function (err, servers) {
+<pre><code class="language-js">// I&#39;m passing in a redis instance so that all my
+// instances of this server connect to the _same_
+// redis database.
+var primus = new Primus(server, {
+  transformer: &#39;websockets&#39;,
+  redis: redis,
+});
+
+// add the Primus middleware (after instantiation)
+primus.use(&#39;metroplex&#39;, require(&#39;metroplex&#39;));
+primus.use(&#39;omega-supreme&#39;, require(&#39;omega-supreme&#39;));
+primus.use(&#39;emit&#39;, require(&#39;primus-emit&#39;));
+
+// now I can query the registered servers
+primus.metroplex.servers(function (err, servers) {
   console.log(&#39;other servers: %d&#39;, servers.length, servers);
 });</code></pre>
 <p>Note that the address for the server is the same address as the webserver that your Primus instance is bound to.</p>
+<p>Then with omega-supreme, you can forward messages to known servers. So if <code>server A</code> knows that <code>server B</code> is active, it can forwad broadcast messages to <code>server B</code>:</p>
+<pre><code>primus.forward(server, data, function (error, data) {
+  // data contains the number of sparks that got the message
+});</code></pre>
+<p>The above example, <code>server</code> would be the address of <code>server B</code>. Now if we upgrade the <code>broadcast</code> function from above, it would look like this:</p>
+<pre><code>function broadcast(event, data, source) {
+  // query which servers are registered to our redis db
+  primus.metroplex.servers(function (err, servers) {
+    servers.forEach(function (server) {
+      primus.forward(server, {
+        emit: [event, data]
+      }, noop);
+    });
+  });
+
+  // note that the primus forward will handle this for us
+  primus.forEach(function (spark) {
+    if (spark.id !== source.id) {
+      spark.emit(event, data);
+    }
+  });
+}</code></pre>
+<p>Note that for omega-supreme to support the <code>emit</code> method for named events, instead of passing in <code>data</code> as the second argument to <code>primus.forward</code>, you pass in an object that simply contains <code>emit: [event, data]</code>. This will then fire the named events as I&#39;m using them in my code.</p>
 <h2>Long-latency real time feedback</h2>
 <p>One aspect that particularly interests me is long running requests. For example, when I created 5minfork (a site that clones a github repo and hosts it for 5 minutes), there&#39;s a point when the user requests to clone a git repo and there&#39;s a latency period.</p>
 <p>This period length is unknown (i.e. we could be cloning a large project which takes time), but we do know that it&#39;s not instant. So how do we communicate to the user that work is in progress and <em>most importantly</em> tell the user that the work is done and they can proceed?</p>
@@ -266,14 +308,11 @@ primus.emit(&#39;ping&#39;);
 <p>[example]</p>
 <h2>TODO</h2>
 <ul>
-<li>scaling: more machines, haproxy, node-proxy</li>
-<li>auth: lift session off http request and add to socket - show example?</li>
-<li>ebay: real-time in shopping (how many people watching right now)</li>
 <li>github: someone commented (or pushed a change)</li>
 <li>Long polling is important for UX because you can communicate progress...5minfork.com - long tasks (forking on github, transcoding audio, video, parsing large jobs, etc)</li>
 </ul>
 <p class="update">Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.</p></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
-</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.9"></script><script src="/js/index.js?2.9"></script><!--  
+</div></footer><script src="http://code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.10"></script><script src="/js/index.js?2.10"></script><!--  
   
  Carved up by hand using Harp and a shit load of hacking.
   
