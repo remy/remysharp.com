@@ -6,7 +6,7 @@ This is the Velveteen Rabbit. The same picture hangs in my house.
 
 I've never bought any artwork in my life previously. I've never really "got it".
 
-I walked passed the picture in a shop window most days back from the gym, and something kept reaching out to me. I'd stop and just look at the picture for several minutes before continuing my journey.
+I walked past the picture in a shop window most days back from the gym, and something kept reaching out to me. I'd stop and just look at the picture for several minutes before continuing my journey.
 
 One time I even passed the picture, then turned back to spend a few idle minutes contemplating what it was that I drawn to.
 
