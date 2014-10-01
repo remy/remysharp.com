@@ -94,5 +94,10 @@ if ($('#index-page').length) {
   loadFlickr();
 }
 
+var $edit = $('small.edit');
+if ($edit.length) {
+  $edit.appendTo('h1');
+}
+
 hljs.initHighlightingOnLoad();
 $('.post').fitVids();
