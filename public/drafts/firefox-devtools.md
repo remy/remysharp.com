@@ -21,6 +21,21 @@ A week of Firefox devtools. Please note that this document is for me to recall i
 - Changing the padding in the box model view was very/unusably slow
 - Responsive view: Great tool, would be great if I could use the cursors to change the height & width of the
 
+## Task: fix jsbin's linting not appearing
+
+- Most time spent in debugging panel to solve this problem
+- Find is excellent, really like that I can use special commands like ! and @ for code wide or function definition searches.
+- Find's function definition search having the object property next to function name is very useful
+- Also really liked the stack trace breadcrumbs across the top of the source - very easy to navigate
+- Had some weird issues where the debugger would get lost, and no longer be in a paused state
+- Big issue when code was paused and I stepped back using stack trace, it would jump to totally arbitrary line of code, and not the executed line, however the green arrow indicating the execution took "this route" was a very useful visual tool
+- Was a shame that I couldn't change the code whilst in a paused state - I'm very used to debugging this way in chrome
+- I tried to hide away the list of source files…and managed, but then couldn't get it back - and then the hover to inspect object would randomly cause the source list to reappear (then vanish), so the ui would jump under my cursor a lot
+- Hover to inspect was quite powerful, though I found it hard to get the actual property that I was interested in
+
+
+---
+
 ## Misc issues
 
 - Keyboard shortcuts seem to exist, but the documentation seemed to be lacking. I found the browser shortcuts webpage (which wouldn't be useful if coding offline), but it only listed a few
@@ -28,3 +43,4 @@ A week of Firefox devtools. Please note that this document is for me to recall i
 ## Misc awesome
 
 - Event listeners on DOM nodes visible from the inspector view *and* being able to set breakpoints directly from there - very cool.
+- Find (cmd+o and cmd+p - same effect) is very cool with the command prefixes: ! @ # *
