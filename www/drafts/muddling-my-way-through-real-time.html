@@ -301,6 +301,8 @@ primus.metroplex.servers(function (err, servers) {
   });
 }</code></pre>
 <p>Note that for omega-supreme to support the <code>emit</code> method for named events, instead of passing in <code>data</code> as the second argument to <code>primus.forward</code>, you pass in an object that simply contains <code>emit: [event, data]</code>. This will then fire the named events as I&#39;m using them in my code.</p>
+<p>This is effectively what a client sending a broadcast would look like if Redis was backing the Primus setup:</p>
+<p><img src="/images/primus-scale.svg" alt="Primus with omega-supreme and metroplex"></p>
 <h2>Long-latency real time feedback</h2>
 <p>One aspect that particularly interests me is long running requests. For example, when I created 5minfork (a site that clones a github repo and hosts it for 5 minutes), there&#39;s a point when the user requests to clone a git repo and there&#39;s a latency period.</p>
 <p>This period length is unknown (i.e. we could be cloning a large project which takes time), but we do know that it&#39;s not instant. So how do we communicate to the user that work is in progress and <em>most importantly</em> tell the user that the work is done and they can proceed?</p>
