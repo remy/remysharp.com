@@ -51,6 +51,7 @@ Video: https://www.youtube.com/watch?v=4muwlibj6zA (9m47s)
 - When devtools is full screen, when I inspect an element on the page, devtools doesn't come in to focus: I would expect it to, because my intent is to inspect the element using devtools.
 - When devtools is open, and I reload the page, the source on debugging panel doesn't update. So the code appears to be stale, yet running in memory is fresh (because I can see console.logs working when they don't appear in the source). Opening and closing devtools works around this.
 
+Video: https://www.youtube.com/watch?v=6GLyaChRBgg (42m47s)
 
 ---
 
