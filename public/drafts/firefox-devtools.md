@@ -33,6 +33,22 @@ Build: 35.0a1 (2014-09-30)
 - I tried to hide away the list of source files…and managed, but then couldn't get it back - and then the hover to inspect object would randomly cause the source list to reappear (then vanish), so the ui would jump under my cursor a lot
 - Hover to inspect was quite powerful, though I found it hard to get the actual property that I was interested in
 
+Build: 35.0a1 (2014-10-02)
+
+## Task: add keyboard support to JS Bin navigation (v1)
+
+- Nightly seemed to break entirely: picking an element from the page became sticky and wouldn't stop highlighting elements (see video)
+- Firefox stable (32.0.3) I couldn't open the devtools at all from keyboard command. Using menu opened devtools, but it appeared blank.
+- Returned to Nightly (after restarts of devtools) and devtools works again...
+- Constrast for highlighted element from picker (on dark theme) was so low I thought it was broken (switching to light theme made this much clearer)
+
+## Task: add keyboard support to JS Bin navigation (v2)
+
+- Opening and closing devtools too quickly would seem to break devtools and require browser restart to fix
+- I'd love to be able to hide the sources, call stack, etc. (in both orientations) - it takes up a lot of precious space when using the source of JS + console to debug
+- When devtools is full screen, when I inspect an element on the page, devtools doesn't come in to focus: I would expect it to, because my intent is to inspect the element using devtools.
+- When devtools is open, and I reload the page, the source on debugging panel doesn't update. So the code appears to be stale, yet running in memory is fresh (because I can see console.logs working when they don't appear in the source). Opening and closing devtools works around this.
+
 
 ---
 
@@ -44,3 +60,4 @@ Build: 35.0a1 (2014-09-30)
 
 - Event listeners on DOM nodes visible from the inspector view *and* being able to set breakpoints directly from there - very cool.
 - Find (cmd+o and cmd+p - same effect) is very cool with the command prefixes: ! @ # *
+- Event listeners on DOM, then click on code line to see actual code - super cool.
