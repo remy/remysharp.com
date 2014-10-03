@@ -29,6 +29,8 @@ I read about this first on Will Wheaton's blog: [depression lies](http://wilwhea
 
 Finally, I watched [Emma Watson's address to the UN](https://www.youtube.com/watch?v=gkjW9PZBRfk). It fired something up inside of me. Something that I identified with and believe in. I intend to show my son and daughter the video when they're old enough to pay attention (currently 3 years and 5 months respectively, so they're a way off).
 
+I can't quite articulate what it is that makes me motivated to move forward in Watson's address, but I emplore you watch the video. It's 13 minutes. Incredibly inspiring and something I think all young and old should watch, boys in particular.
+
 ---
 
 For me, I need something to reach into my slump and lend it's hand to pull me up. These three things are helping me do that for me right now. I love my family so much, and I want them to feel loved by me.
