@@ -41,6 +41,7 @@ Build: 35.0a1 (2014-10-02)
 - Firefox stable (32.0.3) I couldn't open the devtools at all from keyboard command. Using menu opened devtools, but it appeared blank.
 - Returned to Nightly (after restarts of devtools) and devtools works again...
 - Constrast for highlighted element from picker (on dark theme) was so low I thought it was broken (switching to light theme made this much clearer)
+- Video is required watching for this one (~6 minutes)
 
 ## Task: add keyboard support to JS Bin navigation (v2)
 
