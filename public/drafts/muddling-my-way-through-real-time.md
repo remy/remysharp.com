@@ -431,6 +431,10 @@ function broadcast(event, data, source) {
 
 Note that for omega-supreme to support the `emit` method for named events, instead of passing in `data` as the second argument to `primus.forward`, you pass in an object that simply contains `emit: [event, data]`. This will then fire the named events as I'm using them in my code.
 
+This is effectively what a client sending a broadcast would look like if Redis was backing the Primus setup:
+
+![Primus with omega-supreme and metroplex](/images/primus-scale.svg)
+
 
 ## Long-latency real time feedback
 

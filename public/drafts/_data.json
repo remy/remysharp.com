@@ -116,5 +116,13 @@
     "tags": [
       "web"
     ]
+  },
+  "motivation": {
+    "title": "Motivation",
+    "date": "2014-10-03 12:00:00",
+    "published": false,
+    "tags": [
+      "personal"
+    ]
   }
 }
