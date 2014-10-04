@@ -28,7 +28,7 @@ function loadDisqus() {
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
   dsq.async = true;
-  dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js'; // jshint ignore:line
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; // jshint ignore:line
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   disqusLoaded = true;
 }
@@ -84,7 +84,6 @@ if (comments) {
 
   window.onscroll = function () {
     if(!disqusLoaded && window.pageYOffset > commentsOffset - 1500) {
-      console.log('load comments, NOW!!');
       loadDisqus();
     }
   };

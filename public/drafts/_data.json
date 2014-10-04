@@ -39,7 +39,7 @@
   "muddling-my-way-through-real-time": {
     "title": "Muddling my way through real time",
     "date": "2014-09-30 12:00:00",
-    "published": false,
+    "inprogress": true,
     "tags": [
       "web",
       "html5"
@@ -48,9 +48,10 @@
   "what-is-a-web-app": {
     "title": "What is a \"Web App\"?",
     "date": "2014-09-30 12:00:00",
-    "published": false,
+    "complete": true,
     "tags": [
-    "web"]
+      "web"
+    ]
   },
   "apple-dont-care": {
     "title": "My beef with Apple",
@@ -112,7 +113,7 @@
   "jsbin-11-things-you-didnt-know": {
     "title": "11 things you didn't know JS Bin could do",
     "date": "2014-08-05 12:00:00",
-    "published": false,
+    "complete": true,
     "tags": [
       "web"
     ]
@@ -120,7 +121,7 @@
   "motivation": {
     "title": "Motivation",
     "date": "2014-10-03 12:00:00",
-    "published": false,
+    "complete": true,
     "tags": [
       "personal"
     ]

@@ -698,6 +698,27 @@ body > footer {
   border: 10px dashed darken(#FF4136, 30%)
 }
 
+#drafts-index-page {
+  .post-content li small {
+    margin-left: 10px;
+  }
+  .inprogress {
+    color: lighten(orange, 10%);
+  }
+
+  .unfinished {
+    color: lighten(#FF4136, 20%);
+  }
+
+  .ready {
+    color: darken(#2ECC40, 10%);
+  }
+
+  li.inactive {
+    opacity: 0.5;
+  }
+}
+
 @media only screen and (max-width: 720px) {
   body {
     font-size: 90%;

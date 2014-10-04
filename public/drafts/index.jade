@@ -10,6 +10,10 @@
 ul
   for post in posts
     if (post.date)
-      li
+      li(class=post.inprogress || post.complete ? 'active' : 'inactive')
         a(href="/drafts/#{ post.slug }") #{ post.title }
         small.date Last edited: #{ moment( post.modified ).format('D-MMM YYYY')}
+        if (post.inprogress)
+          small.inprogress in progress
+        else if (post.complete)
+          small.ready ready
