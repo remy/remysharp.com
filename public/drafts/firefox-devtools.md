@@ -53,6 +53,15 @@ Video: https://www.youtube.com/watch?v=4muwlibj6zA (9m47s)
 
 Video: https://www.youtube.com/watch?v=6GLyaChRBgg (42m47s)
 
+## Task: debug errors from console code
+
+- Works as expected, if break on exceptions is turned on, running buggy code in the console, *correctly* breaks excution and pauses
+- Debugger doesn't take focus
+- The console also doesn't work when the debugger is paused...but this might just be a natural state of debugging the console means you can't use the console..!
+- The debugger settings cog feels like it should be click to open, not mouse down to open - as mouse up clicks first item and reloads page
+
+Video: https://www.youtube.com/watch?v=TNMqFkrgC5I
+
 ---
 
 ## Misc issues
