@@ -1,17 +1,60 @@
-<!DOCTYPE html><html id="remysharp-com"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Why I prefer mobile web apps to native apps</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css?2.13"><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.13"><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html><html id="remysharp-com"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Element focus utility</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css?2.13"><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.13"><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-why-i-prefer-mobile-web-apps-to-native-apps-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/30/wordpress-ghost-harp-pt2" title="WordPress -&gt; Ghost -&gt; Harp (part 2)">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 14-Mar 2013</div><article class="post"><h1 class="title"><a href="/drafts/why-i-prefer-mobile-web-apps-to-native-apps">Why I prefer mobile web apps to native apps</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/why-i-prefer-mobile-web-apps-to-native-apps.md">(edit)</a></small></h1><div class="post-content">
-<p>Jon Tan posed <a href="https://twitter.com/jontangerine/status/291479630278443008">the question</a> on twitter:</p>
-<blockquote>
-<p>Would you prefer a native app or a web app on your ’phone, assuming they were on par with each other?</p>
-</blockquote>
-<p>I couldn&#39;t fit my response in a tweet - so I was force to blog!</p>
-<p>I will caveat this with short posts with: I&#39;m specifically talking about apps that are for <em>my</em> iPhone (the emphasis is how <em>I</em> would like to use my apps, and I&#39;m not saying this is how you or any other user should particularly use your apps). Jon also states: &quot;assume parity of speed&quot; when answering.</p>
-<p>The reason I prefer web apps (over native) saved on my homescreen is simple: installation and upgrade. The last time I upgraded my phone, </p>
+ga('send', 'pageview');</script></head><body id="drafts-focus-dev-util-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/30/wordpress-ghost-harp-pt2" title="WordPress -&gt; Ghost -&gt; Harp (part 2)">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 5-Oct 2014</div><article class="post"><h1 class="title"><a href="/drafts/focus-dev-util">Element focus utility</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/focus-dev-util.md">(edit)</a></small></h1><div class="post-content">
+<p>I&#39;ve recently been looking at retrofitting keyboard navigation support to JS Bin, but I was immediately struck by the totally lack of visibility on <em>what</em> was in focus.</p>
+<!--more-->
+
+<p>Sure, this is a short-coming of the original design and bad choises I had made with JS Bin&#39;s code base. Perhaps you can see from the animation below, when the <code>body</code> is in focus, tabbing is focusing <em>something</em> but until I actually tab to the &quot;HTML&quot; panel title, there&#39;s no visual feedback as to <em>what</em> I should be fixing:</p>
+<p><img src="/images/tab-focus-clueless.gif" alt="Tab focusing is clueless"></p>
+<p>If you can see it, the browser&#39;s status bar tells me that I&#39;m moving focus, but it&#39;s near impossible to work out which element I&#39;m working with.</p>
+<p>So I built a mini utility to visualise what&#39;s happening. Now with that utility:</p>
+<p><img src="/images/tab-visibility.gif" alt="Tabbing visible"></p>
+<h2>Installation</h2>
+<p>Either add the code directly to your project as a debug dependancy, or use it as a snippet in your devtools:</p>
+<pre><code class="language-js">(function () {
+  var active = document.createElement(&#39;pre&#39;);
+  document.body.appendChild(active);
+  active.tabindex = -1;
+  with (active.style) {
+    position = &#39;fixed&#39;;
+    padding = &#39;2px&#39;;
+    bottom = right = &#39;20px&#39;;
+    margin = 0;
+    fontSize = 12;
+    color = &#39;#fff&#39;;
+    background = &#39;#aaa&#39;;
+    whiteSpace = &#39;pre-wrap&#39;;
+    maxWidth = &#39;95%&#39;;
+  }
+
+  var lastActive = null;
+  var showActive = function () {
+    var el = document.activeElement;
+    var html = &#39;&#39;;
+    var attrs = el.attributes;
+    var i = 0;
+
+    if (el !== lastActive &amp;&amp; el !== active) {
+      for (; i &lt; attrs.length; i++) {
+        html += &#39; &#39; + attrs[i].name + &#39;=&quot;&#39; + attrs[i].value + &#39;&quot;&#39;;
+      }
+
+      active.innerText = &#39;&lt;&#39; + el.nodeName.toLowerCase() + html + &#39;&gt;&#39;;
+      lastActive = el;
+    }
+
+    requestAnimationFrame(showActive);
+  }
+
+  showActive();
+})();</code></pre>
+<p>Here&#39;s a live demo:</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/bexugo/1/embed?output">JS Bin</a><script src="https://drt35l4oshkgr.cloudfront.net/js/embed.js"></script></p>
+<p>So now I have visibility on <em>what</em> is being focused, I can fix various issues ranging from <code>outline</code> being removed, only including <code>:hover</code> styles and not <code>:focus</code> and applying <em>proper</em> <a href="http://oaa-accessibility.org/example/25/">menu logic</a> to menu-like objects.</p>
 <p class="update">Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.</p></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
 </div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.13"></script><script src="/js/index.js?2.13"></script><!--  
   
