@@ -125,5 +125,12 @@
     "tags": [
       "personal"
     ]
+  },
+  "focus-dev-util": {
+    "title": "Element focus utility",
+    "complete": true,
+    "tags": [
+      "code"
+    ]
   }
 }

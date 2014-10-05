@@ -34,7 +34,7 @@ You'll also need a [Heroku account](https://www.heroku.com/) - which offers free
 
 From the terminal, you need to install the Harp utility:
 
-```
+```nohighlight
 npm install -g harp
 ```
 
@@ -46,7 +46,7 @@ Note that you can install Harp locally to your project, but for simplicity's sak
 
 Now we're going to take the simplest approach to building a static site with Harp: the "[framework style]()", but all this really means is my web content is served from my `/public` directory. I've put a couple of images, some CSS and then an `index.html` and `about.md` in there for now:
 
-```
+```nohighlight
 my-site.com
 └── public
     ├── css
@@ -61,7 +61,7 @@ The `about.md` is a simple markdown file that has some bits about my site. Harp
 also supports Jade and EJS and also supports having a common layout file, which
 I would call `_layout.jade` (`_` prefix mean hidden from public) which could look like:
 
-```
+```jade
 doctype
 html
   head
@@ -79,7 +79,7 @@ be inserted.
 
 I then kick off the server using `harp server` from the web site's root directory:
 
-```
+```nohighlight
 $ harp server
 ------------
 Harp v0.11.2 – Chloi Inc. 2012–2014

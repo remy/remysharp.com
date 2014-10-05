@@ -125,7 +125,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
+  // outline: 0;
   font-weight: inherit;
   font-style: inherit;
   font-size: 100%;
@@ -431,7 +431,7 @@ h2.title {
     &:hover {
       background: none;
       text-decoration: underline;
-      outline: none;
+      // outline: none;
     }
   }
 }
@@ -567,7 +567,7 @@ time {
 
     a {
       background: transparent;
-      outline: none;
+      // outline: none;
     }
 
     img {
@@ -601,13 +601,17 @@ time {
 small.edit {
   margin-left: 10px;
   font-size: 50%;
-  opacity: 0;
-  .transition(opacity, 50ms, ease-out);
   position: absolute;
   bottom: 25px;
 }
 
-h1:hover small.edit {
+small.edit a {
+  opacity: 0;
+  .transition(opacity, 50ms, ease-out);
+}
+
+h1:hover small.edit a,
+small.edit a:focus {
   opacity: 0.5;
 }
 
