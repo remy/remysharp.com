@@ -1,6 +1,6 @@
 # What is a "Web App"?
 
-In technology definitions are important. We talk in a lanauge that's mostly made up by our own industry.
+In technology definitions are important. We talk in a language that's mostly made up by our own industry.
 
 Bugs, cache, regressions, polyfills, monads, polymorphic functions, isomorphic JavaScript and a lot more language. Even when you *do* work in our industry, it's hard to keep up with all the language.
 
