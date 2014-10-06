@@ -4,7 +4,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/09/30/wordpress-ghost-harp-pt2" title="WordPress -&gt; Ghost -&gt; Harp (part 2)">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 3-Oct 2014</div><article class="post"><h1 class="title"><a href="/drafts/firefox-devtools"></a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/firefox-devtools.md">(edit)</a></small></h1><div class="post-content">
+ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/10/06/what-is-a-web-app" title="What is a &quot;Web App&quot;?">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 5-Oct 2014</div><article class="post"><h1 class="title"><a href="/drafts/firefox-devtools"></a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/firefox-devtools.md">(edit)</a></small></h1><div class="post-content">
 <p>A week of Firefox devtools. Please note that this document is for me to recall issues (or good things) I encountered during immercing myself in devtools (instead of Chrome devtools) and I am also recording screencasts of my sessions which (I may edit) and hope to send to the devtools team (if they think it&#39;ll be useful).</p>
 <hr>
 <p>Build: 35.0a1 (2014-09-30)</p>
@@ -52,6 +52,14 @@ ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><
 <li>When devtools is open, and I reload the page, the source on debugging panel doesn&#39;t update. So the code appears to be stale, yet running in memory is fresh (because I can see console.logs working when they don&#39;t appear in the source). Opening and closing devtools works around this.</li>
 </ul>
 <p>Video: <a href="https://www.youtube.com/watch?v=6GLyaChRBgg">https://www.youtube.com/watch?v=6GLyaChRBgg</a> (42m47s)</p>
+<h2>Task: debug errors from console code</h2>
+<ul>
+<li>Works as expected, if break on exceptions is turned on, running buggy code in the console, <em>correctly</em> breaks excution and pauses</li>
+<li>Debugger doesn&#39;t take focus</li>
+<li>The console also doesn&#39;t work when the debugger is paused...but this might just be a natural state of debugging the console means you can&#39;t use the console..!</li>
+<li>The debugger settings cog feels like it should be click to open, not mouse down to open - as mouse up clicks first item and reloads page</li>
+</ul>
+<p>Video: <a href="https://www.youtube.com/watch?v=TNMqFkrgC5I">https://www.youtube.com/watch?v=TNMqFkrgC5I</a></p>
 <hr>
 <h2>Misc issues</h2>
 <ul>

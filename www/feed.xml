@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 30 Sep 2014 9:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>WordPress -&gt; Ghost -&gt; Harp (part 2)</title><guid isPermaLink="false">wordpress-ghost-harp-pt2</guid><link>http://remysharp.com/2014/09/30/wordpress-ghost-harp-pt2</link><pubDate>Tue, 30 Sep 2014 9:00:00 +0000</pubDate><description><![CDATA[I wrote about moving away from WordPress to Ghost and then to Harp in part 1, this post details some of the specifics of my blog&#39;s implementation.]]></description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 06 Oct 2014 16:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>What is a &quot;Web App&quot;?</title><guid isPermaLink="false">what-is-a-web-app</guid><link>http://remysharp.com/2014/10/06/what-is-a-web-app</link><pubDate>Mon, 06 Oct 2014 16:00:00 +0000</pubDate><description><![CDATA[In technology definitions are important. We talk in a lanauge that&#39;s mostly made up by our own industry.
+Bugs, cache, regressions, polyfills, monads, polymorphic functions, isomorphic JavaScript and a lot more language. Even when you do work in our industry, it&#39;s hard to keep up with all the language.
+There there&#39;s &quot;web app&quot;. A lot of people (including myself) will refer to many web sites as apps. But why? I don&#39;t know of a good definition (&quot;good&quot; in that there&#39;s no handwaving involved).
+So here&#39;s my definition and distinction between web site and web app.]]></description><content:encoded><![CDATA[
+<p>In technology definitions are important. We talk in a lanauge that&#39;s mostly made up by our own industry.</p>
+<p>Bugs, cache, regressions, polyfills, monads, polymorphic functions, isomorphic JavaScript and a lot more language. Even when you <em>do</em> work in our industry, it&#39;s hard to keep up with all the language.</p>
+<p>There there&#39;s &quot;web app&quot;. A lot of people (including myself) will refer to many web sites as <em>apps</em>. But why? I don&#39;t know of a good definition (&quot;good&quot; in that there&#39;s no handwaving involved).</p>
+<p>So here&#39;s my definition and distinction between web site and web app.</p>
+<h2>Web site</h2>
+<p>A URL that you visit. Classic exmaples include a blog or a wiki. Where the content is waiting for you at the end of the URL.</p>
+<p>JS Bin is a web site by this definition. You visit the URL and create content. Someone will share a bin, and you visiting this content. <strong>You go to the site</strong>.</p>
+<h2>Web app</h2>
+<p>A URL that you take with you. This is locally installed and data is <em>pushed to you</em>. Classic examples of this are email clients, news readers, task oritentated applications. <strong>The app goes with you</strong>.</p>
+<p>Importantly: you expect it to be available with or without an internet connection.</p>
+<blockquote>
+<p>Isn&#39;t this just a web site with offline support?</p>
+</blockquote>
+<p>I&#39;m still scoffing at &quot;<em>just</em>&quot;. Sure, if you want to dumb it down as such. But equally isn&#39;t an app on your screen, like Chrome or TomTom or PhotoShop, <em>just</em> some compiled code? Yes, it is, but it&#39;s actually a lot more than that.</p>
+<p>The common language word we refer to compiled programs are: apps.</p>
+<p>It&#39;s not that it&#39;s harder to build web apps, it&#39;s that the experience with these types of web sites are fundamentally different to a web site like Wikipedia for instance.</p>
+<hr>
+<p>The future of web browsers is coming, and they&#39;re giving us more and more support for offline technology, through storage (for data caching) to control over the network (through <a href="https://github.com/slightlyoff/ServiceWorker">service workers</a>).</p>
+<p>If you&#39;re using progressive enhancement, then your web site can achieve both. However, I don&#39;t believe it&#39;s entirely possible to create a web app without the functionality that JavaScript provides. So there&#39;s is <em>some</em> expectation that a web app relies on JavaScript, but that&#39;s not what makes a web app.</p>
+<p>Now, next time you&#39;re asked to build a web app, at least you can have a feature set that you&#39;re working towards.</p>
+]]></content:encoded></item><item><title>WordPress -&gt; Ghost -&gt; Harp (part 2)</title><guid isPermaLink="false">wordpress-ghost-harp-pt2</guid><link>http://remysharp.com/2014/09/30/wordpress-ghost-harp-pt2</link><pubDate>Tue, 30 Sep 2014 9:00:00 +0000</pubDate><description><![CDATA[I wrote about moving away from WordPress to Ghost and then to Harp in part 1, this post details some of the specifics of my blog&#39;s implementation.]]></description><content:encoded><![CDATA[
 <p>I wrote about moving away from WordPress to Ghost and then to Harp in <a href="/2014/09/18/wordpress-ghost-harp-pt1">part 1</a>, this post details some of the specifics of my blog&#39;s implementation.</p>
 <h2>Technical overview</h2>
 <p>I&#39;m using <a href="http://harpjs.com">Harp</a> which is incredibly easy to get running with, but I&#39;m also running Harp as a dependency inside my own custom node web server which allows me to add a few bells a whistles to my implementation.</p>
@@ -1045,22 +1069,4 @@ This post is more me dropping my thoughts on a page rather than having fully exp
 <h2>Everything ends</h2>
 <p>Everything has an expiry. Nothing lasts forever, but maybe my expectations need to adjust on the web. If something lasts a few years on the web that&#39;s a good thing. If I can get my data out of a web service, then that&#39;s a good thing too (because I&#39;m now responsible for my content, like photos which I care about).</p>
 <p>I&#39;m just very interested in seeing more services taking advantage of expiry as a feature. Heck, we buy and own (small) pets because the expiry is a feature! Why don&#39;t we use this more on the web?</p>
-]]></content:encoded></item><item><title>A Side View: front end dev conference</title><guid isPermaLink="false">a-side-view-front-end-dev-conference</guid><link>http://remysharp.com/2013/10/17/a-side-view-front-end-dev-conference</link><pubDate>Thu, 17 Oct 2013 11:00:32 +0000</pubDate><description><![CDATA[As the curator of Full Frontal I&#39;m extremely proud of our event and it&#39;s content, and this year we sold out in 11 minutes. 
-That was good and bad. The bad being that lots of people missed out.
-So I&#39;m running a side event called: Side View on Saturday 9th November in Brighton, UK.
-It&#39;s 6 front end sessions for £50+VAT. Frankly I think it&#39;s a steal, but then I get to go free (because I&#39;m running it!).
-Full details of each talk and the link to buy tickets is here:
-http://2013.full-frontal.org/sideview
-I&#39;d love for you to come along, and equally if you can spread the word that would really help. Full Frontal sells out quickly, but getting the word out about a new event is always harder.
-Also, we&#39;re still looking for a single sponsor for the event who would get exclusive rights over sponsorship. If you&#39;re interested (or know a company) please get in touch (a contact link is on the page above).
-Thanks, and please do spread the word!]]></description><content:encoded><![CDATA[
-<p>As the curator of <a href="http://2013.full-frontal.org">Full Frontal</a> I&#39;m extremely proud of our event and it&#39;s content, and this year we sold out in 11 minutes. </p>
-<p>That was good <em>and</em> bad. The bad being that lots of people missed out.</p>
-<p>So I&#39;m running a side event called: Side View on Saturday 9th November in Brighton, UK.</p>
-<p>It&#39;s 6 front end sessions for £50+VAT. Frankly I think it&#39;s a steal, but then I get to go free (because I&#39;m running it!).</p>
-<p>Full details of each talk and the link to buy tickets is here:</p>
-<p><a href="http://2013.full-frontal.org/sideview"><a href="http://2013.full-frontal.org/sideview">http://2013.full-frontal.org/sideview</a></a></p>
-<p>I&#39;d love for you to come along, and equally if you can spread the word that would really help. Full Frontal sells out quickly, but getting the word out about a new event is always harder.</p>
-<p>Also, we&#39;re still looking for a single sponsor for the event who would get exclusive rights over sponsorship. If you&#39;re interested (or know a company) please get in touch (a contact link is on the page above).</p>
-<p>Thanks, and please do spread the word!</p>
 ]]></content:encoded></item></channel></rss>
