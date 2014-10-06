@@ -18,7 +18,7 @@ JS Bin is a web site by this definition. You visit the URL and create content. S
 
 ## Web app
 
-A URL that you take with you. This is locally installed and data is *pushed to you*. Classic examples of this are email clients, news readers, task oritentated applications. **The app goes with you**.
+A URL that you take with you. This is locally installed and data is *pushed to you*. Classic examples of this are email clients, news readers, task orientated applications. **The app goes with you**.
 
 Importantly: you expect it to be available with or without an internet connection.
 
