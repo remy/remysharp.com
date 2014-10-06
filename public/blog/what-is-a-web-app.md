@@ -4,7 +4,7 @@ In technology definitions are important. We talk in a lanauge that's mostly made
 
 Bugs, cache, regressions, polyfills, monads, polymorphic functions, isomorphic JavaScript and a lot more language. Even when you *do* work in our industry, it's hard to keep up with all the language.
 
-There there's "web app". A lot of people (including myself) will refer to many web sites as *apps*. But why? I don't know of a good definition ("good" in that there's no handwaving involved).
+There there's "web app". A lot of people (including myself) will refer to many web sites as *apps*. But why? I don't know of a good definition ("good" in that there's no hand-waving involved).
 
 So here's my definition and distinction between web site and web app.
 
@@ -12,7 +12,7 @@ So here's my definition and distinction between web site and web app.
 
 ## Web site
 
-A URL that you visit. Classic exmaples include a blog or a wiki. Where the content is waiting for you at the end of the URL.
+A URL that you visit. Classic examples include a blog or a wiki. Where the content is waiting for you at the end of the URL.
 
 JS Bin is a web site by this definition. You visit the URL and create content. Someone will share a bin, and you visiting this content. **You go to the site**.
 
