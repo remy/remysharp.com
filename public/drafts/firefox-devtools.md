@@ -62,6 +62,13 @@ Video: https://www.youtube.com/watch?v=6GLyaChRBgg (42m47s)
 
 Video: https://www.youtube.com/watch?v=TNMqFkrgC5I
 
+
+## Task: debug why an element is not visible (intend to use 3D viewer)
+
+35.0a1 (2014-10-07)
+
+
+
 ---
 
 ## Misc issues
