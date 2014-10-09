@@ -2,6 +2,8 @@
 
 A week of Firefox devtools. Please note that this document is for me to recall issues (or good things) I encountered during immercing myself in devtools (instead of Chrome devtools) and I am also recording screencasts of my sessions which (I may edit) and hope to send to the devtools team (if they think it'll be useful).
 
+**Important note:** When I ran Nightly for the first time (just before the screencasts), I was asked if I wanted to opt-in to multi-process test feedback. I said yes (I had a new laptop, and I was trying to help out). As it turns out, that multi-process mode happened to cause a lot of the buggyness that I was seeing in the first half of my testing. I'm not *100%* what was affected, but it was [definitely a factor](https://twitter.com/canuckistani/status/520332616688345088).
+
 ---
 
 Build: 35.0a1 (2014-09-30)
@@ -15,13 +17,15 @@ Build: 35.0a1 (2014-09-30)
 - For compressed CSS, inspector view says "screen.css:1", but the styles editor automatically "pretty prints" so there's no link between line 1 and the style editor view
 - In inspector, space is auto completed to `!important` regardless of cursor position *or* actual CSS property
 
-Video: https://www.youtube.com/watch?v=_37j1cU5VWU
+Video: https://www.youtube.com/watch?v=_37j1cU5VWU (3m44s)
 
 ## Task: fix padding on heading
 
-- Box model view: isn't clear what is padding/margin/etc - since everything is highlighted when I hover over box model. Took me a while to cognitively link the value to the visual area on the page
+- Box model view: wasn't clear what is padding/margin/etc - since everything is highlighted when I hover over box model. Took me a while to cognitively link the value to the visual area on the page
 - Changing the padding in the box model view was very/unusably slow
-- Responsive view: Great tool, would be great if I could use the cursors to change the height & width of the
+- Responsive view: Great tool, would be great if I could use the cursors to change the height & width of the element
+
+I can't find the video for this, so I'll try to find the time to capture a gif of what I mean in the first point...damn screenflow kept crashing on me :(
 
 ## Task: fix jsbin's linting not appearing (note: run in Firefox, not Nightly - sorry!)
 
@@ -34,6 +38,8 @@ Video: https://www.youtube.com/watch?v=_37j1cU5VWU
 - Was a shame that I couldn't change the code whilst in a paused state - I'm very used to debugging this way in chrome
 - I tried to hide away the list of source files…and managed, but then couldn't get it back - and then the hover to inspect object would randomly cause the source list to reappear (then vanish), so the ui would jump under my cursor a lot
 - Hover to inspect was quite powerful, though I found it hard to get the actual property that I was interested in
+
+Video: https://www.youtube.com/watch?v=vaiC0N64bwg (37m47s)
 
 Build: 35.0a1 (2014-10-02)
 
@@ -62,14 +68,17 @@ Video: https://www.youtube.com/watch?v=6GLyaChRBgg (42m47s)
 - The console also doesn't work when the debugger is paused...but this might just be a natural state of debugging the console means you can't use the console..!
 - The debugger settings cog feels like it should be click to open, not mouse down to open - as mouse up clicks first item and reloads page
 
-Video: https://www.youtube.com/watch?v=TNMqFkrgC5I
+Video: https://www.youtube.com/watch?v=TNMqFkrgC5I (5m08s)
 
 
 ## Task: debug why an element is not visible (intend to use 3D viewer)
 
 35.0a1 (2014-10-07)
 
+- Generally exactly what I expected. 3D video is super useful for identifying DOM pile ups
+- The zoom in/out was a little overly sensitive, but suspect that might be mixed with the 3D rendering and mouse input
 
+Video: https://www.youtube.com/watch?v=BQ5H-R20Dho (11m02s)
 
 ## Task: use network panel to check and test headers on image uploads
 
@@ -77,9 +86,9 @@ Video: https://www.youtube.com/watch?v=TNMqFkrgC5I
 - Firefox devtools gave me everything I'd expect from the network tools for this particular task
 - One issue though: with a cached image (in jsbin's output) - the network request was not appearing *at all*. This was confusing because I wasn't sure if the request was being made or not...
 
-Video: http://youtu.be/maohiQY29_U
+Video: http://youtu.be/maohiQY29_U (14m02s)
 
-Missing network request:
+Missing network request: http://youtu.be/maohiQY29_U?t=8m56s
 
 ---
 
@@ -92,3 +101,4 @@ Missing network request:
 - Event listeners on DOM nodes visible from the inspector view *and* being able to set breakpoints directly from there - very cool.
 - Find (cmd+o and cmd+p - same effect) is very cool with the command prefixes: ! @ # *
 - Event listeners on DOM, then click on code line to see actual code - super cool.
+- Network: edit and send - super handy!
