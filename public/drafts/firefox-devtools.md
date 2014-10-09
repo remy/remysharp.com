@@ -69,6 +69,16 @@ Video: https://www.youtube.com/watch?v=TNMqFkrgC5I
 
 
 
+## Task: use network panel to check and test headers on image uploads
+
+- "Edit and send" on individual network items is very useful, particularly with server debugging
+- Firefox devtools gave me everything I'd expect from the network tools for this particular task
+- One issue though: with a cached image (in jsbin's output) - the network request was not appearing *at all*. This was confusing because I wasn't sure if the request was being made or not...
+
+Video:
+
+Missing network request:
+
 ---
 
 ## Misc issues
