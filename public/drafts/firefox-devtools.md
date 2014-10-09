@@ -75,7 +75,7 @@ Video: https://www.youtube.com/watch?v=TNMqFkrgC5I
 - Firefox devtools gave me everything I'd expect from the network tools for this particular task
 - One issue though: with a cached image (in jsbin's output) - the network request was not appearing *at all*. This was confusing because I wasn't sure if the request was being made or not...
 
-Video:
+Video: http://youtu.be/maohiQY29_U
 
 Missing network request:
 
