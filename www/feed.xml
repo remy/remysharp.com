@@ -1,4 +1,53 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 06 Oct 2014 16:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>What is a &quot;Web App&quot;?</title><guid isPermaLink="false">what-is-a-web-app</guid><link>http://remysharp.com/2014/10/06/what-is-a-web-app</link><pubDate>Mon, 06 Oct 2014 16:00:00 +0000</pubDate><description><![CDATA[In technology definitions are important. We talk in a language that&#39;s mostly made up by our own industry.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 14 Oct 2014 13:30:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Element focus utility</title><guid isPermaLink="false">focus-dev-util</guid><link>http://remysharp.com/2014/10/14/focus-dev-util</link><pubDate>Tue, 14 Oct 2014 13:30:00 +0000</pubDate><description><![CDATA[I&#39;ve recently been looking at retrofitting keyboard navigation support to JS Bin, but I was immediately struck by the totally lack of visibility on what was in focus.]]></description><content:encoded><![CDATA[
+<p>I&#39;ve recently been looking at retrofitting keyboard navigation support to JS Bin, but I was immediately struck by the totally lack of visibility on <em>what</em> was in focus.</p>
+<p>Sure, this is a short-coming of the original design and bad choises I had made with JS Bin&#39;s code base. Perhaps you can see from the animation below, when the <code>body</code> is in focus, tabbing is focusing <em>something</em> but until I actually tab to the &quot;HTML&quot; panel title, there&#39;s no visual feedback as to <em>what</em> I should be fixing:</p>
+<p><img src="/images/tab-focus-clueless.gif" alt="Tab focusing is clueless"></p>
+<p>If you can see it, the browser&#39;s status bar tells me that I&#39;m moving focus, but it&#39;s near impossible to work out which element I&#39;m working with.</p>
+<p>So I built a mini utility to visualise what&#39;s happening. Now with that utility:</p>
+<p><img src="/images/tab-visibility.gif" alt="Tabbing visible"></p>
+<h2>Installation</h2>
+<p>Either add the code directly to your project as a debug dependancy, or use it as a snippet in your devtools:</p>
+<pre><code class="language-js">(function () {
+  var active = document.createElement(&#39;pre&#39;);
+  document.body.appendChild(active);
+  active.tabindex = -1;
+  with (active.style) {
+    position = &#39;fixed&#39;;
+    padding = &#39;2px&#39;;
+    bottom = right = &#39;20px&#39;;
+    margin = 0;
+    fontSize = 12;
+    color = &#39;#fff&#39;;
+    background = &#39;#aaa&#39;;
+    whiteSpace = &#39;pre-wrap&#39;;
+    maxWidth = &#39;95%&#39;;
+  }
+
+  var lastActive = null;
+  var showActive = function () {
+    var el = document.activeElement;
+    var html = &#39;&#39;;
+    var attrs = el.attributes;
+    var i = 0;
+
+    if (el !== lastActive &amp;&amp; el !== active) {
+      for (; i &lt; attrs.length; i++) {
+        html += &#39; &#39; + attrs[i].name + &#39;=&quot;&#39; + attrs[i].value + &#39;&quot;&#39;;
+      }
+
+      active.innerText = &#39;&lt;&#39; + el.nodeName.toLowerCase() + html + &#39;&gt;&#39;;
+      lastActive = el;
+    }
+
+    requestAnimationFrame(showActive);
+  }
+
+  showActive();
+})();</code></pre>
+<p>Here&#39;s a live demo:</p>
+<p><a class="jsbin-embed" href="http://jsbin.com/bexugo/1/embed?output">JS Bin</a><script src="https://drt35l4oshkgr.cloudfront.net/js/embed.js"></script></p>
+<p>So now I have visibility on <em>what</em> is being focused, I can fix various issues ranging from <code>outline</code> being removed, only including <code>:hover</code> styles and not <code>:focus</code> and applying <em>proper</em> <a href="http://oaa-accessibility.org/example/25/">menu logic</a> to menu-like objects.</p>
+]]></content:encoded></item><item><title>What is a &quot;Web App&quot;?</title><guid isPermaLink="false">what-is-a-web-app</guid><link>http://remysharp.com/2014/10/06/what-is-a-web-app</link><pubDate>Mon, 06 Oct 2014 16:00:00 +0000</pubDate><description><![CDATA[In technology definitions are important. We talk in a language that&#39;s mostly made up by our own industry.
 Bugs, cache, regressions, polyfills, monads, polymorphic functions, isomorphic JavaScript and a lot more language. Even when you do work in our industry, it&#39;s hard to keep up with all the language.
 There there&#39;s &quot;web app&quot;. A lot of people (including myself) will refer to many web sites as apps. But why? I don&#39;t know of a good definition (&quot;good&quot; in that there&#39;s no hand-waving involved).
 So here&#39;s my definition and distinction between web site and web app.]]></description><content:encoded><![CDATA[
@@ -1047,26 +1096,4 @@ JS Bin supports codecasting out of the box, for free, to both registered and ano
 <p>Since v3 of jsbin saves pretty much every keystroke, when a save occurs on the server side, it triggers a &quot;ping&quot; event. This is listened to by the <code>EventSource</code> code. The code looks up the bin&#39;s url, and if anyone is listening, it pushes down the new code for that particular panel.</p>
 <p>Both the full output views and the codecasting views listening to this EventSource endpoint, and since EventSource can be polyfilled, it works like a charm on all platforms. Simple.</p>
 <p>In the future (of JS Bin) codecasts will be recordable and let you play them back (at a later date) and allowing you to add audio, video, annotations and anything else you want to create tutorials and examples of your work.</p>
-]]></content:encoded></item><item><title>A self destructive web</title><guid isPermaLink="false">a-self-destructive-web</guid><link>http://remysharp.com/2013/10/22/a-self-destructive-web</link><pubDate>Tue, 22 Oct 2013 12:31:32 +0000</pubDate><description><![CDATA[I&#39;m finding myself more and more nowadays interested in content that self destructs, or rather: expires after time and will no longer exist.
-This post is more me dropping my thoughts on a page rather than having fully explored the idea (yet). Please note this post is also unedited (which I may use to my advantage and edit over time...we&#39;ll see).]]></description><content:encoded><![CDATA[
-<p>I&#39;m finding myself more and more nowadays interested in content that <a href="https://twitter.com/rem/status/392601422480805888">self destructs</a>, or rather: expires after time and will no longer exist.</p>
-<p>This post is more <em>me dropping my thoughts on a page</em> rather than having fully explored the idea (yet). Please note this post is also unedited (which I may use to my advantage and edit over time...we&#39;ll see).</p>
-<h2>Saving is &quot;forever&quot;?</h2>
-<p>From an early age I&#39;ve played and worked with computers. I always understood that I was creating programs that would be <strong>saved</strong>.</p>
-<p>That simple idea of saving, be it to a physical tape (I was a Spectrum user) or fast forward to the 90s when I published my first web pages - it was simply naughts and ones and since it was stored digitally&dagger;, it could be copied over and over. When it was on a server, all it needed is the server to stay plugged in or even cached on another server and boom, you&#39;ve just unlocked <em>forever</em>.</p>
-<p><small>&dagger; Sure, the tape drive wasn&#39;t digital, but you&#39;ll forgive me.</small></p>
-<p>But the simple fact is: we have to make an effort to preserve. Server drives crash, data gets lost, companies disappear (my first site was on lineone.net if anyone remember that - now long gone), domains expire and people die.</p>
-<p>So what is <em>forever</em>? Maybe there&#39;s an unspoken expiry? But when the expiry is in decades I feel like I conflate this with forever. I don&#39;t feel like the web community has been going long enough to see that long expiry showing it&#39;s face. Maybe we&#39;ve got another 20-30 years to go.</p>
-<h2>Should it last forever?</h2>
-<p>I <em>was</em> just looking at <a href="http://twitter.com/stef">Stef Lewandowski&#39;s</a> tweet about their new hack <a href="http://writing.makeshift.io/pieces/introducing-linkydink">Linkydin</a>. A nice idea, but I was asking myself: surely these links have context in <em>time</em>.</p>
-<p>If you&#39;re sharing a group of links in a team, should that information expire? What good is it a year (or more) later to new team members, and in fact could it share old and busted knowledge that&#39;s been superceeded by better information? <em>I don&#39;t know</em>.</p>
-<p>Then I read <a href="http://twitter.com/neave">Paul Neave&#39;s</a> post <a href="http://blog.neave.com/post/64669185529/why-i-create-for-the-web">&quot;Why I create for the web&quot;</a> and he boils it down to the humble hyperlink. Except the way I <em>found</em> his post was through a tweet. A tweet that a) I will unlikely find again (because twitter&#39;s archive search is limited) and b) goes <em>through</em> twitter&#39;s own link shortening service. If that service is shut down, then that hyperlink is sent to the grave (note that this isn&#39;t the point of @neave&#39;s post - but it got me thinking).</p>
-<p>I recently looked at Snapchat. Content that purposely destroys itself, I can only assume, because it&#39;s relevant for that moment &dagger;. I also remember someone having a blog that would slowly remove all the blog posts one at a time over a period of time (and it would look like the articles were fading out at the bottom of the site).</p>
-<p><small>&dagger; Though Snapchat might <a href="http://blog.snapchat.com/post/50060403002/how-snaps-are-stored-and-deleted">not destroy the data on the phone</a> it is actually removed from their server, which, to me, means it&#39;ll expire from existence <em>somehow</em> eventually.</small></p>
-<p>I like these later two because they&#39;ve thought specifically about time and how it should be addressed. My own blog, I haven&#39;t thought about time. I haven&#39;t thought about whether it&#39;ll shutdown after I die. I&#39;ve long stopped posting to <a href="http://jqueryfordesigners.com/">jQuery for Designers</a> but I&#39;ll keep the domain renewed...but for how long? </p>
-<p><strong>Should sites be retired to the archive.org?</strong></p>
-<p>I don&#39;t know. A lot of these questions are why I&#39;ve asked Jeremy Keith to <a href="http://2013.full-frontal.org/#time">speak at Full Frontal</a> whereby he chose the title &quot;Time&quot;. I expect he&#39;ll add a lot of clarity to some of my thoughts, but no doubt raise a good deal of new questions.</p>
-<h2>Everything ends</h2>
-<p>Everything has an expiry. Nothing lasts forever, but maybe my expectations need to adjust on the web. If something lasts a few years on the web that&#39;s a good thing. If I can get my data out of a web service, then that&#39;s a good thing too (because I&#39;m now responsible for my content, like photos which I care about).</p>
-<p>I&#39;m just very interested in seeing more services taking advantage of expiry as a feature. Heck, we buy and own (small) pets because the expiry is a feature! Why don&#39;t we use this more on the web?</p>
 ]]></content:encoded></item></channel></rss>

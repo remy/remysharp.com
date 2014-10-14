@@ -4,8 +4,9 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/10/06/what-is-a-web-app" title="What is a &quot;Web App&quot;?">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 5-Oct 2014</div><article class="post"><h1 class="title"><a href="/drafts/firefox-devtools"></a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/firefox-devtools.md">(edit)</a></small></h1><div class="post-content">
+ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/10/14/focus-dev-util" title="Element focus utility">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 9-Oct 2014</div><article class="post"><h1 class="title"><a href="/drafts/firefox-devtools"></a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/firefox-devtools.md">(edit)</a></small></h1><div class="post-content">
 <p>A week of Firefox devtools. Please note that this document is for me to recall issues (or good things) I encountered during immercing myself in devtools (instead of Chrome devtools) and I am also recording screencasts of my sessions which (I may edit) and hope to send to the devtools team (if they think it&#39;ll be useful).</p>
+<p><strong>Important note:</strong> When I ran Nightly for the first time (just before the screencasts), I was asked if I wanted to opt-in to multi-process test feedback. I said yes (I had a new laptop, and I was trying to help out). As it turns out, that multi-process mode happened to cause a lot of the buggyness that I was seeing in the first half of my testing. I&#39;m not <em>100%</em> what was affected, but it was <a href="https://twitter.com/canuckistani/status/520332616688345088">definitely a factor</a>.</p>
 <hr>
 <p>Build: 35.0a1 (2014-09-30)</p>
 <h2>Task: change font weight</h2>
@@ -17,12 +18,14 @@ ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><
 <li>For compressed CSS, inspector view says &quot;screen.css:1&quot;, but the styles editor automatically &quot;pretty prints&quot; so there&#39;s no link between line 1 and the style editor view</li>
 <li>In inspector, space is auto completed to <code>!important</code> regardless of cursor position <em>or</em> actual CSS property</li>
 </ul>
+<p>Video: <a href="https://www.youtube.com/watch?v=_37j1cU5VWU">https://www.youtube.com/watch?v=_37j1cU5VWU</a> (3m44s)</p>
 <h2>Task: fix padding on heading</h2>
 <ul>
-<li>Box model view: isn&#39;t clear what is padding/margin/etc - since everything is highlighted when I hover over box model. Took me a while to cognitively link the value to the visual area on the page</li>
+<li>Box model view: wasn&#39;t clear what is padding/margin/etc - since everything is highlighted when I hover over box model. Took me a while to cognitively link the value to the visual area on the page</li>
 <li>Changing the padding in the box model view was very/unusably slow</li>
-<li>Responsive view: Great tool, would be great if I could use the cursors to change the height &amp; width of the</li>
+<li>Responsive view: Great tool, would be great if I could use the cursors to change the height &amp; width of the element</li>
 </ul>
+<p>I can&#39;t find the video for this, so I&#39;ll try to find the time to capture a gif of what I mean in the first point...damn screenflow kept crashing on me :(</p>
 <h2>Task: fix jsbin&#39;s linting not appearing (note: run in Firefox, not Nightly - sorry!)</h2>
 <ul>
 <li>Most time spent in debugging panel to solve this problem</li>
@@ -35,6 +38,7 @@ ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><
 <li>I tried to hide away the list of source files…and managed, but then couldn&#39;t get it back - and then the hover to inspect object would randomly cause the source list to reappear (then vanish), so the ui would jump under my cursor a lot</li>
 <li>Hover to inspect was quite powerful, though I found it hard to get the actual property that I was interested in</li>
 </ul>
+<p>Video: <a href="https://www.youtube.com/watch?v=vaiC0N64bwg">https://www.youtube.com/watch?v=vaiC0N64bwg</a> (37m47s)</p>
 <p>Build: 35.0a1 (2014-10-02)</p>
 <h2>Task: add keyboard support to JS Bin navigation (v1)</h2>
 <ul>
@@ -59,7 +63,22 @@ ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><
 <li>The console also doesn&#39;t work when the debugger is paused...but this might just be a natural state of debugging the console means you can&#39;t use the console..!</li>
 <li>The debugger settings cog feels like it should be click to open, not mouse down to open - as mouse up clicks first item and reloads page</li>
 </ul>
-<p>Video: <a href="https://www.youtube.com/watch?v=TNMqFkrgC5I">https://www.youtube.com/watch?v=TNMqFkrgC5I</a></p>
+<p>Video: <a href="https://www.youtube.com/watch?v=TNMqFkrgC5I">https://www.youtube.com/watch?v=TNMqFkrgC5I</a> (5m08s)</p>
+<h2>Task: debug why an element is not visible (intend to use 3D viewer)</h2>
+<p>35.0a1 (2014-10-07)</p>
+<ul>
+<li>Generally exactly what I expected. 3D video is super useful for identifying DOM pile ups</li>
+<li>The zoom in/out was a little overly sensitive, but suspect that might be mixed with the 3D rendering and mouse input</li>
+</ul>
+<p>Video: <a href="https://www.youtube.com/watch?v=BQ5H-R20Dho">https://www.youtube.com/watch?v=BQ5H-R20Dho</a> (11m02s)</p>
+<h2>Task: use network panel to check and test headers on image uploads</h2>
+<ul>
+<li>&quot;Edit and send&quot; on individual network items is very useful, particularly with server debugging</li>
+<li>Firefox devtools gave me everything I&#39;d expect from the network tools for this particular task</li>
+<li>One issue though: with a cached image (in jsbin&#39;s output) - the network request was not appearing <em>at all</em>. This was confusing because I wasn&#39;t sure if the request was being made or not...</li>
+</ul>
+<p>Video: <a href="http://youtu.be/maohiQY29_U">http://youtu.be/maohiQY29_U</a> (14m02s)</p>
+<p>Missing network request: <a href="http://youtu.be/maohiQY29_U?t=8m56s">http://youtu.be/maohiQY29_U?t=8m56s</a></p>
 <hr>
 <h2>Misc issues</h2>
 <ul>
@@ -70,6 +89,7 @@ ga('send', 'pageview');</script></head><body id="drafts-firefox-devtools-page"><
 <li>Event listeners on DOM nodes visible from the inspector view <em>and</em> being able to set breakpoints directly from there - very cool.</li>
 <li>Find (cmd+o and cmd+p - same effect) is very cool with the command prefixes: ! @ # *</li>
 <li>Event listeners on DOM, then click on code line to see actual code - super cool.</li>
+<li>Network: edit and send - super handy!</li>
 </ul>
 <p class="update">Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.</p></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
 </div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.13"></script><script src="/js/index.js?2.13"></script><!--  
