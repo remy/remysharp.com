@@ -45,7 +45,7 @@
   showActive();
 })();</code></pre>
 <p>Here&#39;s a live demo:</p>
-<p><a class="jsbin-embed" href="http://jsbin.com/bexugo/1/embed?output">JS Bin</a><script src="https://drt35l4oshkgr.cloudfront.net/js/embed.js"></script></p>
+<p><a class="jsbin-embed" href="https://jsbin.com/bexugo/1/embed?output">JS Bin</a><script src="https://drt35l4oshkgr.cloudfront.net/js/embed.js"></script></p>
 <p>So now I have visibility on <em>what</em> is being focused, I can fix various issues ranging from <code>outline</code> being removed, only including <code>:hover</code> styles and not <code>:focus</code> and applying <em>proper</em> <a href="http://oaa-accessibility.org/example/25/">menu logic</a> to menu-like objects.</p>
 ]]></content:encoded></item><item><title>What is a &quot;Web App&quot;?</title><guid isPermaLink="false">what-is-a-web-app</guid><link>http://remysharp.com/2014/10/06/what-is-a-web-app</link><pubDate>Mon, 06 Oct 2014 16:00:00 +0000</pubDate><description><![CDATA[In technology definitions are important. We talk in a language that&#39;s mostly made up by our own industry.
 Bugs, cache, regressions, polyfills, monads, polymorphic functions, isomorphic JavaScript and a lot more language. Even when you do work in our industry, it&#39;s hard to keep up with all the language.
