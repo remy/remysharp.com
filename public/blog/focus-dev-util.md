@@ -23,7 +23,7 @@ Either add the code directly to your project as a debug dependancy, or use it as
   var active = document.createElement('pre');
   document.body.appendChild(active);
   active.tabindex = -1;
-  with (active.style) {
+  with (active.style) { // warning: `with` I know what I'm doing!
     position = 'fixed';
     padding = '2px';
     bottom = right = '20px';
@@ -47,12 +47,12 @@ Either add the code directly to your project as a debug dependancy, or use it as
         html += ' ' + attrs[i].name + '="' + attrs[i].value + '"';
       }
 
-      active.innerText = '<' + el.nodeName.toLowerCase() + html + '>';
+      active.textContent = '<' + el.nodeName.toLowerCase() + html + '>';
       lastActive = el;
     }
 
     requestAnimationFrame(showActive);
-  }
+  };
 
   showActive();
 })();
@@ -60,6 +60,6 @@ Either add the code directly to your project as a debug dependancy, or use it as
 
 Here's a live demo:
 
-<a class="jsbin-embed" href="https://jsbin.com/bexugo/1/embed?output">JS Bin</a><script src="https://drt35l4oshkgr.cloudfront.net/js/embed.js"></script>
+<a class="jsbin-embed" href="https://jsbin.com/yibiwa/2/embed?output">JS Bin</a><script src="https://drt35l4oshkgr.cloudfront.net/js/embed.js"></script>
 
 So now I have visibility on *what* is being focused, I can fix various issues ranging from `outline` being removed, only including `:hover` styles and not `:focus` and applying *proper* [menu logic](http://oaa-accessibility.org/example/25/) to menu-like objects.
