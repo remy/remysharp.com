@@ -27,7 +27,7 @@ openssl req -new -sha256 -key example-decrypted.key -out example.csr</code></pre
 </ul>
 <p><strong>Note:</strong> if you have a wildcard certificate, then the common name is <code>*.example.com</code>.</p>
 <p>Send <code>example.csr</code> contents to reissued SSL cert, and agree to all the emails.</p>
-<p>You should get an email from the SSL issue with the certificate. Save the contents of &#39;certificate&#39; in example.crt</p>
+<p>You should get an email from the SSL issue with the certificate. Save the contents of &#39;certificate&#39; in <code>example.crt</code>.</p>
 <p>Now get the intermediate certificate (I&#39;m using <a href="https://knowledge.rapidssl.com/support/ssl-certificate-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO26459">RapidSSL&#39;s SHA256 cert</a>) and combine into a single bundled file - note that the order is important:</p>
 <pre><code class="language-nohighlight">cat example.crt intermediate.crt &gt; bundle.crt</code></pre>
 <hr>
