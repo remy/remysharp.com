@@ -119,7 +119,7 @@
     ]
   },
   "how-to-add-ssl": {
-    "title": "Adding an (SHA-2 signed) SSL certificate",
+    "title": "Adding an (SHA256 signed) SSL certificate",
     "date": "2014-10-16 17:30:00",
     "complete": true,
     "tags": [

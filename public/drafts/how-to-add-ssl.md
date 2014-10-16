@@ -1,4 +1,4 @@
-# Adding an (SHA-2 signed) SSL certificate
+# Adding an (SHA256 signed) SSL certificate
 
 I've had to update the SSL certificate quite a few times on [jsbin.com](http://jsbin.com) in the last 6 months, and I keep a cheatsheet of SSL steps on my machine. So it's about time I publish it somewhere that I can *google* too!
 
@@ -8,7 +8,7 @@ This walkthrough explains how to add an SSL certificate to your server. This is 
 
 I registered my SSL certificate via [namecheap](https://namecheap.com) from RapidSSL which is actually a shell for GeoTrust.
 
-If you're reissuing a certificate to upgrade to SHA-2 (from SHA-1) (because [SHA-1 is being ditched](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1)) from RapidSSL **you must** reissue directly from them. See [this comment](https://github.com/konklone/shaaaaaaaaaaaaa/issues/24#issuecomment-54021941) for full details.
+If you're reissuing a certificate to upgrade to SHA256 (from SHA-1) (because [SHA-1 is being ditched](https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1)) from RapidSSL **you must** reissue directly from them. See [this comment](https://github.com/konklone/shaaaaaaaaaaaaa/issues/24#issuecomment-54021941) for full details.
 
 Assuming my site is example.com, I'm using `example` as the main filename.
 
@@ -34,11 +34,16 @@ Send `example.csr` contents to reissued SSL cert, and agree to all the emails.
 
 You should get an email from the SSL issue with the certificate. Save the contents of 'certificate' in example.crt
 
-Now get the intermediate certificate (I'm using [RapidSSL's SHA-2 cert](https://knowledge.rapidssl.com/support/ssl-certificate-support/index?page=content&actp=CROSSLINK&id=SO26459)) and combine into a single bundled file - note that the order is important:
+Now get the intermediate certificate (I'm using [RapidSSL's SHA256 cert](https://knowledge.rapidssl.com/support/ssl-certificate-support/index?page=content&actp=CROSSLINK&id=SO26459)) and combine into a single bundled file - note that the order is important:
 
 ```nohighlight
 cat example.crt intermediate.crt > bundle.crt
 ```
+---
+
+*RapidSSL specific note*: I found that the GeoTrust certificate (part of the intermediate certificate that I downloaded above) was still SHA-1 signed. So I dropped it, only bundling my own certificate and the rapidSSL certificate (so less certificates) and now I get the green lock from Chrome Canary. Note: I'm not *100%* if this is okay, but it does seem valid.
+
+---
 
 Finally, make sure nginx (in my case) is using the bundle and the key used to generate the csr:
 
