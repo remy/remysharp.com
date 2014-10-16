@@ -32,7 +32,7 @@ The last command will generate the CSR which will go off to your SSL issuer. I h
 
 Send `example.csr` contents to reissued SSL cert, and agree to all the emails.
 
-You should get an email from the SSL issue with the certificate. Save the contents of 'certificate' in example.crt
+You should get an email from the SSL issue with the certificate. Save the contents of 'certificate' in `example.crt`.
 
 Now get the intermediate certificate (I'm using [RapidSSL's SHA256 cert](https://knowledge.rapidssl.com/support/ssl-certificate-support/index?page=content&actp=CROSSLINK&id=SO26459)) and combine into a single bundled file - note that the order is important:
 
