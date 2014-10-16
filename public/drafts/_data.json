@@ -125,5 +125,13 @@
     "tags": [
       "code"
     ]
+  },
+  "debugging-document-events": {
+    "title": "Debugging events in devtools inspector",
+    "date": "2014-10-16 11:30:00",
+    "complete": false,
+    "tags": [
+      "code"
+    ]
   }
 }
