@@ -37,7 +37,7 @@ You should get an email from the SSL issue with the certificate. Save the conten
 Now get the intermediate certificate (I'm using [RapidSSL's SHA-2 cert](https://knowledge.rapidssl.com/support/ssl-certificate-support/index?page=content&actp=CROSSLINK&id=SO26459)) and combine into a single bundled file - note that the order is important:
 
 ```nohighlight
-cat intermediate.crt example.crt > bundle.crt
+cat example.crt intermediate.crt > bundle.crt
 ```
 
 Finally, make sure nginx (in my case) is using the bundle and the key used to generate the csr:
