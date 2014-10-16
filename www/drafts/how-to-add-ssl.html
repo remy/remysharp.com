@@ -29,7 +29,7 @@ openssl req -new -sha256 -key example-decrypted.key -out example.csr</code></pre
 <p>Send <code>example.csr</code> contents to reissued SSL cert, and agree to all the emails.</p>
 <p>You should get an email from the SSL issue with the certificate. Save the contents of &#39;certificate&#39; in example.crt</p>
 <p>Now get the intermediate certificate (I&#39;m using <a href="https://knowledge.rapidssl.com/support/ssl-certificate-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO26459">RapidSSL&#39;s SHA-2 cert</a>) and combine into a single bundled file - note that the order is important:</p>
-<pre><code class="language-nohighlight">cat intermediate.crt example.crt &gt; bundle.crt</code></pre>
+<pre><code class="language-nohighlight">cat example.crt intermediate.crt &gt; bundle.crt</code></pre>
 <p>Finally, make sure nginx (in my case) is using the bundle and the key used to generate the csr:</p>
 <pre><code class="language-conf">ssl                  on;
 ssl_certificate      /WWW/example.com/certs/bundle.crt;
