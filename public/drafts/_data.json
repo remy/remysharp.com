@@ -118,14 +118,6 @@
       "personal"
     ]
   },
-  "how-to-add-ssl": {
-    "title": "Adding an (SHA256 signed) SSL certificate",
-    "date": "2014-10-16 17:30:00",
-    "complete": true,
-    "tags": [
-      "code"
-    ]
-  },
   "debugging-document-events": {
     "title": "Debugging events in devtools inspector",
     "date": "2014-10-16 11:30:00",

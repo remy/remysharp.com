@@ -3145,6 +3145,14 @@
     "tags": [
       "code"
     ]
+  },
+  "how-to-add-ssl": {
+    "title": "Adding an (SHA256 signed) SSL certificate",
+    "date": "2014-10-17 09:00:00",
+    "complete": true,
+    "tags": [
+      "code"
+    ]
   }
 
 }
