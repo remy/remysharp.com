@@ -28,7 +28,7 @@ openssl req -new -sha256 -key example-decrypted.key -out example.csr</code></pre
 <p>Finally, make sure nginx (in my case) is using the bundle and the key used to generate the csr:</p>
 <pre><code class="language-conf">ssl                  on;
 ssl_certificate      /WWW/example.com/certs/bundle.crt;
-ssl_certificate_key  /WWW/example.com/certs/example.key;</code></pre>
+ssl_certificate_key  /WWW/example.com/certs/example-decrypted.key;</code></pre>
 <p>Then restart nginx:</p>
 <pre><code class="language-nohighlight">nginx -s reload</code></pre>
 <h2>References &amp; tools:</h2>
