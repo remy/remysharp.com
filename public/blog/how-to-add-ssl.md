@@ -50,7 +50,7 @@ Finally, make sure nginx (in my case) is using the bundle and the key used to ge
 ```conf
 ssl                  on;
 ssl_certificate      /WWW/example.com/certs/bundle.crt;
-ssl_certificate_key  /WWW/example.com/certs/example.key;
+ssl_certificate_key  /WWW/example.com/certs/example-decrypted.key;
 ```
 
 Then restart nginx:
