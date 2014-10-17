@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 14 Oct 2014 13:30:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Element focus utility</title><guid isPermaLink="false">focus-dev-util</guid><link>http://remysharp.com/2014/10/14/focus-dev-util</link><pubDate>Tue, 14 Oct 2014 13:30:00 +0000</pubDate><description><![CDATA[I&#39;ve recently been looking at retrofitting keyboard navigation support to JS Bin, but I was immediately struck by the totally lack of visibility on what was in focus.]]></description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Fri, 17 Oct 2014 9:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Adding an (SHA256 signed) SSL certificate</title><guid isPermaLink="false">how-to-add-ssl</guid><link>http://remysharp.com/2014/10/17/how-to-add-ssl</link><pubDate>Fri, 17 Oct 2014 9:00:00 +0000</pubDate><description><![CDATA[I&#39;ve had to update the SSL certificate quite a few times on jsbin.com in the last 6 months, and I keep a cheatsheet of SSL steps on my machine. So it&#39;s about time I publish it somewhere that I can google too!]]></description><content:encoded><![CDATA[
+<p>I&#39;ve had to update the SSL certificate quite a few times on <a href="http://jsbin.com">jsbin.com</a> in the last 6 months, and I keep a cheatsheet of SSL steps on my machine. So it&#39;s about time I publish it somewhere that I can <em>google</em> too!</p>
+<p>This walkthrough explains how to add an SSL certificate to your server. This is based on using a linux based machine (in my case Ubuntu) and nginx as the server.</p>
+<p>I registered my SSL certificate via <a href="https://namecheap.com">namecheap</a> from RapidSSL which is actually a shell for GeoTrust.</p>
+<p>If you&#39;re reissuing a certificate to upgrade to SHA256 (from SHA-1) (because <a href="https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1">SHA-1 is being ditched</a>) from RapidSSL <strong>you must</strong> reissue directly from them. See <a href="https://github.com/konklone/shaaaaaaaaaaaaa/issues/24#issuecomment-54021941">this comment</a> for full details.</p>
+<p>Assuming my site is example.com, I&#39;m using <code>example</code> as the main filename.</p>
+<pre><code class="language-nohighlight">openssl genrsa -aes256 -out example-encrypted.key 2048
+openssl rsa -in example-encrypted.key -out example-decrypted.key
+openssl req -new -sha256 -key example-decrypted.key -out example.csr</code></pre>
+<p>The last command will generate the CSR which will go off to your SSL issuer. I have this a cheatsheet for the prompts (if you&#39;re based in the UK, since <code>Locality</code> might not mean much):</p>
+<ul>
+<li>Country name: <code>GB</code>, a country code, not name</li>
+<li>State: <code>East Sussex</code>, county if you&#39;re in the UK</li>
+<li>Locality: <code>Brighton</code>, your city</li>
+<li>Organisation: <code>My Company Ltd</code></li>
+<li>Org unit: leave empty</li>
+<li>Common name: <code>www.example.com</code>, the full domain for the cert</li>
+<li>Leave the rest blank (email, challenge password &amp; company name)</li>
+</ul>
+<p><strong>Note:</strong> if you have a wildcard certificate, then the common name is <code>*.example.com</code>.</p>
+<p>Send <code>example.csr</code> contents to reissued SSL cert, and agree to all the emails.</p>
+<p>You should get an email from the SSL issue with the certificate. Save the contents of &#39;certificate&#39; in <code>example.crt</code>.</p>
+<p>Now get the intermediate certificate (I&#39;m using <a href="https://knowledge.rapidssl.com/support/ssl-certificate-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO26459">RapidSSL&#39;s SHA256 cert</a>) and combine into a single bundled file - note that the order is important:</p>
+<pre><code class="language-nohighlight">cat example.crt intermediate.crt &gt; bundle.crt</code></pre>
+<hr>
+<p><em>RapidSSL specific note</em>: I found that the GeoTrust certificate (part of the intermediate certificate that I downloaded above) was still SHA-1 signed. So I dropped it, only bundling my own certificate and the rapidSSL certificate (so less certificates) and now I get the green lock from Chrome Canary. Note: I&#39;m not <em>100%</em> if this is okay, but it does seem valid.</p>
+<hr>
+<p>Finally, make sure nginx (in my case) is using the bundle and the key used to generate the csr:</p>
+<pre><code class="language-conf">ssl                  on;
+ssl_certificate      /WWW/example.com/certs/bundle.crt;
+ssl_certificate_key  /WWW/example.com/certs/example.key;</code></pre>
+<p>Then restart nginx:</p>
+<pre><code class="language-nohighlight">nginx -s reload</code></pre>
+<h2>References &amp; tools:</h2>
+<ul>
+<li><a href="https://shaaaaaaaaaaaaa.com/">shaaaaaaaaaaaaa</a> (for checking SHA-1)</li>
+<li><a href="https://www.ssllabs.com/ssltest/analyze.html">SSL labs</a> (for deep SSL analysis)</li>
+<li><a href="https://www.sslshopper.com/article-most-common-openssl-commands.html">common openssl commands</a></li>
+</ul>
+]]></content:encoded></item><item><title>Element focus utility</title><guid isPermaLink="false">focus-dev-util</guid><link>http://remysharp.com/2014/10/14/focus-dev-util</link><pubDate>Tue, 14 Oct 2014 13:30:00 +0000</pubDate><description><![CDATA[I&#39;ve recently been looking at retrofitting keyboard navigation support to JS Bin, but I was immediately struck by the totally lack of visibility on what was in focus.]]></description><content:encoded><![CDATA[
 <p>I&#39;ve recently been looking at retrofitting keyboard navigation support to JS Bin, but I was immediately struck by the totally lack of visibility on <em>what</em> was in focus.</p>
 <p>Sure, this is a short-coming of the original design and bad choises I had made with JS Bin&#39;s code base. Perhaps you can see from the animation below, when the <code>body</code> is in focus, tabbing is focusing <em>something</em> but until I actually tab to the &quot;HTML&quot; panel title, there&#39;s no visual feedback as to <em>what</em> I should be fixing:</p>
 <p><img src="/images/tab-focus-clueless.gif" alt="Tab focusing is clueless"></p>
@@ -1066,34 +1105,4 @@ being live-updated inside V8 it means my workflow is already pretty slick.</p>
 <p><img src="http://remysharp.com/images/watch.gif" style="border:1px solid #999; float:right;margin-left: 5px; margin-bottom: 5px; width: 40%;">But this cursor up, enter workflow can be improved. The code that I&#39;m running in the console can actually be moved to the watch expressions panel.</p>
 <h2>Changing my workflow</h2>
 <p>With my expression in the watch expressions panel, and whilst I&#39;m still in a <em>paused state</em> of execution in the code, I can go ahead and edit the code directly inside devtools, and each time I hit save on the file, V8 will reload the function in memory, and my watch updates, which gives me a real-time preview of the result. And that&#39;s it. Very neat.</p>
-]]></content:encoded></item><item><title>What is codecasting?</title><guid isPermaLink="false">what-is-codecasting</guid><link>http://remysharp.com/2013/11/14/what-is-codecasting</link><pubDate>Thu, 14 Nov 2013 17:59:17 +0000</pubDate><description><![CDATA[Codecasting is the process of recording your coding session, and casting it out to any number of participants, generally in real-time.
-JS Bin supports codecasting out of the box, for free, to both registered and anonymous users. Just share your bin&#39;s url with /watch instead of /edit.]]></description><content:encoded><![CDATA[
-<p>Codecasting is the process of recording your coding session, and casting it out to any number of participants, generally in real-time.</p>
-<p>JS Bin supports codecasting out of the box, for free, to both registered and anonymous users. Just share your bin&#39;s url with <code>/watch</code> instead of <code>/edit</code>.</p>
-<h2>My backstory with codecasting</h2>
-<p>September 28th 2008 is when <a href="http://remysharp.com/2008/10/06/js-bin-for-collaborative-javascript-debugging/">jsbin was put live for the first time</a>. There&#39;s somewhat of a backstory as to why I created it, and there&#39;s even a precursor site I built. That&#39;s since faded into obscurity.</p>
-<p>It was December 2008 I went to visit <a href="http://adactio.com">Jeremy</a> &amp; <a href="http://andybudd.com">Andy</a> at the <a href="http://clearleft.com">Clearleft</a> offices to ask their advice about the first workshop I would run (Iceweb 2008 in Reykjavik, Iceland). I sat down and told them my fantasy would be to use jsbin (<a href="http://www.flickr.com/photos/remysharp/4284906136/">the 2008 version</a>) and anything I typed on my presenter machine, the student could follow along and see the code, and could switch back and forth from the output to the code on their own machine.</p>
-<p>I referred to this as Codecasting*.</p>
-<p><small>* It was a term that had come naturally to me, and I&#39;m pretty sure I found an entry in Wikipedia way back and felt disappointed I hadn&#39;t invented the term, but now (2013) I look for the wiki page and I can&#39;t find anything. I digress.</small></p>
-<p>The problem was streaming and persistent connections were hard (for me) with a <a href="http://en.wikipedia.org/wiki/LAMP_%28software_bundle%29">LAMP</a> stack.</p>
-<p>In fact, I did get a <a href="https://github.com/remy/jsbin/tree/e895c32089ac1bd310b5d91aecabda219f2eccea">version working using cometd and the bayeux protocol</a>, and recall testing it with John Resig (partly because jsbin&#39;s simplicity was inspired by his <a href="http://ejohn.org/apps/learn/">Learning Advanced JavaScript site</a>).  It did just about work, but I knew it couldn&#39;t handle a lot of users because Apache would eventually bail.</p>
-<p>So I left it.</p>
-<p>...until I saw Ryan Dahl present Node.js at jsconf.eu nearly a year later in 2009. Codecasting suddenly was a) easy, and b) JavaSript based.</p>
-<h2>Hacking codecasting in to jsbin</h2>
-<p>A year later, I built (a still unfinished) <a href="http://forbind.net/">Förbind</a> - as &quot;Sockets as a Service&quot; site. This would be the ground work for adding codecasting to jsbin. In fact, there&#39;s still a link on the homepage to the <a href="http://jsbin.com/edifi3/1/edit">bin</a> that you could enable codecasting with (note that this doesn&#39;t work anymore - because codecasting is now native to jsbin).</p>
-<p>In the few days that I built Förbind (a swedish word for join, or as I liked to think: connect), the codecasting was surprisingly stable.</p>
-<p>But then my life around that time was hard, and jsbin (version 2) was <a href="https://github.com/remy/jsbin/tree/v2.9.16">still written in PHP</a> and I wanted native support for codecasting. So began the big rewrite of jsbin in the start of 2012.</p>
-<p>Here&#39;s a video of the first implementation of codecasting in JS Bin back in late 2010. Note that codecasting wasn&#39;t and isn&#39;t limited to a single browser or single machine, JS Bin&#39;s version could run on multiple machines at once and all different types of browsers (though the Förbind version relied on Socket.IO, the current version doesn&#39;t and it relies entirely on EventSource and polyfilled techniques).</p>
-<iframe src="//www.youtube.com/embed/FjusnOgJE_I" frameborder="0" allowfullscreen></iframe>
-
-<h2>Native codecasting in jsbin</h2>
-<p>As of version 3 of jsbin, released in June 2012, codecasting is possible out of the box.</p>
-<p>Take any bin you&#39;ve created, and instead of /edit in the url, change it to /watch, and any number of participants can watch you live code, and the output will automatically update as they watch.</p>
-<p>If you (the owner of the bin) creates a new revision, this update will automatically propagate to the participants and they&#39;ll continue to be able to watch your work.</p>
-<p>If the participant wants to create their own copy, they can just create a clone, and now they have a copy from that point in time.</p>
-<p><small>This is also referred to as &quot;Professor Mode&quot; for pro users of CodePen (I believe). Codecasting in jsbin will remain free, even after pro users are added.</small></p>
-<h2>How it works in jsbin</h2>
-<p>Since v3 of jsbin saves pretty much every keystroke, when a save occurs on the server side, it triggers a &quot;ping&quot; event. This is listened to by the <code>EventSource</code> code. The code looks up the bin&#39;s url, and if anyone is listening, it pushes down the new code for that particular panel.</p>
-<p>Both the full output views and the codecasting views listening to this EventSource endpoint, and since EventSource can be polyfilled, it works like a charm on all platforms. Simple.</p>
-<p>In the future (of JS Bin) codecasts will be recordable and let you play them back (at a later date) and allowing you to add audio, video, annotations and anything else you want to create tutorials and examples of your work.</p>
 ]]></content:encoded></item></channel></rss>
