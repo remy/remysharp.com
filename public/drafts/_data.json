@@ -110,14 +110,6 @@
       "web"
     ]
   },
-  "motivation": {
-    "title": "Motivation",
-    "date": "2014-10-03 12:00:00",
-    "complete": true,
-    "tags": [
-      "personal"
-    ]
-  },
   "debugging-document-events": {
     "title": "Debugging events in devtools inspector",
     "date": "2014-10-16 11:30:00",
