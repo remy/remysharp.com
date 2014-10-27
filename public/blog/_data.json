@@ -3150,6 +3150,7 @@
     "title": "Adding an (SHA256 signed) SSL certificate",
     "date": "2014-10-17 09:00:00",
     "complete": true,
+    "published": true,
     "tags": [
       "code"
     ]
@@ -3158,6 +3159,7 @@
     "title": "Motivation",
     "date": "2014-10-27 10:30:00",
     "complete": true,
+    "published": true,
     "tags": [
       "personal"
     ]
