@@ -4,6 +4,8 @@
 
 Behind the screen, behind the internet, I'm generally a bit of a depressive chap. I have been for many, many years. Going back to early childhood. I've not talked about it online before, and I'm not sure how much I will in the future.
 
+<!--more-->
+
 When I realise that I'm in a slump of depression, it's like a weight on my back and around my neck. I imagine Superman with a cloak of Kryptonite.
 
 It's shit. It's *really* shit. I know how I want to feel, I want to feel happy, grateful, I want to laugh and feel loved, yet I can't get there. It's shit that I can't.
@@ -38,3 +40,5 @@ For me, I need something to reach into my slump and lend it's hand to pull me up
 ---
 
 This post is first and foremost for me. When I feel shit again, I'll find this post again, read it, and remember that I *can* stand tall, and say: depression lies. Fuck you, depression.
+
+<small>Reposted from [The Pastry Box Project](https://the-pastry-box-project.net/remy-sharp/2014-october-5)</small>
