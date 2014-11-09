@@ -168,7 +168,7 @@ server.listen(8080);</code></pre>
 <li><a href="http://caniuse.com/#search=eventsource">EventSource</a>. Push based server <em>events</em>, that automatically reconnect when the connection is dropped.</li>
 <li><a href="http://caniuse.com/#search=websockets">WebSockets</a>. Bi-directional, persistent sockets, that can be made across origin.</li>
 </ol>
-<p>These standards are good because: all browsers implementing new features will implement these features in an interopable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through <a href="http://html5please.com/#eventsource">polyfills</a>).</p>
+<p>These standards are good because: all browsers implementing new features will implement these features in an interoperable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through <a href="http://html5please.com/#eventsource">polyfills</a>).</p>
 <h2>So, what&#39;s next?</h2>
 <p>Now we live in a world where both the client side <em>and</em> server side has been solved and is simple to work with, what can we actually do?</p>
 <p>Here&#39;s a few examples of where I&#39;ve used node.js for real time:</p>
@@ -279,7 +279,7 @@ primus.metroplex.servers(function (err, servers) {
   console.log(&#39;other servers: %d&#39;, servers.length, servers);
 });</code></pre>
 <p>Note that the address for the server is the same address as the webserver that your Primus instance is bound to.</p>
-<p>Then with omega-supreme, you can forward messages to known servers. So if <code>server A</code> knows that <code>server B</code> is active, it can forwad broadcast messages to <code>server B</code>:</p>
+<p>Then with omega-supreme, you can forward messages to known servers. So if <code>server A</code> knows that <code>server B</code> is active, it can forward broadcast messages to <code>server B</code>:</p>
 <pre><code>primus.forward(server, data, function (error, data) {
   // data contains the number of sparks that got the message
 });</code></pre>
