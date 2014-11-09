@@ -248,7 +248,7 @@ That's to say, today we have *three* native client side solutions to communicati
 * [EventSource](http://caniuse.com/#search=eventsource). Push based server *events*, that automatically reconnect when the connection is dropped.
 * [WebSockets](http://caniuse.com/#search=websockets). Bi-directional, persistent sockets, that can be made across origin.
 
-These standards are good because: all browsers implementing new features will implement these features in an interopable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through [polyfills](http://html5please.com/#eventsource)).
+These standards are good because: all browsers implementing new features will implement these features in an interoperable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through [polyfills](http://html5please.com/#eventsource)).
 
 ## So, what's next?
 
@@ -399,7 +399,7 @@ primus.metroplex.servers(function (err, servers) {
 
 Note that the address for the server is the same address as the webserver that your Primus instance is bound to.
 
-Then with omega-supreme, you can forward messages to known servers. So if `server A` knows that `server B` is active, it can forwad broadcast messages to `server B`:
+Then with omega-supreme, you can forward messages to known servers. So if `server A` knows that `server B` is active, it can forward broadcast messages to `server B`:
 
 ```
 primus.forward(server, data, function (error, data) {
