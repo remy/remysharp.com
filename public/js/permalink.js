@@ -1,8 +1,6 @@
 (function () {
   'use strict';
 
-
-
   var className = 'anchor';
   var idcache = {};
   var count = 0;
@@ -75,12 +73,20 @@
     });
   }
 
+  function readCurrentPosition() {
+
+  }
+
   if (document.querySelector && Function.prototype.bind) {
     injectStyles();
     permalink();
     if (window.location.hash && window.scrollY === 0) {
       // touching the location will cause the window to scroll
       window.location = window.location;
+    }
+
+    if (window.requestAnimationFrame) {
+
     }
   }
 })();

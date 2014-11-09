@@ -41,7 +41,7 @@ This is my write up of the talk I've given on the subject. [Slides are also avai
   * [Client side](#client-side)
   * [Server side](#server-side)
 10. [Long-latency real time feedback](#long-latency-real-time-feedback)
-
+11. [To wrap up](#to-wrap-up)
 
 
 ## What is real time to you?
@@ -438,33 +438,27 @@ This is effectively what a client sending a broadcast would look like if Redis w
 
 ## Long-latency real time feedback
 
-One aspect that particularly interests me is long running requests. For example, when I created 5minfork (a site that clones a github repo and hosts it for 5 minutes), there's a point when the user requests to clone a git repo and there's a latency period.
+One aspect that particularly interests me is long running requests. For example, when I created [5minfork](http://5minfork.com) (a site that clones a github repo and hosts it for 5 minutes), there's a point when the user requests to clone a git repo and there's a potential latency period while the server clones.
 
-This period length is unknown (i.e. we could be cloning a large project which takes time), but we do know that it's not instant. So how do we communicate to the user that work is in progress and *most importantly* tell the user that the work is done and they can proceed?
+This period length is unknown (i.e. we could be cloning a large project which takes time), but we do know that it's *not instant*. So how do we communicate to the user that work is in progress and *most importantly* tell the user that the work is done and they can proceed?
 
-Easily with node.js.
+Easily with node.js because the server can kick off a background process, and whilst it's cloning, instead of waiting, the node server continues to accept web requests. This way we can serve a holding page to indicate that we're actively working on the cloning process.
 
-[example]
+I've replicated this process in the [long latency demo](http://long-latency.rem.io/random) ([source also available](https://github.com/remy/long-poll-status))
 
+This consists of:
 
-## TODO
+1. A `GET` request handler to start the (fake) long latency process. The URL is given a unique identifier and we set a flag for that identifier to say it's in progress.
+2. The server responds with a holding page that will open a poll request to the same URL we `GET` in step 1 (equally this could be a long poll or a Web Socket or something to keep checking on the status).
+3. The poll eventually gets some status that the server is done performing it's task, and trigger a refresh of the same page (though this could be handled in all manners of ways).
 
-- github: someone commented (or pushed a change)
-- Long polling is important for UX because you can communicate progress...5minfork.com - long tasks (forking on github, transcoding audio, video, parsing large jobs, etc)
-
-
-
-
+Since node is very good at asynchronous type code (though it's not better than others, it's just a much more natural workflow), it makes kicking off a background task and responding immediately to the "are we there yet" requests, however they're made, very very simple.
 
 
+## To wrap up
 
+It is exceptionally easy to add real-time to your project using Node.js. Node on a single CPU without any optimisation can work out very well for most small to medium sized projects.
 
+We've leaped so far ahead in the last 10 years, that it's insane how simple it is to add real-time via projects like Socket.io and Primus.
 
-
-
-
-
-
-
-
-
+Don't be afraid to try it out. Even if it's for your own side/tinker project that you whip up and post on heroku (as are all these demos). It's too easy, and it's too important for today's user expectations not to!
