@@ -20,7 +20,7 @@ ga('send', 'pageview');</script></head><body id="blog-issues-with-position-fixed
 <p>I&#39;ve created a number of example pages that you can view for yourself, which are used in the following videos.</p>
 <h3>Juddering</h3>
 <p>If you add <code>position:fixed</code> in any normal way as you might on a &quot;desktop&quot; site, you&#39;ll see some degree of juddering as the page scrolls.</p>
-<iframe width="612" height="341" src="http://www.youtube.com/embed/yps8Ea5GO4I?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="341" src="//www.youtube.com/embed/yps8Ea5GO4I?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
 
 <p>Note that this is the simulator running, but I&#39;ve also captured the <a href="http://www.youtube.com/watch?v=T5P0x5NPr3M&amp;hd=1">real iPhone</a> (using Reflection) showing the same behaviour.</p>
 <p>The page used was: <a href="http://jsbin.com/3/ixewok/6/">jsbin.com/3/ixewok/6/</a> (<a href="http://jsbin.com/3/ixewok/6/edit?html,css,live">edit</a>)</p>
@@ -29,18 +29,18 @@ ga('send', 'pageview');</script></head><body id="blog-issues-with-position-fixed
 <p>This is a problem if you want to monitor the page position to simulate effects like the bumping and shunting of category headings like you might see in the address book app.</p>
 <h3>Position drift</h3>
 <p>If the page is zoomed at all, which you can get in iOS when the user rotates from portrait to landscape, as the user scrolls in any scale beyond 1 (i.e. zoomed), the position fixed element drifts upwards (I&#39;ve seen this drift entirely out of view before in other sites):</p>
-<iframe width="612" height="341" src="http://www.youtube.com/embed/YIOdPf7jqK4?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="341" src="//www.youtube.com/embed/YIOdPf7jqK4?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
 
 <p>The page used was: <a href="http://jsbin.com/3/ixewok/6/">jsbin.com/3/ixewok/6/</a> (<a href="http://jsbin.com/3/ixewok/6/edit?html,css,live">edit</a>)</p>
 <h3>Focus jumping</h3>
 <p>If there&#39;s a focusable element inside the position fixed element, i.e. an input element, this can cause the entire fixed element to jump out of place. This will only happen if the user has scrolled any amount (but if you&#39;re using <code>position:fixed</code> you&#39;re expecting exactly that kind of usage).</p>
-<iframe width="612" height="341" src="http://www.youtube.com/embed/lrnvZDwgJRc?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="341" src="//www.youtube.com/embed/lrnvZDwgJRc?rel=0" frameborder="0" allowfullscreen></iframe>
 
 <p>The page used was: <a href="http://jsbin.com/3/ixewok/8/">jsbin.com/3/ixewok/8/</a> (<a href="http://jsbin.com/3/ixewok/8/edit?html,css,live">edit</a>)</p>
 <h3>Scrolling == unusable position:fixed element</h3>
 <p><a href="https://twitter.com/#cdutson">Corey Dutson</a> pointed out there&#39;s <em>another</em> issue with position fixed. Although <a href="http://www.youtube.com/watch?v=NStzlMgvZy8">his example</a> show scrolling using JavaScript, the core problem is: if the page moves programatically (i.e. the user didn&#39;t cause the scroll) the elements inside the fix element are unavailable.</p>
 <p>From the screencast I&#39;ve recorded you can see using <a href="http://www.iwebinspector.com">iWebInspector</a> that although MobileSafari has painted the fixed element in place, it&#39;s actually not there - the actual element remains in place until you touch and move the page again.</p>
-<iframe width="612" height="341" src="http://www.youtube.com/embed/R2MzdeJSCKw?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="341" src="//www.youtube.com/embed/R2MzdeJSCKw?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
 
 <p>The page used was: <a href="http://jsbin.com/3/ixewok/13/">jsbin.com/3/ixewok/13/</a> (<a href="http://jsbin.com/3/ixewok/13/edit?html,css,live">edit</a>)</p>
 <p>I don&#39;t have a fix for this yet, and I suspect it&#39;s a core painting issue inside of MobileSafari - but I will keep playing to see if there&#39;s something that can be done.</p>
@@ -49,7 +49,7 @@ ga('send', 'pageview');</script></head><body id="blog-issues-with-position-fixed
 <p>If I change the CSS in my previous example, and set the height of my <code>html</code>, <code>body</code> and content block to 100%, then apply the scrolling touch property to the content, the juddering goes away. However, that alone does not fix the juddering.</p>
 <p>The trick would seem to be: make sure your fixed position element is <em>not</em> on a &quot;moving canvas&quot;. This example has the fixed element <em>over</em> a scrolling element, but <em>not</em> inside of it.</p>
 <p>So when I tried to apply this technique to the <code>body</code> element, the juddering was still visible, as the fixed element was <em>inside</em> the scrolling element.</p>
-<iframe width="612" height="341" src="http://www.youtube.com/embed/suXz5dKtlcA?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="341" src="//www.youtube.com/embed/suXz5dKtlcA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 <p>I also <a href="http://www.youtube.com/watch?v=obTy5tWOsxA&amp;hd=1">captured this</a> on the real device too.</p>
 <p>The page used was: <a href="http://jsbin.com/3/ixewok/10/">jsbin.com/3/ixewok/10/</a> (<a href="http://jsbin.com/3/ixewok/10/edit?html,css,live">edit</a>)</p>
