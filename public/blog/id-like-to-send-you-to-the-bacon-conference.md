@@ -8,7 +8,7 @@ But! Instead, as a nice thing&trade;, I'd like to send one of you.
 
 <div class="update">And the <a href="http://goo.gl/2Hjhw">randomly selected</a> person is&hellip;<a href="http://twitter.com/rsolomou">Rich Solomou</a> (submitted by email by Rich Boakes). I'll be in touch, and get that ticket for you - congratulations, and thanks everyone for participating!</div>
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/kp2tvQoQYog?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="//www.youtube.com/embed/kp2tvQoQYog?rel=0" frameborder="0" allowfullscreen></iframe>
 
 I'd like to send someone who's new to the web industry and wouldn't normally be able to afford this kind of conference.
 

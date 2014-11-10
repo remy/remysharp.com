@@ -37,13 +37,13 @@ Although my photography was limited to either when we stopped, or when we were g
 
 [View the set of pictures from the ride](http://flickr.com/photos/remysharp/sets/72157600389505524/)
 
-<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=y&amp;source=user_set&amp;user=38257258%40N00&amp;set=72157600389505524&amp;context=in%2Fset-72157600389505524%2F"></script>
+<script type="text/javascript" src="//www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=y&amp;source=user_set&amp;user=38257258%40N00&amp;set=72157600389505524&amp;context=in%2Fset-72157600389505524%2F"></script>
 
 ## Video clips
 
 I managed to capture some video during the bike ride, when I didn't feel I needed my breaks too much(!), and I quickly concatenated them together with a bit of music that I remember listening too whilst bombing along.
 
-<object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/ZTV39HmXkeE"></param><param name="wmode" value="transparent"></param><embed src="http://www.youtube.com/v/ZTV39HmXkeE" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object>
+<object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/ZTV39HmXkeE"></param><param name="wmode" value="transparent"></param><embed src="//www.youtube.com/v/ZTV39HmXkeE" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object>
 
 <h2>Dashboard Widget</h2>
 

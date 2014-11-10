@@ -12,7 +12,7 @@ tracegl was so much more than I realised: it captures full JavaScript state a *a
 
 I've included a short video of how I've used tracegl to debug my server side application. A few important things to note are: the trace is historical - and not blocking execution, which is what I'd normally do if I had to debug: I'd carefully replicate the issue, then either add a conditional breakpoint or `debugger` statement - but with tracegl, the bug can occur, and if tracegl is running, I can just look back at the state of the problem.
 
-<iframe width="640" height="360" src="http://www.youtube.com/embed/TW6uMJtbVrk?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="//www.youtube.com/embed/TW6uMJtbVrk?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ## Learning more
 
