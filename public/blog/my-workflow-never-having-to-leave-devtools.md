@@ -4,15 +4,15 @@ At this time of year (Christmas) there's a lot of tip-like articles that emerge,
 
 Actually, truth be told, it's not the entire workflow (I can't create new files for instance) - but where I'm up to is: navigating my entire project, making changes and seeing the live impact of that change, testing new ideas and most importantly - actually saving those changes to disk without leaving DevTools.
 
-<iframe width="612" height="344" src="http://www.youtube.com/embed/ura4ee4fjZs?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="344" src="//www.youtube.com/embed/ura4ee4fjZs?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Although I'm using Canary in the screencast, this functionality is available today in Chrome stable.
 
 ## Saving
 
-For a long while now, you could edit the "sources" to the web page, and hitting save `cmd-s` and it would update the current state of the JavaScript engine - which is powerful as hell alone. 
+For a long while now, you could edit the "sources" to the web page, and hitting save `cmd-s` and it would update the current state of the JavaScript engine - which is powerful as hell alone.
 
-But in a recent release to DevTools, a feature that previous required an extension, when you save, DevTools will ask you *where* you want to save the file to. In my case, I'm working on client side apps - which means just a static directory of JavaScript files. That means I can overwrite the existing file (js or css), and when I continue hitting save, it now overwrites that file on disk. 
+But in a recent release to DevTools, a feature that previous required an extension, when you save, DevTools will ask you *where* you want to save the file to. In my case, I'm working on client side apps - which means just a static directory of JavaScript files. That means I can overwrite the existing file (js or css), and when I continue hitting save, it now overwrites that file on disk.
 
 For me, this seemingly simple addition, means I can do a large amount of coding, testing and debugging directly inside the browser - which reduces the workflow loops.
 

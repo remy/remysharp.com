@@ -248,6 +248,8 @@ That's to say, today we have *three* native client side solutions to communicati
 * [EventSource](http://caniuse.com/#search=eventsource). Push based server *events*, that automatically reconnect when the connection is dropped.
 * [WebSockets](http://caniuse.com/#search=websockets). Bi-directional, persistent sockets, that can be made across origin.
 
+*Side note: that there is also WebRTC, which is a real-time standard in browsers today, but it's for peer-to-peer (in general), rather than with servers.*
+
 These standards are good because: all browsers implementing new features will implement these features in an interoperable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through [polyfills](http://html5please.com/#eventsource)).
 
 ## So, what's next?
