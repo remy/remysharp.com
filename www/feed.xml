@@ -6,7 +6,7 @@ Today we have real time journalism, data, feedback, communication between our te
 I recently returned from jsconf.eu 2014, and sitting in the office, only days later I kept catching myself thinking &quot;I&#39;ll just watch the video from jsconf&quot; – but what video? They filmed their events, but somehow I was expecting the event to have already fully edited, titled, uploaded and release all their videos! I know some events that do do this (lxjs for one) – but these aren&#39;t the norm. At what point did I have this (I think) unreasonable expectation on information on the web?
 On demand and real time is a normal part of the world we live in today. And if you can&#39;t handle the pressure, your visitor will likely head off elsewhere.
 
-This is my write up of the talk I&#39;ve given on the subject. Slides are also available - though do not include much information on their own.]]></description><content:encoded><![CDATA[
+This is my write up of the talk I&#39;ve given on the subject. Slides are also available and the video from SmartWebConf is included below (53mins).]]></description><content:encoded><![CDATA[
 <p>If your business deals with data on the web, then that data must be handled in real time, otherwise you&#39;re doing your user a disservice.</p>
 <hr>
 <p>Real time demand is a core part of our internet experience, let alone expectation.</p>
@@ -15,8 +15,10 @@ This is my write up of the talk I&#39;ve given on the subject. Slides are also a
 <p>I recently returned from jsconf.eu 2014, and sitting in the office, only days later I kept catching myself thinking &quot;I&#39;ll just watch the video from jsconf&quot; – but what video? They filmed their events, but somehow I was expecting the event to have already fully edited, titled, uploaded and release <em>all</em> their videos! I know some events that do do this (<a href="http://lxjs.org">lxjs</a> for one) – but these aren&#39;t the norm. At what point did I have this (I think) unreasonable expectation on information on the web?</p>
 <p><em>On demand</em> and <em>real time</em> is a normal part of the world we live in today. And if you can&#39;t handle the pressure, your visitor will likely head off elsewhere.</p>
 <hr>
-<p>This is my write up of the talk I&#39;ve given on the subject. <a href="https://speakerdeck.com/rem/muddling-my-way-through-real-time">Slides are also available</a> - though do not include much information on their own.</p>
+<p>This is my write up of the talk I&#39;ve given on the subject. <a href="https://speakerdeck.com/rem/muddling-my-way-through-real-time">Slides are also available</a> and the video from SmartWebConf is included below (53mins).</p>
 <p><img src="/images/muddling-in-real-time-cover.gif" alt="Muddling your way in real time"></p>
+<iframe width="1280" height="720" src="//www.youtube.com/embed/EUnNov3h3c0?index=5&list=PLbUMlIAqtRWNbxKZujb0mO5WHQcwJopBm" frameborder="0" allowfullscreen></iframe>
+
 <hr>
 <h2>Contents</h2>
 <ol>
