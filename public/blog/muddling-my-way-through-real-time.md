@@ -16,11 +16,13 @@ I recently returned from jsconf.eu 2014, and sitting in the office, only days la
 
 ---
 
-This is my write up of the talk I've given on the subject. [Slides are also available](https://speakerdeck.com/rem/muddling-my-way-through-real-time) - though do not include much information on their own.
+This is my write up of the talk I've given on the subject. [Slides are also available](https://speakerdeck.com/rem/muddling-my-way-through-real-time) and the video from SmartWebConf is included below (53mins).
 
 <!--more-->
 
 ![Muddling your way in real time](/images/muddling-in-real-time-cover.gif)
+
+<iframe width="1280" height="720" src="//www.youtube.com/embed/EUnNov3h3c0?index=5&list=PLbUMlIAqtRWNbxKZujb0mO5WHQcwJopBm" frameborder="0" allowfullscreen></iframe>
 
 ---
 
