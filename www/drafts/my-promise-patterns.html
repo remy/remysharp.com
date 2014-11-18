@@ -5,26 +5,47 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-1656750-1', 'auto');
 ga('send', 'pageview');</script></head><body id="drafts-my-promise-patterns-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/11/10/muddling-my-way-through-real-time" title="Muddling my way through real time">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 18-Nov 2014</div><article class="post"><h1 class="title"><a href="/drafts/my-promise-patterns">My promise patterns</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/my-promise-patterns.md">(edit)</a></small></h1><div class="post-content">
-<p>I&#39;ve been getting big into promises over the last year. I think the two best resources that I&#39;ve learnt from today is Forbes Lindesay&#39;s <a href="">talk at JSConf.EU 2013</a> and Jake Archibald&#39;s excellent <a href="">promise article on html5rocks</a>.</p>
+<p>I&#39;ve been getting big into promises over the last year. I think the two best resources that I&#39;ve learnt from today is Forbes Lindesay&#39;s <a href="https://www.youtube.com/watch?v=qbKWsbJ76-s">talk at JSConf.EU 2013</a> and Jake Archibald&#39;s excellent <a href="http://www.html5rocks.com/en/tutorials/es6/promises/">promise article on html5rocks</a>.</p>
 <p>There&#39;s been some patterns that I use over and over so I wanted to share and document them.</p>
+<p><em>Please note that the examples used are </em>mostly<em> based on my real code, but have been simplified for demonstration purposes.</em></p>
 <!-- more -->
 
 <h2>Library of choice</h2>
 <p>Firstly I prefer to use the native implementation, and go bare bones. I&#39;m sure they will be a time that I&#39;ll want more than the native API has to offer, but I&#39;ve not arrived there yet.</p>
-<p>On the server side, in node-land, since promises are oddly not available natively, my preferred library is promise.js.</p>
+<p>I&#39;ve used <a href="https://github.com/tildeio/rsvp.js">RSVP</a> in the past and heard decent things about <a href="https://github.com/petkaantonov/bluebird">Bluebird</a>.</p>
+<p>On the server side, in node-land, since promises are oddly not available natively, my preferred library is <a href="https://github.com/then/promise">then/promise</a>.</p>
 <p>It used to be RSVP, which is mostly bare bones, but I learnt about promise.js&#39; <code>denodeify</code> which converts a callback based function into a promise function which can be very useful.</p>
 <h2>Clean shallow chains</h2>
 <p>This means my initial promise code would look like:</p>
-<pre><code class="language-js">validate(user)
-  .then(save)
-  .then(welcomeEmail)</code></pre>
-<p>This is easy if these are all my functions, but I can also do this with third party libraries via <code>denodeify</code> (a feature of the promise.js library, though most promise libraries have something similar) – turn a callback pattern function into a promise based function.</p>
-<pre><code class="language-js">var readFile = Promise.denodeify(fs.readFile):
+<pre><code class="language-js">writeFile(filename, content)
+  .then(addDBUser)
+  .then(dns)
+  .then(configureHeroku)
+  .then(function () {
+    console.log(&#39;All done&#39;);
+  })</code></pre>
+<p>This is easy if these are all my functions, but I can also do this with third party libraries via <code>denodeify</code> (a feature of the promise.js library, though most promise libraries have something similar) – turn a callback pattern function into a promise based function:</p>
+<pre><code class="language-js">var writeFile = Promise.denodeify(fs.writeFile):
 
-readFile(&#39;welcome.txt&#39;)
-  .then(emailToUser(&#39;rem&#39;))</code></pre>
-<h2>Prebake</h2>
-<p>Using bind</p>
+writeFile(filename, content)
+  .then(addDBUser)</code></pre>
+<p>Though one place I&#39;ve been caught out with <code>denodeify</code> is when the method relies on method&#39;s context, which is most things as it turns out (<code>fs</code> is just a fluke that it&#39;s methods don&#39;t rely on the context), so make sure to <code>bind</code> as required:</p>
+<pre><code class="language-js">var addUser = Promise
+  .denodeify(model.user.add)
+  .bind(model.user) // multi line for blog readability</code></pre>
+<h2>Prebaking</h2>
+<p>You&#39;ve already seen that I use <code>bind</code>, but I&#39;ve also found that in some situations, I need to call a function with static arguments (i.e. not relying on the previous promise), just because it&#39;s part of the promise chain.</p>
+<p>I <em>could</em> do this:</p>
+<pre><code class="language-js">writeFile(filename, content)
+  .then(function () {
+    return addUserToDb(&#39;rem&#39;, &#39;password&#39;, &#39;some-db&#39;);
+  })</code></pre>
+<p>Or, what I&#39;ve found I&#39;m more inclined to do now is prebake the <code>addUserToDb</code> call with the static arguments:</p>
+<pre><code class="language-js">var addUser = addUserToDb.bind(null, &#39;rem&#39;,
+      &#39;password&#39;, &#39;some-db&#39;);
+
+writeFile(filename, content)
+  .then(addUser)</code></pre>
 <h2>Always end with a catch</h2>
 <p>Note: this is only in the es6 spec and doesn&#39;t appear in Promises/A+ so some implementations are missing <code>.catch()</code> support (as I&#39;ve found with mongoose as it depends on mPromise library).</p>
 <h2>Throw over reject</h2>
