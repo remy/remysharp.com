@@ -3172,5 +3172,15 @@
       "web",
       "html5"
     ]
+  },
+    "my-five-promise-patterns": {
+    "title": "My five promise patterns",
+    "date": "2014-11-19 12:00:00",
+    "published": true,
+    "complete": true,
+    "inprogress": false,
+    "tags": [
+      "code"
+    ]
   }
 }
