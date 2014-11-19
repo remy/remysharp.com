@@ -80,7 +80,7 @@ function configureHeroku(slug) {
   return create().then(domain);
 }
 The issue is when domain is called, it&#39;s actually called with the prebaked arguments of the slug and options but also the resolved value from create() - so a third argument is received.
-This third argument is the resolved result of create() which is treaded as the callback argument and as a function object, so the code will try to invoke it - causing an exception.
+This third argument is the resolved result of create() which is treated as the callback argument and as a function object, so the code will try to invoke it - causing an exception.
 My solution is to wrap in a cold call - i.e. a newly created function that calls my method with no arguments. Like bind once but then never allow any new arguments, also known as currying (here&#39;s a simple demo of the curry/partial/seal type-thing):
 function coldcall(fn) {
   return function () {
@@ -256,7 +256,7 @@ writeFile(filename, content)
   return create().then(domain);
 }</code></pre>
 <p>The issue is when <code>domain</code> is called, it&#39;s actually called with the prebaked arguments of the slug and options <em>but also</em> the resolved value from <code>create()</code> - so <strong>a third argument is received</strong>.</p>
-<p>This third argument is the resolved result of <code>create()</code> which is treaded as the <code>callback</code> argument and as a function object, so the code will try to invoke it - causing an exception.</p>
+<p>This third argument is the resolved result of <code>create()</code> which is treated as the <code>callback</code> argument and as a function object, so the code will try to invoke it - causing an exception.</p>
 <p>My solution is to wrap in a <em>cold call</em> - i.e. a newly created function that calls my method with no arguments. Like bind once but then never allow any new arguments, also known as currying (here&#39;s a simple demo of the <a href="https://jsbin.com/gopiqu/edit?js,console">curry/partial/seal</a> type-thing):</p>
 <pre><code class="language-js">function coldcall(fn) {
   return function () {
