@@ -135,7 +135,7 @@ function configureHeroku(slug) {
 
 The issue is when `domain` is called, it's actually called with the prebaked arguments of the slug and options *but also* the resolved value from `create()` - so **a third argument is received**.
 
-This third argument is the resolved result of `create()` which is treaded as the `callback` argument and as a function object, so the code will try to invoke it - causing an exception.
+This third argument is the resolved result of `create()` which is treated as the `callback` argument and as a function object, so the code will try to invoke it - causing an exception.
 
 My solution is to wrap in a *cold call* - i.e. a newly created function that calls my method with no arguments. Like bind once but then never allow any new arguments, also known as currying (here's a simple demo of the [curry/partial/seal](https://jsbin.com/gopiqu/edit?js,console) type-thing):
 
