@@ -16,12 +16,12 @@ article.post
   section.post-excerpt.post-content
     content = partial('blog/' + latest.slug);
 
-    if content.split('<!--more-->').length > 1
-      != partial('blog/' + latest.slug).split('<!--more-->')[0].replace(/<h1>.*?<\/h1>/, '').trim()
+    if content.split(/<!--\s*more\s*-->/).length > 1
+      != content.split(/<!--\s*more\s*-->/)[0].replace(/<h1>.*?<\/h1>/, '').trim()
     else if content.split('<hr>').length > 1
-      != partial('blog/' + latest.slug).split('<hr>')[0].replace(/<h1>.*?<\/h1>/, '').trim()
+      != content.split('<hr>')[0].replace(/<h1>.*?<\/h1>/, '').trim()
     else
-      != partial('blog/' + latest.slug).split('<p>').slice(0, 4).join('<p>').replace(/<h1>.*?<\/h1>/, '').trim()
+      != content.split('<p>').slice(0, 4).join('<p>').replace(/<h1>.*?<\/h1>/, '').trim()
     p
       a(href="#{latest.relative}") Read the rest of this entry &raquo;
 
