@@ -1,4 +1,354 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 10 Nov 2014 12:30:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Muddling my way through real time</title><guid isPermaLink="false">muddling-my-way-through-real-time</guid><link>http://remysharp.com/2014/11/10/muddling-my-way-through-real-time</link><pubDate>Mon, 10 Nov 2014 12:30:00 +0000</pubDate><description><![CDATA[If your business deals with data on the web, then that data must be handled in real time, otherwise you&#39;re doing your user a disservice.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Wed, 19 Nov 2014 12:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>My five promise patterns</title><guid isPermaLink="false">my-five-promise-patterns</guid><link>http://remysharp.com/2014/11/19/my-five-promise-patterns</link><pubDate>Wed, 19 Nov 2014 12:00:00 +0000</pubDate><description><![CDATA[I&#39;ve been getting big into promises over the last year. I think the two best resources that I&#39;ve learnt from today is Forbes Lindesay&#39;s talk at JSConf.EU 2013 and Jake Archibald&#39;s excellent promise article on html5rocks.
+There&#39;s been some patterns that I use over and over so I wanted to share and document them.
+Please note that the examples used are mostly based on my real code, but have been simplified for demonstration purposes.
+
+
+Library of choice
+Firstly I prefer to use the native implementation, and go bare bones. I&#39;m sure they will be a time that I&#39;ll want more than the native API has to offer, but I&#39;ve not arrived there yet.
+I&#39;ve used RSVP in the past and heard decent things about Bluebird.
+On the server side, in node-land, since promises are oddly not available natively, my preferred library is then/promise.
+It used to be RSVP, which is mostly bare bones, but I learnt about promise.js&#39; denodeify which converts a callback based function into a promise function which can be very useful.
+Clean shallow chains
+This means my initial promise code would look like:
+writeFile(filename, content)
+  .then(addDBUser)
+  .then(dns)
+  .then(configureHeroku)
+  .then(function () {
+    console.log(&#39;All done&#39;);
+  })
+This is easy if these are all my functions, but I can also do this with third party libraries via denodeify (a feature of the promise.js library, though most promise libraries have something similar) – turn a callback pattern function into a promise based function:
+var writeFile = Promise.denodeify(fs.writeFile):
+
+writeFile(filename, content)
+  .then(addDBUser)
+Though one place I&#39;ve been caught out with denodeify is when the method relies on method&#39;s context, which is most things as it turns out (fs is just a fluke that it&#39;s methods don&#39;t rely on the context), so make sure to bind as required:
+var addUser = Promise
+  .denodeify(model.user.add)
+  .bind(model.user) // multi line for blog readability
+Prebaking
+You&#39;ve already seen that I use bind, but I&#39;ve also found that in some situations, I need to call a function with static arguments (i.e. not relying on the previous promise), just because it&#39;s part of the promise chain.
+I could do this:
+writeFile(filename, content)
+  .then(function () {
+    return addUserToDb(&#39;rem&#39;, &#39;password&#39;, &#39;some-db&#39;);
+  })
+Or, what I&#39;ve found I&#39;m more inclined to do now is prebake the addUserToDb call with the static arguments:
+var addUser = addUserToDb.bind(null, &#39;rem&#39;,
+      &#39;password&#39;, &#39;some-db&#39;);
+
+writeFile(filename, content)
+  .then(addUser)
+This also allows me to code with the shallow chains as above, because it (to me) feels a bit verbose to drop into a function just to return a promise straight back out that doesn&#39;t depend on any unknown variable.
+Cold calling
+Disclaimer: this patterned is required due to my own prebaking patterns and attempts to (ironically) simplify. There&#39;s a good chance you won&#39;t need this!
+When a function works both as a promise and using the callback pattern - it&#39;s great, but I&#39;ve been caught out in the past.
+The way the function might work under the hood is something like (this pseudo code):
+Heroku.prototype.post = function (slug, options, callback) {
+  // do some async thing
+  this.request(slug, options, function (err, data) {
+
+    // ** this line is how the dual functionality works ** //
+    if (callback) callback(err, data);
+
+    // else do something with promise
+  });
+
+  // return some promise created some place
+  return this.promise;
+}
+So post can be called either as a promise:
+heroku.post(slug, opts).then(dostuff);
+Or as a callback:
+heroku.post(slug, opts, dostuff);
+But gets messy when you do this:
+function configureHeroku(slug) {
+  // prebake heroku app create promise
+  var create = heroku.post.bind(heroku,
+    &#39;/apps&#39;,
+    { name: &#39;example-&#39; + slug }
+  );
+
+  // prebake domain config
+  var domain = heroku.post.bind(heroku,
+    &#39;/apps/example-&#39; + slug + &#39;/domains&#39;,
+    { hostname: slug + &#39;.example.com&#39; }
+  );
+
+  // ** this is where it goes wrong ** //
+  return create().then(domain);
+}
+The issue is when domain is called, it&#39;s actually called with the prebaked arguments of the slug and options but also the resolved value from create() - so a third argument is received.
+This third argument is the resolved result of create() which is treaded as the callback argument and as a function object, so the code will try to invoke it - causing an exception.
+My solution is to wrap in a cold call - i.e. a newly created function that calls my method with no arguments. Kinda like bind once but then never allow any new arguments (a sort of Function.seal type-thing):
+function coldcall(fn) {
+  return function () {
+    fn();
+  };
+}
+
+function configureHeroku(slug) {
+  // prebake heroku app create promise
+  // ...
+
+
+  // ** now it works ** //
+  return create().then(coldcall(domain));
+}
+Now the domain call works because it&#39;s invoked preventing any extra arguments being added.
+Throw over explicit reject
+Instead of:
+// compare password &amp; input password
+return new Promise(function (resolve) {
+  bcrypt.compare(input, password, function (error, result) {
+    if (err || !result) {
+      // reject and early exit
+      return reject(err);
+    }
+
+    resolve(result);
+  });
+});
+I&#39;ll throw instead of reject:
+// compare password &amp; input password
+return new Promise(function (resolve) {
+  bcrypt.compare(input, password, function (error, result) {
+    if (err) {
+      throw err;
+    }
+
+    if (!result) {
+      throw new Error(&#39;Passwords did not match.&#39;);
+    }
+
+    resolve(result);
+  });
+});
+This might be a little controversial. In fact, when I threw this out to twitter, most people came back with something like:
+
+Reject whenever possible, it&#39;s more performant because throw breaks the stack.
+
+This may well be so, but there&#39;s a few key benefits to my code when I throw:
+
+I&#39;m used to error first handling, and quite often I&#39;ll accidently recieve reject as the first argument, which leads to much confusion. This way, I only ever accept resolve as my argument.
+I don&#39;t have to remember to return reject. I&#39;ve seen code that doesn&#39;t return on reject, and it then goes on to resolve with a value. Some libraries fulfill, some reject, some throw new errors. Throwing the error avoids this entirely.
+This is also consistent with the way I&#39;ll deal with errors inside of subsequent then calls:
+
+// compare password &amp; input password
+utils.compare(input, password)
+  .then(function () {
+    if (!validUsername(username)) {
+      throw new Error(&#39;Username is not valid&#39;);
+    }
+    // continues...
+  })
+  .then(etc)
+Jake also chimed in with a couple of useful replies:
+
+reject is supposed to be analogous to throw but async. So reject what you&#39;d throw (which is usually an error)
+
+Then linked to his post with &quot;in ES7 async functions reject is throw&quot;. This also reinforces that you want to reject with a real error, not a string.
+Always end with a catch
+It&#39;s not uncommon for me to be testing a http request with a promise, and it just never returns...
+The issue is that the promise has been rejected somewhere and it&#39;s not been caught. So I always end with a catch. Even if it&#39;s a dump to the console, that way I know something failed.
+writeFile(filename, content)
+  .then(addDBUser)
+  .then(dns)
+  .then(configureHeroku)
+  .then(function () {
+    console.log(&#39;All done&#39;);
+  })
+  .catch(function (error) {
+    console.error(error.stack);
+  });
+This final catch lets me see the full stacktrace as to what went wrong, and importantly that something did go wrong.
+Note: .catch() is only in the ES6 spec and doesn&#39;t appear in Promises/A+ so some library implementations are missing .catch() support (as I&#39;ve found with mongoose as it depends on mPromise library).
+Recap
+So that&#39;s it:
+
+Shallow chains
+Prebaking where I can
+Cold calling if neccessary
+Always throw
+Always catch
+
+Pretty simple. I&#39;d be interested to hear what patterns are emerging in your workflow too.]]></description><content:encoded><![CDATA[
+<p>I&#39;ve been getting big into promises over the last year. I think the two best resources that I&#39;ve learnt from today is Forbes Lindesay&#39;s <a href="https://www.youtube.com/watch?v=qbKWsbJ76-s">talk at JSConf.EU 2013</a> and Jake Archibald&#39;s excellent <a href="http://www.html5rocks.com/en/tutorials/es6/promises/">promise article on html5rocks</a>.</p>
+<p>There&#39;s been some patterns that I use over and over so I wanted to share and document them.</p>
+<p><em>Please note that the examples used are </em>mostly<em> based on my real code, but have been simplified for demonstration purposes.</em></p>
+<!-- more -->
+
+<h2>Library of choice</h2>
+<p>Firstly I prefer to use the native implementation, and go bare bones. I&#39;m sure they will be a time that I&#39;ll want more than the native API has to offer, but I&#39;ve not arrived there yet.</p>
+<p>I&#39;ve used <a href="https://github.com/tildeio/rsvp.js">RSVP</a> in the past and heard decent things about <a href="https://github.com/petkaantonov/bluebird">Bluebird</a>.</p>
+<p>On the server side, in node-land, since promises are oddly not available natively, <strong>my preferred library is <a href="https://github.com/then/promise">then/promise</a></strong>.</p>
+<p>It used to be RSVP, which is mostly bare bones, but I learnt about promise.js&#39; <code>denodeify</code> which converts a callback based function into a promise function which can be very useful.</p>
+<h2>Clean shallow chains</h2>
+<p>This means my initial promise code would look like:</p>
+<pre><code class="language-js">writeFile(filename, content)
+  .then(addDBUser)
+  .then(dns)
+  .then(configureHeroku)
+  .then(function () {
+    console.log(&#39;All done&#39;);
+  })</code></pre>
+<p>This is easy if these are all my functions, but I can also do this with third party libraries via <code>denodeify</code> (a feature of the promise.js library, though most promise libraries have something similar) – turn a callback pattern function into a promise based function:</p>
+<pre><code class="language-js">var writeFile = Promise.denodeify(fs.writeFile):
+
+writeFile(filename, content)
+  .then(addDBUser)</code></pre>
+<p>Though one place I&#39;ve been caught out with <code>denodeify</code> is when the method relies on method&#39;s context, which is most things as it turns out (<code>fs</code> is just a fluke that it&#39;s methods don&#39;t rely on the context), so make sure to <code>bind</code> as required:</p>
+<pre><code class="language-js">var addUser = Promise
+  .denodeify(model.user.add)
+  .bind(model.user) // multi line for blog readability</code></pre>
+<h2>Prebaking</h2>
+<p>You&#39;ve already seen that I use <code>bind</code>, but I&#39;ve also found that in some situations, I need to call a function with static arguments (i.e. not relying on the previous promise), just because it&#39;s part of the promise chain.</p>
+<p>I <em>could</em> do this:</p>
+<pre><code class="language-js">writeFile(filename, content)
+  .then(function () {
+    return addUserToDb(&#39;rem&#39;, &#39;password&#39;, &#39;some-db&#39;);
+  })</code></pre>
+<p>Or, what I&#39;ve found I&#39;m more inclined to do now is prebake the <code>addUserToDb</code> call with the static arguments:</p>
+<pre><code class="language-js">var addUser = addUserToDb.bind(null, &#39;rem&#39;,
+      &#39;password&#39;, &#39;some-db&#39;);
+
+writeFile(filename, content)
+  .then(addUser)</code></pre>
+<p>This also allows me to code with the <a href="#clean-shallow-chains">shallow chains</a> as above, because it (to me) feels a bit verbose to drop into a function just to return a promise straight back out that doesn&#39;t depend on any unknown variable.</p>
+<h2>Cold calling</h2>
+<p><strong><em>Disclaimer:</em></strong> <em>this patterned is required due to my own prebaking patterns and attempts to (ironically) simplify. There&#39;s a good chance you won&#39;t need this!</em></p>
+<p>When a function works both as a promise <em>and</em> using the callback pattern - it&#39;s great, but I&#39;ve been caught out in the past.</p>
+<p>The way the function might work under the hood is something like (this pseudo code):</p>
+<pre><code class="language-js">Heroku.prototype.post = function (slug, options, callback) {
+  // do some async thing
+  this.request(slug, options, function (err, data) {
+
+    // ** this line is how the dual functionality works ** //
+    if (callback) callback(err, data);
+
+    // else do something with promise
+  });
+
+  // return some promise created some place
+  return this.promise;
+}</code></pre>
+<p>So <code>post</code> can be called either as a promise:</p>
+<pre><code class="language-js">heroku.post(slug, opts).then(dostuff);</code></pre>
+<p>Or as a callback:</p>
+<pre><code class="language-js">heroku.post(slug, opts, dostuff);</code></pre>
+<p>But gets messy when you do this:</p>
+<pre><code class="language-js">function configureHeroku(slug) {
+  // prebake heroku app create promise
+  var create = heroku.post.bind(heroku,
+    &#39;/apps&#39;,
+    { name: &#39;example-&#39; + slug }
+  );
+
+  // prebake domain config
+  var domain = heroku.post.bind(heroku,
+    &#39;/apps/example-&#39; + slug + &#39;/domains&#39;,
+    { hostname: slug + &#39;.example.com&#39; }
+  );
+
+  // ** this is where it goes wrong ** //
+  return create().then(domain);
+}</code></pre>
+<p>The issue is when <code>domain</code> is called, it&#39;s actually called with the prebaked arguments of the slug and options <em>but also</em> the resolved value from <code>create()</code> - so <strong>a third argument is received</strong>.</p>
+<p>This third argument is the resolved result of <code>create()</code> which is treaded as the <code>callback</code> argument and as a function object, so the code will try to invoke it - causing an exception.</p>
+<p>My solution is to wrap in a <em>cold call</em> - i.e. a newly created function that calls my method with no arguments. Kinda like bind once but then never allow any new arguments (a sort of <a href="https://jsbin.com/gopiqu/edit?js,console"><code>Function.seal</code></a> type-thing):</p>
+<pre><code class="language-js">function coldcall(fn) {
+  return function () {
+    fn();
+  };
+}
+
+function configureHeroku(slug) {
+  // prebake heroku app create promise
+  // ...
+
+
+  // ** now it works ** //
+  return create().then(coldcall(domain));
+}</code></pre>
+<p>Now the <code>domain</code> call works because it&#39;s invoked preventing any extra arguments being added.</p>
+<h2>Throw over explicit reject</h2>
+<p>Instead of:</p>
+<pre><code class="language-js">// compare password &amp; input password
+return new Promise(function (resolve) {
+  bcrypt.compare(input, password, function (error, result) {
+    if (err || !result) {
+      // reject and early exit
+      return reject(err);
+    }
+
+    resolve(result);
+  });
+});</code></pre>
+<p>I&#39;ll throw instead of reject:</p>
+<pre><code class="language-js">// compare password &amp; input password
+return new Promise(function (resolve) {
+  bcrypt.compare(input, password, function (error, result) {
+    if (err) {
+      throw err;
+    }
+
+    if (!result) {
+      throw new Error(&#39;Passwords did not match.&#39;);
+    }
+
+    resolve(result);
+  });
+});</code></pre>
+<p>This might be a little controversial. In fact, when I threw this out to twitter, most people came back with something like:</p>
+<blockquote>
+<p>Reject whenever possible, it&#39;s more performant because throw breaks the stack.</p>
+</blockquote>
+<p>This may well be so, but there&#39;s a few key benefits to my code when I throw:</p>
+<ol>
+<li>I&#39;m used to error first handling, and quite often I&#39;ll accidently recieve <code>reject</code> as the first argument, which leads to much confusion. This way, I only ever accept <code>resolve</code> as my argument.</li>
+<li>I don&#39;t have to remember to <code>return reject</code>. I&#39;ve seen code that doesn&#39;t return on reject, and it then goes on to <code>resolve</code> with a value. Some libraries fulfill, some reject, some throw new errors. Throwing the error avoids this entirely.</li>
+<li>This is also consistent with the way I&#39;ll deal with errors inside of subsequent <code>then</code> calls:</li>
+</ol>
+<pre><code class="language-js">// compare password &amp; input password
+utils.compare(input, password)
+  .then(function () {
+    if (!validUsername(username)) {
+      throw new Error(&#39;Username is not valid&#39;);
+    }
+    // continues...
+  })
+  .then(etc)</code></pre>
+<p>Jake also chimed in with a couple of useful replies:</p>
+<blockquote>
+<p>reject is supposed to be analogous to throw but async. So reject what you&#39;d throw (which is usually an error)</p>
+</blockquote>
+<p>Then linked to his <a href="http://jakearchibald.com/2014/es7-async-functions/">post</a> with <em>&quot;in ES7 async functions reject is throw&quot;</em>. This also reinforces that you want to reject with a real error, not a string.</p>
+<h2>Always end with a catch</h2>
+<p>It&#39;s not uncommon for me to be testing a http request with a promise, and it just never returns...</p>
+<p>The issue is that the promise has been rejected somewhere and it&#39;s not been caught. So I <strong>always end with a catch</strong>. Even if it&#39;s a dump to the console, that way I know something failed.</p>
+<pre><code class="language-js">writeFile(filename, content)
+  .then(addDBUser)
+  .then(dns)
+  .then(configureHeroku)
+  .then(function () {
+    console.log(&#39;All done&#39;);
+  })
+  .catch(function (error) {
+    console.error(error.stack);
+  });</code></pre>
+<p>This final catch lets me see the full stacktrace as to what went wrong, and importantly <em>that something did go wrong</em>.</p>
+<p><em>Note: <code>.catch()</code> is only in the ES6 spec and doesn&#39;t appear in Promises/A+ so some library implementations are missing <code>.catch()</code> support (as I&#39;ve found with <a href="http://www.mongoosejs.com/">mongoose</a> as it depends on <a href="https://www.npmjs.org/mpromise">mPromise</a> library).</em></p>
+<h2>Recap</h2>
+<p>So that&#39;s it:</p>
+<ul>
+<li>Shallow chains</li>
+<li>Prebaking where I can</li>
+<li>Cold calling if neccessary</li>
+<li>Always throw</li>
+<li>Always catch</li>
+</ul>
+<p>Pretty simple. I&#39;d be interested to hear what patterns are emerging in your workflow too.</p>
+]]></content:encoded></item><item><title>Muddling my way through real time</title><guid isPermaLink="false">muddling-my-way-through-real-time</guid><link>http://remysharp.com/2014/11/10/muddling-my-way-through-real-time</link><pubDate>Mon, 10 Nov 2014 12:30:00 +0000</pubDate><description><![CDATA[If your business deals with data on the web, then that data must be handled in real time, otherwise you&#39;re doing your user a disservice.
 
 Real time demand is a core part of our internet experience, let alone expectation.
 Twitter is probably the crowning application of real time I can think of. Hitting the mass audience and industries across the board.
@@ -1132,147 +1482,4 @@ Reposted from The Pastry Box Project]]></description><content:encoded><![CDATA[
 <p>Don&#39;t make it hard to achieve, make it hard to give up.</p>
 <p><strong>Plan to fail. Plan to cheat.</strong></p>
 <p><small>Reposted from <a href="http://the-pastry-box-project.net/remy-sharp/2014-january-3">The Pastry Box Project</a></small></p>
-]]></content:encoded></item><item><title>nodemon 1.0</title><guid isPermaLink="false">nodemon-1-0</guid><link>http://remysharp.com/2014/01/20/nodemon-1-0</link><pubDate>Mon, 20 Jan 2014 13:00:02 +0000</pubDate><description><![CDATA[For the past few months I&#39;ve been working on a re-factor of nodemon. The two main drivers were to make the code base easier to maintain and to make nodemon more extendible.
-Nodemon is a command line utility to detect file changes and restart your application. Typically node apps, but it can restart any kind of program, ruby, python, make commands and more.
-A bit of background
-Originally nodemon was a simple one file script, only a few hundred lines, if that. As more people used it in different environments for completely different things, more code was added (to properly support windows for instance), and more people committed changes.
-I came across Michael Brooks and Fil Maj&#39;s slides from jsconf.us 2013 on building a better cli and though I hadn&#39;t seen the talk, I got a lot of inspiration from the slides, and went ahead to try to break nodemon up in to much, much smaller components. This would make it (I hoped) easier to maintain, but also to narrow down where bugs were occurring.
-It also allowed me the opportunity to write tests. Something I&#39;ve always been poor at doing in the first place, so this was a great excuse to ensure they were in place from the get go.
-It took about 4 months of snatching a few hours in the evening here and there, but eventually my pull request was ready to be merged, and 1.0.0 went live on 29-Dec 2013.
-What&#39;s new
-A lot of bugs have been closed, though it&#39;s likely these bugs didn&#39;t affect you, because nodemon is used in such a wide range of environments, weird things would come up.
-The headlines are:
-
-global and local configs
-exec map
-requireable
-tests
-auto update notification
-nodemon.io site, because...well, just because.
-sweet logo (and amazing contributions from the community) by @aesthetics-io
-
-More control over your config
-Nodemon still supports the old plain text .nodemonignore file, but now firstly looks for a nodemon.json file in your present working directory, then for the same file in your home directory. Since the config file is JSON, you can preconfigure nodemon with any command you use on the CLI.
-The old config file only allowed you to specific what you wanted to ignore, but now you can define what you want to ignore and what you want to watch.
-If you always ignore public/* in your project and want verbose on, as I do, then you can have a global nodemon.json that states just that:
-{
-  "ignore": "public/*",
-  "verbose": true
-}
-
-And if some project is getting too verbose for my liking, I can just use the CLI to quiet it down, and the CLI takes priority:
-$ nodemon -q
-
-Now it&#39;ll ignore public/ but not echo out any nodemon messages.
-Out of the box, nodemon will also ignore everything in .git and node_modules/**/node_modules, but of course you can add to that or change it yourself. More defaults can be found in the project repo.
-&quot;execMap&quot;
-This feature allows you to predefine what application runs what extension, and if it were me, I&#39;d put this in the global nodemon.json so it&#39;s always used.
-By default, the exec map includes support for python and ruby:
-{
-  "execMap": {
-    "py": "python",
-    "rb": "ruby"
-  }
-}
-
-If you&#39;re like some users on the edge of the future and want to always use node in harmony mode, then that&#39;s simple:
-{
-  "execMap": {
-    "js": "node --harmony"
-    "py": "python",
-    "rb": "ruby"
-  }
-}
-
-Now nodemon will fire up .js files with node --harmony. This means it&#39;s super easy to make nodemon run with any application from a single global config. I&#39;m also open to suggestions for further exec map support (so long as it&#39;s cross platform), so do get in touch if you have an idea.
-Requireable
-There&#39;s a nodemon grunt plugin by Chris Wren, but he had to spawn nodemon from his code. I wanted it so that he could include nodemon directly and have more control.
-So nodemon now supports being required in as a module. It&#39;s pretty cool :)
-It also means that Chris&#39; grunt plugin can make some cool integrations (if nodemon detects a restart, his plugin will trigger a browser reload using live reload).
-It also means that there&#39;s already a gulp plugin using nodemon.
-Required nodemon gives you a way of communicating through events. Everything ranging from when nodemon restarts (which includes an array of filenames that triggered the reload), to nodemon&#39;s logging, to the spawned script&#39;s stdout.
-Tests
-I&#39;m using Mocha for tests and wear the Travis badge with pride on pass (and less pride on fail!).
-There&#39;s just over 100 tests for nodemon right now, ranging from small internal tests (like CLI parse testing) to tests that forks nodemon, that in turn spawn a web server and force crashes to ensure everything stops and starts correctly.
-It&#39;s actually quite tricky to get the timing right (so the forked tests tend to be littered with setTimeout to make sure we have clear delays between start up and touching files).
-The compound that with different behaviour on Mac (which I&#39;m working from), on Linux and on Windows, and Travis runs on Linux so I had fun switching between 100% tests passing on my mac to jumping inside of vagrant to figure out why Linux wasn&#39;t passing 100%. Definitely a few lessons learnt (which I&#39;ve quickly forgotten now they pass!).
-Update notification
-Nodemon original had zero dependencies, which I was proud of (not sure why), but I came across update-notifier which mostly works, but there&#39;s issues I&#39;ve raised and not heard back on (which worries me a little), but I do I know that users have been notified successfully of updates (at time of writing, nodemon is already 1.0.12).
-So I bit the bullet and took on a dependency, and I think it&#39;s paying off - people are keeping with the most bug free version of nodemon.
-Sweet logo
-First, I was so amazed and impressed by user contributions to logo ideas for nodemon. In the end, you folk (or at least people on twitter and github) voted for this one below (which I also like - along with a few others), and I reckon it could make a pretty cool sticker for the laptop. What do you think?
-
-So get updating:
-npm install -g nodemon@latest]]></description><content:encoded><![CDATA[
-<p>For the past few months I&#39;ve been working on a re-factor of <a href="http://github.com/remy/nodemon">nodemon</a>. The two main drivers were to make the code base easier to maintain and to make nodemon more extendible.</p>
-<p>Nodemon is a command line utility to detect file changes and restart your application. Typically node apps, but it can restart any kind of program, ruby, python, make commands and more.</p>
-<h2>A bit of background</h2>
-<p>Originally nodemon was a simple one file script, only a few hundred lines, if that. As more people used it in different environments for completely different things, more code was added (to properly support windows for instance), and more people committed changes.</p>
-<p>I came across <a href="https://github.com/mwbrooks">Michael Brooks</a> and <a href="https://github.com/filmaj">Fil Maj</a>&#39;s slides from jsconf.us 2013 on <a href="http://michaelbrooks.ca/deck/2013-node-brigade/">building a better cli</a> and though I hadn&#39;t seen the talk, I got a lot of inspiration from the slides, and went ahead to try to break nodemon up in to much, much smaller components. This would make it (I hoped) easier to maintain, but also to narrow down where bugs were occurring.</p>
-<p>It also allowed me the opportunity to write tests. Something I&#39;ve always been poor at doing in the first place, so this was a great excuse to ensure they were in place from the get go.</p>
-<p>It took about 4 months of snatching a few hours in the evening here and there, but eventually my <a href="https://github.com/remy/nodemon/pull/200">pull request</a> was ready to be merged, and 1.0.0 went <a href="https://github.com/remy/nodemon/compare/v0.7.10...v1.0.0">live on 29-Dec 2013</a>.</p>
-<h2>What&#39;s new</h2>
-<p>A lot of bugs have been closed, though it&#39;s likely these bugs didn&#39;t affect you, because nodemon is used in such a wide range of environments, weird things would come up.</p>
-<p>The headlines are:</p>
-<ul>
-<li>global and local configs</li>
-<li>exec map</li>
-<li>requireable</li>
-<li>tests</li>
-<li>auto update notification</li>
-<li><a href="http://nodemon.io">nodemon.io</a> site, because...well, just because.</li>
-<li>sweet logo (and <a href="https://github.com/remy/nodemon/issues/217">amazing contributions</a> from the community) by <a href="https://github.com/aesthetics-io">@aesthetics-io</a></li>
-</ul>
-<h2>More control over your config</h2>
-<p>Nodemon still supports the old plain text <code>.nodemonignore</code> file, but now firstly looks for a <code>nodemon.json</code> file in your present working directory, then for the same file in your home directory. Since the config file is JSON, you can preconfigure nodemon with any command you use on the CLI.</p>
-<p>The old config file only allowed you to specific what you wanted to ignore, but now you can define what you want to ignore <em>and</em> what you want to <em>watch</em>.</p>
-<p>If you <em>always</em> ignore <code>public/*</code> in your project and want verbose on, as I do, then you can have a global <code>nodemon.json</code> that states just that:</p>
-<pre><code>{
-  "ignore": "public/*",
-  "verbose": true
-}</code></pre>
-
-<p>And if some project is getting too verbose for my liking, I can just use the CLI to quiet it down, and the CLI takes priority:</p>
-<pre><code>$ nodemon -q</code></pre>
-
-<p>Now it&#39;ll ignore <code>public/</code> but not echo out any nodemon messages.</p>
-<p>Out of the box, nodemon will also ignore everything in <code>.git</code> and <code>node_modules/**/node_modules</code>, but of course you can add to that or change it yourself. More <a href="https://github.com/remy/nodemon/blob/master/lib/config/defaults.js">defaults can be found</a> in the project repo.</p>
-<h2>&quot;execMap&quot;</h2>
-<p>This feature allows you to predefine what application runs what extension, and if it were me, I&#39;d put this in the global <code>nodemon.json</code> so it&#39;s always used.</p>
-<p>By default, the exec map includes support for python and ruby:</p>
-<pre><code>{
-  "execMap": {
-    "py": "python",
-    "rb": "ruby"
-  }
-}</code></pre>
-
-<p>If you&#39;re like some users on the edge of the future and want to always use node in harmony mode, then that&#39;s simple:</p>
-<pre><code>{
-  "execMap": {
-    "js": "node --harmony"
-    "py": "python",
-    "rb": "ruby"
-  }
-}</code></pre>
-
-<p>Now nodemon will fire up .js files with <code>node --harmony</code>. This means it&#39;s super easy to make nodemon run with any application from a single global config. I&#39;m also <a href="https://github.com/remy/nodemon/blob/master/lib/config/defaults.js#L7">open to suggestions</a> for further exec map support (so long as it&#39;s cross platform), so do get in touch if you have an idea.</p>
-<h2>Requireable</h2>
-<p>There&#39;s a nodemon <a href="https://github.com/ChrisWren/grunt-nodemon">grunt plugin</a> by Chris Wren, but he had to spawn nodemon from his code. I wanted it so that he could include nodemon directly and have more control.</p>
-<p>So nodemon now supports being required in as a module. It&#39;s pretty cool :)</p>
-<p>It also means that Chris&#39; grunt plugin can make <a href="https://github.com/ChrisWren/grunt-nodemon#advanced-usage">some cool integrations</a> (if nodemon detects a restart, his plugin will trigger a browser reload using live reload).</p>
-<p>It also means that there&#39;s already a <a href="https://npmjs.org/package/gulp-nodemon">gulp plugin</a> using nodemon.</p>
-<p>Required nodemon gives you a way of communicating through <a href="https://github.com/remy/nodemon/blob/master/doc/events.md">events</a>. Everything ranging from when nodemon restarts (which includes an array of filenames that triggered the reload), to nodemon&#39;s logging, to the spawned script&#39;s stdout.</p>
-<h2>Tests</h2>
-<p>I&#39;m using Mocha for tests and wear the <a href="https://travis-ci.org/remy/nodemon">Travis badge</a> with pride on pass (and less pride on fail!).</p>
-<p>There&#39;s just over <a href="https://travis-ci.org/remy/nodemon/jobs/17161118">100 tests</a> for nodemon right now, ranging from small internal tests (like CLI parse testing) to tests that forks nodemon, that in turn spawn a web server and force crashes to ensure everything stops and starts correctly.</p>
-<p>It&#39;s actually quite tricky to get the timing right (so the forked tests tend to be littered with <code>setTimeout</code> to make sure we have clear delays between start up and touching files).</p>
-<p>The compound that with different behaviour on Mac (which I&#39;m working from), on Linux and on Windows, and Travis runs on Linux so I had fun switching between 100% tests passing on my mac to jumping inside of vagrant to figure out why Linux wasn&#39;t passing 100%. Definitely a few lessons learnt (which I&#39;ve quickly forgotten now they pass!).</p>
-<h2>Update notification</h2>
-<p>Nodemon original had zero dependencies, which I was proud of (not sure why), but I came across <a href="https://github.com/yeoman/update-notifier/">update-notifier</a> which <em>mostly</em> works, but there&#39;s <a href="https://github.com/yeoman/update-notifier/issues">issues</a> I&#39;ve raised and not heard back on (which worries me a little), but I do I know that users have been notified successfully of updates (at time of writing, nodemon is already 1.0.12).</p>
-<p>So I bit the bullet and took on a dependency, and <em>I think</em> it&#39;s paying off - people are keeping with the most bug free version of nodemon.</p>
-<h2>Sweet logo</h2>
-<p>First, I was so amazed and impressed by user contributions to logo ideas for nodemon. In the end, you folk (or at least people on twitter and github) voted for this one below (which I also like - along with a few others), and I reckon it could make a pretty cool sticker for the laptop. What do you think?</p>
-<p><img style="display: block; margin: 0 auto; max-width: 100%;" src="http://remysharp.com/images/nodemon.png"></p>
-<p>So get updating:</p>
-<pre><code>npm install -g nodemon@latest</code></pre>]]></content:encoded></item></channel></rss>
+]]></content:encoded></item></channel></rss>
