@@ -12,11 +12,11 @@ There's been some patterns that I use over and over so I wanted to share and doc
 
 Firstly I prefer to use the native implementation, and go bare bones. I'm sure they will be a time that I'll want more than the native API has to offer, but I've not arrived there yet.
 
+As a client side polyfill and the server side, in node-land, since promises are oddly not available natively, **my preferred library is [then/promise](https://github.com/then/promise)**.
+
 I've used [RSVP](https://github.com/tildeio/rsvp.js) in the past and heard decent things about [Bluebird](https://github.com/petkaantonov/bluebird).
 
-On the server side, in node-land, since promises are oddly not available natively, **my preferred library is [then/promise](https://github.com/then/promise)**.
-
-It used to be RSVP, which is mostly bare bones, but I learnt about promise.js' `denodeify` which converts a callback based function into a promise function which can be very useful.
+RSVP feels like it's mostly bare bones, but I learnt about promise.js' `denodeify` which converts a callback based function into a promise function which can be very useful.
 
 ## Clean shallow chains
 
@@ -73,6 +73,8 @@ writeFile(filename, content)
 ```
 
 This also allows me to code with the [shallow chains](#clean-shallow-chains) as above, because it (to me) feels a bit verbose to drop into a function just to return a promise straight back out that doesn't depend on any unknown variable.
+
+The thing to watch out for is if the function behaves differently if there's more arguments, I have to cold call the promise.
 
 ## Cold calling
 
@@ -135,7 +137,7 @@ The issue is when `domain` is called, it's actually called with the prebaked arg
 
 This third argument is the resolved result of `create()` which is treaded as the `callback` argument and as a function object, so the code will try to invoke it - causing an exception.
 
-My solution is to wrap in a *cold call* - i.e. a newly created function that calls my method with no arguments. Kinda like bind once but then never allow any new arguments (a sort of [`Function.seal`](https://jsbin.com/gopiqu/edit?js,console) type-thing):
+My solution is to wrap in a *cold call* - i.e. a newly created function that calls my method with no arguments. Like bind once but then never allow any new arguments, also known as currying (here's a simple demo of the [curry/partial/seal](https://jsbin.com/gopiqu/edit?js,console) type-thing):
 
 
 ```js
@@ -154,6 +156,8 @@ function configureHeroku(slug) {
   return create().then(coldcall(domain));
 }
 ```
+
+*Note: you can do this using currying, i.e. [lodash.curry](https://lodash.com/docs#curry).*
 
 Now the `domain` call works because it's invoked preventing any extra arguments being added.
 
@@ -250,8 +254,7 @@ This final catch lets me see the full stacktrace as to what went wrong, and impo
 So that's it:
 
 - Shallow chains
-- Prebaking where I can
-- Cold calling if neccessary
+- Prebaking where I can and cold calling if neccessary
 - Always throw
 - Always catch
 
