@@ -15,6 +15,7 @@ ga('send', 'pageview');</script></head><body id="blog-my-five-promise-patterns-p
 <p>As a client side polyfill and the server side, in node-land, since promises are oddly not available natively, <strong>my preferred library is <a href="https://github.com/then/promise">then/promise</a></strong>.</p>
 <p>I&#39;ve used <a href="https://github.com/tildeio/rsvp.js">RSVP</a> in the past and heard decent things about <a href="https://github.com/petkaantonov/bluebird">Bluebird</a>.</p>
 <p>RSVP feels like it&#39;s mostly bare bones, but I learnt about promise.js&#39; <code>denodeify</code> which converts a callback based function into a promise function which can be very useful.</p>
+<p><em>Update @ 2014-11-19 15:30:00</em> RSVP does also have <a href="https://github.com/tildeio/rsvp.js/blob/master/lib/rsvp/node.js#L74">denodeify</a> and Matt Andrews of The FT has released a <a href="https://www.npmjs.org/package/denodeify">stand alone denodeify</a> module.</p>
 <h2>Clean shallow chains</h2>
 <p>This means my initial promise code would look like:</p>
 <pre><code class="language-js">writeFile(filename, content)
