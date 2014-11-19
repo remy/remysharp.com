@@ -109,11 +109,11 @@
       "code"
     ]
   },
-  "my-promise-patterns": {
-    "title": "My promise patterns",
-    "date": "2014-11-18 11:30:00",
-    "complete": false,
-    "inprogress": true,
+  "my-five-promise-patterns": {
+    "title": "My five promise patterns",
+    "date": "2014-11-19 12:00:00",
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "code"
     ]
