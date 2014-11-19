@@ -18,6 +18,8 @@ I've used [RSVP](https://github.com/tildeio/rsvp.js) in the past and heard decen
 
 RSVP feels like it's mostly bare bones, but I learnt about promise.js' `denodeify` which converts a callback based function into a promise function which can be very useful.
 
+*Update @ 2014-11-19 15:30:00* RSVP does also have [denodeify](https://github.com/tildeio/rsvp.js/blob/master/lib/rsvp/node.js#L74) and Matt Andrews of The FT has released a [stand alone denodeify](https://www.npmjs.org/package/denodeify) module.
+
 ## Clean shallow chains
 
 This means my initial promise code would look like:
