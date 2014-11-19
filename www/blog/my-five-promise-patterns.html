@@ -12,9 +12,9 @@ ga('send', 'pageview');</script></head><body id="blog-my-five-promise-patterns-p
 
 <h2>Library of choice</h2>
 <p>Firstly I prefer to use the native implementation, and go bare bones. I&#39;m sure they will be a time that I&#39;ll want more than the native API has to offer, but I&#39;ve not arrived there yet.</p>
+<p>As a client side polyfill and the server side, in node-land, since promises are oddly not available natively, <strong>my preferred library is <a href="https://github.com/then/promise">then/promise</a></strong>.</p>
 <p>I&#39;ve used <a href="https://github.com/tildeio/rsvp.js">RSVP</a> in the past and heard decent things about <a href="https://github.com/petkaantonov/bluebird">Bluebird</a>.</p>
-<p>On the server side, in node-land, since promises are oddly not available natively, <strong>my preferred library is <a href="https://github.com/then/promise">then/promise</a></strong>.</p>
-<p>It used to be RSVP, which is mostly bare bones, but I learnt about promise.js&#39; <code>denodeify</code> which converts a callback based function into a promise function which can be very useful.</p>
+<p>RSVP feels like it&#39;s mostly bare bones, but I learnt about promise.js&#39; <code>denodeify</code> which converts a callback based function into a promise function which can be very useful.</p>
 <h2>Clean shallow chains</h2>
 <p>This means my initial promise code would look like:</p>
 <pre><code class="language-js">writeFile(filename, content)
@@ -47,6 +47,7 @@ writeFile(filename, content)
 writeFile(filename, content)
   .then(addUser)</code></pre>
 <p>This also allows me to code with the <a href="#clean-shallow-chains">shallow chains</a> as above, because it (to me) feels a bit verbose to drop into a function just to return a promise straight back out that doesn&#39;t depend on any unknown variable.</p>
+<p>The thing to watch out for is if the function behaves differently if there&#39;s more arguments, I have to cold call the promise.</p>
 <h2>Cold calling</h2>
 <p><strong><em>Disclaimer:</em></strong> <em>this patterned is required due to my own prebaking patterns and attempts to (ironically) simplify. There&#39;s a good chance you won&#39;t need this!</em></p>
 <p>When a function works both as a promise <em>and</em> using the callback pattern - it&#39;s great, but I&#39;ve been caught out in the past.</p>
@@ -87,7 +88,7 @@ writeFile(filename, content)
 }</code></pre>
 <p>The issue is when <code>domain</code> is called, it&#39;s actually called with the prebaked arguments of the slug and options <em>but also</em> the resolved value from <code>create()</code> - so <strong>a third argument is received</strong>.</p>
 <p>This third argument is the resolved result of <code>create()</code> which is treaded as the <code>callback</code> argument and as a function object, so the code will try to invoke it - causing an exception.</p>
-<p>My solution is to wrap in a <em>cold call</em> - i.e. a newly created function that calls my method with no arguments. Kinda like bind once but then never allow any new arguments (a sort of <a href="https://jsbin.com/gopiqu/edit?js,console"><code>Function.seal</code></a> type-thing):</p>
+<p>My solution is to wrap in a <em>cold call</em> - i.e. a newly created function that calls my method with no arguments. Like bind once but then never allow any new arguments, also known as currying (here&#39;s a simple demo of the <a href="https://jsbin.com/gopiqu/edit?js,console">curry/partial/seal</a> type-thing):</p>
 <pre><code class="language-js">function coldcall(fn) {
   return function () {
     fn();
@@ -102,6 +103,7 @@ function configureHeroku(slug) {
   // ** now it works ** //
   return create().then(coldcall(domain));
 }</code></pre>
+<p><em>Note: you can do this using currying, i.e. <a href="https://lodash.com/docs#curry">lodash.curry</a>.</em></p>
 <p>Now the <code>domain</code> call works because it&#39;s invoked preventing any extra arguments being added.</p>
 <h2>Throw over explicit reject</h2>
 <p>Instead of:</p>
@@ -174,8 +176,7 @@ utils.compare(input, password)
 <p>So that&#39;s it:</p>
 <ul>
 <li>Shallow chains</li>
-<li>Prebaking where I can</li>
-<li>Cold calling if neccessary</li>
+<li>Prebaking where I can and cold calling if neccessary</li>
 <li>Always throw</li>
 <li>Always catch</li>
 </ul>
