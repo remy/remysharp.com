@@ -48,10 +48,10 @@ When a function works both as a promise and using the callback pattern - it&#39;
 The way the function might work under the hood is something like (this pseudo code):
 Heroku.prototype.post = function (slug, options, callback) {
   // do some async thing
-  this.request(slug, options, function (err, data) {
+  this.request(slug, options, function (error, data) {
 
     // ** this line is how the dual functionality works ** //
-    if (callback) callback(err, data);
+    if (callback) callback(error, data);
 
     // else do something with promise
   });
@@ -104,9 +104,9 @@ Instead of:
 // compare password &amp; input password
 return new Promise(function (resolve, reject) {
   bcrypt.compare(input, password, function (error, result) {
-    if (err || !result) {
+    if (error || !result) {
       // reject and early exit
-      return reject(err);
+      return reject(error);
     }
 
     resolve(result);
@@ -116,8 +116,8 @@ I&#39;ll throw instead of reject:
 // compare password &amp; input password
 return new Promise(function (resolve) {
   bcrypt.compare(input, password, function (error, result) {
-    if (err) {
-      throw err;
+    if (error) {
+      throw error;
     }
 
     if (!result) {
@@ -225,10 +225,10 @@ writeFile(filename, content)
 <p>The way the function might work under the hood is something like (this pseudo code):</p>
 <pre><code class="language-js">Heroku.prototype.post = function (slug, options, callback) {
   // do some async thing
-  this.request(slug, options, function (err, data) {
+  this.request(slug, options, function (error, data) {
 
     // ** this line is how the dual functionality works ** //
-    if (callback) callback(err, data);
+    if (callback) callback(error, data);
 
     // else do something with promise
   });
@@ -281,9 +281,9 @@ function configureHeroku(slug) {
 <pre><code class="language-js">// compare password &amp; input password
 return new Promise(function (resolve, reject) {
   bcrypt.compare(input, password, function (error, result) {
-    if (err || !result) {
+    if (error || !result) {
       // reject and early exit
-      return reject(err);
+      return reject(error);
     }
 
     resolve(result);
@@ -293,8 +293,8 @@ return new Promise(function (resolve, reject) {
 <pre><code class="language-js">// compare password &amp; input password
 return new Promise(function (resolve) {
   bcrypt.compare(input, password, function (error, result) {
-    if (err) {
-      throw err;
+    if (error) {
+      throw error;
     }
 
     if (!result) {
