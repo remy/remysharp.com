@@ -89,10 +89,10 @@ The way the function might work under the hood is something like (this pseudo co
 ```js
 Heroku.prototype.post = function (slug, options, callback) {
   // do some async thing
-  this.request(slug, options, function (err, data) {
+  this.request(slug, options, function (error, data) {
 
     // ** this line is how the dual functionality works ** //
-    if (callback) callback(err, data);
+    if (callback) callback(error, data);
 
     // else do something with promise
   });
@@ -171,9 +171,9 @@ Instead of:
 // compare password & input password
 return new Promise(function (resolve, reject) {
   bcrypt.compare(input, password, function (error, result) {
-    if (err || !result) {
+    if (error || !result) {
       // reject and early exit
-      return reject(err);
+      return reject(error);
     }
 
     resolve(result);
@@ -187,8 +187,8 @@ I'll throw instead of reject:
 // compare password & input password
 return new Promise(function (resolve) {
   bcrypt.compare(input, password, function (error, result) {
-    if (err) {
-      throw err;
+    if (error) {
+      throw error;
     }
 
     if (!result) {
