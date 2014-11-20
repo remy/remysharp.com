@@ -109,7 +109,7 @@ function configureHeroku(slug) {
 <h2>Throw over explicit reject</h2>
 <p>Instead of:</p>
 <pre><code class="language-js">// compare password &amp; input password
-return new Promise(function (resolve) {
+return new Promise(function (resolve, reject) {
   bcrypt.compare(input, password, function (error, result) {
     if (err || !result) {
       // reject and early exit
@@ -140,7 +140,7 @@ return new Promise(function (resolve) {
 </blockquote>
 <p>This may well be so, but there&#39;s a few key benefits to my code when I throw:</p>
 <ol>
-<li>I&#39;m used to error first handling, and quite often I&#39;ll accidently recieve <code>reject</code> as the first argument, which leads to much confusion. This way, I only ever accept <code>resolve</code> as my argument.</li>
+<li>I&#39;m used to error first handling, and quite often I&#39;ll accidently recieve <code>reject</code> as the first argument, which leads to much confusion. This way, I only ever accept <code>resolve</code> as my argument. There&#39;s also issues where &quot;reject&quot; and &quot;resolve&quot; as words are visually similar, which has also lead to confusion when they&#39;re the wrong way around!</li>
 <li>I don&#39;t have to remember to <code>return reject</code>. I&#39;ve seen code that doesn&#39;t return on reject, and it then goes on to <code>resolve</code> with a value. Some libraries fulfill, some reject, some throw new errors. Throwing the error avoids this entirely.</li>
 <li>This is also consistent with the way I&#39;ll deal with errors inside of subsequent <code>then</code> calls:</li>
 </ol>
