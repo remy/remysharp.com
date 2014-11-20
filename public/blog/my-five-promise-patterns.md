@@ -243,11 +243,13 @@ writeFile(filename, content)
     console.log('All done');
   })
   .catch(function (error) {
-    console.error(error.stack);
+    // do something with error
+    console.log(error.stack);
+    handle(error);
   });
 ```
 
-This final catch lets me see the full stacktrace as to what went wrong, and importantly *that something did go wrong*.
+This final catch lets me see the full stacktrace as to what went wrong, and importantly *that something did go wrong* (see blog comments for discussion about this).
 
 *Note: `.catch()` is only in the ES6 spec and doesn't appear in Promises/A+ so some library implementations are missing `.catch()` support (as I've found with [mongoose](http://www.mongoosejs.com/) as it depends on [mPromise](https://www.npmjs.org/mpromise) library).*
 
