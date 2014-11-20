@@ -162,9 +162,11 @@ writeFile(filename, content)
     console.log(&#39;All done&#39;);
   })
   .catch(function (error) {
-    console.error(error.stack);
+    // do something with error
+    console.log(error.stack);
+    handle(error);
   });
-This final catch lets me see the full stacktrace as to what went wrong, and importantly that something did go wrong.
+This final catch lets me see the full stacktrace as to what went wrong, and importantly that something did go wrong (see blog comments for discussion about this).
 Note: .catch() is only in the ES6 spec and doesn&#39;t appear in Promises/A+ so some library implementations are missing .catch() support (as I&#39;ve found with mongoose as it depends on mPromise library).
 Recap
 So that&#39;s it:
@@ -339,9 +341,11 @@ utils.compare(input, password)
     console.log(&#39;All done&#39;);
   })
   .catch(function (error) {
-    console.error(error.stack);
+    // do something with error
+    console.log(error.stack);
+    handle(error);
   });</code></pre>
-<p>This final catch lets me see the full stacktrace as to what went wrong, and importantly <em>that something did go wrong</em>.</p>
+<p>This final catch lets me see the full stacktrace as to what went wrong, and importantly <em>that something did go wrong</em> (see blog comments for discussion about this).</p>
 <p><em>Note: <code>.catch()</code> is only in the ES6 spec and doesn&#39;t appear in Promises/A+ so some library implementations are missing <code>.catch()</code> support (as I&#39;ve found with <a href="http://www.mongoosejs.com/">mongoose</a> as it depends on <a href="https://www.npmjs.org/mpromise">mPromise</a> library).</em></p>
 <h2>Recap</h2>
 <p>So that&#39;s it:</p>
