@@ -169,7 +169,7 @@ Instead of:
 
 ```js
 // compare password & input password
-return new Promise(function (resolve) {
+return new Promise(function (resolve, reject) {
   bcrypt.compare(input, password, function (error, result) {
     if (err || !result) {
       // reject and early exit
@@ -206,7 +206,7 @@ This might be a little controversial. In fact, when I threw this out to twitter,
 
 This may well be so, but there's a few key benefits to my code when I throw:
 
-1. I'm used to error first handling, and quite often I'll accidently recieve `reject` as the first argument, which leads to much confusion. This way, I only ever accept `resolve` as my argument.
+1. I'm used to error first handling, and quite often I'll accidently recieve `reject` as the first argument, which leads to much confusion. This way, I only ever accept `resolve` as my argument. There's also issues where "reject" and "resolve" as words are visually similar, which has also lead to confusion when they're the wrong way around!
 2. I don't have to remember to `return reject`. I've seen code that doesn't return on reject, and it then goes on to `resolve` with a value. Some libraries fulfill, some reject, some throw new errors. Throwing the error avoids this entirely.
 3. This is also consistent with the way I'll deal with errors inside of subsequent `then` calls:
 
