@@ -7,3 +7,7 @@ I'm often connecting to different networks depending on what job I'm doing, and 
 ## Refresh DNS in Leopard
 
     sudo dscacheutil -flushcache
+
+## Refresh DNS in Yosemite
+
+    sudo discoveryutil udnsflushcaches
