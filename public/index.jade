@@ -33,13 +33,13 @@ article.post.lists
       each post in recent
         li
           a(href="#{ public.blog._data[post.slug].relative }") #{ public.blog._data[post.slug].title }
-          small &nbsp;updated #{ moment(post.date).fromNow() }
+          small &nbsp;updated #{ moment(post.date).format('D-MMM YYYY') }
 
 article.post.lists
   header.post-header
     h2.title Remy Elsewhere
   .post-content
-    ul
+    ul.links
       li
         a(href="http://leftlogic.com" rel="me" title="my business: hire me") Left Logic
         | &nbsp;- my business: hire me
