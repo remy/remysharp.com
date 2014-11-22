@@ -4,8 +4,11 @@ jQuery 1.2 introduced JSONP support, but on initial read of the release notes, I
 
 > JSONP is script tag injection, passing the response from the server in to a user specified function
 
-
 <!--more-->
+
+<div class="update">
+**Updated 2014-11-22:** to show secure version of JSONP based on [Metal Toad post](http://www.metaltoad.com/blog/using-jsonp-safely) and [Andrew Bett's feedback](https://remysharp.com/2007/10/08/what-is-jsonp#comment-1707138872).
+</div>
 
 ## How you can use JSONP
 
@@ -13,23 +16,34 @@ You need to mould both your request and response to handle JSONP - and in doing 
 
 Your server will need to return the response as JSON, but also wrap the response in the requested call back, something like this in PHP (hosted on http://myotherserver.com):
 
-<pre><code>$data = getDataAsJSON($_GET['id']);
-echo $_GET['jsonp_callback'] . '(' . $data . ');';
-// prints: jsonp123({"name" : "Remy", "id" : "10", "blog" : "http://remysharp.com"});</code></pre>
+```php
+// where $_GET['callback'] = 'randomFn123'
+$cb = $_GET['callback'];
+if (preg_match('/\W/', $cb)) {
+  // if $_GET['callback'] contains a non-word character,
+  // this could be an XSS attack.
+  header('HTTP/1.1 400 Bad Request');
+  exit();
+}
+header('Content-type: application/javascript; charset=utf-8');
+echo "/**/typeof ".$cb."==='function' && ".$cb."(".json_encode($data).")";
+// prints: /**/typeof randomFn123==='function' && randomFn123({"name":"Remy", "id":"10", "blog":"http://remysharp.com"});
+```
 
 The jQuery script would be:
 
-<pre><code>$.ajax({
+```js
+$.ajax({
   dataType: 'jsonp',
   data: 'id=10',
-  jsonp: 'jsonp_callback',
   url: 'http://myotherserver.com/getdata',
   success: function () {
     // do stuff
   },
-});</code></pre>
+});
+```
 
-jQuery will change the url to include <code>&amp;jsonp_callback=jsonpmethod</code> - but you can exclude it and it default to just 'callback'.
+jQuery will change the url to include `&amp;callback=randomFn123` - but you can exclude it and it default to just 'callback'.
 
 ## Example in the Wild
 
@@ -37,7 +51,7 @@ jQuery will change the url to include <code>&amp;jsonp_callback=jsonpmethod</cod
 
 ## How it works in jQuery
 
-jQuery attaches a global function to the <code>window</code> object that is called when the script is injected, then the function is removed on completion.
+jQuery attaches a global function to the `window` object that is called when the script is injected, then the function is removed on completion.
 
 Note that if the request is being made to the same domain, then jQuery will switch it down to a straight Ajax request.
 
