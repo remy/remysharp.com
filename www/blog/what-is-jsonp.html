@@ -11,25 +11,34 @@ ga('send', 'pageview');</script></head><body id="blog-what-is-jsonp-page"><nav c
 </blockquote>
 <!--more-->
 
+<div class="update">
+<strong>Updated 2014-11-22:</strong> to show secure version of JSONP based on <a href="http://www.metaltoad.com/blog/using-jsonp-safely">Metal Toad post</a> and <a href="https://remysharp.com/2007/10/08/what-is-jsonp#comment-1707138872">Andrew Bett&#39;s feedback</a>.
+</div>
+
 <h2>How you can use JSONP</h2>
 <p>You need to mould both your request and response to handle JSONP - and in doing so, you can have cross domain JSON requests.</p>
 <p>Your server will need to return the response as JSON, but also wrap the response in the requested call back, something like this in PHP (hosted on <a href="http://myotherserver.com">http://myotherserver.com</a>):</p>
-<pre><code>$data = getDataAsJSON($_GET['id']);
-echo $_GET['jsonp_callback'] . '(' . $data . ');';
-// prints: jsonp123({"name" : "Remy", "id" : "10", "blog" : "http://remysharp.com"});</code></pre>
-
+<pre><code class="language-php">// where $_GET[&#39;callback&#39;] = &#39;randomFn123&#39;
+$cb = $_GET[&#39;callback&#39;];
+if (preg_match(&#39;/\W/&#39;, $cb)) {
+  // if $_GET[&#39;callback&#39;] contains a non-word character,
+  // this could be an XSS attack.
+  header(&#39;HTTP/1.1 400 Bad Request&#39;);
+  exit();
+}
+header(&#39;Content-type: application/javascript; charset=utf-8&#39;);
+echo &quot;/**/typeof &quot;.$cb.&quot;===&#39;function&#39; &amp;&amp; &quot;.$cb.&quot;(&quot;.json_encode($data).&quot;)&quot;;
+// prints: /**/typeof randomFn123===&#39;function&#39; &amp;&amp; randomFn123({&quot;name&quot;:&quot;Remy&quot;, &quot;id&quot;:&quot;10&quot;, &quot;blog&quot;:&quot;http://remysharp.com&quot;});</code></pre>
 <p>The jQuery script would be:</p>
-<pre><code>$.ajax({
-  dataType: 'jsonp',
-  data: 'id=10',
-  jsonp: 'jsonp_callback',
-  url: 'http://myotherserver.com/getdata',
+<pre><code class="language-js">$.ajax({
+  dataType: &#39;jsonp&#39;,
+  data: &#39;id=10&#39;,
+  url: &#39;http://myotherserver.com/getdata&#39;,
   success: function () {
     // do stuff
   },
 });</code></pre>
-
-<p>jQuery will change the url to include <code>&amp;jsonp_callback=jsonpmethod</code> - but you can exclude it and it default to just &#39;callback&#39;.</p>
+<p>jQuery will change the url to include <code>&amp;amp;callback=randomFn123</code> - but you can exclude it and it default to just &#39;callback&#39;.</p>
 <h2>Example in the Wild</h2>
 <p><a href="http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/">Twitter&#39;s JavaScript blog plugin</a> works in exactly the same way.  You create a function to handle the data from Twitter, and insert a script tag.  Once the script is inserted, it calls the function passing the Twitter data as a JSON object.</p>
 <h2>How it works in jQuery</h2>
