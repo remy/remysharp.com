@@ -10,7 +10,7 @@ We repeated this mistake.
 
 More recently concerns about vendor prefixes and non-WebKit browsers adopting WebKit prefixes because us developers kept including a single vendor prefix.
 
-Bruce Lawson has an excellent 20 minute talk on lessons we (should have) learnt from the days of "Works best in Internet Explorer". IE6 won the battle of the browsers because we refused to code for the "older" browsers. Similar to vendor prefixes, eh?
+Bruce Lawson has an [excellent 20 minute talk](http://vimeo.com/m/52171395) on lessons we (should have) learnt from the days of "Works best in Internet Explorer". IE6 won the battle of the browsers because we refused to code for the "older" browsers. Similar to vendor prefixes, eh?
 
 We repeated this mistake.
 
@@ -18,4 +18,4 @@ If you notice the reoccurring themes at conferences and discussion around the fu
 
 We're repeating these mistakes.
 
-So, if we can learn anything, I'd say: if it feels easy, and has a stink of not being future friendly, then you need to abort your current path and start again. It'll be worth it. You won't repeat those small, but nontrivial mistakes.
+So, if we can learn anything, I'd say: if it feels easy, and has a stink of not being future friendly, then you you consider aborting your current path and start again. It'll be worth it. You won't repeat those small, but nontrivial mistakes.
