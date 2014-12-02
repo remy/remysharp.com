@@ -16,7 +16,7 @@ Julie's responsible for all kinds of huge things throughout my life, and has eve
 
 ## Let me indulge in some history
 
-We got together back in 6th form (when we were just 18 in 1996), and *both failed* to get into our first choice universities. We had expected to separate our fledgling romance when we headed off, but as fate would have it, we were to go to the same university: Kingston.
+We got together back in 6th form (when we were just 18 in 1996), and *both failed* to get into our first choice universities. We had expected to separate our fledgling romance when we headed off, but as fate would have it, we were to go to the same university: Kingston upon Thames.
 
 We'd spend the next few years joined at the hip. Spending all hours of the days together - often me bunking off my classes to hang out with her.
 
@@ -28,14 +28,16 @@ But it wasn't all work. We'd spend uncountable nights getting drunk and being si
 
 Of course I wanted to marry my best friend. I proposed, at a carefully planned sunset on the beach on a chilly January back in 2001. Her words (in an urgent unknowing): "Urm, uh, uh, I don't know...um...yes? I guess?!".
 
-We'd marry. We'd spend 3 months in Whistler on sabbatical together. We'd move to Brighton. We'd do regular bank holiday super-epic pub crawls. We'd buy a house.
+We'd marry in 2004. We'd spend 3 months in Whistler on sabbatical together. We'd move to Brighton. We'd do regular bank holiday super-epic pub crawls. We'd buy a house.
 
 We'd go through the most terrible thing, and we'd survive. Together.
 
 ## And now...
 
-And now we have Ellis and Seren, and *somehow* our family is complete. Tia is part of it too.
+And now we have Ellis and Seren, and *somehow* our family is complete in spite of losing Tia, she's part of that family too.
 
 For some reason I was lucky enough to find the person that makes me whole from such a young age, and some 18 years later Julie's *still* my best friend and the person whose life I always want to share.
 
-To Julie: I love you, Always.
+To Julie: I love you. Always. From the days that we were kids to the days when we're old and grey.
+
+![Remy & Julie](/images/us-1996.jpg)
