@@ -60,7 +60,7 @@ $ npm run watch
 I looked into [gaze](http://npmjs.org/gaze), [watchy](https://github.com/caseywebdev/watchy) and a few others, but eventually settled on two potentials:
 
 - [fswatch](https://github.com/emcrisostomo/fswatch) - which is mac specific
-- [nodemon](http://nodemon.io) - my own creation, but actually works perfectly
+- [nodemon](https://github.com/remy/nodemon) - my own creation, but actually works perfectly
 
 Here's how the watch works with `fswatch`:
 
@@ -68,13 +68,17 @@ Here's how the watch works with `fswatch`:
 fswatch -o public/css/*.less | xargs -n1 -I{} make
 ```
 
-And the same thing with nodemon:
+And the same thing with nodemon (via a locally installed `npm install --dev nodemon` in the project):
 
 ```shell
-nodemon -w public/css/ -e css -x make
+nodemon --quiet --watch public/css/ --ext css --exec make
+# same thing except with shorthand flags:
+# nodemon -q -w public/css/ -e css -x make
 ```
 
-Now whenever a .less file changes in the `public/css` directory, my `make` command runs.
+Now whenever a .less file changes in the `public/css` directory, my `make` command runs, and because Make is clever, it'll only recompile the files that have actually changed.
+
+Aside: In my own projects, I've gone further with nodemon, to use it for automatically re-running tests and recompiling JavaScript for development.
 
 ### Rebuild
 
@@ -107,7 +111,7 @@ css: $(css_files)
 
 ## Final result
 
-The final result is pretty awesome, especially with CSS source maps enabled in devtools.
+The [final result](https://gist.github.com/remy/274232f8b47dfa163324) is pretty awesome, especially with CSS source maps enabled in devtools.
 
 I can edit and change the Less file in devtools, and the rebuild is near instant, which in turn is detected by devtools, which is then injected into Chrome so I see the updates happening in near-real-time.
 
