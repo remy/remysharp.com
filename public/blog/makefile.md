@@ -68,7 +68,7 @@ Here's how the watch works with `fswatch`:
 fswatch -o public/css/*.less | xargs -n1 -I{} make
 ```
 
-And the same thing with nodemon (via a locally installed `npm install --dev nodemon` in the project):
+And the same thing with nodemon (via a locally installed `npm install -g nodemon`):
 
 ```shell
 nodemon --quiet --watch public/css/ --ext css --exec make

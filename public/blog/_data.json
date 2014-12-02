@@ -3182,5 +3182,15 @@
     "tags": [
       "code"
     ]
+  },
+  "makefile": {
+    "title": "Makefile instead of hoop jumping",
+    "date": "2014-12-02 10:00:00",
+    "complete": true,
+    "inprogress": true,
+    "published": true,
+    "tags": [
+      "code"
+    ]
   }
 }

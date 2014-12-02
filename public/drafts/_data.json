@@ -117,15 +117,5 @@
     "tags": [
       "web"
     ]
-  },
-  "makefile": {
-    "title": "Makefile instead of hoop jumping",
-    "date": "2014-11-29 12:00:00",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "code"
-    ]
   }
-
 }
