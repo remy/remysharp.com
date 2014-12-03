@@ -117,5 +117,14 @@
     "tags": [
       "web"
     ]
+  },
+  "reboot": {
+    "title": "Reboot",
+    "date": "2014-12-03 11:30:00",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "personal"
+    ]
   }
 }

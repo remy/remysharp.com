@@ -113,6 +113,8 @@ css: $(css_files)
 
 The [final result](https://gist.github.com/remy/274232f8b47dfa163324) is pretty awesome, especially with CSS source maps enabled in devtools.
 
-I can edit and change the Less file in devtools, and the rebuild is near instant, which in turn is detected by devtools, which is then injected into Chrome so I see the updates happening in near-real-time.
+I can edit and change the Less file in devtools, and the rebuild is near instant, which in turn is detected by devtools, which is then injected into Chrome so I see the updates happening in near-real-time:
+
+<iframe width="1280" height="720" src="//www.youtube.com/embed/6bcCpk_U3qc?rel=0" frameborder="0" allowfullscreen></iframe>
 
 As further reading, I highly recommend you check out [James Coglan's excellent post on using Make](https://blog.jcoglan.com/2014/02/05/building-javascript-projects-with-make/) for a full JavaScript project.
