@@ -17,7 +17,9 @@ We&#39;d go through the most terrible thing, and we&#39;d survive. Together.
 And now...
 And now we have Ellis and Seren, and somehow our family is complete in spite of losing Tia, she&#39;s part of that family too.
 For some reason I was lucky enough to find the person that makes me whole from such a young age, and some 18 years later Julie&#39;s still my best friend and the person whose life I always want to share.
-To Julie: I love you. Always. From the days that we were kids to the days when we&#39;re old and grey.]]></description><content:encoded><![CDATA[
+To Julie: I love you. Always. From the days that we were kids to the days when we&#39;re old and grey.
+
+Reposted from The Pastry Box Project]]></description><content:encoded><![CDATA[
 <p>This makes my final post on The Pastry Box. Though its only been six posts, its felt like something different. Indeed early on I realised it was somewhere different that I could experiment with content.</p>
 <p>Due to what was going on in my life at the time, the posts quickly became very personal, and I felt comfortable enough to share some of my darker thoughts. That hasn&#39;t gone away, and people have been remarkably kind in their response. I hope to be strong enough to bring this directly to my own blog (though of course all my content is cross posted to my own blog).</p>
 <p>For my final post I wanted to end on something I&#39;ve been wanting to write about for years. In fact, I started writing a version of this post in 2008, but the text was long lost.</p>
@@ -39,6 +41,7 @@ To Julie: I love you. Always. From the days that we were kids to the days when w
 <p>For some reason I was lucky enough to find the person that makes me whole from such a young age, and some 18 years later Julie&#39;s <em>still</em> my best friend and the person whose life I always want to share.</p>
 <p>To Julie: I love you. Always. From the days that we were kids to the days when we&#39;re old and grey.</p>
 <p><img src="/images/us-1996.jpg" alt="Remy &amp; Julie"></p>
+<p>Reposted from <a href="https://the-pastry-box-project.net/remy-sharp/2014-december-6">The Pastry Box Project</a></p>
 ]]></content:encoded></item><item><title>Makefile instead of hoop jumping</title><guid isPermaLink="false">makefile</guid><link>http://remysharp.com/2014/12/02/makefile</link><pubDate>Tue, 02 Dec 2014 10:00:00 +0000</pubDate><description><![CDATA[In 2012 I ran a Build Process workshop as part of ffconf tooling tutorials. Early on as part of my workshop introduction I said that makefiles were hard and for harden unix beared folk...or something. Grunt (and the like) were definitely a gentler solution.
 I still stand by that, but today the idea of installing a bunch of dependancies just so I can have my Less file converted to CSS in real-time feels...well, crap.]]></description><content:encoded><![CDATA[
 <p>In 2012 I ran a Build Process workshop as part of <a href="http://2012.ffconf.org/#tooling">ffconf tooling tutorials</a>. Early on as part of my workshop introduction I said that makefiles were hard and for harden unix beared folk...or something. Grunt (and the like) were definitely a gentler solution.</p>
