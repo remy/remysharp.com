@@ -12,11 +12,21 @@ I'm shutting down the office and returning to solo working and surfing from cowo
 
 I've spent the last three years (or more, I forget) working from an office space that I rented, so I've been out of this solo game for a while.
 
-As always with my business, my personal life comes first (I've spent my 10 years where work came first), and so my biggest concern is maintaining my gym attendance and even more importantly: my diet (what I eat, rather than "dieting"). 
+As always with my business, my personal life comes first (I've spent my 10 years where work came first), and so my biggest concern is maintaining my gym attendance and even more importantly: my diet (what I eat, rather than "dieting").
 
 Disruption to routine is always a killer, so this is the thing I fear most, and I want to crack the routine quickly!
 
 I usually work particularly well from home, but that was before kids, and so that's not really an option as I'd rather be with them than coding.
 
-## Exciting opportunities
+## Exciting next opportunities
+
+Starting in January 2015, I'll continue to work alone again, tinkering in side projects, but more importantly, returning to client development, consultancy and training.
+
+This means that I can be more nimble in my client work, jumping from project to project and working on all kinds of things (previously it ranged from Christmas python appengine projects, to WebRTC demos, to Node & WebSocket based games, to JavaScript reviews).
+
+
+
+
+
+
 
