@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 02 Dec 2014 10:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Makefile instead of hoop jumping</title><guid isPermaLink="false">makefile</guid><link>http://remysharp.com/2014/12/02/makefile</link><pubDate>Tue, 02 Dec 2014 10:00:00 +0000</pubDate><description><![CDATA[In 2012 I ran a Build Process workshop as part of ffconf tooling tutorials. Early on as part of my workshop introduction I said that makefiles were hard and for harden unix beared folk...or something. Grunt (and the like) were definitely a gentler solution.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Sat, 06 Dec 2014 9:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>To You</title><guid isPermaLink="false">to-you</guid><link>http://remysharp.com/2014/12/06/to-you</link><pubDate>Sat, 06 Dec 2014 9:00:00 +0000</pubDate><description><![CDATA[This makes my final post on The Pastry Box. Though its only been six posts, its felt like something different. Indeed early on I realised it was somewhere different that I could experiment with content.
+Due to what was going on in my life at the time, the posts quickly became very personal, and I felt comfortable enough to share some of my darker thoughts. That hasn&#39;t gone away, and people have been remarkably kind in their response. I hope to be strong enough to bring this directly to my own blog (though of course all my content is cross posted to my own blog).
+For my final post I wanted to end on something I&#39;ve been wanting to write about for years. In fact, I started writing a version of this post in 2008, but the text was long lost.
+I wanted to acknowledge my wife, best friend, mother of my children and partner in all things: Julie.
+We have a few anniversaries that we keep, but today, the 6th December would mark the day that we started &quot;going out&quot;, dating, courting, whatever you&#39;d like to call it, 18 years ago.
+18 years marks a special year too, we&#39;ve now been together longer in our lives than the time that we&#39;ve not been together. Our halfway mark. I&#39;m pretty damn proud to be her husband.
+Julie&#39;s responsible for all kinds of huge things throughout my life, and has even positively impacted the web community that I work inside of.
+Let me indulge in some history
+We got together back in 6th form (when we were just 18 in 1996), and both failed to get into our first choice universities. We had expected to separate our fledgling romance when we headed off, but as fate would have it, we were to go to the same university: Kingston upon Thames.
+We&#39;d spend the next few years joined at the hip. Spending all hours of the days together - often me bunking off my classes to hang out with her.
+Then it all changed when I landed a sandwich year work placement - we went from spending 247 together, to me spending pretty much 9 &#39;til 9 with my boss and very little time with Julie.
+That didn&#39;t stop us. Julie supported me, in amazing ways. It was pretty much a long distance relationship whilst living together.
+But it wasn&#39;t all work. We&#39;d spend uncountable nights getting drunk and being silly together. Watching movies together and staying up late to watch just one more episode of 24.
+Of course I wanted to marry my best friend. I proposed, at a carefully planned sunset on the beach on a chilly January back in 2001. Her words (in an urgent unknowing): &quot;Urm, uh, uh, I don&#39;t know...um...yes? I guess?!&quot;.
+We&#39;d marry in 2004. We&#39;d spend 3 months in Whistler on sabbatical together. We&#39;d move to Brighton. We&#39;d do regular bank holiday super-epic pub crawls. We&#39;d buy a house.
+We&#39;d go through the most terrible thing, and we&#39;d survive. Together.
+And now...
+And now we have Ellis and Seren, and somehow our family is complete in spite of losing Tia, she&#39;s part of that family too.
+For some reason I was lucky enough to find the person that makes me whole from such a young age, and some 18 years later Julie&#39;s still my best friend and the person whose life I always want to share.
+To Julie: I love you. Always. From the days that we were kids to the days when we&#39;re old and grey.]]></description><content:encoded><![CDATA[
+<p>This makes my final post on The Pastry Box. Though its only been six posts, its felt like something different. Indeed early on I realised it was somewhere different that I could experiment with content.</p>
+<p>Due to what was going on in my life at the time, the posts quickly became very personal, and I felt comfortable enough to share some of my darker thoughts. That hasn&#39;t gone away, and people have been remarkably kind in their response. I hope to be strong enough to bring this directly to my own blog (though of course all my content is cross posted to my own blog).</p>
+<p>For my final post I wanted to end on something I&#39;ve been wanting to write about for years. In fact, I started writing a version of this post in 2008, but the text was long lost.</p>
+<p>I wanted to acknowledge my wife, best friend, mother of my children and partner in all things: Julie.</p>
+<p>We have a few anniversaries that we keep, but today, the 6th December would mark the day that we started &quot;going out&quot;, dating, courting, whatever you&#39;d like to call it, 18 years ago.</p>
+<p>18 years marks a special year too, we&#39;ve now been together longer in our lives than the time that we&#39;ve not been together. Our halfway mark. I&#39;m pretty damn proud to be her husband.</p>
+<p>Julie&#39;s responsible for all kinds of huge things throughout my life, and has even positively impacted the web community that I work inside of.</p>
+<h2>Let me indulge in some history</h2>
+<p>We got together back in 6th form (when we were just 18 in 1996), and <em>both failed</em> to get into our first choice universities. We had expected to separate our fledgling romance when we headed off, but as fate would have it, we were to go to the same university: Kingston upon Thames.</p>
+<p>We&#39;d spend the next few years joined at the hip. Spending all hours of the days together - often me bunking off my classes to hang out with her.</p>
+<p>Then it all changed when I landed a sandwich year work placement - we went from spending 247 together, to me spending pretty much 9 &#39;til 9 with my boss and very little time with Julie.</p>
+<p>That didn&#39;t stop us. Julie supported me, in amazing ways. It was pretty much a long distance relationship whilst living together.</p>
+<p>But it wasn&#39;t all work. We&#39;d spend uncountable nights getting drunk and being silly together. Watching movies together and staying up late to watch <em>just one more</em> episode of 24.</p>
+<p>Of course I wanted to marry my best friend. I proposed, at a carefully planned sunset on the beach on a chilly January back in 2001. Her words (in an urgent unknowing): &quot;Urm, uh, uh, I don&#39;t know...um...yes? I guess?!&quot;.</p>
+<p>We&#39;d marry in 2004. We&#39;d spend 3 months in Whistler on sabbatical together. We&#39;d move to Brighton. We&#39;d do regular bank holiday super-epic pub crawls. We&#39;d buy a house.</p>
+<p>We&#39;d go through the most terrible thing, and we&#39;d survive. Together.</p>
+<h2>And now...</h2>
+<p>And now we have Ellis and Seren, and <em>somehow</em> our family is complete in spite of losing Tia, she&#39;s part of that family too.</p>
+<p>For some reason I was lucky enough to find the person that makes me whole from such a young age, and some 18 years later Julie&#39;s <em>still</em> my best friend and the person whose life I always want to share.</p>
+<p>To Julie: I love you. Always. From the days that we were kids to the days when we&#39;re old and grey.</p>
+<p><img src="/images/us-1996.jpg" alt="Remy &amp; Julie"></p>
+]]></content:encoded></item><item><title>Makefile instead of hoop jumping</title><guid isPermaLink="false">makefile</guid><link>http://remysharp.com/2014/12/02/makefile</link><pubDate>Tue, 02 Dec 2014 10:00:00 +0000</pubDate><description><![CDATA[In 2012 I ran a Build Process workshop as part of ffconf tooling tutorials. Early on as part of my workshop introduction I said that makefiles were hard and for harden unix beared folk...or something. Grunt (and the like) were definitely a gentler solution.
 I still stand by that, but today the idea of installing a bunch of dependancies just so I can have my Less file converted to CSS in real-time feels...well, crap.]]></description><content:encoded><![CDATA[
 <p>In 2012 I ran a Build Process workshop as part of <a href="http://2012.ffconf.org/#tooling">ffconf tooling tutorials</a>. Early on as part of my workshop introduction I said that makefiles were hard and for harden unix beared folk...or something. Grunt (and the like) were definitely a gentler solution.</p>
 <p>I still stand by that, but today the idea of installing a bunch of dependancies <em>just</em> so I can have my Less file converted to CSS in real-time feels...well, crap.</p>
@@ -1495,45 +1536,4 @@ app.get(&#39;/login&#39;, showLogin); // the old way</code></pre>
 <p>The second is quite a bit more complicated: existing functionality is running side-by-side with functionality that&#39;s only accessible via a feature flag. For example <em>changing</em> the way the login &amp; register works requires that the old way still works, whilst the new way can be accessed via the feature flag. I&#39;ll be honest, this can get tricky.</p>
 <h2>Continued development</h2>
 <p>Feature flags seem to be working really well for us on JS Bin, and I&#39;d definitely recommend using them in some way if you can. The obvious next step is tying in some kind of analytics, then A/B testing and then I&#39;m sure more ideas will follow.</p>
-]]></content:encoded></item><item><title>You're paying to speak</title><guid isPermaLink="false">youre-paying-to-speak</guid><link>http://remysharp.com/2014/03/07/youre-paying-to-speak</link><pubDate>Fri, 07 Mar 2014 16:19:02 +0000</pubDate><description><![CDATA[There are many, many new speakers coming to the web community with their stories and standing up on stage and sharing. I applaud them. It&#39;s a scary thing to stand on stage and share your ideas. And there are many, many hours of work that goes in to the presentations.
-I&#39;m talking to people like me who speak for the love of sharing knowledge.
-TL;DR If an event is not covering your expenses (travel &amp; hotel) then you are paying to speak at their event.]]></description><content:encoded><![CDATA[
-<p>There are many, many new speakers coming to the web community with their stories and standing up on stage and sharing. I applaud them. It&#39;s a scary thing to stand on stage and share your ideas. And there are many, many hours of work that goes in to the presentations.</p>
-<p>I&#39;m talking to people like me who speak for the love of sharing knowledge.</p>
-<p><strong>TL;DR</strong> If an event is not covering your expenses (travel &amp; hotel) then <strong>you are paying to speak at their event</strong>.</p>
-<h2>What it costs you</h2>
-<ol>
-<li>Your time working on slides when you could be working on project work</li>
-<li>Your flight or train or taxi costs</li>
-<li>Your hotel cost</li>
-<li>Your time on the day at the event</li>
-</ol>
-<p>Yes, you might generate work during some awesome-high-fiving-network session. Really? Okay. Yes, you have a &quot;free ticket&quot;, but most new speakers I know have their head in their presentation until it&#39;s over.</p>
-<p>So you&#39;re out of pocket. And for what?</p>
-<h2>What costs them</h2>
-<p>Well, nothing. In fact you&#39;re providing content. And you&#39;re doing more than that. You&#39;re filling up the speaker roster with fresh and new content that&#39;s likely never been seen before. You&#39;re also auditioning for them, if you&#39;re good, they&#39;ll want you back, and their audience will have seen that you&#39;re good and buy more tickets to their event.</p>
-<p>I know Flash on the Beach/Reason used this last &quot;audition&quot; technique, but in a positive way (to be very, very clear: Reasons is good, they do it right). They called it the Lift Pitch. 5 minutes (or 2 minutes this year) to get your idea across. Audience votes on the best one, and that potential speakers is invited back the next year to speak, and they&#39;re paid like every other speaker.</p>
-<p>Then there&#39;s the video that they&#39;ll release, which is more content for them, branded and perpetuating their brand. That <em>you</em> gave them, at your own expense.</p>
-<h2>A free ticket?</h2>
-<p>It seems only the big events that do this kind of thing. And with big events, come big venues.</p>
-<p>By comparison, Full Frontal has 278 seats. No more, no less. So free tickets aren&#39;t something I give away willingly (one of my policies is that all previous years speakers are given a free ticket to the following year). So it <em>costs</em> me, the organiser, to give away a free ticket.</p>
-<p>Now compare to Future Of, they have anything from 800 person capacity (based on it being in The Brewery again). If they sell out in minutes (or even days) then a free ticket has a high value. But they don&#39;t. A free ticket is worth near to nothing (<a href="#comment-607594">please also take a minute to read Lou&#39;s reply—the conference producer for Future Insights</a>).</p>
-<h2>Wouldn&#39;t they be out of pocket with so many speakers?</h2>
-<p>That&#39;s what a budget is for - which comes from ticket sales and sponsorship agreements. <strong>It is part of their budget because without a speaker, they have no content to sell</strong>. The answer is no, they would not be out of pocket.</p>
-<h2>What do I want?</h2>
-<p>Dear event: treat your content providers with dignity. At the absolute least, pay their expenses. Indeed, <a href="http://www.andybudd.com/archives/2013/08/paying_speakers_is_better_for_everybody/">they should be paid too</a>.</p>
-<h2>Which events are doing this?</h2>
-<p>So here&#39;s where I want your help. I&#39;m happy to list these events, and if you know (for absolute sure) that there&#39;s an event making you pay to speak, then comment (anonymously if you want), post me a tweet or email me (remy at remysharp), and I&#39;ll add it to a list here.</p>
-<p>If you&#39;re an organiser of one of these events or work for one of these companies, please get in touch if this is wrong or you&#39;ve fixed your mistake - I&#39;ll happily remove any event from this list.</p>
-<ul>
-<li>Future Insights and the Future of Web Design (et al) don&#39;t cover most of their rising stars&#39; costs</li>
-<li>SxSWi don&#39;t cover the vast majority of speakers and panelists</li>
-<li>Webconf Riga</li>
-<li>Drupal conf</li>
-<li>The anonymous event that <a href="https://gist.github.com/csswizardry/d1bd31e3ada9f5f5a6a6">approached Harry Roberts</a></li>
-<li>FITC</li>
-<li>Fluent</li>
-</ul>
-<p><strong>Important:</strong> there are always the odd exceptions to these, as you&#39;ll read the comments below, but it&#39;s the default policy that I believe should be changed and part of the budget for profit and non-profit.</p>
-<p><strong>Please also read the comments</strong> below fully as they include details of how some events have changed their policies over the years (like Velocity) and tells of personal experiences.</p>
 ]]></content:encoded></item></channel></rss>
