@@ -79,6 +79,11 @@ I've marked the films that I'd recommend watch with a \* and those I'd watch a f
 - [Saving Santa (2013)](http://www.imdb.com/title/tt2204315/)
 - [Nativity 2 (2012)](http://www.imdb.com/title/tt2089750/) (this was awful)
 
+## 2014
+
+- [Mr Bean's Christmas (1992)](http://www.imdb.com/title/tt0365495/)
+- [Home Alone 2 (1992)](http://www.imdb.com/title/tt0104431/)
+
 ## Future Potentials
 
 - [Die Hard (1988)](http://www.imdb.com/title/tt0095016/)
