@@ -83,6 +83,7 @@ I've marked the films that I'd recommend watch with a \* and those I'd watch a f
 
 - [Mr Bean's Christmas (1992)](http://www.imdb.com/title/tt0365495/)
 - [Home Alone 2 (1992)](http://www.imdb.com/title/tt0104431/)
+- [Trapped in Paradice (1994)](http://www.imdb.com/title/tt0111477/)
 - ...
 
 ## Future Potentials
@@ -90,7 +91,6 @@ I've marked the films that I'd recommend watch with a \* and those I'd watch a f
 - [Die Hard (1988)](http://www.imdb.com/title/tt0095016/)
 - [Jingle All The Way (1996)](http://www.imdb.com/title/tt0116705/ "Jingle All the Way (1996) - IMDb")
 - [A Bishop's Wife (1947)](http://www.imdb.com/title/tt0039190/)
-- [Trapped in Paradice (1994)](http://www.imdb.com/title/tt0111477/)
 - [How the Grinch Stole Christmas (2000)](http://www.imdb.com/title/tt0170016/)
 - [Eight Crazy Nights (2002)](http://www.imdb.com/title/tt0271263/?ref_=fn_al_tt_2)
 
