@@ -6,6 +6,10 @@ That said, having read as much as I can around the web, I still don't feel like 
 
 We have to be VATMOSS ready by 1-Jan 2015. That's just over 2 weeks away.
 
+<!--more-->
+
+*Please note: this is barely edited, and I would strongly encourage comments, corrections, updates, etc in the comments.*
+
 ## What is VATMOSS
 
 In my own words, and my layman understanding:
