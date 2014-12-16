@@ -7,7 +7,7 @@ jQuery 1.2 introduced JSONP support, but on initial read of the release notes, I
 <!--more-->
 
 <div class="update">
-**Updated 2014-11-22:** to show secure version of JSONP based on [Metal Toad post](http://www.metaltoad.com/blog/using-jsonp-safely) and [Andrew Bett's feedback](https://remysharp.com/2007/10/08/what-is-jsonp#comment-1707138872).
+**Updated 2014-11-22:** to show secure version of JSONP based on [Metal Toad post](http://www.metaltoad.com/blog/using-jsonp-safely) and [Andrew Betts's feedback](https://remysharp.com/2007/10/08/what-is-jsonp#comment-1707138872).
 </div>
 
 ## How you can use JSONP
