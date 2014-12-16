@@ -18,6 +18,8 @@ Being in the UK and VAT registered, today I need to charge 20% VAT to all non VA
 
 This changes with VATMOSS, but only for those EU customers. Instead of charging UK 20% VAT, I must charge the individual their local VAT. So if the customer is German, I charge them 19% VAT.
 
+**This logic will apply to all businesses running in the EU.**
+
 ## Technical considerations
 
 There's a list of important technical items I need to check off to make sure I'm compliant:
