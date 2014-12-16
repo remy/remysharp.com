@@ -42,7 +42,7 @@ I've considered blocking EU members from subscribing (and therefore unsubscribin
 
 I've considered just killing the business side of JS Bin because this whole process is so disheartening.
 
-I've joked about charging a flat 25% VAT (as this is the highest) and intentionally reporting the wrong TAX to the VAT office. Historically if they owe you money, the VAT office is horrible to work with (whereas if you owe them money, they're particularly efficient), so maybe this is a clean simple "solution".
+I've joked about charging a flat 27% VAT (as this is the highest) and intentionally reporting the wrong TAX to the VAT office. Historically if they owe you money, the VAT office is horrible to work with (whereas if you owe them money, they're particularly efficient), so maybe this is a clean simple "solution".
 
 I've looked at [Quaderno](http://quaderno.io) and [Taxamo](http://www.taxamo.com/), but the technical implementation isn't our issue - it's the business admin. I'm also wary of changing our existing UX for the upgrade process, asking for a tonne more information seems overkill and unnecessary, and only required to satisfy these over the top legislations.
 
