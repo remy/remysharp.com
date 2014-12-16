@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Sat, 06 Dec 2014 9:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>To You</title><guid isPermaLink="false">to-you</guid><link>http://remysharp.com/2014/12/06/to-you</link><pubDate>Sat, 06 Dec 2014 9:00:00 +0000</pubDate><description><![CDATA[This makes my final post on The Pastry Box. Though its only been six posts, its felt like something different. Indeed early on I realised it was somewhere different that I could experiment with content.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 16 Dec 2014 11:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>VATMOSS</title><guid isPermaLink="false">vatmoss</guid><link>http://remysharp.com/2014/12/16/vatmoss</link><pubDate>Tue, 16 Dec 2014 11:00:00 +0000</pubDate><description><![CDATA[If you want a good foundation of understand for VATMOSS, then I highly recommend reading Rachel Andrew&#39;s posts.
+That said, having read as much as I can around the web, I still don&#39;t feel like I have a good handle on this thing, but I&#39;m posting this, partly to flesh out my thoughts, help others in the same situation, and probably rant.
+We have to be VATMOSS ready by 1-Jan 2015. That&#39;s just over 2 weeks away.]]></description><content:encoded><![CDATA[
+<p>If you want a good foundation of understand for VATMOSS, then I highly recommend reading <a href="http://rachelandrew.co.uk/archives/tag/vat">Rachel Andrew&#39;s posts</a>.</p>
+<p>That said, having read as much as I can around the web, I still don&#39;t feel like I have a good handle on this thing, but I&#39;m posting this, partly to flesh out my thoughts, help others in the same situation, and probably rant.</p>
+<p>We have to be VATMOSS ready by 1-Jan 2015. That&#39;s just over 2 weeks away.</p>
+<p><em>Please note: this is barely edited, and I would strongly encourage comments, corrections, updates, etc in the comments.</em></p>
+<h2>What is VATMOSS</h2>
+<p>In my own words, and my layman understanding:</p>
+<p>Being in the UK and VAT registered, today I need to charge 20% VAT to all non VAT registered EU customers. Outside the EU, there&#39;s no VAT applied. If the customer is VAT registered, then I don&#39;t apply VAT.</p>
+<p>This changes with VATMOSS, but only for those EU customers. Instead of charging UK 20% VAT, I must charge the individual their local VAT. So if the customer is German, I charge them 19% VAT.</p>
+<h2>Technical considerations</h2>
+<p>There&#39;s a list of important technical items I need to check off to make sure I&#39;m compliant:</p>
+<ul>
+<li>Collect <em>two</em> pieces of non-conflicting information that proves which EU member state the customer is in. This can be IP address (with country lookup), or bank country, or address, and so on. I believe Stripe has all this information for me and I don&#39;t need to collect anything extra.</li>
+<li>I need an up to date list of all the VAT rates for EU states. <a href="http://jsonvat.com">http://jsonvat.com</a> is a good example of what I need, but it&#39;s maintained by an individual so I intend to use a copy of the file, and try, somehow, to manually stay on top of live updates via <a href="http://www.vatlive.com/vat-rates/european-vat-rates/eu-vat-rates/">VAT live</a>. Far from ideal.</li>
+<li>Since I have users that are subscribed to a subscription model, I need to shift them all off the existing 20% fixed VAT subscription and move them to the new system of dynamic VAT rates (and I&#39;ll email all those individuals to attempt to explain).</li>
+<li>I&#39;m using <a href="https://stripe.com">Stripe</a> for payment processing, so we&#39;re having to upgrade with the following logic:<ol>
+<li>Add an addition invoice item to their initial subscription that adds VAT.</li>
+<li>When the <code>invoice.created</code> webhook comes in, only if the <code>data.paid</code> is <code>false</code> then add the VAT as an addition invoice item.</li>
+</ol>
+</li>
+</ul>
+<h2>Issues</h2>
+<ol>
+<li>I don&#39;t see any way to retrospectively ask my existing subscriptions for more information about their sign up. It&#39;s technically possibly that I capture their IP address in our application logs, and manually add them to our Stripe customers, but that&#39;s a messy process.</li>
+<li>I read that the invoices have to adhere to the county&#39;s regulations. I&#39;ve no idea what that is for all the countries. It was hard enough finding a list of the rates, let alone the invoice requirements.</li>
+<li>We don&#39;t currently send out any emails from JS Bin on subscription renewal - I suspect that&#39;s a weak spot and we&#39;ll need to implement that.</li>
+<li>A way to report for the EU MOSS return...sigh.</li>
+</ol>
+<p>My biggest issue, and the one that&#39;s actually killing business in the UK, is the admin overhead of this change outweighs the benefits.</p>
+<p>I&#39;ve considered blocking EU members from subscribing (and therefore unsubscribing existing EU customers), but some &quot;legislation (eg anti discrimination) may apply&quot;.</p>
+<p>I&#39;ve considered just killing the business side of JS Bin because this whole process is so disheartening.</p>
+<p>I&#39;ve joked about charging a flat 25% VAT (as this is the highest) and intentionally reporting the wrong TAX to the VAT office. Historically if they owe you money, the VAT office is horrible to work with (whereas if you owe them money, they&#39;re particularly efficient), so maybe this is a clean simple &quot;solution&quot;.</p>
+<p>I&#39;ve looked at <a href="http://quaderno.io">Quaderno</a> and <a href="http://www.taxamo.com/">Taxamo</a>, but the technical implementation isn&#39;t our issue - it&#39;s the business admin. I&#39;m also wary of changing our existing UX for the upgrade process, asking for a tonne more information seems overkill and unnecessary, and only required to satisfy these over the top legislations.</p>
+<h2>In closing</h2>
+<p>VATMOSS is a total mess. It&#39;s even more concerning that the details haven&#39;t <a href="https://www.enterprisenation.com/blog/posts/exclusive-hmrc-update-on-vat-moss">even been fleshed</a> out yet with 2 weeks to go (notice the post says they&#39;re going to post detailed guidance...).</p>
+<p>I&#39;m reviewing Quaderno right now, but the more I look the more I feel like our bespoke solution is the right way to go.</p>
+<p>However, this does leave a very sour taste in my mouth for running more business online, and it&#39;s further support that the UK government does not care anywhere near as much as it should, about entrepreneurship in the UK.</p>
+<p>This legislation is killing business in the UK.</p>
+]]></content:encoded></item><item><title>To You</title><guid isPermaLink="false">to-you</guid><link>http://remysharp.com/2014/12/06/to-you</link><pubDate>Sat, 06 Dec 2014 9:00:00 +0000</pubDate><description><![CDATA[This makes my final post on The Pastry Box. Though its only been six posts, its felt like something different. Indeed early on I realised it was somewhere different that I could experiment with content.
 Due to what was going on in my life at the time, the posts quickly became very personal, and I felt comfortable enough to share some of my darker thoughts. That hasn&#39;t gone away, and people have been remarkably kind in their response. I hope to be strong enough to bring this directly to my own blog (though of course all my content is cross posted to my own blog).
 For my final post I wanted to end on something I&#39;ve been wanting to write about for years. In fact, I started writing a version of this post in 2008, but the text was long lost.
 I wanted to acknowledge my wife, best friend, mother of my children and partner in all things: Julie.
@@ -1501,42 +1541,4 @@ being called from. The nice thing is it works in the browser <em>and</em> in nod
 </ul>
 <p>I&#39;ll note that most browsers already highlight the domain part of the URL, but the point I&#39;m trying to make with my proposed mockup, is that everything before the domain (the jakearchibald.com part), <strong>should be truncated <em>as well as</em> dimmed</strong>.</p>
 <p>Perhaps this is a strong enough move to make clear to visitors exactly what URL they&#39;re on, whilst still communicating that they&#39;re visiting a specific URL and not just the root of the domain.</p>
-]]></content:encoded></item><item><title>Feature based development</title><guid isPermaLink="false">feature-based-development</guid><link>http://remysharp.com/2014/03/17/feature-based-development</link><pubDate>Mon, 17 Mar 2014 17:14:35 +0000</pubDate><description><![CDATA[Recently we changed the way we were working on JS Bin. Instead of pushing new
-features whenever it took my fancy - which could result in success or equally
-some kind of breakage - we&#39;re now pushing new features under feature flags and
-it&#39;s proving to be really quite powerful (and fun).]]></description><content:encoded><![CDATA[
-<p>Recently we changed the way we were working on JS Bin. Instead of pushing new
-features whenever it took my fancy - which could result in success or equally
-some kind of breakage - we&#39;re now pushing new features under feature flags and
-it&#39;s proving to be really quite powerful (and fun).</p>
-<h2>feature-gateway</h2>
-<p>The module is up on npm and can be installed via <code>npm install feature-gateway</code>. It&#39;s not specifically for Node (in that it&#39;ll work on the client side too), but if you put your feature test in the client, it&#39;s obviously easy for a visitor to hack.</p>
-<p>It&#39;s got tests and it up on github under <a href="https://github.com/remy/feature-gateway">remy/feature-gateway</a> for anyone to learn from or use.</p>
-<h2>Simple example</h2>
-<p>The library I&#39;ve written is extremely simple (and purposely so). It&#39;s used in regular <code>if</code> conditionals, as part of Express routing and inside our Handlebar templates.</p>
-<p>If we have a feature called &quot;ssl-login&quot; that we&#39;re testing, the router might look like this:</p>
-<pre><code>app.get(&#39;/login&#39;, features.route(&#39;ssl-login&#39;), renderSecureLogin);
-app.get(&#39;/login&#39;, showLogin); // the old way</code></pre>
-<p>And an example in a Handlebars template to access the &quot;sandbox&quot; feature:</p>
-<pre><code class="language-handlebars">{{#feature request &quot;sandbox&quot;}}
-  &lt;button&gt;Launch sandbox&lt;/button&gt;
-{{else}}
-  &lt;a href=&quot;/...&quot;&gt;Find out about upcoming Sandbox feature&lt;/a&gt;
-{{/feature}}</code></pre>
-<p>Aside: I&#39;m not 100% happy with the template requiring the <code>request</code> object being passed, but it&#39;s neccessary right now (unless someone can answer my <a href="http://stackoverflow.com/questions/21972729/is-it-possible-to-bind-a-handlebars-helper-before-render-using-express-hbs">SO question</a>) - though I&#39;ve been told that Handlebars 2 might allow a way to bind the helper to objects.</p>
-<p>There&#39;s more examples of actual usage in the <a href="https://github.com/remy/feature-gateway/blob/master/README.md">README</a> for the feature-gateway project.</p>
-<h2>How the feature flag works</h2>
-<p>The feature flag is a gateway to a part of functionality, that tests some particular value, and if true, the user has access to the feature.</p>
-<p>The way JS Bin works is that all our feature tests accept the (http) request object. From here, since in our case, the user&#39;s session is also attached to the request object we can use a wide range of tests:</p>
-<ul>
-<li>Does the logged in user have a &quot;pro&quot; flag on their account?</li>
-<li>Does the request include a specific cookie value?</li>
-<li>Does the request come from a specific IP address or range?</li>
-<li>Is the logged in user part of an alpha test group?</li>
-</ul>
-<h2>Two methods of implementation</h2>
-<p>So far we&#39;ve used them for two specific uses. The first is simple: new features are wrapped in the feature test. For example: adding the ability to create private bins is <em>new</em> functionality.</p>
-<p>The second is quite a bit more complicated: existing functionality is running side-by-side with functionality that&#39;s only accessible via a feature flag. For example <em>changing</em> the way the login &amp; register works requires that the old way still works, whilst the new way can be accessed via the feature flag. I&#39;ll be honest, this can get tricky.</p>
-<h2>Continued development</h2>
-<p>Feature flags seem to be working really well for us on JS Bin, and I&#39;d definitely recommend using them in some way if you can. The obvious next step is tying in some kind of analytics, then A/B testing and then I&#39;m sure more ideas will follow.</p>
 ]]></content:encoded></item></channel></rss>
