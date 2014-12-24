@@ -126,5 +126,14 @@
     "tags": [
       "personal"
     ]
+  },
+  "my-2014": {
+    "title": "My 2014",
+    "date": "2014-12-31 12:0:00",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "personal"
+    ]
   }
 }
