@@ -1,0 +1,95 @@
+<!DOCTYPE html><html id="remysharp-com"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title>VATMOSS: &quot;proof&quot;</title><meta name="description" content="About [code] and all that jazz"><meta name="HandheldFriendly" content="True"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" type="text/css" href="/css/screen.css?2.17"><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.17"><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="drafts-vatmoss-proof-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2014/12/16/vatmoss" title="VATMOSS">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 29-Dec 2014</div><article class="post"><h1 class="title"><a href="/drafts/vatmoss-proof">VATMOSS: &quot;proof&quot;</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/vatmoss-proof.md">(edit)</a></small></h1><div class="post-content">
+<p>To &quot;correctly&quot; apply the right amount of VAT in light of recent EU VAT changes you now only need to capture one piece of proof to support your VAT selection.</p>
+<p>Your options are &quot;simple&quot;, that is, assuming you&#39;re an Internet Service Provider. In reality even for a tech savvy company like myself, the &quot;Five Presumptions for choosing location of residency&quot; are <a href="http://www.vatlive.com/eu-vat-rules/2015-digital-services-moss/location-of-customer-moss-2015/">frankly a joke</a>. The include things like this:</p>
+<blockquote>
+<p>If the services are provided through mobile networks, the customer is presumed to reside in the same country as that of the SIM card code</p>
+</blockquote>
+<p>And how exactly is the web site supposed to get the SIM card code? Sure...</p>
+<h2>The backup</h2>
+<p>The official alternative if you&#39;re not an ISP with insane access to things like whether &quot;services are provided through a fixed landline&quot; or not, is to capture <strong>2 non-conflicting pieces of location data</strong>, then a 3rd piece in case the first two are in conflict.</p>
+<p>However, I believe this to be futile. The first issue is if the first 2 pieces of location data are in conflict, there&#39;s a decent chance that the 3rd piece will also be in conflict, and how you&#39;ve got a bunch of data none of which actually tells you anything.</p>
+<p>More importantly, I believe <strong>if you have the bank location, you shouldn&#39;t need anything else</strong>.</p>
+<h2>The ultimate source of truth</h2>
+<p>Some businesses won&#39;t be able to get the card holder bank origin before actually applying the correct VAT. In this case, then you have to make the assumption based on the &quot;non-conflicting data&quot;.</p>
+<p>However, if you&#39;re using a system like Stripe (as I am), then you get full details about the card data <strong>before</strong> you finalise the transaction cost.</p>
+<p>If the bank that holds the card is based Spain (for instance) then the individual who opened the account must provide proof of citizenship or if it was opened by a business, then the business must legally operate in that country.</p>
+<p>Both of these facts require that the individual or business pay taxes in Spain, and <strong>therefore if the card says it&#39;s registered in Spain, there&#39;s no other option that to charge them Spanish VAT rates</strong>.</p>
+<p>Therefore: if you have the card country origin, you <strong>don&#39;t need anything else</strong>.</p>
+<h2>Example case study</h2>
+<p>Say Jane is British, working and living in Italy for Air Italy (the airline) as a developer and she needs a subscription to my product.</p>
+<p>My product is going to get for 3 pieces of information on purchase of my product:</p>
+<ol>
+<li>The billing address of the debit or credit card used</li>
+<li>Her IP address run against a geoip lookup database (ie. to best guess her location)</li>
+<li>The telephone landline number (using the country code from the phone number)</li>
+</ol>
+<p>As the address the web site asks for, she puts her home address (due to bad web site copy), her company uses proxies for web traffic and the landline number is +39...</p>
+<p>The result is:</p>
+<ol>
+<li>The address resolves to the UK</li>
+<li>IP address resolves to Switerland</li>
+<li>The phone number resolves to Italy</li>
+</ol>
+<p>However, as she pays she has <em>two</em> options:</p>
+<ol>
+<li>Use her personal bank card</li>
+<li>Use the business bank card</li>
+</ol>
+<p>If she uses her personal bank card, the country location is UK, and the money she has in her UK bank account is taxed under UK tax law.</p>
+<p>If she uses her business bard card, then country location it Italy, and the money (in that bank account) is correctly taxed under Italian tax law.</p>
+<p>Making the initial 3 pieces of information utterly redundant, and the card country origin the ultimate source of truth.</p>
+<hr>
+<p>I&#39;ve no idea how, but I&#39;d love to see this proposed to the HMRC and HM Treasury groups that are discussing these problems behind closed doors.</p>
+<p class="update">Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.</p></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.17"></script><script src="/js/index.js?2.17"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body></html>
