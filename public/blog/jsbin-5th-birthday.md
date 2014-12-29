@@ -10,7 +10,7 @@ Late last night Max Ogden posted a [tweet](https://twitter.com/maxogden/status/3
 
 Instantly I thought I'd love to see code for these (but they're all animated gifs) - so I put it to you: **create (js)bins that replicate these visualisations (probably using canvas), and prizes shall be received!**
 
-<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/FywLp/embed#11"></iframe>
+<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="//imgur.com/a/FywLp/embed#11"></iframe>
 
 ### Prizes
 
@@ -45,79 +45,79 @@ And in case you wondered how I picked the winners, here's a video of me doing it
 <p>By <a href="https://twitter.com/thebabydino">Ana Tudor</a> - using nothing but CSS &amp; HTML!</p>
 
 <ul>
-<li><img src="http://i.imgur.com/LKA2W0vs.jpg" alt="http://i.imgur.com/LKA2W0vs.jpg" /> <a href="http://jsbin.com/uzawum/5/edit">solution</a></li>
-<li><img src="http://i.imgur.com/awEIRSEs.jpg" alt="http://i.imgur.com/awEIRSEs.jpg" /> <a href="http://jsbin.com/ezevep/2/edit">solution</a></li>
-<li><img src="http://i.imgur.com/0eC7n05s.jpg" alt="http://i.imgur.com/0eC7n05s.jpg" /> <a href="http://jsbin.com/ikegun/4/edit">solution</a></li>
-<li><img src="http://i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/azewek/10/edit">solution</a></li>
-<li><img src="http://i.imgur.com/sS69ox2s.jpg" alt="http://i.imgur.com/sS69ox2s.jpg" /> <a href="http://jsbin.com/oxipib/6/edit">solution</a></li>
-<li><img src="http://i.imgur.com/RDK9R7Cs.jpg" alt="http://i.imgur.com/RDK9R7Cs.jpg" /> <a href="http://jsbin.com/ufesog/3/edit">solution</a></li>
-<li><img src="http://i.imgur.com/vWJylrBs.jpg" alt="http://i.imgur.com/vWJylrBs.jpg" /> <a href="http://jsbin.com/odoqit/4/edit">solution</a></li>
+<li><img src="//i.imgur.com/LKA2W0vs.jpg" alt="http://i.imgur.com/LKA2W0vs.jpg" /> <a href="http://jsbin.com/uzawum/5/edit">solution</a></li>
+<li><img src="//i.imgur.com/awEIRSEs.jpg" alt="http://i.imgur.com/awEIRSEs.jpg" /> <a href="http://jsbin.com/ezevep/2/edit">solution</a></li>
+<li><img src="//i.imgur.com/0eC7n05s.jpg" alt="http://i.imgur.com/0eC7n05s.jpg" /> <a href="http://jsbin.com/ikegun/4/edit">solution</a></li>
+<li><img src="//i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/azewek/10/edit">solution</a></li>
+<li><img src="//i.imgur.com/sS69ox2s.jpg" alt="http://i.imgur.com/sS69ox2s.jpg" /> <a href="http://jsbin.com/oxipib/6/edit">solution</a></li>
+<li><img src="//i.imgur.com/RDK9R7Cs.jpg" alt="http://i.imgur.com/RDK9R7Cs.jpg" /> <a href="http://jsbin.com/ufesog/3/edit">solution</a></li>
+<li><img src="//i.imgur.com/vWJylrBs.jpg" alt="http://i.imgur.com/vWJylrBs.jpg" /> <a href="http://jsbin.com/odoqit/4/edit">solution</a></li>
 </ul>
 
 
 <p>By <a href="http://twitter.com/seb_ly">Seb Lee-Delise</a>:</p>
 
 <ul>
-<li><img src="http://i.imgur.com/0eC7n05s.jpg" alt="http://i.imgur.com/0eC7n05s.jpg" /> <a href="http://jsbin.com/ekajoc/5/edit">solution</a></li>
-<li><img src="http://i.imgur.com/ItzXHYds.jpg" alt="http://i.imgur.com/ItzXHYds.jpg" /> <a href="http://jsbin.com/avazat/2/edit">solution</a></li>
-<li><img src="http://i.imgur.com/z9Du5yos.jpg" alt="http://i.imgur.com/z9Du5yos.jpg" /> <a href="http://jsbin.com/ovihor/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/zbH9pofs.jpg" alt="http://i.imgur.com/zbH9pofs.jpg" /> <a href="http://jsbin.com/uvecub/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/rgfCtols.jpg" alt="http://i.imgur.com/rgfCtols.jpg" /> <a href="http://jsbin.com/ujopes/3/edit">solution</a></li>
+<li><img src="//i.imgur.com/0eC7n05s.jpg" alt="http://i.imgur.com/0eC7n05s.jpg" /> <a href="http://jsbin.com/ekajoc/5/edit">solution</a></li>
+<li><img src="//i.imgur.com/ItzXHYds.jpg" alt="http://i.imgur.com/ItzXHYds.jpg" /> <a href="http://jsbin.com/avazat/2/edit">solution</a></li>
+<li><img src="//i.imgur.com/z9Du5yos.jpg" alt="http://i.imgur.com/z9Du5yos.jpg" /> <a href="http://jsbin.com/ovihor/1/edit">solution</a></li>
+<li><img src="//i.imgur.com/zbH9pofs.jpg" alt="http://i.imgur.com/zbH9pofs.jpg" /> <a href="http://jsbin.com/uvecub/1/edit">solution</a></li>
+<li><img src="//i.imgur.com/rgfCtols.jpg" alt="http://i.imgur.com/rgfCtols.jpg" /> <a href="http://jsbin.com/ujopes/3/edit">solution</a></li>
 </ul>
 
 
 <p>By <a href="http://twitter.com/alawatthe">@alawatthe</a>:</p>
 
 <ul>
-<li><img src="http://i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/akavad/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/iPJoKj6s.jpg" alt="http://i.imgur.com/iPJoKj6s.jpg" /> <a href="http://jsbin.com/owiqoq/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/UdH39ZXs.jpg" alt="http://i.imgur.com/UdH39ZXs.jpg" /> <a href="http://jsbin.com/amorab/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/Ooag3C6s.jpg" alt="http://i.imgur.com/Ooag3C6s.jpg" /> <a href="http://jsbin.com/iruyus/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/93ryWxfs.jpg" alt="http://i.imgur.com/93ryWxfs.jpg" /> <a href="http://jsbin.com/afofov/2/edit">solution</a></li>
+<li><img src="//i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/akavad/1/edit">solution</a></li>
+<li><img src="//i.imgur.com/iPJoKj6s.jpg" alt="http://i.imgur.com/iPJoKj6s.jpg" /> <a href="http://jsbin.com/owiqoq/1/edit">solution</a></li>
+<li><img src="//i.imgur.com/UdH39ZXs.jpg" alt="http://i.imgur.com/UdH39ZXs.jpg" /> <a href="http://jsbin.com/amorab/1/edit">solution</a></li>
+<li><img src="//i.imgur.com/Ooag3C6s.jpg" alt="http://i.imgur.com/Ooag3C6s.jpg" /> <a href="http://jsbin.com/iruyus/1/edit">solution</a></li>
+<li><img src="//i.imgur.com/93ryWxfs.jpg" alt="http://i.imgur.com/93ryWxfs.jpg" /> <a href="http://jsbin.com/afofov/2/edit">solution</a></li>
 </ul>
 
 
 <p>By <a href="https://twitter.com/loktar00">Jason Brown</a>:</p>
 
 <ul>
-<li><img src="http://i.imgur.com/S1TWW4vs.jpg" alt="http://i.imgur.com/S1TWW4vs.jpg" /> <a href="http://jsbin.com/uxisus/4/edit">solution</a></li>
-<li><img src="http://i.imgur.com/rTtr4fEs.jpg" alt="http://i.imgur.com/rTtr4fEs.jpg" /> <a href="http://jsbin.com/akorem/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/uiaAeb7s.jpg" alt="http://i.imgur.com/uiaAeb7s.jpg" /> <a href="http://jsbin.com/ojiwex/2/edit">solution</a></li>
-<li><img src="http://i.imgur.com/9uGXXpbs.jpg" alt="http://i.imgur.com/9uGXXpbs.jpg" /> <a href="http://jsbin.com/oFoZaJe/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/9vwaC6ls.jpg" alt="http://i.imgur.com/9vwaC6ls.jpg" /> <a href="http://jsbin.com/ajimeho/2/edit?js,output">solution</a></li>
+<li><img src="//i.imgur.com/S1TWW4vs.jpg" alt="http://i.imgur.com/S1TWW4vs.jpg" /> <a href="http://jsbin.com/uxisus/4/edit">solution</a></li>
+<li><img src="//i.imgur.com/rTtr4fEs.jpg" alt="http://i.imgur.com/rTtr4fEs.jpg" /> <a href="http://jsbin.com/akorem/1/edit">solution</a></li>
+<li><img src="//i.imgur.com/uiaAeb7s.jpg" alt="http://i.imgur.com/uiaAeb7s.jpg" /> <a href="http://jsbin.com/ojiwex/2/edit">solution</a></li>
+<li><img src="//i.imgur.com/9uGXXpbs.jpg" alt="http://i.imgur.com/9uGXXpbs.jpg" /> <a href="http://jsbin.com/oFoZaJe/1/edit">solution</a></li>
+<li><img src="//i.imgur.com/9vwaC6ls.jpg" alt="http://i.imgur.com/9vwaC6ls.jpg" /> <a href="http://jsbin.com/ajimeho/2/edit?js,output">solution</a></li>
 </ul>
 
 
 <p>By <a href="https://twitter.com/chinchang457">Kushagra Gour</a>:</p>
 
 <ul>
-<li><img src="http://i.imgur.com/ueYvu8is.jpg" alt="http://i.imgur.com/ueYvu8is.jpg" /> <a href="http://jsbin.com/uLoJuda/1/edit">solution</a></li>
-<li><img src="http://i.imgur.com/59VBDWts.jpg" alt="http://i.imgur.com/59VBDWts.jpg" /> <a href="http://jsbin.com/uyOcUgA/5/edit">solution</a></li>
-<li><img src="http://i.imgur.com/kzRu0V5s.jpg" alt="http://i.imgur.com/kzRu0V5s.jpg" /> <a href="http://jsbin.com/aliBUWo/13/edit">solution</a></li>
-<li><img src="http://i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/uXudoNA/2/edit">solution</a></li>
-<li><img src="http://i.imgur.com/iGkKiOus.jpg" alt="http://i.imgur.com/iGkKiOus.jpg" /> <a href="http://jsbin.com/isUz/4/edit">solution</a></li>
-<li><img src="http://i.imgur.com/RDK9R7Cs.jpg" alt="http://i.imgur.com/RDK9R7Cs.jpg" /> <a href="http://jsbin.com/erAG/14/edit">solution</a></li>
+<li><img src="//i.imgur.com/ueYvu8is.jpg" alt="http://i.imgur.com/ueYvu8is.jpg" /> <a href="http://jsbin.com/uLoJuda/1/edit">solution</a></li>
+<li><img src="//i.imgur.com/59VBDWts.jpg" alt="http://i.imgur.com/59VBDWts.jpg" /> <a href="http://jsbin.com/uyOcUgA/5/edit">solution</a></li>
+<li><img src="//i.imgur.com/kzRu0V5s.jpg" alt="http://i.imgur.com/kzRu0V5s.jpg" /> <a href="http://jsbin.com/aliBUWo/13/edit">solution</a></li>
+<li><img src="//i.imgur.com/a26308ns.jpg" alt="http://i.imgur.com/a26308ns.jpg" /> <a href="http://jsbin.com/uXudoNA/2/edit">solution</a></li>
+<li><img src="//i.imgur.com/iGkKiOus.jpg" alt="http://i.imgur.com/iGkKiOus.jpg" /> <a href="http://jsbin.com/isUz/4/edit">solution</a></li>
+<li><img src="//i.imgur.com/RDK9R7Cs.jpg" alt="http://i.imgur.com/RDK9R7Cs.jpg" /> <a href="http://jsbin.com/erAG/14/edit">solution</a></li>
 </ul>
 
 
 <p>By <a href="https://twitter.com/msvaljek">Marko Švaljek</a>:</p>
 
 <ul>
-<li><img src="http://i.imgur.com/CuzTPTRs.jpg" alt="http://i.imgur.com/CuzTPTRs.jpg" /> <a href="http://jsbin.com/idIXaDe/4/edit?html,js,output">solution</a></li>
-<li><img src="http://i.imgur.com/LlpGldrs.jpg" alt="http://i.imgur.com/LlpGldrs.jpg" /> <a href="http://jsbin.com/EGOfaxI/1/edit?js,output">solution</a></li>
-<li><img src="http://i.imgur.com/4ibsGlIs.jpg" alt="http://i.imgur.com/4ibsGlIs.jpg" /> <a href="http://jsbin.com/EnOXuh/4/edit?js,output">solution</a></li>
+<li><img src="//i.imgur.com/CuzTPTRs.jpg" alt="http://i.imgur.com/CuzTPTRs.jpg" /> <a href="http://jsbin.com/idIXaDe/4/edit?html,js,output">solution</a></li>
+<li><img src="//i.imgur.com/LlpGldrs.jpg" alt="http://i.imgur.com/LlpGldrs.jpg" /> <a href="http://jsbin.com/EGOfaxI/1/edit?js,output">solution</a></li>
+<li><img src="//i.imgur.com/4ibsGlIs.jpg" alt="http://i.imgur.com/4ibsGlIs.jpg" /> <a href="http://jsbin.com/EnOXuh/4/edit?js,output">solution</a></li>
 </ul>
 
 
 <p>Others:</p>
 
 <ul>
-<li><img src="http://i.imgur.com/beZsUves.jpg" alt="http://i.imgur.com/beZsUves.jpg" /> <a href="http://jsbin.com/irisag/2/edit">solution</a> by <a href="https://twitter.com/shovemedia">Jon Williams</a></li>
-<li><img src="http://i.imgur.com/LFFz3abs.jpg" alt="http://i.imgur.com/LFFz3abs.jpg" /> <a href="http://jsbin.com/iruquq/20/edit">solution</a> by <a href="https://twitter.com/robaldred">Rob Aldred</a></li>
-<li><img src="http://i.imgur.com/fso6HEMs.jpg" alt="http://i.imgur.com/fso6HEMs.jpg" /> <a href="http://jsbin.com/ugAfUVI/1/edit">solution</a> by <a href="https://twitter.com/jackrugile">Jack Rugile</a></li>
-<li><img src="http://i.imgur.com/OjcHC4ks.jpg" alt="http://i.imgur.com/OjcHC4ks.jpg" /> <a href="http://jsbin.com/udelemo/3/edit">solution</a> by <a href="https://twitter.com/Aptary">Ed Ball</a></li>
-<li><img src="http://i.imgur.com/ItzXHYds.jpg" alt="http://i.imgur.com/ItzXHYds.jpg" /> <a href="http://jsbin.com/ePaXEzO/6/edit?js,output">solution</a> by <a href="https://twitter.com/rrrrrrichard">Richard Icke</a></li>
-<li><img src="http://i.imgur.com/JXbWegds.jpg" alt="http://i.imgur.com/JXbWegds.jpg" /> <a href="http://jsbin.com/Evitomu/1/edit?css,output">solution</a> by <a href="https://twitter.com/rafaelcastrocou">Rafael Couto</a></li>
+<li><img src="//i.imgur.com/beZsUves.jpg" alt="http://i.imgur.com/beZsUves.jpg" /> <a href="http://jsbin.com/irisag/2/edit">solution</a> by <a href="https://twitter.com/shovemedia">Jon Williams</a></li>
+<li><img src="//i.imgur.com/LFFz3abs.jpg" alt="http://i.imgur.com/LFFz3abs.jpg" /> <a href="http://jsbin.com/iruquq/20/edit">solution</a> by <a href="https://twitter.com/robaldred">Rob Aldred</a></li>
+<li><img src="//i.imgur.com/fso6HEMs.jpg" alt="http://i.imgur.com/fso6HEMs.jpg" /> <a href="http://jsbin.com/ugAfUVI/1/edit">solution</a> by <a href="https://twitter.com/jackrugile">Jack Rugile</a></li>
+<li><img src="//i.imgur.com/OjcHC4ks.jpg" alt="http://i.imgur.com/OjcHC4ks.jpg" /> <a href="http://jsbin.com/udelemo/3/edit">solution</a> by <a href="https://twitter.com/Aptary">Ed Ball</a></li>
+<li><img src="//i.imgur.com/ItzXHYds.jpg" alt="http://i.imgur.com/ItzXHYds.jpg" /> <a href="http://jsbin.com/ePaXEzO/6/edit?js,output">solution</a> by <a href="https://twitter.com/rrrrrrichard">Richard Icke</a></li>
+<li><img src="//i.imgur.com/JXbWegds.jpg" alt="http://i.imgur.com/JXbWegds.jpg" /> <a href="http://jsbin.com/Evitomu/1/edit?css,output">solution</a> by <a href="https://twitter.com/rafaelcastrocou">Rafael Couto</a></li>
 </ul>
 
 
