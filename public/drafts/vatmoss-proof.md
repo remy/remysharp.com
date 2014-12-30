@@ -12,7 +12,7 @@ These presumptions are utterly useless to any normal small business running a we
 
 The proof required for any web site selling digital products or services is 2 pieces of data, but if these are in conflict (i.e. the country doesn't match up) then you'll need a 3rd.
 
-This is actually a bit of joke, because if the 3rd is also in conflict, you need another until you do actually have to items of data that resolves to a single country.
+This is actually a bit of joke, because if the 3rd is also in conflict, you need another until you do actually have two items of data that resolves to a single country.
 
 The suggestions of what this can be are actually a bit wishy-washy. You're fine if your first 2 items match, but getting a 3rd is the problem.
 
