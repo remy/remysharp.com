@@ -130,7 +130,7 @@
   "my-2014": {
     "title": "My 2014",
     "date": "2014-12-31 12:00:00",
-    "complete": false,
+    "complete": true,
     "inprogress": true,
     "tags": [
       "personal"
