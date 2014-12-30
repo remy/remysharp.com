@@ -1,4 +1,68 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 16 Dec 2014 11:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>VATMOSS</title><guid isPermaLink="false">vatmoss</guid><link>http://remysharp.com/2014/12/16/vatmoss</link><pubDate>Tue, 16 Dec 2014 11:00:00 +0000</pubDate><description><![CDATA[If you want a good foundation of understand for VATMOSS, then I highly recommend reading Rachel Andrew&#39;s posts.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 30 Dec 2014 12:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>VATMOSS: the misunderstanding of &quot;proof&quot;</title><guid isPermaLink="false">vatmoss-proof</guid><link>http://remysharp.com/2014/12/30/vatmoss-proof</link><pubDate>Tue, 30 Dec 2014 12:00:00 +0000</pubDate><description><![CDATA[When you apply EU VAT, you need to be sure of your customer&#39;s EU state. Indeed, you&#39;ll be asked for two non-conflicting pieces of proof. I&#39;m unsure if this is a VATMOSS thing or EU VAT, but it doesn&#39;t really matter.
+There was a recent clarification allowing companies to use one of five presumptions for choosing location of residency, but when I asked Rachel Andrew&#39;s opinion of the first draft of this post, she pointed out that the presumptions are for fixed lined services only (referring to notes that I can&#39;t see), but she&#39;s right.]]></description><content:encoded><![CDATA[
+<p>When you apply EU VAT, you need to be sure of your customer&#39;s EU state. Indeed, you&#39;ll be asked for <strong>two non-conflicting pieces of proof</strong>. I&#39;m unsure if this is a VATMOSS thing or EU VAT, but it doesn&#39;t really matter.</p>
+<p>There was a recent clarification allowing companies to use one of <a href="http://www.vatlive.com/eu-vat-rules/2015-digital-services-moss/location-of-customer-moss-2015/">five presumptions for choosing location of residency</a>, but when I asked Rachel Andrew&#39;s opinion of the first draft of this post, she pointed out that the presumptions are for <em>fixed lined services</em> only (referring to notes that I can&#39;t see), but she&#39;s right.</p>
+<p>These presumptions are utterly useless to any normal small business running a web site. In fact, I&#39;d argue that any service that can ascertain whether their customer is connected using a fixed land line or a mobile network (i.e. an ISP, Telecom provider or broadcaster) is not &quot;mini&quot; enough for a Mini One Stop Shop.</p>
+<h2>2 non-conflicting pieces of location data</h2>
+<p>The proof required for any web site selling digital products or services is 2 pieces of data, but if these are in conflict (i.e. the country doesn&#39;t match up) then you&#39;ll need a 3rd.</p>
+<p>This is actually a bit of joke, because if the 3rd is also in conflict, you need another until you do actually have two items of data that resolves to a single country.</p>
+<p>The suggestions of what this can be are actually a bit wishy-washy. You&#39;re fine if your first 2 items match, but getting a 3rd is the problem.</p>
+<p>Here are the suggestions from HMRC:</p>
+<blockquote>
+<p>Any two pieces of non-contradictory evidence such as, IP address, bank account address or SIM card identifier code will suffice. – @HMRCcustomers</p>
+</blockquote>
+<p><em><a href="https://twitter.com/HMRCcustomers/status/537996346838761472">Source: Twitter, November 27, 2014</a></em></p>
+<p>This has been further clarified by others to this list (which you&#39;ll see most posts suggesting):</p>
+<p>Let&#39;s separate this list into what we can feasibly collect before the transaction occurs.</p>
+<h3>Available before</h3>
+<ul>
+<li>The billing address of the customer</li>
+<li>The Internet Protocol (IP) address of the device used by the customer</li>
+<li>Other commercially relevant information (for example, product coding information which electronically links the sale to a particular jurisdiction)</li>
+</ul>
+<p>&quot;Other commercially relevant information&quot; is hand-wavy for &quot;anything else&quot;. This is very, <em>very</em> specific to the product type. If your product has some kind of localised version or link to a particular jurisdiction, then great. However, <strong>most services will only have the first two options available</strong>.</p>
+<h3>Available after</h3>
+<p>That leaves the following available <em>after</em> the customer has completed the transaction (though technically they can be collected before the transaction executes).</p>
+<ul>
+<li>The country code of SIM card used by the customer</li>
+<li>The location of the customer&#39;s fixed land line through which the service is supplied</li>
+<li>Location of the bank</li>
+</ul>
+<p>SIM card is only available if you implement an extra SMS verification process (<a href="https://dashboard.taxamo.com/apidocs/api/v1/verification/docs.html">Taxamo provide this as extra service</a>) - but it&#39;s a rare to have this technology available, plus the technical expertise to implement puts this out of reach for most small businesses.</p>
+<p>Knowledge of the customer&#39;s fixed land line will <em>never</em> be available to web sites (again, this is fixed line services as mentioned at the start of this post).</p>
+<p>So we&#39;re left with &quot;location of the bank&quot;. I believe <strong>if you have the bank location, you shouldn&#39;t need anything else</strong>.</p>
+<h2>Example case study</h2>
+<p>Jane living in the UK, working for Italian company Air Italy (the airline) as a developer and she needs a subscription to my product.</p>
+<p>My product is going to get for 3 pieces of information on purchase of my product:</p>
+<ol>
+<li>The billing address of the debit or credit card used</li>
+<li>Her IP address run against a geoip lookup database (ie. to best guess her location)</li>
+<li>The telephone landline number (using the country code from the phone number)</li>
+</ol>
+<p>As the address the web site asks for, she puts the company head office address (she&#39;s guessing and assuming that this is actually the billing address, but she&#39;s unsure), her company uses a VPN to access the internet through their ISP and the landline number is +44...</p>
+<p>The result is:</p>
+<ol>
+<li>The billing address resolves to Italy</li>
+<li>IP address resolves to Switerland (equally Jane could be travelling)</li>
+<li>The phone number resolves to the UK</li>
+</ol>
+<p>However, as she pays she has <em>two</em> options:</p>
+<ol>
+<li>Use her personal bank card</li>
+<li>Use the business bank card</li>
+</ol>
+<p>If she uses her personal bank card, the country location is UK, and the money she has in her UK bank account is taxed under UK tax law.</p>
+<p>If she uses her business bard card, then country location it Italy, and the money (in that bank account) is correctly taxed under Italian tax law.</p>
+<p>Making the initial 3 pieces of information utterly redundant, and the card country origin the ultimate source of truth.</p>
+<h2>The ultimate source of truth</h2>
+<p>Some businesses won&#39;t be able to get the card holder bank origin before actually applying the correct VAT. In this case, then you have to make the assumption based on the non-conflicting data.</p>
+<p>However, if you&#39;re using a system like Stripe (as I am), then you get full details about the card data <strong>before</strong> you finalise the transaction cost.</p>
+<p>If the bank that holds the card is based Italy (for instance) then the individual who opened the account must provide proof of citizenship to their Italian bank or if it was opened by a business, then the business must legally operate in that country.</p>
+<p>Both of these facts require that the individual or business pay taxes in Italy, and <strong>therefore if the card says it&#39;s registered in Italy, there&#39;s no other option that to charge them Italian VAT rates</strong>.</p>
+<p>Therefore: if you have the card country origin, you <strong>don&#39;t need anything else</strong>.</p>
+<hr>
+<p>I&#39;ve no idea how, but I&#39;d love to see this proposed to the HMRC and HM Treasury groups that are discussing these problems behind closed doors.</p>
+]]></content:encoded></item><item><title>VATMOSS</title><guid isPermaLink="false">vatmoss</guid><link>http://remysharp.com/2014/12/16/vatmoss</link><pubDate>Tue, 16 Dec 2014 11:00:00 +0000</pubDate><description><![CDATA[If you want a good foundation of understand for VATMOSS, then I highly recommend reading Rachel Andrew&#39;s posts.
 That said, having read as much as I can around the web, I still don&#39;t feel like I have a good handle on this thing, but I&#39;m posting this, partly to flesh out my thoughts, help others in the same situation, and probably rant.
 We have to be VATMOSS ready by 1-Jan 2015. That&#39;s just over 2 weeks away.]]></description><content:encoded><![CDATA[
 <p>If you want a good foundation of understand for VATMOSS, then I highly recommend reading <a href="http://rachelandrew.co.uk/archives/tag/vat">Rachel Andrew&#39;s posts</a>.</p>
@@ -1522,24 +1586,4 @@ being called from. The nice thing is it works in the browser <em>and</em> in nod
 <p>All the code is doing is rewriting the <code>log</code> and <code>warn</code> methods and appending the location of the call at the end of the log. Note that I&#39;m not overloading the <code>error</code> method because it comes with it&#39;s own stacktrace.</p>
 <p>The location of the call is deduced using <code>new Error</code>, then looking at the <code>stack</code> property (disclaimer: this won&#39;t work in <em>all</em> browsers - I&#39;ve only tested in Firefox, Chrome and Node).</p>
 <p>Simple. Now I can hunt down those rogue logs and remove them from the codebase.</p>
-]]></content:encoded></item><item><title>On Chrome hiding URLs to protect users from phishing</title><guid isPermaLink="false">on-chrome-hiding-urls-to-protect-users-from-phishing</guid><link>http://remysharp.com/2014/05/04/on-chrome-hiding-urls-to-protect-users-from-phishing</link><pubDate>Sun, 04 May 2014 19:10:46 +0000</pubDate><description><![CDATA[Jake and Jeremy have posted about how chrome is experimenting with a way to protect users from phishing. Jake is pro the approach, Jeremy against. Read their posts: Jake&#39;s and Jeremy&#39;s.]]></description><content:encoded><![CDATA[
-<p>Jake and Jeremy have posted about how chrome is experimenting with a way to protect users from phishing. Jake is pro the approach, Jeremy against. Read their posts: <a href="http://jakearchibald.com/2014/improving-the-url-bar/">Jake&#39;s</a> and <a href="http://adactio.com/journal/6779/">Jeremy&#39;s</a>.</p>
-<p><em>Please note, this post is unedited – and written on a tablet!</em></p>
-<p>What I&#39;m posting is a proposal for an alternative approach (that I couldn&#39;t fit, and didn&#39;t want to fit into 140 characters!).</p>
-<p>Instead of hiding the URL entirely, take the lead from what exist now (the path is semi-opaque), <strong>but in addition the subdomain is truncated</strong> and dimmed the same way long paths are. </p>
-<p>The point is to get the <em>actual domain</em> across to the visitor, so how about this for a solution:</p>
-<p><img src="http://remysharp.com/images/jake-evil-better.png" alt="http://remysharp.com/images/jake-evil-better.png"></p>
-<p>Note that the URL is shown in the browser tab (because in this example, there&#39;s no <code>title</code> element), this should also be used to highlight the actual domain, and not default to showing the full URL.</p>
-<p>When compared to the current situation:</p>
-<p><img src="http://remysharp.com/images/jake-evil.png" alt="http://remysharp.com/images/jake-evil.png"></p>
-<p>The change (which I&#39;d expect across all Chrome browsers, i.e. mobile too) is:</p>
-<ul>
-<li>Semi-opaque pathname</li>
-<li>Semi-opaque subdomains (cname)</li>
-<li>Truncate long paths to ellipsis</li>
-<li><strong>Truncate any preceding subdomains with ellipsis (with sensible defaults, like it would show <code>www</code> or perhaps the final subdomain fragment)</strong></li>
-<li>When the <code>title</code> element is missing, match the text displayed in the tab title to the truncated URL shown in the URL bar.</li>
-</ul>
-<p>I&#39;ll note that most browsers already highlight the domain part of the URL, but the point I&#39;m trying to make with my proposed mockup, is that everything before the domain (the jakearchibald.com part), <strong>should be truncated <em>as well as</em> dimmed</strong>.</p>
-<p>Perhaps this is a strong enough move to make clear to visitors exactly what URL they&#39;re on, whilst still communicating that they&#39;re visiting a specific URL and not just the root of the domain.</p>
 ]]></content:encoded></item></channel></rss>
