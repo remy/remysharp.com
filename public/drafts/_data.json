@@ -127,15 +127,6 @@
       "personal"
     ]
   },
-  "my-2014": {
-    "title": "My 2014",
-    "date": "2014-12-31 12:00:00",
-    "complete": true,
-    "inprogress": true,
-    "tags": [
-      "personal"
-    ]
-  },
   "horse-and-cart": {
     "title": "Maybe the Horse Before the Cart",
     "date": "2014-01-02 12:00:00",
