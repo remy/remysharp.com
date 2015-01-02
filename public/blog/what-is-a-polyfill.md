@@ -38,7 +38,7 @@ A polyfill can be used to [plug the support](http://gist.github.com/350433) for 
 
 Now with the polyfiller in place, as a developer I can rely on using the Web Storage API (for sessions) and not have to feature test in my code or fork to handle different situations. 
 
-Another example is providing canvas support in IE. This is really where the *poly* part can be seen. If there's no native canvas, we can provide [canvas support using Silverlight](http://blogs.msdn.com/b/delay/archive/2009/08/24/using-one-platform-to-build-another-html-5-s-canvas-tag-implemented-using-silverlight.aspx). If Silverlight isn't available, we can drop down to using VML using [excanvas](http://code.google.com/p/explorercanvas/) (note that excanvas actually does also include a Silverlight bridge which I'd expect it would try first anyway). Using these two scripts provides the developers with (faily) solid canvas backup should it not be native in the browser. 
+Another example is providing canvas support in IE. This is really where the *poly* part can be seen. If there's no native canvas, we can provide [canvas support using Silverlight](http://blogs.msdn.com/b/delay/archive/2009/08/24/using-one-platform-to-build-another-html-5-s-canvas-tag-implemented-using-silverlight.aspx). If Silverlight isn't available, we can drop down to using VML using [excanvas](http://code.google.com/p/explorercanvas/) (note that excanvas actually does also include a Silverlight bridge which I'd expect it would try first anyway). Using these two scripts provides the developers with a (fairly) solid canvas backup should it not be native in the browser. 
 
 # Where it's from and where it's going
 
