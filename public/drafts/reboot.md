@@ -20,14 +20,6 @@ I've been working on the web professionally since 1999 (and several years before
 
 Often when I've been brought in to review existing code along with the review I'll do my best to impart the techniques and tools I used to review, diagnose and fix. My aim isn't to swoop in and amaze, it's to help your team and help validate their skills.
 
-## Disruption
-
-I've spent the last three years (or more, I forget) working from an office space that I rented, so I've been out of this solo game for a while.
-
-As always with my business, my personal life comes first (I've spent my 10 years where work came first), and so my biggest concern (beyond my family, which is always first) is maintaining my gym attendance and even more importantly: my diet (what I eat, rather than "dieting").
-
-Disruption to routine is always a killer, so this is the thing I fear most, and I want to crack the routine quickly!
-
 ## What's next?
 
 [Get in touch](http://leftlogic.com/contact) if you want to discuss a project or idea.
