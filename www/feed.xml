@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Wed, 31 Dec 2014 12:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>My 2014</title><guid isPermaLink="false">my-2014</guid><link>http://remysharp.com/2014/12/31/my-2014</link><pubDate>Wed, 31 Dec 2014 12:00:00 +0000</pubDate><description><![CDATA[As with previous years (barring 2008, oddly), I&#39;ve tried to wrap up the highlights of my year for future Remy&#39;s reading pleasure.]]></description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 05 Jan 2015 16:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Reboot</title><guid isPermaLink="false">reboot</guid><link>http://remysharp.com/2015/01/05/reboot</link><pubDate>Mon, 05 Jan 2015 16:00:00 +0000</pubDate><description><![CDATA[The last year I&#39;ve made a conscious effort to focus development efforts in JS Bin, and that&#39;s exactly what I did for over 8 months.
+I had the great pleasure of hiring Giulia Alfonsi and Fabien O&#39;Carroll. Giulia&#39;s contracted ended after 6 months and Fabien is now headed to greener pastures.
+So now I have a 4 person office to myself. With that burning a hole in the business pocket, I&#39;ve decided to completely reboot my business.
+I&#39;m shutting down the office and returning to solo working and surfing from co-working space to coffee shops with the aim of working on hugely diverse projects and contributing more to the web community via blogging, videos and training.
+Exciting next opportunities
+Starting in January 2015, I&#39;ll continue to work alone again, tinkering in side projects, but more importantly, returning to client development, consultancy and training.
+This means that I can be more nimble in my client work, jumping from project to project and working on all kinds of things (previously it ranged from Christmas Google Map projects, to WebRTC demos, to Node &amp; WebSocket based games, to JavaScript reviews and training).
+Why you&#39;d hire me
+I&#39;ve been working on the web professionally since 1999 (and several years before that on personal experiments) and I believe that length of experience is a major contributor to my skills. Often I was thrown into unknown (technical) waters, and it was sink or swim with nothing in between. From that I know my work always focuses towards practicality over perfection.
+Often when I&#39;ve been brought in to review existing code along with the review I&#39;ll do my best to impart the techniques and tools I used to review, diagnose and fix. My aim isn&#39;t to swoop in and amaze, it&#39;s to help your team and help validate their skills.
+What&#39;s next?
+Get in touch if you want to discuss a project or idea.
+I&#39;m going to continue to invest in JS Bin and I&#39;ll be launching Confwall in the next few weeks, a commercial offering of a conference wall with tweets, schedule and announcements.
+Beyond that, like I said, I&#39;ll be blogging and posting more technical videos in the coming year.]]></description><content:encoded><![CDATA[
+<p>The last year I&#39;ve made a conscious effort to focus development efforts in JS Bin, and that&#39;s exactly what I did for over 8 months.</p>
+<p>I had the great pleasure of hiring Giulia Alfonsi and Fabien O&#39;Carroll. Giulia&#39;s contracted ended after 6 months and Fabien is now headed to greener pastures.</p>
+<p>So now I have a 4 person office to myself. With that burning a hole in the business pocket, I&#39;ve decided to completely reboot my business.</p>
+<p>I&#39;m shutting down the office and returning to solo working and surfing from co-working space to coffee shops with the aim of working on hugely diverse projects and contributing more to the web community via blogging, videos and training.</p>
+<h2>Exciting next opportunities</h2>
+<p>Starting in January 2015, I&#39;ll continue to work alone again, tinkering in side projects, but more importantly, returning to client development, consultancy and training.</p>
+<p>This means that I can be more nimble in my client work, jumping from project to project and working on all kinds of things (previously it ranged from Christmas Google Map projects, to WebRTC demos, to Node &amp; WebSocket based games, to JavaScript reviews and training).</p>
+<h2>Why you&#39;d hire me</h2>
+<p>I&#39;ve been working on the web professionally since 1999 (and several years before that on personal experiments) and I believe that length of experience is a major contributor to my skills. Often I was thrown into unknown (technical) waters, and it was sink or swim with nothing in between. From that I know my work always focuses towards practicality over perfection.</p>
+<p>Often when I&#39;ve been brought in to review existing code along with the review I&#39;ll do my best to impart the techniques and tools I used to review, diagnose and fix. My aim isn&#39;t to swoop in and amaze, it&#39;s to help your team and help validate their skills.</p>
+<h2>What&#39;s next?</h2>
+<p><a href="http://leftlogic.com/contact">Get in touch</a> if you want to discuss a project or idea.</p>
+<p>I&#39;m going to continue to invest in JS Bin and I&#39;ll be launching <a href="http://confwall.com">Confwall</a> in the next few weeks, a commercial offering of a conference wall with tweets, schedule and announcements.</p>
+<p>Beyond that, like I said, I&#39;ll be blogging and posting more technical videos in the coming year.</p>
+]]></content:encoded></item><item><title>My 2014</title><guid isPermaLink="false">my-2014</guid><link>http://remysharp.com/2014/12/31/my-2014</link><pubDate>Wed, 31 Dec 2014 12:00:00 +0000</pubDate><description><![CDATA[As with previous years (barring 2008, oddly), I&#39;ve tried to wrap up the highlights of my year for future Remy&#39;s reading pleasure.]]></description><content:encoded><![CDATA[
 <p>As with previous years (barring 2008, oddly), I&#39;ve tried to wrap up the highlights of my year for future Remy&#39;s reading pleasure.</p>
 <h2>Professional</h2>
 <p>This year has been a mixed bag from a professional stand point, mostly revolving around JS Bin.</p>
@@ -1565,74 +1593,4 @@ The problem was: exactly when was he waking, because it would affect how tired h
 <li>A free pass to the following year of Full Frontal, and for evermore part of our growing and much loved speaker alumni</li>
 </ul>
 <p>So I hope to hear from you soon!</p>
-]]></content:encoded></item><item><title>CommonJS modules with live edit in devtools</title><guid isPermaLink="false">commonjs-with-devtools-live-edit</guid><link>http://remysharp.com/2014/05/30/commonjs-with-devtools-live-edit</link><pubDate>Fri, 30 May 2014 12:07:56 +0000</pubDate><description><![CDATA[As you might know, I&#39;m a big fan of Chrome devtools&#39; live edit and workspaces (video playlist), and it&#39;s this workflow that&#39;s kept me away from Browserify. 
-So I went about creating an experiment that allowed me to use CommonJS modules in development and that allowed me to edit and save directly in devtools without a build step.]]></description><content:encoded><![CDATA[
-<p>As you might know, I&#39;m a big fan of <a href="http://www.youtube.com/playlist?list=PLXmT1r4krsTq7w7hDV6zfirrs4NJlzJX5">Chrome devtools&#39; live edit and workspaces</a> (video playlist), and it&#39;s this workflow that&#39;s kept me away from <a href="http://browserify.org">Browserify</a>. </p>
-<p>So I went about creating an experiment that allowed me to use CommonJS modules in development <em>and</em> that allowed me to edit and save directly in devtools <em>without</em> a build step.</p>
-<h2>Some context</h2>
-<p>As far as I know, Browserify is the bees knees for using CommonJS modules in the client side. However, it&#39;s also got a build step. I know it supports sourcemaps, but I&#39;ve personally had mixed (about 20%) success with sourcemaps, and particularly when it comes to saving directly in devtools.</p>
-<p>I&#39;m happy with a build step for production, but not in dev. I want to know the files I&#39;m working with are being saved to disk without any extra steps.</p>
-<p>It&#39;s entirely possible I&#39;ve reinvented the wheel here (feel free to point me in the right direction!).</p>
-<p>So...I had a go at re-inventing the <code>require</code> method...</p>
-<h2>Demo</h2>
-<p>For your viewing pleasure, here&#39;s the experiment using my dev require.js. It supports CommonJS modules. I&#39;ve only tested a few levels deep, and it&#39;s <em>only</em> for client side code.</p>
-<p>The main requirements were to ensure:</p>
-<ol>
-<li>Line numbers in the console mapped correctly to the line in the file</li>
-<li>Saving the file would commit the save to disk</li>
-<li>Saving the file would update memory</li>
-</ol>
-<p>These <em>kinda</em> work as you&#39;ll see in the video.</p>
-<iframe width="1280" height="720" src="//www.youtube.com/embed/uHxxcnJi4BE?rel=0" frameborder="0" allowfullscreen></iframe>
-
-<h2>How it works</h2>
-<p>Pretty simple (and stupid) really, require.js is just this:</p>
-<pre><code>function require(path) {
-  var xhr = new XMLHttpRequest();
-
-  if (path[0] === &#39;.&#39;) {
-    path = path.substr(2);
-  }
-
-  path += &#39;.js&#39;;
-
-  var module = {
-    exports: {}
-  };
-
-  xhr.open(&#39;GET&#39;, path, false); // sync
-  xhr.send();
-
-  var code = xhr.responseText;
-
-  if (code.indexOf(&#39;//# sourceURL&#39;) === -1) {
-    code += &#39;\n\n//# sourceURL=&#39; + path;
-  }
-
-  eval(code);
-
-  return module.exports;
-}</code></pre>
-<p>The code boils down to:</p>
-<ol>
-<li>Make an <em>synchronous</em> XHR call to the script</li>
-<li>Insert a <code>sourceURL</code> in the code so devtools knows what file it was</li>
-<li>Create a <code>module</code> object in scope</li>
-<li>Then eval and return the updated <code>module.exports</code></li>
-</ol>
-<p>Pretty filthy really. Also obviously missing the require path resolution.</p>
-<p>I&#39;ve created a little repo with the <a href="https://github.com/remy/require-for-dev">code I used in the demo on github</a> too.</p>
-<h2>Known and potential issues</h2>
-<ul>
-<li>Using the <code>setInterval</code> you may have noticed in foo.js, when changing the code, devtools loses access to the <code>app</code> variable. Unsure why.</li>
-<li>Using Workspaces is a no-no, it seems to get really confused and <em>very</em> sticky about what&#39;s in memory (i.e. the file shown in sources does not match what&#39;s being run)</li>
-<li>The full require resolution isn&#39;t implemented at all (so only relative URLs are loaded)</li>
-<li>Saving the file in devtools will insert the <code>sourceURL</code> in the file permanently</li>
-<li>I&#39;m not 100% of the security of the modules - in fact I&#39;m pretty sure (since they&#39;re not running inside a new document context) that there would be namespace collision (which is kind of the point of CommonJS to avoid!!!)</li>
-<li>Probably a lot more potential issues - like I said, this is an <em>experiment</em>!</li>
-</ul>
-<h2>Does it really work?</h2>
-<p>I&#39;m not sure. It&#39;s not perfect, and I&#39;m not 100% sure it&#39;s 100% usable...so I&#39;m classing this as a failed experiment.</p>
-<p>I thought about seeing if I could make an iframe on the fly, and inject the content, but the iframe would have to be appended to the document to execute the code, and the code is only executed on the &quot;next tick&quot;, i.e. <em>after</em> the <code>return module.exports</code> so the module would be loaded, but the code would not. Poop.</p>
-<p>On the upside, I figured it was worth sharing, because some bright mind might just solve the memory linking issues that I&#39;m seeing or create some clever work around.</p>
 ]]></content:encoded></item></channel></rss>
