@@ -118,15 +118,6 @@
       "web"
     ]
   },
-  "reboot": {
-    "title": "Reboot",
-    "date": "2014-12-03 11:30:00",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "personal"
-    ]
-  },
   "horse-and-cart": {
     "title": "Maybe the Horse Before the Cart",
     "date": "2014-01-02 12:00:00",
