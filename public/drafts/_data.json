@@ -126,5 +126,14 @@
     "tags": [
       "web"
     ]
+  },
+  "diet": {
+    "title": "Diet",
+    "date": "2014-01-08 12:00:00",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "personal"
+    ]
   }
 }
