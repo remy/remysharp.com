@@ -40,6 +40,8 @@ I plan Saturday as my cheat day. And I go bananas...
 
 <figure><img class="withcredit" src="/images/cheat-day.jpg" title="Cheat day"><figcaption class="credit">And sometimes [I'll go crazy on the Butterfield diet](https://www.youtube.com/watch?v=VWgwJfbeCeU)!</figcaption></figure>
 
+It's possibly not ideal to go *so* nuts, and more recently I've backed off a bit, but it's my cheat day, and it keeps me sane and it can be fun too!
+
 ## My diet
 
 Just to be clear: this is not *a* diet, this is *my* diet. This is based on a roughly 1,500 calories consumed aiming for a carb, protein and fat split of 30%, 50% and 20% respectively (though gym days would tend to be over).
@@ -53,10 +55,23 @@ I've broken my day into the times that I eat. When I include more than one item,
 | 10:30am      | 1 precooked [chicken breast](http://www.tesco.com/groceries/product/details/?id=264465356) (skin removed)<br>[Sweet chilli chicken](http://www.tesco.com/groceries/product/details/?id=279817782) |
 | 1:30pm / lunch | ~150g Chicken & 50g egg noodles + hot sauce<br>[Taco salad](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-taco-salad-md)<br>[Guacamole Omelette](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-guac-omlette-md) (looks bad, tastes great!)<br>Mexican chicken salad with avocado |
 | 4:15pm | [0% fat Total yoghurt](http://uk.fage.eu/product/yoghurt/total-0-170g)<br>[Danio](http://danio.co.uk/)<br>Protein bar<br>20-45g Cashew nuts |
-| 6:45pm | [Protein shake](http://www.dolphinfitness.co.uk/en/optimum-nutrition-100-whey-gold-2.2kg/16825)<br>[Mocha shake](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-mocha-shake-md) |
+| 6:45pm | Protein shake<br>[Mocha shake](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-mocha-shake-md) |
 | 8pm / dinner | Fajita chicken, fresh guacamole & refried beans<br>Tescos Healthy Living Oven chicken with refried beans<br>Turkey stuffed peppers<br>Nandos 1/2 chicken & beans<br>Sweet chilli salmon fillet, rocket & 100g of soya beans|
-| 10:30pm / bed | Vanilla Casein protein shake |
+| 10:30pm / bed<br>(optional) | Vanilla Casein protein shake |
 
-I would pre-cook 3-4 lunches (chicken and taco salad) each week (ideally on Sunday, but possibly in the morning when I've been slack). I've got lots of tupperware and keep it in the fridge (and yeah, the chicken gets dry).
+I would pre-cook 3-4 lunches (chicken and taco salad) each week (ideally on Sunday, but possibly in the morning when I've been slack). I've got lots of tupperware and keep it in the fridge (and yeah, the chicken gets dry). I'm definitely weakest at breakfast. I'd love it to be scrambled eggs with salmon flakes, but this has worked for me.
 
-My big pro tip: I have alarms reminding me when I need to eat, because without them, I'd just solider on and forget. Not good.
+My big pro tip: I have alarms reminding me when I need to eat, because without them, I'd just soldier on and forget. Not good.
+
+## Resources
+
+Here's a few resources I found useful:
+
+- [Nerd fitness](http://www.nerdfitness.com/) - there's a few inspiring stories along with some good information
+- [The 4 Hour Body](http://www.amazon.co.uk/4-Hour-Body-uncommon-incredible-superhuman/dp/0091939526/ref=sr_1_1)
+- [My Fitness Pal](http://www.myfitnesspal.com/) - site and app for Android & iPhone, allowing you to scan barcodes to determine your macros
+- [The Diet Kitchen](http://thedk.co.uk/) - just recently found this & [youtube channel](https://www.youtube.com/user/thedietkitchen), but lots of good looking recipes available
+
+## Questions?
+
+If this is useful to anyone, that's awesome. If you have **any** questions, please do ask in the comments below, I'm more than happy to answer or update the blog post with more details.
