@@ -1,6 +1,6 @@
 # Diet
 
-I've been asked a few times what's my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I've gone from 30%+ body fat to (just shy of) 13% in 2 years.
+I've been asked a few times what's my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I've gone from 30%+ body fat to 13.75% over 2 years.
 
 <!--more-->
 
@@ -14,7 +14,7 @@ I'd read a lot around the [Palio diet](http://en.wikipedia.org/wiki/Paleolithic_
 
 I decided that I would cut wheat and dairy out of my diet. That's all.
 
-That means no sandwiches. No cheese. No cheese sandwiches either. I can't say it was easy, and lunch was very hard. Lunchtime became falafel or burrito salad boxes. But there's no avoiding it (I think) you've got to look your own food.
+That means no cheese. No sandwiches. No cheese sandwiches either. I can't say it was easy, and lunch was very hard. Lunchtime became falafel or burrito salad boxes. But there's no avoiding it (I think) you've got to cook your own food ahead of time.
 
 In addition, by mid-March that year, I also quit drinking for 3 months, long enough that I'm not really bothered about drinking today.
 
@@ -22,7 +22,7 @@ This regime combined with the gym (not cardio, just lifting heavy and compound l
 
 ## 66 days
 
-You can't change your habits overnight. It typically takes [two months](http://www.telegraph.co.uk/health/healthnews/5857845/It-takes-66-days-to-form-a-habit.html) to create a new habit. The gym and diet (and knowing what to eat at lunchtime!).
+You can't change your habits overnight. It typically takes [two months](http://www.telegraph.co.uk/health/healthnews/5857845/It-takes-66-days-to-form-a-habit.html) to create a new habit. For me, that was my change of diet (and knowing what to eat at lunchtime!) and the gym.
 
 It's hard, there's no doubt, but for me, it was, and is: worth it.
 
@@ -56,7 +56,7 @@ I've broken my day into the times that I eat. When I include more than one item,
 | 1:30pm / lunch | ~150g Chicken & 50g egg noodles + hot sauce<br>[Taco salad](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-taco-salad-md)<br>[Guacamole Omelette](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-guac-omlette-md) (looks bad, tastes great!)<br>Mexican chicken salad with avocado |
 | 4:15pm | [0% fat Total yoghurt](http://uk.fage.eu/product/yoghurt/total-0-170g)<br>[Danio](http://danio.co.uk/)<br>Protein bar<br>20-45g Cashew nuts |
 | 6:45pm | Protein shake<br>[Mocha shake](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-mocha-shake-md) |
-| 8pm / dinner | Fajita chicken, fresh guacamole & refried beans<br>Tescos Healthy Living Oven chicken with refried beans<br>Turkey stuffed peppers<br>Nandos 1/2 chicken & beans<br>Sweet chilli salmon fillet, rocket & 100g of soya beans|
+| 8pm / dinner | [Fajita chicken, fresh guacamole & refried beans](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-fajitas-md)<br>Tescos Healthy Living Oven chicken with refried beans<br>Turkey stuffed peppers<br>Nandos 1/2 chicken & beans<br>Sweet chilli salmon fillet, rocket & 100g of soya beans|
 | 10:30pm / bed<br>(optional) | Vanilla Casein protein shake |
 
 I would pre-cook 3-4 lunches (chicken and taco salad) each week (ideally on Sunday, but possibly in the morning when I've been slack). I've got lots of tupperware and keep it in the fridge (and yeah, the chicken gets dry). I'm definitely weakest at breakfast. I'd love it to be scrambled eggs with salmon flakes, but this has worked for me.
