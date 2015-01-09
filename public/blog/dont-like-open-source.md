@@ -1,4 +1,4 @@
-# I why I don't like open source: my thoughts
+# "Why I don't like open source"
 
 This morning's walk was companied by [Tiago Rodrigues](https://twitter.com/trodrigues) (excellent) curation and commentary on [Adam Yeats](https://twitter.com/adamyeats) tweets on open source and (mostly) [James Seymour-Lock](https://twitter.com/JamesSLock)'s replies.
 
@@ -6,7 +6,19 @@ This morning's walk was companied by [Tiago Rodrigues](https://twitter.com/trodr
 
 It's not the first time Adam's thoughts have inspired a [blog post](/2012/12/18/contributing-to-the-web-community) either! These are my thoughts on open source, contributing and the points raised in the discussion.
 
+## Our web community distorts expectations
+
+(Not) contributing to open source isn't the problem. The pressure coming from external and internal sources telling us that we should be contributing is invalid, in that **it should not exist**, but it does.
+
+How *we think* people see us is only a reflection of how we feel about ourselves. The project getting the most retweets today is not representative of real work. Nor is the person with the most followers the better human being.
+
+There is distortion in the web community that you need to learn more, contribute more, work more, know everything, be on the latest technology, and so on. ***Unsubscribe***. Unfollow. Turn off alerts and notifications (or at least make your "quiet hours 6pm-9am). *Find other human beings*.
+
+I want to say that Adam's tweets are not the fault of open source, but our industry's distortion. But his tweets and the subsequent replies prompted me to also write down my thoughts about open source that I've been mulling over the last few years.
+
 <!--more-->
+
+<small>This post is partly edited, but quite long, so might not be 100% coherent. For that, I'm sorry!</small>
 
 ## What does open source really mean?
 
@@ -72,7 +84,7 @@ Hiring decisions are *mostly* based on some early criteria that's utterly arbitr
 
 When I interviewed [Fabien O'Carroll](https://twitter.com/allouis_) in late 2013 he had limited open source projects I could look at (which I would have skimmed to get an idea of scope of projects he works on), which is fine, and he couldn't really share his company's code.
 
-With *all* my interviewees I asked them to write me a hangman game in JavaScript, and not to spend more than 2-4 hours on it. I would pay each £100-200 (I don't actually recall exactly how much) for their time, because it was likely they were already employed and would have to do it *out of hours*. Personal time is valuable, and **no one has an automatic right to it**.
+With *all* my interviewees I asked them to write me a hangman game in JavaScript, and not to spend more than 2-4 hours on it. I would pay each an honorarium for their time, because it was likely they were already employed and would have to do it *out of hours*. Personal time is valuable, and **no one has an automatic right to it**.
 
 His code was decent, but that's not what got him the job. During the interview, when asked if there was anything else he was interested in, he struggled then eventually mentioned he built a chess timer (in wood) that he could use with his then-girlfriend. *That's* what got him the job, and that same sentiment is what I saw over the following year. That detail doesn't belong on github, isn't part of our community, but *is* part of an interview.
 
@@ -94,6 +106,6 @@ I've got another post that I'm writing about "what I love about the web", which 
 
 There *is* this weird pressure to get a "name" in our industry. But fuck, seriously, **you are amazing**. You work hard and you should be proud of your work irrespective of whether others can see it in the open.
 
-You come first, not your code or someone's project: you.
+You come first, not your code or someone else's project: you.
 
-For me, my family comes first. Work and code isn't even a distant second. It's taken me many years of working silly hard and silly hours to work that out. But it's true.
+For me, my family comes first. Work and code isn't even a distant second. It's taken me many years of working silly hard and silly hours to work that out. Now that I understand that, life is better.
