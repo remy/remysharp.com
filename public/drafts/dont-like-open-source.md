@@ -70,6 +70,14 @@ Take my open source [inliner](https://github.com/remy/inliner) project for insta
 
 Hiring decisions are *mostly* based on some early criteria that's utterly arbitrary. Like "do they have a degree", or "do they have a github account", or "what is their personal interest". The reason: to reduce 100 CVs down to a manageable number that you can actually interview.
 
+When I interviewed [Fabien O'Carroll](https://twitter.com/allouis_) in late 2013 he had limited open source projects I could look at (which I would have skimmed to get an idea of scope of projects he works on), which is fine, and he couldn't really share his company's code.
+
+With *all* my interviewees I asked them to write me a hangman game in JavaScript, and not to spend more than 2-4 hours on it. I would pay each £100-200 (I don't actually recall exactly how much) for their time, because it was likely they were already employed and would have to do it *out of hours*. Personal time is valuable, and **no one has an automatic right to it**.
+
+His code was decent, but that's not what got him the job. During the interview, when asked if there was anything else he was interested in, he struggled then eventually mentioned he built a chess timer (in wood) that he could use with his then-girlfriend. *That's* what got him the job, and that same sentiment is what I saw over the following year. That detail doesn't belong on github, isn't part of our community, but *is* part of an interview.
+
+Never undervalue what you do. Everyone is unique. Some people aren't right for some jobs, but you github streak says positive *and* negative things.
+
 ## If you can't contribute: you're not part of the community
 
 Arguing that someone should get a jobsworth position (at Tescos or McDonnalds) because the work 9-5 (or whatever extra overtime) is bollocks. This statement is so utterly selfish and narrow minded. But it's not the first time I've seen it.
@@ -82,8 +90,10 @@ Now that I've got young kids, when I leave the office, someone will ask "what ar
 
 ## My thoughts
 
-I've got another post that I'm writing about "what I love about the web". It's just that though. Enjoy what *you* do. Question where the pressure is coming from.
+I've got another post that I'm writing about "what I love about the web", which is sort of related: **enjoy what *you* do**. Question where the pressure comes from. If possible, focus on what you love and ignore the noise of "hey, look at *my* cool thing".
 
-There *is* this weird pressure to be a "name" in our industry. But fuck, seriously, **you are amazing**. You work hard and you should be proud of your work irrespective of whether others can see it in the open.
+There *is* this weird pressure to get a "name" in our industry. But fuck, seriously, **you are amazing**. You work hard and you should be proud of your work irrespective of whether others can see it in the open.
 
 You come first, not your code or someone's project: you.
+
+For me, my family comes first. Work and code isn't even a distant second. It's taken me many years of working silly hard and silly hours to work that out. But it's true.
