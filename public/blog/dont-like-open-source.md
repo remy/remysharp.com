@@ -64,7 +64,7 @@ It takes hours, if not days to become familiar with the codebase. Then creating 
 
 For context, in late-2000s, I partook in a [jQuery day long sprint](https://web.archive.org/web/20130512035317/http://docs.jquery.com/JQuerySprint) to fix bugs. I'd say I knew jQuery pretty damn well at the juncture. By the end of the sprint, I'd managed to confirm just one bug, and *pretty much* have an idea of what caused it.
 
-"Contributing to open source" is a long term commitment, and you do have to pick and choose. There's a few people like Subtack filling npm with his node modules is great, perhaps reinventing every wheel, but he's also doing it to [cover his living](https://gratipay.com/substack/). But these people are the exception. This isn't a lifestyle that's available to most people (and frankly, npm is running out of useful names for projects!).
+"Contributing to open source" is a long term commitment, and you do have to pick and choose. There's a few people like Substack filling npm with his node modules is great, perhaps reinventing every wheel, but he's also doing it to [cover his living](https://gratipay.com/substack/). But these people are the exception. This isn't a lifestyle that's available to most people (and frankly, npm is running out of useful names for projects!).
 
 Ask yourself what is open source. Ask yourself if you want to contribute to that, and if you do (want to contribute) ask yourself *why*.
 
