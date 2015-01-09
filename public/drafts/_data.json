@@ -135,5 +135,14 @@
     "tags": [
       "personal"
     ]
+  },
+  "dont-like-open-source": {
+    "title": "I why I don't like open source: my thoughts",
+    "date": "2014-01-09 12:00:00",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
   }
 }
