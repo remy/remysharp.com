@@ -6,6 +6,10 @@ This morning's walk was companied by [Tiago Rodrigues](https://twitter.com/trodr
 
 It's not the first time Adam's thoughts have inspired a [blog post](/2012/12/18/contributing-to-the-web-community) either! These are my thoughts on open source, contributing and the points raised in the discussion.
 
+<!--more-->
+
+<small>This post is partly edited, but quite long, so might not be 100% coherent. For that, I'm sorry!</small>
+
 ## Our web community distorts expectations
 
 (Not) contributing to open source isn't the problem. The pressure coming from external and internal sources telling us that we should be contributing is invalid, in that **it should not exist**, but it does.
@@ -15,10 +19,6 @@ How *we think* people see us is only a reflection of how we feel about ourselves
 There is distortion in the web community that you need to learn more, contribute more, work more, know everything, be on the latest technology, and so on. ***Unsubscribe***. Unfollow. Turn off alerts and notifications (or at least make your "quiet hours 6pm-9am). *Find other human beings*.
 
 I want to say that Adam's tweets are not the fault of open source, but our industry's distortion. But his tweets and the subsequent replies prompted me to also write down my thoughts about open source that I've been mulling over the last few years.
-
-<!--more-->
-
-<small>This post is partly edited, but quite long, so might not be 100% coherent. For that, I'm sorry!</small>
 
 ## What does open source really mean?
 
