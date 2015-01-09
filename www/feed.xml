@@ -1,4 +1,63 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 05 Jan 2015 16:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Reboot</title><guid isPermaLink="false">reboot</guid><link>http://remysharp.com/2015/01/05/reboot</link><pubDate>Mon, 05 Jan 2015 16:00:00 +0000</pubDate><description><![CDATA[The last year I&#39;ve made a conscious effort to focus development efforts in JS Bin, and that&#39;s exactly what I did for over 8 months.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Fri, 09 Jan 2015 12:30:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Why I don't like open source: my thoughts</title><guid isPermaLink="false">dont-like-open-source</guid><link>http://remysharp.com/2015/01/09/dont-like-open-source</link><pubDate>Fri, 09 Jan 2015 12:30:00 +0000</pubDate><description><![CDATA[This morning&#39;s walk was companied by Tiago Rodrigues (excellent) curation and commentary on Adam Yeats tweets on open source and (mostly) James Seymour-Lock&#39;s replies.
+Please read it. Carefully. Get all the way through and reserve judgement (if any) for the end.
+It&#39;s not the first time Adam&#39;s thoughts have inspired a blog post either! These are my thoughts on open source, contributing and the points raised in the discussion.]]></description><content:encoded><![CDATA[
+<p>This morning&#39;s walk was companied by <a href="https://twitter.com/trodrigues">Tiago Rodrigues</a> (excellent) curation and commentary on <a href="https://twitter.com/adamyeats">Adam Yeats</a> tweets on open source and (mostly) <a href="https://twitter.com/JamesSLock">James Seymour-Lock</a>&#39;s replies.</p>
+<p><a href="https://storify.com/trodrigues/why-i-don-t-like-open-source-a-play-in-3-acts">Please read it</a>. Carefully. Get all the way through and reserve judgement (if any) for the end.</p>
+<p>It&#39;s not the first time Adam&#39;s thoughts have inspired a <a href="/2012/12/18/contributing-to-the-web-community">blog post</a> either! These are my thoughts on open source, contributing and the points raised in the discussion.</p>
+<p><small>This post is partly edited, but quite long, so might not be 100% coherent. For that, I&#39;m sorry!</small></p>
+<h2>Our web community distorts expectations</h2>
+<p>(Not) contributing to open source isn&#39;t the problem. The pressure coming from external and internal sources telling us that we should be contributing is invalid, in that <strong>it should not exist</strong>, but it does.</p>
+<p>How <em>we think</em> people see us is only a reflection of how we feel about ourselves. The project getting the most retweets today is not representative of real work. Nor is the person with the most followers the better human being.</p>
+<p>There is distortion in the web community that you need to learn more, contribute more, work more, know everything, be on the latest technology, and so on. <strong><em>Unsubscribe</em></strong>. Unfollow. Turn off alerts and notifications (or at least make your &quot;quiet hours 6pm-9am). <em>Find other human beings</em>.</p>
+<p>I want to say that Adam&#39;s tweets are not the fault of open source, but our industry&#39;s distortion. But his tweets and the subsequent replies prompted me to also write down my thoughts about open source that I&#39;ve been mulling over the last few years.</p>
+<h2>What does open source really mean?</h2>
+<p>It means <a href="https://github.com/nickdesaulniers/What-Open-Source-Means-To-Me">different things to different people</a>. That&#39;s okay.</p>
+<p>To me, it means:</p>
+<blockquote>
+<p>Welcome. Welcome to this code I wrote. Help yourself to bits you like or need. Help make it better for others. Help make it yours. Help make me better with your suggestions, changes or discussion. Use the code in any way you want, in ways I never thought of. And if the projects I created lives on without me, then open source has worked.</p>
+</blockquote>
+<p><em>You</em> need to decide what it means to you, and what it looks like. Which leads me to ask: <em>is a project really open source</em>?</p>
+<h2>There are two kinds of open source projects</h2>
+<p>There&#39;s the big, high profile projects and then there&#39;s <em>everything</em> else.</p>
+<p>When I&#39;d hear &quot;open source&quot;, I&#39;d think: Linux, Apache, Firefox, bootstrap, ember, node, etc. i.e. big fucking high profile massive open source projects with a fuck tonne of code*.</p>
+<p><small>* Okay, there&#39;s also a decent number of sensible codebase sized projects that are used a lot, passport for node for instance</small></p>
+<p>This is <em>Type One</em>.</p>
+<p><em>Type Two</em> open source projects are the kind of project where the source is open, and the license is &quot;meh&quot;/&quot;whatever I always use but don&#39;t really understand&quot;. For me this is MIT. But that&#39;s beside the point.</p>
+<p>The source is available. <em>Just like the web</em>. View source. It&#39;s the kind of open source that I&#39;m familiar with (obviously there&#39;s discussions around licenses, but that&#39;s for another day).</p>
+<p>Type Two projects: the kind where the source is just somewhere on the web, is the kind that, if we&#39;re honest, hardly anyone else is going to contribute to. I&#39;ll be lucky if anyone actually uses it, let alone skims the code.</p>
+<p>This second type, it could be closed source. It could be something that was never uploaded to the web. But it was. This is the majority of open source projects today. Very much like the late 90s when there were sites offering JavaScript ...files (because library and framework really doesn&#39;t apply) that gave you menus, hover effects, basic whiz bang stuff. Except now it&#39;s up on Github or npm (or whatever you Ruby folk use!).</p>
+<p>If someone sends a pull request to one of these projects, there&#39;s a few things that can happen: it&#39;s ignored/forgotten about or it&#39;s blindly merged &quot;meh, cool&quot; (there&#39;s other outcomes too!).</p>
+<p>For me, putting code in github as &quot;open source&quot; is for two main reasons: 1) so if I lose the code locally, I can find it again (fingers crossed Github doesn&#39;t vanish too quickly), 2) I can&#39;t be arsed to pony up the pitiful amount of dollars for more private repos.</p>
+<p>The majority of the repo owners on the type one projects are <em>companies</em>. It&#39;s their product. The majority of type two, are individuals. Let&#39;s remember that perspective. Contributing to the small ones isn&#39;t a big deal and potentially contributing to the big ones might be like pissing in the ocean.</p>
+<h2>Contributing to open source</h2>
+<p>I can&#39;t speak for Adam, but it <em>sounds</em> like he&#39;s either felt pressure to contribute to some projects either externally or internally. I could be way off based, but I <em>do</em> know people who&#39;ve felt this way. Heck, I feel this internal pressure sometimes.</p>
+<p>Contributing (code) to the Type One projects isn&#39;t something you can do with a few hours. So seriously, if you feel this pressure: stop it.</p>
+<p>It takes hours, if not days to become familiar with the codebase. Then creating a bug fix or a new feature isn&#39;t quite as simple as &quot;hacking some code in&quot;. If it&#39;s a high profile project, it&#39;ll come with tests and coding guidelines. That&#39;s more work, and you&#39;ve not even contributed a single line yet.</p>
+<p>For context, in late-2000s, I partook in a <a href="https://web.archive.org/web/20130512035317/http://docs.jquery.com/JQuerySprint">jQuery day long sprint</a> to fix bugs. I&#39;d say I knew jQuery pretty damn well at the juncture. By the end of the sprint, I&#39;d managed to confirm just one bug, and <em>pretty much</em> have an idea of what caused it.</p>
+<p>&quot;Contributing to open source&quot; is a long term commitment, and you do have to pick and choose. There&#39;s a few people like Subtack filling npm with his node modules is great, perhaps reinventing every wheel, but he&#39;s also doing it to <a href="https://gratipay.com/substack/">cover his living</a>. But these people are the exception. This isn&#39;t a lifestyle that&#39;s available to most people (and frankly, npm is running out of useful names for projects!).</p>
+<p>Ask yourself what is open source. Ask yourself if you want to contribute to that, and if you do (want to contribute) ask yourself <em>why</em>.</p>
+<h2>Getting a job based on contributions</h2>
+<p>...is bullshit.</p>
+<p>But <em>maybe</em>, maybe some companies will exclusively hire you based on your open source contributions. Honestly, if that&#39;s the case, it&#39;s more likely you&#39;re not applying for the job, and in fact the company is head hunting you.</p>
+<p>It <em>is</em> true that an &quot;open source&quot; project is seen as a reference of work. But it&#39;s also a <em>stale</em> reference of work. And importantly, it&#39;s not the only reference.</p>
+<p>Take my open source <a href="https://github.com/remy/inliner">inliner</a> project for instance. The code is appalling. There&#39;s outstanding open issues <em>and</em> pull requests. This is an open source project that is <em>not</em> representative of my current skills. Yet it&#39;s still open source. I wouldn&#39;t put it forward as my best work.</p>
+<p><a href="https://github.com/jsbin/jsbin">JS Bin</a> is probably a better example of my work, but honestly, the code is not my best foot forward. In fact, I&#39;ve had job offers based on the companies associating me with the project, but I know for certain that they&#39;ve not looked at the code.</p>
+<p>Hiring decisions are <em>mostly</em> based on some early criteria that&#39;s utterly arbitrary. Like &quot;do they have a degree&quot;, or &quot;do they have a github account&quot;, or &quot;what is their personal interest&quot;. The reason: to reduce 100 CVs down to a manageable number that you can actually interview.</p>
+<p>When I interviewed <a href="https://twitter.com/allouis_">Fabien O&#39;Carroll</a> in late 2013 he had limited open source projects I could look at (which I would have skimmed to get an idea of scope of projects he works on), which is fine, and he couldn&#39;t really share his company&#39;s code.</p>
+<p>With <em>all</em> my interviewees I asked them to write me a hangman game in JavaScript, and not to spend more than 2-4 hours on it. I would pay each an honorarium for their time, because it was likely they were already employed and would have to do it <em>out of hours</em>. Personal time is valuable, and <strong>no one has an automatic right to it</strong>.</p>
+<p>His code was decent, but that&#39;s not what got him the job. During the interview, when asked if there was anything else he was interested in, he struggled then eventually mentioned he built a chess timer (in wood) that he could use with his then-girlfriend. <em>That&#39;s</em> what got him the job, and that same sentiment is what I saw over the following year. That detail doesn&#39;t belong on github, isn&#39;t part of our community, but <em>is</em> part of an interview.</p>
+<p>Never undervalue what you do. Everyone is unique. Some people aren&#39;t right for some jobs, but you github streak says positive <em>and</em> negative things.</p>
+<h2>If you can&#39;t contribute: you&#39;re not part of the community</h2>
+<p>Arguing that someone should get a jobsworth position (at Tescos or McDonnalds) because the work 9-5 (or whatever extra overtime) is bollocks. This statement is so utterly selfish and narrow minded. But it&#39;s not the first time I&#39;ve seen it.</p>
+<p>The people who have a high chance of working on extra curricular projects are likely to be single, not terribly social and in their 20s. Why? Because when you&#39;re on your own and younger, you have more energy, and you need less sleep. When I was in my 20s (and married) I was hacking until 2am in the morning. What was my code like between 10pm and 2am? Shit. In fact, it&#39;s taken me years to realise that when I&#39;m not on form (i.e. past 6pm) that it takes me twice as long, if not more, to complete a simple task. A complex task is unlikely to get fixed.</p>
+<p>Our brains fuck with us when we deprive it of rest. Tell yourself you have RSI. If you have RSI, you rest. You move away from typing at a keyboard because if you push it, it hurts. Take <em>that</em> approach.</p>
+<p>Now that I&#39;ve got young kids, when I leave the office, someone will ask &quot;what are you up to this evening?&quot;. The same as every other evening: I help put the kids to sleep, I cook (or help cook), I eat, I got to bed. I love that I&#39;m with my family, and it&#39;s enough for me. There is <em>not time</em> for coding in that evening.</p>
+<h2>My thoughts</h2>
+<p>I&#39;ve got another post that I&#39;m writing about &quot;what I love about the web&quot;, which is sort of related: <strong>enjoy what <em>you</em> do</strong>. Question where the pressure comes from. If possible, focus on what you love and ignore the noise of &quot;hey, look at <em>my</em> cool thing&quot;.</p>
+<p>There <em>is</em> this weird pressure to get a &quot;name&quot; in our industry. But fuck, seriously, <strong>you are amazing</strong>. You work hard and you should be proud of your work irrespective of whether others can see it in the open.</p>
+<p>You come first, not your code or someone else&#39;s project: you.</p>
+<p>For me, my family comes first. Work and code isn&#39;t even a distant second. It&#39;s taken me many years of working silly hard and silly hours to work that out. Now that I understand that, life is better.</p>
+]]></content:encoded></item><item><title>Reboot</title><guid isPermaLink="false">reboot</guid><link>http://remysharp.com/2015/01/05/reboot</link><pubDate>Mon, 05 Jan 2015 16:00:00 +0000</pubDate><description><![CDATA[The last year I&#39;ve made a conscious effort to focus development efforts in JS Bin, and that&#39;s exactly what I did for over 8 months.
 I had the great pleasure of hiring Giulia Alfonsi and Fabien O&#39;Carroll. Giulia&#39;s contracted ended after 6 months and Fabien is now headed to greener pastures.
 So now I have a 4 person office to myself. With that burning a hole in the business pocket, I&#39;ve decided to completely reboot my business.
 I&#39;m shutting down the office and returning to solo working and surfing from co-working space to coffee shops with the aim of working on hugely diverse projects and contributing more to the web community via blogging, videos and training.
@@ -1555,42 +1614,4 @@ The problem was: exactly when was he waking, because it would affect how tired h
 <p>After carefully wiring everything up, placing the arduino in my son&#39;s room and covering the lights so it wouldn&#39;t keep him up, I headed to bed keep to discover the time he was actually rising.</p>
 <p>The morning came, he woke me and my wife up early (as expected), and I trotted into his room to discover...the battery had died.</p>
 <p>Yep. Polling all the time is going to burn the battery out, and indeed what I need is an interrupt (based on the light levels ideally). So that&#39;s the plan for version 2...when I get around to it. For now, filling up failed projects!</p>
-]]></content:encoded></item><item><title>Call for proposals at Full Frontal 2014</title><guid isPermaLink="false">call-for-proposals-at-full-frontal-2014</guid><link>http://remysharp.com/2014/06/17/call-for-proposals-at-full-frontal-2014</link><pubDate>Tue, 17 Jun 2014 12:51:12 +0000</pubDate><description><![CDATA[Full Frontal has it&#39;s ticket release date(s!) and as usual, I&#39;m already carefully curating the content I want to hear at Full Frontal, but I always make sure I allot a few positions for CFP - because let&#39;s face it: I don&#39;t know, what I don&#39;t know.]]></description><content:encoded><![CDATA[
-<p><a href="http://2014.full-frontal.org">Full Frontal</a> has it&#39;s ticket release date(s!) and as usual, I&#39;m already carefully curating the content I want to hear at Full Frontal, but I always make sure I allot a few positions for CFP - because let&#39;s face it: I don&#39;t know, what I don&#39;t know.</p>
-<p>So, if you think you&#39;ve got something to share, then get in touch. I&#39;ve included a few guidelines as to what I prefer from a proposal, and given you an idea of the kinds of topics I&#39;m interested in hearing about this year.</p>
-<h2>Proposal topic advice</h2>
-<p>I&#39;ve also included what you can expect as a speaker at our event too.</p>
-<p>Topics that interest me:</p>
-<ul>
-<li>Web technology used outside of browsers</li>
-<li>What we can learn in web development from other technology/disciplines</li>
-<li>Debugging in new and unexpected ways</li>
-<li>The future of the web/the future and how the web will be part of that</li>
-<li>SysOP problems for JavaScript/node devs</li>
-<li>Performance and squeezing insanity through the pipeline</li>
-<li>Large scale application design problems that specifically applies to small scale</li>
-<li>&quot;You&#39;re doing it wrong&quot;</li>
-</ul>
-<p>If you want to get an idea of the audience or who you proposal is for, the answer is simple: me. I curate for content that <em>I want to hear and see</em>. So if you (roughly) know my work, then you know the audience.</p>
-<p>Topics that don&#39;t work, unless they&#39;re genuinely going to change the World, then CFPs like these generally fall to the bottom of the pile (sorry!):</p>
-<ul>
-<li>Library specific talks</li>
-<li>Your company&#39;s new product</li>
-<li>Talks that are very similar to previous Full Frontal talks</li>
-</ul>
-<p>Send me the title of your talk, an outline of the talk and any extra information you want me to know about the idea: <a href="mailto:events@leftlogic.com?subject=FF2014%20speaking%20propsal">events@leftlogic.com</a></p>
-<p>If your proposal (is genuine and) comes in <strong>before 14 July 5pm UK time</strong> then we&#39;ll give early access to buy a ticket before the second wave of tickets are released. Regardless, if your proposal is selected, we&#39;ll refund your conference ticket if you bought one.</p>
-<h2>Our promise to you</h2>
-<p>All our speakers are treated the same. We will:</p>
-<ul>
-<li>Pay for your travel. If you&#39;re flying long haul, we&#39;ll upgrade you to premium class (or whatever the name is for &quot;above economy&quot;)</li>
-<li>Put you up in our &quot;speaker hotel&quot;. It&#39;s not that sexy, but it&#39;s right in town and two minutes walk from our venue. We&#39;re also open to offering the hotel stay. If you want an extra day or two here and there, then that&#39;s cool too (obviously if everyone does this, it breaks our bank, but so far it&#39;s worked)</li>
-<li>Arrange your travel and help you with anything you need ahead of the event</li>
-<li>We can, if you need or want it, provide you with a mifi preloaded with data</li>
-<li>All your food and drinks provided for you during the day before and the day of the conference (don&#39;t expect to buy a drink at the after party)</li>
-<li>40 minute talk, generally we don&#39;t do Q&amp;A and it&#39;s best to err on the side of &quot;there is no wifi&quot;</li>
-<li>£500 honourium - I know it&#39;s not much, but it&#39;s a bit of spending money to say thanks</li>
-<li>A free pass to the following year of Full Frontal, and for evermore part of our growing and much loved speaker alumni</li>
-</ul>
-<p>So I hope to hear from you soon!</p>
 ]]></content:encoded></item></channel></rss>
