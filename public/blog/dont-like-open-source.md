@@ -1,4 +1,4 @@
-# "Why I don't like open source"
+# "Why I don't like open source" – my thoughts
 
 This morning's walk was companied by [Tiago Rodrigues](https://twitter.com/trodrigues) (excellent) curation and commentary on [Adam Yeats](https://twitter.com/adamyeats) tweets on open source and (mostly) [James Seymour-Lock](https://twitter.com/JamesSLock)'s replies.
 
@@ -92,13 +92,15 @@ Never undervalue what you do. Everyone is unique. Some people aren't right for s
 
 ## If you can't contribute: you're not part of the community
 
-Arguing that someone should get a jobsworth position (at Tescos or McDonnalds) because the work 9-5 (or whatever extra overtime) is bollocks. This statement is so utterly selfish and narrow minded. But it's not the first time I've seen it.
+Arguing that someone should get a jobsworth position* because the work 9-5 (or whatever extra overtime) is bollocks. It's not the first time I've seen it either. This kind of sentiment is utterly selfish and narrow minded.
+
+<small>* It's worth pointing out that James' tweet was [between friends](https://twitter.com/JamesSLock/status/553546788779859968)</small>
 
 The people who have a high chance of working on extra curricular projects are likely to be single, not terribly social and in their 20s. Why? Because when you're on your own and younger, you have more energy, and you need less sleep. When I was in my 20s (and married) I was hacking until 2am in the morning. What was my code like between 10pm and 2am? Shit. In fact, it's taken me years to realise that when I'm not on form (i.e. past 6pm) that it takes me twice as long, if not more, to complete a simple task. A complex task is unlikely to get fixed.
 
 Our brains fuck with us when we deprive it of rest. Tell yourself you have RSI. If you have RSI, you rest. You move away from typing at a keyboard because if you push it, it hurts. Take *that* approach.
 
-Now that I've got young kids, when I leave the office, someone will ask "what are you up to this evening?". The same as every other evening: I help put the kids to sleep, I cook (or help cook), I eat, I got to bed. I love that I'm with my family, and it's enough for me. There is *not time* for coding in that evening.
+Now that I've got young kids, when I leave the office, someone will ask "what are you up to this evening?". The same as every other evening: I help put the kids to sleep, I cook (or help cook), I eat, I got to bed. I love that I'm with my family, and it's enough for me. There is *no time* for coding in that evening.
 
 ## My thoughts
 
