@@ -68,7 +68,7 @@ For context, in late-2000s, I partook in a [jQuery day long sprint](https://web.
 
 Ask yourself what is open source. Ask yourself if you want to contribute to that, and if you do (want to contribute) ask yourself *why*.
 
-## Getting a job based on contributions
+## Hiring purely based on open source contributions
 
 ...is bullshit.
 
@@ -84,7 +84,7 @@ Hiring decisions are *mostly* based on some early criteria that's utterly arbitr
 
 When I interviewed [Fabien O'Carroll](https://twitter.com/allouis_) in late 2013 he had limited open source projects I could look at (which I would have skimmed to get an idea of scope of projects he works on), which is fine, and he couldn't really share his company's code.
 
-With *all* my interviewees I asked them to write me a hangman game in JavaScript, and not to spend more than 2-4 hours on it. I would pay each an honorarium for their time, because it was likely they were already employed and would have to do it *out of hours*. Personal time is valuable, and **no one has an automatic right to it**.
+With *all* my interviewees I asked them to write me a hangman game in JavaScript, and not to spend more than 2-4 hours on it (in their own time). I would pay each an honorarium for their time, because it was likely they were already employed and would have to do it *out of hours*. Personal time is valuable, and **no one has an automatic right to it**.
 
 His code was decent, but that's not what got him the job. During the interview, when asked if there was anything else he was interested in, he struggled then eventually mentioned he built a chess timer (in wood) that he could use with his then-girlfriend. *That's* what got him the job, and that same sentiment is what I saw over the following year. That detail doesn't belong on github, isn't part of our community, but *is* part of an interview.
 
