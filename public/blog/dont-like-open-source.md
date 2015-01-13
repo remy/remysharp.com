@@ -1,6 +1,6 @@
 # "Why I don't like open source" – my thoughts
 
-This morning's walk was companied by [Tiago Rodrigues](https://twitter.com/trodrigues) (excellent) curation and commentary on [Adam Yeats](https://twitter.com/adamyeats) tweets on open source and (mostly) [James Seymour-Lock](https://twitter.com/JamesSLock)'s replies.
+This morning's walk was accompanied by [Tiago Rodrigues](https://twitter.com/trodrigues) (excellent) curation and commentary on [Adam Yeats](https://twitter.com/adamyeats) tweets on open source and (mostly) [James Seymour-Lock](https://twitter.com/JamesSLock)'s replies.
 
 [Please read it](https://storify.com/trodrigues/why-i-don-t-like-open-source-a-play-in-3-acts). Carefully. Get all the way through and reserve judgement (if any) for the end.
 
