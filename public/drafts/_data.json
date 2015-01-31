@@ -135,5 +135,23 @@
     "tags": [
       "personal"
     ]
+  },
+  "why-i-love-working-with-the-web": {
+    "title": "Why I love working with the web",
+    "date": "2014-01-31 12:00:00",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "you-dont-like-iex": {
+    "title": "What do you mean, you don't like IE6...X?",
+    "date": "2014-01-31 12:00:00",
+    "complete": true,
+    "inprogress": false,
+    "tags": [
+      "web"
+    ]
   }
 }
