@@ -1,6 +1,6 @@
 # Diet
 
-I've been asked a few times what's my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I've gone from 30%+ body fat to 13.75% over 2 years.
+I've been asked a few times what's my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I've gone from 30%+ body fat (obese) to 13.75% (*just* inside athlete categorisation) over 2 years.
 
 <!--more-->
 
@@ -8,17 +8,17 @@ I've been asked a few times what's my diet like, specifically, and I wanted to w
 
 ## Purpose
 
-The first consideration I had back at the start of 2013 was how do I start and what do I want?
+The first consideration I had back at the start of 2013 was how do I start and what do I want to achieve?
 
-I'd read a lot around the [Palio diet](http://en.wikipedia.org/wiki/Paleolithic_diet) and the [Slow-Carb diet](http://en.wikipedia.org/wiki/Slow-Carb_Diet) and a decided I needed something simple. I needed to lose weight (body fat) and diet is 80% of the job (20% is the gym).
+I'd read a lot around the [Palio diet](http://en.wikipedia.org/wiki/Paleolithic_diet) and the [Slow-Carb diet](http://en.wikipedia.org/wiki/Slow-Carb_Diet) and a decided that if I was to get outside of the obese categorisation, I needed something simple. I needed to lose weight (body fat) and diet is 80% of the job (20% is the gym).
 
-I decided that I would cut wheat and dairy out of my diet. That's all.
+I decided that I would cut wheat and dairy out of my diet. That's all (to start off with).
 
-That means no cheese. No sandwiches. No cheese sandwiches either. I can't say it was easy, and lunch was very hard. Lunchtime became falafel or burrito salad boxes. But there's no avoiding it (I think) you've got to cook your own food ahead of time.
+That means no cheese. No sandwiches. No cheese sandwiches either. I can't say it was easy, and lunch was very hard. Lunchtime became falafel or burrito salad boxes. But there's no avoiding it, what you ultimately have to do is cook your own food ahead of time.
 
 In addition, by mid-March that year, I also quit drinking for 3 months, long enough that I'm not really bothered about drinking today.
 
-This regime combined with the gym (not cardio, just lifting heavy and compound lifts) 3 days a week go me what I needed: down to 25% in 4 months.
+This diet change, combined with the gym (not cardio, just lifting heavy and compound lifts) 3 days a week go me what I needed: down to 25% in 4 months.
 
 ## 66 days
 
@@ -44,16 +44,18 @@ It's possibly not ideal to go *so* nuts, and more recently I've backed off a bit
 
 ## My diet
 
-Just to be clear: this is not *a* diet, this is *my* diet. This is based on a roughly 1,500 calories consumed aiming for a carb, protein and fat split of 30%, 50% and 20% respectively (though gym days would tend to be over).
+Just to be clear: this is not *a* diet, this is just *my* diet. This is based on a roughly 1,500-1,700 calories consumed aiming for a carb, protein and fat split of 30%, 50% and 20% respectively (though gym days would tend to be at the high end).
 
 I've broken my day into the times that I eat. When I include more than one item, it means that I'll rotate any of these foods. Where I've included links, it's either to the specific product or recipes.
 
+Note that this is also based on working from an office that only had a fridge, but no heating equipment.
+
 | When        | What            |
 | ------------- |:-------------:|
-| 7am / breakfast<br>within 30mins of waking | [Breakfast on the go](http://www.tesco.com/groceries/product/details/?id=283691370)<br>[Protein bar](http://www.sci-mx.co.uk/product-a-z/pro2go-duo-bar.html)<br>[Oats & Whey shake](http://www.dolphinfitness.co.uk/en/optimum-nutrition-natural-whey-and-oats/21659) (choc with a scoop of almond butter) |
+| 7am / breakfast<br>within 30mins of waking | [Breakfast on the go](http://www.tesco.com/groceries/product/details/?id=283691370)<br>[Protein bar](http://www.sci-mx.co.uk/product-a-z/pro2go-duo-bar.html)<br>[Oats & Whey shake](http://www.dolphinfitness.co.uk/en/optimum-nutrition-natural-whey-and-oats/21659) (choc with a scoop of almond butter)<br>[Smoked Salmon](http://www.tesco.com/groceries/product/details/?id=250926075) on 2x wholemeal toast |
 | 10am (gym day only)      |[Protein shake](http://www.dolphinfitness.co.uk/en/optimum-nutrition-100-whey-gold-2.2kg/16825) (mint or extreme milk choc)|
-| 10:30am      | 1 precooked [chicken breast](http://www.tesco.com/groceries/product/details/?id=264465356) (skin removed)<br>[Sweet chilli chicken](http://www.tesco.com/groceries/product/details/?id=279817782) |
-| 1:30pm / lunch | ~150g Chicken & 50g egg noodles + hot sauce<br>[Taco salad](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-taco-salad-md)<br>[Guacamole Omelette](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-guac-omlette-md) (looks bad, tastes great!)<br>Mexican chicken salad with avocado |
+| 10:30am      | 1 precooked [chicken breast](http://www.tesco.com/groceries/product/details/?id=264465356) (skin removed)<br>[Sweet chilli chicken](http://www.tesco.com/groceries/product/details/?id=279817782)<br>Additional raw broccoli is optional |
+| 1:30pm / lunch | ~150g Chicken & 50g egg noodles + hot sauce<br>[Taco salad](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-taco-salad-md)<br>[Guacamole Omelette](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-guac-omlette-md) (looks bad, tastes great!)<br>Mexican chicken salad with avocado [from La Choza](http://www.lachoza.co.uk/) |
 | 4:15pm | [0% fat Total yoghurt](http://uk.fage.eu/product/yoghurt/total-0-170g)<br>[Danio](http://danio.co.uk/)<br>Protein bar<br>20-45g Cashew nuts |
 | 6:45pm | Protein shake<br>[Mocha shake](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-mocha-shake-md) |
 | 8pm / dinner | [Fajita chicken, fresh guacamole & refried beans](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-fajitas-md)<br>Tescos Healthy Living Oven chicken with refried beans<br>Turkey stuffed peppers<br>Nandos 1/2 chicken & beans<br>Sweet chilli salmon fillet, rocket & 100g of soya beans|
@@ -71,6 +73,7 @@ Here's a few resources I found useful:
 - [The 4 Hour Body](http://www.amazon.co.uk/4-Hour-Body-uncommon-incredible-superhuman/dp/0091939526/ref=sr_1_1)
 - [My Fitness Pal](http://www.myfitnesspal.com/) - site and app for Android & iPhone, allowing you to scan barcodes to determine your macros
 - [The Diet Kitchen](http://thedk.co.uk/) - just recently found this & [youtube channel](https://www.youtube.com/user/thedietkitchen), but lots of good looking recipes available
+- Kamil Ogórek's [nutrition](http://kamilogorek.pl/nutrition/) & [training](http://kamilogorek.pl/training/) resources
 
 ## Questions?
 
