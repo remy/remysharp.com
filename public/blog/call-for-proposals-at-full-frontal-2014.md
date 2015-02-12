@@ -38,7 +38,7 @@ If your proposal (is genuine and) comes in **before 14 July 5pm UK time** then w
 All our speakers are treated the same. We will:
 
 - Pay for your travel. If you're flying long haul, we'll upgrade you to premium class (or whatever the name is for "above economy")
-- Put you up in our "speaker hotel". It's not that sexy, but it's right in town and two minutes walk from our venue. We're also open to offering the hotel stay. If you want an extra day or two here and there, then that's cool too (obviously if everyone does this, it breaks our bank, but so far it's worked)
+- Put you up in our "speaker hotel". It's not that cool, but it's right in town and two minutes walk from our venue. We're also open to offering the hotel stay. If you want an extra day or two here and there, then that's cool too (obviously if everyone does this, it breaks our bank, but so far it's worked)
 - Arrange your travel and help you with anything you need ahead of the event
 - We can, if you need or want it, provide you with a mifi preloaded with data
 - All your food and drinks provided for you during the day before and the day of the conference (don't expect to buy a drink at the after party)
