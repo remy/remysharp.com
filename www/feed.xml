@@ -1,4 +1,41 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Fri, 06 Feb 2015 16:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>What do you mean, you don't like IE6...X?</title><guid isPermaLink="false">you-dont-like-iex</guid><link>http://remysharp.com/2015/02/06/you-dont-like-iex</link><pubDate>Fri, 06 Feb 2015 16:00:00 +0000</pubDate><description><![CDATA[I wrote an offsite blog post entitled &quot;What do you mean, you don&#39;t like IE6? Really?&quot; back in 2011. The post is still relevant, but in the last 4 years I&#39;m pretty confident that the complaint isn&#39;t IE6, it&#39;s IE7, or IE8, or...you get the idea.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Thu, 26 Feb 2015 11:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>I'm a web developer. Not an engineer.</title><guid isPermaLink="false">i-am-web-developer</guid><link>http://remysharp.com/2015/02/26/i-am-web-developer</link><pubDate>Thu, 26 Feb 2015 11:00:00 +0000</pubDate><description><![CDATA[Something I’m starting to realise and accept for myself: I’m a web developer. Not an engineer. Mostly an approach &amp; understanding difference
+
+– Me, 6-Feb 2015
+This seemed to hit a cord with a few people, and others asked if I could embellish on those thoughts. So here it is.]]></description><content:encoded><![CDATA[
+<blockquote>
+<p>Something I’m starting to realise and accept for myself: I’m a web developer. Not an engineer. Mostly an approach &amp; understanding difference</p>
+</blockquote>
+<p>– Me, <a href="https://twitter.com/rem/status/563708407337996288">6-Feb 2015</a></p>
+<p>This seemed to hit a cord with a few people, and others asked if I could embellish on those thoughts. So here it is.</p>
+<h2>On titles</h2>
+<p>&quot;We&quot; love titles. Personally, in the last 5 years, I&#39;ve preferred the <em>sound</em> of being an engineer, or a JavaScript engineer. I actually quite like <em>software designer</em>. But let&#39;s face it, it&#39;s all fluff.</p>
+<p>Actually, where titles aren&#39;t fluff, is when you work in a larger company. Quite often titles relate directly to pay scales. I digress.</p>
+<p>The <em>engineer</em> bit is a little less fluffy and does actually carry meaning.</p>
+<h2>Engineers</h2>
+<p>Calling yourself an engineer, when you&#39;re not actually qualified as an engineer is <em>sort of</em> a no-no. In fact, there&#39;s some <a href="http://en.wikipedia.org/wiki/Engineer#Regulation">regulation</a> around the engineering titles - and certainly in the UK (according to the Wikipedia page), there&#39;s been petitions to protect the title.</p>
+<p>Ignoring the regulations, to me, engineers are smart, educated (ideally in a form of engineering...) and specifically: solving complex computer engineering problems.</p>
+<p>In a conversation (over twitter) I was having with <a href="https://twitter.com/trek">Trek Glowacki</a>, midway he replied with:</p>
+<blockquote>
+<p>Take a step back and understand the real engineering goal: SRP</p>
+</blockquote>
+<p>I wasn&#39;t aware of any engineering goal, nor what <a href="http://en.wikipedia.org/wiki/Single_responsibility_principle">SRP</a> stood for, nor did I <em>really</em> understand what the Wikipedia page was saying to me.</p>
+<p>Honestly, I kind of feel out of my depth amongst engineers aka those people who *really&quot; took the time to study computer science and grok the shit out of it.</p>
+<h2>I am web developer</h2>
+<p>I don&#39;t know why I thought it was uncool to be a &quot;web developer&quot;. Perhaps because it&#39;s utterly vague.</p>
+<p>What &quot;web developer&quot; <em>does</em> mean <em>to me</em> though, is this:</p>
+<p>Someone who writes code for browsers. Likely from the school of view source, is comfortable with drop-in libraries, understands standards and <em>best practice</em> techniques. But mostly, <strong>a tinkerer.</strong></p>
+<h2>I&#39;m not alone</h2>
+<p><img src="/images/tbl-developer.jpg" alt="Tim Berners-Lee: web developer"></p>
+<p>The picture above is an (infamous) screen grab from the <a href="http://www.webplatform.org/">Web Platform</a> introduction <a href="https://www.youtube.com/watch?v=Ug6XAw6hzaw">video</a>. Of Sir Tim Berners-Lee. The <em>creator</em> of The Web.</p>
+<p>I saw a lot of posts and tweets suggesting that this was a joke, or a disservice to his work, or that the title was utterly understated.</p>
+<p>I&#39;m not sure it was. There&#39;s no doubt that this man is responsible for a <em>lot</em> more, but he <em>is</em> The Web Developer.</p>
+<p>I&#39;m proud to say that I work on that same web. Making it better (and sometimes, perhaps, a little worse).</p>
+<h2>Embrace it</h2>
+<p>I&#39;ve personally learnt my web development skills over a long period of time and nearly entirely through trial and error. I suspect most of us have.</p>
+<p>Being a web developer doesn&#39;t have to mean you have to be a JavaScript wiz, or that you <em>don&#39;t</em> touch the server side. By virtue of tinkering, it&#39;s quite likely you&#39;re getting better at <em>all</em> these things.</p>
+<p>Coming to this realisation is by no means a slur against those people who call themselves engineers. If you do, it&#39;s quite likely I already have a great deal of respect for your knowledge and understanding if I&#39;ve come across your work already.</p>
+<p>As for me, I&#39;m proud to say: I am a web developer. I am a tinkerer.</p>
+]]></content:encoded></item><item><title>What do you mean, you don't like IE6...X?</title><guid isPermaLink="false">you-dont-like-iex</guid><link>http://remysharp.com/2015/02/06/you-dont-like-iex</link><pubDate>Fri, 06 Feb 2015 16:00:00 +0000</pubDate><description><![CDATA[I wrote an offsite blog post entitled &quot;What do you mean, you don&#39;t like IE6? Really?&quot; back in 2011. The post is still relevant, but in the last 4 years I&#39;m pretty confident that the complaint isn&#39;t IE6, it&#39;s IE7, or IE8, or...you get the idea.
 So, for your special reading pleasure, I&#39;ve made it so that this post can updated to your particular IE complaint.]]></description><content:encoded><![CDATA[
 <p>I wrote an offsite blog post entitled &quot;What do you mean, you don&#39;t like IE6? Really?&quot; <em>back in 2011</em>. The post is still relevant, but in the last 4 years I&#39;m pretty confident that the complaint isn&#39;t IE6, it&#39;s IE7, or IE8, or...you get the idea.</p>
 <p>So, for your special reading pleasure, I&#39;ve made it so that this post can updated to your particular IE complaint.</p>
@@ -1609,28 +1646,4 @@ Seriously. It is. But I feel like I may have to defend my opinion on this one!]]
 <p>So it&#39;s deprecated. But it works. And that&#39;s basically the web summed up: <strong>but it works.</strong></p>
 <h2>More center?</h2>
 <p>Yep, I&#39;ve convinced myself, I&#39;ll be using <code>center</code> just a little more often (than previously not at all). Maybe you&#39;ll reconsider pulling it back in to your toolbox!</p>
-]]></content:encoded></item><item><title>Time doesn’t heal</title><guid isPermaLink="false">time-doesnt-heal</guid><link>http://remysharp.com/2014/08/11/time-doesnt-heal</link><pubDate>Mon, 11 Aug 2014 13:00:06 +0000</pubDate><description><![CDATA[My wife and I lost our daughter at full term in the last throes of labour to stillbirth. It was the darkest time of my life.
-Over the coming months we&#39;d hear the phrase &quot;time heals&quot;. It doesn&#39;t.
-How would it? We lost our daughter. She&#39;ll be 4 this year. I still miss her. My heart still yearns for her. I still cry for her.
-Time won&#39;t ever heal this hole in our lives. It shouldn&#39;t either. 
-Time can heal cuts and pains, so those cuts go away and you don&#39;t think of them again. But the loss of our daughter? Time will remind us over and over again that she&#39;s not here. Her first Christmas, first birthday, the birth of our son, our family coming together for a group photo, when she was supposed to join school. Over and over and over.
-Time gave us room to grow stronger. And not quickly, in that &quot;you&#39;re so strong&quot; way. But slowly. Over many many months and many years.
-As time goes on, I started to accept this hole in my life as part of my life. 
-Time didn&#39;t heal me, but I was able to begin to bear the weight of her loss. Just like going to the gym and lifting weights, I&#39;d gained the strength, but it&#39;s taken a long, long time. And I&#39;m not healed. I never will be. I&#39;m just able to carry more.
-You just get stronger. You have to.
-It doesn&#39;t mean it doesn&#39;t hurt anymore. It does. I&#39;m just able to carry that pain and make it mine and part of me, because I&#39;ve learnt how to.
-Time doesn&#39;t heal. It just looks that way from the outside in.
-Reposted from The Pastry Box Project]]></description><content:encoded><![CDATA[
-<p>My wife and I lost our daughter at full term in the last throes of labour to stillbirth. It was the darkest time of my life.</p>
-<p>Over the coming months we&#39;d hear the phrase &quot;time heals&quot;. <strong>It doesn&#39;t</strong>.</p>
-<p>How would it? We lost our daughter. She&#39;ll be 4 this year. I still miss her. My heart still yearns for her. I still cry for her.</p>
-<p>Time won&#39;t ever heal this hole in our lives. It shouldn&#39;t either. </p>
-<p>Time can heal cuts and pains, so those cuts go away and you don&#39;t think of them again. But the loss of our daughter? Time will remind us over and over again that she&#39;s not here. Her first Christmas, first birthday, the birth of our son, our family coming together for a group photo, when she was supposed to join school. Over and over and over.</p>
-<p>Time gave us room to grow <em>stronger</em>. And not quickly, in that &quot;you&#39;re so strong&quot; way. But slowly. Over many many months and many years.</p>
-<p>As time goes on, I started to accept this hole in my life as <em>part of my life</em>. </p>
-<p>Time didn&#39;t heal me, but I was able to <em>begin</em> to bear the weight of her loss. Just like going to the gym and lifting weights, I&#39;d gained the strength, but it&#39;s taken a long, long time. And I&#39;m not healed. I never will be. I&#39;m just able to carry more.</p>
-<p>You just get stronger. You have to.</p>
-<p>It doesn&#39;t mean it doesn&#39;t hurt anymore. It does. I&#39;m just able to carry that pain and make it mine and part of me, because I&#39;ve learnt how to.</p>
-<p>Time doesn&#39;t heal. It just looks that way from the outside in.</p>
-<p><small>Reposted from <a href="https://the-pastry-box-project.net/remy-sharp/2014-july-3">The Pastry Box Project</a></small></p>
 ]]></content:encoded></item></channel></rss>
