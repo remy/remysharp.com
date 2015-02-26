@@ -40,7 +40,7 @@ Someone who writes code for browsers. Likely from the school of view source, is 
 
 ## I am not alone
 
-![Tim Berners-Lee: web developer](/images/tbl-developer.jpg)
+![Tim Berners-Lee: web developer](https://remysharp.com/images/tbl-developer.jpg)
 
 The picture above is an (infamous) screen grab from the [Web Platform](http://www.webplatform.org/) introduction [video](https://www.youtube.com/watch?v=Ug6XAw6hzaw). Of Sir Tim Berners-Lee. The *creator* of The Web.
 
