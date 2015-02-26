@@ -38,7 +38,7 @@ What "web developer" *does* mean *to me* though, is this:
 
 Someone who writes code for browsers. Likely from the school of view source, is comfortable with drop-in libraries, understands standards and *best practice* techniques. But mostly, **a tinkerer.**
 
-## I'm not alone
+## I am not alone
 
 ![Tim Berners-Lee: web developer](/images/tbl-developer.jpg)
 
