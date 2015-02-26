@@ -144,12 +144,5 @@
     "tags": [
       "web"
     ]
-  },
-  "i-am-web-developer": {
-    "title": "I'm a web developer. Not an engineer.",
-    "date": "2015-02-06 12:00:00",
-    "complete": false,
-    "inprogress": true,
-    "tags": ["web"]
   }
 }
