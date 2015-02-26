@@ -4,7 +4,7 @@
 
 – Me, [6-Feb 2015](https://twitter.com/rem/status/563708407337996288)
 
-This seemed to hit a cord with a few people, and others asked if I could embellish on those thoughts. So here it is.
+This seemed to strike a chord with a few people, and others asked if I could embellish on those thoughts. So here it is.
 
 <!--more-->
 
