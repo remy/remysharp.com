@@ -144,5 +144,14 @@
     "tags": [
       "web"
     ]
+  },
+  "how-tabs-should-work": {
+    "title": "How tabs should work",
+    "date": "2015-03-03 12:00:00",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }
