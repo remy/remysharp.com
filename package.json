@@ -8,16 +8,19 @@
     "build": "node server.js compile",
     "start": "node_modules/.bin/harp start"
   },
+  "bin": {
+    "blog": "./bin/cli.js"
+  },
   "author": "Remy Sharp",
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "harp": "~0.13.0",
-    "st": "~0.5.1",
     "glob": "~4.0.5",
+    "harp": "~0.13.0",
     "moment": "~2.8.2",
+    "promise": "^6.0.1",
+    "router-stupid": "~0.7.0",
     "semver": "~3.0.1",
-    "promise": "~6.0.0",
-    "router-stupid": "~0.7.0"
+    "st": "~0.5.1"
   }
 }
