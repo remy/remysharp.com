@@ -37,7 +37,7 @@ Equally, if you want to make the API public to anyone to access, you can use:
     header('Access-Control-Allow-Origin: *');
     ?>
 
-As simple live example of this can be seen here: [jsbin.com/oxiyi4](http://jsbin.com/oxiyi4) which makes a request to [remysharp.com/demo/cors.php](http://remysharp.com/demo/cors.php) which includes a rule that allows any origin to access the resource.
+As simple live example of this can be seen here: [jsbin.com/oxiyi4/1](http://jsbin.com/oxiyi4/1) which makes a request to [remysharp.com/demo/cors.php](http://remysharp.com/demo/cors.php) which includes a rule that allows any origin to access the resource.
 
 This is simple and easy. However, it's the *preflight* that causes confusion. That's where it all went wrong for me.
 
@@ -54,7 +54,7 @@ By default, there's no preflight, so why was this a problem for me?
 Most JavaScript libraries send a custom header in the XHR request which can be sniffed on the server side to allow us to simple detect an Ajax request:
 
     <?php
-    $ajax = isset($_SERVER['HTTP_X_REQUESTED_WITH']) && 
+    $ajax = isset($_SERVER['HTTP_X_REQUESTED_WITH']) &&
             $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest';
 
     if ($ajax) {
@@ -62,7 +62,7 @@ Most JavaScript libraries send a custom header in the XHR request which can be s
     }
     ?>
 
-This way my server side code handles regular traffic differently to Ajax traffic. 
+This way my server side code handles regular traffic differently to Ajax traffic.
 
 When I manually set the `x-requested-with` header on the XHR object, it triggered the preflight, which is where it all hit the fan.
 
