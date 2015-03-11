@@ -79,7 +79,9 @@ Here's a few resources I found useful:
 - [The 4 Hour Body](http://www.amazon.co.uk/4-Hour-Body-uncommon-incredible-superhuman/dp/0091939526/ref=sr_1_1)
 - [My Fitness Pal](http://www.myfitnesspal.com/) - site and app for Android & iPhone, allowing you to scan barcodes to determine your macros
 - [The Diet Kitchen](http://thedk.co.uk/) - just recently found this & [youtube channel](https://www.youtube.com/user/thedietkitchen), but lots of good looking recipes available
-- Kamil Ogórek's [nutrition](http://kamilogorek.pl/nutrition/) & [training](http://kamilogorek.pl/training/) resources
+- [Kamil Ogórek](https://twitter.com/kamilogorek)'s [nutrition](http://kamilogorek.pl/nutrition/) & [training](http://kamilogorek.pl/training/) resources
+- [Why Calories Count](http://evidencemag.com/why-calories-count/)
+- Recommended book by Kamil: [Flexible Dieting Book](http://evidencemag.com/flexible-dieting-book/)
 
 ## Questions?
 
