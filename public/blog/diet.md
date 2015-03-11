@@ -1,6 +1,6 @@
 # Diet
 
-I've been asked a few times what's my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I've gone from 30%+ body fat (obese) to 13.75% (*just* inside athlete categorisation) over 2 years.
+I've been asked a few times what's my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I've gone from 30%+ body fat (obese) to 11.75% (inside athlete categorisation) over 2 years.
 
 <!--more-->
 
