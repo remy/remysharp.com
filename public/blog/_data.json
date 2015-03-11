@@ -3267,5 +3267,15 @@
     "inprogress": true,
     "published": true,
     "tags": ["web"]
+  },
+   "diet": {
+    "title": "Diet",
+    "date": "2015-03-11 14:30:00",
+    "complete": true,
+    "published": true,
+    "inprogress": true,
+    "tags": [
+      "personal"
+    ]
   }
 }

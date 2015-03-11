@@ -48,7 +48,7 @@ Just to be clear: this is not *a* diet, this is just *my* diet. This is based on
 
 I've broken my day into the times that I eat. When I include more than one item, it means that I'll rotate any of these foods. Where I've included links, it's either to the specific product or recipes.
 
-Note that this is also based on working from an office that only had a fridge, but no heating equipment.
+Note that this is also based on working from an office that only had a fridge, but no heating equipment. And yes, it's dull. It doesn't vary that much, but heck, when I was buying the same sandwich 3 times a week from the cornershop it's like that was variation!
 
 | When        | What            |
 | ------------- |:-------------:|
@@ -64,6 +64,12 @@ Note that this is also based on working from an office that only had a fridge, b
 I would pre-cook 3-4 lunches (chicken and taco salad) each week (ideally on Sunday, but possibly in the morning when I've been slack). I've got lots of tupperware and keep it in the fridge (and yeah, the chicken gets dry). I'm definitely weakest at breakfast. I'd love it to be scrambled eggs with salmon flakes, but this has worked for me.
 
 My big pro tip: I have alarms reminding me when I need to eat, because without them, I'd just soldier on and forget. Not good.
+
+<div class="update">
+**Addendum:** since I wrote this post quite a while ago now (even though I've just published it), I've since changed my diet. For 2 months I increased from 1,500kcals to 2,000kcals, and as of this week, I'm trying to hit 2,200kcals.
+
+I'm eating larger meals throughout the day in place of the "snack" bars, and my breakfast is around 400-500kcals via a [shake I make](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-oatmea-choco-banana-strawberry-shake-md), which I rather like.
+</div>
 
 ## Resources
 
