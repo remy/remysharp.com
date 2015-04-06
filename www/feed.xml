@@ -1,4 +1,57 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Wed, 11 Mar 2015 14:30:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Diet</title><guid isPermaLink="false">diet</guid><link>http://remysharp.com/2015/03/11/diet</link><pubDate>Wed, 11 Mar 2015 14:30:00 +0000</pubDate><description><![CDATA[I&#39;ve been asked a few times what&#39;s my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I&#39;ve gone from 30%+ body fat (obese) to 11.75% (inside athlete categorisation) over 2 years.]]></description><content:encoded><![CDATA[
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 06 Apr 2015 14:00:46 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Moment is quickly becoming my new jQuery!</title><guid isPermaLink="false">moment-is-quickly-becoming-my-new-jquery</guid><link>http://remysharp.com/2015/04/06/moment-is-quickly-becoming-my-new-jquery</link><pubDate>Mon, 06 Apr 2015 14:00:46 +0000</pubDate><description><![CDATA[What exactly does that mean? Well, working with the DOM pre-jQuery was a total nightmare of hoop jumping and remembering strange, backward, twisty-hand ways of moving and manipulating the DOM. Back in 2006, you drop in jQuery, and boom, you&#39;re done. But, over the years, I could see my jQuery code was getting lazy (and overly heavy handed).
+Working with dates is a nightmare. The library moment.js beautifully and simply removes quite a bit of the pain.]]></description><content:encoded><![CDATA[
+<p>What exactly does that mean? Well, working with the DOM pre-jQuery was a total nightmare of hoop jumping and remembering strange, backward, twisty-hand ways of moving and manipulating the DOM. Back in 2006, you drop in jQuery, and boom, you&#39;re done. But, over the years, I could see my jQuery code was getting lazy (and overly heavy handed).</p>
+<p>Working with <a href="https://www.youtube.com/watch?v=-5wpm-gesOY">dates is a nightmare</a>. The library <a href="http://momentjs.com">moment.js</a> beautifully and simply removes <em>quite a bit</em> of the pain.</p>
+<p>In JavaScript, the <code>Date</code> object was originally a straight port from the Java (<a href="https://twitter.com/rem/status/585074626868445184">ref</a>), which means getting into a nice format like <code>2015-09-13</code> is quite a bit of fudderling. Moment takes the pain away.</p>
+<p>Then it also gives us comparisons, formatting options, parsing, loads and loads of awesome stuff. Which explains why it&#39;s part of my default stack and appears in all my projects.</p>
+<p>Nearly all my handlebar projects have this partial included for instance:</p>
+<pre><code class="language-js">hbs.registerHelper(&#39;moment&#39;, function (date, format) {
+  return moment(date).format(format);
+});</code></pre>
+<p>Except here&#39;s the rub, as with my jQuery code, I&#39;ve gotten a little too generous with moment, and now I&#39;m seeing one of our production projects with the CPU running at 100+% (how?!) most of the time, and dipping inside (via <code>node --prof</code>), I can see most of the time is spent in moment (doing regexp, parsing, formatting and so on).</p>
+<p>There&#39;s a bunch of optimisations I can, and <em>am</em> doing, but here&#39;s an example I wanted to share.</p>
+<h2>Refactoring out the laziness</h2>
+<p>I have a handlebar helper that will try to match the day of two arguments, typically these arguments are timestamps, but it can also be the word &quot;today&quot;.</p>
+<p>Here&#39;s the original source:</p>
+<pre><code class="language-js">// healthy doses of line breaks for legibility in this blog post
+hbs.registerHelper(&#39;matchDate&#39;, function (date, match, opts) {
+  var matchDate = moment(
+    match === &#39;today&#39; ?
+    moment().add(config.offset, &#39;hour&#39;) :
+    match
+  );
+
+  if (moment(date).format(&#39;YYYY-MM-DD&#39;) ==
+    moment(matchDate).format(&#39;YYYY-MM-DD&#39;)) {
+
+    return opts.fn(this);
+
+  }
+});
+
+/* usage:
+{{#matchDate @root.showtime date}}class=&quot;highlight&quot;{{/matchDate}}
+*/</code></pre>
+<p>Reasonably cruft free, and pretty quick to write. But wait a second...looking at the code carefully, I can <em>now</em> see that in the best case, there&#39;s <em>three</em> calls to moment. Worst case: there&#39;s four!</p>
+<p>Moment is great, but it&#39;s too easy (for me) to get lazy. I&#39;ve re-factored the code, and now it looks like this:</p>
+<pre><code class="language-js">hbs.registerHelper(&#39;matchDate&#39;, function (date, match, opts) {
+  var matchDate;
+  if (match === &#39;today&#39;) {
+    matchDate = moment().add(config.offset, &#39;hour&#39;);
+  } else {
+    matchDate = moment(match);
+  }
+
+  // using &#39;day&#39; on isSame will check if it&#39;s the same &quot;day&quot;
+  if (matchDate.isSame(date, &#39;day&#39;)) {
+    return opts.fn(this);
+  }
+});</code></pre>
+<p>Now just <em>one</em> call to moment (regardless of the path). There&#39;s probably an additional constructor call to moment (in the <code>isSame</code> parser), but it&#39;s still a lot better. The wider impact was this function (and many others like it) were being called hundreds of times on our main pages, which meant hundreds multiplied upwards many times, and quickly I understand the CPU hog.</p>
+<h2>TL;DR: know your APIs</h2>
+<p>This laziness was partly due to being really familiar with the low hanging functions, like <code>format</code>, instead of knowing the API really well and understanding all the ways I could have used the library.</p>
+<p>// filed under &quot;duh&quot;</p>
+]]></content:encoded></item><item><title>Diet</title><guid isPermaLink="false">diet</guid><link>http://remysharp.com/2015/03/11/diet</link><pubDate>Wed, 11 Mar 2015 14:30:00 +0000</pubDate><description><![CDATA[I&#39;ve been asked a few times what&#39;s my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I&#39;ve gone from 30%+ body fat (obese) to 11.75% (inside athlete categorisation) over 2 years.]]></description><content:encoded><![CDATA[
 <p>I&#39;ve been asked a few times what&#39;s my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I&#39;ve gone from 30%+ body fat (obese) to 11.75% (inside athlete categorisation) over 2 years.</p>
 <p><img src="/images/2012-2014.jpg" alt="2012 - 2014"></p>
 <h2>Purpose</h2>
@@ -1588,99 +1641,4 @@ Reposted from The Pastry Box Project]]></description><content:encoded><![CDATA[
 <p>I always think of Tia when I look at that picture. She&#39;s not here any more. She doesn&#39;t exist in my world today. But she&#39;s always with me. She <em>has</em> left a mark. In my heart. I think of her and miss her. Other people can&#39;t see that, but she <em>is</em> here, with me.</p>
 <p>A person doesn&#39;t have to be with you for you to love them. Just remember them. And love them. And they&#39;ll live on, with you.</p>
 <p><small>Reposted from <a href="https://the-pastry-box-project.net/remy-sharp/2014-august-26">The Pastry Box Project</a></small></p>
-]]></content:encoded></item><item><title>WordPress -&gt; Ghost -&gt; Harp (part 1)</title><guid isPermaLink="false">wordpress-ghost-harp-pt1</guid><link>http://remysharp.com/2014/09/18/wordpress-ghost-harp-pt1</link><pubDate>Thu, 18 Sep 2014 12:00:00 +0000</pubDate><description><![CDATA[I&#39;ve been running my &quot;b:log&quot; on WordPress since late 2006, but today I give you the node backed blog.
-This is a two part blog post, the first covering why I moved, what I tried and a few of the high level issues I ran in to. Part two will cover some of the technical detail that goes in to running my blog on the new node platform.
-These posts are not intended as walkthrough on how to do it yourself, but simply sharing my experience and bumps I ran into on the way, hoping to impart some useful knowledge along the way.]]></description><content:encoded><![CDATA[
-<p>I&#39;ve been running my &quot;b:log&quot; on WordPress since late <a href="/2006">2006</a>, but today I give you the node backed blog.</p>
-<p>This is a two part blog post, the first covering why I moved, what I tried and a few of the high level issues I ran in to. Part two will cover some of the technical detail that goes in to running my blog on the new node platform.</p>
-<p>These posts are not intended as walkthrough on how to do it yourself, but simply sharing my experience and bumps I ran into on the way, hoping to impart some useful knowledge along the way.</p>
-<hr>
-<p>Over the years I&#39;ve had all the injections of Viagra adverts and the like over and over and over. Whenever I want to change anything, I&#39;d tend to give up, and for a few years now, I&#39;ve really wanted the source of my blog posts available in (something like) github.</p>
-<p>This post is about the move and how I run my blog now.</p>
-<h2>My goals</h2>
-<p>In a totally ideal world, I wanted:</p>
-<ul>
-<li>A fast blogging platform (not particularly for publishing, but for serving)</li>
-<li>Backed by JavaScript (Node specifically) - because it&#39;s the most familiar language to me</li>
-<li>Edit links for posts to go to github allowing anyone to make a suggested edit</li>
-<li>Archives and tag listings</li>
-<li>URLs would be customisable (because I have old URLs that I want to support)</li>
-<li>Could run on a free hosting platform like Heroku</li>
-<li>As a bonus, I could hack and improve the system</li>
-</ul>
-<p>TL;DR here&#39;s the full source of my blog as it is today, on github: <a href="github.com/remy/remysharp.com"><a href="https://github.com/remy/remysharp.com/">https://github.com/remy/remysharp.com/</a></a>.</p>
-<h2>Ghost</h2>
-<p>I knew that I wanted to move to a node backed platform. Ghost seemed like the best fit, and I&#39;ve had the pleasure of meeting and listening to John O&#39;Nolan and Hannah Wolfe speak about Ghost, and I complete buy into the philosophy.</p>
-<p>Exporting WordPress posts (and pages) to Ghost was actually very simple (I used the developer version of Ghost locally).</p>
-<p>The only bump in the road was the error messaging during the Ghost import was pretty vague. But checking the devtools console yielded the answer, a 324 from my server during the upload process. So I tweaked nginx to allow for larger files to be uploaded and bosh. Fixed.</p>
-<p>The next trick was the comments - which Disqus seemed like the default that everyone moves to. Obviously nothing to do with Ghost, but this process was tricky. The best advice I can give if you&#39;re doing this and keep hitting failed imports is: validate the XML (w3c validator is just fine), and hand-fix the invalid XML.</p>
-<h3>Why I didn&#39;t stick with Ghost</h3>
-<p>For the record, I think Ghost is an excellent platform for most users, particularly if they&#39;re coming to blogging for the first time or wanting to shift away from WordPress.</p>
-<p>However, being a developer I wanted to add a few custom tweaks, specifically I wanted an archive page, a handful of URL rewrite rules and a few of the Ghost ways of doing things weren&#39;t quite what I wanted.</p>
-<p>One particular example is all my old WordPress posts had split markers in them which Ghost doesn&#39;t support. They do have support for creating excepts, but if you want HTML you can&#39;t (at time of writing) append a read more to the link.</p>
-<p>I tried to contribute to the Ghost project, but I ended up going down a rabbit hole for what was effectively a tiny change (submitting a pull request to a Ghost dependency Downsize).</p>
-<p>The (understandable) problem is that Hannah and the Ghost team are producing code that works in a great deal of environments and so a quick PR here and there are great, but I can understand why they&#39;re not merged in right away if at all: there&#39;s a much bigger picture to consider.</p>
-<p>I thought about just forking Ghost and permanently running my own version, but there&#39;s a fairly big system to inherit when all I&#39;m doing is serving pages...which I had done with Harp.js before.</p>
-<p>So I made the jump to Harp.</p>
-<h3>Ghost to Harp</h3>
-<p>Harp is a static site generator. I&#39;ve used it in the past for <a href="http://2014.full-frontal.org">our conference site</a> this year and for the <a href="http://jsbin.com/help">JS Bin help &amp; blog</a> so I was already familiar with it.</p>
-<p>However, harp requires static markdown files, so I went about connecting to the Ghost database via sqlite3 and exporting each of these records out as a static HTML file, whilst building up the <code>_data.json</code> file required by harp to represent the metadata.</p>
-<p>The code I used to convert is on github here: <a href="https://github.com/remy/ghost-harp">remy/ghost-harp</a>. <em>Disclaimer</em>: I wrote this for my own database and requirements, so this may not work for you out of the box.</p>
-<p>The conversion process is pretty simple, read the sqlite database, write to files. So I ended up with a folder structure like this:</p>
-<pre><code class="language-nohighlight">.
-├── harp.json
-└── public
-    ├── _data.json
-    ├── about.md
-    ├── blog
-    │   ├── 2007-moments.md
-    │   ├── 8-questions-after-ie-pissed-the-community-off.md
-    │   ├── _data.json
-    │   ├── _drafts
-    │   │   ├── _data.json
-    │   │   ├── my-velveteen-rabbit.md
-    │   │   └── why-i-prefer-mobile-web-apps-to-native-apps.md
-    │   ├── a-better-twitter-search.md
-    │   ├── wordpress-tagging-and-textmate.md
-    │   └── youre-paying-to-speak.md
-    ├── talks.md
-    └── twitter.md</code></pre>
-<p>Some contents are going to be in HTML, but Ghost seemed to put my HTML posts in the markdown column (and since it&#39;s valid, it doesn&#39;t really matter).</p>
-<p>One significant tweak I made was to put the post title <em>into</em> the post itself. For example, if you look at the source <a href="https://github.com/remy/remysharp.com/blob/master/public/about.md">about</a> page, you&#39;ll see the title in the markdown. Ghost separates out the title and the body when you&#39;re editing, but I wanted a single markdown file.</p>
-<p>The next task was to fire up harp and have it running from my newly generated <code>public</code> directory.</p>
-<h2>Harp</h2>
-<p>Now that all my content is in the <code>public/blog</code> directory (via my little rewrite script) harp could serve my content. Using a simple (empty) <code>harp.json</code> as the config, harp automatically knows to serve anything under <code>public</code> as the root of the site (i.e. <code>/blog/foo</code> will serve the file <code>/public/blog/foo.md</code>):</p>
-<p>My specific requirements for using harp were:</p>
-<ul>
-<li>Serves <em>static</em> content (so I&#39;d have to compile to static .html)</li>
-<li>Serves in production <em>without</em> the <code>.html</code> extension visible</li>
-<li>Support rewriting of URLs, so that I could maintain my original URL structure of <code>/&lt;year&gt;/&lt;month&gt;/&lt;day&gt;/&lt;post&gt;</code> rather than pointing to <code>/blog/&lt;post&gt;</code></li>
-<li>I <em>really</em> wanted an archive, since I was simplifying a lot of my blog design, and losing a <em>lot</em> of navigation</li>
-</ul>
-<p>In the end, I had to create my own custom <code>server.js</code> that would run a bespoke router (I did use an existing library, but I needed changes, so I forked my own copy).</p>
-<p>Harp certainly made things harder than using Ghost, but I had the flexability I needed.</p>
-<p>I&#39;m particularly proud of the <a href="/archive">archive</a> page, partly because I managed to write it entirely with Jade (which over the years I&#39;m slowly starting to warm to) and partly because I now have a page that lists <em>all</em> my posts since the first in 2006!</p>
-<p>The version I&#39;m running today satisfies all the goals I outlined at the start of the project, and more.</p>
-<p>A few bonus features I built are:</p>
-<ul>
-<li>I can add <code>/edit</code> to any page to quickly jump to github to edit (along with edit links being on all the posts)</li>
-<li>All the old demos and uploads from my WordPress site are hosted on Amazon S3 and redirected to via my <code>server.js</code></li>
-<li>My development environment is slightly different to production, such as drafts are visible and the disqus comments are removed</li>
-</ul>
-<p>The <em>one</em> thing I&#39;d like harp to be better at would be knowing what to regenerate. Due to this my release process involves rebuilding the entire blog site (~300 posts) and then pushing the changes to github and then heroku (where I&#39;m now hosting my blog) - though this is effectively an rsync, so it&#39;s not everything that goes up.</p>
-<h2>The final product</h2>
-<p>The final product and platform consists of:</p>
-<ul>
-<li>Statically generated content in <code>/www</code></li>
-<li>Source control in github</li>
-<li>Production is hosted on a single dyno on Heroku</li>
-<li>Using <a href="https://dnsimple.com/r/5bc02f2ef8976f">dnsimple</a> for <code>ALIAS</code> hosting to the heroku instance (so I can serve &quot;naked&quot; domains)</li>
-<li>CloudFlare fronts the production blog</li>
-<li>The major and minor version are used to cachebust the CSS &amp; JavaScript, due to this, it means changes to content are a patch release and all others are minor (or major) releases</li>
-<li>The release process is a bash-like makefile that does all the compiling and revisioning for me</li>
-</ul>
-<p>So my whole release process for this blog post is now:</p>
-<pre><code class="language-bash">$ make release-patch publish</code></pre>
-<p>And boom, just like that, you&#39;re reading the post!</p>
-<p>In part 2, I&#39;ll explain some of the code that&#39;s used to drive my blog and some of the tricks I had to use to get harp to play exactly the way I wanted.</p>
 ]]></content:encoded></item></channel></rss>
