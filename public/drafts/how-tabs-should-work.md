@@ -16,6 +16,19 @@ So this post is my definition of how a tabbing system should work, and *one* app
 - Since tabs are clickable, the user can *open in a new tab/window* and the page correctly loads with the right tab open
 - Browser native back/forward button correctly changes the state of the selected tab (think about it working exactly as if there was no JavaScript in place)
 
+## The shitmus test
+
+Like a litmus test, here's a couple of quick ways you can tell if a tabbing systems is poorly implemented:
+
+- Back button doesn't work
+- The tab isn't a link
+
+These two basic things are, to me, the most basic of things that should pass.
+
+## Why is this important?
+
+Because the people who push their "native" apps on users can't have more reasons why the web sucks. If something as basic as a tab doesn't work, obviously there's more ammo to push a closed native app or platform on your users.
+
 ## Progressive enhancement
 
 Ooh, a controversial phrase! Let's think about this for a moment. If you're like me and have written a dozen dozen tab systems, then it's likely you've out all the tab content in the page then used JavaScript to hide the non-selected panels, then show as appropriate.
