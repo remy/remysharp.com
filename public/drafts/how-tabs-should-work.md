@@ -12,7 +12,7 @@ So this post is my definition of how a tabbing system should work, and *one* app
   - Clickable
   - Have block layout
   - Have their href pointing to the `id` of the panel element
-  - Uses correct cursor (ie.
+  - Uses correct cursor (ie. `cursor: pointer`)
 - Since tabs are clickable, the user can *open in a new tab/window* and the page correctly loads with the right tab open
 - Browser native back/forward button correctly changes the state of the selected tab (think about it working exactly as if there was no JavaScript in place)
 
@@ -20,10 +20,10 @@ So this post is my definition of how a tabbing system should work, and *one* app
 
 Like a litmus test, here's a couple of quick ways you can tell if a tabbing systems is poorly implemented:
 
-- Back button doesn't work
-- The tab isn't a link
+- Change tab, then use the bac button (or keyboard shortcut) and it breaks
+- The tab isn't a link, so I can't open it in a new tab
 
-These two basic things are, to me, the most basic of things that should pass.
+These two basic things are, to me, the most basic of systems that should pass.
 
 ## Why is this important?
 
@@ -31,7 +31,7 @@ Because the people who push their "native" apps on users can't have more reasons
 
 ## Progressive enhancement
 
-Ooh, a controversial phrase! Let's think about this for a moment. If you're like me and have written a dozen dozen tab systems, then it's likely you've out all the tab content in the page then used JavaScript to hide the non-selected panels, then show as appropriate.
+If you're like me and have written a dozen dozen tab systems, then it's likely you've out all the tab content in the page then used JavaScript to hide the non-selected panels, then show as appropriate.
 
 The upside, at the least, is you're "SEO friendly" and you're progressively enhancing. The massive downside is the sheer amount of content (and bytes) going over the wire (yes, footprint when you're chucking a tonne of JavaScript to your visitor is always a factor).
 
@@ -41,7 +41,7 @@ But now we have a problem: you can't use a url fragment to identify the panel fr
 
 On the server you need to be able to handle both regular GET requests and requests that accept `application/json` because the panel in our enhanced version will make an ajax request for just the fragment of content we want.
 
-## URI fragment or addressable URL?
+## URI fragment, addressable URL or query string?
 
 A URI fragment would be using `mysite.com/config#content` to show the *content* panel. a fully addressable URL would be `mysite.com/config/content` *or* using a query string (by way of "filtering" the page): `mysite.com/config?tab=content`.
 
