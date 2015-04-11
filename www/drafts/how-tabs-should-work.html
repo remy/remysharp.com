@@ -4,7 +4,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-how-tabs-should-work-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2015/04/06/moment-is-quickly-becoming-my-new-jquery" title="Moment is quickly becoming my new jQuery!">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 6-Apr 2015</div><article class="post"><h1 class="title"><a href="/drafts/how-tabs-should-work">How tabs should work</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/how-tabs-should-work.md">(edit)</a></small></h1><div class="post-content">
+ga('send', 'pageview');</script></head><body id="drafts-how-tabs-should-work-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2015/04/06/moment-is-quickly-becoming-my-new-jquery" title="Moment is quickly becoming my new jQuery!">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 11-Apr 2015</div><article class="post"><h1 class="title"><a href="/drafts/how-tabs-should-work">How tabs should work</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/how-tabs-should-work.md">(edit)</a></small></h1><div class="post-content">
 <p>Tabs in browsers (not <em>browser tabs</em>) are one of the oldest custom UI elements in a browser that I can think of. They&#39;ve been done to death. But, sadly, the majority of times I come across them, the tabs have been badly, or rather <em>partially</em> implemented.</p>
 <p>So this post is my definition of how a tabbing system should work, and <em>one</em> approach of implementing that.</p>
 <h2>Requirements: what makes the perfect tab?</h2>
@@ -15,7 +15,7 @@ ga('send', 'pageview');</script></head><body id="drafts-how-tabs-should-work-pag
 <li>Clickable</li>
 <li>Have block layout</li>
 <li>Have their href pointing to the <code>id</code> of the panel element</li>
-<li>Uses correct cursor (ie.</li>
+<li>Uses correct cursor (ie. <code>cursor: pointer</code>)</li>
 </ul>
 </li>
 <li>Since tabs are clickable, the user can <em>open in a new tab/window</em> and the page correctly loads with the right tab open</li>
@@ -24,19 +24,19 @@ ga('send', 'pageview');</script></head><body id="drafts-how-tabs-should-work-pag
 <h2>The shitmus test</h2>
 <p>Like a litmus test, here&#39;s a couple of quick ways you can tell if a tabbing systems is poorly implemented:</p>
 <ul>
-<li>Back button doesn&#39;t work</li>
-<li>The tab isn&#39;t a link</li>
+<li>Change tab, then use the bac button (or keyboard shortcut) and it breaks</li>
+<li>The tab isn&#39;t a link, so I can&#39;t open it in a new tab</li>
 </ul>
-<p>These two basic things are, to me, the most basic of things that should pass.</p>
+<p>These two basic things are, to me, the most basic of systems that should pass.</p>
 <h2>Why is this important?</h2>
 <p>Because the people who push their &quot;native&quot; apps on users can&#39;t have more reasons why the web sucks. If something as basic as a tab doesn&#39;t work, obviously there&#39;s more ammo to push a closed native app or platform on your users.</p>
 <h2>Progressive enhancement</h2>
-<p>Ooh, a controversial phrase! Let&#39;s think about this for a moment. If you&#39;re like me and have written a dozen dozen tab systems, then it&#39;s likely you&#39;ve out all the tab content in the page then used JavaScript to hide the non-selected panels, then show as appropriate.</p>
+<p>If you&#39;re like me and have written a dozen dozen tab systems, then it&#39;s likely you&#39;ve out all the tab content in the page then used JavaScript to hide the non-selected panels, then show as appropriate.</p>
 <p>The upside, at the least, is you&#39;re &quot;SEO friendly&quot; and you&#39;re progressively enhancing. The massive downside is the sheer amount of content (and bytes) going over the wire (yes, footprint when you&#39;re chucking a tonne of JavaScript to your visitor is always a factor).</p>
 <p>So the better approach would be to load only the panel the user is interested on the server side.</p>
 <p>But now we have a problem: you can&#39;t use a url fragment to identify the panel from the tab link. So you need a full url. Is that really a problem?</p>
 <p>On the server you need to be able to handle both regular GET requests and requests that accept <code>application/json</code> because the panel in our enhanced version will make an ajax request for just the fragment of content we want.</p>
-<h2>URI fragment or addressable URL?</h2>
+<h2>URI fragment, addressable URL or query string?</h2>
 <p>A URI fragment would be using <code>mysite.com/config#content</code> to show the <em>content</em> panel. a fully addressable URL would be <code>mysite.com/config/content</code> <em>or</em> using a query string (by way of &quot;filtering&quot; the page): <code>mysite.com/config?tab=content</code>.</p>
 <h2>HTML and CSS</h2>
 <p>Easy.</p>
