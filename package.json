@@ -3,6 +3,7 @@
   "version": "2.19.21",
   "description": "Remy Sharp's b:log",
   "main": "server.js",
+  "engines" : { "node" : ">=0.10.3 <0.12" },
   "scripts": {
     "test": "node_modules/.bin/harp compile",
     "build": "node server.js compile",
