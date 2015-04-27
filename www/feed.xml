@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 06 Apr 2015 14:00:46 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Moment is quickly becoming my new jQuery!</title><guid isPermaLink="false">moment-is-quickly-becoming-my-new-jquery</guid><link>http://remysharp.com/2015/04/06/moment-is-quickly-becoming-my-new-jquery</link><pubDate>Mon, 06 Apr 2015 14:00:46 +0000</pubDate><description><![CDATA[What exactly does that mean? Well, working with the DOM pre-jQuery was a total nightmare of hoop jumping and remembering strange, backward, twisty-hand ways of moving and manipulating the DOM. Back in 2006, you drop in jQuery, and boom, you&#39;re done. But, over the years, I could see my jQuery code was getting lazy (and overly heavy handed).
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 27 Apr 2015 11:45:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>screen: Persistent Terminal Sessions</title><guid isPermaLink="false">screen</guid><link>http://remysharp.com/2015/04/27/screen</link><pubDate>Mon, 27 Apr 2015 11:45:00 +0000</pubDate><description><![CDATA[Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.
+Screen is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time.]]></description><content:encoded><![CDATA[
+<p>Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.</p>
+<p><a href="http://www.gnu.org/software/screen/manual/screen.html">Screen</a> is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time.</p>
+<p>I personally use screen a lot with <a href="http://nodejs.org">Node.js</a> web servers - so I can kick off the process, and resume my terminal session to check logs or errors or to restart the process in case it died.</p>
+<p>This article is an introduction to screen for the average Joe/anne developers with a few tips and tricks.</p>
+<h2>Installing</h2>
+<p>Screen is a unix-y tool, so with Ubuntu I&#39;d use <code>apt-get</code> - it&#39;s also possible it&#39;s pre-installed on the machine (just type <code>screen</code> to find out):</p>
+<pre><code>sudo apt-get install screen</code></pre>
+<h2>Instant win with screen</h2>
+<p>When I remote in to a machine, I run <code>screen</code> and it starts a new session (actually called a window - but I&#39;ll come on to more about these later). There&#39;s some blurb about what screen is, I hit return, and the session is ready.</p>
+<p>From here I might start my process. Let&#39;s say I&#39;m doing some large database export.</p>
+<p>Now I need to <em>detach</em> from the screen so I can cleanly close the remote session or do something else whilst the export is happening. I type the command sequence:</p>
+<pre><code>ctrl-a d</code></pre>
+<p>This will leave the session running and detach from the screen so you&#39;re back to your original terminal prompt.</p>
+<p>To resume your screen session:</p>
+<pre><code>screen -r</code></pre>
+<p>This will take you back to your screen session.</p>
+<p>But what if my connection drops and closes whilst I&#39;m inside of screen? When I resume my ssh session, the screen <em>could</em> still be attached, so that when I run <code>screen -r</code> it won&#39;t resume. This is simple to get around, you can detach the screen from <em>outside</em> of the screen session (and in our case, immediately resume using <code>-r</code>):</p>
+<pre><code>screen -rd</code></pre>
+<p>So now you&#39;ve got basic minimum use of screen, how about using some of it&#39;s features? Multiple screens, multiple windows, naming screen sessions &amp; windows, setting defaults in the screen like scroll back, or displaying the title of the screen in the terminal.</p>
+<h2>Screen commands</h2>
+<p>When you run screen more than once, you&#39;ll have multiple screen sessions on the go. To list the available screens:</p>
+<pre><code>screen -ls</code></pre>
+<p>If you have more than one, you&#39;ll need to name the screen you want to resume:</p>
+<pre><code>$ screen -ls
+There are screens on:
+    17566.ttys001.remys-mba (Detached)
+    18778.ttys001.remys-mba (Detached)
+    19014.ttys001.remys-mba (Detached)
+
+$ screen -r 18778</code></pre>
+<p>This will resume the second screen (identified by it&#39;s process id). You can also resume last screen using <code>screen -RR</code>. But resuming using PIDs is ugly, so let&#39;s name the screens as we create them using the <code>-S</code> argument (this names the socket the screen connects to):</p>
+<pre><code>$ screen -S database-dump
+[ctrl-a d]
+$ screen -ls
+There are screens on:
+    17566.ttys001.remys-mba (Detached)
+    18778.ttys001.remys-mba (Detached)
+    19014.ttys001.remys-mba (Detached)
+    18898.database-dump (Detached)
+
+$ screen -r database-dump</code></pre>
+<p>Now we have multiple named screens, let&#39;s look at multiple windows inside of a screen.</p>
+<h2>Screen windowing</h2>
+<p>Screen supports having multiple &quot;windows&quot; inside a screen session. So you can have one screen and multiple windows dealing with specific jobs.</p>
+<p>Inside of a screen, use the command sequence to create a new window:</p>
+<pre><code>ctrl-a c</code></pre>
+<p>The initial window is 0, second is 1 and so on, and there&#39;s a number of ways to switch windows:</p>
+<pre><code>ctrl-a [n]     // where [n] is the window number
+ctrl-a ctrl-a  // switch to the last used window
+ctrl-a &quot;       // show a list of all the windows
+ctrl-a A       // change the title of this window</code></pre>
+<p>There&#39;s <a href="http://linux.about.com/od/Bash_Scripting_Solutions/a/The-Linux-Screen-Terminal-Window-Manager-Key-Bindings.htm">lots more key bindings</a> you can use inside of screen that allows you to navigate the windows beyond the scope of this article.</p>
+<h2>Tricks</h2>
+<p>Even if you use screen in it&#39;s simplest form (as I usually do), I wanted to share a few tricks I found whilst digging deeper in to screen.</p>
+<h3>Lazy continuous integration</h3>
+<p>This is a pretty dirty method, but it&#39;s worked for me in the past when I&#39;ve just wanted something to quickly work: <code>screen</code> + <code>watch</code> + <code>git pull</code> = <a href="https://remysharp.com/2012/06/16/development-trick-auto-updating-auto-reloading">auto deploy</a></p>
+<h3>Multiuser screens</h3>
+<p>To connect a second (or more) users to an existing screen session, use:</p>
+<pre><code>screen -rx</code></pre>
+<p>Instead of detaching any users attached to the session (which is what would happen if we used <code>-r</code>) this allows me to join the session and anything I type in my window is echoed to any other users connected to the screen.</p>
+<p>Maybe this could useful for remote support, or perhaps training. I&#39;ve not used this in the wild yet, but it&#39;s certainly a fun idea!</p>
+<h3>Keeping History</h3>
+<p>One problem with screen is the scroll back. If you scroll up in a screen, it doesn&#39;t scroll the history back, but the screen itself just scrolls away. To scroll back <em>inside</em> of the screen, you execute the <code>ctrl-a [</code> command. Now you can use your keyboard to navigate up and down (this is actually in &quot;copy mode&quot;). You can hit escape to return back to the prompt.</p>
+<p>What might be more useful than a scroll back is a log of the screen session, which can be toggled on using <code>ctrl-a H</code>. This can be enabled by default with a <code>.screenrc</code> file though.</p>
+<h3>Screen Defaults</h3>
+<p>Finally, I&#39;ll you with my own <code>.screenrc</code>. Create this file in your home directory, and this can configure your startup options for screen:</p>
+<pre><code># Always show a status line in the window footer
+hardstatus on
+hardstatus alwayslastline
+hardstatus string &quot;%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a &quot;
+
+# Autodetach session on hangup instead of
+# terminating screen completely
+autodetach on
+
+# Turn off the splash screen
+startup_message off
+
+# set log on all windows
+deflog on</code></pre>
+<p><small>Reposted from <a href="http://webadvent.org/2012/persistent-terminal-sessions-by-remy-sharp">Web Advent 2012</a></small></p>
+]]></content:encoded></item><item><title>Moment is quickly becoming my new jQuery!</title><guid isPermaLink="false">moment-is-quickly-becoming-my-new-jquery</guid><link>http://remysharp.com/2015/04/06/moment-is-quickly-becoming-my-new-jquery</link><pubDate>Mon, 06 Apr 2015 14:00:46 +0000</pubDate><description><![CDATA[What exactly does that mean? Well, working with the DOM pre-jQuery was a total nightmare of hoop jumping and remembering strange, backward, twisty-hand ways of moving and manipulating the DOM. Back in 2006, you drop in jQuery, and boom, you&#39;re done. But, over the years, I could see my jQuery code was getting lazy (and overly heavy handed).
 Working with dates is a nightmare. The library moment.js beautifully and simply removes quite a bit of the pain.]]></description><content:encoded><![CDATA[
 <p>What exactly does that mean? Well, working with the DOM pre-jQuery was a total nightmare of hoop jumping and remembering strange, backward, twisty-hand ways of moving and manipulating the DOM. Back in 2006, you drop in jQuery, and boom, you&#39;re done. But, over the years, I could see my jQuery code was getting lazy (and overly heavy handed).</p>
 <p>Working with <a href="https://www.youtube.com/watch?v=-5wpm-gesOY">dates is a nightmare</a>. The library <a href="http://momentjs.com">moment.js</a> beautifully and simply removes <em>quite a bit</em> of the pain.</p>
@@ -1606,39 +1689,4 @@ posts = partial(&#39;posts&#39;, { filter: function (post) { return post.tags.in
 </ol>
 <p>The version bump has to happen first so that the version I used to cache bust in the compiled output is correct (otherwise you bump after the compilation, and then your released version is one step ahead of the version that appears in the source).</p>
 <p>And that&#39;s it! Here&#39;s the full running <a href="https://github.com/remy/remysharp.com">source to remysharp.com</a> - feel free to help yourself to anything that&#39;s useful for your own blogs or sites.</p>
-]]></content:encoded></item><item><title>My  Velveteen Rabbit</title><guid isPermaLink="false">my-velveteen-rabbit</guid><link>http://remysharp.com/2014/09/24/my-velveteen-rabbit</link><pubDate>Wed, 24 Sep 2014 16:30:00 +0000</pubDate><description><![CDATA[This is the Velveteen Rabbit. The same picture hangs in my house.
-I&#39;ve never bought any artwork in my life previously. I&#39;ve never really &quot;got it&quot;.
-I walked past the picture in a shop window most days back from the gym, and something kept reaching out to me. I&#39;d stop and just look at the picture for several minutes before continuing my journey.
-One time I even passed the picture, then turned back to spend a few idle minutes contemplating what it was that I drawn to.
-My wife, Julie, eventually told me if something was pulling me so strongly, I should buy it. So now it hangs in my house.
-I realised quickly what it was.
-
-We lost our daughter, Tia to stillbirth on August 31 2010. My wife, after 9 months was finally in labour, and between the hours of labour and getting to hospital, she was lost. She never came home with us.
-I have no proof that she exists. There were no baby clothes, no balloons, no happy photos.
-It was like she didn&#39;t exist at all, and that somehow her existence was invalid.
-I struggled with this a lot. I still do at times.
-
-But I see the picture of Velveteen Rabbit. He stands there, upright and proud. Standing against the wind, feeling it on his fur and blowing his ears back. Defiant with love. &quot;I shall exist&quot;.
-In that moment, that tiny moment, the Velveteen Rabbit does exist, against all odds. He&#39;s loved, and seen.
-I always think of Tia when I look at that picture. She&#39;s not here any more. She doesn&#39;t exist in my world today. But she&#39;s always with me. She has left a mark. In my heart. I think of her and miss her. Other people can&#39;t see that, but she is here, with me.
-A person doesn&#39;t have to be with you for you to love them. Just remember them. And love them. And they&#39;ll live on, with you.
-Reposted from The Pastry Box Project]]></description><content:encoded><![CDATA[
-<p><img src="/images/spring.jpg?" alt="The Velveteen Rabbit" style="display: block; max-width: 100%; width: 40%; margin: 0 auto; margin-right: 20px; float: left;"></p>
-<p>This is the Velveteen Rabbit. The same picture hangs in my house.</p>
-<p>I&#39;ve never bought any artwork in my life previously. I&#39;ve never really &quot;got it&quot;.</p>
-<p>I walked past the picture in a shop window most days back from the gym, and something kept reaching out to me. I&#39;d stop and just look at the picture for several minutes before continuing my journey.</p>
-<p>One time I even passed the picture, then turned back to spend a few idle minutes contemplating what it was that I drawn to.</p>
-<p>My wife, Julie, eventually told me if something was pulling me so strongly, I should buy it. So now it hangs in my house.</p>
-<p>I realised quickly what it was.</p>
-<hr>
-<p>We lost our daughter, Tia to stillbirth on August 31 2010. My wife, after 9 months was finally in labour, and between the hours of labour and getting to hospital, she was lost. She never came home with us.</p>
-<p>I have no proof that she exists. There were no baby clothes, no balloons, no happy photos.</p>
-<p>It was like she didn&#39;t exist at all, and that somehow her existence was invalid.</p>
-<p>I struggled with this a lot. I still do at times.</p>
-<hr>
-<p>But I see the picture of Velveteen Rabbit. He stands there, upright and proud. Standing against the wind, feeling it on his fur and blowing his ears back. Defiant with love. &quot;I <em>shall</em> exist&quot;.</p>
-<p>In that moment, that tiny moment, the Velveteen Rabbit does exist, against all odds. He&#39;s loved, and seen.</p>
-<p>I always think of Tia when I look at that picture. She&#39;s not here any more. She doesn&#39;t exist in my world today. But she&#39;s always with me. She <em>has</em> left a mark. In my heart. I think of her and miss her. Other people can&#39;t see that, but she <em>is</em> here, with me.</p>
-<p>A person doesn&#39;t have to be with you for you to love them. Just remember them. And love them. And they&#39;ll live on, with you.</p>
-<p><small>Reposted from <a href="https://the-pastry-box-project.net/remy-sharp/2014-august-26">The Pastry Box Project</a></small></p>
 ]]></content:encoded></item></channel></rss>
