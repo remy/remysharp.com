@@ -6,7 +6,7 @@ So this post is my definition of how a tabbing system should work, and *one* app
 
 ## Requirements: what makes the perfect tab?
 
-1. All content is navigable available without JavaScript (crawler compatible and lo-js compact).
+1. All content is navigable available without JavaScript (crawler compatible and lo-js compatible).
 - Aria roles.
 - The *tabs* are anchor links that are:
   - Clickable.
