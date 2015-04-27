@@ -4,6 +4,8 @@ Have you ever had a remote terminal session running only have your connection dr
 
 [Screen](http://www.gnu.org/software/screen/manual/screen.html) is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time.
 
+<!--more-->
+
 I personally use screen a lot with [Node.js](http://nodejs.org) web servers - so I can kick off the process, and resume my terminal session to check logs or errors or to restart the process in case it died.
 
 This article is an introduction to screen for the average Joe/anne developers with a few tips and tricks.
@@ -89,6 +91,10 @@ There's [lots more key bindings](http://linux.about.com/od/Bash_Scripting_Soluti
 ## Tricks
 
 Even if you use screen in it's simplest form (as I usually do), I wanted to share a few tricks I found whilst digging deeper in to screen.
+
+### Lazy continuous integration
+
+This is a pretty dirty method, but it's worked for me in the past when I've just wanted something to quickly work: `screen` + `watch` + `git pull` = [auto deploy](https://remysharp.com/2012/06/16/development-trick-auto-updating-auto-reloading)
 
 ### Multiuser screens
 

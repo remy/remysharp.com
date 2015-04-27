@@ -3287,7 +3287,7 @@
       "code"
     ]
   },
-  "screen: Persistent Terminal Sessions": {
+  "screen": {
     "title": "screen: Persistent Terminal Sessions",
     "date": "2015-04-27 11:45:00",
     "published": true,
