@@ -8,13 +8,22 @@ var path = require('path');
 var moment = require('moment');
 var Promise = require('promise');
 var readline = require('readline');
+var shell = require('shelljs');
 var fs = require('then-fs');
+var exec = require('child_process').exec;
 var rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
 });
 
 var draftDir = path.resolve(process.cwd(), 'public', 'drafts');
+var publishedDir = path.resolve(process.cwd(), 'public', 'blog');
+
+function readJSON(file) {
+  return fs.readFile(file, 'utf8').then(function (data) {
+    return JSON.parse(data);
+  });
+}
 
 function slugify(s) {
   return (s || '')
@@ -26,8 +35,7 @@ function slugify(s) {
 }
 
 function draft(title, tags) {
-  return new Promise(function (resolve, reject) {
-    var drafts = require(path.resolve(draftDir, '_data.json'));
+  return readJSON(path.resolve(draftDir, '_data.json')).then(function (drafts) {
     var slug = slugify(title);
 
     if (!title) {
@@ -50,8 +58,56 @@ function draft(title, tags) {
   });
 }
 
-function publish() {
+function publish(title) {
+  title = title.toLowerCase();
+  console.log('title %s', title);
+  return readJSON(path.resolve(draftDir, '_data.json')).then(function (drafts) {
+    var picks = Object.keys(drafts).map(function (slug) {
+      drafts[slug].slug = slug;
+      return drafts[slug];
+    }).reduce(function (prev, curr) {
+      if (curr.title && curr.title.toLowerCase().indexOf(title) !== -1) {
+        prev.push(curr);
+      }
+      return prev;
+    }, []);
 
+    if (picks.length === 1) {
+      var post = picks[0];
+      console.log('publishing ' + post.title);
+
+      var source = path.resolve(draftDir, slug + '.md');
+      var target = path.resolve(publishedDir, slug + '.md');
+
+      var dir = path.resolve(publishedDir, '_data.json');
+      return readJSON(dir)
+        .then(function (published) {
+          post.published = true;
+          post.date = moment().format('YYYY-MM-DD HH:mm:ss');
+          published.push(post);
+          fs.writeFile(dir, JSON.stringify(published, '', 2));
+        }).then(function () {
+          return new Promise(function (resolve, reject) {
+            exec('git mv ' + source + ' ' + target, function (error, stdout, stderr) {
+              if (error !== null) {
+                reject(error);
+              } else if (stderr) {
+                reject(new Error(stderr.toString()));
+              } else {
+                resolve();
+              }
+            });
+          });
+        }).then(function () {
+          console.log('done');
+        });
+    } else if (picks.length === 0) {
+      console.log('Not matches found');
+    } else {
+      console.log('Found multiple matches');
+      console.log(picks);
+    }
+  });
 }
 
 function release() {
@@ -107,7 +163,11 @@ function blog() {
   var args = process.argv.slice(2);
   if (args.length > 0) {
     var action = actions[args[0]] ? args.shift() : 'prompt';
-    actions[action](args.join(' '));
+    actions[action](args.join(' '))
+    .then(process.exit).catch(function (error) {
+      console.log(error.stack);
+      process.exit(1);
+    });
   } else {
     prompt();
   }
