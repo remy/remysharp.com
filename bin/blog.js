@@ -52,9 +52,9 @@ function draft(title, tags) {
     };
 
     var body = '# ' + title + '\n\n';
-    resolve(fs.writeFile(path.resolve(draftDir, slug + '.md'), body).then(function () {
+    return fs.writeFile(path.resolve(draftDir, slug + '.md'), body).then(function () {
       return fs.writeFile(path.resolve(draftDir, '_data.json'), JSON.stringify(drafts, '', 2));
-    }));
+    });
   });
 }
 

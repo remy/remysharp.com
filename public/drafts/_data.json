@@ -144,5 +144,14 @@
     "tags": [
       "code"
     ]
+  },
+  "bind": {
+    "title": "Tiny two way data binding",
+    "date": "2015-05-17 11:56:10",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }
