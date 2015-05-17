@@ -6,6 +6,8 @@ However, sometimes that's not possible as there's some 3rd party API dependancy 
 
 So this was my quick work around to easily mock out the API so my development process could be faster.
 
+<!--more-->
+
 ## The aims
 
 The aim was to, without much work at all, replicate specific API calls *without* modifying my application code. i.e. I could switch my mock API on and off as I needed.
