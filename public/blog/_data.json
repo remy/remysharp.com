@@ -3121,7 +3121,7 @@
       "web"
     ]
   },
-   "my-velveteen-rabbit": {
+  "my-velveteen-rabbit": {
     "title": "My  Velveteen Rabbit",
     "date": "2014-09-24 16:30:00",
     "published": true,
@@ -3180,7 +3180,7 @@
       "html5"
     ]
   },
-    "my-five-promise-patterns": {
+  "my-five-promise-patterns": {
     "title": "My five promise patterns",
     "date": "2014-11-19 12:00:00",
     "published": true,
@@ -3209,7 +3209,7 @@
       "personal"
     ]
   },
-   "vatmoss": {
+  "vatmoss": {
     "title": "VATMOSS",
     "date": "2014-12-16 11:00:00",
     "complete": true,
@@ -3274,9 +3274,11 @@
     "date": "2015-02-26 11:00:00",
     "inprogress": true,
     "published": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
-   "diet": {
+  "diet": {
     "title": "Diet",
     "date": "2015-03-11 14:30:00",
     "complete": true,
@@ -3302,5 +3304,13 @@
     "tags": [
       "code"
     ]
+  },
+  "quick-technique-for-api-mocking": {
+    "title": "Quick technique for API mocking",
+    "date": "2015-05-18 13:00:00",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }
