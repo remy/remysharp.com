@@ -50,7 +50,7 @@ route.all('/feed/', function (req, res, next) {
 
 /* redirect to s3 hosted urls */
 route.all(/\/downloads\/(.*)$/, function (req, res, next) {
-  res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params[1] });
+  res.writeHead(302, { location: 'http://download.remysharp.com/' + req.params[1] });
   res.end();
 });
 
@@ -78,7 +78,7 @@ route.get(/^\/(.*)\/edit(\/)?$/, function (req, res, next) {
   }
 
   if (match.length) {
-    res.writeHead(302, { 'location': 'https://github.com/remy/remysharp.com/blob/master/public/' + match.shift() + '.md' });
+    res.writeHead(302, { location: 'https://github.com/remy/remysharp.com/blob/master/public/' + match.shift() + '.md' });
     return res.end();
   }
 
@@ -87,13 +87,13 @@ route.get(/^\/(.*)\/edit(\/)?$/, function (req, res, next) {
 
 /* redirect to s3 hosted urls */
 route.all('/wp-content/uploads/{year}/{month}/{filename}', function (req, res, next) {
-  res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params.filename });
+  res.writeHead(302, { location: 'http://download.remysharp.com/' + req.params.filename });
   res.end();
 });
 
 /* redirect to s3 hosted urls */
 route.all('/demo/{filename}', function (req, res, next) {
-  res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params.filename });
+  res.writeHead(302, { location: 'http://download.remysharp.com/' + req.params.filename });
   res.end();
 });
 
@@ -102,7 +102,7 @@ route.all('/{blog}?/{post}', function (req, res, next) {
   var post = blogs[req.params.post];
   if (post) {
     var url = moment(post.date).format('/YYYY/MM/DD/') + req.params.post;
-    res.writeHead(302, { 'location': url });
+    res.writeHead(302, { location: url });
     res.end();
     return;
   }
@@ -126,7 +126,7 @@ route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/, fu
     }
 
     if (params[5] === '/') {
-      res.writeHead(302, { 'location': req.url.replace(/(.)\/$/, '$1')});
+      res.writeHead(302, { location: req.url.replace(/(.)\/$/, '$1')});
       res.end();
       return;
     }
@@ -159,7 +159,7 @@ route.all(/^\/([a-z0-9\-]+)(\/?)$/i, function (req, res, next) {
     var matched = match.slice(-1).pop(); // use the latest
     var post = blogs[matched];
     var url = moment(post.date).format('/YYYY/MM/DD/') + matched;
-    res.writeHead(302, { 'location': url });
+    res.writeHead(302, { location: url });
     res.end();
     return;
   }
@@ -256,8 +256,8 @@ Promise.all(slugs.map(stat)).then(function (dates) {
 
   if (process.argv[2] === 'compile') {
     process.env.NODE_ENV = 'production';
-    harp.compile(__dirname, outputPath, function(errors){
-      if(errors) {
+    harp.compile(__dirname, outputPath, function (errors) {
+      if (errors) {
         console.log(JSON.stringify(errors, null, 2));
         process.exit(1);
       }
