@@ -172,7 +172,7 @@ var server = function (root) {
   // without .html on the end of the urls
   glob('**/*.html', {
     cwd: root,
-    dot: false
+    dot: false,
   }, function (er, files) {
     htmlFiles = files.map(function (file) {
       return '/' + file;

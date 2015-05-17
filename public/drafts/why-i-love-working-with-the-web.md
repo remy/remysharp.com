@@ -16,6 +16,8 @@ This hostile environment is what gets me excited. That challenge of getting my p
 
 I'm not saying that I achieve it every time. For example, I've strived to make jsbin.com work in IE7 and IE8 for many years, and somewhere along the line, we lost IE8 support (which I'll try to find time to fix one day too).
 
+## View Source: welcome in
 
+Can you imagine, when Tim Burners Lee created the first browser
 
 Do *you* love working on the web? Why?

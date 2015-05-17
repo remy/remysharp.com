@@ -6,8 +6,8 @@ So this post is my definition of how a tabbing system should work, and *one* app
 
 ## Requirements: what makes the perfect tab?
 
-- All content is navigable available without JavaScript (crawler compatible and lo-js compact)
-- Aria roles
+1. All content is navigable available without JavaScript (crawler compatible and lo-js compatible).
+- Aria roles.
 - The *tabs* are anchor links that are:
   - Clickable.
   - Have block layout.
@@ -56,7 +56,7 @@ I'm going to assume sub-content, so my markup would look like this:
 
 ## Progressive enhancement
 
-Ooh, a controversial phrase! Let's think about this for a moment. If you're like me and have written a dozen dozen tab systems, then it's likely you've out all the tab content in the page then used JavaScript to hide the non-selected panels, then show as appropriate.
+If you're like me and have written a dozen dozen tab systems, then it's likely you've out all the tab content in the page then used JavaScript to hide the non-selected panels, then show as appropriate.
 
 The upside, at the least, is you're "SEO friendly" and you're progressively enhancing. The massive downside is the sheer amount of content (and bytes) going over the wire (yes, footprint when you're chucking a tonne of JavaScript to your visitor is always a factor).
 
@@ -65,12 +65,6 @@ So the better approach would be to load only the panel the user is interested on
 But now we have a problem: you can't use a url fragment to identify the panel from the tab link. So you need a full url. Is that really a problem?
 
 On the server you need to be able to handle both regular GET requests and requests that accept `application/json` because the panel in our enhanced version will make an ajax request for just the fragment of content we want.
-
-## URI fragment or addressable URL?
-
-A URI fragment would be using `mysite.com/config#content` to show the *content* panel. a fully addressable URL would be `mysite.com/config/content` *or* using a query string (by way of "filtering" the page): `mysite.com/config?tab=content`.
-
-
 
 
 

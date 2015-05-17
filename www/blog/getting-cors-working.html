@@ -30,7 +30,7 @@ header(&#39;Access-Control-Allow-Origin: http://www.some-site.com&#39;);
 <pre><code>&lt;?php
 header(&#39;Access-Control-Allow-Origin: *&#39;);
 ?&gt;</code></pre>
-<p>As simple live example of this can be seen here: <a href="http://jsbin.com/oxiyi4">jsbin.com/oxiyi4</a> which makes a request to <a href="http://remysharp.com/demo/cors.php">remysharp.com/demo/cors.php</a> which includes a rule that allows any origin to access the resource.</p>
+<p>As simple live example of this can be seen here: <a href="http://jsbin.com/oxiyi4/1">jsbin.com/oxiyi4/1</a> which makes a request to <a href="http://remysharp.com/demo/cors.php">remysharp.com/demo/cors.php</a> which includes a rule that allows any origin to access the resource.</p>
 <p>This is simple and easy. However, it&#39;s the <em>preflight</em> that causes confusion. That&#39;s where it all went wrong for me.</p>
 <h2>Preflight</h2>
 <p>In <em>plain Remy language</em> preflight is an additional request the XHR object makes to make sure it&#39;s <em>allowed</em> to actually make the request.</p>
@@ -39,14 +39,14 @@ header(&#39;Access-Control-Allow-Origin: *&#39;);
 <h2>Detecting Ajax on the server</h2>
 <p>Most JavaScript libraries send a custom header in the XHR request which can be sniffed on the server side to allow us to simple detect an Ajax request:</p>
 <pre><code>&lt;?php
-$ajax = isset($_SERVER[&#39;HTTP_X_REQUESTED_WITH&#39;]) &amp;&amp; 
+$ajax = isset($_SERVER[&#39;HTTP_X_REQUESTED_WITH&#39;]) &amp;&amp;
         $_SERVER[&#39;HTTP_X_REQUESTED_WITH&#39;] == &#39;XMLHttpRequest&#39;;
 
 if ($ajax) {
   // handle specific Ajax differently...
 }
 ?&gt;</code></pre>
-<p>This way my server side code handles regular traffic differently to Ajax traffic. </p>
+<p>This way my server side code handles regular traffic differently to Ajax traffic.</p>
 <p>When I manually set the <code>x-requested-with</code> header on the XHR object, it triggered the preflight, which is where it all hit the fan.</p>
 <h2>Handling the preflight x-requested-with</h2>
 <p>The request process, with a preflight, if successful should look like the follow request exchange (note that I&#39;ve stripped some headers that weren&#39;t pertinent to this article, like User-Agent, etc).</p>

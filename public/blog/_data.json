@@ -1,4 +1,12 @@
 {
+  "auto-selecting-navigation": {
+    "title": "Auto-selecting navigation",
+    "date": "2006-06-17 14:00:52",
+    "published": true,
+    "tags": [
+      "code"
+    ]
+  },
   "flickr-geo-tags": {
     "title": "Flickr Geo Tags",
     "date": "2006-09-01 23:21:51",
@@ -3267,5 +3275,32 @@
     "inprogress": true,
     "published": true,
     "tags": ["web"]
+  },
+   "diet": {
+    "title": "Diet",
+    "date": "2015-03-11 14:30:00",
+    "complete": true,
+    "published": true,
+    "inprogress": true,
+    "tags": [
+      "personal"
+    ]
+  },
+  "moment-is-quickly-becoming-my-new-jquery": {
+    "title": "Moment is quickly becoming my new jQuery!",
+    "date": "2015-04-06 14:00:46",
+    "complete": true,
+    "published": true,
+    "tags": [
+      "code"
+    ]
+  },
+  "screen": {
+    "title": "screen: Persistent Terminal Sessions",
+    "date": "2015-04-27 11:45:00",
+    "published": true,
+    "tags": [
+      "code"
+    ]
   }
 }

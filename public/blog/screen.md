@@ -2,7 +2,9 @@
 
 Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.
 
-[Screen](http://www.gnu.org/software/screen/manual/screen.html) is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time. 
+[Screen](http://www.gnu.org/software/screen/manual/screen.html) is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time.
+
+<!--more-->
 
 I personally use screen a lot with [Node.js](http://nodejs.org) web servers - so I can kick off the process, and resume my terminal session to check logs or errors or to restart the process in case it died.
 
@@ -51,7 +53,7 @@ If you have more than one, you'll need to name the screen you want to resume:
         17566.ttys001.remys-mba (Detached)
         18778.ttys001.remys-mba (Detached)
         19014.ttys001.remys-mba (Detached)
-    
+
     $ screen -r 18778
 
 This will resume the second screen (identified by it's process id). You can also resume last screen using `screen -RR`. But resuming using PIDs is ugly, so let's name the screens as we create them using the `-S` argument (this names the socket the screen connects to):
@@ -64,14 +66,14 @@ This will resume the second screen (identified by it's process id). You can also
         18778.ttys001.remys-mba (Detached)
         19014.ttys001.remys-mba (Detached)
         18898.database-dump (Detached)
-    
+
     $ screen -r database-dump
 
 Now we have multiple named screens, let's look at multiple windows inside of a screen.
 
 ## Screen windowing
 
-Screen supports having multiple "windows" inside a screen session. So you can have one screen and multiple windows dealing with specific jobs. 
+Screen supports having multiple "windows" inside a screen session. So you can have one screen and multiple windows dealing with specific jobs.
 
 Inside of a screen, use the command sequence to create a new window:
 
@@ -89,6 +91,10 @@ There's [lots more key bindings](http://linux.about.com/od/Bash_Scripting_Soluti
 ## Tricks
 
 Even if you use screen in it's simplest form (as I usually do), I wanted to share a few tricks I found whilst digging deeper in to screen.
+
+### Lazy continuous integration
+
+This is a pretty dirty method, but it's worked for me in the past when I've just wanted something to quickly work: `screen` + `watch` + `git pull` = [auto deploy](https://remysharp.com/2012/06/16/development-trick-auto-updating-auto-reloading)
 
 ### Multiuser screens
 
@@ -114,14 +120,15 @@ Finally, I'll you with my own `.screenrc`. Create this file in your home directo
     hardstatus on
     hardstatus alwayslastline
     hardstatus string "%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a "
-                
-    # Autodetach session on hangup instead of 
+
+    # Autodetach session on hangup instead of
     # terminating screen completely
-    autodetach on 
-        
+    autodetach on
+
     # Turn off the splash screen
     startup_message off
 
     # set log on all windows
     deflog on
 
+<small>Reposted from [Web Advent 2012](http://webadvent.org/2012/persistent-terminal-sessions-by-remy-sharp)</small>

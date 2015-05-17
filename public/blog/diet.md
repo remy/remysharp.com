@@ -1,6 +1,6 @@
 # Diet
 
-I've been asked a few times what's my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I've gone from 30%+ body fat (obese) to 13.75% (*just* inside athlete categorisation) over 2 years.
+I've been asked a few times what's my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I've gone from 30%+ body fat (obese) to 11.75% (inside athlete categorisation) over 2 years.
 
 <!--more-->
 
@@ -48,7 +48,7 @@ Just to be clear: this is not *a* diet, this is just *my* diet. This is based on
 
 I've broken my day into the times that I eat. When I include more than one item, it means that I'll rotate any of these foods. Where I've included links, it's either to the specific product or recipes.
 
-Note that this is also based on working from an office that only had a fridge, but no heating equipment.
+Note that this is also based on working from an office that only had a fridge, but no heating equipment. And yes, it's dull. It doesn't vary that much, but heck, when I was buying the same sandwich 3 times a week from the cornershop it's like that was variation!
 
 | When        | What            |
 | ------------- |:-------------:|
@@ -65,6 +65,12 @@ I would pre-cook 3-4 lunches (chicken and taco salad) each week (ideally on Sund
 
 My big pro tip: I have alarms reminding me when I need to eat, because without them, I'd just soldier on and forget. Not good.
 
+<div class="update">
+**Addendum:** since I wrote this post quite a while ago now (even though I've just published it), I've since changed my diet. For 2 months I increased from 1,500kcals to 2,000kcals, and as of this week, I'm trying to hit 2,200kcals.
+
+I'm eating larger meals throughout the day in place of the "snack" bars, and my breakfast is around 400-500kcals via a [shake I make](https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-oatmea-choco-banana-strawberry-shake-md), which I rather like.
+</div>
+
 ## Resources
 
 Here's a few resources I found useful:
@@ -73,7 +79,9 @@ Here's a few resources I found useful:
 - [The 4 Hour Body](http://www.amazon.co.uk/4-Hour-Body-uncommon-incredible-superhuman/dp/0091939526/ref=sr_1_1)
 - [My Fitness Pal](http://www.myfitnesspal.com/) - site and app for Android & iPhone, allowing you to scan barcodes to determine your macros
 - [The Diet Kitchen](http://thedk.co.uk/) - just recently found this & [youtube channel](https://www.youtube.com/user/thedietkitchen), but lots of good looking recipes available
-- Kamil Ogórek's [nutrition](http://kamilogorek.pl/nutrition/) & [training](http://kamilogorek.pl/training/) resources
+- [Kamil Ogórek](https://twitter.com/kamilogorek)'s [nutrition](http://kamilogorek.pl/nutrition/) & [training](http://kamilogorek.pl/training/) resources
+- [Why Calories Count](http://evidencemag.com/why-calories-count/)
+- Recommended book by Kamil: [Flexible Dieting Book](http://evidencemag.com/flexible-dieting-book/)
 
 ## Questions?
 
