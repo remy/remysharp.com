@@ -76,16 +76,28 @@ function publish(title) {
       var post = picks[0];
       console.log('publishing ' + post.title);
 
+      var slug = post.slug;
       var source = path.resolve(draftDir, slug + '.md');
       var target = path.resolve(publishedDir, slug + '.md');
+      var publishedData = path.resolve(publishedDir, '_data.json');
 
-      var dir = path.resolve(publishedDir, '_data.json');
-      return readJSON(dir)
+      return readJSON(publishedData)
         .then(function (published) {
+          console.log(published);
           post.published = true;
           post.date = moment().format('YYYY-MM-DD HH:mm:ss');
-          published.push(post);
-          fs.writeFile(dir, JSON.stringify(published, '', 2));
+          published[post.slug] = post;
+          delete post.slug;
+          delete post.inprogress;
+          delete post.complete;
+          return fs.writeFile(publishedData, JSON.stringify(published, '', 2));
+        }).then(function () {
+          var draftData = path.resolve(draftDir, '_data.json');
+
+          return readJSON(draftData).then(function (drafts) {
+            delete drafts[slug];
+            return fs.writeFile(draftData, JSON.stringify(drafts, '', 2));
+          });
         }).then(function () {
           return new Promise(function (resolve, reject) {
             exec('git mv ' + source + ' ' + target, function (error, stdout, stderr) {
