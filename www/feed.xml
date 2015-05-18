@@ -1,4 +1,75 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 27 Apr 2015 11:45:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>screen: Persistent Terminal Sessions</title><guid isPermaLink="false">screen</guid><link>http://remysharp.com/2015/04/27/screen</link><pubDate>Mon, 27 Apr 2015 11:45:00 +0000</pubDate><description><![CDATA[Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 18 May 2015 13:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Quick technique for API mocking</title><guid isPermaLink="false">quick-technique-for-api-mocking</guid><link>http://remysharp.com/2015/05/18/quick-technique-for-api-mocking</link><pubDate>Mon, 18 May 2015 13:00:00 +0000</pubDate><description><![CDATA[During server software development (i.e. node) I always strive to work offline, in that my development workflow doesn&#39;t depend on any online services.
+However, sometimes that&#39;s not possible as there&#39;s some 3rd party API dependancy - as there was in my latest client work. The problem I found, was that the latency between my location and the 3rd party API was so high, that it was impacting on the workflow cycle of: debug, change, test, repeat. The load time was taking anywhere from 15-30 seconds each time.
+So this was my quick work around to easily mock out the API so my development process could be faster.]]></description><content:encoded><![CDATA[
+<p>During server software development (i.e. node) I always strive to work offline, in that my development workflow doesn&#39;t depend on any online services.</p>
+<p>However, sometimes that&#39;s not possible as there&#39;s some 3rd party API dependancy - as there was in my latest client work. The problem I found, was that the latency between my location and the 3rd party API was so high, that it was impacting on the workflow cycle of: debug, change, test, repeat. The load time was taking anywhere from 15-30 seconds each time.</p>
+<p>So this was my quick work around to easily mock out the API so my development process could be faster.</p>
+<h2>The aims</h2>
+<p>The aim was to, without much work at all, replicate specific API calls <em>without</em> modifying my application code. i.e. I could switch my mock API on and off as I needed.</p>
+<p>It was also important that the time required to put a mock API in place, did <em>not</em> outweigh the time lost on the latency. Specifically, if the custom mock API turned into days of work, it would have been a total waste of time.</p>
+<h2>The simple solution</h2>
+<p>This code uses <a href="http://expressjs.com">Express 4</a>. It&#39;s entirely possible that there was a library that already existed, but the small amount of code that I had to write wins over finding, researching, checking and learning a new library.</p>
+<h3>Capturing mock data</h3>
+<p>First I had to run my way through each API call and save the raw output as a <code>.json</code> file in a local directory (not tracked in git) called <code>mock-data</code>.</p>
+<p>Since all my internal API calls used a config value as the root of the API URL, it meant I could change my local config to point to my local mock API instead of the staging or production endpoint:</p>
+<pre><code class="language-js">var config = require(&#39;./config&#39;);
+var root = config.api;
+
+function getOrder(id) {
+  return request({ // a promise
+    url: root + &#39;/order&#39;,
+    type: &#39;json&#39;,
+    body {
+      id: id
+    }
+  });
+}</code></pre>
+<p>I would change my <code>config.api</code> value to point to `<a href="http://localhost/mock-api">http://localhost/mock-api</a>&#39; and the server I was developing would actually reply to the API requests using the code in the next section.</p>
+<h3>Mock API Code</h3>
+<p>The following code would be in (something like) <code>routes/mock-api.js</code>:</p>
+<pre><code class="language-js">var express = require(&#39;express&#39;);
+var fs = require(&#39;fs&#39;);
+var router = express.Router();
+// directory path to the mock json files
+var mockPath = __dirname + &#39;/mock-data/&#39;;
+
+var design = {
+  &#39;POST /order&#39;: &#39;getOrder&#39;,
+  &#39;POST /order/tickets&#39;: &#39;addTickets&#39;,
+  &#39;DELETE /order/tickets&#39;: &#39;removeTicket&#39;,
+}
+
+module.exports = router;
+
+Object.keys(design).forEach(function (req) {
+  var method = req.split(&#39; &#39;).shift();
+  var path = req.split(&#39; &#39;).pop();
+  var mock = &#39;{}&#39;;
+  try {
+    mock = require(mockPath + design[req]);
+  } catch (e) {}
+
+  router.route(path)[method.toLowerCase()](function (req, res) {
+    res.send(mock);
+  });
+});</code></pre>
+<p>In my main <code>routes.js</code> file I can then conditionally load up my mock router:</p>
+<pre><code>// snip...
+if (config.mock) {
+  app.use(&#39;/mock-api&#39;, require(&#39;./routes/mock-api&#39;));
+}</code></pre>
+<p>Now requests to my server (the same server I&#39;m doing my main development against), can respond to API requests with pre-baked data. Now my damn latency is a thing of the past!</p>
+<h2>Taking it further</h2>
+<p>I struggle to look at the above code without seeing ways to improve it - but as I pointed out in the aims: keep it simple, and keep the solution quick.</p>
+<p>Here&#39;s a few ideas that spring to mind that might make the code more useful in different situations:</p>
+<ul>
+<li>Respond with different file types (rather than only <code>.json</code>)</li>
+<li>Respond with inline JSON data (that would be defined in the <code>design</code>)</li>
+<li>Support variables in the URL to pick different static responses (like <code>GET /order/:id</code>)</li>
+</ul>
+<p>I have done some similar work in my <a href="https://github.com/remy/servedir#mocked-router">static server</a> which also has limited support for interpolation in the response.</p>
+<p>For now though, this simple version suits my requirements!</p>
+]]></content:encoded></item><item><title>screen: Persistent Terminal Sessions</title><guid isPermaLink="false">screen</guid><link>http://remysharp.com/2015/04/27/screen</link><pubDate>Mon, 27 Apr 2015 11:45:00 +0000</pubDate><description><![CDATA[Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.
 Screen is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time.]]></description><content:encoded><![CDATA[
 <p>Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.</p>
 <p><a href="http://www.gnu.org/software/screen/manual/screen.html">Screen</a> is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time.</p>
@@ -1562,131 +1633,4 @@ So here&#39;s my definition and distinction between web site and web app.]]></de
 <p>The future of web browsers is coming, and they&#39;re giving us more and more support for offline technology, through storage (for data caching) to control over the network (through <a href="https://github.com/slightlyoff/ServiceWorker">service workers</a>).</p>
 <p>If you&#39;re using progressive enhancement, then your web site can achieve both. However, I don&#39;t believe it&#39;s entirely possible to create a web app without the functionality that JavaScript provides. So there&#39;s is <em>some</em> expectation that a web app relies on JavaScript, but that&#39;s not what makes a web app.</p>
 <p>Now, next time you&#39;re asked to build a web app, at least you can have a feature set that you&#39;re working towards.</p>
-]]></content:encoded></item><item><title>WordPress -&gt; Ghost -&gt; Harp (part 2)</title><guid isPermaLink="false">wordpress-ghost-harp-pt2</guid><link>http://remysharp.com/2014/09/30/wordpress-ghost-harp-pt2</link><pubDate>Tue, 30 Sep 2014 9:00:00 +0000</pubDate><description><![CDATA[I wrote about moving away from WordPress to Ghost and then to Harp in part 1, this post details some of the specifics of my blog&#39;s implementation.]]></description><content:encoded><![CDATA[
-<p>I wrote about moving away from WordPress to Ghost and then to Harp in <a href="/2014/09/18/wordpress-ghost-harp-pt1">part 1</a>, this post details some of the specifics of my blog&#39;s implementation.</p>
-<h2>Technical overview</h2>
-<p>I&#39;m using <a href="http://harpjs.com">Harp</a> which is incredibly easy to get running with, but I&#39;m also running Harp as a dependency inside my own custom node web server which allows me to add a few bells a whistles to my implementation.</p>
-<ul>
-<li><a href="#custom-url-rewriting">Custom URL rewriting</a></li>
-<li><a href="#static-caching">Static caching</a></li>
-<li><a href="#use-of-special-helpers-inside-harp">Use of special helpers inside Harp, such as moment.js</a></li>
-<li><a href="#list-of-recently-modified-posts">List of recently modified posts</a></li>
-<li><a href="#archive--tag-pages-without-the-repetition-of-files">Archive &amp; tag pages without the repetition of files</a></li>
-<li><a href="#makefile-based-release-process">Makefile based release process</a></li>
-</ul>
-<h2>Custom URL rewriting</h2>
-<p>Since I was porting an existing blog, I wanted to ensure that the URLs didn&#39;t change. This meant supported my old <code>/year/month/day/title</code> format. Which over the years I dislike, but when I moved to Harp, I decided to drop the date from the body of my posts and allow the URL to speak for that metadata.</p>
-<p>I <em>also</em> wanted to host my old downloads and demos on Amazon S3, but the URLs from old posts would be relative to my blog, so I needed to rewrite these.</p>
-<p>I forked <a href="https://www.npmjs.org/package/router">router@npm</a> to create <a href="https://www.npmjs.org/package/router-stupid">router-stupid@npm</a> - which is essentially the same, slightly cut down, but importantly: if you modify the <code>req.url</code> in a route handler, that would affect the subsequent matched routes.</p>
-<p>Redirecting is simple:</p>
-<pre><code class="language-js">/* redirect to s3 hosted urls */
-route.all(&#39;/demo/{filename}&#39;, function (req, res, next) {
-  res.writeHead(302, { &#39;location&#39;: &#39;http://download.remysharp.com/&#39; + req.params.filename });
-  res.end();
-});</code></pre>
-<p>Supporting my date base URL format was trickier. The actual file lives in <code>/blog/&lt;title&gt;</code> so when the URL hits my static server, it needs to be in that form. So supporting date base URL requires:</p>
-<ol>
-<li>The URL format is correct</li>
-<li>The title of the post actually finds a post</li>
-<li>The date in the URL matches the date for the post</li>
-</ol>
-<pre><code class="language-js">/* main url handler: /{year}/{month}/{day}/{post} */
-route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/, function (req, res, next) {
-  var params = req.params;
-
-  // the title slug of the url
-  var post = blogs[params[4]];
-
-  // make sure we have a real post before even proceeding
-  if (post &amp;&amp; post.date) {
-    // test if the date matches
-
-    // post.date is a timestamp, so splitting gets us the date
-    var date = moment(post.date.split(&#39; &#39;)[0]);
-
-    var requestDate = params.slice(1, 4).join(&#39;-&#39;);
-
-    // compare the date of post _in the same format_ as requestDate
-    if (date.format(&#39;YYYY-MM-DD&#39;) !== requestDate) {
-      // if it&#39;s not good, move on - will likely result in a 404
-      return next();
-    }
-
-    // if there&#39;s a trailing slash, remove it and redirect
-    if (params[5] === &#39;/&#39;) {
-      res.writeHead(302, { &#39;location&#39;: req.url.replace(/(.)\/$/, &#39;$1&#39;)});
-      res.end();
-      return;
-    }
-
-    // this now allows Harp to pick up the correct post
-    req.url = &#39;/blog/&#39; + params[4];
-  }
-
-  // then let the rest of the router do it&#39;s work
-  next();
-});</code></pre>
-<h2>Static caching</h2>
-<p>Having used Harp in previous projects (<a href="https://github.com/jsbin/learn">JS Bin&#39;s documentation</a>, <a href="https://github.com/leftlogic/fullfrontalconf2014/">our event site</a> and <a href="https://github.com/leftlogic/leftlogic">my business site</a>) and have created <a href="https://npmjs.org/package/harp-static">harp-static@npm</a> which uses <a href="https://npmjs.org/package/st">st@npm</a> to cache and serve static files.</p>
-<p>So in my custom server, I point all routes down to the <code>st</code> served content. I also support hitting the URLs <em>without</em> <code>.html</code> at the end, again, to keep my old URLs working. I&#39;d recommend checking out the <a href="https://github.com/remy/harp-static">harp-static source</a> if this interests you.</p>
-<h2>Use of special helpers inside Harp</h2>
-<p>At present, if you want to use a library inside Harp, like <a href="http://momentjs.com">moment.js</a>, the work around for this is to create a <code>.jade</code> file with the source of moment.js (in this case) as script. Essentially the minified one line file prefixed with a <code>-</code> character.</p>
-<p>Then include the library in a common file, like the layout, and you have the helper available:</p>
-<pre><code class="language-jade">!- load the moment.js library for server side access
-!= partial(&#39;/js/moment&#39;)</code></pre>
-<p>Except this would break during compilation to static files. I&#39;m certain it&#39;s to do with my custom serving process, but the path would somehow be wrong (so the library wouldn&#39;t load and further down my code there would be exceptions in Jade about the library not existing).</p>
-<p>The <em>smart</em> way around this is to expose a global from <em>outside of Harp</em>. So in my <code>server.js</code> (that does all the routing, etc) I <code>require</code> in moment.js and then I <a href="https://github.com/remy/remysharp.com/blob/master/server.js#L26">expose it globally</a>:</p>
-<pre><code class="language-js">// this line, although dirty, ensures that Harp templates
-// have access to moment - which given the whole partial
-// import hack doesn&#39;t work consistently across dynamic vs
-// compiled, this is the cleanest solution.
-global.moment = moment;</code></pre>
-<p>Very simple, but now any Harp rendered file has access to moment.js. I use the same technique to expose the recently modified posts for listing on the homepage.</p>
-<h2>List of recently modified posts</h2>
-<p>The best way to get a list of all the post from <em>outside</em> of Harp (i.e. when you&#39;re requiring Harp as a dependency), is to simply load the <code>_data.json</code> file. It felt wrong initially, but it&#39;s perfect:</p>
-<pre><code class="language-js">var blogs = require(&#39;./public/blog/_data.json&#39;);
-var slugs = Object.keys(blogs);</code></pre>
-<p>Now I have an object lookup by slug to the actual blog posts <em>and</em> I have an array of the slugs.</p>
-<p>From this, I was able to <code>fs.stat</code> all the blog posts and sort to return the 3 most recently modified and then using the previous trick, expose it globally so it&#39;s included on my homepage (where <code>recent</code> is the global exposed in <code>server.js</code>):</p>
-<pre><code class="language-jade">each post in recent
-  li
-    a(href=&quot;#{ public.blog._data[post.slug].relative }&quot;) #{ public.blog._data[post.slug].title }
-    small &amp;nbsp;updated #{ moment(post.date).fromNow() }</code></pre>
-<h2>Archive &amp; tag pages without the repetition of files</h2>
-<p>There&#39;s two parts to this section. Firstly there&#39;s the support for individual years or tags without duplication of (too much) code. Secondly is the Jade code that runs the archive listing.</p>
-<h3>Reducing duplication of code</h3>
-<p>I <em>could</em> have a directory for each year there are blog posts (which I do have now) and each could contain the archive listing code. The problem (obviously) is duplication of code. You fix it one place, and (in my case, since I have 2006-2014) you have 8 files to update.</p>
-<p>Instead, a single file <code>index.jade</code> sits in tagged folder (and similarly with year folders) which contains:</p>
-<pre><code class="language-jade">!= partial(&#39;../../_partials/tag&#39;)</code></pre>
-<p>So we load a single partial. The <code>tag.jade</code> file simply reads the path of the request, and uses the last part as a filter against all the posts:</p>
-<pre><code class="language-jade">tag = filter === undefined ? current.path.slice(-2, -1)[0] : filter;
-posts = partial(&#39;posts&#39;, { filter: function (post) { return post.tags.indexOf(tag) !== -1 } })
-.post
-  h1.title Tagged with &quot;#{ tag }&quot;
-  .post-content
-    ul
-      while posts.length
-        post = posts.shift()
-        if post.date
-          li
-            a(href=&quot;#{ post.relative }&quot;) #{ post.title }
-            small.date #{ moment(post.date).format(&#39;D-MMM YYYY&#39;)}</code></pre>
-<p>Note that <code>partial(&#39;posts&#39;)</code> is a magic partial that simply returns an array of blog posts with the passed in filter applied.</p>
-<p>Simple. Now if I want to add more support for tags, I just create a directory and the simple <code>index.jade</code> and it works.</p>
-<h3>An archive listing</h3>
-<p>A while loop that looks for a year change in the date, then works through each year, popping from the posts array looping through each post in the month.</p>
-<p>It&#39;s pretty cool (I think) because it works for entire years <em>and</em> all years: <a href="https://github.com/remy/remysharp.com/blob/a198a4235634a3c7ac747ab403ac13bc49140a39/public/_partials/archive.jade">archive.jade</a></p>
-<h2>Makefile based release process</h2>
-<p>Disclaimer: this is a terrible use of a Makefile, it doesn&#39;t leverage <em>any</em> of the benefits of make, and honestly, it <em>could</em> be a bash script. However, I like that I can run <code>make publish</code>.</p>
-<p>Taking a lead from <a href="https://andreypopp.com/posts/2013-05-16-makefile-recipes-for-node-js.html">Makefile recipes for Node.js packages</a>, my <a href="https://github.com/remy/remysharp.com/blob/master/Makefile">makefile</a> allows me to run commands like:</p>
-<pre><code class="language-bash">$ make release-minor publish</code></pre>
-<p>The <code>release-*</code> tasks will:</p>
-<ol>
-<li>Bump the package version (according to patch/minor/major)</li>
-<li>Compile Harp to static files</li>
-<li>Commit all changes and tag</li>
-<li>Push to github</li>
-</ol>
-<p>The version bump has to happen first so that the version I used to cache bust in the compiled output is correct (otherwise you bump after the compilation, and then your released version is one step ahead of the version that appears in the source).</p>
-<p>And that&#39;s it! Here&#39;s the full running <a href="https://github.com/remy/remysharp.com">source to remysharp.com</a> - feel free to help yourself to anything that&#39;s useful for your own blogs or sites.</p>
 ]]></content:encoded></item></channel></rss>
