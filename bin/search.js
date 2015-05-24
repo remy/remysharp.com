@@ -9,10 +9,27 @@ var client = new elasticsearch.Client({
 
 client.search({
   index: 'myindex',
-  q: 'body:' + process.argv[2],
-  fields: 'title,date'
+  // q: 'body:' + process.argv[2],
+  body: {
+    query: {
+      match: {
+        body: process.argv[2]
+      }
+    }
+  },
+  fields: 'title,date,highlight',
+  highlight: {
+    fields: {
+      body: {
+        number_of_fragments: 6,
+        fragment_size: 20,
+      },
+    },
+  },
 }, function (error, response) {
+  console.log(util.inspect(response, {showHidden: false, depth: null}));
   response.hits.hits.forEach(function (res) {
+    // console.log(res);
     console.log(res.fields.title + ' -- https://remysharp.com/' + moment(res.fields.date.toString()).format('YYYY/MM/DD') + '/' + res._id + ' (score: %s)', res._score);
   });
 });

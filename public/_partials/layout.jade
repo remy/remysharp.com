@@ -8,7 +8,8 @@ html#remysharp-com
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     title= title || site_title
-    meta(name="description",content="#{site_description}")
+    - var desc = title === site_title ? title + ' :: ' + site_description : title || site_description
+    meta(name="description",content="#{desc}")
     meta(name="HandheldFriendly" content="True")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
 

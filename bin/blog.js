@@ -1,3 +1,4 @@
+'use strict';
 /**
  * 1. create draft
  * 2. publish draft
@@ -6,9 +7,9 @@
 
 var path = require('path');
 var moment = require('moment');
-var Promise = require('promise');
+var Promise = require('promise'); // jshint ignore:line
 var readline = require('readline');
-var shell = require('shelljs');
+// var shell = require('shelljs');
 var fs = require('then-fs');
 var exec = require('child_process').exec;
 var rl = readline.createInterface({
@@ -35,7 +36,8 @@ function slugify(s) {
 }
 
 function draft(title, tags) {
-  return readJSON(path.resolve(draftDir, '_data.json')).then(function (drafts) {
+  var dataPath = path.resolve(draftDir, '_data.json');
+  return readJSON(dataPath).then(function (drafts) {
     var slug = slugify(title);
 
     if (!title) {
@@ -52,9 +54,16 @@ function draft(title, tags) {
     };
 
     var body = '# ' + title + '\n\n';
-    return fs.writeFile(path.resolve(draftDir, slug + '.md'), body).then(function () {
-      return fs.writeFile(path.resolve(draftDir, '_data.json'), JSON.stringify(drafts, '', 2));
-    });
+
+    var filename = path.resolve(draftDir, slug + '.md');
+
+    return fs.writeFile(dataPath, JSON.stringify(drafts, '', 2))
+      .then(fs.exists(filename))
+      .then(function (exists) {
+        if (!exists) {
+          return fs.writeFile(filename, body);
+        }
+      });
   });
 }
 
@@ -126,14 +135,14 @@ function release() {
 
 }
 
-function get(prompt) {
-  return new Promise(function (resolve, reject) {
-    rl.question(prompt, function (answer) {
-      rl.pause();
-      resolve(answer.trim());
-    });
-  });
-}
+// function get(prompt) {
+//   return new Promise(function (resolve, reject) {
+//     rl.question(prompt, function (answer) {
+//       rl.pause();
+//       resolve(answer.trim());
+//     });
+//   });
+// }
 
 function prompt() {
   var title = '';
@@ -142,7 +151,6 @@ function prompt() {
   rl.setPrompt('title: ');
   rl.prompt();
 
-  var title = '';
   rl.on('line', function (line) {
     if (!title) {
       title = line.trim();
@@ -172,17 +180,23 @@ var actions = {
 };
 
 function blog() {
-  var args = process.argv.slice(2);
-  if (args.length > 0) {
-    var action = actions[args[0]] ? args.shift() : 'prompt';
-    actions[action](args.join(' '))
-    .then(process.exit).catch(function (error) {
-      console.log(error.stack);
-      process.exit(1);
-    });
-  } else {
-    prompt();
-  }
+  // litmus test
+  fs.exists(draftDir).then(function (ok) {
+    if (!ok) {
+      throw new Error('Need to be in a blog directory');
+    }
+    var args = process.argv.slice(2);
+    if (args.length > 0) {
+      var action = actions[args[0]] ? args.shift() : 'prompt';
+      return actions[action](args.join(' '))
+      .then(process.exit);
+    } else {
+      prompt();
+    }
+  }).catch(function (error) {
+    console.log(error.message);
+    process.exit(1);
+  });
 }
 
 module.exports = blog;
