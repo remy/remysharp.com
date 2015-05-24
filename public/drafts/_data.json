@@ -157,10 +157,19 @@
   "call-for-proposals-at-ffconf-2015": {
     "title": "Call for proposals at ffconf 2015",
     "date": "2015-05-24 09:46:48",
-    "complete": false,
+    "complete": true,
     "inprogress": true,
     "tags": [
       "web"
+    ]
+  },
+  "my-pebble": {
+    "title": "My Pebble",
+    "date": "2015-05-24 14:00:37",
+    "complete": true,
+    "inprogress": true,
+    "tags": [
+      "personal"
     ]
   }
 }
