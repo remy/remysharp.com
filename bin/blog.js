@@ -60,6 +60,7 @@ function draft(title, tags) {
     return fs.writeFile(dataPath, JSON.stringify(drafts, '', 2))
       .then(fs.exists(filename))
       .then(function (exists) {
+        console.log('> exists? ', exists, filename);
         if (!exists) {
           return fs.writeFile(filename, body);
         }

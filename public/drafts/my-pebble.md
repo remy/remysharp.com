@@ -54,7 +54,7 @@ I used [CloudPebble](https://cloudpebble.net) for all of the development I've do
 
 Although there's a couple of limitations in the JS apps, the simple fact is: I can create my ideas as JavaScript based Pebble apps in a matter of hours.
 
-I recently wrote a quick interface to a local bus time webapp that I wrote. Now from my wrist, in a few presses I have the bus times on my wrist.
+I recently wrote a [quick interface](https://github.com/remy/pebble-brighton-buses) to a [local bus time webapp](http://buses.leftlogic.com) that I wrote. Now from my wrist, in a few presses I have the bus times on my wrist.
 
 From a practical use, this is actually easier than using my phone because it takes a few seconds to do the geo-lookup and then request the content from the bus website, so when I'm rushing around in the morning, I don't have to mess around with my phone.
 
