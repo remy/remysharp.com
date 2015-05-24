@@ -58,9 +58,10 @@ function draft(title, tags) {
     var filename = path.resolve(draftDir, slug + '.md');
 
     return fs.writeFile(dataPath, JSON.stringify(drafts, '', 2))
-      .then(fs.exists(filename))
+      .then(function () {
+        return fs.exists(filename);
+      })
       .then(function (exists) {
-        console.log('> exists? ', exists, filename);
         if (!exists) {
           return fs.writeFile(filename, body);
         }
