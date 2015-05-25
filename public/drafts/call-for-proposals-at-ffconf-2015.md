@@ -6,7 +6,7 @@ As always, I also make sure I allot a few positions for CFP, so here's what our 
 
 <!--more-->
 
-So, if you think you've got something to share, then get in touch. I've included a few guidelines as to what I prefer from a proposal, and given you an idea of the kinds of topics I'm interested in hearing about this year.
+If you think you've got something to share, then get in touch. I've included a few guidelines as to what I prefer from a proposal, and given you an idea of the kinds of topics I'm interested in hearing about this year.
 
 You can also follow the [@ffconf](https://twitter.com/ffconf) twitter account for the latest announcements.
 
@@ -28,10 +28,12 @@ If you want to get an idea of the audience or who you proposal is for, the answe
 Topics that don't work, unless they're genuinely going to change the World, then CFPs like these generally fall to the bottom of the pile (sorry!):
 
 - Big library specific talks (React, Ember, Angular, jQuery, etc)
-- Your company's new product
-- Talks that are very similar to previous ffconf talks
+- Your company's new shiny product
+- Talks that are very similar to recent years of ffconf talks
 
-Send me the title of your talk, an outline of the talk and any extra information you want me to know about the idea: [events@leftlogic.com](mailto:events@leftlogic.com?subject=FF2014%20speaking%20propsal)
+Send me the title of your talk, an outline of the talk and any extra information you want me to know about the idea: [events@leftlogic.com](mailto:events@leftlogic.com?subject=ffconf2015%20speaking%20propsal).
+
+**It takes me a long time to process and decide on CFPs, so whilst there's no 8 sessions up on the site, it means your talk is still up for consideration. I will respond to everyone with a yay or nay eventually.** If you want to come to ffconf, regardless of whether your CFP is selected, please buy a ticket and if your talk is selected, the ticket will be refunded and returns to the public pool of tickets.
 
 ## Our promise to you
 
@@ -45,5 +47,6 @@ All our speakers are treated the same. We will:
 - 40 minute talk, generally we don't do Q&A and it's best to err on the side of "there is no wifi"
 - £500 honourium - I know it's not much, but it's a bit of spending money to say thanks
 - A free pass to the next ffconf, and for evermore part of our growing and much loved speaker alumni
+- If you bought a ticket for ffconf2015, we'll refund the ticket (as we don't expect, or want, our speakers to pay)
 
 So I hope to hear from you soon!
