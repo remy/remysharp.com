@@ -48,5 +48,6 @@ All our speakers are treated the same. We will:
 - £500 honourium - I know it's not much, but it's a bit of spending money to say thanks
 - A free pass to the next ffconf, and for evermore part of our growing and much loved speaker alumni
 - If you bought a ticket for ffconf2015, we'll refund the ticket (as we don't expect, or want, our speakers to pay)
+- Uphold our conference code of conduct, both for you, and our attendees (either will be, or based on [confcodeofconduct.com](http://confcodeofconduct.com))
 
 So I hope to hear from you soon!
