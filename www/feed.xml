@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 18 May 2015 13:00:00 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Quick technique for API mocking</title><guid isPermaLink="false">quick-technique-for-api-mocking</guid><link>http://remysharp.com/2015/05/18/quick-technique-for-api-mocking</link><pubDate>Mon, 18 May 2015 13:00:00 +0000</pubDate><description><![CDATA[During server software development (i.e. node) I always strive to work offline, in that my development workflow doesn&#39;t depend on any online services.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 25 May 2015 12:44:33 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Call for proposals at ffconf 2015</title><guid isPermaLink="false">call-for-proposals-at-ffconf-2015</guid><link>http://remysharp.com/2015/05/25/call-for-proposals-at-ffconf-2015</link><pubDate>Mon, 25 May 2015 12:44:33 +0000</pubDate><description><![CDATA[ffconf has it&#39;s event date (6-Nov 2015) and I&#39;ve been in the process of carefully curating the content I want to hear at this year&#39;s event again.
+As always, I also make sure I allot a few positions for CFP, so here&#39;s what our CFP looks like.]]></description><content:encoded><![CDATA[
+<p><a href="http://2015.ffconf.org">ffconf</a> has it&#39;s event date (6-Nov 2015) and I&#39;ve been in the process of carefully curating the content I want to hear at this year&#39;s event again.</p>
+<p>As always, I also make sure I allot a few positions for CFP, so here&#39;s what our CFP looks like.</p>
+<p>If you think you&#39;ve got something to share, then get in touch. I&#39;ve included a few guidelines as to what I prefer from a proposal, and given you an idea of the kinds of topics I&#39;m interested in hearing about this year.</p>
+<p>You can also follow the <a href="https://twitter.com/ffconf">@ffconf</a> twitter account for the latest announcements.</p>
+<p><img src="/images/ffconf-2015.gif" alt="ffconf 2015 site"></p>
+<h2>Proposal topic advice</h2>
+<p>I&#39;ve also included what you can expect as a speaker at our event too.</p>
+<p>A few topics that are of particular interest to me:</p>
+<ul>
+<li>Isomorphic JavaScript code and applications (ideally outside the world of &quot;easy with React&quot;)</li>
+<li>Sysops for web developers (I&#39;m particularly interested in Docker/container solutions for web developers)</li>
+<li>What we can learn in web development from other technology/disciplines</li>
+<li>&quot;You&#39;re doing it wrong&quot;</li>
+</ul>
+<p>If you want to get an idea of the audience or who you proposal is for, the answer is simple: me. I curate for content that <em>I want to hear and see</em>. So if you (roughly) know my work, then you know the audience.</p>
+<p>Topics that don&#39;t work, unless they&#39;re genuinely going to change the World, then CFPs like these generally fall to the bottom of the pile (sorry!):</p>
+<ul>
+<li>Big library specific talks (React, Ember, Angular, jQuery, etc)</li>
+<li>Your company&#39;s new shiny product</li>
+<li>Talks that are very similar to recent years of ffconf talks</li>
+</ul>
+<p>Send me the title of your talk, an outline of the talk and any extra information you want me to know about the idea: <a href="mailto:events@leftlogic.com?subject=ffconf2015%20speaking%20propsal">events@leftlogic.com</a>.</p>
+<p><strong>It takes me a long time to process and decide on CFPs, so whilst there&#39;s no 8 sessions up on the site, it means your talk is still up for consideration. I will respond to everyone with a yay or nay eventually.</strong> If you want to come to ffconf, regardless of whether your CFP is selected, please buy a ticket and if your talk is selected, the ticket will be refunded and returns to the public pool of tickets.</p>
+<h2>Our promise to you</h2>
+<p>All our speakers are treated the same. We will:</p>
+<ul>
+<li>Pay for your travel. If you&#39;re flying long haul, we&#39;ll upgrade you to premium class (or whatever the name is for &quot;above economy&quot;)</li>
+<li>Put you up in our &quot;speaker hotel&quot;. It&#39;s not that cool, but it&#39;s right in town and two minutes walk from our venue. We&#39;re also open to offering the hotel stay. If you want an extra day or two here and there, then that&#39;s cool too (obviously if everyone does this, it breaks our bank, but so far it&#39;s worked)</li>
+<li>Arrange your travel and help you with anything you need ahead of the event</li>
+<li>We can, if you need or want it, provide you with a mifi preloaded with data</li>
+<li>All your food and drinks provided for you during the day before and the day of the conference (don&#39;t expect to buy a drink at the after party)</li>
+<li>40 minute talk, generally we don&#39;t do Q&amp;A and it&#39;s best to err on the side of &quot;there is no wifi&quot;</li>
+<li>£500 honourium - I know it&#39;s not much, but it&#39;s a bit of spending money to say thanks</li>
+<li>A free pass to the next ffconf, and for evermore part of our growing and much loved speaker alumni</li>
+<li>If you bought a ticket for ffconf2015, we&#39;ll refund the ticket (as we don&#39;t expect, or want, our speakers to pay)</li>
+</ul>
+<p>So I hope to hear from you soon!</p>
+]]></content:encoded></item><item><title>Quick technique for API mocking</title><guid isPermaLink="false">quick-technique-for-api-mocking</guid><link>http://remysharp.com/2015/05/18/quick-technique-for-api-mocking</link><pubDate>Mon, 18 May 2015 13:00:00 +0000</pubDate><description><![CDATA[During server software development (i.e. node) I always strive to work offline, in that my development workflow doesn&#39;t depend on any online services.
 However, sometimes that&#39;s not possible as there&#39;s some 3rd party API dependancy - as there was in my latest client work. The problem I found, was that the latency between my location and the 3rd party API was so high, that it was impacting on the workflow cycle of: debug, change, test, repeat. The load time was taking anywhere from 15-30 seconds each time.
 So this was my quick work around to easily mock out the API so my development process could be faster.]]></description><content:encoded><![CDATA[
 <p>During server software development (i.e. node) I always strive to work offline, in that my development workflow doesn&#39;t depend on any online services.</p>
@@ -1609,28 +1648,4 @@ ssl_certificate_key  /WWW/example.com/certs/example-decrypted.key;</code></pre>
 <p>Here&#39;s a live demo:</p>
 <p><a class="jsbin-embed" href="https://jsbin.com/yibiwa/2/embed?output">JS Bin</a><script src="https://drt35l4oshkgr.cloudfront.net/js/embed.js"></script></p>
 <p>So now I have visibility on <em>what</em> is being focused, I can fix various issues ranging from <code>outline</code> being removed, only including <code>:hover</code> styles and not <code>:focus</code> and applying <em>proper</em> <a href="http://oaa-accessibility.org/example/25/">menu logic</a> to menu-like objects.</p>
-]]></content:encoded></item><item><title>What is a &quot;Web App&quot;?</title><guid isPermaLink="false">what-is-a-web-app</guid><link>http://remysharp.com/2014/10/06/what-is-a-web-app</link><pubDate>Mon, 06 Oct 2014 16:00:00 +0000</pubDate><description><![CDATA[In technology definitions are important. We talk in a language that&#39;s mostly made up by our own industry.
-Bugs, cache, regressions, polyfills, monads, polymorphic functions, isomorphic JavaScript and a lot more language. Even when you do work in our industry, it&#39;s hard to keep up with all the language.
-There there&#39;s &quot;web app&quot;. A lot of people (including myself) will refer to many web sites as apps. But why? I don&#39;t know of a good definition (&quot;good&quot; in that there&#39;s no hand-waving involved).
-So here&#39;s my definition and distinction between web site and web app.]]></description><content:encoded><![CDATA[
-<p>In technology definitions are important. We talk in a language that&#39;s mostly made up by our own industry.</p>
-<p>Bugs, cache, regressions, polyfills, monads, polymorphic functions, isomorphic JavaScript and a lot more language. Even when you <em>do</em> work in our industry, it&#39;s hard to keep up with all the language.</p>
-<p>There there&#39;s &quot;web app&quot;. A lot of people (including myself) will refer to many web sites as <em>apps</em>. But why? I don&#39;t know of a good definition (&quot;good&quot; in that there&#39;s no hand-waving involved).</p>
-<p>So here&#39;s my definition and distinction between web site and web app.</p>
-<h2>Web site</h2>
-<p>A URL that you visit. Classic examples include a blog or a wiki. Where the content is waiting for you at the end of the URL.</p>
-<p>JS Bin is a web site by this definition. You visit the URL and create content. Someone will share a bin, and you visiting this content. <strong>You go to the site</strong>.</p>
-<h2>Web app</h2>
-<p>A URL that you take with you. This is locally installed and data is <em>pushed to you</em>. Classic examples of this are email clients, news readers, task orientated applications. <strong>The app goes with you</strong>.</p>
-<p>Importantly: you expect it to be available with or without an internet connection.</p>
-<blockquote>
-<p>Isn&#39;t this just a web site with offline support?</p>
-</blockquote>
-<p>I&#39;m still scoffing at &quot;<em>just</em>&quot;. Sure, if you want to dumb it down as such. But equally isn&#39;t an app on your screen, like Chrome or TomTom or PhotoShop, <em>just</em> some compiled code? Yes, it is, but it&#39;s actually a lot more than that.</p>
-<p>The common language word we refer to compiled programs are: apps.</p>
-<p>It&#39;s not that it&#39;s harder to build web apps, it&#39;s that the experience with these types of web sites are fundamentally different to a web site like Wikipedia for instance.</p>
-<hr>
-<p>The future of web browsers is coming, and they&#39;re giving us more and more support for offline technology, through storage (for data caching) to control over the network (through <a href="https://github.com/slightlyoff/ServiceWorker">service workers</a>).</p>
-<p>If you&#39;re using progressive enhancement, then your web site can achieve both. However, I don&#39;t believe it&#39;s entirely possible to create a web app without the functionality that JavaScript provides. So there&#39;s is <em>some</em> expectation that a web app relies on JavaScript, but that&#39;s not what makes a web app.</p>
-<p>Now, next time you&#39;re asked to build a web app, at least you can have a feature set that you&#39;re working towards.</p>
 ]]></content:encoded></item></channel></rss>
