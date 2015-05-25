@@ -18,7 +18,7 @@ I've also included what you can expect as a speaker at our event too.
 
 A few topics that are of particular interest to me:
 
-- Isomorphic JavaScript code and applications (ideally outside the world of "easy with React")
+- Isomorphic JavaScript (or *"something less contentious"*) code and applications (ideally outside the world of "easy with React")
 - Sysops for web developers (I'm particularly interested in Docker/container solutions for web developers)
 - What we can learn in web development from other technology/disciplines
 - "You're doing it wrong"
