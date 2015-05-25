@@ -1,6 +1,6 @@
 # Call for proposals at ffconf 2015
 
-[ffconf](http://2015.ffconf.org) has it's event date (6-Nov 2015) and I've been in the process of carefully curating the content I want to hear at this year's event again.
+[ffconf](http://2015.ffconf.org) has it's event date (6-Nov 2015) and I've been in the process of carefully curating the content I want to hear at this year's event again. As with each year, it takes place at the [Duke of Yorks](https://www.flickr.com/groups/fullfrontalconf/pool/) in Brighton, UK.
 
 As always, I also make sure I allot a few positions for CFP, so here's what our CFP looks like.
 
