@@ -35,6 +35,7 @@ As always, I also make sure I allot a few positions for CFP, so here&#39;s what 
 <li>£500 honourium - I know it&#39;s not much, but it&#39;s a bit of spending money to say thanks</li>
 <li>A free pass to the next ffconf, and for evermore part of our growing and much loved speaker alumni</li>
 <li>If you bought a ticket for ffconf2015, we&#39;ll refund the ticket (as we don&#39;t expect, or want, our speakers to pay)</li>
+<li>Uphold our conference code of conduct, both for you, and our attendees (either will be, or based on <a href="http://confcodeofconduct.com">confcodeofconduct.com</a>)</li>
 </ul>
 <p>So I hope to hear from you soon!</p>
 ]]></content:encoded></item><item><title>Quick technique for API mocking</title><guid isPermaLink="false">quick-technique-for-api-mocking</guid><link>http://remysharp.com/2015/05/18/quick-technique-for-api-mocking</link><pubDate>Mon, 18 May 2015 13:00:00 +0000</pubDate><description><![CDATA[During server software development (i.e. node) I always strive to work offline, in that my development workflow doesn&#39;t depend on any online services.
