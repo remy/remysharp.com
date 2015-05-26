@@ -4,14 +4,14 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-bind-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2015/05/25/call-for-proposals-at-ffconf-2015" title="Call for proposals at ffconf 2015">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 25-May 2015</div><article class="post"><h1 class="title"><a href="/drafts/bind">Tiny two way data binding</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/bind.md">(edit)</a></small></h1><div class="post-content">
+ga('send', 'pageview');</script></head><body id="drafts-bind-page"><nav class="main-nav clearfix subpanel"><nav class="main-nav clearfix subpanel"><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="next"><a href="/2015/05/25/call-for-proposals-at-ffconf-2015" title="Call for proposals at ffconf 2015">Latest post</a></li></ul></nav></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 26-May 2015</div><article class="post"><h1 class="title"><a href="/drafts/bind">Tiny two way data binding</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/bind.md">(edit)</a></small></h1><div class="post-content">
 <p>Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).</p>
 <p>So, as any good re-inventer of wheels, I wrote my own two-way data binding library, partly to experiment, partly to solve existing needs in my own projects - weighing in at &lt; 2K compressed.</p>
-<p><strong>I present (cleverly named): <a href="https://github.com/remy/bind">bind.js</a></strong></p>
+<p>I present (cleverly named): <strong><a href="https://github.com/remy/bind">bind.js</a></strong></p>
 <!--more-->
 
 <h2>Demo time</h2>
-<p>Below is an <a href="http://rem.jsbin.com/nepuda/embed?console,output">interactive demo</a> of bind in action. As you change the state of the form, you&#39;ll see the object update on the right (a <code>JSON.stringify</code> output).</p>
+<p>Below is an <a href="http://rem.jsbin.com/nepuda/edit?console,output">interactive demo</a> of bind in action. As you change the state of the form, you&#39;ll see the object update on the right (a <code>JSON.stringify</code> output).</p>
 <p><a class="jsbin-embed" href="http://rem.jsbin.com/nepuda/embed?console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.js"></script></p>
 <h2>Example usage</h2>
 <p>The concept behind the API is fairly simple: take an object bind it to functions and/selectors given a particular mapping.</p>
