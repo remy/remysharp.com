@@ -4,13 +4,13 @@ Data binding to the DOM is just one of those things that's damn handy when you'v
 
 So, as any good re-inventer of wheels, I wrote my own two-way data binding library, partly to experiment, partly to solve existing needs in my own projects - weighing in at < 2K compressed.
 
-**I present (cleverly named): [bind.js](https://github.com/remy/bind)**
+I present (cleverly named): **[bind.js](https://github.com/remy/bind)**
 
 <!--more-->
 
 ## Demo time
 
-Below is an [interactive demo](http://rem.jsbin.com/nepuda/embed?console,output) of bind in action. As you change the state of the form, you'll see the object update on the right (a `JSON.stringify` output).
+Below is an [interactive demo](http://rem.jsbin.com/nepuda/edit?console,output) of bind in action. As you change the state of the form, you'll see the object update on the right (a `JSON.stringify` output).
 
 <a class="jsbin-embed" href="http://rem.jsbin.com/nepuda/embed?console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.js"></script>
 
