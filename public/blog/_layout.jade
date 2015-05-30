@@ -4,8 +4,7 @@ block content
   permalink = '/' + moment(date).format('YYYY/MM/DD') + '/' + current.source;
   safeTitle = title.replace(/'/g, '\\\'')
 
-  nav.main-nav.clearfix.subpanel
-    != partial('../_partials/post-nav')
+  != partial('../_partials/post-nav')
 
   main.content(role="main")
     article.post

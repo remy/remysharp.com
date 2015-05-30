@@ -456,7 +456,7 @@ label {
   margin: 10px 5px 0 0;
 }
 
-#search label {
+form.search label {
   float: none;
   width: auto;
 }
@@ -674,6 +674,35 @@ small.edit a:focus {
   opacity: 0.5;
 }
 
+nav {
+  form.search {
+    height: 0;
+    padding: 0px;
+    position: relative;
+    overflow: hidden;
+    .transition(height, 50ms, ease-in-out);
+
+    &.show {
+      height: 45px;
+    }
+
+    input[type="text"] {
+      // position: absolute;
+      width: 80%;
+      border: 0;
+      margin: 10px;
+    }
+    input[type="submit"] {
+      margin: 10px;
+      background: #ccc;
+      position: absolute;
+      width: 20%;
+      right: 0;
+      border: 0;
+    }
+  }
+}
+
 ul.post-nav {
   overflow: hidden;
   list-style: none;
@@ -694,6 +723,18 @@ ul.post-nav {
     &.next a {
       &:after {
         content: ' »';
+      }
+    }
+
+    &.search {
+      float: left;
+      padding-left: 0;
+      a {
+        display: inline-block;
+        text-indent: -9999px;
+        background: url(/images/search.svg) no-repeat 0 4px;
+        width: 24px;
+        padding: 0;
       }
     }
 

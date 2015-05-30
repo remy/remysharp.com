@@ -2,11 +2,25 @@ var $results = $('#search-results');
 var $for = $('#for');
 var template = $('#result-template').html();
 
-$('#search').on('submit', function (event) {
+$('form.search').on('submit', function (event) {
   event.preventDefault();
+  var val = $(this).find('input[type="text"]').val();
+  $for.val(val);
+  find(encodeURIComponent(val));
+});
+
+if (window.location.search) {
+  var q = window.location.search.substr(1).split('=').pop()
+  $for.val(q);
+  find(q);
+}
+
+function find(query) {
   $results.html('<li>Searching...</li>');
 
-  fetch('/search?q=' + encodeURIComponent($for.val()), {
+  window.history.pushState(null, query, '/search?q=' + query);
+
+  fetch('/search?q=' + query, {
     cors: true,
     method: 'post',
     headers: {
@@ -27,14 +41,13 @@ $('#search').on('submit', function (event) {
     return data;
   }).then(function (data) {
     var html = data.map(function (res) {
-      console.log(interpolate(template, res));
       return interpolate(template, res);
     }).join('');
     $results.html(html);
   }).catch(function (error) {
     $results.html('<li>' + error.message + '</li>');
   });
-});
+}
 
 // note: exporter is the object constructor, not an instance
 function interpolate(string, values) {

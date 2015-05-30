@@ -78,6 +78,31 @@ if (window.location.hash.indexOf('#comments') > 0) {
   loadDisqus();
 }
 
+var searchOpen = false;
+$('#search').on('click', function (e) {
+  e.preventDefault();
+  searchOpen = false;
+  if ($('form.search').toggleClass('show').hasClass('show')) {
+    $('form.search:first input[type="text"]').focus();
+    searchOpen = true;
+  } else {
+    $('form.search:first input[type="text"]').blur();
+  }
+});
+
+$('body').on('keydown', function (event) {
+  if (searchOpen && event.which === 27) {
+    $('#search').click();
+  } else if (event.which === 191 && event.metaKey) {
+    // ignore if we're in a form
+    if (event.target.form) {
+      return;
+    }
+
+    $('#search').click();
+  }
+})
+
 if (comments) {
   loadDisqus();
   var commentsOffset = findTop(comments);
