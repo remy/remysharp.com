@@ -7,8 +7,10 @@ var posts = Object.keys(blogs).map(function (slug) {
   return blogs[slug];
 });
 
+// kick  curl -XPUT https://pxv6gs1hif:9nqdd6ulpg@remysharp-com-5390076812.eu-west-1.bonsai.io/blog-posts
+
 var client = new elasticsearch.Client({
-  host: 'https://pxv6gs1hif:9nqdd6ulpg@remysharp-com-5390076812.eu-west-1.bonsai.io',
+  host: process.env.BONSAI_URL,
   log: 'trace',
 });
 
@@ -23,7 +25,7 @@ function create(json, doc) {
       tags: json.tags,
       published: true,
       date: json.date,
-      body: doc,
+      body: doc.replace(/<(?:.|\n)*?>/gm, ''), // strip html
       counter: 1,
     },
   }, function (error, response) {

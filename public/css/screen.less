@@ -456,6 +456,11 @@ label {
   margin: 10px 5px 0 0;
 }
 
+#search label {
+  float: none;
+  width: auto;
+}
+
 textarea {
   height: 100px;
   width: 97%;
@@ -856,5 +861,30 @@ body > footer {
       margin: 20px auto;
       overflow: hidden;
     }
+  }
+}
+
+div.search-result {
+  font-size: 80%;
+  line-height: 1.3rem;
+  background: rgb(240, 240, 240);
+  padding: 10px;
+
+  pre, pre code {
+    background: rgb(96, 96, 96);
+    color: rgb(237, 237, 237);
+
+    .highlight {
+      color: rgb(96, 96, 96);
+    }
+  }
+
+  code {
+    font-size: 100%;
+  }
+
+  .highlight {
+    background: #FFDC00;
+    padding: 4px;
   }
 }

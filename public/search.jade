@@ -1,0 +1,15 @@
+h1 Search
+
+form#search
+  label Search for:&nbsp;
+    input#for(name="search" placeholder="fragment of post...")
+
+ul#search-results
+
+script#result-template(type="template")
+  |<li>
+  |  <a href="{{url}}">{{title}}</a> <small class="date">{{date}}</small>
+  |  <div class="search-result">{{highlight}}</div>
+  |</li>
+
+script(defer src="/js/search.js")

@@ -5,6 +5,7 @@ var fs = require('fs');
 var st = require('st');
 var glob = require('glob');
 var harp = require('harp');
+var querystring = require('querystring');
 var outputPath = __dirname + '/www';
 var port = process.env.PORT || 9000;
 var router = require('router-stupid');
@@ -18,6 +19,7 @@ var mount;
 var moment = require('moment');
 var pkg = require('./package');
 var htmlFiles = [];
+var elasticsearch = require('elasticsearch');
 
 // this line, although dirty, ensures that Harp templates
 // have access to moment - which given the whole partial
@@ -52,6 +54,61 @@ route.all('/feed/', function (req, res, next) {
 route.all(/\/downloads\/(.*)$/, function (req, res, next) {
   res.writeHead(302, { location: 'http://download.remysharp.com/' + req.params[1] });
   res.end();
+});
+
+route.post('/search', function (req, res) {
+  var query = req.url.split('?').slice(1).join('?');
+  var search = querystring.parse(query);
+
+  var client = new elasticsearch.Client({
+    host: process.env.BONSAI_URL,
+    // log: 'trace',
+  });
+
+  client.search({
+    index: 'blog-posts',
+    body: {
+      query: {
+        match: {
+          body: search.q,
+        },
+      },
+      highlight: {
+        pre_tags : ['<strong class="highlight"><em>'],
+        post_tags : ['</em></strong>'],
+        fields: {
+          body: {
+            number_of_fragments: 10,
+            fragment_size: 400,
+          },
+        },
+      },
+    },
+    fields: 'title,date,highlight',
+  }, function (error, response) {
+    if (error) {
+      res.writeHead(500, { 'content-type': 'application/json' });
+      return res.end(JSON.stringify({ error: true, message: error.message }));
+    }
+    res.writeHead(200, { 'content-type': 'application/json' });
+
+    if (response.hits.total === 0) {
+      return res.end('[]');
+    }
+
+    var results = response.hits.hits.map(function (res) {
+      var date = moment(res.fields.date.pop());
+      return {
+        title: res.fields.title.pop(),
+        date: date.format('D-MMM YYYY'),
+        score: res._score,
+        url: 'https://remysharp.com/' + date.format('YYYY/MM/DD') + '/' + res._id,
+        highlight: (res.highlight.body.pop() || ''),
+      };
+    });
+
+    res.end(JSON.stringify(results));
+  });
 });
 
 /* allow fast redirects to edit pages */

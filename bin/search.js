@@ -15,17 +15,17 @@ client.search({
       match: {
         body: process.argv[2]
       }
-    }
-  },
-  fields: 'title,date,highlight',
-  highlight: {
-    fields: {
-      body: {
-        number_of_fragments: 6,
-        fragment_size: 20,
+    },
+    highlight: {
+      fields: {
+        body: {
+          number_of_fragments: 10,
+          fragment_size: 400,
+        },
       },
     },
   },
+  fields: 'title,date,highlight',
 }, function (error, response) {
   console.log(util.inspect(response, {showHidden: false, depth: null}));
   response.hits.hits.forEach(function (res) {
