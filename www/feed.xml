@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 25 May 2015 12:44:33 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Call for proposals at ffconf 2015</title><guid isPermaLink="false">call-for-proposals-at-ffconf-2015</guid><link>http://remysharp.com/2015/05/25/call-for-proposals-at-ffconf-2015</link><pubDate>Mon, 25 May 2015 12:44:33 +0000</pubDate><description><![CDATA[ffconf has it&#39;s event date (6-Nov 2015) and I&#39;ve been in the process of carefully curating the content I want to hear at this year&#39;s event again. As with each year, it takes place at the Duke of Yorks in Brighton, UK.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 02 Jun 2015 11:42:26 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Tiny two way data binding</title><guid isPermaLink="false">bind</guid><link>http://remysharp.com/2015/06/02/bind</link><pubDate>Tue, 02 Jun 2015 11:42:26 +0000</pubDate><description><![CDATA[Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).
+So, as any good re-inventer of wheels, I wrote my own two-way data binding library, partly to experiment, partly to solve existing needs in my own projects - weighing in at &lt; 2K compressed.
+I present (cleverly named): bind.js]]></description><content:encoded><![CDATA[
+<p>Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).</p>
+<p>So, as any good re-inventer of wheels, I wrote my own two-way data binding library, partly to experiment, partly to solve existing needs in my own projects - weighing in at &lt; 2K compressed.</p>
+<p>I present (cleverly named): <strong><a href="https://github.com/remy/bind.js">bind.js</a></strong></p>
+<h2>Demo time</h2>
+<p>Below is an <a href="http://rem.jsbin.com/nepuda/edit?console,output">interactive demo</a> of bind in action. As you change the state of the form, you&#39;ll see the object update on the right (a <code>JSON.stringify</code> output).</p>
+<p><a class="jsbin-embed" href="http://rem.jsbin.com/nepuda/embed?console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.js"></script></p>
+<h2>Example usage</h2>
+<p>The concept behind the API is fairly simple: take an object bind it to functions and/selectors given a particular mapping.</p>
+<p><a href="https://jsbin.com/remutu/edit?js,console,output">For example</a>, to bind a score and player name to the DOM:</p>
+<pre><code class="language-js">var user = Bind({
+  name: &#39;[new user]&#39;,
+  game: { score: 0 }
+}, {
+  &#39;game.score&#39;: &#39;span.score&#39;,
+  name: &#39;input[name=&quot;username&quot;]&#39;
+})
+
+// in the game
+user.game.score += 25;</code></pre>
+<p>...and the HTML updates take care of themselves. Then the user enters their name in the input field, it&#39;ll update the <code>user</code> object.</p>
+<p>The mapping value is flexible too, and can be:</p>
+<ul>
+<li>A string representing a selector</li>
+<li>A function which receives the new value</li>
+<li>An object that supports any of the following properties: <code>dom</code>, <code>callback</code> and <code>transform</code></li>
+</ul>
+<p>With an object as the value of the mapping, it allows you to do a transform on your data before it lands in the DOM. This is obviously useful for things like updating <a href="https://jsbin.com/nemubo/1/edit?js,output">list elements</a>:</p>
+<pre><code class="language-js">var data = Bind({
+  cats: [&#39;nap&#39;, &#39;sam&#39;, &#39;prince&#39;]
+}, {
+  cats: {
+    dom: &#39;#cats&#39;,
+    transform: function (value) {
+      return &#39;&lt;li&gt;I had a cat called &lt;em&gt;&#39; + this.safe(value) + &#39;&lt;/em&gt;&lt;/li&gt;&#39;;
+    }
+  },
+  &#39;cats.0&#39;: {
+    dom: &#39;#first-cat&#39;,
+    transform: function (value) {
+      return &#39;My first cat was &#39; + this.safe(value);
+    }
+  }
+});</code></pre>
+<p>Inside the <code>transform</code> function also has a helper, <code>this.safe()</code> which will escape your content safe for HTML.</p>
+<h2>Object.observe?</h2>
+<p>Nope. I&#39;m not using it, which is also why there&#39;s some limitations (property deletion being the main/only one).</p>
+<p>Why not? Mostly for a larger platform of support. This library supports IE9 upwards (and thus all other browsers) and includes feature detection.</p>
+<p>I also tried an <code>Object.observe</code> polyfill early on, but didn&#39;t have much success (though I don&#39;t recall what the issues were). I also fancies the code challenge :)</p>
+<h2>HTML decorators?</h2>
+<p>Nope (again). I was recently debugging some Knockout code, and found myself struggling as I realised that the actual binding was happening in the HTML, and the manipulation was happening in the separate JavaScript file.</p>
+<p>So no, there&#39;s no <code>data-*</code> support, intentionally. All the code lives in one place: in the JavaScript.</p>
+<p>I personally like that my data binding is all in one place. If you&#39;re not so keen, there&#39;s always Angular, Knockout and the like.</p>
+<h2>Nice to haves</h2>
+<p>I&#39;ve started opening a few <a href="https://github.com/remy/bind/issues">issues</a> on things I&#39;d like, but they currently include:</p>
+<ul>
+<li>Root object mapping support (i.e. to be able to hook a callback on <em>anything</em> changing)</li>
+<li>Glob support, i.e. <code>me.*.name</code> will fire callbacks matching any path starting with <code>me</code> and ending with <code>name</code></li>
+<li>Test to test every individual form element (currently it&#39;s a bit of a mishmash)</li>
+</ul>
+<p>Feel free to <a href="https://github.com/remy/bind/issues">raise an issue</a> or feature request or let me know if you&#39;d use this even!</p>
+]]></content:encoded></item><item><title>Call for proposals at ffconf 2015</title><guid isPermaLink="false">call-for-proposals-at-ffconf-2015</guid><link>http://remysharp.com/2015/05/25/call-for-proposals-at-ffconf-2015</link><pubDate>Mon, 25 May 2015 12:44:33 +0000</pubDate><description><![CDATA[ffconf has it&#39;s event date (6-Nov 2015) and I&#39;ve been in the process of carefully curating the content I want to hear at this year&#39;s event again. As with each year, it takes place at the Duke of Yorks in Brighton, UK.
 As always, I also make sure I allot a few positions for CFP, so here&#39;s what our CFP looks like.]]></description><content:encoded><![CDATA[
 <p><a href="http://2015.ffconf.org">ffconf</a> has it&#39;s event date (6-Nov 2015) and I&#39;ve been in the process of carefully curating the content I want to hear at this year&#39;s event again. As with each year, it takes place at the <a href="https://www.flickr.com/groups/fullfrontalconf/pool/">Duke of Yorks</a> in Brighton, UK.</p>
 <p>As always, I also make sure I allot a few positions for CFP, so here&#39;s what our CFP looks like.</p>
@@ -1600,53 +1663,4 @@ ssl_certificate_key  /WWW/example.com/certs/example-decrypted.key;</code></pre>
 <li><a href="https://www.ssllabs.com/ssltest/analyze.html">SSL labs</a> (for deep SSL analysis)</li>
 <li><a href="https://www.sslshopper.com/article-most-common-openssl-commands.html">common openssl commands</a></li>
 </ul>
-]]></content:encoded></item><item><title>Element focus utility</title><guid isPermaLink="false">focus-dev-util</guid><link>http://remysharp.com/2014/10/14/focus-dev-util</link><pubDate>Tue, 14 Oct 2014 13:30:00 +0000</pubDate><description><![CDATA[I&#39;ve recently been looking at retrofitting keyboard navigation support to JS Bin, but I was immediately struck by the totally lack of visibility on what was in focus.]]></description><content:encoded><![CDATA[
-<p>I&#39;ve recently been looking at retrofitting keyboard navigation support to JS Bin, but I was immediately struck by the totally lack of visibility on <em>what</em> was in focus.</p>
-<p>Sure, this is a short-coming of the original design and bad choises I had made with JS Bin&#39;s code base. Perhaps you can see from the animation below, when the <code>body</code> is in focus, tabbing is focusing <em>something</em> but until I actually tab to the &quot;HTML&quot; panel title, there&#39;s no visual feedback as to <em>what</em> I should be fixing:</p>
-<p><img src="/images/tab-focus-clueless.gif" alt="Tab focusing is clueless"></p>
-<p>If you can see it, the browser&#39;s status bar tells me that I&#39;m moving focus, but it&#39;s near impossible to work out which element I&#39;m working with.</p>
-<p>So I built a mini utility to visualise what&#39;s happening. Now with that utility:</p>
-<p><img src="/images/tab-visibility.gif" alt="Tabbing visible"></p>
-<h2>Installation</h2>
-<p>Either add the code directly to your project as a debug dependancy, or use it as a snippet in your devtools:</p>
-<pre><code class="language-js">(function () {
-  var active = document.createElement(&#39;pre&#39;);
-  document.body.appendChild(active);
-  active.tabindex = -1;
-  with (active.style) { // warning: `with` I know what I&#39;m doing!
-    position = &#39;fixed&#39;;
-    padding = &#39;2px&#39;;
-    bottom = right = &#39;20px&#39;;
-    margin = 0;
-    fontSize = 12;
-    color = &#39;#fff&#39;;
-    background = &#39;#aaa&#39;;
-    whiteSpace = &#39;pre-wrap&#39;;
-    maxWidth = &#39;95%&#39;;
-  }
-
-  var lastActive = null;
-  var showActive = function () {
-    var el = document.activeElement;
-    var html = &#39;&#39;;
-    var attrs = el.attributes;
-    var i = 0;
-
-    if (el !== lastActive &amp;&amp; el !== active) {
-      for (; i &lt; attrs.length; i++) {
-        html += &#39; &#39; + attrs[i].name + &#39;=&quot;&#39; + attrs[i].value + &#39;&quot;&#39;;
-      }
-
-      active.textContent = &#39;&lt;&#39; + el.nodeName.toLowerCase() + html + &#39;&gt;&#39;;
-      lastActive = el;
-    }
-
-    requestAnimationFrame(showActive);
-  };
-
-  showActive();
-})();</code></pre>
-<p>Here&#39;s a live demo:</p>
-<p><a class="jsbin-embed" href="https://jsbin.com/yibiwa/2/embed?output">JS Bin</a><script src="https://drt35l4oshkgr.cloudfront.net/js/embed.js"></script></p>
-<p>So now I have visibility on <em>what</em> is being focused, I can fix various issues ranging from <code>outline</code> being removed, only including <code>:hover</code> styles and not <code>:focus</code> and applying <em>proper</em> <a href="http://oaa-accessibility.org/example/25/">menu logic</a> to menu-like objects.</p>
 ]]></content:encoded></item></channel></rss>
