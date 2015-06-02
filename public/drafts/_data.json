@@ -145,15 +145,6 @@
       "code"
     ]
   },
-  "bind": {
-    "title": "Tiny two way data binding",
-    "date": "2015-05-17 11:56:10",
-    "complete": true,
-    "inprogress": true,
-    "tags": [
-      "code"
-    ]
-  },
   "my-pebble": {
     "title": "My Pebble",
     "date": "2015-05-24 14:00:37",

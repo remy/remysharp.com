@@ -159,11 +159,13 @@ The net effect of this: storing more content.
 
 Storage is cheap, right? Sure is. JS Bin stores it's database on a 100GB drive. It's *just text* for heavens sake.
 
-On **XXXXXXXXXXXXXXX** JS Bin's database ran out of disk space. All of it. Gone. So much so, that I *couldn't delete data*. (I think) because MySQL needs to create a tmp file to run queries, that since there was literally no disk space, it couldn't create the tmp file to delete the junk bins that were seemingly coming in faster and faster.
+On 26th March 2015 JS Bin's database ran out of disk space. All of it. Gone. So much so, that I *couldn't delete data*. (I think) because MySQL needs to create a tmp file to run queries, that since there was literally no disk space, it couldn't create the tmp file to delete the junk bins that were seemingly coming in faster and faster.
 
 The weird thing was that JS Bin still worked. It could recall bins and you could use JS Bin, you *just couldn't save* (though, that's kind of a problem...).
 
-This all happened on a morning that I was looking after my two kids. I had absolutely no choice but to just suck it up, and try to focus on the kids and ignore the problem until my wife returned home. I did manage to put out a [cry for help]() which had lots of lovely support, but support doesn't fix fucked disks.
+![The Sharps](/images/jsbin-kids.jpg)
+
+This all happened on a morning that I was looking after my two kids. I had absolutely no choice but to just suck it up, and try to focus on the kids and ignore the problem until my wife returned home. I did manage to put out a [cry](https://twitter.com/rem/status/581004721785167872) for [help](https://github.com/jsbin/jsbin/issues/2320) which had lots of lovely support, but support doesn't fix fucked disks.
 
 Though, eventually, a few hours later, I managed to swap in a 400GB disk to the AWS database. This solved the issue right away, but the source of the problem was still wide open.
 
@@ -175,17 +177,18 @@ In the end the *only* way to register with JS Bin *now* is via GitHub. I don't l
 
 ---
 
-## Maxing out the database @ 100GB
+## Part 4: On losing money...
 
-- Out of space due to spam
-- Can't change db due to size
-- Pile of poo character === 17gb of ram (and eventually that will have to increase)
+In July 2014, JS Bin finally landed [Pro accounts](https://jsbin.com/upgrade). The aim of this would be for JS Bin to eventually be self-sustaining. It's been running on my pocket for the previous 6 year (for server and related costs), and development and design (2014 excluded) had been lovely "donated" by myself and Danny (who is responsible for the design).
 
-## Police contact
+In 2014, I decided to give JS Bin a full shot, and employed two (amazing) developers, [Giulia Alfonsi](https://twitter.com/electric_g) and [Fabien O'Carroll](https://twitter.com/allouis_) to work with me full time on JS Bin.
 
-- Phone call from London met
+At the end of May 2015 (10 months after launching pro) the income JS Bin has provided has only *just* covered operating costs for the previous year. That's huge, because before it wasn't - so that's something, *but* it doesn't even touch the edges of what I had hoped it would return (and I wasn't even being optimistic, as any British person would expect).
 
-## Terrorist use
+### VAT MOSS
+
+- https://twitter.com/search?q=from%3Arem%20%23vatmoss&src=typd
+- https://twitter.com/rem/status/589057179258327040
 
 ## Fraud credit cards
 
@@ -193,6 +196,16 @@ Since we only charge £6 a month, its a nice low test for stolen credit cards to
 
 So I've taken to checking each and every individual sign up and their bins to see if they look spammy. I caught my first fraud card and reported on 13-April 2014. Not a huge success but very satisfying to know I've avoided the charge.
 
-## VAT MOSS
+
+## Part 6: The Police
+
+- Phone call from London met
+- Email from Spanish police + porn
+
+### Terrorist use
+
+- Anonymous / https://twitter.com/zalun/status/602586249203945472
+
+
 
 

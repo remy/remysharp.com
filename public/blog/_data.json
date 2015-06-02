@@ -3320,5 +3320,13 @@
       "web"
     ],
     "published": true
+  },
+  "bind": {
+    "title": "Tiny two way data binding",
+    "date": "2015-06-02 11:42:26",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }
