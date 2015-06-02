@@ -12,7 +12,7 @@ I present (cleverly named): **[bind.js](https://github.com/remy/bind.js)**
 
 Below is an [interactive demo](http://rem.jsbin.com/nepuda/edit?console,output) of bind in action. As you change the state of the form, you'll see the object update on the right (a `JSON.stringify` output).
 
-<a class="jsbin-embed" href="http://rem.jsbin.com/nepuda/embed?console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="https://rem.jsbin.com/nepuda/embed?console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.js"></script>
 
 ## Example usage
 
