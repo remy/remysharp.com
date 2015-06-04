@@ -153,5 +153,33 @@
     "tags": [
       "personal"
     ]
+  },
+  "jsbin-part-2": {
+    "title": "The toxic side of free. Or how I the my love for my side project",
+    "date": "2015-05-31 17:39:09",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "personal",
+      "web"
+    ]
+  },
+  "adding-search-to-my-static-blog": {
+    "title": "Adding search to my static blog",
+    "date": "2015-06-03 17:56:13",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
+  },
+  "when-my-ssl-is-suddenly-not-secure": {
+    "title": "When my SSL is suddenly not secure",
+    "date": "2015-06-04 13:11:58",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }

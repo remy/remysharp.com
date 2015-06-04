@@ -95,6 +95,10 @@ So...yeah...I guess I should have known I was asking for trouble.
 
 JS Bin, as of April 2015, has well over 15,000,000 bins. It crossed 10 million bins late last year, so that number has been accelerating. It should. That's what growth is about. But I had to face it, there's no way there's 5 million new bins with everyone learning the magic of the web stack. There's going to be some spam in there.
 
+![https://www.flickr.com/photos/the-lobster/4767649914](/images/spam.jpg)
+
+<!-- photo via: https://www.flickr.com/photos/the-lobster/4767649914 -->
+
 ### Affiliate spam
 
 No, not spam that I, or JS Bin are affiliated with! At some point in 2014, I searched Google with "site:jsbin.com" just to see what awesome content existed. Sadly, Google's only reply, and pages of reply, was this "affiliate spam".
@@ -151,21 +155,21 @@ With one fatal flaw: there were zero checks on your account. No email authentica
 
 This, unknowingly to me, lead to an increase in registrations. Yay! No. Not yay. These were not the kinds of folk you wanted in your system. What's worse, is these users would create multiple accounts to create multiple bins, all of which were not limited. They'd still be limited by the blacklisting, but blacklisting is simple and probably doesn't even catch 20% of the junk.
 
-### The full on Death Star-explode-day
+### Grinding to a total halt
 
-Earlier I mentioned that the bins went from 10 million to 15 million in around 6 months (or so). Our registration rate was also climbing insanely quickly.
+On the morning of March 26th, 2015, I was solo parenting looking after my awesome little ones, when I started noticing reports on JS Bin that something might be very wrong.
 
-The net effect of this: storing more content.
+![The Sharps](/images/seren-family.jpg)
+
+Earlier I mentioned that the bins went from 10 million to 15 million in around 6 months (or so). Our registration rate was also climbing insanely quickly. The net effect of this: storing more content.
 
 Storage is cheap, right? Sure is. JS Bin stores it's database on a 100GB drive. It's *just text* for heavens sake.
 
-On 26th March 2015 JS Bin's database ran out of disk space. All of it. Gone. So much so, that I *couldn't delete data*. (I think) because MySQL needs to create a tmp file to run queries, that since there was literally no disk space, it couldn't create the tmp file to delete the junk bins that were seemingly coming in faster and faster.
+JS Bin's database ran out of disk space. All of it. Gone. So much so, that I *couldn't delete data*. (I think) because MySQL needs to create a tmp file to run queries, that since there was literally no disk space, it couldn't create the tmp file to delete the junk bins that were seemingly coming in faster and faster.
 
 The weird thing was that JS Bin still worked. It could recall bins and you could use JS Bin, you *just couldn't save* (though, that's kind of a problem...).
 
-![The Sharps](/images/jsbin-kids.jpg)
-
-This all happened on a morning that I was looking after my two kids. I had absolutely no choice but to just suck it up, and try to focus on the kids and ignore the problem until my wife returned home. I did manage to put out a [cry](https://twitter.com/rem/status/581004721785167872) for [help](https://github.com/jsbin/jsbin/issues/2320) which had lots of lovely support, but support doesn't fix fucked disks.
+When you're solo parenting, though, there's no support around and there was no way I was going to (or even *could*) abondon the kids to work on solving this issue. I had to suck it up, and trying to focus entirely on the kids and ignore the problem until my wife returned home. I did manage to put out a [cry](https://twitter.com/rem/status/581004721785167872) for [help](https://github.com/jsbin/jsbin/issues/2320) which had lots of lovely support, but support doesn't fix fucked disks.
 
 Though, eventually, a few hours later, I managed to swap in a 400GB disk to the AWS database. This solved the issue right away, but the source of the problem was still wide open.
 
@@ -177,15 +181,23 @@ In the end the *only* way to register with JS Bin *now* is via GitHub. I don't l
 
 ---
 
-## Part 4: On losing money...
+## Part 4: The cost
 
-In July 2014, JS Bin finally landed [Pro accounts](https://jsbin.com/upgrade). The aim of this would be for JS Bin to eventually be self-sustaining. It's been running on my pocket for the previous 6 year (for server and related costs), and development and design (2014 excluded) had been lovely "donated" by myself and Danny (who is responsible for the design).
+In July 2014, JS Bin *finally* landed [Pro accounts](https://jsbin.com/upgrade). The aim of this would be for JS Bin to eventually be self-sustaining. It's been running out of my pocket for the previous 6 year (for server and related costs), and development and design (2014 excluded) had been lovely "donated" by myself and Danny (who is responsible for the design).
 
 In 2014, I decided to give JS Bin a full shot, and employed two (amazing) developers, [Giulia Alfonsi](https://twitter.com/electric_g) and [Fabien O'Carroll](https://twitter.com/allouis_) to work with me full time on JS Bin.
 
-At the end of May 2015 (10 months after launching pro) the income JS Bin has provided has only *just* covered operating costs for the previous year. That's huge, because before it wasn't - so that's something, *but* it doesn't even touch the edges of what I had hoped it would return (and I wasn't even being optimistic, as any British person would expect).
+At the end of May 2015 (10 months after launching pro) the income JS Bin has provided has only *just* covered operating costs for the previous year. That's awesome and terrible at the same time. Before "pro" it was making a 100% loss - so that's something, *but* it doesn't even touch the edges of what I had hoped it would return (and I wasn't even being optimistic, as any British person would expect).
 
-### VAT MOSS
+But there is a cost to taking money...
+
+### VATMOSS
+
+[VATMOSS](https://remysharp.com/2014/12/16/vatmoss) was a change to the way that VAT is processed in the EU. Unfortunately, the geniuses behind the change at the EU (or whatever rock they hide under) hadn't quite thought the whole thing through. The information was thin, convoluted, confusing and not really accessible to small companies like myself and many others.
+
+This change was also a *requirement* for anyone in the EU selling digital services or goods (i.e. JS Bin Pro subscriptions), and there was (and is) the threat of fines if you don't report and pay on the sales correctly.
+
+The last month of 2014 were riddled with stress from the VATMOSS changes that I had to complete on JS Bin.
 
 - https://twitter.com/search?q=from%3Arem%20%23vatmoss&src=typd
 - https://twitter.com/rem/status/589057179258327040
@@ -197,7 +209,7 @@ Since we only charge £6 a month, its a nice low test for stolen credit cards to
 So I've taken to checking each and every individual sign up and their bins to see if they look spammy. I caught my first fraud card and reported on 13-April 2014. Not a huge success but very satisfying to know I've avoided the charge.
 
 
-## Part 6: The Police
+## Part 5: The Police
 
 - Phone call from London met
 - Email from Spanish police + porn

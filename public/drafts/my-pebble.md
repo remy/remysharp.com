@@ -80,4 +80,6 @@ As with the Rest app being part of my daily routing, the alarms are also an impo
 
 Being able to customise it, using my knowledge of code and knowing how to hack through other people's code has lulled me into loving this small piece of tech.
 
+**Being able to express myself in my pebble is what's made me love it.**
+
 A *lot* of my friends have asked me "when are you getting the iWatch", to which I say I'm not interested (*seriously*, [follow me on twitter](https://twitter.com/rem) if you need an idea of how [sick I am of Apple](https://twitter.com/search?q=from%3Arem%20apple&src=typd)) - and in fact, I *also* backed the new Pebble Time project and I can't wait to get my hands on that device and play some more.
