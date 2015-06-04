@@ -9,4 +9,5 @@ posts = partial('posts', { filter: function (post) { return post.tags.indexOf(ta
         if post.date
           li
             a(href="#{ post.relative }") #{ post.title }
+            &nbsp;
             small.date #{ moment(post.date).format('D-MMM YYYY')}

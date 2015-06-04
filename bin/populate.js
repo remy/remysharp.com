@@ -25,16 +25,34 @@ function create(json, doc) {
       tags: json.tags,
       published: true,
       date: json.date,
-      body: doc.replace(/<(?:.|\n)*?>/gm, ''), // strip html
+      body: doc.replace(/<\/?[a-z]+ ?[^>]*>/igm, ''), // strip html
       counter: 1,
     },
   }, function (error, response) {
-    console.log(error);
+    // console.log(error);
+    // client.close();
   });
 }
 
+//*
 posts.forEach(function (post) {
+  fs.readFile(__dirname + '/../public/blog/' + post.slug + '.md', function (error, doc) {
+    if (error) {
+      console.log(error);
+      return;
+    }
+    create(post, doc.toString());
+  });
+});
+//*/
+
+/*
+posts.filter(function (post) {
+  return post.slug === 'bind';
+}).forEach(function (post) {
   fs.readFile(__dirname + '/../public/blog/' + post.slug + '.md', function (error, doc) {
     create(post, doc.toString());
   });
 });
+
+//*/

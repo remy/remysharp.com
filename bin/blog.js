@@ -9,7 +9,7 @@ var path = require('path');
 var moment = require('moment');
 var Promise = require('promise'); // jshint ignore:line
 var readline = require('readline');
-// var shell = require('shelljs');
+var elasticsearch = require('elasticsearch');
 var fs = require('then-fs');
 var exec = require('child_process').exec;
 var rl = readline.createInterface({
@@ -94,7 +94,6 @@ function publish(title) {
 
       return readJSON(publishedData)
         .then(function (published) {
-          console.log(published);
           post.published = true;
           post.date = moment().format('YYYY-MM-DD HH:mm:ss');
           published[post.slug] = post;
@@ -108,6 +107,15 @@ function publish(title) {
           return readJSON(draftData).then(function (drafts) {
             delete drafts[slug];
             return fs.writeFile(draftData, JSON.stringify(drafts, '', 2));
+          });
+        }).then(function () {
+          return fs.read(source).then(function (doc) {
+            addToSearch({
+              slug: slug,
+              title: post.title,
+              tags: post.tags,
+              date: post.date,
+            }, doc);
           });
         }).then(function () {
           return new Promise(function (resolve, reject) {
@@ -137,15 +145,6 @@ function release() {
 
 }
 
-// function get(prompt) {
-//   return new Promise(function (resolve, reject) {
-//     rl.question(prompt, function (answer) {
-//       rl.pause();
-//       resolve(answer.trim());
-//     });
-//   });
-// }
-
 function prompt() {
   var title = '';
   var tags = [];
@@ -171,6 +170,34 @@ function prompt() {
       console.error(error);
       process.exit(1);
     });
+  });
+}
+
+function addToSearch(json, doc) {
+  if (!process.env.BONSAI_URL) {
+    console.log('Need to manually insert search data');
+    return;
+
+  }
+  var client = new elasticsearch.Client({
+    host: process.env.BONSAI_URL,
+    log: 'trace',
+  });
+
+  client.create({
+    index: 'blog-posts',
+    type: 'blog',
+    id: json.slug,
+    body: {
+      title: json.title,
+      tags: json.tags,
+      published: true,
+      date: json.date,
+      body: doc.replace(/<(?:.|\n)*?>/gm, ''), // strip html
+      counter: 1,
+    },
+  }, function (error, response) {
+    client.close();
   });
 }
 
