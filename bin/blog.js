@@ -109,14 +109,12 @@ function publish(title) {
             return fs.writeFile(draftData, JSON.stringify(drafts, '', 2));
           });
         }).then(function () {
-          return fs.readFile(source, 'utf8').then(function (doc) {
-            addToSearch({
-              slug: slug,
-              title: post.title,
-              tags: post.tags,
-              date: post.date,
-            }, doc);
-          });
+          return fs.readFile(source, 'utf8').then(addToSearch.bind(null, {
+            slug: slug,
+            title: post.title,
+            tags: post.tags,
+            date: post.date,
+          }));
         }).then(function () {
           return new Promise(function (resolve, reject) {
             exec('git mv ' + source + ' ' + target, function (error, stdout, stderr) {
@@ -174,30 +172,37 @@ function prompt() {
 }
 
 function addToSearch(json, doc) {
-  if (!process.env.BONSAI_URL) {
-    console.log('Need to manually insert search data');
-    return;
+  return new Promise(function (resolve, reject) {
+    if (!process.env.BONSAI_URL) {
+      console.log('Need to manually insert search data');
+      resolve();
+    }
 
-  }
-  var client = new elasticsearch.Client({
-    host: process.env.BONSAI_URL,
-    log: 'trace',
-  });
+    var client = new elasticsearch.Client({
+      host: process.env.BONSAI_URL,
+      log: 'trace',
+    });
 
-  client.create({
-    index: 'blog-posts',
-    type: 'blog',
-    id: json.slug,
-    body: {
-      title: json.title,
-      tags: json.tags,
-      published: true,
-      date: json.date,
-      body: doc.replace(/<(?:.|\n)*?>/gm, ''), // strip html
-      counter: 1,
-    },
-  }, function (error, response) {
-    client.close();
+    client.create({
+      index: 'blog-posts',
+      type: 'blog',
+      id: json.slug,
+      body: {
+        title: json.title,
+        tags: json.tags,
+        published: true,
+        date: json.date,
+        body: doc.replace(/<(?:.|\n)*?>/gm, ''), // strip html
+        counter: 1,
+      },
+    }, function (error, response) {
+      client.close();
+      if (error) {
+        return reject(error);
+      }
+
+      resolve();
+    });
   });
 }
 

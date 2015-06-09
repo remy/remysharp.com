@@ -34,7 +34,7 @@ function create(json, doc) {
   });
 }
 
-//*
+/*
 posts.forEach(function (post) {
   fs.readFile(__dirname + '/../public/blog/' + post.slug + '.md', function (error, doc) {
     if (error) {
@@ -46,9 +46,9 @@ posts.forEach(function (post) {
 });
 //*/
 
-/*
+//*
 posts.filter(function (post) {
-  return post.slug === 'bind';
+  return post.slug === 'devtool-tricks-for-when-i-forget';
 }).forEach(function (post) {
   fs.readFile(__dirname + '/../public/blog/' + post.slug + '.md', function (error, doc) {
     create(post, doc.toString());
