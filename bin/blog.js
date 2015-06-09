@@ -109,7 +109,7 @@ function publish(title) {
             return fs.writeFile(draftData, JSON.stringify(drafts, '', 2));
           });
         }).then(function () {
-          return fs.read(source).then(function (doc) {
+          return fs.readFile(source, 'utf8').then(function (doc) {
             addToSearch({
               slug: slug,
               title: post.title,
