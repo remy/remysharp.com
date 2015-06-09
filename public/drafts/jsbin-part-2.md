@@ -4,15 +4,16 @@ This is a story about JS Bin. I've told one story of jsbin before, and this is t
 
 ## Backstory
 
-I was working mostly out of my bedroom (since our flat was small) but still working with for my first company in London amongst designers and developers. jQuery was still new and I'd often be asked in written English why XYZ didn't work. I knew I needed something that contained code that would pare down the issue so I could investigate.
+I was working mostly out of my bedroom (since our flat was small) but still working for my first company in London amongst designers and developers. jQuery was still new and I'd often be asked in written English why XYZ didn't work. I knew I needed something that contained code that would pare down the issue so I could investigate.
 
 ![2009 office](/images/office-2009.jpg)
 
 JS Bin was launched on [September 2008](https://remysharp.com/2008/10/06/js-bin-for-collaborative-javascript-debugging) as my solution to needing to see a pastebin with an interactive component.
 
-It was posted up on Ajaxian and had a good reception. I had started seeding it's use by answering Stack Overflow questions and linking to live demos in JS Bin. To this day this was a great success - particularly as Stack Overflow went on to create their own live pastebin support (though it looks like a poorly imeplementation of jsfiddle).
+It was posted up on Ajaxian and had a good reception. I had started seeding it's use by answering Stack Overflow questions and linking to live demos in JS Bin. To this day this was a great success - particularly as Stack Overflow went on to create their own live pastebin support (though it looks like a poor implementation of jsfiddle).
 
 The concept from day one was simple: you could, anonymously, create a web page for anyone to view and edit (creating a new "revision").
+
 
 Initially around a 4 hour hack with 2 PHP files ([sandbox.php](https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/sandbox.php) and [index.php](https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/index.php)) and one very simple MySQL database. Over time it would become more complex, with many many more features - mostly tucked away a very sleek design (by [Danny Hope](https://twitter.com/yandle)).
 
@@ -24,7 +25,7 @@ Somehow, JS Bin was the first to suffer real abuse, but I know jsfiddle has come
 
 This is a story, and not a happy one, of some of the trials and tribulations that left my little open source project with a toxic taste in it's mouth.
 
-Please also bear in mind throughout these tales, that I am the soul sysadmin, and my knowledge, though workable, is limited - as are the pennies in my pocket, so *no* there's no load balancers and heavy duty sentinel machines that protect my system from madness. It's *just* me.
+Please also bear in mind throughout these tales, that I am the sole sysadmin, and my knowledge, though workable, is limited - as are the pennies in my pocket, so *no* there's no load balancers and heavy duty sentinel machines that protect my system from madness. It's *just* me.
 
 ---
 
@@ -81,7 +82,7 @@ It did resolve the issue. It also randomly blocked many, many more regular users
 
 Eventually I cottoned on to using [fail2ban]() to protect my machine from repeated hits from a specific IP address. Since installing around late 2014, it's massively reduced the attacks of this nature.
 
-The unfortunate side effect is that it also blocks out class room use of JS Bin, since JS Bin sends XHR writes *all the time*, fail2ban sees this all coming from a single IP, and goes ahead and denies the eager young class from learning.
+The unfortunate side effect is that it also blocks out classroom use of JS Bin, since JS Bin sends XHR writes *all the time*, fail2ban sees this all coming from a single IP, and goes ahead and denies the eager young class from learning.
 
 In this situation, classes have got in touch via any channel possible, and I've white listed their IP address manually. I know it's caught some people out, but, sadly, this is the cost I've had to pay.
 
@@ -107,7 +108,7 @@ Bear with me: it's a page that contains a tonne of links that usually entices th
 
 In some cases, since I have admin access to JS Bin, I would just delete the bin. But it was (and is) like playing whack-a-mole. You delete one, and immediately find another - partly also because with JS Bin, you're deleting a revision, and not the whole collection of bins (I've yet to develop that).
 
-So in this case, I would head to the database and run dangerous manual queries to delete all the bins with the offending URL. Thankfully, in the 15 million rows, I had the good sense to add a index early on to the URL field, so it's quick and doesn't lock up the table.
+So in this case, I would head to the database and run dangerous manual queries to delete all the bins with the offending URL. Thankfully, in the 15 million rows, I had the good sense to add an index early on to the URL field, so it's quick and doesn't lock up the table.
 
 ### SEO spam
 
@@ -183,7 +184,7 @@ In the end the *only* way to register with JS Bin *now* is via GitHub. I don't l
 
 ## Part 4: The cost
 
-In July 2014, JS Bin *finally* landed [Pro accounts](https://jsbin.com/upgrade). The aim of this would be for JS Bin to eventually be self-sustaining. It's been running out of my pocket for the previous 6 year (for server and related costs), and development and design (2014 excluded) had been lovely "donated" by myself and Danny (who is responsible for the design).
+In July 2014, JS Bin *finally* landed [Pro accounts](https://jsbin.com/upgrade). The aim of this would be for JS Bin to eventually be self-sustaining. It's been running out of my pocket for the previous 6 years (for server and related costs), and development and design (2014 excluded) had been lovingly "donated" by myself and Danny (who is responsible for the design).
 
 In 2014, I decided to give JS Bin a full shot, and employed two (amazing) developers, [Giulia Alfonsi](https://twitter.com/electric_g) and [Fabien O'Carroll](https://twitter.com/allouis_) to work with me full time on JS Bin.
 
