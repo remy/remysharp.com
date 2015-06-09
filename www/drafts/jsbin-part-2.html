@@ -4,7 +4,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-jsbin-part-2-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2015/06/02/bind" title="Tiny two way data binding">Latest post</a></li></ul></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 2-Jun 2015</div><article class="post"><h1 class="title"><a href="/drafts/jsbin-part-2">The toxic side of free. Or how I the my love for my side project</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/jsbin-part-2.md">(edit)</a></small></h1><div class="post-content">
+ga('send', 'pageview');</script></head><body id="drafts-jsbin-part-2-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2015/06/09/devtool-tricks-for-when-i-forget" title="Devtool tricks for when I forget">Latest post</a></li></ul></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 3-Jun 2015</div><article class="post"><h1 class="title"><a href="/drafts/jsbin-part-2">The toxic side of free. Or how I the my love for my side project</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/jsbin-part-2.md">(edit)</a></small></h1><div class="post-content">
 <p>This is a story about JS Bin. I&#39;ve told one story of jsbin before, and this is the b-side, the dark side. But remember with everything I share with you, jsbin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
 <h2>Backstory</h2>
 <p>I was working mostly out of my bedroom (since our flat was small) but still working with for my first company in London amongst designers and developers. jQuery was still new and I&#39;d often be asked in written English why XYZ didn&#39;t work. I knew I needed something that contained code that would pare down the issue so I could investigate.</p>
@@ -53,6 +53,9 @@ ga('send', 'pageview');</script></head><body id="drafts-jsbin-part-2-page"><nav 
 <p>Who doesn&#39;t love a filthy does of spam with their product? Let&#39;s picture exactly what JS Bin is: a place that people can <em>anonymously</em> create public web pages.</p>
 <p>So...yeah...I guess I should have known I was asking for trouble.</p>
 <p>JS Bin, as of April 2015, has well over 15,000,000 bins. It crossed 10 million bins late last year, so that number has been accelerating. It should. That&#39;s what growth is about. But I had to face it, there&#39;s no way there&#39;s 5 million new bins with everyone learning the magic of the web stack. There&#39;s going to be some spam in there.</p>
+<p><img src="/images/spam.jpg" alt="https://www.flickr.com/photos/the-lobster/4767649914"></p>
+<!-- photo via: https://www.flickr.com/photos/the-lobster/4767649914 -->
+
 <h3>Affiliate spam</h3>
 <p>No, not spam that I, or JS Bin are affiliated with! At some point in 2014, I searched Google with &quot;site:jsbin.com&quot; just to see what awesome content existed. Sadly, Google&#39;s only reply, and pages of reply, was this &quot;affiliate spam&quot;.</p>
 <p>Bear with me: it&#39;s a page that contains a tonne of links that usually entices the reader to click through for some kind of random product. Maybe a DVD or a CD containing the secrets to earning your first million or some such nonsense.</p>
@@ -81,24 +84,28 @@ ga('send', 'pageview');</script></head><body id="drafts-jsbin-part-2-page"><nav 
 <p>When I realised I had implemented user sign-in in quite possibly the crapest way, version 3, new, clean, slick JS Bin, came with proper sign-in, register and password reminder.</p>
 <p>With one fatal flaw: there were zero checks on your account. No email authentication, no captcha (I hate crapchas), no nothing. And registered users didn&#39;t have <em>any</em> limitations on their bins - the public output would remain public.</p>
 <p>This, unknowingly to me, lead to an increase in registrations. Yay! No. Not yay. These were not the kinds of folk you wanted in your system. What&#39;s worse, is these users would create multiple accounts to create multiple bins, all of which were not limited. They&#39;d still be limited by the blacklisting, but blacklisting is simple and probably doesn&#39;t even catch 20% of the junk.</p>
-<h3>The full on Death Star-explode-day</h3>
-<p>Earlier I mentioned that the bins went from 10 million to 15 million in around 6 months (or so). Our registration rate was also climbing insanely quickly.</p>
-<p>The net effect of this: storing more content.</p>
+<h3>Grinding to a total halt</h3>
+<p>On the morning of March 26th, 2015, I was solo parenting looking after my awesome little ones, when I started noticing reports on JS Bin that something might be very wrong.</p>
+<p><img src="/images/seren-family.jpg" alt="The Sharps"></p>
+<p>Earlier I mentioned that the bins went from 10 million to 15 million in around 6 months (or so). Our registration rate was also climbing insanely quickly. The net effect of this: storing more content.</p>
 <p>Storage is cheap, right? Sure is. JS Bin stores it&#39;s database on a 100GB drive. It&#39;s <em>just text</em> for heavens sake.</p>
-<p>On 26th March 2015 JS Bin&#39;s database ran out of disk space. All of it. Gone. So much so, that I <em>couldn&#39;t delete data</em>. (I think) because MySQL needs to create a tmp file to run queries, that since there was literally no disk space, it couldn&#39;t create the tmp file to delete the junk bins that were seemingly coming in faster and faster.</p>
+<p>JS Bin&#39;s database ran out of disk space. All of it. Gone. So much so, that I <em>couldn&#39;t delete data</em>. (I think) because MySQL needs to create a tmp file to run queries, that since there was literally no disk space, it couldn&#39;t create the tmp file to delete the junk bins that were seemingly coming in faster and faster.</p>
 <p>The weird thing was that JS Bin still worked. It could recall bins and you could use JS Bin, you <em>just couldn&#39;t save</em> (though, that&#39;s kind of a problem...).</p>
-<p><img src="/images/jsbin-kids.jpg" alt="The Sharps"></p>
-<p>This all happened on a morning that I was looking after my two kids. I had absolutely no choice but to just suck it up, and try to focus on the kids and ignore the problem until my wife returned home. I did manage to put out a <a href="https://twitter.com/rem/status/581004721785167872">cry</a> for <a href="https://github.com/jsbin/jsbin/issues/2320">help</a> which had lots of lovely support, but support doesn&#39;t fix fucked disks.</p>
+<p>When you&#39;re solo parenting, though, there&#39;s no support around and there was no way I was going to (or even <em>could</em>) abondon the kids to work on solving this issue. I had to suck it up, and trying to focus entirely on the kids and ignore the problem until my wife returned home. I did manage to put out a <a href="https://twitter.com/rem/status/581004721785167872">cry</a> for <a href="https://github.com/jsbin/jsbin/issues/2320">help</a> which had lots of lovely support, but support doesn&#39;t fix fucked disks.</p>
 <p>Though, eventually, a few hours later, I managed to swap in a 400GB disk to the AWS database. This solved the issue right away, but the source of the problem was still wide open.</p>
 <h3>If you (still) can&#39;t play nice...</h3>
 <p>Wide open registrations was always a stupid idea. An entirely anonymous web site, given JS Bin&#39;s purpose, is also a stupid idea.</p>
 <p>In the end the <em>only</em> way to register with JS Bin <em>now</em> is via GitHub. I don&#39;t like this, but it does lean on GitHub&#39;s verification process. It doesn&#39;t kill the issue 100%, but it reduced our sign-up rate significantly and we only have the odd one arsehat come through (which I also then report back to GitHub).</p>
 <hr>
-<h2>Part 4: On losing money...</h2>
-<p>In July 2014, JS Bin finally landed <a href="https://jsbin.com/upgrade">Pro accounts</a>. The aim of this would be for JS Bin to eventually be self-sustaining. It&#39;s been running on my pocket for the previous 6 year (for server and related costs), and development and design (2014 excluded) had been lovely &quot;donated&quot; by myself and Danny (who is responsible for the design).</p>
+<h2>Part 4: The cost</h2>
+<p>In July 2014, JS Bin <em>finally</em> landed <a href="https://jsbin.com/upgrade">Pro accounts</a>. The aim of this would be for JS Bin to eventually be self-sustaining. It&#39;s been running out of my pocket for the previous 6 year (for server and related costs), and development and design (2014 excluded) had been lovely &quot;donated&quot; by myself and Danny (who is responsible for the design).</p>
 <p>In 2014, I decided to give JS Bin a full shot, and employed two (amazing) developers, <a href="https://twitter.com/electric_g">Giulia Alfonsi</a> and <a href="https://twitter.com/allouis_">Fabien O&#39;Carroll</a> to work with me full time on JS Bin.</p>
-<p>At the end of May 2015 (10 months after launching pro) the income JS Bin has provided has only <em>just</em> covered operating costs for the previous year. That&#39;s huge, because before it wasn&#39;t - so that&#39;s something, <em>but</em> it doesn&#39;t even touch the edges of what I had hoped it would return (and I wasn&#39;t even being optimistic, as any British person would expect).</p>
-<h3>VAT MOSS</h3>
+<p>At the end of May 2015 (10 months after launching pro) the income JS Bin has provided has only <em>just</em> covered operating costs for the previous year. That&#39;s awesome and terrible at the same time. Before &quot;pro&quot; it was making a 100% loss - so that&#39;s something, <em>but</em> it doesn&#39;t even touch the edges of what I had hoped it would return (and I wasn&#39;t even being optimistic, as any British person would expect).</p>
+<p>But there is a cost to taking money...</p>
+<h3>VATMOSS</h3>
+<p><a href="https://remysharp.com/2014/12/16/vatmoss">VATMOSS</a> was a change to the way that VAT is processed in the EU. Unfortunately, the geniuses behind the change at the EU (or whatever rock they hide under) hadn&#39;t quite thought the whole thing through. The information was thin, convoluted, confusing and not really accessible to small companies like myself and many others.</p>
+<p>This change was also a <em>requirement</em> for anyone in the EU selling digital services or goods (i.e. JS Bin Pro subscriptions), and there was (and is) the threat of fines if you don&#39;t report and pay on the sales correctly.</p>
+<p>The last month of 2014 were riddled with stress from the VATMOSS changes that I had to complete on JS Bin.</p>
 <ul>
 <li><a href="https://twitter.com/search?q=from%3Arem%20%23vatmoss&amp;src=typd">https://twitter.com/search?q=from%3Arem%20%23vatmoss&amp;src=typd</a></li>
 <li><a href="https://twitter.com/rem/status/589057179258327040">https://twitter.com/rem/status/589057179258327040</a></li>
@@ -106,7 +113,7 @@ ga('send', 'pageview');</script></head><body id="drafts-jsbin-part-2-page"><nav 
 <h2>Fraud credit cards</h2>
 <p>Since we only charge £6 a month, its a nice low test for stolen credit cards to be tested with. Then there&#39;s the refund and the £15 processing fee.</p>
 <p>So I&#39;ve taken to checking each and every individual sign up and their bins to see if they look spammy. I caught my first fraud card and reported on 13-April 2014. Not a huge success but very satisfying to know I&#39;ve avoided the charge.</p>
-<h2>Part 6: The Police</h2>
+<h2>Part 5: The Police</h2>
 <ul>
 <li>Phone call from London met</li>
 <li>Email from Spanish police + porn</li>

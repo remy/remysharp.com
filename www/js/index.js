@@ -118,9 +118,15 @@ if ($('#index-page').length) {
   loadFlickr();
 }
 
-var $edit = $('small.edit');
+var $edit = $('small.edit').remove();
 if ($edit.length) {
-  $edit.appendTo('h1');
+  // this is daft, but it prevents Google from including [edit] in the
+  // post title...
+  var $h1 = $('h1').hover(function () {
+    $h1.append($edit);
+  }, function () {
+    $edit.remove();
+  });
 }
 
 hljs.initHighlightingOnLoad();

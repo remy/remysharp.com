@@ -1,4 +1,17 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 02 Jun 2015 11:42:26 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Tiny two way data binding</title><guid isPermaLink="false">bind</guid><link>http://remysharp.com/2015/06/02/bind</link><pubDate>Tue, 02 Jun 2015 11:42:26 +0000</pubDate><description><![CDATA[Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 09 Jun 2015 14:50:20 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Devtool tricks for when I forget</title><guid isPermaLink="false">devtool-tricks-for-when-i-forget</guid><link>http://remysharp.com/2015/06/09/devtool-tricks-for-when-i-forget</link><pubDate>Tue, 09 Jun 2015 14:50:20 +0000</pubDate><description><![CDATA[I&#39;ve recently completed a few of my mastering devtools workshops, so I&#39;m all over devtools again, and just this week spotted two tricks (I use) for when I &quot;forget&quot;.]]></description><content:encoded><![CDATA[
+<p>I&#39;ve recently completed a few of my <a href="http://leftlogic.com/training/debug">mastering devtools workshops</a>, so I&#39;m all over devtools again, and just this week spotted two tricks (I use) for when I &quot;forget&quot;.</p>
+<h2>Capturing XHR results</h2>
+<p>One of my favourite commands in devtools is the <code>copy</code> function. It&#39;ll copy DOM nodes, it&#39;ll stringify objects and it saves that horrible long and tricky select, highlight, copy, edit, faff process.</p>
+<p>However, sometimes I forget to set a breakpoint when my XHR requests come back so I can copy the response. But it&#39;s to fix.</p>
+<p>Right click on the XHR request in the network panel, and select &quot;Copy response&quot;. Boom. I&#39;ve now captured the JSON response and I&#39;m good.</p>
+<p><img src="/images/devtools-copy-response.jpg" alt="devtools copy response"></p>
+<h2>Retrieving results from the ether</h2>
+<p>It&#39;s not uncommon for me to run a command in the console, then realise I forgot to capture the result so I could run it through a <code>map</code> or some such process.</p>
+<p><strong>This is where <code>$_</code> is a live saver, which contains the result of the last command run in the console.</strong></p>
+<p>In the example below, I&#39;ve forgotten to capture the result of the promise so I can manipulate (or in this case, <code>copy</code>) the result. This is simply fixed by running a new command with <code>$_.then(...)</code>.</p>
+<p><img src="/images/devtools-dollar-underscore.png" alt="devtools dollar underscore"></p>
+<p>What&#39;s a trick, neat or otherwise, that you use on a regular basis?</p>
+]]></content:encoded></item><item><title>Tiny two way data binding</title><guid isPermaLink="false">bind</guid><link>http://remysharp.com/2015/06/02/bind</link><pubDate>Tue, 02 Jun 2015 11:42:26 +0000</pubDate><description><![CDATA[Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).
 So, as any good re-inventer of wheels, I wrote my own two-way data binding library, partly to experiment, partly to solve existing needs in my own projects - weighing in at &lt; 2K compressed.
 I present (cleverly named): bind.js]]></description><content:encoded><![CDATA[
 <p>Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).</p>
@@ -1624,43 +1637,4 @@ Behind the screen, behind the internet, I&#39;m generally a bit of a depressive 
 <hr>
 <p>This post is first and foremost for me. When I feel shit again, I&#39;ll find this post again, read it, and remember that I <em>can</em> stand tall, and say: depression lies. Fuck you, depression.</p>
 <p><small>Reposted from <a href="https://the-pastry-box-project.net/remy-sharp/2014-october-5">The Pastry Box Project</a></small></p>
-]]></content:encoded></item><item><title>Adding an (SHA256 signed) SSL certificate</title><guid isPermaLink="false">how-to-add-ssl</guid><link>http://remysharp.com/2014/10/17/how-to-add-ssl</link><pubDate>Fri, 17 Oct 2014 9:00:00 +0000</pubDate><description><![CDATA[I&#39;ve had to update the SSL certificate quite a few times on jsbin.com in the last 6 months, and I keep a cheatsheet of SSL steps on my machine. So it&#39;s about time I publish it somewhere that I can google too!]]></description><content:encoded><![CDATA[
-<p>I&#39;ve had to update the SSL certificate quite a few times on <a href="http://jsbin.com">jsbin.com</a> in the last 6 months, and I keep a cheatsheet of SSL steps on my machine. So it&#39;s about time I publish it somewhere that I can <em>google</em> too!</p>
-<p>This walkthrough explains how to add an SSL certificate to your server. This is based on using a linux based machine (in my case Ubuntu) and nginx as the server.</p>
-<p>I registered my SSL certificate via <a href="https://namecheap.com">namecheap</a> from RapidSSL which is actually a shell for GeoTrust.</p>
-<p>If you&#39;re reissuing a certificate to upgrade to SHA256 (from SHA-1) (because <a href="https://konklone.com/post/why-google-is-hurrying-the-web-to-kill-sha-1">SHA-1 is being ditched</a>) from RapidSSL <strong>you must</strong> reissue directly from them. See <a href="https://github.com/konklone/shaaaaaaaaaaaaa/issues/24#issuecomment-54021941">this comment</a> for full details.</p>
-<p>Assuming my site is example.com, I&#39;m using <code>example</code> as the main filename.</p>
-<pre><code class="language-nohighlight">openssl genrsa -aes256 -out example-encrypted.key 2048
-openssl rsa -in example-encrypted.key -out example-decrypted.key
-openssl req -new -sha256 -key example-decrypted.key -out example.csr</code></pre>
-<p>The last command will generate the CSR which will go off to your SSL issuer. I have this a cheatsheet for the prompts (if you&#39;re based in the UK, since <code>Locality</code> might not mean much):</p>
-<ul>
-<li>Country name: <code>GB</code>, a country code, not name</li>
-<li>State: <code>East Sussex</code>, county if you&#39;re in the UK</li>
-<li>Locality: <code>Brighton</code>, your city</li>
-<li>Organisation: <code>My Company Ltd</code></li>
-<li>Org unit: leave empty</li>
-<li>Common name: <code>www.example.com</code>, the full domain for the cert</li>
-<li>Leave the rest blank (email, challenge password &amp; company name)</li>
-</ul>
-<p><strong>Note:</strong> if you have a wildcard certificate, then the common name is <code>*.example.com</code>.</p>
-<p>Send <code>example.csr</code> contents to reissued SSL cert, and agree to all the emails.</p>
-<p>You should get an email from the SSL issue with the certificate. Save the contents of &#39;certificate&#39; in <code>example.crt</code>.</p>
-<p>Now get the intermediate certificate (I&#39;m using <a href="https://knowledge.rapidssl.com/support/ssl-certificate-support/index?page=content&amp;actp=CROSSLINK&amp;id=SO26459">RapidSSL&#39;s SHA256 cert</a>) and combine into a single bundled file - note that the order is important:</p>
-<pre><code class="language-nohighlight">cat example.crt intermediate.crt &gt; bundle.crt</code></pre>
-<hr>
-<p><em>RapidSSL specific note</em>: I found that the GeoTrust certificate (part of the intermediate certificate that I downloaded above) was still SHA-1 signed. So I dropped it, only bundling my own certificate and the rapidSSL certificate (so less certificates) and now I get the green lock from Chrome Canary. Note: I&#39;m not <em>100%</em> if this is okay, but it does seem valid.</p>
-<hr>
-<p>Finally, make sure nginx (in my case) is using the bundle and the key used to generate the csr:</p>
-<pre><code class="language-conf">ssl                  on;
-ssl_certificate      /WWW/example.com/certs/bundle.crt;
-ssl_certificate_key  /WWW/example.com/certs/example-decrypted.key;</code></pre>
-<p>Then restart nginx:</p>
-<pre><code class="language-nohighlight">nginx -s reload</code></pre>
-<h2>References &amp; tools:</h2>
-<ul>
-<li><a href="https://shaaaaaaaaaaaaa.com/">shaaaaaaaaaaaaa</a> (for checking SHA-1)</li>
-<li><a href="https://www.ssllabs.com/ssltest/analyze.html">SSL labs</a> (for deep SSL analysis)</li>
-<li><a href="https://www.sslshopper.com/article-most-common-openssl-commands.html">common openssl commands</a></li>
-</ul>
 ]]></content:encoded></item></channel></rss>
