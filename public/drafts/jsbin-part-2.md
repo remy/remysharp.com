@@ -80,7 +80,7 @@ It did resolve the issue. It also randomly blocked many, many more regular users
 
 ### fail2ban
 
-Eventually I cottoned on to using [fail2ban]() to protect my machine from repeated hits from a specific IP address. Since installing around late 2014, it's massively reduced the attacks of this nature.
+Eventually I cottoned on to using [fail2ban](http://www.fail2ban.org/wiki/index.php/Main_Page) to protect my machine from repeated hits from a specific IP address. Since installing around late 2014, it's massively reduced the attacks of this nature.
 
 The unfortunate side effect is that it also blocks out classroom use of JS Bin, since JS Bin sends XHR writes *all the time*, fail2ban sees this all coming from a single IP, and goes ahead and denies the eager young class from learning.
 

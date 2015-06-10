@@ -82,4 +82,12 @@ Being able to customise it, using my knowledge of code and knowing how to hack t
 
 **Being able to express myself in my pebble is what's made me love it.**
 
+I've also realised that I always prefered the look of services like de.licio.us (circa 2005) over Magnolia, and in a way, the Pebble is when compared to the other smart watches out there.
+
 A *lot* of my friends have asked me "when are you getting the iWatch", to which I say I'm not interested (*seriously*, [follow me on twitter](https://twitter.com/rem) if you need an idea of how [sick I am of Apple](https://twitter.com/search?q=from%3Arem%20apple&src=typd)) - and in fact, I *also* backed the new Pebble Time project and I can't wait to get my hands on that device and play some more.
+
+## Next: Time
+
+Akin with simplicity of the Pebble, my Pebble Time arrived in this simple cardboard, no-frills packaging, and I'm keen to see how I can customise this watch and make it mine, again.
+
+![Pebble Time packaging](/images/pebble-time-packaging.jpg)
