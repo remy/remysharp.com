@@ -18,6 +18,10 @@ ga('send', 'pageview');</script></head><body id="blog-devtool-tricks-for-when-i-
 <p><strong>This is where <code>$_</code> is a live saver, which contains the result of the last command run in the console.</strong></p>
 <p>In the example below, I&#39;ve forgotten to capture the result of the promise so I can manipulate (or in this case, <code>copy</code>) the result. This is simply fixed by running a new command with <code>$_.then(...)</code>.</p>
 <p><img src="/images/devtools-dollar-underscore.png" alt="devtools dollar underscore"></p>
+<h2>Copy any <em>dead</em> logged value</h2>
+<p>Sometimes I&#39;ll <code>console.log</code> out a value or object that I want to inspect. Then realise that actually I want to copy it. Old me would go back to the source code, and log out a <code>JSON.stringify</code>, but not new me.</p>
+<p>It&#39;s really easy, right click on the object in the console, and &quot;Store as Global Variable&quot; (usually stored to <code>temp1</code>). Now it&#39;s easy to <code>copy(temp1)</code> and it&#39;ll automatically be converted into a JSON for me:</p>
+<p><img src="/images/devtools-capture-for-copy.png" alt="devtools copy a global"></p>
 <p>What&#39;s a trick, neat or otherwise, that you use on a regular basis?</p>
 <p class="follow">You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
 var disqus_url = 'http://remysharp.com/2015/06/09/devtool-tricks-for-when-i-forget/';

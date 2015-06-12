@@ -10,6 +10,10 @@
 <p><strong>This is where <code>$_</code> is a live saver, which contains the result of the last command run in the console.</strong></p>
 <p>In the example below, I&#39;ve forgotten to capture the result of the promise so I can manipulate (or in this case, <code>copy</code>) the result. This is simply fixed by running a new command with <code>$_.then(...)</code>.</p>
 <p><img src="/images/devtools-dollar-underscore.png" alt="devtools dollar underscore"></p>
+<h2>Copy any <em>dead</em> logged value</h2>
+<p>Sometimes I&#39;ll <code>console.log</code> out a value or object that I want to inspect. Then realise that actually I want to copy it. Old me would go back to the source code, and log out a <code>JSON.stringify</code>, but not new me.</p>
+<p>It&#39;s really easy, right click on the object in the console, and &quot;Store as Global Variable&quot; (usually stored to <code>temp1</code>). Now it&#39;s easy to <code>copy(temp1)</code> and it&#39;ll automatically be converted into a JSON for me:</p>
+<p><img src="/images/devtools-capture-for-copy.png" alt="devtools copy a global"></p>
 <p>What&#39;s a trick, neat or otherwise, that you use on a regular basis?</p>
 ]]></content:encoded></item><item><title>Tiny two way data binding</title><guid isPermaLink="false">bind</guid><link>http://remysharp.com/2015/06/02/bind</link><pubDate>Tue, 02 Jun 2015 11:42:26 +0000</pubDate><description><![CDATA[Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).
 So, as any good re-inventer of wheels, I wrote my own two-way data binding library, partly to experiment, partly to solve existing needs in my own projects - weighing in at &lt; 2K compressed.
