@@ -24,4 +24,12 @@ In the example below, I've forgotten to capture the result of the promise so I c
 
 ![devtools dollar underscore](/images/devtools-dollar-underscore.png)
 
+## Copy any *dead* logged value
+
+Sometimes I'll `console.log` out a value or object that I want to inspect. Then realise that actually I want to copy it. Old me would go back to the source code, and log out a `JSON.stringify`, but not new me.
+
+It's really easy, right click on the object in the console, and "Store as Global Variable" (usually stored to `temp1`). Now it's easy to `copy(temp1)` and it'll automatically be converted into a JSON for me:
+
+![devtools copy a global](/images/devtools-capture-for-copy.png)
+
 What's a trick, neat or otherwise, that you use on a regular basis?
