@@ -2,6 +2,15 @@ var $results = $('#search-results');
 var $for = $('#for');
 var template = $('#result-template').html();
 
+function clean(s) {
+  return decodeURIComponent(s).replace(/[<>]/g, function (s) {
+    return {
+      '<': '&lt;',
+      '>': '&gt;',
+    };
+  });
+}
+
 $('form.search').on('submit', function (event) {
   event.preventDefault();
   var val = $(this).find('input[type="text"]').val();
@@ -11,7 +20,7 @@ $('form.search').on('submit', function (event) {
 
 if (window.location.search) {
   var q = window.location.search.substr(1).split('=').pop()
-  $for.val(q);
+  $for.val(clean(q));
   find(q);
 }
 
