@@ -1,4 +1,4 @@
-# The toxic side of free. Or how I lost £80,000 and my love for my side project
+# The toxic side of free. Or how I lost my love for my side project
 
 This is a story about JS Bin. I've told one story of jsbin before, and this is the b-side, the dark side. But remember with everything I share with you, jsbin is the longest running live pastebin, and it's not going anywhere. It will continue to run and serve its users. Even the scumbags.
 
