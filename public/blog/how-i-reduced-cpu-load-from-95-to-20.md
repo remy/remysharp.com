@@ -26,7 +26,7 @@ I tried out New Relic, which after first was pretty awesome, amazing charts, ver
 
 StrongLoop was next, but once I got the CLI tool installed (after some issues), I couldn't work out how to connect to the client using the web interface...at all. Another abandon.
 
-[Keymetrics](https://keymetrics.io/) was also suggested (which, I beleive, is produced by the makers of [PM2](https://github.com/Unitech/pm2) a Process Management tool for node) - but it didn't look like it could do instrumentation, so I didn't proceed.
+[Keymetrics](https://keymetrics.io/) was also suggested (which, I believe, is produced by the makers of [PM2](https://github.com/Unitech/pm2) a Process Management tool for node) - but it didn't look like it could do instrumentation, so I didn't proceed.
 
 In the end though, and randomly, my nodetime account started working..!
 
