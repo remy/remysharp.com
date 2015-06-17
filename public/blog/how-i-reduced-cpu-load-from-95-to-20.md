@@ -12,7 +12,7 @@ Until this afternoon. I made one change, and boom: 20%. Stable. Also, I'll be fi
 
 Although JS Bin's code would load a config file and [set the](https://github.com/jsbin/jsbin/blob/master/lib/app.js#L61) `NODE_ENV` dynamically. Except...it wasn't actually being set early enough.
 
-I changed the [upstart script](https://github.com/jsbin/production/blob/master/apps.jsbin.com/etc/init/jsbin.conf#L18) to execute *directly* in production mode, and voila, the CPU dropped to a nice stable 20% (or so, rising and falling as I'd expect).
+I changed the [upstart script](https://github.com/jsbin/production/blob/master/apps.jsbin.com/etc/init/jsbin.conf#L18) to execute *directly* in production mode, and voilà, the CPU dropped to a nice stable 20% (or so, rising and falling as I'd expect).
 
 ## The how
 
@@ -34,7 +34,7 @@ The problem was: I've never really been able to read the nodetime data to make h
 
 ### Clues
 
-Heading straight for the transaction profiler, I started watching the operations. The tranactions refer to routes being hit, as since there's so much varied traffic, it doesn't really give any clues as to what's slow (unless there's a specific bin causing the problem). But there it was, clear as day:
+Heading straight for the transaction profiler, I started watching the operations. The transactions refer to routes being hit, as since there's so much varied traffic, it doesn't really give any clues as to what's slow (unless there's a specific bin causing the problem). But there it was, clear as day:
 
 ![Nodetime transaction operations](/images/nodetime-transactions.png)
 
