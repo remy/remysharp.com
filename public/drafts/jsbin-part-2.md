@@ -1,4 +1,4 @@
-# The toxic side of free. Or how I lost my love for my side project
+# The toxic side of free. Or: how I lost my love for my side project
 
 This is a story about JS Bin. I've told one story of jsbin before, and this is the b-side, the dark side. But remember with everything I share with you, jsbin is the longest running live pastebin, and it's not going anywhere. It will continue to run and serve its users. Even the scumbags.
 
@@ -194,21 +194,61 @@ But there is a cost to taking money...
 
 ### VATMOSS
 
+![EU](/images/jsbin-eu.jpg)
+
+**Bringing down barriers to unlock online oppotunities.** Keep that in mind.
+
+<p hidden>The European Commission is the EU's executive body. It represents the interests of the European Union as a whole (not the interests of individual countries).</p>
+
 [VATMOSS](https://remysharp.com/2014/12/16/vatmoss) was a change to the way that VAT is processed in the EU. Unfortunately, the geniuses behind the change at the EU (or whatever rock they hide under) hadn't quite thought the whole thing through. The information was thin, convoluted, confusing and not really accessible to small companies like myself and many others.
 
 This change was also a *requirement* for anyone in the EU selling digital services or goods (i.e. JS Bin Pro subscriptions), and there was (and is) the threat of fines if you don't report and pay on the sales correctly.
 
 The last month of 2014 were riddled with stress from the VATMOSS changes that I had to complete on JS Bin.
 
-- https://twitter.com/search?q=from%3Arem%20%23vatmoss&src=typd
-- https://twitter.com/rem/status/589057179258327040
+This tooks days and days of stress to try to understand VATMOSS, and what would be required to satisfy requirements.
 
-## Fraud credit cards
+In the end, it took around two weeks of development for both my time & Fabien (employeed by me to work on JS Bin) and about two weeks of research, filing and accounting time on Julie's part (my business partner - and wife).
 
-Since we only charge £6 a month, its a nice low test for stolen credit cards to be tested with. Then there's the refund and the £15 processing fee.
+Estimated business cost: £3,500.
 
-So I've taken to checking each and every individual sign up and their bins to see if they look spammy. I caught my first fraud card and reported on 13-April 2014. Not a huge success but very satisfying to know I've avoided the charge.
+![VATMOSS filed](/images/jsbin-vatmoss-filed.png)
 
+£11.70p. VATMOSS, the stress of it all, to collect pennies from **seven people**. It would have been cheaper to book flights to each of their addresses to collect the cash by hand. [It was not fun](https://twitter.com/search?q=from%3Arem%20%23vatmoss&src=typd).
+
+### Fraud credit cards
+
+Since we only charge £6 a month, its a nice low test for stolen credit cards to be tested with.
+
+This means that JS Bin was being used as a testing ground for stolen card numbers. If the card went through then they would use the card. Unbeknownst to me, the user wouldn't do *anything* on JS Bin, and I'd be on my merry way thinking I had a new pro sign up.
+
+Then, eventually, the rightful owner would thing, "What's this 'JS BIN PRO MONTHLY' doing on my statement", follow up with their bank, and raise a fraud complaint.
+
+I can't win the complaint. The card was stolen, the £6 belongs to the original card owner, no question. But! If there's a dispute on Stripe, there's transaction fees for reversing charges. £15.34 in fact. Since I know I'll lose the dispute, **it's cost me, £21.54 to allow some shithead to use JS Bin as a stolen card testing facility**.
+
+![Stripe disputes](/images/jsbin-stripe-fraud.png)
+
+My process now is that I've taken to checking each and every individual sign up and their bins to see if they look spammy. I caught my first fraud card and reported on 13-April 2014. Not a huge success but very satisfying to know I've avoided the charge. Woot!
+
+
+
+### Pro
+
+- Not a huge success
+- Was aiming for 1% conversion, think we got around 0.1%
+- Biggest failure was: No plan and failure to launch. No marketing plan, no aims
+
+!["I-565 at Space and Rocket Center" by Nhlarry. Licensed under CC BY-SA 3.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:I-565_at_Space_and_Rocket_Center.jpg#/media/File:I-565_at_Space_and_Rocket_Center.jpg](/images/jsbin-launch-failure.jpg)
+
+### Know what your users *need*
+
+I lost *a lot* of love in this area of working with JS Bin. I can take the spam, and the junk, but this part of JS Bin required that the project actually raises money to support itself.
+
+I had hoped, naively, that the web community will swoop in and pony up some cash. But the bottom line is there was no plan and most importantly there *was* nothing that users *needed*. I pay for my Github account because I *need* private repos. I pay for Gmail, because I *need* real business email accounts. I pay for Dropbox because I *need* the extra space.
+
+With JS Bin, everything users *need* is given away and open source. That's honourable, but doesn't pay the mortgage.
+
+Next time, with products like [Confwall](https://confwall.com), I launched *as soon* as it was usable. I offer a free area, but I make sure that you can't get to the stuff you *need* unless you pay. The way it should be!
 
 ## Part 5: The Police
 

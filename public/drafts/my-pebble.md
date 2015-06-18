@@ -50,6 +50,8 @@ There *is* a memory leak in the original code that causes the watch face to cras
 
 I used [CloudPebble](https://cloudpebble.net) for all of the development I've done so far on the Pebble, and it's an absolutely superb resource.
 
+![My OG Pebble](/images/pebble-og.jpg)
+
 ## I know JavaScript!
 
 Although there's a couple of limitations in the JS apps, the simple fact is: I can create my ideas as JavaScript based Pebble apps in a matter of hours.
