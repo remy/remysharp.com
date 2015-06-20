@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The toxic side of free. Or: how I lost the love for my side project (part 5)</title><meta name="description" content="The toxic side of free. Or: how I lost the love for my side project (part 5)"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.22"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.22"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="drafts-jsbin-toxic-part-5-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2015/06/16/how-i-reduced-cpu-load-from-95-to-20" title="Reducing my CPU load from 95% to 20%">Latest post</a></li></ul></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 20-Jun 2015</div><article class="post"><h1 class="title"><a href="/drafts/jsbin-toxic-part-5">The toxic side of free. Or: how I lost the love for my side project (part 5)</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/jsbin-toxic-part-5.md">(edit)</a></small></h1><div class="post-content">
+<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
+<p>The story has been broken into 5 parts, released over a series of days.</p>
+<ul>
+<li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
+<li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
+<li><a href="/jsbin-toxic-part-3">Part 3: Registered users wreaking havoc</a></li>
+<li><a href="/jsbin-toxic-part-4">Part 4: The cost</a></li>
+<li><a href="/jsbin-toxic-part-5">Part 5: Police</a></li>
+</ul>
+<h2>Part 5: Police</h2>
+<p>I said before that JS Bin Pro really sucked the love out of the project for me, but this part has been a mix of emotions, but it&#39;s definitely the most distressed I&#39;ve been when running JS Bin...</p>
+<p>Over the years I&#39;ve had cease and desist emails telling me that I&#39;ve either been hacked or stolen content. I would take my time (through gritted teeth) explaining that JS Bin allowed users to upload their own content, and that this wasn&#39;t something I was trying to do to hurt the company or institution.</p>
+<p>Nearly every single time, the content would be removed promptly (usually at the same time as I was responding to explain what JS Bin was), but there&#39;s three occasions that stand out in my memory.</p>
+<h3>Evening calls</h3>
+<p>Early 2010, I was doing a lot of client work and when the phone rang at 7pm, I asked Julie (my wife and business partner) to shoo them away and to say that I was unavailable.</p>
+<p>I think I was actually having a moment on The Throne when Julie gave a knock on the door. &quot;You need to take this, it&#39;s the Police&quot;.</p>
+<p>No one really wants the Police phoning their house.</p>
+<p>It wasn&#39;t actually as painful as I would have guessed. The man said he was calling from the London Met. Police, and that he was dealing with a coordinated DDoS attack orchestrated over Facebook due to take place tomorrow evening.</p>
+<p>The messages (on Facebook) were using JS Bin as the method of attack (yes, pretty much script kiddies), and to the police officer&#39;s credit, he had done his research on JS Bin and understood that <em>I hadn&#39;t created these bins</em>. He was calling to ask if I could <em>possibly</em> take the links down (yes, we&#39;re <a href="https://twitter.com/soverybritish">So Very British</a>).</p>
+<p>Absolutely. Minutes later, the bins were gone. I didn&#39;t hear back again, but it would be the first in a dozen or so (gentle) encounters with the police.</p>
+<h3>The worst email I ever received</h3>
+<p>One late evening in 2013, sat on the sofa watching a film, I get an email. As with all webby people that don&#39;t understand that work is supposed to stop at 6pm, I go ahead and get my laptop and read the email.</p>
+<p>It&#39;s an email from the Spanish police. Sort of a cease and desist, including two links to JS Bin asking for their immediate take down. I can&#39;t actually find the original email because I wanted to erase all memory of the event.</p>
+<p>There had been issues in the past where porn had been linked to from JS Bin and it&#39;s constant battle to keep it under control. The email from the Spanish police however, did not warn me as to what was behind the URLs.</p>
+<p>I clicked, and my memory is slow motion of what I saw next, and thankfully the internet was also slow to load.</p>
+<hr>
+<p>Just enough loaded for me to realise that the images contained child pornography, early enough for me <em>not</em> to see anything that would scar me for life. I closed the window very quickly.</p>
+<p>It still makes me sick to think that <em>that</em> kind of content was being hosted on one of my URLs.</p>
+<p>Using the terminal, I <code>cURL</code>ed the URL down to look for any commonalities between the source of the two JS Bin URLs I had, to immediately add it to the blacklist functionality. Thankfully...if there was a thing, I did find a commonality, and I was able to block what appeared to be a source for this kind of material.</p>
+<p>It took many days to forget the sick feeling I had that linked me directly to the content posted on JS Bin.</p>
+<h3>&quot;Terrorist use&quot;</h3>
+<p>I&#39;ve used inverted quotes around &quot;terrorist use&quot;, because, well they&#39;re not my words, and I&#39;m not 100% certain that JS Bin falls squarely into be used for terrorism. But, it&#39;s certainly a new area for my project.</p>
+<p>Just a few weeks ago, an issue was filed, claiming exactly this:</p>
+<p><img src="/images/jsbin-terrorism.png" alt="Terrorism attacks"></p>
+<p>The bin that&#39;s referred to was being used to attack the Madison Police web site, apparently organised by Anonymous:</p>
+<p><img src="/images/jsbin-anonymous-attack.jpg" alt="Anonymous attacks"></p>
+<p>I took down the bin, and added appropriate blacklisting, but also noticed that the issue was filed about 10 <em>days</em> after the attack had taken place!</p>
+<h3>It&#39;s part of the job...</h3>
+<p>I&#39;d like to end this section with some parting advice on how JS Bin is better now, but sadly it&#39;s part of the job when you build a site that houses all the crap the internet has to offer. The easier JS Bin makes it so that content can be saved, the more it&#39;ll be used in new ways that causes some kind of trouble.</p>
+<p>Obviously the flip side is that JS Bin is open to all, and that includes kids wanting to learn, educators, newbies, &quot;hackers&quot; and more.</p>
+<p>But, it would be great, as author of jsfiddle said, if Anonymous could write and use their own pastebin!</p>
+<p><a href="https://twitter.com/zalun/status/602586249203945472"><img src="/images/jsbin-please-write.png" alt="Please, Anonymous, write your own"></a></p>
+<h2>Finding the love, again</h2>
+<p>I&#39;ve been thinking about this post (and the public talk version of this) for about a year now. I was hesitant because it was so negative and probably comes across a little bitter.</p>
+<p>The irony however, is that it&#39;s been a cathartic process. I feel like I&#39;ve got some of the poison out of me by going through this process.</p>
+<p>I realised something important at the end of 2014, and it was the reason I decided to put development on JS Bin on hold: I need to love working on JS Bin. I didn&#39;t at the time. I was working on parts of JS Bin that was full of pressure, I started getting abuse for some of my work, and it was all a bit of a mess.</p>
+<p>Since starting this post, I&#39;ve released new features to JS Bin to all groups of users (anonymous, registered and pro) and have several JS Bin <a href="http://jsbin.com/blog">blog posts</a> in the works.</p>
+<p>I&#39;ve started to find my love for my project again.</p>
+<p><img src="/images/jsbin-t-shirt.jpg" alt="Hack, learn, fix, teach"></p>
+<p class="update">Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.</p></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.22"></script><script src="/js/index.js?2.22"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body></html>
