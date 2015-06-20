@@ -51,7 +51,7 @@ It still makes me sick to think that *that* kind of content was being hosted on 
 
 Using the terminal, I `cURL`ed the URL down to look for any commonalities between the source of the two JS Bin URLs I had, to immediately add it to the blacklist functionality. Thankfully...if there was a thing, I did find a commonality, and I was able to block what appeared to be a source for this kind of material.
 
-It took many days to forget the sick feeling I had that linked me directly to the content posted on JS Bin.
+It took many days to to get that sickening feeling out of my system. I hate to think that JS Bin has helped abusers in some way.
 
 ### "Terrorist use"
 
