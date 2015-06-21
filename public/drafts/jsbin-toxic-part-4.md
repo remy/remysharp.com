@@ -22,21 +22,23 @@ But there is a cost to taking money...
 
 ### VATMOSS
 
-![EU](/images/jsbin-eu.jpg)
-
-**Bringing down barriers to unlock online oppotunities.** Keep that in mind.
-
-<p hidden>The European Commission is the EU's executive body. It represents the interests of the European Union as a whole (not the interests of individual countries).</p>
-
 [VATMOSS](https://remysharp.com/2014/12/16/vatmoss) was a change to the way that VAT is processed in the EU. Unfortunately, the geniuses behind the change at the EU (or whatever rock they hide under) hadn't quite thought the whole thing through. The information was thin, convoluted, confusing and not really accessible to small companies like myself and many others.
 
-This change was also a *requirement* for anyone in the EU selling digital services or goods (i.e. JS Bin Pro subscriptions), and there was (and is) the threat of fines if you don't report and pay on the sales correctly.
+This is the landing page for the EU European Commission's Digital Market:
 
-The last month of 2014 were riddled with stress from the VATMOSS changes that I had to complete on JS Bin.
+![EU](/images/jsbin-eu.jpg)
 
-This tooks days and days of stress to try to understand VATMOSS, and what would be required to satisfy requirements.
+The European Commission is the EU's executive body. It represents the interests of the European Union as a whole (not the interests of individual countries).
 
-In the end, it took around two weeks of development for both my time & Fabien (employeed by me to work on JS Bin) and about two weeks of research, filing and accounting time on Julie's part (my business partner - and wife).
+The slogan: **bringing down barriers to unlock online opportunities.** What a crock of shit. VATMOSS has single handedly killed off new business and for others made it *more* difficult for others do to their commerce. It's worth reading around the back story of VATMOSS, and even in mid-2015, it's there's a fight for change going on.
+
+The VATMOSS reporting is now (as of 1-Jan 2015) a requirement for *anyone* in the EU selling digital services or goods (i.e. ebooks, apps, subscriptions...JS Bin Pro subscriptions), and there was (and is) the threat of fines if you don't report and pay on the sales correctly.
+
+VATMOSS requires that you charge the VAT of the country of your customer. i.e. if the customer is English, 20%, if they are Danish 25%. Also, you have to capture *three proofs* that you're charging the right country (it's actually 2 proofs, but you need a 3rd backup proof). If these are all in conflict... ¯\\_(ツ)_/¯
+
+The last month of 2014 were riddled with stress from the VATMOSS changes that I had to complete on JS Bin. It took weeks to try to fully understand VATMOSS, and what exactly would be required to satisfy requirements.
+
+In the end, the development time was about 2 week for both myself & Fabien (employed to work on JS Bin) and about two weeks of research, filing and accounting time on Julie's part (my business partner - and wife).
 
 Estimated business cost: £3,500.
 
@@ -46,11 +48,11 @@ Estimated business cost: £3,500.
 
 ### Fraud credit cards
 
-Since we only charge £6 a month, its a nice low test for stolen credit cards to be tested with.
+Since pro accounts initially cost £6 for month, it turns out that this is low enough that it won't send red flags to stolen cards.
 
 This means that JS Bin was being used as a testing ground for stolen card numbers. If the card went through then they would use the card. Unbeknownst to me, the user wouldn't do *anything* on JS Bin, and I'd be on my merry way thinking I had a new pro sign up.
 
-Then, eventually, the rightful owner would thing, "What's this 'JS BIN PRO MONTHLY' doing on my statement", follow up with their bank, and raise a fraud complaint.
+Eventually, the rightful owner would thing, "What's this 'JS BIN PRO MONTHLY' doing on my statement", follow up with their bank, and raise a fraud complaint.
 
 I can't win the complaint. The card was stolen, the £6 belongs to the original card owner, no question. But! If there's a dispute on Stripe, there's transaction fees for reversing charges. £15.34 in fact. Since I know I'll lose the dispute, **it's cost me, £21.54 to allow some shithead to use JS Bin as a stolen card testing facility**.
 

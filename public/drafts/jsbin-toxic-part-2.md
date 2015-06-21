@@ -12,7 +12,7 @@ The story has been broken into 5 parts, released over a series of days.
 
 ## Part 2: Spam
 
-Who doesn't love a filthy does of spam with their product? Let's picture exactly what JS Bin is: a place that people can *anonymously* create public web pages.
+Who doesn't love a filthy dose of spam with their product? Let's picture exactly what JS Bin is: a place that people can *anonymously* create public web pages.
 
 So...yeah...I guess I should have known I was asking for trouble.
 
