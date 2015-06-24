@@ -230,5 +230,14 @@
     "tags": [
       "code"
     ]
+  },
+  "progressive-enhancement": {
+    "title": "Progressive Enhancement",
+    "date": "2015-06-22 17:59:07",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
   }
 }
