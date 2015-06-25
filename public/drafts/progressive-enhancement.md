@@ -65,11 +65,51 @@ Does this mean it's not possible? I don't think so. Without the stories though, 
 
 **What does this story look like when a framework is a prerequisite of the project?**
 
+## Web Components
+
+Web Components are a hot debate topic. They could cause all kinds of mess of the web. On the other hand, they're also a perfect fit for progressive enhancement.
+
+Take the following HTML:
+
+```html
+<input type="text" name="creditcard" required autocomplete="cc-number">
+```
+
+Notice that I'm not using the `pattern` attribute because it's hard to match correctly to credit cards (they might have spaces between groups of numbers, or dashes, or not at all).
+
+There's also no validation, and the first number also tells us what kind of card is being used (4 indicates a Visa card for instance).
+
+A web component could progressively enhance the element similarly to the way the browser would natively enhance `type="date"` for instance.
+
+```html
+<stripe-cc-card>
+  <input type="text" name="creditcard" required autocomplete="cc-number">
+</stripe-cc-card>
+```
+
+I wonder, **are web components the future of progressive enhancement?**
+
 ## Potential problems on the horizon
 
 Developers are inherently lazy. It's what makes them/us optimise our workflows and become very good at solving problems. We re-use what's known to work and tend to eke out the complex parts that we can "live without". Sadly, this can be at the cost of accessibility and progressive enhancement.
 
 I think there's some bigger potential problems on the horizon: ES6 - esnext (i.e. the future of JavaScript).
+
+### "But progressive enhancement has nothing to do with ES-whatever..."
+
+Taking a step back for a moment. Say we're writing an HTML only web site (no CSS or JS). But we want to use the latest most amazing *native* email validation:
+
+```html
+<input type="email" required>
+```
+
+Simple. But...what happens *if* `type="email"` isn't supported? Well, nothing bad. The element will be a text element (and we can validate on the server). *The HTML doesn't break*.
+
+JavaScript isn't quite the same, but we can code defensively, using feature detection and polyfills where appropriate.
+
+ES6 has features that breaks this design. Syntax breaking features that cannot exist alongside our ES5 and cannot be polyfilled. It must be transpiled.
+
+### Syntax breaking
 
 There's a small number of ES6 features that are syntax breaking, the "[arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" in particular.
 
