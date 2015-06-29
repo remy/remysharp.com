@@ -22,7 +22,15 @@ Graceful degradation works the *other way around*, in that the complete function
 
 **The problem is** based on a survey of my own followers, that's to say that they're likely to have similar interests and values when it comes to web dev, 25% of 800 developers still believe that progressive enhancement is simply making the site work without JavaScript enabled.
 
+## How do you make it work without JavaScript?
+
+I ran a simple survey of my twitter followers and ask people to share the question too. It asked "what is progressive enhancement?" with 4 limited answers.
+
+Out of *800* responses, 25% said that progressive enhancement was making the site work *without* JavaScript.
+
 Which explains the *silver bullet response* of: "how would a WebRTC chat site work?" ...obviously it wouldn't.
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/8QCiXc6QHV4" frameborder="0" allowfullscreen></iframe>
 
 Which to me, means **delivering a baseline web site that's usable by the most minimal of requirements**.
 
@@ -111,7 +119,7 @@ ES6 has features that breaks this design. Syntax breaking features that cannot e
 
 ### Syntax breaking
 
-There's a small number of ES6 features that are syntax breaking, the "[arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" in particular.
+There's a small number of ES6 features that are syntax breaking, the "[arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)" in particular.
 
 This means, if the arrow function is encountered by a browser that doesn't support ES6 arrows, it's cause a syntax error. If the site is following best practise and combining all their JavaScript into a single file, this means that *all* their JavaScript just broke (I've personally seen this on JS Bin when we used [jshint which uses ES5 setters and broke IE8](https://github.com/jsbin/jsbin/blob/b1e56287d668818b361bc71b299fc36b707f9e6e/views/index.html#L311-L320)).
 
