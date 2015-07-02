@@ -239,5 +239,23 @@
     "tags": [
       "web"
     ]
+  },
+  "assumptions": {
+    "title": "You know what they say about assumptions...",
+    "date": "2015-06-30 15:54:35",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "optimising-a-canvas-animation": {
+    "title": "Optimising a canvas animation",
+    "date": "2015-07-01 08:52:23",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }

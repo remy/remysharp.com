@@ -30,7 +30,7 @@ Out of *800* responses, 25% said that progressive enhancement was making the sit
 
 Which explains the *silver bullet response* of: "how would a WebRTC chat site work?" ...obviously it wouldn't.
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/8QCiXc6QHV4" frameborder="0" allowfullscreen></iframe>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/8QCiXc6QHV4?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Which to me, means **delivering a baseline web site that's usable by the most minimal of requirements**.
 
