@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Optimising a canvas animation</title><meta name="description" content="Optimising a canvas animation"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.24"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.24"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="drafts-optimising-a-canvas-animation-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2015/06/16/how-i-reduced-cpu-load-from-95-to-20" title="Reducing my CPU load from 95% to 20%">Latest post</a></li></ul></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 1-Jul 2015</div><article class="post"><h1 class="title"><a href="/drafts/optimising-a-canvas-animation">Optimising a canvas animation</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/optimising-a-canvas-animation.md">(edit)</a></small></h1><div class="post-content">
+<p>I&#39;ve been working on a small canvas animation for <a href="http://2015.ffconf.org">ffconf 2015</a> and realised two important optimisations that I&#39;ve missed out on the past.</p>
+<p>The net result: no more humming fan on my laptop.</p>
+<!--more-->
+
+<p>For the sake of brevity (and actually getting this post written under the usual <em>several hours</em>), I&#39;m just going to talk about what I changed.</p>
+<h2>Pinning FPS</h2>
+<p>I knew that the &quot;right&quot; approach was to use <code>requestAnimationFrame</code> (rAF) for animation, but my problems historically is that the call rate of my update function was way, way too often. This can either cause my animation to appear to be <em>too</em> quick, or results in the CPU overheating.</p>
+<p>One nice advantage of rAF for animation is that it will stop firing when the tab is out of focus (i.e. if you switch to another tab). Whereas <code>setInterval</code> not only doesn&#39;t hit the timing you want, but it&#39;ll <em>keep</em> firing, burning up battery.</p>
+<p><strong>TIL</strong> <code>requestAnimationFrame</code> passes in a <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame#Parameters">high resolution timestamp</a> to the callback.</p>
+<p>Using the timestamp, we can get a delta of the last run, and if, and only if, the last frame was drawn X FPS ago, then we&#39;ll draw a new frame. For example:</p>
+<pre><code class="language-js">var lastFrameTime = 0;
+function draw(elapsedTime) {
+  // calculate the delta since the last frame
+  var delta = elapsedTime - (lastFrameTime || 0);
+
+  // queue up an rAF draw call
+  window.requestAnimationFrame(draw);
+
+  // if we *don&#39;t* already have a first frame, and the
+  // delta is less than 33ms (30fps in this case) then
+  // don&#39;t do anything and return
+  if (lastFrameTime &amp;&amp; delta &lt; 33) {
+    return;
+  }
+  // else we have a frame we want to draw at 30fps...
+
+  // capture the last frame draw time so we can work out
+  // a delta next time.
+  lastFrameTime = elapsedTime;
+
+  // now do the frame update and render work
+  // ...
+}</code></pre>
+<h2>Minimise your paints</h2>
+<p>Originally my demo was drawing a number of squares that would scale towards the viewer giving the impression of movement. Initially innocuous:</p>
+<pre><code class="language-js">function draw() {
+  // ... calculate x, y, scale, etc
+  // makes the shape: |_|
+  ctx.beginPath();
+  ctx.moveTo(x, y);
+  ctx.lineTo(x, y + y2);
+  ctx.lineTo(x + x2, y + y2);
+  ctx.lineTo(x + x2, y);
+  ctx.stroke();
+  ctx.closePath();
+}
+
+// update is called on a new frame
+function update() {
+  // ... update state then draw:
+  for (i = 0; i &lt; boxes.length; i++) {
+    boxes[i].draw();
+  }
+}</code></pre>
+<p>This would be repeated for every &quot;box&quot; animating towards the viewer. Since I&#39;m just drawing lines, I could batch all these together all in one go and group the collective shapes under one path, then run a <em>single</em> stroke:</p>
+<pre><code class="language-js">function draw() {
+  // ... calculate x, y, scale, etc
+  // makes the shape: |_|
+  ctx.moveTo(x, y);
+  ctx.lineTo(x, y + y2);
+  ctx.lineTo(x + x2, y + y2);
+  ctx.lineTo(x + x2, y);
+}
+
+// update is called on a new frame
+function update() {
+  // ... update state then draw:
+  ctx.beginPath();
+  for (i = 0; i &lt; boxes.length; i++) {
+    boxes[i].draw();
+  }
+  ctx.stroke();
+  ctx.closePath();
+}</code></pre>
+<p>It&#39;s a fairly tiny optimisation, but the result is the same, but with less interaction with the canvas, and given we&#39;re aiming to be in and out quickly, it&#39;s not a bad thing.</p>
+<h2>Single rAF handler</h2>
+<!-- <a class="jsbin-embed" href="https://jsbin.com/zulaha/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.30.3"></script> --><p class="update">Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.</p></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.24"></script><script src="/js/index.js?2.24"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body></html>
