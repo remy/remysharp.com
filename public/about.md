@@ -4,7 +4,7 @@ So, welcome to net gaff.  My name is Remy Sharp.
 
 I live in the sometimes sunny Brighton (it's in the [south of the UK](http://maps.google.co.uk/maps?f=q&amp;hl=en&amp;q=brighton&amp;ie=UTF8&amp;z=12&amp;om=1&amp;iwloc=A), for those across the pond).  The south coast is definitely my favourite place to be, but I spent some time on the outskirts of London whilst at University.
 
-<div style="border: 0; display: block; float: left; margin-right: 20px; padding-bottom:10px; margin-bottom: 20px; background: #000; color: #fff; border: 1px solid #000; font-size: 12px; text-decoration: none;" href="//www.flickr.com/photos/hellogeri/8221740107/"><img old-src="//farm9.staticflickr.com/8209/8221740107_20523a15c4_z.jpg" src="https://remysharp.com/images/remy-2014.jpg" alt="Photo of Remy Sharp" style="border: 0; margin-bottom: 10px; max-width: 100%" /><br>&nbsp;Photo by Marc Thiele</div>
+<div style="border: 0; display: block; padding: 10px; padding-bottom: 5px; background: #000; color: #fff; font-size: 12px; text-decoration: none;" href="https://www.flickr.com/photos/remysharp/16546462081/"><img src="/images/remy-2015.jpg" alt="Photo of Remy Sharp" style="border: 0; max-width: 100%" /><br>&nbsp;Photo by my (then 3 year old) son</div>
 
 ## Bio
 
