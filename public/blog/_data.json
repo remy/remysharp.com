@@ -3344,5 +3344,13 @@
       "code"
     ],
     "published": true
+  },
+  "assumptions": {
+    "title": "You know what they say about assumptions...",
+    "date": "2015-07-02 14:49:53",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }
