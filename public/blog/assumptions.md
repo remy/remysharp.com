@@ -16,7 +16,7 @@ Then my base level assumption changes depending on the application and adjusts o
 
 Just one example was that JS Bin's static code used to be served from a single server which suited most users. One day a bug was filed by an individual in Iran notifying me that JS Bin simply would get past the loader (an example of JavaScript was enabled, but not getting down the wire in time before the connection timed out). Putting the static content (scripts, etc) on a CDN fixed this instantly. A simple retroactive fix.
 
-[Lee Byron](https://twitter.com/leeb), working for Facebook, was a fellow panellist brought up an excellent case study that users in China (<abbr title="if I recall correctly">IIRC</abbr>), unbeknownst to Facebook had such oddball versions of browsers that HTML and CSS wasn't rendering as expected leaving the site in an unusable (or very difficult to use) state.
+[Lee Byron](https://twitter.com/leeb), working for Facebook, was a fellow panellist brought up an [excellent case study](https://twitter.com/leeb/status/616612662718427136) that users in Japan, unbeknownst to Facebook had such oddball (but popular) devices that HTML and CSS wasn't rendering as expected leaving the site in an unusable (or very difficult to use) state.
 
 How low do you go? The real answer is you can never go too low because there's always going to be a case that isn't catered for because [you can't test for it](https://twitter.com/triblondon/status/615894823384420354).
 
