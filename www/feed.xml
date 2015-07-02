@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 16 Jun 2015 22:04:43 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Reducing my CPU load from 95% to 20%</title><guid isPermaLink="false">how-i-reduced-cpu-load-from-95-to-20</guid><link>http://remysharp.com/2015/06/16/how-i-reduced-cpu-load-from-95-to-20</link><pubDate>Tue, 16 Jun 2015 22:04:43 +0000</pubDate><description><![CDATA[I&#39;ve recently released a number of changes to JS Bin after I started to tinker (again) with Service Worker support in JS Bin (no, there&#39;s nothing there right now). However, since the release on Saturday, the CPU has been steadily sitting at 95% - which is dangerously close to the 502-o-death page.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Thu, 02 Jul 2015 14:49:53 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>You know what they say about assumptions...</title><guid isPermaLink="false">assumptions</guid><link>http://remysharp.com/2015/07/02/assumptions</link><pubDate>Thu, 02 Jul 2015 14:49:53 +0000</pubDate><description><![CDATA[During our heated panel at EdgeConf 2015 on progressive enhancement Jeremy points out that by trying to anticipate your users&#39; needs, you&#39;re making assumptions, and you know what they say about assumptions.
+Although he didn&#39;t say so explicitly, there was certainly an undertone that it was something we should admit to ourselves. I&#39;d like to add: for better or worse.
+The wider impact of assumptions about your user (for example that they&#39;re viewing on a desktop device) is the exclusion of others.
+Jeremy argued, rightly, that you should aim to develop for the absolute lowest technological solution as possible to suit your all your visitors basic needs: known and unknown.
+I&#39;ll say it now: I make all kinds of assumptions about my users. A couple of the most common assumption I make is that they can read English, and that they&#39;re visiting using a browser that&#39;s capable of rendering HTML correctly.
+Then my base level assumption changes depending on the application and adjusts over time depending on feedback.
+
+
+Just one example was that JS Bin&#39;s static code used to be served from a single server which suited most users. One day a bug was filed by an individual in Iran notifying me that JS Bin simply would get past the loader (an example of JavaScript was enabled, but not getting down the wire in time before the connection timed out). Putting the static content (scripts, etc) on a CDN fixed this instantly. A simple retroactive fix.
+Lee Byron, working for Facebook, was a fellow panellist brought up an excellent case study that users in China (IIRC), unbeknownst to Facebook had such oddball versions of browsers that HTML and CSS wasn&#39;t rendering as expected leaving the site in an unusable (or very difficult to use) state.
+How low do you go? The real answer is you can never go too low because there&#39;s always going to be a case that isn&#39;t catered for because you can&#39;t test for it.
+I believe, that progressive enhancing should be part of your workflow. Common HTML elements, delivering baseline functionality to all users, and then enhancing. All does not mean it has to work with cURL. That&#39;s my take. You have to decide for yourself.
+We all make assumptions. Ranging from the language our users can read, to the HTML and CSS support, to the level of JavaScript and the prerequisite on high level JavaScript APIs.
+Don&#39;t be ashamed. Just own those assumptions.
+Also, thank you to Jeremy for running his eyes over this post.]]></description><content:encoded><![CDATA[
+<p>During our heated panel at EdgeConf 2015 on progressive enhancement <a href="https://adactio.com">Jeremy</a> points out that by trying to anticipate your users&#39; needs, <strong>you&#39;re making assumptions</strong>, and <a href="https://www.youtube.com/watch?v=G-2NimrRPAQ">you know what they say about assumptions</a>.</p>
+<p>Although he didn&#39;t say so explicitly, there was certainly an undertone that it was something we should admit to ourselves. I&#39;d like to add: <em>for better or worse</em>.</p>
+<p>The wider impact of assumptions about your user (for example that they&#39;re viewing on a desktop device) is the exclusion of others.</p>
+<p>Jeremy argued, rightly, that you should aim to develop for the absolute lowest technological solution as possible to suit your <em>all</em> your visitors basic needs: known and unknown.</p>
+<p>I&#39;ll say it now: I make all kinds of assumptions about my users. A couple of the most common assumption I make is that they can read English, and that they&#39;re visiting using a browser that&#39;s capable of rendering HTML correctly.</p>
+<p>Then my base level assumption changes depending on the application and adjusts over time depending on feedback.</p>
+<!-- [Talky.io](https://talky.io/) is an excellent example to zoom in on. Their technology *requires* WebRTC. This assumes that their users have JavaScript, for without it, there is no product. -->
+
+<p>Just one example was that JS Bin&#39;s static code used to be served from a single server which suited most users. One day a bug was filed by an individual in Iran notifying me that JS Bin simply would get past the loader (an example of JavaScript was enabled, but not getting down the wire in time before the connection timed out). Putting the static content (scripts, etc) on a CDN fixed this instantly. A simple retroactive fix.</p>
+<p><a href="https://twitter.com/leeb">Lee Byron</a>, working for Facebook, was a fellow panellist brought up an excellent case study that users in China (<abbr title="if I recall correctly">IIRC</abbr>), unbeknownst to Facebook had such oddball versions of browsers that HTML and CSS wasn&#39;t rendering as expected leaving the site in an unusable (or very difficult to use) state.</p>
+<p>How low do you go? The real answer is you can never go too low because there&#39;s always going to be a case that isn&#39;t catered for because <a href="https://twitter.com/triblondon/status/615894823384420354">you can&#39;t test for it</a>.</p>
+<p>I believe, that progressive enhancing <strong>should</strong> be part of your workflow. Common HTML elements, delivering baseline functionality to all users, and then enhancing. <strong>All does not mean it has to work with cURL</strong>. That&#39;s <em>my</em> take. You have to decide for yourself.</p>
+<p>We <em>all</em> make assumptions. Ranging from the language our users can read, to the HTML and CSS support, to the level of JavaScript and the prerequisite on high level JavaScript APIs.</p>
+<p>Don&#39;t be ashamed. Just <strong>own</strong> those assumptions.</p>
+<p><small>Also, thank you to Jeremy for running his eyes over this post.</small></p>
+]]></content:encoded></item><item><title>Reducing my CPU load from 95% to 20%</title><guid isPermaLink="false">how-i-reduced-cpu-load-from-95-to-20</guid><link>http://remysharp.com/2015/06/16/how-i-reduced-cpu-load-from-95-to-20</link><pubDate>Tue, 16 Jun 2015 22:04:43 +0000</pubDate><description><![CDATA[I&#39;ve recently released a number of changes to JS Bin after I started to tinker (again) with Service Worker support in JS Bin (no, there&#39;s nothing there right now). However, since the release on Saturday, the CPU has been steadily sitting at 95% - which is dangerously close to the 502-o-death page.
 Except, if I&#39;m honest with myself, the CPU has been high since...well, since I can remember (going further back into 2013).
 Until this afternoon. I made one change, and boom: 20%. Stable. Also, I&#39;ll be filling this under &quot;duh&quot;.]]></description><content:encoded><![CDATA[
 <p>I&#39;ve recently released a number of changes to JS Bin after I started to tinker (again) with Service Worker support in JS Bin (no, there&#39;s nothing there right now). However, since the release on Saturday, the CPU has been steadily sitting at 95% - which is dangerously close to the <a href="https://jsbin.com/test/error/502">502</a>-o-death page.</p>
@@ -1315,329 +1345,4 @@ utils.compare(input, password)
 <li>Always catch</li>
 </ul>
 <p>Pretty simple. I&#39;d be interested to hear what patterns are emerging in your workflow too.</p>
-]]></content:encoded></item><item><title>Muddling my way through real time</title><guid isPermaLink="false">muddling-my-way-through-real-time</guid><link>http://remysharp.com/2014/11/10/muddling-my-way-through-real-time</link><pubDate>Mon, 10 Nov 2014 12:30:00 +0000</pubDate><description><![CDATA[If your business deals with data on the web, then that data must be handled in real time, otherwise you&#39;re doing your user a disservice.
-
-Real time demand is a core part of our internet experience, let alone expectation.
-Twitter is probably the crowning application of real time I can think of. Hitting the mass audience and industries across the board.
-Today we have real time journalism, data, feedback, communication between our teams, from our code and tests. Heck, we can create a brand new virtual machine in under 60 seconds ready to deploy a new site. Back in my day&trade; that process would take 2 weeks!
-I recently returned from jsconf.eu 2014, and sitting in the office, only days later I kept catching myself thinking &quot;I&#39;ll just watch the video from jsconf&quot; – but what video? They filmed their events, but somehow I was expecting the event to have already fully edited, titled, uploaded and release all their videos! I know some events that do do this (lxjs for one) – but these aren&#39;t the norm. At what point did I have this (I think) unreasonable expectation on information on the web?
-On demand and real time is a normal part of the world we live in today. And if you can&#39;t handle the pressure, your visitor will likely head off elsewhere.
-
-This is my write up of the talk I&#39;ve given on the subject. Slides are also available and the video from SmartWebConf is included below (53mins).]]></description><content:encoded><![CDATA[
-<p>If your business deals with data on the web, then that data must be handled in real time, otherwise you&#39;re doing your user a disservice.</p>
-<hr>
-<p>Real time demand is a core part of our internet experience, let alone expectation.</p>
-<p>Twitter is probably the crowning application of real time I can think of. Hitting the mass audience and industries across the board.</p>
-<p>Today we have real time journalism, data, feedback, communication between our teams, from our code and tests. Heck, we can create a brand new virtual machine in under 60 seconds ready to deploy a new site. <em>Back in my day</em>&trade; that process would take 2 weeks!</p>
-<p>I recently returned from jsconf.eu 2014, and sitting in the office, only days later I kept catching myself thinking &quot;I&#39;ll just watch the video from jsconf&quot; – but what video? They filmed their events, but somehow I was expecting the event to have already fully edited, titled, uploaded and release <em>all</em> their videos! I know some events that do do this (<a href="http://lxjs.org">lxjs</a> for one) – but these aren&#39;t the norm. At what point did I have this (I think) unreasonable expectation on information on the web?</p>
-<p><em>On demand</em> and <em>real time</em> is a normal part of the world we live in today. And if you can&#39;t handle the pressure, your visitor will likely head off elsewhere.</p>
-<hr>
-<p>This is my write up of the talk I&#39;ve given on the subject. <a href="https://speakerdeck.com/rem/muddling-my-way-through-real-time">Slides are also available</a> and the video from SmartWebConf is included below (53mins).</p>
-<p><img src="/images/muddling-in-real-time-cover.gif" alt="Muddling your way in real time"></p>
-<iframe width="1280" height="720" src="//www.youtube.com/embed/EUnNov3h3c0?index=5&list=PLbUMlIAqtRWNbxKZujb0mO5WHQcwJopBm" frameborder="0" allowfullscreen></iframe>
-
-<hr>
-<h2>Contents</h2>
-<ol>
-<li><a href="#what-is-real-time-to-you">What is real time to you</a></li>
-<li><a href="#my-first-introduction-to-real-time-on-the-web">My first introduction to real time on the web</a></li>
-<li><a href="#the-origins-of-comet">The origins of Comet</a></li>
-<li><a href="#node-is-introduced">Node is introduced</a><ul>
-<li><a href="#the-event-loop">The event loop</a></li>
-<li><a href="#helloworldjs-of-streaming-servers">helloworld.js of streaming servers</a></li>
-</ul>
-</li>
-<li><a href="#codifying-into-standards">Codifying into standards</a></li>
-<li><a href="#so-whats-next">So, what&#39;s next?</a></li>
-<li><a href="#core-npm-modules">Core npm modules</a><ul>
-<li><a href="#socket-abstraction">Socket abstraction</a></li>
-</ul>
-</li>
-<li><a href="#primus">Primus</a></li>
-<li><a href="#scaling">Scaling</a><ul>
-<li><a href="#client-side">Client side</a></li>
-<li><a href="#server-side">Server side</a></li>
-</ul>
-</li>
-<li><a href="#long-latency-real-time-feedback">Long-latency real time feedback</a></li>
-<li><a href="#to-wrap-up">To wrap up</a></li>
-</ol>
-<h2>What is real time to you?</h2>
-<p>I think it&#39;s important to define what <em>I think</em> &quot;real time&quot; means. <a href="http://www.devthought.com/">Guillermo Rauch</a> (creator of Socket.IO) has a <a href="https://www.youtube.com/watch?v=Ar9R-CX217o">few</a> <a href="https://www.youtube.com/watch?v=_8CykecwKhw">excellent</a> talks on the topic, and he describes real time as:</p>
-<ul>
-<li>Fast</li>
-<li>Self-updating</li>
-</ul>
-<p>I&#39;d go further to say (for me) it needs to be:</p>
-<ul>
-<li><em>Instant</em></li>
-<li>Self-updating</li>
-</ul>
-<p>I think it&#39;s also important to distinguish between what&#39;s technically real time and what a user perceives as real time. The later being important and the former being arbitrary.</p>
-<p>Some applications have been know to respond <em>so</em> quickly that they had to introduce a fake delay to meet their users expectations Specifically: when the program responded so instantly, the user thought something was wrong. With a small delay and a touch of UI feedback (along the lines of &quot;we&#39;ve processing your request&quot;), the user <em>felt</em> the a application was more responsive.</p>
-<p>Inversely you might get a push notification to your phone that someone&#39;s mentioned you in a tweet, but when you go to twitter, it can&#39;t connect to update itself. Or <em>you</em> post a tweet and it doesn&#39;t appear in your timeline for ages if you&#39;re on a slow connection. In this case, we want a &quot;self-updating&quot;, and one that can handle errors.</p>
-<p>This is my own story of how I discovered the web in real time, what I&#39;ve done over the years and how I use node.js to simplify what used to be very technical problem.</p>
-<h2>My first introduction to real time on the web</h2>
-<p>My first experience with a real time web was around 2002. I worked for many years on a finance research web site, and stock prices were an important aspect of data.</p>
-<p>If you wanted live prices on your site at the time, there would be expensive licences with the London Stock Exchange and some form of Java Applet on your site. We settled for a recurring job that grabbed a 15 minute delayed price CSV file from Yahoo.</p>
-<p><img style="width: 40%; display: block; margin: 0 auto;" src="/images/hahabusiness.jpg" title="What it's like to work for the finance sector"></p>
-<p>The meant that our prices would be &quot;15 minute delayed&quot; (which was a normal expectation of prices shown on free web sites) but for the subsequent 15 minutes the prices would go stale.</p>
-<p>What does that look like?</p>
-<pre><code class="language-js">function updatePrices() {
-  $.get(&#39;/prices?stock=MSFT&#39;, function (data) {
-    renderPrices(data);
-    setTimeout(updatePrices, 60 * 1000);
-  });
-}</code></pre>
-<p>Notice that we&#39;re polling using an ajax GET request every minute, in an attempt to get the fresh price when it arrives. The timing looks like this:</p>
-<pre><code class="language-nohighlight">09:14 MSFT=$46.68
-09:15 ...no change
-09:16 ...no change
-09:17 ...
-09:18 ...
-...
-09:23 ...
-09:24 MSFT=$46.68
-09:25 ...no change</code></pre>
-<p>It&#39;s also important to realise that all those &quot;no change&quot; requests were wasteful, both because the client is constantly making XHR requests, but the server is also having to deal with requests when the data hasn&#39;t changed at all.</p>
-<p>The server is the &quot;ultimate source of truth&quot; and what we want is the <em>server</em> to <em>push</em> the prices to the client.</p>
-<hr>
-<p>It was one afternoon that one of the data collection team asked me to take a look at one of the finance research sites that they were looking at: Hemscott (I should add the original pages have long since left the web).</p>
-<p>The page had a <a href="http://en.wikipedia.org/wiki/Heat_map">heatmap</a> of the FTSE100 prices. What made this particular page interesting is that the prices were changing in real time, and the red/green/sneutral were also changing, so there was a clear visual feedback system to show me this data was live.</p>
-<p>What made this page magical though, was I ran the usual &quot;select text test&quot;. i.e. if I can select the text, then it&#39;s &quot;of the web&quot;. If I can&#39;t, it&#39;s Flash or Java Applets (and right clicking would discover which). But this <em>was</em> web. There was a DOM.</p>
-<p><img src="/images/hemscott.gif" alt="Hemscott from 2002"></p>
-<p><small>(Appologies for the poor picture above: the internet really <em>doesn&#39;t</em> remember!)</small></p>
-<p>I spent quite a lot of time poking around some compressed JavaScript, looking at the DOM updating (this was back in the Firebug days so there was no <a href="https://developer.chrome.com/devtools/docs/dom-and-styles#setting-dom-breakpoints">break on DOM subtree modification</a>).</p>
-<p>Hemscott had been able to do what we could not: real time prices, using web technology. <strong>It was magic.</strong> That&#39;s all I could ascertain.</p>
-<hr>
-<p>In retrospect (over several years) I realised that they were achieving the real time effect using Flash. Specifically the <code>XMLSocket</code> to connect to the streaming server and using the &quot;Flash SWF ExternalInterface Bridge&quot; to let JavaScript receive messages from the live stream.</p>
-<p>Essentially a very similar technique that&#39;s used in today&#39;s <a href="https://github.com/gimite/web-socket-js">WebSocket polyfill</a> (which uses Flash for the filling part).</p>
-<p>In the mean time Google released Google Talk which was the big tipping point in the web&#39;s history for shifting from a request/response pattern, to a server-push pattern, Ajax and Comet respectively.</p>
-<h2>The origins of Comet</h2>
-<p>Google launched GTalk in 2005 (as part of Gmail) and at the time Google were employing ex-Microsoft developers to solve a very, <em>very</em> specific problem. GTalk used long lived iframes to push the chat events up to the client.</p>
-<p>But &quot;long lived&quot; means that they needed to refresh (or specifically: reload) eventually, and that reload in IE would cause an <a href="javascript:window.xpaudio.play()">audible clicking noise</a> (this was actually a feature of XP&#39;s audio suite). Imagine for a moment, that clicking, coming from seemingly nowhere, on a regular basis when you&#39;re chatting online with your friends. Annoying!</p>
-<audio id="xpaudio" controls style="width: 100%;" src="/downloads/clicking.wav"></audio>
-
-<p>The solution is amazing (or certainly to me) and the epitome of the web: a hack upon hack upon hack.</p>
-<p><a href="http://infrequently.org/2006/02/what-else-is-burried-down-in-the-depths-of-googles-amazing-javascript/">The solution</a> would be to create an ActiveX htmlfile object, drop the document with an iframe inside that and the clicking would be suppressed.</p>
-<p>And so a stable server push technology emerged.</p>
-<hr>
-<p>Comet was coined by <a href="http://infrequently.org">Alex Russell</a> (of Dojo fame, and now simply known as The&nbsp;Oracle™ at Google/he works on Blink) <a href="http://infrequently.org/2006/03/comet-low-latency-data-for-the-browser/">defined</a> as a method to push data from the server to the client (the browser).</p>
-<p>Comet is not a specific technology, but more of an abstracted process. The implementation varied, and frankly at the time, was better suited to system engineers rather than your cowboy developer...like me.</p>
-<p>Comet <em>could</em> involve any mix of iframes (of course!), long polling, XHR, long running script tags, and so on. To add to complexity, there were oddly named protocols like the Bayeux protocol and BOSH.</p>
-<p>All things that provided barrier to entry, but real time, rightly, was hard. Real time appeared more and more across the web.</p>
-<hr>
-<p><strong>The real hurdle is that there&#39;s <em>two</em> parts to real time: client <em>and</em> the server.</strong></p>
-<hr>
-<p>The usual set up for a server in the mid-2000s was to use a <a href="http://en.wikipedia.org/wiki/LAMP_(software_bundle">LAMP stack</a>. Apache being the main sticking point.</p>
-<p>Apache is designed (out of the box) to run and spawn a number of processes to deal with concurrent requests.</p>
-<p>So if you have 5 apache processes waiting to deal with web requests, and you have 6 requests, the 6th user will have to wait until there&#39;s a free process before apache can respond.</p>
-<p>This is usually find when you&#39;re deal with a request/response situation, apache is fast for that. But when you&#39;re keeping connections open to allow a server to <em>push</em> a message to the client, you saturate the available apache processes.</p>
-<p>What does this mean in practise? If you have 5 processes and 6 streaming <em>requests</em>, the 6th <em>will never</em> receive a response. And to that user, the site is hanging indefinitely.</p>
-<p>The solution to the server issue is evented server. If I recall correctly, this would be: Twisted for Python, Jakarta for Java, Juggernaut for Ruby, etc. But they were non-trivial to set up.</p>
-<p>Come 2009 and Ryan Dahl.</p>
-<h2>Node is introduced</h2>
-<p><img src="/images/ryan-node.jpg" alt="Ryan introduces Node at jsconf"></p>
-<p>At the first jsconf.eu, Ryan Dahl, introduced <a href="http://lanyrd.com/2009/jsconfeu/skpz/">node.js: evented IO for V8</a>.</p>
-<p>The talk starts quite technical and detailed, but Ryan started to draw similarities with what he was doing with node.js with the DOM.</p>
-<p>Although node.js has nothing to do with the DOM, the way that the event loop works is very similar to the way a browser will work.</p>
-<h3>The event loop</h3>
-<p>This is what an event loop <em>could</em> look like:</p>
-<pre><code class="language-lua">function main
-  initialize()
-  while message != quit
-    message := get_next_message()
-    process_message(message)
-  end while
-end function</code></pre>
-<p>In a browser, the <code>get_next_message</code> could be the user clicking the mouse, or an XHR request completing, or a render, or some JavaScript being run. The point being is that the loop waits for a task, then processes that task.</p>
-<p>This is where node.js makes concurrent requests (i.e. holding 100s if not 1000s of open connections to clients) easy.</p>
-<h3>helloworld.js of streaming servers</h3>
-<p>As Ryan demoed in his talk 5 years ago, the code following is the simple proof that comet servers are incredibly simple with Node. The key with the server side is being able to hang inbound requests <em>whilst</em> also getting on with other work, like accepting more inbound requests.</p>
-<pre><code class="language-js">var http = require(&#39;http&#39;);
-
-var server = http.createServer(function (req, res) {
-  res.writeHead(200, { &#39;content-type&#39;: &#39;text/html&#39; });
-  res.write(&#39;&lt;script&gt;console.log(&quot;this is the start of the stream...&quot;)&lt;/script&gt;&#39;);
-
-  var timer = setInterval(function () {
-    // if the connection has closed, and we can&#39;t write anymore
-    if (!res.connection || !res.connection.writable) {
-      // then clear this interval, and *attempt* to end the response
-      clearInterval(timer);
-      res.end();
-    } else {
-      // otherwise, keep sending a script with logging
-      res.write(&#39;&lt;script&gt;console.log(&quot;and now more messages...&quot;)&lt;/script&gt;&#39;);
-    }
-  }, 2000);
-});
-
-server.listen(8080);</code></pre>
-<p>This code is saved to <code>server.js</code> and run using <code>node server.js</code> and now I can visit <code>localhost:8080</code> on my machine, and it should start logging, in 2 second increments &quot;and now more messages...&quot; (<a href="http://lit-thicket-2959.herokuapp.com/">live demo version that writes to the DOM</a>).</p>
-<p>A comet server has a bit more to it, but with this simple few lines of code we can create as many persistent connection as we like and our server will continue to accept requests.</p>
-<p>During the timeout, the server isn&#39;t &quot;sleeping&quot;, it&#39;s <em>waiting</em> for the next event, be it the time it to fire, or for another request to come in.</p>
-<p>Equally we can easily give the server <em>more</em> things to do with the single event loop. It could be collecting live prices from a server, or making APIs calls, or have its own scheduling task all inside the single program <em>because</em> of the way node.js is architectured.</p>
-<p>What&#39;s particularly elegant about node.js today, is that it&#39;s incredibly simple to install, has first class support across all three platforms (windows, linux and mac) and is extremely well documented and supported by the community.</p>
-<h2>Codifying into standards</h2>
-<p>As time passed, using Flash and various hacks to achieve real time eventually landed into the standards, typically under the umbrella term of HTML5.</p>
-<p>That&#39;s to say, today we have <em>three</em> native client side solutions to communicating with the server:</p>
-<ol>
-<li>Ajax &amp; <a href="http://caniuse.com/#search=xhr2">XHR2</a>. Well known. Well loved. Well understood. The XHR2 spec takes the API further and gives us much more functionality.</li>
-<li><a href="http://caniuse.com/#search=eventsource">EventSource</a>. Push based server <em>events</em>, that automatically reconnect when the connection is dropped.</li>
-<li><a href="http://caniuse.com/#search=websockets">WebSockets</a>. Bi-directional, persistent sockets, that can be made across origin.</li>
-</ol>
-<p><em>Side note: that there is also WebRTC, which is a real-time standard in browsers today, but it&#39;s for peer-to-peer (in general), rather than with servers.</em></p>
-<p>These standards are good because: all browsers implementing new features will implement these features in an interoperable way. With the exception of EventSource, all these are supported by IE10 and all other browsers (and EventSource has excellent support through <a href="http://html5please.com/#eventsource">polyfills</a>).</p>
-<h2>So, what&#39;s next?</h2>
-<p>Now we live in a world where both the client side <em>and</em> server side has been solved and is simple to work with, what can we actually do?</p>
-<p>Here&#39;s a few examples of where I&#39;ve used node.js for real time:</p>
-<ul>
-<li>Live reload remote devices with user generated content (in JS Bin)</li>
-<li>Codecasting - like screencasting, but with HTML, CSS &amp; JavaScript</li>
-<li>Remote console injection - for running a desktop console against any mobile device (like old Android or Windows phone)</li>
-<li>Proxy sensor events - streaming the accelerometer from a mobile device to desktop for testing</li>
-<li>User discovery - for a two player game waiting for each other to join the session (like two users joining a chat room)</li>
-<li>Push notification to browser for both progress events and when a long task has completed</li>
-</ul>
-<p>A lot of this is made very easy with existing node modules developed by the node community, and stress tested by everyone else.</p>
-<h2>Core npm modules</h2>
-<p>As I&#39;m sure many of you know, the node module repository is rife with libraries to do just about <a href="https://www.npmjs.org/package/true">everything</a>. The libraries that handle real time communication have been baked, and run through the mill pretty hard and there&#39;s lot of good choice nowadays.</p>
-<p>What&#39;s particularly useful about many of these libraries is that they provide both sides of the infrastructure required to achieve real time, and usually require very little to get started.</p>
-<p>The two libraries that I would encourage you to gravitate towards are <a href="http://socket.io">Socket.IO</a> (v1.x) and <a href="http://primus.io">Primus</a>.</p>
-<h3>Socket abstraction</h3>
-<p>Normally I prefer to be quite close to the metal, and I generally code directly with the native APIs, but in this case, both libraries give me an abstraction layer that&#39;s <em>built upon</em>. This means if I want to multiplex or have specific events emitting on a socket, it&#39;s easy as it either comes with the library (in Socket.IO&#39;s case) or can be added via middleware (for Primus).</p>
-<p>The benefits of each, as I seem them are:</p>
-<ul>
-<li>Socket.IO: will test and degrade down to the best technology to sustain a persistent connection</li>
-<li>Primus: provides a common low level interface to communicate with socket libraries and to &quot;prevent module lock-in&quot;, but of specific interest is the middleware selection</li>
-</ul>
-<p>For my examples, I&#39;m using Primus with the <code>websocket</code> transformer.</p>
-<h2>Primus</h2>
-<p>Primus used both on the server side and client side. I&#39;m using express for my examples, so we bind Primus to the express http server:</p>
-<pre><code class="language-js">// setup express
-var express = require(&#39;express&#39;);
-var app = express();
-var Primus = require(&#39;primus&#39;);
-
-// configure express
-app.use(express.static(&#39;.&#39;));
-var server = require(&#39;http&#39;).createServer(app);
-
-// start the web server
-server.listen(process.env.PORT || 8000);
-
-// now instantiate primus with our express server
-var primus = new Primus(server, {
-  transformer: &#39;websockets&#39;
-});
-
-// add the emit middleware letting me define my own event types
-primus.use(&#39;emit&#39;, require(&#39;primus-emit&#39;));
-
-// when we get a connection...
-primus.on(&#39;connection&#39;, function (spark) {
-  // the inbound socket is referred to as a &quot;spark&quot;
-
-  // respond to ping events with a pong
-  spark.on(&#39;ping&#39;, function () {
-    spark.emit(&#39;pong&#39;);
-  });
-});</code></pre>
-<p>The client side is simple and small, and also has the ability to emit (rather than <em>just</em> <code>primus.on(&#39;data&#39;, fn)</code> and <code>primus.write(data)</code>) because the server includes the <a href="https://github.com/primus/emit">emit</a> middleware:</p>
-<pre><code class="language-html">&lt;!-- magic script provided by primus, note that --&gt;
-&lt;!-- this can saved and served as a static file --&gt;
-&lt;script src=&quot;/primus/primus.js&quot;&gt;&lt;/script&gt;
-&lt;script&gt;
-var primus = Primus.connect(&#39;/&#39;);
-
-primus.on(&#39;pong&#39;, function () {
-  alert(&#39;Pong received loud and clear&#39;);
-});
-
-primus.emit(&#39;ping&#39;);
-&lt;/script&gt;</code></pre>
-<p><a href="http://sheltered-wave-6638.herokuapp.com/">Here&#39;s a live demo</a> (for what it&#39;s worth!). That&#39;s really all there is to it. The source for my <a href="https://github.com/remy/face-hit-game">face-tap game is on github</a> and can be seen on <a href="http://game.rem.io">game.rem.io</a> and be sure to try it whilst you have the <a href="http://game.rem.io/scores">scoreboard</a> open.</p>
-<p>The game uses Primus to communicate, but also includes a broadcast function to all except &quot;me&quot;:</p>
-<pre><code class="language-js">function broadcast(event, data, source) {
-  primus.forEach(function (spark) {
-    if (spark.id !== source.id) {
-      spark.emit(event, data);
-    }
-  });
-}</code></pre>
-<h2>Scaling</h2>
-<p>This is a problem on both the server side <em>and</em> the client. The server side you want to use the same techniques you&#39;d use for regular web traffic: <a href="http://www.haproxy.org/">HAProxy</a>, <a href="https://github.com/nodejitsu/node-http-proxy">node-http-proxy</a>, nginx, etc. <a href="http://tech.blog.box.com/2014/06/node-js-high-availability-at-box/">Nicholas Zakas has an excellent article</a> on scaling with HAProxy.</p>
-<h3>Client side</h3>
-<p>On the client, the issue is saturating the concurrent connections you can have per origin. The <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html#sec8">HTTP 1.1 spec</a> states the following for persistent connections:</p>
-<blockquote>
-<p>Clients that use persistent connections SHOULD limit the number of simultaneous connections that they maintain to a given server. A single-user client SHOULD NOT maintain more than 2 connections with any server or proxy. These guidelines are intended to improve HTTP response times and avoid congestion.</p>
-</blockquote>
-<p>However we know that <a href="http://www.chromium.org/developers/design-documents/network-stack#TOC-Connection-Management">Chrome has increased</a> this default from 2 to 6 per origin. It doesn&#39;t matter what the per browser implementation issue is because they&#39;re all <em>quite</em> low.</p>
-<p>One solution that I know of is (and I believe Facebook also do this) is to generate a random origin address (usually a CNAME) so your socket is connecting to <code>ws://e01938e4.example.com</code> and this is aliased back on to your socket server. This way you constantly generate a new origin for the socket to connect through and you don&#39;t hit the early limit of 6 (or so) concurrent connections.</p>
-<p>If I was using Heroku to scale, I&#39;d add the domain <code>*.example.com</code> to the list of domains in the settings panel for the app.</p>
-<p>Now <code>anything.example.com</code> will land on my Heroku app and I can bypass the browser&#39;s limit on persistent connections by origin.</p>
-<h3>Server side</h3>
-<p>Once you scale horizontally with a proxy - or even just drag a Heroku dyno to 11 - you&#39;ll be asking yourself how does a socket connected to <code>server A</code> talk to a socket connected to <code>server B</code>?</p>
-<p>The solution I&#39;ve been exploring is using Primus&#39; middleware combo of <a href="https://github.com/primus/metroplex">metroplex</a> and <a href="https://github.com/primus/omega-supreme/">omega-supreme</a> (yes, there&#39;s a Transformer theme!).</p>
-<p>Metroplex registers your server in a Redis database (version 2.6 or above is required - brew seemed to ship 2.4) upon startup (which <em>should</em> auto unregister after 5 minutes of idle). That way you can query redis to ask what servers are also active:</p>
-<pre><code class="language-js">// I&#39;m passing in a redis instance so that all my
-// instances of this server connect to the _same_
-// redis database.
-var primus = new Primus(server, {
-  transformer: &#39;websockets&#39;,
-  redis: redis,
-});
-
-// add the Primus middleware (after instantiation)
-primus.use(&#39;metroplex&#39;, require(&#39;metroplex&#39;));
-primus.use(&#39;omega-supreme&#39;, require(&#39;omega-supreme&#39;));
-primus.use(&#39;emit&#39;, require(&#39;primus-emit&#39;));
-
-// now I can query the registered servers
-primus.metroplex.servers(function (err, servers) {
-  console.log(&#39;other servers: %d&#39;, servers.length, servers);
-});</code></pre>
-<p>Note that the address for the server is the same address as the webserver that your Primus instance is bound to.</p>
-<p>Then with omega-supreme, you can forward messages to known servers. So if <code>server A</code> knows that <code>server B</code> is active, it can forward broadcast messages to <code>server B</code>:</p>
-<pre><code>primus.forward(server, data, function (error, data) {
-  // data contains the number of sparks that got the message
-});</code></pre>
-<p>The above example, <code>server</code> would be the address of <code>server B</code>. Now if we upgrade the <code>broadcast</code> function from above, it would look like this:</p>
-<pre><code>function broadcast(event, data, source) {
-  // query which servers are registered to our redis db
-  primus.metroplex.servers(function (err, servers) {
-    servers.forEach(function (server) {
-      primus.forward(server, {
-        emit: [event, data]
-      }, noop);
-    });
-  });
-
-  // note that the primus forward will handle this for us
-  primus.forEach(function (spark) {
-    if (spark.id !== source.id) {
-      spark.emit(event, data);
-    }
-  });
-}</code></pre>
-<p>Note that for omega-supreme to support the <code>emit</code> method for named events, instead of passing in <code>data</code> as the second argument to <code>primus.forward</code>, you pass in an object that simply contains <code>emit: [event, data]</code>. This will then fire the named events as I&#39;m using them in my code.</p>
-<p>This is effectively what a client sending a broadcast would look like if Redis was backing the Primus setup:</p>
-<p><img src="/images/primus-scale.svg" alt="Primus with omega-supreme and metroplex"></p>
-<h2>Long-latency real time feedback</h2>
-<p>One aspect that particularly interests me is long running requests. For example, when I created <a href="http://5minfork.com">5minfork</a> (a site that clones a github repo and hosts it for 5 minutes), there&#39;s a point when the user requests to clone a git repo and there&#39;s a potential latency period while the server clones.</p>
-<p>This period length is unknown (i.e. we could be cloning a large project which takes time), but we do know that it&#39;s <em>not instant</em>. So how do we communicate to the user that work is in progress and <em>most importantly</em> tell the user that the work is done and they can proceed?</p>
-<p>Easily with node.js because the server can kick off a background process, and whilst it&#39;s cloning, instead of waiting, the node server continues to accept web requests. This way we can serve a holding page to indicate that we&#39;re actively working on the cloning process.</p>
-<p>I&#39;ve replicated this process in the <a href="http://long-latency.rem.io/random">long latency demo</a> (<a href="https://github.com/remy/long-poll-status">source also available</a>)</p>
-<p>This consists of:</p>
-<ol>
-<li>A <code>GET</code> request handler to start the (fake) long latency process. The URL is given a unique identifier and we set a flag for that identifier to say it&#39;s in progress.</li>
-<li>The server responds with a holding page that will open a poll request to the same URL we <code>GET</code> in step 1 (equally this could be a long poll or a Web Socket or something to keep checking on the status).</li>
-<li>The poll eventually gets some status that the server is done performing it&#39;s task, and trigger a refresh of the same page (though this could be handled in all manners of ways).</li>
-</ol>
-<p>Since node is very good at asynchronous type code (though it&#39;s not better than others, it&#39;s just a much more natural workflow), it makes kicking off a background task and responding immediately to the &quot;are we there yet&quot; requests, however they&#39;re made, very very simple.</p>
-<h2>To wrap up</h2>
-<p>It is exceptionally easy to add real-time to your project using Node.js. Node on a single CPU without any optimisation can work out very well for most small to medium sized projects.</p>
-<p>We&#39;ve leaped so far ahead in the last 10 years, that it&#39;s insane how simple it is to add real-time via projects like Socket.io and Primus.</p>
-<p>Don&#39;t be afraid to try it out. Even if it&#39;s for your own side/tinker project that you whip up and post on heroku (as are all these demos). It&#39;s too easy, and it&#39;s too important for today&#39;s user expectations not to!</p>
 ]]></content:encoded></item></channel></rss>
