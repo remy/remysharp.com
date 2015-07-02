@@ -1,6 +1,6 @@
 # You know what they say about assumptions...
 
-During our heated panel on progressive enhancement [Jeremy](https://adactio.com) points out that by catering to your users, **you're making assumptions**, and [you know what they say about assumptions](https://www.youtube.com/watch?v=G-2NimrRPAQ).
+During our heated panel on progressive enhancement [Jeremy](https://adactio.com) points out that by trying to anticipate your users' needs, **you're making assumptions**, and [you know what they say about assumptions](https://www.youtube.com/watch?v=G-2NimrRPAQ).
 
 Although he didn't say so explicitly, there was certainly an undertone that it was something we should admit to ourselves. I'd like to add: *for better or worse*.
 
@@ -25,3 +25,5 @@ I believe, that progressive enhancing **should** be part of your workflow. Commo
 We *all* make assumptions. Ranging from the language our users can read, to the HTML and CSS support, to the level of JavaScript and the prerequisite on high level JavaScript APIs.
 
 Don't be ashamed. Just **own** those assumptions.
+
+<small>Also, thank you to Jeremy for running his eyes over this post.</small>
