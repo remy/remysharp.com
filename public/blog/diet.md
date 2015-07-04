@@ -6,6 +6,8 @@ I've been asked a few times what's my diet like, specifically, and I wanted to w
 
 ![2012 - 2014](/images/2012-2014.jpg)
 
+<div class="update"><small><strong>Updated 4-July 2015:</strong> I recently watched a video of a male (a few years younger than me) taking a DEXA scan (the best that science can throw at a body fat value) and coming out at 12.5% body fat. He was ripped—a full on fitness model, and the type of body that I do not have. This tells me that if you chopped me up and analysed the fat on my body, you'd get more than the 11.75% I'm claiming above. I'm just adding this for my own disclosure. For me however, I've still made huge progress.</small></div>
+
 ## Purpose
 
 The first consideration I had back at the start of 2013 was how do I start and what do I want to achieve?
