@@ -6,6 +6,10 @@ The net result: no more humming fan on my laptop.
 
 <!--more-->
 
+The result is this simple retro animation that will only last a few days in production, so I've included a tweaked version here:
+
+<a class="jsbin-embed" href="https://jsbin.com/zulaha/8/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.30.3"></script>
+
 For the sake of brevity (and actually getting this post written under the usual *several hours*), I'm just going to talk about what I changed.
 
 ## Pinning FPS
@@ -98,7 +102,8 @@ It's a fairly tiny optimisation, but the result is the same, but with less inter
 
 ## Single rAF handler
 
+If you've got more than one animation running, you'll need to set-up multiple callbacks to `requestAnimationFrame`, but having multiple rAF callbacks isn't ideal, and starts to get unwieldy when you're working with others who *also* want to queue up their animations.
 
+You really want everything to be handled in a *single* rAF handler.
 
-
-<!-- <a class="jsbin-embed" href="https://jsbin.com/zulaha/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.30.3"></script> -->
+I've written a small gist called **[raf.js](https://gist.github.com/remy/36f388d72c1ef161582f)** that allows me to put all my rAF calls through a single handler (and added some niceties like the FPS pinning and a `running` boolean flag).
