@@ -157,8 +157,8 @@
   "jsbin-toxic-part-1": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 1)",
     "date": "2015-05-31 17:39:09",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "personal",
       "web"
@@ -167,8 +167,8 @@
   "jsbin-toxic-part-2": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 2)",
     "date": "2015-05-31 17:39:09",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "personal",
       "web"
@@ -177,8 +177,8 @@
   "jsbin-toxic-part-3": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 3)",
     "date": "2015-05-31 17:39:09",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "personal",
       "web"
@@ -187,8 +187,8 @@
   "jsbin-toxic-part-4": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 4)",
     "date": "2015-05-31 17:39:09",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "personal",
       "web"
@@ -197,8 +197,8 @@
   "jsbin-toxic-part-5": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 5)",
     "date": "2015-05-31 17:39:09",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "personal",
       "web"
@@ -216,8 +216,8 @@
   "when-my-ssl-is-suddenly-not-secure": {
     "title": "When my SSL is suddenly not secure",
     "date": "2015-06-04 13:11:58",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "code"
     ]
@@ -243,8 +243,8 @@
   "optimising-a-canvas-animation": {
     "title": "Optimising a canvas animation",
     "date": "2015-07-01 08:52:23",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "code"
     ]

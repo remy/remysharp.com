@@ -1,4 +1,38 @@
-# My beef with Apple
+# #Apple don't care
+
+There's been some recent excellent discussion about Apple and their (continued) lack of engagement in the web community. 
+
+I started this blog post back in mid-2013, and sadly everything is still applicable. So I thoughts I'd get in on the action, since what good is blog, if only for listening to the sound of your own voice!
+
+## Context
+
+Though this is specific to me, this is true with nearly all events that I know of that ask for engagement from the browser vendors.
+
+The story is fairly well covered by others, but essentially the Mobilism conference (Europe's premiere mobile web development conference) had another vendor panel where Apple would be once again missing from the discussion.
+
+When Tim Cook took over in 2010, he was interviewed by Gruber and was quoted saying (now that Steve Jobs was no longer driving the company) that they "would be doing things differently".
+
+He was referring to giving the bloggersphere and Apple devs hands on previews of upcoming operating systems.
+
+But *this* was the perfect opportunity to also open up to the web.
+
+Five years on. Nothing has changed.
+
+## Safari
+
+The real issue isn't Safari on the desktop, usage figures are low but also the platform isn't as much of a struggle as iOS.
+
+Safari on iOS is one browser that you *have* to test on, given market penetration.
+
+They don't have market dominance, but in the US or the UK, they do (stats entirely based on "stuff" on the web).
+
+So what's the problem? Lots. Broken cache, lack of engagement in emerging standards, bespoke APIs (for good or otherwise) and more. Take your pick.
+
+Another big issue with Safari is that it doesn't update often. It updates when the OS updates.
+
+Then there is *only* one browser engine is WebKit. No choice on the platform, no competition, no drive to innovate on a standards level.
+
+## My beef with Apple
 
 ## Why?
 
