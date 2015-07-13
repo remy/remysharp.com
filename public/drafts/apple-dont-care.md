@@ -1,6 +1,6 @@
 # #Apple don't care
 
-There's been some recent excellent discussion about Apple and their (continued) lack of engagement in the web community. 
+There's been some recent excellent discussion about Apple and their (continued) lack of engagement in the web community.
 
 I started this blog post back in mid-2013, and sadly everything is still applicable. So I thoughts I'd get in on the action, since what good is blog, if only for listening to the sound of your own voice!
 
@@ -32,7 +32,9 @@ Another big issue with Safari is that it doesn't update often. It updates when t
 
 Then there is *only* one browser engine is WebKit. No choice on the platform, no competition, no drive to innovate on a standards level.
 
-## My beef with Apple
+## On joining the conversation
+
+
 
 ## Why?
 
@@ -48,4 +50,4 @@ Then there is *only* one browser engine is WebKit. No choice on the platform, no
 
 - Developer relations that can be present at conferences outside of Apple.
 - Questions about interest and intended support for W3C technology can be answered.
-- 
+-
