@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Thu, 02 Jul 2015 14:49:53 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>You know what they say about assumptions...</title><guid isPermaLink="false">assumptions</guid><link>http://remysharp.com/2015/07/02/assumptions</link><pubDate>Thu, 02 Jul 2015 14:49:53 +0000</pubDate><description><![CDATA[During our heated panel at EdgeConf 2015 on progressive enhancement Jeremy points out that by trying to anticipate your users&#39; needs, you&#39;re making assumptions, and you know what they say about assumptions.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 13 Jul 2015 7:50:37 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Optimising a canvas animation</title><guid isPermaLink="false">optimising-a-canvas-animation</guid><link>http://remysharp.com/2015/07/13/optimising-a-canvas-animation</link><pubDate>Mon, 13 Jul 2015 7:50:37 +0000</pubDate><description><![CDATA[I&#39;ve been working on a small canvas animation for ffconf 2015 and realised two important optimisations that I&#39;ve missed out on the past.
+The net result: no more humming fan on my laptop.]]></description><content:encoded><![CDATA[
+<p>I&#39;ve been working on a small canvas animation for <a href="http://2015.ffconf.org">ffconf 2015</a> and realised two important optimisations that I&#39;ve missed out on the past.</p>
+<p>The net result: no more humming fan on my laptop.</p>
+<p>The result is this simple retro animation that will only last a few days in production, so I&#39;ve included a tweaked version here:</p>
+<p><a class="jsbin-embed" href="https://jsbin.com/zulaha/8/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.30.3"></script></p>
+<p>For the sake of brevity (and actually getting this post written under the usual <em>several hours</em>), I&#39;m just going to talk about what I changed.</p>
+<h2>Pinning FPS</h2>
+<p>I knew that the &quot;right&quot; approach was to use <code>requestAnimationFrame</code> (rAF) for animation, but my problems historically is that the call rate of my update function was way, way too often. This can either cause my animation to appear to be <em>too</em> quick, or results in the CPU overheating.</p>
+<p>One nice advantage of rAF for animation is that it will stop firing when the tab is out of focus (i.e. if you switch to another tab). Whereas <code>setInterval</code> not only doesn&#39;t hit the timing you want, but it&#39;ll <em>keep</em> firing, burning up battery.</p>
+<p><strong>TIL</strong> <code>requestAnimationFrame</code> passes in a <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame#Parameters">high resolution timestamp</a> to the callback.</p>
+<p>Using the timestamp, we can get a delta of the last run, and if, and only if, the last frame was drawn X FPS ago, then we&#39;ll draw a new frame. For example:</p>
+<pre><code class="language-js">var lastFrameTime = 0;
+function draw(elapsedTime) {
+  // calculate the delta since the last frame
+  var delta = elapsedTime - (lastFrameTime || 0);
+
+  // queue up an rAF draw call
+  window.requestAnimationFrame(draw);
+
+  // if we *don&#39;t* already have a first frame, and the
+  // delta is less than 33ms (30fps in this case) then
+  // don&#39;t do anything and return
+  if (lastFrameTime &amp;&amp; delta &lt; 33) {
+    return;
+  }
+  // else we have a frame we want to draw at 30fps...
+
+  // capture the last frame draw time so we can work out
+  // a delta next time.
+  lastFrameTime = elapsedTime;
+
+  // now do the frame update and render work
+  // ...
+}</code></pre>
+<h2>Minimise your paints</h2>
+<p>Originally my demo was drawing a number of squares that would scale towards the viewer giving the impression of movement. Initially innocuous:</p>
+<pre><code class="language-js">function draw() {
+  // ... calculate x, y, scale, etc
+  // makes the shape: |_|
+  ctx.beginPath();
+  ctx.moveTo(x, y);
+  ctx.lineTo(x, y + y2);
+  ctx.lineTo(x + x2, y + y2);
+  ctx.lineTo(x + x2, y);
+  ctx.stroke();
+  ctx.closePath();
+}
+
+// update is called on a new frame
+function update() {
+  // ... update state then draw:
+  for (i = 0; i &lt; boxes.length; i++) {
+    boxes[i].draw();
+  }
+}</code></pre>
+<p>This would be repeated for every &quot;box&quot; animating towards the viewer. Since I&#39;m just drawing lines, I could batch all these together all in one go and group the collective shapes under one path, then run a <em>single</em> stroke:</p>
+<pre><code class="language-js">function draw() {
+  // ... calculate x, y, scale, etc
+  // makes the shape: |_|
+  ctx.moveTo(x, y);
+  ctx.lineTo(x, y + y2);
+  ctx.lineTo(x + x2, y + y2);
+  ctx.lineTo(x + x2, y);
+}
+
+// update is called on a new frame
+function update() {
+  // ... update state then draw:
+  ctx.beginPath();
+  for (i = 0; i &lt; boxes.length; i++) {
+    boxes[i].draw();
+  }
+  ctx.stroke();
+  ctx.closePath();
+}</code></pre>
+<p>It&#39;s a fairly tiny optimisation, but the result is the same, but with less interaction with the canvas, and given we&#39;re aiming to be in and out quickly, it&#39;s not a bad thing.</p>
+<h2>Single rAF handler</h2>
+<p>If you&#39;ve got more than one animation running, you&#39;ll need to set-up multiple callbacks to <code>requestAnimationFrame</code>, but having multiple rAF callbacks isn&#39;t ideal, and starts to get unwieldy when you&#39;re working with others who <em>also</em> want to queue up their animations.</p>
+<p>You really want everything to be handled in a <em>single</em> rAF handler.</p>
+<p>I&#39;ve written a small gist called <strong><a href="https://gist.github.com/remy/36f388d72c1ef161582f">raf.js</a></strong> that allows me to put all my rAF calls through a single handler (and added some niceties like the FPS pinning and a <code>running</code> boolean flag).</p>
+]]></content:encoded></item><item><title>You know what they say about assumptions...</title><guid isPermaLink="false">assumptions</guid><link>http://remysharp.com/2015/07/02/assumptions</link><pubDate>Thu, 02 Jul 2015 14:49:53 +0000</pubDate><description><![CDATA[During our heated panel at EdgeConf 2015 on progressive enhancement Jeremy points out that by trying to anticipate your users&#39; needs, you&#39;re making assumptions, and you know what they say about assumptions.
 Although he didn&#39;t say so explicitly, there was certainly an undertone that it was something we should admit to ourselves. I&#39;d like to add: for better or worse.
 The wider impact of assumptions about your user (for example that they&#39;re viewing on a desktop device) is the exclusion of others.
 Jeremy argued, rightly, that you should aim to develop for the absolute lowest technological solution as possible to suit your all your visitors basic needs: known and unknown.
@@ -989,362 +1070,4 @@ css: $(css_files)</code></pre>
 <iframe width="1280" height="720" src="//www.youtube.com/embed/6bcCpk_U3qc?rel=0" frameborder="0" allowfullscreen></iframe>
 
 <p>As further reading, I highly recommend you check out <a href="https://blog.jcoglan.com/2014/02/05/building-javascript-projects-with-make/">James Coglan&#39;s excellent post on using Make</a> for a full JavaScript project.</p>
-]]></content:encoded></item><item><title>My five promise patterns</title><guid isPermaLink="false">my-five-promise-patterns</guid><link>http://remysharp.com/2014/11/19/my-five-promise-patterns</link><pubDate>Wed, 19 Nov 2014 12:00:00 +0000</pubDate><description><![CDATA[I&#39;ve been getting big into promises over the last year. I think the two best resources that I&#39;ve learnt from today is Forbes Lindesay&#39;s talk at JSConf.EU 2013 and Jake Archibald&#39;s excellent promise article on html5rocks.
-There&#39;s been some patterns that I use over and over so I wanted to share and document them.
-Please note that the examples used are mostly based on my real code, but have been simplified for demonstration purposes.
-
-
-Library of choice
-Firstly I prefer to use the native implementation, and go bare bones. I&#39;m sure they will be a time that I&#39;ll want more than the native API has to offer, but I&#39;ve not arrived there yet.
-As a client side polyfill and the server side, in node-land, since promises are oddly not available natively, my preferred library is then/promise.
-I&#39;ve used RSVP in the past and heard decent things about Bluebird.
-RSVP feels like it&#39;s mostly bare bones, but I learnt about promise.js&#39; denodeify which converts a callback based function into a promise function which can be very useful.
-Update @ 2014-11-19 15:30:00 RSVP does also have denodeify and Matt Andrews of The FT has released a stand alone denodeify module.
-Clean shallow chains
-This means my initial promise code would look like:
-writeFile(filename, content)
-  .then(addDBUser)
-  .then(dns)
-  .then(configureHeroku)
-  .then(function () {
-    console.log(&#39;All done&#39;);
-  })
-This is easy if these are all my functions, but I can also do this with third party libraries via denodeify (a feature of the promise.js library, though most promise libraries have something similar) – turn a callback pattern function into a promise based function:
-var writeFile = Promise.denodeify(fs.writeFile):
-
-writeFile(filename, content)
-  .then(addDBUser)
-Though one place I&#39;ve been caught out with denodeify is when the method relies on method&#39;s context, which is most things as it turns out (fs is just a fluke that it&#39;s methods don&#39;t rely on the context), so make sure to bind as required:
-var addUser = Promise
-  .denodeify(model.user.add)
-  .bind(model.user) // multi line for blog readability
-Prebaking
-You&#39;ve already seen that I use bind, but I&#39;ve also found that in some situations, I need to call a function with static arguments (i.e. not relying on the previous promise), just because it&#39;s part of the promise chain.
-I could do this:
-writeFile(filename, content)
-  .then(function () {
-    return addUserToDb(&#39;rem&#39;, &#39;password&#39;, &#39;some-db&#39;);
-  })
-Or, what I&#39;ve found I&#39;m more inclined to do now is prebake the addUserToDb call with the static arguments:
-var addUser = addUserToDb.bind(null, &#39;rem&#39;,
-      &#39;password&#39;, &#39;some-db&#39;);
-
-writeFile(filename, content)
-  .then(addUser)
-This also allows me to code with the shallow chains as above, because it (to me) feels a bit verbose to drop into a function just to return a promise straight back out that doesn&#39;t depend on any unknown variable.
-The thing to watch out for is if the function behaves differently if there&#39;s more arguments, I have to cold call the promise.
-Cold calling
-Disclaimer: this patterned is required due to my own prebaking patterns and attempts to (ironically) simplify. There&#39;s a good chance you won&#39;t need this!
-When a function works both as a promise and using the callback pattern - it&#39;s great, but I&#39;ve been caught out in the past.
-The way the function might work under the hood is something like (this pseudo code):
-Heroku.prototype.post = function (slug, options, callback) {
-  // do some async thing
-  this.request(slug, options, function (error, data) {
-
-    // ** this line is how the dual functionality works ** //
-    if (callback) callback(error, data);
-
-    // else do something with promise
-  });
-
-  // return some promise created some place
-  return this.promise;
-}
-So post can be called either as a promise:
-heroku.post(slug, opts).then(dostuff);
-Or as a callback:
-heroku.post(slug, opts, dostuff);
-But gets messy when you do this:
-function configureHeroku(slug) {
-  // prebake heroku app create promise
-  var create = heroku.post.bind(heroku,
-    &#39;/apps&#39;,
-    { name: &#39;example-&#39; + slug }
-  );
-
-  // prebake domain config
-  var domain = heroku.post.bind(heroku,
-    &#39;/apps/example-&#39; + slug + &#39;/domains&#39;,
-    { hostname: slug + &#39;.example.com&#39; }
-  );
-
-  // ** this is where it goes wrong ** //
-  return create().then(domain);
-}
-The issue is when domain is called, it&#39;s actually called with the prebaked arguments of the slug and options but also the resolved value from create() - so a third argument is received.
-This third argument is the resolved result of create() which is treated as the callback argument and as a function object, so the code will try to invoke it - causing an exception.
-My solution is to wrap in a cold call - i.e. a newly created function that calls my method with no arguments. Like bind once but then never allow any new arguments, also known as currying (here&#39;s a simple demo of the curry/partial/seal type-thing):
-function coldcall(fn) {
-  return function () {
-    fn();
-  };
-}
-
-function configureHeroku(slug) {
-  // prebake heroku app create promise
-  // ...
-
-
-  // ** now it works ** //
-  return create().then(coldcall(domain));
-}
-Note: you can do this using currying, i.e. lodash.curry.
-Now the domain call works because it&#39;s invoked preventing any extra arguments being added.
-Throw over explicit reject
-Instead of:
-// compare password &amp; input password
-return new Promise(function (resolve, reject) {
-  bcrypt.compare(input, password, function (error, result) {
-    if (error || !result) {
-      // reject and early exit
-      return reject(error);
-    }
-
-    resolve(result);
-  });
-});
-I&#39;ll throw instead of reject:
-// compare password &amp; input password
-return new Promise(function (resolve) {
-  bcrypt.compare(input, password, function (error, result) {
-    if (error) {
-      throw error;
-    }
-
-    if (!result) {
-      throw new Error(&#39;Passwords did not match.&#39;);
-    }
-
-    resolve(result);
-  });
-});
-This might be a little controversial. In fact, when I threw this out to twitter, most people came back with something like:
-
-Reject whenever possible, it&#39;s more performant because throw breaks the stack.
-
-This may well be so, but there&#39;s a few key benefits to my code when I throw:
-
-I&#39;m used to error first handling, and quite often I&#39;ll accidently recieve reject as the first argument, which leads to much confusion. This way, I only ever accept resolve as my argument. There&#39;s also issues where &quot;reject&quot; and &quot;resolve&quot; as words are visually similar, which has also lead to confusion when they&#39;re the wrong way around!
-I don&#39;t have to remember to return reject. I&#39;ve seen code that doesn&#39;t return on reject, and it then goes on to resolve with a value. Some libraries fulfill, some reject, some throw new errors. Throwing the error avoids this entirely.
-This is also consistent with the way I&#39;ll deal with errors inside of subsequent then calls:
-
-// compare password &amp; input password
-utils.compare(input, password)
-  .then(function () {
-    if (!validUsername(username)) {
-      throw new Error(&#39;Username is not valid&#39;);
-    }
-    // continues...
-  })
-  .then(etc)
-Jake also chimed in with a couple of useful replies:
-
-reject is supposed to be analogous to throw but async. So reject what you&#39;d throw (which is usually an error)
-
-Then linked to his post with &quot;in ES7 async functions reject is throw&quot;. This also reinforces that you want to reject with a real error, not a string.
-Always end with a catch
-It&#39;s not uncommon for me to be testing a http request with a promise, and it just never returns...
-The issue is that the promise has been rejected somewhere and it&#39;s not been caught. So I always end with a catch. Even if it&#39;s a dump to the console, that way I know something failed.
-writeFile(filename, content)
-  .then(addDBUser)
-  .then(dns)
-  .then(configureHeroku)
-  .then(function () {
-    console.log(&#39;All done&#39;);
-  })
-  .catch(function (error) {
-    // do something with error
-    console.log(error.stack);
-    handle(error);
-  });
-This final catch lets me see the full stacktrace as to what went wrong, and importantly that something did go wrong (see blog comments for discussion about this).
-Note: .catch() is only in the ES6 spec and doesn&#39;t appear in Promises/A+ so some library implementations are missing .catch() support (as I&#39;ve found with mongoose as it depends on mPromise library).
-Recap
-So that&#39;s it:
-
-Shallow chains
-Prebaking where I can and cold calling if neccessary
-Always throw
-Always catch
-
-Pretty simple. I&#39;d be interested to hear what patterns are emerging in your workflow too.]]></description><content:encoded><![CDATA[
-<p>I&#39;ve been getting big into promises over the last year. I think the two best resources that I&#39;ve learnt from today is Forbes Lindesay&#39;s <a href="https://www.youtube.com/watch?v=qbKWsbJ76-s">talk at JSConf.EU 2013</a> and Jake Archibald&#39;s excellent <a href="http://www.html5rocks.com/en/tutorials/es6/promises/">promise article on html5rocks</a>.</p>
-<p>There&#39;s been some patterns that I use over and over so I wanted to share and document them.</p>
-<p><em>Please note that the examples used are </em>mostly<em> based on my real code, but have been simplified for demonstration purposes.</em></p>
-<!-- more -->
-
-<h2>Library of choice</h2>
-<p>Firstly I prefer to use the native implementation, and go bare bones. I&#39;m sure they will be a time that I&#39;ll want more than the native API has to offer, but I&#39;ve not arrived there yet.</p>
-<p>As a client side polyfill and the server side, in node-land, since promises are oddly not available natively, <strong>my preferred library is <a href="https://github.com/then/promise">then/promise</a></strong>.</p>
-<p>I&#39;ve used <a href="https://github.com/tildeio/rsvp.js">RSVP</a> in the past and heard decent things about <a href="https://github.com/petkaantonov/bluebird">Bluebird</a>.</p>
-<p>RSVP feels like it&#39;s mostly bare bones, but I learnt about promise.js&#39; <code>denodeify</code> which converts a callback based function into a promise function which can be very useful.</p>
-<p><em>Update @ 2014-11-19 15:30:00</em> RSVP does also have <a href="https://github.com/tildeio/rsvp.js/blob/master/lib/rsvp/node.js#L74">denodeify</a> and Matt Andrews of The FT has released a <a href="https://www.npmjs.org/package/denodeify">stand alone denodeify</a> module.</p>
-<h2>Clean shallow chains</h2>
-<p>This means my initial promise code would look like:</p>
-<pre><code class="language-js">writeFile(filename, content)
-  .then(addDBUser)
-  .then(dns)
-  .then(configureHeroku)
-  .then(function () {
-    console.log(&#39;All done&#39;);
-  })</code></pre>
-<p>This is easy if these are all my functions, but I can also do this with third party libraries via <code>denodeify</code> (a feature of the promise.js library, though most promise libraries have something similar) – turn a callback pattern function into a promise based function:</p>
-<pre><code class="language-js">var writeFile = Promise.denodeify(fs.writeFile):
-
-writeFile(filename, content)
-  .then(addDBUser)</code></pre>
-<p>Though one place I&#39;ve been caught out with <code>denodeify</code> is when the method relies on method&#39;s context, which is most things as it turns out (<code>fs</code> is just a fluke that it&#39;s methods don&#39;t rely on the context), so make sure to <code>bind</code> as required:</p>
-<pre><code class="language-js">var addUser = Promise
-  .denodeify(model.user.add)
-  .bind(model.user) // multi line for blog readability</code></pre>
-<h2>Prebaking</h2>
-<p>You&#39;ve already seen that I use <code>bind</code>, but I&#39;ve also found that in some situations, I need to call a function with static arguments (i.e. not relying on the previous promise), just because it&#39;s part of the promise chain.</p>
-<p>I <em>could</em> do this:</p>
-<pre><code class="language-js">writeFile(filename, content)
-  .then(function () {
-    return addUserToDb(&#39;rem&#39;, &#39;password&#39;, &#39;some-db&#39;);
-  })</code></pre>
-<p>Or, what I&#39;ve found I&#39;m more inclined to do now is prebake the <code>addUserToDb</code> call with the static arguments:</p>
-<pre><code class="language-js">var addUser = addUserToDb.bind(null, &#39;rem&#39;,
-      &#39;password&#39;, &#39;some-db&#39;);
-
-writeFile(filename, content)
-  .then(addUser)</code></pre>
-<p>This also allows me to code with the <a href="#clean-shallow-chains">shallow chains</a> as above, because it (to me) feels a bit verbose to drop into a function just to return a promise straight back out that doesn&#39;t depend on any unknown variable.</p>
-<p>The thing to watch out for is if the function behaves differently if there&#39;s more arguments, I have to cold call the promise.</p>
-<h2>Cold calling</h2>
-<p><strong><em>Disclaimer:</em></strong> <em>this patterned is required due to my own prebaking patterns and attempts to (ironically) simplify. There&#39;s a good chance you won&#39;t need this!</em></p>
-<p>When a function works both as a promise <em>and</em> using the callback pattern - it&#39;s great, but I&#39;ve been caught out in the past.</p>
-<p>The way the function might work under the hood is something like (this pseudo code):</p>
-<pre><code class="language-js">Heroku.prototype.post = function (slug, options, callback) {
-  // do some async thing
-  this.request(slug, options, function (error, data) {
-
-    // ** this line is how the dual functionality works ** //
-    if (callback) callback(error, data);
-
-    // else do something with promise
-  });
-
-  // return some promise created some place
-  return this.promise;
-}</code></pre>
-<p>So <code>post</code> can be called either as a promise:</p>
-<pre><code class="language-js">heroku.post(slug, opts).then(dostuff);</code></pre>
-<p>Or as a callback:</p>
-<pre><code class="language-js">heroku.post(slug, opts, dostuff);</code></pre>
-<p>But gets messy when you do this:</p>
-<pre><code class="language-js">function configureHeroku(slug) {
-  // prebake heroku app create promise
-  var create = heroku.post.bind(heroku,
-    &#39;/apps&#39;,
-    { name: &#39;example-&#39; + slug }
-  );
-
-  // prebake domain config
-  var domain = heroku.post.bind(heroku,
-    &#39;/apps/example-&#39; + slug + &#39;/domains&#39;,
-    { hostname: slug + &#39;.example.com&#39; }
-  );
-
-  // ** this is where it goes wrong ** //
-  return create().then(domain);
-}</code></pre>
-<p>The issue is when <code>domain</code> is called, it&#39;s actually called with the prebaked arguments of the slug and options <em>but also</em> the resolved value from <code>create()</code> - so <strong>a third argument is received</strong>.</p>
-<p>This third argument is the resolved result of <code>create()</code> which is treated as the <code>callback</code> argument and as a function object, so the code will try to invoke it - causing an exception.</p>
-<p>My solution is to wrap in a <em>cold call</em> - i.e. a newly created function that calls my method with no arguments. Like bind once but then never allow any new arguments, also known as currying (here&#39;s a simple demo of the <a href="https://jsbin.com/gopiqu/edit?js,console">curry/partial/seal</a> type-thing):</p>
-<pre><code class="language-js">function coldcall(fn) {
-  return function () {
-    fn();
-  };
-}
-
-function configureHeroku(slug) {
-  // prebake heroku app create promise
-  // ...
-
-
-  // ** now it works ** //
-  return create().then(coldcall(domain));
-}</code></pre>
-<p><em>Note: you can do this using currying, i.e. <a href="https://lodash.com/docs#curry">lodash.curry</a>.</em></p>
-<p>Now the <code>domain</code> call works because it&#39;s invoked preventing any extra arguments being added.</p>
-<h2>Throw over explicit reject</h2>
-<p>Instead of:</p>
-<pre><code class="language-js">// compare password &amp; input password
-return new Promise(function (resolve, reject) {
-  bcrypt.compare(input, password, function (error, result) {
-    if (error || !result) {
-      // reject and early exit
-      return reject(error);
-    }
-
-    resolve(result);
-  });
-});</code></pre>
-<p>I&#39;ll throw instead of reject:</p>
-<pre><code class="language-js">// compare password &amp; input password
-return new Promise(function (resolve) {
-  bcrypt.compare(input, password, function (error, result) {
-    if (error) {
-      throw error;
-    }
-
-    if (!result) {
-      throw new Error(&#39;Passwords did not match.&#39;);
-    }
-
-    resolve(result);
-  });
-});</code></pre>
-<p>This might be a little controversial. In fact, when I threw this out to twitter, most people came back with something like:</p>
-<blockquote>
-<p>Reject whenever possible, it&#39;s more performant because throw breaks the stack.</p>
-</blockquote>
-<p>This may well be so, but there&#39;s a few key benefits to my code when I throw:</p>
-<ol>
-<li>I&#39;m used to error first handling, and quite often I&#39;ll accidently recieve <code>reject</code> as the first argument, which leads to much confusion. This way, I only ever accept <code>resolve</code> as my argument. There&#39;s also issues where &quot;reject&quot; and &quot;resolve&quot; as words are visually similar, which has also lead to confusion when they&#39;re the wrong way around!</li>
-<li>I don&#39;t have to remember to <code>return reject</code>. I&#39;ve seen code that doesn&#39;t return on reject, and it then goes on to <code>resolve</code> with a value. Some libraries fulfill, some reject, some throw new errors. Throwing the error avoids this entirely.</li>
-<li>This is also consistent with the way I&#39;ll deal with errors inside of subsequent <code>then</code> calls:</li>
-</ol>
-<pre><code class="language-js">// compare password &amp; input password
-utils.compare(input, password)
-  .then(function () {
-    if (!validUsername(username)) {
-      throw new Error(&#39;Username is not valid&#39;);
-    }
-    // continues...
-  })
-  .then(etc)</code></pre>
-<p>Jake also chimed in with a couple of useful replies:</p>
-<blockquote>
-<p>reject is supposed to be analogous to throw but async. So reject what you&#39;d throw (which is usually an error)</p>
-</blockquote>
-<p>Then linked to his <a href="http://jakearchibald.com/2014/es7-async-functions/">post</a> with <em>&quot;in ES7 async functions reject is throw&quot;</em>. This also reinforces that you want to reject with a real error, not a string.</p>
-<h2>Always end with a catch</h2>
-<p>It&#39;s not uncommon for me to be testing a http request with a promise, and it just never returns...</p>
-<p>The issue is that the promise has been rejected somewhere and it&#39;s not been caught. So I <strong>always end with a catch</strong>. Even if it&#39;s a dump to the console, that way I know something failed.</p>
-<pre><code class="language-js">writeFile(filename, content)
-  .then(addDBUser)
-  .then(dns)
-  .then(configureHeroku)
-  .then(function () {
-    console.log(&#39;All done&#39;);
-  })
-  .catch(function (error) {
-    // do something with error
-    console.log(error.stack);
-    handle(error);
-  });</code></pre>
-<p>This final catch lets me see the full stacktrace as to what went wrong, and importantly <em>that something did go wrong</em> (see blog comments for discussion about this).</p>
-<p><em>Note: <code>.catch()</code> is only in the ES6 spec and doesn&#39;t appear in Promises/A+ so some library implementations are missing <code>.catch()</code> support (as I&#39;ve found with <a href="http://www.mongoosejs.com/">mongoose</a> as it depends on <a href="https://www.npmjs.org/mpromise">mPromise</a> library).</em></p>
-<h2>Recap</h2>
-<p>So that&#39;s it:</p>
-<ul>
-<li>Shallow chains</li>
-<li>Prebaking where I can and cold calling if neccessary</li>
-<li>Always throw</li>
-<li>Always catch</li>
-</ul>
-<p>Pretty simple. I&#39;d be interested to hear what patterns are emerging in your workflow too.</p>
 ]]></content:encoded></item></channel></rss>
