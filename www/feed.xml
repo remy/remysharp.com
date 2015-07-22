@@ -1,4 +1,108 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 13 Jul 2015 7:50:37 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Optimising a canvas animation</title><guid isPermaLink="false">optimising-a-canvas-animation</guid><link>http://remysharp.com/2015/07/13/optimising-a-canvas-animation</link><pubDate>Mon, 13 Jul 2015 7:50:37 +0000</pubDate><description><![CDATA[I&#39;ve been working on a small canvas animation for ffconf 2015 and realised two important optimisations that I&#39;ve missed out on the past.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Wed, 22 Jul 2015 15:37:23 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>My Pebble</title><guid isPermaLink="false">my-pebble</guid><link>http://remysharp.com/2015/07/22/my-pebble</link><pubDate>Wed, 22 Jul 2015 15:37:23 +0000</pubDate><description><![CDATA[Back in April 2012 I joined the bandwagon and backed the hyped kickerstarter campaign for the very first Pebble.
+After waiting way way too long and abandoning my original choice for an orange watch I was forced to choose the black, only to get my hands on it earlier.
+I also hadn&#39;t worn a watch in well over 15 years. I&#39;m not 100% what prompted me to buy the watch. Perhaps the promise of an open source platform...?
+When it fin-nal-ly arrived, what I noticed immediately was that it was massive on my wrist. The strap was particularly large and never really felt snug.
+I figured it wouldn&#39;t even last 3 months on my wrist.
+
+What was the point of the Pebble?
+The Pebble gave me one important (to me) feature. Text messages (and calls) would vibrate on my wrist.
+I&#39;d found that when I was away from home, I&#39;d nearly always miss text messages from my wife. Even when my phone was on vibrate and loud, I&#39;d still miss them.
+A small vibration on my wrist would subtlety alert me to something I could decide to action or not. For me, this was a big deal and an important feature.
+
+For the first 3 months it was a novelty. I kept reading about cool apps that could do text responses - but alas I was using an iPhone and none of this functionality was available to my phone.
+The first turning point to my unimpressed state was spending 1 month trailing a move to Android. This experience totally opened up the Pebble&#39;s functionality to me. But that was just a trial, and I would move back to the (limiting) iPhone.
+So, why and how am I still wearing my Pebble today?
+My Pebble today
+Some 2 years later I still wear my Pebble. Every day. It helps that I finally ditched my iPhone for an Android (a OnePlus One - and that&#39;s another blog post).
+The strap has broken, it needs charging once a week (insane if you compare to a regular watch) and the bottom right action button (1 out of 4 buttons) is playing up.
+One strange thing that kept happening, particularly strange if you consider how conservative the British are: random people would ask my &quot;how am I finding my watch?&quot;. A guy on a plane, someone in the gym changing rooms, it was all very strange (to me).
+But with all these issues, the clunkiness and being forced to converse with other human beings: why am I still wearing it??!
+I customised it. I made it mine. It&#39;s my watch, and there&#39;s no other watch like it.
+Open source: learning &amp; modifying other people&#39;s&nbsp;code
+I&#39;d tried in the past to make my own watch face but failed pretty hard. But then my second attempt took an existing watch face and made my own modifications, including using a custom font.
+There is a memory leak in the original code that causes the watch face to crash every now and then, and I&#39;ll likely get around to debugging and fixing it...one day.
+A tiny note: since I forked the project, the license on Simply Clean has changed/been removed. It doesn&#39;t affect my code, but I thought it was fair to point out.
+I used CloudPebble for all of the development I&#39;ve done so far on the Pebble, and it&#39;s an absolutely superb resource.
+
+I know JavaScript!
+Although there&#39;s a couple of limitations in the JS apps, the simple fact is: I can create my ideas as JavaScript based Pebble apps in a matter of hours.
+I recently wrote a quick interface to a local bus time webapp that I wrote. Now from my wrist, in a few presses I have the bus times on my wrist.
+From a practical use, this is actually easier than using my phone because it takes a few seconds to do the geo-lookup and then request the content from the bus website, so when I&#39;m rushing around in the morning, I don&#39;t have to mess around with my phone.
+I also wrote a simple prototype with a Spark that I could control LEDs from my watch. Pointless, but cool (see this short video demo).
+There is, however, a small cost to pay with JavaScript apps:
+
+They only work whilst you have a connection from your watch to your phone (since the actual JS is executed on the phone)
+There&#39;s a laggy response time on the button presses, particularly (I&#39;ve noticed) going backwards through the app (or unloading)
+Firing up the JS based Pebble app can interfere with apps running on the phone - I noticed that it would stop my OnePlus One&#39;s camera from recording video as I launch the JS app (which is where there&#39;s no video yet)
+
+I (kinda) know C too...
+The actual reason the button is failing on my Pebble is because I use it so much: I wrote a C based app that I use in the gym to time my rest time between sets. I called it (cleverly...) Rest.
+
+Its simple. No animations, no nonsense. Three pre-set (configurable) times in seconds, and a timer. I&#39;m in the gym 4 times a week, and usually have around 20-25 sets. I use my app between every set. My app is exactly what I need for the task I perform multiple times a day.
+How it affects my daily routine
+As with the Rest app being part of my daily routing, the alarms are also an important part of my routing. I have alarms set throughout the day to remind me exactly when I need to eat. Silly as it sounds, making the watch integral to my daily routine is what&#39;s given me a reason to keep it charged and keep it on.
+Being able to customise it, using my knowledge of code and knowing how to hack through other people&#39;s code has lulled me into loving this small piece of tech.
+Being able to express myself in my pebble is what&#39;s made me love it.
+I&#39;ve also realised that I always prefered the look of services like de.licio.us (circa 2005) over Magnolia, and in a way, the Pebble is when compared to the other smart watches out there.
+A lot of my friends have asked me &quot;when are you getting the iWatch&quot;, to which I say I&#39;m not interested (seriously, follow me on twitter if you need an idea of how sick I am of Apple) - and in fact, I also backed the new Pebble Time project and I can&#39;t wait to get my hands on that device and play some more.
+Next: Time
+Akin with simplicity of the Pebble, my Pebble Time arrived in this simple cardboard, no-frills packaging, and I&#39;m keen to see how I can customise this watch and make it mine, again.
+
+And when this happened, it totally made my day:
+Okay @Pebble, this is awesome. No charge, but still tells the time. 💙💚💛💜 pic.twitter.com/fZdBfrFb88&mdash; Remy Sharp (@rem) July 11, 2015]]></description><content:encoded><![CDATA[
+<p>Back in April 2012 I joined the bandwagon and backed the hyped kickerstarter campaign for the very first Pebble.</p>
+<p>After waiting way way too long and abandoning my original choice for an orange watch I was forced to choose the black, only to get my hands on it earlier.</p>
+<p>I also hadn&#39;t worn a watch in well over 15 years. I&#39;m not 100% what prompted me to buy the watch. Perhaps the promise of an open source platform...?</p>
+<p>When it <em>fin-nal-ly</em> arrived, what I noticed immediately was that it was massive on my wrist. The strap was particularly large and never really felt snug.</p>
+<p><strong>I figured it wouldn&#39;t even last 3 months on my wrist.</strong></p>
+<hr>
+<h2>What was the point of the Pebble?</h2>
+<p>The Pebble gave me one important (to me) feature. Text messages (and calls) would vibrate on my wrist.</p>
+<p>I&#39;d found that when I was away from home, I&#39;d nearly always miss text messages from my wife. Even when my phone was on vibrate and loud, I&#39;d still miss them.</p>
+<p>A small vibration on my wrist would <em>subtlety</em> alert me to something I could decide to action or not. For me, this was a big deal and an important feature.</p>
+<hr>
+<p>For the first 3 months it was a novelty. I kept reading about cool apps that could do text responses - but alas I was using an iPhone and none of this functionality was available to my phone.</p>
+<p>The first turning point to my unimpressed state was spending 1 month trailing a move to Android. This experience totally opened up the Pebble&#39;s functionality to me. But that was <em>just</em> a trial, and I would move back to the (limiting) iPhone.</p>
+<p>So, why and how am I still wearing my Pebble today?</p>
+<h2>My Pebble today</h2>
+<p>Some 2 years later I still wear my Pebble. Every day. It helps that I finally ditched my iPhone for an Android (a OnePlus One - and that&#39;s another blog post).</p>
+<p>The strap has broken, it needs charging once a week (insane if you compare to a regular watch) and the bottom right action button (1 out of 4 buttons) is playing up.</p>
+<p>One strange thing that kept happening, particularly strange if you consider how conservative the British are: random people would ask my &quot;how am I finding my watch?&quot;. A guy on a plane, someone in the gym changing rooms, it was all very strange (to me).</p>
+<p>But with all these issues, the clunkiness and being forced to converse with other human beings: <em>why</em> am I still wearing it??!</p>
+<p>I customised it. I made it mine. It&#39;s <em>my</em> watch, and there&#39;s no other watch like it.</p>
+<h2>Open source: learning &amp; modifying other people&#39;s&nbsp;code</h2>
+<p>I&#39;d tried in the past to make my own watch face but failed pretty hard. But then my second attempt took an existing <a href="https://github.com/edwinfinch/simplyclean">watch face</a> and made <a href="https://github.com/remy/simplyclean/">my own</a> modifications, including using a custom font.</p>
+<p>There <em>is</em> a memory leak in the original code that causes the watch face to crash every now and then, and I&#39;ll likely get around to debugging and fixing it...one day.</p>
+<p><small>A tiny note: since I forked the project, the license on Simply Clean has changed/been removed. It doesn&#39;t affect my code, but I thought it was fair to point out.</small></p>
+<p>I used <a href="https://cloudpebble.net">CloudPebble</a> for all of the development I&#39;ve done so far on the Pebble, and it&#39;s an absolutely superb resource.</p>
+<p><img src="/images/pebble-og.jpg" alt="My OG Pebble"></p>
+<h2>I know JavaScript!</h2>
+<p>Although there&#39;s a couple of limitations in the JS apps, the simple fact is: I can create my ideas as JavaScript based Pebble apps in a matter of hours.</p>
+<p>I recently wrote a <a href="https://github.com/remy/pebble-brighton-buses">quick interface</a> to a <a href="http://buses.leftlogic.com">local bus time webapp</a> that I wrote. Now from my wrist, in a few presses I have the bus times on my wrist.</p>
+<p>From a practical use, this is actually easier than using my phone because it takes a few seconds to do the geo-lookup and then request the content from the bus website, so when I&#39;m rushing around in the morning, I don&#39;t have to mess around with my phone.</p>
+<p>I also wrote a simple prototype with a Spark that I could control LEDs from my watch. Pointless, but cool (<a href="https://instagram.com/p/sDFL0aqavo/">see this short video demo</a>).</p>
+<p>There is, however, a small cost to pay with JavaScript apps:</p>
+<ul>
+<li>They <em>only</em> work whilst you have a connection from your watch to your phone (since the actual JS is executed on the phone)</li>
+<li>There&#39;s a laggy response time on the button presses, particularly (I&#39;ve noticed) going backwards through the app (or unloading)</li>
+<li>Firing up the JS based Pebble app can interfere with apps running on the phone - I noticed that it would stop my OnePlus One&#39;s camera from recording video as I launch the JS app (which is where there&#39;s no video yet)</li>
+</ul>
+<h3>I (kinda) know C too...</h3>
+<p>The <em>actual reason</em> the button is failing on my Pebble is because I use it so much: I wrote a C based app that I use in the gym to time my rest time between sets. I called it (cleverly...) <a href="https://apps.getpebble.com/en_US/application/53ff41ed8cdf37902b000050">Rest</a>.</p>
+<p><img src="/images/pebble-rest.jpg" alt="Rest app"></p>
+<p>Its simple. No animations, no nonsense. Three pre-set (configurable) times in seconds, and a timer. I&#39;m in the gym 4 times a week, and usually have around 20-25 sets. I use my app between <em>every</em> set. My app is <strong>exactly</strong> what I need for the task I perform multiple times a day.</p>
+<h2>How it affects my daily routine</h2>
+<p>As with the Rest app being part of my daily routing, the alarms are also an important part of my routing. I have alarms set throughout the day to remind me exactly when I need to eat. Silly as it sounds, making the watch integral to my daily routine is what&#39;s given me a reason to keep it charged and keep it on.</p>
+<p>Being able to customise it, using my knowledge of code and knowing how to hack through other people&#39;s code has lulled me into loving this small piece of tech.</p>
+<p><strong>Being able to express myself in my pebble is what&#39;s made me love it.</strong></p>
+<p>I&#39;ve also realised that I always prefered the look of services like de.licio.us (circa 2005) over Magnolia, and in a way, the Pebble is when compared to the other smart watches out there.</p>
+<p>A <em>lot</em> of my friends have asked me &quot;when are you getting the iWatch&quot;, to which I say I&#39;m not interested (<em>seriously</em>, <a href="https://twitter.com/rem">follow me on twitter</a> if you need an idea of how <a href="https://twitter.com/search?q=from%3Arem%20apple&amp;src=typd">sick I am of Apple</a>) - and in fact, I <em>also</em> backed the new Pebble Time project and I can&#39;t wait to get my hands on that device and play some more.</p>
+<h2>Next: Time</h2>
+<p>Akin with simplicity of the Pebble, my Pebble Time arrived in this simple cardboard, no-frills packaging, and I&#39;m keen to see how I can customise this watch and make it mine, again.</p>
+<p><img src="/images/pebble-time-packaging.jpg" alt="Pebble Time packaging"></p>
+<p>And when this happened, it totally made my day:</p>
+<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Okay <a href="https://twitter.com/Pebble">@Pebble</a>, this is awesome. No charge, but still tells the time. 💙💚💛💜 <a href="http://t.co/fZdBfrFb88">pic.twitter.com/fZdBfrFb88</a></p>&mdash; Remy Sharp (@rem) <a href="https://twitter.com/rem/status/619767989605376000">July 11, 2015</a></blockquote></p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>]]></content:encoded></item><item><title>Optimising a canvas animation</title><guid isPermaLink="false">optimising-a-canvas-animation</guid><link>http://remysharp.com/2015/07/13/optimising-a-canvas-animation</link><pubDate>Mon, 13 Jul 2015 7:50:37 +0000</pubDate><description><![CDATA[I&#39;ve been working on a small canvas animation for ffconf 2015 and realised two important optimisations that I&#39;ve missed out on the past.
 The net result: no more humming fan on my laptop.]]></description><content:encoded><![CDATA[
 <p>I&#39;ve been working on a small canvas animation for <a href="http://2015.ffconf.org">ffconf 2015</a> and realised two important optimisations that I&#39;ve missed out on the past.</p>
 <p>The net result: no more humming fan on my laptop.</p>
@@ -992,82 +1096,4 @@ Reposted from The Pastry Box Project]]></description><content:encoded><![CDATA[
 <p>To Julie: I love you. Always. From the days that we were kids to the days when we&#39;re old and grey.</p>
 <p><img src="/images/us-1996.jpg" alt="Remy &amp; Julie"></p>
 <p>Reposted from <a href="https://the-pastry-box-project.net/remy-sharp/2014-december-6">The Pastry Box Project</a></p>
-]]></content:encoded></item><item><title>Makefile instead of hoop jumping</title><guid isPermaLink="false">makefile</guid><link>http://remysharp.com/2014/12/02/makefile</link><pubDate>Tue, 02 Dec 2014 10:00:00 +0000</pubDate><description><![CDATA[In 2012 I ran a Build Process workshop as part of ffconf tooling tutorials. Early on as part of my workshop introduction I said that makefiles were hard and for harden unix beared folk...or something. Grunt (and the like) were definitely a gentler solution.
-I still stand by that, but today the idea of installing a bunch of dependancies just so I can have my Less file converted to CSS in real-time feels...well, crap.]]></description><content:encoded><![CDATA[
-<p>In 2012 I ran a Build Process workshop as part of <a href="http://2012.ffconf.org/#tooling">ffconf tooling tutorials</a>. Early on as part of my workshop introduction I said that makefiles were hard and for harden unix beared folk...or something. Grunt (and the like) were definitely a gentler solution.</p>
-<p>I still stand by that, but today the idea of installing a bunch of dependancies <em>just</em> so I can have my Less file converted to CSS in real-time feels...well, crap.</p>
-<h2>Barebones</h2>
-<p>When I write my JavaScript, I err on the side of barebones. I tend to roll without libraries and frameworks, and (for better or worse) I don&#39;t use frameworks like Ember or Angular.</p>
-<p>I prefer lean and close to the metal. Obviously I&#39;ll employ a framework when I&#39;m repeating myself over and over, but this has always been my preference when developing.</p>
-<p>When I think of it like that, it makes sense that I&#39;d eventually end up wanting to use low levels tools like Make to handle my workflow (and eventually build process).</p>
-<h2>My requirements</h2>
-<p>I had a project that used Less to generate the CSS. Originally we had an Express middleware that would generate the CSS file on demand.</p>
-<p>The result was the was a significant flash of unstyled content whilst the initial build of the CSS ran (perhaps on each release - I don&#39;t recall). So we changed it so that CSS would build once.</p>
-<p>Now when we changed the <code>.less</code> file, we had to re-run the build...</p>
-<p>I moaned (as usual) on twitter, and got lots of useful responses, but it mostly involved installing mutliple tools (Grunt or Gulp, plus some 3rd party lib to generate, then the watcher...etc) or suggestions that changed the workflow I was using.</p>
-<p>This doesn&#39;t sit well. My requirements (to me) were simple:</p>
-<ol>
-<li>When a single <code>.less</code> file changes</li>
-<li>Rebuild it</li>
-<li>Repeat</li>
-</ol>
-<p>Simple.</p>
-<h2>Solution</h2>
-<p>There&#39;s two parts, and the execution.</p>
-<ol>
-<li>Watch: when a watched file changes run a command</li>
-<li>Rebuild only the file that changed</li>
-</ol>
-<p>The execution is simple, in my <code>package.json</code> file (because I&#39;m using npm &amp; node), I have:</p>
-<pre><code class="language-json">{
-  &quot;scripts&quot;: {
-    &quot;watch&quot;: &quot;&lt;command&gt;&quot;
-  }
-}</code></pre>
-<p>And on the command line I run:</p>
-<pre><code class="language-shell">$ npm run watch</code></pre>
-<h3>Watch</h3>
-<p>I looked into <a href="http://npmjs.org/gaze">gaze</a>, <a href="https://github.com/caseywebdev/watchy">watchy</a> and a few others, but eventually settled on two potentials:</p>
-<ul>
-<li><a href="https://github.com/emcrisostomo/fswatch">fswatch</a> - which is mac specific</li>
-<li><a href="https://github.com/remy/nodemon">nodemon</a> - my own creation, but actually works perfectly</li>
-</ul>
-<p>Here&#39;s how the watch works with <code>fswatch</code>:</p>
-<pre><code class="language-shell">fswatch -o public/css/*.less | xargs -n1 -I{} make</code></pre>
-<p>And the same thing with nodemon (via a locally installed <code>npm install -g nodemon</code>):</p>
-<pre><code class="language-shell">nodemon --quiet --watch public/css/ --ext css --exec make
-# same thing except with shorthand flags:
-# nodemon -q -w public/css/ -e css -x make</code></pre>
-<p>Now whenever a .less file changes in the <code>public/css</code> directory, my <code>make</code> command runs, and because Make is clever, it&#39;ll only recompile the files that have actually changed.</p>
-<p>Aside: In my own projects, I&#39;ve gone further with nodemon, to use it for automatically re-running tests and recompiling JavaScript for development.</p>
-<h3>Rebuild</h3>
-<p>Make is clever in that it will only rebuild the files whose dependencies have changed. In that the <code>.css</code> file has a <code>.less</code> file dependency, so when that&#39;s changed, make will run the command to rebuild our individual <code>.css</code> file.</p>
-<pre><code class="language-makefile"># when you run `make` alone, run the `css` rule (at the
-# bottom of this makefile)
-all: css
-
-# .PHONY is a special command, that allows you not to
-# require physical files as the target (allowing us to
-# use the `all` rule as the default target).
-.PHONY: all
-
-# replace all .less files with .css extension and cache
-# the results in a variable called `css_files`
-css_files := $(patsubst %.less, %.css, $(wildcard ./public/css/*.less))
-
-# when a .css file is *not* up to date compared to the
-# .less file, then make will run the the following commands:
-# - echo the string &quot;foo.less -&gt; foo.css&quot;
-# - run the command `lessc -x --source-map foo.less foo.css`
-./public/css/%.css: public/css/%.less
-  @echo &quot;$&lt; -&gt; $@&quot;
-  @./node_modules/.bin/lessc -x --source-map $&lt; $@
-
-css: $(css_files)</code></pre>
-<h2>Final result</h2>
-<p>The <a href="https://gist.github.com/remy/274232f8b47dfa163324">final result</a> is pretty awesome, especially with CSS source maps enabled in devtools.</p>
-<p>I can edit and change the Less file in devtools, and the rebuild is near instant, which in turn is detected by devtools, which is then injected into Chrome so I see the updates happening in near-real-time:</p>
-<iframe width="1280" height="720" src="//www.youtube.com/embed/6bcCpk_U3qc?rel=0" frameborder="0" allowfullscreen></iframe>
-
-<p>As further reading, I highly recommend you check out <a href="https://blog.jcoglan.com/2014/02/05/building-javascript-projects-with-make/">James Coglan&#39;s excellent post on using Make</a> for a full JavaScript project.</p>
 ]]></content:encoded></item></channel></rss>
