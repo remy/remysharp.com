@@ -3360,5 +3360,13 @@
       "code"
     ],
     "published": true
+  },
+  "my-pebble": {
+    "title": "My Pebble",
+    "date": "2015-07-22 15:37:23",
+    "tags": [
+      "personal"
+    ],
+    "published": true
   }
 }
