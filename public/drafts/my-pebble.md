@@ -93,3 +93,8 @@ A *lot* of my friends have asked me "when are you getting the iWatch", to which 
 Akin with simplicity of the Pebble, my Pebble Time arrived in this simple cardboard, no-frills packaging, and I'm keen to see how I can customise this watch and make it mine, again.
 
 ![Pebble Time packaging](/images/pebble-time-packaging.jpg)
+
+And when this happened, it totally made my day:
+
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Okay <a href="https://twitter.com/Pebble">@Pebble</a>, this is awesome. No charge, but still tells the time. 💙💚💛💜 <a href="http://t.co/fZdBfrFb88">pic.twitter.com/fZdBfrFb88</a></p>&mdash; Remy Sharp (@rem) <a href="https://twitter.com/rem/status/619767989605376000">July 11, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
