@@ -66,7 +66,7 @@ If you're like some users on the edge of the future and want to always use node 
 
 <pre><code>{
   "execMap": {
-    "js": "node --harmony"
+    "js": "node --harmony",
     "py": "python",
     "rb": "ruby"
   }
