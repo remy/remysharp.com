@@ -3368,5 +3368,13 @@
       "personal"
     ],
     "published": true
+  },
+  "notes-on-porting-my-pebble-app-to-sdk-3": {
+    "title": "Notes on porting my Pebble app to SDK3",
+    "date": "2015-07-29 14:32:03",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }
