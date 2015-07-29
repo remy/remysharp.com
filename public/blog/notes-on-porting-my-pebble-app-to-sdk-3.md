@@ -40,13 +40,13 @@ To get the top positioning on the `TextLayer`s I couldn't seem to calculate the 
 
 ## Developing for APLITE *and* BASALT
 
-I've got an origial (kickstarter) Pebble and a Pebble Time. I'm used to deploying to devices (rather than emulators, though I'll come on to this).
+I've got an original (kickstarter) Pebble and a Pebble Time. I'm used to deploying to devices (rather than emulators, though I'll come on to this).
 
 However, I found (after a *lot* of failure) that you can't develop for more than one Pebble device at a time. Importantly, on the phone Pebble app (be it Pebble or Pebble Time) **you can only have one watch enabled for development**.
 
 The workaround is to keep switching between the two apps, flipping the developer checkbox.
 
-Or...use the emulator on the command line. It's pretty solid, and conviently you can have both the BASALT *and* APLITE running side by side (as you seen from my shots above).
+Or...use the emulator on the command line. It's pretty solid, and conveniently you can have both the BASALT *and* APLITE running side by side (as you seen from my shots above).
 
 ## UI tweaks
 
