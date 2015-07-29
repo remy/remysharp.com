@@ -230,5 +230,14 @@
     "tags": [
       "web"
     ]
+  },
+  "notes-on-porting-my-pebble-app-to-sdk-3": {
+    "title": "Notes on porting my Pebble app to SDK3",
+    "date": "2015-07-29 09:13:09",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }
