@@ -1,4 +1,80 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Wed, 22 Jul 2015 15:37:23 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>My Pebble</title><guid isPermaLink="false">my-pebble</guid><link>http://remysharp.com/2015/07/22/my-pebble</link><pubDate>Wed, 22 Jul 2015 15:37:23 +0000</pubDate><description><![CDATA[Back in April 2012 I joined the bandwagon and backed the hyped kickerstarter campaign for the very first Pebble.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Wed, 29 Jul 2015 14:32:03 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Notes on porting my Pebble app to SDK3</title><guid isPermaLink="false">notes-on-porting-my-pebble-app-to-sdk-3</guid><link>http://remysharp.com/2015/07/29/notes-on-porting-my-pebble-app-to-sdk-3</link><pubDate>Wed, 29 Jul 2015 14:32:03 +0000</pubDate><description><![CDATA[Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.
+In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).
+Layout
+With my app, I have a ActionBarLayer on the right with arrows and TextLayers with the second countdown. I noticed when deploying to BASALT, the position was off, and in fact everything was closer.
+I did some simple repositioning, but you can see from the screenshot below that the ActionBarLayer is actually slightly wider:
+
+This is emphasised when the count is actually going down:
+
+This is due to BASALT being &quot;full screen&quot; by default. So to compensate for this, I need to do conditional positioning on the elements. For the position of the TextLayer, I&#39;m using 134 - ACTION_BAR_WIDTH (which is 30 for BASALT and 20 for APLITE):
+s_textlayer_120 = text_layer_create(GRect(0, 12, 134 - ACTION_BAR_WIDTH, 42));
+To get the top positioning on the TextLayers I couldn&#39;t seem to calculate the values correctly, so I had a conditional set of defines:
+#ifdef PBL_PLATFORM_BASALT
+  #define MENU_TOP 16
+  #define MENU_MIDDLE 64
+  #define MENU_BOTTOM 112
+#else
+  #define MENU_TOP 6
+  #define MENU_MIDDLE 54
+  #define MENU_BOTTOM 102
+#endif
+Developing for APLITE and BASALT
+I&#39;ve got an origial (kickstarter) Pebble and a Pebble Time. I&#39;m used to deploying to devices (rather than emulators, though I&#39;ll come on to this).
+However, I found (after a lot of failure) that you can&#39;t develop for more than one Pebble device at a time. Importantly, on the phone Pebble app (be it Pebble or Pebble Time) you can only have one watch enabled for development.
+The workaround is to keep switching between the two apps, flipping the developer checkbox.
+Or...use the emulator on the command line. It&#39;s pretty solid, and conviently you can have both the BASALT and APLITE running side by side (as you seen from my shots above).
+UI tweaks
+Since my Rest app is designed to be used in the gym (I use the gym 4 times a week and use the Rest app all the time), there&#39;s a few important requirements:
+
+Clear to read (quickly)
+Show the time
+
+Being clear to read was the motivation behind using colour in my app. Now I can quickly see if I&#39;m over or not based on colour.
+However, BASALT apps all run in fullscreen - so you lose the time, which is useful to me because I need to know if my gym session is running over or not. Thankfully the developer docs include putting the time back in on their migration guide.
+What I needed to specifically do was ensure the StatusBarLayer was under my ActionBarLayer, otherwise you get this effect, where the StatusBarLayer cuts into the menu:
+
+The fix is to simply ensure the ActionBarLayer is drawn after the StatusBarLayer.
+Get it
+So if you have a Pebble Time, or Pebble OG, and you use the gym, you can get the free app here - and don&#39;t forget to heart it!]]></description><content:encoded><![CDATA[
+<p>Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.</p>
+<p>In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).</p>
+<h2>Layout</h2>
+<p>With my app, I have a <code>ActionBarLayer</code> on the right with arrows and <code>TextLayer</code>s with the second countdown. I noticed when deploying to BASALT, the position was off, and in fact everything was closer.</p>
+<p>I did some simple repositioning, but you can see from the screenshot below that the <code>ActionBarLayer</code> is actually slightly wider:</p>
+<p><img src="/images/pebble-comparison1.png" alt="APLITE vs BASALT side-by-side"></p>
+<p>This is emphasised when the count is actually going down:</p>
+<p><img src="/images/pebble-comparison2.png" alt="APLITE vs BASALT side-by-side"></p>
+<p>This is due to BASALT being &quot;full screen&quot; by default. So to compensate for this, I need to do conditional positioning on the elements. For the position of the <code>TextLayer</code>, I&#39;m using <code>134 - ACTION_BAR_WIDTH</code> (which is 30 for BASALT and 20 for APLITE):</p>
+<pre><code class="language-cpp">s_textlayer_120 = text_layer_create(GRect(0, 12, 134 - ACTION_BAR_WIDTH, 42));</code></pre>
+<p>To get the top positioning on the <code>TextLayer</code>s I couldn&#39;t seem to calculate the values correctly, so I had a conditional set of defines:</p>
+<pre><code class="language-cpp">#ifdef PBL_PLATFORM_BASALT
+  #define MENU_TOP 16
+  #define MENU_MIDDLE 64
+  #define MENU_BOTTOM 112
+#else
+  #define MENU_TOP 6
+  #define MENU_MIDDLE 54
+  #define MENU_BOTTOM 102
+#endif</code></pre>
+<h2>Developing for APLITE <em>and</em> BASALT</h2>
+<p>I&#39;ve got an origial (kickstarter) Pebble and a Pebble Time. I&#39;m used to deploying to devices (rather than emulators, though I&#39;ll come on to this).</p>
+<p>However, I found (after a <em>lot</em> of failure) that you can&#39;t develop for more than one Pebble device at a time. Importantly, on the phone Pebble app (be it Pebble or Pebble Time) <strong>you can only have one watch enabled for development</strong>.</p>
+<p>The workaround is to keep switching between the two apps, flipping the developer checkbox.</p>
+<p>Or...use the emulator on the command line. It&#39;s pretty solid, and conviently you can have both the BASALT <em>and</em> APLITE running side by side (as you seen from my shots above).</p>
+<h2>UI tweaks</h2>
+<p>Since my Rest app is designed to be used in the gym (I use the gym 4 times a week and use the Rest app <em>all</em> the time), there&#39;s a few important requirements:</p>
+<ul>
+<li>Clear to read (quickly)</li>
+<li>Show the time</li>
+</ul>
+<p>Being clear to read was the motivation behind using colour in my app. Now I can quickly see if I&#39;m over or not based on colour.</p>
+<p>However, BASALT apps all run in fullscreen - so you lose the time, which is useful to me because I need to know if my gym session is running over or not. Thankfully the developer docs include putting the time back in on their <a href="http://developer.getpebble.com/sdk/migration-guide/#using-the-status-bar">migration guide</a>.</p>
+<p>What I needed to specifically do was ensure the <code>StatusBarLayer</code> was <em>under</em> my <code>ActionBarLayer</code>, otherwise you get this effect, where the <code>StatusBarLayer</code> cuts into the menu:</p>
+<p><img src="/images/pebble-status-layer.png" alt="BASALT status bar layer order"></p>
+<p>The fix is to simply ensure the <code>ActionBarLayer</code> is drawn <em>after</em> the <code>StatusBarLayer</code>.</p>
+<h2>Get it</h2>
+<p>So if you have a Pebble Time, or Pebble OG, and you use the gym, you can get the <a href="http://apps.getpebble.com/en_US/application/53ff41ed8cdf37902b000050">free app here</a> - and don&#39;t forget to <em>heart</em> it!</p>
+]]></content:encoded></item><item><title>My Pebble</title><guid isPermaLink="false">my-pebble</guid><link>http://remysharp.com/2015/07/22/my-pebble</link><pubDate>Wed, 22 Jul 2015 15:37:23 +0000</pubDate><description><![CDATA[Back in April 2012 I joined the bandwagon and backed the hyped kickerstarter campaign for the very first Pebble.
 After waiting way way too long and abandoning my original choice for an orange watch I was forced to choose the black, only to get my hands on it earlier.
 I also hadn&#39;t worn a watch in well over 15 years. I&#39;m not 100% what prompted me to buy the watch. Perhaps the promise of an open source platform...?
 When it fin-nal-ly arrived, what I noticed immediately was that it was massive on my wrist. The strap was particularly large and never really felt snug.
@@ -1052,48 +1128,4 @@ We have to be VATMOSS ready by 1-Jan 2015. That&#39;s just over 2 weeks away.]]>
 <p>I&#39;m reviewing Quaderno right now, but the more I look the more I feel like our bespoke solution is the right way to go.</p>
 <p>However, this does leave a very sour taste in my mouth for running more business online, and it&#39;s further support that the UK government does not care anywhere near as much as it should, about entrepreneurship in the UK.</p>
 <p>This legislation is killing business in the UK.</p>
-]]></content:encoded></item><item><title>To You</title><guid isPermaLink="false">to-you</guid><link>http://remysharp.com/2014/12/06/to-you</link><pubDate>Sat, 06 Dec 2014 9:00:00 +0000</pubDate><description><![CDATA[This makes my final post on The Pastry Box. Though its only been six posts, its felt like something different. Indeed early on I realised it was somewhere different that I could experiment with content.
-Due to what was going on in my life at the time, the posts quickly became very personal, and I felt comfortable enough to share some of my darker thoughts. That hasn&#39;t gone away, and people have been remarkably kind in their response. I hope to be strong enough to bring this directly to my own blog (though of course all my content is cross posted to my own blog).
-For my final post I wanted to end on something I&#39;ve been wanting to write about for years. In fact, I started writing a version of this post in 2008, but the text was long lost.
-I wanted to acknowledge my wife, best friend, mother of my children and partner in all things: Julie.
-We have a few anniversaries that we keep, but today, the 6th December would mark the day that we started &quot;going out&quot;, dating, courting, whatever you&#39;d like to call it, 18 years ago.
-18 years marks a special year too, we&#39;ve now been together longer in our lives than the time that we&#39;ve not been together. Our halfway mark. I&#39;m pretty damn proud to be her husband.
-Julie&#39;s responsible for all kinds of huge things throughout my life, and has even positively impacted the web community that I work inside of.
-Let me indulge in some history
-We got together back in 6th form (when we were just 18 in 1996), and both failed to get into our first choice universities. We had expected to separate our fledgling romance when we headed off, but as fate would have it, we were to go to the same university: Kingston upon Thames.
-We&#39;d spend the next few years joined at the hip. Spending all hours of the days together - often me bunking off my classes to hang out with her.
-Then it all changed when I landed a sandwich year work placement - we went from spending 247 together, to me spending pretty much 9 &#39;til 9 with my boss and very little time with Julie.
-That didn&#39;t stop us. Julie supported me, in amazing ways. It was pretty much a long distance relationship whilst living together.
-But it wasn&#39;t all work. We&#39;d spend uncountable nights getting drunk and being silly together. Watching movies together and staying up late to watch just one more episode of 24.
-Of course I wanted to marry my best friend. I proposed, at a carefully planned sunset on the beach on a chilly January back in 2001. Her words (in an urgent unknowing): &quot;Urm, uh, uh, I don&#39;t know...um...yes? I guess?!&quot;.
-We&#39;d marry in 2004. We&#39;d spend 3 months in Whistler on sabbatical together. We&#39;d move to Brighton. We&#39;d do regular bank holiday super-epic pub crawls. We&#39;d buy a house.
-We&#39;d go through the most terrible thing, and we&#39;d survive. Together.
-And now...
-And now we have Ellis and Seren, and somehow our family is complete in spite of losing Tia, she&#39;s part of that family too.
-For some reason I was lucky enough to find the person that makes me whole from such a young age, and some 18 years later Julie&#39;s still my best friend and the person whose life I always want to share.
-To Julie: I love you. Always. From the days that we were kids to the days when we&#39;re old and grey.
-
-Reposted from The Pastry Box Project]]></description><content:encoded><![CDATA[
-<p>This makes my final post on The Pastry Box. Though its only been six posts, its felt like something different. Indeed early on I realised it was somewhere different that I could experiment with content.</p>
-<p>Due to what was going on in my life at the time, the posts quickly became very personal, and I felt comfortable enough to share some of my darker thoughts. That hasn&#39;t gone away, and people have been remarkably kind in their response. I hope to be strong enough to bring this directly to my own blog (though of course all my content is cross posted to my own blog).</p>
-<p>For my final post I wanted to end on something I&#39;ve been wanting to write about for years. In fact, I started writing a version of this post in 2008, but the text was long lost.</p>
-<p>I wanted to acknowledge my wife, best friend, mother of my children and partner in all things: Julie.</p>
-<p>We have a few anniversaries that we keep, but today, the 6th December would mark the day that we started &quot;going out&quot;, dating, courting, whatever you&#39;d like to call it, 18 years ago.</p>
-<p>18 years marks a special year too, we&#39;ve now been together longer in our lives than the time that we&#39;ve not been together. Our halfway mark. I&#39;m pretty damn proud to be her husband.</p>
-<p>Julie&#39;s responsible for all kinds of huge things throughout my life, and has even positively impacted the web community that I work inside of.</p>
-<h2>Let me indulge in some history</h2>
-<p>We got together back in 6th form (when we were just 18 in 1996), and <em>both failed</em> to get into our first choice universities. We had expected to separate our fledgling romance when we headed off, but as fate would have it, we were to go to the same university: Kingston upon Thames.</p>
-<p>We&#39;d spend the next few years joined at the hip. Spending all hours of the days together - often me bunking off my classes to hang out with her.</p>
-<p>Then it all changed when I landed a sandwich year work placement - we went from spending 247 together, to me spending pretty much 9 &#39;til 9 with my boss and very little time with Julie.</p>
-<p>That didn&#39;t stop us. Julie supported me, in amazing ways. It was pretty much a long distance relationship whilst living together.</p>
-<p>But it wasn&#39;t all work. We&#39;d spend uncountable nights getting drunk and being silly together. Watching movies together and staying up late to watch <em>just one more</em> episode of 24.</p>
-<p>Of course I wanted to marry my best friend. I proposed, at a carefully planned sunset on the beach on a chilly January back in 2001. Her words (in an urgent unknowing): &quot;Urm, uh, uh, I don&#39;t know...um...yes? I guess?!&quot;.</p>
-<p>We&#39;d marry in 2004. We&#39;d spend 3 months in Whistler on sabbatical together. We&#39;d move to Brighton. We&#39;d do regular bank holiday super-epic pub crawls. We&#39;d buy a house.</p>
-<p>We&#39;d go through the most terrible thing, and we&#39;d survive. Together.</p>
-<h2>And now...</h2>
-<p>And now we have Ellis and Seren, and <em>somehow</em> our family is complete in spite of losing Tia, she&#39;s part of that family too.</p>
-<p>For some reason I was lucky enough to find the person that makes me whole from such a young age, and some 18 years later Julie&#39;s <em>still</em> my best friend and the person whose life I always want to share.</p>
-<p>To Julie: I love you. Always. From the days that we were kids to the days when we&#39;re old and grey.</p>
-<p><img src="/images/us-1996.jpg" alt="Remy &amp; Julie"></p>
-<p>Reposted from <a href="https://the-pastry-box-project.net/remy-sharp/2014-december-6">The Pastry Box Project</a></p>
 ]]></content:encoded></item></channel></rss>
