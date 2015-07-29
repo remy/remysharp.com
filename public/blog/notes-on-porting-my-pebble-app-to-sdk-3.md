@@ -4,6 +4,8 @@ Late last night I decided to update my Rest pebble app to make use of the colour
 
 In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).
 
+<!--more-->
+
 ## Layout
 
 With my app, I have a `ActionBarLayer` on the right with arrows and `TextLayer`s with the second countdown. I noticed when deploying to BASALT, the position was off, and in fact everything was closer.
