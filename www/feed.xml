@@ -21,10 +21,10 @@ In particular, I wanted the resting time to show in green and overtime to show a
   #define MENU_BOTTOM 102
 #endif</code></pre>
 <h2>Developing for APLITE <em>and</em> BASALT</h2>
-<p>I&#39;ve got an origial (kickstarter) Pebble and a Pebble Time. I&#39;m used to deploying to devices (rather than emulators, though I&#39;ll come on to this).</p>
+<p>I&#39;ve got an original (kickstarter) Pebble and a Pebble Time. I&#39;m used to deploying to devices (rather than emulators, though I&#39;ll come on to this).</p>
 <p>However, I found (after a <em>lot</em> of failure) that you can&#39;t develop for more than one Pebble device at a time. Importantly, on the phone Pebble app (be it Pebble or Pebble Time) <strong>you can only have one watch enabled for development</strong>.</p>
 <p>The workaround is to keep switching between the two apps, flipping the developer checkbox.</p>
-<p>Or...use the emulator on the command line. It&#39;s pretty solid, and conviently you can have both the BASALT <em>and</em> APLITE running side by side (as you seen from my shots above).</p>
+<p>Or...use the emulator on the command line. It&#39;s pretty solid, and conveniently you can have both the BASALT <em>and</em> APLITE running side by side (as you seen from my shots above).</p>
 <h2>UI tweaks</h2>
 <p>Since my Rest app is designed to be used in the gym (I use the gym 4 times a week and use the Rest app <em>all</em> the time), there&#39;s a few important requirements:</p>
 <ul>
