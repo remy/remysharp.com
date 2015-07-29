@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Notes on porting my Pebble app to SDK3</title><meta name="description" content="Notes on porting my Pebble app to SDK3"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.27"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.27"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="drafts-notes-on-porting-my-pebble-app-to-sdk-3-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2015/07/22/my-pebble" title="My Pebble">Latest post</a></li></ul></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 29-Jul 2015</div><article class="post"><h1 class="title"><a href="/drafts/notes-on-porting-my-pebble-app-to-sdk-3">Notes on porting my Pebble app to SDK3</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/notes-on-porting-my-pebble-app-to-sdk-3.md">(edit)</a></small></h1><div class="post-content">
+<p>Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.</p>
+<p>In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).</p>
+<h2>Layout</h2>
+<p>With my app, I have a <code>ActionBarLayer</code> on the right with arrows and <code>TextLayer</code>s with the second countdown. I noticed when deploying to BASALT, the position was off, and in fact everything was closer.</p>
+<p>I did some simple repositioning, but you can see from the screenshot below that the <code>ActionBarLayer</code> is actually slightly wider:</p>
+<p><img src="/images/pebble-comparison1.png" alt="APLITE vs BASALT side-by-side"></p>
+<p>This is emphasised when the count is actually going down:</p>
+<p><img src="/images/pebble-comparison2.png" alt="APLITE vs BASALT side-by-side"></p>
+<p>This is due to BASALT being &quot;full screen&quot; by default. So to compensate for this, I need to do conditional positioning on the elements. For the position of the <code>TextLayer</code>, I&#39;m using <code>134 - ACTION_BAR_WIDTH</code> (which is 30 for BASALT and 20 for APLITE):</p>
+<pre><code class="language-cpp">s_textlayer_120 = text_layer_create(GRect(0, 12, 134 - ACTION_BAR_WIDTH, 42));</code></pre>
+<p>To get the top positioning on the <code>TextLayer</code>s I couldn&#39;t seem to calculate the values correctly, so I had a conditional set of defines:</p>
+<pre><code class="language-cpp">#ifdef PBL_PLATFORM_BASALT
+  #define MENU_TOP 16
+  #define MENU_MIDDLE 64
+  #define MENU_BOTTOM 112
+#else
+  #define MENU_TOP 6
+  #define MENU_MIDDLE 54
+  #define MENU_BOTTOM 102
+#endif</code></pre>
+<h2>Developing for APLITE <em>and</em> BASALT</h2>
+<p>I&#39;ve got an origial (kickstarter) Pebble and a Pebble Time. I&#39;m used to deploying to devices (rather than emulators, though I&#39;ll come on to this).</p>
+<p>However, I found (after a <em>lot</em> of failure) that you can&#39;t develop for more than one Pebble device at a time. Importantly, on the phone Pebble app (be it Pebble or Pebble Time) <strong>you can only have one watch enabled for development</strong>.</p>
+<p>The workaround is to keep switching between the two apps, flipping the developer checkbox.</p>
+<p>Or...use the emulator on the command line. It&#39;s pretty solid, and conviently you can have both the BASALT <em>and</em> APLITE running side by side (as you seen from my shots above).</p>
+<h2>UI tweaks</h2>
+<p>Since my Rest app is designed to be used in the gym (I use the gym 4 times a week and use the Rest app <em>all</em> the time), there&#39;s a few important requirements:</p>
+<ul>
+<li>Clear to read (quickly)</li>
+<li>Show the time</li>
+</ul>
+<p>Being clear to read was the motivation behind using colour in my app. Now I can quickly see if I&#39;m over or not based on colour.</p>
+<p>However, BASALT apps all run in fullscreen - so you lose the time, which is useful to me because I need to know if my gym session is running over or not. Thankfully the developer docs include putting the time back in on their <a href="http://developer.getpebble.com/sdk/migration-guide/#using-the-status-bar">migration guide</a>.</p>
+<p>What I needed to specifically do was ensure the <code>StatusBarLayer</code> was <em>under</em> my <code>ActionBarLayer</code>, otherwise you get this effect, where the <code>StatusBarLayer</code> cuts into the menu:</p>
+<p><img src="/images/pebble-status-layer.png" alt="BASALT status bar layer order"></p>
+<p>The fix is to simply ensure the <code>ActionBarLayer</code> is drawn <em>after</em> the <code>StatusBarLayer</code>.</p>
+<h2>Get it</h2>
+<p>So if you have a Pebble Time, or Pebble OG, and you use the gym, you can get the <a href="http://apps.getpebble.com/en_US/application/53ff41ed8cdf37902b000050">free app here</a> - and don&#39;t forget to <em>heart</em> it!</p>
+<p class="update">Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.</p></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.27"></script><script src="/js/index.js?2.27"></script><!--  
+  
+ Carved up by hand using Harp and a shit load of hacking.
+  
+  Also, this:
+  
+  
+  
+                       \_            /;              _.._
+                       `\~--.._     //'            ,(+=\\\\
+                        `//////\  \\/;'             /~ (\\\\
+                          ~/////\~\`)'             /;   ))))
+                              `~'  |              ((`~/((((\
+                              ;'_\'\             /'))   )))))
+                             /~/ '" "'     _.  /'/\_ /^\`((( \
+                            `\/'       _.-~/--/ (  =(   | ,  |
+                                    _/~\_)_}___/^\/~`\.__\|==|
+                                   /uUUU)        )        |  |
+                                  (   / |      _-=o|\__ /'/~ \
+                                  ' /'  |     /(((((\`\(  |~\/
+                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
+                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+                         (/-(/-(/-(/-(/-'
+  
+  
+  
+     – Remy
+  
+  --><!-- Env: production - static files--></body></html>
