@@ -1,4 +1,59 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Wed, 29 Jul 2015 14:32:03 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Notes on porting my Pebble app to SDK3</title><guid isPermaLink="false">notes-on-porting-my-pebble-app-to-sdk-3</guid><link>http://remysharp.com/2015/07/29/notes-on-porting-my-pebble-app-to-sdk-3</link><pubDate>Wed, 29 Jul 2015 14:32:03 +0000</pubDate><description><![CDATA[Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 10 Aug 2015 12:59:58 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>I thought paypal was better...</title><guid isPermaLink="false">i-thought-paypal-was-better</guid><link>http://remysharp.com/2015/08/10/i-thought-paypal-was-better</link><pubDate>Mon, 10 Aug 2015 12:59:58 +0000</pubDate><description><![CDATA[We&#39;ve been using PayPal for ffconf since 2009. The first year it took the full 6 months of sale to sell ~200 tickets. In 2010 it took 3 months to sell 283 tickets. 2011, 4 days - and that was the first of the trouble. 2012 to 2015, it&#39;s taken under 10 minutes.]]></description><content:encoded><![CDATA[
+<p>We&#39;ve been using PayPal for <a href="http://ffconf.org">ffconf</a> since 2009. The first year it took the full 6 months of sale to sell ~200 tickets. In 2010 it took 3 months to sell 283 tickets. 2011, 4 days - and that was the first of the trouble. 2012 to 2015, it&#39;s taken under 10 minutes.</p>
+<h2>The first trouble</h2>
+<p>The troubles that <a href="http://www.creativebloq.com/netmag/burned-paypal-9126093">PayPal had with effectively killing conferences was well documented</a>.</p>
+<p>PayPal had &quot;limited&quot; our funds the first year (2011). There was an &quot;unexpected spike&quot; in our transactions which caused a red flag. Fair enough. The funds were locked until the event was over in November 2011 (IIRC we&#39;d moved most of the funds out quickly and they were only holding around £6,000) - but it&#39;s important to note that Julie and I have always bank-rolled the year&#39;s event with the previous year&#39;s profits.</p>
+<p>Specifically, we know that the event covers our costs (both expenses like the venue, and our operating costs). So we can afford to pay the venue ahead of time without the funds from the tickets.</p>
+<h2>A hero in the midst</h2>
+<p>In 2013 it happened again, and somehow <a href="https://twitter.com/billwscott">Bill Scott</a> got wind of our troubles and explained that he was carrying the message back to the very top dogs (at the time a new CEO was in place and working hard to change PayPal&#39;s reputation).</p>
+<p>He did an amazing job. Something had shifted in PayPal and they (the company) appeared to understand recurring events and how transactions would work.</p>
+<p>2014&#39;s tickets sold and there wasn&#39;t a peep from PayPal at all. It seems like it was all good.</p>
+<p>But...</p>
+<h2>2015 and 1 month after selling out</h2>
+<p>We released tickets for ffconf 2015 a month ago. We sold out in (two batched totalling) 7 minutes.</p>
+<p>As usual, I removed <em>some</em> funds from PayPal, and left around £15,000 for any refunds and anticipation of any queries from PayPal (old habits and all).</p>
+<p>And here&#39;s when it goes all wrong...</p>
+<p>This account is so there&#39;s something written about how it&#39;s going wrong, because I&#39;m having <em>a lot</em> of trouble getting information into PayPal directly.</p>
+<h2>Going wrong.</h2>
+<p>The timeline:</p>
+<ul>
+<li>I get a phone call (good) at 10am - but no information, just that &quot;John&quot; is calling from PayPal to speak to me, and that they&#39;ll email.</li>
+<li>I get an email, asking for the following from me:</li>
+</ul>
+<blockquote>
+<p>Your account has recently been reviewed by our merchant team due to the following:
+ - Increase in volumes processed</p>
+<p>We tried to call you on 10/08/2015, but we couldn&#39;t reach you. To allow time to review this in more detail, we&#39;ve temporarily limited what you can do with your account until you submit the information you need to provide and take the actions listed.</p>
+<p>Check that you&#39;ve answered all questions and provided all information we ask for to restore your account as soon as possible.</p>
+<ul>
+<li>When is the event taking place?</li>
+<li>What kind of service do you provide? (accommodation, registration, tours, etc)</li>
+<li>Is the event organised by you or you are acting as intermediary between the buyers and the event organiser? (if so, please provide us with the contract with the event organiser).</li>
+<li>How many tickets are being sold? How many tickets are you planning to sell via PayPal?</li>
+<li>What is the average ticket cost?</li>
+<li>Have you previously hosted events? (if yes, how many years have you hosted these events?)</li>
+<li>Are the proceeds from Ticket Sales required as capital to run the event?</li>
+<li>If so, can you provide an Event expense List and projected payment dates for each expense? Specifically, details on the expenses that need to be made in advance of the event.</li>
+<li>Do you have a venue booked for the event? Need confirmation for the venue booking? Confirm capacity of the venue?</li>
+<li>Do you have insurance in case of event being cancelled? Can they provide details of that insurance? (PayPal may be added as beneficiary to this insurance as a partial mitigant).</li>
+<li>Expected Total Payment Volume to receive via PayPal? Is PayPal the only processor of this event? If no, what is the % processed through PayPal.</li>
+<li>How often are you expecting to conduct these events?</li>
+<li>What is the cancellation policy for this event?</li>
+</ul>
+<p>Once we receive the information, we aim to complete our review and respond to you within 72 hours.</p>
+</blockquote>
+<ul>
+<li>I reply, mostly to say I&#39;ve given this information before, but include some other points...</li>
+<li>The email <strong>bounces back</strong>... <em>deep breath</em></li>
+<li>I visit PayPal.com - it doesn&#39;t say <em>how much</em> my account is limited by, just that I need to &quot;resolve&quot; the &quot;check your email for more information&quot;</li>
+<li>I try to upload the text email I replied with...</li>
+<li>&quot;Send files&quot; won&#39;t disable, I notice that I can only send PDF, PNG or JPG...</li>
+<li>I print my email reply to a PDF, <em>then</em> upload that...</li>
+</ul>
+<p>Now I just wait. God knows how they&#39;ll get in touch, or whether they will again. I&#39;ve provided all the information about our transactions in previous years, and what annoys me the most is that the spike in our transactions <strong>is consistent with previous years</strong>.</p>
+<p>Honestly, I don&#39;t really care what they do. I&#39;m expecting the funds to be held until after the event has finished (or 2 months after...which is just as annoying), after which I&#39;ll be expected to somehow prove that people didn&#39;t want a refund <em>post</em> event.</p>
+<p>So, yeah, I thought PayPal was better... Filing under &quot;Funsies&quot;.</p>
+]]></content:encoded></item><item><title>Notes on porting my Pebble app to SDK3</title><guid isPermaLink="false">notes-on-porting-my-pebble-app-to-sdk-3</guid><link>http://remysharp.com/2015/07/29/notes-on-porting-my-pebble-app-to-sdk-3</link><pubDate>Wed, 29 Jul 2015 14:32:03 +0000</pubDate><description><![CDATA[Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.
 In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).]]></description><content:encoded><![CDATA[
 <p>Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.</p>
 <p>In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).</p>
@@ -1051,45 +1106,4 @@ There was a recent clarification allowing companies to use one of five presumpti
 <p>Therefore: if you have the card country origin, you <strong>don&#39;t need anything else</strong>.</p>
 <hr>
 <p>I&#39;ve no idea how, but I&#39;d love to see this proposed to the HMRC and HM Treasury groups that are discussing these problems behind closed doors.</p>
-]]></content:encoded></item><item><title>VATMOSS</title><guid isPermaLink="false">vatmoss</guid><link>http://remysharp.com/2014/12/16/vatmoss</link><pubDate>Tue, 16 Dec 2014 11:00:00 +0000</pubDate><description><![CDATA[If you want a good foundation of understand for VATMOSS, then I highly recommend reading Rachel Andrew&#39;s posts.
-That said, having read as much as I can around the web, I still don&#39;t feel like I have a good handle on this thing, but I&#39;m posting this, partly to flesh out my thoughts, help others in the same situation, and probably rant.
-We have to be VATMOSS ready by 1-Jan 2015. That&#39;s just over 2 weeks away.]]></description><content:encoded><![CDATA[
-<p>If you want a good foundation of understand for VATMOSS, then I highly recommend reading <a href="http://rachelandrew.co.uk/archives/tag/vat">Rachel Andrew&#39;s posts</a>.</p>
-<p>That said, having read as much as I can around the web, I still don&#39;t feel like I have a good handle on this thing, but I&#39;m posting this, partly to flesh out my thoughts, help others in the same situation, and probably rant.</p>
-<p>We have to be VATMOSS ready by 1-Jan 2015. That&#39;s just over 2 weeks away.</p>
-<p><em>Please note: this is barely edited, and feels a bit &#39;scare-monger-y&#39; (sorry) and I would <strong>strongly encourage comments</strong>, corrections, updates, etc in the comments.</em></p>
-<h2>What is VATMOSS</h2>
-<p>In my own words, and my layman understanding:</p>
-<p>Being in the UK and VAT registered, today I need to charge 20% VAT to all non VAT registered EU customers. Outside the EU, there&#39;s no VAT applied. If the customer is VAT registered, then I don&#39;t apply VAT.</p>
-<p>This changes with VATMOSS, but only for those EU customers. Instead of charging UK 20% VAT, I must charge the individual their local VAT. So if the customer is German, I charge them 19% VAT.</p>
-<p><strong>This logic will apply to all businesses running in the EU.</strong></p>
-<h2>Technical considerations</h2>
-<p>There&#39;s a list of important technical items I need to check off to make sure I&#39;m compliant:</p>
-<ul>
-<li>Collect <em>two</em> pieces of non-conflicting information that proves which EU member state the customer is in. This can be IP address (with country lookup), or bank country, or address, and so on. I believe Stripe has all this information for me and I don&#39;t need to collect anything extra.</li>
-<li>I need an up to date list of all the VAT rates for EU states. <a href="http://jsonvat.com">http://jsonvat.com</a> is a good example of what I need, but it&#39;s maintained by an individual so I intend to use a copy of the file, and try, somehow, to manually stay on top of live updates via <a href="http://www.vatlive.com/vat-rates/european-vat-rates/eu-vat-rates/">VAT live</a>. Far from ideal.</li>
-<li>Since I have users that are subscribed to a subscription model, I need to shift them all off the existing 20% fixed VAT subscription and move them to the new system of dynamic VAT rates (and I&#39;ll email all those individuals to attempt to explain).</li>
-<li>I&#39;m using <a href="https://stripe.com">Stripe</a> for payment processing, so we&#39;re having to upgrade with the following logic:<ol>
-<li>Add an addition invoice item to their initial subscription that adds VAT.</li>
-<li>When the <code>invoice.created</code> webhook comes in, only if the <code>data.paid</code> is <code>false</code> then add the VAT as an addition invoice item.</li>
-</ol>
-</li>
-</ul>
-<h2>Issues</h2>
-<ol>
-<li>I don&#39;t see any way to retrospectively ask my existing subscriptions for more information about their sign up. It&#39;s technically possibly that I capture their IP address in our application logs, and manually add them to our Stripe customers, but that&#39;s a messy process.</li>
-<li>I read that the invoices have to adhere to the county&#39;s regulations. I&#39;ve no idea what that is for all the countries. It was hard enough finding a list of the rates, let alone the invoice requirements.</li>
-<li>We don&#39;t currently send out any emails from JS Bin on subscription renewal - I suspect that&#39;s a weak spot and we&#39;ll need to implement that.</li>
-<li>A way to report for the EU MOSS return...sigh.</li>
-</ol>
-<p>My biggest issue, and the one that&#39;s actually killing business in the UK, is the admin overhead of this change outweighs the benefits.</p>
-<p>I&#39;ve considered blocking EU members from subscribing (and therefore unsubscribing existing EU customers), but some &quot;legislation (eg anti discrimination) may apply&quot;.</p>
-<p>I&#39;ve considered just killing the business side of JS Bin because this whole process is so disheartening.</p>
-<p>I&#39;ve joked about charging a flat 27% VAT (as this is the highest) and intentionally reporting the wrong TAX to the VAT office. Historically if they owe you money, the VAT office is horrible to work with (whereas if you owe them money, they&#39;re particularly efficient), so maybe this is a clean simple &quot;solution&quot;.</p>
-<p>I&#39;ve looked at <a href="http://quaderno.io">Quaderno</a> and <a href="http://www.taxamo.com/">Taxamo</a>, but the technical implementation isn&#39;t our issue - it&#39;s the business admin. I&#39;m also wary of changing our existing UX for the upgrade process, asking for a tonne more information seems overkill and unnecessary, and only required to satisfy these over the top legislations.</p>
-<h2>In closing</h2>
-<p>VATMOSS is a total mess. It&#39;s even more concerning that the details haven&#39;t <a href="https://www.enterprisenation.com/blog/posts/exclusive-hmrc-update-on-vat-moss">even been fleshed</a> out yet with 2 weeks to go (notice the post says they&#39;re going to post detailed guidance...).</p>
-<p>I&#39;m reviewing Quaderno right now, but the more I look the more I feel like our bespoke solution is the right way to go.</p>
-<p>However, this does leave a very sour taste in my mouth for running more business online, and it&#39;s further support that the UK government does not care anywhere near as much as it should, about entrepreneurship in the UK.</p>
-<p>This legislation is killing business in the UK.</p>
 ]]></content:encoded></item></channel></rss>
