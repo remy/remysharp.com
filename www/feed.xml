@@ -14,7 +14,7 @@
 <p>As usual, I removed <em>some</em> funds from PayPal, and left around £15,000 for any refunds and anticipation of any queries from PayPal (old habits and all).</p>
 <p>And here&#39;s when it goes all wrong...</p>
 <p>This account is so there&#39;s something written about how it&#39;s going wrong, because I&#39;m having <em>a lot</em> of trouble getting information into PayPal directly.</p>
-<h2>Going wrong.</h2>
+<h2>Going wrong</h2>
 <p>The timeline:</p>
 <ul>
 <li>I get a phone call (good) at 10am - but no information, just that &quot;John&quot; is calling from PayPal to speak to me, and that they&#39;ll email.</li>
@@ -53,6 +53,9 @@
 <p>Now I just wait. God knows how they&#39;ll get in touch, or whether they will again. I&#39;ve provided all the information about our transactions in previous years, and what annoys me the most is that the spike in our transactions <strong>is consistent with previous years</strong>.</p>
 <p>Honestly, I don&#39;t really care what they do. I&#39;m expecting the funds to be held until after the event has finished (or 2 months after...which is just as annoying), after which I&#39;ll be expected to somehow prove that people didn&#39;t want a refund <em>post</em> event.</p>
 <p>So, yeah, I thought PayPal was better... Filing under &quot;Funsies&quot;.</p>
+<div class="update">
+<strong>Updated 2015-08-11:</strong> the account limit has been removed. I&#39;m not 100% sure why, since the only information I provided was a slightly ranty email. It&#39;s quite possibly <em>this</em> blog post that helped, or not. I&#39;m not entirely sure!.
+</div>
 ]]></content:encoded></item><item><title>Notes on porting my Pebble app to SDK3</title><guid isPermaLink="false">notes-on-porting-my-pebble-app-to-sdk-3</guid><link>http://remysharp.com/2015/07/29/notes-on-porting-my-pebble-app-to-sdk-3</link><pubDate>Wed, 29 Jul 2015 14:32:03 +0000</pubDate><description><![CDATA[Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.
 In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).]]></description><content:encoded><![CDATA[
 <p>Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.</p>
