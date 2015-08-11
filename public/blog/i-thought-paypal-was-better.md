@@ -32,7 +32,7 @@ And here's when it goes all wrong...
 
 This account is so there's something written about how it's going wrong, because I'm having *a lot* of trouble getting information into PayPal directly.
 
-## Going wrong.
+## Going wrong
 
 The timeline:
 
@@ -74,3 +74,7 @@ Now I just wait. God knows how they'll get in touch, or whether they will again.
 Honestly, I don't really care what they do. I'm expecting the funds to be held until after the event has finished (or 2 months after...which is just as annoying), after which I'll be expected to somehow prove that people didn't want a refund *post* event.
 
 So, yeah, I thought PayPal was better... Filing under "Funsies".
+
+<div class="update">
+**Updated 2015-08-11:** the account limit has been removed. I'm not 100% sure why, since the only information I provided was a slightly ranty email. It's quite possibly *this* blog post that helped, or not. I'm not entirely sure!.
+</div>

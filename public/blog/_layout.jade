@@ -17,7 +17,7 @@ block content
         - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
         != yield
 
-        p.follow You should follow me on Twitter <a href="http://twitter.com/rem">here</a> <span class="note">I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span>
+        p.follow Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span>
 
       if environment == "production"
         .comments
