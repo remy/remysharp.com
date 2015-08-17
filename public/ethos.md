@@ -32,10 +32,22 @@ I've [written before](/2014/10/27/motivation) about how Emma Watson's UN address
 
 [Via United Nations on YouTube](https://www.youtube.com/watch?v=gkjW9PZBRfk) 22 Sep 2014
 
+---
+
 ## Explaining privilege
 
 ![On privilege](/images/ethos/privilege.jpg)
 
 [Via twitter](https://twitter.com/klasskramp/status/441229539939598336) 5 March 2014
+
+---
+
+## Find the right path for *ourselves*
+
+This is such a good speech on having the right to choose your own path.
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/oMnxPsQanrs?rel=0" frameborder="0" allowfullscreen></iframe>
+
+[Via femisphere, point 15](http://feminspire.com/15-ways-leslie-knope-from-parks-and-recreation-inspired-feminists-everywhere/) 17 Aug 2015
 
 ---
