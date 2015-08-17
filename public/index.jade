@@ -33,7 +33,7 @@ article.post.lists
       each post in recent
         li
           a(href="#{ public.blog._data[post.slug].relative }") #{ public.blog._data[post.slug].title }
-          small &nbsp;updated #{ moment(post.date).format('D-MMM YYYY') }
+          small &nbsp; updated #{ moment(post.date).format('D-MMM YYYY') }
 
 article.post.lists
   header.post-header
