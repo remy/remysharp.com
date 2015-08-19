@@ -230,5 +230,14 @@
     "tags": [
       "web"
     ]
+  },
+  "using-travis-with-private-npm-deps": {
+    "title": "Using travis with private npm deps",
+    "date": "2015-08-18 19:17:31",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }
