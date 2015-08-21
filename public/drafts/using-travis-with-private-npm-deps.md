@@ -2,7 +2,7 @@
 
 I've recently been working on a project that requires [privately scoped npm modules](https://www.npmjs.com/private-modules). The problem I encountered was: when Travis ran tests that depended on @scoped modules, it would fail:
 
-```nohighlight
+```
 npm ERR! 404 Not found : @remy/super-awesome-private-mod
 ```
 
@@ -16,7 +16,7 @@ If you're using [semantic-release cli](https://github.com/semantic-release/cli) 
 
 If not, you'll need to find your npm token. This is found in your home directory, in the `.npmrc` file. The token is everything after `_authToken=`. Your file should contain a line like this:
 
-```nohighlight
+```
 //registry.npmjs.org/:_authToken=00000000-0000-0000-0000-000000000000
 ```
 
@@ -26,7 +26,7 @@ Note that where I've put zeros, you'll see letters and numbers. Once you've copi
 
 Then under the "Environment Values" add a new value (keep "display value in build log" off):
 
-```nohighlight
+```
 NPM_TOKEN = 00000000-0000-0000-0000-000000000000
 ```
 
@@ -42,7 +42,7 @@ Note that if you change your npm password, then you'll need to update your `NPM_
 
 In your `.travis.yml` you'll create an `.npmrc` file on the fly. You'll need to do this in the `before_install` section, as per:
 
-```nohighlight
+```
 before_install:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
 ```
@@ -57,7 +57,7 @@ Create a `.npmrc` file and put it in the root of the directory that Travis will 
 
 Have the file contain (at least) this:
 
-```nohighlight
+```
 //registry.npmjs.org/:_authToken=${NPM_TOKEN}
 ```
 
