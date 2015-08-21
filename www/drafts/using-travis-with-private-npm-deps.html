@@ -4,34 +4,34 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-using-travis-with-private-npm-deps-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2015/08/17/five" title="Five">Latest post</a></li></ul></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 19-Aug 2015</div><article class="post"><h1 class="title"><a href="/drafts/using-travis-with-private-npm-deps">Using travis with private npm deps</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/using-travis-with-private-npm-deps.md">(edit)</a></small></h1><div class="post-content">
+ga('send', 'pageview');</script></head><body id="drafts-using-travis-with-private-npm-deps-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2015/08/17/five" title="Five">Latest post</a></li></ul></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 21-Aug 2015</div><article class="post"><h1 class="title"><a href="/drafts/using-travis-with-private-npm-deps">Using travis with private npm deps</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/using-travis-with-private-npm-deps.md">(edit)</a></small></h1><div class="post-content">
 <p>I&#39;ve recently been working on a project that requires <a href="https://www.npmjs.com/private-modules">privately scoped npm modules</a>. The problem I encountered was: when Travis ran tests that depended on @scoped modules, it would fail:</p>
-<pre><code class="language-nohighlight">npm ERR! 404 Not found : @remy/super-awesome-private-mod</code></pre>
+<pre><code>npm ERR! 404 Not found : @remy/super-awesome-private-mod</code></pre>
 <p>This post fixes that issue (and is mostly here when I forget, I can &quot;google myself&quot;!).</p>
 <!--more-->
 
 <h2>1. Capture your token</h2>
 <p>If you&#39;re using <a href="https://github.com/semantic-release/cli">semantic-release cli</a> (which you should, it&#39;s awesome), then you&#39;ll already have the <code>NPM_TOKEN</code> as an environment value in Travis.</p>
 <p>If not, you&#39;ll need to find your npm token. This is found in your home directory, in the <code>.npmrc</code> file. The token is everything after <code>_authToken=</code>. Your file should contain a line like this:</p>
-<pre><code class="language-nohighlight">//registry.npmjs.org/:_authToken=00000000-0000-0000-0000-000000000000</code></pre>
+<pre><code>//registry.npmjs.org/:_authToken=00000000-0000-0000-0000-000000000000</code></pre>
 <p>Note that where I&#39;ve put zeros, you&#39;ll see letters and numbers. Once you&#39;ve copied the token, you&#39;ll need to create a new env value in your Travis setting (on the individual build pages):</p>
 <p><img src="/images/travis-settings.png" alt="Travis settings"></p>
 <p>Then under the &quot;Environment Values&quot; add a new value (keep &quot;display value in build log&quot; off):</p>
-<pre><code class="language-nohighlight">NPM_TOKEN = 00000000-0000-0000-0000-000000000000</code></pre>
+<pre><code>NPM_TOKEN = 00000000-0000-0000-0000-000000000000</code></pre>
 <p>Then hit &quot;add&quot;.</p>
 <h2>2. npmrc</h2>
 <p>You have two options here. The first option is to dynamically create an <code>.npmrc</code> (<a href="https://docs.npmjs.com/files/npmrc">more about npmrc</a>) in the <code>.travis.yml</code> setup. The second option is to add the file to your repo, but it also requires a change to your shell environment. I&#39;ll cover both.</p>
 <p>Note that if you change your npm password, then you&#39;ll need to update your <code>NPM_TOKEN</code>, otherwise it shouldn&#39;t need changing in the future.</p>
 <h3>Dynamic</h3>
 <p>In your <code>.travis.yml</code> you&#39;ll create an <code>.npmrc</code> file on the fly. You&#39;ll need to do this in the <code>before_install</code> section, as per:</p>
-<pre><code class="language-nohighlight">before_install:
+<pre><code>before_install:
   - echo &quot;//registry.npmjs.org/:_authToken=\${NPM_TOKEN}&quot; &gt; .npmrc</code></pre>
 <p>Note that the escaped <code>\$</code> is important. This means will ensure that your private npm token is not echoed out in your Travis logs. That&#39;s it. With this method, you&#39;re ready.</p>
 <p>I personally like this method because it keeps the <code>.npmrc</code> file out of my git repo and means I don&#39;t have to remember to fiddle with my shell environment variables as we&#39;ll see next.</p>
 <h3>File based</h3>
 <p>Create a <code>.npmrc</code> file and put it in the root of the directory that Travis will run (i.e. the root of the git repo typically).</p>
 <p>Have the file contain (at least) this:</p>
-<pre><code class="language-nohighlight">//registry.npmjs.org/:_authToken=${NPM_TOKEN}</code></pre>
+<pre><code>//registry.npmjs.org/:_authToken=${NPM_TOKEN}</code></pre>
 <p>Now push this to your repo and let Travis run it&#39;s test. Travis will now have access to install your privately scoped npm packages.</p>
 <p>Now you build will work, but <code>npm install</code> <em>won&#39;t</em> work locally until you add the <code>NPM_TOKEN=00000...</code> to your local shell environment variables.</p>
 <p>You might need to tweak these directions depending on your shell, but if you&#39;re using bash, add the following line to your <code>.bash_profile</code> and after run <code>source ~/.bash_profile</code>:</p>
