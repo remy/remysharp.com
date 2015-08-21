@@ -234,10 +234,28 @@
   "using-travis-with-private-npm-deps": {
     "title": "Using travis with private npm deps",
     "date": "2015-08-18 19:17:31",
+    "complete": true,
+    "inprogress": false,
+    "tags": [
+      "code"
+    ]
+  },
+  "my-node-test-strategy": {
+    "title": "My node test strategy",
+    "date": "2015-08-19 14:06:40",
     "complete": false,
     "inprogress": true,
     "tags": [
       "code"
+    ]
+  },
+  "trigger-warnings": {
+    "title": "Trigger warnings",
+    "date": "2015-08-21 09:59:25",
+    "complete": true,
+    "inprogress": false,
+    "tags": [
+      "personal"
     ]
   }
 }
