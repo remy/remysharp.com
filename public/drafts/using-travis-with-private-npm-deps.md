@@ -47,9 +47,9 @@ before_install:
   - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
 ```
 
-Note that the escaped `\$` is important. This means will ensure that your private npm token is not echoed out in your Travis logs. That's it. With this method, you're ready.
+Note that the escaped `\$` is important. This will ensure that your private npm token is not echoed out in your Travis logs. That's it. With this method, you're ready.
 
-I personally like this method because it keeps the `.npmrc` file out of my git repo and means I don't have to remember to fiddle with my shell environment variables as we'll see next.
+I personally like this method because it keeps the `.npmrc` file out of my git repo and it means I don't have to remember to fiddle with my shell environment variables as we'll see next.
 
 ### File based
 
@@ -71,7 +71,7 @@ You might need to tweak these directions depending on your shell, but if you're 
 export NPM_TOKEN="00000000-0000-0000-0000-000000000000"
 ```
 
-The downside to this method (once you've got your shell sorted) is that if you're working in a team, each team member will have to add this line to their shell too, as the `.npmrc` file in the root of your project directory will require a valid token.
+The downside of this method (once you've got your shell sorted) is that if you're working in a team, each team member will have to add this line to their shell too, as the `.npmrc` file in the root of your project directory will require a valid token.
 
 ---
 

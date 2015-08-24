@@ -257,5 +257,14 @@
     "tags": [
       "personal"
     ]
+  },
+  "my-client-side-testing-wish": {
+    "title": "My client side testing wish",
+    "date": "2015-08-24 14:07:24",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }
