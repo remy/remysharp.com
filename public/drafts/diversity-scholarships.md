@@ -15,7 +15,7 @@ Please answer the following questions and email [Julie](mailto:julie@leftlogic.c
 1. Who are you?
 - Where would you be travelling from (airport or city)?
 - What do you do?
-- Why should you win a scholarship?
+- Why should you get a scholarship?
 
 Please note that your email will be treated with the utmost privacy, and we will not publicly announce who the diversity scholarships go to (though you're welcome to say so yourself).
 
@@ -38,6 +38,6 @@ Again, this scholarship isn't sponsored, this is from Remy and Julie. No, I don'
 
 ## Acknowledgements
 
-I've taken either some copy or inspiration from [SassConf](http://sassconf.com/#scholarships) and [OpenTechSchool](http://blog.otsconf.com/post/121589262220/how-to-apply-for-community-and-diversity-tickets).
+I've taken either some copy or inspiration from [SassConf](http://sassconf.com/#scholarships) and [OTSConf](http://blog.otsconf.com/post/121589262220/how-to-apply-for-community-and-diversity-tickets).
 
 Again, if this doesn't apply to you, please please can you pass on the message and reach out to anyone you know that might benefit from one of these scholarship places.
