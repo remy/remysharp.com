@@ -4,7 +4,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="drafts-my-node-test-strategy-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2015/08/17/five" title="Five">Latest post</a></li></ul></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 24-Aug 2015</div><article class="post"><h1 class="title"><a href="/drafts/my-node-test-strategy">My node test strategy</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/my-node-test-strategy.md">(edit)</a></small></h1><div class="post-content">
+ga('send', 'pageview');</script></head><body id="drafts-my-node-test-strategy-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2015/08/17/five" title="Five">Latest post</a></li></ul></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 25-Aug 2015</div><article class="post"><h1 class="title"><a href="/drafts/my-node-test-strategy">My node test strategy</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/my-node-test-strategy.md">(edit)</a></small></h1><div class="post-content">
 <p>Historically testing has been far far down on my list of priorities. However that&#39;s been slowly changing over the last 3-4 years, and now I have a fairly solid and systematic method to testing.</p>
 <p>I&#39;m writing it partly to capture it in time as I know it&#39;ll continue to evolve and partly to share with you to get your input too.</p>
 <!--more-->
@@ -32,13 +32,13 @@ test(&#39;litmus&#39;, function (assert) {
   assert.plan(1);
   assert.ok(lib, &#39;the library loaded&#39;);
 });</code></pre>
-<p>The only problem I find with tape is that there&#39;s no <code>beforeEach</code> and <code>afterEach</code> which is very useful for state reset. However, it&#39;s possible to patch tape using <a href="https://github.com/remy/autocache/blob/master/test/core.js#L474-L510">this technique</a>. This alone might be a reason to use tap (or <a href="https://www.npmjs.com/package/tapes">tapes</a> which extends tap).</p>
+<p>The only problem I find with tape is that there&#39;s no <code>beforeEach</code> and <code>afterEach</code> which is very useful for state reset. However, it&#39;s possible to patch tape using <a href="https://github.com/remy/autocache/blob/master/test/core.js#L474-L510">this technique</a>. This alone might be a reason to use tap...maybe.</p>
 <h2>Reporters</h2>
 <p>The tape module is compatible with <a href="https://testanything.org/">Test Anything Protocol</a>, so by itself it&#39;s fairly raw. So I pipe the output to <a href="https://www.npmjs.com/package/tap-spec">tap-spec</a>.</p>
 <p>The problem that took me about 4 hours to debug was that if the test harness threw an exception, that exception would be swallowed by tap-spec. What this means from a practical point of view is: if my test script (like the one above) had an exception, the &quot;tests would pass&quot;.</p>
 <p>I found that if I install tap-spec@2.x then it errors correctly. I know I&#39;m two major (breaking) changes out of date, but at the cost of getting the <em>right</em> result in my tests - it&#39;s worth it.</p>
 <h2>Pre-tests</h2>
-<p>Before my code even gets tested though, it&#39;ll check that the code passes my coding guideliness via <a href="http://jscs.info/">JSCS</a> (check out <a href="https://medium.com/@addyosmani/auto-formatting-javascript-code-style-fe0f98a923b8">Addy Osmani&#39;s superb guide to JSCS</a>). This is <em>my</em> <code>.jscsrc</code>, pick your own, stick with it, share it amongst the team:</p>
+<p>Before my code even gets tested though, it&#39;ll check that the code passes my coding guidelines via <a href="http://jscs.info/">JSCS</a> (check out <a href="https://medium.com/@addyosmani/auto-formatting-javascript-code-style-fe0f98a923b8">Addy Osmani&#39;s superb guide to JSCS</a>). This is <em>my</em> <code>.jscsrc</code>, pick your own, stick with it, share it amongst the team:</p>
 <pre><code class="language-json">{
   &quot;preset&quot;: &quot;node-style-guide&quot;,
   &quot;requireCapitalizedComments&quot;: null,
@@ -66,7 +66,7 @@ test(&#39;litmus&#39;, function (assert) {
 <p>Since this is node land, I use npm only for my tests. So I have the following in my <code>package.json</code>:</p>
 <pre><code class="language-json">{
   &quot;scripts&quot;: {
-    &quot;style&quot;: &quot;jscs -v cli/*.js lib/*.js&quot;,
+    &quot;style&quot;: &quot;jscs -v lib/*.js&quot;,
     &quot;test&quot;: &quot;npm run style &amp;&amp; node test/*.test.js | tap-spec&quot;
   }
 }</code></pre>
@@ -83,13 +83,28 @@ test(&#39;litmus&#39;, function (assert) {
   fi;
 done</code></pre>
 <p>This is all compressed down to a single line, and put inside the <code>test</code> command in my <code>package.json</code>. This way, when the test exits, and it&#39;s successful, it&#39;ll move on to the next script, completely ditching the process. Equally, if it fails, the <code>if [ $? ]</code> test will throw the exit to Travis.</p>
-<p>This feels utterly clunky, but I can&#39;t see any other way to do a total reset. It might be because I have to write insane <a href="https://travis-ci.org/remy/nodemon/jobs/71828422">tests for things like nodemon</a>.</p>
+<p>This feels utterly clunky, but I can&#39;t see any other way to do a total reset. It might be because I have to write insane <a href="https://travis-ci.org/remy/nodemon/jobs/71828422">tests for things like nodemon</a>. The main downside of this (that I can see) is that your total count is not totalled up at the end - which is really only an ego thing because all I should care about is a pass or fail.</p>
+<h2>Watching</h2>
+<p>Being that I&#39;m not a big fan of larger tool chains (though there&#39;s nothing wrong with them, it&#39;s just my preference), I&#39;ve been known to include <a href="https://github.com/remy/nodemon">nodemon</a> in a watch command to monitor for changes to re-run tests.</p>
+<p>That would look like this:</p>
+<pre><code class="language-json">{
+  &quot;scripts&quot;: {
+    &quot;style&quot;: &quot;jscs -v lib/*.js&quot;,
+    &quot;test&quot;: &quot;npm run style &amp;&amp; node test/*.test.js | tap-spec&quot;,
+    &quot;watch&quot;: &quot;nodemon -q -x &#39;npm test&#39;&quot;
+  }
+}</code></pre>
+<p>Then on the cli I run:</p>
+<pre><code class="language-bash">npm run watch</code></pre>
+<p>nodemon is running in &quot;quiet&quot; mode (i.e. suppress any nodemon specific output), and make the thing it executes be <code>npm test</code>.</p>
 <h2>Couple of tips</h2>
 <p><strong>Avoid using <code>assert.ok</code> if possible.</strong> My tests usually relied on this, but when they failed, there&#39;s no information on <em>why</em> they failed. Use <code>assert.equal</code> instead. If it doesn&#39;t match, then you&#39;ll get the delta in the failure - which hopefully leads to <em>why</em> it failed.</p>
-<p><strong>Make tests easily reusable.</strong> This is very dependant on the problem you&#39;re solving. But I was able to use this in my <a href="https://github.com/remy/inliner/blob/master/CONTRIBUTING.md">inliner</a> repo. The main tests are: does the source file inline down to &quot;some target content&quot;. So the tests run through a fixture directory looking for specific file extensions, allowing users to contribute tests very easily. I also reuse tests in my autocache adapters, feel free to review the <a href="https://github.com/remy/autocache-localstorage/blob/master/test/localstorage.test.js">localStorage version</a> that uses autocache&#39;s <a href="https://github.com/remy/autocache/blob/master/test/core.js">core.js</a> tests.</p>
+<p><strong>If it makes sense: make tests reusable.</strong> This is very dependant on the problem you&#39;re solving, but I was able to do this on a few projects, including my <a href="https://github.com/remy/inliner/">inliner</a> repo. The main tests are: does the source file inline down to &quot;some target content&quot;. So the tests run through a fixture directory looking for specific file extensions, allowing users to <a href="https://github.com/remy/inliner/blob/master/CONTRIBUTING.md">contribute tests very easily</a>. I also reuse tests in my autocache adapters, feel free to review the <a href="https://github.com/remy/autocache-localstorage/blob/master/test/localstorage.test.js">localStorage version</a> that uses autocache&#39;s <a href="https://github.com/remy/autocache/blob/master/test/core.js">core.js</a> tests.</p>
+<h2>All together now</h2>
+<p>What does that all look like? Rather than bloating this post even more, I&#39;ve added all the files (with a litmus test) and configuration into a (work in progress) <a href="https://github.com/remy/templates/tree/master/node">git repo</a>.</p>
 <h2>Wrapping up</h2>
 <p>I&#39;ve installed these pieces locally, <em>not</em> globally, for dev only use by running:</p>
-<pre><code class="language-bash">npm install --save-dev tape tap-spec jscs</code></pre>
+<pre><code class="language-bash">npm install --save-dev tape tap-spec@2 jscs</code></pre>
 <p>I&#39;d like to generate my project folder structure, but as yet, it&#39;s a manual job (I&#39;ve been wanting to check out <a href="http://yeoman.io/">Yeoman</a> for generating, but it still feels like a lot of work for something that&#39;s reasonably straight forward).</p>
 <p>Finally, kudos to <a href="https://twitter.com/brianleroux">Brian LeRoux</a>, on my behest, he kept returning to (my conference) <a href="http://ffconf.org">ffconf</a> to run workshops on testing, and it&#39;s his work that finally got me to shake my bad habits of no-test-coding.</p>
 <p>Related posts:</p>
