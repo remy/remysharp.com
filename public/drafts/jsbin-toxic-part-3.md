@@ -36,7 +36,7 @@ JS Bin's database ran out of disk space. All of it. Gone. So much so, that I *co
 
 The weird thing was that JS Bin still worked. It could recall bins and you could use JS Bin, you *just couldn't save* (though, that's kind of a problem...).
 
-When you're solo parenting, though, there's no support around and there was no way I was going to (or even *could*) abondon the kids to work on solving this issue. I had to suck it up, and trying to focus entirely on the kids and ignore the problem until my wife returned home. I did manage to put out a [cry](https://twitter.com/rem/status/581004721785167872) for [help](https://github.com/jsbin/jsbin/issues/2320) which had lots of lovely support, but support doesn't fix fucked disks.
+When you're solo parenting, though, there's no support around and there was no way I was going to (or even *could*) abandon the kids to work on solving this issue. I had to suck it up, and trying to focus entirely on the kids and ignore the problem until my wife returned home. I did manage to put out a [cry](https://twitter.com/rem/status/581004721785167872) for [help](https://github.com/jsbin/jsbin/issues/2320) which had lots of lovely support, but support doesn't fix fucked disks.
 
 Though, eventually, a few hours later, I managed to swap in a 400GB disk to the AWS database. This solved the issue right away, but the source of the problem was still wide open.
 

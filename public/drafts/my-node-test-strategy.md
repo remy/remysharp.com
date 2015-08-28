@@ -41,7 +41,7 @@ test('litmus', function (assert) {
 });
 ```
 
-The only problem I find with tape is that there's no `beforeEach` and `afterEach` which is very useful for state reset. However, it's possible to patch tape using [this technique](https://github.com/remy/autocache/blob/master/test/core.js#L474-L510). This alone might be a reason to use tap (or [tapes](https://www.npmjs.com/package/tapes) which extends tap).
+The only problem I find with tape is that there's no `beforeEach` and `afterEach` which is very useful for state reset. However, it's possible to patch tape using [this technique](https://github.com/remy/autocache/blob/master/test/core.js#L474-L510). This alone might be a reason to use tap...maybe.
 
 ## Reporters
 
@@ -53,7 +53,7 @@ I found that if I install tap-spec@2.x then it errors correctly. I know I'm two 
 
 ## Pre-tests
 
-Before my code even gets tested though, it'll check that the code passes my coding guideliness via [JSCS](http://jscs.info/) (check out [Addy Osmani's superb guide to JSCS](https://medium.com/@addyosmani/auto-formatting-javascript-code-style-fe0f98a923b8)). This is *my* `.jscsrc`, pick your own, stick with it, share it amongst the team:
+Before my code even gets tested though, it'll check that the code passes my coding guidelines via [JSCS](http://jscs.info/) (check out [Addy Osmani's superb guide to JSCS](https://medium.com/@addyosmani/auto-formatting-javascript-code-style-fe0f98a923b8)). This is *my* `.jscsrc`, pick your own, stick with it, share it amongst the team:
 
 ```json
 {
@@ -95,7 +95,7 @@ Since this is node land, I use npm only for my tests. So I have the following in
 ```json
 {
   "scripts": {
-    "style": "jscs -v cli/*.js lib/*.js",
+    "style": "jscs -v lib/*.js",
     "test": "npm run style && node test/*.test.js | tap-spec"
   }
 }
@@ -123,20 +123,48 @@ done
 
 This is all compressed down to a single line, and put inside the `test` command in my `package.json`. This way, when the test exits, and it's successful, it'll move on to the next script, completely ditching the process. Equally, if it fails, the `if [ $? ]` test will throw the exit to Travis.
 
-This feels utterly clunky, but I can't see any other way to do a total reset. It might be because I have to write insane [tests for things like nodemon](https://travis-ci.org/remy/nodemon/jobs/71828422).
+This feels utterly clunky, but I can't see any other way to do a total reset. It might be because I have to write insane [tests for things like nodemon](https://travis-ci.org/remy/nodemon/jobs/71828422). The main downside of this (that I can see) is that your total count is not totalled up at the end - which is really only an ego thing because all I should care about is a pass or fail.
+
+## Watching
+
+Being that I'm not a big fan of larger tool chains (though there's nothing wrong with them, it's just my preference), I've been known to include [nodemon](https://github.com/remy/nodemon) in a watch command to monitor for changes to re-run tests.
+
+That would look like this:
+
+```json
+{
+  "scripts": {
+    "style": "jscs -v lib/*.js",
+    "test": "npm run style && node test/*.test.js | tap-spec",
+    "watch": "nodemon -q -x 'npm test'"
+  }
+}
+```
+
+Then on the cli I run:
+
+```bash
+npm run watch
+```
+
+nodemon is running in "quiet" mode (i.e. suppress any nodemon specific output), and make the thing it executes be `npm test`.
 
 ## Couple of tips
 
 **Avoid using `assert.ok` if possible.** My tests usually relied on this, but when they failed, there's no information on *why* they failed. Use `assert.equal` instead. If it doesn't match, then you'll get the delta in the failure - which hopefully leads to *why* it failed.
 
-**Make tests easily reusable.** This is very dependant on the problem you're solving. But I was able to use this in my [inliner](https://github.com/remy/inliner/blob/master/CONTRIBUTING.md) repo. The main tests are: does the source file inline down to "some target content". So the tests run through a fixture directory looking for specific file extensions, allowing users to contribute tests very easily. I also reuse tests in my autocache adapters, feel free to review the [localStorage version](https://github.com/remy/autocache-localstorage/blob/master/test/localstorage.test.js) that uses autocache's [core.js](https://github.com/remy/autocache/blob/master/test/core.js) tests.
+**If it makes sense: make tests reusable.** This is very dependant on the problem you're solving, but I was able to do this on a few projects, including my [inliner](https://github.com/remy/inliner/) repo. The main tests are: does the source file inline down to "some target content". So the tests run through a fixture directory looking for specific file extensions, allowing users to [contribute tests very easily](https://github.com/remy/inliner/blob/master/CONTRIBUTING.md). I also reuse tests in my autocache adapters, feel free to review the [localStorage version](https://github.com/remy/autocache-localstorage/blob/master/test/localstorage.test.js) that uses autocache's [core.js](https://github.com/remy/autocache/blob/master/test/core.js) tests.
+
+## All together now
+
+What does that all look like? Rather than bloating this post even more, I've added all the files (with a litmus test) and configuration into a (work in progress) [git repo](https://github.com/remy/templates/tree/master/node).
 
 ## Wrapping up
 
 I've installed these pieces locally, *not* globally, for dev only use by running:
 
 ```bash
-npm install --save-dev tape tap-spec jscs
+npm install --save-dev tape tap-spec@2 jscs
 ```
 
 I'd like to generate my project folder structure, but as yet, it's a manual job (I've been wanting to check out [Yeoman](http://yeoman.io/) for generating, but it still feels like a lot of work for something that's reasonably straight forward).

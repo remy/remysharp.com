@@ -243,8 +243,8 @@
   "my-node-test-strategy": {
     "title": "My node test strategy",
     "date": "2015-08-19 14:06:40",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "code"
     ]
@@ -265,6 +265,15 @@
     "inprogress": true,
     "tags": [
       "code"
+    ]
+  },
+  "diversity-scholarships": {
+    "title": "Diversity Scholarships for ffconf",
+    "date": "2015-08-28 13:02:40",
+    "complete": true,
+    "inprogress": false,
+    "tags": [
+      "web"
     ]
   }
 }
