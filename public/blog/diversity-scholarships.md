@@ -21,6 +21,7 @@ Please answer the following questions and email [Julie](mailto:julie@leftlogic.c
 
 Please note that your email will be treated with the utmost privacy, and we will not publicly announce who the diversity scholarships go to (though you're welcome to say so yourself).
 
+**Deadline for applications: Friday 2nd Oct, 2015.**
 
 ## Why?
 
