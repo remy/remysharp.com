@@ -2,6 +2,8 @@
 
 This post outlines a new diversity scholarships programme that I want to introduce for [ffconf](http://ffconf.org). It's entirely possible that this does not apply to you, my dear reader, but you still have an important role to play: please pass on the message and [this link](http://ffconf.org/scholarship) to help seek those out who can make use of the scholarships.
 
+<!--more-->
+
 ## What are the scholarships?
 
 Scholarships are available for anyone in an under-represented group in tech. This includes (but is not limited to): people of colour, LGBTQIA+ people, women and disabled people.
