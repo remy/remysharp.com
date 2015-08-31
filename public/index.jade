@@ -1,5 +1,5 @@
-posts = partial('_partials/posts', { postlimit: 1 })
-latest = posts[0]
+- posts = partial('_partials/posts', { postlimit: 1 })
+- latest = posts[0]
 
 h1.title
   img.icon.photo(alt="Remy Sharp's blog" src="/images/avatar.jpg" height=50 width=50)
@@ -14,7 +14,7 @@ article.post
     h2.title
       a(href="#{latest.relative}") Latest: #{ latest.title }
   section.post-excerpt.post-content
-    content = partial('blog/' + latest.slug);
+    - content = partial('blog/' + latest.slug);
 
     if content.split(/<!--\s*more\s*-->/).length > 1
       != content.split(/<!--\s*more\s*-->/)[0].replace(/<h1>.*?<\/h1>/, '').trim()

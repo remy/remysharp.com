@@ -1,17 +1,17 @@
-posts = partial('posts')
-year = filter === undefined ? current.path.slice(-2, -1)[0] : filter;
-last = null
+- posts = partial('posts')
+- year = filter === undefined ? current.path.slice(-2, -1)[0] : filter;
+- last = null
 .post
   h1.title #{ title || year } archive
-  post = posts.shift()
+  - post = posts.shift()
   while post
     if post.date
       if !year || moment(post.date).format('YYYY') == year
-        month = moment(post.date).format('MMMM')
-        postYear = moment(post.date).format('YYYY')
+        - month = moment(post.date).format('MMMM')
+        - postYear = moment(post.date).format('YYYY')
         if !year && last != postYear
           h1.title #{ postYear }
-          last = postYear
+          - last = postYear
         .post-content
           h2 #{ month }
           ul
@@ -21,6 +21,6 @@ last = null
                   a(href="#{ post.relative }") #{ post.title }
                   &nbsp;
                   small.date #{ moment(post.date).format('D-MMM YYYY')}
-              post = posts.shift()
+              - post = posts.shift()
       else
-        post = posts.shift()
+        - post = posts.shift()

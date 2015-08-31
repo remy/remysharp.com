@@ -1,8 +1,32 @@
 extends ../_partials/layout
 
+block meta
+  - var summary = null
+  if yield.split(/<!--\s*more\s*-->/).length > 1
+    - summary = yield.split(/<!--\s*more\s*-->/)[0].replace(/<h1>.*?<\/h1>/, '').trim()
+  else if yield.split('<hr>').length > 1
+    - summary = yield.split('<hr>')[0].replace(/<h1>.*?<\/h1>/, '').trim()
+  else
+    - summary = yield.split('<p>').slice(0, 4).join('<p>').replace(/<h1>.*?<\/h1>/, '').trim()
+  if summary
+    - summary = '<meta name="twitter:description" content="' + summary.replace(/<(?:.|\n)*?>/gm, '') + '">';
+    != summary
+  meta(name="twitter:creator" content="@rem")
+  meta(name="twitter:title" content="#{title}")
+  meta(name="twitter:site" content="@rem")
+  meta(name="twitter:domain" content="Remy's b:log")
+  - var img = null;
+  - if (yield.indexOf('<img') !== -1) img = (yield.replace(/\n/g, '').match(/<img\b[^>]+?src\s*=\s*['"]?([^\s'"?#>]+)/) || [,])[1];
+  - if (img && img.indexOf('http') !== 0) img = site_url + img;
+  if img
+    meta(name="twitter:image:src" content="#{img}")
+    meta(name="twitter:card" content="summary_large_image")
+  else
+    meta(name="twitter:card" content="summary")
+
 block content
-  permalink = '/' + moment(date).format('YYYY/MM/DD') + '/' + current.source;
-  safeTitle = title.replace(/'/g, '\\\'')
+  - permalink = '/' + moment(date).format('YYYY/MM/DD') + '/' + current.source;
+  - safeTitle = title.replace(/'/g, '\\\'')
 
   != partial('../_partials/post-nav')
 

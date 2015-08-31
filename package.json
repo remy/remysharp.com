@@ -20,7 +20,7 @@
   "dependencies": {
     "elasticsearch": "^4.0.2",
     "glob": "~4.0.5",
-    "harp": "~0.13.0",
+    "harp": "^0.17.0",
     "moment": "~2.8.2",
     "promise": "^6.0.1",
     "router-stupid": "~0.7.0",

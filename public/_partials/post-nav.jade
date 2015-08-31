@@ -1,7 +1,7 @@
 nav.main-nav.clearfix.subpanel
   != partial('../_partials/search')
-  posts = []
-  blogs = public.blog || public.public.blog
+  - posts = []
+  - blogs = public.blog || public.public.blog
   for post, slug in blogs._data
     if post.date && (environment == "production" && post.published!==false) || (environment == "development")
       - post.slug = slug

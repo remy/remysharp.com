@@ -1,5 +1,5 @@
 if current.path.indexOf('blog') === -1 && current.path+'' !== 'index'
-  post = partial('posts', { postlimit: 1 })[0]
+  - post = partial('posts', { postlimit: 1 })[0]
   nav.main-nav.clearfix.subpanel
     != partial('../_partials/search')
     ul.post-nav

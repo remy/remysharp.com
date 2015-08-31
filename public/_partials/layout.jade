@@ -1,6 +1,5 @@
 - function repeat(str, num) { return new Array( num + 1 ).join( str ); }
-
-prefix = repeat('.', current.path.length).split('..').join('../')
+- prefix = repeat('.', current.path.length).split('..').join('../')
 
 doctype html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"
 html#remysharp-com
@@ -12,6 +11,8 @@ html#remysharp-com
     meta(name="description",content="#{desc}")
     meta(name="HandheldFriendly" content="True")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
+    block meta
 
     link(rel="shortcut icon" href="/favicon.ico")
     link(rel="stylesheet" type="text/css" href="/css/screen.css?#{version}")
