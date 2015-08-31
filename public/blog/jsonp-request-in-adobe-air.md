@@ -26,7 +26,7 @@ Very simply, here's an example I would expect to work:
 }
 
 // I've stripped the api key for the purpose of this article
-var url = 'http://www.flickr.com/services/rest/?method=' + 
+var url = 'http://www.flickr.com/services/rest/?method=' +
           'flickr.photos.getRecent&format=json';
 
 var script = document.createElement('script');
@@ -52,7 +52,7 @@ function jsonFlickrApi(data) {
   alert('jsonp completed: ' + data.photos.photo.length);
 }
 
-var url = 'http://www.flickr.com/services/rest/?method=' + 
+var url = 'http://www.flickr.com/services/rest/?method=' +
           'flickr.photos.getRecent&format=json';
 
 // the variable to cache the original function name
@@ -62,21 +62,21 @@ $.ajax({
   dataType: 'json', // note we're using json rather than jsonp
   dataFilter: function (data) {
     // data is the original string such as: jsonFlickrApi({...})
-    
+
     fnStr = data.substr(0, data.indexOf('('));
     var start = data.indexOf('(');
-    
+
     // return everything in between the 'jsonFlickrApi(' and last ')'
     return data.substr(start + 1, data.lastIndexOf(')') - start - 1);
   },
   success: function (data) {
     // work out the original name space the jsonp function was on
     var ns = fnStr.split('.'), p = window, last = window, i;
-    for (i = 0; i < ns.length; i++) {
+    for (i = 0; i &lt; ns.length; i++) {
       last = p;
       p = p[ns[i]] || p;
     }
-    
+
     // call the function against the content of the parent
     // i.e. this may just be window.jsonFlickrApi, but it
     // could also be window.flickr.update(data)

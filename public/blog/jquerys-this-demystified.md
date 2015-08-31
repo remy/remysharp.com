@@ -10,7 +10,7 @@ Hopefully this quick guide can help clarify those confusing moments, because onc
 ## What is "this"?
 
 > In many object-oriented programming languages, this (or self) is a keyword which can be used in instance methods to refer to the object on which the currently executing method has been invoked.
-  
+
 *Source: [http://en.wikipedia.org/wiki/This_(computer_science)](http://en.wikipedia.org/wiki/This_%28computer_science%29)*
 
 ## jQuery's this
@@ -21,11 +21,11 @@ There are really two main contexts of 'this' in jQuery.  The first refers to a t
 
 'this' is a DOM element when you are inside of a callback function (in the context of jQuery), for example, being called by the click, each, bind, etc. methods.
 
-The following code searches for anchor links with the class of 'newTarget' and sets the 'target' attribute to '\_new' (which is a trick to create strict <abbr title="eXtendable Hyper Text Markup Language">XHTML</abbr> while still having some links open in a new window).  
+The following code searches for anchor links with the class of 'newTarget' and sets the 'target' attribute to '\_new' (which is a trick to create strict <abbr title="eXtendable Hyper Text Markup Language">XHTML</abbr> while still having some links open in a new window).
 
 In this example we are also going to perform a double check to ensure links to the same domain don't open in a new window using the this object.
 
-<pre><code>$('a.newTarget').each(function() { // <- our anonymous callback
+<pre><code>$('a.newTarget').each(function() { // our anonymous callback
   // check the DOM attribute 'host' on this
   if (this.host != window.location.host) {
     // create a jQuery object using the current DOM element
@@ -43,7 +43,7 @@ In this example we are also going to perform a double check to ensure links to t
   return this.each(function() { // return so we don't break the chain
     // now we are inside of a jQuery function, the DOM element is the context
     // so 'this' has changed to become a DOM element.
-    
+
     if (this.host != window.location.host) {
       $(this).attr('target', '_new');
     }

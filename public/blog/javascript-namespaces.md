@@ -4,7 +4,7 @@ Based on the [Prototype](http://prototypejs.org) [namespacing made easy](http://
 
 <pre><code> String.prototype.namespace = function(separator) {
   var ns = this.split(separator || '.'), p = window, i;
-  for (i = 0; i < ns.length; i++) {
+  for (i = 0; i &lt; ns.length; i++) {
     p = p[ns[i]] = p[ns[i]] || {};
   }
 };</code></pre>

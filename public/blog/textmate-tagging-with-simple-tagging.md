@@ -19,7 +19,7 @@ Note: that if you've done this before (from a previous tutorial), you don't this
 
 Download the latest [blogging.rb patch](http://remysharp.com/wp-content/uploads/2007/06/blogging.rb.patch) and run the patch command:
 
-<pre><code>patch -p0 < blogging.rb.patch</code></pre>
+<pre><code>patch -p0 &lt; blogging.rb.patch</code></pre>
 
 ### Manually Patching Blogging Bundle
 
@@ -47,7 +47,7 @@ The second lot of changes (comments and pings) are added because WordPress 2.2 c
 
 <h2 id="xmlrpc">XMLRPC Changes</h2>
 
-Next we need to change the xmlrpc.php file that should be located in the root directory of your blog.  I am providing my own copy of [xmlrpc.php](http://remysharp.com/wp-content/uploads/2007/07/xmlrpc.php.txt) for download, but please be warned that I am using WordPress 2.2 and I have no idea whether this specific file will work with previous versions.  
+Next we need to change the xmlrpc.php file that should be located in the root directory of your blog.  I am providing my own copy of [xmlrpc.php](http://remysharp.com/wp-content/uploads/2007/07/xmlrpc.php.txt) for download, but please be warned that I am using WordPress 2.2 and I have no idea whether this specific file will work with previous versions.
 
 Either way: backup your files!
 
@@ -86,13 +86,13 @@ Add the following function in the xmlrpc.php file (I've added it to the end of t
 
 ## Finishing up
 
-That's everything you should need to be able to enable tagging from TextMate to Wordpress using Simply Tagging. 
+That's everything you should need to be able to enable tagging from TextMate to Wordpress using Simply Tagging.
 
 Keep reading for a few other tips, and let me know how you find this tutorial.
 
 ### A Fix for Tag URLs
 
-I noticed that my particular install of WordPress 2.2 and Simply Tagging 1.6.8 didn't handle [/tag/textmate](http://remysharp.com/tag/textmate) properly.  It kept saying 404 not found.  
+I noticed that my particular install of WordPress 2.2 and Simply Tagging 1.6.8 didn't handle [/tag/textmate](http://remysharp.com/tag/textmate) properly.  It kept saying 404 not found.
 
 I wrote a fix and patched my version of Simply Tagging to get it to work.  Edit simpletagging.php and change line 697 from:
 
