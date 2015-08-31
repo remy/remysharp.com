@@ -1,28 +1,23 @@
-<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)</title><meta name="description" content="LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.27"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.27"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)</title><meta name="description" content="LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="Following my how to setup your mac web development environment, and today moving to Leopard, my entire offline environment is broken - this is entirely due to the move from Apache 1.3 to Apache 2.2.
+This article will discuss the changes required to get your multi-host mac dev environment running again with PHP5, MySQL, Apache 2 and Leopard."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.30"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.30"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="blog-lamp-in-leopard-osx-105-php5-and-apache-22-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2007/10/27/leopard-initial-opinion" title="Leopard - initial opinion">Next</a></li><li class="prev"><a href="/2007/10/25/prototype-and-jquery-going-from-one-to-the-other" title="Prototype and jQuery - going from one to the other">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/10/27/lamp-in-leopard-osx-105-php5-and-apache-22" rel="bookmark" title="Permanent Link: LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)">LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/lamp-in-leopard-osx-105-php5-and-apache-22.md">(edit)</a></small><div class="post-content">
-<p>Following my <a href="http://remysharp.com/2007/01/06/how-to-setup-your-mac-web-development-environment/">how to setup your mac web development environment</a>, and today moving to Leopard, my entire offline environment is broken - this is entirely due to the move from Apache 1.3 to Apache 2.2.</p>
+ga('send', 'pageview');</script></head><body id="blog-lamp-in-leopard-osx-105-php5-and-apache-22-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2007/10/27/leopard-initial-opinion" title="Leopard - initial opinion">Next</a></li><li class="prev"><a href="/2007/10/25/prototype-and-jquery-going-from-one-to-the-other" title="Prototype and jQuery - going from one to the other">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/10/27/lamp-in-leopard-osx-105-php5-and-apache-22" rel="bookmark" title="Permanent Link: LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)">LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/lamp-in-leopard-osx-105-php5-and-apache-22.md">(edit)</a></small><div class="post-content"><p>Following my <a href="http://remysharp.com/2007/01/06/how-to-setup-your-mac-web-development-environment/">how to setup your mac web development environment</a>, and today moving to Leopard, my entire offline environment is broken - this is entirely due to the move from Apache 1.3 to Apache 2.2.</p>
 <p>This article will discuss the changes required to get your multi-host mac dev environment running again with PHP5, MySQL, Apache 2 and Leopard.</p>
 <!--more-->
-
-<h2>Orientation</h2>
-<p>Since we&#39;re running Apache 2.2, it means a few files have new homes.  Here&#39;s a comparison:</p>
+<h2>Orientation</h2><p>Since we&#39;re running Apache 2.2, it means a few files have new homes.  Here&#39;s a comparison:</p>
 <pre><code>/etc/httpd/httpd.conf => /etc/apache2/httpd.conf
 /etc/httpd/users/ => /etc/httpd/users/</code></pre>
 
-<h2>Get your virtual hosts back</h2>
-<p>Copy your .conf from your old <code>httpd/users/</code> directory in to the new one (above).  For example:</p>
+<h2>Get your virtual hosts back</h2><p>Copy your .conf from your old <code>httpd/users/</code> directory in to the new one (above).  For example:</p>
 <p><code>cp /etc/httpd/users/remy.conf /etc/apache2/users/remy.conf</code></p>
 <p>If you restart apache (<code>sudo apache restart</code>) you should have the domains pointing to your sites.  </p>
-<h2>PHP5</h2>
-<p>PHP5 <em>appears</em> to come with Leopard (though I could be wrong, since I upgraded - please feel free to correct me).  To re-enable it, within <code>/etc/apache2/httpd.conf</code>, around line 114 - you should find <code># LoadModule php5_module</code> - uncomment this and restart apache.</p>
+<h2>PHP5</h2><p>PHP5 <em>appears</em> to come with Leopard (though I could be wrong, since I upgraded - please feel free to correct me).  To re-enable it, within <code>/etc/apache2/httpd.conf</code>, around line 114 - you should find <code># LoadModule php5_module</code> - uncomment this and restart apache.</p>
 <p>Run a little PHP test, and you&#39;ll find you&#39;re running PHP again.</p>
-<h2>MySQL</h2>
-<p>You have two options to get MySQL running again if you have the following error:</p>
+<h2>MySQL</h2><p>You have two options to get MySQL running again if you have the following error:</p>
 <p><code>Can&#39;t connect to local MySQL server through socket &#39;/var/mysql/mysql.sock&#39; (2)</code></p>
 <ol>
 <li>Reinstall PHP5 and compile it with the new path to the MySQL socket (<code>/tmp/mysql.sock</code>)</li>
@@ -34,66 +29,60 @@ ga('send', 'pageview');</script></head><body id="blog-lamp-in-leopard-osx-105-ph
 
 <p>Replace small with whatever suits your setup best.</p>
 <p>Now follow these steps:</p>
-<h3>1. Shutdown MySQL</h3>
-<p><code>mysqladmin -uroot shutdown</code></p>
-<h3>2. Change the conf</h3>
-<p>Change all occurrences of <code>/tmp/mysql.sock</code> to <code>/var/mysql/mysql.sock</code></p>
-<h3>3. Create /var/mysql/</h3>
-<pre><code>sudo mkdir /var/mysql
+<h3>1. Shutdown MySQL</h3><p><code>mysqladmin -uroot shutdown</code></p>
+<h3>2. Change the conf</h3><p>Change all occurrences of <code>/tmp/mysql.sock</code> to <code>/var/mysql/mysql.sock</code></p>
+<h3>3. Create /var/mysql/</h3><pre><code>sudo mkdir /var/mysql
 sudo chmod 777 /var/mysql</code></pre>
 
-<h3>4. Start MySQL back up again</h3>
-<pre><code>cd /usr/local/mysql/
+<h3>4. Start MySQL back up again</h3><pre><code>cd /usr/local/mysql/
 sudo ./bin/safe_mysqld &</code></pre>
 
-<h2>Wrap Up</h2>
-<p>That should be it.  I&#39;ve tried to document every change I made to get going again, but if you spot any mistakes or have trouble with these instructions let me know and I&#39;ll try to help.</p>
-<p class="follow">Posted 27-Oct 2007 under apache &amp; apple &amp; development &amp; lamp &amp; leopard &amp; osx &amp; tips &amp; tutorial &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+<h2>Wrap Up</h2><p>That should be it.  I&#39;ve tried to document every change I made to get going again, but if you spot any mistakes or have trouble with these instructions let me know and I&#39;ll try to help.</p><p class="follow">Posted 27-Oct 2007 under apache &amp; apple &amp; development &amp; lamp &amp; leopard &amp; osx &amp; tips &amp; tutorial &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
 var disqus_url = 'http://remysharp.com/2007/10/27/lamp-in-leopard-osx-105-php5-and-apache-22/';
-var disqus_title = 'LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
-</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.27"></script><script src="/js/index.js?2.27"></script><!--  
-  
- Carved up by hand using Harp and a shit load of hacking.
-  
-  Also, this:
-  
-  
-  
-                       \_            /;              _.._
-                       `\~--.._     //'            ,(+=\\\\
-                        `//////\  \\/;'             /~ (\\\\
-                          ~/////\~\`)'             /;   ))))
-                              `~'  |              ((`~/((((\
-                              ;'_\'\             /'))   )))))
-                             /~/ '" "'     _.  /'/\_ /^\`((( \
-                            `\/'       _.-~/--/ (  =(   | ,  |
-                                    _/~\_)_}___/^\/~`\.__\|==|
-                                   /uUUU)        )        |  |
-                                  (   / |      _-=o|\__ /'/~ \
-                                  ' /'  |     /(((((\`\(  |~\/
-                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
-                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
-                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
-                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
-                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
-                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
-                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
-               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
-            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
-             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
-             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
-             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
-            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
-            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
-           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
-         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
-       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
-      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
-     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
-                         (/-(/-(/-(/-(/-'
-  
-  
-  
-     – Remy
-  
-  --><!-- Env: production - static files--></body></html>
+var disqus_title = 'LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.30"></script><script src="/js/index.js?2.30"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- Env: production - static files--></body></html>

@@ -1,18 +1,15 @@
-<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Getting CORS Working</title><meta name="description" content="Getting CORS Working"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.27"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.27"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Getting CORS Working</title><meta name="description" content="Getting CORS Working"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="Recently I ran a workshop where I ran a small section of the workshop on CORS and how to enable it. In the past, I&#39;ve found it to be very easy but this time around everything backfired and it didn&#39;t work. So after the workshop I went about understanding why the CORS demo it didn&#39;t work, and how to get it working.
+Disclaimer: other people have explained this before, this post is mostly for me!"><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="Getting CORS Working"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.30"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.30"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="blog-getting-cors-working-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2011/04/27/my-big-workshop-tour" title="My Big Workshop Tour">Next</a></li><li class="prev"><a href="/2011/04/19/broken-offline-support" title="Broken Offline Support">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2011/04/21/getting-cors-working" rel="bookmark" title="Permanent Link: Getting CORS Working">Getting CORS Working</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/getting-cors-working.md">(edit)</a></small><div class="post-content">
-<p>Recently I ran a workshop where I ran a small section of the workshop on CORS and how to enable it. In the past, I&#39;ve found it to be very easy but this time around everything backfired and it didn&#39;t work. So after the workshop I went about understanding why the CORS demo it didn&#39;t work, and how to get it working.</p>
+ga('send', 'pageview');</script></head><body id="blog-getting-cors-working-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2011/04/27/my-big-workshop-tour" title="My Big Workshop Tour">Next</a></li><li class="prev"><a href="/2011/04/19/broken-offline-support" title="Broken Offline Support">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2011/04/21/getting-cors-working" rel="bookmark" title="Permanent Link: Getting CORS Working">Getting CORS Working</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/getting-cors-working.md">(edit)</a></small><div class="post-content"><p>Recently I ran a workshop where I ran a small section of the workshop on CORS and how to enable it. In the past, I&#39;ve found it to be very easy but this time around everything backfired and it didn&#39;t work. So after the workshop I went about understanding why the CORS demo it didn&#39;t work, and how to get it working.</p>
 <p><em>Disclaimer:</em> other people have explained this before, this post is mostly for me!</p>
 <!--more-->
-
-<h2>CORS?</h2>
-<p>Cross Origin Resource Sharing - i.e. cross domain Ajax. The technical side of getting CORS to work has been explained in a lot more detail by <a href="http://twitter/slicknet">Nicholas C. Zakas</a> in his article <a href="http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/">Cross-domain Ajax with Cross-Origin Resource Sharing</a>, (i.e. IE8, for reasons beyond most, use <code>XDomainRequest</code> - utterly bespoke - but that&#39;s Microsoft for you).</p>
-<h2>Simple CORS</h2>
-<p>CORS, if you&#39;re not doing anything clever is easy. The client side should just be the following code (assuming we&#39;re not IE - see link above for IE hoop jumping):</p>
+<h2>CORS?</h2><p>Cross Origin Resource Sharing - i.e. cross domain Ajax. The technical side of getting CORS to work has been explained in a lot more detail by <a href="http://twitter/slicknet">Nicholas C. Zakas</a> in his article <a href="http://www.nczonline.net/blog/2010/05/25/cross-domain-ajax-with-cross-origin-resource-sharing/">Cross-domain Ajax with Cross-Origin Resource Sharing</a>, (i.e. IE8, for reasons beyond most, use <code>XDomainRequest</code> - utterly bespoke - but that&#39;s Microsoft for you).</p>
+<h2>Simple CORS</h2><p>CORS, if you&#39;re not doing anything clever is easy. The client side should just be the following code (assuming we&#39;re not IE - see link above for IE hoop jumping):</p>
 <pre><code>var xhr = new XMLHttpRequest();
 xhr.open(&#39;GET&#39;, &#39;http://different-domain.com&#39;);
 xhr.onreadystatechange = function () {
@@ -20,24 +17,22 @@ xhr.onreadystatechange = function () {
     console.log(&#39;response: &#39; + this.responseText);
   }
 };
-xhr.send();</code></pre>
-<p>So just a simple XHR send - in fact, exactly the same with the exception that the url goes to a domain that&#39;s different to the <em>origin</em>.</p>
+xhr.send();
+</code></pre><p>So just a simple XHR send - in fact, exactly the same with the exception that the url goes to a domain that&#39;s different to the <em>origin</em>.</p>
 <p>The only thing you need to have on your <em>different-domain.com</em> server is an additional header that tells the browser it&#39;s okay to go cross domain. In PHP that header looks like this:</p>
 <pre><code>&lt;?php
 header(&#39;Access-Control-Allow-Origin: http://www.some-site.com&#39;);
-?&gt;</code></pre>
-<p>Equally, if you want to make the API public to anyone to access, you can use:</p>
+?&gt;
+</code></pre><p>Equally, if you want to make the API public to anyone to access, you can use:</p>
 <pre><code>&lt;?php
 header(&#39;Access-Control-Allow-Origin: *&#39;);
-?&gt;</code></pre>
-<p>As simple live example of this can be seen here: <a href="http://jsbin.com/oxiyi4/1">jsbin.com/oxiyi4/1</a> which makes a request to <a href="http://remysharp.com/demo/cors.php">remysharp.com/demo/cors.php</a> which includes a rule that allows any origin to access the resource.</p>
+?&gt;
+</code></pre><p>As simple live example of this can be seen here: <a href="http://jsbin.com/oxiyi4/1">jsbin.com/oxiyi4/1</a> which makes a request to <a href="http://remysharp.com/demo/cors.php">remysharp.com/demo/cors.php</a> which includes a rule that allows any origin to access the resource.</p>
 <p>This is simple and easy. However, it&#39;s the <em>preflight</em> that causes confusion. That&#39;s where it all went wrong for me.</p>
-<h2>Preflight</h2>
-<p>In <em>plain Remy language</em> preflight is an additional request the XHR object makes to make sure it&#39;s <em>allowed</em> to actually make the request.</p>
+<h2>Preflight</h2><p>In <em>plain Remy language</em> preflight is an additional request the XHR object makes to make sure it&#39;s <em>allowed</em> to actually make the request.</p>
 <p>By default, there&#39;s no preflight, so why was this a problem for me?</p>
 <p><strong>Setting custom headers on XHR requests triggers a preflight request.</strong></p>
-<h2>Detecting Ajax on the server</h2>
-<p>Most JavaScript libraries send a custom header in the XHR request which can be sniffed on the server side to allow us to simple detect an Ajax request:</p>
+<h2>Detecting Ajax on the server</h2><p>Most JavaScript libraries send a custom header in the XHR request which can be sniffed on the server side to allow us to simple detect an Ajax request:</p>
 <pre><code>&lt;?php
 $ajax = isset($_SERVER[&#39;HTTP_X_REQUESTED_WITH&#39;]) &amp;&amp;
         $_SERVER[&#39;HTTP_X_REQUESTED_WITH&#39;] == &#39;XMLHttpRequest&#39;;
@@ -45,33 +40,31 @@ $ajax = isset($_SERVER[&#39;HTTP_X_REQUESTED_WITH&#39;]) &amp;&amp;
 if ($ajax) {
   // handle specific Ajax differently...
 }
-?&gt;</code></pre>
-<p>This way my server side code handles regular traffic differently to Ajax traffic.</p>
+?&gt;
+</code></pre><p>This way my server side code handles regular traffic differently to Ajax traffic.</p>
 <p>When I manually set the <code>x-requested-with</code> header on the XHR object, it triggered the preflight, which is where it all hit the fan.</p>
-<h2>Handling the preflight x-requested-with</h2>
-<p>The request process, with a preflight, if successful should look like the follow request exchange (note that I&#39;ve stripped some headers that weren&#39;t pertinent to this article, like User-Agent, etc).</p>
-<p>This is a real request from one domain to place an XHR request for <a href="http://jsbin.com/canvas/73/source"><a href="http://jsbin.com/canvas/73/source">http://jsbin.com/canvas/73/source</a></a>.</p>
+<h2>Handling the preflight x-requested-with</h2><p>The request process, with a preflight, if successful should look like the follow request exchange (note that I&#39;ve stripped some headers that weren&#39;t pertinent to this article, like User-Agent, etc).</p>
+<p>This is a real request from one domain to place an XHR request for <a href="http://jsbin.com/canvas/73/source">http://jsbin.com/canvas/73/source</a>.</p>
 <p><em>Client sends XHR request with custom header:</em></p>
 <pre><code>OPTIONS /canvas/73/source HTTP/1.1
 Host: jsbin.com
 Access-Control-Request-Method: GET
 Origin: http://jsconsole.com
-Access-Control-Request-Headers: x-requested-with</code></pre>
-<p><em>Server responds to OPTIONS request (no content served in this case):</em></p>
+Access-Control-Request-Headers: x-requested-with
+</code></pre><p><em>Server responds to OPTIONS request (no content served in this case):</em></p>
 <pre><code>HTTP/1.1 200 OK
 Access-Control-Allow-Origin: *
-Access-Control-Allow-Headers: X-Requested-With</code></pre>
-<p><em>Client sends GET request as it has permission to do so:</em></p>
+Access-Control-Allow-Headers: X-Requested-With
+</code></pre><p><em>Client sends GET request as it has permission to do so:</em></p>
 <pre><code>GET /canvas/73/source HTTP/1.1
 Host: jsbin.com
-x-requested-with: XMLHttpRequest</code></pre>
-<p><em>Server responds to GET request with content:</em></p>
+x-requested-with: XMLHttpRequest
+</code></pre><p><em>Server responds to GET request with content:</em></p>
 <pre><code>HTTP/1.1 200 OK
 Access-Control-Allow-Origin: *
-Content-Length: 977</code></pre>
-<p>This only works, because my server side is specifically looking out for the <code>OPTIONS</code> request, and handling it as you&#39;ll see in my following server code.</p>
-<h2>Server code to handle prelight</h2>
-<p>The following PHP code simply checks for the <code>OPTIONS</code> request method. If <code>OPTIONS</code> has been used to make the request, and the user is requesting using CORS, my server responds saying that the <code>X-Requested-With</code> header is permitted:</p>
+Content-Length: 977
+</code></pre><p>This only works, because my server side is specifically looking out for the <code>OPTIONS</code> request, and handling it as you&#39;ll see in my following server code.</p>
+<h2>Server code to handle prelight</h2><p>The following PHP code simply checks for the <code>OPTIONS</code> request method. If <code>OPTIONS</code> has been used to make the request, and the user is requesting using CORS, my server responds saying that the <code>X-Requested-With</code> header is permitted:</p>
 <pre><code>// respond to preflights
 if ($_SERVER[&#39;REQUEST_METHOD&#39;] == &#39;OPTIONS&#39;) {
   // return only the headers and not the content
@@ -81,62 +74,60 @@ if ($_SERVER[&#39;REQUEST_METHOD&#39;] == &#39;OPTIONS&#39;) {
     header(&#39;Access-Control-Allow-Headers: X-Requested-With&#39;);
   }
   exit;
-}</code></pre>
-<p>Now the XHR CORS request allows the <code>X-Requested-With</code> header, the rest of my code remain in place, and the flag to indicate it&#39;s an Ajax request if the <code>X-Requested-Header</code> is present works as it did before.</p>
-<h2>Avoid preflight if possible</h2>
-<p>Jumping through these hoops was pretty tricky, and only after I solved this puzzle did I breakout <a href="http://www.wireshark.org/">Wireshark</a> for packet sniffing - which might have helped to debug the whole issue in
+}
+</code></pre><p>Now the XHR CORS request allows the <code>X-Requested-With</code> header, the rest of my code remain in place, and the flag to indicate it&#39;s an Ajax request if the <code>X-Requested-Header</code> is present works as it did before.</p>
+<h2>Avoid preflight if possible</h2><p>Jumping through these hoops was pretty tricky, and only after I solved this puzzle did I breakout <a href="http://www.wireshark.org/">Wireshark</a> for packet sniffing - which might have helped to debug the whole issue in
 the first place.</p>
 <p>Funnily enough, when making a CORS request using jQuery, the JavaScript library <em>specifically</em> <a href="https://github.com/jquery/jquery/blob/master/src/ajax/xhr.js#L95">avoids setting the custom header</a>, along with a word of warning to developers:</p>
 <blockquote>
 <p>// For cross-domain requests, seeing as conditions for a preflight are akin to a jigsaw puzzle, we simply never set it to be sure.</p>
 </blockquote>
-<p>So possibly the best advice, if possible, is to avoid setting the custom header if you don&#39;t want to do the preflight dance. Otherwise good luck my friend, I hope this has helped!</p>
-<p class="follow">Posted 21-Apr 2011 under ajax &amp; code &amp; cors &amp; javascript &amp; xhr. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+<p>So possibly the best advice, if possible, is to avoid setting the custom header if you don&#39;t want to do the preflight dance. Otherwise good luck my friend, I hope this has helped!</p><p class="follow">Posted 21-Apr 2011 under ajax &amp; code &amp; cors &amp; javascript &amp; xhr. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
 var disqus_url = 'http://remysharp.com/2011/04/21/getting-cors-working/';
-var disqus_title = 'Getting CORS Working';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
-</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.27"></script><script src="/js/index.js?2.27"></script><!--  
-  
- Carved up by hand using Harp and a shit load of hacking.
-  
-  Also, this:
-  
-  
-  
-                       \_            /;              _.._
-                       `\~--.._     //'            ,(+=\\\\
-                        `//////\  \\/;'             /~ (\\\\
-                          ~/////\~\`)'             /;   ))))
-                              `~'  |              ((`~/((((\
-                              ;'_\'\             /'))   )))))
-                             /~/ '" "'     _.  /'/\_ /^\`((( \
-                            `\/'       _.-~/--/ (  =(   | ,  |
-                                    _/~\_)_}___/^\/~`\.__\|==|
-                                   /uUUU)        )        |  |
-                                  (   / |      _-=o|\__ /'/~ \
-                                  ' /'  |     /(((((\`\(  |~\/
-                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
-                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
-                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
-                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
-                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
-                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
-                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
-               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
-            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
-             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
-             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
-             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
-            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
-            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
-           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
-         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
-       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
-      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
-     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
-                         (/-(/-(/-(/-(/-'
-  
-  
-  
-     – Remy
-  
-  --><!-- Env: production - static files--></body></html>
+var disqus_title = 'Getting CORS Working';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.30"></script><script src="/js/index.js?2.30"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- Env: production - static files--></body></html>

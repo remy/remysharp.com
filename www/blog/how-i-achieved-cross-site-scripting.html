@@ -1,15 +1,15 @@
-<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>How I achieved cross site scripting</title><meta name="description" content="How I achieved cross site scripting"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.27"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.27"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>How I achieved cross site scripting</title><meta name="description" content="How I achieved cross site scripting"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="Before I get flamed for claiming the impossible, this is how I achieved a goal that was entirely in AJAX, but I needed it to across different domains!
+Some background: Some time ago I found, and implemented this awesome heatmap click tracking for the company I work for.  However, since our test machines run everything from one machine (i.e. images and code), when it came to putting it live I never thought for a second it wouldn&#39;t work...which was the result.
+It was because the page was being served from one domain, while the click tracking data was being sent to our &#39;static&#39; (non-mod_perl) servers."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="How I achieved cross site scripting"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.30"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.30"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="blog-how-i-achieved-cross-site-scripting-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2007/01/20/auto-populating-select-boxes-using-jquery-ajax" title="Auto-populating Select Boxes using jQuery &amp; AJAX">Next</a></li><li class="prev"><a href="/2007/01/16/broken-ajax-nothing-coming-back" title="Broken Ajax? Nothing coming back?">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/01/18/how-i-achieved-cross-site-scripting" rel="bookmark" title="Permanent Link: How I achieved cross site scripting">How I achieved cross site scripting</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/how-i-achieved-cross-site-scripting.md">(edit)</a></small><div class="post-content">
-<p>Before I get flamed for claiming the impossible, this is how I achieved a goal that was entirely in AJAX, but I needed it to across different domains!</p>
+ga('send', 'pageview');</script></head><body id="blog-how-i-achieved-cross-site-scripting-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2007/01/20/auto-populating-select-boxes-using-jquery-ajax" title="Auto-populating Select Boxes using jQuery &amp; AJAX">Next</a></li><li class="prev"><a href="/2007/01/16/broken-ajax-nothing-coming-back" title="Broken Ajax? Nothing coming back?">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/01/18/how-i-achieved-cross-site-scripting" rel="bookmark" title="Permanent Link: How I achieved cross site scripting">How I achieved cross site scripting</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/how-i-achieved-cross-site-scripting.md">(edit)</a></small><div class="post-content"><p>Before I get flamed for claiming the impossible, this is how I achieved a goal that was entirely in AJAX, but I needed it to across different domains!</p>
 <p>Some background: Some time ago I found, and implemented this <a href="http://blog.corunet.com/english/the-definitive-heatmap">awesome heatmap click tracking</a> for the company I work for.  However, since our test machines run everything from one machine (i.e. images and code), when it came to putting it live I never thought for a second it wouldn&#39;t work...which was the result.</p>
 <p>It was because the page was being served from one domain, while the click tracking data was being sent to our &#39;static&#39; (non-<a href="http://perl.apache.org/">mod_perl</a>) servers.</p>
 <!--more-->
-
 <p>I&#39;m posting this up because I think the heatmap is a superb tool for companies, in particular the designers and the marketing people. </p>
 <p>Heatmaps will tell both groups whether a particular element is working to focus attention, or if in fact something else is drawing attention that they never thought of.</p>
 <p>The way I got around this was to send the data via an &#39;<acronym title="Inline Frame">iframe</acronym>&#39;.</p>
@@ -23,53 +23,52 @@ iframe.src=url;</code></p>
 <p>Here is a <a href="http://remysharp.com/wp-content/uploads/2007/01/crossdomain.html">simple example of it working</a> (note that Safari doesn&#39;t throw any errors on the cross domain button).</p>
 <p>Then I would style the iframe to sit outside of the window:</p>
 <p><code>position: absolute; left: -10000px</code></p>
-<p>Hopefully this is some use to someone else out there.</p>
-<p class="follow">Posted 18-Jan 2007 under ajax &amp; code &amp; heatmaps &amp; javascript. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+<p>Hopefully this is some use to someone else out there.</p><p class="follow">Posted 18-Jan 2007 under ajax &amp; code &amp; heatmaps &amp; javascript. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
 var disqus_url = 'http://remysharp.com/2007/01/18/how-i-achieved-cross-site-scripting/';
-var disqus_title = 'How I achieved cross site scripting';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
-</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.27"></script><script src="/js/index.js?2.27"></script><!--  
-  
- Carved up by hand using Harp and a shit load of hacking.
-  
-  Also, this:
-  
-  
-  
-                       \_            /;              _.._
-                       `\~--.._     //'            ,(+=\\\\
-                        `//////\  \\/;'             /~ (\\\\
-                          ~/////\~\`)'             /;   ))))
-                              `~'  |              ((`~/((((\
-                              ;'_\'\             /'))   )))))
-                             /~/ '" "'     _.  /'/\_ /^\`((( \
-                            `\/'       _.-~/--/ (  =(   | ,  |
-                                    _/~\_)_}___/^\/~`\.__\|==|
-                                   /uUUU)        )        |  |
-                                  (   / |      _-=o|\__ /'/~ \
-                                  ' /'  |     /(((((\`\(  |~\/
-                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
-                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
-                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
-                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
-                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
-                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
-                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
-               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
-            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
-             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
-             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
-             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
-            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
-            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
-           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
-         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
-       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
-      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
-     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
-                         (/-(/-(/-(/-(/-'
-  
-  
-  
-     – Remy
-  
-  --><!-- Env: production - static files--></body></html>
+var disqus_title = 'How I achieved cross site scripting';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.30"></script><script src="/js/index.js?2.30"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- Env: production - static files--></body></html>

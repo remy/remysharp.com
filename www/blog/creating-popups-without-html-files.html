@@ -1,35 +1,32 @@
-<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Creating popups without HTML files</title><meta name="description" content="Creating popups without HTML files"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.27"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.27"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Creating popups without HTML files</title><meta name="description" content="Creating popups without HTML files"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="I&#39;ll start this post by saying: I very very rarely ever need a popup window, and in fact usually just include an inline overlay. But sometimes the situation comes up when I need a popup - this was one of those times.
+One thing that always bugged me about dynamic popup windows when compared to dynamic iframes: you need a separate .html file to use as the target of the popup. I&#39;ve documented this process because it might help someone else. I&#39;m not saying you should use these methods, method 2 is particularly distasteful - I&#39;m just sayin&#39;: you can!
+Here&#39;s two methods where you don&#39;t need a separate file."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="Creating popups without HTML files"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.30"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.30"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="blog-creating-popups-without-html-files-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2013/04/19/i-know-jquery-now-what" title="I know jQuery. Now what?">Next</a></li><li class="prev"><a href="/2013/03/22/id-like-to-send-you-to-the-bacon-conference" title="I'd like to send you to the Bacon conference">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2013/04/02/creating-popups-without-html-files" rel="bookmark" title="Permanent Link: Creating popups without HTML files">Creating popups without HTML files</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/creating-popups-without-html-files.md">(edit)</a></small><div class="post-content">
-<p>I&#39;ll start this post by saying: I very very rarely ever need a popup window, and in fact usually just include an inline overlay. But sometimes the situation comes up when I need a popup - this was one of those times.</p>
+ga('send', 'pageview');</script></head><body id="blog-creating-popups-without-html-files-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2013/04/19/i-know-jquery-now-what" title="I know jQuery. Now what?">Next</a></li><li class="prev"><a href="/2013/03/22/id-like-to-send-you-to-the-bacon-conference" title="I'd like to send you to the Bacon conference">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2013/04/02/creating-popups-without-html-files" rel="bookmark" title="Permanent Link: Creating popups without HTML files">Creating popups without HTML files</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/creating-popups-without-html-files.md">(edit)</a></small><div class="post-content"><p>I&#39;ll start this post by saying: I very very rarely ever need a popup window, and in fact usually just include an inline overlay. But sometimes the situation comes up when I need a popup - this was one of those times.</p>
 <p>One thing that always bugged me about dynamic popup windows when compared to dynamic iframes: you need a separate <code>.html</code> file to use as the target of the popup. I&#39;ve documented this process because it might help someone else. I&#39;m not saying you <em>should</em> use these methods, method 2 is particularly distasteful - I&#39;m just sayin&#39;: <em>you can</em>!</p>
 <p>Here&#39;s two methods where you don&#39;t need a separate file.</p>
 <!--more-->
-
-<h2>Why do you want a dynamically generated popup?</h2>
-<p>For me there was a very specific situation, but one I&#39;ve come up against in the past is bookmarklets (and userscripts). If you have a bookmarklet, it&#39;s likely that the single JavaScript file (or inline code) will include the entire application. If you need a popup, then you need a static HTML file, which then also means you need to host said file.</p>
+<h2>Why do you want a dynamically generated popup?</h2><p>For me there was a very specific situation, but one I&#39;ve come up against in the past is bookmarklets (and userscripts). If you have a bookmarklet, it&#39;s likely that the single JavaScript file (or inline code) will include the entire application. If you need a popup, then you need a static HTML file, which then also means you need to host said file.</p>
 <p>If you can generate the popup target file on the fly, the code can remain entirely inside your JavaScript file and it has zero dependencies.</p>
 <p>I&#39;m just documenting what I did in case there&#39;s any other folk trying to pull off the same trick.</p>
-<h2>Method 1: using a data url</h2>
-<p>The data url, a beautiful thing:</p>
+<h2>Method 1: using a data url</h2><p>The data url, a beautiful thing:</p>
 <blockquote>
 <p>The data URI scheme is a URI scheme that provides a way to include data in-line in web pages as if they were external resources</p>
 </blockquote>
 <p><a href="http://en.wikipedia.org/wiki/Data_URL">Source: Wikipedia</a></p>
 <p>One common use of the data url is inline images in HTML or CSS files, usually looking something like:</p>
-<pre><code>data:image/png;base64,iVBORw0KG......</code></pre>
-<p>You can also use this same technique for <a href="data:text/html,&lt;title&gt;Hello%20Data%20URL&lt;%2Ftitle&gt;&lt;p&gt;File-less%20HTML%20page!&lt;%2Fp&gt;">HTML files too</a>:</p>
-<pre><code>data:text/html,&lt;title&gt;Hello Data URL&lt;/title&gt;&lt;p&gt;File-less HTML page!&lt;/p&gt;</code></pre>
-<p>With that, it means we can dynamically generate a popup window without a <code>.html</code> file clogging up our mojo:</p>
-<pre><code>window.open(&#39;data:text/html,&lt;title&gt;Hello Data URL&lt;/title&gt;&lt;p&gt;File-less HTML page!&lt;/p&gt;&#39;, &#39;Hello World&#39;, &#39;width=400,height=200&#39;);</code></pre>
-<p>This <a href="http://jsbin.com/etizam/1/edit">works</a> perfectly if all you want is a dynamic popup (that&#39;s supported in IE8 and others).</p>
+<pre><code>data:image/png;base64,iVBORw0KG......
+</code></pre><p>You can also use this same technique for <a href="data:text/html,&lt;title&gt;Hello%20Data%20URL&lt;%2Ftitle&gt;&lt;p&gt;File-less%20HTML%20page!&lt;%2Fp&gt;">HTML files too</a>:</p>
+<pre><code>data:text/html,&lt;title&gt;Hello Data URL&lt;/title&gt;&lt;p&gt;File-less HTML page!&lt;/p&gt;
+</code></pre><p>With that, it means we can dynamically generate a popup window without a <code>.html</code> file clogging up our mojo:</p>
+<pre><code>window.open(&#39;data:text/html,&lt;title&gt;Hello Data URL&lt;/title&gt;&lt;p&gt;File-less HTML page!&lt;/p&gt;&#39;, &#39;Hello World&#39;, &#39;width=400,height=200&#39;);
+</code></pre><p>This <a href="http://jsbin.com/etizam/1/edit">works</a> perfectly if all you want is a dynamic popup (that&#39;s supported in IE8 and others).</p>
 <p>However, if you want that popup to talk to the parent window that generated the popup in the first instance (which in my case was true), you&#39;re outta luck since <strong>the data url origin does not match the origin of the domain that created the popup</strong>, which basically equals <em>no dice</em>. So that&#39;s how I got the craziness you&#39;re about to see.</p>
-<h2>Method 2: using the parent page as the popup child</h2>
-<p>Um, what? This solution uses the HTML file that creates the popup as the <em>target</em> of the popup. Once open, the popup nukes the DOM and rewrites it with it&#39;s own.</p>
+<h2>Method 2: using the parent page as the popup child</h2><p>Um, what? This solution uses the HTML file that creates the popup as the <em>target</em> of the popup. Once open, the popup nukes the DOM and rewrites it with it&#39;s own.</p>
 <p>It&#39;s not a pretty solution, but works in some cases (mine in particular) and has the distinct advantage that the popup resides on the same domain as the parent, and thus allowed to talk directly to it.</p>
 <p>I should add that this method works for scripts that have been hardcoded in to the user&#39;s page. A plugin or a browser userscript would match this particular situation.</p>
 <p>A couple of additional caveats in an already crazy sounding solution are:</p>
@@ -60,62 +57,58 @@ function initPopupClient() {
 
   // or send it messages nicely
   window.opener.postMessage(&#39;This is less invasive I guess!&#39;);
-}</code></pre>
-<h3>Trashing the original DOM.</h3>
-<p>Since we&#39;re using the parent page as the popup source, we need to remove the DOM entirely and replace it with ours. By overwriting the contents of the HTML element we succeed in doing that:</p>
-<pre><code>document.documentElement.innerHTML = ...some new markup...</code></pre>
-<p>Here&#39;s a simple <a href="http://jsbin.com/ahomut/1/quiet">example</a> that only shows one sentence and doesn&#39;t include the alert (view the source to see what you were <em>supposed</em> to get).</p>
-<h3>Referring to the parent window</h3>
-<p>We do this in the regular way of accessing the <code>opener</code> property. This allows us direct access to any method, and if you&#39;re going to be nice, you&#39;ll just use the <code>postMessage</code> allowing the parent to just listen for message events:</p>
-<pre><code>window.opener.postMessage(JSON.stringify(someData));</code></pre>
-<h1>Disclaimer</h1>
-<p>Both these techniques are pretty extreme and you should consider you have good reason to actually use them. For my particular problem (which should be detailed in my next post) it was a necessary evil. Make sure you really don&#39;t want that hosted <code>.html</code> file! The only reason I came to this conclusion (of crazy hoop jumping) was because of my requirements for <a href="http://remote-tilt.com">remote-tilt.com</a>&#39;s polyfill script.</p>
-<p class="follow">Posted 2-Apr 2013 under bookmarklet &amp; code &amp; iframe &amp; javascript &amp; popup &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+}
+</code></pre><h3>Trashing the original DOM.</h3><p>Since we&#39;re using the parent page as the popup source, we need to remove the DOM entirely and replace it with ours. By overwriting the contents of the HTML element we succeed in doing that:</p>
+<pre><code>document.documentElement.innerHTML = ...some new markup...
+</code></pre><p>Here&#39;s a simple <a href="http://jsbin.com/ahomut/1/quiet">example</a> that only shows one sentence and doesn&#39;t include the alert (view the source to see what you were <em>supposed</em> to get).</p>
+<h3>Referring to the parent window</h3><p>We do this in the regular way of accessing the <code>opener</code> property. This allows us direct access to any method, and if you&#39;re going to be nice, you&#39;ll just use the <code>postMessage</code> allowing the parent to just listen for message events:</p>
+<pre><code>window.opener.postMessage(JSON.stringify(someData));
+</code></pre><h1>Disclaimer</h1><p>Both these techniques are pretty extreme and you should consider you have good reason to actually use them. For my particular problem (which should be detailed in my next post) it was a necessary evil. Make sure you really don&#39;t want that hosted <code>.html</code> file! The only reason I came to this conclusion (of crazy hoop jumping) was because of my requirements for <a href="http://remote-tilt.com">remote-tilt.com</a>&#39;s polyfill script.</p><p class="follow">Posted 2-Apr 2013 under bookmarklet &amp; code &amp; iframe &amp; javascript &amp; popup &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
 var disqus_url = 'http://remysharp.com/2013/04/02/creating-popups-without-html-files/';
-var disqus_title = 'Creating popups without HTML files';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
-</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.27"></script><script src="/js/index.js?2.27"></script><!--  
-  
- Carved up by hand using Harp and a shit load of hacking.
-  
-  Also, this:
-  
-  
-  
-                       \_            /;              _.._
-                       `\~--.._     //'            ,(+=\\\\
-                        `//////\  \\/;'             /~ (\\\\
-                          ~/////\~\`)'             /;   ))))
-                              `~'  |              ((`~/((((\
-                              ;'_\'\             /'))   )))))
-                             /~/ '" "'     _.  /'/\_ /^\`((( \
-                            `\/'       _.-~/--/ (  =(   | ,  |
-                                    _/~\_)_}___/^\/~`\.__\|==|
-                                   /uUUU)        )        |  |
-                                  (   / |      _-=o|\__ /'/~ \
-                                  ' /'  |     /(((((\`\(  |~\/
-                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
-                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
-                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
-                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
-                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
-                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
-                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
-               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
-            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
-             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
-             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
-             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
-            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
-            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
-           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
-         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
-       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
-      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
-     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
-                         (/-(/-(/-(/-(/-'
-  
-  
-  
-     – Remy
-  
-  --><!-- Env: production - static files--></body></html>
+var disqus_title = 'Creating popups without HTML files';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.30"></script><script src="/js/index.js?2.30"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- Env: production - static files--></body></html>

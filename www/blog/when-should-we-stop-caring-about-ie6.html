@@ -1,87 +1,80 @@
-<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>When should we stop caring about IE6?</title><meta name="description" content="When should we stop caring about IE6?"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.27"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.27"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>When should we stop caring about IE6?</title><meta name="description" content="When should we stop caring about IE6?"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="Microsoft&#39;s bastard child needs your love, but surely not forever?  Simon raises a point that even though IE8 is on it&#39;s way - due to IE6&#39;s market share, IE8 is almost good for nothing.
+I don&#39;t agree."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="When should we stop caring about IE6?"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:image:src" content="http://remysharp.com/wp-content/uploads/2008/03/msie-browser-version-adaption.png"/><meta name="twitter:card" content="summary_large_image"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.30"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.30"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="blog-when-should-we-stop-caring-about-ie6-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2008/03/13/presenting-jquery-at-qcon" title="Presenting jQuery at QCon">Next</a></li><li class="prev"><a href="/2008/03/09/idiot-proofing-the-jqueryready" title="Idiot Proofing the jQuery.ready">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2008/03/11/when-should-we-stop-caring-about-ie6" rel="bookmark" title="Permanent Link: When should we stop caring about IE6?">When should we stop caring about IE6?</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/when-should-we-stop-caring-about-ie6.md">(edit)</a></small><div class="post-content">
-<p>Microsoft&#39;s bastard child needs your love, but surely not forever?  <a href="http://remysharp.com/2008/03/06/ie8-hands-on-a-developers-view/#comment-53531">Simon raises a point</a> that even though IE8 is on it&#39;s way - due to IE6&#39;s market share, IE8 is almost good for nothing.</p>
+ga('send', 'pageview');</script></head><body id="blog-when-should-we-stop-caring-about-ie6-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2008/03/13/presenting-jquery-at-qcon" title="Presenting jQuery at QCon">Next</a></li><li class="prev"><a href="/2008/03/09/idiot-proofing-the-jqueryready" title="Idiot Proofing the jQuery.ready">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2008/03/11/when-should-we-stop-caring-about-ie6" rel="bookmark" title="Permanent Link: When should we stop caring about IE6?">When should we stop caring about IE6?</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/when-should-we-stop-caring-about-ie6.md">(edit)</a></small><div class="post-content"><p>Microsoft&#39;s bastard child needs your love, but surely not forever?  <a href="http://remysharp.com/2008/03/06/ie8-hands-on-a-developers-view/#comment-53531">Simon raises a point</a> that even though IE8 is on it&#39;s way - due to IE6&#39;s market share, IE8 is almost good for nothing.</p>
 <p>I don&#39;t agree.</p>
 <!--more-->
-
 <p>I&#39;ve found there&#39;s often web sites showing market share and charts of market share, but I&#39;ve yet to find somewhere showing show IE has grown.</p>
 <p>So I went to <a href="http://www.thecounter.com">TheCounter.com</a> and starting from <a href="http://www.thecounter.com/stats/1999/January/browser.php">Jan 1999</a> I pulled up all the records for IE until February 2008, and parsed them to create a chart showing the rise and fall of each IE version.</p>
-<h2>IE version data</h2>
-<p><img src="http://remysharp.com/wp-content/uploads/2008/03/msie-browser-version-adaption.png" width="600" height="400" alt="MSIE browser version adoption covering 1999 to 2008" title="MSIE browser version adoption" /></p>
+<h2>IE version data</h2><p><img src="http://remysharp.com/wp-content/uploads/2008/03/msie-browser-version-adaption.png" width="600" height="400" alt="MSIE browser version adoption covering 1999 to 2008" title="MSIE browser version adoption"></p>
 <p><a href="http://icanhaz.com/ie-adoption">Source chart URL</a></p>
-<h2>Chart notes</h2>
-<p>The chart shows every months worth of percentage take up for IE browsers 4 through 7 in the whole browser market.</p>
+<h2>Chart notes</h2><p>The chart shows every months worth of percentage take up for IE browsers 4 through 7 in the whole browser market.</p>
 <p>I&#39;ve included markers in the chart to highlight the launch of each new browser (from IE5 onwards).</p>
 <p>There looks like there may have been a data correction for IE7 around February 2007 which could explain the large dip.  Nothing particularly important happened during that period on the <a href="http://en.wikipedia.org/wiki/Browser_timeline">browser timelines</a>.</p>
-<h2>What does this show?</h2>
-<ul>
+<h2>What does this show?</h2><ul>
 <li>IE6s lengthy exposure to the market means that it&#39;s in more households that previous, and current incarnations of IE.</li>
 <li>When Microsoft bring out a new browser, it <em>does</em> gradually replace the previous browser.</li>
 <li>If you compare the progress of adoption when IE6 came out to when IE7 came out, they&#39;re near the same.  The difference is the previous browser&#39;s adoption and it&#39;s impact on these figures.</li>
 <li><a href="http://www.thecounter.com/stats/2008/February/browser.php">Today</a>, according to TheCounter.com, IE7 has just passed IE6.</li>
 <li>I believe the adoption of IE7 is not a great as IE6 (see period Aug 2001-Aug 2002 and Jul 2006-Jan 2008) will be due to greater choice of browsers on the market today - Firefox starts to have a <a href="http://en.wikipedia.org/wiki/Mozilla_Firefox#Market_adoption">significant market share</a> in 2006.</li>
 </ul>
-<h2>Conclusion</h2>
-<p>Generally, your normal user (i.e. not the techies) will upgrade their browser if it&#39;s forced upon them.  This is either through forced updates from Microsoft, or, more likely in my opinion: PC upgrades.</p>
+<h2>Conclusion</h2><p>Generally, your normal user (i.e. not the techies) will upgrade their browser if it&#39;s forced upon them.  This is either through forced updates from Microsoft, or, more likely in my opinion: PC upgrades.</p>
 <p>New PCs mean new browsers, and if you buy a machine today you&#39;ll have IE7.  In a year, if you buy a PC you&#39;ll have IE8 - and that&#39;s where the real take up will happen.  Since PCs are getting cheaper and more powerful (as they keep doing over the years), PC turnover increases.</p>
 <p>Sure Microsoft will advertise IE8, and this will encourage change, but I believe PC turnover will be one of the greatest factors driving the market shift.  </p>
-<h2>My prediction</h2>
-<p>Depending on your views, a browser below x% of the market does not have to be supported.  For me, this is any browser below the 10% mark.  If it&#39;s a standards based browser, then my layout will work anyway (I&#39;m looking at you Safari).</p>
+<h2>My prediction</h2><p>Depending on your views, a browser below x% of the market does not have to be supported.  For me, this is any browser below the 10% mark.  If it&#39;s a standards based browser, then my layout will work anyway (I&#39;m looking at you Safari).</p>
 <p>From this data, I&#39;m predicting that by 2010 IE6 will have a small enough market share to be ignored.</p>
 <p>That said, by then, we <em>should</em> be on Firefox 4-5, <del>IE10</del> IE9-beta and Safari 5.  </p>
 <p>Sure, 2010 is pretty far away right now, but it&#39;ll be here before you know it.  </p>
-<p>The bottom line is, as developers and designers, if we want to support the majority of users, we&#39;re going to have to support all the latest browsers, and for the big boys, Microsoft in particular (though if Google enter that market we could have another big boy on our hands) - we&#39;re going to have to support all the <a href="http://ejohn.org/blog/most-bizarre-ie-quirk/">stupid</a> <a href="http://remysharp.com/2007/02/10/ie-7-breaks-getelementbyid/">little</a> <a href="http://www.quirksmode.org/bugreports/archives/explorer_7/index.html">quirks</a> for last 3 revisions of the browser.</p>
-<p class="follow">Posted 11-Mar 2008 under ie &amp; ie6 &amp; ie8 &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+<p>The bottom line is, as developers and designers, if we want to support the majority of users, we&#39;re going to have to support all the latest browsers, and for the big boys, Microsoft in particular (though if Google enter that market we could have another big boy on our hands) - we&#39;re going to have to support all the <a href="http://ejohn.org/blog/most-bizarre-ie-quirk/">stupid</a> <a href="http://remysharp.com/2007/02/10/ie-7-breaks-getelementbyid/">little</a> <a href="http://www.quirksmode.org/bugreports/archives/explorer_7/index.html">quirks</a> for last 3 revisions of the browser.</p><p class="follow">Posted 11-Mar 2008 under ie &amp; ie6 &amp; ie8 &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
 var disqus_url = 'http://remysharp.com/2008/03/11/when-should-we-stop-caring-about-ie6/';
-var disqus_title = 'When should we stop caring about IE6?';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
-</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.27"></script><script src="/js/index.js?2.27"></script><!--  
-  
- Carved up by hand using Harp and a shit load of hacking.
-  
-  Also, this:
-  
-  
-  
-                       \_            /;              _.._
-                       `\~--.._     //'            ,(+=\\\\
-                        `//////\  \\/;'             /~ (\\\\
-                          ~/////\~\`)'             /;   ))))
-                              `~'  |              ((`~/((((\
-                              ;'_\'\             /'))   )))))
-                             /~/ '" "'     _.  /'/\_ /^\`((( \
-                            `\/'       _.-~/--/ (  =(   | ,  |
-                                    _/~\_)_}___/^\/~`\.__\|==|
-                                   /uUUU)        )        |  |
-                                  (   / |      _-=o|\__ /'/~ \
-                                  ' /'  |     /(((((\`\(  |~\/
-                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
-                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
-                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
-                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
-                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
-                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
-                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
-               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
-            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
-             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
-             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
-             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
-            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
-            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
-           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
-         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
-       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
-      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
-     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
-                         (/-(/-(/-(/-(/-'
-  
-  
-  
-     – Remy
-  
-  --><!-- Env: production - static files--></body></html>
+var disqus_title = 'When should we stop caring about IE6?';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.30"></script><script src="/js/index.js?2.30"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- Env: production - static files--></body></html>

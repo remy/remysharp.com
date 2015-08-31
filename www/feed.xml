@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="http://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>http://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Fri, 28 Aug 2015 16:15:36 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Diversity Scholarships for ffconf</title><guid isPermaLink="false">diversity-scholarships</guid><link>http://remysharp.com/2015/08/28/diversity-scholarships</link><pubDate>Fri, 28 Aug 2015 16:15:36 +0000</pubDate><description><![CDATA[This post outlines a new diversity scholarships programme that I want to introduce for ffconf. It&#39;s entirely possible that this does not apply to you, my dear reader, but you still have an important role to play: please pass on the message and this link to help seek those out who can make use of the scholarships.]]></description><content:encoded><![CDATA[
-<p>This post outlines a new diversity scholarships programme that I want to introduce for <a href="http://ffconf.org">ffconf</a>. It&#39;s entirely possible that this does not apply to you, my dear reader, but you still have an important role to play: please pass on the message and <a href="http://ffconf.org/scholarship">this link</a> to help seek those out who can make use of the scholarships.</p>
-<h2>What are the scholarships?</h2>
-<p>Scholarships are available for anyone in an under-represented group in tech. This includes (but is not limited to): people of colour, LGBTQIA+ people, women and disabled people.</p>
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Fri, 28 Aug 2015 16:15:36 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Diversity Scholarships for ffconf</title><guid isPermaLink="false">diversity-scholarships</guid><link>https://remysharp.com/2015/08/28/diversity-scholarships</link><pubDate>Fri, 28 Aug 2015 16:15:36 +0000</pubDate><description><![CDATA[This post outlines a new diversity scholarships programme that I want to introduce for ffconf. It&#39;s entirely possible that this does not apply to you, my dear reader, but you still have an important role to play: please pass on the message and this link to help seek those out who can make use of the scholarships.]]></description><content:encoded><![CDATA[<p>This post outlines a new diversity scholarships programme that I want to introduce for <a href="http://ffconf.org">ffconf</a>. It&#39;s entirely possible that this does not apply to you, my dear reader, but you still have an important role to play: please pass on the message and <a href="http://ffconf.org/scholarship">this link</a> to help seek those out who can make use of the scholarships.</p>
+<!--more-->
+<h2>What are the scholarships?</h2><p>Scholarships are available for anyone in an under-represented group in tech. This includes (but is not limited to): people of colour, LGBTQIA+ people, women and disabled people.</p>
 <p>We have a limited number of scholarships available which includes a ticket to the day ffconf event, travel to Brighton (from your city) and hotel as required.</p>
-<h2>How to apply</h2>
-<p>Please answer the following questions and email <a href="mailto:julie@leftlogic.com">Julie</a> or <a href="mailto:remy@leftlogic.com">myself, Remy</a>. You don&#39;t have to explain your personal situation to us (but you can of course, if you want to). We trust you in this point :)</p>
+<h2>How to apply</h2><p>Please answer the following questions and email <a href="mailto:julie@leftlogic.com">Julie</a> or <a href="mailto:remy@leftlogic.com">myself, Remy</a>. You don&#39;t have to explain your personal situation to us (but you can of course, if you want to). We trust you in this point :)</p>
 <ol>
 <li>Who are you?</li>
 <li>Where would you be travelling from (airport or city)?</li>
@@ -13,8 +11,7 @@
 </ol>
 <p>Please note that your email will be treated with the utmost privacy, and we will not publicly announce who the diversity scholarships go to (though you&#39;re welcome to say so yourself).</p>
 <p><strong>Deadline for applications: Friday 2nd Oct, 2015.</strong></p>
-<h2>Why?</h2>
-<p>In the early part of this year I had the idea that we could get every delegate to ffconf a &quot;keep cup&quot; with a nice simple ffconf logo on it as a cool little souvenir of the event. Something to make what is already (hopefully) a great day, that tiny bit more special.</p>
+<h2>Why?</h2><p>In the early part of this year I had the idea that we could get every delegate to ffconf a &quot;keep cup&quot; with a nice simple ffconf logo on it as a cool little souvenir of the event. Something to make what is already (hopefully) a great day, that tiny bit more special.</p>
 <p>The costs came back quoting us around £1,300. Not a huge amount, but it would also come out of my company, Left Logic&#39;s pocket.</p>
 <p>Then a few days ago I saw <a href="https://twitter.com/una/status/636643450754994176">this tweet from Una Kravets (@una)</a>. She posted how she was able to attend SassConf 2013 through a diversity programme they provided, and has gone on to travel, speak, start a meetup, and closes with:</p>
 <blockquote>
@@ -23,13 +20,12 @@
 <p>I hadn&#39;t quite wrapped my head around what a diversity scholarship looked like until I read Una&#39;s post in full, and then it clicked. The same night, I decided that instead of spending our money on something that was nice for a large group - we should spend this money on providing flight and hotels for diversity tickets.</p>
 <p>So we have rounded the budget up to £1,500 for flights and hotel for at least 3 people (though it all depends on where you fly from, i.e. a diversity scholarship for someone travelling from Australia will blow our entire budget), but we&#39;ll stretch it as far as we can.</p>
 <p>Again, this scholarship isn&#39;t sponsored, this is from Remy and Julie. No, I don&#39;t want a medal(!) just trying to help in a small way.</p>
-<h2>Acknowledgements</h2>
-<p>I&#39;ve taken either some copy or inspiration from <a href="http://sassconf.com/#scholarships">SassConf</a> and <a href="http://blog.otsconf.com/post/121589262220/how-to-apply-for-community-and-diversity-tickets">OTSConf</a>.</p>
+<h2>Acknowledgements</h2><p>I&#39;ve taken either some copy or inspiration from <a href="http://sassconf.com/#scholarships">SassConf</a> and <a href="http://blog.otsconf.com/post/121589262220/how-to-apply-for-community-and-diversity-tickets">OTSConf</a>.</p>
 <p>Again, if this doesn&#39;t apply to you, please please can you pass on the message and reach out to anyone you know that might benefit from one of these scholarship places.</p>
-]]></content:encoded></item><item><title>Five</title><guid isPermaLink="false">five</guid><link>http://remysharp.com/2015/08/17/five</link><pubDate>Mon, 17 Aug 2015 15:45:32 +0000</pubDate><description><![CDATA[Tia was our first born. I know I don&#39;t write about Ellis and Seren, but I get to look into their eyes and tell them that I love them every day. Tia never heard my voice. She never opened her eyes. I&#39;ll never know what colour eyes she has. Ever.
-Tia would be 5 this month. This is for her.]]></description><content:encoded><![CDATA[
-<p>Tia was our first born. I know I don&#39;t write about Ellis and Seren, but I get to look into their eyes and tell them that I love them every day. Tia never heard my voice. She never opened her eyes. I&#39;ll never know what colour eyes she has. Ever.</p>
+]]></content:encoded></item><item><title>Five</title><guid isPermaLink="false">five</guid><link>https://remysharp.com/2015/08/17/five</link><pubDate>Mon, 17 Aug 2015 15:45:32 +0000</pubDate><description><![CDATA[Tia was our first born. I know I don&#39;t write about Ellis and Seren, but I get to look into their eyes and tell them that I love them every day. Tia never heard my voice. She never opened her eyes. I&#39;ll never know what colour eyes she has. Ever.
+Tia would be 5 this month. This is for her.]]></description><content:encoded><![CDATA[<p>Tia was our first born. I know I don&#39;t write about Ellis and Seren, but I get to look into their eyes and tell them that I love them every day. Tia never heard my voice. She never opened her eyes. I&#39;ll never know what colour eyes she has. Ever.</p>
 <p>Tia would be 5 this month. This is for her.</p>
+<!--more-->
 <p>Tia was born on the last day of August and each year after August quietly creeps in with it&#39;s pain and sorrow. Often I&#39;ll need to stand still to notice it. Sometimes, like this year, it comes early and hits me harder.</p>
 <p>It was mid-July and everything felt like it was shrouded in a heavy fog. I felt like any moment I would just collapse under the sheer weight of just existing without my daughter and I&#39;d be crushed. Literally.</p>
 <p>Losing Tia to stillbirth is hard in a way that people around us don&#39;t see her and quite often don&#39;t really know what stillbirth means. They don&#39;t know that she existed, and those that do aren&#39;t sure whether or not to mention her name.</p>
@@ -39,8 +35,7 @@ Tia would be 5 this month. This is for her.]]></description><content:encoded><![
 <p>There&#39;s no way to answer these questions without something feeling wrong.</p>
 <p>After many, many months our answers have adapted to honour Tia but avoid the awkwardness when we respond fully and truthfully to those questions. Instead we&#39;ll reply with: &quot;we have two <em>at home</em>&quot;. Our first, she&#39;s not at home. We carry her in our hearts. She&#39;s all around us, and she lays in a place called Angel&#39;s Corner.</p>
 <p><img src="/images/angels-corner.jpg" alt="Angel&#39;s Corner"></p>
-<h2>My view on the world changed</h2>
-<p>My view on the world changed entirely after Tia was born. When I&#39;m in a flower shop, to me, flowers are for funerals and gravesides, so it always surprises me when I see birthday balloons and cards with flowers celebrating babies. I have to remember people use flowers for other occasions too.</p>
+<h2>My view on the world changed</h2><p>My view on the world changed entirely after Tia was born. When I&#39;m in a flower shop, to me, flowers are for funerals and gravesides, so it always surprises me when I see birthday balloons and cards with flowers celebrating babies. I have to remember people use flowers for other occasions too.</p>
 <hr>
 <p>I hate to admit it, but every one of my friends who are pregnant: I&#39;m scared for them. I don&#39;t want anyone going through what we did, and yet hundreds upon hundreds more will every year. It&#39;s a roll of the dice and nothing more. Some wont survive. Some will. We think we can control our lives and protect those around us. We can&#39;t. This breaks my heart and scares me <em>only</em> because it happened. The unthinkable happened. It happens. Unfairly. If you and your partner are pregnant, please take a look at <a href="http://www.countthekicks.org.uk/">count the kicks</a>.</p>
 <hr>
@@ -61,31 +56,29 @@ I notice the golden light and long shadows in August and September because we sa
 I can't ever see myself leaving Brighton because my baby is buried here, and if I didn't live here, who would visit her graveside?
 I don't know what colour Tia's eyes are.
 
--->]]></content:encoded></item><item><title>I thought paypal was better...</title><guid isPermaLink="false">i-thought-paypal-was-better</guid><link>http://remysharp.com/2015/08/10/i-thought-paypal-was-better</link><pubDate>Mon, 10 Aug 2015 12:59:58 +0000</pubDate><description><![CDATA[We&#39;ve been using PayPal for ffconf since 2009. The first year it took the full 6 months of sale to sell ~200 tickets. In 2010 it took 3 months to sell 283 tickets. 2011, 4 days - and that was the first of the trouble. 2012 to 2015, it&#39;s taken under 10 minutes.]]></description><content:encoded><![CDATA[
-<p>We&#39;ve been using PayPal for <a href="http://ffconf.org">ffconf</a> since 2009. The first year it took the full 6 months of sale to sell ~200 tickets. In 2010 it took 3 months to sell 283 tickets. 2011, 4 days - and that was the first of the trouble. 2012 to 2015, it&#39;s taken under 10 minutes.</p>
-<h2>The first trouble</h2>
-<p>The troubles that <a href="http://www.creativebloq.com/netmag/burned-paypal-9126093">PayPal had with effectively killing conferences was well documented</a>.</p>
+-->]]></content:encoded></item><item><title>I thought paypal was better...</title><guid isPermaLink="false">i-thought-paypal-was-better</guid><link>https://remysharp.com/2015/08/10/i-thought-paypal-was-better</link><pubDate>Mon, 10 Aug 2015 12:59:58 +0000</pubDate><description><![CDATA[We&#39;ve been using PayPal for ffconf since 2009. The first year it took the full 6 months of sale to sell ~200 tickets. In 2010 it took 3 months to sell 283 tickets. 2011, 4 days - and that was the first of the trouble. 2012 to 2015, it&#39;s taken under 10 minutes.]]></description><content:encoded><![CDATA[<p>We&#39;ve been using PayPal for <a href="http://ffconf.org">ffconf</a> since 2009. The first year it took the full 6 months of sale to sell ~200 tickets. In 2010 it took 3 months to sell 283 tickets. 2011, 4 days - and that was the first of the trouble. 2012 to 2015, it&#39;s taken under 10 minutes.</p>
+<!--more-->
+<h2>The first trouble</h2><p>The troubles that <a href="http://www.creativebloq.com/netmag/burned-paypal-9126093">PayPal had with effectively killing conferences was well documented</a>.</p>
 <p>PayPal had &quot;limited&quot; our funds the first year (2011). There was an &quot;unexpected spike&quot; in our transactions which caused a red flag. Fair enough. The funds were locked until the event was over in November 2011 (IIRC we&#39;d moved most of the funds out quickly and they were only holding around £6,000) - but it&#39;s important to note that Julie and I have always bank-rolled the year&#39;s event with the previous year&#39;s profits.</p>
 <p>Specifically, we know that the event covers our costs (both expenses like the venue, and our operating costs). So we can afford to pay the venue ahead of time without the funds from the tickets.</p>
-<h2>A hero in the midst</h2>
-<p>In 2013 it happened again, and somehow <a href="https://twitter.com/billwscott">Bill Scott</a> got wind of our troubles and explained that he was carrying the message back to the very top dogs (at the time a new CEO was in place and working hard to change PayPal&#39;s reputation).</p>
+<h2>A hero in the midst</h2><p>In 2013 it happened again, and somehow <a href="https://twitter.com/billwscott">Bill Scott</a> got wind of our troubles and explained that he was carrying the message back to the very top dogs (at the time a new CEO was in place and working hard to change PayPal&#39;s reputation).</p>
 <p>He did an amazing job. Something had shifted in PayPal and they (the company) appeared to understand recurring events and how transactions would work.</p>
 <p>2014&#39;s tickets sold and there wasn&#39;t a peep from PayPal at all. It seems like it was all good.</p>
 <p>But...</p>
-<h2>2015 and 1 month after selling out</h2>
-<p>We released tickets for ffconf 2015 a month ago. We sold out in (two batched totalling) 7 minutes.</p>
+<h2>2015 and 1 month after selling out</h2><p>We released tickets for ffconf 2015 a month ago. We sold out in (two batched totalling) 7 minutes.</p>
 <p>As usual, I removed <em>some</em> funds from PayPal, and left around £15,000 for any refunds and anticipation of any queries from PayPal (old habits and all).</p>
 <p>And here&#39;s when it goes all wrong...</p>
 <p>This account is so there&#39;s something written about how it&#39;s going wrong, because I&#39;m having <em>a lot</em> of trouble getting information into PayPal directly.</p>
-<h2>Going wrong</h2>
-<p>The timeline:</p>
+<h2>Going wrong</h2><p>The timeline:</p>
 <ul>
 <li>I get a phone call (good) at 10am - but no information, just that &quot;John&quot; is calling from PayPal to speak to me, and that they&#39;ll email.</li>
 <li>I get an email, asking for the following from me:</li>
 </ul>
 <blockquote>
-<p>Your account has recently been reviewed by our merchant team due to the following:
- - Increase in volumes processed</p>
+<p>Your account has recently been reviewed by our merchant team due to the following:</p>
+<ul>
+<li>Increase in volumes processed</li>
+</ul>
 <p>We tried to call you on 10/08/2015, but we couldn&#39;t reach you. To allow time to review this in more detail, we&#39;ve temporarily limited what you can do with your account until you submit the information you need to provide and take the actions listed.</p>
 <p>Check that you&#39;ve answered all questions and provided all information we ask for to restore your account as soon as possible.</p>
 <ul>
@@ -119,18 +112,18 @@ I don't know what colour Tia's eyes are.
 <div class="update">
 <strong>Updated 2015-08-11:</strong> the account limit has been removed. I&#39;m not 100% sure why, since the only information I provided was a slightly ranty email. It&#39;s quite possibly <em>this</em> blog post that helped, or not. I&#39;m not entirely sure!.
 </div>
-]]></content:encoded></item><item><title>Notes on porting my Pebble app to SDK3</title><guid isPermaLink="false">notes-on-porting-my-pebble-app-to-sdk-3</guid><link>http://remysharp.com/2015/07/29/notes-on-porting-my-pebble-app-to-sdk-3</link><pubDate>Wed, 29 Jul 2015 14:32:03 +0000</pubDate><description><![CDATA[Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.
-In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).]]></description><content:encoded><![CDATA[
-<p>Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.</p>
+]]></content:encoded></item><item><title>Notes on porting my Pebble app to SDK3</title><guid isPermaLink="false">notes-on-porting-my-pebble-app-to-sdk-3</guid><link>https://remysharp.com/2015/07/29/notes-on-porting-my-pebble-app-to-sdk-3</link><pubDate>Wed, 29 Jul 2015 14:32:03 +0000</pubDate><description><![CDATA[Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.
+In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).]]></description><content:encoded><![CDATA[<p>Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.</p>
 <p>In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).</p>
-<h2>Layout</h2>
-<p>With my app, I have a <code>ActionBarLayer</code> on the right with arrows and <code>TextLayer</code>s with the second countdown. I noticed when deploying to BASALT, the position was off, and in fact everything was closer.</p>
+<!--more-->
+<h2>Layout</h2><p>With my app, I have a <code>ActionBarLayer</code> on the right with arrows and <code>TextLayer</code>s with the second countdown. I noticed when deploying to BASALT, the position was off, and in fact everything was closer.</p>
 <p>I did some simple repositioning, but you can see from the screenshot below that the <code>ActionBarLayer</code> is actually slightly wider:</p>
 <p><img src="/images/pebble-comparison1.png" alt="APLITE vs BASALT side-by-side"></p>
 <p>This is emphasised when the count is actually going down:</p>
 <p><img src="/images/pebble-comparison2.png" alt="APLITE vs BASALT side-by-side"></p>
 <p>This is due to BASALT being &quot;full screen&quot; by default. So to compensate for this, I need to do conditional positioning on the elements. For the position of the <code>TextLayer</code>, I&#39;m using <code>134 - ACTION_BAR_WIDTH</code> (which is 30 for BASALT and 20 for APLITE):</p>
-<pre><code class="language-cpp">s_textlayer_120 = text_layer_create(GRect(0, 12, 134 - ACTION_BAR_WIDTH, 42));</code></pre>
+<pre><code class="language-cpp">s_textlayer_120 = text_layer_create(GRect(0, 12, 134 - ACTION_BAR_WIDTH, 42));
+</code></pre>
 <p>To get the top positioning on the <code>TextLayer</code>s I couldn&#39;t seem to calculate the values correctly, so I had a conditional set of defines:</p>
 <pre><code class="language-cpp">#ifdef PBL_PLATFORM_BASALT
   #define MENU_TOP 16
@@ -140,14 +133,13 @@ In particular, I wanted the resting time to show in green and overtime to show a
   #define MENU_TOP 6
   #define MENU_MIDDLE 54
   #define MENU_BOTTOM 102
-#endif</code></pre>
-<h2>Developing for APLITE <em>and</em> BASALT</h2>
-<p>I&#39;ve got an original (kickstarter) Pebble and a Pebble Time. I&#39;m used to deploying to devices (rather than emulators, though I&#39;ll come on to this).</p>
+#endif
+</code></pre>
+<h2>Developing for APLITE <em>and</em> BASALT</h2><p>I&#39;ve got an original (kickstarter) Pebble and a Pebble Time. I&#39;m used to deploying to devices (rather than emulators, though I&#39;ll come on to this).</p>
 <p>However, I found (after a <em>lot</em> of failure) that you can&#39;t develop for more than one Pebble device at a time. Importantly, on the phone Pebble app (be it Pebble or Pebble Time) <strong>you can only have one watch enabled for development</strong>.</p>
 <p>The workaround is to keep switching between the two apps, flipping the developer checkbox.</p>
 <p>Or...use the emulator on the command line. It&#39;s pretty solid, and conveniently you can have both the BASALT <em>and</em> APLITE running side by side (as you seen from my shots above).</p>
-<h2>UI tweaks</h2>
-<p>Since my Rest app is designed to be used in the gym (I use the gym 4 times a week and use the Rest app <em>all</em> the time), there&#39;s a few important requirements:</p>
+<h2>UI tweaks</h2><p>Since my Rest app is designed to be used in the gym (I use the gym 4 times a week and use the Rest app <em>all</em> the time), there&#39;s a few important requirements:</p>
 <ul>
 <li>Clear to read (quickly)</li>
 <li>Show the time</li>
@@ -157,36 +149,31 @@ In particular, I wanted the resting time to show in green and overtime to show a
 <p>What I needed to specifically do was ensure the <code>StatusBarLayer</code> was <em>under</em> my <code>ActionBarLayer</code>, otherwise you get this effect, where the <code>StatusBarLayer</code> cuts into the menu:</p>
 <p><img src="/images/pebble-status-layer.png" alt="BASALT status bar layer order"></p>
 <p>The fix is to simply ensure the <code>ActionBarLayer</code> is drawn <em>after</em> the <code>StatusBarLayer</code>.</p>
-<h2>Get it</h2>
-<p>So if you have a Pebble Time, or Pebble OG, and you use the gym, you can get the <a href="http://apps.getpebble.com/en_US/application/53ff41ed8cdf37902b000050">free app here</a> - and don&#39;t forget to <em>heart</em> it!</p>
-]]></content:encoded></item><item><title>My Pebble</title><guid isPermaLink="false">my-pebble</guid><link>http://remysharp.com/2015/07/22/my-pebble</link><pubDate>Wed, 22 Jul 2015 15:37:23 +0000</pubDate><description><![CDATA[Back in April 2012 I joined the bandwagon and backed the hyped kickerstarter campaign for the very first Pebble.
+<h2>Get it</h2><p>So if you have a Pebble Time, or Pebble OG, and you use the gym, you can get the <a href="http://apps.getpebble.com/en_US/application/53ff41ed8cdf37902b000050">free app here</a> - and don&#39;t forget to <em>heart</em> it!</p>
+]]></content:encoded></item><item><title>My Pebble</title><guid isPermaLink="false">my-pebble</guid><link>https://remysharp.com/2015/07/22/my-pebble</link><pubDate>Wed, 22 Jul 2015 15:37:23 +0000</pubDate><description><![CDATA[Back in April 2012 I joined the bandwagon and backed the hyped kickerstarter campaign for the very first Pebble.
 After waiting way way too long and abandoning my original choice for an orange watch I was forced to choose the black, only to get my hands on it earlier.
 I also hadn&#39;t worn a watch in well over 15 years. I&#39;m not 100% what prompted me to buy the watch. Perhaps the promise of an open source platform...?
 When it fin-nal-ly arrived, what I noticed immediately was that it was massive on my wrist. The strap was particularly large and never really felt snug.
 I figured it wouldn&#39;t even last 3 months on my wrist.
 
-What was the point of the Pebble?
-The Pebble gave me one important (to me) feature. Text messages (and calls) would vibrate on my wrist.
+What was the point of the Pebble?The Pebble gave me one important (to me) feature. Text messages (and calls) would vibrate on my wrist.
 I&#39;d found that when I was away from home, I&#39;d nearly always miss text messages from my wife. Even when my phone was on vibrate and loud, I&#39;d still miss them.
 A small vibration on my wrist would subtlety alert me to something I could decide to action or not. For me, this was a big deal and an important feature.
 
 For the first 3 months it was a novelty. I kept reading about cool apps that could do text responses - but alas I was using an iPhone and none of this functionality was available to my phone.
 The first turning point to my unimpressed state was spending 1 month trailing a move to Android. This experience totally opened up the Pebble&#39;s functionality to me. But that was just a trial, and I would move back to the (limiting) iPhone.
 So, why and how am I still wearing my Pebble today?
-My Pebble today
-Some 2 years later I still wear my Pebble. Every day. It helps that I finally ditched my iPhone for an Android (a OnePlus One - and that&#39;s another blog post).
+My Pebble todaySome 2 years later I still wear my Pebble. Every day. It helps that I finally ditched my iPhone for an Android (a OnePlus One - and that&#39;s another blog post).
 The strap has broken, it needs charging once a week (insane if you compare to a regular watch) and the bottom right action button (1 out of 4 buttons) is playing up.
 One strange thing that kept happening, particularly strange if you consider how conservative the British are: random people would ask my &quot;how am I finding my watch?&quot;. A guy on a plane, someone in the gym changing rooms, it was all very strange (to me).
 But with all these issues, the clunkiness and being forced to converse with other human beings: why am I still wearing it??!
 I customised it. I made it mine. It&#39;s my watch, and there&#39;s no other watch like it.
-Open source: learning &amp; modifying other people&#39;s&nbsp;code
-I&#39;d tried in the past to make my own watch face but failed pretty hard. But then my second attempt took an existing watch face and made my own modifications, including using a custom font.
+Open source: learning &amp; modifying other people&#39;s&nbsp;codeI&#39;d tried in the past to make my own watch face but failed pretty hard. But then my second attempt took an existing watch face and made my own modifications, including using a custom font.
 There is a memory leak in the original code that causes the watch face to crash every now and then, and I&#39;ll likely get around to debugging and fixing it...one day.
 A tiny note: since I forked the project, the license on Simply Clean has changed/been removed. It doesn&#39;t affect my code, but I thought it was fair to point out.
 I used CloudPebble for all of the development I&#39;ve done so far on the Pebble, and it&#39;s an absolutely superb resource.
 
-I know JavaScript!
-Although there&#39;s a couple of limitations in the JS apps, the simple fact is: I can create my ideas as JavaScript based Pebble apps in a matter of hours.
+I know JavaScript!Although there&#39;s a couple of limitations in the JS apps, the simple fact is: I can create my ideas as JavaScript based Pebble apps in a matter of hours.
 I recently wrote a quick interface to a local bus time webapp that I wrote. Now from my wrist, in a few presses I have the bus times on my wrist.
 From a practical use, this is actually easier than using my phone because it takes a few seconds to do the geo-lookup and then request the content from the bus website, so when I&#39;m rushing around in the morning, I don&#39;t have to mess around with my phone.
 I also wrote a simple prototype with a Spark that I could control LEDs from my watch. Pointless, but cool (see this short video demo).
@@ -196,49 +183,41 @@ They only work whilst you have a connection from your watch to your phone (since
 There&#39;s a laggy response time on the button presses, particularly (I&#39;ve noticed) going backwards through the app (or unloading)
 Firing up the JS based Pebble app can interfere with apps running on the phone - I noticed that it would stop my OnePlus One&#39;s camera from recording video as I launch the JS app (which is where there&#39;s no video yet)
 
-I (kinda) know C too...
-The actual reason the button is failing on my Pebble is because I use it so much: I wrote a C based app that I use in the gym to time my rest time between sets. I called it (cleverly...) Rest.
+I (kinda) know C too...The actual reason the button is failing on my Pebble is because I use it so much: I wrote a C based app that I use in the gym to time my rest time between sets. I called it (cleverly...) Rest.
 
 Its simple. No animations, no nonsense. Three pre-set (configurable) times in seconds, and a timer. I&#39;m in the gym 4 times a week, and usually have around 20-25 sets. I use my app between every set. My app is exactly what I need for the task I perform multiple times a day.
-How it affects my daily routine
-As with the Rest app being part of my daily routing, the alarms are also an important part of my routing. I have alarms set throughout the day to remind me exactly when I need to eat. Silly as it sounds, making the watch integral to my daily routine is what&#39;s given me a reason to keep it charged and keep it on.
+How it affects my daily routineAs with the Rest app being part of my daily routing, the alarms are also an important part of my routing. I have alarms set throughout the day to remind me exactly when I need to eat. Silly as it sounds, making the watch integral to my daily routine is what&#39;s given me a reason to keep it charged and keep it on.
 Being able to customise it, using my knowledge of code and knowing how to hack through other people&#39;s code has lulled me into loving this small piece of tech.
 Being able to express myself in my pebble is what&#39;s made me love it.
 I&#39;ve also realised that I always prefered the look of services like de.licio.us (circa 2005) over Magnolia, and in a way, the Pebble is when compared to the other smart watches out there.
 A lot of my friends have asked me &quot;when are you getting the iWatch&quot;, to which I say I&#39;m not interested (seriously, follow me on twitter if you need an idea of how sick I am of Apple) - and in fact, I also backed the new Pebble Time project and I can&#39;t wait to get my hands on that device and play some more.
-Next: Time
-Akin with simplicity of the Pebble, my Pebble Time arrived in this simple cardboard, no-frills packaging, and I&#39;m keen to see how I can customise this watch and make it mine, again.
+Next: TimeAkin with simplicity of the Pebble, my Pebble Time arrived in this simple cardboard, no-frills packaging, and I&#39;m keen to see how I can customise this watch and make it mine, again.
 
 And when this happened, it totally made my day:
-Okay @Pebble, this is awesome. No charge, but still tells the time. 💙💚💛💜 pic.twitter.com/fZdBfrFb88&mdash; Remy Sharp (@rem) July 11, 2015]]></description><content:encoded><![CDATA[
-<p>Back in April 2012 I joined the bandwagon and backed the hyped kickerstarter campaign for the very first Pebble.</p>
+Okay @Pebble, this is awesome. No charge, but still tells the time. 💙💚💛💜 pic.twitter.com/fZdBfrFb88&mdash; Remy Sharp (@rem) July 11, 2015]]></description><content:encoded><![CDATA[<p>Back in April 2012 I joined the bandwagon and backed the hyped kickerstarter campaign for the very first Pebble.</p>
 <p>After waiting way way too long and abandoning my original choice for an orange watch I was forced to choose the black, only to get my hands on it earlier.</p>
 <p>I also hadn&#39;t worn a watch in well over 15 years. I&#39;m not 100% what prompted me to buy the watch. Perhaps the promise of an open source platform...?</p>
 <p>When it <em>fin-nal-ly</em> arrived, what I noticed immediately was that it was massive on my wrist. The strap was particularly large and never really felt snug.</p>
 <p><strong>I figured it wouldn&#39;t even last 3 months on my wrist.</strong></p>
 <hr>
-<h2>What was the point of the Pebble?</h2>
-<p>The Pebble gave me one important (to me) feature. Text messages (and calls) would vibrate on my wrist.</p>
+<h2>What was the point of the Pebble?</h2><p>The Pebble gave me one important (to me) feature. Text messages (and calls) would vibrate on my wrist.</p>
 <p>I&#39;d found that when I was away from home, I&#39;d nearly always miss text messages from my wife. Even when my phone was on vibrate and loud, I&#39;d still miss them.</p>
 <p>A small vibration on my wrist would <em>subtlety</em> alert me to something I could decide to action or not. For me, this was a big deal and an important feature.</p>
 <hr>
 <p>For the first 3 months it was a novelty. I kept reading about cool apps that could do text responses - but alas I was using an iPhone and none of this functionality was available to my phone.</p>
 <p>The first turning point to my unimpressed state was spending 1 month trailing a move to Android. This experience totally opened up the Pebble&#39;s functionality to me. But that was <em>just</em> a trial, and I would move back to the (limiting) iPhone.</p>
 <p>So, why and how am I still wearing my Pebble today?</p>
-<h2>My Pebble today</h2>
-<p>Some 2 years later I still wear my Pebble. Every day. It helps that I finally ditched my iPhone for an Android (a OnePlus One - and that&#39;s another blog post).</p>
+<h2>My Pebble today</h2><p>Some 2 years later I still wear my Pebble. Every day. It helps that I finally ditched my iPhone for an Android (a OnePlus One - and that&#39;s another blog post).</p>
 <p>The strap has broken, it needs charging once a week (insane if you compare to a regular watch) and the bottom right action button (1 out of 4 buttons) is playing up.</p>
 <p>One strange thing that kept happening, particularly strange if you consider how conservative the British are: random people would ask my &quot;how am I finding my watch?&quot;. A guy on a plane, someone in the gym changing rooms, it was all very strange (to me).</p>
 <p>But with all these issues, the clunkiness and being forced to converse with other human beings: <em>why</em> am I still wearing it??!</p>
 <p>I customised it. I made it mine. It&#39;s <em>my</em> watch, and there&#39;s no other watch like it.</p>
-<h2>Open source: learning &amp; modifying other people&#39;s&nbsp;code</h2>
-<p>I&#39;d tried in the past to make my own watch face but failed pretty hard. But then my second attempt took an existing <a href="https://github.com/edwinfinch/simplyclean">watch face</a> and made <a href="https://github.com/remy/simplyclean/">my own</a> modifications, including using a custom font.</p>
+<h2>Open source: learning &amp; modifying other people&#39;s&nbsp;code</h2><p>I&#39;d tried in the past to make my own watch face but failed pretty hard. But then my second attempt took an existing <a href="https://github.com/edwinfinch/simplyclean">watch face</a> and made <a href="https://github.com/remy/simplyclean/">my own</a> modifications, including using a custom font.</p>
 <p>There <em>is</em> a memory leak in the original code that causes the watch face to crash every now and then, and I&#39;ll likely get around to debugging and fixing it...one day.</p>
 <p><small>A tiny note: since I forked the project, the license on Simply Clean has changed/been removed. It doesn&#39;t affect my code, but I thought it was fair to point out.</small></p>
 <p>I used <a href="https://cloudpebble.net">CloudPebble</a> for all of the development I&#39;ve done so far on the Pebble, and it&#39;s an absolutely superb resource.</p>
 <p><img src="/images/pebble-og.jpg" alt="My OG Pebble"></p>
-<h2>I know JavaScript!</h2>
-<p>Although there&#39;s a couple of limitations in the JS apps, the simple fact is: I can create my ideas as JavaScript based Pebble apps in a matter of hours.</p>
+<h2>I know JavaScript!</h2><p>Although there&#39;s a couple of limitations in the JS apps, the simple fact is: I can create my ideas as JavaScript based Pebble apps in a matter of hours.</p>
 <p>I recently wrote a <a href="https://github.com/remy/pebble-brighton-buses">quick interface</a> to a <a href="http://buses.leftlogic.com">local bus time webapp</a> that I wrote. Now from my wrist, in a few presses I have the bus times on my wrist.</p>
 <p>From a practical use, this is actually easier than using my phone because it takes a few seconds to do the geo-lookup and then request the content from the bus website, so when I&#39;m rushing around in the morning, I don&#39;t have to mess around with my phone.</p>
 <p>I also wrote a simple prototype with a Spark that I could control LEDs from my watch. Pointless, but cool (<a href="https://instagram.com/p/sDFL0aqavo/">see this short video demo</a>).</p>
@@ -248,30 +227,26 @@ Okay @Pebble, this is awesome. No charge, but still tells the time. 💙💚💛
 <li>There&#39;s a laggy response time on the button presses, particularly (I&#39;ve noticed) going backwards through the app (or unloading)</li>
 <li>Firing up the JS based Pebble app can interfere with apps running on the phone - I noticed that it would stop my OnePlus One&#39;s camera from recording video as I launch the JS app (which is where there&#39;s no video yet)</li>
 </ul>
-<h3>I (kinda) know C too...</h3>
-<p>The <em>actual reason</em> the button is failing on my Pebble is because I use it so much: I wrote a C based app that I use in the gym to time my rest time between sets. I called it (cleverly...) <a href="https://apps.getpebble.com/en_US/application/53ff41ed8cdf37902b000050">Rest</a>.</p>
+<h3>I (kinda) know C too...</h3><p>The <em>actual reason</em> the button is failing on my Pebble is because I use it so much: I wrote a C based app that I use in the gym to time my rest time between sets. I called it (cleverly...) <a href="https://apps.getpebble.com/en_US/application/53ff41ed8cdf37902b000050">Rest</a>.</p>
 <p><img src="/images/pebble-rest.jpg" alt="Rest app"></p>
 <p>Its simple. No animations, no nonsense. Three pre-set (configurable) times in seconds, and a timer. I&#39;m in the gym 4 times a week, and usually have around 20-25 sets. I use my app between <em>every</em> set. My app is <strong>exactly</strong> what I need for the task I perform multiple times a day.</p>
-<h2>How it affects my daily routine</h2>
-<p>As with the Rest app being part of my daily routing, the alarms are also an important part of my routing. I have alarms set throughout the day to remind me exactly when I need to eat. Silly as it sounds, making the watch integral to my daily routine is what&#39;s given me a reason to keep it charged and keep it on.</p>
+<h2>How it affects my daily routine</h2><p>As with the Rest app being part of my daily routing, the alarms are also an important part of my routing. I have alarms set throughout the day to remind me exactly when I need to eat. Silly as it sounds, making the watch integral to my daily routine is what&#39;s given me a reason to keep it charged and keep it on.</p>
 <p>Being able to customise it, using my knowledge of code and knowing how to hack through other people&#39;s code has lulled me into loving this small piece of tech.</p>
 <p><strong>Being able to express myself in my pebble is what&#39;s made me love it.</strong></p>
 <p>I&#39;ve also realised that I always prefered the look of services like de.licio.us (circa 2005) over Magnolia, and in a way, the Pebble is when compared to the other smart watches out there.</p>
 <p>A <em>lot</em> of my friends have asked me &quot;when are you getting the iWatch&quot;, to which I say I&#39;m not interested (<em>seriously</em>, <a href="https://twitter.com/rem">follow me on twitter</a> if you need an idea of how <a href="https://twitter.com/search?q=from%3Arem%20apple&amp;src=typd">sick I am of Apple</a>) - and in fact, I <em>also</em> backed the new Pebble Time project and I can&#39;t wait to get my hands on that device and play some more.</p>
-<h2>Next: Time</h2>
-<p>Akin with simplicity of the Pebble, my Pebble Time arrived in this simple cardboard, no-frills packaging, and I&#39;m keen to see how I can customise this watch and make it mine, again.</p>
+<h2>Next: Time</h2><p>Akin with simplicity of the Pebble, my Pebble Time arrived in this simple cardboard, no-frills packaging, and I&#39;m keen to see how I can customise this watch and make it mine, again.</p>
 <p><img src="/images/pebble-time-packaging.jpg" alt="Pebble Time packaging"></p>
 <p>And when this happened, it totally made my day:</p>
 <p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Okay <a href="https://twitter.com/Pebble">@Pebble</a>, this is awesome. No charge, but still tells the time. 💙💚💛💜 <a href="http://t.co/fZdBfrFb88">pic.twitter.com/fZdBfrFb88</a></p>&mdash; Remy Sharp (@rem) <a href="https://twitter.com/rem/status/619767989605376000">July 11, 2015</a></blockquote></p>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>]]></content:encoded></item><item><title>Optimising a canvas animation</title><guid isPermaLink="false">optimising-a-canvas-animation</guid><link>http://remysharp.com/2015/07/13/optimising-a-canvas-animation</link><pubDate>Mon, 13 Jul 2015 7:50:37 +0000</pubDate><description><![CDATA[I&#39;ve been working on a small canvas animation for ffconf 2015 and realised two important optimisations that I&#39;ve missed out on the past.
-The net result: no more humming fan on my laptop.]]></description><content:encoded><![CDATA[
-<p>I&#39;ve been working on a small canvas animation for <a href="http://2015.ffconf.org">ffconf 2015</a> and realised two important optimisations that I&#39;ve missed out on the past.</p>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>]]></content:encoded></item><item><title>Optimising a canvas animation</title><guid isPermaLink="false">optimising-a-canvas-animation</guid><link>https://remysharp.com/2015/07/13/optimising-a-canvas-animation</link><pubDate>Mon, 13 Jul 2015 7:50:37 +0000</pubDate><description><![CDATA[I&#39;ve been working on a small canvas animation for ffconf 2015 and realised two important optimisations that I&#39;ve missed out on the past.
+The net result: no more humming fan on my laptop.]]></description><content:encoded><![CDATA[<p>I&#39;ve been working on a small canvas animation for <a href="http://2015.ffconf.org">ffconf 2015</a> and realised two important optimisations that I&#39;ve missed out on the past.</p>
 <p>The net result: no more humming fan on my laptop.</p>
+<!--more-->
 <p>The result is this simple retro animation that will only last a few days in production, so I&#39;ve included a tweaked version here:</p>
 <p><a class="jsbin-embed" href="https://jsbin.com/zulaha/8/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.30.3"></script></p>
 <p>For the sake of brevity (and actually getting this post written under the usual <em>several hours</em>), I&#39;m just going to talk about what I changed.</p>
-<h2>Pinning FPS</h2>
-<p>I knew that the &quot;right&quot; approach was to use <code>requestAnimationFrame</code> (rAF) for animation, but my problems historically is that the call rate of my update function was way, way too often. This can either cause my animation to appear to be <em>too</em> quick, or results in the CPU overheating.</p>
+<h2>Pinning FPS</h2><p>I knew that the &quot;right&quot; approach was to use <code>requestAnimationFrame</code> (rAF) for animation, but my problems historically is that the call rate of my update function was way, way too often. This can either cause my animation to appear to be <em>too</em> quick, or results in the CPU overheating.</p>
 <p>One nice advantage of rAF for animation is that it will stop firing when the tab is out of focus (i.e. if you switch to another tab). Whereas <code>setInterval</code> not only doesn&#39;t hit the timing you want, but it&#39;ll <em>keep</em> firing, burning up battery.</p>
 <p><strong>TIL</strong> <code>requestAnimationFrame</code> passes in a <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame#Parameters">high resolution timestamp</a> to the callback.</p>
 <p>Using the timestamp, we can get a delta of the last run, and if, and only if, the last frame was drawn X FPS ago, then we&#39;ll draw a new frame. For example:</p>
@@ -297,9 +272,9 @@ function draw(elapsedTime) {
 
   // now do the frame update and render work
   // ...
-}</code></pre>
-<h2>Minimise your paints</h2>
-<p>Originally my demo was drawing a number of squares that would scale towards the viewer giving the impression of movement. Initially innocuous:</p>
+}
+</code></pre>
+<h2>Minimise your paints</h2><p>Originally my demo was drawing a number of squares that would scale towards the viewer giving the impression of movement. Initially innocuous:</p>
 <pre><code class="language-js">function draw() {
   // ... calculate x, y, scale, etc
   // makes the shape: |_|
@@ -318,7 +293,8 @@ function update() {
   for (i = 0; i &lt; boxes.length; i++) {
     boxes[i].draw();
   }
-}</code></pre>
+}
+</code></pre>
 <p>This would be repeated for every &quot;box&quot; animating towards the viewer. Since I&#39;m just drawing lines, I could batch all these together all in one go and group the collective shapes under one path, then run a <em>single</em> stroke:</p>
 <pre><code class="language-js">function draw() {
   // ... calculate x, y, scale, etc
@@ -338,19 +314,18 @@ function update() {
   }
   ctx.stroke();
   ctx.closePath();
-}</code></pre>
+}
+</code></pre>
 <p>It&#39;s a fairly tiny optimisation, but the result is the same, but with less interaction with the canvas, and given we&#39;re aiming to be in and out quickly, it&#39;s not a bad thing.</p>
-<h2>Single rAF handler</h2>
-<p>If you&#39;ve got more than one animation running, you&#39;ll need to set-up multiple callbacks to <code>requestAnimationFrame</code>, but having multiple rAF callbacks isn&#39;t ideal, and starts to get unwieldy when you&#39;re working with others who <em>also</em> want to queue up their animations.</p>
+<h2>Single rAF handler</h2><p>If you&#39;ve got more than one animation running, you&#39;ll need to set-up multiple callbacks to <code>requestAnimationFrame</code>, but having multiple rAF callbacks isn&#39;t ideal, and starts to get unwieldy when you&#39;re working with others who <em>also</em> want to queue up their animations.</p>
 <p>You really want everything to be handled in a <em>single</em> rAF handler.</p>
 <p>I&#39;ve written a small gist called <strong><a href="https://gist.github.com/remy/36f388d72c1ef161582f">raf.js</a></strong> that allows me to put all my rAF calls through a single handler (and added some niceties like the FPS pinning and a <code>running</code> boolean flag).</p>
-]]></content:encoded></item><item><title>You know what they say about assumptions...</title><guid isPermaLink="false">assumptions</guid><link>http://remysharp.com/2015/07/02/assumptions</link><pubDate>Thu, 02 Jul 2015 14:49:53 +0000</pubDate><description><![CDATA[During our heated panel at EdgeConf 2015 on progressive enhancement Jeremy points out that by trying to anticipate your users&#39; needs, you&#39;re making assumptions, and you know what they say about assumptions.
+]]></content:encoded></item><item><title>You know what they say about assumptions...</title><guid isPermaLink="false">assumptions</guid><link>https://remysharp.com/2015/07/02/assumptions</link><pubDate>Thu, 02 Jul 2015 14:49:53 +0000</pubDate><description><![CDATA[During our heated panel at EdgeConf 2015 on progressive enhancement Jeremy points out that by trying to anticipate your users&#39; needs, you&#39;re making assumptions, and you know what they say about assumptions.
 Although he didn&#39;t say so explicitly, there was certainly an undertone that it was something we should admit to ourselves. I&#39;d like to add: for better or worse.
 The wider impact of assumptions about your user (for example that they&#39;re viewing on a desktop device) is the exclusion of others.
 Jeremy argued, rightly, that you should aim to develop for the absolute lowest technological solution as possible to suit your all your visitors basic needs: known and unknown.
 I&#39;ll say it now: I make all kinds of assumptions about my users. A couple of the most common assumption I make is that they can read English, and that they&#39;re visiting using a browser that&#39;s capable of rendering HTML correctly.
 Then my base level assumption changes depending on the application and adjusts over time depending on feedback.
-
 
 Just one example was that JS Bin&#39;s static code used to be served from a single server which suited most users. One day a bug was filed by an individual in Iran notifying me that JS Bin simply would get past the loader (an example of JavaScript was enabled, but not getting down the wire in time before the connection timed out). Putting the static content (scripts, etc) on a CDN fixed this instantly. A simple retroactive fix.
 Lee Byron, working for Facebook, was a fellow panellist brought up an excellent case study that users in Japan, unbeknownst to Facebook had such oddball (but popular) devices that HTML and CSS wasn&#39;t rendering as expected leaving the site in an unusable (or very difficult to use) state.
@@ -358,15 +333,13 @@ How low do you go? The real answer is you can never go too low because there&#39
 I believe, that progressive enhancing should be part of your workflow. Common HTML elements, delivering baseline functionality to all users, and then enhancing. All does not mean it has to work with cURL. That&#39;s my take. You have to decide for yourself.
 We all make assumptions. Ranging from the language our users can read, to the HTML and CSS support, to the level of JavaScript and the prerequisite on high level JavaScript APIs.
 Don&#39;t be ashamed. Just own those assumptions.
-Also, thank you to Jeremy for running his eyes over this post.]]></description><content:encoded><![CDATA[
-<p>During our heated panel at EdgeConf 2015 on progressive enhancement <a href="https://adactio.com">Jeremy</a> points out that by trying to anticipate your users&#39; needs, <strong>you&#39;re making assumptions</strong>, and <a href="https://www.youtube.com/watch?v=G-2NimrRPAQ">you know what they say about assumptions</a>.</p>
+Also, thank you to Jeremy for running his eyes over this post.]]></description><content:encoded><![CDATA[<p>During our heated panel at EdgeConf 2015 on progressive enhancement <a href="https://adactio.com">Jeremy</a> points out that by trying to anticipate your users&#39; needs, <strong>you&#39;re making assumptions</strong>, and <a href="https://www.youtube.com/watch?v=G-2NimrRPAQ">you know what they say about assumptions</a>.</p>
 <p>Although he didn&#39;t say so explicitly, there was certainly an undertone that it was something we should admit to ourselves. I&#39;d like to add: <em>for better or worse</em>.</p>
 <p>The wider impact of assumptions about your user (for example that they&#39;re viewing on a desktop device) is the exclusion of others.</p>
 <p>Jeremy argued, rightly, that you should aim to develop for the absolute lowest technological solution as possible to suit your <em>all</em> your visitors basic needs: known and unknown.</p>
 <p>I&#39;ll say it now: I make all kinds of assumptions about my users. A couple of the most common assumption I make is that they can read English, and that they&#39;re visiting using a browser that&#39;s capable of rendering HTML correctly.</p>
 <p>Then my base level assumption changes depending on the application and adjusts over time depending on feedback.</p>
 <!-- [Talky.io](https://talky.io/) is an excellent example to zoom in on. Their technology *requires* WebRTC. This assumes that their users have JavaScript, for without it, there is no product. -->
-
 <p>Just one example was that JS Bin&#39;s static code used to be served from a single server which suited most users. One day a bug was filed by an individual in Iran notifying me that JS Bin simply would get past the loader (an example of JavaScript was enabled, but not getting down the wire in time before the connection timed out). Putting the static content (scripts, etc) on a CDN fixed this instantly. A simple retroactive fix.</p>
 <p><a href="https://twitter.com/leeb">Lee Byron</a>, working for Facebook, was a fellow panellist brought up an <a href="https://twitter.com/leeb/status/616612662718427136">excellent case study</a> that users in Japan, unbeknownst to Facebook had such oddball (but popular) devices that HTML and CSS wasn&#39;t rendering as expected leaving the site in an unusable (or very difficult to use) state.</p>
 <p>How low do you go? The real answer is you can never go too low because there&#39;s always going to be a case that isn&#39;t catered for because <a href="https://twitter.com/triblondon/status/615894823384420354">you can&#39;t test for it</a>.</p>
@@ -374,26 +347,22 @@ Also, thank you to Jeremy for running his eyes over this post.]]></description><
 <p>We <em>all</em> make assumptions. Ranging from the language our users can read, to the HTML and CSS support, to the level of JavaScript and the prerequisite on high level JavaScript APIs.</p>
 <p>Don&#39;t be ashamed. Just <strong>own</strong> those assumptions.</p>
 <p><small>Also, thank you to Jeremy for running his eyes over this post.</small></p>
-]]></content:encoded></item><item><title>Reducing my CPU load from 95% to 20%</title><guid isPermaLink="false">how-i-reduced-cpu-load-from-95-to-20</guid><link>http://remysharp.com/2015/06/16/how-i-reduced-cpu-load-from-95-to-20</link><pubDate>Tue, 16 Jun 2015 22:04:43 +0000</pubDate><description><![CDATA[I&#39;ve recently released a number of changes to JS Bin after I started to tinker (again) with Service Worker support in JS Bin (no, there&#39;s nothing there right now). However, since the release on Saturday, the CPU has been steadily sitting at 95% - which is dangerously close to the 502-o-death page.
+]]></content:encoded></item><item><title>Reducing my CPU load from 95% to 20%</title><guid isPermaLink="false">how-i-reduced-cpu-load-from-95-to-20</guid><link>https://remysharp.com/2015/06/16/how-i-reduced-cpu-load-from-95-to-20</link><pubDate>Tue, 16 Jun 2015 22:04:43 +0000</pubDate><description><![CDATA[I&#39;ve recently released a number of changes to JS Bin after I started to tinker (again) with Service Worker support in JS Bin (no, there&#39;s nothing there right now). However, since the release on Saturday, the CPU has been steadily sitting at 95% - which is dangerously close to the 502-o-death page.
 Except, if I&#39;m honest with myself, the CPU has been high since...well, since I can remember (going further back into 2013).
-Until this afternoon. I made one change, and boom: 20%. Stable. Also, I&#39;ll be filling this under &quot;duh&quot;.]]></description><content:encoded><![CDATA[
-<p>I&#39;ve recently released a number of changes to JS Bin after I started to tinker (again) with Service Worker support in JS Bin (no, there&#39;s nothing there right now). However, since the release on Saturday, the CPU has been steadily sitting at 95% - which is dangerously close to the <a href="https://jsbin.com/test/error/502">502</a>-o-death page.</p>
+Until this afternoon. I made one change, and boom: 20%. Stable. Also, I&#39;ll be filling this under &quot;duh&quot;.]]></description><content:encoded><![CDATA[<p>I&#39;ve recently released a number of changes to JS Bin after I started to tinker (again) with Service Worker support in JS Bin (no, there&#39;s nothing there right now). However, since the release on Saturday, the CPU has been steadily sitting at 95% - which is dangerously close to the <a href="https://jsbin.com/test/error/502">502</a>-o-death page.</p>
 <p>Except, if I&#39;m honest with myself, the CPU has been high since...well, since I can remember (going further back into 2013).</p>
 <p>Until this afternoon. I made one change, and boom: 20%. Stable. Also, I&#39;ll be filling this under <a href="https://remysharp.com/search?q=%22duh%22">&quot;duh&quot;</a>.</p>
-<h2>Solution</h2>
-<p>Although JS Bin&#39;s code would load a config file and <a href="https://github.com/jsbin/jsbin/blob/master/lib/app.js#L61">set the</a> <code>NODE_ENV</code> dynamically. Except...it wasn&#39;t actually being set early enough.</p>
+<!--more-->
+<h2>Solution</h2><p>Although JS Bin&#39;s code would load a config file and <a href="https://github.com/jsbin/jsbin/blob/master/lib/app.js#L61">set the</a> <code>NODE_ENV</code> dynamically. Except...it wasn&#39;t actually being set early enough.</p>
 <p>I changed the <a href="https://github.com/jsbin/production/blob/master/apps.jsbin.com/etc/init/jsbin.conf#L18">upstart script</a> to execute <em>directly</em> in production mode, and voilà, the CPU dropped to a nice stable 20% (or so, rising and falling as I&#39;d expect).</p>
-<h2>The how</h2>
-<p>The obvious thing was that the CPU was running very hot and consistently. JS Bin has a lot of traffic, but when the CPU is that high, it&#39;s usually going to die rather soon. As I had released some changes at the weekend, I knew that it was potentially a problem in the new code - the problem was also that JS Bin has run around the 70-90% mark for many, many months.</p>
-<h3>Instrumentation</h3>
-<p>The code would need instrumentation, so I looked at some tools to see if I could get some insights into what was going wrong. I <em>used</em> to have a (free) nodetime account but that wouldn&#39;t let me in because I had somehow run more than one application with the API key.</p>
+<h2>The how</h2><p>The obvious thing was that the CPU was running very hot and consistently. JS Bin has a lot of traffic, but when the CPU is that high, it&#39;s usually going to die rather soon. As I had released some changes at the weekend, I knew that it was potentially a problem in the new code - the problem was also that JS Bin has run around the 70-90% mark for many, many months.</p>
+<h3>Instrumentation</h3><p>The code would need instrumentation, so I looked at some tools to see if I could get some insights into what was going wrong. I <em>used</em> to have a (free) nodetime account but that wouldn&#39;t let me in because I had somehow run more than one application with the API key.</p>
 <p>I tried out New Relic, which after first was pretty awesome, amazing charts, very pretty (though didn&#39;t lead me to anything obvious) - but something seemed wrong in the JS Bin process. The memory footprint was going up pretty steadily to capacity. Soon enough the process topped out and I removed the New Relic code. It turns out there&#39;s a <a href="https://discuss.newrelic.com/t/memory-leaking-only-with-node-js-agent-installed/14448/28?u=cjones">memory leak that&#39;s being addressed</a>, but it&#39;s not solved at the core (since it&#39;s a node problem rather than New Relic).</p>
 <p>StrongLoop was next, but once I got the CLI tool installed (after some issues), I couldn&#39;t work out how to connect to the client using the web interface...at all. Another abandon.</p>
 <p><a href="https://keymetrics.io/">Keymetrics</a> was also suggested (which, I believe, is produced by the makers of <a href="https://github.com/Unitech/pm2">PM2</a> a Process Management tool for node) - but it didn&#39;t look like it could do instrumentation, so I didn&#39;t proceed.</p>
 <p>In the end though, and randomly, my nodetime account started working..!</p>
 <p>The problem was: I&#39;ve never really been able to read the nodetime data to make head nor tail of it...</p>
-<h3>Clues</h3>
-<p>Heading straight for the transaction profiler, I started watching the operations. The transactions refer to routes being hit, as since there&#39;s so much varied traffic, it doesn&#39;t really give any clues as to what&#39;s slow (unless there&#39;s a specific bin causing the problem). But there it was, clear as day:</p>
+<h3>Clues</h3><p>Heading straight for the transaction profiler, I started watching the operations. The transactions refer to routes being hit, as since there&#39;s so much varied traffic, it doesn&#39;t really give any clues as to what&#39;s slow (unless there&#39;s a specific bin causing the problem). But there it was, clear as day:</p>
 <p><img src="/images/nodetime-transactions.png" alt="Nodetime transaction operations"></p>
 <p>All that file IO shouldn&#39;t be happening. When looked closer, I could see the <code>readFile</code>s were all around my <code>view</code> directories. My templates. I had switched from <a href="https://www.npmjs.com/package/hbs">hbs</a> to <a href="https://www.npmjs.com/package/express-hbs">express-hbs</a> but it seemed weird that it wouldn&#39;t use pre-compiled templates in production mode.</p>
 <p>I did some digging, of course there&#39;s no mention of switching to compiled templates in production mode in either npm modules (pre-compiled templates would mean it wouldn&#39;t read from disc to constantly be serving files).</p>
@@ -403,34 +372,29 @@ Until this afternoon. I made one change, and boom: 20%. Stable. Also, I&#39;ll b
 <p>To this:</p>
 <p><img src="/images/jsbin-top-good.png" alt="JS Bin top: good"></p>
 <p>So, yeah. Filed under &quot;duh&quot;.</p>
-]]></content:encoded></item><item><title>Devtool tricks for when I forget</title><guid isPermaLink="false">devtool-tricks-for-when-i-forget</guid><link>http://remysharp.com/2015/06/09/devtool-tricks-for-when-i-forget</link><pubDate>Tue, 09 Jun 2015 14:50:20 +0000</pubDate><description><![CDATA[I&#39;ve recently completed a few of my mastering devtools workshops, so I&#39;m all over devtools again, and just this week spotted two tricks (I use) for when I &quot;forget&quot;.]]></description><content:encoded><![CDATA[
-<p>I&#39;ve recently completed a few of my <a href="http://leftlogic.com/training/debug">mastering devtools workshops</a>, so I&#39;m all over devtools again, and just this week spotted two tricks (I use) for when I &quot;forget&quot;.</p>
-<h2>Capturing XHR results</h2>
-<p>One of my favourite commands in devtools is the <code>copy</code> function. It&#39;ll copy DOM nodes, it&#39;ll stringify objects and it saves that horrible long and tricky select, highlight, copy, edit, faff process.</p>
+]]></content:encoded></item><item><title>Devtool tricks for when I forget</title><guid isPermaLink="false">devtool-tricks-for-when-i-forget</guid><link>https://remysharp.com/2015/06/09/devtool-tricks-for-when-i-forget</link><pubDate>Tue, 09 Jun 2015 14:50:20 +0000</pubDate><description><![CDATA[I&#39;ve recently completed a few of my mastering devtools workshops, so I&#39;m all over devtools again, and just this week spotted two tricks (I use) for when I &quot;forget&quot;.]]></description><content:encoded><![CDATA[<p>I&#39;ve recently completed a few of my <a href="http://leftlogic.com/training/debug">mastering devtools workshops</a>, so I&#39;m all over devtools again, and just this week spotted two tricks (I use) for when I &quot;forget&quot;.</p>
+<!--more-->
+<h2>Capturing XHR results</h2><p>One of my favourite commands in devtools is the <code>copy</code> function. It&#39;ll copy DOM nodes, it&#39;ll stringify objects and it saves that horrible long and tricky select, highlight, copy, edit, faff process.</p>
 <p>However, sometimes I forget to set a breakpoint when my XHR requests come back so I can copy the response. But it&#39;s to fix.</p>
 <p>Right click on the XHR request in the network panel, and select &quot;Copy response&quot;. Boom. I&#39;ve now captured the JSON response and I&#39;m good.</p>
 <p><img src="/images/devtools-copy-response.jpg" alt="devtools copy response"></p>
-<h2>Retrieving results from the ether</h2>
-<p>It&#39;s not uncommon for me to run a command in the console, then realise I forgot to capture the result so I could run it through a <code>map</code> or some such process.</p>
+<h2>Retrieving results from the ether</h2><p>It&#39;s not uncommon for me to run a command in the console, then realise I forgot to capture the result so I could run it through a <code>map</code> or some such process.</p>
 <p><strong>This is where <code>$_</code> is a live saver, which contains the result of the last command run in the console.</strong></p>
 <p>In the example below, I&#39;ve forgotten to capture the result of the promise so I can manipulate (or in this case, <code>copy</code>) the result. This is simply fixed by running a new command with <code>$_.then(...)</code>.</p>
 <p><img src="/images/devtools-dollar-underscore.png" alt="devtools dollar underscore"></p>
-<h2>Copy any <em>dead</em> logged value</h2>
-<p>Sometimes I&#39;ll <code>console.log</code> out a value or object that I want to inspect. Then realise that actually I want to copy it. Old me would go back to the source code, and log out a <code>JSON.stringify</code>, but not new me.</p>
+<h2>Copy any <em>dead</em> logged value</h2><p>Sometimes I&#39;ll <code>console.log</code> out a value or object that I want to inspect. Then realise that actually I want to copy it. Old me would go back to the source code, and log out a <code>JSON.stringify</code>, but not new me.</p>
 <p>It&#39;s really easy, right click on the object in the console, and &quot;Store as Global Variable&quot; (usually stored to <code>temp1</code>). Now it&#39;s easy to <code>copy(temp1)</code> and it&#39;ll automatically be converted into a JSON for me:</p>
 <p><img src="/images/devtools-capture-for-copy.png" alt="devtools copy a global"></p>
 <p>What&#39;s a trick, neat or otherwise, that you use on a regular basis?</p>
-]]></content:encoded></item><item><title>Tiny two way data binding</title><guid isPermaLink="false">bind</guid><link>http://remysharp.com/2015/06/02/bind</link><pubDate>Tue, 02 Jun 2015 11:42:26 +0000</pubDate><description><![CDATA[Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).
+]]></content:encoded></item><item><title>Tiny two way data binding</title><guid isPermaLink="false">bind</guid><link>https://remysharp.com/2015/06/02/bind</link><pubDate>Tue, 02 Jun 2015 11:42:26 +0000</pubDate><description><![CDATA[Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).
 So, as any good re-inventer of wheels, I wrote my own two-way data binding library, partly to experiment, partly to solve existing needs in my own projects - weighing in at &lt; 2K compressed.
-I present (cleverly named): bind.js]]></description><content:encoded><![CDATA[
-<p>Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).</p>
+I present (cleverly named): bind.js]]></description><content:encoded><![CDATA[<p>Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).</p>
 <p>So, as any good re-inventer of wheels, I wrote my own two-way data binding library, partly to experiment, partly to solve existing needs in my own projects - weighing in at &lt; 2K compressed.</p>
 <p>I present (cleverly named): <strong><a href="https://github.com/remy/bind.js">bind.js</a></strong></p>
-<h2>Demo time</h2>
-<p>Below is an <a href="http://rem.jsbin.com/nepuda/edit?console,output">interactive demo</a> of bind in action. As you change the state of the form, you&#39;ll see the object update on the right (a <code>JSON.stringify</code> output).</p>
+<!--more-->
+<h2>Demo time</h2><p>Below is an <a href="http://rem.jsbin.com/nepuda/edit?console,output">interactive demo</a> of bind in action. As you change the state of the form, you&#39;ll see the object update on the right (a <code>JSON.stringify</code> output).</p>
 <p><a class="jsbin-embed" href="https://rem.jsbin.com/nepuda/embed?console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.js"></script></p>
-<h2>Example usage</h2>
-<p>The concept behind the API is fairly simple: take an object bind it to functions and/selectors given a particular mapping.</p>
+<h2>Example usage</h2><p>The concept behind the API is fairly simple: take an object bind it to functions and/selectors given a particular mapping.</p>
 <p><a href="https://jsbin.com/remutu/edit?js,console,output">For example</a>, to bind a score and player name to the DOM:</p>
 <pre><code class="language-js">var user = Bind({
   name: &#39;[new user]&#39;,
@@ -441,7 +405,8 @@ I present (cleverly named): bind.js]]></description><content:encoded><![CDATA[
 })
 
 // in the game
-user.game.score += 25;</code></pre>
+user.game.score += 25;
+</code></pre>
 <p>...and the HTML updates take care of themselves. Then the user enters their name in the input field, it&#39;ll update the <code>user</code> object.</p>
 <p>The mapping value is flexible too, and can be:</p>
 <ul>
@@ -465,33 +430,30 @@ user.game.score += 25;</code></pre>
       return &#39;My first cat was &#39; + this.safe(value);
     }
   }
-});</code></pre>
+});
+</code></pre>
 <p>Inside the <code>transform</code> function also has a helper, <code>this.safe()</code> which will escape your content safe for HTML.</p>
-<h2>Object.observe?</h2>
-<p>Nope. I&#39;m not using it, which is also why there&#39;s some limitations (property deletion being the main/only one).</p>
+<h2>Object.observe?</h2><p>Nope. I&#39;m not using it, which is also why there&#39;s some limitations (property deletion being the main/only one).</p>
 <p>Why not? Mostly for a larger platform of support. This library supports IE9 upwards (and thus all other browsers) and includes feature detection.</p>
 <p>I also tried an <code>Object.observe</code> polyfill early on, but didn&#39;t have much success (though I don&#39;t recall what the issues were). I also fancies the code challenge :)</p>
-<h2>HTML decorators?</h2>
-<p>Nope (again). I was recently debugging some Knockout code, and found myself struggling as I realised that the actual binding was happening in the HTML, and the manipulation was happening in the separate JavaScript file.</p>
+<h2>HTML decorators?</h2><p>Nope (again). I was recently debugging some Knockout code, and found myself struggling as I realised that the actual binding was happening in the HTML, and the manipulation was happening in the separate JavaScript file.</p>
 <p>So no, there&#39;s no <code>data-*</code> support, intentionally. All the code lives in one place: in the JavaScript.</p>
 <p>I personally like that my data binding is all in one place. If you&#39;re not so keen, there&#39;s always Angular, Knockout and the like.</p>
-<h2>Nice to haves</h2>
-<p>I&#39;ve started opening a few <a href="https://github.com/remy/bind/issues">issues</a> on things I&#39;d like, but they currently include:</p>
+<h2>Nice to haves</h2><p>I&#39;ve started opening a few <a href="https://github.com/remy/bind/issues">issues</a> on things I&#39;d like, but they currently include:</p>
 <ul>
 <li>Root object mapping support (i.e. to be able to hook a callback on <em>anything</em> changing)</li>
 <li>Glob support, i.e. <code>me.*.name</code> will fire callbacks matching any path starting with <code>me</code> and ending with <code>name</code></li>
 <li>Test to test every individual form element (currently it&#39;s a bit of a mishmash)</li>
 </ul>
 <p>Feel free to <a href="https://github.com/remy/bind/issues">raise an issue</a> or feature request or let me know if you&#39;d use this even!</p>
-]]></content:encoded></item><item><title>Call for proposals at ffconf 2015</title><guid isPermaLink="false">call-for-proposals-at-ffconf-2015</guid><link>http://remysharp.com/2015/05/25/call-for-proposals-at-ffconf-2015</link><pubDate>Mon, 25 May 2015 12:44:33 +0000</pubDate><description><![CDATA[ffconf has it&#39;s event date (6-Nov 2015) and I&#39;ve been in the process of carefully curating the content I want to hear at this year&#39;s event again. As with each year, it takes place at the Duke of Yorks in Brighton, UK.
-As always, I also make sure I allot a few positions for CFP, so here&#39;s what our CFP looks like.]]></description><content:encoded><![CDATA[
-<p><a href="http://2015.ffconf.org">ffconf</a> has it&#39;s event date (6-Nov 2015) and I&#39;ve been in the process of carefully curating the content I want to hear at this year&#39;s event again. As with each year, it takes place at the <a href="https://www.flickr.com/groups/fullfrontalconf/pool/">Duke of Yorks</a> in Brighton, UK.</p>
+]]></content:encoded></item><item><title>Call for proposals at ffconf 2015</title><guid isPermaLink="false">call-for-proposals-at-ffconf-2015</guid><link>https://remysharp.com/2015/05/25/call-for-proposals-at-ffconf-2015</link><pubDate>Mon, 25 May 2015 12:44:33 +0000</pubDate><description><![CDATA[ffconf has it&#39;s event date (6-Nov 2015) and I&#39;ve been in the process of carefully curating the content I want to hear at this year&#39;s event again. As with each year, it takes place at the Duke of Yorks in Brighton, UK.
+As always, I also make sure I allot a few positions for CFP, so here&#39;s what our CFP looks like.]]></description><content:encoded><![CDATA[<p><a href="http://2015.ffconf.org">ffconf</a> has it&#39;s event date (6-Nov 2015) and I&#39;ve been in the process of carefully curating the content I want to hear at this year&#39;s event again. As with each year, it takes place at the <a href="https://www.flickr.com/groups/fullfrontalconf/pool/">Duke of Yorks</a> in Brighton, UK.</p>
 <p>As always, I also make sure I allot a few positions for CFP, so here&#39;s what our CFP looks like.</p>
+<!--more-->
 <p>If you think you&#39;ve got something to share, then get in touch. I&#39;ve included a few guidelines as to what I prefer from a proposal, and given you an idea of the kinds of topics I&#39;m interested in hearing about this year.</p>
 <p>You can also follow the <a href="https://twitter.com/ffconf">@ffconf</a> twitter account for the latest announcements.</p>
 <p><img src="/images/ffconf-2015.gif" alt="ffconf 2015 site"></p>
-<h2>Proposal topic advice</h2>
-<p>I&#39;ve also included what you can expect as a speaker at our event too.</p>
+<h2>Proposal topic advice</h2><p>I&#39;ve also included what you can expect as a speaker at our event too.</p>
 <p>A few topics that are of particular interest to me:</p>
 <ul>
 <li>Isomorphic JavaScript (or <em>&quot;something less contentious&quot;</em>) code and applications (ideally outside the world of &quot;easy with React&quot;)</li>
@@ -508,8 +470,7 @@ As always, I also make sure I allot a few positions for CFP, so here&#39;s what 
 </ul>
 <p>Send me the title of your talk, an outline of the talk and any extra information you want me to know about the idea: <a href="mailto:events@leftlogic.com?subject=ffconf2015%20speaking%20propsal">events@leftlogic.com</a>.</p>
 <p><strong>It takes me a long time to process and decide on CFPs, so whilst there&#39;s no 8 sessions up on the site, it means your talk is still up for consideration. I will respond to everyone with a yay or nay eventually.</strong> If you want to come to ffconf, regardless of whether your CFP is selected, please buy a ticket and if your talk is selected, the ticket will be refunded and returns to the public pool of tickets.</p>
-<h2>Our promise to you</h2>
-<p>All our speakers are treated the same. We will:</p>
+<h2>Our promise to you</h2><p>All our speakers are treated the same. We will:</p>
 <ul>
 <li>Pay for your travel. If you&#39;re flying long haul, we&#39;ll upgrade you to premium class (or whatever the name is for &quot;above economy&quot;)</li>
 <li>Put you up in our &quot;speaker hotel&quot;. It&#39;s not that cool, but it&#39;s right in town and two minutes walk from our venue. We&#39;re also open to offering the hotel stay. If you want an extra day or two here and there, then that&#39;s cool too (obviously if everyone does this, it breaks our bank, but so far it&#39;s worked)</li>
@@ -523,19 +484,16 @@ As always, I also make sure I allot a few positions for CFP, so here&#39;s what 
 <li>Uphold our conference code of conduct, both for you, and our attendees (either will be, or based on <a href="http://confcodeofconduct.com">confcodeofconduct.com</a>)</li>
 </ul>
 <p>So I hope to hear from you soon!</p>
-]]></content:encoded></item><item><title>Quick technique for API mocking</title><guid isPermaLink="false">quick-technique-for-api-mocking</guid><link>http://remysharp.com/2015/05/18/quick-technique-for-api-mocking</link><pubDate>Mon, 18 May 2015 13:00:00 +0000</pubDate><description><![CDATA[During server software development (i.e. node) I always strive to work offline, in that my development workflow doesn&#39;t depend on any online services.
+]]></content:encoded></item><item><title>Quick technique for API mocking</title><guid isPermaLink="false">quick-technique-for-api-mocking</guid><link>https://remysharp.com/2015/05/18/quick-technique-for-api-mocking</link><pubDate>Mon, 18 May 2015 13:00:00 +0000</pubDate><description><![CDATA[During server software development (i.e. node) I always strive to work offline, in that my development workflow doesn&#39;t depend on any online services.
 However, sometimes that&#39;s not possible as there&#39;s some 3rd party API dependancy - as there was in my latest client work. The problem I found, was that the latency between my location and the 3rd party API was so high, that it was impacting on the workflow cycle of: debug, change, test, repeat. The load time was taking anywhere from 15-30 seconds each time.
-So this was my quick work around to easily mock out the API so my development process could be faster.]]></description><content:encoded><![CDATA[
-<p>During server software development (i.e. node) I always strive to work offline, in that my development workflow doesn&#39;t depend on any online services.</p>
+So this was my quick work around to easily mock out the API so my development process could be faster.]]></description><content:encoded><![CDATA[<p>During server software development (i.e. node) I always strive to work offline, in that my development workflow doesn&#39;t depend on any online services.</p>
 <p>However, sometimes that&#39;s not possible as there&#39;s some 3rd party API dependancy - as there was in my latest client work. The problem I found, was that the latency between my location and the 3rd party API was so high, that it was impacting on the workflow cycle of: debug, change, test, repeat. The load time was taking anywhere from 15-30 seconds each time.</p>
 <p>So this was my quick work around to easily mock out the API so my development process could be faster.</p>
-<h2>The aims</h2>
-<p>The aim was to, without much work at all, replicate specific API calls <em>without</em> modifying my application code. i.e. I could switch my mock API on and off as I needed.</p>
+<!--more-->
+<h2>The aims</h2><p>The aim was to, without much work at all, replicate specific API calls <em>without</em> modifying my application code. i.e. I could switch my mock API on and off as I needed.</p>
 <p>It was also important that the time required to put a mock API in place, did <em>not</em> outweigh the time lost on the latency. Specifically, if the custom mock API turned into days of work, it would have been a total waste of time.</p>
-<h2>The simple solution</h2>
-<p>This code uses <a href="http://expressjs.com">Express 4</a>. It&#39;s entirely possible that there was a library that already existed, but the small amount of code that I had to write wins over finding, researching, checking and learning a new library.</p>
-<h3>Capturing mock data</h3>
-<p>First I had to run my way through each API call and save the raw output as a <code>.json</code> file in a local directory (not tracked in git) called <code>mock-data</code>.</p>
+<h2>The simple solution</h2><p>This code uses <a href="http://expressjs.com">Express 4</a>. It&#39;s entirely possible that there was a library that already existed, but the small amount of code that I had to write wins over finding, researching, checking and learning a new library.</p>
+<h3>Capturing mock data</h3><p>First I had to run my way through each API call and save the raw output as a <code>.json</code> file in a local directory (not tracked in git) called <code>mock-data</code>.</p>
 <p>Since all my internal API calls used a config value as the root of the API URL, it meant I could change my local config to point to my local mock API instead of the staging or production endpoint:</p>
 <pre><code class="language-js">var config = require(&#39;./config&#39;);
 var root = config.api;
@@ -548,10 +506,10 @@ function getOrder(id) {
       id: id
     }
   });
-}</code></pre>
+}
+</code></pre>
 <p>I would change my <code>config.api</code> value to point to `<a href="http://localhost/mock-api">http://localhost/mock-api</a>&#39; and the server I was developing would actually reply to the API requests using the code in the next section.</p>
-<h3>Mock API Code</h3>
-<p>The following code would be in (something like) <code>routes/mock-api.js</code>:</p>
+<h3>Mock API Code</h3><p>The following code would be in (something like) <code>routes/mock-api.js</code>:</p>
 <pre><code class="language-js">var express = require(&#39;express&#39;);
 var fs = require(&#39;fs&#39;);
 var router = express.Router();
@@ -577,15 +535,15 @@ Object.keys(design).forEach(function (req) {
   router.route(path)[method.toLowerCase()](function (req, res) {
     res.send(mock);
   });
-});</code></pre>
+});
+</code></pre>
 <p>In my main <code>routes.js</code> file I can then conditionally load up my mock router:</p>
 <pre><code>// snip...
 if (config.mock) {
   app.use(&#39;/mock-api&#39;, require(&#39;./routes/mock-api&#39;));
-}</code></pre>
-<p>Now requests to my server (the same server I&#39;m doing my main development against), can respond to API requests with pre-baked data. Now my damn latency is a thing of the past!</p>
-<h2>Taking it further</h2>
-<p>I struggle to look at the above code without seeing ways to improve it - but as I pointed out in the aims: keep it simple, and keep the solution quick.</p>
+}
+</code></pre><p>Now requests to my server (the same server I&#39;m doing my main development against), can respond to API requests with pre-baked data. Now my damn latency is a thing of the past!</p>
+<h2>Taking it further</h2><p>I struggle to look at the above code without seeing ways to improve it - but as I pointed out in the aims: keep it simple, and keep the solution quick.</p>
 <p>Here&#39;s a few ideas that spring to mind that might make the code more useful in different situations:</p>
 <ul>
 <li>Respond with different file types (rather than only <code>.json</code>)</li>
@@ -594,39 +552,36 @@ if (config.mock) {
 </ul>
 <p>I have done some similar work in my <a href="https://github.com/remy/servedir#mocked-router">static server</a> which also has limited support for interpolation in the response.</p>
 <p>For now though, this simple version suits my requirements!</p>
-]]></content:encoded></item><item><title>screen: Persistent Terminal Sessions</title><guid isPermaLink="false">screen</guid><link>http://remysharp.com/2015/04/27/screen</link><pubDate>Mon, 27 Apr 2015 11:45:00 +0000</pubDate><description><![CDATA[Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.
-Screen is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time.]]></description><content:encoded><![CDATA[
-<p>Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.</p>
+]]></content:encoded></item><item><title>screen: Persistent Terminal Sessions</title><guid isPermaLink="false">screen</guid><link>https://remysharp.com/2015/04/27/screen</link><pubDate>Mon, 27 Apr 2015 11:45:00 +0000</pubDate><description><![CDATA[Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.
+Screen is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time.]]></description><content:encoded><![CDATA[<p>Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.</p>
 <p><a href="http://www.gnu.org/software/screen/manual/screen.html">Screen</a> is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time.</p>
+<!--more-->
 <p>I personally use screen a lot with <a href="http://nodejs.org">Node.js</a> web servers - so I can kick off the process, and resume my terminal session to check logs or errors or to restart the process in case it died.</p>
 <p>This article is an introduction to screen for the average Joe/anne developers with a few tips and tricks.</p>
-<h2>Installing</h2>
-<p>Screen is a unix-y tool, so with Ubuntu I&#39;d use <code>apt-get</code> - it&#39;s also possible it&#39;s pre-installed on the machine (just type <code>screen</code> to find out):</p>
-<pre><code>sudo apt-get install screen</code></pre>
-<h2>Instant win with screen</h2>
-<p>When I remote in to a machine, I run <code>screen</code> and it starts a new session (actually called a window - but I&#39;ll come on to more about these later). There&#39;s some blurb about what screen is, I hit return, and the session is ready.</p>
+<h2>Installing</h2><p>Screen is a unix-y tool, so with Ubuntu I&#39;d use <code>apt-get</code> - it&#39;s also possible it&#39;s pre-installed on the machine (just type <code>screen</code> to find out):</p>
+<pre><code>sudo apt-get install screen
+</code></pre><h2>Instant win with screen</h2><p>When I remote in to a machine, I run <code>screen</code> and it starts a new session (actually called a window - but I&#39;ll come on to more about these later). There&#39;s some blurb about what screen is, I hit return, and the session is ready.</p>
 <p>From here I might start my process. Let&#39;s say I&#39;m doing some large database export.</p>
 <p>Now I need to <em>detach</em> from the screen so I can cleanly close the remote session or do something else whilst the export is happening. I type the command sequence:</p>
-<pre><code>ctrl-a d</code></pre>
-<p>This will leave the session running and detach from the screen so you&#39;re back to your original terminal prompt.</p>
+<pre><code>ctrl-a d
+</code></pre><p>This will leave the session running and detach from the screen so you&#39;re back to your original terminal prompt.</p>
 <p>To resume your screen session:</p>
-<pre><code>screen -r</code></pre>
-<p>This will take you back to your screen session.</p>
+<pre><code>screen -r
+</code></pre><p>This will take you back to your screen session.</p>
 <p>But what if my connection drops and closes whilst I&#39;m inside of screen? When I resume my ssh session, the screen <em>could</em> still be attached, so that when I run <code>screen -r</code> it won&#39;t resume. This is simple to get around, you can detach the screen from <em>outside</em> of the screen session (and in our case, immediately resume using <code>-r</code>):</p>
-<pre><code>screen -rd</code></pre>
-<p>So now you&#39;ve got basic minimum use of screen, how about using some of it&#39;s features? Multiple screens, multiple windows, naming screen sessions &amp; windows, setting defaults in the screen like scroll back, or displaying the title of the screen in the terminal.</p>
-<h2>Screen commands</h2>
-<p>When you run screen more than once, you&#39;ll have multiple screen sessions on the go. To list the available screens:</p>
-<pre><code>screen -ls</code></pre>
-<p>If you have more than one, you&#39;ll need to name the screen you want to resume:</p>
+<pre><code>screen -rd
+</code></pre><p>So now you&#39;ve got basic minimum use of screen, how about using some of it&#39;s features? Multiple screens, multiple windows, naming screen sessions &amp; windows, setting defaults in the screen like scroll back, or displaying the title of the screen in the terminal.</p>
+<h2>Screen commands</h2><p>When you run screen more than once, you&#39;ll have multiple screen sessions on the go. To list the available screens:</p>
+<pre><code>screen -ls
+</code></pre><p>If you have more than one, you&#39;ll need to name the screen you want to resume:</p>
 <pre><code>$ screen -ls
 There are screens on:
     17566.ttys001.remys-mba (Detached)
     18778.ttys001.remys-mba (Detached)
     19014.ttys001.remys-mba (Detached)
 
-$ screen -r 18778</code></pre>
-<p>This will resume the second screen (identified by it&#39;s process id). You can also resume last screen using <code>screen -RR</code>. But resuming using PIDs is ugly, so let&#39;s name the screens as we create them using the <code>-S</code> argument (this names the socket the screen connects to):</p>
+$ screen -r 18778
+</code></pre><p>This will resume the second screen (identified by it&#39;s process id). You can also resume last screen using <code>screen -RR</code>. But resuming using PIDs is ugly, so let&#39;s name the screens as we create them using the <code>-S</code> argument (this names the socket the screen connects to):</p>
 <pre><code>$ screen -S database-dump
 [ctrl-a d]
 $ screen -ls
@@ -636,32 +591,26 @@ There are screens on:
     19014.ttys001.remys-mba (Detached)
     18898.database-dump (Detached)
 
-$ screen -r database-dump</code></pre>
-<p>Now we have multiple named screens, let&#39;s look at multiple windows inside of a screen.</p>
-<h2>Screen windowing</h2>
-<p>Screen supports having multiple &quot;windows&quot; inside a screen session. So you can have one screen and multiple windows dealing with specific jobs.</p>
+$ screen -r database-dump
+</code></pre><p>Now we have multiple named screens, let&#39;s look at multiple windows inside of a screen.</p>
+<h2>Screen windowing</h2><p>Screen supports having multiple &quot;windows&quot; inside a screen session. So you can have one screen and multiple windows dealing with specific jobs.</p>
 <p>Inside of a screen, use the command sequence to create a new window:</p>
-<pre><code>ctrl-a c</code></pre>
-<p>The initial window is 0, second is 1 and so on, and there&#39;s a number of ways to switch windows:</p>
+<pre><code>ctrl-a c
+</code></pre><p>The initial window is 0, second is 1 and so on, and there&#39;s a number of ways to switch windows:</p>
 <pre><code>ctrl-a [n]     // where [n] is the window number
 ctrl-a ctrl-a  // switch to the last used window
 ctrl-a &quot;       // show a list of all the windows
-ctrl-a A       // change the title of this window</code></pre>
-<p>There&#39;s <a href="http://linux.about.com/od/Bash_Scripting_Solutions/a/The-Linux-Screen-Terminal-Window-Manager-Key-Bindings.htm">lots more key bindings</a> you can use inside of screen that allows you to navigate the windows beyond the scope of this article.</p>
-<h2>Tricks</h2>
-<p>Even if you use screen in it&#39;s simplest form (as I usually do), I wanted to share a few tricks I found whilst digging deeper in to screen.</p>
-<h3>Lazy continuous integration</h3>
-<p>This is a pretty dirty method, but it&#39;s worked for me in the past when I&#39;ve just wanted something to quickly work: <code>screen</code> + <code>watch</code> + <code>git pull</code> = <a href="https://remysharp.com/2012/06/16/development-trick-auto-updating-auto-reloading">auto deploy</a></p>
-<h3>Multiuser screens</h3>
-<p>To connect a second (or more) users to an existing screen session, use:</p>
-<pre><code>screen -rx</code></pre>
-<p>Instead of detaching any users attached to the session (which is what would happen if we used <code>-r</code>) this allows me to join the session and anything I type in my window is echoed to any other users connected to the screen.</p>
+ctrl-a A       // change the title of this window
+</code></pre><p>There&#39;s <a href="http://linux.about.com/od/Bash_Scripting_Solutions/a/The-Linux-Screen-Terminal-Window-Manager-Key-Bindings.htm">lots more key bindings</a> you can use inside of screen that allows you to navigate the windows beyond the scope of this article.</p>
+<h2>Tricks</h2><p>Even if you use screen in it&#39;s simplest form (as I usually do), I wanted to share a few tricks I found whilst digging deeper in to screen.</p>
+<h3>Lazy continuous integration</h3><p>This is a pretty dirty method, but it&#39;s worked for me in the past when I&#39;ve just wanted something to quickly work: <code>screen</code> + <code>watch</code> + <code>git pull</code> = <a href="https://remysharp.com/2012/06/16/development-trick-auto-updating-auto-reloading">auto deploy</a></p>
+<h3>Multiuser screens</h3><p>To connect a second (or more) users to an existing screen session, use:</p>
+<pre><code>screen -rx
+</code></pre><p>Instead of detaching any users attached to the session (which is what would happen if we used <code>-r</code>) this allows me to join the session and anything I type in my window is echoed to any other users connected to the screen.</p>
 <p>Maybe this could useful for remote support, or perhaps training. I&#39;ve not used this in the wild yet, but it&#39;s certainly a fun idea!</p>
-<h3>Keeping History</h3>
-<p>One problem with screen is the scroll back. If you scroll up in a screen, it doesn&#39;t scroll the history back, but the screen itself just scrolls away. To scroll back <em>inside</em> of the screen, you execute the <code>ctrl-a [</code> command. Now you can use your keyboard to navigate up and down (this is actually in &quot;copy mode&quot;). You can hit escape to return back to the prompt.</p>
+<h3>Keeping History</h3><p>One problem with screen is the scroll back. If you scroll up in a screen, it doesn&#39;t scroll the history back, but the screen itself just scrolls away. To scroll back <em>inside</em> of the screen, you execute the <code>ctrl-a [</code> command. Now you can use your keyboard to navigate up and down (this is actually in &quot;copy mode&quot;). You can hit escape to return back to the prompt.</p>
 <p>What might be more useful than a scroll back is a log of the screen session, which can be toggled on using <code>ctrl-a H</code>. This can be enabled by default with a <code>.screenrc</code> file though.</p>
-<h3>Screen Defaults</h3>
-<p>Finally, I&#39;ll you with my own <code>.screenrc</code>. Create this file in your home directory, and this can configure your startup options for screen:</p>
+<h3>Screen Defaults</h3><p>Finally, I&#39;ll you with my own <code>.screenrc</code>. Create this file in your home directory, and this can configure your startup options for screen:</p>
 <pre><code># Always show a status line in the window footer
 hardstatus on
 hardstatus alwayslastline
@@ -675,22 +624,22 @@ autodetach on
 startup_message off
 
 # set log on all windows
-deflog on</code></pre>
-<p><small>Reposted from <a href="http://webadvent.org/2012/persistent-terminal-sessions-by-remy-sharp">Web Advent 2012</a></small></p>
-]]></content:encoded></item><item><title>Moment is quickly becoming my new jQuery!</title><guid isPermaLink="false">moment-is-quickly-becoming-my-new-jquery</guid><link>http://remysharp.com/2015/04/06/moment-is-quickly-becoming-my-new-jquery</link><pubDate>Mon, 06 Apr 2015 14:00:46 +0000</pubDate><description><![CDATA[What exactly does that mean? Well, working with the DOM pre-jQuery was a total nightmare of hoop jumping and remembering strange, backward, twisty-hand ways of moving and manipulating the DOM. Back in 2006, you drop in jQuery, and boom, you&#39;re done. But, over the years, I could see my jQuery code was getting lazy (and overly heavy handed).
-Working with dates is a nightmare. The library moment.js beautifully and simply removes quite a bit of the pain.]]></description><content:encoded><![CDATA[
-<p>What exactly does that mean? Well, working with the DOM pre-jQuery was a total nightmare of hoop jumping and remembering strange, backward, twisty-hand ways of moving and manipulating the DOM. Back in 2006, you drop in jQuery, and boom, you&#39;re done. But, over the years, I could see my jQuery code was getting lazy (and overly heavy handed).</p>
+deflog on
+</code></pre><p><small>Reposted from <a href="http://webadvent.org/2012/persistent-terminal-sessions-by-remy-sharp">Web Advent 2012</a></small></p>
+]]></content:encoded></item><item><title>Moment is quickly becoming my new jQuery!</title><guid isPermaLink="false">moment-is-quickly-becoming-my-new-jquery</guid><link>https://remysharp.com/2015/04/06/moment-is-quickly-becoming-my-new-jquery</link><pubDate>Mon, 06 Apr 2015 14:00:46 +0000</pubDate><description><![CDATA[What exactly does that mean? Well, working with the DOM pre-jQuery was a total nightmare of hoop jumping and remembering strange, backward, twisty-hand ways of moving and manipulating the DOM. Back in 2006, you drop in jQuery, and boom, you&#39;re done. But, over the years, I could see my jQuery code was getting lazy (and overly heavy handed).
+Working with dates is a nightmare. The library moment.js beautifully and simply removes quite a bit of the pain.]]></description><content:encoded><![CDATA[<p>What exactly does that mean? Well, working with the DOM pre-jQuery was a total nightmare of hoop jumping and remembering strange, backward, twisty-hand ways of moving and manipulating the DOM. Back in 2006, you drop in jQuery, and boom, you&#39;re done. But, over the years, I could see my jQuery code was getting lazy (and overly heavy handed).</p>
 <p>Working with <a href="https://www.youtube.com/watch?v=-5wpm-gesOY">dates is a nightmare</a>. The library <a href="http://momentjs.com">moment.js</a> beautifully and simply removes <em>quite a bit</em> of the pain.</p>
+<!--more-->
 <p>In JavaScript, the <code>Date</code> object was originally a straight port from the Java (<a href="https://twitter.com/rem/status/585074626868445184">ref</a>), which means getting into a nice format like <code>2015-09-13</code> is quite a bit of fudderling. Moment takes the pain away.</p>
 <p>Then it also gives us comparisons, formatting options, parsing, loads and loads of awesome stuff. Which explains why it&#39;s part of my default stack and appears in all my projects.</p>
 <p>Nearly all my handlebar projects have this partial included for instance:</p>
 <pre><code class="language-js">hbs.registerHelper(&#39;moment&#39;, function (date, format) {
   return moment(date).format(format);
-});</code></pre>
+});
+</code></pre>
 <p>Except here&#39;s the rub, as with my jQuery code, I&#39;ve gotten a little too generous with moment, and now I&#39;m seeing one of our production projects with the CPU running at 100+% (how?!) most of the time, and dipping inside (via <code>node --prof</code>), I can see most of the time is spent in moment (doing regexp, parsing, formatting and so on).</p>
 <p>There&#39;s a bunch of optimisations I can, and <em>am</em> doing, but here&#39;s an example I wanted to share.</p>
-<h2>Refactoring out the laziness</h2>
-<p>I have a handlebar helper that will try to match the day of two arguments, typically these arguments are timestamps, but it can also be the word &quot;today&quot;.</p>
+<h2>Refactoring out the laziness</h2><p>I have a handlebar helper that will try to match the day of two arguments, typically these arguments are timestamps, but it can also be the word &quot;today&quot;.</p>
 <p>Here&#39;s the original source:</p>
 <pre><code class="language-js">// healthy doses of line breaks for legibility in this blog post
 hbs.registerHelper(&#39;matchDate&#39;, function (date, match, opts) {
@@ -710,7 +659,8 @@ hbs.registerHelper(&#39;matchDate&#39;, function (date, match, opts) {
 
 /* usage:
 {{#matchDate @root.showtime date}}class=&quot;highlight&quot;{{/matchDate}}
-*/</code></pre>
+*/
+</code></pre>
 <p>Reasonably cruft free, and pretty quick to write. But wait a second...looking at the code carefully, I can <em>now</em> see that in the best case, there&#39;s <em>three</em> calls to moment. Worst case: there&#39;s four!</p>
 <p>Moment is great, but it&#39;s too easy (for me) to get lazy. I&#39;ve re-factored the code, and now it looks like this:</p>
 <pre><code class="language-js">hbs.registerHelper(&#39;matchDate&#39;, function (date, match, opts) {
@@ -725,78 +675,74 @@ hbs.registerHelper(&#39;matchDate&#39;, function (date, match, opts) {
   if (matchDate.isSame(date, &#39;day&#39;)) {
     return opts.fn(this);
   }
-});</code></pre>
+});
+</code></pre>
 <p>Now just <em>one</em> call to moment (regardless of the path). There&#39;s probably an additional constructor call to moment (in the <code>isSame</code> parser), but it&#39;s still a lot better. The wider impact was this function (and many others like it) were being called hundreds of times on our main pages, which meant hundreds multiplied upwards many times, and quickly I understand the CPU hog.</p>
-<h2>TL;DR: know your APIs</h2>
-<p>This laziness was partly due to being really familiar with the low hanging functions, like <code>format</code>, instead of knowing the API really well and understanding all the ways I could have used the library.</p>
+<h2>TL;DR: know your APIs</h2><p>This laziness was partly due to being really familiar with the low hanging functions, like <code>format</code>, instead of knowing the API really well and understanding all the ways I could have used the library.</p>
 <p>// filed under &quot;duh&quot;</p>
-]]></content:encoded></item><item><title>Diet</title><guid isPermaLink="false">diet</guid><link>http://remysharp.com/2015/03/11/diet</link><pubDate>Wed, 11 Mar 2015 14:30:00 +0000</pubDate><description><![CDATA[I&#39;ve been asked a few times what&#39;s my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I&#39;ve gone from 30%+ body fat (obese) to 11.75% (inside athlete categorisation) over 2 years.]]></description><content:encoded><![CDATA[
-<p>I&#39;ve been asked a few times what&#39;s my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I&#39;ve gone from 30%+ body fat (obese) to 11.75% (inside athlete categorisation) over 2 years.</p>
+]]></content:encoded></item><item><title>Diet</title><guid isPermaLink="false">diet</guid><link>https://remysharp.com/2015/03/11/diet</link><pubDate>Wed, 11 Mar 2015 14:30:00 +0000</pubDate><description><![CDATA[I&#39;ve been asked a few times what&#39;s my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I&#39;ve gone from 30%+ body fat (obese) to 11.75% (inside athlete categorisation) over 2 years.]]></description><content:encoded><![CDATA[<p>I&#39;ve been asked a few times what&#39;s my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I&#39;ve gone from 30%+ body fat (obese) to 11.75% (inside athlete categorisation) over 2 years.</p>
+<!--more-->
 <p><img src="/images/2012-2014.jpg" alt="2012 - 2014"></p>
 <div class="update"><small><strong>Updated 4-July 2015:</strong> I recently watched a video of a male (a few years younger than me) taking a DEXA scan (the best that science can throw at a body fat value) and coming out at 12.5% body fat. He was ripped—a full on fitness model, and the type of body that I do not have. This tells me that if you chopped me up and analysed the fat on my body, you&#39;d get more than the 11.75% I&#39;m claiming above. I&#39;m just adding this for my own disclosure. For me however, I&#39;ve still made huge progress.</small></div>
 
-<h2>Purpose</h2>
-<p>The first consideration I had back at the start of 2013 was how do I start and what do I want to achieve?</p>
+<h2>Purpose</h2><p>The first consideration I had back at the start of 2013 was how do I start and what do I want to achieve?</p>
 <p>I&#39;d read a lot around the <a href="http://en.wikipedia.org/wiki/Paleolithic_diet">Palio diet</a> and the <a href="http://en.wikipedia.org/wiki/Slow-Carb_Diet">Slow-Carb diet</a> and a decided that if I was to get outside of the obese categorisation, I needed something simple. I needed to lose weight (body fat) and diet is 80% of the job (20% is the gym).</p>
 <p>I decided that I would cut wheat and dairy out of my diet. That&#39;s all (to start off with).</p>
 <p>That means no cheese. No sandwiches. No cheese sandwiches either. I can&#39;t say it was easy, and lunch was very hard. Lunchtime became falafel or burrito salad boxes. But there&#39;s no avoiding it, what you ultimately have to do is cook your own food ahead of time.</p>
 <p>In addition, by mid-March that year, I also quit drinking for 3 months, long enough that I&#39;m not really bothered about drinking today.</p>
 <p>This diet change, combined with the gym (not cardio, just lifting heavy and compound lifts) 3 days a week go me what I needed: down to 25% in 4 months.</p>
-<h2>66 days</h2>
-<p>You can&#39;t change your habits overnight. It typically takes <a href="http://www.telegraph.co.uk/health/healthnews/5857845/It-takes-66-days-to-form-a-habit.html">two months</a> to create a new habit. For me, that was my change of diet (and knowing what to eat at lunchtime!) and the gym.</p>
+<h2>66 days</h2><p>You can&#39;t change your habits overnight. It typically takes <a href="http://www.telegraph.co.uk/health/healthnews/5857845/It-takes-66-days-to-form-a-habit.html">two months</a> to create a new habit. For me, that was my change of diet (and knowing what to eat at lunchtime!) and the gym.</p>
 <p>It&#39;s hard, there&#39;s no doubt, but for me, it was, and is: worth it.</p>
 <p>But to achieve that first hurdle of 2 months, you need to prevent failing.</p>
-<h2>Failing</h2>
-<p>I&#39;ve written <a href="https://remysharp.com/2014/01/27/cheat">about this before</a>, but here&#39;s the short version: cheat and do everything you can to make it impossible to fail.</p>
+<h2>Failing</h2><p>I&#39;ve written <a href="https://remysharp.com/2014/01/27/cheat">about this before</a>, but here&#39;s the short version: cheat and do everything you can to make it impossible to fail.</p>
 <p>Too often have I tried to start something new, only to miss one day of that something, then a week, then I&#39;m procrastinating, then I&#39;m embarrassed and eventually I admit I&#39;ve failed.</p>
 <p>In this case, if I miss a day (of the gym or slip up on the diet), then it&#39;s a <em>cheat</em>. I&#39;ll tell myself I&#39;m allowed to, and it&#39;s intentional. If it&#39;s going to be two days of cheating, the <em>it&#39;s all part of the plan</em>.</p>
 <p>I plan Saturday as my cheat day. And I go bananas...</p>
 <figure><img class="withcredit" src="/images/cheat-day.jpg" title="Cheat day"><figcaption class="credit">And sometimes <a href="https://www.youtube.com/watch?v=VWgwJfbeCeU">I&#39;ll go crazy on the Butterfield diet</a>!</figcaption></figure>
 
 <p>It&#39;s possibly not ideal to go <em>so</em> nuts, and more recently I&#39;ve backed off a bit, but it&#39;s my cheat day, and it keeps me sane and it can be fun too!</p>
-<h2>My diet</h2>
-<p>Just to be clear: this is not <em>a</em> diet, this is just <em>my</em> diet. This is based on a roughly 1,500-1,700 calories consumed aiming for a carb, protein and fat split of 30%, 50% and 20% respectively (though gym days would tend to be at the high end).</p>
+<h2>My diet</h2><p>Just to be clear: this is not <em>a</em> diet, this is just <em>my</em> diet. This is based on a roughly 1,500-1,700 calories consumed aiming for a carb, protein and fat split of 30%, 50% and 20% respectively (though gym days would tend to be at the high end).</p>
 <p>I&#39;ve broken my day into the times that I eat. When I include more than one item, it means that I&#39;ll rotate any of these foods. Where I&#39;ve included links, it&#39;s either to the specific product or recipes.</p>
 <p>Note that this is also based on working from an office that only had a fridge, but no heating equipment. And yes, it&#39;s dull. It doesn&#39;t vary that much, but heck, when I was buying the same sandwich 3 times a week from the cornershop it&#39;s like that was variation!</p>
 <table>
 <thead>
 <tr>
 <th>When</th>
-<th align="center">What</th>
+<th style="text-align:center">What</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>7am / breakfast<br>within 30mins of waking</td>
-<td align="center"><a href="http://www.tesco.com/groceries/product/details/?id=283691370">Breakfast on the go</a><br><a href="http://www.sci-mx.co.uk/product-a-z/pro2go-duo-bar.html">Protein bar</a><br><a href="http://www.dolphinfitness.co.uk/en/optimum-nutrition-natural-whey-and-oats/21659">Oats &amp; Whey shake</a> (choc with a scoop of almond butter)<br><a href="http://www.tesco.com/groceries/product/details/?id=250926075">Smoked Salmon</a> on 2x wholemeal toast</td>
+<td style="text-align:center"><a href="http://www.tesco.com/groceries/product/details/?id=283691370">Breakfast on the go</a><br><a href="http://www.sci-mx.co.uk/product-a-z/pro2go-duo-bar.html">Protein bar</a><br><a href="http://www.dolphinfitness.co.uk/en/optimum-nutrition-natural-whey-and-oats/21659">Oats &amp; Whey shake</a> (choc with a scoop of almond butter)<br><a href="http://www.tesco.com/groceries/product/details/?id=250926075">Smoked Salmon</a> on 2x wholemeal toast</td>
 </tr>
 <tr>
 <td>10am (gym day only)</td>
-<td align="center"><a href="http://www.dolphinfitness.co.uk/en/optimum-nutrition-100-whey-gold-2.2kg/16825">Protein shake</a> (mint or extreme milk choc)</td>
+<td style="text-align:center"><a href="http://www.dolphinfitness.co.uk/en/optimum-nutrition-100-whey-gold-2.2kg/16825">Protein shake</a> (mint or extreme milk choc)</td>
 </tr>
 <tr>
 <td>10:30am</td>
-<td align="center">1 precooked <a href="http://www.tesco.com/groceries/product/details/?id=264465356">chicken breast</a> (skin removed)<br><a href="http://www.tesco.com/groceries/product/details/?id=279817782">Sweet chilli chicken</a><br>Additional raw broccoli is optional</td>
+<td style="text-align:center">1 precooked <a href="http://www.tesco.com/groceries/product/details/?id=264465356">chicken breast</a> (skin removed)<br><a href="http://www.tesco.com/groceries/product/details/?id=279817782">Sweet chilli chicken</a><br>Additional raw broccoli is optional</td>
 </tr>
 <tr>
 <td>1:30pm / lunch</td>
-<td align="center">~150g Chicken &amp; 50g egg noodles + hot sauce<br><a href="https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-taco-salad-md">Taco salad</a><br><a href="https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-guac-omlette-md">Guacamole Omelette</a> (looks bad, tastes great!)<br>Mexican chicken salad with avocado <a href="http://www.lachoza.co.uk/">from La Choza</a></td>
+<td style="text-align:center">~150g Chicken &amp; 50g egg noodles + hot sauce<br><a href="https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-taco-salad-md">Taco salad</a><br><a href="https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-guac-omlette-md">Guacamole Omelette</a> (looks bad, tastes great!)<br>Mexican chicken salad with avocado <a href="http://www.lachoza.co.uk/">from La Choza</a></td>
 </tr>
 <tr>
 <td>4:15pm</td>
-<td align="center"><a href="http://uk.fage.eu/product/yoghurt/total-0-170g">0% fat Total yoghurt</a><br><a href="http://danio.co.uk/">Danio</a><br>Protein bar<br>20-45g Cashew nuts</td>
+<td style="text-align:center"><a href="http://uk.fage.eu/product/yoghurt/total-0-170g">0% fat Total yoghurt</a><br><a href="http://danio.co.uk/">Danio</a><br>Protein bar<br>20-45g Cashew nuts</td>
 </tr>
 <tr>
 <td>6:45pm</td>
-<td align="center">Protein shake<br><a href="https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-mocha-shake-md">Mocha shake</a></td>
+<td style="text-align:center">Protein shake<br><a href="https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-mocha-shake-md">Mocha shake</a></td>
 </tr>
 <tr>
 <td>8pm / dinner</td>
-<td align="center"><a href="https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-fajitas-md">Fajita chicken, fresh guacamole &amp; refried beans</a><br>Tescos Healthy Living Oven chicken with refried beans<br>Turkey stuffed peppers<br>Nandos 1/2 chicken &amp; beans<br>Sweet chilli salmon fillet, rocket &amp; 100g of soya beans</td>
+<td style="text-align:center"><a href="https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-fajitas-md">Fajita chicken, fresh guacamole &amp; refried beans</a><br>Tescos Healthy Living Oven chicken with refried beans<br>Turkey stuffed peppers<br>Nandos 1/2 chicken &amp; beans<br>Sweet chilli salmon fillet, rocket &amp; 100g of soya beans</td>
 </tr>
 <tr>
 <td>10:30pm / bed<br>(optional)</td>
-<td align="center">Vanilla Casein protein shake</td>
+<td style="text-align:center">Vanilla Casein protein shake</td>
 </tr>
 </tbody>
 </table>
@@ -808,8 +754,7 @@ hbs.registerHelper(&#39;matchDate&#39;, function (date, match, opts) {
 I&#39;m eating larger meals throughout the day in place of the &quot;snack&quot; bars, and my breakfast is around 400-500kcals via a <a href="https://gist.github.com/remy/7c55ff6fbec15fe88ba3#file-oatmea-choco-banana-strawberry-shake-md">shake I make</a>, which I rather like.
 </div>
 
-<h2>Resources</h2>
-<p>Here&#39;s a few resources I found useful:</p>
+<h2>Resources</h2><p>Here&#39;s a few resources I found useful:</p>
 <ul>
 <li><a href="http://www.nerdfitness.com/">Nerd fitness</a> - there&#39;s a few inspiring stories along with some good information</li>
 <li><a href="http://www.amazon.co.uk/4-Hour-Body-uncommon-incredible-superhuman/dp/0091939526/ref=sr_1_1">The 4 Hour Body</a></li>
@@ -819,23 +764,20 @@ I&#39;m eating larger meals throughout the day in place of the &quot;snack&quot;
 <li><a href="http://evidencemag.com/why-calories-count/">Why Calories Count</a></li>
 <li>Recommended book by Kamil: <a href="http://evidencemag.com/flexible-dieting-book/">Flexible Dieting Book</a></li>
 </ul>
-<h2>Questions?</h2>
-<p>If this is useful to anyone, that&#39;s awesome. If you have <strong>any</strong> questions, please do ask in the comments below, I&#39;m more than happy to answer or update the blog post with more details.</p>
-]]></content:encoded></item><item><title>I'm a web developer. Not an engineer.</title><guid isPermaLink="false">i-am-web-developer</guid><link>http://remysharp.com/2015/02/26/i-am-web-developer</link><pubDate>Thu, 26 Feb 2015 11:00:00 +0000</pubDate><description><![CDATA[Something I’m starting to realise and accept for myself: I’m a web developer. Not an engineer. Mostly an approach &amp; understanding difference
+<h2>Questions?</h2><p>If this is useful to anyone, that&#39;s awesome. If you have <strong>any</strong> questions, please do ask in the comments below, I&#39;m more than happy to answer or update the blog post with more details.</p>
+]]></content:encoded></item><item><title>I'm a web developer. Not an engineer.</title><guid isPermaLink="false">i-am-web-developer</guid><link>https://remysharp.com/2015/02/26/i-am-web-developer</link><pubDate>Thu, 26 Feb 2015 11:00:00 +0000</pubDate><description><![CDATA[Something I’m starting to realise and accept for myself: I’m a web developer. Not an engineer. Mostly an approach &amp; understanding difference
 
 – Me, 6-Feb 2015
-This seemed to strike a chord with a few people, and others asked if I could embellish on those thoughts. So here it is.]]></description><content:encoded><![CDATA[
-<blockquote>
+This seemed to strike a chord with a few people, and others asked if I could embellish on those thoughts. So here it is.]]></description><content:encoded><![CDATA[<blockquote>
 <p>Something I’m starting to realise and accept for myself: I’m a web developer. Not an engineer. Mostly an approach &amp; understanding difference</p>
 </blockquote>
 <p>– Me, <a href="https://twitter.com/rem/status/563708407337996288">6-Feb 2015</a></p>
 <p>This seemed to strike a chord with a few people, and others asked if I could embellish on those thoughts. So here it is.</p>
-<h2>On titles</h2>
-<p>&quot;We&quot; love titles. Personally, in the last 5 years, I&#39;ve preferred the <em>sound</em> of being an engineer, or a JavaScript engineer. I actually quite like <em>software designer</em>. But let&#39;s face it, it&#39;s all fluff.</p>
+<!--more-->
+<h2>On titles</h2><p>&quot;We&quot; love titles. Personally, in the last 5 years, I&#39;ve preferred the <em>sound</em> of being an engineer, or a JavaScript engineer. I actually quite like <em>software designer</em>. But let&#39;s face it, it&#39;s all fluff.</p>
 <p>Actually, where titles aren&#39;t fluff, is when you work in a larger company. Quite often titles relate directly to pay scales. I digress.</p>
 <p>The <em>engineer</em> bit is a little less fluffy and does actually carry meaning.</p>
-<h2>Engineers</h2>
-<p>Calling yourself an engineer, when you&#39;re not actually qualified as an engineer is <em>sort of</em> a no-no. In fact, there&#39;s some <a href="http://en.wikipedia.org/wiki/Engineer#Regulation">regulation</a> around the engineering titles - and certainly in the UK (according to the Wikipedia page), there&#39;s been petitions to protect the title.</p>
+<h2>Engineers</h2><p>Calling yourself an engineer, when you&#39;re not actually qualified as an engineer is <em>sort of</em> a no-no. In fact, there&#39;s some <a href="http://en.wikipedia.org/wiki/Engineer#Regulation">regulation</a> around the engineering titles - and certainly in the UK (according to the Wikipedia page), there&#39;s been petitions to protect the title.</p>
 <p>Ignoring the regulations, to me, engineers are smart, educated (ideally in a form of engineering...) and specifically: solving complex computer engineering problems.</p>
 <p>In a conversation (over twitter) I was having with <a href="https://twitter.com/trek">Trek Glowacki</a>, midway he replied with:</p>
 <blockquote>
@@ -843,25 +785,22 @@ This seemed to strike a chord with a few people, and others asked if I could emb
 </blockquote>
 <p>I wasn&#39;t aware of any engineering goal, nor what <a href="http://en.wikipedia.org/wiki/Single_responsibility_principle">SRP</a> stood for, nor did I <em>really</em> understand what the Wikipedia page was saying to me.</p>
 <p>Honestly, I kind of feel out of my depth amongst engineers aka those people who *really&quot; took the time to study computer science and grok the shit out of it.</p>
-<h2>I am web developer</h2>
-<p>I don&#39;t know why I thought it was uncool to be a &quot;web developer&quot;. Perhaps because it&#39;s utterly vague.</p>
+<h2>I am web developer</h2><p>I don&#39;t know why I thought it was uncool to be a &quot;web developer&quot;. Perhaps because it&#39;s utterly vague.</p>
 <p>What &quot;web developer&quot; <em>does</em> mean <em>to me</em> though, is this:</p>
 <p>Someone who writes code for browsers. Likely from the school of view source, is comfortable with drop-in libraries, understands standards and <em>best practice</em> techniques. But mostly, <strong>a tinkerer.</strong></p>
-<h2>I am not alone</h2>
-<p><img src="https://remysharp.com/images/tbl-developer.jpg" alt="Tim Berners-Lee: web developer"></p>
+<h2>I am not alone</h2><p><img src="https://remysharp.com/images/tbl-developer.jpg" alt="Tim Berners-Lee: web developer"></p>
 <p>The picture above is an (infamous) screen grab from the <a href="http://www.webplatform.org/">Web Platform</a> introduction <a href="https://www.youtube.com/watch?v=Ug6XAw6hzaw">video</a>. Of Sir Tim Berners-Lee. The <em>creator</em> of The Web.</p>
 <p>I saw a lot of posts and tweets suggesting that this was a joke, or a disservice to his work, or that the title was utterly understated.</p>
 <p>I&#39;m not sure it was. There&#39;s no doubt that this man is responsible for a <em>lot</em> more, but he <em>is</em> The Web Developer.</p>
 <p>I&#39;m proud to say that I work on that same web. Making it better (and sometimes, perhaps, a little worse).</p>
-<h2>Embrace it</h2>
-<p>I&#39;ve personally learnt my web development skills over a long period of time and nearly entirely through trial and error. I suspect most of us have.</p>
+<h2>Embrace it</h2><p>I&#39;ve personally learnt my web development skills over a long period of time and nearly entirely through trial and error. I suspect most of us have.</p>
 <p>Being a web developer doesn&#39;t have to mean you have to be a JavaScript wiz, or that you <em>don&#39;t</em> touch the server side. By virtue of tinkering, it&#39;s quite likely you&#39;re getting better at <em>all</em> these things.</p>
 <p>Coming to this realisation is by no means a slur against those people who call themselves engineers. If you do, it&#39;s quite likely I already have a great deal of respect for your knowledge and understanding if I&#39;ve come across your work already.</p>
 <p>As for me, I&#39;m proud to say: I am a web developer. I am a tinkerer.</p>
-]]></content:encoded></item><item><title>What do you mean, you don't like IE6...X?</title><guid isPermaLink="false">you-dont-like-iex</guid><link>http://remysharp.com/2015/02/06/you-dont-like-iex</link><pubDate>Fri, 06 Feb 2015 16:00:00 +0000</pubDate><description><![CDATA[I wrote an offsite blog post entitled &quot;What do you mean, you don&#39;t like IE6? Really?&quot; back in 2011. The post is still relevant, but in the last 4 years I&#39;m pretty confident that the complaint isn&#39;t IE6, it&#39;s IE7, or IE8, or...you get the idea.
-So, for your special reading pleasure, I&#39;ve made it so that this post can updated to your particular IE complaint.]]></description><content:encoded><![CDATA[
-<p>I wrote an offsite blog post entitled &quot;What do you mean, you don&#39;t like IE6? Really?&quot; <em>back in 2011</em>. The post is still relevant, but in the last 4 years I&#39;m pretty confident that the complaint isn&#39;t IE6, it&#39;s IE7, or IE8, or...you get the idea.</p>
+]]></content:encoded></item><item><title>What do you mean, you don't like IE6...X?</title><guid isPermaLink="false">you-dont-like-iex</guid><link>https://remysharp.com/2015/02/06/you-dont-like-iex</link><pubDate>Fri, 06 Feb 2015 16:00:00 +0000</pubDate><description><![CDATA[I wrote an offsite blog post entitled &quot;What do you mean, you don&#39;t like IE6? Really?&quot; back in 2011. The post is still relevant, but in the last 4 years I&#39;m pretty confident that the complaint isn&#39;t IE6, it&#39;s IE7, or IE8, or...you get the idea.
+So, for your special reading pleasure, I&#39;ve made it so that this post can updated to your particular IE complaint.]]></description><content:encoded><![CDATA[<p>I wrote an offsite blog post entitled &quot;What do you mean, you don&#39;t like IE6? Really?&quot; <em>back in 2011</em>. The post is still relevant, but in the last 4 years I&#39;m pretty confident that the complaint isn&#39;t IE6, it&#39;s IE7, or IE8, or...you get the idea.</p>
 <p>So, for your special reading pleasure, I&#39;ve made it so that this post can updated to your particular IE complaint.</p>
+<!--more-->
 <p>Which IE don&#39;t you like: <select id="ie-selection" style="font-size: 20px; width: 100px"></p>
 <p><option>ALL THE BROWSERS!!!</option></p>
 <p><option>IE5</option></p>
@@ -901,69 +840,68 @@ window.onload = function () {
 <p>Developing for the web requires that you know how browsers work. The challenge of the job is making those web sites work everywhere. Knowing the ins and outs of browsers is what separates a regular Joe Average apart from the Mr James Awesome. If you don&#39;t want to learn about <strong class="browser">IE6&#39;s</strong> quirks (or IE7 or IE8 or IE9&#39;s) then don&#39;t. Someone else will take the work.</p>
 <p>As for me, I&#39;ll be holding my breath waiting for the next reason why <strong class="browser">IE6</strong> should die - like it&#39;s not documented well enough already.</p>
 <p><small>Reposted from <a href="http://remy.tumblr.com/post/8334086394/what-do-you-mean-you-dont-like-ie6-really">rem @ &gt; 140 characters</a></small></p>
-]]></content:encoded></item><item><title>Lessons learnt from nodemon 1.3</title><guid isPermaLink="false">lessons-learnt-from-nodemon-1-3</guid><link>http://remysharp.com/2015/02/02/lessons-learnt-from-nodemon-1-3</link><pubDate>Mon, 02 Feb 2015 11:00:00 +0000</pubDate><description><![CDATA[I recently pushed out an update to nodemon going from 1.2 to 1.3 containing a few new features and insights which I wanted to share here.]]></description><content:encoded><![CDATA[
-<p>I recently pushed out an update to <a href="https://www.npmjs.org/nodemon">nodemon</a> going from 1.2 to 1.3 containing a few new features and insights which I wanted to share here.</p>
+]]></content:encoded></item><item><title>Lessons learnt from nodemon 1.3</title><guid isPermaLink="false">lessons-learnt-from-nodemon-1-3</guid><link>https://remysharp.com/2015/02/02/lessons-learnt-from-nodemon-1-3</link><pubDate>Mon, 02 Feb 2015 11:00:00 +0000</pubDate><description><![CDATA[I recently pushed out an update to nodemon going from 1.2 to 1.3 containing a few new features and insights which I wanted to share here.]]></description><content:encoded><![CDATA[<p>I recently pushed out an update to <a href="https://www.npmjs.org/nodemon">nodemon</a> going from 1.2 to 1.3 containing a few new features and insights which I wanted to share here.</p>
+<!--more-->
 <p>Along with a slew of <a href="https://github.com/remy/nodemon/compare/v1.2.1...v1.3.6">changes and bug fixes</a> came three interesting changes:</p>
 <ol>
 <li>Support for events at the nodemon.json level allowing growl-like notifications</li>
 <li>Virtual machine support where the clock inside the container was different to the host clock</li>
 <li>Support piping commands in the exec (a trick I learnt from the <a href="https://github.com/npm/npm/">npm source</a>)</li>
 </ol>
-<h2>Exposing events to nodemon.json</h2>
-<p>When you require nodemon you can listen for <a href="https://github.com/remy/nodemon/wiki/Events#states">events</a>. Since the contents of <code>nodemon.json</code> gets mapped directly to <code>nodemon.config.options</code> I was able to read an event property and easily bind those events to spawn your customised commands:</p>
+<h2>Exposing events to nodemon.json</h2><p>When you require nodemon you can listen for <a href="https://github.com/remy/nodemon/wiki/Events#states">events</a>. Since the contents of <code>nodemon.json</code> gets mapped directly to <code>nodemon.config.options</code> I was able to read an event property and easily bind those events to spawn your customised commands:</p>
 <pre><code class="language-js">Object.keys(config.options.events).forEach(function (key) {
   nodemon.on(key, function () {
     spawn(config.options.events[key], config, [].slice.apply(arguments));
   });
-});</code></pre>
+});
+</code></pre>
 <p>Now from inside a global <code>nodemon.json</code> (that lives in my home directory) I can add the following to trigger OS level notifications that tell me my server restarted:</p>
 <pre><code class="language-json">{
   &quot;events&quot;: {
     &quot;restart&quot;: &quot;osascript -e &#39;display notification \&quot;app restarted\&quot; with title \&quot;nodemon\&quot;&#39;&quot;
   }
-}</code></pre>
-<h2>Virtual machines / Docker</h2>
-<p>Using docker containers has become increasingly popular. Nodemon is used in all sorts of situations but more and more people found that nodemon wasn&#39;t working in the VM. This is almost entirely due to the fact that the container often has a completely different datetime to the host, and in fact what was happening is the host would touch the file and the timestamp to the container, was in the <em>future</em>!</p>
+}
+</code></pre>
+<h2>Virtual machines / Docker</h2><p>Using docker containers has become increasingly popular. Nodemon is used in all sorts of situations but more and more people found that nodemon wasn&#39;t working in the VM. This is almost entirely due to the fact that the container often has a completely different datetime to the host, and in fact what was happening is the host would touch the file and the timestamp to the container, was in the <em>future</em>!</p>
 <p>So how do you work out the time drift between the container and the host?</p>
 <p>After a lot of poking and randomly testing things, it turns out it&#39;s pretty easy: touch the the file from inside the container, then compare the modified time to the system time.</p>
 <p>For some reason (in my tests and others), the container would use the host datetime when touching files.</p>
 <p>So now nodemon upon startup, touches a file and if the timestamp is significantly off the system clock, it warns that there&#39;s a drift and adjusts how it searches for changes on the file system.</p>
 <pre><code class="language-text">[nodemon] virtual machine clock offset: 12h31m58s
 [nodemon] v1.3.6
-...</code></pre>
-<h2>Supporting piped commands</h2>
-<p>Both the <code>exec</code> and the event commands now support being able to pipe commands together ala Unix as such:</p>
-<pre><code class="language-bash">nodemon -x &#39;tap test/**/* | tap-spec&#39;</code></pre>
+...
+</code></pre>
+<h2>Supporting piped commands</h2><p>Both the <code>exec</code> and the event commands now support being able to pipe commands together ala Unix as such:</p>
+<pre><code class="language-bash">nodemon -x &#39;tap test/**/* | tap-spec&#39;
+</code></pre>
 <p>Now nodemon will restart my tests and run them through tap-spec.</p>
 <p>The  way this works was lifted from the npm source code.</p>
 <p>For Unix based systems you run:</p>
-<pre><code class="language-bash">sh -c &quot;tape test/**/* | tap-spec&quot;</code></pre>
+<pre><code class="language-bash">sh -c &quot;tape test/**/* | tap-spec&quot;
+</code></pre>
 <p>In windows it&#39;s:</p>
-<pre><code class="language-bash">cmd /c &quot;tape test/**/* | tap-spec&quot;</code></pre>
+<pre><code class="language-bash">cmd /c &quot;tape test/**/* | tap-spec&quot;
+</code></pre>
 <p>Then just drop that into the <code>spawn</code> function and you&#39;re good to go.</p>
-<h2>Update</h2>
-<p>So go ahead and get the latest nodemon via <code>npm install -g nodemon@latest</code> — and if you feel inclined, maybe ping npm folk to get nodemon on their front page too!</p>
-]]></content:encoded></item><item><title>&quot;Why I don't like open source&quot; – my thoughts</title><guid isPermaLink="false">dont-like-open-source</guid><link>http://remysharp.com/2015/01/09/dont-like-open-source</link><pubDate>Fri, 09 Jan 2015 12:30:00 +0000</pubDate><description><![CDATA[This morning&#39;s walk was accompanied by Tiago Rodrigues (excellent) curation and commentary on Adam Yeats tweets on open source and (mostly) James Seymour-Lock&#39;s replies.
+<h2>Update</h2><p>So go ahead and get the latest nodemon via <code>npm install -g nodemon@latest</code> — and if you feel inclined, maybe ping npm folk to get nodemon on their front page too!</p>
+]]></content:encoded></item><item><title>&quot;Why I don't like open source&quot; – my thoughts</title><guid isPermaLink="false">dont-like-open-source</guid><link>https://remysharp.com/2015/01/09/dont-like-open-source</link><pubDate>Fri, 09 Jan 2015 12:30:00 +0000</pubDate><description><![CDATA[This morning&#39;s walk was accompanied by Tiago Rodrigues (excellent) curation and commentary on Adam Yeats tweets on open source and (mostly) James Seymour-Lock&#39;s replies.
 Please read it. Carefully. Get all the way through and reserve judgement (if any) for the end.
-It&#39;s not the first time Adam&#39;s thoughts have inspired a blog post either! These are my thoughts on open source, contributing and the points raised in the discussion.]]></description><content:encoded><![CDATA[
-<p>This morning&#39;s walk was accompanied by <a href="https://twitter.com/trodrigues">Tiago Rodrigues</a> (excellent) curation and commentary on <a href="https://twitter.com/adamyeats">Adam Yeats</a> tweets on open source and (mostly) <a href="https://twitter.com/JamesSLock">James Seymour-Lock</a>&#39;s replies.</p>
+It&#39;s not the first time Adam&#39;s thoughts have inspired a blog post either! These are my thoughts on open source, contributing and the points raised in the discussion.]]></description><content:encoded><![CDATA[<p>This morning&#39;s walk was accompanied by <a href="https://twitter.com/trodrigues">Tiago Rodrigues</a> (excellent) curation and commentary on <a href="https://twitter.com/adamyeats">Adam Yeats</a> tweets on open source and (mostly) <a href="https://twitter.com/JamesSLock">James Seymour-Lock</a>&#39;s replies.</p>
 <p><a href="https://storify.com/trodrigues/why-i-don-t-like-open-source-a-play-in-3-acts">Please read it</a>. Carefully. Get all the way through and reserve judgement (if any) for the end.</p>
 <p>It&#39;s not the first time Adam&#39;s thoughts have inspired a <a href="/2012/12/18/contributing-to-the-web-community">blog post</a> either! These are my thoughts on open source, contributing and the points raised in the discussion.</p>
+<!--more-->
 <p><small>This post is partly edited, but quite long, so might not be 100% coherent. For that, I&#39;m sorry!</small></p>
-<h2>Our web community distorts expectations</h2>
-<p>(Not) contributing to open source isn&#39;t the problem. The pressure coming from external and internal sources telling us that we should be contributing is invalid, in that <strong>it should not exist</strong>, but it does.</p>
+<h2>Our web community distorts expectations</h2><p>(Not) contributing to open source isn&#39;t the problem. The pressure coming from external and internal sources telling us that we should be contributing is invalid, in that <strong>it should not exist</strong>, but it does.</p>
 <p>How <em>we think</em> people see us is only a reflection of how we feel about ourselves. The project getting the most retweets today is not representative of real work. Nor is the person with the most followers the better human being.</p>
 <p>There is distortion in the web community that you need to learn more, contribute more, work more, know everything, be on the latest technology, and so on. <strong><em>Unsubscribe</em></strong>. Unfollow. Turn off alerts and notifications (or at least make your &quot;quiet hours 6pm-9am). <em>Find other human beings</em>.</p>
 <p>I want to say that Adam&#39;s tweets are not the fault of open source, but our industry&#39;s distortion. But his tweets and the subsequent replies prompted me to also write down my thoughts about open source that I&#39;ve been mulling over the last few years.</p>
-<h2>What does open source really mean?</h2>
-<p>It means <a href="https://github.com/nickdesaulniers/What-Open-Source-Means-To-Me">different things to different people</a>. That&#39;s okay.</p>
+<h2>What does open source really mean?</h2><p>It means <a href="https://github.com/nickdesaulniers/What-Open-Source-Means-To-Me">different things to different people</a>. That&#39;s okay.</p>
 <p>To me, it means:</p>
 <blockquote>
 <p>Welcome. Welcome to this code I wrote. Help yourself to bits you like or need. Help make it better for others. Help make it yours. Help make me better with your suggestions, changes or discussion. Use the code in any way you want, in ways I never thought of. And if the projects I created lives on without me, then open source has worked.</p>
 </blockquote>
 <p><em>You</em> need to decide what it means to you, and what it looks like. Which leads me to ask: <em>is a project really open source</em>?</p>
-<h2>There are two kinds of open source projects</h2>
-<p>There&#39;s the big, high profile projects and then there&#39;s <em>everything</em> else.</p>
+<h2>There are two kinds of open source projects</h2><p>There&#39;s the big, high profile projects and then there&#39;s <em>everything</em> else.</p>
 <p>When I&#39;d hear &quot;open source&quot;, I&#39;d think: Linux, Apache, Firefox, bootstrap, ember, node, etc. i.e. big fucking high profile massive open source projects with a fuck tonne of code*.</p>
 <p><small>* Okay, there&#39;s also a decent number of sensible codebase sized projects that are used a lot, passport for node for instance</small></p>
 <p>This is <em>Type One</em>.</p>
@@ -974,15 +912,13 @@ It&#39;s not the first time Adam&#39;s thoughts have inspired a blog post either
 <p>If someone sends a pull request to one of these projects, there&#39;s a few things that can happen: it&#39;s ignored/forgotten about or it&#39;s blindly merged &quot;meh, cool&quot; (there&#39;s other outcomes too!).</p>
 <p>For me, putting code in github as &quot;open source&quot; is for two main reasons: 1) so if I lose the code locally, I can find it again (fingers crossed Github doesn&#39;t vanish too quickly), 2) I can&#39;t be arsed to pony up the pitiful amount of dollars for more private repos.</p>
 <p>The majority of the repo owners on the type one projects are <em>companies</em>. It&#39;s their product. The majority of type two, are individuals. Let&#39;s remember that perspective. Contributing to the small ones isn&#39;t a big deal and potentially contributing to the big ones might be like pissing in the ocean.</p>
-<h2>Contributing to open source</h2>
-<p>I can&#39;t speak for Adam, but it <em>sounds</em> like he&#39;s either felt pressure to contribute to some projects either externally or internally. I could be way off based, but I <em>do</em> know people who&#39;ve felt this way. Heck, I feel this internal pressure sometimes.</p>
+<h2>Contributing to open source</h2><p>I can&#39;t speak for Adam, but it <em>sounds</em> like he&#39;s either felt pressure to contribute to some projects either externally or internally. I could be way off based, but I <em>do</em> know people who&#39;ve felt this way. Heck, I feel this internal pressure sometimes.</p>
 <p>Contributing (code) to the Type One projects isn&#39;t something you can do with a few hours. So seriously, if you feel this pressure: stop it.</p>
 <p>It takes hours, if not days to become familiar with the codebase. Then creating a bug fix or a new feature isn&#39;t quite as simple as &quot;hacking some code in&quot;. If it&#39;s a high profile project, it&#39;ll come with tests and coding guidelines. That&#39;s more work, and you&#39;ve not even contributed a single line yet.</p>
 <p>For context, in late-2000s, I partook in a <a href="https://web.archive.org/web/20130512035317/http://docs.jquery.com/JQuerySprint">jQuery day long sprint</a> to fix bugs. I&#39;d say I knew jQuery pretty damn well at the juncture. By the end of the sprint, I&#39;d managed to confirm just one bug, and <em>pretty much</em> have an idea of what caused it.</p>
 <p>&quot;Contributing to open source&quot; is a long term commitment, and you do have to pick and choose. There&#39;s a few people like Substack filling npm with his node modules is great, perhaps reinventing every wheel, but he&#39;s also doing it to <a href="https://gratipay.com/substack/">cover his living</a>. But these people are the exception. This isn&#39;t a lifestyle that&#39;s available to most people (and frankly, npm is running out of useful names for projects!).</p>
 <p>Ask yourself what is open source. Ask yourself if you want to contribute to that, and if you do (want to contribute) ask yourself <em>why</em>.</p>
-<h2>Hiring purely based on open source contributions</h2>
-<p>...is bullshit.</p>
+<h2>Hiring purely based on open source contributions</h2><p>...is bullshit.</p>
 <p>But <em>maybe</em>, maybe some companies will exclusively hire you based on your open source contributions. Honestly, if that&#39;s the case, it&#39;s more likely you&#39;re not applying for the job, and in fact the company is head hunting you.</p>
 <p>It <em>is</em> true that an &quot;open source&quot; project is seen as a reference of work. But it&#39;s also a <em>stale</em> reference of work. And importantly, it&#39;s not the only reference.</p>
 <p>Take my open source <a href="https://github.com/remy/inliner">inliner</a> project for instance. The code is appalling. There&#39;s outstanding open issues <em>and</em> pull requests. This is an open source project that is <em>not</em> representative of my current skills. Yet it&#39;s still open source. I wouldn&#39;t put it forward as my best work.</p>
@@ -992,43 +928,34 @@ It&#39;s not the first time Adam&#39;s thoughts have inspired a blog post either
 <p>With <em>all</em> my interviewees I asked them to write me a hangman game in JavaScript, and not to spend more than 2-4 hours on it (in their own time). I would pay each an honorarium for their time, because it was likely they were already employed and would have to do it <em>out of hours</em>. Personal time is valuable, and <strong>no one has an automatic right to it</strong>.</p>
 <p>His code was decent, but that&#39;s not what got him the job. During the interview, when asked if there was anything else he was interested in, he struggled then eventually mentioned he built a chess timer (in wood) that he could use with his then-girlfriend. <em>That&#39;s</em> what got him the job, and that same sentiment is what I saw over the following year. That detail doesn&#39;t belong on github, isn&#39;t part of our community, but <em>is</em> part of an interview.</p>
 <p>Never undervalue what you do. Everyone is unique. Some people aren&#39;t right for some jobs, but you github streak says positive <em>and</em> negative things.</p>
-<h2>If you can&#39;t contribute: you&#39;re not part of the community</h2>
-<p>Arguing that someone should get a jobsworth position* because the work 9-5 (or whatever extra overtime) is bollocks. It&#39;s not the first time I&#39;ve seen it either. This kind of sentiment is utterly selfish and narrow minded.</p>
+<h2>If you can&#39;t contribute: you&#39;re not part of the community</h2><p>Arguing that someone should get a jobsworth position* because the work 9-5 (or whatever extra overtime) is bollocks. It&#39;s not the first time I&#39;ve seen it either. This kind of sentiment is utterly selfish and narrow minded.</p>
 <p><small>* It&#39;s worth pointing out that James&#39; tweet was <a href="https://twitter.com/JamesSLock/status/553546788779859968">between friends</a></small></p>
 <p>The people who have a high chance of working on extra curricular projects are likely to be single, not terribly social and in their 20s. Why? Because when you&#39;re on your own and younger, you have more energy, and you need less sleep. When I was in my 20s (and married) I was hacking until 2am in the morning. What was my code like between 10pm and 2am? Shit. In fact, it&#39;s taken me years to realise that when I&#39;m not on form (i.e. past 6pm) that it takes me twice as long, if not more, to complete a simple task. A complex task is unlikely to get fixed.</p>
 <p>Our brains fuck with us when we deprive it of rest. Tell yourself you have RSI. If you have RSI, you rest. You move away from typing at a keyboard because if you push it, it hurts. Take <em>that</em> approach.</p>
 <p>Now that I&#39;ve got young kids, when I leave the office, someone will ask &quot;what are you up to this evening?&quot;. The same as every other evening: I help put the kids to sleep, I cook (or help cook), I eat, I got to bed. I love that I&#39;m with my family, and it&#39;s enough for me. There is <em>no time</em> for coding in that evening.</p>
-<h2>My thoughts</h2>
-<p>I&#39;ve got another post that I&#39;m writing about &quot;what I love about the web&quot;, which is sort of related: <strong>enjoy what <em>you</em> do</strong>. Question where the pressure comes from. If possible, focus on what you love and ignore the noise of &quot;hey, look at <em>my</em> cool thing&quot;.</p>
+<h2>My thoughts</h2><p>I&#39;ve got another post that I&#39;m writing about &quot;what I love about the web&quot;, which is sort of related: <strong>enjoy what <em>you</em> do</strong>. Question where the pressure comes from. If possible, focus on what you love and ignore the noise of &quot;hey, look at <em>my</em> cool thing&quot;.</p>
 <p>There <em>is</em> this weird pressure to get a &quot;name&quot; in our industry. But fuck, seriously, <strong>you are amazing</strong>. You work hard and you should be proud of your work irrespective of whether others can see it in the open.</p>
 <p>You come first, not your code or someone else&#39;s project: you.</p>
 <p>For me, my family comes first. Work and code isn&#39;t even a distant second. It&#39;s taken me many years of working silly hard and silly hours to work that out. Now that I understand that, life is better.</p>
-]]></content:encoded></item><item><title>Reboot</title><guid isPermaLink="false">reboot</guid><link>http://remysharp.com/2015/01/05/reboot</link><pubDate>Mon, 05 Jan 2015 16:00:00 +0000</pubDate><description><![CDATA[The last year I&#39;ve made a conscious effort to focus development efforts in JS Bin, and that&#39;s exactly what I did for over 8 months.
+]]></content:encoded></item><item><title>Reboot</title><guid isPermaLink="false">reboot</guid><link>https://remysharp.com/2015/01/05/reboot</link><pubDate>Mon, 05 Jan 2015 16:00:00 +0000</pubDate><description><![CDATA[The last year I&#39;ve made a conscious effort to focus development efforts in JS Bin, and that&#39;s exactly what I did for over 8 months.
 I had the great pleasure of hiring Giulia Alfonsi and Fabien O&#39;Carroll. Giulia&#39;s contracted ended after 6 months and Fabien is now headed to greener pastures.
 So now I have a 4 person office to myself. With that burning a hole in the business pocket, I&#39;ve decided to completely reboot my business.
 I&#39;m shutting down the office and returning to solo working and surfing from co-working space to coffee shops with the aim of working on hugely diverse projects and contributing more to the web community via blogging, videos and training.
-Exciting next opportunities
-Starting in January 2015, I&#39;ll continue to work alone again, tinkering in side projects, but more importantly, returning to client development, consultancy and training.
+Exciting next opportunitiesStarting in January 2015, I&#39;ll continue to work alone again, tinkering in side projects, but more importantly, returning to client development, consultancy and training.
 This means that I can be more nimble in my client work, jumping from project to project and working on all kinds of things (previously it ranged from Christmas Google Map projects, to WebRTC demos, to Node &amp; WebSocket based games, to JavaScript reviews and training).
-Why you&#39;d hire me
-I&#39;ve been working on the web professionally since 1999 (and several years before that on personal experiments) and I believe that length of experience is a major contributor to my skills. Often I was thrown into unknown (technical) waters, and it was sink or swim with nothing in between. From that I know my work always focuses towards practicality over perfection.
+Why you&#39;d hire meI&#39;ve been working on the web professionally since 1999 (and several years before that on personal experiments) and I believe that length of experience is a major contributor to my skills. Often I was thrown into unknown (technical) waters, and it was sink or swim with nothing in between. From that I know my work always focuses towards practicality over perfection.
 Often when I&#39;ve been brought in to review existing code along with the review I&#39;ll do my best to impart the techniques and tools I used to review, diagnose and fix. My aim isn&#39;t to swoop in and amaze, it&#39;s to help your team and help validate their skills.
-What&#39;s next?
-Get in touch if you want to discuss a project or idea.
+What&#39;s next?Get in touch if you want to discuss a project or idea.
 I&#39;m going to continue to invest in JS Bin and I&#39;ll be launching Confwall in the next few weeks, a commercial offering of a conference wall with tweets, schedule and announcements.
-Beyond that, like I said, I&#39;ll be blogging and posting more technical videos in the coming year.]]></description><content:encoded><![CDATA[
-<p>The last year I&#39;ve made a conscious effort to focus development efforts in JS Bin, and that&#39;s exactly what I did for over 8 months.</p>
+Beyond that, like I said, I&#39;ll be blogging and posting more technical videos in the coming year.]]></description><content:encoded><![CDATA[<p>The last year I&#39;ve made a conscious effort to focus development efforts in JS Bin, and that&#39;s exactly what I did for over 8 months.</p>
 <p>I had the great pleasure of hiring Giulia Alfonsi and Fabien O&#39;Carroll. Giulia&#39;s contracted ended after 6 months and Fabien is now headed to greener pastures.</p>
 <p>So now I have a 4 person office to myself. With that burning a hole in the business pocket, I&#39;ve decided to completely reboot my business.</p>
 <p>I&#39;m shutting down the office and returning to solo working and surfing from co-working space to coffee shops with the aim of working on hugely diverse projects and contributing more to the web community via blogging, videos and training.</p>
-<h2>Exciting next opportunities</h2>
-<p>Starting in January 2015, I&#39;ll continue to work alone again, tinkering in side projects, but more importantly, returning to client development, consultancy and training.</p>
+<h2>Exciting next opportunities</h2><p>Starting in January 2015, I&#39;ll continue to work alone again, tinkering in side projects, but more importantly, returning to client development, consultancy and training.</p>
 <p>This means that I can be more nimble in my client work, jumping from project to project and working on all kinds of things (previously it ranged from Christmas Google Map projects, to WebRTC demos, to Node &amp; WebSocket based games, to JavaScript reviews and training).</p>
-<h2>Why you&#39;d hire me</h2>
-<p>I&#39;ve been working on the web professionally since 1999 (and several years before that on personal experiments) and I believe that length of experience is a major contributor to my skills. Often I was thrown into unknown (technical) waters, and it was sink or swim with nothing in between. From that I know my work always focuses towards practicality over perfection.</p>
+<h2>Why you&#39;d hire me</h2><p>I&#39;ve been working on the web professionally since 1999 (and several years before that on personal experiments) and I believe that length of experience is a major contributor to my skills. Often I was thrown into unknown (technical) waters, and it was sink or swim with nothing in between. From that I know my work always focuses towards practicality over perfection.</p>
 <p>Often when I&#39;ve been brought in to review existing code along with the review I&#39;ll do my best to impart the techniques and tools I used to review, diagnose and fix. My aim isn&#39;t to swoop in and amaze, it&#39;s to help your team and help validate their skills.</p>
-<h2>What&#39;s next?</h2>
-<p><a href="http://leftlogic.com/contact">Get in touch</a> if you want to discuss a project or idea.</p>
+<h2>What&#39;s next?</h2><p><a href="http://leftlogic.com/contact">Get in touch</a> if you want to discuss a project or idea.</p>
 <p>I&#39;m going to continue to invest in JS Bin and I&#39;ll be launching <a href="http://confwall.com">Confwall</a> in the next few weeks, a commercial offering of a conference wall with tweets, schedule and announcements.</p>
 <p>Beyond that, like I said, I&#39;ll be blogging and posting more technical videos in the coming year.</p>
 ]]></content:encoded></item></channel></rss>

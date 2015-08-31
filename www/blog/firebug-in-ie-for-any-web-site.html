@@ -1,81 +1,75 @@
-<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Firebug in IE for *any* web site</title><meta name="description" content="Firebug in IE for *any* web site"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.27"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.27"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Firebug in IE for *any* web site</title><meta name="description" content="Firebug in IE for *any* web site"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="As a web developer, I&#39;m constantly using Firebug, but when it comes to testing in IE it&#39;s a nightmare if there&#39;s any bugs.
+Firebug does provide a &#39;lite&#39; version, but you have to have in it in every page you want to debug.
+Well, not anymore."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="Firebug in IE for *any* web site"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.30"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.30"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
-ga('send', 'pageview');</script></head><body id="blog-firebug-in-ie-for-any-web-site-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2007/03/16/how-to-make-a-cms-editor-more-usable" title="How to make a CMS editor more usable">Next</a></li><li class="prev"><a href="/2007/03/12/gravatar-bit-of-a-bad-start" title="Gravatar - bit of a bad start">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/03/13/firebug-in-ie-for-any-web-site" rel="bookmark" title="Permanent Link: Firebug in IE for *any* web site">Firebug in IE for *any* web site</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/firebug-in-ie-for-any-web-site.md">(edit)</a></small><div class="post-content">
-<p>As a web developer, I&#39;m constantly using <a href="http://getfirebug.com">Firebug</a>, but when it comes to testing in <abbr title="Internet Explorer">IE</abbr> it&#39;s a nightmare if there&#39;s any bugs.</p>
+ga('send', 'pageview');</script></head><body id="blog-firebug-in-ie-for-any-web-site-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="next"><a href="/2007/03/16/how-to-make-a-cms-editor-more-usable" title="How to make a CMS editor more usable">Next</a></li><li class="prev"><a href="/2007/03/12/gravatar-bit-of-a-bad-start" title="Gravatar - bit of a bad start">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/03/13/firebug-in-ie-for-any-web-site" rel="bookmark" title="Permanent Link: Firebug in IE for *any* web site">Firebug in IE for *any* web site</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/firebug-in-ie-for-any-web-site.md">(edit)</a></small><div class="post-content"><p>As a web developer, I&#39;m constantly using <a href="http://getfirebug.com">Firebug</a>, but when it comes to testing in <abbr title="Internet Explorer">IE</abbr> it&#39;s a nightmare if there&#39;s any bugs.</p>
 <p>Firebug does provide a &#39;<a href="http://getfirebug.com/lite.html">lite</a>&#39; version, but you have to have in it in every page you want to debug.</p>
 <p>Well, not anymore.</p>
 <!--more-->
-
 <p>Although the lite version of Firebug is nowhere near the fully featured Firefox version, it does allow me to do some interrogation of the DOM and objects I&#39;ve created.</p>
 <p>So I tweaked the lite version and now I can load the Firebug lite in to any page I want via a bookmarklet.</p>
-<h2>Installing</h2>
-<p>I recommend you download the tweaked <a href="http://remysharp.com/wp-content/uploads/2007/03/firebug.js">firebug.js</a> on to your own server for piece of mind<sup>&dagger;</sup></p>
+<h2>Installing</h2><p>I recommend you download the tweaked <a href="http://remysharp.com/wp-content/uploads/2007/03/firebug.js">firebug.js</a> on to your own server for piece of mind<sup>&dagger;</sup></p>
 <p><small>&dagger; If I was being malicious I could change the hosted JavaScript to post cookie data to another web site if I wanted.  I&#39;m <strong>not</strong> malicious - but it&#39;s worth keeping in mind!</small></p>
 <p>To use the bookmarklet, drag the link below in to your links toolbar in IE.</p>
-<p><a href="javascript:var h=document.getElementsByTagName('html');h[0].setAttribute('debug', 'true');if (!document.getElementById('_fb')) { var q=document.createElement('script');q.setAttribute('id', '_fb');q.setAttribute('src', 'http://remysharp.com/wp-content/uploads/2007/03/firebug.js');document.getElementsByTagName('body')[0].appendChild(q);void(q);}else{void(window.console.open());}" style="font-size: 150%;">Firebug Bookmarklet</a></p>
+<p><a href="javascript:var h=document.getElementsByTagName('html');h[0].setAttribute('debug', 'true');if (!document.getElementById('_fb')) { var q=document.createElement('script');q.setAttribute('id', '_fb');q.setAttribute('src', 'http://remysharp.com/wp-content/uploads/2007/03/firebug.js');document.getElementsByTagName('body')[0].appendChild(q);void(q);}else{void(window.console.open());}" style="font-size: 150%">Firebug Bookmarklet</a></p>
 <p>If you use your own version of firebug.js - change the following block in the bookmarklet&#39;s code to point to your code:</p>
 <p><code>http://remysharp.com/wp-content/uploads/2007/03/firebug.js</code></p>
-<h3>Safari</h3>
-<p>Currently I can&#39;t get the bookmarklet to work for Safari (though I&#39;ve found 99.9% of the time, if the JS works in Firefox, it will work in Safari).  It&#39;s because I can&#39;t target the contents of the iFrame...yet.</p>
-<h2>How it was done</h2>
-<p>In the interest of understanding what I did, I thought I&#39;d quickly drop an explanation - and perhaps <a href="http://joehewitt.com/about.php">Joe Hewitt</a> may consider adding the tweaked version.</p>
-<h3>getFirebugConsoleiFrame()</h3>
-<p>I created a new function to return the Firebug console&#39;s HTML content.  This meant I didn&#39;t have to source the console&#39;s content (an iFrame) from another domain (which would lead to obvious permission problems).</p>
-<h3>createFrame()</h3>
-<p>I removed the setting of the &#39;src&#39; attribute on the iFrame (as discussed above), and once the iFrame was loaded in to the DOM, I could change it&#39;s HTML using</p>
+<h3>Safari</h3><p>Currently I can&#39;t get the bookmarklet to work for Safari (though I&#39;ve found 99.9% of the time, if the JS works in Firefox, it will work in Safari).  It&#39;s because I can&#39;t target the contents of the iFrame...yet.</p>
+<h2>How it was done</h2><p>In the interest of understanding what I did, I thought I&#39;d quickly drop an explanation - and perhaps <a href="http://joehewitt.com/about.php">Joe Hewitt</a> may consider adding the tweaked version.</p>
+<h3>getFirebugConsoleiFrame()</h3><p>I created a new function to return the Firebug console&#39;s HTML content.  This meant I didn&#39;t have to source the console&#39;s content (an iFrame) from another domain (which would lead to obvious permission problems).</p>
+<h3>createFrame()</h3><p>I removed the setting of the &#39;src&#39; attribute on the iFrame (as discussed above), and once the iFrame was loaded in to the DOM, I could change it&#39;s HTML using</p>
 <p><code>consoleFrame.contentWindow.document.write(getFirebugConsoleiFrame());</code></p>
 <p>I tell you: I don&#39;t think I&#39;ve used &#39;.write&#39; since the early 2000s - but it did the trick in IE.</p>
-<p>Any comments, suggestions or problems let me know.</p>
-<p class="follow">Posted 13-Mar 2007 under bookmarklet &amp; firebug &amp; ie &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+<p>Any comments, suggestions or problems let me know.</p><p class="follow">Posted 13-Mar 2007 under bookmarklet &amp; firebug &amp; ie &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
 var disqus_url = 'http://remysharp.com/2007/03/13/firebug-in-ie-for-any-web-site/';
-var disqus_title = 'Firebug in IE for *any* web site';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="http://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
-</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.27"></script><script src="/js/index.js?2.27"></script><!--  
-  
- Carved up by hand using Harp and a shit load of hacking.
-  
-  Also, this:
-  
-  
-  
-                       \_            /;              _.._
-                       `\~--.._     //'            ,(+=\\\\
-                        `//////\  \\/;'             /~ (\\\\
-                          ~/////\~\`)'             /;   ))))
-                              `~'  |              ((`~/((((\
-                              ;'_\'\             /'))   )))))
-                             /~/ '" "'     _.  /'/\_ /^\`((( \
-                            `\/'       _.-~/--/ (  =(   | ,  |
-                                    _/~\_)_}___/^\/~`\.__\|==|
-                                   /uUUU)        )        |  |
-                                  (   / |      _-=o|\__ /'/~ \
-                                  ' /'  |     /(((((\`\(  |~\/
-                                  /'    |   /' )))))"`\`\|/_/---.._,$$,
-                            .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
-                         ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
-                       ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
-                     ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
-                   s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
-                 _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
-               /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
-            (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
-             (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
-             `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
-             (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
-            ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
-            /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
-           /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
-         ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
-       ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
-      S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
-     (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
-                         (/-(/-(/-(/-(/-'
-  
-  
-  
-     – Remy
-  
-  --><!-- Env: production - static files--></body></html>
+var disqus_title = 'Firebug in IE for *any* web site';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.30"></script><script src="/js/index.js?2.30"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- Env: production - static files--></body></html>
