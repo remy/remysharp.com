@@ -30,26 +30,26 @@ To achieve this in CI you, ideally, need to handle the <code>show_404</code> you
 <pre><code>class MY_Router extends CI_Router {
   /**
    * Constructor
-   */    
-  function MY_Router() {   
-    parent::CI_Router(); 
-    
+   */
+  function MY_Router() {
+    parent::CI_Router();
+
     log_message('debug', "Custom Router Class Initialized");
   }
 
   /**
    * Replaces the default show_404 logic flow in _validate_request
    * and returns our custom controller
-   */  
+   */
   function missing_controller($segments) {
-    $this->set_class('missing'); // <-- this is our custom 404 handler
+    $this->set_class('missing'); // this is our custom 404 handler
     $this->set_method('index');
-    return array('missing'); // <-- and again
+    return array('missing'); // and again
   }
-  
+
   /**
    * Taken directly from Router.php - to overload the 404 method
-   */ 
+   */
   function _validate_request($segments) {
     // ... original code, except show_404() is replaced with:
     return $this->missing_controller($segments);
@@ -82,10 +82,10 @@ I've subclassed the <code>Controller</code> class and I use <code>MY_Controller<
     parent::MY_Controller();
     $this->page_title = 'Home!';
   }
-  
+
   function index() {
     $data = array();
-    
+
     if ($this->ajax) {
       if ($this->input->post('date')) {
         $this->load->model('Events');
