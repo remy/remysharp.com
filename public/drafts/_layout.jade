@@ -3,11 +3,11 @@ extends ../_partials/layout
 block content
   != partial('../_partials/page-nav')
 
-  permalink = '/drafts/' + current.source;
+  - permalink = '/drafts/' + current.source;
 
   - var timestamp = '';
   if current.source !== 'index'
-    timestamp = modified('/drafts/' + current.source);
+    - timestamp = modified('/drafts/' + current.source);
 
   main.content(role="main")
     div.warning
