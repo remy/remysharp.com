@@ -19,8 +19,7 @@
               if post && post.date
                 li
                   a(href="#{ post.relative }") #{ post.title }
-                  &nbsp;
-                  small.date #{ moment(post.date).format('D-MMM YYYY')}
+                  small.date &nbsp; #{ moment(post.date).format('D-MMM YYYY')}
               - post = posts.shift()
       else
         - post = posts.shift()

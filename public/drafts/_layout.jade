@@ -6,8 +6,8 @@ block content
   - permalink = '/drafts/' + current.source;
 
   - var timestamp = '';
-  if current.source !== 'index'
-    - timestamp = modified('/drafts/' + current.source);
+  - if (current.source !== 'index')
+    - timestamp = typeof modified === 'function' ? modified('/drafts/' + current.source) : new Date(0);
 
   main.content(role="main")
     div.warning
