@@ -2,6 +2,8 @@
 
 This is a story about JS Bin. I've told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it's not going anywhere. It will continue to run and serve its users. Even the scumbags.
 
+<!--more-->
+
 The story has been broken into 5 parts, released over a series of days.
 
 - [Part 1: The start of the DDoS](/jsbin-toxic-part-1)
