@@ -22,14 +22,14 @@ I'm open to anything interesting and challenging in front-end, node.js, or mobil
 
 I also run training for your developers, again focused around JavaScript. Details of available workshops can be found on my business web site: [Left Logic](http://leftlogic.com/training).
 
-### My rate and availability:
+### Rate and availability
 
 My next availability is: Jan 12, 2016
 
-My working week is Tuesday to Friday, and for full time dev projects, my rate is £3,000+VAT per week. I bill hourly for projects with vague requirements and try to do fixed price for projects that have very clearly defined scopes.
+My working week is Tuesday to Friday, and for full time dev projects. I bill hourly for projects with vague requirements and try to do fixed price for projects that have very clearly defined scopes.
 
 I work remotely, and am happy to visit for face-to-face meetings.
 
-### Let's work together!
+### Let's work together
 
 [Email me today](mailto:info@leftlogic.com) to get in touch about your project and let's set up a time to talk.
