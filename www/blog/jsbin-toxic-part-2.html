@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The toxic side of free. Or: how I lost the love for my side project (part 2)</title><meta name="description" content="The toxic side of free. Or: how I lost the love for my side project (part 2)"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.
+The story has been broken into 5 parts, released over a series of days.
+
+Part 1: The start of the DDoS
+Part 2: Spam
+Part 3: Registered users wreaking havoc
+Part 4: The cost
+Part 5: Police
+
+Part 2: SpamWho doesn&#39;t love a filthy dose of spam with their product? Let&#39;s picture exactly what JS Bin is: a place that people can anonymously create public web pages.
+So...yeah...I guess I should have known I was asking for trouble.
+JS Bin, as of April 2015, has well over 15,000,000 bins. It crossed 10 million bins late last year, so that number has been accelerating. It should. That&#39;s what growth is about. But I had to face it, there&#39;s no way there&#39;s 5 million new bins with everyone learning the magic of the web stack. There&#39;s going to be some spam in there.
+
+
+Affiliate spamNo, not spam that I, or JS Bin are affiliated with! At some point in 2014, I searched Google with &quot;site:jsbin.com&quot; just to see what awesome content existed. Sadly, Google&#39;s only reply, and pages of reply, was this &quot;affiliate spam&quot;.
+Bear with me: it&#39;s a page that contains a tonne of links that usually entices the reader to click through for some kind of random product. Maybe a DVD or a CD containing the secrets to earning your first million or some such nonsense.
+In some cases, since I have admin access to JS Bin, I would just delete the bin. But it was (and is) like playing whack-a-mole. You delete one, and immediately find another - partly also because with JS Bin, you&#39;re deleting a revision, and not the whole collection of bins (I&#39;ve yet to develop that).
+So in this case, I would head to the database and run dangerous manual queries to delete all the bins with the offending URL. Thankfully, in the 15 million rows, I had the good sense to add an index early on to the URL field, so it&#39;s quick and doesn&#39;t lock up the table.
+SEO spamI don&#39;t really understand what this is, but it&#39;s definitely a thing. Similar to the affiliate junk, SEO spam would just contain an insane amount of links to web sites. I still don&#39;t understand it, but it&#39;s definitely nefarious.
+PhishingYay, phishing. Phishing is actually the very first type of abuse I ever came across on JS Bin. I don&#39;t remember who reported it to me, but at some point, someone was trying to phish the Habbo.com homepage.
+It&#39;s why, even today, the public config for JS Bin contains a default blacklist for habbo.com and processform.cgi. The blacklist prevents the bin from being saved. Everything works, but it just silently fails to save.
+In production the blacklisting is much much larger these days, and includes frankly stupid stuff like kardishain, Clickbank and snippets of nasty code like ...|63|0A|27|73|70|2E|2F|... which aims to prevent code that&#39;s used in some kinds of attacks.
+But yeah: whack-a-mole.
+Link hidingThe last type of spam that appeared in JS Bin is using JS Bin as a link sharing site to the dark and shitty side of the web. Arsehats (the nasty users, as I like to call them) would use JS Bin to redirect using top.location=&quot;http://arsehat.com&quot;. Then, using the full output URL, it would be shared on networks like Twitter and Facebook.
+Since &quot;arsehat.com&quot; was already blocked on Facebook and Twitter, but JS Bin wasn&#39;t, it&#39;s an efficient way to share links to bad places, and hide under JS Bin.
+It&#39;s kinda depressing that when I search Twitter for &quot;jsbin.com&quot;, it would mostly yield weirdos sharing things like webcams to their toilet fetish funsies.
+If you can&#39;t play nice...In August 2014, I made the hard decision that I would have to reduce JS Bin&#39;s functionality if it was going to continue to positively contribute to the web, instead of flooding it sludge filled spam.
+I limited the full output for anonymous bins to last 90 minutes, then it would automatically revert to the edit view. Since the edit view is compiled using JavaScript, it had no use to SEO indexing. The live output iframe is also protected with a sandbox attribute that prevents location redirects, so the link hiding issue also (mostly) went away.
+Finally, all output views (i.e. the full output without the &quot;JS Bin editor&quot; bit) include the X-Robots-Tag: nofollow header - which is the new way of doing robots.txt. This seems to have helped stamp out the &quot;SEO&quot; use of JS Bin.
+But it didn&#39;t end there..."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="The toxic side of free. Or: how I lost the love for my side project (part 2)"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:image:src" content="https://remysharp.com/images/spam.jpg"/><meta name="twitter:card" content="summary_large_image"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.30"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.30"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-jsbin-toxic-part-2-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li>Latest</li><li class="prev"><a href="/2015/09/14/jsbin-toxic-part-1" title="The toxic side of free. Or: how I lost the love for my side project (part 1)">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2015/09/15/jsbin-toxic-part-2" rel="bookmark" title="Permanent Link: The toxic side of free. Or: how I lost the love for my side project (part 2)">The toxic side of free. Or: how I lost the love for my side project (part 2)</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/jsbin-toxic-part-2.md">(edit)</a></small><div class="post-content"><p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
+<p>The story has been broken into 5 parts, released over a series of days.</p>
+<ul>
+<li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
+<li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
+<li>Part 3: Registered users wreaking havoc</li>
+<li>Part 4: The cost</li>
+<li>Part 5: Police</li>
+</ul>
+<h2>Part 2: Spam</h2><p>Who doesn&#39;t love a filthy dose of spam with their product? Let&#39;s picture exactly what JS Bin is: a place that people can <em>anonymously</em> create public web pages.</p>
+<p>So...yeah...I guess I should have known I was asking for trouble.</p>
+<p>JS Bin, as of April 2015, has well over 15,000,000 bins. It crossed 10 million bins late last year, so that number has been accelerating. It should. That&#39;s what growth is about. But I had to face it, there&#39;s no way there&#39;s 5 million new bins with everyone learning the magic of the web stack. There&#39;s going to be some spam in there.</p>
+<p><img src="/images/spam.jpg" alt="https://www.flickr.com/photos/the-lobster/4767649914"></p>
+<!-- photo via: https://www.flickr.com/photos/the-lobster/4767649914 -->
+<h3>Affiliate spam</h3><p>No, not spam that I, or JS Bin are affiliated with! At some point in 2014, I searched Google with &quot;site:jsbin.com&quot; just to see what awesome content existed. Sadly, Google&#39;s only reply, and pages of reply, was this &quot;affiliate spam&quot;.</p>
+<p>Bear with me: it&#39;s a page that contains a tonne of links that usually entices the reader to click through for some kind of random product. Maybe a DVD or a CD containing the secrets to earning your first million or some such nonsense.</p>
+<p>In some cases, since I have admin access to JS Bin, I would just delete the bin. But it was (and is) like playing whack-a-mole. You delete one, and immediately find another - partly also because with JS Bin, you&#39;re deleting a revision, and not the whole collection of bins (I&#39;ve yet to develop that).</p>
+<p>So in this case, I would head to the database and run dangerous manual queries to delete all the bins with the offending URL. Thankfully, in the 15 million rows, I had the good sense to add an index early on to the URL field, so it&#39;s quick and doesn&#39;t lock up the table.</p>
+<h3>SEO spam</h3><p>I don&#39;t really understand what this is, but it&#39;s definitely a thing. Similar to the affiliate junk, SEO spam would just contain an insane amount of links to web sites. I still don&#39;t understand it, but it&#39;s definitely nefarious.</p>
+<h3>Phishing</h3><p>Yay, phishing. Phishing is actually the very first type of abuse I ever came across on JS Bin. I don&#39;t remember who reported it to me, but at some point, someone was trying to phish the Habbo.com homepage.</p>
+<p>It&#39;s why, even today, the <a href="https://github.com/jsbin/jsbin/blob/config.default.json"><em>public</em> config</a> for JS Bin contains a default blacklist for <code>habbo.com</code> and <code>processform.cgi</code>. The blacklist prevents the bin from being saved. Everything works, but it just silently fails to save.</p>
+<p>In production the blacklisting is much much larger these days, and includes frankly stupid stuff like <code>kardishain</code>, <code>Clickbank</code> and snippets of nasty code like <code>...|63|0A|27|73|70|2E|2F|...</code> which aims to prevent code that&#39;s used in some kinds of attacks.</p>
+<p>But yeah: whack-a-mole.</p>
+<h3>Link hiding</h3><p>The last type of spam that appeared in JS Bin is using JS Bin as a link sharing site to the dark and shitty side of the web. Arsehats (the nasty users, as I like to call them) would use JS Bin to redirect using <code>top.location=&quot;http://arsehat.com&quot;</code>. Then, using the full output URL, it would be shared on networks like Twitter and Facebook.</p>
+<p>Since &quot;arsehat.com&quot; was already blocked on Facebook and Twitter, but JS Bin wasn&#39;t, it&#39;s an efficient way to share links to bad places, and hide under JS Bin.</p>
+<p>It&#39;s kinda depressing that when I search Twitter for &quot;jsbin.com&quot;, it would mostly yield weirdos sharing things like webcams to their toilet fetish funsies.</p>
+<h3>If you can&#39;t play nice...</h3><p>In August 2014, I made the hard decision that I would have to reduce JS Bin&#39;s functionality if it was going to continue to positively contribute to the web, instead of flooding it sludge filled spam.</p>
+<p>I limited the full output <em>for anonymous bins</em> to last 90 minutes, then it would automatically revert to the edit view. Since the edit view is compiled using JavaScript, it had no use to SEO indexing. The live output <code>iframe</code> is also protected with a <code>sandbox</code> attribute that prevents location redirects, so the link hiding issue also (mostly) went away.</p>
+<p>Finally, all output views (i.e. the full output without the &quot;JS Bin editor&quot; bit) include the <code>X-Robots-Tag: nofollow</code> header - which is the new way of doing <code>robots.txt</code>. This seems to have helped stamp out the &quot;SEO&quot; use of JS Bin.</p>
+<p>But it didn&#39;t end there...</p>
+<hr>
+<p>Return for part 3: how the registered users, who I thought were the goodies, wreaked havoc.</p><p class="follow">Posted 15-Sep 2015 under personal &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2015/09/15/jsbin-toxic-part-2/';
+var disqus_title = 'The toxic side of free. Or: how I lost the love for my side project (part 2)';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.30"></script><script src="/js/index.js?2.30"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- Env: production - static files--></body></html>

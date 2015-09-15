@@ -1,4 +1,67 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 14 Sep 2015 15:55:55 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>The toxic side of free. Or: how I lost the love for my side project (part 1)</title><guid isPermaLink="false">jsbin-toxic-part-1</guid><link>https://remysharp.com/2015/09/14/jsbin-toxic-part-1</link><pubDate>Mon, 14 Sep 2015 15:55:55 +0000</pubDate><description><![CDATA[This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.]]></description><content:encoded><![CDATA[<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 15 Sep 2015 16:21:42 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>The toxic side of free. Or: how I lost the love for my side project (part 2)</title><guid isPermaLink="false">jsbin-toxic-part-2</guid><link>https://remysharp.com/2015/09/15/jsbin-toxic-part-2</link><pubDate>Tue, 15 Sep 2015 16:21:42 +0000</pubDate><description><![CDATA[This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.
+The story has been broken into 5 parts, released over a series of days.
+
+Part 1: The start of the DDoS
+Part 2: Spam
+Part 3: Registered users wreaking havoc
+Part 4: The cost
+Part 5: Police
+
+Part 2: SpamWho doesn&#39;t love a filthy dose of spam with their product? Let&#39;s picture exactly what JS Bin is: a place that people can anonymously create public web pages.
+So...yeah...I guess I should have known I was asking for trouble.
+JS Bin, as of April 2015, has well over 15,000,000 bins. It crossed 10 million bins late last year, so that number has been accelerating. It should. That&#39;s what growth is about. But I had to face it, there&#39;s no way there&#39;s 5 million new bins with everyone learning the magic of the web stack. There&#39;s going to be some spam in there.
+
+
+Affiliate spamNo, not spam that I, or JS Bin are affiliated with! At some point in 2014, I searched Google with &quot;site:jsbin.com&quot; just to see what awesome content existed. Sadly, Google&#39;s only reply, and pages of reply, was this &quot;affiliate spam&quot;.
+Bear with me: it&#39;s a page that contains a tonne of links that usually entices the reader to click through for some kind of random product. Maybe a DVD or a CD containing the secrets to earning your first million or some such nonsense.
+In some cases, since I have admin access to JS Bin, I would just delete the bin. But it was (and is) like playing whack-a-mole. You delete one, and immediately find another - partly also because with JS Bin, you&#39;re deleting a revision, and not the whole collection of bins (I&#39;ve yet to develop that).
+So in this case, I would head to the database and run dangerous manual queries to delete all the bins with the offending URL. Thankfully, in the 15 million rows, I had the good sense to add an index early on to the URL field, so it&#39;s quick and doesn&#39;t lock up the table.
+SEO spamI don&#39;t really understand what this is, but it&#39;s definitely a thing. Similar to the affiliate junk, SEO spam would just contain an insane amount of links to web sites. I still don&#39;t understand it, but it&#39;s definitely nefarious.
+PhishingYay, phishing. Phishing is actually the very first type of abuse I ever came across on JS Bin. I don&#39;t remember who reported it to me, but at some point, someone was trying to phish the Habbo.com homepage.
+It&#39;s why, even today, the public config for JS Bin contains a default blacklist for habbo.com and processform.cgi. The blacklist prevents the bin from being saved. Everything works, but it just silently fails to save.
+In production the blacklisting is much much larger these days, and includes frankly stupid stuff like kardishain, Clickbank and snippets of nasty code like ...|63|0A|27|73|70|2E|2F|... which aims to prevent code that&#39;s used in some kinds of attacks.
+But yeah: whack-a-mole.
+Link hidingThe last type of spam that appeared in JS Bin is using JS Bin as a link sharing site to the dark and shitty side of the web. Arsehats (the nasty users, as I like to call them) would use JS Bin to redirect using top.location=&quot;http://arsehat.com&quot;. Then, using the full output URL, it would be shared on networks like Twitter and Facebook.
+Since &quot;arsehat.com&quot; was already blocked on Facebook and Twitter, but JS Bin wasn&#39;t, it&#39;s an efficient way to share links to bad places, and hide under JS Bin.
+It&#39;s kinda depressing that when I search Twitter for &quot;jsbin.com&quot;, it would mostly yield weirdos sharing things like webcams to their toilet fetish funsies.
+If you can&#39;t play nice...In August 2014, I made the hard decision that I would have to reduce JS Bin&#39;s functionality if it was going to continue to positively contribute to the web, instead of flooding it sludge filled spam.
+I limited the full output for anonymous bins to last 90 minutes, then it would automatically revert to the edit view. Since the edit view is compiled using JavaScript, it had no use to SEO indexing. The live output iframe is also protected with a sandbox attribute that prevents location redirects, so the link hiding issue also (mostly) went away.
+Finally, all output views (i.e. the full output without the &quot;JS Bin editor&quot; bit) include the X-Robots-Tag: nofollow header - which is the new way of doing robots.txt. This seems to have helped stamp out the &quot;SEO&quot; use of JS Bin.
+But it didn&#39;t end there...
+
+Return for part 3: how the registered users, who I thought were the goodies, wreaked havoc.]]></description><content:encoded><![CDATA[<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
+<p>The story has been broken into 5 parts, released over a series of days.</p>
+<ul>
+<li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
+<li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
+<li>Part 3: Registered users wreaking havoc</li>
+<li>Part 4: The cost</li>
+<li>Part 5: Police</li>
+</ul>
+<h2>Part 2: Spam</h2><p>Who doesn&#39;t love a filthy dose of spam with their product? Let&#39;s picture exactly what JS Bin is: a place that people can <em>anonymously</em> create public web pages.</p>
+<p>So...yeah...I guess I should have known I was asking for trouble.</p>
+<p>JS Bin, as of April 2015, has well over 15,000,000 bins. It crossed 10 million bins late last year, so that number has been accelerating. It should. That&#39;s what growth is about. But I had to face it, there&#39;s no way there&#39;s 5 million new bins with everyone learning the magic of the web stack. There&#39;s going to be some spam in there.</p>
+<p><img src="/images/spam.jpg" alt="https://www.flickr.com/photos/the-lobster/4767649914"></p>
+<!-- photo via: https://www.flickr.com/photos/the-lobster/4767649914 -->
+<h3>Affiliate spam</h3><p>No, not spam that I, or JS Bin are affiliated with! At some point in 2014, I searched Google with &quot;site:jsbin.com&quot; just to see what awesome content existed. Sadly, Google&#39;s only reply, and pages of reply, was this &quot;affiliate spam&quot;.</p>
+<p>Bear with me: it&#39;s a page that contains a tonne of links that usually entices the reader to click through for some kind of random product. Maybe a DVD or a CD containing the secrets to earning your first million or some such nonsense.</p>
+<p>In some cases, since I have admin access to JS Bin, I would just delete the bin. But it was (and is) like playing whack-a-mole. You delete one, and immediately find another - partly also because with JS Bin, you&#39;re deleting a revision, and not the whole collection of bins (I&#39;ve yet to develop that).</p>
+<p>So in this case, I would head to the database and run dangerous manual queries to delete all the bins with the offending URL. Thankfully, in the 15 million rows, I had the good sense to add an index early on to the URL field, so it&#39;s quick and doesn&#39;t lock up the table.</p>
+<h3>SEO spam</h3><p>I don&#39;t really understand what this is, but it&#39;s definitely a thing. Similar to the affiliate junk, SEO spam would just contain an insane amount of links to web sites. I still don&#39;t understand it, but it&#39;s definitely nefarious.</p>
+<h3>Phishing</h3><p>Yay, phishing. Phishing is actually the very first type of abuse I ever came across on JS Bin. I don&#39;t remember who reported it to me, but at some point, someone was trying to phish the Habbo.com homepage.</p>
+<p>It&#39;s why, even today, the <a href="https://github.com/jsbin/jsbin/blob/config.default.json"><em>public</em> config</a> for JS Bin contains a default blacklist for <code>habbo.com</code> and <code>processform.cgi</code>. The blacklist prevents the bin from being saved. Everything works, but it just silently fails to save.</p>
+<p>In production the blacklisting is much much larger these days, and includes frankly stupid stuff like <code>kardishain</code>, <code>Clickbank</code> and snippets of nasty code like <code>...|63|0A|27|73|70|2E|2F|...</code> which aims to prevent code that&#39;s used in some kinds of attacks.</p>
+<p>But yeah: whack-a-mole.</p>
+<h3>Link hiding</h3><p>The last type of spam that appeared in JS Bin is using JS Bin as a link sharing site to the dark and shitty side of the web. Arsehats (the nasty users, as I like to call them) would use JS Bin to redirect using <code>top.location=&quot;http://arsehat.com&quot;</code>. Then, using the full output URL, it would be shared on networks like Twitter and Facebook.</p>
+<p>Since &quot;arsehat.com&quot; was already blocked on Facebook and Twitter, but JS Bin wasn&#39;t, it&#39;s an efficient way to share links to bad places, and hide under JS Bin.</p>
+<p>It&#39;s kinda depressing that when I search Twitter for &quot;jsbin.com&quot;, it would mostly yield weirdos sharing things like webcams to their toilet fetish funsies.</p>
+<h3>If you can&#39;t play nice...</h3><p>In August 2014, I made the hard decision that I would have to reduce JS Bin&#39;s functionality if it was going to continue to positively contribute to the web, instead of flooding it sludge filled spam.</p>
+<p>I limited the full output <em>for anonymous bins</em> to last 90 minutes, then it would automatically revert to the edit view. Since the edit view is compiled using JavaScript, it had no use to SEO indexing. The live output <code>iframe</code> is also protected with a <code>sandbox</code> attribute that prevents location redirects, so the link hiding issue also (mostly) went away.</p>
+<p>Finally, all output views (i.e. the full output without the &quot;JS Bin editor&quot; bit) include the <code>X-Robots-Tag: nofollow</code> header - which is the new way of doing <code>robots.txt</code>. This seems to have helped stamp out the &quot;SEO&quot; use of JS Bin.</p>
+<p>But it didn&#39;t end there...</p>
+<hr>
+<p>Return for part 3: how the registered users, who I thought were the goodies, wreaked havoc.</p>
+]]></content:encoded></item><item><title>The toxic side of free. Or: how I lost the love for my side project (part 1)</title><guid isPermaLink="false">jsbin-toxic-part-1</guid><link>https://remysharp.com/2015/09/14/jsbin-toxic-part-1</link><pubDate>Mon, 14 Sep 2015 15:55:55 +0000</pubDate><description><![CDATA[This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.]]></description><content:encoded><![CDATA[<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
 <!--more-->
 <p>The story has been broken into 5 parts, released over a series of days.</p>
 <ul>
@@ -909,48 +972,4 @@ window.onload = function () {
 <p>Developing for the web requires that you know how browsers work. The challenge of the job is making those web sites work everywhere. Knowing the ins and outs of browsers is what separates a regular Joe Average apart from the Mr James Awesome. If you don&#39;t want to learn about <strong class="browser">IE6&#39;s</strong> quirks (or IE7 or IE8 or IE9&#39;s) then don&#39;t. Someone else will take the work.</p>
 <p>As for me, I&#39;ll be holding my breath waiting for the next reason why <strong class="browser">IE6</strong> should die - like it&#39;s not documented well enough already.</p>
 <p><small>Reposted from <a href="http://remy.tumblr.com/post/8334086394/what-do-you-mean-you-dont-like-ie6-really">rem @ &gt; 140 characters</a></small></p>
-]]></content:encoded></item><item><title>Lessons learnt from nodemon 1.3</title><guid isPermaLink="false">lessons-learnt-from-nodemon-1-3</guid><link>https://remysharp.com/2015/02/02/lessons-learnt-from-nodemon-1-3</link><pubDate>Mon, 02 Feb 2015 11:00:00 +0000</pubDate><description><![CDATA[I recently pushed out an update to nodemon going from 1.2 to 1.3 containing a few new features and insights which I wanted to share here.]]></description><content:encoded><![CDATA[<p>I recently pushed out an update to <a href="https://www.npmjs.org/nodemon">nodemon</a> going from 1.2 to 1.3 containing a few new features and insights which I wanted to share here.</p>
-<!--more-->
-<p>Along with a slew of <a href="https://github.com/remy/nodemon/compare/v1.2.1...v1.3.6">changes and bug fixes</a> came three interesting changes:</p>
-<ol>
-<li>Support for events at the nodemon.json level allowing growl-like notifications</li>
-<li>Virtual machine support where the clock inside the container was different to the host clock</li>
-<li>Support piping commands in the exec (a trick I learnt from the <a href="https://github.com/npm/npm/">npm source</a>)</li>
-</ol>
-<h2>Exposing events to nodemon.json</h2><p>When you require nodemon you can listen for <a href="https://github.com/remy/nodemon/wiki/Events#states">events</a>. Since the contents of <code>nodemon.json</code> gets mapped directly to <code>nodemon.config.options</code> I was able to read an event property and easily bind those events to spawn your customised commands:</p>
-<pre><code class="language-js">Object.keys(config.options.events).forEach(function (key) {
-  nodemon.on(key, function () {
-    spawn(config.options.events[key], config, [].slice.apply(arguments));
-  });
-});
-</code></pre>
-<p>Now from inside a global <code>nodemon.json</code> (that lives in my home directory) I can add the following to trigger OS level notifications that tell me my server restarted:</p>
-<pre><code class="language-json">{
-  &quot;events&quot;: {
-    &quot;restart&quot;: &quot;osascript -e &#39;display notification \&quot;app restarted\&quot; with title \&quot;nodemon\&quot;&#39;&quot;
-  }
-}
-</code></pre>
-<h2>Virtual machines / Docker</h2><p>Using docker containers has become increasingly popular. Nodemon is used in all sorts of situations but more and more people found that nodemon wasn&#39;t working in the VM. This is almost entirely due to the fact that the container often has a completely different datetime to the host, and in fact what was happening is the host would touch the file and the timestamp to the container, was in the <em>future</em>!</p>
-<p>So how do you work out the time drift between the container and the host?</p>
-<p>After a lot of poking and randomly testing things, it turns out it&#39;s pretty easy: touch the the file from inside the container, then compare the modified time to the system time.</p>
-<p>For some reason (in my tests and others), the container would use the host datetime when touching files.</p>
-<p>So now nodemon upon startup, touches a file and if the timestamp is significantly off the system clock, it warns that there&#39;s a drift and adjusts how it searches for changes on the file system.</p>
-<pre><code class="language-text">[nodemon] virtual machine clock offset: 12h31m58s
-[nodemon] v1.3.6
-...
-</code></pre>
-<h2>Supporting piped commands</h2><p>Both the <code>exec</code> and the event commands now support being able to pipe commands together ala Unix as such:</p>
-<pre><code class="language-bash">nodemon -x &#39;tap test/**/* | tap-spec&#39;
-</code></pre>
-<p>Now nodemon will restart my tests and run them through tap-spec.</p>
-<p>The  way this works was lifted from the npm source code.</p>
-<p>For Unix based systems you run:</p>
-<pre><code class="language-bash">sh -c &quot;tape test/**/* | tap-spec&quot;
-</code></pre>
-<p>In windows it&#39;s:</p>
-<pre><code class="language-bash">cmd /c &quot;tape test/**/* | tap-spec&quot;
-</code></pre>
-<p>Then just drop that into the <code>spawn</code> function and you&#39;re good to go.</p>
-<h2>Update</h2><p>So go ahead and get the latest nodemon via <code>npm install -g nodemon@latest</code> — and if you feel inclined, maybe ping npm folk to get nodemon on their front page too!</p>
 ]]></content:encoded></item></channel></rss>
