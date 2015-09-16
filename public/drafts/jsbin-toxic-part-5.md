@@ -12,7 +12,6 @@ The story has been broken into 5 parts, released over a series of days.
 - [Part 4: The cost](/jsbin-toxic-part-4)
 - [Part 5: Police](/jsbin-toxic-part-5)
 
-
 ## Part 5: Police
 
 I said before that JS Bin Pro really sucked the love out of the project for me, but this part has been a mix of emotions, but it's definitely the most distressed I've been when running JS Bin...
@@ -78,6 +77,24 @@ Obviously the flip side is that JS Bin is open to all, and that includes kids wa
 But, it would be great, as author of jsfiddle said, if Anonymous could write and use their own pastebin!
 
 [![Please, Anonymous, write your own](/images/jsbin-please-write.png)](https://twitter.com/zalun/status/602586249203945472)
+
+## Why carry on?
+
+I've given this series of posts as a talk a few times now at conferences and meetups, and one question that keeps coming up is:
+
+> Why didn't you just walk away and shutdown JS Bin?
+
+It's a fair question. The stress from the police related incidents didn't ever make me consider shutting it down. Even after the Spanish police email (above), I felt more like I had blinkers on and *all* I could see was the nastiness on the web, but I never considered killing JS Bin.
+
+In fact, it was when I was dealing with VATMOSS that I gave any thought to throwing in the towel. It was probably one of the more stressful working months I've experienced, and I don't kid when I say that VATMOSS has killed up and coming companies in their tracks.
+
+However, with all of the abuse, **I will never throw in the towel**.
+
+I *used* to search twitter for mentions of "jsbin" and compare to jsfiddle and codepen. Credit to Code Pen, the mentions are usually always always in their favour showing some truly amazing work. It took me many, many months to realise that twitter was not the measure for JS Bin.
+
+JS Bin is about helping other people. It's one person who is in need, sharing their working with another, and that other person helping, and solving, and teaching. It's a quiet, personal transaction between two individuals that won't be announced on twitter, but instead shared in an intimate exchange.
+
+*That* is why JS Bin has been [running for 7 years](https://remysharp.com/2008/10/06/js-bin-for-collaborative-javascript-debugging). That's why it'll carry on for another 7 years.
 
 ## Finding the love, again
 

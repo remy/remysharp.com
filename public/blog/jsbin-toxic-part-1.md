@@ -7,9 +7,9 @@ This is a story about JS Bin. I've told one story of JS Bin before, and this is 
 The story has been broken into 5 parts, released over a series of days.
 
 - [Part 1: The start of the DDoS](/jsbin-toxic-part-1)
-- Part 2: Spam
-- Part 3: Registered users wreaking havoc
-- Part 4: The cost
+- [Part 2: Spam](/jsbin-toxic-part-2)
+- [Part 3: Registered users wreaking havoc](/jsbin-toxic-part-3)
+- [Part 4: The cost](/jsbin-toxic-part-4)
 - Part 5: Police
 
 ## Back story
