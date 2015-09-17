@@ -1,11 +1,69 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Wed, 16 Sep 2015 16:11:38 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>The toxic side of free. Or: how I lost the love for my side project (part 3)</title><guid isPermaLink="false">jsbin-toxic-part-3</guid><link>https://remysharp.com/2015/09/16/jsbin-toxic-part-3</link><pubDate>Wed, 16 Sep 2015 16:11:38 +0000</pubDate><description><![CDATA[This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.]]></description><content:encoded><![CDATA[<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Thu, 17 Sep 2015 16:53:39 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>The toxic side of free. Or: how I lost the love for my side project (part 4)</title><guid isPermaLink="false">jsbin-toxic-part-4</guid><link>https://remysharp.com/2015/09/17/jsbin-toxic-part-4</link><pubDate>Thu, 17 Sep 2015 16:53:39 +0000</pubDate><description><![CDATA[This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.]]></description><content:encoded><![CDATA[<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
 <!--more-->
 <p>The story has been broken into 5 parts, released over a series of days.</p>
 <ul>
 <li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
 <li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
 <li><a href="/jsbin-toxic-part-3">Part 3: Registered users wreaking havoc</a></li>
-<li>Part 4: The cost</li>
+<li><a href="/jsbin-toxic-part-4">Part 4: The cost</a></li>
+<li>Part 5: Police</li>
+</ul>
+<h2>Part 4: The cost</h2><p>In July 2014, JS Bin <em>finally</em> landed <a href="https://jsbin.com/upgrade">Pro accounts</a>. The aim of this would be for JS Bin to eventually be self-sustaining. It&#39;s been running out of my pocket for the previous 6 years (for server and related costs), and development and design (2014 excluded) had been lovingly &quot;donated&quot; by myself and Danny (who is responsible for the design).</p>
+<p>In 2014, I decided to give JS Bin a full shot, and employed two (amazing) developers, <a href="https://twitter.com/electric_g">Giulia Alfonsi</a> and <a href="https://twitter.com/allouis_">Fabien O&#39;Carroll</a> to work with me full time on JS Bin.</p>
+<p>At the end of May 2015 (10 months after launching pro) the income JS Bin has provided has only <em>just</em> covered operating costs for the previous year. That&#39;s awesome and terrible at the same time. Before &quot;pro&quot; it was making a 100% loss - so that&#39;s something, <em>but</em> it doesn&#39;t even touch the edges of what I had hoped it would return (and I wasn&#39;t even being optimistic, as any British person would expect).</p>
+<p>But there is a cost to taking money...</p>
+<h3>VATMOSS</h3><p><a href="https://remysharp.com/2014/12/16/vatmoss">VATMOSS</a> was a change to the way that VAT is processed in the EU. Unfortunately, the geniuses behind the change at the EU (or whatever rock they hide under) hadn&#39;t quite thought the whole thing through. The information was thin, convoluted, confusing and not really accessible to small companies like myself and many others.</p>
+<p>This is the landing page for the EU European Commission&#39;s Digital Market:</p>
+<p><img src="/images/jsbin-eu.jpg" alt="EU"></p>
+<p>The European Commission is the EU&#39;s executive body. It represents the interests of the European Union as a whole (not the interests of individual countries).</p>
+<p>The slogan: <strong>bringing down barriers to unlock online opportunities.</strong> What a crock of shit. VATMOSS has single handedly killed off new business and for others made it <em>more</em> difficult for others do to their commerce. It&#39;s worth reading around the back story of VATMOSS, and even in mid-2015, it&#39;s there&#39;s a fight for change going on.</p>
+<p>The VATMOSS reporting is now (as of 1-Jan 2015) a requirement for <em>anyone</em> in the EU selling digital services or goods (i.e. ebooks, apps, subscriptions...JS Bin Pro subscriptions), and there was (and is) the threat of fines if you don&#39;t report and pay on the sales correctly.</p>
+<p>VATMOSS requires that you charge the VAT of the country of your customer. i.e. if the customer is English, 20%, if they are Danish 25%. Also, you have to capture <em>three proofs</em> that you&#39;re charging the right country (it&#39;s actually 2 proofs, but you need a 3rd backup proof). If these are all in conflict... ¯\<em>(ツ)</em>/¯</p>
+<p>The last month of 2014 were riddled with stress from the VATMOSS changes that I had to complete on JS Bin. It took weeks to try to fully understand VATMOSS, and what exactly would be required to satisfy requirements.</p>
+<p>In the end, the development time was about 2 week for both myself &amp; Fabien (employed to work on JS Bin) and about two weeks of research, filing and accounting time on Julie&#39;s part (my business partner - and wife).</p>
+<p>Estimated business cost: £3,500.</p>
+<p><img src="/images/jsbin-vatmoss-filed.png" alt="VATMOSS filed"></p>
+<p>£11.70p. VATMOSS, the stress of it all, to collect pennies from <strong>seven people</strong>. It would have been cheaper to book flights to each of their addresses to collect the cash by hand. <a href="https://twitter.com/search?q=from%3Arem%20%23vatmoss&amp;src=typd">It was not fun</a>.</p>
+<h3>Fraud credit cards</h3><p>Since pro accounts initially cost £6 for month, it turns out that this is low enough that it won&#39;t send red flags to stolen cards.</p>
+<p>This means that JS Bin was being used as a testing ground for stolen card numbers. If the card went through then they would use the card. Unbeknownst to me, the user wouldn&#39;t do <em>anything</em> on JS Bin, and I&#39;d be on my merry way thinking I had a new pro sign up.</p>
+<p>Eventually, the rightful owner would thing, &quot;What&#39;s this &#39;JS BIN PRO MONTHLY&#39; doing on my statement&quot;, follow up with their bank, and raise a fraud complaint.</p>
+<p>I can&#39;t win the complaint. The card was stolen, the £6 belongs to the original card owner, no question. But! If there&#39;s a dispute on Stripe, there&#39;s transaction fees for reversing charges. £15.34 in fact. Since I know I&#39;ll lose the dispute, <strong>it&#39;s cost me, £21.54 to allow some shithead to use JS Bin as a stolen card testing facility</strong>.</p>
+<p><img src="/images/jsbin-stripe-fraud.png" alt="Stripe disputes"></p>
+<p>My process now is that I&#39;ve taken to checking each and every individual sign up and their bins to see if they look spammy. I caught my first fraud card and reported on 13-April 2014. Not a huge success but very satisfying to know I&#39;ve avoided the charge. Woot!</p>
+<h3>Pro</h3><p>Pro accounts was never the intention when I launched JS Bin back in 2008. I&#39;d made stupid efforts to avoid having user accounts for quite a few years, but insisted that it should be 100% free.</p>
+<p>I don&#39;t know why.</p>
+<p>During 2013, I attended a lot of events where individuals kept coming up to me asking how do they pay for JS Bin, or why don&#39;t I add Pro, or explained that the only reason they used CodePen over JS Bin was that they were paying (i.e. the perceived security of data from the business exchange). The more I considered it, the more I realised I wanted to do JS Bin full time, <strong>and work on something I loved</strong>.</p>
+<p>I ran some numbers based on registered users in the database, and factored for about 20% spam/idle users, and then put my aims at 1% conversion. It didn&#39;t seem like much.</p>
+<p>The problem was: <em>that&#39;s all I did</em>.</p>
+<p>There was no business plan. There was no business development team. There was no marketing plan. There was no deadlines. There were no aims.</p>
+<p><img src="/images/jsbin-launch-failure.jpg" alt="&quot;I-565 at Space and Rocket Center&quot; by Nhlarry. Licensed under CC BY-SA 3.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:I-565_at_Space_and_Rocket_Center.jpg#/media/File:I-565_at_Space_and_Rocket_Center.jpg"></p>
+<p>So there my amazing product sat. To others it was ready to launch, but I was still heads down focused on the last 1% stretch, so it was parked.</p>
+<p>I&#39;d had the odd conversation that suggested I might be able to get funding from the government (as JS Bin is a tool primarily for learning), but I&#39;d shy away from the idea of having to do <em>&quot;business&quot;</em> stuff. It scared me a little too.</p>
+<p>Launching became the well know problem of chasing the end of the rainbow. Striving for the perfect, polished product before everyone else had access to it. Sure we had some alpha users in there, but they weren&#39;t invested in JS Bin any more than you are, so feedback came when they had some time.</p>
+<p>This went on for months and months. All the while JS Bin isn&#39;t making money, my entire company is focusing it&#39;s time on JS Bin and <em>not</em> producing any cash flow from any other sources.</p>
+<p>Pro (eventually) went live on <strong>23 July 2014</strong>. And the first way of registrations was an amazing feeling. In fact, one user (<a href="https://twitter.com/dcgauld">David Gauld</a> (who actually worked for me doing the <a href="http://leftlogic.com">Left Logic</a> redesign and built a fair amount of <a href="https://confwall.com">confwall</a>) was the first to go pro catching the <a href="https://github.com/jsbin/jsbin/commit/814251af40334990cf2490dc45d88ba246542f2f#diff-0aab8fc4f1799dc88c8d29729b719d87L118">commit landing in Github</a>, even before I had announced it - a cool side effect of the open source.</p>
+<p>Users did come, but looking back, it really wasn&#39;t very much if you consider the costs of running JS Bin, let alone paying for development, and then look at what the monthly (or yearly subscriptions) go us. A total of 42 upgrades in the first week (26 were on the first day).</p>
+<p><img src="/images/jsbin-pro-week1.png" alt="JS Bin Stripe report, week 1"></p>
+<p>I had always tucked money aside for a rain day (actually rainy year), and yeah, I can look back and say &quot;sure, I took a shot&quot; - but it came at a pretty penny.</p>
+<p>The next 6 months I lost my love for the project. Very simply: any new development had to justify it&#39;s existence and it&#39;s demand on my time. I did continue development until the end of 2014, but by that point, all love had been sucked dry and I needed a break. JS Bin is solid enough that it can run without day to day attention and I could return to client work and <em>try</em> to recover my now sad looking business bank balance.</p>
+<h3>Plan, and know what your users <em>need</em></h3><p>There were two major problems that hurt the success of JS Bin Pro.</p>
+<p>The first was the nearly zero planning, and strange fear of business, marketing and actually making money. I often associate with the underdog, and those users looking for free access. But I run a service that&#39;s abused from all directions and every new user is more of a burden than growth.</p>
+<p>Very simply put: should I want to run a service for 100 paying users or for 100,000 non-paying users? Me? Now, I realise it&#39;s the 100 paying users, because, honestly, I&#39;ve got bills that I want to pay. I&#39;d rather pay those bills building something I love rather than building something I begrudge.</p>
+<p>I lost <em>a lot</em> of love in this area of working with JS Bin. I can take the spam, and the junk, but this part of JS Bin required that the project actually raises money to support itself - and constantly feeling that I <em>had</em> to deliver some part of code for JS Bin to continue...it just didn&#39;t work for me.</p>
+<p>The second, major issue was that I had hoped, naively, that the web community will swoop in and pony up some cash. But the bottom line was JS Bin Pro had nothing that users <em>needed</em>. Sure, <em>now</em> it has asset uploads and other features, but at the time, there wasn&#39;t anything users <em>really needed</em>.</p>
+<p>I pay for my Github account because I <em>need</em> private repos. I pay for Gmail, because I <em>need</em> real business email accounts. I pay for Dropbox because I <em>need</em> the extra space.</p>
+<p>With JS Bin, <strong>everything users <em>need</em> is given away and open source. That&#39;s honourable, but doesn&#39;t pay the mortgage.</strong></p>
+<p>The next time around, with products like <a href="https://confwall.com">Confwall</a>, I launched <em>as soon</em> as it was usable. I offer a free area, but I make sure that you can&#39;t get to the stuff you <em>need</em> unless you pay. The way it should be! In fact, at time of writing this post, Confwall still doesn&#39;t take payment online - I cut that part to launch as early as possible, and we handle payments via email &amp; invoices.</p>
+<hr>
+<p>Part 5 sees our conclusion and tells of the police encounters I&#39;ve had, along with the worst email I&#39;ve ever received.</p>
+]]></content:encoded></item><item><title>The toxic side of free. Or: how I lost the love for my side project (part 3)</title><guid isPermaLink="false">jsbin-toxic-part-3</guid><link>https://remysharp.com/2015/09/16/jsbin-toxic-part-3</link><pubDate>Wed, 16 Sep 2015 16:11:38 +0000</pubDate><description><![CDATA[This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.]]></description><content:encoded><![CDATA[<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
+<!--more-->
+<p>The story has been broken into 5 parts, released over a series of days.</p>
+<ul>
+<li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
+<li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
+<li><a href="/jsbin-toxic-part-3">Part 3: Registered users wreaking havoc</a></li>
+<li><a href="/jsbin-toxic-part-4">Part 4: The cost</a></li>
 <li>Part 5: Police</li>
 </ul>
 <h2>Part 3: Registered users wreaking havoc</h2><p>Originally JS Bin was 100% anonymous. I liked that. But after about a year (or so...I forget), there was clearly an important feature missing: people couldn&#39;t recall their old bins.</p>
@@ -31,8 +89,8 @@
 <ul>
 <li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
 <li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
-<li>Part 3: Registered users wreaking havoc</li>
-<li>Part 4: The cost</li>
+<li><a href="/jsbin-toxic-part-3">Part 3: Registered users wreaking havoc</a></li>
+<li><a href="/jsbin-toxic-part-4">Part 4: The cost</a></li>
 <li>Part 5: Police</li>
 </ul>
 <h2>Part 2: Spam</h2><p>Who doesn&#39;t love a filthy dose of spam with their product? Let&#39;s picture exactly what JS Bin is: a place that people can <em>anonymously</em> create public web pages.</p>
@@ -46,7 +104,7 @@
 <p>So in this case, I would head to the database and run dangerous manual queries to delete all the bins with the offending URL. Thankfully, in the 15 million rows, I had the good sense to add an index early on to the URL field, so it&#39;s quick and doesn&#39;t lock up the table.</p>
 <h3>SEO spam</h3><p>I don&#39;t really understand what this is, but it&#39;s definitely a thing. Similar to the affiliate junk, SEO spam would just contain an insane amount of links to web sites. I still don&#39;t understand it, but it&#39;s definitely nefarious.</p>
 <h3>Phishing</h3><p>Yay, phishing. Phishing is actually the very first type of abuse I ever came across on JS Bin. I don&#39;t remember who reported it to me, but at some point, someone was trying to phish the Habbo.com homepage.</p>
-<p>It&#39;s why, even today, the <a href="https://github.com/jsbin/jsbin/blob/config.default.json"><em>public</em> config</a> for JS Bin contains a default blacklist for <code>habbo.com</code> and <code>processform.cgi</code>. The blacklist prevents the bin from being saved. Everything works, but it just silently fails to save.</p>
+<p>It&#39;s why, even today, the <a href="https://github.com/jsbin/jsbin/blob/771f007f3f49bbe3931a9818be75ad3e6edcf7fa/config.default.json#L66-L70"><em>public</em> config</a> for JS Bin contains a default blacklist for <code>habbo.com</code> and <code>processform.cgi</code>. The blacklist prevents the bin from being saved. Everything works, but it just silently fails to save.</p>
 <p>In production the blacklisting is much much larger these days, and includes frankly stupid stuff like <code>kardishain</code>, <code>Clickbank</code> and snippets of nasty code like <code>...|63|0A|27|73|70|2E|2F|...</code> which aims to prevent code that&#39;s used in some kinds of attacks.</p>
 <p>But yeah: whack-a-mole.</p>
 <h3>Link hiding</h3><p>The last type of spam that appeared in JS Bin is using JS Bin as a link sharing site to the dark and shitty side of the web. Arsehats (the nasty users, as I like to call them) would use JS Bin to redirect using <code>top.location=&quot;http://arsehat.com&quot;</code>. Then, using the full output URL, it would be shared on networks like Twitter and Facebook.</p>
@@ -63,9 +121,9 @@
 <p>The story has been broken into 5 parts, released over a series of days.</p>
 <ul>
 <li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
-<li>Part 2: Spam</li>
-<li>Part 3: Registered users wreaking havoc</li>
-<li>Part 4: The cost</li>
+<li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
+<li><a href="/jsbin-toxic-part-3">Part 3: Registered users wreaking havoc</a></li>
+<li><a href="/jsbin-toxic-part-4">Part 4: The cost</a></li>
 <li>Part 5: Police</li>
 </ul>
 <h2>Back story</h2><p>I was working mostly out of my bedroom in Brighton (since our flat was small) whilst still working full time in London amongst other designers and developers. jQuery was still new and I&#39;d often be asked in written English why some bit of code didn&#39;t work (the explanation often lacked the <em>actual</em> code!).</p>
@@ -894,36 +952,4 @@ I&#39;m eating larger meals throughout the day in place of the &quot;snack&quot;
 <li>Recommended book by Kamil: <a href="http://evidencemag.com/flexible-dieting-book/">Flexible Dieting Book</a></li>
 </ul>
 <h2>Questions?</h2><p>If this is useful to anyone, that&#39;s awesome. If you have <strong>any</strong> questions, please do ask in the comments below, I&#39;m more than happy to answer or update the blog post with more details.</p>
-]]></content:encoded></item><item><title>I'm a web developer. Not an engineer.</title><guid isPermaLink="false">i-am-web-developer</guid><link>https://remysharp.com/2015/02/26/i-am-web-developer</link><pubDate>Thu, 26 Feb 2015 11:00:00 +0000</pubDate><description><![CDATA[Something I’m starting to realise and accept for myself: I’m a web developer. Not an engineer. Mostly an approach &amp; understanding difference
-
-– Me, 6-Feb 2015
-This seemed to strike a chord with a few people, and others asked if I could embellish on those thoughts. So here it is.]]></description><content:encoded><![CDATA[<blockquote>
-<p>Something I’m starting to realise and accept for myself: I’m a web developer. Not an engineer. Mostly an approach &amp; understanding difference</p>
-</blockquote>
-<p>– Me, <a href="https://twitter.com/rem/status/563708407337996288">6-Feb 2015</a></p>
-<p>This seemed to strike a chord with a few people, and others asked if I could embellish on those thoughts. So here it is.</p>
-<!--more-->
-<h2>On titles</h2><p>&quot;We&quot; love titles. Personally, in the last 5 years, I&#39;ve preferred the <em>sound</em> of being an engineer, or a JavaScript engineer. I actually quite like <em>software designer</em>. But let&#39;s face it, it&#39;s all fluff.</p>
-<p>Actually, where titles aren&#39;t fluff, is when you work in a larger company. Quite often titles relate directly to pay scales. I digress.</p>
-<p>The <em>engineer</em> bit is a little less fluffy and does actually carry meaning.</p>
-<h2>Engineers</h2><p>Calling yourself an engineer, when you&#39;re not actually qualified as an engineer is <em>sort of</em> a no-no. In fact, there&#39;s some <a href="http://en.wikipedia.org/wiki/Engineer#Regulation">regulation</a> around the engineering titles - and certainly in the UK (according to the Wikipedia page), there&#39;s been petitions to protect the title.</p>
-<p>Ignoring the regulations, to me, engineers are smart, educated (ideally in a form of engineering...) and specifically: solving complex computer engineering problems.</p>
-<p>In a conversation (over twitter) I was having with <a href="https://twitter.com/trek">Trek Glowacki</a>, midway he replied with:</p>
-<blockquote>
-<p>Take a step back and understand the real engineering goal: SRP</p>
-</blockquote>
-<p>I wasn&#39;t aware of any engineering goal, nor what <a href="http://en.wikipedia.org/wiki/Single_responsibility_principle">SRP</a> stood for, nor did I <em>really</em> understand what the Wikipedia page was saying to me.</p>
-<p>Honestly, I kind of feel out of my depth amongst engineers aka those people who *really&quot; took the time to study computer science and grok the shit out of it.</p>
-<h2>I am web developer</h2><p>I don&#39;t know why I thought it was uncool to be a &quot;web developer&quot;. Perhaps because it&#39;s utterly vague.</p>
-<p>What &quot;web developer&quot; <em>does</em> mean <em>to me</em> though, is this:</p>
-<p>Someone who writes code for browsers. Likely from the school of view source, is comfortable with drop-in libraries, understands standards and <em>best practice</em> techniques. But mostly, <strong>a tinkerer.</strong></p>
-<h2>I am not alone</h2><p><img src="https://remysharp.com/images/tbl-developer.jpg" alt="Tim Berners-Lee: web developer"></p>
-<p>The picture above is an (infamous) screen grab from the <a href="http://www.webplatform.org/">Web Platform</a> introduction <a href="https://www.youtube.com/watch?v=Ug6XAw6hzaw">video</a>. Of Sir Tim Berners-Lee. The <em>creator</em> of The Web.</p>
-<p>I saw a lot of posts and tweets suggesting that this was a joke, or a disservice to his work, or that the title was utterly understated.</p>
-<p>I&#39;m not sure it was. There&#39;s no doubt that this man is responsible for a <em>lot</em> more, but he <em>is</em> The Web Developer.</p>
-<p>I&#39;m proud to say that I work on that same web. Making it better (and sometimes, perhaps, a little worse).</p>
-<h2>Embrace it</h2><p>I&#39;ve personally learnt my web development skills over a long period of time and nearly entirely through trial and error. I suspect most of us have.</p>
-<p>Being a web developer doesn&#39;t have to mean you have to be a JavaScript wiz, or that you <em>don&#39;t</em> touch the server side. By virtue of tinkering, it&#39;s quite likely you&#39;re getting better at <em>all</em> these things.</p>
-<p>Coming to this realisation is by no means a slur against those people who call themselves engineers. If you do, it&#39;s quite likely I already have a great deal of respect for your knowledge and understanding if I&#39;ve come across your work already.</p>
-<p>As for me, I&#39;m proud to say: I am a web developer. I am a tinkerer.</p>
 ]]></content:encoded></item></channel></rss>

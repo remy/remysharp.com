@@ -10,8 +10,8 @@ ga('send', 'pageview');</script></head><body id="blog-jsbin-toxic-part-2-page"><
 <ul>
 <li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
 <li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
-<li>Part 3: Registered users wreaking havoc</li>
-<li>Part 4: The cost</li>
+<li><a href="/jsbin-toxic-part-3">Part 3: Registered users wreaking havoc</a></li>
+<li><a href="/jsbin-toxic-part-4">Part 4: The cost</a></li>
 <li>Part 5: Police</li>
 </ul>
 <h2>Part 2: Spam</h2><p>Who doesn&#39;t love a filthy dose of spam with their product? Let&#39;s picture exactly what JS Bin is: a place that people can <em>anonymously</em> create public web pages.</p>
@@ -25,7 +25,7 @@ ga('send', 'pageview');</script></head><body id="blog-jsbin-toxic-part-2-page"><
 <p>So in this case, I would head to the database and run dangerous manual queries to delete all the bins with the offending URL. Thankfully, in the 15 million rows, I had the good sense to add an index early on to the URL field, so it&#39;s quick and doesn&#39;t lock up the table.</p>
 <h3>SEO spam</h3><p>I don&#39;t really understand what this is, but it&#39;s definitely a thing. Similar to the affiliate junk, SEO spam would just contain an insane amount of links to web sites. I still don&#39;t understand it, but it&#39;s definitely nefarious.</p>
 <h3>Phishing</h3><p>Yay, phishing. Phishing is actually the very first type of abuse I ever came across on JS Bin. I don&#39;t remember who reported it to me, but at some point, someone was trying to phish the Habbo.com homepage.</p>
-<p>It&#39;s why, even today, the <a href="https://github.com/jsbin/jsbin/blob/config.default.json"><em>public</em> config</a> for JS Bin contains a default blacklist for <code>habbo.com</code> and <code>processform.cgi</code>. The blacklist prevents the bin from being saved. Everything works, but it just silently fails to save.</p>
+<p>It&#39;s why, even today, the <a href="https://github.com/jsbin/jsbin/blob/771f007f3f49bbe3931a9818be75ad3e6edcf7fa/config.default.json#L66-L70"><em>public</em> config</a> for JS Bin contains a default blacklist for <code>habbo.com</code> and <code>processform.cgi</code>. The blacklist prevents the bin from being saved. Everything works, but it just silently fails to save.</p>
 <p>In production the blacklisting is much much larger these days, and includes frankly stupid stuff like <code>kardishain</code>, <code>Clickbank</code> and snippets of nasty code like <code>...|63|0A|27|73|70|2E|2F|...</code> which aims to prevent code that&#39;s used in some kinds of attacks.</p>
 <p>But yeah: whack-a-mole.</p>
 <h3>Link hiding</h3><p>The last type of spam that appeared in JS Bin is using JS Bin as a link sharing site to the dark and shitty side of the web. Arsehats (the nasty users, as I like to call them) would use JS Bin to redirect using <code>top.location=&quot;http://arsehat.com&quot;</code>. Then, using the full output URL, it would be shared on networks like Twitter and Facebook.</p>
