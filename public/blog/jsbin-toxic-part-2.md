@@ -68,4 +68,4 @@ But it didn't end there...
 
 ---
 
-Return for part 3: how the registered users, who I thought were the goodies, wreaked havoc.
+Return for [part 3](/jsbin-toxic-part-3): how the registered users, who I thought were the goodies, wreaked havoc.

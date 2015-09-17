@@ -107,4 +107,4 @@ Now, the output simply resolves to null.jsbin.com, is responded to using nginx a
 
 ---
 
-Come back for part 2: the trials of dealing with spam in it's various forms!
+Come back for [part 2](/jsbin-toxic-part-2): the trials of dealing with spam in it's various forms!

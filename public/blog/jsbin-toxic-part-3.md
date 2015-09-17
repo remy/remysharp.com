@@ -50,4 +50,4 @@ In the end the *only* way to register with JS Bin *now* is via GitHub. I don't l
 
 ---
 
-In part 4, I'll talk about the costs of running JS Bin, and how pro failed to save the day.
+In [part 4](/jsbin-toxic-part-4), I'll talk about the costs of running JS Bin, and how pro failed to save the day.

@@ -14,6 +14,8 @@ The story has been broken into 5 parts, released over a series of days.
 
 ## Part 5: Police
 
+***Trigger warning: mention of child pornography.***
+
 I said before that JS Bin Pro really sucked the love out of the project for me, but this part has been a mix of emotions, but it's definitely the most distressed I've been when running JS Bin...
 
 Over the years I've had cease and desist emails telling me that I've either been hacked or stolen content. I would take my time (through gritted teeth) explaining that JS Bin allowed users to upload their own content, and that this wasn't something I was trying to do to hurt the company or institution.
@@ -38,7 +40,7 @@ Absolutely. Minutes later, the bins were gone. I didn't hear back again, but it 
 
 One late evening in 2013, sat on the sofa watching a film, I get an email. As with all webby people that don't understand that work is supposed to stop at 6pm, I go ahead and get my laptop and read the email.
 
-It's an email from the Spanish police. Sort of a cease and desist, including two links to JS Bin asking for their immediate take down. I can't actually find the original email because I wanted to erase all memory of the event.
+It's an email from the Spanish police. Sort of a cease and desist, including two links to JS Bin asking for their immediate take down.
 
 There had been issues in the past where porn had been linked to from JS Bin and it's constant battle to keep it under control. The email from the Spanish police however, did not warn me as to what was behind the URLs.
 
@@ -46,13 +48,13 @@ I clicked, and my memory is slow motion of what I saw next, and thankfully the i
 
 ---
 
-Just enough loaded for me to realise that the images contained child pornography, early enough for me *not* to see anything that would scar me for life. I closed the window very quickly.
+Just enough loaded for me to realise that the images contained child pornography, but I closed the tab early enough for me *not* to see anything that would scar me for life. I closed the window *very* quickly.
 
 It still makes me sick to think that *that* kind of content was being hosted on one of my URLs.
 
-Using the terminal, I `cURL`ed the URL down to look for any commonalities between the source of the two JS Bin URLs I had, to immediately add it to the blacklist functionality. Thankfully...if there was a thing, I did find a commonality, and I was able to block what appeared to be a source for this kind of material.
+Using the terminal, I `cURL`ed the URL down to look for any commonalities between the source of the two JS Bin URLs I had, to immediately add it to the blacklist functionality. "Thankfully", I did find a commonality, and I was able to block what appeared to be a source for these images. I also went ahead and deleted all records that matched in the database.
 
-It took many days to to get that sickening feeling out of my system. I hate to think that JS Bin has helped abusers in some way.
+It took many days to to get that sickening feeling out of my system. I hate thinking that JS Bin has helped abusers in some way. This event still haunts me, sickens me and makes me angry, even years later.
 
 ### "Terrorist use"
 
