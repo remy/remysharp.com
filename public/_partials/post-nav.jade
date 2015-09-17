@@ -22,6 +22,9 @@ nav.main-nav.clearfix.subpanel
         ul.post-nav
           li.home: a(href="/") Home
           li.search: a#search(href="#search") Search
+          li.donate
+            :markdown
+              [![keep me honest](/images/donate.svg)](https://www.paypal.me/rem)
           if next
             li.next: a(href="/#{ moment(next.date).format('YYYY/MM/DD') }/#{ next.slug }" title="#{ next.title }") Next
           else

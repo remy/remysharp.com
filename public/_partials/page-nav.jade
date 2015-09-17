@@ -5,4 +5,8 @@ if current.path.indexOf('blog') === -1 && current.path+'' !== 'index'
     ul.post-nav
       li.home: a(href="/") Home
       li.search: a#search(href="#search") Search
+      li.donate
+        :markdown
+          [![keep me honest](/images/donate.svg)](https://www.paypal.me/rem)
+
       li.next: a(href="#{ post.relative }" title="#{ post.title }") Latest post
