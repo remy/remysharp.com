@@ -15,8 +15,8 @@ block meta
   meta(name="twitter:title" content="#{title}")
   meta(name="twitter:site" content="@rem")
   meta(name="twitter:domain" content="Remy's b:log")
-  - var img = null;
-  - if (yield.indexOf('<img') !== -1) img = (yield.replace(/\n/g, '').match(/<img\b[^>]+?src\s*=\s*['"]?([^\s'"?#>]+)/) || [,])[1];
+  - var img = image;
+  - if (!img && yield.indexOf('<img') !== -1) img = (yield.replace(/\n/g, '').match(/<img\b[^>]+?src\s*=\s*['"]?([^\s'"?#>]+)/) || [,])[1];
   - if (img && img.indexOf('http') !== 0) img = site_url + img;
   if img
     meta(name="twitter:image:src" content="#{img}")
