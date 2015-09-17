@@ -42,7 +42,7 @@ I don't really understand what this is, but it's definitely a thing. Similar to 
 
 Yay, phishing. Phishing is actually the very first type of abuse I ever came across on JS Bin. I don't remember who reported it to me, but at some point, someone was trying to phish the Habbo.com homepage.
 
-It's why, even today, the [*public* config](https://github.com/jsbin/jsbin/blob/config.default.json) for JS Bin contains a default blacklist for `habbo.com` and `processform.cgi`. The blacklist prevents the bin from being saved. Everything works, but it just silently fails to save.
+It's why, even today, the [*public* config](https://github.com/jsbin/jsbin/blob/771f007f3f49bbe3931a9818be75ad3e6edcf7fa/config.default.json#L66-L70) for JS Bin contains a default blacklist for `habbo.com` and `processform.cgi`. The blacklist prevents the bin from being saved. Everything works, but it just silently fails to save.
 
 In production the blacklisting is much much larger these days, and includes frankly stupid stuff like `kardishain`, `Clickbank` and snippets of nasty code like `...|63|0A|27|73|70|2E|2F|...` which aims to prevent code that's used in some kinds of attacks.
 
