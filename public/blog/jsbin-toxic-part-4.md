@@ -86,15 +86,15 @@ Launching became the well know problem of chasing the end of the rainbow. Strivi
 
 This went on for months and months. All the while JS Bin isn't making money, my entire company is focusing it's time on JS Bin and *not* producing any cash flow from any other sources.
 
-Pro (eventually) went live on **23 July 2014**. And the first way of registrations was an amazing feeling. In fact, one user ([David Gauld](https://twitter.com/dcgauld), who actually worked for me doing the [Left Logic](http://leftlogic.com) redesign and built a fair amount of [confwall](https://confwall.com)) was the first to go pro catching the [commit landing in Github](https://github.com/jsbin/jsbin/commit/814251af40334990cf2490dc45d88ba246542f2f#diff-0aab8fc4f1799dc88c8d29729b719d87L118), even before I had announced it - a cool side effect of the open source.
+Pro (eventually) went live on **23 July 2014**. And the first wave of registrations was an amazing feeling. In fact, one user ([David Gauld](https://twitter.com/dcgauld), who actually worked for me doing the [Left Logic](http://leftlogic.com) redesign and built a fair amount of [confwall](https://confwall.com)) was the first to go pro catching the [commit landing in Github](https://github.com/jsbin/jsbin/commit/814251af40334990cf2490dc45d88ba246542f2f#diff-0aab8fc4f1799dc88c8d29729b719d87L118), even before I had announced it - a cool side effect of the open source.
 
-Users did come, but looking back, it really wasn't very much if you consider the costs of running JS Bin, let alone paying for development, and then look at what the monthly (or yearly subscriptions) go us. A total of 42 upgrades in the first week (26 were on the first day).
+Users did come, but looking back, it really wasn't very much if you consider the costs of running JS Bin, let alone paying for development, and then look at what the monthly (or yearly subscriptions) got us. A total of 42 upgrades in the first week (26 were on the first day).
 
 ![JS Bin Stripe report, week 1](/images/jsbin-pro-week1.png)
 
 I had always tucked money aside for a rain day (actually rainy year), and yeah, I can look back and say "sure, I took a shot" - but it came at a pretty penny.
 
-The next 6 months I lost my love for the project. Very simply: any new development had to justify it's existence and it's demand on my time. I did continue development until the end of 2014, but by that point, all love had been sucked dry and I needed a break. JS Bin is solid enough that it can run without day to day attention and I could return to client work and *try* to recover my now sad looking business bank balance.
+The next 6 months I lost my love for the project. Very simply: any new development had to justify its existence and its demand on my time. I did continue development until the end of 2014, but by that point, all love had been sucked dry and I needed a break. JS Bin is solid enough that it can run without day to day attention and I could return to client work and *try* to recover my now sad looking business bank balance.
 
 ### Plan, and know what your users *need*
 
