@@ -92,9 +92,9 @@ It's a fair question. The stress from the police related incidents didn't ever m
 
 In fact, it was only when I was dealing with VATMOSS that I gave any serious thought to throwing in the towel. It was probably one of the more stressful working months I've experienced, and I don't kid when I say that VATMOSS has killed up and coming companies in their tracks.
 
-However, with all of the abuse, **I will never throw in the towel**.
+However, with all of the abuse, **I will never throw in the towel**. Here's why:
 
-I *used* to search twitter for mentions of "jsbin" and compare to jsfiddle and codepen. Credit to Code Pen, the mentions are usually always in their favour, with individuals showing some truly amazing work. It took me many, many months to realise that twitter was not the measure of JS Bin.
+I used to search twitter for mentions of "jsbin" and compare to jsfiddle and codepen. Credit to Code Pen, the mentions are usually always in their favour, with individuals showing some truly amazing work. It took me many, many months to realise that twitter was not the measure of JS Bin.
 
 JS Bin's moto is: *hack, learn, fix, teach*. JS Bin is about helping other people. It's one person who is in need, sharing their working with another, and that other person helping, and solving, and teaching. It's a quiet, personal transaction between two individuals that won't be announced on twitter, but instead shared in an intimate exchange.
 
@@ -108,8 +108,8 @@ The irony however, is that it's been a cathartic process. I feel like I've got s
 
 I realised something important at the end of 2014, and it was the reason I decided to put development on JS Bin on hold: I need to love working on JS Bin. I didn't at the time. I was working on parts of JS Bin that was full of pressure, I started getting abuse for some of my work, and it was all a bit of a mess.
 
-Since starting these posts, I've released new features to JS Bin to all groups of users (anonymous, registered and pro) and have several JS Bin [blog posts](http://jsbin.com/blog) in the works.
+Since starting these posts, I've released new features to JS Bin to all groups of users (anonymous, registered and pro) and have several JS Bin [blog posts](http://jsbin.com/blog) in the works. And before I bid you farewell, don't forget to support JS Bin: [go pro](https://jsbin.com/upgrade) or donate [regularly](https://gratipay.com/jsbin) or as a [one off](https://www.paypal.me/rem).
 
-**I've started to find my love for my project again.**
+As for me? **I've started to find my love for my project again.**
 
 ![Hack, learn, fix, teach](/images/jsbin-t-shirt.jpg)

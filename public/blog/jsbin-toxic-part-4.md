@@ -10,7 +10,7 @@ The story has been broken into 5 parts, released over a series of days.
 - [Part 2: Spam](/jsbin-toxic-part-2)
 - [Part 3: Registered users wreaking havoc](/jsbin-toxic-part-3)
 - [Part 4: The cost](/jsbin-toxic-part-4)
-- Part 5: Police
+- [Part 5: Police](/jsbin-toxic-part-5)
 
 ## Part 4: The cost
 
@@ -116,4 +116,4 @@ The next time around, with products like [Confwall](https://confwall.com), I lau
 
 ---
 
-Part 5 sees our conclusion and tells of the police encounters I've had, along with the worst email I've ever received.
+[Part 5](/jsbin-toxic-part-5) sees our conclusion and tells of the police encounters I've had, along with the worst email I've ever received.
