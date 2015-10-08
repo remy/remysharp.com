@@ -295,20 +295,24 @@ em {
 del {
   text-decoration: strike;
   color: rgb(164, 164, 164);
+  position: relative;
 
   a {
     color: rgb(164, 164, 164);
   }
+}
 
+.update del {
   &:before {
     font-weight: bold;
     content: '- ';
     color: red;
     position: absolute;
-    left: 25px;
+    left: -5px;
     font-size: 80%;
   }
 }
+
 
 sup {
   font-size: 0.9rem;
