@@ -1,74 +1,133 @@
-<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The Art of Debugging</title><meta name="description" content="The Art of Debugging"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.32"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.32"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The Art of Debugging</title><meta name="description" content="The Art of Debugging"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?2.33"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?2.33"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 ga('create', 'UA-1656750-1', 'auto');
 ga('send', 'pageview');</script></head><body id="drafts-the-art-of-debugging-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
-</li><li class="next"><a href="/2015/09/18/jsbin-toxic-part-5" title="The toxic side of free. Or: how I lost the love for my side project (part 5)">Latest post</a></li></ul></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 1-Jan 1970</div><article class="post"><h1 class="title"><a href="/drafts/the-art-of-debugging">The Art of Debugging</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/the-art-of-debugging.md">(edit)</a></small></h1><div class="post-content"><ul>
-<li>How to avoid debugging: tests</li>
-<li>There&#39;s no silver bullet</li>
-<li>I don&#39;t believe there is (or shuold be) one tool for all the jobs</li>
-<li>And the tools will continue to evolve</li>
-</ul>
-<h2>Disclaimer</h2><p>Before anyone gets all preachy, this is not the definitive way to debug on the web. There are <strong>many ways</strong>. This just happens to be what I know, and how I do it. If that helps you, super. If you do things differently, that&#39;s cool too.</p>
-<h2>Debugging</h2><p>What does it mean? Where does it come from?</p>
-<p>A moth on a computerboard - which is utterly random and unpredictable. The worst kind of bug - one that changes as you investigate, a Heisenbug if you will.</p>
-<h2>The Art</h2><ol>
-<li>See the problem.</li>
-<li>Understand it.</li>
-<li>Fix it.</li>
-</ol>
-<p>My debugging mantra:</p>
+</li><li class="next"><a href="/2015/09/18/jsbin-toxic-part-5" title="The toxic side of free. Or: how I lost the love for my side project (part 5)">Latest post</a></li></ul></nav><main role="main" class="content"><div class="warning">Draft posts are a work in progress.&nbsp;Last edited 1-Jan 1970</div><article class="post"><h1 class="title"><a href="/drafts/the-art-of-debugging">The Art of Debugging</a><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/drafts/the-art-of-debugging.md">(edit)</a></small></h1><div class="post-content"><p>This is the accompanying article for my <em>Art of Debugging</em> talk that I first gave at Fronteers in Amsterdam in 2015.</p>
+<p>TL;DR: learn every tool that&#39;s available to use, use them as you need them, enjoy bug bustin&#39; - it&#39;s certainly more fun pounding the keyboard and working on a 6 month feature drive.</p>
+<!--more-->
+<p>Before we start though...</p>
+<h2>Skip to the end...</h2><p><strong>Don&#39;t.</strong></p>
+<p><strong>Write.</strong></p>
+<p><strong>Bugs.</strong></p>
+<p><img src="/images/drop-mic.gif" style="width: 100%"></p>
+<h2>Although...</h2><p>Okay. So, assuming you&#39;re not robots, and you might have written a bug or two in your time, the truth is: there is no silver bullet.</p>
+<p>And in fact, I lied a moment ago, &quot;don&#39;t write bugs&quot; is the exact opposite to learning to debug. You need experience. You have to encounter bugs to be able to recognise how to approach them.</p>
+<p>There&#39;s no hard and fast skill you can acquire for debugging (or so I believe). It&#39;s acquired through time as you struggle through the first time you encounter something. Spending hours and hours trying to fix a problem, but the upshot: you won&#39;t spend hours and hours the next time around.</p>
+<p>At the company I worked at 10 years ago, when new employees came on board, we would have them all excited about the job and the kinds of problems we were solving, but on the day of them joining, they would be assigned to bugs for 3 months. It kinda deflated their expectations, but we&#39;d find that after those 3 months, they&#39;d request to stay on bugs.</p>
+<p>They had the chance to dabble in so many areas of the business whereas other developers were coding the same single feature for 3, 6 even 12 months, and even then, it would go live, have bugs, and our bug catcher would swoop in, fix the bug and get a slice of the glory.</p>
+<p>Attaining that <em>hands on</em> experience, I believe, is key to both being a good developer, but really, knowing how to debug anything. The designer from that company 10 years ago, Chris - he was the CSS wiz. He knew all the answers when the server side devs would get stuck with simple things. I&#39;d often find myself asking him why the layout had broken so baldy in what I thought was a relatively simple design. His answer, quiet often, was &quot;add <code>zoom: 1</code> to that element&quot;.</p>
+<p>He had completed the debugging step in head and come to a reasonable proposal that this particular change could fix my issue, almost entirely because he had seen so many permutations of the visual bug that he could recognise by eye.</p>
+<p>That&#39;s what I&#39;ll do in many cases of bugs I come across. I&#39;ll know the particular system well enough to allow myself a heads start to the solution.</p>
+<p>But before I continue, I have <em>two</em> disclaimers...</p>
+<h2>Disclaimer #1 - frameworks</h2><p>Before anyone gets all preachy, this is not the definitive way to debug on the web. There are <strong>many ways</strong>. This just happens to be what I know, and how I do it. If that helps you, super. If you do things differently, that&#39;s cool too.</p>
+<p>I <em>personally</em> don&#39;t use frameworks and large (opinionated) libraries. Ember, Polymer, React, Anglular, etclib. I don&#39;t use them. I&#39;ve not had a need for them in anything I&#39;ve done, so I&#39;ve not had the requirement to learn (and please don&#39;t take this as an invitation to teach me!).</p>
+<p>What this means is the the specific tools I use <em>may not</em> be applicable to your workflow. In fact, it&#39;s entirely possible that it&#39;s not <em>compatible</em> with your workflow.</p>
+<p>That problem is partly related to the complexity of the applications you&#39;re using (by &quot;applications&quot; I mean the supporting code to pull of the site you&#39;re trying to build). For instance, React has created it&#39;s own language to give developers maximum <del>confusion</del> impact in building <em>apps</em>, but because of this, the code it transpiles to is utterly useless to humans and is intended only for computers/browsers. So debugging it requires <em>at the very least</em> sourcemaps, but because (I can only assume) it also has it&#39;s own state management (and other fancy toys) you&#39;re encouraged to install the <a href="http://facebook.github.io/react/blog/2015/09/02/new-react-developer-tools.html">devtools extension to debug your React apps</a> (I believe Ember is similar here too).</p>
+<p>That doesn&#39;t mean this information is useless to you, I will touch on ideas that are important when debugging, I&#39;m just saying: I don&#39;t use frameworks, so I don&#39;t debug with them either.</p>
+<h2>Disclaimer #2 - I rarely cross browser test</h2><p>Yep. I said it. But before you throw me to the wolves, hear me out. I don&#39;t cross browser test because more often than not, my work requires that I write JavaScript. Vanilla JavaScript, not JavaScript that interacts with the DOM.</p>
+<p>In my eyes, there&#39;s two types of JavaScript that I&#39;m interested in: browser interactions and everything else.</p>
+<p>Everything else has to work in ES5 (perhaps with bits of ES6 sprinkled on) but that&#39;s it. Unless I&#39;m supporting IE8 (which recent projects I&#39;m not), all my JavaScript will work across all browsers, because it&#39;s stuff like:</p>
+<pre><code class="language-js">function magicNumber(a, b) {
+  return Math.pow(a, b) * b / Math.PI;
+}
+</code></pre>
+<p>It doesn&#39;t matter where the code above runs, if there&#39;s a bug, there&#39;s a bug in all the browsers. If there isn&#39;t a bug, there isn&#39;t a bug and that&#39;s that.</p>
+<p><strong>Also</strong> this doesn&#39;t mean my code isn&#39;t tested across other browsers. If possible and required, I&#39;ll run automated tests in different browser environments (using tools like Karma or Zuul - but the whole automated cross browser testing thing is yet to be really fixed, it&#39;s kind of a mess right now).</p>
+<p>Again, this is entirely due to the nature of my work. I&#39;ll address later how (or even whether) I will cross browser test.</p>
+<h2>The Art of Debugging</h2><p>This is something I open with in all my debugging workshops, and look, even Wikipedia says it&#39;s an art, <em>so it&#39;s a thing, okay!</em></p>
+<p><a href="https://en.wikipedia.org/wiki/Software_bug#Debugging"><img src="/images/wiki-debugging.gif" alt="debugging is an art"></a></p>
+<p>I breakdown (in my head) debugging as the following:</p>
 <ol>
-<li>Replicate</li>
-<li>Isolate</li>
-<li>Eliminate</li>
+<li><strong>Replicate</strong> translation: seeing the bug</li>
+<li><strong>Isolate</strong> translation: understanding the bug</li>
+<li><strong>Eliminate</strong> translation: fix the bug</li>
 </ol>
-<h2>Tools</h2><p>Okay, it&#39;s super likely that you&#39;re going to be skimming this post looking for the <em>juicy bits</em> to see what tools I use. And yes, tools are a huge factor.</p>
-<p>So...what is the state of the art?</p>
-<h3>State of the art</h3><h4>Common features</h4><ul>
-<li>Console (to run arbitrary code)</li>
-<li>Network calls and timings</li>
-<li>DOM navigator</li>
-<li>Script debugging (breakpoints, callstacks, watches, locals)</li>
-</ul>
-<h4>Chrome</h4><ul>
-<li>Live, in memory changes
--</li>
-</ul>
-<h4>CLI</h4><ul>
-<li>iron-node</li>
-<li>git bisect</li>
-</ul>
-<h2>Problems</h2><h2>Crowdsourced</h2><ul>
-<li>Source of events, beyond the jQuery/Backbone/Ember/React/etc wrapper</li>
-<li>Minified code</li>
-<li>Breaking into loops</li>
-<li>Mobile rendering glitches</li>
-<li>Animation (CSS &amp; JS)
--</li>
-</ul>
-<h3>Commonality</h3><blockquote>
-<p>I just want to get inside the damn issue</p>
+<h3>Replicate</h3><p>Replicating the bug is the hardest part of the entire job. More often than not you&#39;ll get a bug report along the lines of:</p>
+<blockquote>
+<p>Saving doesn&#39;t work.</p>
 </blockquote>
-<p>Be it loops, events being triggered, between animation frames to understand the impact of movement, inside the rendering loop so I can see exactly what&#39;s triggering what.</p>
-<p>Slow motion, if you will.</p>
-<h4>What tools do we have for slow motion?</h4><ul>
-<li>CSS animation strubbing</li>
-<li>Canvas rendering</li>
-<li>Rendering screenshots</li>
+<p>...and that&#39;s it.</p>
+<p>Right, so not only do I have to be diplomatic in your response, as much as I want to respond with simply &quot;yes it does&quot; [close], but I also need to glean as much information as possible to be able to replicate what this user is seeing.</p>
+<p>If the site they&#39;re talking about is jsbin, then I know saving does work, because I just used it, it just means that saving it&#39;s working for them (and potentially others). Translation: <em>saving could just be working for <strong>me</strong></em>.</p>
+<p>If I visit a URL that the user is talking about, and it breaks immediately. That&#39;s a lucky break. This is the <strong>litmus test</strong> and it&#39;s always worth doing. Never jump right into trying to replicate 100% - take it step by step. However, it&#39;s also more likely is that there were a series of events that preceded the bug manifesting, and I&#39;ll have to understand what those were, and then repeat them myself.</p>
+<p>Carefully, meticulously and systematically. This is important because I won&#39;t just do this once, I have to be able to do this over and over (or at the very least: twice).</p>
+<p>There&#39;s some key tools that help me to replicate environments, or two at least help identify what parts of the environment I can rule out:</p>
+<h4>Privacy browsing mode / incognito</h4><p>Incognito mode in Chrome (and known with other names in other browsers) lets me fire up the site <em>without</em> (most of) my browser extensions running. It&#39;ll also start with a clean slate with respect to cookies, offline storage and any other pre-baked configuration that my &quot;normal&quot; browsing sessions come with.</p>
+<p>I can say for certain that I get at <em>least</em> one bug filed each year which is usually very strange and comes down to a rouge extensions on the user&#39;s browser that&#39;s interfering with the web site code.</p>
+<p>By running in incognito, and seeing no bug, then asking the user to repeat the same task, I&#39;m able to immediately confirm that there&#39;s an external entity at play (i.e. typically an extension).</p>
+<h4>Multiple profiles</h4><p>In Chrome I have my personal profile. The one that lets me visit my email without always asking me to log in (though...maybe that&#39;s bad, but swiftly moving on).</p>
+<p>I also have two other profiles:</p>
+<ul>
+<li>Anonymous - this user is totally clean, no extensions, no history</li>
+<li>Troll - this user will be like Anonymous, but also have cookies disabled, and security settings put on maximum</li>
 </ul>
-<h3>On going in the future</h3><p>As the web tech becomes more advanced, and more problems that are solved (after the web community asking, like CSS animations, etc), the more the tools have to play catch up.</p>
-<p>If you want to play with the newest stuff, don&#39;t expect the tooling to be there already. Simple example is:</p>
-<p>I&#39;m a big fan of the simplicity of the <code>fetch</code> API (also because it comes baked with promises which I enjoy developing with), <em>plus</em> it can be polyfilled. The problem I had was pretty serious though, Chrome devtools wouldn&#39;t show network requests made with the Fetch API...which made debugging <em>extremely</em> hard.</p>
-<p>If the tooling isn&#39;t ready because the technology is so new, then you&#39;re in the wild west land - and you&#39;ve only got yourself to blame.</p>
-<h2>Pro tips</h2><ul>
-<li><code>debugger</code></li>
-<li><code>console.log(&#39;&gt; %s@%s&#39;, name, version)</code></li>
-</ul><p class="update">Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.</p></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p>I don&#39;t often need to switch into these profiles (mostly because I&#39;m able to replicate bugs earlier in my testing), but these are available to easily jump to.</p>
+<p>The troll user is particularly useful, because it&#39;s very easy (for me) to forget that some users have higher security settings and the result is that APIs like <code>localStorage</code> will throw exceptions - which if are uncaught, could cause chaos.</p>
+<hr>
+<p>Now that I&#39;m able to replicate consistently, it&#39;s time to strip away as much as I can to reduce the noise and potential confusion before I&#39;m able to fix.</p>
+<h3>Isolate</h3><p>Isolation is about parring down the bug as far as I can. If an extension is the cause of the bug, let&#39;s disable one extension at a time until the bad one is found.</p>
+<p>If it&#39;s a bug in a relatively complicated set of JavaScript requiring a lot of user interaction, I&#39;ll ask myself <em>can I refactor this particular area of code <strong>out</strong> so that I can test it in isolation and inject pre-baked state</em>?</p>
+<p>I built <a href="https://jsbin.com">jsbin.com</a> for exactly this problem. To take a problem, strip it right down, and then either fix and share with whomever needs it.</p>
+<p>Once it&#39;s stripped down as much as I want it to be, I&#39;m on to fixing the bug.</p>
+<h3>Eliminate</h3><p>This is actually easy once the replication side of things is taken care of. These days (2015) I&#39;m more likely to actually create a failing test in my project that will replicate the bug that I&#39;m working on, and then I&#39;ll fix against the failing test. The benefits should be obvious.</p>
+<p>It&#39;s really quite simple at this state. The same way that the act of writing code is simple (once you can touch type). The hard part is in solving the problem, which doesn&#39;t happen by pressing keys on keyboard.</p>
+<h2>When you can&#39;t replicate...</h2><p>Well...you&#39;re shit out of luck, and you can blind code a solution, but it&#39;s not debugging. You need to consider whether you&#39;ve got a <a href="https://en.wikipedia.org/wiki/Heisenbug">Heisenbug</a> on your hands (yes, I like that word!). It&#39;s a bug that literally changes shape and form as you try to interrogate it.</p>
+<p>I&#39;ve personally encountered a few of these myself. The worst kinds (for me) are when these bugs only occur in my <abbr title="continuous integration">CI</abbr> system (like Travis). The bug I was working on was fixed in my local environment, and I understood the code well enough to know the bug was fixed, but my tests wouldn&#39;t pass. The task now is different, the task was debug the test environment, which is a closed system when it&#39;s CI.</p>
+<p>The other significant time I encountered this type of problem was back when I used Firebug (which stopped around 2009-2010). Firebug is/was an intrusive debugging tool that would inject content into the DOM to achieve the debugging. It also had bug (as does devtools and all the other debuggers - see the start of this post!). It meant that there were certain edge cases that you could run into that would trigger bugs in the debugger making debugging extra...challenging.</p>
+<p>The same is <em>sort of</em> true today. Recommendations for debugging with the devtools timeline is that you <em>don&#39;t</em> turn on all the recording checkboxes, and that you ideally close all other tabs <em>and</em> anything else that might be using WebKit (like Spotify...I&#39;m assuming there&#39;s some overlapping OS access that WebKit and Blink have...). This is because <em>all</em> of these will affect the performance recording.</p>
+<h2>State</h2><p>For me, debugging comes down to <strong>state</strong>. I need to be able to inspect the state at any time to be able to understand exactly what&#39;s going on.</p>
+<p>Without state, I&#39;m only able to guess as to what&#39;s wrong, and I could, in theory, fix a bug and see the output I intend, but there may be some other source issue that&#39;s broken.</p>
+<p>I do admit that saying that it comes down to &quot;state&quot; feels pretty...perhaps stuck in my ways. I&#39;m not sure if it&#39;s that I can&#39;t see the wood for the trees, or that actually, state is the low common denominator for all debugging. It doesn&#39;t really matter, if I can get to the state of the application, I&#39;m <em>most</em> of the way to solving the bug.</p>
+<hr>
+<p>All the browsers currently support passive inspection of state, to some degree or another. A huge bonus is being able to interact with the state.</p>
+<p>The reason I personally use devtools is because I can not only observe passive state, but I can interact and <em>change</em> state whilst most importantly, not discarding the stack <strong>and</strong> I can save to disk with workspaces.</p>
+<p>Interactive state is not unique to devtools, IIRC I could do this back in the days of Firebug &amp; Firefox.</p>
+<h3>Passive state</h3><p>Passive state is what I&#39;m referring to as: <em>what has happened, and what&#39;s happening <strong>right now</strong></em>.</p>
+<p>This can range from being able to look at variable values, network request history, rendering histories (both from the point of view of layout, but also perhaps a canvas render history), memory usage and so on.</p>
+<h3>Interactive state</h3><p>Interactive state has everything from the passive state, except I can noodle with values. I can change, in real-time, the values being held in memory.</p>
+<p>What I personally love about devtools, and I&#39;ll show you, is that not only can I make that change to memory, but I can also change it in the code that&#39;s loaded and it&#39;ll commit to disk.</p>
+<p>Importantly here, if I change code that&#39;s currently being run (or that I&#39;ve paused the code on), the current point of execution will back-up and then recompile and re-run the changes I made. <strong>This is powerful stuff</strong>.</p>
+<h3>The stack</h3><p>The final part of &quot;state&quot; is the stack, i.e. how did we arrive to this state. It would be amazing if it were possible to snapshot the state and rewind or save state to magically restore. Alas those hopes were quickly dashed by Addy Ossmani who took the time to explain why it&#39;s not technically possible (or sane) in this <a href="https://gist.github.com/addyosmani/cee1ac65263cc7134711">post</a>.</p>
+<p>Importantly though, where I mentioned earlier that in devtools I can change the code in real-time <em>and</em> have it saved (if I sued workspaces) then I can maintain the stack. The flip side is if I&#39;m using a transpiler, like Babel, is that the transpile has to run again, and this requires a reload of the browser to get the updates in memory, and thus you lose the stack.</p>
+<h2>Debugging approaches</h2><h3>Inside out</h3><h3>Outside in</h3><h2>My favourite/most used tools</h2><p>Finally I want to share with you some of the workflow I use and some of the tools that I always find myself returning to.</p>
+<h3>Workspaces &amp; real-time updates</h3><iframe width="1280" height="720" src="https://www.youtube.com/embed/Z_5XFAGn-u0" frameborder="0" allowfullscreen></iframe>
+
+<p>With devtools open, and the sources panel selected, simply drag the local directory you want to create a workspace for <em>onto</em> the source panel, and devtools will ask for access which you will need to confirm.</p>
+<p>This doesn&#39;t complete the step though. To let devtools know that a particular origin, like <code>http://localhost:8000</code> is being served from your new workspace, you need to map at least one file. Right click a file from the origin list, and select &quot;Map to file system resource&quot;, and select the <em>local</em> file it relates to.</p>
+<p>Now whenever you make any changes, you will be able to save and it will save directly to disk. Why is this important? Now you can debug and commit directly to disk without switching contexts, without switch from your editor to your browser.</p>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/U1zRyCkU4Ms" frameborder="0" allowfullscreen></iframe>
+
+<p>What is also really fun and powerful, is that if the CSS files were also mapped, <em>any</em> changes in the elements panel to styles, directly update the CSS file attached. This means I can make really tiny visual changes in the elements panel (where I&#39;m used to making changes) and it&#39;ll already be saved for me to disk.</p>
+<h3>Undo</h3><p>I&#39;ve run a number of <a href="http://leftlogic.com/training/debug">debugging workshops</a> and the one consistent question that comes up after I show off workspaces is:</p>
+<blockquote>
+<p>How do I revert the changes I&#39;ve made in the elements panel</p>
+</blockquote>
+<p>It would seem that developers are consistently much more fast-and-loose with the elements panel than compared with editing source code directly.</p>
+<p>It&#39;s still a fair question. To that I reply:</p>
+<ol>
+<li>Source control!</li>
+<li>Undo</li>
+</ol>
+<p>Chrome devtools has <em>really</em> good undo support. I can make a whole series of CSS changes, and then move on to JavaScript and then make changes to the DOM, and I can <em>still</em> go back and undo all the CSS changes I made.</p>
+<p>I&#39;ve noticed that I do have to be focused on the particular panel and source for the undo to work (which I suppose the undo history is associated with the panel), but it&#39;s really good.</p>
+<p>Obviously when you reload, you lose the history. It&#39;s the same with Sublime Editor, if I unload and reload Sublime (i.e. restart the application) I&#39;d expect the undo history to be lost.</p>
+<h3>Console shortcuts</h3><ul>
+<li><code>$</code> &amp; <code>$$</code> - akin to jQuery&#39;s <code>$</code> function to query elements on the page</li>
+<li><code>$_</code> - the result of the last expression</li>
+<li><code>$0</code> - the currently selected DOM node in the elements panel</li>
+<li><code>copy(...)</code> - copy to the clipboard, and will <code>JSON.stringify</code> objects, but also get the outer HTML of DOM nodes, <code>copy($0)</code> is pretty common for me</li>
+</ul>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/pqFr0qZQpk8" frameborder="0" allowfullscreen></iframe>
+
+<h3>Timeline screenshots</h3><p>Really nice way to go back in time to see what in the application&#39;s boot (or interaction time) changed something on the page. I used this recently to fix two different problems.</p>
+<p>The first was reviewing the boot up screenshots for jsbin.com, and seeing that the font was loading right at the end, but taking up a reasonable amount of time (WRT entire boot time). I could <em>see</em> this because the font would flash into place right towards the end of the document being ready. I was then able to use font loading techniques to make the font load via local storage and improved the perceived boot up time.</p>
+<p>The second time was with my product <a href="https://confwall.com">confwall.com</a>:</p>
+<h3>Throttling</h3><h3>Network detail &amp; reply</h3><h3>Break on DOM changes</h3><h3>Surface scans for memory leaks</h3><h3>Async</h3><h2>Tricks</h2><h3>Karma</h3><h3>Watches</h3><p class="update">Drafts may be incomplete or entirely abandonded, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.</p></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
 <p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
-</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.32"></script><script src="/js/index.js?2.32"></script><!--|  
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?2.33"></script><script src="/js/index.js?2.33"></script><!--|  
 |  
 |  Carved up by hand using Harp and a shit load of hacking.
 |  
