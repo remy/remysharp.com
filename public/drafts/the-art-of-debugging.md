@@ -6,6 +6,8 @@ TL;DR: learn every tool that's available to use, use them as you need them, enjo
 
 <!--more-->
 
+![Art of Debugging](/images/art-of-debugging-cover.jpg)
+
 Before we start though...
 
 ## Skip to the end...
@@ -191,14 +193,25 @@ Importantly though, where I mentioned earlier that in devtools I can change the 
 
 ## Debugging approaches
 
-### Inside out
+The tooling available splits into two categories:
 
-### Outside in
+- Inside out
+- Outside in
+
+I acknowledge these aren't good names. By *inside out*, I mean that the *source* of the bug is known. Usually a particular function or line of code, and a `debugger` statement can be added, a breakpoint or a conditional breakpoint (break when an expression is truthy).
+
+*Outside in* is more interesting, in that you can identify that there's a bug visually, perhaps an element isn't behaving the way you would expect. There's a growing number of tools to help to take you from the visual problem and break *into* the code source of the problem, *without* particularly knowing the source code.
+
+These tools include:
+
+- DOM breakpoints - break on subtree modification, attribute modification or node removal
+- Ajax breakpoints - break when an XHR call is executed
+- Replaying XHR - allowing you to re-inject the response from the XHR call
+- Timeline screenshots - both against the network (usually boot time) and on the timeline during runtime
 
 ## My favourite/most used tools
 
 Finally I want to share with you some of the workflow I use and some of the tools that I always find myself returning to.
-
 
 ### Workspaces & real-time updates
 
@@ -249,22 +262,66 @@ Really nice way to go back in time to see what in the application's boot (or int
 
 The first was reviewing the boot up screenshots for jsbin.com, and seeing that the font was loading right at the end, but taking up a reasonable amount of time (WRT entire boot time). I could *see* this because the font would flash into place right towards the end of the document being ready. I was then able to use font loading techniques to make the font load via local storage and improved the perceived boot up time.
 
-The second time was with my product [confwall.com](https://confwall.com):
+The second time was with my product [confwall.com](https://confwall.com). The problem was that there was significant latency in loading the tabbing system. If you watch the animation below (running at 50% speed) you'll see the tabs are slow to render:
 
+![Slow tabs loading](/images/tabs-loading.gif)
 
+This is also captured in the rendering timeline via the "camera" icon:
+
+![Screenshot](/images/devtools-screenshots.png)
+
+From this, I could move the point in *time* where the tabs finally re-rendered into the right layout, and work backwards to find what was running and blocking.
 
 ### Throttling
 
+Throttling the network gives me a really quick view on emulating slow or entirely offline connections to get an instant view on the effect of a slower network.
+
+A typical example is: what does my site with custom fonts look like over a slow connection? Is it blank for a long time? Are other assets holding up the font rendering? Is there anything I can do about it?
+
 ### Network detail & reply
+
+The visualisation of the network requests is useful, but I also find that inspecting headers and copying the raw response is extremely useful.
+
+![Copy response](/images/devtools-copy-response.jpg)
+
+I've also found that when I'm debugging a server side bug where the response is incorrect (like sending HTML back instead of JSON), I can debug, fix and restart the server, and *instead* of refreshing my browser and blowing away the state and current stack - I can simply "Replay XHR" and my code will re-run the request, and (IIRC) the callback will fire with the updated server content.
 
 ### Break on DOM changes
 
+As I mentioned earlier, "break on DOM changes" is one way which I will debug from an *outside in* approach. I've used this plenty of times when I know there's a visual change, but I'm unsure what the source of that change is.
+
+I do find it tricky to know exactly which "break on..." to use. Usually "break on attribute modification" is simple - i.e. if the `className` changes, the code will break. Otherwise, I tend to just select everything until the code breaks, and then I'll either step through or step backwards through the call stack.
+
+An **extra protip** here is sometimes the call stack will be *decapitated* due to an async call. Devtools offers a feature (which is expensive on memory, so remember to turn it off) on the sources panel. Check the "Async" box and repeat the bug. You'll now have the full call stack across the asynchronous calls.
+
 ### Surface scans for memory leaks
 
-### Async
+Finally, memory leaks are traditionally (for me certainly) the hardest part of debugging. In truth, I'll rarely look at memory unless I feel there's something jumping out at me. However, devtools has really advanced in the ease required to dig around for leaks.
 
-## Tricks
+There's two approaches I will take, fully informed by this [excellent Chrome video](https://www.youtube.com/watch?v=L3ugr9BJqIs) from a few years ago:
 
-### Karma
+1. Surface tests looking at the staircase
+2. Using the profiling tools to capture clues to the source of the leak
 
-### Watches
+The staircase effect is the first initial clue as to whether you have a memory leak. For me, the trick is to reliably reproduce the leaking effect. I'll personally start a timeline recording with "Memory" selected (and nothing else). I'll start the interaction, and before stopping, click the dustbin which forces a garbage collection, and then I'll repeat the process *again*, and then end the recording.
+
+What I'm trying to do here is: establish the baseline memory use (the data before I start the interaction), run an interaction. If there's a significant amount of memory that *couldn't* be garbage collected, then I have a leak. Then onwards to profiling.
+
+![Memory leaks](/images/memory-leaks.jpg)
+
+Profiling can take two approaches. The first is to capture two heap dumps, one at the start of the interaction, and one at the end. I might also run two interactions, but before I start the second run, I'll force a garbage collection. The task is then to compare the deltas. I'll select the second heap dump, and change it from a "summary" to "comparison" and order by "deltas". Now I'm looking for is *red* items in memory. These are items that couldn't be garbage collected.
+
+This will then (hopefully) yield clues as to what is leaking. Usually DOM nodes, and what JavaScript references are still pointing to the nodes. Frustratingly it's usually inside a JavaScript library, so some knowledge of how libraries work helps a great deal.
+
+![Memory comparison](/images/memory-comparison.png)
+
+## Wrap up
+
+As I said at the start, there's no silver bullet. I suspect many readers of this post will have skimmed right to the actionable parts and copy & pasted. Which is cool, I'd do the same.
+
+Honing your debugging skills is a long game, directly linked to writing code which leads to the artefacts of bugs. Hopefully you'll jump at the chance of debugging too!
+
+Remember, it's also worth taking a break from debugging too, many, *many* bugs have been solved without being near computers (long walks, showers, etc) - because computers can be [a bit stressful](https://twitter.com/rem/status/652098805278605317) sometimes too...!
+
+
+

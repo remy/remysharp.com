@@ -2,7 +2,7 @@
 
 I gave this talk: [I know jQuery. What now?](https://speakerdeck.com/rem/i-know-jquery-now-what) at jQuery UK 2013 ([video of the talk](http://vimeo.com/68009123)), but instead of my usual approach of post-it explosion on my desk, I wrote a post first, and created the slides from the post.  So here is my (fairly unedited) quasi-ramble on how I used jQuery, and how I'm looking at where I'm using native browser technology.
 
-<a href="https://speakerdeck.com/rem/i-know-jquery-now-what"><img src="http://remysharp.com/images/i-know-jquery.jpg" style="max-width: 100%; display: block;"></a>
+<a href="https://speakerdeck.com/rem/i-know-jquery-now-what"><img src="/images/i-know-jquery.jpg" style="max-width: 100%; display: block;"></a>
 
 ## Addition resources
 
@@ -100,8 +100,8 @@ It's almost as simple as: does this browser have `querySelectorAll`?
 
 The BBC use the following test for cutting the mustard:
 
-    if ('querySelector' in document && 
-        'localStorage' in window && 
+    if ('querySelector' in document &&
+        'localStorage' in window &&
         'addEventListener' in window) {
         // bootstrap the JavaScript application
     }
@@ -118,7 +118,7 @@ If I'm creating a proof of concept, testing an idea out, and generally hacking a
 
 ## jQuery-free
 
-You might be thinking "so, does Remy use jQuery, and if he doesn't then does he just re-implement it all?". 
+You might be thinking "so, does Remy use jQuery, and if he doesn't then does he just re-implement it all?".
 
 I certainly don't want to re-invent the wheel. If I find that developing without jQuery only leads me to re-creating a lot of jQuery's functionality from scratch, then I'm clearly wasting my own time.
 
@@ -197,7 +197,7 @@ We can do:
 
     document.body.classList.add('hasJS');
 
-Isn't that pretty? 
+Isn't that pretty?
 
 What about removing:
 
@@ -248,7 +248,7 @@ Like I said before, jQuery helped me grok ajax fully. But now ajax is pretty eas
     function request(type, url, opts, callback) {
       var xhr = new XMLHttpRequest(),
           fd;
-      
+
       if (typeof opts === 'function') {
         callback = opts;
         opts = null;
@@ -327,9 +327,9 @@ But what about my animation end callback I hear you all cry?!  That's available 
 
 * Note the the lowercase 'e' on 'end'...
 
-A few kind people on twitter did also point me to a [sort-of-polyfill for jQuery](https://github.com/benbarnett/jQuery-Animate-Enhanced), that enhances the `.animate` function if CSS animations are available. 
+A few kind people on twitter did also point me to a [sort-of-polyfill for jQuery](https://github.com/benbarnett/jQuery-Animate-Enhanced), that enhances the `.animate` function if CSS animations are available.
 
-There's also a separate plugin called [Transit](http://ricostacruz.com/jquery.transit/) which gives you JavaScript based control over creating CSS animations.  A really nice aspect (for me) is the chaining support. Since it relies exclusively on CSS animations, it requires IE10 and above. 
+There's also a separate plugin called [Transit](http://ricostacruz.com/jquery.transit/) which gives you JavaScript based control over creating CSS animations.  A really nice aspect (for me) is the chaining support. Since it relies exclusively on CSS animations, it requires IE10 and above.
 
 Which begs me to ask: why does this plugin require jQuery specifically?
 
@@ -388,7 +388,7 @@ The plugin is this:
 
 `.extend` is being used against an object that only has two options, so I would rewrite to read:
 
-      if (options === undefined) options = {}; 
+      if (options === undefined) options = {};
       if (options.minFontSize === undefined) options.minFontSize = Number.NEGATIVE_INFINITY;
       if (options.maxFontSize === undefined) options.maxFontSize = Number.POSITIVE_INFINITY;
 
@@ -452,4 +452,4 @@ But for the majority of you: I'm singing to the choir. You're already invested. 
 
 **You** need to share your experiences with the others around you. You're the expert now, and it's up to you to help those around you, to help them come up to your standards and beyond.
 
-Conferences will be looking for new speakers, new experts: you are that person. 
+Conferences will be looking for new speakers, new experts: you are that person.
