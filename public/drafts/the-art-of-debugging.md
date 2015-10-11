@@ -154,6 +154,10 @@ The other significant time I encountered this type of problem was back when I us
 
 The same is *sort of* true today. Recommendations for debugging with the devtools timeline is that you *don't* turn on all the recording checkboxes, and that you ideally close all other tabs *and* anything else that might be using WebKit (like Spotify...I'm assuming there's some overlapping OS access that WebKit and Blink have...). This is because *all* of these will affect the performance recording.
 
+<!-- (I also wrote the following about "state" and how it's important to the tools used for debugging, but this post was already long enough. However, I've left it here for prosperity) -->
+
+<!--
+
 ## State
 
 For me, debugging comes down to **state**. I need to be able to inspect the state at any time to be able to understand exactly what's going on.
@@ -189,7 +193,7 @@ Importantly here, if I change code that's currently being run (or that I've paus
 The final part of "state" is the stack, i.e. how did we arrive to this state. It would be amazing if it were possible to snapshot the state and rewind or save state to magically restore. Alas those hopes were quickly dashed by Addy Ossmani who took the time to explain why it's not technically possible (or sane) in this [post](https://gist.github.com/addyosmani/cee1ac65263cc7134711).
 
 Importantly though, where I mentioned earlier that in devtools I can change the code in real-time *and* have it saved (if I sued workspaces) then I can maintain the stack. The flip side is if I'm using a transpiler, like Babel, is that the transpile has to run again, and this requires a reload of the browser to get the updates in memory, and thus you lose the stack.
-
+-->
 
 ## Debugging approaches
 
