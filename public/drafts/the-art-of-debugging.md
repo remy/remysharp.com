@@ -10,7 +10,7 @@ TL;DR: learn every tool that's available to use, use them as you need them, enjo
 
 Before we start though...
 
-## Skip to the end...
+## How to skip to the end...
 
 **Don't.**
 
@@ -22,7 +22,7 @@ Before we start though...
 
 ## Although...
 
-Okay. So, assuming you're not robots, and you might have written a bug or two in your time, the truth is: there is no silver bullet.
+Assuming you're not a robot, and you might have written a bug or two in your time, the truth is: there is no silver bullet.
 
 And in fact, I lied a moment ago, "don't write bugs" is the exact opposite to learning to debug. You need experience. You have to encounter bugs to be able to recognise how to approach them.
 
@@ -81,8 +81,8 @@ This is something I open with in all my debugging workshops, and look, even Wiki
 
 I breakdown (in my head) debugging as the following:
 
-1. **Replicate** translation: seeing the bug
-2. **Isolate** translation: understanding the bug
+1. **Replicate** translation: see the bug
+2. **Isolate** translation: understand the bug
 3. **Eliminate** translation: fix the bug
 
 ### Replicate

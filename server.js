@@ -43,6 +43,11 @@ global.modified = function (filename) {
   }
 };
 
+function redirect(res, url) {
+  res.writeHead(302, { location: url });
+  res.end();
+}
+
 /* legacy for feedburner */
 route.all('/feed/', function (req, res, next) {
   // required by harp because it thinks I'm using express...
@@ -51,9 +56,8 @@ route.all('/feed/', function (req, res, next) {
 });
 
 /* redirect to s3 hosted urls */
-route.all(/\/downloads\/(.*)$/, function (req, res, next) {
-  res.writeHead(302, { location: 'http://download.remysharp.com/' + req.params[1] });
-  res.end();
+route.all(/\/downloads\/(.*)$/, function (req, res) {
+  redirect(res, 'http://download.remysharp.com/' + req.params[1]);
 });
 
 route.post('/search', function (req, res) {
@@ -74,12 +78,12 @@ route.post('/search', function (req, res) {
         },
       },
       highlight: {
-        pre_tags : ['<strong class="highlight"><em>'],
-        post_tags : ['</em></strong>'],
+        'pre_tags': ['<strong class="highlight"><em>'],
+        'post_tags': ['</em></strong>'],
         fields: {
           body: {
-            number_of_fragments: 10,
-            fragment_size: 400,
+            'number_of_fragments': 10,
+            'fragment_size': 400,
           },
         },
       },
@@ -129,29 +133,29 @@ route.get(/^\/(.*)\/edit(\/)?$/, function (req, res, next) {
       match = slugs.filter(function (slug) {
         return slug.indexOf(req.params[1]) !== -1;
       }).map(function (s) {
-        return s = 'blog/' + s;
+        s = 'blog/' + s;
+        return s;
       });
     }
   }
 
   if (match.length) {
-    res.writeHead(302, { location: 'https://github.com/remy/remysharp.com/blob/master/public/' + match.shift() + '.md' });
-    return res.end();
+    var url = 'https://github.com/remy/remysharp.com/blob/master/public/' +
+      match.shift() + '.md';
+    return redirect(res, url);
   }
 
   next();
 });
 
 /* redirect to s3 hosted urls */
-route.all('/wp-content/uploads/{year}/{month}/{filename}', function (req, res, next) {
-  res.writeHead(302, { location: 'http://download.remysharp.com/' + req.params.filename });
-  res.end();
+route.all('/wp-content/uploads/{year}/{month}/{filename}', function (req, res) {
+  redirect(res, 'http://download.remysharp.com/' + req.params.filename);
 });
 
 /* redirect to s3 hosted urls */
-route.all('/demo/{filename}', function (req, res, next) {
-  res.writeHead(302, { location: 'http://download.remysharp.com/' + req.params.filename });
-  res.end();
+route.all('/demo/{filename}', function (req, res) {
+  redirect(res, 'http://download.remysharp.com/' + req.params.filename);
 });
 
 /* redirect /blog/{slug} to the date formatted url */
@@ -159,8 +163,7 @@ route.all('/{blog}?/{post}', function (req, res, next) {
   var post = blogs[req.params.post];
   if (post) {
     var url = moment(post.date).format('/YYYY/MM/DD/') + req.params.post;
-    res.writeHead(302, { location: url });
-    res.end();
+    redirect(res, url);
     return;
   }
   next();
@@ -183,8 +186,7 @@ route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/, fu
     }
 
     if (params[5] === '/') {
-      res.writeHead(302, { location: req.url.replace(/(.)\/$/, '$1')});
-      res.end();
+      redirect(res, req.url.replace(/(.)\/$/, '$1'));
       return;
     }
 
@@ -216,8 +218,7 @@ route.all(/^\/([a-z0-9\-]+)(\/?)$/i, function (req, res, next) {
     var matched = match.slice(-1).pop(); // use the latest
     var post = blogs[matched];
     var url = moment(post.date).format('/YYYY/MM/DD/') + matched;
-    res.writeHead(302, { location: url });
-    res.end();
+    redirect(res, url);
     return;
   }
 
@@ -282,6 +283,12 @@ function run() {
   } else {
     // this is used for offline development, where harp is
     // rebuilding all files on the fly.
+    route.get(/^\/archive$/, function (req, res) {
+      redirect(res, '/archive/');
+    });
+    route.get(/^\/drafts$/, function (req, res) {
+      redirect(res, '/drafts/');
+    });
     route.all('*', harp.mount(__dirname));
     route.all('*', function (req, res) {
       req.url = '/404';
@@ -295,7 +302,7 @@ function run() {
 }
 
 function stat(filename) {
-  return new Promise(function (resolve, reject) {
+  return new Promise(function (resolve) {
     fs.stat(__dirname + '/public/blog/' + filename + '.md', function (error, stat) {
       if (error) {
         resolve({ slug: filename, date: new Date(0) });
