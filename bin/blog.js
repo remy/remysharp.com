@@ -79,6 +79,8 @@ function publish(title) {
     }).reduce(function (prev, curr) {
       if (curr.title && curr.title.toLowerCase().indexOf(title) !== -1) {
         prev.push(curr);
+      } else if (curr.slug.indexOf(title) !== -1) {
+        prev.push(curr);
       }
       return prev;
     }, []);
