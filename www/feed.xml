@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Wed, 14 Oct 2015 21:24:16 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>The Art of Debugging</title><guid isPermaLink="false">the-art-of-debugging</guid><link>https://remysharp.com/2015/10/14/the-art-of-debugging</link><pubDate>Wed, 14 Oct 2015 21:24:16 +0000</pubDate><description><![CDATA[This is the accompanying article for my Art of Debugging talk that I first gave at Fronteers in Amsterdam in 2015.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 26 Oct 2015 12:58:38 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Using travis with private npm deps</title><guid isPermaLink="false">using-travis-with-private-npm-deps</guid><link>https://remysharp.com/2015/10/26/using-travis-with-private-npm-deps</link><pubDate>Mon, 26 Oct 2015 12:58:38 +0000</pubDate><description><![CDATA[I&#39;ve recently been working on a project that requires privately scoped npm modules. The problem I encountered was: when Travis ran tests that depended on @scoped modules, it would fail:
+npm ERR! 404 Not found : @remy/super-awesome-private-mod
+This post fixes that issue (and is mostly here when I forget, I can &quot;google myself&quot;!).]]></description><content:encoded><![CDATA[<p>I&#39;ve recently been working on a project that requires <a href="https://www.npmjs.com/private-modules">privately scoped npm modules</a>. The problem I encountered was: when Travis ran tests that depended on @scoped modules, it would fail:</p>
+<pre><code>npm ERR! 404 Not found : @remy/super-awesome-private-mod
+</code></pre><p>This post fixes that issue (and is mostly here when I forget, I can &quot;google myself&quot;!).</p>
+<!--more-->
+<h2>1. Capture your token</h2><p>If you&#39;re using <a href="https://github.com/semantic-release/cli">semantic-release cli</a> (which you should, it&#39;s awesome), then you&#39;ll already have the <code>NPM_TOKEN</code> as an environment value in Travis.</p>
+<p>If not, you&#39;ll need to find your npm token. This is found in your home directory, in the <code>.npmrc</code> file. The token is everything after <code>_authToken=</code>. Your file should contain a line like this:</p>
+<pre><code>//registry.npmjs.org/:_authToken=00000000-0000-0000-0000-000000000000
+</code></pre><p>Note that where I&#39;ve put zeros, you&#39;ll see letters and numbers. Once you&#39;ve copied the token, you&#39;ll need to create a new env value in your Travis setting (on the individual build pages):</p>
+<p><img src="/images/travis-settings.png" alt="Travis settings"></p>
+<p>Then under the &quot;Environment Values&quot; add a new value (keep &quot;display value in build log&quot; off):</p>
+<pre><code>NPM_TOKEN = 00000000-0000-0000-0000-000000000000
+</code></pre><p>Then hit &quot;add&quot;.</p>
+<h2>2. npmrc</h2><p>You have two options here. The first option is to dynamically create an <code>.npmrc</code> (<a href="https://docs.npmjs.com/files/npmrc">more about npmrc</a>) in the <code>.travis.yml</code> setup. The second option is to add the file to your repo, but it also requires a change to your shell environment. I&#39;ll cover both.</p>
+<p>Note that if you change your npm password, then you&#39;ll need to update your <code>NPM_TOKEN</code>, otherwise it shouldn&#39;t need changing in the future.</p>
+<h3>Dynamic</h3><p>In your <code>.travis.yml</code> you&#39;ll create an <code>.npmrc</code> file on the fly. You&#39;ll need to do this in the <code>before_install</code> section, as per:</p>
+<pre><code>before_install:
+  - echo &quot;//registry.npmjs.org/:_authToken=\${NPM_TOKEN}&quot; &gt; .npmrc
+</code></pre><p>Note that the escaped <code>\$</code> is important. This will ensure that your private npm token is not echoed out in your Travis logs. That&#39;s it. With this method, you&#39;re ready.</p>
+<p>I personally like this method because it keeps the <code>.npmrc</code> file out of my git repo and it means I don&#39;t have to remember to fiddle with my shell environment variables as we&#39;ll see next.</p>
+<h3>File based</h3><p>Create a <code>.npmrc</code> file and put it in the root of the directory that Travis will run (i.e. the root of the git repo typically).</p>
+<p>Have the file contain (at least) this:</p>
+<pre><code>//registry.npmjs.org/:_authToken=${NPM_TOKEN}
+</code></pre><p>Now push this to your repo and let Travis run it&#39;s test. Travis will now have access to install your privately scoped npm packages.</p>
+<p>Now you build will work, but <code>npm install</code> <em>won&#39;t</em> work locally until you add the <code>NPM_TOKEN=00000...</code> to your local shell environment variables.</p>
+<p>You might need to tweak these directions depending on your shell, but if you&#39;re using bash, add the following line to your <code>.bash_profile</code> and after run <code>source ~/.bash_profile</code>:</p>
+<pre><code class="language-bash">export NPM_TOKEN=&quot;00000000-0000-0000-0000-000000000000&quot;
+</code></pre>
+<p>The downside of this method (once you&#39;ve got your shell sorted) is that if you&#39;re working in a team, each team member will have to add this line to their shell too, as the <code>.npmrc</code> file in the root of your project directory will require a valid token.</p>
+<hr>
+<p>Now your private modules will install in Travis. If you need this in an environment like Heroku, I found <a href="http://blog.getpiggybank.com/npm-private-modules-with-heroku/">this</a> article very useful (and the basis of this post).</p>
+]]></content:encoded></item><item><title>The Art of Debugging</title><guid isPermaLink="false">the-art-of-debugging</guid><link>https://remysharp.com/2015/10/14/the-art-of-debugging</link><pubDate>Wed, 14 Oct 2015 21:24:16 +0000</pubDate><description><![CDATA[This is the accompanying article for my Art of Debugging talk that I first gave at Fronteers in Amsterdam in 2015.
 TL;DR: learn every tool that&#39;s available to use, use them as you need them, enjoy bug bustin&#39; - it&#39;s certainly more fun pounding the keyboard and working on a 6 month feature drive.]]></description><content:encoded><![CDATA[<p>This is the accompanying article for my <em>Art of Debugging</em> talk that I first gave at Fronteers in Amsterdam in 2015.</p>
 <p>TL;DR: learn every tool that&#39;s available to use, use them as you need them, enjoy bug bustin&#39; - it&#39;s certainly more fun pounding the keyboard and working on a 6 month feature drive.</p>
 <!--more-->
@@ -983,78 +1015,4 @@ if (config.mock) {
 </ul>
 <p>I have done some similar work in my <a href="https://github.com/remy/servedir#mocked-router">static server</a> which also has limited support for interpolation in the response.</p>
 <p>For now though, this simple version suits my requirements!</p>
-]]></content:encoded></item><item><title>screen: Persistent Terminal Sessions</title><guid isPermaLink="false">screen</guid><link>https://remysharp.com/2015/04/27/screen</link><pubDate>Mon, 27 Apr 2015 11:45:00 +0000</pubDate><description><![CDATA[Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.
-Screen is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time.]]></description><content:encoded><![CDATA[<p>Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.</p>
-<p><a href="http://www.gnu.org/software/screen/manual/screen.html">Screen</a> is the solution to this problem. Screen allows you to start terminal sessions that you can disconnect from and resume at any time.</p>
-<!--more-->
-<p>I personally use screen a lot with <a href="http://nodejs.org">Node.js</a> web servers - so I can kick off the process, and resume my terminal session to check logs or errors or to restart the process in case it died.</p>
-<p>This article is an introduction to screen for the average Joe/anne developers with a few tips and tricks.</p>
-<h2>Installing</h2><p>Screen is a unix-y tool, so with Ubuntu I&#39;d use <code>apt-get</code> - it&#39;s also possible it&#39;s pre-installed on the machine (just type <code>screen</code> to find out):</p>
-<pre><code>sudo apt-get install screen
-</code></pre><h2>Instant win with screen</h2><p>When I remote in to a machine, I run <code>screen</code> and it starts a new session (actually called a window - but I&#39;ll come on to more about these later). There&#39;s some blurb about what screen is, I hit return, and the session is ready.</p>
-<p>From here I might start my process. Let&#39;s say I&#39;m doing some large database export.</p>
-<p>Now I need to <em>detach</em> from the screen so I can cleanly close the remote session or do something else whilst the export is happening. I type the command sequence:</p>
-<pre><code>ctrl-a d
-</code></pre><p>This will leave the session running and detach from the screen so you&#39;re back to your original terminal prompt.</p>
-<p>To resume your screen session:</p>
-<pre><code>screen -r
-</code></pre><p>This will take you back to your screen session.</p>
-<p>But what if my connection drops and closes whilst I&#39;m inside of screen? When I resume my ssh session, the screen <em>could</em> still be attached, so that when I run <code>screen -r</code> it won&#39;t resume. This is simple to get around, you can detach the screen from <em>outside</em> of the screen session (and in our case, immediately resume using <code>-r</code>):</p>
-<pre><code>screen -rd
-</code></pre><p>So now you&#39;ve got basic minimum use of screen, how about using some of it&#39;s features? Multiple screens, multiple windows, naming screen sessions &amp; windows, setting defaults in the screen like scroll back, or displaying the title of the screen in the terminal.</p>
-<h2>Screen commands</h2><p>When you run screen more than once, you&#39;ll have multiple screen sessions on the go. To list the available screens:</p>
-<pre><code>screen -ls
-</code></pre><p>If you have more than one, you&#39;ll need to name the screen you want to resume:</p>
-<pre><code>$ screen -ls
-There are screens on:
-    17566.ttys001.remys-mba (Detached)
-    18778.ttys001.remys-mba (Detached)
-    19014.ttys001.remys-mba (Detached)
-
-$ screen -r 18778
-</code></pre><p>This will resume the second screen (identified by it&#39;s process id). You can also resume last screen using <code>screen -RR</code>. But resuming using PIDs is ugly, so let&#39;s name the screens as we create them using the <code>-S</code> argument (this names the socket the screen connects to):</p>
-<pre><code>$ screen -S database-dump
-[ctrl-a d]
-$ screen -ls
-There are screens on:
-    17566.ttys001.remys-mba (Detached)
-    18778.ttys001.remys-mba (Detached)
-    19014.ttys001.remys-mba (Detached)
-    18898.database-dump (Detached)
-
-$ screen -r database-dump
-</code></pre><p>Now we have multiple named screens, let&#39;s look at multiple windows inside of a screen.</p>
-<h2>Screen windowing</h2><p>Screen supports having multiple &quot;windows&quot; inside a screen session. So you can have one screen and multiple windows dealing with specific jobs.</p>
-<p>Inside of a screen, use the command sequence to create a new window:</p>
-<pre><code>ctrl-a c
-</code></pre><p>The initial window is 0, second is 1 and so on, and there&#39;s a number of ways to switch windows:</p>
-<pre><code>ctrl-a [n]     // where [n] is the window number
-ctrl-a ctrl-a  // switch to the last used window
-ctrl-a &quot;       // show a list of all the windows
-ctrl-a A       // change the title of this window
-</code></pre><p>There&#39;s <a href="http://linux.about.com/od/Bash_Scripting_Solutions/a/The-Linux-Screen-Terminal-Window-Manager-Key-Bindings.htm">lots more key bindings</a> you can use inside of screen that allows you to navigate the windows beyond the scope of this article.</p>
-<h2>Tricks</h2><p>Even if you use screen in it&#39;s simplest form (as I usually do), I wanted to share a few tricks I found whilst digging deeper in to screen.</p>
-<h3>Lazy continuous integration</h3><p>This is a pretty dirty method, but it&#39;s worked for me in the past when I&#39;ve just wanted something to quickly work: <code>screen</code> + <code>watch</code> + <code>git pull</code> = <a href="https://remysharp.com/2012/06/16/development-trick-auto-updating-auto-reloading">auto deploy</a></p>
-<h3>Multiuser screens</h3><p>To connect a second (or more) users to an existing screen session, use:</p>
-<pre><code>screen -rx
-</code></pre><p>Instead of detaching any users attached to the session (which is what would happen if we used <code>-r</code>) this allows me to join the session and anything I type in my window is echoed to any other users connected to the screen.</p>
-<p>Maybe this could useful for remote support, or perhaps training. I&#39;ve not used this in the wild yet, but it&#39;s certainly a fun idea!</p>
-<h3>Keeping History</h3><p>One problem with screen is the scroll back. If you scroll up in a screen, it doesn&#39;t scroll the history back, but the screen itself just scrolls away. To scroll back <em>inside</em> of the screen, you execute the <code>ctrl-a [</code> command. Now you can use your keyboard to navigate up and down (this is actually in &quot;copy mode&quot;). You can hit escape to return back to the prompt.</p>
-<p>What might be more useful than a scroll back is a log of the screen session, which can be toggled on using <code>ctrl-a H</code>. This can be enabled by default with a <code>.screenrc</code> file though.</p>
-<h3>Screen Defaults</h3><p>Finally, I&#39;ll you with my own <code>.screenrc</code>. Create this file in your home directory, and this can configure your startup options for screen:</p>
-<pre><code># Always show a status line in the window footer
-hardstatus on
-hardstatus alwayslastline
-hardstatus string &quot;%{.bW}%-w%{.rW}%n %t%{-}%+w %=%{..G} %H %{..Y} %m/%d %C%a &quot;
-
-# Autodetach session on hangup instead of
-# terminating screen completely
-autodetach on
-
-# Turn off the splash screen
-startup_message off
-
-# set log on all windows
-deflog on
-</code></pre><p><small>Reposted from <a href="http://webadvent.org/2012/persistent-terminal-sessions-by-remy-sharp">Web Advent 2012</a></small></p>
 ]]></content:encoded></item></channel></rss>
