@@ -107,7 +107,7 @@ There's some key tools that help me to replicate environments, or two at least h
 
 Incognito mode in Chrome (and known with other names in other browsers) lets me fire up the site *without* (most of) my browser extensions running. It'll also start with a clean slate with respect to cookies, offline storage and any other pre-baked configuration that my "normal" browsing sessions come with.
 
-I can say for certain that I get at *least* one bug filed each year which is usually very strange and comes down to a rouge extensions on the user's browser that's interfering with the web site code.
+I can say for certain that I get at *least* one bug filed each year which is usually very strange and comes down to a rogue extensions on the user's browser that's interfering with the web site code.
 
 By running in incognito, and seeing no bug, then asking the user to repeat the same task, I'm able to immediately confirm that there's an external entity at play (i.e. typically an extension).
 
@@ -150,7 +150,7 @@ Well...you're shit out of luck, and you can blind code a solution, but it's not 
 
 I've personally encountered a few of these myself. The worst kinds (for me) are when these bugs only occur in my <abbr title="continuous integration">CI</abbr> system (like Travis). The bug I was working on was fixed in my local environment, and I understood the code well enough to know the bug was fixed, but my tests wouldn't pass. The task now is different, the task was debug the test environment, which is a closed system when it's CI.
 
-The other significant time I encountered this type of problem was back when I used Firebug (which stopped around 2009-2010). Firebug is/was an intrusive debugging tool that would inject content into the DOM to achieve the debugging. It also had bug (as does devtools and all the other debuggers - see the start of this post!). It meant that there were certain edge cases that you could run into that would trigger bugs in the debugger making debugging extra...challenging.
+The other significant time I encountered this type of problem was back when I used Firebug (which stopped around 2009-2010). Firebug is/was an intrusive debugging tool that would inject content into the DOM to achieve the debugging. It also had bugs (as do devtools and all the other debuggers - see the start of this post!). It meant that there were certain edge cases that you could run into that would trigger bugs in the debugger making debugging extra...challenging.
 
 The same is *sort of* true today. Recommendations for debugging with the devtools timeline is that you *don't* turn on all the recording checkboxes, and that you ideally close all other tabs *and* anything else that might be using WebKit (like Spotify...I'm assuming there's some overlapping OS access that WebKit and Blink have...). This is because *all* of these will affect the performance recording.
 
