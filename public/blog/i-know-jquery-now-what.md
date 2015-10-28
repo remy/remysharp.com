@@ -203,7 +203,7 @@ What about removing:
 
     $('body').removeClass('hasJS');
 
-    // or some crazy ass regular express
+    // or some crazy-ass regular expression
 
 Or we can do:
 
