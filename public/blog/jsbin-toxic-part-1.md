@@ -26,7 +26,7 @@ It was posted up on Ajaxian and had a good reception. I had also started seeding
 
 The concept from day one was simple: you could, anonymously, create a web page for anyone to view and edit (creating a new "snapshot").
 
-Initially around a 4 hour hack with 2 PHP files ([sandbox.php](https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/sandbox.php) and [index.php](https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/index.php)) and one very simple MySQL database. Over time it would become more complex, with many many more features - mostly tucked away a very sleek design (by [Danny Hope](https://twitter.com/yandle)).
+Initially around a 4 hour hack with 2 PHP files ([sandbox.php](https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/sandbox.php) and [index.php](https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/index.php)) and one very simple MySQL database. Over time it would become more complex, with many many more features - mostly tucked away behind a very sleek design (by [Danny Hope](https://twitter.com/yandle)).
 
 JS Bin grew and grew over the years. I've gone through a couple of major rewrites and now settled on Node for it's backend (though still MySQL) on an AWS based architecture.
 
