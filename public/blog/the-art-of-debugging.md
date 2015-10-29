@@ -32,7 +32,7 @@ At the company I worked at 10 years ago, when new employees came on board, we wo
 
 They had the chance to dabble in so many areas of the business whereas other developers were coding the same single feature for 3, 6 even 12 months, and even then, it would go live, have bugs, and our bug catcher would swoop in, fix the bug and get a slice of the glory.
 
-Attaining that *hands on* experience, I believe, is key to both being a good developer, but really, knowing how to debug anything. The designer from that company 10 years ago, Chris - he was the CSS wiz. He knew all the answers when the server side devs would get stuck with simple things. I'd often find myself asking him why the layout had broken so baldy in what I thought was a relatively simple design. His answer, quiet often, was "add `zoom: 1` to that element".
+Attaining that *hands on* experience, I believe, is key to both being a good developer, but really, knowing how to debug anything. The designer from that company 10 years ago, Chris - he was the CSS wiz. He knew all the answers when the server side devs would get stuck with simple things. I'd often find myself asking him why the layout had broken so baldy in what I thought was a relatively simple design. His answer, quite often, was "add `zoom: 1` to that element".
 
 He had completed the debugging step in head and come to a reasonable proposal that this particular change could fix my issue, almost entirely because he had seen so many permutations of the visual bug that he could recognise by eye.
 
