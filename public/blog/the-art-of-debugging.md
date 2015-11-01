@@ -32,7 +32,7 @@ At the company I worked at 10 years ago, when new employees came on board, we wo
 
 They had the chance to dabble in so many areas of the business whereas other developers were coding the same single feature for 3, 6 even 12 months, and even then, it would go live, have bugs, and our bug catcher would swoop in, fix the bug and get a slice of the glory.
 
-Attaining that *hands on* experience, I believe, is key to both being a good developer, but really, knowing how to debug anything. The designer from that company 10 years ago, Chris - he was the CSS wiz. He knew all the answers when the server side devs would get stuck with simple things. I'd often find myself asking him why the layout had broken so baldy in what I thought was a relatively simple design. His answer, quiet often, was "add `zoom: 1` to that element".
+Attaining that *hands on* experience, I believe, is key to both being a good developer, but really, knowing how to debug anything. The designer from that company 10 years ago, Chris - he was the CSS wiz. He knew all the answers when the server side devs would get stuck with simple things. I'd often find myself asking him why the layout had broken so baldy in what I thought was a relatively simple design. His answer, quite often, was "add `zoom: 1` to that element".
 
 He had completed the debugging step in head and come to a reasonable proposal that this particular change could fix my issue, almost entirely because he had seen so many permutations of the visual bug that he could recognise by eye.
 
@@ -95,7 +95,7 @@ Replicating the bug is the hardest part of the entire job. More often than not y
 
 Right, so not only do I have to be diplomatic in your response, as much as I want to respond with simply "yes it does" [close], but I also need to glean as much information as possible to be able to replicate what this user is seeing.
 
-If the site they're talking about is jsbin, then I know saving does work, because I just used it, it just means that saving it's working for them (and potentially others). Translation: *saving could just be working for **me***.
+If the site they're talking about is jsbin, then I know saving does work, because I just used it, it just means that saving isn't working for them (and potentially others). Translation: *saving could just be working for **me***.
 
 If I visit a URL that the user is talking about, and it breaks immediately. That's a lucky break. This is the **litmus test** and it's always worth doing. Never jump right into trying to replicate 100% - take it step by step. However, it's also more likely is that there were a series of events that preceded the bug manifesting, and I'll have to understand what those were, and then repeat them myself.
 
