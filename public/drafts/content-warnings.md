@@ -1,16 +1,16 @@
-# Trigger warnings
+# Content warnings
 
-I've recently been giving a talk that starts with a trigger warning. I wasn't quite sure whether it warranted it, as it's only a brief mention of the potential trigger, but it felt like that was *enough* to justify the warning.
+I've recently been giving a talk that starts with a content warning. I wasn't quite sure whether it warranted it, as it's only a brief mention of the potential trigger, but it felt like that was *enough* to justify the warning.
 
-Trigger warnings apply to a wide range of traumas, and I wanted to ask that if you, my dear reader, are giving talks at a conference, please consider whether your content requires a trigger warning.
+Content warnings apply to a wide range of traumas, and I wanted to ask that if you, my dear reader, are giving talks at a conference, please consider whether your content requires a content warning.
 
 <!--more-->
 
-***Trigger warning: infant death.***
+***Content warning: infant death.***
 
 ## My experience
 
-The obvious candidates for trigger warnings (or certainly to me in an earlier life) are any form of abuse.
+The obvious candidates for content and trigger warnings (or certainly to me in an earlier life) are any form of abuse.
 
 I wanted to share the experience I had attending a conference in New York a couple of years ago.
 
@@ -32,4 +32,4 @@ Had the speaker included just one statement up front that his talk contained inf
 
 ---
 
-So if you're giving talks, just think about whether you need a trigger warning. I've been giving public talks now for 7 years, and I now have have a talk that includes a trigger warning. Just consider it, and pass this sentiment on to your peers.
+So if you're giving talks, just think about whether you need a content warning. I've been giving public talks now for 7 years, and I now have have a talk that includes a content warning. Just consider it, and pass this sentiment on to your peers.

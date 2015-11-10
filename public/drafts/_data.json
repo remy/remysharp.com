@@ -190,8 +190,8 @@
       "code"
     ]
   },
-  "trigger-warnings": {
-    "title": "Trigger warnings",
+  "content-warnings": {
+    "title": "Content warnings",
     "date": "2015-08-21 09:59:25",
     "complete": true,
     "inprogress": false,
@@ -206,6 +206,26 @@
     "inprogress": true,
     "tags": [
       "code"
+    ]
+  },
+  "on-making-ffconf-a-safe-place": {
+    "title": "On making ffconf a safe place",
+    "date": "2015-11-09 14:12:34",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "ffconf",
+      "business"
+    ]
+  },
+  "cost-of-a-slide-deck": {
+    "title": "Cost of a slide deck",
+    "date": "2015-11-09 18:15:47",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "business",
+      "web"
     ]
   }
 }
