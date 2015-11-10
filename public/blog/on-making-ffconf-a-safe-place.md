@@ -34,7 +34,7 @@ In particular, at ffconf I asked the amazing [Lena Reinhard](https://twitter.com
 
 As [one attendee](https://twitter.com/almostobsolete/status/662679575932092416) put it: "some difficult and uncomfortable truths".
 
-Then when (at least) one individual is both talking during the session and after, loudly, making sure he's heard that *he* does not agree and dismisses these ideas, what *he* is saying to the women is: "I do not have respect for you".
+Then when (at least) one individual is both talking during the session and after, **loudly, making sure he's heard by nearby men & women** that he does not agree and dismisses these ideas, what *he* is saying to the women is: "I do not have respect for you".
 
 When I heard about this from a few of the women that attended our event, although they were offended, they passed it off with *that's just men, I've seen worse*.
 
