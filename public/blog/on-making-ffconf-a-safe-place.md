@@ -18,13 +18,13 @@ This is me, using my position of privilege to make ffconf a safer environment fo
 
 I'm not against companies looking to recruit. Indeed most companies in web tech are trying to recruit talent and that's perfectly fine. It's fine because those companies and individuals representing these companies are there to enjoy the event, learn and socialise afterwards.
 
-However, recruiter *networking*, aggressively working the room at the after party is unpleasant for many. In fact, I've heard directly from many attendees, and all said that said that it was unwanted attention.
+However, recruiter *networking*, aggressively working the room at the after party is unpleasant for many. In fact, I've heard directly from many attendees that said it was unwanted attention.
 
 Like having a recruiter *pretending* to be a developer (or pretending to have some knowledge of your field), then glazing over when you *do* start to talk technical and glancing at their boss looking for a way out.
 
 Or being told that you should move to London because that's where all the work is. Or being emailed with false claims about ffconf, and how the recruiter can *get you* some JavaScript developers.
 
-There's two reasons why this is not okay: the first is that it's cold-call, *hard sell* approach to sales. It's uncomfortable and unpleasant for those being approached.
+There are two reasons why this is not okay: the first is that it's cold-call, *hard sell* approach to sales. It's uncomfortable and unpleasant for those being approached.
 
 The second is **most importantly** the tickets taken up by these recruitment companies should have gone to people that would have genuinely benefited from the event. **This** is the reason that I will make changes for 2016's event to prevent recruiters from the event.
 
@@ -38,7 +38,7 @@ Then when (at least) one individual is both talking during the session and after
 
 When I heard about this from a few of the women that attended our event, although they were offended, they passed it off with *that's just men, I've seen worse*.
 
-I understand why, but it's not okay with me. I want to create a safe space in ffconf, and I want attendees to know that it is *not* acceptable.
+I understand why, but it's not okay with me. I want to create a safe space at ffconf, and I want attendees to know that it is *not* acceptable.
 
 ---
 
