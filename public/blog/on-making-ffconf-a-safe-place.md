@@ -34,9 +34,7 @@ In particular, at ffconf I asked the amazing [Lena Reinhard](https://twitter.com
 
 As [one attendee](https://twitter.com/almostobsolete/status/662679575932092416) put it: "some difficult and uncomfortable truths".
 
-Then when (at least) one individual is both talking during the session and after, **loudly, making sure he's heard by nearby men & women** that he does not agree and dismisses these ideas, what *he* is saying to the women is: "I do not have respect for you".
-
-When I heard about this from a few of the women that attended our event, although they were offended, they passed it off with *that's just men, I've seen worse*.
+There was (at least) one individual that was being loud and obnoxious during and after the talk. When I heard about this from a few of the women that attended our event, although they were offended, they passed it off with *that's just men, I've seen worse*.
 
 I understand why, but it's not okay with me. I want to create a safe space at ffconf, and I want attendees to know that it is *not* acceptable.
 
@@ -48,3 +46,4 @@ I understand why, but it's not okay with me. I want to create a safe space at ff
 
 If you attended ffconf 2015, and want to give us your experience, negative or positive, please email us directly on [events@leftlogic.com](mailto:events@leftlogic.com).
 
+<div class="update"><strong>Updated 2015-11-11:</strong> I've updated the "that's just men" section to try to remove any implied message, or opinions that some readers thought I was trying to put across. Hopefully this is clearer now. For this reason, some of the comment below may not make sense without the original context.</div>
