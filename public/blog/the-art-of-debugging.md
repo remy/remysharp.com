@@ -8,7 +8,12 @@ TL;DR: learn every tool that's available to use, use them as you need them, enjo
 
 ![Art of Debugging](/images/art-of-debugging-cover.jpg)
 
-Before we start though...
+## Additional resources
+
+- [Video of the talk](https://vimeo.com/145242226)
+- [Slides](https://speakerdeck.com/rem/the-art-of-debugging)
+
+But, before we start though...
 
 ## How to skip to the end...
 
