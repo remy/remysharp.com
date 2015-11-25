@@ -32,4 +32,6 @@ Had the speaker included just one statement up front that his talk contained inf
 
 ---
 
+If you're still not sure, think of a content warning like [UK film certificates](https://en.wikipedia.org/wiki/History_of_British_film_certificates#2009.E2.80.93present). U means suitable for all, otherwise the certificate is driven by the content such as "sexual violence" for an 18.
+
 So if you're giving talks, just think about whether you need a content warning. I've been giving public talks now for 7 years, and I now have have a talk that includes a content warning. Just consider it, and pass this sentiment on to your peers.

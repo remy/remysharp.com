@@ -44,7 +44,7 @@ Very much what Jeremy Keith has [said recently in response](https://adactio.com/
 
 Today, many developers are writing "thick clients", that is, JavaScript driving a lot, if not all, of the functionality and presentation in the browser.
 
-The do it by delivering and render *views* in the browser. The big upside of this is that the site is extremely fast to the user's input. The other big benefit is that there are a good number of frameworks (Angular, Ember, Polymer to name the "biggies" of today) that lend themselves greatly to client side MVC, i.e. full application logic in the client side code.
+They do it by delivering and render *views* in the browser. The big upside of this is that the site is extremely fast to the user's input. The other big benefit is that there are a good number of frameworks (Angular, Ember, Polymer to name the "biggies" of today) that lend themselves greatly to client side MVC, i.e. full application logic in the client side code.
 
 The problem is that the frameworks will often (try to) reinvent fundamental building blocks of a web experience. A few simple/classic examples:
 
@@ -57,9 +57,7 @@ This doesn't mean this isn't possible, just that it's more often forgotten. In t
 
 A more extreme example of this is seen in Flipboard's mobile site. Importantly: *mobile site*. Flipboard render the entire page using a `canvas` element. I can't speak for the accessibility of the site, but on mobile it performs beautifully. It feels..."native". And with that, it's also broken. I can't copy links, and I can't copy text - akin to the Flash apps and even Java applet days. It looks great, but it doesn't feel "of the web".
 
-The problem is: browsers are shit*.
-
-* When compared to the proprietary and closed platforms they're constantly compared to.
+The problem is: browsers are pretty poor when compared to the proprietary and closed platforms they're constantly compared to.
 
 There's pressure (from SF/Apple/who knows) to deliver web sites that feel "native" (no, I won't define this) and browsers are always playing catch up with native, proprietary platforms: this is a fact.
 
