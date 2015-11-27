@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Tue, 10 Nov 2015 14:46:30 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>On making ffconf a safe place</title><guid isPermaLink="false">on-making-ffconf-a-safe-place</guid><link>https://remysharp.com/2015/11/10/on-making-ffconf-a-safe-place</link><pubDate>Tue, 10 Nov 2015 14:46:30 +0000</pubDate><description><![CDATA[Last week, ffconf v7 was released, and going by all the tweets, photos and personal interactions I received, it was a huge success. Again. Phew.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Fri, 27 Nov 2015 14:33:38 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Content warnings</title><guid isPermaLink="false">content-warnings</guid><link>https://remysharp.com/2015/11/27/content-warnings</link><pubDate>Fri, 27 Nov 2015 14:33:38 +0000</pubDate><description><![CDATA[I&#39;ve recently been giving a talk that starts with a content warning. I wasn&#39;t quite sure whether it warranted it, as it&#39;s only a brief mention of the potential trigger, but it felt like that was enough to justify the warning.
+Content warnings apply to a wide range of traumas, and I wanted to ask that if you, my dear reader, are giving talks at a conference, please consider whether your content requires a content warning.]]></description><content:encoded><![CDATA[<p>I&#39;ve recently been giving a talk that starts with a content warning. I wasn&#39;t quite sure whether it warranted it, as it&#39;s only a brief mention of the potential trigger, but it felt like that was <em>enough</em> to justify the warning.</p>
+<p>Content warnings apply to a wide range of traumas, and I wanted to ask that if you, my dear reader, are giving talks at a conference, please consider whether your content requires a content warning.</p>
+<!--more-->
+<p><strong><em>Content warning: infant death.</em></strong></p>
+<h2>My experience</h2><p>The obvious candidates for content and trigger warnings (or certainly to me in an earlier life) are any form of abuse.</p>
+<p>I wanted to share the experience I had attending a conference in New York a couple of years ago.</p>
+<p>The speaker had been introduced on stage to talk about how they got involved with start-ups and created business and generally talk about how they were awesome.</p>
+<p>The talk was very focused around bootstrapping business when all of a sudden I found myself listening to the gentleman talking about a baby that was born, and suddenly he was running to hospital with it in his arms and the baby died.</p>
+<hr>
+<p>My baby had died.</p>
+<p>Still to this day, I have no idea how or why he shoehorned this story into his talk. Obviously it was important to him. <em>Obviously</em>. But as an audience member, it hit me like a sack of bricks in the stomach.</p>
+<p>All I could think about was my own daughter. I felt completely alone, and a very, very long way from home, my safe place.</p>
+<p>I have absolutely no idea how he finished his talk. The rest of the event is a haze to me, and because of this isolated incident, it&#39;s trashed my memory of what should have been a decent event.</p>
+<p>Had the speaker included just one statement up front that his talk contained infant death, then I could have chosen to leave, or I could brace myself for the content. Instead, I felt anger towards the speaker for hurting me in such a way. Using, to me, a story of terrible pain, as a highlight for his talk.</p>
+<hr>
+<p>If you&#39;re still not sure, think of a content warning like <a href="https://en.wikipedia.org/wiki/History_of_British_film_certificates#2009.E2.80.93present">UK film certificates</a>. U means suitable for all, otherwise the certificate is driven by the content such as &quot;sexual violence&quot; for an 18.</p>
+<p>So if you&#39;re giving talks, just think about whether you need a content warning. I&#39;ve been giving public talks now for 7 years, and I now have have a talk that includes a content warning. Just consider it, and pass this sentiment on to your peers.</p>
+]]></content:encoded></item><item><title>On making ffconf a safe place</title><guid isPermaLink="false">on-making-ffconf-a-safe-place</guid><link>https://remysharp.com/2015/11/10/on-making-ffconf-a-safe-place</link><pubDate>Tue, 10 Nov 2015 14:46:30 +0000</pubDate><description><![CDATA[Last week, ffconf v7 was released, and going by all the tweets, photos and personal interactions I received, it was a huge success. Again. Phew.
 However, as dug past the congratulations I found two things that upset me. I wanted to address them in this post.]]></description><content:encoded><![CDATA[<p>Last week, <a href="http://2015.ffconf.org">ffconf v7</a> was released, and going by all the tweets, photos and personal interactions I received, it was a <strong>huge</strong> success. Again. Phew.</p>
 <p>However, as dug past the congratulations I found two things that upset me. I wanted to address them in this post.</p>
 <!--more-->
@@ -433,7 +451,7 @@ Importantly though, where I mentioned earlier that in devtools I can change the 
 <p>JS Bin was launched on <a href="https://remysharp.com/2008/10/06/js-bin-for-collaborative-javascript-debugging">September 2008</a> as my solution to needing to see a pastebin with an interactive component.</p>
 <p>It was posted up on Ajaxian and had a good reception. I had also started seeding it by answering Stack Overflow questions and linking to live demos in JS Bin. To this day this method was a great success - particularly as Stack Overflow went on to create their own live pastebin support (though IMHO, it looks like a poor implementation of jsfiddle).</p>
 <p>The concept from day one was simple: you could, anonymously, create a web page for anyone to view and edit (creating a new &quot;snapshot&quot;).</p>
-<p>Initially around a 4 hour hack with 2 PHP files (<a href="https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/sandbox.php">sandbox.php</a> and <a href="https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/index.php">index.php</a>) and one very simple MySQL database. Over time it would become more complex, with many many more features - mostly tucked away a very sleek design (by <a href="https://twitter.com/yandle">Danny Hope</a>).</p>
+<p>Initially around a 4 hour hack with 2 PHP files (<a href="https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/sandbox.php">sandbox.php</a> and <a href="https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/index.php">index.php</a>) and one very simple MySQL database. Over time it would become more complex, with many many more features - mostly tucked away behind a very sleek design (by <a href="https://twitter.com/yandle">Danny Hope</a>).</p>
 <p>JS Bin grew and grew over the years. I&#39;ve gone through a couple of major rewrites and now settled on Node for it&#39;s backend (though still MySQL) on an AWS based architecture.</p>
 <p>Somehow, JS Bin was the first to suffer real abuse, but I know jsfiddle has come under fire pretty heavily in recent years. I&#39;m unsure if CodePen has really had much, if any abuse <em>yet</em> (possibly because it&#39;s the newbie on the block).</p>
 <hr>
@@ -934,42 +952,4 @@ user.game.score += 25;
 <li>Test to test every individual form element (currently it&#39;s a bit of a mishmash)</li>
 </ul>
 <p>Feel free to <a href="https://github.com/remy/bind/issues">raise an issue</a> or feature request or let me know if you&#39;d use this even!</p>
-]]></content:encoded></item><item><title>Call for proposals at ffconf 2015</title><guid isPermaLink="false">call-for-proposals-at-ffconf-2015</guid><link>https://remysharp.com/2015/05/25/call-for-proposals-at-ffconf-2015</link><pubDate>Mon, 25 May 2015 12:44:33 +0000</pubDate><description><![CDATA[ffconf has it&#39;s event date (6-Nov 2015) and I&#39;ve been in the process of carefully curating the content I want to hear at this year&#39;s event again. As with each year, it takes place at the Duke of Yorks in Brighton, UK.
-As always, I also make sure I allot a few positions for CFP, so here&#39;s what our CFP looks like.]]></description><content:encoded><![CDATA[<p><a href="http://2015.ffconf.org">ffconf</a> has it&#39;s event date (6-Nov 2015) and I&#39;ve been in the process of carefully curating the content I want to hear at this year&#39;s event again. As with each year, it takes place at the <a href="https://www.flickr.com/groups/fullfrontalconf/pool/">Duke of Yorks</a> in Brighton, UK.</p>
-<p>As always, I also make sure I allot a few positions for CFP, so here&#39;s what our CFP looks like.</p>
-<!--more-->
-<p>If you think you&#39;ve got something to share, then get in touch. I&#39;ve included a few guidelines as to what I prefer from a proposal, and given you an idea of the kinds of topics I&#39;m interested in hearing about this year.</p>
-<p>You can also follow the <a href="https://twitter.com/ffconf">@ffconf</a> twitter account for the latest announcements.</p>
-<p><img src="/images/ffconf-2015.gif" alt="ffconf 2015 site"></p>
-<h2>Proposal topic advice</h2><p>I&#39;ve also included what you can expect as a speaker at our event too.</p>
-<p>A few topics that are of particular interest to me:</p>
-<ul>
-<li>Isomorphic JavaScript (or <em>&quot;something less contentious&quot;</em>) code and applications (ideally outside the world of &quot;easy with React&quot;)</li>
-<li>Sysops for web developers (I&#39;m particularly interested in Docker/container solutions for web developers)</li>
-<li>What we can learn in web development from other technology/disciplines</li>
-<li>&quot;You&#39;re doing it wrong&quot;</li>
-</ul>
-<p>If you want to get an idea of the audience or who you proposal is for, the answer is simple: me. I curate for content that <em>I want to hear and see</em>. So if you (roughly) know my work, then you know the audience.</p>
-<p>Topics that don&#39;t work, unless they&#39;re genuinely going to change the World, then CFPs like these generally fall to the bottom of the pile (sorry!):</p>
-<ul>
-<li>Big library specific talks (React, Ember, Angular, jQuery, etc)</li>
-<li>Your company&#39;s new shiny product</li>
-<li>Talks that are very similar to recent years of ffconf talks</li>
-</ul>
-<p>Send me the title of your talk, an outline of the talk and any extra information you want me to know about the idea: <a href="mailto:events@leftlogic.com?subject=ffconf2015%20speaking%20propsal">events@leftlogic.com</a>.</p>
-<p><strong>It takes me a long time to process and decide on CFPs, so whilst there&#39;s no 8 sessions up on the site, it means your talk is still up for consideration. I will respond to everyone with a yay or nay eventually.</strong> If you want to come to ffconf, regardless of whether your CFP is selected, please buy a ticket and if your talk is selected, the ticket will be refunded and returns to the public pool of tickets.</p>
-<h2>Our promise to you</h2><p>All our speakers are treated the same. We will:</p>
-<ul>
-<li>Pay for your travel. If you&#39;re flying long haul, we&#39;ll upgrade you to premium class (or whatever the name is for &quot;above economy&quot;)</li>
-<li>Put you up in our &quot;speaker hotel&quot;. It&#39;s not that cool, but it&#39;s right in town and two minutes walk from our venue. We&#39;re also open to offering the hotel stay. If you want an extra day or two here and there, then that&#39;s cool too (obviously if everyone does this, it breaks our bank, but so far it&#39;s worked)</li>
-<li>Arrange your travel and help you with anything you need ahead of the event</li>
-<li>We can, if you need or want it, provide you with a mifi preloaded with data</li>
-<li>All your food and drinks provided for you during the day before and the day of the conference (don&#39;t expect to buy a drink at the after party)</li>
-<li>40 minute talk, generally we don&#39;t do Q&amp;A and it&#39;s best to err on the side of &quot;there is no wifi&quot;</li>
-<li>£500 honourium - I know it&#39;s not much, but it&#39;s a bit of spending money to say thanks</li>
-<li>A free pass to the next ffconf, and for evermore part of our growing and much loved speaker alumni</li>
-<li>If you bought a ticket for ffconf2015, we&#39;ll refund the ticket (as we don&#39;t expect, or want, our speakers to pay)</li>
-<li>Uphold our conference code of conduct, both for you, and our attendees (either will be, or based on <a href="http://confcodeofconduct.com">confcodeofconduct.com</a>)</li>
-</ul>
-<p>So I hope to hear from you soon!</p>
 ]]></content:encoded></item></channel></rss>
