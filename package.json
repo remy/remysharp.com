@@ -10,9 +10,8 @@
     "test": "node_modules/.bin/harp compile",
     "build": "node server.js compile",
     "start": "node_modules/.bin/harp start",
-    "version": "node server.js compile && git commit -m'compile ${npm_package_version}' -- www",
-    "postversion": "echo 'done'",
-    "//postversion": "git push && git push --tags && git push heroku master"
+    "version": "node server.js compile && git add www",
+    "postversion": "git push && git push --tags && git push heroku master"
   },
   "bin": {
     "blog": "./bin/cli.js"
