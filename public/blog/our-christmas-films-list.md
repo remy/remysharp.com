@@ -86,8 +86,18 @@ I've marked the films that I'd recommend watch with a \* and those I'd watch a f
 - [Trapped in Paradice (1994)](http://www.imdb.com/title/tt0111477/)
 - [Jingle All The Way (1996)](http://www.imdb.com/title/tt0116705/ "Jingle All the Way (1996) - IMDb")
 
+## 2015
+
+Bishops Wife
+Annie Claus is coming to town
+8 Women
+Trading Places
+[When Santa fell to Earth]
+
 ## Future Potentials
 
+- Prancer
+- I saw mummy kissing santa
 - [Die Hard (1988)](http://www.imdb.com/title/tt0095016/)
 - [A Bishop's Wife (1947)](http://www.imdb.com/title/tt0039190/)
 - [How the Grinch Stole Christmas (2000)](http://www.imdb.com/title/tt0170016/)
