@@ -181,15 +181,6 @@
       "web"
     ]
   },
-  "my-node-test-strategy": {
-    "title": "My node test strategy",
-    "date": "2015-08-19 14:06:40",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "code"
-    ]
-  },
   "my-client-side-testing-wish": {
     "title": "My client side testing wish",
     "date": "2015-08-24 14:07:24",

@@ -3487,5 +3487,13 @@
       "personal"
     ],
     "published": true
+  },
+  "my-node-test-strategy": {
+    "title": "My node test strategy",
+    "date": "2015-12-14 15:21:29",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }
