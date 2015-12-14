@@ -88,18 +88,19 @@ I've marked the films that I'd recommend watch with a \* and those I'd watch a f
 
 ## 2015
 
-Bishops Wife
-Annie Claus is coming to town
-8 Women
-Trading Places
-[When Santa fell to Earth]
+- [Bishops Wife (1948)](http://www.imdb.com/title/tt0039190/)
+- [Trading Places (1983)](http://www.imdb.com/title/tt0086465/)
+- [Get Santa (2014)](http://www.imdb.com/title/tt1935940/)
+- [Annie Claus is coming to town (2011)](http://www.imdb.com/title/tt1910501/)
+- [Prancer (1989)](http://www.imdb.com/title/tt0098115/)
 
 ## Future Potentials
 
-- Prancer
 - I saw mummy kissing santa
+- [Love the Coopers (2015)](http://www.imdb.com/title/tt2279339/)
+- [8 Women (2002)](http://www.imdb.com/title/tt0283832/)
+- [When Santa fell to Earth (2012)](http://www.imdb.com/title/tt1794725/)
 - [Die Hard (1988)](http://www.imdb.com/title/tt0095016/)
-- [A Bishop's Wife (1947)](http://www.imdb.com/title/tt0039190/)
 - [How the Grinch Stole Christmas (2000)](http://www.imdb.com/title/tt0170016/)
 - [Eight Crazy Nights (2002)](http://www.imdb.com/title/tt0271263/?ref_=fn_al_tt_2)
 
