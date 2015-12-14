@@ -53,7 +53,7 @@ The tape module is compatible with [Test Anything Protocol](https://testanything
 
 The problem that took me about 4 hours to debug was that if the test harness threw an exception, that exception would be swallowed by tap-spec. What this means from a practical point of view is: if my test script (like the one above) had an exception, the "tests would pass".
 
-I found that if I install tap-spec@2.x then it errors correctly. I know I'm two major (breaking) changes out of date, but at the cost of getting the *right* result in my tests - it's worth it.
+I found that if I install `tap-spec@2.x` then it errors correctly. I know I'm two major (breaking) changes out of date, but at the cost of getting the *right* result in my tests - it's worth it.
 
 **Update** since using tap as my test runner, I don't mix it with tap-spec, so I've dropped this as a pre-requisite.
 
