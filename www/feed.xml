@@ -1,4 +1,161 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Fri, 27 Nov 2015 14:33:38 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Content warnings</title><guid isPermaLink="false">content-warnings</guid><link>https://remysharp.com/2015/11/27/content-warnings</link><pubDate>Fri, 27 Nov 2015 14:33:38 +0000</pubDate><description><![CDATA[I&#39;ve recently been giving a talk that starts with a content warning. I wasn&#39;t quite sure whether it warranted it, as it&#39;s only a brief mention of the potential trigger, but it felt like that was enough to justify the warning.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 14 Dec 2015 15:21:29 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>My node test strategy</title><guid isPermaLink="false">my-node-test-strategy</guid><link>https://remysharp.com/2015/12/14/my-node-test-strategy</link><pubDate>Mon, 14 Dec 2015 15:21:29 +0000</pubDate><description><![CDATA[Historically testing has been far far down on my list of priorities. However that&#39;s been slowly changing over the last 3-4 years, and now I have a fairly solid and systematic method to testing.
+I&#39;m writing it partly to capture it in time as I know it&#39;ll continue to evolve and partly to share with you to get your input too.]]></description><content:encoded><![CDATA[<p>Historically testing has been far far down on my list of priorities. However that&#39;s been slowly changing over the last 3-4 years, and now I have a fairly solid and systematic method to testing.</p>
+<p>I&#39;m writing it partly to capture it in time as I know it&#39;ll continue to evolve and partly to share with you to get your input too.</p>
+<!--more-->
+<h2>Always be automating</h2><p>It <em>nearly</em> goes without saying that the whole process should be automated. I&#39;m not a big tooling fan, so I don&#39;t personally have something like grunt constantly running my tests.</p>
+<p>However, all my projects these days will immediately be added to Travis (my CI of choice) and typically with email alerts turned on. I&#39;ll go into the detail of my setup in a moment.</p>
+<p>JS Bin, sadly, has nearly no tests, which means the main process is: can I sign in? Can I save? This is super-super prone to disaster. Do not follow these old and crusty footsteps!</p>
+<h2>Prerequisites</h2><p>I have a few prerequisites for my test strategy:</p>
+<ul>
+<li>Runs either from an event (like a commit or repo push) or from the CLI. Anything more is over excursion.</li>
+<li>Given a failure, the exit code for my test is &quot;non-zero&quot; - this is specifically to allow Travis to see my tests have failed (more on this later).</li>
+<li>Browser/client side testing must also be triggered in the same way, and not require me to manually run browsers.</li>
+<li>Should be easy to configure and install, ideally there&#39;s no install beyond node and my project code.</li>
+</ul>
+<p>This post <strong>does not</strong> cover client side testing, mostly because I think the whole setup is a mess right now. There&#39;s <em>a lot</em> of tools available, but the process is still a lot of customisation (with respect to my own experience) so I don&#39;t think I&#39;ve got it right yet at all.</p>
+<h2>Test runners</h2><p>Good lord there&#39;s a mass of choice. Pick your poison and stick with it (until you find a reason to move). I&#39;ve tried jasmine, mocha, qunit, tap and tape. Then you&#39;ve got karma, zuul...and another one...I think!</p>
+<p>I like my test runners to be 100% familiar JavaScript which is why I&#39;ve settled on <a href="https://www.npmjs.com/package/tape">tape</a>. Up until recently I&#39;d always use tape as my test library <em>and</em> my test runner (the executable), but very recently I&#39;ve started to mixing tape with <a href="https://www.npmjs.com/package/tap">tap</a> in that I&#39;ll use tape for the test code (mostly because most of my tests are written with it) but I&#39;ll run the tests with tap (specifically for the test coverage, which I&#39;ll touch on later).</p>
+<p>I&#39;ll use tape as such:</p>
+<pre><code class="language-js">var test = require(&#39;tape&#39;);
+var lib = require(&#39;..&#39;); // my actual package
+
+test(&#39;litmus&#39;, function (assert) {
+  assert.plan(1);
+  assert.ok(lib, &#39;the library loaded&#39;);
+});
+</code></pre>
+<p>I&#39;m a big fan of planning my tests using the <code>assert.plan(n)</code> (because a lot of what I test is async), and then making sure I&#39;m actually fulfilling those specific tests. tape also comes with the usual <code>.equals</code>, <code>.deepEquals</code>, <code>.fail</code> and <code>.bail</code> (for fail and exit) and <code>.end</code> for non-planned tests.</p>
+<p>The only trouble I&#39;ve had with tape is that there&#39;s no <code>beforeEach</code> and <code>afterEach</code> which is very useful for state reset. However, it&#39;s possible to patch tape using <a href="https://github.com/remy/autocache/blob/master/test/core.js#L474-L510">this technique</a>. This alone might be a reason to use tap as the test library...maybe.</p>
+<h2>Reporters</h2><p>The tape module is compatible with <a href="https://testanything.org/">Test Anything Protocol</a>, so by itself it&#39;s fairly raw. So I pipe the output to <a href="https://www.npmjs.com/package/tap-spec">tap-spec</a>.</p>
+<p>The problem that took me about 4 hours to debug was that if the test harness threw an exception, that exception would be swallowed by tap-spec. What this means from a practical point of view is: if my test script (like the one above) had an exception, the &quot;tests would pass&quot;.</p>
+<p>I found that if I install tap-spec@2.x then it errors correctly. I know I&#39;m two major (breaking) changes out of date, but at the cost of getting the <em>right</em> result in my tests - it&#39;s worth it.</p>
+<p><strong>Update</strong> since using tap as my test runner, I don&#39;t mix it with tap-spec, so I&#39;ve dropped this as a pre-requisite.</p>
+<h2>Mocking</h2><p>Something I&#39;ve always struggled with is how to mock out a full environment and state without actually having the human interaction required to get to that point in the application.</p>
+<p>A simple example of this I had lately was testing with a package called inquirer for the <a href="https://github.com/snyk/snyk">Snyk cli</a> which prompts the user for various bits of content, and then does something with it. I want to test the full flow of code that uses inquirer inside of Snyk, but to do that I&#39;d need to take control of inquirer somehow.</p>
+<p>That&#39;s where <a href="https://github.com/thlorenz/proxyquire">proxyquire</a> and optionally <a href="http://sinonjs.org/">sinon</a> come into play.</p>
+<h3>Proxyquire</h3><p>Proxyquire will <em>require</em> your module, but allow you to intercept the loading of dependencies in that module.</p>
+<p>For instance, in Snyk, I load the inquirer package in a module called <code>wizard.js</code>. So to test the wizard, I will proxy&#39;require the module, and take control of the inquirer package as such:</p>
+<pre><code class="language-js">var answers = require(&#39;./fixtures/inquirer-answers.json&#39;);
+var wizard = proxyquire(&#39;../cli/commands/protect/wizard&#39;, {
+  // when the wizard runs require(&#39;inquirer&#39;),
+  // it&#39;ll get this back
+  inquirer: {
+    prompt: function (questions, callback) {
+      if (questions.name === &#39;misc-start-over&#39;) {
+        // handle a specific case manually
+        return callback({ &#39;misc-start-over&#39;: false });
+      }
+
+      // otherwise, return the fixtures
+      return callback(answers);
+    },
+  },
+});
+
+wizard().then(function () {
+  // tests 🎉
+}).then(function () {
+  t.end();
+});
+</code></pre>
+<p>I can also take control of my own modules being loaded, the key tip is that the path used to load the module exactly matches the key you use in the <code>proxyquire</code> call:</p>
+<pre><code class="language-js">var wizard = proxyquire(&#39;../cli/commands/protect/wizard&#39;, {
+  &#39;../../../lib/&#39;: {
+    protect: function () {
+      return Promise.resolve(require(&#39;./fixutres/vulns.json&#39;));
+    }
+  },
+  inquirer: {
+    // as before
+  },
+});
+</code></pre>
+<p>Note that with proxyquire you can only take over modules <em>one</em> level deep (so I can&#39;t nest a proxyquire inside of the <code>inquirer</code> property in the above example). This is a bit of a limitation, but you can work around it by loading in all your modules ahead of time (i.e. use proxyquire to overload a package that inquirer might use).</p>
+<h3>Sinon</h3><p>I won&#39;t say too much about Sinon, but the main use allows me to wrap and existing function with a mock function, and later on in my tests I can test what values were used to call that mocked function (or what was returned), or how many times it was called, what was used to call the function on the nth call, etc.</p>
+<p>Very useful if you want to be sure of what&#39;s going in and out of your functions.</p>
+<h2>Pre-tests</h2><p>Before my code even gets tested though, it&#39;ll check that the code passes my coding guidelines via <a href="http://jscs.info/">JSCS</a> (check out <a href="https://medium.com/@addyosmani/auto-formatting-javascript-code-style-fe0f98a923b8">Addy Osmani&#39;s superb guide to JSCS</a>). This is <em>my</em> <code>.jscsrc</code>, pick your own, stick with it, share it amongst the team:</p>
+<pre><code class="language-json">{
+  &quot;preset&quot;: &quot;node-style-guide&quot;,
+  &quot;requireCapitalizedComments&quot;: null,
+  &quot;requireSpacesInAnonymousFunctionExpression&quot;: {
+    &quot;beforeOpeningCurlyBrace&quot;: true,
+    &quot;beforeOpeningRoundBrace&quot;: true
+  },
+  &quot;disallowSpacesInNamedFunctionExpression&quot;: {
+    &quot;beforeOpeningRoundBrace&quot;: true
+  },
+  &quot;excludeFiles&quot;: [&quot;node_modules/**&quot;],
+  &quot;disallowSpacesInFunction&quot;: null
+}
+</code></pre>
+<h2>File structure</h2><p>All my new projects include the same directory setup and naming convention:</p>
+<pre><code>└── test
+    ├── fixtures
+    │   ├── ...scripts...
+    │   └── ...html, etc...
+    ├── foo.test.js
+    └── litmus.test.js
+</code></pre><p>The <code>fixture</code> directory is for anything the tests needs to setup with. All actual test scripts are suffixed with <code>.test.js</code>.</p>
+<p>Where I&#39;ve included both server-side and client-side tests, I&#39;ll name the client-side tests as <code>.browser.js</code> so that the test command is able to isolate browser specific tests.</p>
+<h2>Running</h2><p>Since this is node land, I use npm only for my tests. So I have the following in my <code>package.json</code>:</p>
+<pre><code class="language-json">{
+  &quot;scripts&quot;: {
+    &quot;style&quot;: &quot;jscs -v lib/*.js&quot;,
+    &quot;test&quot;: &quot;npm run style &amp;&amp; node test/*.test.js | tap-spec&quot;
+  }
+}
+</code></pre>
+<p>This <code>test</code> command is looking for all my test scripts, using tape to generate a TAP formatted output, and piping to tap-spec (@2.x, not @latest).</p>
+<h2>Blank slates</h2><p>My big gripe with all the test runners is that each test script that&#39;s included is run in the same process and same shared memory as all the other test scripts.</p>
+<p>That&#39;s to say, if something in <code>foo.test.js</code> modifies my library (that I&#39;m testing), then it&#39;ll remained tainted when <code>bar.test.js</code> runs. Of course some cases can be handled by a proper <code>beforeEach</code> (or <code>before</code>) call, but in some cases, you need a fresh start.</p>
+<p>This is what I do:</p>
+<pre><code class="language-bash">for FILE in test/*.test.js;
+  do echo $FILE;
+  node $FILE | tap-spec;
+  if [ $? -ne 0 ];
+    then exit 1;
+  fi;
+done
+</code></pre>
+<p>This is all compressed down to a single line, and put inside the <code>test</code> command in my <code>package.json</code>. This way, when the test exits, and it&#39;s successful, it&#39;ll move on to the next script, completely ditching the process. Equally, if it fails, the <code>if [ $? ]</code> test will throw the exit to Travis.</p>
+<p>This feels utterly clunky, but I can&#39;t see any other way to do a total reset. It might be because I have to write insane <a href="https://travis-ci.org/remy/nodemon/jobs/71828422">tests for things like nodemon</a>. The main downside of this (that I can see) is that your total count is not totalled up at the end and <strong>importantly</strong> if you have test coverage, it won&#39;t work - since the test coverage is running once for each file.</p>
+<p><strong>Be warned:</strong> do not use this if you don&#39;t have to!</p>
+<h2>Watching</h2><p>Being that I&#39;m not a big fan of larger tool chains (though there&#39;s nothing wrong with them, it&#39;s just my preference), I&#39;ve been known to include <a href="https://github.com/remy/nodemon">nodemon</a> in a watch command to monitor for changes to re-run tests.</p>
+<p>That would look like this:</p>
+<pre><code class="language-json">{
+  &quot;scripts&quot;: {
+    &quot;style&quot;: &quot;jscs -v lib/*.js&quot;,
+    &quot;test&quot;: &quot;npm run style &amp;&amp; node test/*.test.js | tap-spec&quot;,
+    &quot;watch&quot;: &quot;nodemon -q -x &#39;npm test&#39;&quot;
+  }
+}
+</code></pre>
+<p>Then on the cli I run:</p>
+<pre><code class="language-bash">npm run watch
+</code></pre>
+<p>nodemon is running in &quot;quiet&quot; mode (i.e. suppress any nodemon specific output), and make the thing it executes be <code>npm test</code>.</p>
+<h2>Code coverage</h2><p>I mentioned earlier that I switched to tap for my test runner. The main reason for this was that it comes with code coverage integration. I can add <code>--cov --coverage-report=lcov</code> to my test command, and I get <a href="https://www.npmjs.com/package/istanbul">istanbul</a> coverage reports that I click through and browse.</p>
+<p>Remember though, <strong>code coverage != test coverage</strong>, it does give me some very useful insights into my code, particularly to show me either blind spots in my code (that I&#39;ve not tested at all), or areas of code that are not used at all and should be removed.</p>
+<p>Though there is always the temptation to get the few extra tests that take that code coverage up to 100%, just by hitting a specific line of code in the tests.</p>
+<p>I&#39;m also using <a href="https://coveralls.io/">Coveralls</a> (for a private repo) and tap integrates nicely with Coveralls from Travis. The trick here (if you want to avoid putting your Coveralls token in your repo) is to put the following two values in the environment variables settings in Travis: <code>COVERALLS_REPO_TOKEN=x</code>, <code>COVERALLS_SERVICE_NAME=travis-ci</code>.</p>
+<h2>Couple of tips</h2><p><strong>Avoid using <code>assert.ok</code> if possible.</strong> My tests usually relied on this, but when they failed, there&#39;s no information on <em>why</em> they failed. Use <code>assert.equal</code> instead. If it doesn&#39;t match, then you&#39;ll get the delta in the failure - which hopefully leads to <em>why</em> it failed.</p>
+<p><strong>If it makes sense: make tests reusable.</strong> This is very dependant on the problem you&#39;re solving, but I was able to do this on a few projects, including my <a href="https://github.com/remy/inliner/">inliner</a> repo. The main tests are: does the source file inline down to &quot;some target content&quot;. So the tests run through a fixture directory looking for specific file extensions, allowing users to <a href="https://github.com/remy/inliner/blob/master/CONTRIBUTING.md">contribute tests very easily</a>. I also reuse tests in my autocache adapters, feel free to review the <a href="https://github.com/remy/autocache-localstorage/blob/master/test/localstorage.test.js">localStorage version</a> that uses autocache&#39;s <a href="https://github.com/remy/autocache/blob/master/test/core.js">core.js</a> tests.</p>
+<h2>All together now</h2><p>What does that all look like? Rather than bloating this post even more, I&#39;ve added all the files (with a litmus test) and configuration into a (work in progress) <a href="https://github.com/remy/templates/tree/master/node">git repo</a>.</p>
+<hr>
+<p>I&#39;ve installed these pieces locally, <em>not</em> globally, for dev only use by running:</p>
+<pre><code class="language-bash">npm install --save-dev tape tap-spec@2 jscs
+</code></pre>
+<p>I&#39;ll also make sure that my tests and fixtures are excluded from my npm packages too, with <code>.npmignore</code> containing (at least):</p>
+<pre><code>/test
+</code></pre><p>I&#39;d like to generate my project folder structure, but as yet, it&#39;s a manual job (I&#39;ve been wanting to check out <a href="http://yeoman.io/">Yeoman</a> for generating, but it still feels like a lot of work for something that&#39;s reasonably straight forward).</p>
+<h2>A closing thought</h2><p>It&#39;s worth saying that, <em>for me</em> it&#39;s taken years and years to get to the point where tests are a normal part of my workflow. The most important part of that is making it easy. <strong>It needs to be easy to test.</strong> If there&#39;s lot of barriers to testing, then it&#39;ll fall behind, and once it&#39;s in a state of disrepair, all testing is lost.</p>
+<p>This process works for me (and I don&#39;t need <em>all</em> of this to make the process work). Find what works for you to make it easy.</p>
+<p>Finally, kudos to <a href="https://twitter.com/brianleroux">Brian LeRoux</a>, on my behest, he kept returning to (my conference) <a href="http://ffconf.org">ffconf</a> to run workshops on testing, and it&#39;s his work that finally got me to shake my bad habits of no-test-coding.</p>
+<p>Related posts:</p>
+<ul>
+<li><a href="/using-travis-with-private-npm-deps">Using travis with private npm deps</a><!-- - [My client side testing wish](/my-client-side-testing-wish) --></li>
+</ul>
+]]></content:encoded></item><item><title>Content warnings</title><guid isPermaLink="false">content-warnings</guid><link>https://remysharp.com/2015/11/27/content-warnings</link><pubDate>Fri, 27 Nov 2015 14:33:38 +0000</pubDate><description><![CDATA[I&#39;ve recently been giving a talk that starts with a content warning. I wasn&#39;t quite sure whether it warranted it, as it&#39;s only a brief mention of the potential trigger, but it felt like that was enough to justify the warning.
 Content warnings apply to a wide range of traumas, and I wanted to ask that if you, my dear reader, are giving talks at a conference, please consider whether your content requires a content warning.]]></description><content:encoded><![CDATA[<p>I&#39;ve recently been giving a talk that starts with a content warning. I wasn&#39;t quite sure whether it warranted it, as it&#39;s only a brief mention of the potential trigger, but it felt like that was <em>enough</em> to justify the warning.</p>
 <p>Content warnings apply to a wide range of traumas, and I wanted to ask that if you, my dear reader, are giving talks at a conference, please consider whether your content requires a content warning.</p>
 <!--more-->
@@ -892,64 +1049,4 @@ Until this afternoon. I made one change, and boom: 20%. Stable. Also, I&#39;ll b
 <p>It&#39;s really easy, right click on the object in the console, and &quot;Store as Global Variable&quot; (usually stored to <code>temp1</code>). Now it&#39;s easy to <code>copy(temp1)</code> and it&#39;ll automatically be converted into a JSON for me:</p>
 <p><img src="/images/devtools-capture-for-copy.png" alt="devtools copy a global"></p>
 <p>What&#39;s a trick, neat or otherwise, that you use on a regular basis?</p>
-]]></content:encoded></item><item><title>Tiny two way data binding</title><guid isPermaLink="false">bind</guid><link>https://remysharp.com/2015/06/02/bind</link><pubDate>Tue, 02 Jun 2015 11:42:26 +0000</pubDate><description><![CDATA[Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).
-So, as any good re-inventer of wheels, I wrote my own two-way data binding library, partly to experiment, partly to solve existing needs in my own projects - weighing in at &lt; 2K compressed.
-I present (cleverly named): bind.js]]></description><content:encoded><![CDATA[<p>Data binding to the DOM is just one of those things that&#39;s damn handy when you&#39;ve got it and super laborious when you don&#39;t. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).</p>
-<p>So, as any good re-inventer of wheels, I wrote my own two-way data binding library, partly to experiment, partly to solve existing needs in my own projects - weighing in at &lt; 2K compressed.</p>
-<p>I present (cleverly named): <strong><a href="https://github.com/remy/bind.js">bind.js</a></strong></p>
-<!--more-->
-<h2>Demo time</h2><p>Below is an <a href="http://rem.jsbin.com/nepuda/edit?console,output">interactive demo</a> of bind in action. As you change the state of the form, you&#39;ll see the object update on the right (a <code>JSON.stringify</code> output).</p>
-<p><a class="jsbin-embed" href="https://rem.jsbin.com/nepuda/embed?console,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.js"></script></p>
-<h2>Example usage</h2><p>The concept behind the API is fairly simple: take an object bind it to functions and/selectors given a particular mapping.</p>
-<p><a href="https://jsbin.com/remutu/edit?js,console,output">For example</a>, to bind a score and player name to the DOM:</p>
-<pre><code class="language-js">var user = Bind({
-  name: &#39;[new user]&#39;,
-  game: { score: 0 }
-}, {
-  &#39;game.score&#39;: &#39;span.score&#39;,
-  name: &#39;input[name=&quot;username&quot;]&#39;
-})
-
-// in the game
-user.game.score += 25;
-</code></pre>
-<p>...and the HTML updates take care of themselves. Then the user enters their name in the input field, it&#39;ll update the <code>user</code> object.</p>
-<p>The mapping value is flexible too, and can be:</p>
-<ul>
-<li>A string representing a selector</li>
-<li>A function which receives the new value</li>
-<li>An object that supports any of the following properties: <code>dom</code>, <code>callback</code> and <code>transform</code></li>
-</ul>
-<p>With an object as the value of the mapping, it allows you to do a transform on your data before it lands in the DOM. This is obviously useful for things like updating <a href="https://jsbin.com/nemubo/1/edit?js,output">list elements</a>:</p>
-<pre><code class="language-js">var data = Bind({
-  cats: [&#39;nap&#39;, &#39;sam&#39;, &#39;prince&#39;]
-}, {
-  cats: {
-    dom: &#39;#cats&#39;,
-    transform: function (value) {
-      return &#39;&lt;li&gt;I had a cat called &lt;em&gt;&#39; + this.safe(value) + &#39;&lt;/em&gt;&lt;/li&gt;&#39;;
-    }
-  },
-  &#39;cats.0&#39;: {
-    dom: &#39;#first-cat&#39;,
-    transform: function (value) {
-      return &#39;My first cat was &#39; + this.safe(value);
-    }
-  }
-});
-</code></pre>
-<p>Inside the <code>transform</code> function also has a helper, <code>this.safe()</code> which will escape your content safe for HTML.</p>
-<h2>Object.observe?</h2><p>Nope. I&#39;m not using it, which is also why there&#39;s some limitations (property deletion being the main/only one).</p>
-<p>Why not? Mostly for a larger platform of support. This library supports IE9 upwards (and thus all other browsers) and includes feature detection.</p>
-<p>I also tried an <code>Object.observe</code> polyfill early on, but didn&#39;t have much success (though I don&#39;t recall what the issues were). I also fancies the code challenge :)</p>
-<h2>HTML decorators?</h2><p>Nope (again). I was recently debugging some Knockout code, and found myself struggling as I realised that the actual binding was happening in the HTML, and the manipulation was happening in the separate JavaScript file.</p>
-<p>So no, there&#39;s no <code>data-*</code> support, intentionally. All the code lives in one place: in the JavaScript.</p>
-<p>I personally like that my data binding is all in one place. If you&#39;re not so keen, there&#39;s always Angular, Knockout and the like.</p>
-<h2>Nice to haves</h2><p>I&#39;ve started opening a few <a href="https://github.com/remy/bind/issues">issues</a> on things I&#39;d like, but they currently include:</p>
-<ul>
-<li>Root object mapping support (i.e. to be able to hook a callback on <em>anything</em> changing)</li>
-<li>Glob support, i.e. <code>me.*.name</code> will fire callbacks matching any path starting with <code>me</code> and ending with <code>name</code></li>
-<li>Test to test every individual form element (currently it&#39;s a bit of a mishmash)</li>
-</ul>
-<p>Feel free to <a href="https://github.com/remy/bind/issues">raise an issue</a> or feature request or let me know if you&#39;d use this even!</p>
 ]]></content:encoded></item></channel></rss>
