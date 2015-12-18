@@ -208,14 +208,5 @@
     "tags": [
       "personal"
     ]
-  },
-  "promise-waterfall": {
-    "title": "Promise waterfall",
-    "date": "2015-12-18 12:07:52",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "code"
-    ]
   }
 }
