@@ -44,7 +44,7 @@ Promise.all(promises).then(console.log);
 
 promise.then(console.log);
 </code></pre>
-<p>Remember that the <code>Array.form({ length: 10 })</code> is simply generating an array from 0 to 9 for this demo purpose. Also note that <code>run()</code> is <em>inside</em> the reduce function, and the end result is no longer an array of promises, but in fact a single promise (and so I drop the use of <code>Promise.all</code>).</p>
+<p>Remember that the <code>Array.from({ length: 10 })</code> is simply generating an array from 0 to 9 for this demo purpose. Also note that <code>run()</code> is <em>inside</em> the reduce function, and the end result is no longer an array of promises, but in fact a single promise (and so I drop the use of <code>Promise.all</code>).</p>
 <p>Now you can see from the JS Bin below that the promises run in sequence (I&#39;ve added a console):</p>
 <p><a class="jsbin-embed" href="https://jsbin.com/nitoti/6/embed?js,console">waterfall on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.5"></script></p>
 <h2>Worth noting</h2><p>Obviously the waterfall of promises is going to take longer to complete than a parallel run of the promises, but as I mentioned at the start of this post, I needed to solve a race condition, and this was the solution I needed.</p><p class="follow">Posted 18-Dec 2015 under code. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
