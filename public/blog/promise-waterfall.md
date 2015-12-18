@@ -58,7 +58,7 @@ var promise = Array.from({ length: 10 }).reduce(function (acc) {
 promise.then(console.log);
 ```
 
-Remember that the `Array.form({ length: 10 })` is simply generating an array from 0 to 9 for this demo purpose. Also note that `run()` is *inside* the reduce function, and the end result is no longer an array of promises, but in fact a single promise (and so I drop the use of `Promise.all`).
+Remember that the `Array.from({ length: 10 })` is simply generating an array from 0 to 9 for this demo purpose. Also note that `run()` is *inside* the reduce function, and the end result is no longer an array of promises, but in fact a single promise (and so I drop the use of `Promise.all`).
 
 Now you can see from the JS Bin below that the promises run in sequence (I've added a console):
 
