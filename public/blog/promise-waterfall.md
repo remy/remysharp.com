@@ -39,7 +39,7 @@ Promise.all(promises).then(console.log);
 
 Note that the console logs in the bin below are *out of order*, but the final result is correct (which is what we'd expect with `Promise.all`):
 
-<a class="jsbin-embed" href="http://jsbin.com/hivate/1/embed?js,console">parallel on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.5"></script>
+<a class="jsbin-embed" href="https://jsbin.com/hivate/1/embed?js,console">parallel on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.5"></script>
 
 ## Now as a waterfall
 
@@ -62,7 +62,7 @@ Remember that the `Array.form({ length: 10 })` is simply generating an array fro
 
 Now you can see from the JS Bin below that the promises run in sequence (I've added a console):
 
-<a class="jsbin-embed" href="http://jsbin.com/nitoti/6/embed?js,console">waterfall on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.35.5"></script>
+<a class="jsbin-embed" href="https://jsbin.com/nitoti/6/embed?js,console">waterfall on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.5"></script>
 
 ## Worth noting
 
