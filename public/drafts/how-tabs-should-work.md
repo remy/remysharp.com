@@ -130,7 +130,7 @@ Though, from our criteria at the start of this post, we've already solved item (
 
 ### Using the URL to initialise correctly & protecting from breakage
 
-Instead of arbitrarily picking the first panel from our collection, the code should read the current `location.hash` and use that if it's available:
+Instead of arbitrarily picking the first panel from our collection, the code should read the current `location.hash` and use that if it's available.
 
 The problem is: what if the hash on the URL isn't actually for a tab?
 
