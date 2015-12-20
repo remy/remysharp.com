@@ -23,7 +23,7 @@ $('.tab:first').click();
 ## Requirements: what makes the perfect tab?
 
 1. All content is navigable available without JavaScript (crawler compatible and lo-js compatible).
-- Aria roles.
+- ARIA roles.
 - The *tabs* are anchor links that are:
   - Clickable.
   - Have block layout.
@@ -50,7 +50,7 @@ These two basic things are, to me, the bear minimum that a tabbing system should
 
 The people who push their "native" apps on users can't have more reasons why the web sucks. If something as basic as a tab doesn't work, obviously there's more ammo to push a closed native app or platform on your users.
 
-If you're going to be a web developer, one of your responsibilities is to maintain established interactivity paradigms. This doesn't mean "don't innovate". But it *does* mean: stop fucking up my scrolling experience with your poorly executed scroll-jank effects.
+If you're going to be a web developer, one of your responsibilities is to maintain established interactivity paradigms. This doesn't mean "don't innovate". But it *does* mean: stop fucking up my scrolling experience with your poorly executed scroll effects. `</rant>` *:breath:*
 
 ## URI fragment, absolute URL or query string?
 
@@ -60,9 +60,9 @@ This decision really depends on the context of your tabbing system. Something li
 
 For our problem though, I want to solve the problem where the page doesn't do a full URL update, i.e. your regular run of the mill tabbing system.
 
-I used to be from the school of using the hash to show the right tab, but I'm recently changing my mind on this. The biggest reason is that multiple hashes doesn't work, and comma separated fragments doesn't make sense (since it doesn't actually link to anything).
+I used to be from the school of using the hash to show the right tab, but I've recently been exploring whether the query string can be used. The biggest reason is that multiple hashes doesn't work, and comma separated hash fragments doesn't make any sense to control multiple tabs (since it doesn't actually link to anything).
 
-With that in mind, if there's sub-content that has tabs, I'm leaning towards using a query string. Specifically, using the `id` attribute of the *tabs* with the value of the selected panel (which should match up the `id` of the panel).
+For this article, I'll keep focused on using a single tabbing system and a hash on the URL to control the tabs.
 
 ## Markup
 
@@ -221,7 +221,9 @@ var tabs = $('.tab').on('click', function () {
   // if the URL isn't going to change, then hashchange
   // event doesn't fire, so we trigger the update manually
   if (location.hash === this.hash) {
-    update();
+    // but this has to happen after the DOM update has
+    // completed, so we wrap it in a setTimeout 0
+    setTimeout(update, 0);
   }
 });
 
@@ -264,7 +266,7 @@ function show(id) {
   panels.hide().filter(id).show();
 }
 
-window.on('hashchange', update);
+$(window).on('hashchange', update);
 
 // initialise
 if (targets.indexOf(window.location.hash) !== -1) {
@@ -290,8 +292,10 @@ The tasks were simple:
 
 And that's it. Very small changes to get full sign off that the tabbing system is bullet proof and accessible.
 
-The final version is here: http://output.jsbin.com/lorovu/ (and non-jQuery version as promised: ...)
+The final version is here: http://output.jsbin.com/lorovu/ (and non-jQuery version as promised: http://jsbin.com/sehuxo/edit?js,output).
 
 ## In summary
 
-... TODO `¯\_(ツ)_/¯`
+There's a *lot* of tab implementations out there, but there's an equal amount that break the browsing paradigm and the simple link-ability of content. Clearly there's a special hell for those tab systems that don't even use links, but I think it's clear that even in something that's relatively simple, it's the small details that make or break the user experience.
+
+Obviously there's corners that I've not explored, like when there's more than one set of tabs on a page, and equally whether you should deliver the initial markup with the correct tab selected. I think the answer lies in using query strings in combination with hashes on the URL, but maybe that's for another year!
