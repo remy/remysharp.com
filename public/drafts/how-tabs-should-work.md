@@ -124,7 +124,7 @@ However, there's a number of problems we need to fix:
 1. The initialised tab is hard coded to the first panel, rather than what's on the URL.
 2. If there's no hash on the URL, all the panels are hidden (and thus breaks).
 3. If you scroll to the bottom of the example, you'll find a "top" link, clicking that will break our tabbing system.
-4. I've purposely made the page long, so that when you click on a tab, you'll see the page scrolls to the top of the tab, not a huge deal, but a bit annoying
+4. I've purposely made the page long, so that when you click on a tab, you'll see the page scrolls to the top of the tab, not a huge deal, but a bit annoying.
 
 Though, from our criteria at the start of this post, we've already solved item (4) and (5). Not a terrible start. Let's solve items 1 through 3 next.
 
@@ -183,11 +183,11 @@ The second breakage that we saw in the original demo is that clicking the "top" 
 
 So far we've got a tabbing system that:
 
-- Works without JavaScript
-- Supports right click and shift click (and doesn't select in these cases)
-- Loads the right panel if you start with a hash
-- Browser native navigation works
-- Keyboard support works
+- Works without JavaScript.
+- Supports right click and shift click (and doesn't select in these cases).
+- Loads the right panel if you start with a hash.
+- Browser native navigation works.
+- Keyboard support works.
 
 The only annoying problem we have now, is the page jumps when a tab is selected. That's because the browser is following the default behaviour of an internal link on the page. To solve this, things are going to get a little hairy, but it's all for a good cause.
 
