@@ -199,14 +199,5 @@
       "business",
       "web"
     ]
-  },
-  "my-2015": {
-    "title": "My 2015",
-    "date": "2015-11-22 13:02:13",
-    "complete": true,
-    "inprogress": true,
-    "tags": [
-      "personal"
-    ]
   }
 }
