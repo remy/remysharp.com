@@ -1,8 +1,10 @@
-# How tabs should work
+# How tabs should work (updated)
 
 Tabs in browsers (not *browser tabs*) are one of the oldest custom UI elements in a browser that I can think of. They've been done to death. But, sadly, the majority of times I come across them, the tabs have been badly, or rather *partially* implemented.
 
 So this post is my definition of how a tabbing system should work, and *one* approach of implementing that.
+
+<small>*This post was originally published on [24 Ways 2015](https://24ways.org/2015/how-tabs-should-work/), but I've updated the [accessibility section](#accessibility) with feedback and collaboration from [Léonie Watson](https://twitter.com/LeonieWatson).*</small>
 
 ## But...tabs are easy, right?
 
@@ -56,7 +58,7 @@ If you're going to be a web developer, one of your responsibilities is to mainta
 
 A URI fragment (aka the # hash bit) would be using mysite.com/config#content to show the *content* panel. A fully addressable URL would be mysite.com/config/content. Using a query string (by way of "filtering" the page): mysite.com/config?tab=content.
 
-This decision really depends on the context of your tabbing system. Something like Github's tabs to [view a pull request](https://github.com/remy/remysharp.com/pull/6) makes sense that the full URL changes.
+This decision really depends on the context of your tabbing system. For something like Github's tabs to [view a pull request](https://github.com/remy/remysharp.com/pull/6) makes sense that the full URL changes.
 
 For our problem though, I want to solve the problem where the page doesn't do a full URL update, i.e. your regular run of the mill tabbing system.
 
@@ -278,13 +280,13 @@ if (targets.indexOf(window.location.hash) !== -1) {
 
 This version, http://output.jsbin.com/xilula/ now has all the criteria I listed in my original criteria, *except* for the aria roles and accessibility. Getting this support is actually very cheap to add.
 
-### ARIA roles
+### Accessibility
 
 This article on [ARIA tabs](http://accessibility.athena-ict.com/aria/examples/tabpanel2.shtml) made it very easy to get the tabbing system working as I wanted.
 
 The tasks were simple:
 
-1. Add `aria-role` set to `tab` for the tabs, and `panel` for the panels.
+1. Add `aria-role` set to `tab` for the tabs, and `tabpanel` for the panels.
 2. Set `aria-controls` on the tabs to point to their related panel (by id).
 3. I use JavaScript to add `tabindex=0` to all the tab elements.
 4. When I add the `selected` class to the tab, I also set `aria-selected` to `true` and inversely, when I remove the `selected` class, I set `aria-selected` to `false`.
@@ -294,7 +296,7 @@ And that's it. Very small changes to get full sign off that the tabbing system i
 
 The final version is here: http://output.jsbin.com/lorovu/ (and non-jQuery version as promised: http://jsbin.com/sehuxo/edit?js,output).
 
-## In summary
+## In conclusion
 
 There's a *lot* of tab implementations out there, but there's an equal amount that break the browsing paradigm and the simple link-ability of content. Clearly there's a special hell for those tab systems that don't even use links, but I think it's clear that even in something that's relatively simple, it's the small details that make or break the user experience.
 
