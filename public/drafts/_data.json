@@ -199,5 +199,14 @@
       "business",
       "web"
     ]
+  },
+  "terms-of-work": {
+    "title": "Terms of work",
+    "date": "2016-01-07 11:17:08",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "business"
+    ]
   }
 }
