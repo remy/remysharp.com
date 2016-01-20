@@ -1,6 +1,6 @@
 {
   "name": "remysharp.com",
-  "version": "2.34.6",
+  "version": "2.34.7",
   "description": "Remy Sharp's b:log",
   "main": "server.js",
   "engines": {
