@@ -2,7 +2,7 @@
 
 > Easy is boring. That's why I love the web and browsers […] — [me](https://twitter.com/rem/status/563268265980751872)
 
-I love that my code can run anywhere for anyone. Indeed that's the challenge. The web is a hugely diverse environment anyone view anything anyway they want.
+I love that my code can run anywhere for anyone. Indeed that's the challenge. The web is a hugely diverse environment anyone can view anything anyway they want.
 
 If the viewer is using the latest technology beefy desktop computer that's great. Equally they could view the website from a work computer, something old and locked in using a browser called IE8.
 
@@ -34,7 +34,7 @@ I was reading [Jake Archibald's post](https://jakearchibald.com/2015/if-we-stand
 
 Back in the early days of photography, technology was, *compared to today*, rather simple. At a push, I can make a pinhole camera in a few hours (maybe...).
 
-A compact digital camera on the other hand is a whole different kettle of fish. I don't know event if today a single individual is capable of building a fully working camera. But this is the cost and benefit of technical advancement.
+A compact digital camera on the other hand is a whole different kettle of fish. I don't know even if today a single individual is capable of building a fully working camera. But this is the cost and benefit of technical advancement.
 
 I mean, heck, look at it, and that's even *after* you've got all the parts made!
 
@@ -64,6 +64,4 @@ The web is a truly amazing place for developers today. There's an amazing abunda
 
 If you sit back for a moment, and think about just how many lives you can touch simply by publishing something, anything, to the web, it's utterly mind blowing. That's why I love working with the web.
 
-What about you?
-
-<small>I will also add that the web can, and often is, a horrible place for some people. I acknowledge this entirely. My post aims to share how I feel about building for the web.</small>
+*What about you?*
