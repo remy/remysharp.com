@@ -40,6 +40,7 @@ ga('send', 'pageview');</script></head><body id="drafts-fixing-fixtures-page"><n
     ├── lib
     └── test
 </code></pre>
+<p>You can see my live example of the <a href="https://github.com/Snyk/snyk-resolve-deps-fixtures">fixture package</a> and <a href="https://github.com/Snyk/resolve-deps/blob/master/test/deps.test.js#L4-L7">how it&#39;s being used</a> in my Snyk work.</p>
 <h2>Important implementation details</h2><ul>
 <li>The big win here is that so long as you pin the fixture package version in your project, your <strong>fixtures are now immutable</strong>.</li>
 <li>If you&#39;re including mocked packages you need to list the top level package name (<code>uglify-package</code> in my case) in the <code>bundleDependencies</code> array in the <code>package.json</code>.</li>
