@@ -46,6 +46,8 @@ node_modules
     └── test
 ```
 
+You can see my live example of the [fixture package](https://github.com/Snyk/snyk-resolve-deps-fixtures) and [how it's being used](https://github.com/Snyk/resolve-deps/blob/master/test/deps.test.js#L4-L7) in my Snyk work.
+
 ## Important implementation details
 
 - The big win here is that so long as you pin the fixture package version in your project, your **fixtures are now immutable**.
