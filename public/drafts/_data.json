@@ -203,8 +203,8 @@
   "fixing-fixtures": {
     "title": "Fixing fixtures",
     "date": "2016-01-23 13:48:08",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "code"
     ]
