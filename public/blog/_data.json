@@ -3520,5 +3520,13 @@
       "web"
     ],
     "published": true
+  },
+  "fixing-fixtures": {
+    "title": "Fixing fixtures",
+    "date": "2016-01-28 16:06:15",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }
