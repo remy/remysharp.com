@@ -1,4 +1,50 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Wed, 20 Jan 2016 9:46:24 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Why I love working with the web</title><guid isPermaLink="false">why-i-love-working-with-the-web</guid><link>https://remysharp.com/2016/01/20/why-i-love-working-with-the-web</link><pubDate>Wed, 20 Jan 2016 9:46:24 +0000</pubDate><description><![CDATA[Easy is boring. That&#39;s why I love the web and browsers […] — me
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Thu, 28 Jan 2016 16:06:15 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Fixing fixtures</title><guid isPermaLink="false">fixing-fixtures</guid><link>https://remysharp.com/2016/01/28/fixing-fixtures</link><pubDate>Thu, 28 Jan 2016 16:06:15 +0000</pubDate><description><![CDATA[For context, the following technical post is rather bespoke to my recent work but I believe it helps to manage potentially heavy fixtures in tests.
+A fixture is used to consistently test software. I used them in nearly every project I write and test. Lately, with my work on Snyk requires that the code is tested against a number of npm packages. This means entire swaths of node_modules end up in our fixtures directory, which would then lead to pull requests that look like this (a recent real PR in our code):]]></description><content:encoded><![CDATA[<p>For context, the following technical post is rather bespoke to my recent work but I believe it helps to manage potentially heavy fixtures in tests.</p>
+<p>A fixture is used to consistently test software. I used them in nearly every project I write and test. Lately, with my work on <a href="https://snyk.io">Snyk</a> requires that the code is tested against a number of npm packages. This means entire swaths of <code>node_modules</code> end up in our fixtures directory, which would then lead to pull requests that look like this (a recent real PR in our code):</p>
+<p><img src="/images/fixtures.png" alt="Example commit with 3,700 files"></p>
+<!--more-->
+<h2>Using npm for fixtures</h2><p>My new method now puts these npm packages inside of totally separate npm package. I&#39;ve only used this once, but the name of the fixture package will the same as my main project, and suffixed with <code>-fixtures</code>.</p>
+<p>This can be tracked in something like GitHub, but it doesn&#39;t require pull requests or code reviews upon update.</p>
+<p>The fixtures package can really include anything I like, but specifically I&#39;m using it to include dependencies that will become the individual npm packages I&#39;m using as fixtures. This method also allows me to create <em>mock</em> packages and include them in the <code>node_modules</code> directory of my fixture page, something like this:</p>
+<pre><code class="language-bash">node_modules
+├── @remy
+│   └── vuln-test
+│       └── node_modules
+│           └── semver
+│               ├── bin
+│               └── test
+├── debug
+│   └── node_modules
+│       └── ms
+├── semver-rs-demo
+│   └── node_modules
+│       └── semver
+│           ├── bin
+│           └── test
+├── uglify-package ⬅⬅⬅ this is the mocked package
+│   └── node_modules
+│       ├── ug-deep
+│       │   └── node_modules
+│       ├── ug-deep-alt
+│       │   └── node_modules
+│       │       └── ug-no-deps
+│       └── uglify-js
+│           └── &lt;snip&gt;
+└── undefsafe
+    ├── lib
+    └── test
+</code></pre>
+<p>You can see my live example of the <a href="https://github.com/Snyk/snyk-resolve-deps-fixtures">fixture package</a> and <a href="https://github.com/Snyk/resolve-deps/blob/master/test/deps.test.js#L4-L7">how it&#39;s being used</a> in my Snyk work.</p>
+<h2>Important implementation details</h2><ul>
+<li>The big win here is that so long as you pin the fixture package version in your project, your <strong>fixtures are now immutable</strong>.</li>
+<li>If you&#39;re including mocked packages you need to list the top level package name (<code>uglify-package</code> in my case) in the <code>bundleDependencies</code> array in the <code>package.json</code>.</li>
+<li>If you want the package directory structure to remain intact (maybe because you need an npm@3 flat directory structure for instance), include the name of the package in the <code>bundleDependencies</code>.</li>
+<li>You can&#39;t include a directory called <code>node_modules</code> in your package anywhere (outside of the project root directory) as it&#39;s automatically stripped from <code>npm publish</code>.</li>
+<li>Do not expect <code>devDependencies</code> to be installed, as this isn&#39;t the normal install process when including a project dependency.</li>
+</ul>
+<h2>Simple</h2><p>So that&#39;s it. Put the dependencies in a separate package. Make sure you pin the version of the fixture in your code (so it&#39;s immutable) and if you use a CI system that benefits from caching (like <a href="https://travis-ci.org">Travis</a> does), then the build benefits from the cached fixture.</p>
+<p>Most importantly though: no more unnecessarily large pull requests. Now they can focus on the code changes and tests alone.</p>
+]]></content:encoded></item><item><title>Why I love working with the web</title><guid isPermaLink="false">why-i-love-working-with-the-web</guid><link>https://remysharp.com/2016/01/20/why-i-love-working-with-the-web</link><pubDate>Wed, 20 Jan 2016 9:46:24 +0000</pubDate><description><![CDATA[Easy is boring. That&#39;s why I love the web and browsers […] — me
 
 I love that my code can run anywhere for anyone. Indeed that&#39;s the challenge. The web is a hugely diverse environment anyone can view anything anyway they want.
 If the viewer is using the latest technology beefy desktop computer that&#39;s great. Equally they could view the website from a work computer, something old and locked in using a browser called IE8.
@@ -1045,85 +1091,4 @@ Okay @Pebble, this is awesome. No charge, but still tells the time. 💙💚💛
 <p><img src="/images/pebble-time-packaging.jpg" alt="Pebble Time packaging"></p>
 <p>And when this happened, it totally made my day:</p>
 <p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Okay <a href="https://twitter.com/Pebble">@Pebble</a>, this is awesome. No charge, but still tells the time. 💙💚💛💜 <a href="http://t.co/fZdBfrFb88">pic.twitter.com/fZdBfrFb88</a></p>&mdash; Remy Sharp (@rem) <a href="https://twitter.com/rem/status/619767989605376000">July 11, 2015</a></blockquote></p>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>]]></content:encoded></item><item><title>Optimising a canvas animation</title><guid isPermaLink="false">optimising-a-canvas-animation</guid><link>https://remysharp.com/2015/07/13/optimising-a-canvas-animation</link><pubDate>Mon, 13 Jul 2015 7:50:37 +0000</pubDate><description><![CDATA[I&#39;ve been working on a small canvas animation for ffconf 2015 and realised two important optimisations that I&#39;ve missed out on the past.
-The net result: no more humming fan on my laptop.]]></description><content:encoded><![CDATA[<p>I&#39;ve been working on a small canvas animation for <a href="http://2015.ffconf.org">ffconf 2015</a> and realised two important optimisations that I&#39;ve missed out on the past.</p>
-<p>The net result: no more humming fan on my laptop.</p>
-<!--more-->
-<p>The result is this simple retro animation that will only last a few days in production, so I&#39;ve included a tweaked version here:</p>
-<p><a class="jsbin-embed" href="https://jsbin.com/zulaha/8/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.30.3"></script></p>
-<p>For the sake of brevity (and actually getting this post written under the usual <em>several hours</em>), I&#39;m just going to talk about what I changed.</p>
-<h2>Pinning FPS</h2><p>I knew that the &quot;right&quot; approach was to use <code>requestAnimationFrame</code> (rAF) for animation, but my problems historically is that the call rate of my update function was way, way too often. This can either cause my animation to appear to be <em>too</em> quick, or results in the CPU overheating.</p>
-<p>One nice advantage of rAF for animation is that it will stop firing when the tab is out of focus (i.e. if you switch to another tab). Whereas <code>setInterval</code> not only doesn&#39;t hit the timing you want, but it&#39;ll <em>keep</em> firing, burning up battery.</p>
-<p><strong>TIL</strong> <code>requestAnimationFrame</code> passes in a <a href="https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame#Parameters">high resolution timestamp</a> to the callback.</p>
-<p>Using the timestamp, we can get a delta of the last run, and if, and only if, the last frame was drawn X FPS ago, then we&#39;ll draw a new frame. For example:</p>
-<pre><code class="language-js">var lastFrameTime = 0;
-function draw(elapsedTime) {
-  // calculate the delta since the last frame
-  var delta = elapsedTime - (lastFrameTime || 0);
-
-  // queue up an rAF draw call
-  window.requestAnimationFrame(draw);
-
-  // if we *don&#39;t* already have a first frame, and the
-  // delta is less than 33ms (30fps in this case) then
-  // don&#39;t do anything and return
-  if (lastFrameTime &amp;&amp; delta &lt; 33) {
-    return;
-  }
-  // else we have a frame we want to draw at 30fps...
-
-  // capture the last frame draw time so we can work out
-  // a delta next time.
-  lastFrameTime = elapsedTime;
-
-  // now do the frame update and render work
-  // ...
-}
-</code></pre>
-<h2>Minimise your paints</h2><p>Originally my demo was drawing a number of squares that would scale towards the viewer giving the impression of movement. Initially innocuous:</p>
-<pre><code class="language-js">function draw() {
-  // ... calculate x, y, scale, etc
-  // makes the shape: |_|
-  ctx.beginPath();
-  ctx.moveTo(x, y);
-  ctx.lineTo(x, y + y2);
-  ctx.lineTo(x + x2, y + y2);
-  ctx.lineTo(x + x2, y);
-  ctx.stroke();
-  ctx.closePath();
-}
-
-// update is called on a new frame
-function update() {
-  // ... update state then draw:
-  for (i = 0; i &lt; boxes.length; i++) {
-    boxes[i].draw();
-  }
-}
-</code></pre>
-<p>This would be repeated for every &quot;box&quot; animating towards the viewer. Since I&#39;m just drawing lines, I could batch all these together all in one go and group the collective shapes under one path, then run a <em>single</em> stroke:</p>
-<pre><code class="language-js">function draw() {
-  // ... calculate x, y, scale, etc
-  // makes the shape: |_|
-  ctx.moveTo(x, y);
-  ctx.lineTo(x, y + y2);
-  ctx.lineTo(x + x2, y + y2);
-  ctx.lineTo(x + x2, y);
-}
-
-// update is called on a new frame
-function update() {
-  // ... update state then draw:
-  ctx.beginPath();
-  for (i = 0; i &lt; boxes.length; i++) {
-    boxes[i].draw();
-  }
-  ctx.stroke();
-  ctx.closePath();
-}
-</code></pre>
-<p>It&#39;s a fairly tiny optimisation, but the result is the same, but with less interaction with the canvas, and given we&#39;re aiming to be in and out quickly, it&#39;s not a bad thing.</p>
-<h2>Single rAF handler</h2><p>If you&#39;ve got more than one animation running, you&#39;ll need to set-up multiple callbacks to <code>requestAnimationFrame</code>, but having multiple rAF callbacks isn&#39;t ideal, and starts to get unwieldy when you&#39;re working with others who <em>also</em> want to queue up their animations.</p>
-<p>You really want everything to be handled in a <em>single</em> rAF handler.</p>
-<p>I&#39;ve written a small gist called <strong><a href="https://gist.github.com/remy/36f388d72c1ef161582f">raf.js</a></strong> that allows me to put all my rAF calls through a single handler (and added some niceties like the FPS pinning and a <code>running</code> boolean flag).</p>
-]]></content:encoded></item></channel></rss>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>]]></content:encoded></item></channel></rss>
