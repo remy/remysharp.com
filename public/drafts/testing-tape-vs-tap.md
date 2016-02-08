@@ -87,4 +87,6 @@ In addition, since I publish to Travis for my tests, it will post automatically 
 2. If you've got a private repo, use `COVERALLS_SERVICE_NAME=travis-pro` (you don't need this for public repos)
 3. If you're using more than one test in your test matrix (i.e. testing node 0.10, 4 and 5) include `COVERALLS_PARALLEL=true`
 
+**One important caveat:** when you include coverage in your tests, then the stacktraces will often only show the right filename and function name, but *not* the right line number. This is because the coverage has instrumented the code (though I'd [expect sourcemaps](https://github.com/tapjs/node-tap/issues/231) could solve this issue). If I have a failing stacktrace, I run the tap CLI command directly against the failing test file.
+
 And that's it. These are the reasons I'm using tap now over tape, and so far, it's all proving really valuable. My next post on testing, I'll explain how I debug and fix failing tests in (as close to) real-time as possible.
