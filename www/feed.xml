@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Thu, 28 Jan 2016 16:06:15 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Fixing fixtures</title><guid isPermaLink="false">fixing-fixtures</guid><link>https://remysharp.com/2016/01/28/fixing-fixtures</link><pubDate>Thu, 28 Jan 2016 16:06:15 +0000</pubDate><description><![CDATA[For context, the following technical post is rather bespoke to my recent work but I believe it helps to manage potentially heavy fixtures in tests.
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 08 Feb 2016 16:14:47 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Testing: tape vs. tap</title><guid isPermaLink="false">testing-tape-vs-tap</guid><link>https://remysharp.com/2016/02/08/testing-tape-vs-tap</link><pubDate>Mon, 08 Feb 2016 16:14:47 +0000</pubDate><description><![CDATA[I recently wrote about my node test strategy and in particular talked about using tape as my test runner and piping to tap-spec.
+I&#39;ve since started to migrate across to tap exclusively for both the runner and the reporter.]]></description><content:encoded><![CDATA[<p>I recently wrote about my <a href="https://remysharp.com/2015/12/14/my-node-test-strategy">node test strategy</a> and in particular talked about using <a href="https://npmjs.org/tape">tape</a> as my test runner and piping to <a href="https://www.npmjs.com/package/tap-spec">tap-spec</a>.</p>
+<p>I&#39;ve since started to migrate across to <a href="https://www.npmjs.com/package/tap">tap</a> exclusively for both the runner and the reporter.</p>
+<!--more-->
+<p>There&#39;s a couple of benefits to my workflow in using tap for the tests. Partly the reduced dependencies (so less tracking for changes and less knowledge required), but also the reporting is much more valuable to me, as I&#39;ll show you below.</p>
+<h2>Tracing errors</h2><p>Below is the output, with an error inside my tested code whilst using tape as my runner and executing through tap:</p>
+<p><img src="/images/tape-vs-tap-1.png" alt="tape error output"></p>
+<p>As you can see from the output above, there&#39;s an exception and it&#39;s failing the test, but there&#39;s very little information about <em>where</em> it failed. I can see it was inside a promise, but since a lot of my code is based around promises, including the test itself, there&#39;s essentially no stacktrace at all.</p>
+<p>To switch my code from using the tape library to tap, I only need to change the require line from:</p>
+<pre><code class="language-js">var test = require(&#39;tape&#39;);
+</code></pre>
+<p>...to...</p>
+<pre><code class="language-js">var test = require(&#39;tap&#39;).test;
+</code></pre>
+<p>The rest of my test code can remain the same, as the API for tape is generally a subset of tap&#39;s own assert API. The output now changes to give a better idea of the stacktrace:</p>
+<p><img src="/images/tape-vs-tap-2.png" alt="tap error output"></p>
+<p>But this still doesn&#39;t quite give me enough detail. I can see exactly where the error is being thrown, but this is in my test code. I need to hook in the stack into my test. The following code shows how the error was being displayed (from the screenshot above):</p>
+<pre><code class="language-js">auth().then(function (res) {
+  t.notEqual(res, -1, &#39;auth worked&#39;);
+}).catch(function (e) {
+  t.fail(e);
+});
+</code></pre>
+<p>Instead of using <code>t.fail</code> and passing the error directly in, I switch to using <code>t.threw</code> which works nicely with my promise code and will give me a full stacktrace. A side benefit is that I can also avoid using a <code>plan</code>so long as my promise has a final <code>.then(t.end)</code> to notify that the tests are complete:</p>
+<pre><code class="language-js">auth().then(function (res) {
+  t.notEqual(res, -1, &#39;auth worked&#39;);
+}).catch(t.threw).then(t.end);
+</code></pre>
+<p>Now the failing test has much more detail:</p>
+<p><img src="/images/tape-vs-tap-3.png" alt="tap error output"></p>
+<p>I have the full stacktrace from the origin of the error and I can fix the issue.</p>
+<h2>Visual deltas</h2><p>Finally it&#39;s also worth showing the other big benefit to me, specifically around failing <code>deepEqual</code> tests. In some of my integration tests, I&#39;ll create a fixture that&#39;s a JSON object the expected result.</p>
+<p>If there&#39;s an error and the result is different to my fixture, the tape result doesn&#39;t always help understand where the issue is. As you can see below, the object has been dumped out without any real clue as to <em>where</em> the issue is:</p>
+<p><img src="/images/tape-vs-tap-4.png" alt="tape diff output"></p>
+<p>However, using tap as my required test library, automatically gives me a visual cue on the delta between my fixture and my actual output:</p>
+<p><img src="/images/tape-vs-tap-5.png" alt="tap diff output"></p>
+<p>Immediately, I can see the timestamp is the problem and it&#39;s simple for me to then go and either fix the code or change the test.</p>
+<h2>Coverage reporting for free</h2><p>Finally, tap comes with coverage reporting built in. For local testing, I include the following in my <code>package.json</code> so I can browse the interactive coverage report:</p>
+<pre><code class="language-json">&quot;scripts&quot;: {
+  &quot;cover&quot;: &quot;tap test/*.test.js --cov --coverage-report=lcov&quot;,
+</code></pre>
+<p>This generates the <a href="https://gotwarlost.github.io/istanbul/">istanbul</a> coverage report that I open up immediately and see either where I&#39;m missing coverage, or where I can identify dead code.</p>
+<p>In addition, since I publish to Travis for my tests, it will post automatically to tools like <a href="https://coveralls.io/">coveralls.io</a> and I&#39;m able to share the coverage either with the public or with my team internally. Note there&#39;s a few specific environment values you need to get coverage working (specific to Coveralls):</p>
+<ol>
+<li>Add your coveralls token under <code>COVERALLS_REPO_TOKEN</code></li>
+<li>If you&#39;ve got a private repo, use <code>COVERALLS_SERVICE_NAME=travis-pro</code> (you don&#39;t need this for public repos)</li>
+<li>If you&#39;re using more than one test in your test matrix (i.e. testing node 0.10, 4 and 5) include <code>COVERALLS_PARALLEL=true</code></li>
+</ol>
+<p><strong>One important caveat:</strong> when you include coverage in your tests, then the stacktraces will often only show the right filename and function name, but <em>not</em> the right line number. This is because the coverage has instrumented the code (though I&#39;d <a href="https://github.com/tapjs/node-tap/issues/231">expect sourcemaps</a> could solve this issue). If I have a failing stacktrace, I run the tap CLI command directly against the failing test file.</p>
+<p>And that&#39;s it. These are the reasons I&#39;m using tap now over tape, and so far, it&#39;s all proving really valuable. My next post on testing, I&#39;ll explain how I debug and fix failing tests in (as close to) real-time as possible.</p>
+]]></content:encoded></item><item><title>Fixing fixtures</title><guid isPermaLink="false">fixing-fixtures</guid><link>https://remysharp.com/2016/01/28/fixing-fixtures</link><pubDate>Thu, 28 Jan 2016 16:06:15 +0000</pubDate><description><![CDATA[For context, the following technical post is rather bespoke to my recent work but I believe it helps to manage potentially heavy fixtures in tests.
 A fixture is used to consistently test software. I used them in nearly every project I write and test. Lately, with my work on Snyk requires that the code is tested against a number of npm packages. This means entire swaths of node_modules end up in our fixtures directory, which would then lead to pull requests that look like this (a recent real PR in our code):]]></description><content:encoded><![CDATA[<p>For context, the following technical post is rather bespoke to my recent work but I believe it helps to manage potentially heavy fixtures in tests.</p>
 <p>A fixture is used to consistently test software. I used them in nearly every project I write and test. Lately, with my work on <a href="https://snyk.io">Snyk</a> requires that the code is tested against a number of npm packages. This means entire swaths of <code>node_modules</code> end up in our fixtures directory, which would then lead to pull requests that look like this (a recent real PR in our code):</p>
 <p><img src="/images/fixtures.png" alt="Example commit with 3,700 files"></p>
@@ -1002,93 +1052,4 @@ In particular, I wanted the resting time to show in green and overtime to show a
 <p><img src="/images/pebble-status-layer.png" alt="BASALT status bar layer order"></p>
 <p>The fix is to simply ensure the <code>ActionBarLayer</code> is drawn <em>after</em> the <code>StatusBarLayer</code>.</p>
 <h2>Get it</h2><p>So if you have a Pebble Time, or Pebble OG, and you use the gym, you can get the <a href="http://apps.getpebble.com/en_US/application/53ff41ed8cdf37902b000050">free app here</a> - and don&#39;t forget to <em>heart</em> it!</p>
-]]></content:encoded></item><item><title>My Pebble</title><guid isPermaLink="false">my-pebble</guid><link>https://remysharp.com/2015/07/22/my-pebble</link><pubDate>Wed, 22 Jul 2015 15:37:23 +0000</pubDate><description><![CDATA[Back in April 2012 I joined the bandwagon and backed the hyped kickerstarter campaign for the very first Pebble.
-After waiting way way too long and abandoning my original choice for an orange watch I was forced to choose the black, only to get my hands on it earlier.
-I also hadn&#39;t worn a watch in well over 15 years. I&#39;m not 100% what prompted me to buy the watch. Perhaps the promise of an open source platform...?
-When it fin-nal-ly arrived, what I noticed immediately was that it was massive on my wrist. The strap was particularly large and never really felt snug.
-I figured it wouldn&#39;t even last 3 months on my wrist.
-
-What was the point of the Pebble?The Pebble gave me one important (to me) feature. Text messages (and calls) would vibrate on my wrist.
-I&#39;d found that when I was away from home, I&#39;d nearly always miss text messages from my wife. Even when my phone was on vibrate and loud, I&#39;d still miss them.
-A small vibration on my wrist would subtlety alert me to something I could decide to action or not. For me, this was a big deal and an important feature.
-
-For the first 3 months it was a novelty. I kept reading about cool apps that could do text responses - but alas I was using an iPhone and none of this functionality was available to my phone.
-The first turning point to my unimpressed state was spending 1 month trailing a move to Android. This experience totally opened up the Pebble&#39;s functionality to me. But that was just a trial, and I would move back to the (limiting) iPhone.
-So, why and how am I still wearing my Pebble today?
-My Pebble todaySome 2 years later I still wear my Pebble. Every day. It helps that I finally ditched my iPhone for an Android (a OnePlus One - and that&#39;s another blog post).
-The strap has broken, it needs charging once a week (insane if you compare to a regular watch) and the bottom right action button (1 out of 4 buttons) is playing up.
-One strange thing that kept happening, particularly strange if you consider how conservative the British are: random people would ask my &quot;how am I finding my watch?&quot;. A guy on a plane, someone in the gym changing rooms, it was all very strange (to me).
-But with all these issues, the clunkiness and being forced to converse with other human beings: why am I still wearing it??!
-I customised it. I made it mine. It&#39;s my watch, and there&#39;s no other watch like it.
-Open source: learning &amp; modifying other people&#39;s&nbsp;codeI&#39;d tried in the past to make my own watch face but failed pretty hard. But then my second attempt took an existing watch face and made my own modifications, including using a custom font.
-There is a memory leak in the original code that causes the watch face to crash every now and then, and I&#39;ll likely get around to debugging and fixing it...one day.
-A tiny note: since I forked the project, the license on Simply Clean has changed/been removed. It doesn&#39;t affect my code, but I thought it was fair to point out.
-I used CloudPebble for all of the development I&#39;ve done so far on the Pebble, and it&#39;s an absolutely superb resource.
-
-I know JavaScript!Although there&#39;s a couple of limitations in the JS apps, the simple fact is: I can create my ideas as JavaScript based Pebble apps in a matter of hours.
-I recently wrote a quick interface to a local bus time webapp that I wrote. Now from my wrist, in a few presses I have the bus times on my wrist.
-From a practical use, this is actually easier than using my phone because it takes a few seconds to do the geo-lookup and then request the content from the bus website, so when I&#39;m rushing around in the morning, I don&#39;t have to mess around with my phone.
-I also wrote a simple prototype with a Spark that I could control LEDs from my watch. Pointless, but cool (see this short video demo).
-There is, however, a small cost to pay with JavaScript apps:
-
-They only work whilst you have a connection from your watch to your phone (since the actual JS is executed on the phone)
-There&#39;s a laggy response time on the button presses, particularly (I&#39;ve noticed) going backwards through the app (or unloading)
-Firing up the JS based Pebble app can interfere with apps running on the phone - I noticed that it would stop my OnePlus One&#39;s camera from recording video as I launch the JS app (which is where there&#39;s no video yet)
-
-I (kinda) know C too...The actual reason the button is failing on my Pebble is because I use it so much: I wrote a C based app that I use in the gym to time my rest time between sets. I called it (cleverly...) Rest.
-
-Its simple. No animations, no nonsense. Three pre-set (configurable) times in seconds, and a timer. I&#39;m in the gym 4 times a week, and usually have around 20-25 sets. I use my app between every set. My app is exactly what I need for the task I perform multiple times a day.
-How it affects my daily routineAs with the Rest app being part of my daily routing, the alarms are also an important part of my routing. I have alarms set throughout the day to remind me exactly when I need to eat. Silly as it sounds, making the watch integral to my daily routine is what&#39;s given me a reason to keep it charged and keep it on.
-Being able to customise it, using my knowledge of code and knowing how to hack through other people&#39;s code has lulled me into loving this small piece of tech.
-Being able to express myself in my pebble is what&#39;s made me love it.
-I&#39;ve also realised that I always prefered the look of services like de.licio.us (circa 2005) over Magnolia, and in a way, the Pebble is when compared to the other smart watches out there.
-A lot of my friends have asked me &quot;when are you getting the iWatch&quot;, to which I say I&#39;m not interested (seriously, follow me on twitter if you need an idea of how sick I am of Apple) - and in fact, I also backed the new Pebble Time project and I can&#39;t wait to get my hands on that device and play some more.
-Next: TimeAkin with simplicity of the Pebble, my Pebble Time arrived in this simple cardboard, no-frills packaging, and I&#39;m keen to see how I can customise this watch and make it mine, again.
-
-And when this happened, it totally made my day:
-Okay @Pebble, this is awesome. No charge, but still tells the time. 💙💚💛💜 pic.twitter.com/fZdBfrFb88&mdash; Remy Sharp (@rem) July 11, 2015]]></description><content:encoded><![CDATA[<p>Back in April 2012 I joined the bandwagon and backed the hyped kickerstarter campaign for the very first Pebble.</p>
-<p>After waiting way way too long and abandoning my original choice for an orange watch I was forced to choose the black, only to get my hands on it earlier.</p>
-<p>I also hadn&#39;t worn a watch in well over 15 years. I&#39;m not 100% what prompted me to buy the watch. Perhaps the promise of an open source platform...?</p>
-<p>When it <em>fin-nal-ly</em> arrived, what I noticed immediately was that it was massive on my wrist. The strap was particularly large and never really felt snug.</p>
-<p><strong>I figured it wouldn&#39;t even last 3 months on my wrist.</strong></p>
-<hr>
-<h2>What was the point of the Pebble?</h2><p>The Pebble gave me one important (to me) feature. Text messages (and calls) would vibrate on my wrist.</p>
-<p>I&#39;d found that when I was away from home, I&#39;d nearly always miss text messages from my wife. Even when my phone was on vibrate and loud, I&#39;d still miss them.</p>
-<p>A small vibration on my wrist would <em>subtlety</em> alert me to something I could decide to action or not. For me, this was a big deal and an important feature.</p>
-<hr>
-<p>For the first 3 months it was a novelty. I kept reading about cool apps that could do text responses - but alas I was using an iPhone and none of this functionality was available to my phone.</p>
-<p>The first turning point to my unimpressed state was spending 1 month trailing a move to Android. This experience totally opened up the Pebble&#39;s functionality to me. But that was <em>just</em> a trial, and I would move back to the (limiting) iPhone.</p>
-<p>So, why and how am I still wearing my Pebble today?</p>
-<h2>My Pebble today</h2><p>Some 2 years later I still wear my Pebble. Every day. It helps that I finally ditched my iPhone for an Android (a OnePlus One - and that&#39;s another blog post).</p>
-<p>The strap has broken, it needs charging once a week (insane if you compare to a regular watch) and the bottom right action button (1 out of 4 buttons) is playing up.</p>
-<p>One strange thing that kept happening, particularly strange if you consider how conservative the British are: random people would ask my &quot;how am I finding my watch?&quot;. A guy on a plane, someone in the gym changing rooms, it was all very strange (to me).</p>
-<p>But with all these issues, the clunkiness and being forced to converse with other human beings: <em>why</em> am I still wearing it??!</p>
-<p>I customised it. I made it mine. It&#39;s <em>my</em> watch, and there&#39;s no other watch like it.</p>
-<h2>Open source: learning &amp; modifying other people&#39;s&nbsp;code</h2><p>I&#39;d tried in the past to make my own watch face but failed pretty hard. But then my second attempt took an existing <a href="https://github.com/edwinfinch/simplyclean">watch face</a> and made <a href="https://github.com/remy/simplyclean/">my own</a> modifications, including using a custom font.</p>
-<p>There <em>is</em> a memory leak in the original code that causes the watch face to crash every now and then, and I&#39;ll likely get around to debugging and fixing it...one day.</p>
-<p><small>A tiny note: since I forked the project, the license on Simply Clean has changed/been removed. It doesn&#39;t affect my code, but I thought it was fair to point out.</small></p>
-<p>I used <a href="https://cloudpebble.net">CloudPebble</a> for all of the development I&#39;ve done so far on the Pebble, and it&#39;s an absolutely superb resource.</p>
-<p><img src="/images/pebble-og.jpg" alt="My OG Pebble"></p>
-<h2>I know JavaScript!</h2><p>Although there&#39;s a couple of limitations in the JS apps, the simple fact is: I can create my ideas as JavaScript based Pebble apps in a matter of hours.</p>
-<p>I recently wrote a <a href="https://github.com/remy/pebble-brighton-buses">quick interface</a> to a <a href="http://buses.leftlogic.com">local bus time webapp</a> that I wrote. Now from my wrist, in a few presses I have the bus times on my wrist.</p>
-<p>From a practical use, this is actually easier than using my phone because it takes a few seconds to do the geo-lookup and then request the content from the bus website, so when I&#39;m rushing around in the morning, I don&#39;t have to mess around with my phone.</p>
-<p>I also wrote a simple prototype with a Spark that I could control LEDs from my watch. Pointless, but cool (<a href="https://instagram.com/p/sDFL0aqavo/">see this short video demo</a>).</p>
-<p>There is, however, a small cost to pay with JavaScript apps:</p>
-<ul>
-<li>They <em>only</em> work whilst you have a connection from your watch to your phone (since the actual JS is executed on the phone)</li>
-<li>There&#39;s a laggy response time on the button presses, particularly (I&#39;ve noticed) going backwards through the app (or unloading)</li>
-<li>Firing up the JS based Pebble app can interfere with apps running on the phone - I noticed that it would stop my OnePlus One&#39;s camera from recording video as I launch the JS app (which is where there&#39;s no video yet)</li>
-</ul>
-<h3>I (kinda) know C too...</h3><p>The <em>actual reason</em> the button is failing on my Pebble is because I use it so much: I wrote a C based app that I use in the gym to time my rest time between sets. I called it (cleverly...) <a href="https://apps.getpebble.com/en_US/application/53ff41ed8cdf37902b000050">Rest</a>.</p>
-<p><img src="/images/pebble-rest.jpg" alt="Rest app"></p>
-<p>Its simple. No animations, no nonsense. Three pre-set (configurable) times in seconds, and a timer. I&#39;m in the gym 4 times a week, and usually have around 20-25 sets. I use my app between <em>every</em> set. My app is <strong>exactly</strong> what I need for the task I perform multiple times a day.</p>
-<h2>How it affects my daily routine</h2><p>As with the Rest app being part of my daily routing, the alarms are also an important part of my routing. I have alarms set throughout the day to remind me exactly when I need to eat. Silly as it sounds, making the watch integral to my daily routine is what&#39;s given me a reason to keep it charged and keep it on.</p>
-<p>Being able to customise it, using my knowledge of code and knowing how to hack through other people&#39;s code has lulled me into loving this small piece of tech.</p>
-<p><strong>Being able to express myself in my pebble is what&#39;s made me love it.</strong></p>
-<p>I&#39;ve also realised that I always prefered the look of services like de.licio.us (circa 2005) over Magnolia, and in a way, the Pebble is when compared to the other smart watches out there.</p>
-<p>A <em>lot</em> of my friends have asked me &quot;when are you getting the iWatch&quot;, to which I say I&#39;m not interested (<em>seriously</em>, <a href="https://twitter.com/rem">follow me on twitter</a> if you need an idea of how <a href="https://twitter.com/search?q=from%3Arem%20apple&amp;src=typd">sick I am of Apple</a>) - and in fact, I <em>also</em> backed the new Pebble Time project and I can&#39;t wait to get my hands on that device and play some more.</p>
-<h2>Next: Time</h2><p>Akin with simplicity of the Pebble, my Pebble Time arrived in this simple cardboard, no-frills packaging, and I&#39;m keen to see how I can customise this watch and make it mine, again.</p>
-<p><img src="/images/pebble-time-packaging.jpg" alt="Pebble Time packaging"></p>
-<p>And when this happened, it totally made my day:</p>
-<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Okay <a href="https://twitter.com/Pebble">@Pebble</a>, this is awesome. No charge, but still tells the time. 💙💚💛💜 <a href="http://t.co/fZdBfrFb88">pic.twitter.com/fZdBfrFb88</a></p>&mdash; Remy Sharp (@rem) <a href="https://twitter.com/rem/status/619767989605376000">July 11, 2015</a></blockquote></p>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>]]></content:encoded></item></channel></rss>
+]]></content:encoded></item></channel></rss>
