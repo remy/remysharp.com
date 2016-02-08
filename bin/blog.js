@@ -133,7 +133,7 @@ function publish(title) {
           console.log('done');
         });
     } else if (picks.length === 0) {
-      console.log('Not matches found');
+      console.log('No matches found');
     } else {
       console.log('Found multiple matches');
       console.log(picks);

@@ -3528,5 +3528,13 @@
       "code"
     ],
     "published": true
+  },
+  "testing-tape-vs-tap": {
+    "title": "Testing: tape vs. tap",
+    "date": "2016-02-08 16:14:47",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }

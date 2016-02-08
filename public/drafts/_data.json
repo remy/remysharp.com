@@ -199,14 +199,5 @@
     "tags": [
       "business"
     ]
-  },
-  "testing-tape-vs-tap": {
-    "title": "Testing: tape vs. tap",
-    "date": "2016-02-02 11:34:52",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "code"
-    ]
   }
 }
