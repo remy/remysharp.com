@@ -199,5 +199,14 @@
     "tags": [
       "business"
     ]
+  },
+  "production-npm-defaults": {
+    "title": "Production npm defaults",
+    "date": "2016-02-11 10:56:06",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }

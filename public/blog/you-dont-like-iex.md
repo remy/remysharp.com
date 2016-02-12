@@ -6,16 +6,7 @@ So, for your special reading pleasure, I've made it so that this post can update
 
 <!--more-->
 
-Which IE don't you like: <select id="ie-selection" style="font-size: 20px; width: 100px">
-<option>ALL THE BROWSERS!!!</option>
-<option>IE5</option>
-<option selected>IE6</option>
-<option>IE7</option>
-<option>IE8</option>
-<option>IE9</option>
-<option>IE10</option>
-<option>FUTURE IE!</option>
-</select>
+Which IE don't you like: <select id="ie-selection" style="font-size: 20px; width: 100px"><option>ALL THE BROWSERS!!!</option><option>IE5</option><option selected>IE6</option><option>IE7</option><option>IE8</option><option>IE9</option><option>IE10</option><option>FUTURE IE!</option></select>
 <script>
 window.onload = function () {
   $('#ie-selection').on('change', function () {
