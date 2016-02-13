@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The 'what time did my son wake up?' project</title><meta name="description" content="The 'what time did my son wake up?' project"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="My 2 1/2 year old son wakes up before us during the spring and summer. He turns his light on fully, and plays until he&#39;s bored, then calls for us to join us in bed in the morning.
+The problem was: exactly when was he waking, because it would affect how tired he was in the day (and affect nap times). So I built a tiny Arduino prototype :-) "><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="The 'what time did my son wake up?' project"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:image:src" content="https://farm6.staticflickr.com/5333/13975246696_3d7bcc89e6_o.jpg"/><meta name="twitter:card" content="summary_large_image"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-arduino-wake-up-time-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2014/08/08/automatic-permalinks-for-blog-posts" title="Automatic permalinks for blog posts">Next</a></li><li class="prev"><a href="/2014/06/17/call-for-proposals-at-full-frontal-2014" title="Call for proposals at Full Frontal 2014">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2014/08/05/arduino-wake-up-time" rel="bookmark" title="Permanent Link: The 'what time did my son wake up?' project">The 'what time did my son wake up?' project</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/arduino-wake-up-time.md">(edit)</a></small><div class="post-content"><p>My 2 1/2 year old son wakes up before us during the spring and summer. He turns his light on fully, and plays until he&#39;s bored, then calls for us to join us in bed in the morning.</p>
+<p>The problem was: exactly <em>when</em> was he waking, because it would affect how tired he was in the day (and affect nap times). So I built a tiny Arduino prototype :-) </p>
+<!--more-->
+<h2>The grand plan</h2><p>The grand plan was to use a TinyAT85 chip (because I like micro projects), with 4 digit 7 segment LED, a photoresistor, a push button (to reset) and a real time clock (RTC module). </p>
+<p>This would be in some sort of housing, and I&#39;d use Sugru with their magnets to stick to his lamp. </p>
+<p>The idea being that the unit would attach magnetically to his lamp and be in a sleep state (though actually there&#39;s smarter approaches I could use to <em>actually</em> be in a sleep state). </p>
+<p>When the light is switched on, the photoresistor picks up a value higher than 950, and the time is displayed and fixed on the LED display. You then hit the reset button to go back to sleep state.</p>
+<h2>The reality</h2><p>7 segment LED displays, wired up regularly take up a <em>lot</em> of pins, even more so when there&#39;s four! This combined with the fact that TinyAT85 s only have 5 available pins for data, meant I&#39;d need to use one of the adafruit LED backpacks (which I didn&#39;t have to hand), and then I didn&#39;t know if I could use an SPI pin with the SDA and SCL pins required to run the RTC module - so I decided to stick to the prototype for now.</p>
+<h2>The prototype</h2><p>I had a LCD module handy, which I&#39;d use instead of the LED display. I also always prototype using an Arduino Uno, so it&#39;s simpler (and a lot bigger).</p>
+<p>From there it was very simple. A lot of copy and paste from the adafruit website and then just writing the logic into my code:</p>
+<ul>
+<li>If the light sensor value goes above 850, then the light is on.</li>
+<li>Grab the time from the RTC module</li>
+<li>Display the time on the LCD</li>
+<li>If the push button is ‘LOW‘ then reset and clear the display</li>
+<li>As an additional bonus, if the light value drops below 300, it means the light is off, and reset (which saves pressing reset at night)</li>
+</ul>
+<p>Here&#39;s the code: <a href="https://gist.github.com/remy/11264660#file-light-time-pde">light-time.pde</a></p>
+<p>And the prototype wired up:</p>
+<p><img src="https://farm6.staticflickr.com/5333/13975246696_3d7bcc89e6_o.jpg" alt=" https://farm6.staticflickr.com/5333/13975246696_3d7bcc89e6_o.jpg"></p>
+<h2>The grand conclusion</h2><p>After carefully wiring everything up, placing the arduino in my son&#39;s room and covering the lights so it wouldn&#39;t keep him up, I headed to bed keep to discover the time he was actually rising.</p>
+<p>The morning came, he woke me and my wife up early (as expected), and I trotted into his room to discover...the battery had died.</p>
+<p>Yep. Polling all the time is going to burn the battery out, and indeed what I need is an interrupt (based on the light levels ideally). So that&#39;s the plan for version 2...when I get around to it. For now, filling up failed projects!</p><p class="follow">Posted 5-Aug 2014 under arduino &amp; code &amp; fail &amp; hacking &amp; hardware. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2014/08/05/arduino-wake-up-time/';
+var disqus_title = 'The \'what time did my son wake up?\' project';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>

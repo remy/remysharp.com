@@ -1,0 +1,1055 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/"><channel><title>remy sharp's b:log</title><atom:link href="https://remysharp.com/feed/" rel="self" type="application/rss+xml"></atom:link><link>https://remysharp.com</link><description>About [code] and all that jazz</description><lastBuildDate>Mon, 08 Feb 2016 16:14:47 +0000</lastBuildDate><language>en-US</language><sy:updatePeriod>hourly</sy:updatePeriod><sy:updateFrequency>1</sy:updateFrequency><item><title>Testing: tape vs. tap</title><guid isPermaLink="false">testing-tape-vs-tap</guid><link>https://remysharp.com/2016/02/08/testing-tape-vs-tap</link><pubDate>Mon, 08 Feb 2016 16:14:47 +0000</pubDate><description><![CDATA[I recently wrote about my node test strategy and in particular talked about using tape as my test runner and piping to tap-spec.
+I&#39;ve since started to migrate across to tap exclusively for both the runner and the reporter.]]></description><content:encoded><![CDATA[<p>I recently wrote about my <a href="https://remysharp.com/2015/12/14/my-node-test-strategy">node test strategy</a> and in particular talked about using <a href="https://npmjs.org/tape">tape</a> as my test runner and piping to <a href="https://www.npmjs.com/package/tap-spec">tap-spec</a>.</p>
+<p>I&#39;ve since started to migrate across to <a href="https://www.npmjs.com/package/tap">tap</a> exclusively for both the runner and the reporter.</p>
+<!--more-->
+<p>There&#39;s a couple of benefits to my workflow in using tap for the tests. Partly the reduced dependencies (so less tracking for changes and less knowledge required), but also the reporting is much more valuable to me, as I&#39;ll show you below.</p>
+<h2>Tracing errors</h2><p>Below is the output, with an error inside my tested code whilst using tape as my runner and executing through tap:</p>
+<p><img src="/images/tape-vs-tap-1.png" alt="tape error output"></p>
+<p>As you can see from the output above, there&#39;s an exception and it&#39;s failing the test, but there&#39;s very little information about <em>where</em> it failed. I can see it was inside a promise, but since a lot of my code is based around promises, including the test itself, there&#39;s essentially no stacktrace at all.</p>
+<p>To switch my code from using the tape library to tap, I only need to change the require line from:</p>
+<pre><code class="language-js">var test = require(&#39;tape&#39;);
+</code></pre>
+<p>...to...</p>
+<pre><code class="language-js">var test = require(&#39;tap&#39;).test;
+</code></pre>
+<p>The rest of my test code can remain the same, as the API for tape is generally a subset of tap&#39;s own assert API. The output now changes to give a better idea of the stacktrace:</p>
+<p><img src="/images/tape-vs-tap-2.png" alt="tap error output"></p>
+<p>But this still doesn&#39;t quite give me enough detail. I can see exactly where the error is being thrown, but this is in my test code. I need to hook in the stack into my test. The following code shows how the error was being displayed (from the screenshot above):</p>
+<pre><code class="language-js">auth().then(function (res) {
+  t.notEqual(res, -1, &#39;auth worked&#39;);
+}).catch(function (e) {
+  t.fail(e);
+});
+</code></pre>
+<p>Instead of using <code>t.fail</code> and passing the error directly in, I switch to using <code>t.threw</code> which works nicely with my promise code and will give me a full stacktrace. A side benefit is that I can also avoid using a <code>plan</code>so long as my promise has a final <code>.then(t.end)</code> to notify that the tests are complete:</p>
+<pre><code class="language-js">auth().then(function (res) {
+  t.notEqual(res, -1, &#39;auth worked&#39;);
+}).catch(t.threw).then(t.end);
+</code></pre>
+<p>Now the failing test has much more detail:</p>
+<p><img src="/images/tape-vs-tap-3.png" alt="tap error output"></p>
+<p>I have the full stacktrace from the origin of the error and I can fix the issue.</p>
+<h2>Visual deltas</h2><p>Finally it&#39;s also worth showing the other big benefit to me, specifically around failing <code>deepEqual</code> tests. In some of my integration tests, I&#39;ll create a fixture that&#39;s a JSON object the expected result.</p>
+<p>If there&#39;s an error and the result is different to my fixture, the tape result doesn&#39;t always help understand where the issue is. As you can see below, the object has been dumped out without any real clue as to <em>where</em> the issue is:</p>
+<p><img src="/images/tape-vs-tap-4.png" alt="tape diff output"></p>
+<p>However, using tap as my required test library, automatically gives me a visual cue on the delta between my fixture and my actual output:</p>
+<p><img src="/images/tape-vs-tap-5.png" alt="tap diff output"></p>
+<p>Immediately, I can see the timestamp is the problem and it&#39;s simple for me to then go and either fix the code or change the test.</p>
+<h2>Coverage reporting for free</h2><p>Finally, tap comes with coverage reporting built in. For local testing, I include the following in my <code>package.json</code> so I can browse the interactive coverage report:</p>
+<pre><code class="language-json">&quot;scripts&quot;: {
+  &quot;cover&quot;: &quot;tap test/*.test.js --cov --coverage-report=lcov&quot;,
+</code></pre>
+<p>This generates the <a href="https://gotwarlost.github.io/istanbul/">istanbul</a> coverage report that I open up immediately and see either where I&#39;m missing coverage, or where I can identify dead code.</p>
+<p>In addition, since I publish to Travis for my tests, it will post automatically to tools like <a href="https://coveralls.io/">coveralls.io</a> and I&#39;m able to share the coverage either with the public or with my team internally. Note there&#39;s a few specific environment values you need to get coverage working (specific to Coveralls):</p>
+<ol>
+<li>Add your coveralls token under <code>COVERALLS_REPO_TOKEN</code></li>
+<li>If you&#39;ve got a private repo, use <code>COVERALLS_SERVICE_NAME=travis-pro</code> (you don&#39;t need this for public repos)</li>
+<li>If you&#39;re using more than one test in your test matrix (i.e. testing node 0.10, 4 and 5) include <code>COVERALLS_PARALLEL=true</code></li>
+</ol>
+<p><strong>One important caveat:</strong> when you include coverage in your tests, then the stacktraces will often only show the right filename and function name, but <em>not</em> the right line number. This is because the coverage has instrumented the code (though I&#39;d <a href="https://github.com/tapjs/node-tap/issues/231">expect sourcemaps</a> could solve this issue). If I have a failing stacktrace, I run the tap CLI command directly against the failing test file.</p>
+<p>And that&#39;s it. These are the reasons I&#39;m using tap now over tape, and so far, it&#39;s all proving really valuable. My next post on testing, I&#39;ll explain how I debug and fix failing tests in (as close to) real-time as possible.</p>
+]]></content:encoded></item><item><title>Fixing fixtures</title><guid isPermaLink="false">fixing-fixtures</guid><link>https://remysharp.com/2016/01/28/fixing-fixtures</link><pubDate>Thu, 28 Jan 2016 16:06:15 +0000</pubDate><description><![CDATA[For context, the following technical post is rather bespoke to my recent work but I believe it helps to manage potentially heavy fixtures in tests.
+A fixture is used to consistently test software. I used them in nearly every project I write and test. Lately, with my work on Snyk requires that the code is tested against a number of npm packages. This means entire swaths of node_modules end up in our fixtures directory, which would then lead to pull requests that look like this (a recent real PR in our code):]]></description><content:encoded><![CDATA[<p>For context, the following technical post is rather bespoke to my recent work but I believe it helps to manage potentially heavy fixtures in tests.</p>
+<p>A fixture is used to consistently test software. I used them in nearly every project I write and test. Lately, with my work on <a href="https://snyk.io">Snyk</a> requires that the code is tested against a number of npm packages. This means entire swaths of <code>node_modules</code> end up in our fixtures directory, which would then lead to pull requests that look like this (a recent real PR in our code):</p>
+<p><img src="/images/fixtures.png" alt="Example commit with 3,700 files"></p>
+<!--more-->
+<h2>Using npm for fixtures</h2><p>My new method now puts these npm packages inside of totally separate npm package. I&#39;ve only used this once, but the name of the fixture package will the same as my main project, and suffixed with <code>-fixtures</code>.</p>
+<p>This can be tracked in something like GitHub, but it doesn&#39;t require pull requests or code reviews upon update.</p>
+<p>The fixtures package can really include anything I like, but specifically I&#39;m using it to include dependencies that will become the individual npm packages I&#39;m using as fixtures. This method also allows me to create <em>mock</em> packages and include them in the <code>node_modules</code> directory of my fixture page, something like this:</p>
+<pre><code class="language-bash">node_modules
+├── @remy
+│   └── vuln-test
+│       └── node_modules
+│           └── semver
+│               ├── bin
+│               └── test
+├── debug
+│   └── node_modules
+│       └── ms
+├── semver-rs-demo
+│   └── node_modules
+│       └── semver
+│           ├── bin
+│           └── test
+├── uglify-package ⬅⬅⬅ this is the mocked package
+│   └── node_modules
+│       ├── ug-deep
+│       │   └── node_modules
+│       ├── ug-deep-alt
+│       │   └── node_modules
+│       │       └── ug-no-deps
+│       └── uglify-js
+│           └── &lt;snip&gt;
+└── undefsafe
+    ├── lib
+    └── test
+</code></pre>
+<p>You can see my live example of the <a href="https://github.com/Snyk/snyk-resolve-deps-fixtures">fixture package</a> and <a href="https://github.com/Snyk/resolve-deps/blob/master/test/deps.test.js#L4-L7">how it&#39;s being used</a> in my Snyk work.</p>
+<h2>Important implementation details</h2><ul>
+<li>The big win here is that so long as you pin the fixture package version in your project, your <strong>fixtures are now immutable</strong>.</li>
+<li>If you&#39;re including mocked packages you need to list the top level package name (<code>uglify-package</code> in my case) in the <code>bundleDependencies</code> array in the <code>package.json</code>.</li>
+<li>If you want the package directory structure to remain intact (maybe because you need an npm@3 flat directory structure for instance), include the name of the package in the <code>bundleDependencies</code>.</li>
+<li>You can&#39;t include a directory called <code>node_modules</code> in your package anywhere (outside of the project root directory) as it&#39;s automatically stripped from <code>npm publish</code>.</li>
+<li>Do not expect <code>devDependencies</code> to be installed, as this isn&#39;t the normal install process when including a project dependency.</li>
+</ul>
+<h2>Simple</h2><p>So that&#39;s it. Put the dependencies in a separate package. Make sure you pin the version of the fixture in your code (so it&#39;s immutable) and if you use a CI system that benefits from caching (like <a href="https://travis-ci.org">Travis</a> does), then the build benefits from the cached fixture.</p>
+<p>Most importantly though: no more unnecessarily large pull requests. Now they can focus on the code changes and tests alone.</p>
+]]></content:encoded></item><item><title>Why I love working with the web</title><guid isPermaLink="false">why-i-love-working-with-the-web</guid><link>https://remysharp.com/2016/01/20/why-i-love-working-with-the-web</link><pubDate>Wed, 20 Jan 2016 9:46:24 +0000</pubDate><description><![CDATA[Easy is boring. That&#39;s why I love the web and browsers […] — me
+
+I love that my code can run anywhere for anyone. Indeed that&#39;s the challenge. The web is a hugely diverse environment anyone can view anything anyway they want.
+If the viewer is using the latest technology beefy desktop computer that&#39;s great. Equally they could view the website from a work computer, something old and locked in using a browser called IE8.
+Douglas Crockford once famously said:
+
+The Web is the most hostile software engineering environment imaginable.]]></description><content:encoded><![CDATA[<blockquote>
+<p>Easy is boring. That&#39;s why I love the web and browsers […] — <a href="https://twitter.com/rem/status/563268265980751872">me</a></p>
+</blockquote>
+<p>I love that my code can run anywhere for anyone. Indeed that&#39;s the challenge. The web is a hugely diverse environment anyone can view anything anyway they want.</p>
+<p>If the viewer is using the latest technology beefy desktop computer that&#39;s great. Equally they could view the website from a work computer, something old and locked in using a browser called IE8.</p>
+<p>Douglas Crockford once famously said:</p>
+<blockquote>
+<p>The Web is the most hostile software engineering environment imaginable.</p>
+</blockquote>
+<!--more-->
+<p>You&#39;re damn right it is. And it&#39;s with that hostility that allows me access to the world. It&#39;s that &quot;hostility&quot; that I call my daily challenge.</p>
+<p>This hostile environment is what gets me excited. That challenge of getting my page to render everywhere. Getting the code just right so that it progressively enhances so that everyone can view the page.</p>
+<p>I&#39;m not saying that I achieve it every time. For example, I&#39;ve strived to make jsbin.com work in IE7 and IE8 for many years, and somewhere along the line, we lost IE8 support (which I&#39;ll try to find time to fix one day too).</p>
+<h2>View Source: the welcome sign of the web</h2><p>I do wonder exactly why viewing source was baked into the early browsers. I can imagine it was to do with debugging and keeping the technology and protocols open to help with adoption.</p>
+<p>And oh my did it pay off or what!? I&#39;m one of the earlier generation of developers that skipped on reading books and just learnt from all the mistakes and insights of other people&#39;s code on the web.</p>
+<p>For me, I had my major breakthrough in understanding JavaScript by grokking the <a href="http://genius.it/ejohn.org/files/jquery-original.html">jQuery source</a> (back in the 0-1.x days, some 10 years ago).</p>
+<p>Without view source I&#39;m pretty sure I&#39;d be a shadow of the developer I am today, even possibly I&#39;d still be writing closed source Perl!</p>
+<h2>Is it harder today?</h2><p>I was reading <a href="https://jakearchibald.com/2015/if-we-stand-still-we-go-backwards/">Jake Archibald&#39;s post</a> entitled <em>If we stand still, we go backwards</em> and it had me thinking about an analogy for complexity that I&#39;d heard compared to the web before.</p>
+<p>Back in the early days of photography, technology was, <em>compared to today</em>, rather simple. At a push, I can make a pinhole camera in a few hours (maybe...).</p>
+<p>A compact digital camera on the other hand is a whole different kettle of fish. I don&#39;t know even if today a single individual is capable of building a fully working camera. But this is the cost and benefit of technical advancement.</p>
+<p>I mean, heck, look at it, and that&#39;s even <em>after</em> you&#39;ve got all the parts made!</p>
+<p><img src="https://images.unsplash.com/4/madebyvadim.jpg?q=80&amp;fm=jpg&amp;s=4d5b600fb30878422cfe859a3e4485f1" alt="Camera in bits - Photo by Vadim Sherbakov"></p>
+<p>So, if you want to build browser optimised insane effects, work with the latest offline push technology and have it all fully mobile optimised: the job is going to be hard. Not &quot;build a device that talks to space&quot;–hard, but you&#39;ll probably need to read a book or two.</p>
+<p>That&#39;s all assuming you&#39;ve got the parts - to get the parts you need frameworks and build tools, or so you&#39;ll be told...over and over and over. There&#39;s no doubt: <strong>the job is daunting.</strong></p>
+<p>This is <strong>not</strong> the only way - I assure you.</p>
+<h2>Unsurprisingly, the basics are still here</h2><p>The web is still made up of HTML, CSS and JavaScript and works damn well in it&#39;s vanilla form. This blog for instance, my primary presence on the web, was just HTML and CSS with a dash of copy &amp; pasted JavaScript.</p>
+<p>These days I&#39;ve long ditched the Wordpress backend, and gone for a static site. One that I could <em>easily</em> code by hand. In fact, I wrote my own process that turns markdown files in to HTML, because that suited me. There&#39;s no reason why I couldn&#39;t use some GUI program on my laptop to transform the markdown to HTML, then paste in the header &amp; footer.</p>
+<h2>Why I love working with the web</h2><p><img src="/images/remy-web-was-born.jpg" alt="Remy where the web was born - Photo by Jeremy Keith"></p>
+<p>It&#39;s the web&#39;s simplicity. Born out of a need to connect documents. As much as that might have changed with the latest generation of developers who might tell you that it&#39;s hard and complex (and they&#39;re right), at the same time it is not complicated. It&#39;s still beautifully simple.</p>
+<p>Anyone can do it. Anyone can publish content to the web, be it as plain text, or simple HTML formed only of <code>&lt;p&gt;</code> tags or something more elaborate and refined. The web is unabashed of it&#39;s content. Everything and anything goes.</p>
+<p>The web is a truly amazing place for developers today. There&#39;s an amazing abundance of libraries, frameworks, plugins and utilities to make life much easier to do the super complicated stuff that some people were brave enough to roll by hand 10 years ago. Equally, if you want to write JavaScript and ignore all of the ES6 / ESnext parts, you can (and for the most part, due to constraints, I do too!).</p>
+<p>If you sit back for a moment, and think about just how many lives you can touch simply by publishing something, anything, to the web, it&#39;s utterly mind blowing. That&#39;s why I love working with the web.</p>
+<p><em>What about you?</em></p>
+]]></content:encoded></item><item><title>My 2015</title><guid isPermaLink="false">my-2015</guid><link>https://remysharp.com/2015/12/31/my-2015</link><pubDate>Thu, 31 Dec 2015 7:03:33 +0000</pubDate><description><![CDATA[I&#39;ve been writing these end of year accounts since 2009, so I continue to do so, and as always, these are primarily for future me - so I&#39;m sure you&#39;ll forgive the post for being overly ra-ra-me!]]></description><content:encoded><![CDATA[<p>I&#39;ve been writing these end of year accounts since 2009, so I continue to do so, and as always, these are primarily for future me - so I&#39;m sure you&#39;ll forgive the post for being overly ra-ra-me!</p>
+<!--more-->
+<h2>Work</h2><p>At the start of the year, I <a href="/2015/01/05/reboot">rebooted</a> and returned to (effectively) a one-man code shop (although in reality both Julie and I run the business, I just do the coding part). My team had moved on, and I&#39;d give up the office by January returning to working out of my trusty kitchen (where I actually work pretty well).</p>
+<p>Although my biggest concern was finding new work after having nearly zero client work in 2014, it somehow turned out okay.</p>
+<ul>
+<li>I had the pleasure of working with local company <a href="http://brilliantnoise.com/">Brilliant Noise</a> and Martin Edwards and was responsible for building the node.js backend to their <a href="https://www.picturehouses.com/">Picture Houses</a> site update (in it&#39;s current 2015 state).</li>
+<li>Worked with the amazing team at <a href="http://www.ehealthafrica.org/">eHealth Africa</a> working on a very small part of their projects and produced a <a href="https://github.com/eHealthAfrica/universal-exporter/">project</a> that heavily involved 100s of 1,000s streaming objects and promises - a fun and tricky challenge!</li>
+<li>Finally working with <a href="https://twitter.com/guypod">Guy Podjarny</a> to help build Snyk (primarily developing the CLI tool) to help (currently) node.js developers with security.</li>
+</ul>
+<h2>Side projects</h2><p>As always, I try to keep one toe in side projects to keep myself challenged. The main side project that I launched in 2015 was <a href="https://confwall.com">Confwall</a> (though developed in late 2014).</p>
+<p>Amazingly (to me) Confwall pulls a profit for my business which is partly due to some of the lessons I learnt from JS Bin during 2014, and it&#39;s always amazing seeing it being used by the audience.</p>
+<figure>
+  <img src="/images/ffconf-2015-confwall.jpg" alt="Photo of confwall at ffconf 2015">
+  <figcaption>Photo credit: Seb Lee-Delisle</figcaption>
+</figure>
+
+<p>Other side projects included:</p>
+<ul>
+<li>A complete rewrite of <a href="https://github.com/remy/inliner">inliner</a>, a tool I originally wrote back in early 2011 that takes a URL and produces a single <em>inline</em> file including all the assets.</li>
+<li><a href="https://github.com/remy/bind.js">bind.js</a> a small and simple two data binding library.</li>
+<li><a href="https://github.com/remy/autocache">autocache</a> a memorisation library backed by persistent store (with support for redis, localStorage and mongo).</li>
+</ul>
+<p>I&#39;ve also been working on a short book (5 chapters, around 12,000 words) on the Command Line Interface for beginners (likely web developers and designers who have limited experience with the terminal). It&#39;s 4 chapters down and 1 to go, <em>hopefully</em> I&#39;ll have written most of that final chapter before this post goes live, so I can get on with the production side of things and get it online and ready to buy. <a href="https://docs.google.com/forms/d/1WLLxMr5MF3U3I8FWF9MmXTreBh4hDaORZZhhRVLB87Y/viewform">If you&#39;re interested the TOC and would like to know when it&#39;s available to buy, you can pop your email in this form</a>.</p>
+<h2>ffconf 2015</h2><p>We (Julie and I) ran <a href="http://2015.ffconf.org/">ffconf again this year</a>, and again, it was a huge success (if the feedback of our delegates is anything go to by).</p>
+<figure>
+  <img src="/images/ffconf-2015.jpg" alt="Photo of delegates at ffconf 2015">
+  <figcaption>Photo credit: Seb Lee-Delisle</figcaption>
+</figure>
+
+<p>We had 8 absolutely amazing speakers. We started a full <a href="https://remysharp.com/2015/08/28/diversity-scholarships">diversity scholarship programme</a> which was also a huge success (some truly inspiring emails from applicants).</p>
+<p>We also managed a 50/50 gender split in our speaker line up. As I said on the web site: &quot;this isn&#39;t something we should be proud of, because it should be the norm, but it is what we&#39;ve got and we&#39;d like to share that with you&quot;. We&#39;re also working hard to improve the diversity of our audience and as always, more can, <em>and will be</em> done.</p>
+<h2>Speaking</h2><p>I&#39;ve been actively turning down a lot of speaking for two firm reasons: firstly I wanted to be closer to family and not be travelling so much whilst the kids are still so young. Secondly, honestly, I didn&#39;t feel like I had anything to say - probably linked to self-worth, but that&#39;s for another day.</p>
+<p>However, I was asked by JSCamp Romania to step in last minute for a speaker that couldn&#39;t make it and I suggest a JS Bin talk from 2014 called The Bits Behind JS Bin. A generally positive talk which always ended in a dark (and slightly bitter) note. It would end with this slide, and then I asked twitter if people wanted to hear more:</p>
+<p><blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">I realise it&#39;s a Sunday, but is there any interest in a talk about jsbin and this? It ain&#39;t a happy talk. +1/-1? <a href="http://t.co/Hjp0aM3CsO">pic.twitter.com/Hjp0aM3CsO</a></p>&mdash; rem (@rem) <a href="https://twitter.com/rem/status/605036102488072192">May 31, 2015</a></blockquote></p>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>On the fight to Romania, I started writing the content for a deck that would become &quot;The toxic side of free&quot;, then I went on to give the talk 7 times this year, including at jsconf.us (my 5th talk at a jsconf) - which was a huge privilege to be part of.</p>
+<p>I also (finally) gave a talk at Fronteers (amazingly this was my 6th time to be asked, and I&#39;d always had conflicting plans). It was pretty frightening since I&#39;d had <a href="https://jakearchibald.com/">Jake Archibald</a> and <a href="https://adactio.com">Jeremy Keith</a> both independently warned that the Fronteers audience are particularly savvy and have high expectations of their speakers.</p>
+<figure>
+  <img src="/images/jakes-fronteers-pic.jpg" alt="Photo of Remy Sharp speaking at Fronteers">
+  <figcaption>Photo credit: Jake Archibald</figcaption>
+</figure>
+
+<p>My talk was entitled &quot;The art of debugging&quot; (<a href="https://vimeo.com/145242226">video</a>). I wasn&#39;t lynched, which is always a good sign. The talk went over fine, I think. In addition though, I&#39;ve changed my method of preparing talks over the last few years. Instead of postit notes and scattered thoughts, I tend to write my talk as if it were a blog post and use that as the template for the slides. Of course, this means I can publish the post too, and from this, I&#39;ve had a lot of positive feedback (which is nice). Which segues nicely on to my blog...</p>
+<h2>The b:log</h2><p>Last year I rewrote all the backend of my blog to be driven by static markdown files, and this revitalised my blog (in my eyes). Particularly seeing the <a href="/archive">archive</a>, I gave myself the aim to get <em>at least</em> two posts published each month.</p>
+<p>So far I&#39;ve (nearly) managed that (one month has one post, whilst others have more than two), but that combined with keeping fully completed posts in draft state, and I&#39;m hoping to continue the momentum into 2016.</p>
+<p>I prefer to write short and to the point blog posts, but traffic and page views show me that actually my super <em>long</em> form writing is the most successful (in the region of 2-6,000 words!). My most popular posts this year were:</p>
+<ul>
+<li><a href="/jsbin-toxic-part-1">The toxic side of free. Or: how I lost the love for my side project</a></li>
+<li><a href="/the-art-of-debugging">The art of debugging</a></li>
+<li><a href="/i-am-a-web-developer">I am a web developer</a></li>
+<li><a href="/dont-like-open-source">&quot;Why I don&#39;t like open source&quot; – my thoughts</a></li>
+<li><a href="/bind">bind.js: Tiny two way data binding</a></li>
+</ul>
+<h2>Personal</h2><p>I had a few personal goals and wins this year. My focus beyond family and work is my own personal health and strength. I finally hit the 18-year-old me waist size again (from 38 inches over 3 years ago) to 30 inches. In the gym I came <em>close</em> to 100KG bench press (though actually only hit 90KG x 8 back in April, and managed 100KG in a seated press). I only weigh 75KG so I&#39;m figuring this isn&#39;t too shabby.</p>
+<p>I made a small tear in my back in late 2014 which stopped me from doing deadlifts and squats (which I really enjoy) and sadly it&#39;s still giving me jip a year later. I&#39;ve also continued to experiment and track my diet and it kind of pisses me off that it&#39;s taken me 2 decades to understand food to the level I do now (i.e. &quot;fat free&quot; is utter rubbish as a selling point - fats are <em>good</em>).</p>
+<hr>
+<p>In some ways, this year was also extremely hard for Julie and me. Our littlest had some tough sleeping problems for a significant amount of the year and it put a tremendous strain on us as parents, as a couple and as individuals. Parenting has never been made out to be easy. In a way, to me, this seems a ridiculous thing to say given that <a href="/2015/08/17/five">we lost Tia</a>. It&#39;s a different thing, obviously. We&#39;re through it now. Ready for the next challenges that lurk around the corner!</p>
+<hr>
+<p>If you, dear reader have made it this far, thanks for doing so, and I hope you hold on to any of your own fond memories from 2015 and go strong into 2016 ❤</p>
+<p><img src="/images/family-2015.jpg" alt="Sharp family 2015"></p>
+]]></content:encoded></item><item><title>Promise waterfall</title><guid isPermaLink="false">promise-waterfall</guid><link>https://remysharp.com/2015/12/18/promise-waterfall</link><pubDate>Fri, 18 Dec 2015 13:08:09 +0000</pubDate><description><![CDATA[I use promises a lot in my development process. I find them extremely pliable for my needs. However, for whatever reason, I don&#39;t use abstractions for most of my development, which is to say I use vanilla promises unencumbered by an additional API to learn.
+Recently I needed to run a series of promises, but I had to also solve a race condition, so they had to run in sequence (i.e. a waterfall). I know libraries like async.js have this baked in, but I wanted to write up how to go about doing it without a library.]]></description><content:encoded><![CDATA[<p>I use promises a lot in my development process. I find them extremely pliable for my needs. However, for whatever reason, I don&#39;t use abstractions for most of my development, which is to say I use vanilla promises unencumbered by an additional API to learn.</p>
+<p>Recently I needed to run a series of promises, but I had to also solve a race condition, so they had to run in sequence (i.e. a waterfall). I know libraries like <a href="https://github.com/caolan/async">async.js</a> have this baked in, but I wanted to write up how to go about doing it without a library.</p>
+<!--more-->
+<h2>The setup</h2><p>My particular case I was running promises that took an undetermined amount of time to complete. In the interest of keeping things simple, let&#39;s say the following is what the promise has to run, and it will return a sequence number:</p>
+<pre><code class="language-js">var guid = 0;
+function run() {
+  guid++;
+  var id = guid;
+  return new Promise(resolve =&gt; {
+    // resolve in a random amount of time
+    setTimeout(function () {
+      console.log(id);
+      resolve(id);
+    }, (Math.random() * 1.5 | 0) * 1000);
+  });
+}
+</code></pre>
+<h2>First in parallel</h2><p>To get values 1..10 I would then call the <code>run</code> function via an array of promises through <code>Promise.all</code> (note that this is run in parallel and not in sequence at this point):</p>
+<pre><code class="language-js">// make an array of 10 promises
+var promises = Array.from({ length: 10 }, run);
+
+Promise.all(promises).then(console.log);
+// =&gt; [1,2,3,4,5,6,7,8,9,10]
+</code></pre>
+<p>Note that the console logs in the bin below are <em>out of order</em>, but the final result is correct (which is what we&#39;d expect with <code>Promise.all</code>):</p>
+<p><a class="jsbin-embed" href="https://jsbin.com/hivate/1/embed?js,console">parallel on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.5"></script></p>
+<h2>Now as a waterfall</h2><p>Promises naturally waterfall into each other, but for an undetermined length of an array, I need to recursively chain the promises together, passing the aggregate result from the previous promise into the next, and so on. A perfect match for <code>[].reduce</code>.</p>
+<pre><code class="language-js">var promise = Array.from({ length: 10 }).reduce(function (acc) {
+  return acc.then(function (res) {
+    return run().then(function (result) {
+      res.push(result);
+      return res;
+    });
+  });
+}, Promise.resolve([]));
+
+promise.then(console.log);
+</code></pre>
+<p>Remember that the <code>Array.from({ length: 10 })</code> is simply generating an array from 0 to 9 for this demo purpose. Also note that <code>run()</code> is <em>inside</em> the reduce function, and the end result is no longer an array of promises, but in fact a single promise (and so I drop the use of <code>Promise.all</code>).</p>
+<p>Now you can see from the JS Bin below that the promises run in sequence (I&#39;ve added a console):</p>
+<p><a class="jsbin-embed" href="https://jsbin.com/nitoti/6/embed?js,console">waterfall on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.35.5"></script></p>
+<h2>Worth noting</h2><p>Obviously the waterfall of promises is going to take longer to complete than a parallel run of the promises, but as I mentioned at the start of this post, I needed to solve a race condition, and this was the solution I needed.</p>
+]]></content:encoded></item><item><title>My node test strategy</title><guid isPermaLink="false">my-node-test-strategy</guid><link>https://remysharp.com/2015/12/14/my-node-test-strategy</link><pubDate>Mon, 14 Dec 2015 15:21:29 +0000</pubDate><description><![CDATA[Historically testing has been far far down on my list of priorities. However that&#39;s been slowly changing over the last 3-4 years, and now I have a fairly solid and systematic method to testing.
+I&#39;m writing it partly to capture it in time as I know it&#39;ll continue to evolve and partly to share with you to get your input too.]]></description><content:encoded><![CDATA[<p>Historically testing has been far far down on my list of priorities. However that&#39;s been slowly changing over the last 3-4 years, and now I have a fairly solid and systematic method to testing.</p>
+<p>I&#39;m writing it partly to capture it in time as I know it&#39;ll continue to evolve and partly to share with you to get your input too.</p>
+<!--more-->
+<h2>Always be automating</h2><p>It <em>nearly</em> goes without saying that the whole process should be automated. I&#39;m not a big tooling fan, so I don&#39;t personally have something like grunt constantly running my tests.</p>
+<p>However, all my projects these days will immediately be added to Travis (my CI of choice) and typically with email alerts turned on. I&#39;ll go into the detail of my setup in a moment.</p>
+<p>JS Bin, sadly, has nearly no tests, which means the main process is: can I sign in? Can I save? This is super-super prone to disaster. Do not follow these old and crusty footsteps!</p>
+<h2>Prerequisites</h2><p>I have a few prerequisites for my test strategy:</p>
+<ul>
+<li>Runs either from an event (like a commit or repo push) or from the CLI. Anything more is over excursion.</li>
+<li>Given a failure, the exit code for my test is &quot;non-zero&quot; - this is specifically to allow Travis to see my tests have failed (more on this later).</li>
+<li>Browser/client side testing must also be triggered in the same way, and not require me to manually run browsers.</li>
+<li>Should be easy to configure and install, ideally there&#39;s no install beyond node and my project code.</li>
+</ul>
+<p>This post <strong>does not</strong> cover client side testing, mostly because I think the whole setup is a mess right now. There&#39;s <em>a lot</em> of tools available, but the process is still a lot of customisation (with respect to my own experience) so I don&#39;t think I&#39;ve got it right yet at all.</p>
+<h2>Test runners</h2><p>Good lord there&#39;s a mass of choice. Pick your poison and stick with it (until you find a reason to move). I&#39;ve tried jasmine, mocha, qunit, tap and tape. Then you&#39;ve got karma, zuul...and another one...I think!</p>
+<p>I like my test runners to be 100% familiar JavaScript which is why I&#39;ve settled on <a href="https://www.npmjs.com/package/tape">tape</a>. Up until recently I&#39;d always use tape as my test library <em>and</em> my test runner (the executable), but very recently I&#39;ve started to mixing tape with <a href="https://www.npmjs.com/package/tap">tap</a> in that I&#39;ll use tape for the test code (mostly because most of my tests are written with it) but I&#39;ll run the tests with tap (specifically for the test coverage, which I&#39;ll touch on later).</p>
+<p>I&#39;ll use tape as such:</p>
+<pre><code class="language-js">var test = require(&#39;tape&#39;);
+var lib = require(&#39;..&#39;); // my actual package
+
+test(&#39;litmus&#39;, function (assert) {
+  assert.plan(1);
+  assert.ok(lib, &#39;the library loaded&#39;);
+});
+</code></pre>
+<p>I&#39;m a big fan of planning my tests using the <code>assert.plan(n)</code> (because a lot of what I test is async), and then making sure I&#39;m actually fulfilling those specific tests. tape also comes with the usual <code>.equals</code>, <code>.deepEquals</code>, <code>.fail</code> and <code>.bail</code> (for fail and exit) and <code>.end</code> for non-planned tests.</p>
+<p>The only trouble I&#39;ve had with tape is that there&#39;s no <code>beforeEach</code> and <code>afterEach</code> which is very useful for state reset. However, it&#39;s possible to patch tape using <a href="https://github.com/remy/autocache/blob/master/test/core.js#L474-L510">this technique</a>. This alone might be a reason to use tap as the test library...maybe.</p>
+<h2>Reporters</h2><p>The tape module is compatible with <a href="https://testanything.org/">Test Anything Protocol</a>, so by itself it&#39;s fairly raw. So I pipe the output to <a href="https://www.npmjs.com/package/tap-spec">tap-spec</a>.</p>
+<p>The problem that took me about 4 hours to debug was that if the test harness threw an exception, that exception would be swallowed by tap-spec. What this means from a practical point of view is: if my test script (like the one above) had an exception, the &quot;tests would pass&quot;.</p>
+<p>I found that if I install <code>tap-spec@2.x</code> then it errors correctly. I know I&#39;m two major (breaking) changes out of date, but at the cost of getting the <em>right</em> result in my tests - it&#39;s worth it.</p>
+<p><strong>Update</strong> since using tap as my test runner, I don&#39;t mix it with tap-spec, so I&#39;ve dropped this as a pre-requisite.</p>
+<h2>Mocking</h2><p>Something I&#39;ve always struggled with is how to mock out a full environment and state without actually having the human interaction required to get to that point in the application.</p>
+<p>A simple example of this I had lately was testing with a package called inquirer for the <a href="https://github.com/snyk/snyk">Snyk cli</a> which prompts the user for various bits of content, and then does something with it. I want to test the full flow of code that uses inquirer inside of Snyk, but to do that I&#39;d need to take control of inquirer somehow.</p>
+<p>That&#39;s where <a href="https://github.com/thlorenz/proxyquire">proxyquire</a> and optionally <a href="http://sinonjs.org/">sinon</a> come into play.</p>
+<h3>Proxyquire</h3><p>Proxyquire will <em>require</em> your module, but allow you to intercept the loading of dependencies in that module.</p>
+<p>For instance, in Snyk, I load the inquirer package in a module called <code>wizard.js</code>. So to test the wizard, I will proxy&#39;require the module, and take control of the inquirer package as such:</p>
+<pre><code class="language-js">var answers = require(&#39;./fixtures/inquirer-answers.json&#39;);
+var wizard = proxyquire(&#39;../cli/commands/protect/wizard&#39;, {
+  // when the wizard runs require(&#39;inquirer&#39;),
+  // it&#39;ll get this back
+  inquirer: {
+    prompt: function (questions, callback) {
+      if (questions.name === &#39;misc-start-over&#39;) {
+        // handle a specific case manually
+        return callback({ &#39;misc-start-over&#39;: false });
+      }
+
+      // otherwise, return the fixtures
+      return callback(answers);
+    },
+  },
+});
+
+wizard().then(function () {
+  // tests 🎉
+}).then(function () {
+  t.end();
+});
+</code></pre>
+<p>I can also take control of my own modules being loaded, the key tip is that the path used to load the module exactly matches the key you use in the <code>proxyquire</code> call:</p>
+<pre><code class="language-js">var wizard = proxyquire(&#39;../cli/commands/protect/wizard&#39;, {
+  &#39;../../../lib/&#39;: {
+    protect: function () {
+      return Promise.resolve(require(&#39;./fixutres/vulns.json&#39;));
+    }
+  },
+  inquirer: {
+    // as before
+  },
+});
+</code></pre>
+<p>Note that with proxyquire you can only take over modules <em>one</em> level deep (so I can&#39;t nest a proxyquire inside of the <code>inquirer</code> property in the above example). This is a bit of a limitation, but you can work around it by loading in all your modules ahead of time (i.e. use proxyquire to overload a package that inquirer might use).</p>
+<h3>Sinon</h3><p>I won&#39;t say too much about Sinon, but the main use allows me to wrap and existing function with a mock function, and later on in my tests I can test what values were used to call that mocked function (or what was returned), or how many times it was called, what was used to call the function on the nth call, etc.</p>
+<p>Very useful if you want to be sure of what&#39;s going in and out of your functions.</p>
+<h2>Pre-tests</h2><p>Before my code even gets tested though, it&#39;ll check that the code passes my coding guidelines via <a href="http://jscs.info/">JSCS</a> (check out <a href="https://medium.com/@addyosmani/auto-formatting-javascript-code-style-fe0f98a923b8">Addy Osmani&#39;s superb guide to JSCS</a>). This is <em>my</em> <code>.jscsrc</code>, pick your own, stick with it, share it amongst the team:</p>
+<pre><code class="language-json">{
+  &quot;preset&quot;: &quot;node-style-guide&quot;,
+  &quot;requireCapitalizedComments&quot;: null,
+  &quot;requireSpacesInAnonymousFunctionExpression&quot;: {
+    &quot;beforeOpeningCurlyBrace&quot;: true,
+    &quot;beforeOpeningRoundBrace&quot;: true
+  },
+  &quot;disallowSpacesInNamedFunctionExpression&quot;: {
+    &quot;beforeOpeningRoundBrace&quot;: true
+  },
+  &quot;excludeFiles&quot;: [&quot;node_modules/**&quot;],
+  &quot;disallowSpacesInFunction&quot;: null
+}
+</code></pre>
+<h2>File structure</h2><p>All my new projects include the same directory setup and naming convention:</p>
+<pre><code>└── test
+    ├── fixtures
+    │   ├── ...scripts...
+    │   └── ...html, etc...
+    ├── foo.test.js
+    └── litmus.test.js
+</code></pre><p>The <code>fixture</code> directory is for anything the tests needs to setup with. All actual test scripts are suffixed with <code>.test.js</code>.</p>
+<p>Where I&#39;ve included both server-side and client-side tests, I&#39;ll name the client-side tests as <code>.browser.js</code> so that the test command is able to isolate browser specific tests.</p>
+<h2>Running</h2><p>Since this is node land, I use npm only for my tests. So I have the following in my <code>package.json</code>:</p>
+<pre><code class="language-json">{
+  &quot;scripts&quot;: {
+    &quot;style&quot;: &quot;jscs -v lib/*.js&quot;,
+    &quot;test&quot;: &quot;npm run style &amp;&amp; node test/*.test.js | tap-spec&quot;
+  }
+}
+</code></pre>
+<p>This <code>test</code> command is looking for all my test scripts, using tape to generate a TAP formatted output, and piping to tap-spec (@2.x, not @latest).</p>
+<h2>Blank slates</h2><p>My big gripe with all the test runners is that each test script that&#39;s included is run in the same process and same shared memory as all the other test scripts.</p>
+<p>That&#39;s to say, if something in <code>foo.test.js</code> modifies my library (that I&#39;m testing), then it&#39;ll remained tainted when <code>bar.test.js</code> runs. Of course some cases can be handled by a proper <code>beforeEach</code> (or <code>before</code>) call, but in some cases, you need a fresh start.</p>
+<p>This is what I do:</p>
+<pre><code class="language-bash">for FILE in test/*.test.js;
+  do echo $FILE;
+  node $FILE | tap-spec;
+  if [ $? -ne 0 ];
+    then exit 1;
+  fi;
+done
+</code></pre>
+<p>This is all compressed down to a single line, and put inside the <code>test</code> command in my <code>package.json</code>. This way, when the test exits, and it&#39;s successful, it&#39;ll move on to the next script, completely ditching the process. Equally, if it fails, the <code>if [ $? ]</code> test will throw the exit to Travis.</p>
+<p>This feels utterly clunky, but I can&#39;t see any other way to do a total reset. It might be because I have to write insane <a href="https://travis-ci.org/remy/nodemon/jobs/71828422">tests for things like nodemon</a>. The main downside of this (that I can see) is that your total count is not totalled up at the end and <strong>importantly</strong> if you have test coverage, it won&#39;t work - since the test coverage is running once for each file.</p>
+<p><strong>Be warned:</strong> do not use this if you don&#39;t have to!</p>
+<h2>Watching</h2><p>Being that I&#39;m not a big fan of larger tool chains (though there&#39;s nothing wrong with them, it&#39;s just my preference), I&#39;ve been known to include <a href="https://github.com/remy/nodemon">nodemon</a> in a watch command to monitor for changes to re-run tests.</p>
+<p>That would look like this:</p>
+<pre><code class="language-json">{
+  &quot;scripts&quot;: {
+    &quot;style&quot;: &quot;jscs -v lib/*.js&quot;,
+    &quot;test&quot;: &quot;npm run style &amp;&amp; node test/*.test.js | tap-spec&quot;,
+    &quot;watch&quot;: &quot;nodemon -q -x &#39;npm test&#39;&quot;
+  }
+}
+</code></pre>
+<p>Then on the cli I run:</p>
+<pre><code class="language-bash">npm run watch
+</code></pre>
+<p>nodemon is running in &quot;quiet&quot; mode (i.e. suppress any nodemon specific output), and make the thing it executes be <code>npm test</code>.</p>
+<h2>Code coverage</h2><p>I mentioned earlier that I switched to tap for my test runner. The main reason for this was that it comes with code coverage integration. I can add <code>--cov --coverage-report=lcov</code> to my test command, and I get <a href="https://www.npmjs.com/package/istanbul">istanbul</a> coverage reports that I click through and browse.</p>
+<p>Remember though, <strong>code coverage != test coverage</strong>, it does give me some very useful insights into my code, particularly to show me either blind spots in my code (that I&#39;ve not tested at all), or areas of code that are not used at all and should be removed.</p>
+<p>Though there is always the temptation to get the few extra tests that take that code coverage up to 100%, just by hitting a specific line of code in the tests.</p>
+<p>I&#39;m also using <a href="https://coveralls.io/">Coveralls</a> (for a private repo) and tap integrates nicely with Coveralls from Travis. The trick here (if you want to avoid putting your Coveralls token in your repo) is to put the following two values in the environment variables settings in Travis: <code>COVERALLS_REPO_TOKEN=x</code>, <code>COVERALLS_SERVICE_NAME=travis-ci</code>.</p>
+<h2>Couple of tips</h2><p><strong>Avoid using <code>assert.ok</code> if possible.</strong> My tests usually relied on this, but when they failed, there&#39;s no information on <em>why</em> they failed. Use <code>assert.equal</code> instead. If it doesn&#39;t match, then you&#39;ll get the delta in the failure - which hopefully leads to <em>why</em> it failed.</p>
+<p><strong>If it makes sense: make tests reusable.</strong> This is very dependant on the problem you&#39;re solving, but I was able to do this on a few projects, including my <a href="https://github.com/remy/inliner/">inliner</a> repo. The main tests are: does the source file inline down to &quot;some target content&quot;. So the tests run through a fixture directory looking for specific file extensions, allowing users to <a href="https://github.com/remy/inliner/blob/master/CONTRIBUTING.md">contribute tests very easily</a>. I also reuse tests in my autocache adapters, feel free to review the <a href="https://github.com/remy/autocache-localstorage/blob/master/test/localstorage.test.js">localStorage version</a> that uses autocache&#39;s <a href="https://github.com/remy/autocache/blob/master/test/core.js">core.js</a> tests.</p>
+<h2>All together now</h2><p>What does that all look like? Rather than bloating this post even more, I&#39;ve added all the files (with a litmus test) and configuration into a (work in progress) <a href="https://github.com/remy/templates/tree/master/node">git repo</a>.</p>
+<hr>
+<p>I&#39;ve installed these pieces locally, <em>not</em> globally, for dev only use by running:</p>
+<pre><code class="language-bash">npm install --save-dev tape tap-spec@2 jscs
+</code></pre>
+<p>I&#39;ll also make sure that my tests and fixtures are excluded from my npm packages too, with <code>.npmignore</code> containing (at least):</p>
+<pre><code>/test
+</code></pre><p>I&#39;d like to generate my project folder structure, but as yet, it&#39;s a manual job (I&#39;ve been wanting to check out <a href="http://yeoman.io/">Yeoman</a> for generating, but it still feels like a lot of work for something that&#39;s reasonably straight forward).</p>
+<h2>A closing thought</h2><p>It&#39;s worth saying that, <em>for me</em> it&#39;s taken years and years to get to the point where tests are a normal part of my workflow. The most important part of that is making it easy. <strong>It needs to be easy to test.</strong> If there&#39;s lot of barriers to testing, then it&#39;ll fall behind, and once it&#39;s in a state of disrepair, all testing is lost.</p>
+<p>This process works for me (and I don&#39;t need <em>all</em> of this to make the process work). Find what works for you to make it easy.</p>
+<p>Finally, kudos to <a href="https://twitter.com/brianleroux">Brian LeRoux</a>, on my behest, he kept returning to (my conference) <a href="http://ffconf.org">ffconf</a> to run workshops on testing, and it&#39;s his work that finally got me to shake my bad habits of no-test-coding.</p>
+<p>Related posts:</p>
+<ul>
+<li><a href="/using-travis-with-private-npm-deps">Using travis with private npm deps</a><!-- - [My client side testing wish](/my-client-side-testing-wish) --></li>
+</ul>
+]]></content:encoded></item><item><title>Content warnings</title><guid isPermaLink="false">content-warnings</guid><link>https://remysharp.com/2015/11/27/content-warnings</link><pubDate>Fri, 27 Nov 2015 14:33:38 +0000</pubDate><description><![CDATA[I&#39;ve recently been giving a talk that starts with a content warning. I wasn&#39;t quite sure whether it warranted it, as it&#39;s only a brief mention of the potential trigger, but it felt like that was enough to justify the warning.
+Content warnings apply to a wide range of traumas, and I wanted to ask that if you, my dear reader, are giving talks at a conference, please consider whether your content requires a content warning.]]></description><content:encoded><![CDATA[<p>I&#39;ve recently been giving a talk that starts with a content warning. I wasn&#39;t quite sure whether it warranted it, as it&#39;s only a brief mention of the potential trigger, but it felt like that was <em>enough</em> to justify the warning.</p>
+<p>Content warnings apply to a wide range of traumas, and I wanted to ask that if you, my dear reader, are giving talks at a conference, please consider whether your content requires a content warning.</p>
+<!--more-->
+<p><strong><em>Content warning: infant death.</em></strong></p>
+<h2>My experience</h2><p>The obvious candidates for content and trigger warnings (or certainly to me in an earlier life) are any form of abuse.</p>
+<p>I wanted to share the experience I had attending a conference in New York a couple of years ago.</p>
+<p>The speaker had been introduced on stage to talk about how they got involved with start-ups and created business and generally talk about how they were awesome.</p>
+<p>The talk was very focused around bootstrapping business when all of a sudden I found myself listening to the gentleman talking about a baby that was born, and suddenly he was running to hospital with it in his arms and the baby died.</p>
+<hr>
+<p>My baby had died.</p>
+<p>Still to this day, I have no idea how or why he shoehorned this story into his talk. Obviously it was important to him. <em>Obviously</em>. But as an audience member, it hit me like a sack of bricks in the stomach.</p>
+<p>All I could think about was my own daughter. I felt completely alone, and a very, very long way from home, my safe place.</p>
+<p>I have absolutely no idea how he finished his talk. The rest of the event is a haze to me, and because of this isolated incident, it&#39;s trashed my memory of what should have been a decent event.</p>
+<p>Had the speaker included just one statement up front that his talk contained infant death, then I could have chosen to leave, or I could brace myself for the content. Instead, I felt anger towards the speaker for hurting me in such a way. Using, to me, a story of terrible pain, as a highlight for his talk.</p>
+<hr>
+<p>If you&#39;re still not sure, think of a content warning like <a href="https://en.wikipedia.org/wiki/History_of_British_film_certificates#2009.E2.80.93present">UK film certificates</a>. U means suitable for all, otherwise the certificate is driven by the content such as &quot;sexual violence&quot; for an 18.</p>
+<p>So if you&#39;re giving talks, just think about whether you need a content warning. I&#39;ve been giving public talks now for 7 years, and I now have have a talk that includes a content warning. Just consider it, and pass this sentiment on to your peers.</p>
+]]></content:encoded></item><item><title>On making ffconf a safe place</title><guid isPermaLink="false">on-making-ffconf-a-safe-place</guid><link>https://remysharp.com/2015/11/10/on-making-ffconf-a-safe-place</link><pubDate>Tue, 10 Nov 2015 14:46:30 +0000</pubDate><description><![CDATA[Last week, ffconf v7 was released, and going by all the tweets, photos and personal interactions I received, it was a huge success. Again. Phew.
+However, as dug past the congratulations I found two things that upset me. I wanted to address them in this post.]]></description><content:encoded><![CDATA[<p>Last week, <a href="http://2015.ffconf.org">ffconf v7</a> was released, and going by all the tweets, photos and personal interactions I received, it was a <strong>huge</strong> success. Again. Phew.</p>
+<p>However, as dug past the congratulations I found two things that upset me. I wanted to address them in this post.</p>
+<!--more-->
+<h2>A precursor</h2><p>Nothing that I&#39;m about to outline is a breach of the <a href="http://confcodeofconduct.com">Code of Conduct</a> which we use for ffconf. What I mean to say is that ffconf is <em>my</em> event, and if I feel something is wrong, I want to fix it.</p>
+<p><strong>I want ffconf to be a safe environment for all that attend.</strong> I will do this at the expense of blocking individuals from attending if I have good reason to do so.</p>
+<p>This is me, using my position of privilege to make ffconf a safer environment for all.</p>
+<h2>Recruiters</h2><p>I&#39;m not against companies looking to recruit. Indeed most companies in web tech are trying to recruit talent and that&#39;s perfectly fine. It&#39;s fine because those companies and individuals representing these companies are there to enjoy the event, learn and socialise afterwards.</p>
+<p>However, recruiter <em>networking</em>, aggressively working the room at the after party is unpleasant for many. In fact, I&#39;ve heard directly from many attendees that said it was unwanted attention.</p>
+<p>Like having a recruiter <em>pretending</em> to be a developer (or pretending to have some knowledge of your field), then glazing over when you <em>do</em> start to talk technical and glancing at their boss looking for a way out.</p>
+<p>Or being told that you should move to London because that&#39;s where all the work is. Or being emailed with false claims about ffconf, and how the recruiter can <em>get you</em> some JavaScript developers.</p>
+<p>There are two reasons why this is not okay: the first is that it&#39;s cold-call, <em>hard sell</em> approach to sales. It&#39;s uncomfortable and unpleasant for those being approached.</p>
+<p>The second is <strong>most importantly</strong> the tickets taken up by these recruitment companies should have gone to people that would have genuinely benefited from the event. <strong>This</strong> is the reason that I will make changes for 2016&#39;s event to prevent recruiters from the event.</p>
+<h2>&quot;It&#39;s okay, that&#39;s just men&quot;</h2><p>In particular, at ffconf I asked the amazing <a href="https://twitter.com/lrnrd">Lena Reinhard</a> to give a talk about community, open source and diversity. Lena&#39;s talk was awe-inspiring. Extremely heavy content and extremely powerful messages.</p>
+<p>As <a href="https://twitter.com/almostobsolete/status/662679575932092416">one attendee</a> put it: &quot;some difficult and uncomfortable truths&quot;.</p>
+<p>There was (at least) one individual that was being loud and obnoxious during and after the talk. When I heard about this from a few of the women that attended our event, although they were offended, they passed it off with <em>that&#39;s just men, I&#39;ve seen worse</em>.</p>
+<p>I understand why, but it&#39;s not okay with me. I want to create a safe space at ffconf, and I want attendees to know that it is <em>not</em> acceptable.</p>
+<hr>
+<p><strong>I know this will take time, and this will take years (since our event is once a year), but I will follow through on this, and I will create a safe and respectful space in ffconf.</strong></p>
+<hr>
+<p>If you attended ffconf 2015, and want to give us your experience, negative or positive, please email us directly on <a href="mailto:events@leftlogic.com">events@leftlogic.com</a>.</p>
+<div class="update"><strong>Updated 2015-11-11:</strong> I&#39;ve updated the &quot;that&#39;s just men&quot; section to try to remove any implied message, or opinions that some readers thought I was trying to put across. Hopefully this is clearer now. For this reason, some of the comment below may not make sense without the original context.</div>]]></content:encoded></item><item><title>Using travis with private npm deps</title><guid isPermaLink="false">using-travis-with-private-npm-deps</guid><link>https://remysharp.com/2015/10/26/using-travis-with-private-npm-deps</link><pubDate>Mon, 26 Oct 2015 12:58:38 +0000</pubDate><description><![CDATA[I&#39;ve recently been working on a project that requires privately scoped npm modules. The problem I encountered was: when Travis ran tests that depended on @scoped modules, it would fail:
+npm ERR! 404 Not found : @remy/super-awesome-private-mod
+This post fixes that issue (and is mostly here when I forget, I can &quot;google myself&quot;!).]]></description><content:encoded><![CDATA[<p>I&#39;ve recently been working on a project that requires <a href="https://www.npmjs.com/private-modules">privately scoped npm modules</a>. The problem I encountered was: when Travis ran tests that depended on @scoped modules, it would fail:</p>
+<pre><code>npm ERR! 404 Not found : @remy/super-awesome-private-mod
+</code></pre><p>This post fixes that issue (and is mostly here when I forget, I can &quot;google myself&quot;!).</p>
+<!--more-->
+<h2>1. Capture your token</h2><p>If you&#39;re using <a href="https://github.com/semantic-release/cli">semantic-release cli</a> (which you should, it&#39;s awesome), then you&#39;ll already have the <code>NPM_TOKEN</code> as an environment value in Travis.</p>
+<p>If not, you&#39;ll need to find your npm token. This is found in your home directory, in the <code>.npmrc</code> file. The token is everything after <code>_authToken=</code>. Your file should contain a line like this:</p>
+<pre><code>//registry.npmjs.org/:_authToken=00000000-0000-0000-0000-000000000000
+</code></pre><p>Note that where I&#39;ve put zeros, you&#39;ll see letters and numbers. Once you&#39;ve copied the token, you&#39;ll need to create a new env value in your Travis setting (on the individual build pages):</p>
+<p><img src="/images/travis-settings.png" alt="Travis settings"></p>
+<p>Then under the &quot;Environment Values&quot; add a new value (keep &quot;display value in build log&quot; off):</p>
+<pre><code>NPM_TOKEN = 00000000-0000-0000-0000-000000000000
+</code></pre><p>Then hit &quot;add&quot;.</p>
+<h2>2. npmrc</h2><p>You have two options here. The first option is to dynamically create an <code>.npmrc</code> (<a href="https://docs.npmjs.com/files/npmrc">more about npmrc</a>) in the <code>.travis.yml</code> setup. The second option is to add the file to your repo, but it also requires a change to your shell environment. I&#39;ll cover both.</p>
+<p>Note that if you change your npm password, then you&#39;ll need to update your <code>NPM_TOKEN</code>, otherwise it shouldn&#39;t need changing in the future.</p>
+<h3>Dynamic</h3><p>In your <code>.travis.yml</code> you&#39;ll create an <code>.npmrc</code> file on the fly. You&#39;ll need to do this in the <code>before_install</code> section, as per:</p>
+<pre><code>before_install:
+  - echo &quot;//registry.npmjs.org/:_authToken=\${NPM_TOKEN}&quot; &gt; .npmrc
+</code></pre><p>Note that the escaped <code>\$</code> is important. This will ensure that your private npm token is not echoed out in your Travis logs. That&#39;s it. With this method, you&#39;re ready.</p>
+<p>I personally like this method because it keeps the <code>.npmrc</code> file out of my git repo and it means I don&#39;t have to remember to fiddle with my shell environment variables as we&#39;ll see next.</p>
+<h3>File based</h3><p>Create a <code>.npmrc</code> file and put it in the root of the directory that Travis will run (i.e. the root of the git repo typically).</p>
+<p>Have the file contain (at least) this:</p>
+<pre><code>//registry.npmjs.org/:_authToken=${NPM_TOKEN}
+</code></pre><p>Now push this to your repo and let Travis run it&#39;s test. Travis will now have access to install your privately scoped npm packages.</p>
+<p>Now you build will work, but <code>npm install</code> <em>won&#39;t</em> work locally until you add the <code>NPM_TOKEN=00000...</code> to your local shell environment variables.</p>
+<p>You might need to tweak these directions depending on your shell, but if you&#39;re using bash, add the following line to your <code>.bash_profile</code> and after run <code>source ~/.bash_profile</code>:</p>
+<pre><code class="language-bash">export NPM_TOKEN=&quot;00000000-0000-0000-0000-000000000000&quot;
+</code></pre>
+<p>The downside of this method (once you&#39;ve got your shell sorted) is that if you&#39;re working in a team, each team member will have to add this line to their shell too, as the <code>.npmrc</code> file in the root of your project directory will require a valid token.</p>
+<hr>
+<p>Now your private modules will install in Travis. If you need this in an environment like Heroku, I found <a href="http://blog.getpiggybank.com/npm-private-modules-with-heroku/">this</a> article very useful (and the basis of this post).</p>
+]]></content:encoded></item><item><title>The Art of Debugging</title><guid isPermaLink="false">the-art-of-debugging</guid><link>https://remysharp.com/2015/10/14/the-art-of-debugging</link><pubDate>Wed, 14 Oct 2015 21:24:16 +0000</pubDate><description><![CDATA[This is the accompanying article for my Art of Debugging talk that I first gave at Fronteers in Amsterdam in 2015.
+TL;DR: learn every tool that&#39;s available to use, use them as you need them, enjoy bug bustin&#39; - it&#39;s certainly more fun pounding the keyboard and working on a 6 month feature drive.]]></description><content:encoded><![CDATA[<p>This is the accompanying article for my <em>Art of Debugging</em> talk that I first gave at Fronteers in Amsterdam in 2015.</p>
+<p>TL;DR: learn every tool that&#39;s available to use, use them as you need them, enjoy bug bustin&#39; - it&#39;s certainly more fun pounding the keyboard and working on a 6 month feature drive.</p>
+<!--more-->
+<p><img src="/images/art-of-debugging-cover.jpg" alt="Art of Debugging"></p>
+<h2>Additional resources</h2><ul>
+<li><a href="https://vimeo.com/145242226">Video of the talk</a></li>
+<li><a href="https://speakerdeck.com/rem/the-art-of-debugging">Slides</a></li>
+</ul>
+<p>But, before we start though...</p>
+<h2>How to skip to the end...</h2><p><strong>Don&#39;t.</strong></p>
+<p><strong>Write.</strong></p>
+<p><strong>Bugs.</strong></p>
+<p><img src="/images/drop-mic.gif" style="width: 100%"></p>
+<h2>Although...</h2><p>Assuming you&#39;re not a robot, and you might have written a bug or two in your time, the truth is: there is no silver bullet.</p>
+<p>And in fact, I lied a moment ago, &quot;don&#39;t write bugs&quot; is the exact opposite to learning to debug. You need experience. You have to encounter bugs to be able to recognise how to approach them.</p>
+<p>There&#39;s no hard and fast skill you can acquire for debugging (or so I believe). It&#39;s acquired through time as you struggle through the first time you encounter something. Spending hours and hours trying to fix a problem, but the upshot: you won&#39;t spend hours and hours the next time around.</p>
+<p>At the company I worked at 10 years ago, when new employees came on board, we would have them all excited about the job and the kinds of problems we were solving, but on the day of them joining, they would be assigned to bugs for 3 months. It kinda deflated their expectations, but we&#39;d find that after those 3 months, they&#39;d request to stay on bugs.</p>
+<p>They had the chance to dabble in so many areas of the business whereas other developers were coding the same single feature for 3, 6 even 12 months, and even then, it would go live, have bugs, and our bug catcher would swoop in, fix the bug and get a slice of the glory.</p>
+<p>Attaining that <em>hands on</em> experience, I believe, is key to both being a good developer, but really, knowing how to debug anything. The designer from that company 10 years ago, Chris - he was the CSS wiz. He knew all the answers when the server side devs would get stuck with simple things. I&#39;d often find myself asking him why the layout had broken so badly in what I thought was a relatively simple design. His answer, quite often, was &quot;add <code>zoom: 1</code> to that element&quot;.</p>
+<p>He had completed the debugging step in head and come to a reasonable proposal that this particular change could fix my issue, almost entirely because he had seen so many permutations of the visual bug that he could recognise by eye.</p>
+<p>That&#39;s what I&#39;ll do in many cases of bugs I come across. I&#39;ll know the particular system well enough to allow myself a heads start to the solution.</p>
+<p>But before I continue, I have <em>two</em> disclaimers...</p>
+<h2>Disclaimer #1 - frameworks</h2><p>Before anyone gets all preachy, this is not the definitive way to debug on the web. There are <strong>many ways</strong>. This just happens to be what I know, and how I do it. If that helps you, super. If you do things differently, that&#39;s cool too.</p>
+<p>I <em>personally</em> don&#39;t use frameworks and large (opinionated) libraries. Ember, Polymer, React, Anglular, etclib. I don&#39;t use them. I&#39;ve not had a need for them in anything I&#39;ve done, so I&#39;ve not had the requirement to learn (and please don&#39;t take this as an invitation to teach me!).</p>
+<p>What this means is the the specific tools I use <em>may not</em> be applicable to your workflow. In fact, it&#39;s entirely possible that it&#39;s not <em>compatible</em> with your workflow.</p>
+<p>That problem is partly related to the complexity of the applications you&#39;re using (by &quot;applications&quot; I mean the supporting code to pull of the site you&#39;re trying to build). For instance, React has created it&#39;s own language to give developers maximum <del>confusion</del> impact in building <em>apps</em>, but because of this, the code it transpiles to is utterly useless to humans and is intended only for computers/browsers. So debugging it requires <em>at the very least</em> sourcemaps, but because (I can only assume) it also has it&#39;s own state management (and other fancy toys) you&#39;re encouraged to install the <a href="http://facebook.github.io/react/blog/2015/09/02/new-react-developer-tools.html">devtools extension to debug your React apps</a> (I believe Ember is similar here too).</p>
+<p>That doesn&#39;t mean this information is useless to you, I will touch on ideas that are important when debugging, I&#39;m just saying: I don&#39;t use frameworks, so I don&#39;t debug with them either.</p>
+<h2>Disclaimer #2 - I rarely cross browser test</h2><p>Yep. I said it. But before you throw me to the wolves, hear me out. I don&#39;t cross browser test because more often than not, my work requires that I write JavaScript. Vanilla JavaScript, not JavaScript that interacts with the DOM.</p>
+<p>In my eyes, there&#39;s two types of JavaScript that I&#39;m interested in: browser interactions and everything else.</p>
+<p>Everything else has to work in ES5 (perhaps with bits of ES6 sprinkled on) but that&#39;s it. Unless I&#39;m supporting IE8 (which recent projects I&#39;m not), all my JavaScript will work across all browsers, because it&#39;s stuff like:</p>
+<pre><code class="language-js">function magicNumber(a, b) {
+  return Math.pow(a, b) * b / Math.PI;
+}
+</code></pre>
+<p>It doesn&#39;t matter where the code above runs, if there&#39;s a bug, there&#39;s a bug in all the browsers. If there isn&#39;t a bug, there isn&#39;t a bug and that&#39;s that.</p>
+<p><strong>Also</strong> this doesn&#39;t mean my code isn&#39;t tested across other browsers. If possible and required, I&#39;ll run automated tests in different browser environments (using tools like Karma or Zuul - but the whole automated cross browser testing thing is yet to be really fixed, it&#39;s kind of a mess right now).</p>
+<p>Again, this is entirely due to the nature of my work. I&#39;ll address later how (or even whether) I will cross browser test.</p>
+<h2>The Art of Debugging</h2><p>This is something I open with in all my debugging workshops, and look, even Wikipedia says it&#39;s an art, <em>so it&#39;s a thing, okay!</em></p>
+<p><a href="https://en.wikipedia.org/wiki/Software_bug#Debugging"><img src="/images/wiki-debugging.gif" alt="debugging is an art"></a></p>
+<p>I breakdown (in my head) debugging as the following:</p>
+<ol>
+<li><strong>Replicate</strong> translation: see the bug</li>
+<li><strong>Isolate</strong> translation: understand the bug</li>
+<li><strong>Eliminate</strong> translation: fix the bug</li>
+</ol>
+<h3>Replicate</h3><p>Replicating the bug is the hardest part of the entire job. More often than not you&#39;ll get a bug report along the lines of:</p>
+<blockquote>
+<p>Saving doesn&#39;t work.</p>
+</blockquote>
+<p>...and that&#39;s it.</p>
+<p>Right, so not only do I have to be diplomatic in your response, as much as I want to respond with simply &quot;yes it does&quot; [close], but I also need to glean as much information as possible to be able to replicate what this user is seeing.</p>
+<p>If the site they&#39;re talking about is jsbin, then I know saving does work, because I just used it, it just means that saving isn&#39;t working for them (and potentially others). Translation: <em>saving could just be working for <strong>me</strong></em>.</p>
+<p>If I visit a URL that the user is talking about, and it breaks immediately. That&#39;s a lucky break. This is the <strong>litmus test</strong> and it&#39;s always worth doing. Never jump right into trying to replicate 100% - take it step by step. However, it&#39;s also more likely is that there were a series of events that preceded the bug manifesting, and I&#39;ll have to understand what those were, and then repeat them myself.</p>
+<p>Carefully, meticulously and systematically. This is important because I won&#39;t just do this once, I have to be able to do this over and over (or at the very least: twice).</p>
+<p>There&#39;s some key tools that help me to replicate environments, or two at least help identify what parts of the environment I can rule out:</p>
+<h4>Privacy browsing mode / incognito</h4><p>Incognito mode in Chrome (and known with other names in other browsers) lets me fire up the site <em>without</em> (most of) my browser extensions running. It&#39;ll also start with a clean slate with respect to cookies, offline storage and any other pre-baked configuration that my &quot;normal&quot; browsing sessions come with.</p>
+<p>I can say for certain that I get at <em>least</em> one bug filed each year which is usually very strange and comes down to a rogue extensions on the user&#39;s browser that&#39;s interfering with the web site code.</p>
+<p>By running in incognito, and seeing no bug, then asking the user to repeat the same task, I&#39;m able to immediately confirm that there&#39;s an external entity at play (i.e. typically an extension).</p>
+<h4>Multiple profiles</h4><p>In Chrome I have my personal profile. The one that lets me visit my email without always asking me to log in (though...maybe that&#39;s bad, but swiftly moving on).</p>
+<p>I also have two other profiles:</p>
+<ul>
+<li>Anonymous - this user is totally clean, no extensions, no history</li>
+<li>Troll - this user will be like Anonymous, but also have cookies disabled, and security settings put on maximum</li>
+</ul>
+<p>I don&#39;t often need to switch into these profiles (mostly because I&#39;m able to replicate bugs earlier in my testing), but these are available to easily jump to.</p>
+<p>The troll user is particularly useful, because it&#39;s very easy (for me) to forget that some users have higher security settings and the result is that APIs like <code>localStorage</code> will throw exceptions - which if are uncaught, could cause chaos.</p>
+<hr>
+<p>Now that I&#39;m able to replicate consistently, it&#39;s time to strip away as much as I can to reduce the noise and potential confusion before I&#39;m able to fix.</p>
+<h3>Isolate</h3><p>Isolation is about parring down the bug as far as I can. If an extension is the cause of the bug, let&#39;s disable one extension at a time until the bad one is found.</p>
+<p>If it&#39;s a bug in a relatively complicated set of JavaScript requiring a lot of user interaction, I&#39;ll ask myself <em>can I refactor this particular area of code <strong>out</strong> so that I can test it in isolation and inject pre-baked state</em>?</p>
+<p>I built <a href="https://jsbin.com">jsbin.com</a> for exactly this problem. To take a problem, strip it right down, and then either fix and share with whomever needs it.</p>
+<p>Once it&#39;s stripped down as much as I want it to be, I&#39;m on to fixing the bug.</p>
+<h3>Eliminate</h3><p>This is actually easy once the replication side of things is taken care of. These days (2015) I&#39;m more likely to actually create a failing test in my project that will replicate the bug that I&#39;m working on, and then I&#39;ll fix against the failing test. The benefits should be obvious.</p>
+<p>It&#39;s really quite simple at this state. The same way that the act of writing code is simple (once you can touch type). The hard part is in solving the problem, which doesn&#39;t happen by pressing keys on keyboard.</p>
+<h2>When you can&#39;t replicate...</h2><p>Well...you&#39;re shit out of luck, and you can blind code a solution, but it&#39;s not debugging. You need to consider whether you&#39;ve got a <a href="https://en.wikipedia.org/wiki/Heisenbug">Heisenbug</a> on your hands (yes, I like that word!). It&#39;s a bug that literally changes shape and form as you try to interrogate it.</p>
+<p>I&#39;ve personally encountered a few of these myself. The worst kinds (for me) are when these bugs only occur in my <abbr title="continuous integration">CI</abbr> system (like Travis). The bug I was working on was fixed in my local environment, and I understood the code well enough to know the bug was fixed, but my tests wouldn&#39;t pass. The task now is different, the task was debug the test environment, which is a closed system when it&#39;s CI.</p>
+<p>The other significant time I encountered this type of problem was back when I used Firebug (which stopped around 2009-2010). Firebug is/was an intrusive debugging tool that would inject content into the DOM to achieve the debugging. It also had bugs (as do devtools and all the other debuggers - see the start of this post!). It meant that there were certain edge cases that you could run into that would trigger bugs in the debugger making debugging extra...challenging.</p>
+<p>The same is <em>sort of</em> true today. Recommendations for debugging with the devtools timeline is that you <em>don&#39;t</em> turn on all the recording checkboxes, and that you ideally close all other tabs <em>and</em> anything else that might be using WebKit (like Spotify...I&#39;m assuming there&#39;s some overlapping OS access that WebKit and Blink have...). This is because <em>all</em> of these will affect the performance recording.</p>
+<!-- (I also wrote the following about "state" and how it's important to the tools used for debugging, but this post was already long enough. However, I've left it here for prosperity) -->
+<!--
+
+## State
+
+For me, debugging comes down to **state**. I need to be able to inspect the state at any time to be able to understand exactly what's going on.
+
+Without state, I'm only able to guess as to what's wrong, and I could, in theory, fix a bug and see the output I intend, but there may be some other source issue that's broken.
+
+I do admit that saying that it comes down to "state" feels pretty...perhaps stuck in my ways. I'm not sure if it's that I can't see the wood for the trees, or that actually, state is the low common denominator for all debugging. It doesn't really matter, if I can get to the state of the application, I'm *most* of the way to solving the bug.
+
+---
+
+All the browsers currently support passive inspection of state, to some degree or another. A huge bonus is being able to interact with the state.
+
+The reason I personally use devtools is because I can not only observe passive state, but I can interact and *change* state whilst most importantly, not discarding the stack **and** I can save to disk with workspaces.
+
+Interactive state is not unique to devtools, IIRC I could do this back in the days of Firebug & Firefox.
+
+### Passive state
+
+Passive state is what I'm referring to as: *what has happened, and what's happening **right now***.
+
+This can range from being able to look at variable values, network request history, rendering histories (both from the point of view of layout, but also perhaps a canvas render history), memory usage and so on.
+
+### Interactive state
+
+Interactive state has everything from the passive state, except I can noodle with values. I can change, in real-time, the values being held in memory.
+
+What I personally love about devtools, and I'll show you, is that not only can I make that change to memory, but I can also change it in the code that's loaded and it'll commit to disk.
+
+Importantly here, if I change code that's currently being run (or that I've paused the code on), the current point of execution will back-up and then recompile and re-run the changes I made. **This is powerful stuff**.
+
+### The stack
+
+The final part of "state" is the stack, i.e. how did we arrive to this state. It would be amazing if it were possible to snapshot the state and rewind or save state to magically restore. Alas those hopes were quickly dashed by Addy Ossmani who took the time to explain why it's not technically possible (or sane) in this [post](https://gist.github.com/addyosmani/cee1ac65263cc7134711).
+
+Importantly though, where I mentioned earlier that in devtools I can change the code in real-time *and* have it saved (if I sued workspaces) then I can maintain the stack. The flip side is if I'm using a transpiler, like Babel, is that the transpile has to run again, and this requires a reload of the browser to get the updates in memory, and thus you lose the stack.
+-->
+<h2>Debugging approaches</h2><p>The tooling available splits into two categories:</p>
+<ul>
+<li>Inside out</li>
+<li>Outside in</li>
+</ul>
+<p>I acknowledge these aren&#39;t good names. By <em>inside out</em>, I mean that the <em>source</em> of the bug is known. Usually a particular function or line of code, and a <code>debugger</code> statement can be added, a breakpoint or a conditional breakpoint (break when an expression is truthy).</p>
+<p><em>Outside in</em> is more interesting, in that you can identify that there&#39;s a bug visually, perhaps an element isn&#39;t behaving the way you would expect. There&#39;s a growing number of tools to help to take you from the visual problem and break <em>into</em> the code source of the problem, <em>without</em> particularly knowing the source code.</p>
+<p>These tools include:</p>
+<ul>
+<li>DOM breakpoints - break on subtree modification, attribute modification or node removal</li>
+<li>Ajax breakpoints - break when an XHR call is executed</li>
+<li>Replaying XHR - allowing you to re-inject the response from the XHR call</li>
+<li>Timeline screenshots - both against the network (usually boot time) and on the timeline during runtime</li>
+</ul>
+<h2>My favourite/most used tools</h2><p>Finally I want to share with you some of the workflow I use and some of the tools that I always find myself returning to.</p>
+<h3>Workspaces &amp; real-time updates</h3><iframe width="1280" height="720" src="https://www.youtube.com/embed/Z_5XFAGn-u0" frameborder="0" allowfullscreen></iframe>
+
+<p>With devtools open, and the sources panel selected, simply drag the local directory you want to create a workspace for <em>onto</em> the source panel, and devtools will ask for access which you will need to confirm.</p>
+<p>This doesn&#39;t complete the step though. To let devtools know that a particular origin, like <code>http://localhost:8000</code> is being served from your new workspace, you need to map at least one file. Right click a file from the origin list, and select &quot;Map to file system resource&quot;, and select the <em>local</em> file it relates to.</p>
+<p>Now whenever you make any changes, you will be able to save and it will save directly to disk. Why is this important? Now you can debug and commit directly to disk without switching contexts, without switch from your editor to your browser.</p>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/U1zRyCkU4Ms" frameborder="0" allowfullscreen></iframe>
+
+<p>What is also really fun and powerful, is that if the CSS files were also mapped, <em>any</em> changes in the elements panel to styles, directly update the CSS file attached. This means I can make really tiny visual changes in the elements panel (where I&#39;m used to making changes) and it&#39;ll already be saved for me to disk.</p>
+<h3>Undo</h3><p>I&#39;ve run a number of <a href="http://leftlogic.com/training/debug">debugging workshops</a> and the one consistent question that comes up after I show off workspaces is:</p>
+<blockquote>
+<p>How do I revert the changes I&#39;ve made in the elements panel</p>
+</blockquote>
+<p>It would seem that developers are consistently much more fast-and-loose with the elements panel than compared with editing source code directly.</p>
+<p>It&#39;s still a fair question. To that I reply:</p>
+<ol>
+<li>Source control!</li>
+<li>Undo</li>
+</ol>
+<p>Chrome devtools has <em>really</em> good undo support. I can make a whole series of CSS changes, and then move on to JavaScript and then make changes to the DOM, and I can <em>still</em> go back and undo all the CSS changes I made.</p>
+<p>I&#39;ve noticed that I do have to be focused on the particular panel and source for the undo to work (which I suppose the undo history is associated with the panel), but it&#39;s really good.</p>
+<p>Obviously when you reload, you lose the history. It&#39;s the same with Sublime Editor, if I unload and reload Sublime (i.e. restart the application) I&#39;d expect the undo history to be lost.</p>
+<h3>Console shortcuts</h3><ul>
+<li><code>$</code> &amp; <code>$$</code> - akin to jQuery&#39;s <code>$</code> function to query elements on the page</li>
+<li><code>$_</code> - the result of the last expression</li>
+<li><code>$0</code> - the currently selected DOM node in the elements panel</li>
+<li><code>copy(...)</code> - copy to the clipboard, and will <code>JSON.stringify</code> objects, but also get the outer HTML of DOM nodes, <code>copy($0)</code> is pretty common for me</li>
+</ul>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/pqFr0qZQpk8" frameborder="0" allowfullscreen></iframe>
+
+<h3>Timeline screenshots</h3><p>Really nice way to go back in time to see what in the application&#39;s boot (or interaction time) changed something on the page. I used this recently to fix two different problems.</p>
+<p>The first was reviewing the boot up screenshots for jsbin.com, and seeing that the font was loading right at the end, but taking up a reasonable amount of time (WRT entire boot time). I could <em>see</em> this because the font would flash into place right towards the end of the document being ready. I was then able to use font loading techniques to make the font load via local storage and improved the perceived boot up time.</p>
+<p>The second time was with my product <a href="https://confwall.com">confwall.com</a>. The problem was that there was significant latency in loading the tabbing system. If you watch the animation below (running at 50% speed) you&#39;ll see the tabs are slow to render:</p>
+<p><img src="/images/tabs-loading.gif" alt="Slow tabs loading"></p>
+<p>This is also captured in the rendering timeline via the &quot;camera&quot; icon:</p>
+<p><img src="/images/devtools-screenshots.png" alt="Screenshot"></p>
+<p>From this, I could move the point in <em>time</em> where the tabs finally re-rendered into the right layout, and work backwards to find what was running and blocking.</p>
+<h3>Throttling</h3><p>Throttling the network gives me a really quick view on emulating slow or entirely offline connections to get an instant view on the effect of a slower network.</p>
+<p>A typical example is: what does my site with custom fonts look like over a slow connection? Is it blank for a long time? Are other assets holding up the font rendering? Is there anything I can do about it?</p>
+<h3>Network detail &amp; reply</h3><p>The visualisation of the network requests is useful, but I also find that inspecting headers and copying the raw response is extremely useful.</p>
+<p><img src="/images/devtools-copy-response.jpg" alt="Copy response"></p>
+<p>I&#39;ve also found that when I&#39;m debugging a server side bug where the response is incorrect (like sending HTML back instead of JSON), I can debug, fix and restart the server, and <em>instead</em> of refreshing my browser and blowing away the state and current stack - I can simply &quot;Replay XHR&quot; and my code will re-run the request, and (IIRC) the callback will fire with the updated server content.</p>
+<h3>Break on DOM changes</h3><p>As I mentioned earlier, &quot;break on DOM changes&quot; is one way which I will debug from an <em>outside in</em> approach. I&#39;ve used this plenty of times when I know there&#39;s a visual change, but I&#39;m unsure what the source of that change is.</p>
+<p>I do find it tricky to know exactly which &quot;break on...&quot; to use. Usually &quot;break on attribute modification&quot; is simple - i.e. if the <code>className</code> changes, the code will break. Otherwise, I tend to just select everything until the code breaks, and then I&#39;ll either step through or step backwards through the call stack.</p>
+<p>An <strong>extra protip</strong> here is sometimes the call stack will be <em>decapitated</em> due to an async call. Devtools offers a feature (which is expensive on memory, so remember to turn it off) on the sources panel. Check the &quot;Async&quot; box and repeat the bug. You&#39;ll now have the full call stack across the asynchronous calls.</p>
+<h3>Surface scans for memory leaks</h3><p>Finally, memory leaks are traditionally (for me certainly) the hardest part of debugging. In truth, I&#39;ll rarely look at memory unless I feel there&#39;s something jumping out at me. However, devtools has really advanced in the ease required to dig around for leaks.</p>
+<p>There&#39;s two approaches I will take, fully informed by this <a href="https://www.youtube.com/watch?v=L3ugr9BJqIs">excellent Chrome video</a> from a few years ago:</p>
+<ol>
+<li>Surface tests looking at the staircase</li>
+<li>Using the profiling tools to capture clues to the source of the leak</li>
+</ol>
+<p>The staircase effect is the first initial clue as to whether you have a memory leak. For me, the trick is to reliably reproduce the leaking effect. I&#39;ll personally start a timeline recording with &quot;Memory&quot; selected (and nothing else). I&#39;ll start the interaction, and before stopping, click the dustbin which forces a garbage collection, and then I&#39;ll repeat the process <em>again</em>, and then end the recording.</p>
+<p>What I&#39;m trying to do here is: establish the baseline memory use (the data before I start the interaction), run an interaction. If there&#39;s a significant amount of memory that <em>couldn&#39;t</em> be garbage collected, then I have a leak. Then onwards to profiling.</p>
+<p><img src="/images/memory-leaks.jpg" alt="Memory leaks"></p>
+<p>Profiling can take two approaches. The first is to capture two heap dumps, one at the start of the interaction, and one at the end. I might also run two interactions, but before I start the second run, I&#39;ll force a garbage collection. The task is then to compare the deltas. I&#39;ll select the second heap dump, and change it from a &quot;summary&quot; to &quot;comparison&quot; and order by &quot;deltas&quot;. Now I&#39;m looking for is <em>red</em> items in memory. These are items that couldn&#39;t be garbage collected.</p>
+<p>This will then (hopefully) yield clues as to what is leaking. Usually DOM nodes, and what JavaScript references are still pointing to the nodes. Frustratingly it&#39;s usually inside a JavaScript library, so some knowledge of how libraries work helps a great deal.</p>
+<p><img src="/images/memory-comparison.png" alt="Memory comparison"></p>
+<h2>Wrap up</h2><p>As I said at the start, there&#39;s no silver bullet. I suspect many readers of this post will have skimmed right to the actionable parts and copy &amp; pasted. Which is cool, I&#39;d do the same.</p>
+<p>Honing your debugging skills is a long game, directly linked to writing code which leads to the artefacts of bugs. Hopefully you&#39;ll jump at the chance of debugging too!</p>
+<p>Remember, it&#39;s also worth taking a break from debugging too, many, <em>many</em> bugs have been solved without being near computers (long walks, showers, etc) - because computers can be <a href="https://twitter.com/rem/status/652098805278605317">a bit stressful</a> sometimes too...!</p>
+]]></content:encoded></item><item><title>The toxic side of free. Or: how I lost the love for my side project (part 5)</title><guid isPermaLink="false">jsbin-toxic-part-5</guid><link>https://remysharp.com/2015/09/18/jsbin-toxic-part-5</link><pubDate>Fri, 18 Sep 2015 15:22:10 +0000</pubDate><description><![CDATA[This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.]]></description><content:encoded><![CDATA[<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
+<!--more-->
+<p>The story has been broken into 5 parts, released over a series of days.</p>
+<ul>
+<li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
+<li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
+<li><a href="/jsbin-toxic-part-3">Part 3: Registered users wreaking havoc</a></li>
+<li><a href="/jsbin-toxic-part-4">Part 4: The cost</a></li>
+<li><a href="/jsbin-toxic-part-5">Part 5: Police</a></li>
+</ul>
+<h2>Part 5: Police</h2><p><strong><em>Trigger warning: mention of child pornography.</em></strong></p>
+<p>I said before that JS Bin Pro really sucked the love out of the project for me, but this part has been a mix of emotions, but it&#39;s definitely the most distressed I&#39;ve been when running JS Bin...</p>
+<p>Over the years I&#39;ve had cease and desist emails telling me that I&#39;ve either been hacked or stolen content. I would take my time (through gritted teeth) explaining that JS Bin allowed users to upload their own content, and that this wasn&#39;t something I was trying to do to hurt the company or institution.</p>
+<p>Nearly every single time, the content would be removed promptly (usually at the same time as I was responding to explain what JS Bin was), but there&#39;s three occasions that stand out in my memory.</p>
+<h3>Evening calls</h3><p>Early 2010, I was doing a lot of client work and when the phone rang at 7pm, I asked Julie (my wife and business partner) to shoo them away and to say that I was unavailable.</p>
+<p>I think I was actually having a moment on The Throne when my wife gave a knock on the door. &quot;You need to take this, it&#39;s the Police&quot;.</p>
+<p>No one really wants the Police phoning their house.</p>
+<p>It wasn&#39;t actually as painful as I would have guessed. The man said he was calling from the London Met. Police, and that he was dealing with a coordinated DDoS attack orchestrated over Facebook due to take place tomorrow evening.</p>
+<p>The messages (on Facebook) were using JS Bin as the method of attack (yes, pretty much script kiddies), and to the police officer&#39;s credit, he had done his research on JS Bin and understood that <em>I hadn&#39;t created these bins</em>. He was calling to ask if I could <em>possibly</em> take the links down (yes, we&#39;re <a href="https://twitter.com/soverybritish">So Very British</a>).</p>
+<p>Absolutely. Minutes later, the bins were gone. I didn&#39;t hear back again, but it would be the first in a dozen or so (gentle) encounters with the police.</p>
+<h3>The worst email I ever received</h3><p>One late evening in 2013, sat on the sofa watching a film, I get an email. As with all webby people that don&#39;t understand that work is supposed to stop at 6pm, I go ahead and get my laptop and read the email.</p>
+<p>It&#39;s an email from the Spanish police. Sort of a cease and desist, including two links to JS Bin asking for their immediate take down.</p>
+<p>There had been issues in the past where porn had been linked to from JS Bin and it&#39;s constant battle to keep it under control. The email from the Spanish police however, did not warn me as to what was behind the URLs.</p>
+<p>I clicked, and my memory is slow motion of what I saw next, and thankfully the internet was also slow to load.</p>
+<hr>
+<p>Just enough loaded for me to realise that the images contained child pornography, but I closed the tab early and quickly enough for me <em>not</em> to see anything that would scar me for life.</p>
+<p>It still makes me sick to think that <em>that</em> kind of content was being hosted by my project.</p>
+<p>Using the terminal, I <code>cURL</code>ed the URL down to look for any commonalities between the source of the two JS Bin URLs I had, to immediately add it to the blacklist functionality. &quot;Thankfully&quot;, I did find a commonality, and I was able to block what appeared to be a source for these images. I also went ahead and deleted all records that matched in the database.</p>
+<p>It took many days to to get that sickening feeling out of my system. I hate thinking that JS Bin has helped abusers in some way. I&#39;m not sure if I can <em>quite</em> get across in words as to how much this sickens and angers me, even to this day.</p>
+<p>On a lighter note...</p>
+<h3>&quot;Terrorism&quot;</h3><p>I&#39;ve used inverted quotes around &quot;Terrorism&quot;, because, well they&#39;re not my words, and I&#39;m not 100% certain that JS Bin falls squarely into be used for terrorism. It&#39;s certainly a new area for my project.</p>
+<p>Just a few weeks ago, an issue was filed, claiming exactly this:</p>
+<p><img src="/images/jsbin-terrorism.png" alt="Terrorism attacks"></p>
+<p>The bin that&#39;s referred to was being used to attack the Madison Police web site, apparently organised by Anonymous (I removed the twitter handle &amp; name):</p>
+<p><img src="/images/jsbin-anonymous-attack.jpg" alt="Anonymous attacks"></p>
+<p>I took down the bin, and added appropriate blacklisting, but also noticed that the issue was filed about 10 <em>days</em> after the attack had taken place!</p>
+<h3>It&#39;s part of the job...</h3><p>I&#39;d like to end this section with some parting advice on how JS Bin is better now, but sadly it&#39;s part of the job when you build a site that houses all the crap the internet has to offer. The easier JS Bin makes it so that content can be saved, the more it&#39;ll be used in new ways that causes some kind of trouble.</p>
+<p>Obviously the flip side is that JS Bin is open to all, and that includes kids wanting to learn, educators, newbies, &quot;hackers&quot; and more.</p>
+<p>But, it would be great, as author of jsfiddle said, if Anonymous could write and use their own pastebin. I mean, they could even <a href="https://github.com/jsbin/jsbin">fork JS Bin</a> for heavens sake!</p>
+<p><a href="https://twitter.com/zalun/status/602586249203945472"><img src="/images/jsbin-please-write.png" alt="Please, Anonymous, write your own"></a></p>
+<h2>Why carry on?</h2><p>I&#39;ve given this series of posts as a talk a few times now at conferences and meetups, and one question that keeps coming up is:</p>
+<blockquote>
+<p>Why didn&#39;t you just walk away, and shutdown JS Bin?</p>
+</blockquote>
+<p>It&#39;s a fair question. The stress from the police related incidents didn&#39;t ever make me consider shutting it down. Even after the Spanish police email (above), I felt more like I had blinkers on and <em>all</em> I could see was the nastiness on the web, but I never considered killing JS Bin.</p>
+<p>In fact, it was only when I was dealing with VATMOSS that I gave any serious thought to throwing in the towel. It was probably one of the more stressful working months I&#39;ve experienced, and I don&#39;t kid when I say that VATMOSS has killed up and coming companies in their tracks.</p>
+<p>However, with all of the abuse, <strong>I will never throw in the towel</strong>. Here&#39;s why:</p>
+<p>I used to search twitter for mentions of &quot;jsbin&quot; and compare to jsfiddle and codepen. Credit to Code Pen, the mentions are usually always in their favour, with individuals showing some truly amazing work. It took me many, many months to realise that twitter was not the measure of JS Bin.</p>
+<p>JS Bin&#39;s moto is: <em>hack, learn, fix, teach</em>. JS Bin is about helping other people. It&#39;s one person who is in need, sharing their working with another, and that other person helping, and solving, and teaching. It&#39;s a quiet, personal transaction between two individuals that won&#39;t be announced on twitter, but instead shared in an intimate exchange.</p>
+<p><em>That</em> is why JS Bin has been <a href="https://remysharp.com/2008/10/06/js-bin-for-collaborative-javascript-debugging">running for 7 years</a>. That&#39;s why it&#39;ll carry on for another 7 years.</p>
+<h2>Finding the love, again</h2><p>I&#39;ve been thinking about this post (and the public talk version of this) for about a year now. I was hesitant because it was so negative and probably comes across a little bitter.</p>
+<p>The irony however, is that it&#39;s been a cathartic process. I feel like I&#39;ve got some of the poison out of my system by going through this process.</p>
+<p>I realised something important at the end of 2014, and it was the reason I decided to put development on JS Bin on hold: I need to love working on JS Bin. I didn&#39;t at the time. I was working on parts of JS Bin that was full of pressure, I started getting abuse for some of my work, and it was all a bit of a mess.</p>
+<p>Since starting these posts, I&#39;ve released new features to JS Bin to all groups of users (anonymous, registered and pro) and have several JS Bin <a href="http://jsbin.com/blog">blog posts</a> in the works. And before I bid you farewell, don&#39;t forget to support JS Bin: <a href="https://jsbin.com/upgrade">go pro</a> or donate <a href="https://gratipay.com/jsbin">regularly</a> or as a <a href="https://www.paypal.me/rem">one off</a>.</p>
+<p>As for me? <strong>I&#39;ve started to find my love for my project again.</strong></p>
+<p><img src="/images/jsbin-t-shirt.jpg" alt="Hack, learn, fix, teach"></p>
+]]></content:encoded></item><item><title>The toxic side of free. Or: how I lost the love for my side project (part 4)</title><guid isPermaLink="false">jsbin-toxic-part-4</guid><link>https://remysharp.com/2015/09/17/jsbin-toxic-part-4</link><pubDate>Thu, 17 Sep 2015 16:53:39 +0000</pubDate><description><![CDATA[This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.]]></description><content:encoded><![CDATA[<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
+<!--more-->
+<p>The story has been broken into 5 parts, released over a series of days.</p>
+<ul>
+<li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
+<li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
+<li><a href="/jsbin-toxic-part-3">Part 3: Registered users wreaking havoc</a></li>
+<li><a href="/jsbin-toxic-part-4">Part 4: The cost</a></li>
+<li><a href="/jsbin-toxic-part-5">Part 5: Police</a></li>
+</ul>
+<h2>Part 4: The cost</h2><p>In July 2014, JS Bin <em>finally</em> landed <a href="https://jsbin.com/upgrade">Pro accounts</a>. The aim of this would be for JS Bin to eventually be self-sustaining. It&#39;s been running out of my pocket for the previous 6 years (for server and related costs), and development and design (2014 excluded) had been lovingly &quot;donated&quot; by myself and Danny (who is responsible for the design).</p>
+<p>In 2014, I decided to give JS Bin a full shot, and employed two (amazing) developers, <a href="https://twitter.com/electric_g">Giulia Alfonsi</a> and <a href="https://twitter.com/allouis_">Fabien O&#39;Carroll</a> to work with me full time on JS Bin.</p>
+<p>At the end of May 2015 (10 months after launching pro) the income JS Bin has provided has only <em>just</em> covered operating costs for the previous year. That&#39;s awesome and terrible at the same time. Before &quot;pro&quot; it was making a 100% loss - so that&#39;s something, <em>but</em> it doesn&#39;t even touch the edges of what I had hoped it would return (and I wasn&#39;t even being optimistic, as any British person would expect).</p>
+<p>But there is a cost to taking money...</p>
+<h3>VATMOSS</h3><p><a href="https://remysharp.com/2014/12/16/vatmoss">VATMOSS</a> was a change to the way that VAT is processed in the EU. Unfortunately, the geniuses behind the change at the EU (or whatever rock they hide under) hadn&#39;t quite thought the whole thing through. The information was thin, convoluted, confusing and not really accessible to small companies like myself and many others.</p>
+<p>This is the landing page for the EU European Commission&#39;s Digital Market:</p>
+<p><img src="/images/jsbin-eu.jpg" alt="EU"></p>
+<p>The European Commission is the EU&#39;s executive body. It represents the interests of the European Union as a whole (not the interests of individual countries).</p>
+<p>The slogan: <strong>bringing down barriers to unlock online opportunities.</strong> What a crock of shit. VATMOSS has single handedly killed off new business and for others made it <em>more</em> difficult for others do to their commerce. It&#39;s worth reading around the back story of VATMOSS, and even in mid-2015, it&#39;s there&#39;s a fight for change going on.</p>
+<p>The VATMOSS reporting is now (as of 1-Jan 2015) a requirement for <em>anyone</em> in the EU selling digital services or goods (i.e. ebooks, apps, subscriptions...JS Bin Pro subscriptions), and there was (and is) the threat of fines if you don&#39;t report and pay on the sales correctly.</p>
+<p>VATMOSS requires that you charge the VAT of the country of your customer. i.e. if the customer is English, 20%, if they are Danish 25%. Also, you have to capture <em>three proofs</em> that you&#39;re charging the right country (it&#39;s actually 2 proofs, but you need a 3rd backup proof). If these are all in conflict... ¯\<em>(ツ)</em>/¯</p>
+<p>The last month of 2014 were riddled with stress from the VATMOSS changes that I had to complete on JS Bin. It took weeks to try to fully understand VATMOSS, and what exactly would be required to satisfy requirements.</p>
+<p>In the end, the development time was about 2 week for both myself &amp; Fabien (employed to work on JS Bin) and about two weeks of research, filing and accounting time on Julie&#39;s part (my business partner - and wife).</p>
+<p>Estimated business cost: £3,500.</p>
+<p><img src="/images/jsbin-vatmoss-filed.png" alt="VATMOSS filed"></p>
+<p>£11.70p. VATMOSS, the stress of it all, to collect pennies from <strong>seven people</strong>. It would have been cheaper to book flights to each of their addresses to collect the cash by hand. <a href="https://twitter.com/search?q=from%3Arem%20%23vatmoss&amp;src=typd">It was not fun</a>.</p>
+<h3>Fraud credit cards</h3><p>Since pro accounts initially cost £6 for month, it turns out that this is low enough that it won&#39;t send red flags to stolen cards.</p>
+<p>This means that JS Bin was being used as a testing ground for stolen card numbers. If the card went through then they would use the card. Unbeknownst to me, the user wouldn&#39;t do <em>anything</em> on JS Bin, and I&#39;d be on my merry way thinking I had a new pro sign up.</p>
+<p>Eventually, the rightful owner would thing, &quot;What&#39;s this &#39;JS BIN PRO MONTHLY&#39; doing on my statement&quot;, follow up with their bank, and raise a fraud complaint.</p>
+<p>I can&#39;t win the complaint. The card was stolen, the £6 belongs to the original card owner, no question. But! If there&#39;s a dispute on Stripe, there&#39;s transaction fees for reversing charges. £15.34 in fact. Since I know I&#39;ll lose the dispute, <strong>it&#39;s cost me, £21.54 to allow some shithead to use JS Bin as a stolen card testing facility</strong>.</p>
+<p><img src="/images/jsbin-stripe-fraud.png" alt="Stripe disputes"></p>
+<p>My process now is that I&#39;ve taken to checking each and every individual sign up and their bins to see if they look spammy. I caught my first fraud card and reported on 13-April 2014. Not a huge success but very satisfying to know I&#39;ve avoided the charge. Woot!</p>
+<h3>Pro</h3><p>Pro accounts was never the intention when I launched JS Bin back in 2008. I&#39;d made stupid efforts to avoid having user accounts for quite a few years, but insisted that it should be 100% free.</p>
+<p>I don&#39;t know why.</p>
+<p>During 2013, I attended a lot of events where individuals kept coming up to me asking how do they pay for JS Bin, or why don&#39;t I add Pro, or explained that the only reason they used CodePen over JS Bin was that they were paying (i.e. the perceived security of data from the business exchange). The more I considered it, the more I realised I wanted to do JS Bin full time, <strong>and work on something I loved</strong>.</p>
+<p>I ran some numbers based on registered users in the database, and factored for about 20% spam/idle users, and then put my aims at 1% conversion. It didn&#39;t seem like much.</p>
+<p>The problem was: <em>that&#39;s all I did</em>.</p>
+<p>There was no business plan. There was no business development team. There was no marketing plan. There was no deadlines. There were no aims.</p>
+<p><img src="/images/jsbin-launch-failure.jpg" alt="&quot;I-565 at Space and Rocket Center&quot; by Nhlarry. Licensed under CC BY-SA 3.0 via Wikimedia Commons - https://commons.wikimedia.org/wiki/File:I-565_at_Space_and_Rocket_Center.jpg#/media/File:I-565_at_Space_and_Rocket_Center.jpg"></p>
+<p>So there my amazing product sat. To others it was ready to launch, but I was still heads down focused on the last 1% stretch, so it was parked.</p>
+<p>I&#39;d had the odd conversation that suggested I might be able to get funding from the government (as JS Bin is a tool primarily for learning), but I&#39;d shy away from the idea of having to do <em>&quot;business&quot;</em> stuff. It scared me a little too.</p>
+<p>Launching became the well know problem of chasing the end of the rainbow. Striving for the perfect, polished product before everyone else had access to it. Sure we had some alpha users in there, but they weren&#39;t invested in JS Bin any more than you are, so feedback came when they had some time.</p>
+<p>This went on for months and months. All the while JS Bin isn&#39;t making money, my entire company is focusing it&#39;s time on JS Bin and <em>not</em> producing any cash flow from any other sources.</p>
+<p>Pro (eventually) went live on <strong>23 July 2014</strong>. And the first wave of registrations was an amazing feeling. In fact, one user (<a href="https://twitter.com/dcgauld">David Gauld</a>, who actually worked for me doing the <a href="http://leftlogic.com">Left Logic</a> redesign and built a fair amount of <a href="https://confwall.com">confwall</a>) was the first to go pro catching the <a href="https://github.com/jsbin/jsbin/commit/814251af40334990cf2490dc45d88ba246542f2f#diff-0aab8fc4f1799dc88c8d29729b719d87L118">commit landing in Github</a>, even before I had announced it - a cool side effect of the open source.</p>
+<p>Users did come, but looking back, it really wasn&#39;t very much if you consider the costs of running JS Bin, let alone paying for development, and then look at what the monthly (or yearly subscriptions) got us. A total of 42 upgrades in the first week (26 were on the first day).</p>
+<p><img src="/images/jsbin-pro-week1.png" alt="JS Bin Stripe report, week 1"></p>
+<p>I had always tucked money aside for a rain day (actually rainy year), and yeah, I can look back and say &quot;sure, I took a shot&quot; - but it came at a pretty penny.</p>
+<p>The next 6 months I lost my love for the project. Very simply: any new development had to justify its existence and its demand on my time. I did continue development until the end of 2014, but by that point, all love had been sucked dry and I needed a break. JS Bin is solid enough that it can run without day to day attention and I could return to client work and <em>try</em> to recover my now sad looking business bank balance.</p>
+<h3>Plan, and know what your users <em>need</em></h3><p>There were two major problems that hurt the success of JS Bin Pro.</p>
+<p>The first was the nearly zero planning, and strange fear of business, marketing and actually making money. I often associate with the underdog, and those users looking for free access. But I run a service that&#39;s abused from all directions and every new user is more of a burden than growth.</p>
+<p>Very simply put: should I want to run a service for 100 paying users or for 100,000 non-paying users? Me? Now, I realise it&#39;s the 100 paying users, because, honestly, I&#39;ve got bills that I want to pay. I&#39;d rather pay those bills building something I love rather than building something I begrudge.</p>
+<p>I lost <em>a lot</em> of love in this area of working with JS Bin. I can take the spam, and the junk, but this part of JS Bin required that the project actually raises money to support itself - and constantly feeling that I <em>had</em> to deliver some part of code for JS Bin to continue...it just didn&#39;t work for me.</p>
+<p>The second, major issue was that I had hoped, naively, that the web community will swoop in and pony up some cash. But the bottom line was JS Bin Pro had nothing that users <em>needed</em>. Sure, <em>now</em> it has asset uploads and other features, but at the time, there wasn&#39;t anything users <em>really needed</em>.</p>
+<p>I pay for my Github account because I <em>need</em> private repos. I pay for Gmail, because I <em>need</em> real business email accounts. I pay for Dropbox because I <em>need</em> the extra space.</p>
+<p>With JS Bin, <strong>everything users <em>need</em> is given away and open source. That&#39;s honourable, but doesn&#39;t pay the mortgage.</strong></p>
+<p>The next time around, with products like <a href="https://confwall.com">Confwall</a>, I launched <em>as soon</em> as it was usable. I offer a free area, but I make sure that you can&#39;t get to the stuff you <em>need</em> unless you pay. The way it should be! In fact, at time of writing this post, Confwall still doesn&#39;t take payment online - I cut that part to launch as early as possible, and we handle payments via email &amp; invoices.</p>
+<hr>
+<p><a href="/jsbin-toxic-part-5">Part 5</a> sees our conclusion and tells of the police encounters I&#39;ve had, along with the worst email I&#39;ve ever received.</p>
+]]></content:encoded></item><item><title>The toxic side of free. Or: how I lost the love for my side project (part 3)</title><guid isPermaLink="false">jsbin-toxic-part-3</guid><link>https://remysharp.com/2015/09/16/jsbin-toxic-part-3</link><pubDate>Wed, 16 Sep 2015 16:11:38 +0000</pubDate><description><![CDATA[This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.]]></description><content:encoded><![CDATA[<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
+<!--more-->
+<p>The story has been broken into 5 parts, released over a series of days.</p>
+<ul>
+<li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
+<li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
+<li><a href="/jsbin-toxic-part-3">Part 3: Registered users wreaking havoc</a></li>
+<li><a href="/jsbin-toxic-part-4">Part 4: The cost</a></li>
+<li><a href="/jsbin-toxic-part-5">Part 5: Police</a></li>
+</ul>
+<h2>Part 3: Registered users wreaking havoc</h2><p>Originally JS Bin was 100% anonymous. I liked that. But after about a year (or so...I forget), there was clearly an important feature missing: people couldn&#39;t recall their old bins.</p>
+<p>Duh. Obviously. It&#39;s <em>anonymous</em>. But that didn&#39;t really fly for an answer. Before the full version 3 rewrite (from PHP to Node), I implemented a simple system that you could &quot;register&quot; your name and &quot;key&quot; as your token. This meant that advanced users would know how to recall their bins (so long as this special cookie was in place).</p>
+<p>When I realised I had implemented user sign-in in quite possibly the crapest way, version 3, new, clean, slick JS Bin, came with proper sign-in, register and password reminder.</p>
+<p>With one fatal flaw: there were zero checks on your account. No email authentication, no captcha (I hate crapchas), no nothing. And registered users didn&#39;t have <em>any</em> limitations on their bins - the public output would remain public.</p>
+<p>This, unknowingly to me, lead to an increase in registrations. Yay! No. Not yay. These were not the kinds of folk you wanted in your system. What&#39;s worse, is these users would create multiple accounts to create multiple bins, all of which were not limited. They&#39;d still be limited by the blacklisting, but blacklisting is simple and probably doesn&#39;t even catch 20% of the junk.</p>
+<h3>Grinding to a total halt</h3><p>On the morning of March 26th, 2015, I was solo parenting looking after my awesome little ones, when I started noticing reports on JS Bin that something might be very wrong.</p>
+<p><img src="/images/seren-family.jpg" alt="The Sharps"></p>
+<p>Earlier I mentioned that the bins went from 10 million to 15 million in around 6 months (or so). Our registration rate was also climbing insanely quickly. The net effect of this: storing more content.</p>
+<p>Storage is cheap, right? Sure is. JS Bin stores it&#39;s database on a 100GB drive. It&#39;s <em>just text</em> for heavens sake.</p>
+<p>JS Bin&#39;s database ran out of disk space. All of it. Gone. So much so, that I <em>couldn&#39;t delete data</em>. (I think) because MySQL needs to create a tmp file to run queries, that since there was literally no disk space, it couldn&#39;t create the tmp file to delete the junk bins that were seemingly coming in faster and faster.</p>
+<p>The weird thing was that JS Bin still worked. It could recall bins and you could use JS Bin, you <em>just couldn&#39;t save</em> (though, that&#39;s kind of a problem...).</p>
+<p>When you&#39;re solo parenting, though, there&#39;s no support around and there was no way I was going to (or even <em>could</em>) abandon the kids to work on solving this issue. I had to suck it up, and trying to focus entirely on the kids and ignore the problem until my wife returned home. I did manage to put out a <a href="https://twitter.com/rem/status/581004721785167872">cry</a> for <a href="https://github.com/jsbin/jsbin/issues/2320">help</a> which had lots of lovely support, but support doesn&#39;t fix fucked disks.</p>
+<p>Though, eventually, a few hours later, I managed to swap in a 400GB disk to the AWS database. This solved the issue right away, but the source of the problem was still wide open.</p>
+<h3>If you (still) can&#39;t play nice...</h3><p>Wide open registrations was always a stupid idea. An entirely anonymous web site, given JS Bin&#39;s purpose, is also a stupid idea.</p>
+<p>In the end the <em>only</em> way to register with JS Bin <em>now</em> is via GitHub. I don&#39;t like this, but it does lean on GitHub&#39;s verification process. It doesn&#39;t kill the issue 100%, but it reduced our sign-up rate significantly and we only have the odd one arsehat come through (which I also then report back to GitHub).</p>
+<hr>
+<p>In <a href="/jsbin-toxic-part-4">part 4</a>, I&#39;ll talk about the costs of running JS Bin, and how pro failed to save the day.</p>
+]]></content:encoded></item><item><title>The toxic side of free. Or: how I lost the love for my side project (part 2)</title><guid isPermaLink="false">jsbin-toxic-part-2</guid><link>https://remysharp.com/2015/09/15/jsbin-toxic-part-2</link><pubDate>Tue, 15 Sep 2015 16:21:42 +0000</pubDate><description><![CDATA[This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.]]></description><content:encoded><![CDATA[<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
+<!--more-->
+<p>The story has been broken into 5 parts, released over a series of days.</p>
+<ul>
+<li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
+<li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
+<li><a href="/jsbin-toxic-part-3">Part 3: Registered users wreaking havoc</a></li>
+<li><a href="/jsbin-toxic-part-4">Part 4: The cost</a></li>
+<li><a href="/jsbin-toxic-part-5">Part 5: Police</a></li>
+</ul>
+<h2>Part 2: Spam</h2><p>Who doesn&#39;t love a filthy dose of spam with their product? Let&#39;s picture exactly what JS Bin is: a place that people can <em>anonymously</em> create public web pages.</p>
+<p>So...yeah...I guess I should have known I was asking for trouble.</p>
+<p>JS Bin, as of April 2015, has well over 15,000,000 bins. It crossed 10 million bins late last year, so that number has been accelerating. It should. That&#39;s what growth is about. But I had to face it, there&#39;s no way there&#39;s 5 million new bins with everyone learning the magic of the web stack. There&#39;s going to be some spam in there.</p>
+<p><img src="/images/spam.jpg" alt="https://www.flickr.com/photos/the-lobster/4767649914"></p>
+<!-- photo via: https://www.flickr.com/photos/the-lobster/4767649914 -->
+<h3>Affiliate spam</h3><p>No, not spam that I, or JS Bin are affiliated with! At some point in 2014, I searched Google with &quot;site:jsbin.com&quot; just to see what awesome content existed. Sadly, Google&#39;s only reply, and pages of reply, was this &quot;affiliate spam&quot;.</p>
+<p>Bear with me: it&#39;s a page that contains a tonne of links that usually entices the reader to click through for some kind of random product. Maybe a DVD or a CD containing the secrets to earning your first million or some such nonsense.</p>
+<p>In some cases, since I have admin access to JS Bin, I would just delete the bin. But it was (and is) like playing whack-a-mole. You delete one, and immediately find another - partly also because with JS Bin, you&#39;re deleting a revision, and not the whole collection of bins (I&#39;ve yet to develop that).</p>
+<p>So in this case, I would head to the database and run dangerous manual queries to delete all the bins with the offending URL. Thankfully, in the 15 million rows, I had the good sense to add an index early on to the URL field, so it&#39;s quick and doesn&#39;t lock up the table.</p>
+<h3>SEO spam</h3><p>I don&#39;t really understand what this is, but it&#39;s definitely a thing. Similar to the affiliate junk, SEO spam would just contain an insane amount of links to web sites. I still don&#39;t understand it, but it&#39;s definitely nefarious.</p>
+<h3>Phishing</h3><p>Yay, phishing. Phishing is actually the very first type of abuse I ever came across on JS Bin. I don&#39;t remember who reported it to me, but at some point, someone was trying to phish the Habbo.com homepage.</p>
+<p>It&#39;s why, even today, the <a href="https://github.com/jsbin/jsbin/blob/771f007f3f49bbe3931a9818be75ad3e6edcf7fa/config.default.json#L66-L70"><em>public</em> config</a> for JS Bin contains a default blacklist for <code>habbo.com</code> and <code>processform.cgi</code>. The blacklist prevents the bin from being saved. Everything works, but it just silently fails to save.</p>
+<p>In production the blacklisting is much much larger these days, and includes frankly stupid stuff like <code>kardishain</code>, <code>Clickbank</code> and snippets of nasty code like <code>...|63|0A|27|73|70|2E|2F|...</code> which aims to prevent code that&#39;s used in some kinds of attacks.</p>
+<p>But yeah: whack-a-mole.</p>
+<h3>Link hiding</h3><p>The last type of spam that appeared in JS Bin is using JS Bin as a link sharing site to the dark and shitty side of the web. Arsehats (the nasty users, as I like to call them) would use JS Bin to redirect using <code>top.location=&quot;http://arsehat.com&quot;</code>. Then, using the full output URL, it would be shared on networks like Twitter and Facebook.</p>
+<p>Since &quot;arsehat.com&quot; was already blocked on Facebook and Twitter, but JS Bin wasn&#39;t, it&#39;s an efficient way to share links to bad places, and hide under JS Bin.</p>
+<p>It&#39;s kinda depressing that when I search Twitter for &quot;jsbin.com&quot;, it would mostly yield weirdos sharing things like webcams to their toilet fetish funsies.</p>
+<h3>If you can&#39;t play nice...</h3><p>In August 2014, I made the hard decision that I would have to reduce JS Bin&#39;s functionality if it was going to continue to positively contribute to the web, instead of flooding it sludge filled spam.</p>
+<p>I limited the full output <em>for anonymous bins</em> to last 90 minutes, then it would automatically revert to the edit view. Since the edit view is compiled using JavaScript, it had no use to SEO indexing. The live output <code>iframe</code> is also protected with a <code>sandbox</code> attribute that prevents location redirects, so the link hiding issue also (mostly) went away.</p>
+<p>Finally, all output views (i.e. the full output without the &quot;JS Bin editor&quot; bit) include the <code>X-Robots-Tag: nofollow</code> header - which is the new way of doing <code>robots.txt</code>. This seems to have helped stamp out the &quot;SEO&quot; use of JS Bin.</p>
+<p>But it didn&#39;t end there...</p>
+<hr>
+<p>Return for <a href="/jsbin-toxic-part-3">part 3</a>: how the registered users, who I thought were the goodies, wreaked havoc.</p>
+]]></content:encoded></item><item><title>The toxic side of free. Or: how I lost the love for my side project (part 1)</title><guid isPermaLink="false">jsbin-toxic-part-1</guid><link>https://remysharp.com/2015/09/14/jsbin-toxic-part-1</link><pubDate>Mon, 14 Sep 2015 15:55:55 +0000</pubDate><description><![CDATA[This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.]]></description><content:encoded><![CDATA[<p>This is a story about JS Bin. I&#39;ve told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it&#39;s not going anywhere. It will continue to run and serve its users. Even the scumbags.</p>
+<!--more-->
+<p>The story has been broken into 5 parts, released over a series of days.</p>
+<ul>
+<li><a href="/jsbin-toxic-part-1">Part 1: The start of the DDoS</a></li>
+<li><a href="/jsbin-toxic-part-2">Part 2: Spam</a></li>
+<li><a href="/jsbin-toxic-part-3">Part 3: Registered users wreaking havoc</a></li>
+<li><a href="/jsbin-toxic-part-4">Part 4: The cost</a></li>
+<li><a href="/jsbin-toxic-part-5">Part 5: Police</a></li>
+</ul>
+<h2>Back story</h2><p>I was working mostly out of my bedroom in Brighton (since our flat was small) whilst still working full time in London amongst other designers and developers. jQuery was still new and I&#39;d often be asked in written English why some bit of code didn&#39;t work (the explanation often lacked the <em>actual</em> code!).</p>
+<p>I knew I needed something that contained code and that would pare the issue down to it&#39;s smallest form, so I could investigate.</p>
+<p><img src="/images/office-2009.jpg" alt="2009 office"></p>
+<p>JS Bin was launched on <a href="https://remysharp.com/2008/10/06/js-bin-for-collaborative-javascript-debugging">September 2008</a> as my solution to needing to see a pastebin with an interactive component.</p>
+<p>It was posted up on Ajaxian and had a good reception. I had also started seeding it by answering Stack Overflow questions and linking to live demos in JS Bin. To this day this method was a great success - particularly as Stack Overflow went on to create their own live pastebin support (though IMHO, it looks like a poor implementation of jsfiddle).</p>
+<p>The concept from day one was simple: you could, anonymously, create a web page for anyone to view and edit (creating a new &quot;snapshot&quot;).</p>
+<p>Initially around a 4 hour hack with 2 PHP files (<a href="https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/sandbox.php">sandbox.php</a> and <a href="https://github.com/jsbin/jsbin/blob/e895c32089ac1bd310b5d91aecabda219f2eccea/index.php">index.php</a>) and one very simple MySQL database. Over time it would become more complex, with many many more features - mostly tucked away behind a very sleek design (by <a href="https://twitter.com/yandle">Danny Hope</a>).</p>
+<p>JS Bin grew and grew over the years. I&#39;ve gone through a couple of major rewrites and now settled on Node for it&#39;s backend (though still MySQL) on an AWS based architecture.</p>
+<p>Somehow, JS Bin was the first to suffer real abuse, but I know jsfiddle has come under fire pretty heavily in recent years. I&#39;m unsure if CodePen has really had much, if any abuse <em>yet</em> (possibly because it&#39;s the newbie on the block).</p>
+<hr>
+<p>This is a story, and not a happy one, of some of the trials and tribulations that left my little open source project with a toxic taste in it&#39;s mouth.</p>
+<p>Please also bear in mind throughout these tales, that I am the sole sysadmin, and my knowledge, though workable, is limited - as are the pennies in my pocket, so <em>no</em> there&#39;s no load balancers and heavy duty sentinel machines that protect my system from madness. It&#39;s <em>just</em> me.</p>
+<hr>
+<h2>Part 1: The start of the DDoS</h2><p>I don&#39;t recall if I had seen any abuse on JS Bin before this point in time, but in late April 2012, I received an email requesting my attention:</p>
+<p><img src="/images/jsbin-first-ddos.png" alt="First DDoS"></p>
+<p>I was travelling at the time and running workshops, and bin deletion was a manual job, but as soon as I could I investigated and removed the bin (today it resolves to a 404).</p>
+<p>The bin was a <em>script kiddie&#39;s</em> paradise: enter the URL of your target, and it would repeatedly create image requests to the target. In fact, this kind of page would be the source of quite a few incidents over the years.</p>
+<p>The thing that bugged me, and still bugs me to this day, was: <em>why do they host this on JS Bin? They have to share a link, why not share an HTML file?</em></p>
+<p>This would mean that JS Bin wouldn&#39;t be caught in the middle. ¯\<em>(ツ)</em>/¯</p>
+<h3>The alternative DDoS: self-attacks by the moronic</h3><p>Thankfully the self-attacks happened <em>after</em> JS Bin had moved to Node, otherwise I&#39;m not sure it would survive.</p>
+<p>In truth though, JS Bin does not always remain calm during these attacks. <em>Self-attacks?</em> Yep. It&#39;s when the script kiddie page asks for a URL, but the page doesn&#39;t do any validation on the URL, and, since it takes very little brain cells to want to orchestrate the attack, some moron leaves off the preceding &quot;http://&quot; part in their attack.</p>
+<p>The result? They start to attach URLs like <a href="http://jsbin.com/abcef/some-site-the-user-hates.com">http://jsbin.com/abcef/some-site-the-user-hates.com</a> - which does actually go through JS Bin&#39;s sub-system.</p>
+<p>Sometimes, not always, but sometimes it results in this, and that&#39;s when it gets really hairy...</p>
+<p><img src="/images/jsbin-502.jpg" alt="JS Bin 502"></p>
+<h3>&quot;Always strike when they&#39;re sleeping...&quot;</h3><p><img src="/images/jsbin-twitter-reports.jpg" style="width: 50%; display: block; float: right" alt="Twitter reports"></p>
+<p>Okay, so this might not be some secret mantra that arse hats always attack whilst the sys-admin sleeps, it might actually be that since I&#39;m based in the UK, most attacks happen during central America midday time...so yeah, I&#39;m sleeping and I wake up (around 6am) to twitter reports of JS Bin being unreachable.</p>
+<p>It&#39;s pretty disheartening when most of the @replies to the product you&#39;ve poured your soul into are: the shit has hit the fan!</p>
+<div style="clear:both"></div>
+
+<h3>When there&#39;s an endless supply of shit</h3><p>I actually have a <a href="http://jsbin.com/help/runbook/slow-response">runbook</a> for when this happens. When JS Bin comes under heavy fire, whatever that attack looks like. Most of the time the solution would be to restart JS Bin. However, it would also tend to come from a few specific IP addresses.</p>
+<p>I do also get AWS CloudWatch alerts when the CPU on JS Bin machines run high (for a number of seconds). The constant hitting traffic against the node process (yes...a single process) results in the process being constantly &quot;busy&quot;, i.e. high CPU rate, so there <em>are</em> alarms I get.</p>
+<p>So the runbook would scan the latest 200 lines (or so) of the access log and spit out the unique IPs and the count of their hits. From there, would go about <code>iptable</code>&#39;ing the addresses (i.e. blocking the IP address).</p>
+<p>One night got <em>so bad</em> that I had to write a script in a cronjob that would repeatedly scan the logs for any IP hitting JS Bin more than some arbitrary figure, and it would ban them.</p>
+<p>It did resolve the issue. It also randomly blocked many, many more regular users who were keen to let me know via Twitter and the GitHub issues (which is a good thing, I&#39;m not complaining - it just sucks for them that they got caught in the cross fire).</p>
+<h3>fail2ban</h3><p>Eventually I cottoned on to using <a href="http://www.fail2ban.org/wiki/index.php/Main_Page">fail2ban</a> to protect my machine from repeated hits from a specific IP address. Since installing around late 2014, it&#39;s massively reduced the attacks of this nature.</p>
+<p>The unfortunate side effect is that it also blocks out classroom use of JS Bin, since JS Bin sends XHR writes <em>all the time</em>, fail2ban sees this all coming from a single IP, and goes ahead and denies the eager young class from learning.</p>
+<p>In this situation, classes have got in touch via any channel possible, and I&#39;ve white listed their IP address manually. I know it&#39;s caught some people out, but, sadly, this is the cost I&#39;ve had to pay.</p>
+<h3>null</h3><p>One other trick that I added to JS Bin, is that the iframe that the output is rendered into is forced to resolve to <a href="http://null.jsbin.com">http://null.jsbin.com</a>, which in turn returns a <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10.2.5">204</a> (this is done by injecting a <code>base</code> tag into the preview).</p>
+<p>This small change also reduced a huge number of requests, particularly when users are putting placeholder images in their bins, and the bin re-renders automatically on every key press. The preview might load 10 blank images, but &quot;blank&quot; actually meant it didn&#39;t have a source, which means it was hitting JS Bin.</p>
+<p>Now, the output simply resolves to null.jsbin.com, is responded to using nginx and never touches JS Bin.</p>
+<hr>
+<p>Come back for <a href="/jsbin-toxic-part-2">part 2</a>: the trials of dealing with spam in it&#39;s various forms!</p>
+]]></content:encoded></item><item><title>A ship at my side spreads her white sails</title><guid isPermaLink="false">a-ship-at-my-side-spreads-her-white-sails</guid><link>https://remysharp.com/2015/09/02/a-ship-at-my-side-spreads-her-white-sails</link><pubDate>Wed, 02 Sep 2015 22:28:29 +0000</pubDate><description><![CDATA[&quot;I am standing upon the seashore. A ship at my side spreads her white sails to the morning breeze and starts for the blue ocean. She is an object of beauty and strength. I stand and watch her until at length she hangs like a speck of white cloud just where the sea and sky come to mingle with each other.
+Then some one at my side says: &#39;There, she is gone!&#39;
+&#39;Gone where?&#39;
+Gone from my sight. That is all. She is just as large in mast and hull and spar as she was when she left my side and she is just as able to bear her load of living freight to her destined port.
+Her diminished size is in me, not in her. And just at the moment when some one at my side says: &#39;There, she is gone!&#39; there are other eyes watching her coming, and other voices ready to take up the glad shout: &#39;Here she comes!&#39;
+— Henry Van Dyke]]></description><content:encoded><![CDATA[<p><em>&quot;I am standing upon the seashore. A ship at my side spreads her white sails to the morning breeze and starts for the blue ocean. She is an object of beauty and strength. I stand and watch her until at length she hangs like a speck of white cloud just where the sea and sky come to mingle with each other.</em></p>
+<p><em>Then some one at my side says: &#39;There, she is gone!&#39;</em></p>
+<p><em>&#39;Gone where?&#39;</em></p>
+<p><em>Gone from my sight. That is all. She is just as large in mast and hull and spar as she was when she left my side and she is just as able to bear her load of living freight to her destined port.</em></p>
+<p><em>Her diminished size is in me, not in her. And just at the moment when some one at my side says: &#39;There, she is gone!&#39; there are other eyes watching her coming, and other voices ready to take up the glad shout: &#39;Here she comes!&#39;</em></p>
+<p>— Henry Van Dyke</p>
+<!--more-->
+<hr>
+<p>I&#39;ve put this on my blog so I can always find it in the future. A friend sent this quote shortly after <a href="https://remysharp.com/search?q=tia">Tia</a> was born, and had died during delivery.</p>
+<p>It struck me extrmely deeply. Mostly, I think, because our daughter had been born, and our lives had not changed one bit. We couldn&#39;t bring her home with us, there were no celebrations, no baby clothes. Everything was supposed to change, and yet we had nothing to show for it.</p>
+<p>This quote gave me something to hold on to. The idea that just because I couldn&#39;t see my baby anymore, it didn&#39;t mean she didn&#39;t hadn&#39;t existed. I had watched her at leangth until we had to leave.</p>
+<p>Tia was gone from my sight. She is just as loved as she was when she was in our arms. Her diminished size is in me, not in her.</p>
+]]></content:encoded></item><item><title>Diversity Scholarships for ffconf</title><guid isPermaLink="false">diversity-scholarships</guid><link>https://remysharp.com/2015/08/28/diversity-scholarships</link><pubDate>Fri, 28 Aug 2015 16:15:36 +0000</pubDate><description><![CDATA[This post outlines a new diversity scholarships programme that I want to introduce for ffconf. It&#39;s entirely possible that this does not apply to you, my dear reader, but you still have an important role to play: please pass on the message and this link to help seek those out who can make use of the scholarships.]]></description><content:encoded><![CDATA[<p>This post outlines a new diversity scholarships programme that I want to introduce for <a href="http://ffconf.org">ffconf</a>. It&#39;s entirely possible that this does not apply to you, my dear reader, but you still have an important role to play: please pass on the message and <a href="http://ffconf.org/scholarship">this link</a> to help seek those out who can make use of the scholarships.</p>
+<!--more-->
+<h2>What are the scholarships?</h2><p>Scholarships are available for anyone in an under-represented group in tech. This includes (but is not limited to): people of colour, LGBTQIA+ people, women and disabled people.</p>
+<p>We have a limited number of scholarships available which includes a ticket to the day ffconf event, travel to Brighton (from your city) and hotel as required.</p>
+<h2>How to apply</h2><p>Please answer the following questions and email <a href="mailto:julie@leftlogic.com">Julie</a> or <a href="mailto:remy@leftlogic.com">myself, Remy</a>. You don&#39;t have to explain your personal situation to us (but you can of course, if you want to). We trust you in this point :)</p>
+<ol>
+<li>Who are you?</li>
+<li>Where would you be travelling from (airport or city)?</li>
+<li>What do you do?</li>
+<li>Why should you get a scholarship?</li>
+</ol>
+<p>Please note that your email will be treated with the utmost privacy, and we will not publicly announce who the diversity scholarships go to (though you&#39;re welcome to say so yourself).</p>
+<p><strong>Deadline for applications: Friday 2nd Oct, 2015.</strong></p>
+<h2>Why?</h2><p>In the early part of this year I had the idea that we could get every delegate to ffconf a &quot;keep cup&quot; with a nice simple ffconf logo on it as a cool little souvenir of the event. Something to make what is already (hopefully) a great day, that tiny bit more special.</p>
+<p>The costs came back quoting us around £1,300. Not a huge amount, but it would also come out of my company, Left Logic&#39;s pocket.</p>
+<p>Then a few days ago I saw <a href="https://twitter.com/una/status/636643450754994176">this tweet from Una Kravets (@una)</a>. She posted how she was able to attend SassConf 2013 through a diversity programme they provided, and has gone on to travel, speak, start a meetup, and closes with:</p>
+<blockquote>
+<p>[...] All of this is possible for me because I got that scholarship in 2013. Scholarships aren&#39;t just about increasing diversity numbers, or financial assistance: they can change an attendee&#39;s life.</p>
+</blockquote>
+<p>I hadn&#39;t quite wrapped my head around what a diversity scholarship looked like until I read Una&#39;s post in full, and then it clicked. The same night, I decided that instead of spending our money on something that was nice for a large group - we should spend this money on providing flight and hotels for diversity tickets.</p>
+<p>So we have rounded the budget up to £1,500 for flights and hotel for at least 3 people (though it all depends on where you fly from, i.e. a diversity scholarship for someone travelling from Australia will blow our entire budget), but we&#39;ll stretch it as far as we can.</p>
+<p>Again, this scholarship isn&#39;t sponsored, this is from Remy and Julie. No, I don&#39;t want a medal(!) just trying to help in a small way.</p>
+<h2>Acknowledgements</h2><p>I&#39;ve taken either some copy or inspiration from <a href="http://sassconf.com/#scholarships">SassConf</a> and <a href="http://blog.otsconf.com/post/121589262220/how-to-apply-for-community-and-diversity-tickets">OTSConf</a>.</p>
+<p>Again, if this doesn&#39;t apply to you, please please can you pass on the message and reach out to anyone you know that might benefit from one of these scholarship places.</p>
+]]></content:encoded></item><item><title>Five</title><guid isPermaLink="false">five</guid><link>https://remysharp.com/2015/08/17/five</link><pubDate>Mon, 17 Aug 2015 15:45:32 +0000</pubDate><description><![CDATA[Tia was our first born. I know I don&#39;t write about Ellis and Seren, but I get to look into their eyes and tell them that I love them every day. Tia never heard my voice. She never opened her eyes. I&#39;ll never know what colour eyes she has. Ever.
+Tia would be 5 this month. This is for her.]]></description><content:encoded><![CDATA[<p>Tia was our first born. I know I don&#39;t write about Ellis and Seren, but I get to look into their eyes and tell them that I love them every day. Tia never heard my voice. She never opened her eyes. I&#39;ll never know what colour eyes she has. Ever.</p>
+<p>Tia would be 5 this month. This is for her.</p>
+<!--more-->
+<p>Tia was born on the last day of August and each year after August quietly creeps in with it&#39;s pain and sorrow. Often I&#39;ll need to stand still to notice it. Sometimes, like this year, it comes early and hits me harder.</p>
+<p>It was mid-July and everything felt like it was shrouded in a heavy fog. I felt like any moment I would just collapse under the sheer weight of just existing without my daughter and I&#39;d be crushed. Literally.</p>
+<p>Losing Tia to stillbirth is hard in a way that people around us don&#39;t see her and quite often don&#39;t really know what stillbirth means. They don&#39;t know that she existed, and those that do aren&#39;t sure whether or not to mention her name.</p>
+<p>I feel like I have to explain that she died some point during labour, like I need to validate her existence in some way. That&#39;s no other people, that&#39;s <em>me</em>. Some people don&#39;t understand why I&#39;m explaining. Most people don&#39;t understand what they&#39;re supposed to say. I don&#39;t know what <em>I should say</em> at times. &quot;I&#39;m sorry for you loss&quot; says a lot. Mostly it says &quot;I&#39;m lost for words, but I know you&#39;re in pain and I see you.&quot;.</p>
+<p>Words seem simple when there&#39;s no tragedy behind it. The weeks and  after Tia was born, my wife and I would constantly exchange &quot;are you okay?&quot;. It wasn&#39;t a question. It was a way of saying <em>Hey</em>. We were not okay. Our baby was dead. It would be a long time before we would be <em>okay</em>.</p>
+<p>&quot;How many children do you have?&quot;. That&#39;s the worst. Though a close second is &quot;is this your first?&quot;.</p>
+<p>There&#39;s no way to answer these questions without something feeling wrong.</p>
+<p>After many, many months our answers have adapted to honour Tia but avoid the awkwardness when we respond fully and truthfully to those questions. Instead we&#39;ll reply with: &quot;we have two <em>at home</em>&quot;. Our first, she&#39;s not at home. We carry her in our hearts. She&#39;s all around us, and she lays in a place called Angel&#39;s Corner.</p>
+<p><img src="/images/angels-corner.jpg" alt="Angel&#39;s Corner"></p>
+<h2>My view on the world changed</h2><p>My view on the world changed entirely after Tia was born. When I&#39;m in a flower shop, to me, flowers are for funerals and gravesides, so it always surprises me when I see birthday balloons and cards with flowers celebrating babies. I have to remember people use flowers for other occasions too.</p>
+<hr>
+<p>I hate to admit it, but every one of my friends who are pregnant: I&#39;m scared for them. I don&#39;t want anyone going through what we did, and yet hundreds upon hundreds more will every year. It&#39;s a roll of the dice and nothing more. Some wont survive. Some will. We think we can control our lives and protect those around us. We can&#39;t. This breaks my heart and scares me <em>only</em> because it happened. The unthinkable happened. It happens. Unfairly. If you and your partner are pregnant, please take a look at <a href="http://www.countthekicks.org.uk/">count the kicks</a>.</p>
+<hr>
+<p>I can&#39;t live away from Brighton. I can&#39;t because my daughter is buried here. If we left to live in another country, who would bring flowers to her grave? This is too painful to think about. Her being forgotten amongst a sea of children&#39;s graves. It&#39;s hard enough to think about this after I&#39;m gone from this world, but this simple fact keeps me from going anywhere soon.</p>
+<hr>
+<p>Long shadows and the golden light that comes with August and September remind me of long walks with my wife after Tia was born. In pain and alone in the world. Nothing but us and our precious grief. The world looks different through shock. We&#39;re surrounded in unparalleled beauty which is near impossible for me to see these days with the chaos and love that my family has to offer today. But in extreme grief: the sunsets, the light, the flowers, the grass, the mornings, the nights: all beautiful. Beautiful in a way that it could all be lost in the blink of an eye.</p>
+<hr>
+<p>Tia would be 5 years old at the end of August 2015. She&#39;d have finished her first year of school. The oldest of three. A little girl full of life.</p>
+<p>But she is not. She is not 5. She is not here. I had to leave her. Alone. At the hospital the day we met her. It still hurts today. At times my pain is anger that wants to burn the world to the ground for taking her from us. I left her, and it&#39;s the regret that I&#39;ll carry forever more and one that could never have any other outcome.</p>
+<p>I miss her. Our family misses her.</p>
+<p><img src="/images/family-on-hills-2015.jpg" alt="My family on the hills"></p>
+<!--
+
+Flowers are for gravesides.
+I'm always fearful when friend's due dates are coming up.
+I don't have any answer that isn't messy to: how many children do you have.
+I notice the golden light and long shadows in August and September because we saw everything differently after Tia was born.
+I can't ever see myself leaving Brighton because my baby is buried here, and if I didn't live here, who would visit her graveside?
+I don't know what colour Tia's eyes are.
+
+-->]]></content:encoded></item><item><title>I thought paypal was better...</title><guid isPermaLink="false">i-thought-paypal-was-better</guid><link>https://remysharp.com/2015/08/10/i-thought-paypal-was-better</link><pubDate>Mon, 10 Aug 2015 12:59:58 +0000</pubDate><description><![CDATA[We&#39;ve been using PayPal for ffconf since 2009. The first year it took the full 6 months of sale to sell ~200 tickets. In 2010 it took 3 months to sell 283 tickets. 2011, 4 days - and that was the first of the trouble. 2012 to 2015, it&#39;s taken under 10 minutes.]]></description><content:encoded><![CDATA[<p>We&#39;ve been using PayPal for <a href="http://ffconf.org">ffconf</a> since 2009. The first year it took the full 6 months of sale to sell ~200 tickets. In 2010 it took 3 months to sell 283 tickets. 2011, 4 days - and that was the first of the trouble. 2012 to 2015, it&#39;s taken under 10 minutes.</p>
+<!--more-->
+<h2>The first trouble</h2><p>The troubles that <a href="http://www.creativebloq.com/netmag/burned-paypal-9126093">PayPal had with effectively killing conferences was well documented</a>.</p>
+<p>PayPal had &quot;limited&quot; our funds the first year (2011). There was an &quot;unexpected spike&quot; in our transactions which caused a red flag. Fair enough. The funds were locked until the event was over in November 2011 (IIRC we&#39;d moved most of the funds out quickly and they were only holding around £6,000) - but it&#39;s important to note that Julie and I have always bank-rolled the year&#39;s event with the previous year&#39;s profits.</p>
+<p>Specifically, we know that the event covers our costs (both expenses like the venue, and our operating costs). So we can afford to pay the venue ahead of time without the funds from the tickets.</p>
+<h2>A hero in the midst</h2><p>In 2013 it happened again, and somehow <a href="https://twitter.com/billwscott">Bill Scott</a> got wind of our troubles and explained that he was carrying the message back to the very top dogs (at the time a new CEO was in place and working hard to change PayPal&#39;s reputation).</p>
+<p>He did an amazing job. Something had shifted in PayPal and they (the company) appeared to understand recurring events and how transactions would work.</p>
+<p>2014&#39;s tickets sold and there wasn&#39;t a peep from PayPal at all. It seems like it was all good.</p>
+<p>But...</p>
+<h2>2015 and 1 month after selling out</h2><p>We released tickets for ffconf 2015 a month ago. We sold out in (two batched totalling) 7 minutes.</p>
+<p>As usual, I removed <em>some</em> funds from PayPal, and left around £15,000 for any refunds and anticipation of any queries from PayPal (old habits and all).</p>
+<p>And here&#39;s when it goes all wrong...</p>
+<p>This account is so there&#39;s something written about how it&#39;s going wrong, because I&#39;m having <em>a lot</em> of trouble getting information into PayPal directly.</p>
+<h2>Going wrong</h2><p>The timeline:</p>
+<ul>
+<li>I get a phone call (good) at 10am - but no information, just that &quot;John&quot; is calling from PayPal to speak to me, and that they&#39;ll email.</li>
+<li>I get an email, asking for the following from me:</li>
+</ul>
+<blockquote>
+<p>Your account has recently been reviewed by our merchant team due to the following:</p>
+<ul>
+<li>Increase in volumes processed</li>
+</ul>
+<p>We tried to call you on 10/08/2015, but we couldn&#39;t reach you. To allow time to review this in more detail, we&#39;ve temporarily limited what you can do with your account until you submit the information you need to provide and take the actions listed.</p>
+<p>Check that you&#39;ve answered all questions and provided all information we ask for to restore your account as soon as possible.</p>
+<ul>
+<li>When is the event taking place?</li>
+<li>What kind of service do you provide? (accommodation, registration, tours, etc)</li>
+<li>Is the event organised by you or you are acting as intermediary between the buyers and the event organiser? (if so, please provide us with the contract with the event organiser).</li>
+<li>How many tickets are being sold? How many tickets are you planning to sell via PayPal?</li>
+<li>What is the average ticket cost?</li>
+<li>Have you previously hosted events? (if yes, how many years have you hosted these events?)</li>
+<li>Are the proceeds from Ticket Sales required as capital to run the event?</li>
+<li>If so, can you provide an Event expense List and projected payment dates for each expense? Specifically, details on the expenses that need to be made in advance of the event.</li>
+<li>Do you have a venue booked for the event? Need confirmation for the venue booking? Confirm capacity of the venue?</li>
+<li>Do you have insurance in case of event being cancelled? Can they provide details of that insurance? (PayPal may be added as beneficiary to this insurance as a partial mitigant).</li>
+<li>Expected Total Payment Volume to receive via PayPal? Is PayPal the only processor of this event? If no, what is the % processed through PayPal.</li>
+<li>How often are you expecting to conduct these events?</li>
+<li>What is the cancellation policy for this event?</li>
+</ul>
+<p>Once we receive the information, we aim to complete our review and respond to you within 72 hours.</p>
+</blockquote>
+<ul>
+<li>I reply, mostly to say I&#39;ve given this information before, but include some other points...</li>
+<li>The email <strong>bounces back</strong>... <em>deep breath</em></li>
+<li>I visit PayPal.com - it doesn&#39;t say <em>how much</em> my account is limited by, just that I need to &quot;resolve&quot; the &quot;check your email for more information&quot;</li>
+<li>I try to upload the text email I replied with...</li>
+<li>&quot;Send files&quot; won&#39;t disable, I notice that I can only send PDF, PNG or JPG...</li>
+<li>I print my email reply to a PDF, <em>then</em> upload that...</li>
+</ul>
+<p>Now I just wait. God knows how they&#39;ll get in touch, or whether they will again. I&#39;ve provided all the information about our transactions in previous years, and what annoys me the most is that the spike in our transactions <strong>is consistent with previous years</strong>.</p>
+<p>Honestly, I don&#39;t really care what they do. I&#39;m expecting the funds to be held until after the event has finished (or 2 months after...which is just as annoying), after which I&#39;ll be expected to somehow prove that people didn&#39;t want a refund <em>post</em> event.</p>
+<p>So, yeah, I thought PayPal was better... Filing under &quot;Funsies&quot;.</p>
+<div class="update">
+<strong>Updated 2015-08-11:</strong> the account limit has been removed. I&#39;m not 100% sure why, since the only information I provided was a slightly ranty email. It&#39;s quite possibly <em>this</em> blog post that helped, or not. I&#39;m not entirely sure!.
+</div>
+]]></content:encoded></item><item><title>Notes on porting my Pebble app to SDK3</title><guid isPermaLink="false">notes-on-porting-my-pebble-app-to-sdk-3</guid><link>https://remysharp.com/2015/07/29/notes-on-porting-my-pebble-app-to-sdk-3</link><pubDate>Wed, 29 Jul 2015 14:32:03 +0000</pubDate><description><![CDATA[Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.
+In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).]]></description><content:encoded><![CDATA[<p>Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time&#39;s colour features.</p>
+<p>In particular, I wanted the resting time to show in green and overtime to show as red. These are my notes that I gathered in porting the app to SDK 3 whilst still supporting the APLITE Pebble (or OG as I like to think).</p>
+<!--more-->
+<h2>Layout</h2><p>With my app, I have a <code>ActionBarLayer</code> on the right with arrows and <code>TextLayer</code>s with the second countdown. I noticed when deploying to BASALT, the position was off, and in fact everything was closer.</p>
+<p>I did some simple repositioning, but you can see from the screenshot below that the <code>ActionBarLayer</code> is actually slightly wider:</p>
+<p><img src="/images/pebble-comparison1.png" alt="APLITE vs BASALT side-by-side"></p>
+<p>This is emphasised when the count is actually going down:</p>
+<p><img src="/images/pebble-comparison2.png" alt="APLITE vs BASALT side-by-side"></p>
+<p>This is due to BASALT being &quot;full screen&quot; by default. So to compensate for this, I need to do conditional positioning on the elements. For the position of the <code>TextLayer</code>, I&#39;m using <code>134 - ACTION_BAR_WIDTH</code> (which is 30 for BASALT and 20 for APLITE):</p>
+<pre><code class="language-cpp">s_textlayer_120 = text_layer_create(GRect(0, 12, 134 - ACTION_BAR_WIDTH, 42));
+</code></pre>
+<p>To get the top positioning on the <code>TextLayer</code>s I couldn&#39;t seem to calculate the values correctly, so I had a conditional set of defines:</p>
+<pre><code class="language-cpp">#ifdef PBL_PLATFORM_BASALT
+  #define MENU_TOP 16
+  #define MENU_MIDDLE 64
+  #define MENU_BOTTOM 112
+#else
+  #define MENU_TOP 6
+  #define MENU_MIDDLE 54
+  #define MENU_BOTTOM 102
+#endif
+</code></pre>
+<h2>Developing for APLITE <em>and</em> BASALT</h2><p>I&#39;ve got an original (kickstarter) Pebble and a Pebble Time. I&#39;m used to deploying to devices (rather than emulators, though I&#39;ll come on to this).</p>
+<p>However, I found (after a <em>lot</em> of failure) that you can&#39;t develop for more than one Pebble device at a time. Importantly, on the phone Pebble app (be it Pebble or Pebble Time) <strong>you can only have one watch enabled for development</strong>.</p>
+<p>The workaround is to keep switching between the two apps, flipping the developer checkbox.</p>
+<p>Or...use the emulator on the command line. It&#39;s pretty solid, and conveniently you can have both the BASALT <em>and</em> APLITE running side by side (as you seen from my shots above).</p>
+<h2>UI tweaks</h2><p>Since my Rest app is designed to be used in the gym (I use the gym 4 times a week and use the Rest app <em>all</em> the time), there&#39;s a few important requirements:</p>
+<ul>
+<li>Clear to read (quickly)</li>
+<li>Show the time</li>
+</ul>
+<p>Being clear to read was the motivation behind using colour in my app. Now I can quickly see if I&#39;m over or not based on colour.</p>
+<p>However, BASALT apps all run in fullscreen - so you lose the time, which is useful to me because I need to know if my gym session is running over or not. Thankfully the developer docs include putting the time back in on their <a href="http://developer.getpebble.com/sdk/migration-guide/#using-the-status-bar">migration guide</a>.</p>
+<p>What I needed to specifically do was ensure the <code>StatusBarLayer</code> was <em>under</em> my <code>ActionBarLayer</code>, otherwise you get this effect, where the <code>StatusBarLayer</code> cuts into the menu:</p>
+<p><img src="/images/pebble-status-layer.png" alt="BASALT status bar layer order"></p>
+<p>The fix is to simply ensure the <code>ActionBarLayer</code> is drawn <em>after</em> the <code>StatusBarLayer</code>.</p>
+<h2>Get it</h2><p>So if you have a Pebble Time, or Pebble OG, and you use the gym, you can get the <a href="http://apps.getpebble.com/en_US/application/53ff41ed8cdf37902b000050">free app here</a> - and don&#39;t forget to <em>heart</em> it!</p>
+]]></content:encoded></item></channel></rss>

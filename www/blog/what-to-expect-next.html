@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>What to expect next</title><meta name="description" content="What to expect next"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="I feel like this blog has been a little quiet over the last couple of months, so for the loyal readers out there, here&#39;s a glimpse of what&#39;s been going on and what&#39;s coming next."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="What to expect next"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-what-to-expect-next-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2007/07/26/lastfm-recent-album-artwork-plugin" title="Last.fm Recent Album Artwork Plugin">Next</a></li><li class="prev"><a href="/2007/07/22/textmate-tagging-with-simple-tagging" title="TextMate Tagging with Simple Tagging">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/07/22/what-to-expect-next" rel="bookmark" title="Permanent Link: What to expect next">What to expect next</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/what-to-expect-next.md">(edit)</a></small><div class="post-content"><p>I feel like this blog has been a little quiet over the last couple of months, so for the loyal readers out there, here&#39;s a glimpse of what&#39;s been going on and what&#39;s coming next.</p>
+<!--more-->
+<h2>What have I been up to?</h2><p>I&#39;ve been focusing on <a href="http://leftlogic.com">Left Logic</a> (my business) for the last couple of months, releasing two very well received applications.</p>
+<h3>HTML entities</h3><p>The <a href="http://leftlogic.com/lounge/articles/entity-lookup/">HTML entities lookup</a> is both a web app and a dashboard widget that allows you to search for HTML entities by their visual likeness.  So for instance, if you want to find the &euml; character, you search for the letter &#39;e&#39;, or you want to find &raquo; so you search for &gt; or &gt;&gt;.</p>
+<p>It&#39;s done really well to be picked up so far and hopefully the word will spread further.  It was <a href="http://del.icio.us/url/b0fcdae510591ee929916bd492d24d95">top for del.icio.us</a>, was top on the popular links on (Ma.gnolia)[<a href="http://ma.gnolia">http://ma.gnolia</a>], a <a href="http://apple.com/downloads/dashboard/developer/htmlentitycharacterlookup.html">staff pick by Apple</a>, named at one of the <a href="http://www.engadget.com/2007/07/07/enwidget-ten-useful-apple-dashboard-widgets/">top 10 widgets by engadge</a> and <a href="http://digg.com/design/HTML_entity_character_lookup_based_on_how_the_character_looks/who">dugg by Kevin Rose</a> (though sadly not a lot of other people!).</p>
+<h3>Speech Bubbles</h3><p>The <a href="http://leftlogic.com/lounge/articles/speech-bubbles/">speech bubbles</a> mini projects allows you to place a speech bubble on any web site, add some text and email the link to a friend.  It works using a bookmarklet and iframes on the &#39;public&#39; page that creates the effects.</p>
+<p><a href="http://tinyurl.com/2cqgd5">Here&#39;s an example speech bubble</a></p>
+<h3>This blog&#39;s new theme</h3><p>I&#39;ve been looking around to find a decent theme for some time now, and finally settled on &quot;Illacrimo&quot; by <a href="http://www.designdisease.com">Design Disease</a>.  I&#39;ve had to go through the theme code to make it <a href="http://validator.w3.org/check/referrer">XHTML</a> compliant (a couple of random mistakes like missing <code>ul</code> tags around list elements).</p>
+<p>I&#39;m also working on modding the theme to allow for a wider main body.  So far I&#39;ve got this <a href="#?" id="expand">expand</a> function working, but it doesn&#39;t handle the comments or the comment box yet (I&#39;ve had to re-do a bunch of background images and play with the CSS on this theme to make this work).  Let me know whether you think it&#39;s worth using this and expanding on it.</p>
+<h3>Tagging</h3><p>I&#39;ve moved away from Ultimate Tag Warrior to <a href="http://trac.herewithme.fr/project/simpletagging/">Simply Taggging</a> and I&#39;m finding it much better for the latest version of WordPress.  Definitely recommend it (and it imports from UTW too).</p>
+<h2>What&#39;s coming up?</h2><h3>Last.fm recent album artwork plugin</h3><p>I&#39;ve finally got around to writing the code to grab the artwork from <a href="http://last.fm">Last.fm</a> for the most recent track you&#39;ve been listening to.  I&#39;m going to release it later this week as a WordPress plugin, equally, the code should be easily migrated to TextPattern or any other blogging software.</p>
+<h3>How to write a dashboard widget</h3><p>After writing the <a href="http://leftlogic.com/lounge/articles/entity-lookup/#widget">widget for the HTML entities</a> I realised there were a lot of bespoke ways of coding inside of <a href="http://developer.apple.com/tools/dashcode/">Dashcode</a>, so I&#39;ve been writing my experience up and adding tips.</p>
+<p>However, between starting the post and now, Dashcode has expired!  I&#39;m hoping that Apple will re-release it since the expiry made sense when Leopard was coming out in July, but not <a href="http://remysharp.com/2007/04/13/apple-delays-osx-leopard/">now that it has been delayed</a>.  </p>
+<p>I&#39;ve had a play with some of the memory debugging tools for apps, and managed to find the point in the code which performs the date comparison, but I can&#39;t work out how to patch the binary to always pass the test (or even find the source of the date to make it expire a year later).  I&#39;d be very interested if someone else out there thinks that they may be able to hack the binary to get it to work...</p>
+<h3>Code dump</h3><p>I&#39;m thinking about adding a category called &#39;code dump&#39;, for useful snippets of code (that go beyond the scope of a single project).  It will mostly focus within JavaScript.  I would make use of <a href="http://snipplr.com/">snipplr</a> - but I&#39;ve not had a great experience with it yet.  If there&#39;s interest in this, I will add it.</p>
+<h3>My iPhone App</h3><p>I&#39;ve been converting my <a href="http://ihatemusic.com">Marbles Squared</a> to an iPhone app, starting with the initial code.  I&#39;ve got <a href="http://remysharp.com/marbles">something working now</a> without a decent style in place.  It&#39;s playable, but there isn&#39;t a leaderboard and you can&#39;t seed games.</p><p class="follow">Posted 22-Jul 2007 under personal &amp; update &amp; widget. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2007/07/22/what-to-expect-next/';
+var disqus_title = 'What to expect next';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>

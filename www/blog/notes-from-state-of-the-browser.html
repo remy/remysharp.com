@@ -1,0 +1,334 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Notes from State of the Browser</title><meta name="description" content="Notes from State of the Browser"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="Notes/live blog from The State of the Browser - unedited!
+Web vs. Native - @mahemoff&quot;Will apps kill websites&quot; - this month
+
+Facebook 2011 backing HTML5, whilst investing in native apps -
+instagram
+Instagram has no website (yet uses the web)
+Platforms, apps or otherwise, still using web infrastructure - via
+RESTful services
+Web - dev experience - boils down to view source + browser =&gt; already
+going
+UI capabilities still suck on the web - doing it consistently, with
+smooth effects is HARDDDD
+Offline doesn&#39;t matter so much?
+Dev experience can be tricky for developers - maybe not the smoothest
+or more compatible tech. ie. the localStorage &quot;issue&quot;.
+Device integration is lacking - but will specs like WebRT solve this?
+Will Google resist these kinds of specs - why aren&#39;t they leading this
+or is there a politic play whereby Chrome Book doesn&#39;t require &quot;apps&quot;?
+
+Were WebApps are lacking
+Single sign is hard
+Intention
+Device access
+Background processing...native apps are able to proactively schedule
+task in the background - web doesn&#39;t have this at all yet
+(WebRT/thing?). Notifications / geo-fencing(?) / syncing. Background
+seems like one of the worst/highest level of requirements we need to
+compete web vs. native
+
+The Challenge - what we need to do
+Advisory, like html5ple.se and some guidance - it&#39;s kinda like the 90s
+again where there was a fuck load of JS libraries. Native has one way
+on the web, we have many ways and polyfills to get around issues.
+Web Apps should have support from the browser for single sign on - is
+this WebID (was BrowserID), etc?
+Developers need to contribute to &quot;moving the web forward&quot; - speak to
+the browser vendors. But isn&#39;t part of the problem &quot;Fucking Apple&quot;,
+they don&#39;t talk to anyone - nor do they release at any reasonable rate
+so developers
+Think about how web vs. native - web should remember your log in,
+application state - it shouldn&#39;t appear to boot from scratch each
+time, but this is where we should be using localStorage, and back
+doesn&#39;t destroy state!!! Ajax + history api.
+
+Questions
+Is the point: browsers don&#39;t matter - the web does...?
+Should the browser just be the webview?
+&quot;You&#39;re not on a fucking plane&quot; - but then do all devs know how to
+build apps like gmail where it&#39;s insanely quick because they know how
+to work the mobile device?
+AppCache is not a replicatement for localStorage - far from it.
+Is there a larger problem that the browser (and a pro) exposes data if
+the user wants to get to it. It makes SSO harder because of security,
+etc?
+Web vs. Native seems like two issues: browser and the web. Browsers
+being the limitation.
+
+No app is an island - @paul_kinlanOverview of some technology in browsers - &quot;we&#39;re moving faster than ever
+before&quot;.
+
+CSS regions - makes print designers super happy - in that the reflow
+is correct.
+CSS filters - take that Instagram - using same technology as WebGL
+under the hood?
+Web Components - shadow DOM is the &quot;component code&quot;. Web Components do
+look really interesting because we&#39;ve been re-writing components all
+the flipping time, but it seems to boil down to 
+WebRTC - gives us the stream (though gUM is part of it), allows us to
+use a stream of video data (though god knows what format it&#39;s in if
+we wanted to capture it...).
+And a fuck load more APIs: Gamepad API, battery, pointer lock, etc.
+"><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="Notes from State of the Browser"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-notes-from-state-of-the-browser-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2012/05/24/issues-with-position-fixed-scrolling-on-ios" title="Issues with position fixed &amp; scrolling on iOS">Next</a></li><li class="prev"><a href="/2012/04/25/mobile-battery-performance" title="Mobile Battery Performance">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2012/04/28/notes-from-state-of-the-browser" rel="bookmark" title="Permanent Link: Notes from State of the Browser">Notes from State of the Browser</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/notes-from-state-of-the-browser.md">(edit)</a></small><div class="post-content"><p>Notes/live blog from <a href="http://browser.londonwebstandards.org/">The State of the Browser</a> - unedited!</p>
+<h2>Web vs. Native - <a href="http://twitter.com/mahemoff">@mahemoff</a></h2><p>&quot;Will apps kill websites&quot; - this month</p>
+<ul>
+<li>Facebook 2011 backing HTML5, whilst investing in native apps -
+instagram</li>
+<li>Instagram has no website (yet uses the web)</li>
+<li>Platforms, apps or otherwise, still using web infrastructure - via
+RESTful services</li>
+<li>Web - dev experience - boils down to view source + browser =&gt; already
+going</li>
+<li>UI capabilities still suck on the web - doing it consistently, with
+smooth effects is HARDDDD</li>
+<li>Offline doesn&#39;t matter so much?</li>
+<li>Dev experience can be tricky for developers - maybe not the smoothest
+or more compatible tech. ie. the localStorage &quot;issue&quot;.</li>
+<li>Device integration is lacking - but will specs like WebRT solve this?
+Will Google resist these kinds of specs - why aren&#39;t they leading this
+or is there a politic play whereby Chrome Book doesn&#39;t require &quot;apps&quot;?</li>
+</ul>
+<h3>Were WebApps are lacking</h3><ul>
+<li>Single sign is hard</li>
+<li>Intention</li>
+<li>Device access</li>
+<li>Background processing...native apps are able to proactively schedule
+task in the background - web doesn&#39;t have this at all yet
+(WebRT/thing?). Notifications / geo-fencing(?) / syncing. Background
+seems like one of the worst/highest level of requirements we need to
+compete web vs. native</li>
+</ul>
+<h3>The Challenge - what we need to do</h3><ul>
+<li>Advisory, like html5ple.se and some guidance - it&#39;s kinda like the 90s
+again where there was a fuck load of JS libraries. Native has one way
+on the web, we have many ways and polyfills to get around issues.</li>
+<li>Web Apps should have support from the browser for single sign on - is
+this WebID (was BrowserID), etc?</li>
+<li>Developers need to contribute to &quot;moving the web forward&quot; - speak to
+the browser vendors. But isn&#39;t part of the problem &quot;Fucking Apple&quot;,
+they don&#39;t talk to anyone - nor do they release at any reasonable rate
+so developers</li>
+<li>Think about how web vs. native - web should remember your log in,
+application state - it shouldn&#39;t appear to boot from scratch each
+time, but this is where we should be using localStorage, and back
+doesn&#39;t destroy state!!! Ajax + history api.</li>
+</ul>
+<h3>Questions</h3><ul>
+<li>Is the point: browsers don&#39;t matter - the web does...?</li>
+<li>Should the browser just be the <code>webview</code>?</li>
+<li>&quot;You&#39;re not on a fucking plane&quot; - but then do all devs know how to
+build apps like gmail where it&#39;s insanely quick because they know how
+to work the mobile device?</li>
+<li>AppCache is not a replicatement for localStorage - far from it.</li>
+<li>Is there a larger problem that the browser (and a pro) exposes data if
+the user wants to get to it. It makes SSO harder because of security,
+etc?</li>
+<li>Web vs. Native seems like two issues: browser and the web. Browsers
+being the limitation.</li>
+</ul>
+<h2>No app is an island - <a href="http://twitter.com/paul_kinlan">@paul_kinlan</a></h2><p>Overview of some technology in browsers - &quot;we&#39;re moving faster than ever
+before&quot;.</p>
+<ul>
+<li>CSS regions - makes print designers super happy - in that the reflow
+is correct.</li>
+<li>CSS filters - take that Instagram - using same technology as WebGL
+under the hood?</li>
+<li>Web Components - shadow DOM is the &quot;component code&quot;. Web Components do
+look really interesting because we&#39;ve been re-writing components all
+the flipping time, but it seems to boil down to </li>
+<li>WebRTC - gives us the stream (though gUM is part of it), allows us to
+use a <em>stream</em> of video data (though god knows what format it&#39;s in if
+we wanted to capture it...).</li>
+<li>And a fuck load more APIs: Gamepad API, battery, pointer lock, etc.</li>
+</ul>
+<p>To the point: &quot;tunnels and bridges&quot;...All tunnel creation is bespoke
+(IRL), in that working across the web with things like oAuth is hard,
+and could well go horribly wrong.</p>
+<p>Bridges are different: common patterns are part of the process.</p>
+<p>Future of web app dev - is &quot;client to client&quot; - &quot;bridging&quot;.</p>
+<h3>Intents</h3><ul>
+<li>No oAuth - because you&#39;re handing over?</li>
+<li>Integrating the &quot;top 5&quot; APIs is hard, because a) they&#39;re all fucking
+different, and b) what about when they shutdown (delicious), c) what
+about when you don&#39;t integrate the <em>users&#39; favourite service</em>?</li>
+<li>Intents offers your list of services for the intent, user selects the
+service, and the service then returns the content in an open way -
+without the developer having to support all these services.</li>
+<li>Intent lets me send and receive =&gt; communication.</li>
+<li>Proposing an <code>&lt;intent&gt;</code> tag</li>
+<li>The content-type on the params determine the response kind, example: <code>var params = { type: &#39;video/mp4&#39;, data: blob, transfer: [blob] };</code></li>
+<li>You can also establish communication channels (like P2P?) using
+<code>Channel</code> API and using ports.</li>
+<li>Can play today, Paul has written a polyfill with decent x-browser
+support (IE8 upwards).</li>
+</ul>
+<h3>Questions</h3><ul>
+<li>What about defaults? Chicken and egg - the user is new, do you offer
+default services? Is this even a problem?</li>
+<li>How do services register their action handlers?</li>
+<li>Really not keen on the <code>action=&quot;http://webintents.org/share&quot;</code> - why
+the dependency?</li>
+<li>Doesn&#39;t the <code>startActivity</code>/<code>postResponse</code> assume a persistent page or
+new tab or even background services? // No - it appears as just a popup, whilst my current page remains open.</li>
+<li>Are other browsers implementing Intents? Equally is Google starting to
+introduce it in their own apps, Google Drive for instance.</li>
+</ul>
+<h2>The web as it should be - <a href="http://twitter.com/thebeebs">@thebeebs</a></h2><ul>
+<li>Text Shadows weren&#39;t fast enough for IE9 - the GPU was used for fonts,
+but the shadows were poorly performing (and equally on canvas - super
+poor performance even though it&#39;s all hw accel).</li>
+<li>First half of talk: IE sucks - yep - MS know it. IE9 is supposed to be
+the new flagship. Honestly, still lacking, but IE10 is a good second
+step.</li>
+<li>8 week launch cycles with previews. 12 weeks with IE10.</li>
+<li>Now collaborating (not more, but for a change).</li>
+<li>IE10 moving to &quot;smallest chrome&quot; - what about &quot;Chromeless&quot;?</li>
+<li>Ironically IE10 is touch, yet IE9 isn&#39;t!!!</li>
+<li>Working on and contributing the CSS grid specification - combination
+of row/column. Are other browsers picking this up?</li>
+<li>IE10 is the delivery platform - within the browser and via the Metro
+application platform.</li>
+<li>IE10 appcache, data storage, etc. Basically where it should be.</li>
+<li><a href="http://thebeebs.co.uk/prepare">http://thebeebs.co.uk/prepare</a> - compatibility indicator via a script
+include on your site - for debugging - things like userAgent sniffing,
+etc.</li>
+</ul>
+<h3>Questions</h3><ul>
+<li>When is IE10 going to be available on mobile?</li>
+<li>Once beyond the beta cycles, and in production ready, what about
+updates beyond that time? Do we have to wait another year?</li>
+<li>Is win.js implementing the standards - like File IO - is that going to
+use the standards, rather than the old school WSH type API - that&#39;s
+utterly bespoke to Windows?  The advantage of PhoneGap is that it
+relies on a standard, so ultimately, one day in the future, you can
+pull PhoneGap out and it should work. Can I pull out win.js and move
+to another platform?</li>
+<li>Touch - is this the standards based touch events?</li>
+<li>Debugging tools?</li>
+<li>Is IE10 the high street brand to the fashion industry? In that by the
+time IE10 comes out, Opera, FF and Chrome will be 12 months ahead. I
+guess this isn&#39;t a problem - if IE supports &quot;HTML5&quot; it means it&#39;s
+serious business - I guess good for general web sites.</li>
+<li>Seriously - why can&#39;t I install IE10 on my Mac directly? Or Linux?
+Sure, Apple don&#39;t port Safari to Linux, and the Windows port is pretty
+horrible, but they&#39;re arseholes anyway. // Response: No, they&#39;re
+developing for their platform - to be fair - Apple to do the same.</li>
+</ul>
+<h2>Broken HTML5 promises - are we &#39;appy? - <a href="http://twitter.com/codepo8">@codepo8</a></h2><ul>
+<li>Apple is crippling the mobile browser. True, examples include WebGL,
+storage, audio, etc, etc, etc.</li>
+<li>Christian is asked at Mobile Congress is mostly around how do I protect
+my code, how does it compare to HTML5 - UX &amp; performance.</li>
+<li>HTML5 has to be a marketing term - so it won&#39;t ever be ready because
+it encompasses a mass of technology ranging from true HTML5 to CSS to
+Node.js!</li>
+<li>Tooling is lacking. Dreamweaver type tools, but all the way to Final
+Cut type tools - i.e. to compose amazing interactive sites. Current
+offerings: <a href="http://html.adobe.com">html.adobe.com</a> and Sencha Architech...</li>
+<li>Christian successfully takes the piss out of @thebeebs and @mahemoff,
+who&#39;s next?</li>
+<li>DRM is important to real companies. They have to protect their
+content.</li>
+<li>What about &quot;native&quot; performance? Zenga released a scroller library -
+and discussion said it works better if it was written for iOS only.
+Turned out that it was just the form value feedback that was slowing
+it down. (canvas scroller).</li>
+<li>Re: HTML5 is ready - did we pull it off? No, there&#39;s more questions
+than answers right now. Those answers are hard (but isn&#39;t a lot of
+this for the browsers to answer for us as developers?).</li>
+<li>Christian says we&#39;re just keeping ourself busy with other things -
+like demoscene or abstractions or random arguments like the
+semi-colons (2nd reference - end on 3 pokes!). Why is Google and MS
+releasing demos the canvas demos, etc. (Surely they&#39;re appealing to
+developers to get them on board).</li>
+<li>Talking about browsers stats. Me: honestly, these global stats don&#39;t
+matter, the client user stats matter.</li>
+<li>Patents: even when we can simulate or re-create the effects but
+patents are killing innovation.</li>
+</ul>
+<p>But &quot;enough with the bitching&quot;. Amen.</p>
+<ul>
+<li>Mozilla is a fully open organisation.</li>
+<li>&quot;Kick ass&quot; devtools. I hope he&#39;s not referring to Firebug because I
+really don&#39;t agree - the new devtools are a great step forward, but
+still way behind.</li>
+<li>MDN being supported not just by Mozilla - by people like Paul Irish
+from <em>other</em> browser vendors. An excellent web resource for teaching.</li>
+<li>More teaching from Mozilla and free access: mozparty, hack arcade,
+hackasourus, etc.</li>
+<li><a href="https://github.com/gladiusjs/gladius-core">Gladius</a> - open source (on github) Mozilla supported game platform
+(that won&#39;t be bought by another company and open!).</li>
+<li>C++ to JS conversion with <a href="https://github.com/kripken/emscripten">Emscripten</a> (WTF!?)</li>
+<li>Are we mobile yet - a visualisation of current state of mobile
+support, with direct links to the bugs - so go shake a stick to get
+them fixed.</li>
+<li>Contributing lots of new specifications: battery, camera, vibration,
+SMS sending - and all baked in to Boot 2 Gecko.</li>
+<li>Christian demos a B2G which appears fast. My own copy is slow, but I
+suspect the hardware is a huge factor.</li>
+<li><a href="http://b2gbuilds.org">b2gbuilds.org</a> for getting nightly builds. Nexus S, Galaxy SII and
+Galaxy Nexus flash image &quot;coming soon&quot;.</li>
+<li>Lots of events being run in Mozilla&#39;s open space - also open for drop
+in working.</li>
+<li>Wants people to make things that work.</li>
+</ul>
+<h3>Questions</h3><ul>
+<li>Why is UX coming up? Surely the OS should provide the UX for these
+elements, buttons, etc. </li>
+</ul><p class="follow">Posted 28-Apr 2012 under web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2012/04/28/notes-from-state-of-the-browser/';
+var disqus_title = 'Notes from State of the Browser';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>

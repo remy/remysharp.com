@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Google Assistive Technology Detection</title><meta name="description" content="Google Assistive Technology Detection"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="We all know Google engineers are working away a stuff that&#39;s so amazing they have to wait a couple of years before releasing it otherwise it&#39;ll blow our minds up (Gmail, maps, etc).
+That said, they&#39;ve released functionality tucked away inside the search results page that I never knew existed. Full accessibility support."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="Google Assistive Technology Detection"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-google-assistive-technology-detection-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2009/07/06/rimshot-with-html5" title="Rimshot with HTML5">Next</a></li><li class="prev"><a href="/2009/06/23/safaris-problem-with-font-face" title="Safari's problem with @font-face">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2009/07/01/google-assistive-technology-detection" rel="bookmark" title="Permanent Link: Google Assistive Technology Detection">Google Assistive Technology Detection</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/google-assistive-technology-detection.md">(edit)</a></small><div class="post-content"><p>We all know Google engineers are working away a stuff that&#39;s so amazing they have to wait a couple of years before releasing it otherwise it&#39;ll blow our minds up (Gmail, maps, etc).</p>
+<p>That said, they&#39;ve released functionality tucked away inside the search results page that I never knew existed. Full accessibility support.</p>
+<!--more-->
+<p>I spotted this when I was preparing my slides for the <a href="http://robertnyman.com/2009/05/04/geek-meet-charity-june-4th-2009-chris-mills-and-remy-sharp-speaking/">Sweden Geek Meet</a> talk: <a href="http://remysharp.com/talks/#2009_geekmeet">Blueprint for Unobtrusive Web Development</a>.</p>
+<p>When using <a href="http://firevox.clcworld.net/" title="Fire Vox: A Screen Reading Extension for Firefox">FireVox</a> the free screen reader extension for Firefox, Google&#39;s search results automatically detected the assistive device and changed the experience for me.</p>
+<p>Below is a video demonstrating the experience:</p>
+<p><video width="597" height="373" autobuffer controls>
+  <source src="http://jqueryfordesigners.com/media/google-axsjax.ogg" type="video/ogg">
+  <source src="http://jqueryfordesigners.com/media/google-axsjax.mov" type="video/quicktime">
+  <p>The video is available for download here: <a href="http://jqueryfordesigners.com/media/google-axsjax.mov">http://jqueryfordesigners.com/media/google-axsjax.mov</a>
+</p></video></p>
+<h2>What happened</h2><p>I&#39;ve not looked too deeply in to it yet, but as far as I understand, using the <a href="http://code.google.com/p/google-axsjax/" title="google-axsjax - Google Code">AxsJAX</a> library, Google is able to detect assistive devices and respond accordingly.</p>
+<p>Here&#39;s a list of what changed from the <em>traditional</em> experience:</p>
+<ol>
+<li>The first result is made to appear much bigger and easier to read</li>
+<li>The screen reader, via ARIA (I believe), jumps to the first result, skipping over the header gumph</li>
+<li>Results are navigable using the cursor keys: up &amp; down</li>
+<li>As the next result is highlighted and before the screen reader announces the detail, an audible cue tells us it has moved on</li>
+<li>If we reach the last result and press the down cursor, it returns to the first result, triggering a higher pitched audible cue, telling me it has started again</li>
+</ol>
+<p>All this happens without me having to <em>tell</em> Google that I&#39;m using a screen reader.</p>
+<p>I definitely want to see more of this in upcoming applications (note: from what I understand, this is also built in to Gmail, Reader and number of other apps).</p><p class="follow">Posted 1-Jul 2009 under accessibility &amp; aria &amp; code &amp; google &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2009/07/01/google-assistive-technology-detection/';
+var disqus_title = 'Google Assistive Technology Detection';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Twivatar, a Twitter avatar API</title><meta name="description" content="Twivatar, a Twitter avatar API"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="
+  Domain dead; native API available Due to a number of factors, twivatar.org is no longer active (the domain was in fact doomed) - however Twitter stepped up, and now there&#39;s an API to get the avatar directly from them: http://twitter.com/api/users/profile_image/rem - so no longer any need for twivatar anyway.
+
+  Twitter have deprecated the &quot;direct link&quot; API for avatar images. To get a twitter avatar when one has a twitter username, one now needs to get OAuth tokens (because the Twitter 1.1 API requires them) and use the users/show API endpoint (which is rate-limited and requires an auth token). This is terrible by comparison with merely inserting an image pointing to a single url, but there you go, Twitter hates developers.
+
+
+I&#39;ve built a number of different mini-apps for Twitter, and run in to various API limitations that I&#39;ve not been happy with (equally, Twitter did add the favourite count and fix the auth issue on favs).
+Twitter avatars is one of those annoyances.  If you&#39;ve built an app that caches a Twitter user&#39;s avatar, and that user changes their avatar (@joshr is a good example of this), the link breaks, thus breaking your app."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="Twivatar, a Twitter avatar API"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-twivatar-a-twitter-avatar-api-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2009/06/23/safaris-problem-with-font-face" title="Safari's problem with @font-face">Next</a></li><li class="prev"><a href="/2009/05/28/html5-spell-death-to-flash" title="HTML5 spell death to Flash?">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2009/06/02/twivatar-a-twitter-avatar-api" rel="bookmark" title="Permanent Link: Twivatar, a Twitter avatar API">Twivatar, a Twitter avatar API</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/twivatar-a-twitter-avatar-api.md">(edit)</a></small><div class="post-content"><div class="update">
+  <p><del><strong>Domain dead; native API available</strong> Due to a number of factors, twivatar.org is no longer active (the domain was in fact doomed) - however Twitter stepped up, and now there&#39;s an API to get the avatar directly from them: <a href="http://twitter.com/api/users/profile_image/rem">http://twitter.com/api/users/profile_image/rem</a> - so no longer any need for twivatar anyway.</del></p>
+
+  <p><ins>Twitter have deprecated the &quot;direct link&quot; API for avatar images. To get a twitter avatar when one has a twitter username, one now needs to get OAuth tokens (because the Twitter 1.1 API requires them) and use the <a href="https://dev.twitter.com/rest/reference/get/users/show">users/show</a> API endpoint (which is rate-limited <em>and</em> requires an auth token). This is terrible by comparison with merely inserting an image pointing to a single url, but there you go, Twitter hates developers.</ins></p>
+</div>
+
+<p>I&#39;ve built a number of different mini-apps for Twitter, and run in to <a href="http://groups.google.com/group/twitter-development-talk/browse_thread/thread/9a6f85e8beac68f5">various</a> <a href="http://groups.google.com/group/twitter-development-talk/browse_thread/thread/3e87ad44d63835d8/a2828dd9758323a9?lnk=gst&amp;q=remy#a2828dd9758323a9">API</a> <a href="http://groups.google.com/group/twitter-development-talk/browse_thread/thread/2f0f10cae3cf6824">limitations</a> <a href="http://groups.google.com/group/twitter-development-talk/browse_thread/thread/e1a61d579dca9300/cb65a0ad8f7ddcfe?lnk=gst&amp;q=remy#cb65a0ad8f7ddcfe">that</a> I&#39;ve not been <a href="http://groups.google.com/group/twitter-development-talk/browse_thread/thread/506cda469e9cfe2a/7d673932ee666c1b?lnk=gst&amp;q=remy#7d673932ee666c1b">happy</a> with (equally, Twitter did add the favourite count and fix the auth issue on favs).</p>
+<p>Twitter avatars is one of those annoyances.  If you&#39;ve built an app that caches a Twitter user&#39;s avatar, and that user changes their avatar (<a href="http://twitter.com/joshr">@joshr</a> is a good example of this), the link breaks, thus breaking your app.</p>
+<!--more-->
+<p>I&#39;ve spoken to <a href="http://twitter.com/dougw">Doug Williams</a> about this (during the <a href="http://twitterdevelopernest.com/">Devnest</a> in April) and there&#39;s a split argument over at Twitter: some say there should be an API, some say to re-poll Twitter to get the latest avatar.</p>
+<p>This weekend I decided that I&#39;d had enough, and decided to hack together a fix myself (affectionately known as a toilet project for those who know me).</p>
+<p>I give you: <a href="http://twivatar.org">Twivatar</a> (<a href="http://twivatar.org">twivatar.org</a>)</p>
+<p>Twivatar is a <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer" title="Wikipedia Entry: Representational State Transfer">RESTful</a> API that lets you specify a Twitter username and it will return the avatar.</p>
+<h2>Usage</h2><p>Usage</p>
+<pre><code>&lt;img src=&quot;http://twivatar.org/[screen_name]&quot;&gt;</code></pre>
+
+<p>Alternatively you can specify the size image you want from:</p>
+<ul>
+<li>mini (24x24)</li>
+<li>normal (48x48 - default)</li>
+<li>bigger (73x73)</li>
+<li>original</li>
+</ul>
+<pre><code>&lt;img src=&quot;http://twivatar.org/[screen_name]/[size]&quot;&gt;</code></pre>
+
+<p>I&#39;ve also got the app <a href="http://apiwiki.twitter.com/Rate-limiting">whitelisted</a> so there&#39;s no worries about it being blocked from Twitter.</p>
+<p>All the source code is available on <a href="http://github.com/remy/twivatar/">GitHub</a> so go ahead and fork &#39;n hack if you want to.</p><p class="follow">Posted 2-Jun 2009 under api &amp; twitter &amp; twivatar &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2009/06/02/twivatar-a-twitter-avatar-api/';
+var disqus_title = 'Twivatar, a Twitter avatar API';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>

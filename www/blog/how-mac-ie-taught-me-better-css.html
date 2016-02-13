@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>How Mac IE taught me better CSS</title><meta name="description" content="How Mac IE taught me better CSS"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="Generally when you say you&#39;ve done your browser testing it will mostly take place on a PC, and at the very least, it will be IE*.
+* No matter how much we developers or designers complain that IE isn&#39;t standards compliant, and Firefox is the way, the World still prefers IE (at time of writing!).
+However, being that I&#39;ve just started my company, I want to start on the right foot.  That means I&#39;ll be aiming to support the Big Three Safari (I&#39;m a Mac user - it&#39;s always going to come first!), Firefox and IE.
+But then there&#39;s IE for the Mac.  A notorious application that&#39;s usually the oddball of the bunch (oh - I guess there&#39;s Netscape 4.7 - but I&#39;m not counting that fruitcake)."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="How Mac IE taught me better CSS"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:image:src" content="http://remysharp.com/wp-content/uploads/2006/09/safari_vs_mac_ie_example.jpg"/><meta name="twitter:card" content="summary_large_image"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-how-mac-ie-taught-me-better-css-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2006/09/21/whens-a-static-ip-not-a-static-ip-when-its-with-plusnet" title="When's a static IP not a static IP? When it's with Plusnet">Next</a></li><li class="prev"><a href="/2006/09/20/the-black-dahlia-45" title="The Black Dahlia (4/5*)">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2006/09/20/how-mac-ie-taught-me-better-css" rel="bookmark" title="Permanent Link: How Mac IE taught me better CSS">How Mac IE taught me better CSS</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/how-mac-ie-taught-me-better-css.md">(edit)</a></small><div class="post-content"><p>Generally when you say you&#39;ve done your browser testing it will mostly take place on a <abbr title="Personal Computer">PC</abbr>, and at the very least, it will be <abbr title="Microsoft's Internet Explorer">IE</abbr>*.</p>
+<p><small>* No matter how much we developers or designers complain that IE isn&#39;t standards compliant, and Firefox is the way, the <a href="http://www.w3counter.com/globalstats/">World still prefers IE</a> (at time of writing!).</small></p>
+<p>However, being that I&#39;ve just started my company, I want to start on the right foot.  That means I&#39;ll be aiming to support the Big Three Safari (I&#39;m a Mac user - it&#39;s always going to come first!), Firefox and IE.</p>
+<p>But then there&#39;s IE for the Mac.  A notorious application that&#39;s usually the oddball of the bunch (oh - I guess there&#39;s Netscape 4.7 - but I&#39;m not counting that fruitcake).</p>
+<!--more-->
+<p>I&#39;ve designed the <a href="http://leftlogic.com">Left Logic</a> web site to be as accessible as possible, to work without JavaScript, to read correctly without CSS and so on.</p>
+<p>So when I compared my site between Safari (left) and Mac IE (right) here&#39;s what I saw:</p>
+<p><img src="http://remysharp.com/wp-content/uploads/2006/09/safari_vs_mac_ie_example.jpg" alt="Safari vs. Mac IE example"></p>
+<p>Note the big ass gap in IE on the right, and note that the Safari view is exactly how Firefox and Win IE saw my site.</p>
+<p>Here&#39;s the code for the container DIV that holds the main frame of content:</p>
+<p><code>#content_frame {
+position: relative;
+width: 478px;
+left: 199px;
+background-color: #fff;
+margin-bottom: 40px;
+}</code></p>
+<p>Mac IE had applied the <em>left: 199px</em> to all the containing DIVs, cascading the ID&#39;s style all the way down.  I should have been styling just the container DIV and not all those within the DIV.I also realised that the ID should be styled to the specific DIV, so I would add <em>DIV#content_frame</em>.  Not much changed.</p>
+<p>Then, I found that if I ditch the <em>left</em> and replace it with a <em>margin-left</em> all would be well with the Big Three, and the runt of a half-brother: Mac IE.</p>
+<p>Here&#39;s what the code should have been:</p>
+<p><code>DIV#content_frame {
+position: relative;
+width: 478px;
+margin-left: 199px;
+background-color: #fff;
+margin-bottom: 40px;
+}</code></p><p class="follow">Posted 20-Sep 2006 under css &amp; ie &amp; mac &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2006/09/20/how-mac-ie-taught-me-better-css/';
+var disqus_title = 'How Mac IE taught me better CSS';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>The Silky Smooth Marquee</title><meta name="description" content="The Silky Smooth Marquee"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="As we abused the Internet back in the 90 with tags like &lt;blink&gt; and &lt;marquee&gt; the last 10 years have seen the gradual extinction of these proprietary tags until we did full circle and the marquee effect appears in CSS 3.
+There&#39;s actually a very strong business case and requirement for the marquee tag - since the only the alternative is often a hacky solution (I feel) that shifts the CSS left position which, depending on your browser, will begin to eat away at your CPU.
+Funnily enough, the marquee tag is pretty well supported amongst the browser, but the actual effect is poorly executed natively (which is kind of odd if it&#39;s built directly in to the browser).  So let&#39;s solve this with JavaScript."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="The Silky Smooth Marquee"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-the-silky-smooth-marquee-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2008/09/13/big-three-oh-happy-birthday-to-me" title="Big Three Oh - happy birthday to me!">Next</a></li><li class="prev"><a href="/2008/09/08/dconstruct-08" title="dConstruct 08">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2008/09/10/the-silky-smooth-marquee" rel="bookmark" title="Permanent Link: The Silky Smooth Marquee">The Silky Smooth Marquee</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/the-silky-smooth-marquee.md">(edit)</a></small><div class="post-content"><p>As we abused the Internet back in the 90 with tags like <code>&lt;blink&gt;</code> and <code>&lt;marquee&gt;</code> the last 10 years have seen the gradual extinction of these proprietary tags until we did full circle and the <a href="http://www.w3.org/TR/css3-marquee/">marquee effect appears in CSS 3</a>.</p>
+<p>There&#39;s actually a very strong business case and requirement for the marquee tag - since the only the alternative is often a hacky solution (I feel) that shifts the CSS left position which, depending on your browser, will begin to eat away at your CPU.</p>
+<p>Funnily enough, the marquee tag is pretty well supported amongst the browser, but the actual effect is poorly executed natively (which is kind of odd if it&#39;s built directly in to the browser).  So let&#39;s solve this with JavaScript.</p>
+<!--more-->
+<h2>Demo</h2><p>This demonstration shows 3 <em>jQuerified</em> marquees and 3 standard marquees. You can see how the untouched marquees are jumpy to animate, even in the later browsers such as Firefox 3 and Safari - let alone IE6.</p>
+<p><a href="http://remysharp.com/demo/marquee.html">Demonstration of jQuery Marquee</a></p>
+<h2>Download</h2><p><a href="https://gist.github.com/2484402">Download jQuery marquee plugin</a></p>
+<h2>Usage</h2><p>Include the <a href="http://jquery.com/">latest jQuery</a> and the plugin file via the <code>script</code> tag, then:</p>
+<pre><code>$('marquee').marquee(optionalClass);</code></pre>
+
+<p>Note that the enhanced marquee doesn&#39;t particularly have to apply to a marquee tag - but it is reading the effect details from the tag - currently it will default to behaviour = scroll, dir = left, speed = 2.  There&#39;s no (current) option for setting an overall default - but I&#39;ll add this if people feel it&#39;s required.</p>
+<h2>How it Works</h2><p>There&#39;s a few solutions available that create a similar effect, but this plugin does two things differently:</p>
+<ol>
+<li>Progressively enhances the <code>marquee</code> tag making this plugin uber easy to use.</li>
+<li>The effect is <strong>not</strong> achieved using CSS.  It&#39;s created using the overflow scroll on the element, which massively reduces the work the browser has to do - i.e. there&#39;s no re-rendering due to changes in CSS, it&#39;s scrolling using native functions of the browser.</li>
+</ol>
+<p>It&#39;s worth noting that behind the scenes, the <code>marquee</code> tag is being lifted out of the DOM and replaced with <code>div</code>s.  However, when it&#39;s chains in jQuery, it returns the new enhanced marquee <code>div</code>, so you can still hook click events, or navigate the DOM element if you wish - i.e. business as usual.</p>
+<p>However, be warned - as we are lifting the <code>marquee</code>&#39;s contents in to a new <code>div</code>, it means and predefined events or data will be lost.  To avoid this, make sure the marquee plugin is called before hand.</p>
+<h2>Events</h2><p>The following events can be bound to:</p>
+<ul>
+<li>stop - triggers when a loop is completed</li>
+<li>start - triggers when a loop is started</li>
+<li>end - completely finishes the loops if set</li>
+</ul>
+<p>The follow events can be triggered by the user:</p>
+<ul>
+<li>pause/stop (both do the same thing)</li>
+<li>unpause/start (both do the same thing)</li>
+</ul>
+<h2>Support</h2><p>I&#39;ve written the marquee to run on a single timer function rather than one per marquee, the idea being that you <em>could</em> go crazy and add lots of marquees, and this code should scale<sup>&dagger;</sup>.  </p>
+<p><del>Also, the marquee doesn&#39;t currently support <code>direction=&quot;up&quot;</code> or <code>direction=&quot;down&quot;</code>...yet.  Come back later and I&#39;ll upgrade if there&#39;s any interest.</del></p>
+<p>The marquee plugin now supports all directions.</p>
+<p><small>&dagger; I&#39;ve not tested it with more than 3 marquees yet - feel free to test and give feedback</small></p>
+<h2>Other Uses</h2><p>I&#39;ve played around with the implementation of the marquee and I&#39;ve been able to easily create the effect of the user clicking and dragging the marquee back and forth - which is very smooth (note that before I start the drag effect, I need to trigger a stop event):</p>
+<pre><code>$('div.demo marquee').marquee('pointer').mouseover(function () {
+  $(this).trigger('stop');
+}).mouseout(function () {
+  $(this).trigger('start');
+}).mousemove(function (event) {
+  if ($(this).data('drag') == true) {
+    this.scrollLeft = $(this).data('scrollX') + ($(this).data('x') - event.clientX);
+  }
+}).mousedown(function (event) {
+  $(this).data('drag', true).data('x', event.clientX).data('scrollX', this.scrollLeft);
+}).mouseup(function () {
+  $(this).data('drag', false);
+});</code></pre><p class="follow">Posted 10-Sep 2008 under code &amp; jquery &amp; marquee &amp; plugin &amp; project. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2008/09/10/the-silky-smooth-marquee/';
+var disqus_title = 'The Silky Smooth Marquee';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>

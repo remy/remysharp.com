@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>TextMate Tagging with Simple Tagging</title><meta name="description" content="TextMate Tagging with Simple Tagging"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="I recently upgraded to WordPress 2.2 and found that Ultimate Tag Warrior wasn&#39;t working anymore for me.  Although I managed to hack it a bit and eventually found UTW 3, the biggest problem (and show stopper) was when a new comment was placed on a post, all the tags would disappear.
+So I&#39;ve moved to Simple Tagging which imports UTW tags and works just fine.
+Now for the patch to allow me to tag from textmate."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="TextMate Tagging with Simple Tagging"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-textmate-tagging-with-simple-tagging-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2007/07/22/what-to-expect-next" title="What to expect next">Next</a></li><li class="prev"><a href="/2007/07/12/40-mac-tips" title="40 Mac Tips">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/07/22/textmate-tagging-with-simple-tagging" rel="bookmark" title="Permanent Link: TextMate Tagging with Simple Tagging">TextMate Tagging with Simple Tagging</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/textmate-tagging-with-simple-tagging.md">(edit)</a></small><div class="post-content"><p>I recently upgraded to WordPress 2.2 and found that Ultimate Tag Warrior wasn&#39;t working anymore for me.  Although I managed to hack it a bit and eventually found UTW 3, the biggest problem (and show stopper) was when a new comment was placed on a post, all the tags would disappear.</p>
+<p>So I&#39;ve moved to <a href="http://trac.herewithme.fr/project/simpletagging/">Simple Tagging</a> which imports UTW tags and works just fine.</p>
+<p>Now for the patch to allow me to tag from textmate.</p>
+<!--more-->
+<h2>Blogging Bundle</h2><p>As per my tutorials on how to support tagging from <a href="http://remysharp.com/2007/06/12/textmate-tagging-with-wordpress-22/">TextMate for Ultimate Tag Warrior</a> you have to patch the blogging bundle.  You can use my patch, or patch the blogging.rb file yourself.</p>
+<p>Note: that if you&#39;ve done this before (from a previous tutorial), you don&#39;t this to do this again and you can skip to the <a href="#xmlrpc">XMLRPC changes</a>.</p>
+<h3>Automatically Patching Blogging Bundle</h3><p>Download the latest <a href="http://remysharp.com/wp-content/uploads/2007/06/blogging.rb.patch">blogging.rb patch</a> and run the patch command:</p>
+<pre><code>patch -p0 &lt; blogging.rb.patch</code></pre>
+
+<h3>Manually Patching Blogging Bundle</h3><p>You&#39;ll need to edit the blogging.rb file in the /Applications/TextMate.app/Contents/SharedSupport/Bundles/Blogging.tmbundle/Support/lib/ directory.</p>
+<p>Find the following lines:</p>
+<pre><code>@post['mt_tags'] = @headers['tags'] if @headers['tags']</code></pre>
+
+<p>Then copy it below the</p>
+<pre><code>elsif self.mode == 'wp'</code></pre>
+
+<p>Then change:</p>
+<pre><code>@post['mt_allow_comments'] = @headers['comments'] =~ /\b(on|1|y(es)?)\b/i ? 'open' : 'closed' if @headers['comments']
+@post['mt_allow_pings'] = @headers['pings'] =~ /\b(on|1|y(es)?)\b/i ? 'open' : 'closed' if @headers['pings']</code></pre>
+
+<p>And change the instance of &#39;open&#39; to &#39;1&#39; (keeping the number in the quotation) and &#39;closed&#39; to &#39;0&#39; (again keeping the quotation), so you have this:</p>
+<pre><code>@post['mt_allow_comments'] = @headers['comments'] =~ /\b(on|1|y(es)?)\b/i ? '1' : '0' if @headers['comments']
+@post['mt_allow_pings'] = @headers['pings'] =~ /\b(on|1|y(es)?)\b/i ? '1' : '0' if @headers['pings']</code></pre>
+
+<p>The second lot of changes (comments and pings) are added because WordPress 2.2 changes the flag it requires to turn these features on.</p>
+<h2 id="xmlrpc">XMLRPC Changes</h2>
+
+<p>Next we need to change the xmlrpc.php file that should be located in the root directory of your blog.  I am providing my own copy of <a href="http://remysharp.com/wp-content/uploads/2007/07/xmlrpc.php.txt">xmlrpc.php</a> for download, but please be warned that I am using WordPress 2.2 and I have no idea whether this specific file will work with previous versions.</p>
+<p>Either way: backup your files!</p>
+<p><a href="http://remysharp.com/wp-content/uploads/2007/07/xmlrpc.php.txt">Download xmlrpc.php for WordPress 2.2</a></p>
+<p>I do know, however, that manually patched (using the instructions below) the tagging should work regardless of the WordPress version.</p>
+<h2>Manually Modifying xmlrpc.php</h2><h3>Step 1 - modify the setters</h3><p>In the functions <code>mw_newPost</code> and <code>mw_editPost</code> add the following line of code:</p>
+<pre><code>$_REQUEST['tag_list'] = $content_struct['mt_tags'];</code></pre>
+
+<p>Above the comment in each of those functions, that reads:</p>
+<pre><code>// We've got all the data -- post it:</code></pre>
+
+<h3>Step 2 - modify the getters</h3><p>In the functions <code>mw_getRecentPosts</code> and <code>mw_getPost</code>, find where the array is built (<code>$struct[] = array</code> and <code>$resp = array</code> respectively) and add the following as the first array item:</p>
+<pre><code>'mt_tags' => get_keywords($post_ID),</code></pre>
+
+<h3>Step 3 - get tags from Simply Tagging</h3><p>Add the following function in the xmlrpc.php file (I&#39;ve added it to the end of the file - but it doesn&#39;t matter, so long as it&#39;s global):</p>
+<pre><code>function get_keywords($postid) {
+  global $STagging;
+  $STagging->_postids = $postid;
+  $tags = $STagging->getPostTags($postid, true);
+  return (implode(', ', $tags));
+}</code></pre>
+
+<h2>Finishing up</h2><p>That&#39;s everything you should need to be able to enable tagging from TextMate to Wordpress using Simply Tagging.</p>
+<p>Keep reading for a few other tips, and let me know how you find this tutorial.</p>
+<h3>A Fix for Tag URLs</h3><p>I noticed that my particular install of WordPress 2.2 and Simply Tagging 1.6.8 didn&#39;t handle <a href="http://remysharp.com/tag/textmate">/tag/textmate</a> properly.  It kept saying 404 not found.</p>
+<p>I wrote a fix and patched my version of Simply Tagging to get it to work.  Edit simpletagging.php and change line 697 from:</p>
+<pre><code>$this->search_tag = stripslashes(get_query_var($this->option['query_varname']));</code></pre>
+
+<p>To:</p>
+<pre><code>$this->search_tag = preg_replace('/\//', '', (get_query_var($this->option['query_varname'])));</code></pre>
+
+<h3>And Finally: Ecto Tagging</h3><p>Though I don&#39;t use <a href="http://ecto.kung-foo.tv/">Ecto</a>, I&#39;m pretty certain if you follow the instructions in the <a href="#xmlrpc">xmlrpc section</a>, and follow the first two steps from <a href="http://www.robinlu.com/blog/archives/57">Robin Lu&#39;s - How to make Ecto work</a> it should enabling tagging.</p><p class="follow">Posted 22-Jul 2007 under code &amp; simple-tagging &amp; tagging &amp; textmate &amp; tutorial &amp; wordpress. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2007/07/22/textmate-tagging-with-simple-tagging/';
+var disqus_title = 'TextMate Tagging with Simple Tagging';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>

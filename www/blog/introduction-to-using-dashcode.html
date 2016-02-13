@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Introduction to using Dashcode</title><meta name="description" content="Introduction to using Dashcode"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="I recently wrote my first Dashboard app: HTML entities (named in the top 10 widgets by engadget.com), widget using Dashcode.  Since the product (Dashcode) is still in beta, there wasn&#39;t a great deal of resource available for developing widgets, so I&#39;m sharing my experience and any tips I can offer for development."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="Introduction to using Dashcode"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:image:src" content="http://remysharp.com/wp-content/uploads/2007/09/broken-dashcode-render.jpg"/><meta name="twitter:card" content="summary_large_image"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-introduction-to-using-dashcode-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2007/09/16/mysql-dump-tables-like" title="MySQL dump tables like...">Next</a></li><li class="prev"><a href="/2007/09/13/a-note-of-inspiration" title="A note of inspiration">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/09/16/introduction-to-using-dashcode" rel="bookmark" title="Permanent Link: Introduction to using Dashcode">Introduction to using Dashcode</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/introduction-to-using-dashcode.md">(edit)</a></small><div class="post-content"><p>I recently wrote my first Dashboard app: <a href="http://leftlogic.com/lounge/articles/entity-lookup/">HTML entities</a> (named in the <a href="http://www.engadget.com/2007/07/07/enwidget-ten-useful-apple-dashboard-widgets/">top 10 widgets</a> by engadget.com), widget using <a href="http://developer.apple.com/tools/dashcode/">Dashcode</a>.  Since the product (Dashcode) is still in beta, there wasn&#39;t a great deal of resource available for developing widgets, so I&#39;m sharing my experience and any tips I can offer for development.</p>
+<!--more-->
+<h2>Generic Ajax Widget</h2><p>As part of this article, I&#39;ve included a generic Ajax widget that simply grabs a URL and parses out a small section of the <abbr title="Document Object Model">DOM</abbr> that I&#39;m interested in.  It&#39;s a good jumping off point to get going with an Ajaxified widget.</p>
+<p><a href="/downloads/ajax_widget.zip">Download generic Ajax widget</a></p>
+<p><a href="/downloads/ajax_widget_project.zip">Download the source Dashcode Ajax project</a></p>
+<h2>Getting Dashcode</h2><p>If you&#39;ve got a recent version of Tiger (certainly bought any time this year), the system CDs will contain Dashcode in the developer kit (it may be installed already in your <code>/Developer/Applications</code> directory).</p>
+<p>Apple did have <a href="http://developer.apple.com/tools/dashcode/">Dashcode available for download</a>, but since it expired in July (<a href="http://remysharp.com/2007/04/13/apple-delays-osx-leopard/">when Leopard was <em>supposed</em> to come out</a>) it&#39;s no longer there.  You can hunt around the Internet for a old mirror if you don&#39;t have the CDs.</p>
+<p>Once installed, it&#39;ll say it&#39;s expired: <a href="http://remysharp.com/2007/07/30/lets-get-dashcode-working-again/">just get Dashcode working again</a>.</p>
+<h2>Stability</h2><p><img title="Broken Dashcode Render" alt="Broken Dashcode Render" src="http://remysharp.com/wp-content/uploads/2007/09/broken-dashcode-render.jpg" height="72" width="178" style="float: right; padding: 0 0 3px 3px">Dashcode is particularly ropy with Safari 3 beta (i.e. crashes and you get strange alignment issues with graphics - see example on right).  With Safari 2 (and I suspect Safari 3 final release with Leopard) it&#39;s much more stable.  Since there is the occasional crash from Dashcode, I would recommend constantly saving your project as you&#39;re coding.  I found more than 10% of the time, Dashcode would crash and result in a total loss of my code from the last save point.</p>
+<p>Also, I&#39;ve noticed that dumping a lot to the run log, when viewing the log, can cause Dashcode to slow right down to almost hanging.  Best to avoid dumping large amounts of HTML to the log.</p>
+<p>However - and this is a big one - the upside of programming with Dashcode is worth the risk of the crash, because it&#39;s takes most work out of the design process.  Since you&#39;re using it&#39;s <abbr title="Graphical User Interface">GUI</abbr> to drag and drop your design and how the user will interact with it, rather than having to code the look and feel by hand.</p>
+<h2>Designing Widgets</h2><p>The interface and the library component of Dashcode makes it possibly the strongest app for developing widgets.  It&#39;s 2 minutes work to create a glass effect on your widget, or to place the elements on the window and get going.</p>
+<p>I would strongly recommend studying other widgets, and reading through the <a href="http://developer.apple.com/documentation/AppleApplications/Conceptual/Dashboard_ProgTopics/index.html#//apple_ref/doc/uid/TP40002837">Dashcode design recommendations</a> as it&#39;s easy to design a widget that works, but twice the work to design a widget that&#39;s usable and works well (and I&#39;m sure you&#39;ll agree worth the extra distance).</p>
+<p>You&#39;ll find you can place widget-type objects on your widget, like scroll areas or gauges - but to handle them in the code isn&#39;t entirely intuitive, which is why the best source of understand how these interface elements work, is by opening up other widgets that already make use of the element.</p>
+<h2>Controls</h2><p>Dashcode offers the easy integration of bespoke elements such as the scrollarea, gauges and other such sexy components.  They&#39;re pretty easy to drop on to the widget from Dashcode, but until you&#39;re coding, they&#39;re not immediately obvious how they work.</p>
+<p>The help is limited, so I would recommend to develop by tutorial, in particular, look for the &#39;refresh()&#39; methods - as this seems to be a fairly standard way to redraw objects.</p>
+<p>Full documentation for the <a href="http://developer.apple.com/documentation/AppleApplications/Conceptual/Dashboard_ProgTopics/index.html#//apple_ref/doc/uid/TP40002837">Apple classes API</a> is available, but it&#39;s pretty clinical.</p>
+<h2>Effects</h2><p>Although effects are available within the Apple classes, you&#39;ll need to implement them yourself.  This is fairly limited to dynamic resizing of the widget, which is achieved using:</p>
+<pre><code>window.resizeTo(x, y);</code></pre>
+
+<p>If you are going to resize the widget dynamically, check out the <a href="http://developer.apple.com/documentation/AppleApplications/Conceptual/Dashboard_ProgTopics/index.html">Apple resizing examples</a> too.  </p>
+<p>I used this technique in my <a href="http://leftlogic.com/lounge/articles/entity-lookup/">HTML entities</a> widget to keep the widget small when it&#39;s dropped in to the Dashboard, but to allow it to grow dynamically when the user searched for a particular HTML entity.</p>
+<p>You should be able to find <a href="http://www.google.com/search?q=javascript+easing+effect">easing effects code and examples</a> if the built in Apple animation class doesn&#39;t suite your needs.</p>
+<h2>Running system commands</h2><p>This is one of the few areas that&#39;s well documented in the provided <a href="http://developer.apple.com/documentation/AppleApplications/Reference/Dashboard_Ref/index.html#//apple_ref/doc/uid/TP40001339">API</a>.  You can run system commands using the following type of command:</p>
+<pre><code>widget.system('ps -auxww | grep ' + myCommand, null);</code></pre>
+
+<p>What you should keep in mind, is that you can run <strong>any</strong> command through the system method.  This includes Perl, Ruby, AppleScript and anything else that suits your needs.  Using these commands I&#39;ve recently been able to create a widget that queries <a href="http://remysharp.com/2007/07/03/a-way-to-keep-track-and-in-touch/">Mail&#39;s SQLite&#39;s database via Perl</a>.  It was a case of running the system method and capturing the output (and in my case, eval&#39;ing it from a <abbr title="JavaScript Object Notation">JSON</abbr> output).</p>
+<h2>Ajax in the widget</h2><p>You widget supports a variation of the Ajax object (or rather xmlhttprequest object).  This version isn&#39;t bound by the usual security constraints of a browser - most importantly, it can request content from any domain.  </p>
+<p>To execute any Ajax requests from your widget, ensure you have the <strong>Allow Network Access</strong> attribute turned on - otherwise the Ajax will fail without any given reason.</p>
+<p>For example, you could use Ajax to pull your film page from <a href="http://imdb.com">IMDb</a> and then parse the XML for the elements of interest.  </p>
+<p>However, if you do want to pull some data from a web page and process it using the DOM returned you have to fiddle the request - in particular the <code>responseXML</code> will be null because the page being returned isn&#39;t <code>text/xml</code> - it&#39;s <code>text/html</code>.  You can do it using the following (in <a href="http://jquery.com">jQuery</a> syntax):</p>
+<pre><code>$.ajax({ 
+    url: 'http://remysharp.com/example_page', // doesn't really exist!
+    dataType: 'html', // important
+    success: function (xml) {
+        // convert the HTML to an XML DOM object
+        var dom = getDOMfromXML(xml);
+        alert(dom.getElementsByTagName('h1').length);
+    }
+});
+
+function getDOMfromXML(xml) {
+    var d = document.createElement('div');
+    xml = xml.substring(xml.indexOf('&lt;body') + xml.substring(xml.indexOf('&lt;body')).indexOf('&gt;')+1);
+    xml = xml.substring(0, xml.indexOf('&lt;/body&gt;'));
+    d.innerHTML = xml;
+    return d;
+}
+</code></pre>
+
+<p>This <code>getDOM</code> function is pretty horrible - but it works.  I tried using <code>DOMParser</code> and tried using <a href="http://web-graphics.com/mtarchive/001606.php">Ajax local data trick</a> and I tried using an iframe to inject the XLM - but neither would load the XML properly (in fact it would be blank).  The iframe would not load properly because it was still loading the entire frame while I was trying to access it.</p>
+<p>You can see this in use in the <a href="/downloads/ajax_widget.zip">generic Ajax widget</a> or download the <a href="/downloads/ajax_widget_project.zip">source Dashcode project</a>.</p>
+<h2>Widget Attributes</h2><p>The widget attributes are fairly self explanatory, but it&#39;s worth knowing:</p>
+<ul>
+<li>Allow Network Access is required for Ajax requests</li>
+<li>Allow Command Line Access is required for running external programs, i.e. if you have a Perl script executing some arbitrary task</li>
+</ul>
+<p>If you intend to make your widget available in different languages, then this is the place to enter the different strings.</p>
+<h2>The Inspector</h2><ul>
+<li>Hide items from the default image to present a better widget when it&#39;s installing.  It can to keep the preview of your app looking clean.</li>
+</ul>
+<h2>Debugging</h2><p>Dashcode comes with a log that can be viewed during run time.  </p>
+<p>You have following debugging tools:</p>
+<ul>
+<li>Breakpoints</li>
+<li>Live stack traces</li>
+<li>Evaluate window - to test commands</li>
+</ul>
+<p>To write to the log, you need to use <code>alert(&quot;My debug message&quot;);</code>.</p>
+<h2>Gotchas</h2><p>Here&#39;s a short list of things that tripped me up:</p>
+<ol>
+<li>Dynamically resizing the widget: window.resizeTo</li>
+<li>Changing styles: document.getElementById(id).style.setProperty(&#39;display&#39;, &#39;none&#39;);</li>
+<li>Calling refresh on an element that is hidden (display: none) will <strong>not</strong> update the display - in particular the scrollarea.</li>
+<li>If you edit the JavaScript in an external editor (as I do, in TextMate), the debugger in Dashcode has a habit of ignoring changes, even though they&#39;re being used to run the widget. </li>
+<li>Ajax request.responseXML is null if you request XML from a web page - i.e. since web pages are (mostly) severed as <code>text/html</code> rather than <code>text/xml</code> - this attribute is null.  See the Ajax section of this article to get around this problem.</li>
+<li>The debugger&#39;s interface, when copying variable values is limited to 32k - this doesn&#39;t mean the actual response is 32k, only that the particular textfield couldn&#39;t handle the full length.</li>
+</ol>
+<p>If you have anything else useful to add to help making widget development easier, please let us know by leaving a comment.</p><p class="follow">Posted 16-Sep 2007 under code &amp; dashboard-tag &amp; dashcode &amp; javascript &amp; mac &amp; tutorial. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2007/09/16/introduction-to-using-dashcode/';
+var disqus_title = 'Introduction to using Dashcode';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>

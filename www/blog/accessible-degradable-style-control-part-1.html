@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Accessible, degradable style control - part 1</title><meta name="description" content="Accessible, degradable style control - part 1"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="This the first in a two part tutorial on how to create style control links to your web site to control font sizes and to control style sheets both from JavaScript and with JavaScript disabled browsers.
+This method will also keep the user on the page they changed the style from, and will continue to hold until they clear their cookies."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="Accessible, degradable style control - part 1"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-accessible-degradable-style-control-part-1-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2007/03/01/farewell-the-old-guard" title="Farewell the Old Guard">Next</a></li><li class="prev"><a href="/2007/02/16/wordpress-smiles" title="WordPress smiles">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/02/23/accessible-degradable-style-control-part-1" rel="bookmark" title="Permanent Link: Accessible, degradable style control - part 1">Accessible, degradable style control - part 1</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/accessible-degradable-style-control-part-1.md">(edit)</a></small><div class="post-content"><p>This the first in a two part tutorial on how to create style control links to your web site to control font sizes and to control style sheets both from JavaScript and with JavaScript disabled browsers.</p>
+<p>This method will also keep the user on the page they changed the style from, and will continue to hold until they clear their cookies.</p>
+<!--more-->
+<p>Part 1 will focus on the font control, and part 2 will control the style sheet.</p>
+<h2>Steps Involved</h2><ol>
+<li><a href="#html">The HTML</a></li>
+<li><a href="#server_side">Server side script to managed non-JavaScript enabled browsers</a></li>
+<li><a href="#javascript">JavaScript to change font sizes dynamically</a></li>
+</ol>
+<h2 id="html">HTML</h2>
+
+<p>So that we have a clear view on how the functionality will degrade, we&#39;re starting with HTML.  The HTML looks like this - and note that we will be using the information in the links to control the style of the page:</p>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;&lt;a class=&quot;fontControl&quot; href=&quot;/change/font/1.5em&quot;&gt;Large Font&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a class=&quot;fontControl&quot; href=&quot;/change/font/1em&quot;&gt;Medium Font&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+
+<p>Note also, that I am going to use the class fontControl to hook our <a href="#javascript">JavaScript</a> to the links.</p>
+<p>In our HEAD tag we will add a style sheet to manage the font changes:</p>
+<pre><code>&lt;link rel=&quot;stylesheet&quot; title=&quot;font_adjust&quot; href=&quot;/css/font.css&quot; type=&quot;text/css&quot; /&gt;</code></pre>
+
+<p>The font.css is actually a PHP script (in my case, in yours it can be anything), hidden with a dash of <a href="http://httpd.apache.org/docs/1.3/mod/mod_rewrite.html">mod_rewrite</a>.  This is also true with the font change links, as explained below.</p>
+<h2 id="server_side">Server Side</h2>
+
+<h3>.htaccess</h3><p>If you don&#39;t have access to manage the .htaccess or don&#39;t have mod_rewrite enabled, then you should ignore this section, but read <a href="#non_htaccess">non-.htaccess</a>.</p>
+<p>Your .htaccess file should look like this:</p>
+<pre><code>Options +FollowSymLinks +ExecCGI
+RewriteEngine On
+RewriteBase /
+RewriteRule ^change/(.*)/(.*)$ change.php?$1=$2 [L]
+RewriteRule ^css/font.css$ css/font.php [L]</code></pre>
+
+<p>The important parts are the last two lines.  If you already have mod_rewrite rules put these in above any main redirects (i.e. in WordPress it would go <strong>above</strong> the last conditions and rule).</p>
+<p>Now you need to <a href="#files">create the files</a> that will handle the style control (skip the non-.htaccess).</p>
+<h3 id="non_htaccess">Non-.htaccess</h3>
+
+<p>It&#39;s not as clean, and you don&#39;t get to use <a href="http://rikrikrik.com/log/net-article-create-sexy-urls-with-modrewrite">sexy URLs</a>, but it&#39;s still possible.  From the links you have created, change as follows:</p>
+<pre><code>/change/font/... => /change.php/font/...</code></pre>
+
+<p>The font adjustment style sheet should point to font.php (instead of font.css).</p>
+<h3 id="files">Change and Font files</h3>
+
+<p>The change script will manage the setting of the cookie to control the font size change, and the font script will manage the getting of the cookie to set the font size in the browser.</p>
+<h4>change.php</h4><pre><code>&lt;?php
+// work out where to redirect the user back to
+$target = isset($_SERVER[&apos;HTTP_REFERER&apos;]) ? $_SERVER[&apos;HTTP_REFERER&apos;] : &apos;/&apos;;
+
+// collect the info for the style change
+$request_path = (isset($_SERVER[&apos;REQUEST_URI&apos;]) ?
+preg_replace(&apos;/\?.\*$/&apos;, &apos;&apos;, $_SERVER[&apos;REQUEST_URI&apos;]) : &apos;&apos;);
+$methods = explode(&apos;/&apos;, $request_path);
+if (count($methods)) {
+  if ($methods[2] == &apos;font&apos;) {
+    $f = isset($methods[3]) ? $methods[3] : &apos;1em&apos;;
+    setcookie(&quot;font_size&quot;, $f, time()+(3600*365), &apos;/&apos;); 
+  }
+}
+header(&quot;Location: $target&quot;);
+?&gt;</code></pre>
+
+<p>Note that the font defaults to &#39;1em&#39; and the cookie expires in a year (365 multiplied by the seconds in a day plus time now).  You can easily change this to suit the style of your web site.  </p>
+<h4>font.php</h4><p>_</p>
+<pre><code>&lt;?php if (isset($_COOKIE[&quot;font_size&quot;]) &amp;&amp; $_COOKIE[&quot;font_size&quot;]) {
+  header(&apos;Content-type: text/css&apos;);
+  echo &quot;BODY { font-size: {$_COOKIE[&apos;font_size&apos;]}; }&quot;
+} ?&gt;</code></pre>
+
+<h2 id="javascript">JavaScript</h2>
+
+<p>The solution so far should work without JavaScript enabled.  However, we want to allow this functionality without having to reload the page.</p>
+<p>For this we will need cookie setters and getters, font size changing methods and an &#39;onload&#39; function to apply the JavaScript once the <abbr title="Document Object Model">DOM</abbr> has loaded.</p>
+<p>Here is the <a href="http://remysharp.com/wp-content/uploads/2007/02/cookie.js">cookie library</a></p>
+<p>I am using <a href="http://jquery.com">jQuery</a> with the JavaScript, so include the libraries as follows:</p>
+<pre><code>&lt;script src=&quot;/js/jquery.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;/js/cookie.js&quot; type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</code></pre>
+
+<p>Now add the start up JavaScript (remember that all the script tags should really be inside the HEAD tag):</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+$(function(){
+  $(&apos;A.fontControl&apos;).click(function() {
+    // find the last part of the href and use this to set the font
+  var f = this.href.substring(this.href.lastIndexOf(&apos;/&apos;)+1);
+  set_font_size(f);
+  return false; // cancel the click through
+  });
+})
+
+function set_font_size(f) {
+  $(&apos;body&apos;).css(&apos;font-size&apos;, f);
+  createCookie(&apos;font_size&apos;, f, 365);
+}
+&lt;/script&gt;</code></pre>
+
+<p>If you&#39;re not familiar with jQuery, here&#39;s a short explanation:</p>
+<pre><code>$(function()) {</code></pre>
+
+<p>Execute the contents of this function when the DOM has loaded, i.e. the page is ready.</p>
+<pre><code>$('A.fontControl').click(function() {</code></pre>
+
+<p>Find all the anchor tags with the class &#39;fontControl&#39; and attach a click event.</p>
+<pre><code>var f = this.href.substring(this.href.lastIndexOf('/')+1);</code></pre>
+
+<p>Using the &#39;this&#39; variable within the A context, collect the last part of the URL (within the path).</p>
+<pre><code>$('body').css('font-size', f);</code></pre>
+
+<p>Set the font size CSS attribute to the font size passed in.</p>
+<h2>Wrapping up</h2><p>Remember to test your implementation with both JavaScript turned on and turned off.</p>
+<p>When it comes to where to add the style control links, I would recommend placing the style control in the footer, only because it&#39;s useful to users who are seeing the style.  </p>
+<p>Screen readers <em>may</em> not make much use of this feature, so I tend to add it to the footer of the code, and use absolute positioning to create a roll over effect in the header, see my <a href="http://kajinka.com">example at (work in-progress) Kajinka</a> (the top orange bar - then view the source).</p>
+<p>Next week I will post the second part of this tutorial to allow the user to view your site naked (i.e. no css) using similar methods.</p>
+<p>If you have any questions, comments or recommendations please drop me a comment and I&#39;ll do my best to reply.</p><p class="follow">Posted 23-Feb 2007 under accessbility &amp; code &amp; css &amp; degradable &amp; htaccess &amp; javascript &amp; php &amp; style. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2007/02/23/accessible-degradable-style-control-part-1/';
+var disqus_title = 'Accessible, degradable style control - part 1';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>

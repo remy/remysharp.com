@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Auto-populating Select Boxes using jQuery &amp; AJAX</title><meta name="description" content="Auto-populating Select Boxes using jQuery &amp; AJAX"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="
+    Update: due to popular demand, I&#39;ve caved in, and written a plugin and demos with multiple-select boxes populating each other and driven from MySQL.
+    View: Auto-populate multiple select boxes
+
+
+If you are familiar with using select boxes for categorisation and sub-categories, such as ebay does when selling an item, usually this can require a lot of JavaScript to maintain the select boxes, but jQuery can hugely simplify this task by adding a dash of AJAX."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="Auto-populating Select Boxes using jQuery &amp; AJAX"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:image:src" content="http://remysharp.com/wp-content/uploads/2007/01/ebay_categories.gif"/><meta name="twitter:card" content="summary_large_image"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-auto-populating-select-boxes-using-jquery-ajax-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2007/01/20/importing-colour-in-to-textmate" title="Importing colour in to TextMate">Next</a></li><li class="prev"><a href="/2007/01/18/how-i-achieved-cross-site-scripting" title="How I achieved cross site scripting">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/01/20/auto-populating-select-boxes-using-jquery-ajax" rel="bookmark" title="Permanent Link: Auto-populating Select Boxes using jQuery &amp; AJAX">Auto-populating Select Boxes using jQuery &amp; AJAX</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/auto-populating-select-boxes-using-jquery-ajax.md">(edit)</a></small><div class="post-content"><div class="update">
+    <p><strong>Update:</strong> due to popular demand, I&#39;ve caved in, and written a plugin and demos with multiple-select boxes populating each other and driven from MySQL.</p>
+    <p>View: <a href="http://remysharp.com/2007/09/18/auto-populate-multiple-select-boxes/">Auto-populate multiple select boxes</a></p>
+</div>
+
+<p>If you are familiar with using select boxes for categorisation and sub-categories, such as ebay does when selling an item, usually this can require a lot of JavaScript to maintain the select boxes, but jQuery can hugely simplify this task by adding a dash of AJAX.</p>
+
+
+<!--more-->
+<h2>The Goal</h2>
+
+<p>Allow the user to select a top level category from one select box and to automatically populate the sub-category.</p>
+
+<h2>Prerequisites</h2>
+
+<ol>
+<li><a href="http://jquery.com/src/jquery-latest.js">Latest copy of jQuery</a></li>
+<li>A basic understanding of <a href="http://en.wikipedia.org/wiki/JSON#Supported_data_types.2C_syntax_and_example">JSON</a> (donâ€™t let this put you off - itâ€™s really very, very easy)</li>
+<li>A server-side script that can respond to the AJAX request (though Iâ€™ve provided a simple example)</li>
+</ol>
+
+<h2>Demo</h2>
+
+<p>Our demo will specifically look to build a simple form that allows us to book human resource for a project.  The top level category is the resource type, and the sub-category will list the individualâ€™s names.</p>
+
+<p><a href="http://remysharp.com/wp-content/uploads/2007/01/select.html">See the demo in action</a></p>
+
+<h2>How it works</h2>
+
+<p>Once the top level category select is changed, it sends an AJAX request for the sub-categories.  The result of which are converted to select options and the sub-category selectâ€™s elements are replaced.</p>
+
+<h2>Unobtrusive JavaScript</h2>
+
+<p>First things first: as with any page that is loaded with JavaScript and AJAX functionality, it should work without JavaScript.</p>
+
+<p>To achieve this for our tutorial hereâ€™s what we need to ensure:</p>
+
+<ol>
+<li>When the page is loaded, the sub-category is loaded (if the top level has a selected item).</li>
+<li>There is a â€˜load sub-categoryâ€™ button the user can select to re-load the page.  We will hide this button with a &lt;noscript&gt; tag in our demo.</li>
+</ol>
+
+<h2>The Code</h2>
+
+<p>There are 4 parts to this demo. </p>
+
+<ol>
+<li>The pageâ€™s HTML.</li>
+<li>The server-side code to produce the dynamic page (i.e. to pre-load the select boxes when the user first visits).</li>
+<li>The jQuery &amp; JavaScript.</li>
+<li>The JSON response (which will reuse the server-side code).</li>
+</ol>
+
+<h3>HTML</h3>
+
+<pre>&lt;form action=&quot;/select_demo.php&quot;&gt;
+  &lt;label for=&quot;ctlJob&quot;&gt;Job Function:&lt;/label&gt;
+  &lt;select name=&quot;id&quot; id=&quot;ctlJob&quot;&gt;
+    &lt;option value=&quot;1&quot;&gt;Managers&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Team Leaders&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Developers&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;noscript&gt;
+    &lt;input type=&quot;submit&quot; name=&quot;action&quot; value=&quot;Load Individuals&quot; /&gt;
+  &lt;/noscript&gt;
+  &lt;label for=&quot;ctlPerson&quot;&gt;Individual:&lt;/label&gt;
+  &lt;select name=&quot;person_id&quot; id=&quot;ctlPerson&quot;&gt;
+    &lt;option value=&quot;1&quot;&gt;Mark P&lt;/option&gt;
+    &lt;option value=&quot;2&quot;&gt;Andy Y&lt;/option&gt;
+    &lt;option value=&quot;3&quot;&gt;Richard B&lt;/option&gt;
+  &lt;/select&gt;
+&lt;input type=&quot;submit&quot; name=&quot;action&quot; value=&quot;Book&quot; /&gt;
+&lt;/form&gt;
+</pre>
+
+<h3>Server-side</h3>
+
+<p>This is just a simple example, but it should be obvious that you can expand this to go off to a database and return an object in a JSON data structure:</p>
+
+<pre><code>&lt;?php
+if ($_GET[&#39;id&#39;] == 1) {
+  echo &lt;&lt;&lt;HERE_DOC
+    [ {&quot;optionValue&quot;: 0, &quot;optionDisplay&quot;: &quot;Mark&quot;}, {&quot;optionValue&quot;:1, &quot;optionDisplay&quot;: &quot;Andy&quot;}, {&quot;optionValue&quot;:2, &quot;optionDisplay&quot;: &quot;Richard&quot;}]
+HERE_DOC;
+} else if ($_GET[&#39;id&#39;] == 2) {
+  echo &lt;&lt;&lt;HERE_DOC
+    [{&quot;optionValue&quot;:10, &quot;optionDisplay&quot;: &quot;Remy&quot;}, {&quot;optionValue&quot;:11, &quot;optionDisplay&quot;: &quot;Arif&quot;}, {&quot;optionValue&quot;:12, &quot;optionDisplay&quot;: &quot;JC&quot;}]
+HERE_DOC;
+} else if ($_GET[&#39;id&#39;] == 3) {
+  echo &lt;&lt;&lt;HERE_DOC
+    [{&quot;optionValue&quot;:20, &quot;optionDisplay&quot;: &quot;Aidan&quot;}, {&quot;optionValue&quot;:21, &quot;optionDisplay&quot;:&quot;Russell&quot;}]
+HERE_DOC;
+}
+?&gt;
+</code></pre><p><small>Note that this is not accessible. To ensure accessibility, the server side will handle the pre-population of the select boxes as the page is loaded.  Here is an example (excluding the headers, footers and JavaScript) of the <a href="http://remysharp.com/wp-content/uploads/2007/01/select.php.txt">accessible example</a>.</small></p>
+
+<h3>JSON Response</h3>
+
+<p>If I pass the server side id = 2, i.e. <a href="http://remysharp.com/wp-content/uploads/2007/01/select.php?id=2&amp;ajax=true">/select.php?id=2&amp;ajax=true</a>, the return value is (the ajax=true is an arbitrary flag that Iâ€™m using to differentiate between a normal user request and one done via AJAX):</p>
+
+<pre><code>[ {"optionValue":10, "optionDisplay": "Remy"},
+{"optionValue":11, "optionDisplay": "Arif"},
+{"optionValue":12, "optionDisplay": "JC"}]</code></pre>
+
+<p>The enclosing square brackets denotes an array and each element is separated by a comma.</p>
+
+<p>Within the array are three objects.  If youâ€™re familiar with PHP or Perl, you can basically treat these as hashes.  The objects have keys (in this case two keys, one called â€˜optionValueâ€™ and one called â€˜optionDisplayâ€™), and values.  Note that keys donâ€™t need to be wrapped in quotes (though in some cases you will need them sometimes).</p>
+
+<p>There are two ways which we can get the data out of this structure (assuming j is the structure):</p>
+
+<p><code>alert(j[&#39;optionDisplay&#39;])</code></p>
+
+<p>Or:</p>
+
+<p><code>alert(j.optionDisplay)</code></p>
+
+<h3>jQuery &amp; AJAX Request</h3>
+
+<p>Our JavaScript is going to attach itself after the page is load, and fire an event each time the job function select box is changed.</p>
+
+<p>The event will send the new value of the select box and reload the contents of the person select box.</p>
+
+<p><small>Note that Iâ€™m be a bit naughty here, in that Iâ€™m plugging HTML directly in to the <abbr title="Document Object Model">DOM</abbr>.</small></p>
+
+<p>Each item in the JSON response is looped round and used to build up the new options for the select box.  As the response is an array (as mentioned earlier), we can call the .length method on it.</p>
+
+<pre>&lt;script type=&quot;text/javascript&quot; src=&quot;jquery.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+$(function(){
+  $(&quot;select#ctlJob&quot;).change(function(){
+    $.getJSON(&quot;/select.php&quot;,{id: $(this).val(), ajax: &apos;true&apos;}, function(j){
+      var options = &apos;&apos;;
+      for (var i = 0; i &lt; j.length; i++) {
+        options += &apos;&lt;option value=&quot;&apos; + j[i].optionValue + &apos;&quot;&gt;&apos; + j[i].optionDisplay + &apos;&lt;/option&gt;&apos;;
+      }
+      $(&quot;select#ctlPerson&quot;).html(options);
+    })
+  })
+})
+&lt;/script&gt;
+</pre>
+
+<h2>Where to take it next</h2>
+
+<p>So thatâ€™s the primer.  Next steps: upgrade, integrate, extend and stylise.  Below is an example of the category selection when submitting an item for sale on Ebay.</p>
+
+<p><img title="" alt="Ebay Category Selection" src="http://remysharp.com/wp-content/uploads/2007/01/ebay_categories.gif"></p>
+
+<p>It should be a simple next step to integrate a database behind the selection methods and create more complicated selection like this Ebay example.</p>
+
+<p>Let me know if you spot any glaring errors or have any comments.</p><p class="follow">Posted 20-Jan 2007 under ajax &amp; jquery &amp; select-boxes &amp; code. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2007/01/20/auto-populating-select-boxes-using-jquery-ajax/';
+var disqus_title = 'Auto-populating Select Boxes using jQuery &amp; AJAX';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>

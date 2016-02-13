@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "Uncompressed source: https://github.com/remy/remysharp.com"><html id="remysharp-com"><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Add Twitter to your blog (step-by-step)</title><meta name="description" content="Add Twitter to your blog (step-by-step)"/><meta name="HandheldFriendly" content="True"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="twitter:description" content="Due to recent changes in the twitter API auth policy, the current version of twitter.js does not work. I am actively working on a solution, but can&#39;t say much more than that right now. If I do find a decent solution, you shouldn&#39;t need to change anything as twitter.js will inherit the latest code automatically.
+
+Hotlink from Google
+
+&lt;script src=&quot;http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js&quot;&gt;&lt;/script&gt;
+
+Download to self host
+
+Download latest Twitter.js
+
+Following on from how to add Twitter without hanging your blog, as requested, here is a step-by-step guide to adding Twitter to your blog without it hanging your web site."><meta name="twitter:creator" content="@rem"/><meta name="twitter:title" content="Add Twitter to your blog (step-by-step)"/><meta name="twitter:site" content="@rem"/><meta name="twitter:domain" content="Remy's b:log"/><meta name="twitter:image:src" content="https://remysharp.com%user_profile_image_url%"/><meta name="twitter:card" content="summary_large_image"/><link rel="shortcut icon" href="/favicon.ico"/><link rel="stylesheet" type="text/css" href="/css/screen.css?dev"/><link rel="stylesheet" type="text/css" href="/css/zenburn.css?dev"/><link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp"/><link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://feeds.feedburner.com/remysharp"/><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-1', 'auto');
+ga('send', 'pageview');</script></head><body id="blog-add-twitter-to-your-blog-step-by-step-page"><nav class="main-nav clearfix subpanel"><form action="/search" class="search"><input type="text" name="q" placeholder="Search for..."/><input type="submit" value="Search"/></form><ul class="post-nav"><li class="home"><a href="/">Home</a></li><li class="search"><a id="search" href="#search">Search</a></li><li class="donate"><p><a href="https://www.paypal.me/rem"><img src="/images/donate.svg" alt="keep me honest"></a></p>
+</li><li class="next"><a href="/2007/05/23/when-links-in-uls-dont-work-in-ie" title="When links in ULs don't work in IE">Next</a></li><li class="prev"><a href="/2007/05/03/pretty-in-print-tips-for-print-styles" title="Pretty in Print: tips for print styles">Previous</a></li></ul></nav><main role="main" class="content"><article class="post"><h1 class="title"><a href="/2007/05/18/add-twitter-to-your-blog-step-by-step" rel="bookmark" title="Permanent Link: Add Twitter to your blog (step-by-step)">Add Twitter to your blog (step-by-step)</a></h1><small class="edit"><a href="https://github.com/remy/remysharp.com/blob/master/public/blog/add-twitter-to-your-blog-step-by-step.md">(edit)</a></small><div class="post-content"><div class="update"><p>Due to recent changes in the twitter API auth policy, the current version of twitter.js does not work. I am actively working on a solution, but can&#39;t say much more than that right now. If I do find a decent solution, you shouldn&#39;t need to change anything as twitter.js will inherit the latest code automatically.</p></div>
+
+<h2>Hotlink from Google</h2>
+
+<pre><code>&lt;script src=&quot;http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js&quot;&gt;&lt;/script&gt;</code></pre>
+
+<h2>Download to self host</h2>
+
+<p><a href="http://code.google.com/p/twitterjs/downloads/list" class="download">Download latest Twitter.js</a></p>
+
+<p>Following on from <a href="http://remysharp.com/2007/03/20/how-to-add-twitter-to-your-blog-without-it-hanging-your-site/">how to add Twitter without hanging your blog</a>, as requested, here is a step-by-step guide to adding Twitter to your blog without it hanging your web site.</p>
+
+<!--more-->
+<p>Below is a working example of loading twitters after the page has completed, thus preventing the whole page from locking up (notice that the spinner will continue until the twitters are loaded) - based on <a href="http://twitter.com/rem">my tweets</a> from myself:</p>
+
+<script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"></script>
+<script type="text/javascript" charset="utf-8">
+  getTwitters('twitters', { 
+      id: 'rem', 
+      clearContents: true, 
+      count: 5, 
+      withFriends: true,
+      ignoreReplies: false,
+      template: '<span class="prefix"><img height="16" width="16" src="%user_profile_image_url%" /> <a href="http://twitter.com/%user_screen_name%">%user_name%</a> said: </span> <span class="status">"%text%"</span> <span class="time"><a href="http://twitter.com/%user_screen_name%/statuses/%id_str%">%time%</a></span>'
+  });
+</script>
+
+<link rel="stylesheet" href="http://remysharp.com/wp-content/uploads/2007/05/twitter.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+<div id="twitters"><p>Please wait while my tweets load <img src="http://remysharp.com/images/indicator.gif"></p>
+</div>
+
+<p>Using my <a href="http://code.google.com/p/twitterjs/downloads/list">twitter.js</a> script.</p>
+<h2>Options</h2><p>The function tags the following parameters:</p>
+<ul>
+<li>CSS id of target element</li>
+<li>Settings object (details below)</li>
+</ul>
+<p>Settings object:</p>
+<ul>
+<li>id: your screen name on Twitter, for example mine is &quot;<a href="http://twitter.com/rem">rem</a>&quot;. This can also be a list (in the format of user/list-name, ie. rem/conferences) or a hash tag.</li>
+<li>count: number of twitters you want, defaults to 1.</li>
+<li>clearContents: if you have content in the container you may want to clear it.  Defaults to true.</li>
+<li>enableLinks: true/false - scans the tweet for a link and makes it clickable, includes @replies and #hashtags, by default is true.</li>
+<li>ignoreReplies: true/false - skips over tweets starting with @.  If requesting 1 tweet, and this flag is set, behind the scenes it will request 2 in case the first starts with @ - but if the 2 most recent are replies, nothing will be shown.</li>
+<li><em><a href="http://getsatisfaction.com/twitter/topics/friends_timeline_api_call_suddenly_requires_auth">currently disabled</a></em> withFriends: true/false - whether to include friends tweets.  Defaults to false.</li>
+<li>template: the HTML template to use within each <code>li</code> element.  See below for template variables.</li>
+<li>prefix: if not using a template, you can use this. If you want to prefix each twitter, add here, e.g. &#39;Remy said&#39;.  Note that you can use template variables in this field.</li>
+<li>timeout: Number of milliseconds before triggering onTimeout.  If onTimeout is set, timeout defaults to 10 seconds.</li>
+<li>onTimeout: Function to call when timeout is reached.  Context is set to HTML element tweets were going to be inserted into.</li>
+<li>onTimeoutCancel: true/false - if not set, the timeout can trigger, but then the Twitter script could complete and override the cancel.  To avoid this, set onTimeoutCancel = true.  Defaults to false.</li>
+<li>newwindow: true/false - if set to true, all links in tweets (and otherwise) will open in a new window. Defaults to false.</li>
+<li>callback - Function to call when the twitter render is completed. Doesn&#39;t fire if the script times out.</li>
+</ul>
+<p>For example:</p>
+<pre><code>getTwitters('tweet', { 
+  id: 'rem', 
+  count: 1, 
+  enableLinks: true, 
+  ignoreReplies: true, 
+  clearContents: true,
+  template: '"%text%" &lt;a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/"&gt;%time%&lt;/a&gt;'
+});</code></pre>
+
+<h2>Template variables</h2><p>All variables should be wrapped in % symbols (see the above example).</p>
+<ul>
+<li>text - the actual status message</li>
+<li>id_str - id of status message (note that id was used before, but for the ids to be correct, you need to use id_str)</li>
+<li>source</li>
+<li>time - relative &#39;friendly&#39; time</li>
+<li>created_at - raw time</li>
+<li>user_name - real name</li>
+<li>user_screen_name - username</li>
+<li>user_id_str</li>
+<li>user_profile_image_url - avatar</li>
+<li>user_url - home page</li>
+<li>user_location</li>
+<li>user_description</li>
+</ul>
+<h2>Container HTML</h2><p>You need to insert a holder element for the twitters to go in to.  In the example above, I&#39;ve included some &#39;waiting to load&#39; content - but you don&#39;t have to.</p>
+<p>Here&#39;s what I did:</p>
+<pre><code>&lt;div id=&quot;tweet&quot;&gt;
+&nbsp;&lt;p&gt;Please wait while my tweets load &lt;img src=&quot;/images/indicator.gif&quot; /&gt;&lt;/p&gt;
+ &lt;p&gt;&lt;a href=&quot;http://twitter.com/rem&quot;&gt;If you can&#39;t wait - check out what I&#39;ve been twittering&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+<p>Here are some more <a href="http://ajaxload.info/">progress indicators</a>.</p>
+<p>If you include contents inside the holder <code>div</code>, then you&#39;ll need to set the &#39;clearContents&#39; flag.</p>
+<h2>Add the script</h2><p>You can directly from the Google code repository (as seen in the example below).</p>
+<p>Add the following code within the <code>head</code> or (best at the bottom of the) <code>body</code> tag:</p>
+<pre><code>&lt;script 
+ src=&quot;http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js&quot; 
+ type=&quot;text/javascript&quot;&gt;
+&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
+getTwitters('tweet', { 
+  id: 'rem', 
+  count: 1, 
+  enableLinks: true, 
+  ignoreReplies: true, 
+  clearContents: true,
+  template: '"%text%" &lt;a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/"&gt;%time%&lt;/a&gt;'
+});
+&lt;/script&gt;</code></pre>
+
+<p>(this example will generate my twitter status in quotes on a single line with the &#39;ago&#39; linkable back to the original twitter post)</p>
+<p>Note that the getTwitters function will execute after the page has been loaded by your browser.  It will fire once the <abbr title="Document Object Model">DOM</abbr> is loaded but before images are loaded.</p>
+<h2>Styling</h2><p>If you don&#39;t use a template, then the HTML is generated for you.</p>
+<p>Each block of text is contained with in a span and includes it&#39;s own class, e.g. the HTML generated would look like this:</p>
+<pre><code>&lt;div id=&quot;tweet&quot;&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;span class=&quot;twitterPrefix&quot;&gt;Remy said: &lt;/span&gt;
+      &lt;span class=&quot;twitterStatus&quot;&gt;I just had a bizarre spaces moment - moving my cursor to the bottom of the screen switched space - annoying if it hadn&#39;t just gone away.&lt;/span&gt;
+      &lt;span class=&quot;twitterTime&quot;&gt;20 minutes ago&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;span class=&quot;twitterPrefix&quot;&gt;Remy said: &lt;/span&gt;
+      &lt;span class=&quot;twitterStatus&quot;&gt;Great quote - Michael J Fox: &quot;my happiness grows in direct proportion to my acceptance, and in inverse proportion to my expectations.&quot;&lt;/span&gt;
+      &lt;span class=&quot;twitterTime&quot;&gt;7 days ago&lt;/span&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+<p>So each block of content is targetable using CSS to style the way you wish.</p>
+<p>Comments, feedback or suggestions will be more thank welcome.</p><p class="follow">Posted 18-May 2007 under javascript &amp; project &amp; twitter &amp; web. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span></p></div><div class="comments"><h2>Comments</h2><div id="disqus_thread"></div><script>var disqus_shortname = 'remysharp';
+var disqus_url = 'http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/';
+var disqus_title = 'Add Twitter to your blog (step-by-step)';</script><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript><a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a></a></div></article></main><footer class="site-footer clearfix flex subpanel"><div class="flex-item archives"><h2>Archives</h2><ul><li><a href="/archive">All years</a></li><li><a href="/2016">2016</a></li><li><a href="/2015">2015</a></li><li><a href="/2014">2014</a></li><li><a href="/2013">2013</a></li><li><a href="/2012">2012</a></li><li><a href="/2011">2011</a></li><li><a href="/2010">2010</a></li><li><a href="/2009">2009</a></li><li><a href="/2008">2008</a></li><li><a href="/2007">2007</a></li><li><a href="/2006">2006</a></li></ul></div><div class="flex-item links"><h2>Links</h2><ul><li><a href="/about">About Remy</a></li><li><a href="/ethos">Ethos (WIP)</a></li><li><a target="_blank" href="/feed.xml">RSS feed</a></li><li><a href="/search">Search</a></li><li><a target="_blank" href="https://github.com/remy">On GitHub</a></li><li><a target="_blank" href="https://twitter.com/rem">On Twitter</a></li><li><a target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/">Presentations</a></li><li><a href="/house-rules">House Rules</a></li></ul></div><div class="flex-item license"><h2>License</h2><p class="vcard">All content by <a class="url fn" href="https://remysharp.com">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.</p><p>All code and content for this blog is available as <a href="https://github.com/remy/remysharp.com">open source on GitHub</a>.</p>
+<p><a href="https://www.paypal.me/rem"><img src="/images/donate-hotpink.svg" alt="keep me honest"></a></p>
+</div></footer><script src="//code.jquery.com/jquery-1.11.1.min.js"></script><script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script><script src="/js/jquery.fitvids.js"></script><script src="/js/highlight.min.js"></script><script src="/js/permalink.js?dev"></script><script src="/js/index.js?dev"></script><!--|  
+|  
+|  Carved up by hand using Harp and a shit load of hacking.
+|  
+|  Also, this:
+|  
+|  
+|  
+|                        \_            /;              _.._
+|                        `\~--.._     //'            ,(+=\\\\
+|                         `//////\  \\/;'             /~ (\\\\
+|                           ~/////\~\`)'             /;   ))))
+|                               `~'  |              ((`~/((((\
+|                               ;'_\'\             /'))   )))))
+|                              /~/ '" "'     _.  /'/\_ /^\`((( \
+|                             `\/'       _.-~/--/ (  =(   | ,  |
+|                                     _/~\_)_}___/^\/~`\.__\|==|
+|                                    /uUUU)        )        |  |
+|                                   (   / |      _-=o|\__ /'/~ \
+|                                   ' /'  |     /(((((\`\(  |~\/
+|                                   /'    |   /' )))))"`\`\|/_/---.._,$$,
+|                             .,ssS$$$Sss|._/_..-((('    )\)>>>      ~\$
+|                          ,sS$$$$$$$$$$$|$$$$$$$  |/    //'~`o        `\
+|                        ,$$$$$$$$$$$$$$|$$S$$$$'  (    /                \
+|                      ,$$$$$$$$$$$$S$$|$$$$$$$'   |   /              ,s$$$
+|                    s$$$$$S$$$$$$$$$S|$$$$$$$$    |  /              $$$$$$
+|                  _~,$S""''     ``"S|$$S$$$$$"    (_,`\,          ,$$$$$$$;
+|                /~ ,"'             / 'S$$$$$"      \_./|        s$$$$$$$$$$
+|             (~'      _,  \==~~)  /     """         \  |       $$$$$$$$$$$$
+|              (0\   /0/     \-' /'                   \ |  |  ,$$$$$$$$$$$$$,
+|              `/'  '         _-~                     |= \_-\ $$$$$$$$$$$$$$s
+|              (~~~)      _.-~_-   \             \  ,s|= |   `"$$$$$$$$$$$$$$$
+|             ( `-'  )/>-~  _/-__   |            |,$$$|_/,      `"$$$$$$$$$$$$
+|             /V^^^^V~/' _/~/~~  ~~-|            |$$$$$$$$         "$$$$$$$$$$,
+|            /  (^^^^),/' /'        )           /S$$$$$$$;         ,$$$$$$$$$$$,
+|          ,$$_  `~~~'.,/'         /     _-ss, /(/-(/-(/'        ,s$$$$$$$$$$$$$
+|        ,s$$$$$ssSS$$$'         ,$'.s$$$$$$$$'                  (/-(/-(/-(/-(/'
+|       S$$$$$$$$$$$$$$        ,$$$$$$$$$$$$$'
+|      (/-(/-(/-(/-(/'      _s$$$$$$$$$$$$$$
+|                          (/-(/-(/-(/-(/-'
+|  
+|  
+|  
+|      – Remy
+|  
+|  --><!-- production - static files, dev --></body></html>
