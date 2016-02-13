@@ -8,8 +8,8 @@
   "scripts": {
     "test": "true",
     "start": "harp start",
-    "version": "node server.js compile && git add . && git commit -m'build'",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "build": "node server.js compile && git add . && git commit -m'build'",
+    "semantic-release": "semantic-release pre && npm run build && npm publish && semantic-release post"
   },
   "bin": {
     "blog": "./bin/cli.js"
