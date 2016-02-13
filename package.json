@@ -9,7 +9,7 @@
     "test": "true",
     "start": "harp start",
     "version": "node server.js compile && git add . && git commit -m'build'",
-    "semantic-release": "semantic-release pre && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "bin": {
     "blog": "./bin/cli.js"
