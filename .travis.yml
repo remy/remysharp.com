@@ -7,13 +7,15 @@ notifications:
   email: true
 node_js:
 - '0.10'
-deploy:
-  provider: heroku
-  api_key:
-    secure: O2iGbC0V4tEYqPJNRKa5C896vbxI8tefg7N7foMMelOeppIVjWrtQJaNClV4iSZyEQAUSmrnPYqrUdtwJdrJM1a8yLoyKqSP3ISgW6WV6tK3rEnh77NUQUYtyj0yr0UcNVN1Dqna03JsyvnsV5Tuk1ID+wN1Cg9fsSY1mYteQ6c=
-  app: remysharp-com
-  on:
-    repo: remy/remysharp.com
+env:
+  secure: E0Aap2f4rQImFDlfEMETA2+vN42rxkcjGH5FvdM2DAMchYGB26obTLzfeLU0aoYlvgUC5FqM4/XOms9ugec7VSjsILGGWEnNoIY3OcjozsBxXCWvufQ3QlVXHgEEFAUGf6KYcDxli+kLkk0680TQTi6+PFeIe8J/o7uX/gWgKio=
+# deploy:
+#   provider: heroku
+#   api_key:
+#     secure: O2iGbC0V4tEYqPJNRKa5C896vbxI8tefg7N7foMMelOeppIVjWrtQJaNClV4iSZyEQAUSmrnPYqrUdtwJdrJM1a8yLoyKqSP3ISgW6WV6tK3rEnh77NUQUYtyj0yr0UcNVN1Dqna03JsyvnsV5Tuk1ID+wN1Cg9fsSY1mYteQ6c=
+#   app: remysharp-com
+#   on:
+#     repo: remy/remysharp.com
 before_install:
 - npm i -g npm@^2.0.0
 before_script:
