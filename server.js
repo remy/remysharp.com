@@ -31,7 +31,11 @@ global.moment = moment;
 // cachebust on minor or major releases. A new blog post is
 // considered a patch, and therefore doesn't require a rebuild
 // of the entire /www directory.
+if (!pkg.version) {
+  pkg.version = 'dev';
+}
 global.version = pkg.version.split('.').slice(0, 2).join('.');
+global.fullversion = pkg.version;
 
 global.modified = function (filename) {
   var stat = null;
