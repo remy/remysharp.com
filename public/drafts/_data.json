@@ -130,8 +130,8 @@
   "how-tabs-should-work": {
     "title": "How tabs should work",
     "date": "2015-03-03 12:00:00",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "code"
     ]
@@ -194,8 +194,8 @@
   "terms-of-work": {
     "title": "Terms of work",
     "date": "2016-01-07 11:17:08",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "business"
     ]
@@ -203,8 +203,8 @@
   "production-npm-defaults": {
     "title": "Production npm defaults",
     "date": "2016-02-11 10:56:06",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "code"
     ]
