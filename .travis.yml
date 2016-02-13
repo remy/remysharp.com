@@ -1,0 +1,13 @@
+language: node_js
+notifications:
+  email: true
+before_script:
+- npm install
+node_js:
+- '0.10'
+deploy:
+  provider: heroku
+  api_key:
+    secure: dO7Nz5pmJD5L4356h+ztM8MzumeNclHZjhA0nkX0Ej5Zx7XWfxXdaXYmxSz4n/nqh4dyWLshE1eaub4lzx8tITvnHpLeOMAPS7M4hrsgA4B7mSueBCXtG3WxjkmQK3Mz+XFhqzYIcaOf9XuvTu9DQbOgzdhfotNdawGKRVdVt0E=
+  app: remysharp-com
+  on: master
