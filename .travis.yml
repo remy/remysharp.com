@@ -2,7 +2,7 @@ sudo: false
 language: node_js
 cache:
   directories:
-    - node_modules
+  - node_modules
 notifications:
   email: true
 node_js:
@@ -10,17 +10,16 @@ node_js:
 deploy:
   provider: heroku
   api_key:
-    secure: dO7Nz5pmJD5L4356h+ztM8MzumeNclHZjhA0nkX0Ej5Zx7XWfxXdaXYmxSz4n/nqh4dyWLshE1eaub4lzx8tITvnHpLeOMAPS7M4hrsgA4B7mSueBCXtG3WxjkmQK3Mz+XFhqzYIcaOf9XuvTu9DQbOgzdhfotNdawGKRVdVt0E=
+    secure: O2iGbC0V4tEYqPJNRKa5C896vbxI8tefg7N7foMMelOeppIVjWrtQJaNClV4iSZyEQAUSmrnPYqrUdtwJdrJM1a8yLoyKqSP3ISgW6WV6tK3rEnh77NUQUYtyj0yr0UcNVN1Dqna03JsyvnsV5Tuk1ID+wN1Cg9fsSY1mYteQ6c=
   app: remysharp-com
   on:
-    repo: remy/remysharp-com
-    branch: master
+    repo: remy/remysharp.com
 before_install:
-  - npm i -g npm@^2.0.0
+- npm i -g npm@^2.0.0
 before_script:
-  - npm prune
+- npm prune
 after_success:
-  - npm run semantic-release
+- npm run semantic-release
 branches:
   except:
-    - "/^v\\d+\\.\\d+\\.\\d+$/"
+  - /^v\d+\.\d+\.\d+$/
