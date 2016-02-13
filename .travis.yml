@@ -7,15 +7,15 @@ notifications:
   email: true
 node_js:
 - '0.10'
-env:
+before_deploy:
+- rm .npmrc
 deploy:
+  skip_cleanup: true
   provider: heroku
   api_key:
-    secure: O2iGbC0V4tEYqPJNRKa5C896vbxI8tefg7N7foMMelOeppIVjWrtQJaNClV4iSZyEQAUSmrnPYqrUdtwJdrJM1a8yLoyKqSP3ISgW6WV6tK3rEnh77NUQUYtyj0yr0UcNVN1Dqna03JsyvnsV5Tuk1ID+wN1Cg9fsSY1mYteQ6c=
+    secure: aIPVnCeL1UiNb82JlNsFyp793Au8XIemhpvax1o9B+ziNJcQULsUvGMyY7SmC0adR1ZMpUSnVCQe5FkY411STorC/BZjLjux2ricYP/TT5OBYUjtOAiUT3s8vUZw848xTQK7p5Px+1W/QuqtbR6rsTlH4FBIB6+eln5P2OpeNDw=
   app: remysharp-com
-  skip_cleanup: true
   on:
-    branch: master
     repo: remy/remysharp.com
 before_install:
 - npm i -g npm@^2.0.0
