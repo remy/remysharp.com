@@ -1,16 +1,29 @@
-# Production npm defaults
+# Production npm installations
 
 This is a super short post with a little semi-pro tip for working with npm packages and production quality builds and importantly: pinning releases.
 
 <!--more-->
 
-**Context: node projects and npm**
+**Context: technical post about node projects and npm**
 
 By default today, if you run `npm install --save foo@1`, you'll get a new entry in your package as such:
 
 ```json
   "dependencies": {
-    "package": "~1.0.0"
+    "foo": "~1.1.0"
   }
 ```
 
+Assuming(!) that the package author is following semver, then you'll get all the fixes (patch) and features (minor) for free upon next install due to the leading `~` character.
+
+This might be fine for 3rd party dependencies, but might not work for your own packages. If this was my main application code, and `foo` was one of my own packages, I'd want to be sure I was installing exactly the version I intend to.
+
+The npm cli has a little known (to me) command `--save-exact` (or `-E`) which will save the specific version. In addition, you can create an `.npmrc` file that's in your project's root directory that contains:
+
+```
+save-exact = true
+```
+
+This will mean that all `npm install <pkg>` commands will pin to the version that was available at the time you run the command.
+
+**Important note** this does not guarantee being able to replicate the build. This is because the dependencies of your dependencies won't be pinned. If you need this, then consider either using [shrinkwrap](https://docs.npmjs.com/cli/shrinkwrap) or [bundleDependencies](https://docs.npmjs.com/files/package.json#bundleddependencies).
