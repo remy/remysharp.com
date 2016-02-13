@@ -1,8 +1,13 @@
+sudo: false
+cache:
+  directories:
+    - node_modules
 language: node_js
 notifications:
   email: true
 before_script:
-- npm install
+  - npm install -g npm@^2.0.0
+  - npm install
 node_js:
 - '0.10'
 deploy:
