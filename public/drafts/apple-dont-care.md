@@ -1,4 +1,4 @@
-# #Apple don't care
+## Apple don't care
 
 There's been some recent excellent discussion about Apple and their (continued) lack of engagement in the web community.
 
@@ -50,4 +50,5 @@ Then there is *only* one browser engine is WebKit. No choice on the platform, no
 
 - Developer relations that can be present at conferences outside of Apple.
 - Questions about interest and intended support for W3C technology can be answered.
--
+
+Edited via mobile.
