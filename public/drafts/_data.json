@@ -213,7 +213,7 @@
     "title": "A price on code",
     "date": "2016-02-18 10:56:06",
     "complete": false,
-    "inprogress": false,
+    "inprogress": true,
     "tags": [
       "personal","business"
     ]
