@@ -200,22 +200,14 @@
       "business"
     ]
   },
-  "production-npm-defaults": {
-    "title": "Production npm defaults",
-    "date": "2016-02-11 10:56:06",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "code"
-    ]
-  },
   "a-price-on-code": {
     "title": "A price on code",
     "date": "2016-02-18 10:56:06",
     "complete": false,
     "inprogress": true,
     "tags": [
-      "personal","business"
+      "personal",
+      "business"
     ]
   }
 }
