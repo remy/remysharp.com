@@ -14,7 +14,7 @@ By default today, if you run `npm install --save foo@1`, you'll get a new entry 
   }
 ```
 
-Assuming(!) that the package author is following semver, then you'll get all the fixes (patch) and features (minor) for free upon next install due to the leading `^` character.
+Assuming(!) that the package author is following semver, then you'll get all the fixes (patch) and features (minor) for free upon next install due to the leading `^` character (except in the cases like `0.1.0` or `0.0.1`...because "[semver](https://docs.npmjs.com/misc/semver#caret-ranges-123-025-004)" `¯\_(ツ)_/¯` - but the point is, that it's *floating*).
 
 This might be fine for 3rd party dependencies, but might not work for your own packages. If this was my main application code, and `foo` was one of my own packages, I'd want to be sure I was installing exactly the version I intend to.
 
