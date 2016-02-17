@@ -1,0 +1,13 @@
+{
+  "lang": "en",
+  "name": "Remy Sharp's b:log",
+  "icons": [{
+      "src": "/images/avatar-300.png",
+      "sizes": "300x300",
+      "type": "image/png"
+  }],
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#000000",
+  "theme_color": "#000000"
+}
