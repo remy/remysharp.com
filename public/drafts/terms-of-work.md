@@ -50,7 +50,6 @@ As hoc time off (for doctor appointments for instance) may be required, and any 
 
 ## Tweeting, blogging and public speaking
 
-
 My twitter account and blog are my personal and professional face on the internet. I won't post anything that I shouldn't about the work so long as this is outlined up front.
 
 Obviously I will apply my own discretion and professionalism.
