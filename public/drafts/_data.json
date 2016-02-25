@@ -222,6 +222,7 @@
   },
   "commit-to-contribute": {
     "title": "Commit to contribute",
+    "image": "/images/github-contrib-notice.png",
     "date": "2016-02-25 09:48:45",
     "complete": false,
     "inprogress": true,
