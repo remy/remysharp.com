@@ -1,13 +1,13 @@
 {
   "lang": "en",
-  "name": "Remy Sharp's b:log",
+  "name": "rem's b:log",
   "icons": [{
-      "src": "/images/avatar-300.png",
+      "src": "/images/remy-2014-twitter.png",
       "sizes": "300x300",
       "type": "image/png"
   }],
   "start_url": "/",
   "display": "browser",
-  "background_color": "#000000",
-  "theme_color": "#000000"
+  "background_color": "#1A1A1A",
+  "theme_color": "#1A1A1A"
 }

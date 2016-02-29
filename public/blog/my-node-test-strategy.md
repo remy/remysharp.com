@@ -115,7 +115,7 @@ Note that with proxyquire you can only take over modules *one* level deep (so I 
 
 ### Sinon
 
-I won't say too much about Sinon, but the main use allows me to wrap and existing function with a mock function, and later on in my tests I can test what values were used to call that mocked function (or what was returned), or how many times it was called, what was used to call the function on the nth call, etc.
+I won't say too much about Sinon, but the main use allows me to wrap an existing function with a mock function, and later on in my tests I can test what values were used to call that mocked function (or what was returned), or how many times it was called, what was used to call the function on the nth call, etc.
 
 Very useful if you want to be sure of what's going in and out of your functions.
 
