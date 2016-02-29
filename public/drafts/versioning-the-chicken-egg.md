@@ -75,7 +75,7 @@ To get started install the CLI and run it in your project directory and answer t
 npm install -g semantic-release-cli
 ```
 
-One gotcha that I'm sure will be fixed eventually, semantic release will *overwrite* your `.travis.yml` file, so I always make sure to manually edit and resolve the changes by hand.
+**Gotcha:** I'm sure will be fixed eventually, semantic release will *overwrite* your `.travis.yml` file, so I always make sure to manually edit and resolve the changes by hand.
 
 ## Fixing the distribution problem
 
@@ -84,6 +84,8 @@ The crux of how semantic release works is that there's a life cycle that runs th
 Semantic release does have a plugin architecture so you can add your own preconditions, but what interests me is the middle step, the "let's do this" part.
 
 Here is where I can run the build process and generate the `dist` directory. Since the `npm publish` step takes everything in the directory, the distribution files will be included in the npm release - and in fact don't even have to live in GitHub (which IMHO is ideal).
+
+**Gotcha:** I got caught out by this recently: I ignore the `dist` directory in my `.gitignore` file so it stays out of git. That's good. Except that `npm publish` also [uses the git ignore file](https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package) if there's no `.npmignore` file present. So I need to either make an empty `.npmignore` file (which is a workaround) or put `!dist` explicitly in the `.npmignore` and this ensures the distribution directory is included in the npm release.
 
 ## Will this create a release for every change I commit?
 
