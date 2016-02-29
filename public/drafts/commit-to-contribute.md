@@ -95,4 +95,4 @@ I'm going to start including a short document on how to fix common problems in p
 
 I want to formalise this process and start adopting it into my own projects. If that's successful, I'll start using it on my client projects (assuming their open source).
 
-It's important to me that with my open source projects that I'm not taking on the brunt of everyone else's requests - so helping my contributors is obviously in my internet. The greater aim is to help other developers learn how to contribute to any project, not just mine.
+It's important to me that with my open source projects that I'm not taking on the brunt of everyone else's requests - so helping my contributors is obviously in my interest. The greater aim is to help other developers learn how to contribute to any project, not just mine.
