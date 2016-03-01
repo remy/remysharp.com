@@ -34,7 +34,7 @@ In this particular project, I have sub-directories in my test directory, so the 
 
 Often when I'm testing in isolation, I'll run `tap` directly against the test script I'm working on. This means that I have tap both installed locally *and* globally.
 
-Quite often when I test a project from the CLI the local version of tap could be different from my global version. So I have a little trick in my shell (a bash function) which will detect if there's a local version of tap, and if so, it'll run *that* version:
+Quite often when I test a project from the CLI the local version of tap could be different from my global version. So I have a little trick in my shell (a bash function in `~/.bashrc`) which will detect if there's a local version of tap, and if so, it'll run *that* version:
 
 ```bash
 tap () {
