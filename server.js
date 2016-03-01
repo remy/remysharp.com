@@ -1,5 +1,6 @@
 'use strict';
 
+require('es6-promise').polyfill(); // jshint ignore:line
 var http = require('http');
 var fs = require('fs');
 var st = require('st');
@@ -13,7 +14,6 @@ var blogs = require('./public/blog/_data.json');
 var pages = Object.keys(require('./public/_data.json'));
 var slugs = Object.keys(blogs);
 var route = router();
-var Promise = require('promise'); // jshint ignore:line
 var fourohfour = '';
 var mount;
 var moment = require('moment');

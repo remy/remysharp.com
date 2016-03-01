@@ -9,15 +9,23 @@
     "test": "true",
     "start": "harp start",
     "build": "node server.js compile",
-    "semantic-release": "semantic-release pre && npm run build && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm run build && npm publish && semantic-release post",
+    "update-timestamps": "hostname eq 'MacBook-Pro.local' && blog update-timestamps"
+  },
+  "config": {
+    "ghooks": {
+      "//pre-commit": "npm run update-timestamps"
+    }
   },
   "bin": {
-    "blog": "./bin/cli.js"
+    "blog": "./cli/index.js"
   },
   "author": "Remy Sharp",
   "license": "MIT",
   "dependencies": {
+    "clite": "^0.1.4",
     "elasticsearch": "^4.0.2",
+    "es6-promise": "^3.1.2",
     "glob": "~4.0.5",
     "harp": "^0.17.0",
     "moment": "~2.8.2",
@@ -33,6 +41,8 @@
     "url": "https://github.com/remy/remysharp.com.git"
   },
   "devDependencies": {
+    "ghooks": "^1.0.3",
+    "inquirer": "^0.12.0",
     "semantic-release": "^4.3.5"
   }
 }

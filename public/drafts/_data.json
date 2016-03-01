@@ -229,5 +229,14 @@
     "tags": [
       "web"
     ]
+  },
+  "a-common-security-vulnerability": {
+    "title": "A common security vulnerability",
+    "date": "2016-03-01 10:21:41",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
   }
 }

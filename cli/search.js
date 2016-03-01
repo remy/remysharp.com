@@ -1,35 +1,43 @@
 var util = require('util');
 var moment = require('moment');
-
 var elasticsearch = require('elasticsearch');
-var client = new elasticsearch.Client({
-  host: 'localhost:9200',
-  log: 'trace',
-});
+module.exports = function (args) {
+  var client = new elasticsearch.Client({
+    host: process.env.BONSAI_URL || 'localhost:9200',
+    log: args.debug ? 'trace' : null,
+  });
 
-client.search({
-  index: 'myindex',
-  // q: 'body:' + process.argv[2],
-  body: {
-    query: {
-      match: {
-        body: process.argv[2]
-      }
-    },
-    highlight: {
-      fields: {
-        body: {
-          number_of_fragments: 10,
-          fragment_size: 400,
+  return new Promise(function (resolve, reject) {
+    client.search({
+      index: 'blog-posts',
+      body: {
+        query: {
+          match: {
+            body: args._.join(' '),
+          }
+        },
+        highlight: {
+          fields: {
+            body: {
+              number_of_fragments: 10,
+              fragment_size: 400,
+            },
+          },
         },
       },
-    },
-  },
-  fields: 'title,date,highlight',
-}, function (error, response) {
-  console.log(util.inspect(response, {showHidden: false, depth: null}));
-  response.hits.hits.forEach(function (res) {
-    // console.log(res);
-    console.log(res.fields.title + ' -- https://remysharp.com/' + moment(res.fields.date.toString()).format('YYYY/MM/DD') + '/' + res._id + ' (score: %s)', res._score);
+      fields: 'title,date,highlight',
+    }, function (error, response) {
+      // console.log(util.inspect(response, {showHidden: false, depth: null}));
+      client.close();
+      resolve(response.hits.hits.map(function (res) {
+        return util.format('%s -- https://remysharp.com/%s/%s (score: %s)',
+          res.fields.title,
+          moment(res.fields.date.toString()).format('YYYY/MM/DD'),
+          res._id,
+          res._score
+        );
+      }).join('\n'));
+    });
   });
-});
+};
+
