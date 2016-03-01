@@ -210,16 +210,6 @@
       "business"
     ]
   },
-  "from-tests-to-debugging-node-workflow": {
-    "title": "From tests to debugging: node workflow",
-    "date": "2016-02-21 14:35:44",
-    "complete": true,
-    "image": "/images/devtool-for-node.png",
-    "inprogress": false,
-    "tags": [
-      "code"
-    ]
-  },
   "commit-to-contribute": {
     "title": "Commit to contribute",
     "image": "/images/github-contrib-notice.png",
