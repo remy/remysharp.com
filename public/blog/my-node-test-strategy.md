@@ -164,7 +164,7 @@ Since this is node land, I use npm only for my tests. So I have the following in
 {
   "scripts": {
     "style": "jscs -v lib/*.js",
-    "test": "npm run style && node test/*.test.js | tap-spec"
+    "test": "npm run style && tape test/*.test.js | tap-spec"
   }
 }
 ```
@@ -205,7 +205,7 @@ That would look like this:
 {
   "scripts": {
     "style": "jscs -v lib/*.js",
-    "test": "npm run style && node test/*.test.js | tap-spec",
+    "test": "npm run style && tape test/*.test.js | tap-spec",
     "watch": "nodemon -q -x 'npm test'"
   }
 }
