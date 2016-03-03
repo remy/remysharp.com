@@ -66,9 +66,21 @@ In addition, having a `CONTRIBUTING.md` file in the root of the repo (or in `.gi
 
 For context: [semantic release](https://www.npmjs.org/semantic-release) will read the commits in a push to master, and if there's a `feat:` commit, it'll do a minor version bump. If there's a `fix:` it'll do a patch version bump. If the text `BREAKING CHANGE:` appears in the body of a commit, it'll do a major version bump.
 
+I've been using semantic release in all of my projects, and so long as the commit message format is right, then there's no work involved in creating release, and importantly there's no work in deciding *what* the version is going to be.
+
 Something that none of my repos do today is to validate contributed commits for formatting. In reality semantic release doesn't mind if you don't follow the commit format, but they're simply ignored and don't drive releases (to npm).
 
-However, I've recently come across tools like [ghook](https://www.npmjs.com/package/ghooks) that will run commands on git hooks, and in particular using a `commit-msg` hook that could run [validate-commit-message](https://www.npmjs.com/package/validate-commit-message). I'd like to configure this so that if the validation failed, it would echo a useful message on how to correct the message.
+However, I've recently come across tools like [ghook](https://www.npmjs.com/package/ghooks) that will run commands on git hooks, and in particular using a `commit-msg` hook that could run [validate-commit-message](https://www.npmjs.com/package/validate-commit-message). The installation is relatively straight forward, but my concern is the warning response from the terminal:
+
+```nohighlight
+❯ git commit -m'add the things'
+INVALID COMMIT MSG: does not match "<type>(<scope>): <subject>" !
+add the things
+```
+
+Being able to customise this message on a per projet basis would be ideal. Rather than notifying the author that they've done something wrong, I'd rather point them in the direction of how to make the commit work.
+
+The question that drives the automatic checks and notices is: how, **with no extra work on the contributors' side**, do we make this work?
 
 ## Including example tests
 
