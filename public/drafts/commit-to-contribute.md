@@ -6,6 +6,8 @@ The only problem with the pull request was that it didn't have tests and didn't 
 
 <!--more-->
 
+---
+
 About half way through the thread of replies, I started my usual decent into "what's the point, why do I bother, I should jack it all in", i.e. the self-destruct nature that I know isn't helpful to anyone. Though, thankfully, I held back.
 
 The contributor was obviously extremely new to git and GitHub and just the small change was well out of their comfort zone, so when I then asked for the changes to adhere to the way the project works, it all kind of fell apart.
@@ -68,7 +70,7 @@ For context: [semantic release](https://www.npmjs.org/semantic-release) will rea
 
 I've been using semantic release in all of my projects, and so long as the commit message format is right, then there's no work involved in creating release, and importantly there's no work in deciding *what* the version is going to be.
 
-Something that historically none of my repos had was the ability tovalidate contributed commits for formatting. In reality semantic release doesn't mind if you don't follow the commit format, but they're simply ignored and don't drive releases (to npm).
+Something that historically none of my repos had was the ability to validate contributed commits for formatting. In reality semantic release doesn't mind if you don't follow the commit format, but they're simply ignored and don't drive releases (to npm).
 
 I've since come across [ghooks](https://www.npmjs.com/package/ghooks) that will run commands on git hooks, and in particular using a `commit-msg` hook that could run [validate-commit-msg](https://www.npmjs.com/package/validate-commit-msg). The installation is relatively straight forward, but the reward back to the user is really good, because I say that the commit needs tweaking, can include examples and I can include links.
 
@@ -107,8 +109,15 @@ Something I've also come to accept is that developers don't read contributing do
 
 I'm going to start including a short document on how to fix common problems in pull requests. Often it's amending a commit message or rebasing the commits. This is easy for me to document, and this way I can point new users to a walk through of how to fix their commits.
 
-## Action to come from this post?
+## What's next?
 
-I want to formalise this process and start adopting it into my own projects. If that's successful, I'll start using it on my client projects (assuming their open source).
+In truth, most of these items are straight forward and not much work to implement. Sure, I wouldn't drop everything I'm doing and add them to all my projects at once, but certainly each active project that I'm working.
 
-It's important to me that with my open source projects that I'm not taking on the brunt of everyone else's requests - so helping my contributors is obviously in my interest. The greater aim is to help other developers learn how to contribute to any project, not just mine.
+1. Add issue and pull request templates
+* Add ghooks and validate-commit-msg with standard language (most, if not all my projects are node based)
+* Either make adding test super easy, or at least include sample tests (for unit testing and potentially integration testing)
+* Add a contributing document that includes notes about commit format, tests and anything that can make the contributing process smoother
+
+Finally, I (and we) always need to keep in mind that when someone has taken time out of their day to contribute code to my projects, whatever the state of the pull request. It's a big deal.
+
+**It takes commitment to contribute. Show some love for that.**
