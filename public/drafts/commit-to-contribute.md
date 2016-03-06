@@ -68,19 +68,23 @@ For context: [semantic release](https://www.npmjs.org/semantic-release) will rea
 
 I've been using semantic release in all of my projects, and so long as the commit message format is right, then there's no work involved in creating release, and importantly there's no work in deciding *what* the version is going to be.
 
-Something that none of my repos do today is to validate contributed commits for formatting. In reality semantic release doesn't mind if you don't follow the commit format, but they're simply ignored and don't drive releases (to npm).
+Something that historically none of my repos had was the ability tovalidate contributed commits for formatting. In reality semantic release doesn't mind if you don't follow the commit format, but they're simply ignored and don't drive releases (to npm).
 
-However, I've recently come across tools like [ghook](https://www.npmjs.com/package/ghooks) that will run commands on git hooks, and in particular using a `commit-msg` hook that could run [validate-commit-message](https://www.npmjs.com/package/validate-commit-message). The installation is relatively straight forward, but my concern is the warning response from the terminal:
+I've since come across [ghooks](https://www.npmjs.com/package/ghooks) that will run commands on git hooks, and in particular using a `commit-msg` hook that could run [validate-commit-msg](https://www.npmjs.com/package/validate-commit-msg). The installation is relatively straight forward, but the reward back to the user is really good, because I say that the commit needs tweaking, can include examples and I can include links.
 
-```nohighlight
-❯ git commit -m'add the things'
-INVALID COMMIT MSG: does not match "<type>(<scope>): <subject>" !
-add the things
-```
+Here's what it looks like on the command line:
 
-Being able to customise this message on a per projet basis would be ideal. Rather than notifying the author that they've done something wrong, I'd rather point them in the direction of how to make the commit work.
+![git commit CLI validation](/images/git-commit-cli-validation.png)
 
-The question that drives the automatic checks and notices is: how, **with no extra work on the contributors' side**, do we make this work?
+...and in the GitHub desktop app (for comparison):
+
+![git commit validation in github](/images/git-commit-validation.png)
+
+This is work that I can load on myself to make contributing easier, which in turn, makes my job easier when it comes to managing and merging contributions into the project. In addition, for my projects, I'm also adding a `pre-push` hook that runs all the tests before the push to GitHub is allowed. That way it means if new code has broken the tests, the author is aware.
+
+To see the changes required to get the output above, see [this commit](https://github.com/remy/clite/commit/fc36b01005fb37fc1a16079d4ab3ca5bd5e4450d) in my current tinker project.
+
+Two further areas worth investigating are the [commitizen](https://www.npmjs.com/package/commitizen) project, and what I'd *really* like to see is a GitHub bot that could automatically comment on pull requests that say whether the commits are okay (and if not, direct the contributor on how to fix that problem) and also show how the PR would affect the release (i.e. whether it would trigger a release or not, whether a bug patch or a minor version change).
 
 ## Including example tests
 
