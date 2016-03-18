@@ -14,7 +14,7 @@ The word *supported* needs to be taken with a pinch of salt, because there's all
 
 I might have argued that fixed positioned doesn't matter or isn't really required in a good app. However, there's an increasing number of iOS apps I've noticed that are actually just a collection of WebViews (mini-MobileSafaris) with fixed position toolbars as seen in Apple's own AppStore app, the native Facebook app and Instagram below:
 
-<img src="http://remysharp.com/images/appstore.jpg" style="max-width: 30%; border: 1px solid #ccc;"><img src="http://remysharp.com/images/facebook.jpg" style="max-width: 30%; margin-left: 10px;border: 1px solid #ccc;"><img src="http://remysharp.com/images/instagram.jpg" style="margin-left: 10px; max-width: 30%;border: 1px solid #ccc;">
+<img src="/images/appstore.jpg" style="max-width: 30%; border: 1px solid #ccc;"><img src="/images/facebook.jpg" style="max-width: 30%; margin-left: 10px;border: 1px solid #ccc;"><img src="/images/instagram.jpg" style="margin-left: 10px; max-width: 30%;border: 1px solid #ccc;">
 
 <small>AppStore via [@devongovett](https://twitter.com/devongovett/statuses/84008944674148352), Facebook via [@9eggs](https://twitter.com/9eggs/status/205558649937072130/photo/1)</small>
 
