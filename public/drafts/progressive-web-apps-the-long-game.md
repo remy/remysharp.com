@@ -6,6 +6,10 @@ The event, to me, was extremely well executed with respect to the developer stor
 
 <!--more-->
 
+**TL;DR** There's a high barrier of entry to add to home screen to create a trust between the user and web apps. A trust that equals the trust of an app store installed app. This is huge.
+
+---
+
 The talks individually covered the following technology and ideas (note that this doesn't include the two keynote talks):
 
 * Security & https in particular and some of the pain points (Matt Gaunt)
