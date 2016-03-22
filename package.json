@@ -12,11 +12,6 @@
     "semantic-release": "semantic-release pre && npm run build && npm publish && semantic-release post",
     "update-timestamps": "hostname eq 'MacBook-Pro.local' && blog update-timestamps"
   },
-  "config": {
-    "ghooks": {
-      "//pre-commit": "npm run update-timestamps"
-    }
-  },
   "bin": {
     "blog": "./cli/index.js"
   },
