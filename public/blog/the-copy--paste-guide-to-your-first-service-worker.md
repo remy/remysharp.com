@@ -85,4 +85,4 @@ Firstly, use Chrome Canary, you'll get more life out of it for debugging. Second
 
 ![debug-sw.gif](/images/debug-sw.gif)
 
-Enjoy, and do make sure you read some more detailed articles. Here's service workers working on [jsconsole](https://jsconsole.com) for your pleasure.
+Enjoy, and do make sure you read some more detailed articles. Here's my recent service worker efforts in action on [jsconsole](https://jsconsole.com) for your pleasure.
