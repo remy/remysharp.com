@@ -76,6 +76,8 @@ self.addEventListener('fetch', event => {
 
 The *contents* of the `sw.js` file will need to change to trigger an update of the `sw.js` file itself, but I highly recommend using the debugging tools too.
 
+To understand how refreshes work (aka the lifecycle), [Jake Archibald](https://jakearchibald.com) has a [3 minute video](https://www.youtube.com/watch?v=TF4AB75PyIc) to help.
+
 ## 🐛 Debugging
 
 Firstly, use Chrome Canary, you'll get more life out of it for debugging. Secondly, enable the "force update on page load" (which is tucked away, and does randomly unset itself, so watch out!):
