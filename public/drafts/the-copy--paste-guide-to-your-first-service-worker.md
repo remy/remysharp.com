@@ -1,6 +1,6 @@
 # The copy & paste guide to your first Service Worker
 
-There's a [lot](https://www.smashingmagazine.com/2016/02/making-a-service-worker/) of [tutorials](https://www.udacity.com/course/offline-web-applications--ud899) [on the web](https://jakearchibald.com/2014/offline-cookbook/) [for](https://adactio.com/journal/9775) [Service](https://ponyfoo.com/articles/serviceworker-revolution) [Workers](https://ponyfoo.com/articles/progressive-networking-serviceworker) (many of which are very good), but there's a lot of reading too. So, this is me throwing my hat in with the fast and loose: copy & paste guide.
+There are a [lot](https://www.smashingmagazine.com/2016/02/making-a-service-worker/) of [tutorials](https://www.udacity.com/course/offline-web-applications--ud899) [on the web](https://jakearchibald.com/2014/offline-cookbook/) [for](https://adactio.com/journal/9775) [Service](https://ponyfoo.com/articles/serviceworker-revolution) [Workers](https://ponyfoo.com/articles/progressive-networking-serviceworker) (many of which are very good), but there's a lot of reading too. So, this is me throwing my hat in with the fast and loose: copy & paste guide.
 
 <!--more-->
 
