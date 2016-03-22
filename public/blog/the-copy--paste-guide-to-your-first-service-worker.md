@@ -1,12 +1,12 @@
 # The copy & paste guide to your first Service Worker
 
-There are a [lot](https://www.smashingmagazine.com/2016/02/making-a-service-worker/) of [tutorials](https://www.udacity.com/course/offline-web-applications--ud899) [on the web](https://jakearchibald.com/2014/offline-cookbook/) [for](https://adactio.com/journal/9775) [Service](https://ponyfoo.com/articles/serviceworker-revolution) [Workers](https://ponyfoo.com/articles/progressive-networking-serviceworker) (many of which are very good), but there's a lot of reading too. So, this is me throwing my hat in with the fast and loose: copy & paste guide.
+There are a [lot](https://www.smashingmagazine.com/2016/02/making-a-service-worker/) of [tutorials](https://www.udacity.com/course/offline-web-applications--ud899) [on the](https://www.html5rocks.com/en/tutorials/service-worker/introduction/) [web](https://jakearchibald.com/2014/offline-cookbook/) [for](https://adactio.com/journal/9775) [Service](https://ponyfoo.com/articles/serviceworker-revolution) [Workers](https://ponyfoo.com/articles/progressive-networking-serviceworker) (many of which are very good), but there's a lot of reading too. So, this is me throwing my hat in with the fast and loose: copy & paste guide.
 
 <!--more-->
 
-This assumes you have an existing site up and running, you'll **need** a few things:
+This post assumes that you already run your own website and want to start making use of Service Workers. To get started, you'll need:
 
-1. Your site served over HTTPS using [CloudFlare](https://www.cloudflare.com/a/add-site)
+1. Your site served over HTTPS (I'd recommend using [CloudFlare](https://www.cloudflare.com/a/add-site) for ultimate copy & paste)
 2. A [bit of JavaScript](#-bit-of-javascript) to load the service worker
 3. The [service worker](#-the-service-worker) (that does all the network control and whatnot)
 
@@ -29,14 +29,14 @@ Put this code on your site (so that it appears on every page):
 ```html
 <script>
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js', { scope: '/' });
+  navigator.serviceWorker.register('/sw.js');
 }
 </script>
 ```
 
 Put this inline to your HTML (it makes it simpler).
 
-**Disclaimer:** this is scoped to the root of your site. Read a non-copy & paste article to learn more!
+**Disclaimer:** this is [scoped](https://github.com/slightlyoff/ServiceWorker/blob/master/explainer.md#getting-started) to the root of your site. Read a non-copy & paste article to learn more!
 
 ## 🔋 The service worker
 
@@ -65,11 +65,6 @@ self.addEventListener('install', e => {
   );
 });
 
-// if the sw.js file changes, "activate" it
-// (and swap when the tab closes)
-self.addEventListener('activate',
-  event => event.waitUntil(self.clients.claim()));
-
 // when the browser fetches a url, either response with
 // the cached object or go ahead and fetch the actual url
 self.addEventListener('fetch', event => {
@@ -78,6 +73,8 @@ self.addEventListener('fetch', event => {
   );
 });
 ```
+
+The *contents* of the `sw.js` file will need to change to trigger an update of the `sw.js` file itself, but I highly recommend using the debugging tools too.
 
 ## 🐛 Debugging
 
