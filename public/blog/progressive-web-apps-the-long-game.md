@@ -61,6 +61,6 @@ Initially when I learnt about the add to home screen feature, I was frustrated t
 >
 > **If I add this app to my home screen, it *will* work when I open it.**
 
-This is huge. Today, I don't even bother trying to visit sites offline. I know there's a browser cache, but I don't trust it'll load. If I know there's a poor connection, I could open the URL hoping, preying that it might load before I forget what I was doing. I have no trust it'll load at all.
+This is huge. Today, I don't even bother trying to visit sites offline. I know there's a browser cache, but I don't trust it'll load. If I know there's a poor connection, I could open the URL hoping, praying that it might load before I forget what I was doing. I have no trust it'll load at all.
 
 Now is our chance to change all this. Now we have the technologies to create a trustworthy experience with our users, that puts web apps a single touch away from our users.
