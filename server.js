@@ -12,7 +12,9 @@ var port = process.env.PORT || 9000;
 var router = require('router-stupid');
 var blogs = require('./public/blog/_data.json');
 var pages = Object.keys(require('./public/_data.json'));
-var slugs = Object.keys(blogs);
+var slugs = Object.keys(blogs).sort(function (a, b) {
+  return blogs[a].date < blogs[b].date ? 1 : -1;
+});
 var route = router();
 var fourohfour = '';
 var mount;
@@ -117,6 +119,28 @@ route.post('/search', function (req, res) {
 
     res.end(JSON.stringify(results));
   });
+});
+
+// redirect to the latest post
+route.get('/latest', function (req, res, next) {
+  var post = blogs[slugs[0]];
+  if (post) {
+    var url = moment(post.date).format('/YYYY/MM/DD/') + slugs[0];
+    redirect(res, url);
+    return;
+  }
+  next();
+});
+
+route.get('/random', function (req, res, next) {
+  var slug = slugs[Math.random() * slugs.length | 0];
+  var post = blogs[slug];
+  if (post) {
+    var url = moment(post.date).format('/YYYY/MM/DD/') + slug;
+    redirect(res, url);
+    return;
+  }
+  next();
 });
 
 /* allow fast redirects to edit pages */

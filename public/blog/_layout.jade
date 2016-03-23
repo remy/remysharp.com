@@ -41,7 +41,7 @@ block content
         - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
         != yield
 
-        p.follow Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span>
+        p.follow Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges)</span><br>📚 Read more: the <a href="/latest">latest</a> post or a <a href="/random">random</a> post.
 
       if environment == "production"
         .comments
