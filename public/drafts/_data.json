@@ -246,5 +246,14 @@
     "tags": [
       "web"
     ]
+  },
+  "chrome-remote-debugging-over-wifi": {
+    "title": "Chrome remote debugging over wifi",
+    "date": "2016-03-26 15:26:29",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
   }
 }
