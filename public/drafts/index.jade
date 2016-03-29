@@ -1,7 +1,7 @@
 - posts = Object.keys(public.drafts._data).map(function (slug) {
 -   var post = public.drafts._data[slug];
 -   post.slug = slug;
--   post.modified = modified('/drafts/' + slug);
+-   post.modified = post.modified || modified('/drafts/' + slug);
 -   return post
 - }).sort(function(a,b){
 -   return a.modified - b.modified

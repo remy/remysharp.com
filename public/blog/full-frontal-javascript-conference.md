@@ -27,11 +27,11 @@ The line up is pretty awesome, I'm sure you'll agree.  We've got the following:
 * [Peter-Paul Koch](http://www.quirksmode.org/ "QuirksMode - for all your browser quirks") from the infinitely useful QuirksMode, on a subject to be confirmed.
 * [Stuart Langridge](http://www.kryogenix.org/ "as days pass by, by Stuart Langridge") talking about advanced JavaScript and advanced browser features.
 * [Robert Nyman](http://www.robertnyman.com/ "Robert&#8217;s talk - Web development and Internet trends") talking about taking JavaScript outside the traditional environment and building Firefox plugins.
-* Last but not least, [Simon Willison](http://simonwillison.net/ "Simon Willisonâ€™s Weblog") talking about JavaScript mashups with APIs and JSONP.
+* Last but not least, [Simon Willison](http://simonwillison.net/ "Simon Willison's Weblog") talking about JavaScript mashups with APIs and JSONP.
 
 ## When
 
-The event is a one day conference taking place on Friday 20th November this year.  
+The event is a one day conference taking place on Friday 20th November this year.
 
 ## The Name
 

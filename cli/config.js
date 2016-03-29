@@ -5,7 +5,11 @@ module.exports = {
     publish: 'cli/publish',
     populate: 'cli/populate',
     search: 'cli/search',
+    hello: 'cli/hello',
     'update-timestamps': 'cli/updateTimestamps'
+  },
+  alias: {
+    'timestamps': 'update-timestamps'
   },
   booleans: ['debug']
 };

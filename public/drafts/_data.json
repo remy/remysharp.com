@@ -157,8 +157,8 @@
   "versioning-the-chicken-egg": {
     "title": "Versioning: the chicken & egg",
     "date": "2015-06-10 10:13:47",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "code"
     ]

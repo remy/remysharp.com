@@ -1,6 +1,6 @@
 # jQuery Tag Suggestion
 
-If you're familiar with [del.icio.us](http://del.icio.us/remy.sharp?url=http%3A%2F%2Fremysharp.com%2F&title=remy%20sharpâ€™s%20b%3Alog&v=4) you will be familiar with the tag suggesting as-you-type support.
+If you're familiar with [del.icio.us](http://del.icio.us/remy.sharp?url=http%3A%2F%2Fremysharp.com%2F&title=remy%20sharp's%20b%3Alog&v=4) you will be familiar with the tag suggesting as-you-type support.
 
 The reason why, I believe, the tagging works so well within del.icio.us is that it helps you create a subset of tags that you commonly use for different types of links.  This way, it makes it easier to find tagged content later on. i.e. conversely if it didn't suggest links, it would be likely that you would have different variations or even spellings of the same tag on (what should be) grouped content.
 
