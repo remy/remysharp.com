@@ -36,45 +36,53 @@ The demonstration shows off both the static based tags and the Ajax based tag su
 
 Allows the input field to have their own set of tag suggestions.
 
-<pre><code class="prettyprint">$(function () {
+```
+$(function () {
   $('input.tagSuggest').tagSuggest({
     tags: ['javascript', 'js2', 'js', 'jquery', 'java']
   });
   $('#otherlanguages').tagSuggest({
     tags: ['applescript', 'php', 'perl', 'java']
   });
-});</code></pre>
+});
+```
 
 ### Static global example
-<script src="/js/prettify.packed.js" type="text/javascript" charset="utf-8"></script>
-<pre><code class="prettyprint">setGlobalTags(['javascript', 'js2', 'js', 'jquery', 'java']);
+
+```js
+setGlobalTags(['javascript', 'js2', 'js', 'jquery', 'java']);
 $(function () {
   $('input.tagSuggest').tagSuggest();
-});</code></pre>
+});
+```
 
 ### Ajax example
 
-<pre><code class="prettyprint">$(function () {
+```js
+$(function () {
   $('#tags').tagSuggest({
     url: '/tag-suggestion'
   });
-});</code></pre>
+});
+```
 
 ### Style
 
 I would recommend the following styles for the suggested tags:
 
-<pre><code class="prettyprint">SPAN.tagMatches {
-    margin-left: 10px;
+```css
+span.tagMatches {
+  margin-left: 10px;
 }
 
-SPAN.tagMatches SPAN {
-    padding: 2px;
-    margin-right: 4px;
-    background-color: #0000AB;
-    color: #fff;
-    cursor: pointer;
-}</code></pre>
+span.tagMatches span {
+  padding: 2px;
+  margin-right: 4px;
+  background-color: #0000AB;
+  color: #fff;
+  cursor: pointer;
+}
+```
 
 ## Plugin parameters
 

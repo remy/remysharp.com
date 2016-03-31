@@ -18,7 +18,7 @@
   "author": "Remy Sharp",
   "license": "MIT",
   "dependencies": {
-    "clite": "^0.2.0",
+    "clite": "^0.3.0",
     "elasticsearch": "^4.0.2",
     "es6-promise": "^3.1.2",
     "glob": "~4.0.5",

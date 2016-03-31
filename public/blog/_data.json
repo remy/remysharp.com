@@ -5,7 +5,8 @@
     "published": true,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2015-05-17 09:22:04"
   },
   "flickr-geo-tags": {
     "title": "Flickr Geo Tags",
@@ -13,7 +14,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "look-out-the-tabs-are-coming": {
     "title": "Look out, the tabs are coming",
@@ -21,7 +23,8 @@
     "published": true,
     "tags": [
       "apple"
-    ]
+    ],
+    "modified": "2014-09-18 15:08:59"
   },
   "adrift-25": {
     "title": "Adrift (2/5*)",
@@ -29,7 +32,8 @@
     "published": true,
     "tags": [
       "movies"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "birth": {
     "title": "Birth",
@@ -38,7 +42,8 @@
     "tags": [
       "business",
       "leftlogic"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "so-im-a-director": {
     "title": "So I'm a director",
@@ -47,7 +52,8 @@
     "tags": [
       "business",
       "leftlogic"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "dub-dub-dub-or-how-we-pronounce-the-world-wide-web": {
     "title": "dub-dub-dub, or: How we pronounce the World Wide Web.",
@@ -55,7 +61,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "itunes-first-look": {
     "title": "iTunes first look",
@@ -63,7 +70,8 @@
     "published": true,
     "tags": [
       "apple"
-    ]
+    ],
+    "modified": "2014-09-10 22:13:08"
   },
   "another-day-another-birthday": {
     "title": "Another day, another birthday",
@@ -72,7 +80,8 @@
     "tags": [
       "birthday",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-18 15:09:03"
   },
   "the-black-dahlia-45": {
     "title": "The Black Dahlia (4/5*)",
@@ -82,7 +91,8 @@
       "movie",
       "movies",
       "palma"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-mac-ie-taught-me-better-css": {
     "title": "How Mac IE taught me better CSS",
@@ -93,7 +103,8 @@
       "ie",
       "mac",
       "web"
-    ]
+    ],
+    "modified": "2014-09-18 15:09:00"
   },
   "whens-a-static-ip-not-a-static-ip-when-its-with-plusnet": {
     "title": "When's a static IP not a static IP? When it's with Plusnet",
@@ -101,7 +112,8 @@
     "published": true,
     "tags": [
       "rants"
-    ]
+    ],
+    "modified": "2014-09-10 22:12:28"
   },
   "how-to-save-a-mac-hard-drive-from-dying": {
     "title": "How to save a Mac hard drive from dying",
@@ -113,7 +125,8 @@
       "fix",
       "itunes",
       "mac"
-    ]
+    ],
+    "modified": "2014-09-18 15:07:21"
   },
   "wordpress-tagging-and-textmate": {
     "title": "Wordpress, Tagging and TextMate",
@@ -125,7 +138,8 @@
       "textmate",
       "tips",
       "wordpress"
-    ]
+    ],
+    "modified": "2014-09-18 15:08:55"
   },
   "microformats-bookmarklet": {
     "title": "Microformats Bookmarklet",
@@ -137,7 +151,8 @@
       "hcard",
       "microformats",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "lessons-learnt-water-computers": {
     "title": "Lessons Learnt: Water + Computers",
@@ -145,7 +160,8 @@
     "published": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "modified": "2014-10-16 18:05:14"
   },
   "children-of-men-55": {
     "title": "Children of Men (5/5*)",
@@ -156,7 +172,8 @@
       "film",
       "movie",
       "movies"
-    ]
+    ],
+    "modified": "2014-09-10 22:17:37"
   },
   "ajaxian-showcase-jquery-spy": {
     "title": "Ajaxian showcase jQuery Spy",
@@ -167,7 +184,8 @@
       "jquery",
       "spy",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-easy-was-easyjet": {
     "title": "How easy was EasyJet?",
@@ -177,7 +195,8 @@
       "easyjet",
       "personal",
       "problems"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "little-miss-sunshine-45": {
     "title": "Little Miss Sunshine (4/5*)",
@@ -188,7 +207,8 @@
       "little-miss-sunshine",
       "movie",
       "movies"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "fun-with-voices": {
     "title": "Fun with voices",
@@ -201,7 +221,8 @@
       "personal",
       "mac",
       "voice-candy"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "daily-essential-mac-apps": {
     "title": "Daily Essential Mac Apps",
@@ -214,7 +235,8 @@
       "mac",
       "top",
       "business"
-    ]
+    ],
+    "modified": "2014-09-18 15:09:02"
   },
   "flattery": {
     "title": "Flattery",
@@ -224,7 +246,8 @@
       "jquery",
       "microformats",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "halloween-textmate": {
     "title": "Halloween TextMate",
@@ -234,7 +257,8 @@
       "halloween",
       "textmate",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "the-last-kiss-35": {
     "title": "The Last Kiss (3/5*)",
@@ -244,7 +268,8 @@
       "film",
       "movies",
       "zack-braff"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "borat-cultural-learnings-of-america-for-make-benefit-glorious-nation-of-kazakhstan-45": {
     "title": "Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan (4/5*)",
@@ -254,7 +279,8 @@
       "borat",
       "film",
       "movies"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "fancy-dress": {
     "title": "Fancy Dress?",
@@ -262,7 +288,8 @@
     "published": true,
     "tags": [
       "rants"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "auto-input-grow-with-css-but-is-it-a-bug-2": {
     "title": "Auto input grow with CSS (but is it a bug?)",
@@ -273,7 +300,8 @@
       "code",
       "css",
       "ie"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "delicious-like-text-grow-jquery-plugin-2": {
     "title": "del.icio.us-like Text Grow jQuery Plugin",
@@ -284,7 +312,8 @@
       "delicious",
       "jquery",
       "plugin"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "casino-royale-55": {
     "title": "Casino Royale (5/5*)",
@@ -294,7 +323,8 @@
       "films",
       "james-bond",
       "movies"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "our-10-years": {
     "title": "Our 10 years",
@@ -309,7 +339,8 @@
       "party",
       "personal",
       "playlist"
-    ]
+    ],
+    "modified": "2014-09-10 22:13:06"
   },
   "the-delicate-apple": {
     "title": "The Delicate Apple",
@@ -322,7 +353,8 @@
       "mac",
       "powerbook",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-10 22:12:32"
   },
   "jquery-mousehold-event": {
     "title": "jQuery Mousehold Event",
@@ -333,7 +365,8 @@
       "jquery",
       "mousehold",
       "code"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "google-says-no": {
     "title": "Google says 'no'",
@@ -346,7 +379,8 @@
       "protection",
       "spam",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "css-mastery-ipod-giveaway": {
     "title": "CSS Mastery iPod Giveaway",
@@ -356,7 +390,8 @@
       "christmas",
       "css-mastery",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "but-google-maintains-a-sense-of-humour": {
     "title": "Google humour",
@@ -368,7 +403,8 @@
       "maps",
       "moon",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "the-delicate-apple-part-2": {
     "title": "The Delicate Apple - Part 2",
@@ -379,7 +415,8 @@
       "broken",
       "insurance",
       "powerbook"
-    ]
+    ],
+    "modified": "2014-09-10 22:12:43"
   },
   "merry-chrimbo-to-you-and-to-me": {
     "title": "Merry Chrimbo to you and to me",
@@ -388,7 +425,8 @@
     "tags": [
       "christmas",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "firebug-10-beta": {
     "title": "Firebug 1.0 beta",
@@ -402,7 +440,8 @@
       "firefox",
       "javascript",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "what-would-cause-ie-not-to-display-any-css": {
     "title": "What would cause IE not to display any CSS?",
@@ -410,7 +449,8 @@
     "published": true,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-to-setup-your-mac-web-development-environment": {
     "title": "How to setup your Mac web development environment",
@@ -426,7 +466,8 @@
       "tips",
       "tutorial",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "will-apples-os-x-be-stopping-at-106": {
     "title": "Will Apple's OS X be stopping at 10.6?",
@@ -438,7 +479,8 @@
       "leopard",
       "mac",
       "tiger"
-    ]
+    ],
+    "modified": "2014-09-18 15:08:58"
   },
   "something-coming-from-apple-right-now": {
     "title": "Something coming from Apple right now?",
@@ -447,7 +489,8 @@
     "tags": [
       "apple",
       "store"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "broken-ajax-nothing-coming-back": {
     "title": "Broken Ajax? Nothing coming back?",
@@ -459,7 +502,8 @@
       "javascript",
       "json",
       "tips"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-i-achieved-cross-site-scripting": {
     "title": "How I achieved cross site scripting",
@@ -470,7 +514,8 @@
       "code",
       "heatmaps",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "auto-populating-select-boxes-using-jquery-ajax": {
     "title": "Auto-populating Select Boxes using jQuery & AJAX",
@@ -481,7 +526,8 @@
       "jquery",
       "select-boxes",
       "code"
-    ]
+    ],
+    "modified": "2016-03-29 16:44:50"
   },
   "importing-colour-in-to-textmate": {
     "title": "Importing colour in to TextMate",
@@ -493,7 +539,8 @@
       "textmate",
       "tips",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "ssh-without-a-password": {
     "title": "ssh without a password",
@@ -506,7 +553,8 @@
       "ssh",
       "tips",
       "unix"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-to-fake-an-apache-request": {
     "title": "How to fake an apache request",
@@ -517,7 +565,8 @@
       "mod-perl",
       "perl",
       "tips"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jquery-tutorial-text-box-hints": {
     "title": "jQuery tutorial: Text box hints",
@@ -527,7 +576,8 @@
       "code",
       "plugin",
       "tutorial"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "cant-delete-from-the-trash": {
     "title": "Can't delete from the trash?",
@@ -536,7 +586,8 @@
     "tags": [
       "apple",
       "tips"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "ie-7-breaks-getelementbyid": {
     "title": "IE 7 breaks getElementById",
@@ -549,7 +600,8 @@
       "ie",
       "ie6",
       "ie7"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "wordpress-smiles": {
     "title": "WordPress smiles",
@@ -559,7 +611,8 @@
       "funny",
       "web",
       "wordpress"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "accessible-degradable-style-control-part-1": {
     "title": "Accessible, degradable style control - part 1",
@@ -574,7 +627,8 @@
       "javascript",
       "php",
       "style"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "farewell-the-old-guard": {
     "title": "Farewell the Old Guard",
@@ -582,7 +636,8 @@
     "published": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jquery-ajaxed-forms": {
     "title": "jQuery AJAX'ed forms",
@@ -593,7 +648,8 @@
       "forms",
       "jquery",
       "screencast"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "gravatar-bit-of-a-bad-start": {
     "title": "Gravatar - bit of a bad start",
@@ -603,7 +659,8 @@
       "avatar",
       "gravatar",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "firebug-in-ie-for-any-web-site": {
     "title": "Firebug in IE for *any* web site",
@@ -614,7 +671,8 @@
       "firebug",
       "ie",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-to-make-a-cms-editor-more-usable": {
     "title": "How to make a CMS editor more usable",
@@ -622,7 +680,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-to-get-cookies-working-in-ie6-stand-alone": {
     "title": "How to get cookies working in IE6 stand alone",
@@ -632,7 +691,8 @@
       "web",
       "ie",
       "tips"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "a-few-more-jquery-plugins-crop-labelover-and-pluck": {
     "title": "A few more jQuery plugins: crop, labelOver and pluck",
@@ -644,7 +704,8 @@
       "labelover",
       "pluck",
       "plugin"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-to-add-twitter-to-your-blog-without-it-hanging-your-site": {
     "title": "How to add Twitter to your blog, without it hanging your site",
@@ -654,7 +715,8 @@
       "web",
       "tips",
       "twitter"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "the-day-i-appeared-in-scientific-american": {
     "title": "The day I appeared in Scientific American",
@@ -666,7 +728,8 @@
       "palm",
       "palm-pilot",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "tinyurl-javascript-api": {
     "title": "TinyURL JavaScript API",
@@ -679,7 +742,8 @@
       "project",
       "tinyurl",
       "tool"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "gettin-nekked": {
     "title": "Gettin' Nek'ked.",
@@ -690,7 +754,8 @@
       "naked",
       "nude",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "second-life-in-brighton": {
     "title": "Second Life in Brighton",
@@ -700,7 +765,8 @@
       "brighton",
       "personal",
       "second-life"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "life-streams-with-yahoo-pipes-screencast": {
     "title": "Life Streams with Yahoo Pipes (screencast)",
@@ -714,7 +780,8 @@
       "rss-tag",
       "screencast",
       "yahoo"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jquerys-this-demystified": {
     "title": "jQuery's this: demystified",
@@ -727,7 +794,8 @@
       "jquery",
       "this",
       "code"
-    ]
+    ],
+    "modified": "2015-08-31 10:41:19"
   },
   "how-to-detect-when-an-external-library-has-loaded": {
     "title": "How to detect when an external library has loaded",
@@ -740,7 +808,8 @@
       "safari",
       "script",
       "tip"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "apple-delays-osx-leopard": {
     "title": "Apple Delays OSX Leopard",
@@ -749,7 +818,8 @@
     "tags": [
       "apple",
       "leopard"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "performance-profiling-javascript": {
     "title": "Performance profiling JavaScript",
@@ -762,7 +832,8 @@
       "performance",
       "profiling",
       "timer"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jquery-ext": {
     "title": "jQuery & Ext",
@@ -772,7 +843,8 @@
       "ext",
       "code",
       "tutorial"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "isight-fun": {
     "title": "iSight fun",
@@ -782,7 +854,8 @@
       "funny",
       "personal",
       "photos"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "pretty-in-print-tips-for-print-styles": {
     "title": "Pretty in Print: tips for print styles",
@@ -795,7 +868,8 @@
       "stylesheet",
       "tips",
       "web"
-    ]
+    ],
+    "modified": "2014-09-06 16:21:14"
   },
   "add-twitter-to-your-blog-step-by-step": {
     "title": "Add Twitter to your blog (step-by-step)",
@@ -806,7 +880,8 @@
       "project",
       "twitter",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "when-links-in-uls-dont-work-in-ie": {
     "title": "When links in ULs don't work in IE",
@@ -818,7 +893,8 @@
       "ie",
       "ie7",
       "code"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "linkify-upgrade-to-twitter-plugin": {
     "title": "Linkify + upgrade to twitter plugin",
@@ -828,7 +904,8 @@
       "code",
       "javascript",
       "twitter"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "30-second-review-of-safari-3-beta": {
     "title": "30 second review of Safari 3 beta",
@@ -839,7 +916,8 @@
       "beta",
       "review",
       "safari"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "textmate-tagging-with-wordpress-22": {
     "title": "TextMate tagging with WordPress 2.2",
@@ -852,7 +930,8 @@
       "ultimate-tag-warrior",
       "utw",
       "wordpress"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "our-london-to-brighton-bike-ride-and-route": {
     "title": "Our London to Brighton bike ride and route",
@@ -864,7 +943,8 @@
       "london-to-brighton",
       "personal",
       "ride"
-    ]
+    ],
+    "modified": "2014-11-10 12:16:23"
   },
   "a-way-to-keep-track-and-in-touch": {
     "title": "A way to keep track and in touch",
@@ -875,7 +955,8 @@
       "mail",
       "tool",
       "business"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "40-mac-tips": {
     "title": "40 Mac Tips",
@@ -885,7 +966,8 @@
       "web",
       "mac",
       "tips"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "textmate-tagging-with-simple-tagging": {
     "title": "TextMate Tagging with Simple Tagging",
@@ -898,7 +980,8 @@
       "textmate",
       "tutorial",
       "wordpress"
-    ]
+    ],
+    "modified": "2015-08-31 10:42:36"
   },
   "what-to-expect-next": {
     "title": "What to expect next",
@@ -908,7 +991,8 @@
       "personal",
       "update",
       "widget"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "lastfm-recent-album-artwork-plugin": {
     "title": "Last.fm Recent Album Artwork Plugin",
@@ -919,7 +1003,8 @@
       "last-fm",
       "plugin",
       "wordpress"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "lets-get-dashcode-working-again": {
     "title": "Let's get Dashcode working again",
@@ -933,7 +1018,8 @@
       "hack",
       "mac",
       "widget"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "w3csitescom-harmful": {
     "title": "w3csites.com harmful?",
@@ -942,7 +1028,8 @@
     "tags": [
       "google",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "safari-text-sizer-for-firefox": {
     "title": "Safari text sizer for Firefox",
@@ -954,7 +1041,8 @@
       "javascript",
       "safari",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "a-note-of-inspiration": {
     "title": "A note of inspiration",
@@ -963,7 +1051,8 @@
     "tags": [
       "birthday",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "introduction-to-using-dashcode": {
     "title": "Introduction to using Dashcode",
@@ -976,7 +1065,8 @@
       "javascript",
       "mac",
       "tutorial"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "mysql-dump-tables-like": {
     "title": "MySQL dump tables like...",
@@ -986,7 +1076,8 @@
       "code",
       "mysql",
       "shell-script-bash"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "auto-populate-multiple-select-boxes": {
     "title": "Auto-populate multiple select boxes",
@@ -999,7 +1090,8 @@
       "project",
       "select-boxes",
       "tutorial"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "plain-and-simple": {
     "title": "Plain and simple",
@@ -1011,7 +1103,8 @@
       "dconstruct",
       "typography",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "restart-lookupd-to-refresh-dns-cache": {
     "title": "Restart lookupd (to refresh dns cache)",
@@ -1024,7 +1117,8 @@
       "lookupd",
       "mac",
       "shell-script"
-    ]
+    ],
+    "modified": "2014-11-21 17:20:35"
   },
   "to-hex": {
     "title": "to hex",
@@ -1036,7 +1130,8 @@
       "hex",
       "javascript",
       "numbers"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "catch-click-events-before-the-dom-is-loaded": {
     "title": "Catch click events before the DOM is loaded",
@@ -1048,7 +1143,8 @@
       "events",
       "javascript",
       "jquery"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "fowa-2007": {
     "title": "FOWA 2007",
@@ -1058,7 +1154,8 @@
       "conference",
       "fowa",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "fowa-2007-followup": {
     "title": "FOWA 2007 - followup",
@@ -1070,7 +1167,8 @@
       "patration",
       "review",
       "web"
-    ]
+    ],
+    "modified": "2014-09-10 22:11:01"
   },
   "what-is-jsonp": {
     "title": "What is JSONP?",
@@ -1082,7 +1180,8 @@
       "jquery",
       "json",
       "jsonp"
-    ]
+    ],
+    "modified": "2014-12-17 10:14:41"
   },
   "the-hack-stops-here": {
     "title": "The Hack Stops Here",
@@ -1092,7 +1191,8 @@
       "business",
       "hack",
       "morals"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "will-itunes-allow-you-to-rip-dvds": {
     "title": "Will iTunes allow you to rip DVDs?",
@@ -1104,7 +1204,8 @@
       "dvd",
       "itunes",
       "ripping"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "thousand-separator-regex": {
     "title": "Thousand separator regex",
@@ -1116,7 +1217,8 @@
       "formatting",
       "number",
       "thousand"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "accessible-degradable-style-control-part-2": {
     "title": "Accessible, degradable style control - part 2",
@@ -1131,7 +1233,8 @@
       "php",
       "style",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "fancy-5000-cans-of-beer": {
     "title": "Fancy 5,000 cans of beer?",
@@ -1141,7 +1244,8 @@
       "adsa",
       "funny",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-10 22:11:56"
   },
   "prototype-and-jquery-going-from-one-to-the-other": {
     "title": "Prototype and jQuery - going from one to the other",
@@ -1154,7 +1258,8 @@
       "presentation",
       "prototype",
       "slideshow"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "lamp-in-leopard-osx-105-php5-and-apache-22": {
     "title": "LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)",
@@ -1170,7 +1275,8 @@
       "tips",
       "tutorial",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "leopard-initial-opinion": {
     "title": "Leopard - initial opinion",
@@ -1181,7 +1287,8 @@
       "leopard",
       "mac",
       "opinion"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "delay-the-dom-ready-event-generate-a-dummy-file": {
     "title": "Delay the DOM ready event / Generate a dummy file",
@@ -1194,7 +1301,8 @@
       "dummy",
       "code",
       "generate"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "detect-global-variables": {
     "title": "Detect Global Variables",
@@ -1206,7 +1314,8 @@
       "debugging",
       "global",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "paste-emails-straight-in-to-mail": {
     "title": "Paste emails straight in to Mail",
@@ -1215,7 +1324,8 @@
     "tags": [
       "apple",
       "mail"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "ipod-touch-bookmarklets-microformats": {
     "title": "iPod Touch Bookmarklets & Microformats",
@@ -1228,7 +1338,8 @@
       "ipodtouch",
       "javascript",
       "microformats"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "on-demand-script-loading": {
     "title": "On Demand Script Loading",
@@ -1240,7 +1351,8 @@
       "external",
       "javascript",
       "wait"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "base64-decode-to-file": {
     "title": "Base64 decode to file",
@@ -1252,7 +1364,8 @@
       "binary",
       "decode",
       "code"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "bookmarklets": {
     "title": "Bookmarklets",
@@ -1262,7 +1375,8 @@
       "bookmarklet",
       "javascript",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "javascript-style-why-its-important": {
     "title": "JavaScript Style - why it's important",
@@ -1272,7 +1386,8 @@
       "media",
       "code",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "safari-gets-a-proper-microformats-extension": {
     "title": "Safari gets a proper Microformats extension",
@@ -1283,7 +1398,8 @@
       "microformats",
       "safari",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "it-aint-that-christmasy-and-there-aint-no-snow": {
     "title": "It ain't that Christmasy and there ain't no snow",
@@ -1297,7 +1413,8 @@
       "warchild",
       "xmas",
       "xmaschartattack"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "code-highlighting": {
     "title": "Code Highlighting",
@@ -1309,7 +1426,8 @@
       "development",
       "syntax",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "t-mobile-allow-free-wifi-google-maps": {
     "title": "T-Mobile allow free Wifi Google Maps",
@@ -1323,7 +1441,8 @@
       "maps",
       "tmobile",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-to-rotate-a-movie": {
     "title": "How to rotate a movie",
@@ -1336,7 +1455,8 @@
       "quicktime",
       "screencast",
       "tips"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "shameless": {
     "title": "Shameless",
@@ -1347,7 +1467,8 @@
       "leftlogic",
       "tacheback",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-to-integrate-openid-as-your-login-system": {
     "title": "How to integrate OpenID as your login system",
@@ -1359,7 +1480,8 @@
       "php",
       "server",
       "tutorial"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "merry-chrimbo-to-all": {
     "title": "Merry Chrimbo to all!",
@@ -1368,7 +1490,8 @@
     "tags": [
       "christmas",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jquery-tag-suggestion": {
     "title": "jQuery Tag Suggestion",
@@ -1380,7 +1503,8 @@
       "plugin",
       "project",
       "tagging"
-    ]
+    ],
+    "modified": "2016-03-29 16:46:11"
   },
   "2007-moments": {
     "title": "2007 Moments",
@@ -1389,7 +1513,8 @@
     "tags": [
       "newyear",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jsdocs-for-base": {
     "title": "JSDocs for Base",
@@ -1400,7 +1525,8 @@
       "code",
       "javascript",
       "jsdocs"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "ajax-validation-pattern": {
     "title": "Ajax validation pattern",
@@ -1412,7 +1538,8 @@
       "javascript",
       "jquery",
       "plugin"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "fixing-ie-overflow-problem": {
     "title": "Fixing IE overflow problem",
@@ -1424,7 +1551,8 @@
       "javascript",
       "jquery",
       "overflow"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "8-questions-after-ie-pissed-the-community-off": {
     "title": "8 questions after IE pissed the community off",
@@ -1434,7 +1562,8 @@
       "ie8",
       "microsoft",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "html-5-what-caught-my-eye": {
     "title": "HTML 5 - what caught my eye",
@@ -1444,7 +1573,8 @@
       "html",
       "html5",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "poor-mans-javascript-behaviours": {
     "title": "Poor man's JavaScript Behaviours",
@@ -1457,7 +1587,8 @@
       "javascript",
       "jquery",
       "plugin"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "javascript-namespaces": {
     "title": "JavaScript namespaces",
@@ -1467,7 +1598,8 @@
       "code",
       "javascript",
       "namespace"
-    ]
+    ],
+    "modified": "2015-08-31 10:40:38"
   },
   "how-i-fixed-wordpress-broken-upgrade": {
     "title": "How I Fixed WordPress' Broken Upgrade",
@@ -1477,7 +1609,8 @@
       "fix",
       "web",
       "wordpress"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jquery-api-browser": {
     "title": "jQuery API Browser",
@@ -1489,7 +1622,8 @@
       "javascript",
       "jquery",
       "project"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "visited-plugin": {
     "title": "Visited plugin",
@@ -1500,7 +1634,8 @@
       "javascript",
       "jquery",
       "links"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "upgrade-to-twitter-javascript-for-your-blog": {
     "title": "Upgrade to Twitter JavaScript for your blog",
@@ -1510,7 +1645,8 @@
       "code",
       "javascript",
       "twitter"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "upgraded-jquery-tag-suggestions": {
     "title": "Upgraded jQuery Tag Suggestions",
@@ -1521,7 +1657,8 @@
       "plugin",
       "tagging",
       "upgrade"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "new-blog-design": {
     "title": "New Blog Design",
@@ -1531,7 +1668,8 @@
       "blog",
       "personal",
       "update"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "complete-posts-in-wordpress-feeds": {
     "title": "Complete Posts in WordPress Feeds",
@@ -1541,7 +1679,8 @@
       "code",
       "hack",
       "wordpress"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "ie8-hands-on-a-developers-view": {
     "title": "IE8 hands on: a developer's view",
@@ -1553,7 +1692,8 @@
       "ie8",
       "review",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "idiot-proofing-the-jqueryready": {
     "title": "Idiot Proofing the jQuery.ready",
@@ -1564,7 +1704,8 @@
       "code",
       "jquery",
       "plugin"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "when-should-we-stop-caring-about-ie6": {
     "title": "When should we stop caring about IE6?",
@@ -1575,7 +1716,8 @@
       "ie6",
       "ie8",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "presenting-jquery-at-qcon": {
     "title": "Presenting jQuery at QCon",
@@ -1587,7 +1729,8 @@
       "presentation",
       "qcon",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "the-dom-scripting-toolkit-jquery": {
     "title": "The DOM Scripting Toolkit: jQuery",
@@ -1597,7 +1740,8 @@
       "web",
       "presentation",
       "qcon"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "safari-31-web-developer-functionality": {
     "title": "Safari 3.1 web developer functionality",
@@ -1607,7 +1751,8 @@
       "apple",
       "safari",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "rss-icons-for-safari": {
     "title": "RSS Icons for Safari",
@@ -1619,7 +1764,8 @@
       "rss-tag",
       "safari",
       "tip"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-to-tell-if-jquery-is-out-of-date": {
     "title": "How to tell if jQuery is out of date",
@@ -1631,7 +1777,8 @@
       "jquery",
       "plugin",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "codeigniter": {
     "title": "CodeIgniter",
@@ -1641,7 +1788,8 @@
       "code",
       "codeigniter",
       "php"
-    ]
+    ],
+    "modified": "2015-08-31 10:38:43"
   },
   "trailing-white-space-in-textmate": {
     "title": "Trailing white space in TextMate",
@@ -1650,7 +1798,8 @@
     "tags": [
       "code",
       "textmate"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "wiki-to-html-using-javascript": {
     "title": "Wiki to HTML using JavaScript",
@@ -1661,7 +1810,8 @@
       "javascript",
       "project",
       "wiki"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "air-textmate-bundle": {
     "title": "AIR TextMate Bundle",
@@ -1673,7 +1823,8 @@
       "onair2008london",
       "onairtour",
       "textmate"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "on-air-tour-london": {
     "title": "on AIR Tour: London",
@@ -1685,7 +1836,8 @@
       "onair2008london",
       "onairtour",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "pronounceablely-random": {
     "title": "Pronounceablely Random",
@@ -1696,7 +1848,8 @@
       "code",
       "random",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "stop-using-openid-why-how": {
     "title": "Stop Using OpenID - Why & How",
@@ -1705,7 +1858,8 @@
     "tags": [
       "openid",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "the-long-ride": {
     "title": "The Long Ride",
@@ -1715,7 +1869,8 @@
       "bike",
       "personal",
       "ride"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "code-dumper": {
     "title": "Code Dumper",
@@ -1725,7 +1880,8 @@
       "code",
       "code",
       "project"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "windowonresize-hangs-ie6-and-ie7": {
     "title": "window.onresize hangs IE6 and IE7",
@@ -1737,7 +1893,8 @@
       "ie",
       "ie6",
       "ie7"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "its-not-800x600": {
     "title": "It's not 800x600",
@@ -1747,7 +1904,8 @@
       "css",
       "design",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "what-is-sliverback": {
     "title": "What is Silverback?",
@@ -1758,7 +1916,8 @@
       "mac",
       "silverback",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "twitter-script-upgrades-jsonp-hacking": {
     "title": "Twitter script upgrades & JSONP hacking",
@@ -1769,7 +1928,8 @@
       "javascript",
       "jsonp",
       "twitter"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "one-for-the-designers": {
     "title": "One for the Designers",
@@ -1779,7 +1939,8 @@
       "jquery",
       "theme",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "screencasting": {
     "title": "Screencasting",
@@ -1789,7 +1950,8 @@
       "screencast",
       "tips",
       "web"
-    ]
+    ],
+    "modified": "2014-09-10 22:12:49"
   },
   "feed-of-events-via-microformats": {
     "title": "Feed of Events via Microformats",
@@ -1798,7 +1960,8 @@
     "tags": [
       "microformats",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "query-string-to-object-via-regex": {
     "title": "Query String to Object via regex",
@@ -1808,7 +1971,8 @@
       "code",
       "code",
       "regex"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "maxlength-plugin": {
     "title": "maxlength plugin",
@@ -1818,7 +1982,8 @@
       "code",
       "jquery",
       "plugin"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jquery-api-update-offline-and-anywhere": {
     "title": "jQuery API Update: offline and anywhere",
@@ -1828,7 +1993,8 @@
       "api",
       "code",
       "jquery"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-to-detect-if-a-font-is-installed-only-using-javascript": {
     "title": "How to detect if a font is installed (only using JavaScript)",
@@ -1840,7 +2006,8 @@
       "fonts",
       "javascript",
       "project"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "updated-jquery-talk": {
     "title": "Updated jQuery Talk",
@@ -1850,7 +2017,8 @@
       "web",
       "presentation",
       "skillswap"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "download-stats-for-s3": {
     "title": "Download stats for S3",
@@ -1860,7 +2028,8 @@
       "google",
       "s3",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "grid-tools": {
     "title": "Grid Tools",
@@ -1872,7 +2041,8 @@
       "css",
       "framework",
       "grid"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "how-to-default-a-variable-in-xslt": {
     "title": "How to default a variable in XSLT",
@@ -1883,7 +2053,8 @@
       "code",
       "xml",
       "xslt"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "safari-show-bug": {
     "title": "Safari show bug",
@@ -1893,7 +2064,8 @@
       "bug",
       "code",
       "safari"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "dconstruct-08": {
     "title": "dConstruct 08",
@@ -1905,7 +2077,8 @@
       "dconstruct08",
       "review",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "the-silky-smooth-marquee": {
     "title": "The Silky Smooth Marquee",
@@ -1917,7 +2090,8 @@
       "marquee",
       "plugin",
       "project"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "big-three-oh-happy-birthday-to-me": {
     "title": "Big Three Oh - happy birthday to me!",
@@ -1926,7 +2100,8 @@
     "tags": [
       "birthday",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "tweet-offline-better-locations": {
     "title": "Tweet offline & better locations",
@@ -1936,7 +2111,8 @@
       "greasemonkey",
       "twitter",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "twitter-upgrades-via-greasemonkey": {
     "title": "Twitter Upgrades via Greasemonkey",
@@ -1946,7 +2122,8 @@
       "greasemonkey",
       "twitter",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "autocomplete-even-better-twitter-keys": {
     "title": "Autocomplete & even better twitter keys",
@@ -1957,7 +2134,8 @@
       "project",
       "twitter",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "query-string-aware-javascript": {
     "title": "Query String Aware JavaScript",
@@ -1966,7 +2144,8 @@
     "tags": [
       "code",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "js-bin-for-collaborative-javascript-debugging": {
     "title": "JS Bin for Collaborative JavaScript Debugging",
@@ -1978,7 +2157,8 @@
       "javascript",
       "project",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jquery-really-visible": {
     "title": "jQuery *really* :visible",
@@ -1988,7 +2168,8 @@
       "code",
       "jquery",
       "selector"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "a-friday-meme-how-did-you-get-started": {
     "title": "A Friday Meme: How did you get started?",
@@ -1997,7 +2178,8 @@
     "tags": [
       "meme",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "the-future-of-javascript-libraries": {
     "title": "The Future of JavaScript Libraries",
@@ -2008,7 +2190,8 @@
       "jquery",
       "library",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "ie6-reading-text-colour-for-border-colour": {
     "title": "IE6 reading text colour for border colour!",
@@ -2019,7 +2202,8 @@
       "css",
       "ie",
       "ie6"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "stop-treating-ajax-as-something-special": {
     "title": "Stop treating Ajax as something special",
@@ -2029,7 +2213,8 @@
       "ajax",
       "code",
       "hack"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "css-tricks-link-nudge": {
     "title": "CSS Tricks' Link Nudge",
@@ -2040,7 +2225,8 @@
       "css",
       "safari",
       "webkit"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "html5-enabling-script": {
     "title": "HTML5 enabling script",
@@ -2051,7 +2237,8 @@
       "html",
       "html5",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "element-in-view-event-plugin": {
     "title": "Element 'in view' Event Plugin",
@@ -2061,7 +2248,8 @@
       "code",
       "jquery",
       "plugin"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jsonp-request-in-adobe-air": {
     "title": "JSONP request in Adobe Air",
@@ -2073,7 +2261,8 @@
       "javascript",
       "json",
       "jsonp"
-    ]
+    ],
+    "modified": "2015-08-31 10:41:59"
   },
   "analytics-for-bookmarklets-injected-scripts": {
     "title": "Analytics for Bookmarklets & Injected Scripts",
@@ -2083,7 +2272,8 @@
       "code",
       "google",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "html5-and-firefox2": {
     "title": "html5 and Firefox2",
@@ -2094,7 +2284,8 @@
       "html",
       "html5",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "full-frontal-javascript-conference": {
     "title": "Full Frontal JavaScript Conference",
@@ -2106,7 +2297,8 @@
       "javascript",
       "project",
       "web"
-    ]
+    ],
+    "modified": "2016-03-29 16:46:06"
   },
   "html5-spell-death-to-flash": {
     "title": "HTML5 spell death to Flash?",
@@ -2116,7 +2308,8 @@
       "flash",
       "html5",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "twivatar-a-twitter-avatar-api": {
     "title": "Twivatar, a Twitter avatar API",
@@ -2127,7 +2320,8 @@
       "twitter",
       "twivatar",
       "web"
-    ]
+    ],
+    "modified": "2014-09-11 11:10:51"
   },
   "safaris-problem-with-font-face": {
     "title": "Safari's problem with @font-face",
@@ -2138,7 +2332,8 @@
       "css3",
       "safari",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "google-assistive-technology-detection": {
     "title": "Google Assistive Technology Detection",
@@ -2150,7 +2345,8 @@
       "code",
       "google",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "rimshot-with-html5": {
     "title": "Rimshot with HTML5",
@@ -2162,7 +2358,8 @@
       "html5",
       "javascript",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jquery-multibinding-events": {
     "title": "jQuery multibinding events",
@@ -2172,7 +2369,8 @@
       "code",
       "jquery",
       "plugin"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "new-projects-more-writing-more-speaking": {
     "title": "New Projects, more writing & more speaking",
@@ -2183,7 +2381,8 @@
       "html5",
       "jquery",
       "twitter"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "twitpic-api-for-getting-pictures-out": {
     "title": "Twitpic API for getting pictures out",
@@ -2196,7 +2395,8 @@
       "project",
       "twitter",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "legend-not-such-a-legend-anymore": {
     "title": "Legend not such a legend anymore",
@@ -2206,7 +2406,8 @@
       "html5",
       "legend",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "defining-the-vomit-bug": {
     "title": "Defining The Vomit Bug",
@@ -2220,7 +2421,8 @@
       "html",
       "html5",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "saving-figure-detail": {
     "title": "Saving Figure & Detail",
@@ -2230,7 +2432,8 @@
       "html5",
       "legend",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "win-a-ticket-for-the-full-frontal-javascript-conference": {
     "title": "Win a ticket for the Full Frontal JavaScript Conference",
@@ -2240,7 +2443,8 @@
       "business",
       "conference",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "dconstruct-2009-barcamp-brighton-4": {
     "title": "dConstruct 2009 & Barcamp Brighton 4",
@@ -2251,7 +2455,8 @@
       "jquery",
       "talks",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "a-better-twitter-search": {
     "title": "A better Twitter search",
@@ -2263,7 +2468,8 @@
       "project",
       "twitter",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "the-missing-stat-noscript": {
     "title": "The Missing Stat: noscript",
@@ -2274,7 +2480,8 @@
       "javascript",
       "plugin",
       "wordpress"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "going-full-frontal-in-one-week": {
     "title": "Going Full Frontal in one week",
@@ -2285,7 +2492,8 @@
       "conference",
       "fullfrontal",
       "fullfrontal09"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "native-retweets": {
     "title": "Native Retweets",
@@ -2295,7 +2503,8 @@
       "api",
       "twitter",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "full-frontal-javascript-2009": {
     "title": "Full Frontal JavaScript 2009",
@@ -2305,7 +2514,8 @@
       "business",
       "conference",
       "fullfrontal09"
-    ]
+    ],
+    "modified": "2014-09-10 22:13:08"
   },
   "goodnight-2009": {
     "title": "Goodnight 2009",
@@ -2314,7 +2524,8 @@
     "tags": [
       "newyear",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "html5-vs-flash": {
     "title": "HTML5 vs. Flash",
@@ -2324,7 +2535,8 @@
       "flash",
       "html5",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "slicehost-nodejs-websockets": {
     "title": "Slicehost, Node.js & WebSockets",
@@ -2337,7 +2549,8 @@
       "slicehost",
       "web",
       "websockets"
-    ]
+    ],
+    "modified": "2014-09-18 21:50:29"
   },
   "why-firebug-sucks-more-than-ie6": {
     "title": "Why Firebug sucks more than IE6",
@@ -2348,7 +2561,8 @@
       "debugging",
       "firebug",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "signs-of-a-poorly-written-jquery-plugin": {
     "title": "Signs of a poorly written jQuery plugin",
@@ -2359,7 +2573,8 @@
       "plugin",
       "code",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "hacking-twitters-reply-system": {
     "title": "Hacking Twitter's reply system",
@@ -2368,7 +2583,8 @@
     "tags": [
       "twitter",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "throttling-function-calls": {
     "title": "Throttling function calls",
@@ -2379,7 +2595,8 @@
       "development",
       "javascript",
       "jquery"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "doing-it-right-skipping-the-iphone-url-bar": {
     "title": "Doing it right: skipping the iPhone url bar",
@@ -2390,7 +2607,8 @@
       "code",
       "iphone",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "dynamic-favicons": {
     "title": "Dynamic favicons",
@@ -2401,7 +2619,8 @@
       "code",
       "html5",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "universal-launch-images-with-phonegap": {
     "title": "Universal launch images with PhoneGap",
@@ -2412,7 +2631,8 @@
       "ios",
       "javascript",
       "phonegap"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "custom-url-schemes-in-phonegap": {
     "title": "Custom URL schemes in PhoneGap",
@@ -2423,7 +2643,8 @@
       "ios",
       "javascript",
       "phonegap"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "websockets-in-phonegap-projects": {
     "title": "WebSockets in PhoneGap Projects",
@@ -2433,7 +2654,8 @@
       "code",
       "phonegap",
       "websockets"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "what-is-a-polyfill": {
     "title": "What is a Polyfill?",
@@ -2444,7 +2666,8 @@
       "code",
       "html5",
       "web"
-    ]
+    ],
+    "modified": "2015-01-02 16:15:37"
   },
   "css-parent-selector": {
     "title": "CSS selector for :parent targeting (please)",
@@ -2453,7 +2676,8 @@
     "tags": [
       "code",
       "css"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "nodejs-rapid-development-nodemon": {
     "title": "node.js rapid development: nodemon",
@@ -2463,7 +2687,8 @@
       "code",
       "javascript",
       "node"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "full-frontal-t-shirts-in-tias-name": {
     "title": "Full Frontal T-shirts in Tia's name",
@@ -2473,7 +2698,8 @@
       "conference",
       "tia",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "our-christmas-films-list": {
     "title": "Our Christmas Films List",
@@ -2482,7 +2708,8 @@
     "tags": [
       "christmas",
       "personal"
-    ]
+    ],
+    "modified": "2015-12-14 19:37:47"
   },
   "audio-sprites": {
     "title": "Audio Sprites (and fixes for iOS)",
@@ -2494,7 +2721,8 @@
       "html5",
       "ios",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "2010-the-year-ill-never-forget": {
     "title": "2010: The Year I'll Never Forget",
@@ -2504,7 +2732,8 @@
       "newyear",
       "personal",
       "tia"
-    ]
+    ],
+    "modified": "2014-09-10 22:18:30"
   },
   "creative-html5-and-javascript-workshop-by-seb_ly": {
     "title": "Creative HTML5 and JavaScript workshop by @seb_ly",
@@ -2516,7 +2745,8 @@
       "html5",
       "javascript",
       "workshop"
-    ]
+    ],
+    "modified": "2014-09-18 21:50:37"
   },
   "simple-offline-application": {
     "title": "Simple Offline Application",
@@ -2526,7 +2756,8 @@
       "code",
       "html5",
       "offline"
-    ]
+    ],
+    "modified": "2014-09-18 21:50:34"
   },
   "broken-offline-support": {
     "title": "Broken Offline Support",
@@ -2538,7 +2769,8 @@
       "javascript",
       "offline",
       "rants"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "getting-cors-working": {
     "title": "Getting CORS Working",
@@ -2550,7 +2782,8 @@
       "cors",
       "javascript",
       "xhr"
-    ]
+    ],
+    "modified": "2015-05-17 09:22:04"
   },
   "my-big-workshop-tour": {
     "title": "My Big Workshop Tour",
@@ -2561,7 +2794,8 @@
       "conference",
       "personal",
       "workshop"
-    ]
+    ],
+    "modified": "2014-09-10 22:13:07"
   },
   "in-memory-of-tia": {
     "title": "In memory of Tia",
@@ -2570,7 +2804,8 @@
     "tags": [
       "personal",
       "tia"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "link-elements-block-dom-parsing-too": {
     "title": "link elements block DOM parsing too",
@@ -2581,7 +2816,8 @@
       "css",
       "javascript",
       "performance"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "input-range-polyfill": {
     "title": "input range polyfill",
@@ -2589,7 +2825,8 @@
     "published": true,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "antisocial-spaces-on-twitter": {
     "title": "Antisocial spaces on Twitter",
@@ -2598,7 +2835,8 @@
     "tags": [
       "twitter",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "on-changing-my-avatar": {
     "title": "On changing my avatar",
@@ -2607,7 +2845,8 @@
     "tags": [
       "personal",
       "twitter"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "rich-text-input-on-ios": {
     "title": "Rich text input on iOS",
@@ -2617,7 +2856,8 @@
       "code",
       "ios",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "ellis-tennyson-sharp": {
     "title": "Ellis Tennyson Sharp",
@@ -2628,7 +2868,8 @@
       "family",
       "personal",
       "tia"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "a-public-mit-license-resource": {
     "title": "A Public MIT License Resource",
@@ -2638,7 +2879,8 @@
       "code",
       "development",
       "project"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "i-like-instagram-but-its-not-as-open-as-id-like-it-to-be": {
     "title": "I like Instagram, but it's not as open as I'd like it to be",
@@ -2649,7 +2891,8 @@
       "instagram",
       "web",
       "webhooks"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "my-2011": {
     "title": "My 2011",
@@ -2658,7 +2901,8 @@
     "tags": [
       "newyear",
       "personal"
-    ]
+    ],
+    "modified": "2014-11-10 12:16:06"
   },
   "vendor-prefixes-about-to-go-south": {
     "title": "Vendor Prefixes - about to go south",
@@ -2668,7 +2912,8 @@
       "css",
       "rants",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "the-tldr-vendor-prefix-post": {
     "title": "The TL;DR vendor-prefix post",
@@ -2677,7 +2922,8 @@
     "tags": [
       "css",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "training-and-events": {
     "title": "Training and events",
@@ -2685,7 +2931,8 @@
     "published": true,
     "tags": [
       "business"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "mobile-battery-performance": {
     "title": "Mobile Battery Performance",
@@ -2693,7 +2940,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "notes-from-state-of-the-browser": {
     "title": "Notes from State of the Browser",
@@ -2701,7 +2949,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "issues-with-position-fixed-scrolling-on-ios": {
     "title": "Issues with position fixed & scrolling on iOS",
@@ -2713,7 +2962,8 @@
       "ios",
       "iphone",
       "web"
-    ]
+    ],
+    "modified": "2016-03-17 23:05:35"
   },
   "development-trick-auto-updating-auto-reloading": {
     "title": "Development Trick: auto-updating & auto-reloading",
@@ -2723,7 +2973,8 @@
       "code",
       "git",
       "node"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "full-frontal-2012-launches-soon": {
     "title": "Full Frontal 2012 launches soon!",
@@ -2731,7 +2982,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "the-tooling-workshop": {
     "title": "The Tooling Workshop",
@@ -2740,7 +2992,8 @@
     "tags": [
       "fullfrontalconf",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "contributing-to-the-web-community": {
     "title": "Contributing to the web community",
@@ -2750,7 +3003,8 @@
       "blogging",
       "community",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "my-workflow-never-having-to-leave-devtools": {
     "title": "My Workflow: Never having to leave DevTools",
@@ -2765,7 +3019,8 @@
       "javascript",
       "tips",
       "web"
-    ]
+    ],
+    "modified": "2014-11-10 12:09:14"
   },
   "my-2012": {
     "title": "My 2012",
@@ -2774,7 +3029,8 @@
     "tags": [
       "newyear",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "cors-isnt-just-for-xhr": {
     "title": "CORS isn't just for XHR",
@@ -2786,7 +3042,8 @@
       "html5",
       "javascript",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "quick-dirty-forking": {
     "title": "Quick & Dirty Forking",
@@ -2797,7 +3054,8 @@
       "git",
       "github",
       "project"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "id-like-to-send-you-to-the-bacon-conference": {
     "title": "I'd like to send you to the Bacon conference",
@@ -2806,7 +3064,8 @@
     "tags": [
       "conference",
       "web"
-    ]
+    ],
+    "modified": "2014-11-10 12:15:15"
   },
   "creating-popups-without-html-files": {
     "title": "Creating popups without HTML files",
@@ -2819,7 +3078,8 @@
       "javascript",
       "popup",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "i-know-jquery-now-what": {
     "title": "I know jQuery. Now what?",
@@ -2831,7 +3091,8 @@
       "javascript",
       "jquery",
       "web"
-    ]
+    ],
+    "modified": "2015-11-04 14:12:22"
   },
   "tracegl-for-javascript-debugging": {
     "title": "tracegl for JavaScript debugging",
@@ -2841,7 +3102,8 @@
       "javascript",
       "node",
       "web"
-    ]
+    ],
+    "modified": "2014-11-10 12:16:37"
   },
   "my-workflow-v2-mobile-devtools-livereload": {
     "title": "My Workflow v2: Mobile, DevTools & LiveReload",
@@ -2853,7 +3115,8 @@
       "development",
       "devtools",
       "web"
-    ]
+    ],
+    "modified": "2014-11-10 12:09:20"
   },
   "configuring-wifi-for-your-raspberry-pi-using-your-mac": {
     "title": "Configuring wifi for your Raspberry Pi using your Mac",
@@ -2863,7 +3126,8 @@
       "code",
       "hardware",
       "raspberrypi"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "insights-into-rendering-performance": {
     "title": "Insights into rendering performance",
@@ -2872,7 +3136,8 @@
     "tags": [
       "devtools",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "is-html5-ready": {
     "title": "Is HTML5 Ready?",
@@ -2881,7 +3146,8 @@
     "tags": [
       "html5",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jquery-workshop-and-node-workshop-in-trouble": {
     "title": "jQuery workshop and Node workshop (in trouble?)",
@@ -2891,7 +3157,8 @@
       "business",
       "conference",
       "workshop"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "my-workflow-v3-full-coding-stack": {
     "title": "My workflow v3: full coding stack",
@@ -2900,7 +3167,8 @@
     "tags": [
       "devtools",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "my-terminal-setup": {
     "title": "My terminal setup",
@@ -2910,7 +3178,8 @@
       "code",
       "development",
       "unix"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "jsbin-5th-birthday": {
     "title": "JS Bin's 5th birthday & news",
@@ -2920,7 +3189,8 @@
       "jsbin",
       "personal",
       "web"
-    ]
+    ],
+    "modified": "2014-12-27 17:21:27"
   },
   "how-i-fixed-an-anonymous-infinite-loop-in-jsbin": {
     "title": "How I fixed an anonymous infinite loop in jsbin",
@@ -2930,7 +3200,8 @@
       "code",
       "javascript",
       "node"
-    ]
+    ],
+    "modified": "2014-09-04 13:27:13"
   },
   "i-am-hiring": {
     "title": "I am hiring",
@@ -2939,7 +3210,8 @@
     "tags": [
       "business",
       "project"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "a-side-view-front-end-dev-conference": {
     "title": "A Side View: front end dev conference",
@@ -2949,7 +3221,8 @@
       "business",
       "conference",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "a-self-destructive-web": {
     "title": "A self destructive web",
@@ -2959,7 +3232,8 @@
       "conference",
       "personal",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "what-is-codecasting": {
     "title": "What is codecasting?",
@@ -2968,7 +3242,8 @@
     "tags": [
       "jsbin",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "using-watches-in-my-devtools-workflow": {
     "title": "Using watches in my devtools workflow",
@@ -2978,7 +3253,8 @@
       "code",
       "devtools",
       "workflow"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "my-2013": {
     "title": "My 2013",
@@ -2987,7 +3263,8 @@
     "tags": [
       "newyear",
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "nodemon-1-0": {
     "title": "nodemon 1.0",
@@ -2999,7 +3276,8 @@
       "nodemon",
       "project",
       "web"
-    ]
+    ],
+    "modified": "2015-07-29 14:31:53"
   },
   "cheat": {
     "title": "Hack failing: cheat",
@@ -3007,7 +3285,8 @@
     "published": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "youre-paying-to-speak": {
     "title": "You're paying to speak",
@@ -3017,7 +3296,8 @@
       "business",
       "conference",
       "fullfrontalconf"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "feature-based-development": {
     "title": "Feature based development",
@@ -3028,7 +3308,8 @@
       "javascript",
       "node",
       "project"
-    ]
+    ],
+    "modified": "2014-09-18 08:17:52"
   },
   "on-chrome-hiding-urls-to-protect-users-from-phishing": {
     "title": "On Chrome hiding URLs to protect users from phishing",
@@ -3039,7 +3320,8 @@
       "google",
       "security",
       "web"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "where-is-that-console-log": {
     "title": "Where is that console.log?",
@@ -3051,7 +3333,8 @@
       "de",
       "debug",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "commonjs-with-devtools-live-edit": {
     "title": "CommonJS modules with live edit in devtools",
@@ -3061,7 +3344,8 @@
       "code",
       "devtools",
       "fail"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "call-for-proposals-at-full-frontal-2014": {
     "title": "Call for proposals at Full Frontal 2014",
@@ -3071,7 +3355,8 @@
       "business",
       "conference",
       "fullfrontalconf"
-    ]
+    ],
+    "modified": "2015-02-12 14:42:19"
   },
   "arduino-wake-up-time": {
     "title": "The 'what time did my son wake up?' project",
@@ -3083,7 +3368,8 @@
       "fail",
       "hacking",
       "hardware"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "automatic-permalinks-for-blog-posts": {
     "title": "Automatic permalinks for blog posts",
@@ -3092,7 +3378,8 @@
     "tags": [
       "code",
       "javascript"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "time-doesnt-heal": {
     "title": "Time doesn’t heal",
@@ -3100,7 +3387,8 @@
     "published": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "in-the-middle-with-center": {
     "title": "In the middle with <center>",
@@ -3111,7 +3399,8 @@
       "html",
       "html5",
       "troll"
-    ]
+    ],
+    "modified": "2014-09-03 16:15:12"
   },
   "wordpress-ghost-harp-pt1": {
     "title": "WordPress -> Ghost -> Harp (part 1)",
@@ -3119,7 +3408,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-09-18 08:14:34"
   },
   "my-velveteen-rabbit": {
     "title": "My  Velveteen Rabbit",
@@ -3127,7 +3417,8 @@
     "published": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "modified": "2014-10-01 19:38:16"
   },
   "wordpress-ghost-harp-pt2": {
     "title": "WordPress -> Ghost -> Harp (part 2)",
@@ -3135,7 +3426,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-09-29 20:01:46"
   },
   "what-is-a-web-app": {
     "title": "What is a \"Web App\"?",
@@ -3143,7 +3435,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-10-06 16:49:30"
   },
   "focus-dev-util": {
     "title": "Element focus utility",
@@ -3151,7 +3444,8 @@
     "published": true,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2014-10-15 10:16:17"
   },
   "how-to-add-ssl": {
     "title": "Adding an (SHA256 signed) SSL certificate",
@@ -3160,7 +3454,8 @@
     "published": true,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2014-10-17 08:55:41"
   },
   "motivation": {
     "title": "Motivation",
@@ -3169,7 +3464,8 @@
     "published": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "modified": "2014-10-27 10:44:01"
   },
   "muddling-my-way-through-real-time": {
     "title": "Muddling my way through real time",
@@ -3178,7 +3474,8 @@
     "tags": [
       "web",
       "html5"
-    ]
+    ],
+    "modified": "2014-11-14 12:17:53"
   },
   "my-five-promise-patterns": {
     "title": "My five promise patterns",
@@ -3188,7 +3485,8 @@
     "inprogress": false,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2014-11-20 07:53:57"
   },
   "makefile": {
     "title": "Makefile instead of hoop jumping",
@@ -3198,7 +3496,8 @@
     "published": true,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2014-12-03 21:57:23"
   },
   "to-you": {
     "title": "To You",
@@ -3207,7 +3506,8 @@
     "published": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "modified": "2014-12-06 08:41:23"
   },
   "vatmoss": {
     "title": "VATMOSS",
@@ -3216,7 +3516,8 @@
     "published": true,
     "tags": [
       "business"
-    ]
+    ],
+    "modified": "2014-12-16 11:44:16"
   },
   "vatmoss-proof": {
     "title": "VATMOSS: the misunderstanding of \"proof\"",
@@ -3225,7 +3526,8 @@
     "published": true,
     "tags": [
       "business"
-    ]
+    ],
+    "modified": "2014-12-30 10:45:11"
   },
   "my-2014": {
     "title": "My 2014",
@@ -3234,7 +3536,8 @@
     "published": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "modified": "2014-12-31 15:11:38"
   },
   "reboot": {
     "title": "Reboot",
@@ -3242,7 +3545,8 @@
     "published": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "modified": "2015-01-05 12:23:30"
   },
   "dont-like-open-source": {
     "title": "\"Why I don't like open source\" – my thoughts",
@@ -3250,7 +3554,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2015-01-13 15:28:39"
   },
   "lessons-learnt-from-nodemon-1-3": {
     "title": "Lessons learnt from nodemon 1.3",
@@ -3259,7 +3564,8 @@
     "published": true,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2015-02-02 10:59:30"
   },
   "you-dont-like-iex": {
     "title": "What do you mean, you don't like IE6...X?",
@@ -3267,7 +3573,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2016-02-12 14:13:23"
   },
   "i-am-web-developer": {
     "title": "I'm a web developer. Not an engineer.",
@@ -3276,7 +3583,8 @@
     "published": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2015-02-26 19:09:30"
   },
   "diet": {
     "title": "Diet",
@@ -3286,7 +3594,8 @@
     "inprogress": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "modified": "2015-07-04 17:30:07"
   },
   "moment-is-quickly-becoming-my-new-jquery": {
     "title": "Moment is quickly becoming my new jQuery!",
@@ -3295,7 +3604,8 @@
     "published": true,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2015-05-17 09:22:04"
   },
   "screen": {
     "title": "screen: Persistent Terminal Sessions",
@@ -3303,7 +3613,8 @@
     "published": true,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2015-05-17 09:22:04"
   },
   "quick-technique-for-api-mocking": {
     "title": "Quick technique for API mocking",
@@ -3311,7 +3622,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-05-17 11:53:54"
   },
   "call-for-proposals-at-ffconf-2015": {
     "title": "Call for proposals at ffconf 2015",
@@ -3319,7 +3631,8 @@
     "tags": [
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-05-25 12:54:13"
   },
   "bind": {
     "title": "Tiny two way data binding",
@@ -3327,7 +3640,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-06-07 20:33:39"
   },
   "devtool-tricks-for-when-i-forget": {
     "title": "Devtool tricks for when I forget",
@@ -3335,7 +3649,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-06-12 10:59:49"
   },
   "how-i-reduced-cpu-load-from-95-to-20": {
     "title": "Reducing my CPU load from 95% to 20%",
@@ -3343,7 +3658,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-06-17 15:53:11"
   },
   "assumptions": {
     "title": "You know what they say about assumptions...",
@@ -3351,7 +3667,8 @@
     "tags": [
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-07-02 15:35:03"
   },
   "optimising-a-canvas-animation": {
     "title": "Optimising a canvas animation",
@@ -3359,7 +3676,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-07-04 14:39:00"
   },
   "my-pebble": {
     "title": "My Pebble",
@@ -3367,7 +3685,8 @@
     "tags": [
       "personal"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-07-22 15:35:06"
   },
   "notes-on-porting-my-pebble-app-to-sdk-3": {
     "title": "Notes on porting my Pebble app to SDK3",
@@ -3375,7 +3694,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-07-29 16:20:31"
   },
   "i-thought-paypal-was-better": {
     "title": "I thought paypal was better...",
@@ -3383,7 +3703,8 @@
     "tags": [
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-08-11 19:23:55"
   },
   "five": {
     "title": "Five",
@@ -3391,7 +3712,8 @@
     "tags": [
       "personal"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-08-17 14:56:27"
   },
   "diversity-scholarships": {
     "title": "Diversity Scholarships for ffconf",
@@ -3399,7 +3721,8 @@
     "tags": [
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-08-28 17:10:33"
   },
   "a-ship-at-my-side-spreads-her-white-sails": {
     "title": "A ship at my side spreads her white sails",
@@ -3407,7 +3730,8 @@
     "tags": [
       "personal"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-09-02 22:26:34"
   },
   "jsbin-toxic-part-1": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 1)",
@@ -3416,7 +3740,8 @@
       "personal",
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-11-27 14:34:14"
   },
   "jsbin-toxic-part-2": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 2)",
@@ -3425,7 +3750,8 @@
       "personal",
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-09-18 15:16:58"
   },
   "jsbin-toxic-part-3": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 3)",
@@ -3434,7 +3760,8 @@
       "personal",
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-09-18 15:17:11"
   },
   "jsbin-toxic-part-4": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 4)",
@@ -3443,7 +3770,8 @@
       "personal",
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-09-18 15:17:24"
   },
   "jsbin-toxic-part-5": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 5)",
@@ -3453,7 +3781,8 @@
       "personal",
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-10-08 23:21:33"
   },
   "the-art-of-debugging": {
     "title": "The Art of Debugging",
@@ -3461,7 +3790,8 @@
     "tags": [
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2016-01-07 11:09:00"
   },
   "using-travis-with-private-npm-deps": {
     "title": "Using travis with private npm deps",
@@ -3469,7 +3799,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-08-23 12:30:40"
   },
   "on-making-ffconf-a-safe-place": {
     "title": "On making ffconf a safe place",
@@ -3478,7 +3809,8 @@
       "ffconf",
       "business"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-11-11 11:28:13"
   },
   "content-warnings": {
     "title": "Content warnings",
@@ -3486,7 +3818,8 @@
     "tags": [
       "personal"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-11-27 14:34:14"
   },
   "my-node-test-strategy": {
     "title": "My node test strategy",
@@ -3494,7 +3827,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2016-03-03 22:08:09"
   },
   "promise-waterfall": {
     "title": "Promise waterfall",
@@ -3502,7 +3836,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-12-18 13:19:21"
   },
   "my-2015": {
     "title": "My 2015",
@@ -3510,7 +3845,8 @@
     "tags": [
       "personal"
     ],
-    "published": true
+    "published": true,
+    "modified": "2015-12-31 07:06:43"
   },
   "why-i-love-working-with-the-web": {
     "title": "Why I love working with the web",
@@ -3519,7 +3855,8 @@
     "tags": [
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2016-01-20 09:45:32"
   },
   "fixing-fixtures": {
     "title": "Fixing fixtures",
@@ -3527,7 +3864,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2016-01-23 16:14:42"
   },
   "testing-tape-vs-tap": {
     "title": "Testing: tape vs. tap",
@@ -3535,7 +3873,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2016-02-08 07:46:16"
   },
   "production-npm-defaults": {
     "title": "Production npm defaults",
@@ -3543,7 +3882,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2016-02-21 18:17:33"
   },
   "from-tests-to-debugging-node-workflow": {
     "title": "From tests to debugging: node workflow",
@@ -3552,7 +3892,8 @@
     "tags": [
       "code"
     ],
-    "published": true
+    "published": true,
+    "modified": "2016-03-01 12:16:49"
   },
   "progressive-web-apps-the-long-game": {
     "title": "Progressive web apps: the long game",
@@ -3560,7 +3901,8 @@
     "tags": [
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2016-03-27 11:46:50"
   },
   "the-copy--paste-guide-to-your-first-service-worker": {
     "title": "The copy & paste guide to your first Service Worker",
@@ -3568,6 +3910,7 @@
     "tags": [
       "web"
     ],
-    "published": true
+    "published": true,
+    "modified": "2016-03-23 10:16:04"
   }
 }

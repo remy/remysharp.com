@@ -39,16 +39,6 @@ if (!pkg.version) {
 global.version = pkg.version.split('.').slice(0, 2).join('.');
 global.fullversion = pkg.version;
 
-global.modified = function (filename) {
-  var stat = null;
-  try {
-    stat = fs.statSync(__dirname + '/public/' + filename + '.md');
-    return stat.mtime;
-  } catch (e) {
-    return new Date(0);
-  }
-};
-
 function redirect(res, url) {
   res.writeHead(302, { location: url });
   res.end();
@@ -341,22 +331,25 @@ function stat(filename) {
   });
 }
 
-Promise.all(slugs.map(stat)).then(function (dates) {
-  global.recent = dates.sort(function (a, b) {
-    return a.date.getTime() - b.date.getTime();
-  }).reverse().slice(0, 3);
-
-  if (process.argv[2] === 'compile') {
-    process.env.NODE_ENV = 'production';
-    harp.compile(__dirname, outputPath, function (errors) {
-      if (errors) {
-        console.log(JSON.stringify(errors, null, 2));
-        process.exit(1);
-      }
-
-      process.exit(0);
-    });
-  } else {
-    run();
-  }
+global.recent = slugs.sort(function (a, b) {
+  return blogs[a].modified < blogs[b].modified ? 1 : -1;
+}).slice(0, 3).map(function (id) {
+  return {
+    slug: id,
+    date: blogs[id].modified,
+  };
 });
+
+if (process.argv[2] === 'compile') {
+  process.env.NODE_ENV = 'production';
+  harp.compile(__dirname, outputPath, function (errors) {
+    if (errors) {
+      console.log(JSON.stringify(errors, null, 2));
+      process.exit(1);
+    }
+
+    process.exit(0);
+  });
+} else {
+  run();
+}

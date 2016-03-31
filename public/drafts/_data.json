@@ -5,7 +5,8 @@
   "what-went-in-to-remote-tilt-com": {
     "title": "What went in to remote-tilt.com",
     "date": "2012-02-01 17:27:11",
-    "published": false
+    "published": false,
+    "modified": "2012-02-01 17:27:00"
   },
   "why-i-prefer-mobile-web-apps-to-native-apps": {
     "title": "Why I prefer mobile web apps to native apps",
@@ -13,12 +14,14 @@
     "published": false,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2013-03-14 14:09:00"
   },
   "polyfill-is-not-progressive-enhancement": {
     "title": "Polyfill is not Progressive Enhancement",
     "date": "2013-04-02 11:03:47",
-    "published": false
+    "published": false,
+    "modified": "2014-09-24 16:31:01"
   },
   "first-contact": {
     "title": "First Contact",
@@ -26,7 +29,8 @@
     "published": false,
     "tags": [
       "business"
-    ]
+    ],
+    "modified": "2014-05-05 13:35:00"
   },
   "git-push-to-live": {
     "title": "Git push to live",
@@ -34,7 +38,8 @@
     "published": false,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-05-30 13:00:00"
   },
   "apple-dont-care": {
     "title": "My beef with Apple",
@@ -43,7 +48,8 @@
     "tags": [
       "web",
       "business"
-    ]
+    ],
+    "modified": "2016-02-15 13:10:23"
   },
   "css-compression": {
     "title": "CSS Compression",
@@ -51,7 +57,8 @@
     "published": false,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2009-02-01 16:37:30"
   },
   "fragmentation": {
     "title": "Fragmentation",
@@ -59,7 +66,8 @@
     "published": false,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2012-11-26 23:21:44"
   },
   "localstorage": {
     "title": "Proposal for Async Web Storage API",
@@ -67,7 +75,8 @@
     "published": false,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2013-09-23 20:54:38"
   },
   "offline-panel": {
     "title": "Offline Panel",
@@ -75,7 +84,8 @@
     "published": false,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2013-09-27 17:28:42"
   },
   "harp": {
     "title": "Continuous integration with static site generator: Harp.js",
@@ -83,7 +93,8 @@
     "published": false,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2014-10-04 23:44:57"
   },
   "rewrite-it": {
     "title": "The \"let's just rewrite it\" syndrome",
@@ -91,7 +102,8 @@
     "published": false,
     "tags": [
       "business"
-    ]
+    ],
+    "modified": "2014-08-05 11:02:40"
   },
   "jsbin-11-things-you-didnt-know": {
     "title": "11 things you didn't know JS Bin could do",
@@ -99,7 +111,8 @@
     "complete": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-08-05 11:12:21"
   },
   "debugging-document-events": {
     "title": "Debugging events in devtools inspector",
@@ -107,7 +120,8 @@
     "complete": false,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2014-10-16 17:40:01"
   },
   "what-developers-can-learn-from-the-past": {
     "title": "What developers can learn from the past",
@@ -116,7 +130,8 @@
     "inprogress": false,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2015-08-25 14:00:55"
   },
   "horse-and-cart": {
     "title": "Maybe the Horse Before the Cart",
@@ -125,7 +140,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2014-12-29 10:29:34"
   },
   "how-tabs-should-work": {
     "title": "How tabs should work",
@@ -134,7 +150,8 @@
     "inprogress": false,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2016-01-01 08:47:39"
   },
   "adding-search-to-my-static-blog": {
     "title": "Adding search to my static blog",
@@ -143,7 +160,8 @@
     "inprogress": true,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2015-06-18 11:15:54"
   },
   "when-my-ssl-is-suddenly-not-secure": {
     "title": "When my SSL is suddenly not secure",
@@ -152,7 +170,8 @@
     "inprogress": false,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2015-06-04 11:51:26"
   },
   "versioning-the-chicken-egg": {
     "title": "Versioning: the chicken & egg",
@@ -161,7 +180,8 @@
     "inprogress": false,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2016-02-29 14:50:36"
   },
   "progressive-enhancement": {
     "title": "Progressive Enhancement",
@@ -170,7 +190,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2015-11-25 08:49:15"
   },
   "my-client-side-testing-wish": {
     "title": "My client side testing wish",
@@ -179,7 +200,8 @@
     "inprogress": true,
     "tags": [
       "code"
-    ]
+    ],
+    "modified": "2015-08-28 13:14:55"
   },
   "cost-of-a-slide-deck": {
     "title": "Cost of a slide deck",
@@ -189,7 +211,8 @@
     "tags": [
       "business",
       "web"
-    ]
+    ],
+    "modified": "2016-02-11 07:54:17"
   },
   "terms-of-work": {
     "title": "Terms of work",
@@ -198,7 +221,8 @@
     "inprogress": false,
     "tags": [
       "business"
-    ]
+    ],
+    "modified": "2016-02-21 18:17:33"
   },
   "a-price-on-code": {
     "title": "A price on code",
@@ -208,7 +232,8 @@
     "tags": [
       "personal",
       "business"
-    ]
+    ],
+    "modified": "2016-02-17 15:04:48"
   },
   "commit-to-contribute": {
     "title": "Commit to contribute",
@@ -218,7 +243,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2016-03-06 19:34:37"
   },
   "a-common-security-vulnerability": {
     "title": "A common security vulnerability",
@@ -227,7 +253,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2016-03-01 11:17:10"
   },
   "ffconf-2016-news": {
     "title": "ffconf 2016 news",
@@ -236,7 +263,8 @@
     "inprogress": true,
     "tags": [
       "business"
-    ]
+    ],
+    "modified": "2016-03-03 21:33:30"
   },
   "fonts-third-parties-and-scripts": {
     "title": "Fonts, Third Parties and Scripts",
@@ -245,7 +273,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2016-03-22 11:22:11"
   },
   "chrome-remote-debugging-over-wifi": {
     "title": "Chrome remote debugging over wifi",
@@ -254,6 +283,7 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "modified": "2016-03-27 11:46:50"
   }
 }

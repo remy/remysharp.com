@@ -73,10 +73,6 @@
     });
   }
 
-  function readCurrentPosition() {
-
-  }
-
   if (document.querySelector && Function.prototype.bind) {
     injectStyles();
     permalink();

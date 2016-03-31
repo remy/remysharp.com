@@ -21,9 +21,7 @@ var draftDir = path.resolve(process.cwd(), 'public', 'drafts');
 var publishedDir = path.resolve(process.cwd(), 'public', 'blog');
 
 function readJSON(file) {
-  return fs.readFile(file, 'utf8').then(function (data) {
-    return JSON.parse(data);
-  });
+  return fs.readFile(file, 'utf8').then(JSON.parse);
 }
 
 function slugify(s) {

@@ -7,13 +7,13 @@ block content
 
   - var timestamp = '';
   - if (current.source !== 'index')
-    - timestamp = typeof modified === 'function' ? modified('/drafts/' + current.source) : new Date(0);
+    - timestamp = modified || new Date(0);
 
   main.content(role="main")
     div.warning
      | Draft posts are a work in progress.&nbsp;
-     if timestamp
-       | Last edited #{ moment(timestamp).format('D-MMM YYYY') }
+     if modified
+       | Last edited #{ moment(modified).format('D-MMM YYYY') }
 
     article.post
       if current.source !== 'index'
