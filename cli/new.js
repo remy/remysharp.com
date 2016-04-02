@@ -20,7 +20,7 @@ function newPost() {
   return new Promise(function (resolve) {
     inquirer.prompt(prompts, function (answers) {
       draft(answers.title, answers.tags).then(function (filename) {
-        resolve('Draft created: ' + filename);
+        resolve('Draft created: ' + path.relative(process.cwd(), filename));
       });
     });
   });
@@ -38,7 +38,8 @@ function slugify(s) {
     .toLowerCase()
     .replace(/[\s-]+/g, '-')
     .replace(/[^a-z0-9-]/g, '')
-    .replace(/^-+|-+$/g, '');
+    .replace(/^-+|-+$/g, '')
+    .replace(/[\s-]+/g, '-');
 }
 
 function draft(title, tags) {
@@ -51,9 +52,12 @@ function draft(title, tags) {
       throw error;
     }
 
+    var now = moment().format('YYYY-MM-DD HH:mm:ss');
+
     drafts[slug] = {
       title: title,
-      date: moment().format('YYYY-MM-DD HH:mm:ss'),
+      date: now,
+      modified: now,
       complete: false,
       inprogress: true,
       tags: tags.length ? tags : ['web'],
