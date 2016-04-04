@@ -17,12 +17,15 @@ deploy:
   app: remysharp-com
   on:
     repo: remy/remysharp.com
+after_deply:
+- semantic-release post
 before_install:
 - npm i -g npm@^2.0.0
 before_script:
 - npm prune
 after_success:
-- npm run semantic-release
+- npm run build
+- npm publish
 branches:
   except:
   - /^v\d+\.\d+\.\d+$/
