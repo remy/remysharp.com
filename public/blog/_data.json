@@ -527,7 +527,7 @@
       "select-boxes",
       "code"
     ],
-    "modified": "2016-03-29 16:44:50"
+    "modified": "2016-04-03 12:51:20"
   },
   "importing-colour-in-to-textmate": {
     "title": "Importing colour in to TextMate",
@@ -2298,7 +2298,7 @@
       "project",
       "web"
     ],
-    "modified": "2016-03-29 16:46:06"
+    "modified": "2016-04-03 12:51:25"
   },
   "html5-spell-death-to-flash": {
     "title": "HTML5 spell death to Flash?",
@@ -3912,5 +3912,15 @@
     ],
     "published": true,
     "modified": "2016-03-23 10:16:04"
+  },
+  "a-debugging-thought-process": {
+    "image": "/images/devtools-copy-response.jpg",
+    "title": "A debugging thought process",
+    "date": "2016-04-04 16:01:44",
+    "modified": "2016-04-02 19:51:29",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }

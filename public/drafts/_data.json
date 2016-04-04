@@ -286,21 +286,10 @@
     ],
     "modified": "2016-03-27 11:46:50"
   },
-  "a-debugging-thought-process": {
-    "image": "/images/devtools-copy-response.jpg",
-    "title": "A debugging thought process",
-    "date": "2016-04-02 08:39:23",
-    "modified": "2016-04-02 13:24:18",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "my-decade-of-blogging": {
     "title": "my decade of blogging",
     "date": "2016-04-03 12:53:49",
-    "modified": "2016-04-03 12:53:49",
+    "modified": "2016-04-03 13:49:45",
     "complete": false,
     "inprogress": true,
     "tags": [
