@@ -239,8 +239,8 @@
     "title": "Commit to contribute",
     "image": "/images/github-contrib-notice.png",
     "date": "2016-02-25 09:48:45",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ],
@@ -259,8 +259,8 @@
   "ffconf-2016-news": {
     "title": "ffconf 2016 news",
     "date": "2016-03-02 19:49:25",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "business"
     ],
@@ -279,8 +279,8 @@
   "chrome-remote-debugging-over-wifi": {
     "title": "Chrome remote debugging over wifi",
     "date": "2016-03-26 15:26:29",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ],
@@ -291,6 +291,26 @@
     "title": "A debugging thought process",
     "date": "2016-04-02 08:39:23",
     "modified": "2016-04-02 13:24:18",
+    "complete": true,
+    "inprogress": false,
+    "tags": [
+      "web"
+    ]
+  },
+  "my-decade-of-blogging": {
+    "title": "my decade of blogging",
+    "date": "2016-04-03 12:53:49",
+    "modified": "2016-04-03 12:53:49",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "personal"
+    ]
+  },
+  "analytics-for-all-time-per-post": {
+    "title": "Analytics for all time per post",
+    "date": "2016-04-04 11:38:28",
+    "modified": "2016-04-04 11:38:28",
     "complete": false,
     "inprogress": true,
     "tags": [

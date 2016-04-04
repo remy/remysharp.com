@@ -1,8 +1,8 @@
 # A debugging thought process
 
-I'm the type of developer that likes little problems. The other day [Una Kravets](https://twitter.com/una) posted a call for help on twitter (with a rather compelling reward), and I had a few minutes before meeting so I set to work.
+I'm the type of developer that enjoys little problems. The other day [Una Kravets](https://twitter.com/una) posted a call for help on twitter (with a rather compelling reward), and I had a few minutes before meeting so I set to work.
 
-Although this process comes naturally to me, I thought it would be useful to others so I've dropped my thought process into this post.
+Although this process comes naturally to me, I thought it would be useful to write down my thought process and approach into this post.
 
 <!--more-->
 
@@ -10,13 +10,13 @@ Although this process comes naturally to me, I thought it would be useful to oth
 
 ## Always replicate first
 
-Without being able to replicate the issue there's no game to be played. Una's tweet included the word *sometimes* which means that what ever I do, it will have to be repeated over and over. Even better if I can find the thing that's causing the slow load.
+Without being able to replicate the issue there's no way to know whether the problem is actually solved. Una's tweet included the word *sometimes* which means that what ever I do, it will have to be repeated over and over. Even better if I can find the thing that's causing the slow load.
 
 ## Things to check on "slow load"
 
-**Check in the browser.** Not just once, repeatedly (in the same tab), and repeat in private/incognito mode. This is more of a litmus test to see if you can repeat the issue at all.
+**Check in the browser.** Not just once, repeatedly (in the same tab, the way a normal user might keep hitting refresh), and repeat this in a private/incognito tab. This is more of a litmus test to see if you can repeat the issue at all.
 
-**Rule out network.** I'll move straight to use `curl` on the command line. I'll curl the full URL, and if that doesn't hang (or isn't particularly slow) then it (initially) rules out the server (though we've only confirm the HTML and network isn't the issue). Additional tools I would have looked at (had the request been slow) was `ping` and `traceroute` as indicators of where the issue could have been.
+**Rule out network.** I'll move straight to using `curl` on the command line. I'll curl the full URL, and if that doesn't hang (or isn't particularly slow) it (initially) rules out the server being the cause (though we've only confirm the HTML and network isn't the issue). Additional tools I would have looked at (had the request been slow) would be `ping` and `traceroute` as indicators of where the issue could have been.
 
 **Rule out the session on the network.** Even though curl might be quick, some systems might be using the user session to fork the logic. We've ruled out a cold start (with a simple `curl http://example.com`), but I'll also make the request in the browser, and in the network panel, right click and "copy as cURL". Take this command and run in the terminal.
 
