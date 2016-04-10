@@ -284,7 +284,7 @@
     "tags": [
       "web"
     ],
-    "modified": "2016-03-27 11:46:50"
+    "modified": "2016-04-10 19:31:31"
   },
   "my-decade-of-blogging": {
     "title": "my decade of blogging",
@@ -300,6 +300,16 @@
     "title": "Analytics for all time per post",
     "date": "2016-04-04 11:38:28",
     "modified": "2016-04-04 11:38:28",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "the-webapp-discovery-problem": {
+    "title": "The web app \"discovery problem\"",
+    "date": "2016-04-07 19:31:44",
+    "modified": "2016-04-10 21:11:48",
     "complete": false,
     "inprogress": true,
     "tags": [
