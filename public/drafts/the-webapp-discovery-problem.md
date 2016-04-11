@@ -12,7 +12,7 @@ In my mind, web app discovery breaks down into a few distinct groups:
 2. **Find**: That app sounds cool, I want to install it. ie. *being advertised to or word of mouth*
 3. **Get**: I want to find the app that goes with this specific thing. ie. *being told to visit "our URL to install our app"*
 
-**TL;DR** it's not a problem. In fact, native app stores are problematic and are limited. Native apps are *only* available via stores. Progressive web apps don't have the same restrictions. User engagement will be, and is better because there's fewer steps to installation. **Discoverability will be won by URLs (direct marketing) and curated app stores.**
+**TL;DR** it's not a problem. It's easy to think that native app stores are what we're comparing to, but they have their own problems and limitations. Native apps are *only* available via stores. Progressive web apps don't have the same restrictions. User engagement will be, and is better because there's fewer steps to installation. **Discoverability will be won by URLs (direct marketing) and curated app stores.**
 
 ## Browse apps
 
@@ -30,17 +30,23 @@ And equally from the Apple store:
 
 The choice is vast (and goes on). The reviews are fairly similar (though Apple showing the number of reviews is certainly useful), and if I'm honest, out of all the averagely good ones, I'll pick the one with the nicest icon, and hope for the best.
 
-The web doesn't have this "successful" model for searching for vast numbers of calculator apps (beyond Google or Yahoo). Though, the web does have web app stores, [Mozilla's marketplace](https://marketplace.firefox.com/) is once such example. The "problem" is that it's not ubiquitous. There is no single store for web apps.
+These app stores are only successful in the simple fact that users don't have any other choice in how they can find and install apps.
+
+The web does have web app stores already, [Mozilla's marketplace](https://marketplace.firefox.com/) is once such example. The "problem" is that it's not ubiquitous.
+
+There is no single store for web apps.
 
 Actually, this is huge: **There is no single store for web apps.** This means we can have carefully curated app stores that suit our needs perfectly.
 
 Web app stores with curated apps specifically for designers, or specifically for new parents, or specifically for kids under the age of 6, or specifically for cat lovers, or specifically for paid-for apps, or specifically free apps, or specifically by Google, or Microsoft, or Apple…the list goes on. The opportunities are limitless.
 
+None the less, apps that rely on installation via the browse method are always competing in an already extremely saturated market. I believe (though without any research to back up this claim), that marketing and word of mouth is what drives successful conversions to installation. That process isn't solved using the browse method, but specifically users knowing what they're looking for, using the find and get methods.
+
 ## Find & Get apps
 
 This is where the notion of discovery being a problem for progressive web apps just falls apart.
 
-I listen to the radio in the car. At least once a week I hear the radio station announce:
+For context, here's what we're dealing with with respect to native apps today. I listen to the radio in the car. At least once a week I hear the radio station announce:
 
 > Visit magic dot co dot uk to download the Magic app to your smartphone or tablet.
 

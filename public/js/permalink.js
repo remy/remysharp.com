@@ -46,9 +46,8 @@
   }
 
   function permalink(){
-    var root = document.getElementsByClassName('post-content')[0];
     var $ = function (s) {
-      return root.querySelectorAll(s);
+      return document.querySelectorAll('.post-content ' + s);
     };
 
     var anchor = document.createElement('a');
