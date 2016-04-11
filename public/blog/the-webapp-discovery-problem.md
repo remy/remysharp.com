@@ -22,11 +22,11 @@ Quoting from the article that prompted this blog post:
 
 This is true. However, the same is also true today with app stores. Here's the Google Play store searching for a calculator:
 
-![Play store calculation options: a plenty](/images/play-store-calc.jpg)
+![Play store calculation options: a plenty](https://remysharp.com/images/play-store-calc.jpg)
 
 And equally from the Apple store:
 
-![Apple store calculation options: a plenty](/images/apple-store-calc.jpg)
+![Apple store calculation options: a plenty](https://remysharp.com/images/apple-store-calc.jpg)
 
 The choice is vast (and goes on). The reviews are fairly similar (though Apple showing the number of reviews is certainly useful), and if I'm honest, out of all the averagely good ones, I'll pick the one with the nicest icon, and hope for the best.
 
@@ -61,7 +61,7 @@ The directions are clear: visit a URL to get their app (to listen to the radio s
 7. Sign in to the app (though thankfully Magic allowed me to skip this, IIRC Absolute Radio made it a horrible experience)
 8. Listen to music! Phew!
 
-![The install process from an app store](/images/install-app-process.jpg)
+![The install process from an app store](https://remysharp.com/images/install-app-process.jpg)
 
 Let's compare that to a progressive web app:
 
