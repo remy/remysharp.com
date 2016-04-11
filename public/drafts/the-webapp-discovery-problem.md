@@ -32,7 +32,7 @@ The choice is vast (and goes on). The reviews are fairly similar (though Apple s
 
 The web doesn't have this "successful" model for searching for vast numbers of calculator apps (beyond Google or Yahoo). Though, the web does have web app stores, [Mozilla's marketplace](https://marketplace.firefox.com/) is once such example. The "problem" is that it's not ubiquitous. There is no single store for web apps.
 
-This is huge. **There is no single store for web apps.** This means we can have carefully curated app stores that suit our needs perfectly.
+Actually, this is huge: **There is no single store for web apps.** This means we can have carefully curated app stores that suit our needs perfectly.
 
 Web app stores with curated apps specifically for designers, or specifically for new parents, or specifically for kids under the age of 6, or specifically for cat lovers, or specifically for paid-for apps, or specifically free apps, or specifically by Google, or Microsoft, or Apple…the list goes on. The opportunities are limitless.
 

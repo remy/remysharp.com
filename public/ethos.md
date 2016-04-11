@@ -8,7 +8,7 @@ It's far from definitive and not organised well, but it's a start to capture wha
 
 ## I'm sad
 
-![God damn, Southpark has some wonderful moments](/images/ethos/southpark-sad.jpg)
+![Southpark has some wonderful moments](/images/ethos/southpark-sad.jpg)
 
 [Via @codepo8](https://twitter.com/codepo8/status/621428413262393348) 16 July 2015
 
