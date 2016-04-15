@@ -14,7 +14,7 @@ I'd hear story after story of people missing out on tickets because our beautifu
 
 ![Venue](https://remysharp.com/images/ffconf-venue.jpg)
 
-Our venue has been the [immensely comfortable](https://twitter.com/prisca_eyedea/status/398744015539273728), century old working cinema: The Dukes of York. It adds a huge amount of personality and both Julie and I are extremely fond of it - as it's been a huge part of our journey.
+Our venue has been the [immensely comfortable](https://twitter.com/prisca_eyedea/status/398744015539273728), century old working cinema: The Duke of York's. It adds a huge amount of personality and both Julie and I are extremely fond of it - as it's been a huge part of our journey.
 
 However, it does only house 278 of you, and we do sell out too fast. **We want the content from ffconf to be available to more people** (we also publish all the [videos freely](https://www.youtube.com/playlist?list=PLXmT1r4krsTo5KtThq4dATD_ctsV8mdJQ)).
 
