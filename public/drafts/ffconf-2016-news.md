@@ -1,6 +1,6 @@
 # ffconf 2016 news
 
-It's March and Julie and I have started long talks about November's ffconf already! So it's time to share our plans with you, since it affects you directly!
+During March and Julie and I started long talks about November's ffconf (already)! So it's time to share our plans with you, since it affects you directly!
 
 <!--more-->
 
@@ -8,15 +8,15 @@ It's March and Julie and I have started long talks about November's ffconf alrea
 
 Ever since event zero in 2009, the feedback has been absolutely amazing and overwhelmingly positive. In the last 3 years we've sold out in 10 minutes.
 
-You would ask us each year: do you plan to grow?!
+You ask us each year: do you plan to grow?!
 
 I'd hear story after story of people missing out on tickets because our beautiful venue houses 278 people. So, now, it's time for a change.
 
-![Venue](/images/ffconf-venue.jpg)
+![Venue](https://remysharp.com/images/ffconf-venue.jpg)
 
 Our venue has been the [immensely comfortable](https://twitter.com/prisca_eyedea/status/398744015539273728), century old working cinema: The Dukes of York. It adds a huge amount of personality and both Julie and I are extremely fond of it - as it's been a huge part of our journey.
 
-However, it does only house 278 of you, and we do sell out **too fast**. We want the content from ffconf to be available to more people (though we do also publish all the [videos freely](https://www.youtube.com/playlist?list=PLXmT1r4krsTo5KtThq4dATD_ctsV8mdJQ)).
+However, it does only house 278 of you, and we do sell out too fast. **We want the content from ffconf to be available to more people** (we also publish all the [videos freely](https://www.youtube.com/playlist?list=PLXmT1r4krsTo5KtThq4dATD_ctsV8mdJQ)).
 
 Here's the deal: we're not moving. We're going to do **two ffconfs**. The same event, repeated. Just like the theatre 🎭
 
@@ -44,4 +44,4 @@ Follow the [@ffconf](https://twitter.com/ffconf) account for the latest announce
 
 With all our 💜 The Sharps
 
-![The Sharps](/images/sharp-family-ffconf.jpg)
+![The Sharps](https://remysharp.com/images/sharp-family-ffconf.jpg)
