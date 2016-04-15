@@ -1,6 +1,6 @@
 # ffconf 2016 news
 
-During March and Julie and I started long talks about November's ffconf (already)! So it's time to share our plans with you, since it affects you directly!
+During March, Julie and I started long talks about November's ffconf (already)! So it's time to share our plans with you, since it affects you directly!
 
 <!--more-->
 
