@@ -8,11 +8,11 @@ Regardless of whether this post is of interest to you: thanks for stopping by an
 
 ## In the beginning
 
-Although I retrospectively added a single older post, my first post on remysharp.com was [Flickr geo tags](/2006/09/01/flickr-geo-tags). It's honestly nothing to write home about, and the following posts would be fairly mundane (comparatively), but that's okay.
+Although I retrospectively added a single older post, my first post on this blog was [Flickr geo tags](/2006/09/01/flickr-geo-tags). It's honestly nothing to write home about, and the following posts would be fairly mundane (comparatively), but that's okay.
 
 I wanted to start a blog for a few reasons, but primarily as an online memory of things that would trip me up. Then knowing that I'd written about a problem before, I could just "google myself" to find the answer. I also wanted to share my experience of running a new business, using my blog as a diary.
 
-Since I didn't have many of the problems, I also wanted my blog to reflect me a bit too, so I included film reviews (at the time, Julie and I were visiting the cinema twice a week).
+Since I didn't have many of these "Google-able" problems, I also wanted my blog to reflect a bit of me too, so I included film reviews (at the time, Julie and I were visiting the cinema twice a week).
 
 One of the unexpected (but in retrospect, obvious) side effect is that my communication skills have improved and so has my spelling. I always found English skills hard as a kid (everyone close to me is pretty sure that I have some degree of dyslexia), but as I practise writing and spelling more and more each month and each year, it's become much easier.
 
@@ -22,7 +22,9 @@ My blog started out as a WordPress blog (and actually got hacked a number of tim
 
 ![My blog in 2007](/images/blog-200702-cropped.png)
 
+## The best of my blog
 
+I've run some analysis from the stats on Google Analytics (which I think I had from day 1),
 
 
 

@@ -12,7 +12,7 @@ It was mid-July and everything felt like it was shrouded in a heavy fog. I felt 
 
 Losing Tia to stillbirth is hard in a way that people around us don't see her and quite often don't really know what stillbirth means. They don't know that she existed, and those that do aren't sure whether or not to mention her name.
 
-I feel like I have to explain that she died some point during labour, like I need to validate her existence in some way. That's no other people, that's *me*. Some people don't understand why I'm explaining. Most people don't understand what they're supposed to say. I don't know what *I should say* at times. "I'm sorry for you loss" says a lot. Mostly it says "I'm lost for words, but I know you're in pain and I see you.".
+I feel like I have to explain that she died some point during labour, like I need to validate her existence in some way. That's not other people, that's *me*. Some people don't understand why I'm explaining. Most people don't understand what they're supposed to say. I don't know what *I should say* at times. "I'm sorry for you loss" says a lot. Mostly it says "I'm lost for words, but I know you're in pain and I see you.".
 
 Words seem simple when there's no tragedy behind it. The weeks and  after Tia was born, my wife and I would constantly exchange "are you okay?". It wasn't a question. It was a way of saying *Hey*. We were not okay. Our baby was dead. It would be a long time before we would be *okay*.
 
@@ -30,7 +30,7 @@ My view on the world changed entirely after Tia was born. When I'm in a flower s
 
 ---
 
-I hate to admit it, but every one of my friends who are pregnant: I'm scared for them. I don't want anyone going through what we did, and yet hundreds upon hundreds more will every year. It's a roll of the dice and nothing more. Some wont survive. Some will. We think we can control our lives and protect those around us. We can't. This breaks my heart and scares me *only* because it happened. The unthinkable happened. It happens. Unfairly. If you and your partner are pregnant, please take a look at [count the kicks](http://www.countthekicks.org.uk/).
+I hate to admit it, but every one of my friends who are pregnant: I'm scared for them. I don't want anyone going through what we did, and yet hundreds upon hundreds more will every year. It's a roll of the dice and nothing more. Some will survive. Some won't. We think we can control our lives and protect those around us. We can't. This breaks my heart and scares me *only* because it happened. The unthinkable happened. It happens. Unfairly. If you and your partner are pregnant, please take a look at [count the kicks](http://www.countthekicks.org.uk/).
 
 ---
 
