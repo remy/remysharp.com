@@ -2,7 +2,7 @@
 
 <!--more-->
 
-![Seren, 2](/images/seren-two.jpg)
+![Seren, 2](https://remysharp.com/images/seren-two.jpg)
 
 Today our littlest turns two. Seren has such a huge personality, leaping, bounding, tumbling, and always chasing after her brother!
 
