@@ -316,5 +316,15 @@
       "web",
       "personal"
     ]
+  },
+  "vatmoss-rules": {
+    "title": "VATMOSS rules",
+    "date": "2016-04-19 18:19:28",
+    "modified": "2016-04-19 18:19:28",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "business"
+    ]
   }
 }
