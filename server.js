@@ -233,7 +233,7 @@ route.all(/^\/([a-z0-9\-]+)(\/?)$/i, function (req, res, next) {
   });
 
   if (match.length) {
-    var matched = match.slice(-1).pop(); // use the latest
+    var matched = match.shift(); // use the latest
     var post = blogs[matched];
     var url = moment(post.date).format('/YYYY/MM/DD/') + matched;
     redirect(res, url);

@@ -3949,5 +3949,14 @@
       "personal"
     ],
     "published": true
+  },
+  "vatmoss-rules": {
+    "title": "VATMOSS rules",
+    "date": "2016-04-21 15:37:29",
+    "modified": "2016-04-19 18:19:28",
+    "tags": [
+      "business"
+    ],
+    "published": true
   }
 }
