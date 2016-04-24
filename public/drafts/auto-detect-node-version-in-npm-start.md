@@ -8,7 +8,7 @@ I posed myself the question: why isn't `engines.node` used to load the right ver
 
 "Most" means not *all* the time. So, some of the time I see this:
 
-![Node 5 is required](/images/node-5-required.png)
+![node crashes because node 5 is required for this particular project](/images/node-5-required.png)
 
 Wouldn't it be cool if when I ran `npm start` it detected the version of node required, and it switched to using that?
 
@@ -80,6 +80,10 @@ PATH=$HOME/bin:$PATH
 
 Now, when I run `npm start`:
 
-![Switching to node 5](/images/switching-to-node-5.png)
+![npm start now correctly runs node 5](/images/switching-to-node-5.png)
 
-One caveat: switching node version using `nvm use X` resets the `$PATH` so this doesn't work anymore. Maybe someone can solve that in the comments 😄
+## 🐱 There's more than one way to skin a cat
+
+This definitely feels hacky to me, and a little brittle—in particular, if switch node versions using `nvm use …` it resets the `$PATH` so this trick doesn't work anymore.
+
+I expect use of the `engine` property will be formalised for developement one day, and maybe you can comment as to alternative or better solutions, but for now: it works 😄
