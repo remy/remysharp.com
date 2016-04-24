@@ -341,8 +341,8 @@
     "title": "Smarter CLI gists",
     "date": "2016-04-24 19:52:44",
     "modified": "2016-04-24 19:52:44",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]

@@ -2,6 +2,8 @@
 
 I posed myself the question: why isn't `engines.node` used to load the right version of node when I run `npm start`? It's great that this value is used when I'm deploying to a service like Heroku, but I also want to use it locally.
 
+<!--more-->
+
 ## 👋 The why
 
 *Most* of the time, the version of node doesn't really matter to my code. The code I write often has to work on 0.10, 4.x and 5.x because either I'm writing CLI tools, or don't have many version-dependant code.
