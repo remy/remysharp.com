@@ -829,9 +829,18 @@ body > footer {
 }
 
 #drafts-index-page {
-  .post-content li small {
-    margin-left: 10px;
+  .post-content {
+    ul {
+      padding: 0;
+    }
+
+    li {
+      small, a {
+        margin-right: 10px;
+      }
+    }
   }
+
   .inprogress {
     color: lighten(orange, 10%);
   }
@@ -865,7 +874,7 @@ body > footer {
   .post-content {
     h2 {
       display: inline-block;
-      margin-top: 0;
+      margin-top: 20px;
     }
 
     a.anchor {
