@@ -25,7 +25,7 @@ Here are the topics I've been thinking about since the last ffconf. Note that th
 
 ### Process, Ideas
 
-- The army's of one: the developer that does it all (what motivates you day-to-day, what inspires you, any war stories from the web)
+- The army of one: the developer that does it all (what motivates you day-to-day, what inspires you, any war stories from the web)
 - The (social) importance of progressive web apps
 - Value of emoji and communication (and any impact on social coding)
 
