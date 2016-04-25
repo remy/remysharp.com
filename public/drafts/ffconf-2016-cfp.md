@@ -6,9 +6,9 @@ This post includes both what I want to hear about (to give you an idea whether s
 
 <!--more-->
 
-You can also follow the [@ffconf](https://twitter.com/ffconf) twitter account for the latest announcements.
+You can also follow the [@ffconf](https://twitter.com/ffconf) twitter account for the latest announcements to find out how to join in on this fun:
 
-![ffconf 2016 site](/images/ffconf-2016.gif)
+![ffconf 2015 delegates cheering](https://remysharp.com/images/ffconf-2016.jpg)
 
 
 ## Topics I'm interested in hearing about
@@ -49,17 +49,17 @@ Topics that don't work, unless they're genuinely going to change the World, then
 
 Send us the title of your talk, an outline of the talk and any extra information you want us to know about the idea: events@leftlogic.com.
 
-**It takes me a long time to process and decide on CFPs, so whilst there's no 8 sessions up on the site, it means your talk is still up for consideration. I will respond to everyone with a yay or nay eventually.** If you want to come to ffconf, regardless of whether your CFP is selected, please buy a ticket and if your talk is selected, the ticket will be refunded and returns to the public pool of tickets.
+**It takes me a long time to process and decide on CFPs, so whilst there's not 8 sessions up on the site, it means your talk is still up for consideration. I will respond to everyone with a yay or nay eventually.** If you want to come to ffconf, regardless of whether your CFP is selected, please buy a ticket and if your talk is selected, the ticket will be refunded and returns to the public pool of tickets.
 
 ## Our promise to you
 
 All our speakers are treated the same. We will, as always:
 
-- Pay for your travel. If you're flying long haul, we'll upgrade you to premium class (or whatever the name is for "above economy")
+- Pay and organise your travel (or you're welcome to organise yourself if you prefer). If you're flying long haul, we'll upgrade you to premium class (or whatever the name is for "above economy")
 - Put you up in our "speaker hotel". It's not that cool, but it's right in town and two minutes walk from our venue. We're also open to offering the hotel stay. If you want an extra day or two here and there, then that's cool too (obviously if everyone does this, it breaks our bank, but so far it's worked)
 - Arrange your travel and help you with anything you need ahead of the event
 - We can, if you need or want it, provide you with a mifi preloaded with data
-- All your food and drinks provided for you during the day before and the day of the conference (don't expect to buy a drink at the after party)
+- We'll endeavour to feed and water you as much as we can (including a speaker meal and lunch both conference days and if you're partial to a tipple, we'll pay for all these too)
 - 40 minute talk, generally we don't do Q&A and it's best to err on the side of "there is no wifi"
 - £1,000 honorarium (since our event is running twice, you're being paid two £500 honorariums)
 - A free pass to the next ffconf, and for evermore part of our growing and much loved speaker alumni
