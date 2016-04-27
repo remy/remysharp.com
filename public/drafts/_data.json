@@ -279,7 +279,7 @@
   "my-decade-of-blogging": {
     "title": "my decade of blogging",
     "date": "2016-04-03 12:53:49",
-    "modified": "2016-04-17 08:25:16",
+    "modified": "2016-04-17 12:40:39",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -320,7 +320,7 @@
   "tr-tricks": {
     "title": "tr tricks",
     "date": "2016-04-22 08:56:00",
-    "modified": "2016-04-22 08:56:00",
+    "modified": "2016-04-22 09:01:05",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -330,7 +330,7 @@
   "auto-detect-node-version-in-npm-start": {
     "title": "Auto-detect node version in npm start",
     "date": "2016-04-24 13:12:17",
-    "modified": "2016-04-24 13:12:17",
+    "modified": "2016-04-24 22:09:22",
     "complete": true,
     "inprogress": false,
     "tags": [

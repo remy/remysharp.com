@@ -26,6 +26,18 @@ ELSE
   DO_NOT_ADD_VAT
 ```
 
+## Data
+
+List of EU countries and ISO codes (from [GOV.UK](https://www.gov.uk/eu-eea)):
+
+Austria `AT`, Belgium `BE`, Bulgaria `BG`, Croatia `HR`, Republic of Cyprus `CY`, Czech Republic `CZ`, Denmark `DK`, Estonia `EE`, Finland `FI`, France `FR`, Germany `DE`, Greece `GR`, Hungary `HU`, Ireland `IE`, Italy `IT`, Latvia `LV`, Lithuania `LT`, Luxembourg `LU`, Malta `MT`, Netherlands `NL`, Poland `PL`, Portugal `PT`, Romania `RO`, Slovakia `SK`, Slovenia `SI`, Spain `ES`, Sweden `SE` and the UK `GB`.
+
+```js
+var EU = ['AT', 'BE', 'BG', 'CY', 'CZ', 'DE', 'DK', 'EE', 'EL', 'ES', 'FI', 'FR', 'GB', 'HR', 'HU', 'IE', 'IT', 'LT', 'LU', 'LV', 'MT', 'NL', 'PL', 'PT', 'RO', 'SE', 'SI', 'SK'];
+```
+
 Where to get latest EU VAT rates: http://jsonvat.com
+
+---
 
 Usual caveat's apply: *this not consistute as financial advice, if you copy and paste this and it's wrong, you're responsible!*
