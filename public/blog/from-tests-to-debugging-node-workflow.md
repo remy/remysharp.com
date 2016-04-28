@@ -38,7 +38,9 @@ Quite often when I test a project from the CLI the local version of tap could be
 
 ```bash
 tap () {
-  local TAP="tap"
+  # find the real path to tap. if we had a decent version of which, 
+  # on the mac, we don't, we could use `which --skip-functions tap`.
+  local TAP=$(type -p tap | awk '{ print $3 }')
   if [ -e $PWD/node_modules/.bin/tap ]
   then
     local TAP="$PWD/node_modules/.bin/tap"
