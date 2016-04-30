@@ -156,13 +156,13 @@ The final set up and configuration looks like this:
   "coverage": "tap --cov --coverage-report=lcov test/*.test.js",
   "tapone": "COVERALLS_REPO_TOKEN=0 tap --nyc-arg=--require --nyc-arg=babel-polyfill --timeout=60 --cov --coverage-report=text-summary",
   "test": "npm run tapone test/*.test.js",
-  "test:babel": "babel test/*.test.js -d . && npm test",
+  "test:babel": "babel test/*.test.js -d . && npm test"
 },
 "devDependencies": {
   "babel-cli": "^6.7.7",
   "babel-polyfill": "^6.7.4",
   "babel-preset-es2015": "^6.6.0",
-  "babel-preset-stage-3": "^6.5.0"
+  "babel-preset-stage-3": "^6.5.0",
   "tap": "^5.7.1"
 }
 ```
