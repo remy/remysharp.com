@@ -12,7 +12,7 @@ You ask us each year: do you plan to grow?!
 
 I'd hear story after story of people missing out on tickets because our beautiful venue houses 278 people. So, now, it's time for a change.
 
-![Venue](https://remysharp.com/images/ffconf-venue.jpg)
+![Venue](/images/ffconf-venue.jpg)
 
 Our venue has been the [immensely comfortable](https://twitter.com/prisca_eyedea/status/398744015539273728), century old working cinema: The Duke of York's. It adds a huge amount of personality and both Julie and I are extremely fond of it - as it's been a huge part of our journey.
 

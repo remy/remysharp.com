@@ -111,7 +111,7 @@ var wizard = proxyquire('../cli/commands/protect/wizard', {
 });
 ```
 
-Note that with proxyquire you can only take over modules *one* level deep (so I can't nest a proxyquire inside of the `inquirer` property in the above example). This is a bit of a limitation, but you can work around it by loading in all your modules ahead of time (i.e. use proxyquire to overload a package that inquirer might use).
+This package is rather powerful, and originally I thought that you could only proxyquire one level deep, but this isn't so, but it can [get a bit, inception…y](https://github.com/Snyk/snyk-internal/blob/71c2ebc16fc72b0af7fe2bbc81b43471d725a3e9/test/wizard-process-answers.test.js#L66-L99)!
 
 ### Sinon
 
@@ -194,6 +194,8 @@ This is all compressed down to a single line, and put inside the `test` command 
 This feels utterly clunky, but I can't see any other way to do a total reset. It might be because I have to write insane [tests for things like nodemon](https://travis-ci.org/remy/nodemon/jobs/71828422). The main downside of this (that I can see) is that your total count is not totalled up at the end and **importantly** if you have test coverage, it won't work - since the test coverage is running once for each file.
 
 **Be warned:** do not use this if you don't have to!
+
+<div class="update">**Update April 2016**: since writing this post, I've moved to using [tap](https://www.npmjs.com/package/tap) which spawns individual processes for each test file, so I don't need this approach at all now.</div>
 
 ## Watching
 
