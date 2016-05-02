@@ -3967,5 +3967,15 @@
       "business"
     ],
     "published": true
+  },
+  "faster-tests-for-multi-node-code-with-es6-and-babel": {
+    "title": "Faster tests for multi-node code with ES6 and babel",
+    "date": "2016-05-02 16:00:59",
+    "image": "/images/slow-babel-test.gif",
+    "modified": "2016-04-30 14:07:26",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }

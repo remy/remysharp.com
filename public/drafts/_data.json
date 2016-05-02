@@ -356,16 +356,5 @@
     "tags": [
       "personal"
     ]
-  },
-  "faster-tests-for-multi-node-code-with-es6-and-babel": {
-    "title": "Faster tests for multi-node code with ES6 and babel",
-    "date": "2016-04-30 11:46:45",
-    "image": "/images/slow-babel-test.gif",
-    "modified": "2016-04-30 14:07:26",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
   }
 }
