@@ -249,6 +249,14 @@ table {
   border-collapse: collapse;
   font-size: 90%;
   width: 100%;
+
+  thead {
+    background: rgb(227, 225, 225);
+  }
+
+  tbody tr:nth-child(2n+2) {
+    background: #F5F5F5;
+  }
 }
 
 td, td p {
@@ -265,8 +273,8 @@ th {
   font-weight: 700;
 }
 
-td {
-  padding: 10px 0;
+td, th {
+  padding: 10px 5px;
   line-height: 1.4;
 }
 
@@ -1008,3 +1016,5 @@ img.half {
   margin: 0 auto;
   display: block;
 }
+
+// custom page tweaks

@@ -346,15 +346,5 @@
     "tags": [
       "web"
     ]
-  },
-  "a-nice-thing-happened": {
-    "title": "A nice thing happened",
-    "date": "2016-04-26 10:22:02",
-    "modified": "2016-04-28 18:19:28",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "personal"
-    ]
   }
 }

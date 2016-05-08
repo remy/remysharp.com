@@ -3977,5 +3977,14 @@
       "web"
     ],
     "published": true
+  },
+  "a-nice-thing-happened": {
+    "title": "A nice thing happened",
+    "date": "2016-05-08 13:19:16",
+    "modified": "2016-04-28 18:19:28",
+    "tags": [
+      "personal"
+    ],
+    "published": true
   }
 }

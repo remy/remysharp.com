@@ -18,12 +18,12 @@ Wouldn't it be cool if when I ran `npm start` it detected the version of node re
 
 I'm using [nvm](https://github.com/creationix/nvm) (and you might be using a different version manager). nvm will be used to run the code in the right version.
 
-The `engine` property in the `package.json` file will introduce an environement variable called `$npm_package_engines_node` when `npm start` is used:
+The `engines` property in the `package.json` file will introduce an environement variable called `$npm_package_engines_node` when `npm start` is used:
 
 ```json
 {
-  "engine": {
-    "node": 5
+  "engines": {
+    "node": 6
   },
   "scripts": {
     "start": "node server.js",
@@ -32,7 +32,7 @@ The `engine` property in the `package.json` file will introduce an environement 
 }
 ```
 
-As an example, I've added a script to double check run with `npm run env` which will yeild: `5`.
+As an example, I've added a script to double check run with `npm run env` which will yeild: `6`.
 
 If the `$npm_package_engines_node` value *isn't* present, then the default version of node will run.
 
@@ -43,9 +43,13 @@ I'm going to hack how node is run. I'm creating `$HOME/bin/node` with `chmod 755
 ```bash
 #!/bin/sh
 
+# find the next best version of node (i.e. not this script)
+_NODE=$(which -a node | sed -n '2p')
+
 # if the value of npm_package_engines_node is empty, then
 if [ -z "$npm_package_engines_node" ]; then
-  $_NODE $@
+  # if there's nothing being piped in, then run node normally
+  exec $_NODE $@
 else
   # else: load the nvm code, but don't execute it
   source $HOME/.nvm/nvm.sh --no-use
@@ -76,16 +80,15 @@ This path gets added during nvm being loaded. So, our custom version of `node` n
 ```bash
 # contents of `cat ~/.zshenv`
 source $HOME/.nvm/nvm.sh
-export _NODE=`which node` # load the real one
 PATH=$HOME/bin:$PATH
 ```
 
 Now, when I run `npm start`:
 
-![npm start now correctly runs node 5](/images/switching-to-node-5.png)
+![npm start now correctly runs node 6](/images/switching-to-node-5.png)
 
 ## 🐱 There's more than one way to skin a cat
 
 This definitely feels hacky to me, and a little brittle—in particular, if switch node versions using `nvm use …` it resets the `$PATH` so this trick doesn't work anymore.
 
-I expect use of the `engine` property will be formalised for developement one day, and maybe you can comment as to alternative or better solutions, but for now: it works 😄
+I expect use of the `engines` property will be formalised for developement one day, and maybe you can comment as to alternative or better solutions, but for now: it works 😄
