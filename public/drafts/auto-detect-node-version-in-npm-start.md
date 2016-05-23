@@ -6,19 +6,21 @@ I posed myself the question: why isn't `engines.node` used to load the right ver
 
 ## 👋 The why
 
-*Most* of the time, the version of node doesn't really matter to my code. The code I write often has to work on 0.10, 4.x and 5.x because either I'm writing CLI tools, or don't have many version-dependant code.
+*Most* of the time, the version of node doesn't really matter to my code. The code I write often has to work on 0.10, 4.x and 6.x because either I'm writing CLI tools, or don't have many version-dependant code.
 
 "Most" means not *all* the time. So, some of the time I see this:
 
-![node crashes because node 5 is required for this particular project](/images/node-5-required.png)
+![node crashes because node 6 is required for this particular project](/images/node-5-required.png)
 
-Wouldn't it be cool if when I ran `npm start` it detected the version of node required, and it switched to using that?
+This command was crashing because the modules were built with a different version of node than the version that just ran it. You can see the same effect trying to run ES6 with node 0.10 though 😁
+
+Wouldn't it be cool if, when I ran `npm start` it detected the version of node required, and it switched to using that?
 
 ## 👌 The concept
 
 I'm using [nvm](https://github.com/creationix/nvm) (and you might be using a different version manager). nvm will be used to run the code in the right version.
 
-The `engines` property in the `package.json` file will introduce an environement variable called `$npm_package_engines_node` when `npm start` is used:
+The `engines` property in the `package.json` file will be introduced via an environement variable called `$npm_package_engines_node` when `npm start` is used:
 
 ```json
 {
@@ -28,13 +30,14 @@ The `engines` property in the `package.json` file will introduce an environement
   "scripts": {
     "start": "node server.js",
     "env": "echo $npm_package_engines_node"
+    "#": "run `npm run env` to this in action",
   }
 }
 ```
 
 As an example, I've added a script to double check run with `npm run env` which will yeild: `6`.
 
-If the `$npm_package_engines_node` value *isn't* present, then the default version of node will run.
+The idea is that if the `$npm_package_engines_node` value *isn't* present, then the default system version of node will run.
 
 ## 👊 The implementation
 
@@ -43,13 +46,12 @@ I'm going to hack how node is run. I'm creating `$HOME/bin/node` with `chmod 755
 ```bash
 #!/bin/sh
 
-# find the next best version of node (i.e. not this script)
-_NODE=$(which -a node | sed -n '2p')
-
 # if the value of npm_package_engines_node is empty, then
 if [ -z "$npm_package_engines_node" ]; then
-  # if there's nothing being piped in, then run node normally
-  exec $_NODE $@
+  # find the next best version of node (i.e. not this script)
+  NODE=$(which -a node | sed -n '2p')
+  # use exec to slurp up STDIN correctly
+  exec $NODE $@
 else
   # else: load the nvm code, but don't execute it
   source $HOME/.nvm/nvm.sh --no-use
@@ -58,11 +60,15 @@ else
 fi
 ```
 
-The `$@` represents all the arguments passed to my script.
+Note that the `$@` represents all the arguments passed to my script.
 
-To get this to work though, I have to mess around with my paths because I use nvm. For the keen eyed reader you'll also notice I'm using `$_NODE`. This value is set *right* after nvm is loaded in my shell ([I use zsh](https://remysharp.com/2013/07/25/my-terminal-setup)).
+To get this to work correctly, my new version of `node` will be the highest priority in the path (which I'll explain how in a moment).
 
-The way nvm works is that it sets the path to node above your full path stack, so it'll typically look (something) like this:
+Then to find the *real* path to `node`, I use `which -a node` which shows all the paths to `node`, and I take the second line and use it as the executable. This should be the system version of `node`.
+
+If the `engines` property is detected, then I load load up nvm (using a command I found by slelunking the source code), and then execute the request using the desired version of node (though do check the [caveats](#caveats)).
+
+I'm using nvm, so my path typically looks like this, the system version of node made available at the top of the path:
 
 ```text
 /Users/remy/.nvm/versions/node/v4.2.4/bin
@@ -72,10 +78,10 @@ The way nvm works is that it sets the path to node above your full path stack, s
 /usr/sbin
 /sbin
 /usr/local/git/bin
-...
+# ...
 ```
 
-This path gets added during nvm being loaded. So, our custom version of `node` needs to be accessible *above* nvm's version. When I load nvm (in my `.zshenv`), I capture the original location of the node executable in `_NODE` and I'll prepend `$HOME/bin` to the path:
+This path gets added during nvm being loaded. So, our custom version of `node` needs to be accessible *above* nvm's version. When I load nvm (in my `.zshenv` - so that tools like Sublime see node correctly), I capture the original location of the node executable in `_NODE` and I'll prepend `$HOME/bin` to the path:
 
 ```bash
 # contents of `cat ~/.zshenv`
@@ -87,8 +93,16 @@ Now, when I run `npm start`:
 
 ![npm start now correctly runs node 6](/images/switching-to-node-5.png)
 
+## Caveats
+
+…as usual 😳
+
+Most importantly, this technique does not work at all if the `engines` is a range (and will probably blow things up if nvm doesn't have the version requested). I did write some simple code that found the matching installed version of node for a semver range, but the time to execute the semver calc on all versions of node installed outweighed the benefit.
+
+Also (yes, *also*), if I run `nvm use X` to switch node version, nvm will put the path to node *above* our bespoke version of node, so this trick doesn't work in the current shell session anymore.
+
 ## 🐱 There's more than one way to skin a cat
 
-This definitely feels hacky to me, and a little brittle—in particular, if switch node versions using `nvm use …` it resets the `$PATH` so this trick doesn't work anymore.
+This definitely feels hacky to me, and a little brittle—see earlier caveats.
 
 I expect use of the `engines` property will be formalised for developement one day, and maybe you can comment as to alternative or better solutions, but for now: it works 😄

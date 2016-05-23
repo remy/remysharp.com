@@ -50,7 +50,7 @@ git tag -d v$npm_package_version &&
 git tag -a v$npm_package_version -m "chore: release $npm_package_version"
 ```
 
-Originally this post was going to stop here. What on earth do you do? How do other developers get around this issue, if at all?
+What a total mess. Originally this post was going to stop here. What on earth do you do? How do other developers get around this issue, if at all?
 
 But then thanks to [Stephan Bönnemann](https://github.com/boennemann) (the Author), Semantic Release found its way into my development life ❤
 
@@ -93,7 +93,7 @@ Good question (if I do say so myself). It depends entirely on your release workf
 
 If you're commuting directly into master and pushing every individual commit to GitHub, then yes, you'll get a release for every fix and feature.
 
-However, as soon as you stop pushing every commit, semantic release will bundle together all your commits since the last release, and calculate the correct version change.
+However, as soon as you stop pushing every commit, semantic release will bundle together all your commits since the last release, and calculate the correct version change. You can see this in [some of my inliner releases](https://github.com/remy/inliner/releases/tag/v1.9.0).
 
 This is then amplified when you're working off a `develop` (for instance) branch and merging a group of changes at once (the type of GitFlow workflow).
 
@@ -104,6 +104,8 @@ It's also worth remembering that by default semantic release is only running on 
 One question I got stuck on very early on was being able to echo out the version number (since I write a lot of CLI tools). I would rely on the `package.json` to hold the version, and with a semantic release set up, you *don't* have a version property in the package.
 
 So, as it turns out, this isn't an issue at all. It *only* affects me during development. Once the users of my CLI tool have installed, they have the copy that *does* have the version property (as semantic release adds it right before the `npm publish` step).
+
+I've worked around this problem (that only affects the development copy) using my own [version promise code](https://github.com/remy/clite/blob/master/lib/version.js) which I use in a number of CLI tools now.
 
 ## Other concerns
 
