@@ -1,0 +1,6 @@
+{
+  "ignore": ["www", "public"],
+  "env": {
+    "BONSAI_URL": "http://localhost:9200/"
+  }
+}

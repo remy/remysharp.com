@@ -39,7 +39,7 @@ navigator.getBattery()
 
 [Demo](https://jsbin.com/qetavi/1/edit?js,console)
 
-### Camera
+### Camera 
 
 ```
 <input type="file" accept="image/*;capture=camera">
@@ -76,7 +76,7 @@ reader.readAsDataURL(this.files[0]);
 function upload(blobOrFile) {
   var xhr = new XMLHttpRequest();
   xhr.open('POST', 'https://httpbin.org/post', true);
-  xhr.onload = e => {
+  xhr.onload = e => { 
     alert('Fully uploaded');
   };
 
@@ -108,8 +108,8 @@ function done(stream) {
 }
 
 // webkit specific (should detect, I've skipped for demo)
-navigator.webkitGetUserMedia({
-  video: true
+navigator.webkitGetUserMedia({ 
+  video: true 
 }, done, console.error);
 ```
 
@@ -160,9 +160,9 @@ Notes: I've removed `InAppBrowser` and `Whitelist` as they're PhoneGap specific 
 
 ## Many more APIs
 
-There are many many more interesting and exciting APIs in browsers today, including `navigator.sendBeacon()` (for analytics after your tab is closed), Streams, bluetooth and Physical Web.
+There are many many more interesting and exciting APIs in browsers today, including `navigator.sendBeacon()` (for analytics after your tab is closed), Streams, bluetooth and Physical Web. 
 
-I'll admit, I've shoehorned this in, but I recently saw a physical web demo that combines beautifully with bluetooth discover and control.
+I'll admit, I've shoehorned this in, but I recently saw a physical web demo that combines beautifully with bluetooth discover and control. 
 
 This individual is interacting with a bluetooth device without having to jump into any settings. The beacon discovery is landing directly in Chrome (he’s using a separate app), and bluetooth is currently behind flags, but it shows how frictionless the process was to start using this new toy:
 
@@ -186,7 +186,7 @@ Over the years since 2009, the web's native support for APIs that PhoneGap provi
 
 In my game of Q&A bingo, *"what about Apple?"* is always on my card. On one hand, I hate that Apple doesn't pull up to the table and discuss their intentions and how they will support developers.
 
-Even getting the hint of interest from Apple is a process of dumper-diving the mailing lists scanning for the smallest hint of interest.
+Even getting the hint of interest from Apple is a process of dumper-diving the mailing lists scanning for the smallest hint of interest. 
 
 Apple also won't allow any other browsers into their platform, and [this *really* annoys me](https://adactio.com/journal/5787), as such so Chrome is just a wrapped view on WebKitView (the Safari render engine). So all the new technology that lands in Chrome or Firefox does not per-se land in iOS. iPhone users have to wait for Apple and Safari to get involved.
 
@@ -257,7 +257,7 @@ What's changing **right now** is that Progressive Web Apps (PWA) are taking over
 
 I've heard "app stores" being cited as a reason to use native. One story goes: the CEO wants their company present in an app store. They want adverts, telling listeners to go to their homepage, then download their app from the Apple or Google store.
 
-It's well known that Apple takes a reasonably significant cut of sale profits (I'm not familiar enough with the other stores to know the status).
+It's well known that Apple takes a reasonably significant cut of sale profits (I'm not familiar enough with the other stores to know the status). 
 
 However, when you put it up against numbers, it really doesn’t look that attractive.
 
@@ -282,7 +282,7 @@ Even if they're directed straight to your app, you're skipping step 1 & 2, you�
 
 And it's working.
 
-**Flipkart** is an commerce site in India that recently *shut down their mobile app* in favour of a progressive web application.
+**Flipkart** is an commerce site in India that recently *shut down their mobile app* in favour of a progressive web application. 
 
 Obviously it's not working because of good marketing, it's working because web technology is getting really solid backed by solid APIs.
 
