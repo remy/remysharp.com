@@ -51,3 +51,9 @@ This is such a good speech on having the right to choose your own path.
 [Via femisphere, point 15](http://feminspire.com/15-ways-leslie-knope-from-parks-and-recreation-inspired-feminists-everywhere/) 17 Aug 2015
 
 ---
+
+## How to counter biased systems
+
+![How to counter biased systems](/images/ethos/balance.jpg)
+
+I love this representation of how biased systems work, and how my neutral position would indeed *not* be neutral – [Via twitter](https://twitter.com/danielsolis/status/707663012606246913) 9 Mar 2016

@@ -8,13 +8,11 @@ In the same year I coined the [term polyfill](/what-is-a-polyfill):
 
 > A polyfill …, is a piece of code or *plugin* that provides the technology that you, the developer, expect the browser to provide *natively*. Flattening the API landscape if you will.
 
-Back in 2010, mobile browsers didn't expose many of the APIs nor mobile sensors to the browser, such as orientation data. In conversations and conference talks, Brian LeRoux (noble bear warrior of PhoneGap) would talk about closing the gap between mobile and desktop (alluding to the meaning of the name). Something to raise the level of API access within mobile devices. Eventually publishing exactly what he meant on the web (which never forgets*):
+Back in 2010, mobile browsers didn't expose many of the APIs nor mobile sensors to the browser, such as orientation data. In conversations and conference talks, Brian LeRoux (noble bear warrior of PhoneGap) would talk about closing the gap between mobile and desktop (alluding to the meaning of the name). Something to raise the level of API access within mobile devices. Eventually [publishing exactly what he meant](http://phonegap.com/blog/2012/05/09/phonegap-beliefs-goals-and-philosophy/) on the web (which never forgets*):
 
-> PhoneGap is a polyfill, and the ultimate purpose of PhoneGap is **to cease to exist**.
->
-> — Brian LeRoux, SPACELORD!1!! at Adobe, 2012.
+!["PhoneGap is a polyfill, and the ultimate purpose of PhoneGap is **to cease to exist**." - Brian LeRoux, 2012](/images/state-of-the-gap/slide_2.jpg)
 
-That bears [repeating](http://phonegap.com/blog/2012/05/09/phonegap-beliefs-goals-and-philosophy/): [the] **purpose of PhoneGap to cease to exist**.
+That bears repeating: [the] **purpose of PhoneGap to cease to exist**.
 
 Now, obviously this is not in Adobe's interest, given their purchase back in 2011, however it *is* PhoneGap’s philosophy. That is, to create software that helps developers to get to where they need to get to whilst we wait for the technology to catch up.
 
@@ -30,30 +28,149 @@ Though, spoilers: [progressive web apps](https://developers.google.com/web/progr
 
 Today, PhoneGap supports a number of [core plugins](http://docs.phonegap.com/plugin-apis/) and I think it's useful to do a quick eye-ball test to see where the web is up to before looking at the web as an independent entity (that's to say: to stop comparing to native).
 
-| API | PhoneGap | Web capable | Web ∞ |
-|-----|----------|-------------|-------|
-| Battery Status | 👍 | 👍 | ❌ |
-| Camera | 👍 | 👍 | 👍 |
-| Contacts | 👍 | ❌ | ❌ |
-| Device Info | 👍 | 👍 | 👍 |
-| Device Motion (accelerometer) | 👍 | 👍 | 👍|
-| Device Orientation (compass) | 👍 | 👍 |👍|
-| Dialogs (notification) | 👍 | 👍 | 👍|
-| File | 👍 | 👍 | 👍 |
-| File Transfer | 👍 | 👍 | 👍|
-| Geolocation | 👍 | 👍 | 👍 |
-| Globalisation | 👍 | 👍 | 👍|
-| Media Capture | 👍 | 👍 |👍|
-| Network Information | 👍 | 👍 | ❓ |
-| Splash Screen | 👍 | 👍 | 👍 |
-| Status Bar | 👍 | 👍 | 👍 |
-| Vibration | 👍 | 👍 | ❌ |
+I've included a full table of comparison, but below I first wanted to show you a few samples of native web running the code:
 
-Notes: I've removed `InAppBrowser` and `Whitelist` as they're PhoneGap specific to allow PhoneGap to run. Also, "Web ∞" refers to cross browser evergreen support.
+### Battery status
+
+```
+navigator.getBattery()
+	.then(b => console.log(`${b.level * 100}%`))
+```
+
+[Demo](https://jsbin.com/qetavi/1/edit?js,console)
+
+### Camera
+
+```
+<input type="file" accept="image/*;capture=camera">
+```
+
+[Demo](https://jsbin.com/hikicet/1/edit?html,output)
+
+### Device Motion & Orientation
+
+```
+window.addEventListener('deviceorientation', handler);
+window.addEventListener('devicemotion', handler);
+```
+
+[Demo](https://jsbin.com/fobiniw/2/edit?js,output)
+
+### File
+
+```
+let reader = new FileReader();
+reader.onload = e => {
+  let img = new Image();
+  img.src = e.target.result;
+  document.body.appendChild(img);
+};
+reader.readAsDataURL(this.files[0]);
+```
+
+[Demo](https://jsbin.com/tedoruz/1/edit?js,output)
+
+### File transfer
+
+```
+function upload(blobOrFile) {
+  var xhr = new XMLHttpRequest();
+  xhr.open('POST', 'https://httpbin.org/post', true);
+  xhr.onload = e => {
+    alert('Fully uploaded');
+  };
+
+  var progressBar = document.querySelector('progress');
+  xhr.upload.onprogress = e => { // track upload progress
+    if (e.lengthComputable) {
+      progressBar.value = (e.loaded / e.total) * 100;
+    }
+  };
+
+  xhr.send(blobOrFile);
+}
+
+button.onclick = () => {
+  upload(new Blob(['hello world'], {type: 'text/plain'}));
+};
+```
+
+[Demo](https://jsbin.com/qefigi/1/edit?js,output)
+
+### Media Capture
+
+```
+const video = document.querySelector('video');
+
+function done(stream) {
+  var url = window.URL.createObjectURL(stream);
+  video.src = url; // starts to play video
+}
+
+// webkit specific (should detect, I've skipped for demo)
+navigator.webkitGetUserMedia({
+  video: true
+}, done, console.error);
+```
+
+[Demo](https://jsbin.com/rawoku/1/) ([source](https://jsbin.com/rawoku/1/edit?js))
+
+### Network information
+
+```js
+navigator.connection.ontypechange = () => {
+  // wifi/cellular/bluetooth/ethernet/etc/none
+  alert(`New connection type: ${navigator.connection.type}`);
+});
+```
+
+[Demo](https://jsbin.com/saxapos/1/edit?js,output)
+
+
+### Vibration
+
+```
+navigator.vibrate(1000);
+```
+
+[Demo](https://jsbin.com/tipesa/1/edit?js,output)
+
+---
+
+| API | PhoneGap | Web capable |
+|-----|----------|-------------|
+| Battery Status | 👍 | 👍 |
+| Camera | 👍 | 👍 |
+| Contacts | 👍 | ❌ |
+| Device Info | 👍 | 👍 |
+| Device Motion (accelerometer) | 👍 | 👍 |
+| Device Orientation (compass) | 👍 | 👍 |
+| Dialogs (notification) | 👍 | 👍 |
+| File | 👍 | 👍 |
+| File Transfer | 👍 | 👍 |
+| Geolocation | 👍 | 👍 |
+| Globalisation | 👍 | 👍 |
+| Media Capture | 👍 | 👍 |
+| Network Information | 👍 | 👍 |
+| Splash Screen | 👍 | 👍 |
+| Status Bar | 👍 | 👍 |
+| Vibration | 👍 | 👍 |
+
+Notes: I've removed `InAppBrowser` and `Whitelist` as they're PhoneGap specific to allow PhoneGap to run. Also, "Web capable" means it's capable via a W3C specification, though possibly not available in *all* browsers today.
+
+## Many more APIs
+
+There are many many more interesting and exciting APIs in browsers today, including `navigator.sendBeacon()` (for analytics after your tab is closed), Streams, bluetooth and Physical Web.
+
+I'll admit, I've shoehorned this in, but I recently saw a physical web demo that combines beautifully with bluetooth discover and control.
+
+This individual is interacting with a bluetooth device without having to jump into any settings. The beacon discovery is landing directly in Chrome (he’s using a separate app), and bluetooth is currently behind flags, but it shows how frictionless the process was to start using this new toy:
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/6z9ED4fmi1w?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ## Ecosystem
 
-When looking at a PhoneGap plugin (for example), there's a strong focus around support across platforms, because this is the hard part: coding in multiple languages. PhoneGap has core support for three platforms (Android, iOS, Windows Phone) and a number of other platforms supported by the community through Cordova. Though, as I was checking out the [featured PhoneGap apps](...) all of the ones I saw only supported Android and iOS…
+When looking at a PhoneGap plugin (for example), there's a strong focus around support across platforms, because this is the hard part: coding in multiple languages. PhoneGap has core support for three platforms (Android, iOS, Windows Phone) and a number of other platforms supported by the community through Cordova. Though, as I was checking out the [featured PhoneGap apps](http://phonegap.com/app/) all of the ones I saw only supported Android and iOS…
 
 The web is different, in that if the browser fully supports a class of APIs, then the support across devices is the same†. A key feature of browsers is to support interoperability. It's a relatively simple equation: site looks amazing in browser X, browser Y should want to provide the same experience to pull the users across.
 
@@ -63,7 +180,9 @@ The web is the long game. It will always make progress. Free access to both cons
 
 Over the years since 2009, the web's native support for APIs that PhoneGap provided have improved dramatically. The ecosystem is very different from the day that PhoneGap was *needed*.
 
-### The typical caveats with Apple
+### Cross browser support
+
+
 
 In my game of Q&A bingo, *"what about Apple?"* is always on my card. On one hand, I hate that Apple doesn't pull up to the table and discuss their intentions and how they will support developers.
 
