@@ -1,8 +1,14 @@
 # State of the gap
 
-I remember first hearing about PhoneGap through excitement over Twitter in 2009. The first [jsconf.us](https://jsconf.us) had just run, but I hadn't attended (at the time, the distance and costs was too much). One thing was for certain: PhoneGap, team Nitobe with front man, Brian LeRoux, had cracked something hugely important important: *deploying webapps inside of a native shell with native access*.
+Clearly PhoneGap, and Cordova are still required today in the mobile world, but when is it *really* needed? Did the web ever catch up? Do we always need to turn to a PhoneGap shell for all our solutions?
+
+**TL,RD;** I strongly believe in the concepts behind progressive web apps and even though native hacks (Flash, PhoneGap, etc) will always be ahead, the web, always gets there. Now, today, is an incredibly exciting time to be build on the web.
 
 <!--more-->
+
+---
+
+I remember first hearing about PhoneGap through excitement over Twitter in 2009. The first [jsconf.us](https://jsconf.us) had just run, but I hadn't attended (at the time, the distance and costs was too much). One thing was for certain: PhoneGap, team Nitobe with front man, Brian LeRoux, had cracked something hugely important important: *deploying webapps inside of a native shell with native access*.
 
 In the same year I coined the [term polyfill](/what-is-a-polyfill):
 
@@ -335,3 +341,18 @@ Brian wrote this of the PhoneGap philosophy back in 2012 (emphasis mine). It’s
 If there is demand for access to a native API or native access point (such as the home screen), first the hackers will take on the problem, then the masses will use the hacks and then, eventually, it’ll land in browsers. It’s a long bet, but the web  will get there.
 
 For now though, there’s a *lot* of new and exciting prospects with the technology available right now. Do it right, make your users trust the web.
+
+---
+
+## Resources & further reading
+
+This is just of the URLs that I was looking at whilst preparing these thoughts. It's incomplete, but probably still useful.
+
+- [Progressive Web Apps: Escaping Tabs Without Losing Our Soul](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/)
+- [Bluetooth, web and physical web](https://medium.com/@grigs/one-amazing-video-that-shows-the-potential-of-the-physical-web-d336f1f8af59)
+- [Progressive web apps and what's next for mobile (with Alex Russell)](https://www.oreilly.com/ideas/progressive-web-apps-and-whats-next-for-mobile)
+- [9 out of 10 of these are actually web concerns](https://medium.com/net-magazine/10-steps-to-better-hybrid-apps-e8e33831ea5e)
+- [Thoughts about PWA retrospectives](https://twitter.com/auchenberg/status/728054321372266497)
+- [Every step costs you 20% of users](http://blog.gaborcselle.com/2012/10/every-step-costs-you-20-of-users.html)
+- [Chrome status](https://www.chromestatus.com)
+- [Web fundamentals](https://developers.google.com/web/fundamentals/?hl=en)
