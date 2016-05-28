@@ -3986,5 +3986,14 @@
       "personal"
     ],
     "published": true
+  },
+  "state-of-the-gap": {
+    "title": "State of the gap",
+    "date": "2016-05-28 09:51:30",
+    "modified": "2016-04-11 21:31:55",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }

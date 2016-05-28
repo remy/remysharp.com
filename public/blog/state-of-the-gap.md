@@ -348,6 +348,7 @@ For now though, there’s a *lot* of new and exciting prospects with the technol
 
 This is just of the URLs that I was looking at whilst preparing these thoughts. It's incomplete, but probably still useful.
 
+- [Slide deck for this talk I gave at PhoneGap Day EU 2016](https://speakerdeck.com/rem/state-of-the-gap)
 - [Progressive Web Apps: Escaping Tabs Without Losing Our Soul](https://infrequently.org/2015/06/progressive-apps-escaping-tabs-without-losing-our-soul/)
 - [Bluetooth, web and physical web](https://medium.com/@grigs/one-amazing-video-that-shows-the-potential-of-the-physical-web-d336f1f8af59)
 - [Progressive web apps and what's next for mobile (with Alex Russell)](https://www.oreilly.com/ideas/progressive-web-apps-and-whats-next-for-mobile)
