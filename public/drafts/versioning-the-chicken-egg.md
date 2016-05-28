@@ -101,11 +101,29 @@ It's also worth remembering that by default semantic release is only running on 
 
 ## "But what if I want to show the version?"
 
-One question I got stuck on very early on was being able to echo out the version number (since I write a lot of CLI tools). I would rely on the `package.json` to hold the version, and with a semantic release set up, you *don't* have a version property in the package.
+One question I got stuck on early on was being able to echo out the version number (since I write a lot of CLI tools). I would rely on the `package.json` to hold the version, and with a semantic release set up, you *don't* have a version property in the package.
 
 So, as it turns out, this isn't an issue at all. It *only* affects me during development. Once the users of my CLI tool have installed, they have the copy that *does* have the version property (as semantic release adds it right before the `npm publish` step).
 
 I've worked around this problem (that only affects the development copy) using my own [version promise code](https://github.com/remy/clite/blob/master/lib/version.js) which I use in a number of CLI tools now.
+
+## A brief walk through
+
+I've added semantic release to both new projects and existing projects, and I find the process fairly painless. First though, you want the set up tool (that I mentioned earlier:
+
+```
+npm install -g semantic-release-cli
+```
+
+Then from your project directory (assuming it has a `package.json`), run `semantic-release-cli setup` and answer the questions:
+
+![Example output from semantic release setup tool](/images/semantic-release-setup.jpg)
+
+In this particular case, I had a private project run on Travis Pro, but for many of my projects I'll be using public repos and regular Travis. This process will update `package.json` and `.travis.yml`. Semantic release also sets two private environment values in Travis: your npm token and a newly created personal Github token. This is all it needs to manage the process of setting new versions and pushing to npm.
+
+Now I'll commit the changes semantic release made, and push to Github. Travis will automatically receive the project (setup by semantic release) and if the tests pass, semantic release will work out the new version number, add it to `package.json` *inside* Travis and push all the local code as a new npm release.
+
+Pretty neat.
 
 ## Other concerns
 

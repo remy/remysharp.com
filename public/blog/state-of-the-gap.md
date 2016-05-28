@@ -190,7 +190,7 @@ Over the years since 2009, the web's native support for APIs that PhoneGap provi
 
 In my game of Q&A bingo, *"what about Apple?"* is always a sure bet. On one hand, I hate that Apple doesn't pull up to the table and discuss their intentions and how they will support developers.
 
-Even getting the hint of interest from Apple is a process of dumper-diving the mailing lists scanning for the smallest hint of interest.
+Even getting the hint of interest from Apple is a process of dumpster-diving the mailing lists scanning for the smallest hint of interest.
 
 Apple also won't allow any other browsers into their platform, and [this *really* annoys me](https://adactio.com/journal/5787), as such so Chrome is just a wrapped view on WebKitView (the Safari render engine). So all the new technology that lands in Chrome or Firefox does not per-se land in iOS. iPhone users have to wait for Apple and Safari to get involved.
 
