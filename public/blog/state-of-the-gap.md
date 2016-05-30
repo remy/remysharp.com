@@ -192,7 +192,7 @@ In my game of Q&A bingo, *"what about Apple?"* is always a sure bet. On one hand
 
 Even getting the hint of interest from Apple is a process of dumpster-diving the mailing lists scanning for the smallest hint of interest.
 
-Apple also won't allow any other browsers into their platform, and [this *really* annoys me](https://adactio.com/journal/5787), as such so Chrome is just a wrapped view on WebKitView (the Safari render engine). So all the new technology that lands in Chrome or Firefox does not per-se land in iOS. iPhone users have to wait for Apple and Safari to get involved.
+Apple also won't allow any other browsers into their platform, and [this *really* annoys me](https://adactio.com/journal/5787), as such so Chrome is just a wrapped view on [WKWebView](http://blog.chromium.org/2016/01/a-faster-more-stable-chrome-on-ios.html) (the Safari render engine). So all the new technology that lands in Chrome or Firefox does not per-se land in iOS. iPhone users have to wait for Apple and Safari to get involved.
 
 Equally, Apple, just like Mozilla and Chrome and Opera and Microsoft, is a company. They can behave as they please. They do not necessarily have to answer to our call. This secrecy is how they operate (for better or worse).
 
