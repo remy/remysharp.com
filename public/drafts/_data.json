@@ -173,16 +173,6 @@
     ],
     "modified": "2015-06-04 11:51:26"
   },
-  "versioning-the-chicken-egg": {
-    "title": "Versioning: the chicken & egg",
-    "date": "2015-06-10 10:13:47",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "code"
-    ],
-    "modified": "2016-02-29 14:50:36"
-  },
   "progressive-enhancement": {
     "title": "Progressive Enhancement",
     "date": "2015-06-22 17:59:07",
@@ -320,7 +310,7 @@
   "auto-detect-node-version-in-npm-start": {
     "title": "Auto-detect node version in npm start",
     "date": "2016-04-24 13:12:17",
-    "modified": "2016-04-24 22:09:22",
+    "modified": "2016-05-11 08:01:10",
     "complete": true,
     "inprogress": false,
     "tags": [
@@ -333,6 +323,36 @@
     "modified": "2016-04-24 22:21:51",
     "complete": true,
     "inprogress": false,
+    "tags": [
+      "web"
+    ]
+  },
+  "how-to-write-a-github-integration": {
+    "title": "How to write a Github integration",
+    "date": "2016-05-29 13:03:53",
+    "modified": "2016-05-30 20:41:08",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "emoji": {
+    "title": "Emoji",
+    "date": "2016-06-01 12:10:20",
+    "modified": "2016-06-01 16:23:33",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "wifi-and-vpns": {
+    "title": "WiFi and VPNs",
+    "date": "2016-06-05 14:52:06",
+    "modified": "2016-06-05 21:25:57",
+    "complete": false,
+    "inprogress": true,
     "tags": [
       "web"
     ]

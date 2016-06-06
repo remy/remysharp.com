@@ -14,23 +14,38 @@ Firmware patch the router with DD-WRT (which is relatively straightforward). The
 
 ---
 
-## Part 1: Home broadband problems 
+## Part 1: Home broadband problems
 
 In recent months the internet at home has been pretty terrible given that our connection is supposed to be 100mb and upwards.
 
 We'd been complaining for a long time over several support phone calls, but in the last call, the support technician decided to actually share some real knowledge with me. He seemed to pick up from my language that I was technical so it seemed to unlock his inner geek with me, and for it, I'm much more knowledgeable about how WiFi works.
 
-### Bad WiFi != Bad connectivity 
+### Bad WiFi != Bad connectivity
 
-The problem is (generally) the WiFi radio bands are saturated. An easy way to rule out the internet connection and be sure that WiFi is the problem is: plug into your home modem via (patch) cable and run a speed test.
+The problem is (generally) the WiFi radio bands are saturated. An easy way to rule out the internet connection and be sure that WiFi is the problem is: **plug into your home modem via (patch) cable and run a speed test.**
 
-I found immediately that the speeds jumped from a couple of meg over WiFi to a good 80+mb over cable. 
+I found immediately that the speeds jumped from a couple of meg over WiFi to a good 80+mb over cable.
 
 The technician then rattled off a list of other non-wifi devices that compete for the same radio airwaves:
 
-- Bluetooth 
+- Bluetooth
 - Microwaves
 - Portable phones (extenuated when they're out of their cradles)
-- The neighbours!!!
+- The neighbours!
 
 It also didn't help that I had a bag of 10 Bluetooth beacons between the WiFi modem and the area which I work from.
+
+Using the Android tool, [Wifi Analzier](https://play.google.com/store/apps/details?id=com.farproc.wifi.analyzer&hl=en) (also on [Windows](https://www.microsoft.com/en-us/store/apps/wifi-analyzer/9nblggh33n0n), and similiar-ish for [Mac](https://itunes.apple.com/us/app/wifi-explorer/id494803304?mt=12)) I would check the status around the house. At the most, I counted 10 networks from one spot in the house  (note that this picture is *after* I fixed my wifi, so normally "sharp-wifi" would be at the same strength, if not lower, on the chart):
+
+![wifi analysis of nearby connections](/images/wifi-at-home.jpg)
+
+### Fixing the signal
+
+There's a couple of solutions that I employed. Firstly I bought a pack of basic [powerline](https://www.amazon.co.uk/TP-LINK-AV500-Powerline-Adapter-Starter/dp/B0084Y9N3O/ref=sr_1_1?ie=UTF8&qid=1465158211&sr=8-1&keywords=TP-LINK+500Mbps) adapters (which also included two RJ45 cables) and I hardwired the TV to the modem. This fixed the problem of not being able to stream things like Netflix to the TV.
+
+
+
+
+
+
+

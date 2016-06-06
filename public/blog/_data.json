@@ -3972,7 +3972,7 @@
     "title": "Faster tests for multi-node code with ES6 and babel",
     "date": "2016-05-02 16:00:59",
     "image": "/images/slow-babel-test.gif",
-    "modified": "2016-04-30 14:07:26",
+    "modified": "2016-05-02 20:18:08",
     "tags": [
       "web"
     ],
@@ -3990,10 +3990,19 @@
   "state-of-the-gap": {
     "title": "State of the gap",
     "date": "2016-05-28 09:51:30",
-    "modified": "2016-04-11 21:31:55",
+    "modified": "2016-05-28 13:04:08",
     "tags": [
       "web"
     ],
+    "published": true
+  },
+  "versioning-the-chicken-egg": {
+    "title": "Versioning: the chicken & egg",
+    "date": "2016-06-06 13:14:34",
+    "tags": [
+      "code"
+    ],
+    "modified": "2016-06-06 12:34:52",
     "published": true
   }
 }

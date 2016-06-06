@@ -9,12 +9,12 @@
     var css = ['.anchor {',
       'height: 20px;',
       'width: 20px;',
-      'display: block;',
+      // 'display: block;',
       'padding-right: 6px;',
-      'padding-left: 30px;',
+      'padding-left: 6px;',
       'margin-left: -30px;',
       'cursor: pointer;',
-      'position: absolute;',
+      // 'position: absolute;',
       'top: 0;',
       'left: 0;',
       'text-decoration: none;',
@@ -35,7 +35,7 @@
     'h5:hover .anchor span:before,',
     'h6:hover .anchor span:before {',
       'content: "¶";',
-      'position: absolute;',
+      // 'position: absolute;',
       'left: 0px;',
       'top: 0;',
     '}'].join('').replace(/\.anchor/g, '.' + className);
@@ -67,7 +67,7 @@
 
       var clone = anchor.cloneNode(true);
       clone.href = '#' + el.id;
-      el.insertBefore(clone, el.firstChild);
+      el.appendChild(clone, el.firstChild);
       count = count + 1;
     });
   }

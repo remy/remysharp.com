@@ -344,7 +344,7 @@ ins {
 
 code {
   font-family: @code-font;
-  background: rgb(232, 230, 230);
+  background: rgb(238, 238, 238);
   padding: 2px;
   font-size: 0.9rem;
 }
@@ -485,13 +485,18 @@ textarea {
 }
 
 a.anchor {
-  padding-right: 6px;
-  padding-left: 30px;
-}
+  padding: 0 6px 0 30px;
+  position: absolute;
+  left: 0;
 
-.anchor:hover {
-  background: transparent;
-  outline: none;
+  &:hover {
+    background: transparent;
+    outline: none;
+  }
+
+  span:before {
+    margin-left: -30px;
+  }
 }
 
 h1.title,
@@ -694,12 +699,12 @@ ul.links {
 small.edit {
   margin-left: 10px;
   font-size: 50%;
-  position: absolute;
+  // position: absolute;
   bottom: 25px;
 }
 
 small.edit a {
-  opacity: 0;
+  opacity: 0.5;
   .transition(opacity, 50ms, ease-out);
 }
 
@@ -886,11 +891,18 @@ body > footer {
     }
 
     a.anchor {
+      position: static;
       left: auto;
       right: 0;
       margin-left: 0;
-      margin-right: -40px;
+      margin-right: 10px;
+      padding-left: 10px;
     }
+
+    a.anchor span:before {
+      margin-left: 0;
+    }
+
   }
 
   #index-page h1.title,
@@ -1015,6 +1027,10 @@ img.half {
   max-width: 50%;
   margin: 0 auto;
   display: block;
+}
+
+abbr {
+  border-bottom: 1px dotted rgb(0, 0, 0);
 }
 
 // custom page tweaks
