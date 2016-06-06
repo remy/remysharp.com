@@ -349,6 +349,15 @@ code {
   font-size: 0.9rem;
 }
 
+a:hover code,
+a:focus code {
+  color: black;
+  // hides the default anchor hover block
+  border-top: 3px solid rgb(255, 255, 255);
+  background: rgb(189, 189, 189);
+  background: lighten(@code-background, 60%);
+}
+
 pre code {
   color: @code-foreground;
   background: @code-background;
