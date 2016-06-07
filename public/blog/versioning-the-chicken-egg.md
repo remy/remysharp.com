@@ -91,7 +91,7 @@ Here is where I can run the build process and generate the `dist` directory. Sin
 
 Good question (if I do say so myself). It depends entirely on your release workflow.
 
-If you're commuting directly into master and pushing every individual commit to GitHub, then yes, you'll get a release for every fix and feature.
+If you're committing directly into master and pushing every individual commit to GitHub, then yes, you'll get a release for every fix and feature.
 
 However, as soon as you stop pushing every commit, semantic release will bundle together all your commits since the last release, and calculate the correct version change *and* generate  change log (which god knows is a <abbr title="pain in the proverbial posterior">PITA</abbr> to manage yourself). You can see this in [some of my inliner releases](https://github.com/remy/inliner/releases/tag/v1.9.0):
 
