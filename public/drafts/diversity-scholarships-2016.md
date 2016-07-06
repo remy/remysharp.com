@@ -29,11 +29,10 @@ You can start with spreading the word, sharing this post both on social media, b
 
 We will also be selling a diversity ticket on our ticket page which you can opt-in whether you want to be credited. In addition, we will allow you to donate an arbitrary amount towards the diversity fund (which helps with travel and hotels).
 
-
 ## Acknowledgements & background
 
 I've taken either some copy or inspiration from [SassConf](http://sassconf.com/#scholarships) and [OTSConf](http://blog.otsconf.com/post/121589262220/how-to-apply-for-community-and-diversity-tickets).
 
-We created this scholarship in 2015, and you can read about the [*[why]* in the original post](https://remysharp.com/2015/08/28/diversity-scholarships#why)
+We created this scholarship in 2015, and you can read about the [*why* in the original post](https://remysharp.com/2015/08/28/diversity-scholarships#why)
 
 Again, if this doesn't apply to you, please please can you pass on the message and reach out to anyone you know that might benefit from one of these scholarship places.
