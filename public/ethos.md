@@ -57,3 +57,11 @@ This is such a good speech on having the right to choose your own path.
 ![How to counter biased systems](/images/ethos/balance.jpg)
 
 I love this representation of how biased systems work, and how my neutral position would indeed *not* be neutral – [Via twitter](https://twitter.com/danielsolis/status/707663012606246913) 9 Mar 2016
+
+---
+
+## Royce Mann, Age 14, "White Boy Privilege", Slam Poem
+
+I could *wish* I had this much insight when I was 14. Instead, I'm learning from this kid and aim to pass this message on to my white privileged children.
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/g4Q1jZ-LOT0?rel=0" frameborder="0" allowfullscreen></iframe>

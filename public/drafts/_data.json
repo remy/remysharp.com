@@ -356,5 +356,15 @@
     "tags": [
       "web"
     ]
+  },
+  "csrf-the-service-worker-challenge": {
+    "title": "csrf: the service worker challenge",
+    "date": "2016-07-10 12:24:34",
+    "modified": "2016-07-10 12:24:34",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
   }
 }
