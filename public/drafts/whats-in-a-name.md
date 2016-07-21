@@ -22,7 +22,7 @@ In that, the US had jsconf 2009 and it had talked a lot about libraries. I wante
 
 So we launched as Full Frontal.
 
-Aside, and proudly, even the logo that was design, was intentionally vague which allowed me to rebrand the style of the logo each year:
+Aside, and proudly, even the logo that was designed, was intentionally vague which allowed me to rebrand the style of the logo each year:
 
 ![ffconf logos over the years](/images/ffconf-logos.png)
 
