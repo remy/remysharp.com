@@ -4,6 +4,8 @@ If you've followed me over the years, you will know that I run ffconf. You *may*
 
 So, what's in a name?
 
+<!--more-->
+
 ## History
 
 The [original conference announcement](/2009/04/20/full-frontal-javascript-conference#the-name) post also discusses the name.
