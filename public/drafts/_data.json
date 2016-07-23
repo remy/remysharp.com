@@ -366,5 +366,16 @@
     "tags": [
       "web"
     ]
+  },
+  "multiple-assignments": {
+    "image": "/images/multiple-assignment.png",
+    "title": "Multiple assignments",
+    "date": "2016-07-23 09:43:53",
+    "modified": "2016-07-23 09:43:53",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
   }
 }
