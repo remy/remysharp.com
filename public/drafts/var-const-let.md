@@ -22,12 +22,6 @@ The first important thing to always keep in mind when using `const` is that it's
 
 The best way (I've found) to think of `const` is that the variable that you assign with `const` is an immutable *pointer*. Primitive types, such as strings, booleans and numbers can't be changed - since the variable is pointing directly at the primitive (so you can't do [`const a = 10; a++`](http://jsconsole.com/?const%20a%20%3D%2010%3B%20a%2B%2B)). Objects and arrays on the other hand, can have their properties changed.
 
-You could use `const` in combination with [`Object.freeze`](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) which protects your object's properties…but this still doesn't make your object fully immutable
-
-![Using const and object.freeze to create an almost immutable object](/images/const.png)
-
-
-
 However, it's been argued by many that using `const` is a way to document your *intent* with a variable to a future reader of the code. My thoughts: **always use `const`**.
 
 ## ☔️ let: the exception
