@@ -3,6 +3,8 @@
 @code-background: rgb(63, 63, 63);
 @code-foreground: lighten(@code-background, 50%);
 @code-font: menlo, monaco, courier, 'courier new', 'lucida console', monospace;
+@cta-color: #1b95e0;
+@link-color: #00126C;
 
 /* Mixins */
 .transition (@prop: all, @time: 1s, @ease: linear) {
@@ -190,7 +192,7 @@ figcaption {
 }
 
 a {
-  color: #00126C;
+  color: @link-color;
   text-decoration: underline;
 
   &:hover,
@@ -585,17 +587,34 @@ h2.title {
 }
 
 .follow {
+  #iam, p {
+    color: rgb(153, 153, 153);
+  }
+
+  p {
+    font-size: 80%;
+    margin: 0;
+    line-height: 1.2rem;
+  }
+
+  a {
+    color: desaturate(@link-color, 80%);
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
   border-top: 3px solid #efefef;
   border-bottom: 3px solid #efefef;
   margin: 15px 0;
   padding: 15px 0;
-  margin-top: 50px;
-}
+  margin-top: 28px;
 
-.follow .note {
-  color: #aaa;
+  .note {
+    color: #aaa;
+  }
 }
-
 .update{
   border: 1px solid #212121;
   padding: 14px 14px;
@@ -652,6 +671,10 @@ ul.links {
 .post-content {
   ul {
     padding-left: 20px;
+
+    &+h3 {
+      margin-top: 28px;
+    }
   }
 }
 
@@ -972,21 +995,6 @@ body > footer {
   }
 }
 
-@media only screen and (max-width: 390px) {
-  .elsewhere {
-    ul.elsewhere {
-      margin-right: 0;
-    }
-    ul.flickr {
-      position: relative;
-      width: 310px;
-      float: none;
-      margin: 20px auto;
-      overflow: hidden;
-    }
-  }
-}
-
 div.search-result {
   font-size: 80%;
   line-height: 1.3rem;
@@ -1021,7 +1029,8 @@ div.search-result {
   margin: 10px auto !important;
 }
 
-.donate {
+ul li.donate {
+  display: none;
   a {
     &:hover {
       background: none;
@@ -1074,4 +1083,126 @@ abbr {
 details summary:after {
   content: ' (click to expand)';
   font-size: 80%;
+}
+
+#subscribe-form {
+  p {
+    color: black;
+    margin-bottom: 18px;
+  }
+
+  input {
+    height: 40px;
+    vertical-align: middle;
+  }
+
+  input {
+    border-radius: 2px;
+  }
+
+  input[type=email] {
+    font-size: 16px;
+    border: 1px solid @cta-color;
+    // border-top-left-radius: 2px;
+    // border-bottom-left-radius: 2px;
+    // border-right: 0;
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  input[type=submit] {
+    border: 1px solid @cta-color;
+    background: @cta-color;
+    color: white;
+    // border-top-right-radius: 2px;
+    // border-bottom-right-radius: 2px;
+    // border-left: 0;
+    padding: 0 10px;
+    cursor: pointer;
+    font-size: 90%;
+  }
+}
+
+.row {
+  overflow: hidden;
+
+  & > div {
+    box-sizing: border-box;
+    padding: 0 10px;
+    position: relative;
+  }
+
+  & > div:first-of-type {
+    padding-left: 0;
+  }
+
+  & > div:last-of-type {
+    padding-right: 0;
+  }
+
+  .c2 {
+    &.s1 {
+      width: 50%;
+      float: left;
+      overflow: hidden;
+    }
+  }
+
+  .c3 {
+    &.s1 {
+      width: 33%;
+      float: left;
+      overflow: hidden;
+    }
+
+    &.s2 {
+      width: 66%;
+      float: left;
+      overflow: hidden;
+    }
+  }
+
+  .c4 {
+    &.s1 {
+      width: 25%;
+      float: left;
+      overflow: hidden;
+    }
+
+    &.s3 {
+      width: 75%;
+      float: left;
+      overflow: hidden;
+    }
+  }
+}
+
+#avatar {
+  border-radius: 100px;
+  border-bottom-right-radius: 0;
+}
+
+
+@media only screen and (max-width: 390px) {
+  .elsewhere {
+    ul.elsewhere {
+      margin-right: 0;
+    }
+    ul.flickr {
+      position: relative;
+      width: 310px;
+      float: none;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+  }
+
+  .follow div:first-child div:first-child {
+    display: none;
+  }
+
+  .follow div:first-child div.s3 {
+    width: 100%;
+    padding-left: 0;
+  }
 }
