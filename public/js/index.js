@@ -45,14 +45,14 @@ function findTop(obj) {
 }
 
 function flickrURL(photo) {
-  return 'https://farm' + photo.farm + '.staticflickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_s.jpg';
+  return 'https://farm' + photo.farm + '.staticflickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_q.jpg';
 }
 
 function loadFlickr() {
   $.getJSON('https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=ac349179dc54279b846089f60586c263&user_id=38257258%40N00&per_page=12&format=json&jsoncallback=?', function (data) {
 
     var photos = data.photos.photo;
-    var total = 8;
+    var total = 9;
 
     var $ul = $('ul.flickr');
 

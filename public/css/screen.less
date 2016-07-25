@@ -5,6 +5,8 @@
 @code-font: menlo, monaco, courier, 'courier new', 'lucida console', monospace;
 @cta-color: #1b95e0;
 @link-color: #00126C;
+@main-font-color: #212121;
+@flickr-width: 235px;
 
 /* Mixins */
 .transition (@prop: all, @time: 1s, @ease: linear) {
@@ -136,8 +138,11 @@ table, caption, tbody, tfoot, thead, tr, th, td, figure {
 }
 body {
   line-height: 1;
-  color: #212121;
+  color: @main-font-color;
   background: white;
+}
+iframe {
+  display: block;
 }
 ol, ul {
   list-style: none;
@@ -587,8 +592,20 @@ h2.title {
 }
 
 .follow {
+  border: 3px solid #ccc;
+  // border-top: 3px solid #efefef;
+  // border-bottom: 3px solid #efefef;
+  margin: 15px 0;
+  padding: 10px;
+  margin-top: 28px;
+  background: #efefef;
+
   #iam, p {
     color: rgb(153, 153, 153);
+  }
+
+  h4 {
+    margin-top: 0
   }
 
   p {
@@ -605,18 +622,12 @@ h2.title {
     }
   }
 
-  border-top: 3px solid #efefef;
-  border-bottom: 3px solid #efefef;
-  margin: 15px 0;
-  padding: 15px 0;
-  margin-top: 28px;
-
   .note {
     color: #aaa;
   }
 }
 .update{
-  border: 1px solid #212121;
+  border: 1px solid @main-font-color;
   padding: 14px 14px;
   background-color: #FFFDA3;
   background-color: hsla(59, 100%, 82%, 0.3);
@@ -660,7 +671,7 @@ time {
 }
 
 ul.links {
-  margin-right: 180px;
+  margin-right: @flickr-width;
 }
 
 
@@ -679,21 +690,23 @@ ul.links {
 }
 
 .lists {
+
   ul {
+    box-sizing: border-box;
     clear: left;
     padding: 0;
     padding-left: 0;
   }
 
   ul.flickr {
-    position: absolute;
-    top: 0;
-    right: 0;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
     list-style: none;
     padding: 0;
     float: right;
-    width: 160px;
-    margin: 0 20px;
+    width: @flickr-width;
+    margin: 0px;
 
     a {
       background: transparent;
@@ -845,6 +858,10 @@ body > footer {
   clear: both;
   font-size: 90%;
 
+  .row + h2 {
+    margin-top: 28px;
+  }
+
   p {
     line-height: 24px;
   }
@@ -854,7 +871,11 @@ body > footer {
   }
 
   .license p {
-    margin-top: 12px;
+    margin: 12px 0;
+
+  }
+  h2 {
+    line-height: 2rem;
   }
 
   .flexbox();
@@ -1088,7 +1109,6 @@ details summary:after {
 #subscribe-form {
   p {
     color: black;
-    margin-bottom: 18px;
   }
 
   input {
@@ -1106,8 +1126,8 @@ details summary:after {
     // border-top-left-radius: 2px;
     // border-bottom-left-radius: 2px;
     // border-right: 0;
-    width: 60%;
-    margin-right: 10px;
+    // width: 60%;
+    // margin-right: 10px;
   }
 
   input[type=submit] {
@@ -1120,24 +1140,44 @@ details summary:after {
     padding: 0 10px;
     cursor: pointer;
     font-size: 90%;
+
+    &:hover {
+      background: black;
+      border-color: black;
+    }
   }
+
+  input:hover {
+    border-color: darken(@cta-color, 15%);
+  }
+
 }
 
 .row {
+  display: block;
   overflow: hidden;
 
-  & > div {
+  & > * {
     box-sizing: border-box;
     padding: 0 10px;
     position: relative;
   }
 
-  & > div:first-of-type {
+  & > *:first-child {
     padding-left: 0;
   }
 
-  & > div:last-of-type {
+  & > *:last-child {
     padding-right: 0;
+  }
+
+  & > .row {
+    padding: 0;
+  }
+
+  .c1 {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .c2 {
@@ -1180,29 +1220,62 @@ details summary:after {
 #avatar {
   border-radius: 100px;
   border-bottom-right-radius: 0;
+  border: 0px solid rgb(128, 128, 128);
+  float: left;
+  margin-right: 10px;
+  width: 60px;
 }
 
 
 @media only screen and (max-width: 390px) {
-  .elsewhere {
+  #elsewhere {
     ul.elsewhere {
       margin-right: 0;
     }
     ul.flickr {
+      display: block;
       position: relative;
-      width: 310px;
+      width: auto;
       float: none;
-      margin: 20px auto;
+      margin: 10px auto;
       overflow: hidden;
+
+      li {
+        box-sizing: border-box;
+        width: 32%;
+        height: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    ul.links {
+      margin-right: 10px;
     }
   }
 
-  .follow div:first-child div:first-child {
-    display: none;
-  }
+  // .follow div:first-child div:first-child {
+  //   display: none;
+  // }
 
-  .follow div:first-child div.s3 {
-    width: 100%;
-    padding-left: 0;
-  }
+  // .follow div:first-child div.s3 {
+  //   width: 100%;
+  //   padding-left: 0;
+  // }
+}
+
+.metadata {
+  color: lighten(@main-font-color, 50%);
+  font-size: 80%;
+}
+
+.bio {
+  line-height: 1.2rem;
+  font-size: 90%;
+}
+
+#follow-rem {
+  display: block;
+  font-size: 60%;
 }

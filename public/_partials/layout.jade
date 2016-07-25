@@ -63,11 +63,18 @@ html#remysharp-com
           li: a(target="_blank" href="http://lanyrd.com/profile/rem/past/speaking/") Presentations
 
       .flex-item.license
-        h2
-          a(href="https://2016.ffconf.org/workshops#debug-and-tools?utm_source=blog&utm_medium=banner&utm_campaign=2016") Learn from me
-
-        :marked
-          Attend my debugging masterclass workshop in November in the UK and learn about workflow, memory leaks, advanced console tricks, mobile debugging and more: **[reserve&nbsp;your&nbsp;place&nbsp;now](https://2016.ffconf.org/workshops#debug-and-tools?utm_source=blog&utm_medium=banner&utm_campaign=2016)**
+        .row
+          h2 Remy Sharp
+            img#avatar(src="/images/avatar-300.png" width="60")
+            <a id="follow-rem" href="https://twitter.com/rem" class="twitter-follow-button" data-show-count="true">Follow @rem</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        .row.bio
+          :marked
+            I'm a JavaScript developer working professionally on the web since 1999. I run my own [consultancy](/work), build products, run training, speak at conferences and curate the UK's best [JavaScript event](https://ffconf.org).
+          //- p Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges).</span><!--<br>📚 Read more: the <a href="/latest">latest</a> post or a <a href="/random">random</a> post.-->
+        //- h2
+        //-   a(href="https://2016.ffconf.org/workshops#debug-and-tools?utm_source=blog&utm_medium=banner&utm_campaign=2016") Learn from me
+        //- :marked
+        //-   Attend my debugging masterclass workshop in November in the UK and learn about workflow, memory leaks, advanced console tricks, mobile debugging and more: **[reserve&nbsp;your&nbsp;place&nbsp;now](https://2016.ffconf.org/workshops#debug-and-tools?utm_source=blog&utm_medium=banner&utm_campaign=2016)**
 
         h2 License
         p.vcard All content by <a class="url fn" href="#{site_url}">Remy Sharp</a> and under <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">creative commons</a> and code under <a href="http://rem.mit-license.org">MIT&nbsp;license</a>.

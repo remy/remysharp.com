@@ -46,13 +46,3 @@ Somewhere in between I married my college sweet heart (yep, that was Julie from 
 We moved down to Brighton, and we're really hitting the next big steps in both our lives.
 
 Phew - sorry, that wasn't really a short history!
-
-## Out and About
-
-Other places you can find me on the web:
-
-* [Github](http://github.com/remy)
-* [Twitter](http://twitter.com/rem)
-* [LinkedIn](http://www.linkedin.com/in/remysharp)
-* [Lanyrd](http://lanyrd.com/people/rem/)
-* [Last.fm](http://www.last.fm/user/remysharp)

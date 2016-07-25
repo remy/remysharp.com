@@ -41,27 +41,10 @@ block content
         - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
         != yield
 
-        p
-          small Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}.
+        p.metadata Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}.
 
-        footer.follow
-          .row
-            .c4.s1
-              img#avatar(src="/images/avatar-300.png" width="150")
-            .c4.s3
-              h3 <span id="iam">I am</span> Remy Sharp
-              <a href="https://twitter.com/rem" class="twitter-follow-button" data-show-count="true">Follow @rem</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-              :marked
-                I'm a JavaScript developer working professionally on the web since 1999. I run my own [consultancy](/work), build products, run training, speak at conferences and curate the UK's best [JavaScript event](https://ffconf.org).
-              //- p Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}. <span class="note">Find me on Twitter <a href="http://twitter.com/rem">here</a> I'll tweet about JavaScript, HTML5 and other such gems (amongst usual tweet-splurges).</span><!--<br>📚 Read more: the <a href="/latest">latest</a> post or a <a href="/random">random</a> post.-->
-          form.row(action="//remysharp.us13.list-manage.com/subscribe/post?u=c3ac6dd00a3b2269a6634560c&amp;id=56328dedcb" method="post" target="_blank" novalidate)#subscribe-form
-            h3 Subscribe
-            p Posts, web tech insights, exclusive workshop and training discounts and more, direct to your inbox.
-            .row
-              input(type="email" placeholder="Email Address" value="" name="EMAIL" class="required email")
-              input(type="submit" value="Sign up" name="subscribe" class="button")
-              div(style="position: absolute; left: -5000px;" aria-hidden="true")
-                input(type="text" name="b_c3ac6dd00a3b2269a6634560c_56328dedcb" tabindex="-1" value="")
+        footer.follow.update
+          != partial('../_partials/subscribe')
 
       if environment == "production"
         .comments
