@@ -372,8 +372,8 @@
     "title": "Multiple assignments",
     "date": "2016-07-23 09:43:53",
     "modified": "2016-07-23 09:43:53",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]
@@ -382,6 +382,26 @@
     "title": "ES6 pure dev has finally arrived",
     "date": "2016-07-23 11:24:18",
     "modified": "2016-07-23 11:24:18",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "smooth-scroll-with-sticky-nav": {
+    "title": "Smooth scroll with sticky navigation",
+    "date": "2016-07-26 14:06:58",
+    "modified": "2016-07-26 14:06:58",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "aws-lambda-gateway-workflow": {
+    "title": "AWS lambda & gateway workflow",
+    "date": "2016-07-27 13:09:24",
+    "modified": "2016-07-27 13:09:24",
     "complete": false,
     "inprogress": true,
     "tags": [

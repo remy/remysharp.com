@@ -24,8 +24,6 @@ Combine this grief, with a general downward personality with new parenthood and 
 
 For my own record (and perhaps to avoid too much judgement): I've never hit my kids or wife. I would vent my anger myself or stationary objects. But it is still scary for a child to see (and often I would try hard to hide it), and frankly it's horrible for me too.
 
-
-
 ## Context is everything
 
 

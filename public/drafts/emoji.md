@@ -14,6 +14,8 @@
 - [Investigating the Potential for Miscommunication Using Emoji](http://grouplens.org/blog/investigating-the-potential-for-miscommunication-using-emoji/)
 - [How Emoji Can Improve Your Code](https://www.tjvantoll.com/2016/06/10/emoji-and-coding/)
 - [Introducing emoji targeting](https://blog.twitter.com/2016/introducing-emoji-targeting)
+- [Poop is ice cream](http://www.huffingtonpost.com/2015/03/12/poop-emoji-ice-cream_n_6857388.html)
+- [🌲🌲🌲 Simulating real world with emojis](http://ncase.me/simulating/)
 
 ---
 
