@@ -33,9 +33,9 @@ When I run a workshop, I make a very specific effort to ensure every delegate ge
 
 Short talks (60mins) are different. Personally I don't have any issue with sharing my slides, but in general I won't share the slide notes. This isn't because I want to hold back content, but because they're not generally structured at all. They're often random-ish cues for me during my talks.
 
-## When the organisers want to run through/see slides ahead of time
+## Run throughs & slides ahead of time
 
-This is tricky. Personally this doesn't fly for me. Two big reasons:
+Should an organiser ask for a run through or the slides (well) ahead of time? This is tricky. Personally this doesn't fly for me. Two big reasons:
 
 1. I've been invited as speaker. I should be trusted that I can deliver my slides on the day.
 2. Quite often I'll write my slides the day before. I construct the narrative of the talk in my head and in blog posts in the months leading up, but the final result you'll see on stage is the first time it's all been put together.
