@@ -31,13 +31,49 @@ What about filming workshops? Nope, absolutely not. Workshops take *a lot* of ti
 
 When I run a workshop, I make a very specific effort to ensure every delegate gets all the slides and all the code examples we use throughout the days. However, this is hands on, deep dive day where the delegates' company would have paid me directly for the session. I feel like this is something I'm providing as part of my service.
 
-Short talks (60mins) are different. Personally I don't have any issue with sharing my slides, but in general I won't share the slide notes. This isn't because I want to hold back content, but because they're not generally structured at all. They're often random-ish cues for me during my talks. 
+Short talks (60mins) are different. Personally I don't have any issue with sharing my slides, but in general I won't share the slide notes. This isn't because I want to hold back content, but because they're not generally structured at all. They're often random-ish cues for me during my talks.
+
+## When the organisers want to run through/see slides ahead of time
+
+This is tricky. Personally this doesn't fly for me. Two big reasons:
+
+1. I've been invited as speaker. I should be trusted that I can deliver my slides on the day.
+2. Quite often I'll write my slides the day before. I construct the narrative of the talk in my head and in blog posts in the months leading up, but the final result you'll see on stage is the first time it's all been put together.
+
+An organiser *offering* to help review my talk is very different. This is optional and a service they're offering.
+
+So, should you (have to) deliver your slides ahead of time? No. The event trusts you. You're a professional.
 
 ## Getting paid
 
-- Feedback?
-- Slides?
--
+
+First of all: [you do not pay your own way](). **Absolutely not.** The very minimum you should be offered is travel and hotel costs covered (if applicable, ie. If it's a local meet up you probably can go without a hotel).
+
+If should be your choice to turn down this expense. Ive written passionately about this, so do take a moment to read that too if you're unsure.
+
+Should you charge, and how much?
+
+Many others have written about this too. I can only speak from my own experience and let you take this as a basis for your own decisions.
+
+When I started out back in 2008, I was hugely flattered to be asked to speak (as a stand in for another speaker). I didn't charge, I didn't take any travel expenses, and I didn't attend the entire conference (partly also because it was very blue collar which doesn't appeal to me). I was thanked by the track host, and that was it. In my opinion pretty rubbish.
+
+The next few speaking gigs covered travel (mostly because they were abroad from the UK), and as I was an independent that wasn't representing a product or business. Then the first asked me how much do I charge.
+
+My rate fluctuated around £1,500+VAT plus expenses. Looking at my peers rates that sounds about right, perhaps a bit low (but this was 2009).
+
+If you've got a record of talks (even the same single talk) going down well, to me as an organiser, that's enough to show that you're a professional and that you should be paid for your time.
+
+Of course, the speaking fee doesn't cover your time at the event, it's a measly contribution to the days and days of preparation you've put into the work alongside your months and years of experience that leads you to have something to share in the first place.
+
+Should you be paid: yes.
+
+For me, somewhere along the line, I stopped asking for a fee. I don't really remember why, but there were a few times I asked for a fee, and the organisers said they didn't have the budget (which I disagree with on a fundamental level, but again, read my other post!) I suggested that *instead* they'd paid for my wife and son to accompany me and we have a day or two extra at the hotel. Every organiser agreed. It's a lot cheaper for them, and they get to keep their speaker.
+
+And so sometimes the event doesn't have the budget. For my event, ffconf, we budget for £500 honourium per speaker, per day (workshops are handled differently). If you're a first time speaker or veteran, we pay you the same amount (and obviously cover all travel, hotel, food, drinks etc). It's budgeted for. If you ask for more from me, I'll be a hard consideration. I'm not sure, but it's **important that you, the speaker, ask to be paid.**
+
+
+
+## Hidden costs
 
 
 
