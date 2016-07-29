@@ -84,7 +84,7 @@ Those costs include:
 - Learning the presentation software (I dare not upgrade Keynote to avoid breaking existing decks and having to learn a new UI)
 - Technical equipment (quite seriously the event should have this), i.e. power adapters, display adapters, clickers, presentation software
 
-I'm sure there's more.
+I'm sure there's more. There's also an interesting post on a [formula for speaking fees](http://www.thenerdary.net/post/84544230452/a-formula-for-speaking-fees).
 
 ## Is it worth it?
 
