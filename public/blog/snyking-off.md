@@ -36,4 +36,6 @@ I've been looking for what I thought was a photo, but actually turned out to be 
 
 So, in this personal post, I bid farewell to the team, and wish Snyk the best of luck as it grows. And if *you*, my dear reader, wanted a change of scene for yourself focusing on JavaScript (and node), I know that they have [team openings](https://github.com/snyk/jobs) and I'd give Snyk a whole hearted recommendation.
 
+Should you want to [work with me, do get in touch](/work).
+
 ![Snyk team photo](/images/snyk-team-photo.jpg)
