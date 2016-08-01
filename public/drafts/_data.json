@@ -407,5 +407,15 @@
     "tags": [
       "web"
     ]
+  },
+  "snyking-off": {
+    "title": "Snyk'ing off",
+    "date": "2016-08-01 14:33:02",
+    "modified": "2016-08-01 14:33:02",
+    "complete": true,
+    "inprogress": false,
+    "tags": [
+      "personal"
+    ]
   }
 }
