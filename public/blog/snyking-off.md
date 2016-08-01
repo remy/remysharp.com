@@ -1,12 +1,12 @@
 # Snyk'ing off
 
-Today I start the week after finishing a year long relationship with Snyk, and I wanted to mark permanently here, on my blog.
+Today I start the week after finishing a year long relationship with [Snyk](https://snyk.io), and I wanted to mark permanently here, on my blog.
 
 <!--more-->
 
 ## 1 year
 
-Since early July 2015 I've been working with [Guy Podjarny](https://twitter.com/guypod) on his security focused start up called Snyk, and I finished last week. When you hear Guy say *Snyk*, it'll sound like "snik", but if you quiz him enough, you'll realise it's Snyk like "sneak", like "sneakers" - the security focused film staring Robert Redford.
+Since early July 2015 I've been working with [Guy Podjarny](https://twitter.com/guypod) on his security focused start up called Snyk ("so now you know"), and I finished last week. When you hear Guy say *Snyk*, it'll sound like "snik", but if you quiz him enough, you'll realise it's Snyk like "sneak", like "sneakers" - the security focused film staring Robert Redford.
 
 The pitch, or as I saw it, is incredibly simple and appealing to developers like me:
 
@@ -36,13 +36,4 @@ I've been looking for what I thought was a photo, but actually turned out to be 
 
 So, in this personal post, I bid farewell to the team, and wish Snyk the best of luck as it grows. And if *you*, my dear reader, wanted a change of scene for yourself focusing on JavaScript (and node), I know that they have [team openings](https://github.com/snyk/jobs) and I'd give Snyk a whole hearted recommendation.
 
-
-
 ![Snyk team photo](/images/snyk-team-photo.jpg)
-
-
-
-
-
-
-

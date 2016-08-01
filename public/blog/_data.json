@@ -4032,5 +4032,14 @@
       "personal"
     ],
     "published": true
+  },
+  "snyking-off": {
+    "title": "Snyk'ing off",
+    "date": "2016-08-01 17:06:07",
+    "modified": "2016-08-01 14:33:02",
+    "tags": [
+      "personal"
+    ],
+    "published": true
   }
 }
