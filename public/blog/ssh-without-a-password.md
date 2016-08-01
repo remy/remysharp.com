@@ -9,17 +9,21 @@ Here's how to do it.
 
 ## Step 1 - the local machine
 
-From the machine I will be using to connect to the remote machine, I run the following from the command line (within the ~/.ssh/ directory):
+From the machine I will be using to connect to the remote machine, I run the following from the command line (within the `~/.ssh/` directory):
 
-`ssh-keygen -t dsa`
+```
+ssh-keygen -t dsa
+```
 
 Note that I'm using SSH-2 - which if you're using a new Mac will probably be the default.  If you are using SSH-1 you need the command:
 
-`ssh-keygen -t rsa1`
+```
+ssh-keygen -t rsa1
+```
 
 Then I select the default name for the key and leave the pass phrase blank (pressing enter twice).
 
-Now within the ~/.ssh/ directory is a file either called id\_dsa.pub or identity.pub (depending on the version of SSH you are using).
+Now within the `~/.ssh/` directory is a file either called `id\_dsa.pub` or `identity.pub` (depending on the version of SSH you are using).
 
 Keep note of this file, we'll need the contents of it for step 2.
 
@@ -29,11 +33,15 @@ Log in to the remote machine as you normally would.  Now in ~/.ssh/ you need to 
 
 In the example below, I've copied the public file across to the remote machine, an I will delete it after I'm done.
 
-`cat id_dsa.pub >> ~/.ssh/authorized_keys`
+```
+cat id_dsa.pub >> ~/.ssh/authorized_keys
+```
 
 Finally, on the remote machine you want to access, make sure the authorized_keys file is properly chmod'ed:
 
-`chmod 600 ~/.ssh/authorized_keys`
+```
+chmod 600 ~/.ssh/authorized_keys
+```
 
 ## Closing up
 
