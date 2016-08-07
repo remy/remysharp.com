@@ -29,6 +29,27 @@ var elasticsearch = require('elasticsearch');
 // compiled, this is the cleanest solution.
 global.moment = moment;
 
+global.split = function (content) {
+  var res = [];
+  if (content.split(/<!--\s*more\s*-->/).length > 1) {
+    res = content.split(/<!--\s*more\s*-->/);
+  } else if (content.split('<hr>').length > 1) {
+    res = content.split('<hr>');
+  } else {
+    res = [
+      content.split('<p>').slice(0, 4).join('<p>'),
+      content.split('<p>').slice(4).join('<p>'),
+    ];
+  }
+
+  return res.map((_, i) => {
+    if (i === 0) {
+      _ = _.replace(/<h1>.*?<\/h1>/, ''); // strip the initial heading
+    }
+    return _.trim();
+  });
+}
+
 // we use versions to cachebust our CSS & JS, but we only
 // cachebust on minor or major releases. A new blog post is
 // considered a patch, and therefore doesn't require a rebuild

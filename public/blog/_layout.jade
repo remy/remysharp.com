@@ -38,8 +38,13 @@ block content
       small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/blog/#{current.source}.md") (edit)
       .post-content
         //- strip the h1 out of the body as we printed it above as the permalink
-        - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
-        != yield
+        - if (yield) res = split(yield.replace(/<h1>.*?<\/h1>/, ''));
+        if res
+          != res[0]
+          != partial('../_partials/ffconf-ad')
+          != res[1]
+        else
+          != yield
 
         p.metadata Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}.
 

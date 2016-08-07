@@ -892,7 +892,7 @@ body > footer {
   color: #fff;
   font-size: 120%;
   font-weight: bold;
-  border: 10px dashed darken(#FF4136, 30%)
+  border: 10px dashed darken(#ff4136, 30%)
 }
 
 #drafts-index-page {
@@ -1281,4 +1281,65 @@ details summary:after {
   font-size: 60%;
 }
 
-// bump
+@ffconf-ad-width: 26vh;
+
+.ffconf-ad,
+.ffconf-ad:hover {
+  display: block;
+  float: right;
+  box-sizing: border-box;
+  background: #ffffe4;
+  background: #fff;
+  border: 2px solid gainsboro; //rgb(204, 201, 0);
+  padding: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-size: 80%;
+  overflow: hidden;
+  margin-left: 2vh;
+  margin-bottom: 2vh;
+  width: @ffconf-ad-width + (2 * 2vh);
+
+  img {
+    float: left;
+    max-width: 100%;
+    max-height: @ffconf-ad-width + 2vh;
+    margin-bottom: 5%;
+  }
+
+  p {
+    margin-top: 14px;
+    margin-bottom: 0;
+    line-height: 1rem;
+  }
+
+  p:last-child {
+    font-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .ffconf-ad,
+  .ffconf-ad:hover {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    font-size: 90%;
+    padding: 0.7rem;
+
+    img {
+      width: 45%;
+      float: left;
+      margin-bottom: 0;
+      margin-right: 5%;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+  }
+
+}

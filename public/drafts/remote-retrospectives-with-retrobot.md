@@ -4,11 +4,11 @@ At [Snyk](https://snyk.io) the team was partially remote (Tel Aviv, London and B
 
 The retrospectives would run over remote video calls, and we would try to simulate the typical writing on postit notes, with writing in a shared spreadsheet. First listing those things that worked well, then those that needed working on, then we'd vote on what we wanted to improve on. All in the spreadsheet.
 
-The process was sound in theory, but felt awkward to all involved. So we changed it.
+The process was sound in theory, but felt awkward to all involved.
 
 <!--more-->
 
-## Introducing: @retrobot 🤖
+## Introducing: Retrobot 🤖
 
 I wrote a Slackbot called [Retrobot](https://github.com/remy/retrobot#-retrobot) (available as open source under MIT on Github) that you can deploy to your own machines to run your retrospectives.
 
@@ -34,8 +34,6 @@ And the list of "needs work" (edited for the screenshot):
 
 ## What were the pain points?
 
-During a team summit, a few of us sat down to try to understand why the original process felt awkward.
-
-[Johanna Koll](https://twitter.com/johannakoll) ran the
+During a team summit, a few of us sat down to try to understand why the original process felt awkward. [Johanna Koll](https://twitter.com/johannakoll) ran the retrospectives and was already familiar with the process of writing up on the white boards with sticky notes
 
 ## How it works
