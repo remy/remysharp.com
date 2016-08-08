@@ -1,0 +1,1421 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 11:20:34 Jul 6, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:53:49 Aug 8, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+Theme Name: Unsleepable_v.1.6
+Base Theme URI: http://www.openswitch.org
+Base Theme Author: Ben Gray
+Base Theme Author URI: http://www.openswitch.org
+
+This theme has been slightly modified from the base theme,
+K2 by Michael Heilemann http://binarybonsai.com/
+
+Header code base gleaned from Foogaming.com
+http://www.foogaming.com with full permission.
+
+A big thanks to Adam (http://www.archgfx.net/blog) for helping me clean up the code and squash some bugs.
+
+	 |  /_  )
+	 . <   /
+	_|\_\___|
+
+        All elements of this theme are protected by the GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+	Support questions go here:
+	http://www.getk2.com/forum
+	K2 uses Fam Fam Fam Silk Icons:
+	http://www.famfamfam.com/lab/icons/silk/
+
+	IMPORTANT: This is a beta release. While it is more or less feature complete, it is sure to still contain a few bugs here and there. Use at your own risk.
+
+
+*/
+.socialbkmark li {
+        list-style-type: none;
+        }
+
+.socialbkmark a {
+        color: #333;
+        }
+
+.socialbkmark a:hover {
+        text-decoration: underline;
+        }
+
+.socialbkmark h2 {
+        font-family: Helvetica, Arial, Sans-Serif !important;
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+        color: #555;
+        margin: 0 0 10px 0 !important;
+        padding: 0;
+        letter-spacing: -1px;
+        text-transform: lowercase;
+        }
+
+img.socialbkmark {
+        vertical-align: middle;
+        border: 0px;
+        margin-bottom: 4px;
+        }
+
+.footer_image {
+        vertical-align: middle !important;
+        margin-left: 10px;
+        }
+
+.editlink {
+        background: url('images/pencil.png') no-repeat left;
+        }
+
+.category {
+        background: url('images/page_white.png') no-repeat left;
+        padding: 2px 0 2px 18px;
+        }
+
+#title {
+	float: left;
+	width: 270px;
+	font-size: 12px;
+	border-right: 1px solid #555;
+	text-indent: -9000px !important;
+        }
+
+#title a {
+	display: block;
+	width: 250px;
+	height: 50px;
+	line-height: 50px;
+	padding: 50px 20px 0px 0px;
+	background: transparent url('images/title.gif') no-repeat 20% 82% !important;
+        }
+
+#title a:hover {
+	background: #000 url('images/title.gif') no-repeat 20% 82% !important;
+        }
+
+#menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	list-style-image: none;
+	text-transform: lowercase;
+        }
+
+#menu li {
+	float: left;
+	width: 7em;
+	border-right: 1px solid #555;
+        }
+
+#menu a {
+	display: block;
+	height: 50px;
+	width: 7em;
+	line-height: 50px;
+	padding: 50px 0 0;
+	text-align: center;
+        }
+
+body {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+        font-size: 11px !important;
+	background: #ccc url('images/top-bg.gif') repeat-x top left;
+        text-align: center;
+	margin: 0px;
+	}
+
+#page {
+        background: #fff;
+        background-position: right !important;
+	text-align: left;
+	margin: 0px auto 0px;
+	padding: 0;
+	position: relative;
+	width: 775px;
+       	}
+
+#header {
+	height: 100px;
+        width: 775px;
+	color: #fff;
+	background: #333;
+	border-left: 1px solid #555;
+        margin: 0;
+        }
+
+#header a {
+	color: #fff;
+        }
+
+#header a:hover, #header .current_page_item {
+	background: #0D78B6;
+	color: #fff;
+        }
+
+.primary {
+	width: 65%;
+	float: left;
+	padding: 20px 3% 15px 3%;
+	margin: 0;
+	display: inline;
+	}
+
+.secondary {
+	font: 12px Trebuchet MS /*'Lucida Grande', Verdana, Arial, Sans-Serif*/;
+	padding: 5px 0 20px 5px;
+	margin: 0px 0 0px 71%;
+	width: 26%;
+	color: #666;
+	position: relative;
+        line-height: 1.3em !important;
+        }
+
+.secondary a {
+        color: #333;
+        }
+
+.secondary a:hover {
+        text-decoration: underline !important;
+        }
+.comments {
+	text-align: left;
+	padding: 30px 0 0;
+	position: relative;
+	}
+
+.admintab {
+	display: none !important;
+	}
+
+a img,:link img,:visited img {
+        border:none;
+        }
+
+/*- Sidebar Subpages Menu */
+
+.sb-pagemenu ul {
+	margin-left: 10px;
+	}
+
+.sb-pagemenu ul ul {
+	margin-top: 2px;
+	}
+
+.sb-pagemenu ul ul .page_item {
+	margin-left: 10px;
+	padding: 0;
+	}
+
+/*- Headings -*/
+
+h1, h2, h3, h4 {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	}
+
+h1 {
+        padding-top: 10px;
+        }
+
+
+
+.pagetitle { /* Used on static pages and archives */
+	text-align: center;
+	margin: 15px 0 20px;
+	}
+
+.pagetitle h2 { /* H2 is what kind of page you are on. Eg. 'Monthly Archive'. */
+	font-size: 23px;
+	font-weight: bold;
+	letter-spacing: -1px;
+	text-align: center;
+	display: inline;
+        font-family: Helvetica, Arial, Sans-Serif !important;
+        color: #555 !important;
+        text-transform: lowercase;
+	}
+
+.secondary h2 { /* Secondary H2 is sidebar headlines */
+        font-family: Helvetica, Arial, Sans-Serif !important;
+	font-size: 16px;
+	font-weight: bold;
+	display: block;
+        color: #555;
+        margin: 0 0 10px 0 !important;
+        padding: 0;
+        letter-spacing: -1px;
+        text-transform: lowercase;
+        }
+.secondary h2 a:hover { /* Secondary H2 is sidebar headlines */
+        font-family: Helvetica, Arial, Sans-Serif !important;
+	font-size: 16px;
+	font-weight: bold;
+	display: inline;
+        color: #DA1074 !important;
+        padding: 0;
+        letter-spacing: -1px;
+        text-transform: lowercase;
+        text-decoration: none !important;
+        }
+
+.primary h3, .primary h4, .permalink .primary .aside h3 { /* H3 is entry headlines. H4 is comments and replyform headlines */
+	font-size: 2.2em;
+	font-weight: normal;
+	letter-spacing: -1px;
+	display: inline;
+	}
+
+.primary .aside h3 {
+	font-size: 1.6em;
+	font-weight: normal;
+	}
+
+.itemhead {
+	margin-top: 10px;
+	}
+
+.itemtext h3 { /* For use on Pages */
+	font-size: 1.7em;
+	display: block;
+	padding: 15px 0 0;
+	}
+
+.itemtext h4 { /* For use on Pages */
+	font-size: 1.5em;
+	display: block;
+	padding: 15px 0 0;
+	}
+
+.secondary div {
+	margin: 20px 0 0;
+	padding: 0;
+	}
+
+.secondary div div div {
+        margin: 0;
+        }
+
+.primary .metalink a, .primary .metalink a:visited, /* The Metalink class takes care of the comments, edit, rss and trackback links next to the titles */
+.secondary .metalink a, .secondary .metalink a:visited,
+.secondary span a, .secondary span a:visited {
+	color: #999;
+	font-weight: normal;
+	}
+
+.primary .item .itemhead .metalink, .comments .primary .metalink {
+	font-size: 1.8em;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	margin-left: 15px;
+	}
+
+.primary .aside .itemhead .metalink {
+	font-size: 1.4em;
+	}
+
+.permalink .primary .aside .itemtext {
+	font-size: 1.4em;
+	color: #999;
+	}
+
+.comments .primary .metalink {
+	margin: 0 15px 0 0;
+	float: none;
+	}
+
+.feedicon { /* Next to Comment Section Headline */
+        border: 0 !important;
+	padding: 0 !important;
+	}
+
+.feedlink img { /* On the sidebar */
+	display: none !important;
+	}
+
+.primary .aside {
+	padding: 8px;
+	margin: 0 4%;
+	}
+
+.secondary .aside {
+	margin: 0;
+	padding: 0 0 10px;
+	word-spacing: -1px;
+	}
+
+.secondary .aside .metalink {
+	padding-left: 0px;
+	}
+
+.secondary span a {
+	margin-left: 10px;
+	}
+
+.editlink img {
+	width: 16px;
+	height: 16px;
+	border: none !important;
+	padding: 0 !important;
+	margin: 4px 0 0 !important;
+	position: absolute;
+	right: 0;
+	}
+
+.aside .editlink img {
+	top: 9px;
+	}
+
+.commentseditlink {
+	border: none;
+	padding: 2px;
+	padding-left: 10px;
+	}
+
+.metalink a span {
+	display: none;
+	}
+
+.metalink a:hover span {
+	display: inline;
+	}
+
+h2, h2 a, h2 a:visited,
+h3, h3 a, h3 a:visited,
+h4, h4 a, h4 a:visited {
+	color: #444;
+	}
+
+h2, h2 a, h2 a:hover, h2 a:visited,
+h3, h3 a, h3 a:hover, h3 a:visited,
+h4, h4 a, h4 a:hover, h4 a:visited {
+	text-decoration: none;
+	}
+
+.metadata { /* Time and category for blog entries */
+        font-size: 1em;
+	display: inline;
+	padding-top: 2px !important;
+	color: #bbb;
+        }
+
+.metadata a {
+	color: #DA1071 ;
+        font-weight: normal;
+	}
+
+.metadata a:hover{
+	color: #DA1071 !important;
+        text-decoration: underline !important;
+	}
+
+.metadata a:visited{
+        color: #666;
+        }
+
+.commentslink {
+	padding: 2px 0 2px 20px;
+	background: url('images/comment.png') left center no-repeat;
+	margin-right: 10px;
+	}
+
+.chronodata {
+        margin-left: 3px !important;
+	padding: 0;
+	color: #ccc !important;
+        font-family: Helvetica, Arial, Sans-Serif !important;
+        letter-spacing: -1px;
+        font-weight: bold;
+        font-size: 23px;
+        text-transform: lowercase;
+        display: inline;
+	}
+
+.tagdata {
+	display: inline;
+	padding: 2px 0 2px 20px;
+	background: url('images/tag_blue.png') left center no-repeat;
+	}
+
+.tagdata a {
+        color: #666 !important;
+        }
+
+/*- Primary Contents */
+
+
+.primary .item {
+        margin: 0;
+	padding: 0px 0 15px;
+	position: relative;
+	}
+
+.primary .item .itemtext {
+	font: 1.2em Trebuchet MS ;
+	text-align: left;
+	color: #333;
+        padding-bottom: 1px;
+        background: url('images/break.gif') bottom left repeat-x;
+        line-height: 150% !important;
+        margin-bottom: 2px;
+	}
+
+.primary .item .itemtext p,
+.primary .item .itemtext ul,
+.primary .item .itemtext ol,
+.primary .item .itemtext div,
+.primary .item .itemtext blockquote {
+	margin: 13px 0;
+	}
+
+.primary .aside .itemtext p,
+.primary .aside .itemtext ul,
+.primary .aside .itemtext ol,
+.primary .aside .itemtext div,
+.primary .aside .itemtext blockquote {
+	margin: 5px 0;
+	}
+
+.permalink .primary .aside .itemtext p,
+.permalink .primary .aside .itemtext ul,
+.permalink .primary .aside .itemtext ol,
+.permalink .primary .aside .itemtext div,
+.permalink .primary .aside .itemtext blockquote {
+	margin: 13px 0;
+	}
+
+.metalinks {
+	margin-top: 3px;
+	}
+
+.commentsrsslink {
+	background: url('images/feed.png') left top no-repeat;
+	padding: 2px 0 2px 20px;
+	margin-right: 10px;
+	height: 16px;
+	}
+
+.trackbacklink {
+	background: url('images/arrow_refresh.png') left top no-repeat;
+	padding: 2px 0 2px 20px;
+	height: 16px;
+	}
+
+.commentsrsslink a, .trackbacklink a {
+	color: #999;
+	padding: 2px;
+	}
+
+.comments .commentlist {
+	margin: 0;
+	padding: 20px 0;
+	position: relative;
+	}
+
+.comments .commentlist li {
+	margin: 10px 0;
+	padding: 10px 10px 5px;
+	list-style: none;
+	}
+
+.comments .commentlist li li {
+        list-style-type: square !important;
+}
+.comments .commentlist{
+	padding: 2px 0 2px 0px;
+	display: block;
+	}
+
+.commentmetadata {
+        font-size: 12px;
+        display: inline;
+        }
+
+.comments .commentlist li img {
+	padding: 0;
+	border: none;
+	}
+
+.comments .commentlist li img.gravatar {
+	float: right;
+	margin: -5px 0 0 10px;
+        background: url('images/defaultgravatar.jpg') no-repeat !important;
+        /*width: 32px;
+        height: 32px;*/
+	}
+
+.comments .commentlist li .commentauthor {
+	font-size: 1.4em;
+	font-weight: normal;
+	letter-spacing: -1px;
+	}
+
+.comments .commentlist li .counter {
+	font: normal 1.5em Helvetica, Sans-Serif;
+	color: #999;
+	float: left;
+	width: 35px;
+	}
+
+.comments .commentlist li.authorcomment {
+	background: #f6f7f8;
+
+	}
+
+.comments .pinglist {
+	font-size: 1.2em;
+	padding: 0;
+	margin: 0;
+	}
+
+.comments .pinglist li {
+	margin-left: 40px;
+	padding: 7px 0;
+	list-style: none;
+	}
+
+.comments .pinglist li .commentauthor {
+	font-weight: bold;
+	display: block;
+	}
+
+.comments .pinglist li small {
+	font: .8em Arial, Sans-Serif;
+	display: block;
+	}
+
+.comments .pinglist li .counter {
+	display: none;
+	}
+
+.comments .pinglist li span.favatar img {
+	margin-left: -25px;
+	border: none;
+	padding: 0;
+	float: left;
+	}
+
+.comments .pinglist li img {
+	padding: 0;
+	border: none;
+	}
+
+.comments #leavecomment {
+	text-align: center;
+	margin-bottom: 40px;
+	color: #ddd;
+	font-size: 2em;
+	letter-spacing: -2px;
+	}
+
+.comments #loading {
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 40px;
+	color: #ddd;
+	font-size: 2em;
+	letter-spacing: -1px;
+	}
+
+.comments form {
+        clear: both;
+	padding: 1px 0 30px;
+	margin: 0;
+	}
+
+input[type=text], textarea {
+	font: 1.1em Trebuchet MS;
+	padding: 3px;
+	color: #777;
+	}
+
+input[type=text]:focus, textarea:focus {
+	background: #fff;
+	color: #333;
+	border-color: #666;
+	}
+
+.comments form input[type=text] {
+	width: 45%;
+	margin: 5px 5px 1px 0;
+	}
+
+.comments form textarea {
+	height: 250px;
+	padding: 2px;
+	width: 100%;
+	}
+
+.comments form #submit {
+	margin: 0;
+	float: right;
+	}
+
+#footer {
+	background: #333333;
+	color: #fff;
+	padding: 0 0 15px 0;
+	position: relative;
+	text-align: center;
+        margin: 0 auto 0;
+        line-height: 150%;
+        }
+
+#footer a {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: underline;
+        }
+
+#footer a:hover {
+	border: none;
+	text-decoration: none;
+	color: #fff;
+        }
+
+/*- Links */
+
+.primary a:hover, .primary a:visited:hover,
+.secondary a:hover, .secondary a:visited:hover {
+text-decoration: underline !important;
+	}
+
+h2 a:hover, h2 span a:hover {
+	color: #990B4F!important;
+        text-decoration: none !important;
+	}
+
+a {
+	color: #DA1071;
+        border-bottom: none;
+        text-decoration: none !important;
+	}
+
+.itemtext a{
+        color: #DA1071;
+        text-decoration: none !important;
+        font-weight: normal;
+        }
+
+.itemtext a:hover{
+	color: #DA1071!important;
+        text-decoration: underline!important;
+        font-weight: normal;
+        }
+
+/*- Various Tags and Classes */
+
+.clear {
+	clear: both;
+	margin: 0;
+	padding: 0;
+	}
+
+.primary img {
+	margin-left: -5px;
+	padding: 4px;
+	border: 0px solid #ccc;
+	max-width: 100%;
+	}
+
+.center {
+	text-align: center;
+	}
+
+.alignright {
+	float: right;
+	}
+
+.alignleft {
+	float: left
+	}
+
+img.socialbkmark {
+        vertical-align: middle;
+        border: 0px;
+        margin-bottom: 4px;
+        }
+
+img.center, img[align="right"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+        padding: 0px;
+	border: 10px solid #ccc;
+	}
+
+img.alignright, img[align="right"] {
+	padding: 3px;
+	margin: 0 0 2px 7px;
+	display: inline;
+	}
+
+img.alignleft, img[align="left"] {
+	padding: 3px;
+	margin: 0 7px 2px 0;
+	display: inline;
+	}
+
+img.noborder {
+	border: none !important;
+	}
+
+.favorite img {
+        margin: 0 0 0 -15px !important;
+	padding: 0;
+	border: none !important;
+	}
+
+small {
+	font-size: .9em;
+	line-height: 1.5em;
+        color: #777;
+	}
+
+strike {
+	color: #777;
+	}
+
+code, pre {
+        font: 1em Monaco, Monospace, 'Courier New', Courier, Fixed;
+        display:block;
+        overflow:auto;
+        text-align:left;
+        background:#efefef;
+	padding: 5px;
+        border:1px solid #A6B0BF;
+	}
+
+pre code {
+	border: none!important;
+}
+
+code pre {
+	border: none!important;
+}
+
+acronym, abbr {
+/*	font-size: 0.9em;*/
+	letter-spacing: .07em;
+	border-bottom: 1px dotted #999;
+	cursor: help;
+	}
+
+blockquote {
+	margin: 20px 0;
+	padding: 0 20px 0 50px;
+	background: url('images/quote.png') 5% 0% no-repeat;
+	border: none;
+	}
+
+hr {
+	display: none;
+	}
+
+.navigation {
+	text-align: center;
+	margin: 10px 0 10px;
+	padding: 0;
+	width: 100%;
+	}
+
+.navigation .left {
+	float: left;
+	width: 50%;
+	text-align: left;
+	}
+
+.navigation .right {
+	float: right;
+	width: 50%;
+	text-align: right;
+	}
+
+.navigation p {
+	margin: 0;
+	padding: 0;
+	}
+
+.navigation a {
+	color: #999;
+	}
+
+.alert {
+	background: #FFF6BF;
+	border-top: 2px solid #FFD324;
+	border-bottom: 2px solid #FFD324;
+	text-align: center;
+	margin: 10px auto;
+	padding: 5px 20px;
+	}
+
+img.wp-smiley {
+	border: none !important;
+	padding: 0 0 0 5px !important;
+	}
+
+/*- Begin Lists */
+
+.itemtext ol {
+	padding: 0 0 0 35px;
+	margin: 0;
+	}
+
+.itemtext ul{
+/*        list-style-type: none !important;*/
+	padding-left: 20px;
+        }
+
+.itemtext ol li {
+	margin: 0 0 3px;
+	padding: 0;
+	}
+
+.itemtext ul li{
+        list-style-type: square !important;
+        }
+
+.secondary ul, .secondary ol {
+	margin: 5px 0 0;
+	padding-left: 0;
+	}
+
+.secondary ol {
+	margin-left: 15px;
+	}
+
+.secondary ul li, .secondary ol li {
+	margin: 0;
+	padding: 3px 0;
+	}
+
+.secondary ul li {
+	list-style-type: none;
+	}
+
+ol li {
+	list-style: decimal outside;
+	}
+
+.sb-links ul li {
+	margin-top: 20px;
+	}
+
+.sb-links ul ul li {
+	margin-top: 0;
+	}
+
+/*- Search Form and Livesearch */
+
+.sb-search {
+	margin-top: 20px;
+	}
+
+.sb-search h2 {
+	display: none;
+	}
+
+input[type=text], textarea {
+	color: #444;
+	padding: 2px 0 2px 2px;
+	margin: 0;
+	}
+
+input#livesearch {
+	width: 97.1%;
+	}
+
+input#s {
+	width: 75%;
+	}
+
+.livesearchform input[type=submit] {
+	margin: 0;
+	}
+
+#LSResult {
+	margin: 0;
+	width: 100.1%;
+	z-index: 100;
+	position: absolute;
+	background: #eee url('images/livesearchbg.jpg') center repeat-y;
+	border-bottom: 1px solid #eee;
+	}
+
+#LSResult a {
+        color: #DA1071 !important;
+        }
+
+#searchcontrols {
+	text-align: center;
+	padding: 1px;
+	background: #ddd url('images/livesearchbgdark.jpg') center repeat-y;
+	}
+
+#searchcontrols small {
+	margin: 0;
+	padding: 0;
+	}
+
+.LSRow:hover, #LSHighlight, #LSHighlight:hover {
+	background: #ffffcc url('images/livesearchbghilight.jpg') center repeat-y;
+        }
+
+#LSResult:hover #LSHighlight {
+	background: none;
+	border: none;
+	padding: 5px 2px;
+	}
+
+#LSHighlight small, #LSHighlight small span a {
+	color: #999;
+	}
+
+.LSRow {
+	padding: 5px 10px;
+        margin-bottom: 5px !important;
+	}
+
+.LSRow span a, .LSRow span a:visited {
+	word-spacing: -1px;
+	line-height: 1.3em;
+	font-weight: normal;
+	color: #bbb;
+	}
+
+
+/* CSS Beyond this point is for various supported plugins and not the 'core' K2 template */
+
+
+/*-
+	Brian's Latest Comments
+	http://meidell.dk/archives/2004/09/12/brians-latest-comments/
+*/
+
+.sb-comments ul li span a, div.sb-comments ul li small a {
+	color: #999;
+	font-weight: normal;
+	word-spacing: -1px;
+        line-height: 1.3em;
+	}
+
+
+.secondary div.sb-comments ul li {
+	margin-bottom: 3px;
+	}
+
+.activityentry {
+	font-size: 1.1em;
+        line-height: 12px !important;
+	}
+
+div.sb-comments small {
+	display: block;
+	margin: 0;
+	font-weight: normal;
+	}
+
+.flickr ul, .flickr li {
+        padding: 0; margin: 0; border: 0; display: inline; list-style-type: none;
+        }
+
+.flickr a {}
+
+.flickr a:hover {}
+
+.flickr a img {
+        border: 1px solid #bbb; padding: 3px; margin: 5px 5px 4px; list-style: none;
+        }
+
+.flickr a:hover img {
+        border: 1px solid #bbb; background: #ddd;
+        }
+/*-
+	WordPress: Touched
+	http://twilightuniverse.com/2005/03/wordpress-touched/
+
+	No support for Touched 0.6 in the rest of K2.
+	Seems a bit flaky just now. Waiting for new version.
+*/
+
+#poststuff fieldset {
+	border: none;
+	}
+
+#poststuff #title, #poststuff #excerpt, #poststuff #tags {
+	width: 470px;
+	}
+
+#poststuff #title {
+	font-size: 2em;
+	}
+
+
+/*
+	Ultimate Tag Warrior
+	K2 removes UTW's default tags for more default control.
+*/
+
+.localtags, .technoratitags {
+	display: none;
+	}
+
+
+/*
+	Contact Form
+*/
+
+.contactform {
+	width: 100%;
+	position: absolute;
+	}
+
+.contactleft {
+	width: 15%;
+	text-align: right;
+	clear: both;
+	float: left;
+	display: inline;
+	padding: 4px;
+	margin: 5px 0;
+	}
+
+.contactright {
+	width: 70%;
+	text-align: left;
+	float: right;
+	display: inline;
+	padding: 4px;
+	margin: 5px 0;
+	}
+
+.contacterror {
+	border: 1px solid #ff0000;
+	}
+
+
+.primary h3 a{
+       color: #555 !important;
+       font-family: Helvetica, Arial, Sans-Serif !important;
+       letter-spacing: -1px;
+       font-weight: bold;
+       font-size: 23px;
+       border-bottom: none !important;
+       text-transform: lowercase;
+       }
+
+.primary h3 a:hover{
+       text-decoration: none!important;
+       color: #DA1071 !important;
+       }
+
+a {
+       outline: none;
+       }
+
+a:active {
+       outline: none;
+       }
+
+
+/* Fading Tooltips By Dustin Diaz*/
+
+body div#toolTip {
+       position:absolute;
+       z-index:1000;
+       width:225px;
+       background:#000;
+       border:1px solid #fff;
+       text-align:left;
+       padding:5px;
+       min-height:2em;
+       }
+
+body div#toolTip p {
+       margin:0;
+       padding:0;
+       color:#fff;
+       font:11px/12px verdana,arial,sans-serif;
+       }
+
+body div#toolTip p em {
+       display:block;
+       margin-top:3px;
+       color:#DA1071;
+       font-style:normal;
+       font-weight:normal;
+       }
+
+body div#toolTip p em span {
+       font-weight:normal;
+       color:#fff;
+       }
+
+
+/*------------styling for bottomblock.php---------------*/
+
+#glass-bottomblock a {
+        color: #333;
+        text-decoration: none !important;
+        }
+
+#glass-bottomblock a:hover {
+	color: #333 !important;
+        text-decoration: underline!important;
+        }
+
+#glass-bottomblock a:visited {
+        color: #333;
+        }
+
+#glass-bottomblock { /* This is the main bottomblock container */
+        display: block;
+        height: 300px;
+        width: 765px;
+        padding: 5px 0px 10px 10px;
+        margin: 0;
+        background: #fff url('images/bottomblock_bg.jpg') top left repeat-x;
+        font-family: Trebuchet MS;
+        font-size: 1.15em;
+        color: #666 !important;
+        }
+
+#glass-bottomblock h2 {
+        font-size: 16px;
+        font-family: Helvetica, Arial, Sans-Serif !important;
+        text-transform: lowercase;
+        letter-spacing: -1px;
+        color: #363636 ;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        }
+
+/* These are the individual blocks */
+
+.bottomblockleft {
+        width: 220px;
+        height: 300px;
+        padding: 2px 10px 0px 13px;
+        float: left;
+        border:none;
+        background: transparent;
+        }
+
+.bottomblockmiddle {
+        width: 220px;
+        height: 300px;
+        padding: 2px 10px 0px 15px;
+        float: left;
+        border:none;
+        background: transparent;
+        }
+
+.bottomblockright {
+        width: 220px;
+        height: 300px;
+        padding: 0px 7px 0px 15px;
+        float: left;
+        border:none;
+        background: transparent;
+        }
+
+.bottomblockleft, .bottomblockmiddle {
+        margin-right:13px;
+        }
+.ft-about {
+        margin-top: -10px;
+        line-height: 1.5em;
+        }
+
+.sb-latest li {
+        padding: 0 0 4px 0;
+        margin-left: -40px;
+        list-style-type: none !important;
+        }
+
+.sb-latest h2 {
+        padding-left: 40px;
+        }
+
+.sb-latest ul {
+        margin-top: -10px;
+        }
+
+.sb-comments li {
+        padding: 0px 0 7px 0;
+        /*list-style: none !important;*/
+        list-style-type: square !important;
+        }
+
+.sb-comments {
+        margin: -10px 0 0 -40px !important;
+        text-transform: lowercase !important;
+        }
+
+textarea#comment {
+        background: transparent url('images/comment-textarea.png') no-repeat center;
+        }
+
+.item2 {
+        padding: 0px 0 60px;
+        font: 1.2em Trebuchet MS;
+        text-align: left;
+        color: #333;
+        padding-bottom: 1px;
+        line-height: 150% !important;
+        }
+
+.itemtext2 {
+        font: 1.2em Trebuchet MS ;
+        text-align: left;
+        color: #333;
+        padding-bottom: 1px;
+        line-height: 150% !important;
+        }
+
+.sb-latest2 a {
+        color: #333;
+        }
+
+.sb-latest2 a:hover {
+        text-decoration: underline !important;
+        }
+
+.delicious-extended {
+        font-size: 12px !important;
+        display: inline !important;
+        }
+
+.delicious-post {
+        margin-bottom: 8px !important;
+        }
+
+.comments h4 a {
+        font-family: Trebuchet MS !important;
+        font-size: 22px !important;
+        }
+
+.comments h4 {
+        font-family: Trebuchet MS !important;
+        font-size: 22px !important;
+        }
+
+.sb-about a:hover {
+        text-decoration: underline !important;
+        }
+
+.socialbkmark a:hover {
+        text-decoration: underline !important;
+        }
+
+.sb-related a:hover {
+        text-decoration: underline !important;
+        }
+
+.delPost {
+        margin: 0 0 8px 0 !important;
+        padding: 0 !important;
+        color: #666;
+        }
+
+.delPost a {
+        padding: 0.2em 0 !important;
+        width: 100%;
+        display: inline;
+        text-decoration: none;
+        border-top: 0px dotted #ccc;
+        color: #333;
+        }
+
+.delPost a:hover {
+        text-decoration: underline !important;
+        }
+
+/* RS CUSTOM */
+
+/* I give up! */
+/*
+DIV.imgCap {
+	float: right;
+	height: 155px;
+	width: 180px;
+	margin: 0 0 10px 10px;
+	border: 2px solid #999;
+}
+
+DIV.imgCap P {
+	color: #999;
+	font-size: 85%;
+	text-align: center;
+	margin: 0;
+}
+
+DIV.imgCap IMG {
+	padding-bottom: 0;
+	padding: 0;
+	margin: 0;
+}*/
+
+DIV.albumContainer {
+	float: left;
+	margin: 10px 0;
+}
+
+.albumContainer img {
+	border: 0!important;
+}
+
+.albumContainer a {
+	padding: 8px;
+ 	display: block;
+ 	float: left;
+}
+
+.albumContainer a:hover {
+	background: #ddd;
+}
+
+
+DIV.flickr {
+	float: left;
+	margin: 10px 0;
+}
+
+.flickr h3 { margin: 0 0 5px 0;}
+
+.flickr img {
+ 	width: 50px;
+ 	height: 50px;
+border: 0!important;
+ }
+
+.flickr a {
+ 	padding: 0px;
+ 	display: block;
+ 	float: left;
+}
+
+.flickr a:hover { background: #ddd; }
+
+.recent h4 {margin: 0 1em 0 0;}
+.recent h4 a {color: #799834;}
+.recent p {color:#666;}
+
+/*code:empty {
+	display: none;
+}*/
+
+span#showPopular {
+	cursor: pointer;
+}

@@ -1,0 +1,653 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+<title>remy sharp&#8217;s b:log</title>
+
+<link rel="shortcut icon" href="/web/20071011034050im_/http://remysharp.com/favicon.ico" type="image/x-icon" />
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /> -->
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
+<link rel="openid.server" href="http://www.myopenid.com/server" />
+<link rel="openid.delegate" href="http://remysharp.myopenid.com/" />
+<link media="screen,print" rel="stylesheet" type="text/css" href="style.css" />
+<link media="print" rel="stylesheet" href="print.css" type="text/css" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/wp-content/themes/illacrimo/js/utils.js"> </script>
+<script type="text/javascript" src="/web/20071011034050js_/http://del.icio.us/feeds/json/remy.sharp?count=5"></script>
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://remysharp.com/feed/" />
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://remysharp.com/feed/rss/" />
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://remysharp.com/feed/atom/" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="pingback" href="http://remysharp.com/xmlrpc.php" />
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://remysharp.com/xmlrpc.php?rsd" />
+	<meta name="keywords" content="bookmarklet,css,dconstruct,typography,darwin,dns,lookupd,mac,shell script,decimal,hex,javascript,numbers,dom,events,jquery,conference,fowa,patration,review,json,jsonp,Web,Apple,Code,Personal,Tips,jQuery,Movies,Dump,Rants,Business,Uncategorized" /></head>
+
+<body>
+
+<div class="BGC">
+<!-- start header -->
+
+
+ <div class="Header"><div class="LS"></div>
+  <h1><a href="/web.com/">remy sharp&#8217;s b:log</a></h1>
+   <p class="Desc">Tech bits &#8216;n bobs</p>
+  </div>
+
+ <div class="Menu">
+  <div class="MTL"></div><div class="MTR"></div>
+   <ul>
+   <li><a class="on" href="/"><span>Home</span></a></li>
+<li class="page_item"><a href="/about/" title="About"><span>About</span></a></li>
+  </ul>
+ </div>
+
+
+ <!-- Container -->
+<div class="CON">
+
+<!-- Start SC -->
+<div class="SC">
+
+<div class="Post" id="post-127" style="padding-bottom: 40px;">
+
+<div class="PostHead">
+<h1><a title="Permanent Link to What is JSONP?" href="/2007/10/08/what-is-jsonp/" rel="bookmark">What is JSONP?</a></h1>
+<!-- <small class="PostAuthor">Author: Remy Sharp </small> -->
+<p class="PostDate">
+<small class="day">8</small>
+<small class="month">Oct</small>
+<!-- <small class="year">2007</small> -->
+</p>
+</div>
+
+<div class="PostContent">
+<p>jQuery 1.2 introduced JSONP support, but on initial read of the release notes, I wasn&#8217;t completely sure what it was - so for anyone else that might want the Dr Seuss explanation.</p>
+
+<blockquote>
+  <p>JSONP is script tag injection, passing the response from the server in to a user specified function</p>
+</blockquote>
+
+<h2>How you can use JSONP</h2>
+
+<p>You need to mould both your request and response to handle JSONP - and in doing so, you can have cross domain JSON requests.</p>
+
+<p>Your server will need to return the response as JSON, but also wrap the response in the requested call back, something like this in PHP (hosted on http://myotherserver.com):</p>
+
+<pre><code>$data = getDataAsJSON($_GET['id']);
+echo $_GET['jsonp_callback'] . '(' . $data . ');';
+// prints: jsonp123({"name" : "Remy", "id" : "10", "blog" : "http://remysharp.com"});</code></pre>
+
+<p>The jQuery script would be:</p>
+
+<pre><code>$.ajax({
+  dataType: 'jsonp',
+  data: 'id=10',
+  jsonp: 'jsonp_callback',
+  url: 'http://myotherserver.com/getdata',
+  success: function () {
+    // do stuff
+  },
+});</code></pre>
+
+<p>jQuery will change the url to include <code>&amp;jsonp_callback=jsonpmethod</code> - but you can exclude it and it default to just &#8216;callback&#8217;.</p>
+
+<h2>Example in the Wild</h2>
+
+<p><a href="/2007/05/18/add-twitter-to-your-blog-step-by-step/">Twitter&#8217;s JavaScript blog plugin</a> works in exactly the same way.  You create a function to handle the data from Twitter, and insert a script tag.  Once the script is inserted, it calls the function passing the Twitter data as a JSON object.</p>
+
+<h2>How it works in jQuery</h2>
+
+<p>jQuery attaches a global function to the <code>window</code> object that is called when the script is injected, then the function is removed on completion.</p>
+
+<p>Note that if the request is being made to the same domain, then jQuery will switch it down to a straight Ajax request.</p>
+
+<h2>Potential Problems</h2>
+
+<ol>
+<li>Security.  There&#8217;s documents out on the web that can help, but as a cursory check, I would check the referrer in the server side script.</li>
+<li>There&#8217;s no error handling.  The script injection either works, or it doesn&#8217;t.  If there&#8217;s an error from the injection, it&#8217;ll hit the page, and short of a window wide error handler (bad, bad, very bad), you need to be sure the return value is valid on the server side.</li>
+</ol>
+</div>
+<div class="PostDet">
+<ul>
+ <li class="PostCom"><a href="/2007/10/08/what-is-jsonp/#respond" title="Comment on What is JSONP?">0 Comments</a></li>
+ <li class="PostCateg">Filed under: <a href="/category/code/jquery/" title="View all posts in jQuery" rel="category tag">jQuery</a>,  <a href="/category/code/" title="View all posts in Code" rel="category tag">Code</a></li>
+ <li class="PostTags">Tags: <a href="/tag/javascript/" title="Browse for javascript" rel="tag">javascript</a>, <a href="/tag/jquery/" title="Browse for jquery" rel="tag">jquery</a>, <a href="/tag/json/" title="Browse for json" rel="tag">json</a>, <a href="/tag/jsonp/" title="Browse for jsonp" rel="tag">jsonp</a></li>
+</ul>
+</div>
+</div>
+
+<!---->
+<div class="clearer"></div>
+<div class="Post" id="post-126" style="padding-bottom: 40px;">
+
+<div class="PostHead">
+<h1><a title="Permanent Link to FOWA 2007 - followup" href="/2007/10/06/fowa-2007-followup/" rel="bookmark">FOWA 2007 - followup</a></h1>
+<!-- <small class="PostAuthor">Author: Remy Sharp </small> -->
+<p class="PostDate">
+<small class="day">6</small>
+<small class="month">Oct</small>
+<!-- <small class="year">2007</small> -->
+</p>
+</div>
+
+<div class="PostContent">
+<p>The <a href="/web/20071011034050/http://www.futureofwebapps.com/">FOWA</a> conference ran for two days from the 3rd of Oct.  My focus was very much the developer track, though perhaps I&#8217;ll visit next year and sit on some of the entrepreneur sessions.</p>
+
+<p>The highlights for me, in no particular order, were:</p>
+
+<ul>
+<li>Meeting and chatting to <a href="/web/20071011034050/http://ejohn.org/">John Resig</a></li>
+<li>Steve Souders&#8217; presentation on high performance web sites</li>
+<li>Patration! and 300 slides</li>
+<li>Taking Your Application Mobile &amp; <em>real</em> mobile web by <a href="/web/20071011034050/http://www.futureofwebapps.com/speakers.html#HeidiPollock">Heidi Pollock</a></li>
+<li>Diggnation</li>
+<li>Listening to <a href="/web/20071011034050/http://photomatt.net/">Matt Mullenweg</a></li>
+</ul>
+
+<p>New apps/web apps/services I discovered during the event (in order of appearance):</p>
+
+<ul>
+<li><a href="/web/20071011034050/http://www.picnik.com/">Picnik</a> - AIR based photo editing app</li>
+<li><a href="/web/20071011034050/http://alphaworks.ibm.com/tech/pagedetailer">IBM (free) web profiling tool</a></li>
+<li><a href="/web/20071011034050/http://comox.textdrive.com/pipermail/wp-hackers/2007-May/012893.html">HyperDB</a></li>
+<li><a href="/web/20071011034050/http://www.jwtmp.com/a/">Mobile phone acid test</a></li>
+<li><a href="/web/20071011034050/http://www.apml.org/">APML - Attention Profiling Mark-up Language</a> via a <em>very</em> early preview of&#8230;</li>
+<li><a href="/web/20071011034050/http://fav.or.it/" title="fav.or.it - favorit RSS Reader and Blogging Platform">fav.or.it</a></li>
+<li><a href="/web/20071011034050/http://www.dapper.net/" title="Dapper: The Data Mapper">Dapper</a> - user generated API(!!!)</li>
+<li><a href="/web/20071011034050/http://www.dopplr.com/" title="DOPPLR">Dopplr</a></li>
+<li><a href="/web/20071011034050/http://code.google.com/p/identity-matcher/">Identity matching</a> for twitter, flickr, MF identity matching (on Rails)</li>
+<li><a href="/web/20071011034050/http://plazes.com/" title="Home - Plazes - Right Plaze, Right People, Right Time">Plazes</a> - just for fun</li>
+<li><a href="/web/20071011034050/http://www.cometd.com/" title="☄ Cometd - The Scalable Comet Framework">Cometd</a> and <a href="/web/20071011034050/http://www.danga.com/perlbal/" title="Perlbal">Perlbal</a> for comet servers</li>
+<li><a href="/web/20071011034050/http://fireeagle.research.yahoo.com/" title="Fire Eagle is coming...">Fire Eagle</a> - no more naughtiness&#8230;</li>
+</ul>
+
+<h2>The Best Bits</h2>
+
+<p>Frankly the idea of going to a two day event where I knew absolutely no one, coupled with my exceptionally poor networking and small talk skills was a little bit daunting.  </p>
+
+<p>However, the sessions were superb.  A great effort on <a href="/web/20071011034050/http://www.carsonified.com/" title="Carsonified">Carsonified</a> (formally <a href="/web/20071011034050/http://www.carsonsystems.com/" title="Carson Systems Ltd.">Carson Systems</a>) part.</p>
+
+<h3>Web Site Performance</h3>
+
+<p>The first day held the Yahoo presentation on high performance web sites, and although I had inadvertently seen <a href="/web/20071011034050/http://feeds.yuiblog.com/~r/YahooUserInterfaceBlog/~3/152099220/">the presentation</a> already - the points Steve Souders ran over really started to drum in to my head - so much so, the first thing I did when I got back to <a href="/web/20071011034050/http://www.digitallook.com/">DL</a> was to start putting these in place for the latest project I&#8217;m working on.</p>
+
+<h3>Mobile Applications</h3>
+
+<p><a href="/web/20071011034050/http://www.phostar.com/~heidi/faq.html">Heidi Pollock</a> ran a session on mobile applications.  <a href="/web/20071011034050/http://www.flickr.com/photos/fromheidi/1475202249/in/photostream/">Her energy was great</a>.  Her hostility towards all the variations of mobile browsers was awesome - the mobile platform, and forget the iPhone, it&#8217;s a tiny, <em>tiny</em> drop in the ocean, has well over a 100 variations of browser.  On top of which, even with the same mobile phone, and same web site, the mobile carrier can still modify the payload causing additional headache to the whole mobile dev.  I thought I had problems with IE6 and IE7: phah!</p>
+
+<p>My first, and biggest annoyance from the conference, wasn&#8217;t the sessions, but perhaps the attendees - in particular, as each technology was announced, usually the first thing that would spring to mind, or be asked of the speaker was:</p>
+
+<blockquote>
+  <p>When will it be available on mobile?</p>
+</blockquote>
+
+<p>&lt;rant&gt; Who cares?  We don&#8217;t have a solid HTML platform on mobile yet.  The iPhone is going to support Flash, and soon so will Opera and the Blackberry, but there&#8217;s so many other devices out there - and isn&#8217;t the main point of mobile web apps that the target audience is <strong>so</strong> broad?  The iPhone and Opera devices sadly aren&#8217;t the majority, so if you want the attention of the big audience, forget <a href="/web/20071011034050/http://gears.google.com/" title="Google Gears (BETA)">Gears</a> on the mobile, forget <a href="/web/20071011034050/http://labs.adobe.com/technologies/air/" title="Adobe Labs - Adobe AIR">AIR</a> on the mobile - start with HTML on the mobile &lt;/rant&gt;</p>
+
+<p>Quick list of mobile bits if you&#8217;re interested:</p>
+
+<ol>
+<li>Best screen res to aim for is 176px wide.</li>
+<li>Forget standards and forget semantic web if you want to succeed.  An <code>&lt;h1&gt;</code> tag is easily, and better replaced by a <code>&lt;b&gt;</code> tag (note: not a <code>&lt;strong&gt;</code> tag - see next point).</li>
+<li><strong>Every</strong> byte counts.  A <code>&lt;b&gt;</code> tag is 10 characters less than a <code>&lt;strong&gt;</code> tag (since you&#8217;re closing tags too).</li>
+<li><strong>Every</strong> character counts - I can&#8217;t remember exactly, but it&#8217;s something like 20 chars wide by 9 lines deep.  If you&#8217;re translating - then think very carefully about your wording.</li>
+<li>Use xhtml mobile profile 1.0 and not 1.2 - it&#8217;s better supported.</li>
+<li>Checkout <a href="/web/20071011034050/http://wurfl.sourceforge.net/" title="WURFL">WURFL</a>.</li>
+<li><a href="/web/20071011034050/http://www.jwtmp.com/a/">Mobile phone acid test</a></li>
+<li>If I remember correctly, the most popular mobile browser is the <a href="/web/20071011034050/http://www.motorola.com/motoinfo/product/details.jsp?globalObjectId=69">Motorola V3</a></li>
+</ol>
+
+<h3>Meeting the Man Behind jQuery</h3>
+
+<p>Although <a href="/web/20071011034050/http://ejohn.org/" title="John Resig - JavaScript, Programming, and Web Applications">John Resig</a> wasn&#8217;t there to speak about <a href="/web/20071011034050/http://jquery.com/" title="jQuery: The Write Less, Do More, JavaScript Library">jQuery</a> is would only be polite to thank him for it.</p>
+
+<p><a href="/web/20071011034050/http://ejohn.org/blog/future-of-firefox-and-javascript/">His talk</a> covered how JavaScript is moving forward, and particularly JavaScript 2, how it will be available in IE, albeit kicking and <a href="/web/20071011034050/http://wiki.mozilla.org/Tamarin:ScreamingMonkey">screaming</a>.  </p>
+
+<p>Our conversation spurred me on to <a href="/web/20071011034050/http://www.mozilla.org/rhino/" title="Rhino - JavaScript for Java">Rhino</a> and <a href="/web/20071011034050/http://ejohn.org/blog/bringing-the-browser-to-the-server/">some server side DOM parsing</a> (which I&#8217;ll be posting on separately).</p>
+
+<h3>Utility Computing and 300 slides in 30 minutes</h3>
+
+<p>In honesty, I hadn&#8217;t heard of the chap before, nor had I heard of utility computing - though I certainly knew and employed the technique myself.</p>
+
+<p>The idea that the basic bits of building web sites we redo all the time, and how, for example, FaaS (Frameworks as a Service) allow us to leapfrog that tedious and simple tasks.  How products like <a href="/web/20071011034050/http://aws.amazon.com/s3" title="Amazon.com: Amazon S3, Amazon Simple Storage Service, Unlimited Online Storage: Amazon Web Services">S3</a> and <a href="/web/20071011034050/http://aws.amazon.com/ec2" title="Amazon.com: Amazon EC2, Amazon Elastic Compute Cloud, Virtual Grid Computing: Amazon Web Services">EC2</a> supply the HaaS (Hardware as a Service).</p>
+
+<p>However, all this intellectual and product gumph aside, he also threw himself through 300 slides in a carefully crafted 30 minutes and introduced (::erhem::) us to the word:</p>
+
+<blockquote>
+  <p><a href="/web/20071011034050/http://swardley.blogspot.com/"><strong>Patration</strong></a>: &#8220;the freedom and portability to move from one service provider to another without hindrance or boundaries&#8221;</p>
+</blockquote>
+
+<p>Which, silliness aside, is exactly the approach we should be taking when building our web apps.  The idea that if you&#8217;re using an external platform/provider, there should be some commonality to them to allow you to move without having to rewire your entire solution.  You wouldn&#8217;t rewire your house just because you moved would you.</p>
+
+<h3>Wordpress Founder</h3>
+
+<p>Listening to <a href="/web/20071011034050/http://photomatt.net/">Matt Mullenweg</a> and not only realising that everything he had said made sense, but it was also stuff I knew.  This only says that I&#8217;ve been doing the right thing, and if he can make a great business (and his own mark out on the web) out of it, then I definitely have it lurking inside me somewhere too.  No doubt so do many other people, and I look forward to their competition and being spurred on.</p>
+
+<h3>Diggnation, and a 1000 over excited techies</h3>
+
+<p>I&#8217;ve never seen <a href="/web/20071011034050/http://www.diggnation.com/">Diggnation</a> before, so the idea of it being filmed live wasn&#8217;t that exciting (particular as I was on my own).  The only thing I get excited about is the prospect, and actually having, snowboarding holidays, and perhaps sticking IE one after cracking some bug - aside from that, I&#8217;m pretty unimpressed by most things.</p>
+
+<p>The £3 bottle of Becks helped (yep, £3, ouch!), but the biggest thing I was surprised about, and still can&#8217;t get my head around, was the some 1,000 (perhaps&#8230;) techies, standing, shouting, whooping, and yelling for Diggnation and Kevin Rose.  It felt quite wrong!</p>
+
+<p>All that said, I really did laugh out loud and hard at the comedy <a href="/web/20071011034050/http://en.wikipedia.org/wiki/Alex_Albrecht">Alex Albrecht</a> had somehow produced by playing against straight guy Kevin Rose.</p>
+
+<h2>Future of Web Apps</h2>
+
+<p>Anyone wanting to know what the future holds for web apps: either get yourself some tickets for the next event, or even better: go out and create the future of web apps.</p>
+
+<p>We&#8217;re in the midst of a web revolution, and expectations are high, and the competition is even higher.  However, there&#8217;s still room for the right idea to be bootstrapped and pushed kicking and screaming out of the door ready to take on the World.</p>
+
+<p>Good luck developers, and I&#8217;ll see you by the bucket at the end of the rainbow!</p>
+</div>
+<div class="PostDet">
+<ul>
+ <li class="PostCom"><a href="/2007/10/06/fowa-2007-followup/#respond" title="Comment on FOWA 2007 - followup">0 Comments</a></li>
+ <li class="PostCateg">Filed under: <a href="/category/web/" title="View all posts in Web" rel="category tag">Web</a></li>
+ <li class="PostTags">Tags: <a href="/tag/conference/" title="Browse for conference" rel="tag">conference</a>, <a href="/tag/fowa/" title="Browse for fowa" rel="tag">fowa</a>, <a href="/tag/patration/" title="Browse for patration" rel="tag">patration</a>, <a href="/tag/review/" title="Browse for review" rel="tag">review</a></li>
+</ul>
+</div>
+</div>
+
+<!---->
+<div class="clearer"></div>
+<div class="Post" id="post-125" style="padding-bottom: 40px;">
+
+<div class="PostHead">
+<h1><a title="Permanent Link to FOWA 2007" href="/2007/10/03/fowa-2007/" rel="bookmark">FOWA 2007</a></h1>
+<!-- <small class="PostAuthor">Author: Remy Sharp </small> -->
+<p class="PostDate">
+<small class="day">3</small>
+<small class="month">Oct</small>
+<!-- <small class="year">2007</small> -->
+</p>
+</div>
+
+<div class="PostContent">
+<p>I&#8217;m off to the <a href="/web/20071011034050/http://www.futureofwebapps.com/" title="The Future of Web Apps - Web 2.0 Conference and Expo">Future of Web Apps</a> and following on from <a href="/web/20071011034050/http://2007.dconstruct.org/" title="dConstruct 2007: User Experience Design Conference">dConstruct</a>, I have high expectations.</p>
+
+<p>I&#8217;ve looked through the line up, and I&#8217;m 99% certain that I&#8217;ll be spending all my time watching the developer&#8217;s floor - <a href="/web/20071011034050/http://www.futureofwebapps.com/schedule.html">some pretty interesting stuff</a> (which I hope to write a few notes up later on in the week).</p>
+
+<p>The sessions that I&#8217;m most interested in hearing are:</p>
+
+<ul>
+<li>High Performance Websites - Steve Souders (Yahoo!)</li>
+<li>The Future of Firefox and JavaScript - John Resig (Mozilla Corporation)</li>
+<li>Comet: Making the Web a 2-Way Medium - Joe Walker (DWR)</li>
+<li>An Insight to FireEagle - Tom Coates (Yahoo!) </li>
+</ul>
+
+<p>That said, I can say I&#8217;m keen to hear all the sessions over the two conference, and no doubt that I&#8217;ll be laying my dirty little mitts on all the freebies I can get (and missing my wife those lonely days that I&#8217;m away from home)!</p>
+
+<p>There&#8217;s also <a href="/web/20071011034050/http://revision3.com/diggnation/">Diggnation</a> being filmed live on the Wednesday, which will be interesting to see - I&#8217;m not one of those that go droopy over Kevin Rose, and in honesty it&#8217;ll be the first Diggnation I&#8217;ll have actually seen.</p>
+
+<p>Then straight after there&#8217;s a shin dig (erhem - pardon the pun), which mixed with free booze, sounds like a good way to get over the mid-week hump.</p>
+</div>
+<div class="PostDet">
+<ul>
+ <li class="PostCom"><a href="/2007/10/03/fowa-2007/#respond" title="Comment on FOWA 2007">0 Comments</a></li>
+ <li class="PostCateg">Filed under: <a href="/category/web/" title="View all posts in Web" rel="category tag">Web</a></li>
+ <li class="PostTags">Tags: <a href="/tag/conference/" title="Browse for conference" rel="tag">conference</a>, <a href="/tag/fowa/" title="Browse for fowa" rel="tag">fowa</a></li>
+</ul>
+</div>
+</div>
+
+<!---->
+<div class="clearer"></div>
+<div class="Post" id="post-124" style="padding-bottom: 40px;">
+
+<div class="PostHead">
+<h1><a title="Permanent Link to Catch click events before the DOM is loaded" href="/2007/10/01/catch-click-events-before-the-dom-is-loaded/" rel="bookmark">Catch click events before the DOM is loaded</a></h1>
+<!-- <small class="PostAuthor">Author: Remy Sharp </small> -->
+<p class="PostDate">
+<small class="day">1</small>
+<small class="month">Oct</small>
+<!-- <small class="year">2007</small> -->
+</p>
+</div>
+
+<div class="PostContent">
+<p>I&#8217;m currently working on a project that&#8217;s heavily JavaScript driven.  One of the key goals of the project is to get the user to click a bright yellow button (I won&#8217;t go in to any more detail than that).</p>
+
+<p>The button is perfect, it&#8217;s eye catching and when you see it, you just want to click on it.  When it&#8217;s clicked, it fires the appropriate JavaScript event.</p>
+
+<h2>Problem!</h2>
+
+<p>However, our success was also our downfall: the button would be clickable before the <abbr title="Document Object Model">DOM</abbr> had completely loaded.</p>
+
+<p>The application wasn&#8217;t designed to degrade, mostly because it has a particular targeted audience, so the clicking action screws up the experience if the DOM isn&#8217;t finished and all the appropriate click handlers are in place (and yes: I did argue for a degrading system, but that&#8217;s entirely another story).</p>
+
+<h2>Solution.</h2>
+
+<p>The solution is straight forward.  You hook a click caching system during the DOM load.  </p>
+
+<p>All the links you want to catch an early click event, you add the following:</p>
+
+<pre><code>&lt;a href=&quot;#?&quot;
+  <strong>onclick=&quot;return earlyClickHandler.call(this);&quot;</strong>
+&gt;CLICK ME!&lt;/a&gt;</code></pre>
+
+<p>Then the following JavaScript needs to be added as the first block of JavaScript directly after you load <a href="/web/20071011034050/http://jquery.com/" title="jQuery: The Write Less, Do More, JavaScript Library">jQuery</a> (or your library du jour), in the <code>&lt;head&gt;</code> tag:</p>
+
+<pre><code>function earlyClickHandler() {
+  var t = this;
+  if (typeof $.isReady == 'boolean' &amp;&amp; $.isReady) {
+    return true;
+  } else if (!t.clicked){
+    t.clicked = true;
+    // once DOM is loaded, fire this click handler
+    $(function () {
+      $(t).click();
+    });
+  }
+  return false;
+}</code></pre>
+
+<p>The effect is the user can click on the link and it won&#8217;t do anything until the DOM is loaded, and once it is loaded, it will fire the click event the user requested.</p>
+
+<p>This example only caches one click event per link (with the <code>t.clicked = true</code>).  It is also using jQuery to test if the DOM is ready, and if it is, just pass control back to the DOM, which is in turn passed back to jQuery (assuming you&#8217;ve hooked an event).</p>
+
+<p>It should be simple enough to convert the function to work with <a href="/web/20071011034050/http://www.prototypejs.org/" title="Prototype JavaScript framework: Easy Ajax and DOM manipulation for dynamic web applications">Prototype</a> or <a href="/web/20071011034050/http://developer.yahoo.com/yui/" title="The Yahoo! User Interface Library (YUI)">YUI</a> or the library (or not) of your choice.</p>
+
+<h2>Wrap up.</h2>
+
+<p>I would only recommend using this technique when you absolutely must, because by adding the <code>onclick</code> attribute, you&#8217;re mixing behaviour with presentation.  There are <a href="/web/20071011034050/http://www.digital-web.com/articles/separating_behavior_and_structure_2/">articles explaining why this is a best practise</a> but I believe, in the right situation, it can benefit the user.</p>
+</div>
+<div class="PostDet">
+<ul>
+ <li class="PostCom"><a href="/2007/10/01/catch-click-events-before-the-dom-is-loaded/#respond" title="Comment on Catch click events before the DOM is loaded">0 Comments</a></li>
+ <li class="PostCateg">Filed under: <a href="/category/code/" title="View all posts in Code" rel="category tag">Code</a></li>
+ <li class="PostTags">Tags: <a href="/tag/dom/" title="Browse for dom" rel="tag">dom</a>, <a href="/tag/events/" title="Browse for events" rel="tag">events</a>, <a href="/tag/javascript/" title="Browse for javascript" rel="tag">javascript</a>, <a href="/tag/jquery/" title="Browse for jquery" rel="tag">jquery</a></li>
+</ul>
+</div>
+</div>
+
+<!---->
+<div class="clearer"></div>
+<div class="Post" id="post-123" style="padding-bottom: 40px;">
+
+<div class="PostHead">
+<h1><a title="Permanent Link to to hex" href="/2007/09/30/to-hex/" rel="bookmark">to hex</a></h1>
+<!-- <small class="PostAuthor">Author: Remy Sharp </small> -->
+<p class="PostDate">
+<small class="day">30</small>
+<small class="month">Sep</small>
+<!-- <small class="year">2007</small> -->
+</p>
+</div>
+
+<div class="PostContent">
+<div class='snipplr'>d.<span style="color: #006600;">toString</span><span style="color: #66cc66;">&#40;</span><span style="color: #CC0000;">16</span><span style="color: #66cc66;">&#41;</span></div><p></p>
+
+<p>Beautifully simple way to get a hex value from a number.  Note that <code>d</code> is a number.  If you want a string as a hex XML valid code, use:</p>
+
+<div class='snipplr'><span style="color: #3366CC;">'&amp;#x'</span> + parseInt<span style="color: #66cc66;">&#40;</span>number<span style="color: #66cc66;">&#41;</span>.<span style="color: #006600;">toString</span><span style="color: #66cc66;">&#40;</span><span style="color: #CC0000;">16</span><span style="color: #66cc66;">&#41;</span>.<span style="color: #006600;">toUpperCase</span><span style="color: #66cc66;">&#40;</span><span style="color: #66cc66;">&#41;</span> + <span style="color: #3366CC;">';'</span></div><p></p>
+</div>
+<div class="PostDet">
+<ul>
+ <li class="PostCom"><a href="/2007/09/30/to-hex/#respond" title="Comment on to hex">0 Comments</a></li>
+ <li class="PostCateg">Filed under: <a href="/category/code/dump/" title="View all posts in Dump" rel="category tag">Dump</a></li>
+ <li class="PostTags">Tags: <a href="/tag/decimal/" title="Browse for decimal" rel="tag">decimal</a>, <a href="/tag/hex/" title="Browse for hex" rel="tag">hex</a>, <a href="/tag/javascript/" title="Browse for javascript" rel="tag">javascript</a>, <a href="/tag/numbers/" title="Browse for numbers" rel="tag">numbers</a></li>
+</ul>
+</div>
+</div>
+
+<!---->
+<div class="clearer"></div>
+<div class="Post" id="post-122" style="padding-bottom: 40px;">
+
+<div class="PostHead">
+<h1><a title="Permanent Link to Restart lookupd (to refresh dns cache)" href="/2007/09/27/restart-lookupd-to-refresh-dns-cache/" rel="bookmark">Restart lookupd (to refresh dns cache)</a></h1>
+<!-- <small class="PostAuthor">Author: Remy Sharp </small> -->
+<p class="PostDate">
+<small class="day">27</small>
+<small class="month">Sep</small>
+<!-- <small class="year">2007</small> -->
+</p>
+</div>
+
+<div class="PostContent">
+<div class='snipplr'>ps ax | grep lookupd | grep -v grep | perl -ne 'split; print $_[0]' | xargs sudo kill -HUP</div><p></p>
+
+<p>I&#8217;m often connecting to different networks depending on what job I&#8217;m doing, and sometimes I&#8217;ll need to tweak my <code>/etc/hosts</code> file.  Since my system will cache DNS lookups, I&#8217;ll need to restart <code>lookupd</code>, and this command does it in one hit.</p>
+</div>
+<div class="PostDet">
+<ul>
+ <li class="PostCom"><a href="/2007/09/27/restart-lookupd-to-refresh-dns-cache/#comments" title="Comment on Restart lookupd (to refresh dns cache)">1 Comment</a></li>
+ <li class="PostCateg">Filed under: <a href="/category/code/dump/" title="View all posts in Dump" rel="category tag">Dump</a></li>
+ <li class="PostTags">Tags: <a href="/tag/darwin/" title="Browse for darwin" rel="tag">darwin</a>, <a href="/tag/dns/" title="Browse for dns" rel="tag">dns</a>, <a href="/tag/lookupd/" title="Browse for lookupd" rel="tag">lookupd</a>, <a href="/tag/mac/" title="Browse for mac" rel="tag">mac</a>, <a href="/tag/shell_script/" title="Browse for shell script" rel="tag">shell script</a></li>
+</ul>
+</div>
+</div>
+
+<!---->
+<div class="clearer"></div>
+<div class="Post" id="post-121" style="padding-bottom: 40px;">
+
+<div class="PostHead">
+<h1><a title="Permanent Link to Plain and simple" href="/2007/09/25/plain-and-simple/" rel="bookmark">Plain and simple</a></h1>
+<!-- <small class="PostAuthor">Author: Remy Sharp </small> -->
+<p class="PostDate">
+<small class="day">25</small>
+<small class="month">Sep</small>
+<!-- <small class="year">2007</small> -->
+</p>
+</div>
+
+<div class="PostContent">
+<p><a href="/web/20071011034050/http://cameronmoll.com/" title="Authentic Boredom ~ Delivered weekly by Cameron Moll">Cameron Moll</a> gave <a href="/web/20071011034050/http://cameronmoll.com/speaking/goodgreat/">a presentation</a> at <a href="/web/20071011034050/http://2007.dconstruct.org/" title="dConstruct 2007: User Experience Design Conference">dConstruct 2007</a>.</p>
+
+<p>At one point during the presentation, he demonstrated how he checked that the typography still held the weight on the National Gazette front page redesign (pg. 42).</p>
+
+<p>Since they&#8217;re fun nuggets of code, I&#8217;ve written a simple bookmarklet that strips colour, images and background decoration from the page, leaving you just the content and typography.</p>
+
+<p><a style="font-size: 150%; text-align: center;" href="javascript:(function(){var c=function(e){if(this==window)return new c(el);var a=/*@cc_on!*/0;var o={};if(a){o=e.getBoundingClientRect()}else if(document.getBoxObjectFor){o=document.getBoxObjectFor(e)}else{o={height:e.height,width:e.width}}return o};var f=document.getElementsByTagName('*');var i=f.length;var d=el=el2=s=null;var g='data:image/gif;base64,R0lGODlhAQABAIAAAMJ0IgAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';var b=document.body;var h='height';var w='width';while(i--){el=f[i];s=el.style;s.background='#fff';s.backgroundImage='none';s.border='0';var j=el.nodeName;if(j=='IMG'||(j=='INPUT'&amp;&amp;el.type.toLowerCase()=='image')){d=c(el);el.height=d[h];el.width=d[w];el.src=g}else if(j=='OBJECT'||j=='EMBED'||j=='IFRAME'){el2=document.createElement('img');el2.src=g;if(el[h]||el[w]){el2[h]=el[h];el2[w]=el[w]}else if(typeof el!='function'){d=c(el);el2[h]=d[h];el2[w]=d[w]}el.parentNode.replaceChild(el2,el)}else{s.color='#000'}}})();">Plainify</a></p>
+
+<p>Drag and drop the &#8216;plainify&#8217; link to your bookmark bar to install.</p>
+</div>
+<div class="PostDet">
+<ul>
+ <li class="PostCom"><a href="/2007/09/25/plain-and-simple/#respond" title="Comment on Plain and simple">0 Comments</a></li>
+ <li class="PostCateg">Filed under: <a href="/category/web/" title="View all posts in Web" rel="category tag">Web</a></li>
+ <li class="PostTags">Tags: <a href="/tag/bookmarklet/" title="Browse for bookmarklet" rel="tag">bookmarklet</a>, <a href="/tag/css/" title="Browse for css" rel="tag">css</a>, <a href="/tag/dconstruct/" title="Browse for dconstruct" rel="tag">dconstruct</a>, <a href="/tag/typography/" title="Browse for typography" rel="tag">typography</a></li>
+</ul>
+</div>
+</div>
+
+<!---->
+<div class="clearer"></div>
+
+<div class="Nav"> <span>Pages (14): </span><strong class='on'>1</strong> <a href="/page/2/">2</a>  <a href="/page/3/">3</a>  <a href="/page/4/">4</a> <a href="/page/2/">&raquo;</a> ... <a href="/page/14/">Last &raquo;</a></div>
+
+</div>
+<!-- End SC -->
+<div class="SR"><div class="SRL">
+
+<div class="Search">
+<form action="/index.php" method="post">
+<input type="text" name="s" class="keyword" />
+<div id="buttonsearch"><input name="submit" type="image" class="search" title="Search" src="images/images/ButtonTransparent.png" alt="Search" />
+</div>
+</form>
+</div>
+
+<div class="Syn"><div class="SynTop"></div>
+ <ul>
+  <li><a href="/feed/">Entries</a> (RSS)</li>
+  <li><a href="/comments/feed/">Comments</a> (RSS)</li>
+  <li><a href="/web/20071011034050/http://del.icio.us/rss/remy.sharp">Noteworthy Links</a> (RSS)</li>
+ </ul>
+</div>
+
+<div class="Tags">
+    <h3>Tags</h3>
+    <div class="cloud">
+
+<!-- Generated by 'Simple Tagging Plugin 1.6.7' - /web/20071011034050/http://trac.herewithme.fr/project/simpletagging/ -->
+<a style="font-size: 22px; color: #ffffff;" class="10" title="Tag: javascript (19)" href="/tag/javascript/">javascript</a>
+ <a style="font-size: 16.7px; color: #e8e8e8;" class="6" title="Tag: jquery (13)" href="/tag/jquery/">jquery</a>
+ <a style="font-size: 14px; color: #dcdcdc;" class="4" title="Tag: tutorial (10)" href="/tag/tutorial/">tutorial</a>
+ <a style="font-size: 14px; color: #dcdcdc;" class="4" title="Tag: mac (9)" href="/tag/mac/">mac</a>
+ <a style="font-size: 12.7px; color: #d7d7d7;" class="3" title="Tag: css (8)" href="/tag/css/">css</a>
+ <a style="font-size: 12.7px; color: #d7d7d7;" class="3" title="Tag: ie (7)" href="/tag/ie/">ie</a>
+ <a style="font-size: 11.3px; color: #d1d1d1;" class="2" title="Tag: ajax (6)" href="/tag/ajax/">ajax</a>
+ <a style="font-size: 11.3px; color: #d1d1d1;" class="2" title="Tag: textmate (5)" href="/tag/textmate/">textmate</a>
+ <a style="font-size: 11.3px; color: #d1d1d1;" class="2" title="Tag: mysql (5)" href="/tag/mysql/">mysql</a>
+ <a style="font-size: 10px; color: #cccccc;" class="1" title="Tag: apple (4)" href="/tag/apple/">apple</a>
+ <a style="font-size: 10px; color: #cccccc;" class="1" title="Tag: bug (4)" href="/tag/bug/">bug</a>
+ <a style="font-size: 10px; color: #cccccc;" class="1" title="Tag: plugin (4)" href="/tag/plugin/">plugin</a>
+ <a style="font-size: 10px; color: #cccccc;" class="1" title="Tag: development (4)" href="/tag/development/">development</a>
+ <a style="font-size: 10px; color: #cccccc;" class="1" title="Tag: apache (4)" href="/tag/apache/">apache</a>
+ <a style="font-size: 10px; color: #cccccc;" class="1" title="Tag: howto (4)" href="/tag/howto/">howto</a>
+ <a style="font-size: 10px; color: #cccccc;" class="1" title="Tag: php (4)" href="/tag/php/">php</a>
+ <a style="font-size: 10px; color: #cccccc;" class="1" title="Tag: screencast (4)" href="/tag/screencast/">screencast</a>
+ <a style="font-size: 10px; color: #cccccc;" class="1" title="Tag: wordpress (4)" href="/tag/wordpress/">wordpress</a>
+ <a style="font-size: 10px; color: #cccccc;" class="1" title="Tag: film (3)" href="/tag/film/">film</a>
+ <a style="font-size: 10px; color: #cccccc;" class="1" title="Tag: brighton (3)" href="/tag/brighton/">brighton</a>
+
+    </div>
+</div>
+
+<div class="Categ">
+  <h3>Popular Posts</h3>
+  <ul>
+   <li><a href="/2007/01/20/auto-populating-select-boxes-using-jquery-ajax/">Auto-populating Select Boxes using jQuery &amp; AJAX</a><!-- - 20,660 views--></li>
+<li><a href="/2007/03/05/jquery-ajaxed-forms/">jQuery AJAX'ed forms</a><!-- - 11,269 views--></li>
+<li><a href="/2007/03/13/firebug-in-ie-for-any-web-site/">Firebug in IE for *any* web site</a><!-- - 11,039 views--></li>
+<li><a href="/2007/01/25/jquery-tutorial-text-box-hints/">jQuery tutorial: Text box hints</a><!-- - 10,574 views--></li>
+<li><a href="/2006/10/01/wordpress-tagging-and-textmate/">Wordpress, Tagging and TextMate</a><!-- - 3,952 views--></li>
+<li><a href="/2007/05/18/add-twitter-to-your-blog-step-by-step/">Add Twitter to your blog (step-by-step)</a><!-- - 3,633 views--></li>
+<li><a href="/2007/03/19/a-few-more-jquery-plugins-crop-labelover-and-pluck/">A few more jQuery plugins: crop, labelOver and pluck</a><!-- - 3,619 views--></li>
+<li><a href="/2007/04/12/jquerys-this-demystified/">jQuery's this: demystified </a><!-- - 3,595 views--></li>
+<li><a href="/2007/07/03/a-way-to-keep-track-and-in-touch/">A way to keep track and in touch</a><!-- - 3,570 views--></li>
+<li><a href="/2007/03/20/how-to-add-twitter-to-your-blog-without-it-hanging-your-site/">How to add Twitter to your blog, without it hanging your site</a><!-- - 3,564 views--></li>
+  </ul>
+</div>
+
+<!-- Start Flickr Photostream -->
+<div class="Flickr">
+  <h3>PhotoStream</h3>
+  <ul>
+   <li><a href="/web/20071011034050/http://www.flickr.com/photos/remysharp/1458008027/" title="1981 - 3"><img src="http://farm2.static.flickr.com/1083/1458008027_f735553fe6_s.jpg" alt="1981 - 3" /></a></li><li><a href="/web/20071011034050/http://www.flickr.com/photos/remysharp/1458820178/" title="Mobile Home"><img src="http://farm2.static.flickr.com/1189/1458820178_1e4165b887_s.jpg" alt="Mobile Home" /></a></li><li><a href="/web/20071011034050/http://www.flickr.com/photos/remysharp/1458819642/" title="Fruity Snail"><img src="http://farm2.static.flickr.com/1370/1458819642_fcd3ac6015_s.jpg" alt="Fruity Snail" /></a></li><li><a href="/web/20071011034050/http://www.flickr.com/photos/remysharp/1458819222/" title="Autumn Web"><img src="http://farm2.static.flickr.com/1366/1458819222_e21261870f_s.jpg" alt="Autumn Web" /></a></li><li><a href="/web/20071011034050/http://www.flickr.com/photos/remysharp/1458818798/" title="Family of Snails"><img src="http://farm2.static.flickr.com/1127/1458818798_dd93da6bd9_s.jpg" alt="Family of Snails" /></a></li><li><a href="/web/20071011034050/http://www.flickr.com/photos/remysharp/1458818244/" title="Lazy Bird"><img src="http://farm2.static.flickr.com/1241/1458818244_ef837c1298_s.jpg" alt="Lazy Bird" /></a></li>
+  </ul>
+</div>
+<!-- End Flickr Photostream -->
+
+<div class="lastfm">
+<h3>Recent Albums</h3>
+    <ul>
+    <li><a href="/web/20071011034050/http://www.last.fm/music/Kate+Nash/_/Mouthwash"><img src="/web/20071011034050im_/http://remysharp.com/albums/Mouthwash%5EKate_Nash.jpg" height="60" width="60" alt="Album art for Mouthwash by Kate Nash" title="Kate Nash - Mouthwash" /></a></li><li><a href="/web/20071011034050/http://www.last.fm/music/Placebo/ancy+Boy"><img src="/web/20071011034050im_/http://remysharp.com/albums/Nancy_Boy%5EPlacebo.jpg" height="60" width="60" alt="Album art for ancy Boy by Placebo" title="Placebo - ancy Boy" /></a></li><li><a href="/web/20071011034050/http://www.last.fm/music/Papa+Roach/nfest"><img src="/web/20071011034050im_/http://remysharp.com/albums/Infest%5EPapa_Roach.jpg" height="60" width="60" alt="Album art for nfest by Papa Roach" title="Papa Roach - nfest" /></a></li><li><a href="/web/20071011034050/http://www.last.fm/music/Green+Day/005-01-15%3A+Boeblingen%2C+Germany"><img src="/web/20071011034050im_/http://remysharp.com/albums/2005-01-15:_Boeblingen,_Germany%5EGreen_Day.jpg" height="60" width="60" alt="Album art for 005-01-15: Boeblingen, Germany by Green Day" title="Green Day - 005-01-15: Boeblingen, Germany" /></a></li><li><a href="/web/20071011034050/http://www.last.fm/music/The+Shins/002-07-23%3A+TT+The+Bears"><img src="/web/20071011034050im_/http://remysharp.com/albums/2002-07-23:_TT_The_Bears%5EThe_Shins.jpg" height="60" width="60" alt="Album art for 002-07-23: TT The Bears by The Shins" title="The Shins - 002-07-23: TT The Bears" /></a></li><li><a href="/web/20071011034050/http://www.last.fm/music/The+Prodigy/992-04-24%3A+The+Eclipse%2C+Norwich%2C+UK"><img src="/web/20071011034050im_/http://remysharp.com/albums/1992-04-24:_The_Eclipse,_Norwich,_UK%5EThe_Prodigy.jpg" height="60" width="60" alt="Album art for 992-04-24: The Eclipse, Norwich, UK by The Prodigy" title="The Prodigy - 992-04-24: The Eclipse, Norwich, UK" /></a></li>    </ul>
+</div>
+
+<!-- Start Recent Comments -->
+<div class="LatestCom">
+<h3>Recent Comments</h3>
+ <ul>
+  <li><strong>Fidel Guajardo:</strong> <a href="/2007/04/12/jquerys-this-demystified/#comment-26410" title="View the entire comment by Fidel Guajardo">I quickly read thru your</a></li><li><strong>Remy Sharp:</strong> <a href="/2007/01/25/jquery-tutorial-text-box-hints/#comment-26378" title="View the entire comment by Remy Sharp">@Sam - unless I'm missing</a></li><li><strong>vince:</strong> <a href="/2007/09/18/auto-populate-multiple-select-boxes/#comment-26377" title="View the entire comment by vince">Thanks for this plugin !</a></li><li><strong>Sam:</strong> <a href="/2007/01/25/jquery-tutorial-text-box-hints/#comment-26349" title="View the entire comment by Sam">works great!  I am</a></li><li><strong>Remy Sharp:</strong> <a href="/2007/07/26/lastfm-recent-album-artwork-plugin/#comment-26179" title="View the entire comment by Remy Sharp">@Dale - the update happens</a></li><li><strong>Dale.:</strong> <a href="/2007/07/26/lastfm-recent-album-artwork-plugin/#comment-26176" title="View the entire comment by Dale.">Hey again,
+
+How often is this</a></li><li><strong>WP插件:Last.fm Recent Album Artwork | 帕兰的口袋:</strong> <a href="/2007/07/26/lastfm-recent-album-artwork-plugin/#comment-26116" title="View the entire comment by WP插件:Last.fm Recent Album Artwork | 帕兰的口袋">[...] WP官方下载页面 | 插件作者下载页面 [...]
+</a></li><li><strong>What is JSONP?:</strong> <a href="/2007/05/18/add-twitter-to-your-blog-step-by-step/#comment-26040" title="View the entire comment by What is JSONP?">[...] Twitter&#8217;s JavaScript blog plugin</a></li><li><strong>Craig:</strong> <a href="/2007/01/08/will-apples-os-x-be-stopping-at-106/#comment-25995" title="View the entire comment by Craig">I sure hope they get</a></li><li><strong>4 Links Today (2007-10-06):</strong> <a href="/2007/03/13/firebug-in-ie-for-any-web-site/#comment-25756" title="View the entire comment by 4 Links Today (2007-10-06)">[...] Firebug in IE for</a></li> </ul>
+</div>
+<!-- End Recent Comments -->
+
+
+</div><div class="SRR">
+
+<!--<h3>Links</h3>
+ <ul><li><a href="/web/20071011034050/http://www.sharpfocusfilms.com" rel="me">Sharp FOCUS Films</a></li>
+<li><a href="/web/20071011034050/http://flickr.com/photos/remysharp" rel="me">Flickr</a></li>
+<li><a href="/web/20071011034050/http://del.icio.us/remy.sharp">Bookmarks</a></li>
+<li><a href="/web/20071011034050/http://www.ihatemusic.com" rel="me" title="Marbles Squared, Interrupt Me! and Chess Timer">Palm Apps</a></li>
+<li><a href="/web/20071011034050/http://pspextra.com" rel="me" title="PSP News">PSP Extra!</a></li>
+<li><a href="/web/20071011034050/http://leftlogic.com" rel="me" title="My business">Left Logic</a></li>
+<li><a href="/web/20071011034050/http://www.google.com/search?q=%22remy+sharp%22">Google Me</a></li>
+</ul>-->
+
+<h3>Noteworthy</h3>
+<div id="deliciousContainer"></div>
+
+<br />
+
+<h3>Categories</h3>
+<ul>
+	<li><a href="/category/apple/" title="View all posts filed under Apple">Apple</a>
+</li>
+	<li><a href="/category/business/" title="View all posts filed under Business">Business</a>
+</li>
+	<li><a href="/category/code/" title="View all posts filed under Code">Code</a>
+	<ul class='children'>
+	<li><a href="/category/code/dump/" title="View all posts filed under Dump">Dump</a>
+</li>
+	<li><a href="/category/code/jquery/" title="View all posts filed under jQuery">jQuery</a>
+</li>
+	</ul>
+</li>
+	<li><a href="/category/movies/" title="View all posts filed under Movies">Movies</a>
+</li>
+	<li><a href="/category/personal/" title="View all posts filed under Personal">Personal</a>
+</li>
+	<li><a href="/category/rants/" title="View all posts filed under Rants">Rants</a>
+</li>
+	<li><a href="/category/tips/" title="View all posts filed under Tips">Tips</a>
+</li>
+	<li><a href="/category/web/" title="View all posts filed under Web">Web</a>
+</li>
+</ul>
+
+<br />
+
+<h3>Archives</h3>
+<ul>
+	<li><a href='/2007/10/' title='October 2007'>October 2007</a></li>
+	<li><a href='/2007/09/' title='September 2007'>September 2007</a></li>
+	<li><a href='/2007/08/' title='August 2007'>August 2007</a></li>
+	<li><a href='/2007/07/' title='July 2007'>July 2007</a></li>
+	<li><a href='/2007/06/' title='June 2007'>June 2007</a></li>
+	<li><a href='/2007/05/' title='May 2007'>May 2007</a></li>
+	<li><a href='/2007/04/' title='April 2007'>April 2007</a></li>
+	<li><a href='/2007/03/' title='March 2007'>March 2007</a></li>
+	<li><a href='/2007/02/' title='February 2007'>February 2007</a></li>
+	<li><a href='/2007/01/' title='January 2007'>January 2007</a></li>
+	<li><a href='/2006/12/' title='December 2006'>December 2006</a></li>
+	<li><a href='/2006/11/' title='November 2006'>November 2006</a></li>
+	<li><a href='/2006/10/' title='October 2006'>October 2006</a></li>
+	<li><a href='/2006/09/' title='September 2006'>September 2006</a></li>
+</ul>
+
+<br />
+
+</div></div>
+
+
+
+<!-- Container -->
+</div>
+
+<div class="Footer"><div class="FL"></div><div class="FR"></div>
+<p><strong>Copyright &copy; 2007 - remy sharp&#8217;s b:log - is proudly powered by <a href="/web/20071011034050/http://www.wordpress.com/">WordPress</a></strong><br />
+Illacrimo Theme is created by: <a href="/web/20071011034050/http://www.designdisease.com/">Design Disease</a> brought to you by <a href="/web/20071011034050/http://www.lifespy.com/">LifeSpy.</a> Made <a href="/web/20071011034050/http://validator.w3.org/check/referrer">XHTML</a> compliant by <a href="/">Remy Sharp</a>.</p>
+</div>
+
+</div>
+
+<script src="/web/20071011034050js_/http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+	_uacct = "UA-1656750-1";
+	urchinTracker();
+</script>
+</body>
+</html>
+
+
+
+
+
+<!--
+     FILE ARCHIVED ON 3:40:50 Oct 11, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 20:09:46 Aug 7, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
