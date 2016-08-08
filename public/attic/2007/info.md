@@ -1,0 +1,1 @@
+The second off-the-shelf wordpress design, this time from an author calling themselves Digital Disease, and the theme was called *Illacrimo*. I'm fairly sure I saw someone else's blog with this theme and liked it. It was a bit heavy on the eyes, and very narrow, which is why it didn't last long.
