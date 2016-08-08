@@ -3,9 +3,8 @@
   div.post-content
     p This is my attic (or more accurately, "the loft", since I'm english!), where I keep all my old designs of this blog. Each new design has a screenshot which links through to an achived front page from that time. Enjoy!
     each year in [2006, 2007, 2008, 2014]
-      div.post-content
-        h2= year
-        != partial(year + '/info')
-        p 
-          a(href="/attic/#{year}/")
-            img(src="/attic/#{year}/index.jpg" alt="Screenshot of my blog from #{year}")
+      h2= year
+      != partial(year + '/info')
+      p
+        a(href="/attic/#{year}/")
+          img(src="/attic/#{year}/index.jpg" alt="Screenshot of my blog from #{year}")

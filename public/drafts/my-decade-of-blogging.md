@@ -20,6 +20,8 @@ My blog started out as a WordPress blog (and actually got hacked a number of tim
 
 Since it was WordPress, it meant that the first (and second) design was a free template from the generous Wordpress theme designers. I registered remysharp.com on 13-June 2005, with the first incarnation of this blog on September 1st 2006 (and no, I have no idea what I did with the domain for those missing 9 months..!).
 
+Below is the first visual version of my blog, and I recently added [the attic](/attic) to my blog showing off the designs and reasoning behind each update.
+
 ![My blog in 2007](/images/blog-200702-cropped.png)
 
 ## The best of my blog
@@ -47,7 +49,7 @@ Ever single URL on my blog that's ever been published still works, and even bett
 
 I [started my company](/2006/09/05/birth), [won a CSS book](https://remysharp.com/2006/12/19/css-mastery-ipod-giveaway), [created a twitter script](https://remysharp.com/2007/03/20/how-to-add-twitter-to-your-blog-without-it-hanging-your-site) that would later appear on Bruce Campbell's website. I found a game I'd created mentioned [in American Scientific](https://remysharp.com/2007/03/23/the-day-i-appeared-in-scientific-american), finally did the [London to Brighton](https://remysharp.com/2007/06/19/our-london-to-brighton-bike-ride-and-route) bike ride.
 
-I gave [my first conference talk](https://remysharp.com/2008/03/13/presenting-jquery-at-qcon), hacked and created [JS Bin](/2008/10/06/js-bin-for-collaborative-javascript-debugging), then [launched our conference: ffconf](/2009/04/20/full-frontal-javascript-conference) (Full Frontal back then) and later [co-authored a book](https://www.amazon.com/Introducing-HTML5-Voices-That-Matter/dp/0321687299/ref=sr_1_2?ie=UTF8&qid=1470682881&sr=8-2) with my very good friend Bruce.
+I gave [my first conference talk](https://remysharp.com/2008/03/13/presenting-jquery-at-qcon), hacked and created [JS Bin](/2008/10/06/js-bin-for-collaborative-javascript-debugging), then [launched our conference: ffconf](/2009/04/20/full-frontal-javascript-conference) (Full Frontal back then) and later [co-authored a book](https://www.amazon.com/Introducing-HTML5-Voices-That-Matter/dp/0321687299/ref=sr_1_2?ie=UTF8&qid=1470682881&sr=8-2) with my good friend Bruce.
 
 I had the [worst year of my life](https://remysharp.com/2010/12/31/2010-the-year-ill-never-forget#tia), and the following year we had our [*rainbow baby*, Ellis](https://remysharp.com/2011/10/17/ellis-tennyson-sharp).
 
@@ -59,6 +61,6 @@ Returned to working [solo](https://remysharp.com/2015/01/05/reboot) and finally 
 
 I also launched [confwall](https://confwall.com) and number of other [smaller side projects](https://github.com/remy), like [nodemon](https://remysharp.com/2010/10/12/nodejs-rapid-development-nodemon).
 
-And quite possibly a bunch of other important things. Mostly though, I started my family with my amazing wife and parter in life: [Julie](https://remysharp.com/2014/12/06/to-you).
+And quite possibly a bunch of other important things. Mostly though, I started my family with my amazing wife and partner in life: [Julie](https://remysharp.com/2014/12/06/to-you).
 
 So I welcome the next decade. 2016 to 2026. I'll be 48. Wow. Nearly 50. That's kinda weird. But, pretty consistent with how time works. See you in the next blog post ❤
