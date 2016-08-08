@@ -37,3 +37,23 @@ I've run some analysis from the stats on Google Analytics (which I think I had f
 - Evolving it's design
 - Maintain all the URLs
 - The archive
+
+## What happened in those last 10 years?
+
+I [started my company](/2006/09/05/birth), [won a CSS book](https://remysharp.com/2006/12/19/css-mastery-ipod-giveaway), [created a twitter script](https://remysharp.com/2007/03/20/how-to-add-twitter-to-your-blog-without-it-hanging-your-site) that would later appear on Bruce Campbell's website. I found a game I'd created mentioned [in American Scientific](https://remysharp.com/2007/03/23/the-day-i-appeared-in-scientific-american), finally did the [London to Brighton](https://remysharp.com/2007/06/19/our-london-to-brighton-bike-ride-and-route) bike ride.
+
+I gave [my first conference talk](https://remysharp.com/2008/03/13/presenting-jquery-at-qcon), hacked and created [JS Bin](/2008/10/06/js-bin-for-collaborative-javascript-debugging), and later [launched our conference: ffconf](/2009/04/20/full-frontal-javascript-conference) (Full Frontal back then).
+
+I had the [worst year of my life](https://remysharp.com/2010/12/31/2010-the-year-ill-never-forget#tia), and the follow year we had our [*rainbow baby*, Ellis](https://remysharp.com/2011/10/17/ellis-tennyson-sharp).
+
+I started working on [JS Bin full time](https://remysharp.com/2013/08/14/jsbin-5th-birthday) and [hired a small team](https://remysharp.com/2013/09/24/i-am-hiring), talked openly about [paying to speak](https://remysharp.com/2014/03/07/youre-paying-to-speak).
+
+[Seren joined our family](https://remysharp.com/2014/12/31/my-2014#family).
+
+Returned to working [solo](https://remysharp.com/2015/01/05/reboot) and finally got my [body in shape](https://remysharp.com/2015/03/11/diet) and blogged about some of the [painful aspects of running JS Bin](https://remysharp.com/2015/09/14/jsbin-toxic-part-1).
+
+I also launched [confwall](https://confwall.com) and number of other [smaller side projects](https://github.com/remy), like [nodemon](https://remysharp.com/2010/10/12/nodejs-rapid-development-nodemon).
+
+And quite possibly a bunch of other important things. Mostly though, I started my family with my amazing wife and parter in life: [Julie](https://remysharp.com/2014/12/06/to-you).
+
+So I welcome the next decade. 2016 to 2026. I'll be 48. Wow. Nearly 50. That's kinda weird. But, pretty consistent with how time works. See you in the next blog post ❤
