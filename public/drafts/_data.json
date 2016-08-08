@@ -192,7 +192,7 @@
       "business",
       "web"
     ],
-    "modified": "2016-02-11 07:54:17"
+    "modified": "2016-07-29 11:06:53"
   },
   "terms-of-work": {
     "title": "Terms of work",
@@ -259,7 +259,7 @@
   "my-decade-of-blogging": {
     "title": "my decade of blogging",
     "date": "2016-04-03 12:53:49",
-    "modified": "2016-04-17 12:40:39",
+    "modified": "2016-08-08 21:02:44",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -290,7 +290,7 @@
   "tr-tricks": {
     "title": "tr tricks",
     "date": "2016-04-22 08:56:00",
-    "modified": "2016-04-22 09:01:05",
+    "modified": "2016-08-07 19:29:39",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -320,7 +320,7 @@
   "how-to-write-a-github-integration": {
     "title": "How to write a Github integration",
     "date": "2016-05-29 13:03:53",
-    "modified": "2016-05-30 20:41:08",
+    "modified": "2016-06-06 13:29:33",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -330,7 +330,7 @@
   "emoji": {
     "title": "Emoji",
     "date": "2016-06-01 12:10:20",
-    "modified": "2016-06-01 16:23:33",
+    "modified": "2016-07-28 10:47:51",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -340,7 +340,7 @@
   "wifi-and-vpns": {
     "title": "WiFi and VPNs",
     "date": "2016-06-05 14:52:06",
-    "modified": "2016-06-05 21:25:57",
+    "modified": "2016-06-06 13:29:33",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -350,7 +350,7 @@
   "var-const-let": {
     "title": "var const let",
     "date": "2016-06-06 21:13:45",
-    "modified": "2016-06-06 21:13:45",
+    "modified": "2016-07-23 11:22:00",
     "complete": true,
     "inprogress": false,
     "tags": [
@@ -360,7 +360,7 @@
   "csrf-the-service-worker-challenge": {
     "title": "csrf: the service worker challenge",
     "date": "2016-07-10 12:24:34",
-    "modified": "2016-07-10 12:24:34",
+    "modified": "2016-07-10 12:43:47",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -371,7 +371,7 @@
     "image": "/images/multiple-assignment.png",
     "title": "Multiple assignments",
     "date": "2016-07-23 09:43:53",
-    "modified": "2016-07-23 09:43:53",
+    "modified": "2016-07-23 11:06:59",
     "complete": true,
     "inprogress": false,
     "tags": [
@@ -381,7 +381,7 @@
   "es6-pure-dev-has-finally-arrived": {
     "title": "ES6 pure dev has finally arrived",
     "date": "2016-07-23 11:24:18",
-    "modified": "2016-07-23 11:24:18",
+    "modified": "2016-07-23 15:06:24",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -391,7 +391,7 @@
   "smooth-scroll-with-sticky-nav": {
     "title": "Smooth scroll with sticky navigation",
     "date": "2016-07-26 14:06:58",
-    "modified": "2016-07-26 14:06:58",
+    "modified": "2016-07-27 13:54:32",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -401,7 +401,7 @@
   "aws-lambda-gateway-workflow": {
     "title": "AWS lambda & gateway workflow",
     "date": "2016-07-27 13:09:24",
-    "modified": "2016-07-27 13:09:24",
+    "modified": "2016-07-28 17:11:46",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -411,7 +411,7 @@
   "remote-retrospectives-with-retrobot": {
     "title": "Remote retrospectives with Retrobot",
     "date": "2016-08-04 10:34:45",
-    "modified": "2016-08-04 10:34:45",
+    "modified": "2016-08-05 18:35:05",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -422,7 +422,7 @@
   "in-the-detail-close-button": {
     "title": "In the detail: close button",
     "date": "2016-08-05 18:24:26",
-    "modified": "2016-08-05 18:24:26",
+    "modified": "2016-08-07 13:47:52",
     "complete": true,
     "inprogress": false,
     "tags": [
