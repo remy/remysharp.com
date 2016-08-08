@@ -8,13 +8,11 @@ Regardless of whether this post is of interest to you: thanks for stopping by an
 
 ## In the beginning
 
-Although I retrospectively added a single older post, my first post on this blog was [Flickr geo tags](/2006/09/01/flickr-geo-tags). It's honestly nothing to write home about, and the following posts would be fairly mundane (comparatively), but that's okay.
+Although I retrospectively added a [single older post](/2006/06/17/auto-selecting-navigation), my first post on this blog was [Flickr geo tags](/2006/09/01/flickr-geo-tags). It's honestly nothing to write home about, and the following posts would be fairly mundane, **but that's okay**.
 
-I wanted to start a blog for a few reasons, but primarily as an online memory of things that would trip me up. Then knowing that I'd written about a problem before, I could just "google myself" to find the answer. I also wanted to share my experience of running a new business, using my blog as a diary.
+I wanted to start a blog for a few reasons, primarily as an online memory of things that would trip me up. Then knowing that I'd written about a problem before, I could just "google myself" to find the answer. That, and I also wanted to share my experience of running a new business, using my blog as a diary.
 
-Since I didn't have many of these "Google-able" problems, I also wanted my blog to reflect a bit of me too, so I included film reviews (at the time, Julie and I were visiting the cinema twice a week).
-
-One of the unexpected (but in retrospect, obvious) side effect is that my communication skills have improved and so has my spelling. I always found English skills hard as a kid (everyone close to me is pretty sure that I have some degree of dyslexia), but as I practise writing and spelling more and more each month and each year, it's become much easier.
+One of the unexpected side effects (but in retrospect, obvious) is that my communication skills improved and so did my spelling. I always found English skills hard as a kid (everyone close to me is pretty sure that I have some degree of dyslexia), but as I practise writing and spelling more and more each month and each year, it's become much easier.
 
 ## Design & technology
 
@@ -26,25 +24,32 @@ Since it was WordPress, it meant that the first (and second) design was a free t
 
 ## The best of my blog
 
-I've run some analysis from the stats on Google Analytics (which I think I had from day 1),
+I've run some analysis from the stats on Google Analytics (which I think I had from day 1), and below are 10 of the most viewed posts I've written (based on views over time):
 
-1.
-2.
-3. ...
+1. [Auto-populating Select Boxes using jQuery & AJAX](/2007/01/20/auto-populating-select-boxes-using-jquery-ajax) (Jan 2007, 1m views)
+- [HTML5 enabling script](/2009/01/07/html5-enabling-script) (Jan 2009, 600k views)
+- [The toxic side of free. Or: how I lost the love for my side project](/2015/09/14/jsbin-toxic-part-1) (Sept 2015, 129k views across the series)
+- [What is a Polyfill?](/2010/10/08/what-is-a-polyfill) (Oct 2010, 320k views)
+- [The Art of Debugging](/2015/10/14/the-art-of-debugging) (Oct 2015, 44k views)
+- [Why I love working with the web](/2016/01/20/why-i-love-working-with-the-web) (Jan 2016, 16k views)
+- [My Workflow: Never having to leave DevTools](/2012/12/21/my-workflow-never-having-to-leave-devtools) (Dec 2012, 60k views)
+- [My terminal setup](/2013/07/25/my-terminal-setup) (Aug 2013, 46k views)
+- [I know jQuery. Now what?](/2013/04/19/i-know-jquery-now-what) (Apr 2013, 48k views)
+- [Signs of a poorly written jQuery plugin](/2010/06/03/signs-of-a-poorly-written-jquery-plugin) (Jun 2010, 86k views)
 
 ## Proudest aspects of my blog
 
-- Evolving it's design
-- Maintain all the URLs
-- The archive
+The stuff I'm most chuffed with on my blog after this decade is that it's designed by me, it's all open source and driven by code I've written.
+
+Ever single URL on my blog that's ever been published still works, and even better than that (for *me*) is my [archive](/archive) showing off the decade of writing I've been producing over all this time 💪
 
 ## What happened in those last 10 years?
 
 I [started my company](/2006/09/05/birth), [won a CSS book](https://remysharp.com/2006/12/19/css-mastery-ipod-giveaway), [created a twitter script](https://remysharp.com/2007/03/20/how-to-add-twitter-to-your-blog-without-it-hanging-your-site) that would later appear on Bruce Campbell's website. I found a game I'd created mentioned [in American Scientific](https://remysharp.com/2007/03/23/the-day-i-appeared-in-scientific-american), finally did the [London to Brighton](https://remysharp.com/2007/06/19/our-london-to-brighton-bike-ride-and-route) bike ride.
 
-I gave [my first conference talk](https://remysharp.com/2008/03/13/presenting-jquery-at-qcon), hacked and created [JS Bin](/2008/10/06/js-bin-for-collaborative-javascript-debugging), and later [launched our conference: ffconf](/2009/04/20/full-frontal-javascript-conference) (Full Frontal back then).
+I gave [my first conference talk](https://remysharp.com/2008/03/13/presenting-jquery-at-qcon), hacked and created [JS Bin](/2008/10/06/js-bin-for-collaborative-javascript-debugging), then [launched our conference: ffconf](/2009/04/20/full-frontal-javascript-conference) (Full Frontal back then) and later [co-authored a book](https://www.amazon.com/Introducing-HTML5-Voices-That-Matter/dp/0321687299/ref=sr_1_2?ie=UTF8&qid=1470682881&sr=8-2) with my very good friend Bruce.
 
-I had the [worst year of my life](https://remysharp.com/2010/12/31/2010-the-year-ill-never-forget#tia), and the follow year we had our [*rainbow baby*, Ellis](https://remysharp.com/2011/10/17/ellis-tennyson-sharp).
+I had the [worst year of my life](https://remysharp.com/2010/12/31/2010-the-year-ill-never-forget#tia), and the following year we had our [*rainbow baby*, Ellis](https://remysharp.com/2011/10/17/ellis-tennyson-sharp).
 
 I started working on [JS Bin full time](https://remysharp.com/2013/08/14/jsbin-5th-birthday) and [hired a small team](https://remysharp.com/2013/09/24/i-am-hiring), talked openly about [paying to speak](https://remysharp.com/2014/03/07/youre-paying-to-speak).
 
