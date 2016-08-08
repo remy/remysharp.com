@@ -24,9 +24,11 @@ Below is the first visual version of my blog, and I recently added [the attic](/
 
 ![My blog in 2007](/images/blog-200702-cropped.png)
 
+By 2014, I finally got off my derriere and completely wrote my blogging platform from scratch to run on node.js. The production version of my blog is a thin routing server that delivers static files. I wrote [about the process too](/2014/09/18/wordpress-ghost-harp-pt1), and now everything is on github for anyone to edit and send me a [pull request](https://github.com/remy/remysharp.com/pulls?utf8=%E2%9C%93&q=is%3Apr) if they please.
+
 ## The best of my blog
 
-I've run some analysis from the stats on Google Analytics (which I think I had from day 1), and below are 10 of the most viewed posts I've written (based on views over time):
+I've run some analysis from the stats on Google Analytics (which I think I had from day one), and below are 10 of the most read posts I've written (based on relative views):
 
 1. [Auto-populating Select Boxes using jQuery & AJAX](/2007/01/20/auto-populating-select-boxes-using-jquery-ajax) (Jan 2007, 1m views)
 - [HTML5 enabling script](/2009/01/07/html5-enabling-script) (Jan 2009, 600k views)
@@ -41,9 +43,9 @@ I've run some analysis from the stats on Google Analytics (which I think I had f
 
 ## Proudest aspects of my blog
 
-The stuff I'm most chuffed with on my blog after this decade is that it's designed by me, it's all open source and driven by code I've written.
+The stuff I'm most chuffed with on my blog after all this time, is that the blog is fully designed by me and it's all open source.
 
-Ever single URL on my blog that's ever been published still works, and even better than that (for *me*) is my [archive](/archive) showing off the decade of writing I've been producing over all this time 💪
+More importantly, every single URL on my blog that's ever been published still works, and even better than that (for *me*) is my [archive](/archive) showing off the decade of writing I've been producing over all this time 💪
 
 ## What happened in those last 10 years?
 
