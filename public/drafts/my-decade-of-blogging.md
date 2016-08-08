@@ -18,7 +18,9 @@ One of the unexpected (but in retrospect, obvious) side effect is that my commun
 
 ## Design & technology
 
-My blog started out as a WordPress blog (and actually got hacked a number of times which is why I eventually moved). Since it was WordPress, it meant that the first design was a free template (as was the second). I registered remysharp.com on 13-June 2005, with the first incarnation of this blog on September 1st 2006 (and no, I have no idea what I did with the domain for those missing 9 months..!).
+My blog started out as a WordPress blog (and actually got hacked a number of times to promote viagra and cialis…which franky I've no idea… also why I eventually moved).
+
+Since it was WordPress, it meant that the first (and second) design was a free template from the generous Wordpress theme designers. I registered remysharp.com on 13-June 2005, with the first incarnation of this blog on September 1st 2006 (and no, I have no idea what I did with the domain for those missing 9 months..!).
 
 ![My blog in 2007](/images/blog-200702-cropped.png)
 
@@ -26,6 +28,12 @@ My blog started out as a WordPress blog (and actually got hacked a number of tim
 
 I've run some analysis from the stats on Google Analytics (which I think I had from day 1),
 
+1.
+2.
+3. ...
 
+## Proudest aspects of my blog
 
-
+- Evolving it's design
+- Maintain all the URLs
+- The archive
