@@ -347,16 +347,6 @@
       "web"
     ]
   },
-  "var-const-let": {
-    "title": "var const let",
-    "date": "2016-06-06 21:13:45",
-    "modified": "2016-07-23 11:22:00",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "csrf-the-service-worker-challenge": {
     "title": "csrf: the service worker challenge",
     "date": "2016-07-10 12:24:34",
