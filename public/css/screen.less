@@ -1124,20 +1124,12 @@ details summary:after {
   input[type=email] {
     font-size: 16px;
     border: 1px solid @cta-color;
-    // border-top-left-radius: 2px;
-    // border-bottom-left-radius: 2px;
-    // border-right: 0;
-    // width: 60%;
-    // margin-right: 10px;
   }
 
   input[type=submit] {
     border: 1px solid @cta-color;
     background: @cta-color;
     color: white;
-    // border-top-right-radius: 2px;
-    // border-bottom-right-radius: 2px;
-    // border-left: 0;
     padding: 0 10px;
     cursor: pointer;
     font-size: 90%;
@@ -1154,22 +1146,28 @@ details summary:after {
 
 }
 
+.multi-column {
+  & {
+    padding: 0 10px;
+  }
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
 .row {
   display: block;
   overflow: hidden;
 
   & > * {
     box-sizing: border-box;
-    padding: 0 10px;
+    // padding: 0 10px;
     position: relative;
-  }
-
-  & > *:first-child {
-    padding-left: 0;
-  }
-
-  & > *:last-child {
-    padding-right: 0;
   }
 
   & > .row {
@@ -1182,6 +1180,8 @@ details summary:after {
   }
 
   .c2 {
+    .multi-column();
+
     &.s1 {
       width: 50%;
       float: left;
@@ -1190,6 +1190,7 @@ details summary:after {
   }
 
   .c3 {
+    .multi-column();
     &.s1 {
       width: 33%;
       float: left;
@@ -1204,6 +1205,8 @@ details summary:after {
   }
 
   .c4 {
+    .multi-column();
+
     &.s1 {
       width: 25%;
       float: left;

@@ -15,6 +15,7 @@ var pages = Object.keys(require('./public/_data.json'));
 var slugs = Object.keys(blogs).sort(function (a, b) {
   return blogs[a].date < blogs[b].date ? 1 : -1;
 });
+
 var route = router();
 var fourohfour = '';
 var mount;
@@ -352,7 +353,7 @@ function stat(filename) {
   });
 }
 
-global.recent = slugs.sort(function (a, b) {
+global.recent = slugs.slice(0).sort(function (a, b) {
   return blogs[a].modified < blogs[b].modified ? 1 : -1;
 }).slice(0, 3).map(function (id) {
   return {
