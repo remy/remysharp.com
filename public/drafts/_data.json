@@ -276,8 +276,8 @@
       "web"
     ]
   },
-  "why-be-a-web-worker": {
-    "title": "Why be a web worker",
+  "be-the-living-standard": {
+    "title": "Be the living standard",
     "date": "2016-04-11 21:37:18",
     "modified": "2016-04-11 21:43:29",
     "complete": false,
@@ -392,8 +392,8 @@
     "title": "AWS lambda & gateway workflow",
     "date": "2016-07-27 13:09:24",
     "modified": "2016-07-28 17:11:46",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]
@@ -402,8 +402,8 @@
     "title": "Remote retrospectives with Retrobot",
     "date": "2016-08-04 10:34:45",
     "modified": "2016-08-05 18:35:05",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web",
       "business"

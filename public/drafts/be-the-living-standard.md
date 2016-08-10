@@ -1,3 +1,5 @@
+# Be the living standard
+
 # Plain and simple
 
 *First draft of a keynote talk I'll give at Hackerfest*
