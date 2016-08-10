@@ -48,7 +48,7 @@ global.split = function (content) {
     }
     return _.trim();
   });
-}
+};
 
 // we use versions to cachebust our CSS & JS, but we only
 // cachebust on minor or major releases. A new blog post is

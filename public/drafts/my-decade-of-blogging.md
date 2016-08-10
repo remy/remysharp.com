@@ -16,9 +16,9 @@ One of the unexpected side effects (but in retrospect, obvious) is that my commu
 
 ## Design & technology
 
-My blog started out as a WordPress blog (and actually got hacked a number of times to promote viagra and cialis…which franky I've no idea… also why I eventually moved).
+My blog started out as a WordPress blog (and actually got hacked a number of times to promote viagra and cialis…which frankly I've no idea… also why I eventually moved).
 
-Since it was WordPress, it meant that the first (and second) design was a free template from the generous Wordpress theme designers. I registered remysharp.com on 13-June 2005, with the first incarnation of this blog on September 1st 2006 (and no, I have no idea what I did with the domain for those missing 9 months..!).
+Since it was WordPress, it meant that the first (and second) design was a free template from the generous Wordpress theme designers. I registered remysharp.com on 13-June 2005, with the first incarnation of this blog on September 1st 2006 (and no, I have no idea what I did with the domain for those nearly a year and a half…!).
 
 Below is the first visual version of my blog, and I recently added [the attic](/attic) to my blog showing off the designs and reasoning behind each update.
 

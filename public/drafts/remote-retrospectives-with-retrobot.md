@@ -28,12 +28,39 @@ Here's a few examples of what it looks like:
 
 ![Retrobot, worked well](/images/retro-worked-well.png)
 
-And the list of "needs work" (edited for the screenshot):
+And the list of "needs work" (note that most of the real items were removed for the screenshot):
 
 ![Retrobot, needs work](/images/retro-needs-work.png)
 
-## What were the pain points?
+## The why
 
-During a team summit, a few of us sat down to try to understand why the original process felt awkward. [Johanna Koll](https://twitter.com/johannakoll) ran the retrospectives and was already familiar with the process of writing up on the white boards with sticky notes
+During a team summit, a few of us sat down to try to understand why the original process felt awkward. [Johanna Koll](https://twitter.com/johannakoll) ran the retrospectives and was already familiar with the process of writing up on the white boards with sticky notes and as I mentioned, we used spreadsheet via Google to share the retrospective feedback.
+
+Having a remote team meant that we can't run white board sessions as often. One idea was to put a camera in front of a white board and we'd take turns to request sticky notes to be added. Quickly it was obvious that there would be a lot of waiting around for each team member to take their turn and we didn't want the retrospectives to be something that felt like a waste of time.
+
+Being remote also meant we had a number of tools already in our workflow, and Google spreadsheets didn't quite work for us. However, since we were all using Slack daily, this looked to fit well.
+
+We also noted that during our current process, there wasn't really much time to discuss the positive aspects of the sprint, but using Slack's emoji system is a *really* nice way to emote positive reactions to work done by others.
 
 ## How it works
+
+Behind the scenes, Retrobot uses [Small Win's slack](https://github.com/smallwins/slack) package which is pretty much of mirror of the Slack API.
+
+Once connected, the bot just keeps the state in memory (so it's a single instance, i.e. if you want another retrobot, you need to run it again). It then does some simple parsing on the messages and and triggers different actions during it's lifetime.
+
+The life cycle looks a little like this:
+
+- handle channel messages: start, stop, summary, etc
+- handle DM messages: +/- for worked well, needs work
+- on retro start:
+ - reset retrospective (check if flushed or not)
+ - list all the members of the channel that are active (ignoring DND and away)
+ - send each on a DM with the summary help
+ - add all messages to appropriate arrays
+ - handle any errors (prefix needs +/-)
+- on retro stop
+ - randomise message and print each message to the channel the retro was started from
+
+## Running the bot
+
+As I said, the Retrobot deploys easily to Heroku (and can quite happily run on a free instance) with the one-click deploy button on the repo, otherwise there's also instructions on how to manually deploy. I'd love to hear if you use this or how you might improve upon it.
