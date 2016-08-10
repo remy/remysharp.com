@@ -64,3 +64,5 @@ The life cycle looks a little like this:
 ## Running the bot
 
 As I said, the Retrobot deploys easily to Heroku (and can quite happily run on a free instance) with the one-click deploy button on the repo, otherwise there's also instructions on how to manually deploy. I'd love to hear if you use this or how you might improve upon it.
+
+Go ahead and get it from https://github.com/remy/retrobot
