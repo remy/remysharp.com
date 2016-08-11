@@ -34,7 +34,7 @@ And the list of "needs work" (note that most of the real items were removed for 
 
 ## The why
 
-During a team summit, a few of us sat down to try to understand why the original process felt awkward. [Johanna Koll](https://twitter.com/johannakoll) ran the retrospectives and was already familiar with the process of writing up on the white boards with sticky notes and as I mentioned, we used spreadsheet via Google to share the retrospective feedback.
+During a team summit, a few of us sat down to try to understand why the original process felt awkward. [Johanna Kollmann](https://twitter.com/johannakoll) ran the retrospectives and was already familiar with the process of writing up on the white boards with sticky notes and as I mentioned, we used spreadsheet via Google to share the retrospective feedback.
 
 Having a remote team meant that we can't run white board sessions as often. One idea was to put a camera in front of a white board and we'd take turns to request sticky notes to be added. Quickly it was obvious that there would be a lot of waiting around for each team member to take their turn and we didn't want the retrospectives to be something that felt like a waste of time.
 
