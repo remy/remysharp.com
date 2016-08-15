@@ -40,9 +40,9 @@ Should an organiser ask for a run through or the slides (well) ahead of time? Th
 1. I've been invited as speaker. I should be trusted that I can deliver my slides on the day.
 2. Quite often I'll write my slides the day before. I construct the narrative of the talk in my head and in blog posts in the months leading up, but the final result you'll see on stage is the first time it's all been put together.
 
-An organiser *offering* to help review my talk is very different. This is optional and a service they're offering.
+An organiser *offering* to help review my talk is very different. This is optional and a service they're offering. If you'd benefit from a review or a full run through, then absolutely take the opportunity, and in fact, if the organiser hasn't offered and you want
 
-So, should you (have to) deliver your slides ahead of time? No. The event trusts you. You're a professional.
+So, should you have to deliver your slides ahead of time? No. The event trusts you. You're a professional.
 
 ## Getting paid
 
@@ -80,6 +80,7 @@ Those costs include:
 - Time away whilst travelling and being at the event
 - Time not working on your business creating the slide deck
 - Reading related material
+- Exchange rate costs
 - Potentially preparing and testing code for demos
 - Learning the presentation software (I dare not upgrade Keynote to avoid breaking existing decks and having to learn a new UI)
 - Technical equipment (quite seriously the event should have this), i.e. power adapters, display adapters, clickers, presentation software
