@@ -2,7 +2,7 @@
 
 Today marks the 10 year anniversary of my blog and it's blog posts. This, I suspect, will be a super self indulgent post harking back to memories of how I did things, and my aspirations for the next decade.
 
-Regardless of whether this post is of interest to you: thanks for stopping by and reading ❤
+Regardless of whether this post is of interest to you: thanks for stopping by and reading over all this time ❤
 
 <!--more-->
 
@@ -49,7 +49,7 @@ More importantly, every single URL on my blog that's ever been published still w
 
 ## What happened in those last 10 years?
 
-I [started my company](/2006/09/05/birth), [won a CSS book](https://remysharp.com/2006/12/19/css-mastery-ipod-giveaway), [created a twitter script](https://remysharp.com/2007/03/20/how-to-add-twitter-to-your-blog-without-it-hanging-your-site) that would later appear on Bruce Campbell's website. I found a game I'd created mentioned [in American Scientific](https://remysharp.com/2007/03/23/the-day-i-appeared-in-scientific-american), finally did the [London to Brighton](https://remysharp.com/2007/06/19/our-london-to-brighton-bike-ride-and-route) bike ride.
+I [started my company](/2006/09/05/birth), [won a CSS book](https://remysharp.com/2006/12/19/css-mastery-ipod-giveaway), [created a popular twitter script](https://remysharp.com/2007/03/20/how-to-add-twitter-to-your-blog-without-it-hanging-your-site) that would later appear on Bruce Campbell's website. I found a game I'd created mentioned [in American Scientific](https://remysharp.com/2007/03/23/the-day-i-appeared-in-scientific-american), finally did the [London to Brighton](https://remysharp.com/2007/06/19/our-london-to-brighton-bike-ride-and-route) bike ride.
 
 I gave [my first conference talk](https://remysharp.com/2008/03/13/presenting-jquery-at-qcon), hacked and created [JS Bin](/2008/10/06/js-bin-for-collaborative-javascript-debugging), then [launched our conference: ffconf](/2009/04/20/full-frontal-javascript-conference) (Full Frontal back then) and later [co-authored a book](https://www.amazon.com/Introducing-HTML5-Voices-That-Matter/dp/0321687299/ref=sr_1_2?ie=UTF8&qid=1470682881&sr=8-2) with my good friend Bruce.
 

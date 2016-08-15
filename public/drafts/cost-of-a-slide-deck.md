@@ -1,6 +1,6 @@
 # Cost of a slide deck
 
-I've been asked quite a few times in the past about slides, the work involved, whether or not to repeat talks, being paid, whether filming is okay and how does that all relate to workshops. So I've tried to write down my stand on things and hopefully this is useful to some of you out there.
+I've been asked quite a few times in the past about slides, the work involved, whether or not to repeat talks, being paid, whether filming is okay and how does that all relate to workshops. So I've tried to write down my stand on things and ideally this is useful to some of you out there.
 
 <!--more-->
 
@@ -40,14 +40,13 @@ Should an organiser ask for a run through or the slides (well) ahead of time? Th
 1. I've been invited as speaker. I should be trusted that I can deliver my slides on the day.
 2. Quite often I'll write my slides the day before. I construct the narrative of the talk in my head and in blog posts in the months leading up, but the final result you'll see on stage is the first time it's all been put together.
 
-An organiser *offering* to help review my talk is very different. This is optional and a service they're offering. If you'd benefit from a review or a full run through, then absolutely take the opportunity, and in fact, if the organiser hasn't offered and you want
+An organiser *offering* to help review my talk is very different. This is optional and a service they're offering. If you'd benefit from a review or a full run through, then absolutely take the opportunity, and in fact, if the organiser hasn't offered and you want help, try not to be afraid to ask.
 
-So, should you have to deliver your slides ahead of time? No. The event trusts you. You're a professional.
+The event should trust you. You're a professional. Do what's right for you.
 
 ## Getting paid
 
-
-First of all: [you do not pay your own way](https://remysharp.com/2014/03/07/youre-paying-to-speak). **Absolutely not.** The very minimum you should be offered is travel and hotel costs covered (if applicable, ie. If it's a local meet up you probably can go without a hotel).
+First of all: [you do not pay your own way](https://remysharp.com/2014/03/07/youre-paying-to-speak). **Absolutely not.** The very minimum you should be offered is travel and hotel costs covered (if applicable, i.e. If it's a local meet up you probably can go without a hotel).
 
 If should be your choice to turn down this expense. I've written passionately about this (link earlier), so do take a moment to read that too if you're unsure.
 
