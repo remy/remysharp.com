@@ -48,8 +48,9 @@ block content
 
         p.metadata Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}.
 
-        footer.follow.update
-          != partial('../_partials/subscribe')
+        if !nosubscribe
+          footer.follow.update
+            != partial('../_partials/subscribe')
 
       if environment == "production"
         .comments
