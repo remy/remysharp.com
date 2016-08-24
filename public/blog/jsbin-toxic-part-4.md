@@ -54,7 +54,7 @@ Since pro accounts initially cost £6 for month, it turns out that this is low e
 
 This means that JS Bin was being used as a testing ground for stolen card numbers. If the card went through then they would use the card. Unbeknownst to me, the user wouldn't do *anything* on JS Bin, and I'd be on my merry way thinking I had a new pro sign up.
 
-Eventually, the rightful owner would thing, "What's this 'JS BIN PRO MONTHLY' doing on my statement", follow up with their bank, and raise a fraud complaint.
+Eventually, the rightful owner would think, "What's this 'JS BIN PRO MONTHLY' doing on my statement", follow up with their bank, and raise a fraud complaint.
 
 I can't win the complaint. The card was stolen, the £6 belongs to the original card owner, no question. But! If there's a dispute on Stripe, there's transaction fees for reversing charges. £15.34 in fact. Since I know I'll lose the dispute, **it's cost me, £21.54 to allow some shithead to use JS Bin as a stolen card testing facility**.
 
