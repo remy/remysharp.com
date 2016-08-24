@@ -302,7 +302,7 @@ There's a huge (business) demand for push notifications. The opportunities to re
 
 Push technology also requires a service worker, because the service worker will do the subscription, and receives the `push` message event.
 
-<img style="min-width: 280px; float: left; margin-bottom: 10px; margin-right: 20px;" src="/images/state-of-the-gap/push.gif" alt="Demo of Caturday push notification on Android">
+<img src="/images/state-of-the-gap/push.gif" style="min-width: 280px; float: left; margin-bottom: 10px; margin-right: 20px;" alt="Demo of Caturday push notification on Android">
 
 In [this push notification demo](https://caturday-post.herokuapp.com), what's important to notice here is that I didn't install the app to my phone. The tab and browser was completed closed. I simply accepted push notifications from the web site, and the notification still arrives. It's a little hard to see from the small animated gif (*sorry about that*), but after I close the browser, a notification from Chrome comes in at the very top left of the screen.
 

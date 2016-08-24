@@ -25,4 +25,4 @@ rss(version='2.0'
         link #{ post.url }
         pubDate #{ moment(post.date).format('ddd, DD MMM YYYY HH:mm:ss +0000') }
         description <![CDATA[!{ partial('blog/' + post.slug).replace(/<h1>.*?<\/h1>/, '').split('<!--more-->')[0].replace(/(<([^>]+)>)/ig, '').trim() }]]>
-        content:encoded <![CDATA[!{ partial('blog/' + post.slug).replace(/<h1>.*?<\/h1>/, '').replace(/<!--more-->\s\n+/m, '').replace(/<img src="\//g, '<img src="' + site_url + '/') }<p><em>Originally published on <a href="#{ post.url }">Remy Sharp's b:log</a></em></p>]]>
+        content:encoded <![CDATA[!{ partial('blog/' + post.slug).replace(/<h1>.*?<\/h1>/, '').replace(/<!--more-->\s\n+/m, '').replace(/<img src="\//g, '<img src="' + site_url + '/').replace(/<a href="\//g, '<a href="' + site_url + '/') }<p><em>Originally published on <a href="#{ post.url }">Remy Sharp's b:log</a></em></p>]]>
