@@ -4,6 +4,8 @@ You'd be six this week. August hasn't been nearly as painful as it has been in t
 
 <!--more-->
 
+[![A six I built for you](/images/lego-six.jpg)](https://www.flickr.com/photos/remysharp/28664007713/)
+
 Today is the 27 August 2016. Six years ago you weren't born yet. Julie, mummy, was 9 months and heavily pregnant. You were due any day now. Julie was off work and taking long and heavy walks waiting for you to arrive.
 
 I remember clearly in that week before, driving home from the supermarket, thinking that this is like the final level before everything changes. I remember thinking I need to be clearly focused on the road, because if I had an accident it could totally mess up this last sprint to the finish line: the finish line being our first child: you.
