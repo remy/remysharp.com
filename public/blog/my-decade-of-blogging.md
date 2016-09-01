@@ -1,6 +1,6 @@
 # My decade of blogging
 
-Today marks the 10 year anniversary of my blog and it's blog posts. This, I suspect, will be a super self indulgent post harking back to memories of how I did things, and my aspirations for the next decade.
+Today marks the 10 year anniversary of my blog and its blog posts. This, I suspect, will be a super self indulgent post harking back to memories of how I did things, and my aspirations for the next decade.
 
 Regardless of whether this post is of interest to you: thanks for stopping by and reading over all this time ❤
 
