@@ -256,16 +256,6 @@
     ],
     "modified": "2016-04-10 19:31:31"
   },
-  "my-decade-of-blogging": {
-    "title": "My Decade of Blogging",
-    "date": "2016-04-03 12:53:49",
-    "modified": "2016-08-08 21:02:44",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "personal"
-    ]
-  },
   "analytics-for-all-time-per-post": {
     "title": "Analytics for all time per post",
     "date": "2016-04-04 11:38:28",
@@ -456,6 +446,16 @@
     "inprogress": true,
     "tags": [
       "business"
+    ]
+  },
+  "cool-uris-dont-change": {
+    "title": "Cool URIs don't change",
+    "date": "2016-08-28 17:23:22",
+    "modified": "2016-08-28 17:23:22",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
     ]
   }
 }
