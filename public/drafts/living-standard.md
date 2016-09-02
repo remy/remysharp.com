@@ -1,4 +1,6 @@
-# Be the living standard
+# Living standard
+
+The web is a beautiful place. On the face of it: open to all. Complicated and yet still simple. Why do I still so strongly believe in the web? What's different today that makes the web so much more exciting than ever? And how can we help to keep the web a welcome and open place?
 
 # Plain and simple
 
@@ -17,3 +19,18 @@
 - [The copy and paste guide to your first service worker](https://remysharp.com/2016/03/22/the-copy--paste-guide-to-your-first-service-worker) 63
 - ["Why I don't like open source" - my thoughts](https://remysharp.com/2015/01/09/dont-like-open-source) 46
 - http://remysharp.com/2014/11/19/my-five-promise-patterns
+
+## Misc notes
+
+Title: Living Standard
+
+Abstract: The web is a beautiful place. On the face of it: open to all. Complicated and yet still simple. Why do I still so strongly believe in the web? What's different today that makes the web so much more exciting than ever? And how can we help to keep the web a welcome and open place?
+
+- Web standards
+- Not the latest technology
+- But also the latest technology
+- Don't be afraid to try things (though sometimes I am)
+- What does the future look like.
+- Why am I excited? It's taken years to get to the realisation that PWAs get us
+- Social standards, more people learning to code, more support groups, more diversity, giving people oppotunities that wouldn't normally have the chance
+- We're in a privilidge position, so we should use that to help others. To raise their voices.
