@@ -1,0 +1,113 @@
+
+html, body {
+  background: rgb(37, 37, 37);
+  background: white;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+
+*,
+#index-page article:nth-child(3n+0) h2.title,
+a,
+#index-page h1 a, #index-page h2 a,
+h1.title, h2.title,
+h1.title a, h2.title a {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
+  color: #37bd49;
+  color: #444;
+}
+
+#index-page h1,
+#index-page h2,
+#index-page h1 *,
+.subpanel,
+h1.title,
+h2.title {
+  background: #212121;
+  background: white !important;
+  color: #444;
+}
+
+a {
+  color: rgb(153, 153, 153);
+}
+
+a:hover {
+  background: rgb(153, 153, 153);
+  color: white;
+}
+
+hr {
+  border-top: 1px dotted #212121;
+}
+
+.follow {
+  border: 1px dotted #212121;
+}
+
+blockquote {
+  background: #212121;
+  background: white;
+  padding: 0;
+  margin: 0;
+  font-style: italic;
+  color: rgb(153, 153, 153);
+}
+
+blockquote * {
+  color: rgb(153, 153, 153);
+}
+
+blockquote:before {
+  content: '> ';
+  float: left;
+  margin-right: 10px;
+}
+
+footer {
+  margin-top: -20px;
+}
+
+img {
+  image-rendering: pixelated;
+}
+
+article.post h1:before {
+  content: '# ';
+}
+
+article.post h2:before {
+  content: '## ';
+}
+
+article.post h3:before {
+  content: '### ';
+}
+
+article.post strong:before {
+  content: '*';
+}
+
+article.post strong:after {
+  content: '*';
+}
+
+li {
+  list-style: none;
+}
+
+ul, ol {
+  padding-left: 0 !important;
+}
+
+li:before {
+  content: '* ';
+  color: rgb(153, 153, 153);
+}
+
+nav li:before {
+  content: '';
+}
+nav li:after {
+  content: '';
+}

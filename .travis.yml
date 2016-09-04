@@ -17,7 +17,7 @@ deploy:
   app: remysharp-com
   on:
     repo: remy/remysharp.com
-after_deply:
+after_deploy:
 - semantic-release post
 before_script:
 - npm prune
