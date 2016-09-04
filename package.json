@@ -10,6 +10,7 @@
     "start": "harp start",
     "build": "node server.js compile",
     "semantic-release": "npm run build",
+    "now-build": "",
     "update-timestamps": "hostname eq 'MacBook-Pro.local' && blog update-timestamps"
   },
   "bin": {

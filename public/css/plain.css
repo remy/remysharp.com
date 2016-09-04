@@ -17,6 +17,10 @@ h1.title a, h2.title a {
   color: #444;
 }
 
+pre code span {
+  color: rgb(191, 191, 191);
+}
+
 #index-page h1,
 #index-page h2,
 #index-page h1 *,
@@ -72,16 +76,10 @@ img {
   image-rendering: pixelated;
 }
 
-article.post h1:before {
-  content: '# ';
-}
-
-article.post h2:before {
-  content: '## ';
-}
-
+article.post h1:before,
+article.post h2:before,
 article.post h3:before {
-  content: '### ';
+  content: '# ';
 }
 
 article.post strong:before {
@@ -97,17 +95,20 @@ li {
 }
 
 ul, ol {
-  padding-left: 0 !important;
+  // padding-left: 0 !important;
 }
 
 li:before {
   content: '* ';
   color: rgb(153, 153, 153);
+  margin-left: -20px;
 }
 
 nav li:before {
   content: '';
+  margin-left: auto;
 }
-nav li:after {
-  content: '';
+
+.post-content ul {
+  padding-left: 0;
 }
