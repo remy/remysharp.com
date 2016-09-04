@@ -16,6 +16,7 @@
 - [Introducing emoji targeting](https://blog.twitter.com/2016/introducing-emoji-targeting)
 - [Poop is ice cream](http://www.huffingtonpost.com/2015/03/12/poop-emoji-ice-cream_n_6857388.html)
 - [🌲🌲🌲 Simulating real world with emojis](http://ncase.me/simulating/)
+- [Combined emojis can be split using JavaScript!](https://twitter.com/wesbos/status/769228067780825088)
 
 ---
 
