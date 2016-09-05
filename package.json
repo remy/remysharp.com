@@ -7,10 +7,9 @@
   },
   "scripts": {
     "test": "semantic-release pre",
-    "start": "harp start",
+    "start": "node server.js",
     "build": "node server.js compile",
     "semantic-release": "npm run build",
-    "now-build": "",
     "update-timestamps": "hostname eq 'MacBook-Pro.local' && blog update-timestamps"
   },
   "bin": {
