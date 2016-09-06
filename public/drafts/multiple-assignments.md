@@ -41,7 +41,7 @@ In the past, when I look at multiple assignments, I've always read it a bit like
 b = 10, a = b;
 ```
 
-**What you're signing on the left, is the result of the expression on the right.**
+**What you're seeing on the left, is the result of the expression on the right.**
 
 This doesn't have any significance when you're assigning something simple like `a = b = 10`, because the result of the expression `b = 10` is `10`.
 

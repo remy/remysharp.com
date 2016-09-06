@@ -10,4 +10,4 @@ Brower developer tools are like air to the web developer. We'll use them everyda
 
 But now there's so many features in the devtools, "what to learn & use?!" – I hear you cry! The **OPTIMISE YOUR WEB DEVELOPMENT WORKFLOW** session will guide you and teach about new DevTools features which can greatly enhance your workflow. Then the session will multiply your new knownledge by showing you how use devtools to debug your Node.js applications too!
 
-[Get your tickets today](https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/) or find out [more about ffconf](https://2016.ffconf.org/).
+[Get your tickets today](https://ffconf.org/tickets) or find out [more about ffconf](https://2016.ffconf.org/).

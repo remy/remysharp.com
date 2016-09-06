@@ -10,4 +10,4 @@ It's hard to know everything about the full process of releasing projects. For m
 
 That's why **ALL THINGS CONTINUOUS** is a session at ffconf 2016 this year. Continuous Deployment for everybody: from a one-person army to distributed teams. Ecosystem appraisal, time-saving tips and maximum velocity!
 
-[Get your tickets today](https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/) or find out [more about ffconf](https://2016.ffconf.org/).
+[Get your tickets today](https://ffconf.org/tickets) or find out [more about ffconf](https://2016.ffconf.org/).

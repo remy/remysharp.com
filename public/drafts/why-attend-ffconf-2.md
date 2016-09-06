@@ -10,4 +10,4 @@ I've never personally been a huge fan of *having* to use build tools to make my 
 
 The **NEXT LEVEL CSS** session is going to show us exactly how far along CSS has come along. While we were all looking the other way browsers have been implementing CSS features that do things you might think you need JavaScript or at least a pre-processor to achieve. We’ll see what's landing in the CSS specifications and your browsers right now and in the very near future.
 
-[Get your tickets today](https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/) or find out [more about ffconf](https://2016.ffconf.org/).
+[Get your tickets today](https://ffconf.org/tickets) or find out [more about ffconf](https://2016.ffconf.org/).

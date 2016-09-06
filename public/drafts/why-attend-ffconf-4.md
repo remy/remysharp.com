@@ -12,4 +12,4 @@ There's no doubt, it matters. But do you know how it all works in the browser? D
 
 Our TECHNOLOGIC (HUMAN AFTER ALL): **ACCESSIBILITY REMIX** session, with a little help from Daft Punk, we will explain accessibility mechanics in the browser, **why CSS isn't just about looking good**, and what tools you can use to get ahead of the game.
 
-[Get your tickets today](https://www.tickettailor.com/checkout/view-event/id/59241/chk/c851/) or find out [more about ffconf](https://2016.ffconf.org/).
+[Get your tickets today](https://ffconf.org/tickets) or find out [more about ffconf](https://2016.ffconf.org/).
