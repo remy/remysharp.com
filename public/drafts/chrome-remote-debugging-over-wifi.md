@@ -113,4 +113,4 @@ Now you're ready for [remote debugging without USB](#remote-debugging-without-us
 
 Whilst your device is running in ADB over network mode, it's open for **anyone to connect** to your device. It's recommended that you use this method over a trusted network, and most importantly, turn off the ADB over network once you're finished.
 
-If you manually switched ADB to use the network (using the vanilla method), then disconnecting (using `adb disconnect`) should reset the state.
+If you manually switched ADB to use the network (using the vanilla method), then disconnecting (using `adb usb` to return to USB mode) should reset the state.
