@@ -191,6 +191,14 @@ Notice that the DOM *doesn't* have an `onchange` and in fact the change event li
 
 🚨 There's a lot more code compared to my bind.js version, but this code *does* feel robust. How does that weigh against the fact that I can hack solutions faster when I mess directly with the DOM? I'm not sure.
 
+## Yeah, but what do you think, Remy?
+
+I'm going to stick with it. I feel like if it doesn't suit the entire application design, then I can either use it for a part of what I'm doing. I definitely feel like moving towards a state managed design is a positive thing for my coding.
+
+I'll be looking at the React Router next, then porting my code to the server (before I get too deep in client-side code).
+
+I think the next important steps will be to validate code design, typically this would be done with either a peer review or code review for a senior developer. Alas, poor me, I'm not in that position as I work alone (so you _may_ see some random tweets in the coming week!).
+
 ---
 
 ## TL;DR 🐎
