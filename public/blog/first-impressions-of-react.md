@@ -60,7 +60,7 @@ Well, it's quicker to code, that's for sure, but [this](https://facebook.github.
 
 HTML(like) syntax is concise compared to coding up a new `div` using JavaScript and then adding each property, making sure strings are escaped (or not), etc.
 
-To be super, super clear though (in my opinion, and I suspect this is the party line anyway): JSX should not land in the client at all. It should already transformed.
+To be super, super clear though (in my opinion, and I suspect this is the party line anyway): JSX should not land in the client at all. It should already be transformed.
 
 I like writing large swaths of HTML using Jade. I don't like *myself* for liking Jade over HTML, but it gets the job done for me.
 
