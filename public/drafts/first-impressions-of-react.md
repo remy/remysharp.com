@@ -24,7 +24,8 @@ Bind.js is a 2-way data binding library that uses DOM selectors to target elemen
 
 The solution isn't super pretty, but again, it was 45 minutes and does the trick:
 
-<!-- <a class="jsbin-embed" href="https://jsbin.com/raboqe/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.39.15"></script>-->
+<a class="jsbin-embed" href="https://jsbin.com/raboqe/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.39.15"></script>
+
 However, there's one line of code in the filter callback that I didn't like:
 
 ```js
