@@ -111,15 +111,15 @@ The code in `index.html` looks like this (yeah, there's [no body](https://www.yo
 
 So that's the `Message` component being composed into `Messages` and so on. I watched (at 2x speed) this interesting 30 minute talk on [re-write to React](https://www.youtube.com/watch?v=BF58ZJ1ZQxY). The gist being: the lowest leaf can be written as a React component, and then working *up* the chain, each component can be refactored to React and composed into the application.
 
-💡 I wondered whether I actually needed web components. Would this do the same job? In theory, they map to regular HTML components (like `input`, `tr`, `div` and so on), so they compose-able by default.
+💡 I wondered whether I actually needed web components. Would this do the same job? In theory, they map to regular HTML components (like `input`, `tr`, `div` and so on), so they're compose-able by default.
 
-But then…I wondered if web components can progressively enhance. I _think_ they can, but honestly, I don't know. I've never felt like they'd been adopted the way the web developers had hoped.
+But then…I wondered if web components can progressively enhance. I _think_ they can, but honestly, I don't know. I've never felt like they've been adopted the way the web developers had hoped.
 
 ## A sample of the work
 
 After ~3-4 hours of work, I got the list and filtering working (I didn't get the form to create new messages, but I will do).
 
-The main component is the `Messages` on that looks like this:
+The main component is the `Messages` one that looks like this:
 
 ```js
 const Messages = React.createClass({
