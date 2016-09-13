@@ -62,7 +62,7 @@ Well, it's quicker to code, that's for sure, but [this](https://facebook.github.
 
 > […However] we recommend using JSX because it is a concise and familiar syntax for defining tree structures with attributes.
 
-HTML(like) syntax is consice compared to coding up a new `div` using JavaScript and then adding each property, making sure strings are escaped (or not), etc.
+HTML(like) syntax is concise compared to coding up a new `div` using JavaScript and then adding each property, making sure strings are escaped (or not), etc.
 
 To be super, super clear though (in my opinion, and I suspect this is the party line anyway): JSX should not land in the client at all. It should already transformed.
 
@@ -190,11 +190,15 @@ Notice that the DOM *doesn't* have an `onchange` and in fact the change event li
 
 🚨 Although I'm not horrified by JSX (any more), I would like to try out the same program _without_ it and using vanilla JavaScript to generate my DOM. Even more appealing would be to have the templates in HTML, and have them sucked into my JavaScript and dynamically converted (though…am I just reinventing JSX in the process…?!).
 
+The only additional quirk of JSX is that HTML properties that I'm used to don't always get applied. I added an `autofocus` and then `autofocus="true"` and the final rendered DOM was missing the property. It only worked when I used `autoFocus="true"`…which wasn't intuitive at all.
+
 🚨 The "server-side React" articles that I've skimmed are making me reasonably confident that I can port all, if not *nearly* all this code to the server and make it drive the server side rendering (and potentially throw away the client side code…maybe). This is definitely compelling, but I'm not there yet.
 
 🚨 There's a lot more code compared to my bind.js version, but this code *does* feel robust. How does that weigh against the fact that I can hack solutions faster when I mess directly with the DOM? I'm not sure.
 
-🚨 devtools for React isn't bad either, gives you a view on the component tree I rendered, access to mess with the state directly from the devtools sidebar.
+🚨 When I come across the occasional "Caution: Never access refs inside of any component's render method" ([here](https://facebook.github.io/react/docs/more-about-refs.html#cautions)) it worries me that a small mistake comes with a *\_never\_* warning. Like…how badly will my my browser blow up!?
+
+🚨 [devtools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) for React isn't bad either, gives you a view on the component tree I rendered, access to mess with the state directly from the devtools sidebar.
 
 ## Yeah, but what do you think, Remy?
 
