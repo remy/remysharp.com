@@ -36,7 +36,7 @@ this.list.map((item, i) => {
 })
 ```
 
-The `splice` felt britle. It's also mutating the data in a pretty aggressive manner. Finally, I wasn't sure I could continue using bind.js for the rest of the app.
+The `splice` felt brittle. It's also mutating the data in a pretty aggressive manner. Finally, I wasn't sure I could continue using bind.js for the rest of the app.
 
 Whereas React should be able to do this stuff well (from what I understand), it can do more (like the app routing) and React should also let me move all the JavaScript into the server so that it's a Progressive Enhancement (whereas bind.js would use PE, but it would be more work and duplication of logic).
 
