@@ -164,7 +164,7 @@ const Messages = React.createClass({
 
 I got the answer from a Slack forum that I needed to `return` a single top-level node. I wasn't sure what that meant, but now, as I write this post, I realised.
 
-If I transform the XML (in my head) I see that I returning a the single response from `React.createElement`. It doesn't matter if that element has many nested elements, I have to return a root element for the render to work. Hence the divitus.
+If I transform the XML (in my head) I can visualise that I need to return a single object from the `render` function: the result of `React.createElement(…)`. It doesn't matter if that element has many nested elements, I have to return a root element for the render to work. Hence the divitus.
 
 🚨 Once I had wired up the state emitting from the `Filter` component, _up_ to the parent `MessageList` which then updates `state.data` which triggers an update to the `Messages`, it _kinda_ felt like I was just triggering events and reacting to them.
 
