@@ -22,7 +22,7 @@ I'm good at vanilla JavaScript, and I'd already written a data binding library (
 
 Bind.js is a 2-way data binding library that uses DOM selectors to target elements, and an augmented object that tracks changes via setter hooks.
 
-The solution isn't super pretty, but again, it was 45 minutes and does the trick:
+The solution isn't super pretty, but again, it was 30 minutes and does the trick:
 
 <a class="jsbin-embed" href="https://jsbin.com/raboqe/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.39.15"></script>
 
@@ -64,7 +64,7 @@ Well, it's quicker to code, that's for sure, but [this](https://facebook.github.
 
 HTML(like) syntax is consice compared to coding up a new `div` using JavaScript and then adding each property, making sure strings are escaped (or not), etc.
 
-To be super, super clear though (in my opinion, and I suspect this is the company message anyway): JSX should not land in the client at all. It should already transformed.
+To be super, super clear though (in my opinion, and I suspect this is the party line anyway): JSX should not land in the client at all. It should already transformed.
 
 I like writing large swaths of HTML using Jade. I don't like *myself* for liking Jade over HTML, but it gets the job done for me.
 
@@ -104,10 +104,10 @@ The code in `index.html` looks like this (yeah, there's [no body](https://www.yo
 "Composing" and "components" were two words that kept coming up, but after reading the Facebook React tutorial, and thinking about how this list would work, it does make sense. I'd need components for the following (pseudo-XML):
 
 ```xml
-<MessageList>
-  <Filter />
-  <Messages>
-    <Message />
+<MessageList>    // the app
+  <Filter />     // user input
+  <Messages>     // list of messages
+    <Message />  // individual messages
   </Messages>
   <NewMessage />
 </MessageList>
@@ -115,7 +115,7 @@ The code in `index.html` looks like this (yeah, there's [no body](https://www.yo
 
 So that's the `Message` component being composed into `Messages` and so on. I watched (at 2x speed) this interesting 30 minute talk on [re-write to React](https://www.youtube.com/watch?v=BF58ZJ1ZQxY). The gist being: the lowest leaf can be written as a React component, and then working *up* the chain, each component can be refactored to React and composed into the application.
 
-💡 I wondered whether I needed web components. Would this do the same job? In theory, they map to regular HTML components (like `input`, `tr`, `div` and so on), so they compose-able by default.
+💡 I wondered whether I actually needed web components. Would this do the same job? In theory, they map to regular HTML components (like `input`, `tr`, `div` and so on), so they compose-able by default.
 
 But then…I wondered if web components can progressively enhance. I _think_ they can, but honestly, I don't know. I've never felt like they'd been adopted the way the web developers had hoped.
 
@@ -123,7 +123,7 @@ But then…I wondered if web components can progressively enhance. I _think_ the
 
 After ~3-4 hours of work, I got the list and filtering working (I didn't get the form to create new messages, but I will do).
 
-The main component is the `Message` on that looks like this:
+The main component is the `Messages` on that looks like this:
 
 ```js
 const Messages = React.createClass({
@@ -172,7 +172,9 @@ If I transform the XML (in my head) I see that I returning a the single response
 
 🚨 Once I had wired up the state emitting from the `Filter` component, _up_ to the parent `MessageList` which then updates `state.data` which triggers an update to the `Messages`, it _kinda_ felt like I was just triggering events and reacting to them.
 
-Similarly to the architecture that Machina.js uses (I recalled this excellent talk from [Doug Neiner at jQuery 2013](https://vimeo.com/67473899)).
+Similarly to the architecture that the state machine library, Machina.js uses (I recalled this excellent talk from [Doug Neiner at jQuery 2013](https://vimeo.com/67473899))*.
+
+<small>* I later read that [_components are Just State Machines_](https://facebook.github.io/react/docs/interactivity-and-dynamic-uis.html#components-are-just-state-machines), which supports my initial gut feeling</small>
 
 But realising this sort of bummed me out. I was using the "super cool" React, only to write everything for myself and just pass events up the chain. Heck (I _thought_) I could write this myself!
 
@@ -192,7 +194,7 @@ Notice that the DOM *doesn't* have an `onchange` and in fact the change event li
 
 🚨 There's a lot more code compared to my bind.js version, but this code *does* feel robust. How does that weigh against the fact that I can hack solutions faster when I mess directly with the DOM? I'm not sure.
 
-🚨 [devtools](https://chrome.google.com/webstore/detail/fmkadmapgofadopljbjfkapdkoienihi) for React useful too. It gives me a view on the component tree I designed (rather than what was rendered into the DOM), then also access to mess with the state directly from the devtools sidebar.
+🚨 devtools for React isn't bad either, gives you a view on the component tree I rendered, access to mess with the state directly from the devtools sidebar.
 
 ## Yeah, but what do you think, Remy?
 
@@ -209,6 +211,6 @@ I think the next important steps will be to validate code design, typically this
 - There's a tonne of resources out there, but it's really hard to be sure where to start since there's so many resources and tutorials.
 - If you're curious, try to focus on React first, ignore the extra flux, redux, donaldux etc extra bits.
 - JSX isn't so bad (and made coding components faster), once I got over myself.
-- It all just feels a bit simplistic (at this stage), effectively it _feels_ like a simple event system. It reminded me of Doug Neiner's Machina.js talk](https://vimeo.com/67473899).
+- It all just feels a bit simplistic (at this stage), effectively it _feels_ like a simple state machine and it reminded me of [Doug Neiner's Machina.js talk](https://vimeo.com/67473899).
 
 Again, this was just a tip of the iceberg. I'm no fool. I know there's more to React than this. I'm trying to build a web app that uses progressive enhancement as a design principle with state as a core value to the coding approach.
