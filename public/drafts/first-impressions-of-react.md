@@ -191,6 +191,8 @@ Notice that the DOM *doesn't* have an `onchange` and in fact the change event li
 
 🚨 There's a lot more code compared to my bind.js version, but this code *does* feel robust. How does that weigh against the fact that I can hack solutions faster when I mess directly with the DOM? I'm not sure.
 
+🚨 [devtools](https://chrome.google.com/webstore/detail/fmkadmapgofadopljbjfkapdkoienihi) for React useful too. It gives me a view on the component tree I designed (rather than what was rendered into the DOM), then also access to mess with the state directly from the devtools sidebar.
+
 ## Yeah, but what do you think, Remy?
 
 I'm going to stick with it. I feel like if it doesn't suit the entire application design, then I can either use it for a part of what I'm doing. I definitely feel like moving towards a state managed design is a positive thing for my coding.
