@@ -14,7 +14,7 @@ I have a relatively simple web app to build (a closed system with only a little 
 
 > Create a list of items, with a form to add items and a control to filter those items.
 
-And yes, no I put it in writing, that *does* sound a lot like [todoMVC](http://todomvc.com/examples/react/)!
+And yes, now I put it in writing, that *does* sound a lot like [todoMVC](http://todomvc.com/examples/react/)!
 
 ## Setting a benchmark
 
