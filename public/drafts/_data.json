@@ -408,16 +408,6 @@
       "web"
     ]
   },
-  "why-attend-ffconf-3": {
-    "title": "Why attend ffconf #3: devtools",
-    "date": "2016-08-20 12:46:20",
-    "modified": "2016-08-20 12:46:20",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "business"
-    ]
-  },
   "why-attend-ffconf-4": {
     "title": "Why attend ffconf #4: a11y",
     "date": "2016-08-20 12:51:34",
@@ -442,6 +432,26 @@
     "title": "Heroku to now",
     "date": "2016-09-06 14:44:11",
     "modified": "2016-09-06 14:44:11",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "server-side-react": {
+    "title": "Server Side React",
+    "date": "2016-09-15 12:46:31",
+    "modified": "2016-09-15 12:46:31",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "the-bane-of-build-tools": {
+    "title": "The bane of build tools",
+    "date": "2016-09-17 12:39:01",
+    "modified": "2016-09-17 12:39:01",
     "complete": false,
     "inprogress": true,
     "tags": [

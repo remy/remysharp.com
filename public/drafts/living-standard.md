@@ -34,3 +34,12 @@ Abstract: The web is a beautiful place. On the face of it: open to all. Complica
 - Why am I excited? It's taken years to get to the realisation that PWAs get us
 - Social standards, more people learning to code, more support groups, more diversity, giving people oppotunities that wouldn't normally have the chance
 - We're in a privilidge position, so we should use that to help others. To raise their voices.
+
+
+---
+
+One of the things I love about coding for the web, is that there's no SDK for the web. When I tried to program my Psion, I had to download a 2mb SDK over a 9600 baud modem. After the hours of waiting plus the cost of the modem phone call, I had no idea where to start.
+
+I recently made my foray into React. The library is very good, and the complimentary tools like React Router and Redux make for a compelling software stack, it did feel very, very much like my Psion coding experience: to be productive, I'd have to know the SDK.
+
+The web has no SDK.
