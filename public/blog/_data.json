@@ -3168,7 +3168,7 @@
       "devtools",
       "web"
     ],
-    "modified": "2014-09-03 16:15:12"
+    "modified": "2016-09-12 20:57:59"
   },
   "my-terminal-setup": {
     "title": "My terminal setup",
@@ -3771,7 +3771,7 @@
       "web"
     ],
     "published": true,
-    "modified": "2015-09-18 15:17:24"
+    "modified": "2016-08-27 12:53:30"
   },
   "jsbin-toxic-part-5": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 5)",
@@ -3911,7 +3911,7 @@
       "web"
     ],
     "published": true,
-    "modified": "2016-03-23 10:16:04"
+    "modified": "2016-08-11 17:29:46"
   },
   "a-debugging-thought-process": {
     "image": "/images/devtools-copy-response.jpg",
@@ -3990,7 +3990,7 @@
   "state-of-the-gap": {
     "title": "State of the gap",
     "date": "2016-05-28 09:51:30",
-    "modified": "2016-06-06 13:29:32",
+    "modified": "2016-08-24 09:26:11",
     "tags": [
       "web"
     ],
@@ -4054,7 +4054,7 @@
   "what-is-react": {
     "title": "What is React?",
     "date": "2016-08-15 12:15:05",
-    "modified": "2016-08-15 12:11:53",
+    "modified": "2016-08-15 12:13:49",
     "tags": [
       "web"
     ],
@@ -4063,7 +4063,7 @@
   "remote-retrospectives-with-retrobot": {
     "title": "Remote retrospectives with Retrobot",
     "date": "2016-08-22 15:59:30",
-    "modified": "2016-08-05 18:35:05",
+    "modified": "2016-08-11 17:29:46",
     "tags": [
       "web",
       "business"
@@ -4073,7 +4073,7 @@
   "six-this-week": {
     "title": "You'd be six this week",
     "date": "2016-08-27 18:47:13",
-    "modified": "2016-08-27 12:52:03",
+    "modified": "2016-08-28 11:13:22",
     "image": "/images/lego-six.jpg",
     "tags": [
       "personal"
@@ -4083,7 +4083,7 @@
   "my-decade-of-blogging": {
     "title": "My Decade of Blogging",
     "date": "2016-09-01 08:47:38",
-    "modified": "2016-08-08 21:02:44",
+    "modified": "2016-09-02 11:10:12",
     "tags": [
       "personal"
     ],
@@ -4092,7 +4092,7 @@
   "why-attend-ffconf-1": {
     "title": "Why attend ffconf #1: CI…CD…C*",
     "date": "2016-09-06 07:49:28",
-    "modified": "2016-08-20 11:17:37",
+    "modified": "2016-09-06 07:49:00",
     "tags": [
       "business"
     ],
@@ -4101,7 +4101,7 @@
   "why-attend-ffconf-2": {
     "title": "Why attend ffconf #2: CSSnext",
     "date": "2016-09-12 12:17:09",
-    "modified": "2016-08-20 12:05:38",
+    "modified": "2016-09-12 12:17:37",
     "tags": [
       "business"
     ],
@@ -4111,7 +4111,7 @@
     "image": "/images/remy-react.png",
     "title": "First impressions of React",
     "date": "2016-09-13 15:14:36",
-    "modified": "2016-09-12 19:43:14",
+    "modified": "2016-09-21 15:10:36",
     "tags": [
       "web"
     ],
@@ -4120,7 +4120,16 @@
   "why-attend-ffconf-3": {
     "title": "Why attend ffconf #3: devtools",
     "date": "2016-09-21 15:09:47",
-    "modified": "2016-08-20 12:46:20",
+    "modified": "2016-09-21 15:10:37",
+    "tags": [
+      "business"
+    ],
+    "published": true
+  },
+  "why-attend-ffconf-4": {
+    "title": "Why attend ffconf #4: a11y",
+    "date": "2016-09-27 15:01:21",
+    "modified": "2016-09-06 07:48:59",
     "tags": [
       "business"
     ],

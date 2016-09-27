@@ -2,10 +2,6 @@
 
 The web is a beautiful place. On the face of it: open to all. Complicated and yet still simple. Why do I still so strongly believe in the web? What's different today that makes the web so much more exciting than ever? And how can we help to keep the web a welcome and open place?
 
-# Plain and simple
-
-*First draft of a keynote talk I'll give at Hackerfest*
-
 ## Successful content and posts
 
 - [My workflow: never having to leave the devtools](http://remysharp.com/2012/12/21/my-workflow-never-having-to-leave-devtools/) 1K+
@@ -43,3 +39,44 @@ One of the things I love about coding for the web, is that there's no SDK for th
 I recently made my foray into React. The library is very good, and the complimentary tools like React Router and Redux make for a compelling software stack, it did feel very, very much like my Psion coding experience: to be productive, I'd have to know the SDK.
 
 The web has no SDK.
+
+<!-- Come back to this -->
+
+---
+
+## Notes
+
+Story components (raw, unedited):
+
+- Introduction
+- History of how I got into working on the web
+- Using windows shell scripting in the browser
+- Trying to download and understand the Psion SDK / learning Visual Basic and being limited by Visual Basic
+- My degree and the "Internet module", I had to know the Altavista  search shortcuts!
+- view source: a massive resource for inspiration and creativity
+- open source, companies
+
+
+Building for the web should be simple. It should be accessible to everyone. No prerequisites. I remember thinking years back that Netscape was so much better than IE at the time because it was a smaller executable size, and that Netscape was better because it would require you to write strict html (back when table layouts were the only option, that shit had to match up).
+
+But I was wrong. Internet Explorer was larger because it dealt with more complicated situations. It would render badly written html (tables in particular wouldn't break the page if the tags didn't match up). This meant mistakes were okay. They are. We're human. We make mistakes. It's how we get better at what we do.
+
+If I'd constantly been presented with a white screen because my code didn't work [this is akin to today's practises] then I probably would have given up. As too, I suspect, would many others.
+
+---
+
+## Why am I excited for the future?
+
+*Progressive Web Apps*. A term coined by Alex Russell and Frances Berrimann. By itself, it means very little, similarly to words like Ajax, comet or polyfill. However, with strong ideas behind it, progressive web apps (or PWAs for short), for me, is the prescipis of over a decade of progress.
+
+When I came to the web, I wanted to make applications. Windows shell scripting gave me some of that. Then JavaScript (to me: basically the same thing as WSH, just in the browser) gave developers the ability to manipulate web pages.
+
+DHTML was an attempt to creative more interactive web sites. Then (via Microsoft and Google) Ajax and comet (web streaming) exploded the capabilities of sites, hand in hand with the popularity of libraries, jQuery in particular meant that programming for the web became easier for more people to access.
+
+PWAs takes new browser APIs that have been evolving over the last few years, and joins them together giving us a software environment for first class applications with the ability to link to any other page or application on the web.
+
+We're finally able to take our websites with us, instead of having to visit them.
+
+Push notifications are hugely attractive to business as they consistently show to have higher engagement (citation needed) with users as they can *push* relevant and timely information to their users.
+
+Service workers are the entry point to all this functionality, and are implekenyef by default as a progressive enhancement.

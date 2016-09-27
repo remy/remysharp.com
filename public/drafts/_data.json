@@ -192,7 +192,7 @@
       "business",
       "web"
     ],
-    "modified": "2016-07-29 11:06:53"
+    "modified": "2016-08-15 13:42:48"
   },
   "terms-of-work": {
     "title": "Terms of work",
@@ -213,7 +213,7 @@
       "personal",
       "business"
     ],
-    "modified": "2016-02-17 15:04:48"
+    "modified": "2016-08-15 13:44:28"
   },
   "commit-to-contribute": {
     "title": "Commit to contribute",
@@ -234,7 +234,7 @@
     "tags": [
       "web"
     ],
-    "modified": "2016-03-01 11:17:10"
+    "modified": "2016-08-13 22:49:35"
   },
   "fonts-third-parties-and-scripts": {
     "title": "Fonts, Third Parties and Scripts",
@@ -254,7 +254,7 @@
     "tags": [
       "web"
     ],
-    "modified": "2016-04-10 19:31:31"
+    "modified": "2016-09-12 12:17:37"
   },
   "analytics-for-all-time-per-post": {
     "title": "Analytics for all time per post",
@@ -269,7 +269,7 @@
   "living-standard": {
     "title": "Living Standard",
     "date": "2016-04-11 21:37:18",
-    "modified": "2016-04-11 21:43:29",
+    "modified": "2016-09-21 15:10:37",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -320,7 +320,7 @@
   "emoji": {
     "title": "Emoji",
     "date": "2016-06-01 12:10:20",
-    "modified": "2016-07-28 10:47:51",
+    "modified": "2016-09-02 21:18:52",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -351,7 +351,7 @@
     "image": "/images/multiple-assignment.png",
     "title": "Multiple assignments",
     "date": "2016-07-23 09:43:53",
-    "modified": "2016-07-23 11:06:59",
+    "modified": "2016-09-05 20:01:19",
     "complete": true,
     "inprogress": false,
     "tags": [
@@ -361,7 +361,7 @@
   "es6-pure-dev-has-finally-arrived": {
     "title": "ES6 pure dev has finally arrived",
     "date": "2016-07-23 11:24:18",
-    "modified": "2016-07-23 15:06:24",
+    "modified": "2016-08-23 11:27:16",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -401,29 +401,19 @@
   "sticky-headers": {
     "title": "Sticky headers",
     "date": "2016-08-16 13:19:50",
-    "modified": "2016-08-16 13:19:50",
+    "modified": "2016-08-17 11:04:26",
     "complete": false,
     "inprogress": true,
     "tags": [
       "web"
     ]
   },
-  "why-attend-ffconf-4": {
-    "title": "Why attend ffconf #4: a11y",
-    "date": "2016-08-20 12:51:34",
-    "modified": "2016-08-20 12:51:34",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "business"
-    ]
-  },
   "cool-uris-dont-change": {
     "title": "Cool URIs don't change",
     "date": "2016-08-28 17:23:22",
-    "modified": "2016-08-28 17:23:22",
-    "complete": false,
-    "inprogress": true,
+    "modified": "2016-08-29 12:41:58",
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]
@@ -431,7 +421,7 @@
   "heroku-to-now": {
     "title": "Heroku to now",
     "date": "2016-09-06 14:44:11",
-    "modified": "2016-09-06 14:44:11",
+    "modified": "2016-09-21 15:10:37",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -441,7 +431,7 @@
   "server-side-react": {
     "title": "Server Side React",
     "date": "2016-09-15 12:46:31",
-    "modified": "2016-09-15 12:46:31",
+    "modified": "2016-09-21 15:10:37",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -451,7 +441,7 @@
   "the-bane-of-build-tools": {
     "title": "The bane of build tools",
     "date": "2016-09-17 12:39:01",
-    "modified": "2016-09-17 12:39:01",
+    "modified": "2016-09-21 15:10:37",
     "complete": false,
     "inprogress": true,
     "tags": [
