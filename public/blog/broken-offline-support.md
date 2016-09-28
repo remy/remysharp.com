@@ -2,7 +2,7 @@
 
 The state of offline detection in desktop browsers is broken and it needs to fixed or at least get better, but I can't see this happening unless we push against the browser vendors to fix this.
 
-Currently, as of April 2011, offline and online events are broken, as is the navigator.onLine property. The only exception appears to be WebKit/MobileSafari on mobile (though I've only successfully tested Android's 2.3.3 and iOS 4.3). Here's the test url: <a href="http://jsbin.com/otudo5">jsbin.com/otudo5</a> (<a href="http://jsbin.com/otudo5/edit">source</a>)
+Currently, as of April 2011, offline and online events are broken, as is the navigator.onLine property. The only exception appears to be WebKit/MobileSafari on mobile (though I've only successfully tested Android's 2.3.3 and iOS 4.3). Here's the test url: <a href="http://jsbin.com/otudo5/1">jsbin.com/otudo5</a> (<a href="http://jsbin.com/otudo5/1/edit">source</a>)
 
 <!--more-->
 
