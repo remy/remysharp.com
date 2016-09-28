@@ -1,4 +1,5 @@
 /*global $,hljs*/
+/* eslint-env browser */
 'use strict';
 var comments = document.getElementById('disqus_thread');
 var disqusLoaded = false;
@@ -122,7 +123,7 @@ var $edit = $('small.edit').remove();
 if ($edit.length) {
   // this is daft, but it prevents Google from including [edit] in the
   // post title...
-  var $h1 = $('h1').hover(function () {
+  var $h1 = $('h1:first').hover(function () {
     $h1.append($edit);
   }, function () {
     $edit.remove();
