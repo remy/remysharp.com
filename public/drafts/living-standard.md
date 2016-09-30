@@ -1,6 +1,15 @@
 # Living standard
 
-The web is a beautiful place. On the face of it: open to all. Complicated and yet still simple. Why do I still so strongly believe in the web? What's different today that makes the web so much more exciting than ever? And how can we help to keep the web a welcome and open place?
+The web is a beautiful place. On the face of it: open to all. Complicated and yet still simple. Why do I still so strongly believe in the web? How can we help to keep the web a welcome and open place? What's different today that makes the web so much more exciting than ever?
+
+## Story arc
+
+Three parts:
+
+1. Previously: history of why I care, web standards: "Why do I still so strongly believe in the web?"
+2. Today: what we can do, how can we do it, socially and with our work: "How can we keep the web a welcome and open place?"
+3. Future: PWA "What's different today that makes it more exciting than ever?"
+
 
 ## Successful content and posts
 
