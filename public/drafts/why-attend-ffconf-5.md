@@ -1,4 +1,4 @@
-# Why Attend ffconf #5: communication
+# Why Attend ffconf #5: emoji
 
 I remember during the late 90s a [series of books](https://nan-mccarthy.com/books/chat/) coming out that was written entirely in email transcripts between two people. The covers of each were an emoticon.
 
