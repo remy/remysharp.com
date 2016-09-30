@@ -22,13 +22,15 @@ This is useful, but if you're familiar with jQuery, then you might want a collec
 So in fact, this is what `$$` is (approximately):
 
 ```
-let $$ = (expr, ctx = document) => Array.from(ctx.querySelectorAll(expr));
+let $$ = (expr, ctx = document) => {
+  return Array.from(ctx.querySelectorAll(expr));
+};
 ```
 
 A few notes on *my* implementation above:
 
 - Using `let` because user code can overwrite it
-- Using default argments to set `ctx` to the root node if it's not passed in
+- Using default arguments to set `ctx` to the root node if it's not passed in
 - `Array.from` will cast the result from `querySelectorAll` to an Array
 
 I've not actually see the source to the console code, but I do know that devtools does a little bit more in that if the `ctx` argument isn't a DOM node, it'll default to the `document` node (i.e. you can pass a string in devtools, and it will be ignored, whereas my code above will throw an exception).
