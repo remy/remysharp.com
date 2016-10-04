@@ -8,4 +8,4 @@ If done well, we, as web developers can secure the experience for web users and 
 
 I'm was extremely keen to have a session on progressive web apps so that you can not only learn, but take this knowledge back to your day to day work and inspire others that you work with.
 
-[Get your ticket today]().
+[Get your ticket today](https://ffconf.org/tickets).
