@@ -65,3 +65,13 @@ I love this representation of how biased systems work, and how my neutral positi
 I could *wish* I had this much insight when I was 14. Instead, I'm learning from this kid and aim to pass this message on to my white privileged children.
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/g4Q1jZ-LOT0?rel=0" frameborder="0" allowfullscreen></iframe>
+
+---
+
+### How to be perfectly unhappy
+
+> But those feelings are ephemeral. Being "happy" implies permanence. It implies you completed all the prerequisites. And now you get to sit atop your giant pile of happy forever.
+
+This comic, somehow describes exactly how I've always felt about being "happy". I've never been able to say, truthfully, that I was happy. I found this <time datetime="2016-10-07 18:00:00">today</time> and it says what I've never been able to articulate.
+
+👉 [How to be perfectly unhappy](http://theoatmeal.com/comics/unhappy) 7 Oct 2016
