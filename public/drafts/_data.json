@@ -477,5 +477,15 @@
     "tags": [
       "web"
     ]
+  },
+  "what-i-learnt-from-creating-ffconfs-quine": {
+    "title": "What I learnt from creating ffconf's quine",
+    "date": "2016-10-06 10:57:44",
+    "modified": "2016-10-06 10:57:44",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
   }
 }
