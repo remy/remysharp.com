@@ -4166,6 +4166,7 @@
   },
   "one-devtools-trick": {
     "title": "One weird devtool trick this developer uses. {$experts} hate him!",
+    "image": "/images/one-devtools-trick.png",
     "date": "2016-10-10 11:00:01",
     "modified": "2016-09-30 17:01:07",
     "tags": [
