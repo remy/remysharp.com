@@ -2,6 +2,10 @@
 
 The web is a beautiful place. On the face of it: open to all. Complicated and yet still simple. Why do I still so strongly believe in the web? How can we help to keep the web a welcome and open place? What's different today that makes the web so much more exciting than ever?
 
+---
+
+**"The Living Standard" is about living beyond the hype and the popular and what's fashionable. Being able to identify areas that don't work and improve upon them. Being able to continue to evolve and grow as we/I better understand our surroundings. Respecting each other, listening to each other, sharing with each other and learning from each other.**
+
 ## Story arc
 
 Three parts:

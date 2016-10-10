@@ -6,46 +6,102 @@ In a recent client project, I decided to try out using React [for the first time
 
 <!--more-->
 
+---
+
+I wanted to take a moment to point out that this post really isn't written for developers already quite comfortable with React or any other flavour of high level JavaScript project. It's from a developer who prefers to be very close to the metal (aka Vanilla JS), and I hope it will help others in a similar position as I have been: on the fence waiting for it all to fall apart!
+
+---
+
 ## TL;DR
 
-In my opinion, it's not possible to use progessive enhancement as an approach to building a server side React application. But that's just semantics (possibly of my definition of PE). However I *was* able to finish with a unverisal code base (with a few exceptions that handled server only requirements).
+Approach:
 
-I was not able to use my normal continious development and debugging techniques, but there are some useful React and Redux tools available.
+- I can see how progressive enhancement would be skipped, and perhaps graceful degradation would be used to achieve a universal application
+- There's no single guiding approach on how to support the server side
+- IHMO React has the "jQuery of today" badge (but why doesn't fit in the TL;DR, so read on!)
 
-Since I was also use JSX for the *view* part of my code, I had to use sourcemaps (to make any sense during debugging), but I'm not a fan of sourcemaps which I had to since it prevents me using Devtool Workspaces fully.
+After around 7 days of learning and development, the final technology comprised of:
 
-I also found Webpack very confusing, there's some much to configure and finding the right setup was tricky (I went through about four iterations). I the right setup (for me) in the end, and I'll probably copy and paste it again, but this isn't something I want to have to learn.
-
-**Bottom line:** I would use this approach again. Having a large base of reusable code is very appealing. I'm not sure I have the right development approach (for me), but as with anything, that would come with time. I'm also interested in trying this approach with other JavaScript libraries out there (if possible), including Vue, Ember and Polymer (my brief experiences of Angular so far have been enough for me).
-
-## The project requirements
-
-I'll link to a demo version of the project (since I can't share the client's work) which essentially has these features:
-
-1. List of messages (page)
-- Filter messages
-- Create new message (page)
-- Send separate contact message (page)
-- Flash messages
-- Status update when messages successfully deliver or fail delivery
-
-Those are fairly straight forward requirements which is why I decided to invest a bit of my own time trying it with react.
-
-## Final status
-
-After around 7 days of learning and development, the final solution compised of:
-
-- Node
+- Node 6
 - Express.js
-- Mongoose (for mongodb)
-- Webpack
 - Babel
 - React
 - React Router
 - Redux
 - A small number handful of polyfills for production build
+- Webpack
 
-Every page had a URL, and every URL could be requested using cURL to view complete content, that is to say: as a benchmark, the entire application worked with JavaScript disabled.
+For development, I also used a custom route that the main client bundle would be served from, that was compiled on the fly via webpack which made things a little faster.
+
+Every page had a URL, and every URL could be requested using cURL to view complete content, that is to say: as a benchmark, the entire application worked with JavaScript disabled, and time to first complete render (on a cold cache) was 400ms.
+
+---
+
+## Progressive Enhancement
+
+Early on, I had the requirement in my head that I wanted to understand if it was possible to use React to progressively enhance my application. The intention being that I would be able to serve a static version of the site, and enhance to the rich client side experience using React.
+
+I also wanted to see if and how this was possible re-using as much code as possible, thus "universal JavaScript".
+
+In my opinion, an individual or a team starting out, or without the *will*, aren't going to use progressive enhancement in their approach to applying server side rendering to a React app. I don't believe this is by choice, I think it's simply because React lends itself so strongly to client-side, that I can see how it's easy to oversee how you could *start* on the server and progressive enhance upwards to a rich client side experience.
+
+<small>* This isn't to say another project (like Vue, Ember, etc) don't, I'm focused entirely on React in this post.</small>
+
+That said, React has a very solid backend system to support server side implementations* using Node, it just took me a while to get my head around it (especially as I was new to using React). The upshot, is that in retrospect, and now that I've had time to review my code after it's all gone live, I'm able to see how I would approach the development tasks in a different order so that I *could* achieve progressive enhancement.
+
+It's also worth saying: that even if I didn't use PE as a development approach, but I'm able to provide that complete experience (say, to a user that didn't manage to download or execute the JavaScript), then the end goal is the same. However, taking the PE approach ensures that as a developer, I don't miss some important aspect of the application's logic (perhaps like a deep URL can be crawled with any browser…like cURL).
+
+**Bottom line:** doable. Whether people *are* doing it is another matter. One thing is clear to me though: it's very much a secondary concern.
+
+## Is React the jQuery of it's time?
+
+I read a post very recently that argued that Vue is the jQuery of it's time. The post mostly pitted Vue against React. I definitely don't agree. For context, jQuery arrived in 2006 and opened the doors to many developers *and* non-developers, to manipulating the DOM using JavaScript. Suddenly interactivity was much easier and jQuery was the tool of choice.
+
+jQuery was not the only tool however, neither was it particularly the "best" tool (Dojo for instance had been around for years prior breaking new ground long before).
+
+What made jQuery a success was two important items:
+
+1. Time from "0 to 60", in that you could know nothing about JavaScript, but with a touch of CSS (selectors) and copying a few symbols (like `$`) you could make something move on the page.
+2. Community documentation.
+
+The second item is the most important. And by *documentation*, I mean actual docs, API, blog posts, tutorials, videos, conference talks, the lot. It was the spread of knowledge and the ease in which it happened is what allowed jQuery to end up in front of so many developers. *Obviously* the team behind making jQuery work in every browser, and the mobile support, and continued efforts, and everything has a huge importance, but that spread of knowledge…it's that, that got jQuery to critical mass.
+
+For me, as much as Vue looks interesting and certainly easier to get going with, there's a distinct lack of examples across the web, and yes, Vue *only* just landed 1.0 and is relatively new, and is a small team (I think), but this is comparison to React. That doesn't mean Vue couldn't grow to be a great (and I remember the old Prototype vs. jQuery discussions of yonder year!).
+
+The more examples and samples and code out on the web, the more edge cases are covered, and the more it helps with the "yeah, but what about when I…" questions. React's community posts could definitely answer a lot of the questions I had. I'm not totally sure we've seen the next Rule Of the Libraries yet though!
+
+## Development approach
+
+Again, for context, I do *a lot* of development [directly in devtools](https://remysharp.com/search?q=devtools) using workspaces and related debugging tools. Due to the work that React does to create the DOM, I was not able to use my normal continuous development and debugging techniques, but there are some useful React and Redux tools available.
+
+Equally, I was using JSX for the *view* part of my code, so I had to use sourcemaps (to make any sense during debugging), but I'm not a fan of sourcemaps which I had to since it specifically prevents me using Devtool Workspaces fully.
+
+I also found Webpack very confusing, there's some much to configure and finding the right setup was tricky (I went through about four iterations). I did find the right setup (for me) in the end, and I'll probably copy and paste it again, but this isn't something I want to have to learn.
+
+Finally, I also settled on a development only dynamic webpack route, that would conditionally load, and server the client bundle based on a development configuration. The development configuration would allow me to use hotloading and few other niceties that I wouldn't need in production. [Here's my webpack configurations and the development middleware](https://gist.github.com/remy/ce019c82940b624de21dcafb3e6f69af).
+
+The hot module reloading for React did work for a lot of the view code, but not for everything (in the client) and did require a refresh of the browser fairly frequently. It certainly helped, but again, wasn't as smooth as my typical development workflow.
+
+**Bottom line:** I would use this approach again. Having a large base of reusable code is very appealing. I'm not sure I have the right development approach (for me), but as with anything, that would come with time. I'm also interested in trying this approach with other JavaScript libraries out there (if possible), including Vue, Ember and Polymer (my brief experiences of Angular so far have been enough for me).
+
+## The request stack
+
+Here's how I expected the stack to work (from a server side perspective):
+
+1. HTTP request handled by Express
+2. React Router is somehow utilised by Express' routing system
+3. The correct React views are rendered into a string (and ideally cached!)
+4. Express responds with the HTML string
+5. The client bundle see no rendering is required, but normal bindings work
+
+This should work on all URLs that are accessible on the client.
+
+---
+
+I spent a long time (relative to the time spent on this project) trying to understand how to connect the client side routing mechanism to Express running in node. I did use [react-engine](https://github.com/paypal/react-engine/) successful for a while, but had to eject the code towards the end of the project because it restricted how I could actually use React Router.
+
+
+
 
 ## Libraries
 
