@@ -1,3 +1,4 @@
+
 {
   "index": {
     "layout": true
@@ -476,6 +477,16 @@
     "inprogress": true,
     "tags": [
       "web"
+    ]
+  },
+  "a-letter-of-thanks": {
+    "title": "A letter of thanks",
+    "date": "2016-09-14 14:22:01",
+    "modified": "2016-09-14 14:22:01",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "personal"
     ]
   }
 }

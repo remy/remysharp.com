@@ -10,7 +10,7 @@ The web is a beautiful place. On the face of it: open to all. Complicated and ye
 
 Three parts:
 
-1. Previously: history of why I care, web standards: "Why do I still so strongly believe in the web?"
+1. Previously: history of why I care, web standards: "Why do I still so strongly believe in the web?" The web allowed me to jump start my creative needs.
 2. Today: what we can do, how can we do it, socially and with our work: "How can we keep the web a welcome and open place?"
 3. Future: PWA "What's different today that makes it more exciting than ever?"
 
