@@ -2636,7 +2636,7 @@
   },
   "custom-url-schemes-in-phonegap": {
     "title": "Custom URL schemes in PhoneGap",
-    "date": "2010-09-01 12:00:15",
+    "date": "2010-10-01 12:00:15",
     "published": true,
     "tags": [
       "code",
@@ -2644,7 +2644,7 @@
       "javascript",
       "phonegap"
     ],
-    "modified": "2014-09-03 16:15:12"
+    "modified": "2014-10-03 16:15:12"
   },
   "websockets-in-phonegap-projects": {
     "title": "WebSockets in PhoneGap Projects",
