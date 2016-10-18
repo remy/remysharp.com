@@ -2,7 +2,7 @@
 
 I work pretty much all day on the web. I use it for research, I use it to socially, I use it professionally, I use it when I'm bored, or need inspiration. I'm constantly impressed by what I see on the web.
 
-Here's the winner of the [13K JavaScript games](http://2016.js13kgames.com/) competition this year. No plugins. No complilers. Just browser code. WebGL in particular. If I didn't know better, I'd think this screen was from a console or PC game, let alone 13K of code 😱
+Here's the winner of the [13K JavaScript games](http://2016.js13kgames.com/) competition this year. No plugins. No complilers. Just browser code. WebGL in particular. If I didn't know better, I'd think this screen was from a console or PC game, let alone 13K of compressed code 😱
 
 <video muted autoplay class="stretch" loop src="https://player.vimeo.com/external/185951900.sd.mp4?s=4e14f9532387a8652d45f138e9f5dc6534f43127&profile_id=165"></video>
 
@@ -60,7 +60,7 @@ One of my favourite aspects of developing for a browser is the simplicity and li
 
 [![☝Just a reminder in this sea of webdev despair: Minimum requirements to build a website 👉 💻 Browser 📝 *Text* editor⏰ Time 💪 Enthusiasm"](/images/living-standard-tweet-simple-dev.png)](https://twitter.com/rem/status/784038079636070401)
 
-
+To allow more people to use the web as a platform to share their creativity, we need to remind ourselves that it can be simple. We need to remind ourselves that although we complicate the process with tooling and fine tuning, it can still be fun if we set aside the rig-amoral .
 
 ## Access to the same doorway
 

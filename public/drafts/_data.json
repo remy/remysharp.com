@@ -477,5 +477,25 @@
     "tags": [
       "web"
     ]
+  },
+  "living-standard-part-2": {
+    "title": "Living Standard - part 2",
+    "date": "2016-10-10 16:12:07",
+    "modified": "2016-10-10 16:12:07",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "living-standard-part-3": {
+    "title": "Living Standard - part 3",
+    "date": "2016-10-10 18:00:39",
+    "modified": "2016-10-10 18:00:39",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
   }
 }

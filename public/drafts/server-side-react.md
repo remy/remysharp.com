@@ -35,7 +35,44 @@ For development, I also used a custom route that the main client bundle would be
 
 Every page had a URL, and every URL could be requested using cURL to view complete content, that is to say: as a benchmark, the entire application worked with JavaScript disabled, and time to first complete render (on a cold cache) was 400ms.
 
+**Bottom line:** React with React Router is absolutely a viable stack for server side. The one thing I'd advise is to find a solid development pattern and use it for your own approach.
+
 ---
+
+## Understanding the requirements
+
+Here's how I expected the technology stack to work (from a server side perspective) when a new request is received:
+
+1. HTTP request handled by Express
+2. React Router is somehow utilised by Express' routing system
+3. The correct React views are rendered into a string (and ideally cached!)
+4. Express responds with the HTML string
+5. The client bundle see no rendering is required, but normal bindings work
+
+This should work on all URLs that are accessible on the client.
+
+---
+
+I spent a long time (relative to the time spent on this project) trying to understand how to connect the client side routing mechanism to Express running in node. I did use [react-engine](https://github.com/paypal/react-engine/) successful for a while, but had to eject the code towards the end of the project because it restricted how I could actually use React Router.
+
+The final solution is to use a catch all route that hands off to React Router which correctly generates all the markup (as per the sequence described earlier).
+
+The thing that feels a little weird here is that I'm using Express' routing system for the first layer of requests, then I defer to React's router, which, does work, and doesn't create any actual code duplication, but feels…strange.
+
+What I'm left with is "universal JavaScript" that uses React that handles everything the client would see (or specifically *render*).
+
+There is still some server side specific code, and that code is concerned with communicating with databases and responding to non-GET requests, which makes me think of my URL design in a much more RESTful and API-ish way.
+
+I don't need to cover the technical how, because it turns out that Jack Franklin [covered exactly how to approach server side first](https://24ways.org/2015/universal-react/) in his 2015 post on 24ways, and the post is very much what I ended up with (I just wish I'd seen it ahead of time!).
+
+## State management
+
+State was the big attraction to me when considering React. Strictly speaking, React doesn't do state management at all. But what it does naturally encourage is a functional style of programming. Simply put: your functions don't have side effects (like changing or using any variables outside of the functions direct scope).
+
+This functional style meant that when it was time for me to turn to Redux (a React friendly implementation of Flux—which, honestly, I not actually researched at all!), my coding style was ready.
+
+I'm not going to go into what Redux is, but there's some [excellent free video tutorials](https://egghead.io/courses/getting-started-with-redux) by its creator [Dan Abramov](https://twitter.com/dan_abramov). What it does for me, is to start thinking of my software as being a state machine - which makes testing and replicating state very easy. This is good
+
 
 ## Progressive Enhancement
 
@@ -45,7 +82,7 @@ I also wanted to see if and how this was possible re-using as much code as possi
 
 In my opinion, an individual or a team starting out, or without the *will*, aren't going to use progressive enhancement in their approach to applying server side rendering to a React app. I don't believe this is by choice, I think it's simply because React lends itself so strongly to client-side, that I can see how it's easy to oversee how you could *start* on the server and progressive enhance upwards to a rich client side experience.
 
-<small>* This isn't to say another project (like Vue, Ember, etc) don't, I'm focused entirely on React in this post.</small>
+<small>This isn't to say another project (like Vue, Ember, etc) don't, I'm focused entirely on React in this post.</small>
 
 That said, React has a very solid backend system to support server side implementations* using Node, it just took me a while to get my head around it (especially as I was new to using React). The upshot, is that in retrospect, and now that I've had time to review my code after it's all gone live, I'm able to see how I would approach the development tasks in a different order so that I *could* achieve progressive enhancement.
 
@@ -61,8 +98,8 @@ jQuery was not the only tool however, neither was it particularly the "best" too
 
 What made jQuery a success was two important items:
 
-1. Time from "0 to 60", in that you could know nothing about JavaScript, but with a touch of CSS (selectors) and copying a few symbols (like `$`) you could make something move on the page.
-2. Community documentation.
+1. Time to up-and-running, in that you could know nothing about JavaScript, but with a touch of CSS (selectors) and copying a few symbols (like `$`) you could make something move on the page.
+2. Documentation, both in offical form, but more importantly, community contributed.
 
 The second item is the most important. And by *documentation*, I mean actual docs, API, blog posts, tutorials, videos, conference talks, the lot. It was the spread of knowledge and the ease in which it happened is what allowed jQuery to end up in front of so many developers. *Obviously* the team behind making jQuery work in every browser, and the mobile support, and continued efforts, and everything has a huge importance, but that spread of knowledge…it's that, that got jQuery to critical mass.
 
@@ -84,21 +121,6 @@ The hot module reloading for React did work for a lot of the view code, but not 
 
 **Bottom line:** I would use this approach again. Having a large base of reusable code is very appealing. I'm not sure I have the right development approach (for me), but as with anything, that would come with time. I'm also interested in trying this approach with other JavaScript libraries out there (if possible), including Vue, Ember and Polymer (my brief experiences of Angular so far have been enough for me).
 
-## The request stack
-
-Here's how I expected the stack to work (from a server side perspective):
-
-1. HTTP request handled by Express
-2. React Router is somehow utilised by Express' routing system
-3. The correct React views are rendered into a string (and ideally cached!)
-4. Express responds with the HTML string
-5. The client bundle see no rendering is required, but normal bindings work
-
-This should work on all URLs that are accessible on the client.
-
----
-
-I spent a long time (relative to the time spent on this project) trying to understand how to connect the client side routing mechanism to Express running in node. I did use [react-engine](https://github.com/paypal/react-engine/) successful for a while, but had to eject the code towards the end of the project because it restricted how I could actually use React Router.
 
 
 
