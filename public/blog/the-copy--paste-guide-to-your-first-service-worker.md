@@ -69,7 +69,12 @@ self.addEventListener('install', e => {
 // the cached object or go ahead and fetch the actual url
 self.addEventListener('fetch', event => {
   event.respondWith(
-    caches.match(event.request).then(res => res || fetch(event.request))
+    // ensure we check the *right* cache to match against
+    caches.open(cacheName).then(cache => {
+      return cache.match(event.request).then(res => {
+        return res || fetch(event.request)
+      });
+    })
   );
 });
 ```
@@ -77,6 +82,8 @@ self.addEventListener('fetch', event => {
 The *contents* of the `sw.js` file will need to change to trigger an update of the `sw.js` file itself, but I highly recommend using the debugging tools too.
 
 To understand how refreshes work (aka the lifecycle), [Jake Archibald](https://jakearchibald.com) has a [3 minute video](https://www.youtube.com/watch?v=TF4AB75PyIc) to help.
+
+**Important:** if you use a CDN like CloudFlare in front of your site, make sure to remember to tell CloudFlare to exclude your `sw.js` file in it's aggressive caching strategy.
 
 ## 🐛 Debugging
 

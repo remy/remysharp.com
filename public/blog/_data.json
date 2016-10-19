@@ -2644,7 +2644,7 @@
       "javascript",
       "phonegap"
     ],
-    "modified": "2014-10-03 16:15:12"
+    "modified": "2014-09-03 16:15:12"
   },
   "websockets-in-phonegap-projects": {
     "title": "WebSockets in PhoneGap Projects",
@@ -2770,7 +2770,7 @@
       "offline",
       "rants"
     ],
-    "modified": "2014-09-03 16:15:12"
+    "modified": "2016-09-30 12:21:09"
   },
   "getting-cors-working": {
     "title": "Getting CORS Working",
@@ -3837,7 +3837,7 @@
       "code"
     ],
     "published": true,
-    "modified": "2015-12-18 13:19:21"
+    "modified": "2016-09-30 12:20:41"
   },
   "my-2015": {
     "title": "My 2015",
@@ -3911,7 +3911,7 @@
       "web"
     ],
     "published": true,
-    "modified": "2016-08-11 17:29:46"
+    "modified": "2016-10-19 22:34:16"
   },
   "a-debugging-thought-process": {
     "image": "/images/devtools-copy-response.jpg",
@@ -4138,7 +4138,7 @@
   "why-attend-ffconf-5": {
     "title": "Why Attend ffconf #5: emoji",
     "date": "2016-10-03 08:30:45",
-    "modified": "2016-09-30 12:19:38",
+    "modified": "2016-09-30 12:52:55",
     "tags": [
       "web",
       "business"
@@ -4148,7 +4148,7 @@
   "why-attend-ffconf-6": {
     "title": "Why Attend ffconf #6: PWA",
     "date": "2016-10-04 11:14:31",
-    "modified": "2016-09-30 12:20:08",
+    "modified": "2016-10-04 11:14:14",
     "tags": [
       "web",
       "business"
@@ -4158,7 +4158,7 @@
   "why-attend-ffconf-7": {
     "title": "Why Attend ffconf #7: Art",
     "date": "2016-10-05 14:41:51",
-    "modified": "2016-10-05 13:58:51",
+    "modified": "2016-10-06 11:01:26",
     "tags": [
       "web"
     ],
@@ -4167,7 +4167,7 @@
   "one-devtools-trick": {
     "title": "One devtool trick: $$ gt $",
     "date": "2016-10-10 11:00:01",
-    "modified": "2016-09-30 17:01:07",
+    "modified": "2016-10-18 19:47:39",
     "tags": [
       "web"
     ],
@@ -4176,7 +4176,7 @@
   "a-letter-of-thanks": {
     "title": "A letter of thanks",
     "date": "2010-09-14 14:55:59",
-    "modified": "2010-09-14 14:22:01",
+    "modified": "2016-10-10 14:28:00",
     "tags": [
       "personal"
     ],
