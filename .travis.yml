@@ -13,7 +13,7 @@ deploy:
   skip_cleanup: true
   provider: heroku
   api_key:
-    secure: aIPVnCeL1UiNb82JlNsFyp793Au8XIemhpvax1o9B+ziNJcQULsUvGMyY7SmC0adR1ZMpUSnVCQe5FkY411STorC/BZjLjux2ricYP/TT5OBYUjtOAiUT3s8vUZw848xTQK7p5Px+1W/QuqtbR6rsTlH4FBIB6+eln5P2OpeNDw=
+    secure: bFD1MdvahSImFiLZschAnia01Itff6G6khAEZ48J0VaaEg5o+OT6jBnJn91qgQGjUFyVM+siHwDz2/4aprJLB4H3oinXfvbgP/osQ6UmVQriyuZRtY1KJipqYONokLZtjVjCJeyqSlblLWXUqkeTGknjyiM2TMjQEHNqSPDBQaM=
   app: remysharp-com
   on:
     repo: remy/remysharp.com
