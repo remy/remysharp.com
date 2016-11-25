@@ -2,7 +2,9 @@
 
 The 2016 edition of [ffconf](https://ffconf.org) ran over two days. But it wasn't a two day event, it was a one day event, *run twice*. This was a thing that Julie and I had wanted to do since 2013.
 
-The result has two very different experiences. I wanted to share both with you.
+After all was said and done, I came away with two very personal and different experiences, one from the 4 month lead up, and one for the event itself.
+
+I wanted to share both with you.
 
 ## A short backstory
 
@@ -17,32 +19,6 @@ In 2014, our daughter was born. Julie had already run ffconf with a newborn, and
 In 2015 we actually booked a larger venue, one with a similar personality as our beautiful cinema, but were we could sell tiers, starting with 300, then up to 600 seats, all the way to 900 (but realistically we would have always capped at 600). However, in the week that we were supposed to sign the contract, the venue contacted us informing us that a larger event had booked the entire week and that they needed to take priority. So we stuck to one day.
 
 In 2016, we took the plunge, and we ran ffconf twice.
-
-## The events
-
-As I write, ffconf was just last week for me. The venue was full and I always ask at the start of the event for attendees to raise their hands if this was their first time.
-
-Both days, a sea of hands went up. This is super important to me, because it means that the conference is reaching more and more new people. I think it's more important for a conference to reach new audiences, partly for sustainability, but also because I want to see new people learn from our event.
-
-The second huge benefit of running twice was that we had a *lot more* availability for diversity seats. Our event is run by me and Julie, so we don't have the backing of a large company off the back of it. What this means is that it's part of our company's profit model. However, with a larger number of seats available, it meant we could make more seats available as not-for-profit (or rather: at our expense).
-
-I (personally) think it's important to write off some profits towards good causes. We are far from raking in the cash, but whilst our company makes enough money to cover our costs, I think it's good karma to share some of that wealth back to individuals where it can make some kind of difference.
-
-We had 30 diversity attendees, 10 of which we were able to pay for their travel and accommodation. This in part was supported by our [attendees too](https://2016.ffconf.org/#a-special-thanks-). The overall attendees though, were a lot more mixed compared to previous years, and previous years to that.
-
-In general though, putting more effort in opening up our conference, and committing to diversity in both our content (speakers) and our attendees, tweets like this is what makes me personally happy beyond words and utterly inspired:
-
-[![As a young woman I find the mostly female speaker line up at #ffconf so inspiring](/images/ffconf2016-inspire.png)](https://mobile.twitter.com/ninjanails/status/797064239928184832)
-
-And it's kind of ridiculous that this following tweet was liked/fav'ed so much, but it's more that it was popular because it's a commentary on the state of tech events over the last few years (and hopefully changing):
-
-[![I'm at a tech conference where there's a queue for the ladies toilets! Never been so happy to wait](/images/ffconf2016-loos.png)](https://mobile.twitter.com/H_Bottles/status/796673500979363840)
-
-I know that the issue of diversity in tech is far from being fixed, but I do [see it getting better on our front doorstep](https://www.flickr.com/photos/sebleedelisle/albums/72157675366412460), but I also know that now is the time that we have to continue to double down with our efforts (to [quote a line from Jake Archibald's Chrome Dev Summit opening](https://youtu.be/m4-IBIEjOe0?t=3m37s)).
-
----
-
-Anyway, for me, seeing the results of the two days, it was a success.
 
 But that's not the full picture. There was a four months from launch to the event.
 
@@ -83,6 +59,34 @@ Things that do work:
 3. Direct outreach to potential attendees.
 
 In the end it worked. It was definitely the hardest year to pull together (even compared to the 2009 edition), but perhaps contained the most lessons.
+
+Then we finally made it to the event itself…
+
+## The events
+
+As I write, ffconf was just last week for me. The venue was full and I always ask at the start of the event for attendees to raise their hands if this was their first time.
+
+Both days, a sea of hands went up. This is super important to me, because it means that the conference is reaching more and more new people. I think it's more important for a conference to reach new audiences, partly for sustainability, but also because I want to see new people learn from our event.
+
+The second huge benefit of running twice was that we had a *lot more* availability for diversity seats. Our event is run by me and Julie, so we don't have the backing of a large company off the back of it. What this means is that it's part of our company's profit model. However, with a larger number of seats available, it meant we could make more seats available as not-for-profit (or rather: at our expense).
+
+I (personally) think it's important to write off some profits towards good causes. We are far from raking in the cash, but whilst our company makes enough money to cover our costs, I think it's good karma to share some of that wealth back to individuals where it can make some kind of difference.
+
+We had 30 diversity attendees, 10 of which we were able to pay for their travel and accommodation. This in part was supported by our [attendees too](https://2016.ffconf.org/#a-special-thanks-). The overall attendees though, were a lot more mixed compared to previous years, and previous years to that.
+
+In general though, putting more effort in opening up our conference, and committing to diversity in both our content (speakers) and our attendees, tweets like this is what makes me personally happy beyond words and utterly inspired:
+
+[![As a young woman I find the mostly female speaker line up at #ffconf so inspiring](/images/ffconf2016-inspire.png)](https://mobile.twitter.com/ninjanails/status/797064239928184832)
+
+And it's kind of ridiculous that this following tweet was liked/fav'ed so much, but it's more that it was popular because it's a commentary on the state of tech events over the last few years (and hopefully changing):
+
+[![I'm at a tech conference where there's a queue for the ladies toilets! Never been so happy to wait](/images/ffconf2016-loos.png)](https://mobile.twitter.com/H_Bottles/status/796673500979363840)
+
+I know that the issue of diversity in tech is far from being fixed, but I do [see it getting better on our front doorstep](https://www.flickr.com/photos/sebleedelisle/albums/72157675366412460), but I also know that now is the time that we have to continue to double down with our efforts (to [quote a line from Jake Archibald's Chrome Dev Summit opening](https://youtu.be/m4-IBIEjOe0?t=3m37s)).
+
+---
+
+Anyway, for me, seeing the results of the two days, it was a success.
 
 ## …But, would we do two days again?
 

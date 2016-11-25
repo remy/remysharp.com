@@ -518,15 +518,24 @@
       "web"
     ]
   },
-  "the-one-where-we-did-two-days": {
-    "title": "The one where we did two days",
-    "date": "2016-11-14 12:51:29",
-    "modified": "2016-11-14 12:51:29",
+  "tricks-with-xargs": {
+    "title": "Tricks with xargs",
+    "date": "2016-11-19 07:34:37",
+    "modified": "2016-11-19 07:34:37",
     "complete": false,
     "inprogress": true,
     "tags": [
-      "web",
-      "business"
+      "web"
+    ]
+  },
+  "format-numjsor-es6": {
+    "title": "format-num.js…or ES6!",
+    "date": "2016-11-22 11:21:19",
+    "modified": "2016-11-22 11:21:19",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
     ]
   }
 }
