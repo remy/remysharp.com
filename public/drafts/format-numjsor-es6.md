@@ -12,6 +12,26 @@ But why add another library to my code, when I can use ES6?
 
 Enter `toLocaleString` with powerups! Firstly, the function is available on a few prototype chains, including `String` and `Number`. We want the the `Number` (i.e. `"1000".toLocaleString()` doesn't do want we want).
 
-Let's take a look:
+Let's take a look (or play with [this bin](https://jsbin.com/pihahih/1/edit)):
 
-<a class="jsbin-embed" href="https://jsbin.com/pihahih/1/embed?js,console">toLocaleString demo on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?3.40.2"></script>
+```js
+// => 1,600.667
+(1600.666666).toLocaleString();
+
+// => 1.600,667
+(1600.666666).toLocaleString('de-DE');
+
+// => 1,600.67
+(1600.666666).toLocaleString('gb-GB', {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2
+});
+
+// => 1,600.00
+(1600).toLocaleString('gb-GB', {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2
+});
+```
+
+So now instead of messing around with `Math.round` or `.toFixed`, if I have support for `toLocaleString`, then I'll use it for perfect formating.

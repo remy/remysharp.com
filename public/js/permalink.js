@@ -59,7 +59,6 @@
     anchor.innerHTML = '<span></span>';
 
     [].forEach.call($('h1,h2,h3,h4,h5,h6'), function (el) {
-      console.log(el);
       if (!el.id) {
         // let's make one
         var id = (el.textContent||el.innerText).replace(/&.*?;/g, '').replace(/\s+/g, '-').replace(/[^\w\-]/g, '').toLowerCase();
