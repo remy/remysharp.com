@@ -6,6 +6,8 @@ After all was said and done, I came away with two very personal and different ex
 
 I wanted to share both with you.
 
+<!--more-->
+
 ## A short backstory
 
 When Julie and I launched tickets for ffconf 2013 something unexpected happened. The year before, we had sold out over a few hours, but this year was different. We sold out in a matter of minutes.
@@ -99,5 +101,3 @@ Seeing so many new people, and our most diverse audience yet, I want to continue
 I hope you'll attend next year, but we won't rely on that 😉
 
 ![Goodbye ffconf 2016](/images/ffconf-2016-end.jpg)
-
-<!-- ![sales](/images/ffconf2016-sales.png) -->
