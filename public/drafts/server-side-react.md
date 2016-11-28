@@ -99,7 +99,7 @@ jQuery was not the only tool however, neither was it particularly the "best" too
 What made jQuery a success was two important items:
 
 1. Time to up-and-running, in that you could know nothing about JavaScript, but with a touch of CSS (selectors) and copying a few symbols (like `$`) you could make something move on the page.
-2. Documentation, both in offical form, but more importantly, community contributed.
+2. Documentation, both in official form, but more importantly, community contributed.
 
 The second item is the most important. And by *documentation*, I mean actual docs, API, blog posts, tutorials, videos, conference talks, the lot. It was the spread of knowledge and the ease in which it happened is what allowed jQuery to end up in front of so many developers. *Obviously* the team behind making jQuery work in every browser, and the mobile support, and continued efforts, and everything has a huge importance, but that spread of knowledge…it's that, that got jQuery to critical mass.
 
@@ -122,33 +122,34 @@ The hot module reloading for React did work for a lot of the view code, but not 
 **Bottom line:** I would use this approach again. Having a large base of reusable code is very appealing. I'm not sure I have the right development approach (for me), but as with anything, that would come with time. I'm also interested in trying this approach with other JavaScript libraries out there (if possible), including Vue, Ember and Polymer (my brief experiences of Angular so far have been enough for me).
 
 
+## Miscellaneous notes and resources
 
+The post finished a moment ago, but I wanted to include some of the resources I had found in my research and some of the code and structure I ended up with, so here it is, in all it's unabashed glory.
 
-
-## Libraries
+### Libraries
 
 - [React engine (by PayPal)](https://github.com/paypal/react-engine/) (this is what I started with, but eventually bailed)
 - [Express React views](https://github.com/reactjs/express-react-views) (a little closer to the metal)
 - [Simple universal](https://github.com/guidsen/react-simple-universal) (though still in development)
 
-## Resources
+### Resources
 
 - [Router tutorials](https://github.com/reactjs/react-router-tutorial)
 - [Simplified routing structures](https://github.com/ReactTraining/react-router/blob/master/docs/guides/RouteConfiguration.md#configuration-with-plain-routes)
 - [Reducing the size of the final bundle.js](http://moduscreate.com/optimizing-react-es6-webpack-production-build/)
 - [Excellent example of specification breakdown into components and containers](http://redux.js.org/docs/basics/UsageWithReact.html#designing-component-hierarchy)
 
-## Containers and components
+### Concepts: Containers and components
 
 - https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0#.dxeml6nsq
 - https://gist.github.com/chantastic/fc9e3853464dffdb1e3c
 - https://www.youtube.com/watch?v=KYzlpRvWZ6c&t=1351
 
-## Quick prototyping
+### Quick prototyping
 
 This is super quick, but slow to load, since it's pulling around 2mb over the wire.
 
-### index.html
+#### index.html
 
 From [here](https://gist.github.com/cem2ran/9be3dd3499566302d5ae).
 
@@ -165,7 +166,7 @@ System.import('./app.js');
 <body></body><!--need a body for live-reload -->
 ```
 
-### app.js
+#### app.js
 
 ```js
 import React from 'react'
@@ -174,7 +175,9 @@ import { render } from 'react-dom'
 render(<h1>Hello world</h1>), document.body);
 ```
 
-## Current tree
+## Final code structure tree
+
+This is the structure my project ended up with. I'm sure there's different patterns, and in future I _may_ structure a few things differently, but it served it's job and wasn't too confusing to navigate.
 
 ```nohighlight
 ├── actions           # redux actions
