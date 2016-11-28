@@ -512,8 +512,8 @@
     "title": "Scraping data for 'next bus' notices",
     "date": "2016-11-13 14:52:57",
     "modified": "2016-11-13 14:52:57",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]
@@ -522,8 +522,8 @@
     "title": "Tricks with xargs",
     "date": "2016-11-19 07:34:37",
     "modified": "2016-11-19 07:34:37",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]
@@ -532,8 +532,18 @@
     "title": "format-num.js…or ES6!",
     "date": "2016-11-22 11:21:19",
     "modified": "2016-11-22 11:21:19",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
+    "tags": [
+      "web"
+    ]
+  },
+  "a-reminder-to-test": {
+    "title": "A reminder to test",
+    "date": "2016-11-25 15:38:10",
+    "modified": "2016-11-25 15:38:10",
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]

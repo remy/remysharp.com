@@ -4,11 +4,39 @@ As a (at present) Mac user, I spend nearly all my time in the terminal, and arou
 
 <!--more-->
 
+## A brief introduction to xargs
+
+`xargs` is a command line tool that allows you to use `STDIN` as the argument to another program.
+
+For instance, I want to see the first entry the web.archive.org has for a particular domain, first I must `curl` their [API](http://web.archive.org/cdx/search/cdx?limit=1&url=remysharp.com), then taking the 2nd field, I would pass this as an argument to `date` (for legible formatting). I _could_ do this by hand:
+
+![getting first entry in archive.org](/images/xargs-without.png)
+
+…or I could use `xargs` to complete it in a single command:
+
 ```sh
-ls */package.json | xargs -I file ws -l file
+curl http://web.archive.org/cdx/search/cdx\?limit\=1\&url\=remysharp.com |
+  cut -d' ' -f2 |
+  xargs date -j -f "%Y%m%d%H%M%S"
 ```
 
-## Search every project for a specific dependency
+The limitation somtimes I run into though, is that `xargs` by default puts the argument at the end (it also treats *everything* in `STDIN` as a single argument, but I'll come on to that). In particular, if you want to do something like pipe the output of the above command into a file, you can't just add `> output.txt` to the end of the line. `xargs` gets all messed up, and the whole command just hangs and waits.
+
+The solution, and the whole point of this post, is using the filename placeholder with `xargs`.
+
+## Filename placeholder
+
+`xargs` allows you to specify a placeholder using `-I <marker>` and then you can re-use the marker later on in the command. Most reading material on the web uses a marker of `{}`, but you can use anything, like `FILE`:
+
+```sh
+curl http://web.archive.org/cdx/search/cdx\?limit\=1\&url\=remysharp.com |
+  cut -d' ' -f2 |
+  xargs -I FILE date -j -f "%Y%m%d%H%M%S" FILE > output.txt
+```
+
+That's how I solved a specific problem: search every node project for a specific dependency.
+
+## Finding node projects with a specific dependency
 
 I had a specific problem where I was trying to remember a dependency that I had included for date mocking, except I had forgotten the name.
 
@@ -38,3 +66,5 @@ Aside, this could also be done using `find`, but it's quite a bit slower (for me
 ```sh
 find . -name package.json -depth 2 -exec sh -c 'json -f "{}" devDependencies'  \;
 ```
+
+I hope that's helpful, and next time you might use `xargs` to do a bit of your CLI magic!
