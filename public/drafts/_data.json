@@ -297,16 +297,6 @@
       "web"
     ]
   },
-  "smarter-cli-gists": {
-    "title": "Smarter CLI gists",
-    "date": "2016-04-24 19:52:44",
-    "modified": "2016-04-24 22:21:51",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "how-to-write-a-github-integration": {
     "title": "How to write a Github integration",
     "date": "2016-05-29 13:03:53",
@@ -544,6 +534,16 @@
     "modified": "2016-11-25 15:38:10",
     "complete": true,
     "inprogress": false,
+    "tags": [
+      "web"
+    ]
+  },
+  "node-cli-workflow": {
+    "title": "Node CLI workflow",
+    "date": "2016-11-28 13:48:31",
+    "modified": "2016-11-28 13:48:31",
+    "complete": false,
+    "inprogress": true,
     "tags": [
       "web"
     ]

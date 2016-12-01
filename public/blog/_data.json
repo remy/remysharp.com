@@ -4191,5 +4191,14 @@
       "business"
     ],
     "published": true
+  },
+  "smarter-cli-gists": {
+    "title": "Smarter CLI gists",
+    "date": "2016-12-01 07:32:09",
+    "modified": "2016-04-24 22:21:51",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }

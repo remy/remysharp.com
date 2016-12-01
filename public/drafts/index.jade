@@ -1,10 +1,15 @@
+- ready = 0;
 - posts = Object.keys(public.drafts._data).map(function (slug) {
 -   var post = public.drafts._data[slug];
 -   post.slug = slug;
+-   if (post.complete) ready++;
 -   return post
 - }).sort(function(a,b){
 -   return a.modified < b.modified ? 1 : -1
 - })
+
+p
+  em #{ready} posts ready to publish.
 
 ul
   for post in posts
