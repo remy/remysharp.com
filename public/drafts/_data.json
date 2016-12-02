@@ -368,16 +368,6 @@
       "web"
     ]
   },
-  "aws-lambda-gateway-workflow": {
-    "title": "AWS lambda & gateway workflow",
-    "date": "2016-07-27 13:09:24",
-    "modified": "2016-07-28 17:11:46",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "in-the-detail-close-button": {
     "title": "In the detail: close button",
     "date": "2016-08-05 18:24:26",

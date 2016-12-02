@@ -4200,5 +4200,14 @@
       "web"
     ],
     "published": true
+  },
+  "aws-lambda-gateway-workflow": {
+    "title": "AWS lambda & gateway workflow",
+    "date": "2016-12-02 08:21:41",
+    "modified": "2016-07-28 17:11:46",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }
