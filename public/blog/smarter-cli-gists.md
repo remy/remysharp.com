@@ -32,7 +32,7 @@ function gist() {
   if [ -t 0 ]; then
     # and there's no arguments...
     if ((! $# )); then
-      # take what's onthe clipboard and paste it in a new gist
+      # take what's on the clipboard and paste it in a new gist
       command gist -Pcop -f paste.txt
     else
       # create a gist based on the arguments give
