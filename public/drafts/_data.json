@@ -562,8 +562,8 @@
     "title": "Tech things in 2016",
     "date": "2016-12-02 21:45:30",
     "modified": "2016-12-02 21:45:30",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "personal"
     ]
