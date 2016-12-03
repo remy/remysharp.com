@@ -8,6 +8,8 @@ I started out with a satsuma (the Sun) and a lime (Earth), as all science clearl
 
 <!--more-->
 
+<img class="centre" src="/images/yeah_science_breaking_bad.gif">
+
 I explained that when we stand close to a fire, then it's warm. And when we stand further away, it's not so warm. Then, using the lime and satsuma at different distances, showed that the earth being further away from the sun means it's colder.
 
 At the same time, showing that earth still has the same line of sight to the sun, therefore it's still sunny.
