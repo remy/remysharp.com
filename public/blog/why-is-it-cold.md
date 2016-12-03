@@ -1,14 +1,12 @@
-# Delicacy
+# Why is it cold…and sunny?
 
-This morning my son was asking Julie why it was so cold. She replied because it's winter. But then he asked why is it so sunny then.
+This morning my son asked why it was so cold. I replied because it's winter. But then he asked why is it so sunny then.
 
-Julie replied, "I'm not sure, but I'm sure daddy does."
+Honestly kids are great at this: questioning the daily obvious, then making parents realise they know nothing, even if they're tasked with knowing all!
+
+I started out with a satsuma (the Sun) and a lime (Earth), as all science clearly should…
 
 <!--more-->
-
-Firstly, I'm sure Julie would have been able to solve this too, but I went ahead. Secondly, honestly kids are great at this: questioning the daily obvious, then making parents realise the know nothing, even if they're tasked with knowing all!
-
-Anyway. I started out with a satsuma (the Sun) and a lime (Earth).
 
 I explained that when we stand close to a fire, then it's warm. And when we stand further away, it's not so warm. Then, using the lime and satsuma at different distances, showed that the earth being further away from the sun means it's colder.
 
