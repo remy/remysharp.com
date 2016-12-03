@@ -21,7 +21,7 @@ So far I've written four of my own apps: a Christmas count down (which today has
 
 ## My Pebble Watch
 
-I've backed all three Pebble Kickstarter campaigns. When I backed the original some years ago, I hadn't worn a watch in well over a decade. I love that I've been able to customise the watch face both from the Pebble store, but also by writing my own code. I love that I've [written an app](http://remy.github.io/rest/) that I use extremely frequently (enough to wear out the button on the OG Pebble).
+I've backed all three Pebble Kickstarter campaigns. When I backed the original some years ago, I hadn't worn a watch in well over a decade. I love that I've been able to customise the watch face both from the Pebble store, but also by writing my own code. I've [written an app](http://remy.github.io/rest/) that I use extremely frequently (enough to wear out the button on the OG Pebble!).
 
 ## Pixel (and it's camera)
 
@@ -37,13 +37,13 @@ The router completely solved wifi connectivity problems that had been getting wo
 
 ![Home wifi](/images/wifi-at-home.jpg)
 
-## Honorary mentions of (kinda) lame technology in my life
+## Honorary mentions of tech that falls short of being super
 
 I'm also constantly disillusioned about technology (in fact more so than not). There's a number of products that I keep in my life, but they do kinda suck in some way.
 
 - [Hello Sense](https://hello.is/): lovely looking, great in the fact it records without having to interact with it. Sadly key features like capturing _what_ audio caused disturbance has been "still in the works" for years. Importantly, I'd like to get my data back out…but there's [no sign of progress on an API](https://twitter.com/rem/status/804827255717396481).
 - [Fitbit Aria](https://www.fitbit.com/uk/aria): great scales, records body fat, which is kinda useful (and helped me a lot early on). But as my knowledge and understand expanded, the more I came to realise that the fat percent recordings are pretty inaccurate. It may offer a gauge, but if it says you're 12%, it's more likely you're up in 15% or more.
-- [Amazon Echo](https://amazon.com/echo): on one hand, the AI and voice control is amazing. But Alexa quite often misheard Julie (my partner), the Spotify integration (for us) loses the last 5 seconds of *every single song*, and there's no IFTTT support (in the UK at time of writing) and a lot of services are only available to US, and not the UK.
+- [Amazon Echo](https://amazon.com/echo): on one hand, the AI and voice control is amazing. But Alexa quite often mishears Julie (my partner), the Spotify integration (for us) loses the last 5 seconds of *every single song*, and there's no IFTTT support (in the UK at time of writing) and a lot of services are only available to US, and not the UK.
 - [My Oral-B toothbrush](https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/smartseries-6000-crossaction-rechargeable-bluetooth): it does the job, except, somehow, it has bluetooth. I'm not sure if this is a teeth-related joke or not, but it has bluetooth, and a mobile app. I can't…I don't… I'm just confused.
 
 ---
