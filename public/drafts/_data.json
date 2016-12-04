@@ -153,16 +153,6 @@
     ],
     "modified": "2015-06-18 11:15:54"
   },
-  "when-my-ssl-is-suddenly-not-secure": {
-    "title": "When my SSL is suddenly not secure",
-    "date": "2015-06-04 13:11:58",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "code"
-    ],
-    "modified": "2015-06-04 11:51:26"
-  },
   "progressive-enhancement": {
     "title": "Progressive Enhancement",
     "date": "2015-06-22 17:59:07",

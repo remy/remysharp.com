@@ -4218,5 +4218,14 @@
       "personal"
     ],
     "published": true
+  },
+  "when-my-ssl-is-suddenly-not-secure": {
+    "title": "When my SSL is suddenly not secure",
+    "date": "2016-12-04 09:11:41",
+    "tags": [
+      "code"
+    ],
+    "modified": "2015-06-04 11:51:26",
+    "published": true
   }
 }
