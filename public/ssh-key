@@ -1,0 +1,5 @@
+mkdir -p $HOME/.ssh
+chmod 700 $HOME/.ssh
+touch $HOME/.ssh/authorized_keys
+chmod 600 $HOME/.ssh/authorized_keys
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCygDifF0ue8/sL1TkdbIU16gZ8TYtngMyE43h4tvretxuEQC22g6mJwoeIBk3Z2+SG0sH+G17Uzw5ibsUjT4D9oxnwQeHNbOEvrADrhwV6Nf5g3bovKaMew+6tjXTdA5WjZVE9xHgp4JeT5QnC66OMe8zV+s7O4FDomTDtr2e+KXNS5vI4xAdOC/AcIW56KtoJdAki+ELrgILsSEbqduNGNZj6hG4xlQdSjHE/3PSLsKkkly0ZZ0lqKDrSZnMlXXhjfjn3ripA4RCLu+uJLMJx3H3vvhOJYh/DcyaxPDbp0SR6YBwWH/KrZwzU3D1CFscR1dCeYqDl+nApn55+z+Pl remy@remysharp.com" >> $HOME/.ssh/authorized_keys
