@@ -478,16 +478,6 @@
       "personal"
     ]
   },
-  "scraping-data-for-next-bus-notices": {
-    "title": "Scraping data for 'next bus' notices",
-    "date": "2016-11-13 14:52:57",
-    "modified": "2016-11-13 14:52:57",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "tricks-with-xargs": {
     "title": "Tricks with xargs",
     "date": "2016-11-19 07:34:37",
