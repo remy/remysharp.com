@@ -4236,5 +4236,14 @@
       "web"
     ],
     "published": true
+  },
+  "auto-detect-node-version-in-npm-start": {
+    "title": "Auto-detect node version in npm start",
+    "date": "2016-12-06 08:28:45",
+    "modified": "2016-05-11 08:01:10",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }

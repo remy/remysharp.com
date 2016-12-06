@@ -277,16 +277,6 @@
       "web"
     ]
   },
-  "auto-detect-node-version-in-npm-start": {
-    "title": "Auto-detect node version in npm start",
-    "date": "2016-04-24 13:12:17",
-    "modified": "2016-05-11 08:01:10",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "how-to-write-a-github-integration": {
     "title": "How to write a Github integration",
     "date": "2016-05-29 13:03:53",

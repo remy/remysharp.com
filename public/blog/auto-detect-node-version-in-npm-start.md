@@ -6,7 +6,7 @@ I posed myself the question: why isn't `engines.node` used to load the right ver
 
 ## 👋 The why
 
-*Most* of the time, the version of node doesn't really matter to my code. The code I write often has to work on 0.10, 4.x and 6.x because either I'm writing CLI tools, or don't have many version-dependant code.
+*Most* of the time (at time of writing), the version of node doesn't really matter to my code. The code I write often has to work on 0.10, 4.x and 6.x because either I'm writing CLI tools, or don't have many version-dependant code.
 
 "Most" means not *all* the time. So, some of the time I see this:
 
@@ -20,7 +20,7 @@ Wouldn't it be cool if, when I ran `npm start` it detected the version of node r
 
 I'm using [nvm](https://github.com/creationix/nvm) (and you might be using a different version manager). nvm will be used to run the code in the right version.
 
-The `engines` property in the `package.json` file will be introduced via an environement variable called `$npm_package_engines_node` when `npm start` is used:
+The `engines` property in the `package.json` file will be introduced via an environment variable called `$npm_package_engines_node` when `npm start` is used:
 
 ```json
 {
@@ -66,7 +66,7 @@ To get this to work correctly, my new version of `node` will be the highest prio
 
 Then to find the *real* path to `node`, I use `which -a node` which shows all the paths to `node`, and I take the second line and use it as the executable. This should be the system version of `node`.
 
-If the `engines` property is detected, then I load load up nvm (using a command I found by slelunking the source code), and then execute the request using the desired version of node (though do check the [caveats](#caveats)).
+If the `engines` property is detected, then I load load up nvm (using a command I found by spelunking the source code), and then execute the request using the desired version of node (though do check the [caveats](#caveats)).
 
 I'm using nvm, so my path typically looks like this, the system version of node made available at the top of the path:
 
@@ -99,10 +99,12 @@ Now, when I run `npm start`:
 
 Most importantly, this technique does not work at all if the `engines` is a range (and will probably blow things up if nvm doesn't have the version requested). I did write some simple code that found the matching installed version of node for a semver range, but the time to execute the semver calc on all versions of node installed outweighed the benefit.
 
-Also (yes, *also*), if I run `nvm use X` to switch node version, nvm will put the path to node *above* our bespoke version of node, so this trick doesn't work in the current shell session anymore.
+Also (yes, *also*), if I run `nvm use X` to switch node version, nvm will put the path to node *above* our bespoke version of node, so this trick doesn't work in the current shell session any more.
+
+**Important** this is far from perfect, and I've used this for a while, but on other systems I've disabled it altogether. You mileage may vary!
 
 ## 🐱 There's more than one way to skin a cat
 
 This definitely feels hacky to me, and a little brittle—see earlier caveats.
 
-I expect use of the `engines` property will be formalised for developement one day, and maybe you can comment as to alternative or better solutions, but for now: it works 😄
+I expect use of the `engines` property will be formalised for development one day, and maybe you can comment as to alternative or better solutions, but for now: it works 😄
