@@ -2,13 +2,15 @@
 
 I use Heroku for a lot of my quick projects and a number of sites that need (in my view) to be online indefinitely (this [blog](https://remysharp.com), my business [Left Logic](https://leftlogic.com) and all the [ffconf](https://ffconf.org) sites).
 
-Since Salesforce took over Heroku it seems to be a bit wobbly over what how it handles it's free teir, and by no means is it particularly expensive, but the costs do go up as more project require 247 hosting. So I'm always on the look out for alternatives. [Zeit's now is just that](https://zeit.co).
+Since Salesforce took over Heroku it seems to be a bit wobbly over what how it handles it's free teir, and by no means is it particularly expensive, but the costs do go up as more project require 247 hosting. So I'm always on the look out for alternatives. [Zeit's now is just that](https://zeit.co). I had been on the fense until they landed control over environment variables, at which point I tried it seriously, then threw my money at them.
 
 This post explains why I moved, some of the technical details and gotchas and reasons some of my sites haven't migrated (yet).
 
 ## Why Zeit?
 
 It's also worth pointing out that [Surge](https://surge.sh) is an excellent solution for front end sites (backed with a solid CDN, transforms and more baked in).
+
+If you want to really quickly try it out, you can get now as a CLI tool (`npm i -g now`) or an [installable application](https://zeit.co/app) for static sites, node projects and Docker containers.
 
 ### 1. Pricing
 
@@ -69,7 +71,13 @@ To solve this, ideally you would use the package's `files` array, but that's [no
 
 This will ensure the `.env` file is deployed (but watch that you don't push to npm too!).
 
-## Sweet workflow
+---
+
+## Workflow tips
+
+In using Zeit over the last few months, I've found a few best practises that suit my workflows which I've included below.
+
+### Sweet alias workflow
 
 Many of my projects get deployed and moved to live with a simple:
 
@@ -87,7 +95,7 @@ This does two things: deploys the current directory, and then aliases the now.sh
 
 Note that I'm doing this from my local environment. I've not yet moved to continuous deployment using now, but I'm confident that I could script it myself, or use something like [now-pipeline](https://www.npmjs.com/package/now-pipeline).
 
-## Server Sent Events
+### Server Sent Events
 
 This is a special case that I had to get help via the [Zeit community slack channel](https://zeit-community.slack.com/messages/now/). If you're using server sent events, which I do for a number of projects, to ensure messages get through (and thus prevent the nginx layer inside Zeit's architecture from buffering), when you send your headers to the `EventSource` request, it [must include](https://github.com/remy/inline-log/blob/master/index.js#L43-L49) `'x-accel-buffering': 'no'`:
 
@@ -102,7 +110,7 @@ res.writeHead(200, {
 
 If you don't do this, then the `EventSource` will never see a message.
 
-## Always ensuring production
+### Always ensuring production
 
 As I mentioned, I use [dotenv](https://www.npmjs.com/package/dotenv) to manage my environment values. To make the deployment see the environment there's a number of options, but I pretty much *always* forget to do it on the CLI using `now -e NODE_ENV=production`.
 
@@ -111,4 +119,18 @@ As I mentioned, I use [dotenv](https://www.npmjs.com/package/dotenv) to manage m
 
 I'll quiet often use method (2) from above.
 
-## Caching through CloudFlare
+---
+
+## Minor limitations
+
+There's a handful of limitations, some of which are being worked on, but obviously there are priorities.
+
+- Wild card domains: this just isn't simple. I run [mit-license.org](http://mit-license.org) and [confcodeofconduct.com](http://confcodeofconduct.com) which use CNAMES to dynamically load content, it's simpler to do this on Heroku right now, and maybe not an ideal match to Zeit.
+- Zeit is _just_ hosting, not logs or databases, if you need those you'll have to use cloud managed services like logz.io or mlab, etc. Though, I did write a _hacky_ bit of middleware for [capturing logs](https://github.com/remy/inline-log)
+- Cleaning up unused deploys isn't particularly easy, so in the meantime, I have a CLI workflow: <code>[now-no-alias](https://www.npmjs.com/now-no-alias) | [json](https://www.npmjs.com/package/json) -a uid | xargs now rm</code>
+- You can't set the region the deployment goes to (i.e. europe vs. east us, etc), though going by the Slack channels, this is something that will be configurable (if it isn't already)
+
+---
+
+All in all, Zeit's now, is _now_ my goto deployment platform. The latest version of node by default (which means all the ES6 toys), SSL by default and an amazingly simple workflow:
+
