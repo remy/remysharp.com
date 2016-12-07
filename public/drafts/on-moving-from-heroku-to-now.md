@@ -12,7 +12,7 @@ This post explains why I moved, some of the technical details and gotchas and re
 
 ## Why Zeit?
 
-It's also worth pointing out that [Surge](https://surge.sh) is an excellent solution for front end sites (backed with a solid CDN, transforms and more baked in).
+It's also worth pointing out that [Surge](https://surge.sh) is an excellent solution for front end sites (backed with a solid CDN, transforms and more baked in, [also 20 seconds to live](https://www.youtube.com/watch?v=W-Kc_zjfeH0)).
 
 If you want to really quickly try it out, you can get now as a CLI tool (`npm i -g now`) or an [installable application](https://zeit.co/app) for static sites, node projects and Docker containers.
 
