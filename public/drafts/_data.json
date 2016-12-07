@@ -187,8 +187,8 @@
   "terms-of-work": {
     "title": "Terms of work",
     "date": "2016-01-07 11:17:08",
-    "complete": true,
-    "inprogress": false,
+    "complete": false,
+    "inprogress": true,
     "tags": [
       "business"
     ],
@@ -382,8 +382,8 @@
     "title": "On moving from Heroku to now",
     "date": "2016-09-06 14:44:11",
     "modified": "2016-09-21 15:10:37",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]

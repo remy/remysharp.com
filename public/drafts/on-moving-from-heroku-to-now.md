@@ -6,6 +6,10 @@ Since Salesforce took over Heroku it seems to be a bit wobbly over what how it h
 
 This post explains why I moved, some of the technical details and gotchas and reasons some of my sites haven't migrated (yet).
 
+<!--more-->
+
+![Screenshot of now in action](/images/now.png)
+
 ## Why Zeit?
 
 It's also worth pointing out that [Surge](https://surge.sh) is an excellent solution for front end sites (backed with a solid CDN, transforms and more baked in).
@@ -123,7 +127,7 @@ I'll quiet often use method (2) from above.
 
 ## Minor limitations
 
-There's a handful of limitations, some of which are being worked on, but obviously there are priorities.
+There's a handful of limitations, some of which are being worked on, but obviously there are likely other priorities.
 
 - Wild card domains: this just isn't simple. I run [mit-license.org](http://mit-license.org) and [confcodeofconduct.com](http://confcodeofconduct.com) which use CNAMES to dynamically load content, it's simpler to do this on Heroku right now, and maybe not an ideal match to Zeit.
 - Zeit is _just_ hosting, not logs or databases, if you need those you'll have to use cloud managed services like logz.io or mlab, etc. Though, I did write a _hacky_ bit of middleware for [capturing logs](https://github.com/remy/inline-log)
@@ -134,3 +138,8 @@ There's a handful of limitations, some of which are being worked on, but obvious
 
 All in all, Zeit's now, is _now_ my goto deployment platform. The latest version of node by default (which means all the ES6 toys), SSL by default and an amazingly simple workflow:
 
+<iframe src="https://player.vimeo.com/video/194643614" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+That's 20 seconds to get from offline to fully deployed with SSL. Then another 10 seconds to go from staged URL to production URL 🎉
+
+This is why I've been proactively porting as many applications from Heroku to Zeit's platform.
