@@ -103,7 +103,7 @@ What made jQuery a success was two important items:
 
 The second item is the most important. And by *documentation*, I mean actual docs, API, blog posts, tutorials, videos, conference talks, the lot. It was the spread of knowledge and the ease in which it happened is what allowed jQuery to end up in front of so many developers. *Obviously* the team behind making jQuery work in every browser, and the mobile support, and continued efforts, and everything has a huge importance, but that spread of knowledge…it's that, that got jQuery to critical mass.
 
-For me, as much as Vue looks interesting and certainly easier to get going with, there's a distinct lack of examples across the web, and yes, Vue *only* just landed 1.0 and is relatively new, and is a small team (I think), but this is comparison to React. That doesn't mean Vue couldn't grow to be a great (and I remember the old Prototype vs. jQuery discussions of yonder year!).
+For me, as much as Vue looks interesting and certainly easier to get going with, there's a distinct lack of examples across the web, and yes, Vue had only just landed 1.0 and is relatively new, and is a small team (I think), but this is comparison to React. That doesn't mean Vue couldn't grow to be a great (and I remember the old Prototype vs. jQuery discussions of yonder year!).
 
 The more examples and samples and code out on the web, the more edge cases are covered, and the more it helps with the "yeah, but what about when I…" questions. React's community posts could definitely answer a lot of the questions I had. I'm not totally sure we've seen the next Rule Of the Libraries yet though!
 
