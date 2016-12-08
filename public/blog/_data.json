@@ -4254,5 +4254,15 @@
       "web"
     ],
     "published": true
+  },
+  "multiple-assignments": {
+    "image": "/images/multiple-assignment.png",
+    "title": "Multiple assignments",
+    "date": "2016-12-08 07:58:19",
+    "modified": "2016-09-05 20:01:19",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }
