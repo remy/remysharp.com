@@ -73,6 +73,12 @@ route.all('/feed/', function (req, res, next) {
   next();
 });
 
+/* redirect for book */
+route.get('/cli-book', function (req, res, next) {
+  // required by harp because it thinks I'm using express...
+  redirect(res, 'https://abookapart.com/products/working-the-command-line');
+});
+
 /* redirect to s3 hosted urls */
 route.all(/\/downloads\/(.*)$/, function (req, res) {
   redirect(res, 'http://download.remysharp.com/' + req.params[1]);
