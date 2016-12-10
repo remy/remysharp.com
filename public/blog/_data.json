@@ -4274,5 +4274,14 @@
       "business"
     ],
     "published": true
+  },
+  "in-the-detail-close-button": {
+    "title": "In the detail: close button",
+    "date": "2016-12-10 10:30:50",
+    "modified": "2016-08-07 13:47:52",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }
