@@ -4283,5 +4283,14 @@
       "web"
     ],
     "published": true
+  },
+  "how-tabs-should-work": {
+    "title": "How tabs should work",
+    "date": "2016-12-11 11:58:20",
+    "tags": [
+      "code"
+    ],
+    "modified": "2016-01-01 08:47:39",
+    "published": true
   }
 }

@@ -4,7 +4,7 @@ Tabs in browsers (not *browser tabs*) are one of the oldest custom UI elements i
 
 So this post is my definition of how a tabbing system should work, and *one* approach of implementing that.
 
-<small>*This post was originally published on [24 Ways 2015](https://24ways.org/2015/how-tabs-should-work/), but I've updated the [accessibility section](#accessibility) with feedback and collaboration from [Léonie Watson](https://twitter.com/LeonieWatson).*</small>
+<small>*This post was originally published on [24 Ways 2015](https://24ways.org/2015/how-tabs-should-work/) (nearly a year ago!), but I've updated the [accessibility section](#accessibility) with feedback and collaboration from [Léonie Watson](https://twitter.com/LeonieWatson).*</small>
 
 ## But...tabs are easy, right?
 
@@ -295,6 +295,10 @@ The tasks were simple:
 And that's it. Very small changes to get full sign off that the tabbing system is bullet proof and accessible.
 
 The final version is here: http://output.jsbin.com/lorovu/ (and non-jQuery version as promised: http://jsbin.com/sehuxo/edit?js,output).
+
+What my version is missing in particular is the keyboard cursor support. The visitor should be able to cycle through the tabs using the cursor keys. In theory, this would also cause the browser history to be appended to as the journey changes.
+
+What I'd like to see is a library that can be dropped into our code that automagically gives keyboard support (that perhaps triggers clicks). But I tried it myself and already got into a rabbit hole because the DOM structure was specific to my application *and* the way I handled user clicks was specific (compounded by whether you use a library to handle clicks and so on). So…no quick fix, but all certainly doable.
 
 ## In conclusion
 
