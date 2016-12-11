@@ -128,7 +128,7 @@ However, there's a number of problems we need to fix:
 3. If you scroll to the bottom of the example, you'll find a "top" link, clicking that will break our tabbing system.
 4. I've purposely made the page long, so that when you click on a tab, you'll see the page scrolls to the top of the tab, not a huge deal, but a bit annoying.
 
-Though, from our criteria at the start of this post, we've already solved item (4) and (5). Not a terrible start. Let's solve items 1 through 3 next.
+Though, from our criteria at the start of this post, we've already solved item 4. Let's solve items 1 through 3 next.
 
 ### Using the URL to initialise correctly & protecting from breakage
 
