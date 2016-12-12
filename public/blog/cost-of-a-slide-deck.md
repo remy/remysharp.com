@@ -12,7 +12,7 @@ I've been publicly speaking [since early 2008](/2008/03/18/the-dom-scripting-too
 
 Firstly, **don't be afraid to repeat your talk**. This is important on a number of levels. Giving your talk in public on more than on occasion it allows you to get a feel for how what works and *real* timings.
 
-I've met many people over the last few years that have come away from a talk saying they had seen it before, but really enjoyed it again. Remember are humans, we generally like to know what's coming next, it helps us focus more on the detail when we know what's coming already.
+I've met many people over the last few years that have come away from a talk saying they had seen it before, but really enjoyed it again. Remember that we are humans, we generally like to know what's coming next, it helps us focus more on the detail when we know what's coming already.
 
 Also remember that many, many, *many* delegates won't have travelled around to see your talk, and many won't have the time to see your talk on film (as much as films are a great resource, few of us block book out entire days to watch an event full of conference talks).
 
