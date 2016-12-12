@@ -4,6 +4,8 @@ Tabs in browsers (not *browser tabs*) are one of the oldest custom UI elements i
 
 So this post is my definition of how a tabbing system should work, and *one* approach of implementing that.
 
+<!--more-->
+
 <small>*This post was originally published on [24 Ways 2015](https://24ways.org/2015/how-tabs-should-work/) (nearly a year ago!), but I've updated the [accessibility section](#accessibility) with feedback and collaboration from [Léonie Watson](https://twitter.com/LeonieWatson).*</small>
 
 ## But...tabs are easy, right?
