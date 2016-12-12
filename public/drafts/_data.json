@@ -163,17 +163,6 @@
     ],
     "modified": "2015-08-28 13:14:55"
   },
-  "cost-of-a-slide-deck": {
-    "title": "Cost of a slide deck",
-    "date": "2015-11-09 18:15:47",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "business",
-      "web"
-    ],
-    "modified": "2016-08-15 13:42:48"
-  },
   "terms-of-work": {
     "title": "Terms of work",
     "date": "2016-01-07 11:17:08",
@@ -497,8 +486,8 @@
       "web"
     ]
   },
-  "quick-beginners-guide-to-stripe-integration": {
-    "title": "Quick beginners guide to Stripe integration",
+  "beginners-guide-to-stripe-integration": {
+    "title": "Beginners guide to Stripe integration",
     "date": "2016-12-09 14:40:38",
     "modified": "2016-12-09 14:40:38",
     "complete": false,
