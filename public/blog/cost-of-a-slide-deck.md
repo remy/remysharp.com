@@ -10,9 +10,9 @@ I've been asked quite a few times in the past about slides, the work involved, w
 
 I've been publicly speaking [since early 2008](/2008/03/18/the-dom-scripting-toolkit-jquery) and I've made my fair share of mistakes over the years (learning from one or two along the way).
 
-Firstly, **don't be afraid to repeat your talk**. This is important on a number of levels. Giving your talk in public on more than on occasion it allows you to get a feel for how what works and *real* timings.
+Firstly, **don't be afraid to repeat your talk**. This is important on a number of levels. Giving your talk in public on more than one occasion allows you to get a feel for how what works and *real* timings.
 
-I've met many people over the last few years that have come away from a talk saying they had seen it before, but really enjoyed it again. Remember that we are humans, we generally like to know what's coming next, it helps us focus more on the detail when we know what's coming already.
+I've met many people over the last few years that have come away from a talk saying they had seen it before, but really enjoyed it again. Remember that we as humans, we generally like to know what's coming next, it helps us focus more on the detail when we know what's coming already.
 
 Also remember that many, many, *many* delegates won't have travelled around to see your talk, and many won't have the time to see your talk on film (as much as films are a great resource, few of us block book out entire days to watch an event full of conference talks).
 
@@ -25,7 +25,7 @@ Is filming a talk okay? For me, the answer depends on how it's published. **If t
 
 ## Filming workshops
 
-What about filming workshops? Nope, absolutely not. Workshops take *a lot* of time to create and prepare, and serve a small number of people. **I don't allow my workshops to be videoed because it would giving away the experience that I sell**. To be fair, I've only been asked once if the workshop could be filmed. O'Reilly wanted to film two of my workshops I ran at OSCON 2011. I said "no" because they would go on to be sold (either in exchange for your email address or money) on their web site. Essentially, my workshops are my *bread & butter*, I'm not going to give that away unless I'm 100% in control (i.e. running it for free myself).
+What about filming workshops? Nope, absolutely not. Workshops take *a lot* of time to create and prepare, and serve a small number of people. **I don't allow my workshops to be videoed because it would be giving away the experience that I sell**. To be fair, I've only been asked once if the workshop could be filmed. O'Reilly wanted to film two of my workshops I ran at OSCON 2011. I said "no" because they would go on to be sold (either in exchange for your email address or money) on their web site. Essentially, my workshops are my *bread & butter*, I'm not going to give that away unless I'm 100% in control (i.e. running it for free myself).
 
 ## Slides
 
@@ -48,7 +48,7 @@ The event should trust you. You're a professional. Do what's right for you.
 
 First of all: [you do not pay your own way](https://remysharp.com/2014/03/07/youre-paying-to-speak). **Absolutely not.** The very minimum you should be offered is travel and hotel costs covered (if applicable, i.e. If it's a local meet up you probably can go without a hotel).
 
-If should be your choice to turn down this expense. I've written passionately about this (link earlier), so do take a moment to read that too if you're unsure.
+It should be your choice to turn down this expense. I've written passionately about this (link earlier), so do take a moment to read that too if you're unsure.
 
 Should you charge and how much?
 
@@ -68,7 +68,7 @@ Should you be paid: yes.
 
 For me personally, somewhere along the line, I stopped asking for a fee. I don't really remember why, but there were a few times I asked for a fee, and the organisers said they didn't have the budget (which I disagree with on a fundamental level, but again, [read my other post](https://remysharp.com/2014/03/07/youre-paying-to-speak!) I suggested that *instead* they'd paid for my partner and child to accompany me and we have a day or two extra at the hotel. Every organiser agreed. It's a lot cheaper for them, and they get to keep their speaker.
 
-And so sometimes the event doesn't have the budget. For my event, [ffconf](https://ffconf.org), we budget for £500 honorarium per speaker, per day (and workshops are handled differently). If you're a first time speaker or veteran, we pay you the same amount (and obviously cover all travel, hotel, food, drinks, etc). It's budgeted for. If you ask for more from me, I'll be a hard consideration. I'm not sure, but it's **important that you, the speaker, ask to be paid.**
+And so sometimes the event doesn't have the budget. For my event, [ffconf](https://ffconf.org), we budget for £500 honorarium per speaker, per day (and workshops are handled differently). If you're a first time speaker or veteran, we pay you the same amount (and obviously cover all travel, hotel, food, drinks, etc). It's budgeted for. If you ask for more from me, it'll be a hard consideration. I'm not sure, but it's **important that you, the speaker, ask to be paid.**
 
 ## Hidden costs
 
