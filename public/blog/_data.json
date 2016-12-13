@@ -4302,5 +4302,14 @@
     ],
     "modified": "2016-08-15 13:42:48",
     "published": true
+  },
+  "format-numjsor-es6": {
+    "title": "format-num.js…or ES6!",
+    "date": "2016-12-13 08:09:45",
+    "modified": "2016-11-25 14:12:23",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }

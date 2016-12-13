@@ -17,3 +17,8 @@ code, .code {
   background: #eee;
   padding: 2px;
 }
+
+h1 img {
+  height: 38px;
+  vertical-align: bottom;
+}
