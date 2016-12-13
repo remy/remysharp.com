@@ -105,7 +105,7 @@ The second item is the most important. And by *documentation*, I mean actual doc
 
 For me, as much as Vue looks interesting and certainly easier to get going with, there's a distinct lack of examples across the web, and yes, Vue had just landed 2.0 and which would give me server support - which was a little too new for me, but this is comparison to React. That doesn't mean Vue couldn't grow to be a great (and I remember the old Prototype vs. jQuery discussions of yonder year!).
 
-<p class="update"><small>Note: paragraph above was [updated to correct]() Vue's version release.</small></p>
+<p class="update"><small>Note: paragraph above was [updated to correct](https://github.com/remy/remysharp.com/commit/ddcb821c57b42bf05fe5601954dc7d9933acc802) Vue's version release.</small></p>
 
 The more examples and samples and code out on the web, the more edge cases are covered, and the more it helps with the "yeah, but what about when I…" questions. React's community posts could definitely answer a lot of the questions I had. I'm not totally sure we've seen the next Rule Of the Libraries yet though!
 
