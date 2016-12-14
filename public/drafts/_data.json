@@ -336,16 +336,6 @@
       "web"
     ]
   },
-  "on-moving-from-heroku-to-now": {
-    "title": "On moving from Heroku to now",
-    "date": "2016-09-06 14:44:11",
-    "modified": "2016-12-07 11:00:09",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "the-bane-of-build-tools": {
     "title": "The bane of build tools",
     "date": "2016-09-17 12:39:01",
