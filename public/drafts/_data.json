@@ -416,16 +416,6 @@
       "web"
     ]
   },
-  "a-reminder-to-test": {
-    "title": "A reminder to test",
-    "date": "2016-11-25 15:38:10",
-    "modified": "2016-11-25 17:55:03",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "node-cli-workflow": {
     "title": "Node CLI workflow",
     "date": "2016-11-28 13:48:31",
