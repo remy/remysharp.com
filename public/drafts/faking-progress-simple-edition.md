@@ -1,4 +1,4 @@
-# Faking progress
+# Faking progress (simple edition)
 
 If you're familiar with the github.com website, then you'll be familiar with the effect (as of 2016) when you click from a repo to the issues or PRs or search for files…there's a progress loader at the top of the page, and the updated content is loaded in.
 
@@ -18,13 +18,13 @@ Specifically, I'm going to kick off an animation that's visible until the initia
 
 When (or why) would you use this? I'm using this process when I know the server can take a few seconds to respond (due to large API requests and related latency). I'm also finding it quite satisfying* session the web page respond to my direct input (even though the browser's chrome does offer feedback via the throbber against the tab).
 
-<small>* note that this is not based on research and only my own experience.</small>
+<small>* not based on research, only my own meandering experience!</small>
 
-## Method 1: sans-brains
+## Method 1: the simple version
 
-This is the noddy version, very basic, but works quite nicely. The big downside is if the visitor stops loading the page (manually), the animation remains in place.
+This is the "noddy" version, very basic, but equally works quite nicely. On any click or form submission, the loading animation starts. The only downside is if the visitor stops loading the page (manually) or the page load times out: the animation remains animating.
 
-I've added the following CSS to my styles (based on/taken from this [codepen](http://codepen.io/brunjo/pen/XJmbNz)):
+I've added the following CSS to my styles (originally based on this [codepen](http://codepen.io/brunjo/pen/XJmbNz)):
 
 ```css
 html.loading:before{
@@ -51,18 +51,19 @@ html.loading:before{
 Then I add in a little JavaScript to enhance:
 
 ```js
-// you can use jQuery, or these two lines from Paul Irish:
+// you can use jQuery, or these few lines from Paul Irish:
 // https://git.io/blingjs
 window.$ = document.querySelectorAll.bind(document);
 Node.prototype.on = window.on = function (name, fn) {
   this.addEventListener(name, fn);
-}
+};
 NodeList.prototype.on = NodeList.prototype.addEventListener = function (name, fn) {
   this.forEach(function (el, i) {
     el.on(name, fn);
   });
-}
+};
 
+// now the loading animation logic:
 $('form').on('submit', startLoader);
 $('a').on('click', startLoader);
 
@@ -75,9 +76,8 @@ function startLoader(event) {
 
 The `startLoader` function includes an important check to make sure the visitor is intending to load the page in the current window, i.e. don't show the loader if they open a new tab.
 
-## Method 2: intelligent service worker driven
+**Pros:** small JavaScript logic, works on all clicks & submits for both external and internal URLs.
 
-Now that we've got a dumb version working, what about something a little more intelligent. Perhaps using Service Workers to handle the requests, and to emit events into the main window to notify of loading activity and equally, and importantly, notify of failed or cancelled loading.
+**Cons:** doesn't handle user cancelled requests and network failures.
 
-It would even be possible to emit the loading event across _all_ the tabs on the origin (aka the domain) if you so wanted (though I think this might be confusing).
-
+Overall, a fairly simple from a technical perspective, but equally naïve implementation. In tomorrow's post, I'll show you how to do similar functionality, but using Service Worker instead.

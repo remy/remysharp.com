@@ -456,12 +456,22 @@
       "web"
     ]
   },
-  "faking-progress": {
-    "title": "Faking progress",
-    "date": "2016-12-15 11:52:36",
-    "modified": "2016-12-15 11:52:36",
+  "faking-progress-service-worker-edition": {
+    "title": "Faking progress (service worker edition)",
+    "date": "2016-12-16 19:50:33",
+    "modified": "2016-12-16 19:50:33",
     "complete": false,
     "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "faking-progress-simple-edition": {
+    "title": "Faking progress (simple edition)",
+    "date": "2016-12-16 20:02:26",
+    "modified": "2016-12-16 20:02:26",
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]
