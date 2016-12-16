@@ -22,7 +22,7 @@
     "elasticsearch": "^10.1.3",
     "es6-promise": "^3.1.2",
     "glob": "~4.0.5",
-    "harp": "^0.20.1",
+    "harp": "^0.23.0",
     "jstransformer-marked": "^1.0.1",
     "moment": "^2.12.0",
     "promise": "^6.0.1",
