@@ -67,4 +67,4 @@ Aside, this could also be done using `find`, but it's quite a bit slower (for me
 find . -name package.json -depth 2 -exec sh -c 'json -f "{}" devDependencies'  \;
 ```
 
-I hope that's helpful, and next time you might use `xargs` to do a bit of your CLI magic!
+I hope that's helpful, and next time you might use `xargs` to do a bit of your CLI magic! Also, if that was all new to you, perhaps you might want my new book: [Working the Command Line](/cli-book)!

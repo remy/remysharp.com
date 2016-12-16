@@ -4329,5 +4329,14 @@
       "web"
     ],
     "published": true
+  },
+  "tricks-with-xargs": {
+    "title": "Tricks with xargs",
+    "date": "2016-12-16 09:47:07",
+    "modified": "2016-11-27 18:17:19",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }

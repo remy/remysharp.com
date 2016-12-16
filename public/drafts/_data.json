@@ -406,16 +406,6 @@
       "personal"
     ]
   },
-  "tricks-with-xargs": {
-    "title": "Tricks with xargs",
-    "date": "2016-11-19 07:34:37",
-    "modified": "2016-11-27 18:17:19",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "node-cli-workflow": {
     "title": "Node CLI workflow",
     "date": "2016-11-28 13:48:31",
@@ -460,6 +450,16 @@
     "title": "Beginners guide to Stripe integration",
     "date": "2016-12-09 14:40:38",
     "modified": "2016-12-09 14:40:38",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "faking-progress": {
+    "title": "Faking progress",
+    "date": "2016-12-15 11:52:36",
+    "modified": "2016-12-15 11:52:36",
     "complete": false,
     "inprogress": true,
     "tags": [
