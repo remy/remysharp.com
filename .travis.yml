@@ -6,7 +6,7 @@ cache:
 notifications:
   email: true
 node_js:
-- 4
+- 7
 before_deploy:
 - rm .npmrc
 deploy:
