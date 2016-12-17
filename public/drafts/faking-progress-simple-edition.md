@@ -6,6 +6,8 @@ I suspect it feels "ajaxy" to me because I've got a good sense of how websites w
 
 <!--more-->
 
+Here's a simple working demo: [https://loader-simple.isthe.link](https://loader-simple.isthe.link/)
+
 ## Why "faking"?
 
 I'm going to apply a progress bar across the entire site every time the visitor clicks on a link or submits a form. The reason for this is that there maybe some server side processing that needs to be done before the browser gets a response, and during that time it can still run code from the current page:

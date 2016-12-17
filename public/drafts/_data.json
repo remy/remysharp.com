@@ -153,16 +153,6 @@
     ],
     "modified": "2015-11-25 08:49:15"
   },
-  "my-client-side-testing-wish": {
-    "title": "My client side testing wish",
-    "date": "2015-08-24 14:07:24",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "code"
-    ],
-    "modified": "2015-08-28 13:14:55"
-  },
   "terms-of-work": {
     "title": "Terms of work",
     "date": "2016-01-07 11:17:08",
@@ -224,16 +214,6 @@
       "web"
     ],
     "modified": "2016-09-12 12:17:37"
-  },
-  "analytics-for-all-time-per-post": {
-    "title": "Analytics for all time per post",
-    "date": "2016-04-04 11:38:28",
-    "modified": "2016-04-04 11:38:28",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "web"
-    ]
   },
   "living-standard": {
     "title": "Living Standard",
@@ -356,16 +336,6 @@
       "web"
     ]
   },
-  "why-attend-ffconf-8": {
-    "title": "Why Attend ffconf #8: Modules",
-    "date": "2016-10-05 13:58:42",
-    "modified": "2016-10-05 13:58:42",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "web"
-    ]
-  },
   "what-i-learnt-from-creating-ffconfs-quine": {
     "title": "What I learnt from creating ffconf's quine",
     "date": "2016-10-06 10:57:44",
@@ -474,6 +444,16 @@
     "inprogress": false,
     "tags": [
       "web"
+    ]
+  },
+  "titles-for-blog-posts": {
+    "title": "Titles for blog posts",
+    "date": "2016-12-16 20:06:19",
+    "modified": "2016-12-16 20:06:19",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "personal"
     ]
   }
 }

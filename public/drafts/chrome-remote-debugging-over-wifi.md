@@ -2,9 +2,9 @@
 
 I'm a big user of Chrome devtools, and it's a core part of my [web dev workflow](https://remysharp.com/search?q=workflow). I've also started looking at [service worker](https://remysharp.com/2016/03/22/the-copy--paste-guide-to-your-first-service-worker) support *and* 'add to home screen' in some of my projects and there's a few bits that I need to test directly on the device.
 
-My only tiny problem is: I have a USB3 based phone (a OnePlus 2). I have oodles of USB2 cables, but only a single USB3 cable. So I figured out how to remote debug over wifi instead!
+My only tiny problem is: I have a USB3 based phone (a OnePlus 2). I have oodles of USB2 cables, but only a single USB3 cable. So I figured out how to remote debug over wifi instead.
 
-<small>Note that this post is for Chrome for Android.</small>
+<small>Note that this post is for Chrome for Android, and much more focused towards to Oxygen based OSs.</small>
 
 <!--more-->
 
