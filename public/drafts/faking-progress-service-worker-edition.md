@@ -46,6 +46,27 @@ if ('serviceWorker' in navigator) {
 }
 ```
 
+## The service worker
+
+I'm using a service worker to listen for `navigation` fetch requests. You could add offline support, but I'm not doing that for this particular tuturial.
+
+```js
+// when the browser fetches a url, either response with
+// the cached object or go ahead and fetch the actual url
+this.addEventListener('fetch', event => {
+  if (event.request.mode === 'navigate') {
+    // emit event to say we're loading
+    event.respondWith(fetchAndEmit(event.request));
+  } else {
+    event.respondWith(fetch(event.request));
+  }
+});
+
+function fetchAndEmit(request) {
+  // ...
+}
+```
+
 ## Notes
 
 Now that we've got a dumb version working, what about something a little more intelligent. Perhaps using Service Workers to handle the requests, and to emit events into the main window to notify of loading activity and equally, and importantly, notify of failed or cancelled loading.
