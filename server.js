@@ -1,6 +1,6 @@
 'use strict';
 
-require('es6-promise').polyfill(); // jshint ignore:line
+// require('es6-promise').polyfill(); // jshint ignore:line
 var http = require('http');
 var fs = require('fs');
 var st = require('st');

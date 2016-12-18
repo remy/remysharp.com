@@ -7,7 +7,7 @@
 
 var path = require('path');
 var moment = require('moment');
-var Promise = require('promise'); // jshint ignore:line
+// var Promise = require('promise'); // jshint ignore:line
 var readline = require('readline');
 var elasticsearch = require('elasticsearch');
 var fs = require('then-fs');

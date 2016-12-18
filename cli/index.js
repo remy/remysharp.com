@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-require('es6-promise').polyfill(); // jshint ignore:line
+// require('es6-promise').polyfill(); // jshint ignore:line
 var fs = require('then-fs');
 var path = require('path');
 var draftDir = path.resolve(process.cwd(), 'public', 'drafts');
