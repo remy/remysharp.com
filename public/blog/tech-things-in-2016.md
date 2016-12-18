@@ -23,6 +23,8 @@ So far I've written four of my own apps: a Christmas count down (which today has
 
 I've backed all three Pebble Kickstarter campaigns. When I backed the original some years ago, I hadn't worn a watch in well over a decade. I love that I've been able to customise the watch face both from the Pebble store, but also by writing my own code. I've [written an app](http://remy.github.io/rest/) that I use extremely frequently (enough to wear out the button on the OG Pebble!).
 
+<small>Typically, between writing this post originally, Pebble announced that effectively they're shutting down the hardware due to a Fitbit sale. So I'm really not sure where that leaves the watch in a few years!</small>
+
 ## Pixel (and it's camera)
 
 Since moving across to Android some years ago, I've been more interested in the mobile phone's capabilities as I moved from a Nexus 4 to a OnePlus 1, then OnePlus 2 and now a Google Pixel XL. The Pixel's camera is a-maze-zing. It surpasses the kind of quality I had come to expect from the iPhone. The imagery is lush, and I love that I finally have a great camera in my pocket again.
