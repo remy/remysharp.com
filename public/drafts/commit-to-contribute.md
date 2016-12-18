@@ -1,10 +1,12 @@
 # Commit to contribute
 
-This morning I started my day thinking that I would try to find a little time to work on [nodemon](http://nodemon.io) and woke up to a new pull request that fixed a small bug.
+One morning I started my day thinking that I would try to find a little time to work on [nodemon](http://nodemon.io) and woke up to a new pull request that fixed a small bug.
 
 The only problem with the pull request was that it didn't have tests and didn't follow the contributing guidelines (which results in the automated deploy not actually running). The thread of replies didn't go too well...
 
 <!--more-->
+
+<small>This post was originally published on [A List Apart](http://alistapart.com/article/commit-to-contribute) (in June 2016), and reprinted with the permission of A List Apart and the author, me.</small>
 
 ---
 
@@ -20,13 +22,13 @@ This last point is important.
 
 Many, *many* times in my own code, I've made a single line change, that could be a matter of a few characters and this alone fixes an issue. Except, that's never enough. In fact, there's usually a correlation between the maturity and/or age of the project and the amount of additional work to complete the change.
 
-A recent issue in my [Snyk](https://snyk.io) work was fixed with this single line change:
+An issue in my [Snyk](https://snyk.io) work was fixed with this single line change:
 
 ![one line snyk fix](/images/one-line-change.png)
 
 In this particular example, I had solved the problem in my head very quickly, and realised that this was the fix. Except that I had to then write the test to support the change, not only to prove that it works, but more importantly, to prevent regression in the future.
 
-Then once that change is in place, my projects (and Snyk's) all use [semantic release](https://www.npmjs.org/semantic-release) to automate releases by commit message. And in this particular case, I had to then bump the dependencies in the Snyk CLI and then commit that with the right message format to ensure a release would inherit the fix.
+Then once that change is in place, my projects all use [semantic release](https://www.npmjs.org/semantic-release) to automate releases by commit message. And in this particular case, I had to then bump the dependencies in the project and then commit that with the right message format to ensure a release would inherit the fix.
 
 All in all, the one line fix turned into: 1 line, 1 new test, tested across 4 versions of node, bump dependencies in a secondary project, ensure commit messages were right, and then wait for secondary project's tests to all pass before it was then *automatically* published.
 
@@ -47,7 +49,7 @@ Here's what the PR template looks like for Snyk's CLI (I'm slowly adding these t
 ```markdown
 - [ ] Ready for review
 - [ ] Follows CONTRIBUTING rules
-- [ ] Reviewed by @remy (Snyk internal team)
+- [ ] Reviewed by @remy
 
 #### What does this PR do?
 #### Where should the reviewer start?
@@ -120,4 +122,4 @@ In truth, most of these items are straight forward and not much work to implemen
 
 Finally, I (and we) always need to keep in mind that when someone has taken time out of their day to contribute code to my projects, whatever the state of the pull request. It's a big deal.
 
-**It takes commitment to contribute. Show some love for that.**
+It takes commitment to contribute. **Show some love for that.**

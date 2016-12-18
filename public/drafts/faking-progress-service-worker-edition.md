@@ -1,10 +1,12 @@
 # Faking progress (service worker edition)
 
-Yesterday I showed you how to faking loading process using a small amount of JavaScript and CSS. As a reminder, this is a UI effect that shows a request is loading. However, instead of using the naïve method, this post will talk about how to use Service Workers for the task instead.
+Yesterday I showed you how to [faking loading process](/faking-progress-simple-edition) using a small amount of JavaScript and CSS. As a reminder, this is a UI effect that shows a request is loading. However, instead of using the naïve method, this post will talk about how to use Service Workers for the task instead.
 
 <!--more-->
 
 <small>Note: Sometimes I'll refer to Service Worker as SW throughout this post.</small>
+
+Here's a simple working demo: [https://loader-sw.isthe.link](https://loader-sw.isthe.link/)
 
 ## The general approach
 
@@ -70,6 +72,8 @@ function fetchAndEmit(request) {
 
 When the page is loaded and the SW is in control, an asset would have the request [mode](https://developer.mozilla.org/en-US/docs/Web/API/Request/mode) set to something like `same-origin` and so on. Except when the page is loading anew, like when the visitor clicks a link or hits refresh.
 
+Note that I'm *only* handling `navigate` modes, but this should be reasonable to extend to Ajax based requests (probably looking at the headers in the request).
+
 ## Fetch and emit
 
 The crux of the functionality lives inside the `fetchAndEmit` function in the `sw.js` file. The task is to emit an event on either side of the fetch process. When the fetch returns, it can do a number of things: `200 OK` - the request worked, or the fetch can throw or it can fail (I'll dig into this in more detail though).
@@ -129,12 +133,29 @@ function postMessage(message) {
 }
 ```
 
-## Notes
+The code above catches two exceptions to the `200 OK` response:
 
-Now that we've got a dumb version working, what about something a little more intelligent. Perhaps using Service Workers to handle the requests, and to emit events into the main window to notify of loading activity and equally, and importantly, notify of failed or cancelled loading.
+1. If the request throws an error - like a network timeout or the sever drops the connection (i.e. during a restart).
+2. If the request was cancelled.
 
-It would even be possible to emit the loading event across _all_ the tabs on the origin (aka the domain) if you so wanted (though I think this might be confusing).
+In the first instance, the `fetch` throws. However, if the visitor cancels the request, then you can see from the code above I check for `res.status === 0` - which doesn't really make any sense. There is no HTTP 0 status code.
 
-- Currently there's no support in browsers to read the `event.client` from the `fetch` event when `mode === 'navigate'`. This means we can't reach back to the `window` that we know for sure triggered the navigation, though I understand this is due to change once implementations catch up.
+## If the request is cancelled…
 
+Along with the weirdness around asserting that the status code is zero, the cancelled request doesn't actually get caught until the request responds.
 
+That might read as confusing. What I mean exactly is: if the visitor stops the page load before it starts coming back: they're cancelling the *request*. There's **nothing** that allows us to detect a cancelled request. There's no event, nothing. A read through [the Request API](https://developer.mozilla.org/en-US/docs/Web/API/Request) shows there's nothing available.
+
+I'd like to see this changed by some kind of **feature request**.
+
+Below is a screenshot of the problem. I placed a request to `/hang` which typically responds in 5 seconds, but after 2.5 seconds I cancelled the request, however you can see that the service worker based request is *still* pending. It's like the service worker has no way of knowing that the browser doesn't want the request any more.
+
+![Request cancelled](/images/request-cancelled.png)
+
+Due to this limitation, the fake progress animation we've created can't react to a cancelled request in a timely fashion. It has to wait until the `fetch` completes and either succeeds (with `status=0` – which if I understand is wrong anyway), or throws.
+
+## Is using a service worker worth it?
+
+Right now? Today, at the end of 2016, for this particular effect: I'm not so sure. It's doable, and it's a nice progressive enhancement, but it doesn't really offer much more than the [simplified version I posted yesterday](/faking-progress-simple-edition) (though it does handle request failures).
+
+However, the missing `event.clientId` is supposed to land in implementations soon enough and I have faith that I'm not the only one that wants to know about cancelled requests, so I'd expect to see this appearing in 2017 (hopefully!).

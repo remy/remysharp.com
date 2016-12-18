@@ -410,8 +410,8 @@
     "title": "Faking progress (service worker edition)",
     "date": "2016-12-16 19:50:33",
     "modified": "2016-12-16 19:50:33",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]
