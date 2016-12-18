@@ -3,7 +3,7 @@
   "description": "Remy Sharp's b:log",
   "main": "server.js",
   "engines": {
-    "node": "7"
+    "node": "4"
   },
   "scripts": {
     "test": "semantic-release pre",
