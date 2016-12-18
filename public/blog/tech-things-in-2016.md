@@ -25,7 +25,7 @@ I've backed all three Pebble Kickstarter campaigns. When I backed the original s
 
 <small>Typically, between writing this post originally, Pebble announced that effectively they're shutting down the hardware due to a Fitbit sale. So I'm really not sure where that leaves the watch in a few years!</small>
 
-## Pixel (and it's camera)
+## Pixel (and the camera)
 
 Since moving across to Android some years ago, I've been more interested in the mobile phone's capabilities as I moved from a Nexus 4 to a OnePlus 1, then OnePlus 2 and now a Google Pixel XL. The Pixel's camera is a-maze-zing. It surpasses the kind of quality I had come to expect from the iPhone. The imagery is lush, and I love that I finally have a great camera in my pocket again.
 
@@ -47,6 +47,8 @@ I'm also constantly disillusioned about technology (in fact more so than not). T
 - [Fitbit Aria](https://www.fitbit.com/uk/aria): great scales, records body fat, which is kinda useful (and helped me a lot early on). But as my knowledge and understand expanded, the more I came to realise that the fat percent recordings are pretty inaccurate. It may offer a gauge, but if it says you're 12%, it's more likely you're up in 15% or more.
 - [Amazon Echo](https://amazon.com/echo): on one hand, the AI and voice control is amazing. But Alexa quite often mishears Julie (my partner), the Spotify integration (for us) loses the last 5 seconds of *every single song*, and there's no IFTTT support (in the UK at time of writing) and a lot of services are only available to US, and not the UK.
 - [My Oral-B toothbrush](https://www.oralb.co.uk/en-gb/products/electric-toothbrushes/smartseries-6000-crossaction-rechargeable-bluetooth): it does the job, except, somehow, it has bluetooth. I'm not sure if this is a teeth-related joke or not, but it has bluetooth, and a mobile app. I can't…I don't… I'm just confused.
+
+<p class="update"><small>As of the _day_ before this post went live, IFTTT was added to UK Amazon Echos!</small></p>
 
 ---
 
