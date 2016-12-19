@@ -38,7 +38,7 @@ It's insane that I should even consider trying to deadlift again. But I want to.
 
 …
 
-## Part 2: recovered in 2016
+## Part 2: recovery and damage in 2016
 
 As 2015 continued, I stopped compound lifts and focused on individual muscles and used hypertrophy training.
 
@@ -46,9 +46,15 @@ By the beginning of 2016, I was eating more and feeling stronger, particularly i
 
 In fact, using the steady programme I got my deadlifts back up to 135kg (with belt and straps) and then in the months of September and October I've been lifting 150kg *without* any belt or straps. I did use a [mixed grip](https://stronglifts.com/deadlift/mixed-grip/) which gives a stronger hold.
 
-But it can put your supinated arm (the palm facing away) at risk of injury through tearing of the bicep…which, is what happened today.
+But it can put your supinated arm (the palm facing away) at risk of injury through tearing of the bicep…which, is what happened that day.
 
-I don't have full bicep tear, but as I was finishing my final lift, I felt a few pops in my forearm, and now, although my grip is still strong, the pulling strength has completely gone*.
+As I was finishing my final lift, I felt a few pops in my forearm, and now, although my grip is still strong, the pulling strength has completely gone*.
+
+After 8 weeks it's looking like I have a small tear, and I've been seeing an osteopath for the last 3 weeks and she found some pretty weird tissue where the tear occurred and is helping me recover the muscle to heal in a good way (rather than shorten).
+
+What has really inspired me is that my osteopath said that she tries to make sure her patients don't have to give up things they love (in my case deadlifts), and that perhaps just regular sports massage would help me continue (we'll see).
+
+What does suck, is that after 8 weeks I can already see atrophy setting in on my right bicep. Hopefully the muscle will recover as quickly as it has depleted!
 
 <small>* All this detail is really for future Rem when he considers deadlifts again…!</small>
 

@@ -335,6 +335,10 @@ function run() {
     route.get(/^\/drafts$/, function (req, res) {
       redirect(res, '/drafts/');
     });
+    route.all('*', (req, res, next) => {
+      req.originalUrl = req.url;
+      next();
+    });
     route.all('*', harp.mount(__dirname));
     route.all('*', function (req, res) {
       req.url = '/404';
