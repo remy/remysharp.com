@@ -4356,5 +4356,14 @@
       "personal"
     ],
     "published": true
+  },
+  "faking-progress-simple-edition": {
+    "title": "Faking progress (simple edition)",
+    "date": "2016-12-19 08:35:42",
+    "modified": "2016-12-16 20:02:26",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }
