@@ -50,7 +50,7 @@ But it can put your supinated arm (the palm facing away) at risk of injury throu
 
 As I was finishing my final lift, I felt a few pops in my forearm, and now, although my grip is still strong, the pulling strength has completely gone*.
 
-After 8 weeks it's looking like I have a small tear, and I've been seeing an osteopath for the last 3 weeks and she found some pretty weird tissue where the tear occurred and is helping me recover the muscle to heal in a good way (rather than shorten).
+After 8 weeks it's looking like I have a small tear, and I've been seeing an osteopath for the last 3 weeks and she found some pretty weird tissue where the tear occurred and is helping me recover the muscle to heal in a good way (rather than shorten). 
 
 What has really inspired me is that my osteopath said that she tries to make sure her patients don't have to give up things they love (in my case deadlifts), and that perhaps just regular sports massage would help me continue (we'll see).
 
