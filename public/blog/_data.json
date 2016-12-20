@@ -4365,5 +4365,14 @@
       "web"
     ],
     "published": true
+  },
+  "faking-progress-service-worker-edition": {
+    "title": "Faking progress (service worker edition)",
+    "date": "2016-12-20 07:53:39",
+    "modified": "2016-12-16 19:50:33",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }

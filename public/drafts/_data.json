@@ -406,16 +406,6 @@
       "web"
     ]
   },
-  "faking-progress-service-worker-edition": {
-    "title": "Faking progress (service worker edition)",
-    "date": "2016-12-16 19:50:33",
-    "modified": "2016-12-16 19:50:33",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "titles-for-blog-posts": {
     "title": "Titles for blog posts",
     "date": "2016-12-16 20:06:19",
