@@ -12,13 +12,13 @@
   <form action="/charge" method="POST">
     <script
       src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-      data-key="pk_test_DEBNC1AFG9QND2MV7hTCgs5N"
-      data-amount="999"
+      data-key="{{process.env.STRIPE_PUBLIC}}"
+      data-amount="{{process.env.STRIPE_COST}}"
       data-name="Company Ltd"
       data-description="My Book"
       data-image="book.gif"
       data-locale="auto"
-      data-currency="eur"
+      data-currency="{{process.env.STRIPE_CCY}}"
       data-zip-code="true">
     </script>
   </form>

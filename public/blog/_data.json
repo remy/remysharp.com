@@ -450,7 +450,7 @@
     "tags": [
       "code"
     ],
-    "modified": "2014-09-03 16:15:12"
+    "modified": "2016-12-20 11:56:30"
   },
   "how-to-setup-your-mac-web-development-environment": {
     "title": "How to setup your Mac web development environment",
@@ -2709,7 +2709,7 @@
       "christmas",
       "personal"
     ],
-    "modified": "2016-12-04 18:59:31"
+    "modified": "2016-12-17 10:23:50"
   },
   "audio-sprites": {
     "title": "Audio Sprites (and fixes for iOS)",
@@ -4249,7 +4249,7 @@
   "server-side-react": {
     "title": "Server Side React",
     "date": "2016-12-07 08:14:58",
-    "modified": "2016-12-07 10:10:30",
+    "modified": "2016-12-13 13:42:10",
     "tags": [
       "web"
     ],
@@ -4268,7 +4268,7 @@
   "working-the-command-line": {
     "title": "📙 Working the Command Line",
     "date": "2016-12-09 07:49:29",
-    "modified": "2016-12-08 21:25:12",
+    "modified": "2016-12-08 22:36:21",
     "tags": [
       "web",
       "business"
@@ -4290,7 +4290,7 @@
     "tags": [
       "code"
     ],
-    "modified": "2016-01-01 08:47:39",
+    "modified": "2016-12-12 08:03:30",
     "published": true
   },
   "cost-of-a-slide-deck": {
@@ -4300,13 +4300,13 @@
       "business",
       "web"
     ],
-    "modified": "2016-08-15 13:42:48",
+    "modified": "2016-12-13 08:10:15",
     "published": true
   },
   "format-numjsor-es6": {
     "title": "format-num.js…or ES6!",
     "date": "2016-12-13 08:09:45",
-    "modified": "2016-11-25 14:12:23",
+    "modified": "2016-12-13 08:10:15",
     "tags": [
       "web"
     ],
@@ -4333,7 +4333,7 @@
   "tricks-with-xargs": {
     "title": "Tricks with xargs",
     "date": "2016-12-16 09:47:07",
-    "modified": "2016-11-27 18:17:19",
+    "modified": "2016-12-16 09:46:44",
     "tags": [
       "web"
     ],
@@ -4345,13 +4345,13 @@
     "tags": [
       "web"
     ],
-    "modified": "2016-09-12 12:17:37",
+    "modified": "2016-12-17 08:03:11",
     "published": true
   },
   "tech-things-in-2016": {
     "title": "Tech things in 2016",
     "date": "2016-12-18 08:51:51",
-    "modified": "2016-12-03 09:47:01",
+    "modified": "2016-12-18 16:55:43",
     "tags": [
       "personal"
     ],
@@ -4360,7 +4360,7 @@
   "faking-progress-simple-edition": {
     "title": "Faking progress (simple edition)",
     "date": "2016-12-19 08:35:42",
-    "modified": "2016-12-16 20:02:26",
+    "modified": "2016-12-16 20:30:01",
     "tags": [
       "web"
     ],
@@ -4369,7 +4369,7 @@
   "faking-progress-service-worker-edition": {
     "title": "Faking progress (service worker edition)",
     "date": "2016-12-20 07:53:39",
-    "modified": "2016-12-16 19:50:33",
+    "modified": "2016-12-18 18:25:30",
     "tags": [
       "web"
     ],

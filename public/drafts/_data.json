@@ -183,7 +183,7 @@
     "tags": [
       "web"
     ],
-    "modified": "2016-03-06 19:34:37"
+    "modified": "2016-12-18 17:43:34"
   },
   "a-common-security-vulnerability": {
     "title": "A common security vulnerability",
@@ -359,7 +359,7 @@
   "my-crumble": {
     "title": "My Crumble",
     "date": "2016-11-08 11:39:38",
-    "modified": "2016-11-08 11:39:15",
+    "modified": "2016-12-19 10:49:12",
     "complete": true,
     "inprogress": false,
     "tags": [
@@ -399,7 +399,7 @@
   "beginners-guide-to-stripe-integration": {
     "title": "Beginners guide to Stripe integration",
     "date": "2016-12-09 14:40:38",
-    "modified": "2016-12-09 14:40:38",
+    "modified": "2016-12-20 09:10:04",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -409,7 +409,17 @@
   "titles-for-blog-posts": {
     "title": "Titles for blog posts",
     "date": "2016-12-16 20:06:19",
-    "modified": "2016-12-16 20:06:19",
+    "modified": "2016-12-16 20:07:08",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "personal"
+    ]
+  },
+  "my-2016": {
+    "title": "My 2016",
+    "date": "2016-12-20 09:14:52",
+    "modified": "2016-12-20 11:18:04",
     "complete": false,
     "inprogress": true,
     "tags": [

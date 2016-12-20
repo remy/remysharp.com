@@ -61,7 +61,7 @@ I'm going to give you some boilerplate JavaScript that will allow you to serve t
   <form action="/your-server-side-code" method="POST">
     <script
       src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-      data-key="pk_test_XXXXXXXXXXXXXXXX"
+      data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
       data-amount="999"
       data-currency="EUR"
       data-name="My Company"
