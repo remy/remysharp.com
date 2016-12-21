@@ -174,17 +174,6 @@
     ],
     "modified": "2016-08-15 13:44:28"
   },
-  "commit-to-contribute": {
-    "title": "Commit to contribute",
-    "image": "/images/github-contrib-notice.png",
-    "date": "2016-02-25 09:48:45",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ],
-    "modified": "2016-12-18 17:43:34"
-  },
   "a-common-security-vulnerability": {
     "title": "A common security vulnerability",
     "date": "2016-03-01 10:21:41",

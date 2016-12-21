@@ -4374,5 +4374,15 @@
       "web"
     ],
     "published": true
+  },
+  "commit-to-contribute": {
+    "title": "Commit to contribute",
+    "image": "/images/github-contrib-notice.png",
+    "date": "2016-12-21 09:42:55",
+    "tags": [
+      "web"
+    ],
+    "modified": "2016-12-18 17:43:34",
+    "published": true
   }
 }
