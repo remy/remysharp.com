@@ -55,7 +55,7 @@ block content
         //-   != res[1]
         //- else
         if amp
-          - yield = yield.replace(/<img(.*?)>/g, '<amp-img$1></amp-img>');
+          - yield = yield.replace(/<img(.*?)>/g, '<amp-img layout="fixed-height"$1><img$1></amp-img>');
 
         != yield
 
