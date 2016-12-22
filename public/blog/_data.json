@@ -4384,5 +4384,14 @@
     ],
     "modified": "2016-12-18 17:43:34",
     "published": true
+  },
+  "cool-uris-dont-change": {
+    "title": "Cool URIs don't change",
+    "date": "2016-12-22 08:48:54",
+    "modified": "2016-08-29 12:41:58",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }

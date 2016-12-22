@@ -285,16 +285,6 @@
       "web"
     ]
   },
-  "cool-uris-dont-change": {
-    "title": "Cool URIs don't change",
-    "date": "2016-08-28 17:23:22",
-    "modified": "2016-08-29 12:41:58",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "the-bane-of-build-tools": {
     "title": "The bane of build tools",
     "date": "2016-09-17 12:39:01",
