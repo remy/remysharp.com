@@ -26,18 +26,26 @@ block meta
   else
     meta(name="twitter:card" content="summary")
 
+block ampalt
+  - permalink = '/' + moment(date).format('YYYY/MM/DD') + '/' + current.source;
+  link(rel="amphtml" href="https://remysharp.com#{permalink}/amp")
+
 block content
   - permalink = '/' + moment(date).format('YYYY/MM/DD') + '/' + current.source;
   - safeTitle = title.replace(/'/g, '\\\'')
 
-  != partial('../_partials/post-nav')
+  if !amp
+    != partial('../_partials/post-nav')
 
   main.content
-    article.post
-      h1.title
-        a(href="#{permalink}" rel="bookmark" title="Permanent Link: #{title}")= title
+    article.post.amp-wp-article
+      if amp
+        h1.title= title
+      else
+        h1.title
+          a(href="#{permalink}" rel="bookmark" title="Permanent Link: #{title}")= title
+        small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/blog/#{current.source}.md") (edit)
 
-      small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/blog/#{current.source}.md") (edit)
       .post-content
         //- strip the h1 out of the body as we printed it above as the permalink
         - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
@@ -46,11 +54,14 @@ block content
         //-   != partial('../_partials/ffconf-ad')
         //-   != res[1]
         //- else
+        if amp
+          - yield = yield.replace(/<img(.*?)>/g, '<amp-img$1></amp-img>');
+
         != yield
 
         p.metadata Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}.
 
-        if !nosubscribe
+        if !nosubscribe && !amp
           footer.follow.update
             != partial('../_partials/subscribe')
 

@@ -18,7 +18,7 @@ When I started this post, it was supposed to be a short, sweet and to the point.
 
 If you're not running vanilla Android (like Cyanogen or Oxygen) you might also have a menu item called "ADB over network": enable this.
 
-<img src="/images/adb-over-network.gif" alt="ADB over network menu options" class="half">
+<img height="250" width="270" src="/images/adb-over-network.gif" alt="ADB over network menu options" class="centre">
 
 Then from your terminal, you'll need to connect to the IP that ADB over network shows:
 
@@ -57,7 +57,7 @@ I'm expecting that your device is on the same network as your machine you want t
 
 From developer options enable "USB debugging". If you're not running vanilla Android (like Cyanogen or Oxygen) you might also have a menu item called "ADB over network": enable this.
 
-<img src="/images/adb-over-network.gif" alt="ADB over network menu options" class="half">
+<img height="250" width="270" src="/images/adb-over-network.gif" alt="ADB over network menu options" class="centre">
 
 If you've got ADB over network, you can skip to [remote wifi debugging](#remote-wifi-debugging). If not, you've got a few more hoops to jump through.
 

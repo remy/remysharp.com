@@ -1,5 +1,28 @@
 'use strict';
 
+const Marked = require('terraform/node_modules/marked');
+const sizeOf = require('image-size');
+
+Marked.Renderer.prototype.image = function(href, title, text) {
+  var out = '<img src="' + href + '" alt="' + text + '"';
+  if (title) {
+    out += ' title="' + title + '"';
+  }
+  if (!href.endsWith('.svg')) {
+    try {
+      if (href.includes('://remysharp.com')) {
+        href = href.replace(/^https?:\/\/remysharp.com/, '');
+      }
+      const dim = sizeOf(__dirname + '/public' + href);
+      out += `width="${dim.width/2|0}" height="${dim.height/2|0}"`;
+    } catch (e) {
+      console.log('failed', href);
+    }
+  }
+  out += this.options.xhtml ? '/>' : '>';
+  return out;
+};
+
 // require('es6-promise').polyfill(); // jshint ignore:line
 var http = require('http');
 var fs = require('fs');
@@ -12,6 +35,7 @@ var port = process.env.PORT || 9000;
 var router = require('router-stupid');
 var blogs = require('./public/blog/_data.json');
 var pages = Object.keys(require('./public/_data.json'));
+const harpcfg = require('./harp.json');
 var slugs = Object.keys(blogs).sort(function (a, b) {
   return blogs[a].date < blogs[b].date ? 1 : -1;
 });
@@ -216,9 +240,10 @@ route.all('/{blog}?/{post}', function (req, res, next) {
 });
 
 /* main url handler: /{year}/{month}/{day}/{slug} */
-route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/, function (req, res, next) {
+route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/amp)?(\/)?$/, function (req, res, next) {
   var params = req.params;
   var post = blogs[params[4]];
+  const amp = !!params[5];
 
   if (post && post.date) {
     // test if the date matches
@@ -238,6 +263,10 @@ route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/, fu
 
     // this allows Harp to pick up the correct post
     req.url = '/blog/' + params[4];
+
+    if (amp) {
+      req.url += '/amp';
+    }
   }
 
   next();
@@ -294,8 +323,37 @@ var server = function (root) {
   console.log('compilation complete');
 };
 
+function tryAMP(req, res) {
+  return () => {
+    if (req.url.indexOf('/amp') === req.url.length - 4) {
+      const root = req.url.replace(/\/amp$/, '');
+      req.url = root;
+
+      // this is an OTT way to get an external value into Harp
+      req.setup = {
+        projectPath: __dirname,
+        publicPath: __dirname + '/public',
+        config: {
+          globals: Object.assign({ amp: true }, harpcfg.globals),
+        }
+      };
+
+      // resets the renderer
+      delete req.poly;
+
+      return harp.mount(__dirname)(req, res, () => {
+        res.writeHead(404);
+        res.end(fourohfour);
+      });
+    }
+    res.writeHead(404);
+    res.end(fourohfour);
+  };
+}
+
 function run() {
   if (process.env.NODE_ENV === 'production') {
+    fourohfour = require('fs').readFileSync(outputPath + '/404.html');
     // lastly...
     route.get('*', function (req, res, next) {
 
@@ -311,10 +369,7 @@ function run() {
       // if our server is ready, respond using the st module
       // and if it's a 404, respond with `serve404`.
       if (mount) {
-        mount(req, res, function serve404() {
-          res.writeHead(404);
-          res.end(fourohfour);
-        });
+        mount(req, res, tryAMP(req, res));
       } else {
         res.writeHead(404);
         res.end();
@@ -323,8 +378,6 @@ function run() {
 
     console.log('Running harp-static on ' + port);
     http.createServer(route).listen(port);
-
-    fourohfour = require('fs').readFileSync(outputPath + '/404.html');
     server(outputPath, port);
   } else {
     // this is used for offline development, where harp is
@@ -340,10 +393,13 @@ function run() {
       next();
     });
     route.all('*', harp.mount(__dirname));
-    route.all('*', function (req, res) {
-      req.url = '/404';
-      harp.mount(__dirname)(req, res);
+    route.all('*', (req, res) => {
+      tryAMP(req, res)()
     });
+    // route.all('*', function (req, res) {
+    //   req.url = '/404';
+    //   harp.mount(__dirname)(req, res);
+    // });
     console.log('Running harp-static on ' + port);
     http.createServer(route).listen(port);
 

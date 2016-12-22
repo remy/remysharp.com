@@ -1,0 +1,116 @@
+body {
+  font-family: 'helvetica neue', arial, sans-serif;
+  line-height: 1.75em;
+  font-weight: 400;
+  background-color: #fff;
+  color: #313131;
+  text-size-adjust: 100%;
+}
+main, header p {
+  padding: 1rem;
+  max-width: 60em;
+  margin: 0 auto;
+}
+main footer {
+    text-align: right;
+}
+a {
+    text-decoration: underline;
+    color: #00126C;
+}
+h1,h2,h3,h4,h5 {
+  color: #000;
+  font-weight: bold;
+}
+h1 {
+    font-size: 1.5rem;
+}
+h2 {
+    font-size: 1.125rem;
+}
+h3 {
+    font-size: 1rem;
+}
+h4 {
+    font-size: 0.875rem;
+}
+h5 {
+    font-size: 0.75rem;
+}
+h1 a, h1 a *,
+h2 a, h2 a *,
+h3 a, h3 a *,
+h4 a, h4 a * {
+    text-decoration: none;
+    font-weight: bold
+}
+code {
+    font-family: menlo,monaco,courier,'courier new','lucida console',monospace;
+}
+pre {
+  background: rgb(63, 63, 63);
+  padding: 0.5rem;
+  tab-size: 2;
+  word-wrap: break-word;
+  color: white;
+  white-space: pre-wrap;
+  border-radius: 2px;
+  overflow-x: scroll;
+}
+pre code {
+  white-space: pre;
+  overflow-x: auto;
+}
+blockquote {
+    font-family: Georgia,"Times New Roman",serif;
+    font-size: 0.875rem;
+}
+blockquote * {
+    font-style: italic;
+}
+blockquote * em {
+    font-weight: bold;
+}
+blockquote * strong {
+    font-style: normal;
+}
+hr {
+    border: none;
+    border-bottom: 0.0625rem dotted #ccc;
+}
+
+.amp-header {
+  text-align: right;
+  margin: 0 auto;
+  background: rgb(109, 109, 109);
+  padding: 1rem;
+}
+
+.amp-header div {
+  max-width: 60rem;
+  margin: 0 auto;
+  line-height: 36px;
+}
+
+.amp-header a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.amp-header amp-img {
+  border-radius: 50px;
+  border: 1px solid rgb(66, 66, 66);
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.metadata {
+  font-size: 80%;
+}
+
+article amp-img {
+  display: block;
+  margin: 0 auto;
+}
