@@ -29,7 +29,7 @@ Here's a breakdown of what's required to get a new site live (for me):
 - Registrar: [Namecheap](https://www.namecheap.com/) ~$11 (£8.09) per year
 - DNS: [CloudFlare](https://www.cloudflare.com/), free
 - SSL: [CloudFlare](https://www.cloudflare.com/), free
-- Hosting: [Heroku](https://www.heroku.com/), free
+- Hosting: [Heroku](https://www.heroku.com/) & [Zeit](https://zeit.co), free
 - Source code control: [GitHub](https://github.com/), free
 - CI/CD: [Travis](https://travis-ci.org/), free
 

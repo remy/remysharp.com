@@ -15,6 +15,7 @@
       'padding-left: 6px;',
       'margin-left: -30px;',
       'cursor: pointer;',
+      'border-bottom: none;',
       // 'position: absolute;',
       'top: 0;',
       'left: 0;',

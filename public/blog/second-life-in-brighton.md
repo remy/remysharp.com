@@ -15,6 +15,6 @@ Source: [Wired Sussex](http://www.wiredsussex.com/news/0703/linden.asp)
 
 Brighton is affectionally known as the 'London by Sea' - but I think it's actually the San Fran of the UK.  Cool, chilled, hilly :-), and full of funk (and not that smelly kind you find walking through the streets of London!)
 
-![Brighton pier at sunset](http://farm1.static.flickr.com/91/211281881_efa94f694b.jpg?v=0)
+<img src="http://farm1.static.flickr.com/91/211281881_efa94f694b.jpg?v=0" width="500" height="333" alt="Brighton pier at sunset">
 
 I'm sure others may not share my opinion, but hey, you gotta love the city you're with, right?

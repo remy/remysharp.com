@@ -12,40 +12,41 @@ main, header p {
   margin: 0 auto;
 }
 main footer {
-    text-align: right;
+  text-align: right;
 }
 a {
-    text-decoration: underline;
-    color: #00126C;
+  text-decoration: none;
+  color: #00126C;
+  border-bottom: 1px solid #00126c;
 }
 h1,h2,h3,h4,h5 {
   color: #000;
   font-weight: bold;
 }
 h1 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 h2 {
-    font-size: 1.125rem;
+  font-size: 1.125rem;
 }
 h3 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 h4 {
-    font-size: 0.875rem;
+  font-size: 0.875rem;
 }
 h5 {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 h1 a, h1 a *,
 h2 a, h2 a *,
 h3 a, h3 a *,
 h4 a, h4 a * {
-    text-decoration: none;
-    font-weight: bold
+  text-decoration: none;
+  font-weight: bold
 }
 code {
-    font-family: menlo,monaco,courier,'courier new','lucida console',monospace;
+  font-family: menlo,monaco,courier,'courier new','lucida console',monospace;
 }
 pre {
   background: rgb(63, 63, 63);
@@ -62,21 +63,20 @@ pre code {
   overflow-x: auto;
 }
 blockquote {
-    font-family: Georgia,"Times New Roman",serif;
-    font-size: 0.875rem;
+  font-family: "Times New Roman",serif;
 }
 blockquote * {
-    font-style: italic;
+  font-style: italic;
 }
 blockquote * em {
-    font-weight: bold;
+  font-weight: bold;
 }
 blockquote * strong {
-    font-style: normal;
+  font-style: normal;
 }
 hr {
-    border: none;
-    border-bottom: 0.0625rem dotted #ccc;
+  border: none;
+  border-bottom: 0.0625rem dotted #ccc;
 }
 
 .amp-header {
@@ -97,6 +97,7 @@ hr {
   font-size: 1.4rem;
   font-weight: bold;
   text-decoration: none;
+  border-bottom: none;
 }
 
 .amp-header amp-img {
@@ -108,6 +109,7 @@ hr {
 
 .metadata {
   font-size: 80%;
+  color: #9E9E9E;
 }
 
 article amp-img {

@@ -55,7 +55,7 @@ block content
         //-   != res[1]
         //- else
         if amp
-          - yield = yield.replace(/<p><img(.*?)><\/p>/g, '<amp-img layout="responsive"$1><div fallback><img$1></div></amp-img>');
+          - yield = yield.replace(/<p><img(.*?)><\/p>/g, '<amp-img layout="responsive"$1></amp-img>');
 
         != yield
 
@@ -65,8 +65,11 @@ block content
           footer.follow.update
             != partial('../_partials/subscribe')
 
-      if environment == "production"
-        .comments
+      if amp
+        footer
+          a(href="#{permalink}#comments") Leave a comment
+      else if environment == "production"
+        #comments.comments
           h2 Comments
           #disqus_thread
           script.

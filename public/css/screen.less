@@ -204,12 +204,14 @@ figcaption {
 
 a {
   color: @link-color;
-  text-decoration: underline;
+  text-decoration: none;
+  border-bottom: 1px solid @link-color;
 
   &:hover,
   &:focus {
     background: #1F296C;
     color: #fff;
+    border-bottom: none;
     text-decoration: none;
     // outline: 3px solid #1F296C;
     padding: 2px 0;
@@ -532,11 +534,13 @@ h2.title {
   a {
     color: black;
     text-decoration: none;
+    border-bottom: none;
 
     &:focus,
     &:hover {
       background: none;
-      text-decoration: underline;
+      border-bottom: 2px solid black;
+      // text-decoration: underline;
       // outline: none;
     }
   }
@@ -550,6 +554,7 @@ h2.title {
 
     a {
       color: white;
+      border-color: white;
     }
   }
 
