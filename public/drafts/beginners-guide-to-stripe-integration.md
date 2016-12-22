@@ -4,6 +4,10 @@ I've used Stripe on a number of projects in varying levels of complexity, but if
 
 <!--more-->
 
+* Demo: https://stripe-demo.isthe.link
+* Github source: https://github.com/remy/stripe-tutorial
+* Live source: https://stripe-demo.isthe.link/_src
+
 ## The goal of this post
 
 The end result should be an HTML page that includes Stripe's checkout button that allows your visitor to enter their card details for the given price and click "buy".
@@ -31,13 +35,13 @@ Now you need to collect your [API keys](https://dashboard.stripe.com/account/api
 It's worth creating a directory where your code will live. Then put the test keys in a file called `.dev.env` and the live keys in `.env` like such. We're also going to put the currency and the cost in here too:
 
 ```nohighlight
-STRIPE_SECRET=sk_test_XXXXXXXXXXXXX
-STRIPE_PUBLIC=pk_test_XXXXXXXXXXXXX
-STRIPE_CCY=EUR
+STRIPE_SECRET=sk_test_BQokikJOvBiI2HlWgH4olfQ2
+STRIPE_PUBLIC=pk_test_6pRNASCoBOKtIshFeQd4XMUh
+STRIPE_CCY=gbp
 STRIPE_COST=999
 ```
 
-Note that currency codes [ISO codes](https://support.stripe.com/questions/which-currencies-does-stripe-support#supportedcurrencies) (defaulting to USD) and the cost is in cents/pence, so the example value above is €9.99.
+Note that currency codes [ISO codes](https://support.stripe.com/questions/which-currencies-does-stripe-support#supportedcurrencies) (defaulting to USD) and the cost is in cents/pence, so the example value above is £9.99.
 
 ## 2. Use Stripe's Checkout
 
@@ -138,5 +142,64 @@ app.post('/charge', (req, res, next) => {
 
 On a successful `POST` to the `/charge` endpoint, the request is passed to our `charge` module (described by the previous code block) and if the promise succeeds, then we show the "thanks" page, otherwise we show the user the error - though I'd recommend checking the specific errors and showing a user friendly message rather than doing what I'm doing above and passing the error directly to the page.
 
-Demo: https://stripe-demo.isthe.link/
-Source: https://stripe-demo.isthe.link/_src/
+*I'll publish a blog post next month on extending the charge process so you can capture information that's useful for EU tax reporting - just [subscribe](/subscribe) or [follow me on twitter](https://twitter.com/rem) for when it's released.*
+
+## 4. Configuration
+
+As I mentioned earlier that we would have a development configuration (via `.dev.env`) and production (via `.env`). You don't _have_ to do this of course, but it makes testing a little easier, and with Stripe in particular, you get two sets of API keys: one for testing, and one for actually taking money.
+
+A regular pattern I use is to have these two files to control environments and conditionally load them depending on the value of `NODE_ENV`. The `NODE_ENV` is something we set in the environment when we run node.
+
+For example, to set `NODE_ENV=production` on the command line you can run:
+
+```bash
+$ NODE_ENV=production node app.js
+```
+
+Inside our application code, we make use of a package called [dotenv](https://www.npmjs.com/package/dotenv) and load the `*.env` file as per:
+
+```js
+const dotenv = require('dotenv');
+const envfile = process.env.NODE_ENV === 'production' ?
+      '.env' :    // production
+      '.dev.env'; // development
+
+// load the contents of the env file into
+// the `process.env` object.
+dotenv.config({
+  silent: true,
+  path: `${__dirname}/${envfile}`,
+});
+```
+
+**Importantly** this needs to be done _before_ you try to read any of the `process.env.*` values, like we do in the charge logic.
+
+**Also importantly** these `.env` files contain private information. Do not put them somewhere that they can be read (note the ones I've show you so far use Stripe's own test API keys). This means: don't check these files into a public github repo, and don't put these files on the web where someone can read them.
+
+## 5. Deploying
+
+Now that you've got the logic pieces, we need to get the site on a URL for people to buy the thing. I'm currently very partial to [Zeit's now](https://zeit.co) platform ([I wrote about it recently](/2016/12/14/on-moving-from-heroku-to-now) and include some deploy tips).
+
+However, and this is important, if you decide to use Zeit, but use a free tier (which is default), every file you deploy is public. So you'll need to remove your `.env` file, and set the environment values on the command line when you deploy. What's nice about using `process.env` for the values is that even though you'll remove the `.env` file, none of your code will need changing.
+
+Firstly, create a file called `.gitignore` and include (at least) `.env` - this means git will ignore this file, but also Zeit's now command will not upload the file.
+
+Using the following command will deploy using `now` and include all of your environment values as an argument (using `-e KEY=VALUE`) to the `now` command:
+
+```bash
+$ now $(sed -e 's/^/-e /' .env)
+```
+
+Or you can use a product like [surge.sh](https://surge.sh) or Heroku, or anything that you're comfortable with.
+
+## 6. Tax
+
+I mentioned tax. If you're in the EU (or…in the UK…#brexit), you'll need to report any EU based tax, which isn't terribly complicated, but fiddly for sure. In the UK this is known as VATMOSS, I'm sure it has equally confusing names in other EU states.
+
+There's services available, and I've written my own focused mini product to do just that (of course, you'll need EU sales to see any data) over on [taxdo.eu](https://taxdo.eu). Taxdo is free right now (as I'm beta testing), but feel free to sign up and try (or send me feedback).
+
+There's also products that will do the *whole* process for you, in particular [Quaderno](https://quaderno.io/stripe-vat-subscriptions/) (though I've not tried personally, their name constantly comes up in this area). If you want to learn more about VATMOSS, I highly recommend reading [Rachel Andrew's material](https://rachelandrew.co.uk/archives/tag/vat).
+
+## Final notes
+
+Hopefully you're now armed with the essential steps to start taking money on the web using Stripe. Again, all the [source code](https://github.com/remy/stripe-tutorial) is available and a [live instance is online](https://stripe-demo.isthe.link) for you to try out and test.

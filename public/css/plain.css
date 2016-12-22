@@ -1,4 +1,7 @@
-
+html {
+  background: rgb(0, 0, 0) url(../images/background.png) no-repeat -50px 0px;
+  font-size: 1rem;
+}
 html, body {
   background: rgb(37, 37, 37);
   background: white;
@@ -15,6 +18,10 @@ h1.title a, h2.title a {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   color: #37bd49;
   color: #444;
+}
+
+#index-page h1.title {
+  font-weight: 600;
 }
 
 pre code span {
@@ -34,6 +41,7 @@ h2.title {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 2.4rem;
+  font-weight: 600;
 }
 
 a {
@@ -136,4 +144,14 @@ ul.post-nav li.search a {
 
 .flickr li:before {
   content: '';
+}
+
+@media only screen and (min-width: 411px) {
+  p {
+    line-height: 2rem;
+  }
+
+  article.post li {
+    line-height: 1.8rem;
+  }
 }
