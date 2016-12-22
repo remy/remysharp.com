@@ -18,7 +18,7 @@ It's always been there, as far back as I can remember.
 
 But I've never been "diagnosed" as depressed, which, when asked if I have, it almost invalidates how I feel. How I've felt as far back as my memory can reach. I got thinking in these last days though, when was the last time I got "diagnosed" for a cold? I knew I had a cold. I took some rest, followed my body and eventually got better. But I did have a cold. So today, I've decided that I'm going to own this *label*. I am depressed.
 
-There's a portrait photo of me aged 4 in black and white. Deep in that little boy's eyes is sadness. Today, I struggle to think when I've been happy.
+There's a portrait photo of me aged 4 in black and white. Deep in that little boy's eyes is sadness. Today, I struggle to think when I've been happy. I know I've been happy. I know it because I've had Julie in my life for 20 years. But I struggle to remember.
 
 I think it's because happiness is supposed to be this gold standard (or so I've told myself somewhere along the line). Something that someone can _be_. But I've never _been_ happy. I've felt happy, but then, I feel sad again. I have many, many things to be happy for – and grateful for. I have a loving and amazingly supportive best friend who doubles as my wife. I have a family. I have a family, children who I love and they love me. I have a roof over my head and a job that I'm good at that I can choose how I work. I'm grateful for what I have.
 
