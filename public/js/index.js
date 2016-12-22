@@ -92,6 +92,14 @@ $('#search').on('click', function (e) {
 });
 
 $('body').on('keydown', function (event) {
+  if (event.which === 80 && event.altKey) {
+    localStorage.plain = localStorage.plain == 1 ? 0 : 1;
+    if (localStorage.plain == 1) {
+      $('head').append('<link rel="stylesheet" href="/css/plain.css">');
+    } else {
+      $('link[href="/css/plain.css"]').remove();
+    }
+  }
   if (searchOpen && event.which === 27) {
     $('#search').click();
   } else if (event.which === 191 && event.metaKey) {
@@ -102,7 +110,13 @@ $('body').on('keydown', function (event) {
 
     $('#search').click();
   }
-})
+});
+
+// try {
+//   if (localStorage.plain) {
+//     $('head').append('<link rel="stylesheet" href="/css/plain.css">');
+//   }
+// } catch (e) {}
 
 if (comments) {
   loadDisqus();

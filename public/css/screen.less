@@ -173,7 +173,7 @@ html {
 
 body {
   padding: 0;
-  font: 0.625em 'helvetica neue', arial, sans-serif;
+  font: 0.625em 'Roboto', 'helvetica neue', arial, sans-serif;
   font-size: 100%;
   font-weight: 300;
   line-height: 32px;
@@ -475,7 +475,7 @@ legend {
 input,
 textarea,
 select {
-  font-family: arial, verdana;
+  font-family: sans-serif;
   font-size: 105%;
   padding: 7px;
 }
@@ -825,6 +825,7 @@ ul.post-nav {
       float: left;
       padding-left: 0;
       a {
+        border-bottom: none;
         display: inline-block;
         text-indent: -9999px;
         background: url(/images/search.svg) no-repeat 0 4px;
@@ -853,10 +854,12 @@ small.date {
   color: @subpanel-color;
   a {
     color: lighten(@subpanel-background, 50%);
+    border-color: rgb(153, 153, 153);
 
     &:hover,
     &:focus {
       background-color: #444;
+      border: none;
       color: lighten(@subpanel-background, 70%);
       padding: 2px 0;
     }
@@ -1014,7 +1017,7 @@ body > footer {
   body > footer {
     padding: 0 10px;
 
-    p { line-height: 18px; }
+    p { line-height: 22px; }
 
     .archives { .flex(1 auto); }
     .links    { .flex(1 auto); }
@@ -1379,4 +1382,12 @@ details summary:after {
 .centre {
   margin: 0 auto;
   display: block;
+}
+
+a[title="simple-link"] {
+  border-bottom: none;
+
+  &:hover {
+    background: transparent;
+  }
 }

@@ -52,8 +52,16 @@ else
       link(rel="icon" sizes="192x192" href="/images/avatar-favicon.png")
       link(rel="manifest" href="/manifest.json")
       link(rel="shortcut icon" href="/favicon.ico")
+      link(href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet")
       link(rel="stylesheet" type="text/css" href="/css/screen.css?#{version}")
       link(rel="stylesheet" type="text/css" href="/css/zenburn.css?#{version}")
+      script
+        | try {
+        |  if (localStorage.plain == 1) {
+        |    document.head.innerHTML += '<link rel="stylesheet" href="/css/plain.css">';
+        |   }
+        | } catch (e) {}
+
       //- link(rel="stylesheet" type="text/css" href="/css/plain.css?#{version}")
 
       link(rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp")
@@ -117,7 +125,7 @@ else
           :marked
             All code and content for this blog is available as [open source on GitHub](https://github.com/remy/remysharp.com).
 
-            [![keep me honest](/images/donate-hotpink.svg)](https://www.paypal.me/rem)
+            [![keep me honest](/images/donate-hotpink.svg)](https://www.paypal.me/rem "simple-link")
 
       script(src="/js/jquery.min.js")
       script(src="/js/jquery.fitvids.js")

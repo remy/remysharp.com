@@ -32,8 +32,13 @@ h2.title {
   color: #444;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  line-height: 2.4rem;
+}
+
 a {
   color: rgb(153, 153, 153);
+  border-color: rgb(153, 153, 153);
 }
 
 a:hover {
@@ -111,4 +116,24 @@ nav li:before {
 
 .post-content ul {
   padding-left: 0;
+}
+
+.post-content p:first-child {
+  margin-top: 0;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+pre code {
+  font-size: 1rem;
+}
+
+ul.post-nav li.search a {
+  background-position: 0 0;
+}
+
+.flickr li:before {
+  content: '';
 }
