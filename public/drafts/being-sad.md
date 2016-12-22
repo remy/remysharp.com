@@ -10,21 +10,21 @@ I find it really quite hard to write about depression. When I feel super down, w
 
 ## What is this depression you talk of?
 
-Once someone said to me: "you had a bit of rough time with that burnout last year". I was left rather confused. I didn't think I had experienced burnout, or at least what I _thought_ burnout was.
+Someone one said to me: "you had a bit of rough time with that burnout last year". I was left rather confused. I didn't think I had experienced burnout, or at least what I _thought_ burnout was.
 
-In retrospect, I think they mistook my depressiveness for burnout. I'm a depressive. I suffer from…or "have" depression. Some days are bad, sometimes it's weeks or months. Other times it's just idle, in the background.
+In retrospect, I think they mistook my depressiveness for burnout. I'm a depressive. I suffer from…or "have" depression. Some days are bad, sometimes it's weeks and even months. Other times it's just idle and in the background.
 
 It's always been there, as far back as I can remember.
 
 But I've never been "diagnosed" as depressed, which, when asked if I have, it almost invalidates how I feel. How I've felt as far back as my memory can reach. I got thinking in these last days though, when was the last time I got "diagnosed" for a cold? I knew I had a cold. I took some rest, followed my body and eventually got better. But I did have a cold. So today, I've decided that I'm going to own this *label*. I am depressed.
 
-There's a portrait photo of me aged 4 in black and white. I look sad. Deep in my eyes: sadness. Today, I struggle to think when I've been happy.
+There's a portrait photo of me aged 4 in black and white. Deep in that little boy's eyes is sadness. Today, I struggle to think when I've been happy.
 
-I think it's because happiness is supposed to be this gold standard (or so I've told myself somewhere along the line). Something that someone can _be_. But I've never _been_ happy. I've felt happy, but then, I feel sad again. I have many, many things to be happy for – and grateful for. I have a loving and amazingly supportive best friend who doubles as my wife. I have a family. I have a family, children who I love and they love me. I have a roof over my head and a job that I'm good at that I can choose how I work.
+I think it's because happiness is supposed to be this gold standard (or so I've told myself somewhere along the line). Something that someone can _be_. But I've never _been_ happy. I've felt happy, but then, I feel sad again. I have many, many things to be happy for – and grateful for. I have a loving and amazingly supportive best friend who doubles as my wife. I have a family. I have a family, children who I love and they love me. I have a roof over my head and a job that I'm good at that I can choose how I work. I'm grateful for what I have.
 
-But…depression doesn't really take personal successes into account. There's many many [successful and theoretically happy people who are depressed](https://en.m.wikipedia.org/wiki/List_of_people_with_major_depressive_disorder). It's not something you choose.
+But…depression doesn't really take personal successes or gratitude into account. There's many many [successful and theoretically happy people who are depressed](https://en.m.wikipedia.org/wiki/List_of_people_with_major_depressive_disorder). It's not something you choose.
 
-I think what I'm trying to say is: I have a mental illness called depression (with the occasional anxiety). I have done for decades. I just thought that some people had this…gene (perhaps) that lets them be happy. Lets them be the bright star amongst people. And I was jealous, like I could somehow learn to be happy. Except, it turns out, if I really look, there's a lot of other people out there that feel the way I feel too.
+I think what I'm trying to say is: I have a mental illness called depression (with the occasional anxiety). I have done for decades. I just mistook it for general sadness and grumpiness, and equally thought that some people had this…gene (perhaps) that lets them be happy. Lets them be the bright star amongst people. And I was jealous, and that perhaps I could somehow learn to be happy. Except, it turns out, if I really look, there's a lot of other people out there that feel the way I feel too.
 
 ## Why am I writing about this?
 
@@ -34,11 +34,11 @@ What I want, is to find a place for the words that swirl around in my head to go
 
 Being alone in the world is the worst thing. I learnt this after we [lost Tia](/tia/letter). It felt we were suffering the worst pain in the world, and we were completely alone in the darkness of grief. But Julie read a lot after Tia was born about stillbirth and infant death and she shared a lot of what she read. The more we learnt about other people's stories, the more we learnt we weren't alone, and importantly, we learnt that we could continue to live in a world with this pain.
 
-That's what I want to do. Write. Share. Let others, and probably more importantly, let me that that we're not alone.
+That's what I want to do. Write. Share. Let others, and probably more importantly, let me that that I'm not alone.
 
 ## Depression lies
 
-It really does. It's like it's a little demon that listens in on my life and then takes the things that hurt the most, and whispers them back to me, but amplified.
+It really does. It's like it's a little demon that listens in on my life and then takes the things that hurt the most, and whispers them back to me:
 
 "You're disgusting. You fat, stupid idiot. No one likes you. You talk total rubbish. Don't talk, it's better that way. Just stay there. Hide yourself. You think you're depressed? You're not, this is just you. How you are."
 
