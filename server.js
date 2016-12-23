@@ -3,6 +3,16 @@
 const Marked = require('terraform/node_modules/marked');
 const sizeOf = require('image-size');
 
+// no widows in paragraphs
+Marked.Renderer.prototype.paragraph = function(text) {
+  const words = text.split(' ');
+  if (words.length > 1) {
+    return `<p>${words.slice(0, -1).join(' ')}&nbsp;${words[words.length-1]}</p>\n`;
+  }
+  return `<p>${text}</p>`;
+}
+
+// dynamically get the dimensions of the images
 Marked.Renderer.prototype.image = function(href, title, text) {
   var out = '<img src="' + href + '" alt="' + text + '"';
   if (title) {
