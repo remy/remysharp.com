@@ -4,10 +4,12 @@ const Marked = require('terraform/node_modules/marked');
 const sizeOf = require('image-size');
 
 // no widows in paragraphs
+const widowRe = /^[a-z\.!?"'():%$£&;]+$/;
 Marked.Renderer.prototype.paragraph = function(text) {
   const words = text.split(' ');
-  if (words.length > 1 && !text.includes('<')) {
-    return `<p>${words.slice(0, -1).join(' ')}&nbsp;${words[words.length-1]}</p>\n`;
+  const last = words[words.length - 1];
+  if (words.length > 1 && widowRe.test(last)) {
+    return `<p>${words.slice(0, -1).join(' ')}&nbsp;${last}</p>\n`;
   }
   return `<p>${text}</p>`;
 }
