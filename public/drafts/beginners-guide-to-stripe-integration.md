@@ -190,6 +190,8 @@ Using the following command will deploy using `now` and include all of your envi
 $ now $(sed -e 's/^/-e /' .env)
 ```
 
+One caveat with the expression above: your `.env` file can't contain comments and can't contain spaces.
+
 Or you can use a product like [surge.sh](https://surge.sh) or Heroku, or anything that you're comfortable with.
 
 ## 6. Tax

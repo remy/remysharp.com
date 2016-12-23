@@ -1,7 +1,3 @@
-html {
-  background: rgb(0, 0, 0) url(../images/background.png) no-repeat -50px 0px;
-  font-size: 1rem;
-}
 html, body {
   background: rgb(37, 37, 37);
   background: white;
@@ -146,9 +142,10 @@ ul.post-nav li.search a {
   content: '';
 }
 
-@media only screen and (min-width: 411px) {
+@media only screen and (min-width: 412px) {
   p {
-    line-height: 2rem;
+    font-size: 90%;
+    line-height: 1.8rem;
   }
 
   article.post li {

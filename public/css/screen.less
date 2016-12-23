@@ -812,7 +812,7 @@ ul.post-nav {
 
     &.home {
       float: left;
-      padding-left: 20px;
+      // padding-left: 20px;
     }
 
     &.next a {
@@ -848,6 +848,12 @@ small.date {
   // margin-left: 10px;
 }
 
+.archives,
+.links {
+  a {
+    border-bottom: none;
+  }
+}
 
 .subpanel {
   background: @subpanel-background;
@@ -1258,7 +1264,15 @@ details summary:after {
 }
 
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 412px) {
+  p {
+    line-height: 1.6rem;
+  }
+
+  ul a {
+    line-height: 1.6rem;
+  }
+
   #elsewhere {
     ul.elsewhere {
       margin-right: 0;
@@ -1348,7 +1362,7 @@ details summary:after {
   }
 }
 
-@media only screen and (max-width: 411px) {
+@media only screen and (max-width: 412px) {
   .ffconf-ad,
   .ffconf-ad:hover {
     display: block;
