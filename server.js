@@ -6,7 +6,7 @@ const sizeOf = require('image-size');
 // no widows in paragraphs
 Marked.Renderer.prototype.paragraph = function(text) {
   const words = text.split(' ');
-  if (words.length > 1) {
+  if (words.length > 1 && !text.includes('<')) {
     return `<p>${words.slice(0, -1).join(' ')}&nbsp;${words[words.length-1]}</p>\n`;
   }
   return `<p>${text}</p>`;
