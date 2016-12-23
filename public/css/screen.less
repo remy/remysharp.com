@@ -851,7 +851,7 @@ small.date {
 .archives,
 .links {
   a {
-    border-bottom: none;
+    // border-bottom: none;
   }
 }
 
@@ -1265,8 +1265,14 @@ details summary:after {
 
 
 @media only screen and (max-width: 412px) {
-  p {
-    line-height: 1.6rem;
+  html, body {
+    font-size: initial;
+    font-weight: normal;
+  }
+
+  p, li {
+    font-size: 0.9rem;
+    line-height: 1.8em;
   }
 
   ul a {
