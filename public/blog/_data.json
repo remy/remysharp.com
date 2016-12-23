@@ -4393,5 +4393,14 @@
       "web"
     ],
     "published": true
+  },
+  "beginners-guide-to-stripe-integration": {
+    "title": "Beginners guide to Stripe integration",
+    "date": "2016-12-23 08:43:30",
+    "modified": "2016-12-20 09:10:04",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }
