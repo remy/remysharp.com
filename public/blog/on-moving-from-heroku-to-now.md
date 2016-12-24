@@ -131,7 +131,7 @@ There's a handful of limitations, some of which are being worked on, but obvious
 
 - Wild card domains: this just isn't simple. I run [mit-license.org](http://mit-license.org) and [confcodeofconduct.com](http://confcodeofconduct.com) which use CNAMES to dynamically load content, it's simpler to do this on Heroku right now, and maybe not an ideal match to Zeit.
 - Zeit is _just_ hosting, not logs or databases, if you need those you'll have to use cloud managed services like logz.io or mlab, etc. Though, I did write a _hacky_ bit of middleware for [capturing logs](https://github.com/remy/inline-log)
-- Cleaning up unused deploys isn't particularly easy, so in the meantime, I have a CLI workflow: <code>[now-no-alias](https://www.npmjs.com/now-no-alias) | [json](https://www.npmjs.com/package/json) -a uid | xargs now rm</code>
+- Cleaning up unused deploys isn't particularly easy, so in the meantime, I have a CLI workflow: <code>now rm $([now-no-alias](https://www.npmjs.com/now-no-alias) | [json](https://www.npmjs.com/package/json) -a uid)</code>
 - You can't set the region the deployment goes to (i.e. europe vs. east us, etc), though going by the Slack channels, this is something that will be configurable (if it isn't already)
 
 ---
