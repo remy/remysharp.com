@@ -10,7 +10,7 @@ The only problem with the pull request was that it didn't have tests and didn't 
 
 ---
 
-About half way through the thread of replies, I started my usual decent into "what's the point, why do I bother, I should jack it all in", i.e. the self-destruct nature that I know isn't helpful to anyone. Though, thankfully, I held back.
+About half way through the thread of replies, I started my usual descent into "what's the point, why do I bother, I should jack it all in", i.e. the self-destruct nature that I know isn't helpful to anyone. Though, thankfully, I held back.
 
 The contributor was obviously extremely new to git and GitHub and just the small change was well out of their comfort zone, so when I then asked for the changes to adhere to the way the project works, it all kind of fell apart.
 
