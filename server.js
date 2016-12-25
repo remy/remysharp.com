@@ -26,7 +26,11 @@ Marked.Renderer.prototype.image = function(href, title, text) {
         href = href.replace(/^https?:\/\/remysharp.com/, '');
       }
       const dim = sizeOf(__dirname + '/public' + href);
-      out += `width="${dim.width/2|0}" height="${dim.height/2|0}"`;
+      if (dim.width/2 <= 660) {
+        out += `width="${dim.width/2|0}" height="${dim.height/2|0}"`;
+      } else {
+        out += `width="${dim.width}" height="${dim.height}"`;
+      }
     } catch (e) {
       console.log('failed', href);
     }
