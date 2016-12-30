@@ -14,7 +14,7 @@ function newPost() {
     type: 'checkbox',
     message: 'Tags:',
     name: 'tags',
-    choices: ['web', 'personal', 'business'],
+    choices: ['web', 'code', 'personal', 'business'],
   }];
 
   return new Promise(function (resolve) {
