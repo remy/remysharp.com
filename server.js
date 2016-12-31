@@ -14,6 +14,18 @@ Marked.Renderer.prototype.paragraph = function(text) {
   return `<p>${text}</p>`;
 }
 
+Marked.Renderer.prototype.listitem = function(text) {
+  if (/^\s*\[[x ]\]\s*/.test(text)) {
+    text = text
+      .replace(/^\s*\[ \]\s*/, '<input disabled type="checkbox"> ')
+      .replace(/^\s*\[x\]\s*/, '<input disabled type="checkbox" checked> ');
+
+    return '<li class="checkbox" style="list-style: none">' + text + '</li>';
+  } else {
+    return '<li>' + text + '</li>';
+  }
+};
+
 // dynamically get the dimensions of the images
 Marked.Renderer.prototype.image = function(href, title, text) {
   var out = '<img src="' + href + '" alt="' + text + '"';

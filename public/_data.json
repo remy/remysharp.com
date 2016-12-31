@@ -5,6 +5,10 @@
   "tia": {
     "layout": false
   },
+  "todo": {
+    "title": "Rem's Todo",
+    "published": true
+  },
   "about": {
     "title": "About",
     "date": "2008-02-29 12:22:50",

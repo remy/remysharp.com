@@ -432,10 +432,16 @@ ul {
   list-style: square;
 }
 
-article.post   li {
+article.post li {
   padding-left: 8px;
   margin: 8px 0px 8px 22px;
   line-height: 1.4rem;
+
+  &.checkbox {
+    input[type="checkbox"] {
+      margin: 8px 11px 8px -30px;
+    }
+  }
 }
 
 ol, ul {

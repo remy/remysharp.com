@@ -26,8 +26,6 @@ Copy and paste this bash function into your profile and you'll have the extended
 
 ```bash
 function gist() {
-  local url=""
-
   # if there's nothing piped on STDIN
   if [ -t 0 ]; then
     # and there's no arguments...
