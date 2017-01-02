@@ -10,7 +10,7 @@ Maybe you've got a resolution to lose weight, maybe it's something entirely diff
 
 With *aims* in mind, let's take "lose weight". Is this really the aim? To become *lighter*?
 
-An aim or goal that's loaded is one that's near impossible to archive. If you're a developer getting a clear idea of what "complete" is (i.e. archieved) for a particular problem or project is super valuable.
+An aim or goal that's loaded is one that's near impossible to achieve. If you're a developer getting a clear idea of what "complete" is (i.e. achieved) for a particular problem or project is super valuable.
 
 So, let's ask:
 
