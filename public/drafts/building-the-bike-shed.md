@@ -1,6 +1,6 @@
 # Building the Bike Shed
 
-You've possibly heard the expression "bike shedding". <INSERT UNDERSTANDING OF BIKE SHED - REF https://docs.freebsd.org/cgi/getmsg.cgi?fetch=506636+0+archive/1999/freebsd-hackers/19991003.freebsd-hackers>
+You've possibly heard the expression "bike shedding". [INSERT UNDERSTANDING OF BIKE SHED - REF](https://docs.freebsd.org/cgi/getmsg.cgi?fetch=506636+0+archive/1999/freebsd-hackers/19991003.freebsd-hackers)
 
 As productivity goes, bike shedding is the worst. It's suck a lot of time out of the day, if not weeks. In general it's not useful because it loses focus on the real problem.
 
