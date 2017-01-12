@@ -39,7 +39,9 @@ Marked.Renderer.prototype.image = function(href, title, text) {
       }
       const dim = sizeOf(__dirname + '/public' + href);
       if (dim.width/2 <= 660) {
-        out += `width="${dim.width/2|0}" height="${dim.height/2|0}"`;
+        const base = 660 / dim.width;
+        const h = dim.height * base;
+        out += `width="660" height="${h|0}"`;
       } else {
         out += `width="${dim.width}" height="${dim.height}"`;
       }
