@@ -405,10 +405,10 @@
       "web"
     ]
   },
-  "json-store-as-a-service-jsonbin": {
-    "title": "JSON store as a service: jsonbin",
-    "date": "2017-01-07 14:05:58",
-    "modified": "2017-01-07 14:05:58",
+  "trimming-the-release-test-cycle": {
+    "title": "Trimming the release/test/fail/release cycle",
+    "date": "2017-01-13 11:40:07",
+    "modified": "2017-01-13 11:40:07",
     "complete": false,
     "inprogress": true,
     "tags": [
