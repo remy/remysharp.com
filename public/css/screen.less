@@ -200,6 +200,7 @@ hr {
 figcaption {
   font-size: 75%;
   font-style: italic;
+  line-height: 1rem;
 }
 
 a {
@@ -355,6 +356,17 @@ ins {
     position: absolute;
     left: 23px;
   }
+}
+
+kbd {
+  font-family: @code-font;
+  font-size: 0.8rem;
+  padding: 5px;
+  border-radius: 3px;
+  background: rgb(243, 243, 243);
+  box-shadow: .5px .5px 0 rgba(0,0,0,.2);
+  border: 1px solid #ccc;
+  margin: 0 4px;
 }
 
 code {
@@ -1428,4 +1440,14 @@ a[title="simple-link"] {
   &:hover {
     background: transparent;
   }
+}
+
+.language-bash .line:before {
+  content: '$ ';
+  opacity: 0.5;
+}
+
+.language-sh .line .bash-prompt {
+  opacity: 0.5;
+  user-select: none;
 }

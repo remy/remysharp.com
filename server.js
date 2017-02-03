@@ -38,10 +38,10 @@ Marked.Renderer.prototype.image = function(href, title, text) {
         href = href.replace(/^https?:\/\/remysharp.com/, '');
       }
       const dim = sizeOf(__dirname + '/public' + href);
-      if (dim.width/2 <= 660) {
-        const base = 660 / dim.width;
+      if (dim.width/2 <= 680) {
+        const base = 680 / dim.width;
         const h = dim.height * base;
-        out += `width="660" height="${h|0}"`;
+        out += `width="680" height="${h|0}"`;
       } else {
         out += `width="${dim.width}" height="${dim.height}"`;
       }

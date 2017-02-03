@@ -153,7 +153,7 @@ A regular pattern I use is to have these two files to control environments and c
 For example, to set `NODE_ENV=production` on the command line you can run:
 
 ```bash
-$ NODE_ENV=production node app.js
+NODE_ENV=production node app.js
 ```
 
 Inside our application code, we make use of a package called [dotenv](https://www.npmjs.com/package/dotenv) and load the `*.env` file as per:
@@ -187,7 +187,7 @@ Firstly, create a file called `.gitignore` and include (at least) `.env` - this 
 Using the following command will deploy using `now` and include all of your environment values as an argument (using `-e KEY=VALUE`) to the `now` command:
 
 ```bash
-$ now $(sed -e 's/^/-e /' .env)
+now $(sed -e 's/^/-e /' .env)
 ```
 
 One caveat with the expression above: your `.env` file can't contain comments and can't contain spaces.

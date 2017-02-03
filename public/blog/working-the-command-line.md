@@ -50,6 +50,6 @@ What was particularly flattering for me, was firstly the foreword that [Jeremy K
 
 ## 🎥 But wait, there's more…
 
-I'm also working on a complementary video series to the book. I'm two sections in, again, aimed squarely at the same audience with (estimated) about 2 hours of material. If you're interested in getting first notification when this is complete, sign up for mailing list below (it's currently dormant but will post about courses and content).
+I'm also working on a complementary video series to the book over at [terminal.training](https://terminal.training). I'm two sections in, again, aimed squarely at the same audience with (estimated) about 3.5 hours of material. If you're interested in getting first notification when this is complete, sign up for mailing list below (it's currently dormant but will post about courses and content).
 
 Oh, also, go buy 👉📙 [**Working the Command Line**](https://abookapart.com/products/working-the-command-line) 🙏👍😍

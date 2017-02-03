@@ -102,7 +102,7 @@ Before remote debugging, you need to connect to your device using adb (note if y
 
 You need to know the IP of your device, which you should be able to discover using one of the discovery techniques I've covered above. Next, we connect:
 
-```bash
+```sh
 $ adb connect <DEVICE_IP>:5555
 connected to <DEVICE_IP>:5555
 ```

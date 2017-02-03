@@ -4,6 +4,18 @@
 var comments = document.getElementById('disqus_thread');
 var disqusLoaded = false;
 
+$('pre > code.language-bash').each(function () {
+  this.innerHTML='<span class="line">'+(this.textContent.split('\n').filter(Boolean).map(function (line) {
+    return line.replace(/^\$ /, '');
+  }).join('</span>\n<span class="line">'))+'</span>';
+});
+
+$('pre > code.language-sh').each(function () {
+  this.innerHTML='<span class="line">'+(this.textContent.split('\n').filter(Boolean).map(function (line) {
+    return line.replace(/^\$ /, '<span class="bash-prompt">$ </span>');
+  }).join('</span>\n<span class="line">'))+'</span>';
+});
+
 // function permalink(){
 //   'use strict';
 //   var $ = document.querySelectorAll.bind(document);
