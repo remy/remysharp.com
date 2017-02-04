@@ -1,0 +1,194 @@
+@media only screen and (min-width: 721px) {
+  .flush {
+    margin-left: -60px;
+    margin-right: -60px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .flush {
+    margin-left: -10px;
+    margin-right: -10px;
+    display: block;
+  }
+
+  body {
+    font-size: 90%;
+    line-height: 28px;
+  }
+
+  .post-content,
+  .comments {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 10px;
+  }
+
+  .post-content {
+    h2 {
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    a.anchor {
+      position: static;
+      left: auto;
+      right: 0;
+      margin-left: 0;
+      margin-right: 10px;
+      padding-left: 10px;
+    }
+
+    a.anchor span:before {
+      margin-left: 0;
+    }
+
+  }
+
+  #index-page h1.title,
+  #index-page h2.title,
+  .post h1.title {
+    margin: 0;
+    padding: 20px 10px;
+  }
+
+  ul.post-nav li {
+    padding: 10px;
+  }
+
+  code {
+    font-size: 0.8rem;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  small.edit {
+    bottom: 0;
+    left: 0;
+  }
+
+  .warning {
+    padding: 10px;
+  }
+
+  body > footer {
+    padding: 0 10px;
+
+    p { line-height: 22px; }
+
+    .archives { .flex(1 auto); }
+    .links    { .flex(1 auto); }
+    .license  { .flex(2 auto); }
+
+  }
+
+  pre {
+    margin-left: -10px;
+    padding-left: 5px;
+    border-radius: 0;
+    border: 0;
+    min-width: 110%;
+  }
+
+  pre code.hljs {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  .post-content {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  html, body {
+    font-size: initial;
+    font-weight: normal;
+  }
+
+  p, li {
+    font-size: 0.9rem;
+    line-height: 1.8rem;
+  }
+
+  .post-content ul,
+  article.post li {
+    padding-left: 0;
+  }
+
+  ul a {
+    line-height: 1.6rem;
+  }
+
+  .archives,
+  .links {
+    li {
+      line-height: 1.8rem;
+    }
+  }
+
+  #elsewhere {
+    ul.elsewhere {
+      margin-right: 0;
+    }
+    ul.flickr {
+      display: block;
+      position: relative;
+      width: auto;
+      float: none;
+      margin: 10px auto;
+      overflow: hidden;
+
+      li {
+        box-sizing: border-box;
+        width: 32%;
+        height: auto;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    ul.links {
+      margin-right: 10px;
+    }
+  }
+
+  // .follow div:first-child div:first-child {
+  //   display: none;
+  // }
+
+  // .follow div:first-child div.s3 {
+  //   width: 100%;
+  //   padding-left: 0;
+  // }
+}
+
+@media only screen and (max-width: 412px) {
+  .ffconf-ad,
+  .ffconf-ad:hover {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    font-size: 90%;
+    padding: 0.7rem;
+
+    img {
+      width: 45%;
+      float: left;
+      margin-bottom: 0;
+      margin-right: 5%;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 14px;
+    }
+  }
+
+}
