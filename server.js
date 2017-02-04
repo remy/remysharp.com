@@ -1,58 +1,5 @@
 'use strict';
 
-const Marked = require('terraform/node_modules/marked');
-const sizeOf = require('image-size');
-
-// no widows in paragraphs
-const widowRe = /^[a-z\.!?"'():%$£&;]+$/;
-Marked.Renderer.prototype.paragraph = function(text) {
-  const words = text.split(' ');
-  const last = words[words.length - 1];
-  if (words.length > 1 && widowRe.test(last)) {
-    return `<p>${words.slice(0, -1).join(' ')}&nbsp;${last}</p>\n`;
-  }
-  return `<p>${text}</p>`;
-}
-
-Marked.Renderer.prototype.listitem = function(text) {
-  if (/^\s*\[[x ]\]\s*/.test(text)) {
-    text = text
-      .replace(/^\s*\[ \]\s*/, '<input disabled type="checkbox"> ')
-      .replace(/^\s*\[x\]\s*/, '<input disabled type="checkbox" checked> ');
-
-    return '<li class="checkbox" style="list-style: none">' + text + '</li>';
-  } else {
-    return '<li>' + text + '</li>';
-  }
-};
-
-// dynamically get the dimensions of the images
-Marked.Renderer.prototype.image = function(href, title, text) {
-  var out = '<img src="' + href + '" alt="' + text + '"';
-  if (title) {
-    out += ' title="' + title + '"';
-  }
-  if (!href.endsWith('.svg')) {
-    try {
-      if (href.includes('://remysharp.com')) {
-        href = href.replace(/^https?:\/\/remysharp.com/, '');
-      }
-      const dim = sizeOf(__dirname + '/public' + href);
-      if (dim.width/2 <= 680) {
-        const base = 680 / dim.width;
-        const h = dim.height * base;
-        out += `width="680" height="${h|0}"`;
-      } else {
-        out += `width="${dim.width}" height="${dim.height}"`;
-      }
-    } catch (e) {
-      console.log('failed', href);
-    }
-  }
-  out += this.options.xhtml ? '/>' : '>';
-  return out;
-};
-
 // require('es6-promise').polyfill(); // jshint ignore:line
 var harp;
 var http = require('http');
@@ -410,7 +357,7 @@ function run() {
     http.createServer(route).listen(port);
     server(outputPath, port);
   } else {
-    harp = require('harp');
+    harp = require('./harp');
 
     // this is used for offline development, where harp is
     // rebuilding all files on the fly.
@@ -462,7 +409,7 @@ global.recent = slugs.slice(0).sort(function (a, b) {
 
 if (process.argv[2] === 'compile') {
   process.env.NODE_ENV = 'production';
-  harp = require('harp');
+  harp = require('./harp');
   harp.compile(__dirname, outputPath, function (errors) {
     if (errors) {
       console.log(JSON.stringify(errors, null, 2));
