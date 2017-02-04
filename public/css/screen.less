@@ -8,6 +8,8 @@
 @main-font-color: #212121;
 @flickr-width: 235px;
 
+@import (inline) "system-font.css";
+
 /* Mixins */
 .transition (@prop: all, @time: 1s, @ease: linear) {
   -webkit-transition: @prop @time @ease;
@@ -1451,3 +1453,6 @@ a[title="simple-link"] {
   opacity: 0.5;
   user-select: none;
 }
+
+// code font highlight
+@import (inline) "zenburn.css";
