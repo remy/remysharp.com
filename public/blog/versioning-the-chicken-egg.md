@@ -72,7 +72,7 @@ You want to use the [CLI tool](https://github.com/semantic-release/cli) when set
 To get started install the CLI and run it in your project directory and answer the questions:
 
 ```bash
-npm install -g semantic-release-cli
+$ npm install --global semantic-release-cli
 ```
 
 **Gotcha:** I'm sure will be fixed eventually, semantic release will *overwrite* your `.travis.yml` file, so I always make sure to manually edit and resolve the changes by hand.

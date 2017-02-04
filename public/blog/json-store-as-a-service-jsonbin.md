@@ -25,15 +25,15 @@ Since the main interface is a RESTful API, it means that you can `curl` straight
 With your API key you can `GET`, `POST`, `PATCH` (to merge objects) and `DELETE` (just remember to send the right headers):
 
 ```bash
-curl -X POST -d'["foo.com","bar.com"]' https://jsonbin.org/remy/urls -H'authorization: token xyz' -H'content-type: application/json'
-curl -X PATCH -d'thud' https://jsonbin.org/remy/urls -H'authorization: token xyz' -H'content-type: application/json'
-curl -X GET https://jsonbin.org/remy/urls -H'authorization: token xyz' -H'content-type: application/json'
+$ curl -X POST -d'["foo.com","bar.com"]' https://jsonbin.org/remy/urls -H'authorization: token xyz' -H'content-type: application/json'
+$ curl -X PATCH -d'thud' https://jsonbin.org/remy/urls -H'authorization: token xyz' -H'content-type: application/json'
+$ curl -X GET https://jsonbin.org/remy/urls -H'authorization: token xyz' -H'content-type: application/json'
 ```
 
 I've also written a CLI tool *and* a node package to simplify the work: [jsonbin](https://www.npmjs.com/package/jsonbin) (installed via `npm install [--global] jsonbin`). From the CLI:
 
 ```bash
-jsonbin blog.url=https://…
+$ jsonbin blog.url=https://…
 ```
 
 As a required module which returns a promise:

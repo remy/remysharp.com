@@ -68,7 +68,7 @@ Now you build will work, but `npm install` *won't* work locally until you add th
 You might need to tweak these directions depending on your shell, but if you're using bash, add the following line to your `.bash_profile` and after run `source ~/.bash_profile`:
 
 ```bash
-export NPM_TOKEN="00000000-0000-0000-0000-000000000000"
+$ export NPM_TOKEN="00000000-0000-0000-0000-000000000000"
 ```
 
 The downside of this method (once you've got your shell sorted) is that if you're working in a team, each team member will have to add this line to their shell too, as the `.npmrc` file in the root of your project directory will require a valid token.

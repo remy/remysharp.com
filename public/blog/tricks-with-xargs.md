@@ -15,8 +15,8 @@ For instance, I want to see the first entry the web.archive.org has for a partic
 …or I could use `xargs` to complete it in a single command:
 
 ```sh
-$ curl http://web.archive.org/cdx/search/cdx\?limit\=1\&url\=remysharp.com |
-  cut -d' ' -f2 |
+$ curl http://web.archive.org/cdx/search/cdx\?limit\=1\&url\=remysharp.com | \
+  cut -d' ' -f2 | \
   xargs date -j -f "%Y%m%d%H%M%S"
 ```
 
@@ -29,8 +29,8 @@ The solution, and the whole point of this post, is using the filename placeholde
 `xargs` allows you to specify a placeholder using `-I <marker>` and then you can re-use the marker later on in the command. Most reading material on the web uses a marker of `{}`, but you can use anything, like `FILE`:
 
 ```sh
-$ curl http://web.archive.org/cdx/search/cdx\?limit\=1\&url\=remysharp.com |
-  cut -d' ' -f2 |
+$ curl http://web.archive.org/cdx/search/cdx\?limit\=1\&url\=remysharp.com | \
+  cut -d' ' -f2 | \
   xargs -I FILE date -j -f "%Y%m%d%H%M%S" FILE > output.txt
 ```
 
@@ -51,20 +51,20 @@ So, I had to combine a number of features:
 The result was this (multiline for readability):
 
 ```sh
-$ ls */package.json |
-   xargs -I {} -L 1 sh -c 'json devDependencies < "{}"'
+$ ls */package.json | \
+  xargs -I {} -L 1 sh -c 'json devDependencies < "{}"'
 ```
 
 Of course, when I found out (afterwards!) that `json` _can_ take a filename, it simplifies considerably:
 
 ```bash
-ls */package.json | xargs -I {} -L 1 json -f {} devDependencies
+$ ls */package.json | xargs -I {} -L 1 json -f {} devDependencies
 ```
 
 Aside, this could also be done using `find`, but it's quite a bit slower (for me) since there's a lot more files it work its way through:
 
 ```bash
-find . -name package.json -depth 2 -exec sh -c 'json -f "{}" devDependencies'  \;
+$ find . -name package.json -depth 2 -exec sh -c 'json -f "{}" devDependencies'  \;
 ```
 
 I hope that's helpful, and next time you might use `xargs` to do a bit of your CLI magic! Also, if that was all new to you, perhaps you might want my new book: [Working the Command Line](/cli-book)!

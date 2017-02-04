@@ -399,8 +399,8 @@
     "title": "Building the Bike Shed",
     "date": "2017-01-04 11:49:07",
     "modified": "2017-01-04 11:49:07",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]
@@ -409,8 +409,8 @@
     "title": "Trimming the release/test/fail/release cycle",
     "date": "2017-01-13 11:40:07",
     "modified": "2017-01-13 11:40:07",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]
@@ -429,8 +429,8 @@
     "title": "Browser Terminals",
     "date": "2017-02-02 21:43:49",
     "modified": "2017-02-02 21:43:49",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "web"
     ]
@@ -439,8 +439,8 @@
     "title": "$ in code examples",
     "date": "2017-02-03 13:54:54",
     "modified": "2017-02-03 13:54:54",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "code"
     ]

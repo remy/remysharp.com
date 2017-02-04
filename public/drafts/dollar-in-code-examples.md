@@ -6,7 +6,7 @@ So here's two ways you can prefix terminal code examples with a `$` and not make
 
 <!--more-->
 
-## Method 1 - adding `$` in post
+## Not bad: adding `$` via CSS
 
 I'm mixed on whether the source of my posts include the `$` in the code examples, but this method will add it in afterwards, but splitting the `code` element into individual lines, then wrapping each line with a `span` element that's styled with a `:before` pseudo selector.
 
@@ -18,7 +18,7 @@ const $ = (expr, ctx = document) => {
   return Array.from(ctx.querySelectorAll(expr));
 }
 
-$('code.bash').forEach(elem {
+$('code.bash').forEach(elem => {
   const replaced = elem.textContent
     .split('\n') // break into individual lines
     .filter(Boolean) // strip empty lines
@@ -38,34 +38,47 @@ code.bash .line:before {
 }
 ```
 
+The result, a series of commands has the prompt symbol, but not included when you copy:
 
-This quick tip is for styling code examples that have a `$` for the command line, but allow it to be properly copied.
+```bash
+$ npm init -f
+$ install --save express
+$ npm start
+```
 
-## Step 1: include some JavaScript
+But sometimes I don't want *every* line to be prefixed with the prompt, either when I want to show the output from a command or if a command is across multiple lines (joined by a `\`). So that needs an improved solution.
 
-Yep, sorry, but I need JavaScript to solve this. Though you could (if you wanted to do the little bit of extra work), prepare the HTML on the server side. What I need to achieve is a wrapping `span` around each line in the code example.
+## Better: making `$` unselectable
+
+Rather than splitting every line and wrapping them in a `span.line` element, what I could do instead is to assume that the `$` symbol is in the original markup, and wrap *only* the `$` symbol and using CSS make it *unselectable*.
 
 ```javascript
-// I've used vanilla JS, but feel free to port to jQuery, etc
-const $ = (expr, ctx = document) => {
-  return Array.from(ctx.querySelectorAll(expr));
-}
-
-$('pre > code.language-bash').each(function () {
-  const el = this;
-  const replaced = el.textContent
+const prompt = '<span class="prompt">$ </span>';
+$('code.bash').each(elem => {
+  el.innerHTML = el.textContent
     .split('\n') // break into individual lines
-    .filter(Boolean) // strip empty lines
-    .map(line => line.replace(/^\$ /, '')) // remove leading $[space]
-    .join('</span>\n<span class="line">')); // wrap with span.line
-
-  el.innerHTML = '<span class="line">'+replaced+'</span>';
-});
-
-$('pre > code.language-sh').forEach(function () {
-  this.innerHTML='<span class="line">'+(this.textContent.split('\n').filter(Boolean).map(function (line) {
-    return line.replace(/^\$ /, '<span class="bash-prompt">$ </span>');
-  }).join('</span>\n<span class="line">'))+'</span>';
+    .map(line => line.replace(/^\$ /, prompt))
+    .join('\n'); // join the lines back up
 });
 ```
 
+This regexp makes sure the line starts with a `$` symbol _and_ is followed by a space (so it doesn't capture variables), and with the following CSS applied to the `span.prompt` element, the `$` is unselectable and the code can be copied and pasted:
+
+```css
+.prompt {
+  user-select: none;
+  opacity: 0.5;
+}
+```
+
+This now works with the previous example, but also multi-line examples:
+
+```bash
+$ curl -X POST \
+       -d'["foo.com","bar.com"]' \
+       -H'authorization: token xyz' \
+       -H'content-type: application/json' \
+       https://jsonbin.org/remy/urls
+```
+
+Nice and simple, and I like that my code examples can now be safely copied without accidently messing up the command (and I've dropped in the opacity to try to visually indicate that it's less important than the code).

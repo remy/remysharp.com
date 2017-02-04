@@ -208,6 +208,10 @@ a {
 h1, h2, h3, h4 {
   font-weight: 400;
   line-height: 1.1;
+
+  code {
+    font-size: 100%;
+  }
 }
 
 h1 {
@@ -1263,12 +1267,7 @@ a[title="simple-link"] {
   }
 }
 
-.language-bash .line:before {
-  content: '$ ';
-  opacity: 0.5;
-}
-
-.language-sh .line .bash-prompt {
+.bash-prompt {
   opacity: 0.5;
   user-select: none;
 }

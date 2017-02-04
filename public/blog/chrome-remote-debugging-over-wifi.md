@@ -23,16 +23,18 @@ If you're not running vanilla Android (like Cyanogen or Oxygen) you might also h
 Then from your terminal, you'll need to connect to the IP that ADB over network shows:
 
 ```bash
-adb connect <IP>:5555
+$ adb connect <IP>:5555
 ```
 
 If you don't have ADB over network, you can switch ADB to use TCP, but it requires a one time USB connection. Once you've connected up your Android run the following BASH commands in your terminal:
 
 ```bash
-ID=$(adb devices | awk -F'device' '{if (match($0, /device$/)) print $1}'); \
-IP=$(adb shell ifconfig wlan0 | awk '{if (sub(/inet addr:/,"")) print $1 }'); \
-adb tcpip 5555; \
-adb connect $IP:5555
+$ ID=$(adb devices | \
+  awk -F'device' '{if (match($0, /device$/)) print $1}');
+$ IP=$(adb shell ifconfig wlan0 | \
+  awk '{if (sub(/inet addr:/,"")) print $1 }');
+$ adb tcpip 5555;
+$ adb connect $IP:5555
 ```
 
 Now you device is connected over the network, you can remote debug.
@@ -88,10 +90,10 @@ Now we're going to do the following using adb:
 The follow BASH script does all those steps for you. So you can copy and paste the commands (if you're on a mac or linux), and drop it directly in your terminal application:
 
 ```bash
-ID=$(adb devices | awk -F'device' '{if (match($0, /device$/)) print $1}'); \
-IP=$(adb shell ifconfig wlan0 | awk '{if (sub(/inet addr:/,"")) print $1 }'); \
-adb tcpip 5555; \
-adb connect $IP:5555
+$ ID=$(adb devices | awk -F'device' '{if (match($0, /device$/)) print $1}');
+$ IP=$(adb shell ifconfig wlan0 | awk '{if (sub(/inet addr:/,"")) print $1 }');
+$ adb tcpip 5555;
+$ adb connect $IP:5555
 ```
 
 Now, **disconnect the USB cable**. You can validate it worked by running `adb devices` and it should now list the IP of the device.
@@ -102,7 +104,7 @@ Before remote debugging, you need to connect to your device using adb (note if y
 
 You need to know the IP of your device, which you should be able to discover using one of the discovery techniques I've covered above. Next, we connect:
 
-```sh
+```bash
 $ adb connect <DEVICE_IP>:5555
 connected to <DEVICE_IP>:5555
 ```

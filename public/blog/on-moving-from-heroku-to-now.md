@@ -86,7 +86,7 @@ In using Zeit over the last few months, I've found a few best practises that sui
 Many of my projects get deployed and moved to live with a simple:
 
 ```bash
-now && now alias
+$ now && now alias
 ```
 
 This does two things: deploys the current directory, and then aliases the now.sh URL to the value in my package under `now.alias`:

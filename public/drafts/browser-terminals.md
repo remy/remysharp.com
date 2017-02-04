@@ -31,10 +31,10 @@ Now you have the terminal accessible, but it'll likely say it can't connect. Shu
 For the terminal in drawer experiment to work, it needs to tunnel through to a local version of devtools. If that sounds funky, it's because *it is* funky. But never fear, follow these directions (or copy and paste in your terminal):
 
 ```bash
-git clone --depth 1 https://github.com/ChromeDevTools/devtools-frontend.git
-cd devtools-frontend/services
-npm install
-node devtools.js
+$ git clone --depth 1 https://github.com/ChromeDevTools/devtools-frontend.git
+$ cd devtools-frontend/services
+$ npm install
+$ node devtools.js
 ```
 
 #### Step 3: connect Chrome to local devtools
@@ -42,7 +42,7 @@ node devtools.js
 Now the local devtools will be running, open a new terminal window, and you'll need to fire up Chrome. These are the directions for a Mac (with some assumptions about the location of Chrome):
 
 ```bash
-/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --devtools-flags='service-backend=ws://localhost:9022/endpoint'
+$ /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --devtools-flags='service-backend=ws://localhost:9022/endpoint'
 ```
 
 Specifically, it's the `--devtools-flags` which tells Chrome to connect to your local terminal tunnel.

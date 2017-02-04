@@ -216,7 +216,7 @@ That would look like this:
 Then on the cli I run:
 
 ```bash
-npm run watch
+$ npm run watch
 ```
 
 nodemon is running in "quiet" mode (i.e. suppress any nodemon specific output), and make the thing it executes be `npm test`.
@@ -246,12 +246,12 @@ What does that all look like? Rather than bloating this post even more, I've add
 I've installed these pieces locally, *not* globally, for dev only use by running:
 
 ```bash
-npm install --save-dev tape tap-spec@2 jscs
+$ npm install --save-dev tape tap-spec@2 jscs
 ```
 
 I'll also make sure that my tests and fixtures are excluded from my npm packages too, with `.npmignore` containing (at least):
 
-```
+```bash
 /test
 ```
 
