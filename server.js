@@ -1,7 +1,7 @@
 'use strict';
 
 // require('es6-promise').polyfill(); // jshint ignore:line
-var harp;
+var harp = require('./harp');
 var http = require('http');
 var fs = require('fs');
 var st = require('st');
@@ -357,8 +357,6 @@ function run() {
     http.createServer(route).listen(port);
     server(outputPath, port);
   } else {
-    harp = require('./harp');
-
     // this is used for offline development, where harp is
     // rebuilding all files on the fly.
     route.get(/^\/archive$/, function (req, res) {
@@ -409,7 +407,6 @@ global.recent = slugs.slice(0).sort(function (a, b) {
 
 if (process.argv[2] === 'compile') {
   process.env.NODE_ENV = 'production';
-  harp = require('./harp');
   harp.compile(__dirname, outputPath, function (errors) {
     if (errors) {
       console.log(JSON.stringify(errors, null, 2));
