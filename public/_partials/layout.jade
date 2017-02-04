@@ -52,7 +52,10 @@ else
       link(rel="icon" sizes="192x192" href="/images/avatar-favicon.png")
       link(rel="manifest" href="/manifest.json")
       link(rel="shortcut icon" href="/favicon.ico")
-      link(rel="stylesheet" href="/css/critical.css?#{version}")
+      style(critical)
+        include ../css/critical.css
+
+      //- link(rel="stylesheet" href="/css/critical.css?#{version}")
       script
         | try {
         |  if (localStorage.plain == 1) {
