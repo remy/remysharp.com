@@ -54,11 +54,11 @@ Marked.Renderer.prototype.image = function(href, title, text) {
 };
 
 // require('es6-promise').polyfill(); // jshint ignore:line
+var harp;
 var http = require('http');
 var fs = require('fs');
 var st = require('st');
 var glob = require('glob');
-var harp = require('harp');
 var querystring = require('querystring');
 var outputPath = __dirname + '/www';
 var port = process.env.PORT || 9000;
@@ -410,6 +410,8 @@ function run() {
     http.createServer(route).listen(port);
     server(outputPath, port);
   } else {
+    harp = require('harp');
+
     // this is used for offline development, where harp is
     // rebuilding all files on the fly.
     route.get(/^\/archive$/, function (req, res) {
