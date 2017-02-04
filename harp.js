@@ -1,5 +1,5 @@
 const harp = require('harp');
-const Marked = require('terraform/node_modules/marked');
+const Marked = require('marked');
 const sizeOf = require('image-size');
 
 module.exports = harp;
