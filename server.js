@@ -462,6 +462,7 @@ global.recent = slugs.slice(0).sort(function (a, b) {
 
 if (process.argv[2] === 'compile') {
   process.env.NODE_ENV = 'production';
+  harp = require('harp');
   harp.compile(__dirname, outputPath, function (errors) {
     if (errors) {
       console.log(JSON.stringify(errors, null, 2));
