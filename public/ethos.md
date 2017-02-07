@@ -56,7 +56,7 @@ This is such a good speech on having the right to choose your own path.
 
 ![How to counter biased systems](/images/ethos/balance.jpg)
 
-I love this representation of how biased systems work, and how my neutral position would indeed *not* be neutral – [Via twitter](https://twitter.com/danielsolis/status/707663012606246913) 9 Mar 2016
+I love this representation of how biased systems work, and how my neutral position would indeed *not* be neutral — [Via twitter](https://twitter.com/danielsolis/status/707663012606246913) 9 Mar 2016
 
 ---
 
@@ -75,3 +75,21 @@ I could *wish* I had this much insight when I was 14. Instead, I'm learning from
 This comic, somehow describes exactly how I've always felt about being "happy". I've never been able to say, truthfully, that I was happy. I found this <time datetime="2016-10-07 18:00:00">today</time> and it says what I've never been able to articulate.
 
 👉 [How to be perfectly unhappy](http://theoatmeal.com/comics/unhappy) 7 Oct 2016
+
+---
+
+## When trying to sell (yourself)
+
+> To paraphrase Dale Carnegie:
+>
+> *Don't bait your hook with food you like. Bait your hook with food fish like.*
+
+– Jonathan Stark – 7 Feb 2017
+
+---
+
+## All that we share
+
+In a time where higher powers are trying to convince us that we should be afraid of each other, this advert (of all things) is a beautiful remind of all that we share.
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/jD8tjhVO1Tc?rel=0" frameborder="0" allowfullscreen></iframe>
