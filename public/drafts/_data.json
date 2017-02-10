@@ -425,16 +425,6 @@
       "business"
     ]
   },
-  "browser-terminals": {
-    "title": "Browser Terminals",
-    "date": "2017-02-02 21:43:49",
-    "modified": "2017-02-02 21:43:49",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "web"
-    ]
-  },
   "dollar-in-code-examples": {
     "title": "$ in code examples",
     "date": "2017-02-03 13:54:54",
