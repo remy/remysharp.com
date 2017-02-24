@@ -36,6 +36,20 @@ const token = jwt.sign({ id: publicId, path }, apikey, { expiresIn });
 
 Now anyone with the `token` can `POST` (and `GET`) the end point https://jsonbin.org/me/urls/0 - but not /urls root or any other element in the array.
 
+To use it in the client, you can:
+
+```js
+fetch('https://jsonbin.org/me/urls/0', {
+  method: 'post',
+  headers: {
+    authorization: `Bearer ${token}`
+  },
+  body: 'http://example.com' // this is our change
+}).then(res => {
+  console.log(res.status);
+});
+```
+
 ---
 
 This is the first stab at client side access to jsonbin, and I'm thinking about limiting bearer tokens to only being able to `GET` and to `POST` where the request doesn't mutate the original data (i.e. only append a new property or array element). I'd appreciate any thoughts on this too.
