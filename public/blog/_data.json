@@ -4448,5 +4448,14 @@
       "web"
     ],
     "published": true
+  },
+  "using-jsonbin-in-the-browser": {
+    "title": "Using jsonbin in the browser",
+    "date": "2017-02-24 16:13:38",
+    "modified": "2017-02-24 15:47:42",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }
