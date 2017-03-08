@@ -59,11 +59,9 @@ else
       script
         | try {
         |  if (localStorage.plain == 1) {
-        |    document.head.innerHTML += '<link rel="stylesheet" href="/css/plain.css">';
+        |    document.head.innerHTML += '<link rel="stylesheet" href="/css/plain.css?#{version}">';
         |   }
         | } catch (e) {}
-
-      //- link(rel="stylesheet" type="text/css" href="/css/plain.css?#{version}")
 
       link(rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/remysharp")
       link(rel="alternate" type="text/xml" title="RSS .92" href="http://feeds.feedburner.com/remysharp")

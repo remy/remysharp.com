@@ -1,3 +1,5 @@
+@import (inline) "vscode.css";
+
 html, body {
   background: rgb(37, 37, 37);
   background: white;
@@ -151,4 +153,24 @@ ul.post-nav li.search a {
   article.post li {
     line-height: 1.8rem;
   }
+}
+
+pre, code, .hljs {
+  background: white;
+  // color: #333;
+}
+
+pre:before,
+pre:after {
+  content: '```';
+}
+
+code:before,
+code:after {
+  content: '`';
+}
+
+pre code:before,
+pre code:after {
+  content: '';
 }
