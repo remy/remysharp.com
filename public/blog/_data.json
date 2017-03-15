@@ -4466,5 +4466,15 @@
       "personal"
     ],
     "published": true
+  },
+  "terminal-training": {
+    "title": "terminal.training",
+    "date": "2017-03-15 15:04:39",
+    "modified": "2017-03-14 17:01:09",
+    "tags": [
+      "web",
+      "business"
+    ],
+    "published": true
   }
 }
