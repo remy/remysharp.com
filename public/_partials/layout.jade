@@ -6,7 +6,7 @@ if amp
     head
       meta(charset="utf-8")
       script(async src="https://cdn.ampproject.org/v0.js")
-      title= title
+      title= customTitle || title
       meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1")
       block meta
       script(type="application/ld+json")
@@ -38,7 +38,7 @@ else
     head
       meta(charset="utf-8")
       meta(http-equiv="X-UA-Compatible" content="IE=edge")
-      title= title || site_title
+      title= customTitle || title || site_title
       - var desc = title === site_title ? title + ' :: ' + site_description : title || site_description
       meta(name="source" content="https://github.com/remy/remysharp.com")
       meta(name="description" content="#{desc}")
