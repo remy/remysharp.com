@@ -48,16 +48,18 @@ block content
 
       .post-content
         //- strip the h1 out of the body as we printed it above as the permalink
-        - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
-        //- if res
-        //-   != res[0]
-        //-   != partial('../_partials/ffconf-ad')
-        //-   != res[1]
-        //- else
+        //- - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
         if amp
           - yield = yield.replace(/<p><img(.*?)><\/p>/g, '<amp-img layout="responsive"$1></amp-img>');
-
-        != yield
+          != yield
+        else
+          - if (yield) res = split(yield.replace(/<h1>.*?<\/h1>/, ''));
+          if res
+            != res[0]
+            != partial('../_partials/terminal-ad')
+            != res[1]
+          else
+            != yield
 
         p.metadata Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}.
 

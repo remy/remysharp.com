@@ -1212,14 +1212,15 @@ details summary:after {
   font-size: 60%;
 }
 
-@ffconf-ad-width: 8rem;
+@ad-width: 8rem;
 
-.ffconf-ad,
-.ffconf-ad:hover {
+.ad,
+.ad:hover {
+  z-index: 1;
+  position: relative;
   display: block;
   float: right;
   box-sizing: border-box;
-  background: #ffffe4;
   background: #fff;
   border: 2px solid gainsboro; //rgb(204, 201, 0);
   padding: 0.5rem;
@@ -1230,7 +1231,7 @@ details summary:after {
   overflow: hidden;
   margin-left: 1rem;
   margin-bottom: 1rem;
-  width: @ffconf-ad-width + (2 * 0.5rem);
+  width: @ad-width + (2 * 0.5rem);
 
   img {
     float: left;
@@ -1249,7 +1250,74 @@ details summary:after {
   }
 }
 
-.ffconf-ad + p img {
+.inline-ad,
+.inline-ad:hover {
+  border: 1px solid #dcdcdc;
+  display: block;
+  padding: 0px;
+  background: none;
+  color: inherit;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    border-color: #ccc;
+  }
+
+  img {
+    float: left;
+    max-height: 150px;
+    margin-right: 20px;
+  }
+
+  & > div {
+    padding: 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .ad-label {
+    font-size: 70%;
+    height: inherit;
+    display: inline-block;
+    margin-right: 5px;
+    background: #4CAF50;
+    line-height: initial;
+    border-radius: 3px;
+    color: white;
+    padding: 2px 5px;
+    vertical-align: text-top;
+  }
+
+  .desc {
+    font-size: 80%;
+    line-height: 1.6;
+  }
+
+  &:after {
+    // content: 'Ad';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: gainsboro;
+    color: white;
+    font-size: 70%;
+    padding: 0 5px;
+    border-bottom-left-radius:2px;
+    // content: 'Learn more';
+  }
+
+  &:hover:after {
+    background: #ccc;
+  }
+}
+
+.ad + p img {
   max-width: 450px;
   width: 100%;
   margin-right: 0;
@@ -1302,7 +1370,7 @@ a[title="simple-link"] {
   font-size: inherit;
   color: @link-color;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: inherit;
   padding: 0;
   cursor: pointer;
   border-bottom: 1px solid @link-color;
