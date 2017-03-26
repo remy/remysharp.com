@@ -1296,6 +1296,26 @@ a[title="simple-link"] {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
+.like-link {
+  border: 0;
+  background: none;
+  font-size: inherit;
+  color: @link-color;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 0;
+  cursor: pointer;
+  border-bottom: 1px solid @link-color;
+
+  &:hover,
+  &:focus {
+    background: #1F296C;
+    color: #fff;
+    border-bottom: none;
+    text-decoration: none;
+    padding: 2px 0;
+  }
+}
 
 @import (less) "mq.less";
 // // code font highlight
