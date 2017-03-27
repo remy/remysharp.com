@@ -38,7 +38,7 @@ code.bash .line:before {
 }
 ```
 
-The result, a series of commands has the prompt symbol, but not included when you copy:
+The result, a series of commands has the prompt symbol, but not included when you copy (go ahead, select the text in the sample below):
 
 ```bash
 $ npm init -f
@@ -71,7 +71,7 @@ This regexp makes sure the line starts with a `$` symbol _and_ is followed by a 
 }
 ```
 
-This now works with the previous example, but also multi-line examples:
+This now works with the previous example, but also multi-line examples (try selecting the text below):
 
 ```bash
 $ curl -X POST \
@@ -81,4 +81,4 @@ $ curl -X POST \
        https://jsonbin.org/remy/urls
 ```
 
-Nice and simple, and I like that my code examples can now be safely copied without accidently messing up the command (and I've dropped in the opacity to try to visually indicate that it's less important than the code).
+Nice and simple, and I like that my code examples can now be safely copied without accidentally messing up the command (and I've dropped in the opacity to try to visually indicate that it's less important than the code).
