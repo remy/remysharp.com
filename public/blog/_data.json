@@ -4478,5 +4478,15 @@
       "business"
     ],
     "published": true
+  },
+  "dollar-in-code-examples": {
+    "title": "$ in code examples",
+    "image": "/images/dollar-in-code.png",
+    "date": "2017-03-27 11:35:57",
+    "modified": "2017-02-03 13:54:54",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }
