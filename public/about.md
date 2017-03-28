@@ -10,9 +10,9 @@ I live in the sometimes sunny Brighton (it's in the [south of the UK](http://map
 
 I've been known to [speak at conferences](/talks) so if you want a bio you can copy and paste for me, please feel free to use the following latest info (available as [html](http://jsbin.com/remy-bio.html) or [markdown](http://jsbin.com/remy-bio.md)):
 
-<blockquote id="bio"><p><a href="https://twitter.com/rem">Remy</a> is the founder and curator of <a href="http://ffconf.org">ffconf</a>, the UK based JavaScript conference. He also ran <a href="http://jqueryfordesigners.com">jQuery for Designers</a>, co-authored <a href="http://introducinghtml5.com">Introducing HTML5</a> (adding all the JavaScripty bits) and likes to grumble on Twitter.</p>
-
-<p>Whilst he's not <a href="http://remysharp.com">writing articles</a> or running and <a href="http://lanyrd.com/people/rem/">speaking at conferences</a>, he runs his own development and training company in Brighton called <a href="http://leftlogic.com">Left Logic</a>.  And he built these too: <a href="https://confwall.com">Confwall</a>, <a href="http://jsbin.com">jsbin.com</a>, <a href="http://html5demos.com">html5demos.com</a>, <a href="http://responsivepx.com">responsivepx.com</a>, <a href="https://github.com/remy/nodemon">nodemon</a>, <a href="http://mit-license.org">mit-license.org</a>, <a href="http://snapbird.org">snapbird.org</a>, <a href="http://5minfork.com">5 minute fork</a> and <a href="http://jsconsole.com">jsconsole.com</a>!</p></blockquote>
+<blockquote id="bio">
+<p><a href="https://twitter.com/rem">Remy</a> is the founder and curator of <a href="https://ffconf.org">ffconf</a>, the UK based JavaScript conference. He also ran &quot;jQuery for Designers&quot; website, co-authored <a href="http://introducinghtml5.com">Introducing HTML5</a> and runs a <a href="https://terminal.training">video course on the command line</a>.</p>
+<p>Whilst he&#39;s not <a href="https://remysharp.com">writing articles</a> or running and <a href="http://lanyrd.com/people/rem/">speaking at conferences</a>, he runs his own development and training company in Brighton called <a href="https://leftlogic.com">Left Logic</a>. And he built these popular tools: <a href="https://github.com/remy/nodemon">nodemon</a>, <a href="http://jsbin.com">jsbin.com</a>, <a href="https://github.com/remy/inliner">inliner</a>, <a href="https://mit-license.org">mit-license.org</a>, <a href="http://snapbird.org">snapbird.org</a>, <a href="https://jsconsole.com">jsconsole.com</a> and others!</p></blockquote>
 
 
 ## Now
