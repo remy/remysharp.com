@@ -454,5 +454,26 @@
     "tags": [
       "code"
     ]
+  },
+  "how-i-copy-paste-in-the-terminal": {
+    "title": "✂📋 How I copy & paste in the terminal",
+    "date": "2017-04-10 16:55:55",
+    "modified": "2017-04-10 16:55:55",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
+  },
+  "tinnitus": {
+    "title": "Tinnitus",
+    "image": "/images/tinnitus.png",
+    "date": "2017-04-11 13:12:31",
+    "modified": "2017-04-11 13:12:31",
+    "complete": true,
+    "inprogress": true,
+    "tags": [
+      "personal"
+    ]
   }
 }
