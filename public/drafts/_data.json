@@ -464,16 +464,5 @@
     "tags": [
       "code"
     ]
-  },
-  "tinnitus": {
-    "title": "Tinnitus",
-    "image": "/images/tinnitus.png",
-    "date": "2017-04-11 13:12:31",
-    "modified": "2017-04-11 13:12:31",
-    "complete": true,
-    "inprogress": true,
-    "tags": [
-      "personal"
-    ]
   }
 }
