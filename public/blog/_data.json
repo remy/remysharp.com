@@ -4498,5 +4498,14 @@
       "personal"
     ],
     "published": true
+  },
+  "when-github-email-scope-fails": {
+    "title": "When github email scope fails",
+    "date": "2017-04-24 07:49:48",
+    "modified": "2017-03-20 20:46:36",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }
