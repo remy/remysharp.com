@@ -19,8 +19,17 @@ Bottom line: latency based DNS. Only available in AWS AFAIK, plus instances need
 - I moved to MemDOWN (memory based leveldb) and when the connect starts up, it syncs from the primary (I also need to add deployment checks to only pass once this is complete).
 - Using setImmediate to defer some action (such as updating the user database as a fire and forget) as this will allow the server to respond to the http request and *then* do the setImmedate request
 
-
 # Details
+
+## SSL
+
+I looked at using AWS Cerficate Manager, and this works with CloudFront distributions, but this is just a CDN. A CDN for dynamic content is great, except that taxtools' general usage is a one off hit to get all the data you need, so that first hit **must** be fast, and with a CDN, the first request runs through the CDN and retrieves the original object, and returns it. The second hit is the fast one, but that's too late for us already.
+
+Handled by LetsEncrypt, but there's a problem. The way that the certificate validation works is by making a webhook callback to the machine making the LE request. If the machine responds correctly, a new certificate is provision.
+
+All well and good in theory, but what if you trigger the LE request from your machine based in Germany, and the LE server requests the domain but hits the US east one because the geo-based DNS is working? Well…you're screwed.
+
+
 
 
 ## 1. dokku via vagrant on aws
@@ -54,3 +63,7 @@ sudo add-apt-repository ppa:chris-lea/nginx-devel
 sudo apt-get update
 sudo apt-get install nginx=1.11.* -y
 ```
+
+
+
+
