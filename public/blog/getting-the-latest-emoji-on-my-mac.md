@@ -6,7 +6,7 @@ However, my biggest daily gripe is that I don't get to enjoy the latest emoji, a
 
 > When text is rendered by a computer, sometimes characters are displayed as “tofu”. They are little boxes to indicate your device doesn't have a font to display the text.
 
-Finally, I have a fix
+Finally, I have a fix.
 
 <!--more-->
 
