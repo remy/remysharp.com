@@ -29,7 +29,17 @@ Handled by LetsEncrypt, but there's a problem. The way that the certificate vali
 
 All well and good in theory, but what if you trigger the LE request from your machine based in Germany, and the LE server requests the domain but hits the US east one because the geo-based DNS is working? Well…you're screwed.
 
+**In the end**, I purchased a 2 year SSL certificate and deployed manually to avoid the headache!
 
+```bash
+ssh dokku@dokku.us1 certs:add iptotax < cert/certs-2017-05-13.tar
+```
+
+## Monitoring
+
+Currently I use updown.io to monitor taxtools, which does actually report requests from different locations across the globe, but it's very easy to be mislead into thinking that the server is fine because it renders well in the UK, when in fact the US East 1 server has bailed.
+
+_To be continued_.
 
 
 ## 1. dokku via vagrant on aws

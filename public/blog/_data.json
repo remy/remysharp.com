@@ -4516,5 +4516,14 @@
       "personal"
     ],
     "published": true
+  },
+  "getting-free-wifi": {
+    "title": "Getting free wifi",
+    "date": "2017-05-29 09:42:06",
+    "modified": "2017-05-29 09:33:15",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }

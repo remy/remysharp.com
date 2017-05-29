@@ -4,9 +4,9 @@ I've used Stripe on a number of projects in varying levels of complexity, but if
 
 <!--more-->
 
-* Demo: https://stripe-demo.isthe.link
+* Demo: <a href="https://stripe-demo.isthe.link" rel="nofollow">https://stripe-demo.isthe.link</a>
 * Github source: https://github.com/remy/stripe-tutorial
-* Live source: https://stripe-demo.isthe.link/_src
+* Live source: <a href="https://stripe-demo.isthe.link/_src" rel="nofollow">https://stripe-demo.isthe.link/_src</a>
 
 ## The goal of this post
 
@@ -204,4 +204,4 @@ There's also products that will do the *whole* process for you, in particular [Q
 
 ## Final notes
 
-Hopefully you're now armed with the essential steps to start taking money on the web using Stripe. Again, all the [source code](https://github.com/remy/stripe-tutorial) is available and a [live instance is online](https://stripe-demo.isthe.link) for you to try out and test.
+Hopefully you're now armed with the essential steps to start taking money on the web using Stripe. Again, all the [source code](https://github.com/remy/stripe-tutorial) is available and a <a href="https://stripe-demo.isthe.link" rel="nofollow">live instance is online</a> for you to try out and test.
