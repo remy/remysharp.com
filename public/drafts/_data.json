@@ -464,5 +464,15 @@
     "tags": [
       "personal"
     ]
+  },
+  "on-the-react-bandwagon": {
+    "title": "On the React bandwagon",
+    "date": "2017-06-01 12:24:23",
+    "modified": "2017-06-01 12:24:23",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }

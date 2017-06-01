@@ -6,8 +6,6 @@ This post is a bit of a introspection of my own thinking and not at all a compla
 
 <!--more-->
 
-<a class="jsbin-embed" href="https://rem.jsbin-dev.com/bom/embed?html,output">JS Bin on jsbin.com</a><script src="https://rem.jsbin-dev.com/js/embed.min.js?4.0.0"></script>
-
 ## How pricing changes things
 
 I've always had a little side project on the go throughout time. [JS Bin](https://jsbin.com) was a side project (that in some ways still is, just a rather large one these days). I hadn't realised, but the speed and number of side projects I was churning out had increased over the last 6 months, and now I'm fairly sure this has a direct correlation the 1,000 deploys (which also meant instances) on the premium plan (that I was on).
@@ -33,10 +31,10 @@ Across these categories, the types of projects I run split between static sites,
 
 Here's my plan for target deployments:
 
-- All static sites: AWS S3 and CloudFront for SNI SSL certificate
-- Production: typically bespoke, either AWS EC2 or Heroku
-- Side projects: Zeit's now platform
-- Experiments: glitch.me
+- All static sites: AWS S3 and CloudFront for SNI SSL certificate (example [Marbles&sup2;](https://marbles2.com/))
+- Production: typically bespoke, either AWS EC2 or Heroku (example: [ffconf](https://ffconf.org))
+- Side projects: Zeit's now platform (example: [jsonbin](https://jsonbin.org))
+- Experiments: Glitch (example: [kids drawing app](https://glitch.com/edit/#!/draw?path=index.html:18:14))
 
 I do also have one production project running on DigitalOcean and I expect eventually I will move it out.
 

@@ -6,9 +6,9 @@ Following on from a few others out there, I wanted to share my software and hard
 
 ### iTerm
 
-First and foremost of any software, I use iTerm, _possibly_ more than a browser. 
+First and foremost of any software, I use iTerm, _possibly_ more than a browser.
 
-I started commercial web development in 1999 and although we had a desktop editor (GWD, a precursor to Textedit+) I'd quite often have to code, debug and deploy live on production machines. So it was do or die with the terminal. 
+I started commercial web development in 1999 and although we had a desktop editor (GWD, a precursor to Textedit+) I'd quite often have to code, debug and deploy live on production machines. So it was do or die with the terminal.
 
 For Windows PuTTY was my goto, and since discovering iTerm2 on the Mac, it's the first tool I reach for.
 
