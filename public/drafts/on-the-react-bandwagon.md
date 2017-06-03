@@ -8,7 +8,7 @@ This post really isn't for those developers out there who use tools like React (
 
 Below I've tried to outline what my original concerns _were_ and how they've been mitigated in some way or another.
 
-## Overhead of tooling
+## 😵🔨 Overhead of tooling
 
 This was and continues to be one of my biggest concerns when it comes to daily development. Technology is difficult enough when it moves as quickly as it does (I'm speaking in broad terms). We don't need to *know* everything, but it certainly helps if we're aware of everything. I remember an old project manager asking me if we should use "comet" for some software solution back around 2006 (when the concept was coined!).
 
@@ -16,9 +16,9 @@ So the thought of having to add some new build process to my current workflow wa
 
 **Enter Create React App** (henceforth know as CRA in this post). In my very first foray I tried to use CRA but got overwhelmed by the generated files, directory and config, so I aborted. Thankfully, I revisited it again a few months later, either armed with a little familiarity with React components or perhaps the config was hidden, but the big, nay *huge*, benefit was that **the configuration is entirely hidden** (though you _can_ eject CRA and manually tune the configuration).
 
-This is important to me: it meant that I could get up and running with zero configuration and I could write code and see results.
+**It meant that I could get up and running with zero configuration and I could write code and see results.**
 
-## Reloading and losing state
+## 😭♻️ Reloading and losing state
 
 I've posted previously about [my workflow](https://www.youtube.com/playlist?list=PLXmT1r4krsTq7w7hDV6zfirrs4NJlzJX5) and to this day, I still use devtools for development. An important factor of using devtools is maintaining application state both for debugging but also for general development.
 
@@ -34,7 +34,6 @@ CRA has HMR turned off by default, but it doesn't require much to enable it. The
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import './index.css';
 
 const rootEl = document.getElementById('root');
 
@@ -66,49 +65,110 @@ For CSS, I do have the option to `import` CSS directly into React components (as
 
 If I move the CSS to the `public` directory, now I'm able to map the directory in devtools and make direct changes inside of the elements and sources panels.
 
-## Server side support
+**Hot module reloading retains a large amount of state, and putting CSS in to the static served directories means I can use devtools to manage styles.**
+
+## 😨📡 Server side support
 
 I've spoken to a lot of individuals that I would call standardistas who have stories of projects being handed over to a React chopshop and server side support, SEO and all the rich goodness of a server delivering the content is thrown out the window.
 
-My sense having spoken to more individuals is that server side rendering (SSR) is an extra mile that is often left off as not required or valued enough. **There is no hard data for this statement**, don't lose your hats over it. Though I wonder if BigQuery could answer this question…
+My sense having spoken to more individuals is that server side rendering (SSR) is an extra mile that is often left off as not required or valued enough. **This is my own finger-in-the-air opinion, please don't take it as gospel**. Though I wonder if BigQuery could answer this question…
 
 To me, a growing oldie on the web, even the phrase "server side render" makes no sense, since the server *has* to render. You can't get a client without the server (also see rants on "serverless" on twitter!). And why would a developer purposely lose the speed benefits of delivering a fully rendered tree to the client escaped me. The answer of course was: it's hard.
 
-It's not *that* hard. Learning programming or a new framework is hard! Anyway, SSR is entirely possible with React and just requires a little diligence to get the work done.
+**SSR is entirely possible with React and just requires a little diligence to get the work done.** I've written about [SSR](https://remysharp.com/2016/12/07/server-side-react) before, but [Jack Franklin has an excellent introduction](https://24ways.org/2015/universal-react/) to this and how to solve SSR with React.
 
-I've written about [SSR](https://remysharp.com/2016/12/07/server-side-react) before, but [Jack Franklin has an excellent introduction](https://24ways.org/2015/universal-react/) to this and how to solve SSR with React.
+More recently [Next.js](https://github.com/zeit/next.js/) has come onto the scene which embraces SSR at it's core and takes the React framework to make "universal" JavaScript out of the box (universal being JS that can be run on both the server and the browser). It's a small mind shift when it comes to routing and directory structure, but it's frighteningly straightforward to follow a few of the examples from the [documentation](https://github.com/zeit/next.js/blob/master/readme.md) to get a SSR React application up and running.
 
-More recently [Next.js](https://github.com/zeit/next.js/) came on the scene which embraces SSR and takes the React framework and makes it universal JavaScript out of the box. It's a small mind shift when it comes to routing and directory structure, but it's frighteningly straightforward to follow a few of the examples on the web site to get a SSR React application up and running.
+The Next.js Github repo includes a [great deal of examples](https://github.com/zeit/next.js/tree/master/examples/) that cover different uses too, and in addition I've recently completed a project for [Brad Frost](http://bradfrost.com/) that uses Next.js to deliver the application.
 
-- https://remy-next-demo.glitch.me/
-- https://glitch.com/edit/#!/remy-next-demo?path=pages/index.js:3:1
+Below is an incredibly small demo of a web site that only prints the number of times the page has been loaded locally. It uses React and Next.js together, and importantly, to read the querystring from the initial request, Next provides a special `getInitialProps` method which is used to populate the component's properties.
 
-```nohighlight
-app
-├── package.json
-├── pages
-│   └── index.js
-└── static
+```js
+// filename: pages/count.js
+import { Component } from 'react';
+import Link from 'next/link';
+
+class Count extends Component {
+  // getInitialProps allows my component to read the query string (amongst other properties)
+  // this function will run for the very first time on the server when the user requests
+  // this page (/count).
+  static getInitialProps({ query }) {
+    const { count = 0 } = query;
+
+    // the object I return will be passed to my component as `props`, so now the props.count
+    // property will be the value of the querystring.count (or zero as I am defaulting the value)
+    return { count };
+  }
+
+  constructor(props) {
+    super(props);
+
+    // inside the component, I'm actually using a state value, so that it'll change every time
+    // the component recieves an update - but will *always* reset back to the query string
+    // value set in `getInitialProps` on a full server load
+    this.state = { count: parseInt(props.count || 1, 10) };
+  }
+
+  // this handler fires when the user clicks on the <Link> element that I rendered, which
+  // is my chance to either read the count from props - which would have been re-loaded in
+  // `getInitialProps` in a client side load, or if it's not present, we'll increment the
+  // state value
+  componentWillReceiveProps(nextProps) {
+    this.setState({ count: parseInt(nextProps.count || this.state.count + 1, 10) })
+  }
+
+  render() {
+    const { count } = this.state;
+
+    // important to note: I am wrapping my <a> elements in a <Link> element. This will
+    // "enhance" the anchor so that it can load the page locally, without the round trip
+    // to the server.
+    return (
+      <div>
+        <p>This page has been locally <Link href={`/count`}><a>loaded</a></Link> {count} {count > 1 ? 'times' : 'time'}.</p>
+        <p>To manually change the number, use the query string: <Link href={`/count?count=${count + 1 }`}><a>?count={ count + 1 }</a></Link></p>
+      </div>
+    );
+  }
+}
+
+export default Count;
 ```
+
+Next provides a great deal of hidden magic, including JSX support without having to include the react module, but also handles the routing (based on the `pages` directory) and all the rendering. Here's a [Glitch that you can remix](https://glitch.com/edit/#!/remy-next-demo?path=pages/index.js:3:1) and have a play around with too.
+
+A quick proof of concept can be seen using `curl` and scrapping the `p` element (aside: [scrape](https://www.npmjs.com/@remy/scrape) is a custom tool I wrote):
 
 ```bash
-$ curl https://remy-next-demo.glitch.me/ | scrape p
-&lt;p data-reactid="2"&gt;Welcome to next.js!&lt;/p&gt;
+$ curl https://remy-next-demo.glitch.me/count\?count\=10 | scrape p --text
+This page has been locally loaded 10 times.
+To manually change the number, use the query string: ?count=11
 ```
 
-## Trade offs
+This shows that the server isn't just sending an empty `body` tag and indeed rendering on the server fist.
+
+**Server side support does come at a price, but is not particularly harder than the client side react logic. Using Next it comes for free, but (again) at the price of a much higher abstraction.**
+
+## 😟 Trade offs
+
+There's a handful of trade offs that I've personally noticed or I bump into regularly. The first, and will affect ever author using a library or framework to some level of degree: _abstraction_.
+
+I remember when I was starting out with jQuery (pre 1.0) and I'd often refer to the result of the `foo = $('div')` expression as "an array-like object". I knew that I could access `foo[0]` and it would give me the first element, like an array, and I could access `foo.length`, like an array, but it wasn't an array.
+
+It was only until I had read through and understood a decent portion of jQuery's source code did I understand that it was borrowing the array `push` method to push elements into an object. Or why modifying `jQuery.fn.plugin = bar` would upgrade _all_ jQuery instances.
 
 - Abstraction
 - Stacktraces
 - Scaffolding - as a one person shop, this comes off as slightly tedious having to create a container, then a component, but I can see the benefit when sharing code with others, specifically: having a shared dialect as to how code is structured and arranged
 - A perceived forced structure, "finding the react way of doing things" - though I suspect all frameworks suffer from this, and there's some degree in which you can bend the rules
 
-## Wins
+## 😍 Wins
 
+- No more global, required a (positive) change in mental modelling of JavaScript
 - Redux
 - Structure
 
-
+There's a huge ecosystem around React which means there's going to be more wins to be found. One of the next items I'd like to try out [Storybook](https://github.com/kadirahq/react-storybook) which promises to let me build and design components in isolation (whereas before I was putting them individually into test pages).
 
 
 
