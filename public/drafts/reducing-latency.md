@@ -74,6 +74,36 @@ sudo apt-get update
 sudo apt-get install nginx=1.11.* -y
 ```
 
+## Problems
 
+- Need to put monitoring in place for **all** systems, not just the domain (I'm using updown.io but thankfully it requests from different locations so it hits different individual servers)
 
+With Docker and Dokku in particular, I kept leaving old unused containers laying around, and since I also used the default 8gb AWS drive, it would run out of space every few months, and not all at the same time. The error typically picked up by updown.io as a 500.
 
+Running out of diskspace also meant that the `dokku cleanup` command would fail entirely with a rather obtuse error:
+
+```bash
+$ ssh dokku@dokku.us1 cleanup
+/home/dokku/.basher/bash: main: command not found
+Access denied
+```
+
+This was because it didn't have diskspace to actually run the command 🤷‍
+
+Potential solutions:
+
+1. Add external drive (100gb) to defer the problem
+2. Auto-cleanup on deploy which combined would do the trick, since 8gb really isn't much space.
+
+Good resource for cleanup (via cronjob?)
+
+```bash
+# https://github.com/spotify/docker-gc#running-as-a-docker-container
+$ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker-gc:/var/lib/docker-gc -v /etc:/etc samsaffron/docker-gc
+```
+
+Also worth running `sudo apt-get autoremove` on default ubuntu installations because there's about 2gb of `src` files taking up space that we can recover.
+
+---
+
+Potential issue if the machine restarts: https://github.com/dokku/dokku/issues/2403 - docker IPs will be lost and need to be restored.

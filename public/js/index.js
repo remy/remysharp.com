@@ -9,30 +9,9 @@ $('code.language-bash, code.language-sh').each(function () {
   var el = this;
   el.innerHTML = el.textContent
     .split('\n') // break into individual lines
-    .map(function (line) { return line.replace(/^\$ /, prompt) })
+    .map(function (line) { return line.replace(/^\$ /, prompt); })
     .join('\n'); // join the lines back up
 });
-
-// function permalink(){
-//   'use strict';
-//   var $ = document.querySelectorAll.bind(document);
-
-//   var anchor = document.createElement('a');
-//   anchor.className = 'anchor';
-//   anchor.innerHTML = '<span class="permalink"></span>';
-
-//   [].forEach.call($('h1,h2,h3,h4,h5,h6'), function (el) {
-//     if (el.id) {
-//       var clone = anchor.cloneNode(true);
-//       clone.href = '#' + el.id;
-//       el.insertBefore(clone, el.firstChild);
-//     }
-//   });
-// }
-
-// if (document.querySelector && Function.prototype.bind) {
-//   permalink();
-// }
 
 function loadDisqus() {
   var dsq = document.createElement('script');
@@ -48,7 +27,7 @@ function findTop(obj) {
   var curtop = 0;
   if (obj.offsetParent) {
     do {
-        curtop += obj.offsetTop;
+      curtop += obj.offsetTop;
     } while (obj = obj.offsetParent); // jshint ignore:line
     return curtop;
   }
@@ -155,3 +134,31 @@ if ($edit.length) {
 
 hljs.initHighlightingOnLoad();
 $('.post').fitVids();
+
+$('.runnable').each(function () {
+  var button = $('<button class="button">run</button>');
+  var pre = this;
+  var iframe = null;
+  $(this).after(button);
+  var running = false;
+  button.on('click', function () {
+    // dear past Remy: why do you mix jQuery with vanilla DOM scripting?
+    // Well…because vanilla is habbit, jQuery is just here as a helper.
+    var code = pre.innerText;
+    if (iframe || running) {
+      iframe.parentNode.removeChild(iframe);
+    }
+    if (running) {
+      button.text('run');
+      iframe = null;
+      running = false;
+      return;
+    }
+    running = true;
+    button.text('stop');
+    iframe = document.createElement('iframe');
+    iframe.className = 'runnable-frame';
+    document.body.appendChild(iframe);
+    iframe.contentWindow.eval(code);
+  });
+});

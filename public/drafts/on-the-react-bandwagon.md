@@ -149,18 +149,27 @@ This shows that the server isn't just sending an empty `body` tag and indeed ren
 
 **Server side support does come at a price, but is not particularly harder than the client side react logic. Using Next it comes for free, but (again) at the price of a much higher abstraction.**
 
-## 😟 Trade offs
+## 😟 Overcoming trade-offs
 
-There's a handful of trade offs that I've personally noticed or I bump into regularly. The first, and will affect ever author using a library or framework to some level of degree: _abstraction_.
+There's a handful of trade-offs that I've personally noticed or I bump into regularly. The first, and will affect ever author using a library or framework to some level of degree: _abstraction_.
+
+### Abstractions everywhere
 
 I remember when I was starting out with jQuery (pre 1.0) and I'd often refer to the result of the `foo = $('div')` expression as "an array-like object". I knew that I could access `foo[0]` and it would give me the first element, like an array, and I could access `foo.length`, like an array, but it wasn't an array.
 
 It was only until I had read through and understood a decent portion of jQuery's source code did I understand that it was borrowing the array `push` method to push elements into an object. Or why modifying `jQuery.fn.plugin = bar` would upgrade _all_ jQuery instances.
 
-- Abstraction
-- Stacktraces
-- Scaffolding - as a one person shop, this comes off as slightly tedious having to create a container, then a component, but I can see the benefit when sharing code with others, specifically: having a shared dialect as to how code is structured and arranged
-- A perceived forced structure, "finding the react way of doing things" - though I suspect all frameworks suffer from this, and there's some degree in which you can bend the rules
+Abstraction are everywhere, so I believe you either have to accept that you don't fully understand what's going on under the hood (this is how I feel about Next.js right now, because I've not reviewed any of the source), or you do a little research to understand how the fundamentals work.
+
+For me, reading [this post](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome) was an excellent resource. Also some reading or videos (sorry, no good links) about the Virtual DOM helps a great deal.
+
+### What stacktraces?
+
+### All the scaffolding
+
+As a one person shop, this comes off as slightly tedious having to create a container, then a component, but I can see the benefit when sharing code with others, specifically: having a shared dialect as to how code is structured and arranged
+
+A perceived forced structure, "finding the react way of doing things" - though I suspect all frameworks suffer from this, and there's some degree in which you can bend the rules
 
 ## 😍 Wins
 
