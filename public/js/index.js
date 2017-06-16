@@ -135,6 +135,7 @@ if ($edit.length) {
 hljs.initHighlightingOnLoad();
 $('.post').fitVids();
 
+// sorry, knarly and lazy code, but it does the job.
 $('.runnable').each(function () {
   var button = $('<button class="button">run</button>');
   var pre = this;

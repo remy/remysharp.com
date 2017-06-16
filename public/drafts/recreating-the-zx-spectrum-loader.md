@@ -112,7 +112,7 @@ Note that the value isn't perfect, but we'll come onto this later on. That's the
 
 ## Collecting raw binary from images
 
-This part is competitively straight forward. The image would be provided in two ways: a user would submit their own image, or we would use a stock image preloaded in the DOM.
+This part is respectively straight forward. The image would be provided in two ways: a user would submit their own image, or we would use a stock image preloaded in the DOM.
 
 If I'm using the reloaded image in the DOM, I'd first need to extract the blob data for the image which has to actually go via a `canvas` element:
 
@@ -181,7 +181,6 @@ for (let i = 0; i &lt; bufferSize; i++) {
 
 const whiteNoise = audioCtx.createBufferSource();
 whiteNoise.buffer = buffer;
-whiteNoise.loop = true;
 whiteNoise.start();
 whiteNoise.connect(audioCtx.destination);</code></pre>
 
@@ -202,3 +201,25 @@ Importantly, it's the width of the sound, and not the level (amplitude) that det
 
 The ZX spectrum CPU would run at 3.5Mhz, which means a single clock pulse is performed in 0.244ms. This is also known as a "T-state". A `1` bit is
 
+## Talking points
+
+1. New autofocus cameras being hard to replicate old techniques
+2. The spectrum loader
+3. What is it (generally)?
+~4. Why is it important to me personally?~
+5. The sounds and breaking them down
+6. Starting simple: the pilot tone (855Hz square)
+7. Generating the binary for animate to render into sound
+8. Generating noise
+9. Generating junk noise - not really having an idea
+10. Pulse widths of `0`s and `1`s
+~11. Understanding a pulse's relation to a wave form~
+12. Maths, circles and sine waves and how they're related to sound
+13. Hertz and sample rates
+14. T-states, 3.5MHz clock speeds and binary
+15. Generating the right wave form
+16. Tape loading is actually a stream (scripting an audio node)
+17. Visualising using the analyser node
+18. Rotating bar examples into loading lines
+19. Optimising the paint during audio generation
+20. Bits, not bars - painting fake pixels

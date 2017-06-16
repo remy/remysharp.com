@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>sine wave</title>
+  <style>
+  html, body {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+/*     background: #000; */
+  }
+
+  input[type="range"] {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  button {
+
+  }
+
+  canvas {
+    border: 0px solid #666;
+    display: block;
+  }
+
+  .button {
+    background: #2196F3;
+    text-decoration: none;
+    margin: 0 auto;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    border: 0;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  div {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  #rate {
+    display: block;
+  }
+  </style>
+</head>
+<body>
+<canvas id="timer"></canvas>
+<div>
+  <button class="button">toggle sound</button>
+  <input id="freq" type="range" min="1" max="900" value="1">
+</div>
+  <input id="rate" type="range" min="-1" max="1" value="0" step="0.01">
+<canvas id="audio"></canvas>
+<script src="wave2.js"></script>
