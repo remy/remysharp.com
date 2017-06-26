@@ -24,6 +24,7 @@ rate.oninput = () => {
 const ui = { freq: parseInt(slider.value, 10), rate: parseInt(rate.value, 10) };
 
 const RATE = 60;
+const ADJUST = 0.25; // smaller makes our chart wider
 
 ctx2.lineWidth = 1;
 ctx2.lineCap = 'round';
@@ -34,9 +35,12 @@ if (!ctx2.setLineDash) {
 }
 
 
-const generateSample = (sampleNumber, method = 'sin') => {
-  const sampleTime = sampleNumber / RATE;
-  const sampleAngle = sampleTime * 2 * Math.PI * ui.freq;
+const generateSample = ({ degree, method = 'sin', debug = false }) => {
+  const sampleTime = degree / RATE;
+  const sampleAngle = sampleTime * ADJUST *  Math.PI * ui.freq;
+  if (debug) {
+    console.log(sampleAngle);
+  }
   return Math[method](sampleAngle);
 };
 
@@ -46,83 +50,6 @@ var H2 = H/2;
 var half = H2 * .9; // amplitude
 var padLeft = H;
 var lastTime = Date.now();
-
-function draw() {
-  requestAnimationFrame(draw);
-
-  // avoid drawing if you don't need to
-  if (last === ui.freq) {
-//     return;
-  }
-
-  last = ui.freq;
-
-
-  ctx.strokeStyle = '#000';
-  ctx.fillStyle = '#00BCD4';
-  ctx.save();
-
-  ctx.clearRect(0, 0, W, H);
-
-  ctx.lineWidth = 2;
-
-  // draw reference circle
-  ctx.beginPath();
-  ctx.arc(H2, H2, half, 0, Math.PI * 2, true);
-  ctx.closePath();
-  ctx.stroke();
-
-  // draw line from centre to edge
-  ctx.beginPath();
-
-  ctx.moveTo(H2, H2);
-
-  // use this to double check the loop speed
-  // if (generateSample(degree, 'cos') === 1) {
-  //   lastTime = Date.now();
-  // }
-
-  const x = generateSample(degree) * half; // sin for X
-  const y = generateSample(degree, 'cos') * half; // cos for Y
-
-  ctx.lineTo(H2 + x, H2 + y);
-
-  ctx.strokeStyle = 'red';
-  ctx.stroke();
-  ctx.setLineDash([2,3]);
-  ctx.beginPath();
-  ctx.moveTo(H2 + x, H2 + y);
-  ctx.lineTo(padLeft, H2 + y);
-  ctx.stroke();
-
-  // draw sine wave
-  ctx.strokeStyle = '#000';
-  ctx.lineWidth = 2;
-  ctx.setLineDash([0]);
-  ctx.beginPath();
-  for (let i = 0; i < (W - padLeft); i++) {
-    const v = generateSample(degree - i, 'cos') * half;
-    ctx.lineTo(padLeft + i, H2 + v);
-  }
-
-  ctx.stroke();
-
-  // text
-  ctx.fillText(`${ui.freq}Hz`, padLeft, 24);
-
-  // zero marker
-  ctx.beginPath();
-  ctx.lineWidth = 1;
-  ctx.strokeStyle = 'rgba(188,188,188,.4)';
-  ctx.moveTo(padLeft, H2);
-  ctx.lineTo(W, H2);
-  ctx.stroke();
-  ctx.closePath();
-
-  ctx.restore();
-
-  degree++;
-}
 
 const audioCtx = new window.AudioContext();
 const analyser = audioCtx.createAnalyser();
@@ -199,20 +126,21 @@ function drawAudio() {
 
 }
 
-let t = 0;
-function drawReference(ctx, degree) {
-//   degree;
-  let original = degree;
-  degree = (degree) * (180 / Math.PI); // + t;
-  t++;
+let lastDegree = 0;
+let delta = 0;
+function drawReference(ctx, pos) {
+  delta += lastDegree - pos;
+  lastDegree = pos;
+  const degree = (pos + 1) * RATE / ADJUST; // + t;
+
   ctx.strokeStyle = '#000';
   ctx.fillStyle = '#00BCD4';
 
   ctx.clearRect(0, 0, W, H);
 
   // x, y on the circle for this degree
-  const x = generateSample(degree, 'cos') * half;
-  const y = generateSample(degree, 'sin') * half;
+  const x = generateSample({ degree, method: 'cos'}) * half;
+  const y = generateSample({ degree, method: 'sin'}) * half;
 
   ctx.lineWidth = 2;
 
@@ -242,14 +170,14 @@ function drawReference(ctx, degree) {
   ctx.strokeStyle = '#999';
   ctx.lineWidth = 2;
   for (let i = 0; i < (W - padLeft); i++) {
-    const v = generateSample(degree - i, 'sin') * half;
+    const v = generateSample({ degree: degree - i, method: 'sin'}) * half;
     ctx.lineTo(padLeft + i, H2 + v);
   }
 
   ctx.stroke();
 
   // text
-  ctx.fillText(`${ui.freq}Hz (${ui.rate}, ${original})`, padLeft, 24);
+  ctx.fillText(`${ui.freq}Hz`, padLeft, 24);
 
   // zero marker
   ctx.beginPath();

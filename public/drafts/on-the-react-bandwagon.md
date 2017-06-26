@@ -1,8 +1,10 @@
-# On the React bandwagon
+# Me on React: an old dog with new tricks
 
-Over the years I've bee consistently uninterested in using the new slew of frameworks and libraries that have been released. By no means is this because they're bad at all, but because my particular kind of work didn't require it. However, in the last 6 months I've made significant use of React and have even released a few client projects using it. So what's changed for me? As someone who's very much "pro vanilla" and bare-metal JavaScript, why have I changed my mind so significantly?
+Over the years I've been consistently uninterested in using the new slew of frameworks and libraries that have been released. By no means is this because they're bad at all, but because my particular kind of work didn't require it. However, in the last 6 months I've made significant use of React and have even released a few client projects using it. So what's changed for me? As someone who's very much "pro vanilla" and bare-metal JavaScript, why have I changed my mind so significantly?
 
-This post really isn't for those developers out there who use tools like React (Vue, Polymer, etc) daily, but for those old dogs like me that have been resisting (for whatever reason) the new technology.
+This post really isn't for those developers out there who use tools like React daily (or Vue, Polymer, etc), but for those old dogs like me that have been resisting (for whatever reason) the new technology.
+
+This post is written for an earlier version of me. It doesn't contain silver bullets or very much code, but hopefully it does put lay some of my previous fears to rest.
 
 <!--more-->
 
@@ -151,7 +153,7 @@ This shows that the server isn't just sending an empty `body` tag and indeed ren
 
 ## 😟 Overcoming trade-offs
 
-There's a handful of trade-offs that I've personally noticed or I bump into regularly. The first, and will affect ever author using a library or framework to some level of degree: _abstraction_.
+There's a handful of trade-offs that I've personally noticed or I bump into regularly. The first, that will affect every author using a library or framework to some level of degree: _abstraction_.
 
 ### Abstractions everywhere
 
@@ -159,11 +161,22 @@ I remember when I was starting out with jQuery (pre 1.0) and I'd often refer to 
 
 It was only until I had read through and understood a decent portion of jQuery's source code did I understand that it was borrowing the array `push` method to push elements into an object. Or why modifying `jQuery.fn.plugin = bar` would upgrade _all_ jQuery instances.
 
-Abstraction are everywhere, so I believe you either have to accept that you don't fully understand what's going on under the hood (this is how I feel about Next.js right now, because I've not reviewed any of the source), or you do a little research to understand how the fundamentals work.
+Abstraction is everywhere, so I believe you either have to accept that you don't fully understand what's going on under the hood (this is how I feel about Next.js right now, because I've not reviewed any of the source), or you do a little research to understand how the fundamentals work.
 
 For me, reading [this post](http://jlongster.com/Removing-User-Interface-Complexity,-or-Why-React-is-Awesome) was an excellent resource. Also some reading or videos (sorry, no good links) about the Virtual DOM helps a great deal.
 
 ### What stacktraces?
+
+I've had mixed experience with stacktraces and React. In fact, the current version of CRA comes with a really good error reporting system that gives me both the source trace (which is often useless to me), but also offers a mapped trace (showing my original code), and rather magically clicking on the line will jump open to Sublime in the file and line in question. All this is overlayed in the browser window and can be dismissed if I want to ignore the error and continue with the app.
+
+However, I've also experienced the version of reporting that's so abstracted from my code and original source that the only clues I have to the location of the error is by asking myself: what did I just change? Frustratingly Next.js (at present) suffers from this in my experience with it.
+
+I'd also say, if I didn't have CRA to build my initial setup, I'd likely be in a mess of abstracted stacktraces.
+
+Sadly I've had poor experience of error reporting in production. Sourcemaps seem to never really help me, and I'm left attempting to diagnose issues based on a hot mess of useless traces. I expect that this is another learning curve or tool or something that I need to discover.
+
+All in all, it's not absolutely terrible, but for me, that's entirely down to CRA.
+
 
 ### All the scaffolding
 
@@ -173,11 +186,36 @@ A perceived forced structure, "finding the react way of doing things" - though I
 
 ## 😍 Wins
 
-- No more global, required a (positive) change in mental modelling of JavaScript
-- Redux
-- Structure
+This article has a number of frustrations that I've overcome, though it's more to reassure you, my dear reader, that the landscape really isn't as hard as I had expected.
+
+However there's some *really* nice wins that come with React (and I honestly suspect this is the case with other frameworks and modern libraries available today).
+
+I've outlined a few and included why they're important to me.
+
+### Real components
+
+The component system that React relies on naturally puts your code into small modules designed to do a single thing. This approach has long been my aim in development, but always tricky to pull off consistently across projects. 
+
+Boilerplate aside, the most of the single files in projects I've worked on are about two scroll heights of my editor. What's important about this is that it makes debugging, testing and upgrading much easier since there's less moving parts in a single file.
+
+Components can pull in other components and so on and the architecture organises itself in a sensible and pleasant to work with way.
+
+### Structure
+
+Components lead nicely to structure of files. Another thing that I've personally found hard to consistently carry across different projects. Except with React. There's a number of patterns that dictate what a directory will be called (though not enforced). I recently completed a Next based project, and one of the most pleasing aspect as developer was the final directory structure. 
+
+Anything that helps me to create a consistent and replicable project structure is extremely valuable.
+
+### State machine
+
+One of the more popular state machine libraries for React is Redux (based around Flux, though I've personally never used Flux).
+
+I got hooked on the idea of state machines in software way back in my university days (the late 90s), then again with a talk by XXXXX. Then after 30 minutes of watching Dan XXXXX egghead (free) video tutorials on how Redux works, I was hooked 100%.
+
+I'm a huge fan of state machines because they make developing, debugging and testing a lot simpler. This is because instead of relying on any number and combinations of user input to set my application to a specific state, I'm able to manually set the state and inject it into my system to see how it behaves (and make any necessary changes there and then).
+
+---
 
 There's a huge ecosystem around React which means there's going to be more wins to be found. One of the next items I'd like to try out [Storybook](https://github.com/kadirahq/react-storybook) which promises to let me build and design components in isolation (whereas before I was putting them individually into test pages).
 
-
-
+Hopefully this was useful for one or two of you. Feel free to shoot me any questions you might have in the comments or as a blog post and I'll do my best to share my experience.

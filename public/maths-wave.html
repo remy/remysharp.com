@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>maths wave</title>
+  <style>
+  html, body {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+/*     background: #000; */
+  }
+
+  textarea {
+    font-family: monospace;
+    font-size: 1.6rem;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+  }
+
+  input[type="range"] {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  button {
+
+  }
+
+  canvas {
+    border: 0px solid #666;
+    display: block;
+  }
+
+  .button {
+    background: #2196F3;
+    text-decoration: none;
+    margin: 0 auto;
+    color: white;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    border: 0;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  div {
+    display: flex;
+    margin: 1rem 0;
+  }
+
+  #rate {
+    display: block;
+  }
+  </style>
+</head>
+<body>
+<div>
+  <textarea id="code">Math.sin(x) + (x % 5)</textarea>
+</div>
+<canvas id="audio"></canvas>
+<script src="maths-wave.js"></script>

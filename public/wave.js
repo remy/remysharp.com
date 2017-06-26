@@ -164,10 +164,10 @@ function drawAudio() {
 
       x += sliceWidth;
     }
-    
+
     ctx.stroke();
     ctx.fillText(`sin(x) ~ ${(1 - (dataArray[0]/128)).toFixed(4).padStart(7, ' ')}`, 20, 44);
-    
+
     ctx.fillText(`${bufferLength} samples`, 20, 24);
 
     // zero marker

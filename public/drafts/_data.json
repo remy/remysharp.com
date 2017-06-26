@@ -484,5 +484,25 @@
     "tags": [
       "web"
     ]
+  },
+  "opening-windows-again-part-1": {
+    "title": "Opening Windows again (part 1)",
+    "date": "2017-06-22 18:26:14",
+    "modified": "2017-06-22 18:26:14",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
+  },
+  "windows-10-bashing": {
+    "title": "Windows 10 BASHing",
+    "date": "2017-06-26 12:25:55",
+    "modified": "2017-06-26 12:25:55",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }
