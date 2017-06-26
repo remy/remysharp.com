@@ -4535,5 +4535,14 @@
       "business"
     ],
     "published": true
+  },
+  "windows-10-bashing": {
+    "title": "Windows 10 BASHing",
+    "date": "2017-06-26 12:55:52",
+    "modified": "2017-06-26 12:25:55",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }

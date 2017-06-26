@@ -12,13 +12,13 @@ On Windows, there's a few terminal options available:
 - Powershell - which as yet, I have zero experience with, but I have heard that if the shell is properly embraced, it can be better than bash due to the way data is shared (though, I may well be misquoting!).
 - cygwin - the "old" way to use bash commands on Windows. So far as I can tell, this isn't recommended any more, possibly because it was such a headache to get right - I've certainly burned through many hours in the past trying to install all the things to get this right
 - git-bash - which is probably the most sensible goto for a mixed bash and windows environment (more on this in a moment)
-- Ubuntu BASH subsystem - fully immersive unix environment, including the ability to install using `apt-get` which is great, but comes with it's own problems.
+- Ubuntu BASH subsystem - fully immersive Unix environment, including the ability to install using `apt-get` which is great, but comes with it's own problems.
 
 ![Window shells](/images/window-shells.png)
 
 ## Subsystem vs. shallow fake
 
-My two preferences here are going to be git-bash (the shallow fake) and the bash subsystem. What appeals to me most about the bash subsystem is that everything is there that I'd expect from a unix based system. I tried to run `wget` and (obviously) it wasn't installed. This was simple (to me) to fix as I'm already familiar with the installation process on unix: I can run `apt-get install wget` and now I've installed the program I wanted to run.
+My two preferences here are going to be git-bash (the shallow fake) and the bash subsystem. What appeals to me most about the bash subsystem is that everything is there that I'd expect from a unix based system. I tried to run `wget` and (obviously) it wasn't installed. This was simple (to me) to fix as I'm already familiar with the installation process on Unix: I can run `apt-get install wget` and now I've installed the program I wanted to run.
 
 Then I went ahead and installed `git` using the same installation process: still all good. But when I switched over to Visual Studio Code to do some development, I went to run a git clone, and it failed, reporting that git was missing.
 
