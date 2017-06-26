@@ -14,6 +14,8 @@ On Windows, there's a few terminal options available:
 - git-bash - which is probably the most sensible goto for a mixed bash and windows environment (more on this in a moment)
 - Ubuntu BASH subsystem - fully immersive unix environment, including the ability to install using `apt-get` which is great, but comes with it's own problems.
 
+![Window shells](/images/window-shells.png)
+
 ## Subsystem vs. shallow fake
 
 My two preferences here are going to be git-bash (the shallow fake) and the bash subsystem. What appeals to me most about the bash subsystem is that everything is there that I'd expect from a unix based system. I tried to run `wget` and (obviously) it wasn't installed. This was simple (to me) to fix as I'm already familiar with the installation process on unix: I can run `apt-get install wget` and now I've installed the program I wanted to run.
