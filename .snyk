@@ -1,0 +1,34 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.7.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:ms:20170412':
+    - harp > send > debug > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > send > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > debug > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > express-session > debug > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > finalhandler > debug > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > morgan > debug > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > serve-index > debug > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > connect-timeout > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > body-parser > debug > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > compression > debug > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > connect-timeout > debug > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > serve-static > send > debug > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > serve-static > send > ms:
+        patched: '2017-05-28T07:38:06.847Z'
+    - harp > connect > serve-favicon > ms:
+        patched: '2017-05-28T07:38:06.847Z'
