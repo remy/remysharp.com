@@ -166,6 +166,9 @@ blockquote, q {
   quotes: "" "";
 }
 
+[hidden] {
+  display: none;
+}
 
 html {
   font-size: 120%;
@@ -1102,7 +1105,9 @@ details summary:after {
     border-radius: 2px;
   }
 
-  input[type=email] {
+  input[type=email],
+  input[type=text] {
+    width: 100%;
     font-size: 16px;
     border: 1px solid @cta-color;
   }
@@ -1405,7 +1410,30 @@ a[title="simple-link"] {
   outline: none;
 }
 
+@import (less) "ck-style.less";
+
+#subscribe-form {
+  .ck_opt_in_prompt {
+    display: block;
+    line-height: 20px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-left: 30px;
+  }
+
+  #optIn {
+    float: left;
+    height: auto;
+  }
+}
+
 .ck_form_container.ck_inline {
+  .ck_guarantee {
+    line-height: 20px;
+    margin-top: 10px;
+    opacity: 0.8;
+  }
+
   .ck_form {
     box-shadow: none;
     border: 0;
@@ -1416,6 +1444,10 @@ a[title="simple-link"] {
 
     .ck_form_fields {
       padding-right: 0;
+    }
+
+    .ck_opt_in_prompt p {
+      margin-left: -7px;
     }
   }
   .ck_description img {
@@ -1429,6 +1461,7 @@ a[title="simple-link"] {
 
   .ck_powered_by {
     border: 0;
+    color: rgb(153, 153, 153);
 
     &:hover {
       padding: 0;
@@ -1438,7 +1471,6 @@ a[title="simple-link"] {
   }
 }
 
-@import (less) "ck-style.less";
 @import (less) "mq.less";
 // // code font highlight
 @import (inline) "zenburn.css";
