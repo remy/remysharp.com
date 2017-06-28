@@ -1,8 +1,9 @@
-# Smooth scroll with sticky nav
+# Smooth scroll with sticky nav (part 2/3)
 
-In the most recent release of [ffconf—the 2016 edition](https://2016.ffconf.org) (which, you should attend!), the day before the site was to be launched, I decided that I wanted to make the navigation sticky.
+In the [ffconf—the 2016 edition](https://2016.ffconf.org), the day before the site was to be launched, I decided that I wanted to make the navigation sticky.
 
-Then I wanted to make the scrolling smooth. Then I realised I'd opened a can of worms.
+[Part 1](/sticky-headers) was the deconstructing the original jQuery method down to regular JavaScript. Then I wanted to add scrolling smoothing. Then I realised I'd opened a can of worms.
+
 
 <!--more-->
 
@@ -120,7 +121,7 @@ One quirk, is that this can be seen when you scroll up manually. Though it's sma
 
 This is where things get hairy. There's a [very good smooth scroll vanilla JavaScript library](https://github.com/cferdinandi/smooth-scroll) that I found out about…a month too late. Admittedly though, this combination of requirements means that smooth-scroll would also fall foul.
 
-I decided to write my own, partly because I expected it to be straight forward, and partly because I'm naïve like that. That said, I wanted to use a simply tweening function, but I couldn't work it out, and opted for using [Soledad Penadés'](https://soledadpenades.com) [tween library](https://github.com/tweenjs/tween.js) (so yeah, I do non-vanilla sometimes too 😄).
+I decided to write my own, partly because I expected it to be straight forward, and partly because I'm naïve like that. That said, I wanted to use a simply tweening function, but I couldn't work it out, and opted for using [Soledad Penadés'](https://soledadpenades.com) [tween library](https://github.com/tweenjs/tween.js) (so not entirely vanilla…more [neapolitan](https://cloudup.com/cBT4qP7UAAw)).
 
 The code follows below with comments to document:
 
@@ -194,5 +195,6 @@ document.body.addEventListener('click', function (event) {
 });
 ```
 
-This does the trick (and if you're copying my code, you'll need the tweet.js library included in your scripts), but I also needed to add the `if (running)` since I'm starting the rAF call on every click, otherwise the rAF call keeps running and in this instance, it racks up every time I click.
+This does the trick (and if you're copying my code, you'll need the tween.js library included in your scripts), but I also needed to add the `if (running)` since I'm starting the rAF call on every click, otherwise the rAF call keeps running and in this instance, it racks up every time I click.
 
+In the final part, I'll throw away all my JavaScript and see how to redo this all with just CSS.

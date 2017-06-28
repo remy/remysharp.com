@@ -1,4 +1,4 @@
-# Sticky headers
+# Sticky headers (part 1/3)
 
 I have mixed feelings about sticky headers on web pages, but it annoys me more when the implementation causes scroll jank or contributes to it.
 
@@ -97,6 +97,7 @@ window.onscroll = function (event) {
 };
 
 function toggleHeaderFloating() {
+  // does cause layout/reflow: https://git.io/vQCMn
   if (window.scrollY > 80) {
     document.body.classList.add('sticky');
   } else {
@@ -104,3 +105,5 @@ function toggleHeaderFloating() {
   }
 }
 ```
+
+In the next part, I'll share how I combined this technique with smooth scrolling.
