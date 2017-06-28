@@ -93,7 +93,7 @@ Here's my (vanilla) version that I use on the [ffconf 2016 conference site](http
 var rafTimer;
 window.onscroll = function (event) {
   cancelAnimationFrame(rafTimer);
-  rafTimer = equestAnimationFrame(toggleHeaderFloating);
+  rafTimer = requestAnimationFrame(toggleHeaderFloating);
 };
 
 function toggleHeaderFloating() {
