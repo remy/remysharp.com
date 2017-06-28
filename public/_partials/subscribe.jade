@@ -1,9 +1,54 @@
-form(action="//remysharp.us13.list-manage.com/subscribe/post?u=c3ac6dd00a3b2269a6634560c&amp;id=56328dedcb" method="post" target="_blank" novalidate)#subscribe-form.row
-  .c2.s1
-    h4 Want more?
-    p Posts, web development learnings &amp; insights, exclusive workshop and training discounts and more, direct to your inbox.
-  .c2.s1
-    input(type="email" placeholder="Email Address" value="" name="EMAIL" class="required email").c1
-    input(type="submit" value="Subscribe today" name="subscribe" class="button").c1
-    div(style="position: absolute; left: -5000px;" aria-hidden="true")
-      input(type="text" name="b_c3ac6dd00a3b2269a6634560c_56328dedcb" tabindex="-1" value="")
+script(src="https://assets.convertkit.com/assets/CKJS4.js?v=21")
+.ck_form_container.ck_inline(data-ck-version="6")
+  .ck_form.ck_vertical_subscription_form
+    .ck_form_content.c2.s1
+      h4#want-more.ck_form_title Want more?
+      p Posts, web development learnings & insights, exclusive workshop and training discounts and more, direct to your inbox.
+
+    .ck_form_fields.c2.s1
+      #ck_success_msg(style="display:none;")
+        p Awesome, thanks so much!
+        p Now you'll need check your email to confirm your subscription.
+
+    <!--  Form starts here  -->
+    form#ck_subscribe_form.ck_subscribe_form(action="https://app.convertkit.com/landing_pages/231094/subscribe" data-remote="true")
+      input#ck_form_options(type="hidden" value="{&quot;form_style&quot;:&quot;full&quot;,&quot;converted_behavior&quot;:&quot;show&quot;}")
+      input#landing_page_id(type="hidden" name="id" value="231094")
+      input#ck_form_recaptcha(type="hidden" name="ck_form_recaptcha" value="")
+      .ck_errorArea
+        #ck_error_msg(style="display:none")
+          p There was an error submitting your subscription. Please try again.
+
+      .ck_control_group.ck_first_name_field_group
+        label.ck_label(for="ck_firstNameField") Your name
+        input#ck_firstNameField(type="text" name="first_name" class="ck_first_name")
+
+      .ck_control_group.ck_email_field_group
+        label.ck_label(for="ck_emailField") Your email address
+        input#ck_emailField(type="email" name="email" class="ck_email_address" required)
+
+      .ck_control_group.ck_captcha2_h_field_group.ck-captcha2-h(style="position: absolute !important;left: -999em !important;")
+        label.ck_label(for="ck_captcha2_h") We use this field to detect spam bots. If you fill this in, you will be marked as a spammer.
+        input#ck_captcha2_h.ck-captcha2-h(type="text" name="captcha2_h")
+
+        label.ck_checkbox
+          input#optIn.optIn.ck_course_opted(name="course_opted" type="checkbox" checked)
+          span.ck_opt_in_prompt
+            p I'd like to receive the free command line mini course.
+
+      button#ck_subscribe_button.subscribe_button.ck_subscribe_button.btn.fields
+        Subscribe
+      span.ck_guarantee I won't send you any spam, and you can unsubscribe at any time.
+        a.ck_powered_by(href="https://convertkit.com/?utm_campaign=poweredby") Powered by ConvertKit
+
+
+
+//- form(action="//remysharp.us13.list-manage.com/subscribe/post?u=c3ac6dd00a3b2269a6634560c&amp;id=56328dedcb" method="post" target="_blank" novalidate)#subscribe-form.row
+//-   .c2.s1
+//-     h4 Want more?
+//-     p Posts, web development learnings &amp; insights, exclusive workshop and training discounts and more, direct to your inbox.
+//-   .c2.s1
+//-     input(type="email" placeholder="Email Address" value="" name="EMAIL" class="required email").c1
+//-     input(type="submit" value="Subscribe today" name="subscribe" class="button").c1
+//-     div(style="position: absolute; left: -5000px;" aria-hidden="true")
+//-       input(type="text" name="b_c3ac6dd00a3b2269a6634560c_56328dedcb" tabindex="-1" value="")

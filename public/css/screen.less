@@ -1405,6 +1405,40 @@ a[title="simple-link"] {
   outline: none;
 }
 
+.ck_form_container.ck_inline {
+  .ck_form {
+    box-shadow: none;
+    border: 0;
+
+    .ck_form_content {
+      padding-left: 0;
+    }
+
+    .ck_form_fields {
+      padding-right: 0;
+    }
+  }
+  .ck_description img {
+    vertical-align: middle;
+  }
+
+  .ck_checkbox,
+  label {
+    width: 100%;
+  }
+
+  .ck_powered_by {
+    border: 0;
+
+    &:hover {
+      padding: 0;
+      outline: 0;
+      background: transparent;
+    }
+  }
+}
+
+@import (less) "ck-style.less";
 @import (less) "mq.less";
 // // code font highlight
 @import (inline) "zenburn.css";

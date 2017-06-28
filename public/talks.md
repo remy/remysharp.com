@@ -10,15 +10,15 @@
 <ul class="targetHighlight">
   <li id="2011_fotb">
     <h3>Flash on the Beach - Brighton, UK - 12-14 September</h3>
-    <p>Workshop &amp; Presentation: HTML5</p>    
-    <p>Event information: <a href="http://flashonthebeach.com/">FOTB</a><p>    
+    <p>Workshop &amp; Presentation: HTML5</p>
+    <p>Event information: <a href="http://flashonthebeach.com/">FOTB</a><p>
     <p>Presentation: <a href="/downloads/fotb.pdf">Where Flash isn't needed anymore</a> (<a href="http://www.slideshare.net/remy.sharp/html5-where-flash-isnt-needed-anymore">alt slideshare</a>)</p>
 
   </li>
   <li id="2011_updateconf">
     <h3>Updateconf - Brighton, UK - 6-8 September</h3>
     <p>Workshop (and tech beat): Mobile web development</p>
-    <p>Event information: <a href="http://updateconfig.com/">Updateconf</a><p>    
+    <p>Event information: <a href="http://updateconfig.com/">Updateconf</a><p>
   </li>
   <li id="2011_oscon">
     <h3>OSCON - Portland, USA - 25-29 Jully</h3>
@@ -65,20 +65,20 @@
   <li id="2010_lweb">
     <h3>London Web Meetup - London, United Kingdom - 19-Aug</h3>
   	<p>Presentation: Browsers with Wings: HTML5 APIs</p>
-  	<p>Event information: <a href="http://www.meetup.com/londonweb/calendar/13833468/">London Web Meetup</a></p>    
+  	<p>Event information: <a href="http://www.meetup.com/londonweb/calendar/13833468/">London Web Meetup</a></p>
   </li>
   <li id="2010_lgn">
     <h3>London Geek Night - London, United Kingdom - 1-July</h3>
   	<p>Presentation material: <a href="/downloads/lgn.zip">examples files</a></p>
-  	<p>Event information: <a href="http://londongeeknights.wetpaint.com/page/HTML5+-+Why+should+I+care">HTML5: Why should I care?</a></p>        
+  	<p>Event information: <a href="http://londongeeknights.wetpaint.com/page/HTML5+-+Why+should+I+care">HTML5: Why should I care?</a></p>
   </li>
-  
+
   <li id="2010_skillswap">
   	<h3>Skillswap - Brighton, United Kingdom - 30-June</h3>
   	<p>Presentation: <a href="/downloads/browsers-with-wings.pdf">Browsers with Wings: HTML5 APIs</a> (<a href="http://www.slideshare.net/remy.sharp/browsers-with-wings">alt slideshare</a>)</p>
-  	<p>Event information: <a href="http://skillswap.org/brighton/">Skillswap goes Turbocharging the Web</a></p>    
+  	<p>Event information: <a href="http://skillswap.org/brighton/">Skillswap goes Turbocharging the Web</a></p>
   </li>
-  
+
   <li id="2010_ndc">
   	<h3>Norwegian Developer Conference - Oslo, Norway - 16-17 June</h3>
   	<p>Presentation: <a href="/downloads/browsers-with-wings.pdf">Browsers with Wings: HTML5 APIs</a> (<a href="http://www.slideshare.net/remy.sharp/browsers-with-wings">alt slideshare</a>)</p>
