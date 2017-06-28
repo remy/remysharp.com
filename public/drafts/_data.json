@@ -275,16 +275,6 @@
       "web"
     ]
   },
-  "sticky-headers": {
-    "title": "Sticky headers (#1/3)",
-    "date": "2016-08-16 13:19:50",
-    "modified": "2016-08-17 11:04:26",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "web"
-    ]
-  },
   "the-bane-of-build-tools": {
     "title": "The bane of build tools",
     "date": "2016-09-17 12:39:01",
