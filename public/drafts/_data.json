@@ -265,16 +265,6 @@
       "web"
     ]
   },
-  "smooth-scroll-with-sticky-nav": {
-    "title": "Smooth scroll & sticky navigation (#2/3)",
-    "date": "2016-07-26 14:06:58",
-    "modified": "2016-07-27 13:54:32",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "web"
-    ]
-  },
   "the-bane-of-build-tools": {
     "title": "The bane of build tools",
     "date": "2016-09-17 12:39:01",

@@ -4553,5 +4553,14 @@
       "web"
     ],
     "published": true
+  },
+  "smooth-scroll-with-sticky-nav": {
+    "title": "Smooth scroll & sticky navigation (#2/3)",
+    "date": "2017-06-29 14:37:33",
+    "modified": "2016-07-27 13:54:32",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }
