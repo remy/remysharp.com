@@ -4,6 +4,10 @@ There's a huge number of web conferences and meetups now and although a code of 
 
 <!--more-->
 
+A short conversation on twitter with [Karolina Szczur, AKA @fox](https://twitter.com/fox) prompted me to think about how we can go beyond the copy/paste code of conduct that appears on conference web sites.
+
+In true form to my white-privileged'ness on, I had [jumped in](https://twitter.com/rem/status/881917313510932481) with "well, not all events…". After a little retrospective, I realised that maybe it would be useful to others to share what we do for ffconf. I'd the first to acknowledge it's far from complete or perfect, but if you're organising an event, perhaps this can help you.
+
 ![ffconf 2016 lanyard code of conduct](/images/codes-for-ffconf.jpg)
 
 ## Starting point
@@ -16,7 +20,7 @@ Our event has always stated that we follow a code of conduct at our events linki
 
 Let's be honest, the code of conduct document is like a "stay off the grass" sign. Sure, you weren't planning to walk on the grass, but it's there all the same. And no, it doesn't *stop* people from walking on the grass. The way we prevent those violations is to provide a good support system of education, to be vigilant, to protect and finally, if necessary, action against.
 
-## code of conduct is Supplementary
+## Code of conduct is supplementary
 
 Again, let's be honest: copying and pasting a code of conduct is not enough. It's a start, but it should, I think, be supplementary to your attendees security.
 
@@ -42,7 +46,7 @@ I've seen other events do the same, and when we open the event, along with the b
 
 ## Additional work
 
-There's a lot more that we could do, in sure. One specific item I'd like to add this year is "no photo please" lanyards. I've seen in a previous year that an individual was trying to hide their face from a picture, so (after it was already online) we removed the picture and cropped the individual out before reposting. Had they had some visual indicator, we would have known not to post the picture (and in truth, we removed the individual on the *assumption* that they didn't want their picture taken).
+There's a lot more that we could do, I'm sure. One specific item I'd like to add this year is "no photo please" lanyards. I've seen in a previous year that an individual was trying to hide their face from a picture, so (after it was already online) we removed the picture and cropped the individual out before reposting. Had they had some visual indicator, we would have known not to post the picture (and in truth, we removed the individual on the *assumption* that they didn't want their picture taken).
 
 From my perspective (again: white male), pictures serve as useful social media promotion. "Such-and-such was at this event, so they're probably an authority on X". However, I recently attended a talk where the speaker specifically *didn't* want their photo taken. The talk was inspiring and important, but it was only seeing it first hand, that I could see how this individual needed to protect their own safety by making it clear they didn't want pictures taken (possibly for fear of backlash on the internet, or worse, in their real day to day life).
 
@@ -68,10 +72,10 @@ The bottom line is that most events (that I attend in the web industry) are not 
 
 We've been fortunate (or unwitting?) in that we've had no reports of misconduct. I'm hyper aware that this doesn't mean it hasn't happened.
 
-On the other hand, we (Julie and myself) have had less than a handful of reports after the matter where individuals have felt unsafe (…unsafe isn't the word they used, and not quite right, but I hope you follow my sentiment).
+On the other hand, we (Julie and myself) have had a few small reports after the matter where individuals have felt unsafe (…unsafe isn't the word they used, and not quite right, but I hope you follow my sentiment).
 
 It's unfair to expect that those individuals *should* have reported the event at the time (or even that they wanted anything done). However, I have been keen to prevent those individuals that we were able to identify from returning to our event - but in truth there's no system, per se, to prevent them from buying tickets, it's something we would need to process by hand.
 
-I collect resources on handling these situations and ways to make events safer. If you want to expose yourself to more, I'd highly recommend following [Karolina Szczur AKA @fox]() and reading through some (if not all) of the posts I've [collected on pinboard](https://pinboard.in/u:rem/t:coc).
+I collect resources on handling these situations and ways to make events safer. If you want to expose yourself to more, I'd highly recommend following [Karolina Szczur](https://twitter.com/fox) and reading through some (if not all) of the posts I've [collected on pinboard](https://pinboard.in/u:rem/t:coc).
 
 If you have any reading recommendations or suggestions, I'd love for you to share in the comments, in your own blog post or via Twitter (or you can [email me](mail to:remy@leftlogic.com) if you prefer not to post publicly).
