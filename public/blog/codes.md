@@ -6,7 +6,7 @@ There's a huge number of web conferences and meetups now and although a code of 
 
 A short conversation on twitter with [Karolina Szczur, AKA @fox](https://twitter.com/fox) prompted me to think about how we can go beyond the copy/paste code of conduct that appears on conference web sites.
 
-In true form to my white-privileged'ness on, I had [jumped in](https://twitter.com/rem/status/881917313510932481) with "well, not all events…". After a little retrospective, I realised that maybe it would be useful to others to share what we do for ffconf. I'd the first to acknowledge it's far from complete or perfect, but if you're organising an event, perhaps this can help you.
+In true form to my white-privileged'ness, I had [jumped in](https://twitter.com/rem/status/881917313510932481) with "well, not all events…". After a little retrospective, I realised that maybe it would be useful to others to share what we do for ffconf. I'd the first to acknowledge it's far from complete or perfect, but if you're organising an event, perhaps this can help you.
 
 ![ffconf 2016 lanyard code of conduct](/images/codes-for-ffconf.jpg)
 
