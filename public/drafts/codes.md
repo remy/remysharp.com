@@ -10,6 +10,14 @@ In true form to my white-privileged'ness on, I had [jumped in](https://twitter.c
 
 ![ffconf 2016 lanyard code of conduct](/images/codes-for-ffconf.jpg)
 
+## Before we start: on whether there's a need
+
+I wanted to touch on this, because there's always individuals who feel that events shouldn't need a code of conduct. The code is not for those individuals, that's the first thing to say (and should be the last!). It's worth adding though, that many, many organised gatherings do include codes of conduct.
+
+Here's my [school's code](https://web.archive.org/web/20020331165059fw_/http://www.boundstone.w-sussex.sch.uk:80/schrules.htm) (applicable from 1990s). Here's (one of) [NASA's code of conducts](https://www.nasa.gov/sites/default/files/atoms/files/06_rmc2017_advisories.pdf), here's [Twin Peaks' code of conduct](https://www.twinpeaksfest.com/code-of-conduct), there's codes used in [many many](https://www.google.co.uk/#q=code+of+conduct) different areas. It just seems that it took until a few years ago for (majority) the web (events) industry to wake up to this normality.
+
+Codes of conduct, ethics and how individuals should conduct themselves, certainly in professional environments, has long been established.
+
 ## Starting point
 
 Some years ago, I lifted jsconf's code of conduct and put it on it's [own domain](http://confcodeofconduct.com) and allowed for [easy translations](https://github.com/confcodeofconduct/confcodeofconduct.com#translations).
@@ -22,7 +30,7 @@ Let's be honest, the code of conduct document is like a "stay off the grass" sig
 
 ## Code of conduct is supplementary
 
-Again, let's be honest: copying and pasting a code of conduct is not enough. It's a start, but it should, I think, be supplementary to your attendees security.
+Let's be honest: copying and pasting a code of conduct is not enough. It's a start, but it should, I think, be supplementary to your attendees security.
 
 We do a number of things and I wanted to list a few others that I've seen that would be worth considering adding.
 
@@ -76,6 +84,6 @@ On the other hand, we (Julie and myself) have had a few small reports after the 
 
 It's unfair to expect that those individuals *should* have reported the event at the time (or even that they wanted anything done). However, I have been keen to prevent those individuals that we were able to identify from returning to our event - but in truth there's no system, per se, to prevent them from buying tickets, it's something we would need to process by hand.
 
-I collect resources on handling these situations and ways to make events safer. If you want to expose yourself to more, I'd highly recommend following [Karolina Szczur](https://twitter.com/fox) and reading through some (if not all) of the posts I've [collected on pinboard](https://pinboard.in/u:rem/t:coc).
+I collect resources on handling these situations and ways to make events safer. If you want to expose yourself to more I'd recommend reading through some (if not all) of the posts I've [collected on pinboard](https://pinboard.in/u:rem/t:coc), and following the authors and advocates where possible.
 
 If you have any reading recommendations or suggestions, I'd love for you to share in the comments, in your own blog post or via Twitter (or you can [email me](mail to:remy@leftlogic.com) if you prefer not to post publicly).
