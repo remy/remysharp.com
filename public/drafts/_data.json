@@ -474,15 +474,5 @@
     "tags": [
       "web"
     ]
-  },
-  "a-new-space": {
-    "title": "A new space",
-    "date": "2017-07-08 11:19:19",
-    "modified": "2017-07-08 11:19:19",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "personal"
-    ]
   }
 }
