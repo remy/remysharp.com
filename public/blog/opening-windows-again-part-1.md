@@ -14,7 +14,7 @@ With everything I talk about here, please keep in mind that I'm comparing to my 
 
 Overall, the feel of the Surface Book is really quite nice (again, I'm comparing directly to my daily use of a Mac). It's beautifully designed and has already drawn a couple of "wow, that's nice" from friends and family just by seeing it on the worktop.
 
-The material is really nice too. It's like either a very lightweight metal or a study plastic. It seems like it might be cheap material looking at it closely, but it stands up well to touch and press. One particular thing I liked is that since this material *is* a matt plastic, it doesn't get oily in the way the metal surface of my MBP sometimes does on the trackpad and wrist support. A bit weird I admit, but maybe someone else has experienced this! :)
+The material is really nice too. It's like either a very lightweight metal or a sturdy plastic. It seems like it might be cheap material looking at it closely, but it stands up well to touch and press. One particular thing I liked is that since this material *is* a matte plastic, it doesn't get oily in the way the metal surface of my MBP sometimes does on the trackpad and wrist support. A bit weird I admit, but maybe someone else has experienced this! :)
 
 ## Weight and balance ⚖️
 
@@ -38,7 +38,7 @@ Normally there isn't much to say on the matter. It's a standard [fig 8 adapter](
 
 ## Keyboard ⌨️
 
-The keyboard, and keys are soft to touch and a pleasure to press. The keys are a light plastic, matt like texture, and don't come off cheap (which would be entirely possible with this kind of material).
+The keyboard, and keys are soft to touch and a pleasure to press. The keys are a light plastic, matte like texture, and don't come off cheap (which would be entirely possible with this kind of material).
 
 Going from the Mac to the Windows layout of keys there are a number of noticeable differences, most of which I can adjust fairly easily, i.e. swapping of the @ and the ", backticks and slash positions and copy/paste being in a slightly different location compared to the Mac.
 
