@@ -8,17 +8,17 @@ This first instalment will focus on the hardware and tactile aspects of the devi
 
 With everything I talk about here, please keep in mind that I'm comparing to my day-to-day usage of an [Apple MacBook Pro 2015](https://www.apple.com/macbook-pro/specs-2015/) spec'ed out to the max (most RAM I could buy, etc).
 
-![Surface pro close ups](/images/windows/surface-close-ups.jpg)
+![Surface book close ups](/images/windows/surface-close-ups.jpg)
 
 ## Aesthetics 💅
 
-Overall, the feel of the Surface Pro is really quite nice (again, I'm comparing directly to my daily use of a Mac). It's beautifully designed and has already drawn a couple of "wow, that's nice" from friends and family just by seeing it on the worktop.
+Overall, the feel of the Surface Book is really quite nice (again, I'm comparing directly to my daily use of a Mac). It's beautifully designed and has already drawn a couple of "wow, that's nice" from friends and family just by seeing it on the worktop.
 
 The material is really nice too. It's like either a very lightweight metal or a study plastic. It seems like it might be cheap material looking at it closely, but it stands up well to touch and press. One particular thing I liked is that since this material *is* a matt plastic, it doesn't get oily in the way the metal surface of my MBP sometimes does on the trackpad and wrist support. A bit weird I admit, but maybe someone else has experienced this! :)
 
 ## Weight and balance ⚖️
 
-The weight of the Surface Pro is decent. I think it's _slightly_ heavier than the MBP that I have (but I'm thinking perhaps 0.5lbs?).
+The weight of the Surface Book is decent. I think it's _slightly_ heavier than the MBP that I have (but I'm thinking perhaps 0.5lbs?).
 
 I watched a video comparing the screen-lifting technique compared to a Mac, and it hadn't crossed my mind at all but the screen on the Surface lifts perfectly well, leaving the keyboard seated. i.e. I wouldn't want to lift the screen only for the keyboard to follow up and me have to prise the screen and keys apart!
 
@@ -78,6 +78,8 @@ Again, I believe this might be limited to the device I have, but it's made me wa
 
 ## Overall 💪🚀
 
-A really nice bit of kit. Definitely strong in helping me feel confident that there's a life after Mac (which I'm so desperately seeking). I was asked why not look at a Linux machine recently via Twitter, and my response is simple: Apple's hardware aesthetic experience is top notch, and I'm used to that and don't want a step down. The macOS I couldn't care for, so I want to move to a device that is a pleasure to use. So far, the Surface Pro is doing a great job to compete for that title.
+A really nice bit of kit. Definitely strong in helping me feel confident that there's a life after Mac (which I'm so desperately seeking). I was asked why not look at a Linux machine recently via Twitter, and my response is simple: Apple's hardware aesthetic experience is top notch, and I'm used to that and don't want a step down. The macOS I couldn't care for, so I want to move to a device that is a pleasure to use. So far, the Surface Book is doing a great job to compete for that title.
 
 (The next Windows posts will be on the software side, ranging from regular apps to my development workflow).
+
+<div class="update"><strong>11 July 2017:</strong> mistakenly called the Surface Book a Pro.</div>
