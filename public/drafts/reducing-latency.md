@@ -102,8 +102,16 @@ Good resource for cleanup (via cronjob?)
 $ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker-gc:/var/lib/docker-gc -v /etc:/etc samsaffron/docker-gc
 ```
 
-Also worth running `sudo apt-get autoremove` on default ubuntu installations because there's about 2gb of `src` files taking up space that we can recover.
+⚠️ Also worth running `sudo apt-get autoremove` on default ubuntu installations because there's about 2gb of `src` files taking up space that we can recover.
 
 ---
 
 Potential issue if the machine restarts: https://github.com/dokku/dokku/issues/2403 - docker IPs will be lost and need to be restored.
+
+---
+
+Upgrading node:
+
+```
+$ sudo apt-get install --only-upgrade nodejs
+```
