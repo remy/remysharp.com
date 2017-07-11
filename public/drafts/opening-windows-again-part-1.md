@@ -8,6 +8,8 @@ This first instalment will focus on the hardware and tactile aspects of the devi
 
 With everything I talk about here, please keep in mind that I'm comparing to my day-to-day usage of an [Apple MacBook Pro 2015](https://www.apple.com/macbook-pro/specs-2015/) spec'ed out to the max (most RAM I could buy, etc).
 
+![Surface pro close ups](/images/windows/surface-close-ups.jpg)
+
 ## Aesthetics 💅
 
 Overall, the feel of the Surface Pro is really quite nice (again, I'm comparing directly to my daily use of a Mac). It's beautifully designed and has already drawn a couple of "wow, that's nice" from friends and family just by seeing it on the worktop.
@@ -54,7 +56,9 @@ The screen on the Surface is lovely and crisp to look at. I'm assuming it's reti
 
 ## Stylus...the pen 🎨
 
-I didn't realise the Surface came with the stylus, but I'm so glad it does. It's _really_ fun to use. From the first day I really had a decent play with the Surface, the kids had a turn with the stylus and the screen and it seemed really natural to draw with the pen.
+I didn't realise the Surface came with the stylus, but I'm so glad it does. It's _really_ fun to use. From the first day I really had a decent play with the Surface, the kids had a turn with the stylus and the screen and it seemed really natural to draw with the pen (and fingers).
+
+![My daughter drawing with the surface](/images/windows/seren-touch.jpg)
 
 I've always been wary of extra fingers or hands causing interference, but that's not an issue at all. Combined with touch, the screen really comes to live and is amazingly simple to interact with.
 
