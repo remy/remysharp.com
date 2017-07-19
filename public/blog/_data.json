@@ -4598,5 +4598,15 @@
       "web"
     ],
     "published": true
+  },
+  "digging-deeper": {
+    "title": "Digging Deeper",
+    "date": "2017-07-19 14:07:50",
+    "image": "/images/dig-deeper.jpg",
+    "modified": "2017-07-19 14:05:41",
+    "tags": [
+      "personal"
+    ],
+    "published": true
   }
 }
