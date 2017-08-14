@@ -89,7 +89,7 @@ To me, a growing oldie on the web, even the phrase "server side render" makes no
 
 More recently [Next.js](https://github.com/zeit/next.js/) has come onto the scene which embraces SSR at it's core and takes the React framework to make "universal" JavaScript out of the box (universal being JS that can be run on both the server and the browser). It's a small mind shift when it comes to routing and directory structure, but it's frighteningly straightforward to follow a few of the examples from the [documentation](https://github.com/zeit/next.js/blob/master/readme.md) to get a SSR React application up and running.
 
-_Related: I've started a [video course on Next.js](https://app.convertkit.com/landing_pages/239554?v=6) that you can sign up to find out more about._
+*Related: I've started a [video course on Next.js](https://app.convertkit.com/landing_pages/239554?v=6) that you can sign up to find out more about.*
 
 The Next.js Github repo includes a [great deal of examples](https://github.com/zeit/next.js/tree/master/examples/) that cover different uses too, and in addition I completed a project for [Brad Frost](http://bradfrost.com/) that uses Next.js to deliver the application earlier this year.
 
