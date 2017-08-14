@@ -1,8 +1,8 @@
 # Me on React: an old dog with new tricks
 
-Over the years I've been consistently uninterested in using the new slew of frameworks and libraries that have been released. By no means is this because they're bad at all, but because my particular kind of work didn't require it. However, in the last 6 months I've made significant use of React and have even released a few client projects using it. So what's changed for me? As someone who's very much "pro vanilla" and bare-metal JavaScript, why have I changed my mind so significantly?
+Over the years I've been consistently uninterested in using the new slew of frameworks and libraries that have been released. By no means is this because they're bad at all, but because my particular kind of work didn't require it. However, in the last 12 months I've made significant use of React and have even released a few client projects using it. So what's changed for me? As someone who's very much "pro vanilla" and bare-metal JavaScript, why have I changed my mind so significantly?
 
-This post really isn't for those developers out there who use tools like React daily (or Vue, Polymer, etc), but for those old dogs like me that have been resisting (for whatever reason) the new technology.
+This post really isn't for those developers out there who use tools like React daily (or Vue, Polymer, etc), but for those old dogs like me that have been resisting (for whatever reason) the new technology. Probably the old dog [standardistas](https://en.wiktionary.org/wiki/standardista).
 
 This post is written for an earlier version of me. It doesn't contain silver bullets or very much code, but hopefully it does put lay some of my previous fears to rest.
 
@@ -19,6 +19,14 @@ So the thought of having to add some new build process to my current workflow wa
 **Enter Create React App** (henceforth know as CRA in this post). In my very first foray I tried to use CRA but got overwhelmed by the generated files, directory and config, so I aborted. Thankfully, I revisited it again a few months later, either armed with a little familiarity with React components or perhaps the config was hidden, but the big, nay *huge*, benefit was that **the configuration is entirely hidden** (though you _can_ eject CRA and manually tune the configuration).
 
 **It meant that I could get up and running with zero configuration and I could write code and see results.**
+
+### 😐🖍️ A side note about styled components
+
+As you might have guessed from my emoji title: I'm not sold. I _think_ I understand the point of styled components, in that it will allow for the browser delivered code to include only the CSS required, but I'm still a little long in the tooth for this modern method.
+
+In truth though, I don't know enough about the ideas behind this approach to adopt it myself. I _feel_ (read: my gut thinks, and very little else) that styles should be kept in stylesheets and not be modified at the wim of every component that uses them. i.e. if a button style is used, it shouldn't be changed at the component level, but changed across the board of the code to consistently affect every button element. Or if it's a single "tweak" required, then it's still needed at the high level of globally accessible styles, as I've learnt over the years: it's never _just once_.
+
+Bottom line though: I don't have a strong reason to use these, and I'm not entirely sure it benefits the standardista inside of me.
 
 ## 😭♻️ Reloading and losing state
 
@@ -81,7 +89,9 @@ To me, a growing oldie on the web, even the phrase "server side render" makes no
 
 More recently [Next.js](https://github.com/zeit/next.js/) has come onto the scene which embraces SSR at it's core and takes the React framework to make "universal" JavaScript out of the box (universal being JS that can be run on both the server and the browser). It's a small mind shift when it comes to routing and directory structure, but it's frighteningly straightforward to follow a few of the examples from the [documentation](https://github.com/zeit/next.js/blob/master/readme.md) to get a SSR React application up and running.
 
-The Next.js Github repo includes a [great deal of examples](https://github.com/zeit/next.js/tree/master/examples/) that cover different uses too, and in addition I've recently completed a project for [Brad Frost](http://bradfrost.com/) that uses Next.js to deliver the application.
+_Related: I've started a [video course on Next.js](https://app.convertkit.com/landing_pages/239554?v=6) that you can sign up to find out more about._
+
+The Next.js Github repo includes a [great deal of examples](https://github.com/zeit/next.js/tree/master/examples/) that cover different uses too, and in addition I completed a project for [Brad Frost](http://bradfrost.com/) that uses Next.js to deliver the application earlier this year.
 
 Below is an incredibly small demo of a web site that only prints the number of times the page has been loaded locally. It uses React and Next.js together, and importantly, to read the querystring from the initial request, Next provides a special `getInitialProps` method which is used to populate the component's properties.
 
@@ -167,7 +177,7 @@ For me, reading [this post](http://jlongster.com/Removing-User-Interface-Complex
 
 ### What stacktraces?
 
-I've had mixed experience with stacktraces and React. In fact, the current version of CRA comes with a really good error reporting system that gives me both the source trace (which is often useless to me), but also offers a mapped trace (showing my original code), and rather magically clicking on the line will jump open to Sublime in the file and line in question. All this is overlayed in the browser window and can be dismissed if I want to ignore the error and continue with the app.
+I've had mixed experience with stacktraces and React. In fact, the current version of CRA comes with a really good error reporting system that gives me both the source trace (which is often useless to me), but also offers a mapped trace (showing my original code), and rather magically clicking on the line will jump open to Sublime in the file and line in question. All this is overlaid in the browser window and can be dismissed if I want to ignore the error and continue with the app.
 
 However, I've also experienced the version of reporting that's so abstracted from my code and original source that the only clues I have to the location of the error is by asking myself: what did I just change? Frustratingly Next.js (at present) suffers from this in my experience with it.
 
@@ -176,7 +186,6 @@ I'd also say, if I didn't have CRA to build my initial setup, I'd likely be in a
 Sadly I've had poor experience of error reporting in production. Sourcemaps seem to never really help me, and I'm left attempting to diagnose issues based on a hot mess of useless traces. I expect that this is another learning curve or tool or something that I need to discover.
 
 All in all, it's not absolutely terrible, but for me, that's entirely down to CRA.
-
 
 ### All the scaffolding
 
@@ -194,7 +203,7 @@ I've outlined a few and included why they're important to me.
 
 ### Real components
 
-The component system that React relies on naturally puts your code into small modules designed to do a single thing. This approach has long been my aim in development, but always tricky to pull off consistently across projects. 
+The component system that React relies on naturally puts your code into small modules designed to do a single thing. This approach has long been my aim in development, but always tricky to pull off consistently across projects.
 
 Boilerplate aside, the most of the single files in projects I've worked on are about two scroll heights of my editor. What's important about this is that it makes debugging, testing and upgrading much easier since there's less moving parts in a single file.
 
@@ -202,7 +211,7 @@ Components can pull in other components and so on and the architecture organises
 
 ### Structure
 
-Components lead nicely to structure of files. Another thing that I've personally found hard to consistently carry across different projects. Except with React. There's a number of patterns that dictate what a directory will be called (though not enforced). I recently completed a Next based project, and one of the most pleasing aspect as developer was the final directory structure. 
+Components lead nicely to structure of files. Another thing that I've personally found hard to consistently carry across different projects. Except with React. There's a number of patterns that dictate what a directory will be called (though not enforced). I recently completed a Next based project, and one of the most pleasing aspect as developer was the final directory structure.
 
 Anything that helps me to create a consistent and replicable project structure is extremely valuable.
 
@@ -210,7 +219,7 @@ Anything that helps me to create a consistent and replicable project structure i
 
 One of the more popular state machine libraries for React is Redux (based around Flux, though I've personally never used Flux).
 
-I got hooked on the idea of state machines in software way back in my university days (the late 90s), then again with a talk by XXXXX. Then after 30 minutes of watching Dan XXXXX egghead (free) video tutorials on how Redux works, I was hooked 100%.
+I got hooked on the idea of state machines in software way back in my university days (the late 90s), then again with a talk at jQuery UK 2013 by [Doug Neiner](https://vimeo.com/67473899). Then after 30 minutes of watching Dan Abramov egghead (free) video tutorials [on how Redux works](https://egghead.io/courses/getting-started-with-redux), I was hooked 100%.
 
 I'm a huge fan of state machines because they make developing, debugging and testing a lot simpler. This is because instead of relying on any number and combinations of user input to set my application to a specific state, I'm able to manually set the state and inject it into my system to see how it behaves (and make any necessary changes there and then).
 
