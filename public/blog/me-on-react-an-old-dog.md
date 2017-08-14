@@ -16,7 +16,7 @@ This was and continues to be one of my biggest concerns when it comes to daily d
 
 So the thought of having to add some new build process to my current workflow was an initial hurdle that I really didn't want to overcome. Currently I know of grunt, gulp and webpack, but I'm 100% certain there are more tool runners and special configurations that you'll need to learn to get past the very, _very_ first step.
 
-**Enter Create React App** (henceforth know as CRA in this post). In my very first foray I tried to use CRA but got overwhelmed by the generated files, directory and config, so I aborted. Thankfully, I revisited it again a few months later, either armed with a little familiarity with React components or perhaps the config was hidden, but the big, nay *huge*, benefit was that **the configuration is entirely hidden** (though you _can_ eject CRA and manually tune the configuration).
+**Enter Create React App** (henceforth known as CRA in this post). In my very first foray I tried to use CRA but got overwhelmed by the generated files, directory and config, so I aborted. Thankfully, I revisited it again a few months later, either armed with a little familiarity with React components or perhaps the config was hidden, but the big, nay *huge*, benefit was that **the configuration is entirely hidden** (though you _can_ eject CRA and manually tune the configuration).
 
 **It meant that I could get up and running with zero configuration and I could write code and see results.**
 
@@ -116,7 +116,7 @@ class Count extends Component {
     super(props);
 
     // inside the component, I'm actually using a state value, so that it'll change every time
-    // the component recieves an update - but will *always* reset back to the query string
+    // the component receives an update - but will *always* reset back to the query string
     // value set in `getInitialProps` on a full server load
     this.state = { count: parseInt(props.count || 1, 10) };
   }
