@@ -17,4 +17,6 @@ To enable it (as of August 2017), you need the following steps:
 
 To get the extra detail (that's shown in the screenshot above), you need to click on the contrast value and it will toggle the a11y colour information.
 
+Huge props to [Alice Boxhall](https://mobile.twitter.com/sundress) for her [superb work](https://github.com/ChromeDevTools/devtools-frontend/commit/fde06fd07631e7613f236ded98244ff23f8d88ad) on the contrast picker 💪.
+
 If you're interested in gathering contrast information quickly, I'd highly recommend using [aXe devtools extension](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd) (for [Firefox too](https://addons.mozilla.org/en-GB/firefox/addon/axe-devtools/)) too, I've personally found this to be very useful.
