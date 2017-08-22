@@ -93,3 +93,11 @@ This comic, somehow describes exactly how I've always felt about being "happy". 
 In a time where higher powers are trying to convince us that we should be afraid of each other, this advert (of all things) is a beautiful remind of all that we share.
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/jD8tjhVO1Tc?rel=0" frameborder="0" allowfullscreen></iframe>
+
+---
+
+## Culture shifting
+
+> This is how culture shifts work - what we are prepared to accept and call out changes over time as our community values shift more towards inclusiveness and empathy and we raise our standards for the what we’re prepared to challenge or ignore.
+
+- [Via](https://app.simplenote.com/publish/bKHZCC) [Nat Dudley](https://twitter.com/natdudley) - 19 Feb 2017
