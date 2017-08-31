@@ -56,7 +56,8 @@ block content
           - if (yield) res = split(yield.replace(/<h1>.*?<\/h1>/, ''));
           if res
             != res[0]
-            != partial('../_partials/terminal-ad')
+            if !nosubscribe
+              != partial('../_partials/terminal-ad')
             != res[1]
           else
             != yield

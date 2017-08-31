@@ -2,14 +2,32 @@ let audioRunning = false;
 // create Oscillator node
 let oscillator;
 const canvas = document.querySelector('#timer');
-const W = canvas.width = window.innerWidth;
+const W = (canvas.width = window.innerWidth);
 const H = canvas.height;
 const ctx2 = canvas.getContext('2d');
-const freqPresets = [0,1,2,3,4,5,10,20,30,40,50,100,200,440,600,800, 900]
+const freqPresets = [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  10,
+  20,
+  30,
+  40,
+  50,
+  100,
+  200,
+  440,
+  600,
+  800,
+  900,
+];
 
 const slider = document.querySelector('#freq');
 slider.oninput = () => {
-  const c = ui.freq = parseInt(slider.value, 10);
+  const c = (ui.freq = parseInt(slider.value, 10));
   if (audioRunning) {
     oscillator.frequency.value = c;
   }
@@ -20,7 +38,6 @@ rate.oninput = () => {
   ui.rate = parseFloat(rate.value, 10);
 };
 
-
 const ui = { freq: parseInt(slider.value, 10), rate: parseInt(rate.value, 10) };
 
 const RATE = 60;
@@ -29,15 +46,14 @@ const ADJUST = 0.25; // smaller makes our chart wider
 ctx2.lineWidth = 1;
 ctx2.lineCap = 'round';
 ctx2.lineJoin = 'round';
-ctx2.font = '24px monospace'
+ctx2.font = '24px monospace';
 if (!ctx2.setLineDash) {
-  ctx2.setLineDash = function () {}
+  ctx2.setLineDash = function() {};
 }
-
 
 const generateSample = ({ degree, method = 'sin', debug = false }) => {
   const sampleTime = degree / RATE;
-  const sampleAngle = sampleTime * ADJUST *  Math.PI * ui.freq;
+  const sampleAngle = sampleTime * ADJUST * Math.PI * ui.freq;
   if (debug) {
     console.log(sampleAngle);
   }
@@ -46,8 +62,8 @@ const generateSample = ({ degree, method = 'sin', debug = false }) => {
 
 var last = null;
 var degree = 10;
-var H2 = H/2;
-var half = H2 * .9; // amplitude
+var H2 = H / 2;
+var half = H2 * 0.9; // amplitude
 var padLeft = H;
 var lastTime = Date.now();
 
@@ -56,7 +72,6 @@ const analyser = audioCtx.createAnalyser();
 analyser.fftSize = 1024;
 
 function drawAudio() {
-
   const bufferLength = analyser.frequencyBinCount;
   let dataArray = new Uint8Array(bufferLength);
   analyser.getByteTimeDomainData(dataArray);
@@ -64,7 +79,7 @@ function drawAudio() {
   const canvas = document.querySelector('#audio');
   const ctx = canvas.getContext('2d');
 
-  const W = canvas.width = window.innerWidth;
+  const W = (canvas.width = window.innerWidth);
   const H = canvas.height;
 
   ctx.lineWidth = 2;
@@ -86,11 +101,11 @@ function drawAudio() {
     for (let i = 0; i < bufferLength; i++) {
       // this gets the value from between 0 and 2
       const v = dataArray[i] / 128.0;
-      const y = v * H/2;
+      const y = v * H / 2;
 
       if (i === 0) {
         ctx.moveTo(x, y);
-      } else if (i === bufferLength -1) {
+      } else if (i === bufferLength - 1) {
         ctx.lineTo(W, y);
       } else {
         ctx.lineTo(x, y);
@@ -98,32 +113,35 @@ function drawAudio() {
 
       x += sliceWidth;
     }
-    
+
     ctx.stroke();
-    ctx.fillText(`sin(x) ~ ${(1 - (dataArray[0]/128)).toFixed(4).padStart(7, ' ')}`, 20, 44);
-    
+    ctx.fillText(
+      `sin(x) ~ ${(1 - dataArray[0] / 128).toFixed(4).padStart(7, ' ')}`,
+      20,
+      44
+    );
+
     ctx.fillText(`${bufferLength} samples`, 20, 24);
 
     // zero marker
     ctx.beginPath();
     ctx.lineWidth = 1;
     ctx.strokeStyle = 'rgba(188,188,188,.4)';
-    ctx.moveTo(0, H/2);
-    ctx.lineTo(W, H/2);
+    ctx.moveTo(0, H / 2);
+    ctx.lineTo(W, H / 2);
     ctx.stroke();
     ctx.closePath();
     ctx.restore();
 
-    const n = (1 - (dataArray[0]/128));
+    const n = 1 - dataArray[0] / 128;
     if (n) {
       ui.rate = n;
       rate.value = n;
     }
     drawReference(ctx2, n || ui.rate);
-  }
+  };
 
   draw();
-
 }
 
 let lastDegree = 0;
@@ -139,8 +157,8 @@ function drawReference(ctx, pos) {
   ctx.clearRect(0, 0, W, H);
 
   // x, y on the circle for this degree
-  const x = generateSample({ degree, method: 'cos'}) * half;
-  const y = generateSample({ degree, method: 'sin'}) * half;
+  const x = generateSample({ degree, method: 'cos' }) * half;
+  const y = generateSample({ degree, method: 'sin' }) * half;
 
   ctx.lineWidth = 2;
 
@@ -159,7 +177,7 @@ function drawReference(ctx, pos) {
 
   // draw line connecting circle to sine wave
   ctx.beginPath();
-  ctx.setLineDash([2,3]);
+  ctx.setLineDash([2, 3]);
   ctx.moveTo(H2 + x, H2 + y);
   ctx.lineTo(padLeft, H2 + y);
   ctx.stroke();
@@ -169,8 +187,8 @@ function drawReference(ctx, pos) {
   ctx.setLineDash([0]);
   ctx.strokeStyle = '#999';
   ctx.lineWidth = 2;
-  for (let i = 0; i < (W - padLeft); i++) {
-    const v = generateSample({ degree: degree - i, method: 'sin'}) * half;
+  for (let i = 0; i < W - padLeft; i++) {
+    const v = generateSample({ degree: degree - i, method: 'sin' }) * half;
     ctx.lineTo(padLeft + i, H2 + v);
   }
 
@@ -202,7 +220,7 @@ function runAudio() {
   oscillator.connect(analyser);
 
   // square wave @ 830Hz
-//   oscillator.type = 'square';
+  //   oscillator.type = 'square';
   oscillator.frequency.value = ui.freq;
 
   const gain = audioCtx.createGain();
@@ -210,7 +228,6 @@ function runAudio() {
   gain.gain.value = fraction * fraction;
   // Connect the source to the gain node.
   gain.connect(audioCtx.destination);
-
 
   // now connect it to the audio output
   oscillator.connect(gain);
