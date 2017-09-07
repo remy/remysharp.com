@@ -25,7 +25,7 @@ In JavaScript this is represented as `~ 0b1` (where `1` is the binary value I wa
 
 Here's when things get hairy. Running `~ 0b1` in JavaScript yields `-2`:
 
-<iframe src="http://2.jsconsole.com/?~0b1" class="jsconsole" height="130" border=0></iframe>
+<iframe src="http://jsconsole.com/?~0b1" class="jsconsole" height="130" border=0></iframe>
 
 ## What is a number?
 
@@ -37,7 +37,7 @@ Knowing that numbers are decimal isn't quite enough though. Numbers in JavaScrip
 
 If I transform the result to binary, we can get a better idea of what's going on:
 
-<iframe src="https://2.jsconsole.com/?n%20%3D%20-2%3B%20sign%20%3D%20n%20%3C%200%20%3F%201%20%3A%200%3B%20%28n%20%3E%3E%3E%200%29.toString%282%29.padStart%2864%2C%20sign%29" class="jsconsole" height="130" border=0></iframe>
+<iframe src="https://jsconsole.com/?n%20%3D%20-2%3B%20sign%20%3D%20n%20%3C%200%20%3F%201%20%3A%200%3B%20%28n%20%3E%3E%3E%200%29.toString%282%29.padStart%2864%2C%20sign%29" class="jsconsole" height="130" border=0></iframe>
 
 A quick breakdown:
 
@@ -57,7 +57,7 @@ Creating a `new Uint8Array` will give us an array containing 8 unsigned bytes. T
 
 Keeping things simple, I'll create a new typed array with single element containing the `0b1` value from earlier. Now, with this unsigned bit, running the not operation yields the same result in the console, but the stored result is actually as expected:
 
-<iframe class="jsconsole" height="320" src="https://2.jsconsole.com/?a%20%3D%20new%20Uint8Array%28%5B0b1%5D%29%3B%0Aconsole.log%28a%5B0%5D.toString%282%29.padStart%288%2C%200%29%29%3B%0Aconsole.log%28a%5B0%5D%20%3D%20~a%5B0%5D%29%3B%0Aconsole.log%28a%5B0%5D.toString%282%29.padStart%288%2C%200%29%29%3B"></iframe>
+<iframe class="jsconsole" height="320" src="https://jsconsole.com/?a%20%3D%20new%20Uint8Array%28%5B0b1%5D%29%3B%0Aconsole.log%28a%5B0%5D.toString%282%29.padStart%288%2C%200%29%29%3B%0Aconsole.log%28a%5B0%5D%20%3D%20~a%5B0%5D%29%3B%0Aconsole.log%28a%5B0%5D.toString%282%29.padStart%288%2C%200%29%29%3B"></iframe>
 
 ## Flipping #0FF
 
@@ -75,6 +75,6 @@ This was a fun dive into understanding the not operator, but if I had really jus
 
 For `a XOR b`, XOR yields binary `1` if a and b are different, and binary `0` if they're the same. Thus generating an inverted result. So, a bitwise XOR against `0xFFF` will always flip every individual bit, and importantly, it will leave the sign bit alone (i.e. we won't suddenly get negative values).
 
-<iframe src="https://2.jsconsole.com/?%280x0FF%20%5E%200xFFF%29.toString%2816%29.padStart%283%2C%20%270%27%29" height="130" class="jsconsole"></iframe>
+<iframe src="https://jsconsole.com/?%280x0FF%20%5E%200xFFF%29.toString%2816%29.padStart%283%2C%20%270%27%29" height="130" class="jsconsole"></iframe>
 
 Well, that was fun. I've crawled out of my rabbit hole, and returning to work. I hope it was fun for you too!
