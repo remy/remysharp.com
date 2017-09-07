@@ -25,7 +25,7 @@ In JavaScript this is represented as `~ 0b1` (where `1` is the binary value I wa
 
 Here's when things get hairy. Running `~ 0b1` in JavaScript yields `-2`:
 
-<iframe src="http://jsconsole.com/?~0b1" class="jsconsole" height="130" border=0></iframe>
+<iframe src="https://jsconsole.com/?~0b1" class="jsconsole" height="130" border=0></iframe>
 
 ## What is a number?
 
