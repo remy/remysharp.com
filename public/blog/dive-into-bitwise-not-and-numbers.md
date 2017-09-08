@@ -53,9 +53,9 @@ What we really want is some kind of _clamping_ on our bits. Here we can use type
 
 ## Typed arrays for unsigned bytes
 
-Creating a `new Uint8Array` will give us an array containing 8 unsigned bytes. The _unsigned_ is key getting the not operation to work the way we expect, but importantly, it's 8 _bytes_, not 8 bits. So `0b1` will look like `00000001` and flipping correctly will be `11111110`.
+Creating a `new Uint8Array` will give us an array that holds unsigned bytes in each array element. The _unsigned_ is key getting the not operation to work the way we expect. So `0b1` will look like `00000001` and flipping correctly will be `11111110`.
 
-Keeping things simple, I'll create a new typed array with single element containing the `0b1` value from earlier. Now, with this unsigned bit, running the not operation yields the same result in the console, but the stored result is actually as expected:
+Keeping things simple, I'll create a new typed array with single element containing the `0b1` value from earlier. Now, with this unsigned byte, running the not operation yields the same result in the console, but the stored result is actually as expected:
 
 <iframe class="jsconsole" height="320" src="https://jsconsole.com/?a%20%3D%20new%20Uint8Array%28%5B0b1%5D%29%3B%0Aconsole.log%28a%5B0%5D.toString%282%29.padStart%288%2C%200%29%29%3B%0Aconsole.log%28a%5B0%5D%20%3D%20~a%5B0%5D%29%3B%0Aconsole.log%28a%5B0%5D.toString%282%29.padStart%288%2C%200%29%29%3B"></iframe>
 
