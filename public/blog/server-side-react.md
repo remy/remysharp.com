@@ -18,7 +18,7 @@ Approach:
 
 - I can see how progressive enhancement would be skipped, and perhaps graceful degradation would be used to achieve a universal application
 - There's no single guiding approach on how to support the server side
-- IHMO React has the "jQuery of today" badge (but why doesn't fit in the TL;DR, so read on!)
+- IMHO React has the "jQuery of today" badge (but why doesn't fit in the TL;DR, so read on!)
 
 After around 7 days of learning and development, the final technology comprised of:
 

@@ -10,7 +10,7 @@ Everything is represented computationally as a bit. A bit is a `0` or `1`. Chara
 
 Note the preceding `0x` means hex, and `0b` means binary (off topic, but octal is `0o`).
 
-So, my (cyan) value of `0x0FF` can be represented as 4 `0`s and two sets of 4 `0`s: `0b000011111111`. Let's look at bitwise not'ing the value.
+So, my (cyan) value of `0x0FF` can be represented as 4 `0`s and two sets of 4 `1`s: `0b000011111111`. Let's look at bitwise not'ing the value.
 
 ## Bitwise not
 
