@@ -65,7 +65,7 @@ My original requirements were also hugely flawed. I had hoped to flip red to cya
 
 That value isn't red at all. In fact, in most browsers (at time of writing) don't support 8 digit hex values (although apparently Firefox does and so does Chrome Canary). This colour (in 8 digit hex) is blue!
 
-The next job would be to put this value into the typed array, but now the `Unit8Array` is too small. Each array element in the `Uint8Array` can be 8 bits, the value in hex is 32 bits (including the leading zeros). I _could_ switch out to using the `Uint32Array` and repeat the process from eariler, and it would work, but it feels…clunky. To the point where I'm realising that the entire premise was floored.
+The next job would be to put this value into the typed array, but now the `Unit8Array` is too small. Each array element in the `Uint8Array` can be 8 bits, the value in hex is 32 bits (including the leading zeros). I _could_ switch out to using the `Uint32Array` and repeat the process from eariler, and it would work, but it feels…clunky. To the point where I'm realising that the entire premise was flawed.
 
 But now I've learnt all about bitwise not, the answer to my original problem lies in using the bitwise XOR.
 
