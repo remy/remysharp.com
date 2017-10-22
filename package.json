@@ -28,7 +28,7 @@
     "moment": "2.12.0",
     "router-stupid": "0.7.0",
     "semver": "4.3.6",
-    "st": "0.5.1",
+    "st": "1.2.2",
     "then-fs": "1.0.8"
   },
   "repository": {
