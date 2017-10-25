@@ -9,7 +9,7 @@
 @main-font-color: #212121;
 @flickr-width: 235px;
 
-@import (inline) "system-font.css";
+@import (inline) 'system-font.css';
 
 /* Mixins */
 .transition(@prop: all, @time: 1s, @ease: linear) {
@@ -294,6 +294,10 @@ h2 {
 
 h3 {
   font-size: 150%;
+}
+
+pre + h3 {
+  margin-top: 40px;
 }
 
 h3,
@@ -588,7 +592,7 @@ del {
 }
 
 sup {
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   vertical-align: super;
 }
 
@@ -858,6 +862,17 @@ a.anchor {
   background-color: hsla(59, 100%, 82%, 0.3);
   border-color: hsla(59, 100%, 40%, 1);
   margin: 24px 0;
+  font-size: 85%;
+  line-height: 1.4;
+
+  pre,
+  code {
+    font-size: 90%;
+    margin-left: 0;
+    color: #757575;
+    background: #fff59d;
+    min-width: auto;
+  }
 
   small {
     display: block;
@@ -1489,7 +1504,7 @@ a[title='simple-link'] {
   border: 0;
 }
 
-@import (less) "ck-style.less";
+@import (less) 'ck-style.less';
 
 #subscribe-form {
   .ck_opt_in_prompt {
@@ -1550,6 +1565,16 @@ a[title='simple-link'] {
   }
 }
 
-@import (less) "mq.less";
+@import (less) 'mq.less';
 // // code font highlight
-@import (inline) "zenburn.css";
+@import (inline) 'zenburn.css';
+
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+  opacity: 0.65;
+}

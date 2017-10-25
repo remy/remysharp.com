@@ -67,7 +67,9 @@ block content
         if !nosubscribe && !amp
           footer.follow.update
             != partial('../_partials/subscribe')
-
+        //- if !amp
+        //-   #code-sponsor-widget
+        //-   script(async defer src="https://app.codesponsor.io/scripts/vzZ1-MnjP7scUNCV7uya0A?theme=light&width=660")
       if amp
         footer
           a(href="#{permalink}#comments") Leave a comment

@@ -45,7 +45,6 @@
     a.anchor span:before {
       margin-left: 0;
     }
-
   }
 
   #index-page h1.title,
@@ -79,12 +78,19 @@
   body > footer {
     padding: 0 10px;
 
-    p { line-height: 22px; }
+    p {
+      line-height: 22px;
+    }
 
-    .archives { .flex(1 auto); }
-    .links    { .flex(1 auto); }
-    .license  { .flex(2 auto); }
-
+    .archives {
+      .flex(1 auto);
+    }
+    .links {
+      .flex(1 auto);
+    }
+    .license {
+      .flex(2 auto);
+    }
   }
 
   pre {
@@ -111,14 +117,16 @@
 }
 
 @media only screen and (max-width: 412px) {
-  html, body {
+  html,
+  body {
     font-size: initial;
     font-weight: normal;
   }
 
-  p, li {
+  p,
+  li {
     font-size: 0.9rem;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
   }
 
   .post-content ul,
@@ -126,7 +134,7 @@
     padding-left: 0;
   }
 
-  a[href^="https://terminal.training/?utm_source=blog&utm_medium=banner"] {
+  a[href^='https://terminal.training/?utm_source=blog&utm_medium=banner'] {
     img {
       display: none;
     }
@@ -139,7 +147,7 @@
   .archives,
   .links {
     li {
-      line-height: 1.8rem;
+      line-height: 1.6rem;
     }
   }
 
@@ -202,5 +210,4 @@
       margin-bottom: 14px;
     }
   }
-
 }
