@@ -3117,7 +3117,7 @@
     "published": true
   },
   "es6-default-arguments": {
-    "image": "images/es6-defaults.png",
+    "image": "/images/es6-defaults.png",
     "title": "ES6: Default arguments",
     "date": "2017-10-25 14:15:51",
     "modified": "2017-10-24 12:40:20",
