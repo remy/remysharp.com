@@ -1323,8 +1323,8 @@ details summary:after {
 
 @ad-width: 8rem;
 
-.ad,
-.ad:hover {
+.workshop-ad,
+.workshop-ad:hover {
   z-index: 1;
   position: relative;
   display: block;
@@ -1332,11 +1332,10 @@ details summary:after {
   box-sizing: border-box;
   background: #fff;
   border: 2px solid gainsboro; //rgb(204, 201, 0);
-  padding: 0.5rem;
+  padding: 0; //0.5rem;
   text-decoration: none;
   cursor: pointer;
   color: black;
-  font-size: 80%;
   overflow: hidden;
   margin-left: 1rem;
   margin-bottom: 1rem;
@@ -1359,20 +1358,66 @@ details summary:after {
   }
 }
 
-a[href^='https://2017.ffconf.org/workshop-next?utm_source=blog&utm_medium=banner&utm_campaign=remysharp-ad1'],
-a[href^='https://2017.ffconf.org/workshop-next?utm_source=blog&utm_medium=banner&utm_campaign=remysharp-ad1']:hover {
-  border: 1px solid #dcdcdc;
+.ad {
+  font-size: 80%;
+  width: 100%;
+  float: initial;
+  margin: 0;
   display: block;
-  padding: 0px;
   background: none;
   color: inherit;
   overflow: hidden;
   position: relative;
-  border-radius: 2px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  // border: 2px solid transparent;
+  // border-radius: 2px;
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 0;
+  border-left: 4px solid #ccc;
+  padding: 0 0 0 10px;
 
-  &:hover {
-    border-color: #ccc;
+  font-weight: 400;
+
+  * {
+    line-height: 1.4rem;
+  }
+
+  .cs__footer,
+  .cs__header {
+    font-size: 80%;
+    color: #999;
+    a {
+      color: #999;
+      border-bottom: 0;
+    }
+  }
+
+  a:hover {
+    background: none;
+    text-decoration: underline;
+  }
+
+  .cs__footer {
+    font-style: italic;
+  }
+
+  .cs__blurb {
+    padding: 0;
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 0;
+    font-size: 120%;
+  }
+
+  &:hover,
+  &:focus {
+    padding: 0 0 0 10px;
+    border-color: #4caf50;
+    background: none;
+
+    .cs__blurb {
+      text-decoration: underline;
+    }
   }
 
   img {
@@ -1381,8 +1426,10 @@ a[href^='https://2017.ffconf.org/workshop-next?utm_source=blog&utm_medium=banner
     margin-right: 20px;
   }
 
-  & > div {
-    padding: 10px;
+  img.cs__pixel {
+    height: 1px;
+    width: 1px;
+    margin: 0;
   }
 
   p {

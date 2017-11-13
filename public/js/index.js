@@ -96,8 +96,8 @@ $('#search').on('click', function(e) {
   searchOpen = false;
   if (
     $('form.search')
-    .toggleClass('show')
-    .hasClass('show')
+      .toggleClass('show')
+      .hasClass('show')
   ) {
     $('form.search:first input[type="text"]').focus();
     searchOpen = true;
@@ -198,3 +198,28 @@ $(() => {
     hljs.highlightBlock(block);
   });
 });
+
+var token = 'vzZ1-MnjP7scUNCV7uya0A';
+
+$('#code-sponsor-widget .cs__footer a').attr(
+  'href',
+  'https://codesponsor.io/?utm_source=widget&utm_medium=banner&utm_campaign=' +
+    token
+);
+$.ajax({
+  url: 'https://app.codesponsor.io/p/' + token + '/message.json',
+  method: 'GET',
+})
+  .done(function(results) {
+    // $('.cs__blurb').attr('href', results.link_href);
+    $('#code-sponsor-widget').attr('href', results.link_href);
+    $('.cs__blurb strong').text(results.title);
+    $('.cs__blurb span').text(results.body);
+    $('.cs__pixel').attr('src', results.pixel_href);
+  })
+  .fail(function() {
+    // $('.cs__blurb strong').text('CodeSponsor.io');
+    // $('.cs__blurb span').text(
+    //   ' - get paid by adding one line of code to your README'
+    // );
+  });
