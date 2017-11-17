@@ -48,7 +48,7 @@ I also appreciate that different people learn in different ways, but what I'm ta
 
 Components was a theme that ran through the first three talks. For a long time I stood away from large frameworks and libraries (ultimately for no good reason), and in late 2016 I dived into React to build my first production project. The result was that I was fully converted.
 
-It wasn't React's codebase that converted me: it was the structuring of *my* software design. My own code now took a distinct componentised approach. I always recognised visually distinct components, but my code didn't always split neatly into components. There was also the common blog to consider: it really didn't *feel* like it should be broken into multiple components. I've also changed my mind on this too.
+It wasn't React's codebase that converted me: it was the structuring of *my* software design. My own code now took a distinct componentised approach. I always recognised visually distinct components, but my code didn't always split neatly into components. There was also the typical blog to consider: it really didn't *feel* like it should be broken into multiple components. I've also changed my mind on this too.
 
 Recently I was updating the [terminal.training](https://terminal.training) web site, and the original source is a single HTML file. Why shouldn't it be? It's a single page, nothing special, and doesn't require any tooling to get it live.
 
