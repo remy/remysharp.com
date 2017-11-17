@@ -561,15 +561,28 @@ blockquote {
   background: rgb(235, 235, 235) url(../images/quote.gif) no-repeat -7px bottom;
   padding: 10px;
   margin: 10px 0;
-  font-size: 95%;
+  // font-size: 95%;
+  font-style: italic;
+  -webkit-font-smoothing: antialiased;
+  font-family: georgia, times, 'times new roman', serif;
+  border-radius: 2px;
 
   p {
     margin: 18px 0;
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
   }
 }
 
 em {
   font-style: italic;
+  -webkit-font-smoothing: antialiased;
 }
 
 del {
@@ -859,6 +872,7 @@ a.anchor {
 }
 .update {
   border: 1px solid @main-font-color;
+  border-radius: 2px;
   padding: 14px 14px;
   background-color: #fffda3;
   background-color: hsla(59, 100%, 82%, 0.3);

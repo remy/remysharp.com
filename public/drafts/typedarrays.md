@@ -103,3 +103,7 @@ Big O notation is when you might see O(n) or O(1) to signify how long a function
 - ["Why never use new Array in Javascript"](https://coderwall.com/p/h4xm0w/why-never-use-new-array-in-javascript) - I wouldn't say "never", but certainly useful information
 - [Write up of Big O timings of pop, shift, etc](https://stackoverflow.com/a/22615787/22617)
 - [What the heck does O(n) mean anyway?](https://stackoverflow.com/a/2307314/22617)
+
+### Notes
+
+- TypedArray .map/filter/etc return a typedarray, so `new Uint8Array([254, 255]).map(_ => _ + 1)` [ie](https://jsconsole.com/?console.log%28%20...new%20Uint8Array%28%5B254%2C%20255%5D%29.map%28_%20%3D%3E%20_%20+%201%29%20%29)
