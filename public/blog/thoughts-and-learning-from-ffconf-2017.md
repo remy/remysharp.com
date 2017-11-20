@@ -34,13 +34,13 @@ We've completely skipped the understanding of how HTML works. What the relations
 
 For me personally (though I know many others in a similar boat), at the early stage of learning something new, reaching the final result is possibly the most important factor in whether I'll continue learning a thing.
 
-For example, when I was learning to work with an Arduino, it was more important to get the LED flashing that to understand what and how a resistor worked. In fact, if it didn't work, or the LED blew up, I'd rather just **copy** the right thing until it worked rather than hit the books and get a complete understanding.
+For example, when I was learning to work with an Arduino, it was more important to get the LED flashing than to understand what and how a resistor worked. In fact, if it didn't work, or the LED blew up, I'd rather just **copy** the right thing until it worked rather than hit the books and get a complete understanding.
 
 <small>I realise the irony in my example: wanting the physical light bulb to go on, before the theoretical light bulb goes on!</small>
 
-**The point:** an individual doesn't have to complete understand of how all the parts work, or even a *good* understanding if it, if it means there's a tangible result to be had.
+**The point:** an individual doesn't have to have a complete understanding of how all the parts work, or even a *good* understanding if it, if it means there's a tangible result to be had.
 
-Certainly once I had built "enough" Arduino projects, I've tried to take my time to *go back* and get a better understanding of certain parts actually work.
+Certainly once I had built "enough" Arduino projects, I've tried to take my time to *go back* and get a better understanding of how certain parts actually work.
 
 I also appreciate that different people learn in different ways, but what I'm talking about here is teaching, rather than learning: take the initiative to use "shortcut" tooling to get the end result faster.
 
@@ -76,7 +76,7 @@ The second part was the punch delivery: how the web is being used by "not US/Eur
 
 ![Bruce](/images/ffconf-2017/bruce.jpg)
 
-I can't share all the stats here, but it stands to full reason that some of the best Progress Web Apps (<abbr>PWA</abbr>s) are coming out of countries like Africa because they have data sensitivity and the option of downloading a 20Mb native app or visiting a web site (that has all the properties of a <abbr>PWA</abbr>: fast, reactive, responsive and offline) will always all in favour of the <abbr>PWA</abbr>.
+I can't share all the stats here, but it stands to full reason that some of the best Progressive Web Apps (<abbr>PWA</abbr>s) are coming out of countries like Africa because they have data sensitivity and the option of downloading a 20Mb native app or visiting a web site (that has all the properties of a <abbr>PWA</abbr>: fast, reactive, responsive and offline) will always all in favour of the <abbr>PWA</abbr>.
 
 Most importantly to me personally, is Bruce went on to ask, what is the web:
 
@@ -102,7 +102,7 @@ Most importantly to me personally, is Bruce went on to ask, what is the web:
 >
 > **The web is people.** The web is a mechanism for people to talk to people, and the people are not us.
 
-Bruce shared a personal story of his discovering that he had MS, and how the web connected him to real people who would go on to a play role in his life for years to come.
+Bruce shared a personal story of his discovering that he had MS, and how the web connected him to real people who would go on to play a role in his life for years to come.
 
 I know from my own experience, the web has connected me to new friends (indeed, Bruce is a good friend of mine *because of* the web). The web has helped me connect to people in my adult life when I've needed them, when I've needed a fresh perspective on life and when I've needed help in some very dark times.
 
