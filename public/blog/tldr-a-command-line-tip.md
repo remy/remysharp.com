@@ -18,7 +18,7 @@ Here's an example on the curl command:
 ![TLDR](/images/tldr.png)
 
 What's really cool is that if docs are missing, you can contribute yourself
-(here's the source to the output above).
+([here's the source to the output above](https://github.com/tldr-pages/tldr/blob/master/pages/common/curl.md)).
 
 I've even gone ahead an aliased `tldr` to help using `alias help="tldr"`, so now
 I can type "help curl" in the command line 💪
