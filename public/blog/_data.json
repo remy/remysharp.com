@@ -4687,5 +4687,14 @@
       "code"
     ],
     "published": true
+  },
+  "tldr-a-command-line-tip": {
+    "title": "tldr: a command line tip",
+    "date": "2017-11-26 11:39:11",
+    "modified": "2017-11-26 11:29:28",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }
