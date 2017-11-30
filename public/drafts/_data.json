@@ -504,5 +504,15 @@
     "tags": [
       "code"
     ]
+  },
+  "cli-improved": {
+    "title": "CLI-improved",
+    "date": "2017-11-26 19:40:34",
+    "modified": "2017-11-26 19:40:34",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "web"
+    ]
   }
 }
