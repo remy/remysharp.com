@@ -527,7 +527,7 @@
       "select-boxes",
       "code"
     ],
-    "modified": "2016-04-03 12:51:20"
+    "modified": "2017-03-26 21:37:55"
   },
   "importing-colour-in-to-textmate": {
     "title": "Importing colour in to TextMate",
@@ -766,7 +766,7 @@
       "personal",
       "second-life"
     ],
-    "modified": "2014-09-03 16:15:12"
+    "modified": "2016-12-22 15:55:35"
   },
   "life-streams-with-yahoo-pipes-screencast": {
     "title": "Life Streams with Yahoo Pipes (screencast)",
@@ -2709,7 +2709,7 @@
       "christmas",
       "personal"
     ],
-    "modified": "2016-12-17 10:23:50"
+    "modified": "2017-11-30 20:23:16"
   },
   "audio-sprites": {
     "title": "Audio Sprites (and fixes for iOS)",
@@ -3190,7 +3190,7 @@
       "personal",
       "web"
     ],
-    "modified": "2014-12-27 17:21:27"
+    "modified": "2014-12-27 17:11:46"
   },
   "how-i-fixed-an-anonymous-infinite-loop-in-jsbin": {
     "title": "How I fixed an anonymous infinite loop in jsbin",
@@ -3286,7 +3286,7 @@
     "tags": [
       "personal"
     ],
-    "modified": "2016-04-10 21:14:27"
+    "modified": "2016-04-10 19:31:55"
   },
   "youre-paying-to-speak": {
     "title": "You're paying to speak",
@@ -3517,7 +3517,7 @@
     "tags": [
       "business"
     ],
-    "modified": "2014-12-16 11:44:16"
+    "modified": "2014-12-16 11:44:08"
   },
   "vatmoss-proof": {
     "title": "VATMOSS: the misunderstanding of \"proof\"",
@@ -3641,7 +3641,7 @@
       "code"
     ],
     "published": true,
-    "modified": "2015-06-07 20:33:39"
+    "modified": "2015-06-02 15:35:10"
   },
   "devtool-tricks-for-when-i-forget": {
     "title": "Devtool tricks for when I forget",
@@ -3677,7 +3677,7 @@
       "code"
     ],
     "published": true,
-    "modified": "2015-07-04 14:39:00"
+    "modified": "2017-08-31 09:57:44"
   },
   "my-pebble": {
     "title": "My Pebble",
@@ -3800,7 +3800,7 @@
       "code"
     ],
     "published": true,
-    "modified": "2015-08-23 12:30:40"
+    "modified": "2017-02-04 18:01:43"
   },
   "on-making-ffconf-a-safe-place": {
     "title": "On making ffconf a safe place",
@@ -3828,7 +3828,7 @@
       "code"
     ],
     "published": true,
-    "modified": "2016-04-30 11:45:07"
+    "modified": "2017-02-04 18:00:14"
   },
   "promise-waterfall": {
     "title": "Promise waterfall",
@@ -4003,7 +4003,7 @@
     "tags": [
       "code"
     ],
-    "modified": "2016-06-29 15:16:21",
+    "modified": "2017-02-04 18:02:10",
     "published": true
   },
   "what-developers-can-learn-from-the-past": {
@@ -4195,7 +4195,7 @@
   "smarter-cli-gists": {
     "title": "Smarter CLI gists",
     "date": "2016-12-01 07:32:09",
-    "modified": "2016-12-02 19:54:41",
+    "modified": "2016-12-31 08:19:07",
     "tags": [
       "web"
     ],
@@ -4249,7 +4249,7 @@
   "server-side-react": {
     "title": "Server Side React",
     "date": "2016-12-07 08:14:58",
-    "modified": "2016-12-13 13:42:10",
+    "modified": "2017-09-15 12:18:54",
     "tags": [
       "web"
     ],
@@ -4268,7 +4268,7 @@
   "working-the-command-line": {
     "title": "📙 Working the Command Line",
     "date": "2016-12-09 07:49:29",
-    "modified": "2016-12-08 22:36:21",
+    "modified": "2017-02-03 13:35:10",
     "tags": [
       "web",
       "business"
@@ -4315,7 +4315,7 @@
   "on-moving-from-heroku-to-now": {
     "title": "On moving from Heroku to now",
     "date": "2016-12-14 08:12:45",
-    "modified": "2016-12-07 11:00:09",
+    "modified": "2017-02-04 18:00:21",
     "tags": [
       "web"
     ],
@@ -4333,7 +4333,7 @@
   "tricks-with-xargs": {
     "title": "Tricks with xargs",
     "date": "2016-12-16 09:47:07",
-    "modified": "2016-12-16 09:46:44",
+    "modified": "2017-02-04 18:01:17",
     "tags": [
       "web"
     ],
@@ -4345,7 +4345,7 @@
     "tags": [
       "web"
     ],
-    "modified": "2016-12-17 08:03:11",
+    "modified": "2017-02-04 17:59:24",
     "published": true
   },
   "tech-things-in-2016": {
@@ -4382,13 +4382,13 @@
     "tags": [
       "web"
     ],
-    "modified": "2016-12-18 17:43:34",
+    "modified": "2016-12-24 09:15:28",
     "published": true
   },
   "cool-uris-dont-change": {
     "title": "Cool URIs don't change",
     "date": "2016-12-22 08:48:54",
-    "modified": "2016-08-29 12:41:58",
+    "modified": "2016-12-22 15:50:17",
     "tags": [
       "web"
     ],
@@ -4397,7 +4397,7 @@
   "beginners-guide-to-stripe-integration": {
     "title": "Beginners guide to Stripe integration",
     "date": "2016-12-23 08:43:30",
-    "modified": "2016-12-20 09:10:04",
+    "modified": "2017-05-04 19:08:54",
     "tags": [
       "web"
     ],
@@ -4406,7 +4406,7 @@
   "a-mental-state": {
     "title": "A Mental State",
     "date": "2016-12-24 08:46:19",
-    "modified": "2016-12-22 11:53:41",
+    "modified": "2016-12-23 20:22:50",
     "tags": [
       "personal",
       "depression"
@@ -4416,7 +4416,7 @@
   "my-2016": {
     "title": "My 2016",
     "date": "2016-12-31 08:18:11",
-    "modified": "2016-12-20 11:18:04",
+    "modified": "2016-12-30 14:50:21",
     "tags": [
       "personal"
     ],
@@ -4425,7 +4425,7 @@
   "making-a-change": {
     "title": "Making a change",
     "date": "2017-01-02 13:34:00",
-    "modified": "2017-01-01 14:29:13",
+    "modified": "2017-01-02 14:12:41",
     "tags": [
       "personal"
     ],
@@ -4434,7 +4434,7 @@
   "json-store-as-a-service-jsonbin": {
     "title": "JSON store as a service: jsonbin",
     "date": "2017-01-31 17:45:04",
-    "modified": "2017-01-07 14:05:58",
+    "modified": "2017-02-04 17:55:01",
     "tags": [
       "web"
     ],
@@ -4443,7 +4443,7 @@
   "browser-terminals": {
     "title": "Browser Terminals",
     "date": "2017-02-10 12:40:06",
-    "modified": "2017-02-02 21:43:49",
+    "modified": "2017-02-04 18:02:32",
     "tags": [
       "web"
     ],
@@ -4452,7 +4452,7 @@
   "using-jsonbin-in-the-browser": {
     "title": "Using jsonbin in the browser",
     "date": "2017-02-24 16:13:38",
-    "modified": "2017-02-24 15:47:42",
+    "modified": "2017-02-24 16:40:33",
     "tags": [
       "web"
     ],
@@ -4461,7 +4461,7 @@
   "womens-day": {
     "title": "International Women's Day",
     "date": "2017-03-08 13:33:38",
-    "modified": "2017-03-08 09:04:52",
+    "modified": "2017-03-08 15:30:57",
     "tags": [
       "personal"
     ],
@@ -4471,7 +4471,7 @@
     "title": "terminal.training",
     "customTitle": "Command line training online video course",
     "date": "2017-03-15 15:04:39",
-    "modified": "2017-03-14 17:01:09",
+    "modified": "2017-03-26 21:11:08",
     "nosubscribe": true,
     "tags": [
       "web",
@@ -4483,7 +4483,7 @@
     "title": "$ in code examples",
     "image": "/images/dollar-in-code.png",
     "date": "2017-03-27 11:35:57",
-    "modified": "2017-02-03 13:54:54",
+    "modified": "2017-03-27 11:31:56",
     "tags": [
       "code"
     ],
@@ -4493,7 +4493,7 @@
     "title": "Tinnitus",
     "image": "/images/tinnitus.png",
     "date": "2017-04-11 15:02:48",
-    "modified": "2017-04-11 13:12:31",
+    "modified": "2017-04-11 14:58:17",
     "tags": [
       "personal"
     ],
@@ -4502,7 +4502,7 @@
   "when-github-email-scope-fails": {
     "title": "When github email scope fails",
     "date": "2017-04-24 07:49:48",
-    "modified": "2017-03-20 20:46:36",
+    "modified": "2017-03-21 07:07:36",
     "tags": [
       "code"
     ],
@@ -4511,7 +4511,7 @@
   "getting-the-latest-emoji-on-my-mac": {
     "title": "Getting the latest emoji (on my mac)",
     "date": "2017-05-01 12:23:12",
-    "modified": "2017-04-26 13:02:43",
+    "modified": "2017-05-01 13:08:04",
     "tags": [
       "personal"
     ],
@@ -4520,7 +4520,7 @@
   "getting-free-wifi": {
     "title": "Getting free wifi",
     "date": "2017-05-29 09:42:06",
-    "modified": "2017-05-29 09:33:15",
+    "modified": "2017-05-29 09:41:43",
     "tags": [
       "web"
     ],
@@ -4529,7 +4529,7 @@
   "how-to-create-a-custom-gmail-design-and-template": {
     "title": "How to create a custom gmail design and template",
     "date": "2017-06-16 13:48:36",
-    "modified": "2017-06-16 13:00:25",
+    "modified": "2017-06-16 13:46:16",
     "tags": [
       "web",
       "business"
@@ -4539,7 +4539,7 @@
   "windows-10-bashing": {
     "title": "Windows 10 BASHing",
     "date": "2017-06-26 12:55:52",
-    "modified": "2017-06-26 12:25:55",
+    "modified": "2017-06-26 12:55:10",
     "tags": [
       "code"
     ],
@@ -4548,7 +4548,7 @@
   "sticky-headers": {
     "title": "Sticky headers (#1/3)",
     "date": "2017-06-28 20:00:10",
-    "modified": "2016-08-17 11:04:26",
+    "modified": "2017-06-29 14:38:49",
     "tags": [
       "web"
     ],
@@ -4557,7 +4557,7 @@
   "smooth-scroll-with-sticky-nav": {
     "title": "Smooth scroll & sticky navigation (#2/3)",
     "date": "2017-06-29 14:37:33",
-    "modified": "2016-07-27 13:54:32",
+    "modified": "2017-06-29 14:38:49",
     "tags": [
       "web"
     ],
@@ -4566,7 +4566,7 @@
   "css-sticky-nav-and-smooth-scroll": {
     "title": "CSS sticky nav & smooth scroll (#3/3)",
     "date": "2017-06-29 17:30:59",
-    "modified": "2017-06-28 17:35:58",
+    "modified": "2017-06-28 17:56:51",
     "tags": [
       "code"
     ],
@@ -4575,7 +4575,7 @@
   "codes": {
     "title": "Conducting Codes of Conduct",
     "date": "2017-07-05 11:09:48",
-    "modified": "2017-07-04 15:28:34",
+    "modified": "2017-07-05 11:24:44",
     "tags": [
       "web"
     ],
@@ -4584,7 +4584,7 @@
   "a-new-space": {
     "title": "A new space",
     "date": "2017-07-08 12:24:39",
-    "modified": "2017-07-08 11:19:19",
+    "modified": "2017-07-08 12:01:01",
     "tags": [
       "personal"
     ],
@@ -4593,7 +4593,7 @@
   "opening-windows-again-part-1": {
     "title": "Opening Windows again (part 1)",
     "date": "2017-07-11 11:13:35",
-    "modified": "2017-06-22 18:26:14",
+    "modified": "2017-07-11 14:11:42",
     "tags": [
       "web"
     ],
@@ -4603,7 +4603,7 @@
     "title": "Digging Deeper",
     "date": "2017-07-19 14:07:50",
     "image": "/images/dig-deeper.jpg",
-    "modified": "2017-07-19 14:05:41",
+    "modified": "2017-07-19 14:06:06",
     "tags": [
       "personal"
     ],
@@ -4613,7 +4613,7 @@
     "image": "/images/dog.jpg",
     "title": "Me on React: an old dog with new tricks",
     "date": "2017-08-14 13:09:39",
-    "modified": "2017-06-01 12:24:23",
+    "modified": "2017-08-14 19:13:21",
     "tags": [
       "code"
     ],
@@ -4622,7 +4622,7 @@
   "contrast-ratio-in-devtools": {
     "title": "Contrast ratio in devtools",
     "date": "2017-08-17 14:59:03",
-    "modified": "2017-08-17 14:40:31",
+    "modified": "2017-08-17 23:03:35",
     "tags": [
       "code"
     ],
@@ -4632,7 +4632,7 @@
     "title": "Seven",
     "image": "/images/seven.jpg",
     "date": "2017-08-31 09:58:07",
-    "modified": "2017-08-31 09:24:54",
+    "modified": "2017-08-31 09:56:14",
     "nosubscribe": true,
     "tags": [
       "personal"
@@ -4643,7 +4643,7 @@
     "title": "Dive into bitwise not and numbers",
     "image": "/images/bitwise-not.png",
     "date": "2017-09-08 12:51:15",
-    "modified": "2017-09-07 11:46:36",
+    "modified": "2017-09-20 14:59:31",
     "tags": [
       "code"
     ],
@@ -4653,7 +4653,7 @@
     "image": "/images/es6-defaults.png",
     "title": "ES6: Default arguments",
     "date": "2017-10-25 14:15:51",
-    "modified": "2017-10-24 12:40:20",
+    "modified": "2017-10-25 14:14:41",
     "tags": [
       "code"
     ],
@@ -4662,7 +4662,7 @@
   "dear-dizzy": {
     "title": "Dear Dizzy",
     "date": "2017-10-30 18:19:17",
-    "modified": "2017-10-30 18:10:48",
+    "modified": "2017-10-30 18:18:21",
     "tags": [
       "personal"
     ],
@@ -4673,7 +4673,7 @@
     "title": "Thoughts and learning from ffconf 2017",
     "image": "/images/ffconf-2017/day2.jpg",
     "date": "2017-11-17 14:18:02",
-    "modified": "2017-11-17 11:01:05",
+    "modified": "2017-11-24 12:22:45",
     "tags": [
       "personal"
     ],
@@ -4682,7 +4682,7 @@
   "binary-strings": {
     "title": "Binary strings…and -1",
     "date": "2017-11-24 11:36:05",
-    "modified": "2017-10-14 17:13:37",
+    "modified": "2017-11-24 12:22:48",
     "tags": [
       "code"
     ],
@@ -4691,7 +4691,7 @@
   "tldr-a-command-line-tip": {
     "title": "tldr: a command line tip",
     "date": "2017-11-26 11:39:11",
-    "modified": "2017-11-26 11:29:28",
+    "modified": "2017-11-26 11:41:27",
     "tags": [
       "code"
     ],
@@ -4700,7 +4700,7 @@
   "where-do-those-node-warnings-come-from": {
     "title": "Where do those node warnings come from?",
     "date": "2017-12-04 12:26:09",
-    "modified": "2017-12-04 12:09:35",
+    "modified": "2017-12-04 12:25:27",
     "tags": [
       "code"
     ],
@@ -4710,7 +4710,7 @@
     "image": "/images/vuln-warnings.jpg",
     "title": "Learn more about vulnerability alerts",
     "date": "2017-12-08 15:30:45",
-    "modified": "2017-12-05 13:10:43",
+    "modified": "2017-12-08 15:29:43",
     "tags": [
       "web"
     ],
