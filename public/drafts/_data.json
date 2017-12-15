@@ -12,7 +12,9 @@
     "title": "Why I prefer mobile web apps to native apps",
     "date": "2013-03-14 14:09:57",
     "published": false,
-    "tags": ["web"],
+    "tags": [
+      "web"
+    ],
     "modified": "2013-03-14 14:09:00"
   },
   "polyfill-is-not-progressive-enhancement": {
@@ -25,77 +27,100 @@
     "title": "First Contact",
     "date": "2014-05-05 13:35:13",
     "published": false,
-    "tags": ["business"],
+    "tags": [
+      "business"
+    ],
     "modified": "2014-05-05 13:35:00"
   },
   "git-push-to-live": {
     "title": "Git push to live",
     "date": "2014-05-30 13:00:13",
     "published": false,
-    "tags": ["web"],
+    "tags": [
+      "web"
+    ],
     "modified": "2014-05-30 13:00:00"
   },
   "apple-dont-care": {
     "title": "My beef with Apple",
     "date": "2013-05-19 12:00:00",
     "published": false,
-    "tags": ["web", "business"],
+    "tags": [
+      "web",
+      "business"
+    ],
     "modified": "2016-02-15 13:10:23"
   },
   "css-compression": {
     "title": "CSS Compression",
     "date": "2009-02-01 12:00:00",
     "published": false,
-    "tags": ["code"],
+    "tags": [
+      "code"
+    ],
     "modified": "2009-02-01 16:37:30"
   },
   "fragmentation": {
     "title": "Fragmentation",
     "date": "2012-11-26 12:00:00",
     "published": false,
-    "tags": ["web"],
+    "tags": [
+      "web"
+    ],
     "modified": "2012-11-26 23:21:44"
   },
   "localstorage": {
     "title": "Proposal for Async Web Storage API",
     "date": "2013-09-23 12:00:00",
     "published": false,
-    "tags": ["code"],
+    "tags": [
+      "code"
+    ],
     "modified": "2013-09-23 20:54:38"
   },
   "offline-panel": {
     "title": "Offline Panel",
     "date": "2013-09-27 12:00:00",
     "published": false,
-    "tags": ["web"],
+    "tags": [
+      "web"
+    ],
     "modified": "2013-09-27 17:28:42"
   },
   "harp": {
     "title": "Continuous integration with static site generator: Harp.js",
     "date": "2014-05-05 12:00:00",
     "published": false,
-    "tags": ["code"],
+    "tags": [
+      "code"
+    ],
     "modified": "2014-10-04 23:44:57"
   },
   "rewrite-it": {
     "title": "The \"let's just rewrite it\" syndrome",
     "date": "2014-08-05 12:00:00",
     "published": false,
-    "tags": ["business"],
+    "tags": [
+      "business"
+    ],
     "modified": "2014-08-05 11:02:40"
   },
   "jsbin-11-things-you-didnt-know": {
     "title": "11 things you didn't know JS Bin could do",
     "date": "2014-08-05 12:00:00",
     "complete": true,
-    "tags": ["web"],
+    "tags": [
+      "web"
+    ],
     "modified": "2014-08-05 11:12:21"
   },
   "debugging-document-events": {
     "title": "Debugging events in devtools inspector",
     "date": "2014-10-16 11:30:00",
     "complete": false,
-    "tags": ["code"],
+    "tags": [
+      "code"
+    ],
     "modified": "2014-10-16 17:40:01"
   },
   "horse-and-cart": {
@@ -103,7 +128,9 @@
     "date": "2015-01-02 12:00:00",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"],
+    "tags": [
+      "web"
+    ],
     "modified": "2014-12-29 10:29:34"
   },
   "adding-search-to-my-static-blog": {
@@ -111,7 +138,9 @@
     "date": "2015-06-03 17:56:13",
     "complete": false,
     "inprogress": true,
-    "tags": ["code"],
+    "tags": [
+      "code"
+    ],
     "modified": "2015-06-18 11:15:54"
   },
   "progressive-enhancement": {
@@ -119,7 +148,9 @@
     "date": "2015-06-22 17:59:07",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"],
+    "tags": [
+      "web"
+    ],
     "modified": "2015-11-25 08:49:15"
   },
   "terms-of-work": {
@@ -127,7 +158,9 @@
     "date": "2016-01-07 11:17:08",
     "complete": false,
     "inprogress": true,
-    "tags": ["business"],
+    "tags": [
+      "business"
+    ],
     "modified": "2016-02-21 18:17:33"
   },
   "a-price-on-code": {
@@ -135,7 +168,10 @@
     "date": "2016-02-18 10:56:06",
     "complete": false,
     "inprogress": true,
-    "tags": ["personal", "business"],
+    "tags": [
+      "personal",
+      "business"
+    ],
     "modified": "2016-08-15 13:44:28"
   },
   "a-common-security-vulnerability": {
@@ -143,7 +179,9 @@
     "date": "2016-03-01 10:21:41",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"],
+    "tags": [
+      "web"
+    ],
     "modified": "2016-08-13 22:49:35"
   },
   "fonts-third-parties-and-scripts": {
@@ -151,7 +189,9 @@
     "date": "2016-03-22 11:02:56",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"],
+    "tags": [
+      "web"
+    ],
     "modified": "2016-03-22 11:22:11"
   },
   "living-standard": {
@@ -160,7 +200,10 @@
     "modified": "2016-10-10 13:12:20",
     "complete": false,
     "inprogress": true,
-    "tags": ["web", "personal"]
+    "tags": [
+      "web",
+      "personal"
+    ]
   },
   "tr-tricks": {
     "title": "tr tricks",
@@ -168,7 +211,9 @@
     "modified": "2016-08-07 19:29:39",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "how-to-write-a-github-integration": {
     "title": "How to write a Github integration",
@@ -176,7 +221,9 @@
     "modified": "2017-12-12 08:39:35",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "emoji": {
     "title": "Emoji",
@@ -184,7 +231,9 @@
     "modified": "2016-09-02 21:18:52",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "wifi-and-vpns": {
     "title": "WiFi and VPNs",
@@ -192,7 +241,9 @@
     "modified": "2016-06-06 13:29:33",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "csrf-the-service-worker-challenge": {
     "title": "csrf: the service worker challenge",
@@ -200,7 +251,9 @@
     "modified": "2016-07-10 12:43:47",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "es6-pure-dev-has-finally-arrived": {
     "title": "ES6 pure dev has finally arrived",
@@ -208,7 +261,9 @@
     "modified": "2017-02-04 18:02:45",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "the-bane-of-build-tools": {
     "title": "The bane of build tools",
@@ -216,7 +271,9 @@
     "modified": "2016-09-21 15:10:37",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "living-standard-part-1": {
     "title": "Living Standard: part 1",
@@ -224,7 +281,9 @@
     "modified": "2016-10-12 11:33:11",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "what-i-learnt-from-creating-ffconfs-quine": {
     "title": "What I learnt from creating ffconf's quine",
@@ -232,7 +291,9 @@
     "modified": "2016-10-07 11:35:15",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "living-standard-part-2": {
     "title": "Living Standard - part 2",
@@ -240,7 +301,9 @@
     "modified": "2016-10-10 17:56:58",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "living-standard-part-3": {
     "title": "Living Standard - part 3",
@@ -248,7 +311,9 @@
     "modified": "2016-10-11 13:59:11",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "my-crumble": {
     "title": "My Crumble",
@@ -256,7 +321,9 @@
     "modified": "2016-12-19 10:49:12",
     "complete": true,
     "inprogress": false,
-    "tags": ["personal"]
+    "tags": [
+      "personal"
+    ]
   },
   "node-cli-workflow": {
     "title": "Node CLI workflow",
@@ -264,7 +331,9 @@
     "modified": "2016-11-28 20:28:37",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "time": {
     "title": "Time",
@@ -272,7 +341,9 @@
     "modified": "2016-12-03 09:36:50",
     "complete": true,
     "inprogress": false,
-    "tags": ["personal"]
+    "tags": [
+      "personal"
+    ]
   },
   "when-is-the-font-size-not-the-font-size": {
     "title": "When is the font size not the font size?",
@@ -280,7 +351,9 @@
     "modified": "2016-12-07 14:08:45",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "titles-for-blog-posts": {
     "title": "Titles for blog posts",
@@ -288,7 +361,9 @@
     "modified": "2017-05-29 12:49:10",
     "complete": false,
     "inprogress": true,
-    "tags": ["personal"]
+    "tags": [
+      "personal"
+    ]
   },
   "just-one-thing": {
     "title": "Just one thing",
@@ -296,7 +371,9 @@
     "modified": "2017-01-01 09:58:35",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "building-the-bike-shed": {
     "title": "Building the Bike Shed",
@@ -304,7 +381,9 @@
     "modified": "2017-01-12 19:20:56",
     "complete": true,
     "inprogress": false,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "trimming-the-release-test-cycle": {
     "title": "Trimming the release/test/fail/release cycle",
@@ -312,7 +391,9 @@
     "modified": "2017-01-13 11:59:37",
     "complete": true,
     "inprogress": false,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "your-own-online-video-course": {
     "title": "Your own online video course",
@@ -320,7 +401,9 @@
     "modified": "2017-02-02 15:32:04",
     "complete": false,
     "inprogress": true,
-    "tags": ["business"]
+    "tags": [
+      "business"
+    ]
   },
   "the-internet-as-explained-to-a-5-year-old": {
     "title": "The Internet as explained to a 5 year old",
@@ -328,7 +411,9 @@
     "modified": "2017-02-22 09:23:18",
     "complete": false,
     "inprogress": true,
-    "tags": ["personal"]
+    "tags": [
+      "personal"
+    ]
   },
   "universal-js-pe-and-forms": {
     "title": "Universal JS, PE and forms",
@@ -336,7 +421,9 @@
     "modified": "2017-04-07 11:53:23",
     "complete": false,
     "inprogress": true,
-    "tags": ["code"]
+    "tags": [
+      "code"
+    ]
   },
   "how-i-copy-paste-in-the-terminal": {
     "title": "✂📋 How I copy & paste in the terminal",
@@ -344,7 +431,9 @@
     "modified": "2017-04-10 22:22:54",
     "complete": false,
     "inprogress": true,
-    "tags": ["code"]
+    "tags": [
+      "code"
+    ]
   },
   "focus-or-all-the-things": {
     "title": "Focus or all the things?",
@@ -352,7 +441,9 @@
     "modified": "2017-06-01 11:32:12",
     "complete": false,
     "inprogress": true,
-    "tags": ["personal"]
+    "tags": [
+      "personal"
+    ]
   },
   "recreating-the-zx-spectrum-loader": {
     "title": "Recreating the ZX Spectrum loader",
@@ -360,7 +451,9 @@
     "modified": "2017-06-15 11:34:16",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   },
   "nextjs-prefetch-testing-fix": {
     "title": "Next.js prefetch & testing (fix)",
@@ -368,7 +461,9 @@
     "modified": "2017-07-11 21:08:43",
     "complete": false,
     "inprogress": true,
-    "tags": ["code"]
+    "tags": [
+      "code"
+    ]
   },
   "iceland-39": {
     "title": "Iceland 39",
@@ -376,7 +471,9 @@
     "modified": "2017-09-13 10:41:43",
     "complete": false,
     "inprogress": true,
-    "tags": ["personal"]
+    "tags": [
+      "personal"
+    ]
   },
   "easy-ssr-react-conf-schedule": {
     "title": "(Easy) SSR React conf schedule",
@@ -384,7 +481,9 @@
     "modified": "2017-09-27 14:52:01",
     "complete": false,
     "inprogress": true,
-    "tags": ["code"]
+    "tags": [
+      "code"
+    ]
   },
   "typedarrays": {
     "title": "TypedArrays",
@@ -392,7 +491,9 @@
     "modified": "2017-11-14 10:14:41",
     "complete": false,
     "inprogress": true,
-    "tags": ["code"]
+    "tags": [
+      "code"
+    ]
   },
   "on-compressing-32-character-uuid": {
     "title": "On compressing 32 character uuid",
@@ -400,7 +501,9 @@
     "modified": "2017-10-16 21:03:57",
     "complete": false,
     "inprogress": true,
-    "tags": ["code"]
+    "tags": [
+      "code"
+    ]
   },
   "cli-improved": {
     "title": "CLI-improved",
@@ -408,15 +511,8 @@
     "modified": "2017-12-08 13:35:13",
     "complete": false,
     "inprogress": true,
-    "tags": ["web"]
-  },
-  "is-jquery-still-relevant": {
-    "images": "/images/is-jquery-relevant.png",
-    "title": "Is jQuery still relevant?",
-    "date": "2017-12-13 16:10:45",
-    "modified": "2017-12-13 16:10:45",
-    "complete": false,
-    "inprogress": true,
-    "tags": ["web"]
+    "tags": [
+      "web"
+    ]
   }
 }
