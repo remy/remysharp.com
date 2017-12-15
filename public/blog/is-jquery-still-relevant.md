@@ -46,8 +46,8 @@ below.
 ### JavaScript library distribution
 
 The chart below is a query from July 2017 aggregating the count of the library
-name over a total of 998,346 web sites collected. The chart shows that jQuery
-accounts for a massive 39% of libraries found on the web sites.
+name over a total of 474,058 unique URLs collected. The chart shows that jQuery
+accounts for a massive 83% of libraries found on the web sites.
 
 Reading through the next libraries, jQuery UI _requires_ jQuery, as does
 Bootstrap and FlexSlider. Modernizr isn't a "do thing" library, nor are many of
