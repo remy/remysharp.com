@@ -99,6 +99,14 @@ riddled with issues. jQuery isn't the same. jQuery is
 shipped as the default JavaScript library for _a lot_ of large projects
 (WordPress being one of them).
 
+There's also the startup cost that jQuery affords. It's extremely cheap for a
+new developer to copy and paste some code that uses jQuery, and to add the
+jQuery library to immediately see a result. The same isn't entirely true with
+"modern" code using `import` or `export default` or destructuring, etc. It
+always work in the browser the individual is using and there's potential for a
+rabbit hole of tooling (though of course, I'd recommend they start with
+something like Create React App first, but this post is about jQuery, not CRA).
+
 You certainly don't _need_ jQuery today. Nor do you _need_ to learn jQuery.
 However, jQuery is far from dead, dying, outdated or irrelevant. It serves many
 developers from many different walks of life.
