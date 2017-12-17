@@ -15,7 +15,7 @@ after the turkey's been finished and before the arguments over monopoly start.
 Here are the films we've watched over the years (and our plan for 2012).
 
 I've marked the films that I'd recommend watch with a \* and those I'd watch a
-few times over with \** - though this based entirely my personal taste, your
+few times over with \*\* - though this based entirely my personal taste, your
 mileage may vary!
 
 ## 2006
@@ -23,7 +23,7 @@ mileage may vary!
 * [Elf (2003)](http://www.imdb.com/title/tt0319343/ "Elf (2003) - IMDb")\*
 * [Scrooged (1988)](http://www.imdb.com/title/tt0096061/ "Scrooged (1988) - IMDb")
 * [Hostile Hostages (aka The Ref) (1994)](http://www.imdb.com/title/tt0110955/ "The Ref (1994) - IMDb")\*
-* [The Snowman (1982)](http://www.imdb.com/title/tt0084701/ "The Snowman (1982) - IMDb")\**
+* [The Snowman (1982)](http://www.imdb.com/title/tt0084701/ "The Snowman (1982) - IMDb")\*\*
 
 (And a few others that we forgot to take note of)
 
@@ -33,24 +33,24 @@ mileage may vary!
 * [Santa Claus (1984)](http://www.imdb.com/title/tt0089961/ "Santa Claus (1985) - IMDb")
 * [The Santa Clause (1994)](http://www.imdb.com/title/tt0111070/ "The Santa Clause (1994) - IMDb")
 * [Home Alone (1990)](http://www.imdb.com/title/tt0099785/ "Home Alone (1990) - IMDb")\*
-* [National Lampoon: Christmas Vacation (1989)](http://www.imdb.com/title/tt0097958/ "Christmas Vacation (1989) - IMDb")\**
-* [Planes, Trains &amp; Automobiles (1987)](http://www.imdb.com/title/tt0093748/ "Planes, Trains & Automobiles (1987) - IMDb")\**
+* [National Lampoon: Christmas Vacation (1989)](http://www.imdb.com/title/tt0097958/ "Christmas Vacation (1989) - IMDb")\*\*
+* [Planes, Trains &amp; Automobiles (1987)](http://www.imdb.com/title/tt0093748/ "Planes, Trains & Automobiles (1987) - IMDb")\*\*
 
 ## 2008
 
 * [Muppets Christmas Carol (1992)](http://www.imdb.com/title/tt0104940/ "The Muppet Christmas Carol (1992) - IMDb")\*
 * [Miracle on 34th Street (1994)](http://www.imdb.com/title/tt0110527/ "Miracle on 34th Street (1994) - IMDb")
-* [Bad Santa (2003)](http://www.imdb.com/title/tt0307987/ "Bad Santa (2003) - IMDb")\**
+* [Bad Santa (2003)](http://www.imdb.com/title/tt0307987/ "Bad Santa (2003) - IMDb")\*\*
 * [Polar Express (2004)](http://www.imdb.com/title/tt0338348/ "The Polar Express (2004) - IMDb")
 * [Fred Claus (2007)](http://www.imdb.com/title/tt0486583/ "Fred Claus (2007) - IMDb")
 
 ## 2009
 
-* [Stardust (2007)](http://www.imdb.com/title/tt0486655/ "Stardust (2007) - IMDb")\**
+* [Stardust (2007)](http://www.imdb.com/title/tt0486655/ "Stardust (2007) - IMDb")\*\*
 * [Black Adders' Christmas Carol (1988)](http://www.imdb.com/title/tt0094754/ "Blackadder's Christmas Carol (TV 1988) - IMDb")\*
-* [A Christmas Story (1983)](http://www.imdb.com/title/tt0085334/ "A Christmas Story (1983) - IMDb")\**
+* [A Christmas Story (1983)](http://www.imdb.com/title/tt0085334/ "A Christmas Story (1983) - IMDb")\*\*
 * [The Holiday (2006)](http://www.imdb.com/title/tt0457939/ "The Holiday (2006) - IMDb")
-* [Love Actually (2003)](http://www.imdb.com/title/tt0314331/ "Love Actually (2003) - IMDb")\**
+* [Love Actually (2003)](http://www.imdb.com/title/tt0314331/ "Love Actually (2003) - IMDb")\*\*
 * [White Christmas (1954)](http://www.imdb.com/title/tt0047673/ "White Christmas (1954) - IMDb")
 
 ## 2010
@@ -60,21 +60,21 @@ mileage may vary!
 * [Nativity! (2009)](http://www.imdb.com/title/tt1242447/ "Nativity! (2009) - IMDb")
 * [Joyeux Noel (2005)](http://www.imdb.com/title/tt0424205/ "Joyeux Noel (2005) - IMDb")
 * [Holiday Inn (1942)](http://www.imdb.com/title/tt0034862/ "Holiday Inn (1942) - IMDb")
-* [Mixed Nuts (1984)](http://www.imdb.com/title/tt0110538/)\**
+* [Mixed Nuts (1984)](http://www.imdb.com/title/tt0110538/)\*\*
 
 ## 2011
 
 * [A Charlie Brown Christmas (1965)](http://www.imdb.com/title/tt0059026/)\*
-* [A Christmas Story (1983)](http://www.imdb.com/title/tt0085334/ "A Christmas Story (1983) - IMDb")\**
+* [A Christmas Story (1983)](http://www.imdb.com/title/tt0085334/ "A Christmas Story (1983) - IMDb")\*\*
 * [Gremlins (1984)](http://www.imdb.com/title/tt0087363/)
 * [Scrooged (1988)](http://www.imdb.com/title/tt0096061/ "Scrooged (1988) - IMDb")
-* [The Family Man (2000)](http://www.imdb.com/title/tt0218967/)\**
+* [The Family Man (2000)](http://www.imdb.com/title/tt0218967/)\*\*
 * [A Muppets Christmas: Letters to Santa (2008)](http://www.imdb.com/title/tt1292569/)
 
 ## 2012
 
 * [Rare Exports (2010)](http://www.imdb.com/title/tt1401143/) (saw this at the
-  Cinema in 2010 - frickin' awesome film!)\**
+  Cinema in 2010 - frickin' awesome film!)\*\*
 * [Miracle on 34th Street (1947)](http://www.imdb.com/title/tt0039628/)
 * [Jack Frost (1998)](http://www.imdb.com/title/tt0141109/ "Jack Frost (1998) - IMDb")
 * [Arthur Christmas (2011)](http://www.imdb.com/title/tt1430607/)\*
@@ -112,15 +112,23 @@ mileage may vary!
 
 ## 2017
 
-* [Bad Santa 2 (2016)](http://www.imdb.com/title/tt1798603/?ref_=fn_al_tt_1)
+* [Meet Me in St. Louis (1944)](http://www.imdb.com/title/tt0037059/)
 * [Office Christmas Party (2016)](http://www.imdb.com/title/tt1711525/)
-* [How the Grinch Stole Christmas (2000)](http://www.imdb.com/title/tt0170016/)
+* [A Merry Figgin Christmas (aka A Merry Christmas Miracle) (2014)](http://www.imdb.com/title/tt0910885/)
+* [Better Watch Out (2016)](http://www.imdb.com/title/tt4443658/)
+
+## 2018
+
+* [The Shop Around the Corner (1940)](http://www.imdb.com/title/tt0033045/?)
+* [8 Women (2002)](http://www.imdb.com/title/tt0283832/)
+* [Pottersville (2017)](http://www.imdb.com/title/tt3672120/)
+* [Die Hard (1988)](http://www.imdb.com/title/tt0095016/)
 
 ## Future Potentials
 
+* [Bad Santa 2 (2016)](http://www.imdb.com/title/tt1798603/?ref_=fn_al_tt_1)
+* [How the Grinch Stole Christmas (2000)](http://www.imdb.com/title/tt0170016/)
 * [Love the Coopers (2015)](http://www.imdb.com/title/tt2279339/)
-* [8 Women (2002)](http://www.imdb.com/title/tt0283832/)
-* [Die Hard (1988)](http://www.imdb.com/title/tt0095016/)
 * [Rise of the Guardians (2012)](http://www.imdb.com/title/tt1446192/)
 * [Eight Crazy Nights (2002)](http://www.imdb.com/title/tt0271263/)
 * I saw mummy kissing santa
