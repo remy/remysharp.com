@@ -131,6 +131,7 @@ mileage may vary!
 * [Love the Coopers (2015)](http://www.imdb.com/title/tt2279339/)
 * [Rise of the Guardians (2012)](http://www.imdb.com/title/tt1446192/)
 * [Eight Crazy Nights (2002)](http://www.imdb.com/title/tt0271263/)
+* [The Family Stone (2005)](http://www.imdb.com/title/tt0356680/)
 * I saw mummy kissing santa
 
 Again, what would you recommend, and why?
