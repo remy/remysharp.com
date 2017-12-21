@@ -112,9 +112,9 @@ mileage may vary!
 
 ## 2017
 
-* [Meet Me in St. Louis (1944)](http://www.imdb.com/title/tt0037059/)
 * [Office Christmas Party (2016)](http://www.imdb.com/title/tt1711525/)
 * [A Merry Figgin Christmas (aka A Merry Christmas Miracle) (2014)](http://www.imdb.com/title/tt0910885/)
+* [Bad Santa 2 (2016)](http://www.imdb.com/title/tt1798603/?ref_=fn_al_tt_1)
 * [Better Watch Out (2016)](http://www.imdb.com/title/tt4443658/)
 
 ## 2018
@@ -126,7 +126,7 @@ mileage may vary!
 
 ## Future Potentials
 
-* [Bad Santa 2 (2016)](http://www.imdb.com/title/tt1798603/?ref_=fn_al_tt_1)
+* [Meet Me in St. Louis (1944)](http://www.imdb.com/title/tt0037059/)
 * [How the Grinch Stole Christmas (2000)](http://www.imdb.com/title/tt0170016/)
 * [Love the Coopers (2015)](http://www.imdb.com/title/tt2279339/)
 * [Rise of the Guardians (2012)](http://www.imdb.com/title/tt1446192/)
