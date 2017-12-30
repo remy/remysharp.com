@@ -4,7 +4,7 @@ Typed arrays arrived in JavaScript some time ago but until recently I hadn't rea
 
 ## The old reliable array
 
-Prior to typed arrays, JavaScript had (or rather _has_) a primitive called an array. There's lots to be known about the array and I'll touch briefly on a few of it's best hits here before I move on to the *typed* array.
+Prior to typed arrays, JavaScript had (or rather _has_) a primitive called an array. There's lots to be known about the array and I'll touch briefly on a few of it's best hits here before I move on to the _typed_ array.
 
 Firstly, you can create a new array using two different syntaxes, using the array constructor and the literal:
 
@@ -57,11 +57,23 @@ console.log('length: %s, 0: %s', data.length, data[0]);
 // => length: 100, 0: undefined  😲
 ```
 
-So why use `new Array`? Perhaps if you want to predetermine the size of the array? Well, no, not really. Sure it makes an array of `undefined` elements, but in JavaScript specifically, the array is dynamic. That means that the size is *not* fixed or preallocated in memory (whereas C or Java would allocate the memory upon creation of the array).
+So why use `new Array`? Perhaps if you want to predetermine the size of the array? Well, no, not really. Sure it makes an array of `undefined` elements, but in JavaScript specifically, the array is dynamic. That means that the size is _not_ fixed or preallocated in memory (whereas C or Java would allocate the memory upon creation of the array).
 
 This means that you can `push`, `pop` etc on an array that was created using `new Array(n)`. So that's really _two_ strikes against using the `new Array` method for making arrays - because it can be misleading to other people reading the code.
 
-Pushing a new value onto this kind of array makes the array a "sparse array" if you've wondered about this term. These `undefined` items are also called holes, and there's some interesting reading at [speakingjs.com](http://speakingjs.com/es5/ch18.html#array_holes) that explains which array methods consider holes, and which do not.
+Pushing a new value onto this kind of array makes the array a _sparse array_ if you've wondered about this term. These `undefined` items are also called holes, and there's some interesting reading at [speakingjs.com](http://speakingjs.com/es5/ch18.html#array_holes) that explains which array methods consider holes, and which do not.
+
+Coincidentally, ES6 introduced a new method `Array.of` that returns a consistent array given the argument. Using the above example, but making use of `of` we can see how the result is what we'd expect:
+
+```js
+let data = Array.of(100, 101);
+console.log('length: %s, 0: %s, 1: %s', data.length, data[0], data[1]);
+// => length: 2, 0: 100, 1: 101
+
+data = Array.of(100);
+console.log('length: %s, 0: %s', data.length, data[0]);
+// => length: 1, 0: 100 👍
+```
 
 ### A use for a pre-sized array: Array.from
 
@@ -91,19 +103,12 @@ There's a lot of methods hanging off an array, both the object (`Array`) and arr
 
 Big O notation is when you might see O(n) or O(1) to signify how long a function is going to take. I'm always rusty with what it actually means, so here's a quick primer:
 
-
-
-
-
-
-
-
 ### References
 
-- ["Why never use new Array in Javascript"](https://coderwall.com/p/h4xm0w/why-never-use-new-array-in-javascript) - I wouldn't say "never", but certainly useful information
-- [Write up of Big O timings of pop, shift, etc](https://stackoverflow.com/a/22615787/22617)
-- [What the heck does O(n) mean anyway?](https://stackoverflow.com/a/2307314/22617)
+* ["Why never use new Array in Javascript"](https://coderwall.com/p/h4xm0w/why-never-use-new-array-in-javascript) - I wouldn't say "never", but certainly useful information
+* [Write up of Big O timings of pop, shift, etc](https://stackoverflow.com/a/22615787/22617)
+* [What the heck does O(n) mean anyway?](https://stackoverflow.com/a/2307314/22617)
 
 ### Notes
 
-- TypedArray .map/filter/etc return a typedarray, so `new Uint8Array([254, 255]).map(_ => _ + 1)` [ie](https://jsconsole.com/?console.log%28%20...new%20Uint8Array%28%5B254%2C%20255%5D%29.map%28_%20%3D%3E%20_%20+%201%29%20%29)
+* TypedArray .map/filter/etc return a typedarray, so `new Uint8Array([254, 255]).map(_ => _ + 1)` [ie](https://jsconsole.com/?console.log%28%20...new%20Uint8Array%28%5B254%2C%20255%5D%29.map%28_%20%3D%3E%20_%20+%201%29%20%29)

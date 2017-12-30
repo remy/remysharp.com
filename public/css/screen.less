@@ -257,8 +257,9 @@ video {
 
 a {
   color: @link-color;
-  text-decoration: none;
-  border-bottom: 1px solid @link-color;
+  text-decoration: underline;
+  text-decoration-skip: ink;
+  // border-bottom: 1px solid @link-color;
 
   &:hover,
   &:focus {
@@ -271,7 +272,7 @@ a {
   }
 
   code {
-    border-bottom: 1px solid rgb(0, 18, 108);
+    // border-bottom: 1px solid rgb(0, 18, 108);
   }
 }
 
@@ -395,8 +396,9 @@ h2.title {
     &:focus,
     &:hover {
       background: none;
-      border-bottom: 2px solid black;
-      // text-decoration: underline;
+      // border-bottom: 2px solid black;
+      text-decoration: underline;
+      text-decoration-skip: ink;
       // outline: none;
     }
   }

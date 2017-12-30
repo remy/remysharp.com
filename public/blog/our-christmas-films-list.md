@@ -114,7 +114,7 @@ mileage may vary!
 
 * [Office Christmas Party (2016)](http://www.imdb.com/title/tt1711525/)
 * [A Merry Figgin Christmas (aka A Merry Christmas Miracle) (2014)](http://www.imdb.com/title/tt0910885/)
-* [Bad Santa 2 (2016)](http://www.imdb.com/title/tt1798603/?ref_=fn_al_tt_1)
+* [Bad Santa 2 (2016)](http://www.imdb.com/title/tt1798603/)
 * [Better Watch Out (2016)](http://www.imdb.com/title/tt4443658/)
 
 ## 2018
@@ -132,6 +132,7 @@ mileage may vary!
 * [Rise of the Guardians (2012)](http://www.imdb.com/title/tt1446192/)
 * [Eight Crazy Nights (2002)](http://www.imdb.com/title/tt0271263/)
 * [The Family Stone (2005)](http://www.imdb.com/title/tt0356680/)
+* [Bad Mom's Christmas (2017)](http://www.imdb.com/title/tt6359956/)
 * I saw mummy kissing santa
 
 Again, what would you recommend, and why?
