@@ -20,7 +20,8 @@ function loadDisqus() {
   dsq.type = 'text/javascript';
   dsq.async = true;
   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; // jshint ignore:line
-  (document.getElementsByTagName('head')[0] ||
+  (
+    document.getElementsByTagName('head')[0] ||
     document.getElementsByTagName('body')[0]
   ).appendChild(dsq);
   disqusLoaded = true;
@@ -198,28 +199,3 @@ $(() => {
     hljs.highlightBlock(block);
   });
 });
-
-var token = 'vzZ1-MnjP7scUNCV7uya0A';
-
-$('#code-sponsor-widget .cs__footer a').attr(
-  'href',
-  'https://codesponsor.io/?utm_source=widget&utm_medium=banner&utm_campaign=' +
-    token
-);
-$.ajax({
-  url: 'https://app.codesponsor.io/p/' + token + '/message.json',
-  method: 'GET',
-})
-  .done(function(results) {
-    // $('.cs__blurb').attr('href', results.link_href);
-    $('#code-sponsor-widget').attr('href', results.link_href);
-    $('.cs__blurb strong').text(results.title);
-    $('.cs__blurb span').text(results.body);
-    $('.cs__pixel').attr('src', results.pixel_href);
-  })
-  .fail(function() {
-    // $('.cs__blurb strong').text('CodeSponsor.io');
-    // $('.cs__blurb span').text(
-    //   ' - get paid by adding one line of code to your README'
-    // );
-  });
