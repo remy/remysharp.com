@@ -2,13 +2,14 @@
 @subpanel-color: lighten(@subpanel-background, 40%);
 @code-background: rgb(63, 63, 63);
 @code-foreground: lighten(@code-background, 50%);
-@code-font: menlo, monaco, consolas, courier, 'courier new', 'lucida console', monospace;
+@code-font: menlo, monaco, consolas, courier, 'courier new', 'lucida console',
+  monospace;
 @cta-color: #1b95e0;
-@link-color: #00126C;
+@link-color: rgb(21, 101, 192); // #00126c;
 @main-font-color: #212121;
 @flickr-width: 235px;
 
-@import (inline) "system-font.css";
+@import (inline) 'system-font.css';
 
 /* Mixins */
 .transition (@prop: all, @time: 1s, @ease: linear) {
@@ -24,7 +25,7 @@
   &:before,
   &:after {
     display: table;
-    content: "";
+    content: '';
     line-height: 0;
   }
   &:after {
@@ -33,69 +34,72 @@
 }
 
 .flexbox(@dir:row, @justifycontent:flex-start) {
-  width:100%;
-  display:-webkit-box;
-  display:-moz-box;
-  display:-ms-flexbox;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
-  display:flex;
+  display: flex;
 
   .flexdirection(@dir);
   .flexjustify(@justifycontent);
 
-  .no-flexboxlegacy & { .clearfix();
-    > * { float:left; }
+  .no-flexboxlegacy & {
+    .clearfix();
+    > * {
+      float: left;
+    }
   }
 }
 
 .flexdirection(@dir:row) when(@dir = row) {
-  -webkit-box-orient:horizontal;
-  -moz-box-orient:horizontal;
-  -ms-box-orient:horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
 }
 .flexdirection(@dir:row) when(@dir = column) {
-  -webkit-box-orient:vertical;
-  -moz-box-orient:vertical;
-  -ms-box-orient:vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-box-orient: vertical;
 }
 .flexdirection(@dir) {
-  -webkit-flex-direction:@dir;
-  -ms-flex-direction:@dir;
-  flex-direction:@dir;
+  -webkit-flex-direction: @dir;
+  -ms-flex-direction: @dir;
+  flex-direction: @dir;
 }
 
 .flexjustify(@jc: flex-start) when(@jc = flex-start) {
-  -webkit-box-pack:start;
-  -moz-box-pack:start;
-  -ms-box-pack:start;
+  -webkit-box-pack: start;
+  -moz-box-pack: start;
+  -ms-box-pack: start;
 }
 .flexjustify(@jc: flex-start) when(@jc = flex-end) {
-  -webkit-box-pack:end;
-  -moz-box-pack:end;
-  -ms-box-pack:end;
+  -webkit-box-pack: end;
+  -moz-box-pack: end;
+  -ms-box-pack: end;
 }
 .flexjustify(@jc: flex-start) when(@jc = space-between) {
-  -webkit-box-pack:justify;
-  -moz-box-pack:justify;
-  -ms-box-pack:justify;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-box-pack: justify;
 }
 .flexjustify(@jc) {
-  -webkit-justify-content:@jc;
-  justify-content:@jc;
+  -webkit-justify-content: @jc;
+  justify-content: @jc;
 }
 
 .flex(@var: 1, @total: 1) {
-  -webkit-box-flex:@var;
-  -moz-box-flex:@var;
-  -webkit-flex:@var;
-  -ms-flex:@var;
-  flex:@var;
+  -webkit-box-flex: @var;
+  -moz-box-flex: @var;
+  -webkit-flex: @var;
+  -ms-flex: @var;
+  flex: @var;
   // .no-flexbox & {
   //   width: @var/@total*100%;
   // }
 }
 
-.order(@number){
+.order(@number) {
   -webkit-box-ordinal-group: @number;
   -moz-box-ordinal-group: @number;
   -ms-flex-order: @number;
@@ -103,15 +107,14 @@
   order: @number;
 }
 
-
 // // Flex Direction and Wrap
 // // - applies to: flex containers
 // // <flex-direction> || <flex-wrap>
 .flex-flow(@flow) {
   -webkit-flex-flow: @flow;
-     -moz-flex-flow: @flow;
-      -ms-flex-flow: @flow;
-          flex-flow: @flow;
+  -moz-flex-flow: @flow;
+  -ms-flex-flow: @flow;
+  flex-flow: @flow;
 }
 
 // slap it on everything styles
@@ -120,14 +123,65 @@
 }
 
 // RESET (http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/)
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td, figure {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+figure {
   margin: 0;
   padding: 0;
   border: 0;
@@ -146,7 +200,8 @@ body {
 iframe {
   display: block;
 }
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 /* tables still need 'cellspacing="0"' in the markup */
@@ -154,18 +209,22 @@ table {
   border-collapse: separate;
   border-spacing: 0;
 }
-caption, th, td {
+caption,
+th,
+td {
   text-align: left;
   font-weight: normal;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
 }
-blockquote, q {
-  quotes: "" "";
+blockquote,
+q {
+  quotes: '' '';
 }
-
 
 html {
   font-size: 120%;
@@ -184,7 +243,8 @@ body {
   max-width: 800px;
 }
 
-img, video {
+img,
+video {
   max-width: 100%;
   height: auto;
 }
@@ -196,7 +256,7 @@ a {
 
   &:hover,
   &:focus {
-    background: #1F296C;
+    background: #1f296c;
     color: #fff;
     border-bottom: none;
     text-decoration: none;
@@ -205,7 +265,10 @@ a {
   }
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-weight: 400;
   line-height: 1.1;
 }
@@ -225,7 +288,10 @@ h3 {
   font-size: 150%;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   margin: 16px 0;
 }
 
@@ -250,7 +316,8 @@ strong {
 #index-page {
   @index-heading-bg: lighten(#000, 80%);
 
-  h1, h2 {
+  h1,
+  h2 {
     color: white;
 
     a {
@@ -263,18 +330,17 @@ strong {
     background: multiply(@index-heading-bg, #555);
   }
 
-  article:nth-child(3n+0) h2.title {
+  article:nth-child(3n + 0) h2.title {
     background: multiply(@index-heading-bg, #888);
   }
 
-  article:nth-child(3n+1) h2.title {
+  article:nth-child(3n + 1) h2.title {
     background: multiply(@index-heading-bg, #aaa);
   }
 
-  article:nth-child(3n+2) h2.title {
+  article:nth-child(3n + 2) h2.title {
     background: multiply(@index-heading-bg, #ccc);
   }
-
 }
 
 .post {
@@ -287,7 +353,7 @@ strong {
   }
 
   header h2.title {
-    padding: 20px 60px
+    padding: 20px 60px;
   }
 }
 
@@ -350,13 +416,13 @@ nav {
       height: 45px;
     }
 
-    input[type="text"] {
+    input[type='text'] {
       // position: absolute;
       width: 80%;
       border: 0;
       margin: 10px;
     }
-    input[type="submit"] {
+    input[type='submit'] {
       margin: 10px;
       background: #ccc;
       position: absolute;
@@ -407,7 +473,6 @@ ul.post-nav {
       &:before {
         content: '« ';
       }
-
     }
   }
 }

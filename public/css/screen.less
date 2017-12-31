@@ -7,7 +7,7 @@
 @code-font: menlo, monaco, consolas, courier, 'courier new', 'lucida console',
   monospace;
 @cta-color: #1b95e0;
-@link-color: #00126c;
+@link-color: rgb(21, 101, 192); // #00126c;
 @main-font-color: #212121;
 @flickr-width: 235px;
 
@@ -259,11 +259,12 @@ a {
   color: @link-color;
   text-decoration: underline;
   text-decoration-skip: ink;
+  font-weight: 400;
   // border-bottom: 1px solid @link-color;
 
   &:hover,
   &:focus {
-    background: #1f296c;
+    background: @link-color;
     color: #fff;
     border-bottom: none;
     text-decoration: none;
