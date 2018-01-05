@@ -13,7 +13,7 @@ Marked.Renderer.prototype.paragraph = function(text) {
     return `<p>${words.slice(0, -1).join(' ')}&nbsp;${last}</p>\n`;
   }
   return `<p>${text}</p>`;
-}
+};
 
 Marked.Renderer.prototype.listitem = function(text) {
   if (/^\s*\[[x ]\]\s*/.test(text)) {
@@ -39,14 +39,15 @@ Marked.Renderer.prototype.image = function(href, title, text) {
         href = href.replace(/^https?:\/\/remysharp.com/, '');
       }
       const dim = sizeOf(__dirname + '/public' + href);
-      if (dim.width/2 <= 680) {
+      if (dim.width / 2 <= 680) {
         const base = 680 / dim.width;
         const h = dim.height * base;
-        out += `width="680" height="${h|0}"`;
+        out += `width="680" height="${h | 0}"`;
       } else {
         out += `width="${dim.width}" height="${dim.height}"`;
       }
     } catch (e) {
+      console.log(e);
       console.log('failed', href);
     }
   }

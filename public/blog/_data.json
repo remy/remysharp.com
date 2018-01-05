@@ -4735,5 +4735,14 @@
       "personal"
     ],
     "published": true
+  },
+  "to-gist-and-back-again": {
+    "title": "To gist and back again",
+    "date": "2018-01-05 12:32:56",
+    "modified": "2017-12-21 16:55:20",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }
