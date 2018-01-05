@@ -16,7 +16,7 @@ To get files online, you _could_ upload them individually to the gist website, o
 
 For Mac users, I'd recommend using the `brew install gist` (and get brew, the package installer from [brew.sh](https://brew.sh/)). Otherwise, `gem install gist` (though my own track record for using `gem install…` is fairly shaky, so hopefully you have more luck).
 
-Then you just specific the files to send up:
+Then you specify the files to send up:
 
 ```bash
 $ gist index.js package.json
