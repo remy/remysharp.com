@@ -60,4 +60,4 @@ This query is passed to `jq -r` - the `-r` part returns the result as a bare str
 
 Finally the **entire** result is `eval`ed through the command line which is the same as copying and pasting each line into the command line.
 
-The result: individual files with the contents from the gists.
+The result: **individual files with the contents from the gists.**
