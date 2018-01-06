@@ -515,12 +515,12 @@
       "web"
     ]
   },
-  "or-exit-a-nodemon-trick": {
-    "title": "Or exit: a nodemon trick",
+  "a-clean-exit": {
+    "title": "A clean exit",
     "date": "2018-01-05 14:28:18",
     "modified": "2018-01-05 14:28:18",
-    "complete": false,
-    "inprogress": true,
+    "complete": true,
+    "inprogress": false,
     "tags": [
       "code"
     ]
