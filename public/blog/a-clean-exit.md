@@ -33,7 +33,7 @@ When I ran mocha, it was returning an exit code of 2. This is a [weirdness of mo
 The "fix" is only a few characters though. When I run mocha inside of nodemon, I use an bash _and_ statement that reads "if this fails, fail with an exit 1":
 
 ```bash
-$ nodemon --exec "mocha bad.test.js && exit 1"
+$ nodemon --exec "mocha bad.test.js || exit 1"
 ```
 
 Now if mocha fails with `exit 2` it'll exit nodemon's _exec_ with an `exit 1` which nodemon sees as a failure.
