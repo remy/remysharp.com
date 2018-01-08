@@ -4744,5 +4744,14 @@
       "code"
     ],
     "published": true
+  },
+  "a-clean-exit": {
+    "title": "A clean exit",
+    "date": "2018-01-08 10:18:06",
+    "modified": "2018-01-05 14:28:18",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }
