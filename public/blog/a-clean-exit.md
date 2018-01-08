@@ -8,7 +8,7 @@ The thing is: when I ran a failing test with nodemon and mocha, the way mocha ex
 
 ## Exit codes
 
-When a process runs (in a unix-based system…I'm unsure how much applies to Windows), it will exit with a code. There's only a handful of standardised [exit codes](http://tldp.org/LDP/abs/html/exitcodes.html), but there's only a few _standard_ codes, and probably of most interest are:
+When a process runs (in a unix-based system…I'm unsure how much applies to Windows), it will exit with a code. There's only a handful of standardised [exit codes](http://tldp.org/LDP/abs/html/exitcodes.html), but the ones of most interest are:
 
 - **`exit 0`** → success
 - **`exit 1`** → failure
@@ -30,7 +30,7 @@ Running `sh -c "…"`  runs the string as a bash command and returns the result.
 
 When I ran mocha, it was returning an exit code of 2. This is a [weirdness of mocha that (misuses) the exit status](https://github.com/mochajs/mocha/issues/2438) reporting the _number_ of failing tests.
 
-The "fix" is simple though. When I run mocha inside of nodemon, I use an bash _and_ statement that reads "if this fails, fail with an exit 1":
+The "fix" is only a few characters though. When I run mocha inside of nodemon, I use an bash _and_ statement that reads "if this fails, fail with an exit 1":
 
 ```bash
 $ nodemon --exec "mocha bad.test.js && exit 1"
