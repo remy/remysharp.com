@@ -30,7 +30,7 @@ Running `sh -c "…"`  runs the string as a bash command and returns the result.
 
 When I ran mocha, it was returning an exit code of 2. This is a [weirdness of mocha that (misuses) the exit status](https://github.com/mochajs/mocha/issues/2438) reporting the _number_ of failing tests.
 
-The "fix" is only a few characters though. When I run mocha inside of nodemon, I use an bash _and_ statement that reads "if this fails, fail with an exit 1":
+The "fix" is only a few characters though. When I run mocha inside of nodemon, I use an bash _or_ statement that reads "if this fails, fail with an exit 1":
 
 ```bash
 $ nodemon --exec "mocha bad.test.js || exit 1"
