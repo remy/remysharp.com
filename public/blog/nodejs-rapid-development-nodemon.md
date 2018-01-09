@@ -8,7 +8,7 @@ The problem I encountered was that, unlike a PHP based web app, whenever I made 
 
 ## Install & usage
 
-You can install nodemon using [npm](npmjs.org) (a node package manager) via:
+You can install nodemon using [npm](https://npmjs.org) (a node package manager) via:
 
     npm install nodemon
 
@@ -30,7 +30,7 @@ As soon as you save a file in any directory of your application, nodemon will re
 
 ## What if I don't want it to restart?
 
-nodemon comes with the ability to ignore file patterns (regex's are supported thanks to [@fearphage](http://twitter.com/fearphage). So in my application, I've got a `public` directory used by [express](http://expressjs.com/). Node doesn't need to be restarted for those static files (images, CSS, .less, etc). So I can tell nodemon to ignore anything in the `public` directory. 
+nodemon comes with the ability to ignore file patterns (regex's are supported thanks to [@fearphage](http://twitter.com/fearphage). So in my application, I've got a `public` directory used by [express](http://expressjs.com/). Node doesn't need to be restarted for those static files (images, CSS, .less, etc). So I can tell nodemon to ignore anything in the `public` directory.
 
 nodemon will create an empty `nodemon-ignore` which you can add to (and here's a [fuller example](http://github.com/remy/nodemon/blob/master/nodemon-ignore.example)). So my `nodemon-ignore` would look like this:
 
