@@ -4753,5 +4753,16 @@
       "code"
     ],
     "published": true
+  },
+  "open-source-with-a-cap-in-hand": {
+    "title": "Open source with a cap in hand",
+    "date": "2018-01-10 13:31:03",
+    "modified": "2018-01-08 13:26:06",
+    "image": "/images/nodemon-issue-stats.png",
+    "tags": [
+      "web",
+      "business"
+    ],
+    "published": true
   }
 }
