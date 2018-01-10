@@ -1,18 +1,23 @@
 # Open source with a cap in hand
 
-Nodemon was first released in Oct 2010 ([via twitter no less](https://twitter.com/rem/statuses/26267574735)). To date has had 1,024 commits - 184 of which we community, the rest being from me - runs with over 150 tests (mostly integration tests) had 144 releases into npm, starred 13,172 times, has had 883 issues closed, merged 331 <abbr title="pull requests">PRs</abbr> (mostly mine, sorry), and in the last month, has been installed just shy of 3 million times.
+Nodemon was first released in Oct 2010 ([via twitter no less](https://twitter.com/rem/statuses/26267574735)). To date, nodemon has had 1,024 commits - 184 of which we community, the rest being from me - runs with over 150 tests (mostly integration tests) had 144 releases into npm, starred over 13,000 times, has had 883 issues closed, merged 331 <abbr title="pull requests">PRs</abbr> (mostly mine…sorry), and in the last month, has had just shy of **3 million installations**.
 
-So what? Well, up to around 4 months ago, nodemon's dev, and maintenance had pretty much ground to a halt. No one was contributing pull requests, and my motivation to make changes was nil. How does that change?
+So what? Well, up to around 4 months ago, nodemon's development and maintenance had pretty much ground to a halt. No one was contributing pull requests, and my motivation to make changes was nil.
+
+So how can I go about changing that?
 
 <!--more-->
 
 ## The spammy banner
 
-Yup, if you install nodemon today, you'll see this:
+Yup, if you install nodemon today, you'll see this message reading:
 
+<figure>
 ![nodemon postinstall](/images/nodemon-postinstall.png)
+<figcaption>Love nodemon? You can support th project!</figcaption>
+</figure>
 
-Specifically I'm asking users to support me, financially, through [open collective](https://opencollective.com/nodemon/order/2597).
+Specifically I'm asking users to support me, financially, through [open&nbsp;collective](https://opencollective.com/nodemon/order/2597) <small>(go on…a measly $2 a month…go on…)</small>.
 
 I've already received one pull request to remove it (claiming "spammy" as the reason) and a few twitter exchanges (of course) as to why I should work for free.
 
@@ -60,14 +65,50 @@ So, sure this can be a bit of a sledgehammer approach, but it has given new life
 
 There's many hugely popular, integral and well supported open source projects. jQuery, Babel, Webpack and many more. Some started by individuals, some started by friends, some by companies, but they're fortunate to have achieved a critical mass which keeps them running.
 
-I'm not entirely sure how nodemon is doing so well after all this time. It was never featured on the npm homepage (whereas alternatives like [forever](https://www.npmjs.com/package/forever) and [pm2](https://www.npmjs.com/package/pm2) were), compounded by nodemon coming from a non-US country (which, yes, does have an impact on adoption). I suspect the largest factors were that it came early on in Node's timeline and that it didn't require changes to your code (i.e. <abbr title="keep it simple, sillypoops">K.I.S.S</abbr>).
+<figure>
+  ![lol](/images/black-mirror-open-source.png)
+  <figcaption>[By @mabekatz](https://twitter.com/maybekatz/status/950963356139057154): The truth be said, amen!</figcaption>
+</figure>
 
-Nodemon probably would have gone fully stale if I hadn't made these two key changes. Money is a motivator, and making open source sustainable isn't riddled with heroic stories you might dream of. Here's [Gratipay dying](https://gratipay.news/the-end-cbfba8f50981), [CodeSponsor bailing](https://hackernoon.com/why-funding-open-source-is-hard-652b7055569d) and my own [struggles with JS Bin](https://remysharp.com/2015/09/17/jsbin-toxic-part-4#part-4-the-cost).
+I'm not entirely sure how nodemon is doing so well after all this time. It was never featured on the npm homepage (whereas alternatives like [forever](https://www.npmjs.com/package/forever) and [pm2](https://www.npmjs.com/package/pm2) were - both great tools <abbr title="by the way">btw</abbr>), compounded by nodemon coming from a non-US country (which, yes, does have an impact on adoption). I suspect the largest factors were that it came early on in Node's timeline and that it didn't require changes to your code (i.e. <abbr title="keep it simple, sillypoops">K.I.S.S</abbr>).
+
+Nodemon probably would have gone fully stale if I hadn't made these two key changes. Money _is_ a motivator, and making open source sustainable sadly isn't the dream story I'd love it to be. Here's [Gratipay dying](https://gratipay.news/the-end-cbfba8f50981), [CodeSponsor bailing](https://hackernoon.com/why-funding-open-source-is-hard-652b7055569d) and my own [struggles with JS Bin](https://remysharp.com/2015/09/17/jsbin-toxic-part-4#part-4-the-cost).
 
 Maybe these smaller open source projects aren't supposed to last 8+ years, but nodemon certainly has (and JS Bin is coming up on a decade this September). But whilst I'm still running these projects, there needs to be a constant motivator to create constant motivation to work on the project, and for that, I don't apologise.
 
-## What can _you_ do?
 
-Putting aside my thoughts, consider your position at your business. Are there projects that you business relies on? Go find their repositories and either try to get your business to donate a monthly amount (find them on sites like [Open Collective](https://opencollective.com/), [Patreon](https://www.patreon.com/) and even the repo itself) and if that's too much hassle, donate a one off, even if it's the price of a coffe - imagine for a moment the contribution that developer has made to your business.
+## Maintainers: what can you do?
 
-If this resonates with you, and you use nodemon, maybe **[support nodemon today](https://opencollective.com/nodemon/order/2597)**. Thank you ❤️
+This all really comes down to the popularity and the burden you bear running the project. I've got projects that are open source but pretty much just serve me ([express router cli](https://github.com/remy/express-router-cli), [undefsafe](https://github.com/remy/undefsafe), [bitcalc](https://github.com/remy/bitcalc) and many more!) and the issues raised and non-me usage is pretty low. i.e. there's no problem here.
+
+If, however, the project is starting to attract users which leads to different use cases, I'd strongly recommend some way to manage issues - StaleBot worked well for me, but was met with the odd grumble.
+
+**Maintaining a project in your own time is not a norm.** _If_ you work for a company, then hopefully they see the benefit to their business to let you work on the project during business hours. If you work for yourself, I believe, **strongly**, that you should be compensated in some way. If you can get that compensation through the pure satisfaction of helping someone, then good for you. If it takes something else,
+
+I've shared [my thoughts on open source](https://remysharp.com/2015/01/09/dont-like-open-source) and how I believe that code and publishing code is a distant 2nd to your own well-being.
+
+If you're a creator, then here's a list of platforms that I've collected that you might be able to use to help generate some support from (please note that I've not personally used all of these):
+
+- [patreon](https://www.patreon.com) - pretty much dominating the platforms at the moment
+- [open collective](https://opencollective.com) - full platform that includes discoverability
+- [liberapay](https://liberapay.com) - one off or regular donation platform (similar to -now gone-gratipay?)
+- [drip](https://d.rip) - Reinvented Drip by Kickstarter - currently invite only
+- [streamlabs](https://streamlabs.com) - for streaming content publishers
+- [paypal.me](https://www.paypal.me) - not a platform, but easy to link to
+- [ko-fi](https://ko-fi.com) - basically a nice front end to a one off PayPal donation
+- [medium](https://medium.com/creators) - move your content to Medium…
+- [steadyhq](https://steadyhq.com/en) - similar to Medium's partner program
+
+This resource on the ["lemonade stand"](https://github.com/nayafia/lemonade-stand) was sent to me today, and looks hugely useful and comprehensive (definitely bookmark that [link](https://github.com/nayafia/lemonade-stand)).
+
+## Users: what can _you_ do?
+
+Putting aside my thoughts, consider your position at your business. Are there projects that you business relies on? Go find their repositories and either try to get your business to donate a monthly amount (find them on sites like [Open Collective](https://opencollective.com/), [Patreon](https://www.patreon.com/) and even the repo itself) and if that's too much hassle, donate a one off, even if it's the price of a coffee - imagine for a moment the contribution that developer has made to your business.
+
+## Me: what will I do?
+
+Starting today, I've set aside a personal yearly budget of £1,200  ($1,600 / €1,350) to donate back to developers in a similar position to me: working in their own time, making a difference. This will be in addition to our yearly ffconf [scholarships](https://remysharp.com/2015/08/28/diversity-scholarships).
+
+I'm not 100% sure how I'll find these people and projects, I have an idea of a few, but I'll find a way and hopefully publish what I'm doing.
+
+If any of this resonates with you, and you use nodemon, maybe **[support nodemon today](https://opencollective.com/nodemon/order/2597)**. Thank you ❤️

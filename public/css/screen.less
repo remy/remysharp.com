@@ -330,7 +330,7 @@ p {
 small {
   display: inline-block;
   line-height: 24px;
-  font-size: 80%;
+  font-size: 70%;
 
   code {
     font-size: 90%;
@@ -474,9 +474,14 @@ ul.post-nav {
     float: right;
     padding-right: 20px;
 
-    &.home {
+    &.left {
+      position: relative;
       float: left;
-      // padding-left: 20px;
+      padding-left: 0;
+    }
+
+    &.home {
+      padding-left: 20px;
     }
 
     &.next a {
@@ -486,7 +491,6 @@ ul.post-nav {
     }
 
     &.search {
-      float: left;
       padding-left: 0;
       a {
         border-bottom: none;
@@ -1168,13 +1172,42 @@ div.search-result {
 }
 
 ul li.donate {
-  display: none;
   a {
+    position: relative;
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+
     &:hover {
       background: none;
     }
+
+    .liked {
+      display: inline-block;
+      left: -23px;
+      position: absolute;
+      width: 70px;
+      height: 50px;
+      background: url(/images/liked.svg) no-repeat;
+      background-position: 0 0;
+      top: -12px;
+    }
+
+    .liked:hover {
+      background-position: -3519px 0;
+      transition: background 1s steps(55);
+    }
+
+
     img {
-      vertical-align: text-bottom;
+      opacity: 0.7;
+      height: 16px;
+      vertical-align: middle;
+      transition: opacity ease-out 50ms;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 }

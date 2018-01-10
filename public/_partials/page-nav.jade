@@ -4,10 +4,10 @@ if current.path.indexOf('blog') === -1 && current.path+'' !== 'index'
   nav.main-nav.clearfix.subpanel
     != partial('../_partials/search')
     ul.post-nav
-      li.home: a(href="/") Home
-      li.search: a#search(href="#search") Search
-      //- li.donate
-      //-   :marked
-      //-     [![keep me honest](/images/donate.svg)](https://www.paypal.me/rem)
+      li.left.home: a(href="/") Home
+      li.left.donate
+        a(href="https://ko-fi.com/C0C87K87" target="_blank" title="Say thanks with a coffee")
+          span.liked
+      li.left.search: a#search(href="#search") Search
 
       li.next: a(href="#{ post.relative }" title="#{ post.title }") Latest post
