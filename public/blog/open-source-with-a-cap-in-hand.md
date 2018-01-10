@@ -14,7 +14,7 @@ Yup, if you install nodemon today, you'll see this message reading:
 
 <figure>
 ![nodemon postinstall](/images/nodemon-postinstall.png)
-<figcaption>Love nodemon? You can support th project!</figcaption>
+<figcaption>Love nodemon? You can support the project!</figcaption>
 </figure>
 
 Specifically I'm asking users to support me, financially, through [open&nbsp;collective](https://opencollective.com/nodemon/order/2597) <small>(go on…a measly $2 a month…go on…)</small>.
