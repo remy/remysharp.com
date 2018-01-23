@@ -1,109 +1,106 @@
 {
-  "index": {
-    "layout": true
-  },
   "what-went-in-to-remote-tilt-com": {
     "title": "What went in to remote-tilt.com",
     "date": "2012-02-01 17:27:11",
-    "published": false,
-    "modified": "2012-02-01 17:27:00"
+    "modified": "2012-02-01 17:27:00",
+    "draft": true
   },
   "why-i-prefer-mobile-web-apps-to-native-apps": {
     "title": "Why I prefer mobile web apps to native apps",
     "date": "2013-03-14 14:09:57",
-    "published": false,
     "tags": [
       "web"
     ],
-    "modified": "2013-03-14 14:09:00"
+    "modified": "2013-03-14 14:09:00",
+    "draft": true
   },
   "polyfill-is-not-progressive-enhancement": {
     "title": "Polyfill is not Progressive Enhancement",
     "date": "2013-04-02 11:03:47",
-    "published": false,
-    "modified": "2014-09-24 16:31:01"
+    "modified": "2014-09-24 16:31:01",
+    "draft": true
   },
   "first-contact": {
     "title": "First Contact",
     "date": "2014-05-05 13:35:13",
-    "published": false,
     "tags": [
       "business"
     ],
-    "modified": "2014-05-05 13:35:00"
+    "modified": "2014-05-05 13:35:00",
+    "draft": true
   },
   "git-push-to-live": {
     "title": "Git push to live",
     "date": "2014-05-30 13:00:13",
-    "published": false,
     "tags": [
       "web"
     ],
-    "modified": "2014-05-30 13:00:00"
+    "modified": "2014-05-30 13:00:00",
+    "draft": true
   },
   "apple-dont-care": {
     "title": "My beef with Apple",
     "date": "2013-05-19 12:00:00",
-    "published": false,
     "tags": [
       "web",
       "business"
     ],
-    "modified": "2016-02-15 13:10:23"
+    "modified": "2016-02-15 13:10:23",
+    "draft": true
   },
   "css-compression": {
     "title": "CSS Compression",
     "date": "2009-02-01 12:00:00",
-    "published": false,
     "tags": [
       "code"
     ],
-    "modified": "2009-02-01 16:37:30"
+    "modified": "2009-02-01 16:37:30",
+    "draft": true
   },
   "fragmentation": {
     "title": "Fragmentation",
     "date": "2012-11-26 12:00:00",
-    "published": false,
     "tags": [
       "web"
     ],
-    "modified": "2012-11-26 23:21:44"
+    "modified": "2012-11-26 23:21:44",
+    "draft": true
   },
   "localstorage": {
     "title": "Proposal for Async Web Storage API",
     "date": "2013-09-23 12:00:00",
-    "published": false,
     "tags": [
       "code"
     ],
-    "modified": "2013-09-23 20:54:38"
+    "modified": "2013-09-23 20:54:38",
+    "draft": true
   },
   "offline-panel": {
     "title": "Offline Panel",
     "date": "2013-09-27 12:00:00",
-    "published": false,
     "tags": [
       "web"
     ],
-    "modified": "2013-09-27 17:28:42"
+    "modified": "2013-09-27 17:28:42",
+    "draft": true
   },
   "harp": {
     "title": "Continuous integration with static site generator: Harp.js",
     "date": "2014-05-05 12:00:00",
-    "published": false,
     "tags": [
       "code"
     ],
-    "modified": "2014-10-04 23:44:57"
+    "modified": "2014-10-04 23:44:57",
+    "draft": true
   },
   "rewrite-it": {
     "title": "The \"let's just rewrite it\" syndrome",
     "date": "2014-08-05 12:00:00",
-    "published": false,
     "tags": [
       "business"
     ],
-    "modified": "2014-08-05 11:02:40"
+    "modified": "2014-08-05 11:02:40",
+    "draft": true
   },
   "jsbin-11-things-you-didnt-know": {
     "title": "11 things you didn't know JS Bin could do",
@@ -112,7 +109,8 @@
     "tags": [
       "web"
     ],
-    "modified": "2014-08-05 11:12:21"
+    "modified": "2014-08-05 11:12:21",
+    "draft": true
   },
   "debugging-document-events": {
     "title": "Debugging events in devtools inspector",
@@ -121,7 +119,8 @@
     "tags": [
       "code"
     ],
-    "modified": "2014-10-16 17:40:01"
+    "modified": "2014-10-16 17:40:01",
+    "draft": true
   },
   "horse-and-cart": {
     "title": "Maybe the Horse Before the Cart",
@@ -131,7 +130,8 @@
     "tags": [
       "web"
     ],
-    "modified": "2014-12-29 10:29:34"
+    "modified": "2014-12-29 10:29:34",
+    "draft": true
   },
   "adding-search-to-my-static-blog": {
     "title": "Adding search to my static blog",
@@ -141,7 +141,8 @@
     "tags": [
       "code"
     ],
-    "modified": "2015-06-18 11:15:54"
+    "modified": "2015-06-18 11:15:54",
+    "draft": true
   },
   "progressive-enhancement": {
     "title": "Progressive Enhancement",
@@ -151,7 +152,8 @@
     "tags": [
       "web"
     ],
-    "modified": "2015-11-25 08:49:15"
+    "modified": "2015-11-25 08:49:15",
+    "draft": true
   },
   "terms-of-work": {
     "title": "Terms of work",
@@ -161,7 +163,8 @@
     "tags": [
       "business"
     ],
-    "modified": "2016-02-21 18:17:33"
+    "modified": "2016-02-21 18:17:33",
+    "draft": true
   },
   "a-price-on-code": {
     "title": "A price on code",
@@ -172,7 +175,8 @@
       "personal",
       "business"
     ],
-    "modified": "2016-08-15 13:44:28"
+    "modified": "2016-08-15 13:44:28",
+    "draft": true
   },
   "a-common-security-vulnerability": {
     "title": "A common security vulnerability",
@@ -182,7 +186,8 @@
     "tags": [
       "web"
     ],
-    "modified": "2016-08-13 22:49:35"
+    "modified": "2016-08-13 22:49:35",
+    "draft": true
   },
   "fonts-third-parties-and-scripts": {
     "title": "Fonts, Third Parties and Scripts",
@@ -192,7 +197,8 @@
     "tags": [
       "web"
     ],
-    "modified": "2016-03-22 11:22:11"
+    "modified": "2016-03-22 11:22:11",
+    "draft": true
   },
   "living-standard": {
     "title": "Living Standard",
@@ -203,7 +209,8 @@
     "tags": [
       "web",
       "personal"
-    ]
+    ],
+    "draft": true
   },
   "tr-tricks": {
     "title": "tr tricks",
@@ -213,7 +220,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "how-to-write-a-github-integration": {
     "title": "How to write a Github integration",
@@ -223,7 +231,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "emoji": {
     "title": "Emoji",
@@ -233,7 +242,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "wifi-and-vpns": {
     "title": "WiFi and VPNs",
@@ -243,7 +253,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "csrf-the-service-worker-challenge": {
     "title": "csrf: the service worker challenge",
@@ -253,7 +264,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "es6-pure-dev-has-finally-arrived": {
     "title": "ES6 pure dev has finally arrived",
@@ -263,7 +275,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "the-bane-of-build-tools": {
     "title": "The bane of build tools",
@@ -273,7 +286,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "living-standard-part-1": {
     "title": "Living Standard: part 1",
@@ -283,7 +297,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "what-i-learnt-from-creating-ffconfs-quine": {
     "title": "What I learnt from creating ffconf's quine",
@@ -293,7 +308,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "living-standard-part-2": {
     "title": "Living Standard - part 2",
@@ -303,7 +319,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "living-standard-part-3": {
     "title": "Living Standard - part 3",
@@ -313,7 +330,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "my-crumble": {
     "title": "My Crumble",
@@ -323,7 +341,8 @@
     "inprogress": false,
     "tags": [
       "personal"
-    ]
+    ],
+    "draft": true
   },
   "node-cli-workflow": {
     "title": "Node CLI workflow",
@@ -333,7 +352,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "time": {
     "title": "Time",
@@ -343,7 +363,8 @@
     "inprogress": false,
     "tags": [
       "personal"
-    ]
+    ],
+    "draft": true
   },
   "when-is-the-font-size-not-the-font-size": {
     "title": "When is the font size not the font size?",
@@ -353,7 +374,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "titles-for-blog-posts": {
     "title": "Titles for blog posts",
@@ -363,7 +385,8 @@
     "inprogress": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "draft": true
   },
   "just-one-thing": {
     "title": "Just one thing",
@@ -373,7 +396,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "building-the-bike-shed": {
     "title": "Building the Bike Shed",
@@ -383,7 +407,8 @@
     "inprogress": false,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "trimming-the-release-test-cycle": {
     "title": "Trimming the release/test/fail/release cycle",
@@ -393,7 +418,8 @@
     "inprogress": false,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "your-own-online-video-course": {
     "title": "Your own online video course",
@@ -403,7 +429,8 @@
     "inprogress": true,
     "tags": [
       "business"
-    ]
+    ],
+    "draft": true
   },
   "the-internet-as-explained-to-a-5-year-old": {
     "title": "The Internet as explained to a 5 year old",
@@ -413,7 +440,8 @@
     "inprogress": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "draft": true
   },
   "universal-js-pe-and-forms": {
     "title": "Universal JS, PE and forms",
@@ -423,7 +451,8 @@
     "inprogress": true,
     "tags": [
       "code"
-    ]
+    ],
+    "draft": true
   },
   "how-i-copy-paste-in-the-terminal": {
     "title": "✂📋 How I copy & paste in the terminal",
@@ -433,7 +462,8 @@
     "inprogress": false,
     "tags": [
       "code"
-    ]
+    ],
+    "draft": true
   },
   "focus-or-all-the-things": {
     "title": "Focus or all the things?",
@@ -443,7 +473,8 @@
     "inprogress": true,
     "tags": [
       "personal"
-    ]
+    ],
+    "draft": true
   },
   "recreating-the-zx-spectrum-loader": {
     "title": "Recreating the ZX Spectrum loader",
@@ -453,7 +484,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "nextjs-prefetch-testing-fix": {
     "title": "Next.js prefetch & testing (fix)",
@@ -463,17 +495,8 @@
     "inprogress": true,
     "tags": [
       "code"
-    ]
-  },
-  "iceland-39": {
-    "title": "Iceland 39",
-    "date": "2017-09-13 10:41:43",
-    "modified": "2017-09-13 10:41:43",
-    "complete": false,
-    "inprogress": true,
-    "tags": [
-      "personal"
-    ]
+    ],
+    "draft": true
   },
   "easy-ssr-react-conf-schedule": {
     "title": "(Easy) SSR React conf schedule",
@@ -483,7 +506,8 @@
     "inprogress": true,
     "tags": [
       "code"
-    ]
+    ],
+    "draft": true
   },
   "typedarrays": {
     "title": "TypedArrays",
@@ -493,7 +517,8 @@
     "inprogress": true,
     "tags": [
       "code"
-    ]
+    ],
+    "draft": true
   },
   "on-compressing-32-character-uuid": {
     "title": "On compressing 32 character uuid",
@@ -503,7 +528,8 @@
     "inprogress": true,
     "tags": [
       "code"
-    ]
+    ],
+    "draft": true
   },
   "cli-improved": {
     "title": "CLI-improved",
@@ -513,7 +539,8 @@
     "inprogress": true,
     "tags": [
       "web"
-    ]
+    ],
+    "draft": true
   },
   "jq-recipes": {
     "title": "jq recipes",
@@ -523,7 +550,8 @@
     "inprogress": true,
     "tags": [
       "code"
-    ]
+    ],
+    "draft": true
   },
   "opening-windows-again-part-2-dev": {
     "title": "Opening Windows again (part 2: dev)",
@@ -533,6 +561,7 @@
     "inprogress": true,
     "tags": [
       "code"
-    ]
+    ],
+    "draft": true
   }
 }

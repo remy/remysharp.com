@@ -42,3 +42,62 @@ Update all outdated npm dependencies:
 ```
 npm i $(echo $(npm outdated --json | jq -r 'to_entries | .[] | "\(.key)@\(.value.latest)"'))
 ```
+
+---
+
+Add a new property to every object:
+
+```
+map(. + { "draft": true })
+```
+
+Or
+
+```
+[.[] | . + { "draft" : true }]
+```
+
+[Example](https://jace.isthe.link/#!/b58f7f62-c667-40c2-b95a-64e9308ac6c0?query=%5B.%5B%5D%20%7C%20.%20+%20%7B%20%22draft%22%20%3A%20true%20%7D%5D)
+
+---
+
+Add new property to every object in a nested object, i.e. source looks like:
+
+```json
+{
+ "offline-panel": {
+    "title": "Offline Panel",
+    "tags": [
+      "web"
+    ]
+  },
+  "rewrite-it": {
+    "title": "Let's just rewrite it",
+    "tags": [
+      "business"
+    ]
+  }
+}
+```
+
+Command:
+
+```
+with_entries(.value += { "draft": true})
+```
+
+---
+
+Remove a property from a nested object (example as above):
+
+```
+with_entries(.value |= del(.title))
+```
+
+---
+
+List all the dependencies in a `package.json` for use in other commands (like `npm un`):
+
+```
+echo $(cat package.json | jq '.dependencies | keys | .[] | "\(.)"' -r)
+```
