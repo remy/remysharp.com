@@ -1,0 +1,67 @@
+a.cta,
+a.cta:hover {
+  text-decoration: none;
+  border: 1px solid #dcdcdc;
+  display: block;
+  padding: 0px;
+  background: none;
+  color: inherit;
+  overflow: hidden;
+  position: relative;
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    border-color: #ccc;
+  }
+
+  img {
+    float: left;
+    max-height: 140px;
+    margin-right: 20px;
+  }
+
+  & > div {
+    padding: 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .label {
+    font-size: 70%;
+    height: inherit;
+    display: inline-block;
+    margin-right: 5px;
+    background: #4caf50;
+    line-height: initial;
+    border-radius: 3px;
+    color: white;
+    padding: 2px 5px;
+    vertical-align: text-top;
+  }
+
+  .desc {
+    font-size: 80%;
+    line-height: 1.6;
+  }
+
+  &:after {
+    // content: 'Ad';
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background: gainsboro;
+    color: white;
+    font-size: 70%;
+    padding: 0 5px;
+    border-bottom-left-radius: 2px;
+    // content: 'Learn more';
+  }
+
+  &:hover:after {
+    background: #ccc;
+  }
+}
