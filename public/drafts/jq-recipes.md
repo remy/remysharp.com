@@ -118,3 +118,20 @@ echo $(cat package.json | jq '.dependencies | keys | .[] | "\(.)"' -r)
 ```
 
 [Demo](https://jqterm.com/#!/91ad0e49459c2e6e41db363ca228574d?query=.dependencies%20%7C%20keys%20%7C%20.%5B%5D%20%7C%20%22%5C%28.%29%22)
+
+---
+
+Get mongodb data into jq compatible format:
+
+```
+mongo <host>/<db> --norc --username <username> --password <password> --eval 'DBQuery.shellBatchSize = 500; db.getCollection("users").find({"created" : { $gte : new ISODate("2018-02-09T00:15:31Z") }}, { email: 1 }).map(function(_){ delete _._id; return tojson(_) })' |
+jq --slurp '.[]'
+```
+
+---
+
+From Twitter's API, take all DM received and sent and transform into readable format sorted by date order:
+
+```
+[ .[] | { text, date: .created_at, from: { screen_name: .sender.screen_name }, to: { screen_name: .recipient.screen_name} } ] | sort_by(.date)
+```
