@@ -563,5 +563,15 @@
       "code"
     ],
     "draft": true
+  },
+  "why-i-have-a-limited-company": {
+    "title": "Why I have a limited company",
+    "date": "2018-03-03 13:50:41",
+    "modified": "2018-03-03 13:50:41",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "business"
+    ]
   }
 }
