@@ -18,11 +18,11 @@ The fix is to download and install a font that replaces the name of the Apple Em
 
 Once I found the right copy of the fonts online, it was straight forward - though it does mean I'm now using the EmojiOne fontset and not the set directly from Apple (but really, I don't care that much).
 
-Firstly download the [Apple Font](https://github.com/Ranks/emojione/blob/07955d394c9f2e80dd43445fd2eb6bb4fd460d54/extras/fonts/README.md#apple-font). Then when you double click to install, you'll be prompt with a conflict. I accepted the conflict (it means both Apple Emoji Color fonts are installed, but only one is active).
+Firstly download the [Apple Font](https://github.com/emojione/emojione/tree/master/extras/fonts). Then when you double click to install, you'll be prompt with a conflict. I accepted the conflict (it means both Apple Emoji Color fonts are installed, but only one is active).
 
 Now I've got the complete emoji font set, and it means when emoji is used on a web page, I'm able to infer it's full meaning, rather than have to guess what the tofu is supposed to mean (which begs questions of accessibility, but that's for another time).
 
-Now my emoji score card looks like this:
+Now my emoji [score card](http://eosrei.github.io/emojione-color-font/full-demo.html) looks like this:
 
 ![Full emoji support](/images/full-emoji-support.jpg)
 
