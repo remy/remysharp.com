@@ -21,6 +21,16 @@ Bottom line: latency based DNS. Only available in AWS AFAIK, plus instances need
 
 # Details
 
+## Installing Dokku
+
+Launch from this stack: https://github.com/tobiasmcnulty/dokku-aws
+
+Then update the machine, and add ssh for dokku using:
+
+```bash
+$ curl -s https://jsonbin.org/remy/ssh-key  | sudo dokku ssh-keys:add $USER
+```
+
 ## SSL
 
 I looked at using AWS Cerficate Manager, and this works with CloudFront distributions, but this is just a CDN. A CDN for dynamic content is great, except that taxtools' general usage is a one off hit to get all the data you need, so that first hit **must** be fast, and with a CDN, the first request runs through the CDN and retrieves the original object, and returns it. The second hit is the fast one, but that's too late for us already.

@@ -55,6 +55,16 @@ npm i $(echo $(npm outdated --json | jq -r 'to_entries | .[] | "\(.key)@\(.value
 
 ---
 
+Install the dependencies from one node project to another:
+
+```
+npm i $(cat ../other-project/package.json| jq '.dependencies | keys[]' -r)
+```
+
+[Demo](https://jqterm.com/#!/52dc3f83ee31266c193bd3d77311e93d?query=.dependencies%20%7C%20keys%5B%5D)
+
+---
+
 Add a new property to every object:
 
 ```
@@ -135,3 +145,18 @@ From Twitter's API, take all DM received and sent and transform into readable fo
 ```
 [ .[] | { text, date: .created_at, from: { screen_name: .sender.screen_name }, to: { screen_name: .recipient.screen_name} } ] | sort_by(.date)
 ```
+
+---
+
+Using Serverless and Next.js and working out which dependencies I need to force include (because they live in the `.next` directory):
+
+```
+$ depcheck --json | jq '.using | [to_entries[] | select(.value[] | contains("/.next/")) | .key] | unique | sort[] | "- \(.)"' -r
+```
+
+Note: also uses [depcheck](https://www.npmjs.com/package/depcheck) to resolve the npm dependencies.
+
+[Demo](https://jqterm.com/#!/dd6eb7b65d9c5a966919644b2ed60e57?query=.using%20%7C%20%5Bto_entries%5B%5D%20%7C%20select%28.value%5B%5D%20%7C%20contains%28%22/.next/%22%29%29%20%7C%20.key%5D%20%7C%20unique%20%7C%20sort%5B%5D%20%7C%20%22-%20%5C%28.%29%22)
+
+---
+
