@@ -9,7 +9,7 @@ Convert object to array, moving the key into the array item under the property
 . | to_entries | map_values(.value + { slug: .key })
 ```
 
-[Demo](https://jqterm.com/#!/155c8ee00d2584c70846bc7bfaac067a?query=.%20%7C%20to_entries%20%7C%20map_values%28.value%20+%20%7B%20slug%3A%20.key%20%7D%29)
+[Demo](https://jqterm.com/#!/155c8ee00d2584c70846bc7bfaac067a?query=.%20%7C%20to_entries%20%7C%20map_values%28.value%20%2B%20%7B%20slug%3A%20.key%20%7D%29)
 
 ---
 
@@ -31,7 +31,7 @@ formerly group:
 [.team, (.formerly | map(. + {formerly: true }))] | flatten
 ```
 
-[Demo](https://jqterm.com/#!/d86a7fa855323ee5b3f9c5cf754099fe?query=%5B.team%2C%20%28.formerly%20%7C%20map%28.%20+%20%7Bformerly%3A%20true%20%7D%29%29%5D%20%7C%20flatten)
+[Demo](https://jqterm.com/#!/d86a7fa855323ee5b3f9c5cf754099fe?query=%5B.team%2C%20%28.formerly%20%7C%20map%28.%20%2B%20%7Bformerly%3A%20true%20%7D%29%29%5D%20%7C%20flatten)
 
 ---
 
@@ -77,7 +77,7 @@ Or
 [.[] | . + { "draft" : true }]
 ```
 
-[Demo](https://jqterm.com/#!/8e8dd22be903e002b418be272a2f8cf0?query=map%28.%20+%20%7B%20%22draft%22%3A%20true%20%7D%29)
+[Demo](https://jqterm.com/#!/8e8dd22be903e002b418be272a2f8cf0?query=map%28.%20%2B%20%7B%20%22draft%22%3A%20true%20%7D%29)
 
 ---
 
@@ -106,7 +106,7 @@ Command:
 with_entries(.value += { "draft": true})
 ```
 
-[Demo](https://jqterm.com/#!/c64de24dcdf718b3c9e32b7cef54c49f?query=with_entries%28.value%20+%3D%20%7B%20%22draft%22%3A%20true%7D%29)
+[Demo](https://jqterm.com/#!/c64de24dcdf718b3c9e32b7cef54c49f?query=with_entries%28.value%20%2B%3D%20%7B%20%22draft%22%3A%20true%7D%29)
 
 
 ---
@@ -134,8 +134,9 @@ echo $(cat package.json | jq '.dependencies | keys | .[] | "\(.)"' -r)
 Get mongodb data into jq compatible format:
 
 ```
-mongo <host>/<db> --norc --username <username> --password <password> --eval 'DBQuery.shellBatchSize = 500; db.getCollection("users").find({"created" : { $gte : new ISODate("2018-02-09T00:15:31Z") }}, { email: 1 }).map(function(_){ delete _._id; return tojson(_) })' |
-jq --slurp '.[]'
+mongo <host>/<db> --norc --username <user> --password <pwd> \
+  --eval 'printjson(db.getCollection("users").find().toArray())' | \
+  jq '.[]'
 ```
 
 ---
@@ -160,3 +161,35 @@ Note: also uses [depcheck](https://www.npmjs.com/package/depcheck) to resolve th
 
 ---
 
+From a nested tree of objects, find the object whose `id` matches X:
+
+```
+curl -sL https://git.io/vxPyi | \
+  jq '.. | select(type == "object" and .id == "0:16")'
+```
+
+[Demo](https://jqterm.com/#!/d0619b651ba710d41878260f5947b98a?query=..%20%7C%20select%28type%20%3D%3D%20%22object%22%20and%20.id%20%3D%3D%20%220%3A16%22%29)
+
+---
+
+Strip all occurrences of a property (`email` in this example):
+
+```
+walk(if type == "object" then . | del(.email) else . end)
+```
+
+Note that the `walk` function is missing from jq@1.5 and needs to be added (seen in demo).
+
+[Demo](https://jqterm.com/#!/5720a29ba9992666879ce0f915ab2208?query=%23%20walk%20was%20removed%20from%20jq%401.5%0Adef%20walk%28f%29%3A%0A%20%20.%20as%20%24in%0A%20%20%7C%20if%20type%20%3D%3D%20%22object%22%20then%0A%20%20%20%20%20%20reduce%20keys%5B%5D%20as%20%24key%0A%20%20%20%20%20%20%20%20%28%20%7B%7D%3B%20.%20%2B%20%7B%20%28%24key%29%3A%20%20%28%24in%5B%24key%5D%20%7C%20walk%28f%29%29%20%7D%20%29%20%7C%20f%0A%20%20elif%20type%20%3D%3D%20%22array%22%20then%20map%28%20walk%28f%29%20%29%20%7C%20f%0A%20%20else%20f%0A%20%20end%3B%0A%0Awalk%28if%20type%20%3D%3D%20%22object%22%20then%20.%20%7C%20del%28.email%29%20else%20.%20end%29)
+
+---
+
+Bulk insert into elastic search using a vanilla JSON array, i.e. [1,2,3,4] - zipping the array with the required elastic search metadata:
+
+```
+cat data.json | \
+  jq 'reduce .[] as $n ([]; . + [{ "index" : { "_index": "my-index", "_type" : "my-type" } }, $n]) | .[]' -c | \
+  curl -H "Content-Type: application/x-ndjson" -XPOST http://localhost:9200/_bulk --data-binary "@-"
+```
+
+[Demo](https://jqterm.com/#!/5016c9cd4d23cfad99f777e4d17560b3?query=reduce%20.%5B%5D%20as%20%24n%20%28%5B%5D%3B%20.%20%2B%20%5B%7B%20%22index%22%20%3A%20%7B%20%22_index%22%3A%20%22my-index%22%2C%20%22_type%22%20%3A%20%22my-type%22%20%7D%20%7D%2C%20%24n%5D%29%20%7C%20.%5B%5D)
