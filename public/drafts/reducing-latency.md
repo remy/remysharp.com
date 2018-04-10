@@ -84,6 +84,16 @@ sudo apt-get update
 sudo apt-get install nginx=1.11.* -y
 ```
 
+If you can upgrade beyond nginx 1.11.x then you can use:
+
+```bash
+sudo -s
+nginx=stable # use nginx=development for latest development version
+add-apt-repository ppa:nginx/$nginx
+apt-get update
+apt-get install nginx
+```
+
 ## Problems
 
 - Need to put monitoring in place for **all** systems, not just the domain (I'm using updown.io but thankfully it requests from different locations so it hits different individual servers)

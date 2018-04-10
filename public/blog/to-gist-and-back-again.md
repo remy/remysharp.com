@@ -47,14 +47,14 @@ $ tree
 
 ### What's actually happening?
 
-The `jq` is given a "script" to run against the JSON result of the gist API call. You can play with an [interactive jq toy I built](https://jace.isthe.link/#!/4e98ce1584b6b34a9c6edff4d9432143?query=.files%20%7C%20to_entries%20%7C%20.%5B%5D.value%20%7C%20@sh%20%22echo%20%5C%28.content%29%20%3E%20%5C%28.filename%29%22) and see the effects of tweaking the query.
+The `jq` is given a "script" to run against the JSON result of the gist API call. You can play with an [interactive jq toy I built](https://jqterm.com/#!/4e98ce1584b6b34a9c6edff4d9432143?query=.files%20%7C%20to_entries%20%7C%20.%5B%5D.value%20%7C%20@sh%20%22echo%20%5C%28.content%29%20%3E%20%5C%28.filename%29%22) and see the effects of tweaking the query.
 
 To explain the query:
 
-* [`.files`](https://jace.isthe.link/#!/4e98ce1584b6b34a9c6edff4d9432143?query=.files): reads the `files` property.
-* [`to_entries`](https://jace.isthe.link/#!/4e98ce1584b6b34a9c6edff4d9432143?query=.files%20%7C%20to_entries): transforms the objects into an array that exposes the property from each unique filename into a common property name.
-* [`.[].value`](https://jace.isthe.link/#!/4e98ce1584b6b34a9c6edff4d9432143?query=.files%20%7C%20to_entries%20%7C%20.%5B%5D.value): returns a list (not an array) of objects that contain the filename and contents for plucking.
-* [`@sh "echo \(.content) > \(.filename)"`](https://jace.isthe.link/#!/4e98ce1584b6b34a9c6edff4d9432143?query=.files%20%7C%20to_entries%20%7C%20.%5B%5D.value%20%7C%20@sh%20%22echo%20%5C%28.content%29%20%3E%20%5C%28.filename%29%22): generates a "shell safe" string that is the `echo` command piped into a file as named by the `.filename` property in our object. The `\(.<prop>)` syntax is the template syntax for jq.
+* [`.files`](https://jqterm.com/#!/4e98ce1584b6b34a9c6edff4d9432143?query=.files): reads the `files` property.
+* [`to_entries`](https://jqterm.com/#!/4e98ce1584b6b34a9c6edff4d9432143?query=.files%20%7C%20to_entries): transforms the objects into an array that exposes the property from each unique filename into a common property name.
+* [`.[].value`](https://jqterm.com/#!/4e98ce1584b6b34a9c6edff4d9432143?query=.files%20%7C%20to_entries%20%7C%20.%5B%5D.value): returns a list (not an array) of objects that contain the filename and contents for plucking.
+* [`@sh "echo \(.content) > \(.filename)"`](https://jqterm.com/#!/4e98ce1584b6b34a9c6edff4d9432143?query=.files%20%7C%20to_entries%20%7C%20.%5B%5D.value%20%7C%20@sh%20%22echo%20%5C%28.content%29%20%3E%20%5C%28.filename%29%22): generates a "shell safe" string that is the `echo` command piped into a file as named by the `.filename` property in our object. The `\(.<prop>)` syntax is the template syntax for jq.
 
 This query is passed to `jq -r` - the `-r` part returns the result as a bare string (rather than quoted as you'll see the result in the Jace tool links).
 

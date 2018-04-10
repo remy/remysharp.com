@@ -165,10 +165,10 @@ From a nested tree of objects, find the object whose `id` matches X:
 
 ```
 curl -sL https://git.io/vxPyi | \
-  jq '.. | select(type == "object" and .id == "0:16")'
+  jq '.. | objects | select(.id == "0:16")'
 ```
 
-[Demo](https://jqterm.com/#!/d0619b651ba710d41878260f5947b98a?query=..%20%7C%20select%28type%20%3D%3D%20%22object%22%20and%20.id%20%3D%3D%20%220%3A16%22%29)
+[Demo](https://jqterm.com/#!/d0619b651ba710d41878260f5947b98a?query=..%20%7C%20objects%20%7C%20select%28.id%20%3D%3D%20%220%3A16%22%29)
 
 ---
 
