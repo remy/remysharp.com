@@ -4,6 +4,8 @@ When writing my node modules, I've come to really quite enjoy using Jest for tes
 
 Sometimes however, being able to execute the module on the command line and passing some arbitrary data can be pretty handy, and I've used the following technique on a growing handful of modules I've written.
 
+<!--more-->
+
 ## Exporting to the CLI
 
 I've written a module called `bin-to-file`. It's an old JS Bin module that takes a bin structure and returns a single HTML string with everything smooshed together.
