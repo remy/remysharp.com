@@ -7,7 +7,6 @@
   },
   "scripts": {
     "test": "semantic-release pre",
-    "//heroku-postbuild": "node server.js compile",
     "start": "node server.js",
     "build": "node server.js compile",
     "semantic-release": "npm run build",
