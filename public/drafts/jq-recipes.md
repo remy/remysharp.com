@@ -6,10 +6,20 @@ Convert object to array, moving the key into the array item under the property
 `slug`:
 
 ```
-. | to_entries | map_values(.value + { slug: .key })
+to_entries | map_values(.value + { slug: .key })
 ```
 
-[Demo](https://jqterm.com/#!/155c8ee00d2584c70846bc7bfaac067a?query=.%20%7C%20to_entries%20%7C%20map_values%28.value%20%2B%20%7B%20slug%3A%20.key%20%7D%29)
+[Demo](https://jqterm.com/#!/155c8ee00d2584c70846bc7bfaac067a?query=to_entries%20%7C%20map_values%28.value%20%2B%20%7B%20slug%3A%20.key%20%7D%29)
+
+---
+
+Convert an array to a keyed object (the inverse of the above example):
+
+```
+map({ (.slug): . }) | add
+```
+
+[Demo](https://jqterm.com/#!/8105d5a8a4a0ec564c68508063a40aac?query=map%28%20%7B%20%28.slug%29%3A%20.%20%7D%20%29%20%7C%20add)
 
 ---
 

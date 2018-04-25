@@ -226,7 +226,7 @@
   "how-to-write-a-github-integration": {
     "title": "How to write a Github integration",
     "date": "2016-05-29 13:03:53",
-    "modified": "2017-12-12 08:39:35",
+    "modified": "2017-12-12 14:16:08",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -454,17 +454,6 @@
     ],
     "draft": true
   },
-  "how-i-copy-paste-in-the-terminal": {
-    "title": "✂📋 How I copy & paste in the terminal",
-    "date": "2017-04-10 16:55:55",
-    "modified": "2017-04-10 22:22:54",
-    "complete": true,
-    "inprogress": false,
-    "tags": [
-      "code"
-    ],
-    "draft": true
-  },
   "focus-or-all-the-things": {
     "title": "Focus or all the things?",
     "date": "2017-05-02 18:18:13",
@@ -512,7 +501,7 @@
   "typedarrays": {
     "title": "TypedArrays",
     "date": "2017-10-13 15:35:24",
-    "modified": "2017-11-14 10:14:41",
+    "modified": "2017-12-30 16:10:36",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -545,7 +534,7 @@
   "jq-recipes": {
     "title": "jq recipes",
     "date": "2018-01-06 17:08:36",
-    "modified": "2018-01-06 17:08:36",
+    "modified": "2018-04-15 14:00:53",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -556,7 +545,7 @@
   "opening-windows-again-part-2-dev": {
     "title": "Opening Windows again (part 2: dev)",
     "date": "2018-01-09 10:45:34",
-    "modified": "2018-01-09 10:45:34",
+    "modified": "2018-01-12 11:15:14",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -567,7 +556,7 @@
   "trying-arccodes": {
     "title": "Trying arc.codes",
     "date": "2018-03-12 15:59:45",
-    "modified": "2018-03-12 15:59:45",
+    "modified": "2018-03-28 17:55:01",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -577,7 +566,7 @@
   "a-week-of-serverless": {
     "title": "A week of serverless",
     "date": "2018-03-22 21:10:39",
-    "modified": "2018-03-22 21:10:39",
+    "modified": "2018-03-23 08:43:22",
     "complete": false,
     "inprogress": true,
     "tags": [
@@ -587,7 +576,7 @@
   "ive-been-doing-reduce-wrong": {
     "title": "I've been doing reduce wrong!",
     "date": "2018-04-06 10:39:59",
-    "modified": "2018-04-06 10:39:59",
+    "modified": "2018-04-06 11:41:50",
     "complete": false,
     "inprogress": true,
     "tags": [
