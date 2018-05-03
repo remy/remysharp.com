@@ -1,6 +1,10 @@
 # jq recipes
 
-All demos link to [jqterm](https://jqterm.com) - an interactive jq web terminal with autocomplete (and faster querying with large datasets as they're cached online in private gists).
+All demos link to [jqterm](https://jqterm.com) - an alternative interactive jq web terminal with autocomplete (and faster querying with large datasets as they're cached online in private gists).
+
+Here's a collection of jq recipes I've collected over the last few months.
+
+---
 
 Convert object to array, moving the key into the array item under the property
 `slug`:
