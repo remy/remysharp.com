@@ -4832,5 +4832,14 @@
       "personal"
     ],
     "published": true
+  },
+  "the-story-of-42-million-bins": {
+    "title": "The story of 42 million bins",
+    "date": "2018-05-31 22:09:33",
+    "modified": "2018-05-31 22:03:10",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }
