@@ -1,6 +1,6 @@
 # The story of 42 million bins
 
-This past April fools day I had a bit of an adventure in server fires (though thankfully not literal) so I thought it might be interesting to share my experience, what I did, tools I used, discovered and created.
+This past month of April I had a bit of an adventure in server fires (though thankfully not literal) so I thought it might be interesting to share my experience, what I did, tools I used, discovered and created.
 
 <!--more-->
 
