@@ -19,7 +19,7 @@ We set out at 8:30am (getting past the start line around 8:45am).  We hadn't sle
 
 We hit pretty serious congestion throughout our ride, it took us an hour to get to Mitcham, only 4 miles from our starting point.
 
-Further down the route, we came to [entire standstill](http://flickr.com/photos/remysharp/564197158/in/set-72157600389505524/) and all you could see was helmet after helmet after helmet.  It didn't turn out to be an accident (as we thought it might be) - it was just a tight bend where **everyone** was [forced off their bikes to walk](http://flickr.com/photos/remysharp/564605183/in/set-72157600389505524/).
+Further down the route, we came to [entire standstill](https://flickr.com/photos/remysharp/564197158/in/set-72157600389505524/) and all you could see was helmet after helmet after helmet.  It didn't turn out to be an accident (as we thought it might be) - it was just a tight bend where **everyone** was [forced off their bikes to walk](https://flickr.com/photos/remysharp/564605183/in/set-72157600389505524/).
 
 We took our first break at 12:30 at the half way mark for a rather nasty burger and set off again.
 
@@ -35,18 +35,18 @@ All in all, Julie and I raised almost £600 for British Heart Foundation, I hit 
 
 Although my photography was limited to either when we stopped, or when we were going slow, I managed to take a fair few (I've linked a few to points on the [route map](#route) too).
 
-[View the set of pictures from the ride](http://flickr.com/photos/remysharp/sets/72157600389505524/)
+[View the set of pictures from the ride](https://flickr.com/photos/remysharp/sets/72157600389505524/)
 
-<script type="text/javascript" src="//www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=y&amp;source=user_set&amp;user=38257258%40N00&amp;set=72157600389505524&amp;context=in%2Fset-72157600389505524%2F"></script>
+<script src="https://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=y&amp;source=user_set&amp;user=38257258%40N00&amp;set=72157600389505524"></script>
 
 ## Video clips
 
 I managed to capture some video during the bike ride, when I didn't feel I needed my breaks too much(!), and I quickly concatenated them together with a bit of music that I remember listening too whilst bombing along.
 
-<object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/ZTV39HmXkeE"></param><param name="wmode" value="transparent"></param><embed src="//www.youtube.com/v/ZTV39HmXkeE" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object>
+<object width="425" height="350"><param name="movie" value="https://www.youtube.com/v/ZTV39HmXkeE"></param><param name="wmode" value="transparent"></param><embed src="//www.youtube.com/v/ZTV39HmXkeE" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></embed></object>
 
 <h2>Dashboard Widget</h2>
 
 I wrote a little widget to keep track of how much I had raised for BHF. It was based on the 2007 sponsor pages, but this year (2008) it still works.  You just flip it over and enter your sponsorship page on the other side and it will tell you how much you've raised in total.
 
-[Download London to Brighton widget](http://remysharp.com/downloads/LDN2BTN2007.zip)
+[Download London to Brighton widget](https://remysharp.com/downloads/LDN2BTN2007.zip)
