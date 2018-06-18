@@ -1218,6 +1218,17 @@ img.half {
   display: block;
 }
 
+.grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+  img {
+    object-fit: contain;
+  }
+}
+
 abbr {
   text-decoration: none;
   border-bottom: 1px dotted rgb(0, 0, 0);
@@ -1557,7 +1568,13 @@ details summary:after {
 .centre {
   margin: 0 auto;
   display: block;
+
+  &> img {
+    margin: 0 auto;
+    display: block;
+  }
 }
+
 
 a[title='simple-link'] {
   border-bottom: none;
