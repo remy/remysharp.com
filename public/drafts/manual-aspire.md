@@ -27,6 +27,6 @@ The book cover art is like something from Star Wars: a megacity, high above the 
 
 What I find so elegant about this book being provided to you, the consumer, and the Lego ideas on the back of the box, is that it was _given_ to the consumer. The very act of owning the _thing_ plants the seed that greater things can be done with this _thing_.
 
-Today we have a ocean of knowledge at our fingertips with the internet, but more often than not, you'll be expected to swim out by yourself with no guide or direction. And frankly, it's a lot easier to sit on the shore and just thinker with the thing until the next shiny thing comes along.
+Today we have a ocean of knowledge at our fingertips with the internet, but more often than not, you'll be expected to swim out by yourself with no guide or direction. And frankly, it's a lot easier to sit on the shore and just tinker with the thing until the next shiny thing comes along.
 
 I want to see more seed planting!
