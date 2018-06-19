@@ -4841,5 +4841,15 @@
       "web"
     ],
     "published": true
+  },
+  "manual-aspire": {
+    "title": "Manual Aspire",
+    "date": "2018-06-19 15:21:07",
+    "modified": "2018-06-18 15:40:51",
+    "image": "/images/speccy-manual/speccy-manual-cover.jpg",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }
