@@ -10,8 +10,9 @@
     "start": "node server.js",
     "build": "node server.js compile",
     "semantic-release": "npm run build",
-    "update-timestamps":
-      "hostname eq 'unicorn-powered.local' && blog update-timestamps"
+    "update-timestamps": "hostname eq 'unicorn-powered.local' && blog update-timestamps",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "bin": {
     "blog": "./cli/index.js"
@@ -28,8 +29,9 @@
     "moment": "2.12.0",
     "router-stupid": "0.7.0",
     "semver": "4.3.6",
-    "st": "0.5.1",
-    "then-fs": "1.0.8"
+    "st": "1.2.1",
+    "then-fs": "1.0.8",
+    "snyk": "^1.85.0"
   },
   "repository": {
     "type": "git",
@@ -39,5 +41,6 @@
     "ghooks": "1.0.3",
     "inquirer": "0.12.0",
     "semantic-release": "4.3.5"
-  }
+  },
+  "snyk": true
 }
