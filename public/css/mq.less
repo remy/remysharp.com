@@ -1,4 +1,4 @@
-@import (reference) "critical.less";
+@import (reference) 'critical.less';
 
 @media only screen and (min-width: 721px) {
   .flush {
@@ -129,6 +129,10 @@
     line-height: 1.6rem;
   }
 
+  ul.post-nav li.search a {
+    width: 20px;
+  }
+
   .post-content ul,
   article.post li {
     padding-left: 0;
@@ -177,15 +181,6 @@
       margin-right: 10px;
     }
   }
-
-  // .follow div:first-child div:first-child {
-  //   display: none;
-  // }
-
-  // .follow div:first-child div.s3 {
-  //   width: 100%;
-  //   padding-left: 0;
-  // }
 }
 
 @media only screen and (max-width: 412px) {

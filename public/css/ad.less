@@ -2,7 +2,7 @@ a.cta,
 a.cta:hover {
   text-decoration: none;
   border: 1px solid #dcdcdc;
-  display: block;
+  display: flex;
   padding: 0px;
   background: none;
   color: inherit;
@@ -18,15 +18,22 @@ a.cta:hover {
   img {
     float: left;
     max-height: 140px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
   & > div {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
   }
 
   p {
     margin: 0;
+    flex-grow: 1;
+  }
+
+  p:last-child {
+    flex-grow: 0;
   }
 
   .label {
@@ -39,7 +46,7 @@ a.cta:hover {
     border-radius: 3px;
     color: white;
     padding: 2px 5px;
-    vertical-align: text-top;
+    vertical-align: text-bottom;
   }
 
   .desc {

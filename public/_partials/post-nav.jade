@@ -22,9 +22,9 @@ nav.main-nav.clearfix.subpanel
         //- The actual links
         ul.post-nav
           li.left.home: a(href="/") Home
-          li.left.donate
-            a(href="https://www.paypal.me/rem" target="_blank" title="Show your thanks")
-              span.liked
+          //- li.left.donate
+          //-   a(href="https://www.paypal.me/rem" target="_blank" title="Show your thanks")
+          //-     span.liked
           li.left.search: a#search(href="#search") Search
           if next
             li.next: a(href="/#{ moment(next.date).format('YYYY/MM/DD') }/#{ next.slug }" title="#{ next.title }") Next
