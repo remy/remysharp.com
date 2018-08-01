@@ -1,6 +1,6 @@
 # My NHS Story
 
-Today I realised that it was the end of the month an my two blog post a month, self imposed quota was going to fail.
+Today I realised that it was the end of the month and my two blog post a month, self imposed quota was going to fail.
 
 I had a few posts planned, but I'd found myself in hospital, and I realised it was a good opportunity to a) kill some time, b) write about how amazing I think the National Health Service is.
 
