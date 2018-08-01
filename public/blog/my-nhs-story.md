@@ -39,6 +39,14 @@ I'm now due to stay in overnight. I've been offered morphine to help me sleep, a
 I've paid, and all I'll have paid, for this series of treatment, is £8.80.
 
 ---
+Long before this, Julie and I lost Tia at birth, and the staff were incredible with us during this extremely bleak and dark period of grief.
+
+The midwives looked after us, gave us all the time we need, and helped us navigate through the worst day of our lives. 
+
+Again, the NHS, no money paid, and utmost professionalism.
+
+
+---
 
 This service is available to all, regardless of age, gender, race or religion. This is a free service for _everyone_.
 
@@ -52,6 +60,7 @@ I think the NHS is an inspiring organisation, from what I understand, is the lar
 
 I know organisation is perfect, but I pray that this service survives to serve my children and their children.
 
-Thank you NHS. Thank you to the nurses. Thank you to Joy and the doctor (whose name slipped my mind).
+Thank you NHS. Thank you to the nurses, the support staff and the doctors that have seen me.
 
 A service for everyone is a service worth thanking, and fighting for.
+
