@@ -60,7 +60,7 @@ When the NHS was founded, three core principles were at its heart:
 
 I think the NHS is an inspiring organisation, from what I understand, is the largest employer in the UK. The people that I've met today, on the ground so to speak, have been nothing but kind, patient, attentive and professional.
 
-I know organisation is perfect, but I pray that this service survives to serve my children and their children.
+I know no organisation is perfect, but I pray that this service survives to serve my children and their children.
 
 Thank you NHS. Thank you to the nurses, the support staff and the doctors that have seen me.
 
