@@ -55,7 +55,7 @@ Download and extract all the files from a gist:
 eval "$(curl https://api.github.com/gists/968b8937a153127cfae4a173b6000c1e | jq -r '.files | to_entries | .[].value | @sh "echo \(.content) > \(.filename)"')"
 ```
 
-[Demo](https://jqterm.com/#!/2ec37d92242d8457b919011bc023511e?query=.files%20%7C%20to_entries%20%7C%20.%5B%5D.value%20%7C%20@sh%20%22echo%20%5C%28.content%29%20%3E%20%5C%28.filename%29%22)
+[Demo](https://jqterm.com/2ec37d92242d8457b919011bc023511e?query=.files%20%7C%20to_entries%20%7C%20.%5B%5D.value%20%7C%20@sh%20%22echo%20%5C%28.content%29%20%3E%20%5C%28.filename%29%22&raw=true)
 
 ---
 
@@ -65,7 +65,7 @@ Update all outdated npm dependencies:
 npm i $(echo $(npm outdated --json | jq -r 'to_entries | .[] | "\(.key)@\(.value.latest)"'))
 ```
 
-[Demo](https://jqterm.com/#!/d7f34556e41e69568d10b5bc511fba68?query=to_entries%20%7C%20.%5B%5D%20%7C%20%22%5C%28.key%29@%5C%28.value.latest%29%22)
+[Demo](https://jqterm.com/#!/d7f34556e41e69568d10b5bc511fba68?query=to_entries%20%7C%20.%5B%5D%20%7C%20%22%5C%28.key%29@%5C%28.value.latest%29%22&raw=true)
 
 ---
 
@@ -75,7 +75,7 @@ Install the dependencies from one node project to another:
 npm i $(cat ../other-project/package.json| jq '.dependencies | keys[]' -r)
 ```
 
-[Demo](https://jqterm.com/#!/52dc3f83ee31266c193bd3d77311e93d?query=.dependencies%20%7C%20keys%5B%5D)
+[Demo](https://jqterm.com/#!/52dc3f83ee31266c193bd3d77311e93d?query=.dependencies%20%7C%20keys%5B%5D&raw=true)
 
 ---
 
@@ -141,7 +141,7 @@ List all the dependencies in a `package.json` for use in other commands (like `n
 echo $(cat package.json | jq '.dependencies | keys | .[] | "\(.)"' -r)
 ```
 
-[Demo](https://jqterm.com/#!/91ad0e49459c2e6e41db363ca228574d?query=.dependencies%20%7C%20keys%20%7C%20.%5B%5D%20%7C%20%22%5C%28.%29%22)
+[Demo](https://jqterm.com/#!/91ad0e49459c2e6e41db363ca228574d?query=.dependencies%20%7C%20keys%20%7C%20.%5B%5D%20%7C%20%22%5C%28.%29%22&raw=true)
 
 ---
 
@@ -171,7 +171,7 @@ $ depcheck --json | jq '.using | [to_entries[] | select(.value[] | contains("/.n
 
 Note: also uses [depcheck](https://www.npmjs.com/package/depcheck) to resolve the npm dependencies.
 
-[Demo](https://jqterm.com/#!/dd6eb7b65d9c5a966919644b2ed60e57?query=.using%20%7C%20%5Bto_entries%5B%5D%20%7C%20select%28.value%5B%5D%20%7C%20contains%28%22/.next/%22%29%29%20%7C%20.key%5D%20%7C%20unique%20%7C%20sort%5B%5D%20%7C%20%22-%20%5C%28.%29%22)
+[Demo](https://jqterm.com/#!/dd6eb7b65d9c5a966919644b2ed60e57?query=.using%20%7C%20%5Bto_entries%5B%5D%20%7C%20select%28.value%5B%5D%20%7C%20contains%28%22/.next/%22%29%29%20%7C%20.key%5D%20%7C%20unique%20%7C%20sort%5B%5D%20%7C%20%22-%20%5C%28.%29%22&raw=true)
 
 ---
 

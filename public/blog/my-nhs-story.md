@@ -6,7 +6,7 @@ I had a few posts planned, but I'd found myself in hospital, and I realised it w
 
 <!--more-->
 
-I write to you today from level 4 of The Royal Sussex Hospital, with an Intravenous Drip in my arm and the knowledge that I'm being cared for.
+I write to you today from level 4 of The Royal Sussex Hospital, with an Intravenous (IV) drip in my arm and the knowledge that I'm being cared for.
 
 Yesterday morning at 8:45am, Julie, my partner, called the General Practitioner for me to book an appointment and I was seen at 3:50pm and fully admitted to hospital at around 10am the next morning.
 
