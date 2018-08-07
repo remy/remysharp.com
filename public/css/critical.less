@@ -1,9 +1,10 @@
+@background-color: #fafafa;
 @subpanel-background: lighten(black, 10%);
 @subpanel-color: lighten(@subpanel-background, 40%);
-@code-background: rgb(63, 63, 63);
+@code-background: #f3f3f3; //rgb(63, 63, 63);
 @code-foreground: lighten(@code-background, 50%);
-@code-font: menlo, monaco, consolas, courier, 'courier new', 'lucida console',
-  monospace;
+@code-font: 'ubuntu mono', menlo, monaco, consolas, courier, 'courier new', 'lucida console',
+monospace;
 @cta-color: #1b95e0;
 @link-color: rgb(21, 101, 192); // #00126c;
 @main-font-color: #212121;
@@ -94,9 +95,6 @@
   -webkit-flex: @var;
   -ms-flex: @var;
   flex: @var;
-  // .no-flexbox & {
-  //   width: @var/@total*100%;
-  // }
 }
 
 .order(@number) {
@@ -192,11 +190,6 @@ figure {
   font-family: inherit;
   vertical-align: baseline;
 }
-body {
-  line-height: 1;
-  color: @main-font-color;
-  background: white;
-}
 iframe {
   display: block;
 }
@@ -234,10 +227,11 @@ html {
 body {
   padding: 0;
   font: 0.625em system, 'Noto Sans', 'helvetica neue', arial, sans-serif;
+  color: @main-font-color;
+  background: @background-color;
   font-size: 100%;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 32px;
-  background: rgb(255, 255, 255);
   margin: 0 auto 15px auto;
   margin-bottom: 0;
   max-width: 800px;
