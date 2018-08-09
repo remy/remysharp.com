@@ -37,6 +37,45 @@ to_entries | map( {(.value) : .key } ) | add
 
 ---
 
+Read a plain list of strings from a file into an array, specifically splitting into an array and removing the last empty `\n`:
+
+```bash
+echo "1\n2\n3" | jq --slurp --raw-input 'split("\n")[:-1]'
+```
+
+[Demo](https://jqterm.com/456b1123085c3fa11b888fe376342a55?query=split%28%22%5Cn%22%29%5B%3A-1%5D&slurp=true&raw-input=true)
+
+---
+
+Convert a plain list of timestamps to an array of objects with date and time separated (using jq's `--slurp` and `--raw-input` options combined):
+
+```bash
+cat timestamps.txt | jq --slurp --raw-input 'split("\n")[:-1] | map({
+	date: (. | strptime("%a, %d %b %Y %H:%M:%S") | todate[0:10]),
+	time: (. | strptime("%a, %d %b %Y %H:%M:%S") | todate[11:19])
+})'
+```
+
+[Demo](https://jqterm.com/e4ec7b09e9cca48a9569264f569bba9b?query=split%28%22%5Cn%22%29%5B%3A-1%5D%20%7C%20map%28%7B%20%0A%20%20date%3A%20%28.%20%7C%20strptime%28%22%25a%2C%20%25d%20%25b%20%25Y%20%25H%3A%25M%3A%25S%22%29%20%7C%20todate%5B0%3A10%5D%29%2C%0A%20%20time%3A%20%28.%20%7C%20strptime%28%22%25a%2C%20%25d%20%25b%20%25Y%20%25H%3A%25M%3A%25S%22%29%20%7C%20todate%5B11%3A19%5D%29%20%0A%7D%29&slurp=true&raw-input=true)
+
+---
+
+From a plain list of timestamps, count the occurrences of unique days (the first part is from the example above):
+
+```
+split("\n")[:-1] | map({
+  date: (. | strptime("%a, %d %b %Y %H:%M:%S") | todate[0:10]),
+  time: (. | strptime("%a, %d %b %Y %H:%M:%S") | todate[11:19])
+}) | reduce .[] as $item (
+  {}; # initial value
+  .[$item.date] += 1 # reducer
+)
+```
+
+[Demo](https://jqterm.com/e4ec7b09e9cca48a9569264f569bba9b?query=split%28%22%5Cn%22%29%20%7C%20map%28%7B%20%0A%09date%3A%20%28.%20%7C%20strptime%28%22%25a%2C%20%25d%20%25b%20%25Y%20%25H%3A%25M%3A%25S%22%29%20%7C%20todate%5B0%3A10%5D%29%2C%0A%09time%3A%20%28.%20%7C%20strptime%28%22%25a%2C%20%25d%20%25b%20%25Y%20%25H%3A%25M%3A%25S%22%29%20%7C%20todate%5B11%3A19%5D%29%20%0A%7D%29%20%7C%20reduce%20.%5B%5D%20as%20%24item%20%28%0A%09%7B%7D%3B%0A%20%20%09.%5B%24item.date%5D%20%2B%3D%201%0A%29&slurp=true&raw-input=true)
+
+---
+
 Take an object with two similar objects, but separated between team and
 formerly, and merge into a single object, adding a flag for all those from the
 formerly group:
@@ -51,8 +90,16 @@ formerly group:
 
 Download and extract all the files from a gist:
 
-```
-eval "$(curl https://api.github.com/gists/968b8937a153127cfae4a173b6000c1e | jq -r '.files | to_entries | .[].value | @sh "echo \(.content) > \(.filename)"')"
+```bash
+eval "$(
+  curl https://api.github.com/gists/968b8937a153127cfae4a173b6000c1e |
+  jq -r '
+    .files |
+    to_entries |
+    .[].value |
+    @sh "echo \(.content) > \(.filename)"
+  '
+)"
 ```
 
 [Demo](https://jqterm.com/2ec37d92242d8457b919011bc023511e?query=.files%20%7C%20to_entries%20%7C%20.%5B%5D.value%20%7C%20@sh%20%22echo%20%5C%28.content%29%20%3E%20%5C%28.filename%29%22&raw=true)
@@ -135,7 +182,7 @@ with_entries(.value |= del(.title))
 
 ---
 
-List all the dependencies in a `package.json` for use in other commands (like `npm un`):
+List all the dependencies in a `package.json` for use in other commands, like `npm uninstall`:
 
 ```
 echo $(cat package.json | jq '.dependencies | keys | .[] | "\(.)"' -r)
@@ -158,15 +205,31 @@ mongo <host>/<db> --norc --username <user> --password <pwd> \
 From Twitter's API, take all DM received and sent and transform into readable format sorted by date order:
 
 ```
-[ .[] | { text, date: .created_at, from: { screen_name: .sender.screen_name }, to: { screen_name: .recipient.screen_name} } ] | sort_by(.date)
+[ .[] | {
+  text,
+  date: .created_at,
+  from: { screen_name: .sender.screen_name },
+  to: { screen_name: .recipient.screen_name}
+} ] |
+sort_by(.date)
 ```
 
 ---
 
 Using Serverless and Next.js and working out which dependencies I need to force include (because they live in the `.next` directory):
 
-```
-$ depcheck --json | jq '.using | [to_entries[] | select(.value[] | contains("/.next/")) | .key] | unique | sort[] | "- \(.)"' -r
+```bash
+$ depcheck --json |
+  jq '
+    .using |
+    [
+      to_entries[] |
+      select(.value[] | contains("/.next/")) |
+      .key
+    ] |
+    unique |
+    sort[] | "- \(.)"
+  ' -r
 ```
 
 Note: also uses [depcheck](https://www.npmjs.com/package/depcheck) to resolve the npm dependencies.
@@ -207,3 +270,15 @@ cat data.json | \
 ```
 
 [Demo](https://jqterm.com/#!/5016c9cd4d23cfad99f777e4d17560b3?query=reduce%20.%5B%5D%20as%20%24n%20%28%5B%5D%3B%20.%20%2B%20%5B%7B%20%22index%22%20%3A%20%7B%20%22_index%22%3A%20%22my-index%22%2C%20%22_type%22%20%3A%20%22my-type%22%20%7D%20%7D%2C%20%24n%5D%29%20%7C%20.%5B%5D)
+
+---
+
+Filter an array, similar to a JavaScript array filter:
+
+```
+def filter(cond): map(select(cond));
+
+filter(. > 2)
+```
+
+[Demo](https://jqterm.com/b8a26d58f0d42ff9fb51bcb33eed0ad9?query=def%20filter%28cond%29%3A%20map%28select%28cond%29%29%3B%0A%0Afilter%28.%20%3E%202%29)
