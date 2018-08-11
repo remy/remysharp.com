@@ -282,3 +282,25 @@ filter(. > 2)
 ```
 
 [Demo](https://jqterm.com/b8a26d58f0d42ff9fb51bcb33eed0ad9?query=def%20filter%28cond%29%3A%20map%28select%28cond%29%29%3B%0A%0Afilter%28.%20%3E%202%29)
+
+---
+
+Converting a text output of columns and converting to a JSON object. In this case, running Zeit's `now ls` to find out how many running instance I have:
+
+```bash
+now ls | jq --raw-input --slurp '
+split("\n")[1:-3] | # split into an array of strings, removing the 1st and last few blank lines
+map([ split(" ")[] | select(. != "") ]) | # convert large spaces into individual colmns
+map({ # map into a usable object
+  app: .[0],
+  url: .[1],
+  number: (if (.[2] == "-") then .[2] else .[2] | tonumber end),
+  type: .[3],
+  state: .[4],
+  age: .[5]
+}) |
+# now I can query the result - in this case: how many running and are npm
+map(select(.number > 0 and .type == "NPM")) | length'
+```
+
+[Demo](https://jqterm.com/04157437953546ba69e57cd19581299d?query=split%28%22%5Cn%22%29%5B1%3A-3%5D%20%7C%20%23%20split%20and%20trim%20the%20lines%0Amap%28%5B%20split%28%22%20%22%29%5B%5D%20%7C%20select%28.%20!%3D%20%22%22%29%20%5D%29%20%7C%20%23%20break%20in%20to%20columns%0Amap%28%7B%20%0A%20%20app%3A%20.%5B0%5D%2C%20%0A%20%20url%3A%20.%5B1%5D%2C%20%0A%20%20number%3A%20%28if%20%28.%5B2%5D%20%3D%3D%20%22-%22%29%20then%20.%5B2%5D%20else%20.%5B2%5D%20%7C%20tonumber%20end%29%2C%20%0A%20%20type%3A%20.%5B3%5D%2C%20%0A%20%20state%3A%20.%5B4%5D%2C%20%0A%20%20age%3A%20.%5B5%5D%20%0A%7D%29%20%7C%0Amap%28select%28.number%20%3E%200%20and%20.type%20%3D%3D%20%22NPM%22%29%29%20%7C%20length&slurp=true&raw-input=true)
