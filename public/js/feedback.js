@@ -11,7 +11,7 @@
   }
 
   // Form validation
-  const form = $('#feedback-form');
+  const form = $('#feedback-form form');
   $('button[type="submit"]').on('click', () =>
     form.find('[required]').addClass('required')
   );
@@ -64,12 +64,9 @@
       .val()
       .slice(0, 100);
     const subject = 'Feedback' + product + ' - ' + message;
-    form.append(
+    form.prepend(
       $('<input type="hidden" name="_replyto">').val($('#form_email').val())
     );
-    if (params.has('ref')) {
-      form.append($(`<input type="hidden" name="ref">`).val(params.get('ref')));
-    }
-    form.append($(`<input type="hidden" name="_subject">`).val(subject));
+    form.prepend($(`<input type="hidden" name="_subject">`).val(subject));
   });
 })(jQuery);
