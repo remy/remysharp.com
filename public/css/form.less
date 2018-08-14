@@ -1,0 +1,42 @@
+.form_container {
+  max-width: 600px;
+  margin: 0 auto;
+
+  form {
+    padding: 20px 0;
+  }
+
+  input.required:invalid,
+  textarea.required:invalid {
+    border: 1px solid rgb(211, 47, 47);
+  }
+
+  .fields {
+    margin-bottom: 20px;
+
+    label {
+      color: #666;
+      font-size: 90%;
+    }
+
+    input,textarea, label {
+      float: none;
+      display: block;
+      width: 100%;
+    }
+
+    input, textarea {
+      border-radius: 2px;
+    }
+
+    .mini {
+      max-width: 200px;
+    }
+
+    .button {
+      margin: 40px 0;
+      font-size: 110%;
+      padding: 10px 20px;
+    }
+  }
+}

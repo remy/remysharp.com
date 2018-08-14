@@ -1165,6 +1165,11 @@ a[title='simple-link'] {
   .ck_form {
     box-shadow: none;
     border: 0;
+    background: @background-color !important;
+
+    input {
+      background: white;
+    }
 
     .ck_form_content {
       padding-left: 0;
@@ -1204,6 +1209,9 @@ a[title='simple-link'] {
 @import (less) 'mq.less';
 // // code font highlight
 @import (inline) 'github.css';
+
+@import (less) 'form.less';
+
 
 .hljs {
   background: transparent;

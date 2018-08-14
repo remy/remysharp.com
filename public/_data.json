@@ -54,6 +54,12 @@
     "date": "2016-08-10 20:59:46",
     "published": true
   },
+  "feedback": {
+    "title": "Feedback",
+    "date": "2018-08-14 09:59:46",
+    "published": true,
+    "layout": false
+  },
   "index": {
     "title": "Remy Sharp's b:log",
     "date": "2006-09-01 09:00:00",
