@@ -72,7 +72,7 @@ split("\n")[:-1] | map({
 )
 ```
 
-[Demo](https://jqterm.com/e4ec7b09e9cca48a9569264f569bba9b?query=split%28%22%5Cn%22%29%20%7C%20map%28%7B%20%0A%09date%3A%20%28.%20%7C%20strptime%28%22%25a%2C%20%25d%20%25b%20%25Y%20%25H%3A%25M%3A%25S%22%29%20%7C%20todate%5B0%3A10%5D%29%2C%0A%09time%3A%20%28.%20%7C%20strptime%28%22%25a%2C%20%25d%20%25b%20%25Y%20%25H%3A%25M%3A%25S%22%29%20%7C%20todate%5B11%3A19%5D%29%20%0A%7D%29%20%7C%20reduce%20.%5B%5D%20as%20%24item%20%28%0A%09%7B%7D%3B%0A%20%20%09.%5B%24item.date%5D%20%2B%3D%201%0A%29&slurp=true&raw-input=true)
+[Demo](https://jqterm.com/e4ec7b09e9cca48a9569264f569bba9b?query=split%28%22%5Cn%22%29%5B%3A-1%5D%20%7C%20map%28%7B%20%0A%09date%3A%20%28.%20%7C%20strptime%28%22%25a%2C%20%25d%20%25b%20%25Y%20%25H%3A%25M%3A%25S%22%29%20%7C%20todate%5B0%3A10%5D%29%2C%0A%09time%3A%20%28.%20%7C%20strptime%28%22%25a%2C%20%25d%20%25b%20%25Y%20%25H%3A%25M%3A%25S%22%29%20%7C%20todate%5B11%3A19%5D%29%20%0A%7D%29%20%7C%20reduce%20.%5B%5D%20as%20%24item%20%28%0A%09%7B%7D%3B%0A%20%20%09.%5B%24item.date%5D%20%2B%3D%201%0A%29&slurp=true&raw-input=true)
 
 ---
 
