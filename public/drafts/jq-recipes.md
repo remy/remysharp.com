@@ -6,6 +6,16 @@ Here's a collection of jq recipes I've collected over the last few months.
 
 ---
 
+Push on to an existing array (where source is `[1, 2, 3]`):
+
+```
+. + [ 4 ] # result: [ 1, 2, 3, 4 ]
+```
+
+[Demo](https://jqterm.com/b3ca6e14912df02a8df7e634146f41b8?query=.%20%2B%20%5B4%5D)
+
+---
+
 Convert object to array, moving the key into the array item under the property
 `slug`:
 
