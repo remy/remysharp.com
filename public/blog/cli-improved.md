@@ -1,4 +1,4 @@
-# CLI improved
+# CLI: improved
 
 I'm not sure many web developers can get away without visiting the command line. As for me, I've been using the command line since 1997, first at university when I felt both super cool l33t-hacker and simultaneously utterly out of my depth.
 
@@ -179,13 +179,13 @@ alias help='tldr'
 
 I personally flitter between `ack` and `ag` without really remembering which I prefer (that's to say they're both very good and very similar!). I tend to default to `ack` only because it rolls of my fingers a little easier. Plus, `ack` comes with the mega `ack --bar` argument (I'll let you experiment)!
 
-Both `ack` and `ag` will (by default) use a regular expression to search, and extremely to my work, I can specify the file _types_ using flags like `--js` or `--html` (though here `ag` includes more files in the js filter than `ack`).
+Both `ack` and `ag` will (by default) use a regular expression to search, and extremely pertinent to my work, I can specify the file types to search within using flags like `--js` or `--html` (though here `ag` includes more files in the js filter than `ack`).
 
 Both tools also support the usual `grep` options, like `-B` and `-A` for before and after context in the grep.
 
 ![ack in action](/images/cli-improved/ack.png "Sample ack output with grep args")
 
-Since `ack` doesn't come with markdown support (and I write a lot in markdown), I've also got this customisation in my `~/.ackrc` file:
+Since `ack` doesn't come with markdown support (and I write a lot in markdown), I've got this customisation in my `~/.ackrc` file:
 
 ```text
 --type-set=md=.md,.mkd,.markdown
@@ -200,7 +200,7 @@ Since `ack` doesn't come with markdown support (and I write a lot in markdown), 
 
 I'm a massive fanboy of [jq](https://stedolan.github.io/jq). At first I struggled with the syntax, but I've since come around to the query language and use `jq` on a near daily basis (whereas before I'd either drop into node, use grep or use a tool called [json](http://trentm.com/json/) which is very basic in comparison).
 
-I've even in the process of writing a jq tutorial series (2,500 words and counting) and have published a [web tool](https://jqterm.com) and a native mac app (yet to be released).
+I've even started the process of writing a jq tutorial series (2,500 words and counting) and have published a [web tool](https://jqterm.com) and a native mac app (yet to be released).
 
 `jq` allows me to pass in JSON and transform the source very easily so that the JSON result fits my requirements. One such example allows me to update all my node dependencies in one command (broken into multiple lines for readability):
 
