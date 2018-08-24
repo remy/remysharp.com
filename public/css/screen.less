@@ -144,12 +144,21 @@ kbd {
   margin: 0 4px;
 }
 
-code {
+code,
+code[class*="language-"] {
   font-family: @code-font;
   background: #f3f3f3;
   padding: 2px;
   font-size: 1rem;
   border-radius: 2px;
+}
+
+// resetting prism
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: @code-font;
+  background: #f3f3f3;
+  text-shadow: none;
 }
 
 a:hover code,
@@ -161,14 +170,16 @@ a:focus code {
   background: lighten(@code-background, 60%);
 }
 
-pre code {
+pre code,
+pre[class*="language-"] code {
   color: @code-foreground;
   background: @code-background;
   padding: 0.5em;
   -webkit-text-size-adjust: none;
 }
 
-pre {
+pre,
+pre[class*="language-"] {
   padding: 0 0.2em;
   font-family: @code-font;
   margin: 10px 0;
@@ -1212,21 +1223,21 @@ img[title^="Sample"] {
 
 @import (less) 'mq.less';
 // // code font highlight
-@import (inline) 'github.css';
+// @import (inline) 'github.css';
 
 @import (less) 'form.less';
 
 
-.hljs {
-  background: transparent;
-}
+// .hljs {
+//   background: transparent;
+// }
 
-.coffeescript .javascript,
-.javascript .xml,
-.tex .hljs-formula,
-.xml .javascript,
-.xml .vbscript,
-.xml .css,
-.xml .hljs-cdata {
-  opacity: 0.65;
-}
+// .coffeescript .javascript,
+// .javascript .xml,
+// .tex .hljs-formula,
+// .xml .javascript,
+// .xml .vbscript,
+// .xml .css,
+// .xml .hljs-cdata {
+//   opacity: 0.65;
+// }

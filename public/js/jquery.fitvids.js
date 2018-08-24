@@ -68,7 +68,6 @@
           aspectRatio = height / width;
         if (!$this.attr('id')) {
           var videoID = 'fitvid' + Math.floor(Math.random() * 999999);
-          console.log(videoID, aspectRatio, height, width);
           $this.attr('id', videoID);
         }
         $this

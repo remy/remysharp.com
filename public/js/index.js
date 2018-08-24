@@ -5,8 +5,10 @@ var comments = document.getElementById('disqus_thread');
 var disqusLoaded = false;
 
 var prompt = '<span class="bash-prompt">$ </span>';
+
 $('code.language-bash, code.language-sh, code.language-shell').each(function() {
   var el = this;
+
   el.innerHTML = el.textContent
     .split('\n') // break into individual lines
     .map(function(line) {
@@ -191,11 +193,5 @@ $('.runnable').each(function() {
     iframe.className = 'runnable-frame';
     document.body.appendChild(iframe);
     iframe.contentWindow.eval(code);
-  });
-});
-
-$(() => {
-  $('pre code').each(function(i, block) {
-    hljs.highlightBlock(block);
   });
 });
