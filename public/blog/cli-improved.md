@@ -189,7 +189,7 @@ Since `ack` doesn't come with markdown support (and I write a lot in markdown), 
 
 ```text
 --type-set=md=.md,.mkd,.markdown
---pager=less -FRSX
+--pager=less -FRX
 ```
 
 💾 Installation directions: [ack](https://beyondgrep.com), [ag](https://github.com/ggreer/the_silver_searcher)
