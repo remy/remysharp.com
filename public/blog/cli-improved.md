@@ -39,7 +39,7 @@ alias cat='bat'
 
 ![/images/cli-improved/ping.gif](/images/cli-improved/ping.gif "Sample ping output")
 
-I've also aliased `bat` to the `cat` command:
+I've also aliased `ping` to the `prettyping` command:
 
 ```bash
 alias ping='prettyping --nolegend'
