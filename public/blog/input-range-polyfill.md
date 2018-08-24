@@ -12,7 +12,7 @@ With `<input type=range>` the apps looked great. Then I opened them in Firefox 5
 
 Good thing that during James' Q&A session at The Highland Fling I wrote the solution he was describing :)
 
-<a href="https://twitter.com/#!/jackosborne/status/89370027802902528"><img alt="Jack watching me code" src="/images/jack-watching-me-code.png" style="display: block; margin: 0 auto;" /></a>
+<a href="https://twitter.com/jackosborne/status/89370027802902528"><img alt="Jack watching me code" src="/images/jack-watching-me-code.png" style="display: block; margin: 0 auto;" /></a>
 
 ## Solution
 

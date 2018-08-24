@@ -1,6 +1,6 @@
 # CSS selector for :parent targeting (please)
 
-[Me this weekend](https://twitter.com/#!/rem/status/26934643630):
+[Me this weekend](https://twitter.com/rem/status/26934643630):
 
 > I can't count the number of times I've cursed CSS for not having a :parent pseudo selector: a img:parent { background: none; }
 
@@ -10,7 +10,7 @@ The what followed was some going back and forth with people who have thought thi
 
 ## :has selector
 
-Originally I felt that a :parent pseudo selector would do the trick, but [Stuart pointed out](http://twitter.com/#!/sil/status/26934925820) that selectors syntax doesn't work that way, it's always left to right determines depth.
+Originally I felt that a :parent pseudo selector would do the trick, but [Stuart pointed out](http://twitter.com/sil/status/26934925820) that selectors syntax doesn't work that way, it's always left to right determines depth.
 
 So thinking about it some more, I felt that using a :has() selector would complement the :not() selector really well. Something like this:
 

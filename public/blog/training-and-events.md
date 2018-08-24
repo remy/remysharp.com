@@ -8,7 +8,7 @@ There's a number of upcoming events I wanted to blog about, partly to lend a han
 
 Workshops over the last 12 months have really increased for me - both in public workshops (often via events) and private company workshops. I've now finally got so much HTML5 content that companies can now create a "pick and mix" HTML5 workshop spanning over anything from 1 to 4 days.
 
-I'm up in Manchester next week doing private workshops for the BBC on mobile web dev. Possibly [my favourite quote](https://twitter.com/#!/sparrk/status/156437912546836481) from the last time I ran this event was from James O'Brien aka @sparrk:
+I'm up in Manchester next week doing private workshops for the BBC on mobile web dev. Possibly [my favourite quote](https://twitter.com/sparrk/status/156437912546836481) from the last time I ran this event was from James O'Brien aka @sparrk:
 
 > Remy's HTML5 for mobile workshop showed me how to do at least three things I'd previously thought were impossible.
 

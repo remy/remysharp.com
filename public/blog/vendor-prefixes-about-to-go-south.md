@@ -29,7 +29,7 @@ The fear the browsers have, understandably, is that developers are coding for we
 
 Now that `-webkit` prefixes are so prolific in the wild (not my statement, but as suggested from the meeting minute notes), it seems the approach most want in the CSS working group is to simply implement the non-standard feature in to their specification. An oversimplification, but worryingly true.
 
-There is some voice of sanity, namely in [Daniel Glazman / glazou](https://twitter.com/#!/glazou) and Peter Linss.
+There is some voice of sanity, namely in [Daniel Glazman / glazou](https://twitter.com/glazou) and Peter Linss.
 
 You have to still appreciate the politics of the problem:
 
