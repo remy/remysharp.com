@@ -8,7 +8,7 @@ Here's a collection of jq recipes I've collected over the last few months.
 
 Push on to an existing array (where source is `[1, 2, 3]`):
 
-```
+```jq
 . + [ 4 ] # result: [ 1, 2, 3, 4 ]
 ```
 
@@ -19,7 +19,7 @@ Push on to an existing array (where source is `[1, 2, 3]`):
 Convert object to array, moving the key into the array item under the property
 `slug`:
 
-```
+```jq
 to_entries | map_values(.value + { slug: .key })
 ```
 
@@ -29,7 +29,7 @@ to_entries | map_values(.value + { slug: .key })
 
 Convert an array to a keyed object (the inverse of the above example):
 
-```
+```jq
 map({ (.slug): . }) | add
 ```
 
@@ -39,7 +39,7 @@ map({ (.slug): . }) | add
 
 Swap the key/value pair to read as value/key object:
 
-```
+```jq
 to_entries | map( {(.value) : .key } ) | add
 ```
 
@@ -72,7 +72,7 @@ cat timestamps.txt | jq --slurp --raw-input 'split("\n")[:-1] | map({
 
 From a plain list of timestamps, count the occurrences of unique days (the first part is from the example above):
 
-```
+```jq
 split("\n")[:-1] | map({
   date: (. | strptime("%a, %d %b %Y %H:%M:%S") | todate[0:10]),
   time: (. | strptime("%a, %d %b %Y %H:%M:%S") | todate[11:19])
@@ -90,7 +90,7 @@ Take an object with two similar objects, but separated between team and
 formerly, and merge into a single object, adding a flag for all those from the
 formerly group:
 
-```
+```jq
 [.team, (.formerly | map(. + {formerly: true }))] | flatten
 ```
 
@@ -118,7 +118,7 @@ eval "$(
 
 Update all outdated npm dependencies:
 
-```
+```bash
 npm i $(echo $(npm outdated --json | jq -r 'to_entries | .[] | "\(.key)@\(.value.latest)"'))
 ```
 
@@ -128,7 +128,7 @@ npm i $(echo $(npm outdated --json | jq -r 'to_entries | .[] | "\(.key)@\(.value
 
 Install the dependencies from one node project to another:
 
-```
+```bash
 npm i $(cat ../other-project/package.json| jq '.dependencies | keys[]' -r)
 ```
 
@@ -138,13 +138,13 @@ npm i $(cat ../other-project/package.json| jq '.dependencies | keys[]' -r)
 
 Add a new property to every object:
 
-```
+```jq
 map(. + { "draft": true })
 ```
 
 Or
 
-```
+```jq
 [.[] | . + { "draft" : true }]
 ```
 
@@ -173,7 +173,7 @@ Add new property to every object in a nested object, i.e. source looks like:
 
 Command:
 
-```
+```jq
 with_entries(.value += { "draft": true})
 ```
 
@@ -184,7 +184,7 @@ with_entries(.value += { "draft": true})
 
 Remove a property from a nested object (example as above):
 
-```
+```jq
 with_entries(.value |= del(.title))
 ```
 
@@ -194,7 +194,7 @@ with_entries(.value |= del(.title))
 
 List all the dependencies in a `package.json` for use in other commands, like `npm uninstall`:
 
-```
+```bash
 echo $(cat package.json | jq '.dependencies | keys | .[] | "\(.)"' -r)
 ```
 
@@ -204,7 +204,7 @@ echo $(cat package.json | jq '.dependencies | keys | .[] | "\(.)"' -r)
 
 Get mongodb data into jq compatible format:
 
-```
+```bash
 mongo <host>/<db> --norc --username <user> --password <pwd> \
   --eval 'printjson(db.getCollection("users").find().toArray())' | \
   jq '.[]'
@@ -214,7 +214,7 @@ mongo <host>/<db> --norc --username <user> --password <pwd> \
 
 From Twitter's API, take all DM received and sent and transform into readable format sorted by date order:
 
-```
+```jq
 [ .[] | {
   text,
   date: .created_at,
@@ -250,7 +250,7 @@ Note: also uses [depcheck](https://www.npmjs.com/package/depcheck) to resolve th
 
 From a nested tree of objects, find the object whose `id` matches X:
 
-```
+```bash
 curl -sL https://git.io/vxPyi | \
   jq '.. | objects | select(.id == "0:16")'
 ```
@@ -261,7 +261,7 @@ curl -sL https://git.io/vxPyi | \
 
 Strip all occurrences of a property (`email` in this example):
 
-```
+```jq
 walk(if type == "object" then . | del(.email) else . end)
 ```
 
@@ -273,8 +273,8 @@ Note that the `walk` function is missing from jq@1.5 and needs to be added (seen
 
 Bulk insert into elastic search using a vanilla JSON array, i.e. [1,2,3,4] - zipping the array with the required elastic search metadata:
 
-```
-cat data.json | \
+```bash
+$ cat data.json | \
   jq 'reduce .[] as $n ([]; . + [{ "index" : { "_index": "my-index", "_type" : "my-type" } }, $n]) | .[]' -c | \
   curl -H "Content-Type: application/x-ndjson" -XPOST http://localhost:9200/_bulk --data-binary "@-"
 ```
@@ -285,7 +285,7 @@ cat data.json | \
 
 Filter an array, similar to a JavaScript array filter:
 
-```
+```jq
 def filter(cond): map(select(cond));
 
 filter(. > 2)
@@ -295,10 +295,9 @@ filter(. > 2)
 
 ---
 
-Converting a text output of columns and converting to a JSON object. In this case, running Zeit's `now ls` to find out how many running instance I have:
+Converting a text output of columns and converting to a JSON object. In this case, running Zeit's `now ls | jq --raw-input --slurp` to find out how many running instance I have:
 
-```bash
-now ls | jq --raw-input --slurp '
+```jq
 split("\n")[1:-3] | # split into an array of strings, removing the 1st and last few blank lines
 map([ split(" ")[] | select(. != "") ]) | # convert large spaces into individual colmns
 map({ # map into a usable object
@@ -310,7 +309,7 @@ map({ # map into a usable object
   age: .[5]
 }) |
 # now I can query the result - in this case: how many running and are npm
-map(select(.number > 0 and .type == "NPM")) | length'
+map(select(.number > 0 and .type == "NPM")) | length
 ```
 
 [Demo](https://jqterm.com/04157437953546ba69e57cd19581299d?query=split%28%22%5Cn%22%29%5B1%3A-3%5D%20%7C%20%23%20split%20and%20trim%20the%20lines%0Amap%28%5B%20split%28%22%20%22%29%5B%5D%20%7C%20select%28.%20!%3D%20%22%22%29%20%5D%29%20%7C%20%23%20break%20in%20to%20columns%0Amap%28%7B%20%0A%20%20app%3A%20.%5B0%5D%2C%20%0A%20%20url%3A%20.%5B1%5D%2C%20%0A%20%20number%3A%20%28if%20%28.%5B2%5D%20%3D%3D%20%22-%22%29%20then%20.%5B2%5D%20else%20.%5B2%5D%20%7C%20tonumber%20end%29%2C%20%0A%20%20type%3A%20.%5B3%5D%2C%20%0A%20%20state%3A%20.%5B4%5D%2C%20%0A%20%20age%3A%20.%5B5%5D%20%0A%7D%29%20%7C%0Amap%28select%28.number%20%3E%200%20and%20.type%20%3D%3D%20%22NPM%22%29%29%20%7C%20length&slurp=true&raw-input=true)
