@@ -13,7 +13,7 @@ var router = require('router-stupid');
 var blogs = require('./public/blog/_data.json');
 var pages = Object.keys(require('./public/_data.json'));
 const harpcfg = require('./harp.json');
-var slugs = Object.keys(blogs).sort(function (a, b) {
+var slugs = Object.keys(blogs).sort(function(a, b) {
   return blogs[a].date < blogs[b].date ? 1 : -1;
 });
 
@@ -31,7 +31,7 @@ var elasticsearch = require('elasticsearch');
 // compiled, this is the cleanest solution.
 global.moment = moment;
 
-global.split = function (content) {
+global.split = function(content) {
   var res = [];
   if (content.split(/<!--\s*more\s*-->/).length > 1) {
     res = content.split(/<!--\s*more\s*-->/);
@@ -39,8 +39,14 @@ global.split = function (content) {
     res = content.split('<hr>');
   } else {
     res = [
-      content.split('<p>').slice(0, 4).join('<p>'),
-      content.split('<p>').slice(4).join('<p>'),
+      content
+        .split('<p>')
+        .slice(0, 4)
+        .join('<p>'),
+      content
+        .split('<p>')
+        .slice(4)
+        .join('<p>'),
     ];
   }
 
@@ -59,7 +65,10 @@ global.split = function (content) {
 if (!pkg.version) {
   pkg.version = 'dev';
 }
-global.version = pkg.version.split('.').slice(0, 2).join('.');
+global.version = pkg.version
+  .split('.')
+  .slice(0, 2)
+  .join('.');
 global.fullversion = pkg.version;
 
 function redirect(res, url) {
@@ -68,25 +77,30 @@ function redirect(res, url) {
 }
 
 /* legacy for feedburner */
-route.all('/feed/', function (req, res, next) {
+route.all('/feed/', function(req, res, next) {
   // required by harp because it thinks I'm using express...
   req.url = '/feed.xml';
   next();
 });
 
 /* redirect for book */
-route.get('/cli-book', function (req, res, next) {
+route.get('/cli-book', function(req, res, next) {
   // required by harp because it thinks I'm using express...
   redirect(res, 'https://abookapart.com/products/working-the-command-line');
 });
 
+route.get('/talks', (req, res) => redirect(res, '/speaking/'));
+
 /* redirect to s3 hosted urls */
-route.all(/\/downloads\/(.*)$/, function (req, res) {
+route.all(/\/downloads\/(.*)$/, function(req, res) {
   redirect(res, 'http://download.remysharp.com/' + req.params[1]);
 });
 
-route.post('/search', function (req, res) {
-  var query = req.url.split('?').slice(1).join('?');
+route.post('/search', function(req, res) {
+  var query = req.url
+    .split('?')
+    .slice(1)
+    .join('?');
   var search = querystring.parse(query);
 
   var client = new elasticsearch.Client({
@@ -94,54 +108,61 @@ route.post('/search', function (req, res) {
     // log: 'trace',
   });
 
-  client.search({
-    index: 'blog-posts',
-    body: {
-      query: {
-        match: {
-          body: search.q,
+  client.search(
+    {
+      index: 'blog-posts',
+      body: {
+        query: {
+          match: {
+            body: search.q,
+          },
         },
-      },
-      highlight: {
-        'pre_tags': ['<strong class="highlight"><em>'],
-        'post_tags': ['</em></strong>'],
-        fields: {
-          body: {
-            'number_of_fragments': 10,
-            'fragment_size': 400,
+        highlight: {
+          pre_tags: ['<strong class="highlight"><em>'],
+          post_tags: ['</em></strong>'],
+          fields: {
+            body: {
+              number_of_fragments: 10,
+              fragment_size: 400,
+            },
           },
         },
       },
+      fields: 'title,date,highlight',
     },
-    fields: 'title,date,highlight',
-  }, function (error, response) {
-    if (error) {
-      res.writeHead(500, { 'content-type': 'application/json' });
-      return res.end(JSON.stringify({ error: true, message: error.message }));
+    function(error, response) {
+      if (error) {
+        res.writeHead(500, { 'content-type': 'application/json' });
+        return res.end(JSON.stringify({ error: true, message: error.message }));
+      }
+      res.writeHead(200, { 'content-type': 'application/json' });
+
+      if (response.hits.total === 0) {
+        return res.end('[]');
+      }
+
+      var results = response.hits.hits.map(function(res) {
+        var date = moment(res.fields.date.pop());
+        return {
+          title: res.fields.title.pop(),
+          date: date.format('D-MMM YYYY'),
+          score: res._score,
+          url:
+            'https://remysharp.com/' +
+            date.format('YYYY/MM/DD') +
+            '/' +
+            res._id,
+          highlight: res.highlight.body.pop() || '',
+        };
+      });
+
+      res.end(JSON.stringify(results));
     }
-    res.writeHead(200, { 'content-type': 'application/json' });
-
-    if (response.hits.total === 0) {
-      return res.end('[]');
-    }
-
-    var results = response.hits.hits.map(function (res) {
-      var date = moment(res.fields.date.pop());
-      return {
-        title: res.fields.title.pop(),
-        date: date.format('D-MMM YYYY'),
-        score: res._score,
-        url: 'https://remysharp.com/' + date.format('YYYY/MM/DD') + '/' + res._id,
-        highlight: (res.highlight.body.pop() || ''),
-      };
-    });
-
-    res.end(JSON.stringify(results));
-  });
+  );
 });
 
 // redirect to the latest post
-route.get('/latest', function (req, res, next) {
+route.get('/latest', function(req, res, next) {
   var post = blogs[slugs[0]];
   if (post) {
     var url = moment(post.date).format('/YYYY/MM/DD/') + slugs[0];
@@ -151,8 +172,8 @@ route.get('/latest', function (req, res, next) {
   next();
 });
 
-route.get('/random', function (req, res, next) {
-  var slug = slugs[Math.random() * slugs.length | 0];
+route.get('/random', function(req, res, next) {
+  var slug = slugs[(Math.random() * slugs.length) | 0];
   var post = blogs[slug];
   if (post) {
     var url = moment(post.date).format('/YYYY/MM/DD/') + slug;
@@ -163,7 +184,7 @@ route.get('/random', function (req, res, next) {
 });
 
 /* allow fast redirects to edit pages */
-route.get(/^\/(.*)\/edit(\/)?$/, function (req, res, next) {
+route.get(/^\/(.*)\/edit(\/)?$/, function(req, res, next) {
   var match = [];
 
   // first check it's not a static file in /public
@@ -177,18 +198,22 @@ route.get(/^\/(.*)\/edit(\/)?$/, function (req, res, next) {
       match = req.params[1].split('/').slice(-1);
       match[0] = 'blog/' + match[0];
     } else {
-      match = slugs.filter(function (slug) {
-        return slug.indexOf(req.params[1]) !== -1;
-      }).map(function (s) {
-        s = 'blog/' + s;
-        return s;
-      });
+      match = slugs
+        .filter(function(slug) {
+          return slug.indexOf(req.params[1]) !== -1;
+        })
+        .map(function(s) {
+          s = 'blog/' + s;
+          return s;
+        });
     }
   }
 
   if (match.length) {
-    var url = 'https://github.com/remy/remysharp.com/blob/master/public/' +
-      match.shift() + '.md';
+    var url =
+      'https://github.com/remy/remysharp.com/blob/master/public/' +
+      match.shift() +
+      '.md';
     return redirect(res, url);
   }
 
@@ -196,17 +221,17 @@ route.get(/^\/(.*)\/edit(\/)?$/, function (req, res, next) {
 });
 
 /* redirect to s3 hosted urls */
-route.all('/wp-content/uploads/{year}/{month}/{filename}', function (req, res) {
+route.all('/wp-content/uploads/{year}/{month}/{filename}', function(req, res) {
   redirect(res, 'http://download.remysharp.com/' + req.params.filename);
 });
 
 /* redirect to s3 hosted urls */
-route.all('/demo/{filename}', function (req, res) {
+route.all('/demo/{filename}', function(req, res) {
   redirect(res, 'http://download.remysharp.com/' + req.params.filename);
 });
 
 /* redirect /blog/{slug} to the date formatted url */
-route.all('/{blog}?/{post}', function (req, res, next) {
+route.all('/{blog}?/{post}', function(req, res, next) {
   var post = blogs[req.params.post];
   if (post) {
     var url = moment(post.date).format('/YYYY/MM/DD/') + req.params.post;
@@ -217,52 +242,55 @@ route.all('/{blog}?/{post}', function (req, res, next) {
 });
 
 /* main url handler: /{year}/{month}/{day}/{slug} */
-route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/amp)?(\/)?$/, function (req, res, next) {
-  var params = req.params;
-  var post = blogs[params[4]];
-  const amp = !!params[5];
+route.all(
+  /^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/amp)?(\/)?$/,
+  function(req, res, next) {
+    var params = req.params;
+    var post = blogs[params[4]];
+    const amp = !!params[5];
 
-  if (post && post.date) {
-    // test if the date matches
+    if (post && post.date) {
+      // test if the date matches
 
-    // note that with moment, we're specifying the parse format
-    var date = moment(post.date.split(' ')[0]);
-    var requestDate = params.slice(1, 4).join('-');
+      // note that with moment, we're specifying the parse format
+      var date = moment(post.date.split(' ')[0]);
+      var requestDate = params.slice(1, 4).join('-');
 
-    if (date.format('YYYY-MM-DD') !== requestDate) {
-      return next();
+      if (date.format('YYYY-MM-DD') !== requestDate) {
+        return next();
+      }
+
+      if (params[5] === '/') {
+        redirect(res, req.url.replace(/(.)\/$/, '$1'));
+        return;
+      }
+
+      // this allows Harp to pick up the correct post
+      req.url = '/blog/' + params[4];
+
+      if (amp) {
+        req.url += '/amp';
+      }
     }
 
-    if (params[5] === '/') {
-      redirect(res, req.url.replace(/(.)\/$/, '$1'));
-      return;
-    }
-
-    // this allows Harp to pick up the correct post
-    req.url = '/blog/' + params[4];
-
-    if (amp) {
-      req.url += '/amp';
-    }
+    next();
   }
-
-  next();
-});
+);
 
 /* handle /{year} in url */
-route.get(/^\/([0-9]{4})(\/?)$/, function (req, res, next) {
+route.get(/^\/([0-9]{4})(\/?)$/, function(req, res, next) {
   req.url = '/archive/' + req.params[1] + '/';
   next();
 });
 
 /* match slug partial and redirect to post */
-route.all(/^\/([a-z0-9\-]+)(\/?)$/i, function (req, res, next) {
+route.all(/^\/([a-z0-9\-]+)(\/?)$/i, function(req, res, next) {
   // first check it's not a static file in /public
   if (pages.indexOf(req.params[1]) !== -1) {
     return next();
   }
 
-  var match = slugs.filter(function (slug) {
+  var match = slugs.filter(function(slug) {
     return slug.indexOf(req.params[1]) !== -1;
   });
 
@@ -277,24 +305,28 @@ route.all(/^\/([a-z0-9\-]+)(\/?)$/i, function (req, res, next) {
   next();
 });
 
-var server = function (root) {
+var server = function(root) {
   // manually glob all the .html files so that we can navigate
   // without .html on the end of the urls
-  glob('**/*.html', {
-    cwd: root,
-    dot: false,
-  }, function (er, files) {
-    htmlFiles = files.map(function (file) {
-      return '/' + file;
-    });
-  });
+  glob(
+    '**/*.html',
+    {
+      cwd: root,
+      dot: false,
+    },
+    function(er, files) {
+      htmlFiles = files.map(function(file) {
+        return '/' + file;
+      });
+    }
+  );
 
   // use st module for static cached routing
   mount = st({
     path: root,
     url: '/',
     index: 'index.html', // server index.html for directories
-    passthrough: true // pass through if not found, so we can send 404
+    passthrough: true, // pass through if not found, so we can send 404
   });
 
   console.log('compilation complete');
@@ -312,7 +344,7 @@ function tryAMP(req, res) {
         publicPath: __dirname + '/public',
         config: {
           globals: Object.assign({ amp: true }, harpcfg.globals),
-        }
+        },
       };
 
       // resets the renderer
@@ -332,8 +364,7 @@ function run() {
   if (process.env.NODE_ENV === 'production') {
     fourohfour = require('fs').readFileSync(outputPath + '/404.html');
     // lastly...
-    route.get('*', function (req, res, next) {
-
+    route.get('*', function(req, res, next) {
       // simplify the url (remove the ?search) and test if
       // we have a file that exists (in `htmlFiles`)
       req.url = req.url.replace(/\?.*$/, '').replace(/(.)\/$/, '$1');
@@ -359,10 +390,10 @@ function run() {
   } else {
     // this is used for offline development, where harp is
     // rebuilding all files on the fly.
-    route.get(/^\/archive$/, function (req, res) {
+    route.get(/^\/archive$/, function(req, res) {
       redirect(res, '/archive/');
     });
-    route.get(/^\/drafts$/, function (req, res) {
+    route.get(/^\/drafts$/, function(req, res) {
       redirect(res, '/drafts/');
     });
     route.all('*', (req, res, next) => {
@@ -371,7 +402,7 @@ function run() {
     });
     route.all('*', harp.mount(__dirname));
     route.all('*', (req, res) => {
-      tryAMP(req, res)()
+      tryAMP(req, res)();
     });
     // route.all('*', function (req, res) {
     //   req.url = '/404';
@@ -385,8 +416,11 @@ function run() {
 }
 
 function stat(filename) {
-  return new Promise(function (resolve) {
-    fs.stat(__dirname + '/public/blog/' + filename + '.md', function (error, stat) {
+  return new Promise(function(resolve) {
+    fs.stat(__dirname + '/public/blog/' + filename + '.md', function(
+      error,
+      stat
+    ) {
       if (error) {
         resolve({ slug: filename, date: new Date(0) });
       } else {
@@ -396,18 +430,22 @@ function stat(filename) {
   });
 }
 
-global.recent = slugs.slice(0).sort(function (a, b) {
-  return blogs[a].modified < blogs[b].modified ? 1 : -1;
-}).slice(0, 3).map(function (id) {
-  return {
-    slug: id,
-    date: blogs[id].modified,
-  };
-});
+global.recent = slugs
+  .slice(0)
+  .sort(function(a, b) {
+    return blogs[a].modified < blogs[b].modified ? 1 : -1;
+  })
+  .slice(0, 3)
+  .map(function(id) {
+    return {
+      slug: id,
+      date: blogs[id].modified,
+    };
+  });
 
 if (process.argv[2] === 'compile') {
   process.env.NODE_ENV = 'production';
-  harp.compile(__dirname, outputPath, function (errors) {
+  harp.compile(__dirname, outputPath, function(errors) {
     if (errors) {
       console.log(JSON.stringify(errors, null, 2));
       process.exit(1);

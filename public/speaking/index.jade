@@ -1,0 +1,39 @@
+- years = Object.keys(public.speaking._data).sort().reverse();
+
+.post
+  h1.title Speaking & Training
+  div.post-content
+    :markdown
+      If you'd like me to speak at your event, please get in touch. I also have a [speaker rider](/rider) that includes my contact details, useful details to share with me when getting in touch, and a my requirements from events that I speak at.
+
+      If you need my bio and head shot, you can find these on my [about page](/about), available in both HTML and markdown.
+
+
+  each year in years
+    - talks = public.speaking._data[year];
+    - talks = [...talks].reverse()
+    h1.title= year
+    .post-content
+      each talk in talks
+        .talk
+          p(id="#{talk.slug}")
+            strong
+              a.plain(href="#{talk.url}" target="_blank" rel="nofollow")= talk.event.replace(year, '').trim()
+            span &nbsp;- #{talk.location}
+            br
+            if talk.type
+              span.tag= talk.type
+            else
+              span.tag Talk
+            &nbsp;
+            time(datetime="#{talk.date.start}" title="#{talk.date.start}")
+              span #{moment(talk.date.start).format('D-MMM YYYY')}&nbsp;
+            if talk.title
+              em= talk.title
+            br
+            if talk.links
+              span.talk-links
+                each links in talk.links
+                  a(rel="nofollow" href="#{links[1]}" target="_blank")= links[0]
+                  &nbsp;
+
