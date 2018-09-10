@@ -8,11 +8,17 @@
 
       If you need my bio and head shot, you can find these on my [about page](/about), available in both HTML and markdown.
 
+    ul.inline
+      each year in years
+        - talks = public.speaking._data[year];
+        li
+          a(href="##{year}")= year
+          span.label (#{talks.length})
 
   each year in years
     - talks = public.speaking._data[year];
     - talks = [...talks].reverse()
-    h1.title= year
+    h1(id="#{year}").title= year
     .post-content
       each talk in talks
         .talk
