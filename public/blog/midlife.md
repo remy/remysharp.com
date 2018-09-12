@@ -4,7 +4,7 @@
 
 <!--more-->
 
-<div style="border: 0; display: block; padding: 10px; padding-bottom: 5px; background: #000; color: #fff; font-size: 12px; text-decoration: none"><img src="/images/gingin.jpg" alt="Photo of Remy Sharp as a young boy with his gerbil" style="border: 0; width: 100%; max-width: 100%"><br>&nbsp;A picture of me from earlier, with Gin-Gin, my gerbil (_yes, actually his name!_)</div>
+<div style="border: 0; display: block; padding: 10px; padding-bottom: 5px; background: #000; color: #fff; font-size: 12px; text-decoration: none"><img src="/images/gingin.jpg" alt="Photo of Remy Sharp as a young boy with his gerbil" style="border: 0; width: 100%; max-width: 100%"><br>&nbsp;A picture of me from earlier, with Gin-Gin, my gerbil (_little did I know of the importance of gin…gin_)</div>
 
 The above picture from a simpler time. Some months later, lightning would strike the hutch that Gin-Gin (the gerbil) and Gibbles (our rabbit) lived in, and they both escaped to the wider world, happy somewhere in a field nibbling on hay and bits of grass. A decade later I'd realise it was a fox that helped them escape. A decade after that I'd realise there was probably no grand escape, only a grand meal, for the fox.
 
