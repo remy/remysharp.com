@@ -4917,5 +4917,14 @@
       "code"
     ],
     "published": true
+  },
+  "curation-all-the-way": {
+    "title": "Curation all the way",
+    "date": "2018-10-05 14:27:47",
+    "modified": "2018-10-05 14:19:57",
+    "tags": [
+      "web"
+    ],
+    "published": true
   }
 }
