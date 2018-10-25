@@ -21,7 +21,7 @@
   "dependencies": {
     "clite": "0.3.0",
     "elasticsearch": "10.1.3",
-    "glob": "4.0.5",
+    "glob": "5.0.15",
     "harp": "^0.23.0",
     "image-size": "^0.5.0",
     "jstransformer-marked": "1.0.1",
