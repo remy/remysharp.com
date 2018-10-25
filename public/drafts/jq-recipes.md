@@ -313,3 +313,18 @@ map(select(.number > 0 and .type == "NPM")) | length
 ```
 
 [Demo](https://jqterm.com/04157437953546ba69e57cd19581299d?query=split%28%22%5Cn%22%29%5B1%3A-3%5D%20%7C%20%23%20split%20and%20trim%20the%20lines%0Amap%28%5B%20split%28%22%20%22%29%5B%5D%20%7C%20select%28.%20!%3D%20%22%22%29%20%5D%29%20%7C%20%23%20break%20in%20to%20columns%0Amap%28%7B%20%0A%20%20app%3A%20.%5B0%5D%2C%20%0A%20%20url%3A%20.%5B1%5D%2C%20%0A%20%20number%3A%20%28if%20%28.%5B2%5D%20%3D%3D%20%22-%22%29%20then%20.%5B2%5D%20else%20.%5B2%5D%20%7C%20tonumber%20end%29%2C%20%0A%20%20type%3A%20.%5B3%5D%2C%20%0A%20%20state%3A%20.%5B4%5D%2C%20%0A%20%20age%3A%20.%5B5%5D%20%0A%7D%29%20%7C%0Amap%28select%28.number%20%3E%200%20and%20.type%20%3D%3D%20%22NPM%22%29%29%20%7C%20length&slurp=true&raw-input=true)
+
+---
+
+Find duplicates in an array based on a key:
+
+```jq
+[
+	reduce .[].id as $item (
+	  {}; # initial value
+	  .[$item] += 1
+	) | to_entries[] | select(.value > 1)
+] | from_entries
+```
+
+[Demo](https://jqterm.com/511d71a5f8414b87ee909fb27c00bdaf?query=%5B%20%0A%09reduce%20.%5B%5D.id%20as%20%24item%20%28%0A%09%20%20%7B%7D%3B%20%23%20initial%20value%0A%09%20%20.%5B%24item%5D%20%2B%3D%201%0A%09%29%20%7C%20to_entries%5B%5D%20%7C%20select%28.value%20%3E%201%29%0A%5D%20%7C%20from_entries)
