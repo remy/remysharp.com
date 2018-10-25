@@ -320,10 +320,10 @@ Find duplicates in an array based on a key:
 
 ```jq
 [
-	reduce .[].id as $item (
-	  {}; # initial value
-	  .[$item] += 1
-	) | to_entries[] | select(.value > 1)
+  reduce .[].id as $item (
+    {}; # initial value
+    .[$item] += 1
+  ) | to_entries[] | select(.value > 1)
 ] | from_entries
 ```
 
