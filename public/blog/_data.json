@@ -4926,5 +4926,14 @@
       "web"
     ],
     "published": true
+  },
+  "shell-debugging-vanishing-text": {
+    "title": "Debugging vanishing text in shell scripts",
+    "date": "2018-10-29 08:23:25",
+    "modified": "2018-08-28 17:04:35",
+    "tags": [
+      "code"
+    ],
+    "published": true
   }
 }

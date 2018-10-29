@@ -1,8 +1,10 @@
 # Debugging vanishing text in shell scripts
 
-Did you ever get a weird bash scripting issue where a variable would "randomly" eat characters of another command? 
+Did you ever get a weird bash scripting issue where a variable would "randomly" eat characters of another command?
 
 No…? Well, I have, quite a few times, so I figured it was time I wrote up my fix.
+
+Tools used: `curl`, `awk` and `od`
 
 <!--more-->
 
@@ -20,7 +22,7 @@ curl https://api.tinify.com/shrink -D /dev/stdout \
 https://api.tinify.com/output/kdn3bvw6wzb2tqj869n6c5yq0tc34gt9
 ```
 
-Note that I'm using `printf` in `awk` so that a `\n` isn't added. 
+Note that I'm using `printf` in `awk` so that a `\n` isn't added.
 
 The second request would do this:
 
@@ -76,6 +78,7 @@ The final result:
 
 ```bash
 function shrink() {
+  # first upload and compress the filename argument
   local URL=$(curl https://api.tinify.com/shrink \
     --user api:$TINIFY_KEY \
     --dump-header /dev/stdout \
@@ -83,6 +86,7 @@ function shrink() {
     awk '/Location/ { gsub(/[[:space:]]+$/, ""); printf $2 }'
   )
 
+  # then download and overwrite the file with the newly shrunk file
   curl -X POST $URL --user api:$TINIFY_KEY --dump-header /dev/stdout --output $1 -H 'content-type: application/json' -d'{"resize":{"method":"scale","width":1320}}'
 }
 ```
