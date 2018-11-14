@@ -591,5 +591,25 @@
     "tags": [
       "personal"
     ]
+  },
+  "impressions-of-bitsrc": {
+    "title": "Impressions of bitsrc",
+    "date": "2018-11-01 13:38:41",
+    "modified": "2018-11-01 13:38:41",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
+  },
+  "ways-to-extract-slides": {
+    "title": "Ways to extract slides",
+    "date": "2018-11-13 12:50:55",
+    "modified": "2018-11-13 12:50:55",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }
