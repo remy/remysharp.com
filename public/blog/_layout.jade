@@ -57,7 +57,7 @@ block content
           if res
             != res[0]
             if (!nosubscribe && tags.indexOf('personal') === -1)
-              != partial('../_partials/' + (ad || 'ffconf') + '-ad')
+              != partial('../_partials/' + (ad || 'terminal') + '-ad')
             != res[1]
           else
             != yield

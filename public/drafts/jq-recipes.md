@@ -328,3 +328,13 @@ Find duplicates in an array based on a key:
 ```
 
 [Demo](https://jqterm.com/511d71a5f8414b87ee909fb27c00bdaf?query=%5B%20%0A%09reduce%20.%5B%5D.id%20as%20%24item%20%28%0A%09%20%20%7B%7D%3B%20%23%20initial%20value%0A%09%20%20.%5B%24item%5D%20%2B%3D%201%0A%09%29%20%7C%20to_entries%5B%5D%20%7C%20select%28.value%20%3E%201%29%0A%5D%20%7C%20from_entries)
+
+---
+
+Quickly convert a list of strings into an array (for JavaScript dev, etc):
+
+```bash
+$ pbpaste | jq -Rs 'split("\n")' | pbcopy
+```
+
+[Demo](https://jqterm.com/712b04bcc859bdae9a3393e0b6f3505b?query=split%28%22%5Cn%22%29&slurp=true&raw-input=true)
