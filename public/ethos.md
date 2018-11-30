@@ -6,6 +6,18 @@ It's far from definitive and not organised well, but it's a start to capture wha
 
 ---
 
+## On political correctness
+
+A man whose words I will always have time for, Stephen Fry takes the "other side" of the argument, and articulates why he doesn't believe political correctness works. This is just a short quote from an 8 minute clip, all of which is worth watching. Interesting and refreshing views.
+
+> My real objection is that I don't think political correctness works. I want to get to the Golden Hill, but I don't think that's the way to get there.
+>
+> I believe one of the greatest human failings, is to prefer to be right than to be effective, and political correctness is always obsessed with how right it is without thinking of how effective it it might be.
+
+* [Via Stephen Fry](https://www.youtube.com/watch?v=tPEHbJgomgA) - 19 Sep 2018
+
+---
+
 ## Looking for the blank canvas
 
 > On December 31, 1995, Bill Watterson published the final 'Calvin & Hobbes' comic strip
@@ -111,3 +123,4 @@ I've [written before](/2014/10/27/motivation) about how Emma Watson's UN address
 ![Southpark has some wonderful moments](/images/ethos/southpark-sad.jpg)
 
 [Via @codepo8](https://twitter.com/codepo8/status/621428413262393348) 16 July 2015
+
