@@ -4,8 +4,7 @@
       "slug": "2008_qcon-london-2008",
       "event": "QCon London 2008",
       "title": "The DOM scripting toolkit: jQuery",
-      "url":
-        "https://qconlondon.com/london-2008/qconlondon.com/london-2008/presentation/The%2bDOM%2bscripting%2btoolkit_%2bjQuery.html",
+      "url": "https://qconlondon.com/london-2008/qconlondon.com/london-2008/presentation/The%2bDOM%2bscripting%2btoolkit_%2bjQuery.html",
       "location": "England, London",
       "links": [
         ["pdf slides", "http://remysharp.com/downloads/dom-toolkit-jquery.pdf"],
@@ -25,8 +24,7 @@
       "slug": "2008_skillswap-goes-javascript",
       "event": "Skillswap goes Javascript",
       "title": "The DOM scripting toolkit: jQuery",
-      "url":
-        "https://web.archive.org/web/20081011051838/http://skillswap-brighton.org/2008/06/10/skillswap-goes-javascript/",
+      "url": "https://web.archive.org/web/20081011051838/http://skillswap-brighton.org/2008/06/10/skillswap-goes-javascript/",
       "links": [
         ["pdf slides", "http://remysharp.com/downloads/dom-toolkit-jquery.pdf"],
         [
@@ -47,8 +45,7 @@
       "event": "Iceweb 2008",
       "type": "Workshop",
       "title": "jQuery Love Web Developers",
-      "url":
-        "https://web.archive.org/web/20101124011203/http://www.icewebconference.com/schedule/session/item737/",
+      "url": "https://web.archive.org/web/20101124011203/http://www.icewebconference.com/schedule/session/item737/",
       "archive": true,
       "location": "Iceland, Reykjavik",
       "date": {
@@ -63,8 +60,7 @@
       "slug": "2009_scandinavian-web-developer-conference-2009",
       "event": "Scandinavian Web Developer Conference 2009",
       "title": "jQuery Loves Developers",
-      "url":
-        "https://web.archive.org/web/20131208061437/http://www.swdc2009.com/index_en.html",
+      "url": "https://web.archive.org/web/20131208061437/http://www.swdc2009.com/index_en.html",
       "location": "Sweden, Stockholm",
       "links": [
         [
@@ -85,8 +81,7 @@
       "slug": "2009_geek-meet",
       "event": "Geek Meet",
       "title": "Blueprint for Unobtrusive Web Development",
-      "url":
-        "http://robertnyman.com/2009/05/04/geek-meet-charity-june-4th-2009-chris-mills-and-remy-sharp-speaking/",
+      "url": "http://robertnyman.com/2009/05/04/geek-meet-charity-june-4th-2009-chris-mills-and-remy-sharp-speaking/",
       "location": "Sweden, Stockholm",
       "date": {
         "start": "2009-06-04"
@@ -100,8 +95,7 @@
       "links": [
         ["pdf slides", "https://remysharp.com/downloads/standards-next.pdf"]
       ],
-      "url":
-        "https://web.archive.org/web/20090530182110/http://standards-next.org:80/",
+      "url": "https://web.archive.org/web/20090530182110/http://standards-next.org:80/",
       "location": "England, London",
       "date": {
         "start": "2009-06-27"
@@ -151,8 +145,7 @@
           "http://www.slideshare.net/remy.sharp/iphone-appleless-apps"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2009/barcamp-brighton/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2009/barcamp-brighton/",
       "location": "England, Brighton",
       "date": {
         "start": "2009-09-05",
@@ -174,8 +167,7 @@
           "http://www.slideshare.net/remy.sharp/write-less-do-more"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2009/stack-overflow-dev-day-london/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2009/stack-overflow-dev-day-london/",
       "location": "England, London",
       "date": {
         "start": "2009-10-28"
@@ -196,8 +188,7 @@
         ]
       ],
       "title": "jQuery: write less, do more",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2009/stackoverflow-devdays-cambridge/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2009/stackoverflow-devdays-cambridge/",
       "location": "England, Cambridge",
       "date": {
         "start": "2009-10-30"
@@ -219,8 +210,7 @@
           "http://www.slideshare.net/remy.sharp/jquery-loves-developers-oredev-2009"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2009/oredev/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2009/oredev/",
       "location": "Sweden, Malmo",
       "date": {
         "start": "2009-11-02",
@@ -232,8 +222,7 @@
       "slug": "2009_jsconf-eu-2009",
       "event": "JSConf EU 2009",
       "title": "HTML5 JavaScript APIs",
-      "url":
-        "https://web.archive.org/web/20091003113614/http://jsconf.eu:80/2009/remy_full_frontal_sharp_on_htm.html",
+      "url": "https://web.archive.org/web/20091003113614/http://jsconf.eu:80/2009/remy_full_frontal_sharp_on_htm.html",
       "links": [
         ["video", "https://www.youtube.com/watch?v=Ry_wrXHJFnI"],
         ["pdf slides", "https://remysharp.com/downloads/html5-js-apis.pdf"],
@@ -253,8 +242,7 @@
       "slug": "2009_codebits-2009",
       "event": "Codebits 2009",
       "title": "HTML5 JavaScript APIs",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2009/codebits/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2009/codebits/",
       "links": [
         [
           "pdf slides",
@@ -284,8 +272,7 @@
           "http://www.slideshare.net/remy.sharp/html5-friend-or-foe-to-flash"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/flash-brighton-2nd-feb/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/flash-brighton-2nd-feb/",
       "location": "England, Brighton",
       "date": {
         "start": "2010-02-02"
@@ -303,8 +290,7 @@
         ],
         ["slideshare", "http://www.slideshare.net/remy.sharp/twitterlibjs"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/devnest-6/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/devnest-6/",
       "location": "England, London",
       "date": {
         "start": "2010-02-04"
@@ -336,8 +322,7 @@
           "http://www.slideshare.net/remy.sharp/webapps-without-the-web"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/the-html5-online-conference/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/the-html5-online-conference/",
       "location": "Online conference",
       "date": {
         "start": "2010-04-12"
@@ -359,8 +344,7 @@
       "slug": "2010_future-of-web-design-2010",
       "event": "Future of Web Design 2010",
       "title": "jQuery for Designers: All you need to code",
-      "url":
-        "https://web.archive.org/web/20100516160516/http://futureofwebdesign.com:80/schedule",
+      "url": "https://web.archive.org/web/20100516160516/http://futureofwebdesign.com:80/schedule",
       "location": "England, London",
       "links": [["pdf slides", "http://remysharp.com/downloads/j4d-fowd.pdf"]],
       "date": {
@@ -395,8 +379,7 @@
           "http://www.slideshare.net/remy.sharp/browsers-with-wings"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/atmedia/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/atmedia/",
       "location": "England, London",
       "date": {
         "start": "2010-06-08",
@@ -418,8 +401,7 @@
           "http://www.slideshare.net/remy.sharp/browsers-with-wings"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/ndc/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/ndc/",
       "location": "Norway, Oslo",
       "date": {
         "start": "2010-06-16",
@@ -441,8 +423,7 @@
           "http://www.slideshare.net/remy.sharp/browsers-with-wings"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/skillswap-goes-turbocharging-the-web/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/skillswap-goes-turbocharging-the-web/",
       "location": "England, Brighton",
       "date": {
         "start": "2010-06-30"
@@ -454,8 +435,7 @@
       "event": "London Geek Nights: HTML5 - why should I care?",
       "title": "HTML5 - why should I care?",
       "links": [["files", "https://remysharp.com/downloads/lgn.zip"]],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/london-geek-nights-html5-why-should-i-care/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/london-geek-nights-html5-why-should-i-care/",
       "location": "England, London",
       "date": {
         "start": "2010-07-01"
@@ -477,8 +457,7 @@
           "http://www.slideshare.net/remy.sharp/browsers-with-wings"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/london-web-august/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/london-web-august/",
       "location": "England, London",
       "date": {
         "start": "2010-08-19"
@@ -491,8 +470,7 @@
       "title": "Browsers with Wings: HTML5 APIs",
       "type": "Workshop",
 
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/full-frontal/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2010/full-frontal/",
       "location": "England, Brighton",
       "date": {
         "start": "2010-11-12"
@@ -515,8 +493,7 @@
           "http://www.slideshare.net/remy.sharp/browsers-with-wings"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20110324004716/http://www.fionaknight.me.uk:80/webconf.html",
+      "url": "https://web.archive.org/web/20110324004716/http://www.fionaknight.me.uk:80/webconf.html",
       "location": "England, Staffordshire",
       "date": {
         "start": "2011-02-16"
@@ -527,8 +504,7 @@
       "slug": "2011_geek-ninja-battle-night-mobile-web-vs-native",
       "event": "Geek Ninja Battle Night: Mobile – Web vs. Native!",
       "title": "Developing for Mobile Web",
-      "url":
-        "https://web.archive.org/web/20110127032244/http://geekninjafactory.com/geek-ninja-battle-night-mobile-web-vs-native",
+      "url": "https://web.archive.org/web/20110127032244/http://geekninjafactory.com/geek-ninja-battle-night-mobile-web-vs-native",
       "links": [
         ["pdf slides", "https://remysharp.com/downloads/web-vs-native.pdf"],
         [
@@ -546,8 +522,7 @@
       "slug": "2011_html5-javascript-apis-workshop1",
       "event": "HTML5 JavaScript APIs",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/html5-brighton/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/html5-brighton/",
       "location": "England, Brighton",
       "date": {
         "start": "2011-05-05"
@@ -558,8 +533,7 @@
       "slug": "2011_html5-javascript-apis-workshop2",
       "event": "HTML5 JavaScript APIs",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/html5-manchester/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/html5-manchester/",
       "location": "England, Manchester",
       "date": {
         "start": "2011-05-09"
@@ -570,8 +544,7 @@
       "slug": "2011_jquery-for-designers-workshop",
       "event": "jQuery for Designers",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/j4d-manchester/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/j4d-manchester/",
       "location": "England, Manchester",
       "date": {
         "start": "2011-05-10"
@@ -582,8 +555,7 @@
       "slug": "2011_node-workshop",
       "event": "Node workshop",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/node-nottingham/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/node-nottingham/",
       "location": "England, Nottingham",
       "date": {
         "start": "2011-05-13"
@@ -594,8 +566,7 @@
       "slug": "2011_jquery-for-designers-workshop",
       "event": "jQuery for Designers",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/j4d-birmingham/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/j4d-birmingham/",
       "location": "England, Birmingham",
       "date": {
         "start": "2011-05-16"
@@ -606,8 +577,7 @@
       "slug": "2011_jquery-for-designers-workshop",
       "event": "jQuery for Designers",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/j4d-bristol/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/j4d-bristol/",
       "location": "England, Bristol",
       "date": {
         "start": "2011-05-18"
@@ -618,8 +588,7 @@
       "slug": "2011_node-workshop",
       "event": "Node workshop",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/node-london/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/node-london/",
       "location": "England, London",
       "date": {
         "start": "2011-05-20"
@@ -637,8 +606,7 @@
           "http://www.slideshare.net/remy.sharp/html5-tutorial-canvas-offfline-sockets"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20110429022321/http://www.rootsconf.no:80/",
+      "url": "https://web.archive.org/web/20110429022321/http://www.rootsconf.no:80/",
       "archive": true,
       "location": "Norway, Bergen",
       "type": "Workshop",
@@ -656,8 +624,7 @@
       "event": "Norwegian Developers Conference 2011",
       "title": "HTML5: huh, what is it good for?",
       "type": "talks",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/ndc/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/ndc/",
       "links": [
         ["pdf slides", "https://remysharp.com/downloads/html5-huh.pdf"],
         [
@@ -686,8 +653,7 @@
           "http://www.slideshare.net/remy.sharp/interaction-implementation"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/the-highland-fling-web-conference/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/the-highland-fling-web-conference/",
       "location": "Scotland, Edinburgh",
       "date": {
         "start": "2011-07-08"
@@ -699,8 +665,7 @@
       "event": "Skillswap cuddles up to HTML5",
       "title": "Forget the web",
       "links": [["pdf slides", "https://remysharp.com/downloads/ftw.pdf"]],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/skillswap-cuddles-up-to-html5/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/skillswap-cuddles-up-to-html5/",
       "location": "England, Brighton",
       "date": {
         "start": "2011-07-20"
@@ -712,8 +677,7 @@
       "event": "OSCON 2011",
       "title": "Learning jQuery, Is HTML5 ready for production",
       "type": "Workshop(s)",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/oscon/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/oscon/",
       "location": "United States, Portland",
       "date": {
         "start": "2011-07-25",
@@ -726,8 +690,7 @@
       "event": "Update 2011",
       "title": "Mobile web development",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/updateconf/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/updateconf/",
       "location": "England, Brighton",
       "date": {
         "start": "2011-09-05"
@@ -745,8 +708,7 @@
           "http://www.slideshare.net/remy.sharp/html5-where-flash-isnt-needed-anymore"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/fotb/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/fotb/",
       "location": "England, Brighton",
       "date": {
         "start": "2011-09-11",
@@ -758,8 +720,7 @@
       "slug": "2011_node-html5-for-a-real-time-web",
       "event": "Node & HTML5 for a real-time web",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/full-frontal-node-workshop/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2011/full-frontal-node-workshop/",
       "location": "England, Brighton",
       "date": {
         "start": "2011-11-09",
@@ -795,8 +756,7 @@
           "https://speakerdeck.com/rem/node-real-time-html5-why-wait"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/sourcedevcon/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/sourcedevcon/",
       "location": "England, London",
       "date": {
         "start": "2012-05-02",
@@ -812,8 +772,7 @@
         ["video", "https://vimeo.com/46530605"],
         ["speakerdeck", "https://speakerdeck.com/rem/mobile-debugging"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/mobilism/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/mobilism/",
       "location": "Netherlands, Amsterdam",
       "date": {
         "start": "2012-05-10",
@@ -830,10 +789,8 @@
           "https://speakerdeck.com/rem/dr-weblove-or-how-i-learned-to-stop-worrying-about-photoshop-and-love-designers"
         ]
       ],
-      "title":
-        "Dr Weblove or: How I Learned to Stop Worrying About Photoshop and Love Designers",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/fowd/",
+      "title": "Dr Weblove or: How I Learned to Stop Worrying About Photoshop and Love Designers",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/fowd/",
       "location": "England, London",
       "date": {
         "start": "2012-05-14",
@@ -849,8 +806,7 @@
         ["speakerdeck", "https://speakerdeck.com/rem/mobile-debugging"]
       ],
 
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/reason-to-be-appy/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/reason-to-be-appy/",
       "location": "England, London",
       "date": {
         "start": "2012-05-29"
@@ -865,8 +821,7 @@
         ["video", "https://vimeo.com/43601247"],
         ["speakerdeck", "https://speakerdeck.com/rem/html5-outliers"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/ndc2012/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/ndc2012/",
       "location": "Norway, Oslo",
       "date": {
         "start": "2012-06-06",
@@ -878,8 +833,7 @@
       "slug": "2012_phonegap-day-eu",
       "event": "PhoneGap Day EU",
       "title": "Mobile Web Apps and Beyond with PhoneGap",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/phonegap-day-eu/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/phonegap-day-eu/",
       "type": "Workshop",
       "location": "Netherlands, Amsterdam",
       "date": {
@@ -904,8 +858,7 @@
       "slug": "2012_velocity-europe-2012",
       "event": "Velocity Europe 2012",
       "title": "Mobile Profiling",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/velocity-europe/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/velocity-europe/",
       "location": "England, London",
       "date": {
         "start": "2012-10-02",
@@ -921,8 +874,7 @@
         ["speakerdeck", "https://speakerdeck.com/rem/iframes-a"]
       ],
       "title": "iframes: A look in to the black heart of the browsers",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/jsconfeu/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/jsconfeu/",
       "location": "Germany, Berlin",
       "date": {
         "start": "2012-10-06",
@@ -959,8 +911,7 @@
       "event": "JS Kings",
       "links": [["speakerdeck", "https://speakerdeck.com/rem/iframes-a"]],
       "title": "iframes: A look in to the black heart of the browsers",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/lwsjskings/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2012/lwsjskings/",
       "location": "England, Greater London",
       "date": {
         "start": "2012-11-26"
@@ -990,8 +941,7 @@
         ["video", "https://www.youtube.com/watch?v=gVknkZKIEbQ"],
         ["slides", "https://speakerdeck.com/rem/flying-solo-on-the-web"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/guest-lecturer-by-remy-sharp/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/guest-lecturer-by-remy-sharp/",
       "location": "England, Portsmouth",
       "date": {
         "start": "2013-03-08"
@@ -1006,8 +956,7 @@
         ["write up", "https://remysharp.com/2013/04/19/i-know-jquery-now-what"],
         ["slides", "https://speakerdeck.com/rem/i-know-jquery-now-what"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/jquery-uk/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/jquery-uk/",
       "location": "England, Oxford",
       "date": {
         "start": "2013-04-19"
@@ -1024,8 +973,7 @@
         ["video", "https://vimeo.com/68910118"],
         ["Q&A session", "http://vimeo.com/68910118#t=2380"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/mobilism/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/mobilism/",
       "location": "Netherlands, Amsterdam",
       "date": {
         "start": "2013-05-15",
@@ -1044,8 +992,7 @@
           "https://speakerdeck.com/rem/lessons-from-the-experimental-edge-of-technology"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/jsconf-us/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/jsconf-us/",
       "location": "United States, Amelia Island",
       "date": {
         "start": "2013-05-29",
@@ -1057,8 +1004,7 @@
       "slug": "2013_node-knowledge-smash-grab",
       "event": "Node: knowledge smash & grab",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/node-knowledge-smash-grab/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/node-knowledge-smash-grab/",
       "location": "England, Brighton",
       "date": {
         "start": "2013-07-19"
@@ -1090,8 +1036,7 @@
       "links": [
         ["slides", "https://speakerdeck.com/rem/the-bits-behind-js-bin"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/lnug-october/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/lnug-october/",
       "location": "England, London",
       "date": {
         "start": "2013-10-23"
@@ -1103,8 +1048,7 @@
       "event": "dotJS 2013",
       "title": "iframe abuse",
       "links": [["video", "https://www.youtube.com/watch?v=heyoi0JURkE"]],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/dotjs/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2013/dotjs/",
       "location": "France, Paris",
       "date": {
         "start": "2013-12-02"
@@ -1120,8 +1064,7 @@
       "links": [
         ["slides", "https://speakerdeck.com/rem/the-bits-behind-js-bin"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2014/londonjsconf/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2014/londonjsconf/",
       "location": "England, London",
       "date": {
         "start": "2014-02-13"
@@ -1132,8 +1075,7 @@
       "slug": "2014_debug-and-know-thy-tools",
       "event": "Debug and know thy tools",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2014/debug-and-know-thy-tools/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2014/debug-and-know-thy-tools/",
       "location": "England, Brighton",
       "date": {
         "start": "2014-04-02"
@@ -1155,8 +1097,7 @@
           "https://remysharp.com/2014/11/10/muddling-my-way-through-real-time"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2014/smartwebconf/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2014/smartwebconf/",
       "location": "Romania, Bucharest",
       "date": {
         "start": "2014-09-22",
@@ -1179,8 +1120,7 @@
           "https://remysharp.com/2014/11/10/muddling-my-way-through-real-time"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2014/netmag/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2014/netmag/",
       "location": "England, London",
       "date": {
         "start": "2014-09-26"
@@ -1196,8 +1136,7 @@
       "links": [
         ["slides", "https://speakerdeck.com/rem/the-bits-behind-js-bin"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/jscampro/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/jscampro/",
       "location": "Romania, Bucharest",
       "date": {
         "start": "2015-06-02"
@@ -1207,10 +1146,8 @@
     {
       "slug": "2015_javascript-open-day",
       "event": "JavaScript Open Day",
-      "title":
-        "The toxic side of free. Or: how I lost the love for my side project",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/jsopenday/",
+      "title": "The toxic side of free. Or: how I lost the love for my side project",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/jsopenday/",
       "links": [
         [
           "slides",
@@ -1239,8 +1176,7 @@
           "https://remysharp.com/drafts/progressive-enhancement"
         ]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/edgeconf/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/edgeconf/",
       "location": "England, London",
       "date": {
         "start": "2015-06-27"
@@ -1248,14 +1184,10 @@
       "year": 2015
     },
     {
-      "slug":
-        "2015_async-the-toxic-side-of-free-or-how-i-lost-the-love-for-my-side-project",
-      "event":
-        "[Async] The Toxic Side of Free, or: how I lost the love for my side project",
-      "title":
-        "The Toxic Side of Free, or: how I lost the love for my side project",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/async-the-toxic-side-of-open-source/",
+      "slug": "2015_async-the-toxic-side-of-free-or-how-i-lost-the-love-for-my-side-project",
+      "event": "[Async] The Toxic Side of Free, or: how I lost the love for my side project",
+      "title": "The Toxic Side of Free, or: how I lost the love for my side project",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/async-the-toxic-side-of-open-source/",
       "links": [
         [
           "slides",
@@ -1280,8 +1212,7 @@
         ],
         ["write up", "https://remysharp.com/2015/09/14/jsbin-toxic-part-1"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/reasons-to-be-creative/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/reasons-to-be-creative/",
       "location": "England, Brighton",
       "date": {
         "start": "2015-09-07",
@@ -1300,8 +1231,7 @@
         ],
         ["write up", "https://remysharp.com/2015/09/14/jsbin-toxic-part-1"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/creativemeet/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/creativemeet/",
       "location": "England, Chichester",
       "date": {
         "start": "2015-09-23"
@@ -1317,8 +1247,7 @@
         ["write up", "https://remysharp.com/2015/10/14/the-art-of-debugging"],
         ["slides", "https://speakerdeck.com/rem/the-art-of-debugging"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/fronteersconf/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/fronteersconf/",
       "location": "Netherlands, Amsterdam",
       "date": {
         "start": "2015-10-08",
@@ -1338,8 +1267,7 @@
         ["write up", "https://remysharp.com/2015/09/14/jsbin-toxic-part-1"]
       ],
 
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/fullstack/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/fullstack/",
       "location": "England, London",
       "date": {
         "start": "2015-10-26",
@@ -1351,8 +1279,7 @@
       "slug": "2015_mastering-devtools-plus-free-pass-to-ffconf-2015",
       "event": "ffconf: Mastering devtools",
       "type": "Workshop",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/mastering-devtools-plus-free-pass-to-ffconf/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/mastering-devtools-plus-free-pass-to-ffconf/",
       "location": "England, Brighton",
       "date": {
         "start": "2015-11-05"
@@ -1370,10 +1297,8 @@
         ["write up", "https://remysharp.com/2015/09/14/jsbin-toxic-part-1"]
       ],
 
-      "title":
-        "The toxic side of free. Or: how I lost the love for my side project",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/halfstackconf/",
+      "title": "The toxic side of free. Or: how I lost the love for my side project",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2015/halfstackconf/",
       "location": "England, London",
       "date": {
         "start": "2015-11-13"
@@ -1386,8 +1311,7 @@
       "slug": "2016_phonegap-day-eu-2016",
       "event": "PhoneGap Day EU 2016",
       "title": "State of the Gap",
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2016/phonegap-day-eu/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2016/phonegap-day-eu/",
       "location": "Netherlands, Amsterdam",
       "links": [
         ["write up", "https://remysharp.com/2016/05/28/state-of-the-gap"],
@@ -1404,8 +1328,7 @@
       "event": "Code4Life, Roche Software Conference",
       "title": "Living Standard",
       "links": [["slides", "https://speakerdeck.com/rem/living-standard"]],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2016/code4lifepl/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2016/code4lifepl/",
       "location": "Poland, Warsaw",
       "date": {
         "start": "2016-10-14"
@@ -1439,8 +1362,7 @@
         ["slides", "https://speakerdeck.com/rem/the-art-of-debugging"],
         ["write up", "https://remysharp.com/2015/10/14/the-art-of-debugging"]
       ],
-      "url":
-        "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2017/infoshare/",
+      "url": "https://web.archive.org/web/20170723094612/http://lanyrd.com:80/2017/infoshare/",
       "location": "Poland, Gdansk",
       "date": {
         "start": "2017-05-17",
@@ -1463,8 +1385,7 @@
       "slug": "2017_parisweb",
       "event": "Paris Web",
       "location": "France, Paris",
-      "url":
-        "https://www.paris-web.fr/2017/conferences/recreating-the-zx-spectrum-loader-with-web-apis.php",
+      "url": "https://www.paris-web.fr/2017/conferences/recreating-the-zx-spectrum-loader-with-web-apis.php",
       "title": "Recreating the ZX Spectrum loader with Web APIs",
       "links": [["video", "https://vimeo.com/258181320"]],
       "date": {
@@ -1505,8 +1426,7 @@
       "slug": "2018_jsconf",
       "event": "JSConf EU 2018",
       "location": "Germany, Berlin",
-      "title":
-        "Using a modern web to recreate 1980s horribly slow and loud loading screens",
+      "title": "Using a modern web to recreate 1980s horribly slow and loud loading screens",
       "year": 2018,
       "links": [
         ["video", "https://www.youtube.com/watch?v=o3MNdxQFUe8"],
@@ -1516,8 +1436,37 @@
       "date": {
         "start": "2018-06-03"
       },
-      "url":
-        "https://2018.jsconf.eu/speakers/remy-sharp-using-a-modern-web-to-recreate-1980s-horribly-slow-and-loud-loading-screens.html"
+      "url": "https://2018.jsconf.eu/speakers/remy-sharp-using-a-modern-web-to-recreate-1980s-horribly-slow-and-loud-loading-screens.html"
+    },
+    {
+      "slug": "2018_ffconf",
+      "event": "ffconf 2018",
+      "location": "England, Brighton",
+      "title": "Using a modern web to recreate 1980s horribly slow and loud loading screens",
+      "year": 2018,
+      "links": [
+        ["slides", "https://talks.zx.isthe.link/"],
+        ["demos", "https://zx.isthe.link/"]
+      ],
+      "date": {
+        "start": "2018-11-08"
+      },
+      "url": "https://2018.ffconf.org/#slow-and-loud"
+    },
+    {
+      "slug": "2018_frontendconnect",
+      "event": "Frontend Connect 2018",
+      "location": "Poland, Warsaw",
+      "title": "Using a modern web to recreate 1980s horribly slow and loud loading screens",
+      "year": 2018,
+      "links": [
+        ["slides", "https://talks.zx.isthe.link/"],
+        ["demos", "https://zx.isthe.link/"]
+      ],
+      "date": {
+        "start": "2018-12-05"
+      },
+      "url": "https://frontend-con.io"
     }
   ]
 }
