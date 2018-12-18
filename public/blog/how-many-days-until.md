@@ -2,7 +2,13 @@
 
 Time is a fun and challenging technical problem to solve, and most recently I had to answer the question: how many days is it until Christmas?
 
-Religious (or commercial) feelings aside, this question, although simple from one human to another, when broken down has lots of complicated moving parts.
+This post is an over the top deep dive into the complexities of accurately answering a question, which boils down to: a ball of wibbly wobbly… time-y wimey… stuff.
+
+<video loop muted autoplay width="680">
+  <source src="/images/time.mp4" type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"'/>
+</video>
+
+Christmas religious (or commercial!) feelings aside, this question, although simple from one human to another, when broken down has lots of complicated moving parts.
 
 I had made a LaMetric countdown to Christmas that displayed the number of days to Christmas, which worked for me, but with all software, didn't work completely right all of the time.
 
@@ -11,6 +17,8 @@ I had made a LaMetric countdown to Christmas that displayed the number of days t
 ![Christmas countdown clock](/images/xmas-clock.jpg)
 
 ## In code, how many days?
+
+The code below is the simplistic answer to "how many days until Christmas":
 
 ```js
 const toDays = ms => ms / 1000 / 60 / 60 / 24;
@@ -207,7 +215,8 @@ async function getCountdown(ip) {
   // work out the timezone based on the IP
   const res = await fetch(`https://ip2tz.isthe.link/?ip=${ip}`);
   const data = await res.json();
-  const tzOffset tz.get(data.time_zone.toLowerCase()); // includes offset in milliseconds
+  // includes offset in milliseconds
+  const tzOffset tz.get(data.time_zone.toLowerCase());
 
   let today = new Date();
   const year = today.getFullYear();
