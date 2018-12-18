@@ -119,20 +119,23 @@ mileage may vary!
 
 ## 2018
 
+* [Remember the Night (1940)](https://www.imdb.com/title/tt0032981/?ref_=nv_sr_1)
+* [The Santa Clause 2 (2002)](https://www.imdb.com/title/tt0304669/?ref_=fn_al_tt_1)
+* [The Man Who Invented Christmas (2017)](https://www.imdb.com/title/tt6225520/?ref_=nv_sr_1)
+* [The Christmas Chronicles (2018)](https://www.imdb.com/title/tt2990140/?ref_=nv_sr_1)
+* [Bad Mom's Christmas (2017)](http://www.imdb.com/title/tt6359956/)
+
+## Future Potentials
+
 * [The Shop Around the Corner (1940)](http://www.imdb.com/title/tt0033045/?)
 * [8 Women (2002)](http://www.imdb.com/title/tt0283832/)
 * [Pottersville (2017)](http://www.imdb.com/title/tt3672120/)
 * [Die Hard (1988)](http://www.imdb.com/title/tt0095016/)
-
-## Future Potentials
-
 * [Meet Me in St. Louis (1944)](http://www.imdb.com/title/tt0037059/)
 * [How the Grinch Stole Christmas (2000)](http://www.imdb.com/title/tt0170016/)
 * [Love the Coopers (2015)](http://www.imdb.com/title/tt2279339/)
-* [Rise of the Guardians (2012)](http://www.imdb.com/title/tt1446192/)
 * [Eight Crazy Nights (2002)](http://www.imdb.com/title/tt0271263/)
 * [The Family Stone (2005)](http://www.imdb.com/title/tt0356680/)
-* [Bad Mom's Christmas (2017)](http://www.imdb.com/title/tt6359956/)
 * I saw mummy kissing santa
 
 Again, what would you recommend, and why?

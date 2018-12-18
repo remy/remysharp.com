@@ -944,7 +944,7 @@
       "personal",
       "ride"
     ],
-    "modified": "2014-11-10 12:16:23"
+    "modified": "2018-06-17 13:04:17"
   },
   "a-way-to-keep-track-and-in-touch": {
     "title": "A way to keep track and in touch",
@@ -2677,7 +2677,7 @@
       "code",
       "css"
     ],
-    "modified": "2014-09-03 16:15:12"
+    "modified": "2018-08-24 13:09:18"
   },
   "nodejs-rapid-development-nodemon": {
     "title": "node.js rapid development: nodemon",
@@ -2709,7 +2709,7 @@
       "christmas",
       "personal"
     ],
-    "modified": "2017-12-23 11:58:29"
+    "modified": "2018-12-18 09:17:55"
   },
   "audio-sprites": {
     "title": "Audio Sprites (and fixes for iOS)",
@@ -2826,7 +2826,7 @@
     "tags": [
       "code"
     ],
-    "modified": "2014-09-03 16:15:12"
+    "modified": "2018-08-24 13:09:28"
   },
   "antisocial-spaces-on-twitter": {
     "title": "Antisocial spaces on Twitter",
@@ -2913,7 +2913,7 @@
       "rants",
       "web"
     ],
-    "modified": "2014-09-03 16:15:12"
+    "modified": "2018-08-24 13:09:33"
   },
   "the-tldr-vendor-prefix-post": {
     "title": "The TL;DR vendor-prefix post",
@@ -2932,7 +2932,7 @@
     "tags": [
       "business"
     ],
-    "modified": "2014-09-03 16:15:12"
+    "modified": "2018-08-24 13:09:31"
   },
   "mobile-battery-performance": {
     "title": "Mobile Battery Performance",
@@ -3731,7 +3731,7 @@
       "personal"
     ],
     "published": true,
-    "modified": "2015-09-02 22:26:34"
+    "modified": "2018-08-21 08:46:43"
   },
   "jsbin-toxic-part-1": {
     "title": "The toxic side of free. Or: how I lost the love for my side project (part 1)",
@@ -4827,7 +4827,7 @@
   "my-extinguished-kindle": {
     "title": "My extinguished kindle",
     "date": "2018-05-18 13:02:11",
-    "modified": "2018-05-18 12:17:37",
+    "modified": "2018-05-18 12:55:23",
     "tags": [
       "personal"
     ],
@@ -4836,7 +4836,7 @@
   "the-story-of-42-million-bins": {
     "title": "The story of 42 million bins",
     "date": "2018-05-31 22:09:33",
-    "modified": "2018-05-31 22:03:10",
+    "modified": "2018-05-31 22:23:28",
     "tags": [
       "web"
     ],
@@ -4845,7 +4845,7 @@
   "manual-aspire": {
     "title": "Manual Aspire",
     "date": "2018-06-19 15:21:07",
-    "modified": "2018-06-18 15:40:51",
+    "modified": "2018-06-18 21:25:12",
     "image": "/images/speccy-manual/speccy-manual-cover.jpg",
     "tags": [
       "code"
@@ -4856,7 +4856,7 @@
     "title": "An adventure in sparse arrays",
     "image": "/images/adventures-in-arrays.png",
     "date": "2018-06-26 14:28:42",
-    "modified": "2018-06-25 22:15:57",
+    "modified": "2018-06-26 13:12:47",
     "tags": [
       "code"
     ],
@@ -4865,7 +4865,7 @@
   "when-helpful-turns-into-super-bad-security": {
     "title": "When helpful turns into super bad security!",
     "date": "2018-07-25 19:36:31",
-    "modified": "2018-07-25 13:52:17",
+    "modified": "2018-07-25 15:06:54",
     "tags": [
       "code"
     ],
@@ -4877,12 +4877,13 @@
     "tags": [
       "personal"
     ],
-    "published": true
+    "published": true,
+    "modified": "2018-08-05 22:28:53"
   },
   "cli-improved": {
     "title": "CLI: improved",
     "date": "2018-08-23 18:11:05",
-    "modified": "2017-12-08 13:35:13",
+    "modified": "2018-08-24 12:24:35",
     "tags": [
       "web"
     ],
@@ -4893,7 +4894,7 @@
   "8-years-on": {
     "title": "8 years on",
     "date": "2018-08-30 10:19:37",
-    "modified": "2018-08-23 21:32:46",
+    "modified": "2018-08-30 10:27:14",
     "tags": [
       "personal"
     ],
@@ -4903,7 +4904,7 @@
   "midlife": {
     "title": "Midlife",
     "date": "2018-09-13 00:34:00",
-    "modified": "2018-09-13 00:34:00",
+    "modified": "2018-09-12 23:39:40",
     "tags": [
       "personal"
     ],
@@ -4912,7 +4913,7 @@
   "peer-deps": {
     "title": "Peer Deps",
     "date": "2018-09-27 20:44:53",
-    "modified": "2018-09-27 19:32:21",
+    "modified": "2018-09-27 20:44:39",
     "tags": [
       "code"
     ],
@@ -4921,7 +4922,7 @@
   "curation-all-the-way": {
     "title": "Curation all the way",
     "date": "2018-10-05 14:27:47",
-    "modified": "2018-10-05 14:19:57",
+    "modified": "2018-10-05 14:26:35",
     "tags": [
       "web"
     ],
@@ -4930,7 +4931,7 @@
   "shell-debugging-vanishing-text": {
     "title": "Debugging vanishing text in shell scripts",
     "date": "2018-10-29 08:23:25",
-    "modified": "2018-08-28 17:04:35",
+    "modified": "2018-10-29 08:02:18",
     "tags": [
       "code"
     ],
@@ -4939,7 +4940,7 @@
   "ffconf-v10-updates-my-experience": {
     "title": "ffconf v10: updates & my experience",
     "date": "2018-11-26 12:57:30",
-    "modified": "2018-11-16 21:11:52",
+    "modified": "2018-11-26 13:00:49",
     "tags": [
       "web"
     ],
@@ -4949,7 +4950,7 @@
   "ways-to-extract-slides": {
     "title": "Ways to extract slides",
     "date": "2018-11-29 10:02:20",
-    "modified": "2018-11-13 12:50:55",
+    "modified": "2018-11-29 10:01:32",
     "tags": [
       "code"
     ],
