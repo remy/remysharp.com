@@ -1445,6 +1445,7 @@
       "title": "Using a modern web to recreate 1980s horribly slow and loud loading screens",
       "year": 2018,
       "links": [
+        ["video", "https://www.youtube.com/watch?v=lQMcZtiaD0A"],
         ["slides", "https://talks.zx.isthe.link/"],
         ["demos", "https://zx.isthe.link/"]
       ],

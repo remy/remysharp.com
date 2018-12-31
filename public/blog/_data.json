@@ -4973,5 +4973,14 @@
       "code"
     ],
     "published": true
+  },
+  "my-2018": {
+    "title": "My 2018",
+    "date": "2018-12-31 15:08:55",
+    "modified": "2018-12-31 13:13:48",
+    "tags": [
+      "personal"
+    ],
+    "published": true
   }
 }
