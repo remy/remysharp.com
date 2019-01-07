@@ -66,7 +66,7 @@ tbody td {
 }
 
 blockquote {
-  background: rgb(235, 235, 235) url(../images/quote.gif) no-repeat -7px bottom;
+  background: rgb(235, 235, 235) url(../images/quotes.svg) no-repeat 8px bottom;
   padding: 10px;
   margin: 10px 0;
   // font-size: 95%;
@@ -769,6 +769,10 @@ abbr {
   }
 }
 
+details summary {
+  cursor: pointer;
+}
+
 details summary:after {
   content: ' (click to expand)';
   font-size: 80%;
@@ -1315,3 +1319,15 @@ img[title^="Sample"] {
   }
 }
 */
+
+.review-image {
+  float: right;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border: 5px solid rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+.review-break {
+  border-width: 2px;
+}
