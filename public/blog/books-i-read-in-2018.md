@@ -158,7 +158,7 @@ Read: 3-Mar 2018<br>Read in: 7 days
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://images.gr-assets.com/books/1499286536l/35607152.jpg">
+<img width="98" class="review-image" src="https://images.gr-assets.com/books/1328331686l/11202956.jpg">
 
 ##### **[Adrian Mole: The Prostrate Years (Adrian Mole, #8)](https://www.goodreads.com/book/show/11202956-adrian-mole) by Sue Townsend**
 
