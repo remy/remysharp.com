@@ -6,6 +6,14 @@ It's far from definitive and not organised well, but it's a start to capture wha
 
 ---
 
+## Is this the best a man can get?
+
+I know this is (just) a marketing campaign, but it moved me to tears and I love the message it provides and it is one that I would happily play again and again in my head.
+
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/koPmuEyP3a0?rel=0" frameborder="0" allowfullscreen></iframe>
+
+---
+
 ## On political correctness
 
 A man whose words I will always have time for, Stephen Fry takes the "other side" of the argument, and articulates why he doesn't believe political correctness works. This is just a short quote from an 8 minute clip, all of which is worth watching. Interesting and refreshing views.
@@ -102,9 +110,9 @@ This is such a good speech on having the right to choose your own path.
 
 I've [written before](/2014/10/27/motivation) about how Emma Watson's UN address inspired me. I'll be showing my son & daughter this talk when they're old enough to understand.
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/gkjW9PZBRfk?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/Q0Dg226G2Z8?rel=0" frameborder="0" allowfullscreen></iframe>
 
-[Via United Nations on YouTube](https://www.youtube.com/watch?v=gkjW9PZBRfk) 22 Sep 2014
+[Via United Nations on YouTube](https://www.youtube.com/watch?v=Q0Dg226G2Z8) 22 Sep 2014
 
 ---
 

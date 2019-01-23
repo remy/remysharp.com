@@ -611,5 +611,15 @@
     "tags": [
       "code"
     ]
+  },
+  "unpacking-bytes": {
+    "title": "Unpacking bytes",
+    "date": "2019-01-14 12:16:05",
+    "modified": "2019-01-14 12:16:05",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }
