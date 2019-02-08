@@ -116,11 +116,13 @@ eval "$(
 
 ---
 
-Update all outdated npm dependencies:
+Update all outdated npm dependencies to latest (possibly unsafe as it'll also update to major changes):
 
 ```bash
 npm i $(echo $(npm outdated --json | jq -r 'to_entries | .[] | "\(.key)@\(.value.latest)"'))
 ```
+
+Change the above from `.latest` to `.wanted` for a _safe_ upgrade.
 
 [Demo](https://jqterm.com/#!/d7f34556e41e69568d10b5bc511fba68?query=to_entries%20%7C%20.%5B%5D%20%7C%20%22%5C%28.key%29@%5C%28.value.latest%29%22&raw=true)
 
