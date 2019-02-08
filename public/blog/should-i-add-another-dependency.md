@@ -15,7 +15,7 @@ When I [run workshops](https://leftlogic.com/training/) a question that has come
 
 My answer has always been the same: you need to vet your dependencies.
 
-Today there are some excellent tools available for dependency vetting: [Synk](https://snyk.io) is the code security company I had the pleasure of working with during year one.
+Today there are some excellent tools available for dependency vetting: [Snyk](https://snyk.io) is the code security company I had the pleasure of working with during year one.
 
 These tools can even notify you when a new vulnerability has been found in your project.
 
@@ -23,7 +23,7 @@ It is still down to you, the author, to manage the problem. During those worksho
 
 I felt like by 2010, the front end developer had common sense to include "trusted" vendors and untrusted would have their code examined and either flagged as good to use, or the functionality would be hand rolled*.
 
-Caveat: _not all developers_ - yes yes, I know. 
+Caveat: _not all developers_ - yes yes, I know.
 
 For example, libraries like jQuery (again, this was 2010) had been vetted over and over, publicly. The heady days of pulling in scripts from DynamicDrive and the likes had long gone.
 
@@ -69,7 +69,7 @@ Of course there's also the edge risk of package hijacking to introduce malicious
 
 I had a similar issue recently: I needed to copy the terminal output to the clipboard. Do I install _another dependency_ or just add the 4 lines of code myself to do it?
 
-Authoring will take a little time, and there might be inspiration you can take from existing libraries. 
+Authoring will take a little time, and there might be inspiration you can take from existing libraries.
 
 Authoring the functionality yourself also offers the huge benefit of laser focused implementation. Specifically you're not consuming resources to support all the use cases - you're only supporting your use case.
 
