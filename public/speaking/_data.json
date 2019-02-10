@@ -1469,5 +1469,19 @@
       },
       "url": "https://frontend-con.io"
     }
+  ],
+  "2019": [
+    {
+      "slug": "2019_t_shaped",
+      "event": "T-Shaped February",
+      "location": "England, Brighton",
+      "title": "about:ffconf",
+      "year": 2019,
+      "links": [["slides", "https://talks.ffconf.isthe.link/"]],
+      "date": {
+        "start": "2019-02-06"
+      },
+      "url": "https://www.meetup.com/t-shaped-talks/events/258290365/"
+    }
   ]
 }

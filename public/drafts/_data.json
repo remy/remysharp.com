@@ -621,5 +621,15 @@
     "tags": [
       "code"
     ]
+  },
+  "tasty-cookiestore": {
+    "title": "Tasty CookieStore",
+    "date": "2019-02-01 16:40:40",
+    "modified": "2019-02-01 16:40:40",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "code"
+    ]
   }
 }
