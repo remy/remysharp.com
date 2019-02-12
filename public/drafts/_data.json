@@ -631,5 +631,15 @@
     "tags": [
       "code"
     ]
+  },
+  "cern-day-2": {
+    "title": "CERN day 2",
+    "date": "2019-02-12 21:40:51",
+    "modified": "2019-02-12 21:40:51",
+    "complete": false,
+    "inprogress": true,
+    "tags": [
+      "personal"
+    ]
   }
 }
