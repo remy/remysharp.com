@@ -5028,5 +5028,14 @@
       "personal"
     ],
     "published": true
+  },
+  "cern-day-2": {
+    "title": "CERN day 2",
+    "date": "2019-02-13 10:05:36",
+    "modified": "2019-02-12 21:40:51",
+    "tags": [
+      "personal"
+    ],
+    "published": true
   }
 }
