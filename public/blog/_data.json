@@ -5037,5 +5037,14 @@
       "personal"
     ],
     "published": true
+  },
+  "cern-day-3": {
+    "title": "CERN day 3",
+    "date": "2019-02-14 08:42:29",
+    "modified": "2019-02-13 22:20:19",
+    "tags": [
+      "personal"
+    ],
+    "published": true
   }
 }
