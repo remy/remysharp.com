@@ -39,7 +39,7 @@ In a way there's not a lot of 3rd party dependencies, whilst at the same time it
 
 A primary goal is to replicate the user experience and the look and feel as closely as we can.
 
-[Mark Boulton](https://markboulton.co.uk/) and [Brian Suda](https://suda.co.uk/) have been working hard at maliciously replicating the font and have even enlisted external help.
+[Mark Boulton](https://markboulton.co.uk/) and [Brian Suda](https://suda.co.uk/) have been working hard at meticulously replicating the font and have even enlisted external help.
 
 The results are superb and have brought the jaggies of the NeXT operating system to our nice modern rending engines.
 
