@@ -8,9 +8,7 @@
   "why-i-prefer-mobile-web-apps-to-native-apps": {
     "title": "Why I prefer mobile web apps to native apps",
     "date": "2013-03-14 14:09:57",
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "modified": "2013-03-14 14:09:00",
     "draft": true
   },
@@ -23,82 +21,63 @@
   "first-contact": {
     "title": "First Contact",
     "date": "2014-05-05 13:35:13",
-    "tags": [
-      "business"
-    ],
+    "tags": ["business"],
     "modified": "2014-05-05 13:35:00",
     "draft": true
   },
   "git-push-to-live": {
     "title": "Git push to live",
     "date": "2014-05-30 13:00:13",
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "modified": "2014-05-30 13:00:00",
     "draft": true
   },
   "apple-dont-care": {
     "title": "My beef with Apple",
     "date": "2013-05-19 12:00:00",
-    "tags": [
-      "web",
-      "business"
-    ],
+    "tags": ["web", "business"],
     "modified": "2016-02-15 13:10:23",
     "draft": true
   },
   "css-compression": {
     "title": "CSS Compression",
     "date": "2009-02-01 12:00:00",
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "modified": "2009-02-01 16:37:30",
     "draft": true
   },
   "fragmentation": {
     "title": "Fragmentation",
     "date": "2012-11-26 12:00:00",
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "modified": "2012-11-26 23:21:44",
     "draft": true
   },
   "localstorage": {
     "title": "Proposal for Async Web Storage API",
     "date": "2013-09-23 12:00:00",
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "modified": "2013-09-23 20:54:38",
     "draft": true
   },
   "offline-panel": {
     "title": "Offline Panel",
     "date": "2013-09-27 12:00:00",
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "modified": "2013-09-27 17:28:42",
     "draft": true
   },
   "harp": {
     "title": "Continuous integration with static site generator: Harp.js",
     "date": "2014-05-05 12:00:00",
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "modified": "2014-10-04 23:44:57",
     "draft": true
   },
   "rewrite-it": {
     "title": "The \"let's just rewrite it\" syndrome",
     "date": "2014-08-05 12:00:00",
-    "tags": [
-      "business"
-    ],
+    "tags": ["business"],
     "modified": "2014-08-05 11:02:40",
     "draft": true
   },
@@ -106,9 +85,7 @@
     "title": "11 things you didn't know JS Bin could do",
     "date": "2014-08-05 12:00:00",
     "complete": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "modified": "2014-08-05 11:12:21",
     "draft": true
   },
@@ -116,9 +93,7 @@
     "title": "Debugging events in devtools inspector",
     "date": "2014-10-16 11:30:00",
     "complete": false,
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "modified": "2014-10-16 17:40:01",
     "draft": true
   },
@@ -127,9 +102,7 @@
     "date": "2015-01-02 12:00:00",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "modified": "2014-12-29 10:29:34",
     "draft": true
   },
@@ -138,9 +111,7 @@
     "date": "2015-06-03 17:56:13",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "modified": "2015-06-18 11:15:54",
     "draft": true
   },
@@ -149,9 +120,7 @@
     "date": "2015-06-22 17:59:07",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "modified": "2015-11-25 08:49:15",
     "draft": true
   },
@@ -160,9 +129,7 @@
     "date": "2016-01-07 11:17:08",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "business"
-    ],
+    "tags": ["business"],
     "modified": "2016-02-21 18:17:33",
     "draft": true
   },
@@ -171,10 +138,7 @@
     "date": "2016-02-18 10:56:06",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "personal",
-      "business"
-    ],
+    "tags": ["personal", "business"],
     "modified": "2016-08-15 13:44:28",
     "draft": true
   },
@@ -183,9 +147,7 @@
     "date": "2016-03-01 10:21:41",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "modified": "2016-08-13 22:49:35",
     "draft": true
   },
@@ -194,9 +156,7 @@
     "date": "2016-03-22 11:02:56",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "modified": "2016-03-22 11:22:11",
     "draft": true
   },
@@ -206,10 +166,7 @@
     "modified": "2016-10-10 13:12:20",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web",
-      "personal"
-    ],
+    "tags": ["web", "personal"],
     "draft": true
   },
   "tr-tricks": {
@@ -218,9 +175,7 @@
     "modified": "2016-08-07 19:29:39",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "how-to-write-a-github-integration": {
@@ -229,9 +184,7 @@
     "modified": "2017-12-12 14:16:08",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "emoji": {
@@ -240,9 +193,7 @@
     "modified": "2016-09-02 21:18:52",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "wifi-and-vpns": {
@@ -251,9 +202,7 @@
     "modified": "2016-06-06 13:29:33",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "csrf-the-service-worker-challenge": {
@@ -262,9 +211,7 @@
     "modified": "2016-07-10 12:43:47",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "es6-pure-dev-has-finally-arrived": {
@@ -273,9 +220,7 @@
     "modified": "2017-02-04 18:02:45",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "the-bane-of-build-tools": {
@@ -284,9 +229,7 @@
     "modified": "2016-09-21 15:10:37",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "living-standard-part-1": {
@@ -295,9 +238,7 @@
     "modified": "2016-10-12 11:33:11",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "what-i-learnt-from-creating-ffconfs-quine": {
@@ -306,9 +247,7 @@
     "modified": "2016-10-07 11:35:15",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "living-standard-part-2": {
@@ -317,9 +256,7 @@
     "modified": "2016-10-10 17:56:58",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "living-standard-part-3": {
@@ -328,9 +265,7 @@
     "modified": "2016-10-11 13:59:11",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "my-crumble": {
@@ -339,9 +274,7 @@
     "modified": "2016-12-19 10:49:12",
     "complete": true,
     "inprogress": false,
-    "tags": [
-      "personal"
-    ],
+    "tags": ["personal"],
     "draft": true
   },
   "node-cli-workflow": {
@@ -350,9 +283,7 @@
     "modified": "2016-11-28 20:28:37",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "time": {
@@ -361,9 +292,7 @@
     "modified": "2016-12-03 09:36:50",
     "complete": true,
     "inprogress": false,
-    "tags": [
-      "personal"
-    ],
+    "tags": ["personal"],
     "draft": true
   },
   "when-is-the-font-size-not-the-font-size": {
@@ -372,9 +301,7 @@
     "modified": "2016-12-07 14:08:45",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "titles-for-blog-posts": {
@@ -383,9 +310,7 @@
     "modified": "2017-05-29 12:49:10",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "personal"
-    ],
+    "tags": ["personal"],
     "draft": true
   },
   "just-one-thing": {
@@ -394,9 +319,7 @@
     "modified": "2017-01-01 09:58:35",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "building-the-bike-shed": {
@@ -405,9 +328,7 @@
     "modified": "2017-01-12 19:20:56",
     "complete": true,
     "inprogress": false,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "trimming-the-release-test-cycle": {
@@ -416,9 +337,7 @@
     "modified": "2017-01-13 11:59:37",
     "complete": true,
     "inprogress": false,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "your-own-online-video-course": {
@@ -427,9 +346,7 @@
     "modified": "2017-02-02 15:32:04",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "business"
-    ],
+    "tags": ["business"],
     "draft": true
   },
   "the-internet-as-explained-to-a-5-year-old": {
@@ -438,9 +355,7 @@
     "modified": "2017-02-22 09:23:18",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "personal"
-    ],
+    "tags": ["personal"],
     "draft": true
   },
   "universal-js-pe-and-forms": {
@@ -449,9 +364,7 @@
     "modified": "2017-04-07 11:53:23",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "draft": true
   },
   "focus-or-all-the-things": {
@@ -460,9 +373,7 @@
     "modified": "2017-06-01 11:32:12",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "personal"
-    ],
+    "tags": ["personal"],
     "draft": true
   },
   "recreating-the-zx-spectrum-loader": {
@@ -471,9 +382,7 @@
     "modified": "2017-06-15 11:34:16",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ],
+    "tags": ["web"],
     "draft": true
   },
   "nextjs-prefetch-testing-fix": {
@@ -482,9 +391,7 @@
     "modified": "2017-07-11 21:08:43",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "draft": true
   },
   "easy-ssr-react-conf-schedule": {
@@ -493,9 +400,7 @@
     "modified": "2017-09-27 14:52:01",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "draft": true
   },
   "typedarrays": {
@@ -504,9 +409,7 @@
     "modified": "2017-12-30 16:10:36",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "draft": true
   },
   "on-compressing-32-character-uuid": {
@@ -515,9 +418,7 @@
     "modified": "2017-10-16 21:03:57",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "draft": true
   },
   "jq-recipes": {
@@ -526,9 +427,7 @@
     "modified": "2018-11-28 11:05:55",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "draft": true
   },
   "opening-windows-again-part-2-dev": {
@@ -537,9 +436,7 @@
     "modified": "2018-01-12 11:15:14",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ],
+    "tags": ["code"],
     "draft": true
   },
   "trying-arccodes": {
@@ -548,9 +445,7 @@
     "modified": "2018-03-28 17:55:01",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ]
+    "tags": ["code"]
   },
   "a-week-of-serverless": {
     "title": "A week of serverless",
@@ -558,9 +453,7 @@
     "modified": "2018-03-23 08:43:22",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "web"
-    ]
+    "tags": ["web"]
   },
   "ive-been-doing-reduce-wrong": {
     "title": "I've been doing reduce wrong!",
@@ -568,9 +461,7 @@
     "modified": "2018-08-24 08:08:10",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ]
+    "tags": ["code"]
   },
   "frictionless": {
     "title": "Frictionless",
@@ -578,9 +469,7 @@
     "modified": "2018-07-22 21:42:49",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ]
+    "tags": ["code"]
   },
   "gym-tech": {
     "title": "Gym Tech",
@@ -588,9 +477,7 @@
     "modified": "2018-09-18 07:34:53",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "personal"
-    ]
+    "tags": ["personal"]
   },
   "impressions-of-bitsrc": {
     "title": "Impressions of bitsrc",
@@ -598,9 +485,7 @@
     "modified": "2018-11-01 13:42:12",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ]
+    "tags": ["code"]
   },
   "sentence-case": {
     "title": "Sentence case",
@@ -608,9 +493,7 @@
     "modified": "2018-12-07 14:53:30",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ]
+    "tags": ["code"]
   },
   "unpacking-bytes": {
     "title": "Unpacking bytes",
@@ -618,9 +501,7 @@
     "modified": "2019-01-14 12:16:05",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ]
+    "tags": ["code"]
   },
   "tasty-cookiestore": {
     "title": "Tasty CookieStore",
@@ -628,8 +509,14 @@
     "modified": "2019-02-01 16:40:40",
     "complete": false,
     "inprogress": true,
-    "tags": [
-      "code"
-    ]
+    "tags": ["code"]
+  },
+  "cern-day-5": {
+    "title": "CERN day 5: the end",
+    "date": "2019-02-16 12:08:34",
+    "modified": "2019-02-16 12:08:34",
+    "complete": false,
+    "inprogress": true,
+    "tags": ["personal"]
   }
 }
