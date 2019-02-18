@@ -30,6 +30,8 @@ The final code will be made public via CERN's own Gitlab instance, probably on h
 
 The hackathon ended with an impromptu demo of the simulation and feeling rather proud of the work we'd completed. Though secretly I also feel there's more I want to do (and even managed a few commits, fixes and features over this weekend).
 
+It's almost funny that from Jean-François Groff's [original list of upgrade proposals](https://www.w3.org/History/1991-WWW-NeXT/Implementation/Upgrade.html) to the WorldWideWeb, our version pretty much feels like it's in the same state as when that document was written - i.e. a faithful replication of 1990! :)
+
 Here's a short demo of navigation and page linking. Again, this is in a browser (fullscreen), using the mouse to do some navigation, and the keyboard for other (including "close all other windows" when I'm left with the summary window):
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/TGtORpr5sUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

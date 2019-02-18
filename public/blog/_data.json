@@ -5055,5 +5055,14 @@
       "personal"
     ],
     "published": true
+  },
+  "cern-day-5": {
+    "title": "CERN day 5: the end",
+    "date": "2019-02-18 09:04:59",
+    "modified": "2019-02-16 12:08:34",
+    "tags": [
+      "personal"
+    ],
+    "published": true
   }
 }
