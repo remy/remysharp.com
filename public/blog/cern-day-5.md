@@ -1,6 +1,6 @@
 # CERN day 5: the end
 
-What a packed week, what an honour and privilege to be part of, and what a superb job we did. 
+What a packed week, what an honour and privilege to be part of, and what a superb job we did.
 
 It's all live now: the project and all supporting materials online with all our original goals achieved 🎉
 
@@ -16,11 +16,11 @@ It's truly an honour to have been able to contribute to this tribute to history.
 
 ## The final day
 
-I'm a stickler for getting the job _"done"_ - especially when it's a hackathon and the unit of work is distinct. 
+I'm a stickler for getting the job _"done"_ - especially when it's a hackathon and the unit of work is distinct.
 
 I know there would be bits I couldn't complete, but they would be de-prioritised and non-essential to bringing the feel of the 1990's browser back to life. So Friday was a day of laser focus!
 
-However, the night before, around midnight, I had managed to make a fairly serious breakthrough in functionality and in that late night hacking session I'd managed to implement the ability to link between documents and update the author's markup to contain the correct link. 
+However, the night before, around midnight, I had managed to make a fairly serious breakthrough in functionality and in that late night hacking session I'd managed to implement the ability to link between documents and update the author's markup to contain the correct link.
 
 It might not sound like much, but those changes unlocked the ability to start save files (to IndexedDB), linking files and styling documents.
 
@@ -40,13 +40,13 @@ Here's a short demo of navigation and page linking. Again, this is in a browser 
 
 Whilst I was busy deep inside the code for the simulation, [Craig Mod](https://craigmod.com/), [Jeremy Keith](https://adactio.com/), [Kimberly Blessing](https://www.kimberlyblessing.com/) and [Martin Chiteri](http://geek.co.ke/about/) were busy completing the content web site that describes the history, documentation and the process the team took to complete the project.
 
-The web site is quite superb and fully of great stories from how we got to have the world's first browser, one of my favourite parts being Kimberly's [_Inside the Code_](https://worldwideweb.cern.ch/code/) section.
+The web site is quite superb and ful of great stories from how we got to have the world's first browser, one of my favourite parts being Kimberly's [_Inside the Code_](https://worldwideweb.cern.ch/code/) section.
 
 ![The site](/images/cern-2019/the-site.png)
 
 ## Goals and fun insights
 
-The aim of the project was to restore the world's first browser in a modern browser for the world to try out and experience. 
+The aim of the project was to restore the world's first browser in a modern browser for the world to try out and experience.
 
 The project would also document and include stories from the time that helped shape the technology we take for granted today.
 
@@ -58,15 +58,15 @@ HTML editing and URLs weren't intended for the user. All the editing would be do
 
 Without access to the source, linking was a key feature of the browser. In talking to Jean-Francois Groff he was able to enlighten me on what the `<NEXTID 18>` element was that we find so often on the very old pages on the web.
 
-The `NEXTID` was key to making links work. The user would highlight and *mark* text they wanted to link to. This action would wrap the source text with a `<A NAME=18>` tag. The `18` being the value of the NEXTID and the tag would be incremented.
+The `NEXTID` was key to making links work. The user would highlight and *mark* text they wanted to link to. This action would wrap the source text with a `<A NAME=18>` tag. The `18` being the value of the `NEXTID` and the tag would be incremented.
 
 Of course, `NEXTID` was a _tag_ never intended to have any contents. Modern browsers however, have always seen that tag and slurped the following text into a child node of `NEXTID` but it's supposed to be like a bodyless element akin to a `LINK` or `META` tag.
 
-_As I type this I now wonder if it came about *entirely* because of the WorldWideWeb browser's way of linking…_
+_As I type this I now wonder if `NEXTID` came about *entirely* because of the WorldWideWeb browser's way of linking…_
 
 As for URLs, if you have a play with the simulation you might it rather tricky to spot the URL.
 
-Then following links, due to the editable nature of the documents, meant that you need to *double* click on the links. A single click would of course set your cursor rather than follow the link as it would in today's browser. 
+Then following links, due to the editable nature of the documents, meant that you need to *double* click on the links. A single click would of course set your cursor rather than follow the link as it would in today's browser.
 
 <small>(random, untreated picture to follow!)</small>
 
@@ -140,16 +140,15 @@ Along with that, it's very clear that CERN is a collaborative and welcoming plac
 
 We also got to meet some of the students that were placed at CERN. Bright and inquisitive, and not even 16. The place seems to bring the best out in people - or certainly that's what I had seen in my two short visits.
 
-It really was something that I'm very proud of being part of, and I wanted to thank my team mates: 
+It really was something that I'm very proud of being part of, and I wanted to thank my team mates:
 
 - [John Allsop](http://johnfallsopp.com/) (Australia)
 - [Kimberly Blessing](https://www.kimberlyblessing.com/) (USA)
 - [Mark Boulton](http://www.markboulton.co.uk/) (U.K.)
-- [Martin Chiteri](http://geek.co.ke/about/) (Canada / Kenya) 
+- [Martin Chiteri](http://geek.co.ke/about/) (Canada / Kenya)
 - [Jeremy Keith](https://adactio.com) (U.K. / Ireland)
 - [Craig Mod](https://craigmod.com) (Japan / USA)
 - [Angela Ricci](https://gericci.me) (France / Brazil)
-- [Remy Sharp](https://remysharp.com) (U.K)
 - [Brian Suda](https://suda.co.uk) (Iceland / USA)
 
 And James Gillies for initiating the project and opening the invitation, and the supporting Web Team at CERN, including Kostas, Sebastian, Edwardo and Sotirios.
