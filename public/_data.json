@@ -2,6 +2,9 @@
   "feed.xml": {
     "layout": false
   },
+  "opensearch.xml": {
+    "layout": false
+  },
   "tia": {
     "layout": false
   },
