@@ -6,6 +6,18 @@ It's far from definitive and not organised well, but it's a start to capture wha
 
 ---
 
+## On designing the web
+
+When thinking about creating the rules that would underlay the web:
+
+> I had to create a system with common rules that would be acceptable to everyone. That meant, as close as possible to no rules at all.
+
+Simplicity always wins, and stripping as much back as possible is the way to that simplicity.
+
+* [Sir Tim Berners-Lee](https://www.youtube.com/watch?v=cCE2EyV_IiY) - 22 Feb 2019
+
+---
+
 ## Is this the best a man can get?
 
 I know this is (just) a marketing campaign, but it moved me to tears and I love the message it provides and it is one that I would happily play again and again in my head.
