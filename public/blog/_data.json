@@ -5016,7 +5016,8 @@
     "date": "2019-02-01 14:02:48",
     "modified": "2019-02-01 09:41:26",
     "tags": [
-      "code","web"
+      "code",
+      "web"
     ],
     "published": true
   },
@@ -5070,6 +5071,15 @@
     "date": "2019-02-21 16:14:24",
     "modified": "2019-02-18 10:09:46",
     "image": "/images/www-logo.png",
+    "tags": [
+      "web"
+    ],
+    "published": true
+  },
+  "excavating-a-user-agent": {
+    "title": "Excavating a user agent",
+    "date": "2019-03-04 12:53:05",
+    "modified": "2019-03-01 21:41:38",
     "tags": [
       "web"
     ],
