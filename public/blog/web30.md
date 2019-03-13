@@ -20,7 +20,7 @@ So technically, my first home was:
 
 I spent summer '98 working on adapting one of my lecturers' Java Applets that showed a map of the borough of Kingston, turning it into a [dancing stick animation](https://web.archive.org/web/20030222010510/http://www.kingston.ac.uk/~ku05883/Animation.html)
 
-I also had an Angelfire page (somehow missing the memo about GeoCities being cool). I can't for the life of me remember the username (or even URL structure) so I can't find an archive copy - though god knows what lays in wait (I suspect it might have been _jedifish_).
+I also had an Angelfire page (somehow missing the memo about GeoCities being cool). I can't for the life of me remember the username (or even URL structure) so I can't find an archive copy - though god knows what lies in wait (I suspect it might have been _jedifish_).
 
 ## My first web site
 
