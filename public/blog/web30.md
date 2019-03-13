@@ -32,7 +32,7 @@ It was a Sunday, which meant that to get a browser on the machine, I'd have to w
 
 My first web site was coded using partly notepad.exe and partly my own tool I'd written in 1996 (aptly named) HTML Writer v4.
 
-You can marvel at my VBScript and JavaScript combo that made a DHTML filter run (like spotlights on at a hollywood movie):
+You can marvel at my VBScript and JavaScript combo that made a DHTML filter run (like spotlights on at a hollywood movie) (admittedly this was added for IE4 which I must have upgraded to at some point):
 
 ```html
 <script language="VBScript">
