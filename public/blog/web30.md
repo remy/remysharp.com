@@ -30,7 +30,7 @@ I remember buying an Intel 385 (I _think_) from the local computer fair for £50
 
 It was a Sunday, which meant that to get a browser on the machine, I'd have to wait until Monday when the newsagent would open, and I could buy a PC magazine that would hopefully include a floppy disk with Internet Explorer 3.
 
-My first web site was coded using partly notepad.exe and partly my own tool I'd written in 1996 (aptly named) HTML Write v4.
+My first web site was coded using partly notepad.exe and partly my own tool I'd written in 1996 (aptly named) HTML Writer v4.
 
 You can marvel at my VBScript and JavaScript combo that made a DHTML filter run (like spotlights on at a hollywood movie):
 
