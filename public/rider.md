@@ -12,11 +12,11 @@ I'm very honoured you've decided to invite me to your event and I want all confe
 
 **2. Speaker Diversity**: as a white cis man, I count as "another white dude" at your event, and I want to see conferences showing off the truly diverse world we live in. The event will have _at least_ 40% non-white cis men speaking<super>✻</super>.
 
-**3. Costs covered**: all speakers' travel and lodging is covered.
+**3. Costs covered**: all speakers' travel and lodging is covered. Please note that I will not fly economy for long haul flights.
 
 **4. Payment**: if I'm being paid for my talk, all other speakers are also paid _at least_ what I am being offered.
 
-**5. Workshop payment**: a full day (or multi-day) workshop is paid at either an agreed minimum fee or a 50:50 profit split.
+**5. Workshop payment** (if applicable): a full day (or multi-day) workshop is paid at either an agreed minimum fee or a 50:50 profit split.
 
 <small>✻ I hope to see this number increase in time.</small>
 
