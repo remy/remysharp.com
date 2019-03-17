@@ -31,7 +31,7 @@
               span.tag= talk.type
             else
               span.tag Talk
-            &nbsp;
+            |  &nbsp;
             time(datetime="#{talk.date.start}" title="#{talk.date.start}")
               span #{moment(talk.date.start).format('D-MMM YYYY')}&nbsp;
             if talk.title
@@ -41,5 +41,5 @@
               span.talk-links
                 each links in talk.links
                   a(rel="nofollow" href="#{links[1]}" target="_blank")= links[0]
-                  &nbsp;
+                  | &nbsp;
 

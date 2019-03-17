@@ -1,7 +1,7 @@
 extends ../_partials/layout
 
 block content
-  != partial('../_partials/page-nav')
+  include ../_partials/page-nav
 
   - permalink = '/drafts/' + current.source;
 

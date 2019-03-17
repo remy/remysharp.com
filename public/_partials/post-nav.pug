@@ -1,6 +1,6 @@
-!= partial('../_partials/notice')
+include notice
 nav.main-nav.clearfix.subpanel
-  != partial('../_partials/search')
+  include search
   - posts = []
   - blogs = public.blog || public.public.blog
   for post, slug in blogs._data

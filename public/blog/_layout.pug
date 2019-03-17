@@ -35,7 +35,7 @@ block content
   - safeTitle = title.replace(/'/g, '\\\'')
 
   if !amp
-    != partial('../_partials/post-nav')
+    include ../_partials/post-nav
 
   main.content
     article.post.amp-wp-article
@@ -53,20 +53,20 @@ block content
           - yield = yield.replace(/<p><img(.*?)><\/p>/g, '<amp-img layout="responsive"$1></amp-img>');
           != yield
         else
-          - if (yield) res = split(yield.replace(/<h1>.*?<\/h1>/, ''));
-          if res
-            != res[0]
-            if (!nosubscribe && tags.indexOf('personal') === -1)
-              != partial('../_partials/' + (ad || 'terminal') + '-ad')
-            != res[1]
-          else
-            != yield
+          //- - if (yield) res = split(yield.replace(/<h1>.*?<\/h1>/, ''));
+          //- if res
+          //-   != res[0]
+          //-   if (!nosubscribe && tags.indexOf('personal') === -1)
+          //-     != partial('../_partials/' + (ad || 'terminal') + '-ad')
+          //-   != res[1]
+          //- else
+          != yield
 
         p.metadata Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}.
 
         if !nosubscribe && !amp
           footer.follow.update
-            != partial('../_partials/subscribe')
+            include ../_partials/subscribe
         //- if !amp
         //-   #code-sponsor-widget
         //-   script(async defer src="https://app.codesponsor.io/scripts/vzZ1-MnjP7scUNCV7uya0A?theme=light&width=660")

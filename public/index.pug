@@ -1,5 +1,4 @@
-- posts = partial('_partials/posts', { postlimit: 1 })
-- latest = posts[0]
+- latest = collections.latest
 
 h1.title
   img.icon.photo(alt="Remy Sharp's blog" src="/images/avatar.jpg" height=50 width=50)
@@ -14,7 +13,7 @@ article.post
     h2.title
       a(href="#{latest.relative}") Latest: #{ latest.title }
   section.post-excerpt.post-content
-    - content = partial('blog/' + latest.slug);
+    - content = latest.output;
 
     if content.split(/<!--\s*more\s*-->/).length > 1
       != content.split(/<!--\s*more\s*-->/)[0].replace(/<h1>.*?<\/h1>/, '').trim()
@@ -30,9 +29,9 @@ article.post.lists
     h2.title Recently Updated
   .post-content
     ul
-      each post in recent
+      each post in collections.recent
         li
-          a(href="#{ public.blog._data[post.slug].relative }") #{ public.blog._data[post.slug].title }
+          a(href=`${ post.slug }`)= post.title
           small &nbsp; updated #{ moment(post.date).format('D-MMM YYYY') }
 
 article.post.lists#elsewhere

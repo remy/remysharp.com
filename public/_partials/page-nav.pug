@@ -1,8 +1,8 @@
-!= partial('../_partials/notice')
+include notice
 if current.path.indexOf('blog') === -1 && current.path+'' !== 'index'
-  - post = partial('posts', { postlimit: 1 })[0]
+  - post = collections.latest
   nav.main-nav.clearfix.subpanel
-    != partial('../_partials/search')
+    include search
     ul.post-nav
       li.left.home: a(href="/") Home
       //- li.left.donate

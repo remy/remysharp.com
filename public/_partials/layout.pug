@@ -29,7 +29,7 @@ if amp
       header#top.amp-header
         div
           amp-img(alt="Remy Sharp's blog" src="/images/avatar.jpg" height="36" width="36" class="icon photo")
-          a(href="#{site_url}")= site_title
+          a(href=`${site_url}`)= site_title
       block content
 
 else
@@ -41,7 +41,7 @@ else
       title= customTitle || title || site_title
       - var desc = title === site_title ? title + ' :: ' + site_description : title || site_description
       meta(name="source" content="https://github.com/remy/remysharp.com")
-      meta(name="description" content="#{desc}")
+      meta(name="description" content=`${desc}`)
       meta(name="HandheldFriendly" content="True")
       meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1")
       meta(name="theme-color" content="#1A1A1A")
@@ -78,8 +78,8 @@ else
 
         ga('create', '#{analytics}', 'auto');
         ga('send', 'pageview');
-    body(id="#{current.path.join('-')}-page")
-      != partial('_partials/page-nav')
+    body(id=`${current.path.join('-')}-page`)
+      include page-nav
 
       block content
 
@@ -90,7 +90,7 @@ else
             li: a(href="/archive") All years
             - var thisyear = moment().format('YYYY') * 1
             while thisyear >= 2006
-              li: a(href="/#{ thisyear }") #{ thisyear-- }
+              li: a(href=`/${ thisyear }`)= thisyear--
         .flex-item.links
           h2 Links
           ul
@@ -185,7 +185,4 @@ else
         |      – Remy
         |  
         |  
-      if environment == "production"
-        <!-- production - static files, #{fullversion} -->
-      else
-        <!-- development - render on demand, #{fullversion} -->
+      <!-- production - static files, ${fullversion} -->
