@@ -1,3 +1,15 @@
+---
+title: I know jQuery. Now what?
+date: '2013-04-19 12:30:27'
+published: true
+tags:
+  - conference
+  - html5
+  - javascript
+  - jquery
+  - web
+modified: '2015-11-04 14:12:22'
+---
 # I know jQuery. Now what?
 
 I gave this talk: [I know jQuery. What now?](https://speakerdeck.com/rem/i-know-jquery-now-what) at jQuery UK 2013 ([video of the talk](http://vimeo.com/68009123)), but instead of my usual approach of post-it explosion on my desk, I wrote a post first, and created the slides from the post.  So here is my (fairly unedited) quasi-ramble on how I used jQuery, and how I'm looking at where I'm using native browser technology.

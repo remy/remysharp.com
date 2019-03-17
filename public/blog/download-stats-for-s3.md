@@ -1,3 +1,13 @@
+---
+title: Download stats for S3
+date: '2008-07-16 14:22:31'
+published: true
+tags:
+  - google
+  - s3
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Download stats for S3
 
 As [jQuery for Designers](http://jqueryfordesigners.com/ "jQuery for Designers - Tutorials and screencasts") continued to grow in interest, so did the video downloads.

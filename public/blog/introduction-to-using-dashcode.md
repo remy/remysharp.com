@@ -1,3 +1,16 @@
+---
+title: Introduction to using Dashcode
+date: '2007-09-16 18:31:52'
+published: true
+tags:
+  - code
+  - dashboard-tag
+  - dashcode
+  - javascript
+  - mac
+  - tutorial
+modified: '2014-09-03 16:15:12'
+---
 # Introduction to using Dashcode
 
 I recently wrote my first Dashboard app: [HTML entities](http://leftlogic.com/lounge/articles/entity-lookup/) (named in the [top 10 widgets](http://www.engadget.com/2007/07/07/enwidget-ten-useful-apple-dashboard-widgets/) by engadget.com), widget using [Dashcode](http://developer.apple.com/tools/dashcode/).  Since the product (Dashcode) is still in beta, there wasn't a great deal of resource available for developing widgets, so I'm sharing my experience and any tips I can offer for development.

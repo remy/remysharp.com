@@ -1,3 +1,13 @@
+---
+title: What to expect next
+date: '2007-07-22 12:27:42'
+published: true
+tags:
+  - personal
+  - update
+  - widget
+modified: '2014-09-03 16:15:12'
+---
 # What to expect next
 
 I feel like this blog has been a little quiet over the last couple of months, so for the loyal readers out there, here's a glimpse of what's been going on and what's coming next.

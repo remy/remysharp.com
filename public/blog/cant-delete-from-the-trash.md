@@ -1,3 +1,12 @@
+---
+title: Can't delete from the trash?
+date: '2007-02-04 20:44:21'
+published: true
+tags:
+  - apple
+  - tips
+modified: '2014-09-03 16:15:12'
+---
 # Can't delete from the trash?
 
 Recently I tried to empty the trash on my Mac only to be continuously prompted with "cannot delete, file is locked".

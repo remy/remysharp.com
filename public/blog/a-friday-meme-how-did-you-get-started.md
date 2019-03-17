@@ -1,3 +1,12 @@
+---
+title: 'A Friday Meme: How did you get started?'
+date: '2008-10-24 12:12:03'
+published: true
+tags:
+  - meme
+  - personal
+modified: '2014-09-03 16:15:12'
+---
 # A Friday Meme: How did you get started?
 
 This may well have been done before, who knows, but I came across a great question on [Stack Overflow](http://stackoverflow.com): how did you get started in computing?

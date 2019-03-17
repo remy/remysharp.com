@@ -1,3 +1,13 @@
+---
+title: HTML5 vs. Flash
+date: '2010-02-08 12:00:24'
+published: true
+tags:
+  - flash
+  - html5
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # HTML5 vs. Flash
 
 First of all I wanted to make the title of this post "HTML5 *and* Flash", but I know it's going to bait more readers if I say versus. I should state for the record that for the foreseeable future I think Flash has a valid place on the web, and I don't personally see it as an *us and them* web.

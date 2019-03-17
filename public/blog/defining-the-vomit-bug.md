@@ -1,3 +1,17 @@
+---
+title: Defining The Vomit Bug
+date: '2009-08-10 13:00:32'
+published: true
+tags:
+  - bug
+  - debug
+  - debugging
+  - dom
+  - html
+  - html5
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Defining The Vomit Bug
 
 The more I [test HTML 5](http://html5doctor.com) and the more I [play around in the DOM](http://html5demos.com), the more I find odd situations that will trigger particular bugs.

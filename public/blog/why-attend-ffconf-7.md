@@ -1,3 +1,11 @@
+---
+title: 'Why Attend ffconf #7: Art'
+date: '2016-10-05 14:41:51'
+modified: '2016-10-06 11:01:26'
+tags:
+  - web
+published: true
+---
 # Why Attend ffconf #7: Art
 
 If you've been to ffconf in previous years, you'll seem a common thread of sessions on impressive show of creativity using web technologies. This year is no different.

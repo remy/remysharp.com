@@ -1,3 +1,11 @@
+---
+title: The story of 42 million bins
+date: '2018-05-31 22:09:33'
+modified: '2018-05-31 22:23:28'
+tags:
+  - web
+published: true
+---
 # The story of 42 million bins
 
 This past month of April I had a bit of an adventure in server fires (though thankfully not literal) so I thought it might be interesting to share my experience, what I did, tools I used, discovered and created.

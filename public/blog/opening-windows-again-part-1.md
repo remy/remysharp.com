@@ -1,3 +1,11 @@
+---
+title: Opening Windows again (part 1)
+date: '2017-07-11 11:13:35'
+modified: '2017-07-11 14:11:42'
+tags:
+  - web
+published: true
+---
 # Opening Windows again (part 1)
 
 I've had the good fortune to be given a trial Microsoft Surface machine from the folks at Microsoft, and I agreed (and wanted) to share my particular experience with my return/toe-in to Windows.

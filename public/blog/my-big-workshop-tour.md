@@ -1,3 +1,14 @@
+---
+title: My Big Workshop Tour
+date: '2011-04-27 15:26:14'
+published: true
+tags:
+  - business
+  - conference
+  - personal
+  - workshop
+modified: '2014-09-10 22:13:07'
+---
 # My Big Workshop Tour
 
 Last year, a few months before [Julie](http://twitter.com/julieanne) and I were due with Tia, I thought about running a workshop tour. Something where I could offer the web community training, whilst simultaneously seeing more of our grand postage stamp of a country. Here's why and the plan, and I want your input.

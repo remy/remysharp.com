@@ -1,3 +1,12 @@
+---
+title: 2007 Moments
+date: '2007-12-31 17:02:06'
+published: true
+tags:
+  - newyear
+  - personal
+modified: '2014-09-03 16:15:12'
+---
 # 2007 Moments
 
 In lieu of more technical posts, I thought I'd put down my thoughts on *my* 2007.  I'd love to hear yours.

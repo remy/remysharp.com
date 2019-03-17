@@ -1,3 +1,11 @@
+---
+title: WordPress -> Ghost -> Harp (part 1)
+date: '2014-09-18 12:00:00'
+published: true
+tags:
+  - web
+modified: '2014-09-18 08:14:34'
+---
 # WordPress to Ghost to Harp: part 1
 
 I've been running my "b:log" on WordPress since late [2006](/2006), but today I give you the node backed blog.

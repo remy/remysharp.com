@@ -1,3 +1,11 @@
+---
+title: AWS lambda & gateway workflow
+date: '2016-12-02 08:21:41'
+modified: '2016-07-28 17:11:46'
+tags:
+  - web
+published: true
+---
 # AWS lambda & gateway workflow
 
 In my recent work with [Snyk](https://snyk.io) I've created a service that exists inside an AWS Lambda function and is accessed via the AWS Gateway API. Originally I pushed a single Lambda function and pointed the API to the latest version, but the right workflow is to have a production tagged function and then dev (and possibly staging).

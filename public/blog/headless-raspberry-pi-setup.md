@@ -1,3 +1,12 @@
+---
+image: /images/pizero.jpg
+title: Headless Raspberry Pi setup
+date: '2018-02-18 09:53:11'
+modified: '2018-02-18 09:52:54'
+tags:
+  - code
+published: true
+---
 # Headless Raspberry Pi setup
 
 The following information is scattered around the web and it's taken me a few times to find it each time, so I'm putting it here for safe keeping.

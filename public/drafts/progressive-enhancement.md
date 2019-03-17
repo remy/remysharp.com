@@ -1,3 +1,13 @@
+---
+title: Progressive Enhancement
+date: '2015-06-22 17:59:07'
+complete: false
+inprogress: true
+tags:
+  - web
+modified: '2015-11-25 08:49:15'
+draft: true
+---
 # Progressive enhancement
 
 I thought that this EdgeConf panel would be about developers not using JavaScript because they were more interested in building high end web apps, full of WebRTC, Web Audio and the like. But it's not.

@@ -1,3 +1,11 @@
+---
+title: VATMOSS rules
+date: '2016-04-21 15:37:29'
+modified: '2016-04-28 18:19:28'
+tags:
+  - business
+published: true
+---
 # VATMOSS rules
 
 I'm posting this only because I keep losing this simple VATMOSS logic, and my blog doubles as my online memory bank. It's also important for me to say **VATMOSS does not rule**, it's terrible.

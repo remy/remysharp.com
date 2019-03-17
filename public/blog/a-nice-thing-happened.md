@@ -1,3 +1,11 @@
+---
+title: A nice thing happened
+date: '2016-05-08 13:19:16'
+modified: '2016-04-28 18:19:28'
+tags:
+  - personal
+published: true
+---
 # A nice thing happened
 
 I spent a long weekend in Center Parcs with my family. Ellis (4½) was confidently going underwater, and Seren (2) was paddling away with a ring around her.

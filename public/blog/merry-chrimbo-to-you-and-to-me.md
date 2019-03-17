@@ -1,3 +1,12 @@
+---
+title: Merry Chrimbo to you and to me
+date: '2006-12-25 11:47:10'
+published: true
+tags:
+  - christmas
+  - personal
+modified: '2014-09-03 16:15:12'
+---
 # Merry Chrimbo to you and to me
 
 Merry Christmas all - and a pre-emptive happy new year!  

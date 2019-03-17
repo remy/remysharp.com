@@ -1,3 +1,13 @@
+---
+title: 'node.js rapid development: nodemon'
+date: '2010-10-12 14:00:55'
+published: true
+tags:
+  - code
+  - javascript
+  - node
+modified: '2018-01-08 14:07:10'
+---
 # node.js rapid development: nodemon
 
 [node.js](http://nodejs.org/ "node.js") is clearly the hottest thing since sliced bread, and recently I've been working on a larger project that runs as a node server.

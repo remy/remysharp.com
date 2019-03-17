@@ -1,3 +1,13 @@
+---
+title: 'The DOM Scripting Toolkit: jQuery'
+date: '2008-03-18 12:18:29'
+published: true
+tags:
+  - web
+  - presentation
+  - qcon
+modified: '2014-09-03 16:15:12'
+---
 # The DOM Scripting Toolkit: jQuery
 
 Last Friday I did my first bit of public speaking.  I presented jQuery at QCon.

@@ -1,3 +1,12 @@
+---
+title: Antisocial spaces on Twitter
+date: '2011-08-02 12:00:53'
+published: true
+tags:
+  - twitter
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Antisocial spaces on Twitter
 
 Hopefully this doesn't become a meme instead of what I intend for this blog post. There's a way to consume at @reply timeline in Twitter by just stuffing a shed load of new lines with anything at the end (like a period).

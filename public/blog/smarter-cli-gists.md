@@ -1,3 +1,11 @@
+---
+title: Smarter CLI gists
+date: '2016-12-01 07:32:09'
+modified: '2016-12-31 08:19:07'
+tags:
+  - web
+published: true
+---
 # Smarter CLI gists
 
 I've been tinkering with my [dotfiles](https://github.com/remy/dotfiles) a lot recently, and wanted to show how I'm creating gists on the CLI these days.

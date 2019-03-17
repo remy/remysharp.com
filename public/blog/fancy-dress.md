@@ -1,3 +1,11 @@
+---
+title: Fancy Dress?
+date: '2006-11-11 19:10:40'
+published: true
+tags:
+  - rants
+modified: '2014-09-03 16:15:12'
+---
 # Fancy Dress?
 
 You expect fancy dress parties to be like all those movies you watched when you were young: perfectly designed, quality look and quality fit.

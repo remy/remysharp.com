@@ -1,3 +1,11 @@
+---
+title: 'Smooth scroll & sticky navigation (#2/3)'
+date: '2017-06-29 14:37:33'
+modified: '2017-06-29 14:38:49'
+tags:
+  - web
+published: true
+---
 # Smooth scroll with sticky nav (part 2/3)
 
 In the [ffconf—the 2016 edition](https://2016.ffconf.org), the day before the site was to be launched, I decided that I wanted to make the navigation sticky.

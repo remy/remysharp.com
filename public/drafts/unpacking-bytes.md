@@ -1,3 +1,12 @@
+---
+title: Unpacking bytes
+date: '2019-01-14 12:16:05'
+modified: '2019-01-14 12:16:05'
+complete: false
+inprogress: true
+tags:
+  - code
+---
 # Unpacking bits
 
 Over the last few years I've been playing around at the byte level with JavaScript, processing, parsing and manipulating bits and bytes for projects like my [ZX Spectrum loading screen talk](https://www.youtube.com/watch?v=lQMcZtiaD0A).

@@ -1,3 +1,13 @@
+---
+title: My terminal setup
+date: '2013-07-25 13:49:00'
+published: true
+tags:
+  - code
+  - development
+  - unix
+modified: '2014-09-03 16:15:12'
+---
 # My terminal setup
 
 In my workflow v3 screencast last week I gave a flash of my terminal, and (as I did when I saw it first), many people asked me about my set up.

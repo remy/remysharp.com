@@ -1,3 +1,16 @@
+---
+title: 'Pretty in Print: tips for print styles'
+date: '2007-05-03 13:55:03'
+published: true
+tags:
+  - code
+  - list
+  - print
+  - stylesheet
+  - tips
+  - web
+modified: '2014-09-06 16:21:14'
+---
 # Pretty in Print: tips for print styles
 
 Printing web pages is <span style="cursor: help; border-bottom: 0.1em dashed #646464;" title="...which is probably a good thing for our environment.">often forgotten about</span> and there's nothing more annoying than printing out a web page that comes out in one long, half page width column spanning 5 pages when it should be 2.

@@ -1,3 +1,16 @@
+---
+title: How to detect when an external library has loaded
+date: '2007-04-12 15:57:25'
+published: true
+tags:
+  - code
+  - javascript
+  - onload
+  - safari
+  - script
+  - tip
+modified: '2014-09-03 16:15:12'
+---
 # How to detect when an external library has loaded
 
 Sometimes in a web app, you'll want to load a script externally.  The only problem is if you need to reference something within the external library, which you should only do once it's definitely loaded.

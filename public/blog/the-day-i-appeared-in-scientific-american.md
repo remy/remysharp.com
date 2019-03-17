@@ -1,3 +1,15 @@
+---
+title: The day I appeared in Scientific American
+date: '2007-03-23 20:34:33'
+published: true
+tags:
+  - game
+  - marbles
+  - palm
+  - palm-pilot
+  - personal
+modified: '2014-09-03 16:15:12'
+---
 # The day I appeared in Scientific American
 
 <img style="float: right; padding: 0 0 5px 5px;" src="http://remysharp.com/wp-content/uploads/2007/03/scientific_american.gif" alt="Scientific American" /> Several years ago I wrote [Marbles Squared](http://www.ihatemusic.com/palm/ihm_marbles.html), a 'lightweight addictive puzzle game' for the [Palm Pilot](http://euro.palm.com/uk/en/products/palmvx/index.html).

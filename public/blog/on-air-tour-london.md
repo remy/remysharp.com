@@ -1,3 +1,15 @@
+---
+title: 'on AIR Tour: London'
+date: '2008-04-11 10:29:27'
+published: true
+tags:
+  - air
+  - javascript
+  - onair2008london
+  - onairtour
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # on AIR Tour: London
 
 <img src="http://remysharp.com/wp-content/uploads/2008/04/air.jpg" alt="Air" title="Air" style="float: left; margin: 5px 5px 0 0;" height="132" width="99" /> Adobe hit London yesterday with their [on AIR tour](http://onair.adobe.com/) and I had a seat.

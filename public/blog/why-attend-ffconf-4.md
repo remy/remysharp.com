@@ -1,3 +1,11 @@
+---
+title: 'Why attend ffconf #4: a11y'
+date: '2016-09-27 15:01:21'
+modified: '2016-09-06 07:48:59'
+tags:
+  - business
+published: true
+---
 # Reasons to attend ffconf #4: a11y
 
 [ffconf](https://ffconf.org) is created and run by myself and [Julie](https://twitter.com/julieanne), and my most important job is to curate very best content for the year. Each year is a challenge, but as the year progresses, I ask myself: what's important to the web, the way we work and how can we improve?

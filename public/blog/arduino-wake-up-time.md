@@ -1,3 +1,15 @@
+---
+title: The 'what time did my son wake up?' project
+date: '2014-08-05 10:53:19'
+published: true
+tags:
+  - arduino
+  - code
+  - fail
+  - hacking
+  - hardware
+modified: '2014-09-03 16:15:12'
+---
 # The 'what time did my son wake up?' project
 
 My 2 1/2 year old son wakes up before us during the spring and summer. He turns his light on fully, and plays until he's bored, then calls for us to join us in bed in the morning.

@@ -1,3 +1,16 @@
+---
+title: Performance profiling JavaScript
+date: '2007-04-20 09:19:35'
+published: true
+tags:
+  - code
+  - ie
+  - javascript
+  - performance
+  - profiling
+  - timer
+modified: '2014-09-03 16:15:12'
+---
 # Performance profiling JavaScript
 
 [Firebug](http://getfirebug.com) has a great built in JavaScript performance profiling tool, but it's not supported in <abbr title="Internet Explorer">IE</abbr> and sadly that's what the bulk of Internet users browse with.  In particular, IE profiling is something of a dark art.  There's not a lot of resource available to profile that I could find that was particularly useful.

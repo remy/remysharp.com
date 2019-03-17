@@ -1,3 +1,13 @@
+---
+title: How to write a Github integration
+date: '2016-05-29 13:03:53'
+modified: '2017-12-12 14:16:08'
+complete: false
+inprogress: true
+tags:
+  - web
+draft: true
+---
 # How to write a Github integration
 
 I've been using [Github](https://github.com/remy) for many years now and

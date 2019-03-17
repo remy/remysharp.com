@@ -1,3 +1,14 @@
+---
+title: Little Miss Sunshine (4/5*)
+date: '2006-10-12 23:12:13'
+published: true
+tags:
+  - film
+  - little-miss-sunshine
+  - movie
+  - movies
+modified: '2014-09-03 16:15:12'
+---
 # Little Miss Sunshine (4/5*)
 
 [Little Miss Sunshine][LMS] is essentially a road trip movie about a dysfunctional family.  I say dysfunctional, I actually thought [Greg Kinnear's][Greg] character was a step father.

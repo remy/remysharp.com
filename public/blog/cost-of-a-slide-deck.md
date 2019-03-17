@@ -1,3 +1,12 @@
+---
+title: Cost of a slide deck
+date: '2016-12-12 08:00:13'
+tags:
+  - business
+  - web
+modified: '2016-12-13 08:10:15'
+published: true
+---
 # Cost of a slide deck
 
 I've been asked quite a few times in the past about slides, the work involved, whether or not to repeat talks, being paid, whether filming is okay and how does that all relate to workshops. So I've tried to write down my stand on things and ideally this is useful to some of you out there.

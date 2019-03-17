@@ -1,3 +1,12 @@
+---
+title: Motivation
+date: '2014-10-27 10:30:00'
+complete: true
+published: true
+tags:
+  - personal
+modified: '2014-10-27 10:44:01'
+---
 # Motivation
 
 > The world ain't all sunshine and rainbows. It's a very mean and nasty place and I don't care how tough you are it will beat you to your knees and keep you there permanently if you let it. You, me, or nobody is gonna hit as hard as life. But it ain't about how hard ya hit. It's about how hard you can get it and keep moving forward. How much you can take and keep moving forward.

@@ -1,3 +1,14 @@
+---
+title: html5 and Firefox2
+date: '2009-04-14 16:21:06'
+published: true
+tags:
+  - firefox
+  - html
+  - html5
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # html5 and Firefox2
 
 If you're using html5 for your site, and care about what the [3% of Firefox 2](http://www.w3schools.com/browsers/browsers_firefox.asp) users experience, then this should help you. 

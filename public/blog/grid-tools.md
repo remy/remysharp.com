@@ -1,3 +1,15 @@
+---
+title: Grid Tools
+date: '2008-07-25 15:40:10'
+published: true
+tags:
+  - bookmarklet
+  - code
+  - css
+  - framework
+  - grid
+modified: '2014-09-03 16:15:12'
+---
 # Grid Tools
 
 I've recently been doing more and more cutting from mocks to HTML & CSS and one particular job required me to work to a specific grid layout.

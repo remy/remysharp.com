@@ -1,3 +1,15 @@
+---
+title: Importing colour in to TextMate
+date: '2007-01-20 20:46:46'
+published: true
+tags:
+  - colour
+  - screencast
+  - textmate
+  - tips
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Importing colour in to TextMate
 
 While I was working on one of my client's web site, I realised that I hadn't taken any note of the (hex) colours during my mock up phase.

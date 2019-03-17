@@ -1,3 +1,12 @@
+---
+title: Commit to contribute
+image: /images/github-contrib-notice.png
+date: '2016-12-21 09:42:55'
+tags:
+  - web
+modified: '2016-12-24 09:15:28'
+published: true
+---
 # Commit to contribute
 
 One morning I started my day thinking that I would try to find a little time to work on [nodemon](http://nodemon.io) and woke up to a new pull request that fixed a small bug.

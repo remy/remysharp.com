@@ -1,3 +1,13 @@
+---
+title: 'jQuery tutorial: Text box hints'
+date: '2007-01-25 16:02:25'
+published: true
+tags:
+  - code
+  - plugin
+  - tutorial
+modified: '2014-09-03 16:15:12'
+---
 # jQuery tutorial: Text box hints
 
 <div class="update">

@@ -1,3 +1,11 @@
+---
+title: Tech things in 2016
+date: '2016-12-18 08:51:51'
+modified: '2016-12-18 16:55:43'
+tags:
+  - personal
+published: true
+---
 # Tech things in 2016
 
 I've been meaning to write up some of the technology I enjoy in this day and age, AKA 2016, and for anyone curious, this is a sort-of recommendation post. I also wanted to list a few tech things that I'm less impressed with, and why.

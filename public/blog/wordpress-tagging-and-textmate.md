@@ -1,3 +1,15 @@
+---
+title: 'Wordpress, Tagging and TextMate'
+date: '2006-10-01 00:12:08'
+published: true
+tags:
+  - code
+  - tagging
+  - textmate
+  - tips
+  - wordpress
+modified: '2014-09-18 15:08:55'
+---
 # Wordpress, Tagging and TextMate
 
 I use [TextMate](http://macromates.com) Blogging bundle to post my blogs - it's very cool, [check out the screencast](http://macromates.com/blog/archives/2006/06/19/blogging-from-textmate/).

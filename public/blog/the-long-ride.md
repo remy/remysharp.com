@@ -1,3 +1,13 @@
+---
+title: The Long Ride
+date: '2008-05-02 06:59:57'
+published: true
+tags:
+  - bike
+  - personal
+  - ride
+modified: '2014-09-03 16:15:12'
+---
 # The Long Ride
 
 Last year Julie and I cycled the London to Brighton bike ride, a first for me. I enjoyed it so much that Julie jokingly suggested that we should cycle London to Paris for a bigger challenge. To her surprise I was keen to do it. 

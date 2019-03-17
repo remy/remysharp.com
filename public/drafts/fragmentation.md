@@ -1,3 +1,11 @@
+---
+title: Fragmentation
+date: '2012-11-26 12:00:00'
+tags:
+  - web
+modified: '2012-11-26 23:21:44'
+draft: true
+---
 # Fragmentation
 
 Inspired by [@codepo8's talk](http://vimeo.com/54188798) - go watch it (or maybe after you've read this short post).

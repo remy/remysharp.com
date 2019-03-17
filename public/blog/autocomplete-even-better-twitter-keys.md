@@ -1,3 +1,14 @@
+---
+title: Autocomplete & even better twitter keys
+date: '2008-09-22 15:23:31'
+published: true
+tags:
+  - greasemonkey
+  - project
+  - twitter
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Autocomplete & even better twitter keys
 
 So I've been going a bit greasemonkey mad of late, and with the recent release of [Twitter Keys](http://thenextweb.org/2008/09/16/twitterkeys-enhance-your-twitter-conversations/) I quickly found myself wanting something like tab completion for the twitter keys.

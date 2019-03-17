@@ -1,3 +1,12 @@
+---
+image: /images/node-debug-icon.png
+title: Last minute node debugging
+date: '2018-03-03 13:02:49'
+modified: '2018-03-03 13:02:19'
+tags:
+  - code
+published: true
+---
 # Last minute node debugging
 
 I'm working on a node project that I need to debug, but I didn't start it with the `--inspect` flag. Moreover, I'm using nodemon to restart node (which makes this process a little trickier).

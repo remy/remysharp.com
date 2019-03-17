@@ -1,3 +1,13 @@
+---
+title: How to get cookies working in IE6 stand alone
+date: '2007-03-19 15:39:19'
+published: true
+tags:
+  - web
+  - ie
+  - tips
+modified: '2014-09-03 16:15:12'
+---
 # How to get cookies working in IE6 stand alone
 
 <abbr title="Internet Explorer">IE</abbr> is the biggest player in the browser land, and as much as I hate to do so, I have to test everything in IE.  Now since IE7 is picking up ground, testing is done in both IE6 and IE7.

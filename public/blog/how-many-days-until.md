@@ -1,3 +1,11 @@
+---
+title: How many days until...
+date: '2018-12-18 13:37:29'
+modified: '2018-12-17 18:18:52'
+tags:
+  - code
+published: true
+---
 # How many days until...
 
 Time is a fun and challenging technical problem to solve, and most recently I had to answer the question: how many days is it until Christmas?

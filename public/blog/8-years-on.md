@@ -1,3 +1,12 @@
+---
+title: 8 years on
+date: '2018-08-30 10:19:37'
+modified: '2018-08-30 10:27:14'
+tags:
+  - personal
+nosubscribe: true
+published: true
+---
 # 8 years on
 
 _This is a stream of thought that I need to get out of me, and on to my personal blog. I apologise if it rambles, and I apologise if it's a bit too raw. I don't know who this is for other than me. But I wanted to put these thoughts here, today._

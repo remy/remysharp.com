@@ -1,3 +1,14 @@
+---
+title: Going Full Frontal in one week
+date: '2009-11-16 10:00:32'
+published: true
+tags:
+  - business
+  - conference
+  - fullfrontal
+  - fullfrontal09
+modified: '2014-09-03 16:15:12'
+---
 # Going Full Frontal in one week
 
 Today is Monday. In 4 days time JavaScripters from across the UK and Europe will be coming together for the UK based JavaScript conference: Full Frontal.  After being at [JSConf.eu](http://jsconf.eu/ "JSConf.eu - The JavaScript Conference") last weekend, I couldn't be more excited about getting a community of front end developers together again.

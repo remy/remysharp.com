@@ -1,3 +1,14 @@
+---
+title: Add Twitter to your blog (step-by-step)
+date: '2007-05-18 08:34:31'
+published: true
+tags:
+  - javascript
+  - project
+  - twitter
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Add Twitter to your blog (step-by-step)
 
 <div class="update"><p>Due to recent changes in the twitter API auth policy, the current version of twitter.js does not work. I am actively working on a solution, but can't say much more than that right now. If I do find a decent solution, you shouldn't need to change anything as twitter.js will inherit the latest code automatically.</p></div>

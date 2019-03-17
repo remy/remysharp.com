@@ -1,3 +1,11 @@
+---
+title: Getting the latest emoji (on my mac)
+date: '2017-05-01 12:23:12'
+modified: '2018-03-09 12:08:38'
+tags:
+  - personal
+published: true
+---
 # Getting the latest emoji (on my mac)
 
 In previous years I've been a mac fan and upgraded regularly, but as the OS moves more and more towards iOS style with animations and offering little to a developer like myself, I've remained on OSX 10.10 Yosemite, whilst today it's not even called OSX, it's macOS Serria.

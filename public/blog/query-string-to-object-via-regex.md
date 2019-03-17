@@ -1,3 +1,13 @@
+---
+title: Query String to Object via regex
+date: '2008-06-24 08:41:12'
+published: true
+tags:
+  - code
+  - code
+  - regex
+modified: '2014-09-03 16:15:12'
+---
 # Query String to Object via regex
 
 Just sharing a nice little code snippet that makes use of regular expressions instead of loops for converting.

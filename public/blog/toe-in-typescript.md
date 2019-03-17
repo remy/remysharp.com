@@ -1,3 +1,11 @@
+---
+title: A Toe in TypeScript
+date: '2019-01-23 09:45:06'
+modified: '2019-01-23 09:22:57'
+tags:
+  - code
+published: true
+---
 # A toe in TypeScript
 
 I was watching a short video recently where the author was using TypeScript, except the only TS'ing thing about their code was the file extension. Otherwise it looked identical to the JavaScript I've come to love.

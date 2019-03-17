@@ -1,3 +1,11 @@
+---
+title: 'Progressive web apps: the long game'
+date: '2016-03-18 10:58:38'
+tags:
+  - web
+published: true
+modified: '2016-03-27 11:46:50'
+---
 # Progressive web apps: the long game
 
 Yesterday I was able to attend Google's first Progressive Web Apps event. A half day of talks that focused down on progressive web apps.

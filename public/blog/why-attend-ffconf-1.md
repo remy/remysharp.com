@@ -1,3 +1,11 @@
+---
+title: 'Why attend ffconf #1: CI…CD…C*'
+date: '2016-09-06 07:49:28'
+modified: '2016-09-06 07:49:00'
+tags:
+  - business
+published: true
+---
 # Reasons to attend ffconf #1: CI…CD…C*
 
 [ffconf](https://ffconf.org) is created and run by myself and [Julie](https://twitter.com/julieanne), and my most important job is to curate very best content for the year. Each year is a challenge, but as the year progresses, I ask myself: what's important to the web, the way we work and how can we improve?

@@ -1,3 +1,12 @@
+---
+image: /images/remy-react.png
+title: First impressions of React
+date: '2016-09-13 15:14:36'
+modified: '2016-09-21 15:10:36'
+tags:
+  - web
+published: true
+---
 # First impressions of React
 
 Ever since I started pondering *[what is React](https://remysharp.com/2016/08/15/what-is-react)* last month, the core idea of state driving my development has been on my mind. I've been trying to do more reading around React, mostly to understand how to use the APIs available (like creating components, events, etc) and trying to grok any of the magic that wouldn't be entirely obvious to me on first review of some React-based code.

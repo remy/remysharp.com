@@ -1,3 +1,14 @@
+---
+title: 'The Missing Stat: noscript'
+date: '2009-10-15 15:41:50'
+published: true
+tags:
+  - code
+  - javascript
+  - plugin
+  - wordpress
+modified: '2014-09-03 16:15:12'
+---
 # The Missing Stat: noscript
 
 I use Google Analytics for my web sites, you might use [Mint](http://haveamint.com/) or something else bespoke, but if you're using JavaScript to track those stats (as Google does), you're not capturing how many users you have that *don't* have JavaScript installed.  

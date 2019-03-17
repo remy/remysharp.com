@@ -1,3 +1,11 @@
+---
+title: input range polyfill
+date: '2011-07-18 13:00:24'
+published: true
+tags:
+  - code
+modified: '2018-08-24 13:09:28'
+---
 # input range polyfill
 
 During [The Highland Fling](http://thehighlandfling.com/) (an excellent conference by the way - highly recommend), James Edwards aka [Brothercake](http://www.brothercake.com/) was talking about the graceful degradation of HTML5 Web Form elements, in particular the [input range type](http://www.w3.org/TR/html-markup/input.range.html).

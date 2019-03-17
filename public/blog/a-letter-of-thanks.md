@@ -1,3 +1,12 @@
+---
+title: A letter of thanks
+date: '2010-09-14 14:55:59'
+modified: '2016-10-10 14:28:00'
+tags:
+  - personal
+nosubscribe: true
+published: true
+---
 # A letter of thanks
 
 <div class="flush">![A letter of thanks](/images/thankyou.jpg)</div>

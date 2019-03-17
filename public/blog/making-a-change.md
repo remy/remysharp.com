@@ -1,3 +1,11 @@
+---
+title: Making a change
+date: '2017-01-02 13:34:00'
+modified: '2017-01-02 14:12:41'
+tags:
+  - personal
+published: true
+---
 # Making a change
 
 With each new year there's invisible pressure to make a change (or several) via new year's resolutions. Personally I'm not a fan, but for no reason other than my resolutions would always fail and I'd feel crappy about failing something that seems to come so easily to others.

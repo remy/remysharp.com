@@ -1,3 +1,11 @@
+---
+title: 'One devtool trick: $$ gt $'
+date: '2016-10-10 11:00:01'
+modified: '2016-10-18 19:47:39'
+tags:
+  - web
+published: true
+---
 # One devtool trick: $$ gt $
 
 For reasons that say more about me than anything else, those posts entitled *"3 things you didn't know about XYZ"* always bugged me. Lately they've softened to *"you probably didn't know"*. But being a smug know-it-all, when it comes to devtools, I tend to know (*nearly*) all the tricks.

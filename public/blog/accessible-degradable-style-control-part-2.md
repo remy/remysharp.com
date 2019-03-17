@@ -1,3 +1,18 @@
+---
+title: 'Accessible, degradable style control - part 2'
+date: '2007-10-24 00:12:24'
+published: true
+tags:
+  - accessbility
+  - css
+  - degradable
+  - htaccess
+  - javascript
+  - php
+  - style
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Accessible, degradable style control - part 2
 
 As promised, the second instalment of accessible, degradable style control (that follows [part 1](http://remysharp.com/2007/02/23/accessible-degradable-style-control-part-1/)).

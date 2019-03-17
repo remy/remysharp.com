@@ -1,3 +1,12 @@
+---
+title: So I'm a director
+date: '2006-09-06 20:40:25'
+published: true
+tags:
+  - business
+  - leftlogic
+modified: '2014-09-03 16:15:12'
+---
 # So I'm a director
 
 I've always been interested in making films - and honestly, my ultimate job would be a film director.  Alas, no, this is not what this post is about.

@@ -1,3 +1,12 @@
+---
+title: Debugging events in devtools inspector
+date: '2014-10-16 11:30:00'
+complete: false
+tags:
+  - code
+modified: '2014-10-16 17:40:01'
+draft: true
+---
 # Debugging events in devtools inspector
 
 I'm a big fan of event delegation and binding events at the `document` level, but recently discovered a tiny tweak to my workflow that makes debugging much easier.

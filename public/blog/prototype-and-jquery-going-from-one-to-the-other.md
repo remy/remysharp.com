@@ -1,3 +1,16 @@
+---
+title: Prototype and jQuery - going from one to the other
+date: '2007-10-25 22:10:39'
+published: true
+tags:
+  - code
+  - jquery
+  - libraries
+  - presentation
+  - prototype
+  - slideshow
+modified: '2014-09-03 16:15:12'
+---
 # Prototype and jQuery - going from one to the other
 
 During a conversion with [John Resig](http://ejohn.org) at the [FOWA](http://futureofwebapps.com/ "The Future of Web Apps - Web 2.0 Conference and Expo") he mentioned it would be useful to have a tutorial that explained what jQuery doesn't do that Prototype does and visa versa, and in particular how X process is done in each library.

@@ -1,3 +1,11 @@
+---
+title: Why is it cold…and sunny?
+date: '2016-12-03 09:16:50'
+modified: '2016-12-03 09:29:55'
+tags:
+  - personal
+published: true
+---
 # Why is it cold…and sunny?
 
 This morning my son asked why it was so cold. I replied because it's winter. But then he asked why is it so sunny then.

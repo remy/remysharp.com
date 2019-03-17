@@ -1,3 +1,12 @@
+---
+title: Why I love working with the web
+date: '2016-01-20 09:46:24'
+image: /images/remy-web-was-born.jpg
+tags:
+  - web
+published: true
+modified: '2016-01-20 09:45:32'
+---
 # Why I love working with the web
 
 > Easy is boring. That's why I love the web and browsers […] — [me](https://twitter.com/rem/status/563268265980751872)

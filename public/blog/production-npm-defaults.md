@@ -1,3 +1,11 @@
+---
+title: Production npm defaults
+date: '2016-02-17 15:06:05'
+tags:
+  - code
+published: true
+modified: '2016-02-21 18:17:33'
+---
 # Production npm installations
 
 This is a super short post with a little semi-pro tip for working with npm packages and production quality builds and importantly: pinning releases.

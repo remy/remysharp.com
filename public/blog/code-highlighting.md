@@ -1,3 +1,15 @@
+---
+title: Code Highlighting
+date: '2007-12-06 16:14:59'
+published: true
+tags:
+  - blog
+  - code
+  - development
+  - syntax
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Code Highlighting
 
 Since I'm always posting code snippets, it made sense to apply some syntax highlighting.  

@@ -1,3 +1,15 @@
+---
+title: How to integrate OpenID as your login system
+date: '2007-12-21 15:58:01'
+published: true
+tags:
+  - code
+  - openid
+  - php
+  - server
+  - tutorial
+modified: '2014-09-03 16:15:12'
+---
 # How to integrate OpenID as your login system
 
 I've assumed you know what [OpenID](http://openid.net/what/) is, you're using your own [blog as your identity](http://simonwillison.net/2006/Dec/19/openid/) and now you want to offer a way for your users to log in your sexy new webapp using OpenID, or, as I've done in my code experiment [Todged](http://todged.com/) use it exclusively for logging in.

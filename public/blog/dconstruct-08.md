@@ -1,3 +1,15 @@
+---
+title: dConstruct 08
+date: '2008-09-08 10:12:25'
+published: true
+tags:
+  - conference
+  - dconstruct
+  - dconstruct08
+  - review
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # dConstruct 08
 
 [dConstruct 08](http://2008.dconstruct.org/) is over for another year - and another year of great talks.

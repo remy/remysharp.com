@@ -1,3 +1,13 @@
+---
+title: Building the Bike Shed
+date: '2017-01-04 11:49:07'
+modified: '2017-01-12 19:20:56'
+complete: true
+inprogress: false
+tags:
+  - web
+draft: true
+---
 # Building the Bike Shed
 
 You've possibly heard the expression "bike shedding". [INSERT UNDERSTANDING OF BIKE SHED - REF](https://docs.freebsd.org/cgi/getmsg.cgi?fetch=506636+0+archive/1999/freebsd-hackers/19991003.freebsd-hackers)

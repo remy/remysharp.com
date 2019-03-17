@@ -1,3 +1,11 @@
+---
+title: International Women's Day
+date: '2017-03-08 13:33:38'
+modified: '2017-03-08 15:30:57'
+tags:
+  - personal
+published: true
+---
 # International Women's Day
 
 As I dropped my son off at school and I was leaving, I spotted a whiteboard in the rain where some parents were huddling. I saw that it read: "International Women's Day: the women who have inspired you".

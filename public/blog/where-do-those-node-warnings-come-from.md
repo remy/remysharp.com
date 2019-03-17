@@ -1,3 +1,11 @@
+---
+title: Where do those node warnings come from?
+date: '2017-12-04 12:26:09'
+modified: '2017-12-04 12:25:27'
+tags:
+  - code
+published: true
+---
 # Where do those node warnings come from?
 
 This is a micro post with a tip that I'll need to remember again in the months

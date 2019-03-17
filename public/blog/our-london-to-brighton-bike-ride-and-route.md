@@ -1,3 +1,15 @@
+---
+title: Our London to Brighton bike ride and route
+date: '2007-06-19 10:23:34'
+published: true
+tags:
+  - bike
+  - brighton
+  - london-to-brighton
+  - personal
+  - ride
+modified: '2018-06-17 13:04:17'
+---
 # Our London to Brighton bike ride and route
 
 This past Sunday Julie and I, for an alternative wedding anniversary (3 years) decided that we would ride the London to Brighton for the [British Heart Foundation](http://bhf.org.uk).

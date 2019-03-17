@@ -1,3 +1,15 @@
+---
+title: nodemon 1.0
+date: '2014-01-20 13:00:02'
+published: true
+tags:
+  - javascript
+  - node
+  - nodemon
+  - project
+  - web
+modified: '2015-07-29 14:31:53'
+---
 # nodemon 1.0
 
 For the past few months I've been working on a re-factor of [nodemon](http://github.com/remy/nodemon). The two main drivers were to make the code base easier to maintain and to make nodemon more extendible.

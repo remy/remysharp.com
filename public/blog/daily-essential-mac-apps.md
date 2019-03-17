@@ -1,3 +1,16 @@
+---
+title: Daily Essential Mac Apps
+date: '2006-10-26 00:17:30'
+published: true
+tags:
+  - apple
+  - apps-tag
+  - essential
+  - mac
+  - top
+  - business
+modified: '2014-09-18 15:09:02'
+---
 # Daily Essential Mac Apps
 
 Every I know has compiled a list of some sort, top 10 films, top 10 girlfriends, top 10 top 10s.

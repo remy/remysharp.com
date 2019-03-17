@@ -1,3 +1,12 @@
+---
+title: Tinnitus
+image: /images/tinnitus.png
+date: '2017-04-11 15:02:48'
+modified: '2017-04-11 14:58:17'
+tags:
+  - personal
+published: true
+---
 # Tinnitus
 
 I was recently emailed asking about tinnitus which I've suffered from for many years. I ended up writing a lengthy reply and realised it might be useful to post it somewhere a little more permanent and public.

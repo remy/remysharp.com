@@ -1,3 +1,13 @@
+---
+title: How easy was EasyJet?
+date: '2006-10-07 01:55:59'
+published: true
+tags:
+  - easyjet
+  - personal
+  - problems
+modified: '2014-09-03 16:15:12'
+---
 # How easy was EasyJet?
 
 Jonas, a good friend from work is getting Married this weekend.  In Hungary.  He's marrying a Hungarian, so it makes a lot of sense.

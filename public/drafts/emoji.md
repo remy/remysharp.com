@@ -1,3 +1,13 @@
+---
+title: Emoji
+date: '2016-06-01 12:10:20'
+modified: '2016-09-02 21:18:52'
+complete: false
+inprogress: true
+tags:
+  - web
+draft: true
+---
 # Emoji
 
 - [Effect of adding negative emotion emoji to unwanted actions](https://twitter.com/JamesSLock/status/693174003763154944) - overall: positive effect

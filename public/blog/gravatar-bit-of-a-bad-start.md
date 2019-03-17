@@ -1,3 +1,13 @@
+---
+title: Gravatar - bit of a bad start
+date: '2007-03-12 19:19:25'
+published: true
+tags:
+  - avatar
+  - gravatar
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Gravatar - bit of a bad start
 
 I came across [Gravatar](http://gravatar.com) about a year ago and signed up - since it was free and the blog I was commenting on support it.  Nice idea.

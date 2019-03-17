@@ -1,3 +1,11 @@
+---
+title: 'Why attend ffconf #3: devtools'
+date: '2016-09-21 15:09:47'
+modified: '2016-09-21 15:10:37'
+tags:
+  - business
+published: true
+---
 # Reasons to attend ffconf #3: devtools workflow
 
 [ffconf](https://ffconf.org) is created and run by myself and [Julie](https://twitter.com/julieanne), and my most important job is to curate very best content for the year. Each year is a challenge, but as the year progresses, I ask myself: what's important to the web, the way we work and how can we improve?

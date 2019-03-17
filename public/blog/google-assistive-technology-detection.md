@@ -1,3 +1,15 @@
+---
+title: Google Assistive Technology Detection
+date: '2009-07-01 14:25:20'
+published: true
+tags:
+  - accessibility
+  - aria
+  - code
+  - google
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Google Assistive Technology Detection
 
 We all know Google engineers are working away a stuff that's so amazing they have to wait a couple of years before releasing it otherwise it'll blow our minds up (Gmail, maps, etc).

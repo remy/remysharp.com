@@ -1,3 +1,12 @@
+---
+title: A Mental State
+date: '2016-12-24 08:46:19'
+modified: '2016-12-23 20:22:50'
+tags:
+  - personal
+  - depression
+published: true
+---
 # Mental state
 
 Today is the last post of 24 posts I published in December 2016. A way of flushing my draft posts and challenging myself to write. Originally, I had a post on my physical health, on how I had hurt myself over the last couple of years and some of the thought that goes into that. But, I sort of wanted to end this mini-writing adventure on something that meant more to me. So, I wanted to write about my mental health instead of physical health. This is deeply personal, partly taboo, but feels like the right thing for me to share.

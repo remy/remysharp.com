@@ -1,3 +1,12 @@
+---
+image: /images/dog.jpg
+title: 'Me on React: an old dog with new tricks'
+date: '2017-08-14 13:09:39'
+modified: '2017-08-14 19:13:21'
+tags:
+  - code
+published: true
+---
 # Me on React: an old dog with new tricks
 
 Over the years I've been consistently uninterested in using the new slew of frameworks and libraries that have been released. By no means is this because they're bad at all, but because my particular kind of work didn't require it. However, in the last 12 months I've made significant use of React and have even released a few client projects using it. So what's changed for me? As someone who's very much "pro vanilla" and bare-metal JavaScript, why have I changed my mind so significantly?

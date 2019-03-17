@@ -1,3 +1,11 @@
+---
+title: A clean exit
+date: '2018-01-08 10:18:06'
+modified: '2018-01-08 10:43:22'
+tags:
+  - code
+published: true
+---
 # A clean exit
 
 I was running some tests recently using [Mocha](https://mochajs.org/) and I wanted to re-run the tests when files changed. Typically this kind of functionality is built into test runners, but a) I'm not that familiar with Mocha (meh, it's just a tool) and b) I've got nodemon (which I wrote) 🙌.

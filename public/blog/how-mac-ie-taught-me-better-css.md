@@ -1,3 +1,14 @@
+---
+title: How Mac IE taught me better CSS
+date: '2006-09-20 10:10:49'
+published: true
+tags:
+  - css
+  - ie
+  - mac
+  - web
+modified: '2014-09-18 15:09:00'
+---
 # How Mac IE taught me better CSS
 
 Generally when you say you've done your browser testing it will mostly take place on a <abbr title="Personal Computer">PC</abbr>, and at the very least, it will be <abbr title="Microsoft's Internet Explorer">IE</abbr>*.

@@ -1,3 +1,13 @@
+---
+title: Diet
+date: '2015-03-11 14:30:00'
+complete: true
+published: true
+inprogress: true
+tags:
+  - personal
+modified: '2015-07-04 17:30:07'
+---
 # Diet
 
 I've been asked a few times what's my diet like, specifically, and I wanted to write it up here so I actually remember in years to come. This is because I've gone from 30%+ body fat (obese) to 11.75% (inside athlete categorisation) over 2 years.

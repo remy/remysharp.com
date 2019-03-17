@@ -1,3 +1,17 @@
+---
+title: T-Mobile allow free Wifi Google Maps
+date: '2007-12-16 15:30:34'
+published: true
+tags:
+  - google
+  - iphone
+  - ipod
+  - ipodtouch
+  - maps
+  - tmobile
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # T-Mobile allow free Wifi Google Maps
 
 This is an odd one, but while I was out in [Berlin](http://maps.google.com/maps?f=q&hl=en&geocode=&time=&date=&ttype=&q=park+inn+hotel,+Berlin&ie=UTF8&ll=52.52258,13.411388&spn=0.008225,0.021994&t=h&z=16&om=1), where there was pay for T-Mobile, I found that I could access [Google Maps](http://maps.google.com/ "Google Maps") via the iPod [Maps app](http://www.apple.com/iphone/features/index.html#map) without having to pay any connection fee.

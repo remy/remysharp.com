@@ -1,3 +1,12 @@
+---
+title: My beef with Apple
+date: '2013-05-19 12:00:00'
+tags:
+  - web
+  - business
+modified: '2016-02-15 13:10:23'
+draft: true
+---
 ## Apple don't care
 
 There's been some recent excellent discussion about Apple and their (continued) lack of engagement in the web community.

@@ -1,3 +1,13 @@
+---
+title: New Blog Design
+date: '2008-02-29 13:15:38'
+published: true
+tags:
+  - blog
+  - personal
+  - update
+modified: '2014-09-03 16:15:12'
+---
 # New Blog Design
 
 As mentioned at the [end of last year](http://remysharp.com/2007/12/31/2007-moments/), I wanted to put a new design up for my blog.  The main reason behind the decision was this blog's focus is code, and the design I had was way too narrow for the code samples.

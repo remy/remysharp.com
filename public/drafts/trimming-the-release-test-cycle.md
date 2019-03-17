@@ -1,3 +1,13 @@
+---
+title: Trimming the release/test/fail/release cycle
+date: '2017-01-13 11:40:07'
+modified: '2017-01-13 11:59:37'
+complete: true
+inprogress: false
+tags:
+  - web
+draft: true
+---
 # Trimming the release/test/fail/repeat cycle
 
 Sometimes I find myself in the _tweaking_ phase of a project and to test some specific aspects of it, the project will need a public URL.

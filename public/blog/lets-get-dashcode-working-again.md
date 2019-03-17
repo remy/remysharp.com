@@ -1,3 +1,17 @@
+---
+title: Let's get Dashcode working again
+date: '2007-07-30 10:02:28'
+published: true
+tags:
+  - code
+  - applescript
+  - dashboard-tag
+  - dashcode
+  - hack
+  - mac
+  - widget
+modified: '2014-09-03 16:15:12'
+---
 # Let's get Dashcode working again
 
 <div class="update">

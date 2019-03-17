@@ -1,3 +1,11 @@
+---
+title: CERN day 4
+date: '2019-02-15 08:46:06'
+modified: '2019-02-14 23:02:18'
+tags:
+  - personal
+published: true
+---
 # CERN day 4
 
 Another long day from 9am to 10pm coding, conferring, braining, hacking and edging towards our goal: recreating the world's first web browser: WorldWideWeb.app.

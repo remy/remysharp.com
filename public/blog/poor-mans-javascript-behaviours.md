@@ -1,3 +1,16 @@
+---
+title: Poor man's JavaScript Behaviours
+date: '2008-02-03 11:18:09'
+published: true
+tags:
+  - behaviours
+  - code
+  - events
+  - javascript
+  - jquery
+  - plugin
+modified: '2014-09-03 16:15:12'
+---
 # Poor man's JavaScript Behaviours
 
 JavaScript behaviours are roughly defined as an event handler that is set once, then handled by elements that are created on the fly later on.

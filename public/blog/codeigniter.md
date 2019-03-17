@@ -1,3 +1,13 @@
+---
+title: CodeIgniter
+date: '2008-03-25 23:27:34'
+published: true
+tags:
+  - code
+  - codeigniter
+  - php
+modified: '2015-08-31 10:38:43'
+---
 # CodeIgniter
 
 If you've been [following me on Twitter](http://twitter.com/rem), then you'll know I've been [umm-ing and err-ing](http://twitter.com/rem/statuses/772475057) about [whether or not](http://twitter.com/rem/statuses/775168889) to use [CodeIgniter](http://codeigniter.com/ "CodeIgniter - Open source PHP web application framework"), the PHP framework.

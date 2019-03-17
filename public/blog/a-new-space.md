@@ -1,3 +1,11 @@
+---
+title: A new space
+date: '2017-07-08 12:24:39'
+modified: '2017-07-08 12:01:01'
+tags:
+  - personal
+published: true
+---
 # A new space: remy.blog
 
 I've been fortunate to have been given [remy.blog][1] and so I've started a new blog over there.

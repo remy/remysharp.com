@@ -1,3 +1,15 @@
+---
+title: Broken Ajax? Nothing coming back?
+date: '2007-01-16 16:01:26'
+published: true
+tags:
+  - code
+  - fix
+  - javascript
+  - json
+  - tips
+modified: '2014-09-03 16:15:12'
+---
 # Broken AJAX? Nothing coming back?
 
 I recently came across a <acronym title="annoying">funny</acronym> bug where I was executing an AJAX method and the response was empty.

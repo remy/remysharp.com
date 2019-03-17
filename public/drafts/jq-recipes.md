@@ -1,3 +1,13 @@
+---
+title: jq recipes
+date: '2018-01-06 17:08:36'
+modified: '2018-11-28 11:05:55'
+complete: false
+inprogress: true
+tags:
+  - code
+draft: true
+---
 # jq recipes
 
 All demos link to [jqterm](https://jqterm.com) - an alternative interactive jq web terminal with autocomplete (and faster querying with large datasets as they're cached online in private gists).

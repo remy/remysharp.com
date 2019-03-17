@@ -1,3 +1,12 @@
+---
+title: Is HTML5 Ready?
+date: '2013-06-26 10:50:29'
+published: true
+tags:
+  - html5
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Is HTML5 Ready?
 
 Back on 20-July 2009 I launch (quickly and from a local caf&eacute;) [ishtml5ready.com](http://web.archive.org/web/20120617183716/http://ishtml5ready.com/) in response to [ishtml5readyyet.com](http://web.archive.org/web/20120504112614/http://ishtml5readyyet.com/), except some point along the line, I let the domain lapse (as did ishtml5readyyet.com) - but instead of it vanishing, someone else bought the domain, and added some Amazon links (and not even to mine & Bruce's book, dagnamit!).

@@ -1,3 +1,14 @@
+---
+title: How I achieved cross site scripting
+date: '2007-01-18 21:33:09'
+published: true
+tags:
+  - ajax
+  - code
+  - heatmaps
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # How I achieved cross site scripting
 
 Before I get flamed for claiming the impossible, this is how I achieved a goal that was entirely in AJAX, but I needed it to across different domains!

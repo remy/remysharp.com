@@ -1,3 +1,12 @@
+---
+title: Dive into bitwise not and numbers
+image: /images/bitwise-not.png
+date: '2017-09-08 12:51:15'
+modified: '2017-09-20 14:59:31'
+tags:
+  - code
+published: true
+---
 # Dive into bitwise not and numbers
 
 Sometimes you want to perform bit operations in JavaScript, and due to it's mutating nature, it's easy to get in a muddle. I recently wanted to run a bitwise `not` on `0FF` (cyan) expecting `F00` (red) and of course that's not what I saw, so I've written up (so I remember) how it works.

@@ -1,3 +1,11 @@
+---
+title: My Decade of Blogging
+date: '2016-09-01 08:47:38'
+modified: '2016-09-02 11:10:12'
+tags:
+  - personal
+published: true
+---
 # My decade of blogging
 
 Today marks the 10 year anniversary of my blog and its blog posts. This, I suspect, will be a super self indulgent post harking back to memories of how I did things, and my aspirations for the next decade.

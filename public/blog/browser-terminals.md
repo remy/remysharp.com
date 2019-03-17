@@ -1,3 +1,11 @@
+---
+title: Browser Terminals
+date: '2017-02-10 12:40:06'
+modified: '2017-02-04 18:02:32'
+tags:
+  - web
+published: true
+---
 # Browser Terminals
 
 I've been working hard on my [terminal.training](https://terminal.training) video course (for anyone wanting to learn about the terminal and command line). In that, I've been doing some side research on different terminal applications, and of course…you can run a terminal in you browser…because why not!?

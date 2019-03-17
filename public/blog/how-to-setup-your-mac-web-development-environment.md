@@ -1,3 +1,19 @@
+---
+title: How to setup your Mac web development environment
+date: '2007-01-06 16:35:42'
+published: true
+tags:
+  - apache
+  - apple
+  - development
+  - howto
+  - mysql
+  - php
+  - tips
+  - tutorial
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # How to setup your Mac web development environment
 
 Following [my accident](http://remysharp.com/2006/12/14/the-delicate-apple/) a couple of weeks ago, I've now been blessed with a [new MacBook Pro](http://www.flickr.com/photos/remysharp/tags/macbookpro) which needs setting up again.

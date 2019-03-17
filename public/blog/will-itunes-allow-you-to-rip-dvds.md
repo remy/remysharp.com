@@ -1,3 +1,15 @@
+---
+title: Will iTunes allow you to rip DVDs?
+date: '2007-10-19 11:49:47'
+published: true
+tags:
+  - apple
+  - copyrights
+  - dvd
+  - itunes
+  - ripping
+modified: '2014-09-03 16:15:12'
+---
 # Will iTunes allow you to rip DVDs?
 
 In a conversation with my father about how best to import his films to his newly purchased iPod, it occurred to me: surely ripping DVDs is a natural next step for iTunes?

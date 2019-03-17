@@ -1,3 +1,11 @@
+---
+title: Full Frontal 2012 launches soon!
+date: '2012-06-18 10:19:13'
+published: true
+tags:
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Full Frontal 2012 launches soon!
 
 <img src="/images/ff-2012.png" style="float: right; margin-left: 10px; margin-bottom: 10px">

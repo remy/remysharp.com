@@ -1,3 +1,16 @@
+---
+title: TextMate Tagging with Simple Tagging
+date: '2007-07-22 00:39:11'
+published: true
+tags:
+  - code
+  - simple-tagging
+  - tagging
+  - textmate
+  - tutorial
+  - wordpress
+modified: '2015-08-31 10:42:36'
+---
 # TextMate Tagging with Simple Tagging
 
 I recently upgraded to WordPress 2.2 and found that Ultimate Tag Warrior wasn't working anymore for me.  Although I managed to hack it a bit and eventually found UTW 3, the biggest problem (and show stopper) was when a new comment was placed on a post, all the tags would disappear.

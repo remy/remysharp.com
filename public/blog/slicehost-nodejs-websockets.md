@@ -1,3 +1,16 @@
+---
+title: 'Slicehost, Node.js & WebSockets'
+date: '2010-02-14 11:06:32'
+published: true
+tags:
+  - html5
+  - javascript
+  - node
+  - slicehost
+  - web
+  - websockets
+modified: '2014-09-18 21:50:29'
+---
 # Slicehost, Node.js & WebSockets
 
 I've been looking for a small hosting provider that I could run [node.js](http://nodejs.org) on to test out some WebSocket experiments, and this is my account so that you also can have a play.

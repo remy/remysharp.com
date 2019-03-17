@@ -1,3 +1,12 @@
+---
+title: 'CSS selector for :parent targeting (please)'
+date: '2010-10-11 12:29:38'
+published: true
+tags:
+  - code
+  - css
+modified: '2018-08-24 13:09:18'
+---
 # CSS selector for :parent targeting (please)
 
 [Me this weekend](https://twitter.com/rem/status/26934643630):

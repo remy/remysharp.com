@@ -1,3 +1,15 @@
+---
+title: Issues with position fixed & scrolling on iOS
+date: '2012-05-24 10:08:32'
+published: true
+tags:
+  - apple
+  - css
+  - ios
+  - iphone
+  - web
+modified: '2016-03-17 23:05:35'
+---
 # Issues with position fixed & scrolling on iOS
 
 With the release of iOS 5, fixed positioned layout is said to be supported in MobileSafari.

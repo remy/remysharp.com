@@ -1,3 +1,15 @@
+---
+title: Fixing IE overflow problem
+date: '2008-01-21 12:50:25'
+published: true
+tags:
+  - code
+  - css
+  - javascript
+  - jquery
+  - overflow
+modified: '2014-09-03 16:15:12'
+---
 # Fixing IE overflow problem
 
 Until recently, I didn't know <abbr title="Internet Explorer">IE</abbr> (both 6 and 7) had an overflow problem.  But it does.

@@ -1,3 +1,13 @@
+---
+title: Tweet offline & better locations
+date: '2008-09-17 16:42:26'
+published: true
+tags:
+  - greasemonkey
+  - twitter
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Tweet offline & better locations
 
 If you [follow me on Twitter](http://twitter.com/rem) you'll have seen that I've been [moaning](http://twitter.com/rem/statuses/906601822) a <del>bit</del> lot about using Twitter as an alternative to email or <abbr title="Instance messenger">IM</abbr>.

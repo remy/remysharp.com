@@ -1,3 +1,15 @@
+---
+title: Where is that console.log?
+date: '2014-05-23 12:16:21'
+published: true
+tags:
+  - code
+  - console
+  - de
+  - debug
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # Where is that console.log?
 
 Did you ever have phantom `console.log` - or more specifically you've no idea 

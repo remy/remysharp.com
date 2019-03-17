@@ -1,3 +1,11 @@
+---
+title: Fixing fixtures
+date: '2016-01-28 16:06:15'
+tags:
+  - code
+published: true
+modified: '2016-01-23 16:14:42'
+---
 # Fixing fixtures
 
 For context, the following technical post is rather bespoke to my recent work but I believe it helps to manage potentially heavy fixtures in tests.

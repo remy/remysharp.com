@@ -1,3 +1,12 @@
+---
+title: 'Versioning: the chicken & egg'
+date: '2016-06-06 13:14:34'
+image: /images/github-release.gif
+tags:
+  - code
+modified: '2017-02-04 18:02:10'
+published: true
+---
 # Versioning: the chicken & egg
 
 When I originally created this post I was working on a project where I kept running into the constraints of versioning a package that I was pushing to npm. I'll explain the problem, but now I have a near perfect workflow that completely mitigates the entire issue of versioning.

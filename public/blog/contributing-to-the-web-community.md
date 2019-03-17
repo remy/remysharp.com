@@ -1,3 +1,13 @@
+---
+title: Contributing to the web community
+date: '2012-12-18 11:41:44'
+published: true
+tags:
+  - blogging
+  - community
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Contributing to the web community
 
 > Comments like these make me want to never contribute to this community.

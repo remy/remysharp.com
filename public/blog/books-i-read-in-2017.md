@@ -1,3 +1,11 @@
+---
+title: Books I read in 2017
+date: '2019-01-06 16:24:17'
+modified: '2019-01-06 13:36:05'
+tags:
+  - personal
+published: true
+---
 # Books I read in 2017
 
 I starting reading "properly" at the end of 2016 and carried on into 2017. At this stage, I was just (mostly) rating my books, but by the end of 2017, I started writing short reviews (mostly for myself).

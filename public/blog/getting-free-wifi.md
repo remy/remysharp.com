@@ -1,3 +1,11 @@
+---
+title: Getting free wifi
+date: '2017-05-29 09:42:06'
+modified: '2017-05-29 09:41:43'
+tags:
+  - web
+published: true
+---
 # Getting free wifi
 
 Have you ever picked up free wifi in a hotel or airport and had the "30 minutes free wifi" and then had the option to pay silly money for an hour? This tip allows you to completely reset that 30 minute grace period, prompted by the following tweet.

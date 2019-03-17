@@ -1,3 +1,11 @@
+---
+title: What is React?
+date: '2016-08-15 12:15:05'
+modified: '2016-08-15 12:13:49'
+tags:
+  - web
+published: true
+---
 # What is React
 
 Firstly, spoiler: I don't know. This post is simply framing my question fully that I [posted on twitter](https://twitter.com/rem/status/765104131459743744).

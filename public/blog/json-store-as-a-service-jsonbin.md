@@ -1,3 +1,11 @@
+---
+title: 'JSON store as a service: jsonbin'
+date: '2017-01-31 17:45:04'
+modified: '2017-02-04 17:55:01'
+tags:
+  - web
+published: true
+---
 # JSON store as a service: jsonbin.org
 
 Early on at the start of 2017, over a short 4 hour hack, I wrote and released a microservice called [jsonbin.org](https://jsonbin.org). It's a personalised JSON store as a service that you interact with over RESTful URLs.

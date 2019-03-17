@@ -1,3 +1,13 @@
+---
+title: Adding search to my static blog
+date: '2015-06-03 17:56:13'
+complete: false
+inprogress: true
+tags:
+  - code
+modified: '2015-06-18 11:15:54'
+draft: true
+---
 # Adding search to my static blog
 
 My blog is generated using Harp to entirely static .html files, so adding search, whilst being static wasn't immediately obvious to me.

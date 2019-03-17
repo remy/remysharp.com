@@ -1,3 +1,13 @@
+---
+title: 'Fonts, Third Parties and Scripts'
+date: '2016-03-22 11:02:56'
+complete: false
+inprogress: true
+tags:
+  - web
+modified: '2016-03-22 11:22:11'
+draft: true
+---
 # Fonts, Third Parties and Scripts
 
 Last night I was searching for some information and found a DigitalOcean help article. Except, instead of being exactly what I needed (as the Google search suggested), I was greeted by a blank page...and a long wait...

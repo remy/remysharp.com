@@ -1,3 +1,13 @@
+---
+title: Configuring wifi for your Raspberry Pi using your Mac
+date: '2013-05-27 17:30:05'
+published: true
+tags:
+  - code
+  - hardware
+  - raspberrypi
+modified: '2014-09-03 16:15:12'
+---
 # Configuring wifi for your Raspberry Pi using your Mac
 
 This walkthrough assumes a pretty simple set up - and in my case I just grabbed a "latest wheezy SD card" [off Amazon](http://www.amazon.co.uk/gp/product/B008IU78EK/ref=oh_details_o00_s01_i00?ie=UTF8&psc=1). I booted once with an ethernet connection so I could do the initial `Raspi-config` steps.

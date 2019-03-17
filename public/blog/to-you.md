@@ -1,3 +1,12 @@
+---
+title: To You
+date: '2014-12-06 09:00:00'
+complete: true
+published: true
+tags:
+  - personal
+modified: '2014-12-06 08:41:23'
+---
 # To you
 
 This makes my final post on The Pastry Box. Though its only been six posts, its felt like something different. Indeed early on I realised it was somewhere different that I could experiment with content.

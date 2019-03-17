@@ -1,3 +1,15 @@
+---
+title: JS Bin for Collaborative JavaScript Debugging
+date: '2008-10-06 14:54:51'
+published: true
+tags:
+  - code
+  - code
+  - javascript
+  - project
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # JS Bin for Collaborative JavaScript Debugging
 
 The weekend before last (28-Sep 2008) I blitzed through an idea I had on the shelf for about 6 months and put it live under the name [JS Bin](http://jsbin.com).

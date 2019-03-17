@@ -1,3 +1,13 @@
+---
+title: You're paying to speak
+date: '2014-03-07 16:19:02'
+published: true
+tags:
+  - business
+  - conference
+  - fullfrontalconf
+modified: '2014-09-03 16:15:12'
+---
 # You're paying to speak
 
 There are many, many new speakers coming to the web community with their stories and standing up on stage and sharing. I applaud them. It's a scary thing to stand on stage and share your ideas. And there are many, many hours of work that goes in to the presentations.

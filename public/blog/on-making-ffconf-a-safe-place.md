@@ -1,3 +1,12 @@
+---
+title: On making ffconf a safe place
+date: '2015-11-10 14:46:30'
+tags:
+  - ffconf
+  - business
+published: true
+modified: '2015-11-11 11:28:13'
+---
 # On making ffconf a safe place
 
 Last week, [ffconf v7](http://2015.ffconf.org) was released, and going by all the tweets, photos and personal interactions I received, it was a **huge** success. Again. Phew.

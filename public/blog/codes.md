@@ -1,3 +1,11 @@
+---
+title: Conducting Codes of Conduct
+date: '2017-07-05 11:09:48'
+modified: '2017-07-05 11:24:44'
+tags:
+  - web
+published: true
+---
 # Conducting Codes of Conduct
 
 There's a huge number of web conferences and meetups now and although a code of conduct should be a default part of the event, I thought it might be useful to share what we've done with [ffconf](https://ffconf.org) as we come up on our 9th edition.

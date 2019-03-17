@@ -1,3 +1,15 @@
+---
+title: How to tell if jQuery is out of date
+date: '2008-03-21 19:18:25'
+published: true
+tags:
+  - extension
+  - greasemonkey
+  - jquery
+  - plugin
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # How to tell if jQuery is out of date
 
 As with most projects I work on, there's normally some JavaScript interaction.  Often, however I've got all kinds of different versions of jQuery going on in these projects so when I try to access the latest functionality, and it groaks, I'll go sniffing around to check if it's the latest version.

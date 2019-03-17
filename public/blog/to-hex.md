@@ -1,3 +1,15 @@
+---
+title: to hex
+date: '2007-09-30 20:01:11'
+published: true
+tags:
+  - code
+  - code
+  - hex
+  - javascript
+  - numbers
+modified: '2014-09-03 16:15:12'
+---
 # to hex
 
     d.toString(16)

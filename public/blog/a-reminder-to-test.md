@@ -1,3 +1,11 @@
+---
+title: A reminder to test
+date: '2016-12-15 07:59:02'
+modified: '2016-11-25 17:55:03'
+tags:
+  - web
+published: true
+---
 # A reminder to test
 
 I recently bought myself a [LaMetric](http://lametric.com/) smart clock (whatever that means), and given that Christmas is nearing, it didn't take much work to create a Christmas countdown for the clock.

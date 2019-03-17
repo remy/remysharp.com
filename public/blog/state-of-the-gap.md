@@ -1,3 +1,11 @@
+---
+title: State of the gap
+date: '2016-05-28 09:51:30'
+modified: '2016-08-24 09:26:11'
+tags:
+  - web
+published: true
+---
 # State of the gap
 
 Clearly PhoneGap, and Cordova are still required today in the mobile world, but when is it *really* needed? Did the web ever catch up? Do we always need to turn to a PhoneGap shell for all our solutions?

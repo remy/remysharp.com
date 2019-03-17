@@ -1,3 +1,13 @@
+---
+title: Updated jQuery Talk
+date: '2008-07-09 10:13:40'
+published: true
+tags:
+  - web
+  - presentation
+  - skillswap
+modified: '2014-09-03 16:15:12'
+---
 # Updated jQuery Talk
 
 I was asked to share my knowledge at [SkillSwap](http://skillswap-brighton.org/ "SkillSwap Brighton") which was great evening (it's certainly encouraged me out of [my little box](http://www.flickr.com/photos/remysharp/2324926736/in/set-72157600666145464/) and head to [future events](http://upcoming.yahoo.com/event/535879/)) ([thanks also to  John](http://remysharp.com/2008/03/13/presenting-jquery-at-qcon/#comment-54923)).

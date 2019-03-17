@@ -1,3 +1,15 @@
+---
+title: JSONP request in Adobe Air
+date: '2009-02-16 14:22:41'
+published: true
+tags:
+  - air
+  - code
+  - javascript
+  - json
+  - jsonp
+modified: '2015-08-31 10:41:59'
+---
 # JSONP request in Adobe Air
 
 With the [jQuery API browser](http://api.jquery.com) my key aim was to build an app that worked both in the Adobe Air environment and without any changes work on the web.

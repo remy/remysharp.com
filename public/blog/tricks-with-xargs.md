@@ -1,3 +1,11 @@
+---
+title: Tricks with xargs
+date: '2016-12-16 09:47:07'
+modified: '2017-02-04 18:01:17'
+tags:
+  - web
+published: true
+---
 # Tricks with xargs
 
 As a (at present) Mac user, I spend nearly all my time in the terminal, and around 2002 a friend taught me about the `xargs` command, which I probably use way too much, but it's pretty handy. However, I keep forgetting specific tricks, so I'm writing them up here, in my online searchable diary.

@@ -1,3 +1,14 @@
+---
+title: Safari's problem with @font-face
+date: '2009-06-23 16:58:55'
+published: true
+tags:
+  - css
+  - css3
+  - safari
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Safari's problem with @font-face
 
 <code>@font-face</code> is definitely a huge string to the CSS author's bow, in fact, it's like a freekin' flamin' arrow, but watch out, Safari isn't very nice to slow connections.

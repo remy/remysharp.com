@@ -1,3 +1,12 @@
+---
+title: Frictionless
+date: '2018-07-22 20:18:31'
+modified: '2018-07-22 21:42:49'
+complete: false
+inprogress: true
+tags:
+  - code
+---
 # Frictionless
 
 In the last few weeks I've release three or four micro projects, all with solid value to myself (Whilst one or two with potential value to others). That number of working projects is, I think, quite decent. And it's not that I'm a megamind or anything, it's just that I've found a workflow that cuts through all the bullshit involved in getting started.

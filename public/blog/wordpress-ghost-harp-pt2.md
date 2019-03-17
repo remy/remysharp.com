@@ -1,3 +1,11 @@
+---
+title: WordPress -> Ghost -> Harp (part 2)
+date: '2014-09-30 09:00:00'
+published: true
+tags:
+  - web
+modified: '2014-09-29 20:01:46'
+---
 # WordPress to Ghost to Harp: part 2
 
 I wrote about moving away from WordPress to Ghost and then to Harp in [part 1](/2014/09/18/wordpress-ghost-harp-pt1), this post details some of the specifics of my blog's implementation.

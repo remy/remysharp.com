@@ -1,3 +1,12 @@
+---
+title: 'My workflow v3: full coding stack'
+date: '2013-07-18 12:17:24'
+published: true
+tags:
+  - devtools
+  - web
+modified: '2016-09-12 20:57:59'
+---
 # My workflow v3: full coding stack
 
 I've recently been working 100% inside of Chrome's devtools using the powerful feature "workspaces". This gives me access to write to any file on the file system. So I've recorded another short screencast (6mins) to show you how to enable it, and quick demo of how I've been using it on my [Node](http://nodejs.org) projects.

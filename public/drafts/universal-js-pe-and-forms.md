@@ -1,3 +1,13 @@
+---
+title: 'Universal JS, PE and forms'
+date: '2017-04-07 11:35:10'
+modified: '2017-04-07 11:53:23'
+complete: false
+inprogress: true
+tags:
+  - code
+draft: true
+---
 # Universal JS, PE and forms
 
 I've been working on a number projects that make use of React through [Next.js](https://github.com/zeit/next.js) which affords me server side rendering without having to write any (additional) code.

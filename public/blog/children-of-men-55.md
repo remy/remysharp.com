@@ -1,3 +1,14 @@
+---
+title: Children of Men (5/5*)
+date: '2006-10-03 01:23:05'
+published: true
+tags:
+  - children-of-men
+  - film
+  - movie
+  - movies
+modified: '2014-09-10 22:17:37'
+---
 # Children of Men (5/5*)
 
 What can I say?  It's the first film I can remember crying to in a very long time.

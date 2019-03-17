@@ -1,3 +1,13 @@
+---
+title: Open source with a cap in hand
+date: '2018-01-10 13:31:03'
+modified: '2018-01-10 19:51:55'
+image: /images/nodemon-issue-stats.png
+tags:
+  - web
+  - business
+published: true
+---
 # Open source with a cap in hand
 
 Nodemon was first released in Oct 2010 ([via twitter no less](https://twitter.com/rem/statuses/26267574735)). To date, nodemon has had 1,024 commits - 184 of which were the community, the rest being from me - runs with over 150 tests (mostly integration tests) had 144 releases into npm, starred over 13,000 times, has had 883 issues closed, merged 331 <abbr title="pull requests">PRs</abbr> (mostly mine…sorry), and in the last month, has had just shy of **3 million installations**.

@@ -1,3 +1,14 @@
+---
+title: jQuery AJAX'ed forms
+date: '2007-03-05 21:44:15'
+published: true
+tags:
+  - code
+  - forms
+  - jquery
+  - screencast
+modified: '2014-09-03 16:15:12'
+---
 # jQuery AJAX'ed forms
 
 <p>Inspired by Dustin Diaz&#8217;s <a href="http://www.dustindiaz.com/screencast-05/">AJAX screencast</a>, I thought it was time I made a little more use of <a href="http://shinywhitebox.com/home/home.html">iShowU</a> and show how easy, and quick it can be to pile on some AJAX calories to pretty much any form.</p>

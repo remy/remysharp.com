@@ -1,3 +1,14 @@
+---
+title: Quick & Dirty Forking
+date: '2013-03-18 13:00:24'
+published: true
+tags:
+  - code
+  - git
+  - github
+  - project
+modified: '2014-09-03 16:15:12'
+---
 # Quick & Dirty Forking
 
 I've often come across a github hosted repo that was purely client side, but didn't have a hosted demo. Maybe a simple JavaScript library, or a CSS effect, but no url that I could see it in action.

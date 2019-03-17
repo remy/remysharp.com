@@ -1,3 +1,13 @@
+---
+title: Rich text input on iOS
+date: '2011-10-10 00:18:53'
+published: true
+tags:
+  - code
+  - ios
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # Rich text input on iOS
 
 Rich text input is difficult on any platform, but I discovered a rather cheeky, but simple trick to give you rich text inputs on iOS.

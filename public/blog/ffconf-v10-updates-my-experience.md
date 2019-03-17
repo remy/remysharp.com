@@ -1,3 +1,12 @@
+---
+title: 'ffconf v10: updates & my experience'
+date: '2018-11-26 12:57:30'
+modified: '2018-11-26 13:00:49'
+tags:
+  - web
+nosubscribe: true
+published: true
+---
 # ffconf v10: updates & my experience
 
 It's been just over two weeks since the 10th ffconf ran. I'm only _just_ closing up the final bits of the event, and I know that [Julie](https://twitter.com/julieanne) is still working on her side of the post event tasks.

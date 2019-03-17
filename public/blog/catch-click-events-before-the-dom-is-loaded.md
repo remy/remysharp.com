@@ -1,3 +1,15 @@
+---
+title: Catch click events before the DOM is loaded
+date: '2007-10-01 12:24:20'
+published: true
+tags:
+  - code
+  - dom
+  - events
+  - javascript
+  - jquery
+modified: '2014-09-03 16:15:12'
+---
 # Catch click events before the DOM is loaded
 
 I'm currently working on a project that's heavily JavaScript driven.  One of the key goals of the project is to get the user to click a bright yellow button (I won't go in to any more detail than that).

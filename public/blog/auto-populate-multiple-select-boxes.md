@@ -1,3 +1,16 @@
+---
+title: Auto-populate multiple select boxes
+date: '2007-09-18 23:46:35'
+published: true
+tags:
+  - code
+  - jquery
+  - mysql
+  - project
+  - select-boxes
+  - tutorial
+modified: '2014-09-03 16:15:12'
+---
 # Auto-populate multiple select boxes
 
 To follow on from [Auto-populating Select Boxes using jQuery & AJAX](http://remysharp.com/2007/01/20/auto-populating-select-boxes-using-jquery-ajax/), I've had more than a few requests for how to do this for multiple select boxes.

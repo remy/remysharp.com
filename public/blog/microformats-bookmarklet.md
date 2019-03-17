@@ -1,3 +1,15 @@
+---
+title: Microformats Bookmarklet
+date: '2006-10-01 17:45:07'
+published: true
+tags:
+  - bookmarklet
+  - hcal
+  - hcard
+  - microformats
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Microformats Bookmarklet
 
 If you're at all familiar with [Microformats](http://microformats.org), or even just a vCard, then you may well be interested in the bookmarklet I've written.  If not - get reading - interesting stuff (I'm also planning to convert my film reviews to [hReviews](http://microformats.org/wiki/hReview)).  

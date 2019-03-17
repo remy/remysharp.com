@@ -1,3 +1,13 @@
+---
+title: Native Retweets
+date: '2009-11-19 01:40:49'
+published: true
+tags:
+  - api
+  - twitter
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Native Retweets
 
 Users of Twitter created the idiom "RT @suchnsuch said sumfink", and as with @ replies, RT's have been rolled in to Twitter's architecture.  Now we have, what I think should be called, the native retweet.

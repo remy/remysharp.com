@@ -1,3 +1,12 @@
+---
+title: 'VATMOSS: the misunderstanding of "proof"'
+date: '2014-12-30 12:00:00'
+complete: true
+published: true
+tags:
+  - business
+modified: '2014-12-30 10:45:11'
+---
 # VATMOSS: the misunderstanding of "proof"
 
 When you apply EU VAT, you need to be sure of your customer's EU state. Indeed, you'll be asked for **two non-conflicting pieces of proof**. I'm unsure if this is a VATMOSS thing or EU VAT, but it doesn't really matter.

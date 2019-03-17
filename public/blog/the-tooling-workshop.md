@@ -1,3 +1,12 @@
+---
+title: The Tooling Workshop
+date: '2012-07-30 11:26:18'
+published: true
+tags:
+  - fullfrontalconf
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # The Tooling Workshop
 
 I wanted to explain what the tooling workshop is, why I think it's awesome, and therefore why there should be more of these.

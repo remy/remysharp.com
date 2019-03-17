@@ -1,3 +1,11 @@
+---
+title: format-num.js…or ES6!
+date: '2016-12-13 08:09:45'
+modified: '2016-12-13 08:10:15'
+tags:
+  - web
+published: true
+---
 # format-num.js…or ES6!
 
 This is a quick tip post, but there's a tonne of "cool" syntax features in ES6, but when you dig around a little more you'll find a few nicities knocking around (which I tend to find by playing in devtools' console).

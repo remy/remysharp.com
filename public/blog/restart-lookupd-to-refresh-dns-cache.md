@@ -1,3 +1,16 @@
+---
+title: Restart lookupd (to refresh dns cache)
+date: '2007-09-27 17:53:38'
+published: true
+tags:
+  - code
+  - dns
+  - code
+  - lookupd
+  - mac
+  - shell-script
+modified: '2014-11-21 17:20:35'
+---
 # Restart lookupd (to refresh dns cache)
 
     ps ax | grep lookupd | grep -v grep | perl -ne 'split; print $_[0]' | xargs sudo kill -HUP

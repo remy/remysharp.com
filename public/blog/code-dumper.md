@@ -1,3 +1,13 @@
+---
+title: Code Dumper
+date: '2008-05-09 18:35:04'
+published: true
+tags:
+  - code
+  - code
+  - project
+modified: '2014-09-03 16:15:12'
+---
 # Code Dumper
 
 [Code Dumper](http://codedumper.com/ "Code Dumper :: does what it says on the tin") is a personal project of mine that I've used to practise some new skills on.

@@ -1,3 +1,11 @@
+---
+title: 'dub-dub-dub, or: How we pronounce the World Wide Web.'
+date: '2006-09-08 00:52:52'
+published: true
+tags:
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # dub-dub-dub, or: How we pronounce the World Wide Web.
 
 At my office, during some point in 2004 someone got tired of referring to the company web domain as (in phonetics): double-u, double-u, double-u, dot, digital look dot com. So, he slurred the longest part in to 'dub-dub-dub'.

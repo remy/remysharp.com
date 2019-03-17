@@ -1,3 +1,12 @@
+---
+title: The one where we did two days
+date: '2016-11-25 12:18:21'
+modified: '2016-11-25 12:23:55'
+tags:
+  - web
+  - business
+published: true
+---
 # The one where we did two days
 
 The 2016 edition of [ffconf](https://ffconf.org) ran over two days. But it wasn't a two day event, it was a one day event, *run twice*. This was a thing that Julie and I had wanted to do since 2013.

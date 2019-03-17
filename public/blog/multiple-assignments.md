@@ -1,3 +1,12 @@
+---
+image: /images/multiple-assignment.png
+title: Multiple assignments
+date: '2016-12-08 07:58:19'
+modified: '2016-09-05 20:01:19'
+tags:
+  - web
+published: true
+---
 # Multiple assignments
 
 As I slowly join the masses in using ES6 to a fuller extent (than my previous `Promise` only-ES6), I'm discovering new and interesting ways to play with the language. I'm even learning that some stuff just didn't work the way I thought.

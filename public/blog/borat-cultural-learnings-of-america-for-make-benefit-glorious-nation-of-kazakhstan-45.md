@@ -1,3 +1,15 @@
+---
+title: >-
+  Borat: Cultural Learnings of America for Make Benefit Glorious Nation of
+  Kazakhstan (4/5*)
+date: '2006-11-10 00:49:22'
+published: true
+tags:
+  - borat
+  - film
+  - movies
+modified: '2014-09-03 16:15:12'
+---
 # Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan (4/5*)
 
 I hadn't seen [Borat][borat] before, but I knew of him.  I saw [Ali G Indahouse](http://imdb.com/title/tt0284837/) and hadn't seen the TV show and loved it (it's a great hang over film).

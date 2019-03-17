@@ -1,3 +1,11 @@
+---
+title: 'CERN day 5: the end'
+date: '2019-02-18 09:04:59'
+modified: '2019-02-16 12:08:34'
+tags:
+  - personal
+published: true
+---
 # CERN day 5: the end
 
 What a packed week, what an honour and privilege to be part of, and what a superb job we did.

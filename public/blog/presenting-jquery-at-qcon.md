@@ -1,3 +1,15 @@
+---
+title: Presenting jQuery at QCon
+date: '2008-03-13 17:07:59'
+published: true
+tags:
+  - jquery
+  - personal
+  - presentation
+  - qcon
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Presenting jQuery at QCon
 
 Last year I attended my [first conference](http://twitter.com/rem/statuses/252197402), d'Construct 07, and this year, I'm speaking at my first conference.

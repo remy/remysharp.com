@@ -1,3 +1,16 @@
+---
+title: ssh without a password
+date: '2007-01-22 10:49:29'
+published: true
+tags:
+  - web
+  - mac
+  - password
+  - ssh
+  - tips
+  - unix
+modified: '2016-08-04 11:17:36'
+---
 # ssh without a password
 
 I do a lot of work that requires me to log in and out of remote machines using <abbr title="Secure Shell">SSH</abbr>.  As a result, I prefer to configure my laptop (working machine) to SSH without prompting for a password on those machines I **know** to be secure.

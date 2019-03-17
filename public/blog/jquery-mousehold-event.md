@@ -1,3 +1,14 @@
+---
+title: jQuery Mousehold Event
+date: '2006-12-15 19:58:03'
+published: true
+tags:
+  - clickhold
+  - jquery
+  - mousehold
+  - code
+modified: '2014-09-03 16:15:12'
+---
 # jQuery Mousehold Event
 
 I'm working on a web application for [Work](http://www.digitallook.com) and we're working towards recreating an existing desktop application on a web page (don't get me started on that one!).

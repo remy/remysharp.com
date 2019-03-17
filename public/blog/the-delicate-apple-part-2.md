@@ -1,3 +1,14 @@
+---
+title: The Delicate Apple - Part 2
+date: '2006-12-21 14:47:18'
+published: true
+tags:
+  - personal
+  - broken
+  - insurance
+  - powerbook
+modified: '2014-09-10 22:12:43'
+---
 # The Delicate Apple - Part 2
 
 Following on from <a href="http://remysharp.com/2006/12/14/the-delicate-apple/">my accident</a>, I chased and chased last Thursday to find out whether the AA would cover the laptop.

@@ -1,3 +1,18 @@
+---
+title: 'Accessible, degradable style control - part 1'
+date: '2007-02-23 14:17:47'
+published: true
+tags:
+  - accessbility
+  - code
+  - css
+  - degradable
+  - htaccess
+  - javascript
+  - php
+  - style
+modified: '2014-09-03 16:15:12'
+---
 # Accessible, degradable style control - part 1
 
 This the first in a two part tutorial on how to create style control links to your web site to control font sizes and to control style sheets both from JavaScript and with JavaScript disabled browsers.

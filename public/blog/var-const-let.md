@@ -1,3 +1,11 @@
+---
+title: var const let
+date: '2016-08-09 15:14:28'
+modified: '2016-07-23 11:22:00'
+tags:
+  - web
+published: true
+---
 # var const let
 
 As I slowly make my way into the land of ES6 (sure I started mid-2016 when all the cool kids were doing it for years) I've been presented with the problem of: when do you use `const` and when do you use `let` and do I still use `var`.

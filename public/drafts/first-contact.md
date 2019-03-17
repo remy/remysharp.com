@@ -1,3 +1,11 @@
+---
+title: First Contact
+date: '2014-05-05 13:35:13'
+tags:
+  - business
+modified: '2014-05-05 13:35:00'
+draft: true
+---
 # First Contact
 
 I've worked with many clients and managers for well over a decade now and I've seen my fair share of client briefs. What follows is a brief description of what works and what doesn't - and why (for me). Also what you can expect in my response, and why.

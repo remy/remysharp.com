@@ -1,3 +1,13 @@
+---
+title: tracegl for JavaScript debugging
+date: '2013-05-13 10:00:14'
+published: true
+tags:
+  - javascript
+  - node
+  - web
+modified: '2014-11-10 12:16:37'
+---
 # tracegl for JavaScript debugging
 
 In preparing for my new Node workshop (tickets go [on sale Wednesday 10am](https://leftlogic.stagehq.com/events/2287) - set alarm!) my tool of choice *used* to be [node-inspector](https://github.com/dannycoates/node-inspector) but development has gone idle (for a year to date) and it's showing it's age. However, recently I came across [tracegl](http://trace.gl) I was intrigued as it looked to add to my debugging tools for Node.

@@ -1,3 +1,15 @@
+---
+title: Plain and simple
+date: '2007-09-25 16:07:00'
+published: true
+tags:
+  - bookmarklet
+  - css
+  - dconstruct
+  - typography
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Plain and simple
 
 <p><a href="http://cameronmoll.com/" title="Authentic Boredom ~ Delivered weekly by Cameron Moll">Cameron Moll</a> gave <a href="http://cameronmoll.com/speaking/goodgreat/">a presentation</a> at <a href="http://2007.dconstruct.org/" title="dConstruct 2007: User Experience Design Conference">dConstruct 2007</a>.</p>

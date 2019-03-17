@@ -1,3 +1,13 @@
+---
+title: maxlength plugin
+date: '2008-06-30 10:53:44'
+published: true
+tags:
+  - code
+  - jquery
+  - plugin
+modified: '2014-09-03 16:15:12'
+---
 # maxlength plugin
 
 It's a fairly common design pattern to want to limit the number of characters the user can input in a field whilst giving feedback to the user on how much they have left.

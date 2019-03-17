@@ -1,3 +1,13 @@
+---
+title: 40 Mac Tips
+date: '2007-07-12 17:34:08'
+published: true
+tags:
+  - web
+  - mac
+  - tips
+modified: '2014-09-03 16:15:12'
+---
 # 40 Mac Tips
 
 I've been submitting Mac user tips as they come to me via [Twitter/Mac\_Tips](http://twitter.com/mac_tips) - here's the complete list of the 40 tips (all under 140 characters).

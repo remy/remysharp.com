@@ -1,3 +1,11 @@
+---
+title: When github email scope fails
+date: '2017-04-24 07:49:48'
+modified: '2017-03-21 07:07:36'
+tags:
+  - code
+published: true
+---
 # When github email scope fails
 
 I've written many many Node.js applications, and whenever I add Github as the auth process, I find that even though I'm asking for `scope:email` there's often a number of users that end up *without* an email address.

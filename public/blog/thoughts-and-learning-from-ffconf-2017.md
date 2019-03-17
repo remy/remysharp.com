@@ -1,3 +1,12 @@
+---
+title: Thoughts and learning from ffconf 2017
+image: /images/ffconf-2017/day2.jpg
+date: '2017-11-17 14:18:02'
+modified: '2017-11-24 12:22:45'
+tags:
+  - personal
+published: true
+---
 # Thoughts and learning from ffconf 2017
 
 Since running ffconf 2017 last week, and having the unique position of seeing all the [talks twice](https://remysharp.com/2016/04/15/ffconf-2016-news), there's been a whole load of items I'm starting to put into practise, already seeing in my own work, or importantly: want to share a few of these with you.

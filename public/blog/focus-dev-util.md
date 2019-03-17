@@ -1,3 +1,11 @@
+---
+title: Element focus utility
+date: '2014-10-14 13:30:00'
+published: true
+tags:
+  - code
+modified: '2014-10-15 10:16:17'
+---
 # Element focus utility
 
 I've recently been looking at retrofitting keyboard navigation support to JS Bin, but I was immediately struck by the totally lack of visibility on *what* was in focus.

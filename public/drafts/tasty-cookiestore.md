@@ -1,3 +1,12 @@
+---
+title: Tasty CookieStore
+date: '2019-02-01 16:40:40'
+modified: '2019-02-01 16:40:40'
+complete: false
+inprogress: true
+tags:
+  - code
+---
 # Tasty CookieStore
 
 Firstly, I apologise for the awful post title. Still - my excitement about this browser API is disproportionate to how utterly uncool it really is; the cookie browser API got a serious upgrade.

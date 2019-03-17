@@ -1,3 +1,16 @@
+---
+title: Google says 'no'
+date: '2006-12-18 16:37:46'
+published: true
+tags:
+  - badware
+  - block
+  - google
+  - protection
+  - spam
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Google says 'no'
 
 I was browsing around the net looking for something when Google, the true key holder to all doorways, presented me with a page I'd never seen before!

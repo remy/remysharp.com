@@ -1,3 +1,12 @@
+---
+title: Query String Aware JavaScript
+date: '2008-10-03 12:15:01'
+published: true
+tags:
+  - code
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # Query String Aware JavaScript
 
 As developers we know it's useful to read the query string (everything after the '?' in the URL) to allow for customisations.

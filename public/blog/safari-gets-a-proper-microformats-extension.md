@@ -1,3 +1,14 @@
+---
+title: Safari gets a proper Microformats extension
+date: '2007-11-25 12:12:12'
+published: true
+tags:
+  - leopard
+  - microformats
+  - safari
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Safari gets a proper Microformats extension
 
 [Jon Hicks proposed it over a year ago](http://www.hicksdesign.co.uk/journal/a-proposal-for-a-safari-microformats-plugin) and I went ahead and wrote it as a [bookmarklet](http://leftlogic.com/lounge/articles/microformats_bookmarklet).  Finally now, the people who created [Safari Tidy](http://zappatic.net/safaritidy/) (for live xhtml validation), have created a fully integrated [Safari Microformats plugin](http://zappatic.net/safarimicroformats/).

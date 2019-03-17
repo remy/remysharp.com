@@ -1,3 +1,11 @@
+---
+title: CERN day 2
+date: '2019-02-13 10:05:36'
+modified: '2019-02-12 21:40:51'
+tags:
+  - personal
+published: true
+---
 # CERN day 2
 
 Though my body clock says it 7:30pm it feels like it's midnight—it's been a long, busy, interesting and surprisingly productive day.

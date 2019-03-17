@@ -1,3 +1,14 @@
+---
+title: Dynamic favicons
+date: '2010-08-24 13:25:27'
+published: true
+tags:
+  - canvas
+  - code
+  - html5
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # Dynamic favicons
 
 Google Calendar released a new favicon which prompted a few mentions from friends on Twitter. The first, probably more important was from [Cennydd](http://twitter.com/Cennydd/status/21986651336):

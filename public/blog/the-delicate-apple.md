@@ -1,3 +1,16 @@
+---
+title: The Delicate Apple
+date: '2006-12-14 11:34:28'
+published: true
+tags:
+  - aa
+  - apple
+  - dents
+  - mac
+  - powerbook
+  - personal
+modified: '2014-09-10 22:12:32'
+---
 # The Delicate Apple
 
 It's a sad day in the Sharp / Mac camp today. Julie has been driving me to the station each morning since we moved (I'll post about that when I've got the Internet back) - but this morning she had a day off, and rightly I would be walking to the station.

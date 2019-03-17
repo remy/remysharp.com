@@ -1,3 +1,12 @@
+---
+title: What is codecasting?
+date: '2013-11-14 17:59:17'
+published: true
+tags:
+  - jsbin
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # What is codecasting?
 
 Codecasting is the process of recording your coding session, and casting it out to any number of participants, generally in real-time.

@@ -1,3 +1,11 @@
+---
+title: When my SSL is suddenly not secure
+date: '2016-12-04 09:11:41'
+tags:
+  - code
+modified: '2015-06-04 11:51:26'
+published: true
+---
 # When my SSL is suddenly not secure
 
 This has caught me out a couple of times, so it's about time I write it up on my blog so I can *google myself*!

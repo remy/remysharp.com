@@ -1,3 +1,15 @@
+---
+title: Getting CORS Working
+date: '2011-04-21 10:44:47'
+published: true
+tags:
+  - ajax
+  - code
+  - cors
+  - javascript
+  - xhr
+modified: '2015-05-17 09:22:04'
+---
 # Getting CORS Working
 
 Recently I ran a workshop where I ran a small section of the workshop on CORS and how to enable it. In the past, I've found it to be very easy but this time around everything backfired and it didn't work. So after the workshop I went about understanding why the CORS demo it didn't work, and how to get it working.

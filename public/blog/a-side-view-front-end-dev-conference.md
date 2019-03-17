@@ -1,3 +1,13 @@
+---
+title: 'A Side View: front end dev conference'
+date: '2013-10-17 11:00:32'
+published: true
+tags:
+  - business
+  - conference
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # A Side View: front end dev conference
 
 As the curator of [Full Frontal](http://2013.full-frontal.org) I'm extremely proud of our event and it's content, and this year we sold out in 11 minutes. 

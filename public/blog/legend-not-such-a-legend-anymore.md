@@ -1,3 +1,13 @@
+---
+title: Legend not such a legend anymore
+date: '2009-07-31 13:00:24'
+published: true
+tags:
+  - html5
+  - legend
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Legend not such a legend anymore
 
 Lately I decided I was going to recreate the interactive features of the <code>details</code> element using JavaScript (apparently [the same day](http://twitter.com/adactio/status/2869549874) as fellow Brightonian [Jeremy Keith](http://adactio.com/ "Adactio: Jeremy Keith")).

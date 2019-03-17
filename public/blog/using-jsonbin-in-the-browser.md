@@ -1,3 +1,11 @@
+---
+title: Using jsonbin in the browser
+date: '2017-02-24 16:13:38'
+modified: '2017-02-24 16:40:33'
+tags:
+  - web
+published: true
+---
 # Using jsonbin in the browser
 
 Today I pushed a few security tweaks to [jsonbin, the personal RESTful JSON store](https://jsonbin.org) that allow you to use jsonbin directly in the browser…if you so choose.

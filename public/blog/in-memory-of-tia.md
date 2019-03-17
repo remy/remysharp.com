@@ -1,3 +1,12 @@
+---
+title: In memory of Tia
+date: '2011-06-06 13:27:05'
+published: true
+tags:
+  - personal
+  - tia
+modified: '2014-09-03 16:15:12'
+---
 # In memory of Tia
 
 When Tia was born last year, through the pain of losing her, Julie and I promised ourselves that something good must come of this tragedy.

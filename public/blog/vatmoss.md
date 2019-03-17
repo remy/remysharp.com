@@ -1,3 +1,12 @@
+---
+title: VATMOSS
+date: '2014-12-16 11:00:00'
+complete: true
+published: true
+tags:
+  - business
+modified: '2014-12-16 11:44:08'
+---
 # VATMOSS
 
 If you want a good foundation of understand for VATMOSS, then I highly recommend reading [Rachel Andrew's posts](http://rachelandrew.co.uk/archives/tag/vat).

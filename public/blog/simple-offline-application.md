@@ -1,3 +1,13 @@
+---
+title: Simple Offline Application
+date: '2011-01-31 16:18:13'
+published: true
+tags:
+  - code
+  - html5
+  - offline
+modified: '2014-09-18 21:50:34'
+---
 # Simple Offline Application
 
 I've written my fair share of single file applications. All the JavaScript and CSS are inline, and if I'm feeling particularly ninja, I'll base64 encode the images, and make them inline too.

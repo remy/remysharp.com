@@ -1,3 +1,11 @@
+---
+title: Server Side React
+date: '2016-12-07 08:14:58'
+modified: '2017-09-15 12:18:54'
+tags:
+  - web
+published: true
+---
 # Server Side React
 
 Even before I watched Node.js being revealed to the greater world at jsconf.eu 2009, I had been keen to solve the problem of universal JavaScript. That is to say: a single code base that runs both on the server and on the client. I remember tinkering with [Rhino for SS JavaScript](http://ejohn.org/blog/bringing-the-browser-to-the-server/) and [Apatana's Jaxer](http://ajaxian.com/archives/aptana-releases-jaxer-ajax-server-built-on-mozilla), but I didn't get far. Node.js allowed me to flirt with the idea, but I quickly realised that a single code base wasn't quite achievable without a lot of help.

@@ -1,3 +1,13 @@
+---
+title: Your own online video course
+date: '2017-01-31 18:00:23'
+modified: '2017-02-02 15:32:04'
+complete: false
+inprogress: true
+tags:
+  - business
+draft: true
+---
 # Creating your own online training course
 
 You've identified that you've got something unique that you can offer to people, and you want to monetise it. Well, why not? Knowledge has a huge value, and there's always someone out there that can learn from your experience.

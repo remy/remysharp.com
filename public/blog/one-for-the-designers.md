@@ -1,3 +1,13 @@
+---
+title: One for the Designers
+date: '2008-06-09 15:27:06'
+published: true
+tags:
+  - jquery
+  - theme
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # One for the Designers
 
 This one is just for the designers and developer who have the painful task of skinning existing widgets to make them integrate tightly with their applications (or more likely: their employer's app): [ThemeRoller](http://ui.jquery.com/themeroller).

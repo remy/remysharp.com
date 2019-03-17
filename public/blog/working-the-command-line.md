@@ -1,3 +1,12 @@
+---
+title: "\U0001F4D9 Working the Command Line"
+date: '2016-12-09 07:49:29'
+modified: '2017-02-03 13:35:10'
+tags:
+  - web
+  - business
+published: true
+---
 # 📙 Working the Command Line
 
 Huzzah! Yesterday my book, [Working the Command Line](https://abookapart.com/products/working-the-command-line) was published by A Book Apart, and of course I want to tell you all about it!

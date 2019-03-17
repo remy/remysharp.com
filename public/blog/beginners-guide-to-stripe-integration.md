@@ -1,3 +1,11 @@
+---
+title: Beginners guide to Stripe integration
+date: '2016-12-23 08:43:30'
+modified: '2017-05-04 19:08:54'
+tags:
+  - web
+published: true
+---
 # Beginners guide to Stripe integration
 
 I've used Stripe on a number of projects in varying levels of complexity, but if you just want to sell a thing (digital or otherwise), the process is relatively contained, but does require a server side aspect – which I've written up here as a node project.

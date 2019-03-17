@@ -1,3 +1,13 @@
+---
+title: Using watches in my devtools workflow
+date: '2013-11-27 10:00:23'
+published: true
+tags:
+  - code
+  - devtools
+  - workflow
+modified: '2014-09-03 16:15:12'
+---
 # Using watches in my devtools workflow
 
 I've recently found that I'm able to optimise [my workflow](http://remysharp.com/2013/07/18/my-workflow-v3-full-coding-stack/) inside of devtools

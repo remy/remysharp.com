@@ -1,3 +1,12 @@
+---
+title: Muddling my way through real time
+date: '2014-11-10 12:30:00'
+published: true
+tags:
+  - web
+  - html5
+modified: '2014-11-14 12:17:53'
+---
 # Muddling my way through real time
 
 If your business deals with data on the web, then that data must be handled in real time, otherwise you're doing your user a disservice.

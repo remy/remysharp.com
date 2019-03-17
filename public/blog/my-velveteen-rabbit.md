@@ -1,3 +1,11 @@
+---
+title: My  Velveteen Rabbit
+date: '2014-09-24 16:30:00'
+published: true
+tags:
+  - personal
+modified: '2014-10-01 19:38:16'
+---
 # My Velveteen Rabbit
 
 <img src="/images/spring.jpg?" alt="The Velveteen Rabbit" style="display: block; max-width: 100%; width: 40%; margin: 0 auto; margin-right: 20px; float: left;">

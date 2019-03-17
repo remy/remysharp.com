@@ -1,3 +1,11 @@
+---
+title: Optimising a canvas animation
+date: '2015-07-13 07:50:37'
+tags:
+  - code
+published: true
+modified: '2017-08-31 09:57:44'
+---
 # Optimising a canvas animation
 
 I've been working on a small canvas animation for [ffconf 2015](http://2015.ffconf.org) and realised two important optimisations that I've missed out on the past.

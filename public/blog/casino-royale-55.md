@@ -1,3 +1,13 @@
+---
+title: Casino Royale (5/5*)
+date: '2006-12-01 09:47:49'
+published: true
+tags:
+  - films
+  - james-bond
+  - movies
+modified: '2014-09-03 16:15:12'
+---
 # Casino Royale (5/5*)
 
 After a number of years away from our screens Bond returns in the incarnation of the blonde bad ass: [Daniel Criag](dc) (who was equally superb in [Layer Cake](lc)).

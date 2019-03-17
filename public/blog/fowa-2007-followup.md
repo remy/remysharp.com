@@ -1,3 +1,15 @@
+---
+title: FOWA 2007 - followup
+date: '2007-10-06 00:50:15'
+published: true
+tags:
+  - conference
+  - fowa
+  - patration
+  - review
+  - web
+modified: '2014-09-10 22:11:01'
+---
 # FOWA 2007 - followup
 
 The [FOWA](http://www.futureofwebapps.com) conference ran for two days from the 3rd of Oct.  My focus was very much the developer track, though perhaps I'll visit next year and sit on some of the entrepreneur sessions.

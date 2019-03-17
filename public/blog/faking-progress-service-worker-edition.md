@@ -1,3 +1,11 @@
+---
+title: Faking progress (service worker edition)
+date: '2016-12-20 07:53:39'
+modified: '2016-12-18 18:25:30'
+tags:
+  - web
+published: true
+---
 # Faking progress (service worker edition)
 
 Yesterday I showed you how to [faking loading process](/faking-progress-simple-edition) using a small amount of JavaScript and CSS. As a reminder, this is a UI effect that shows a request is loading. However, instead of using the naïve method, this post will talk about how to use Service Workers for the task instead.

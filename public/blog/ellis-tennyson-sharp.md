@@ -1,3 +1,14 @@
+---
+title: Ellis Tennyson Sharp
+date: '2011-10-17 14:00:58'
+published: true
+tags:
+  - ellis
+  - family
+  - personal
+  - tia
+modified: '2014-09-03 16:15:12'
+---
 # Ellis Tennyson Sharp
 
 September 29 2011, at 11:14am Ellis Tennyson Sharp graced us with his arrival and said hello to his mummy and daddy.

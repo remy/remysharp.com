@@ -1,3 +1,13 @@
+---
+title: Maybe the Horse Before the Cart
+date: '2015-01-02 12:00:00'
+complete: false
+inprogress: true
+tags:
+  - web
+modified: '2014-12-29 10:29:34'
+draft: true
+---
 # Maybe the Horse Before the Cart
 
 Or: a server first JavaScript library

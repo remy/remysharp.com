@@ -1,3 +1,11 @@
+---
+title: ffconf 2016 diversity scholarship
+date: '2016-07-06 15:45:50'
+modified: '2016-07-06 15:45:17'
+tags:
+  - web
+published: true
+---
 # Diversity Scholarships 2016
 
 This post outlines the [ffconf 2016](https://2016.ffconf.org) diversity scholarships programme. It's entirely possible that this does not apply to you, my dear reader, but you still have an important role to play: please pass on the message and [this link](http://ffconf.org/scholarship) to help seek those out who can make use of the scholarships.

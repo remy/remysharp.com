@@ -1,3 +1,12 @@
+---
+title: Automatic permalinks for blog posts
+date: '2014-08-08 14:00:38'
+published: true
+tags:
+  - code
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # Automatic permalinks for blog posts
 
 There's been so many times that I've wished I could quickly link to a specific

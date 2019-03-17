@@ -1,3 +1,11 @@
+---
+title: 'Continuous integration with static site generator: Harp.js'
+date: '2014-05-05 12:00:00'
+tags:
+  - code
+modified: '2014-10-04 23:44:57'
+draft: true
+---
 # Continuous integration with static site generator: Harp.js
 
 I've recently been investigating static site generators, and first tried my hand at installing Jekyll and the like but struggled and failed at the initial ruby and related dependencies (not an request for help - I had lots, but thanks). So I looked at Node offerings.

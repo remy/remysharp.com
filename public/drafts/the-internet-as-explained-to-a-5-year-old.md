@@ -1,3 +1,13 @@
+---
+title: The Internet as explained to a 5 year old
+date: '2017-02-22 09:09:42'
+modified: '2017-02-22 09:23:18'
+complete: false
+inprogress: true
+tags:
+  - personal
+draft: true
+---
 # The Internet as explained to a 5 year old
 
 I've tried…and failed a number of times to explain what the internet (and by extension, what I do) to my son. This is the closest I've managed to get, and yes, it's full of holes, but I encourage you to also post your own version ideally on your blog or in the comments.

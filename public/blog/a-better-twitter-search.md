@@ -1,3 +1,15 @@
+---
+title: A better Twitter search
+date: '2009-09-16 13:00:27'
+published: true
+tags:
+  - code
+  - javascript
+  - project
+  - twitter
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # A better Twitter search
 
 If you've not noticed already the search in Twitter has been downgraded to 7 days history.  In fact, that changed some time ago.  I've had the good fortune to be able to ask Twitter employees directly about the history via attending [Devnest](http://twitterdevelopernest.com/) and I've been assured the history is being kept.

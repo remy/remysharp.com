@@ -1,3 +1,13 @@
+---
+title: What I learnt from creating ffconf's quine
+date: '2016-10-06 10:57:44'
+modified: '2016-10-07 11:35:15'
+complete: false
+inprogress: true
+tags:
+  - web
+draft: true
+---
 # What I learnt from creating ffconf's quine
 
 Last year, 2015, at ffconf, I invited [Martin Kleppe](https://twitter.com/aemkei) to speak about his work and art using JavaScript. For his [talk](https://www.youtube.com/watch?v=-QZSJx8oXus&index=7&list=PLXmT1r4krsTqtLdWln2ritJZTjd5a06h2), he touched on some of the quine's that he had created and [made one especially for ffconf](http://aem1k.com/ffconf/).

@@ -1,3 +1,13 @@
+---
+title: The Hack Stops Here
+date: '2007-10-12 13:19:09'
+published: true
+tags:
+  - business
+  - hack
+  - morals
+modified: '2014-09-03 16:15:12'
+---
 # The Hack Stops Here
 
 In my view there are two types of hacks:

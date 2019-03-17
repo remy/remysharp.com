@@ -1,3 +1,16 @@
+---
+title: IE 7 breaks getElementById
+date: '2007-02-10 10:25:08'
+published: true
+tags:
+  - bug
+  - code
+  - getelementbyid
+  - ie
+  - ie6
+  - ie7
+modified: '2014-09-03 16:15:12'
+---
 # IE 7 breaks getElementById
 
 First let me say this took me ages to work out **how** this was going wrong, and that this bug affects **both** IE6 and IE7.

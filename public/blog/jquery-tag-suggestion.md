@@ -1,3 +1,15 @@
+---
+title: jQuery Tag Suggestion
+date: '2007-12-28 13:56:14'
+published: true
+tags:
+  - code
+  - jquery
+  - plugin
+  - project
+  - tagging
+modified: '2016-03-31 20:03:06'
+---
 # jQuery Tag Suggestion
 
 If you're familiar with [del.icio.us](http://del.icio.us/remy.sharp?url=http%3A%2F%2Fremysharp.com%2F&title=remy%20sharp's%20b%3Alog&v=4) you will be familiar with the tag suggesting as-you-type support.

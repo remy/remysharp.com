@@ -1,3 +1,11 @@
+---
+title: Content warnings
+date: '2015-11-27 14:33:38'
+tags:
+  - personal
+published: true
+modified: '2015-11-27 14:34:14'
+---
 # Content warnings
 
 I've recently been giving a talk that starts with a content warning. I wasn't quite sure whether it warranted it, as it's only a brief mention of the potential trigger, but it felt like that was *enough* to justify the warning.

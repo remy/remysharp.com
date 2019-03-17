@@ -1,3 +1,19 @@
+---
+title: LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)
+date: '2007-10-27 02:00:37'
+published: true
+tags:
+  - apache
+  - apple
+  - development
+  - lamp
+  - leopard
+  - osx
+  - tips
+  - tutorial
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)
 
 Following my [how to setup your mac web development environment](http://remysharp.com/2007/01/06/how-to-setup-your-mac-web-development-environment/), and today moving to Leopard, my entire offline environment is broken - this is entirely due to the move from Apache 1.3 to Apache 2.2.

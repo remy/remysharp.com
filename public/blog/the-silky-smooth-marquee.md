@@ -1,3 +1,15 @@
+---
+title: The Silky Smooth Marquee
+date: '2008-09-10 09:55:16'
+published: true
+tags:
+  - code
+  - jquery
+  - marquee
+  - plugin
+  - project
+modified: '2014-09-03 16:15:12'
+---
 # The Silky Smooth Marquee
 
 As we abused the Internet back in the 90 with tags like <code>&lt;blink&gt;</code> and <code>&lt;marquee&gt;</code> the last 10 years have seen the gradual extinction of these proprietary tags until we did full circle and the [marquee effect appears in CSS 3](http://www.w3.org/TR/css3-marquee/).

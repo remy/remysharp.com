@@ -1,3 +1,12 @@
+---
+title: Moment is quickly becoming my new jQuery!
+date: '2015-04-06 14:00:46'
+complete: true
+published: true
+tags:
+  - code
+modified: '2015-05-17 09:22:04'
+---
 # Moment is quickly becoming my new jQuery!
 
 What exactly does that mean? Well, working with the DOM pre-jQuery was a total nightmare of hoop jumping and remembering strange, backward, twisty-hand ways of moving and manipulating the DOM. Back in 2006, you drop in jQuery, and boom, you're done. But, over the years, I could see my jQuery code was getting lazy (and overly heavy handed).

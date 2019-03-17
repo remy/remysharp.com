@@ -1,3 +1,12 @@
+---
+title: Faster tests for multi-node code with ES6 and babel
+date: '2016-05-02 16:00:59'
+image: /images/slow-babel-test.gif
+modified: '2016-05-02 20:18:08'
+tags:
+  - web
+published: true
+---
 # Faster tests for multi-node code with ES6 and Babel
 
 I've spent a lot of time writing CLI tools written in NodeJS ([nodemon](https://github.com/remy/nodemon), [snyk](https://github.com/Snyk/snyk), [inliner](https://github.com/remy/inliner) and [more](https://github.com/remy/clite)) and packages that have to work in multiple versions of node, and thus different support for JavaScript.

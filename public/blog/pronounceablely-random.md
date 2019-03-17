@@ -1,3 +1,14 @@
+---
+title: Pronounceablely Random
+date: '2008-04-14 10:57:12'
+published: true
+tags:
+  - code
+  - code
+  - random
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Pronounceablely Random
 
 If you work in a secure(ish) environment then you'll be changing passwords on a regular basis. An old colleague and I came up with a script that would generate a password based on fictional words from a dictionary lookup.

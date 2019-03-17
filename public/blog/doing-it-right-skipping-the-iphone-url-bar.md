@@ -1,3 +1,14 @@
+---
+title: 'Doing it right: skipping the iPhone url bar'
+date: '2010-08-05 13:57:05'
+published: true
+tags:
+  - apple
+  - code
+  - iphone
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # Doing it right: skipping the iPhone url bar
 
 **Important**: As of iOS7, this technique no longer works (because Apple "fixed" it).

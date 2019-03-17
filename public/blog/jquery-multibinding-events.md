@@ -1,3 +1,13 @@
+---
+title: jQuery multibinding events
+date: '2009-07-08 11:15:12'
+published: true
+tags:
+  - code
+  - jquery
+  - plugin
+modified: '2014-09-03 16:15:12'
+---
 # jQuery multibinding events
 
 Sometimes I find myself using the same event handler for more than one event on an element. Typically I just put the function in the global name space (or perhaps privately within the scope of the ready function depending on how the mood takes me), and then I'll refer to the function twice.  But this feels a bit like duplication.

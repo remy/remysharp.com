@@ -1,3 +1,13 @@
+---
+title: Upgrade to Twitter JavaScript for your blog
+date: '2008-02-26 15:08:08'
+published: true
+tags:
+  - code
+  - javascript
+  - twitter
+modified: '2014-09-03 16:15:12'
+---
 # Upgrade to Twitter JavaScript for your blog
 
 I've been following the [requests](http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/#comments) on the current [Twitter JS plugin](http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/) and decided to implement a few.

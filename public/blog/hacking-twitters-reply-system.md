@@ -1,3 +1,12 @@
+---
+title: Hacking Twitter's reply system
+date: '2010-06-14 12:37:45'
+published: true
+tags:
+  - twitter
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Hacking Twitter's reply system
 
 I'm only writing about this because I still see some tweets coming out of Twitter that are intended for everyone, but end up just going to a select few. This trick is pretty well used, but hopefully it'll help those people who haven't spotted it yet.

@@ -1,3 +1,11 @@
+---
+title: Auto-detect node version in npm start
+date: '2016-12-06 08:28:45'
+modified: '2016-12-06 08:28:32'
+tags:
+  - web
+published: true
+---
 # Auto-detect node version in npm start
 
 I posed myself the question: why isn't `engines.node` used to load the right version of node when I run `npm start`? It's great that this value is used when I'm deploying to a service like Heroku, but I also want to use it locally.

@@ -1,3 +1,13 @@
+---
+title: 'csrf: the service worker challenge'
+date: '2016-07-10 12:24:34'
+modified: '2016-07-10 12:43:47'
+complete: false
+inprogress: true
+tags:
+  - web
+draft: true
+---
 # csrf: the service worker challenge
 
 ## Background: what is csrf?

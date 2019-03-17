@@ -1,3 +1,12 @@
+---
+title: Remote retrospectives with Retrobot
+date: '2016-08-22 15:59:30'
+modified: '2016-08-11 17:29:46'
+tags:
+  - web
+  - business
+published: true
+---
 # Remote retrospectives with Retrobot
 
 At [Snyk](https://snyk.io) the team was partially remote (Tel Aviv, London and Brighton) and we developed over two week sprints with a retrospective at the end.

@@ -1,3 +1,11 @@
+---
+title: When's a static IP not a static IP? When it's with Plusnet
+date: '2006-09-21 12:56:15'
+published: true
+tags:
+  - rants
+modified: '2014-09-10 22:12:28'
+---
 # When's a static IP not a static IP? When it's with Plusnet
 
 When [we](/about) moved back from Canada I went through the usual job of checking out all the best <abbr title="Internet Service Providers">ISP</abbr>s.

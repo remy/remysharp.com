@@ -1,3 +1,12 @@
+---
+title: Trying arc.codes
+date: '2018-03-12 15:59:45'
+modified: '2018-03-28 17:55:01'
+complete: false
+inprogress: true
+tags:
+  - code
+---
 # Trying arc.codes
 
 - The docs are good, but the getting started guide doesn't hold my hand quite as much as I'd like, but Brian's got me with viewsource.codes - a full workshop of material for using Arc, and the [3rd section walks me carefully through](https://viewsource.codes/02-intro-to-web) with what I need to do.

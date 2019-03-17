@@ -1,3 +1,13 @@
+---
+title: 'jQuery *really* :visible'
+date: '2008-10-17 14:42:18'
+published: true
+tags:
+  - code
+  - jquery
+  - selector
+modified: '2014-09-03 16:15:12'
+---
 # jQuery *really* :visible
 
 On a project I worked with [Paul Irish](http://paulirish.com/) on recently we found that we needed to asset whether an element was visible, but the <code>:visible</code> selector doesn't always do the job.

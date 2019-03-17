@@ -1,3 +1,13 @@
+---
+title: 'Opening Windows again (part 2: dev)'
+date: '2018-01-09 10:45:34'
+modified: '2018-01-12 11:15:14'
+complete: false
+inprogress: true
+tags:
+  - code
+draft: true
+---
 # Opening Windows again (part 2: dev)
 
 Problems:

@@ -1,3 +1,13 @@
+---
+title: Living Standard - part 2
+date: '2016-10-10 16:12:07'
+modified: '2016-10-10 17:56:58'
+complete: false
+inprogress: true
+tags:
+  - web
+draft: true
+---
 # Living Standard - part 2: what we can do today
 
 **Today: what we can do, how can we do it, socially and with our work: "How can we keep the web a welcome and open place?"**

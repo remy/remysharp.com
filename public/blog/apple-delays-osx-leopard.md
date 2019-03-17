@@ -1,3 +1,12 @@
+---
+title: Apple Delays OSX Leopard
+date: '2007-04-13 18:38:20'
+published: true
+tags:
+  - apple
+  - leopard
+modified: '2014-09-03 16:15:12'
+---
 # Apple Delays OSX Leopard
 
 Apple has issued a statement saying that Leopard will now be delayed until October this year due to developers being "borrowed" from the OS X team for the development of the iPhone.

@@ -1,3 +1,11 @@
+---
+title: Flickr Geo Tags
+date: '2006-09-01 23:21:51'
+published: true
+tags:
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Flickr Geo Tags
 
 Geotags are the new cool thing on [Flickr][fl] which really lets you see who has taken photos that are just round the corner from you, or see which photos you missed out at that latest holiday.

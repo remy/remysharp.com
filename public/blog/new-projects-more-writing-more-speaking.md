@@ -1,3 +1,14 @@
+---
+title: 'New Projects, more writing & more speaking'
+date: '2009-07-10 13:02:54'
+published: true
+tags:
+  - business
+  - html5
+  - jquery
+  - twitter
+modified: '2014-09-03 16:15:12'
+---
 # New Projects, more writing & more speaking
 
 I wanted to let you know, my dear reader, what I've been up to lately, but more over that I'm going to start cross posting my other articles to this blog.

@@ -1,3 +1,11 @@
+---
+title: Curation all the way
+date: '2018-10-05 14:27:47'
+modified: '2018-10-05 14:26:35'
+tags:
+  - web
+published: true
+---
 # Curation all the way
 
 Curation is massively important to ffconf, and as of last week, ffconf now has a complete line up of speakers and sessions for ffconf v10 in early November.

@@ -1,3 +1,11 @@
+---
+title: How to make a CMS editor more usable
+date: '2007-03-16 01:30:16'
+published: true
+tags:
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # How to make a CMS editor more usable
 
 If you use [TinyMCE](http://tinymce.moxiecode.com/), or any other <abbr title="What you see is what you get">WYSIWYG</abbr> for that matter, to manage the content entry on your <abbr title="Content Managment System">CMS</abbr>, one of the reoccurring problems (I find) is formatting not being applied and blank line breaks when they're not wanted.  

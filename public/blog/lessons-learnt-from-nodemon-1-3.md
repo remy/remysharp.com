@@ -1,3 +1,12 @@
+---
+title: Lessons learnt from nodemon 1.3
+date: '2015-02-02 11:00:00'
+complete: true
+published: true
+tags:
+  - code
+modified: '2015-02-02 10:59:30'
+---
 # Lessons learnt from nodemon 1.3
 
 I recently pushed out an update to [nodemon](https://www.npmjs.org/nodemon) going from 1.2 to 1.3 containing a few new features and insights which I wanted to share here.

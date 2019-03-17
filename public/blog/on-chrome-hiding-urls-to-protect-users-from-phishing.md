@@ -1,3 +1,14 @@
+---
+title: On Chrome hiding URLs to protect users from phishing
+date: '2014-05-04 19:10:46'
+published: true
+tags:
+  - chrome
+  - google
+  - security
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # On Chrome hiding URLs to protect users from phishing
 
 Jake and Jeremy have posted about how chrome is experimenting with a way to protect users from phishing. Jake is pro the approach, Jeremy against. Read their posts: [Jake's](http://jakearchibald.com/2014/improving-the-url-bar/) and [Jeremy's](http://adactio.com/journal/6779/).

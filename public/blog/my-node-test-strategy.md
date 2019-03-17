@@ -1,3 +1,11 @@
+---
+title: My node test strategy
+date: '2015-12-14 15:21:29'
+tags:
+  - code
+published: true
+modified: '2017-02-04 18:00:14'
+---
 # My node test strategy
 
 Historically testing has been far far down on my list of priorities. However that's been slowly changing over the last 3-4 years, and now I have a fairly solid and systematic method to testing.

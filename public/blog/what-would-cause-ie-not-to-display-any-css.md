@@ -1,3 +1,11 @@
+---
+title: What would cause IE not to display any CSS?
+date: '2006-12-31 16:53:25'
+published: true
+tags:
+  - code
+modified: '2016-12-20 11:56:30'
+---
 # What would cause IE not to display any CSS?
 
 During some recent browser testing for a web site I'm building, I was faced with <abbr title="Internet Explorer">IE</abbr> stripping all the CSS out of my site.

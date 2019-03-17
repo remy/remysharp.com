@@ -1,3 +1,11 @@
+---
+title: 'In the detail: close button'
+date: '2016-12-10 10:30:50'
+modified: '2016-08-07 13:47:52'
+tags:
+  - web
+published: true
+---
 # In the detail: close button
 
 Lately I've been making a slew of changes to [JS Bin](https://jsbin.com) to provide mobile support, and due to the natrue of the work, I've had to switch between desktop (or "wide" view), emulator (via devtools) and real device. I've learnt loads of little tips which I'll share here.

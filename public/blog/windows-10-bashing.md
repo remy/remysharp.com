@@ -1,3 +1,11 @@
+---
+title: Windows 10 BASHing
+date: '2017-06-26 12:55:52'
+modified: '2017-06-26 12:55:10'
+tags:
+  - code
+published: true
+---
 # Windows 10 BASHing
 
 It's a play on term, *bash*, because I'm trying out Window 10's Ubuntu BASH subsystem. Get it? Geddit? Anyway. I'm trying out some new development on Windows 10 and I wanted to write up some of my experience here.

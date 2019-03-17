@@ -1,3 +1,13 @@
+---
+title: Safari 3.1 web developer functionality
+date: '2008-03-18 17:19:44'
+published: true
+tags:
+  - apple
+  - safari
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Safari 3.1 web developer functionality
 
 I've just upgraded to Safari 3.1 and I'm trying to catalogue the list of available functionality.

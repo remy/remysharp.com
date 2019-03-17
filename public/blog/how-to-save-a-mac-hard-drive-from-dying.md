@@ -1,3 +1,15 @@
+---
+title: How to save a Mac hard drive from dying
+date: '2006-09-27 20:14:13'
+published: true
+tags:
+  - code
+  - apple
+  - fix
+  - itunes
+  - mac
+modified: '2014-09-18 15:07:21'
+---
 # How to save a Mac hard drive from dying
 
 Recently [Apple](http://www.apple.com) brought out the latest update to iTunes - with the promise of [cool features](/2006/09/12/itunes-first-look/): cover flow, gapless playback and other bits and bobs.

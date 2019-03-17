@@ -1,3 +1,14 @@
+---
+title: What is Silverback?
+date: '2008-05-23 15:27:47'
+published: true
+tags:
+  - app-tag
+  - mac
+  - silverback
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # What is Silverback?
 
 I received a beta invite today to test out the [Silverback](http://silverbackapp.com) app from [Clearleft](http://clearleft.com).  Somehow chosen out of a hat (I know can't be true, because I could never fit in a normal sized hat...unless perhaps if it were a really stretchy beanie...I digress), I've now given it a play and sent my testing feedback.

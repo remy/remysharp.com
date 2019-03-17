@@ -1,3 +1,13 @@
+---
+title: 'Development Trick: auto-updating & auto-reloading'
+date: '2012-06-16 14:39:00'
+published: true
+tags:
+  - code
+  - git
+  - node
+modified: '2014-09-03 16:15:12'
+---
 # Development Trick: auto-updating & auto-reloading
 
 For the upgrade of JS Bin to [version 3](http://jsbin.com/3/) (an open beta), the whole code base is in the process of [being rewritten to run as a Node.js](https://github.com/remy/jsbin/tree/feature/node) process (whilst still working as a PHP application).

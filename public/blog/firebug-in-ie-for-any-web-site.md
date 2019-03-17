@@ -1,3 +1,14 @@
+---
+title: Firebug in IE for *any* web site
+date: '2007-03-13 15:41:18'
+published: true
+tags:
+  - bookmarklet
+  - firebug
+  - ie
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Firebug in IE for *any* web site
 
 As a web developer, I'm constantly using [Firebug](http://getfirebug.com), but when it comes to testing in <abbr title="Internet Explorer">IE</abbr> it's a nightmare if there's any bugs.

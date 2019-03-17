@@ -1,3 +1,13 @@
+---
+title: Screencasting
+date: '2008-06-17 13:57:54'
+published: true
+tags:
+  - screencast
+  - tips
+  - web
+modified: '2014-09-10 22:12:49'
+---
 # Screencasting
 
 I've been doing screencasts for [jQuery for designers](http://jqueryfordesigners.com) for almost 6 months now, and I'm a big fan of peer learning/teaching - which I hope to achieve through screencasts.

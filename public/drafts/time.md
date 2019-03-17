@@ -1,3 +1,13 @@
+---
+title: Time
+date: '2016-12-02 12:36:21'
+modified: '2016-12-03 09:36:50'
+complete: true
+inprogress: false
+tags:
+  - personal
+draft: true
+---
 # Time
 
 I lay in bed last night thinking through line from a film I'd seen earlier that day. A question.

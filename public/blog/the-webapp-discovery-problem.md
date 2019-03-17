@@ -1,3 +1,11 @@
+---
+title: The web app "discovery problem"
+date: '2016-04-11 14:36:32'
+modified: '2016-04-11 21:49:10'
+tags:
+  - web
+published: true
+---
 # The Web App "discovery problem"
 
 With the formalisation of [progressive web apps](https://developers.google.com/web/progressive-web-apps?hl=en) (and their associated APIs and technology), there's been huge progress with respect to realising the [real potential of a web app](https://remysharp.com/2014/10/06/what-is-a-web-app#web-app) but there's still a few hurdles that will need to be solved in the future. One hurdle in particular that has come up in a number of posts I've read recently is: **discovery**.

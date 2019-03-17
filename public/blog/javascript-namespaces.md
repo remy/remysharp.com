@@ -1,3 +1,13 @@
+---
+title: JavaScript namespaces
+date: '2008-02-04 14:41:21'
+published: true
+tags:
+  - code
+  - javascript
+  - namespace
+modified: '2015-08-31 10:40:38'
+---
 # JavaScript namespaces
 
 Based on the [Prototype](http://prototypejs.org) [namespacing made easy](http://thinkweb2.com/projects/prototype/namespacing-made-easy/), except this doesn't require Prototype.

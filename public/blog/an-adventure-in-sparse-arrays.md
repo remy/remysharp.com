@@ -1,3 +1,12 @@
+---
+title: An adventure in sparse arrays
+image: /images/adventures-in-arrays.png
+date: '2018-06-26 14:28:42'
+modified: '2018-06-26 13:12:47'
+tags:
+  - code
+published: true
+---
 # An adventure in sparse arrays
 
 I offered to coach JavaScript recently, and an exercise I dreamt up was to implement every array (prototype) method, and write tests that they work.

@@ -1,3 +1,15 @@
+---
+title: CORS isn't just for XHR
+date: '2013-01-14 12:00:50'
+published: true
+tags:
+  - ajax
+  - cors
+  - html5
+  - javascript
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # CORS isn't just for XHR
 
 Cross Origin Resource Sharing (CORS) is what allows XHR (i.e. Ajax) requests to go cross domain. It's a simple header response to the XHR request that says "yes, you can complete your request", looking like this (if we allowed any client to place an XHR request against our service):

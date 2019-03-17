@@ -1,3 +1,11 @@
+---
+title: I thought paypal was better...
+date: '2015-08-10 12:59:58'
+tags:
+  - web
+published: true
+modified: '2015-08-11 19:23:55'
+---
 # I thought paypal was better...
 
 We've been using PayPal for [ffconf](http://ffconf.org) since 2009. The first year it took the full 6 months of sale to sell ~200 tickets. In 2010 it took 3 months to sell 283 tickets. 2011, 4 days - and that was the first of the trouble. 2012 to 2015, it's taken under 10 minutes.

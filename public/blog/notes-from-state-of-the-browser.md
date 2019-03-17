@@ -1,3 +1,11 @@
+---
+title: Notes from State of the Browser
+date: '2012-04-28 12:57:00'
+published: true
+tags:
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Notes from State of the Browser
 
 Notes/live blog from [The State of the Browser](http://browser.londonwebstandards.org/) - unedited!

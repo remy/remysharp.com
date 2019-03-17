@@ -1,3 +1,13 @@
+---
+title: 'Fancy 5,000 cans of beer?'
+date: '2007-10-24 17:13:26'
+published: true
+tags:
+  - adsa
+  - funny
+  - personal
+modified: '2014-09-10 22:11:56'
+---
 # Fancy 5,000 cans of beer?
 
 ASDA is well known in the UK as the penny saver, but this offer really takes the biscuit.

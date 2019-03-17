@@ -1,3 +1,15 @@
+---
+title: How to detect if a font is installed (only using JavaScript)
+date: '2008-07-08 17:06:57'
+published: true
+tags:
+  - code
+  - css
+  - fonts
+  - javascript
+  - project
+modified: '2014-09-03 16:15:12'
+---
 # How to detect if a font is installed (only using JavaScript)
 
 In the pursuit of an idea I had recently, one tiny feature of the web site would be to detect whether the user had X font installed.

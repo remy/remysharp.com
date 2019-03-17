@@ -1,3 +1,14 @@
+---
+title: Custom URL schemes in PhoneGap
+date: '2010-10-01 12:00:15'
+published: true
+tags:
+  - code
+  - ios
+  - javascript
+  - phonegap
+modified: '2014-09-03 16:15:12'
+---
 # Custom URL schemes in PhoneGap
 
 With [Marbles2](http://marbles2.com) for iOS I wanted people to be able to click on a url, like [http://marbles2.com/app/?seed=2A72367A](http://marbles2.com/app/?seed=2A72367A) and if the app is installed on the iOS device, for it to launch Marbles2 and initialise with the "seed" passed in.

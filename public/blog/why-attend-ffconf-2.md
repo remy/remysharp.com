@@ -1,3 +1,11 @@
+---
+title: 'Why attend ffconf #2: CSSnext'
+date: '2016-09-12 12:17:09'
+modified: '2016-09-12 12:17:37'
+tags:
+  - business
+published: true
+---
 # Reasons to attend ffconf #2: CSS-next!
 
 [ffconf](https://ffconf.org) is created and run by myself and [Julie](https://twitter.com/julieanne), and my most important job is to curate very best content for the year. Each year is a challenge, but as the year progresses, I ask myself: what's important to the web, the way we work and how can we improve?

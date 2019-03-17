@@ -1,3 +1,12 @@
+---
+image: /images/devtools-copy-response.jpg
+title: A debugging thought process
+date: '2016-04-04 16:01:44'
+modified: '2016-04-02 19:51:29'
+tags:
+  - web
+published: true
+---
 # A debugging thought process
 
 I'm the type of developer that enjoys little problems. The other day [Una Kravets](https://twitter.com/una) posted a call for help on twitter (with a rather compelling reward), and I had a few minutes before meeting so I set to work.

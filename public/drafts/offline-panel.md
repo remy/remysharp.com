@@ -1,3 +1,11 @@
+---
+title: Offline Panel
+date: '2013-09-27 12:00:00'
+tags:
+  - web
+modified: '2013-09-27 17:28:42'
+draft: true
+---
 # Offline
 
 Watched http://youtu.be/qwywMlGE0vY

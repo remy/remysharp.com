@@ -1,3 +1,12 @@
+---
+title: Manual Aspire
+date: '2018-06-19 15:21:07'
+modified: '2018-06-18 21:25:12'
+image: /images/speccy-manual/speccy-manual-cover.jpg
+tags:
+  - code
+published: true
+---
 # Manual Aspire
 
 As part of my research for the [talk I gave at jsconf.eu 2018](https://2018.jsconf.eu/speakers/remy-sharp-using-a-modern-web-to-recreate-1980s-horribly-slow-and-loud-loading-screens.html), I bought a ZX Spectrum 48K. I purchased the machine from eBay, but it was indeed an original 1980's Spectrum with a few internals cleaned up.

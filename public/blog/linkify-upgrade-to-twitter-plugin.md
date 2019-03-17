@@ -1,3 +1,13 @@
+---
+title: Linkify + upgrade to twitter plugin
+date: '2007-06-04 14:35:57'
+published: true
+tags:
+  - code
+  - javascript
+  - twitter
+modified: '2014-09-03 16:15:12'
+---
 # Linkify + upgrade to twitter plugin
 
 The [twitter plugin](http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/) has just been upgraded to (optionally) search for links in the twitter text and activate them as link.

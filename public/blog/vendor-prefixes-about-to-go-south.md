@@ -1,3 +1,13 @@
+---
+title: Vendor Prefixes - about to go south
+date: '2012-02-09 12:00:38'
+published: true
+tags:
+  - css
+  - rants
+  - web
+modified: '2018-08-24 13:09:33'
+---
 # Vendor Prefixes - about to go south
 
 We do like vendor prefixes. They give us access to bleeding edge CSS properties, and make our sites look cool. But there's a serious problem: non-webkit vendors are giving serious consideration to implementing the `-webkit` prefix to a number of CSS properties.

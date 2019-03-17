@@ -1,3 +1,11 @@
+---
+title: What is a "Web App"?
+date: '2014-10-06 16:00:00'
+published: true
+tags:
+  - web
+modified: '2014-10-06 16:49:30'
+---
 # What is a "Web App"?
 
 In technology definitions are important. We talk in a language that's mostly made up by our own industry.

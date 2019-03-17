@@ -1,3 +1,13 @@
+---
+title: Twitter Upgrades via Greasemonkey
+date: '2008-09-19 11:00:49'
+published: true
+tags:
+  - greasemonkey
+  - twitter
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Twitter Upgrades via Greasemonkey
 
 Quickly following on from my greasemonkey script yesterday, [Josh Russell](http://www.joshrussell.com), local Brightonite, [updated](http://www.joshrussell.com/2008/07/18/we-added-search-to-twitter/) his (and [Dave's](http://builtbydave.co.uk/) Twitter search script.

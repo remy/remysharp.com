@@ -1,3 +1,12 @@
+---
+title: "✂\U0001F4CB How I copy & paste in the terminal"
+date: '2018-04-25 09:28:35'
+image: /images/copy-paste-bash.png
+modified: '2017-04-10 22:22:54'
+tags:
+  - code
+published: true
+---
 # ✂📋How I copy and paste in the terminal
 
 I use the terminal a *lot* and aliases are a great way to both personalise my command line experience, but also to make some tasks a little easier (and sometimes, smarter 😎).

@@ -1,3 +1,11 @@
+---
+title: Reducing my CPU load from 95% to 20%
+date: '2015-06-16 22:04:43'
+tags:
+  - code
+published: true
+modified: '2015-06-17 15:53:11'
+---
 # How I reduced CPU load from 95% to 20%
 
 I've recently released a number of changes to JS Bin after I started to tinker (again) with Service Worker support in JS Bin (no, there's nothing there right now). However, since the release on Saturday, the CPU has been steadily sitting at 95% - which is dangerously close to the [502](https://jsbin.com/test/error/502)-o-death page.

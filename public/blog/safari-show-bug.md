@@ -1,3 +1,13 @@
+---
+title: Safari show bug
+date: '2008-09-03 09:33:01'
+published: true
+tags:
+  - bug
+  - code
+  - safari
+modified: '2014-09-03 16:15:12'
+---
 # Safari show bug
 
 This is probably the first time I've come across a bug in Safari that's comparable in bizarreness to IE bugs.

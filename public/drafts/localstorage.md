@@ -1,3 +1,11 @@
+---
+title: Proposal for Async Web Storage API
+date: '2013-09-23 12:00:00'
+tags:
+  - code
+modified: '2013-09-23 20:54:38'
+draft: true
+---
 # Proposal for Async Web Storage API
 
 Web Storage implementations `localStorage` and `sessionStorage` have, in the

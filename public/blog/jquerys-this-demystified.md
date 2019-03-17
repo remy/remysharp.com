@@ -1,3 +1,16 @@
+---
+title: 'jQuery''s this: demystified'
+date: '2007-04-12 09:41:00'
+published: true
+tags:
+  - explanation
+  - guide
+  - javascript
+  - jquery
+  - this
+  - code
+modified: '2015-08-31 10:41:19'
+---
 # jQuery's this: demystified
 
 More often that not, in my early dabbling with [jQuery](http://jquery.com) and more advanced JavaScript, I found I would constantly get confused over the meaning of "this" in jQuery and my own new libraries.

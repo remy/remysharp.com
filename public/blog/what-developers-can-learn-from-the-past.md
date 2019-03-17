@@ -1,3 +1,11 @@
+---
+title: What developers can learn from the past
+date: '2016-06-29 14:53:04'
+tags:
+  - web
+modified: '2016-06-29 15:16:22'
+published: true
+---
 # What developers can learn from the past
 
 I was asked, amongst many others, "what can developers learn from the past" by [.net magazine](http://www.creativebloq.com/web-design/what-can-web-designers-learn-past-41514659) some months ago. Alas, my response was way, way over budget, so I've posted it here in it complete form.

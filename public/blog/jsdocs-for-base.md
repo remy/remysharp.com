@@ -1,3 +1,14 @@
+---
+title: JSDocs for Base
+date: '2008-01-08 04:07:39'
+published: true
+tags:
+  - base
+  - code
+  - javascript
+  - jsdocs
+modified: '2014-09-03 16:15:12'
+---
 # JSDocs for Base
 
 In an effort to create better documentation, we've introduced inline documentation to our JavaScript at the office.

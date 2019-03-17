@@ -1,3 +1,12 @@
+---
+title: Big Three Oh - happy birthday to me!
+date: '2008-09-13 07:18:59'
+published: true
+tags:
+  - birthday
+  - personal
+modified: '2014-09-03 16:15:12'
+---
 # Big Three Oh - happy birthday to me!
 
 I turned 30 years old, much to the dismay of my *real world* colleagues - who still think I'm 17! Perhaps if I shave my beard off...

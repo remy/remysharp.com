@@ -1,3 +1,11 @@
+---
+title: My NHS Story
+date: '2018-07-31 16:00:00'
+tags:
+  - personal
+published: true
+modified: '2018-08-05 22:28:53'
+---
 # My NHS Story
 
 Today I realised that it was the end of the month and my two blog post a month, self imposed quota was going to fail.

@@ -1,3 +1,13 @@
+---
+title: Full Frontal JavaScript 2009
+date: '2009-11-26 17:16:53'
+published: true
+tags:
+  - business
+  - conference
+  - fullfrontal09
+modified: '2014-09-10 22:13:08'
+---
 # Full Frontal JavaScript 2009
 
 Last Friday I saw through the very first [Full Frontal JavaScript conference](http://full-frontal.org). An idea that was born back on a snowy day in February, with me complaining there was no conferences dedicated to JavaScript (anymore) and [my wife, Julie](http://www.flickr.com/photos/remysharp/4124570521/in/set-72157622854415414/) telling simply replying with *let's do it* (it helps that by day she's an events organiser).

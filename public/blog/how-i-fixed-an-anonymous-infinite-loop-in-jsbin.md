@@ -1,3 +1,13 @@
+---
+title: How I fixed an anonymous infinite loop in jsbin
+date: '2013-09-11 12:16:37'
+published: true
+tags:
+  - code
+  - javascript
+  - node
+modified: '2014-09-04 13:27:13'
+---
 # How I fixed an anonymous infinite loop in jsbin
 
 If you're a frequent user of jsbin, you might have noticed that on the odd

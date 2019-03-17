@@ -1,3 +1,12 @@
+---
+title: Paste emails straight in to Mail
+date: '2007-11-06 16:59:00'
+published: true
+tags:
+  - apple
+  - mail
+modified: '2014-09-03 16:15:12'
+---
 # Paste emails straight in to Mail
 
 I'm running Mail 3 on Leopard, and all my accounts are <abbr title="Internet Message Access Protocol">IMAP</abbr>, I just found something that surprised me (it could well have been there all the while).

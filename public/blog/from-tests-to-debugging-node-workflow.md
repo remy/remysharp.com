@@ -1,3 +1,12 @@
+---
+title: 'From tests to debugging: node workflow'
+date: '2016-03-01 15:55:06'
+image: /images/devtool-for-node.png
+tags:
+  - code
+published: true
+modified: '2016-04-28 18:19:28'
+---
 # From tests to debugging: node workflow
 
 I've written recently about my [test strategy](/my-node-test-strategy), [fixtures](/fixing-fixtures) and how I'm [using tap](/testing-tape-vs-tap). In this post, I wanted to show how I go further with the tests and get right into the code to debug in real-time.

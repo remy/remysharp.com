@@ -1,3 +1,14 @@
+---
+title: How to fake an apache request
+date: '2007-01-25 15:20:22'
+published: true
+tags:
+  - code
+  - mod-perl
+  - perl
+  - tips
+modified: '2014-09-03 16:15:12'
+---
 # How to fake an apache request
 
 I wrote a little tool to help me command line test URLs in my mod\_perl dev environment.  It lets me pass ful URLs + query strings via the command line, and see, or more importantly, debug the output.

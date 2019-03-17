@@ -1,3 +1,12 @@
+---
+title: Trailing white space in TextMate
+date: '2008-03-30 16:20:39'
+published: true
+tags:
+  - code
+  - textmate
+modified: '2014-09-03 16:15:12'
+---
 # Trailing white space in TextMate
 
 Trailing white space in TextMate has been bugging the hell out of me in recently, until [Dominic Mitchell](http://happygiraffe.net/blog/) [bookmarked](http://del.icio.us/network/remy.sharp/) this [awesome tip](http://lukewarmtapioca.com/2008/3/26/trailing-whitespace-in-textmate).

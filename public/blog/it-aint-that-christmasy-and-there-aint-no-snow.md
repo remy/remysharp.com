@@ -1,3 +1,17 @@
+---
+title: It ain't that Christmasy and there ain't no snow
+date: '2007-12-06 03:15:24'
+published: true
+tags:
+  - christmas
+  - last-fm
+  - lastfm
+  - personal
+  - warchild
+  - xmas
+  - xmaschartattack
+modified: '2014-09-03 16:15:12'
+---
 # It ain't that Christmasy and there ain't no snow
 
 Year after year, here in the UK, we have the same usual rubbish for Christmas songs.  We had [Mr Blobby](http://en.wikipedia.org/wiki/Mr_Blobby) as No. 1 back in 1993 and [Bob the Builder](http://www.bobthebuilder.com/ "Bob the Builder") in 2000 even made it the poll position.

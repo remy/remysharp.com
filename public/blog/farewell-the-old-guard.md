@@ -1,3 +1,11 @@
+---
+title: Farewell the Old Guard
+date: '2007-03-01 01:48:57'
+published: true
+tags:
+  - personal
+modified: '2014-09-03 16:15:12'
+---
 # Farewell the Old Guard
 
 I remember, back in 2000, I think, while I was away for maybe my first snowboarding holiday, upon my return, I found my desk (...and my email) had been in constant use.

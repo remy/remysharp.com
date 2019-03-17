@@ -1,3 +1,16 @@
+---
+title: iPod Touch Bookmarklets & Microformats
+date: '2007-11-06 19:13:30'
+published: true
+tags:
+  - apple
+  - bookmarklet
+  - ipod
+  - ipodtouch
+  - javascript
+  - microformats
+modified: '2014-09-03 16:15:12'
+---
 # iPod Touch Bookmarklets & Microformats
 
 Although this is should be obvious, since the iPod Touch comes with Safari, I've found to my pleasure: you can run bookmarklets through Safari (mobile).

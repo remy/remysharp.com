@@ -1,3 +1,14 @@
+---
+title: Signs of a poorly written jQuery plugin
+date: '2010-06-03 13:27:24'
+published: true
+tags:
+  - jquery
+  - plugin
+  - code
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Signs of a poorly written jQuery plugin
 
 So far with every single workshop I've given, both for advanced JavaScript and jQuery for Designers, this question (or some variation thereof) has come up:

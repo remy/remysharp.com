@@ -1,3 +1,13 @@
+---
+title: The Last Kiss (3/5*)
+date: '2006-11-02 10:32:42'
+published: true
+tags:
+  - film
+  - movies
+  - zack-braff
+modified: '2014-09-03 16:15:12'
+---
 # The Last Kiss (3/5*)
 
 Finally, they've made a film about *that* grey area.

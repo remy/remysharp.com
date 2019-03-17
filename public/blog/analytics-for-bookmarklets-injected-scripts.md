@@ -1,3 +1,13 @@
+---
+title: Analytics for Bookmarklets & Injected Scripts
+date: '2009-02-27 08:40:22'
+published: true
+tags:
+  - code
+  - google
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # Analytics for Bookmarklets & Injected Scripts
 
 Lately I've been working on a number of different pure JavaScript projects ranging from widgets that are injected, bookmarklets and include scripts ([red your site](http://redyoursite.com/) for example).

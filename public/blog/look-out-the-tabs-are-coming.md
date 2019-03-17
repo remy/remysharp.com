@@ -1,3 +1,11 @@
+---
+title: 'Look out, the tabs are coming'
+date: '2006-09-04 13:21:11'
+published: true
+tags:
+  - apple
+modified: '2014-09-18 15:08:59'
+---
 # Look out, the tabs are coming
 
 Steve Jobs announced Leopard will be available in spring 2007 and then handed out developer pre-release OS 10.5 to the developers attending the <abbr title="World Wide Developers Conference">WWDC</abbr>.

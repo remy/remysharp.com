@@ -1,3 +1,12 @@
+---
+title: Our Christmas Films List
+date: '2010-11-29 12:56:44'
+published: true
+tags:
+  - christmas
+  - personal
+modified: '2018-12-18 09:17:55'
+---
 # Our Christmas Films List
 
 Each year, since 2006, Julie and I have planned a Christmas movie day, where we

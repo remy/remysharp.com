@@ -1,3 +1,13 @@
+---
+title: 'How to add Twitter to your blog, without it hanging your site'
+date: '2007-03-20 16:44:11'
+published: true
+tags:
+  - web
+  - tips
+  - twitter
+modified: '2014-09-03 16:15:12'
+---
 # How to add Twitter to your blog, without it hanging your site
 
 <img alt="Twitter logo" src="http://remysharp.com/wp-content/uploads/2007/03/twitter_logo.png" style="float: right; padding: 0 0 5px 5px;" />

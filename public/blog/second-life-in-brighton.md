@@ -1,3 +1,13 @@
+---
+title: Second Life in Brighton
+date: '2007-04-05 13:01:16'
+published: true
+tags:
+  - brighton
+  - personal
+  - second-life
+modified: '2016-12-22 15:55:35'
+---
 # Second Life in Brighton
 
 [Second Life](http://secondlife.com) are setting up UK development offices in Brighton and [looking for new staff](http://www.wiredsussex.com/news/0703/linden.asp).

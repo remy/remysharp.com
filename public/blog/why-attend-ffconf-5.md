@@ -1,3 +1,12 @@
+---
+title: 'Why Attend ffconf #5: emoji'
+date: '2016-10-03 08:30:45'
+modified: '2016-09-30 12:52:55'
+tags:
+  - web
+  - business
+published: true
+---
 # Why Attend ffconf #5: emoji
 
 I remember during the late 90s a [series of books](https://nan-mccarthy.com/books/chat/) coming out that was written entirely in email transcripts between two people. The covers of each were an emoticon.

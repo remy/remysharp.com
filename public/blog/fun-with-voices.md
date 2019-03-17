@@ -1,3 +1,16 @@
+---
+title: Fun with voices
+date: '2006-10-13 12:52:34'
+published: true
+tags:
+  - app-tag
+  - apple
+  - dream-app
+  - personal
+  - mac
+  - voice-candy
+modified: '2014-09-03 16:15:12'
+---
 # Fun with voices
 
 I've just done my voting for [My Dream App](http://mydreamapp.com/) ([Cookbook](http://mydreamapp.com/contestants/view/michaelyuan/) by the way - really want to get my hands on it!) and each week of voting there's a free app to be downloaded.

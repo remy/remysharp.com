@@ -1,3 +1,16 @@
+---
+title: Twitpic API for getting pictures out
+date: '2009-07-20 16:55:52'
+published: true
+tags:
+  - api
+  - javascript
+  - json
+  - project
+  - twitter
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Twitpic API for getting pictures out
 
 I've been using [Twitpic](http://twitpic.com/photos/rem) either via [TwitterFon](http://twitterfon.net/ "TwitterFon - Simple, Clean, and Fast Twitter Client for iPhone and iPod Touch") on my iPhone or [Tweetie](http://www.atebits.com/tweetie-mac/) from my desktop for [Twitter](http://twitter.com/rem), but one thing struck me last night: [Twitpic doesn't allow me to get my content back out](http://twitter.com/rem/status/2725763132).

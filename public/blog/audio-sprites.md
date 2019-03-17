@@ -1,3 +1,15 @@
+---
+title: Audio Sprites (and fixes for iOS)
+date: '2010-12-23 15:03:48'
+published: true
+tags:
+  - audio
+  - code
+  - html5
+  - ios
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # Audio Sprites (and fixes for iOS)
 
 I recently had to work on a project for iOS that required that sound play on particular actions being performed. The problem is that iOS and HTML5 has been seriously oversold by Apple and the devices are pretty poor in comparison to the desktop. Audio and video are particularly poor, so to solve my problem I used an audio sprite, a technique that was similar to CSS sprites, just for audio.

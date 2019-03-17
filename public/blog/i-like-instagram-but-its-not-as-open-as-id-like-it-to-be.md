@@ -1,3 +1,14 @@
+---
+title: 'I like Instagram, but it''s not as open as I''d like it to be'
+date: '2011-12-10 13:35:53'
+published: true
+tags:
+  - flickr
+  - instagram
+  - web
+  - webhooks
+modified: '2014-09-03 16:15:12'
+---
 # I like Instagram, but it's not as open as I'd like it to be
 
 So here's how I got around that, and how I'm using Instagram today.

@@ -1,3 +1,12 @@
+---
+title: I'm a web developer. Not an engineer.
+date: '2015-02-26 11:00:00'
+inprogress: true
+published: true
+tags:
+  - web
+modified: '2015-02-26 19:09:30'
+---
 # I am a web developer. Not an engineer.
 
 > Something I’m starting to realise and accept for myself: I’m a web developer. Not an engineer. Mostly an approach & understanding difference

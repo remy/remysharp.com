@@ -1,3 +1,11 @@
+---
+title: 'Sticky headers (#1/3)'
+date: '2017-06-28 20:00:10'
+modified: '2017-06-29 14:38:49'
+tags:
+  - web
+published: true
+---
 # Sticky headers (part 1/3)
 
 I have mixed feelings about sticky headers on web pages, but it annoys me more when the implementation causes scroll jank or contributes to it.

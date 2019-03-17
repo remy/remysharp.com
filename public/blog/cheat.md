@@ -1,3 +1,11 @@
+---
+title: 'Hack failing: cheat'
+date: '2014-01-27 14:00:45'
+published: true
+tags:
+  - personal
+modified: '2016-04-10 19:31:55'
+---
 # Hack failing: cheat
 
 It's January and it's likely you've got a New Year's resolution burning away. Forming new habits takes [66 days](http://www.telegraph.co.uk/health/healthnews/5857845/It-takes-66-days-to-form-a-habit.html). Whether it's a diet change, lifestyle change, starting a podcast, diary, blog, photo journal or some other goal. 66 days is a long time to do something that is different from your normal routine.

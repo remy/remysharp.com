@@ -1,3 +1,12 @@
+---
+title: Merry Chrimbo to all!
+date: '2007-12-26 16:27:38'
+published: true
+tags:
+  - christmas
+  - personal
+modified: '2014-09-03 16:15:12'
+---
 # Merry Chrimbo to all!
 
 I hope Santa brought you everything you wished for (including receipts) and the wine and cheese was flowing accordingly.

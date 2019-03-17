@@ -1,3 +1,14 @@
+---
+title: Last.fm Recent Album Artwork Plugin
+date: '2007-07-26 00:41:40'
+published: true
+tags:
+  - code
+  - last-fm
+  - plugin
+  - wordpress
+modified: '2014-09-03 16:15:12'
+---
 # Last.fm Recent Album Artwork Plugin
 
 My blog is now running a WordPress plugin that shows the album covers from [Last.fm](http://last.fm) of songs I've recently listened to.  There's a lot of plugins [out there](http://www.google.com/search?q=wordpress+recent+album+plugin), but none that I found that did the job of getting the artwork, and certainly not for the most recent albums.

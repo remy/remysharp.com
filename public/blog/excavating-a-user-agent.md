@@ -1,3 +1,11 @@
+---
+title: Excavating a user agent
+date: '2019-03-04 12:53:05'
+modified: '2019-03-01 21:41:38'
+tags:
+  - web
+published: true
+---
 # Excavating a user agent
 
 _Warning: this is a tale of geek's own adventure into the dark depths of old webby stuff that really doesn't work well!_

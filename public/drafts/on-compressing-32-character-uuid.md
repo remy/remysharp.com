@@ -1,3 +1,13 @@
+---
+title: On compressing 32 character uuid
+date: '2017-10-16 19:51:57'
+modified: '2017-10-16 21:03:57'
+complete: false
+inprogress: true
+tags:
+  - code
+draft: true
+---
 # On compressing 32 character UUID
 
 TL;DR: I did a bunch of tests to see if I could compress a 32 character UUID down. I managed to half the length, but really it was utterly pointless, and ultimately due to the context: it really didn't make things easier.

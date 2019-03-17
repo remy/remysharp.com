@@ -1,3 +1,11 @@
+---
+title: ffconf 2016 news
+date: '2016-04-15 13:32:07'
+tags:
+  - business
+modified: '2016-04-30 14:16:40'
+published: true
+---
 # ffconf 2016 news
 
 During March, Julie and I started long talks about November's ffconf (already)! So it's time to share our plans with you, since it affects you directly!

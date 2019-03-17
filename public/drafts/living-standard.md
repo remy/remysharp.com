@@ -1,3 +1,14 @@
+---
+title: Living Standard
+date: '2016-04-11 21:37:18'
+modified: '2016-10-10 13:12:20'
+complete: false
+inprogress: true
+tags:
+  - web
+  - personal
+draft: true
+---
 # Living standard
 
 The web is a beautiful place. On the face of it: open to all. Complicated and yet still simple. Why do I still so strongly believe in the web? How can we help to keep the web a welcome and open place? What's different today that makes the web so much more exciting than ever?

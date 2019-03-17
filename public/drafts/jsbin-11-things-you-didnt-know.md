@@ -1,3 +1,12 @@
+---
+title: 11 things you didn't know JS Bin could do
+date: '2014-08-05 12:00:00'
+complete: true
+tags:
+  - web
+modified: '2014-08-05 11:12:21'
+draft: true
+---
 # 11 things you didn't know JS Bin could do
 
 1. Live preview in multiple browsers at once

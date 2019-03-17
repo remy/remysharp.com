@@ -1,3 +1,13 @@
+---
+title: The bane of build tools
+date: '2016-09-17 12:39:01'
+modified: '2016-09-21 15:10:37'
+complete: false
+inprogress: true
+tags:
+  - web
+draft: true
+---
 # The bane of build tools
 
 Okay, so "bane" might be a bit strong, but I've always worked hard to steer clear of build tools and I wanted to share why. Then, perhaps, how.

@@ -1,3 +1,12 @@
+---
+title: $ in code examples
+image: /images/dollar-in-code.png
+date: '2017-03-27 11:35:57'
+modified: '2017-03-27 11:31:56'
+tags:
+  - code
+published: true
+---
 # $ in code examples
 
 My blog includes a lot of code examples throughout the many blog posts I have, and I'm a big proponent of copy & paste code examples, i.e. if I can make it easy to copy, I want it to work when it's pasted.

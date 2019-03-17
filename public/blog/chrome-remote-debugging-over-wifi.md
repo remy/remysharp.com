@@ -1,3 +1,11 @@
+---
+title: Chrome remote debugging over wifi
+date: '2016-12-17 08:09:26'
+tags:
+  - web
+modified: '2017-02-04 17:59:24'
+published: true
+---
 # Chrome remote debugging over wifi
 
 I'm a big user of Chrome devtools, and it's a core part of my [web dev workflow](https://remysharp.com/search?q=workflow). I've also started looking at [service worker](https://remysharp.com/2016/03/22/the-copy--paste-guide-to-your-first-service-worker) support *and* 'add to home screen' in some of my projects and there's a few bits that I need to test directly on the device.

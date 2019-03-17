@@ -1,3 +1,14 @@
+---
+title: The Future of JavaScript Libraries
+date: '2008-10-27 13:07:48'
+published: true
+tags:
+  - code
+  - jquery
+  - library
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # The Future of JavaScript Libraries
 
 Libraries have been a huge contributor to the surge in popularity of JavaScript in the last few years. JavaScript developers have had the cumbersome tasks lifted and have been able to get back to business in developing interesting solutions to interesting problems.

@@ -1,3 +1,13 @@
+---
+title: It's not 800x600
+date: '2008-05-20 11:08:31'
+published: true
+tags:
+  - css
+  - design
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # It's not 800x600
 
 This is something that I've been include in my personal projects for some time now, but it's come up again for a client, so I thought I'd share:

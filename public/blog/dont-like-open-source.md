@@ -1,3 +1,11 @@
+---
+title: '"Why I don''t like open source" – my thoughts'
+date: '2015-01-09 12:30:00'
+published: true
+tags:
+  - web
+modified: '2015-01-13 15:28:39'
+---
 # "Why I don't like open source" – my thoughts
 
 This morning's walk was accompanied by [Tiago Rodrigues](https://twitter.com/trodrigues) (excellent) curation and commentary on [Adam Yeats](https://twitter.com/adamyeats) tweets on open source and (mostly) [James Seymour-Lock](https://twitter.com/JamesSLock)'s replies.

@@ -1,3 +1,15 @@
+---
+title: Thousand separator regex
+date: '2007-10-19 12:18:46'
+published: true
+tags:
+  - code
+  - format
+  - formatting
+  - number
+  - thousand
+modified: '2014-09-03 16:15:12'
+---
 # Thousand separator regex
 
     s/\d{1,3}(?=(\d{3})+(?!\d))/$&,/g

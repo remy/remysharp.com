@@ -1,3 +1,13 @@
+---
+title: Recreating the ZX Spectrum loader
+date: '2017-06-12 11:21:05'
+modified: '2017-06-15 11:34:16'
+complete: false
+inprogress: true
+tags:
+  - web
+draft: true
+---
 # Recreating the ZX Spectrum loader
 
 Around the late 90s I bought mini digital camera, and digital camera prices were starting to be much more affordable to consumers.

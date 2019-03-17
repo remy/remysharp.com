@@ -1,3 +1,13 @@
+---
+title: The Black Dahlia (4/5*)
+date: '2006-09-20 02:13:38'
+published: true
+tags:
+  - movie
+  - movies
+  - palma
+modified: '2014-09-03 16:15:12'
+---
 # The Black Dahlia (4/5*)
 
 [Brian De Palma](http://imdb.com/name/nm0000361/) directs [another American period](http://imdb.com/title/tt0094226/) film that flows with lush sets, and equally lush actors.

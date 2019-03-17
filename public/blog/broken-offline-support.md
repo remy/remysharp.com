@@ -1,3 +1,15 @@
+---
+title: Broken Offline Support
+date: '2011-04-19 19:07:20'
+published: true
+tags:
+  - code
+  - html5
+  - javascript
+  - offline
+  - rants
+modified: '2016-09-30 12:21:09'
+---
 # Broken Offline Support
 
 The state of offline detection in desktop browsers is broken and it needs to fixed or at least get better, but I can't see this happening unless we push against the browser vendors to fix this.

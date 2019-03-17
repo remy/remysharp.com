@@ -1,3 +1,11 @@
+---
+title: ffconf 2016 CFP
+date: '2016-04-25 15:49:59'
+modified: '2016-04-27 12:02:48'
+tags:
+  - business
+published: true
+---
 # ffconf 2016 CFP
 
 [ffconf 2016](https://2016.ffconf.org) is running on two dates: 10th and 11th November (that's right: twice) and this post includes the details for the Call For Proposals (CFP). The conference itself takes place at the [Duke of Yorks](https://www.flickr.com/groups/fullfrontalconf/pool/) in Brighton, UK.

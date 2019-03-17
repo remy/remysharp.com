@@ -1,3 +1,11 @@
+---
+title: When helpful turns into super bad security!
+date: '2018-07-25 19:36:31'
+modified: '2018-07-25 15:06:54'
+tags:
+  - code
+published: true
+---
 # When helpful turns into super bad security!
 
 A shortish post partly to point out a bad…no, _terrible_ practise, and in part to remind myself to never do this again!

@@ -1,3 +1,13 @@
+---
+title: Win a ticket for the Full Frontal JavaScript Conference
+date: '2009-08-19 13:10:28'
+published: true
+tags:
+  - business
+  - conference
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # Win a ticket for the Full Frontal JavaScript Conference
 
 I recently released [a way to enter to win a ticket](https://twitter.com/fullfrontalconf/status/3226112563) for [Full Frontal](http://full-frontal.org), but I'm particularly guilty of only sending things through [Twitter](http://twitter.com) lately, and I know [not everyone uses Twitter](http://www.brucelawson.co.uk/2009/html-5-doctor-sitepoint-article/) (see dull meta), so I need to make sure I'm not ignoring my *regular* readers: you!

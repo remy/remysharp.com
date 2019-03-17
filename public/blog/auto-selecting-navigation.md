@@ -1,3 +1,11 @@
+---
+title: Auto-selecting navigation
+date: '2006-06-17 14:00:52'
+published: true
+tags:
+  - code
+modified: '2015-05-17 09:22:04'
+---
 # Auto-selecting navigation
 
 This article offers an alternative to the laborious task of coding up which `<li>` or `<a>` navigation tags need the 'selected' class (or however you concoct the solution).

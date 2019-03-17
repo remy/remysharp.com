@@ -1,3 +1,9 @@
+---
+title: What went in to remote-tilt.com
+date: '2012-02-01 17:27:11'
+modified: '2012-02-01 17:27:00'
+draft: true
+---
 # What went in to remote-tilt.com
 
 Last week I felt that there was no simple way to test device motion events without *actually* developing on a mobile device: not fun. Since these are *just* events, I knew I could create a polyfill to replicate these events allowing me to test in my development environment.

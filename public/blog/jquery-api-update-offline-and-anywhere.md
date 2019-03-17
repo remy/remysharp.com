@@ -1,3 +1,13 @@
+---
+title: 'jQuery API Update: offline and anywhere'
+date: '2008-07-04 16:32:19'
+published: true
+tags:
+  - api
+  - code
+  - jquery
+modified: '2014-09-03 16:15:12'
+---
 # jQuery API Update: offline and anywhere
 
 I've been beavering away at the API behind the scenes for a little while, and if you follow me on [Twitter](http://twitter.com/rem) you've probably already seen the [API browser](http://remysharp.com/jquery-api/) has already been upgraded.

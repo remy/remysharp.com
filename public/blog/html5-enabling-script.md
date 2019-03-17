@@ -1,3 +1,14 @@
+---
+title: HTML5 enabling script
+date: '2009-01-07 13:49:54'
+published: true
+tags:
+  - code
+  - html
+  - html5
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # HTML5 enabling script
 
 Since HTML5 is getting [more](http://www.brucelawson.co.uk/tests/html5-elements.html) [attention](http://adactio.com/journal/1540/) by way of marking up our new pages, and the only way to get IE to acknowledge the new elements, such as <code>&lt;article&gt;</code>, is to use the [HTML5 shiv](http://ejohn.org/blog/html5-shiv/), I've quickly put together a mini script that enables *all* the new elements.

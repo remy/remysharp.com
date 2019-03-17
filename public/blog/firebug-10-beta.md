@@ -1,3 +1,17 @@
+---
+title: Firebug 1.0 beta
+date: '2006-12-30 12:37:04'
+published: true
+tags:
+  - css
+  - debug
+  - development
+  - firebug
+  - firefox
+  - javascript
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Firebug 1.0 beta
 
 [<img src="http://remysharp.com/wp-content/uploads/2006/12/firebug_logo.jpg" alt="Firebug logo" title="Firebug logo" style="float: left; padding: 0 10px 10px 0; border: 0;" />](http://www.getfirebug.com)[Firebug 1.0 beta](http://www.getfirebug.com/blog/2006/12/04/firebug-10-news/) for [Firefox](http://www.mozilla.com/en-US/firefox/) was released this month, and oh my, the Swiss Army knife of the browsers just got wings - and there's even support (via a [Firebug Lite](http://www.getfirebug.com/lite.html)) for IE, Safari and Opera.

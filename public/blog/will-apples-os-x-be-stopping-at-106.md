@@ -1,3 +1,15 @@
+---
+title: Will Apple's OS X be stopping at 10.6?
+date: '2007-01-08 22:19:19'
+published: true
+tags:
+  - apple
+  - fun
+  - leopard
+  - mac
+  - tiger
+modified: '2014-09-18 15:08:58'
+---
 # Will Apple's OS X be stopping at 10.6?
 
 Being a bit of a Mac fan, I casually mentioned to my wife the upcoming (and generally eagerly awaited) [Macworld conference](http://www.macworldexpo.com/live/20/events/20SFO07A/keynotes).  I then went on to mention that I'll be buying [Leopard](http://www.apple.com/macosx/leopard/index.html) when it comes out.

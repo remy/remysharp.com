@@ -1,3 +1,11 @@
+---
+title: Git push to live
+date: '2014-05-30 13:00:13'
+tags:
+  - web
+modified: '2014-05-30 13:00:00'
+draft: true
+---
 # Git push to live
 
 This post is for the copy and pasters out there just wanting something that'll do the trick. I'm going to walk through a process that gives you *continuous integration*, which simply means: when you `git push` your code goes live. And yeah, it's pretty magical when it works.

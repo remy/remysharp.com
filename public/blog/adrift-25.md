@@ -1,3 +1,11 @@
+---
+title: Adrift (2/5*)
+date: '2006-09-04 23:56:28'
+published: true
+tags:
+  - movies
+modified: '2014-09-03 16:15:12'
+---
 # Adrift (2/5*)
 
 Adrift is about 4 young friends who, after 5 years apart, meet up for a birthday cruise on a big ass yacht.

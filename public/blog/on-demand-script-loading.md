@@ -1,3 +1,15 @@
+---
+title: On Demand Script Loading
+date: '2007-11-14 11:26:21'
+published: true
+tags:
+  - blocking
+  - code
+  - external
+  - javascript
+  - wait
+modified: '2014-09-03 16:15:12'
+---
 # On Demand Script Loading
 
 This code will return true while it's waiting to load the external script - and if called again (i.e. at a later date or if you've got an excited user) will know that the script has already been loaded.

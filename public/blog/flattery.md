@@ -1,3 +1,13 @@
+---
+title: Flattery
+date: '2006-11-01 16:45:44'
+published: true
+tags:
+  - jquery
+  - microformats
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Flattery
 
 This last week has been a long a painful one - but no one really wants to read about me moaning about long hours.

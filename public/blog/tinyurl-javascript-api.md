@@ -1,3 +1,16 @@
+---
+title: TinyURL JavaScript API
+date: '2007-03-27 15:46:28'
+published: true
+tags:
+  - api
+  - code
+  - javascript
+  - project
+  - tinyurl
+  - tool
+modified: '2014-09-03 16:15:12'
+---
 # TinyURL JavaScript API
 
 I've been writing a bookmarklet for [Twitter](http://twitter.com/rem) that will allow you to post URLs to Twitter, that are first compressed using [TinyURL](http://tinyurl.com).

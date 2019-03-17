@@ -1,3 +1,14 @@
+---
+title: Universal launch images with PhoneGap
+date: '2010-08-30 12:00:21'
+published: true
+tags:
+  - code
+  - ios
+  - javascript
+  - phonegap
+modified: '2014-09-03 16:15:12'
+---
 # Universal launch images with PhoneGap
 
 I've been playing with PhoneGap a lot recently, in part to prepare [Marbles2](http://marbles2.com), but also to bring [JS Console](http://jsconsole.com) to the iPhone as a native app. I've always wanted to create an app that worked on all devices, but getting the launch image correct for each device can be tricky.

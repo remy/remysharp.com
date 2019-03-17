@@ -1,3 +1,13 @@
+---
+title: Should I add another dependency?
+image: /images/should-i-install.jpg
+date: '2019-02-01 14:02:48'
+modified: '2019-02-01 09:41:26'
+tags:
+  - code
+  - web
+published: true
+---
 
 # Should I add another dependency?
 

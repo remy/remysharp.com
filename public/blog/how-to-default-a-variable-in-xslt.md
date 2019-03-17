@@ -1,3 +1,14 @@
+---
+title: How to default a variable in XSLT
+date: '2008-08-15 20:58:18'
+published: true
+tags:
+  - code
+  - code
+  - xml
+  - xslt
+modified: '2014-09-03 16:15:12'
+---
 # How to default a variable in XSLT
 
 Since I couldn't find this anywhere on the web, and I'm working on a project that has had me *very* quickly learn XSLT, here's how to default a value in XSLT - useful if you're looking to grab a variable via the query string, and it may not be there in the first place.

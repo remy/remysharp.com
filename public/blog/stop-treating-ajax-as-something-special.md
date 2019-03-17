@@ -1,3 +1,13 @@
+---
+title: Stop treating Ajax as something special
+date: '2008-12-12 10:50:03'
+published: true
+tags:
+  - ajax
+  - code
+  - hack
+modified: '2014-09-03 16:15:12'
+---
 # Stop treating Ajax as something special
 
 Everyone wants slick applications that use Ajax to reduce page loads and make it feel, well, more application-ny.  Of course this is all done in a progressively enhanced way, so the page works just as well without JavaScript.

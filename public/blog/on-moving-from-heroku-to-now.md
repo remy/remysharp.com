@@ -1,3 +1,11 @@
+---
+title: On moving from Heroku to now
+date: '2016-12-14 08:12:45'
+modified: '2017-02-04 18:00:21'
+tags:
+  - web
+published: true
+---
 # On moving from Heroku to now
 
 I use Heroku for a lot of my quick projects and a number of sites that need (in my view) to be online indefinitely (this [blog](https://remysharp.com), my business [Left Logic](https://leftlogic.com) and all the [ffconf](https://ffconf.org) sites).

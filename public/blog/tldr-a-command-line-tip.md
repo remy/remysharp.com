@@ -1,3 +1,11 @@
+---
+title: 'tldr: a command line tip'
+date: '2017-11-26 11:39:11'
+modified: '2017-11-26 11:41:27'
+tags:
+  - code
+published: true
+---
 # tldr: a command line tip
 
 Happy weekend: I wanted to share this pretty neat command line tool I came

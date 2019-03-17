@@ -1,3 +1,13 @@
+---
+title: TypedArrays
+date: '2017-10-13 15:35:24'
+modified: '2017-12-30 16:10:36'
+complete: false
+inprogress: true
+tags:
+  - code
+draft: true
+---
 # Arrays and Typed Arrays
 
 Typed arrays arrived in JavaScript some time ago but until recently I hadn't really had much cause to play around with them. However, with a few recent projects, I've had the pleasure of deep diving my learning on typed arrays, how they work and what they're for.

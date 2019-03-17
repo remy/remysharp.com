@@ -1,3 +1,14 @@
+---
+title: Auto-populating Select Boxes using jQuery & AJAX
+date: '2007-01-20 01:08:36'
+published: true
+tags:
+  - ajax
+  - jquery
+  - select-boxes
+  - code
+modified: '2017-03-26 21:37:55'
+---
 # Auto-populating Select Boxes using jQuery & AJAX
 
 <div class="update">

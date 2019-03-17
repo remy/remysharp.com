@@ -1,3 +1,12 @@
+---
+title: Sentence case
+date: '2018-12-06 15:03:38'
+modified: '2018-12-07 14:53:30'
+complete: false
+inprogress: true
+tags:
+  - code
+---
 # Sentence case
 
 A collection of ways that I can go from `number` to `Number` in the hope to a) stop reinventing the wheel and b) see how many ways I can skin this problem.

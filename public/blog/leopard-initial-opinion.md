@@ -1,3 +1,14 @@
+---
+title: Leopard - initial opinion
+date: '2007-10-27 13:02:24'
+published: true
+tags:
+  - apple
+  - leopard
+  - mac
+  - opinion
+modified: '2014-09-03 16:15:12'
+---
 # Leopard - initial opinion
 
 Among thousands and thousands of other Mac lovers out there, I too purchased my copy of Leopard for it to arrive on Friday.  The ride wasn't as smooth as I expected, and there were some roller coaster moments.  There's also a few small things that don't work as expected, and there's a few gems that are unexpected.

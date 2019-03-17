@@ -1,3 +1,11 @@
+---
+title: 'CSS sticky nav & smooth scroll (#3/3)'
+date: '2017-06-29 17:30:59'
+modified: '2017-06-28 17:56:51'
+tags:
+  - code
+published: true
+---
 # CSS only sticky nav and smooth scroll (part 3/3)
 
 In the last 2 posts, I wrote about best practises around handling scroll events and then how to combine a sticky nav with smooth scrolling. Both solutions required JavaScript, but there's solutions right around the corner that allows us to do away with all the JavaScript and let the browser do all the work with a few directions from CSS.

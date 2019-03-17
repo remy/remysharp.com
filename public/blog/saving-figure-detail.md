@@ -1,3 +1,13 @@
+---
+title: Saving Figure & Detail
+date: '2009-08-12 11:18:35'
+published: true
+tags:
+  - html5
+  - legend
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Saving Figure & Detail
 
 In finding that the <code>legend</code> element [simply doesn't work](http://remysharp.com/2009/07/31/legend-not-such-a-legend-anymore/) inside both <code>details</code> and <code>figure</code>, myself [and](http://adactio.com) [others](http://brucelawson.co.uk) been keen to find a solution.

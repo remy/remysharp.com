@@ -1,3 +1,15 @@
+---
+title: Rimshot with HTML5
+date: '2009-07-06 09:41:49'
+published: true
+tags:
+  - bookmarklet
+  - fun
+  - html5
+  - javascript
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Rimshot with HTML5
 
 A little while ago I was involved in a conversation with someone about being able to have a button on your computer to trigger a rimshot noise, or a 'wah-wah-wahhh' (yes, of course I was <em>in</em> a pub).

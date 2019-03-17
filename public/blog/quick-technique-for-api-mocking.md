@@ -1,3 +1,11 @@
+---
+title: Quick technique for API mocking
+date: '2015-05-18 13:00:00'
+tags:
+  - code
+published: true
+modified: '2015-05-17 11:53:54'
+---
 # Quick technique for API mocking
 
 During server software development (i.e. node) I always strive to work offline, in that my development workflow doesn't depend on any online services.

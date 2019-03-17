@@ -1,3 +1,12 @@
+---
+title: You'd be six this week
+date: '2016-08-27 18:47:13'
+modified: '2016-08-28 11:13:22'
+image: /images/lego-six.jpg
+tags:
+  - personal
+published: true
+---
 # You'd be six this week
 
 You'd be six this week. August hasn't been nearly as painful as it has been in the previous years. But my brain is a total fog. I feel numb and muggy.

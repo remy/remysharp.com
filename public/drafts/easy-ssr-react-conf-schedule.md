@@ -1,3 +1,13 @@
+---
+title: (Easy) SSR React conf schedule
+date: '2017-09-27 09:23:21'
+modified: '2017-09-27 14:52:01'
+complete: false
+inprogress: true
+tags:
+  - code
+draft: true
+---
 # (Easy) SSR React conference schedule
 
 In a bid to get you thinking about server side (JavaScript) rendering, I'm running a workshop on Next.js which doesn't just make SSR easy, but it just works out of the box. Though, that said, it all depends on your requirements - and those requirements, I'm sure, can be met, but the "just works out of the box" has varying mileage!

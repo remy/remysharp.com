@@ -1,3 +1,15 @@
+---
+title: When links in ULs don't work in IE
+date: '2007-05-23 08:48:49'
+published: true
+tags:
+  - bug
+  - css
+  - ie
+  - ie7
+  - code
+modified: '2014-09-03 16:15:12'
+---
 # When links in ULs don't work in IE
 
 In redesigning my business web site: [Left Logic](http://leftlogic.com) I came across a particularly frustrating bug that took me a good deal of time to find the source of.  Since I couldn't find any info out it on the Internet, I thought it would be worth posting.

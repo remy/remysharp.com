@@ -1,3 +1,14 @@
+---
+title: What is a Polyfill?
+date: '2010-10-08 12:55:09'
+published: true
+tags:
+  - browsers
+  - code
+  - html5
+  - web
+modified: '2015-01-02 16:15:37'
+---
 # What is a Polyfill?
 
 A polyfill, or polyfiller, is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide *natively*. Flattening the API landscape if you will.

@@ -1,3 +1,11 @@
+---
+title: 'Testing: tape vs. tap'
+date: '2016-02-08 16:14:47'
+tags:
+  - code
+published: true
+modified: '2016-02-08 07:46:16'
+---
 # Testing: tape vs. tap
 
 I recently wrote about my [node test strategy](https://remysharp.com/2015/12/14/my-node-test-strategy) and in particular talked about using [tape](https://npmjs.org/tape) as my test runner and piping to [tap-spec](https://www.npmjs.com/package/tap-spec).

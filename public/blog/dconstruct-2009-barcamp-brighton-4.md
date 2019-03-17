@@ -1,3 +1,14 @@
+---
+title: dConstruct 2009 & Barcamp Brighton 4
+date: '2009-09-07 15:50:35'
+published: true
+tags:
+  - conference
+  - jquery
+  - talks
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # dConstruct 2009 & Barcamp Brighton 4
 
 This last week has been a huge social/talky/knowledge festival for me. It comprised of [dConstruct 2009](http://2009.dconstruct.org/ "dConstruct 2009") and my first attendance at any barcamp: [Barcamp Brighton 4](http://www.barcampbrighton.org/ "BarCampBrighton &#8211; 5th &amp; 6th September 2009").

@@ -1,3 +1,14 @@
+---
+title: In the middle with <center>
+date: '2014-08-15 14:38:14'
+published: true
+tags:
+  - code
+  - html
+  - html5
+  - troll
+modified: '2014-09-03 16:15:12'
+---
 # In the middle with <center>
 
 I posted a [tweet](https://twitter.com/rem/status/499629513983406080) recently that confused some people. They might have thought I was trolling or being sarcastic!

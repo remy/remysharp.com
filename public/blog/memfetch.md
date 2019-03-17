@@ -1,3 +1,11 @@
+---
+title: memfetch
+date: '2018-12-24 13:08:56'
+modified: '2018-12-23 08:48:30'
+tags:
+  - code
+published: true
+---
 # memfetch
 
 The web API `fetch` is superbly simple (compared to its predecessor: `XMLHttpRequest`) but during development there's always a few concerns I have when making fetch requests: hitting 3rd party request limits, latency (since I want dev to be rapid) and the potential of going offline (aka: developing on trains).

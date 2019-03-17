@@ -1,3 +1,13 @@
+---
+title: jQuery workshop and Node workshop (in trouble?)
+date: '2013-07-05 09:30:14'
+published: true
+tags:
+  - business
+  - conference
+  - workshop
+modified: '2014-09-03 16:15:12'
+---
 # jQuery workshop and Node workshop (in trouble?)
 
 In two weeks, 18th & 19 July, I aim to run two very separate workshops for two very separate audiences, but the honest truth is ticket sales have been extremely slow and I've got to start considering the chopping block.

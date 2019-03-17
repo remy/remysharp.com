@@ -1,3 +1,14 @@
+---
+title: Feature based development
+date: '2014-03-17 17:14:35'
+published: true
+tags:
+  - code
+  - javascript
+  - node
+  - project
+modified: '2014-09-18 08:17:52'
+---
 # Feature based development
 
 Recently we changed the way we were working on JS Bin. Instead of pushing new

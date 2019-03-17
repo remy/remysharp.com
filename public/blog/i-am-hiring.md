@@ -1,3 +1,12 @@
+---
+title: I am hiring
+date: '2013-09-24 14:23:06'
+published: true
+tags:
+  - business
+  - project
+modified: '2014-09-03 16:15:12'
+---
 # I am hiring
 
 My small company, [Left Logic](http://leftlogic.com) is now actively hiring.

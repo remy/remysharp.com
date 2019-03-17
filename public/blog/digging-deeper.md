@@ -1,3 +1,12 @@
+---
+title: Digging Deeper
+date: '2017-07-19 14:07:50'
+image: /images/dig-deeper.jpg
+modified: '2017-07-19 14:06:06'
+tags:
+  - personal
+published: true
+---
 # Digging Deeper
 
 By tomorrow, my conference, ffconf, will have launched it tickets and there will be a mass rush to guarantee a seat on the day. We're doing the "run twice" thing again this year, and so I know we won't fully sell out right away.

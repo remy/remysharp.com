@@ -1,3 +1,13 @@
+---
+title: Living Standard - part 3
+date: '2016-10-10 18:00:39'
+modified: '2016-10-11 13:59:11'
+complete: false
+inprogress: true
+tags:
+  - web
+draft: true
+---
 # Living Standard - part 3
 
 **Why am I excited about the web and the future?**

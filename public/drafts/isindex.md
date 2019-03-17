@@ -1,3 +1,13 @@
+---
+title: ISINDEX
+date: '2019-02-21 17:37:23'
+modified: '2019-02-21 17:37:23'
+complete: false
+inprogress: true
+tags:
+  - web
+  - code
+---
 # isindex…?
 
 In our crusade to recreate the [world's first browser](https://worldwideweb.cern.ch/) the question of how search came up.

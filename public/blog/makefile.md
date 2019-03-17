@@ -1,3 +1,13 @@
+---
+title: Makefile instead of hoop jumping
+date: '2014-12-02 10:00:00'
+complete: true
+inprogress: true
+published: true
+tags:
+  - code
+modified: '2014-12-03 21:57:23'
+---
 # Makefile instead of hoop jumping
 
 In 2012 I ran a Build Process workshop as part of [ffconf tooling tutorials](http://2012.ffconf.org/#tooling). Early on as part of my workshop introduction I said that makefiles were hard and for harden unix beared folk...or something. Grunt (and the like) were definitely a gentler solution.

@@ -1,3 +1,13 @@
+---
+title: My five promise patterns
+date: '2014-11-19 12:00:00'
+published: true
+complete: true
+inprogress: false
+tags:
+  - code
+modified: '2014-11-20 07:53:57'
+---
 # My five promise patterns
 
 I've been getting big into promises over the last year. I think the two best resources that I've learnt from today is Forbes Lindesay's [talk at JSConf.EU 2013](https://www.youtube.com/watch?v=qbKWsbJ76-s) and Jake Archibald's excellent [promise article on html5rocks](http://www.html5rocks.com/en/tutorials/es6/promises/).

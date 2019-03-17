@@ -1,3 +1,13 @@
+---
+title: Next.js prefetch & testing (fix)
+date: '2017-07-11 16:24:30'
+modified: '2017-07-11 21:08:43'
+complete: false
+inprogress: true
+tags:
+  - code
+draft: true
+---
 # Next.js prefetch & testing (fix)
 
 Super specific blog post title, I know, but I ran into a problem during a [Next.js](https://github.com/zeit/next.js) project development that has yet to be solved, so it was worth me posting here for future reference.

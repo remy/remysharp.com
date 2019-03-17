@@ -1,3 +1,12 @@
+---
+title: I'd like to send you to the Bacon conference
+date: '2013-03-22 16:06:13'
+published: true
+tags:
+  - conference
+  - web
+modified: '2014-11-10 12:15:15'
+---
 # I'd like to send you to the Bacon conference
 
 The folks at Mint Digital made this video (below) to convince me to send my devs to [Bacon](http://devslovebacon.com/) - the developer conference. Unfortunately none of us can make it. I'll admit that I'd really like to go along, so this kind of sucks.

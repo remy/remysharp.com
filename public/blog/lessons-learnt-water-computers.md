@@ -1,3 +1,11 @@
+---
+title: 'Lessons Learnt: Water + Computers'
+date: '2006-10-02 17:24:34'
+published: true
+tags:
+  - personal
+modified: '2014-10-16 18:05:14'
+---
 # Lessons Learnt: Water + Computers
 
 Trying to keep healthy had go through a few pints of water each day, today I learnt a fairly cardinal rule of water near computers.

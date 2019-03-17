@@ -1,3 +1,14 @@
+---
+title: CSS Tricks' Link Nudge
+date: '2009-01-05 16:45:38'
+published: true
+tags:
+  - code
+  - css
+  - safari
+  - webkit
+modified: '2014-09-03 16:15:12'
+---
 # CSS Tricks' Link Nudge
 
 A subtle effect on the [CSS Tricks](http://css-tricks.com) site that I've always liked, is the nudged links in the footer of the page.

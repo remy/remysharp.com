@@ -1,3 +1,13 @@
+---
+title: CommonJS modules with live edit in devtools
+date: '2014-05-30 12:07:56'
+published: true
+tags:
+  - code
+  - devtools
+  - fail
+modified: '2014-09-03 16:15:12'
+---
 # CommonJS modules with live edit in devtools
 
 As you might know, I'm a big fan of [Chrome devtools' live edit and workspaces](http://www.youtube.com/playlist?list=PLXmT1r4krsTq7w7hDV6zfirrs4NJlzJX5) (video playlist), and it's this workflow that's kept me away from [Browserify](http://browserify.org). 

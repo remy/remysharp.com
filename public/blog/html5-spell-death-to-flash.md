@@ -1,3 +1,13 @@
+---
+title: HTML5 spell death to Flash?
+date: '2009-05-28 09:16:00'
+published: true
+tags:
+  - flash
+  - html5
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # HTML5 spell death to Flash?
 
 The web community has gone loopy over Google announcing they're supporting [HTML5](http://dev.w3.org/html5/spec/Overview.html "HTML 5") in a big way, particularly and almost specifically because of the [YouTube](http://youtube.com/html5) to demo using the <code>video</code> tag (I'll add: rightly so).

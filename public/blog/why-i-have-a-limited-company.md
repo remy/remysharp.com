@@ -1,3 +1,11 @@
+---
+title: Why I have a limited company
+date: '2018-03-29 19:43:31'
+modified: '2018-03-03 14:52:21'
+tags:
+  - business
+published: true
+---
 # Why I have a limited company
 
 I've been asked a number of times over the years why I chose to run my business under a limited company, specifically [Left Logic](https://leftlogic.com) instead of running the business under my own name – since, for the majority, hiring Left Logic is hiring Remy Sharp. So I thought it would be useful to post it here (partly for me, partly for you).

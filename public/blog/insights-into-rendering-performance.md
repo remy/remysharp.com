@@ -1,3 +1,12 @@
+---
+title: Insights into rendering performance
+date: '2013-06-07 12:12:05'
+published: true
+tags:
+  - devtools
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Insights into rendering performance
 
 Since I was [stuck in a hotel](https://twitter.com/rem/status/341391687861563393) for a day, I thought I'd poke around devtools and see if I can try applying some anti-jank techniques.

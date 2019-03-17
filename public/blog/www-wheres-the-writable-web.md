@@ -1,3 +1,12 @@
+---
+title: 'WWW: Where''s the Writable Web?'
+date: '2019-02-21 16:14:24'
+modified: '2019-02-18 10:09:46'
+image: /images/www-logo.png
+tags:
+  - web
+published: true
+---
 # WWW: Where's the Writable Web?
 
 _This post is based on my experience and thoughts, and is not backed up by research, aka: speculative, akin more to a rambling in a café!_

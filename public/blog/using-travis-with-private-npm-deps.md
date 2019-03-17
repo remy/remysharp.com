@@ -1,3 +1,11 @@
+---
+title: Using travis with private npm deps
+date: '2015-10-26 12:58:38'
+tags:
+  - code
+published: true
+modified: '2017-02-04 18:01:43'
+---
 # Using travis with private npm deps
 
 I've recently been working on a project that requires [privately scoped npm modules](https://www.npmjs.com/private-modules). The problem I encountered was: when Travis ran tests that depended on @scoped modules, it would fail:

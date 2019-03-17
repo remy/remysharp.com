@@ -1,3 +1,11 @@
+---
+title: How tabs should work
+date: '2016-12-11 11:58:20'
+tags:
+  - code
+modified: '2016-12-12 08:03:30'
+published: true
+---
 # How tabs should work (updated)
 
 Tabs in browsers (not *browser tabs*) are one of the oldest custom UI elements in a browser that I can think of. They've been done to death. But, sadly, the majority of times I come across them, the tabs have been badly, or rather *partially* implemented.

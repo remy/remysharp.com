@@ -1,3 +1,11 @@
+---
+title: Midlife
+date: '2018-09-13 00:34:00'
+modified: '2018-09-12 23:39:40'
+tags:
+  - personal
+published: true
+---
 # Midlife
 
 40\. The _big one_. Though, I think television and movies have a lot to answer for that one. I wrote about [turning 30](/2008/09/13/big-three-oh-happy-birthday-to-me) (content warning: decade old writing!), and I wanted to mark this one too, somehow.

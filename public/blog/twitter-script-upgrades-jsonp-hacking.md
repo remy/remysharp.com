@@ -1,3 +1,14 @@
+---
+title: Twitter script upgrades & JSONP hacking
+date: '2008-05-31 14:32:01'
+published: true
+tags:
+  - code
+  - javascript
+  - jsonp
+  - twitter
+modified: '2014-09-03 16:15:12'
+---
 # Twitter script upgrades & JSONP hacking
 
 Given that recently Twitter has been going up and down like a yo-yo (and I'm sure they're working on it), I've upgraded the twitter script to support timeouts.

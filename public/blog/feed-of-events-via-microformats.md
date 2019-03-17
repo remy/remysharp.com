@@ -1,3 +1,12 @@
+---
+title: Feed of Events via Microformats
+date: '2008-06-18 14:26:36'
+published: true
+tags:
+  - microformats
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Feed of Events via Microformats
 
 A friend and colleague, Chris, has recently launched a gaming network site: [Thumbslap](http://thumbslap.com) which allows friends and the like to organise game meet ups online (or offline if they wish).

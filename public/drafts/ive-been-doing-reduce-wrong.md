@@ -1,3 +1,12 @@
+---
+title: I've been doing reduce wrong!
+date: '2018-04-06 10:39:59'
+modified: '2018-08-24 08:08:10'
+complete: false
+inprogress: true
+tags:
+  - code
+---
 # Increasing reduce with spread
 
 There's something I find particularly pleasing about chaining my code. I enjoyed it when I wrote a lot of jQuery, and even prior to jQuery, I remember feeling like it was a code super power that I could chain function calls together in JavaScript.

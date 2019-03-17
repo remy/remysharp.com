@@ -1,3 +1,12 @@
+---
+title: w3csites.com harmful?
+date: '2007-08-17 13:27:10'
+published: true
+tags:
+  - google
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # w3csites.com harmful?
 
 In doing a recent [Google search](http://www.google.com/search?q=w3csites.com), Google reported that [w3csites](http://w3csites.com) was harmful to my computer.

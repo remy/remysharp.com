@@ -1,3 +1,11 @@
+---
+title: Scraping data for 'next bus' notices
+date: '2016-12-05 08:55:37'
+modified: '2016-11-28 12:59:26'
+tags:
+  - web
+published: true
+---
 # Scraping data for 'next bus' notices
 
 I recently purchased a LaMetric toy/clock/thing. It's an internet connected array of LEDs which (it turns out) a fairly simple to use API.

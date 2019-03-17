@@ -1,3 +1,13 @@
+---
+title: HTML 5 - what caught my eye
+date: '2008-01-23 18:28:46'
+published: true
+tags:
+  - html
+  - html5
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # HTML 5 - what caught my eye
 
 I've been looking over the [HTML5](http://www.w3.org/TR/html5/) drafts and [HTML4 - HTML5 differences](http://www.w3.org/TR/html5-diff/) doc, and here's a list of bits that caught my eye, and why.

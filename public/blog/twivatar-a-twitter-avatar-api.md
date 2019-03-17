@@ -1,3 +1,14 @@
+---
+title: 'Twivatar, a Twitter avatar API'
+date: '2009-06-02 09:38:25'
+published: true
+tags:
+  - api
+  - twitter
+  - twivatar
+  - web
+modified: '2018-01-23 13:59:33'
+---
 # Twivatar, a Twitter avatar API
 
 <div class=update>

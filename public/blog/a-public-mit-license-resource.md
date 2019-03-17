@@ -1,3 +1,13 @@
+---
+title: A Public MIT License Resource
+date: '2011-10-18 13:00:19'
+published: true
+tags:
+  - code
+  - development
+  - project
+modified: '2014-09-03 16:15:12'
+---
 # A Public MIT License Resource
 
 Pretty much every personal project I work on I try to make it publicly available - usually under an MIT license - but I pretty much always forget to include an MIT license file.

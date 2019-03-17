@@ -1,3 +1,12 @@
+---
+title: Stop Using OpenID - Why & How
+date: '2008-04-24 11:14:20'
+published: true
+tags:
+  - openid
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Stop Using OpenID - Why & How
 
 Personally I think that OpenID is the next best thing since sliced bread. I plan to use it on all my [personal projects](http://codedumper.com) and advocate it whenever I can.

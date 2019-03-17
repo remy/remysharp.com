@@ -1,3 +1,14 @@
+---
+title: 30 second review of Safari 3 beta
+date: '2007-06-11 20:44:43'
+published: true
+tags:
+  - apple
+  - beta
+  - review
+  - safari
+modified: '2014-09-03 16:15:12'
+---
 # 30 second review of Safari 3 beta
 
 [Safari 3](http://www.apple.com/safari/) goes public beta today - so here's a 30 second review of the features and the downsides of the beta upgrade.

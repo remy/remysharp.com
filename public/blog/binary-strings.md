@@ -1,3 +1,11 @@
+---
+title: Binary strings…and -1
+date: '2017-11-24 11:36:05'
+modified: '2017-11-24 12:22:48'
+tags:
+  - code
+published: true
+---
 # Binary to string…and -1
 
 Working with (quite) a few projects that required binary representations of

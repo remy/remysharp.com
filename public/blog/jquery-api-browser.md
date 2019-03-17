@@ -1,3 +1,15 @@
+---
+title: jQuery API Browser
+date: '2008-02-12 17:27:37'
+published: true
+tags:
+  - api
+  - code
+  - javascript
+  - jquery
+  - project
+modified: '2014-09-03 16:15:12'
+---
 # jQuery API Browser
 
 Ever since jQuery 1.1.3 the old [API browser](http://jquery.com/api) hasn't been updated due to incompatibilities in the documentation (though that's mostly assumptions).  Although the new [docs](http://docs.jquery.com) is comprehensive, I've always liked the quick access the old API browser gave.

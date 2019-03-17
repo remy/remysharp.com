@@ -1,3 +1,9 @@
+---
+title: Polyfill is not Progressive Enhancement
+date: '2013-04-02 11:03:47'
+modified: '2014-09-24 16:31:01'
+draft: true
+---
 # Polyfill is not Progressive Enhancement
 
 Jeffrey Zeldman once [wrote](https://twitter.com/zeldman/status/124928936579842049):

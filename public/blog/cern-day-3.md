@@ -1,3 +1,11 @@
+---
+title: CERN day 3
+date: '2019-02-14 08:42:29'
+modified: '2019-02-13 22:20:19'
+tags:
+  - personal
+published: true
+---
 # CERN day 3
 
 The day's work has really started to intensify, particularly as the pressure mounts (certainly in my head) that the project needs to be fairly usable over the next couple of days.

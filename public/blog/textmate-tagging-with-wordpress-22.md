@@ -1,3 +1,16 @@
+---
+title: TextMate tagging with WordPress 2.2
+date: '2007-06-12 10:39:36'
+published: true
+tags:
+  - code
+  - tagging
+  - textmate
+  - ultimate-tag-warrior
+  - utw
+  - wordpress
+modified: '2014-09-03 16:15:12'
+---
 # TextMate tagging with WordPress 2.2
 
 I've just upgraded to WordPress 2.2 and now Ultimate Tag Warrior is broken and my TextMate tagging doesn't work anymore.  

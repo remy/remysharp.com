@@ -1,3 +1,12 @@
+---
+title: 'Another day, another birthday'
+date: '2006-09-13 21:42:32'
+published: true
+tags:
+  - birthday
+  - personal
+modified: '2014-09-18 15:09:03'
+---
 # Another day, another birthday
 
 I'm really never really any good at birthdays, but this year, I think I've done a little better.  Most people at work knew it was my 28th, even people I'd say I didn't really know.  I took an hour lunch break for some food with a few friends (an hour where I work is almost like a lifetime - and the fact I planned it is a double bonus to my credit).

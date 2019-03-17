@@ -1,3 +1,11 @@
+---
+title: The Art of Debugging
+date: '2015-10-14 21:24:16'
+tags:
+  - web
+published: true
+modified: '2016-01-07 11:09:00'
+---
 # The Art of Debugging
 
 This is the accompanying article for my *Art of Debugging* talk that I first gave at Fronteers in Amsterdam in 2015.

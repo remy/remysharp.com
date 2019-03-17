@@ -1,3 +1,16 @@
+---
+title: Delay the DOM ready event / Generate a dummy file
+date: '2007-10-29 14:27:49'
+published: true
+tags:
+  - bash
+  - code
+  - dom
+  - dummy
+  - code
+  - generate
+modified: '2014-09-03 16:15:12'
+---
 # Delay the DOM ready event / Generate a dummy file
 
     dd if=/dev/zero of=dummy.file bs=1000000 count=1

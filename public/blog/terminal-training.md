@@ -1,3 +1,14 @@
+---
+title: terminal.training
+customTitle: Command line training online video course
+date: '2017-03-15 15:04:39'
+modified: '2017-03-26 21:11:08'
+nosubscribe: true
+tags:
+  - web
+  - business
+published: true
+---
 # terminal.training
 
 Today I'm excited to launch my video [training course on the command line](https://terminal.training) for "non-techies": designers, UI, UX, new developers, product owners and anyone who works with technical people. As of today, it's available under a **special launch price**.

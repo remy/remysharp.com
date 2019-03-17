@@ -1,3 +1,11 @@
+---
+title: Diversity Scholarships for ffconf
+date: '2015-08-28 16:15:36'
+tags:
+  - web
+published: true
+modified: '2015-08-28 17:10:33'
+---
 # Diversity Scholarships for ffconf
 
 This post outlines a new diversity scholarships programme that I want to introduce for [ffconf](http://ffconf.org). It's entirely possible that this does not apply to you, my dear reader, but you still have an important role to play: please pass on the message and [this link](http://ffconf.org/scholarship) to help seek those out who can make use of the scholarships.

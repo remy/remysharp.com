@@ -1,3 +1,15 @@
+---
+title: Creative HTML5 and JavaScript workshop by @seb_ly
+date: '2011-01-12 17:18:19'
+published: true
+tags:
+  - code
+  - conference
+  - html5
+  - javascript
+  - workshop
+modified: '2014-09-18 21:50:37'
+---
 # Creative HTML5 and JavaScript workshop by @seb_ly
 
 This week I had the pleasure of attending Seb Lee-Delisle's [Creative HTML5 and JavaScript workshop](http://sebleedelisle.com/training/#creativejs) and even as someone who classes themselves as an expert JavaScripter (I hope!), I still learnt tons.

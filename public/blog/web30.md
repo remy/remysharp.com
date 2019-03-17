@@ -1,3 +1,13 @@
+---
+title: '#Web30'
+date: '2019-03-13 11:25:18'
+modified: '2019-03-13 09:22:33'
+image: /images/web30.jpg
+tags:
+  - web
+  - personal
+published: true
+---
 # #Web30
 
 This week marks the 30th _birthday_ of the web. I've had my own involvement in this momentous date in history with being part of the WorldWideWeb restoration team at CERN last month, and having returned from the #Web30 event yesterday (both at CERN and at the London Science Museum), I thought it fitting to pay tribute on my blog too.

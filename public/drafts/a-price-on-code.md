@@ -1,3 +1,14 @@
+---
+title: A price on code
+date: '2016-02-18 10:56:06'
+complete: false
+inprogress: true
+tags:
+  - personal
+  - business
+modified: '2016-08-15 13:44:28'
+draft: true
+---
 # A Price On Code
 
 As a kid, I would program my spectrum ZX80. Fun times. I'd while away the days and tinker away. The result was often a failure or something, in retrospect, rather pitifully. But it was fun. And I had time. Times change.

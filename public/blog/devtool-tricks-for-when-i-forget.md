@@ -1,3 +1,11 @@
+---
+title: Devtool tricks for when I forget
+date: '2015-06-09 14:50:20'
+tags:
+  - code
+published: true
+modified: '2015-06-12 10:59:49'
+---
 # Devtool tricks for when I forget
 
 I've recently completed a few of my [mastering devtools workshops](http://leftlogic.com/training/debug), so I'm all over devtools again, and just this week spotted two tricks (I use) for when I "forget".

@@ -1,3 +1,11 @@
+---
+title: iTunes first look
+date: '2006-09-12 20:46:27'
+published: true
+tags:
+  - apple
+modified: '2014-09-10 22:13:08'
+---
 # iTunes first look
 
 September 12th, [Apple](http://www.apple.com) launches [iTunes 7](http://www.apple.com/itunes), and there's a few cool features knocking around their announcements too.

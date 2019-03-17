@@ -1,3 +1,14 @@
+---
+title: Idiot Proofing the jQuery.ready
+date: '2008-03-09 01:52:51'
+published: true
+tags:
+  - code
+  - code
+  - jquery
+  - plugin
+modified: '2014-09-03 16:15:12'
+---
 # Idiot Proofing the jQuery.ready
 
 I'm always writing quick prototypes of ideas I've got, and often they'll include some quick jQuery.

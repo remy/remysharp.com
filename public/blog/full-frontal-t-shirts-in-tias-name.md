@@ -1,3 +1,13 @@
+---
+title: Full Frontal T-shirts in Tia's name
+date: '2010-11-16 19:18:38'
+published: true
+tags:
+  - conference
+  - tia
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Full Frontal T-shirts in Tia's name
 
 [Full Frontal 2010](http://2010.full-frontal.org) ran last Friday and (as I secretly hoped) was a huge success. As with last year, we had a good number of people asking how they could get one of the Full Frontal t-shirts (as sported by yours truly). And this year we're giving the opportunity to get your hands on one, and 100% of proceeds will go to charity.

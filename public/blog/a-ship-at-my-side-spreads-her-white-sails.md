@@ -1,3 +1,11 @@
+---
+title: A ship at my side spreads her white sails
+date: '2015-09-02 22:28:29'
+tags:
+  - personal
+published: true
+modified: '2018-08-21 08:46:43'
+---
 # A ship at my side spreads her white sails
 
 *"I am standing upon the seashore. A ship at my side spreads her white sails to the morning breeze and starts for the blue ocean. She is an object of beauty and strength. I stand and watch her until at length she hangs like a speck of white cloud just where the sea and sky come to mingle with each other.*

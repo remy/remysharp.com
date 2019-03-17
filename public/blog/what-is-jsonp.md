@@ -1,3 +1,15 @@
+---
+title: What is JSONP?
+date: '2007-10-08 09:30:09'
+published: true
+tags:
+  - code
+  - javascript
+  - jquery
+  - json
+  - jsonp
+modified: '2014-12-17 10:14:41'
+---
 # What is JSONP?
 
 jQuery 1.2 introduced JSONP support, but on initial read of the release notes, I wasn't completely sure what it was - so for anyone else that might want the Dr Seuss explanation.

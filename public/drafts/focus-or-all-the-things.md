@@ -1,3 +1,13 @@
+---
+title: Focus or all the things?
+date: '2017-05-02 18:18:13'
+modified: '2017-06-01 11:32:12'
+complete: false
+inprogress: true
+tags:
+  - personal
+draft: true
+---
 # Focus or all the things?
 
 I've been considering this question a lot recently: can I focus on one thing? Strangely this has come about (again) because of a pricing structure change over at [zeit.co](https://zeit.co). I'm a big fan of what the team are doing and have been a reasonably early adopter. This past weekend they announced new features and a new pricing model to compliment the changes.

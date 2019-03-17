@@ -1,3 +1,11 @@
+---
+title: CERN day 1
+date: '2019-02-12 09:49:02'
+modified: '2019-02-11 23:59:35'
+tags:
+  - personal
+published: true
+---
 # At CERN: building WorldWideWeb
 
 This marks the beginning of a week long adventure in Geneva Switzerland at CERN, to work on a hack project.

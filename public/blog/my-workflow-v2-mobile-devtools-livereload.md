@@ -1,3 +1,15 @@
+---
+title: 'My Workflow v2: Mobile, DevTools & LiveReload'
+date: '2013-05-16 16:42:03'
+published: true
+tags:
+  - code
+  - css
+  - development
+  - devtools
+  - web
+modified: '2014-11-10 12:09:20'
+---
 # My Workflow v2: Mobile, DevTools & LiveReload
 
 Since I'm sat at [Mobilism 2013](http://mobilism.nl/2013) I think it's worth sharing my recent mobile (mainly CSS) workflow. It's not rocket science, but it's a nice follow on from [my workflow with devtools](http://remysharp.com/2012/12/21/my-workflow-never-having-to-leave-devtools/) I shared a few months back.

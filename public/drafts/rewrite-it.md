@@ -1,3 +1,11 @@
+---
+title: The "let's just rewrite it" syndrome
+date: '2014-08-05 12:00:00'
+tags:
+  - business
+modified: '2014-08-05 11:02:40'
+draft: true
+---
 # The "let's just rewrite it" syndrome
 
 - Apex: would be much easier if it was rewritten

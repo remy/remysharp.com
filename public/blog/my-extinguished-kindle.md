@@ -1,3 +1,11 @@
+---
+title: My extinguished kindle
+date: '2018-05-18 13:02:11'
+modified: '2018-05-18 12:55:23'
+tags:
+  - personal
+published: true
+---
 # My extinguished kindle
 
 Last night I reached for my Kindle to continue reading 1984. I had _just_ started part 3 of the book and a big turn of events had just happened. Except, I couldn't. My Kindle's screen had cracked. Or the e-paper in particular.

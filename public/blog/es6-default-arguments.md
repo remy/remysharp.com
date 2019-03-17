@@ -1,3 +1,12 @@
+---
+image: /images/es6-defaults.png
+title: 'ES6: Default arguments'
+date: '2017-10-25 14:15:51'
+modified: '2017-10-25 14:14:41'
+tags:
+  - code
+published: true
+---
 # ES6: Default arguments
 
 Default arguments in ES6, put simply: I'm a huge fan.

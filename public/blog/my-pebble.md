@@ -1,3 +1,11 @@
+---
+title: My Pebble
+date: '2015-07-22 15:37:23'
+tags:
+  - personal
+published: true
+modified: '2015-07-22 15:35:06'
+---
 # On my Pebble
 
 Back in April 2012 I joined the bandwagon and backed the hyped kickerstarter campaign for the very first Pebble.

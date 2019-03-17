@@ -1,3 +1,11 @@
+---
+title: To gist and back again
+date: '2018-01-05 12:32:56'
+modified: '2018-04-10 13:10:08'
+tags:
+  - code
+published: true
+---
 # To gist and back again
 
 I've recently been using [gists](https://gist.github.com) to help debug user issues on nodemon. The process is two parts: firstly getting the original files up into a gist (ideally pared down), and secondly downloading each file to my local dev environment.

@@ -1,3 +1,14 @@
+---
+title: A way to keep track and in touch
+date: '2007-07-03 20:52:52'
+published: true
+tags:
+  - apple
+  - mail
+  - tool
+  - business
+modified: '2014-09-03 16:15:12'
+---
 # A way to keep track and in touch
 
 In reading my usual digest of RSS feeds, I came across [Merlin Mann's "I could totally use this"](http://www.43folders.com/2007/06/28/featured-links-for-june-28th/) and then the source [lazy contact manager](http://www.scottandrew.com/wordpress/archives/2007/06/a_few_music_20_ideas.html) - I figured it wouldn't be too hard to write, albeit roughly - and I would also find it useful.

@@ -1,3 +1,13 @@
+---
+title: Seven
+image: /images/seven.jpg
+date: '2017-08-31 09:58:07'
+modified: '2017-08-31 09:56:14'
+nosubscribe: true
+tags:
+  - personal
+published: true
+---
 # Seven
 
 Tia would turn 7 today. But she doesn't, for another year. I see her dark ginger hair in my sleep. I glimpse her playing with her younger brother and sister. I feel all of us, happy, together, in another life, in a separate reality. But she died during labour.

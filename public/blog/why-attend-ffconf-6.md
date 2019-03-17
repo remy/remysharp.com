@@ -1,3 +1,12 @@
+---
+title: 'Why Attend ffconf #6: PWA'
+date: '2016-10-04 11:14:31'
+modified: '2016-10-04 11:14:14'
+tags:
+  - web
+  - business
+published: true
+---
 # Why Attend ffconf #6: PWA
 
 If you don't know what a progressive web app (PWA) is, you need to attend right now. If you do, you should attend too, because I believe progressive web apps are one of the biggest and more important steps forward for the web.

@@ -1,3 +1,11 @@
+---
+title: You know what they say about assumptions...
+date: '2015-07-02 14:49:53'
+tags:
+  - web
+published: true
+modified: '2015-07-02 15:35:03'
+---
 # You know what they say about assumptions...
 
 During our heated panel at EdgeConf 2015 on progressive enhancement [Jeremy](https://adactio.com) points out that by trying to anticipate your users' needs, **you're making assumptions**, and [you know what they say about assumptions](https://www.youtube.com/watch?v=G-2NimrRPAQ).

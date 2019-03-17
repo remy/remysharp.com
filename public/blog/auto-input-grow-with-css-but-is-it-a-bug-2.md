@@ -1,3 +1,14 @@
+---
+title: Auto input grow with CSS (but is it a bug?)
+date: '2006-11-27 09:43:32'
+published: true
+tags:
+  - bug
+  - code
+  - css
+  - ie
+modified: '2014-09-03 16:15:12'
+---
 # Auto input grow with CSS (but is it a bug?)
 
 I've been looking at the [del.icio.us](http://del.icio.us/remy.sharp/) auto text grow functionality recently, and noticed you can achieve a similar effect in CSS, but only for <abbr title="Internet Explorer">IE</abbr>.

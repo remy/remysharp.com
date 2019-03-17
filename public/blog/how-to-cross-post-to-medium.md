@@ -1,3 +1,12 @@
+---
+image: /images/ifttt-medium-activity.png
+title: How to cross post to Medium
+date: '2018-02-01 11:54:41'
+modified: '2018-01-31 15:03:53'
+tags:
+  - web
+published: true
+---
 # How to cross post to Medium
 
 At some point during 2017, Medium decided to pull their <abbr title="If This, Then That">IFTTT</abbr> applets that allows content to be posted _into_ Medium. Which I think is a pretty shitty move since there was no notification that the applet was pulled (I only noticed after Medium just didn't contain a few of my posts), and it smacks of "Medium should be the original source"…which may be fine for some people, but I'm expecting my own content to outlast the Medium web site.

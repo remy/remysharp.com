@@ -1,3 +1,17 @@
+---
+title: Life Streams with Yahoo Pipes (screencast)
+date: '2007-04-05 23:25:53'
+published: true
+tags:
+  - code
+  - javascript
+  - life-stream
+  - pipes
+  - rss-tag
+  - screencast
+  - yahoo
+modified: '2014-09-03 16:15:12'
+---
 # Life Streams with Yahoo Pipes (screencast)
 
 [Yahoo Pipes](http://pipes.yahoo.com) is "an interactive feed aggregator and manipulator".  The service easily allows you and me to create a feed of feeds, sometimes known as 'life streams', though I like to call them: soup.

@@ -1,3 +1,18 @@
+---
+title: 'My Workflow: Never having to leave DevTools'
+date: '2012-12-21 13:35:22'
+published: true
+tags:
+  - debug
+  - debugging
+  - development
+  - devtools
+  - hack
+  - javascript
+  - tips
+  - web
+modified: '2014-11-10 12:09:14'
+---
 # My Workflow: Never having to leave DevTools
 
 At this time of year (Christmas) there's a lot of tip-like articles that emerge, so I wanted to share what I felt like was the single greatest technical win I have come across in the last few months: using Chrome DevTools for *full* web dev workflow - so I recorded a quick 4 minute screencast (and even wrote up a few extra bits - because I felt generous this Christmas!).

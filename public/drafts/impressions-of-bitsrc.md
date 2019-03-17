@@ -1,3 +1,12 @@
+---
+title: Impressions of bitsrc
+date: '2018-11-01 13:38:41'
+modified: '2018-11-01 13:42:12'
+complete: false
+inprogress: true
+tags:
+  - code
+---
 # Impressions of bitsrc
 
 For my most recent client project I've been using [bitsrc.io](https://bitsrc.io) to manage the components for the project. Although I'm the sole developer on the project, it helps me prepare for repurposing the components through the future projects.

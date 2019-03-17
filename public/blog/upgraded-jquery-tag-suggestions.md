@@ -1,3 +1,14 @@
+---
+title: Upgraded jQuery Tag Suggestions
+date: '2008-02-28 02:43:51'
+published: true
+tags:
+  - code
+  - plugin
+  - tagging
+  - upgrade
+modified: '2014-09-03 16:15:12'
+---
 # Upgraded jQuery Tag Suggestions
 
 After lots of great feedback, I've upgraded the [jQuery Tag Suggest Plugin](http://remysharp.com/2007/12/28/jquery-tag-suggestion/).

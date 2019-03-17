@@ -1,3 +1,11 @@
+---
+title: Notes on porting my Pebble app to SDK3
+date: '2015-07-29 14:32:03'
+tags:
+  - code
+published: true
+modified: '2015-07-29 16:20:31'
+---
 # Notes on porting my Pebble app to SDK3
 
 Late last night I decided to update my Rest pebble app to make use of the colour features of BASALT, i.e. the Pebble Time's colour features.

@@ -1,3 +1,11 @@
+---
+title: Cool URIs don't change
+date: '2016-12-22 08:48:54'
+modified: '2016-12-22 15:50:17'
+tags:
+  - web
+published: true
+---
 # Cool URIs don't change
 
 This isn't a new experience, but today I found myself trying to remember the domain to a site that hosted bash aliases. I'd used it a number of times and found it really useful.

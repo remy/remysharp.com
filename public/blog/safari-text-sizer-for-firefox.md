@@ -1,3 +1,15 @@
+---
+title: Safari text sizer for Firefox
+date: '2007-09-04 19:56:21'
+published: true
+tags:
+  - extension
+  - firefox
+  - javascript
+  - safari
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Safari text sizer for Firefox
 
 I'm a fan of the textarea resize function in Safari 3 - and as such I've had my first crack at a Firefox extension.

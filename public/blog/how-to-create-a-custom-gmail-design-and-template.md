@@ -1,3 +1,12 @@
+---
+title: How to create a custom gmail design and template
+date: '2017-06-16 13:48:36'
+modified: '2017-06-16 13:46:16'
+tags:
+  - web
+  - business
+published: true
+---
 # How to create a custom Gmail design and template
 
 Right, catchy title aside, I wanted to send an email recently from my Gmail account but I wanted to add a footer that essentially required a table for layout. Except Gmail (and Google Inbox AFAIK) rich editbox doesn't let you do more complicated styling aside from bold, italic and font selection.

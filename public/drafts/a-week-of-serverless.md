@@ -1,3 +1,12 @@
+---
+title: A week of serverless
+date: '2018-03-22 21:10:39'
+modified: '2018-03-23 08:43:22'
+complete: false
+inprogress: true
+tags:
+  - web
+---
 # A week of serverless
 
 No, not the week I disconnected from the internet (goodness no!). For my sins, I've been spending my evenings experimenting on the edge of _serverless_ and it's about time I write up my findings.

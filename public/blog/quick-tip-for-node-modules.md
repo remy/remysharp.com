@@ -1,3 +1,11 @@
+---
+title: Quick tip for node modules
+date: '2018-04-12 11:43:50'
+modified: '2018-04-12 11:58:55'
+tags:
+  - code
+published: true
+---
 # Quick tip for node modules
 
 When writing my node modules, I've come to really quite enjoy using Jest for testing (I've written about [how I used tap](https://remysharp.com/2016/03/01/from-tests-to-debugging-node-workflow) and it's quite similar).

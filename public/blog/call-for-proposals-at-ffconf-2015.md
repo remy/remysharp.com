@@ -1,3 +1,11 @@
+---
+title: Call for proposals at ffconf 2015
+date: '2015-05-25 12:44:33'
+tags:
+  - web
+published: true
+modified: '2015-05-25 12:54:13'
+---
 # Call for proposals at ffconf 2015
 
 [ffconf](http://2015.ffconf.org) has it's event date (6-Nov 2015) and I've been in the process of carefully curating the content I want to hear at this year's event again. As with each year, it takes place at the [Duke of Yorks](https://www.flickr.com/groups/fullfrontalconf/pool/) in Brighton, UK.

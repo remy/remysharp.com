@@ -1,3 +1,14 @@
+---
+title: del.icio.us-like Text Grow jQuery Plugin
+date: '2006-11-27 10:45:18'
+published: true
+tags:
+  - code
+  - delicious
+  - jquery
+  - plugin
+modified: '2014-09-03 16:15:12'
+---
 # del.icio.us-like Text Grow jQuery Plugin
 
 If you're familiar with the [del.icio.us](http://del.icio.us/remy.sharp/) tag search box, then you'll know it will grow with the length of the content you enter.

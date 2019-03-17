@@ -1,3 +1,11 @@
+---
+title: Tiny two way data binding
+date: '2015-06-02 11:42:26'
+tags:
+  - code
+published: true
+modified: '2015-06-02 15:35:10'
+---
 # Tiny two way data binding
 
 Data binding to the DOM is just one of those things that's damn handy when you've got it and super laborious when you don't. The problem is that it usually comes at a price of a hefty framework (hefty can apply to byte-size, but more often: the learning curve to use said framework).

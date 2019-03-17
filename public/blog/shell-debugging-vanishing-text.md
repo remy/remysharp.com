@@ -1,3 +1,11 @@
+---
+title: Debugging vanishing text in shell scripts
+date: '2018-10-29 08:23:25'
+modified: '2018-10-29 08:02:18'
+tags:
+  - code
+published: true
+---
 # Debugging vanishing text in shell scripts
 
 Did you ever get a weird bash scripting issue where a variable would "randomly" eat characters of another command?

@@ -1,3 +1,13 @@
+---
+title: Element 'in view' Event Plugin
+date: '2009-01-26 14:14:32'
+published: true
+tags:
+  - code
+  - jquery
+  - plugin
+modified: '2014-09-03 16:15:12'
+---
 # Element 'in view' Event Plugin
 
 I've been preparing a few articles for [jQuery for Designers](http://jqueryfordesigners.com/ "jQuery for Designers - Tutorials and screencasts") and for [.net magazine](http://www.netmag.co.uk/) and in doing so I've had to write a plugin that could prove to be useful to share.

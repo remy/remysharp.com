@@ -1,3 +1,16 @@
+---
+title: How to rotate a movie
+date: '2007-12-17 11:32:52'
+published: true
+tags:
+  - apple
+  - editing
+  - movie
+  - quicktime
+  - screencast
+  - tips
+modified: '2014-09-03 16:15:12'
+---
 # How to rotate a movie
 
 I was recently asked to rotate a video for a friend.  Video rotation is required every now and then (especially when you record using a photo camera and the orientation is wrong).

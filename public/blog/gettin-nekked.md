@@ -1,3 +1,14 @@
+---
+title: Gettin' Nek'ked.
+date: '2007-04-02 18:50:19'
+published: true
+tags:
+  - css
+  - naked
+  - nude
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Gettin' Nek'ked.
 
 Again this year Dustin Diaz has thrown down the gauntlet as asked volunteers to strip off for [CSS naked day](http://www.dustindiaz.com/naked-day-07/) this coming Thursday.

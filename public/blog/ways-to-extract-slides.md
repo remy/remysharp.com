@@ -1,3 +1,11 @@
+---
+title: Ways to extract slides
+date: '2018-11-29 10:02:20'
+modified: '2018-11-29 10:01:32'
+tags:
+  - code
+published: true
+---
 # Ways to extract slides
 
 When you run events, once everything is over, it's nice to be able to share the slides both as a single link but also for the video production.

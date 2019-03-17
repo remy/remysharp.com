@@ -1,3 +1,11 @@
+---
+title: What's in a name?
+date: '2016-07-22 11:01:21'
+modified: '2016-07-22 12:06:55'
+tags:
+  - personal
+published: true
+---
 # What's in a name?
 
 If you've followed me over the years, you will know that I run ffconf. You *may* have also noticed that I call it ffconf, and *not* Full Frontal (any more).

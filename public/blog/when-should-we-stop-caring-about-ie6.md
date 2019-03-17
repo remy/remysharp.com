@@ -1,3 +1,14 @@
+---
+title: When should we stop caring about IE6?
+date: '2008-03-11 13:31:57'
+published: true
+tags:
+  - ie
+  - ie6
+  - ie8
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # When should we stop caring about IE6?
 
 Microsoft's bastard child needs your love, but surely not forever?  [Simon raises a point](http://remysharp.com/2008/03/06/ie8-hands-on-a-developers-view/#comment-53531) that even though IE8 is on it's way - due to IE6's market share, IE8 is almost good for nothing.

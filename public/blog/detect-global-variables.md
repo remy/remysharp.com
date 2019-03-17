@@ -1,3 +1,15 @@
+---
+title: Detect Global Variables
+date: '2007-11-01 17:36:51'
+published: true
+tags:
+  - bookmarklet
+  - code
+  - debugging
+  - global
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # Detect Global Variables
 
 I've got a handy little bookmarklet that I use to check whether any variables have slipped out in the to global namespace (i.e. on to the <code>window</code> object).

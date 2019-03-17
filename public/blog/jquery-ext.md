@@ -1,3 +1,13 @@
+---
+title: jQuery & Ext
+date: '2007-04-20 12:22:47'
+published: true
+tags:
+  - ext
+  - code
+  - tutorial
+modified: '2014-09-03 16:15:12'
+---
 # jQuery & Ext
 
 I've started playing with [Ext](http://extjs.com) with [jQuery](http://jquery.com), and although the tutorials on the Ext web site are superb, I found that I hit a few stumbling blocks - so I've written up the little gotchas.

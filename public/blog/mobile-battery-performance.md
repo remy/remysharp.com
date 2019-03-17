@@ -1,3 +1,11 @@
+---
+title: Mobile Battery Performance
+date: '2012-04-25 14:00:51'
+published: true
+tags:
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Mobile Battery Performance
 
 I was working late adding some finishing touches to a mobile workshop I would be giving at the BBC the next morning when I run a twitter search looking for "bbc mobile" - and it turns up this article *on* the BBC about [poorly designed mobile sites 'drain smartphone battery'](http://www.bbc.co.uk/news/technology-17811557) - how pertinent!

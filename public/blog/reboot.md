@@ -1,3 +1,11 @@
+---
+title: Reboot
+date: '2015-01-05 16:00:00'
+published: true
+tags:
+  - personal
+modified: '2015-01-05 12:23:30'
+---
 # Reboot
 
 The last year I've made a conscious effort to focus development efforts in JS Bin, and that's exactly what I did for over 8 months.

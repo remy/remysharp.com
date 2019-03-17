@@ -1,3 +1,12 @@
+---
+title: On changing my avatar
+date: '2011-08-23 17:36:01'
+published: true
+tags:
+  - personal
+  - twitter
+modified: '2014-09-03 16:15:12'
+---
 # On changing my avatar
 
 I joined twitter around early 2007 and during those early months I toyed with a number of different avatars. At some point I settled on the avatar I have now - just a quick snap of me in front of my desktop.

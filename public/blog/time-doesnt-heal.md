@@ -1,3 +1,11 @@
+---
+title: Time doesn’t heal
+date: '2014-08-11 13:00:06'
+published: true
+tags:
+  - personal
+modified: '2014-09-03 16:15:12'
+---
 # Time doesn’t heal
 
 My wife and I lost our daughter at full term in the last throes of labour to stillbirth. It was the darkest time of my life.

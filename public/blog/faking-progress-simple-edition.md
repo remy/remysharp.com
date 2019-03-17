@@ -1,3 +1,11 @@
+---
+title: Faking progress (simple edition)
+date: '2016-12-19 08:35:42'
+modified: '2016-12-16 20:30:01'
+tags:
+  - web
+published: true
+---
 # Faking progress (simple edition)
 
 If you're familiar with the github.com website, then you'll be familiar with the effect (as of 2016) when you click from a repo to the issues or PRs or search for files…there's a progress loader at the top of the page, and the updated content is loaded in.

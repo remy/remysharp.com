@@ -1,3 +1,11 @@
+---
+title: Promise waterfall
+date: '2015-12-18 13:08:09'
+tags:
+  - code
+published: true
+modified: '2016-09-30 12:20:41'
+---
 # Promise waterfall
 
 I use promises a lot in my development process. I find them extremely pliable for my needs. However, for whatever reason, I don't use abstractions for most of my development, which is to say I use vanilla promises unencumbered by an additional API to learn.

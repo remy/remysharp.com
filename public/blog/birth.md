@@ -1,3 +1,12 @@
+---
+title: Birth
+date: '2006-09-05 17:37:25'
+published: true
+tags:
+  - business
+  - leftlogic
+modified: '2014-09-03 16:15:12'
+---
 # Birth
 
 I've been talking about it pretty much all year, and I've been doing more and more towards actually starting my own company.

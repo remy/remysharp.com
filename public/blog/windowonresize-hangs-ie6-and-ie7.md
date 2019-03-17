@@ -1,3 +1,15 @@
+---
+title: window.onresize hangs IE6 and IE7
+date: '2008-05-15 17:55:13'
+published: true
+tags:
+  - bug
+  - code
+  - ie
+  - ie6
+  - ie7
+modified: '2014-09-03 16:15:12'
+---
 # window.onresize hangs IE6 and IE7
 
 Another bug that I've not seen before that caused some confusion. Actually, the bug almost makes sense, except that it leaves IE6 and IE7 completely hanging.

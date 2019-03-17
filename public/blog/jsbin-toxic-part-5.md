@@ -1,3 +1,13 @@
+---
+title: 'The toxic side of free. Or: how I lost the love for my side project (part 5)'
+date: '2015-09-18 15:22:10'
+image: /images/jsbin-t-shirt.jpg
+tags:
+  - personal
+  - web
+published: true
+modified: '2015-10-08 23:21:33'
+---
 # The toxic side of free. Or: how I lost the love for my side project
 
 This is a story about JS Bin. I've told one story of JS Bin before, and this is the b-side: the dark side. But remember with everything I share with you, JS Bin is the longest running live pastebin, and it's not going anywhere. It will continue to run and serve its users. Even the scumbags.

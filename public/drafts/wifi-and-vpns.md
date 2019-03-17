@@ -1,3 +1,13 @@
+---
+title: WiFi and VPNs
+date: '2016-06-05 14:52:06'
+modified: '2016-06-06 13:29:33'
+complete: false
+inprogress: true
+tags:
+  - web
+draft: true
+---
 # WiFi and VPNs
 
 This is going to be a fairly detailed post into my recent WiFi home broadband problems, how I solved it and then how I layered on a VPN and what I learnt from the process.

@@ -1,3 +1,14 @@
+---
+title: link elements block DOM parsing too
+date: '2011-06-08 09:53:12'
+published: true
+tags:
+  - code
+  - css
+  - javascript
+  - performance
+modified: '2014-09-03 16:15:12'
+---
 # link elements block DOM parsing too
 
 Today we're pretty well versed with how JavaScript works. We know that `script` elements block rendering (well, actually blocks the parsing, which thus delays the rendering), and we know why8. Sure, so we put the `script` elements at the end of the document. But did you know that `link` elements block too?

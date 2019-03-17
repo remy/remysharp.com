@@ -1,3 +1,15 @@
+---
+title: 'A few more jQuery plugins: crop, labelOver and pluck'
+date: '2007-03-19 23:48:02'
+published: true
+tags:
+  - code
+  - jquery
+  - labelover
+  - pluck
+  - plugin
+modified: '2014-09-03 16:15:12'
+---
 # A few more jQuery plugins: crop, labelOver and pluck
 
 I've been hoarding a few plugins which I thought it was about time I did some sharing.

@@ -1,3 +1,11 @@
+---
+title: 'screen: Persistent Terminal Sessions'
+date: '2015-04-27 11:45:00'
+published: true
+tags:
+  - code
+modified: '2015-05-17 09:22:04'
+---
 # Persistent terminal sessions: screen
 
 Have you ever had a remote terminal session running only have your connection drop out half way through a large task? Then you reconnect not knowing where it go up to, whether it crashed or what.

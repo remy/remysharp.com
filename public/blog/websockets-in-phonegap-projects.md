@@ -1,3 +1,13 @@
+---
+title: WebSockets in PhoneGap Projects
+date: '2010-10-04 13:35:57'
+published: true
+tags:
+  - code
+  - phonegap
+  - websockets
+modified: '2014-09-03 16:15:12'
+---
 # WebSockets in PhoneGap Projects
 
 I'm a big fan of the [WebSockets API](http://dev.w3.org/html5/websockets/) for all the real-time goodness it offers, but the iOS platform doesn't (currently) bake the WebSockets API in to mobile Safari. That sucks, particularly because I can enjoy making iOS native apps using awesome frameworks like [PhoneGap](http://www.phonegap.com/ "PhoneGap"). *However*, because I'm using PhoneGap, I *can* create a PhoneGap plugin that introduces WebSockets to my HTML & JavaScript. So that's what I did.

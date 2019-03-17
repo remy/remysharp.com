@@ -1,3 +1,13 @@
+---
+title: A self destructive web
+date: '2013-10-22 12:31:32'
+published: true
+tags:
+  - conference
+  - personal
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # A self destructive web
 
 I'm finding myself more and more nowadays interested in content that [self destructs](https://twitter.com/rem/status/392601422480805888), or rather: expires after time and will no longer exist.

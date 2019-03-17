@@ -1,3 +1,13 @@
+---
+title: 'Living Standard: part 1'
+date: '2016-09-30 13:35:49'
+modified: '2016-10-12 11:33:11'
+complete: false
+inprogress: true
+tags:
+  - web
+draft: true
+---
 # Why do I believe in the web?
 
 I work pretty much all day on the web. I use it for research, I use it to socially, I use it professionally, I use it when I'm bored, or need inspiration. I'm constantly impressed by what I see on the web.

@@ -1,3 +1,11 @@
+---
+title: Training and events
+date: '2012-04-16 11:14:16'
+published: true
+tags:
+  - business
+modified: '2018-08-24 13:09:31'
+---
 # Training and events
 
 There's a number of upcoming events I wanted to blog about, partly to lend a hand to their promotion, and partly to tell you what I'm up to.

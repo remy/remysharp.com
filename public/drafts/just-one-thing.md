@@ -1,3 +1,13 @@
+---
+title: Just one thing
+date: '2017-01-01 08:37:38'
+modified: '2017-01-01 09:58:35'
+complete: false
+inprogress: true
+tags:
+  - web
+draft: true
+---
 # Just one thing
 
 2017, the new year has started. Maybe you've got some new year resolutions and maybe you've already read a blog post or two about someone else's plans for 2017.

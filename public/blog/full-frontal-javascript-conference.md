@@ -1,3 +1,15 @@
+---
+title: Full Frontal JavaScript Conference
+date: '2009-04-20 13:50:08'
+published: true
+tags:
+  - business
+  - conference
+  - javascript
+  - project
+  - web
+modified: '2016-04-03 12:51:25'
+---
 # Full Frontal JavaScript Conference
 
 Today the Full Frontal JavaScript conference site goes live: [full-frontal.org](http://full-frontal.org).

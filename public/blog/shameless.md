@@ -1,3 +1,14 @@
+---
+title: Shameless
+date: '2007-12-19 13:31:13'
+published: true
+tags:
+  - charity
+  - leftlogic
+  - tacheback
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Shameless
 
 I had the pleasure of working with Cancer Research this year in building the backend and front end interactive technology behind their [TacheBack](http://www.tacheback.com/tacehwars) campaign.

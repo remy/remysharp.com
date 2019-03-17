@@ -1,3 +1,11 @@
+---
+title: Peer Deps
+date: '2018-09-27 20:44:53'
+modified: '2018-09-27 20:44:39'
+tags:
+  - code
+published: true
+---
 # Peer Deps
 
 Just using my blog to share a little tip for future me that current me keeps forgetting. Over the years when [working with clients](/work) I've created reusable React components, and it's pretty important to me to ensure that dependencies like React aren't dependencies of my own work - specifically to prevent React (for instance) being included multiple times in my projects.

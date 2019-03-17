@@ -1,3 +1,15 @@
+---
+title: 'IE8 hands on: a developer''s view'
+date: '2008-03-06 02:29:12'
+published: true
+tags:
+  - beta
+  - ie
+  - ie8
+  - review
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # IE8 hands on: a developer's view
 
 Microsoft this week announced that they had [reversed their decision](http://blogs.msdn.com/ie/archive/2008/03/03/microsoft-s-interoperability-principles-and-ie8.aspx) on the whole [backward rendering fiasco](http://alistapart.com/articles/theyshootbrowsers), and today [released details](http://www.microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm) of their plans for IE8.

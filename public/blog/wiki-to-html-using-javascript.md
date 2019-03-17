@@ -1,3 +1,14 @@
+---
+title: Wiki to HTML using JavaScript
+date: '2008-04-01 22:55:35'
+published: true
+tags:
+  - code
+  - javascript
+  - project
+  - wiki
+modified: '2014-09-03 16:15:12'
+---
 # Wiki to HTML using JavaScript
 
 In building the [jQuery API browser](http://remysharp.com/jquery-api/), since the source of the API comes from the wiki pages over at [docs.jquery.com](http://docs.jquery.com), I had to handle some wiki parsing and convert it to HTML.

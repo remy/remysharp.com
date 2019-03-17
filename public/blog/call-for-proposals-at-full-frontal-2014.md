@@ -1,3 +1,13 @@
+---
+title: Call for proposals at Full Frontal 2014
+date: '2014-06-17 12:51:12'
+published: true
+tags:
+  - business
+  - conference
+  - fullfrontalconf
+modified: '2015-02-12 14:42:19'
+---
 # Call for proposals at Full Frontal 2014
 
 [Full Frontal](http://2014.full-frontal.org) has it's ticket release date(s!) and as usual, I'm already carefully curating the content I want to hear at Full Frontal, but I always make sure I allot a few positions for CFP - because let's face it: I don't know, what I don't know.

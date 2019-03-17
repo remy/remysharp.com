@@ -1,3 +1,11 @@
+---
+title: Books I read in 2018
+date: '2019-01-07 16:24:25'
+modified: '2019-01-07 10:23:47'
+tags:
+  - personal
+published: true
+---
 # Books I read in 2018
 
 In 2018 I read 37 (or so) books. Some of which were graphic novels which arguably I wouldn't include if I were talking about "novels read" and there was at least one very, very short book (26 pages 😱), still, as a previous "non-reader", I'll happy with my reading cadence, and I hope to keep it up in 2019.

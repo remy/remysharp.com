@@ -1,3 +1,13 @@
+---
+title: JavaScript Style - why it's important
+date: '2007-11-21 13:33:16'
+published: true
+tags:
+  - media
+  - code
+  - javascript
+modified: '2014-09-03 16:15:12'
+---
 # JavaScript Style - why it's important
 
 I adopted Douglas Crockford's [JavaScript code convention](http://javascript.crockford.com/code.html) some time ago, but at yesterday's [@media Ajax](http://www.vivabit.com/atmediaajax/) he demonstrated, in a beautifully simple way, why it's **really** important.

@@ -1,3 +1,12 @@
+---
+image: /images/is-jquery-relevant.png
+title: Is jQuery still relevant?
+date: '2017-12-15 14:10:36'
+modified: '2017-12-15 15:50:35'
+tags:
+  - web
+published: true
+---
 # Is jQuery still relevant?
 
 I've been cruising the reddit listings recently and without much searching I

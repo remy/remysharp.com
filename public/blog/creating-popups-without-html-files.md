@@ -1,3 +1,16 @@
+---
+title: Creating popups without HTML files
+date: '2013-04-02 13:00:27'
+published: true
+tags:
+  - bookmarklet
+  - code
+  - iframe
+  - javascript
+  - popup
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Creating popups without HTML files
 
 I'll start this post by saying: I very very rarely ever need a popup window, and in fact usually just include an inline overlay. But sometimes the situation comes up when I need a popup - this was one of those times.

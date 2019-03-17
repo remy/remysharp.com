@@ -1,3 +1,14 @@
+---
+title: Visited plugin
+date: '2008-02-25 22:33:05'
+published: true
+tags:
+  - code
+  - javascript
+  - jquery
+  - links
+modified: '2014-09-03 16:15:12'
+---
 # Visited plugin
 
 The idea that you can track [which links](http://jeremiahgrossman.blogspot.com/2006/08/i-know-where-youve-been.html) users have visited [re-emerged](http://www.niallkennedy.com/blog/2008/02/browser-history-sniff.html) earlier this month.

@@ -1,3 +1,13 @@
+---
+title: 8 questions after IE pissed the community off
+date: '2008-01-22 23:01:46'
+published: true
+tags:
+  - ie8
+  - microsoft
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # 8 questions after IE pissed the community off
 
 If you're a developer or read any development blogs, you'll have seen the plans for IE8 and backward compatibility. 

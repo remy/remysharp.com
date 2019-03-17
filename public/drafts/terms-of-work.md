@@ -1,3 +1,13 @@
+---
+title: Terms of work
+date: '2016-01-07 11:17:08'
+complete: false
+inprogress: true
+tags:
+  - business
+modified: '2016-02-21 18:17:33'
+draft: true
+---
 # Terms of work
 
 The following document outlines the terms of engaging Remy Sharp via Left Logic Ltd as a developer for your project or company.

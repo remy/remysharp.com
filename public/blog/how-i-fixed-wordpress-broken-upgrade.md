@@ -1,3 +1,13 @@
+---
+title: How I Fixed WordPress' Broken Upgrade
+date: '2008-02-06 12:08:10'
+published: true
+tags:
+  - fix
+  - web
+  - wordpress
+modified: '2014-09-03 16:15:12'
+---
 # How I Fixed WordPress' Broken Upgrade
 
 This morning I was greeted by a big upgrade button on my wordpress admin page.  Clicking on it returned:

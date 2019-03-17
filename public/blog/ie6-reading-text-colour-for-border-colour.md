@@ -1,3 +1,14 @@
+---
+title: IE6 reading text colour for border colour!
+date: '2008-10-29 11:41:05'
+published: true
+tags:
+  - code
+  - css
+  - ie
+  - ie6
+modified: '2014-09-03 16:15:12'
+---
 # IE6 reading text colour for border colour!
 
 In creating a particularly complicated styling for a project I'm working on, I've come across a corker of a bug in IE6.

@@ -1,3 +1,11 @@
+---
+title: Snyk'ing off
+date: '2016-08-01 17:06:07'
+modified: '2016-08-01 17:08:47'
+tags:
+  - personal
+published: true
+---
 # Snyk'ing off
 
 Today I start the week after finishing a year long relationship with [Snyk](https://snyk.io), and I wanted to mark permanently here, on my blog.

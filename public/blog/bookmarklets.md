@@ -1,3 +1,13 @@
+---
+title: Bookmarklets
+date: '2007-11-14 14:11:09'
+published: true
+tags:
+  - bookmarklet
+  - javascript
+  - web
+modified: '2014-09-03 16:15:12'
+---
 # Bookmarklets
 
 Bookmarklets are, IMHO, being used for more and more funky functions.

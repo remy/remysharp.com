@@ -1,3 +1,11 @@
+---
+title: Five
+date: '2015-08-17 15:45:32'
+tags:
+  - personal
+published: true
+modified: '2016-04-17 12:40:20'
+---
 # Five
 
 Tia was our first born. I know I don't write about Ellis and Seren, but I get to look into their eyes and tell them that I love them every day. Tia never heard my voice. She never opened her eyes. I'll never know what colour eyes she has. Ever.

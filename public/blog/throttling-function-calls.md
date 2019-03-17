@@ -1,3 +1,14 @@
+---
+title: Throttling function calls
+date: '2010-07-21 13:28:52'
+published: true
+tags:
+  - code
+  - development
+  - javascript
+  - jquery
+modified: '2014-09-03 16:15:12'
+---
 # Throttling function calls
 
 If you've written any kind of validation on user input, like <code>onkeypress</code> then you'll know that sometimes you want to throttle the amount of times your function runs. A good example of this is Ajax based username validation - you don't want to hit the server on every key press, because most users will be able to write their name in around 1/10th of a second, so you *should* throttle the ajax request until the input is dormant for 100ms.

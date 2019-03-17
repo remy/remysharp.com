@@ -1,3 +1,11 @@
+---
+title: Contrast ratio in devtools
+date: '2017-08-17 14:59:03'
+modified: '2017-08-17 23:03:35'
+tags:
+  - code
+published: true
+---
 # Contrast ratio in devtools
 
 Recently I've been wary of accessibility (a11y) of colour in my work, and I've known about the contrast ratio checker in devtools, but it's recently been upgraded and is super charged:

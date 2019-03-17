@@ -1,3 +1,11 @@
+---
+title: 'What do you mean, you don''t like IE6...X?'
+date: '2015-02-06 16:00:00'
+published: true
+tags:
+  - web
+modified: '2016-02-12 14:13:23'
+---
 # What do you mean, you don't like IE6...X?
 
 I wrote an offsite blog post entitled "What do you mean, you don't like IE6? Really?" *back in 2011*. The post is still relevant, but in the last 4 years I'm pretty confident that the complaint isn't IE6, it's IE7, or IE8, or...you get the idea.
