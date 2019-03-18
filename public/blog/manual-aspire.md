@@ -20,18 +20,21 @@ The manual is an instruction book on _how_ to program the Spectrum. It's a full 
 This book stirs a passion inside of me that tells me that I can _make something new_ from an existing thing. It reminds me of the 80s Lego boxes: unlike today's Lego, the back of a Lego box would include pictures of creations that you _could_ make with your Lego set. It didn't include any instructions to do so, but it always made me think to myself: _"I can make something more with these bricks"_.
 
 <div class="centre">
+
 ![](/images/speccy-manual/lego-back.jpg)
+
 </div>
 
 The book cover art is like something from Star Wars: a megacity, high above the clouds. When I casually flicked through the pages, I found explanations of how to create music and graphics, detailed written prose on how expressions work. Even how to pronounce hex values and a table of all the hex values and each of 256 associated assembly functions.
 
 
-<div class="grid-2x2">![ZX Spectrum manual cover](/images/speccy-manual/cover.jpg)
-![Directions on how to play music](/images/speccy-manual/music.jpg)
-![How to create graphics with the limited pixels the Spectrum had available](/images/speccy-manual/graphics.jpg)
-![Human readable explanations of how expressions work](/images/speccy-manual/expressions.jpg)
-![A gentle hand holding explaining hex, how it works and how it's pronounced](/images/speccy-manual/hex.jpg)
-![Finally, a table of hex values and their associated assembly function - all 256 of them.](/images/speccy-manual/asm.jpg)
+<div class="grid-2x2">
+<img src="/images/speccy-manual/cover.jpg" alt="ZX Spectrum manual cover">
+<img src="/images/speccy-manual/music.jpg" alt="Directions on how to play music">
+<img src="/images/speccy-manual/graphics.jpg" alt="How to create graphics with the limited pixels the Spectrum had available">
+<img src="/images/speccy-manual/expressions.jpg" alt="Human readable explanations of how expressions work">
+<img src="/images/speccy-manual/hex.jpg" alt="A gentle hand holding explaining hex, how it works and how it's pronounced">
+<img src="/images/speccy-manual/asm.jpg" alt="Finally, a table of hex values and their associated assembly function - all 256 of them.">
 </div>
 
 What I find so elegant about this book being provided to you, the consumer, and the Lego ideas on the back of the box, is that it was _given_ to the consumer. The very act of owning the _thing_ plants the seed that greater things can be done with this _thing_.

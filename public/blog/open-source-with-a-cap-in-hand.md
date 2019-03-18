@@ -23,7 +23,9 @@ So how can I go about changing that?
 Yup, if you install nodemon today, you'll see this message reading:
 
 <figure>
+
 ![nodemon postinstall](/images/nodemon-postinstall.png)
+
 <figcaption>Love nodemon? You can support the project!</figcaption>
 </figure>
 
@@ -76,7 +78,9 @@ So, sure this can be a bit of a sledgehammer approach, but it has given new life
 There's many hugely popular, integral and well supported open source projects. jQuery, Babel, Webpack and many more. Some started by individuals, some started by friends, some by companies, but they're fortunate to have achieved a critical mass which keeps them running.
 
 <figure>
+
   ![lol](/images/black-mirror-open-source.png)
+
   <figcaption>[By @mabekatz](https://twitter.com/maybekatz/status/950963356139057154): The truth be said, amen!</figcaption>
 </figure>
 

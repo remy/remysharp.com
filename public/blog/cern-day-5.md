@@ -17,7 +17,9 @@ It's all live now: the project and all supporting materials online with all our 
 It's truly an honour to have been able to contribute to this tribute to history.
 
 <figure>
+
 ![The Group](/images/cern-2019/thegroup.jpg)
+
 <figcaption>Photo by Jean-François Groff</figcaption></figure>
 
 <!--more-->

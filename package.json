@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "inquirer": "0.12.0",
-    "semantic-release": "4.3.5"
+    "semantic-release": "4.3.5",
+    "serve-handler": "^5.0.8"
   }
 }

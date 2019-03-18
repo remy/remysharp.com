@@ -9,7 +9,10 @@ published: true
 ---
 # A letter of thanks
 
-<div class="flush">![A letter of thanks](/images/thankyou.jpg)</div>
+<div class="flush">
+
+![A letter of thanks](/images/thankyou.jpg)
+</div>
 
 The scanned letter reads:
 

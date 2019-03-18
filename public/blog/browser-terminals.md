@@ -15,7 +15,9 @@ I've been working hard on my [terminal.training](https://terminal.training) vide
 In fact, Umar Hansa [demoed this at ffconf 2016](https://2016.ffconf.org/#optimise-your-web-development-workflow), but didn't have time to go into *how* you do this. Personally, I've tried it and it's a nice trick, but I won't be leaving [iTerm2](https://www.iterm2.com/) any time soon. Still, if the image below intrigues you, read on.
 
 <figure>
+
 ![Terminal in the browser](/images/browser-terminal.jpg)
+
 <figcaption>A browser, with a terminal inside it, running a site that teaches you about the terminal…<em>"Inception!"</em> I hear them cry!</figcaption>
 </figure>
 
