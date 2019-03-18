@@ -1,8 +1,6 @@
 extends ../_partials/layout
 
 block content
-  include ../_partials/page-nav
-
   - permalink = '/drafts/' + current.source;
 
   - var timestamp = '';
@@ -18,7 +16,7 @@ block content
     article.post
       if current.source !== 'index'
         h1.title
-          a(href="#{permalink}")= title
+          a(href=`${permalink}`)= title
           small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/drafts/#{current.source}.md") (edit)
       else
         h1.title Drafts

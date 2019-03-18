@@ -1,34 +1,18 @@
 include notice
-nav.main-nav.clearfix.subpanel
-  include search
-  - posts = []
-  - blogs = public.blog || public.public.blog
-  for post, slug in blogs._data
-    if post.date && (environment == "production" && post.published!==false) || (environment == "development")
-      - post.slug = slug
-      - posts.push(blogs._data[slug])
-
-  //- Iterate over the posts array
-  each post, i in posts.sort(function(a,b){ a = new Date(a.date); b = new Date(b.date); return b<a?-1:b>a?1:0; }).reverse().slice(0, postlimit)
-    //- post slug is the old object key that matched the file name,
-    //- Like "a-post" for example
-    //- Match it against the current page
-    if post.slug == current.source
-        //- Previous is one before this array item
-        //- Next is one after
-        //- Variables make it easy to template
-        - prev = posts[i - 1]
-        - next = posts[i + 1]
-        //- The actual links
-        ul.post-nav
-          li.left.home: a(href="/") Home
-          //- li.left.donate
-          //-   a(href="https://www.paypal.me/rem" target="_blank" title="Show your thanks")
-          //-     span.liked
-          li.left.search: a#search(href="#search") Search
-          if next
-            li.next: a(href="/#{ moment(next.date).format('YYYY/MM/DD') }/#{ next.slug }" title="#{ next.title }") Next
-          else
-            li Latest
-          if prev
-            li.prev: a(href="/#{ moment(prev.date).format('YYYY/MM/DD') }/#{ prev.slug }" title="#{ prev.title }") Previous
+if current.slug
+  nav.main-nav.clearfix.subpanel
+    include search
+    - const [prev, next] = collections.nextPrev(current.slug)
+    //- The actual links
+    ul.post-nav
+      li.left.home: a(href="/") Home
+      //- li.left.donate
+      //-   a(href="https://www.paypal.me/rem" target="_blank" title="Show your thanks")
+      //-     span.liked
+      li.left.search: a#search(href="#search") Search
+      if next
+        li.next: a(href=`${ next.url }` title=`${ next.data.title }`) Next
+      else
+        li Latest
+      if prev
+        li.prev: a(href=`${ prev.url }` title=`${ prev.data.title }`) Previous

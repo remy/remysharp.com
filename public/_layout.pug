@@ -10,9 +10,9 @@ block content
       article.post
         h1.title
           if title
-            a(href="/#{current.source}")= title
+            a(href=`/${current.source}`)= title
           else
-            a(href="/#{current.source}")= altTitle
+            a(href=`/${current.source}`)= altTitle
           small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/#{current.source}.md") (edit)
 
         .post-content

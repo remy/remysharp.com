@@ -31,8 +31,8 @@ article.post.lists
     ul
       each post in collections.recent
         li
-          a(href=`${ post.slug }`)= post.title
-          small &nbsp; updated #{ moment(post.date).format('D-MMM YYYY') }
+          a(href=`${ post.url }`)= post.data.title
+          small &nbsp; updated #{ moment(post.data.date).format('D-MMM YYYY') }
 
 article.post.lists#elsewhere
   header.post-header

@@ -1,11 +1,10 @@
-- posts = []; //.concat(...collections.blog)
-- year = filter === undefined ? current.path.slice(-2, -1)[0] : filter;
+- year = filter || 2006; //filter === undefined ? current.path.slice(-2, -1)[0] : filter;
+- posts = []; //collections.years[year].slice(0)
 - last = null
 .post
   h1.title #{ title || year } archive
   - post = posts.shift()
   while post
-    - console.log(post)
     if post.date
       if !year || moment(post.date).format('YYYY') == year
         - month = moment(post.date).format('MMMM')

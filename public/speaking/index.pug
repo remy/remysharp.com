@@ -1,4 +1,4 @@
-- years = Object.keys(public.speaking._data).sort().reverse();
+- years = Object.keys(_data).sort().reverse();
 
 .post
   h1.title Speaking & Training
@@ -10,21 +10,21 @@
 
     ul.inline
       each year in years
-        - talks = public.speaking._data[year];
+        - talks = _data[year];
         li
-          a(href="##{year}")= year
+          a(href=`${year}`)= year
           span.label (#{talks.length})
 
   each year in years
-    - talks = public.speaking._data[year];
+    - talks = _data[year];
     - talks = [...talks].reverse()
-    h1(id="#{year}").title= year
+    h1(id=`${year}`).title= year
     .post-content
       each talk in talks
         .talk
-          p(id="#{talk.slug}")
+          p(id=`${talk.slug}`)
             strong
-              a.plain(href="#{talk.url}" target="_blank" rel="nofollow")= talk.event.replace(year, '').trim()
+              a.plain(href=`${talk.url}` target="_blank" rel="nofollow")= talk.event.replace(year, '').trim()
             span &nbsp;- #{talk.location}
             br
             if talk.type
@@ -32,7 +32,7 @@
             else
               span.tag Talk
             |  &nbsp;
-            time(datetime="#{talk.date.start}" title="#{talk.date.start}")
+            time(datetime=`${talk.date.start}` title=`${talk.date.start}`)
               span #{moment(talk.date.start).format('D-MMM YYYY')}&nbsp;
             if talk.title
               em= talk.title
@@ -40,6 +40,6 @@
             if talk.links
               span.talk-links
                 each links in talk.links
-                  a(rel="nofollow" href="#{links[1]}" target="_blank")= links[0]
+                  a(rel="nofollow" href=`${links[1]}` target="_blank")= links[0]
                   | &nbsp;
 
