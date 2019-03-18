@@ -1,25 +1,25 @@
 - year = filter || 2006; //filter === undefined ? current.path.slice(-2, -1)[0] : filter;
-- posts = []; //collections.years[year].slice(0)
+- posts = collections.years[year].slice(0)
 - last = null
 .post
   h1.title #{ title || year } archive
   - post = posts.shift()
   while post
-    if post.date
-      if !year || moment(post.date).format('YYYY') == year
-        - month = moment(post.date).format('MMMM')
-        - postYear = moment(post.date).format('YYYY')
+    if post.data.date
+      if !year || moment(post.data.date).format('YYYY') == year
+        - month = moment(post.data.date).format('MMMM')
+        - postYear = moment(post.data.date).format('YYYY')
         if !year && last != postYear
           h1.title= postYear
           - last = postYear
         .post-content
           h2= month
           ul
-            while post && month == moment(post.date).format('MMMM') && (!year || moment(post.date).format('YYYY') == year)
-              if post && post.date
+            while post && month == moment(post.data.date).format('MMMM') && (!year || moment(post.data.date).format('YYYY') == year)
+              if post && post.data.date
                 li
-                  a(href=`${ post.relative }`)= post.title
-                  small.date &nbsp; #{ moment(post.date).format('D-MMM YYYY')}
+                  a(href=`${ post.data.relative }`)= post.data.title
+                  small.date &nbsp; #{ moment(post.data.date).format('D-MMM YYYY')}
               - post = posts.shift()
       else
         - post = posts.shift()

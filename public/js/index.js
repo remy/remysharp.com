@@ -151,18 +151,26 @@ if ($('#index-page').length) {
   loadFlickr();
 }
 
-var $edit = $('small.edit').remove();
-if ($edit.length) {
-  // this is daft, but it prevents Google from including [edit] in the
-  // post title...
-  var $h1 = $('h1:first').hover(
-    function() {
-      $h1.append($edit);
-    },
-    function() {
-      $edit.remove();
-    }
+if (document.body.id.indexOf('blog-') === 0) {
+  var $h1First = $('h1:first');
+  var $edit = $(
+    '<small class="edit"><a href="' +
+      $h1First.data('edit') +
+      '">(edit)</a></small>'
   );
+
+  if ($edit.length) {
+    // this is daft, but it prevents Google from including [edit] in the
+    // post title...
+    var $h1 = $('h1:first').hover(
+      function() {
+        $h1.append($edit);
+      },
+      function() {
+        $edit.remove();
+      }
+    );
+  }
 }
 
 $('.post').fitVids();

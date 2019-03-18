@@ -2,7 +2,7 @@ extends ../_partials/layout
 
 block meta
   - permalink = '/' + moment(date).format('YYYY/MM/DD') + '/' + current.source;
-  link(rel="canonical" href="https://remysharp.com#{permalink}")
+  link(rel="canonical" href=`https://remysharp.com${url}`)
   - var summary = null
   if yield.split(/<!--\s*more\s*-->/).length > 1
     - summary = yield.split(/<!--\s*more\s*-->/)[0].replace(/<h1>.*?<\/h1>/, '').trim()
@@ -14,25 +14,25 @@ block meta
     - summary = '<meta name="twitter:description" content="' + summary.replace(/<(?:.|\n)*?>/gm, '') + '">';
     != summary
   meta(name="twitter:creator" content="@rem")
-  meta(name="twitter:title" content="#{title}")
+  meta(name="twitter:title" content=`${title}`)
   meta(name="twitter:site" content="@rem")
   meta(name="twitter:domain" content="Remy's b:log")
   - var img = image;
   - if (!img && yield.indexOf('<img') !== -1) img = (yield.replace(/\n/g, '').match(/<img\b[^>]+?src\s*=\s*['"]?([^\s'"?#>]+)/) || [,])[1];
   - if (img && img.indexOf('http') !== 0) img = site_url + img;
   if img
-    meta(name="twitter:image:src" content="#{img}")
+    meta(name="twitter:image:src" content=`${img}`)
     meta(name="twitter:card" content="summary_large_image")
   else
     meta(name="twitter:card" content="summary")
 
 block ampalt
   - permalink = '/' + moment(date).format('YYYY/MM/DD') + '/' + current.source;
-  link(rel="amphtml" href="https://remysharp.com#{permalink}/amp")
+  link(rel="amphtml" href=`https://remysharp.com${url}/amp`)
 
 block content
-  - permalink = '/' + moment(date).format('YYYY/MM/DD') + '/' + current.source;
-  - safeTitle = title.replace(/'/g, '\\\'')
+  - permalink = url;
+  - safeTitle = data.title.replace(/'/g, '\\\'')
 
   if !amp
     include ../_partials/post-nav
@@ -42,9 +42,8 @@ block content
       if amp
         h1.title= title
       else
-        h1.title
-          a(href="#{permalink}" rel="bookmark" title="Permanent Link: #{title}")= title
-        small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/blog/#{current.source}.md") (edit)
+        h1(data-edit=`https://github.com/remy/remysharp.com/blob/master/public/blog/${current.source}.md`).title
+          a(href=`${url}` rel="bookmark" title=`Permanent Link: ${title}`)= title
 
       .post-content
         //- strip the h1 out of the body as we printed it above as the permalink
@@ -72,14 +71,14 @@ block content
         //-   script(async defer src="https://app.codesponsor.io/scripts/vzZ1-MnjP7scUNCV7uya0A?theme=light&width=660")
       if amp
         footer
-          a(href="#{permalink}#comments") Leave a comment
+          a(href=`${url}#comments`) Leave a comment
       else if environment == "production"
         #comments.comments
           h2 Comments
           #disqus_thread
           script.
             var disqus_shortname = 'remysharp';
-            var disqus_url = 'http://remysharp.com#{permalink}/';
+            var disqus_url = 'http://remysharp.com#{url}/';
             var disqus_title = '#{safeTitle}';
           //- noscript Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
           //- a.dsq-brlink(href="http://disqus.com") comments powered by <span class="logo-disqus">Disqus</span></a>

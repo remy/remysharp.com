@@ -8,12 +8,11 @@ block content
       - var altTitle = '';
       - if (yield) yield = yield.replace(/<h1>(.*?)<\/h1>/, function (all, match) { if (match) altTitle = match; return '' });
       article.post
-        h1.title
+        h1(data-edit=`https://github.com/remy/remysharp.com/blob/master/public/${current.source}.md`).title
           if title
             a(href=`/${current.source}`)= title
           else
             a(href=`/${current.source}`)= altTitle
-          small.edit: a(href="https://github.com/remy/remysharp.com/blob/master/public/#{current.source}.md") (edit)
 
         .post-content
           - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');

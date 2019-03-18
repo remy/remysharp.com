@@ -9,7 +9,7 @@
     "dev": "eleventy --serve --port=9000 --config=.eleventy.js",
     "test": "semantic-release pre",
     "start": "node server.js",
-    "build": "node server.js compile",
+    "build": "node lib/index.js",
     "semantic-release": "npm run build",
     "update-timestamps": "hostname eq 'unicorn-powered' && blog update-timestamps"
   },

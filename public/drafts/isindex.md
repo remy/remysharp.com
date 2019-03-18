@@ -8,7 +8,6 @@ tags:
   - web
   - code
 ---
-# isindex…?
 
 In our crusade to recreate the [world's first browser](https://worldwideweb.cern.ch/) the question of how search came up.
 
@@ -27,7 +26,7 @@ So `<ISINDEX>` was used. This post looks at how it worked, where it faded out, a
 - [HTML 2.0 Forms specification '94](http://download.remysharp.com/archive/HTML-WG/html-archive.messages/152.html)
 - [`<queryform>` successor to `ISINDEX` and precursor to `FORM`](http://ksi.cpsc.ucalgary.ca/archives/WWW-TALK/www-talk-1993q1.messages/79.html)
 - [INPUT was pre-web?](https://web.archive.org/web/19970120135440/http://www.eit.com/goodies/lists/www.lists/www-talk.1993q1/0079.html)
-- How did ISINDEX work? 
+- How did ISINDEX work?
 - prompt and action properties
 - Example on Lynx and WorldWideWeb
 

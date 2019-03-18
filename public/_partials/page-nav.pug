@@ -10,4 +10,4 @@ if current.path.indexOf('blog') === -1 && current.path+'' !== 'index'
       //-     span.liked
       li.left.search: a#search(href="#search") Search
 
-      li.next: a(href="#{ post.relative }" title="#{ post.title }") Latest post
+      li.next: a(href=`${ post.url }` title=`${ post.data.title }`) Latest post
