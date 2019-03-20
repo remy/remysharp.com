@@ -19,15 +19,15 @@ Here's a few screenshots to give you an idea of what I did, and how it looked.
 
 ### On Twitter for Mac
 
-<img src="http://remysharp.com/images/space-break-native.png" style="margin: 0 auto; display: block; max-width: 100%" />
+<img src="/images/space-break-native.png" style="margin: 0 auto; display: block; max-width: 100%" />
 
 ### On Tweetbot
 
-<img src="http://remysharp.com/images/space-break-tweetbot.png" style="margin: 0 auto; display: block; max-width: 100%" />
+<img src="/images/space-break-tweetbot.png" style="margin: 0 auto; display: block; max-width: 100%" />
 
 ### On twitter.com
 
-<img src="http://remysharp.com/images/space-break-twitter-dot-com.png" style="margin: 0 auto; display: block; max-width: 100%" />
+<img src="/images/space-break-twitter-dot-com.png" style="margin: 0 auto; display: block; max-width: 100%" />
 
 ## The fixes
 

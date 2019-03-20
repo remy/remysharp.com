@@ -118,7 +118,7 @@ So I bit the bullet and took on a dependency, and *I think* it's paying off - pe
 
 First, I was so amazed and impressed by user contributions to logo ideas for nodemon. In the end, you folk (or at least people on twitter and github) voted for this one below (which I also like - along with a few others), and I reckon it could make a pretty cool sticker for the laptop. What do you think?
 
-<img style="display: block; margin: 0 auto; max-width: 100%;" src="http://remysharp.com/images/nodemon.png">
+<img style="display: block; margin: 0 auto; max-width: 100%;" src="/images/nodemon.png">
 
 So get updating:
 

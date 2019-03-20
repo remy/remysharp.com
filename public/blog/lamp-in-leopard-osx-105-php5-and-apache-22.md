@@ -16,7 +16,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # LAMP in Leopard OSX 10.5 (PHP5 and Apache 2.2)
 
-Following my [how to setup your mac web development environment](http://remysharp.com/2007/01/06/how-to-setup-your-mac-web-development-environment/), and today moving to Leopard, my entire offline environment is broken - this is entirely due to the move from Apache 1.3 to Apache 2.2.
+Following my [how to setup your mac web development environment](/2007/01/06/how-to-setup-your-mac-web-development-environment/), and today moving to Leopard, my entire offline environment is broken - this is entirely due to the move from Apache 1.3 to Apache 2.2.
 
 This article will discuss the changes required to get your multi-host mac dev environment running again with PHP5, MySQL, Apache 2 and Leopard.
 
@@ -36,7 +36,7 @@ Copy your .conf from your old <code>httpd/users/</code> directory in to the new 
 
 <code>cp /etc/httpd/users/remy.conf /etc/apache2/users/remy.conf</code>
 
-If you restart apache (<code>sudo apache restart</code>) you should have the domains pointing to your sites.  
+If you restart apache (<code>sudo apache restart</code>) you should have the domains pointing to your sites.
 
 ## PHP5
 
@@ -55,7 +55,7 @@ You have two options to get MySQL running again if you have the following error:
 
 Since Leopard gave me PHP 5.2.4, which according to [Entropy PHP](http://www.entropy.ch/software/macosx/php/#install), is the latest version for Apache 2.x, I went with option 2.
 
-If you don't already have the MySQL conf in <code>/etc/my.cnf</code> (I didn't), then you need to copy a template out of the support files from MySQL.  If you followed the instructions from my [previous article](http://remysharp.com/2007/01/06/how-to-setup-your-mac-web-development-environment/) - then you'll need to run the following:
+If you don't already have the MySQL conf in <code>/etc/my.cnf</code> (I didn't), then you need to copy a template out of the support files from MySQL.  If you followed the instructions from my [previous article](/2007/01/06/how-to-setup-your-mac-web-development-environment/) - then you'll need to run the following:
 
 <pre><code>sudo cp /usr/local/mysql-standard-5.0.27-osx10.4-i686/support-files/my-small.cnf /etc/my.cnf</code></pre>
 

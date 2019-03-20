@@ -14,7 +14,7 @@ modified: '2014-09-18 15:08:58'
 
 Being a bit of a Mac fan, I casually mentioned to my wife the upcoming (and generally eagerly awaited) [Macworld conference](http://www.macworldexpo.com/live/20/events/20SFO07A/keynotes).  I then went on to mention that I'll be buying [Leopard](http://www.apple.com/macosx/leopard/index.html) when it comes out.
 
-[Julie's](http://flickr.com/photos/remysharp/267986595/) response: Didn't you buy it last year?
+[Julie's](https://flickr.com/photos/remysharp/267986595/) response: Didn't you buy it last year?
 
 Me: No, that was Tiger.
 

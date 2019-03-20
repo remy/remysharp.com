@@ -10,7 +10,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # jQuery API Update: offline and anywhere
 
-I've been beavering away at the API behind the scenes for a little while, and if you follow me on [Twitter](http://twitter.com/rem) you've probably already seen the [API browser](http://remysharp.com/jquery-api/) has already been upgraded.
+I've been beavering away at the API behind the scenes for a little while, and if you follow me on [Twitter](http://twitter.com/rem) you've probably already seen the [API browser](/jquery-api/) has already been upgraded.
 
 The key change I've made is to de-couple the API search engine from the front end.  What this has resulted in, is a fairly simple API to create any number of bespoke front ends to the jQuery API browser.
 
@@ -21,9 +21,9 @@ Since the engine now runs separately, it's been easy to create different front e
 
 So now the following front ends are available with the latest API:
 
-* [Live API browser](http://remysharp.com/jquery-api/)
-* [Visual jQuery](http://remysharp.com/visual-jquery/) ([Yehuda Katz](http://www.yehudakatz.com/) will be releasing this to the original URL soon)
-* [Offline AIR app](http://remysharp.com/downloads/jquery-api-browser.air.zip)
+* [Live API browser](/jquery-api/)
+* [Visual jQuery](/visual-jquery/) ([Yehuda Katz](http://www.yehudakatz.com/) will be releasing this to the original URL soon)
+* [Offline AIR app](/downloads/jquery-api-browser.air.zip)
 
 There's no reason this can't be utilised within a Dashboard app (or update the existing one), implemented as an iGoogle widget and so on.
 
@@ -136,10 +136,10 @@ var id = 'trigger141',
 
 for (i = 0; i &lt; item.examples.length; i++) {
   if (item.examples[i].html) {
-      html.push('&lt;iframe id="' 
-        + item.examples[i].id 
-        + '" src="' 
-        + blank_iframe 
+      html.push('&lt;iframe id="'
+        + item.examples[i].id
+        + '" src="'
+        + blank_iframe
         + '"&gt;&lt;/iframe&gt;');
   }
 }

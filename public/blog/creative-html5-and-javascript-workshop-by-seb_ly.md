@@ -27,13 +27,13 @@ The two day workshop broke in to segments around drawing, vectors, particles, si
 By the end of day one we had all the components to build a working Asteroids game. Which I glued together that evening by myself (note that most of these components are Seb's with a few of my own tweaks and glueing) - [full screen/iPad version also working online](http://rem.io/asteroid.html):
 
 <canvas tabindex="-1" id="asteroids" height="300" width="612"></canvas>
-<script src="http://remysharp.com/demo/asteroids.js"></script>
+<script src="/demo/asteroids.js"></script>
 
 <small>Click the canvas above to focus it and control the ship to play and double click to respawn your ship.</small>
 
 The second day we upgraded from 2D to 3D and to close the day, we asked Seb to build a 3D version of Asteroids.  Clearly he wasn't going to completely finish developing the game, but it was fun (and impressive) to see the building blocks being put together.  He got to the point where there we asteroids flying towards him, the ship was controlled by the mouse and had some eased effects to give it a more tactile feel, and he had bullets/laser beams firing at the asteroids - all very cool, and not far off a ready game:
 
-![Seb's 3D asteroids](http://remysharp.com/images/seb-asteroids.jpg)
+![Seb's 3D asteroids](/images/seb-asteroids.jpg)
 
 ## Notes from the day
 

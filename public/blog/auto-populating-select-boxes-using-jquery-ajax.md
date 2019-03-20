@@ -13,7 +13,7 @@ modified: '2017-03-26 21:37:55'
 
 <div class="update">
     <p><strong>Update:</strong> due to popular demand, I've caved in, and written a plugin and demos with multiple-select boxes populating each other and driven from MySQL.</p>
-    <p>View: <a href="http://remysharp.com/2007/09/18/auto-populate-multiple-select-boxes/">Auto-populate multiple select boxes</a></p>
+    <p>View: <a href="/2007/09/18/auto-populate-multiple-select-boxes/">Auto-populate multiple select boxes</a></p>
 </div>
 
 If you are familiar with using select boxes for categorisation and sub-categories, such as ebay does when selling an item, usually this can require a lot of JavaScript to maintain the select boxes, but jQuery can hugely simplify this task by adding a dash of AJAX.

@@ -19,17 +19,17 @@ Jake and Jeremy have posted about how chrome is experimenting with a way to prot
 
 What I'm posting is a proposal for an alternative approach (that I couldn't fit, and didn't want to fit into 140 characters!).
 
-Instead of hiding the URL entirely, take the lead from what exist now (the path is semi-opaque), **but in addition the subdomain is truncated** and dimmed the same way long paths are. 
+Instead of hiding the URL entirely, take the lead from what exist now (the path is semi-opaque), **but in addition the subdomain is truncated** and dimmed the same way long paths are.
 
 The point is to get the *actual domain* across to the visitor, so how about this for a solution:
 
-![http://remysharp.com/images/jake-evil-better.png](http://remysharp.com/images/jake-evil-better.png)
+![/images/jake-evil-better.png](/images/jake-evil-better.png)
 
 Note that the URL is shown in the browser tab (because in this example, there's no `title` element), this should also be used to highlight the actual domain, and not default to showing the full URL.
 
 When compared to the current situation:
 
-![http://remysharp.com/images/jake-evil.png](http://remysharp.com/images/jake-evil.png)
+![/images/jake-evil.png](/images/jake-evil.png)
 
 The change (which I'd expect across all Chrome browsers, i.e. mobile too) is:
 

@@ -36,7 +36,7 @@ To use the bookmarklet, drag the link below in to your links toolbar in IE.
 
 If you use your own version of firebug.js - change the following block in the bookmarklet's code to point to your code:
 
-`http://remysharp.com/wp-content/uploads/2007/03/firebug.js`
+`/wp-content/uploads/2007/03/firebug.js`
 
 ### Safari
 

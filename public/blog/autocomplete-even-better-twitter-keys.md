@@ -18,7 +18,7 @@ A few hours of weekend playing later, I've got automatic Twitter keys (or option
 
 <!--more-->
 
-There's two versions: 
+There's two versions:
 
 1. Twitter Keys
 2. Autocomplete for any site
@@ -27,11 +27,11 @@ There's two versions:
 
 For now you'll have to use [Greasemonkey](https://addons.mozilla.org/firefox/addon/748) to install (rather than a straight plugin), and if you want to add more shortcuts, you'll have to edit the script by hand - though I hope to create an interface soon.
 
-[Get the twitter upgrade](http://remysharp.com/downloads/tweet_upgrade.user.js) or via [userscripts.org](http://userscripts.org/scripts/show/34004)
+[Get the twitter upgrade](/downloads/tweet_upgrade.user.js) or via [userscripts.org](http://userscripts.org/scripts/show/34004)
 
 The autocomplete script (for use on any page) is available here:
 
-[Get the autocomplete script](http://remysharp.com/downloads/auto_complete.user.js) or [userscripts.org](http://userscripts.org/scripts/show/34248)
+[Get the autocomplete script](/downloads/auto_complete.user.js) or [userscripts.org](http://userscripts.org/scripts/show/34248)
 
 Note that with autocomplete, you will need to open the greasemonkey script and add new shortcuts manually.  They only currently trigger on space (or new line).
 

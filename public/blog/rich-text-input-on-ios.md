@@ -18,11 +18,11 @@ The way a number of rich text input libraries work (like CodeMirror and Ace), is
 
 Basically, in iOS if you set an input or textarea to have an opacity of zero, you can't see it (obviously!). However when you focus the element, the cursor is fully visible.
 
-Also, selection still work, though it only shows the selection colour and block, not the text. 
+Also, selection still work, though it only shows the selection colour and block, not the text.
 
-<a href="http://jsbin.com/egulam/33"><img src="http://remysharp.com/images/iphone-selection.png" alt="Example of rich text selection in iOS" style="max-width: 100%; margin: 0 auto; display: block;"></a>
+<a href="http://jsbin.com/egulam/33"><img src="/images/iphone-selection.png" alt="Example of rich text selection in iOS" style="max-width: 100%; margin: 0 auto; display: block;"></a>
 
-So what we do is sit a `textarea` on top of a `div`, listen for `keyup`, and take the value in the `textarea`, run it through a parser to get something syntax highlighting and place the rendered HTML *under* the `textarea`. This gives the illusion that we have a rich text input element. 
+So what we do is sit a `textarea` on top of a `div`, listen for `keyup`, and take the value in the `textarea`, run it through a parser to get something syntax highlighting and place the rendered HTML *under* the `textarea`. This gives the illusion that we have a rich text input element.
 
 You could use this trick to allow the user to select and highlight certain parts of a document - just like you can in the mobile version of google docs in edit mode.
 

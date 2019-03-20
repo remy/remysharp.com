@@ -25,7 +25,7 @@ Funnily enough, the marquee tag is pretty well supported amongst the browser, bu
 
 This demonstration shows 3 *jQuerified* marquees and 3 standard marquees. You can see how the untouched marquees are jumpy to animate, even in the later browsers such as Firefox 3 and Safari - let alone IE6.
 
-[Demonstration of jQuery Marquee](http://remysharp.com/demo/marquee.html)
+[Demonstration of jQuery Marquee](/demo/marquee.html)
 
 ## Download
 
@@ -65,7 +65,7 @@ The follow events can be triggered by the user:
 
 ## Support
 
-I've written the marquee to run on a single timer function rather than one per marquee, the idea being that you *could* go crazy and add lots of marquees, and this code should scale<sup>&dagger;</sup>.  
+I've written the marquee to run on a single timer function rather than one per marquee, the idea being that you *could* go crazy and add lots of marquees, and this code should scale<sup>&dagger;</sup>.
 
 <del>Also, the marquee doesn't currently support <code>direction="up"</code> or <code>direction="down"</code>...yet.  Come back later and I'll upgrade if there's any interest.</del>
 

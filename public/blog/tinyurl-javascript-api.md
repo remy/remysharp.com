@@ -22,9 +22,9 @@ So I thought I'd share the TinyURL callback <abbr title="application programming
 
 The API allows the dynamic creation of TinyURLs on the fly using JavaScript.
 
-The API url is: [http://remysharp.com/tinyurlapi](http://remysharp.com/tinyurlapi)
+The API url is: [/tinyurlapi](/tinyurlapi)
 
-Here's the source code for your own hosting: [http://remysharp.com/downloads/tinyurlapi.php](http://remysharp.com/downloads/tinyurlapi.php)
+Here's the source code for your own hosting: [/downloads/tinyurlapi.php](/downloads/tinyurlapi.php)
 
 There are full instructions and examples on the page along with a demonstration.
 

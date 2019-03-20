@@ -27,7 +27,7 @@ I should also add that this utility/plugin was inspired by [Dustin Diaz's](http:
 
 ## Demo
 
-The example is mostly *lorem* text, but in the middle of the page is an element whose text reads: "You can't see me".  When the element is scrolled in to view it will change to "You found me".  
+The example is mostly *lorem* text, but in the middle of the page is an element whose text reads: "You can't see me".  When the element is scrolled in to view it will change to "You found me".
 
 To confirm this, open firebug while the element is out of view, and watch the element in question as you scroll it in to view.
 
@@ -35,7 +35,7 @@ To confirm this, open firebug while the element is out of view, and watch the el
 
 ## Download
 
-[Download jQuery inview event plugin](http://remysharp.com/downloads/jquery.inview.js)
+[Download jQuery inview event plugin](/downloads/jquery.inview.js)
 
 ## Usage
 
@@ -69,6 +69,6 @@ When the window is scrolled, the event checks the position of the elements again
 
 However, I wanted to create a utility that would only check the elements that were registered under the 'inview' event, i.e. I didn't want to keep checking the element list if we <code>unbind</code> from the event.
 
-This is achieved by dipping in to the <code>$.cache</code> store within jQuery, and looping through, looking for the elements tied to the 'inview' event. 
+This is achieved by dipping in to the <code>$.cache</code> store within jQuery, and looping through, looking for the elements tied to the 'inview' event.
 
 This way the user can treat it like a native event on the page.

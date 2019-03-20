@@ -14,7 +14,7 @@ In my workflow v3 screencast last week I gave a flash of my terminal, and (as I 
 
 TL;DR: it's [zsh](https://github.com/robbyrussell/oh-my-zsh) with a customised version of [agnoster](https://github.com/robbyrussell/oh-my-zsh/blob/master/themes/agnoster.zsh-theme) running with [iTerm 2](http://www.iterm2.com/).
 
-![Remy Sharp's terminal settings](http://remysharp.com/images/terminal.png)
+![Remy Sharp's terminal settings](/images/terminal.png)
 
 <!--more-->
 

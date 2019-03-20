@@ -13,7 +13,7 @@ modified: '2014-09-03 16:15:12'
 
 My blog is now running a WordPress plugin that shows the album covers from [Last.fm](http://last.fm) of songs I've recently listened to.  There's a lot of plugins [out there](http://www.google.com/search?q=wordpress+recent+album+plugin), but none that I found that did the job of getting the artwork, and certainly not for the most recent albums.
 
-[Download the Last.fm recent album artwork plugin](http://remysharp.com/downloads/lastfm_albums_artwork.php)
+[Download the Last.fm recent album artwork plugin](/downloads/lastfm_albums_artwork.php)
 
 
 <!--more-->
@@ -24,19 +24,19 @@ You'll need a [Last.fm](http://last.fm) account and the [iScrobbler](http://www.
 
 ## Installing
 
-[Download the Last.fm recent album artwork plugin](http://remysharp.com/downloads/lastfm_albums_artwork.php) and save it in your <code>plugins</code> directory (usually located in <code>wp-content</code>).
+[Download the Last.fm recent album artwork plugin](/downloads/lastfm_albums_artwork.php) and save it in your <code>plugins</code> directory (usually located in <code>wp-content</code>).
 
 Then activate the plugin from the Plugins tab in your WordPress admin tools.
 
 ## Setup
 
-Through the *Options* -> *Last.fm Recent Albums* tab fill out the required fields.  
+Through the *Options* -> *Last.fm Recent Albums* tab fill out the required fields.
 
 ### Album Art Cache Settings
 
 You must ensure the directory that you point the plugin to is writable.  You can use either full or relative paths for the album artwork.
 
-For example, my album artwork is located at http://remysharp.com/albums/, so my URL is set to:
+For example, my album artwork is located at /albums/, so my URL is set to:
 
 <pre><code>/albums/</code></pre>
 

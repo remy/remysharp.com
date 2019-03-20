@@ -51,7 +51,7 @@ I've finally got around to writing the code to grab the artwork from [Last.fm](h
 
 After writing the [widget for the HTML entities](http://leftlogic.com/lounge/articles/entity-lookup/#widget) I realised there were a lot of bespoke ways of coding inside of [Dashcode](http://developer.apple.com/tools/dashcode/), so I've been writing my experience up and adding tips.
 
-However, between starting the post and now, Dashcode has expired!  I'm hoping that Apple will re-release it since the expiry made sense when Leopard was coming out in July, but not [now that it has been delayed](http://remysharp.com/2007/04/13/apple-delays-osx-leopard/).  
+However, between starting the post and now, Dashcode has expired!  I'm hoping that Apple will re-release it since the expiry made sense when Leopard was coming out in July, but not [now that it has been delayed](/2007/04/13/apple-delays-osx-leopard/).
 
 I've had a play with some of the memory debugging tools for apps, and managed to find the point in the code which performs the date comparison, but I can't work out how to patch the binary to always pass the test (or even find the source of the date to make it expire a year later).  I'd be very interested if someone else out there thinks that they may be able to hack the binary to get it to work...
 
@@ -61,4 +61,4 @@ I'm thinking about adding a category called 'code dump', for useful snippets of 
 
 ### My iPhone App
 
-I've been converting my [Marbles Squared](http://ihatemusic.com) to an iPhone app, starting with the initial code.  I've got [something working now](http://remysharp.com/marbles) without a decent style in place.  It's playable, but there isn't a leaderboard and you can't seed games.
+I've been converting my [Marbles Squared](http://ihatemusic.com) to an iPhone app, starting with the initial code.  I've got [something working now](/marbles) without a decent style in place.  It's playable, but there isn't a leaderboard and you can't seed games.

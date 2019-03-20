@@ -15,7 +15,7 @@ Today is Monday. In 4 days time JavaScripters from across the UK and Europe will
 
 <!--more-->
 
-<img src="http://remysharp.com/images/ff-banners.jpg" style="float: right; margin: 0 0 10px 10px;" alt="Full Frontal Banners" />Full Frontal is really close to selling out, and I wanted to make a deal with you: if we sell out, Left Logic (my company, consisting of just me) promises to buy everyone a drink at the after party to kick off a great evening.
+<img src="/images/ff-banners.jpg" style="float: right; margin: 0 0 10px 10px;" alt="Full Frontal Banners" />Full Frontal is really close to selling out, and I wanted to make a deal with you: if we sell out, Left Logic (my company, consisting of just me) promises to buy everyone a drink at the after party to kick off a great evening.
 
 So if you're someone who's been thinking about coming along, or you know someone, this is the week to get your ticket.
 

@@ -17,7 +17,7 @@ We all know Google engineers are working away a stuff that's so amazing they hav
 That said, they've released functionality tucked away inside the search results page that I never knew existed. Full accessibility support.
 
 <!--more-->
-I spotted this when I was preparing my slides for the [Sweden Geek Meet](http://robertnyman.com/2009/05/04/geek-meet-charity-june-4th-2009-chris-mills-and-remy-sharp-speaking/) talk: [Blueprint for Unobtrusive Web Development](http://remysharp.com/talks/#2009_geekmeet).
+I spotted this when I was preparing my slides for the [Sweden Geek Meet](http://robertnyman.com/2009/05/04/geek-meet-charity-june-4th-2009-chris-mills-and-remy-sharp-speaking/) talk: [Blueprint for Unobtrusive Web Development](/talks/#2009_geekmeet).
 
 When using [FireVox](http://firevox.clcworld.net/ "Fire Vox: A Screen Reading Extension for Firefox") the free screen reader extension for Firefox, Google's search results automatically detected the assistive device and changed the experience for me.
 

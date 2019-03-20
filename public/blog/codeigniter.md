@@ -81,7 +81,7 @@ CI's basic approach, if you did indeed split out the header and footer would be 
   $this->load->view('footer');
 }</code></pre>
 
-On top if which, I also like my controllers to be reused for the Ajax logic (as per my [Ajax pattern](http://remysharp.com/2008/01/12/ajax-validation-pattern/)), so typically I would sniff for the Ajax header and automatically skip over the header and footer.
+On top if which, I also like my controllers to be reused for the Ajax logic (as per my [Ajax pattern](/2008/01/12/ajax-validation-pattern/)), so typically I would sniff for the Ajax header and automatically skip over the header and footer.
 
 This too can be achieve in CI with some subclassing.
 

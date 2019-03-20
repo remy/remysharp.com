@@ -10,7 +10,7 @@ modified: '2014-12-27 17:11:46'
 ---
 # JS Bin's 5th birthday & news
 
-28th September marks [jsbin](http://jsbin.com) **5th** birthday. jsbin was [launched back](http://remysharp.com/2008/10/06/js-bin-for-collaborative-javascript-debugging/) in 2008 and has been a dear project close to my heart. So in celebration, I'm going to run a fun competition and announce some important news here today.
+28th September marks [jsbin](http://jsbin.com) **5th** birthday. jsbin was [launched back](/2008/10/06/js-bin-for-collaborative-javascript-debugging/) in 2008 and has been a dear project close to my heart. So in celebration, I'm going to run a fun competition and announce some important news here today.
 
 <!--more-->
 

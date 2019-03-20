@@ -10,7 +10,7 @@ modified: '2014-09-10 22:18:30'
 ---
 # 2010: The Year I'll Never Forget
 
-I've only managed to write up my thought on the previous years twice ([2009](http://remysharp.com/2010/01/03/goodnight-2009/), [2007](http://remysharp.com/2007/12/31/2007-moments/)), but this year was one of, if not *the*, most important year of my life.
+I've only managed to write up my thought on the previous years twice ([2009](/2010/01/03/goodnight-2009/), [2007](/2007/12/31/2007-moments/)), but this year was one of, if not *the*, most important year of my life.
 
 <!--more-->
 
@@ -24,23 +24,23 @@ I love speaking at conferences and although I had to pull out of a few this year
 
 I also got to run a number of workshops, including running the jQuery for Designers workshop for the mighty [Andy Clarke](http://www.stuffandnonsense.co.uk/) and his [For A Beautiful Web](http://forabeautifulweb.com/) and HTML5 for [@media](http://atmedia.webdirections.org/) and [John Allsopp](http://johnfallsopp.com/) (equally mighty!).  All of them so far have been a hit with the delegates, which leaves me chuffed to bits, and has encouraged me to run a special workshop project in 2011 - but more on that later.
 
-![Remy talking - short isn't he?](http://remysharp.com/images/2010/remy-talking.jpg)
+![Remy talking - short isn't he?](/images/2010/remy-talking.jpg)
 
 ### Projects
 
 The biggest (new) project was [Introducing HTML5](http://introducinghtml5.com/ "Introducing HTML5: Bruce Lawson and Remy Sharp") with [Bruce Lawson](http://brucelawson.co.uk/ "Bruce Lawson&#8217;s  personal site"). What an honour to be asked to co-author the book with Bruce.  It was a really good experience (although there were definitely some struggles with the editors ::grrr::) and all in all I'm actually rather proud of the book we put together.  When I ask around November time, we had sold a "respectable" number of books so far.
 
-![Covers of Introducing HTML5](http://remysharp.com/images/2010/html5.jpg)
+![Covers of Introducing HTML5](/images/2010/html5.jpg)
 
 Then there was [Full Frontal 2010](http://2010.full-frontal.org).  The first Full Frontal was such a big success, I was rather worried that this one would be extremely difficult to equal last years. Turns out: we did just fine.  The conference was a huge success *again*, and again, that's no doubt down to the speakers and Julie's smooth running of the event.  It's definitely happening again in 2011 - I just have to find seven more awesome speakers!
 
-![Remy and Julie closing Full Frontal 2010](http://remysharp.com/images/2010/fullfrontal.jpg)
+![Remy and Julie closing Full Frontal 2010](/images/2010/fullfrontal.jpg)
 
 [Left Logic](http://leftlogic.com/ "Left Logic - Specialist Web Development"), my business, has also been doing well.  This year I've done business with the likes of the [BBC](http://www.bbc.co.uk/ "BBC - Homepage") and [Google](http://www.google.com/ "Google") - both of which are respectable clients, along with a fistful of other *equally* respectable clients.  Right towards the end of the year I was asked to work on a couple of really exciting small projects.  One I'm now sure won't make the light of day (sadly) the other should go live very early in the new year.  No doubt I'll [tweet about it](http://twitter.com/rem) come release day.
 
 Finally, I started working on a(nother) personal project called: [Förbind](http://forbind.net). It's a real-time sockets service designed to make adding real-time easy as pie to your application.  It's still very early days yet, but what's exciting to me, aside from the socket side, is the fact the entire application is written in JavaScript on top of [Node](http://nodejs.org/ "node.js").  Something to keep my skills sharpened.
 
-![Screenshot of Forbind](http://remysharp.com/images/2010/forbind.gif)
+![Screenshot of Forbind](/images/2010/forbind.gif)
 
 ## Personal
 
@@ -62,4 +62,4 @@ Without turning this in to a monster post about my views on life and death, I'm 
 
 For me, 2010 will always be Tia's year.
 
-![Tia, our sleeping baby](http://remysharp.com/images/2010/tia.jpg)
+![Tia, our sleeping baby](/images/2010/tia.jpg)

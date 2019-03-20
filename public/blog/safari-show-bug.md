@@ -21,7 +21,7 @@ The bug only happens in a specific markup situation, as such I've never seen it 
 
 The bug occurs when your hidden content is an inline element, containing <code>&lt;br /&gt;</code> tags and proceeded by another inline element.  It's tricky to explain, but can be seen in the source code of the example below:
 
-[View the demonstration of the bug](http://remysharp.com/demo/safari-hide-bug.html)
+[View the demonstration of the bug](/demo/safari-hide-bug.html)
 
 The fix, after a lot of debugging, turned out to be simply to follow the inline element with a block element.  Somehow the height in the first example is being set to zero allowing the inline <code>span</code> to sit above the element.  In the second example, the block element clears the newly displayed <code>span</code> and it appears correctly.
 

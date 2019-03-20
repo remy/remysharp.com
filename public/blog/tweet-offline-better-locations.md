@@ -21,7 +21,7 @@ In *addition*, since I'm writing code that will parse the Twitter DOM, I might a
 
 I've done this as a [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/748) script:
 
-[Tweet offline & Locations](http://remysharp.com/downloads/tweet_upgrade.user.js)
+[Tweet offline & Locations](/downloads/tweet_upgrade.user.js)
 
 ## Offline Replies
 

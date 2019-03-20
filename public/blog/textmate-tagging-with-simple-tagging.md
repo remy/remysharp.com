@@ -24,7 +24,7 @@ Now for the patch to allow me to tag from textmate.
 
 ## Blogging Bundle
 
-As per my tutorials on how to support tagging from [TextMate for Ultimate Tag Warrior](http://remysharp.com/2007/06/12/textmate-tagging-with-wordpress-22/) you have to patch the blogging bundle.  You can use my patch, or patch the blogging.rb file yourself.
+As per my tutorials on how to support tagging from [TextMate for Ultimate Tag Warrior](/2007/06/12/textmate-tagging-with-wordpress-22/) you have to patch the blogging bundle.  You can use my patch, or patch the blogging.rb file yourself.
 
 Note: that if you've done this before (from a previous tutorial), you don't this to do this again and you can skip to the [XMLRPC changes](#xmlrpc).
 
@@ -105,7 +105,7 @@ Keep reading for a few other tips, and let me know how you find this tutorial.
 
 ### A Fix for Tag URLs
 
-I noticed that my particular install of WordPress 2.2 and Simply Tagging 1.6.8 didn't handle [/tag/textmate](http://remysharp.com/tag/textmate) properly.  It kept saying 404 not found.
+I noticed that my particular install of WordPress 2.2 and Simply Tagging 1.6.8 didn't handle [/tag/textmate](/tag/textmate) properly.  It kept saying 404 not found.
 
 I wrote a fix and patched my version of Simply Tagging to get it to work.  Edit simpletagging.php and change line 697 from:
 

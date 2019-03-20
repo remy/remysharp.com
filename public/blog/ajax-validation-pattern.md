@@ -27,7 +27,7 @@ On <code>keyup</code> the value of the focused input element will be submitted t
 
 ## HTML
 
-<script src="http://remysharp.com/js/prettify.packed.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/prettify.packed.js" type="text/javascript" charset="utf-8"></script>
 <pre><code class="prettyprint">&lt;form action=&quot;/profile&quot; method=&quot;post&quot;&gt;
   &lt;fieldset&gt;
     &lt;legend&gt;Change your username&lt;/legend&gt;
@@ -84,7 +84,7 @@ For example, if my only validation check was the length of the username, before 
     $username_errors = User::validateUsername($_POST['username']);
     $password_errors = User::validatePassword($_POST['password']);
     $email_errors = User::validateEmail($_POST['email']);
-    
+
     if (!count($username_errors) && !count($password_errors) && !count($email_errors)) {
       // save...
     } else {
@@ -102,12 +102,12 @@ The modification is simple to handle the live check:
     if (@$_POST['username']) { // silence warn
       $username_errors = User::validateUsername($_POST['username']);
       $json = array('ok' => true, 'message' => 'Selected username is fine');
-      
+
       if (count($username_errors)) {
         // $username_errors is an array of errors, which we'll join together
         $json = array('ok' => false, 'message' => join(', ', $username_errors));
       }
-      
+
       echo json_encode($json);
       exit;
     }

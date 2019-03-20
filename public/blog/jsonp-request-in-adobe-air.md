@@ -16,7 +16,7 @@ With the [jQuery API browser](http://api.jquery.com) my key aim was to build an 
 
 Typically, the environment is the same, with a few exceptions - one of which I ran in to yesterday.
 
-Making a [JSONP](http://remysharp.com/2007/10/08/what-is-jsonp/) call simply doesn't return back to the application.
+Making a [JSONP](/2007/10/08/what-is-jsonp/) call simply doesn't return back to the application.
 
 So here's a work around to get JSONP to work in Adobe Air.
 

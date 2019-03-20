@@ -34,7 +34,7 @@ What's interesting is (unsurprisingly) Gmail comes up trumps on performance (in 
 
 This is *really* interesting to me because I've spent some time picking apart how Gmail works (and I'm far from done), but I was *pretty damn sure* that JavaScript features fairly heavily, **including** clicking email messages. So I fired up my Android, opened Chrome, opened the remote debugging port and sniffed around the DOM (as usual) and here's what a message (that you tap/click/whatever) looks like:
 
-<img alt="Gmail messages in Chrome for Android" src="http://remysharp.com/images/gmail-messages.gif" style="max-width: 100%">
+<img alt="Gmail messages in Chrome for Android" src="/images/gmail-messages.gif" style="max-width: 100%">
 
 The first highlighted `onclick` is to *star* the email, the second for selecting it for some group action, and the third, yes, that `div` element, that has a click handler on it to open the message. Not "using HTML links to open email messages". Just to drum the point home - do you notice even *one single* HTML (anchor) link in there?
 

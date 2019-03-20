@@ -11,7 +11,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # Wiki to HTML using JavaScript
 
-In building the [jQuery API browser](http://remysharp.com/jquery-api/), since the source of the API comes from the wiki pages over at [docs.jquery.com](http://docs.jquery.com), I had to handle some wiki parsing and convert it to HTML.
+In building the [jQuery API browser](/jquery-api/), since the source of the API comes from the wiki pages over at [docs.jquery.com](http://docs.jquery.com), I had to handle some wiki parsing and convert it to HTML.
 
 However, the more I browsed the API, the more I realised there were aspects of wiki parsing I had missed.
 

@@ -17,7 +17,7 @@ JS Bin supports codecasting out of the box, for free, to both registered and ano
 
 ## My backstory with codecasting
 
-September 28th 2008 is when [jsbin was put live for the first time](http://remysharp.com/2008/10/06/js-bin-for-collaborative-javascript-debugging/). There's somewhat of a backstory as to why I created it, and there's even a precursor site I built. That's since faded into obscurity.
+September 28th 2008 is when [jsbin was put live for the first time](/2008/10/06/js-bin-for-collaborative-javascript-debugging/). There's somewhat of a backstory as to why I created it, and there's even a precursor site I built. That's since faded into obscurity.
 
 It was December 2008 I went to visit [Jeremy](http://adactio.com) & [Andy](http://andybudd.com) at the [Clearleft](http://clearleft.com) offices to ask their advice about the first workshop I would run (Iceweb 2008 in Reykjavik, Iceland). I sat down and told them my fantasy would be to use jsbin ([the 2008 version](http://www.flickr.com/photos/remysharp/4284906136/)) and anything I typed on my presenter machine, the student could follow along and see the code, and could switch back and forth from the output to the code on their own machine.
 

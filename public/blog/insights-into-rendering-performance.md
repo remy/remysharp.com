@@ -29,19 +29,19 @@ The first thing I turned to was the timeline tool in devtools. I recorded the ti
 
 The timeline initially looked like the following when recording and scrolling - note there's just the paint, and nothing else *appearing* to go on:
 
-[![without gpu compositing](http://remysharp.com/images/without-gpu-compositing.png)](http://remysharp.com/images/without-gpu-compositing.png)
+[![without gpu compositing](/images/without-gpu-compositing.png)](/images/without-gpu-compositing.png)
 
 To get a fuller picture, we need to enable "GPU compositing on all pages" in chrome://flags.
 
-[![enable gpu compositing](http://remysharp.com/images/enable-gpu-compositing.png)](http://remysharp.com/images/enable-gpu-compositing.png)
+[![enable gpu compositing](/images/enable-gpu-compositing.png)](/images/enable-gpu-compositing.png)
 
 Now the same timeline recording looks like the following - note that we now have the composite task, and when I hovered over I could see this was taking around 10ms, that with the paint and anything else is pushing us over the golden 16ms, so it's getting rendered in the next *tick*:
 
-[![gpu compositing](http://remysharp.com/images/gpu-compositing.png)](http://remysharp.com/images/gpu-compositing.png)
+[![gpu compositing](/images/gpu-compositing.png)](/images/gpu-compositing.png)
 
 I can also turn on the CPU activity on the "ruler" (not to be confused with the ruler on the elements panel, the "ruler" is the strip in the timeline that show the frame time) (enabled via devtools settings):
 
-[![show cpu time on ruler](http://remysharp.com/images/show-cpu-time-on-ruler.png)](http://remysharp.com/images/show-cpu-time-on-ruler.png)
+[![show cpu time on ruler](/images/show-cpu-time-on-ruler.png)](/images/show-cpu-time-on-ruler.png)
 
 Which confirms the frame is too big.
 
@@ -51,13 +51,13 @@ Which confirms the frame is too big.
 
 From the composite I can see it's the full window being rendered (because I can see the dimensions of the draw). I can also visualise this on the web page (rather than looking at the timeline) by ticking the 'show paint rectangles' in the rendering section of the devtools settings:
 
-[![rendering options](http://remysharp.com/images/rendering-options.png)](http://remysharp.com/images/rendering-options.png)
+[![rendering options](/images/rendering-options.png)](/images/rendering-options.png)
 
 Note that if you want lots of visual feedback, you want to make sure the GPU compositing is enabled (as I explained earlier).
 
 Now when I scroll the page, those parts that are painting, are highlighted in red:
 
-[![red paints](http://remysharp.com/images/red-paints.png)](http://remysharp.com/images/red-paints.png)
+[![red paints](/images/red-paints.png)](/images/red-paints.png)
 
 So the *whole* page is being re-drawn.
 
@@ -88,7 +88,7 @@ So I know the change was an improvement, but was it entirely worth it? I'm not 1
 
 There is another tool I also discovered that's useful for changes: the "show fps meter":
 
-[![fps meter](http://remysharp.com/images/fps-meter.png)](http://remysharp.com/images/fps-meter.png)
+[![fps meter](/images/fps-meter.png)](/images/fps-meter.png)
 
 I used this before the change and after I noticed a *subtle* difference. It's in the histogram on the right (which took me a while to figure out).
 

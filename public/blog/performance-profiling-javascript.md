@@ -17,7 +17,7 @@ modified: '2014-09-03 16:15:12'
 
 So I've written a library that allows me to drop in performance timing relatively unobtrusively.
 
-[Download time.js](http://remysharp.com/time.js) ([compressed time.js](http://remysharp.com/time.packed.js))
+[Download time.js](/time.js) ([compressed time.js](/time.packed.js))
 
 [See the tests](/images/page_timer.html)
 

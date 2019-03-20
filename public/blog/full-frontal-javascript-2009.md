@@ -72,7 +72,7 @@ That was about it for problems. Pros included:
 * Hugely comfy seats and venue with great character
 * Frickin' awesome talks from [Christian](http://twitter.com/codepo8), [Robert](http://twitter.com/robertnyman), [PPK](http://twitter.com/ppk), [Stuart](http://twitter.com/sil), [Todd](http://twitter.com/toddkloots), [Jake](http://twitter.com/jaffathecake) and [Simon](http://twitter.com/simonw)
 * Jake's talk was not only pure comedy throughout, but riddled with genuinely good content, a balance that's hard to strike
-* A successful after party (which I [bought the first round](http://remysharp.com/2009/11/16/going-full-frontal-in-one-week/) for everyone)
+* A successful after party (which I [bought the first round](/2009/11/16/going-full-frontal-in-one-week/) for everyone)
 * Everyone's really positive feedback to Julie and I after the conference and at the after party
 
 And few more nice thing [tucked away in twitter](http://snapbird.org/rem/favs/fullfrontal09), and lots of pictures have been [uploaded to flickr](http://www.flickr.com/photos/tags/fullfrontal09/) too (under the #fullfrontal09 tag).

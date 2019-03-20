@@ -19,7 +19,7 @@ With some mobile web sites when visited on the iPhone, you may want to skip past
 
 Below are two screenshots from the mobile view of [Full Frontal, my JavaScript conference](http://full-frontal.org):
 
-<img width="280" style="margin-right: 20px;" src="http://remysharp.com/images/ff-with-bar.png" alt="Full Frontal with the url bar" /><img  width="280" src="http://remysharp.com/images/ff-without-bar.png" alt="Full Frontal without the url bar" /> 
+<img width="280" style="margin-right: 20px;" src="/images/ff-with-bar.png" alt="Full Frontal with the url bar" /><img  width="280" src="/images/ff-without-bar.png" alt="Full Frontal without the url bar" />
 
 Making the iPhone hide the url bar is fairly simple, you need run the following JavaScript:
 

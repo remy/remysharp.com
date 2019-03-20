@@ -24,11 +24,11 @@ So kindly, [RellyAB](http://twitter.com/rellyab) (amongst others) retweeted for 
 
 Here's what it looks like with native retweets enabled:
 
-![Native](http://remysharp.com/images/native.png)
+![Native](/images/native.png)
 
 ...and here it is with out native retweets enabled:
 
-![Old School](http://remysharp.com/images/oldschool.png)
+![Old School](/images/oldschool.png)
 
 Notice the ellipsis. No huge surprise there.
 
@@ -42,11 +42,11 @@ Retweeting looks to be pitched as a thumbs up for a tweet, or "like" feature, bu
 
 But the upshot of this architecture change is that potentially the noise goes down.  Since the retweets have their own API, the friends timeline can stay free (for now<sup>&dagger;</sup>) of the extra noise.  For example, in Tweetie, even though Relly had retweeted my experiment, it *doesn't* appear in her timeline:
 
-![Tweetie RT](http://remysharp.com/images/tweetie.png)
+![Tweetie RT](/images/tweetie.png)
 
-Moreover, this is because the API call to user timeline is free of native retweets - so apps relying on it won't contain the retweet (for better or for worse - you may be using [Snap Bird](http://snapbird.org) to find the tweet that was retweeted by Relly and [fail to find it](http://snapbird.org/rellyab/140)).  
+Moreover, this is because the API call to user timeline is free of native retweets - so apps relying on it won't contain the retweet (for better or for worse - you may be using [Snap Bird](http://snapbird.org) to find the tweet that was retweeted by Relly and [fail to find it](http://snapbird.org/rellyab/140)).
 
-In fact, *all* of the native retweet APIs require authentication, so apps that rely on working without auth (such as [Snap Bird](http://snapbird.org)) won't contain retweets at all in the future!  
+In fact, *all* of the native retweet APIs require authentication, so apps that rely on working without auth (such as [Snap Bird](http://snapbird.org)) won't contain retweets at all in the future!
 
 I'm not 100% sure whether this is good or bad, but it certainly mixes things up for the [developers working with the API](http://twitter.com/nuxnix/uk-twitterati).
 
@@ -56,7 +56,7 @@ I think, if anything, it shows that Twitter are treating [twitter.com](http://tw
 
 I've also spotted this (obvious now) functionality in Twitter - the ability to ignore retweets from particular users (via the green RT button on the right):
 
-![Aral](http://remysharp.com/images/aral.png)
+![Aral](/images/aral.png)
 
 This is perfect for those people you follow and value their retweets, something you could have missed, and where you can choose to ignore others. Ignoring the developer implications for a moment, the user experience is definitely better, and this will pass down the chain to the third-party apps like Tweetie (once they update).
 

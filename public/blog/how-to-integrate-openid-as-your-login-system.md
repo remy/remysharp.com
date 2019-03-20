@@ -14,7 +14,7 @@ modified: '2014-09-03 16:15:12'
 
 I've assumed you know what [OpenID](http://openid.net/what/) is, you're using your own [blog as your identity](http://simonwillison.net/2006/Dec/19/openid/) and now you want to offer a way for your users to log in your sexy new webapp using OpenID, or, as I've done in my code experiment [Todged](http://todged.com/) use it exclusively for logging in.
 
-However, in developing the [log in system](http://todged.com/login) for Todged I found there was a lack of walk throughs on the Internet explaining how to plug OpenID in.  
+However, in developing the [log in system](http://todged.com/login) for Todged I found there was a lack of walk throughs on the Internet explaining how to plug OpenID in.
 
 Also, this tutorial aims answer the biggest (and simplest) question I had: how do you test OpenID?
 
@@ -25,7 +25,7 @@ Also, this tutorial aims answer the biggest (and simplest) question I had: how d
 
 There's no point in re-inventing the wheel, so [use someone else's library](http://wiki.openid.net/Libraries).  Since I'm working in PHP, I opted for 'SimpleOpenID' class in PHP, **however** it did not work entirely out of the box.
 
-To get going, here's my copy of [SimpleOpenID.class.php](http://remysharp.com/downloads/SimpleOpenID.class.php).
+To get going, here's my copy of [SimpleOpenID.class.php](/downloads/SimpleOpenID.class.php).
 
 ## Database Setup: Say Goodbye to Password Storage
 
@@ -44,7 +44,7 @@ create table user_openids
   id int not null auto_increment,
   identity char(255) not null, # this our key field
   openid char(255) not null,
-  server char(255) not null,  
+  server char(255) not null,
 
   primary key (id),
   index openid (openid)
@@ -76,7 +76,7 @@ If you're familiar with these steps, skip onwards, otherwise it's worth understa
 4. Our server will now run a callback to the OpenID server which authenticates the whole process.
 5. If the OpenID responds with 'ok', we'll proceed, otherwise, there was some problem with the log in process.
 
-<small>&dagger;&dagger; It's important that the domain redirects correctly, otherwise this step won't work.  For instance, I had the OpenID server redirecting back to www.todged.com rather than todged.com (without the www) which broke the redirect (since [I don't support 'www'](http://remysharp.com/2006/09/08/dub-dub-dub-or-how-we-pronounce-the-world-wide-web/)).</small>
+<small>&dagger;&dagger; It's important that the domain redirects correctly, otherwise this step won't work.  For instance, I had the OpenID server redirecting back to www.todged.com rather than todged.com (without the www) which broke the redirect (since [I don't support 'www'](/2006/09/08/dub-dub-dub-or-how-we-pronounce-the-world-wide-web/)).</small>
 
 ## OpenID Login Code
 
@@ -97,23 +97,23 @@ $openid-&gt;SetTrustRoot('http://todged.com');
 // I'm also requesting their email address for the creation of their new profile
 $openid-&gt;SetOptionalFields('email');
 
-// User::GetOpenIDServer checks the database table 'user_openids' for the 
+// User::GetOpenIDServer checks the database table 'user_openids' for the
 // user's openid and the associated identity, which saves having to run
 // a separate HTTP request if it's not available (see else case).
 if (list($server, $identity) = User::GetOpenIDServer($_REQUEST['openid'])) {
   $openid-&gt;SetOpenIDServer($server);
   $openid-&gt;SetIdentity($identity);
 } else {
-  // 
+  //
   if ($server = $openid-&gt;GetOpenIDServer()) {
     // just used to optimise the process
     $identity = $openid-&gt;GetIdentity();
-    
+
     // we're now creating a relationship between the user's OpenID and their
     // *real* identity which can be used in subsequent logins to save time.
     User::SaveOpenIDServer($_REQUEST['openid'], $server, $identity);
   } else {
-    // This shouldn't happen - but will if there's something fundamentally wrong 
+    // This shouldn't happen - but will if there's something fundamentally wrong
     // with our request.  Examples in Debugging section of this tutorial.
     user_error('Something has gone wrong with OpenID identity request process');
   }
@@ -138,13 +138,13 @@ if ($ok) {
    * If they're new - send them to an activate page with appropriate captcha logic
    * If they existed already, redirect to their home page
    */
-  
+
   // tries to load a user profile using their openid identity,
   // standard stuff, that would normally be by username.
   if (!$User-&gt;LoadUserByOpenID($identity)) {
     // create a new user
     $User-&gt;CreateUserFromOpenID($identity, $_GET['openid_sreg_email']);
-    
+
     // ask the user, as a once off, to prove they're human.
     Utility::Redirect('/activate');
   } else {
@@ -154,12 +154,12 @@ if ($ok) {
 } else if ($openid-&gt;IsError() == true) {
   // There was a problem logging in.  This is captured in $error (do a var_dump for details)
   $error = $openid-&gt;GetError();
-  
+
   $msg = "OpenID auth problem\nCode: {$error['code']}\nDescription: {$error['description']}\nOpenID: {$identity}\n";
-  
+
   // error message handling is done further along in the code, but ensure the user
   // can pass on as much information as possible to replicate the bug.
-} else { 
+} else {
   // General error, not due to comms
   $Error = 'Authorisation failed, please check the credentials entered and double check the use of caplocks.';
 }</code></pre>
@@ -170,7 +170,7 @@ Though it's not detailed anywhere, it's actually simple.  There's nothing to do 
 
 ## Problems I Encountered
 
-I've provided my own copy of [SimpleOpenID.class.php](http://remysharp.com/downloads/SimpleOpenID.class.php) because I had to patch it to work with all the [examples](http://openid.net/get/) on the OpenID site.
+I've provided my own copy of [SimpleOpenID.class.php](/downloads/SimpleOpenID.class.php) because I had to patch it to work with all the [examples](http://openid.net/get/) on the OpenID site.
 
 The OpenID site provides a good list of examples where a user may [already have an OpenID](http://openid.net/get/).  So I used this as my test cases.
 
@@ -194,9 +194,9 @@ For example, sending <em>http://remysharp.wordpress.com</em> as the identity doe
 
 ### Technorati OpenID Problems
 
-From the examples over at [openid.net/get/](http://openid.net/get/) is says Technorati supports OpenID with all accounts.  However, they're very strict about the OpenID. 
+From the examples over at [openid.net/get/](http://openid.net/get/) is says Technorati supports OpenID with all accounts.  However, they're very strict about the OpenID.
 
-For example, the OpenID <em>technorati.com/people/technorati/remysharp</em> wouldn't work, and would serve a Technorati page saying the content had be lost.  
+For example, the OpenID <em>technorati.com/people/technorati/remysharp</em> wouldn't work, and would serve a Technorati page saying the content had be lost.
 
 It took me a while to realise the 'http://' part was mandatory.  So <em>http://technorati.com/people/technorati/remysharp</em> does work.
 

@@ -23,7 +23,7 @@ It's quite simple to achieve if you've got a Mac and [QuickTime Pro](http://www.
 It's surprisingly easy, but very well tucked away inside of QuickTime. Here are the steps:
 
 1. Open movie in QuickTime.
-2. Window -> Show Movie Properties (<img src="http://remysharp.com/images/mac_command.gif" height="12" width="12" alt="command" title="command">J)
+2. Window -> Show Movie Properties (<img src="/images/mac_command.gif" height="12" width="12" alt="command" title="command">J)
 3. In the track listings select the video track (you'll know because 'Visual Settings' will become available as a tab)
 4. Select Visual Settings and from the Flip/Rotate options, rotate in the appropriate direction.
 

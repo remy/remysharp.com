@@ -48,7 +48,7 @@ npm install -g harp
 
 You should see this:
 
-![http://remysharp.com/images/harp-install.gif](http://remysharp.com/images/harp-install.gif)
+![/images/harp-install.gif](/images/harp-install.gif)
 
 Note that you can install Harp locally to your project, but for simplicity's sake in this post, we're using it as a utility.
 

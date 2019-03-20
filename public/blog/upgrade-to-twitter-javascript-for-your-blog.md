@@ -10,7 +10,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # Upgrade to Twitter JavaScript for your blog
 
-I've been following the [requests](http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/#comments) on the current [Twitter JS plugin](http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/) and decided to implement a few.
+I've been following the [requests](/2007/05/18/add-twitter-to-your-blog-step-by-step/#comments) on the current [Twitter JS plugin](/2007/05/18/add-twitter-to-your-blog-step-by-step/) and decided to implement a few.
 
 In particular there's now support for templates, which gives you full control of how the tweet is displayed.
 
@@ -34,7 +34,7 @@ For example, here's is [John Resig's](http://ejohn.org) twitters with friends ba
 
 Using this template, I've been able to wrap the status in quote and make the 'ago' time a link to the original twitter posting.
 
-See the original [add twitter to your blog](http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/) post for a full list of template values and options.
+See the original [add twitter to your blog](/2007/05/18/add-twitter-to-your-blog-step-by-step/) post for a full list of template values and options.
 
 <link rel="stylesheet" href="/images/twitter.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 

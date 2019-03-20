@@ -133,7 +133,7 @@ modified: '2014-09-03 16:15:12'
 
 <p>Within the plugin, you could add better validation to ensure we are only applying to input elements where type is &#8216;text&#8217;.</p>
 
-<div class="update"><p><strong>Update June '07:</strong> You can view and use the <a href="http://remysharp.com/2007/03/19/a-few-more-jquery-plugins-crop-labelover-and-pluck/#labelOver">label over plugin</a> for an accessible version of the 'text hints'</p></div>
+<div class="update"><p><strong>Update June '07:</strong> You can view and use the <a href="/2007/03/19/a-few-more-jquery-plugins-crop-labelover-and-pluck/#labelOver">label over plugin</a> for an accessible version of the 'text hints'</p></div>
 
 <p>There are a couple of places you could look at to improve the plugin.  The first that I can think of is to apply the label element to float inside the element (as seen on <a href="http://digg.com">Digg</a>&#8217;s search and explained over at <a href="http://www.alistapart.com/articles/makingcompactformsmoreaccessible">A List Apart: Making Compact Forms More Accessible</a>).</p>
 

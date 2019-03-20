@@ -11,7 +11,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # When should we stop caring about IE6?
 
-Microsoft's bastard child needs your love, but surely not forever?  [Simon raises a point](http://remysharp.com/2008/03/06/ie8-hands-on-a-developers-view/#comment-53531) that even though IE8 is on it's way - due to IE6's market share, IE8 is almost good for nothing.
+Microsoft's bastard child needs your love, but surely not forever?  [Simon raises a point](/2008/03/06/ie8-hands-on-a-developers-view/#comment-53531) that even though IE8 is on it's way - due to IE6's market share, IE8 is almost good for nothing.
 
 I don't agree.
 
@@ -63,4 +63,4 @@ That said, by then, we *should* be on Firefox 4-5, <del>IE10</del> IE9-beta and 
 
 Sure, 2010 is pretty far away right now, but it'll be here before you know it.
 
-The bottom line is, as developers and designers, if we want to support the majority of users, we're going to have to support all the latest browsers, and for the big boys, Microsoft in particular (though if Google enter that market we could have another big boy on our hands) - we're going to have to support all the [stupid](http://ejohn.org/blog/most-bizarre-ie-quirk/) [little](http://remysharp.com/2007/02/10/ie-7-breaks-getelementbyid/) [quirks](http://www.quirksmode.org/bugreports/archives/explorer_7/index.html) for last 3 revisions of the browser.
+The bottom line is, as developers and designers, if we want to support the majority of users, we're going to have to support all the latest browsers, and for the big boys, Microsoft in particular (though if Google enter that market we could have another big boy on our hands) - we're going to have to support all the [stupid](http://ejohn.org/blog/most-bizarre-ie-quirk/) [little](/2007/02/10/ie-7-breaks-getelementbyid/) [quirks](http://www.quirksmode.org/bugreports/archives/explorer_7/index.html) for last 3 revisions of the browser.

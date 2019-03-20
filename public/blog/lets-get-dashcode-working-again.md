@@ -20,7 +20,7 @@ modified: '2014-09-03 16:15:12'
 
 Dashcode has expired on time, but Leopard wasn't delivered on time, and now we're left for at least 3 more months without this excellent, free development environment.
 
-Since Apple don't seem to be releasing another beta until Leopard is out it looks like we're forced to look to alternative methods of widget development.  So, either someone needs to get in there and patch Dashcode around the expiry or you can use [my script](http://remysharp.com/2007/07/30/lets-get-dashcode-working-again/#script) to get it going again.
+Since Apple don't seem to be releasing another beta until Leopard is out it looks like we're forced to look to alternative methods of widget development.  So, either someone needs to get in there and patch Dashcode around the expiry or you can use [my script](/2007/07/30/lets-get-dashcode-working-again/#script) to get it going again.
 
 
 <!--more-->

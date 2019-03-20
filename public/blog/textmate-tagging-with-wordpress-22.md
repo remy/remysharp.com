@@ -53,9 +53,9 @@ You need to backup a copy of your xmlrpc.php file.  That's just good practice.
 
 ### Download patch XMLRPC
 
-<p>On <a href="http://remysharp.com/2006/10/01/wordpress-tagging-and-textmate/#comment-154">Dan's suggestion</a>, I am <a href="/images/xmlrpc.php.txt">offering my own xmlrpc.php</a> file for you to use.</p>
+<p>On <a href="/2006/10/01/wordpress-tagging-and-textmate/#comment-154">Dan's suggestion</a>, I am <a href="/images/xmlrpc.php.txt">offering my own xmlrpc.php</a> file for you to use.</p>
 
-This is the xmlrpc for WordPress 2.2.  For WordPress 2.0 - see my earlier post on getting [tagging working in Wordpress 2.0](http://remysharp.com/2006/10/01/wordpress-tagging-and-textmate/)
+This is the xmlrpc for WordPress 2.2.  For WordPress 2.0 - see my earlier post on getting [tagging working in Wordpress 2.0](/2006/10/01/wordpress-tagging-and-textmate/)
 
 [Download the xmlrpc.php file](/images/xmlrpc.php.txt)
 

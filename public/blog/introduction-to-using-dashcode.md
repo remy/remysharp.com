@@ -30,9 +30,9 @@ As part of this article, I've included a generic Ajax widget that simply grabs a
 
 If you've got a recent version of Tiger (certainly bought any time this year), the system CDs will contain Dashcode in the developer kit (it may be installed already in your <code>/Developer/Applications</code> directory).
 
-Apple did have [Dashcode available for download](http://developer.apple.com/tools/dashcode/), but since it expired in July ([when Leopard was *supposed* to come out](http://remysharp.com/2007/04/13/apple-delays-osx-leopard/)) it's no longer there.  You can hunt around the Internet for a old mirror if you don't have the CDs.
+Apple did have [Dashcode available for download](http://developer.apple.com/tools/dashcode/), but since it expired in July ([when Leopard was *supposed* to come out](/2007/04/13/apple-delays-osx-leopard/)) it's no longer there.  You can hunt around the Internet for a old mirror if you don't have the CDs.
 
-Once installed, it'll say it's expired: [just get Dashcode working again](http://remysharp.com/2007/07/30/lets-get-dashcode-working-again/).
+Once installed, it'll say it's expired: [just get Dashcode working again](/2007/07/30/lets-get-dashcode-working-again/).
 
 ## Stability
 
@@ -76,7 +76,7 @@ This is one of the few areas that's well documented in the provided [API](http:/
 
 <pre><code>widget.system('ps -auxww | grep ' + myCommand, null);</code></pre>
 
-What you should keep in mind, is that you can run **any** command through the system method.  This includes Perl, Ruby, AppleScript and anything else that suits your needs.  Using these commands I've recently been able to create a widget that queries [Mail's SQLite's database via Perl](http://remysharp.com/2007/07/03/a-way-to-keep-track-and-in-touch/).  It was a case of running the system method and capturing the output (and in my case, eval'ing it from a <abbr title="JavaScript Object Notation">JSON</abbr> output).
+What you should keep in mind, is that you can run **any** command through the system method.  This includes Perl, Ruby, AppleScript and anything else that suits your needs.  Using these commands I've recently been able to create a widget that queries [Mail's SQLite's database via Perl](/2007/07/03/a-way-to-keep-track-and-in-touch/).  It was a case of running the system method and capturing the output (and in my case, eval'ing it from a <abbr title="JavaScript Object Notation">JSON</abbr> output).
 
 ## Ajax in the widget
 
@@ -89,7 +89,7 @@ For example, you could use Ajax to pull your film page from [IMDb](http://imdb.c
 However, if you do want to pull some data from a web page and process it using the DOM returned you have to fiddle the request - in particular the <code>responseXML</code> will be null because the page being returned isn't <code>text/xml</code> - it's <code>text/html</code>.  You can do it using the following (in [jQuery](http://jquery.com) syntax):
 
 <pre><code>$.ajax({
-    url: 'http://remysharp.com/example_page', // doesn't really exist!
+    url: '/example_page', // doesn't really exist!
     dataType: 'html', // important
     success: function (xml) {
         // convert the HTML to an XML DOM object

@@ -38,7 +38,7 @@ If anyone has any problems in any other browsers (or even these), I would apprec
 
 [View the tag suggestion demo](/images/tagging.php)
 
-[View the source for the demo](http://remysharp.com/downloads/tagging.php)
+[View the source for the demo](/downloads/tagging.php)
 
 The demonstration shows off both the static based tags and the Ajax based tag suggestion.  Although the tag sets are the same, be sure to open [Firebug](http://getfirebug.com) and check the Ajax hits in the second example.
 

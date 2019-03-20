@@ -14,7 +14,7 @@ modified: '2014-09-03 16:15:12'
 
 <!--more-->
 
-<img src="/images/ff-tee.jpg" style="float:left; margin-right: 20px; margin-bottom: 20px;" alt="Remy sporting Full Frontal t-shirt" />On August 31st 2010, Julie and I lost our baby [Tia](http://remysharp.com/tia/letter/) and our world was turned upside down. We're far from "over it", so Full Frontal was a huge step for us, one that we had planned to be very different. Running the conference with Tia as a newborn baby was going to be one thing - but running it without her was something completely different.
+<img src="/images/ff-tee.jpg" style="float:left; margin-right: 20px; margin-bottom: 20px;" alt="Remy sporting Full Frontal t-shirt" />On August 31st 2010, Julie and I lost our baby [Tia](/tia/letter/) and our world was turned upside down. We're far from "over it", so Full Frontal was a huge step for us, one that we had planned to be very different. Running the conference with Tia as a newborn baby was going to be one thing - but running it without her was something completely different.
 
 When we realised people wanted t-shirts, we twigged that we could auction the t-shirts off and raise money in Tia's name at the same time. So 100% of the proceeds will go to [SANDS](http://www.uk-sands.org/), a UK charity who both support parents in a similar situation to us but also promote research to reduce the loss of baby's lives.
 

@@ -11,7 +11,7 @@ modified: '2014-09-10 22:12:43'
 ---
 # The Delicate Apple - Part 2
 
-Following on from <a href="http://remysharp.com/2006/12/14/the-delicate-apple/">my accident</a>, I chased and chased last Thursday to find out whether the AA would cover the laptop.
+Following on from <a href="/2006/12/14/the-delicate-apple/">my accident</a>, I chased and chased last Thursday to find out whether the AA would cover the laptop.
 
 They had no record of in their policy, and Julie was certain she asked for it.
 

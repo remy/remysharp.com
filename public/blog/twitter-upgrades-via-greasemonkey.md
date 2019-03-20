@@ -18,6 +18,6 @@ So I've taken it upon myself to a) upgrade his script to work on all pages, not 
 
 I've also striped out the code that waited for the DOM to be ready - not sure why I did it in the first place, but it looks like the whole DOM is available to greasemonkey as soon as it hit the code - so it means the lat/long lookup is quicker.
 
-[Get the twitter upgrade](http://remysharp.com/downloads/tweet_upgrade.user.js) or via [userscripts.org](http://userscripts.org/scripts/show/34004)
+[Get the twitter upgrade](/downloads/tweet_upgrade.user.js) or via [userscripts.org](http://userscripts.org/scripts/show/34004)
 
-For more information on my bits of the script, [have a read of my initial post](http://remysharp.com/2008/09/17/tweet-offline-better-locations/)
+For more information on my bits of the script, [have a read of my initial post](/2008/09/17/tweet-offline-better-locations/)

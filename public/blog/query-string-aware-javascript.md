@@ -31,7 +31,7 @@ var query = getLastChild(document.lastChild).getAttribute('src').replace(/.*\?/,
 
 The <code>query</code> variable now contains the full query string and can be used to change the result of your script.
 
-I would then pass that in to my [getQuery](http://remysharp.com/2008/06/24/query-string-to-object-via-regex/) function so I had access to it as an object.
+I would then pass that in to my [getQuery](/2008/06/24/query-string-to-object-via-regex/) function so I had access to it as an object.
 
 ## Demo
 

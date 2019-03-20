@@ -26,7 +26,7 @@ The poor man's behaviours takes a different approach.
 
 The technique is really very simple, and if you've been writing JavaScript you may have already made use of it in some form.  It doesn't use a timer, and makes use of event bubbling.
 
-<script src="http://remysharp.com/js/prettify.packed.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/prettify.packed.js" type="text/javascript" charset="utf-8"></script>
 
 In our example, our HTML would look like this:
 

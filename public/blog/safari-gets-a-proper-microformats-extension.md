@@ -20,4 +20,4 @@ It's only available for Leopard and I had a little trouble installing, but this 
 
 It probably marks the death of my bookmarklet in Safari, but to be fair, the bookmarklet was only ever been an intermediate solution before fully integrated Microformats detection and importing was available.  Hopefully Apple will consider integrating this kind of functionality directly, since [Firefox 3](http://wiki.mozilla.org/Firefox/Feature_Brainstorming:Microformat_Handling) and [IE8](http://arstechnica.com/news.ars/post/20070502-microsoft-drops-hints-about-internet-explorer-8.html) are hinting towards support.
 
-<a href="http://www.flickr.com/photos/remysharp/2062178078/" title="Microformats Integrated Plugin by Remy Sharp, on Flickr"><img src="http://farm3.static.flickr.com/2318/2062178078_0d09e317dc.jpg" width="420" height="302" alt="Microformats Integrated Plugin" /></a>
+<a href="http://www.flickr.com/photos/remysharp/2062178078/" title="Microformats Integrated Plugin by Remy Sharp, on Flickr"><img src="https://farm3.static.flickr.com/2318/2062178078_0d09e317dc.jpg" width="420" height="302" alt="Microformats Integrated Plugin" /></a>

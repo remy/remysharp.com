@@ -11,7 +11,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # html5 and Firefox2
 
-If you're using html5 for your site, and care about what the [3% of Firefox 2](http://www.w3schools.com/browsers/browsers_firefox.asp) users experience, then this should help you. 
+If you're using html5 for your site, and care about what the [3% of Firefox 2](http://www.w3schools.com/browsers/browsers_firefox.asp) users experience, then this should help you.
 
 For me it wasn't so much the 3%, it was that my pages work perfectly in IE6, but are a complete mess in Firefox 2, and I just couldn't live with that.
 
@@ -32,9 +32,9 @@ This fix also handles Camino 1.x as it uses the same render engine as Firefox 2.
 
 There's the JavaScript solution that Simon proposes - which does work, but it isn't complete.
 
-The solution proposed on the blog post only solves the markup in the example (it may have been implied, but it took me a while of debugging to work it out). 
+The solution proposed on the blog post only solves the markup in the example (it may have been implied, but it took me a while of debugging to work it out).
 
-The other dependancy the solution has is that the elements in the <code>tags</code> array must be in the order that the elements appear in the DOM.  
+The other dependancy the solution has is that the elements in the <code>tags</code> array must be in the order that the elements appear in the DOM.
 
 It also can't handle nesting down in to the node - though I'm sure it can be updated to handle this.
 
@@ -50,7 +50,7 @@ For anyone hell bent on doing a pure JavaScript solution, there is a way, but it
 
 ## Working Solution
 
-Using [Bruce's](http://brucelawson.co.uk) test page, I've put the [html5 test page](http://remysharp.com/demo/html5-test.html) on my server, and if you check it out in Firefox 2, you'll see it working, compared to the [original broken version](http://brucelawson.co.uk/tests/html5-elements.html).
+Using [Bruce's](http://brucelawson.co.uk) test page, I've put the [html5 test page](/demo/html5-test.html) on my server, and if you check it out in Firefox 2, you'll see it working, compared to the [original broken version](http://brucelawson.co.uk/tests/html5-elements.html).
 
 There's a few tweaks you need to get this to work, but before I go in to them, there's one error that I found that I couldn't work out a way around without invalidating the html5:
 
@@ -87,8 +87,8 @@ Then to get the page to render the style properly, add the follow (typical html4
 
 ## Conclusion
 
-For me there's a bigger problem that I have to be comfortable to say that IE users must have JavaScript enabled to get the [html5 enabling script](http://remysharp.com/2009/01/07/html5-enabling-script/) to work, but I think you have to justify this on a case by case basis.
+For me there's a bigger problem that I have to be comfortable to say that IE users must have JavaScript enabled to get the [html5 enabling script](/2009/01/07/html5-enabling-script/) to work, but I think you have to justify this on a case by case basis.
 
-I've been discussing filtering processes that convert the html on the fly out the door (with server side caching), but my concern is that it means supporting two models in the CSS such as <code>section, .section {}</code>, and then you have the issue of IE6 not being able to handle <code>&lt;section class=&quot;intro&quot;&gt;</code> as this would be <code>.section.intro</code> which we've all run in to that headache.  
+I've been discussing filtering processes that convert the html on the fly out the door (with server side caching), but my concern is that it means supporting two models in the CSS such as <code>section, .section {}</code>, and then you have the issue of IE6 not being able to handle <code>&lt;section class=&quot;intro&quot;&gt;</code> as this would be <code>.section.intro</code> which we've all run in to that headache.
 
 Finally there's the JavaScript selectors that you might use.  Sure you could write <code>$('section, .section')</code> but at what point do we draw the line?

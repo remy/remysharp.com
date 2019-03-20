@@ -10,11 +10,11 @@ modified: '2014-09-03 16:15:12'
 ---
 # Saving Figure & Detail
 
-In finding that the <code>legend</code> element [simply doesn't work](http://remysharp.com/2009/07/31/legend-not-such-a-legend-anymore/) inside both <code>details</code> and <code>figure</code>, myself [and](http://adactio.com) [others](http://brucelawson.co.uk) been keen to find a solution.
+In finding that the <code>legend</code> element [simply doesn't work](/2009/07/31/legend-not-such-a-legend-anymore/) inside both <code>details</code> and <code>figure</code>, myself [and](http://adactio.com) [others](http://brucelawson.co.uk) been keen to find a solution.
 
 <!--more-->
 
-Ian Hickson [has said](http://remysharp.com/2009/07/31/legend-not-such-a-legend-anymore/#comment-166653):
+Ian Hickson [has said](/2009/07/31/legend-not-such-a-legend-anymore/#comment-166653):
 
 > I am leaning towards keeping the language sane (not introducing yet another element that basically means "header" or "important" or "caption"), at the cost of delaying how soon we can use the feature.
 
@@ -28,9 +28,9 @@ I've gone through a number of alternatives with [Jeremy](http://adactio.com) and
 
 ### label
 
-<code>label</code>: This was my initial favourite to work within the new elements, since what we're trying to do is *label* the figure or details that are tucked away.  
+<code>label</code>: This was my initial favourite to work within the new elements, since what we're trying to do is *label* the figure or details that are tucked away.
 
-The problem Jeremy raised was that of screenreaders.  Are they going to look or assume there's an associated input element?  
+The problem Jeremy raised was that of screenreaders.  Are they going to look or assume there's an associated input element?
 
 I'm not an expert on screenreaders, so I can't say for sure.  Bruce suggests screenreaders may only look for the input element if the <code>label</code> is within a <code>form</code>.  If this is so, then it's almost a good candidate.
 
@@ -44,7 +44,7 @@ Here's label in a <code>details</code> element and nested in a form: <a href="ht
 
 ### caption
 
-<code>caption</code> is used to add a caption to tables, which makes it a good candidate for captioning the <code>figure</code> and <code>details</code> elements.  
+<code>caption</code> is used to add a caption to tables, which makes it a good candidate for captioning the <code>figure</code> and <code>details</code> elements.
 
 However, due to a similar bug as the <code>legend</code> issue, if the browser finds the <code>caption</code> element outside a table, it simply strips it from the DOM - which makes this a non-option.
 
@@ -54,7 +54,7 @@ Example of caption being stripped from the DOM: [http://jsbin.com/eloda](http://
 
 Could we use an <code>hX</code> tag?  We want to give the <code>figure</code> or <code>details</code> element a heading, so it stands to reason that we could use an <code>h2</code> or <code>h3</code>, etc.
 
-The problem is the <abbr title="table of contents">TOC</abbr> that's created. 
+The problem is the <abbr title="table of contents">TOC</abbr> that's created.
 
 I originally thought I could hide this from the TOC by using the <code>hgroup</code>, but this element will grab the first heading and include it in the TOC.  So this isn't a viable solution because I don't believe these should be part of the TOC.
 
@@ -62,7 +62,7 @@ On top of which it seems over the top to include *two* elements just to solve th
 
 ### Header
 
-<code>header</code>, to me, has a similar semantic meaning as an <code>hX</code> element, and we could reuse this to replace the <code>legend</code> in the <code>figure</code> and <code>details</code> elements.  
+<code>header</code>, to me, has a similar semantic meaning as an <code>hX</code> element, and we could reuse this to replace the <code>legend</code> in the <code>figure</code> and <code>details</code> elements.
 
 It wouldn't become part of the TOC, because you'd need an <code>hX</code> element to create a new item in the TOC.  This also doesn't cause any issues with screenreaders (if in fact <code>label</code> does).
 

@@ -10,7 +10,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # Updated jQuery Talk
 
-I was asked to share my knowledge at [SkillSwap](http://skillswap-brighton.org/ "SkillSwap Brighton") which was great evening (it's certainly encouraged me out of [my little box](http://www.flickr.com/photos/remysharp/2324926736/in/set-72157600666145464/) and head to [future events](http://upcoming.yahoo.com/event/535879/)) ([thanks also to  John](http://remysharp.com/2008/03/13/presenting-jquery-at-qcon/#comment-54923)).
+I was asked to share my knowledge at [SkillSwap](http://skillswap-brighton.org/ "SkillSwap Brighton") which was great evening (it's certainly encouraged me out of [my little box](http://www.flickr.com/photos/remysharp/2324926736/in/set-72157600666145464/) and head to [future events](http://upcoming.yahoo.com/event/535879/)) ([thanks also to  John](/2008/03/13/presenting-jquery-at-qcon/#comment-54923)).
 
 The slides were updated for SkillSwap, and then also for the ThoughtWorks talk I gave, and in addition, I've recorded screencasts for each of the demos.
 
@@ -19,7 +19,7 @@ The slides were updated for SkillSwap, and then also for the ThoughtWorks talk I
 
 ## Slides
 
-[PDF download](http://remysharp.com/downloads/dom-toolkit-jquery.pdf)
+[PDF download](/downloads/dom-toolkit-jquery.pdf)
 
 <div style="width:425px;text-align:left" id="__ss_310357">
   <object style="margin:0px" width="425" height="355">
@@ -40,7 +40,7 @@ The screencast runs all as one, and runs for 15 minutes.  They're branded as [jQ
 
 I've also included all the code for the examples:
 
-* [Tabs](http://remysharp.com/demo/dom-toolkit/tabs.html)
-* [Namespace events](http://remysharp.com/demo/dom-toolkit/namespace-events.html)
-* [Simple Ajax](http://remysharp.com/demo/dom-toolkit/load.html)
-* [Effects](http://remysharp.com/demo/dom-toolkit/effects.html)
+* [Tabs](/demo/dom-toolkit/tabs.html)
+* [Namespace events](/demo/dom-toolkit/namespace-events.html)
+* [Simple Ajax](/demo/dom-toolkit/load.html)
+* [Effects](/demo/dom-toolkit/effects.html)

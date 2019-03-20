@@ -49,7 +49,7 @@ Equally, if you want to make the API public to anyone to access, you can use:
     header('Access-Control-Allow-Origin: *');
     ?>
 
-As simple live example of this can be seen here: [jsbin.com/oxiyi4/1](http://jsbin.com/oxiyi4/1) which makes a request to [remysharp.com/demo/cors.php](http://remysharp.com/demo/cors.php) which includes a rule that allows any origin to access the resource.
+As simple live example of this can be seen here: [jsbin.com/oxiyi4/1](http://jsbin.com/oxiyi4/1) which makes a request to [remysharp.com/demo/cors.php](/demo/cors.php) which includes a rule that allows any origin to access the resource.
 
 This is simple and easy. However, it's the *preflight* that causes confusion. That's where it all went wrong for me.
 

@@ -9,7 +9,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # The TL;DR vendor-prefix post
 
-With my [post yesterday](http://remysharp.com/2012/02/09/vendor-prefixes-about-to-go-south/) I appreciate it might be a bit long and perhaps focused mostly on my take on the meeting minutes. I wanted to be super clear about what I think about the situation, what will happen and what we can do - in super easy bullet form.
+With my [post yesterday](/2012/02/09/vendor-prefixes-about-to-go-south/) I appreciate it might be a bit long and perhaps focused mostly on my take on the meeting minutes. I wanted to be super clear about what I think about the situation, what will happen and what we can do - in super easy bullet form.
 
 <!--more-->
 

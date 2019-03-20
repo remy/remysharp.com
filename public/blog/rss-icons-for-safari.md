@@ -12,7 +12,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # RSS Icons for Safari
 
-With the [release of Safari 3.1](http://remysharp.com/2008/03/18/safari-31-web-developer-functionality/) the brand new install reverted out my nice RSS icons.
+With the [release of Safari 3.1](/2008/03/18/safari-31-web-developer-functionality/) the brand new install reverted out my nice RSS icons.
 
 ![RSS icons in Safari](/images/rss-icons-in-safari.png)
 

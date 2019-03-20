@@ -134,7 +134,7 @@ You might be thinking "so, does Remy use jQuery, and if he doesn't then does he 
 
 I certainly don't want to re-invent the wheel. If I find that developing without jQuery only leads me to re-creating a lot of jQuery's functionality from scratch, then I'm clearly wasting my own time.
 
-No, there's a lot of patterns where I will build my application code without a library and rely on native browser technology to do the job. And if there's a small part of that functionality missing, I might turn to [polyfills](http://remysharp.com/2010/10/08/what-is-a-polyfill/) - but only after careful review that it makes sense.
+No, there's a lot of patterns where I will build my application code without a library and rely on native browser technology to do the job. And if there's a small part of that functionality missing, I might turn to [polyfills](/2010/10/08/what-is-a-polyfill/) - but only after careful review that it makes sense.
 
 So how do I live without jQuery, and how good is the support?
 
@@ -322,9 +322,9 @@ Even then, if I'm writing the code myself, I'm going to choose to use `requestAn
 
 Jake Archibald has some excellent slides showing the issue here, whereby `setInterval` won't be smooth and will quickly start to drop frames:
 
-![setInterval](http://remysharp.com/images/setInterval.jpg)
+![setInterval](/images/setInterval.jpg)
 
-![rAF](http://remysharp.com/images/raf.jpg)
+![rAF](/images/raf.jpg)
 
 What's more, CSS animations go through the same scheduler as `requestAnimationFrame`, which is what we want to use.
 

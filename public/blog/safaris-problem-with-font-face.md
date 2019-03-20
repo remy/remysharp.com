@@ -16,7 +16,7 @@ modified: '2014-09-03 16:15:12'
 <!--more-->
 I recently peaked my total broadband usage and as a slap me down, my ISP, Plusnet, put me on about a 6Kb connection.  Which sucks.  Web pages are slow, email is slow: it's slow.
 
-Anyway, I'm doing a talk at [Standards.next](http://standards-next.org) this weekend on HTML 5 JavaScript APIs ([slides will be available here too](http://remysharp.com/talks/) if you can't make it), and upon visiting the site in Safari - I got to see pretty much a blank page.
+Anyway, I'm doing a talk at [Standards.next](http://standards-next.org) this weekend on HTML 5 JavaScript APIs ([slides will be available here too](/talks/) if you can't make it), and upon visiting the site in Safari - I got to see pretty much a blank page.
 
 This was the sequence of events I saw in Safari as the browser downloaded the <code>@font-face</code> fonts:
 

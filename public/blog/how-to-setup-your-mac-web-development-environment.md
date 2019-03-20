@@ -16,7 +16,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # How to setup your Mac web development environment
 
-Following [my accident](http://remysharp.com/2006/12/14/the-delicate-apple/) a couple of weeks ago, I've now been blessed with a [new MacBook Pro](http://www.flickr.com/photos/remysharp/tags/macbookpro) which needs setting up again.
+Following [my accident](/2006/12/14/the-delicate-apple/) a couple of weeks ago, I've now been blessed with a [new MacBook Pro](http://www.flickr.com/photos/remysharp/tags/macbookpro) which needs setting up again.
 
 So, I thought I'd document setting up MySQL, PHP5 and Apache with multiple virtual hosts.
 
@@ -135,11 +135,11 @@ I don't personally both, because it's an offline environment and secured on my l
 
 <h3 id="configure_apache">Apache and multiple offline domains</h3>
 
-Personally, since I work on multiple websites, so I have to set up offline versions, such as: http://apple.**dev** ([why no www?](http://remysharp.com/2006/09/08/dub-dub-dub-or-how-we-pronounce-the-world-wide-web/)) (and then at a later date upload to the production web site...though thankfully not [apple.com](http://apple.com)!)
+Personally, since I work on multiple websites, so I have to set up offline versions, such as: http://apple.**dev** ([why no www?](/2006/09/08/dub-dub-dub-or-how-we-pronounce-the-world-wide-web/)) (and then at a later date upload to the production web site...though thankfully not [apple.com](http://apple.com)!)
 
 #### 1. Set up directories
 
-In your home directory you will find a 'Sites' folder.  
+In your home directory you will find a 'Sites' folder.
 
 Create a new directory, in my case I'm creating 'apple.dev'.  Inside of that directory I am adding one further directory: htdocs.
 
@@ -208,8 +208,8 @@ Drop in a [dummy index file](/uploads/2007/01/index.html) to truly test the page
 
 ## Finishing up
 
-So, there you have it.  You should now have a multi-domain offline development environment.  
+So, there you have it.  You should now have a multi-domain offline development environment.
 
-You can start putting PHP files in the htdocs directory and connecting MySQL and all that jazz.  
+You can start putting PHP files in the htdocs directory and connecting MySQL and all that jazz.
 
 Please let me know if there were any glaring errors or if you found this tutorial super useful!

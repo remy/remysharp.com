@@ -44,7 +44,7 @@ The only thing to watch out for is cropped images should **not** have any paddin
 
 See the [label over example](/images/label_over_example.html)
 
-The labelOver plugin is a follow on from the [text hints](http://remysharp.com/2007/01/25/jquery-tutorial-text-box-hints/), but in fact the best practise solution.
+The labelOver plugin is a follow on from the [text hints](/2007/01/25/jquery-tutorial-text-box-hints/), but in fact the best practise solution.
 
 It's based on the [A List Apart](http://www.alistapart.com/articles/makingcompactformsmoreaccessible) article that demonstrates using a label positioned **over** the input field.
 

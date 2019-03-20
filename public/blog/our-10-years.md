@@ -35,7 +35,7 @@ Heist offered the downstairs room for £175, which had a private bar (though bot
 
 Admittedly we booked it in September - because we expected to be fighting of the the various Christmas dos.
 
-Finally there was the music - 80s 80s 80s.  I spent about 6 months refining the play list.  Scouring all my 80s memories, classic 80s films (Beverly Hills Cop, Breakfast Club, etc.) and all those terribly cheesy CDs that you throw to the bottom of your CD collection.Â  If you're interested, here's the [80s party playlist](http://remysharp.com/80s-party-playlist.html) (and yes, there are songs that didn't come from the 80s, but there's only a few!)
+Finally there was the music - 80s 80s 80s.  I spent about 6 months refining the play list.  Scouring all my 80s memories, classic 80s films (Beverly Hills Cop, Breakfast Club, etc.) and all those terribly cheesy CDs that you throw to the bottom of your CD collection.Â  If you're interested, here's the [80s party playlist](/80s-party-playlist.html) (and yes, there are songs that didn't come from the 80s, but there's only a few!)
 The next step was to listen to it over and over, which would result in me weeding out the annoying song and keeping the golden ones.
 
 The only near hiccup was that I deleted the entire playlist the day of the party.  iTunes being the super easy app that it was doesn't expect anyone to be so stupid, so there's no undo facility to bring the playlist back to life.  I almost had (more) kittens!  Luckily it was pretty easy just to skim through the playlist on my iPod and put the songs back in to their meticulous order.

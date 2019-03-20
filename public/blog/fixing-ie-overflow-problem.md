@@ -56,9 +56,9 @@ So our solution is to apply the following to in IE only:
 
 Disclaimer: As much as I'd love to see this problem solved entirely using CSS, or even the browser doing the job, I can't see how it can be achieved uniformly across all elements, since we only want our changes to apply **if, and only if** the overflow has occurred (i.e. if we added the padding across the board, some blocks would appear to have an odd blank line when it didn't overflow).
 
-[See the working example](http://remysharp.com/demo/overflow.html)
+[See the working example](/demo/overflow.html)
 
-<script src="http://remysharp.com/js/prettify.packed.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/prettify.packed.js" type="text/javascript" charset="utf-8"></script>
 
 <pre class="prettyprint"><code>window.onload = function () {
   // only apply to IE

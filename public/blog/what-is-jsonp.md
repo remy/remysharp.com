@@ -59,7 +59,7 @@ jQuery will change the url to include `&amp;callback=randomFn123` - but you can 
 
 ## Example in the Wild
 
-[Twitter's JavaScript blog plugin](http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/) works in exactly the same way.  You create a function to handle the data from Twitter, and insert a script tag.  Once the script is inserted, it calls the function passing the Twitter data as a JSON object.
+[Twitter's JavaScript blog plugin](/2007/05/18/add-twitter-to-your-blog-step-by-step/) works in exactly the same way.  You create a function to handle the data from Twitter, and insert a script tag.  Once the script is inserted, it calls the function passing the Twitter data as a JSON object.
 
 ## How it works in jQuery
 

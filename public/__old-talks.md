@@ -99,12 +99,12 @@
   </li>
   <li id="2010_fowd">
   	<h3>Future of Web Design - London, United Kingdom - 17-19 May</h3>
-  	<p>Presentation: <a href="http://remysharp.com/downloads/j4d-fowd.pdf">jQuery for Designers: All you need to code</a></p>
+  	<p>Presentation: <a href="/downloads/j4d-fowd.pdf">jQuery for Designers: All you need to code</a></p>
   	<p>Event information: <a href="http://futureofwebdesign.com/">FOWD 2010</a></p>
   </li>
   <li id="2010_fabw">
   	<h3>For a Beautiful Web - London, United Kingdom - 14 May</h3>
-  	<p>Workshop: <a href="http://remysharp.com/downloads/j4d-fabw-workshop-052010.zip">jQuery for Designers (slides & examples)</a></p>
+  	<p>Workshop: <a href="/downloads/j4d-fabw-workshop-052010.zip">jQuery for Designers (slides & examples)</a></p>
         <p>Event information: <a href="http://forabeautifulweb.com/announcing/london-140510/">For a Beautiful Web</a></p>
   </li>
   <li id="2010_html5conf">
@@ -209,13 +209,13 @@
 
   <li id="2008_skillswap">
     <h3>Skillswap - Brighton, United Kingdom - 11 June</h3>
-    <p>Presentation: <a href="http://remysharp.com/downloads/dom-toolkit-jquery.pdf">The DOM scripting toolkit: jQuery (pdf)</a> (<a href="http://www.slideshare.net/remy.sharp/dom-scripting-toolkit-jquery">alt slideshare</a>)</p>
+    <p>Presentation: <a href="/downloads/dom-toolkit-jquery.pdf">The DOM scripting toolkit: jQuery (pdf)</a> (<a href="http://www.slideshare.net/remy.sharp/dom-scripting-toolkit-jquery">alt slideshare</a>)</p>
     <p>Event information: <a href="http://skillswap-brighton.org/2008/06/10/skillswap-goes-javascript/">Skillswap goes Javascript</a></p>
   </li>
 
   <li id="2008_qcon">
     <h3>QCon - London, United Kingdom - 14 March</h3>
-    <p>Presentation: <a href="http://remysharp.com/downloads/dom-toolkit-jquery.pdf">The DOM scripting toolkit: jQuery (pdf)</a> (<a href="http://www.slideshare.net/remy.sharp/dom-scripting-toolkit-jquery">alt slideshare</a>)</p>
+    <p>Presentation: <a href="/downloads/dom-toolkit-jquery.pdf">The DOM scripting toolkit: jQuery (pdf)</a> (<a href="http://www.slideshare.net/remy.sharp/dom-scripting-toolkit-jquery">alt slideshare</a>)</p>
     <p>Event information: <a href="http://qconlondon.com/london-2008/presentation/The+DOM+scripting+toolkit%3A+jQuery">QCon - Browser &amp; Emerging Rich Client Technologies</a></p>
   </li>
 </ul>

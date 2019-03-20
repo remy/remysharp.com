@@ -13,7 +13,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # Auto-populate multiple select boxes
 
-To follow on from [Auto-populating Select Boxes using jQuery & AJAX](http://remysharp.com/2007/01/20/auto-populating-select-boxes-using-jquery-ajax/), I've had more than a few requests for how to do this for multiple select boxes.
+To follow on from [Auto-populating Select Boxes using jQuery & AJAX](/2007/01/20/auto-populating-select-boxes-using-jquery-ajax/), I've had more than a few requests for how to do this for multiple select boxes.
 
 In response, I've written a jQuery plugin and have included a simple example of three select boxes populating each other driven by a MySQL database.
 
@@ -23,7 +23,7 @@ In response, I've written a jQuery plugin and have included a simple example of 
 ## Download
 
 * [Download the selectChain plugin](/images/select-chain.js)
-* [View the demo PHP script source](http://remysharp.com/downloads/select-chain.php)
+* [View the demo PHP script source](/downloads/select-chain.php)
 * [View the demo SQL source](/images/select-chain.sql)
 * [Demonstration](/images/select-chain.php)
 

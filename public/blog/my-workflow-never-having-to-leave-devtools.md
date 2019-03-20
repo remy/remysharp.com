@@ -37,7 +37,7 @@ It's also worth adding that, whilst you haven't refreshed, you can also get a co
 
 Another big win for me (which I didn't include in the video) is that whilst I'm working inside the sources panel, and experiementing I can quickly and easily inspect the state of variables.
 
-<img src="http://remysharp.com/images/devtools-conditional.png" style="float:right;margin-left: 5px; margin-bottom: 5px; width: 50%;">I'll add a breakpoint, or a conditional breakpoint (right click on the line) - the code pauses, and hit `esc` to bring up a console and test code and check variable state or check entire lines of code to see if the result is what I'm expecting.
+<img src="/images/devtools-conditional.png" style="float:right;margin-left: 5px; margin-bottom: 5px; width: 50%;">I'll add a breakpoint, or a conditional breakpoint (right click on the line) - the code pauses, and hit `esc` to bring up a console and test code and check variable state or check entire lines of code to see if the result is what I'm expecting.
 
 ## Space and stretching your legs
 
@@ -45,7 +45,7 @@ Finally, a couple of extra bits that make my workflow more comfortable for me. I
 
 I dock DevTools to the right (in most cases) - which used to be under settings (the bottom right cog) but in Canary has moved to click-hold the bottom left "popout" icon.
 
-<img src="http://remysharp.com/images/devtools-hide-breaks.png" style="float:right;margin-left: 5px; margin-bottom: 5px; width: 230px;">
+<img src="/images/devtools-hide-breaks.png" style="float:right;margin-left: 5px; margin-bottom: 5px; width: 230px;">
 Then lastly I tend to hide the source navigator (the list of files) and the debugger (the right hand side) using the little collapse icon.
 
 ## What I'd like to see next

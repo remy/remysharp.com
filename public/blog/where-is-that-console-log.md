@@ -12,10 +12,10 @@ modified: '2014-09-03 16:15:12'
 ---
 # Where is that console.log?
 
-Did you ever have phantom `console.log` - or more specifically you've no idea 
+Did you ever have phantom `console.log` - or more specifically you've no idea
 where it was happening?
 
-I have. This tiny bit of code will help you identify *where* the logging is 
+I have. This tiny bit of code will help you identify *where* the logging is
 being called from. The nice thing is it works in the browser *and* in node.
 
 <!--more-->
@@ -39,7 +39,7 @@ being called from. The nice thing is it works in the browser *and* in node.
 
 If you include this as high as possible in your code base, all subsequent `console.log` (or `warn`) calls will include the line the call was made from:
 
-<img src="http://remysharp.com/images/where-logging.png" style="border: 1px solid #ccc; display: block; margin: 0 auto; max-width: 100%">
+<img src="/images/where-logging.png" style="border: 1px solid #ccc; display: block; margin: 0 auto; max-width: 100%">
 
 Here's a simplified demo: [http://jsbin.com/wataw/2/edit?js,console](http://jsbin.com/wataw/2/edit?js,console)
 

@@ -35,7 +35,7 @@ I've had some cover designs so far, I can't say I'm over the moon, and the [fina
 
 ## Speaking
 
-I'm doing more speaking this year, along with workshops which I'm excited and slightly nervous about.  I'm trying to post up as much free information to the [talks](http://remysharp.com/talks/) page as I can (i.e. PDF links without having to register with SlideShare).
+I'm doing more speaking this year, along with workshops which I'm excited and slightly nervous about.  I'm trying to post up as much free information to the [talks](/talks/) page as I can (i.e. PDF links without having to register with SlideShare).
 
 The talks are swinging between jQuery and HTML5 (with a dash of unobtrusive experiments) - so if you can come along, great! Otherwise, check out the videos and the slides if you want.
 
@@ -51,4 +51,4 @@ Other projects I've hacked together recently (and may, or may not blog about in 
 
 * [Tweed for Twitter](http://github.com/remy/tweed/) - a search feed plugin based parser
 * [Twitter Replies](remysharp.com/demo/twitter_replies) - track replies to a specific tweet
-* [Where's my Twitter Friends](http://remysharp.com/demo/wheres-my-friend.html) - maps your twitter friends to a map (just for [fun](http://twitter.com/yandle/status/2276903049))
+* [Where's my Twitter Friends](/demo/wheres-my-friend.html) - maps your twitter friends to a map (just for [fun](http://twitter.com/yandle/status/2276903049))

@@ -12,11 +12,11 @@ modified: '2014-09-03 16:15:12'
 
 <img alt="Twitter logo" src="/images/twitter_logo.png" style="float: right; padding: 0 0 5px 5px;" />
 
-<div class="update"><p><strong>Update:</strong> for the latest version of this script, and complete control over how it looks, see <a href="http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/">Add Twitter to your blog (step-by-step)</a></p></div>
+<div class="update"><p><strong>Update:</strong> for the latest version of this script, and complete control over how it looks, see <a href="/2007/05/18/add-twitter-to-your-blog-step-by-step/">Add Twitter to your blog (step-by-step)</a></p></div>
 
 &nbsp;
 
-[Add tweets to your pages that won't break when Twitter goes down!](http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/)
+[Add tweets to your pages that won't break when Twitter goes down!](/2007/05/18/add-twitter-to-your-blog-step-by-step/)
 
 &nbsp;
 

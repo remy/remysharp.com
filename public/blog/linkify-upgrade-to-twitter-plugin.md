@@ -10,7 +10,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # Linkify + upgrade to twitter plugin
 
-The [twitter plugin](http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/) has just been upgraded to (optionally) search for links in the twitter text and activate them as link.
+The [twitter plugin](/2007/05/18/add-twitter-to-your-blog-step-by-step/) has just been upgraded to (optionally) search for links in the twitter text and activate them as link.
 
 So I thought I'd share the linkify code.
 
@@ -23,7 +23,7 @@ So I thought I'd share the linkify code.
   });
 };</code></pre>
 
-Short and sweet - will return a string with the URLs as links.  Note that if the linkify function encounters a real link, it will break the link - ideally use this code with text you know may contain a plain text link.  
+Short and sweet - will return a string with the URLs as links.  Note that if the linkify function encounters a real link, it will break the link - ideally use this code with text you know may contain a plain text link.
 
 For example, assuming status is an element on the page, and twitter.text is our text to search for links within:
 

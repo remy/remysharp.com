@@ -21,11 +21,11 @@ So I've built a little jQuery plugin to do the work for me.
 
 The plugin simply reports back the number of characters left the user has, with a few extra bells and whistles.
 
-[Download the maxlength jQuery plugin](http://remysharp.com/downloads/jquery.maxlength.js)
+[Download the maxlength jQuery plugin](/downloads/jquery.maxlength.js)
 
 ## Demonstration
 
-[View the maxlength demo](http://remysharp.com/demo/maxlength.html)
+[View the maxlength demo](/demo/maxlength.html)
 
 This demo shows off two example, one limiting on characters and one limiting on words.
 

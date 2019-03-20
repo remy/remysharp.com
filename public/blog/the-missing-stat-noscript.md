@@ -20,7 +20,7 @@ I've written a plugin which I'll share with you and also explain how it works (s
 
 The WordPress plugin has it's own control panel that you'll need to add your site's analytic's ID, something like <code>UA-12345-6</code>, save settings and you're off.
 
-[Download the noscript wordpress plugin](http://remysharp.com/downloads/noscript.php)
+[Download the noscript wordpress plugin](/downloads/noscript.php)
 
 ## Reporting
 
@@ -51,4 +51,4 @@ echo '&lt;noscript&gt;&lt;img src="' . $urchinUrl . '" /&gt;&lt;/noscript&gt;';
 
 ## Share
 
-Then later, let's share the results and see what kind of sites actually have visitors with JavaScript disabled.  That kind of information makes me more comfortable with things like the [HTML5 shiv](http://remysharp.com/2009/01/07/html5-enabling-script/).
+Then later, let's share the results and see what kind of sites actually have visitors with JavaScript disabled.  That kind of information makes me more comfortable with things like the [HTML5 shiv](/2009/01/07/html5-enabling-script/).

@@ -43,24 +43,24 @@ I intentionally never really pushed the term out there, I just dropped it in a f
 
 ## Some Examples
 
-Here's an example: <code>sessionStorage</code> is available in all the latest browsers (IE8 and upwards) but isn't in IE7 and below. 
+Here's an example: <code>sessionStorage</code> is available in all the latest browsers (IE8 and upwards) but isn't in IE7 and below.
 
-A polyfill can be used to [plug the support](http://gist.github.com/350433) for older browsers that don't provide <code>sessionStorage</code>. 
+A polyfill can be used to [plug the support](http://gist.github.com/350433) for older browsers that don't provide <code>sessionStorage</code>.
 
-Now with the polyfiller in place, as a developer I can rely on using the Web Storage API (for sessions) and not have to feature test in my code or fork to handle different situations. 
+Now with the polyfiller in place, as a developer I can rely on using the Web Storage API (for sessions) and not have to feature test in my code or fork to handle different situations.
 
-Another example is providing canvas support in IE. This is really where the *poly* part can be seen. If there's no native canvas, we can provide [canvas support using Silverlight](http://blogs.msdn.com/b/delay/archive/2009/08/24/using-one-platform-to-build-another-html-5-s-canvas-tag-implemented-using-silverlight.aspx). If Silverlight isn't available, we can drop down to using VML using [excanvas](http://code.google.com/p/explorercanvas/) (note that excanvas actually does also include a Silverlight bridge which I'd expect it would try first anyway). Using these two scripts provides the developers with a (fairly) solid canvas backup should it not be native in the browser. 
+Another example is providing canvas support in IE. This is really where the *poly* part can be seen. If there's no native canvas, we can provide [canvas support using Silverlight](http://blogs.msdn.com/b/delay/archive/2009/08/24/using-one-platform-to-build-another-html-5-s-canvas-tag-implemented-using-silverlight.aspx). If Silverlight isn't available, we can drop down to using VML using [excanvas](http://code.google.com/p/explorercanvas/) (note that excanvas actually does also include a Silverlight bridge which I'd expect it would try first anyway). Using these two scripts provides the developers with a (fairly) solid canvas backup should it not be native in the browser.
 
 # Where it's from and where it's going
 
-Earlier on this year I co-authored [Introducing HTML5](http://introducinghtml5.com) with Bruce Lawson. During the R&D time I was looking at shims and techniques to plug missing APIs but they weren't quite progressive enhancement. I wanted a single word that represented this idea that there was a 'thing' that could plug browsers but wasn't progressive enhancement but wasn't graceful degradation either. 
+Earlier on this year I co-authored [Introducing HTML5](http://introducinghtml5.com) with Bruce Lawson. During the R&D time I was looking at shims and techniques to plug missing APIs but they weren't quite progressive enhancement. I wanted a single word that represented this idea that there was a 'thing' that could plug browsers but wasn't progressive enhancement but wasn't graceful degradation either.
 
 Polyfilling seemed to fit what I wanted to say (in my head!).
 
-Ployfilla is a UK product known as Spackling Paste in the US. With that in mind: think of the browsers as a wall with cracks in it. These polyfills help smooth out the cracks and give us a nice smooth wall of browsers to work with. 
+Ployfilla is a UK product known as Spackling Paste in the US. With that in mind: think of the browsers as a wall with cracks in it. These polyfills help smooth out the cracks and give us a nice smooth wall of browsers to work with.
 
-I tentatively used the new term during my [HTML5 talk](http://remysharp.com/talks/#2010_html5conf) for [ThinkVitamin](http://thinkvitamin.com/online-conferences/html5/) back in June, but I didn't want to push it for fear of trying too hard to push a new term out. However I did sneak it in to Introducing HTML5, which I can only assume lead to what happened recently. 
+I tentatively used the new term during my [HTML5 talk](/talks/#2010_html5conf) for [ThinkVitamin](http://thinkvitamin.com/online-conferences/html5/) back in June, but I didn't want to push it for fear of trying too hard to push a new term out. However I did sneak it in to Introducing HTML5, which I can only assume lead to what happened recently.
 
-Recently at [JS Conf](http://jsconf.us/2010/), [Paul Irish](http://paulirish.com/ "Paul Irish") released a [list of polyfills and shims](http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills) - an awesome resource list to save us developers the pain of older browsers. 
+Recently at [JS Conf](http://jsconf.us/2010/), [Paul Irish](http://paulirish.com/ "Paul Irish") released a [list of polyfills and shims](http://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills) - an awesome resource list to save us developers the pain of older browsers.
 
 It looks like polyfilling has some legs, so let's start using them, and dragging older (and even the newer) browsers up to our expectations.

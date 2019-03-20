@@ -67,7 +67,7 @@ I'm looking around for a hack, and *when* I find it, I'll post it up here.
 
 Although later copies of Tiger came with Apache 2, the version I had running on both my machines ran 1.3.  In the upgrade, they sneakily moved me over to Apache 2 - which broke my offline dev environment :-(
 
-I've since [posted how to fix it](http://remysharp.com/2007/10/27/lamp-in-leopard-osx-105-php5-and-apache-22/), and staying with Apache 2.
+I've since [posted how to fix it](/2007/10/27/lamp-in-leopard-osx-105-php5-and-apache-22/), and staying with Apache 2.
 
 ### QuickSilver - show application menu broken
 

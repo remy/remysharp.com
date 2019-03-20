@@ -15,7 +15,7 @@ Google Calendar released a new favicon which prompted a few mentions from friend
 
 > New Google Calendar icon most un-Googley. I like it.
 
-Then [Danny pitched in](http://twitter.com/yandle/status/21989058504) with: 
+Then [Danny pitched in](http://twitter.com/yandle/status/21989058504) with:
 
 > I see Google Calendar has a new icon. They could use the current date rather than "31" though
 
@@ -28,8 +28,8 @@ The trick here is to use a canvas element and export the image data as a png. Si
 
 The setup is needing to create two calendar images: one with the date if this doesn't work (defaulting to something like 31) and the second without the date text. For whatever reason, I went and replicated the Google Calendar icon in Photoshop:
 
-![favicon without text](http://remysharp.com/images/favicon-without-text.png)
-![favicon with text](http://remysharp.com/images/favicon-with-text.png)
+![favicon without text](/images/favicon-without-text.png)
+![favicon with text](/images/favicon-with-text.png)
 
 The plan now is to use the favicon template and lay the text over. Simple.
 
@@ -80,7 +80,7 @@ The important part is the order in which the code runs.  It creates an image ele
 
 Next we style the text and draw it on.
 
-Finally using <code>canvas.toDataURL</code> we set a new href to the link. 
+Finally using <code>canvas.toDataURL</code> we set a new href to the link.
 
 You should be able to see the code running on this blog post, if you look at the favicon associated with this page, it should be the calendar icon with the correct date if your browser supports the canvas API (IE8 and below don't, all other browsers *do*).
 

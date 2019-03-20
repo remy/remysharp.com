@@ -41,6 +41,6 @@ I'm sure there's a few more bits tucked away, and some nice speed improvements (
 
 There's some nice little features that makes Safari slicker.  For me, the Webkit upgrade and the DOM element inspector are the biggest advantages.
 
-<strike>However, the fact that I can't run my SIMBL plugins may cause me to uninstall [until October](http://remysharp.com/2007/04/13/apple-delays-osx-leopard/).  There's even rumours of [ending plugin support entirely in Safari](http://www.hicksdesign.co.uk/journal/an-end-to-browser-pimping).</strike>
+<strike>However, the fact that I can't run my SIMBL plugins may cause me to uninstall [until October](/2007/04/13/apple-delays-osx-leopard/).  There's even rumours of [ending plugin support entirely in Safari](http://www.hicksdesign.co.uk/journal/an-end-to-browser-pimping).</strike>
 
 The SIMBL plugins do appear to work - and I've since installed the beta version of [Safari Tidy](http://zappatic.net/safaritidy/) and it appears to work fine.

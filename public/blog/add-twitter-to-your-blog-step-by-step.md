@@ -21,7 +21,7 @@ modified: '2014-09-03 16:15:12'
 
 <p><a href="http://code.google.com/p/twitterjs/downloads/list" class="download">Download latest Twitter.js</a></p>
 
-<p>Following on from <a href="http://remysharp.com/2007/03/20/how-to-add-twitter-to-your-blog-without-it-hanging-your-site/">how to add Twitter without hanging your blog</a>, as requested, here is a step-by-step guide to adding Twitter to your blog without it hanging your web site.</p>
+<p>Following on from <a href="/2007/03/20/how-to-add-twitter-to-your-blog-without-it-hanging-your-site/">how to add Twitter without hanging your blog</a>, as requested, here is a step-by-step guide to adding Twitter to your blog without it hanging your web site.</p>
 
 <!--more-->
 
@@ -41,7 +41,7 @@ modified: '2014-09-03 16:15:12'
 
 <link rel="stylesheet" href="/images/twitter.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 
-<div id="twitters"><p>Please wait while my tweets load <img src="http://remysharp.com/images/indicator.gif" /></p>
+<div id="twitters"><p>Please wait while my tweets load <img src="/images/indicator.gif" /></p>
 </div>
 
 Using my [twitter.js](http://code.google.com/p/twitterjs/downloads/list) script.

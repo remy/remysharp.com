@@ -15,7 +15,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # Accessible, degradable style control - part 2
 
-As promised, the second instalment of accessible, degradable style control (that follows [part 1](http://remysharp.com/2007/02/23/accessible-degradable-style-control-part-1/)).
+As promised, the second instalment of accessible, degradable style control (that follows [part 1](/2007/02/23/accessible-degradable-style-control-part-1/)).
 
 This entry will cover style sheet control, and although this has been covered by other posts in the past, often they rely entirely on JavaScript.  This method does not.
 
@@ -32,7 +32,7 @@ My aim is to provide two links, one to strip all the style from the page, and on
 
 <h2 id="html">HTML</h2>
 
-When someone visits [my business web site](http://leftlogic.com), they will see the [font control](http://remysharp.com/2007/02/23/accessible-degradable-style-control-part-1/) links, and the 'no style' link.
+When someone visits [my business web site](http://leftlogic.com), they will see the [font control](/2007/02/23/accessible-degradable-style-control-part-1/) links, and the 'no style' link.
 
 When the style is turned off, they will also be able to see the 'default style' link:
 
@@ -54,7 +54,7 @@ default.css contains our core style.  blank.css is, literally, an empty css file
 
 <h2 id="server_side">Server Side</h2>
 
-As per, [part 1](http://remysharp.com/2007/02/23/accessible-degradable-style-control-part-1/#server_side), you will need to set up .htaccess and non-htaccess (if you don't have mod\_rewrite).
+As per, [part 1](/2007/02/23/accessible-degradable-style-control-part-1/#server_side), you will need to set up .htaccess and non-htaccess (if you don't have mod\_rewrite).
 
 <h3 id="files">Change file</h3>
 

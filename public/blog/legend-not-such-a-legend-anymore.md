@@ -31,7 +31,7 @@ The markup would roughly be this:
   &lt;p&gt;You agree to xyz, etc.&lt;/p&gt;
 &lt;/details&gt;</code></pre>
 
-Here's the details test page I was working from: [HTML 5 details test](http://remysharp.com/demo/details.html)
+Here's the details test page I was working from: [HTML 5 details test](/demo/details.html)
 
 ## The issues
 

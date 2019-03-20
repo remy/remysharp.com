@@ -41,7 +41,7 @@ Ext support jQuery is simply that Ext was written for YUI originally - now you c
 
 ### Missing scripts
 
-The first stumbling block in getting Ext working with jQuery was the missing script: [jquery-plugins.js](http://remysharp.com/js/jquery-plugins.js).  Once that had been added, things got a little easier.
+The first stumbling block in getting Ext working with jQuery was the missing script: [jquery-plugins.js](/js/jquery-plugins.js).  Once that had been added, things got a little easier.
 
 ### HTML
 

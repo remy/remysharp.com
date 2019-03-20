@@ -16,14 +16,14 @@ In the pursuit of an idea I had recently, one tiny feature of the web site would
 
 I've looked at flash solutions, since a SWF had access to enumerate the fonts, but ultimately if it could be done without flash, it would/should be faster and smarter.
 
-So here's my pure JavaScript (okay, and a little CSS) solution: [font.js](http://remysharp.com/downloads/font.js)
+So here's my pure JavaScript (okay, and a little CSS) solution: [font.js](/downloads/font.js)
 
 
 <!--more-->
 
 ## Usage
 
-Include the [font.js](http://remysharp.com/downloads/font.js) script in your page.
+Include the [font.js](/downloads/font.js) script in your page.
 
 It relies on [jQuery](http://jquery.com) so include that somewhere too.
 
@@ -39,7 +39,7 @@ Simple.
 
 ## Example
 
-I mention this little idea, and a fuller blog post on this later, but I've installed it and make use of it to preview a font-family list: 
+I mention this little idea, and a fuller blog post on this later, but I've installed it and make use of it to preview a font-family list:
 
 [http://font-family.com/sandbox/optima,monaco,courier,random](http://font-family.com/sandbox/optima,monaco,courier,random)
 

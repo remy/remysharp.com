@@ -16,7 +16,7 @@ I'm a fan of the textarea resize function in Safari 3 - and as such I've had my 
 
 <img src="/images/example-of-safari-3-sizable.png" title="Example of Safari 3 sizable" style="border: 3px solid #ccc; float: left; margin: 0 5px 5px 0;" />
 
-[Download the Firefox text sizer extension](http://remysharp.com/downloads/textsizer.xpi)
+[Download the Firefox text sizer extension](/downloads/textsizer.xpi)
 
 
 <!--more-->

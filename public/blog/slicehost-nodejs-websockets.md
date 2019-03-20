@@ -95,7 +95,7 @@ node server.js &lt;username&gt; &lt;password&gt;</code></pre>
 
 Now on my other "normal" server (though the smoothness of slicehost, I'm now thinking of porting across all my sites) hosts a simple web page (from the example in the git repo) that streams the latest tweets found by the server and should be viewed on a WebSocket enabled browser, i.e. Google Chrome (dev channel) or Webkit nightly: [http://rem.io/relay-tweets.html](http://rem.io/relay-tweets.html) (note that I'll be running this demo for a while, but it may well be taken down in the future). Here's a screenshot in case I've shut it down and moved on:
 
-![Screenshot of streaming tweets](http://remysharp.com/images/twitter-stream.png "Screenshot of streaming tweets")
+![Screenshot of streaming tweets](/images/twitter-stream.png "Screenshot of streaming tweets")
 
 The core code to run the socket is simply this:
 

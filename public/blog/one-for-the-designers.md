@@ -27,6 +27,6 @@ Perhaps the most exciting feature of this tool, is that once you've styled to yo
 
 On top of this, [jQuery 1.2.6](http://jquery.com) was recently released and [jQuery UI 1.5](http://ui.jquery.com) has also [just been released](http://jquery.com/blog/2008/06/09/jquery-ui-v15-released-focus-on-consistent-api-and-effects/).
 
-The [API browser](http://remysharp.com/jquery-api/) is up to date with the latest documentation, and I've been working quietly behind the scenes to get offline version(s) of the API browser working...watch this space!
+The [API browser](/jquery-api/) is up to date with the latest documentation, and I've been working quietly behind the scenes to get offline version(s) of the API browser working...watch this space!
 
 Congrates to the jQuery team on another great step forward.

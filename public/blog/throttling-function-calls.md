@@ -46,7 +46,7 @@ Below is an **actual** throttle function, that fires a message every 250ms by de
           deferTimer;
       return function () {
         var context = scope || this;
-      
+
         var now = +new Date,
             args = arguments;
         if (last && now < last + threshhold) {
@@ -69,4 +69,4 @@ So when you use this, moving the mouse around the [example below](http://jsbin.c
   console.log('tick');
 }, <strong>1000</strong>));</code></pre>
 
-There's also a [simple rate throttled function](http://remysharp.com/2010/07/21/throttling-function-calls/#comment-497362) in the comments below, that fires on every nth message - though I'd be inclined to tweak it to ensure the first message is delivered 
+There's also a [simple rate throttled function](/2010/07/21/throttling-function-calls/#comment-497362) in the comments below, that fires on every nth message - though I'd be inclined to tweak it to ensure the first message is delivered

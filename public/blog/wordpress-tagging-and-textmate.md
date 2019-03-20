@@ -50,7 +50,7 @@ This is the script that handles the posting on the server side.  Basically, it n
 
 <div style="border:1px solid #ccc; padding: 5px;">
 <p><b>Updated: Jan 2007</b></p>
-<p>On <a href="http://remysharp.com/2006/10/01/wordpress-tagging-and-textmate/#comment-154">Dan's suggestion</a>, I am <a href="/images/xmlrpc.php.txt">offering my own xmlrpc.php</a> file for you to use. </p>
+<p>On <a href="/2006/10/01/wordpress-tagging-and-textmate/#comment-154">Dan's suggestion</a>, I am <a href="/images/xmlrpc.php.txt">offering my own xmlrpc.php</a> file for you to use. </p>
 <p>Please, please make sure you backup your own copy before you overwrite it.  I'm not taking responsibility for any problems you might experience, but I will be happy to help where I can.</p>
 <p>Note that I am running <b>WordPress 2.0.4</b> - and Dan has suggested this isn't compatible with 2.1 (I'll get round to it if there's requests) - so again: BACKUP!!!</p>
 <p><a href="/images/xmlrpc.php.txt">Download the xmlrpc.php file</a></p>

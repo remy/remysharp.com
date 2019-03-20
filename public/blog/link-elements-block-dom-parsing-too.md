@@ -33,7 +33,7 @@ Perhaps this is a bug?  Safari, Chrome and Firefox suffer from this issue.  Oper
 Right now, I'm not sure what's at the root cause, but I do know it's putting some web sites at risk.
 
 <div class="update"><p><strong>Updated 12-June 2011</strong> after further investigation by zcorpan (aka Simon Pieters) and Stepan Reznikov (via their comments below), what we're actually seeing is <strong>render</strong> blocking, and not <em>parsing</em> blocking.</p><p>However, it does, from looking at tests, block JavaScript <em>after</em> the hanging <code>link</code> element from running - which is definitely weird.</p>
-<p>There's two example for you - both need the console open: <a href="http://remysharp.com/demo/hang.html">hang example where content ready fires before CSS has loaded</a>, <a href="http://remysharp.com/demo/hang-with-script.html">hang example where script waits for CSS before it can run</a></p>
+<p>There's two example for you - both need the console open: <a href="/demo/hang.html">hang example where content ready fires before CSS has loaded</a>, <a href="/demo/hang-with-script.html">hang example where script waits for CSS before it can run</a></p>
 </div>
 
 ## Example
@@ -59,10 +59,10 @@ This url will show the hanging: [http://jsbin.com/agumu4/3/](http://jsbin.com/ag
       <p>Hello World</p>
     </body>
     </html>
-    
+
 ## Testing
 
-I've created a simple hanging service that you can reuse yourself.  It's running on [Node](http://nodejs.org) so there's no worry of nuking the machine due to the hang (as opposed to using PHP to test using a sleep - which *would* nuke a public machine). 
+I've created a simple hanging service that you can reuse yourself.  It's running on [Node](http://nodejs.org) so there's no worry of nuking the machine due to the hang (as opposed to using PHP to test using a sleep - which *would* nuke a public machine).
 
 To test include the following url: [http://hang.nodester.com/file.type?ms](http://hang.nodester.com/file.type?ms)
 

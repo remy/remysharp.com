@@ -13,7 +13,7 @@ modified: '2014-09-03 16:15:12'
 
 In an effort to create better documentation, we've introduced inline documentation to our JavaScript at the office.
 
-Since we use [Dean Edwards'](http://dean.edwards.name/) [Base](http://dean.edwards.name/weblog/2006/03/base/) library for our inheritance the [JSDoc](http://jsdoc.sourceforge.net/) out of the box wouldn't work without commenting explicit method name and memberOf attribute - which, in my view, defeats the point.   
+Since we use [Dean Edwards'](http://dean.edwards.name/) [Base](http://dean.edwards.name/weblog/2006/03/base/) library for our inheritance the [JSDoc](http://jsdoc.sourceforge.net/) out of the box wouldn't work without commenting explicit method name and memberOf attribute - which, in my view, defeats the point.
 
 Here's how to get it working.
 
@@ -26,7 +26,7 @@ With a small change (or not depending on your code) to the <code>extend</code> m
 
 For example, this is how my object would be normally laid out and documented:
 
-<script src="http://remysharp.com/js/prettify.packed.js" type="text/javascript" charset="utf-8"></script>
+<script src="/js/prettify.packed.js" type="text/javascript" charset="utf-8"></script>
 
 <pre><code class="prettyprint">/**
  * @fileoverview Definition of cat
@@ -42,7 +42,7 @@ var Cat = Animal.extend({
     this.base();
     this.say("Meow");
   }
-  
+
   /**
    * Our cat only eats mice
    * @param {Mouse} food Food fed to the cat
@@ -59,7 +59,7 @@ Making the following changes sorts out the JsDoc Toolkit parser and allows every
  * @namespace Cat
  */
 var Cat = Animal.extend(/** @scope: Cat */{</code></pre>
-  
+
 Now running the JsDoc Toolkit with <code>-a</code> (Include all functions, even undocumented ones) and it will properly parse the methods in the Base object:
 
 <pre><code class="prettyprint">java -jar app/js.jar app/run.js -t=templates/sweet *.js</code></pre>
