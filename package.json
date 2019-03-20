@@ -6,7 +6,7 @@
     "node": "10"
   },
   "scripts": {
-    "dev": "eleventy --serve --port=9000 --config=.eleventy.js",
+    "dev": "node lib/index.js",
     "test": "semantic-release pre",
     "start": "node server.js",
     "build": "node lib/index.js",
@@ -43,6 +43,7 @@
     "url": "https://github.com/remy/remysharp.com.git"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "inquirer": "0.12.0",
     "semantic-release": "4.3.5",
     "serve-handler": "^5.0.8"
