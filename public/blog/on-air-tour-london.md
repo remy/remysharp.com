@@ -12,7 +12,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # on AIR Tour: London
 
-<img src="http://remysharp.com/wp-content/uploads/2008/04/air.jpg" alt="Air" title="Air" style="float: left; margin: 5px 5px 0 0;" height="132" width="99" /> Adobe hit London yesterday with their [on AIR tour](http://onair.adobe.com/) and I had a seat.
+<img src="/images/air.jpg" alt="Air" title="Air" style="float: left; margin: 5px 5px 0 0;" height="132" width="99" /> Adobe hit London yesterday with their [on AIR tour](http://onair.adobe.com/) and I had a seat.
 
 I'd been initially interested in AIR last year when I realised it was be a good entry point to developing a desktop app for the Mac (I've dabbled in Objective-C - but I can't get my head around the square brackets!)
 
@@ -50,13 +50,13 @@ One of the best presentations detailed the security model AIR apps followed and 
 * Following functionality is restricted: eval(), innerHTML, &lt;script&gt;, document.write()
 * You can load content and expose in to the sandbox via <code>parentSandboxBridge</code>
 * You can import but it's done explicitly via Loader class - and you should use XMLSignatureValidator to ensure the imported content really does come from you.
-* See customUpdateUI for greater control over installing updates.  It invokes the currently installed app, with an 'application update event' - then you handle the update yourself.  
+* See customUpdateUI for greater control over installing updates.  It invokes the currently installed app, with an 'application update event' - then you handle the update yourself.
 
 ## Sans Flex Builder
 
 Being the TextMate fan that I am, I was extremely pleased to see a live demo by [Kevin Hoyt](http://blog.kevinhoyt.org/) using TextMate.  There are existing Air TextMate bundles out on the tubes, but none that had the API completion.
 
-Which is why I went about parsing the JavaScript API and dropping it in to a [Air TextMate bundle](/downloads/Air.tmbundle.zip) - finished before the last presentation was over :-) 
+Which is why I went about parsing the JavaScript API and dropping it in to a [Air TextMate bundle](/downloads/Air.tmbundle.zip) - finished before the last presentation was over :-)
 
 ## Some Titbits
 

@@ -12,4 +12,4 @@ modified: '2014-09-03 16:15:12'
 
 Has this always been here?  Superb!
 
-![Wordpress smilie](http://remysharp.com/wp-content/uploads/2007/02/wordpress_smilie.png)
+![Wordpress smilie](/images/wordpress_smilie.png)

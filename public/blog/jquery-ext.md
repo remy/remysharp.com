@@ -17,7 +17,7 @@ I've started playing with [Ext](http://extjs.com) with [jQuery](http://jquery.co
 
 ## Example
 
-I mocked up a quick [Ext with jQuery example](http://remysharp.com/wp-content/uploads/2007/04/ext_layout.html) to create a framed layout.  Below is some information on how I got to the final output.
+I mocked up a quick [Ext with jQuery example](/images/ext_layout.html) to create a framed layout.  Below is some information on how I got to the final output.
 
 ## Custom Builds
 
@@ -45,7 +45,7 @@ The first stumbling block in getting Ext working with jQuery was the missing scr
 
 ### HTML
 
-Where I really fell down, embarrassingly, was the HTML.  The API examples don't really talk about the underlying HTML and how it should be structured.  
+Where I really fell down, embarrassingly, was the HTML.  The API examples don't really talk about the underlying HTML and how it should be structured.
 
 I initially thought the HTML produced itself, but quickly realised this was madness and would negate the unobtrusiveness of the libraries.
 
@@ -59,12 +59,12 @@ With jQuery, if you try to execute a function against elements that have not bee
 
 ### Sometime breaks without JavaScript
 
-I found that if I turned JavaScript off, sometimes the page wouldn't render at all.  It would just remain blank.  
+I found that if I turned JavaScript off, sometimes the page wouldn't render at all.  It would just remain blank.
 
 I've not investigated this further because I know this is relatively new so I expect it was just a teething problem.
 
 ## Ext with jQuery
 
-Overall it looks like the bag has opened up for faster web application development (I'm already working on my first jQuery + Ext app). 
+Overall it looks like the bag has opened up for faster web application development (I'm already working on my first jQuery + Ext app).
 
 Watch this space for some examples and tutorials.

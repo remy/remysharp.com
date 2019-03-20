@@ -25,13 +25,13 @@ The particular thing of interest to me was the integrated [web development tools
 
 The biggest point of interest is the versioning combined with the development tools.  This seems to imply that since we can change the rendering engine in IE8 using a meta tag, then we should be able to use the same debugging tools against the IE7 rendered version of the page.
 
-There is, however, a snag: if you look at the [versioning details](http://www.microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm#tools) you'll see that it only supports rendering as IE8, IE7 and IE5...no IE6.  
+There is, however, a snag: if you look at the [versioning details](http://www.microsoft.com/windows/products/winfamily/ie/ie8/readiness/DevelopersNew.htm#tools) you'll see that it only supports rendering as IE8, IE7 and IE5...no IE6.
 
 IE6 is browser most in need of these development tools.  That's a real shame.
 
 The debugger feels like a hybrid of the Visual Studio Wed Developer Edition and the old Windows Script Editor.  It's all built in to IE which is great - no booting up extra apps, and ultimately, being able to set breakpoints and stepping through is perfect for finding that deeply set bug.
 
-<img alt="IE 8 Debugger window" title="IE 8 Debugger window" src="http://remysharp.com/wp-content/uploads/2008/03/ie-8-debugger-window.jpg" width="600" width="320" />
+<img alt="IE 8 Debugger window" title="IE 8 Debugger window" src="/images/ie-8-debugger-window.jpg" width="600" width="320" />
 
 The CSS treeview is very cool and gives you a good idea where an element is deriving it's style from.  You can also see in real time the effect of disabling a particular style.
 
@@ -63,12 +63,12 @@ I didn't expect the HTML to be a problem, but looking at my blog in IE8, I can s
 
 Also, where a <code>legend</code> element has always sat on the <code>fieldset</code> border - in IE8 it doesn't:
 
-![Legend in IE8](http://remysharp.com/wp-content/uploads/2008/03/legend-in-ie8.jpg)
+![Legend in IE8](/images/legend-in-ie8.jpg)
 
 ## Wrap Up
 
 Overall, I think IE8 is an exciting release.  John Resig also [points out](https://twitter.com/jeresig/statuses/767241778) IE8 will have ARIA support, which, as he suggests, shifts the focus back on to the *other* browsers to raise the bar.
 
-This release from Microsoft has sparked as much interest in me as when IE4 was being touted about and we first started being able to play with DHTML.  
+This release from Microsoft has sparked as much interest in me as when IE4 was being touted about and we first started being able to play with DHTML.
 
 I genuinely think that Microsoft have a chance of regaining respect in the development community again if they keep this up.  I am, however, not going to hold my breath for too long.  We still need to get IE6 under the carpet, and that's still years away - particularly in the UK corporate market.

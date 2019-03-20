@@ -20,7 +20,7 @@ It was because the page was being served from one domain, while the click tracki
 
 <!--more-->
 
-I'm posting this up because I think the heatmap is a superb tool for companies, in particular the designers and the marketing people. 
+I'm posting this up because I think the heatmap is a superb tool for companies, in particular the designers and the marketing people.
 
 Heatmaps will tell both groups whether a particular element is working to focus attention, or if in fact something else is drawing attention that they never thought of.
 
@@ -38,7 +38,7 @@ I am simply ditching the AJAX aspect of it and changing it to (assuming 'iframe'
 `var url='guardacoordenadas.pl?x='+tempX+'&y='+tempY;
 iframe.src=url;`
 
-Here is a [simple example of it working](http://remysharp.com/wp-content/uploads/2007/01/crossdomain.html) (note that Safari doesn't throw any errors on the cross domain button).
+Here is a [simple example of it working](/images/crossdomain.html) (note that Safari doesn't throw any errors on the cross domain button).
 
 Then I would style the iframe to sit outside of the window:
 

@@ -26,13 +26,13 @@ So I tweaked the lite version and now I can load the Firebug lite in to any page
 
 ## Installing
 
-I recommend you download the tweaked [firebug.js](http://remysharp.com/wp-content/uploads/2007/03/firebug.js) on to your own server for piece of mind<sup>&dagger;</sup>
+I recommend you download the tweaked [firebug.js](/images/firebug.js) on to your own server for piece of mind<sup>&dagger;</sup>
 
 <small>&dagger; If I was being malicious I could change the hosted JavaScript to post cookie data to another web site if I wanted.  I'm **not** malicious - but it's worth keeping in mind!</small>
 
 To use the bookmarklet, drag the link below in to your links toolbar in IE.
 
-<a href="javascript:var h=document.getElementsByTagName('html');h[0].setAttribute('debug', 'true');if (!document.getElementById('_fb')) { var q=document.createElement('script');q.setAttribute('id', '_fb');q.setAttribute('src', 'http://remysharp.com/wp-content/uploads/2007/03/firebug.js');document.getElementsByTagName('body')[0].appendChild(q);void(q);}else{void(window.console.open());}" style="font-size: 150%;">Firebug Bookmarklet</a>
+<a href="javascript:var h=document.getElementsByTagName('html');h[0].setAttribute('debug', 'true');if (!document.getElementById('_fb')) { var q=document.createElement('script');q.setAttribute('id', '_fb');q.setAttribute('src', '/images/firebug.js');document.getElementsByTagName('body')[0].appendChild(q);void(q);}else{void(window.console.open());}" style="font-size: 150%;">Firebug Bookmarklet</a>
 
 If you use your own version of firebug.js - change the following block in the bookmarklet's code to point to your code:
 
@@ -46,7 +46,7 @@ Currently I can't get the bookmarklet to work for Safari (though I've found 99.9
 
 In the interest of understanding what I did, I thought I'd quickly drop an explanation - and perhaps [Joe Hewitt](http://joehewitt.com/about.php) may consider adding the tweaked version.
 
-### getFirebugConsoleiFrame() 
+### getFirebugConsoleiFrame()
 
 I created a new function to return the Firebug console's HTML content.  This meant I didn't have to source the console's content (an iFrame) from another domain (which would lead to obvious permission problems).
 

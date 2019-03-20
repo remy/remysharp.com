@@ -34,4 +34,4 @@ Being 28 is no different to 27.  Except, perhaps, 28 is the age I will be when I
 
 Since I've just worked out how to upload photos when I'm editing my blog in [TextMate](http://macromates.com) - here's a picture of my enjoying some fine wine on my 28th.
 
-![Remy's 28th Birthday](http://remysharp.com/wp-content/uploads/2006/09/remys_28th_birthday.jpg)
+![Remy's 28th Birthday](/images/remys_28th_birthday.jpg)

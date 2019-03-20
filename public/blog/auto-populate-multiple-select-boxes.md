@@ -22,10 +22,10 @@ In response, I've written a jQuery plugin and have included a simple example of 
 
 ## Download
 
-* [Download the selectChain plugin](http://remysharp.com/wp-content/uploads/2007/09/select-chain.js)
+* [Download the selectChain plugin](/images/select-chain.js)
 * [View the demo PHP script source](http://remysharp.com/downloads/select-chain.php)
-* [View the demo SQL source](http://remysharp.com/wp-content/uploads/2007/09/select-chain.sql)
-* [Demonstration](http://remysharp.com/wp-content/uploads/2007/09/select-chain.php)
+* [View the demo SQL source](/images/select-chain.sql)
+* [Demonstration](/images/select-chain.php)
 
 ## Prerequisites
 
@@ -43,9 +43,9 @@ Also, the demo I've provided does not degrade if JavaScript is turned off.  I ad
 
 This demonstration uses three select boxes, the first (element category) drives the next (elements) which drives the next (attributes).
 
-You should keep in mind this demo was written quickly, and I would never normally use the same name attribute on a select box, because when it comes to actually submitting the form, it would be a mess of values.  
+You should keep in mind this demo was written quickly, and I would never normally use the same name attribute on a select box, because when it comes to actually submitting the form, it would be a mess of values.
 
-[See the multiple-select population in action](http://remysharp.com/wp-content/uploads/2007/09/select-chain.php)
+[See the multiple-select population in action](/images/select-chain.php)
 
 ## Usages / Config
 

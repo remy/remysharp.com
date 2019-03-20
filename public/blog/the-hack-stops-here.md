@@ -31,7 +31,7 @@ There are always exceptions, but those aside: it's this last type that I (now) r
 
 If you're not familiar with [Facebook](http://www.facebook.com) get out from under your rock.  One "feature" that's being discussed in the blogging World right now is the ability to import friends from Hotmail or Gmail.
 
-This concept is great.  However, the actual implementation of importing your friends is appalling.  It requires the user to enter their username and password to the particular service to import the data.  
+This concept is great.  However, the actual implementation of importing your friends is appalling.  It requires the user to enter their username and password to the particular service to import the data.
 
 This is a hack.  A hack driven by business.
 
@@ -45,7 +45,7 @@ The big problem is that Facebook is such a big entity on the Internet that it's 
 
 > No wonder other sites have been racing to implement similar features
 
-If you're in a position of authority, others will listen to you, and if you show them the **right** way of doing things, then you're on to a winner.  
+If you're in a position of authority, others will listen to you, and if you show them the **right** way of doing things, then you're on to a winner.
 
 If, on the other hand, you show them the wrong way of doing things (see [Twitter's new invite system](http://twitter.com/invitations)) you're starting a virus.
 
@@ -53,4 +53,4 @@ As a general rule: if it's questionable, then it probably shouldn't be written.
 
 What do you think?  Do you find yourself being bullied in to hacking solutions, or do you think hacking up the Internet is the way to go - and more importantly: why?  Or is your approach *do the right thing*?
 
-![Hacking can be hazardous to your heath ](http://remysharp.com/wp-content/uploads/2007/10/hacking.jpg)
+![Hacking can be hazardous to your heath ](/images/hacking.jpg)

@@ -50,7 +50,7 @@ I've included this in my JavaScript bundle, HTML bundle and so on.
 
 As Britt's post shows, you can now highlight the nasty lines as such via the preferences:
 
-![Highlighting trailing white space](http://remysharp.com/wp-content/uploads/2008/03/highlighting-trailing-white-space.png)
+![Highlighting trailing white space](/images/highlighting-trailing-white-space.png)
 
 ## Wrap Up
 

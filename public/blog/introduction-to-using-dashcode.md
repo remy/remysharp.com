@@ -36,7 +36,7 @@ Once installed, it'll say it's expired: [just get Dashcode working again](http:/
 
 ## Stability
 
-<img title="Broken Dashcode Render" alt="Broken Dashcode Render" src="http://remysharp.com/wp-content/uploads/2007/09/broken-dashcode-render.jpg" height="72" width="178" style="float: right; padding: 0 0 3px 3px;" />Dashcode is particularly ropy with Safari 3 beta (i.e. crashes and you get strange alignment issues with graphics - see example on right).  With Safari 2 (and I suspect Safari 3 final release with Leopard) it's much more stable.  Since there is the occasional crash from Dashcode, I would recommend constantly saving your project as you're coding.  I found more than 10% of the time, Dashcode would crash and result in a total loss of my code from the last save point.
+<img title="Broken Dashcode Render" alt="Broken Dashcode Render" src="/images/broken-dashcode-render.jpg" height="72" width="178" style="float: right; padding: 0 0 3px 3px;" />Dashcode is particularly ropy with Safari 3 beta (i.e. crashes and you get strange alignment issues with graphics - see example on right).  With Safari 2 (and I suspect Safari 3 final release with Leopard) it's much more stable.  Since there is the occasional crash from Dashcode, I would recommend constantly saving your project as you're coding.  I found more than 10% of the time, Dashcode would crash and result in a total loss of my code from the last save point.
 
 Also, I've noticed that dumping a lot to the run log, when viewing the log, can cause Dashcode to slow right down to almost hanging.  Best to avoid dumping large amounts of HTML to the log.
 
@@ -64,7 +64,7 @@ Although effects are available within the Apple classes, you'll need to implemen
 
 <pre><code>window.resizeTo(x, y);</code></pre>
 
-If you are going to resize the widget dynamically, check out the [Apple resizing examples](http://developer.apple.com/documentation/AppleApplications/Conceptual/Dashboard_ProgTopics/index.html) too.  
+If you are going to resize the widget dynamically, check out the [Apple resizing examples](http://developer.apple.com/documentation/AppleApplications/Conceptual/Dashboard_ProgTopics/index.html) too.
 
 I used this technique in my [HTML entities](http://leftlogic.com/lounge/articles/entity-lookup/) widget to keep the widget small when it's dropped in to the Dashboard, but to allow it to grow dynamically when the user searched for a particular HTML entity.
 
@@ -80,15 +80,15 @@ What you should keep in mind, is that you can run **any** command through the sy
 
 ## Ajax in the widget
 
-You widget supports a variation of the Ajax object (or rather xmlhttprequest object).  This version isn't bound by the usual security constraints of a browser - most importantly, it can request content from any domain.  
+You widget supports a variation of the Ajax object (or rather xmlhttprequest object).  This version isn't bound by the usual security constraints of a browser - most importantly, it can request content from any domain.
 
 To execute any Ajax requests from your widget, ensure you have the **Allow Network Access** attribute turned on - otherwise the Ajax will fail without any given reason.
 
-For example, you could use Ajax to pull your film page from [IMDb](http://imdb.com) and then parse the XML for the elements of interest.  
+For example, you could use Ajax to pull your film page from [IMDb](http://imdb.com) and then parse the XML for the elements of interest.
 
 However, if you do want to pull some data from a web page and process it using the DOM returned you have to fiddle the request - in particular the <code>responseXML</code> will be null because the page being returned isn't <code>text/xml</code> - it's <code>text/html</code>.  You can do it using the following (in [jQuery](http://jquery.com) syntax):
 
-<pre><code>$.ajax({ 
+<pre><code>$.ajax({
     url: 'http://remysharp.com/example_page', // doesn't really exist!
     dataType: 'html', // important
     success: function (xml) {
@@ -126,7 +126,7 @@ If you intend to make your widget available in different languages, then this is
 
 ## Debugging
 
-Dashcode comes with a log that can be viewed during run time.  
+Dashcode comes with a log that can be viewed during run time.
 
 You have following debugging tools:
 
@@ -143,7 +143,7 @@ Here's a short list of things that tripped me up:
 1. Dynamically resizing the widget: window.resizeTo
 2. Changing styles: document.getElementById(id).style.setProperty('display', 'none');
 3. Calling refresh on an element that is hidden (display: none) will **not** update the display - in particular the scrollarea.
-4. If you edit the JavaScript in an external editor (as I do, in TextMate), the debugger in Dashcode has a habit of ignoring changes, even though they're being used to run the widget. 
+4. If you edit the JavaScript in an external editor (as I do, in TextMate), the debugger in Dashcode has a habit of ignoring changes, even though they're being used to run the widget.
 5. Ajax request.responseXML is null if you request XML from a web page - i.e. since web pages are (mostly) severed as <code>text/html</code> rather than <code>text/xml</code> - this attribute is null.  See the Ajax section of this article to get around this problem.
 6. The debugger's interface, when copying variable values is limited to 32k - this doesn't mean the actual response is 32k, only that the particular textfield couldn't handle the full length.
 

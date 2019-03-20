@@ -29,13 +29,13 @@ In particular, Firefox et al, when overflowing an element, it puts the horizonta
 
 You won't notice this difference until you compare to IE:
 
-![Firefox compared to IE - overflow broken](http://remysharp.com/wp-content/uploads/2008/01/firefox-compared-to-ie-overflow-broken.gif)
+![Firefox compared to IE - overflow broken](/images/firefox-compared-to-ie-overflow-broken.gif)
 
 You'll note that because the content overflows horizontally in IE, the new horizontal scroll bar means we can't see all the content vertically, thus generating a vertical scroll bar.
 
 Here's the worst example, where only one line is overflowed (there's a super tiny vertical scrollbar that you're supposed to use to view the single line):
 
-![Worse example of IE overflow ](http://remysharp.com/wp-content/uploads/2008/01/worse-example-of-ie-overflow.gif)
+![Worse example of IE overflow ](/images/worse-example-of-ie-overflow.gif)
 
 So our aim is to move the horizontal scroll bar to the outside of our overflowed element.
 
@@ -49,7 +49,7 @@ So our solution is to apply the following to in IE only:
 2. Add 20 pixels of padding to the bottom of our element<sup>&dagger;</sup>.
 3. Strip the vertical scroll bar.
 
-<small>&dagger; As far as my testing has seen, the typical height of a scroll bar is 20 pixels. </small> 
+<small>&dagger; As far as my testing has seen, the typical height of a scroll bar is 20 pixels. </small>
 
 
 ### JavaScript to the Rescue
@@ -63,10 +63,10 @@ Disclaimer: As much as I'd love to see this problem solved entirely using CSS, o
 <pre class="prettyprint"><code>window.onload = function () {
   // only apply to IE
   if (!/*@cc_on!@*/0) return;
-  
+
   // find every element to test
   var all = document.getElementsByTagName('*'), i = all.length;
-  
+
   // fast reverse loop
   while (i--) {
     // if the scrollWidth (the real width) is greater than
@@ -87,7 +87,7 @@ As a [jQuery](http://jquery.com) plugin:
         if (this.scrollWidth &gt; this.offsetWidth) {
           $(this).css({ 'padding-bottom' : '20px', 'overflow-y' : 'hidden' });
         }
-      });            
+      });
     } else {
       return this;
     }
@@ -101,8 +101,8 @@ $('pre').fixOverflow().doOtherPlugin();</code></pre>
 
 Our JavaScript fix results in IE conforming to putting the horizontal scroll bar **below** the element:
 
-![Firefox compared to IE: Overflow fixed](http://remysharp.com/wp-content/uploads/2008/01/firefox-compared-to-ie-overflow-fixed.gif)
+![Firefox compared to IE: Overflow fixed](/images/firefox-compared-to-ie-overflow-fixed.gif)
 
 Even better - here's the one line overflow fixed in IE:
 
-![One line overflow fixed in IE](http://remysharp.com/wp-content/uploads/2008/01/one-line-overflow-fixed-in-ie.gif)
+![One line overflow fixed in IE](/images/one-line-overflow-fixed-in-ie.gif)

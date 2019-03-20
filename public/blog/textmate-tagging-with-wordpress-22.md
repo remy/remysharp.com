@@ -13,7 +13,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # TextMate tagging with WordPress 2.2
 
-I've just upgraded to WordPress 2.2 and now Ultimate Tag Warrior is broken and my TextMate tagging doesn't work anymore.  
+I've just upgraded to WordPress 2.2 and now Ultimate Tag Warrior is broken and my TextMate tagging doesn't work anymore.
 
 So here is the explanation on how to get the two working again.
 
@@ -29,7 +29,7 @@ Firstly, we need to add tag support.  I found [Ultimate Tag Warrior 3](http://ww
 
 There's a few alternatives, like [Simply Tagging](http://sw-guide.de/wordpress/plugins/simple-tagging/) - but it will require a different tagging function in the XMLRPC changes below (which, for now, I've not figured out).
 
-The install is straight forward and you can start tagging pretty quickly from the web interface.  
+The install is straight forward and you can start tagging pretty quickly from the web interface.
 
 ### Ultimate Tag Warrior working in 2.2
 
@@ -53,11 +53,11 @@ You need to backup a copy of your xmlrpc.php file.  That's just good practice.
 
 ### Download patch XMLRPC
 
-<p>On <a href="http://remysharp.com/2006/10/01/wordpress-tagging-and-textmate/#comment-154">Dan's suggestion</a>, I am <a href="http://remysharp.com/wp-content/uploads/2007/06/xmlrpc.php.txt">offering my own xmlrpc.php</a> file for you to use.</p>
+<p>On <a href="http://remysharp.com/2006/10/01/wordpress-tagging-and-textmate/#comment-154">Dan's suggestion</a>, I am <a href="/images/xmlrpc.php.txt">offering my own xmlrpc.php</a> file for you to use.</p>
 
 This is the xmlrpc for WordPress 2.2.  For WordPress 2.0 - see my earlier post on getting [tagging working in Wordpress 2.0](http://remysharp.com/2006/10/01/wordpress-tagging-and-textmate/)
 
-[Download the xmlrpc.php file](http://remysharp.com/wp-content/uploads/2007/06/xmlrpc.php.txt)
+[Download the xmlrpc.php file](/images/xmlrpc.php.txt)
 
 ### Details on XMLRPC changes
 
@@ -75,7 +75,7 @@ Ignore the '[ecto](http://ecto.kung-foo.tv/archives/000991.php)' part - it's a b
 
 You can use my patch, or patch the blogging.rb file yourself.
 
-Download the latest [blogging.rb patch](http://remysharp.com/wp-content/uploads/2007/06/blogging.rb.patch) and run the patch command:
+Download the latest [blogging.rb patch](/images/blogging.rb.patch) and run the patch command:
 
 `patch -p0 < blogging.rb.patch`
 
@@ -87,11 +87,11 @@ Find the following lines:
 
 `@post['mt_tags'] = @headers['tags'] if @headers['tags']`
 
-Then copy it below the 
+Then copy it below the
 
 `elsif self.mode == 'wp'`
 
-Then change: 
+Then change:
 
 <pre><code>@post['mt_allow_comments'] = @headers['comments'] =~ /\b(on|1|y(es)?)\b/i ? 'open' : 'closed' if @headers['comments']
 @post['mt_allow_pings'] = @headers['pings'] =~ /\b(on|1|y(es)?)\b/i ? 'open' : 'closed' if @headers['pings']</code></pre>

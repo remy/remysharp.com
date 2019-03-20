@@ -13,7 +13,7 @@ In doing a recent [Google search](http://www.google.com/search?q=w3csites.com), 
 
 I registered my business site, [Left Logic](http://leftlogic.com) with w3csites a little while ago, so this made me very curious what their web site could be hosting that Google would consider harmful.
 
-![W3C Sites considered harmful by Google](http://remysharp.com/wp-content/uploads/2007/08/w3csites.gif)
+![W3C Sites considered harmful by Google](/images/w3csites.gif)
 
 What's worse for them, is that since their search is driven by a branded Google search, all of the results suggest the result (which points back within the w3csites site) is harmful!
 

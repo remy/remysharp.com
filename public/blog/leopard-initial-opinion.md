@@ -45,10 +45,10 @@ With all the initial chatter about resolution independence, it doesn't look like
 There's an odd effect when opening a stack and then moving over it.  I kind of expected the current stack to stay in focus in the Dock.  I've included a quick vid of what I mean (I'm being picky).
 
 <object width="400" height="300" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-  <param name="src" value="http://remysharp.com/wp-content/uploads/2007/10/stacks.mov" />
+  <param name="src" value="/images/stacks.mov" />
   <param name="controller" value="true" />
   <param name="autoplay" value="false" />
-  <embed src="http://remysharp.com/wp-content/uploads/2007/10/stacks.mov"
+  <embed src="/images/stacks.mov"
     width="400" height="300"
     controller="true" autoplay="false"
     scale="tofit" cache="true"
@@ -79,15 +79,15 @@ I use the [current app -> show menu hack](http://www.43folders.com/2007/03/12/tm
 
 I don't use coverflow too much in iTunes, in fact barely at all.  However, I find my self in Finder going back to coverflow and skimming through my documents finding what I'm after that little bit faster - and it's kinda fun too.
 
-Quickview is really smart and very fast considering it's opening up all kinds of types of docs.  
+Quickview is really smart and very fast considering it's opening up all kinds of types of docs.
 
 I think this is the most unexpected feature that I'm using.
 
 <object width="541" height="338" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-  <param name="src" value="http://remysharp.com/wp-content/uploads/2007/10/coverflow.mov" />
+  <param name="src" value="/images/coverflow.mov" />
   <param name="controller" value="true" />
   <param name="autoplay" value="false" />
-  <embed src="http://remysharp.com/wp-content/uploads/2007/10/coverflow.mov"
+  <embed src="/images/coverflow.mov"
     width="541" height="338"
     controller="true" autoplay="false"
     scale="tofit" cache="true"
@@ -99,7 +99,7 @@ I think this is the most unexpected feature that I'm using.
 
 If you move around with your Mac, then you may know of the pain that is: forgetting to unmount.
 
-When Tiger doesn't unmount a network drive, and you disconnect the network - everything hangs for about 5 minutes while the OS goes off to work out what the heck happened.  
+When Tiger doesn't unmount a network drive, and you disconnect the network - everything hangs for about 5 minutes while the OS goes off to work out what the heck happened.
 
 Now in Leopard, so far as my tests have shown, forgetting to unmount doesn't render your machine busy.  It's cached a tree of where you've been already.  You can't access the files while you're offline, but it doesn't groak if you disconnect the network, but remain mounted.
 

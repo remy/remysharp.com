@@ -15,7 +15,7 @@ For those who didn't update TextMate on the cutting edge update, here's what it 
 
 <!--more-->
 
-![TextMate / Halloween](http://remysharp.com/wp-content/uploads/2006/11/textmate_halloween.jpg)
+![TextMate / Halloween](/images/textmate_halloween.jpg)
 
 The background for the default start up (i.e. empty) is a spider's web and the icon has changed.
 

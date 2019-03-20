@@ -16,4 +16,4 @@ There's still the new years eve parties to attend, but I've been told by the wif
 
 <!--more-->
 
-![Merry Christmas from Remy](http://remysharp.com/wp-content/uploads/2007/12/merry-christmas-from-remy.jpg "Merry Christmas from Remy")
+![Merry Christmas from Remy](/images/merry-christmas-from-remy.jpg "Merry Christmas from Remy")

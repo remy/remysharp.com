@@ -18,7 +18,7 @@ I was browsing around the net looking for something when Google, the true key ho
 
 <!--more-->
 
-![Google says no!](http://remysharp.com/wp-content/uploads/2006/12/google_says_no.gif)
+![Google says no!](/images/google_says_no.gif)
 
 Now, clearly I was looking for something I shouldn't be (kudos to anyone who comments and guesses right!), but I thought that [Google were on censoring China's content](http://news.bbc.co.uk/1/hi/technology/4645596.stm) but I didn't realise that they would stop a lowly Englishman traversing cyberspace.
 

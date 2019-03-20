@@ -36,16 +36,16 @@ Using this template, I've been able to wrap the status in quote and make the 'ag
 
 See the original [add twitter to your blog](http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/) post for a full list of template values and options.
 
-<link rel="stylesheet" href="http://remysharp.com/wp-content/uploads/2007/05/twitter.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+<link rel="stylesheet" href="/images/twitter.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 
-<script src="http://remysharp.com/wp-content/uploads/2007/05/twitter.js" type="text/javascript" charset="utf-8"></script>
+<script src="/images/twitter.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript" charset="utf-8">
 getTwitters('twitters', {
-    id: 'jeresig', 
-    clearContents: true, 
-    count: 10, 
+    id: 'jeresig',
+    clearContents: true,
+    count: 10,
     withFriends: true,
-    enableLinks: true, 
+    enableLinks: true,
     ignoreReplies: false,
     template: '<span class="prefix"><img height="16" width="16" src="%user_profile_image_url%" /> <a href="http://twitter.com/%user_screen_name%">%user_name%</a> said: </span> <span class="status">"%text%"</span> <span class="time"><a href="http://twitter.com/%user_screen_name%/statuses/%id%">%time%</a></span>'
 });

@@ -27,7 +27,7 @@ I've done this as a [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addo
 
 It simply adds a reply icon to each tweet, which plugs the contents of the tweet in to the subject of an email allowing you to continue a conversation offline.
 
-![Tweet Offline](http://remysharp.com/wp-content/uploads/2008/09/tweet-offline.png)
+![Tweet Offline](/images/tweet-offline.png)
 
 It doesn't plug in the person's email address since Twitter's API doesn't (rightly) open that information up - but it's a quick convenient plug in.  I'm considering taking a look at [Ubiquity](http://labs.mozilla.com/2008/08/introducing-ubiquity/) to see if I can extend this to a plugin that you can continue the last conversation offline for X user.
 
@@ -45,11 +45,11 @@ Load up the Twitter greasemonkey script and take a look at a few people that hav
 
 ### How's the techie stuff done?
 
-It's actually two calls to Google's API - but since it's done through your browser, there's no worry about hitting limits.  
+It's actually two calls to Google's API - but since it's done through your browser, there's no worry about hitting limits.
 
 The first call goes off an requests the directions from the lat/long combo *to* the same lat/long position.  This results in the road name being given.  This is used to zoom out a little bit more to give a reasonable description of the location.
 
-The second call is to Google's *typical* geo mapping API, giving the street name from the first call and the original lat/long to help locate the street.  
+The second call is to Google's *typical* geo mapping API, giving the street name from the first call and the original lat/long to help locate the street.
 
 The result is the full location in a string.
 

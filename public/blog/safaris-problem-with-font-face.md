@@ -20,11 +20,11 @@ Anyway, I'm doing a talk at [Standards.next](http://standards-next.org) this wee
 
 This was the sequence of events I saw in Safari as the browser downloaded the <code>@font-face</code> fonts:
 
-![Safari showing @font-face progressively loading, but the text is completely invisible until the font is downloaded](http://remysharp.com/wp-content/uploads/2009/06/safari-showing-font-face-progressively-loading-but-the-text-is-completely-invisible-until-the-font-is-downloaded.jpg)
+![Safari showing @font-face progressively loading, but the text is completely invisible until the font is downloaded](/images/safari-showing-font-face-progressively-loading-but-the-text-is-completely-invisible-until-the-font-is-downloaded.jpg)
 
 I've run the same test against Opera 10b and Firefox 3.5b and both render the text out, and only once the font has been downloaded, do they then re-render the text, here's Opera (I also captured Firefox, but the heading is clearer in Opera for this example):
 
-![Opera rendering @font-face after showing the default font](http://remysharp.com/wp-content/uploads/2009/06/opera-rendering-font-face-after-showing-the-default-font.jpg)
+![Opera rendering @font-face after showing the default font](/images/opera-rendering-font-face-after-showing-the-default-font.jpg)
 
 <small>I'm not sure if that first screen is the <abbr title="Flash of Unstyled Content">FOUC</abbr> bug - I didn't think it was...</small>
 

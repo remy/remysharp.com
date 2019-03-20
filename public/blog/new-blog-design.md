@@ -23,9 +23,9 @@ There was a considerable amount of pain fixing my tagging structure after I got 
 
 Here's a comparison from the new and old - I think the biggest win for me is how the content stands out more:
 
-![Page Comparison](http://remysharp.com/wp-content/uploads/2008/02/page-comparison.jpg)
+![Page Comparison](/images/page-comparison.jpg)
 
-![Homepage Comparison](http://remysharp.com/wp-content/uploads/2008/02/homepage-comparison.jpg)
+![Homepage Comparison](/images/homepage-comparison.jpg)
 
 I'm happy with all of it, perhaps with exception, of the front page, where I'm generally pimp myself a little.
 

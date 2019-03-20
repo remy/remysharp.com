@@ -17,7 +17,7 @@ If you enjoyed [LA Confidential](http://imdb.com/title/tt0455143/), then you'll 
 
 <!--more-->
 
-<img src="http://remysharp.com/wp-content/uploads/2006/09/the_black_dahlia_poster.jpg" style="float: right; padding-left: 20px;" alt="The Black Dahlia poster" />The story is set against the brutal murder of a young nothing-actress in the late 1940s.  [Josh Hartnett](http://imdb.com/name/nm0001326/) plays Bucky, the young good looking, all round nice guy, well - aside from sleeping with his best friend's wife and all...
+<img src="/images/the_black_dahlia_poster.jpg" style="float: right; padding-left: 20px;" alt="The Black Dahlia poster" />The story is set against the brutal murder of a young nothing-actress in the late 1940s.  [Josh Hartnett](http://imdb.com/name/nm0001326/) plays Bucky, the young good looking, all round nice guy, well - aside from sleeping with his best friend's wife and all...
 
 [Scarlett Johansson](http://imdb.com/name/nm0424060/) plays the <strike>eye candy</strike> female interest in the love triangle, completed by [Thank You for Smoking](http://imdb.com/title/tt0427944/)'s [Aaron Eckhart](http://imdb.com/name/nm0001173/) (who Julie points out promotes a film from TYFNS where beautiful people smoke, and this, is in fact **that** film!).
 

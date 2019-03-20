@@ -10,7 +10,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # How to add Twitter to your blog, without it hanging your site
 
-<img alt="Twitter logo" src="http://remysharp.com/wp-content/uploads/2007/03/twitter_logo.png" style="float: right; padding: 0 0 5px 5px;" />
+<img alt="Twitter logo" src="/images/twitter_logo.png" style="float: right; padding: 0 0 5px 5px;" />
 
 <div class="update"><p><strong>Update:</strong> for the latest version of this script, and complete control over how it looks, see <a href="http://remysharp.com/2007/05/18/add-twitter-to-your-blog-step-by-step/">Add Twitter to your blog (step-by-step)</a></p></div>
 
@@ -46,9 +46,9 @@ We're going to wait until the page has loaded before we pull in the Twitter feed
 I prefer not to overwrite the .onload event, so I would use [jQuery](http://jquery.com) to add to the onload events and change
 
 <code>window.onload = function() {</code>
-  
+
 ...to:
 
 <code>jQuery(function() { ...</code>
-  
+
 But you can use whatever library or 'polite' onload handler you want.  However, if the Twitter code is the only JavaScript on your page - you can keep it as is.

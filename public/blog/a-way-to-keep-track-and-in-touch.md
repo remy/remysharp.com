@@ -20,7 +20,7 @@ So, I've written a widget (because I have no idea where to start on an Object-C 
 
 [Download the widget](/downloads/Ketchup.zip) (but it may require some Perl modules, outlined below)
 
-![Ketchup Widget](http://remysharp.com/wp-content/uploads/2007/07/ketchup-widget.png)
+![Ketchup Widget](/images/ketchup-widget.png)
 
 The guts of the widget is written in Perl, and there's some specific modules you'll need to install if you want to use this.
 

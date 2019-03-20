@@ -14,7 +14,7 @@ modified: '2014-09-03 16:15:12'
 
 With the [release of Safari 3.1](http://remysharp.com/2008/03/18/safari-31-web-developer-functionality/) the brand new install reverted out my nice RSS icons.
 
-![RSS icons in Safari](http://remysharp.com/wp-content/uploads/2008/03/rss-icons-in-safari.png)
+![RSS icons in Safari](/images/rss-icons-in-safari.png)
 
 Annoyingly, [Mac Specialist](http://www.macspecialist.org/content/lets_hold_hands/) seems to have deleted their original post offering the install.
 
@@ -23,7 +23,7 @@ Annoyingly, [Mac Specialist](http://www.macspecialist.org/content/lets_hold_hand
 
 As such, I've made the raw icon files available here (at least until they revive the page).  This will replace the blue (non-standard, sad looking) RSS icons from Safari with the one from the picture above.
 
-[Download Safari RSS icons](http://remysharp.com/wp-content/uploads/2008/03/safari-rss-icons.zip)
+[Download Safari RSS icons](/images/safari-rss-icons.zip)
 
 To install follow these instructions:
 
@@ -34,5 +34,5 @@ To install follow these instructions:
   * HideRSSButton\_Pressed.tif
   * ShowRSSButton.tif
   * ShowRSSButton\_Pressed.tif
-4. Copy the contents of the [Safari RSS icons](http://remysharp.com/wp-content/uploads/2008/03/safari-rss-icons.zip) over these existing files.
+4. Copy the contents of the [Safari RSS icons](/images/safari-rss-icons.zip) over these existing files.
 5. Restart Safari.

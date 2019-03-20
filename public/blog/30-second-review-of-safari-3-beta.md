@@ -27,7 +27,7 @@ modified: '2014-09-03 16:15:12'
 * CSS support is better - but again due to the latest Webkit, for example, buttons can be styled whereas they couldn't be in Safari 2.
 * For the developers: if you pass multiple items to the console.log Safari doesn't crash anymore - yay! - but it still only logs the first item.
 
-<img src="http://remysharp.com/wp-content/uploads/2007/06/safari-3-public-beta.jpg" style="margin-left: 40px" alt="Safari 3 public" />
+<img src="/images/safari-3-public-beta.jpg" style="margin-left: 40px" alt="Safari 3 public" />
 
 ## Downsides
 

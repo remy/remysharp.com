@@ -35,7 +35,7 @@ Sadly for the time being, I've not too familiar with Objective-C and developing 
 4. Running the ObjectAlloc app (/Developer/Applications/Performance Tools/) I can see the NSCalendarDate objects being created, and most importantly, can see one of the objects contains: 2007-07-15 00:00:00 +0100, and the other 'now'.
 5. Based on all of this, I have to assume the date is hardcoded in to either the binary or it's resources, therefore it can be changed - it just needs the year leaping forward.
 
-![Dashcode Memory Inspection](http://remysharp.com/wp-content/uploads/2007/07/dashcode-memory-inspection.png)
+![Dashcode Memory Inspection](/images/dashcode-memory-inspection.png)
 
 If anyone comes up with a patch or hack - that would be superb.
 

@@ -39,6 +39,6 @@ Then I receive a phone call on Wednesday (yesterday):
 <blockquote>Mr Sharp, we've assessed your laptop, and we have decided it is...</blockquote>
 Held my breath...
 <blockquote>irreparable, so we're replacing it with a new MacBook Pro direct from Apple.</blockquote>
-<img style="padding: 0pt 10px 10px 0pt; float: left" alt="MacBook Pro 15 inch" id="image51" src="http://remysharp.com/wp-content/uploads/2006/12/product-15in.jpg" />Whoohoo!  Turns out the system works!
+<img style="padding: 0pt 10px 10px 0pt; float: left" alt="MacBook Pro 15 inch" id="image51" src="/images/product-15in.jpg" />Whoohoo!  Turns out the system works!
 
 Thank you lucky streak - here I come brand new Mac!  Clearly I was happy about this decision - next step: get them to erase the contents of the disk...I don't want it turning up in some random market stall!

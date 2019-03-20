@@ -36,7 +36,7 @@ If anyone has any problems in any other browsers (or even these), I would apprec
 
 ## Demonstration
 
-[View the tag suggestion demo](http://remysharp.com/wp-content/uploads/2007/12/tagging.php)
+[View the tag suggestion demo](/images/tagging.php)
 
 [View the source for the demo](http://remysharp.com/downloads/tagging.php)
 

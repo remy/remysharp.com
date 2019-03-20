@@ -17,11 +17,11 @@ modified: '2014-09-03 16:15:12'
 
 <p>The screencast is sans-sound, really just to try to keep my out-going bandwidth down, but I&#8217;ve commented along the way so you can understand (&#8230;hopefully&#8230;) what I&#8217;m doing, and why I&#8217;m doing it.</p>
 
-<p><a href="http://remysharp.com/wp-content/uploads/2007/02/jquery_ajax_forms.mov">Download the QuickTime screencast, 9MB, a little over 10 minutes</a></p>
+<p><a href="/images/jquery_ajax_forms.mov">Download the QuickTime screencast, 9MB, a little over 10 minutes</a></p>
 
 <p><small>If you can&#8217;t view the screencast, try <a href="http://www.divx.com/divx/webplayer/">DivX Web Player</a> for Windows or the Mac.</small></p>
 
-<p>You can also have a look <a href="http://remysharp.com/wp-content/uploads/2007/02/contact.php.txt">the code used</a> in the screencast to have a play or to upgrade.</p>
+<p>You can also have a look <a href="/images/contact.php.txt">the code used</a> in the screencast to have a play or to upgrade.</p>
 
 <p>As always, let me know if you have any questions or suggestions.</p>
 

@@ -22,7 +22,7 @@ Set against London uncompromisingly exiling all refugees, [Theo Faron (Clive Owe
 [COM]: http://www.imdb.com/title/tt0206634/
 <!--more-->
 
-<img style="float: right; padding-left: 20px" alt="Children of Men poster" src="http://remysharp.com/wp-content/uploads/2006/10/children_of_men_poster.jpg" />Firstly it really does make my day when I watch a film set in England with English actors ([Michael Caine][Michael] and [Chiwetel Ejiofor][CE]), give or take a [Julianne Moore][JM] here and there.
+<img style="float: right; padding-left: 20px" alt="Children of Men poster" src="/images/children_of_men_poster.jpg" />Firstly it really does make my day when I watch a film set in England with English actors ([Michael Caine][Michael] and [Chiwetel Ejiofor][CE]), give or take a [Julianne Moore][JM] here and there.
 
 [Clive Owen][Clive] is quickly becoming one of my favourite Brit actors.  He plays Theo, the anti-hero that you would want to be or be with in those darkest hours.  Look out for the special brand of comedy the director put's his hero through too!
 

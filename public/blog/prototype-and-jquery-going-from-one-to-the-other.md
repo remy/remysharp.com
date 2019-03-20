@@ -24,6 +24,6 @@ Below you can find the presentation I put together that goes through the core of
 
 <object style="margin:0px" width="425" height="355"><param name="movie" value="http://s3.amazonaws.com/slideshare/ssplayer2.swf?doc=prototype-jquery-going-from-one-to-the-other-1193346036472971-5"/><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://s3.amazonaws.com/slideshare/ssplayer2.swf?doc=prototype-jquery-going-from-one-to-the-other-1193346036472971-5" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object>
 
-You can also download the [Prototype &amp; jQuery slides](http://www.slideshare.net/remy.sharp/prototype-jquery-going-from-one-to-the-other/download) ([mirror](http://remysharp.com/wp-content/uploads/2007/10/prototype-and-jquery.pdf))
+You can also download the [Prototype &amp; jQuery slides](http://www.slideshare.net/remy.sharp/prototype-jquery-going-from-one-to-the-other/download) ([mirror](/images/prototype-and-jquery.pdf))
 
 The slides should pretty much talk for themselves, but I welcome any feedback or questions you may have.

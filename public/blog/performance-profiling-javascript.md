@@ -19,7 +19,7 @@ So I've written a library that allows me to drop in performance timing relativel
 
 [Download time.js](http://remysharp.com/time.js) ([compressed time.js](http://remysharp.com/time.packed.js))
 
-[See the tests](http://remysharp.com/wp-content/uploads/2007/04/page_timer.html)
+[See the tests](/images/page_timer.html)
 
 
 <!--more-->
@@ -36,7 +36,7 @@ time.setLineReportMethod(function)
 
 Calling time.report() will show the complete report.  If a label is passed in, it will show reports for only that label.
 
-The setter functions allow you to output the reports in your own way, i.e. if you want the output in Firebug's console, or added to a floating DIV you have created.  See the [performance test](http://remysharp.com/wp-content/uploads/2007/04/page_timer.html) example for a working example.
+The setter functions allow you to output the reports in your own way, i.e. if you want the output in Firebug's console, or added to a floating DIV you have created.  See the [performance test](/images/page_timer.html) example for a working example.
 
 ## Timing Methods
 
@@ -123,7 +123,7 @@ I've created a little bookmarklet to fire the report whenever you want and a jQu
 
 Bookmarklet: <a href="javascript:void(time.report())">Report</a>
 
-jQuery plugin: [time](http://remysharp.com/wp-content/uploads/2007/04/jq_time.js) (note that you still need to include the time.js library)
+jQuery plugin: [time](/images/jq_time.js) (note that you still need to include the time.js library)
 
 ### Usage:
 

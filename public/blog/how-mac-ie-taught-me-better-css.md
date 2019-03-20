@@ -28,7 +28,7 @@ I've designed the [Left Logic][ll] web site to be as accessible as possible, to 
 
 So when I compared my site between Safari (left) and Mac IE (right) here's what I saw:
 
-![Safari vs. Mac IE example](http://remysharp.com/wp-content/uploads/2006/09/safari_vs_mac_ie_example.jpg)
+![Safari vs. Mac IE example](/images/safari_vs_mac_ie_example.jpg)
 
 Note the big ass gap in IE on the right, and note that the Safari view is exactly how Firefox and Win IE saw my site.
 

@@ -34,7 +34,7 @@ Allow the user to select a top level category from one select box and to automat
 
 Our demo will specifically look to build a simple form that allows us to book human resource for a project. The top level category is the resource type, and the sub-category will list the individual's names.
 
-[See the demo in action](http://remysharp.com/wp-content/uploads/2007/01/select.html)
+[See the demo in action](/images/select.html)
 
 <h2>How it works</h2>
 
@@ -103,11 +103,11 @@ This is just a simple example, but it should be obvious that you can expand this
     }
     ?>
 
-<small>Note that this is not accessible. To ensure accessibility, the server side will handle the pre-population of the select boxes as the page is loaded. Here is an example (excluding the headers, footers and JavaScript) of the <a href="http://remysharp.com/wp-content/uploads/2007/01/select.php.txt">accessible example</a>.</small>
+<small>Note that this is not accessible. To ensure accessibility, the server side will handle the pre-population of the select boxes as the page is loaded. Here is an example (excluding the headers, footers and JavaScript) of the <a href="/images/select.php.txt">accessible example</a>.</small>
 
 ### JSON Response
 
-If I pass the server side id = 2, i.e. <a href="http://remysharp.com/wp-content/uploads/2007/01/select.php?id=2&amp;ajax=true">/select.php?id=2&amp;ajax=true</a>, the return value is (the ajax=true is an arbitrary flag that I'm using to differentiate between a normal user request and one done via AJAX):
+If I pass the server side id = 2, i.e. <a href="/images/select.php?id=2&amp;ajax=true">/select.php?id=2&amp;ajax=true</a>, the return value is (the ajax=true is an arbitrary flag that I'm using to differentiate between a normal user request and one done via AJAX):
 
 ```json
 [
@@ -164,7 +164,7 @@ $(function(){
 
 <p>So that's the primer. Next steps: upgrade, integrate, extend and stylise. Below is an example of the category selection when submitting an item for sale on Ebay.</p>
 
-![Ebay Category Selection](http://remysharp.com/wp-content/uploads/2007/01/ebay_categories.gif)
+![Ebay Category Selection](/images/ebay_categories.gif)
 
 It should be a simple next step to integrate a database behind the selection methods and create more complicated selection like this Ebay example.
 

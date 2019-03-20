@@ -96,7 +96,7 @@ Using [Kelvin Luck's style switcher](http://kelvinluck.com/article/switch-styles
 <pre><code>
 function switchStylestyle(styleName) {
   // note - pre jQuery 1.2 the selector needs to read $('link[@rel*=style][@title]')
-  $(&apos;link[rel*=style][@title]&apos;).each(function(i) { 
+  $(&apos;link[rel*=style][@title]&apos;).each(function(i) {
     this.disabled = true;
     if (this.getAttribute(&apos;title&apos;) == styleName) this.disabled = false;
   });
@@ -107,7 +107,7 @@ var c = readCookie(&apos;style&apos;);
 if (c) switchStylestyle(c);
 </code></pre>
 
-Get the [cookie module](http://remysharp.com/wp-content/uploads/2007/02/cookie.js) if you don't have it already.
+Get the [cookie module](/images/cookie.js) if you don't have it already.
 
 ## Wrapping up
 

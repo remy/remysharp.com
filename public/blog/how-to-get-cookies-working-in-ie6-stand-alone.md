@@ -25,7 +25,7 @@ Here's the full article on [fixing stand alone IE](http://www.positioniseverythi
 
 In summary - to get the cookies working in IE stand alone:
 
-1. Download [Wininet.dll](http://remysharp.com/wp-content/uploads/2007/03/Wininet.dll) (version 5.0.2614.3400)
+1. Download [Wininet.dll](/images/Wininet.dll) (version 5.0.2614.3400)
 2. Drop it in to the stand alone IE directory
 
 That's it, restart the stand alone browser, and cookies should work again.

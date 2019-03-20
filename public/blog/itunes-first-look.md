@@ -22,7 +22,7 @@ From a quick play with iTunes when I got home from work, I've found the followin
 5. Subtle new style, hinting towards the feel of [Leopard](http://www.apple.com/macosx/leopard/index.html).
 6. A much improved iPod management interface, with tabs allowing you to view each content type of your iPod.
 
-![itunes](http://remysharp.com/wp-content/uploads/2006/09/itunes.jpg)
+![itunes](/images/itunes.jpg)
 
 Sadly, movies and TV shows are still [unavailable in the UK](http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewTVSeason?id=102772946&s=143441) :-(
 

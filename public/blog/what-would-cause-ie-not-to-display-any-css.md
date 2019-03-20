@@ -16,7 +16,7 @@ It worked in Firefox (both Mac & PC), Safari and Mac IE, but not PC IE.  So what
 
 <!--more-->
 
-Here's an example of [CSS failing entirely in IE](http://remysharp.com/wp-content/uploads/2006/12/css_break.html).
+Here's an example of [CSS failing entirely in IE](/images/css_break.html).
 
 At the time of writing I can't validate the CSS - because the cause of my problem appears that my [CSS is breaking the validator](http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fremysharp.com%2Fwp-content%2Fuploads%2F2006%2F12%2Fcss_break.css&warning=1&profile=css21&usermedium=all) (note that I've tested successfully with a valid CSS file).
 

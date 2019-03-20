@@ -21,13 +21,13 @@ Well - since it's in the plot summary, they all end up taking a swim, and low an
 
 <!--more-->
 
-<img src="http://remysharp.com/wp-content/uploads/2006/10/adrift_movie_poster.jpg" alt="Adrift movie poster" style="float: right; padding-left: 20px;"  height="150" width="105" />The first half of the film seems to go by pretty slowly and leading up to the realisation that they're all screwed without a ladder, it generally felt like either bad editing or bad photography - because all I could think was: okay, there's another helicopter shot of the boat, or car, or motorbike, or whatever.
+<img src="/images/adrift_movie_poster.jpg" alt="Adrift movie poster" style="float: right; padding-left: 20px;"  height="150" width="105" />The first half of the film seems to go by pretty slowly and leading up to the realisation that they're all screwed without a ladder, it generally felt like either bad editing or bad photography - because all I could think was: okay, there's another helicopter shot of the boat, or car, or motorbike, or whatever.
 
 They do a good job of getting your nerves running, which, I guess put me a little on edge - but I'm sure that had a lot to do with the two **separate** groups talking throughout the film.
 
 Sadly, the high moments of the film are when some of the characters die - come on, that was obvious, I'm not giving anything away :-)
 
-What I didn't realise, and if *anyone* actually reads this, and is from the US, you're not going to recognise the title.  
+What I didn't realise, and if *anyone* actually reads this, and is from the US, you're not going to recognise the title.
 
 That's because Adrift...is actually...[Open Water 2](http://imdb.com/title/tt0470055/)!  Now how did I not know that!  I mean, I enjoyed [Open Water](http://imdb.com/title/tt0374102/), but to actually go along to a sequel that's so blatantly out there to bastardise the success of the first...well, I even surprise myself sometimes.
 

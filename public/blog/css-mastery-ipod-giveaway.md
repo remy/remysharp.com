@@ -19,4 +19,4 @@ Admittedly I actually sent this letter to the North Pole last week, which kind o
 
 Hopefully Santa won't take it too personally. Anyone know a good home for a reindeer?!
 
-![My letter to Santa](http://remysharp.com/wp-content/uploads/2006/12/my_letter_to_santa.jpg)
+![My letter to Santa](/images/my_letter_to_santa.jpg)

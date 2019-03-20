@@ -53,7 +53,7 @@ Both IE7 & IE8 closes the <code>legend</code> element it encounters when it's no
 
 What's also strange, is that looking at the DOM it also creates another empty(?) closed <code>legend</code> element after that text node.  It doesn't have any effect, but just looked odd:
 
-![IE's details element treatment](http://remysharp.com/wp-content/uploads/2009/07/ies-details-element-treatment.jpg)
+![IE's details element treatment](/images/ies-details-element-treatment.jpg)
 
 ### Opera
 
@@ -67,7 +67,7 @@ Safari simply strips the <code>legend</code> all together out of the DOM.  So mu
 
 The best for last.  Firefox goes one step beyond the other browsers.  It assumes you've forgotten to include the <code>fieldset</code> element.  So when it hits the <code>legend</code> element, Firefox inserts an opening <code>fieldset</code> up until it finds (I believe) the closing <code>fieldset</code> element, which obviously it *doesn't* so the result is the rest of the DOM, after the first illegally placed <code>legend</code> ends up eaten by <code>fieldset</code> element, which leaves my DOM in a mess:
 
-![Firefox details treatment](http://remysharp.com/wp-content/uploads/2009/07/firefox-details-treatment.jpg)
+![Firefox details treatment](/images/firefox-details-treatment.jpg)
 
 ## Impact on other elements
 

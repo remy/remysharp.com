@@ -30,7 +30,7 @@ Note: that if you've done this before (from a previous tutorial), you don't this
 
 ### Automatically Patching Blogging Bundle
 
-Download the latest [blogging.rb patch](http://remysharp.com/wp-content/uploads/2007/06/blogging.rb.patch) and run the patch command:
+Download the latest [blogging.rb patch](/images/blogging.rb.patch) and run the patch command:
 
 <pre><code>patch -p0 &lt; blogging.rb.patch</code></pre>
 
@@ -60,11 +60,11 @@ The second lot of changes (comments and pings) are added because WordPress 2.2 c
 
 <h2 id="xmlrpc">XMLRPC Changes</h2>
 
-Next we need to change the xmlrpc.php file that should be located in the root directory of your blog.  I am providing my own copy of [xmlrpc.php](http://remysharp.com/wp-content/uploads/2007/07/xmlrpc.php.txt) for download, but please be warned that I am using WordPress 2.2 and I have no idea whether this specific file will work with previous versions.
+Next we need to change the xmlrpc.php file that should be located in the root directory of your blog.  I am providing my own copy of [xmlrpc.php](/images/xmlrpc.php.txt) for download, but please be warned that I am using WordPress 2.2 and I have no idea whether this specific file will work with previous versions.
 
 Either way: backup your files!
 
-[Download xmlrpc.php for WordPress 2.2](http://remysharp.com/wp-content/uploads/2007/07/xmlrpc.php.txt)
+[Download xmlrpc.php for WordPress 2.2](/images/xmlrpc.php.txt)
 
 I do know, however, that manually patched (using the instructions below) the tagging should work regardless of the WordPress version.
 

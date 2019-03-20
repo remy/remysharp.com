@@ -17,7 +17,7 @@ This one is just for the designers and developer who have the painful task of sk
 
 [Filament Group](http://www.filamentgroup.com/) provides a simple tool to interactively skin the existing jQuery UI widgets, and then download the newly created skin - taking a whole host of pain out of designing the skin.
 
-![Themeroller](http://remysharp.com/wp-content/uploads/2008/06/themeroller.png)
+![Themeroller](/images/themeroller.png)
 
 The interface allows you to pre-select from existing themes, or roll your own, each time any changes are made, a *live* complete preview is rendered (by layering a new style sheet in the background).
 

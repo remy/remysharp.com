@@ -24,7 +24,7 @@ It's an observational comedy with an eclectic cast, including [Steve Carell][Ste
 
 <!--more-->
 
-<img style="float: right; padding-left: 20px" alt="Little Miss Sunshine Poster" src="http://remysharp.com/wp-content/uploads/2006/10/little_miss_sunshine_poster.jpg" />It's mum, dad, teenager who doesn't talk (out of choice) and hates them all, uncle who hates himself, grand dad who's on drugs, and Olive, the young girl who's wide eyed and open to anything heading out to compete in the Little Miss Sunshine beauty contest.
+<img style="float: right; padding-left: 20px" alt="Little Miss Sunshine Poster" src="/images/little_miss_sunshine_poster.jpg" />It's mum, dad, teenager who doesn't talk (out of choice) and hates them all, uncle who hates himself, grand dad who's on drugs, and Olive, the young girl who's wide eyed and open to anything heading out to compete in the Little Miss Sunshine beauty contest.
 
 A great film that I found myself laughing out loud, oddly enough, one of the funniest characters was actually their mode of transportation - but I'll you find that out yourselves.
 

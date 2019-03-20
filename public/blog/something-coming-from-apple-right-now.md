@@ -16,4 +16,4 @@ I was just browsing the Apple store when suddenly I got kicked out - "they're bu
 
 <!--more-->
 
-<img src="http://remysharp.com/wp-content/uploads/2007/01/apple_updating.gif" alt="Apple updating" title="Apple updating" />
+<img src="/images/apple_updating.gif" alt="Apple updating" title="Apple updating" />

@@ -12,7 +12,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # The day I appeared in Scientific American
 
-<img style="float: right; padding: 0 0 5px 5px;" src="http://remysharp.com/wp-content/uploads/2007/03/scientific_american.gif" alt="Scientific American" /> Several years ago I wrote [Marbles Squared](http://www.ihatemusic.com/palm/ihm_marbles.html), a 'lightweight addictive puzzle game' for the [Palm Pilot](http://euro.palm.com/uk/en/products/palmvx/index.html).
+<img style="float: right; padding: 0 0 5px 5px;" src="/images/scientific_american.gif" alt="Scientific American" /> Several years ago I wrote [Marbles Squared](http://www.ihatemusic.com/palm/ihm_marbles.html), a 'lightweight addictive puzzle game' for the [Palm Pilot](http://euro.palm.com/uk/en/products/palmvx/index.html).
 
 I would often peruse [Google](http://www.google.com/search?q=%22marbles+squared%22) for reviews and download figures, until one day, I found an [article](http://www.sciam.com/article.cfm?articleID=000970C9-65AC-1150-A5AC83414B7F0000&pageNumber=2&catID=2) that referenced my little game.
 

@@ -29,17 +29,17 @@ modified: '2014-09-03 16:15:12'
 
 <script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"></script>
 <script type="text/javascript" charset="utf-8">
-  getTwitters('twitters', { 
-      id: 'rem', 
-      clearContents: true, 
-      count: 5, 
+  getTwitters('twitters', {
+      id: 'rem',
+      clearContents: true,
+      count: 5,
       withFriends: true,
       ignoreReplies: false,
       template: '<span class="prefix"><img height="16" width="16" src="%user_profile_image_url%" /> <a href="http://twitter.com/%user_screen_name%">%user_name%</a> said: </span> <span class="status">"%text%"</span> <span class="time"><a href="http://twitter.com/%user_screen_name%/statuses/%id_str%">%time%</a></span>'
   });
 </script>
 
-<link rel="stylesheet" href="http://remysharp.com/wp-content/uploads/2007/05/twitter.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+<link rel="stylesheet" href="/images/twitter.css" type="text/css" media="screen" title="no title" charset="utf-8" />
 
 <div id="twitters"><p>Please wait while my tweets load <img src="http://remysharp.com/images/indicator.gif" /></p>
 </div>
@@ -71,11 +71,11 @@ Settings object:
 
 For example:
 
-<pre><code>getTwitters('tweet', { 
-  id: 'rem', 
-  count: 1, 
-  enableLinks: true, 
-  ignoreReplies: true, 
+<pre><code>getTwitters('tweet', {
+  id: 'rem',
+  count: 1,
+  enableLinks: true,
+  ignoreReplies: true,
   clearContents: true,
   template: '"%text%" &lt;a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/"&gt;%time%&lt;/a&gt;'
 });</code></pre>
@@ -118,16 +118,16 @@ You can directly from the Google code repository (as seen in the example below).
 
 Add the following code within the <code>head</code> or (best at the bottom of the) <code>body</code> tag:
 
-<pre><code>&lt;script 
- src=&quot;http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js&quot; 
+<pre><code>&lt;script
+ src=&quot;http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js&quot;
  type=&quot;text/javascript&quot;&gt;
 &lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot; charset=&quot;utf-8&quot;&gt;
-getTwitters('tweet', { 
-  id: 'rem', 
-  count: 1, 
-  enableLinks: true, 
-  ignoreReplies: true, 
+getTwitters('tweet', {
+  id: 'rem',
+  count: 1,
+  enableLinks: true,
+  ignoreReplies: true,
   clearContents: true,
   template: '"%text%" &lt;a href="http://twitter.com/%user_screen_name%/statuses/%id_str%/"&gt;%time%&lt;/a&gt;'
 });

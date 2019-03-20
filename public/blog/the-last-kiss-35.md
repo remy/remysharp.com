@@ -25,7 +25,7 @@ In a desperate attempt to add some va-va-voom back in to his life, he decides to
 
 <!--more-->
 
-<img alt="The Last Kiss Poster" style="float: right; padding-left: 20px" src="http://remysharp.com/wp-content/uploads/2006/11/the_last_kiss_poster.jpg" />
+<img alt="The Last Kiss Poster" style="float: right; padding-left: 20px" src="/images/the_last_kiss_poster.jpg" />
 The films roots are in love, lust and loss.  The important issue, or question, it tries to address is: can you love someone enough to forgive them?
 
 This is a particularly interesting area, because it's a minefield of conflict.  Yes, they did break your heart, but yes, you still love each other.

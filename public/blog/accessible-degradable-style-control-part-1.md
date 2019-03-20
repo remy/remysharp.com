@@ -90,13 +90,13 @@ $methods = explode(&apos;/&apos;, $request_path);
 if (count($methods)) {
   if ($methods[2] == &apos;font&apos;) {
     $f = isset($methods[3]) ? $methods[3] : &apos;1em&apos;;
-    setcookie(&quot;font_size&quot;, $f, time()+(3600*365), &apos;/&apos;); 
+    setcookie(&quot;font_size&quot;, $f, time()+(3600*365), &apos;/&apos;);
   }
 }
 header(&quot;Location: $target&quot;);
 ?&gt;</code></pre>
 
-Note that the font defaults to '1em' and the cookie expires in a year (365 multiplied by the seconds in a day plus time now).  You can easily change this to suit the style of your web site.  
+Note that the font defaults to '1em' and the cookie expires in a year (365 multiplied by the seconds in a day plus time now).  You can easily change this to suit the style of your web site.
 
 #### font.php
 _
@@ -111,7 +111,7 @@ The solution so far should work without JavaScript enabled.  However, we want to
 
 For this we will need cookie setters and getters, font size changing methods and an 'onload' function to apply the JavaScript once the <abbr title="Document Object Model">DOM</abbr> has loaded.
 
-Here is the [cookie library](http://remysharp.com/wp-content/uploads/2007/02/cookie.js)
+Here is the [cookie library](/images/cookie.js)
 
 I am using [jQuery](http://jquery.com) with the JavaScript, so include the libraries as follows:
 
@@ -158,7 +158,7 @@ Set the font size CSS attribute to the font size passed in.
 
 Remember to test your implementation with both JavaScript turned on and turned off.
 
-When it comes to where to add the style control links, I would recommend placing the style control in the footer, only because it's useful to users who are seeing the style.  
+When it comes to where to add the style control links, I would recommend placing the style control in the footer, only because it's useful to users who are seeing the style.
 
 Screen readers *may* not make much use of this feature, so I tend to add it to the footer of the code, and use absolute positioning to create a roll over effect in the header, see my [example at (work in-progress) Kajinka](http://kajinka.com) (the top orange bar - then view the source).
 

@@ -20,7 +20,7 @@ IE is treating the *name attribute* on forms as the *ID attribute*, causing the 
 
 <!--more-->
 
-See the [example of getElementById breaking](http://remysharp.com/wp-content/uploads/2007/01/gebid_test.html).
+See the [example of getElementById breaking](/images/gebid_test.html).
 
 I've not investigated this beyond the FORM element, but the problem is this:
 

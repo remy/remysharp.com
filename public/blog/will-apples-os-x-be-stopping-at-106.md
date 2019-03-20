@@ -34,7 +34,7 @@ Leopard is due out this spring, so I popped over to [Wikipedia](http://wikipedia
 5. Mac OS X 10.4 - Tiger
 6. Mac OS X 10.5 - Leopard
 
-[<img width="400" src="http://remysharp.com/wp-content/uploads/2007/01/OSXBoxes.png" alt="Box artwork for Mac OS X versions Cheetah/Puma, Jaguar, Panther, and Tiger" title="Box artwork for Mac OS X versions Cheetah/Puma, Jaguar, Panther, and Tiger" />](http://en.wikipedia.org/wiki/Osx)
+[<img width="400" src="/images/OSXBoxes.png" alt="Box artwork for Mac OS X versions Cheetah/Puma, Jaguar, Panther, and Tiger" title="Box artwork for Mac OS X versions Cheetah/Puma, Jaguar, Panther, and Tiger" />](http://en.wikipedia.org/wiki/Osx)
 
 By my reckoning (and little more Wikipedia browsing), the only [big cat](http://en.wikipedia.org/wiki/Big_cat) left is the Lion.
 
@@ -47,7 +47,7 @@ There's also an [Onza](http://en.wikipedia.org/wiki/Onza), but a) I'm not sure v
 
 So, all in all it sounds like Lion should be next, and then...what?  The end of OS X?  The end of big kitty codenames?
 
-<img src="http://remysharp.com/wp-content/uploads/2007/01/lion.jpg" alt="Lonely Lion" title="Lonely Lion" style="float: right; padding: 0 0 10px 10px; border: 0;" />I think some cat loving Apple employee might just be foregoing his next Christmas bonus!  I can here them now...[cue fantasy sequence]...
+<img src="/images/lion.jpg" alt="Lonely Lion" title="Lonely Lion" style="float: right; padding: 0 0 10px 10px; border: 0;" />I think some cat loving Apple employee might just be foregoing his next Christmas bonus!  I can here them now...[cue fantasy sequence]...
 
 > What do you mean there's no more big cats left?  What did you think we would do a "[Microsoft Word](http://en.wikipedia.org/wiki/Ms_word#Versions)" and just make the numbers up? *
 

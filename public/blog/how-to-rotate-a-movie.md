@@ -15,7 +15,7 @@ modified: '2014-09-03 16:15:12'
 
 I was recently asked to rotate a video for a friend.  Video rotation is required every now and then (especially when you record using a photo camera and the orientation is wrong).
 
-It's quite simple to achieve if you've got a Mac and [QuickTime Pro](http://www.apple.com/quicktime/ "Apple - QuickTime") (which is dirt cheap).  Here's a quick screencast showing [how to rotate a movie](http://remysharp.com/wp-content/uploads/2007/12/movie-rotate.mov) (5mb).
+It's quite simple to achieve if you've got a Mac and [QuickTime Pro](http://www.apple.com/quicktime/ "Apple - QuickTime") (which is dirt cheap).  Here's a quick screencast showing [how to rotate a movie](/images/movie-rotate.mov) (5mb).
 
 
 <!--more-->

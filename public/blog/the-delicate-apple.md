@@ -29,11 +29,11 @@ Some 3 hours later and I'm feeling my ribs hurt a bit, but that's not the worst 
 
 I arrived at work, and peeled open my bag.  Slipped out the laptop, and here's what I saw (note that I did <strong>not</strong> photoshop these!:
 
-<img id="image43" alt="Apple Dent" src="http://remysharp.com/wp-content/uploads/2006/12/image_00020.jpg" />
+<img id="image43" alt="Apple Dent" src="/images/image_00020.jpg" />
 
-<img id="image44" alt="Apple Long Splat" src="http://remysharp.com/wp-content/uploads/2006/12/image_00021.jpg" />
+<img id="image44" alt="Apple Long Splat" src="/images/image_00021.jpg" />
 
-<img id="image45" alt="Apple Close Splat" src="http://remysharp.com/wp-content/uploads/2006/12/image_00022.jpg" />
+<img id="image45" alt="Apple Close Splat" src="/images/image_00022.jpg" />
 
 The next step is insurance, but when Julie ordered our insurance, explicitly stating that we need cover for a £2000 laptop, The AA seemed miss it.
 

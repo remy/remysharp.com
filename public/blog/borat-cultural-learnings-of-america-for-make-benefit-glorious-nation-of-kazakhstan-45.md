@@ -21,7 +21,7 @@ Borat is sent away to report back to Kazakhstan about the greatest country in th
 
 <!--more-->
 
-<img alt="Borat Poster" style="float: right; padding-left: 20px" src="http://remysharp.com/wp-content/uploads/2006/11/borat_poster.jpg" />It's difficult to really say that there's a story in this film.  It does end with a little meaning, but beyond that, it is just Borat travelling across America meeting Americans and showing up both cultural divides, but also the small-mindedness that can be so easily found.
+<img alt="Borat Poster" style="float: right; padding-left: 20px" src="/images/borat_poster.jpg" />It's difficult to really say that there's a story in this film.  It does end with a little meaning, but beyond that, it is just Borat travelling across America meeting Americans and showing up both cultural divides, but also the small-mindedness that can be so easily found.
 
 The film **is** wall-to-wall laughs, even if some of them nervous laughs from *that* scene that will spawn the line:
 

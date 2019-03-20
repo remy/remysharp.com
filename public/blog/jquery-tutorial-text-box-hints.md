@@ -37,7 +37,7 @@ modified: '2014-09-03 16:15:12'
 
 <p>Our demo shows a input box for a finance web site that allows the user to search by company name or by the symbol (ticker).</p>
 
-<p><a href="http://remysharp.com/wp-content/uploads/2007/01/input_hint.html">See the demo in action</a></p>
+<p><a href="/images/input_hint.html">See the demo in action</a></p>
 
 <h2>How it will work</h2>
 
@@ -70,14 +70,14 @@ modified: '2014-09-03 16:15:12'
 <h3>jQuery Plugin</h3>
 
 <pre><code>jQuery.fn.hint = function (blurClass) {
-  if (!blurClass) { 
+  if (!blurClass) {
     blurClass = 'blur';
   }
-    
+
   return this.each(function () {
     // get jQuery version of 'this'
     var $input = jQuery(this),
-    
+
     // capture the rest of the variable to allow for reuse
       title = $input.attr('title'),
       $form = jQuery(this.form),
@@ -90,14 +90,14 @@ modified: '2014-09-03 16:15:12'
     }
 
     // only apply logic if the element has the attribute
-    if (title) { 
+    if (title) {
       // on blur, set value to title attr if text is blank
       $input.blur(function () {
         if (this.value === '') {
           $input.val(title).addClass(blurClass);
         }
       }).focus(remove).blur(); // now change all inputs to title
-      
+
       // clear the pre-defined text when form is submitted
       $form.submit(remove);
       $win.unload(remove); // handles Firefox's autocomplete

@@ -24,7 +24,7 @@ So I went to [TheCounter.com](http://www.thecounter.com) and starting from [Jan 
 
 ## IE version data
 
-<img src="http://remysharp.com/wp-content/uploads/2008/03/msie-browser-version-adaption.png" width="600" height="400" alt="MSIE browser version adoption covering 1999 to 2008" title="MSIE browser version adoption" />
+<img src="/images/msie-browser-version-adaption.png" width="600" height="400" alt="MSIE browser version adoption covering 1999 to 2008" title="MSIE browser version adoption" />
 
 [Source chart URL](http://icanhaz.com/ie-adoption)
 
@@ -51,7 +51,7 @@ Generally, your normal user (i.e. not the techies) will upgrade their browser if
 
 New PCs mean new browsers, and if you buy a machine today you'll have IE7.  In a year, if you buy a PC you'll have IE8 - and that's where the real take up will happen.  Since PCs are getting cheaper and more powerful (as they keep doing over the years), PC turnover increases.
 
-Sure Microsoft will advertise IE8, and this will encourage change, but I believe PC turnover will be one of the greatest factors driving the market shift.  
+Sure Microsoft will advertise IE8, and this will encourage change, but I believe PC turnover will be one of the greatest factors driving the market shift.
 
 ## My prediction
 
@@ -59,8 +59,8 @@ Depending on your views, a browser below x% of the market does not have to be su
 
 From this data, I'm predicting that by 2010 IE6 will have a small enough market share to be ignored.
 
-That said, by then, we *should* be on Firefox 4-5, <del>IE10</del> IE9-beta and Safari 5.  
+That said, by then, we *should* be on Firefox 4-5, <del>IE10</del> IE9-beta and Safari 5.
 
-Sure, 2010 is pretty far away right now, but it'll be here before you know it.  
+Sure, 2010 is pretty far away right now, but it'll be here before you know it.
 
 The bottom line is, as developers and designers, if we want to support the majority of users, we're going to have to support all the latest browsers, and for the big boys, Microsoft in particular (though if Google enter that market we could have another big boy on our hands) - we're going to have to support all the [stupid](http://ejohn.org/blog/most-bizarre-ie-quirk/) [little](http://remysharp.com/2007/02/10/ie-7-breaks-getelementbyid/) [quirks](http://www.quirksmode.org/bugreports/archives/explorer_7/index.html) for last 3 revisions of the browser.

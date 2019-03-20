@@ -21,7 +21,7 @@ We hosted an 80s party at [Heist in Brighton](http://www.beerintheevening.com/pu
 
 Here's the invite I put together for the occasion:
 
-![80s Party Invite](http://remysharp.com/wp-content/uploads/2006/12/80s_party_invite.jpg)
+![80s Party Invite](/images/80s_party_invite.jpg)
 
 <!--more-->
 

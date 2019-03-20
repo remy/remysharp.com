@@ -15,7 +15,7 @@ I a brief moment of bored madness, I think the tiredness may have motivated me, 
 
 <!--more-->
 
-![Funny Face](http://remysharp.com/wp-content/uploads/2007/04/funny_face.jpg)
+![Funny Face](/images/funny_face.jpg)
 
 <small>I don't really look like that by the way - though it's not far off!</small>
 

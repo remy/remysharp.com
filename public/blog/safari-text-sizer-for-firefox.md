@@ -14,7 +14,7 @@ modified: '2014-09-03 16:15:12'
 
 I'm a fan of the textarea resize function in Safari 3 - and as such I've had my first crack at a Firefox extension.
 
-<img src="http://remysharp.com/wp-content/uploads/2007/09/example-of-safari-3-sizable.png" title="Example of Safari 3 sizable" style="border: 3px solid #ccc; float: left; margin: 0 5px 5px 0;" />
+<img src="/images/example-of-safari-3-sizable.png" title="Example of Safari 3 sizable" style="border: 3px solid #ccc; float: left; margin: 0 5px 5px 0;" />
 
 [Download the Firefox text sizer extension](http://remysharp.com/downloads/textsizer.xpi)
 
@@ -27,7 +27,7 @@ No doubt this has been written already (please do let me know and put me out of 
 
 I wrote a straight JavaScript file to allow me to resize the text boxes.  I wrote a simple page to test it with, dropped on three <code>textarea</code> boxes and tested so it all worked.
 
-Here's the [original source code](http://remysharp.com/wp-content/uploads/2007/09/textsizer.user.js).
+Here's the [original source code](/images/textsizer.user.js).
 
 I tried to encapsulate all the code within one variable to avoid any conflicts with code on the page already.
 
@@ -37,7 +37,7 @@ By renaming the file to <code>.user.js</code> I was able to use it as a [Greasem
 
 ## Cheat
 
-After messing around with Firefox extensions for a couple of days and getting nowhere, I changed tack.  I realised that Greasemonkey was definitely the way to go, and after searching for a bit, I found the solution: a tool that [converts Greasemonkey scripts to Firefox extensions](http://arantius.com/misc/greasemonkey/script-compiler).  
+After messing around with Firefox extensions for a couple of days and getting nowhere, I changed tack.  I realised that Greasemonkey was definitely the way to go, and after searching for a bit, I found the solution: a tool that [converts Greasemonkey scripts to Firefox extensions](http://arantius.com/misc/greasemonkey/script-compiler).
 
 ## Result
 

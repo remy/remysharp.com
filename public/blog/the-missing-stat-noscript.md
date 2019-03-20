@@ -11,7 +11,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # The Missing Stat: noscript
 
-I use Google Analytics for my web sites, you might use [Mint](http://haveamint.com/) or something else bespoke, but if you're using JavaScript to track those stats (as Google does), you're not capturing how many users you have that *don't* have JavaScript installed.  
+I use Google Analytics for my web sites, you might use [Mint](http://haveamint.com/) or something else bespoke, but if you're using JavaScript to track those stats (as Google does), you're not capturing how many users you have that *don't* have JavaScript installed.
 
 I've written a plugin which I'll share with you and also explain how it works (so you can add it to a non-WordPress site).
 
@@ -26,7 +26,7 @@ The WordPress plugin has it's own control panel that you'll need to add your sit
 
 All the stats on users without JavaScript will be stored under a page /noscript, the page the user was actually on will be the page referring to /noscript.
 
-![noscript reporting](http://remysharp.com/wp-content/uploads/2009/10/noscript-reporting.jpg)
+![noscript reporting](/images/noscript-reporting.jpg)
 
 ## Doing it manually
 
