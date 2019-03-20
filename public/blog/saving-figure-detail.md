@@ -36,7 +36,7 @@ I'm not an expert on screenreaders, so I can't say for sure.  Bruce suggests scr
 
 My issue with this, is that it's perfectly reasonable, in my head, to have a <code>figure</code> within a <code>form</code>, which *could* cause screenreader problems.
 
-Here's a label figure test: [http://jsbin.com/elatu](http://jsbin.com/elatu) ([edit](http://jsbin.com/elatu/edit#html))
+Here's a label figure test: [https://jsbin.com/elatu](https://jsbin.com/elatu) ([edit](https://jsbin.com/elatu/edit#html))
 
 Here's label in a <code>details</code> element and nested in a form: <a href="http://www.brucelawson.co.uk/tests/html5-details-label.html">http://www.brucelawson.co.uk/tests/html5-details-label.html</a>
 
@@ -48,7 +48,7 @@ Here's label in a <code>details</code> element and nested in a form: <a href="ht
 
 However, due to a similar bug as the <code>legend</code> issue, if the browser finds the <code>caption</code> element outside a table, it simply strips it from the DOM - which makes this a non-option.
 
-Example of caption being stripped from the DOM: [http://jsbin.com/eloda](http://jsbin.com/eloda) ([edit](http://jsbin.com/eloda/edit#html)) (view the DOM and you'll see the element has gone)
+Example of caption being stripped from the DOM: [https://jsbin.com/eloda](https://jsbin.com/eloda) ([edit](https://jsbin.com/eloda/edit#html)) (view the DOM and you'll see the element has gone)
 
 ### Heading
 

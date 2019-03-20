@@ -41,7 +41,7 @@ If you include this as high as possible in your code base, all subsequent `conso
 
 <img src="/images/where-logging.png" style="border: 1px solid #ccc; display: block; margin: 0 auto; max-width: 100%">
 
-Here's a simplified demo: [http://jsbin.com/wataw/2/edit?js,console](http://jsbin.com/wataw/2/edit?js,console)
+Here's a simplified demo: [https://jsbin.com/wataw/2/edit?js,console](https://jsbin.com/wataw/2/edit?js,console)
 
 All the code is doing is rewriting the `log` and `warn` methods and appending the location of the call at the end of the log. Note that I'm not overloading the `error` method because it comes with it's own stacktrace.
 

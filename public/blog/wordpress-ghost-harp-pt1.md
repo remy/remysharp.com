@@ -64,7 +64,7 @@ So I made the jump to Harp.
 
 ### Ghost to Harp
 
-Harp is a static site generator. I've used it in the past for [our conference site](http://2014.full-frontal.org) this year and for the [JS Bin help & blog](http://jsbin.com/help) so I was already familiar with it.
+Harp is a static site generator. I've used it in the past for [our conference site](http://2014.full-frontal.org) this year and for the [JS Bin help & blog](https://jsbin.com/help) so I was already familiar with it.
 
 However, harp requires static markdown files, so I went about connecting to the Ghost database via sqlite3 and exporting each of these records out as a static HTML file, whilst building up the `_data.json` file required by harp to represent the metadata.
 

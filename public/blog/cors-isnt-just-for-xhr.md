@@ -20,7 +20,7 @@ Should you be adding this header to your existing API services? **[Yes](http://a
 
 If you want more details on how it works check out this [HTML5 Rocks article](http://www.html5rocks.com/en/tutorials/cors/) and make sure to watch out for [preflight issues](/2011/04/21/getting-cors-working/).
 
-But this post isn't about CORS for XHR, it's about CORS for images. CORS for images is important for remixing content and sites such as [Flickr](https://flickr.com/photos/remysharp), [Instagram](http://instagram.com/remysharp), [Imgur](http://imgur.com/r/lolcats) and the like.
+But this post isn't about CORS for XHR, it's about CORS for images. CORS for images is important for remixing content and sites such as [Flickr](https://flickr.com/photos/remysharp), [Instagram](https://instagram.com/remysharp), [Imgur](http://imgur.com/r/lolcats) and the like.
 
 ## What use is CORS for images?
 
@@ -44,9 +44,9 @@ A blank value (as an HTML attribute) has the default value of `anonymous` - whic
 
 When the CORS headers are sent back from the server for an image, and that image is used on a canvas, the *origin-clean* flag is true, and we are able to remix the content as we please.
 
-Below you can see a simple working example. The script reads the image element, draws and scales it to a new canvas, then creates a circular version of the picture, and it's then exported to a new *real* image element, and finally the original image is replaced with the *cirlified* image. The source image is hosted on http://rem.io (the `<img>` element with the `crossOrigin` attribute at the top of the HTML) but the image remixing is happening on http://jsbin.com (as an embed on this site via an iframe).  This is all possible with CORS support.
+Below you can see a simple working example. The script reads the image element, draws and scales it to a new canvas, then creates a circular version of the picture, and it's then exported to a new *real* image element, and finally the original image is replaced with the *cirlified* image. The source image is hosted on http://rem.io (the `<img>` element with the `crossOrigin` attribute at the top of the HTML) but the image remixing is happening on https://jsbin.com (as an embed on this site via an iframe).  This is all possible with CORS support.
 
-<a class="jsbin-embed" href="http://jsbin.com/ijimay/2/embed?live,html">canvas resizer</a><script src="http://static.jsbin.com/js/embed.js"></script>
+<a class="jsbin-embed" href="https://jsbin.com/ijimay/2/embed?live,html">canvas resizer</a><script src="https://static.jsbin.com/js/embed.js"></script>
 
 ## Go forth!
 

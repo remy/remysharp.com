@@ -14,7 +14,7 @@ One week later I released [remote-tilt.com](http://remote-tilt.com). This post i
 
 ## Piping events from the real mobile device
 
-So this is the really cool part of remote-tilt: you move your mobile phone and the motion events fire on your test page. 
+So this is the really cool part of remote-tilt: you move your mobile phone and the motion events fire on your test page.
 
 Basically the whole piping mobile to desktop took about 2 hours of dev, and looks [roughly like this](https://github.com/remy/remote-tilt/blob/master/server.js):
 
@@ -22,7 +22,7 @@ Basically the whole piping mobile to desktop took about 2 hours of dev, and look
       var url = parse(socket.req.url),
           key = path.basename(url.pathname),
           type = LISTEN;
-      
+
       if (url.pathname.indexOf('/listen/') === 0) {
         if (!connections[key]) connections[key] = [];
         connections[key].push(socket);
@@ -92,25 +92,25 @@ Then your script replaces the DOM and is able to send messages to the `window.op
 
 ### Popups are broken in Chrome
 
-Yeah, Chrome right!? Although Chrome blocks popups, it doesn't really. Here's an example: [popups still run in Chrome](http://jsbin.com/uticev/3). If the popup didn't run, then you *shouldn't* see *"Yep, this came from the popup you just blocked"*. In Chrome, and (at time of writing) Canary (so production to bleeding edge) you'll see this content.
+Yeah, Chrome right!? Although Chrome blocks popups, it doesn't really. Here's an example: [popups still run in Chrome](https://jsbin.com/uticev/3). If the popup didn't run, then you *shouldn't* see *"Yep, this came from the popup you just blocked"*. In Chrome, and (at time of writing) Canary (so production to bleeding edge) you'll see this content.
 
-This content comes from the [popup url](http://jsbin.com/egixav/2/) which simply runs:
+This content comes from the [popup url](https://jsbin.com/egixav/2/) which simply runs:
 
     window.opener.insert("Yep, this came from the popup you just blocked");
 
 What's extra special is that none of the activity in the popup is logged (in the *Network* tab for instance). So you could run all kinds of secret JavaScript without any record of it happening (which could be fun as an Easter egg...or maybe something nasty...).
 
 So with some help from the Twitter community, I can now detect whether the popup was blocked or not using this nasty piece of logic:
-      
+
     var remote = window.open(window.location.toString() + '#tiltremote', 'Tilt', 'width=300,height=' + height);
-    
+
     // stupid logic to detect if Chrome really did block the window
     if (remote) {
       remote.onload = function () {
         setTimeout(function () {
           if (remote.innerHeight <= 0) {
             blocked();
-          }        
+          }
         }, 10);
       };
     } else {

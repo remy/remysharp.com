@@ -42,7 +42,7 @@ If you add `position:fixed` in any normal way as you might on a "desktop" site, 
 
 Note that this is the simulator running, but I've also captured the [real iPhone](http://www.youtube.com/watch?v=T5P0x5NPr3M&hd=1) (using Reflection) showing the same behaviour.
 
-The page used was: [jsbin.com/3/ixewok/6/](http://jsbin.com/3/ixewok/6/) ([edit](http://jsbin.com/3/ixewok/6/edit?html,css,live))
+The page used was: [jsbin.com/3/ixewok/6/](https://jsbin.com/3/ixewok/6/) ([edit](https://jsbin.com/3/ixewok/6/edit?html,css,live))
 
 ### No updated values on scroll
 
@@ -56,7 +56,7 @@ If the page is zoomed at all, which you can get in iOS when the user rotates fro
 
 <iframe width="612" height="341" src="//www.youtube.com/embed/YIOdPf7jqK4?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
 
-The page used was: [jsbin.com/3/ixewok/6/](http://jsbin.com/3/ixewok/6/) ([edit](http://jsbin.com/3/ixewok/6/edit?html,css,live))
+The page used was: [jsbin.com/3/ixewok/6/](https://jsbin.com/3/ixewok/6/) ([edit](https://jsbin.com/3/ixewok/6/edit?html,css,live))
 
 ### Focus jumping
 
@@ -64,7 +64,7 @@ If there's a focusable element inside the position fixed element, i.e. an input 
 
 <iframe width="612" height="341" src="//www.youtube.com/embed/lrnvZDwgJRc?rel=0" frameborder="0" allowfullscreen></iframe>
 
-The page used was: [jsbin.com/3/ixewok/8/](http://jsbin.com/3/ixewok/8/) ([edit](http://jsbin.com/3/ixewok/8/edit?html,css,live))
+The page used was: [jsbin.com/3/ixewok/8/](https://jsbin.com/3/ixewok/8/) ([edit](https://jsbin.com/3/ixewok/8/edit?html,css,live))
 
 ### Scrolling == unusable position:fixed element
 
@@ -74,7 +74,7 @@ From the screencast I've recorded you can see using [iWebInspector](http://www.i
 
 <iframe width="612" height="341" src="//www.youtube.com/embed/R2MzdeJSCKw?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
 
-The page used was: [jsbin.com/3/ixewok/13/](http://jsbin.com/3/ixewok/13/) ([edit](http://jsbin.com/3/ixewok/13/edit?html,css,live))
+The page used was: [jsbin.com/3/ixewok/13/](https://jsbin.com/3/ixewok/13/) ([edit](https://jsbin.com/3/ixewok/13/edit?html,css,live))
 
 I don't have a fix for this yet, and I suspect it's a core painting issue inside of MobileSafari - but I will keep playing to see if there's something that can be done.
 
@@ -92,7 +92,7 @@ So when I tried to apply this technique to the `body` element, the juddering was
 
 I also [captured this](http://www.youtube.com/watch?v=obTy5tWOsxA&hd=1) on the real device too.
 
-The page used was: [jsbin.com/3/ixewok/10/](http://jsbin.com/3/ixewok/10/) ([edit](http://jsbin.com/3/ixewok/10/edit?html,css,live))
+The page used was: [jsbin.com/3/ixewok/10/](https://jsbin.com/3/ixewok/10/) ([edit](https://jsbin.com/3/ixewok/10/edit?html,css,live))
 
 
 ### Getting scroll position to update

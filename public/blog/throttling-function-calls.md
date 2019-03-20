@@ -63,7 +63,7 @@ Below is an **actual** throttle function, that fires a message every 250ms by de
       };
     }
 
-So when you use this, moving the mouse around the [example below](http://jsbin.com/enowox/1/edit), will echo out the tick on the first time you move, but then every 1 second until you stop moving the mouse:
+So when you use this, moving the mouse around the [example below](https://jsbin.com/enowox/1/edit), will echo out the tick on the first time you move, but then every 1 second until you stop moving the mouse:
 
 <pre><code>$('body').on('mousemove', <strong>throttle</strong>(function (event) {
   console.log('tick');

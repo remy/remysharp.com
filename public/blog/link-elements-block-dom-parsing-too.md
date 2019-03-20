@@ -38,7 +38,7 @@ Right now, I'm not sure what's at the root cause, but I do know it's putting som
 
 ## Example
 
-This url will show the hanging: [http://jsbin.com/agumu4/3/](http://jsbin.com/agumu4/3/) - make sure you have a web console open and refresh to watch the state change.
+This url will show the hanging: [https://jsbin.com/agumu4/3/](https://jsbin.com/agumu4/3/) - make sure you have a web console open and refresh to watch the state change.
 
     <!DOCTYPE html>
     <html>
@@ -76,4 +76,4 @@ I also tested including hanging fonts via CSS, i.e. if you copied the @font-face
 
 ## The fix
 
-As per anything that hangs: do it asynchronously to the DOM rendering - or rather *after* the DOM has done most, if not all of the parsing.  That is, to use JavaScript to insert the `link` element once the DOM - or rather *content* is ready.  Here's a simple example: [http://jsbin.com/agumu4/4](http://jsbin.com/agumu4/4) - note that the `readystate` says it's still loading, that's because my DOM doesn't fully load when the JavaScript appends the `link` element (i.e. it doesn't wait for an event, it's just at the bottom of the document).
+As per anything that hangs: do it asynchronously to the DOM rendering - or rather *after* the DOM has done most, if not all of the parsing.  That is, to use JavaScript to insert the `link` element once the DOM - or rather *content* is ready.  Here's a simple example: [https://jsbin.com/agumu4/4](https://jsbin.com/agumu4/4) - note that the `readystate` says it's still loading, that's because my DOM doesn't fully load when the JavaScript appends the `link` element (i.e. it doesn't wait for an event, it's just at the bottom of the document).

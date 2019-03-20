@@ -29,10 +29,10 @@ If you want to know whether the element is truly visible, you need to step throu
 You can do this via a macro selector too:
 
 <pre><code>jQuery.extend(
-  jQuery.expr[ ":" ], 
+  jQuery.expr[ ":" ],
   { reallyvisible : function (a) { return !(jQuery(a).is(':hidden') || jQuery(a).parents(':hidden').length); }}
 );</code></pre>
 
-[See the working example](http://jsbin.com/ageta) ([source](http://jsbin.com/ageta/edit))
+[See the working example](https://jsbin.com/ageta) ([source](https://jsbin.com/ageta/edit))
 
 An important note: I tried overloading the <code>:visible</code> selector using this new <code>:reallyvisible</code> and it actually breaks the show/hide functions within jQuery - so don't go renaming it!

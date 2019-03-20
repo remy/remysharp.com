@@ -49,7 +49,7 @@ Equally, if you want to make the API public to anyone to access, you can use:
     header('Access-Control-Allow-Origin: *');
     ?>
 
-As simple live example of this can be seen here: [jsbin.com/oxiyi4/1](http://jsbin.com/oxiyi4/1) which makes a request to [remysharp.com/demo/cors.php](/demo/cors.php) which includes a rule that allows any origin to access the resource.
+As simple live example of this can be seen here: [jsbin.com/oxiyi4/1](https://jsbin.com/oxiyi4/1) which makes a request to [remysharp.com/demo/cors.php](/demo/cors.php) which includes a rule that allows any origin to access the resource.
 
 This is simple and easy. However, it's the *preflight* that causes confusion. That's where it all went wrong for me.
 
@@ -82,7 +82,7 @@ When I manually set the `x-requested-with` header on the XHR object, it triggere
 
 The request process, with a preflight, if successful should look like the follow request exchange (note that I've stripped some headers that weren't pertinent to this article, like User-Agent, etc).
 
-This is a real request from one domain to place an XHR request for [http://jsbin.com/canvas/73/source](http://jsbin.com/canvas/73/source).
+This is a real request from one domain to place an XHR request for [https://jsbin.com/canvas/73/source](https://jsbin.com/canvas/73/source).
 
 *Client sends XHR request with custom header:*
 

@@ -70,7 +70,7 @@ No, but we will ask closer to the event which sessions you're likely to attend s
 
 Yes. We've carefully planned the order of sessions so any combination of sessions is possible. Here's a session planner (which you'll have access to on the day too):
 
-<iframe src="http://jsbin.com/uyupat/36/quiet" style="width: 100%; height: 360px;"></iframe>
+<iframe src="https://jsbin.com/uyupat/36/quiet" style="width: 100%; height: 360px;"></iframe>
 
 ## What if a session is full on the day?
 

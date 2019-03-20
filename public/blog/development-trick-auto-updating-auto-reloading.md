@@ -10,7 +10,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # Development Trick: auto-updating & auto-reloading
 
-For the upgrade of JS Bin to [version 3](http://jsbin.com/3/) (an open beta), the whole code base is in the process of [being rewritten to run as a Node.js](https://github.com/remy/jsbin/tree/feature/node) process (whilst still working as a PHP application).
+For the upgrade of JS Bin to [version 3](https://jsbin.com/3/) (an open beta), the whole code base is in the process of [being rewritten to run as a Node.js](https://github.com/remy/jsbin/tree/feature/node) process (whilst still working as a PHP application).
 
 What's neat is I've got it to automatically pull the latest changes from github and automatically restart my Node process.
 
@@ -39,7 +39,7 @@ Now I've got a way of managing two tasks:
 1. Pull from github for any changes
 2. Restart my node process
 
-Once you're inside `screen` to detach (and return to your original shell) you use the command sequence `CTRL+a d`. 
+Once you're inside `screen` to detach (and return to your original shell) you use the command sequence `CTRL+a d`.
 
 Here's a few extra simple commands:
 

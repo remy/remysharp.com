@@ -118,7 +118,7 @@ The irony however, is that it's been a cathartic process. I feel like I've got s
 
 I realised something important at the end of 2014, and it was the reason I decided to put development on JS Bin on hold: I need to love working on JS Bin. I didn't at the time. I was working on parts of JS Bin that was full of pressure, I started getting abuse for some of my work, and it was all a bit of a mess.
 
-Since starting these posts, I've released new features to JS Bin to all groups of users (anonymous, registered and pro) and have several JS Bin [blog posts](http://jsbin.com/blog) in the works. And before I bid you farewell, don't forget to support JS Bin: [go pro](https://jsbin.com/upgrade) or donate [regularly](https://gratipay.com/jsbin) or as a [one off](https://www.paypal.me/rem).
+Since starting these posts, I've released new features to JS Bin to all groups of users (anonymous, registered and pro) and have several JS Bin [blog posts](https://jsbin.com/blog) in the works. And before I bid you farewell, don't forget to support JS Bin: [go pro](https://jsbin.com/upgrade) or donate [regularly](https://gratipay.com/jsbin) or as a [one off](https://www.paypal.me/rem).
 
 As for me? **I've started to find my love for my project again.**
 

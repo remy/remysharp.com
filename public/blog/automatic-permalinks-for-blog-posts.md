@@ -36,7 +36,7 @@ and is simply a regular expression that strips away anything that isn't an
 alphanumeric and converts it to lowercase.
 
 So a heading that reads: "What does a Pro account get you?" is converted to
-`whatdoesaproaccountgetyou`. [Pretty simple](http://jsbin.com/help/pro#whatdoesaproaccountgetyou).
+`whatdoesaproaccountgetyou`. [Pretty simple](https://jsbin.com/help/pro#whatdoesaproaccountgetyou).
 
 ## Exposing the link
 

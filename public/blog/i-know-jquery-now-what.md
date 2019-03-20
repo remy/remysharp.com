@@ -436,7 +436,7 @@ It's really important to note that swapping `.width()` for `.clientWidth` will n
 
       window.addEventListener('resize', resizer, false);
 
-In fact, I'd go [further](http://jsbin.com/eberan/9/edit) and store the resizers in an array, and on resize, loop through the array executing the resizer functions.
+In fact, I'd go [further](https://jsbin.com/eberan/9/edit) and store the resizers in an array, and on resize, loop through the array executing the resizer functions.
 
 Sure, it's a little more work, but it would also easy to upgrade this change to patch in jQuery plugin support as an upgrade, rather than making it a prerequisite.
 

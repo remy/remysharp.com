@@ -21,13 +21,8 @@ I spotted this when I was preparing my slides for the [Sweden Geek Meet](http://
 
 When using [FireVox](http://firevox.clcworld.net/ "Fire Vox: A Screen Reading Extension for Firefox") the free screen reader extension for Firefox, Google's search results automatically detected the assistive device and changed the experience for me.
 
-Below is a video demonstrating the experience:
+[Here is a video demonstrating the experience.](http://jqueryfordesigners.com/media/google-axsjax.mov)
 
-<video width="597" height="373" autobuffer controls>
-  <source src="http://jqueryfordesigners.com/media/google-axsjax.ogg" type="video/ogg"/>
-  <source src="http://jqueryfordesigners.com/media/google-axsjax.mov" type="video/quicktime"/>
-  <p>The video is available for download here: <a href="http://jqueryfordesigners.com/media/google-axsjax.mov">http://jqueryfordesigners.com/media/google-axsjax.mov</a>
-</video>
 ## What happened
 
 I've not looked too deeply in to it yet, but as far as I understand, using the [AxsJAX](http://code.google.com/p/google-axsjax/ "google-axsjax - Google Code") library, Google is able to detect assistive devices and respond accordingly.

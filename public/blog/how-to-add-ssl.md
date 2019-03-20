@@ -9,7 +9,7 @@ modified: '2014-10-17 08:55:41'
 ---
 # Adding an (SHA256 signed) SSL certificate
 
-I've had to update the SSL certificate quite a few times on [jsbin.com](http://jsbin.com) in the last 6 months, and I keep a cheatsheet of SSL steps on my machine. So it's about time I publish it somewhere that I can *google* too!
+I've had to update the SSL certificate quite a few times on [jsbin.com](https://jsbin.com) in the last 6 months, and I keep a cheatsheet of SSL steps on my machine. So it's about time I publish it somewhere that I can *google* too!
 
 <!--more-->
 

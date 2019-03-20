@@ -26,7 +26,7 @@ I only noticed this because the colour of the text in my <code>td</code> is diff
 
 View the example in Firefox, then view it in IE6 - classic!
 
-[http://jsbin.com/iquyi](http://jsbin.com/iquyi) (to edit: [http://jsbin.com/iquyi/edit](http://jsbin.com/iquyi/edit))
+[https://jsbin.com/iquyi](https://jsbin.com/iquyi) (to edit: [https://jsbin.com/iquyi/edit](https://jsbin.com/iquyi/edit))
 
 ## Challenge?
 

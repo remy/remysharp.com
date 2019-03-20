@@ -35,7 +35,7 @@ So I left it.
 
 ## Hacking codecasting in to jsbin
 
-A year later, I built (a still unfinished) [Förbind](http://forbind.net/) - as "Sockets as a Service" site. This would be the ground work for adding codecasting to jsbin. In fact, there's still a link on the homepage to the [bin](http://jsbin.com/edifi3/1/edit) that you could enable codecasting with (note that this doesn't work anymore - because codecasting is now native to jsbin).
+A year later, I built (a still unfinished) [Förbind](http://forbind.net/) - as "Sockets as a Service" site. This would be the ground work for adding codecasting to jsbin. In fact, there's still a link on the homepage to the [bin](https://jsbin.com/edifi3/1/edit) that you could enable codecasting with (note that this doesn't work anymore - because codecasting is now native to jsbin).
 
 In the few days that I built Förbind (a swedish word for join, or as I liked to think: connect), the codecasting was surprisingly stable.
 

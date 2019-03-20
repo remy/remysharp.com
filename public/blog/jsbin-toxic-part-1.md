@@ -69,7 +69,7 @@ Thankfully the self-attacks happened *after* JS Bin had moved to Node, otherwise
 
 In truth though, JS Bin does not always remain calm during these attacks. *Self-attacks?* Yep. It's when the script kiddie page asks for a URL, but the page doesn't do any validation on the URL, and, since it takes very little brain cells to want to orchestrate the attack, some moron leaves off the preceding "http://" part in their attack.
 
-The result? They start to attach URLs like http://jsbin.com/abcef/some-site-the-user-hates.com - which does actually go through JS Bin's sub-system.
+The result? They start to attach URLs like https://jsbin.com/abcef/some-site-the-user-hates.com - which does actually go through JS Bin's sub-system.
 
 Sometimes, not always, but sometimes it results in this, and that's when it gets really hairy...
 
@@ -88,7 +88,7 @@ It's pretty disheartening when most of the @replies to the product you've poured
 
 ### When there's an endless supply of shit
 
-I actually have a [runbook](http://jsbin.com/help/runbook/slow-response) for when this happens. When JS Bin comes under heavy fire, whatever that attack looks like. Most of the time the solution would be to restart JS Bin. However, it would also tend to come from a few specific IP addresses.
+I actually have a [runbook](https://jsbin.com/help/runbook/slow-response) for when this happens. When JS Bin comes under heavy fire, whatever that attack looks like. Most of the time the solution would be to restart JS Bin. However, it would also tend to come from a few specific IP addresses.
 
 I do also get AWS CloudWatch alerts when the CPU on JS Bin machines run high (for a number of seconds). The constant hitting traffic against the node process (yes...a single process) results in the process being constantly "busy", i.e. high CPU rate, so there *are* alarms I get.
 

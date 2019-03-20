@@ -49,7 +49,7 @@ li a:hover {
 
 Take a look at the demo.
 
-[http://jsbin.com/ehaja/](http://jsbin.com/ehaja/) ([edit](http://jsbin.com/ehaja/edit))
+[https://jsbin.com/ehaja/](https://jsbin.com/ehaja/) ([edit](https://jsbin.com/ehaja/edit))
 
 ## Thoughts
 

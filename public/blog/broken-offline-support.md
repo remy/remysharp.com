@@ -14,7 +14,7 @@ modified: '2016-09-30 12:21:09'
 
 The state of offline detection in desktop browsers is broken and it needs to fixed or at least get better, but I can't see this happening unless we push against the browser vendors to fix this.
 
-Currently, as of April 2011, offline and online events are broken, as is the navigator.onLine property. The only exception appears to be WebKit/MobileSafari on mobile (though I've only successfully tested Android's 2.3.3 and iOS 4.3). Here's the test url: <a href="http://jsbin.com/otudo5/1">jsbin.com/otudo5</a> (<a href="http://jsbin.com/otudo5/1/edit">source</a>)
+Currently, as of April 2011, offline and online events are broken, as is the navigator.onLine property. The only exception appears to be WebKit/MobileSafari on mobile (though I've only successfully tested Android's 2.3.3 and iOS 4.3). Here's the test url: <a href="https://jsbin.com/otudo5/1">jsbin.com/otudo5</a> (<a href="https://jsbin.com/otudo5/1/edit">source</a>)
 
 <!--more-->
 
@@ -48,12 +48,12 @@ It would seem to be easier to drop these events from the specification and only 
 
 How important is it to suddenly announce to the user of your web app "OMG, YOU DON'T HAVE THE INTERNETS!"? I think it's more appropriate to handle a user initiated activity that requires the Internet with a test against navigator.onLine (where the offline appcache doesn't already handle the process for us).
 
-It should be straight forward to change `navigator.onLine` to run a blocking test for connectivity. 
+It should be straight forward to change `navigator.onLine` to run a blocking test for connectivity.
 
 I've managed to write something similar for [Chrome that polyfills `navigator.onLine`](https://github.com/remy/polyfills/blob/master/offline-events.js):
 
     navigator.__defineGetter__('onLine', function () {
-      // test the connection using try/catch with XHR 
+      // test the connection using try/catch with XHR
       var onLine = false;
       // make sync-ajax request
       var xhr = new XMLHttpRequest();
@@ -70,7 +70,7 @@ I've managed to write something similar for [Chrome that polyfills `navigator.on
       return onLine
     });
 
-The reason the polyfill doesn't work with the other browsers is because they either don't throw a `NETWORK_ERR` on the XHR request when the network is down (This is part of the XHR spec, so that's broken too), or in Safari's case, you can't overload the onLine property. 
+The reason the polyfill doesn't work with the other browsers is because they either don't throw a `NETWORK_ERR` on the XHR request when the network is down (This is part of the XHR spec, so that's broken too), or in Safari's case, you can't overload the onLine property.
 
 If my XHR *hack* worked in the other browsers, I wouldn't be so frustrated with browser support for these events. But it doesn't fully work, so now the only alternative is to call for browsers to fix their offline event and/or `navigator.onLine` support.
 

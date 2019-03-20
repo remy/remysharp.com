@@ -12,7 +12,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # JS Bin for Collaborative JavaScript Debugging
 
-The weekend before last (28-Sep 2008) I blitzed through an idea I had on the shelf for about 6 months and put it live under the name [JS Bin](http://jsbin.com).
+The weekend before last (28-Sep 2008) I blitzed through an idea I had on the shelf for about 6 months and put it live under the name [JS Bin](https://jsbin.com).
 
 <!--more-->
 
@@ -30,11 +30,11 @@ A short list of features:
 
 In addition, any code snippet can be edited.
 
-Take this example: [query string aware JavaScript](http://jsbin.com/utala/) ([http://jsbin.com/utala/](http://jsbin.com/utala/))
+Take this example: [query string aware JavaScript](https://jsbin.com/utala/) ([https://jsbin.com/utala/](https://jsbin.com/utala/))
 
 ...to edit it, you just add '/edit' to the URL and you can modify the snippet yourself and save it as new:
 
-[http://jsbin.com/utala/edit](http://jsbin.com/utala/edit)
+[https://jsbin.com/utala/edit](https://jsbin.com/utala/edit)
 
 ## Why?
 
@@ -50,8 +50,8 @@ A small server side php file does the saving work (and maintaining old code snip
 
 I've recorded a couple of screencasts showing how it can be used:
 
-* [General introduction](http://jsbin.com/about#video)
-* [Ajax debugging](http://jsbin.com/about#ajax)
+* [General introduction](https://jsbin.com/about#video)
+* [Ajax debugging](https://jsbin.com/about#ajax)
 
 ## Feedback
 

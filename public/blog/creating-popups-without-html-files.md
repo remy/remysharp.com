@@ -49,7 +49,7 @@ With that, it means we can dynamically generate a popup window without a `.html`
 
     window.open('data:text/html,<title>Hello Data URL</title><p>File-less HTML page!</p>', 'Hello World', 'width=400,height=200');
 
-This [works](http://jsbin.com/etizam/1/edit) perfectly if all you want is a dynamic popup (that's supported in IE8 and others).
+This [works](https://jsbin.com/etizam/1/edit) perfectly if all you want is a dynamic popup (that's supported in IE8 and others).
 
 However, if you want that popup to talk to the parent window that generated the popup in the first instance (which in my case was true), you're outta luck since **the data url origin does not match the origin of the domain that created the popup**, which basically equals *no dice*. So that's how I got the craziness you're about to see.
 
@@ -66,7 +66,7 @@ A couple of additional caveats in an already crazy sounding solution are:
 1. You need some kind of identifier on the url to indicate this is the *popup version*
 2. Any JavaScript that's executed before your script is encountered will be executed. If you can make sure your script is first, you can prevent the successive scripts from running.
 
-One single script is included as the first script include on this page with the following code ([and demo](http://jsbin.com/etizam/2/quiet)):
+One single script is included as the first script include on this page with the following code ([and demo](https://jsbin.com/etizam/2/quiet)):
 
     if (window.location.hash.indexOf('#popup') === -1) {
       window.open(window.location + '#popup', 'Popup', 'width=300,height=300');
@@ -98,7 +98,7 @@ Since we're using the parent page as the popup source, we need to remove the DOM
 
     document.documentElement.innerHTML = ...some new markup...
 
-Here's a simple [example](http://jsbin.com/ahomut/1/quiet) that only shows one sentence and doesn't include the alert (view the source to see what you were *supposed* to get).
+Here's a simple [example](https://jsbin.com/ahomut/1/quiet) that only shows one sentence and doesn't include the alert (view the source to see what you were *supposed* to get).
 
 ### Referring to the parent window
 

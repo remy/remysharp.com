@@ -31,7 +31,7 @@ The example is mostly *lorem* text, but in the middle of the page is an element 
 
 To confirm this, open firebug while the element is out of view, and watch the element in question as you scroll it in to view.
 
-[http://jsbin.com/ugupa/1](http://jsbin.com/ugupa/1) (to edit: [http://jsbin.com/ugupa/1/edit](http://jsbin.com/ugupa/1/edit))
+[https://jsbin.com/ugupa/1](https://jsbin.com/ugupa/1) (to edit: [https://jsbin.com/ugupa/1/edit](https://jsbin.com/ugupa/1/edit))
 
 ## Download
 

@@ -14,7 +14,7 @@ My small company, [Left Logic](http://leftlogic.com) is now actively hiring.
 Left Logic is based in the heart of Brighton, my favourite part actually: The
 North Laine.
 
-![http://instagram.com/p/cdj9tCqar4/media/?size=m](http://instagram.com/p/cdj9tCqar4/media/?size=m)![http://instagram.com/p/Jh2hhSKalh/media/?size=m](http://instagram.com/p/Jh2hhSKalh/media/?t=m)
+![https://instagram.com/p/cdj9tCqar4/media/?size=m](https://instagram.com/p/cdj9tCqar4/media/?size=m)![https://instagram.com/p/Jh2hhSKalh/media/?size=m](https://instagram.com/p/Jh2hhSKalh/media/?t=m)
 
 The company is a front end development *and* JavaScript specialist. I add
 JavaScript separately, because Node applications feature a lot in the projects

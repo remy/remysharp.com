@@ -30,7 +30,7 @@ var tabs = $('.tab').click(function () {
 $('.tab:first').click();
 ```
 
-[Simple, right](http://jsbin.com/metoya/edit?js,output)? Nearly fits in a tweet (ignoring the whole jQuery library...). Still, it's riddled with problems that make it a far from perfect solution.
+[Simple, right](https://jsbin.com/metoya/edit?js,output)? Nearly fits in a tweet (ignoring the whole jQuery library...). Still, it's riddled with problems that make it a far from perfect solution.
 
 ## Requirements: what makes the perfect tab?
 
@@ -304,7 +304,7 @@ The tasks were simple:
 
 And that's it. Very small changes to get full sign off that the tabbing system is bullet proof and accessible.
 
-The final version is here: http://output.jsbin.com/lorovu/ (and non-jQuery version as promised: http://jsbin.com/sehuxo/edit?js,output).
+The final version is here: http://output.jsbin.com/lorovu/ (and non-jQuery version as promised: https://jsbin.com/sehuxo/edit?js,output).
 
 What my version is missing in particular is the keyboard cursor support. The visitor should be able to cycle through the tabs using the cursor keys. In theory, this would also cause the browser history to be appended to as the journey changes.
 

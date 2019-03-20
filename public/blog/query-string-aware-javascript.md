@@ -35,7 +35,7 @@ I would then pass that in to my [getQuery](/2008/06/24/query-string-to-object-vi
 
 ## Demo
 
-I've created two separate snippets on [JS Bin](http://jsbin.com) (my new weekend project), one containing the external script code (with <code>getQuery</code>) and one that makes the call:
+I've created two separate snippets on [JS Bin](https://jsbin.com) (my new weekend project), one containing the external script code (with <code>getQuery</code>) and one that makes the call:
 
-* [Demo of query string read](http://jsbin.com/utala/) ([source](http://jsbin.com/utala/edit/#html))
-* [Source of external script](http://jsbin.com/oveve/js)
+* [Demo of query string read](https://jsbin.com/utala/) ([source](https://jsbin.com/utala/edit/#html))
+* [Source of external script](https://jsbin.com/oveve/js)

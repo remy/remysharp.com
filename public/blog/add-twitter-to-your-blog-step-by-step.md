@@ -27,22 +27,7 @@ modified: '2014-09-03 16:15:12'
 
 <p>Below is a working example of loading twitters after the page has completed, thus preventing the whole page from locking up (notice that the spinner will continue until the twitters are loaded) - based on <a href="http://twitter.com/rem">my tweets</a> from myself:</p>
 
-<script src="http://twitterjs.googlecode.com/svn/trunk/src/twitter.min.js"></script>
-<script type="text/javascript" charset="utf-8">
-  getTwitters('twitters', {
-      id: 'rem',
-      clearContents: true,
-      count: 5,
-      withFriends: true,
-      ignoreReplies: false,
-      template: '<span class="prefix"><img height="16" width="16" src="%user_profile_image_url%" /> <a href="http://twitter.com/%user_screen_name%">%user_name%</a> said: </span> <span class="status">"%text%"</span> <span class="time"><a href="http://twitter.com/%user_screen_name%/statuses/%id_str%">%time%</a></span>'
-  });
-</script>
-
-<link rel="stylesheet" href="/images/twitter.css" type="text/css" media="screen" title="no title" charset="utf-8" />
-
-<div id="twitters"><p>Please wait while my tweets load <img src="/images/indicator.gif" /></p>
-</div>
+_Removed on 2019-03-20 as Twitter shutdown their open API._
 
 Using my [twitter.js](http://code.google.com/p/twitterjs/downloads/list) script.
 

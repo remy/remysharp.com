@@ -29,6 +29,4 @@ It ain't that Christmasy and there ain't no snow (please ignore the double negat
 
 It's 40p (for two tracks) and all profits go to [War Child](http://www.warchild.org/).  On top of which, if it knocks down the Goliath institutions, you'll have piece of mind that *you* helped make that difference.
 
-Go buy it.
-
-<a href="http://www.last.fm/group/xmaschartattack"><img src="http://static.last.fm/customisation/2007_xmaschart/flyer_330.gif" alt="lucky soul for christmas no 1" width="330" height="466" /></a>
+[Go buy it.](http://www.last.fm/group/xmaschartattack)
