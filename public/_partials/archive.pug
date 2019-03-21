@@ -6,7 +6,6 @@
   - index = 0;
   - post = posts[index]
   while post
-    - console.log(post.data.title)
     if post.data.date
       if !year || moment(post.data.date).format('YYYY') == year
         - month = moment(post.data.date).format('MMMM')

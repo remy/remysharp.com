@@ -6,7 +6,7 @@
     "node": "10"
   },
   "scripts": {
-    "dev": "node lib/index.js",
+    "dev": "node lib/dev.js",
     "test": "semantic-release pre",
     "start": "node server.js",
     "build": "node lib/index.js",
@@ -19,6 +19,7 @@
   "author": "Remy Sharp",
   "license": "MIT",
   "dependencies": {
+    "abbrev": "^1.1.1",
     "chokidar": "^2.1.2",
     "clite": "0.3.0",
     "date-fns": "^1.30.1",
@@ -45,6 +46,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "inquirer": "0.12.0",
+    "request": "^2.88.0",
     "semantic-release": "4.3.5",
     "serve-handler": "^5.0.8"
   }
