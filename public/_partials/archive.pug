@@ -1,10 +1,12 @@
-- year = filter || 2006; //filter === undefined ? current.path.slice(-2, -1)[0] : filter;
-- posts = collections.years[year].slice(0)
+- year = filter;
+- posts = year ? collections.years[year].slice(0) : Object.keys(collections.years).sort((a, b) => b - a).reduce((acc, curr) => acc.concat(collections.years[curr]), [])
 - last = null
 .post
   h1.title #{ title || year } archive
-  - post = posts.shift()
+  - index = 0;
+  - post = posts[index]
   while post
+    - console.log(post.data.title)
     if post.data.date
       if !year || moment(post.data.date).format('YYYY') == year
         - month = moment(post.data.date).format('MMMM')
@@ -18,8 +20,10 @@
             while post && month == moment(post.data.date).format('MMMM') && (!year || moment(post.data.date).format('YYYY') == year)
               if post && post.data.date
                 li
-                  a(href=`${ post.data.relative }`)= post.data.title
+                  a(href=`${ post.url }`)= post.data.title
                   small.date &nbsp; #{ moment(post.data.date).format('D-MMM YYYY')}
-              - post = posts.shift()
+              - post = posts[index += 1];
       else
-        - post = posts.shift()
+        - post = posts[index += 1];
+    else
+      - post = posts[index += 1];

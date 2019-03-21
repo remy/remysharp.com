@@ -3,6 +3,17 @@
 
 html {
   background-image: url(../images/background.png);
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  > main {
+    flex-grow: 1;
+  }
 }
 
 // here be my styles

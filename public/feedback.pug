@@ -1,27 +1,24 @@
-extends _partials/layout
+block content
+  h1 Feedback
+  #feedback-form.post-content
+    .form_container
+      form(method="post" action="https://formspree.io/remy@remysharp.com").form
+        input(type="hidden" name="_next" value="https://remysharp.com/feedback?thanks")
+        input(type="hidden" name="_format" value="plain")
+        p Your feedback is appreciated and is always read.
+        div.fields
+          label(for="form_name") Name
+          input(name="name" id="form_name" type="text")
+        div.fields
+          label(for="form_email") Email*
+          input(required name="email" id="form_email" type="email")
+        div.fields
+          label(for="form_message") Message*
+          textarea(required minlength="20" rows="7" name="message" id="form_message")
+
+        .fields
+          button(type="submit").button Send feedback
 
 block scripts
   script(src="/js/feedback.js")
 
-block content
-  main.content
-    article.post
-      h1.title Feedback
-      #feedback-form.post-content
-        .form_container
-          form(method="post" action="https://formspree.io/remy@remysharp.com").form
-            input(type="hidden" name="_next" value="https://remysharp.com/feedback?thanks")
-            input(type="hidden" name="_format" value="plain")
-            p Your feedback is appreciated and is always read.
-            div.fields
-              label(for="form_name") Name
-              input(name="name" id="form_name" type="text")
-            div.fields
-              label(for="form_email") Email*
-              input(required name="email" id="form_email" type="email")
-            div.fields
-              label(for="form_message") Message*
-              textarea(required minlength="20" rows="7" name="message" id="form_message")
-
-            .fields
-              button(type="submit").button Send feedback

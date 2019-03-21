@@ -21,7 +21,6 @@ It's an observational comedy with an eclectic cast, including [Steve Carell][Ste
 [Virgin]: http://imdb.com/title/tt0405422/
 [Toni]: http://imdb.com/name/nm0001057/
 
-
 <!--more-->
 
 <img style="float: right; padding-left: 20px" alt="Little Miss Sunshine Poster" src="/images/little_miss_sunshine_poster.jpg" />It's mum, dad, teenager who doesn't talk (out of choice) and hates them all, uncle who hates himself, grand dad who's on drugs, and Olive, the young girl who's wide eyed and open to anything heading out to compete in the Little Miss Sunshine beauty contest.
