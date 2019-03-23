@@ -21,7 +21,7 @@ I should add before I continue, that it's not difficult by any measure if you kn
 <div class="tweet" style="border: 1px solid #ccc; padding: 10px;">
   <p>@rem since your last tweet (roughly 20 minutes) I bought a slice on Slicehost for 20$ and got the #nodejs example server running on it.</p>
   <div class="source">
-    <p style="margin: 0; line-height: 20px;"><img style="padding-right: 10px; vertical-align: top;" src="http://twivatar.org/kriskowal/mini"><a href="http://twitter.com/kriskowal/status/9075436737" style="font-size: 150%;">kriskowal</a></p>
+    <p style="margin: 0; line-height: 20px;"><img style="padding-right: 10px; vertical-align: top;" width="24px" src="https://twivatar.glitch.me/kriskowal"><a href="http://twitter.com/kriskowal/status/9075436737" style="font-size: 150%;">kriskowal</a></p>
   </div>
 </div>
 
