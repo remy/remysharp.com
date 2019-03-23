@@ -1,3 +1,8 @@
+---
+layout: false
+permalink: feed.xml
+---
+
 - posts = collections.blog.slice(-50)
 
 doctype xml
@@ -18,12 +23,12 @@ rss(version='2.0'
     sy:updatePeriod hourly
     sy:updateFrequency 1
 
-    each post in posts
+    each post in collections.blog
       item
-        title= post.title
+        title= post.data.title
         guid(isPermaLink="false")= post.slug
-        link= post.url
+        link= site_url + post.url
         - var body = post.output
-        pubDate #{ moment(post.date).format('ddd, DD MMM YYYY HH:mm:ss +0000') }
+        pubDate= moment(post.data.date).format('ddd, DD MMM YYYY HH:mm:ss +0000')
         description <![CDATA[!{ body.replace(/<h1>.*?<\/h1>/, '').split('<!--more-->')[0].replace(/(<([^>]+)>)/ig, '').trim() }]]>
-        content:encoded <![CDATA[!{ body.replace(/<h1>.*?<\/h1>/, '').replace(/<!--more-->\s+?/m, '<p><a href="https://terminal.training/?utm_source=feed&utm_medium=banner&utm_campaign=remysharp-ad1"><img src="' + site_url + '/images/inline-cli-course.png"></a>').replace(/<img(.*?)src="\//g, '<img$1src="' + site_url + '/').replace(/<a href="\//g, '<a href="' + site_url + '/') }<p><em>Originally published on <a href="#{ post.url }">Remy Sharp's b:log</a></em></p>]]>
+        content:encoded <![CDATA[!{ body.replace(/<h1>.*?<\/h1>/, '').replace(/<!--more-->\s+?/m, '<p><a href="https://terminal.training/?utm_source=feed&utm_medium=banner&utm_campaign=remysharp-ad1"><img src="' + site_url + '/images/inline-cli-course.png"></a>').replace(/<img(.*?)src="\//g, '<img$1src="' + site_url + '/').replace(/<a href="\//g, '<a href="' + site_url + '/') }<p><em>Originally published on <a href="#{ site_url }#{ post.url }">Remy Sharp's b:log</a></em></p>]]>
