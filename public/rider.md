@@ -39,4 +39,4 @@ For best results, please include the following details if you can:
 
 ## Comments?
 
-If you have feedback or positive suggestions on the language used in this rider, I would welcome your help to improve it - please email me directly at [remy@leftlogic.com](mailto:remy@leftlogic.com?subject=Speaker rider suggestion).
+If you have feedback or positive suggestions on the language used in this rider, I would welcome your help to improve it - please email me directly at [remy@leftlogic.com](mailto:remy@leftlogic.com?subject=Speaker%20rider%20suggestion).
