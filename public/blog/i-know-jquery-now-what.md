@@ -46,26 +46,27 @@ jQuery also abstracted ajax for me. The term had only just been coined earlier i
 
 It was the first time I really had to deal with the XMLHttpRequest object, and when seeing it for the first time, understanding the `onreadystatechange` event and the combination of `this.status` and `this.readyState` wasn't overtly clear! jQuery (and other libraries) also tucked away the mess that was XHR in IE via ActiveX...
 
-    function getXmlHttpRequest() {
-      var xhr;
-      if (window.XMLHttpRequest) {
-        xhr = new XMLHttpRequest();
-      } else {
-        try {
-          xhr = new ActiveXObject("Msxml2.XMLHTTP");
-        } catch (e) {
-          try {
-            xhr = new ActiveXObject("Microsoft.XMLHTTP");
-          } catch (e) {
-            xhr = false;
-          }
-        }
+```js
+function getXmlHttpRequest() {
+  var xhr;
+  if (window.XMLHttpRequest) {
+    xhr = new XMLHttpRequest();
+  } else {
+    try {
+      xhr = new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (e) {
+      try {
+        xhr = new ActiveXObject("Microsoft.XMLHTTP");
+      } catch (e) {
+        xhr = false;
       }
-      return xhr;
     }
+  }
+  return xhr;
+}
 
-    // disclaimer: John's jQuery version is a lot more elegant!
-
+// disclaimer: John's jQuery version is a lot more elegant!
+```
 
 Once I could see that using the ajax utility inside of jQuery to suck in a URL's HTML (which was typically the way we *wanted* to do ajax), then ajax suddenly clicked.
 
@@ -85,10 +86,12 @@ Being able to give a native function of a browser a CSS expression, and **it** d
 
 Andrew Lunny (of PhoneGap & Adobe) has the brilliant simplicity on the bling function:
 
-    var $ = document.querySelectorAll.bind(document);
-    Element.prototype.on = Element.prototype.addEventListener;
+```js
+var $ = document.querySelectorAll.bind(document);
+Element.prototype.on = Element.prototype.addEventListener;
 
-    $('#somelink')[0].on('touchstart', handleTouch);
+$('#somelink')[0].on('touchstart', handleTouch);
+```
 
 Beautifully simple.
 
@@ -112,11 +115,13 @@ It's almost as simple as: does this browser have `querySelectorAll`?
 
 The BBC use the following test for cutting the mustard:
 
-    if ('querySelector' in document &&
-        'localStorage' in window &&
-        'addEventListener' in window) {
-        // bootstrap the JavaScript application
-    }
+```js
+if ('querySelector' in document &&
+    'localStorage' in window &&
+    'addEventListener' in window) {
+    // bootstrap the JavaScript application
+}
+```
 
 I know off the top of my head IE8 doesn't support `addEventListener` ([but there is a polyfill](https://gist.github.com/eirikbacker/2864711)), so if that's an important browser to the project, then I know that I don't want to start the project hoop jumping for IE8.
 
@@ -150,21 +155,24 @@ Hopefully it's common knowledge by now, but JavaScript blocks rendering. Put you
 
 It makes me sad when I see jQuery to retrieve a value from an input element:
 
-    $('input').on('change', function () {
-      var value = $(this).attr('value');
+```js
+$('input').on('change', function () {
+  var value = $(this).attr('value');
 
-      alert('The new value is' + value);
-    });
+  alert('The new value is' + value);
+});
+```
 
 Why? Because you can get to the value using `this.value`. More importantly - you should think about *how* you're using a JavaScript library. Don't unnecessarily invoke jQuery if you don't need to.
 
 In fact, this isn't a jQuery thing - it's a best practise thing. The code should simply read:
 
-    $('input').on('change', function () {
+```js
+$('input').on('change', function () {
 
-
-      alert('The new value is' + this.value);
-    });
+  alert('The new value is' + this.value);
+});
+```
 
 It's also common to use jQuery to get the href of an anchor: `$(this).attr('href')`, but you can also easily get this from knowing the DOM: `this.href`. However, note that `this.href` is different, it's the absolute url, as we're talking about the DOM API, and not the element. If you want the attribute value (as it's suggested in the jQuery version), you want `this.getAttribute('href')`.
 
@@ -172,20 +180,24 @@ Then there's setting the class on an element, you don't need jQuery for that eit
 
 I've seen this before:
 
-      <script src="http://code.jquery.com/jquery.min.js"></script>
-    </head>
-    <body>
-      <script>
-        $('body').addClass('hasJS');
-      </script>
+```html
+  <script src="http://code.jquery.com/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+    $('body').addClass('hasJS');
+  </script>
+```
 
 But why not:
 
-    </head>
-    <body>
-      <script>
-        document.body.className = 'hasJS';
-      </script>
+```js
+</head>
+<body>
+  <script>
+    document.body.className = 'hasJS';
+  </script>
+```
 
 Probably the most important change in the version below, is there's no jQuery being included first *just* to set a class name on the body to determine whether JavaScript is available.
 
@@ -199,44 +211,58 @@ HTML5's `classList` support is in all the latest production browsers (note *not*
 
 Instead of:
 
-    $('body').addClass('hasJS');
+```js
+$('body').addClass('hasJS');
 
-    // or
+// or
 
-    document.body.className += ' hasJS';
+document.body.className += ' hasJS';
+```
 
 We can do:
 
-    document.body.classList.add('hasJS');
+```js
+document.body.classList.add('hasJS');
+```
 
 Isn't that pretty?
 
 What about removing:
 
-    $('body').removeClass('hasJS');
+```js
+$('body').removeClass('hasJS');
 
-    // or some crazy-ass regular expression
+// or some crazy-ass regular expression
+```
 
 Or we can do:
 
-    document.body.classList.remove('hasJS');
+```js
+document.body.classList.remove('hasJS');
+```
 
 But more impressive is the native toggle support:
 
-    document.body.classList.toggle('hasJS');
+```js
+document.body.classList.toggle('hasJS');
 
-    // and
+// and
 
-    document.body.classList.contains('hasJS');
+document.body.classList.contains('hasJS');
+```
 
 To set multiple classes, you add more arguments:
 
-    document.body.classList.add('hasJS', 'ready');
+```js
+document.body.classList.add('hasJS', 'ready');
+```
 
 What does suck though, is the weird issues - like don't use a empty string:
 
-    document.body.classList.contains('');
-    // SyntaxError: DOM Exception 12
+```js
+document.body.classList.contains('');
+// SyntaxError: DOM Exception 12
+```
 
 That's pretty rubbish. But! On the upside, I know the problem areas and I avoid them. Pretty much what we've grown up on working with browsers anyway.
 
@@ -248,8 +274,10 @@ HTML5 has native data storage against elements, but there's a fundamental differ
 
 But if you're storing strings or JSON, then native support is perfect:
 
-    element.dataset.user = JSON.stringify(user);
-    element.dataset.score = score;
+```js
+element.dataset.user = JSON.stringify(user);
+element.dataset.score = score;
+```
 
 Support is good, but sadly no native support in IE10 (though you can add a polyfill and it'll work perfectly again - but that's a consideration when using dataset).
 
@@ -257,34 +285,36 @@ Support is good, but sadly no native support in IE10 (though you can add a polyf
 
 Like I said before, jQuery helped me grok ajax fully. But now ajax is pretty easy. Sure, I don't have all the extra options, but more often than not, I'm doing an XHR `GET` or `POST` using JSON.
 
-    function request(type, url, opts, callback) {
-      var xhr = new XMLHttpRequest(),
-          fd;
+```js
+function request(type, url, opts, callback) {
+  var xhr = new XMLHttpRequest(),
+      fd;
 
-      if (typeof opts === 'function') {
-        callback = opts;
-        opts = null;
-      }
+  if (typeof opts === 'function') {
+    callback = opts;
+    opts = null;
+  }
 
-      xhr.open(type, url);
+  xhr.open(type, url);
 
-      if (type === 'POST' && opts) {
-        fd = new FormData();
+  if (type === 'POST' && opts) {
+    fd = new FormData();
 
-        for (var key in opts) {
-          fd.append(key, JSON.stringify(opts[key]));
-        }
-      }
-
-      xhr.onload = function () {
-        callback(JSON.parse(xhr.response));
-      };
-
-      xhr.send(opts ? fd : null);
+    for (var key in opts) {
+      fd.append(key, JSON.stringify(opts[key]));
     }
+  }
 
-    var get = request.bind(this, 'GET');
-    var post = request.bind(this, 'POST');
+  xhr.onload = function () {
+    callback(JSON.parse(xhr.response));
+  };
+
+  xhr.send(opts ? fd : null);
+}
+
+var get = request.bind(this, 'GET');
+var post = request.bind(this, 'POST');
+```
 
 It's short and simple. XHR is not hard and it's well documented nowadays. But more importantly, having an understanding of how it really works and what XHR can do, gives us more.
 
@@ -300,15 +330,21 @@ But regardless of your client side validation - you must always run server side 
 
 But what if you could throw away lines and lines of JavaScript and plugins to validate an email address like this:
 
-    <input type="email">
+```html
+<input type="email">
+```
 
 Want to make it a required field?
 
-    <input type="email" required>
+```html
+<input type="email" required>
+```
 
 Want to allow only specific characters for a user?
 
-    <input pattern="[a-z0-9]">
+```html
+<input pattern="[a-z0-9]">
+```
 
 Bosh. It even comes with assistive technology support - i.e. the keyboard will adapt to suit email address characters.
 
@@ -334,8 +370,10 @@ However, if you can simply do `foo.classList.add('animate')`, the CSS class `ani
 
 But what about my animation end callback I hear you all cry?!  That's available too. Though it's a little icky:
 
-    el.addEventListener("webkitTransitionEnd", transitionEnded);
-    el.addEventListener("transitionend", transitionEnded);
+```js
+el.addEventListener("webkitTransitionEnd", transitionEnded);
+el.addEventListener("transitionend", transitionEnded);
+```
 
 * Note the the lowercase 'e' on 'end'...
 
@@ -369,72 +407,84 @@ It uses the following jQuery methods:
 
 The plugin is this:
 
-      $.fn.fitText = function( kompressor, options ) {
+```js
+$.fn.fitText = function( kompressor, options ) {
 
-        // Setup options
-        var compressor = kompressor || 1,
-            settings = $.extend({
-              'minFontSize' : Number.NEGATIVE_INFINITY,
-              'maxFontSize' : Number.POSITIVE_INFINITY
-            }, options);
+  // Setup options
+  var compressor = kompressor || 1,
+      settings = $.extend({
+        'minFontSize' : Number.NEGATIVE_INFINITY,
+        'maxFontSize' : Number.POSITIVE_INFINITY
+      }, options);
 
-        return this.each(function(){
+  return this.each(function(){
 
-          // Store the object
-          var $this = $(this);
+    // Store the object
+    var $this = $(this);
 
-          // Resizer() resizes items based on the object width divided by the compressor * 10
-          var resizer = function () {
-            $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
-          };
+    // Resizer() resizes items based on the object width divided by the compressor * 10
+    var resizer = function () {
+      $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
+    };
 
-          // Call once to set.
-          resizer();
+    // Call once to set.
+    resizer();
 
-          // Call on resize. Opera debounces their resize by default.
-          $(window).on('resize orientationchange', resizer);
+    // Call on resize. Opera debounces their resize by default.
+    $(window).on('resize orientationchange', resizer);
 
-        });
+  });
 
-      };
+};
+```
 
 `.extend` is being used against an object that only has two options, so I would rewrite to read:
 
-      if (options === undefined) options = {};
-      if (options.minFontSize === undefined) options.minFontSize = Number.NEGATIVE_INFINITY;
-      if (options.maxFontSize === undefined) options.maxFontSize = Number.POSITIVE_INFINITY;
+```js
+if (options === undefined) options = {};
+if (options.minFontSize === undefined) options.minFontSize = Number.NEGATIVE_INFINITY;
+if (options.maxFontSize === undefined) options.maxFontSize = Number.POSITIVE_INFINITY;
+```
 
 `return this.each` used to loop over the nodes. Let's assume we want this code to work stand alone, then our `fitText` function would receive the list of nodes (since we wouldn't be chaining):
 
-      var length = nodes.length,
-          i = 0;
+```js
+var length = nodes.length,
+    i = 0;
 
-      // would like to use [].forEach.call, but no IE8 support
-      for (; i < length; i++) {
-        (function (node) {
-          // where we used `this`, we now use `node`
-          // ...
-        })(nodes[i]);
-      }
+// would like to use [].forEach.call, but no IE8 support
+for (; i < length; i++) {
+  (function (node) {
+    // where we used `this`, we now use `node`
+    // ...
+  })(nodes[i]);
+}
+```
 
 `$this.width()` gets the width of the container for the resizing of the text. So we need to get the computed styles and grab the width:
 
-      // Resizer() resizes items based on the object width divided by the compressor * 10
-      var resizer = function () {
-        var width = node.clientWidth;
+```js
+// Resizer() resizes items based on the object width divided by the compressor * 10
+var resizer = function () {
+  var width = node.clientWidth;
 
-        // ...
-      };
+  // ...
+};
+```
 
 It's really important to note that swapping `.width()` for `.clientWidth` will not work in all plugins. It just happen to be the right swap for this particular problem that I was solving (which repeats my point: use the right tool for the job).
 
 `$this.css` is used as a setter, so that's just a case of setting the style:
 
-      node.style.fontSize = Math.max(...);
+```js
+node.style.fontSize = Math.max(...);
+```
 
 `$(window).on('resize', resizer)` is a case of attaching the event handler (note that you'd want `addEvent` too for IE8 support):
 
-      window.addEventListener('resize', resizer, false);
+```js
+window.addEventListener('resize', resizer, false);
+```
 
 In fact, I'd go [further](https://jsbin.com/eberan/9/edit) and store the resizers in an array, and on resize, loop through the array executing the resizer functions.
 

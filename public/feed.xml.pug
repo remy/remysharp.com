@@ -3,7 +3,7 @@ layout: false
 permalink: feed.xml
 ---
 
-- posts = collections.blog.slice(-50)
+- posts = collections.blog.slice(0, 50)
 
 doctype xml
 rss(version='2.0'
@@ -23,7 +23,7 @@ rss(version='2.0'
     sy:updatePeriod hourly
     sy:updateFrequency 1
 
-    each post in collections.blog
+    each post in posts
       item
         title= post.data.title
         guid(isPermaLink="false")= post.slug
