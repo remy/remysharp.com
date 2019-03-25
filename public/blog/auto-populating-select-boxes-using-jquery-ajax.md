@@ -36,20 +36,18 @@ Our demo will specifically look to build a simple form that allows us to book hu
 
 [See the demo in action](/images/select.html)
 
-<h2>How it works</h2>
+## How it works
 
-<p>Once the top level category select is changed, it sends an AJAX request for the sub-categories. The result of which are converted to select options and the sub-category select's elements are replaced.</p>
+Once the top level category select is changed, it sends an AJAX request for the sub-categories. The result of which are converted to select options and the sub-category select's elements are replaced.
 
-<h2>Unobtrusive JavaScript</h2>
+## Unobtrusive JavaScript
 
-<p>First things first: as with any page that is loaded with JavaScript and AJAX functionality, it should work without JavaScript.</p>
+First things first: as with any page that is loaded with JavaScript and AJAX functionality, it should work without JavaScript.
 
-<p>To achieve this for our tutorial here's what we need to ensure:</p>
+To achieve this for our tutorial here's what we need to ensure:
 
-<ol>
-<li>When the page is loaded, the sub-category is loaded (if the top level has a selected item).</li>
-<li>There is a 'load sub-category' button the user can select to re-load the page. We will hide this button with a &lt;noscript&gt; tag in our demo.</li>
-</ol>
+1. When the page is loaded, the sub-category is loaded (if the top level has a selected item).
+2. There is a 'load sub-category' button the user can select to re-load the page. We will hide this button with a `&lt;noscript&gt;` tag in our demo.
 
 ## The Code
 
@@ -87,21 +85,23 @@ There are 4 parts to this demo.
 
 This is just a simple example, but it should be obvious that you can expand this to go off to a database and return an object in a JSON data structure:
 
-    <?php
-    if ($_GET['id'] == 1) {
-      echo <<<HERE_DOC
-        [ {"optionValue": 0, "optionDisplay": "Mark"}, {"optionValue":1, "optionDisplay": "Andy"}, {"optionValue":2, "optionDisplay": "Richard"}]
-    HERE_DOC;
-    } else if ($_GET['id'] == 2) {
-      echo <<<HERE_DOC
-        [{"optionValue":10, "optionDisplay": "Remy"}, {"optionValue":11, "optionDisplay": "Arif"}, {"optionValue":12, "optionDisplay": "JC"}]
-    HERE_DOC;
-    } else if ($_GET['id'] == 3) {
-      echo <<<HERE_DOC
-        [{"optionValue":20, "optionDisplay": "Aidan"}, {"optionValue":21, "optionDisplay":"Russell"}]
-    HERE_DOC;
-    }
-    ?>
+```php
+<?php
+if ($_GET['id'] == 1) {
+  echo <<<HERE_DOC
+    [ {"optionValue": 0, "optionDisplay": "Mark"}, {"optionValue":1, "optionDisplay": "Andy"}, {"optionValue":2, "optionDisplay": "Richard"}]
+HERE_DOC;
+} else if ($_GET['id'] == 2) {
+  echo <<<HERE_DOC
+    [{"optionValue":10, "optionDisplay": "Remy"}, {"optionValue":11, "optionDisplay": "Arif"}, {"optionValue":12, "optionDisplay": "JC"}]
+HERE_DOC;
+} else if ($_GET['id'] == 3) {
+  echo <<<HERE_DOC
+    [{"optionValue":20, "optionDisplay": "Aidan"}, {"optionValue":21, "optionDisplay":"Russell"}]
+HERE_DOC;
+}
+?>
+```
 
 <small>Note that this is not accessible. To ensure accessibility, the server side will handle the pre-population of the select boxes as the page is loaded. Here is an example (excluding the headers, footers and JavaScript) of the <a href="/images/select.php.txt">accessible example</a>.</small>
 
@@ -162,7 +162,7 @@ $(function(){
 
 ### Where to take it next
 
-<p>So that's the primer. Next steps: upgrade, integrate, extend and stylise. Below is an example of the category selection when submitting an item for sale on Ebay.</p>
+So that's the primer. Next steps: upgrade, integrate, extend and stylise. Below is an example of the category selection when submitting an item for sale on Ebay.
 
 ![Ebay Category Selection](/images/ebay_categories.gif)
 

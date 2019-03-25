@@ -17,7 +17,6 @@ To follow on from [Auto-populating Select Boxes using jQuery & AJAX](/2007/01/20
 
 In response, I've written a jQuery plugin and have included a simple example of three select boxes populating each other driven by a MySQL database.
 
-
 <!--more-->
 
 ## Download
@@ -49,10 +48,12 @@ You should keep in mind this demo was written quickly, and I would never normall
 
 ## Usages / Config
 
-<pre><code>$('#categorySelect').selectChain({
-    target: $('#childCategorySelect'),
-    url: 'update-options.php'
-});</code></pre>
+```js
+$('#categorySelect').selectChain({
+  target: $('#childCategorySelect'),
+  url: 'update-options.php'
+});
+```
 
 ### Required
 

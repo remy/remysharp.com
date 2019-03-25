@@ -24,15 +24,16 @@ The way that I have solved this problem in the past (being a developer), either 
 
 For example (in PHP):
 
-    $selected = Array('articles' => ' class="selected"');
+```php
+$selected = Array('articles' => ' class="selected"');
 
-    foreach ($links as $link)
-    {
-      echo '<a href="' . $link->href . '" ' .
-        $selected[$link->name] . '>' .
-        $link->name . '</a>';
-    }
-
+foreach ($links as $link)
+{
+  echo '<a href="' . $link->href . '" ' .
+    $selected[$link->name] . '>' .
+    $link->name . '</a>';
+}
+```
 
 ## The New Solution
 
@@ -42,48 +43,54 @@ In this solution, you create all the <abbr title="Hyper Text Markup Language">HT
 
 ### Prerequisites
 
-1.  You are happy that when we don't have JavaScript enabled, the navigation doesn't highlight. I justify this by the simple fact as users, we're more interested in the page content, than which page link is highlighted.
-2.  The navigation sits cleanly in one DIV under one ID.
+1. You are happy that when we don't have JavaScript enabled, the navigation doesn't highlight. I justify this by the simple fact as users, we're more interested in the page content, than which page link is highlighted.
+2. The navigation sits cleanly in one DIV under one ID.
 
 ### The Code
 
 Notice that this is we've done away with our backend solution altogether.
 
-    <h3>Info</h3>
-    <ul id="sidebar_content">
-      <li><a href="/info/news">News</a></li>
-      <li><a href="/info/articles">Articles</a></li>
-      <li><a href="/info/resources">Resources</a></li>
-      <li><a href="/info/about">About</a></li>
-    </ul>
+```html
+<h3>Info</h3>
+<ul id="sidebar_content">
+  <li><a href="/info/news">News</a></li>
+  <li><a href="/info/articles">Articles</a></li>
+  <li><a href="/info/resources">Resources</a></li>
+  <li><a href="/info/about">About</a></li>
+</ul>
+```
 
 Now we add our dash of JavaScript spice...
 
-    function select_nav() {
-      var nav_links = document.getElementById('sidebar_content').getElementsByTagName('a');
-      var selected = location.pathname;
+```js
+function select_nav() {
+  var nav_links = document.getElementById('sidebar_content').getElementsByTagName('a');
+  var selected = location.pathname;
 
-      for (var i = 0; i < nav_links.length; i++) {
-        var link = nav_links[i].pathname;
-        if (link.substring(0, 1) != '/') link = '/' + link; // fiddle IE's view of the link
-        if (link == selected) nav_links[i].setAttribute(cattr, 'selected');
-      }
-    }
+  for (var i = 0; i < nav_links.length; i++) {
+    var link = nav_links[i].pathname;
+    if (link.substring(0, 1) != '/') link = '/' + link; // fiddle IE's view of the link
+    if (link == selected) nav_links[i].setAttribute(cattr, 'selected');
+  }
+}
 
-    window.onload = function() {
-      select_nav();
-    };
+window.onload = function() {
+  select_nav();
+};
+```
 
 ...and Bob's your father's brother. The link will automatically select itself.
 
 For those of you using [jQuery](http://www.jquery.com), here's the same solution, but on a lot less lines (you've got hand it to those jQuery chaps):
 
-    $(function(){ if (location.pathname.substring(1))
-      $('#sidebar_content a[@href$="' + location.pathname.substring(1) + '"]')
-        .attr('class', 'selected')
-    });
+```js
+$(function(){ if (location.pathname.substring(1))
+  $('#sidebar_content a[@href$="' + location.pathname.substring(1) + '"]')
+    .attr('class', 'selected')
+});
+```
 
-Updated 25th Sep '06 - with thanks to Kevin, Fallo and Steve.
+_Updated 25th Sep '06 - with thanks to Kevin, Fallo and Steve._
 
 Note: the `a[@href$=` part is saying that any anchor tag whose "href" attribute value ends exactly with the string `location.pathname.substring(1)`.
 
