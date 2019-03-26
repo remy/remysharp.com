@@ -15,5 +15,6 @@ block content
             a(href=`/${current.source}`)= altTitle
 
         .post-content
+          block body
           - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
           != yield

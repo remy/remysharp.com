@@ -1,0 +1,6 @@
+---
+layout: false
+permalink: /js/search-data.js
+---
+
+| var searchData = !{ JSON.stringify(collections.blog.map(_ => Object.assign({}, { url: _.url, date: _.data.date, title: _.data.title, text: collections.squash(_.output) }))) };

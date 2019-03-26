@@ -2,8 +2,14 @@ var $results = $('#search-results');
 var $for = $('#for');
 var template = $('#result-template').html();
 
+// 6 months ago
+var recently = new Date(Date.now() - 1000 * 60 * 60 * 24 * 84)
+  .toJSON()
+  .replace(/Z/, '')
+  .replace(/\..*$/, '');
+
 function clean(s) {
-  return decodeURIComponent(s).replace(/[<>]/g, function (s) {
+  return decodeURIComponent(s).replace(/[<>]/g, function(s) {
     return {
       '<': '&lt;',
       '>': '&gt;',
@@ -11,51 +17,72 @@ function clean(s) {
   });
 }
 
-$('form.search').on('submit', function (event) {
+function search() {
+  var val = $for.val();
+  find(encodeURIComponent(val), val);
+}
+
+$('form.search').on('submit', function(event) {
   event.preventDefault();
-  var val = $(this).find('input[type="text"]').val();
-  $for.val(val);
-  find(encodeURIComponent(val));
+  search();
 });
 
+$for.on('input', search);
+
 if (window.location.search) {
-  var q = window.location.search.substr(1).split('=').pop()
+  var q = window.location.search
+    .substr(1)
+    .split('=')
+    .pop();
   $for.val(clean(q));
   find(q);
 }
 
-function find(query) {
+function find(queryString, query) {
   $results.html('<li>Searching...</li>');
 
-  window.history.pushState(null, query, '/search?q=' + query);
+  window.history.replaceState(null, query, '/search.html?q=' + queryString);
 
-  fetch('/search?q=' + query, {
-    cors: true,
-    method: 'post',
-    headers: {
-      'content-type': 'application/json',
-    },
-  }).then(function (res) {
-    if (res.status >= 400) {
-      throw new Error('Bad response from server: ' + res.status);
-    }
+  const re = new RegExp(query, 'ig');
+  const res = window.searchData
+    .map(post => {
+      let count = (post.text.match(re) || []).length;
 
-    return res.json();
-  }).catch(function (error) {
-    return [];
-  }).then(function (data) {
-    if (data.length === 0) {
-      throw new Error('No results found for "' + $for.val()  + '"');
-    }
-    return data;
-  }).then(function (data) {
-    var html = data.map(function (res) {
-      return interpolate(template, res);
-    }).join('');
-    $results.html(html);
-  }).catch(function (error) {
-    $results.html('<li>' + error.message + '</li>');
-  });
+      if (count < 5) {
+        // count = 1;
+      } else {
+        count += 25;
+      }
+
+      if (post.title.toLowerCase().includes(query)) {
+        count += 100;
+      }
+
+      if (count) {
+        if (post.data < recently) {
+          count += 1000;
+        }
+        return { count, ...post };
+      }
+      return false;
+    })
+    .filter(Boolean);
+
+  if (res.length === 0) {
+    $results.html('No results found for "' + $for.val() + '"');
+    return;
+  }
+  var html = (!query ? window.searchData : res)
+    .sort((a, b) => {
+      if (a.count === b.count) {
+        return a.date > b.date ? -1 : 1;
+      }
+      return a.count < b.count ? 1 : -1;
+    })
+    .slice(0, 10)
+    .map(res => interpolate(template, res))
+    .join('');
+  $results.html(html);
 }
 
 // note: exporter is the object constructor, not an instance
@@ -64,11 +91,11 @@ function interpolate(string, values) {
     values = {};
   }
 
-  return (string || '').replace(/({{.*?}})/g, function (all, match) {
+  return (string || '').replace(/({{.*?}})/g, function(all, match) {
     var key = match.slice(2, -2); // ditch the wrappers
     var parts = key.split('|').map(trim);
     // exit function with interpolate string through functions
-    return parts.reduce(function (prev, curr) {
+    return parts.reduce(function(prev, curr) {
       var value = pluck(curr, values);
       if (value) {
         prev = value;
@@ -82,7 +109,7 @@ function interpolate(string, values) {
 
 function pluck(path, values) {
   path = path.split('.');
-  return path.reduce(function (prev, curr) {
+  return path.reduce(function(prev, curr) {
     if (prev && prev[curr]) {
       return prev[curr];
     }

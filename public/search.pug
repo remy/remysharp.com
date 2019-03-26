@@ -1,3 +1,6 @@
+script(src="/js/search-data.js")
+script(defer src="/js/search.js")
+
 h1 Search
 
 form.search
@@ -8,9 +11,5 @@ ul#search-results
 
 script#result-template(type="template")
   |<li>
-  |  <a href="{{url}}">{{title}}</a> <small class="date">{{date}}</small>
-  |  <div class="search-result">{{highlight}}</div>
+  |  <a href="{{url}}">{{title}}</a> <small class="date">{{date}}</small> ({{count}})
   |</li>
-
-script(src="https://cdn.polyfill.io/v1/polyfill.min.js?features=fetch")
-script(defer src="/js/search.js")
