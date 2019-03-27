@@ -1,11 +1,14 @@
 {
   "lang": "en",
+  "short_name": "rem's b:blog",
   "name": "rem's b:log",
-  "icons": [{
+  "icons": [
+    {
       "src": "/images/remy-2014-twitter.png",
       "sizes": "300x300",
       "type": "image/png"
-  }],
+    }
+  ],
   "start_url": "/",
   "display": "browser",
   "background_color": "#1A1A1A",
