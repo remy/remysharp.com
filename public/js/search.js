@@ -1,158 +1,156 @@
-/* eslint-env jquery, browser */
-var $results = $('#search-results');
-var $for = $('#for');
-var template = $('#result-template').html();
+/* eslint-env browser */
 
-var months = [
-  'Jan',
-  'Feb',
-  'Mar',
-  'Apr',
-  'May',
-  'Jun',
-  'Jul',
-  'Aug',
-  'Sep',
-  'Oct',
-  'Nov',
-  'Dec',
-];
+(() => {
+  const $ = (s, context = document) => context.querySelector(s);
 
-// 6 months ago
-var sixMonthsAgo = Date.now() - 1000 * 60 * 60 * 24 * 84;
-var recently = new Date(sixMonthsAgo)
-  .toJSON()
-  .replace(/Z/, '')
-  .replace(/\..*$/, '');
+  var $results = $('#search-results');
+  var $for = $('#for');
+  var template = $('#result-template').innerHTML;
 
-function clean(s) {
-  return decodeURIComponent(s).replace(/[<>]/g, () => {
-    return {
-      '<': '&lt;',
-      '>': '&gt;',
-    };
-  });
-}
+  var months = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec',
+  ];
 
-function search() {
-  var val = $for.val().trim();
-  find(encodeURIComponent(val), val);
-}
+  function clean(s) {
+    return decodeURIComponent(s).replace(/[<>]/g, () => {
+      return {
+        '<': '&lt;',
+        '>': '&gt;',
+      };
+    });
+  }
 
-$('form.search').on('submit', function(event) {
-  event.preventDefault();
-  search();
-});
+  function search() {
+    var val = $for.value.trim();
+    find(encodeURIComponent(val), val);
+  }
 
-$for.on('input', search);
+  $('form.search').onsubmit = function(event) {
+    event.preventDefault();
+    search();
+  };
 
-if (window.location.search) {
-  var q = window.location.search
-    .substr(1)
-    .split('=')
-    .pop();
-  $for.val(clean(q));
-  search();
-}
+  $for.oninput = search;
 
-function find(queryString, query) {
-  $results.html('<li>Searching...</li>');
+  if (window.location.search) {
+    var q = window.location.search
+      .substr(1)
+      .split('=')
+      .pop();
+    $for.value = clean(q);
+    search();
+  }
 
-  window.history.replaceState(null, query, '/search.html?q=' + queryString);
+  function find(queryString, query) {
+    $results.innerHTML = '<li>Searching...</li>';
 
-  const re = new RegExp(query.replace(/\s+/g, '|'), 'ig');
-  query = query.split(/\s+/);
+    window.history.replaceState(null, query, '/search.html?q=' + queryString);
 
-  const res = window.searchData
-    .map(post => {
-      if (query[0] === '') {
-        return post;
-      }
-      let count = 0;
-      const matches = post.text.match(re) || [];
+    const re = new RegExp(query.replace(/\s+/g, '|'), 'ig');
+    query = query.split(/\s+/);
 
-      matches.forEach(m => (count += m.length < 5 ? 1 : m.length));
-
-      const urlMatches =
-        post.url
-          .split('/')
-          .pop()
-          .match(re) || [];
-
-      urlMatches.forEach(m => (count += 100 * m.length));
-
-      const titleMatches = post.title.toLowerCase().match(re) || [];
-
-      titleMatches.forEach(m => (count += 100 * m.length));
-
-      if (count) {
-        if (count > 100) {
-          const d = new Date(post.date).getTime();
-          const yearsAgo = (Date.now() - d) / 1000 / 60 / 60 / 24 / 365;
-          count += 100 / yearsAgo;
+    const res = window.searchData
+      .map(post => {
+        if (query[0] === '') {
+          return post;
         }
-        return { count, ...post };
-      }
-      return false;
-    })
-    .filter(Boolean);
+        let count = 0;
+        const matches = post.text.match(re) || [];
 
-  if (res.length === 0) {
-    $results.html('No results found for "' + $for.val() + '"');
-    return;
-  }
-  var html = (!query ? window.searchData : res)
-    .sort((a, b) => {
-      if (a.count === b.count) {
-        return a.date > b.date ? -1 : 1;
-      }
-      return a.count < b.count ? 1 : -1;
-    })
-    .slice(0, 10)
-    .map(res => {
-      const d = new Date(res.date);
-      res.niceDate = `${d.getDate()}-${
-        months[d.getMonth()]
-      } ${d.getFullYear()}`;
-      return res;
-    })
-    .map(res => interpolate(template, res))
-    .join('');
-  $results.html(html);
-}
+        matches.forEach(m => (count += m.length < 5 ? 1 : m.length));
 
-// note: exporter is the object constructor, not an instance
-function interpolate(string, values) {
-  if (!values) {
-    values = {};
-  }
+        const urlMatches =
+          post.url
+            .split('/')
+            .pop()
+            .match(re) || [];
 
-  return (string || '').replace(/({{.*?}})/g, function(all, match) {
-    var key = match.slice(2, -2); // ditch the wrappers
-    var parts = key.split('|').map(trim);
-    // exit function with interpolate string through functions
-    return parts.reduce(function(prev, curr) {
-      var value = pluck(curr, values);
-      if (value) {
-        prev = value;
-      } else if (typeof interpolate[curr] === 'function') {
-        prev = interpolate[curr](prev);
-      }
-      return prev;
-    }, '');
-  });
-}
+        urlMatches.forEach(m => (count += 100 * m.length));
 
-function pluck(path, values) {
-  path = path.split('.');
-  return path.reduce(function(prev, curr) {
-    if (prev && prev[curr]) {
-      return prev[curr];
+        const titleMatches = post.title.toLowerCase().match(re) || [];
+
+        titleMatches.forEach(m => (count += 100 * m.length));
+
+        if (count) {
+          if (count > 100) {
+            const d = new Date(post.date).getTime();
+            const yearsAgo = (Date.now() - d) / 1000 / 60 / 60 / 24 / 365;
+            count += 100 / yearsAgo;
+          }
+          return { count, ...post };
+        }
+        return false;
+      })
+      .filter(Boolean);
+
+    if (res.length === 0) {
+      $results.innerHTML = 'No results found for "' + $for.value + '"';
+      return;
     }
-    return undefined;
-  }, values);
-}
+    var html = (!query ? window.searchData : res)
+      .sort((a, b) => {
+        if (a.count === b.count) {
+          return a.date > b.date ? -1 : 1;
+        }
+        return a.count < b.count ? 1 : -1;
+      })
+      .slice(0, 10)
+      .map(res => {
+        const d = new Date(res.date);
+        res.niceDate = `${d.getDate()}-${
+          months[d.getMonth()]
+        } ${d.getFullYear()}`;
+        return res;
+      })
+      .map(res => interpolate(template, res))
+      .join('');
+    $results.innerHTML = html;
+  }
 
-function trim(s) {
-  return s.trim();
-}
+  // note: exporter is the object constructor, not an instance
+  function interpolate(string, values) {
+    if (!values) {
+      values = {};
+    }
+
+    return (string || '').replace(/({{.*?}})/g, function(all, match) {
+      var key = match.slice(2, -2); // ditch the wrappers
+      var parts = key.split('|').map(trim);
+      // exit function with interpolate string through functions
+      return parts.reduce(function(prev, curr) {
+        var value = pluck(curr, values);
+        if (value) {
+          prev = value;
+        } else if (typeof interpolate[curr] === 'function') {
+          prev = interpolate[curr](prev);
+        }
+        return prev;
+      }, '');
+    });
+  }
+
+  function pluck(path, values) {
+    path = path.split('.');
+    return path.reduce(function(prev, curr) {
+      if (prev && prev[curr]) {
+        return prev[curr];
+      }
+      return undefined;
+    }, values);
+  }
+
+  function trim(s) {
+    return s.trim();
+  }
+})();

@@ -156,7 +156,7 @@ kbd {
 }
 
 code,
-code[class*="language-"] {
+code[class*='language-'] {
   font-family: @code-font;
   background: #f3f3f3;
   padding: 2px;
@@ -165,8 +165,8 @@ code[class*="language-"] {
 }
 
 // resetting prism
-code[class*="language-"],
-pre[class*="language-"] {
+code[class*='language-'],
+pre[class*='language-'] {
   font-family: @code-font;
   background: #f3f3f3;
   text-shadow: none;
@@ -182,7 +182,7 @@ a:focus code {
 }
 
 pre code,
-pre[class*="language-"] code {
+pre[class*='language-'] code {
   color: @code-foreground;
   background: @code-background;
   padding: 0.5em;
@@ -190,7 +190,7 @@ pre[class*="language-"] code {
 }
 
 pre,
-pre[class*="language-"] {
+pre[class*='language-'] {
   padding: 0 0.2em;
   font-family: @code-font;
   margin: 10px 0;
@@ -255,15 +255,27 @@ ul {
   list-style: square;
 }
 
-article.post li {
-  padding-left: 8px;
-  margin: 4px 0px 4px 22px;
-  font-size: 95%;
-  line-height: 1.4rem;
+article.post {
+  h1:first-of-type {
+    small {
+     display: none;
+    }
 
-  &.checkbox {
-    input[type='checkbox'] {
-      margin: 8px 11px 8px -30px;
+    &:hover small {
+      display: inline;
+    }
+  }
+
+  li {
+    padding-left: 8px;
+    margin: 4px 0px 4px 22px;
+    font-size: 95%;
+    line-height: 1.4rem;
+
+    &.checkbox {
+      input[type='checkbox'] {
+        margin: 8px 11px 8px -30px;
+      }
     }
   }
 }
@@ -547,7 +559,8 @@ small.edit a:focus {
   opacity: 0.5;
 }
 
-time.date, small.date {
+time.date,
+small.date {
   font-size: 75%;
   // margin-left: 10px;
 }
@@ -714,7 +727,6 @@ ul li.donate {
       background-position: -3519px 0;
       transition: background 1s steps(55);
     }
-
 
     img {
       opacity: 0.7;
@@ -1096,7 +1108,7 @@ details summary:after {
   margin: 0 auto;
   display: block;
 
-  &> img {
+  & > img {
     margin: 0 auto;
     display: block;
   }
@@ -1125,7 +1137,8 @@ a.plain {
   color: inherit;
   border-bottom: 0;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     // color: white;
     background: none;
     text-decoration: underline;
@@ -1220,7 +1233,7 @@ ul.inline {
   }
 }
 
-img[title^="Sample"] {
+img[title^='Sample'] {
   border-radius: 2px;
 }
 
@@ -1302,7 +1315,6 @@ img[title^="Sample"] {
 
 @import (less) 'form.less';
 
-
 // .hljs {
 //   background: transparent;
 // }
@@ -1320,7 +1332,7 @@ img[title^="Sample"] {
 // for christmas ;-)
 
 #index-page.month-december h1.title:before {
-  content:'';
+  content: '';
   background: url(/images/santa-hat.png) no-repeat;
   background-size: contain;
   position: absolute;
@@ -1336,7 +1348,6 @@ img[title^="Sample"] {
   }
 }
 
-
 .review-image {
   float: right;
   margin-bottom: 10px;
@@ -1351,6 +1362,20 @@ img[title^="Sample"] {
 
 #search-results {
   padding-left: 0;
+}
+
+.video {
+  position: relative;
+  padding-top: 62%;
+  height: 0;
+
+  iframe, video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%
+  }
 }
 
 @import 'twitter.less';

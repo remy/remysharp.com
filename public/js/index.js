@@ -1,4 +1,3 @@
-/*global $,hljs*/
 /* eslint-env browser */
 'use strict';
 var comments = document.getElementById('disqus_thread');
@@ -6,14 +5,13 @@ var disqusLoaded = false;
 
 var prompt = '<span class="bash-prompt">$ </span>';
 
-$('code.language-bash, code.language-sh, code.language-shell').each(function() {
-  var el = this;
+const $$ = (s, context = document) => Array.from(context.querySelectorAll(s));
+const $ = (s, context = document) => context.querySelector(s) || {};
 
+$$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
   el.innerHTML = el.textContent
     .split('\n') // break into individual lines
-    .map(function(line) {
-      return line.replace(/^\$ /, prompt);
-    })
+    .map(line => line.replace(/^\$ /, prompt))
     .join('\n'); // join the lines back up
 });
 
@@ -55,38 +53,40 @@ function flickrURL(photo) {
 }
 
 function loadFlickr() {
-  $.getJSON(
-    'https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=ac349179dc54279b846089f60586c263&user_id=38257258%40N00&per_page=12&format=json&jsoncallback=?',
-    function(data) {
-      var photos = data.photos.photo;
-      var total = 9;
+  var script = document.createElement('script');
+  script.src =
+    'https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=ac349179dc54279b846089f60586c263&user_id=38257258%40N00&per_page=12&format=json&jsoncallback=flickrCallback';
 
-      var $ul = $('ul.flickr');
+  window.flickrCallback = function(data) {
+    var photos = data.photos.photo;
+    var total = 9;
 
-      photos.forEach(function(photo) {
-        var img = new Image();
-        img.src = flickrURL(photo);
-        img.onload = function() {
-          if (total === 0) {
-            return;
-          }
+    var $ul = $('ul.flickr');
 
-          total--;
-          var $link = $(
-            '<a title="' +
-              photo.title +
-              '" href="http://www.flickr.com/photos/remysharp/' +
-              photo.id +
-              '">'
-          ).append(this);
+    photos.forEach(function(photo) {
+      var img = new Image();
+      img.src = flickrURL(photo);
+      img.onload = function() {
+        if (total === 0) {
+          return;
+        }
 
-          $('<li>')
-            .append($link)
-            .appendTo($ul);
-        };
-      });
-    }
-  );
+        total--;
+        var $link =
+          '<li><a title="' +
+          photo.title +
+          '" href="http://www.flickr.com/photos/remysharp/' +
+          photo.id +
+          '"></li>';
+
+        $ul.innerHTML += $link;
+        var links = $$('a', $ul);
+        links[links.length - 1].appendChild(this);
+      };
+    });
+  };
+
+  document.body.appendChild(script);
 }
 
 if (window.location.hash.indexOf('#comments') > 0) {
@@ -94,22 +94,20 @@ if (window.location.hash.indexOf('#comments') > 0) {
 }
 
 var searchOpen = false;
-$('#search').on('click', function(e) {
+var searchForm = $('#inline-search');
+$('#search').onclick = function(e) {
   e.preventDefault();
   searchOpen = false;
-  if (
-    $('form.search')
-      .toggleClass('show')
-      .hasClass('show')
-  ) {
-    $('form.search:first input[type="text"]').focus();
+  searchForm.classList.toggle('show');
+  if (searchForm.classList.contains('show')) {
+    $('input[type="text"]', searchForm).focus();
     searchOpen = true;
   } else {
-    $('form.search:first input[type="text"]').blur();
+    $('input[type="text"]', searchForm).blur();
   }
-});
+};
 
-$('body').on('keydown', function(event) {
+$('body').onkeydown = function(event) {
   if (event.which === 80 && event.altKey) {
     localStorage.plain = localStorage.plain == 1 ? 0 : 1;
     if (localStorage.plain == 1) {
@@ -128,7 +126,7 @@ $('body').on('keydown', function(event) {
 
     $('#search').click();
   }
-});
+};
 
 // try {
 //   if (localStorage.plain) {
@@ -147,38 +145,46 @@ if (comments) {
   };
 }
 
-if ($('#index-page').length) {
+if ($('#index-page')) {
   loadFlickr();
 }
 
 if (document.body.id.indexOf('blog-') === 0) {
-  var $h1First = $('h1:first');
-  var $edit = $(
-    '<small class="edit"><a href="' +
-      $h1First.data('edit') +
-      '">(edit)</a></small>'
-  );
+  var h1First = $('h1');
+  var html = `<small class="edit"><a href="${
+    h1First.dataset.edit
+  }">(edit)</a></small>`;
 
-  if ($edit.length) {
-    // this is daft, but it prevents Google from including [edit] in the
-    // post title...
-    var $h1 = $('h1:first').hover(
-      function() {
-        $h1.append($edit);
-      },
-      function() {
-        $edit.remove();
-      }
-    );
-  }
+  h1First.onmouseover = () => {
+    h1First.innerHTML += html;
+    h1First.onmouseover = null;
+  };
 }
 
-$('.post').fitVids();
+const fitVidSelector = [
+  "iframe[src*='player.vimeo.com']",
+  "iframe[src*='youtube.com']",
+  "iframe[src*='youtube-nocookie.com']",
+  "iframe[src*='kickstarter.com'][src*='video.html']",
+  'video',
+  'object',
+  'embed',
+].join(',');
+
+$$(fitVidSelector).forEach(el => {
+  var wrapper = document.createElement('div');
+  wrapper.classList.add('video');
+
+  // insert wrapper before el in the DOM tree
+  el.parentNode.insertBefore(wrapper, el);
+
+  // move el into wrapper
+  wrapper.appendChild(el);
+});
 
 // sorry, knarly and lazy code, but it does the job.
-$('.runnable').each(function() {
+$$('.runnable').forEach(function(pre) {
   var button = $('<button class="button">run</button>');
-  var pre = this;
   var iframe = null;
   $(this).after(button);
   var running = false;
