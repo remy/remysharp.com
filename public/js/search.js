@@ -19,7 +19,8 @@ var months = [
 ];
 
 // 6 months ago
-var recently = new Date(Date.now() - 1000 * 60 * 60 * 24 * 84)
+var sixMonthsAgo = Date.now() - 1000 * 60 * 60 * 24 * 84;
+var recently = new Date(sixMonthsAgo)
   .toJSON()
   .replace(/Z/, '')
   .replace(/\..*$/, '');
@@ -59,31 +60,36 @@ function find(queryString, query) {
 
   window.history.replaceState(null, query, '/search.html?q=' + queryString);
 
-  const re = new RegExp(query, 'ig');
+  const re = new RegExp(query.replace(/\s+/g, '|'), 'ig');
+  query = query.split(/\s+/);
+
   const res = window.searchData
     .map(post => {
-      let count = (post.text.match(re) || []).length;
-
-      if (count >= 5) {
-        count += 25;
+      if (query[0] === '') {
+        return post;
       }
+      let count = 0;
+      const matches = post.text.match(re) || [];
 
-      if (
+      matches.forEach(m => (count += m.length < 5 ? 1 : m.length));
+
+      const urlMatches =
         post.url
           .split('/')
           .pop()
-          .includes(query)
-      ) {
-        count += 100;
-      }
+          .match(re) || [];
 
-      if (post.title.toLowerCase().includes(query)) {
-        count += 100;
-      }
+      urlMatches.forEach(m => (count += 100 * m.length));
+
+      const titleMatches = post.title.toLowerCase().match(re) || [];
+
+      titleMatches.forEach(m => (count += 100 * m.length));
 
       if (count) {
-        if (post.data < recently) {
-          count += 1000;
+        if (count > 100) {
+          const d = new Date(post.date).getTime();
+          const yearsAgo = (Date.now() - d) / 1000 / 60 / 60 / 24 / 365;
+          count += 100 / yearsAgo;
         }
         return { count, ...post };
       }

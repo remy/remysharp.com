@@ -39,7 +39,9 @@ There are three simple steps to fixing UTW in 2.2 - which I've summarised from [
 2. Search and replace is\_tag with UTW\_is\_tag in all the files in your active theme directory.
 3. If you use '/tag/mytag' as your link structure - ensure you have the following in your .htaccess:
 
-`RewriteRule ^tag/(.*)$ /index.php?tag=$1 [QSA,L]`
+```
+RewriteRule ^tag/(.*)$ /index.php?tag=$1 [QSA,L]
+```
 
 ## Tag Support for TextMate
 
@@ -53,7 +55,7 @@ You need to backup a copy of your xmlrpc.php file.  That's just good practice.
 
 ### Download patch XMLRPC
 
-<p>On <a href="/2006/10/01/wordpress-tagging-and-textmate/#comment-154">Dan's suggestion</a>, I am <a href="/images/xmlrpc.php.txt">offering my own xmlrpc.php</a> file for you to use.</p>
+On [Dan's suggestion](/2006/10/01/wordpress-tagging-and-textmate/#comment-154), I am [offering my own xmlrpc.php](/images/xmlrpc.php.txt) file for you to use.
 
 This is the xmlrpc for WordPress 2.2.  For WordPress 2.0 - see my earlier post on getting [tagging working in Wordpress 2.0](/2006/10/01/wordpress-tagging-and-textmate/)
 

@@ -16,7 +16,7 @@ I am now, officially, the director of Left Logic Ltd.  The company formed on the
 
 <!--more-->
 
-This is an exciting period for me - but equally as frightening.  We've ([the Wife and I](/index.php/about)) got our new flat on the horizon, which means, obviously, a mortgage, and if my business does me well, I will finally leave the 'permanent job' nest...well - one day perhaps!
+This is an exciting period for me - but equally as frightening.  We've ([the Wife and I](/about)) got our new flat on the horizon, which means, obviously, a mortgage, and if my business does me well, I will finally leave the 'permanent job' nest...well - one day perhaps!
 
 My next steps, aside from finding new clients (on the off chance - visit [Left Logic](http://leftlogic.com) and get in touch!) the next steps are:
 
