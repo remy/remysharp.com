@@ -55,7 +55,7 @@
   function find(queryString, query) {
     $results.innerHTML = '<li>Searching...</li>';
 
-    window.history.replaceState(null, query, '/search.html?q=' + queryString);
+    window.history.replaceState(null, query, '/search?q=' + queryString);
 
     const re = new RegExp(query.replace(/\s+/g, '|'), 'ig');
     query = query.split(/\s+/);
