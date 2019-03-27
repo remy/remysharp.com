@@ -66,6 +66,7 @@ function loadFlickr() {
     photos.forEach(function(photo) {
       var img = new Image();
       img.src = flickrURL(photo);
+      img.setAttribute('alt', 'Photo of ' + photo.title);
       img.onload = function() {
         if (total === 0) {
           return;
@@ -73,15 +74,14 @@ function loadFlickr() {
 
         total--;
         var $link =
-          '<li><a title="' +
-          photo.title +
-          '" href="http://www.flickr.com/photos/remysharp/' +
+          '<li><a href="http://www.flickr.com/photos/remysharp/' +
           photo.id +
           '"></li>';
 
         $ul.innerHTML += $link;
         var links = $$('a', $ul);
-        links[links.length - 1].appendChild(this);
+        var last = links[links.length - 1];
+        last.appendChild(this);
       };
     });
   };
