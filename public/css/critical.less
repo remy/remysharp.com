@@ -401,9 +401,10 @@ h2.title {
 nav {
   form.search {
     height: 0;
-    padding: 0px;
+    padding: 0px 10px;
     position: relative;
     overflow: hidden;
+    display: flex;
     .transition(height, 50ms, ease-in-out);
 
     &.show {
@@ -412,17 +413,13 @@ nav {
 
     input[type='text'] {
       // position: absolute;
-      width: 80%;
       border: 0;
-      margin: 10px;
+      flex-grow: 1;
     }
     input[type='submit'] {
-      margin: 10px;
       background: #ccc;
-      position: absolute;
-      width: 20%;
-      right: 0;
       border: 0;
+      padding: 0 3%;
     }
   }
 }

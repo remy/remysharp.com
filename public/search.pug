@@ -11,5 +11,5 @@ ul#search-results
 
 script#result-template(type="template")
   |<li>
-  |  <a href="{{url}}">{{title}}</a> <small class="date">{{date}}</small><!-- weight {{count}} -->
+  |  <a href="{{url}}">{{title}}</a> <time datetime="{{date}}" class="date">{{niceDate}}</time><!-- weight {{count}} -->
   |</li>

@@ -75,7 +75,7 @@ else
 
         ga('create', '#{analytics}', 'auto');
         ga('send', 'pageview');
-    body(id=`${current.path.join('-')}-page`)
+    body(id=`${current.path.join('-')}-page` class=`month-${moment().format('MMMM').toLowerCase()}`)
       include page-nav
 
       block content

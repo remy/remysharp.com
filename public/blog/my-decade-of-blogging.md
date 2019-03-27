@@ -39,15 +39,15 @@ By 2014, I finally got off my derriere and completely wrote my blogging platform
 I've run some analysis from the stats on Google Analytics (which I think I had from day one), and below are 10 of the most read posts I've written (based on relative views):
 
 1. [Auto-populating Select Boxes using jQuery & AJAX](/2007/01/20/auto-populating-select-boxes-using-jquery-ajax) (Jan 2007, 1m views)
-- [HTML5 enabling script](/2009/01/07/html5-enabling-script) (Jan 2009, 600k views)
-- [The toxic side of free. Or: how I lost the love for my side project](/2015/09/14/jsbin-toxic-part-1) (Sept 2015, 129k views across the series)
-- [What is a Polyfill?](/2010/10/08/what-is-a-polyfill) (Oct 2010, 320k views)
-- [The Art of Debugging](/2015/10/14/the-art-of-debugging) (Oct 2015, 44k views)
-- [Why I love working with the web](/2016/01/20/why-i-love-working-with-the-web) (Jan 2016, 16k views)
-- [My Workflow: Never having to leave DevTools](/2012/12/21/my-workflow-never-having-to-leave-devtools) (Dec 2012, 60k views)
-- [My terminal setup](/2013/07/25/my-terminal-setup) (Aug 2013, 46k views)
-- [I know jQuery. Now what?](/2013/04/19/i-know-jquery-now-what) (Apr 2013, 48k views)
-- [Signs of a poorly written jQuery plugin](/2010/06/03/signs-of-a-poorly-written-jquery-plugin) (Jun 2010, 86k views)
+2. [HTML5 enabling script](/2009/01/07/html5-enabling-script) (Jan 2009, 600k views)
+3. [The toxic side of free. Or: how I lost the love for my side project](/2015/09/14/jsbin-toxic-part-1) (Sept 2015, 129k views across the series)
+4. [What is a Polyfill?](/2010/10/08/what-is-a-polyfill) (Oct 2010, 320k views)
+5. [The Art of Debugging](/2015/10/14/the-art-of-debugging) (Oct 2015, 44k views)
+6. [Why I love working with the web](/2016/01/20/why-i-love-working-with-the-web) (Jan 2016, 16k views)
+7. [My Workflow: Never having to leave DevTools](/2012/12/21/my-workflow-never-having-to-leave-devtools) (Dec 2012, 60k views)
+8. [My terminal setup](/2013/07/25/my-terminal-setup) (Aug 2013, 46k views)
+9. [I know jQuery. Now what?](/2013/04/19/i-know-jquery-now-what) (Apr 2013, 48k views)
+10. [Signs of a poorly written jQuery plugin](/2010/06/03/signs-of-a-poorly-written-jquery-plugin) (Jun 2010, 86k views)
 
 ## Proudest aspects of my blog
 

@@ -1,6 +1,22 @@
+/* eslint-env jquery, browser */
 var $results = $('#search-results');
 var $for = $('#for');
 var template = $('#result-template').html();
+
+var months = [
+  'Jan',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'Jun',
+  'Jul',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec',
+];
 
 // 6 months ago
 var recently = new Date(Date.now() - 1000 * 60 * 60 * 24 * 84)
@@ -9,7 +25,7 @@ var recently = new Date(Date.now() - 1000 * 60 * 60 * 24 * 84)
   .replace(/\..*$/, '');
 
 function clean(s) {
-  return decodeURIComponent(s).replace(/[<>]/g, function(s) {
+  return decodeURIComponent(s).replace(/[<>]/g, () => {
     return {
       '<': '&lt;',
       '>': '&gt;',
@@ -18,7 +34,7 @@ function clean(s) {
 }
 
 function search() {
-  var val = $for.val();
+  var val = $for.val().trim();
   find(encodeURIComponent(val), val);
 }
 
@@ -35,7 +51,7 @@ if (window.location.search) {
     .split('=')
     .pop();
   $for.val(clean(q));
-  find(q);
+  search();
 }
 
 function find(queryString, query) {
@@ -48,10 +64,17 @@ function find(queryString, query) {
     .map(post => {
       let count = (post.text.match(re) || []).length;
 
-      if (count < 5) {
-        // count = 1;
-      } else {
+      if (count >= 5) {
         count += 25;
+      }
+
+      if (
+        post.url
+          .split('/')
+          .pop()
+          .includes(query)
+      ) {
+        count += 100;
       }
 
       if (post.title.toLowerCase().includes(query)) {
@@ -80,6 +103,13 @@ function find(queryString, query) {
       return a.count < b.count ? 1 : -1;
     })
     .slice(0, 10)
+    .map(res => {
+      const d = new Date(res.date);
+      res.niceDate = `${d.getDate()}-${
+        months[d.getMonth()]
+      } ${d.getFullYear()}`;
+      return res;
+    })
     .map(res => interpolate(template, res))
     .join('');
   $results.html(html);
