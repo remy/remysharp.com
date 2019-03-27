@@ -375,7 +375,7 @@ el.addEventListener("webkitTransitionEnd", transitionEnded);
 el.addEventListener("transitionend", transitionEnded);
 ```
 
-* Note the the lowercase 'e' on 'end'...
+_Note the the lowercase 'e' on 'end'..._
 
 A few kind people on twitter did also point me to a [sort-of-polyfill for jQuery](https://github.com/benbarnett/jQuery-Animate-Enhanced), that enhances the `.animate` function if CSS animations are available.
 
@@ -492,7 +492,7 @@ Sure, it's a little more work, but it would also easy to upgrade this change to 
 
 Rant will be soon over: it also irks me when I see a polyfill requires jQuery - but I know the counter argument to that is that jQuery has extremely high penetration so it's possibly able to justify the dependency.
 
-# Closing
+## Closing
 
 My aim was to show you that whilst jQuery has giving me such as huge helping hand over the years (particularly those years of poor interoperability), that native browser support is a long way to doing a lot of the common workflows I have when writing JavaScript to "do stuff" to the DOM.
 
