@@ -7,37 +7,22 @@
   },
   "scripts": {
     "dev": "node lib/dev.js",
-    "test": "semantic-release pre",
-    "start": "node server.js",
-    "build": "node lib/index.js",
-    "semantic-release": "npm run build",
-    "update-timestamps": "hostname eq 'unicorn-powered' && blog update-timestamps"
-  },
-  "bin": {
-    "blog": "./cli/index.js"
+    "build": "node lib/index.js"
   },
   "author": "Remy Sharp",
   "license": "MIT",
   "dependencies": {
-    "abbrev": "^1.1.1",
     "chokidar": "^2.1.2",
-    "clite": "0.3.0",
     "date-fns": "^1.30.1",
-    "elasticsearch": "10.1.3",
     "fast-glob": "^2.2.6",
     "fs-extra": "^7.0.1",
     "gray-matter": "^4.0.2",
-    "image-size": "^0.5.0",
     "jstransformer-markdown-it": "^2.1.0",
     "less": "^3.9.0",
-    "luxon": "^1.11.4",
     "markdown-it": "^8.4.2",
     "pug": "^2.0.3",
     "recursive-copy": "^2.0.10",
-    "router-stupid": "0.7.0",
-    "semver": "^4.3.6",
-    "slugify": "^1.3.4",
-    "valid-url": "^1.0.9"
+    "slugify": "^1.3.4"
   },
   "repository": {
     "type": "git",
@@ -45,9 +30,6 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "inquirer": "0.12.0",
-    "request": "^2.88.0",
-    "semantic-release": "4.3.5",
-    "serve-handler": "^5.0.8"
+    "request": "^2.88.0"
   }
 }
