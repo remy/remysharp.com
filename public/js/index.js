@@ -145,7 +145,7 @@ if (comments) {
   };
 }
 
-if ($('#index-page')) {
+if ($$('#index-page').length) {
   loadFlickr();
 }
 
