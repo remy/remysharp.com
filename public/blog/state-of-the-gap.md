@@ -256,7 +256,7 @@ Say you have 1,000 interested users. Here are the steps:
 
 Even if they're directed straight to your app, you're skipping step 1 & 2, you’re still *only* left with 410 users. That’s **less than 50% of users** for your app store.
 
-[Selio](https://selioapp.com) (a buy/sell/chat commerce app) moved to PWA for their site and saw an average of 6+ minutes spent in the app. More importantly, the user acquisition was up to 10 times cheaper than native apps. Putting a (<abbr title="cost per action">CPA</abbr>) cost of €3-5 for native apps, and €0.30-0.40 for PWA users ([citation](http://www.slideshare.net/julianmartinez2/building-selio-a-local-market-progressive-web-app)).
+[Selio](https://www.selio.com ) (a buy/sell/chat commerce app) moved to PWA for their site and saw an average of 6+ minutes spent in the app. More importantly, the user acquisition was up to 10 times cheaper than native apps. Putting a (<abbr title="cost per action">CPA</abbr>) cost of €3-5 for native apps, and €0.30-0.40 for PWA users ([citation](http://www.slideshare.net/julianmartinez2/building-selio-a-local-market-progressive-web-app)).
 
 That's a huge cost.
 
