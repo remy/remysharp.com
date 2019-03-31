@@ -1,9 +1,19 @@
-/* eslint-env browser, jquery */
-($ => {
+/* eslint-env browser */
+(() => {
+  const $$ = (s, ctx = document) => Array.from(ctx.querySelectorAll(s)); // NodeList with map, forEach, etc
+  const $ = (s, ctx = document) => {
+    if (s.indexOf('<') === -1) {
+      return ctx.querySelector(s);
+    }
+
+    const div = document.createElement('div');
+    div.innerHTML = s;
+    return div.firstChild;
+  };
+
   if (location.search === '?thanks') {
-    $('main article').html(
-      '<h1 class="title">Thanks for the feedback!</h1><div class="post-content"><p>You will now be redirected to my website.</div>'
-    );
+    $('main article').innerHTML =
+      '<h1 class="title">Thanks for the feedback!</h1><div class="post-content"><p>You will now be redirected to my website.</div>';
 
     setTimeout(() => {
       window.location.href = '/';
@@ -12,61 +22,64 @@
 
   // Form validation
   const form = $('#feedback-form form');
-  $('button[type="submit"]').on('click', () =>
-    form.find('[required]').addClass('required')
-  );
+  // FIXME doesn't apply to all - only first.
+  $('button[type="submit"]').onclick = () => {
+    $$('[required]', form).map(el => el.classList.add('required'));
+  };
 
   const params = new URL(location.href).searchParams;
 
   if (params.has('product')) {
     const title = `Feedback for ${params.get('product')}`;
-    $('h1').text(title);
+    $('h1').innerText = title;
     document.title = title;
   }
 
   // Include all the existing search params
   for (const [key, value] of params) {
     if (key === 'name') {
-      form.find('[name="name"]').val(value);
+      $('[name="name"]', form).value = value;
       continue;
     }
 
     if (key === 'email') {
-      form.find('[name="email"]').val(value);
+      $('[name="email"]', form).value = value;
       continue;
     }
 
     if (key === 'messageField') {
-      form
-        .find('[name="message"]')
-        .val(value)
-        .get(0)
-        .setSelectionRange(0, 0);
+      const ta = $('[name="message"]', form);
+      ta.value = value;
+      ta.setSelectionRange(0, 0);
       continue;
     }
 
     if (key === 'extraInfo') {
-      form.append(
-        $(
-          `<textarea style="display:none" readonly name="${key}"></textarea>`
-        ).text(value)
+      const ta = $(
+        `<textarea style="display:none" readonly name="${key}"></textarea>`
       );
+      ta.value = value;
+      form.append(ta);
       continue;
     }
 
-    form.append($(`<input type="hidden" name="${key}">`).val(value));
+    const input = $(`<input type="hidden" name="${key}">`);
+    input.value = value;
+    form.append(input);
   }
 
-  form.on('submit', e => {
+  form.onsubmit = () => {
     const product = params.has('product') ? ': ' + params.get('product') : '';
-    const message = form
-      .find('[name="message"]')
-      .val()
-      .slice(0, 100);
-    const subject = 'Feedback' + product + ' - ' + message;
-    form.prepend(
-      $('<input type="hidden" name="_replyto">').val($('#form_email').val())
+    const message = $('[name="message"]', form).value.slice(0, 100);
+    const replyTo = $('<input type="hidden" name="_replyto">');
+    replyTo.value = $('#form_email').value;
+    const subjectEl = $(
+      `<input type="hidden" name="_subject" value="Feedback${product.replace(
+        /"/g,
+        '\\"'
+      )} - ${message.replace(/"/g, '\\"')}">`
     );
-    form.prepend($(`<input type="hidden" name="_subject">`).val(subject));
-  });
-})(jQuery);
+    form.prepend(replyTo);
+    form.prepend(subjectEl);
+  };
+})();
