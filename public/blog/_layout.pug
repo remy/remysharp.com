@@ -55,7 +55,7 @@ block content
           //- else
           != yield
 
-        p.metadata Posted #{moment(date).format('D-MMM YYYY')} under #{tags.join(' & ')}.
+        p.metadata Posted #{moment(date).format('D-MMM YYYY')} under #{(tags || []).join(' & ')}.
 
         if !nosubscribe && !amp
           footer.follow.update
