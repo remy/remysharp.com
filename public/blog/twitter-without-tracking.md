@@ -90,7 +90,7 @@ Forewarning: there's more HTML here than I might include, but I've lifted it dir
 
 The empty `<i>` and `<u>` elements, I believe` are being used for styled blocks - though I'd loved to remove these entirely if possible.
 
-Now a dash of CSS, not that this syntax is [less](http://lesscss.org/) - which in this case is CSS with nesting, and aside from the `&.<selector>` where `&` refers to the current scoped selector, it should be fairly regular CSS - [provided as a download for brevity](/downloads/twitter-widget.less).
+Now a dash of CSS, note that this syntax is [less](http://lesscss.org/) - which in this case is CSS with nesting, and aside from the `&.<selector>` where `&` refers to the current scoped selector, it should be fairly regular CSS - [provided as a download for brevity](/downloads/twitter-widget.less).
 
 The minor adjustment I made to the existing Twitter CSS widget is to make the blue from the "follow @rem" and white have a higher contrast radio for better colour accessibility (the current default fails which I'm quickly able to see using Chrome's devtools inspector):
 
