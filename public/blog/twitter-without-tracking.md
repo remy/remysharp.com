@@ -1,7 +1,9 @@
 ---
 title: Twitter without tracking
-inprogress: true
-date: 2019-04-01
+date: 2019-04-02
+tags:
+- code
+- web
 ---
 
 # Twitter without tracking
@@ -97,3 +99,5 @@ The minor adjustment I made to the existing Twitter CSS widget is to make the bl
 I shifted the blue down to <code style="background: #31759f; color: white;">#31759f</code> and that minor change also puts more control into my hands now that I'm managing the CSS that renders the Twitter widget. And that's really it.
 
 One less tracker on my site for my visitors.
+
+*[JSONP]: JSON with padding
