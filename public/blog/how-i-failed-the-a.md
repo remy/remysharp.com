@@ -19,7 +19,7 @@ It all starts with a little on click property and then things go downhill. Presu
 
 Perhaps I need to place an API request in the background, update some part of the user interface or maybe run some validation ahead of sending the request.
 
-I use [Next.js]() for a lot of my client work. I like it because it comes with server side rendering support without configuration and straight out of the box. **This is good.**
+I use [Next.js](https://next.training.leftlogic.com/?coupon=SUBSCRIBER) for a lot of my client work. I like it because it comes with server side rendering support without configuration and straight out of the box. **This is good.**
 
 Due to the way Next's routing works, quite often I'm overriding the browser's native click so that I can run subsequent client rendered navigation. This can benefit from pre-fetched code (for layout) and can make for a really nice and fast user experience, it also reduces the round trip time and payload the visitor has to bear when clicking around.
 
