@@ -19,7 +19,7 @@ At this time of year (Christmas) there's a lot of tip-like articles that emerge,
 
 Actually, truth be told, it's not the entire workflow (I can't create new files for instance) - but where I'm up to is: navigating my entire project, making changes and seeing the live impact of that change, testing new ideas and most importantly - actually saving those changes to disk without leaving DevTools.
 
-<iframe width="612" height="344" src="//www.youtube.com/embed/ura4ee4fjZs?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="344" src="https://www.youtube-nocookie.com/embed/ura4ee4fjZs?rel=0" frameborder="0" allowfullscreen></iframe>
 
 Although I'm using Canary in the screencast, this functionality is available today in Chrome stable.
 

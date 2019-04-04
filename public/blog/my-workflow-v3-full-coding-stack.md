@@ -13,7 +13,7 @@ I've recently been working 100% inside of Chrome's devtools using the powerful f
 
 <!--more-->
 
-<iframe width="560" height="315" src="//www.youtube.com/embed/X-X9w4Pso5w? vq=hd720" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X-X9w4Pso5w? vq=hd720" frameborder="0" allowfullscreen></iframe>
 
 <div class="update"><strong>Updated July 21, 2013:</strong> I forgot to say in the screencast, you also need to enable <a href="https://developers.google.com/chrome-developer-tools/docs/settings#experiments">Developer Tools Experiments</a> via chrome://flags. Also make sure you check out <a href="/2013/07/18/my-workflow-v3-full-coding-stack/#comment-553512">Paul's comment</a> below with even more useful tips.</div>
 

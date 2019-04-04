@@ -14,7 +14,7 @@ modified: '2014-11-10 12:09:20'
 
 Since I'm sat at [Mobilism 2013](http://mobilism.nl/2013) I think it's worth sharing my recent mobile (mainly CSS) workflow. It's not rocket science, but it's a nice follow on from [my workflow with devtools](/2012/12/21/my-workflow-never-having-to-leave-devtools/) I shared a few months back.
 
-<iframe width="1280" height="720" src="//www.youtube.com/embed/tIabBQatvD8?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie/embed/tIabBQatvD8?rel=0" frameborder="0" allowfullscreen></iframe>
 
 It simply boils down to using [LiveReload](http://livereload.com/) on the page, using DevTools with the "Save As" functionality on the CSS, then simply make the change on the desktop using DevTools, which automatically saves to file, which causes LiveReload to trigger a reload on all devices (perhaps frustratingly on the desktop too), but also the remote devices - mobile or otherwise - to refresh allowing me a quick glance to make sure the styles look right.
 

@@ -8,9 +8,9 @@ var prompt = '<span class="bash-prompt">$ </span>';
 const $$ = (s, context = document) => Array.from(context.querySelectorAll(s));
 const $ = (s, context = document) => context.querySelector(s) || {};
 
-$$('.post-content > p').forEach(el => {
-  el.innerHTML = el.innerHTML.replace(/(\S+\s\S+)$/gm, '<nobr>$1</nobr>');
-});
+// $$('.post-content > p').forEach(el => {
+//   el.innerHTML = el.innerHTML.replace(/(\S+\s\S+)$/gm, '<nobr>$1</nobr>');
+// });
 
 $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
   el.innerHTML = el.textContent

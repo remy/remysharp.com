@@ -31,7 +31,7 @@ This is my write up of the talk I've given on the subject. [Slides are also avai
 
 ![Muddling your way in real time](/images/muddling-in-real-time-cover.gif)
 
-<iframe width="1280" height="720" src="//www.youtube.com/embed/EUnNov3h3c0?index=5&list=PLbUMlIAqtRWNbxKZujb0mO5WHQcwJopBm" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/EUnNov3h3c0?index=5&list=PLbUMlIAqtRWNbxKZujb0mO5WHQcwJopBm" frameborder="0" allowfullscreen></iframe>
 
 ---
 

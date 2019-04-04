@@ -43,7 +43,7 @@ But then my life around that time was hard, and jsbin (version 2) was [still wri
 
 Here's a video of the first implementation of codecasting in JS Bin back in late 2010. Note that codecasting wasn't and isn't limited to a single browser or single machine, JS Bin's version could run on multiple machines at once and all different types of browsers (though the Förbind version relied on Socket.IO, the current version doesn't and it relies entirely on EventSource and polyfilled techniques).
 
-<iframe src="//www.youtube.com/embed/FjusnOgJE_I" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/FjusnOgJE_I" frameborder="0" allowfullscreen></iframe>
 
 ## Native codecasting in jsbin
 

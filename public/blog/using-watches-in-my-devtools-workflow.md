@@ -20,7 +20,7 @@ using "Watch Expressions" which I've found (for me) is often left untouched.
 The video below works through the real example where I'm using watches to get
 visual feedback whilst developing.
 
-<iframe width="1280" height="720" src="//www.youtube.com/embed/_gL4FCchTEI?hd=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/_gL4FCchTEI?hd=1" frameborder="0" allowfullscreen></iframe>
 
 ## The console up/enter workflow
 

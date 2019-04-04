@@ -44,7 +44,7 @@ It's almost funny that from Jean-François Groff's [original list of upgrade pro
 
 Here's a short demo of navigation and page linking. Again, this is in a browser (fullscreen), using the mouse to do some navigation, and the keyboard for other (including "close all other windows" when I'm left with the summary window):
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/TGtORpr5sUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TGtORpr5sUg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Supplementary content
 

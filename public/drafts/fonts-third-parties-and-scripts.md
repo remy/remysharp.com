@@ -18,7 +18,7 @@ My internet was fine, but for a short time, TypeKit's CDN was having outages, bu
 
 Here's what I saw (note that this effect is emulated by re-routing TypeKit):
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/G0hVryUchA8" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/G0hVryUchA8" frameborder="0" allowfullscreen></iframe>
 
 ## What is the issue
 

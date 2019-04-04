@@ -180,7 +180,7 @@ I'll admit, I've shoehorned this in, but I recently saw a physical web demo that
 
 This individual is interacting with a bluetooth device without having to jump into any settings. The beacon discovery is landing directly in Chrome (he’s using a separate app), and bluetooth is currently behind flags, but it shows how frictionless the process was to start using this new toy:
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/6z9ED4fmi1w?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/6z9ED4fmi1w?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ## Ecosystem
 

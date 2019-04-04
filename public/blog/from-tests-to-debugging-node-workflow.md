@@ -21,7 +21,7 @@ I've got this working to a tee with bugs, but features I still tend to write fir
 
 I recorded a screencast of my workflow below, but will also detail some of the tools I'm using as they're all useful in isolation.
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/-oNx6jFLm_g" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/-oNx6jFLm_g" frameborder="0" allowfullscreen></iframe>
 
 ## The tools
 
@@ -47,7 +47,7 @@ Quite often when I test a project from the CLI the local version of tap could be
 
 ```bash
 tap () {
-  # find the real path to tap. if we had a decent version of which, 
+  # find the real path to tap. if we had a decent version of which,
   # on the mac, we don't, we could use `which --skip-functions tap`.
   local TAP=$(type -p tap | awk '{ print $3 }')
   if [ -e $PWD/node_modules/.bin/tap ]

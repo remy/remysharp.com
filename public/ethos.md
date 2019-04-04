@@ -22,7 +22,7 @@ Simplicity always wins, and stripping as much back as possible is the way to tha
 
 I know this is (just) a marketing campaign, but it moved me to tears and I love the message it provides and it is one that I would happily play again and again in my head.
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/koPmuEyP3a0?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/koPmuEyP3a0?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -60,7 +60,7 @@ A man whose words I will always have time for, Stephen Fry takes the "other side
 
 In a time where higher powers are trying to convince us that we should be afraid of each other, this advert (of all things) is a beautiful remind of all that we share.
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/jD8tjhVO1Tc?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/jD8tjhVO1Tc?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -88,7 +88,7 @@ This comic, somehow describes exactly how I've always felt about being "happy". 
 
 I could _wish_ I had this much insight when I was 14. Instead, I'm learning from this kid and aim to pass this message on to my white privileged children.
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/g4Q1jZ-LOT0?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/g4Q1jZ-LOT0?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ---
 
@@ -104,7 +104,7 @@ I love this representation of how biased systems work, and how my neutral positi
 
 This is such a good speech on having the right to choose your own path.
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/oMnxPsQanrs?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/oMnxPsQanrs?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Via femisphere, point 15](http://feminspire.com/15-ways-leslie-knope-from-parks-and-recreation-inspired-feminists-everywhere/) 17 Aug 2015
 
@@ -122,7 +122,7 @@ This is such a good speech on having the right to choose your own path.
 
 I've [written before](/2014/10/27/motivation) about how Emma Watson's UN address inspired me. I'll be showing my son & daughter this talk when they're old enough to understand.
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/Q0Dg226G2Z8?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/Q0Dg226G2Z8?rel=0" frameborder="0" allowfullscreen></iframe>
 
 [Via United Nations on YouTube](https://www.youtube.com/watch?v=Q0Dg226G2Z8) 22 Sep 2014
 

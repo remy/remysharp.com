@@ -10,7 +10,7 @@ modified: '2014-09-03 16:15:12'
 ---
 # CommonJS modules with live edit in devtools
 
-As you might know, I'm a big fan of [Chrome devtools' live edit and workspaces](http://www.youtube.com/playlist?list=PLXmT1r4krsTq7w7hDV6zfirrs4NJlzJX5) (video playlist), and it's this workflow that's kept me away from [Browserify](http://browserify.org). 
+As you might know, I'm a big fan of [Chrome devtools' live edit and workspaces](http://www.youtube.com/playlist?list=PLXmT1r4krsTq7w7hDV6zfirrs4NJlzJX5) (video playlist), and it's this workflow that's kept me away from [Browserify](http://browserify.org).
 
 So I went about creating an experiment that allowed me to use CommonJS modules in development *and* that allowed me to edit and save directly in devtools *without* a build step.
 
@@ -38,7 +38,7 @@ The main requirements were to ensure:
 
 These *kinda* work as you'll see in the video.
 
-<iframe width="1280" height="720" src="//www.youtube.com/embed/uHxxcnJi4BE?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/uHxxcnJi4BE?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ## How it works
 

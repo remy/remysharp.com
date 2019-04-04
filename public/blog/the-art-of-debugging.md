@@ -232,7 +232,7 @@ Finally I want to share with you some of the workflow I use and some of the tool
 
 ### Workspaces & real-time updates
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/Z_5XFAGn-u0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/Z_5XFAGn-u0" frameborder="0" allowfullscreen></iframe>
 
 With devtools open, and the sources panel selected, simply drag the local directory you want to create a workspace for *onto* the source panel, and devtools will ask for access which you will need to confirm.
 
@@ -240,7 +240,7 @@ This doesn't complete the step though. To let devtools know that a particular or
 
 Now whenever you make any changes, you will be able to save and it will save directly to disk. Why is this important? Now you can debug and commit directly to disk without switching contexts, without switch from your editor to your browser.
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/U1zRyCkU4Ms" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/U1zRyCkU4Ms" frameborder="0" allowfullscreen></iframe>
 
 What is also really fun and powerful, is that if the CSS files were also mapped, *any* changes in the elements panel to styles, directly update the CSS file attached. This means I can make really tiny visual changes in the elements panel (where I'm used to making changes) and it'll already be saved for me to disk.
 
@@ -271,7 +271,7 @@ Obviously when you reload, you lose the history. It's the same with Sublime Edit
 - `$0` - the currently selected DOM node in the elements panel
 - `copy(...)` - copy to the clipboard, and will `JSON.stringify` objects, but also get the outer HTML of DOM nodes, `copy($0)` is pretty common for me
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/pqFr0qZQpk8" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/pqFr0qZQpk8" frameborder="0" allowfullscreen></iframe>
 
 ### Timeline screenshots
 

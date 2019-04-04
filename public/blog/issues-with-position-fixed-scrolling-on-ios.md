@@ -38,7 +38,7 @@ I've created a number of example pages that you can view for yourself, which are
 
 If you add `position:fixed` in any normal way as you might on a "desktop" site, you'll see some degree of juddering as the page scrolls.
 
-<iframe width="612" height="341" src="//www.youtube.com/embed/yps8Ea5GO4I?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="341" src="https://www.youtube-nocookie.com/embed/yps8Ea5GO4I?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
 
 Note that this is the simulator running, but I've also captured the [real iPhone](http://www.youtube.com/watch?v=T5P0x5NPr3M&hd=1) (using Reflection) showing the same behaviour.
 
@@ -54,7 +54,7 @@ This is a problem if you want to monitor the page position to simulate effects l
 
 If the page is zoomed at all, which you can get in iOS when the user rotates from portrait to landscape, as the user scrolls in any scale beyond 1 (i.e. zoomed), the position fixed element drifts upwards (I've seen this drift entirely out of view before in other sites):
 
-<iframe width="612" height="341" src="//www.youtube.com/embed/YIOdPf7jqK4?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="341" src="https://www.youtube-nocookie.com/embed/YIOdPf7jqK4?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
 
 The page used was: [jsbin.com/3/ixewok/6/](https://jsbin.com/3/ixewok/6/) ([edit](https://jsbin.com/3/ixewok/6/edit?html,css,live))
 
@@ -62,7 +62,7 @@ The page used was: [jsbin.com/3/ixewok/6/](https://jsbin.com/3/ixewok/6/) ([edit
 
 If there's a focusable element inside the position fixed element, i.e. an input element, this can cause the entire fixed element to jump out of place. This will only happen if the user has scrolled any amount (but if you're using `position:fixed` you're expecting exactly that kind of usage).
 
-<iframe width="612" height="341" src="//www.youtube.com/embed/lrnvZDwgJRc?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="341" src="https://www.youtube-nocookie.com/embed/lrnvZDwgJRc?rel=0" frameborder="0" allowfullscreen></iframe>
 
 The page used was: [jsbin.com/3/ixewok/8/](https://jsbin.com/3/ixewok/8/) ([edit](https://jsbin.com/3/ixewok/8/edit?html,css,live))
 
@@ -72,7 +72,7 @@ The page used was: [jsbin.com/3/ixewok/8/](https://jsbin.com/3/ixewok/8/) ([edit
 
 From the screencast I've recorded you can see using [iWebInspector](http://www.iwebinspector.com) that although MobileSafari has painted the fixed element in place, it's actually not there - the actual element remains in place until you touch and move the page again.
 
-<iframe width="612" height="341" src="//www.youtube.com/embed/R2MzdeJSCKw?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="341" src="https://www.youtube-nocookie.com/embed/R2MzdeJSCKw?fs=1&amp;#038;feature=oembed" frameborder="0" allowfullscreen></iframe>
 
 The page used was: [jsbin.com/3/ixewok/13/](https://jsbin.com/3/ixewok/13/) ([edit](https://jsbin.com/3/ixewok/13/edit?html,css,live))
 
@@ -88,7 +88,7 @@ The trick would seem to be: make sure your fixed position element is *not* on a 
 
 So when I tried to apply this technique to the `body` element, the juddering was still visible, as the fixed element was *inside* the scrolling element.
 
-<iframe width="612" height="341" src="//www.youtube.com/embed/suXz5dKtlcA?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="612" height="341" src="https://www.youtube-nocookie.com/embed/suXz5dKtlcA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 I also [captured this](http://www.youtube.com/watch?v=obTy5tWOsxA&hd=1) on the real device too.
 
