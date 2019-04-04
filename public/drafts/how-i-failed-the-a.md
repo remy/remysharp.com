@@ -27,7 +27,7 @@ Due to the way Next's routing works, quite often I'm overriding the browser's na
 
 This was my (React) code:
 
-```js
+```jsx
 <Card
   onClick={event => {
     event.preventDefault();
@@ -60,15 +60,14 @@ JavaScript lets me do some pretty fancy things. Sadly there's a subset of fancy 
 
 In this particular case, my visitor isn't allowed to click on my clickable component in any other way than how *I intended*. Which is rather presumptuous of me.
 
-What happens on shift + click?
-
-What happens on command + click?
+- What happens on click with the shift key depressed?
+- What happens on click with the command (or control) key depressed?
 
 Neither of these two actions would work. It _should_ open in a new window and a new tab respectively. This was my visitors intended action, so why did I decide they couldn't do that any more? The answer is easy: I didn't think. Nothing either confused, or worse: pissed off my visitor.
 
 The fix is a matter of lines, so let's do that:
 
-```js
+```jsx
 <a href={`/thing/${id}`}>
   <Card
     onClick={event => {
@@ -90,4 +89,4 @@ The fix is a matter of lines, so let's do that:
 
 ## New rules of thumb
 
-Any time I'm adding `onClick` to a component (or `addEventListener('click', …)`), I want to make sure there's a _real_ anchor ready to handle the intended action. I also want to ensure the native browser handling of modifiers works as intended. Too many sites prevent me from using modifiers on click - I don't want to join their ranks of pissing off the visitor.
+Any time I'm adding `onClick` to a component, I want to make sure there's a _real_ anchor ready to handle the intended action. I also want to ensure the native browser handling of modifiers works as intended. Too many sites prevent me from using modifiers on click - I don't want to join their ranks of pissing off the visitor.
