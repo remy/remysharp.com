@@ -3,8 +3,6 @@
 var comments = document.getElementById('disqus_thread');
 var disqusLoaded = false;
 
-var prompt = '<span class="bash-prompt">$ </span>';
-
 const $$ = (s, context = document) => Array.from(context.querySelectorAll(s));
 const $ = (s, context = document) => context.querySelector(s) || {};
 
@@ -12,11 +10,17 @@ const $ = (s, context = document) => context.querySelector(s) || {};
 //   el.innerHTML = el.innerHTML.replace(/(\S+\s\S+)$/gm, '<nobr>$1</nobr>');
 // });
 
+const prompt = document.createElement('span');
+prompt.className = 'bash-prompt';
+prompt.innerHTML = '$ ';
+
 $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
-  el.innerHTML = el.textContent
-    .split('\n') // break into individual lines
-    .map(line => line.replace(/^\$ /, prompt))
-    .join('\n'); // join the lines back up
+  const firstChild = el.firstChild;
+  if (firstChild.nodeName === '#text' && firstChild.nodeValue === '$ ') {
+    el.replaceChild(prompt.cloneNode(true), firstChild);
+  } else {
+    el.insertBefore(prompt.cloneNode(true), firstChild);
+  }
 });
 
 function loadDisqus() {
