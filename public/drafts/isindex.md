@@ -29,6 +29,22 @@ So `<ISINDEX>` was used. This post looks at how it worked, where it faded out, a
 - How did ISINDEX work?
 - prompt and action properties
 - Example on Lynx and WorldWideWeb
+- Included in the announcement of the [first draft of the HTML5 Parsing spec](https://lists.w3.org/Archives/Public/public-whatwg-archive/2006Feb/0111.html) in 2006.
+- [Dropped in Chrome 35](https://codereview.chromium.org/96653004/)
+- Could also be used to trigger [XSS attacks](http://www.thespanner.co.uk/2008/08/26/new-xss-vector/)
+
+The rendered DOM in browsers resembled this - an injected form, two horizontal rules, label and an input:
+
+![isindex rendered in Chrome 31](/images/isindex-chrome.png)
+
+## Browser support
+
+- Chrome 34: 2014-04-09
+- Firefox 55: 2017-08-08
+- Opera 21: 2014-05-06
+- IE11: 2013-10-17
+- Android Browser 4.4
+- Lynx 2.8.8rel.2
 
 ## To read
 

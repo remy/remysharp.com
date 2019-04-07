@@ -1,0 +1,63 @@
+table.reviews {
+  font-size: 14px;
+  width: 100%;
+
+  tbody td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  thead select {
+    font-size: 100%;
+    border: 0;
+    background: none;
+    font-weight: bold;
+    vertical-align: bottom;
+    margin-left: -8px;
+  }
+
+  tbody tr td:nth-child(1) {
+    padding-right: 8px;
+  }
+
+  p.review-link {
+    margin: 4px 0 0 0;
+
+    a {
+      white-space: nowrap;
+    }
+  }
+
+  tbody tr td:nth-child(1) {
+    white-space: nowrap;
+  }
+
+  @media only screen and (min-width: 500px) {
+    tbody tr td:nth-child(3) {
+      white-space: nowrap;
+    }
+
+    span.rating {
+      span {
+        display: none;
+      }
+
+      &[data-rating="5"]:before {
+        content: '★★★★★';
+      }
+      &[data-rating="4"]:before {
+        content: '★★★★☆';
+      }
+      &[data-rating="3"]:before {
+        content: '★★★☆☆';
+      }
+      &[data-rating="2"]:before {
+        content: '★★☆☆☆';
+      }
+      &[data-rating="1"]:before {
+        content: '★☆☆☆☆';
+      }
+    }
+
+    }
+}

@@ -1,0 +1,55 @@
+.post
+  h1.title Books
+  div.post-content
+    :markdown
+      These are the books I've read and posted reviews on Goodreads.
+
+  .post-content
+    table.reviews
+      thead
+        tr
+          th Read
+          th Title
+          th Author
+          th
+            select#rating(name="rating")
+              option(value="0") Rating
+              option(value="5") ★★★★★
+              option(value="4") ★★★★
+              option(value="3") ★★★
+              option(value="2") ★★
+              option(value="1") ★
+      tbody#reviews
+        each review in _data
+          - rating = `${ '★'.repeat(review.rating) }${ '☆'.repeat(5 - review.rating)}`
+          tr
+            td #{moment(review.read).format('D-MMM \'YY')}
+              br
+              span #{duration(review.started, review.read)}
+            td
+              a(href=`${review.book.url}`) #{review.book.title}
+              if review.review
+                p.review-link
+                  span 📝
+                  a(href=`${review.url}`) My review
+                  if review.spoiler === "true"
+                    span &nbsp;(includes spoilers)
+            td #{review.book.author}
+            td
+              span.rating(data-rating=`${ review.rating }` aria-label=`${ review.rating } stars out of 5`)
+                span #{review.rating} / 5
+      script.
+        document.getElementById('rating').onchange = function (event) {
+          const value = event.target.value || 0;
+          Array.from(document.querySelectorAll('#reviews tr')).forEach(row => {
+            if (value == 0) {
+              row.hidden = false;
+              return;
+            }
+            if (!row.innerHTML.includes(`data-rating="${value}"`)) {
+              row.hidden = true;
+            } else {
+              row.hidden = false;
+            }
+          });
+        }
