@@ -160,7 +160,7 @@ code[class*='language-'] {
   font-family: @code-font;
   background: #f3f3f3;
   padding: 2px;
-  font-size: 1rem;
+  // font-size: 1rem;
   border-radius: 2px;
 }
 
@@ -270,7 +270,7 @@ article.post {
     padding-left: 8px;
     margin: 4px 0px 4px 22px;
     font-size: 95%;
-    line-height: 1.4rem;
+    line-height: 1.6;
 
     &.checkbox {
       input[type='checkbox'] {
@@ -404,7 +404,7 @@ a.anchor {
   p {
     font-size: 80%;
     margin: 0;
-    line-height: 1.2rem;
+    line-height: 1.4;
   }
 
   a {
@@ -460,19 +460,20 @@ time {
   font-weight: 400;
 }
 
-#index-page h1.title {
-  // background: rgb(238, 238, 238);
-  margin: 0;
-  margin-bottom: 20px;
-  line-height: 48px;
-  font-size: 48px;
-  font-weight: 500;
-  padding: 20px 60px;
-}
-
-#index-page h1.title img {
-  z-index: 1;
-  vertical-align: bottom;
+#index-page {
+  h1.title {
+    // background: rgb(238, 238, 238);
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 48px;
+    font-size: 48px;
+    font-weight: 500;
+    padding: 20px 60px;
+    img {
+      z-index: 1;
+      vertical-align: bottom;
+    }
+  }
 }
 
 ul.links {
@@ -491,7 +492,8 @@ ul.links {
   }
 
   ul {
-    padding-left: 20px;
+    padding-left: 4px;
+    list-style-position: inside;
 
     & + h3 {
       margin-top: 28px;
@@ -588,18 +590,18 @@ body > footer {
   }
 
   p {
-    line-height: 24px;
+    line-height: 1.4;
   }
 
   ul {
-    padding-left: 20px;
+    padding-left: 1.4rem;
   }
 
   .license p {
     margin: 12px 0;
   }
   h2 {
-    line-height: 2rem;
+    line-height: 1.4;
   }
 
   .flexbox();
@@ -1009,7 +1011,7 @@ details summary:after {
   font-weight: 400;
 
   * {
-    line-height: 1.4rem;
+    line-height: 1.6;
   }
 
   .cs__footer,
