@@ -12,6 +12,8 @@ Recently I posted a [quick poll](https://mobile.twitter.com/rem/status/111282125
 
 For the first half of the day the poll ran, client side held 2/3rds of the votes. It ended with a 60:40 split between client and server.
 
+![Final results of the poll](/images/code-highlight/poll-result.png)
+
 Though (without giving it too much thought) favour client side (I'll come on to my reasons in a bit), I was surprised at the results being around 2/3rds preferring client side. So I decided to look at my own blog posts to see what would suit my system best.
 
 There's no TL;DR for this post because I suspect if you're reading this blog post you already know the answer that fits about 95% of the time. My aim for this post was to dispel any misconceptions I might have had.
