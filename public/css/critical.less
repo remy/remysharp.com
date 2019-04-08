@@ -1,228 +1,17 @@
-@background-color: #fafafa;
-@subpanel-background: lighten(black, 10%);
-@subpanel-color: lighten(@subpanel-background, 41%);
-// #828282
-@code-background: #f3f3f3; //rgb(63, 63, 63);
-@code-foreground: darken(@code-background, 80%);
-@code-font: 'ubuntu mono', menlo, monaco, consolas, courier, 'courier new', 'lucida console',
-monospace;
-@cta-color: #1b95e0;
-@link-color: rgb(21, 101, 192); // #00126c;
-@main-font-color: #212121;
-@flickr-width: 235px;
-
+@import (less) 'vars.less';
+@import (less) 'mixins.less';
 @import (inline) 'system-font.css';
-
-/* Mixins */
-.transition (@prop: all, @time: 1s, @ease: linear) {
-  -webkit-transition: @prop @time @ease;
-  -moz-transition: @prop @time @ease;
-  -o-transition: @prop @time @ease;
-  -ms-transition: @prop @time @ease;
-  transition: @prop @time @ease;
-}
-
-.clearfix {
-  *zoom: 1;
-  &:before,
-  &:after {
-    display: table;
-    content: '';
-    line-height: 0;
-  }
-  &:after {
-    clear: both;
-  }
-}
-
-.flexbox(@dir:row, @justifycontent:flex-start) {
-  width: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  .flexdirection(@dir);
-  .flexjustify(@justifycontent);
-
-  .no-flexboxlegacy & {
-    .clearfix();
-    > * {
-      float: left;
-    }
-  }
-}
-
-.flexdirection(@dir:row) when(@dir = row) {
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -ms-box-orient: horizontal;
-}
-.flexdirection(@dir:row) when(@dir = column) {
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -ms-box-orient: vertical;
-}
-.flexdirection(@dir) {
-  -webkit-flex-direction: @dir;
-  -ms-flex-direction: @dir;
-  flex-direction: @dir;
-}
-
-.flexjustify(@jc: flex-start) when(@jc = flex-start) {
-  -webkit-box-pack: start;
-  -moz-box-pack: start;
-  -ms-box-pack: start;
-}
-.flexjustify(@jc: flex-start) when(@jc = flex-end) {
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  -ms-box-pack: end;
-}
-.flexjustify(@jc: flex-start) when(@jc = space-between) {
-  -webkit-box-pack: justify;
-  -moz-box-pack: justify;
-  -ms-box-pack: justify;
-}
-.flexjustify(@jc) {
-  -webkit-justify-content: @jc;
-  justify-content: @jc;
-}
-
-.flex(@var: 1, @total: 1) {
-  -webkit-box-flex: @var;
-  -moz-box-flex: @var;
-  -webkit-flex: @var;
-  -ms-flex: @var;
-  flex: @var;
-}
-
-.order(@number) {
-  -webkit-box-ordinal-group: @number;
-  -moz-box-ordinal-group: @number;
-  -ms-flex-order: @number;
-  -webkit-order: @number;
-  order: @number;
-}
-
-// // Flex Direction and Wrap
-// // - applies to: flex containers
-// // <flex-direction> || <flex-wrap>
-.flex-flow(@flow) {
-  -webkit-flex-flow: @flow;
-  -moz-flex-flow: @flow;
-  -ms-flex-flow: @flow;
-  flex-flow: @flow;
-}
+@import (inline) 'reset.less';
 
 // slap it on everything styles
 * {
   box-sizing: border-box;
 }
 
-// RESET (http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/)
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-figure {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  // outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-}
-iframe {
-  display: block;
-}
-ol,
-ul {
-  list-style: none;
-}
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-}
-caption,
-th,
-td {
-  text-align: left;
-  font-weight: normal;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-}
-blockquote,
-q {
-  quotes: '' '';
-}
-
 html {
   font-size: 120%;
   background: rgb(0, 0, 0) no-repeat -50px 0px;
+  height: 100%;
 }
 
 body {
@@ -236,6 +25,13 @@ body {
   margin: 0 auto 15px auto;
   margin-bottom: 0;
   max-width: 800px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  > main {
+    flex-grow: 1;
+  }
 }
 
 img,
@@ -469,5 +265,3 @@ ul.post-nav {
     }
   }
 }
-
-// @import (less) "screen.less";

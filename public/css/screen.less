@@ -1,19 +1,10 @@
 // comment to bump
+@import 'vars.less';
+@import 'mixins.less';
 @import 'critical.less';
 
 html {
   background-image: url(../images/background.png);
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-
-  > main {
-    flex-grow: 1;
-  }
 }
 
 // here be my styles
@@ -102,6 +93,7 @@ blockquote {
 em {
   font-style: italic;
   -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   font-weight: 500;
 }
 
@@ -160,7 +152,6 @@ code[class*='language-'] {
   font-family: @code-font;
   background: #f3f3f3;
   padding: 2px;
-  // font-size: 1rem;
   border-radius: 2px;
 }
 
@@ -244,6 +235,7 @@ ol {
   line-height: 1.3;
   list-style-type: decimal;
   list-style-position: outside;
+  padding-left: 1.4rem;
 
   li {
     margin-left: 22px;
@@ -267,8 +259,10 @@ article.post {
   }
 
   li {
-    padding-left: 8px;
-    margin: 4px 0px 4px 22px;
+    // padding-left: 8px;
+    // margin: 4px 0px 4px 22px;
+    padding-left: 0px;
+    margin: 4px 0px;
     font-size: 95%;
     line-height: 1.6;
 
@@ -513,6 +507,9 @@ ul.links {
     // position: absolute;
     // top: 0;
     // right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     list-style: none;
     padding: 0;
     float: right;
@@ -521,17 +518,19 @@ ul.links {
 
     a {
       background: transparent;
-      // outline: none;
     }
 
     img {
       display: block;
+      border-radius: 2px;
     }
 
     li {
       margin: 1px;
-      height: 75px;
-      width: 75px;
+      min-width: 75px;
+      min-height: 75px;
+      width: 32%;
+      height: 32%;
       display: block;
       float: left;
       padding: 0;
@@ -1318,27 +1317,9 @@ img[title^='Sample'] {
 @import (less) 'ad.less';
 
 @import (less) 'mq.less';
-// // code font highlight
-// @import (inline) 'github.css';
-
 @import (less) 'form.less';
 
-// .hljs {
-//   background: transparent;
-// }
-
-// .coffeescript .javascript,
-// .javascript .xml,
-// .tex .hljs-formula,
-// .xml .javascript,
-// .xml .vbscript,
-// .xml .css,
-// .xml .hljs-cdata {
-//   opacity: 0.65;
-// }
-
 // for christmas ;-)
-
 #index-page.month-december h1.title:before {
   content: '';
   background: url(/images/santa-hat.png) no-repeat;
