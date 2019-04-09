@@ -2,7 +2,8 @@
 title: 'Code highlighting: server or client?'
 date: 2019-04-09
 image: /images/code-highlight/card.jpg
-inprogress: true
+tags:
+- code
 ---
 
 # Code highlighting: server or client?
@@ -56,6 +57,16 @@ Above is the client side highlighting. The first JavaScript block (in yellow) is
 ![Server performance render](/images/code-highlight/server-perf.png)
 
 As expected, SSR wins out and there's nothing unexpected. Importantly **the HTML parsing time only was 8.31ms** - again this post has a lot of code examples, but I'd argue this was negligible and browsers are doing what browsers do best. Without the SSR of the code highlight, the parse time is 4.91ms. That's to say: there is practically zero impact on parsing time even though we know the parsed HTML is twice the size when SSR is in play.
+
+What about a mobile device though? The above tests were run on my desktop and additional HTML doesn't seem to be much trouble for a fast laptop. I ran a pared down test on my mobile device (albeit a Pixel 3XL which is one of the more powerful mobile devices, but it was a start). For this test, I stripped out all external assets so the performance was able to focus entirely on the HTML parsing time.
+
+![Client side mobile HTML](/images/code-highlight/client-mobile-html-only.png)
+
+![Server side mobile HTML](/images/code-highlight/server-mobile-html-only.png)
+
+The top image is client side and bottom is server side. SSR is marginally longer, but it's a matter of 10ms. That time on the mobile CPU is really nothing - particularly considering there's images to decode, other JavaScript (normally) to parse and execute.
+
+The bottom line: no impact what so ever.
 
 ## Why even client side?
 
