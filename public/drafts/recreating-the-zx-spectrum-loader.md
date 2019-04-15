@@ -211,6 +211,10 @@ Importantly, it's the width of the sound, and not the level (amplitude) that det
 
 The ZX spectrum CPU would run at 3.5Mhz, which means a single clock pulse is performed in 0.244ms. This is also known as a "T-state". A `1` bit is
 
+## But why?
+
+Because I *could*. The web really is an amazing place. In the following talks you'll learn about the amazing technology that's right at our fingertips, and if you have an idea, however useful or not, browsers and the web have near unlimited resources.
+
 ## Talking points
 
 1. New autofocus cameras being hard to replicate old techniques
