@@ -16,8 +16,13 @@ prompt.innerHTML = '$ ';
 
 $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
   const firstChild = el.firstChild;
-  if (firstChild.nodeName === '#text' && firstChild.nodeValue === '$ ') {
-    el.replaceChild(prompt.cloneNode(true), firstChild);
+  if (firstChild.nodeName === '#text') {
+    if (firstChild.nodeValue === '$ ') {
+      el.replaceChild(prompt.cloneNode(true), firstChild);
+    } else {
+      el.insertBefore(prompt.cloneNode(true), firstChild);
+      firstChild.nodeValue = firstChild.nodeValue.replace(/\$\s/, '');
+    }
   } else {
     el.insertBefore(prompt.cloneNode(true), firstChild);
   }
