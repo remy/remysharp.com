@@ -12,7 +12,7 @@ I'm very honoured you've decided to invite me to your event and I want all confe
 
 **2. Speaker Diversity**: as a white cis man, I count as "another white dude" at your event, and I want to see conferences showing off the truly diverse world we live in. The event will have _at least_ 40% non-white cis men speaking<super>✻</super>.
 
-**3. Costs covered**: all speakers' travel and lodging is covered. Please note that I will not fly economy for long haul flights.
+**3. Costs covered**: travel and lodging for all speakers is covered. Please note that I will not fly economy for long haul flights.
 
 **4. Payment**: if I'm being paid for my talk, all other speakers are also paid _at least_ what I am being offered.
 
@@ -20,7 +20,7 @@ I'm very honoured you've decided to invite me to your event and I want all confe
 
 <small>✻ I hope to see this number increase in time.</small>
 
-These requirements are important to me because I'm a position in my career that I can help towards making conferences more positive and safe in this small way.
+These requirements are important to me because I'm in a position in my career that I can help towards making conferences more positive and safe in this small way.
 
 I'd also like to add that I struggle with this kind of language and being able to articulate exactly what I want to see happen. I'm a skilled developer but not a skilled HR individual. However, I do know that a full line up of white men at event is not something I can be part of any more and I want to be part of positive change in our industry.
 
