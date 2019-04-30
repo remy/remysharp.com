@@ -22,7 +22,7 @@ I'm very honoured you've decided to invite me to your event and I want all confe
 
 These requirements are important to me because I'm in a position in my career that I can help towards making conferences more positive and safe in this small way.
 
-I'd also like to add that I struggle with this kind of language and being able to articulate exactly what I want to see happen. I'm a skilled developer but not a skilled HR individual. However, I do know that a full line up of white men at event is not something I can be part of any more and I want to be part of positive change in our industry.
+I'd also like to add that I struggle with this kind of language and being able to articulate exactly what I want to see happen. I'm a skilled developer but not a skilled HR individual. However, I do know that a full line up of white men at an event is not something I can be part of any more and I want to be part of positive change in our industry.
 
 ## Making contact
 
