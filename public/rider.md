@@ -10,7 +10,7 @@ I'm very honoured you've decided to invite me to your event and I want all confe
 
 **1. Code of Conduct**: There is public Code of Conduct linked available on your conference pages.
 
-**2. Speaker Diversity**: as a white cis man, I count as "another white dude" at your event, and I want to see conferences showing off the truly diverse world we live in. The event will have _at least_ 40% non-white cis men speaking<super>✻</super>.
+**2. Speaker Diversity**: as a white cis man, I count as "another white dude" at your event, and I want to see conferences showing off the truly diverse world we live in. The event will have _at least_ 40%<sup>✻</sup> non white-cis-men speaking<sup>†</sup>.
 
 **3. Costs covered**: travel and lodging for all speakers is covered. Please note that I will not fly economy for long haul flights.
 
@@ -18,7 +18,8 @@ I'm very honoured you've decided to invite me to your event and I want all confe
 
 **5. Workshop payment** (if applicable): a full day (or multi-day) workshop is paid at either an agreed minimum fee or a 50:50 profit split.
 
-<small>✻ I hope to see this number increase in time.</small>
+<small>✻ I hope to see this number increase in time.</small><br>
+<small>† That's to say: people who are "not like me".</small>
 
 These requirements are important to me because I'm in a position in my career that I can help towards making conferences more positive and safe in this small way.
 
