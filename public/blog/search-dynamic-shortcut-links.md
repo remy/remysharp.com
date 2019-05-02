@@ -185,7 +185,7 @@ Hidden in comments on my own search results page are comments with the hit count
 
 ![](/images/search-hit-points.png)
 
-The hit points determine the order of the results. Rather than dumping a lot of JavaScript into this post, you can view my search JavaScript here - specifically the `find` function is where all the hit point calc happens.
+The hit points determine the order of the results. Rather than dumping a lot of JavaScript into this post, you can [view my search JavaScript here](https://github.com/remy/remysharp.com/blob/master/public/js/search.js) - specifically the `find` function is where all the hit point calc happens.
 
 Once the candidates are collected, the results are interpolated into the template (the script tag with the `type="template"` from earlier). Again, this lives in my search JavaScript and of course you can/should use your own version of templating.
 
