@@ -147,11 +147,11 @@ module.exports = function squash(text = '') {
 
   // remove short and less meaningful words
   let result = string.replace(
-    /\b(\.|,|the|a|an|and|am|you|I|to|if|of|off|me|my|on|in|it|is|at|as|we|do|be|has|but|was|so|no|not|or|up|for)\b/gi,
+    /\b(the|a|an|and|am|you|I|to|if|of|off|me|this|that|with|have|from|like|when|just|your|some|also|know|there|because|actually|recently|something)\b/gi,
     ''
   )
   .replace(/[^\w\s]/gm, ' ') // fail safe: remove non-chars & non-white space
-  .replace(/\b\w{1,2}\b/gm, '')
+  .replace(/\b\w{1,2}\b/gm, '') // remove any "words" of 1 or 2 characters
   .replace(/\s{2,}/gm, ' ') // compress whitespace to a single space
 
   // trim for good measure!
@@ -163,9 +163,71 @@ My code above has some duplication inside of it (in the regular expressions), bu
 
 ---
 
-**Performance tip:** if you generate your own search data file, take a bit of time to find low value words that you use a lot and remove them from the results.
+**Performance tip:** if you generate your own search data file, take a bit of time to find low value words that you use a lot and remove them from the results. Do not just copy my example above as it's just a sample of [what I remove](https://github.com/remy/remysharp.com/blob/master/lib/squash.js).
 
 I've [written a jq query](https://jqterm.com/8050a199a4f696ec61f2018c924f3961?query=map%28.text%20%7C%20split%28%22%20%22%29%29%20%7C%20flatten%20%23%20convert%20into%20an%20array%20of%20words%0A%7C%20map%28select%28length%20%3C%204%29%29%20%23%20pick%20only%20words%20of%20a%20specific%20length%0A%7C%20reduce%20.%5B%5D%20as%20%24item%20%28%7B%7D%3B%20.%5B%24item%5D%20%2B%3D%201%29%20%23%20count%20unique%20words%0A%7C%20to_entries%20%7C%20map%28select%28.value%20%3E%202%29%29%20%23%20pick%20results%20with%20more%20than%202%20duplicates%0A%7C%20sort_by%28.value%29%20%7C%20reverse%20%7C%20from_entries) that you can use to get a good idea of word frequency. Swap out my example source JSON with your own and tweak the numbers (in the word length) to get a sense of which words you can remove. Using this method allowed me to reduce my data file by 70KB.
 
 ---
 
+### Searching and prioritising results
+
+First of all, the generated `search-data.js` is included in my HTML search page. In my case, for (at time of writing) 485 blog posts, that means 580KB of JavaScript (219KB compressed to my visitor).
+
+As the visitor searches, my code checks their query against the following criteria and gives them "hit points":
+
+- URL - 100 hit points per match
+- Title - 100 hit points per match
+- Body text - 1 point for words less than 5 chars, otherwise hit points = word length
+
+Finally, if there's *any* hit, the recency of the post adds points. 100 points divided by the number of years old the post is (where posts this year are "1 year"). I took some time tweaking this algorithm and this is what worked well for me.
+
+Hidden in comments on my own search results page are comments with the hit count "weight" (which I exposed during testing) which gives you an idea how it works:
+
+![](/images/search-hit-points.png)
+
+The hit points determine the order of the results. Rather than dumping a lot of JavaScript into this post, you can view my search JavaScript here - specifically the `find` function is where all the hit point calc happens.
+
+Once the candidates are collected, the results are interpolated into the template (the script tag with the `type="template"` from earlier). Again, this lives in my search JavaScript and of course you can/should use your own version of templating.
+
+---
+
+So that's search.
+
+Dynamic shortcut links extend on the search data, and I rather like it.
+
+## Dynamic shortcut links
+
+Given that I host my blog with Netlify, I'm able to define my own custom redirects. If you navigate to a URL that doesn't exist, you'll hit [my custom 404 page](https://remysharp.com/404).
+
+This is the source to my 404 page:
+
+```pug
+script.
+  const data = !{ JSON.stringify(collections.blog.map(_ => ({ slug: _.slug, url: _.url }))) }
+  const pathname = window.location.pathname.split('/').pop().toLowerCase();
+  const match = data.find(_ => _.slug.includes(pathname));
+  if (match) window.location = match.url;
+
+h1 Redirecting...
+
+script.
+  if (!match) document.getElementsByTagName('h1')[0].innerText = 'Four oh four...'
+
+// rest of my "normal" 404 page here
+```
+
+What does this do? When the page loads, JavaScript immediately kicks in and checks if the URL (pathname only) is a partial match _any_ of the slugs for my blog posts. Remember that `.find` for JavaScript arrays returns the first result (and my `collections.blog` is ordered by most recent first).
+
+If there's a match, JavaScript immediately redirect - and since JavaScript is blocking it prevents the rest of the 404 page from appearing (which shows a list of my most recent posts).
+
+If there's no match, the `h1` heading is changed to my 'Four oh four…' title (yes, a poor joke!). If you inspect the source to [the 404 page](https://remysharp.com/404) you'll see it's crammed full of JSON. It clocks in at 13KB with all that JSON, which isn't terrible, and comparable to any image on my blog.
+
+The Netlify redirect I use is also relatively straight forward (and probably recommended):
+
+```text
+/* /404.html 404
+```
+
+So that's it. You can now jump to the latest post on failing by typing ["remysharp.com" "slash" "fail"](https://remysharp.com/fail) into the browser URL and it'll redirect to the correct post.
+
+All static, with help from Netlify's amazing redirect feature.
