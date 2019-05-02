@@ -36,7 +36,7 @@
     find(encodeURIComponent(val), val);
   }
 
-  $('form.search').onsubmit = function(event) {
+  $('#primary-search').onsubmit = function(event) {
     event.preventDefault();
     search();
   };

@@ -3,9 +3,10 @@ script(defer src="/js/search.js")
 
 h1 Search
 
-form.search
+form#primary-search.search(action="https://www.google.co.uk/search")
   label Search for:&nbsp;
-    input#for(autofocus name="search" placeholder="fragment of post...", type="text")
+    input#for(autofocus name="q" placeholder="fragment of post...", type="text")
+    input(type="hidden" name="q" id="q" value="site:https://remysharp.com")
 
 ul#search-results
 
