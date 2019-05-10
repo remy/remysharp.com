@@ -1,3 +1,14 @@
+---
+title: Reducing Latency
+date: '2019-05-10'
+complete: false
+inprogress: true
+tags:
+  - code
+modified: '2019-05-10 10:39:03'
+draft: true
+---
+
 # Speed
 
 Bottom line: latency based DNS. Only available in AWS AFAIK, plus instances need to be on AWS.

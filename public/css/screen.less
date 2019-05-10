@@ -184,7 +184,8 @@ pre[class*='language-'] code {
 }
 
 pre,
-pre[class*='language-'] {
+pre[class*='language-'],
+.editor {
   padding: 0 0.2em;
   font-family: @code-font;
   margin: 10px 0;
@@ -218,6 +219,22 @@ pre[class*='language-'] {
     display: table-cell !important;
     /* because iOS is just weird */
     -webkit-text-size-adjust: none;
+  }
+
+  .micro-button {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    cursor: pointer;
+    padding: 3px 2px;
+    background: none;
+    outline: 0;
+    border: 0;
+    opacity: 0.4;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   .button {

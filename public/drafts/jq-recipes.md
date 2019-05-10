@@ -8,7 +8,10 @@ tags:
   - code
 draft: true
 ---
+
 # jq recipes
+
+<script async defer src="/js/jq-runner.js"></script>
 
 All demos link to [jqterm](https://jqterm.com) - an alternative interactive jq web terminal with autocomplete (and faster querying with large datasets as they're cached online in private gists).
 
@@ -16,9 +19,9 @@ Here's a collection of jq recipes I've collected over the last few months.
 
 ---
 
-Push on to an existing array (where source is `[1, 2, 3]`):
+Push on to an existing array (where source is `[1, 2, 3]`{id="demo-1"}):
 
-```jq
+```jq {data-source="#demo-1"}
 . + [ 4 ] # result: [ 1, 2, 3, 4 ]
 ```
 
@@ -166,7 +169,7 @@ Or
 
 Add new property to every object in a nested object, i.e. source looks like:
 
-```json
+```json{id="demo-new-prop-1"}
 {
  "offline-panel": {
     "title": "Offline Panel",
@@ -185,7 +188,7 @@ Add new property to every object in a nested object, i.e. source looks like:
 
 Command:
 
-```jq
+```jq{data-source="#demo-new-prop-1"}
 with_entries(.value += { "draft": true})
 ```
 
@@ -196,7 +199,7 @@ with_entries(.value += { "draft": true})
 
 Remove a property from a nested object (example as above):
 
-```jq
+```jq{data-source="#demo-new-prop-1"}
 with_entries(.value |= del(.title))
 ```
 
