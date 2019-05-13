@@ -11,7 +11,7 @@ draft: true
 
 # jq recipes
 
-<script async defer src="/js/jq-runner.js"></script>
+<!-- <script async defer src="/js/jq-runner.js"></script> -->
 
 All demos link to [jqterm](https://jqterm.com) - an alternative interactive jq web terminal with autocomplete (and faster querying with large datasets as they're cached online in private gists).
 
@@ -365,3 +365,13 @@ walk(if type == "array" then map(select(length > 0)) else . end)
 Note that this requires the `walk` method (that was removed in jq@1.5) but included in the demo below
 
 [Demo](https://jqterm.com/cc83a3d78ac417bc2af3541a6047160b?query=def%20walk%28f%29%3A%0A%20%20.%20as%20%24in%0A%20%20%7C%20if%20type%20%3D%3D%20%22object%22%20then%0A%20%20%20%20%20%20reduce%20keys%5B%5D%20as%20%24key%0A%20%20%20%20%20%20%20%20%28%20%7B%7D%3B%20.%20%2B%20%7B%20%28%24key%29%3A%20%20%28%24in%5B%24key%5D%20%7C%20walk%28f%29%29%20%7D%20%29%20%7C%20f%0A%20%20%20%20elif%20type%20%3D%3D%20%22array%22%20then%20map%28%20walk%28f%29%20%29%20%7C%20f%0A%20%20%20%20else%20f%0A%20%20%20%20end%3B%0A%0Awalk%28if%20type%20%3D%3D%20%22array%22%20then%20map%28select%28length%20%3E%200%29%29%20else%20.%20end%29)
+
+---
+
+Install my missing dependencies (determined by using depcheck):
+
+```jq
+.missing | to_entries | map(.key) | join(" ") | "npm i \(.)"
+```
+
+[Demo](https://jqterm.com/237e26cc89e48bc03b2a69d525b017ae?query=.missing%20%7C%20to_entries%20%7C%20map%28.key%29%20%7C%20join%28%22%20%22%29%20%7C%20%22npm%20i%20%5C%28.%29%22&raw=true)
