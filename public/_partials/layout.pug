@@ -45,6 +45,7 @@ else
       meta(name="HandheldFriendly" content="True")
       meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1")
       meta(name="theme-color" content="#1A1A1A")
+      link(rel="canonical" href=`https://remysharp.com${url}`)
       link(rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Remy Sharp's b:log")
 
 
@@ -125,10 +126,17 @@ else
             All code and content for this blog is available as [open source on GitHub](https://github.com/remy/remysharp.com).
 
       block scripts
+        script.
+          if (window.location.hostname === 'remysharp.com') {
+            new Image(1, 1).src = "https://d14rpr34so8h9j.cloudfront.net/pixel.gif?u=" +
+              encodeURIComponent(window.location.pathname) +
+              (document.referrer ? "&r=" + encodeURIComponent(document.referrer): "");
+          }
+        noscript
+          img(src=`https://d14rpr34so8h9j.cloudfront.net/pixel.gif?u=${ encodeURIComponent(url)}`)
+
         script(src=`/js/permalink.js?${version}`)
         script(src=`/js/index.js?${version}`)
-
-      //- img(src="https://us-central1-ua-log.cloudfunctions.net/logger")
       script(type="awesome/sauce")
         |
         |
