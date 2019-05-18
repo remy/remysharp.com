@@ -15,6 +15,7 @@ prompt.className = 'bash-prompt';
 prompt.innerHTML = '$ ';
 
 $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
+  if (el.getAttribute('data-plain')) return;
   const firstChild = el.firstChild;
   if (firstChild.nodeName === '#text') {
     if (firstChild.nodeValue === '$ ') {
