@@ -12,6 +12,7 @@
   "author": "Remy Sharp",
   "license": "MIT",
   "dependencies": {
+    "approximate-number": "^2.0.0",
     "chokidar": "^2.1.2",
     "date-fns": "^1.30.1",
     "fast-glob": "^2.2.6",
@@ -23,6 +24,7 @@
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-attrs": "^2.3.4",
     "markdown-it-prism": "^2.0.1",
+    "markdown-it-task-lists": "^2.1.1",
     "prismjs": "^1.16.0",
     "pug": "^2.0.3",
     "recursive-copy": "^2.0.10",

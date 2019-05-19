@@ -1,14 +1,11 @@
 /* eslint-env browser */
+/* global disqus_shortname */
 'use strict';
 var comments = document.getElementById('disqus_thread');
 var disqusLoaded = false;
 
 const $$ = (s, context = document) => Array.from(context.querySelectorAll(s));
 const $ = (s, context = document) => context.querySelector(s) || {};
-
-// $$('.post-content > p').forEach(el => {
-//   el.innerHTML = el.innerHTML.replace(/(\S+\s\S+)$/gm, '<nobr>$1</nobr>');
-// });
 
 const prompt = document.createElement('span');
 prompt.className = 'bash-prompt';
@@ -43,12 +40,12 @@ function loadDisqus() {
 
 //Get the offset of an object
 function findTop(obj) {
-  var curtop = 0;
+  var top = 0;
   if (obj.offsetParent) {
     do {
-      curtop += obj.offsetTop;
+      top += obj.offsetTop;
     } while ((obj = obj.offsetParent)); // jshint ignore:line
-    return curtop;
+    return top;
   }
 }
 
@@ -142,12 +139,6 @@ $('body').onkeydown = function(event) {
   }
 };
 
-// try {
-//   if (localStorage.plain) {
-//     $('head').append('<link rel="stylesheet" href="/css/plain.css">');
-//   }
-// } catch (e) {}
-
 if (comments) {
   loadDisqus();
   var commentsOffset = findTop(comments);
@@ -159,10 +150,12 @@ if (comments) {
   };
 }
 
+// if we're on the homepage, then load flickr images
 if ($$('#index-page').length) {
   loadFlickr();
 }
 
+// the edit link for blog posts
 if (document.body.id.indexOf('blog-') === 0) {
   var h1First = $('h1');
   var html = `<small class="edit"><a href="${
@@ -203,8 +196,6 @@ $$('.runnable').forEach(function(pre) {
   $(this).after(button);
   var running = false;
   button.on('click', function() {
-    // dear past Remy: why do you mix jQuery with vanilla DOM scripting?
-    // Well…because vanilla is habbit, jQuery is just here as a helper.
     var code = pre.innerText;
     if (iframe || running) {
       iframe.parentNode.removeChild(iframe);

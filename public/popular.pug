@@ -1,0 +1,9 @@
+h1 Popular posts
+p Below are the most popular viewed posts I've written, adjusted for time online.
+
+ol.popular
+  for post in collections.popular.slice(0, 20)
+    li
+      a(href=`${ post.url }`) #{ post.data.title }
+      div
+        span #{ approx(post.data.views) } views &bullet; <abbr title="average">avg</abbr> #{ post.data.index | 0 } views/day &bullet; Posted on #{ moment(post.data.date).format('D-MMM YYYY')}
