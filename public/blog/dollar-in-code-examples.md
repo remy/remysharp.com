@@ -19,7 +19,7 @@ So here's two ways you can prefix terminal code examples with a `$` and not make
 
 I'm mixed on whether the source of my posts include the `$` in the code examples, but this method will add it in afterwards, but splitting the `code` element into individual lines, then wrapping each line with a `span` element that's styled with a `:before` pseudo selector.
 
-Firstly the JavaScript. I'm making an assumption that all code examples for the terminal have a class name of `.bash` (yours might be something similar, or you could apply to _all_ elements):
+Firstly the JavaScript. I'm making an assumption that all bash code examples for the terminal have a class name of `.bash` (yours might be something similar, or you could apply to _all_ elements):
 
 ```javascript
 // I've used vanilla JS, but feel free to port to jQuery, etc
@@ -62,8 +62,10 @@ But sometimes I don't want *every* line to be prefixed with the prompt, either w
 Rather than splitting every line and wrapping them in a `span.line` element, what I could do instead is to assume that the `$` symbol is in the original markup, and wrap *only* the `$` symbol and using CSS make it *unselectable*.
 
 ```javascript
+const $ = (s, ctx = document) => Array.from(ctx.querySelectorAll(s));
 const prompt = '<span class="prompt">$ </span>';
-$('code.bash').each(elem => {
+
+$('code.bash').forEach(elem => {
   el.innerHTML = el.textContent
     .split('\n') // break into individual lines
     .map(line => line.replace(/^\$ /, prompt))
@@ -71,7 +73,7 @@ $('code.bash').each(elem => {
 });
 ```
 
-This regexp makes sure the line starts with a `$` symbol _and_ is followed by a space (so it doesn't capture variables), and with the following CSS applied to the `span.prompt` element, the `$` is unselectable and the code can be copied and pasted:
+This regexp makes sure the bash lines starting with a `$` symbol _and_ is followed by a space (so it doesn't capture variables), and with the following CSS applied to the `span.prompt` element, the `$` is unselectable and the code can be copied and pasted:
 
 ```css
 .prompt {
@@ -90,4 +92,4 @@ $ curl -X POST \
        https://jsonbin.org/remy/urls
 ```
 
-Nice and simple, and I like that my code examples can now be safely copied without accidentally messing up the command (and I've dropped in the opacity to try to visually indicate that it's less important than the code).
+Nice and simple, and I like that my bash code examples can now be safely copied without accidentally messing up the command (and I've dropped in the opacity to try to visually indicate that it's less important than the code).
