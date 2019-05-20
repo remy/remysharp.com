@@ -1,5 +1,14 @@
 {
   "mods": {
+    "2238487055": {
+      "read": "2018-01-02T00:00:00Z",
+      "started": "2017-12-30T00:00:00Z"
+    },
+    "2806537476": {
+      "//": "I Had a Black Dog:…",
+      "read": "2019-05-02",
+      "started": "2019-05-02"
+    },
     "2523022408": {
       "//": "saga",
       "started": "2018-10-28"
@@ -39,42 +48,22 @@
       "//": "we should all be feminists",
       "started": "2016-01-15",
       "read": "2016-01-15"
+    },
+    "2644029997": {
+      "//": "truth pixie",
+      "started": "2018-12-17T00:00:00Z",
+      "read": "2018-12-29T00:00:00Z"
+    },
+    "2249269460": {
+      "//": "The Unbeatable Squirrel Girl, Vol. 1: Squirrel Power (Paperback)",
+      "started": "2018-01-05",
+      "read": "2018-01-07"
+    },
+    "2419215723": {
+      "//": "Jessica Jones, Vol. 2: The Secrets of Maria Hill",
+      "started": "2018-06-10",
+      "read": "2018-06-10"
     }
   },
-  "reviews": [
-    {
-      "id": "2238487055",
-      "review": "Loved this book. For me, it puts a magnifying glass on the grotesque behaviours that men have and still do, inflict on women, simply because of gender, this warped idea that one is stronger than the other. As a man this book is a huge insight into the reality of the power struggle, along with being a great page turner and great thriller.",
-      "rating": "5",
-      "spoiler": "false",
-      "read": "2018-01-02T00:00:00Z",
-      "started": "2017-12-30T00:00:00Z",
-      "url": "https://www.goodreads.com/review/show/2238487055",
-      "book": {
-        "author": "Naomi Alderman",
-        "title": "The Power",
-        "image": "https://images.gr-assets.com/books/1492031819m/31195557.jpg",
-        "url": "https://www.goodreads.com/book/show/31195557-the-power",
-        "pages": {},
-        "description": "In <i>The Power</i> the world is a recognisable place: there's a rich Nigerian kid who lounges around the family pool; a foster girl whose religious parents hide their true nature; a local American politician; a tough London girl from a tricky family. But something vital has changed, causing their lives to converge with devastating effect. Teenage girls now have immense physical power - they can cause agonising pain and even death. And, with this small twist of nature, the world changes utterly.<br /><br />This extraordinary novel by Naomi Alderman, a <i>Sunday Times</i> Young Writer of the Year and Granta Best of British writer, is not only a gripping story of how the world would change if power was in the hands of women but also exposes, with breath-taking daring, our contemporary world."
-      }
-    },
-    {
-      "id": "2644029997",
-      "review": "Good to read aloud to the kids (took about 15-20 minutes), and a beautiful message in the story <br />, whereby the adult reading...me...might have caught a frog in their throat!<br /><br />The truth pixie lives a life of loneliness because she always tells the truth, and that truth can get her in to trouble. She decides to leave home and during her adventure meets a girl who is sad because she's going to be moving home away from friends and everything she knows. <br /><br />The truth pixie tells her that it will be sad, and there will be times in life that she'll be lonely, but that life is full of wonderful moments and love and warmth. A good message to remind ourselves of during the day to day grind of life.<br /><br />Also beautifully illustrated.",
-      "rating": "4",
-      "spoiler": "true",
-      "started": "2018-12-17T00:00:00Z",
-      "read": "2018-12-29T00:00:00Z",
-      "url": "https://www.goodreads.com/review/show/2644029997",
-      "book": {
-        "author": "Matt Haig",
-        "title": "The Truth Pixie (Christmas Series, #3.5)",
-        "image": "https://images.gr-assets.com/books/1535056705m/41443051.jpg",
-        "url": "https://www.goodreads.com/book/show/41443051-the-truth-pixie",
-        "pages": "119",
-        "description": "From number one bestselling author Matt Haig comes a hilarious and heartwarming story, brilliantly illustrated throughout by Chris Mould Wherever she is, whatever the day, She only has one kind of thing to say. Just as cats go miaow and cows go moo, The Truth Pixie can only say things that are true."
-      }
-    }
-  ]
+  "reviews": []
 }

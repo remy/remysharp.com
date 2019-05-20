@@ -7,10 +7,10 @@ These lists also include projects I want to build throughout the year.
 
 ## Blog
 
-- [ ] Currently reading - from goodreads
 - [ ] Move flickr images to SSR
 - [ ] Likes via indie web…thing
 - [ ] Add my newsletter archive
+- [x] Currently reading - from goodreads
 - [x] Popular posts - gathered from Google Analytics
 
 ## 2016

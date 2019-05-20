@@ -4,3 +4,4 @@ test/
 .vscode
 /demo/
 _site
+.env

@@ -2,9 +2,20 @@
   h1.title Books
   div.post-content
     :markdown
-      These are the books I've read and posted reviews on Goodreads.
+      These are the books I'm currently reading, and have read with my reviews on [Goodreads](https://www.goodreads.com/remysharp).
+
+  .post-content.currently-reading
+    h2 Currently
+    each book in _currently
+      div
+        img(src=`${book.image}`)
+        div
+          p.title
+            a(href=`${book.url}` target="_blank")= book.title
+          p.by By #{book.author}
 
   .post-content
+    h2 Previously
     table.reviews
       thead
         tr
@@ -34,6 +45,9 @@
                   a(href=`${review.url}`) My review
                   if review.spoiler === "true"
                     span &nbsp;(includes spoilers)
+                  if review.summary
+                    br
+                    span= review.summary
             td #{review.book.author}
             td
               span.rating(data-rating=`${ review.rating }` aria-label=`${ review.rating } stars out of 5`)
