@@ -10,9 +10,15 @@ const $ = (s, context = document) => context.querySelector(s) || {};
 const prompt = '<span class="bash-prompt">$ </span>';
 
 $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
-  if (el.getAttribute('data-plain')) return;
+  if (el.getAttribute('data-plain') !== null) return;
 
-  el.innerHTML = el.textContent
+  // add to all bash code examples
+  if (!el.innerHTML.startsWith('$ ')) {
+    el.innerHTML = prompt + el.innerHTML;
+    return;
+  }
+
+  el.innerHTML = el.innerHTML
     .split('\n') // break into individual lines
     .map(line => line.replace(/^\$ /, prompt))
     .join('\n'); // join the lines back up
