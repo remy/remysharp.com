@@ -9,7 +9,7 @@ tags:
 
 # Bare Import Cost
 
-This post is about `import` in JavaScript. This post, I'm afraid doesn't have any grand solutions or even semi-grand conclusions. In fact, by way of disclaimer, this is more of a stream of concious thought.
+This post is about `import` in JavaScript. This post, I'm afraid doesn't have any grand solutions or even semi-grand conclusions. In fact, by way of disclaimer, this is more of a stream of conscious thought.
 
 In my travels across the web lately, I keep coming across JavaScript libraries whereby the very first line in the "usage" is:
 
