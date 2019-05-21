@@ -1,5 +1,5 @@
 ---
-title: Full Frontal JavaScript Conference
+title: Launching Full Frontal JavaScript Conference
 date: '2009-04-20 13:50:08'
 published: true
 tags:
@@ -10,9 +10,9 @@ tags:
   - web
 modified: '2016-04-03 12:51:25'
 ---
-# Full Frontal JavaScript Conference
+# Launching Full Frontal JavaScript Conference
 
-Today the Full Frontal JavaScript conference site goes live: [full-frontal.org](http://full-frontal.org).
+Today the Full Frontal JavaScript conference site goes live: [full-frontal.org](https://ffconf.org).
 
 It's one day JavaScript conference hosted in Brighton, UK in the World's first purpose built cinema: [The Duke of York's](http://www.picturehouses.co.uk/cinema_home_date.aspx?venueId=doyb).
 
