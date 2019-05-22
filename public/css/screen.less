@@ -1516,3 +1516,36 @@ video {
 
   }
 }
+
+.webmentions img {
+  width: 32px;
+  margin: 0;
+  display: block;
+  border-radius: 50%;
+  // border: 1px solid #ddd;
+}
+
+.webmentions p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.webmentions .more-likes {
+  box-sizing: content-box;
+}
+
+.webmentions a,
+.webmentions a:hover,
+.webmentions .more-likes {
+  display: inline-block;
+  margin-left: -8px;
+  border: 2px solid white;
+  border-radius: 50%;
+  // margin: 0 -3px;
+}
+
+.webmentions a:first-child,
+.webmentions a:hover:first-child {
+  margin-left: 12px;
+}

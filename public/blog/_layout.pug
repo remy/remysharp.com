@@ -58,6 +58,10 @@ block content
 
         p.metadata Posted #{moment(date).format('D-MMM YYYY')} under #{(tags || []).join(' & ')}.
 
+        if likes
+          .webmentions
+            p 👍 #{likes} likes !{likeImages}
+
         if !nosubscribe && !amp
           footer.follow.update
             include ../_partials/subscribe

@@ -1,7 +1,7 @@
 ---
 title: Compiling binaries for Netlify
 date: 2019-05-20
-category:
+tags:
 - code
 ---
 
