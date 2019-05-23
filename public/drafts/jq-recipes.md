@@ -375,3 +375,23 @@ Install my missing dependencies (determined by using depcheck):
 ```
 
 [Demo](https://jqterm.com/237e26cc89e48bc03b2a69d525b017ae?query=.missing%20%7C%20to_entries%20%7C%20map%28.key%29%20%7C%20join%28%22%20%22%29%20%7C%20%22npm%20i%20%5C%28.%29%22&raw=true)
+
+---
+
+How to avoid non-existant keys when filtering for `null`. Where `endpoint` is sometimes missing, sometimes it's set to `null` and I want those objects. First ensure the key is present, then select if `null`:
+
+```jq
+map(select(has("endpoint") and .endpoint == null))
+```
+
+[Demo](https://jqterm.com/ff4823e49baba815aad30eb0d8beecef?query=map%28select%28has%28%22endpoint%22%29%20and%20.endpoint%20%3D%3D%20null%29%29)
+
+---
+
+How to find find null, ignoring non-existant keys - the invert of the above:
+
+```jq
+map(select(has("endpoint") | not))
+```
+
+[Demo](https://jqterm.com/ff4823e49baba815aad30eb0d8beecef?query=map%28select%28has%28%22endpoint%22%29%20%7C%20not%29%29)
