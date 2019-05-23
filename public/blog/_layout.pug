@@ -33,14 +33,14 @@ block content
     include ../_partials/post-nav
 
   main.content
-    article.post.amp-wp-article
+    article.post.amp-wp-article.h-entry
       if amp
         h1.title= title
       else
-        h1(data-edit=`https://github.com/remy/remysharp.com/blob/master/public/blog/${current.source}.md`).title
-          a(href=`${url}` rel="bookmark" title=`Permanent Link: ${title}`)= title
+        h1(data-edit=`https://github.com/remy/remysharp.com/blob/master/public/blog/${current.source}.md`).title.p-name
+          a(href=`${site_url}${url}` rel="bookmark" title=`Permanent Link: ${title}`).u-url.u-uid= title
 
-      .post-content
+      .post-content.e-content
         //- strip the h1 out of the body as we printed it above as the permalink
         //- - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
         if amp
@@ -56,11 +56,12 @@ block content
           //- else
           != yield
 
-        p.metadata Posted #{moment(date).format('D-MMM YYYY')} under #{(tags || []).join(' & ')}.
+        p.metadata Posted <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under #{(tags || []).join(' & ')}.
 
         if likes
           .webmentions
-            p 👍 #{likes} likes !{likeImages}
+            p 👍 #{likes} likes
+            div !{likeImages}
 
         if !nosubscribe && !amp
           footer.follow.update
