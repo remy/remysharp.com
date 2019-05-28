@@ -42,6 +42,7 @@ else
       - var desc = title === site_title ? title + ' :: ' + site_description : title || site_description
       meta(name="source" content="https://github.com/remy/remysharp.com")
       meta(name="description" content=`${desc}`)
+      meta(name="author" content="Remy Sharp")
       meta(name="HandheldFriendly" content="True")
       meta(name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1")
       meta(name="theme-color" content="#1A1A1A")
@@ -60,12 +61,6 @@ else
       link(rel="shortcut icon" href="/favicon.ico")
       link(rel="stylesheet" href="/css/prism.css")
       link(rel="stylesheet" href=`/css/screen.css?${version}`)
-      script
-        | try {
-        |  if (localStorage.plain == 1) {
-        |    document.head.innerHTML += '<link rel="stylesheet" href="/css/plain.css?#{version}">';
-        |   }
-        | } catch (e) {}
 
       link(rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://feeds.feedburner.com/remysharp")
       link(rel="alternate" type="text/xml" title="RSS .92" href="https://feeds.feedburner.com/remysharp")
@@ -106,8 +101,8 @@ else
             li: a(href="/attic") The Attic
             li: a(target="_blank" href="/feed.xml") RSS feed
             li: a(href="/search") Search
-            li: a(target="_blank" href="https://github.com/remy") On GitHub
-            li: a(target="_blank" href="https://twitter.com/rem") On Twitter
+            li: a(target="_blank" rel="me" href="https://github.com/remy") On GitHub
+            li: a(target="_blank" rel="me" href="https://twitter.com/rem") On Twitter
 
         .flex-item.license
           .row
