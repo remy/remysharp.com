@@ -1,8 +1,8 @@
 ---
-title: "But…"
+title: 'But…'
 date: 2017-08-12 11:42:20
 tags:
-- personal
+  - personal
 ---
 
 # But…
@@ -28,3 +28,5 @@ I'm totally guilty of this, but I didn't _really_ notice until I had kids. I fin
 …then I'd catch myself. "But". But…somehow it's their fault? Is that what I want to pass on? It's like I'm faking being sorry.
 
 So I think this is a word I'd like to retire now, certainly retire in the context of apologies. When I see it included after something like "I'm not racist, but—" I'm _always_ going to think the opposite.
+
+_[Originally posted on remy.blog](https://rems.life/but/)_
