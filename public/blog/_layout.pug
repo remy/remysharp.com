@@ -21,40 +21,26 @@ block meta
     meta(name="twitter:image:src" content=`https://remysharp.com/images/avatar-125.jpg`)
     meta(name="twitter:card" content="summary")
 
-block ampalt
-  - permalink = '/' + moment(date).format('YYYY/MM/DD') + '/' + current.source;
-  link(rel="amphtml" href=`https://remysharp.com${url}/amp`)
-
 block content
   - permalink = url;
   - safeTitle = data.title.replace(/'/g, '\\\'')
 
-  if !amp
-    include ../_partials/post-nav
+  include ../_partials/post-nav
 
   main.content
-    article.post.amp-wp-article.h-entry
-      if amp
-        h1.title= title
-      else
-        h1(data-edit=`https://github.com/remy/remysharp.com/blob/master/public/blog/${current.source}.md`).title.p-name
-          a(href=`${site_url}${url}` rel="bookmark" title=`Permanent Link: ${title}`).u-url.u-uid= title
+    article.post.h-entry
+      h1(data-edit=`https://github.com/remy/remysharp.com/blob/master/public/blog/${current.source}.md`).title.p-name
+        a(href=`${site_url}${url}` rel="bookmark" title=`Permanent Link: ${title}`).u-url.u-uid= title
 
       .post-content.e-content
-        //- strip the h1 out of the body as we printed it above as the permalink
-        //- - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
-        if amp
-          - yield = yield.replace(/<p><img(.*?)><\/p>/g, '<amp-img layout="responsive"$1></amp-img>');
-          != yield
-        else
-          //- - if (yield) res = split(yield.replace(/<h1>.*?<\/h1>/, ''));
-          //- if res
-          //-   != res[0]
-          //-   if (!nosubscribe && tags.indexOf('personal') === -1)
-          //-     != partial('../_partials/' + (ad || 'terminal') + '-ad')
-          //-   != res[1]
-          //- else
-          != yield
+        //- - if (yield) res = split(yield.replace(/<h1>.*?<\/h1>/, ''));
+        //- if res
+        //-   != res[0]
+        //-   if (!nosubscribe && tags.indexOf('personal') === -1)
+        //-     != partial('../_partials/' + (ad || 'terminal') + '-ad')
+        //-   != res[1]
+        //- else
+        != yield
 
         p.metadata Posted <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under #{(tags || []).join(' & ')}.
 
@@ -63,16 +49,10 @@ block content
             p 👍 #{likes} likes
             div !{likeImages}
 
-        if !nosubscribe && !amp
+        if !nosubscribe
           footer.follow.update
             include ../_partials/subscribe
-        //- if !amp
-        //-   #code-sponsor-widget
-        //-   script(async defer src="https://app.codesponsor.io/scripts/vzZ1-MnjP7scUNCV7uya0A?theme=light&width=660")
-      if amp
-        footer
-          a(href=`${url}#comments`) Leave a comment
-      else if NODE_ENV == "production"
+      if NODE_ENV == "production"
         #comments.comments
           h2 Comments
           #disqus_thread
@@ -80,5 +60,3 @@ block content
             var disqus_shortname = 'remysharp';
             var disqus_url = 'https://remysharp.com#{url}/';
             var disqus_title = '#{safeTitle}';
-          //- noscript Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-          //- a.dsq-brlink(href="http://disqus.com") comments powered by <span class="logo-disqus">Disqus</span></a>

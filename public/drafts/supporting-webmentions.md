@@ -59,7 +59,7 @@ I'll acknowledge that starting with a form is a great form of progressive enhanc
 
 If the status quo gets stuck at: I write a post, you write a response post (or separate commentary), then you have to come _back_ to my post to enter your blog post URL to notify me of a WebMention…it feels…cumbersome and like it might not stand the test of time.
 
-If feels like the ability to send WebMentions needs to be a part of an automated workflow - the same way as posting a new WordPress blog post automatically sent pingback.
+If feels like the ability to send WebMentions needs to be a part of an automated workflow - the same way as posting a new WordPress blog post automatically sent pingbacks.
 
 ## Automatically sending WebMention notifications
 
