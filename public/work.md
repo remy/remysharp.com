@@ -16,19 +16,21 @@ My name is Remy Sharp, I'm a web developer from Brighton in the UK working comme
 
 I've been working professionally on the web since 1999 and have a great deal of experience through experimentation, developing and deploying.
 
-I am highly skilled with JavaScript, both client side and backend (via node), but I'm also extremely competent with CSS and HTML, application architecture, performance, and the odd sysops here and there.
+I specialise in prototype software and rapid turn around of proof-of-concept software.
+
+I am highly skilled with JavaScript, both client side and backend (via node), and am also extremely competent with CSS and HTML, application architecture, performance, and debugging. My code is a mixture of pure JavaScript, React, Vue, static site generators and more.
 
 I'm open to anything interesting and challenging in front-end, node.js, or mobile web.
 
-I also run training for your developers, again focused around JavaScript. Details of available workshops can be found on my business web site: [Left Logic](http://leftlogic.com/training).
+I also run training for your developers focused around JavaScript. Details of available workshops can be found on my business web site: [Left&nbsp;Logic](http://leftlogic.com/training).
 
 ### Rate and availability
 
 My working week is Tuesday to Friday, and for full time dev projects. For projects, I will work with you to understand the requirements and if we both believe we would make good partners for the project, I will send through a fixed quote.
 
-I am also available for monthy retainer (please ask for details) where your team will have 24x7 access to ask me anything that can help your product.
+I am also available for monthly retainer (please ask for details) where your team will have 24x7 access to ask me anything that can help your product.
 
-I work remotely, and am happy to visit for face-to-face meetings.
+I work remotely but am happy to visit for face-to-face meetings.
 
 ### Let's work together
 
