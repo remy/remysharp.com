@@ -1482,6 +1482,48 @@
         "start": "2019-02-06"
       },
       "url": "https://www.meetup.com/t-shaped-talks/events/258290365/"
+    },
+
+    {
+      "slug": "2019_frontendne",
+      "event": "Frontend NE",
+      "location": "England, Newcastle",
+      "title": "Using a modern web to recreate 1980s horribly slow and loud loading screens",
+      "year": 2019,
+      "links": [
+        ["slides", "https://talks.zx.isthe.link/"],
+        ["demos", "https://zx.isthe.link/"]
+      ],
+      "date": {
+        "start": "2019-04-03"
+      },
+      "url": "https://2019.frontendne.co.uk/"
+    },
+    {
+      "slug": "2019_alldayhey",
+      "event": "All Day Hey",
+      "location": "England, Leeds",
+      "title": "Using a modern web to recreate 1980s horribly slow and loud loading screens",
+      "year": 2019,
+      "links": [
+        ["slides", "https://talks.zx.isthe.link/"],
+        ["demos", "https://zx.isthe.link/"]
+      ],
+      "date": {
+        "start": "2019-05-03"
+      },
+      "url": "https://2019.alldayhey.com/"
+    },
+    {
+      "slug": "2019_alldayhey",
+      "event": "SmashingConf New York",
+      "location": "United States, New York",
+      "title": "TBA",
+      "year": 2019,
+      "date": {
+        "start": "2019-10-16"
+      },
+      "url": "https://smashingconf.com/ny-2019/"
     }
   ]
 }

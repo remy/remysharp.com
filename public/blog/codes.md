@@ -94,4 +94,4 @@ It's unfair to expect that those individuals *should* have reported the event at
 
 I collect resources on handling these situations and ways to make events safer. If you want to expose yourself to more I'd recommend reading through some (if not all) of the posts I've [collected on pinboard](https://pinboard.in/u:rem/t:coc), and following the authors and advocates where possible.
 
-If you have any reading recommendations or suggestions, I'd love for you to share in the comments, in your own blog post or via Twitter (or you can [email me](mail to:remy@leftlogic.com) if you prefer not to post publicly).
+If you have any reading recommendations or suggestions, I'd love for you to share in the comments, in your own blog post or via Twitter (or you can [email me](mailto:remy@leftlogic.com) if you prefer not to post publicly).
