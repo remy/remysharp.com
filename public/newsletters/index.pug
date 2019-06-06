@@ -1,0 +1,28 @@
+.post-content
+  p Below are all the newsletters I've sent since 2017. You can subscribe to receive these directly to your email too, or <a href="#content">skip to view the complete archive</a>.
+  script(async id="_ck_231094" src="https://forms.convertkit.com/231094?v=6")
+
+- last = null
+- year = null
+- index = 0;
+- post = _data[index]
+a(name="content")
+while post
+  if post.date
+    if !year || moment(post.date).format('YYYY') == year
+      - month = moment(post.date).format('MMMM')
+      - postYear = moment(post.date).format('YYYY')
+      if !year && last != postYear
+        h1.title= postYear
+        - last = postYear
+      .post-content
+        ul
+          while post && (!postYear || moment(post.date).format('YYYY') == postYear)
+            if post && post.date
+              li
+                a(href=`/newsletters/${ post.url }/`)= moment(post.date).format('MMMM')
+            - post = _data[index += 1];
+    else
+      - post = _data[index += 1];
+  else
+    - post = _data[index += 1];

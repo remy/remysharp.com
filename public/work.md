@@ -4,12 +4,12 @@
 
 My name is Remy Sharp, I'm a web developer from Brighton in the UK working commercially on the web since 1999.
 
-### You may know me from:
+### You may know me from
 
 - My blog ([here](/))
-- My open source projects, such as [JS Bin](https://jsbin.com), [nodemon](http://nodemon.io), [jsconsole](http://jsconsole.com), [5 minute fork](http://5minfork.com) and [others](https://github.com/remy)
-- My conference: [ffconf](http://ffconf.org) - one of the most popular UK front end developer events
-- My books: [Introducing HTML5 (published by Voices That Matter)](https://www.amazon.com/Introducing-HTML5-Voices-That-Matter/dp/0321784421/ref=sr_1_1) & [Working The Command Line (published by A Book Apart)](https://abookapart.com/products/working-the-command-line)
+- My open source projects, such as [JS Bin](https://jsbin.com), [nodemon](https://nodemon.io), [jsconsole](https://jsconsole.com) and [many other open source projects](https://github.com/remy)
+- My conference: [ffconf](https://ffconf.org) - one of the most popular UK front end developer events
+- My books: [Introducing HTML5](https://www.amazon.com/Introducing-HTML5-Voices-That-Matter/dp/0321784421/ref=sr_1_1) & [Working The Command Line](https://abookapart.com/products/working-the-command-line)
 - My [speaking and workshops](/speaking)
 
 ### Type of work I can help you with
@@ -28,7 +28,7 @@ I also run training for your developers focused around JavaScript. Details of av
 
 My working week is Tuesday to Friday, and for full time dev projects. For projects, I will work with you to understand the requirements and if we both believe we would make good partners for the project, I will send through a fixed quote.
 
-I am also available for monthly retainer (please ask for details) where your team will have 24x7 access to ask me anything that can help your product.
+I also work with clients on a monthly retainer (please ask for details) where your team will have 24x7 access to ask me anything that can help your product.
 
 I work remotely but am happy to visit for face-to-face meetings.
 

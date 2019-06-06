@@ -1,0 +1,24 @@
+extends ../_partials/layout
+
+block content
+  - permalink = '/newsletters/' + current.source;
+
+  - var timestamp = '';
+  - if (current.source !== 'index')
+    - timestamp = modified || date || new Date(0);
+
+  main.content
+    article.post
+      if current.source !== 'index'
+        h1.title
+          a(href=`${permalink}`)= title
+        .post-content
+          //- strip the h1 out of the body as we printed it above as the permalink
+          - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
+          != yield
+          script(async id="_ck_231094" src="https://forms.convertkit.com/231094?v=6")
+          footer.work-with-me
+            include ../_partials/work-with-me
+      else
+        h1.title Newsletter Archive
+        != yield
