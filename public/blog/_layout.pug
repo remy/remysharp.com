@@ -49,9 +49,13 @@ block content
             p 👍 #{likes} likes
             div !{likeImages}
 
-        if !nosubscribe
-          footer.follow.update
-            include ../_partials/subscribe
+
+        if data.tags && data.tags.indexOf('personal') === -1
+          footer.work-with-me
+            include ../_partials/work-with-me
+        //- if !nosubscribe
+        //-   footer.follow.update
+        //-     include ../_partials/subscribe
       if NODE_ENV == "production"
         #comments.comments
           h2 Comments

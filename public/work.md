@@ -9,7 +9,7 @@ My name is Remy Sharp, I'm a web developer from Brighton in the UK working comme
 - My blog ([here](/))
 - My open source projects, such as [JS Bin](https://jsbin.com), [nodemon](http://nodemon.io), [jsconsole](http://jsconsole.com), [5 minute fork](http://5minfork.com) and [others](https://github.com/remy)
 - My conference: [ffconf](http://ffconf.org) - one of the most popular UK front end developer events
-- My book: [Introducing HTML5](http://www.amazon.co.uk/Introducing-HTML-Voices-That-Matter/dp/0321687299/ref=sr_1_3?ie=UTF8&qid=1441880606&sr=8-3&keywords=introducing+html5)
+- My books: [Introducing HTML5 (published by Voices That Matter)](https://www.amazon.com/Introducing-HTML5-Voices-That-Matter/dp/0321784421/ref=sr_1_1) & [Working The Command Line (published by A Book Apart)](https://abookapart.com/products/working-the-command-line)
 - My [speaking and workshops](/speaking)
 
 ### Type of work I can help you with

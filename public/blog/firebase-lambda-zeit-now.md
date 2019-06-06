@@ -1,7 +1,7 @@
 ---
 title: Firebase + Lambda + Zeit now
 date: 2019-06-05
-category:
+tags:
   - code
 ---
 
