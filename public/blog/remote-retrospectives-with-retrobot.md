@@ -7,6 +7,7 @@ tags:
   - business
 published: true
 ---
+
 # Remote retrospectives with Retrobot
 
 At [Snyk](https://snyk.io) the team was partially remote (Tel Aviv, London and Brighton) and we developed over two week sprints with a retrospective at the end.
@@ -21,17 +22,17 @@ The process was sound in theory, but felt awkward to all involved.
 
 I wrote a Slackbot called [Retrobot](https://github.com/remy/retrobot#-retrobot) (available as open source under MIT on Github) that you can deploy to your own machines to run your retrospectives.
 
-Snyk used the Retrobot successfully as a replacement to the old practice and the retrospectives felt a *lot* more effective.
+Snyk used the Retrobot successfully as a replacement to the old practice and the retrospectives felt a _lot_ more effective.
 
 Before I go on to explain the why, here's how the Retrobot works after you've deployed it (and there's a handy "deploy to Heroku" if you don't have sysops-chops):
 
 1. You invite @retrobot a channel (we used `#retro` as the channel name)
-- Tell the bot to start the retrospective: `@retrobot start 5m` (and automatically end in 5 minutes)
-- The bot invites everyone who's active in the `#retro` channel to a private DM session, asking for "worked well" and "needs work" items, indicated by a prefix of `+` and `-` respectively
-- Once the retro is over, the bot invites everyone back into the `#retro` channel, and prints out a shuffled list of what worked well, and what needs work
-- Everyone is then asked to 👍 the items that need work that they want to action from the retrospective, and once the person running the retrospective is satisfied everyone is done, they ask the bot for a summary: `@retrobot summary` which prints the top three items with the most 👍s
+2. Tell the bot to start the retrospective: `@retrobot start 5m` (and automatically end in 5 minutes)
+3. The bot invites everyone who's active in the `#retro` channel to a private DM session, asking for "worked well" and "needs work" items, indicated by a prefix of `+` and `-` respectively
+4. Once the retro is over, the bot invites everyone back into the `#retro` channel, and prints out a shuffled list of what worked well, and what needs work
+5. Everyone is then asked to 👍 the items that need work that they want to action from the retrospective, and once the person running the retrospective is satisfied everyone is done, they ask the bot for a summary: `@retrobot summary` which prints the top three items with the most 👍s
 
-There's a few nice side effects too. Since Slack has support for emojis, you can add *any* emoji to an item to indicate your opinion on an item. So if Josh tells the retrobot that he liked his welcoming to the team, Anna might add 💙🍰🎆 to the item.
+There's a few nice side effects too. Since Slack has support for emojis, you can add _any_ emoji to an item to indicate your opinion on an item. So if Josh tells the retrobot that he liked his welcoming to the team, Anna might add 💙🍰🎆 to the item.
 
 Here's a few examples of what it looks like:
 
@@ -49,7 +50,7 @@ Having a remote team meant that we can't run white board sessions as often. One 
 
 Being remote also meant we had a number of tools already in our workflow, and Google spreadsheets didn't quite work for us. However, since we were all using Slack daily, this looked to fit well.
 
-We also noted that during our current process, there wasn't really much time to discuss the positive aspects of the sprint, but using Slack's emoji system is a *really* nice way to emote positive reactions to work done by others.
+We also noted that during our current process, there wasn't really much time to discuss the positive aspects of the sprint, but using Slack's emoji system is a _really_ nice way to emote positive reactions to work done by others.
 
 ## How it works
 
@@ -62,13 +63,13 @@ The life cycle looks a little like this:
 - handle channel messages: start, stop, summary, etc
 - handle DM messages: +/- for worked well, needs work
 - on retro start:
- - reset retrospective (check if flushed or not)
- - list all the members of the channel that are active (ignoring DND and away)
- - send each on a DM with the summary help
- - add all messages to appropriate arrays
- - handle any errors (prefix needs +/-)
+- reset retrospective (check if flushed or not)
+- list all the members of the channel that are active (ignoring DND and away)
+- send each on a DM with the summary help
+- add all messages to appropriate arrays
+- handle any errors (prefix needs +/-)
 - on retro stop
- - randomise message and print each message to the channel the retro was started from
+- randomise message and print each message to the channel the retro was started from
 
 ## Running the bot
 
