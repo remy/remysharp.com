@@ -678,8 +678,24 @@ body > footer {
     color: darken(#2ecc40, 10%);
   }
 
-  li.inactive {
+  .draft-post {
     opacity: 0.5;
+  }
+
+  .draft-0 {
+    opacity: 1;
+  }
+  .draft-1 {
+    opacity: 0.9;
+  }
+  .draft-2 {
+    opacity: 0.8;
+  }
+  .draft-3 {
+    opacity: 0.7;
+  }
+  .draft-4 {
+    opacity: 0.6;
   }
 }
 
@@ -1559,8 +1575,8 @@ video {
 .cta-big-btn {
   display: block;
   background: #1565c0;
-  border: 2px solid #1565c0;
-  color: white;
+  border: 2px solid #1565c0 !important;
+  color: white !important;
   text-align: center;
   padding: 8px;
   margin: 32px 0;
@@ -1571,8 +1587,53 @@ video {
     transform: translate(-2px, -1px);
     border: 2px solid rgb(21, 101, 192);
     background: rgba(0, 0, 0, 0);
-    color: rgb(21, 101, 192);
+    color: rgb(21, 101, 192) !important;
     padding: 8px;
     box-shadow: 2px 2px 0px 0px black;
+  }
+}
+
+.dark-mode {
+  --c-cta: #03a9f4;
+  --c-bg: #262626;
+  --c-text: #d6d6d6;
+  --c-text-dark: rgb(130, 130, 130);
+
+  body {
+    background: var(--c-bg);
+    color: var(--c-text);
+  }
+
+  input,
+  textarea {
+    background: #3b3a3a;
+    color: var(--c-text);
+  }
+
+  a {
+    color: var(--c-cta);
+    border-color: var(--c-cta);
+
+    &:hover {
+      border-radius: 1px;
+      background-color: var(--c-cta);
+      color: var(--c-bg);
+    }
+  }
+
+  h1.title,
+  h2.title,
+  .subpanel {
+    background: black;
+    color: var(--c-text-dark);
+
+    a {
+      color: var(--c-text-dark);
+      border-color: var(--c-text-dark);
+    }
+  }
+
+  .subpanel a:hover {
+    color: black;
   }
 }
