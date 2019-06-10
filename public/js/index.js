@@ -9,6 +9,27 @@ const $ = (s, context = document) => context.querySelector(s) || {};
 
 const prompt = '<span class="bash-prompt">$ </span>';
 
+if (typeof IntersectionObserver !== 'undefined') {
+  var observer = new IntersectionObserver(function(changes) {
+    if ('connection' in navigator && navigator.connection.saveData === true) {
+      return;
+    }
+    changes.forEach(function(change) {
+      if (change.isIntersecting) {
+        change.target.setAttribute(
+          'src',
+          change.target.getAttribute('data-src')
+        );
+        observer.unobserve(change.target);
+      }
+    });
+  });
+
+  document.querySelectorAll('img[data-src]').forEach(function(img) {
+    observer.observe(img);
+  });
+}
+
 $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
   if (el.getAttribute('data-plain') !== null) return;
 
