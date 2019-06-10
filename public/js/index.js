@@ -45,17 +45,17 @@ $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
     .join('\n'); // join the lines back up
 });
 
-function loadDisqus() {
-  var dsq = document.createElement('script');
-  dsq.type = 'text/javascript';
-  dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; // jshint ignore:line
-  (
-    document.getElementsByTagName('head')[0] ||
-    document.getElementsByTagName('body')[0]
-  ).appendChild(dsq);
-  disqusLoaded = true;
-}
+// function loadDisqus() {
+//   var dsq = document.createElement('script');
+//   dsq.type = 'text/javascript';
+//   dsq.async = true;
+//   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; // jshint ignore:line
+//   (
+//     document.getElementsByTagName('head')[0] ||
+//     document.getElementsByTagName('body')[0]
+//   ).appendChild(dsq);
+//   disqusLoaded = true;
+// }
 
 //Get the offset of an object
 function findTop(obj) {
