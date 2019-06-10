@@ -1,14 +1,13 @@
 ---
 title: 'Slide Show Karaoke'
-date: 2019-06-08
-complete: true
+date: 2019-06-10
 tags:
   - code
 ---
 
 # Slide Show Karaoke
 
-During a jsconf.eu break as I attempted to lighten [Kate Fenn](https://mobile.twitter.com/katie_fenn) of her npm stickers, I was unwittingly co-opted into presenting to a series of animals.
+During a jsconf.eu break as I attempted to lighten [Katie Fenn](https://mobile.twitter.com/katie_fenn) of her npm stickers, I was unwittingly co-opted into presenting to a series of animals.
 
 This was in fact for [Global Diversity CFP](https://www.globaldiversitycfpday.com/) which I'm probably (or certainly) not the target audience, but it was fun all the same. So then when I travelled back home I thought it would be fun to make my own Slide Show Karaoke - which is effectively what I was doing.
 
@@ -18,7 +17,7 @@ This was in fact for [Global Diversity CFP](https://www.globaldiversitycfpday.co
 
 I figured on some basic and specific requirements:
 
-- Images would be loaded from [unsplash](https://unsplash.com/)
+- Images would be loaded from [Unsplash](https://unsplash.com/)
 - Slides would auto progress
 - A timer would show you how long you had
 - Optionally: some configuration for timings and slides
@@ -102,9 +101,9 @@ async start() {
 }
 ```
 
-_Post-code side note: re-reading this logic, I'm [not entirely convince](https://mobile.twitter.com/rem/status/1137690933376557057) it makes any difference to the success of unique images…_
+_Post-code side note: re-reading this logic, I'm [not entirely convince](https://mobile.twitter.com/rem/status/1137690933376557057) it makes any difference to the success of unique images…but that's mostly because I'm easily confused._
 
-The neat trick here is the array generates promises right away. I can also attach on to the end of the promise to give real-time feedback as to when images are loaded:
+The trick here is the array generates promises right away. I can also attach on to the end of the promise to give real-time feedback as to when images are loaded:
 
 ```js
 this.images = await Promise.all(
@@ -124,6 +123,7 @@ Again, because I'm new to Vue, I've probably over engineered my progress bar tim
 Using the [WAAPI](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Web_Animations_API_Concepts) (and lots of [tutorial help](https://css-tricks.com/css-animations-vs-web-animations-api/)), I grab a reference to the DOM node, apply an animation for the `ttl` (time to live value, i.e. the slide should show for 20 seconds), and when the `finish` event fires, I pass this up to the component which tells the slide show to progress to the next image.
 
 ```js
+// usage: <Progress ttl="20" v-on:finish="showNextSlide" />
 export default {
   props: { ttl: Number },
   mounted() {
@@ -140,7 +140,7 @@ export default {
 };
 ```
 
-I didn't use CSS animation syntax here because I wanted some programmatic control over the duration.
+I didn't use CSS animation syntax here because I wanted some programmatic control over the duration, and I couldn't quite pull that off with pre-configured CSS animations.
 
 ## Have a play
 
