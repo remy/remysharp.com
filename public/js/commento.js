@@ -277,6 +277,7 @@
       classAdd(avatar, 'avatar');
     } else {
       avatar = create('img');
+      avatar.alt = '';
       attrSet(
         avatar,
         'src',
@@ -347,6 +348,7 @@
 
     attrSet(a, 'href', 'https://commento.io');
     attrSet(a, 'target', '_blank');
+    attrSet(a, 'rel', 'noopener');
 
     text.innerText = 'Commento';
 
