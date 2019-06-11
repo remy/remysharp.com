@@ -10,6 +10,8 @@ tags:
 
 Running a routing performance check on my blog I noticed that in the list of domains being accessed included facebook\.com. Except, I don't have anything to do with Facebook on my blog and I certainly don't want to be adding to their tracking.
 
+I was rather pissed that my blog contributes to Facebook's data so it was time to eject Disqus and
+
 - Disqus includes facebook script and tracking on my site, regardless of whether a user comments (and unbeknownst to me)
 - Export my comments
 - Move to commento.io - except I'm close to their 50K monthly cap (there's 4 months in the last 12 that I've gone well above that)

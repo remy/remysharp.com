@@ -1657,6 +1657,11 @@ video {
     display: flex;
     flex-direction: column-reverse;
   }
+
+  .commento-card .commento-option-button,
+  .commento-card .commento-option-sticky, .commento-root .commento-card .commento-option-unsticky {
+    background: rgb(103, 126, 148);
+  }
 }
 
 
@@ -1675,4 +1680,12 @@ video {
 
 .token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted {
   color: rgb(79, 118, 1);
+}
+
+.token.punctuation {
+  color: rgb(82, 73, 73);
+}
+
+.token.atrule, .token.attr-value, .token.keyword {
+  color: rgb(3, 118, 168);
 }
