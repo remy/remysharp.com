@@ -12,10 +12,14 @@
     "title": "Rem's Todo",
     "published": true
   },
+  "404": {
+    "comments": true
+  },
   "about": {
     "title": "About",
     "date": "2008-02-29 12:22:50",
-    "published": true
+    "published": true,
+    "comments": true
   },
   "rider": {
     "title": "Speaker Rider",

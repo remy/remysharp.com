@@ -9,26 +9,32 @@ const $ = (s, context = document) => context.querySelector(s) || {};
 
 const prompt = '<span class="bash-prompt">$ </span>';
 
-if (typeof IntersectionObserver !== 'undefined') {
-  var observer = new IntersectionObserver(function(changes) {
-    if ('connection' in navigator && navigator.connection.saveData === true) {
-      return;
-    }
-    changes.forEach(function(change) {
-      if (change.isIntersecting) {
-        change.target.setAttribute(
-          'src',
-          change.target.getAttribute('data-src')
-        );
-        observer.unobserve(change.target);
+function observerImages() {
+  if (typeof IntersectionObserver !== 'undefined') {
+    var observer = new IntersectionObserver(function(changes) {
+      if ('connection' in navigator && navigator.connection.saveData === true) {
+        return;
       }
+      changes.forEach(function(change) {
+        if (change.isIntersecting) {
+          change.target.setAttribute(
+            'src',
+            change.target.getAttribute('data-src')
+          );
+          observer.unobserve(change.target);
+        }
+      });
     });
-  });
 
-  document.querySelectorAll('img[data-src]').forEach(function(img) {
-    observer.observe(img);
-  });
+    console.log('observer done');
+
+    document.querySelectorAll('img[data-src]').forEach(function(img) {
+      observer.observe(img);
+    });
+  }
 }
+
+observerImages();
 
 $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
   if (el.getAttribute('data-plain') !== null) return;
@@ -45,17 +51,17 @@ $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
     .join('\n'); // join the lines back up
 });
 
-function loadDisqus() {
-  var dsq = document.createElement('script');
-  dsq.type = 'text/javascript';
-  dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; // jshint ignore:line
-  (
-    document.getElementsByTagName('head')[0] ||
-    document.getElementsByTagName('body')[0]
-  ).appendChild(dsq);
-  disqusLoaded = true;
-}
+// function loadDisqus() {
+//   var dsq = document.createElement('script');
+//   dsq.type = 'text/javascript';
+//   dsq.async = true;
+//   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; // jshint ignore:line
+//   (
+//     document.getElementsByTagName('head')[0] ||
+//     document.getElementsByTagName('body')[0]
+//   ).appendChild(dsq);
+//   disqusLoaded = true;
+// }
 
 //Get the offset of an object
 function findTop(obj) {

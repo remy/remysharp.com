@@ -56,16 +56,13 @@ block content
         //- if !nosubscribe
         //-   footer.follow.update
         //-     include ../_partials/subscribe
-      if NODE_ENV == "production"
-        #comments.comments
-          h2 Comments
-          #disqus_thread
-          script.
-            var disqus_shortname = 'remysharp';
-            var disqus_url = 'https://remysharp.com#{url}/';
-            var disqus_title = '#{safeTitle}';
+      //- if NODE_ENV == "production"
+      //-   #comments.comments
+      //-     h2 Comments
+      //-     #disqus_thread
+      //-     script.
+      //-       var disqus_shortname = 'remysharp';
+      //-       var disqus_url = 'https://remysharp.com#{url}/';
+      //-       var disqus_title = '#{safeTitle}';
 
-      //- #comments.comments
-      //-   h2 Comments
-      //-   #commento
-      //-   script(defer async data-no-fonts="true" src="https://cdn.commento.io/js/commento.js")
+      include ../_partials/comments

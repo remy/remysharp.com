@@ -18,3 +18,7 @@ block content
           block body
           - if (yield) yield = yield.replace(/<h1>.*?<\/h1>/, '');
           != yield
+
+        if _data && _data[current.source] && _data[current.source].comments
+          - url = current.url
+          include /_partials/comments

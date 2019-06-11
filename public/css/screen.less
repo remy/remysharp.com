@@ -1647,5 +1647,13 @@ video {
 
   a:hover {
     background: none;
+    padding: 0;
+  }
+
+  // reverse the order
+  #commento-comments-area > div,
+  div[id^="commento-comment-children-"] {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
