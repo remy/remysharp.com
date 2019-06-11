@@ -876,6 +876,7 @@
             var div = create('div');
             div.style['background'] = color;
             div.innerHTML = commenter.name[0].toUpperCase();
+            classAdd(div, 'avatar');
             avatar.parentNode.replaceChild(div, avatar);
           };
           classAdd(avatar, 'avatar-img');
@@ -1970,6 +1971,10 @@
         "[commento] error: no root element with ID '" + ID_ROOT + "' found"
       );
       return;
+    }
+
+    if (!initted) {
+      dataTagsLoad();
     }
 
     if (mobileView === null) {

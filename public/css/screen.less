@@ -975,7 +975,8 @@ details summary:after {
 }
 
 .metadata {
-  color: lighten(@main-font-color, 50%);
+  // color: lighten(@main-font-color, 50%);
+  color: rgb(95, 95, 95)
   font-size: 80%;
 }
 
@@ -1656,4 +1657,22 @@ video {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+
+
+// prism changes - for a11y
+.token.function, .token.class-name {
+  color: rgb(200, 45, 77)
+}
+
+.token.comment, .token.prolog, .token.doctype, .token.cdata {
+  color: rgb(107, 109, 110);
+}
+
+.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+  color: rgb(149, 106, 55);
+}
+
+.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted {
+  color: rgb(79, 118, 1);
 }

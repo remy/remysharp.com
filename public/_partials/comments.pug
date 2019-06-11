@@ -2,13 +2,11 @@
   h2 Comments
   #commento
   script(defer async data-no-fonts="true" data-path=`${url}/` data-auto-init="false" data-domain="remysharp.com" src="/js/commento.js")
-  script.
+  script(defer async).
     window.parent = { location: { host: 'remysharp.com', pathname: '#{ url }/' }};
     function loadCommento() {
       if (window.commento && window.commento.main) {
-        window.commento.main(() => {
-          observerImages();
-        })
+        window.commento.main(() => observerImages())
       } else {
         setTimeout(loadCommento, 10);
       }

@@ -26,8 +26,6 @@ function observerImages() {
       });
     });
 
-    console.log('observer done');
-
     document.querySelectorAll('img[data-src]').forEach(function(img) {
       observer.observe(img);
     });
