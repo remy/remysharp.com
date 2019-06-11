@@ -1,6 +1,6 @@
 ---
 title: "Ejecting Disqus"
-date: 2019-06-10
+date: 2019-06-11
 tags:
 - web
 - code
