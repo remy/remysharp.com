@@ -5,6 +5,7 @@
 
 html {
   background-image: url(/images/background.jpg);
+  background-size: 100%;
 }
 
 // here be my styles
@@ -1639,7 +1640,7 @@ video {
   }
 }
 
-.commento-root {
+body .commento-root {
   .commento-anonymous-checkbox-container input[type='checkbox'] + label {
     float: none;
     width: auto;
@@ -1658,9 +1659,16 @@ video {
     flex-direction: column-reverse;
   }
 
+  .commento-logged-container .commento-logout,
+  .commento-card .commento-timeago,
+  .commento-card .commento-score {
+    color: #757575;
+  }
+
   .commento-card .commento-option-button,
-  .commento-card .commento-option-sticky, .commento-root .commento-card .commento-option-unsticky {
-    background: rgb(103, 126, 148);
+  .commento-card .commento-option-sticky,
+  .commento-card .commento-option-unsticky {
+    background: rgb(73, 80, 87);
   }
 }
 

@@ -24,10 +24,14 @@ html#remysharp-com(lang="en")
     link(rel="icon" sizes="192x192" href="/images/avatar-favicon.png")
     link(rel="manifest" href="/manifest.json")
     link(rel="shortcut icon" href="/favicon.ico")
-    link(rel="stylesheet" href="/css/prism.css")
-    link(rel="stylesheet" href=`/css/screen.css?${version}`)
-
+    link(rel="preload" href="/downloads/ubuntu-mono.woff2" as="font")
     link(rel="alternate" type="application/rss+xml" title="Remy Sharp's b:log" href="/feed.xml")
+
+    style
+      include /css/bear.css
+
+    link(rel="preload" href="/css/prism.css" as="style" onload="this.rel='stylesheet'")
+    link(rel="preload" href=`/css/screen.css?#{version}` as="style" onload="this.rel='stylesheet'")
 
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -56,7 +60,7 @@ html#remysharp-com(lang="en")
       .flex-item.license
         .row
           h2 Remy Sharp
-            img#avatar(alt="" src="/images/avatar-300.png" width="60")
+            img#avatar(alt="" src="/images/avatar-300.jpg" width="60")
             include twitter-badge
         .row.bio
           include mini-bio

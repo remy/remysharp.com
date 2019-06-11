@@ -1,13 +1,8 @@
 /* eslint-env browser */
-/* global disqus_shortname */
 'use strict';
-var comments = document.getElementById('disqus_thread');
-var disqusLoaded = false;
 
 const $$ = (s, context = document) => Array.from(context.querySelectorAll(s));
 const $ = (s, context = document) => context.querySelector(s) || {};
-
-const prompt = '<span class="bash-prompt">$ </span>';
 
 function observerImages() {
   if (typeof IntersectionObserver !== 'undefined') {
@@ -34,6 +29,7 @@ function observerImages() {
 
 observerImages();
 
+const prompt = '<span class="bash-prompt">$ </span>';
 $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
   if (el.getAttribute('data-plain') !== null) return;
 
@@ -48,18 +44,6 @@ $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
     .map(line => line.replace(/^\$ /, prompt))
     .join('\n'); // join the lines back up
 });
-
-// function loadDisqus() {
-//   var dsq = document.createElement('script');
-//   dsq.type = 'text/javascript';
-//   dsq.async = true;
-//   dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; // jshint ignore:line
-//   (
-//     document.getElementsByTagName('head')[0] ||
-//     document.getElementsByTagName('body')[0]
-//   ).appendChild(dsq);
-//   disqusLoaded = true;
-// }
 
 //Get the offset of an object
 function findTop(obj) {
@@ -162,17 +146,6 @@ $('body').onkeydown = function(event) {
   }
 };
 
-if (comments) {
-  loadDisqus();
-  var commentsOffset = findTop(comments);
-
-  window.onscroll = function() {
-    if (!disqusLoaded && window.pageYOffset > commentsOffset - 1500) {
-      loadDisqus();
-    }
-  };
-}
-
 // if we're on the homepage, then load flickr images
 if ($$('#index-page').length) {
   loadFlickr();
@@ -213,27 +186,27 @@ $$(fitVidSelector).forEach(el => {
 });
 
 // sorry, knarly and lazy code, but it does the job.
-$$('.runnable').forEach(function(pre) {
-  var button = $('<button class="button">run</button>');
-  var iframe = null;
-  $(this).after(button);
-  var running = false;
-  button.on('click', function() {
-    var code = pre.innerText;
-    if (iframe || running) {
-      iframe.parentNode.removeChild(iframe);
-    }
-    if (running) {
-      button.text('run');
-      iframe = null;
-      running = false;
-      return;
-    }
-    running = true;
-    button.text('stop');
-    iframe = document.createElement('iframe');
-    iframe.className = 'runnable-frame';
-    document.body.appendChild(iframe);
-    iframe.contentWindow.eval(code);
-  });
-});
+// $$('.runnable').forEach(function(pre) {
+//   var button = $('<button class="button">run</button>');
+//   var iframe = null;
+//   $(this).after(button);
+//   var running = false;
+//   button.on('click', function() {
+//     var code = pre.innerText;
+//     if (iframe || running) {
+//       iframe.parentNode.removeChild(iframe);
+//     }
+//     if (running) {
+//       button.text('run');
+//       iframe = null;
+//       running = false;
+//       return;
+//     }
+//     running = true;
+//     button.text('stop');
+//     iframe = document.createElement('iframe');
+//     iframe.className = 'runnable-frame';
+//     document.body.appendChild(iframe);
+//     iframe.contentWindow.eval(code);
+//   });
+// });
