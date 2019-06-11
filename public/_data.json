@@ -19,7 +19,8 @@
     "title": "About",
     "date": "2008-02-29 12:22:50",
     "published": true,
-    "comments": true
+    "comments": true,
+    "commentsTitle": "Ask me anything"
   },
   "rider": {
     "title": "Speaker Rider",

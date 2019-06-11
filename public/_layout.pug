@@ -21,4 +21,5 @@ block content
 
         if _data && _data[current.source] && _data[current.source].comments
           - url = current.url
+          - commentsTitle = _data[current.source].commentsTitle || "Comments"
           include /_partials/comments
