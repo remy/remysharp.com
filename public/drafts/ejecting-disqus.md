@@ -8,7 +8,7 @@ tags:
 
 # Ejecting Disqus
 
-
+Running a routing performance check on my blog I noticed that in the list of domains being accessed included facebook\.com. Except, I don't have anything to do with Facebook on my blog and I certainly don't want to be adding to their tracking.
 
 - Disqus includes facebook script and tracking on my site, regardless of whether a user comments (and unbeknownst to me)
 - Export my comments
