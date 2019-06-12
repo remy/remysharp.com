@@ -6,9 +6,8 @@ tags:
 modified: '2009-02-01 16:37:30'
 draft: true
 ---
-Title: CSS Compression
-Category: Web
-Keywords: css
+
+# Title: CSS Compression
 
 When I said this [on Twitter](http://twitter.com/rem/status/1163407522):
 
@@ -16,7 +15,7 @@ When I said this [on Twitter](http://twitter.com/rem/status/1163407522):
 
 It incited/inspired a reasonable amount of discussion that I felt I should post my thoughts on the subject.
 
-✂------✂------✂------✂------✂------✂------✂------✂------✂------✂------
+<!--more-->
 
 ## Quick Disclaimer
 

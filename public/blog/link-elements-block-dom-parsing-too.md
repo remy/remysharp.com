@@ -40,33 +40,35 @@ Right now, I'm not sure what's at the root cause, but I do know it's putting som
 
 This url will show the hanging: [https://jsbin.com/agumu4/3/](https://jsbin.com/agumu4/3/) - make sure you have a web console open and refresh to watch the state change.
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <meta charset=utf-8 />
-    <title>Hang test</title>
-    <script>
-    // script in head to debug state change
-    console.log('doc state: ' + document.readyState);
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Hang test</title>
+<script>
+// script in head to debug state change
+console.log('doc state: ' + document.readyState);
 
-    document.onreadystatechange = function () {
-      console.log('doc state change: ' + document.readyState);
-    };
-    </script>
-    <link href="http://hang.nodester.com/hang.css?5000" rel="stylesheet" />
-    </head>
-    <body>
-      <p>Hello World</p>
-    </body>
-    </html>
+document.onreadystatechange = function () {
+  console.log('doc state change: ' + document.readyState);
+};
+</script>
+<link href="https://hang.leftlogic.com/hang.css?5000" rel="stylesheet" />
+</head>
+<body>
+  <p>Hello World</p>
+</body>
+</html>
+```
 
 ## Testing
 
 I've created a simple hanging service that you can reuse yourself.  It's running on [Node](http://nodejs.org) so there's no worry of nuking the machine due to the hang (as opposed to using PHP to test using a sleep - which *would* nuke a public machine).
 
-To test include the following url: [http://hang.nodester.com/file.type?ms](http://hang.nodester.com/file.type?ms)
+To test include the following url: [https://hang.leftlogic.com/file.type?ms](https://hang.leftlogic.com/file.type?ms)
 
-i.e. [http://hang.nodester.com/foo.css?2000](http://hang.nodester.com/foo.css?2000) will return a file with a CSS mime type and hang for 2000 milliseconds.
+i.e. [https://hang.leftlogic.com/foo.css?2000](https://hang.leftlogic.com/foo.css?2000) will return a file with a CSS mime type and hang for 2000 milliseconds.
 
 The best way to determine when the DOM is loaded (or loading) when you can't see the output is to listen for the `readystatechange` event ([ht](https://twitter.com/3rdeden/status/78363201082896384)). So in my test, I've included some script that tells me where the DOM is up to, and I can visually confirm whether the `link` element is hanging.
 

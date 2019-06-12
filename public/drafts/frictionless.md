@@ -2,8 +2,7 @@
 title: Frictionless
 date: '2018-07-22 20:18:31'
 modified: '2018-07-22 21:42:49'
-complete: false
-inprogress: true
+complete: true
 tags:
   - code
 ---

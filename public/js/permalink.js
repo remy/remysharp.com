@@ -11,7 +11,7 @@
       '.anchor {',
       'height: 20px;',
       'width: 20px;',
-      // 'display: block;',
+      'display: initial;',
       'padding-right: 6px;',
       'padding-left: 6px;',
       'margin-left: -30px;',

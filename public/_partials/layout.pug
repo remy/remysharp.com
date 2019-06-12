@@ -33,8 +33,16 @@ html#remysharp-com(lang="en")
     style
       include /css/bear.css
 
-    link(rel="preload" href="/css/prism.css" as="style" onload="this.rel='stylesheet'")
-    link(rel="preload" href=`/css/screen.css?#{version}` as="style" onload="this.rel='stylesheet'")
+    //- script.
+    //-   document.documentElement.onkeydown = e => {
+    //-     if (e.key === 'm') {
+    //-       window.mq.rel = window.mq.rel.split('').reverse().join('');
+    //-     }
+    //-   }
+
+    // using this method because Firefox doesn't support rel="preload"
+    link(rel="stylesheet" href=`/css/screen.css?${version}` media="preload" onload="this.media='all'")
+    link(rel="stylesheet" href=`/css/prism.css` media="preload" onload="this.media='all'")
 
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
