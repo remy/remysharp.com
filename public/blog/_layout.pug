@@ -42,27 +42,21 @@ block content
         //- else
         != yield
 
+
+      .misc-content
         p.metadata Posted <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under #{(tags || []).join(' & ')}.
+
+        if data.tags && data.tags.indexOf('personal') === -1
+          footer.work-with-me
+            include ../_partials/work-with-me
 
         if likes
           .webmentions
             p 👍 #{likes} likes
             div !{likeImages}
 
-
-        if data.tags && data.tags.indexOf('personal') === -1
-          footer.work-with-me
-            include ../_partials/work-with-me
         //- if !nosubscribe
         //-   footer.follow.update
         //-     include ../_partials/subscribe
-      //- if NODE_ENV == "production"
-      //-   #comments.comments
-      //-     h2 Comments
-      //-     #disqus_thread
-      //-     script.
-      //-       var disqus_shortname = 'remysharp';
-      //-       var disqus_url = 'https://remysharp.com#{url}/';
-      //-       var disqus_title = '#{safeTitle}';
 
       include ../_partials/comments
