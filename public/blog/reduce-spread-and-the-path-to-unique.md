@@ -8,7 +8,7 @@ tags:
 
 # Reduce spread and the path to unique
 
-As modern JavaScript language features land more and more support I find myself using more and more of the semantic sugar.
+As modern JavaScript language features land more and more support I find myself using more and more of the syntactic sugar.
 
 I'm a big fan of [default arguments](https://remysharp.com/2017/10/25/es6-default-arguments) but I also really like the `...spread` syntax. With that, I've found myself using spread syntax to get a list of unique elements, except until recently, I didn't understand what was under the hood.
 
