@@ -1,5 +1,6 @@
 ---
 title: "Reduce spread and the path to unique"
+date: 2019-06-15
 tags:
 - code
 - TIL
