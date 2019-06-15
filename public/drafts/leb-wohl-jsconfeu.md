@@ -13,4 +13,4 @@ Farewell my friend. I sit in what promises to be [the last jsconf.eu of its type
 
 ## Attendance
 
-2009 (spoke), 2012, 2014 (spoke in the bubble), 2017, 2018 (spoke / closed), 2019
+2009 (spoke), 2012, 2013, 2014 (spoke in the bubble), 2017, 2018 (spoke / closed), 2019
