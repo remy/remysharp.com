@@ -182,7 +182,7 @@ This means "take the line from input and execute it wholesale" - which triggers 
 
 If you want learn more about the command line, you can check out [my online course](https://terminal.training/?coupon=READERS-DISCOUNT) (which has a reader's discount applied 😉).
 
-The whole thing runs for a few seconds, then it's done. In my case, I included these in my images directory on my blog, so I can access them via https://download.remysharp.com/comments/avatars/rem.jpg
+The whole thing runs for a few seconds, then it's done. In my case, I included these in my images directory on my blog, so I can access them via [avatars/rem.jpg](https://download.remysharp.com/comments/avatars/rem.jpg).
 
 ### JavaScript to load these avatars
 
