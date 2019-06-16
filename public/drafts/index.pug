@@ -11,8 +11,11 @@ p
 ul
   for post in posts
     if (post.data.title)
-      li(class=`draft-post draft-${post.data.complete ? 'complete' : 'inprogress'} draft-${post.data.complete ? 0 : moment( post.data.modified ).age()}`)
+      li(class=`draft-post draft-${(post.data.complete || post.data.age < 0) ? 'complete' : 'inprogress'} draft-${post.data.complete ? 0 : moment( post.data.modified ).age()}`)
         a(href=`${post.url}`)= post.data.title
-        small.date Last edited: #{ moment( post.data.modified ).format('D-MMM YYYY')} (#{ post.data.age } days old)
-        if (post.data.complete)
+        if post.data.age < 0
+          small.date Scheduled for: #{ moment( post.data.modified ).format('D-MMM YYYY')} (#{ post.data.age * -1 } days)
+        else
+          small.date Last edited: #{ moment( post.data.modified ).format('D-MMM YYYY')} (#{ post.data.age } days old)
+        if post.data.complete || post.data.age < 0
           small.ready ready

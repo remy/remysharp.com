@@ -28,6 +28,12 @@ block content
   include ../_partials/post-nav
 
   main.content
+    if data.draft
+      div.warning
+        | Draft posts are a work in progress.&nbsp;
+        if modified
+          | Last edited #{ moment(modified).format('D-MMM YYYY') }
+
     article.post.h-entry
       h1(data-edit=`https://github.com/remy/remysharp.com/blob/master/public/blog/${current.source}.md`).title.p-name
         a(href=`${site_url}${url}` rel="bookmark" title=`Permanent Link: ${title}`).u-url.u-uid= title
@@ -43,20 +49,25 @@ block content
         != yield
 
 
-      .misc-content
-        p.metadata Posted <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under #{(tags || []).join(' & ')}.
+      if data.draft
+        .misc-content
+          p.metadata Edited on <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under #{(tags || []).join(' & ')}.
+          p.update Drafts may be incomplete or entirely abandoned, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.
+      else
+        .misc-content
+          p.metadata Posted <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under #{(tags || []).join(' & ')}.
 
-        if data.tags && data.tags.indexOf('personal') === -1
-          footer.work-with-me
-            include ../_partials/work-with-me
+          if data.tags && data.tags.indexOf('personal') === -1
+            footer.work-with-me
+              include ../_partials/work-with-me
 
-        if likes
-          .webmentions
-            p 👍 #{likes} likes
-            div !{likeImages}
+          if likes
+            .webmentions
+              p 👍 #{likes} likes
+              div !{likeImages}
 
-        //- if !nosubscribe
-        //-   footer.follow.update
-        //-     include ../_partials/subscribe
+          //- if !nosubscribe
+          //-   footer.follow.update
+          //-     include ../_partials/subscribe
 
-      include ../_partials/comments
+        include ../_partials/comments

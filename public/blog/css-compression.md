@@ -1,10 +1,9 @@
 ---
 title: CSS Compression
-date: '2009-02-01 12:00:00'
 tags:
   - code
 modified: '2009-02-01 16:37:30'
-draft: true
+complete: false
 ---
 
 # Title: CSS Compression
@@ -31,9 +30,7 @@ What we're saying here is that minification is for production environments.  It 
 
 In the stack that makes up a well developed web page
 
-
-
-- View Sauce - defining aspect of the web
+- View Source - defining aspect of the web
 - 10 years ago
 - Firebug - much much better for learning
 - Plus Firebug doesn't decompress JavaScript, but it does markup and CSS

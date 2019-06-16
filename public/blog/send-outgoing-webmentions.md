@@ -4,7 +4,7 @@ image: /images/webmention-app-card.jpg
 tags:
 - code
 - web
-scheduled: 2019-06-17 15:00:00
+date: 2019-06-18 15:00:00
 ---
 
 # Send Outgoing Webmentions
