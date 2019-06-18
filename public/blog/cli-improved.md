@@ -5,7 +5,6 @@ modified: '2018-08-24 12:24:35'
 tags:
   - web
 ad: terminal
-draft: true
 published: true
 ---
 # CLI: improved
