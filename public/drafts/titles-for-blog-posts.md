@@ -2,14 +2,13 @@
 title: Titles for blog posts
 date: '2016-12-16 20:06:19'
 modified: '2017-05-29 12:49:10'
-complete: false
-inprogress: true
 tags:
   - personal
 draft: true
 ---
 # Titles for blog posts
 
+- @remy/envy
 - My client side testing wish
 - Analytics for all time per post
 - Replicating a LaMetric with a spare Android phone
