@@ -1,7 +1,6 @@
 ---
 title: Scheduled and draft 11ty posts
 date: 2019-06-26 15:05:36
-draft: true
 tags:
 - code
 ---
@@ -82,7 +81,7 @@ Find the frequency that works for you and schedule a rebuild which will pick up 
 
 Next we're effectively creating a [cronjob](https://duckduckgo.com/?q=what+is+a+cronjob) that will trigger a new build at a defined frequency. A few CI systems offer these natively, such as [Travis](https://docs.travis-ci.com/user/cron-jobs/) or [Circle CI](https://circleci.com/docs/2.0/configuration-reference/#schedule).
 
-I'm using IFTTT to schedule a repeating job. Netlify hosts my blog and Netlify offers an [incoming webhook](https://www.netlify.com/docs/webhooks/#incoming-webhooks) to trigger new builds. If your platform has something similar then you're in good stead. 
+I'm using IFTTT to schedule a repeating job. Netlify hosts my blog and Netlify offers an [incoming webhook](https://www.netlify.com/docs/webhooks/#incoming-webhooks) to trigger new builds. If your platform has something similar then you're in good stead.
 
 On IFTTT, [create a new applet](https://ifttt.com/create), select "Date & Time" as the `+this` and "Webhook" for `+that`. Give the webhook the URL to trigger you build - and you're set.
 
