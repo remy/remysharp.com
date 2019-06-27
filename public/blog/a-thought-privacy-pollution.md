@@ -1,5 +1,5 @@
 ---
-title: A thought: Privacy Pollution
+title: 'A thought: Privacy Pollution'
 date: 2019-06-27 13:00:00
 tags:
 - web
