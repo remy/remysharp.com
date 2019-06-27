@@ -18,7 +18,7 @@ block meta
     meta(name="twitter:image:src" content=`${img}`)
     meta(name="twitter:card" content="summary_large_image")
   else
-    meta(name="twitter:image:src" content=`https://remysharp.com/images/avatar-125.jpg`)
+    meta(name="twitter:image:src" content=`https://remysharp.com/images/cards/${moment(data.date).modDOY(9)}.jpg`)
     meta(name="twitter:card" content="summary")
 
 block content
