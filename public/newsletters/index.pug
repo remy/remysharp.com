@@ -5,24 +5,24 @@
 - last = null
 - year = null
 - index = 0;
-- post = _data[index]
+- post = collections.newsletters[0]
 a(name="content")
 while post
-  if post.date
-    if !year || moment(post.date).format('YYYY') == year
-      - month = moment(post.date).format('MMMM')
-      - postYear = moment(post.date).format('YYYY')
+  if post.data.date
+    if !year || moment(post.data.date).format('YYYY') == year
+      - month = moment(post.data.date).format('MMMM')
+      - postYear = moment(post.data.date).format('YYYY')
       if !year && last != postYear
         h1.title= postYear
         - last = postYear
       .post-content
         ul
-          while post && (!postYear || moment(post.date).format('YYYY') == postYear)
-            if post && post.date
+          while post && (!postYear || moment(post.data.date).format('YYYY') == postYear)
+            if post && post.data.date
               li
-                a(href=`/newsletters/${ post.url }/`)= moment(post.date).format('MMMM')
-            - post = _data[index += 1];
+                a(href=`/newsletters/${ post.slug }/`)= moment(post.data.date).format('MMMM')
+            - post = collections.newsletters[index += 1];
     else
-      - post = _data[index += 1];
+      - post = collections.newsletters[index += 1];
   else
-    - post = _data[index += 1];
+    - post = collections.newsletters[index += 1];
