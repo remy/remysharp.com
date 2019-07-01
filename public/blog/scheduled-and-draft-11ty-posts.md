@@ -23,7 +23,7 @@ The 11ty project offers a number of [starter projects](https://www.11ty.io/docs/
 
 ## Filtered collections
 
-11ty has a feature called collections. As you might imagine this are collections of content. For a the blog posts in Hylia, Andy's `.eleventy.js` config includes the following collection:
+11ty has a feature called collections. As you might imagine this are collections of content. To get the blog posts in Hylia, Andy's `.eleventy.js` config includes the following collection:
 
 ```js
 config.addCollection('posts', collection => {
