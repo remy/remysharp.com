@@ -64,7 +64,7 @@ Adding draft support is a useful bit of protection against accidentally publishi
 
 You could also go on to publish a list of your drafts by creating another collection with the same code, but inverted with `.filter(_ => !livePosts(_))`:
 
-```
+```js
 config.addCollection('drafts', collection => {
   return collection.getFilteredByGlob('./src/posts/*.md')
     .filter(_ => !livePosts(_)).reverse();
