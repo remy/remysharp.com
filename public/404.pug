@@ -2,7 +2,7 @@ script.
   const data = !{ JSON.stringify(collections.blog.map(_ => _.url)) }
   const pathname = window.location.pathname.split('/').pop().toLowerCase();
   const match = data.find(_ => _.includes(pathname));
-  if (match) window.location = match.url;
+  if (match) window.location = match;
 
 h1 Redirecting...
 
