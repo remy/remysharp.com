@@ -15,8 +15,7 @@ I'm working on a web application for [Work](http://www.digitallook.com) and we'r
 
 Anyway, traditional applications have 'spinners' that make numbers or items go up and down (I'm working on that too).  This [jQuery](http://jquery.com) plugin adds the missing 'repeat' event.
 
-[Download the mousehold plugin](/demo/mousehold.js).
-
+[Download the mousehold plugin](https://gist.github.com/remy/0361b2b5d77c0b82535957ec88825cb4).
 
 <!--more-->
 
@@ -26,6 +25,4 @@ The plugin works by setting a 'mousedown' event and keeps firing the function at
 
 This last logic is because if it wasn't in place, the function specified would keep firing (since the mouse up event fired, but not on the element we set it on).
 
-Here's an example that shows a [practical example](/demo/pip_ticker.html).
-
-Feedback and so on is welcome.  If you're interested in the 'stepper' code, feel free to ask.
+Feedback and so on is welcome.
