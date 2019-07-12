@@ -93,7 +93,7 @@ Conor nails it. Bigger isn't better, in my books. Julie and I want to continue t
 
 Even as the head count of attendees will decrease, we will still promise to support student priced tickets, and we will continue to run a **full** scholarship programme that continues to cover travel, hotel and conference pass.
 
-You can follow [@ffconf](https://twitter.com/ffconf) or sign up to the [Insights Newsletter](htpps://ffconf.org/news) for the latest announcements for 2019.
+You can follow [@ffconf](https://twitter.com/ffconf) or sign up to the [Insights Newsletter](https://ffconf.org/news) for the latest announcements for 2019.
 
 ## We'll see you next year
 

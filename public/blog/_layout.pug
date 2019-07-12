@@ -5,7 +5,11 @@ block meta
   link(rel="canonical" href=`https://remysharp.com${url}`)
   - var summary = excerpt
   if summary
-    - summary = '<meta name="twitter:description" content="' + summary.replace(/<(?:.|\n)*?>/gm, '') + '">';
+    - summary = summary.replace(/<(?:.|\n)*?>/gm, '')
+    - summary = summary.replace(/^#.*?\n+/m, '')
+    - summary = summary.replace(/(?:!)?\[(.*?)\]\(.*?\)/g, '')
+    - summary = summary.replace(/\n{2,}/g, '\n')
+    - summary = '<meta name="twitter:description" content="' + summary.trim() + '">';
     != summary
   meta(name="twitter:creator" content="@rem")
   meta(name="twitter:title" content=`${title}`)
