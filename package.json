@@ -19,6 +19,7 @@
     "fast-glob": "^2.2.6",
     "fs-extra": "^7.0.1",
     "gray-matter": "^4.0.2",
+    "hash-files": "^1.1.1",
     "jstransformer-markdown-it": "^2.1.0",
     "less": "^3.9.0",
     "markdown-it": "^8.4.2",

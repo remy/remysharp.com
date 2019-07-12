@@ -1,14 +1,24 @@
 'use strict';
 /* global caches, self, Request, Response */
-const version = 'v1::';
-const staticCacheName = version + 'static';
-const pagesCacheName = version + 'pages';
-const imagesCacheName = version + 'images';
+importScripts('/js/hashes.js');
+
+console.log('SW: hashes', hashes);
+const version = 'v1/';
+const jsCache = `${version}static/js/${hashes.js}`;
+const cssCache = `${version}static/css/${hashes.css}`;
+const pagesCache = version + 'pages';
+const imagesCache = version + 'images';
+
+const cacheByType = {
+  css: cssCache,
+  javascript: jsCache,
+  image: imagesCache,
+};
 
 function updateStaticCache() {
-  return caches.open(staticCacheName).then(cache => {
+  return caches.open(pagesCache).then(cache => {
     // these items won't block the installation of the Service Worker
-    cache.addAll([]);
+    // cache.addAll([]);
     // These items must be cached for the Service Worker to complete installation
     return cache.addAll(['/', '/offline']);
   });
@@ -18,24 +28,27 @@ function stashInCache(cacheName, request, response) {
   caches.open(cacheName).then(cache => cache.put(request, response));
 }
 
-// Limit the number of items in a specified cache.
-function trimCache(cacheName, maxItems) {
-  caches.open(cacheName).then(cache => {
-    cache.keys().then(keys => {
-      if (keys.length > maxItems) {
-        cache.delete(keys[0]).then(trimCache(cacheName, maxItems));
-      }
-    });
-  });
-}
-
 // Remove caches whose name is no longer valid
 function clearOldCaches() {
   return caches.keys().then(keys => {
     return Promise.all(
       keys
-        .filter(key => key.indexOf(version) !== 0)
-        .map(key => caches.delete(key))
+        .filter(key => {
+          if (key.startsWith(version + '/static/js/')) {
+            return key !== jsCache;
+          }
+
+          if (key.startsWith(version + '/static/css/')) {
+            return key !== cssCache;
+          }
+
+          return !key.startsWith(version);
+        })
+        .map(key => {
+          console.log('deleting old cache %s', key);
+
+          return caches.delete(key);
+        })
     );
   });
 }
@@ -48,20 +61,13 @@ self.addEventListener('activate', event => {
   event.waitUntil(clearOldCaches().then(() => self.clients.claim()));
 });
 
-self.addEventListener('message', event => {
-  if (event.data.command === 'trimCaches') {
-    trimCache(pagesCacheName, 35);
-    trimCache(imagesCacheName, 20);
-  }
-});
-
 self.addEventListener('fetch', event => {
   let request = event.request;
   let url = new URL(request.url);
 
   // Only deal with requests to my own server
   if (url.origin !== location.origin) {
-    return;
+    return event.respondWith(fetch(request));
   }
 
   // Ignore requests to some directories
@@ -79,22 +85,25 @@ self.addEventListener('fetch', event => {
   }
 
   // For HTML requests, try the network first, fall back to the cache, finally the offline page
-  if (request.headers.get('Accept').indexOf('text/html') !== -1) {
+  if (request.headers.get('Accept').includes('text/html')) {
     // Fix for Chrome bug: https://code.google.com/p/chromium/issues/detail?id=573937
-    request = new Request(url, {
+    request = new Request(request.url, {
       method: 'GET',
       headers: request.headers,
-      mode: request.mode,
+      mode: request.mode == 'navigate' ? 'cors' : request.mode,
       credentials: request.credentials,
       redirect: request.redirect,
     });
+
     event.respondWith(
       fetch(request)
         .then(response => {
-          // NETWORK
-          // Stash a copy of this page in the pages cache
-          let copy = response.clone();
-          stashInCache(pagesCacheName, request, copy);
+          if (response.status === 200) {
+            // NETWORK
+            // Stash a copy of this page in the pages cache
+            let copy = response.clone();
+            stashInCache(pagesCache, request, copy);
+          }
           return response;
         })
         .catch(() => {
@@ -110,16 +119,24 @@ self.addEventListener('fetch', event => {
   // For non-HTML requests, look in the cache first, fall back to the network
   let res = caches.match(request).then(response => {
     // CACHE
+    // console.log('+asset %s %s', request.url, response ? 'HIT' : 'MISS');
+
     return (
       response ||
       fetch(request)
         .then(response => {
           // NETWORK
           // If the request is for an image, stash a copy of this image in the images cache
-          if (request.headers.get('Accept').indexOf('image') !== -1) {
+          let accepts = request.headers.get('Accept');
+          const ct = response.headers.get('content-type');
+
+          const type = ['image', 'css', 'javascript'].find(_ => ct.includes(_));
+
+          if (type) {
             let copy = response.clone();
-            stashInCache(imagesCacheName, request, copy);
+            stashInCache(cacheByType[type], request, copy);
           }
+
           return response;
         })
         .catch(() => {

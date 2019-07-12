@@ -70,4 +70,11 @@ block content
           //-   footer.follow.update
           //-     include ../_partials/subscribe
 
+        script.
+          const pageData = {
+            url: "#{ permalink }",
+            date: "#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }",
+            niceData: "#{moment(date).format('D-MMM YYYY')}",
+            title: "#{ title }"
+          };
         include ../_partials/comments

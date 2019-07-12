@@ -185,6 +185,15 @@ $$(fitVidSelector).forEach(el => {
   wrapper.appendChild(el);
 });
 
+console.log('have page data?', window.pageData);
+
+if (window.pageData) {
+  idbKeyval
+    .set(pageData.url, pageData)
+    .then(() => console.log('stored'))
+    .catch(e => console.log(e));
+}
+
 // sorry, knarly and lazy code, but it does the job.
 // $$('.runnable').forEach(function(pre) {
 //   var button = $('<button class="button">run</button>');

@@ -1,0 +1,36 @@
+h1 🔌 Offline
+
+:marked
+  It looks like there's no connection to my website right now, but if you want, you can check out these posts that you have available for offline reading.
+
+#offline-posts
+
+script.
+  listPages();
+  async function listPages() {
+    // Get a list of all of the caches for this origin
+    const cacheNames = await caches.keys();
+    const result = [];
+
+    for (const name of cacheNames) {
+      // Open the cache
+      if (name.includes('/pages')) {
+        const cache = await caches.open(name);
+
+        // Get a list of entries. Each item is a Request object
+        for (const request of await cache.keys()) {
+          // If the request URL matches, add the response to the result
+
+          if (request.url.endsWith('.png')) {
+            result.push(await cache.match(request));
+          }
+        }
+      }
+    }
+
+    return result;
+  }
+
+
+:marked
+  You can also send me [feedback](/feedback) when you get back online if it was important 🙏
