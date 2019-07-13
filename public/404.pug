@@ -1,3 +1,5 @@
+- data.statusCode = 404
+
 script.
   const data = !{ JSON.stringify(collections.blog.map(_ => _.url)) }
   const pathname = window.location.pathname.split('/').pop().toLowerCase();

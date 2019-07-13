@@ -84,3 +84,9 @@ Personally I don't want my site to add to the pool of data that's collected abou
 On the other hand, I _do_ need market ffconf to my visitors which I've done through re-targeting campaigns. This does work whilst also being at conflict with my own moral judgement.
 
 A nice perk of running GA on my site since 2006 is that I'm able to export all those pageviews and generate a [most popular](/popular) page. I've got a small(ish) [node script](https://gist.github.com/2d184c39023cad943714b58d4a787271)
+
+## Smarter not founds
+
+As I'm using Netlify as my hosting platform I'm able to target specific bad URLs and handle them with "better" 404 pages. At time of writing, Netlify doesn't support conditional redirects - so I can't check the referrer and redirect, nor can I check the Accepts header (which would be very specific if included in a `script` tag).
+
+However, I can redirect known 404s and heavily requested scripts and offset the requests to a free CDN.

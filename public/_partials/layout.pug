@@ -94,6 +94,7 @@ html#remysharp-com(lang="en")
         if (window.location.hostname === 'remysharp.com') {
           new Image(1, 1).src = "https://d14rpr34so8h9j.cloudfront.net/pixel.gif?u=" +
             encodeURIComponent(window.location.pathname) +
+            "&s=" + #{data.statusCode || 200} +
             (document.referrer ? "&r=" + encodeURIComponent(document.referrer): "");
         }
       noscript

@@ -185,8 +185,6 @@ $$(fitVidSelector).forEach(el => {
   wrapper.appendChild(el);
 });
 
-console.log('have page data?', window.pageData);
-
 if (window.pageData) {
   idbKeyval
     .set(pageData.url, pageData)
