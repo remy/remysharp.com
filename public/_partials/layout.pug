@@ -90,18 +90,18 @@ html#remysharp-com(lang="en")
           All code and content for this blog is available as [open source on GitHub](https://github.com/remy/remysharp.com).
 
     block scripts
-      script.
-        if (window.location.hostname === 'remysharp.com') {
-          new Image(1, 1).src = "https://d14rpr34so8h9j.cloudfront.net/pixel.gif?u=" +
-            encodeURIComponent(window.location.pathname) +
-            "&s=" + #{data.statusCode || 200} +
-            (document.referrer ? "&r=" + encodeURIComponent(document.referrer): "");
-        }
-      noscript
-        img(src=`https://d14rpr34so8h9j.cloudfront.net/pixel.gif?u=${ encodeURIComponent(url)}`)
-
       script(src=`/js/permalink.js?${version}`)
       script(src=`/js/index.js?${version}`)
+    script.
+      if (window.location.hostname === 'remysharp.com') {
+        new Image(1, 1).src = "https://d14rpr34so8h9j.cloudfront.net/pixel.gif?u=" +
+          encodeURIComponent(window.location.pathname) +
+          "&s=" + #{data.statusCode || 200} +
+          "&b=" + document.documentElement.outerHTML.length +
+          (document.referrer ? "&r=" + encodeURIComponent(document.referrer): "");
+      }
+    noscript
+      img(src=`https://d14rpr34so8h9j.cloudfront.net/pixel.gif?u=${ encodeURIComponent(url)}&s=${ data.statusCode || 200 }`)
     script(type="awesome/sauce")
       |
       |
