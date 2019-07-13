@@ -14,6 +14,18 @@ I've been thinking about analytics, logging and metrics for a while now, partly 
 
 <!--more-->
 
+## TL;DR
+
+Three analytics options I've looked at:
+
+- Netlify: server side, includes _everything_, can help with debugging bandwidth and errors
+- Google Analytics: for me, huge amount of historical data, can re-target, ethically questionable though
+- Custom logging with [GoAccess](https://goaccess.io): bit of extra hassle, ethically sound, can include errors, only records visitors not requests (a good thing)
+
+For the short term I'll run all these analytics and logging options. There's also important action points: if, like me, you redirect to a 404 page, ensure that it's as lean as it can be as it's a wasteful place to be spending bandwidth - a single source was consuming 800Mb/month from a single hotlinked script that landed on a 404 page.
+
+Finally: review again in a few months to make sure aims are still aligned.
+
 ## What are my aims?
 
 Before I jump into the tools, I really need to ask myself: what are the aims of this kind of analysis?
@@ -71,4 +83,4 @@ Personally I don't want my site to add to the pool of data that's collected abou
 
 On the other hand, I _do_ need market ffconf to my visitors which I've done through re-targeting campaigns. This does work whilst also being at conflict with my own moral judgement.
 
-A nice perk of running GA on my site since 2006 is that I'm able to export all those pageviews and generate a "most popular" page. I've got a small(ish) [node script]()
+A nice perk of running GA on my site since 2006 is that I'm able to export all those pageviews and generate a [most popular](/popular) page. I've got a small(ish) [node script](https://gist.github.com/2d184c39023cad943714b58d4a787271)
