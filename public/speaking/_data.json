@@ -1515,6 +1515,17 @@
       "url": "https://2019.alldayhey.com/"
     },
     {
+      "slug": "2019_fronteers",
+      "event": "Fronteers 2019",
+      "location": "Netherlands, Amsterdam",
+      "title": "How We Built the World Wide Web in Five Days",
+      "year": 2019,
+      "date": {
+        "start": "2019-10-03"
+      },
+      "url": "https://fronteers.nl/congres/2019/schedule"
+    },
+    {
       "slug": "2019_alldayhey",
       "event": "SmashingConf New York",
       "location": "United States, New York",
