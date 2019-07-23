@@ -1,6 +1,6 @@
 ---
 title: 'Analytics, logs and metrics'
-date: 2019-07-23 17:00:00
+date: 2019-07-23
 summary: Of course, and importantly, stats like this mean whatever you want them to mean. It's not that one is wrong or not, it's that they have different meanings.
 tags:
 - web
