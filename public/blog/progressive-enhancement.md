@@ -40,7 +40,7 @@ I can imagine to anyone starting out new in web development might find this ques
 
 Which explains the *silver bullet response* that I've heard time after time: "how would a WebRTC chat site work?" …it wouldn't.
 
-In fact, here is The Very Jake Archibald's excellent SVGOMG web site…with JavaScript turned off, watch as frustration boils over and I'm left to throw my computer out of the window…
+In fact, here is The Very Clever Jake Archibald's excellent [SVGOMG](https://jakearchibald.github.io/svgomg/) web site…with JavaScript turned off, watch as frustration boils over and I'm left to throw my computer out of the window…
 
 <iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/8QCiXc6QHV4?rel=0" frameborder="0" allowfullscreen></iframe>
 
