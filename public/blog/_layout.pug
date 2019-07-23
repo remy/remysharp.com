@@ -4,11 +4,15 @@ block meta
   - permalink = '/' + moment(date).format('YYYY/MM/DD') + '/' + current.source;
   link(rel="canonical" href=`https://remysharp.com${url}`)
   - var summary = excerpt
-  if summary
+  if data.summary
+    - summary = data.summary
+  else if summary
     - summary = summary.replace(/<(?:.|\n)*?>/gm, '')
     - summary = summary.replace(/^#.*?\n+/m, '')
     - summary = summary.replace(/(?:!)?\[(.*?)\]\(.*?\)/g, '')
     - summary = summary.replace(/\n{2,}/g, '\n')
+
+  if summary
     - summary = '<meta name="twitter:description" content="' + summary.trim() + '">';
     != summary
   meta(name="twitter:creator" content="@rem")
