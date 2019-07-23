@@ -1,18 +1,22 @@
 ---
 title: Progressive Enhancement
-date: '2015-06-22 17:59:07'
-complete: false
-inprogress: true
+originalDate: '2015-06-22 17:59:07'
+date: '2019-07-24 12:00:00'
+summary: 'This post was originally written in 2015, but upon re-reading it today, it still (just about) holds up, so I finally hit publish.'
 tags:
   - web
-modified: '2015-11-25 08:49:15'
-draft: true
 ---
 # Progressive enhancement
 
-I thought that this EdgeConf panel would be about developers not using JavaScript because they were more interested in building high end web apps, full of WebRTC, Web Audio and the like. But it's not.
+<small><em>This post was originally written in 2015, but upon re-reading it today, it still (just about) holds up, so I finally hit publish.</em></small>
 
-Here's the thing: after getting responses from 800+ developers, I've come to realise that most developers, or certainly everyone in this room, everyone watching, everyone reading, see progressive enhancement as a good thing. The "right thing" to do. They understand that it can deliver the web site's content to a wider audience. There's no doubt.
+I had thought that an [EdgeConf](https://edgeconf.com/2015-london) panel would be about developers not using JavaScript because they were more interested in building high end web apps, full of WebRTC, Web Audio and the like. But it's not.
+
+I had the pleasure of introducing the Progressive Enhancement panel and contributing to the panel in 2015. For my introduction, I ran some "research" and did some pondering about what exactly is progressive enhancement.
+
+<!--more-->
+
+Here's the thing: after getting responses from 800+ developers (on a Twitter poll), I've come to realise that most developers, or certainly everyone following me, everyone watching (the EdgeConf stream), everyone reading, see progressive enhancement as a good thing. The "right thing" to do. They understand that it can deliver the web site's content to a wider audience. There's no doubt.
 
 There's accessibility benefits and SEO benefits. SEO, I've heard directly from developers, is one way that the business has had buy in to taking a PE approach to development.
 
@@ -26,35 +30,35 @@ As such, there's no one single line that defines progressive enhancement. Howeve
 
 > [progressive enhancement] allows everyone to access the basic content and functionality of a web page, using any browser or Internet connection
 
-<div hidden>while also providing an enhanced version of the page to those with more advanced browser software or greater bandwidth</div>
-
 Graceful degradation works the *other way around*, in that the complete functionality is delivered to the browser, and edge cases and "older browsers" (not meeting the technical requirements) degrade down to a (potentially) less functionality.
 
 **The problem is** based on a survey of my own followers, that's to say that they're likely to have similar interests and values when it comes to web dev, 25% of 800 developers still believe that progressive enhancement is simply making the site work without JavaScript enabled.
 
 ## How do you make it work without JavaScript?
 
-I ran a simple survey of my twitter followers and ask people to share the question too. It asked "what is progressive enhancement?" with 4 limited answers.
+I can imagine to anyone starting out new in web development might find this question pretty daunting. First pressed with solving some complicated problem and they've finally worked out how to make it work using a marriage of StackOverflow copy & pasting and newly gained advice from books and stuff…, but now all of a sudden: make it work without the code 😱
 
-Out of *800* responses, 25% said that progressive enhancement was making the site work *without* JavaScript.
+Which explains the *silver bullet response* that I've heard time after time: "how would a WebRTC chat site work?" …it wouldn't.
 
-Which explains the *silver bullet response* of: "how would a WebRTC chat site work?" ...obviously it wouldn't.
+In fact, here is The Very Jake Archibald's excellent SVGOMG web site…with JavaScript turned off, watch as frustration boils over and I'm left to throw my computer out of the window…
 
 <iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/8QCiXc6QHV4?rel=0" frameborder="0" allowfullscreen></iframe>
 
-Which to me, means **delivering a baseline web site that's usable by the most minimal of requirements**.
+Putting aside silly jokes, how does a web site work without JavaScript isn't really a good question. In fact, it's entirely out of context.
+
+A better question to ask could be **how do we deliver a baseline web site that's usable by the most minimal of requirements**.
 
 Very much what Jeremy Keith has [said recently in response](https://adactio.com/journal/7774) to criticism that it's impossible to progressively enhance everything with today's expectations. Progressive enhancement is:
 
 > ...figuring out what is core functionality and what is an enhancement.
 
-**So the question becomes** how does the web community re-frame it's thinking, and looks at progressive enhancement as the baseline that you build upon?
+So how does the web community re-frame it's thinking and look at progressive enhancement as the baseline that you build upon?
 
 ## Why does it matter?
 
-Today, many developers are writing "thick clients", that is, JavaScript driving a lot, if not all, of the functionality and presentation in the browser.
+Today many developers are writing "thick clients", that is, JavaScript driving a lot, if not all, of the functionality and presentation in the browser.
 
-They do it by delivering and render *views* in the browser. The big upside of this is that the site is extremely fast to the user's input. The other big benefit is that there are a good number of frameworks (Angular, Ember, Polymer to name the "biggies" of today) that lend themselves greatly to client side MVC, i.e. full application logic in the client side code.
+They do it by delivering and render *views* in the browser. The big upside of this is that the site is extremely fast to the user's input. The other big benefit is that there are a good number of frameworks (React, Vue, Angular, Polymer to name the "biggies" of today) that lend themselves greatly to client side MVC, i.e. full application logic in the client side code.
 
 The problem is that the frameworks will often (try to) reinvent fundamental building blocks of a web experience. A few simple/classic examples:
 
@@ -63,9 +67,13 @@ The problem is that the frameworks will often (try to) reinvent fundamental buil
 - You can't share a link to the page you're looking at (because it's all client side rendered and doesn't have a link)
 - Screen readers can't navigate the content properly
 
-This doesn't mean this isn't possible, just that it's more often forgotten. In the same way that Flash was often labelled as inaccessible. This wasn't true, it was *possible* to make Flash accessible, it's just that the default development path didn't include it.
+I [recently wrote about how I had failed the anchor](https://remysharp.com/2019/04/04/how-i-failed-the-a). It pretty much touched on _all_ the points above.
 
-A more extreme example of this is seen in Flipboard's mobile site. Importantly: *mobile site*. Flipboard render the entire page using a `canvas` element. I can't speak for the accessibility of the site, but on mobile it performs beautifully. It feels..."native". And with that, it's also broken. I can't copy links, and I can't copy text - akin to the Flash apps and even Java applet days. It looks great, but it doesn't feel "of the web".
+This doesn't mean this isn't possible, just that it's often forgotten. In the same way that Flash was often labelled as inaccessible. This wasn't true, it was *possible* to make Flash accessible, it's just that the default development path didn't include it.
+
+A more extreme example of this was seen in Flipboard's mobile site. Importantly: *mobile site*. Flipboard render the entire page using a `canvas` element. I can't speak for the accessibility of the site, but on mobile it performs beautifully. It feels..."native". And with that, it's also broken. I can't copy links, and I can't copy text - akin to the Flash apps and even Java applet days. It looks great, but it doesn't feel "of the web"<sup>&dagger;</sup>.
+
+<small>&dagger; caveat: this was true in 2015, it's possible…likely it's been thrown away and fixed…I hope.</small>
 
 The problem is: browsers are pretty poor when compared to the proprietary and closed platforms they're constantly compared to.
 
@@ -75,7 +83,7 @@ Native media elements, native sockets, native audio, native push notifications, 
 
 ## But...how would a thick-client work without JavaScript?
 
-Angular, for instance, does not have a developer story for how to develop a site with progressive enhancement as a baseline.
+Angular, for instance, did not have a developer story for how to develop a site with progressive enhancement as a baseline.
 
 Does this mean it's not possible? I don't think so. Without the stories though, developers will gravitate towards solved problems (understandably).
 
@@ -125,6 +133,8 @@ JavaScript isn't quite the same, but we can code defensively, using feature dete
 
 ES6 has features that breaks this design. Syntax breaking features that cannot exist alongside our ES5 and cannot be polyfilled. It must be transpiled.
 
+There's currently talk of smart pipelines that can deliver polyfilled code to "old" browsers and light native ES-x features to those newer browsers. Though, I would imagine the older browsers would be running on older machines and therefore wouldn't perform well with more code in the JavaScript bundles. Compared with new browsers running on new machines are probably faster and are probably _more_ capable than their elderly peers at running lots of code. <abbr title="I don't know">IDK</abbr>, just a thought.
+
 ### Syntax breaking
 
 There's a small number of ES6 features that are syntax breaking, the "[arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)" in particular.
@@ -144,6 +154,11 @@ Since JavaScript doesn't exhibit the same resilience that HTML & CSS does, so th
 
 **Is there a workflow that solves this? Or are we forced to support two incompatible languages on the web?**
 
+---
+
+Thanks for reading. As usual, **it depends**. In fact, that it does depend, applies to every single project I work on.
+
+---
 
 ## Further reading
 
