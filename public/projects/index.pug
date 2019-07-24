@@ -1,0 +1,55 @@
+- var order = [2, 1, 0];
+- var categories = ['Brings income', 'Free & popular', 'Internal'];
+
+.post
+  h1.title Projects
+  div.post-content
+    :markdown
+      This is a collection of projects that I've created that have made their way to being fully live and in regular use by at least myself.
+
+    .projects
+      each index, i in order
+        .projects-group
+          p
+            strong= categories[i]
+          each project in _data.slice(0).sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
+            if project.category === index
+              p.project
+                img(width="16" height="16" src=`/images/favicons/${project.image}`)
+                a.name(href=project.url)= project.name
+
+    p.update This page is a work in progress. Currently the links are just direct URLs to the projects, but in the future I intend to add more details such as background information and screenshots.
+
+style.
+  .projects-group {
+    padding-bottom: 20px;
+    min-width: 200px;
+  }
+
+  @media screen and (min-width: 550px) {
+    .projects {
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    p.project {
+      font-size: 70%;
+      line-height: 2;
+    }
+
+  }
+
+  .projects p {
+    margin: 0;
+  }
+
+  .projects .name {
+    margin: 0 8px;
+  }
+
+  .projects img {
+    vertical-align: middle;
+    display: inline-block;
+  }

@@ -393,3 +393,13 @@ map(select(has("endpoint") | not))
 ```
 
 [Demo](https://jqterm.com/ff4823e49baba815aad30eb0d8beecef?query=map%28select%28has%28%22endpoint%22%29%20%7C%20not%29%29)
+
+---
+
+CSV content transformed to a structured object, using `rawInput` and `slurp`. First the lines are split and the header is dropped, then each line is split by comma and mapped to a new object:
+
+```jq
+split("\n")[1:] | map(split(",") | { name: .[0 ], url: .[1], image: .[2], category: .[3] | tonumber })
+```
+
+[Demo](https://jqterm.com/3cebefc88a0bae3c630fc799aaae3548?query=split%28%22%5Cn%22%29%5B1%3A%5D%20%7C%20map%28split%28%22%2C%22%29%20%7C%20%7B%20name%3A%20.%5B0%20%5D%2C%20url%3A%20.%5B1%5D%2C%20image%3A%20.%5B2%5D%2C%20category%3A%20.%5B3%5D%20%7C%20tonumber%20%7D%29&slurp=true&raw-input=true)

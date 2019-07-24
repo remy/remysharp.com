@@ -25,7 +25,9 @@ For a legacy browser, we're talking IE9 (and probably Safari), it means potentia
 
 For latest browsers, we can push the envelope a little more, but still respect those lower powered devices.
 
-So when I reviewed [Fathom](https://usefathom.com/), from the [live demo](https://stats.usefathom.com/#!p=1w&g=day) I could see there were no user agents.
+So when I reviewed [Fathom](https://usefathom.com/), from the [live demo](https://stats.usefathom.com/#!p=1w&g=day) I could see there were no user agents<sup>&dagger;</sup>.
+
+<small>&dagger; Note that as of 2019-07-23, I've been [told over twitter that Fathom](https://mobile.twitter.com/usefathom/status/1153718772584394753) are adding UA support in their next version.</small>
 
 My intended usage for the analytics was my own blog, so I wanted to know whether I could expect certain CSS features to work, or whether using "fat arrow" functions in JavaScript would cause my code to blow up (because JavaScript is rather toddler-ish like that).
 
