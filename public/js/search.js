@@ -48,8 +48,14 @@
       .substr(1)
       .split('=')
       .pop();
-    $for.value = clean(q);
-    search();
+    if (window.location.search.indexOf('?s=') === 0) {
+      // browser search, replace pluses
+      $for.value = clean(q.replace(/\+/g, ' '));
+      search();
+    } else {
+      $for.value = clean(q);
+      search();
+    }
   }
 
   function find(queryString, query) {
