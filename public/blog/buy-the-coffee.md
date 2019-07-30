@@ -1,8 +1,8 @@
 ---
 title: "Buy the coffee"
-category:
+tags:
 - business
-date: '2019-07-30 16:00:00'
+date: '2019-07-30 15:00:00'
 ---
 
 # Buy the coffee
@@ -27,7 +27,7 @@ In the scheme of things a £10 bill barely a dent on the money that will be invo
 
 In addition, I have a rule that if someone recommends me to a client and I get that business, I'll say thank you (after the client has paid and usually at the end of the year, like Christmas) by sending that person (who recommended me) a crate of wine (or some such appropriate gift).
 
-I try to be generous, it can be anything from £100-£200 but again, it's barely a dent in the money my business was able to invoice for. It also (hopefully) says that I value their recommendation. Because I really do.
+I try to be generous (or what I _think_ might be generous), so it can be anything from £100-£200 but again, it's barely a dent in the money my business was able to invoice for. It also (hopefully) says that I value their recommendation. Because I really do.
 
 ## Paying for misc "stuff"
 
@@ -39,7 +39,7 @@ The books/videos/resources products are an easy sell on me. If the individual re
 
 It also means that now I don't need to search the internet for how to solve that particular thing, I can use this newly bought resource guide _and_ I know it's a reputable source of information (which is the hard part of scouring the web).
 
-Then there is the actual cost. Anything up to (around) £250 I barely think about spending. That's because the investment will be returned in my own work later down the line. If I have the option to pay different rates (like gumtree allows you to), I'll choose to pay more. I pay more because I can and because I think the creator will like to have more.
+Then there is the actual cost. _Generally (and for me)_, anything up to around £200 is reasonable enough that it's worth paying for. That's because the investment will be returned in my own work later down the line. If I have the option to pay different rates (like gumtree allows you to), I'll choose to pay more. I pay more because I can and because I think the creator will like to have more.
 
 These are all business purchases. They are all purchases that make my business better in some way and "better" typically leads to my business earning money, which lets me live. Which I value the most.
 
