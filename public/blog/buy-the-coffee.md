@@ -33,13 +33,13 @@ I try to be generous (or what I _think_ might be generous), so it can be anythin
 
 Which brings me to: paying for software or services.
 
-I _really like_ paying individuals for their work. Individuals who have worked on a self contained product and sold it on (something like) gumtree, or some software that I can use *and rely on*, or perhaps have written some book or resource.
+I _really like_ paying individuals for their work. Individuals who have worked on a self contained product and sold it on (something like) gumroad, or some software that I can use *and rely on*, or perhaps have written some book or resource.
 
 The books/videos/resources products are an easy sell on me. If the individual responsible for the work is recommended to me or I'm already familiar with their work, I know that their content is going to be useful and of high quality.
 
 It also means that now I don't need to search the internet for how to solve that particular thing, I can use this newly bought resource guide _and_ I know it's a reputable source of information (which is the hard part of scouring the web).
 
-Then there is the actual cost. _Generally (and for me)_, anything up to around £200 is reasonable enough that it's worth paying for. That's because the investment will be returned in my own work later down the line. If I have the option to pay different rates (like gumtree allows you to), I'll choose to pay more. I pay more because I can and because I think the creator will like to have more.
+Then there is the actual cost. _Generally (and for me)_, anything up to around £200 is reasonable enough that it's worth paying for. That's because the investment will be returned in my own work later down the line. If I have the option to pay different rates (like gumroad allows you to), I'll choose to pay more. I pay more because I can and because I think the creator will like to have more.
 
 These are all business purchases. They are all purchases that make my business better in some way and "better" typically leads to my business earning money, which lets me live. Which I value the most.
 
