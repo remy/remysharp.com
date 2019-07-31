@@ -28,7 +28,7 @@ Ninja has had an interesting life that was peppered with close calls:
 - he disappeared for a few days, to later turn up from under some floorboards of new development that was happening down the road from us
 - he was attacked by a dog (or maybe a fox) and had a full claw hole through his cheek
 - during another fight, he cut his forelegs and managed to spray blood, full Tarantino style, across multiple walls in our house
-- he would suffer epileptic - which is pretty frightening to discover first time around particularly as he would fall of things during his fitting state (though thankfully these reduced in number drastically as he got older)
+- he would suffer epileptic fits - which is pretty frightening to discover first time around particularly as he would fall of things during his fitting state (though thankfully these reduced in number drastically as he got older)
 - one day I noticed the tips of his ears looked red, we took him to the vet, they said they could biopsy samples from his ears, but we decided to have them completely removed. Afterwards the (chopped) ears were biopsied and they turned out to be cancerous - a lucky break to catch it so early
 
 Ninja especially loved Julie and his pur was the stuff of legends. He was also the damn cat that could open the fridge and freezer to the point that we had to buy childproof locks long before having kids because he kept relieving our fridge of it's food!
