@@ -4,6 +4,7 @@ date: 2019-07-31 21:30:00
 tags:
 - personal
 summary: Our cat died tonight and I wanted to share a little of his memory here
+image: /images/ninja-card.jpg
 ---
 
 # Ninja
