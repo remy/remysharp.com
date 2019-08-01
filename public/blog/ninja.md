@@ -27,12 +27,12 @@ Ninja has had an interesting life that was peppered with close calls:
 
 - he fell out of a third storey window to the ground having only broken his tail - which the vet said would probably need to be removed and wouldn't mend - so of course his tail mended itself and he'd often hold it aloft proudly
 - he disappeared for a few days, to later turn up from under some floorboards of new development that was happening down the road from us
-- he was attacked by a dog (or maybe a fox) and had a full claw hole through his cheek
-- during another fight, he cut his forelegs and managed to spray blood, full Tarantino style, across multiple walls in our house
-- he would suffer epileptic fits - which is pretty frightening to discover first time around particularly as he would fall of things during his fitting state (though thankfully these reduced in number drastically as he got older)
+- he was attacked by a dog (or maybe a fox) and had a full bite hole _all the way_ through his thigh
+- during another fight, he cut his ears and managed to spray blood, full Tarantino style, across multiple walls in our house
+- he would suffer epileptic fits - which is pretty frightening to discover first time around particularly as he would fall off things during his fitting state (though thankfully these reduced in number drastically as he got older)
 - one day I noticed the tips of his ears looked red, we took him to the vet, they said they could biopsy samples from his ears, but we decided to have them completely removed. Afterwards the (chopped) ears were biopsied and they turned out to be cancerous - a lucky break to catch it so early
 
-Ninja especially loved Julie and his pur was the stuff of legends. He was also the damn cat that could open the fridge and freezer to the point that we had to buy childproof locks long before having kids because he kept relieving our fridge of it's food!
+Ninja especially loved Julie and his purr was the stuff of legends. He was also the damn cat that could open the fridge and freezer to the point that we had to buy childproof locks long before having kids because he kept relieving our fridge of it's food!
 
 We love you Ninja. You will be missed. RIP, 2019.
 
