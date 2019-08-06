@@ -386,7 +386,7 @@ map(select(has("endpoint") and .endpoint == null))
 
 ---
 
-How to find find null, ignoring non-existant keys - the invert of the above:
+How to find null, ignoring non-existant keys - the invert of the above:
 
 ```jq
 map(select(has("endpoint") | not))
@@ -403,3 +403,13 @@ split("\n")[1:] | map(split(",") | { name: .[0 ], url: .[1], image: .[2], catego
 ```
 
 [Demo](https://jqterm.com/3cebefc88a0bae3c630fc799aaae3548?query=split%28%22%5Cn%22%29%5B1%3A%5D%20%7C%20map%28split%28%22%2C%22%29%20%7C%20%7B%20name%3A%20.%5B0%20%5D%2C%20url%3A%20.%5B1%5D%2C%20image%3A%20.%5B2%5D%2C%20category%3A%20.%5B3%5D%20%7C%20tonumber%20%7D%29&slurp=true&raw-input=true)
+
+---
+
+Recursively find all the properties whose key is `errors` whether it exists or not. The `..` unrolls the object, the `?` checks for the value or returns `null` and the `select(.)` is like a filter on truthy values:
+
+```jq
+[.. | .errors?[0] | select(.) ]
+```
+
+[Demo](https://jqterm.com/e360f558a1a2a3fb321ed8b8d4de3fa4?query=%5B..%20%7C%20.errors?%5B0%5D%20%7C%20select%28.%29%20%5D)

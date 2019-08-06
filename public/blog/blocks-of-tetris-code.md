@@ -17,3 +17,5 @@ draft: true
 - Coded in the browser using `import`
 - Deployed with a small build script for `nomodule` support
 - Some mangling of touchstart/click (to prevent doubles)
+
+https://meatfighter.com/nintendotetrisai/#The_Algorithm
