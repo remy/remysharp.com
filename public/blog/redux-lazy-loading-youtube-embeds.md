@@ -13,6 +13,8 @@ The trick Arthur Corenzan uses in their solution is to use `srcdoc` to let the v
 
 But then there's the IE11 visitor…
 
+<!--more-->
+
 ## Support
 
 Myself, I've got a long and potted history with iframes (with JS Bin and many other tools) so when I see `srcdoc` being used I'm always partially pleased and partially sceptical.
