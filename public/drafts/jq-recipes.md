@@ -413,3 +413,24 @@ Recursively find all the properties whose key is `errors` whether it exists or n
 ```
 
 [Demo](https://jqterm.com/e360f558a1a2a3fb321ed8b8d4de3fa4?query=%5B..%20%7C%20.errors?%5B0%5D%20%7C%20select%28.%29%20%5D)
+
+---
+
+A generic CSV to JSON in jq. Obviously overkill (see [csvkit](https://csvkit.readthedocs.io/en/latest/) and specifically csvjson), but it's doable and a good example of variables and reduce:
+
+```jq
+split("\n") | # break into lines
+  map(split(",")) | # comma sep
+  .[0] as $header | # save the header
+  .[1:] | # drop the header
+  map(
+      . as $o | # save the current object, then
+      reduce .[] as $item( # reduce into a header keyed object
+        {};
+        ($o | index($item)) as $index |
+        .[$header[$index]] = $item
+    )
+  )
+```
+
+[Demo](https://jqterm.com/3cebefc88a0bae3c630fc799aaae3548?query=split%28"%5Cn"%29%20%7C%20%23%20break%20into%20lines%0A%09map%28split%28"%2C"%29%29%20%7C%20%23%20comma%20sep%0A%09.%5B0%5D%20as%20%24header%20%7C%20%23%20save%20the%20header%0A%09.%5B1%3A%5D%20%7C%20%23%20drop%20the%20header%0A%09map%28%0A%20%20%20%20%20%20.%20as%20%24o%20%7C%20%23%20save%20the%20current%20object%2C%20then%20%0A%20%20%20%20%20%20reduce%20.%5B%5D%20as%20%24item%28%20%23%20reduce%20into%20a%20header%20keyed%20object%0A%20%20%20%20%20%20%20%20%7B%7D%3B%20%0A%20%20%20%20%20%20%20%20%28%24o%20%7C%20index%28%24item%29%29%20as%20%24index%20%7C%0A%20%20%20%20%20%20%20%20.%5B%24header%5B%24index%5D%5D%20%3D%20%24item%0A%09%09%29%0A%09%29&slurp=true&raw-input=true)
