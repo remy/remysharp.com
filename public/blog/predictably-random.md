@@ -36,23 +36,27 @@ For example, here's three functions I found:
 ```js
 let seed = Date.now();
 
+// based on a worst case random (not random really!)
 function randomA() {
   seed = (5 * seed + 3) % 16;
   return seed / 16;
 }
 
+// a version I'd used for a *very* old PalmPilot game
 function randomB() {
   seed = (seed * 7919 + 1) & 0xffff;
   // upper range is 0xffff (65535) so bring it down to 0-1
   return seed / 0xffff;
 }
 
+// the 1984 original NES tetris random algo
 let ctr = 0;
+let randCSeed = Date.now() & 0xFF; // clamp to 8 bit
 function randomC(n = 7) {
   ctr++;
-  let value = ((((seed >> 9) & 1) ^ ((seed >> 1) & 1)) << 15) | (seed >> 1);
+  let value = ((((randCSeed >> 9) & 1) ^ ((randCSeed >> 1) & 1)) << 15) | (randCSeed >> 1);
 
-  seed = value;
+  randCSeed = value;
   value >>= 8; // high byte
   value += ctr;
   value %= n;
@@ -81,7 +85,7 @@ This way I can instantly see the effects of the three functions:
 
 - [randomA](https://random.isthe.link/?code=let+seed+%3D+Date.now%28%29%3B%0A%0Afunction+randomA%28%29+%7B%0A++seed+%3D+%285+*+seed+%2B+3%29+%25+16%3B%0A++return+seed+%2F+16%3B%0A%7D%0A%0Aexport+default+randomA%3B) <img src="/images/a.png" style="display: inline; margin: 0 8px; vertical-align: bottom">
 - [randomB](https://random.isthe.link/?code=let+seed+%3D+Date.now%28%29%3B%0A%0Afunction+randomB%28%29+%7B%0A++seed+%3D+%28seed+*+7919+%2B+1%29+%26+0xffff%3B%0A++%2F%2F+upper+range+is+0xffff+%2865535%29+so+bring+it+down+to+0-1%0A++return+seed+%2F+0xffff%3B%0A%7D%0A%0A%0Aexport+default+randomB%3B) <img src="/images/b.png" style="display: inline; margin: 0 8px; vertical-align: bottom">
-- [randomC](https://random.isthe.link/?code=let+seed+%3D+Date.now%28%29%3B%0A%0A%0Alet+ctr+%3D+0%3B%0Afunction+randomC%28n+%3D+7%29+%7B%0A++ctr%2B%2B%3B%0A++let+value+%3D+%28%28%28%28seed+%3E%3E+9%29+%26+1%29+%5E+%28%28seed+%3E%3E+1%29+%26+1%29%29+%3C%3C+15%29+%7C+%28seed+%3E%3E+1%29%3B%0A%0A++seed+%3D+value%3B%0A++value+%3E%3E%3D+8%3B+%2F%2F+high+byte%0A++value+%2B%3D+ctr%3B%0A++value+%25%3D+n%3B%0A%0A++return+value+%2F+n%3B%0A%7D%0A%0Aexport+default+randomC%3B) <img src="/images/c.png" style="display: inline; margin: 0 8px; vertical-align: bottom">
+- [randomC](https://random.isthe.link/?code=let+seed+%3D+Date.now%28%29+%26+0xff%3B%0A%0Alet+ctr+%3D+0%3B%0Afunction+randomC%28n+%3D+7%29+%7B%0A++ctr%2B%2B%3B%0A++let+value+%3D+%28%28%28%28seed+%3E%3E+9%29+%26+1%29+%5E+%28%28seed+%3E%3E+1%29+%26+1%29%29+%3C%3C+15%29+%7C+%28seed+%3E%3E+1%29%3B%0A%0A++seed+%3D+value%3B%0A++value+%3E%3E%3D+8%3B+%2F%2F+high+byte%0A++value+%2B%3D+ctr%3B%0A++value+%25%3D+n%3B%0A%0A++return+value+%2F+n%3B%0A%7D%0A%0Aexport+default+randomC%3B) <img src="/images/c.png" style="display: inline; margin: 0 8px; vertical-align: bottom">
 
 I'm sure there's better functions out there, but the `randomC` is "good enough" for my particular needs. Though interestingly it works well for the 7 values I need, but when the range of values goes up, to 7777 or even [77777](https://random.isthe.link/?code=let+seed+%3D+Date.now%28%29%3B%0A%0A%0Alet+ctr+%3D+0%3B%0Afunction+randomC%28n+%3D+77777%29+%7B%0A++ctr%2B%2B%3B%0A++let+value+%3D+%28%28%28%28seed+%3E%3E+9%29+%26+1%29+%5E+%28%28seed+%3E%3E+1%29+%26+1%29%29+%3C%3C+15%29+%7C+%28seed+%3E%3E+1%29%3B%0A%0A++seed+%3D+value%3B%0A++value+%3E%3E%3D+8%3B+%2F%2F+high+byte%0A++value+%2B%3D+ctr%3B%0A++value+%25%3D+n%3B%0A%0A++return+value+%2F+n%3B%0A%7D%0A%0Aexport+default+randomC%3B) you start to see gradients (which I presume the upper bounds of the bit shifting is being hit…but really, I'm not sure!).
 
