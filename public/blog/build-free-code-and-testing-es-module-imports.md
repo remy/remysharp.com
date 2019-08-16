@@ -28,7 +28,7 @@ $ npm i esm
 $ npm i -D ava nyc
 ```
 
-And update your `package.json` with my [final solution](#final-solution) to use `import` statements without any build hassles.
+And update your `package.json` with my [solution](#final-solution) to use `import` statements without any build hassles.
 
 ### 1. esm
 
