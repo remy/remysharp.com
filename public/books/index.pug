@@ -36,7 +36,7 @@
           tr
             td #{moment(review.read).format('D-MMM \'YY')}
               br
-              span #{duration(review.started, review.read)}
+              span(title=`${review.read}`) #{duration(review.started, review.read)}
             td
               a(href=`${review.book.url}`) #{review.book.title}
               if review.review

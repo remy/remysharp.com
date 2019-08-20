@@ -5,6 +5,9 @@
   "engines": {
     "node": "10"
   },
+  "prettier": {
+    "singleQuote": true
+  },
   "scripts": {
     "dev": "nodemon -w lib/ lib/dev.js",
     "build": "node lib/index.js",

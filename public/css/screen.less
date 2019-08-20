@@ -1543,6 +1543,7 @@ video {
   margin: 0;
   display: block;
   border-radius: 50%;
+  object-fit: cover;
   // border: 1px solid #ddd;
 }
 
@@ -1644,6 +1645,11 @@ video {
 }
 
 body .commento-root {
+  .commento-card .commento-timeago::before,
+  .commento-card .commento-score {
+    display: none;
+  }
+
   .commento-anonymous-checkbox-container input[type='checkbox'] + label {
     float: none;
     width: auto;
@@ -1669,7 +1675,8 @@ body .commento-root {
   .commento-logged-container .commento-logout,
   .commento-card .commento-timeago,
   .commento-card .commento-score,
-  .commento-markdown-button {
+  .commento-markdown-button,
+  .commento-login .commento-login-text {
     color: #757575;
   }
 

@@ -1,26 +1,54 @@
-'use strict';
-/* global caches, self, Request, Response */
+/* eslint-env serviceworker */
+/* global hashes */
+
 importScripts('/js/hashes.js');
 
-console.log('SW: hashes', hashes);
-const version = 'v1/';
-const jsCache = `${version}static/js/${hashes.js}`;
-const cssCache = `${version}static/css/${hashes.css}`;
-const pagesCache = version + 'pages';
-const imagesCache = version + 'images';
+const version = 'v1/%%COMMIT%%';
+let jsCache = `${version}/static/js/${hashes.js}`;
+let cssCache = `${version}/static/css/${hashes.css}`;
+const imagesCache = version + '/static/images';
+const pagesCache = version + '/content/pages';
+const postsCache = version + '/content/posts';
+
+showVersion();
+
+function showVersion() {
+  console.group('service worker');
+  console.log('version: 1.0.1');
+  console.log('js: %s\ncss: %s', hashes.js, hashes.css);
+  console.groupEnd();
+}
 
 const cacheByType = {
   css: cssCache,
   javascript: jsCache,
-  image: imagesCache,
+  image: imagesCache
 };
+
+function cacheForRequest(req, res) {
+  const url = req.url;
+  if (/\/(\d{4})\/(\d{2})\/(\d{2})\//.test(url)) {
+    return postsCache;
+  }
+
+  const contentType = res.headers.get('content-type');
+
+  const type = ['image', 'css', 'javascript'].find(_ =>
+    contentType.includes(_)
+  );
+
+  if (type) {
+    return cacheByType[type];
+  }
+
+  return pagesCache;
+}
 
 function updateStaticCache() {
   return caches.open(pagesCache).then(cache => {
     // these items won't block the installation of the Service Worker
-    // cache.addAll([]);
     // These items must be cached for the Service Worker to complete installation
-    return cache.addAll(['/', '/offline']);
+    return cache.addAll(['/', '/latest', '/offline', '/manifest.json']);
   });
 }
 
@@ -46,7 +74,6 @@ function clearOldCaches() {
         })
         .map(key => {
           console.log('deleting old cache %s', key);
-
           return caches.delete(key);
         })
     );
@@ -58,6 +85,19 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
+  importScripts('/js/hashes.js');
+
+  console.log(
+    'jsCache: %s\nnewhash: %s/static/js/%s',
+    jsCache,
+    version,
+    hashes.js
+  );
+
+  // update the static cache
+  jsCache = `${version}/static/js/${hashes.js}`;
+  cssCache = `${version}/static/css/${hashes.css}`;
+
   event.waitUntil(clearOldCaches().then(() => self.clients.claim()));
 });
 
@@ -65,20 +105,17 @@ self.addEventListener('fetch', event => {
   let request = event.request;
   let url = new URL(request.url);
 
-  // Only deal with requests to my own server
-  if (url.origin !== location.origin) {
+  const pass =
+    url.origin !== location.origin ||
+    url.pathname.startsWith('_logs') ||
+    url.pathname.startsWith('feed.xml');
+
+  // pass through any requests outside this origin
+  if (pass) {
     return event.respondWith(fetch(request));
   }
 
-  // Ignore requests to some directories
-  if (
-    request.url.indexOf('/mint') !== -1 ||
-    request.url.indexOf('/cms') !== -1
-  ) {
-    return;
-  }
-
-  // For non-GET requests, try the network first, fall back to the offline page
+  // non GET requests hit network first, then show offline if appropriate
   if (request.method !== 'GET') {
     event.respondWith(fetch(request).catch(() => caches.match('/offline')));
     return;
@@ -86,23 +123,14 @@ self.addEventListener('fetch', event => {
 
   // For HTML requests, try the network first, fall back to the cache, finally the offline page
   if (request.headers.get('Accept').includes('text/html')) {
-    // Fix for Chrome bug: https://code.google.com/p/chromium/issues/detail?id=573937
-    request = new Request(request.url, {
-      method: 'GET',
-      headers: request.headers,
-      mode: request.mode == 'navigate' ? 'cors' : request.mode,
-      credentials: request.credentials,
-      redirect: request.redirect,
-    });
-
     event.respondWith(
-      fetch(request)
+      fetch(request) // network first method
         .then(response => {
           if (response.status === 200) {
             // NETWORK
             // Stash a copy of this page in the pages cache
-            let copy = response.clone();
-            stashInCache(pagesCache, request, copy);
+            const cacheName = cacheForRequest(request, response);
+            stashInCache(cacheName, request, response.clone());
           }
           return response;
         })
@@ -117,32 +145,34 @@ self.addEventListener('fetch', event => {
   }
 
   // For non-HTML requests, look in the cache first, fall back to the network
-  let res = caches.match(request).then(response => {
-    // CACHE
-    // console.log('+asset %s %s', request.url, response ? 'HIT' : 'MISS');
+  event.respondWith(assetRequest(request));
+});
 
+function assetRequest(request) {
+  let url = new URL(request.url);
+  url = url.origin + url.pathname; // strip the query string
+
+  return caches.match(url).then(response => {
+    // CACHE
     return (
       response ||
       fetch(request)
         .then(response => {
           // NETWORK
           // If the request is for an image, stash a copy of this image in the images cache
-          let accepts = request.headers.get('Accept');
           const ct = response.headers.get('content-type');
 
           const type = ['image', 'css', 'javascript'].find(_ => ct.includes(_));
 
           if (type) {
-            let copy = response.clone();
-            stashInCache(cacheByType[type], request, copy);
+            stashInCache(cacheByType[type], url, response.clone());
           }
 
           return response;
         })
         .catch(() => {
-          // OFFLINE
-          // If the request is for an image, show an offline placeholder
-          if (request.headers.get('Accept').indexOf('image') !== -1) {
+          // OFFLINE - If the request is for an image, show an offline placeholder
+          if (request.headers.get('Accept').startsWith('image/')) {
             return new Response(
               '<svg role="img" aria-labelledby="offline-title" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg"><title id="offline-title">Offline</title><g fill="none" fill-rule="evenodd"><path fill="#D8D8D8" d="M0 0h400v300H0z"/><text fill="#9B9B9B" font-family="Helvetica Neue,Arial,Helvetica,sans-serif" font-size="72" font-weight="bold"><tspan x="93" y="172">offline</tspan></text></g></svg>',
               { headers: { 'Content-Type': 'image/svg+xml' } }
@@ -151,5 +181,4 @@ self.addEventListener('fetch', event => {
         })
     );
   });
-  event.respondWith(res);
-});
+}

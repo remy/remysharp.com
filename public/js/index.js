@@ -1,6 +1,5 @@
 /* eslint-env browser */
-'use strict';
-
+/* global whenReady */
 const $$ = (s, context = document) => Array.from(context.querySelectorAll(s));
 const $ = (s, context = document) => context.querySelector(s) || {};
 
@@ -44,17 +43,6 @@ $$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
     .map(line => line.replace(/^\$ /, prompt))
     .join('\n'); // join the lines back up
 });
-
-//Get the offset of an object
-function findTop(obj) {
-  var top = 0;
-  if (obj.offsetParent) {
-    do {
-      top += obj.offsetTop;
-    } while ((obj = obj.offsetParent)); // jshint ignore:line
-    return top;
-  }
-}
 
 function flickrURL(photo) {
   return (
@@ -107,10 +95,6 @@ function loadFlickr() {
   document.body.appendChild(script);
 }
 
-if (window.location.hash.indexOf('#comments') > 0) {
-  loadDisqus();
-}
-
 var searchOpen = false;
 var searchForm = $('#inline-search');
 $('#search').onclick = function(e) {
@@ -151,18 +135,18 @@ if ($$('#index-page').length) {
   loadFlickr();
 }
 
-// the edit link for blog posts
-if (document.body.id.indexOf('blog-') === 0) {
-  var h1First = $('h1');
-  var html = `<small class="edit"><a href="${
-    h1First.dataset.edit
-  }">(edit)</a></small>`;
+// // the edit link for blog posts
+// if (document.body.id.indexOf('blog-') === 0) {
+//   var h1First = $('h1');
+//   var html = `<small class="edit"><a href="${
+//     h1First.dataset.edit
+//   }">(edit)</a></small>`;
 
-  h1First.onmouseover = () => {
-    h1First.innerHTML += html;
-    h1First.onmouseover = null;
-  };
-}
+//   h1First.onmouseover = () => {
+//     h1First.innerHTML += html;
+//     h1First.onmouseover = null;
+//   };
+// }
 
 const fitVidSelector = [
   "iframe[src*='player.vimeo.com']",
@@ -171,7 +155,7 @@ const fitVidSelector = [
   "iframe[src*='kickstarter.com'][src*='video.html']",
   // 'video',
   'object',
-  'embed',
+  'embed'
 ].join(',');
 
 $$(fitVidSelector).forEach(el => {
@@ -185,11 +169,102 @@ $$(fitVidSelector).forEach(el => {
   wrapper.appendChild(el);
 });
 
-if (window.pageData) {
-  idbKeyval
-    .set(pageData.url, pageData)
-    .then(() => console.log('stored'))
-    .catch(e => console.log(e));
+// if (window.pageData) {
+//   idbKeyval.set(pageData.url, pageData).catch(e => console.log(e));
+// }
+
+function formatDate(date) {
+  const month = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'Jun',
+    'Jul',
+    'Aug',
+    'Sep',
+    'Oct',
+    'Nov',
+    'Dec'
+  ];
+
+  return `${date.getDay()}-${month[date.getMonth()]} ${date.getFullYear()}`;
+}
+
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
+function daysAgo(date) {
+  date.setHours(0, 0, 0, 0);
+  const time = date.getTime();
+  const now = today.getTime();
+  const delta = ((now - time) / 1000 / 60 / 60 / 24) | 0;
+
+  if (delta < 1) {
+    return 'today';
+  }
+
+  if (delta === 1) {
+    return 'yesterday';
+  }
+
+  return `${delta | 0} days ago`;
+}
+
+// called on the offline page
+async function listPages() {
+  // Get a list of all of the caches for this origin
+  const cacheNames = await caches.keys();
+  const result = [];
+
+  for (const name of cacheNames) {
+    // Open the cache
+    if (name.includes('/posts')) {
+      const cache = await caches.open(name);
+
+      // Get a list of entries. Each item is a Request object
+      for (const request of await cache.keys()) {
+        const url = request.url;
+        const match = url.match(/\/(\d{4})\/(\d{2})\/(\d{2})\//);
+        // If the request URL matches, add the response to the result
+        if (match) {
+          const post = await cache.match(request);
+          const body = await post.text();
+          const title = body.match(/<title>(.*)<\/title>/)[1];
+          result.push({
+            url,
+            post,
+            title,
+            published: new Date(match.slice(1).join('-')),
+            visited: new Date(post.headers.get('date'))
+          });
+        }
+      }
+    }
+  }
+
+  const el = $('#offline-posts');
+
+  if (result.length) {
+    el.innerHTML = result
+      .sort((a, b) => {
+        return a.published.toJSON() < b.published.toJSON() ? 1 : -1;
+      })
+      .map(res => {
+        let html = `<li><a href="${res.url}">${
+          res.title
+        }</a> <small class="date">${formatDate(
+          res.published
+        )} <span title="${res.visited.toString()}">(visited ${daysAgo(
+          res.visited
+        )})</span></small></li>`;
+        return html;
+      })
+      .join('\n');
+  }
+
+  return result;
 }
 
 // sorry, knarly and lazy code, but it does the job.
@@ -217,3 +292,31 @@ if (window.pageData) {
 //     iframe.contentWindow.eval(code);
 //   });
 // });
+
+navigator.serviceWorker.onmessage = function(event) {
+  var message = JSON.parse(event.data);
+  if (message.type === 'offline') {
+    if (message.value === false) {
+      console.log('currently offline');
+    }
+  }
+};
+
+// expose the artwork!
+if (location.hostname !== 'localhost')
+  setTimeout(
+    () => console.log($('script[type="awesome/sauce"]').innerText),
+    100
+  );
+
+if (whenReady.length) {
+  whenReady.forEach(fn => fn());
+}
+
+whenReady = {
+  push(fn) {
+    fn();
+  }
+};
+
+console.log('running with new index.js - without');
