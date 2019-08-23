@@ -10,7 +10,7 @@ I live in the sometimes sunny Brighton (it's in the [south of the UK](https://ma
 
 I've been known to [speak at conferences](/talks) so if you want a bio you can copy and paste for me, please feel free to use the following latest info (available as [html](https://jsbin.com/remy-bio.html) or [markdown](https://jsbin.com/remy-bio.md)):
 
-<blockquote id="bio">
+<blockquote id="bio-desc">
 <p><a href="https://twitter.com/rem">Remy</a> is the founder and curator of <a href="https://ffconf.org">ffconf</a>, the UK based JavaScript conference. He also ran "jQuery for Designers" website, co-authored <a href="https://www.goodreads.com/book/show/8352701-introducing-html5">Introducing HTML5</a> and runs a <a href="https://terminal.training">video course on the command line</a>.</p>
 <p>Whilst he's not <a href="https://remysharp.com">writing articles</a> or running and <a href="https://remysharp.com/talks">speaking at conferences</a>, he runs his own development and training company in Brighton called <a href="https://leftlogic.com">Left Logic</a>. And he built these popular tools: <a href="https://github.com/remy/nodemon">nodemon</a>, <a href="https://jsbin.com">jsbin.com</a>, <a href="https://github.com/remy/inliner">inliner</a>, <a href="https://mit-license.org">mit-license.org</a>, <a href="https://snapbird.org">snapbird.org</a>, <a href="https://jsconsole.com">jsconsole.com</a> and others!</p></blockquote>
 

@@ -70,7 +70,7 @@ pre[class*="language-"] {
 .token.prolog,
 .token.doctype,
 .token.cdata {
-	color: slategray;
+	color: rgb(109, 107, 138);
 }
 
 .token.punctuation {
@@ -97,7 +97,7 @@ pre[class*="language-"] {
 .token.char,
 .token.builtin,
 .token.inserted {
-	color: #690;
+	color: #527b01;
 }
 
 .token.operator,
@@ -105,8 +105,9 @@ pre[class*="language-"] {
 .token.url,
 .language-css .token.string,
 .style .token.string {
-	color: #9a6e3a;
-	background: hsla(0, 0%, 100%, .5);
+  color: rgb(150, 107, 57);
+  /* used to be hsla(0, 0%, 100%, .5) */
+	background: rgb(251, 250, 250);
 }
 
 .token.atrule,
