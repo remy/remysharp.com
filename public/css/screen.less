@@ -155,7 +155,7 @@ kbd {
 code,
 code[class*='language-'] {
   font-family: @code-font;
-  background: #f3f3f3;
+  background: @code-background;
   padding: 2px;
   border-radius: 2px;
 }
@@ -164,7 +164,7 @@ code[class*='language-'] {
 code[class*='language-'],
 pre[class*='language-'] {
   font-family: @code-font;
-  background: #f3f3f3;
+  background: @code-background;
   text-shadow: none;
 }
 
@@ -1711,4 +1711,10 @@ body .commento-root {
 
 .token.atrule, .token.attr-value, .token.keyword {
   color: rgb(3, 118, 168);
+}
+
+h2 > label {
+  width: 100%;
+  float: none;
+  margin: 0;
 }
