@@ -434,3 +434,47 @@ split("\n") | # break into lines
 ```
 
 [Demo](https://jqterm.com/3cebefc88a0bae3c630fc799aaae3548?query=split%28"%5Cn"%29%20%7C%20%23%20break%20into%20lines%0A%09map%28split%28"%2C"%29%29%20%7C%20%23%20comma%20sep%0A%09.%5B0%5D%20as%20%24header%20%7C%20%23%20save%20the%20header%0A%09.%5B1%3A%5D%20%7C%20%23%20drop%20the%20header%0A%09map%28%0A%20%20%20%20%20%20.%20as%20%24o%20%7C%20%23%20save%20the%20current%20object%2C%20then%20%0A%20%20%20%20%20%20reduce%20.%5B%5D%20as%20%24item%28%20%23%20reduce%20into%20a%20header%20keyed%20object%0A%20%20%20%20%20%20%20%20%7B%7D%3B%20%0A%20%20%20%20%20%20%20%20%28%24o%20%7C%20index%28%24item%29%29%20as%20%24index%20%7C%0A%20%20%20%20%20%20%20%20.%5B%24header%5B%24index%5D%5D%20%3D%20%24item%0A%09%09%29%0A%09%29&slurp=true&raw-input=true)
+
+---
+
+Take an objects properties and use them as both the key and value, for instance with this source:
+
+```json
+[
+  {
+    "label": "house",
+    "value": "lloyds pharmacy"
+  },
+  {
+    "label": "house_number",
+    "value": "105"
+  },
+  {
+    "label": "road",
+    "value": "church road"
+  },
+  {
+    "label": "postcode",
+    "value": "bn3 2af"
+  }
+]
+```
+
+…to:
+
+```json
+{
+  "house": "lloyds pharmacy",
+  "house_number": "105",
+  "road": "church road",
+  "postcode": "bn3 2af"
+}
+```
+
+Using `( .<prop> )` as a dynamic key:
+
+```js
+map({ (.label): .value }) | add
+```
+
+[Demo](https://jqterm.com/0f66741577b36357590293a53f566b38?query=map%28%7B%20%28.label%29%3A%20.value%20%7D%29%20%7C%20add)

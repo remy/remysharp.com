@@ -318,5 +318,3 @@ whenReady = {
     fn();
   }
 };
-
-console.log('running with new index.js - without');

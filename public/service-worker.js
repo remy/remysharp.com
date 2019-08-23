@@ -45,11 +45,20 @@ function cacheForRequest(req, res) {
 }
 
 function updateStaticCache() {
-  return caches.open(pagesCache).then(cache => {
-    // these items won't block the installation of the Service Worker
-    // These items must be cached for the Service Worker to complete installation
-    return cache.addAll(['/', '/latest', '/offline', '/manifest.json']);
-  });
+  return Promise.all([
+    caches
+      .open(pagesCache)
+      .then(cache => cache.addAll(['/', '/offline', '/manifest.json'])),
+    caches
+      .open(imagesCache)
+      .then(cache =>
+        cache.addAll([
+          '/images/avatar.jpg',
+          '/images/background.jpg',
+          '/images/search.svg'
+        ])
+      )
+  ]);
 }
 
 function stashInCache(cacheName, request, response) {
@@ -85,14 +94,8 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
+  // reimport
   importScripts('/js/hashes.js');
-
-  console.log(
-    'jsCache: %s\nnewhash: %s/static/js/%s',
-    jsCache,
-    version,
-    hashes.js
-  );
 
   // update the static cache
   jsCache = `${version}/static/js/${hashes.js}`;
