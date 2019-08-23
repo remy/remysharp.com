@@ -7,7 +7,7 @@ date: 2019-08-13
 
 # An fd trick
 
-If you followed my [CLI improved](/2018/08/23/cli-improved) and I'm a fan of the [fd](/2018/08/23/cli-improved#fd--find) command which I'm able to use for a mass *git* file rename.
+If you followed my [CLI improved](/2018/08/23/cli-improved) then you'll know I'm a fan of the [fd](/2018/08/23/cli-improved#fd--find) command which I'm able to use for a mass *git* file rename.
 
 Doing a mass rename is typically simple in the command line (`mv *.mjs *.js` - though I'm not sure off the top of my head if this will recurse directories, probably not), but doing a mass rename with `git` is harder, especially as there's some kind of locking going on. This means that the mass git rename must be run sequentially.
 
