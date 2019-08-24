@@ -1,23 +1,16 @@
 /* eslint-env serviceworker */
-/* global hashes */
 
-importScripts('/js/hashes.js');
+const prefix = 'v1';
+const version = prefix + '/%%COMMIT%%';
 
-const version = 'v1/%%COMMIT%%';
-let jsCache = `${version}/static/js/${hashes.js}`;
-let cssCache = `${version}/static/css/${hashes.css}`;
+// depends on SW version change
+const pagesCache = prefix + '/content/pages';
+const postsCache = prefix + '/content/posts';
+
+// updated on commit - since they're cache first
+const jsCache = version + '/static/js';
+const cssCache = version + '/static/css';
 const imagesCache = version + '/static/images';
-const pagesCache = version + '/content/pages';
-const postsCache = version + '/content/posts';
-
-showVersion();
-
-function showVersion() {
-  console.group('service worker');
-  console.log('version: 1.0.1');
-  console.log('js: %s\ncss: %s', hashes.js, hashes.css);
-  console.groupEnd();
-}
 
 const cacheByType = {
   css: cssCache,
@@ -95,13 +88,6 @@ self.addEventListener('install', event => {
 });
 
 self.addEventListener('activate', event => {
-  // reimport
-  importScripts('/js/hashes.js');
-
-  // update the static cache
-  jsCache = `${version}/static/js/${hashes.js}`;
-  cssCache = `${version}/static/css/${hashes.css}`;
-
   event.waitUntil(clearOldCaches().then(() => self.clients.claim()));
 });
 
