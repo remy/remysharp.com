@@ -20,7 +20,7 @@ And then I can feel it, right behind my thoughts, right behind my eyes, right un
 
 After Tia was born, after she died, during those painful months that followed, I would think about another world that she existed and we were parents to her. For a long time I could see her clearly, even as a toddler - I think maybe Ellis helped with that, he could show us what you might have done. But now. Now at 9 years on, I can't see her face. I can't imagine what she'd look like. What she'd do. I know that I'll look at other kids, teenagers and eventually young women and use them as a template of what Tia might have been. But it's hopeless too. I go around in circles in my head and get no where until I have to put the thoughts down and move along.
 
-As I said, I can feel the sadness floating just under everything, and I hope it can come out. I have to try to find time this week to let it out a little, to let the pain and sadness breath a little. Because I know, from previous years, that come September 1st, just a mere 24 hours after Tia's date of birth, life kicks in again and time drags us all forward in it unrelenting way.
+As I said, I can feel the sadness floating just under everything, and I hope it can come out. I have to try to find time this week to let it out a little, to let the pain and sadness breath a little. Because I know, from previous years, that come September 1st, just a mere 24 hours after Tia's date of birth, life kicks in again and time drags us all forward in its unrelenting way.
 
 This post isn't really for anyone except for me to find words to my feelings. To take a moment for myself, and to capture, for myself, thoughts about Tia that would otherwise be quickly forgotten to the river of time.
 
