@@ -14,7 +14,7 @@ But then thank god Julie asks me, reminds me, to take the last week of August of
 
 <!--more-->
 
-This morning is the first day that I'm actively trying to slow my brain down. To stop it from jumping from code, to science, too problems, to anything. It's probably a problem of our era, but this week is _specifically_ for me to slow down.
+This morning is the first day that I'm actively trying to slow my brain down. To stop it from jumping from code, to science,too problems, to anything. It's probably a problem of our era, but this week is _specifically_ for me to slow down.
 
 And then I can feel it, right behind my thoughts, right behind my eyes, right under my breath. That sadness of knowing we live our lives without our Tia. Somehow we carry on. Of course we carry on. The living live. Those who aren't stay still in time.
 
