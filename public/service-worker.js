@@ -1,7 +1,8 @@
 /* eslint-env serviceworker */
 
 const prefix = 'v1';
-const version = prefix + '/%%COMMIT%%';
+const commit = '%%COMMIT%%';
+const version = prefix + '/' + commit;
 
 // depends on SW version change
 const pagesCache = prefix + '/content/pages';
@@ -65,18 +66,16 @@ function clearOldCaches() {
     return Promise.all(
       keys
         .filter(key => {
-          if (key.startsWith(version + '/static/js/')) {
-            return key !== jsCache;
+          console.log({ key });
+
+          if (key.includes('/static/')) {
+            return !key.startsWith(version);
           }
 
-          if (key.startsWith(version + '/static/css/')) {
-            return key !== cssCache;
-          }
-
-          return !key.startsWith(version);
+          return !key.startsWith(prefix);
         })
         .map(key => {
-          console.log('deleting old cache %s', key);
+          console.log('deleting %s', key);
           return caches.delete(key);
         })
     );
