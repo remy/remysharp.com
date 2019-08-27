@@ -89,6 +89,7 @@ self.addEventListener('install', event => {
 
 self.addEventListener('activate', event => {
   event.waitUntil(clearOldCaches().then(() => self.clients.claim()));
+  updateStaticCache();
 });
 
 self.addEventListener('fetch', event => {
