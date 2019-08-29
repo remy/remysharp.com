@@ -2,15 +2,14 @@
 title: "Blocks of Tetris code"
 tags:
 - code
-date: 2019-07-30
-draft: true
+date: "2019-09-02 11:00:00"
 ---
 
 # Blocks of Tetris code
 
 In one of [my Twitch](https://www.twitch.tv/remysharp) hour sessions I decided to _attempt_ to build a Tetris clone inspired by news that Tetris turned 35 years old in June 2019. Given it was an hour of coding the game was far from complete but I had the shapes and I had dropping blocks and with around 4 more (offline) hours, I had a fully working clone of the original _NES_ Tetris game.
 
-I wanted to share some of the development highlights and tricks I used to make the game work.
+I wanted to share some of the (array based) development highlights and tricks I used to make the game work.
 
 <!--more-->
 
@@ -34,11 +33,89 @@ Either way, initialising memory is simple and in fact resetting the game benefit
 const ROWS = 20;
 const COLS = 10;
 
-export const memory = new Uint8Array(ROWS * COLS);
-export const reset = () => memory.fill(0);
+const memory = new Uint8Array(ROWS * COLS);
+const reset = () => memory.fill(0);
 ```
 
-I'll return to the use of `export` later in this post.
+In addition to the memory array, for debugging, I also copy the state of the memory into another array so I can page back and forwards through the current state of memory to ensure game play worked as I intended.
+
+## Tetromino rotation
+
+Remembering that my memory is stored as a linear array it means I'll store my representations of tetrominoes in the same way.
+
+Using bitwise operations allows for a "simple" block rotation. I say simple, because it's a single operation against a single predetermined number. It's useful to also understand how XOR operations work.
+
+If you have a value such as `9`, in binary (prefixed with `0b`) is `0b1001`. Let's look at how xor works:
+
+```js
+// 9 in binary is
+1 0 0 1
+
+// where a 1 appears, it will flip the bit in that position,
+// so the XOR operand we use is
+1 0 1 0
+
+// So 0b1001 (decimal 9) ^ (xor) 0b1010 (decimal 10)
+   1 0 0 1
+^  1 0 1 0
+   -------
+=  0 0 1 1 // decimal 3
+
+// importantly the same XOR operand can be used to flip
+// 3 _back_ to 9:
+   0 0 1 1
+^  1 0 1 0
+   -------
+=  1 0 0 1 // decimal 9
+```
+
+Here's how the T shaped tetromino goes:
+
+```js
+// using 0 for empty and 1 for filled, the T tetromino can be
+// represented in a 9 element array, where I've added wrapping
+// to make it easier to visualise
+0 0 0
+1 1 1
+0 1 0
+
+// which is the binary representation
+0b000111010 === 58
+
+// now applying an XOR operation we're able to flip bits
+0b000111010 ^
+0b010100000 ===
+0b010011010
+
+// and that binary, in a 3x3 square is
+0 1 0
+0 1 1
+0 1 0
+```
+
+This whole process makes rotating the blocks very simple in the code, and simple to represent. However, this process only works to rotate the shape in a single direction, it can't be used to do 180 degree rotation. I could use another xor value (the T tetromino's rotation is `160`), but what also works if the value is reversed.
+
+Using a reverse on the tetromino rotates my shape 180 degrees:
+
+```js
+// the start position for the T block is
+0 0 0
+1 1 1
+0 1 0
+
+// which is actually
+0 0 0 1 1 1 0 1 0
+
+// which reversed is
+0 1 0 1 1 1 0 0 0
+
+// and now wrapped into 3x3 square
+0 1 0
+1 1 1
+0 0 0
+```
+
+To complete 270 degree rotation is a combination of the xor and the reverse method. There might be an easier way to do this, but it worked for my purposes.
 
 ## Collision testing
 
@@ -76,9 +153,9 @@ export const getXYForIndex = i => {
 };
 ```
 
-Then, as I said, it's a matter of [checking the location and the shape](https://github.com/remy/tetrisy/blob/be715b0d6521ee22d02c5aff5c17b8320ef0e5c0/src/memory.js#L97-L118) of the tetromino and making sure the memory is "free" (the value is `0`) for the entire shape.
+Then, as I said, it's a matter of [checking the location and the shape](https://github.com/remy/tetrisy/blob/be715b0d6521ee22d02c5aff5c17b8320ef0e5c0/src/memory.js#L97-L118) of the tetromino and making sure the memory is "free" (the value is `0`) for the entire height and width of the shape for the offset `x` and `y`.
 
-## Clear lines
+## Clearing entire lines
 
 Probably my favourite bit of code in this project was the logic for clearing each line and moving the tetrominoes down. Again, because I'm using an array, the _only_ two methods I need are `copyWithin` and `fill`.
 
@@ -100,15 +177,15 @@ export const removeLine = y => {
 };
 ```
 
-## Tetromino rotation
 
-Remembering that my memory is stored as a linear array it means I'll store my representations of tetrominoes in the same way.
+<!--
+## Modern development
 
-- Rotation using bitwise XOR shift
-- UI attempts to get out of the way
-- Web font is limited to 0-9 so it's super small
 - Coded in the browser using `import`
 - Deployed with a small build script for `nomodule` support
-- Some mangling of touchstart/click (to prevent doubles)
 
-https://meatfighter.com/nintendotetrisai/#The_Algorithm
+## User experience
+
+- UI attempts to get out of the way
+- Web font is limited to 0-9 so it's super small
+- Some mangling of touchstart/click (to prevent doubles) -->
