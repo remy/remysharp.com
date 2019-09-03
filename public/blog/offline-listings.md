@@ -2,13 +2,13 @@
 title: Offline listings
 tags:
 - code
-date: 2019-08-26
-draft: true
+date: 2019-09-05
+summary: How I'm showing offline visitors a list of recently visited blog posts.
 ---
 
 # Offline listings
 
-This last week I finally pushed full offline access to my blog. I'd taken a lot of inspiration from Jeremy Keith's service worker from [his blog](https://adactio.com).
+The other week I finally pushed full offline access to my blog. I'd taken a lot of inspiration from Jeremy Keith's service worker from [his blog](https://adactio.com).
 
 One defining feature I wanted to support was that if you were offline and visited that page isn't cached, I wanted to list recent blog posts you had visited.
 
@@ -129,7 +129,7 @@ async function listPages() {
   if (results.length) {
     // sort the results, map each result to an <li> tag and put
     // in the `ul#offline-posts` element
-    $('ul#offline-posts').innerHTML = results
+    document.querySelector('ul#offline-posts').innerHTML = results
       .sort((a, b) => a.published.toJSON() < b.published.toJSON() ? 1 : -1)
       .map(res => {
         // results in:
@@ -147,3 +147,7 @@ async function listPages() {
   }
 }
 ```
+
+The `/offline` page is going to do a bit of JavaScript, scraping text out of cached pages to show you recently browsed results. At first I felt like this may be a lot of work for the browser to be doing, but since it only happens in exceptional circumstances and in reality it takes a handful of milliseconds, the improved user experience is worth this (relatively) small hit.
+
+Oh, and as it happens, _this_ page is now in your [recently visited](/offline) list :)
