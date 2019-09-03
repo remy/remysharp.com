@@ -3,6 +3,136 @@
 const $$ = (s, context = document) => Array.from(context.querySelectorAll(s));
 const $ = (s, context = document) => context.querySelector(s) || {};
 
+// detect native/existing fragmention support
+function fragmention() {
+  // set stashed element
+  let element;
+
+  // return first element in scope containing case-sensitive text
+  function getElementsByText(scope, text) {
+    // iterate descendants of scope
+    for (
+      var all = scope.childNodes, index = 0, element, list = [];
+      (element = all[index]);
+      ++index
+    ) {
+      // conditionally return element containing visible, whitespace-insensitive, case-sensitive text (a match)
+      if (
+        element.nodeType === 1 &&
+        (element.innerText || element.textContent || '')
+          .replace(/\s+/g, ' ')
+          .indexOf(text) !== -1
+      ) {
+        list = list.concat(getElementsByText(element, text));
+      }
+    }
+
+    // return scope (no match)
+    return list.length ? list : scope;
+  }
+
+  function getAnchorableElementByName(fragment) {
+    var elements = document.getElementsByName(fragment),
+      index = -1;
+
+    while (elements[++index] && !/^A(REA)?$/.test(elements[index].nodeName)) {
+      //noop
+    }
+
+    return elements[index];
+  }
+
+  // on dom ready or hash change
+  function onHashChange() {
+    // do nothing if the dom is not ready
+    if (!/e/.test(document.readyState)) return;
+
+    // conditionally remove stashed element fragmention attribute
+    if (element) {
+      element.removeAttribute('fragmention');
+    }
+
+    // set location fragmention as uri-decoded text (from href, as hash may be decoded)
+    const id = location.hash.substring(1);
+    var node =
+      document.getElementById('#' + id) || getAnchorableElementByName('#' + id);
+
+    if (node) {
+      return;
+    }
+
+    let fragmention = decodeURIComponent(id);
+
+    const spec = 'targetText=';
+
+    // if the fragment does not start with targetText AND does not include
+    // spaces, then it'll be ignored - based on convo between indieweb spec
+    // and w3c proposal
+    // https://github.com/WICG/ScrollToTextFragment/issues/5
+    if (!fragmention.indexOf(spec) === 0 && fragmention.indexOf(' ') === -1) {
+      return;
+    }
+
+    if (
+      fragmention.indexOf(spec) === 0 ||
+      fragmention.indexOf('#' + spec) === 0
+    ) {
+      const add = fragmention[0] === '#' ? 1 : 0;
+      fragmention = fragmention.substring(spec.length + add);
+    }
+
+    // if fragmention exists
+    if (fragmention) {
+      var // get all elements containing text (or document)
+        elements = getElementsByText(document, fragmention),
+        // get total number of elements
+        length = elements.length,
+        // get index of element
+        modulus = length && 0 % length, // RS not 100% sure what the fragIndex was for
+        index = length && modulus >= 0 ? modulus : length + modulus;
+
+      // get element
+      element = length && elements[index];
+
+      // if element found
+      if (element) {
+        // scroll to element
+        element.scrollIntoView({ behavior: 'smooth' });
+
+        // set fragmention attribute
+        element.setAttribute('fragmention', '');
+      } else {
+        element = null;
+      }
+    }
+  }
+
+  // add listeners
+  window.addEventListener('hashchange', onHashChange);
+  document.addEventListener('readystatechange', onHashChange);
+
+  onHashChange();
+
+  document.addEventListener('selectionchange', () => {
+    if (element) {
+      element.removeAttribute('fragmention');
+    }
+    const selection = document
+      .getSelection()
+      .toString()
+      .trim();
+    if (selection) {
+      history.replaceState(
+        null,
+        null,
+        '#targetText=' + encodeURIComponent(selection)
+      );
+    } else {
+      history.replaceState(null, null, location.pathname);
+    }
+  });
+}
+
 function observerImages() {
   if (typeof IntersectionObserver !== 'undefined') {
     var observer = new IntersectionObserver(function(changes) {
@@ -301,6 +431,8 @@ navigator.serviceWorker.onmessage = function(event) {
     }
   }
 };
+
+fragmention();
 
 // expose the artwork!
 if (location.hostname !== 'localhost')
