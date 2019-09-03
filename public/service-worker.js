@@ -66,8 +66,6 @@ function clearOldCaches() {
     return Promise.all(
       keys
         .filter(key => {
-          console.log({ key });
-
           if (key.includes('/static/')) {
             return !key.startsWith(version);
           }
