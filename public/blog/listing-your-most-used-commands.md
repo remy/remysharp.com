@@ -40,4 +40,19 @@ Then take the first word on each line, throw away results that contain symbols (
 
 The commands can be broken down into three groups: history, text manipulation, counting.
 
-The real work is happening in the text manipulation under the `awk` and `egrep` commands.
+The real work is happening in the text manipulation under the `awk` and `egrep` commands, and indeed `awk` is doing the real work whilst `egrep` is filtering out some noise that I don't want. So let's look at `awk`.
+
+
+```awk
+# program setup
+BEGIN {
+  FS="\\|";
+  OFS="\n"
+}
+
+{
+  $1=$1;
+  gsub(/^[0-9 ]+/, "");
+  print $0
+}
+```

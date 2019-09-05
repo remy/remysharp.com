@@ -38,8 +38,23 @@ function cacheForRequest(req, res) {
   return pagesCache;
 }
 
-function updateStaticCache() {
+async function updateStaticCache() {
+  const allClients = await clients.matchAll({
+    includeUncontrolled: true
+  });
+
+  const posts = [];
+
+  // Let's see if we already have a chat window open:
+  for (const client of allClients) {
+    posts.push(client.url);
+    console.log('adding %s', client.url);
+  }
+
   return Promise.all([
+    posts.length
+      ? caches.open(postsCache).then(cache => cache.addAll(posts))
+      : null,
     caches
       .open(pagesCache)
       .then(cache => cache.addAll(['/', '/offline', '/manifest.json'])),
