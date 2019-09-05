@@ -62,7 +62,7 @@ When I'd chatted to Jeremy about his offline/recently visited page I realised si
 
 When I took my first stab at an implementation I used IndexedDB (along with Jake Archibald's [idb keyval script](https://github.com/jakearchibald/idb-keyval/)). Then each page you visit needs to include the metadata about the post, which was adding a little more complexity to the problem.
 
-Until, I realised I didn't need to store anything. HTML as an API.
+Until, I realised I didn't need to store anything. **HTML is the API.**
 
 Instead of capturing metadata, my posts, themselves in the markup, includes all the metadata about the post. So here's the logic without any additional store:
 

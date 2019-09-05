@@ -89,7 +89,7 @@ function getDueTimes() {
 
 Now when I run this script, it'll give me upcoming bus times:
 
-```sh
+```bash
 $ node index.js
 [ '2 mins', '12 mins', '26 mins', '38 mins', '50 mins' ]
 ```
@@ -121,7 +121,7 @@ resolve(data);
 
 Now the result looks like this:
 
-```sh
+```bash
 $ node index.js
 { frames:
    [ { text: '3 mins', icon: 'i996' },

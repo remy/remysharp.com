@@ -48,7 +48,7 @@ So it makes sense that we wouldn't find any strings with a user agent.
 
 Running the `strings` command on WorldWideWeb v1.0 _does_ find something, but it's not that useful either:
 
-```sh
+```bash
 $ strings ./WorldWideWeb | grep -i agent
 User-Agent:  %s/%s  libwww/%s%c%c
 ```
@@ -81,7 +81,7 @@ Yep, sure. We could spin up apache with logging. But we don't have it (because i
 
 Or Python in a single line using:
 
-```sh
+```bash
 $ python2 -m SimpleHTTPServer 8000
 ```
 
@@ -91,7 +91,7 @@ But we don't have Python either. Nor Perl as it happens. And no, we don't have N
 
 `netcat` and more recently `nc` are superb commands for binding to a port and listening:
 
-```sh
+```bash
 $ nc --listen localhost -p 8000
 ```
 
@@ -101,7 +101,7 @@ Also not available!
 
 There's also `tcpdump` which can listen _in_ to requests (sort of an ear against the tubes as it were) - this example listens to all requests between info.cern.ch and our host machine:
 
-```sh
+```bash
 $ sudo tcpdump host info.cern.ch -v
 ```
 

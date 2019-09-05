@@ -61,7 +61,7 @@ The execution is simple, in my `package.json` file (because I'm using npm & node
 
 And on the command line I run:
 
-```shell
+```bash
 $ npm run watch
 ```
 
@@ -74,13 +74,13 @@ I looked into [gaze](http://npmjs.org/gaze), [watchy](https://github.com/caseywe
 
 Here's how the watch works with `fswatch`:
 
-```shell
+```bash
 fswatch -o public/css/*.less | xargs -n1 -I{} make
 ```
 
 And the same thing with nodemon (via a locally installed `npm install -g nodemon`):
 
-```shell
+```bash
 nodemon --quiet --watch public/css/ --ext css --exec make
 # same thing except with shorthand flags:
 # nodemon -q -w public/css/ -e css -x make

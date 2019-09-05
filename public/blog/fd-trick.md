@@ -25,7 +25,7 @@ The `fd` command allows you execute a command against the results (similarly to 
 
 Armed with this information, I can find all mjs files `-e mjs`, and I can execute `git mv` with the full path to the result as the first argument and the `{.}` placeholder for the filename excluding the extension:
 
-```sh
+```bash
 fd -e mjs -x git mv {} {.}.js -j1
 ```
 

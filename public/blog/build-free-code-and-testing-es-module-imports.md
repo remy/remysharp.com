@@ -23,7 +23,7 @@ Whilst I'm admitting things, it's worth noting that I _think_ this strategy won'
 
 Install a few bits:
 
-```sh
+```bash
 $ npm i esm
 $ npm i -D ava nyc
 ```

@@ -22,7 +22,7 @@ For instance, I want to see the first entry the web.archive.org has for a partic
 
 …or I could use `xargs` to complete it in a single command:
 
-```sh
+```bash
 $ curl http://web.archive.org/cdx/search/cdx\?limit\=1\&url\=remysharp.com | \
   cut -d' ' -f2 | \
   xargs date -j -f "%Y%m%d%H%M%S"
@@ -36,7 +36,7 @@ The solution, and the whole point of this post, is using the filename placeholde
 
 `xargs` allows you to specify a placeholder using `-I <marker>` and then you can re-use the marker later on in the command. Most reading material on the web uses a marker of `{}`, but you can use anything, like `FILE`:
 
-```sh
+```bash
 $ curl http://web.archive.org/cdx/search/cdx\?limit\=1\&url\=remysharp.com | \
   cut -d' ' -f2 | \
   xargs -I FILE date -j -f "%Y%m%d%H%M%S" FILE > output.txt
@@ -58,7 +58,7 @@ So, I had to combine a number of features:
 
 The result was this (multiline for readability):
 
-```sh
+```bash
 $ ls */package.json | \
   xargs -I {} -L 1 sh -c 'json devDependencies < "{}"'
 ```
