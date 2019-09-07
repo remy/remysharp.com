@@ -3,6 +3,7 @@ title: "Blocks of Tetris code"
 tags:
 - code
 date: "2019-09-10 11:00:00"
+draft: true
 ---
 
 # Blocks of Tetris code

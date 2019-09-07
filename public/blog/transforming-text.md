@@ -4,6 +4,7 @@ tags:
 - code
 summary: Take a glob of text and apply a series of rules until you have the structured JSON you want.
 date: "2019-09-02 11:00:00"
+ad: terminal
 ---
 
 # Transforming text

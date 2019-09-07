@@ -3,6 +3,7 @@ title: An fd trick
 tags:
 - code
 date: 2019-08-13
+ad: terminal
 ---
 
 # An fd trick

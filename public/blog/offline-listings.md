@@ -4,6 +4,7 @@ tags:
 - code
 date: 2019-09-05
 summary: How I'm showing offline visitors a list of recently visited blog posts.
+ad: workshop
 ---
 
 # Offline listings

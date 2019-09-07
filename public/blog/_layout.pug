@@ -47,14 +47,14 @@ block content
         a(href=`${site_url}${url}` rel="bookmark" title=`Permanent Link: ${title}`).u-url.u-uid= title
 
       .post-content.e-content
-        //- - if (yield) res = split(yield.replace(/<h1>.*?<\/h1>/, ''));
-        //- if res
-        //-   != res[0]
-        //-   if (!nosubscribe && tags.indexOf('personal') === -1)
-        //-     != partial('../_partials/' + (ad || 'terminal') + '-ad')
-        //-   != res[1]
-        //- else
-        != yield
+        - if (yield) res = yield.split(/<!--\s*more\s*-->/);
+        if res
+          != res[0]
+          if (!nosubscribe && tags.indexOf('personal') === -1)
+            != partial('/_partials/ads/' + (ad || 'workshop'))
+          != res[1]
+        else
+          != yield
 
 
       if data.draft
@@ -63,11 +63,11 @@ block content
           p.update Drafts may be incomplete or entirely abandoned, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.
       else
         .misc-content
-          p.metadata Posted <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under #{(tags || []).join(' & ')}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/master/public/blog/#{current.source}.md">Edit this post</a>
+          p.metadata Published <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under ##{(tags || []).join(' & #')}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/master/public/blog/#{current.source}.md">Edit this post</a>
 
-          if data.tags && data.tags.indexOf('personal') === -1
-            footer.work-with-me
-              include ../_partials/work-with-me
+          //- if data.tags && data.tags.indexOf('personal') === -1
+          //-   footer.work-with-me
+          //-     include ../_partials/work-with-me
 
           if likes
             .webmentions

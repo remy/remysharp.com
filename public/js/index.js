@@ -121,7 +121,7 @@ function fragmention() {
       .getSelection()
       .toString()
       .trim();
-    if (selection) {
+    if (selection.indexOf(' ') !== -1) {
       history.replaceState(
         null,
         null,
