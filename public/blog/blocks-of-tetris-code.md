@@ -3,7 +3,6 @@ title: "Blocks of Tetris code"
 tags:
 - code
 date: "2019-09-10 11:00:00"
-draft: true
 ---
 
 # Blocks of Tetris code
@@ -190,3 +189,7 @@ export const removeLine = y => {
 - UI attempts to get out of the way
 - Web font is limited to 0-9 so it's super small
 - Some mangling of touchstart/click (to prevent doubles) -->
+
+---
+
+I like coding with typed arrays partly because I get to play with low level bitwise operations, but also because it makes me think more about array methods and how they can help with my software design.

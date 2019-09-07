@@ -3,6 +3,7 @@ title: "Listing your most used commands"
 tags:
 - code
 date: "2019-09-16 09:00:00"
+ad: terminal
 ---
 
 # Listing your most used commands
