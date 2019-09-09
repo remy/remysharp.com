@@ -479,3 +479,22 @@ map({ (.label): .value }) | add
 ```
 
 [Demo](https://jqterm.com/0f66741577b36357590293a53f566b38?query=map%28%7B%20%28.label%29%3A%20.value%20%7D%29%20%7C%20add)
+
+---
+
+Getting the standard deviation (and variance and mean) for a series of numbers:
+
+```jq
+def mean: reduce .[] as $n (0; . + $n) / length;
+def pow2: . * .;
+def variance: . | mean as $mean | map_values(. - $mean | pow2) | mean;
+def stdev: . | variance | sqrt;
+
+# pick those scores who
+[.[].score] | # convert numbers to array
+stdev as $stdev | # store in a variable
+mean as $mean | # also store numbers in mean variable
+map(select(. - $stdev > $mean) | . - $stdev) # filter those > 1 x stdev (and show by how much)
+```
+
+[Demo](https://jqterm.com/98d614add1f6d3b8f7622832eb644baa?query=def%20mean%3A%20reduce%20.%5B%5D%20as%20%24n%20%280%3B%20.%20%2B%20%24n%29%20%2F%20length%3B%0Adef%20pow2%3A%20.%20*%20.%3B%0Adef%20variance%3A%20.%20%7C%20mean%20as%20%24mean%20%7C%20map_values%28.%20-%20%24mean%20%7C%20pow2%29%20%7C%20mean%3B%0Adef%20stdev%3A%20.%20%7C%20variance%20%7C%20sqrt%3B%0A%0A%23%20pick%20those%20scores%20who%20%0A%5B.%5B%5D.score%5D%20%7C%20stdev%20as%20%24stdev%20%7C%20mean%20as%20%24mean%20%7C%20map%28select%28.%20-%20%24stdev%20%3E%20%24mean%29%20%7C%20.%20-%20%24stdev%29)
