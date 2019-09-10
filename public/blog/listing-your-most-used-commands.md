@@ -109,7 +109,7 @@ Which means I've got 100,000 records in my history (synced across all my session
 
 So my most used command line programs, in the last 100,000 commands are:
 
-```
+```text
  127 wm      # my webmention tool: https://webmention.app
  131 code    # vs code
  139 nodemon # https://github.com/remy/nodemon
@@ -122,7 +122,7 @@ So my most used command line programs, in the last 100,000 commands are:
  217 rm
  219 now     # deployment with zeit.co
  225 history
- 235 node    # node
+ 235 node
  247 npx     # running node_modules/.bin programs
  319 cat     # actually aliased to bat https://github.com/sharkdp/bat
  371 ls
