@@ -2,7 +2,7 @@
 title: '(Why) Some HTML is "optional"'
 tags:
 - code
-date: "2019-09-12 11:00:00"
+date: "2019-09-12 10:00:00"
 summary: 'In response to Chris Coyiers "Some HTML is optional"'
 ---
 
