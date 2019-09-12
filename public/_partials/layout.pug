@@ -89,7 +89,7 @@ html#remysharp-com(lang="en")
       script(src=`/js/permalink.js?version=${version}`)
       script(src=`/js/index.js?version=${version}`)
     script.
-      if ('serviceWorker' in navigator) navigator.serviceWorker.register('/service-worker.js');
+      if ('serviceWorker' in navigator && location.origin.indexOf('localhost') === -1) navigator.serviceWorker.register('/service-worker.js');
       if (window.location.hostname === 'remysharp.com') {
         new Image(1, 1).src = "https://d14rpr34so8h9j.cloudfront.net/pixel.gif?u=" +
           encodeURIComponent(window.location.pathname) +
