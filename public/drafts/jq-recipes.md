@@ -16,7 +16,7 @@ All demos link to [jqterm](https://jqterm.com) - an alternative interactive jq w
 
 Here's a collection of jq recipes I've collected over the last few months.
 
-<div><a class="cta" rel="nofollow" href="https://training.leftlogic.com/buy/terminal/cli2?coupon=BLOG&amp;utm_source=blog&amp;utm_medium=banner&amp;utm_campaign=remysharp-discount"><img src="/images/terminal-600.jpg" width="140><div><p><span class="label">READER DISCOUNT</span><strong>Save $50 on terminal.training</strong></p><p class="desc">I've published 38 videos for new developers, designers, UX, UI, product owners and anyone who needs to conquer the command line today.</p><p><strong><span class="like-link">$49 - only from this link</span></strong></p></div></a></div>
+<div><a class="cta" rel="nofollow" href="https://training.leftlogic.com/buy/terminal/cli2?coupon=BLOG&amp;utm_source=blog&amp;utm_medium=banner&amp;utm_campaign=remysharp-discount"><img src="/images/terminal-600.jpg" width="140"><div><p><span class="label">READER DISCOUNT</span><strong>Save $50 on terminal.training</strong></p><p class="desc">I've published 38 videos for new developers, designers, UX, UI, product owners and anyone who needs to conquer the command line today.</p><p><strong><span class="like-link">$49 - only from this link</span></strong></p></div></a></div>
 
 Push on to an existing array (where source is `[1, 2, 3]`{id="demo-1"}):
 

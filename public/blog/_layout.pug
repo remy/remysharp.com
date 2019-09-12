@@ -13,7 +13,7 @@ block meta
     - summary = summary.replace(/\n{2,}/g, '\n')
 
   if summary
-    - summary = '<meta name="twitter:description" content="' + summary.trim() + '">';
+    - summary = '<meta name="twitter:description" content="' + summary.replace(/"/g, '&quot;').trim() + '">';
     != summary
   meta(name="twitter:creator" content="@rem")
   meta(name="twitter:title" content=`${title}`)

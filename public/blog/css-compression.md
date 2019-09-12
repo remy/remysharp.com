@@ -26,8 +26,6 @@ When I said this [on Twitter](https://twitter.com/rem/status/1163407522):
 
 It incited/inspired a reasonable amount of discussion that I felt I should post my thoughts on the subject.
 
-<!--more-->
-
 ## Quick Disclaimer
 
 First off, I need to put my money where my mouth is - and start practising what I preach.  My personal sites don't minify, but I'll get on that argument in a minute.  My business sites (should and will) and I will always recommend this for client projects.
