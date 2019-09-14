@@ -2,7 +2,7 @@
 title: 'Blog service workers and the chicken and the egg'
 tags:
   - code
-draft: true
+date: '2019-10-01 09:00:00'
 ---
 
 # Blog service workers and the chicken and the egg
@@ -33,7 +33,20 @@ What needs to happen upon installation of the service worker, is that the servic
 
 Though it doesn't come up in a lot of tutorials I've seen, you can access this using the `clients` API inside of the service worker.
 
-My (simplified) install event handler in the service worker now looks like this:
+The key logic is to request the URLs of the current server worker clients and then to include them in the initial caching process:
+
+```js
+const allClients = await clients.matchAll({
+  includeUncontrolled: true // for good measure
+});
+
+// then collect their URL - equivalents to window.location.toString()
+for (const client of allClients) {
+  posts.push(client.url);
+}
+```
+
+To final install event handler in the service worker now [looks like this](https://github.com/remy/remysharp.com/blob/0eaddba7c20b098fa310dc15a7ae2eedd244c048/public/service-worker.js#L42):
 
 ```js
 self.addEventListener('install', event => {
@@ -70,3 +83,5 @@ async function initialiseCache() {
   });
 }
 ```
+
+I appreciate this is an edge case, but I think the server worker strategy for blogs needs to be thought out careful and doesn't match the patterns you might use for an app-like web site (such as game, or a social app).
