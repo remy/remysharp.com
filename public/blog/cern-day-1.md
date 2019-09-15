@@ -46,7 +46,7 @@ The server part is relatively small and involves:
 
 1. Proxying requests to collect HTML and return it the client
 2. Blocking all internal .cern.ch sites with a handful of whitelisted exceptions
-3. In the returned HTML, strip out any unsupported tags (like `IMG` which appeared later in [Mosaic](https://en.m.wikipedia.org/wiki/Mosaic_(web_browser) - TIL: was named because it would fit together pieces like HTTP, FTP, Gopher and NNTP).
+3. In the returned HTML, strip out any unsupported tags (like `IMG` which appeared later in [Mosaic](https://en.m.wikipedia.org/wiki/Mosaic_\(web_browser) - TIL: was named because it would fit together pieces like HTTP, FTP, Gopher and NNTP).
 
 This part was partially lifted from the original [Line Mode Browser source](https://github.com/cern-hackdays/lmb) and cleaned up for the 5½ years worth of new knowledge I had :)
 
