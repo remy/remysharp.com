@@ -16,7 +16,20 @@ So I thought it would be interesting (and a little fun) to look at my post from 
 
 ---
 
-**_Let's rewind time back to early 2009_**
+## Let me set the scene…
+
+Let's rewind time back to early 2009. I'm already working from home, from our one bedroom flat - in fact, the office desk is _right next to_ the bed, so the commute is nil. Twitter is still relatively quiet, certainly there's no roller coaster ride of politics.
+
+I can't quite remember (now in 2019) what triggered the original tweet but I have a vague feeling it was related to HTML compression and thus obfuscation in the browser.
+
+<!-- links
+
+https://mobile.twitter.com/search?f=live&q=(%40rem)%20until%3A2009-02-01%20since%3A2009-01-31&src=typed_query
+https://web.archive.org/web/20090301002247/http://devblog.jasonhuck.com/2008/09/23/an-asset-management-system-for-lasso-powered-sites/
+https://adactio.com/journal/1550
+file:///Users/remy/Dropbox/tweets/index.html#
+
+-->
 
 ---
 

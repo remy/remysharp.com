@@ -21,6 +21,7 @@ So `<ISINDEX>` was used. This post looks at how it worked, where it faded out, a
 
 ## Notes
 
+- [Many indexes and mention of search in history of W3](https://www.w3.org/History/19921103-hypertext/hypertext/WWW/DesignIssues/ManyIndexes.html)
 - [Summary of http 0.9 - agree how servers should handle isindex requests](https://www.w3.org/DesignIssues/HTTP0.9Summary.html)
 - [Early hint of dropping `ISINDEX` and introduction of INPUT](https://lists.w3.org/Archives/Public/www-talk/1992NovDec/0042.html)
 - [HTML 2.0 Forms specification '94](http://download.remysharp.com/archive/HTML-WG/html-archive.messages/152.html)
