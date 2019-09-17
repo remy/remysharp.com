@@ -18,7 +18,7 @@ But Chris' first example is the most common, the optional closing `</p>` tag. Wh
 
 HTML has an amazing quality: it's super-dooper backwards compatible. It's why we have HTML5 and not XHTML2.
 
-This backward compatibility means that devices and browsers reaching all the back to the very first browser are still able to render HTML (just about - the _first_ makes a bit of mess of unknown elements but that's more of an exception).
+This backward compatibility means that devices and browsers reaching all the way back to the very first browser are still able to render HTML (just about - the _first_ makes a bit of mess of unknown elements but that's more of an exception).
 
 So if you ever find yourself asking *why*, the answer will nearly always lay in the past and original functionality.
 
@@ -26,7 +26,7 @@ This same reasoning also explains why you'll never find a newly introduced eleme
 
 ## Performance and optimisation?
 
-Without looking at modern day browswes' HTML parsing algorithms, I'm guessing the perf cost is incredibly minute. So minute that it makes no difference that we mortal users could experience.
+Without looking at modern day browsers' HTML parsing algorithms, I'm guessing the perf cost is incredibly minute. So minute that it makes no difference that we mortal users could experience.
 
 Compression is really a moot point too, it's a micro optimisation that _may_ save a byte or two, but because of how repeating sequences are compressed, a closing `</p>` won't have an impact.
 
