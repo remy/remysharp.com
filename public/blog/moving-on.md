@@ -33,7 +33,7 @@ Yes, sorry, this isn't a happy-go-lightly post.
 
 We moved in days after running our first [ffconf](https://ffconf.org/history) event. We moved to this house from our previous one bed flat because we had decided that we wanted to start a family.
 
-I remember walking along the pathway outside the front of the house and thinking whether I should carry Julie in my arms "over the pasture" and my mind wandered quickly into imagining bringing our first baby home and stepping through those doors as new parents.
+I remember walking along the pathway outside the front of the house and thinking whether I should carry Julie in my arms "over the threshold" and my mind wandered quickly into imagining bringing our first baby home and stepping through those doors as new parents.
 
 That following month we became pregnant with Tia. The months that followed we exciting. The house's original style was…eclectic at best. So the bathroom was the first room to be refurbished (the power shower being the absolute highest priority - our previous homes had what you might consider a "drip-shower").
 
@@ -75,7 +75,7 @@ Seren came along in 2014. Both Ellis and Seren started off sleeping in their mos
 
 After some months I moved to the lounge downstairs to sleep on the sofa. I slept on the sofa for 3 months.
 
-One of my absolute favourite memories of that sofa was one morning when Julie brought Seren downstairs at 5pm. Seren had been fed and Julie (rightly) was going to (try) to get back to sleep.
+One of my absolute favourite memories of that sofa was one morning when Julie brought Seren downstairs at 5am. Seren had been fed and Julie (rightly) was going to (try) to get back to sleep.
 
 Typically Seren would crawl around on me whilst I groggily came round to the fact that I needed to be awake and doing "proper" parenting. But this time was different. I dimmed the lights, and after some crawling and fidgeting, Seren fell asleep on me.
 
@@ -93,7 +93,7 @@ The same kitchen also came to hold fond memories. Most (obviously) around birthd
 
 ![cake](/images/moving-on/cake.jpg)
 
-Above: On the left was the mega ice cream cake Julie made for me, and on the right, Seren's own design - and self portrait for her 4th.
+Above: On the left was the mega ice cream cake Julie made for me, and on the right, Seren's own design - a drawing of Sock, her doll, for her 4th.
 
 ---
 
