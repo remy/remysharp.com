@@ -2,7 +2,7 @@
 title: Moving on
 tags:
 - personal
-date: "2019-09-19 10:00:00"
+date: "2019-09-19 09:30:00"
 ---
 
 # Moving on
