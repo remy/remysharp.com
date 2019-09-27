@@ -16,13 +16,15 @@ I've been known to [speak at conferences](/talks) so if you want a bio you can c
 
 ## Now
 
-I run my own company [Left Logic](http://leftlogic.com). It's a web development company with strong focus in JavaScript &amp; HTML5 based bespoke applications.
+I run my own company [Left Logic](https://leftlogic.com). It's a web development company with strong focus in JavaScript &amp; HTML5 based bespoke applications.
 
-If you want to get in touch to discuss a potential project, please feel free to [contact](mailto:info@leftlogic.com) us.
+If you want to get in touch to discuss a potential project, please feel free to [contact](mailto:info@leftlogic.com) me.
 
 ## A Short(ish) History
 
 The nice people at .net magazine were nice enough to interview me, so you can [read about how I got in to this industry and what keeps me excited](http://www.creativebloq.com/html5/remy-sharp-learning-breaking-stuff-11125970).
+
+_Written in 2006._
 
 Brought up in Worthing (a sorry town, originally filled with old folk, now brimming with chavs), slipped through Boundstone high school, on to Worthing Sixth Form (oh - the good times) then after receiving an automatic acceptance to my second choice on the morning of my results, I guessed that I may not have done so well. I went through clearing taking Computer Information Systems Design at [Kingston](http://cism.kingston.ac.uk/).
 

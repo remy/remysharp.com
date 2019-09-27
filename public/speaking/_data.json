@@ -1529,12 +1529,43 @@
       "slug": "2019_alldayhey",
       "event": "SmashingConf New York",
       "location": "United States, New York",
-      "title": "TBA",
+      "title": "Using a modern web to recreate 1980s horribly slow and loud loading screens",
+      "links": [
+        ["slides", "https://talks.zx.isthe.link/"],
+        ["demos", "https://zx.isthe.link/"]
+      ],
       "year": 2019,
       "date": {
         "start": "2019-10-16"
       },
       "url": "https://smashingconf.com/ny-2019/"
+    },
+    {
+      "slug": "2019_ffconf",
+      "event": "ffconf",
+      "type": "Workshop",
+      "title": "Modern Universal React dev with Next.js",
+      "url": "https://2019.ffconf.org/workshops",
+      "location": "England, Brighton",
+      "date": {
+        "start": "2019-11-07"
+      },
+      "year": 2019
+    },
+    {
+      "slug": "2019_webclerks",
+      "event": "Webclerks",
+      "location": "Vienna, Austria",
+      "title": "Using a modern web to recreate 1980s horribly slow and loud loading screens",
+      "links": [
+        ["slides", "https://talks.zx.isthe.link/"],
+        ["demos", "https://zx.isthe.link/"]
+      ],
+      "year": 2019,
+      "date": {
+        "start": "2019-11-25"
+      },
+      "url": "https://webclerks.at/"
     }
   ]
 }
