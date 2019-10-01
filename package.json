@@ -6,7 +6,8 @@
     "node": "10"
   },
   "prettier": {
-    "singleQuote": true
+    "singleQuote": true,
+    "trailingComma": "es5"
   },
   "scripts": {
     "dev": "nodemon -w lib/ lib/dev.js",
