@@ -16,7 +16,7 @@ You'll find similar solutions to this on sites like StackOverflow, but they're n
 
 ## The command
 
-It's quite a long chain, and parts will be consistent with other examples on the web, but it's my `awk` and `egrep` that gets the finer detail:
+It's quite a long chain, and parts will be consistent with other examples on the web, but it's my `awk` commands that gets the finer detail:
 
 ```bash
 history |
@@ -128,7 +128,7 @@ So my most used command line programs, in the last 100,000 commands are:
  371 ls
  664 cd
  787 curl    # usually testing APIs
- 819 npm     # I install a lot!
+ 819 npm     # install, start, dev and test
 1654 git     # most of my git is done on the cli
 ```
 
