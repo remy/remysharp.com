@@ -76,7 +76,6 @@ From that point there was no stopping me. I created various web sites over the y
 
 In 2005 I got around to buying my domain and initially deploying an "Apple website" (which was frankly a bit of divsoup littered with styles) and then mid-2006 I moved across to WordPress for my first "real blog post" (about [flickr geotags](https://remysharp.com/2006/09/01/flickr-geo-tags)…like anyone cared!). I started by telling myself I would write movie reviews, for myself, just so I had something to write about. But I also used my blog as an online memory, for when I learnt a trick, I could store it in my online persona.
 
-
 ![This is a terrible picture of my first blog](/images/rs-com-og.jpg)
 
 _Thankfully the archive.org does not have a copy of my site prior to 2007!_

@@ -508,3 +508,15 @@ to_entries | sort_by(.value) | from_entries
 ```
 
 [Demo](https://jqterm.com/f0830be181e5a56dba637af0e365885d?query=to_entries%20%7C%20sort_by%28.value%29%20%7C%20from_entries)
+
+---
+
+Convert an irregular object to a CSV file:
+
+```jq
+map({ start, duration, title, speaker: .name, twitter }) | # generate consistent structure
+
+map(to_entries | map(.value) | @csv)[] # turn into csv structure
+```
+
+[Demo](https://jqterm.com/2a11b4b23fac2903125345fc92e62578?query=map%28%7B%20date%3A%20%28.start%20%7C%20split%28%22%20%22%29%5B0%5D%29%2C%20start%3A%20%28.start%20%7C%20split%28%22%20%22%29%5B1%5D%29%2C%20duration%2C%20title%2C%20speaker%3A%20.name%2C%20twitter%2C%20break%3A%20.break%20%7D%29%20%7C%20%23%20generate%20consistent%20structure%0A%0Amap%28to_entries%20%7C%20map%28.value%29%20%7C%20%40csv%29%5B%5D&raw=true)
