@@ -74,7 +74,12 @@ Though, no, I won't share the URL, the language throughout the site is quite ter
 
 From that point there was no stopping me. I created various web sites over the years across lineone.net and Anglefire. I started a personal blog around 2004 (on blogger.com which even back then I wasn't much of fan of and wanted to host my own).
 
-In 2005 I got around to buying my domain and I published my first "real blog post" the following year (about [flickr geotags](https://remysharp.com/2006/09/01/flickr-geo-tags)…like anyone cared!). I started by telling myself I would write movie reviews, for myself, just so I had something to write about. But I also used my blog as an online memory, for when I learnt a trick, I could store it in my online persona.
+In 2005 I got around to buying my domain and initially deploying an "Apple website" (which was frankly a bit of divsoup littered with styles) and then mid-2006 I moved across to WordPress for my first "real blog post" (about [flickr geotags](https://remysharp.com/2006/09/01/flickr-geo-tags)…like anyone cared!). I started by telling myself I would write movie reviews, for myself, just so I had something to write about. But I also used my blog as an online memory, for when I learnt a trick, I could store it in my online persona.
+
+
+![This is a terrible picture of my first blog](/images/rs-com-og.jpg)
+
+_Thankfully the archive.org does not have a copy of my site prior to 2007!_
 
 And so I continued to blog. Code, web, business and personal stuff. I get a little kick out when I link to other people's blogs, and get a doubly nice kick when others link to my posts.
 
