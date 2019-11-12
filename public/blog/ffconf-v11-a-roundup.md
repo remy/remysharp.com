@@ -1,5 +1,5 @@
 ---
-title: ffconf v11: a roundup
+title: "ffconf v11: a roundup"
 date: "2019-11-12 10:00:00"
 tags:
 - web
