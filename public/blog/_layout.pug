@@ -51,7 +51,8 @@ block content
         if res
           != res[0]
           if (!nosubscribe && tags.indexOf('personal') === -1)
-            != partial('/_partials/ads/' + (ad || 'workshop'))
+            if ad
+              != partial('/_partials/ads/' + ad)
           != res[1]
         else
           != yield
