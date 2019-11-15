@@ -10,7 +10,7 @@ tags:
 
 As a software developer I'm using tools day in and day out and depending on time, I'm usually interested in alternatives that help my workflow whilst reducing the amount of input required from me.
 
-I have been asked (and sponsored) to look at [Buddy](https://buddy.works?ref=remysharp.com) a deployment platform. I'd already read [Chris Coyier's review and endorsement](https://css-tricks.com/buddy-on-css-tricks/) so I knew it had already passed through a quality filter.
+I have been asked (and sponsored) to look at [Buddy](https://buddy.works?ref=remysharp.com) a deployment platform. I'd already read [Chris Coyier's review and endorsement](https://css-tricks.com/buddy-on-css-tricks/) so I knew it had already passed through an initial quality filter.
 
 <!--more-->
 
@@ -36,6 +36,10 @@ A few highlights for me were:
 
 In a few minutes of thinking I was able to create a deployment process for my blog that runs all the build process and sends to Netlify - the difference to a Netlify based deploy is that only the changes are being used which makes the process of deploying faster (for me).
 
+The only minor bug bear I had was that I was asked to allow push notifications when I landed on the sign up page - without context. I blocked the request since there was no context, and now having more experience of the site, I can imagine this would be for pipeline status - which _would_ be useful. I'm hoping they change this minor detail.
 
+Otherwise, very useful.
 
-- [IFTTT]: If This Then That
+I'm also really interested in webhook pipes, which I'm pretty sure this product would let me do too: connecting some incoming webhook to trigger a series of actions that then go on to call a later action… hmm, food for thought!
+
+Check it out: [buddy.works](https://buddy.works?ref=remysharp.com)
