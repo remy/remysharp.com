@@ -285,7 +285,7 @@ const fitVidSelector = [
   "iframe[src*='kickstarter.com'][src*='video.html']",
   // 'video',
   'object',
-  'embed'
+  'embed',
 ].join(',');
 
 $$(fitVidSelector).forEach(el => {
@@ -298,10 +298,6 @@ $$(fitVidSelector).forEach(el => {
   // move el into wrapper
   wrapper.appendChild(el);
 });
-
-// if (window.pageData) {
-//   idbKeyval.set(pageData.url, pageData).catch(e => console.log(e));
-// }
 
 function formatDate(date) {
   const month = [
@@ -316,7 +312,7 @@ function formatDate(date) {
     'Sep',
     'Oct',
     'Nov',
-    'Dec'
+    'Dec',
   ];
 
   return `${date.getDay()}-${month[date.getMonth()]} ${date.getFullYear()}`;
@@ -367,7 +363,7 @@ async function listPages() {
             post,
             title,
             published: new Date(match.slice(1).join('-')),
-            visited: new Date(post.headers.get('date'))
+            visited: new Date(post.headers.get('date')),
           });
         }
       }
@@ -448,5 +444,5 @@ if (whenReady.length) {
 whenReady = {
   push(fn) {
     fn();
-  }
+  },
 };

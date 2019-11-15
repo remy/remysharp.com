@@ -45,7 +45,7 @@ html#remysharp-com(lang="en")
     //-   }
 
     // using this method because Firefox doesn't support rel="preload"
-    link(rel="stylesheet" href=`/css/screen.css?version=${version}` media="preload" onload="this.media='all'")
+    link(rel="stylesheet" href=`/css/screen.css` media="preload" onload="this.media='all'")
     link(rel="stylesheet" href=`/css/prism.css` media="preload" onload="this.media='all'")
 
     script.
@@ -86,8 +86,8 @@ html#remysharp-com(lang="en")
           All code and content for this blog is available as [open source on GitHub](https://github.com/remy/remysharp.com).
 
     block scripts
-      script(src=`/js/permalink.js?version=${version}`)
-      script(src=`/js/index.js?version=${version}`)
+      script(src=`/js/permalink.js`)
+      script(src=`/js/index.js`)
     script.
       if ('serviceWorker' in navigator && location.origin.indexOf('localhost') === -1) navigator.serviceWorker.register('/service-worker.js');
       if (window.location.hostname === 'remysharp.com') {
@@ -155,4 +155,4 @@ html#remysharp-com(lang="en")
       |  – Remy 🖤
       |
       |
-    <!-- version: https://github.com/remy/remysharp.com/commit/#{version} @ #{ new Date().toUTCString()} -->
+    <!-- version: https://github.com/remy/remysharp.com/commit/HEAD -->
