@@ -1,7 +1,6 @@
 ---
 title: buddy.works
-date: 2019-11-15
-draft: true
+date: "2019-11-18 11:00:00"
 tags:
 - web
 ---
@@ -10,7 +9,7 @@ tags:
 
 As a software developer I'm using tools day in and day out and depending on time, I'm usually interested in alternatives that help my workflow whilst reducing the amount of input required from me.
 
-I have been asked (and sponsored) to look at [Buddy](https://buddy.works?ref=remysharp.com) a deployment platform. I'd already read [Chris Coyier's review and endorsement](https://css-tricks.com/buddy-on-css-tricks/) so I knew it had already passed through an initial quality filter.
+I have been asked (and sponsored) to look at [Buddy](https://buddy.works?utm_source=remysharp&utm_medium=referral&utm_campaign=remysharp_bz&utm_content=review   ) a deployment platform. I'd already read [Chris Coyier's review and endorsement](https://css-tricks.com/buddy-on-css-tricks/) so I knew it had already passed through an initial quality filter.
 
 <!--more-->
 
@@ -42,4 +41,4 @@ Otherwise, very useful.
 
 I'm also really interested in webhook pipes, which I'm pretty sure this product would let me do too: connecting some incoming webhook to trigger a series of actions that then go on to call a later action… hmm, food for thought!
 
-Check it out: [buddy.works](https://buddy.works?ref=remysharp.com)
+Check it out: [buddy.works](https://buddy.works?utm_source=remysharp&utm_medium=referral&utm_campaign=remysharp_bz&utm_content=review   )
