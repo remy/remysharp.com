@@ -14,7 +14,7 @@ I'm very honoured you've decided to invite me to your event and I want all confe
 
 **3. Costs covered**: travel and lodging for all speakers is covered. Please note that I will not fly economy for long haul flights.
 
-**4. Payment**: if I'm being paid for my talk, all other speakers are also paid _at least_ what I am being offered.
+**4. Payment**: if I'm being paid for my talk, all other speakers are also offered _at least_ what I am being offered.
 
 **5. Workshop payment** (if applicable): a full day (or multi-day) workshop is paid at either an agreed minimum fee or a 50:50 profit split.
 
