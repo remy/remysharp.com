@@ -27,6 +27,7 @@ It's worth perusing dev.to for course and deals and it would seem that twitter h
 - [CSS complete course](https://thecssworkshop.com/courses) by Rachel Andrew - 30% discount until Monday
 - Pocket guide to [vanilla JavaScript](https://vanillajsguides.com/) by Chris Ferdinandi - 50% discount auto applied during the cyber week ending midnight Monday
 - [Modern ES6](https://es6.io) (and [learn node](https://learnnode.com/) and _many_ others) by Wes Bos - 50% discount applied automatically until…until Wes stops the discount I guess!
+- [Testing JavaScript](https://testingjavascript.com/) by Kent C. Dodds - 40% discount automatically applied until next week
 - [Quokka pro](https://quokkajs.com/pro/) has a limited 50% discount - a tool that I bought immediately after seeing it demonstrated at ffconf v10
 
 I also spotted a pretty big list on the [dev.to](https://dev.to/duomly/black-friday-offer-80-discount-on-programming-courses-37o1) that covers a lot of courses - though I can't vouch for the quality.
