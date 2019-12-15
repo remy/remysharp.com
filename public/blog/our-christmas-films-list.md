@@ -136,19 +136,17 @@ mileage may vary!
 
 ## 2019
 
-* [The Shop Around the Corner (1940)](http://www.imdb.com/title/tt0033045/?)
+* [The Shop Around the Corner (1940)](http://www.imdb.com/title/tt0033045/)
 * [Dr The Grinch (2018)](https://www.imdb.com/title/tt2709692/)
-* [The Christmas Prince: The Royal Wedding](https://www.imdb.com/title/tt8709036/)
+* [The Christmas Prince: The Royal Wedding (2019)](https://www.imdb.com/title/tt8709036/)
 * [Klaus (2019)](https://www.imdb.com/title/tt4729430/)
 * [Die Hard (1988)](http://www.imdb.com/title/tt0095016/)
 
 
 ## Future Potentials
 
-* [The Shop Around the Corner (1940)](http://www.imdb.com/title/tt0033045/?)
 * [8 Women (2002)](http://www.imdb.com/title/tt0283832/)
 * [Pottersville (2017)](http://www.imdb.com/title/tt3672120/)
-* [Die Hard (1988)](http://www.imdb.com/title/tt0095016/)
 * [Meet Me in St. Louis (1944)](http://www.imdb.com/title/tt0037059/)
 * [How the Grinch Stole Christmas (2000)](http://www.imdb.com/title/tt0170016/)
 * [Love the Coopers (2015)](http://www.imdb.com/title/tt2279339/)
