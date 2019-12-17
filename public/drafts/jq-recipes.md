@@ -520,3 +520,13 @@ map(to_entries | map(.value) | @csv)[] # turn into csv structure
 ```
 
 [Demo](https://jqterm.com/2a11b4b23fac2903125345fc92e62578?query=map%28%7B%20date%3A%20%28.start%20%7C%20split%28%22%20%22%29%5B0%5D%29%2C%20start%3A%20%28.start%20%7C%20split%28%22%20%22%29%5B1%5D%29%2C%20duration%2C%20title%2C%20speaker%3A%20.name%2C%20twitter%2C%20break%3A%20.break%20%7D%29%20%7C%20%23%20generate%20consistent%20structure%0A%0Amap%28to_entries%20%7C%20map%28.value%29%20%7C%20%40csv%29%5B%5D&raw=true)
+
+---
+
+Count the occurrences of an element in an array (note that I don't think is this the best way of doing this, but it works):
+
+```
+reduce to_entries[] as $_ ({}; . + { ($_.value | tostring): (.[($_.value | tostring)] + 1) })
+```
+
+[Demo](https://jqterm.com/fb1c00eb7dd49da57c9050d3f3289c75?query=reduce%20to_entries%5B%5D%20as%20%24_%20%28%7B%7D%3B%20.%20%2B%20%7B%20%28%24_.value%20%7C%20tostring%29%3A%20%28.%5B%28%24_.value%20%7C%20tostring%29%5D%20%2B%201%29%20%7D%29)
