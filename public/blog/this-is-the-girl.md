@@ -7,7 +7,7 @@ tags:
 
 # This is the girl
 
-This is the girl I met in collage.
+This is the girl I met in college.
 
 <!--more-->
 
