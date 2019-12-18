@@ -150,8 +150,8 @@ mileage may vary!
 * [Meet Me in St. Louis (1944)](http://www.imdb.com/title/tt0037059/)
 * [How the Grinch Stole Christmas (2000)](http://www.imdb.com/title/tt0170016/)
 * [Love the Coopers (2015)](http://www.imdb.com/title/tt2279339/)
-* [Eight Crazy Nights (2002)](http://www.imdb.com/title/tt0271263/)
 * [The Family Stone (2005)](http://www.imdb.com/title/tt0356680/)
 * I saw mummy kissing santa
+* Holiday Affair
 
 Again, what would you recommend, and why?
