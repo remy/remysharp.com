@@ -137,7 +137,7 @@ mileage may vary!
 ## 2019
 
 * [The Shop Around the Corner (1940)](http://www.imdb.com/title/tt0033045/)
-* [The Grinch (2018)](https://www.imdb.com/title/tt2709692/)
+* [Bernard and the Genie (1991)](https://www.imdb.com/title/tt0101435/)
 * [The Christmas Prince: The Royal Wedding (2019)](https://www.imdb.com/title/tt8709036/)
 * [Klaus (2019)](https://www.imdb.com/title/tt4729430/)
 * [Die Hard (1988)](http://www.imdb.com/title/tt0095016/)
@@ -145,6 +145,7 @@ mileage may vary!
 
 ## Future Potentials
 
+* [The Grinch (2018)](https://www.imdb.com/title/tt2709692/)
 * [8 Women (2002)](http://www.imdb.com/title/tt0283832/)
 * [Pottersville (2017)](http://www.imdb.com/title/tt3672120/)
 * [Meet Me in St. Louis (1944)](http://www.imdb.com/title/tt0037059/)
