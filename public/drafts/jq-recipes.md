@@ -525,7 +525,7 @@ map(to_entries | map(.value) | @csv)[] # turn into csv structure
 
 Count the occurrences of an element in an array (note that I don't think is this the best way of doing this, but it works):
 
-```
+```jq
 reduce to_entries[] as $_ (
   {};
   . + { ($_.value | tostring): (.[($_.value | tostring)] + 1) }
@@ -533,3 +533,13 @@ reduce to_entries[] as $_ (
 ```
 
 [Demo](https://jqterm.com/fb1c00eb7dd49da57c9050d3f3289c75?query=reduce%20to_entries%5B%5D%20as%20%24_%20%28%7B%7D%3B%20.%20%2B%20%7B%20%28%24_.value%20%7C%20tostring%29%3A%20%28.%5B%28%24_.value%20%7C%20tostring%29%5D%20%2B%201%29%20%7D%29)
+
+---
+
+More of a word of warning: `0` is truthy:
+
+```jq
+if 0 then "true" else "false" end # "true"
+```
+
+[Demo](https://jqterm.com/3ca3e2bde02da5f7f5d354de7bbe29d7?query=if%200%20then%20%22true%22%20else%20%22false%22%20end)
