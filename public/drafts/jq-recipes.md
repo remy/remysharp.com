@@ -543,3 +543,15 @@ if 0 then "true" else "false" end # "true"
 ```
 
 [Demo](https://jqterm.com/3ca3e2bde02da5f7f5d354de7bbe29d7?query=if%200%20then%20%22true%22%20else%20%22false%22%20end)
+
+---
+
+List all the unique combinations without duplication in the list:
+
+```jq
+5 as $n | [reduce range(0; $n) as $i ([]; . + [[range(0;$n)]]) | combinations | select(unique | length == $n)]
+```
+
+Generates 120 long array of `[0, 1, 2, 3, 4]` in all the possible combinations.
+
+[Demo](https://jqterm.com/c428eb8a3e151f04ec7199dd6ce6c836?query=5%20as%20%24n%20%7C%20%5Breduce%20range%280%3B%20%24n%29%20as%20%24i%20%28%5B%5D%3B%20.%20%2B%20%5B%5Brange%280%3B%24n%29%5D%5D%29%20%7C%20combinations%20%7C%20select%28unique%20%7C%20length%20%3D%3D%20%24n%29%5D)
