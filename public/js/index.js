@@ -127,7 +127,10 @@ function fragmention() {
         null,
         '#targetText=' + encodeURIComponent(selection)
       );
-    } else {
+    } else if (
+      window.location.query &&
+      window.query.location.includes('#targetText')
+    ) {
       history.replaceState(null, null, location.pathname);
     }
   });

@@ -61,7 +61,20 @@
   function find(queryString, query) {
     $results.innerHTML = '<li>Searching...</li>';
 
+    console.log({ query, queryString });
+
     window.history.replaceState(null, query, '/search?q=' + queryString);
+
+    var titleOnly = false;
+
+    if (query.startsWith('title:')) {
+      titleOnly = true;
+      query = query.replace(/^title:\s?/, '');
+
+      if (!query.trim()) {
+        return;
+      }
+    }
 
     const re = new RegExp(query.replace(/\s+/g, '|'), 'ig');
     query = query.split(/\s+/);
@@ -72,21 +85,32 @@
           return post;
         }
         let count = 0;
-        const matches = post.text.match(re) || [];
 
-        matches.forEach(m => (count += m.length < 5 ? 1 : m.length));
+        if (!titleOnly) {
+          const matches = post.text.match(re) || [];
 
-        const urlMatches =
-          post.url
-            .split('/')
-            .pop()
-            .match(re) || [];
+          matches.forEach(m => (count += m.length < 5 ? 1 : m.length));
 
-        urlMatches.forEach(m => (count += 100 * m.length));
+          const urlMatches =
+            post.url
+              .split('/')
+              .pop()
+              .match(re) || [];
 
-        const titleMatches = post.title.toLowerCase().match(re) || [];
+          urlMatches.forEach(m => (count += 100 * m.length));
 
-        titleMatches.forEach(m => (count += 100 * m.length));
+          const titleMatches = post.title.toLowerCase().match(re) || [];
+
+          titleMatches.forEach(m => (count += 100 * m.length));
+        } else {
+          const titleMatches = post.title
+            .toLowerCase()
+            .includes(query.join(' ').toLowerCase());
+
+          if (titleMatches) {
+            count += 100 * query.join(' ').length;
+          }
+        }
 
         if (count) {
           if (count > 100) {
