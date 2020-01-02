@@ -6,7 +6,7 @@ tags:
 ---
 # Books I read in 2019
 
-Proudly I've continued to read (if you know my story, this is a big deal for me), this year having read 29 books (28 listed below).
+Proudly I've continued to read (if you know my story, this is a big deal for me), this year having read 29 books (28 listed below) and 9,976 pages (just because I had the numbers!).
 
 My absolute favourite was [Miss Pettigrew Lives for a Day](/2020/01/02/books-i-read-in-2019#miss-pettigrew-lives-for-a-day-by-winifred-watson) - a beautiful antidote to the world we live in today. I've also included a [publication date breakdown](/2020/01/02/books-i-read-in-2019#books-by-decade) at the end of this post. Most books were published in the last decade and 6 from between the 1920s and '50s.
 
@@ -42,7 +42,7 @@ Read: 1-Jan 2019<br>Read in: 9 days
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1453856821l/28765183._SY475_.jpg">
 
 ##### **[Harry Potter and the Prisoner of Azkaban (Harry Potter #3)](https://www.goodreads.com/book/show/28765183-harry-potter-and-the-prisoner-of-azkaban) by J.K. Rowling**
 
@@ -62,11 +62,11 @@ Read: 1-Jan 2019<br>Read in: 9 days
 
 <small class="reading-metadata">
 Read: 2-Jan 2019<br>Read in: 3 months
-<br>Pages: {}
+<br>Pages: 453
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1463308822l/30191189._SY475_.jpg">
 
 ##### **[A Brief History of Everyone who Ever Lived: The Stories in Our Genes](https://www.goodreads.com/book/show/30191189-a-brief-history-of-everyone-who-ever-lived) by Adam Rutherford**
 
@@ -88,11 +88,11 @@ Rutherford's writing and storytelling is entertaining, informative and even regu
 
 <small class="reading-metadata">
 Read: 6-Jan 2019<br>Read in: 1 month
-<br>Pages: {}
+<br>Pages: 432
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1544976785l/43247628._SY475_.jpg">
 
 ##### **[Clawthorn (Clement, #3)](https://www.goodreads.com/book/show/43247628-clawthorn) by Keith A. Pearson**
 
@@ -114,11 +114,11 @@ This book is different to the previous installments, as this story is sprinkled 
 
 <small class="reading-metadata">
 Read: 10-Jan 2019<br>Read in: 4 days
-<br>Pages: {}
+<br>Pages: 505
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1451264049l/28369444._SY475_.jpg">
 
 ##### **[All the Birds in the Sky](https://www.goodreads.com/book/show/28369444-all-the-birds-in-the-sky) by Charlie Jane Anders**
 
@@ -160,7 +160,7 @@ Read: 9-Fed 2019<br>Read in: 17 days
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1471745675l/31566948._SX318_.jpg">
 
 ##### **[Sleep: The Myth of 8 Hours, the Power of Naps... and the New Plan to Recharge Your Body and Mind](https://www.goodreads.com/book/show/31566948-sleep) by Nick Littlehales**
 
@@ -174,7 +174,7 @@ All in all, there are some useful tips throughout the book, but probably didn't 
 
 <small class="reading-metadata">
 Read: 25-Fed 2019<br>Read in: 16 days
-<br>Pages: {}
+<br>Pages: 208
 </small>
 
 <hr class="review-break">
@@ -200,7 +200,7 @@ Read: 22-Mar 2019<br>Read in: 25 days
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1385473931l/18964701.jpg">
 
 ##### **[Lord of the Flies](https://www.goodreads.com/book/show/18964701-lord-of-the-flies) by William Golding**
 
@@ -216,7 +216,7 @@ Ralph's (one of the protagonists) feeling of peril at the end of the book is vis
 
 <small class="reading-metadata">
 Read: 6-Apr 2019<br>Read in: 15 days
-<br>Pages: {}
+<br>Pages: 227
 </small>
 
 <hr class="review-break">
@@ -307,11 +307,11 @@ I think it makes a good holiday read, but not so well suited to my desire to rea
 
 <small class="reading-metadata">
 Read: 30-May 2019<br>Read in: 10 days
-<br>Pages: {}
+<br>Pages: 400
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1530903515l/40733822._SY475_.jpg">
 
 ##### **[Meeting Mungo Thunk](https://www.goodreads.com/book/show/40733822-meeting-mungo-thunk) by Keith A. Pearson**
 
@@ -333,7 +333,7 @@ Read: 17-Jun 2019<br>Read in: 10 days
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1526840202l/40182827._SY475_.jpg">
 
 ##### **[No Way Out (DI Adam Fawley, #3)](https://www.goodreads.com/book/show/40182827-no-way-out) by Cara Hunter**
 
@@ -355,7 +355,7 @@ Otherwise a really well paced thriller - where I found I seemed to gobble down t
 
 <small class="reading-metadata">
 Read: 30-Jun 2019<br>Read in: 12 days
-<br>Pages: {}
+<br>Pages: 367
 </small>
 
 <hr class="review-break">
@@ -427,7 +427,7 @@ Great stuff.
 
 <small class="reading-metadata">
 Read: 18-Jul 2019<br>Read in: 11 days
-<br>Pages: {}
+<br>Pages: 400
 </small>
 
 <hr class="review-break">
@@ -475,7 +475,7 @@ Read: 24-Aug 2019<br>Read in: 7 days
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1453823117l/28754622._SY475_.jpg">
 
 ##### **[Harry Potter and the Goblet of Fire](https://www.goodreads.com/book/show/28754622-harry-potter-and-the-goblet-of-fire) by J.K. Rowling**
 
@@ -491,7 +491,7 @@ Read: 24-Aug 2019<br>Read in: 7 days
 
 <small class="reading-metadata">
 Read: 26-Aug 2019<br>Read in: 6 months
-<br>Pages: {}
+<br>Pages: 734
 </small>
 
 <hr class="review-break">
@@ -516,7 +516,7 @@ Read: 26-Aug 2019<br>Read in: 6 months
 
 <small class="reading-metadata">
 Read: 1-Sep 2019<br>Read in: 7 days
-<br>Pages: {}
+<br>Pages: 334
 </small>
 
 <hr class="review-break">
@@ -546,7 +546,7 @@ Read: 29-Oct 2019<br>Read in: 1 month
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547660378l/43592998._SY475_.jpg">
 
 ##### **[Recursion](https://www.goodreads.com/book/show/43592998-recursion) by Blake Crouch**
 
@@ -572,7 +572,7 @@ Read: 17-Nov 2019<br>Read in: 19 days
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1524199632l/39899065._SY475_.jpg">
 
 ##### **[The Book of M](https://www.goodreads.com/book/show/39899065-the-book-of-m) by Peng Shepherd**
 
@@ -592,11 +592,11 @@ A wonderfully written book that swept me along. Definitely recommend.
 
 <small class="reading-metadata">
 Read: 26-Nov 2019<br>Read in: 9 days
-<br>Pages: {}
+<br>Pages: 496
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1459010619l/29624348._SY475_.jpg">
 
 ##### **[My Name is Leon](https://www.goodreads.com/book/show/29624348-my-name-is-leon) by Kit de Waal**
 
@@ -616,11 +616,11 @@ A lovely read.
 
 <small class="reading-metadata">
 Read: 4-Dec 2019<br>Read in: 5 days
-<br>Pages: {}
+<br>Pages: 264
 </small>
 
 <hr class="review-break">
-<img width="98" class="review-image" src="https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png">
+<img width="98" class="review-image" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394257359l/11247517.jpg">
 
 ##### **[Skipping Christmas](https://www.goodreads.com/book/show/11247517-skipping-christmas) by John Grisham**
 
@@ -638,7 +638,7 @@ Aweful. I won't be reaching for a Grisham book in a hurry!
 
 <small class="reading-metadata">
 Read: 23-Dec 2019<br>Read in: 6 days
-<br>Pages: {}
+<br>Pages: 242
 </small>
 
 <hr class="review-break">
