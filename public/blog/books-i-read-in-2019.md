@@ -8,7 +8,7 @@ tags:
 
 Proudly I've continued to read (if you know my story, this is a big deal for me), this year having read 29 books (28 listed below).
 
-My absolute favourite was [Miss Pettigrew Lives for a Day](/2020/01/02/books-i-read-in-2019#miss-pettigrew-lives-for-a-day-by-winifred-watson) - a beautiful antidote to the world we live in today. I've also included a publication date breakdown at the end of this post. Most books were published in the last decade and 6 from between the 1920s and '50s.
+My absolute favourite was [Miss Pettigrew Lives for a Day](/2020/01/02/books-i-read-in-2019#miss-pettigrew-lives-for-a-day-by-winifred-watson) - a beautiful antidote to the world we live in today. I've also included a [publication date breakdown](/2020/01/02/books-i-read-in-2019#books-by-decade) at the end of this post. Most books were published in the last decade and 6 from between the 1920s and '50s.
 
 <!--more-->
 
