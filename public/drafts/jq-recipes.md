@@ -555,3 +555,15 @@ List all the unique combinations without duplication in the list:
 Generates 120 long array of `[0, 1, 2, 3, 4]` in all the possible combinations.
 
 [Demo](https://jqterm.com/c428eb8a3e151f04ec7199dd6ce6c836?query=5%20as%20%24n%20%7C%20%5Breduce%20range%280%3B%20%24n%29%20as%20%24i%20%28%5B%5D%3B%20.%20%2B%20%5B%5Brange%280%3B%24n%29%5D%5D%29%20%7C%20combinations%20%7C%20select%28unique%20%7C%20length%20%3D%3D%20%24n%29%5D)
+
+---
+
+Unique combinations of pairs of values - not allowing for repetition, i.e. `[1,0]` and `[0,1]` is duplication:
+
+```jq
+[1,2,3,4] | [combinations(2) | select(.[0] != .[1]) | sort] | unique
+```
+
+Generates all the combinations of `[1,2], [1,3], [1,4], [2,3], [2,4], [3,4]`
+
+[Demo](https://jqterm.com/5cb845d3ce1f76bdf5e2a315872a5974?query=%5Bcombinations%282%29%20%7C%20select%28.%5B0%5D%20!%3D%20.%5B1%5D%29%20%7C%20sort%5D%20%7C%20unique)
