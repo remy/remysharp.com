@@ -4,3 +4,5 @@
   Cache-Control: public, max-age=604800
 /js/*
   Cache-Control: public, max-age=604800
+/api/*
+  Access-Control-Allow-Origin: *
