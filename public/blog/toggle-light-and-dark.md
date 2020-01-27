@@ -3,6 +3,7 @@ title: "Toggle light and dark"
 tags:
 - web
 date: "2020-01-27 10:00:00"
+summary: "How I toggle between light and dark in Code, Terminal and my OS"
 ---
 
 # Toggle light and dark
