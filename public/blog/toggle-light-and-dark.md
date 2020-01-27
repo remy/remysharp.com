@@ -25,7 +25,7 @@ Then I can hit `cmd`+`space` and "toggle" to switch mode quickly. Like I said, s
 
 ## Toggle theme in VS Code
 
-For this, I use an extension called (unsurprisingly) "Toggle" by Peng Lv. Once Toggle is installed, I've got the command set up with the following keyboard bindings settings:
+For this, I use an extension called (unsurprisingly) ["Toggle" by Peng Lv](https://marketplace.visualstudio.com/items?itemName=rebornix.toggle). Once Toggle is installed, I've got the command set up with the following keyboard bindings settings:
 
 ```json
 [
