@@ -1,9 +1,9 @@
 ---
-title: "Toggle light and dark"
+title: 'Toggle light and dark'
 tags:
-- web
-date: "2020-01-27 10:00:00"
-summary: "How I toggle between light and dark in Code, Terminal and my OS"
+  - web
+date: '2020-01-27 10:00:00'
+summary: 'How I toggle between light and dark in Code, Terminal and my OS'
 image: /images/theme-iterm.png
 ---
 
@@ -56,14 +56,14 @@ Perhaps the trickiest, but definitely the most rewarding. I use a project called
 
 To enable this I followed the install directions for [base16-shell](https://github.com/chriskempson/base16-shell) and then from there I was able to select my themes.
 
-I use [onedark](https://github.com/tilal6991/base16-onedark-scheme) ([preview](https://base16.glitch.me/previews/base16-onedark.html)) and [atelier-forest-light](https://github.com/atelierbram/base16-atelier-schemes) ([preview](https://base16.glitch.me/previews/base16-atelier-forest-light.html)) as my dark and light pairing, and I can switch between them using aliases:
+I use [onedark](https://github.com/tilal6991/base16-onedark-scheme) ([preview](https://base16.netlify.com/previews/base16-onedark.html)) and [atelier-forest-light](https://github.com/atelierbram/base16-atelier-schemes) ([preview](https://base16.netlify.com/previews/base16-atelier-forest-light.html)) as my dark and light pairing, and I can switch between them using aliases:
 
 ```shell
 $ alias light="base16_atelier-forest-light"
 $ alias dark="base16_onedark"
 ```
 
-I put all the base16 themes up on glitch to [quickly preview](https://base16.glitch.me/previews/) or you can preview theme all in the terminal using this command:
+I put all the base16 themes up on glitch to [quickly preview](https://base16.netlify.com/) or you can preview theme all in the terminal using this command:
 
 ```bash
 for f in ~/.config/base16-shell/scripts/*;

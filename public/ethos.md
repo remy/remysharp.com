@@ -6,6 +6,16 @@ It's far from definitive and not organised well, but it's a start to capture wha
 
 ---
 
+## Dismantling oppression
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UohtVuaT2Ls?start=28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> [...] I think that we have to really do the hard work to truly understand systemic racism. I think that it is the obligation of the people that have created and perpetuate and benefit from a system of oppression **to be the ones that dismantle it**, so that's on us.
+
+- [Joaquin Phoenix](https://www.youtube.com/watch?v=UohtVuaT2Ls) - 2 Feb 2020
+
+---
+
 ## On designing the web
 
 When thinking about creating the rules that would underlay the web:
@@ -14,7 +24,7 @@ When thinking about creating the rules that would underlay the web:
 
 Simplicity always wins, and stripping as much back as possible is the way to that simplicity.
 
-* [Sir Tim Berners-Lee](https://www.youtube.com/watch?v=cCE2EyV_IiY) - 22 Feb 2019
+- [Sir Tim Berners-Lee](https://www.youtube.com/watch?v=cCE2EyV_IiY) - 22 Feb 2019
 
 ---
 
@@ -34,7 +44,7 @@ A man whose words I will always have time for, Stephen Fry takes the "other side
 >
 > I believe one of the greatest human failings, is to prefer to be right than to be effective, and political correctness is always obsessed with how right it is without thinking of how effective it it might be.
 
-* [Via Stephen Fry](https://www.youtube.com/watch?v=tPEHbJgomgA) - 19 Sep 2018
+- [Via Stephen Fry](https://www.youtube.com/watch?v=tPEHbJgomgA) - 19 Sep 2018
 
 ---
 
@@ -44,7 +54,7 @@ A man whose words I will always have time for, Stephen Fry takes the "other side
 
 ![](/images/calvin-nye.png)
 
-* [Via Twitter](https://twitter.com/RetroNewsNow/status/947514458032701440) - 31 Dec 2017
+- [Via Twitter](https://twitter.com/RetroNewsNow/status/947514458032701440) - 31 Dec 2017
 
 ---
 
@@ -52,7 +62,7 @@ A man whose words I will always have time for, Stephen Fry takes the "other side
 
 > This is how culture shifts work - what we are prepared to accept and call out changes over time as our community values shift more towards inclusiveness and empathy and we raise our standards for the what we’re prepared to challenge or ignore.
 
-* [Via](https://app.simplenote.com/publish/bKHZCC) [Nat Dudley](https://twitter.com/natdudley) - 19 Feb 2017
+- [Via](https://app.simplenote.com/publish/bKHZCC) [Nat Dudley](https://twitter.com/natdudley) - 19 Feb 2017
 
 ---
 
@@ -143,4 +153,3 @@ I've [written before](/2014/10/27/motivation) about how Emma Watson's UN address
 ![Southpark has some wonderful moments](/images/ethos/southpark-sad.jpg)
 
 [Via @codepo8](https://twitter.com/codepo8/status/621428413262393348) 16 July 2015
-
