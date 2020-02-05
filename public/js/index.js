@@ -121,6 +121,7 @@ function fragmention() {
       .getSelection()
       .toString()
       .trim();
+
     if (selection.indexOf(' ') !== -1) {
       history.replaceState(
         null,
@@ -128,8 +129,8 @@ function fragmention() {
         '#targetText=' + encodeURIComponent(selection)
       );
     } else if (
-      window.location.query &&
-      window.query.location.includes('#targetText')
+      window.location.hash &&
+      window.location.hash.includes('#targetText')
     ) {
       history.replaceState(null, null, location.pathname);
     }
