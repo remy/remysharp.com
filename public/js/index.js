@@ -63,7 +63,7 @@ function fragmention() {
 
     let fragmention = decodeURIComponent(id);
 
-    const spec = 'targetText=';
+    const spec = ':~:text=';
 
     // if the fragment does not start with targetText AND does not include
     // spaces, then it'll be ignored - based on convo between indieweb spec
@@ -126,11 +126,11 @@ function fragmention() {
       history.replaceState(
         null,
         null,
-        '#targetText=' + encodeURIComponent(selection)
+        '#:~:text=' + encodeURIComponent(selection)
       );
     } else if (
       window.location.hash &&
-      window.location.hash.includes('#targetText')
+      window.location.hash.includes('#:~:text=')
     ) {
       history.replaceState(null, null, location.pathname);
     }
