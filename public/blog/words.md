@@ -21,7 +21,7 @@ We can see new meaning for words appearing even in recent years. "Woke" to me, a
 
 There are words that are nouns and verbs that were previously proper nouns, such as [Tannoy](https://en.m.wikipedia.org/wiki/Tannoy) or [hoover](https://en.wiktionary.org/wiki/hoover).
 
-Of couirse in tech, we have the habit of reappropriating words, which in fairness, has led to confusion.
+Of course in tech, we have the habit of reappropriating words, which in fairness, has led to confusion.
 
 Naming things is a classic age old problem for techies which is possibly why we cock it up so often.
 
