@@ -1654,7 +1654,6 @@ video {
 }
 
 body .commento-root {
-
   .commento-logged-container .commento-logged-in-as .commento-name {
     position: relative;
     left: auto;
@@ -1692,7 +1691,7 @@ body .commento-root {
 
   // reverse the order
   #commento-comments-area > div,
-  div[id^="commento-comment-children-"] {
+  div[id^='commento-comment-children-'] {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -1712,21 +1711,33 @@ body .commento-root {
   }
 }
 
-
 // prism changes - for a11y
-.token.function, .token.class-name {
-  color: rgb(200, 45, 77)
+.token.function,
+.token.class-name {
+  color: rgb(200, 45, 77);
 }
 
-.token.comment, .token.prolog, .token.doctype, .token.cdata {
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
   color: rgb(107, 109, 110);
 }
 
-.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
   color: rgb(149, 106, 55);
 }
 
-.token.selector, .token.attr-name, .token.string, .token.char, .token.builtin, .token.inserted {
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
   color: rgb(79, 118, 1);
 }
 
@@ -1734,7 +1745,9 @@ body .commento-root {
   color: rgb(82, 73, 73);
 }
 
-.token.atrule, .token.attr-value, .token.keyword {
+.token.atrule,
+.token.attr-value,
+.token.keyword {
   color: rgb(3, 118, 168);
 }
 
@@ -1742,6 +1755,36 @@ h2 > label {
   width: 100%;
   float: none;
   margin: 0;
+}
+
+.link-listing {
+  time.date {
+    white-space: nowrap;
+  }
+
+  div.link > div {
+    font-size: 80%;
+    line-height: 1.4em;
+  }
+
+  div.link p {
+    margin: 8px 0;
+  }
+
+  div.link {
+    margin-bottom: 24px;
+    margin-left: 20px;
+  }
+
+  .link:before {
+    content: '¶';
+    float: left;
+    margin-left: -20px;
+  }
+
+  p.tags {
+    font-size: 80%;
+  }
 }
 
 // [fragmention] {

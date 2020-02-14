@@ -1,14 +1,15 @@
 module.exports = {
   env: {
     node: true,
-    es6: true
+    es6: true,
   },
   rules: {
-    'no-console': 0
+    'no-console': 0,
   },
-  extends: 'eslint:recommended',
+  extends: ['eslint:recommended', 'plugin:node/recommended'],
   parserOptions: {
     ecmaVersion: 9,
-    sourceType: 'module'
-  }
+    sourceType: 'module',
+  },
+  plugins: ['node'],
 };

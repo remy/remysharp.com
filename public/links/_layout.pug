@@ -1,0 +1,28 @@
+extends ../_partials/layout
+
+block meta
+  link(rel="canonical" href=`https://remysharp.com${url}`)
+  meta(name="twitter:creator" content="@rem")
+  meta(name="twitter:title" content=`${title}`)
+  meta(name="twitter:site" content="@rem")
+  meta(name="twitter:domain" content="Remy's b:log")
+  meta(name="twitter:image:src" content=`https://remysharp.com/images/cards/${moment(data.date).modDOY(9)}.jpg`)
+  meta(name="twitter:card" content="summary")
+
+block content
+  - permalink = url;
+  - safeTitle = data.title.replace(/'/g, '\\\'')
+
+  main.content
+    article.post.h-entry
+      h1.title.p-name
+        a(href=`${data.url}` title=`Permanent Link: ${title}`).u-url.u-uid= title
+
+      .post-content.e-content
+        != yield
+
+      .misc-content
+        p.metadata
+          a(href="/links/") Discover more links
+          br
+          span Saved <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under ##{(tags || []).join(' & #')}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/master/public/links/#{current.source}.md">Edit this post</a>

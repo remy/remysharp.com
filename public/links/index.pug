@@ -1,0 +1,24 @@
+---
+title: 'Links'
+permalink: /links/index.html
+---
+
+- posts = collections.links
+- last = null
+- index = 0;
+- post = posts[index]
+
+div.link-listing
+  p Links also available as <a href="/links.xml">RSS</a>.
+  hr
+  while post
+    if post && post.data.date && !post.data.private
+    div.link
+      p
+        a(href=`${ post.url }`)= post.data.title
+        span &nbsp;
+        time.date(title=`${ moment(post.data.date).format('D-MMM YYYY') }`) #{ moment(post.data.date).ago() } ago
+      div !{ post.light }
+      p.tags
+        small #{(post.data.tags || []).map(_ => `#${_}`).join(', ')}
+    - post = posts[index += 1];
