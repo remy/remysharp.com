@@ -123,16 +123,15 @@ function fragmention() {
       .trim();
 
     if (selection.indexOf(' ') !== -1) {
-      history.replaceState(
-        null,
-        null,
-        '#:~:text=' + encodeURIComponent(selection)
-      );
-    } else if (
-      window.location.hash &&
-      window.location.hash.includes('#:~:text=')
-    ) {
-      history.replaceState(null, null, location.pathname);
+      let url = location.toString();
+      if (!url.includes('#')) {
+        url += '#';
+      }
+      url += ':~:text=' + encodeURIComponent(selection);
+
+      history.replaceState(null, null, url);
+    } else {
+      history.replaceState(null, null, location.toString());
     }
   });
 }
