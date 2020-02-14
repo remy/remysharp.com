@@ -91,15 +91,6 @@ html#remysharp-com(lang="en")
       script(src=`/js/index.js`)
     script.
       if ('serviceWorker' in navigator && location.origin.indexOf('localhost') === -1) navigator.serviceWorker.register('/service-worker.js');
-      if (window.location.hostname === 'remysharp.com') {
-        new Image(1, 1).src = "https://d14rpr34so8h9j.cloudfront.net/pixel.gif?u=" +
-          encodeURIComponent(window.location.pathname) +
-          "&s=" + #{data.statusCode || 200} +
-          "&b=" + document.documentElement.outerHTML.length +
-          (document.referrer ? "&r=" + encodeURIComponent(document.referrer): "");
-      }
-    noscript
-      img(src=`https://d14rpr34so8h9j.cloudfront.net/pixel.gif?u=${ encodeURIComponent(url)}&s=${ data.statusCode || 200 }`)
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

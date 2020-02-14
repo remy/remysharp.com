@@ -226,7 +226,7 @@ a:focus code {
 
 pre code,
 pre[class*='language-'] code {
-  color: @code-foreground;
+  color: var(--c-code-fg);
   background: var(--c-code-bg);
   padding: 0.5em;
   -webkit-text-size-adjust: none;
@@ -239,7 +239,7 @@ pre[class*='language-'],
   font-family: @code-font;
   margin: 10px 0;
   line-height: 1.475;
-  color: @code-foreground;
+  color: var(--c-code-fg);
   background: var(--c-code-bg);
   position: relative;
   border-radius: 3px;
@@ -1764,6 +1764,11 @@ h2 > label {
 }
 
 .link-listing {
+  pre {
+    margin-left: 0;
+    min-width: 100%;
+  }
+
   time.date {
     white-space: nowrap;
   }
@@ -1771,10 +1776,24 @@ h2 > label {
   div.link > div {
     font-size: 80%;
     line-height: 1.4em;
+    margin-top: 8px;
+
+    &:empty {
+      display: none;
+    }
+
+    p + p {
+      margin-top: 8px;
+    }
   }
 
   div.link p {
-    margin: 8px 0;
+    margin: 0;
+    // margin-top: 8px;
+  }
+
+  div.link p.tags {
+    margin-top: 0;
   }
 
   div.link {

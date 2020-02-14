@@ -12,6 +12,10 @@
     "title": "Rem's Todo",
     "published": true
   },
+  "links": {
+    "title": "Links",
+    "published": true
+  },
   "404": {
     "comments": true
   },
