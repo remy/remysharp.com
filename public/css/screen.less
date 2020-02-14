@@ -8,6 +8,53 @@ html {
   background-size: 920px 1000px;
 }
 
+body {
+  background: var(--c-bg);
+  color: var(--c-text);
+}
+
+input,
+textarea {
+  background: var(--c-input-bg);
+  color: var(--c-text);
+}
+
+h1.title,
+h2.title {
+  background: var(--c-heading-bg);
+  color: var(--c-heading-article);
+
+  a {
+    color: var(--c-heading-article);
+    border-color: var(--c-text-dark);
+  }
+}
+
+.subpanel {
+  background: var(--c-bg-alt);
+  color: var(--c-text-dark);
+
+  a {
+    color: var(--c-text-dark);
+    border-color: var(--c-text-dark);
+
+    &:hover {
+      color: var(--c-bg);
+    }
+  }
+}
+
+a {
+  color: var(--c-cta);
+  border-color: var(--c-cta);
+
+  &:hover {
+    border-radius: 1px;
+    background-color: var(--c-cta);
+    color: var(--c-bg);
+  }
+}
+
 // here be my styles
 
 .stretch {
@@ -155,7 +202,7 @@ kbd {
 code,
 code[class*='language-'] {
   font-family: @code-font;
-  background: @code-background;
+  background: var(--c-code-bg);
   padding: 2px;
   border-radius: 2px;
 }
@@ -164,7 +211,7 @@ code[class*='language-'] {
 code[class*='language-'],
 pre[class*='language-'] {
   font-family: @code-font;
-  background: @code-background;
+  background: var(--c-code-bg);
   text-shadow: none;
 }
 
@@ -180,7 +227,7 @@ a:focus code {
 pre code,
 pre[class*='language-'] code {
   color: @code-foreground;
-  background: @code-background;
+  background: var(--c-code-bg);
   padding: 0.5em;
   -webkit-text-size-adjust: none;
 }
@@ -193,19 +240,13 @@ pre[class*='language-'],
   margin: 10px 0;
   line-height: 1.475;
   color: @code-foreground;
-  background: @code-background;
+  background: var(--c-code-bg);
   position: relative;
   border-radius: 3px;
   direction: ltr;
   text-align: left;
-  -moz-tab-size: 2;
-  -o-tab-size: 2;
   tab-size: 2;
   word-wrap: break-word;
-  -webkit-hyphens: none;
-  -moz-hyphens: none;
-  -ms-hyphens: none;
-  -o-hyphens: none;
   hyphens: none;
   overflow-x: scroll;
   display: block;
@@ -348,7 +389,7 @@ input,
 textarea {
   padding: 6px;
   border: 1px solid #aaa;
-  background: #fff no-repeat scroll -3px -3px;
+  background: var(--c-input-bg) no-repeat scroll -3px -3px;
 
   &:focus {
     border: 1px solid #666;
@@ -1174,8 +1215,8 @@ details summary:after {
 .talk .tag {
   font-size: 80%;
   text-transform: lowercase;
-  background: #aaa;
-  color: white;
+  background: var(--c-text-dark);
+  color: var(--c-bg);
   border-radius: 3px;
   padding: 2px 5px;
 }
@@ -1244,17 +1285,17 @@ a[title='simple-link'] {
   border: 0;
   background: none;
   font-size: inherit;
-  color: @link-color;
+  color: var(--c-cta);
   text-decoration: none;
   font-weight: inherit;
   padding: 0;
   cursor: pointer;
-  border-bottom: 1px solid @link-color;
+  border-bottom: 1px solid var(--c-cta);
 
   &:hover,
   &:focus {
-    background: #1f296c;
-    color: @background-color;
+    background: var(--c-cta);
+    color: var(--c-bg);
     border-bottom: none;
     text-decoration: none;
     padding: 2px 0;
@@ -1325,10 +1366,10 @@ img[title^='Sample'] {
   .ck_form {
     box-shadow: none;
     border: 0;
-    background: @background-color !important;
+    background: var(--c-bg) !important;
 
     input {
-      background: white;
+      background: var(--c-input-bg);
     }
 
     .ck_form_content {
@@ -1608,55 +1649,20 @@ video {
   }
 }
 
-.dark-mode {
-  --c-cta: #03a9f4;
-  --c-bg: #262626;
-  --c-text: #d6d6d6;
-  --c-text-dark: rgb(130, 130, 130);
-
-  body {
-    background: var(--c-bg);
-    color: var(--c-text);
-  }
-
-  input,
-  textarea {
-    background: #3b3a3a;
-    color: var(--c-text);
-  }
-
-  a {
-    color: var(--c-cta);
-    border-color: var(--c-cta);
-
-    &:hover {
-      border-radius: 1px;
-      background-color: var(--c-cta);
-      color: var(--c-bg);
-    }
-  }
-
-  h1.title,
-  h2.title,
-  .subpanel {
-    background: black;
-    color: var(--c-text-dark);
-
-    a {
-      color: var(--c-text-dark);
-      border-color: var(--c-text-dark);
-    }
-  }
-
-  .subpanel a:hover {
-    color: black;
-  }
-}
-
 body .commento-root {
+  * {
+    color: var(--c-text);
+  }
+
   .commento-logged-container .commento-logged-in-as .commento-name {
     position: relative;
     left: auto;
+  }
+
+  input[type='text'],
+  textarea {
+    background: var(--c-input-bg);
+    color: var(--c-input-fg);
   }
 
   .commento-logged-container {

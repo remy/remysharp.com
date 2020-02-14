@@ -2,6 +2,44 @@
 @import (less) 'mixins.less';
 @import (inline) 'reset.less';
 
+html {
+  --c-input-bg: #fff;
+  --c-bg: #fdfdfd;
+  --c-bg-alt: rgb(26, 26, 26);
+  --c-text: #212121;
+  --c-cta: rgb(21, 101, 192);
+  --c-metadata: rgb(95, 95, 95);
+  --c-input-fg: #212121;
+  --c-text-dark-bg: rgb(153, 153, 153);
+  --c-text-dark: rgb(153, 153, 153);
+  --c-heading-article: #000;
+  --c-heading-bg: rgb(238, 238, 238);
+  --c-code-bg: #f5f5f5;
+  --c-code-fg: #000;
+  --c-bg-cta: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --c-code-bg: #2d2d2d;
+    --c-cta: #03a9f4;
+    --c-bg: #262626;
+    --c-bg-alt: #222;
+    --c-bg-cta: #222;
+    --c-text: #d6d6d6;
+    --c-text-dark: rgb(139, 139, 139);
+    --c-text-dark-bg: #dfdfdf;
+    --c-input-bg: #3b3a3a;
+    --c-input-fg: #fff;
+    --c-heading-article: #fff;
+    --c-heading-bg: #111;
+    // --c-metadata: rgb(95, 95, 95);
+    blockquote {
+      background-color: rgb(60, 60, 60);
+    }
+  }
+}
+
 // slap it on everything styles
 * {
   box-sizing: border-box;
@@ -23,7 +61,8 @@ html {
 
 body {
   padding: 0;
-  font: 0.625em -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font: 0.625em -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   color: @main-font-color;
   background: @background-color;
   font-size: 100%;
@@ -178,7 +217,7 @@ h2.title {
     &:focus,
     &:hover {
       background: none;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid var(--c-heading-article);
       // text-decoration: underline;
       // outline: none;
     }
@@ -202,7 +241,7 @@ h2.title {
 
     &:hover,
     &:focus {
-      background-color: #444;
+      background-color: var(--c-metadata);
       border: none;
       color: lighten(@subpanel-background, 70%);
       padding: 2px 0;

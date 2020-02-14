@@ -1,6 +1,6 @@
 /* eslint-env serviceworker */
 
-const prefix = 'v1';
+const prefix = 'v2';
 const commit = '%%COMMIT%%';
 const version = prefix + '/' + commit;
 
@@ -16,7 +16,7 @@ const imagesCache = version + '/static/images';
 const cacheByType = {
   css: cssCache,
   javascript: jsCache,
-  image: imagesCache
+  image: imagesCache,
 };
 
 function cacheForRequest(req, res) {
@@ -40,7 +40,7 @@ function cacheForRequest(req, res) {
 
 async function updateStaticCache() {
   const allClients = await clients.matchAll({
-    includeUncontrolled: true
+    includeUncontrolled: true,
   });
 
   const posts = [];
@@ -65,9 +65,9 @@ async function updateStaticCache() {
           '/images/avatar.jpg',
           '/images/avatar-300.jpg',
           '/images/background.jpg',
-          '/images/search.svg'
+          '/images/search.svg',
         ])
-      )
+      ),
   ]);
 }
 
@@ -155,11 +155,13 @@ function assetRequest(request) {
   let url = new URL(request.url);
   url = url.origin + url.pathname; // strip the query string
 
+  const isText = request.headers.get('Accept').startsWith('text');
+
   return caches.match(url).then(response => {
     // CACHE
     return (
       response ||
-      fetch(request)
+      fetch(isText ? `${url}?${version}` : request)
         .then(response => {
           // NETWORK
           // If the request is for an image, stash a copy of this image in the images cache
