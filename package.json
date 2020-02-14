@@ -13,7 +13,9 @@
     "dev": "nodemon -w lib/ lib/dev.js",
     "update": "node lib/books.js; node lib/currently-reading.js",
     "links": "node lib/links.js",
-    "build": "npm run links; node lib/index.js"
+    "build": "npm run links; node lib/index.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Remy Sharp",
   "license": "MIT",
@@ -40,7 +42,8 @@
     "recursive-copy": "^2.0.10",
     "request": "^2.88.2",
     "slugify": "^1.3.4",
-    "turndown": "^5.0.3"
+    "turndown": "^5.0.3",
+    "snyk": "^1.291.0"
   },
   "repository": {
     "type": "git",
@@ -52,5 +55,6 @@
     "eslint-plugin-node": "^11.0.0",
     "js-yaml": "^3.13.1",
     "xml2json": "^0.11.2"
-  }
+  },
+  "snyk": true
 }
