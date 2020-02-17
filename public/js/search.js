@@ -135,7 +135,7 @@
         }
         return a.count < b.count ? 1 : -1;
       })
-      .slice(0, 10)
+      .slice(0, 20)
       .map(res => {
         const d = new Date(res.date);
         res.niceDate = `${d.getDate()}-${

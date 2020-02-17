@@ -1442,6 +1442,18 @@ img[title^='Sample'] {
 
 #search-results {
   padding-left: 0;
+
+  a[href] ~ time:before {
+    content: '📝 ';
+  }
+
+  a[href^='/links/'] ~ time:before {
+    content: '🔗 ';
+  }
+
+  a[href^='/newsletters/'] ~ time:before {
+    content: '📬 ';
+  }
 }
 
 video {

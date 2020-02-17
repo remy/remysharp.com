@@ -20,10 +20,11 @@
   "dependencies": {
     "@remy/envy": "^4.0.2",
     "approximate-number": "^2.0.0",
+    "auth0-lock": "^11.21.1",
     "buffer-crc32": "^0.2.13",
     "cheerio": "^1.0.0-rc.3",
     "date-fns": "^1.30.1",
-    "fast-glob": "^2.2.6",
+    "fast-glob": "^3.2.0",
     "fs-extra": "^7.0.1",
     "gray-matter": "^4.0.2",
     "hash-files": "^1.1.1",
