@@ -1,1 +1,1 @@
-./public/js/commento.min.js
+./public/js/commento.js
