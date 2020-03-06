@@ -17,14 +17,14 @@ This is particularly useful for search boxes or tagging entry boxes, though the 
 
 I've written a [jQuery](http://jquery.com) [plugin](http://jquery.com/plugins) that plugs the same functionality in to any text box - but also includes the max-width limiting functionality.
 
-Download [textGrow.js](http://leftlogic.com/jquery/textgrow.js)
+Download [textGrow.js](/downloads/textgrow.js)
 
 
 <!--more-->
 
 ## Example
 
-See [Left Logic - text grow example](http://leftlogic.com/info/articles/auto_grow_text#example) - I couldn't post the JS code using my WordPress blog :-(
+See [text grow example](https://remy.jsbin.me/old-voice-bbf/) - I couldn't post the JS code using my WordPress blog :-(
 
 ## Usage
 
