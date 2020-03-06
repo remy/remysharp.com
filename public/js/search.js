@@ -61,8 +61,6 @@
   function find(queryString, query) {
     $results.innerHTML = '<li>Searching...</li>';
 
-    console.log({ query, queryString });
-
     window.history.replaceState(null, query, '/search?q=' + queryString);
 
     var titleOnly = false;

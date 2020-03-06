@@ -22,7 +22,7 @@ As I mentioned, I had a very small amount of space but also I wanted the text in
 
 ## Prior art
 
-I've come across this problem in the past too. I posted two blog posts some 14 years ago! The first was [a full JavaScript solution](https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2) to create the effect, more elegantly was the so called bug: in IE, and IE only, using the following CSS would allow the `input` elements to grow to fix their contents:
+I've come across this problem in the past too. I posted two blog posts some 14 years ago! The first was [a full JavaScript solution](https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2) to create the effect, more elegantly was the [so called bug in IE](https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2), and IE only, using the following CSS would allow the `input` elements to grow to fix their contents:
 
 ```css
 input { overflow: visible; }
