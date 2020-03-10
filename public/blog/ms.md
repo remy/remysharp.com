@@ -3,7 +3,6 @@ title: MS
 tags:
   - personal
 date: '2020-03-10 10:00:00'
-draft: true
 ---
 
 # MS
