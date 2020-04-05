@@ -20,7 +20,6 @@
   "dependencies": {
     "@remy/envy": "^4.0.2",
     "approximate-number": "^2.0.0",
-    "auth0-lock": "^11.21.1",
     "buffer-crc32": "^0.2.13",
     "cheerio": "^1.0.0-rc.3",
     "date-fns": "^1.30.1",
@@ -36,7 +35,6 @@
     "markdown-it-task-lists": "^2.1.1",
     "node-fetch": "^2.6.0",
     "prismjs": "^1.16.0",
-    "pub": "^0.2.0",
     "pug": "^2.0.4",
     "recursive-copy": "^2.0.10",
     "request": "^2.88.2",
