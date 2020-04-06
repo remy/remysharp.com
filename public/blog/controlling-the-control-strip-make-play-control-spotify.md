@@ -4,6 +4,8 @@ tags:
   - personal
   - work
 date: '2020-04-06 10:00:00'
+summary: "iTunes sucks. The touch bar shouldn't be allowed to start iTunes. I like Spotify. So I fixed that."
+image: /images/touch-spotify.jpg
 ---
 
 # Controlling the control strip: make play control Spotify
@@ -71,3 +73,5 @@ end using terms from
 ```
 
 And that…should be it. I now have control over my own machine, which is frankly how it should always be.
+
+_Honourable mention to [Better Touch Tool](https://folivora.ai/) which looks like it might do the job, but I'm already familiar with Karabiner and Karabiner definitely does the job!_
