@@ -11,7 +11,7 @@ This is one of those "I spent nearly a day debugging this and I don't want to fo
 
 _\* Or as long as I renew the dns…_
 
-<--more-->
+<!--more-->
 
 ## The problem
 
