@@ -255,7 +255,7 @@ Some of the other tools that I've started poking around with, but haven't used t
 * [ponysay](https://github.com/erkin/ponysay) > cowsay
 * [csvkit](https://csvkit.readthedocs.io/en/1.0.3/) > awk et al
 * [noti](https://github.com/variadico/noti) > `display notification`
-* [entr](http://www.entrproject.org/) > watch
+* [entr](https://github.com/eradman/entr/) > watch
 
 ## What about you?
 
