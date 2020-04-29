@@ -6,6 +6,8 @@ date: 2020-04-29
 summary: "Enhance the browser, don't reinvent."
 ---
 
+# We're not smarter than browsers
+
 This morning during performing another search through npm for the package that matched my needs, I was feeling lazy and didn't want to type "npm i x" - thankfully npm provided a helpful "click to copy". And that's where it went wrong.
 
 <!--more-->
