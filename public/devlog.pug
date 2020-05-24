@@ -1,0 +1,24 @@
+---
+permalink: devlog/index.html
+slug: devlog
+title: Devlogs
+---
+
+- posts = collections.devlog
+- last = null
+- index = 0;
+- post = posts[index]
+
+div.link-listing
+  h1 Remy's devlog
+  p This is a new area and a work in progress, but I wanted to jot my ideas and progress somewhere, so this'll be it for the time being.
+  hr
+  while post
+    if last !== post.data.project
+      h2 #{post.data.project}
+      ul
+
+    li
+      a(href=`${ post.url }`)= moment(post.date).format('D-MMM YYYY')
+    - last = post.data.project
+    - post = posts[index += 1];
