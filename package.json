@@ -25,6 +25,7 @@
     "date-fns": "^1.30.1",
     "fast-glob": "^3.2.0",
     "fs-extra": "^7.0.1",
+    "gitlog": "^4.0.0",
     "gray-matter": "^4.0.2",
     "hash-files": "^1.1.1",
     "less": "^3.9.0",

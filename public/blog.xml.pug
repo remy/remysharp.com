@@ -1,9 +1,9 @@
 ---
 layout: false
-permalink: feed.xml
+permalink: blog.xml
 ---
 
-- posts = collections.posts.slice(0, 50)
+- posts = collections.blog.slice(0, 50)
 - advert = '<p><a href="https://terminal.training/?utm_source=feed&utm_medium=banner&utm_campaign=remysharp-ad1"><img src="' + site_url + '/images/inline-cli-course.png"></a>'
 
 doctype xml
@@ -34,7 +34,7 @@ rss(version='2.0'
 
     each post in posts
       item
-        title= `${post.data.title} [${post.data.type}]`
+        title= post.data.title
         guid(isPermaLink="false")= post.slug
         link= site_url + post.url
         - var body = post.output
