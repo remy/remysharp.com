@@ -1,9 +1,9 @@
 ---
 layout: false
-permalink: devlog.xml
+permalink: til.xml
 ---
 
-- posts = collections.devlog.slice(0, 50)
+- posts = collections.til.slice(0, 50)
 
 doctype xml
 rss(version='2.0'
@@ -13,10 +13,10 @@ rss(version='2.0'
   xmlns:sy='http://purl.org/rss/1.0/modules/syndication/'
   xmlns:slash='http://purl.org/rss/1.0/modules/slash/')
   channel
-    title remy sharp's d:evlog
-    atom:link(href=`${ site_url }/devlog.xml` rel="self" type="application/rss+xml")
+    title remy sharp's til
+    atom:link(href=`${ site_url }/til.xml` rel="self" type="application/rss+xml")
     link= site_url
-    description Remy Sharp's d:evlog diary
+    description Remy Sharp's TILs
     image
       title= site_title
       link= site_url

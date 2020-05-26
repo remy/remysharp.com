@@ -1,6 +1,6 @@
 - posts = year ? collections.years[year].slice(0) : Object.keys(collections.years).sort((a, b) => b - a).reduce((acc, curr) => acc.concat(collections.years[curr]), [])
 - last = null
-.post
+.post.archive-page
   h1.title #{ title || year } archive
   - index = 0;
   - post = posts[index]
@@ -19,7 +19,7 @@
               if post && post.data.date
                 li
                   a(href=`${ post.url }`)= post.data.title
-                  small.date &nbsp; #{ moment(post.data.date).format('D-MMM YYYY')}
+                  time.date #{ moment(post.data.date).format('D-MMM YYYY')}
               - post = posts[index += 1];
       else
         - post = posts[index += 1];

@@ -1,0 +1,25 @@
+---
+permalink: til/index.html
+slug: til
+title: 'Things I Learned 🤔'
+---
+
+- posts = collections.til
+- last = null
+- index = 0;
+- post = posts[index]
+
+div.til-listing
+  p These are things that I learned today (or on that day). Partly to help me keep writing, partly to help my failing memory, partly so I can "google my brain".
+
+  hr
+  while post
+    if last !== post.dirname
+      h2 #{post.dirname}
+      ul
+
+    li
+      a(href=`${ post.url }`)= post.title
+      time.date= moment(post.date).format('D-MMM YYYY')
+    - last = post.dirname
+    - post = posts[index += 1];

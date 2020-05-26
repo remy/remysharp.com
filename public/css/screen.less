@@ -1442,8 +1442,12 @@ img[title^='Sample'] {
 
 #search-results {
   padding-left: 0;
+}
 
+#search-results,
+.archive-page {
   a[href] ~ time:before {
+    margin-left: 4px;
     content: '📝 ';
   }
 
@@ -1453,6 +1457,14 @@ img[title^='Sample'] {
 
   a[href^='/newsletters/'] ~ time:before {
     content: '📬 ';
+  }
+
+  a[href^='/til/'] ~ time:before {
+    content: '🤔 ';
+  }
+
+  a[href^='/devlog/'] ~ time:before {
+    content: '💻 ';
   }
 }
 
@@ -1832,3 +1844,13 @@ h2 > label {
 //   background: yellow;
 //   color: black;
 // }
+
+#til-page,
+#devlog-page {
+  main.content {
+    padding-bottom: 20px;
+  }
+  h2 {
+    margin-bottom: 8px;
+  }
+}
