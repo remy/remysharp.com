@@ -1,7 +1,7 @@
 /* eslint-env serviceworker */
 
 const prefix = 'v2';
-const commit = '%%COMMIT%%';
+const commit = '%%FILE_HASH%%';
 const version = prefix + '/' + commit;
 
 // depends on SW version change
@@ -27,7 +27,7 @@ function cacheForRequest(req, res) {
 
   const contentType = res.headers.get('content-type');
 
-  const type = ['image', 'css', 'javascript'].find(_ =>
+  const type = ['image', 'css', 'javascript'].find((_) =>
     contentType.includes(_)
   );
 
@@ -53,14 +53,14 @@ async function updateStaticCache() {
 
   return Promise.all([
     posts.length
-      ? caches.open(postsCache).then(cache => cache.addAll(posts))
+      ? caches.open(postsCache).then((cache) => cache.addAll(posts))
       : null,
     caches
       .open(pagesCache)
-      .then(cache => cache.addAll(['/', '/offline', '/manifest.json'])),
+      .then((cache) => cache.addAll(['/', '/offline', '/manifest.json'])),
     caches
       .open(imagesCache)
-      .then(cache =>
+      .then((cache) =>
         cache.addAll([
           '/images/avatar.jpg',
           '/images/avatar-300.jpg',
@@ -72,22 +72,22 @@ async function updateStaticCache() {
 }
 
 function stashInCache(cacheName, request, response) {
-  caches.open(cacheName).then(cache => cache.put(request, response));
+  caches.open(cacheName).then((cache) => cache.put(request, response));
 }
 
 // Remove caches whose name is no longer valid
 function clearOldCaches() {
-  return caches.keys().then(keys => {
+  return caches.keys().then((keys) => {
     return Promise.all(
       keys
-        .filter(key => {
+        .filter((key) => {
           if (key.includes('/static/')) {
             return !key.startsWith(version);
           }
 
           return !key.startsWith(prefix);
         })
-        .map(key => {
+        .map((key) => {
           console.log('deleting %s', key);
           return caches.delete(key);
         })
@@ -95,16 +95,16 @@ function clearOldCaches() {
   });
 }
 
-self.addEventListener('install', event => {
+self.addEventListener('install', (event) => {
   event.waitUntil(updateStaticCache().then(() => self.skipWaiting()));
 });
 
-self.addEventListener('activate', event => {
+self.addEventListener('activate', (event) => {
   event.waitUntil(clearOldCaches().then(() => self.clients.claim()));
   updateStaticCache();
 });
 
-self.addEventListener('fetch', event => {
+self.addEventListener('fetch', (event) => {
   let request = event.request;
   let url = new URL(request.url);
 
@@ -128,7 +128,7 @@ self.addEventListener('fetch', event => {
   if (request.headers.get('Accept').includes('text/html')) {
     event.respondWith(
       fetch(request) // network first method
-        .then(response => {
+        .then((response) => {
           if (response.status === 200) {
             // NETWORK
             // Stash a copy of this page in the pages cache
@@ -141,7 +141,7 @@ self.addEventListener('fetch', event => {
           // CACHE or FALLBACK
           return caches
             .match(request)
-            .then(response => response || caches.match('/offline'));
+            .then((response) => response || caches.match('/offline'));
         })
     );
     return;
@@ -157,17 +157,19 @@ function assetRequest(request) {
 
   const isText = request.headers.get('Accept').startsWith('text');
 
-  return caches.match(url).then(response => {
+  return caches.match(url).then((response) => {
     // CACHE
     return (
       response ||
       fetch(isText ? `${url}?${version}` : request)
-        .then(response => {
+        .then((response) => {
           // NETWORK
           // If the request is for an image, stash a copy of this image in the images cache
           const ct = response.headers.get('content-type');
 
-          const type = ['image', 'css', 'javascript'].find(_ => ct.includes(_));
+          const type = ['image', 'css', 'javascript'].find((_) =>
+            ct.includes(_)
+          );
 
           if (type) {
             stashInCache(cacheByType[type], url, response.clone());

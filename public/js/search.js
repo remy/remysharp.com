@@ -36,7 +36,7 @@
     find(encodeURIComponent(val), val);
   }
 
-  $('#primary-search').onsubmit = function(event) {
+  $('#primary-search').onsubmit = function (event) {
     event.preventDefault();
     search();
   };
@@ -44,10 +44,7 @@
   $for.oninput = search;
 
   if (window.location.search) {
-    var q = window.location.search
-      .substr(1)
-      .split('=')
-      .pop();
+    var q = window.location.search.substr(1).split('=').pop();
     if (window.location.search.indexOf('?s=') === 0) {
       // browser search, replace pluses
       $for.value = clean(q.replace(/\+/g, ' '));
@@ -78,7 +75,7 @@
     query = query.split(/\s+/);
 
     const res = window.searchData
-      .map(post => {
+      .map((post) => {
         if (query[0] === '') {
           return post;
         }
@@ -87,19 +84,15 @@
         if (!titleOnly) {
           const matches = post.text.match(re) || [];
 
-          matches.forEach(m => (count += m.length < 5 ? 1 : m.length));
+          matches.forEach((m) => (count += m.length < 5 ? 1 : m.length));
 
-          const urlMatches =
-            post.url
-              .split('/')
-              .pop()
-              .match(re) || [];
+          const urlMatches = post.url.split('/').pop().match(re) || [];
 
-          urlMatches.forEach(m => (count += 100 * m.length));
+          urlMatches.forEach((m) => (count += 100 * m.length));
 
           const titleMatches = post.title.toLowerCase().match(re) || [];
 
-          titleMatches.forEach(m => (count += 100 * m.length));
+          titleMatches.forEach((m) => (count += 100 * m.length));
         } else {
           const titleMatches = post.title
             .toLowerCase()
@@ -134,14 +127,14 @@
         return a.count < b.count ? 1 : -1;
       })
       .slice(0, 20)
-      .map(res => {
+      .map((res) => {
         const d = new Date(res.date);
         res.niceDate = `${d.getDate()}-${
           months[d.getMonth()]
         } ${d.getFullYear()}`;
         return res;
       })
-      .map(res => interpolate(template, res))
+      .map((res) => interpolate(template, res))
       .join('');
     $results.innerHTML = html;
   }
@@ -152,11 +145,11 @@
       values = {};
     }
 
-    return (string || '').replace(/({{.*?}})/g, function(all, match) {
+    return (string || '').replace(/({{.*?}})/g, function (all, match) {
       var key = match.slice(2, -2); // ditch the wrappers
       var parts = key.split('|').map(trim);
       // exit function with interpolate string through functions
-      return parts.reduce(function(prev, curr) {
+      return parts.reduce(function (prev, curr) {
         var value = pluck(curr, values);
         if (value) {
           prev = value;
@@ -170,7 +163,7 @@
 
   function pluck(path, values) {
     path = path.split('.');
-    return path.reduce(function(prev, curr) {
+    return path.reduce(function (prev, curr) {
       if (prev && prev[curr]) {
         return prev[curr];
       }
