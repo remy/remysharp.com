@@ -20,7 +20,7 @@ Particularly in the current global pandemic crisis, and being stuck at home, I n
 
 I recently posted about how I took [Simon Willison's TIL](https://simonwillison.net/2020/Apr/20/self-rewriting-readme/) and made [it work for me](https://remysharp.com/2020/05/02/setting-up-simons-til). Although I'm sure github will be around for another decade, I've decided that the primary hosting will be my own web site and not github (though all my pages are backed by github, [including this one](https://github.com/remy/remysharp.com/blob/master/public/blog/consolidating-content.md)).
 
-The Things I Learn will either be around web technology, JavaScript (on the server), the command line or event my ZX Spectrum Next tinkering (yes, I've been going super old skool).
+The Things I Learn will either be around web technology, JavaScript (on the server), the command line or even my ZX Spectrum Next tinkering (yes, I've been going super old skool).
 
 The devlog is for my own sanity and probably the closest I'll get to week notes. I've been tinkering with an Oh Mummy clone for my Spectrum in NextBASIC, and although it's been more than a month I've been tinkering, I've decided to start a dev log for my own thoughts and diary-like note taking.
 
