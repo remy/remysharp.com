@@ -4,7 +4,7 @@ Not a huge TIL, but something I don't want to forget - the `FOR %i=a TO b` is **
 
 So:
 
-```
+```nextbasic
 10 FOR %I=0 TO 4
 20     PRINT %I
 30 NEXT %I
