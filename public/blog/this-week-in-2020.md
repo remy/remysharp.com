@@ -31,7 +31,7 @@ A quick look around and this is where we're at:
 
 I've seen a few posts of "what a week", but this isn't just one week. "This week" is the culmination of decades and decades and centuries of persecution. Persecution towards anyone who didn't look, let's be honest, like a white man.
 
-I wouldn't ever call myself racist, but I know, when I examine closely that I've been racist. I wouldn't call myself sexists, but, again, I know I have been. I have been because it never occurred to me, because I've never been in that situation. That in itself is mind bogglingly fucked up. I get a free pass in life by total fluke.
+I wouldn't ever call myself racist, but I know, when I examine closely that I've been racist. I wouldn't call myself sexist, but, again, I know I have been. I have been because it never occurred to me, because I've never been in that situation. That in itself is mind bogglingly fucked up. I get a free pass in life by total fluke.
 
 I'm a white guy, born in britain, middle-class enough, working in tech, with privilege left right and centre. _I am_ the problem, **it's on us** (not the pandemic, but frankly it seems like the pandemic is just the planet's way of telling us something's a little more than fucked).
 
