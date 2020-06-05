@@ -1,8 +1,8 @@
 ---
-title: "This week in 2020"
+title: 'This week in 2020'
 tags:
-- personal
-date: "2020-06-05 16:11:00"
+  - personal
+date: '2020-06-05 15:00:00'
 comments: false
 ---
 
