@@ -4,6 +4,23 @@
   h1.title #{ title || year } archive
   - index = 0;
   - post = posts[index]
+  div#filter-posts.needs-js.filter-group.misc-content
+    span Filter posts:
+    div.blog
+      input#filter-blog-posts(checked name="blog" type="checkbox")
+      label(for="filter-blog-posts") Blog posts
+    div.links
+      input#filter-links(checked name="link" type="checkbox")
+      label(for="filter-links") Links
+    div.devlog
+      input#filter-devlog(checked name="devlog" type="checkbox")
+      label(for="filter-devlog") Devlogs
+    div.til
+      input#filter-til(checked name="til" type="checkbox")
+      label(for="filter-til") TIL
+    div.newsletters
+      input#filter-news(checked name="newsletter" type="checkbox")
+      label(for="filter-news") News
   while post
     if post.data.date
       if !year || moment(post.data.date).format('YYYY') == year
@@ -17,8 +34,8 @@
           ul
             while post && month == moment(post.data.date).format('MMMM') && (!year || moment(post.data.date).format('YYYY') == year)
               if post && post.data.date
-                li
-                  a(data-type=`${post.data.type}` href=`${ post.url }`)= post.data.title
+                li(data-type=`${post.data.type}`)
+                  a(href=`${ post.url }`)= post.data.title
                   time.date #{ moment(post.data.date).format('D-MMM YYYY')}
               - post = posts[index += 1];
       else

@@ -3,6 +3,10 @@
 const $$ = (s, context = document) => Array.from(context.querySelectorAll(s));
 const $ = (s, context = document) => context.querySelector(s) || {};
 
+try {
+  $$('.needs-js').forEach((_) => _.classList.remove('needs-js'));
+} catch (e) {}
+
 // detect native/existing fragmention support
 function fragmention() {
   // set stashed element
@@ -117,10 +121,7 @@ function fragmention() {
     if (element) {
       element.removeAttribute('fragmention');
     }
-    const selection = document
-      .getSelection()
-      .toString()
-      .trim();
+    const selection = document.getSelection().toString().trim();
 
     if (selection.indexOf(' ') !== -1) {
       let url = location.toString();
@@ -138,11 +139,11 @@ function fragmention() {
 
 function observerImages() {
   if (typeof IntersectionObserver !== 'undefined') {
-    var observer = new IntersectionObserver(function(changes) {
+    var observer = new IntersectionObserver(function (changes) {
       if ('connection' in navigator && navigator.connection.saveData === true) {
         return;
       }
-      changes.forEach(function(change) {
+      changes.forEach(function (change) {
         if (change.isIntersecting) {
           change.target.setAttribute(
             'src',
@@ -153,7 +154,7 @@ function observerImages() {
       });
     });
 
-    document.querySelectorAll('img[data-src]').forEach(function(img) {
+    document.querySelectorAll('img[data-src]').forEach(function (img) {
       observer.observe(img);
     });
   }
@@ -162,20 +163,22 @@ function observerImages() {
 observerImages();
 
 const prompt = '<span class="bash-prompt">$ </span>';
-$$('code.language-bash, code.language-sh, code.language-shell').forEach(el => {
-  if (el.getAttribute('data-plain') !== null) return;
+$$('code.language-bash, code.language-sh, code.language-shell').forEach(
+  (el) => {
+    if (el.getAttribute('data-plain') !== null) return;
 
-  // add to all bash code examples
-  if (!el.innerHTML.startsWith('$ ')) {
-    el.innerHTML = prompt + el.innerHTML;
-    return;
+    // add to all bash code examples
+    if (!el.innerHTML.startsWith('$ ')) {
+      el.innerHTML = prompt + el.innerHTML;
+      return;
+    }
+
+    el.innerHTML = el.innerHTML
+      .split('\n') // break into individual lines
+      .map((line) => line.replace(/^\$ /, prompt))
+      .join('\n'); // join the lines back up
   }
-
-  el.innerHTML = el.innerHTML
-    .split('\n') // break into individual lines
-    .map(line => line.replace(/^\$ /, prompt))
-    .join('\n'); // join the lines back up
-});
+);
 
 function flickrURL(photo) {
   return (
@@ -196,17 +199,17 @@ function loadFlickr() {
   script.src =
     'https://api.flickr.com/services/rest/?method=flickr.people.getPhotos&api_key=ac349179dc54279b846089f60586c263&user_id=38257258%40N00&per_page=12&format=json&jsoncallback=flickrCallback';
 
-  window.flickrCallback = function(data) {
+  window.flickrCallback = function (data) {
     var photos = data.photos.photo;
     var total = 9;
 
     var $ul = $('ul.flickr');
 
-    photos.forEach(function(photo) {
+    photos.forEach(function (photo) {
       var img = new Image();
       img.src = flickrURL(photo);
       img.setAttribute('alt', 'Photo of ' + photo.title);
-      img.onload = function() {
+      img.onload = function () {
         if (total === 0) {
           return;
         }
@@ -230,7 +233,7 @@ function loadFlickr() {
 
 var searchOpen = false;
 var searchForm = $('#inline-search');
-$('#search').onclick = function(e) {
+$('#search').onclick = function (e) {
   e.preventDefault();
   searchOpen = false;
   searchForm.classList.toggle('show');
@@ -242,7 +245,7 @@ $('#search').onclick = function(e) {
   }
 };
 
-$('body').onkeydown = function(event) {
+$('body').onkeydown = function (event) {
   if (event.which === 80 && event.altKey) {
     localStorage.plain = localStorage.plain == 1 ? 0 : 1;
     if (localStorage.plain == 1) {
@@ -262,6 +265,36 @@ $('body').onkeydown = function(event) {
     $('#search').click();
   }
 };
+
+function addFiltering() {
+  const filter = $('#filter-posts');
+
+  if (!filter) return;
+
+  filter.addEventListener('change', (e) => {
+    const hidden = !e.target.checked;
+    const name = e.target.name;
+    $$(`.post-content li[data-type^="${name}"]`).forEach(
+      (_) => (_.hidden = hidden)
+    );
+    localStorage.setItem('archive.' + name, hidden ? '0' : '1');
+  });
+
+  // if cookies locked down, this will throw
+  try {
+    $$('input', filter).forEach((input) => {
+      const name = input.name;
+      if (localStorage.getItem('archive.' + name) === '0') {
+        input.checked = false;
+        $$(`.post-content li[data-type^="${name}"]`).forEach(
+          (_) => (_.hidden = true)
+        );
+      }
+    });
+  } catch (e) {}
+}
+
+addFiltering();
 
 // if we're on the homepage, then load flickr images
 if ($$('#index-page').length) {
@@ -291,7 +324,7 @@ const fitVidSelector = [
   'embed',
 ].join(',');
 
-$$(fitVidSelector).forEach(el => {
+$$(fitVidSelector).forEach((el) => {
   var wrapper = document.createElement('div');
   wrapper.classList.add('video');
 
@@ -380,7 +413,7 @@ async function listPages() {
       .sort((a, b) => {
         return a.published.toJSON() < b.published.toJSON() ? 1 : -1;
       })
-      .map(res => {
+      .map((res) => {
         let html = `<li><a href="${res.url}">${
           res.title
         }</a> <small class="date">${formatDate(
@@ -422,7 +455,7 @@ async function listPages() {
 //   });
 // });
 
-navigator.serviceWorker.onmessage = function(event) {
+navigator.serviceWorker.onmessage = function (event) {
   var message = JSON.parse(event.data);
   if (message.type === 'offline') {
     if (message.value === false) {
@@ -431,7 +464,8 @@ navigator.serviceWorker.onmessage = function(event) {
   }
 };
 
-fragmention();
+// this isn't working properly
+// fragmention();
 
 // expose the artwork!
 if (location.hostname !== 'localhost')
@@ -441,7 +475,7 @@ if (location.hostname !== 'localhost')
   );
 
 if (whenReady.length) {
-  whenReady.forEach(fn => fn());
+  whenReady.forEach((fn) => fn());
 }
 
 whenReady = {
