@@ -269,7 +269,7 @@ $('body').onkeydown = function (event) {
 function addFiltering() {
   const filter = $('#filter-posts');
 
-  if (!filter) return;
+  if (!filter.nodeName) return;
 
   filter.addEventListener('change', (e) => {
     const hidden = !e.target.checked;
