@@ -1,9 +1,5 @@
 - posts = collections.devlog.filter(post => post.data.projectSlug === project)
-.post
-  h1.title Devlog for "#{ posts[0].data.project }"
-  .post-content
-    ul
-      for post in posts
-        li
-          a(href=`${ post.url }`) #{ post.data.title }
-          small.date &nbsp; #{ moment(post.data.date).format('D-MMM YYYY')}
+ul
+  for post in posts
+    li
+      a(href=`${ post.url }`) #{ moment(post.data.date).format('D-MMM YYYY')}
