@@ -6,6 +6,7 @@ tags:
   - web
 modified: '2014-09-29 20:01:46'
 ---
+
 # WordPress to Ghost to Harp: part 2
 
 I wrote about moving away from WordPress to Ghost and then to Harp in [part 1](/2014/09/18/wordpress-ghost-harp-pt1), this post details some of the specifics of my blog's implementation.
@@ -16,18 +17,18 @@ I wrote about moving away from WordPress to Ghost and then to Harp in [part 1](/
 
 I'm using [Harp](http://harpjs.com) which is incredibly easy to get running with, but I'm also running Harp as a dependency inside my own custom node web server which allows me to add a few bells a whistles to my implementation.
 
-* [Custom URL rewriting](#custom-url-rewriting)
-* [Static caching](#static-caching)
-* [Use of special helpers inside Harp, such as moment.js](#use-of-special-helpers-inside-harp)
-* [List of recently modified posts](#list-of-recently-modified-posts)
-* [Archive & tag pages without the repetition of files](#archive--tag-pages-without-the-repetition-of-files)
-* [Makefile based release process](#makefile-based-release-process)
+- [Custom URL rewriting](#custom-url-rewriting)
+- [Static caching](#static-caching)
+- [Use of special helpers inside Harp, such as moment.js](#use-of-special-helpers-inside-harp)
+- [List of recently modified posts](#list-of-recently-modified-posts)
+- [Archive & tag pages without the repetition of files](#archive--tag-pages-without-the-repetition-of-files)
+- [Makefile based release process](#makefile-based-release-process)
 
 ## Custom URL rewriting
 
 Since I was porting an existing blog, I wanted to ensure that the URLs didn't change. This meant supported my old `/year/month/day/title` format. Which over the years I dislike, but when I moved to Harp, I decided to drop the date from the body of my posts and allow the URL to speak for that metadata.
 
-I *also* wanted to host my old downloads and demos on Amazon S3, but the URLs from old posts would be relative to my blog, so I needed to rewrite these.
+I _also_ wanted to host my old downloads and demos on Amazon S3, but the URLs from old posts would be relative to my blog, so I needed to rewrite these.
 
 I forked [router@npm](https://www.npmjs.org/package/router) to create [router-stupid@npm](https://www.npmjs.org/package/router-stupid) - which is essentially the same, slightly cut down, but importantly: if you modify the `req.url` in a route handler, that would affect the subsequent matched routes.
 
@@ -36,7 +37,9 @@ Redirecting is simple:
 ```js
 /* redirect to s3 hosted urls */
 route.all('/demo/{filename}', function (req, res, next) {
-  res.writeHead(302, { 'location': 'http://download.remysharp.com/' + req.params.filename });
+  res.writeHead(302, {
+    location: 'http://download.remysharp.com/' + req.params.filename,
+  });
   res.end();
 });
 ```
@@ -49,48 +52,51 @@ Supporting my date base URL format was trickier. The actual file lives in `/blog
 
 ```js
 /* main url handler: /{year}/{month}/{day}/{post} */
-route.all(/^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/, function (req, res, next) {
-  var params = req.params;
+route.all(
+  /^\/([0-9]{4})\/([0-9]{1,2})\/([0-9]{1,2})\/([a-z0-9\-].*?)(\/)?$/,
+  function (req, res, next) {
+    var params = req.params;
 
-  // the title slug of the url
-  var post = blogs[params[4]];
+    // the title slug of the url
+    var post = blogs[params[4]];
 
-  // make sure we have a real post before even proceeding
-  if (post && post.date) {
-    // test if the date matches
+    // make sure we have a real post before even proceeding
+    if (post && post.date) {
+      // test if the date matches
 
-    // post.date is a timestamp, so splitting gets us the date
-    var date = moment(post.date.split(' ')[0]);
+      // post.date is a timestamp, so splitting gets us the date
+      var date = moment(post.date.split(' ')[0]);
 
-    var requestDate = params.slice(1, 4).join('-');
+      var requestDate = params.slice(1, 4).join('-');
 
-    // compare the date of post _in the same format_ as requestDate
-    if (date.format('YYYY-MM-DD') !== requestDate) {
-      // if it's not good, move on - will likely result in a 404
-      return next();
+      // compare the date of post _in the same format_ as requestDate
+      if (date.format('YYYY-MM-DD') !== requestDate) {
+        // if it's not good, move on - will likely result in a 404
+        return next();
+      }
+
+      // if there's a trailing slash, remove it and redirect
+      if (params[5] === '/') {
+        res.writeHead(302, { location: req.url.replace(/(.)\/$/, '$1') });
+        res.end();
+        return;
+      }
+
+      // this now allows Harp to pick up the correct post
+      req.url = '/blog/' + params[4];
     }
 
-    // if there's a trailing slash, remove it and redirect
-    if (params[5] === '/') {
-      res.writeHead(302, { 'location': req.url.replace(/(.)\/$/, '$1')});
-      res.end();
-      return;
-    }
-
-    // this now allows Harp to pick up the correct post
-    req.url = '/blog/' + params[4];
+    // then let the rest of the router do it's work
+    next();
   }
-
-  // then let the rest of the router do it's work
-  next();
-});
+);
 ```
 
 ## Static caching
 
 Having used Harp in previous projects ([JS Bin's documentation](https://github.com/jsbin/learn), [our event site](https://github.com/leftlogic/fullfrontalconf2014/) and [my business site](https://github.com/leftlogic/leftlogic)) and have created [harp-static@npm](https://npmjs.org/package/harp-static) which uses [st@npm](https://npmjs.org/package/st) to cache and serve static files.
 
-So in my custom server, I point all routes down to the `st` served content. I also support hitting the URLs *without* `.html` at the end, again, to keep my old URLs working. I'd recommend checking out the [harp-static source](https://github.com/remy/harp-static) if this interests you.
+So in my custom server, I point all routes down to the `st` served content. I also support hitting the URLs _without_ `.html` at the end, again, to keep my old URLs working. I'd recommend checking out the [harp-static source](https://github.com/remy/harp-static) if this interests you.
 
 ## Use of special helpers inside Harp
 
@@ -105,7 +111,7 @@ Then include the library in a common file, like the layout, and you have the hel
 
 Except this would break during compilation to static files. I'm certain it's to do with my custom serving process, but the path would somehow be wrong (so the library wouldn't load and further down my code there would be exceptions in Jade about the library not existing).
 
-The *smart* way around this is to expose a global from *outside of Harp*. So in my `server.js` (that does all the routing, etc) I `require` in moment.js and then I [expose it globally](https://github.com/remy/remysharp.com/blob/master/server.js#L26):
+The _smart_ way around this is to expose a global from _outside of Harp_. So in my `server.js` (that does all the routing, etc) I `require` in moment.js and then I [expose it globally](https://github.com/remy/remysharp.com/blob/main/server.js#L26):
 
 ```js
 // this line, although dirty, ensures that Harp templates
@@ -119,14 +125,14 @@ Very simple, but now any Harp rendered file has access to moment.js. I use the s
 
 ## List of recently modified posts
 
-The best way to get a list of all the post from *outside* of Harp (i.e. when you're requiring Harp as a dependency), is to simply load the `_data.json` file. It felt wrong initially, but it's perfect:
+The best way to get a list of all the post from _outside_ of Harp (i.e. when you're requiring Harp as a dependency), is to simply load the `_data.json` file. It felt wrong initially, but it's perfect:
 
 ```js
 var blogs = require('./public/blog/_data.json');
 var slugs = Object.keys(blogs);
 ```
 
-Now I have an object lookup by slug to the actual blog posts *and* I have an array of the slugs.
+Now I have an object lookup by slug to the actual blog posts _and_ I have an array of the slugs.
 
 From this, I was able to `fs.stat` all the blog posts and sort to return the 3 most recently modified and then using the previous trick, expose it globally so it's included on my homepage (where `recent` is the global exposed in `server.js`):
 
@@ -143,7 +149,7 @@ There's two parts to this section. Firstly there's the support for individual ye
 
 ### Reducing duplication of code
 
-I *could* have a directory for each year there are blog posts (which I do have now) and each could contain the archive listing code. The problem (obviously) is duplication of code. You fix it one place, and (in my case, since I have 2006-2014) you have 8 files to update.
+I _could_ have a directory for each year there are blog posts (which I do have now) and each could contain the archive listing code. The problem (obviously) is duplication of code. You fix it one place, and (in my case, since I have 2006-2014) you have 8 files to update.
 
 Instead, a single file `index.jade` sits in tagged folder (and similarly with year folders) which contains:
 
@@ -176,13 +182,13 @@ Simple. Now if I want to add more support for tags, I just create a directory an
 
 A while loop that looks for a year change in the date, then works through each year, popping from the posts array looping through each post in the month.
 
-It's pretty cool (I think) because it works for entire years *and* all years: [archive.jade](https://github.com/remy/remysharp.com/blob/a198a4235634a3c7ac747ab403ac13bc49140a39/public/_partials/archive.jade)
+It's pretty cool (I think) because it works for entire years _and_ all years: [archive.jade](https://github.com/remy/remysharp.com/blob/a198a4235634a3c7ac747ab403ac13bc49140a39/public/_partials/archive.jade)
 
 ## Makefile based release process
 
-Disclaimer: this is a terrible use of a Makefile, it doesn't leverage *any* of the benefits of make, and honestly, it *could* be a bash script. However, I like that I can run `make publish`.
+Disclaimer: this is a terrible use of a Makefile, it doesn't leverage _any_ of the benefits of make, and honestly, it _could_ be a bash script. However, I like that I can run `make publish`.
 
-Taking a lead from [Makefile recipes for Node.js packages](https://andreypopp.com/posts/2013-05-16-makefile-recipes-for-node-js.html), my [makefile](https://github.com/remy/remysharp.com/blob/master/Makefile) allows me to run commands like:
+Taking a lead from [Makefile recipes for Node.js packages](https://andreypopp.com/posts/2013-05-16-makefile-recipes-for-node-js.html), my [makefile](https://github.com/remy/remysharp.com/blob/main/Makefile) allows me to run commands like:
 
 ```bash
 $ make release-minor publish

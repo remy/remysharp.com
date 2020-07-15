@@ -6,6 +6,7 @@ tags:
   - web
 modified: '2014-09-18 08:14:34'
 ---
+
 # WordPress to Ghost to Harp: part 1
 
 I've been running my "b:log" on WordPress since late [2006](/2006), but today I give you the node backed blog.
@@ -68,7 +69,7 @@ Harp is a static site generator. I've used it in the past for [our conference si
 
 However, harp requires static markdown files, so I went about connecting to the Ghost database via sqlite3 and exporting each of these records out as a static HTML file, whilst building up the `_data.json` file required by harp to represent the metadata.
 
-The code I used to convert is on github here: [remy/ghost-harp](https://github.com/remy/ghost-harp). *Disclaimer*: I wrote this for my own database and requirements, so this may not work for you out of the box.
+The code I used to convert is on github here: [remy/ghost-harp](https://github.com/remy/ghost-harp). _Disclaimer_: I wrote this for my own database and requirements, so this may not work for you out of the box.
 
 The conversion process is pretty simple, read the sqlite database, write to files. So I ended up with a folder structure like this:
 
@@ -95,7 +96,7 @@ The conversion process is pretty simple, read the sqlite database, write to file
 
 Some contents are going to be in HTML, but Ghost seemed to put my HTML posts in the markdown column (and since it's valid, it doesn't really matter).
 
-One significant tweak I made was to put the post title *into* the post itself. For example, if you look at the source [about](https://github.com/remy/remysharp.com/blob/master/public/about.md) page, you'll see the title in the markdown. Ghost separates out the title and the body when you're editing, but I wanted a single markdown file.
+One significant tweak I made was to put the post title _into_ the post itself. For example, if you look at the source [about](https://github.com/remy/remysharp.com/blob/main/public/about.md) page, you'll see the title in the markdown. Ghost separates out the title and the body when you're editing, but I wanted a single markdown file.
 
 The next task was to fire up harp and have it running from my newly generated `public` directory.
 
@@ -105,16 +106,16 @@ Now that all my content is in the `public/blog` directory (via my little rewrite
 
 My specific requirements for using harp were:
 
-- Serves *static* content (so I'd have to compile to static .html)
-- Serves in production *without* the `.html` extension visible
+- Serves _static_ content (so I'd have to compile to static .html)
+- Serves in production _without_ the `.html` extension visible
 - Support rewriting of URLs, so that I could maintain my original URL structure of `/<year>/<month>/<day>/<post>` rather than pointing to `/blog/<post>`
-- I *really* wanted an archive, since I was simplifying a lot of my blog design, and losing a *lot* of navigation
+- I _really_ wanted an archive, since I was simplifying a lot of my blog design, and losing a _lot_ of navigation
 
 In the end, I had to create my own custom `server.js` that would run a bespoke router (I did use an existing library, but I needed changes, so I forked my own copy).
 
 Harp certainly made things harder than using Ghost, but I had the flexability I needed.
 
-I'm particularly proud of the [archive](/archive) page, partly because I managed to write it entirely with Jade (which over the years I'm slowly starting to warm to) and partly because I now have a page that lists *all* my posts since the first in 2006!
+I'm particularly proud of the [archive](/archive) page, partly because I managed to write it entirely with Jade (which over the years I'm slowly starting to warm to) and partly because I now have a page that lists _all_ my posts since the first in 2006!
 
 The version I'm running today satisfies all the goals I outlined at the start of the project, and more.
 
@@ -124,7 +125,7 @@ A few bonus features I built are:
 - All the old demos and uploads from my WordPress site are hosted on Amazon S3 and redirected to via my `server.js`
 - My development environment is slightly different to production, such as drafts are visible and the disqus comments are removed
 
-The *one* thing I'd like harp to be better at would be knowing what to regenerate. Due to this my release process involves rebuilding the entire blog site (~300 posts) and then pushing the changes to github and then heroku (where I'm now hosting my blog) - though this is effectively an rsync, so it's not everything that goes up.
+The _one_ thing I'd like harp to be better at would be knowing what to regenerate. Due to this my release process involves rebuilding the entire blog site (~300 posts) and then pushing the changes to github and then heroku (where I'm now hosting my blog) - though this is effectively an rsync, so it's not everything that goes up.
 
 ## The final product
 

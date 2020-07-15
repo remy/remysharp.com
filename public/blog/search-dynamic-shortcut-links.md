@@ -30,9 +30,7 @@ route.get('/:slug', (req, res, next) => {
   // find will return the *first* match, which is the
   // latest post. If there's no match, then do a normal
   // request (which might lead to a 404)
-  var slug = slugs.find(
-    slug => slug.includes(req.params.slug)
-  );
+  var slug = slugs.find((slug) => slug.includes(req.params.slug));
 
   if (slug) {
     // blogs is a global object with all the post data
@@ -72,14 +70,21 @@ My HTML looks like this - I don't think it warrants explaining except the `scrip
 
 ```html
 <form id="search" action="https://www.google.co.uk/search">
-  <label>Search for:
-    <input id="for" autofocus="autofocus" name="q" placeholder="fragment of post..." type="text"/>
-    <input type="hidden" name="q" id="q" value="site:https://remysharp.com"/>
+  <label
+    >Search for:
+    <input
+      id="for"
+      autofocus="autofocus"
+      name="q"
+      placeholder="fragment of post..."
+      type="text"
+    />
+    <input type="hidden" name="q" id="q" value="site:https://remysharp.com" />
   </label>
 </form>
 
 <ul id="search-results">
-<!-- placeholder for results -->
+  <!-- placeholder for results -->
 </ul>
 
 <script id="result-template" type="template">
@@ -111,7 +116,13 @@ permalink: /js/search-data.js
 The result is a file in `/js/search-data.js` containing:
 
 ```js
-var searchData = [{"url":"/2019/04/24/all-your-envs-in-a-row","text":"all your envs row ve used zeit s now platform ll know get environment values readable by code have jump few hoops there are solutions place can put m able keep where d expect them caveats this technique works most common cases ll proba…" /* snipped */ }]
+var searchData = [
+  {
+    url: '/2019/04/24/all-your-envs-in-a-row',
+    text:
+      'all your envs row ve used zeit s now platform ll know get environment values readable by code have jump few hoops there are solutions place can put m able keep where d expect them caveats this technique works most common cases ll proba…' /* snipped */,
+  },
+];
 ```
 
 Remember this isn't 11ty - even though there's a `collections` object. What's important to know is that `collections.blog` is an array of blog posts I've written with the front matter data in `.data` and the `output`, in my case, is the rendered post (rather than the source, which I'll explain in a moment).
@@ -146,13 +157,14 @@ module.exports = function squash(text = '') {
   const string = [...new Set(plain.split(/\s+/))].join(' ');
 
   // remove short and less meaningful words
-  let result = string.replace(
-    /\b(the|a|an|and|am|you|I|to|if|of|off|me|this|that|with|have|from|like|when|just|your|some|also|know|there|because|actually|recently|something)\b/gi,
-    ''
-  )
-  .replace(/[^\w\s]/gm, ' ') // fail safe: remove non-chars & non-white space
-  .replace(/\b\w{1,2}\b/gm, '') // remove any "words" of 1 or 2 characters
-  .replace(/\s{2,}/gm, ' ') // compress whitespace to a single space
+  let result = string
+    .replace(
+      /\b(the|a|an|and|am|you|I|to|if|of|off|me|this|that|with|have|from|like|when|just|your|some|also|know|there|because|actually|recently|something)\b/gi,
+      ''
+    )
+    .replace(/[^\w\s]/gm, ' ') // fail safe: remove non-chars & non-white space
+    .replace(/\b\w{1,2}\b/gm, '') // remove any "words" of 1 or 2 characters
+    .replace(/\s{2,}/gm, ' '); // compress whitespace to a single space
 
   // trim for good measure!
   return result.trim();
@@ -163,7 +175,7 @@ My code above has some duplication inside of it (in the regular expressions), bu
 
 ---
 
-**Performance tip:** if you generate your own search data file, take a bit of time to find low value words that you use a lot and remove them from the results. Do not just copy my example above as it's just a sample of [what I remove](https://github.com/remy/remysharp.com/blob/master/lib/squash.js).
+**Performance tip:** if you generate your own search data file, take a bit of time to find low value words that you use a lot and remove them from the results. Do not just copy my example above as it's just a sample of [what I remove](https://github.com/remy/remysharp.com/blob/main/lib/squash.js).
 
 I've [written a jq query](https://jqterm.com/8050a199a4f696ec61f2018c924f3961?query=map%28.text%20%7C%20split%28%22%20%22%29%29%20%7C%20flatten%20%23%20convert%20into%20an%20array%20of%20words%0A%7C%20map%28select%28length%20%3C%204%29%29%20%23%20pick%20only%20words%20of%20a%20specific%20length%0A%7C%20reduce%20.%5B%5D%20as%20%24item%20%28%7B%7D%3B%20.%5B%24item%5D%20%2B%3D%201%29%20%23%20count%20unique%20words%0A%7C%20to_entries%20%7C%20map%28select%28.value%20%3E%202%29%29%20%23%20pick%20results%20with%20more%20than%202%20duplicates%0A%7C%20sort_by%28.value%29%20%7C%20reverse%20%7C%20from_entries) that you can use to get a good idea of word frequency. Swap out my example source JSON with your own and tweak the numbers (in the word length) to get a sense of which words you can remove. Using this method allowed me to reduce my data file by 70KB.
 
@@ -179,13 +191,13 @@ As the visitor searches, my code checks their query against the following criter
 - Title - 100 hit points per match
 - Body text - 1 point for words less than 5 chars, otherwise hit points = word length
 
-Finally, if there's *any* hit, the recency of the post adds points. 100 points divided by the number of years old the post is (where posts this year are "1 year"). I took some time tweaking this algorithm and this is what worked well for me.
+Finally, if there's _any_ hit, the recency of the post adds points. 100 points divided by the number of years old the post is (where posts this year are "1 year"). I took some time tweaking this algorithm and this is what worked well for me.
 
 Hidden in comments on my own search results page are comments with the hit count "weight" (which I exposed during testing) which gives you an idea how it works:
 
 ![](/images/search-hit-points.png)
 
-The hit points determine the order of the results. Rather than dumping a lot of JavaScript into this post, you can [view my search JavaScript here](https://github.com/remy/remysharp.com/blob/master/public/js/search.js) - specifically the `find` function is where all the hit point calc happens.
+The hit points determine the order of the results. Rather than dumping a lot of JavaScript into this post, you can [view my search JavaScript here](https://github.com/remy/remysharp.com/blob/main/public/js/search.js) - specifically the `find` function is where all the hit point calc happens.
 
 Once the candidates are collected, the results are interpolated into the template (the script tag with the `type="template"` from earlier). Again, this lives in my search JavaScript and of course you can/should use your own version of templating.
 

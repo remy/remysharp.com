@@ -18,7 +18,7 @@ So, if you've subscribed to [my blog via RSS](/feed.xml) you'll find there's sud
 
 Particularly in the current global pandemic crisis, and being stuck at home, I need somewhere to put my thoughts and the voice that bounce around (because it's keeping me up).
 
-I recently posted about how I took [Simon Willison's TIL](https://simonwillison.net/2020/Apr/20/self-rewriting-readme/) and made [it work for me](https://remysharp.com/2020/05/02/setting-up-simons-til). Although I'm sure github will be around for another decade, I've decided that the primary hosting will be my own web site and not github (though all my pages are backed by github, [including this one](https://github.com/remy/remysharp.com/blob/master/public/blog/consolidating-content.md)).
+I recently posted about how I took [Simon Willison's TIL](https://simonwillison.net/2020/Apr/20/self-rewriting-readme/) and made [it work for me](https://remysharp.com/2020/05/02/setting-up-simons-til). Although I'm sure github will be around for another decade, I've decided that the primary hosting will be my own web site and not github (though all my pages are backed by github, [including this one](https://github.com/remy/remysharp.com/blob/main/public/blog/consolidating-content.md)).
 
 The Things I Learn will either be around web technology, JavaScript (on the server), the command line or even my ZX Spectrum Next tinkering (yes, I've been going super old skool).
 

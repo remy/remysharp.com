@@ -62,11 +62,11 @@ block content
 
       if data.draft
         .misc-content
-          p.metadata Edited on <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under #{(tags || []).join(' & ')}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/master/public/blog/#{current.source}.md">Edit this post</a>
+          p.metadata Edited on <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under #{(tags || []).join(' & ')}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/public/blog/#{current.source}.md">Edit this post</a>
           p.update Drafts may be incomplete or entirely abandoned, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try <a href="http://github.com/remy/remysharp.com/issues/new">raising an issue</a>.
       else
         .misc-content
-          p.metadata Published <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under ##{(tags || []).join(' & #')}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/master/public/blog/#{current.source}.md">Edit this post</a>
+          p.metadata Published <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under ##{(tags || []).join(' & #')}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/public/blog/#{current.source}.md">Edit this post</a>
 
           //- if data.tags && data.tags.indexOf('personal') === -1
           //-   footer.work-with-me
