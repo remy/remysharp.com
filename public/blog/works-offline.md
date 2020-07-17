@@ -79,4 +79,4 @@ What I'd personally like to see as an outcome: some simple iconography that I ca
 
 Please, [please contribute](https://github.com/works-offline/logo/issues/1) if you can. There's already been some really wonderful work and this is a stage of trying anything and everything out.
 
-If, like me, your skills don't lie in design, then please help spread the word 🙏
+If, like me, [your skills don't lie in design](https://www.brucelawson.co.uk/2020/no-to-service-worker-yes-to-wank/), then please help spread the word 🙏
