@@ -10,5 +10,5 @@ Octal is knocking around in JavaScript, `0o40` (which is 32 - and no, I'm never 
 
 Via [Martin Kleppe](https://twitter.com/aemkei/status/1286030684658769920)
 
-_[MSB]: Most significant bit
-_[TIL]: Today I learnt
+*[MSB]: Most significant bit
+*[TIL]: Today I learnt
