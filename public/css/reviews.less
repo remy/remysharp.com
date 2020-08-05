@@ -36,28 +36,29 @@ table.reviews {
     tbody tr td:nth-child(3) {
       white-space: nowrap;
     }
+  }
+}
 
-    span.rating {
-      span {
-        display: none;
-      }
-
-      &[data-rating="5"]:before {
-        content: '★★★★★';
-      }
-      &[data-rating="4"]:before {
-        content: '★★★★☆';
-      }
-      &[data-rating="3"]:before {
-        content: '★★★☆☆';
-      }
-      &[data-rating="2"]:before {
-        content: '★★☆☆☆';
-      }
-      &[data-rating="1"]:before {
-        content: '★☆☆☆☆';
-      }
+@media only screen and (min-width: 500px) {
+  span.rating {
+    span {
+      display: none;
     }
 
+    &[data-rating='5']:before {
+      content: '★★★★★';
     }
+    &[data-rating='4']:before {
+      content: '★★★★☆';
+    }
+    &[data-rating='3']:before {
+      content: '★★★☆☆';
+    }
+    &[data-rating='2']:before {
+      content: '★★☆☆☆';
+    }
+    &[data-rating='1']:before {
+      content: '★☆☆☆☆';
+    }
+  }
 }

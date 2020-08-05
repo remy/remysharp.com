@@ -472,6 +472,10 @@ form.search label {
     content: '🤔 ';
   }
 
+  .book label:before {
+    content: '📖 ';
+  }
+
   .devlog label:before {
     content: '💻 ';
   }
@@ -1548,6 +1552,10 @@ img[title^='Sample'] {
     content: '🤔 ';
   }
 
+  a[href^='/book/'] ~ time:before {
+    content: '📖 ';
+  }
+
   a[href^='/devlog/'] ~ time:before {
     content: '💻 ';
   }
@@ -1955,4 +1963,33 @@ h2 > label {
 .post-content *.mby8.mby8 {
   margin-bottom: 8px;
   margin-top: 8px;
+}
+
+.h-review {
+  details[open] {
+    summary + p {
+      display: none;
+    }
+  }
+
+  .book-meta {
+    margin-top: 20px;
+    border-bottom: 1px solid var(--c-text-dark-bg);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+    strong {
+      // margin-right: 4px;
+      display: inline-block;
+      width: 130px;
+
+      &:after {
+        content: ': ';
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+  }
 }

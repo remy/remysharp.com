@@ -18,9 +18,9 @@
     div.til
       input#filter-til(checked name="til" type="checkbox")
       label(for="filter-til") TIL
-    div.newsletters
-      input#filter-news(checked name="newsletter" type="checkbox")
-      label(for="filter-news") News
+    div.books
+      input#filter-books(checked name="books" type="checkbox")
+      label(for="filter-books") Books
   while post
     if post.data.date
       if !year || moment(post.data.date).format('YYYY') == year

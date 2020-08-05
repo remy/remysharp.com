@@ -1,14 +1,15 @@
 # Feeds 📬
 
-This is my page of all the RSS consumable feeds of content I'm generating on the web<sup>*</sup>, for better or worse. Please help yourself and enjoy.
+This is my page of all the RSS consumable feeds of content I'm generating on the web<sup>\*</sup>, for better or worse. Please help yourself and enjoy.
 
 ## On my blog
 
-- [RSS feed of all my web site's content (blog posts, links, til)](/feed.xml)
+- [RSS feed of all my web site's content (blog posts, links, til, books)](/feed.xml)
 - [RSS feed of blog posts](/blog.xml)
 - [RSS feed of Thing I Learned](/til.xml)
 - [RSS feed of my project devlogs](/devlog.xml)
 - [RSS feed of curated links](/links.xml)
+- [RSS feed of my book reviews](/books.xml)
 
 ## Elsewhere
 
