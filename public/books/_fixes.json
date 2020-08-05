@@ -1,6 +1,7 @@
 {
   "mods": {
     "2238487055": {
+      "pages": 331,
       "read": "2018-01-02T00:00:00Z",
       "started": "2017-12-30T00:00:00Z"
     },
@@ -63,6 +64,182 @@
       "//": "Jessica Jones, Vol. 2: The Secrets of Maria Hill",
       "started": "2018-06-10",
       "read": "2018-06-10"
+    },
+
+    "3363143745": {
+      "//": "And Then There Were None",
+      "url": "https://www.goodreads.com/book/show/52255421-and-then-there-were-none",
+      "pages": 258
+    },
+    "3174436721": {
+      "//": "Close to Home (DI Adam Fawley, #1)",
+      "url": "https://www.goodreads.com/book/show/36318317-close-to-home",
+      "pages": 385
+    },
+    "3263211404": {
+      "//": "The Little Prince",
+      "url": "https://www.goodreads.com/book/show/40848571-the-little-prince",
+      "pages": 96
+    },
+    "3272631611": {
+      "//": "Speccy Nation",
+      "url": "https://www.goodreads.com/book/show/18933461-speccy-nation",
+      "pages": 124
+    },
+    "2242889849": {
+      "//": "The Princess Diarist",
+      "url": "https://www.goodreads.com/book/show/30976431-the-princess-diarist",
+      "pages": 273
+    },
+    "3100785426": {
+      "//": "In the Dark (DI Adam Fawley, #2)",
+      "url": "https://www.goodreads.com/book/show/37749843-in-the-dark",
+      "pages": 444
+    },
+    "2238569412": {
+      "//": "Flowers for Algernon",
+      "url": "https://www.goodreads.com/book/show/49771904-flowers-for-algernon",
+      "pages": 228
+    },
+    "3089246067": {
+      "//": "Skipping Christmas",
+      "url": "https://www.goodreads.com/book/show/11247517-skipping-christmas",
+      "pages": 242
+    },
+    "2129715709": {
+      "//": "My Name is Leon",
+      "url": "https://www.goodreads.com/book/show/29624348-my-name-is-leon",
+      "pages": 264
+    },
+    "2418134965": {
+      "//": "The Book of M",
+      "url": "https://www.goodreads.com/book/show/39899065-the-book-of-m",
+      "pages": 496
+    },
+    "2941924739": {
+      "//": "The Afterlife of Walter Augustus",
+      "url": "https://www.goodreads.com/book/show/43318793-the-afterlife-of-walter-augustus",
+      "pages": 328
+    },
+    "2702479594": {
+      "//": "Harry Potter and the Goblet of Fire",
+      "url": "https://www.goodreads.com/book/show/28754622-harry-potter-and-the-goblet-of-fire",
+      "pages": 734
+    },
+    "2835956081": {
+      "//": "The Three-Body Problem (Remembrance of Earth’s Past, #1)",
+      "url": "https://www.goodreads.com/book/show/24856109-the-three-body-problem",
+      "pages": 400
+    },
+    "2827564576": {
+      "//": "No Way Out (DI Adam Fawley, #3)",
+      "url": "https://www.goodreads.com/book/show/40182827-no-way-out",
+      "pages": 367
+    },
+    "2827564601": {
+      "//": "The Passengers",
+      "url": "https://www.goodreads.com/book/show/42833369-the-passengers",
+      "pages": 400
+    },
+    "2191746110": {
+      "//": "Lord of the Flies",
+      "url": "https://www.goodreads.com/book/show/18964701-lord-of-the-flies",
+      "pages": 227
+    },
+    "2701956037": {
+      "//": "Sleep: The Myth of 8 Hours, the Power of Naps... and the New Plan to Recharge Your Body and Mind",
+      "url": "https://www.goodreads.com/book/show/31566948-sleep",
+      "pages": 208
+    },
+    "2661485618": {
+      "//": "Clawthorn (Clement, #3)",
+      "url": "https://www.goodreads.com/book/show/43247628-clawthorn",
+      "pages": 505
+    },
+    "2610097066": {
+      "//": "A Brief History of Everyone who Ever Lived: The Stories in Our Genes",
+      "url": "https://www.goodreads.com/book/show/30191189-a-brief-history-of-everyone-who-ever-lived",
+      "pages": 432
+    },
+    "2526855449": {
+      "//": "Harry Potter and the Prisoner of Azkaban (Harry Potter #3)",
+      "url": "https://www.goodreads.com/book/show/28765183-harry-potter-and-the-prisoner-of-azkaban",
+      "pages": 453
+    },
+    "2629860378": {
+      "//": "Christmas Jars Collector's Edition",
+      "url": "https://www.goodreads.com/book/show/36336654-christmas-jars-collector-s-edition",
+      "pages": 240
+    },
+    "2442090609": {
+      "//": "Tin Man",
+      "url": "https://www.goodreads.com/book/show/34802303-tin-man",
+      "pages": 226
+    },
+    "2523022349": {
+      "//": "The Brighton Mermaid",
+      "url": "https://www.goodreads.com/book/show/38396769-the-brighton-mermaid",
+      "pages": 496
+    },
+    "2479985303": {
+      "//": "Dogs of War",
+      "url": "https://www.goodreads.com/book/show/35827220-dogs-of-war",
+      "pages": 262
+    },
+    "2442090329": {
+      "//": "Past Mortem",
+      "url": "https://www.goodreads.com/book/show/18242661-past-mortem",
+      "pages": 468
+    },
+    "2105277664": {
+      "//": "Neuromancer",
+      "url": "https://www.goodreads.com/book/show/29349974-neuromancer",
+      "pages": 292
+    },
+    "2129720851": {
+      "//": "The Obesity Code: unlocking the secrets of weight loss",
+      "url": "https://www.goodreads.com/book/show/29405348-the-obesity-code",
+      "pages": 296
+    },
+    "2442090467": {
+      "//": "The Dead Fathers Club",
+      "url": "https://www.goodreads.com/book/show/37702946-the-dead-fathers-club",
+      "pages": 348
+    },
+    "2242891250": {
+      "//": "Postcards From the Edge (Suzanne Vale, #1)",
+      "url": "https://www.goodreads.com/book/show/18742149-postcards-from-the-edge",
+      "pages": 240
+    },
+    "2322238476": {
+      "//": "Adrian Mole: The Prostrate Years (Adrian Mole, #8)",
+      "url": "https://www.goodreads.com/book/show/11202956-adrian-mole",
+      "pages": 480
+    },
+    "2280217221": {
+      "//": "Who Sent Clement? (Clement #1)",
+      "url": "https://www.goodreads.com/book/show/35607152-who-sent-clement",
+      "pages": 503
+    },
+    "2234253539": {
+      "//": "The Lives of Tao",
+      "url": "https://www.goodreads.com/book/show/18880394-the-lives-of-tao",
+      "pages": 464
+    },
+    "2234253516": {
+      "//": "Wishful Drinking",
+      "url": "https://www.goodreads.com/book/show/19242819-wishful-drinking",
+      "pages": 120
+    },
+    "2146914335": {
+      "//": "Beyond Broadhall (The '86 Fix #2)",
+      "url": "https://www.goodreads.com/book/show/34113830-beyond-broadhall",
+      "pages": 311
+    },
+    "1913923361": {
+      "//": "A Boy Made of Blocks",
+      "url": "https://www.goodreads.com/book/show/30326408-a-boy-made-of-blocks",
+      "pages": 387
     }
   },
   "reviews": []

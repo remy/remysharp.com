@@ -1,3 +1,7 @@
+---
+layout: public
+---
+
 .post
   h1.title Books
   div.post-content
@@ -42,7 +46,7 @@
               if review.review
                 p.review-link
                   span 📝
-                  a(href=`${review.url}`) My review
+                  a(href=`/books/${moment(review.read).format('YYYY')}/${slugify(review.book.title)}`) My review
                   if review.spoiler === "true"
                     span &nbsp;(includes spoilers)
                   if review.summary

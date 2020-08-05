@@ -1,0 +1,47 @@
+extends /_partials/layout
+
+block meta
+  link(rel="canonical" href=`https://remysharp.com${url}`)
+  meta(name="twitter:creator" content="@rem")
+  meta(name="twitter:title" content=`${title}`)
+  meta(name="twitter:site" content="@rem")
+  meta(name="twitter:domain" content="Remy's b:log")
+  meta(name="twitter:image:src" content=`https://remysharp.com/images/cards/${moment(date).modDOY(9)}.jpg`)
+  meta(name="twitter:card" content="summary")
+
+block content
+  - permalink = url;
+
+  main.content
+    article.post.h-review
+      h1.title.p-name
+        a(href=`${url}` title=`Permanent Link: ${title}`).u-url.u-uid= `Review: ${title}`
+
+      .misc-content.book-meta
+        p.p-author.h-card
+          strong Author
+          | #{author}
+        p
+          strong Published
+          | <time class="dt-published" datetime="#{moment(published).format('YYYY')}">#{published}</time>
+        p.p-rating
+          strong My rating
+          span.rating(data-rating=`${ rating }` aria-label=`${ rating } stars out of 5` title=`${ rating } stars out of 5`)
+            span #{rating} / 5
+
+      .post-content.e-content
+        if spoiler
+          p
+            strong This review includes spoilers, you've been forewarned.
+          details
+            summary #{summary}
+
+            != yield
+        else
+          != yield
+
+        p.read-more More on <a href="#{goodreads}">Goodreads</a>
+
+      if date
+        .misc-content
+          p.metadata Finished reading on <time datetime="#{ moment(read).format('YYYY-MM-DD HH:mm:ss') }">#{moment(read).format('D-MMM YYYY')}</time>, starting on <time datetime="#{ moment(start).format('YYYY-MM-DD HH:mm:ss') }">#{moment(start).format('D-MMM YYYY')}</time>. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/#{current.inputPath}">Edit this review</a>
