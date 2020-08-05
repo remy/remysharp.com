@@ -1,0 +1,430 @@
+[
+  {
+    "title": "And Then There Were None",
+    "year": "1939",
+    "author": "Agatha Christie"
+  },
+  {
+    "title": "The Bell Jar",
+    "year": "1963",
+    "author": "Sylvia Plath"
+  },
+  {
+    "title": "Network Effect (The Murderbot Diaries, #5)",
+    "year": "2020",
+    "author": "Martha Wells"
+  },
+  {
+    "title": "The Cuckoo's Calling (Cormoran Strike, #1)",
+    "year": "2013",
+    "author": "Robert Galbraith"
+  },
+  {
+    "title": "Close to Home (DI Adam Fawley, #1)",
+    "year": "2018",
+    "author": "Cara Hunter"
+  },
+  {
+    "title": "The Little Prince",
+    "year": "1943",
+    "author": "Antoine de Saint-Exupéry"
+  },
+  {
+    "title": "Speccy Nation",
+    "year": "2012",
+    "author": "Dan Whitehead"
+  },
+  {
+    "title": "The Princess Diarist",
+    "year": "2016",
+    "author": "Carrie Fisher"
+  },
+  {
+    "title": "Children of Time (Children of Time #1)",
+    "year": "2015",
+    "author": "Adrian Tchaikovsky"
+  },
+  {
+    "title": "In the Dark (DI Adam Fawley, #2)",
+    "year": "2019",
+    "author": "Cara Hunter"
+  },
+  {
+    "title": "Flowers for Algernon",
+    "year": "1966",
+    "author": "Daniel Keyes"
+  },
+  {
+    "title": "Exhalation",
+    "year": "2019",
+    "author": "Ted Chiang"
+  },
+  {
+    "title": "The Testaments (The Handmaid's Tale, #2)",
+    "year": "2019",
+    "author": "Margaret Atwood"
+  },
+  {
+    "title": "All the Light We Cannot See",
+    "year": "2014",
+    "author": "Anthony Doerr"
+  },
+  {
+    "title": "Skipping Christmas",
+    "year": "2001",
+    "author": "John Grisham"
+  },
+  {
+    "title": "My Name is Leon",
+    "year": "2016",
+    "author": "Kit de Waal"
+  },
+  {
+    "title": "The Book of M",
+    "year": "2018",
+    "author": "Peng Shepherd"
+  },
+  {
+    "title": "Recursion",
+    "year": "2019",
+    "author": "Blake Crouch"
+  },
+  {
+    "title": "Death's End (Remembrance of Earth’s Past #3)",
+    "year": "2010",
+    "author": "Liu Cixin"
+  },
+  {
+    "title": "The Afterlife of Walter Augustus",
+    "year": "2018",
+    "author": "Hannah M. Lynn"
+  },
+  {
+    "title": "Harry Potter and the Goblet of Fire",
+    "year": "2000",
+    "author": "J.K. Rowling"
+  },
+  {
+    "title": "I Am Legend",
+    "year": 1954
+  },
+  {
+    "title": "The Passengers",
+    "year": "2019"
+  },
+  {
+    "title": "The Humans",
+    "year": "2013"
+  },
+  {
+    "title": "Miss Pettigrew Lives for a Day",
+    "year": "1938",
+    "author": "Winifred Watson"
+  },
+  {
+    "title": "The Dark Forest (Remembrance of Earth’s Past, #2)",
+    "year": "2008",
+    "author": "Liu Cixin"
+  },
+  {
+    "title": "The Three-Body Problem (Remembrance of Earth’s Past #1)",
+    "year": "2006",
+    "author": "Liu Cixin"
+  },
+  {
+    "title": "Guns, Germs, and Steel: The Fates of Human Societies",
+    "year": "1997",
+    "author": "Jared Diamond"
+  },
+  {
+    "title": "I Am Legend and Other Stories",
+    "year": "1954",
+    "author": "Richard Matheson"
+  },
+  {
+    "title": "No Way Out (DI Adam Fawley, #3)",
+    "year": "2019",
+    "author": "Cara Hunter"
+  },
+  {
+    "title": "Meeting Mungo Thunk",
+    "year": null,
+    "author": "Keith A. Pearson"
+  },
+  {
+    "title": "Ask the Passengers",
+    "year": "2012",
+    "author": "A.S. King"
+  },
+  {
+    "title": "The Sudden Appearance of Hope",
+    "year": "2016",
+    "author": "Claire North"
+  },
+  {
+    "title": "I Had a Black Dog: His Name Was Depression",
+    "year": "2005",
+    "author": "Matthew Johnstone"
+  },
+  {
+    "title": "Fahrenheit 451",
+    "year": "1953",
+    "author": "Ray Bradbury"
+  },
+  {
+    "title": "Lord of the Flies",
+    "year": "1954",
+    "author": "William Golding"
+  },
+  {
+    "title": "The Name of the Wind (The Kingkiller Chronicle, #1)",
+    "year": "2007",
+    "author": "Patrick Rothfuss"
+  },
+  {
+    "title": "Sleep: The Myth of 8 Hours, the Power of Naps... and the New Plan to Recharge Your Body and Mind",
+    "year": "2016",
+    "author": "Nick Littlehales"
+  },
+  {
+    "title": "Autonomous",
+    "year": "2017",
+    "author": "Annalee Newitz"
+  },
+  {
+    "title": "All the Birds in the Sky",
+    "year": "2016",
+    "author": "Charlie Jane Anders"
+  },
+  {
+    "title": "Clawthorn (Clement, #3)",
+    "year": null,
+    "author": "Keith A. Pearson"
+  },
+  {
+    "title": "A Brief History of Everyone Who Ever Lived: The Stories in Our Genes",
+    "year": "2016",
+    "author": "Adam Rutherford"
+  },
+  {
+    "title": "Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)",
+    "year": "1999",
+    "author": "J.K. Rowling"
+  },
+  {
+    "title": "The Chrysalids",
+    "year": "1955",
+    "author": "John Wyndham"
+  },
+  {
+    "title": "The Truth Pixie (Christmas Series, #3.5)",
+    "year": "2018",
+    "author": "Matt Haig"
+  },
+  {
+    "title": "Christmas Jars Collector's Edition",
+    "year": null,
+    "author": "Jason F. Wright"
+  },
+  {
+    "title": "The Gift of the Magi",
+    "year": "1905",
+    "author": "O. Henry"
+  },
+  {
+    "title": "Exit Strategy (The Murderbot Diaries, #4)",
+    "year": "2018",
+    "author": "Martha Wells"
+  },
+  {
+    "title": "Rogue Protocol (The Murderbot Diaries, #3)",
+    "year": "2018",
+    "author": "Martha Wells"
+  },
+  {
+    "title": "Saga, Vol. 9 (Saga, #9)",
+    "year": "2018",
+    "author": "Brian K. Vaughan"
+  },
+  {
+    "title": "Artificial Condition (The Murderbot Diaries, #2)",
+    "year": "2018",
+    "author": "Martha Wells"
+  },
+  {
+    "title": "The End Specialist",
+    "year": "2011",
+    "author": "Drew Magary"
+  },
+  {
+    "title": "Tin Man",
+    "year": "2017",
+    "author": "Sarah Winman"
+  },
+  {
+    "title": "The Brighton Mermaid",
+    "year": "2018",
+    "author": "Dorothy Koomson"
+  },
+  {
+    "title": "War with the Newts",
+    "year": "1936",
+    "author": "Karel Čapek"
+  },
+  {
+    "title": "Beetle Boy",
+    "year": "2016",
+    "author": "M.G. Leonard"
+  },
+  {
+    "title": "Sex and Drugs and Sausage Rolls",
+    "year": "1999",
+    "author": "Robert Rankin"
+  },
+  {
+    "title": "Dogs of War",
+    "year": "2017",
+    "author": "Frederick Forsyth"
+  },
+  {
+    "title": "Past Mortem",
+    "year": "2004",
+    "author": "Ben Elton"
+  },
+  {
+    "title": "Neuromancer",
+    "year": "1984",
+    "author": "William Gibson"
+  },
+  {
+    "title": "The Obesity Code: Unlocking the Secrets of Weight Loss",
+    "year": "2016",
+    "author": "Jason Fung"
+  },
+  {
+    "title": "Good Omens",
+    "year": "1990",
+    "author": "Terry Pratchett"
+  },
+  {
+    "title": "The Dead Fathers Club",
+    "year": "2006",
+    "author": "Matt Haig"
+  },
+  {
+    "title": "All Systems Red (The Murderbot Diaries, #1)",
+    "year": "2017",
+    "author": "Martha Wells"
+  },
+  {
+    "title": "Brave New World",
+    "year": "1932",
+    "author": "Aldous Huxley"
+  },
+  {
+    "title": "Postcards from the Edge (Suzanne Vale, #1)",
+    "year": "1987",
+    "author": "Carrie Fisher"
+  },
+  {
+    "title": "Snow Crash",
+    "year": "1992",
+    "author": "Neal Stephenson"
+  },
+  {
+    "title": "Jessica Jones, Vol. 2: The Secrets of Maria Hill",
+    "year": "2017",
+    "author": "Brian Michael Bendis"
+  },
+  {
+    "title": "Harry Potter and the Chamber of Secrets (Harry Potter, #2)",
+    "year": "1998",
+    "author": "J.K. Rowling"
+  },
+  {
+    "title": "1984",
+    "year": "1949",
+    "author": "George Orwell"
+  },
+  {
+    "title": "Stories of Your Life and Others",
+    "year": "2002",
+    "author": "Ted Chiang"
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "year": "1951",
+    "author": "J.D. Salinger"
+  },
+  {
+    "title": "Adrian Mole: The Prostrate Years (Adrian Mole, #8)",
+    "year": "2009",
+    "author": "Sue Townsend"
+  },
+  {
+    "title": "Silent Victim",
+    "year": "2018",
+    "author": "Caroline Mitchell"
+  },
+  {
+    "title": "Who Sent Clement? (Clement #1)",
+    "year": null,
+    "author": "Keith A. Pearson"
+  },
+  {
+    "title": "The Night Masquerade (Binti, #3)",
+    "year": "2018",
+    "author": "Nnedi Okorafor"
+  },
+  { "title": "We", "year": "1921" },
+  {
+    "title": "The Lives of Tao",
+    "year": "2013",
+    "author": "Wesley Chu"
+  },
+  {
+    "title": "The Unbeatable Squirrel Girl, Vol. 1: Squirrel Power",
+    "year": "2015",
+    "author": "Ryan North"
+  },
+  {
+    "title": "Wishful Drinking",
+    "year": "2008",
+    "author": "Carrie Fisher"
+  },
+  {
+    "title": "Saga, Vol. 8",
+    "year": "2017",
+    "author": "Brian K. Vaughan"
+  },
+  {
+    "title": "The Power",
+    "year": "2017",
+    "author": " Naomi Alderman"
+  },
+  {
+    "title": "A Gentleman in Moscow",
+    "year": "2016",
+    "author": "Amor Towles"
+  },
+  {
+    "title": "Beyond Broadhall (The '86 Fix #2)",
+    "year": "2017",
+    "author": "Keith A. Pearson"
+  },
+  {
+    "title": "The Girl With All the Gifts",
+    "year": "2014",
+    "author": "M.R. Carey"
+  },
+  {
+    "title": "A Boy Made of Blocks",
+    "year": "2016",
+    "author": "Keith Stuart"
+  },
+  {
+    "title": "The Song From Somewhere Else",
+    "year": "2016",
+    "author": "A.F. Harrold"
+  }
+]
