@@ -10,8 +10,10 @@ POKE 23607,249
 But this works on the "regular" ULA layer - to make this work on layer 1 or layer 2, you need some magic:
 
 ```nextbasic
-PRINT CHR$ 2
+PRINT CHR$ 2;
 ```
+
+Note that the semi-colon at the end of the statement ensures that there's no extra carriage returns printed to the screen.
 
 Explained [here](https://www.facebook.com/groups/ZXNextBasic/?post_id=834716357054705) by Gary Lancaster, author of NextBASIC:
 
