@@ -15,7 +15,7 @@ I write this because I can. Because I need to put it somewhere, and in part so t
 
 ---
 
-There's this one photo of Julie. It doesn't matter what the pixels in the photo tell you, it's how I remember it. She's a full 9 months pregnant, her back to the photo but her bump, large and proud. Standing in the nursery that we had prepared, looking out of the full length window, the sun shining against her hair. _Radiating life_ is what I thought when I looked at the photo. But, after Tia was born, after our lives changed track, after our future was snatched from us, I couldn't bare looking at this photo, it was too painful. Though not because we'd lost Tia, but because that version of Julie didn't know what would come. That she would never return to that that moment. That our lives could never return to our original tracks.
+There's this one photo of Julie. It doesn't matter what the pixels in the photo tell you, it's how I remember it. She's a full 9 months pregnant, her back to the photo but her bump, large and proud. Standing in the nursery that we had prepared, looking out of the full length window, the sun shining against her hair. _Radiating life_ is what I thought when I looked at the photo. But, after Tia was born, after our lives changed track, after our future was snatched from us, I couldn't bear looking at this photo, it was too painful. Though not because we'd lost Tia, but because that version of Julie didn't know what would come. That she would never return to that that moment. That our lives could never return to our original tracks.
 
 ![](/images/julie-with-tia.jpg)
 
