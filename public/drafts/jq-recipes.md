@@ -170,17 +170,13 @@ Add new property to every object in a nested object, i.e. source looks like:
 
 ```json{id="demo-new-prop-1"}
 {
- "offline-panel": {
+  "offline-panel": {
     "title": "Offline Panel",
-    "tags": [
-      "web"
-    ]
+    "tags": ["web"]
   },
   "rewrite-it": {
     "title": "Let's just rewrite it",
-    "tags": [
-      "business"
-    ]
+    "tags": ["business"]
   }
 }
 ```
@@ -192,7 +188,6 @@ with_entries(.value += { "draft": true})
 ```
 
 [Demo](https://jqterm.com/#!/c64de24dcdf718b3c9e32b7cef54c49f?query=with_entries%28.value%20%2B%3D%20%7B%20%22draft%22%3A%20true%7D%29)
-
 
 ---
 
@@ -567,3 +562,19 @@ Unique combinations of pairs of values - not allowing for repetition, i.e. `[1,0
 Generates all the combinations of `[1,2], [1,3], [1,4], [2,3], [2,4], [3,4]`
 
 [Demo](https://jqterm.com/5cb845d3ce1f76bdf5e2a315872a5974?query=%5Bcombinations%282%29%20%7C%20select%28.%5B0%5D%20!%3D%20.%5B1%5D%29%20%7C%20sort%5D%20%7C%20unique)
+
+---
+
+Chunk an array - so instead of an array containing 161 items, I have a two dimensional array 11 elements long holding 16 elements each except the last which holds one element:
+
+```jq
+# vars
+. as $x | # capture the original data
+(($x | length)/10) | floor as $by | # store size of 10%
+
+[range(0;$x | length;$by)] | # generate a range jumping by 10%
+
+map($x[.:.+$by]) # chunk the source data
+```
+
+[Demo](https://jqterm.com/9fe9df74b7dec791ab64c208507471a9?query=%23%20vars%0A.%20as%20%24x%20%7C%20%23%20capture%20the%20original%20data%0A%28%28%24x%20%7C%20length%29%2F10%29%20%7C%20floor%20as%20%24by%20%7C%20%23%20store%20size%20of%2010%25%0A%0A%5Brange%280%3B%24x%20%7C%20length%3B%24by%29%5D%20%7C%20%23%20generate%20a%20range%20jumping%20by%2010%25%0A%0Amap%28%24x%5B.%3A.%2B%24by%5D%29%20%23%20chunk%20the%20source%20data)
