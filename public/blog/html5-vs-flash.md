@@ -6,14 +6,14 @@ tags:
   - flash
   - html5
   - web
-modified: '2014-09-03 16:15:12'
+modified: '2020-09-17 21:18:00'
 ---
 
 # HTML5 vs. Flash
 
 First of all I wanted to make the title of this post "HTML5 _and_ Flash", but I know it's going to bait more readers if I say versus. I should state for the record that for the foreseeable future I think Flash has a valid place on the web, and I don't personally see it as an _us and them_ web.
 
-Stephen Shankland, writer for CNET News got in touch and asked me to comment on an [article he was writing](http://news.cnet.com/8301-30685_3-20000037-264.html), posing me the questions in this post. Unfortunately my reply got to him to late and he had to go to post without my answers, but I thought that it would be worthwhile sharing my views via my own blog instead.
+Stephen Shankland, writer for CNET News got in touch and asked me to comment on an [article he was writing](https://web.archive.org/web/20110426041830/http://news.cnet.com/8301-30685_3-20000037-264.html), posing me the questions in this post. Unfortunately my reply got to him to late and he had to go to post without my answers, but I thought that it would be worthwhile sharing my views via my own blog instead.
 
 <!--more-->
 
@@ -31,7 +31,7 @@ I personally don't think HTML will replace Flash. I think HTML5 and the Open Web
 
 The native video element will (eventually) allow us to drop using Flash for video. Flash has done an awesome job of pulling the braces up on browsers for the last decade, and we've needed it, but Flash is so much more than just video or font rendering. I think the smart developers aren't won't be worried about native browser functionality making Flash redundant for noddy tasks, no doubt they'll be thankful to not have to build _another_ video player.
 
-As much as I'd like to see Open Web technology do everything, I still think we're a long way off HTML being able to able to natively replace applications such as [Aviary](https://web.archive.org/web/20100206162341/http://www.aviary.com/) and games like [Bow Street Runner](http://channel4.com/bowstreetrunner).
+As much as I'd like to see Open Web technology do everything, I still think we're a long way off HTML being able to able to natively replace applications such as [Aviary](https://web.archive.org/web/20100206162341/http://www.aviary.com/) and games like [Bow Street Runner](https://web.archive.org/web/20101226204651/http://www.channel4.com/history/microsites/C/city-of-vice/game/index.html).
 
 Equally, as I mentioned before SVG is one technology that has come along, and with the help of the svgweb JavaScript library, SVG works in IE. This library of course gets IE to support SVG via Flash. It translate the SVG markup on to a Flash canvas proving that Flash still has a place on the web as a bridging technology as well as it's intended use.
 
