@@ -15,6 +15,7 @@ block meta
   if summary
     - summary = '<meta name="twitter:description" content="' + summary.replace(/"/g, '&quot;').trim() + '">';
     != summary
+  meta(property="og:image" content=`https://remysharp.com/images/cards/${moment(data.date).modDOY(9)}.jpg`)
   meta(name="og:image" content=`https://remysharp.com/images/cards/${moment(data.date).modDOY(9)}.jpg`)
   meta(name="twitter:creator" content="@rem")
   meta(name="twitter:title" content=`${title}`)
