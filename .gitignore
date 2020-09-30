@@ -5,3 +5,4 @@ test/
 /demo/
 _site
 .env
+public/js/version.js

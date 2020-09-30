@@ -13,7 +13,8 @@
     "dev": "nodemon -w lib/ lib/dev.js",
     "update": "node lib/books.js; node lib/currently-reading.js",
     "links": "node lib/links.js",
-    "build": "npm run links; node lib/index.js",
+    "version": "sh bin/hashit.sh",
+    "build": "npm run version; npm run links; node lib/index.js",
     "build-only": "node lib/index.js"
   },
   "author": "Remy Sharp",
