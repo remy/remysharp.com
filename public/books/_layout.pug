@@ -28,6 +28,9 @@ block content
           strong My rating
           span.rating(data-rating=`${ rating }` aria-label=`${ rating } stars out of 5` title=`${ rating } stars out of 5`)
             span #{rating} / 5
+        p
+          strong Read
+          | <time datetime="#{moment(read).format('YYYY-MM-DD')}">#{moment(read).format('MMMM YYYY')}</time>
 
       .post-content.e-content
         if spoiler
@@ -40,7 +43,8 @@ block content
         else
           != yield
 
-        p.read-more More on <a href="#{goodreads}">Goodreads</a>
+        p.read-more
+          small More on <a href="#{goodreads}">Goodreads</a>
 
       if date
         .misc-content
