@@ -1,0 +1,31 @@
+---
+project: '{{ dirname }}'
+title: 'Next Marbles2 devlog'
+permalink: /devlog/{{ dirname }}/index.html
+---
+
+:markdown
+  This is a port/recreation of my original game for the Palm Pilot written back in 2002: Marbles<sup>2</sup>.
+
+  The mechanics are that of [SameGame](https://en.m.wikipedia.org/wiki/SameGame) except the grid is 10x10, there's 4 block types and a game seed that can be used to restart the sequence of boards. This game seed (or even "board ID") is what ensures the arrangement is the exact same each time and allows scores to be shared and challenged.
+
+  Whilst the work is development, screenshots of my Palm Pilot have been used and screenshots of my more recent web version.
+
+  **Backstory**
+
+  Back at the start of 2000 I remember briefly playing a game on a friend's [Psion 3](https://en.m.wikipedia.org/wiki/Psion_Series_3) whereby you had to tap the touching blocks to make the blocks fall and eventually clear the screen. For some reason this game stuck with me and somewhere along the line I got hold of a second hand Palm Pilot, I decided I would remake this game.
+
+  I spent many, many late nights in my early 20s hunched over a Windows PC coding away with C trying to understand how to make the game work. My skills were so terrible that although the graphics were supposed to be marbles, I couldn't draw them well enough and so the "marbles" became blocks, and thus the name: Marbles Squared.
+
+  Some point a decade later I'd realise that I had actually created a version of SameGame and now two decades later I find that SameGame had been released as ClickMania (which is a version of SameGame) for the ZX Spectrum way back in 1999. Obviously I was a little disconnected!
+
+  **Status: early phase**
+
+div.flex
+  div
+    h2 Devlog entries
+    include /_partials/devlog
+  div
+    h2 Screens
+    img.mby8(src="/images/devlog/pp-marbles.gif")
+    img.mby8(src="/images/devlog/web-marbles.png")
