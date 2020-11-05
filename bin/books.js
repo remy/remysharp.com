@@ -8,7 +8,12 @@ const md = new MarkdownIt({
   linkify: true,
 });
 
-const books = require('../public/books/_data');
+let books = require('../public/books/_data');
+
+if (process.argv[2]) {
+  books = books.filter((_) => _.id === process.argv[2]);
+}
+
 const years = require('./years.json').map((_) => {
   _.slug = slug(_.title);
   return _;
@@ -30,7 +35,7 @@ function toMd(source) {
 }
 
 function frontMatter({ book, ...meta }) {
-  const year = years.find((_) => _.slug === meta.slug);
+  const year = years.find((_) => _.slug === meta.slug) || { year: '?' };
 
   if (!year) {
     console.log(book);
