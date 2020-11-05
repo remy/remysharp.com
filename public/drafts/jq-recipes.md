@@ -578,3 +578,17 @@ map($x[.:.+$by]) # chunk the source data
 ```
 
 [Demo](https://jqterm.com/9fe9df74b7dec791ab64c208507471a9?query=%23%20vars%0A.%20as%20%24x%20%7C%20%23%20capture%20the%20original%20data%0A%28%28%24x%20%7C%20length%29%2F10%29%20%7C%20floor%20as%20%24by%20%7C%20%23%20store%20size%20of%2010%25%0A%0A%5Brange%280%3B%24x%20%7C%20length%3B%24by%29%5D%20%7C%20%23%20generate%20a%20range%20jumping%20by%2010%25%0A%0Amap%28%24x%5B.%3A.%2B%24by%5D%29%20%23%20chunk%20the%20source%20data)
+
+---
+
+Transform an object into jsdoc like property types and names:
+
+```jq
+to_entries |
+# add the type and remove the value
+map(. + { type: .value | type } | del(.value)) |
+# transform to text in jsdoc fragment
+map("* @property {\(.type)} \(.key)")[]
+```
+
+[Demo](https://jqterm.com/bb3bb56e0824ceddeb50ff0fac30159e?query=.profile%20%7C%20to_entries%20%7C%20map%28.%20%2B%20%7B%20type%3A%20.value%20%7C%20type%20%7D%20%7C%20del%28.value%29%29%20%7C%20map%28%22*%20%40property%20%7B%5C%28.type%29%7D%20%5C%28.key%29%22%29%5B%5D&raw=true)
