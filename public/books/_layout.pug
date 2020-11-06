@@ -31,6 +31,7 @@ block content
         p
           strong Read
           | <time datetime="#{moment(read).format('YYYY-MM-DD')}">#{moment(read).format('MMMM YYYY')}</time>
+        img.cover(src=`/images/books/${goodreads_id}.jpg` width="64")
 
       .post-content.e-content
         if spoiler

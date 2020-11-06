@@ -39,12 +39,12 @@ layout: public
         each review in _data
           - rating = `${ '★'.repeat(review.rating) }${ '☆'.repeat(5 - review.rating)}`
           div(data-id=`${review.id}`)
-            img.cover(src=`/images/books/${review.book.id}.jpg` width="64")
+            img.cover(src=`/images/books/${review.book.id}.jpg`)
             p.when #{moment(review.read).format('D-MMM \'YY')}
               br
               span(title=`${review.read}`) #{duration(review.started, review.read)}
             p.title
-              a(href=`${review.book.url}`) #{review.book.title}
+              a(href=`/books/${moment(review.read).format('YYYY')}/${review.slug || slugify(review.book.title)}`) #{review.book.title}
             if review.review
               p.review-link
                 if review.summary

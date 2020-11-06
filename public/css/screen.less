@@ -1979,6 +1979,24 @@ h2 > label {
     margin-bottom: 20px;
     padding-bottom: 20px;
 
+    display: grid;
+    --col1-width: clamp(64px, 10vw, 88px);
+    grid-template-columns: var(--col1-width) 1fr;
+    grid-gap: 0 16px;
+    align-items: center;
+
+    .cover {
+      grid-row-start: 1;
+      grid-row-end: 5;
+      grid-column: 1;
+      width: fit-content;
+      object-fit: cover;
+    }
+
+    p {
+      grid-column: 2;
+    }
+
     strong {
       // margin-right: 4px;
       display: inline-block;
