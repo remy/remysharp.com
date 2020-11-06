@@ -4,6 +4,7 @@ author: "O. Henry"
 published: 1905
 pages: 26
 goodreads: https://www.goodreads.com/book/show/17792326-the-gift-of-the-magi
+goodreads_id: 17792326
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1365717732l/17792326._SX98_.jpg
 read: 2018-12-16
 start: 2018-12-16

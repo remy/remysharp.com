@@ -4,6 +4,7 @@ author: "Cara Hunter"
 published: 2019
 pages: 444
 goodreads: https://www.goodreads.com/book/show/37749843-in-the-dark
+goodreads_id: 37749843
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2020-02-03
 start: 2020-01-30

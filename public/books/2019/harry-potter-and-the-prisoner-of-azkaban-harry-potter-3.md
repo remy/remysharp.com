@@ -4,6 +4,7 @@ author: "J.K. Rowling"
 published: 1999
 pages: 453
 goodreads: https://www.goodreads.com/book/show/28765183-harry-potter-and-the-prisoner-of-azkaban
+goodreads_id: 28765183
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2019-01-02
 start: 2018-09-11

@@ -4,6 +4,7 @@ author: "Carrie Fisher"
 published: 2016
 pages: 273
 goodreads: https://www.goodreads.com/book/show/30976431-the-princess-diarist
+goodreads_id: 30976431
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2020-04-10
 start: 2020-03-28

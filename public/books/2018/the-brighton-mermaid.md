@@ -4,6 +4,7 @@ author: "Dorothy Koomson"
 published: 2018
 pages: 496
 goodreads: https://www.goodreads.com/book/show/38396769-the-brighton-mermaid
+goodreads_id: 38396769
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1534690573l/38396769._SX98_.jpg
 read: 2018-09-10
 start: 2018-09-08

@@ -4,6 +4,7 @@ author: "Amor Towles"
 published: 2016
 pages: 464
 goodreads: https://www.goodreads.com/book/show/30832672-a-gentleman-in-moscow
+goodreads_id: 30832672
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2017-12-29
 start: 2017-12-09

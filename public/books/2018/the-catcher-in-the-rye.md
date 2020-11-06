@@ -4,6 +4,7 @@ author: "J.D. Salinger"
 published: 1951
 pages: 277
 goodreads: https://www.goodreads.com/book/show/5107.The_Catcher_in_the_Rye
+goodreads_id: 5107.The_Catcher_in_the_Rye
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1398034300l/5107._SX98_.jpg
 read: 2018-04-22
 start: 2018-04-10

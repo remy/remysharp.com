@@ -4,6 +4,7 @@ author: "Claire North"
 published: 2016
 pages: 512
 goodreads: https://www.goodreads.com/book/show/26090757-the-sudden-appearance-of-hope
+goodreads_id: 26090757
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1461882752l/26090757._SX98_.jpg
 read: 2019-05-19
 start: 2019-04-26

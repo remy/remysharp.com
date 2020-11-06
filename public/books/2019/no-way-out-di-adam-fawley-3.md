@@ -4,6 +4,7 @@ author: "Cara Hunter"
 published: 2019
 pages: 367
 goodreads: https://www.goodreads.com/book/show/40182827-no-way-out
+goodreads_id: 40182827
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2019-06-30
 start: 2019-06-18

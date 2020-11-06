@@ -4,6 +4,7 @@ author: "Patrick Rothfuss"
 published: 2007
 pages: 676
 goodreads: https://www.goodreads.com/book/show/11127294-the-name-of-the-wind
+goodreads_id: 11127294
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328125373l/11127294._SX98_.jpg
 read: 2019-03-22
 start: 2019-02-25

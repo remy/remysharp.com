@@ -4,6 +4,7 @@ author: "Ted Chiang"
 published: 2002
 pages: 281
 goodreads: https://www.goodreads.com/book/show/223380.Stories_of_Your_Life_and_Others
+goodreads_id: 223380.Stories_of_Your_Life_and_Others
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356138316l/223380._SX98_.jpg
 read: 2018-05-06
 start: 2018-04-24

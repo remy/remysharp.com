@@ -4,6 +4,7 @@ author: "Hannah M. Lynn"
 published: 2018
 pages: 328
 goodreads: https://www.goodreads.com/book/show/43318793-the-afterlife-of-walter-augustus
+goodreads_id: 43318793
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545566672l/43318793._SX98_.jpg
 read: 2019-09-01
 start: 2019-08-25

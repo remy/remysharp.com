@@ -4,6 +4,7 @@ author: "Karel Čapek"
 published: 1936
 pages: 231
 goodreads: https://www.goodreads.com/book/show/20426572-war-with-the-newts
+goodreads_id: 20426572
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388767694l/20426572._SX98_.jpg
 read: 2018-09-07
 start: 2018-08-20

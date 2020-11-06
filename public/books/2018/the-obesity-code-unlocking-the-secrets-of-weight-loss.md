@@ -4,6 +4,7 @@ author: "Jason Fung"
 published: 2016
 pages: 296
 goodreads: https://www.goodreads.com/book/show/29405348-the-obesity-code
+goodreads_id: 29405348
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2018-07-12
 start: 2017-09-20

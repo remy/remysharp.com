@@ -4,6 +4,7 @@ author: "Charlie Jane Anders"
 published: 2016
 pages: 314
 goodreads: https://www.goodreads.com/book/show/28369444-all-the-birds-in-the-sky
+goodreads_id: 28369444
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2019-01-22
 start: 2019-01-10

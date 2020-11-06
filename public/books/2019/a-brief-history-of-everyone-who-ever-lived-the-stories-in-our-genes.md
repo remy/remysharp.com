@@ -4,6 +4,7 @@ author: "Adam Rutherford"
 published: 2016
 pages: 432
 goodreads: https://www.goodreads.com/book/show/30191189-a-brief-history-of-everyone-who-ever-lived
+goodreads_id: 30191189
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2019-01-06
 start: 2018-11-29

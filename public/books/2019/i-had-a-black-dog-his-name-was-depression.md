@@ -4,6 +4,7 @@ author: "Matthew Johnstone"
 published: 2005
 pages: 48
 goodreads: https://www.goodreads.com/book/show/1005996.I_Had_a_Black_Dog
+goodreads_id: 1005996.I_Had_a_Black_Dog
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356728555l/1005996._SX98_.jpg
 read: 2019-05-02
 start: 2019-05-02

@@ -4,6 +4,7 @@ author: "Robert Galbraith"
 published: 2013
 pages: 550
 goodreads: https://www.goodreads.com/book/show/18192717-the-cuckoo-s-calling
+goodreads_id: 18192717
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1373758407l/18192717._SX98_.jpg
 read: 2020-06-03
 start: 2020-05-05

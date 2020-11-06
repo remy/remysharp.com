@@ -4,6 +4,7 @@ author: "Brian K. Vaughan"
 published: 2017
 pages: 146
 goodreads: https://www.goodreads.com/book/show/34963526-saga-vol-8
+goodreads_id: 34963526
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1506421450l/34963526._SX98_.jpg
 read: 2018-01-03
 start: 2018-01-02

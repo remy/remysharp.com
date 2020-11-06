@@ -4,6 +4,7 @@ author: "William Tang"
 published: 1982
 pages:  248
 goodreads: https://www.goodreads.com/book/show/53815008-spectrum-machine-language-for-the-absolute-beginner
+goodreads_id: 53815008
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1591255140l/53815008._SY475_.jpg
 read: 2020-07-16
 start: 2020-06-04

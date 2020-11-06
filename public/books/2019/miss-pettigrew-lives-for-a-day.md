@@ -4,6 +4,7 @@ author: "Winifred Watson"
 published: 1938
 pages: 234
 goodreads: https://www.goodreads.com/book/show/2277185.Miss_Pettigrew_Lives_for_a_Day
+goodreads_id: 2277185.Miss_Pettigrew_Lives_for_a_Day
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1345819570l/2277185._SX98_.jpg
 read: 2019-08-24
 start: 2019-08-17

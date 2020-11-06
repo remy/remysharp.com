@@ -4,6 +4,7 @@ author: "John Wyndham"
 published: 1955
 pages: 212
 goodreads: https://www.goodreads.com/book/show/11078788-the-chrysalids
+goodreads_id: 11078788
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1456558853l/11078788._SX98_.jpg
 read: 2019-01-01
 start: 2018-12-23

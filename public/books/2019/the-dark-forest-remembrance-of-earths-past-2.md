@@ -4,6 +4,7 @@ author: "Liu Cixin"
 published: 2008
 pages: 513
 goodreads: https://www.goodreads.com/book/show/25680785-the-dark-forest
+goodreads_id: 25680785
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2019-08-17
 start: 2019-07-19

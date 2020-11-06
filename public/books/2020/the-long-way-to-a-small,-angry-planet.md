@@ -4,6 +4,7 @@ author: 'Becky Chambers'
 published: 2015
 pages: 519
 goodreads: https://www.goodreads.com/book/show/25201920-the-long-way-to-a-small-angry-planet
+goodreads_id: 25201920
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1438590529l/25201920._SY475_.jpg
 read: 2020-09-07
 start: 2020-08-30

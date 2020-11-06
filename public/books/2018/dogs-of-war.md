@@ -4,6 +4,7 @@ author: "Adrian Tchaikovsky"
 published: 2017
 pages: 262
 goodreads: https://www.goodreads.com/book/show/35827220-dogs-of-war
+goodreads_id: 35827220
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2018-08-11
 start: 2018-08-02

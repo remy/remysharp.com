@@ -4,6 +4,7 @@ author: "William Gibson"
 published: 1984
 pages: 292
 goodreads: https://www.goodreads.com/book/show/29349974-neuromancer
+goodreads_id: 29349974
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511700869l/29349974._SX98_.jpg
 read: 2018-07-30
 start: 2018-07-18

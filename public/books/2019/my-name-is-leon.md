@@ -4,6 +4,7 @@ author: "Kit de Waal"
 published: 2016
 pages: 264
 goodreads: https://www.goodreads.com/book/show/29624348-my-name-is-leon
+goodreads_id: 29624348
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2019-12-04
 start: 2019-11-29

@@ -4,6 +4,7 @@ author: "John Grisham"
 published: 2001
 pages: 242
 goodreads: https://www.goodreads.com/book/show/11247517-skipping-christmas
+goodreads_id: 11247517
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2019-12-23
 start: 2019-12-17

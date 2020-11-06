@@ -4,6 +4,7 @@ author: "Nnedi Okorafor"
 published: 2018
 pages: 205
 goodreads: https://www.goodreads.com/book/show/34453011-the-night-masquerade
+goodreads_id: 34453011
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1497398127l/34453011._SX98_.jpg
 read: 2018-01-31
 start: 2018-01-22

@@ -4,6 +4,7 @@ author: "Keith Stuart"
 published: 2016
 pages: 387
 goodreads: https://www.goodreads.com/book/show/30326408-a-boy-made-of-blocks
+goodreads_id: 30326408
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2017-03-01
 start: 2017-02-14

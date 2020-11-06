@@ -4,6 +4,7 @@ author: "Naomi Alderman"
 published: 2017
 pages: 331
 goodreads: https://www.goodreads.com/book/show/31195557-the-power
+goodreads_id: 31195557
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492031819l/31195557._SX98_.jpg
 read: 2018-01-02T00:00:00Z
 start: 2017-12-30T00:00:00Z

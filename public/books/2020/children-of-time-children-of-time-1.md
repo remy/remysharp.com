@@ -4,6 +4,7 @@ author: "Adrian Tchaikovsky"
 published: 2015
 pages: 609
 goodreads: https://www.goodreads.com/book/show/25563522-children-of-time
+goodreads_id: 25563522
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1432028033l/25563522._SX98_.jpg
 read: 2020-03-28
 start: 2020-02-03

@@ -4,6 +4,7 @@ author: "Yevgeny Zamyatin"
 published: 1921
 pages: 224
 goodreads: https://www.goodreads.com/book/show/17985928-we
+goodreads_id: 17985928
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1370773328l/17985928._SX98_.jpg
 read: 2019-12-31
 start: 2019-12-04

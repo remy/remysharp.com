@@ -4,6 +4,7 @@ author: "Margaret Atwood"
 published: 2019
 pages: 401
 goodreads: https://www.goodreads.com/book/show/42975938-the-testaments
+goodreads_id: 42975938
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1548966331l/42975938._SX98_.jpg
 read: 2020-01-09
 start: 2020-01-01

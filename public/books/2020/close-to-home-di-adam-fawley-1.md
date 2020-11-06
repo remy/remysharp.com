@@ -4,6 +4,7 @@ author: "Cara Hunter"
 published: 2018
 pages: 385
 goodreads: https://www.goodreads.com/book/show/36318317-close-to-home
+goodreads_id: 36318317
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2020-05-05
 start: 2020-04-27

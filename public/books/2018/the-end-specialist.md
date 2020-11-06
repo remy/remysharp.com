@@ -4,6 +4,7 @@ author: "Drew Magary"
 published: 2011
 pages: 435
 goodreads: https://www.goodreads.com/book/show/13181643-the-end-specialist
+goodreads_id: 13181643
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1363957323l/13181643._SX98_.jpg
 read: 2018-10-09
 start: 2018-09-18

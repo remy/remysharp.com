@@ -4,6 +4,7 @@ author: "John Marrs"
 published: 2019
 pages: 400
 goodreads: https://www.goodreads.com/book/show/42833369-the-passengers
+goodreads_id: 42833369
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545308606l/42833369._SX98_.jpg
 read: 2019-05-30
 start: 2019-05-20

@@ -4,6 +4,7 @@ author: "Agatha Christie"
 published: 1939
 pages: 258
 goodreads: https://www.goodreads.com/book/show/52255421-and-then-there-were-none
+goodreads_id: 52255421
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2020-08-04
 start: 2020-07-27

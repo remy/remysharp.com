@@ -4,6 +4,7 @@ author: "Matt Haig"
 published: 2006
 pages: 348
 goodreads: https://www.goodreads.com/book/show/37702946-the-dead-fathers-club
+goodreads_id: 37702946
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2018-07-03
 start: 2018-07-01

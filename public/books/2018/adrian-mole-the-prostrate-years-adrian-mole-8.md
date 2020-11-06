@@ -4,6 +4,7 @@ author: "Sue Townsend"
 published: 2009
 pages: 480
 goodreads: https://www.goodreads.com/book/show/11202956-adrian-mole
+goodreads_id: 11202956
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2018-03-31
 start: 2018-03-09

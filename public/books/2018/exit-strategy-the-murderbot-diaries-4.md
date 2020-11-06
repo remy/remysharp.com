@@ -4,6 +4,7 @@ author: "Martha Wells"
 published: 2018
 pages: 176
 goodreads: https://www.goodreads.com/book/show/35519109-exit-strategy
+goodreads_id: 35519109
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1518642623l/35519109._SX98_.jpg
 read: 2018-11-29
 start: 2018-11-06

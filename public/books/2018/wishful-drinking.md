@@ -4,6 +4,7 @@ author: "Carrie Fisher"
 published: 2008
 pages: 120
 goodreads: https://www.goodreads.com/book/show/19242819-wishful-drinking
+goodreads_id: 19242819
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2018-01-04
 start: 2018-01-03

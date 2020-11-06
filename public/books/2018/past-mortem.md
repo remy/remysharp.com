@@ -4,6 +4,7 @@ author: "Ben Elton"
 published: 2004
 pages: 468
 goodreads: https://www.goodreads.com/book/show/18242661-past-mortem
+goodreads_id: 18242661
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1374758264l/18242661._SX98_.jpg
 read: 2018-08-01
 start: 2018-07-31

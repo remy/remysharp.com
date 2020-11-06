@@ -4,6 +4,7 @@ author: "Sarah Winman"
 published: 2017
 pages: 226
 goodreads: https://www.goodreads.com/book/show/34802303-tin-man
+goodreads_id: 34802303
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1536800486l/34802303._SX98_.jpg
 read: 2018-09-17
 start: 2018-09-10

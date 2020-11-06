@@ -4,6 +4,7 @@ author: "Nick Littlehales"
 published: 2016
 pages: 208
 goodreads: https://www.goodreads.com/book/show/31566948-sleep
+goodreads_id: 31566948
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2019-02-25
 start: 2019-02-09

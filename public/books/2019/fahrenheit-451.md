@@ -4,6 +4,7 @@ author: "Ray Bradbury"
 published: 1953
 pages: 119
 goodreads: https://www.goodreads.com/book/show/42424088-fahrenheit-451
+goodreads_id: 42424088
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1540318993l/42424088._SX98_.jpg
 read: 2019-04-25
 start: 2019-04-06

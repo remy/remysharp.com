@@ -4,6 +4,7 @@ author: "Martha Wells"
 published: 2018
 pages: 150
 goodreads: https://www.goodreads.com/book/show/36153880-rogue-protocol
+goodreads_id: 36153880
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1506001602l/36153880._SX98_.jpg
 read: 2018-11-04
 start: 2018-10-18

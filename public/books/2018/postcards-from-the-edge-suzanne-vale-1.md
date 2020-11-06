@@ -4,6 +4,7 @@ author: "Carrie Fisher"
 published: 1987
 pages: 240
 goodreads: https://www.goodreads.com/book/show/18742149-postcards-from-the-edge
+goodreads_id: 18742149
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2018-06-21
 start: 2018-06-16

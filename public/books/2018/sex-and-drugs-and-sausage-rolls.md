@@ -4,6 +4,7 @@ author: "Robert Rankin"
 published: 1999
 pages: 237
 goodreads: https://www.goodreads.com/book/show/18377669-sex-and-drugs-and-sausage-rolls
+goodreads_id: 18377669
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1377580187l/18377669._SX98_.jpg
 read: 2018-08-20
 start: 2018-08-15

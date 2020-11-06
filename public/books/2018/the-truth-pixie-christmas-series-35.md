@@ -4,6 +4,7 @@ author: "Matt Haig"
 published: 2018
 pages: 119
 goodreads: https://www.goodreads.com/book/show/41443051-the-truth-pixie
+goodreads_id: 41443051
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1535056705l/41443051._SX98_.jpg
 read: 2018-12-29T00:00:00Z
 start: 2018-12-17T00:00:00Z

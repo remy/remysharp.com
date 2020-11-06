@@ -4,6 +4,7 @@ author: "Aldous Huxley"
 published: 1932
 pages: 288
 goodreads: https://www.goodreads.com/book/show/5129.Brave_New_World
+goodreads_id: 5129.Brave_New_World
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1575509280l/5129._SX98_.jpg
 read: 2018-06-30
 start: 2018-06-23

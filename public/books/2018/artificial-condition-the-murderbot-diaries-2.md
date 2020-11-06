@@ -4,6 +4,7 @@ author: "Martha Wells"
 published: 2018
 pages: 149
 goodreads: https://www.goodreads.com/book/show/36223859-artificial-condition
+goodreads_id: 36223859
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1505589896l/36223859._SX98_.jpg
 read: 2018-10-16
 start: 2018-10-10

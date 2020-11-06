@@ -4,6 +4,7 @@ author: "Terry Pratchett"
 published: 1990
 pages: 433
 goodreads: https://www.goodreads.com/book/show/13141699-good-omens
+goodreads_id: 13141699
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565466365l/13141699._SX98_.jpg
 read: 2018-07-09
 start: 2018-07-04

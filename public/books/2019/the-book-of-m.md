@@ -4,6 +4,7 @@ author: "Peng Shepherd"
 published: 2018
 pages: 496
 goodreads: https://www.goodreads.com/book/show/39899065-the-book-of-m
+goodreads_id: 39899065
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2019-11-26
 start: 2019-11-17

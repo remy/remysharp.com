@@ -4,6 +4,7 @@ author: "Neal Stephenson"
 published: 1992
 pages: 482
 goodreads: https://www.goodreads.com/book/show/11109099-snow-crash
+goodreads_id: 11109099
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1344368247l/11109099._SX98_.jpg
 read: 2018-06-15
 start: 2018-05-21

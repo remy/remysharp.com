@@ -4,6 +4,7 @@ author: "Cara Hunter"
 published: 2019
 pages: 444
 goodreads: https://www.goodreads.com/book/show/43595041-all-the-rage
+goodreads_id: 43595041
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1559134134l/43595041._SY475_.jpg
 read: 2020-08-10
 start: 2020-08-04

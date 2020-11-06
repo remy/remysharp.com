@@ -4,6 +4,7 @@ author: "Ted Chiang"
 published: 2019
 pages: 368
 goodreads: https://www.goodreads.com/book/show/44175374-exhalation
+goodreads_id: 44175374
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552820537l/44175374._SX98_.jpg
 read: 2020-01-24
 start: 2020-01-10

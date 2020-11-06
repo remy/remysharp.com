@@ -4,6 +4,7 @@ author: "Liu Cixin"
 published: 2010
 pages: 608
 goodreads: https://www.goodreads.com/book/show/27239544-death-s-end
+goodreads_id: 27239544
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1453310853l/27239544._SX98_.jpg
 read: 2019-10-29
 start: 2019-09-01

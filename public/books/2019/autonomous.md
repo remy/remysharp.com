@@ -4,6 +4,7 @@ author: "Annalee Newitz"
 published: 2017
 pages: 304
 goodreads: https://www.goodreads.com/book/show/39314287-autonomous
+goodreads_id: 39314287
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1521385355l/39314287._SX98_.jpg
 read: 2019-02-09
 start: 2019-01-23

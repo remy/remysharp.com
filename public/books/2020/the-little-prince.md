@@ -4,6 +4,7 @@ author: "Antoine de Saint-Exupéry"
 published: 1943
 pages: 96
 goodreads: https://www.goodreads.com/book/show/40848571-the-little-prince
+goodreads_id: 40848571
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2020-04-26
 start: 2020-04-20

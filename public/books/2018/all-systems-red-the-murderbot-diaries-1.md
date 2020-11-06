@@ -4,6 +4,7 @@ author: "Martha Wells"
 published: 2017
 pages: 152
 goodreads: https://www.goodreads.com/book/show/33387769-all-systems-red
+goodreads_id: 33387769
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1484171419l/33387769._SX98_.jpg
 read: 2018-07-01
 start: 2018-06-30

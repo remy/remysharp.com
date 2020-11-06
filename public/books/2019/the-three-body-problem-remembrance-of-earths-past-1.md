@@ -4,6 +4,7 @@ author: "Liu Cixin"
 published: 2006
 pages: 400
 goodreads: https://www.goodreads.com/book/show/24856109-the-three-body-problem
+goodreads_id: 24856109
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1561743521l/24856109._SX98_.jpg
 read: 2019-07-18
 start: 2019-07-07

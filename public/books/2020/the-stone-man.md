@@ -4,6 +4,7 @@ author: 'Luke Smitherd'
 published: 2012
 pages: 320
 goodreads: https://www.goodreads.com/book/show/16299461-the-stone-man
+goodreads_id: 16299461
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1355061975l/16299461._SX98_.jpg
 read: 2020-09-14
 start: 2020-09-07

@@ -4,6 +4,7 @@ author: "Keith A. Pearson"
 published: 2017
 pages: 311
 goodreads: https://www.goodreads.com/book/show/34113830-beyond-broadhall
+goodreads_id: 34113830
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2017-10-08
 start: 2017-09-30

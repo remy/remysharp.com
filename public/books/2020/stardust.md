@@ -4,6 +4,7 @@ author: "Gaiman, Neil"
 published: 1997
 pages: 274
 goodreads: https://www.goodreads.com/book/show/11061296-stardust
+goodreads_id: 11061296
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401613067l/11061296.jpg
 read: 2020-08-30
 start: 2020-08-10

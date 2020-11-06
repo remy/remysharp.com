@@ -4,6 +4,7 @@ author: 'Becky Chambers'
 published: 2016
 pages: 385
 goodreads: https://www.goodreads.com/book/show/32716246-a-closed-and-common-orbit
+goodreads_id: 32716246
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1477003603l/32716246._SY475_.jpg
 read: 2020-10-01
 start: 2020-09-15

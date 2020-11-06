@@ -4,6 +4,7 @@ author: "William Golding"
 published: 1954
 pages: 227
 goodreads: https://www.goodreads.com/book/show/18964701-lord-of-the-flies
+goodreads_id: 18964701
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2019-04-06
 start: 2019-03-22

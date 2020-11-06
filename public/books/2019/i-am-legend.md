@@ -4,6 +4,7 @@ author: "Richard Matheson"
 published: 1954
 pages: 163
 goodreads: https://www.goodreads.com/book/show/12434237-i-am-legend
+goodreads_id: 12434237
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386428854l/12434237._SX98_.jpg
 read: 2019-07-06
 start: 2019-06-30

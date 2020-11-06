@@ -4,6 +4,7 @@ author: "Sylvia Plath"
 published: 1963
 pages: 244
 goodreads: https://www.goodreads.com/book/show/11061699-the-bell-jar
+goodreads_id: 11061699
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1435983866l/11061699._SX98_.jpg
 read: 2020-07-26
 start: 2020-07-05

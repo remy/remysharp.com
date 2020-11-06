@@ -4,6 +4,7 @@ author: "Matt Haig"
 published: 2020
 pages: 284
 goodreads: https://www.goodreads.com/book/show/51955934-the-midnight-library
+goodreads_id: 51955934
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1583060522l/51955934._SX318_.jpg
 read: 2020-11-03
 start: 2020-10-22

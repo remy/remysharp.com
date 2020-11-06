@@ -4,6 +4,7 @@ author: "M.R. Carey"
 published: 2014
 pages: 417
 goodreads: https://www.goodreads.com/book/show/19694475-the-girl-with-all-the-gifts
+goodreads_id: 19694475
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2017-08-26
 start: 2017-08-23

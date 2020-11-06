@@ -4,6 +4,7 @@ author: "Blake Crouch"
 published: 2019
 pages: 336
 goodreads: https://www.goodreads.com/book/show/43592998-recursion
+goodreads_id: 43592998
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2019-11-17
 start: 2019-10-29

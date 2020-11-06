@@ -4,6 +4,7 @@ author: "M.G. Leonard"
 published: 2016
 pages: 336
 goodreads: https://www.goodreads.com/book/show/27226216-beetle-boy
+goodreads_id: 27226216
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1445115441l/27226216._SX98_.jpg
 read: 2018-09-06
 start: 2018-06-18

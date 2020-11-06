@@ -4,6 +4,7 @@ author: "Martha Wells"
 published: 2020
 pages: 346
 goodreads: https://www.goodreads.com/book/show/52680842-network-effect
+goodreads_id: 52680842
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2020-07-04
 start: 2020-06-04

@@ -4,6 +4,7 @@ author: "Dan Whitehead"
 published: 2012
 pages: 124
 goodreads: https://www.goodreads.com/book/show/18933461-speccy-nation
+goodreads_id: 18933461
 cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
 read: 2020-04-19
 start: 2020-04-10
