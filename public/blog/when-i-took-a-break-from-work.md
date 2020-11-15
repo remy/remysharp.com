@@ -11,6 +11,8 @@ This last week I scheduled a week off of work. My second week of the year which 
 
 And so, that was last week and I'm feeling a boat load better. And this is what I made.
 
+<!--more-->
+
 ## A Whittle Doggie
 
 I tweeted this series so if you saw it already, you've seen the contents of this post, but it's here for me to remember.
