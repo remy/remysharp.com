@@ -57,6 +57,34 @@ Email aside, here's some of the web sites that I have open on a near permanent b
 - [feedbin.com](https://feedbin.com) - my news
 - [web.whatsapp.com](https://web.whatsapp.com) - messaging (both groups/teams and individuals)
 
+## Websites I gladly pay for
+
+…because these sites make my life a little bit easier.
+
+- [feedbin.com](https://feedbin.com) - my news
+- [updown.io](https://updown.io/r/tx47y) - I monitor a number of production projects with this extremely elegant service
+- [Glitch](https://glitch.com) - I moved a small number of projects I had hosted on Vercel (AKA Zeit) and enabled the boosted app mode
+- [1password](https://1password.com) - it's a business account that my partner and I are connected users and being able to share password vaults is a huge win
+
+## Browser extensions
+
+For personal browsing I use Firefox. For some JavaScript specific development I use Chrome Canary.
+
+- [1password](https://1password.com/downloads/mac/#browsers)
+- [Disable javascript](https://github.com/dpacassi/disable-javascript) - useful for quick hit testing (though in Chrome I can open devtools and disable from there)
+- [DuckDuckGo Privacy Essentials](https://addons.mozilla.org/en-GB/firefox/addon/duckduckgo-for-firefox/) - visualises the state of trackers on a site - though I've recently found that it does causes problems on a very small handful of browsers
+- [Enhancer for YouTube](https://www.mrfdev.com/enhancer-for-youtube) - a new addition to my extensions, generally cleans up YouTube from shouty to more reasonable
+- [Facebook container](https://addons.mozilla.org/en-GB/firefox/addon/facebook-container/) - I use Facebook exclusively for my ZX Spectrum community stuff, and this helps to keep facebook out of my business otherwise
+- [m-wiki](https://addons.mozilla.org/en-GB/firefox/addon/m-wiki/) - defaults to the mobile version of wikipedia (though the Chrome version is slightly better as this one will _push_ to my history)
+- [Make Medium Readable Again](https://makemediumreadable.com/) - I don't really enjoy Medium so this makes it a little more tolerable
+- [OctoLinker](https://octolinker.now.sh/) - makes links out of included files in github source code pages, such as `import X from 'foo'` - the `foo` part becomes a link to it's source
+- [Pinboard WebExtension](https://github.com/gapop/pinboard-webextension) - I've tried a number of these and I prefer this one because it opens separately and doesn't loose the content when I click away
+- [React Developer Tools](https://github.com/facebook/react) - definitely finding the "profile" section useful these days
+- [Refined Github](https://github.com/sindresorhus/refined-github) - lots and lots of minor tweaks that makes github that little bit nicer
+- [Simplify Gmail](https://simpl.fyi/) - I've no idea what what regular Gmail looks like these days - I'm a big fan of this
+- [Toggl Track](https://toggl.com/track/) - used for tracking client work
+- [uBlock Origin](https://github.com/gorhill/uBlock#ublock-origin) - I frequently uses this to block out large overlays that websites add or [crap that's designed to be distracting](https://remysharp.com/2020/06/19/clearing-twitter)
+
 ## Mobile apps
 
 I moved across to Android a long time ago after getting super frustrated with iOS, some of these apps I know are Android specific.
