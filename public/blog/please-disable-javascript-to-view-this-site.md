@@ -5,7 +5,6 @@ tags:
 - code
 date: 2020-11-30
 nosubscribe: true
-draft: true
 ---
 
 # Please disable JavaScript to view this site.
@@ -59,7 +58,7 @@ In truth though I really only visited heydonworks.com to view the "redesign". He
 
 I couldn't say, but if I were to bet, I'd be prepared to put down some of my hard earned money nuts to say that Heydon has had an influx of traffic following their redesign.
 
-There's definitely the usual fair share of upset White Boy Bro developers at Heydon's antics, and replies citing the the site isn't accessible, or that the site doesn't "enhance" **but forces the user's browsing requirements.** We'll back to this too.
+There's definitely the usual fair share of upset White Boy Bro developers at Heydon's antics, and replies citing the the site isn't accessible, or that the site doesn't "enhance" **but forces the user's browsing requirements.** We'll get back to this too.
 
 I took a brief look at the hackernews comments (because of course there's going to be a hackernews thread - where else do upset White Boy Bro developers go to share their triggered experience… oh, I guess there's reddit too…). I skim read some of the comments and they're all pretty confused.
 
@@ -67,7 +66,7 @@ There's a thread of thought that this site is anti-JavaScript. But that's not re
 
 But is this bad for Heydon's web site? I doubt it. For one, our web sites, our online personas are goldfish in an ocean that is the web. I'm pretty confident that most of the readers of my own blog have never seen my business web site (or even aware it exists) - those who do visit it are going there with intention. I suspect that's the case for heydonworks.com also.
 
-If anything is shows that Heydon knows what he's doing. Probably more so that the developers bashing out the websites that leave my browser hanging or chewing up my phone's battery.
+If anything it shows that Heydon knows what he's doing. Probably more so that the developers bashing out the websites that leave my browser hanging or chewing up my phone's battery.
 
 ## An interesting lesson on JavaScript
 
