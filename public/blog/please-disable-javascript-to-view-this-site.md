@@ -32,16 +32,16 @@ To the average user _like me_, visiting heydonworks.com is met with confusion. N
 
 I happened to visit Heydon's web site on my mobile phone. I consider myself as fairly tech savvy and fairly privacy conscious and so I use multiple browsers on my phone. I use Brave for my daily browsing and Firefox exclusively for the Facebook groups I'm connected to (the idea being that I never browse another site from the browser Facebook has access to). I use Chrome and Canary for PWA installations and I use DuckDuckGo's browser for browse and burn. I also have Edge installed for last ditch testing.
 
-The task at hand is to disable JavaScript. This took me probably around 5 minutes, but that was just me switching browsers, navigate setting screens and generally getting lost. This is probably the longest I've spent _trying_ to get into a web site.
+The task at hand is to disable JavaScript. This took me probably around 5 minutes, but that was just me switching browsers, navigating settings screens and generally getting lost. This is probably the longest I've spent _trying_ to get into a web site.
 
 - Firefox: I couldn't work out how to disable JavaScript at all
-- DuckDuckGo: this was my goto to test Heydon's site, but this browser has even less settings - again, I couldn't disable JavaScript
+- DuckDuckGo: this was my go-to to test Heydon's site, but this browser has even less settings - again, I couldn't disable JavaScript
 - Chrome and Edge: both browsers share similar settings, and I found this tucked away under Settings > Site Settings > JavaScript - but this was a carte blanche across _all_ web sites (which, maybe makes sense?)
 - Brave: under the lion face icon in the navbar, tap Advanced controls I can block scripts and this applies on an individual basis
 
 In my mind, JavaScript is categorised as a privacy or security setting which makes sense that it's an exposed setting for Brave. I was surprised I couldn't disable JavaScript in Firefox (or at least _couldn't find how to_ disable JavaScript) as it feels like Firefox is more closely aligned with privacy the way Brave is in these respects.
 
-These browser's settings also raise an interesting set of questions:
+These browsers' settings also raise an interesting set of questions:
 
 1. If I can't disable JavaScript does this mean that JavaScript is required for the web to work?
 2. If the default is to disable JavaScript across _all_ web sites, does this mean it's a concern as 3rd party cookies are a concern and something we want to block entirely?
@@ -50,7 +50,7 @@ I don't have answers for these, but I think it's an interesting position for bro
 
 Anyway, now, finally, _after determination_, I can read Heydon's web site.
 
-I stuck with it. Am I the average, albeit, privileged user? What if I had followed a link from another person's web site into one of Heydon's blog posts? Would I stick out the multiple browser changes, multiple setting searches just to read a blog post? Possibly not. More probable **I would have given up out of frustration.** We'll get back to this.
+I stuck with it. Am I the average, albeit privileged, user? What if I had followed a link from another person's web site into one of Heydon's blog posts? Would I stick out the multiple browser changes, multiple setting searches just to read a blog post? Possibly not. More probably **I would have given up out of frustration.** We'll get back to this.
 
 In truth though I really only visited heydonworks.com to view the "redesign". Heydon's site is content based and I subscribed to his posts long ago over RSS which requires neither JavaScript nor CSS to be consumed.
 
@@ -58,13 +58,13 @@ In truth though I really only visited heydonworks.com to view the "redesign". He
 
 I couldn't say, but if I were to bet, I'd be prepared to put down some of my hard earned money nuts to say that Heydon has had an influx of traffic following their redesign.
 
-There's definitely the usual fair share of upset White Boy Bro developers at Heydon's antics, and replies citing the the site isn't accessible, or that the site doesn't "enhance" **but forces the user's browsing requirements.** We'll get back to this too.
+There's definitely the usual fair share of upset White Boy Bro developers at Heydon's antics, and replies citing that the site isn't accessible, or that the site doesn't "enhance" **but forces the user's browsing requirements.** We'll get back to this too.
 
 I took a brief look at the hackernews comments (because of course there's going to be a hackernews thread - where else do upset White Boy Bro developers go to share their triggered experience… oh, I guess there's reddit too…). I skim read some of the comments and they're all pretty confused.
 
 There's a thread of thought that this site is anti-JavaScript. But that's not really the point, and in fact, those people wouldn't even be talking about the web site if it weren't for JavaScript.
 
-But is this bad for Heydon's web site? I doubt it. For one, our web sites, our online personas are goldfish in an ocean that is the web. I'm pretty confident that most of the readers of my own blog have never seen my business web site (or even aware it exists) - those who do visit it are going there with intention. I suspect that's the case for heydonworks.com also.
+But is this bad for Heydon's web site? I doubt it. For one, our web sites, our online personas are goldfish in an ocean that is the web. I'm pretty confident that most of the readers of my own blog have never seen my business web site (or are even aware it exists) - those who do visit it are going there with intention. I suspect that's the case for heydonworks.com also.
 
 If anything it shows that Heydon knows what he's doing. Probably more so that the developers bashing out the websites that leave my browser hanging or chewing up my phone's battery.
 
@@ -79,7 +79,7 @@ Heydon's web site uses a single line of JavaScript to perform a very intentional
 
 The website's body of content is also wrapped in a `<noscript>`. Google has no problem spidering and caching the content by the way - I checked.
 
-Heydon is very intentionally use JavaScript in a specific way to cause a specific action. The code is _fairly_ bulletproof, though IE8 doesn't support `textContent` so the visitor would get an entirely blank page…except IE8 also doesn't support the type of encryption used over HTTPS _and_ IE8's global market share (according to [w3counter.com/trends](https://www.w3counter.com/trends) is about 0.1%) so…probably not a problem in any shape or form.
+Heydon is very intentionally using JavaScript in a specific way to cause a specific action. The code is _fairly_ bulletproof, though IE8 doesn't support `textContent` so the visitor would get an entirely blank page…except IE8 also doesn't support the type of encryption used over HTTPS _and_ IE8's global market share (according to [w3counter.com/trends](https://www.w3counter.com/trends) is about 0.1%) so… probably not a problem in any shape or form.
 
 The flip side of this is of course the untold number of web sites that *unintentionally* break due to their use of JavaScript.
 
@@ -91,7 +91,7 @@ Then there's the simple fact that **every single web site has JavaScript disable
 
 What does the web site show when JavaScript fails? How much breaks? Is the web site still usable? How long did I have to wait before I could actually interact with the web site? All of these are questions that must be answered when using JavaScript on a web site, let alone making JavaScript a _requirement_.
 
-Most of the web sites I visit on an average day require JavaScript to allow me to navigate the site fully. At least once a week there will be a web site that fails to fully load JavaScript for me and I'll (rage) quit the site and usually committing it to a bank of "web sites I can't be arsed to ever visit again because they messed up".
+Most of the web sites I visit on an average day require JavaScript to allow me to navigate the site fully. At least once a week there will be a web site that fails to fully load JavaScript for me and I'll (rage) quit the site and usually commit it to a bank of "web sites I can't be arsed to ever visit again because they messed up".
 
 ## But JavaScript isn't the point
 
@@ -101,4 +101,4 @@ That's the lesson that heydonworks.com is reminded us of.
 
 There are many, many people browsing the web in many different ways. Ways that do not mirror my perfect 10 digits and their mortary ability and fairly decent eyesight, and (sometimes questionable) conative skills. There are people who browse the web on a huge gamut of devices and browsers.
 
-Forcing them to jump through hurdles because we, us web developers, did a lazy job of checking how our JavaScript (or even CSS) works and fails and can cause obstructions is a god damn travesty and a failing of our jobs.
+Forcing them to jump through hurdles because we, web developers, did a lazy job of checking how our JavaScript (or even CSS) works and fails and can cause obstructions is a god damn travesty and a failing of our jobs.
