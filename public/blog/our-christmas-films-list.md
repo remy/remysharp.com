@@ -5,7 +5,7 @@ published: true
 tags:
   - christmas
   - personal
-modified: '2018-12-18 09:17:55'
+modified: '2020-12-03 09:17:55'
 ---
 # Our Christmas Films List
 
@@ -142,13 +142,17 @@ mileage may vary!
 * [Klaus (2019)](https://www.imdb.com/title/tt4729430/)
 * [Die Hard (1988)](http://www.imdb.com/title/tt0095016/)
 
+## 2020
+
+* [Meet Me in St. Louis (1944)](http://www.imdb.com/title/tt0037059/)
+* [Last Christmas 2019](https://www.imdb.com/title/tt8623904/)
+* [The Grinch (2018)](https://www.imdb.com/title/tt2709692/)
+
 
 ## Future Potentials
 
-* [The Grinch (2018)](https://www.imdb.com/title/tt2709692/)
 * [8 Women (2002)](http://www.imdb.com/title/tt0283832/)
 * [Pottersville (2017)](http://www.imdb.com/title/tt3672120/)
-* [Meet Me in St. Louis (1944)](http://www.imdb.com/title/tt0037059/)
 * [How the Grinch Stole Christmas (2000)](http://www.imdb.com/title/tt0170016/)
 * [Love the Coopers (2015)](http://www.imdb.com/title/tt2279339/)
 * [The Family Stone (2005)](http://www.imdb.com/title/tt0356680/)
