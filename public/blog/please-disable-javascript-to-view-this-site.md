@@ -99,6 +99,6 @@ Or at least, I don't think it is. The point, that I wanted to return to, as I ta
 
 That's the lesson that heydonworks.com is reminded us of.
 
-There are many, many people browsing the web in many different ways. Ways that do not mirror my perfect 10 digits and their mortary ability and fairly decent eyesight, and (sometimes questionable) conative skills. There are people who browse the web on a huge gamut of devices and browsers.
+There are many, many people browsing the web in many different ways. Ways that do not mirror my perfect 10 digits and my motor ability and my fairly decent eyesight, and (sometimes questionable) conative skills. There are people who browse the web on a huge gamut of devices and browsers.
 
 Forcing them to jump through hurdles because we, web developers, did a lazy job of checking how our JavaScript (or even CSS) works and fails and can cause obstructions is a god damn travesty and a failing of our jobs.
