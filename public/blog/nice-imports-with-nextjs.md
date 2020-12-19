@@ -13,6 +13,9 @@ Except I discovered that Next.js (which is what I do most of my React dev with) 
 
 <!--more-->
 
+***Update 2020-12-19*** - the latest Next.js supports aliases directly through `jsconfig.json`, so you can [skip straight to that part](#bonus-vs-code-support) and you get path aliases for (nearly) free!
+
+
 ## Alias
 
 Next.js uses a preconfigured webpack under the hood that you don't need to mess with.
