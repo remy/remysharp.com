@@ -6,8 +6,8 @@ pages: 256
 goodreads: https://www.goodreads.com/book/show/51943186-last-christmas
 goodreads_id: 51943186
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1569153530l/51943186._SX318_SY475_.jpg
-read: 2020-12-14
-start: 2020-12-25
+read: 2020-12-25
+start: 2020-12-14
 rating: 4
 spoiler: false
 summary: "Many, many personal stories of Christmas, perfect for Christmas time reading even if most carry the same message: family."
