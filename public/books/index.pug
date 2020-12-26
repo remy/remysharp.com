@@ -39,25 +39,25 @@ layout: public
         each review in _data
           - rating = `${ '★'.repeat(review.rating) }${ '☆'.repeat(5 - review.rating)}`
           div(data-id=`${review.id}`)
-            img.cover(src=`/images/books/${review.book.id}.jpg`)
+            img.cover(src=`/images/books/${review.goodreads_id}.jpg`)
             p.when #{moment(review.read).format('D-MMM \'YY')}
               br
-              span(title=`${review.read}`) #{duration(review.started, review.read)}
+              span(title=`${review.read}`) #{duration(review.start, review.read)}
             p.title
-              a(href=`/books/${moment(review.read).format('YYYY')}/${review.slug || slugify(review.book.title)}`) #{review.book.title}
-            if review.review
+              a(href=`/books/${moment(review.read).format('YYYY')}/${review.slug || slugify(review.title)}`) #{review.title}
+            if review.summary
               p.review-link
                 if review.summary
                   span= review.summary
                 span
                   span 📝
-                  a(href=`/books/${moment(review.read).format('YYYY')}/${review.slug || slugify(review.book.title)}`) My review
-                  if review.spoiler === "true"
+                  a(href=`/books/${moment(review.read).format('YYYY')}/${review.slug || slugify(review.title)}`) My review
+                  if review.spoiler === true
                     span &nbsp;(includes spoilers)
             else
               p.review-link.no-review &nbsp;
 
-            p.author #{review.book.author}
+            p.author #{review.author}
             p.rating
               span.rating(data-rating=`${ review.rating }` aria-label=`${ review.rating } stars out of 5`)
                 span #{review.rating} / 5
