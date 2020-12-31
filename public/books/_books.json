@@ -1,5 +1,21 @@
 [
   {
+    "title": "The Master and Margarita",
+    "author": "Mikhail Bulgakov",
+    "published": 1967,
+    "pages": 369,
+    "goodreads": "https://www.goodreads.com/review/show/1873373881",
+    "goodreads_id": 53769829,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1591106736l/53769829._SX318_.jpg",
+    "read": "2020-12-31T00:00:00.000Z",
+    "start": "2020-11-04T00:00:00.000Z",
+    "rating": 3,
+    "spoiler": false,
+    "summary": "I literally have no idea what I read!",
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2020/the-master-and-margarita.md",
+    "slug": "the-master-and-margarita"
+  },
+  {
     "title": "Last Christmas",
     "author": "Greg Wise",
     "published": 2019,
@@ -7,8 +23,8 @@
     "goodreads": "https://www.goodreads.com/book/show/51943186-last-christmas",
     "goodreads_id": 51943186,
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1569153530l/51943186._SX318_SY475_.jpg",
-    "read": "2020-12-14T00:00:00.000Z",
-    "start": "2020-12-25T00:00:00.000Z",
+    "read": "2020-12-25T00:00:00.000Z",
+    "start": "2020-12-14T00:00:00.000Z",
     "rating": 4,
     "spoiler": false,
     "summary": "Many, many personal stories of Christmas, perfect for Christmas time reading even if most carry the same message: family.",
