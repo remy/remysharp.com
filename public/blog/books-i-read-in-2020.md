@@ -60,16 +60,6 @@ On that note, the majority of the books I read this year were from the 2010s era
 - [Record of a Spaceborn Few](/books/2020/record-of-a-spaceborn-few) - 368 pages
 - [Last Christmas](/books/2020/last-christmas) - 256 pages
 
-### 3 star
-
-- [Exhalation](/books/2020/exhalation) - 368 pages
-- [Children of Time (Children of Time #1)](/books/2020/children-of-time-children-of-time-1) - 609 pages
-- [Speccy Nation](/books/2020/speccy-nation) - 124 pages
-- [The Bell Jar](/books/2020/the-bell-jar) - 244 pages
-- [All My Friends Are Superheroes](/books/2020/all-my-friends-are-superheroes) - 54 pages
-- [The Midnight Library](/books/2020/the-midnight-library) - 284 pages
-- [The Master and Margarita](/books/2020/the-master-and-margarita) - 369
-
 ## Books by decade
 
 **1930**<br>
