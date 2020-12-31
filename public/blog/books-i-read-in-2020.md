@@ -7,7 +7,7 @@ tags:
 ---
 # Books I read in 2020
 
-This year has been a bit of an odd reading year. On one hand I've read some books I've absolutely entirely fallen in love with whilst at the same time I've read a few books (and am _still_ reading now) that are of average length but have taken me what felt like an age to read (_Children of Time_). I also read 10% of a book (_The Stone Man_) this year and hated so much that I stop there but still had to leave myself a review. I did manage 7,190 pages of 22 books (I'm excluding the 10% book…  ).
+This year has been a bit of an odd reading year. On one hand I've read some books I've absolutely entirely fallen in love with whilst at the same time I've read a few books (and am _still_ reading now) that are of average length but have taken me what felt like an age to read (_Children of Time_). I also read 10% of a book (_The Stone Man_) this year and hated so much that I stop there but still had to leave myself a review. I did manage 7,559 pages of 23 books (I'm excluding the 10% book…  ).
 
 My absolute favourite this year (and goes straight into my most favourite books of all time) was [The Long Way to a Small, Angry Planet](/books/2020/the-long-way-to-a-small-angry-planet) by Becky Chambers - _this is the first book, that I can remember, that has made me laugh (multiple times) out loud(!) and cry_.
 
@@ -19,7 +19,7 @@ Instead of my usual listing of all the reviews, since I now [publish](/feeds) [a
 
 **Shortest book**: [All My Friends Are Superheroes](/books/2020/all-my-friends-are-superheroes) _by Andrew Kaufman_ - 54 pages
 
-**Shortest read**: 4 days
+**Quickest read**: 4 days
 
 - [In the Dark (DI Adam Fawley, #2)](/books/2020/in-the-dark-di-adam-fawley-2) _by Cara Hunter_ (444 pages)
 - [Flowers for Algernon](/books/2020/flowers-for-algernon) _by Daniel Keyes_ - (228 pages)
@@ -28,11 +28,10 @@ Instead of my usual listing of all the reviews, since I now [publish](/feeds) [a
 
 - [Children of Time (Children of Time #1)](/books/2020/children-of-time-children-of-time-1) _by Adrian Tchaikovsky_ (609 pages)
 
-
 **Diversity of authors**:
 
 - Women: 8 - 6 of the books I read in 2020 we written by the same two authors (still counted as unique authors)
-- Men: 10
+- Men: 11
 
 Those who were not white authors, I believe there was only one to my discredit. Frustratingly some of my favourite authors are women and non-white women, so I really must do better to find more books from this background.
 
@@ -69,6 +68,7 @@ On that note, the majority of the books I read this year were from the 2010s era
 - [The Bell Jar](/books/2020/the-bell-jar) - 244 pages
 - [All My Friends Are Superheroes](/books/2020/all-my-friends-are-superheroes) - 54 pages
 - [The Midnight Library](/books/2020/the-midnight-library) - 284 pages
+- [The Master and Margarita](/books/2020/the-master-and-margarita) - 369
 
 ## Books by decade
 
@@ -81,6 +81,7 @@ On that note, the majority of the books I read this year were from the 2010s era
 **1960**<br>
 1963: [The Bell Jar](/books/2020/the-bell-jar) _by Sylvia Plath_<br>
 1966: [Flowers for Algernon](/books/2020/flowers-for-algernon) _by Daniel Keyes_<br>
+1967: [The Master and Margarita](/books/2020/the-master-and-margarita) _Mikhail Bulgakov_<br>
 
 **1980**<br>
 1982: [Spectrum Machine Language for the Absolute Beginner](/books/2020/spectrum-machine-language-for-the-absolute-beginner) _by William Tang_<br>
