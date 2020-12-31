@@ -25,4 +25,4 @@ What was a real delight was the return of ART. We met ART in _Artificial Conditi
 
 I do also love how Wells writes about these characters. Firstly they're respectful of pronouns - somehow whenever I've thought of a robot, I've referred to them as "he" yet robots have no gender. Wells makes it pretty clear that a) this has never been an issue to the constructs, and b) always makes sure we're using the right pronouns, including always referring to SecUnit's mushy clients as "humans and augmented humans".
 
-If you're a Murderbot fan, then I definitely think you'll enjoy this. If you've not read Murderbot before, then I highly [recommend it]((https://www.goodreads.com/review/show/2433870725)!
+If you're a Murderbot fan, then I definitely think you'll enjoy this. If you've not read Murderbot before, then I highly [recommend it](/books/2018/all-systems-red-the-murderbot-diaries-1)!
