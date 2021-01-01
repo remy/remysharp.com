@@ -1,7 +1,6 @@
 ---
 title: Books I read in 2020
 date: '2021-01-01'
-draft: true
 tags:
   - personal
 ---
