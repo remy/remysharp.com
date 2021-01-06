@@ -592,3 +592,28 @@ map("* @property {\(.type)} \(.key)")[]
 ```
 
 [Demo](https://jqterm.com/bb3bb56e0824ceddeb50ff0fac30159e?query=.profile%20%7C%20to_entries%20%7C%20map%28.%20%2B%20%7B%20type%3A%20.value%20%7C%20type%20%7D%20%7C%20del%28.value%29%29%20%7C%20map%28%22*%20%40property%20%7B%5C%28.type%29%7D%20%5C%28.key%29%22%29%5B%5D&raw=true)
+
+---
+
+Convert a decimal value into a hex string:
+
+```jq
+def hexChr:
+  floor | if . < 10 then . else ["A", "B", "C", "D", "E", "F"][. % 10] end
+;
+
+def toHex:
+  def toHex:
+      if . / 16 >= 1 then
+          (. / 16 | toHex), (. % 16 | hexChr)
+      else
+          . % 16 | hexChr
+      end
+  ;
+  [toHex] | join("")
+;
+
+toHex
+```
+
+[Demo](https://jqterm.com/7d570735a5fb9b8d627a9842cb7db6c2?query=def%20hexChr%3A%0A%20%20floor%20%7C%20if%20.%20%3C%2010%20then%20.%20else%20%5B%22A%22%2C%20%22B%22%2C%20%22C%22%2C%20%22D%22%2C%20%22E%22%2C%20%22F%22%5D%5B.%20%25%2010%5D%20end%0A%3B%0A%0Adef%20toHex%3A%0A%20%20def%20toHex%3A%0A%20%20%20%20%20%20if%20.%20%2F%2016%20%3E%3D%201%20then%20%0A%20%20%20%20%20%20%20%20%20%20%28.%20%2F%2016%20%7C%20toHex%29%2C%20%28.%20%25%2016%20%7C%20hexChr%29%0A%20%20%20%20%20%20else%0A%20%20%20%20%20%20%20%20%20%20.%20%25%2016%20%7C%20hexChr%0A%20%20%20%20%20%20end%0A%20%20%3B%0A%20%20%5BtoHex%5D%20%7C%20join%28%22%22%29%0A%3B%0A%0AtoHex)
