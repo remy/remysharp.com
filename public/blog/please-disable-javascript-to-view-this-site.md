@@ -56,7 +56,7 @@ In truth though I really only visited heydonworks.com to view the "redesign". He
 
 ## Is requiring no JavaScript "bad for business"?
 
-I couldn't say, but if I were to bet, I'd be prepared to put down some of my hard earned money nuts to say that Heydon has had an influx of traffic following their redesign.
+I couldn't say, but if I were to bet, I'd be prepared to put down some of my hard earned monkey nuts to say that Heydon has had an influx of traffic following their redesign.
 
 There's definitely the usual fair share of upset White Boy Bro developers at Heydon's antics, and replies citing that the site isn't accessible, or that the site doesn't "enhance" **but forces the user's browsing requirements.** We'll get back to this too.
 
