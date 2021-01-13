@@ -66,7 +66,7 @@ There's a thread of thought that this site is anti-JavaScript. But that's not re
 
 But is this bad for Heydon's web site? I doubt it. For one, our web sites, our online personas are goldfish in an ocean that is the web. I'm pretty confident that most of the readers of my own blog have never seen my business web site (or are even aware it exists) - those who do visit it are going there with intention. I suspect that's the case for heydonworks.com also.
 
-If anything it shows that Heydon knows what he's doing. Probably more so that the developers bashing out the websites that leave my browser hanging or chewing up my phone's battery.
+If anything it shows that Heydon knows what he's doing. Probably more so than the developers bashing out the websites that leave my browser hanging or chewing up my phone's battery.
 
 ## An interesting lesson on JavaScript
 
@@ -99,6 +99,6 @@ Or at least, I don't think it is. The point, that I wanted to return to, as I ta
 
 That's the lesson that heydonworks.com is reminded us of.
 
-There are many, many people browsing the web in many different ways. Ways that do not mirror my perfect 10 digits and my motor ability and my fairly decent eyesight, and (sometimes questionable) conative skills. There are people who browse the web on a huge gamut of devices and browsers.
+There are many, many people browsing the web in many different ways. Ways that do not mirror my perfect 10 digits and my motor skills and my fairly decent eyesight, and (sometimes questionable) conative abilities. There are people who browse the web on a huge gamut of devices and browsers.
 
 Forcing them to jump through hurdles because we, web developers, did a lazy job of checking how our JavaScript (or even CSS) works and fails and can cause obstructions is a god damn travesty and a failing of our jobs.
