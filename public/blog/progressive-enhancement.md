@@ -79,7 +79,7 @@ The problem is: browsers are pretty poor when compared to the proprietary and cl
 
 There's pressure (from SF/Apple/who knows) to deliver web sites that feel "native" (no, I won't define this) and browsers are always playing catch up with native, proprietary platforms: this is a fact.
 
-Native media elements, native sockets, native audio, native push notifications, native control over network - this all took it's merry time to get the browser. So when a company decides that the tried and tested approach to styling at list of articles won't give them the unique UX they want *and* the 60fps interaction, then of course they're going to bake up their own technology (in Flipboard's case, re-inventing wheels with canvas...the *exact same way* [Bespin](http://ajaxian.com/archives/bespin-a-new-mozilla-labs-experimental-extensible-code-editor-using-canvas) did back in it's day).
+Native media elements, native sockets, native audio, native push notifications, native control over network - this all took it's merry time to get the browser. So when a company decides that the tried and tested approach to styling at list of articles won't give them the unique UX they want *and* the 60fps interaction, then of course they're going to bake up their own technology (in Flipboard's case, re-inventing wheels with canvas...the *exact same way* [Bespin](https://web.archive.org/web/2019/http://ajaxian.com/archives/bespin-a-new-mozilla-labs-experimental-extensible-code-editor-using-canvas) did back in it's day).
 
 ## But...how would a thick-client work without JavaScript?
 

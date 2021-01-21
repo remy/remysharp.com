@@ -8,7 +8,7 @@ published: true
 ---
 # Server Side React
 
-Even before I watched Node.js being revealed to the greater world at jsconf.eu 2009, I had been keen to solve the problem of universal JavaScript. That is to say: a single code base that runs both on the server and on the client. I remember tinkering with [Rhino for SS JavaScript](http://ejohn.org/blog/bringing-the-browser-to-the-server/) and [Apatana's Jaxer](http://ajaxian.com/archives/aptana-releases-jaxer-ajax-server-built-on-mozilla), but I didn't get far. Node.js allowed me to flirt with the idea, but I quickly realised that a single code base wasn't quite achievable without a lot of help.
+Even before I watched Node.js being revealed to the greater world at jsconf.eu 2009, I had been keen to solve the problem of universal JavaScript. That is to say: a single code base that runs both on the server and on the client. I remember tinkering with [Rhino for SS JavaScript](http://ejohn.org/blog/bringing-the-browser-to-the-server/) and [Apatana's Jaxer](https://web.archive.org/web/2019/http://ajaxian.com/archives/aptana-releases-jaxer-ajax-server-built-on-mozilla), but I didn't get far. Node.js allowed me to flirt with the idea, but I quickly realised that a single code base wasn't quite achievable without a lot of help.
 
 In a recent client project, I decided to try out using React [for the first time](https://remysharp.com/2016/09/13/first-impressions-of-react) and quickly also decided to use it for my server side rendering. I'm writing up my experience, and split this post into a high level learnings and the second post will be technical details of the implementation.
 

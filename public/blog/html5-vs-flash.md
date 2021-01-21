@@ -51,7 +51,7 @@ I think two things will happen. Firstly I do think that Flash will move (or rema
 
 > How difficult is it for a Web developer today to use the fragmented Open Web standards vs. the more consistent Flash?
 
-I don't think it's too hard at at all, but it really depends on what technology you choose. Web Storage has pretty solid support in the latest browsers (if not the nightly builds), but it's relatively easy to patch missing support just using JavaScript which would map sessionStorage to the [window.name hack](http://ajaxian.com/archives/whats-in-a-windowname) and localStorage to cookies.
+I don't think it's too hard at at all, but it really depends on what technology you choose. Web Storage has pretty solid support in the latest browsers (if not the nightly builds), but it's relatively easy to patch missing support just using JavaScript which would map sessionStorage to the [window.name hack](https://web.archive.org/web/2019/http://ajaxian.com/archives/whats-in-a-windowname) and localStorage to cookies.
 
 Geolocation can be detected and made use of if it's available, whilst those without the functionality can still map their position using something like Google Maps or a text field, thus taking a progressive enhancement approach.
 
