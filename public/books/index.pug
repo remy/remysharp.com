@@ -13,10 +13,10 @@ layout: public
       h2 Currently
       each book in _currently
         div
-          img(src=`${book.image}`)
+          img(src=`${book.cover}`)
           div
             p.title
-              a(href=`${book.url}` target="_blank")= book.title
+              a(href=`${book.goodreads}` target="_blank")= book.title
             p.by By #{book.author}
 
   .post-content
@@ -38,7 +38,7 @@ layout: public
       section
         each review in _data
           - rating = `${ '★'.repeat(review.rating) }${ '☆'.repeat(5 - review.rating)}`
-          div(data-id=`${review.id}`)
+          div(data-id=`${review.slug}`)
             img.cover(src=`/images/books/${review.goodreads_id}.jpg`)
             p.when #{moment(review.read).format('D-MMM \'YY')}
               br
