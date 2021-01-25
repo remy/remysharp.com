@@ -11,7 +11,7 @@
   },
   "scripts": {
     "dev": "nodemon -w lib/ lib/dev.js",
-    "update": "node lib/books.js; node lib/currently-reading.js",
+    "update": "node lib/currently-reading.js",
     "links": "node lib/links.js",
     "version": "sh bin/hashit.sh",
     "build": "npm run version; npm run links; node lib/index.js",

@@ -1,5 +1,20 @@
 [
   {
+    "title": "Zed",
+    "author": "Joanna Kavenna",
+    "published": 2019,
+    "pages": 352,
+    "goodreads": "https://www.goodreads.com/review/show/3698035466",
+    "goodreads_id": 45321626,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556458838l/45321626._SX318_.jpg",
+    "read": "2021-01-19T00:00:00.000Z",
+    "start": "2020-12-16T00:00:00.000Z",
+    "rating": 3,
+    "summary": "A good read, rather on the nose as to the BS that exists in tech",
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/zed.md",
+    "slug": "zed"
+  },
+  {
     "title": "The Master and Margarita",
     "author": "Mikhail Bulgakov",
     "published": 1967,
@@ -14,6 +29,21 @@
     "summary": "I literally have no idea what I read!",
     "filename": "/Users/remy/dev/remysharp.com/public/books/2020/the-master-and-margarita.md",
     "slug": "the-master-and-margarita"
+  },
+  {
+    "title": "A Boy Called Christmas",
+    "author": "Matt Haig",
+    "published": 2015,
+    "pages": 272,
+    "goodreads": "https://www.goodreads.com/review/show/1873373881",
+    "goodreads_id": 26805962,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1443049898l/26805962.jpg",
+    "read": "2020-12-31T00:00:00.000Z",
+    "start": "2017-01-09T00:00:00.000Z",
+    "rating": 4,
+    "summary": "Always lovely. Though kinda ends about 25% short of the actual ending, then it's a little dragged out.",
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2020/a-boy-called-christmas.md",
+    "slug": "a-boy-called-christmas"
   },
   {
     "title": "Last Christmas",
@@ -1438,6 +1468,21 @@
     "summary": "A beautiful tale, and the detail of the characters, their surroundings and the history throughout the book made me often wonder if it was actually a biography!",
     "filename": "/Users/remy/dev/remysharp.com/public/books/2017/a-gentleman-in-moscow.md",
     "slug": "a-gentleman-in-moscow"
+  },
+  {
+    "title": "A Christmas Carol",
+    "author": "Charles Dickens",
+    "published": 1843,
+    "pages": 90,
+    "goodreads": "https://www.goodreads.com/review/show/2222945703",
+    "goodreads_id": 23726464,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1418121739l/23726464.jpg",
+    "read": "2017-12-26T00:00:00.000Z",
+    "start": "2017-12-23T00:00:00.000Z",
+    "rating": 4,
+    "summary": "Really good, classic stuff. Dickens certainly knew how to string out a sentence too!",
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2017/a-christmas-carol.md",
+    "slug": "a-christmas-carol"
   },
   {
     "title": "Beyond Broadhall (The '86 Fix #2)",
