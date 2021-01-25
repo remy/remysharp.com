@@ -12,7 +12,7 @@ rating: 3
 summary: "A good read, rather on the nose as to the BS that exists in tech"
 ---
 
-The book starts out really well and strong. Though I wasn't entirely sure who I was supposed to be pluming for, each character had their own sadness.
+The book starts out really well and strong. Though I wasn't entirely sure who I was supposed to be plumping for, each character had their own sadness.
 
 There's a tech background to the book that I've seen face to face, not the AI/sentient bits, but the constant tracking *and* the BS fobbing off that people in tech (who mostly don't understand their tech) use. Certainly for the first half of the book I found myself chuckling away.
 
