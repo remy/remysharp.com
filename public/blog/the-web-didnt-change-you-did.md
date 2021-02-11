@@ -67,8 +67,10 @@ But that's because the businesses online have evolved and grown. In 1997, if you
 
 I wouldn't dream of hosting a business product on a platform that I couldn't scale through some web interface.
 
-But for my own playing? There's no way and no need for the complicity that larger businesses need. In the same way that if you wanted to sell an old monitor on a site like ebay or the likes, you're not going to set up a limited business, file for VAT registration, appoint an accountant, get insurance and all the other gubbins.
+But for my own playing? There's no way and no need for the complexity that larger businesses need.
 
-The web really didn't change. It really didn't "become complex". The development process is not one single path. There is simply more choice and more options.
+In the same way that if you wanted to sell an old monitor on a site like ebay, you're not going to set up a limited business, file for VAT registration, appoint an accountant, get insurance and all the other very involved complicated tasks.
 
-We, you and I, the developers, consumers and businesses are responsible for *demanding* more complicated (and thorough) tools. We are not, however, beholden to complexity.
+The web really didn't change. It really didn't become complex. The web development process is not one single path. There is simply more choice and more options.
+
+We, you and I, the developers, consumers and businesses are responsible for *demanding* more complicated (and more thorough) tools. We are not, however, beholden to complexity.
