@@ -57,7 +57,7 @@ But when it comes to web development there is a massive range of options, except
 
 Web development did not change. Web development grew. There are more options now, not different options.
 
-Browsers have become _more_ capable and still work with web pages built over [20 years ago](http:/./info.cern.ch/).
+Browsers have become _more_ capable and still work with web pages built over [20 years ago](http://info.cern.ch/).
 
 You can use as little as you want or as much as you please. Here, for example is a [web site I built](https://zx.remysharp.com/audio/#src=MjM3LDE3MCwwLDEwLDIzNywxNDMsMCwwLDE3MywxMjAsMCwxNzMsMTAxLDAsMTczLDg1LDAsMTczLDcxLDAsMTczLDE1LDEsMTczLDIyOCwwLDE3MywxOTEsMCwxNzMsMTYxLDAsMTczLDEzNSwwLDE3MywxMTQsMCwxNzMsMTcwLDAsMTczLDE0MywwLDE3MywxMjAsMCwxNzMsMTAxLDAsMTczLDg1LDAsMTczLDcxLDAsMTczLDE1LDEsMTczLDIyOCwwLDE3MywxOTEsMCwxNzMsMTYxLDAsMTczLDEzNSwwLDE3MywxMTQsMCwxNzMsOTUsMCwxNzMsODAsMCwyMDgsMzI=) that ported a Windows XP tool to the browser without using a single framework. The tooling pipeline, originally was: a text editor and the ability to upload to a hosting platform - nothing else. In my case, I wanted something that behaved like a specific Windows program so that prerequisite relies on some dynamic programming language (JavaScript).
 
