@@ -56,7 +56,6 @@ Add the `next.config.js` file to your project then it needs to add to the `webpa
 
 ```js
 const path = require('path');
-const webpack = require('webpack');
 
 module.exports = {
   webpack: config => {
