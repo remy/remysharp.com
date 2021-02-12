@@ -27,7 +27,7 @@ Framework fatigue definitely exists. It's also known as innovation in this parti
 
 ## The illusive freedom of the jQuery days
 
-What spurred on this blog post was a link, quote and a [comment from Jeremy Keith](https://adactio.com/links/17804). The quote was:
+What spurred on this blog post that [Jeremy Keith](https://adactio.com/links/17804) bookmarked and shared. [Asko Nõmm wrote](https://www.askonomm.com/blog/i-dont-want-to-do-frontend-anymore):
 
 > Starting a new project? Make sure to write your project idea down because by the time you are finished setting up the vast boilerplate you have probably forgotten it.
 
