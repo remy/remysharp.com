@@ -11,7 +11,8 @@
     "start": "2020-01-27T00:00:00.000Z",
     "rating": 3,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/to-be-taught-if-fortunate.md",
-    "slug": "to-be-taught-if-fortunate"
+    "slug": "to-be-taught-if-fortunate",
+    "summary": "To Be Taught is another excellent story from Becky Chambers. Gently, honest, touching and inquisitive about the universe."
   },
   {
     "title": "Who Am I, Again?",
@@ -25,7 +26,8 @@
     "start": "2021-01-20T00:00:00.000Z",
     "rating": 3,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/who-am-i-again.md",
-    "slug": "who-am-i-again"
+    "slug": "who-am-i-again",
+    "summary": "Growing up with Lenny Henry as a stable diet of light comedy his early years story was enlightening."
   },
   {
     "title": "Zed",
