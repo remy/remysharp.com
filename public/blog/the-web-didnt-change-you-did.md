@@ -49,7 +49,7 @@ What's amusing to me today in 2021 is that I don't even need jQuery to do a lot 
 
 These days are not illusive. This so-called simplicity has not gone. This simple pleasure of creating is still right there.
 
-Sure the _choices_ might be overwhelming, but what you learnt in the mid-2000s still works. Browser bend over backwards to maintain backward compatibility. As someone who is personally embedded very deep in web development I can tell the only big tech that's actually hard to do "the old" way is http (as in non-SSL) or "old https" because the new TLS stuff isn't supported by old browsers and the entire page fails to load.
+Sure the _choices_ might be overwhelming, but what you learnt in the mid-2000s still works. Browsers bend over backwards to maintain backward compatibility. As someone who is personally embedded very deep in web development I can tell the only big tech that's actually hard to do "the old" way is http (as in non-SSL) or "old https" because the new TLS stuff isn't supported by old browsers and the entire page fails to load.
 
 But when it comes to web development there is a massive range of options, except, perhaps if you're [still using](http://www.stopbadtherapy.com/standards.shtml#new) `document.layers` you're out of luck, but we're talking about dropping support for a non-standard API from _over_ 2 decades ago (and don't worry, `document.all` does still work).
 
@@ -57,7 +57,7 @@ But when it comes to web development there is a massive range of options, except
 
 Web development did not change. Web development grew. There are more options now, not different options.
 
-Browsers have become _more_ capable and still work with web pages built over [20 years ago](http:/./info.cern.ch/).
+Browsers have become _more_ capable and still work with web pages built over [20 years ago](http://info.cern.ch/).
 
 You can use as little as you want or as much as you please. Here, for example is a [web site I built](https://zx.remysharp.com/audio/#src=MjM3LDE3MCwwLDEwLDIzNywxNDMsMCwwLDE3MywxMjAsMCwxNzMsMTAxLDAsMTczLDg1LDAsMTczLDcxLDAsMTczLDE1LDEsMTczLDIyOCwwLDE3MywxOTEsMCwxNzMsMTYxLDAsMTczLDEzNSwwLDE3MywxMTQsMCwxNzMsMTcwLDAsMTczLDE0MywwLDE3MywxMjAsMCwxNzMsMTAxLDAsMTczLDg1LDAsMTczLDcxLDAsMTczLDE1LDEsMTczLDIyOCwwLDE3MywxOTEsMCwxNzMsMTYxLDAsMTczLDEzNSwwLDE3MywxMTQsMCwxNzMsOTUsMCwxNzMsODAsMCwyMDgsMzI=) that ported a Windows XP tool to the browser without using a single framework. The tooling pipeline, originally was: a text editor and the ability to upload to a hosting platform - nothing else. In my case, I wanted something that behaved like a specific Windows program so that prerequisite relies on some dynamic programming language (JavaScript).
 
