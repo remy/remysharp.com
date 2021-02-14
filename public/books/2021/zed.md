@@ -7,7 +7,7 @@ goodreads: https://www.goodreads.com/review/show/3698035466
 goodreads_id: 45321626
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556458838l/45321626._SX318_.jpg
 read: 2021-01-19
-start: 2020-12-16
+start: 2021-01-01
 rating: 3
 summary: "A good read, rather on the nose as to the BS that exists in tech"
 ---

@@ -1,5 +1,33 @@
 [
   {
+    "title": "To Be Taught, If Fortunate",
+    "author": "Becky Chambers",
+    "published": 2019,
+    "pages": 160,
+    "goodreads": "https://www.goodreads.com/review/show/3698035532",
+    "goodreads_id": 43714627,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555587900l/43714627._SY475_.jpg",
+    "read": "2021-02-08T00:00:00.000Z",
+    "start": "2020-01-27T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/to-be-taught-if-fortunate.md",
+    "slug": "to-be-taught-if-fortunate"
+  },
+  {
+    "title": "Who Am I, Again?",
+    "author": "Lenny Henry",
+    "published": 2019,
+    "pages": 304,
+    "goodreads": "https://www.goodreads.com/review/show/3785568903",
+    "goodreads_id": 46134185,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1577539796l/46134185._SY475_.jpg",
+    "read": "2021-01-27T00:00:00.000Z",
+    "start": "2021-01-20T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/who-am-i-again.md",
+    "slug": "who-am-i-again"
+  },
+  {
     "title": "Zed",
     "author": "Joanna Kavenna",
     "published": 2019,
@@ -8,7 +36,7 @@
     "goodreads_id": 45321626,
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556458838l/45321626._SX318_.jpg",
     "read": "2021-01-19T00:00:00.000Z",
-    "start": "2020-12-16T00:00:00.000Z",
+    "start": "2021-01-01T00:00:00.000Z",
     "rating": 3,
     "summary": "A good read, rather on the nose as to the BS that exists in tech",
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/zed.md",
@@ -640,7 +668,7 @@
   {
     "title": "Meeting Mungo Thunk",
     "author": "Keith A. Pearson",
-    "published": null,
+    "published": 2018,
     "pages": 398,
     "goodreads": "https://www.goodreads.com/book/show/40733822-meeting-mungo-thunk",
     "goodreads_id": 40733822,
@@ -800,7 +828,7 @@
   {
     "title": "Clawthorn (Clement, #3)",
     "author": "Keith A. Pearson",
-    "published": null,
+    "published": 2018,
     "pages": 505,
     "goodreads": "https://www.goodreads.com/book/show/43247628-clawthorn",
     "goodreads_id": 43247628,
@@ -880,7 +908,7 @@
   {
     "title": "Christmas Jars Collector's Edition",
     "author": "Jason F. Wright",
-    "published": null,
+    "published": 2017,
     "pages": 240,
     "goodreads": "https://www.goodreads.com/book/show/36336654-christmas-jars-collector-s-edition",
     "goodreads_id": 36336654,
@@ -1344,7 +1372,7 @@
   {
     "title": "Who Sent Clement? (Clement #1)",
     "author": "Keith A. Pearson",
-    "published": null,
+    "published": 2017,
     "pages": 503,
     "goodreads": "https://www.goodreads.com/book/show/35607152-who-sent-clement",
     "goodreads_id": 35607152,
@@ -1354,8 +1382,8 @@
     "rating": 4,
     "spoiler": false,
     "summary": "Really enjoyed it, and after reading Pearson's '86 fix and the sequel, I'm pretty certain I'll continue to read his books.",
-    "filename": "/Users/remy/dev/remysharp.com/public/books/2018/who-sent-clement?-clement-1.md",
-    "slug": "who-sent-clement?-clement-1"
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2018/who-sent-clement-clement-1.md",
+    "slug": "who-sent-clement-clement-1"
   },
   {
     "title": "The Night Masquerade (Binti #3)",
