@@ -1523,7 +1523,8 @@
       "date": {
         "start": "2019-10-03"
       },
-      "url": "https://fronteers.nl/congres/2019/schedule"
+      "url": "https://fronteers.nl/congres/2019/schedule",
+      "links": [["video", "https://vimeo.com/364372321"]]
     },
     {
       "slug": "2019_alldayhey",
