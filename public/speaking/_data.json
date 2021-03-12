@@ -1524,7 +1524,14 @@
         "start": "2019-10-03"
       },
       "url": "https://fronteers.nl/congres/2019/schedule",
-      "links": [["video", "https://vimeo.com/364372321"]]
+      "links": [
+        ["video", "https://vimeo.com/364372321"],
+        [
+          "slides",
+          "https://adactio.com/extras/slides/howwebuilttheworldwidewebinfivedays.pdf"
+        ],
+        ["Jeremy's transcript", "https://adactio.com/articles/15975"]
+      ]
     },
     {
       "slug": "2019_alldayhey",
