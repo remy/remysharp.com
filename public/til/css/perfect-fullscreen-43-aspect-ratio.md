@@ -10,7 +10,7 @@ canvas {
 }
 ```
 
-Which is great, except for when the browser width (viewport more specifically) is wider than the height of the browser by more than 25%. Specific, eh? i.e. the aspect ratio of the browser moves above 1.333 (repeating).
+Which is great, except for when the browser width (viewport more specifically) is wider than the height of the browser by more than 33% (or is it 25%? ¯\\_(ツ)_/¯). Specific, eh? i.e. the aspect ratio of the browser moves above 1.333 (repeating).
 
 At this point the bottom of the canvas gets cropped which I didn't want.
 
