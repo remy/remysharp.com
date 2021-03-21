@@ -9,7 +9,7 @@ With `LAYER 1,1`:
 - To then select a colour for the layer, the `LAYER PALETTE 0, i, v` routine is used (or a palette can be loaded with `LAYER PALETTE 0 BANK n, i`).
 - The maximum number of `INK` is dictated by the `PALETTE FORMAT 255`, and in this case calling `INK 255` is legal. If the palette were formatted to `127`, calling `INK 255` would result in a `K Invalid Colour` exception.
 - `PAPER` is limited. Essentially it supports `256 / (palette format+1)` colours. So if you call `PALETTE FORMAT 255`, you get one paper colour (and 255 inks). If you `PALETTE FORMAT 63`, you get four paper colours. This is because paper is using the MSB, and with 64 inks available (colour is zero indexed), the top 2 bits of the byte are available so `0b00` (0), `0b01` (1), `0b10` (2) and `0b11` (3).
-- The paper value from 0 onwards is taken from palette index 128. So you can change the paper colour by doing `LAYER PALETTE 0, 128, 0` to set `PAPER 0` to black, **or with `PALETTE FORMAT 63 : LAYER PALETTE 0, 129, 292 : PAPER 1` sets the paper to grey**.
+- The **paper value from 0 onwards is taken from palette index 128**. So you can change the paper colour by doing `LAYER PALETTE 0, 128, 0` to set `PAPER 0` to black, **or with `PALETTE FORMAT 63 : LAYER PALETTE 0, 129, 292 : PAPER 1` sets the paper to grey**.
 
 So if you want 64 paper colours, you can use `PALETTE FORMAT 1`
 
