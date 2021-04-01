@@ -1,5 +1,19 @@
 [
   {
+    "title": "James Acaster's Classic Scrapes",
+    "author": "James Acaster",
+    "published": "NaN",
+    "pages": 302,
+    "goodreads": "https://www.goodreads.com/review/show/3828719757",
+    "goodreads_id": 35381841,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1496812507l/35381841._SY475_.jpg",
+    "read": "2021-02-25T00:00:00.000Z",
+    "start": "2021-02-09T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/james-acasters-classic-scrapes.md",
+    "slug": "james-acasters-classic-scrapes"
+  },
+  {
     "title": "To Be Taught, If Fortunate",
     "author": "Becky Chambers",
     "published": 2019,
@@ -11,8 +25,7 @@
     "start": "2021-01-27T00:00:00.000Z",
     "rating": 3,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/to-be-taught-if-fortunate.md",
-    "slug": "to-be-taught-if-fortunate",
-    "summary": "To Be Taught is another excellent story from Becky Chambers. Gently, honest, touching and inquisitive about the universe."
+    "slug": "to-be-taught-if-fortunate"
   },
   {
     "title": "Who Am I, Again?",
@@ -26,8 +39,7 @@
     "start": "2021-01-20T00:00:00.000Z",
     "rating": 3,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/who-am-i-again.md",
-    "slug": "who-am-i-again",
-    "summary": "Growing up with Lenny Henry as a stable diet of light comedy his early years story was enlightening."
+    "slug": "who-am-i-again"
   },
   {
     "title": "Zed",
@@ -69,7 +81,7 @@
     "goodreads_id": 26805962,
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1443049898l/26805962.jpg",
     "read": "2020-12-31T00:00:00.000Z",
-    "start": "2020-11-29T00:00:00.000Z",
+    "start": "2017-01-09T00:00:00.000Z",
     "rating": 4,
     "summary": "Always lovely. Though kinda ends about 25% short of the actual ending, then it's a little dragged out.",
     "filename": "/Users/remy/dev/remysharp.com/public/books/2020/a-boy-called-christmas.md",
@@ -184,8 +196,8 @@
     "rating": 5,
     "spoiler": false,
     "summary": "This is the first book, that I can remember, that has made me laugh (multiple times) out loud(!) and cry. I loved it.",
-    "filename": "/Users/remy/dev/remysharp.com/public/books/2020/the-long-way-to-a-small-angry-planet.md",
-    "slug": "the-long-way-to-a-small-angry-planet"
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2020/the-long-way-to-a-small,-angry-planet.md",
+    "slug": "the-long-way-to-a-small,-angry-planet"
   },
   {
     "title": "Stardust",
@@ -670,7 +682,7 @@
   {
     "title": "Meeting Mungo Thunk",
     "author": "Keith A. Pearson",
-    "published": 2018,
+    "published": null,
     "pages": 398,
     "goodreads": "https://www.goodreads.com/book/show/40733822-meeting-mungo-thunk",
     "goodreads_id": 40733822,
@@ -830,7 +842,7 @@
   {
     "title": "Clawthorn (Clement, #3)",
     "author": "Keith A. Pearson",
-    "published": 2018,
+    "published": null,
     "pages": 505,
     "goodreads": "https://www.goodreads.com/book/show/43247628-clawthorn",
     "goodreads_id": 43247628,
@@ -910,7 +922,7 @@
   {
     "title": "Christmas Jars Collector's Edition",
     "author": "Jason F. Wright",
-    "published": 2017,
+    "published": null,
     "pages": 240,
     "goodreads": "https://www.goodreads.com/book/show/36336654-christmas-jars-collector-s-edition",
     "goodreads_id": 36336654,
@@ -1374,7 +1386,7 @@
   {
     "title": "Who Sent Clement? (Clement #1)",
     "author": "Keith A. Pearson",
-    "published": 2017,
+    "published": null,
     "pages": 503,
     "goodreads": "https://www.goodreads.com/book/show/35607152-who-sent-clement",
     "goodreads_id": 35607152,

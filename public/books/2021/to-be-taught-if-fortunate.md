@@ -9,6 +9,7 @@ cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/155
 read: 2021-02-08
 start: 2021-01-27
 rating: 3
+summary: "To Be Taught is another excellent story from Becky Chambers. Gently, honest, touching and inquisitive about the universe."
 ---
 
 To Be Taught is another excellent story from Becky Chambers. Gently, honest, touching and inquisitive about the universe.

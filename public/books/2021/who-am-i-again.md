@@ -9,6 +9,7 @@ cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/157
 read: 2021-01-27
 start: 2021-01-20
 rating: 3
+summary: "Growing up with Lenny Henry as a stable diet of light comedy his early years story was enlightening."
 ---
 
 Growing up with Lenny Henry as a stable diet of light comedy his early years story was enlightening.

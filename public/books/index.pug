@@ -36,7 +36,8 @@ layout: public
             option(value="2") ★★
             option(value="1") ★
       section
-        each review in _data
+        each book in collections.books
+          - review = book.data
           - rating = `${ '★'.repeat(review.rating) }${ '☆'.repeat(5 - review.rating)}`
           div(data-id=`${review.slug}`)
             img.cover(width="64" src=`/images/books/${review.goodreads_id}.jpg`)
