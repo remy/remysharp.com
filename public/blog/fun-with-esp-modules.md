@@ -39,7 +39,9 @@ Once connected there's two access options: flash or boot. Booting will also let 
 
 ## Running without the USB adapter
 
-This is a topic that's covered in a lot of places and there's some good
+This is a topic that's covered in a lot of places and there's some good resources online so I won't repeat it. This (image by alderweb) has been useful though, specifically to know which pins to hold `HIGH` during boot:
+
+![ESP pinout by https://adlerweb.info](/images/esp-01-pinout.jpg)
 
 ## AT commands
 
@@ -150,6 +152,7 @@ There's also another [EEPROM library](https://github.com/jwrw/ESP_EEPROM) that's
 
 - Deep sleep mode - these devices are supposed to least years when in deep sleep, but all my projects thus far have had external power supplies
 - I2C over the SDL and SCL lines to offer more buttons/sensors into the ESP
+- SSL - actually I have tried it and it failed with the versions I was testing with, but I've not needed to request over https yet from the ESP so I've ignored it for now
 - File System - if you noticed from the memory map above, there's room for files to be stored. From the docs there's a couple of options, but this means that if I'm serving a web page, I can put the static assets (like JavaScript, CSS and images) in this space instead of having to dump it all in the sketch itself. It also looks like there's a few options on how much space you can have too:
 
 ![The file system options on the ESP 01](/images/esp-filesystem.png)
