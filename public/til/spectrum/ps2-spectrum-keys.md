@@ -23,4 +23,4 @@ Keys that are required when in some other mode that I don't know the name for (i
 | Colon : | Ctrl + z |
 
 
-There's also [this document](https://www.specnext.com/new-ps2-us-keymap/) that shows PS2 mappings to the spectrum, useful when you're forced
+There's also [this document](https://www.specnext.com/new-ps2-us-keymap/) that shows PS2 mappings to the spectrum, useful when you're forced to use the "48K style keys".
