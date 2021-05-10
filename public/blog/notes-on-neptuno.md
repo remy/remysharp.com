@@ -10,11 +10,13 @@ tags:
 
 I recently - randomly - bought myself a [neptUNO FPGA machine](https://www.antoniovillena.es/store/product/neptuno/), which is somewhere between a MiST and a [MiSTer machine](https://www.youtube.com/watch?v=lJZwMUaJmc0).
 
-The neptUNO is middle weight retro gaming/platform machine. It can run Spectrum (and the new Spectrum Next), C64, NES, Megadrive, SNES, PC Engine, Amiga 500, Vectrex, original arcade like Galaxian and Bubble Bobble and some more. To run the "core" it does require that someone has written the code to program the FPGA but there's a pretty [good collection already available](https://github.com/neptuno-fpga/Binaries/).
+The neptUNO works well as a middle weight retro gaming/platform machine. It can run Spectrum (and the new Spectrum Next), C64, NES, Megadrive, SNES, PC Engine, Amiga 500, Vectrex, original arcade like Galaxian and Bubble Bobble and some more. To run the "core" it does require that someone has written the code to program the FPGA but there's a pretty [good collection already available](https://github.com/neptuno-fpga/Binaries/).
 
 What appealed to me was that firstly it was all prebuilt (I'd learnt a little about the MiSTer machines but it seemed I needed to find the right parts and put it together, and goodness knows I'd frankenstein mine!), but also €150 (plus postage) wasn't too tough on the wallet.
 
 Getting set up however is a bit of wild west situation, partly because it's new, partly because it's fairly unique. So I've written up my notes, either to help remind myself in years to come or for other english readers (there's a lot of resources in spanish).
+
+<!--more-->
 
 ## Getting started
 
@@ -35,7 +37,7 @@ I've personally put the binaries directory in a root directory called `/_System/
 
 _(excuse the crunchy image, something was up with my capture device)_
 
-Navigating the menu can be done using a joystick/joypad or a PS/2 keyboard.
+Navigating the menu can be done using a joystick/joypad or the keyboard, but you will need a keyboard to proceed with any of the cores.
 
 ## Keyboards
 
@@ -51,12 +53,12 @@ This is what's important for your keyboard:
 
 [This USB keyboard](https://shop.pimoroni.com/products/wired-slim-chiclet-keyboard) ([archive version for reference](https://web.archive.org/web/20210227054648if_/https://shop.pimoroni.com/products/wired-slim-chiclet-keyboard)) is an absolute bargain for £3.24p, but if you look closely you'll see that the F12 is access using the FN modifier key, and the neptUNO doesn't recognise it at all.
 
-**A note on PS/2 keyboards** - not all keyboards are built equally. After digging into how these work, _some_ PS/2 keyboards won't work until they get an `ack` message from the machine (the "host"). I bought a [Perixx PS/2 keyboard](https://www.amazon.co.uk/Perixx-PERIBOARD-409P-Mini-Keyboard-12-40x5-79x0-79/dp/B00JV08TIA/ref=sr_1_3) (amazon link - non affiliate) which doesn't work because the keyboard itself sends a "BAT" message and won't work until it's replied to - which the neptUNO core doesn't do (yet).
+**A note on PS/2 keyboards** - not all keyboards are built equally. After digging into how these work, _some_ PS/2 keyboards won't work until they get an ack message from the machine (the "host"). I bought a [Perixx PS/2 keyboard](https://www.amazon.co.uk/Perixx-PERIBOARD-409P-Mini-Keyboard-12-40x5-79x0-79/dp/B00JV08TIA/ref=sr_1_3) (amazon link - non affiliate) which doesn't work because the keyboard itself sends a "BAT" message and won't work until it's replied to - which the neptUNO core doesn't do (yet).
 
 ## Important keys
 
 - `F12` - brings up the OSD. This can be used to load roms into the core and change settings.
-- `Scroll lock` - switches between (I believe) VGA and RGA mode - so when my monitor doesn't get a signal (the Amiga core is like this) hitting `scroll lock` switches the mode and the signal will work again.
+- `Scroll lock` - switches between (I believe) VGA and 15Hz mode - so when my monitor doesn't get a signal (the Amiga core is like this) hitting `scroll lock` switches the mode and the signal will work again.
 - `1` - for arcades, starts 1 player mode
 - `2` - for arcades, starts 2 player mode
 - `5` - for arcades, adds coin 1
@@ -140,7 +142,7 @@ The Next186, to me, is a PC DOS system from bygone days. I had a 286, 368, 486 a
 
 First point to note: I've not managed to get this core to boot without using a completely separate SD card (so maybe have a few spare).
 
-So although the BIOS is in the Next186 binaries directory, you're better off getting a [full SD card image from here](http://www.forofpga.es/viewtopic.php?f=37&t=120#p1580) (the .rar file). Write that entire image using a tool like [Etcher](https://www.balena.io/etcher/) and once that's complete, copy the [Next186_SoC.np1](https://github.com/neptuno-fpga/Binaries/tree/main/Computers/Next186_SoC) file into the new SD card.
+So although the BIOS is in the Next186 binaries directory, you're better off getting a [full SD card image from here](http://www.forofpga.es/viewtopic.php?f=37&t=120#p1580) (the .rar file). Write that entire image using a tool like [Etcher](https://www.balena.io/etcher/) and once that's complete, copy the [Next186_SoC.np1](https://github.com/neptuno-fpga/Binaries/tree/main/Computers/Next186_SoC) file into the new SD card. Now the with this new SD card the Next186 core can be loaded.
 
 I did notice that my PS/2 keyboard was not compatible with DOS at all, but I found that a USB keyboard worked fine. I suspect in my case however it was the timing of the messages over the PS/2 (having poked around with a logic analyser).
 
