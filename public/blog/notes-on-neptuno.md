@@ -146,6 +146,33 @@ So although the BIOS is in the Next186 binaries directory, you're better off get
 
 I did notice that my PS/2 keyboard was not compatible with DOS at all, but I found that a USB keyboard worked fine. I suspect in my case however it was the timing of the messages over the PS/2 (having poked around with a logic analyser).
 
+### Commodore 64
+
+There's two flavours to select from:
+
+- C64 MiSTer (I'd imagine came from the MiSTer core)
+- Commodore 64
+
+The OSD menus are slightly different between the two, the MiSTer one offering slightly more options - mostly under the video, audio and tape control, but note that both options are in spanish (I've not found a way to change the menu as yet).
+
+Going from a [YouTube video](https://youtu.be/YNR3aRTseMc?t=715) a good for audio is:
+
+- SID Izquierdo 8580 (SID left: 8580)
+- SID Derecho 6581 (SID right: 6581)
+- SID Derecho Addr Ingual (SID right addr: same)
+- Expansion de Sonido No (Sound expander: no)
+- Mezcla stereo no (Stereo mix: none)
+
+You can load disks and carts. To load a disk, bring up the OSD (F12) and select the .D64 file you want (I've been enjoying [Neptune Lander Elite](https://c64mark.itch.io/neptune-lander-elite)), then from the prompt:
+
+```
+LOAD "*", 8
+```
+
+Then wait around a minute or two until `LOADING` is complete and `READY.` is shown. Then use `RUN`.
+
+Note that apparently joystick ports can be reversed depending on the game.
+
 *[OSD]: On Screen Display
 *[AGA]: Advanced Graphics Architecture
 *[RTG]: Real time graphics
