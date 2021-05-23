@@ -61,7 +61,7 @@ This is what's important for your keyboard:
 
 - If it's USB, it must not have any "active" components, like a USB hub (which tends to be the give away)
 - It really wants F12 and scroll lock as _real_ buttons, not "function buttons" (where you press an FN key to access it)
-- If it's PS/2 it's probably better if it's an older model as there's a
+- If it's PS/2 it's probably better if it's an older model - in my experience they tend to be a bit more flexible with respect to operation, which gives you a higher chance of it working
 
 [This USB keyboard](https://shop.pimoroni.com/products/wired-slim-chiclet-keyboard) ([archive version for reference](https://web.archive.org/web/20210227054648if_/https://shop.pimoroni.com/products/wired-slim-chiclet-keyboard)) is an absolute bargain for £3.24p, but if you look closely you'll see that the F12 is access using the FN modifier key, and the neptUNO doesn't recognise it at all.
 
