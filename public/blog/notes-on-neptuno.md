@@ -111,7 +111,7 @@ You can (and should) also [download the ZX Next manual](https://www.specnext.com
 
 ### Amiga
 
-When I was a kid my best friend owned an Amiga and it was a different take on games, and when I was around his house we'd play games like Speedball, Syndicate, James Pond and hte like.
+When I was a kid my best friend owned an Amiga and it was a different take on games, and when I was around his house we'd play games like Speedball, Syndicate, James Pond and the like.
 
 There's two Amiga cores available:
 
@@ -169,7 +169,7 @@ There's two flavours to select from:
 
 The OSD menus are slightly different between the two, the MiSTer one offering slightly more options - mostly under the video, audio and tape control, but note that both options are in spanish (I've not found a way to change the menu as yet).
 
-Going from a [YouTube video](https://youtu.be/YNR3aRTseMc?t=715) a good for audio is:
+Going from a [YouTube video](https://youtu.be/YNR3aRTseMc?t=715) a good configuration for audio is:
 
 - SID Izquierdo 8580 (SID left: 8580)
 - SID Derecho 6581 (SID right: 6581)
@@ -185,7 +185,7 @@ LOAD "*", 8
 
 Then wait around a minute or two until `LOADING` is complete and `READY.` is shown. Then use `RUN`.
 
-Note that apparently joystick ports can be reversed depending on the game.
+Note that apparently joystick ports can be reversed depending on the game - so if the joystick doesn't work, try switching it over to port 2.
 
 *[OSD]: On Screen Display
 *[AGA]: Advanced Graphics Architecture
