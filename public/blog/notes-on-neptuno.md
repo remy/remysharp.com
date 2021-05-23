@@ -18,6 +18,18 @@ Getting set up however is a bit of wild west situation, partly because it's new,
 
 <!--more-->
 
+## Contents
+
+- [Getting started](#getting-started)
+- [Keyboards](#keyboards)
+- [Important keys](#important-keys)
+- [Cores](#cores)
+  - [ZX Next](#zx-next)
+  - [Amiga](#amiga)
+  - [Atari 800 XL](#atari-800-xl)
+  - [Next186](#next186)
+  - [Commodore 64](#commodore-64)
+
 ## Getting started
 
 Things you'll need:
@@ -58,13 +70,15 @@ This is what's important for your keyboard:
 ## Important keys
 
 - `F12` - brings up the OSD. This can be used to load roms into the core and change settings.
-- `Scroll lock` - switches between (I believe) VGA and 15Hz mode - so when my monitor doesn't get a signal (the Amiga core is like this) hitting `scroll lock` switches the mode and the signal will work again.
+- `Scroll lock` - switches between (I believe) VGA and 15Hz mode - so when my monitor doesn't get a signal (the Amiga core starts like this for me) hitting `scroll lock` switches the mode and the signal will work again.
 - `1` - for arcades, starts 1 player mode
 - `2` - for arcades, starts 2 player mode
 - `5` - for arcades, adds coin 1
 - `6` - for arcades, adds coin 2
 
 F12 is common amongst the cores, which is why it's important to have a keyboard that actually has this key.
+
+Note that for the arcade cores, using the "select" joypad button also acts as "add coin" and "start" will start the game.
 
 ## Cores
 
