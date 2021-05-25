@@ -1,9 +1,8 @@
 ---
 title: 'Notes on neptUNO'
-date: '2021-05-06'
-draft: true
+date: '2021-05-25'
 tags:
-  - code
+  - personal
 ---
 
 # Notes on neptUNO
@@ -12,11 +11,14 @@ I recently - randomly - bought myself a [neptUNO FPGA machine](https://www.anton
 
 The neptUNO works well as a middle weight retro gaming/platform machine. It can run Spectrum (and the new Spectrum Next), C64, NES, Megadrive, SNES, PC Engine, Amiga 500, Vectrex, original arcade like Galaxian and Bubble Bobble and some more. To run the "core" it does require that someone has written the code to program the FPGA but there's a pretty [good collection already available](https://github.com/neptuno-fpga/Binaries/).
 
+<!--more-->
+
+![The neptUNO](/images/neptuno.jpg)
+
 What appealed to me was that firstly it was all prebuilt (I'd learnt a little about the MiSTer machines but it seemed I needed to find the right parts and put it together, and goodness knows I'd frankenstein mine!), but also €150 (plus postage) wasn't too tough on the wallet.
 
 Getting set up however is a bit of wild west situation, partly because it's new, partly because it's fairly unique. So I've written up my notes, either to help remind myself in years to come or for other english readers (there's a lot of resources in spanish).
 
-<!--more-->
 
 ## Contents
 
@@ -136,17 +138,15 @@ This computer needs some attention to keys, but [these are all documented](https
 
 - `F6` - start
 - `F7` - select
-- `F8` - option (hold this button and press `F9` to reset without BASIC loaded - which apparently makes more games load)
+- `F8` - option (hold this button and press `F9` to reset _without_ BASIC loaded - which apparently makes more games load)
 - `F9` - reset
 - `F10` - cold reset
 
-To load cartridges and disk you need to use F12 and load up the port (by selecting a file on the SD card). Loading a cartridge and exiting the OSD then immediately loads the cart (as if the Atari had been turned on with it inserted).
+To load cartridges and disk you need to use F12 and load up the port by selecting a file on the SD card. Use cursor right on the first menu, then enter to select on the file browse menu. Loading a cartridge and exiting the OSD then immediately loads the cart (as if the Atari had been turned on with it inserted).
 
-To load a disk, you'll need to run the following command:
+If loading a disk position with a game, the Atari is _supposed_ to let you boot from the drive. If the game is a non-BASIC game (i.e. fairly likely), then you need to reboot with (hold) F8 and press F9. I've had mixed success, sometimes it boots right back to "READY" but other times it will load.
 
-```
-LOAD"D1:GAME.ATR"
-```
+In general I've assumed the .ATR and .XEX games are non-BASIC games.
 
 Non alphabetical letters are found mostly in the same position as a PC keyboard, i.e. `"` is found at `shift`+`2`.
 
