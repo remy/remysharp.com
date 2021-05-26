@@ -158,7 +158,7 @@ First point to note: I've not managed to get this core to boot without using a c
 
 So although the BIOS is in the Next186 binaries directory, you're better off getting a [full SD card image from here](http://www.forofpga.es/viewtopic.php?f=37&t=120#p1580) (the .rar file). Write that entire image using a tool like [Etcher](https://www.balena.io/etcher/) and once that's complete, copy the [Next186_SoC.np1](https://github.com/neptuno-fpga/Binaries/tree/main/Computers/Next186_SoC) file into the new SD card. Now the with this new SD card the Next186 core can be loaded.
 
-I did notice that my PS/2 keyboard was not compatible with DOS at all, but I found that a USB keyboard worked fine. I suspect in my case however it was the timing of the messages over the PS/2 (having poked around with a logic analyser).
+I did notice that my PS/2 keyboard was not compatible with DOS at all, but I found that a USB keyboard worked fine.
 
 ### Commodore 64
 
