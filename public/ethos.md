@@ -6,6 +6,20 @@ It's far from definitive and not organised well, but it's a start to capture wha
 
 ---
 
+## We have to _keep_ fighting racism.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9-lcEqY62j4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+> …there's been so many people that say oh it's better now than it was before.
+>
+> Oh it's not as bad as it used to be, [but] that's not good enough are you getting stopped by a police on a daily basis? Are you not being allowed into certain shops on a daily basis? Are you crossing the road because you're color of your skin all of them things are because the color of someone's skin?
+>
+> It leads me down the road to ask you the question:
+>
+> Would you swap places with someone who's black in today's society would you?
+
+- [BT Sport](https://twitter.com/btsport/status/1397107455377690625) - 25 May 2021
+
 ## Dismantling oppression
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UohtVuaT2Ls?start=28" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
