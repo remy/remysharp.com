@@ -1,5 +1,33 @@
 [
   {
+    "title": "Fugitive Telemetry (The Murderbot Diaries, #6)",
+    "author": "Martha Wells",
+    "published": 2021,
+    "pages": 172,
+    "goodreads": "https://www.goodreads.com/review/show/4003946853",
+    "goodreads_id": 53413743,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1620520604l/53413743._SY475_.jpg",
+    "read": "2021-06-12T00:00:00.000Z",
+    "start": "2021-05-16T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/fugitive-telemetry-the-murderbot-diaries-6.md",
+    "slug": "fugitive-telemetry-the-murderbot-diaries-6"
+  },
+  {
+    "title": "84K",
+    "author": "Claire North",
+    "published": 2018,
+    "pages": 464,
+    "goodreads": "https://www.goodreads.com/review/show/2636189444",
+    "goodreads_id": 37637870,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1513752793l/37637870._SY475_.jpg",
+    "read": "2021-05-30T00:00:00.000Z",
+    "start": "2021-05-02T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/84k.md",
+    "slug": "84k"
+  },
+  {
     "title": "Remote Control",
     "author": "Nnedi Okorafor",
     "published": 2021,
@@ -22,7 +50,7 @@
     "goodreads_id": 54506494,
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607369080l/54506494._SY475_.jpg",
     "read": "2021-04-28T00:00:00.000Z",
-    "start": "2020-12-31T00:00:00.000Z",
+    "start": "2021-03-09T00:00:00.000Z",
     "rating": 4,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/the-galaxy-and-the-ground-within-wayfarers-4.md",
     "slug": "the-galaxy-and-the-ground-within-wayfarers-4"
