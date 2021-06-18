@@ -26,8 +26,8 @@ The next command should be the init command, but this failed to complete and not
 The psycopg2 package needed to know where I was keeping postgres, so this fixed it ([hat-tip to Nevelina A. on twitter](https://twitter.com/Nimphal/status/1405600945170530310)):
 
 ```shell
-PATH=$PATH:/Applications/Postgres.app/Contents/Versions/12/bin/
-pip install psycopg2
+$ PATH=$PATH:/Applications/Postgres.app/Contents/Versions/12/bin/
+$ pip install psycopg2
 ```
 
 Obviously make sure you're adding your own current version of postgres to the path (I happened to be on 12).
@@ -46,7 +46,7 @@ stellar snapshot first
 
 This also failed. Two more changes required:
 
-In the `stallar.yaml` file that's been generated in the local directory, the `url: postgresql://` property needed my username to access the database, so changing to the following fixed it for me:
+In the `stallar.yaml` file that's been generated in the local directory, the `url: postgresql://` property needed to **add my username** to access the database, so changing to the following fixed it for me:
 
 ```yaml
 url: postgresql://remy@localhost:5432/template1
