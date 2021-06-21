@@ -25,6 +25,18 @@ Then I can hit `cmd`+`space` and "toggle" to switch mode quickly. Like I said, s
 
 ## Toggle theme in VS Code
 
+_Updated 2021-06-21_
+
+Auto theme switching is now part of VS Code out of the box. It took me a little while to find it, but once it's in place you can forget about it.
+
+First is the `window.autoDetectColorScheme` needs to be set to true, then you select a theme for `workbench.preferredLightColorTheme` and `workbench.preferredDarkColorTheme`:
+
+![Light and dark theme selection in VS Code](/images/light-and-dark-vscode-settings.png)
+
+---
+
+_Below is my original method_
+
 For this, I use an extension called (unsurprisingly) ["Toggle" by Peng Lv](https://marketplace.visualstudio.com/items?itemName=rebornix.toggle). Once Toggle is installed, I've got the command set up with the following keyboard bindings settings:
 
 ```json

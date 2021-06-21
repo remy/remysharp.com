@@ -19,7 +19,7 @@ A little over ten years ago personal tragedy struck. If you know my story, you'l
 
 I know this is typically the best practice for a device to follow, but at this particular point in time I needed the picture to remain on. I needed it to be the first thing I saw if I opened my eyes.
 
-There wasn't an app I knew of and getting a photo printed (though it's what we did) didn't give me the photo quickly enough.
+There wasn't an app I knew of and getting a photo printed (though it's what we did as soon as we could) didn't give me the photo quickly enough.
 
 A decade later I am able to write this software using browser technology as plain text without the need for build tools, special libraries or any hacks.
 
