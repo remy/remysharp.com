@@ -617,3 +617,35 @@ toHex
 ```
 
 [Demo](https://jqterm.com/7d570735a5fb9b8d627a9842cb7db6c2?query=def%20hexChr%3A%0A%20%20floor%20%7C%20if%20.%20%3C%2010%20then%20.%20else%20%5B%22A%22%2C%20%22B%22%2C%20%22C%22%2C%20%22D%22%2C%20%22E%22%2C%20%22F%22%5D%5B.%20%25%2010%5D%20end%0A%3B%0A%0Adef%20toHex%3A%0A%20%20def%20toHex%3A%0A%20%20%20%20%20%20if%20.%20%2F%2016%20%3E%3D%201%20then%20%0A%20%20%20%20%20%20%20%20%20%20%28.%20%2F%2016%20%7C%20toHex%29%2C%20%28.%20%25%2016%20%7C%20hexChr%29%0A%20%20%20%20%20%20else%0A%20%20%20%20%20%20%20%20%20%20.%20%25%2016%20%7C%20hexChr%0A%20%20%20%20%20%20end%0A%20%20%3B%0A%20%20%5BtoHex%5D%20%7C%20join%28%22%22%29%0A%3B%0A%0AtoHex)
+
+---
+
+Convert JSON object into a flat path based schema, i.e:
+
+```text
+{ a: [ { b: 1 }, { b: 2} ], c: { d: true } }
+
+// into
+a.b
+c.d
+```
+
+```
+def flat($prefix):
+	map(.key as $key | (.value | type) as $type |
+      if $type == "array" then
+      	.value[0] | to_entries | flat($prefix + $key + ".")
+      elif $type == "object" then
+		.value | to_entries | flat($prefix + $key + ".")
+      else
+      	"\($prefix)\(.key)"
+      end
+	)[]
+;
+
+def flat: flat("");
+
+first | to_entries | flat
+```
+
+[Demo](https://jqterm.com/a39a0e4f09904ee2483857121ac3ef8e?query=def%20flat%28%24prefix%29%3A%0A%09map%28.key%20as%20%24key%20%7C%20%28.value%20%7C%20type%29%20as%20%24type%20%7C%0A%20%20%20%20%20%20if%20%24type%20%3D%3D%20%22array%22%20then%20%0A%20%20%20%20%20%20%09.value%5B0%5D%20%7C%20to_entries%20%7C%20flat%28%24prefix%20%2B%20%24key%20%2B%20%22.%22%29%20%0A%20%20%20%20%20%20elif%20%24type%20%3D%3D%20%22object%22%20then%0A%09%09.value%20%7C%20to_entries%20%7C%20flat%28%24prefix%20%2B%20%24key%20%2B%20%22.%22%29%0A%20%20%20%20%20%20else%20%0A%20%20%20%20%20%20%09%22%5C%28%24prefix%29%5C%28.key%29%22%20%0A%20%20%20%20%20%20end%0A%09%29%5B%5D%0A%3B%0A%0Adef%20flat%3A%20flat%28%22%22%29%3B%0A%0Afirst%20%7C%20to_entries%20%7C%20flat&slurp=true&raw=true)
