@@ -19,7 +19,7 @@ My trackpad was playing up (bluetooth interference or something) so I switched t
 
 ![Empty scrollbars appearing when not needed](/images/scrollbars.png)
 
-These empty scrollbars (bottom left - twice) serve no purpose and don't really go with the aesthetic of the web site.
+These empty scrollbars (bottom right - twice) serve no purpose and don't really go with the aesthetic of the web site.
 
 Removing the scrollbars was easy, and dosh darnit, obvious:
 
