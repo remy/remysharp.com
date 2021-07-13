@@ -31,7 +31,7 @@ Removing the scrollbars was easy, and dosh darnit, obvious:
 
 Should have been:
 
-```
+```css
 #tiles {
   overflow: auto;
 }
