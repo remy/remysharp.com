@@ -12,7 +12,7 @@ rating: 3
 summary: "Growing up with Lenny Henry as a stable diet of light comedy his early years story was enlightening."
 ---
 
-Growing up with Lenny Henry as a stable diet of light comedy his early years story was enlightening.
+Growing up with Lenny Henry as a stable diet of light comedy his early years' story was enlightening.
 
 I'm not sure if as a kid I loved or disliked Lenny Henry - he just was a huge space in comedy TV, and now thinking it's probably his work with Comic Relief that I remember more than anything.
 
@@ -30,4 +30,4 @@ Lenny Henry also writes of his work on [The Fosters](https://en.m.wikipedia.org/
 
 I personally tend to find non-fiction hard to read (or rather it's can be a very slow read for me) but Henry's biography was easier to read - and perhaps because he played such a large part of my childhood TV.
 
-The book ends abruptly at the start of the 1980s - which is really the time I knew Henry from and I felt myself wanting to learn more. Page-wise the book also ends with around 10% remaining, and what remains are tips for new comedians - which I mostly skimmed although there were a small handful of useful items I can imagine it would be valuable to younger comedians.
+The book ends abruptly at the start of the 1980s - which is really the time I knew Henry from and I felt myself wanting to learn more. Page-wise the book also ends with around 10% remaining, and what remains are tips for new comedians - which I mostly skimmed, although there were a small handful of useful items I can imagine it would be valuable to younger comedians.

@@ -14,7 +14,7 @@ summary: "Acaster also has a distinctive style if you've seen him on screen so i
 
 I'm not into reading memoirs (or biographies for that matter) but it seems I've started 2021 with two ([Lenny Henry's](https://remysharp.com/books/2021/who-am-i-again) at the start of the year).
 
-Generally I enjoy James Acaster's comedy and his Scrapes collection does have it's laughs. There isn't really much meat to the book but it's good light reading (with literal laugh out louds).
+Generally I enjoy James Acaster's comedy and his Scrapes collection does have it's laughs. There isn't really much meat to the book, but it's good light reading (with literal laugh out louds).
 
 Acaster also has a distinctive style if you've seen him on screen so in reading his stories, Acaster's voice really leaps from the words on the page.
 
