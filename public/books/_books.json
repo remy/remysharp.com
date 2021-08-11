@@ -1,5 +1,33 @@
 [
   {
+    "title": "Broad Band: The Untold Story of the Women Who Made the Internet",
+    "author": "Claire L.  Evans",
+    "published": 2018,
+    "pages": 288,
+    "goodreads": "https://www.goodreads.com/review/show/4055266777",
+    "goodreads_id": 36390051,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1507687544l/36390051._SY475_.jpg",
+    "read": "2021-07-04T00:00:00.000Z",
+    "start": "2021-06-13T00:00:00.000Z",
+    "rating": 5,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/broad-band-the-untold-story-of-the-women-who-made-the-internet.md",
+    "slug": "broad-band-the-untold-story-of-the-women-who-made-the-internet"
+  },
+  {
+    "title": "Marge and the Secret Tunnel (Marge, #4)",
+    "author": "Isla Fisher",
+    "published": 2018,
+    "pages": "NaN",
+    "goodreads": "https://www.goodreads.com/review/show/4083472791",
+    "goodreads_id": 38924061,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1520135653l/38924061._SY475_.jpg",
+    "read": "2021-06-28T00:00:00.000Z",
+    "start": "2021-06-28T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/marge-and-the-secret-tunnel-marge-4.md",
+    "slug": "marge-and-the-secret-tunnel-marge-4"
+  },
+  {
     "title": "Fugitive Telemetry (The Murderbot Diaries, #6)",
     "author": "Martha Wells",
     "published": 2021,
@@ -8,7 +36,7 @@
     "goodreads_id": 53413743,
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1620520604l/53413743._SY475_.jpg",
     "read": "2021-06-12T00:00:00.000Z",
-    "start": "2021-05-16T00:00:00.000Z",
+    "start": "2021-05-31T00:00:00.000Z",
     "rating": 4,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/fugitive-telemetry-the-murderbot-diaries-6.md",
     "slug": "fugitive-telemetry-the-murderbot-diaries-6"
@@ -36,7 +64,7 @@
     "goodreads_id": 34215764,
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1587580886l/34215764._SY475_.jpg",
     "read": "2021-05-02T00:00:00.000Z",
-    "start": "2020-11-05T00:00:00.000Z",
+    "start": "2021-04-28T00:00:00.000Z",
     "rating": 3,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/remote-control.md",
     "slug": "remote-control"

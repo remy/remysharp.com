@@ -41,6 +41,7 @@ These are the apps that I rely on to make my work, or rather working with my lap
 - [TablePlus](https://www.tableplus.io/) - for sqlite, postgres, redis and more database browsing
 - [Robo 3T](https://robomongo.org/) - (because MongoDB support isn't great in TablePlus)
 - [Karabiner Elements](https://pqrs.org/osx/karabiner/) - really powerful, things like cap-lock is re-binded to <code>\`</code> and shift+caps is `~`
+- [Goku](https://github.com/yqrashawn/GokuRakuJoudo) - to supplement Karabiner Elements, I use Goku to make modifying the configuration a _lot_ easier.
 - [Moom](https://manytricks.com/moom/) - I've tried a few of these and Moom has the most functionality - including resizing to specific dimensions (useful for when I'm screencasting)
 - [Monitor Control](https://github.com/the0neyouseek/MonitorControl) - control external monitor volume using my keyboard
 - [Dash](https://kapeli.com/dash) - code documentation, useful with the ctrl+h shortcut in VS Code

@@ -1,4 +1,4 @@
----
+--
 title: jq recipes
 date: '2018-01-06 17:08:36'
 modified: '2018-11-28 11:05:55'
@@ -630,7 +630,7 @@ a.b
 c.d
 ```
 
-```
+```jq
 def flat($prefix):
 	map(.key as $key | (.value | type) as $type |
       if $type == "array" then
@@ -649,3 +649,16 @@ first | to_entries | flat
 ```
 
 [Demo](https://jqterm.com/a39a0e4f09904ee2483857121ac3ef8e?query=def%20flat%28%24prefix%29%3A%0A%09map%28.key%20as%20%24key%20%7C%20%28.value%20%7C%20type%29%20as%20%24type%20%7C%0A%20%20%20%20%20%20if%20%24type%20%3D%3D%20%22array%22%20then%20%0A%20%20%20%20%20%20%09.value%5B0%5D%20%7C%20to_entries%20%7C%20flat%28%24prefix%20%2B%20%24key%20%2B%20%22.%22%29%20%0A%20%20%20%20%20%20elif%20%24type%20%3D%3D%20%22object%22%20then%0A%09%09.value%20%7C%20to_entries%20%7C%20flat%28%24prefix%20%2B%20%24key%20%2B%20%22.%22%29%0A%20%20%20%20%20%20else%20%0A%20%20%20%20%20%20%09%22%5C%28%24prefix%29%5C%28.key%29%22%20%0A%20%20%20%20%20%20end%0A%09%29%5B%5D%0A%3B%0A%0Adef%20flat%3A%20flat%28%22%22%29%3B%0A%0Afirst%20%7C%20to_entries%20%7C%20flat&slurp=true&raw=true)
+
+---
+
+Select the arrays where all the items are the same value:
+
+```jq
+def allSame:
+	first as $first | all(. == $first);
+
+to_entries | map(select(.value | allSame)) | from_entries
+```
+
+[Demo](https://jqterm.com/9788429161305438bd397ec64d45ec6e?query=def%20allSame%3A%0A%09first%20as%20%24first%20%7C%20all%28.%20%3D%3D%20%24first%29%3B%0A%0Ato_entries%20%7C%20map%28select%28.value%20%7C%20allSame%29%29%20%7C%20from_entries)
