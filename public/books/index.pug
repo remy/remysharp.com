@@ -39,7 +39,7 @@ layout: public
         each book in collections.books
           - review = book.data
           - rating = `${ '★'.repeat(review.rating) }${ '☆'.repeat(5 - review.rating)}`
-          div(data-id=`${review.slug}`)
+          div(data-id=`${book.slug}`)
             img.cover(width="64" src=`/images/books/${review.goodreads_id}.jpg`)
             p.when #{moment(review.read).format('D-MMM \'YY')}
               br

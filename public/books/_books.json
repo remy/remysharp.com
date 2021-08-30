@@ -1,7 +1,51 @@
 [
   {
+    "title": "The Whole Truth (DI Adam Fawley, #5)",
+    "author": "Cara Hunter",
+    "published": 2021,
+    "pages": 416,
+    "goodreads": "https://www.goodreads.com/review/show/4200451498",
+    "goodreads_id": 49569511,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617287409l/49569511.jpg",
+    "read": "2021-08-30T00:00:00.000Z",
+    "start": "2021-08-26T00:00:00.000Z",
+    "rating": 5,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/the-whole-truth-di-adam-fawley-5.md",
+    "slug": "the-whole-truth-di-adam-fawley-5"
+  },
+  {
+    "title": "The Call of the Wild",
+    "author": "Jack London",
+    "published": 1903,
+    "pages": 91,
+    "goodreads": "https://www.goodreads.com/review/show/4161979636",
+    "goodreads_id": 51100452,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1581259213l/51100452._SY475_.jpg",
+    "read": "2021-08-26T00:00:00.000Z",
+    "start": "2021-08-08T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/the-call-of-the-wild.md",
+    "slug": "the-call-of-the-wild",
+    "summary": "Interesting mix of ideas."
+  },
+  {
+    "title": "Hold Up the Sky",
+    "summary": "Interesting mix of ideas.",
+    "author": "Liu Cixin",
+    "published": 2020,
+    "pages": 337,
+    "goodreads": "https://www.goodreads.com/review/show/4095092733",
+    "goodreads_id": 53797536,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1591184610l/53797536._SY475_.jpg",
+    "read": "2021-08-16T00:00:00.000Z",
+    "start": "2021-07-04T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/hold-up-the-sky.md",
+    "slug": "hold-up-the-sky"
+  },
+  {
     "title": "Broad Band: The Untold Story of the Women Who Made the Internet",
-    "author": "Claire L.  Evans",
+    "author": "Claire L. Evans",
     "published": 2018,
     "pages": 288,
     "goodreads": "https://www.goodreads.com/review/show/4055266777",
@@ -11,13 +55,14 @@
     "start": "2021-06-13T00:00:00.000Z",
     "rating": 5,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/broad-band-the-untold-story-of-the-women-who-made-the-internet.md",
-    "slug": "broad-band-the-untold-story-of-the-women-who-made-the-internet"
+    "slug": "broad-band-the-untold-story-of-the-women-who-made-the-internet",
+    "summary": "A real kind of urgency and excitement in their writing. Superb."
   },
   {
     "title": "Marge and the Secret Tunnel (Marge, #4)",
     "author": "Isla Fisher",
     "published": 2018,
-    "pages": "NaN",
+    "pages": 144,
     "goodreads": "https://www.goodreads.com/review/show/4083472791",
     "goodreads_id": 38924061,
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1520135653l/38924061._SY475_.jpg",
@@ -39,10 +84,12 @@
     "start": "2021-05-31T00:00:00.000Z",
     "rating": 4,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/fugitive-telemetry-the-murderbot-diaries-6.md",
-    "slug": "fugitive-telemetry-the-murderbot-diaries-6"
+    "slug": "fugitive-telemetry-the-murderbot-diaries-6",
+    "summary": "I'll never tire of how bored the Murderbot is!"
   },
   {
     "title": "84K",
+    "summary": "After I got used to the technical aspect of the writing, a really engrossing story.",
     "author": "Claire North",
     "published": 2018,
     "pages": 464,
@@ -57,6 +104,7 @@
   },
   {
     "title": "Remote Control",
+    "summary": "Interesting, but found I got lost in the timeline of the story quite often.",
     "author": "Nnedi Okorafor",
     "published": 2021,
     "pages": 156,
@@ -71,6 +119,7 @@
   },
   {
     "title": "The Galaxy, and the Ground Within (Wayfarers, #4)",
+    "summary": "Surprisingly difficult to connect with.",
     "author": "Becky Chambers",
     "published": 2021,
     "pages": 290,

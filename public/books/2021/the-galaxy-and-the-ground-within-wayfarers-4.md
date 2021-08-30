@@ -9,6 +9,7 @@ cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/160
 read: 2021-04-28
 start: 2021-03-09
 rating: 4
+summary: Surprisingly difficult to connect with.
 ---
 
 Surprisingly difficult to connect with.
