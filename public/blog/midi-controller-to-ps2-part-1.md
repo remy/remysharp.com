@@ -71,7 +71,7 @@ On the Pico, besides the pins we've wired already, wire the following to the PS/
 - Pin 26 / GPIO 20 to PS/2 pin 1 (data)
 - Pin 32 / GND (or any other ground) to PS/2 pin 3
 
-I tend to get my orientation messed up when it comes to the PS/2 connector, so this is what you should be looking for - and you would be wiring from _behind_ this connector into these pins.
+I tend to get my orientation messed up when it comes to the PS/2 connector, so this is what you should be looking for - and you would be wiring from _behind_ this connector into these pins - so remember that pin 1 is on the right when attaching from behind.
 
 ![PS/2 pinout on a device, odd pins on the right, even on the level, with pin 1 being in the bottom right](/images/ps2-pinout.jpg)
 
