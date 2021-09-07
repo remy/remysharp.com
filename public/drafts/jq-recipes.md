@@ -1,4 +1,4 @@
---
+---
 title: jq recipes
 date: '2018-01-06 17:08:36'
 modified: '2018-11-28 11:05:55'
@@ -662,3 +662,13 @@ to_entries | map(select(.value | allSame)) | from_entries
 ```
 
 [Demo](https://jqterm.com/9788429161305438bd397ec64d45ec6e?query=def%20allSame%3A%0A%09first%20as%20%24first%20%7C%20all%28.%20%3D%3D%20%24first%29%3B%0A%0Ato_entries%20%7C%20map%28select%28.value%20%7C%20allSame%29%29%20%7C%20from_entries)
+
+---
+
+Sum of values where numbers are new line separated and slurped:
+
+```jq
+reduce .[] as $_ (0; (. | tonumber) + $_)
+```
+
+[Demo](https://jqterm.com/a35410c9d122480e41f6f4023c45bf8c?query=reduce%20.%5B%5D%20as%20%24_%20%280%3B%20%28.%20%7C%20tonumber%29%20%2B%20%24_%29&slurp=true)
