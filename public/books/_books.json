@@ -1,5 +1,33 @@
 [
   {
+    "title": "The No. 1 Ladies' Detective Agency",
+    "author": "Alexander McCall Smith",
+    "published": 1998,
+    "pages": 258,
+    "goodreads": "https://www.goodreads.com/review/show/2941926287",
+    "goodreads_id": 50694688,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1580157711l/50694688._SY475_.jpg",
+    "read": "2021-09-07T00:00:00.000Z",
+    "start": "2019-08-18T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/the-no-1-ladies-detective-agency.md",
+    "slug": "the-no-1-ladies-detective-agency"
+  },
+  {
+    "title": "Home: Habitat, Range, Niche, Territory",
+    "author": "Martha Wells",
+    "published": 2020,
+    "pages": 19,
+    "goodreads": "https://www.goodreads.com/review/show/4223478375",
+    "goodreads_id": 57680116,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1618012579l/57680116._SY475_.jpg",
+    "read": "2021-09-06T00:00:00.000Z",
+    "start": "2021-09-07T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/home-habitat-range-niche-territory.md",
+    "slug": "home-habitat-range-niche-territory"
+  },
+  {
     "title": "The Whole Truth (DI Adam Fawley, #5)",
     "author": "Cara Hunter",
     "published": 2021,
@@ -25,12 +53,10 @@
     "start": "2021-08-08T00:00:00.000Z",
     "rating": 3,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/the-call-of-the-wild.md",
-    "slug": "the-call-of-the-wild",
-    "summary": "Interesting mix of ideas."
+    "slug": "the-call-of-the-wild"
   },
   {
     "title": "Hold Up the Sky",
-    "summary": "Interesting mix of ideas.",
     "author": "Liu Cixin",
     "published": 2020,
     "pages": 337,
@@ -55,8 +81,7 @@
     "start": "2021-06-13T00:00:00.000Z",
     "rating": 5,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/broad-band-the-untold-story-of-the-women-who-made-the-internet.md",
-    "slug": "broad-band-the-untold-story-of-the-women-who-made-the-internet",
-    "summary": "A real kind of urgency and excitement in their writing. Superb."
+    "slug": "broad-band-the-untold-story-of-the-women-who-made-the-internet"
   },
   {
     "title": "Marge and the Secret Tunnel (Marge, #4)",
@@ -84,12 +109,10 @@
     "start": "2021-05-31T00:00:00.000Z",
     "rating": 4,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/fugitive-telemetry-the-murderbot-diaries-6.md",
-    "slug": "fugitive-telemetry-the-murderbot-diaries-6",
-    "summary": "I'll never tire of how bored the Murderbot is!"
+    "slug": "fugitive-telemetry-the-murderbot-diaries-6"
   },
   {
     "title": "84K",
-    "summary": "After I got used to the technical aspect of the writing, a really engrossing story.",
     "author": "Claire North",
     "published": 2018,
     "pages": 464,
@@ -104,7 +127,6 @@
   },
   {
     "title": "Remote Control",
-    "summary": "Interesting, but found I got lost in the timeline of the story quite often.",
     "author": "Nnedi Okorafor",
     "published": 2021,
     "pages": 156,
@@ -119,7 +141,6 @@
   },
   {
     "title": "The Galaxy, and the Ground Within (Wayfarers, #4)",
-    "summary": "Surprisingly difficult to connect with.",
     "author": "Becky Chambers",
     "published": 2021,
     "pages": 290,
@@ -129,6 +150,7 @@
     "read": "2021-04-28T00:00:00.000Z",
     "start": "2021-03-09T00:00:00.000Z",
     "rating": 4,
+    "summary": "Surprisingly difficult to connect with.",
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/the-galaxy-and-the-ground-within-wayfarers-4.md",
     "slug": "the-galaxy-and-the-ground-within-wayfarers-4"
   },
