@@ -34,6 +34,10 @@ $ unzip -p xpui.spa xpui.js | sed 's/,show,/,/' > xpui.js
 $ zip xpui.spa xpui.js
 ```
 
+***Updated 2021-10-13*** - if you also want to remove episodes (which are just a flavour of "shows"), use this line for the unzip: `unzip -p xpui.spa xpui.js | sed 's/,show,/,/' | sed 's/,episode"/"/' > xpui.js`.
+
+You can also download this as a shell script: [spotify-fix](/downloads/spotify-fix) so you can re-run every time Spotify updates (make sure to `chmod u+x spotify-fix` and move to a directory in your `$PATH`).
+
 Now starting Spotify should be completely void of shows and podcasts on the home screen. You can still find them and still play them, but they just won't be vying for your attention.
 
 ## What's actually happening?
