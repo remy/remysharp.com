@@ -37,6 +37,7 @@
     "markdown-it-prism": "^2.0.1",
     "markdown-it-task-lists": "^2.1.1",
     "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.14",
     "prismjs": "^1.16.0",
     "pug": "^2.0.4",
     "recursive-copy": "^2.0.10",
