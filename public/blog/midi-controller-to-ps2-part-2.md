@@ -1,6 +1,6 @@
 ---
 title: 'MIDI controller to PS/2 - part 2'
-date: 2021-10-31
+date: '2021-10-31 09:00:00'
 nosubscribe: true
 image: /images/midi-to-ps2-v2-card.jpg
 summary: "The thrilling conclusion to the trick of bringing MIDI to a Spectrum"
