@@ -95,7 +95,7 @@ The price is, I think, fairly reasonably (or actually pretty cheap) - but where 
 
 Of course, my first design that I printed _wasn't_ final, and it came with some fun bugs!
 
-## PCB building a bugs
+## PCB bugs
 
 The arrival of the PCB was very cool (for a geek) and I went about soldering the components on to immediately run into problems.
 
