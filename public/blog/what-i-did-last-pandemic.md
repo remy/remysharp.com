@@ -7,7 +7,7 @@ tags:
 
 # What I did last pandemic
 
-As the pandemic, or at least it's social effects, start to really wind down, I thought it would be wise (for me) to write down what I got up to. I'd love to read any of your accounts too … if you even _want_ to remember!
+As the pandemic, or at least it's social effects, start to wind down (or certainly in the UK… or in Brighton 🤷‍♀), I thought it would be wise (for me) to write down what I got up to. I'd love to read any of your accounts too … if you even _want_ to remember!
 
 <!--more-->
 
