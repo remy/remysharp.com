@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
+    "author": "Douglas Adams",
+    "published": 1979,
+    "pages": 133,
+    "goodreads": "https://www.goodreads.com/review/show/4161978935",
+    "goodreads_id": 53654093,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1590830485l/53654093._SY475_.jpg",
+    "read": "2021-10-31T00:00:00.000Z",
+    "start": "2021-08-08T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/the-hitchhikers-guide-to-the-galaxy-hitchhikers-guide-to-the-galaxy-1.md",
+    "slug": "the-hitchhikers-guide-to-the-galaxy-hitchhikers-guide-to-the-galaxy-1"
+  },
+  {
     "title": "The No. 1 Ladies' Detective Agency",
     "author": "Alexander McCall Smith",
     "published": 1998,
