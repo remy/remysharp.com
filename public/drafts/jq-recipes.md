@@ -672,3 +672,13 @@ reduce .[] as $_ (0; (. | tonumber) + $_)
 ```
 
 [Demo](https://jqterm.com/a35410c9d122480e41f6f4023c45bf8c?query=reduce%20.%5B%5D%20as%20%24_%20%280%3B%20%28.%20%7C%20tonumber%29%20%2B%20%24_%29&slurp=true)
+
+---
+
+Repeat an array:
+
+```
+[. as $_ | range($n) | $_] | flatten
+```
+
+[Demo](https://jqterm.com/0f771f6d72b3c412677a42606224d1aa?query=%5B.%20as%20%24_%20%7C%20range%2810%29%20%7C%20%24_%5D%20%7C%20flatten)
