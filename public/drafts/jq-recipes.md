@@ -677,8 +677,30 @@ reduce .[] as $_ (0; (. | tonumber) + $_)
 
 Repeat an array:
 
-```
+```jq
 [. as $_ | range($n) | $_] | flatten
 ```
 
 [Demo](https://jqterm.com/0f771f6d72b3c412677a42606224d1aa?query=%5B.%20as%20%24_%20%7C%20range%2810%29%20%7C%20%24_%5D%20%7C%20flatten)
+
+---
+
+Convert binary to decimal
+
+```jq
+def fromBinary:
+	reverse | . as $_ |
+	reduce range(length) as $i (
+      0;
+      if $_[$i] == 1 then
+        . + pow(2; $i)
+      else
+        .
+      end
+	)
+;
+
+"1001" | split("") | map(tonumber) | fromBinary
+```
+
+[Demo](https://jqterm.com/8a19954ffc3bf1090b29c8b3e29e85ad?query=def%20fromBinary%3A%0A%09reverse%20%7C%20.%20as%20%24_%20%7C%0A%09reduce%20range%28length%29%20as%20%24i%20%28%0A%20%20%20%20%20%200%3B%0A%20%20%20%20%20%20if%20%24_%5B%24i%5D%20%3D%3D%201%20then%0A%20%20%20%20%20%20%20%20.%20%2B%20pow%282%3B%20%24i%29%0A%20%20%20%20%20%20else%0A%20%20%20%20%20%20%20%20.%0A%20%20%20%20%20%20end%0A%09%29%0A%3B%0A%0Asplit%28%22%22%29%20%7C%20map%28tonumber%29%20%7C%20fromBinary&raw-input=true)
