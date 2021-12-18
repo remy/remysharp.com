@@ -1,5 +1,33 @@
 [
   {
+    "title": "Away with the Penguins",
+    "author": "Hazel Prior",
+    "published": 2020,
+    "pages": 346,
+    "goodreads": "https://www.goodreads.com/review/show/3730642043",
+    "goodreads_id": 52128084,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1583442783l/52128084._SY475_.jpg",
+    "read": "2021-12-12T00:00:00.000Z",
+    "start": "2020-12-31T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/away-with-the-penguins.md",
+    "slug": "away-with-the-penguins"
+  },
+  {
+    "title": "The Wise Man's Fear (The Kingkiller Chronicle, #2)",
+    "author": "Patrick Rothfuss",
+    "published": 2011,
+    "pages": 1000,
+    "goodreads": "https://www.goodreads.com/review/show/4314687633",
+    "goodreads_id": 11127295,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328041860l/11127295.jpg",
+    "read": "2021-11-29T00:00:00.000Z",
+    "start": "2021-10-31T00:00:00.000Z",
+    "rating": 5,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2021/the-wise-mans-fear-the-kingkiller-chronicle-2.md",
+    "slug": "the-wise-mans-fear-the-kingkiller-chronicle-2"
+  },
+  {
     "title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
     "author": "Douglas Adams",
     "published": 1979,
@@ -10,6 +38,7 @@
     "read": "2021-10-31T00:00:00.000Z",
     "start": "2021-08-08T00:00:00.000Z",
     "rating": 4,
+    "summary": "My kind of silly.",
     "filename": "/Users/remy/dev/remysharp.com/public/books/2021/the-hitchhikers-guide-to-the-galaxy-hitchhikers-guide-to-the-galaxy-1.md",
     "slug": "the-hitchhikers-guide-to-the-galaxy-hitchhikers-guide-to-the-galaxy-1"
   },
