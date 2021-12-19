@@ -151,12 +151,20 @@ mileage may vary!
 * [Ernest Saves Christmas (1988)](https://www.imdb.com/title/tt0095107/)
 * [Last Christmas 2019](https://www.imdb.com/title/tt8623904/)
 
+## 2021
+
+* [Robin Robin (2021)](https://www.imdb.com/title/tt11332850/)
+* [Holiday Inn (1942)](https://www.imdb.com/title/tt0034862/ "Holiday Inn (1942) - IMDb")
+* [Black Adders' Christmas Carol (1988)](https://www.imdb.com/title/tt0094754/ "Blackadder's Christmas Carol (TV 1988) - IMDb")
+* [8-Bit Christmas (2021)](https://www.imdb.com/title/tt11540284/)
+* [Home Sweet Home Alone (2021)](https://www.imdb.com/title/tt11012066/)
+Fred Clause
+* [Silent Night (2021)](https://www.imdb.com/title/tt11628854/)
 
 ## Future Potentials
 
 * [Meet Me in St. Louis (1944)](https://www.imdb.com/title/tt0037059/)
 * [8 Women (2002)](https://www.imdb.com/title/tt0283832/)
-* [Pottersville (2017)](https://www.imdb.com/title/tt3672120/)
 * [How the Grinch Stole Christmas (2000)](https://www.imdb.com/title/tt0170016/)
 * [Love the Coopers (2015)](https://www.imdb.com/title/tt2279339/)
 * [The Family Stone (2005)](https://www.imdb.com/title/tt0356680/)
