@@ -44,6 +44,10 @@ So specifically here's what the Kindle gives me that allows me to go from readin
 
 Without these last three features, and if I'm reading a paper based book for instance, I find that I will have to really focus on reading each paragraph and often have to re-read the paragraph (if not multiple times) because the content just gets mashed up. My Kindle has entirely banished this experience.
 
+These differences are what make the world of difference to me:
+
+![Side by side Open Dyslexia and Serif on my Kindle](/images/kindle-fonts.png)
+
 I do begrudge that I'm locked into buying from Amazon (ethically - and yes, there's other e-readers, but importantly to me, this works at the moment) but it's the price I'm going to pay for the time being.
 
 With all this, it means the wonderful world of reading is not locked away from me. It's allowed me to re-learn how to read, and it's allowed me, more importantly, to enjoy so many other stories that have been put out into the world.
