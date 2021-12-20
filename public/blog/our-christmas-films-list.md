@@ -154,11 +154,10 @@ mileage may vary!
 ## 2021
 
 * [Robin Robin (2021)](https://www.imdb.com/title/tt11332850/)
-* [Holiday Inn (1942)](https://www.imdb.com/title/tt0034862/ "Holiday Inn (1942) - IMDb")
+* [Miracle on 34th Street (1994)](https://www.imdb.com/title/tt0110527/ "Miracle on 34th Street (1994) - IMDb")
 * [Black Adders' Christmas Carol (1988)](https://www.imdb.com/title/tt0094754/ "Blackadder's Christmas Carol (TV 1988) - IMDb")
 * [8-Bit Christmas (2021)](https://www.imdb.com/title/tt11540284/)
 * [Home Sweet Home Alone (2021)](https://www.imdb.com/title/tt11012066/)
-Fred Clause
 * [Silent Night (2021)](https://www.imdb.com/title/tt11628854/)
 
 ## Future Potentials
