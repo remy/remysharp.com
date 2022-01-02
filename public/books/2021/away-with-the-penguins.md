@@ -7,7 +7,7 @@ goodreads: https://www.goodreads.com/review/show/3730642043
 goodreads_id: 52128084
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1583442783l/52128084._SY475_.jpg
 read: 2021-12-12
-start: 2020-12-31
+start: 2021-11-29
 rating: 4
 ---
 

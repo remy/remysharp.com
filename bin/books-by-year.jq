@@ -1,6 +1,10 @@
+def year: "2021";
+
 def print:
-	"\(.published): [\(.title)](/books/2020/\(.slug)) _by \(.author)_<br>"
+	"\(.published): [\(.title)](/books/\(year)/\(.slug)) _by \(.author)_<br>"
 ;
+
+map(select(.read | startswith(year))) |
 
 sort_by(.published) | reduce .[] as $book (
 	{  };

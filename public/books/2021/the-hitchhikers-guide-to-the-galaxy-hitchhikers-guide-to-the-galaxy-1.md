@@ -7,7 +7,7 @@ goodreads: https://www.goodreads.com/review/show/4161978935
 goodreads_id: 53654093
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1590830485l/53654093._SY475_.jpg
 read: 2021-10-31
-start: 2021-08-08
+start: 2021-09-07
 rating: 4
 summary: My kind of silly.
 ---
