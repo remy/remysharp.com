@@ -1,5 +1,19 @@
 [
   {
+    "title": "Klara and the Sun",
+    "author": "Kazuo Ishiguro",
+    "published": 2021,
+    "pages": 248,
+    "goodreads": "https://www.goodreads.com/review/show/4437489070",
+    "goodreads_id": 55111243,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1622500451l/55111243._SY475_.jpg",
+    "read": "2022-01-14T00:00:00.000Z",
+    "start": "2022-01-02T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2022/klara-and-the-sun.md",
+    "slug": "klara-and-the-sun"
+  },
+  {
     "title": "Iron Widow (Iron Widow, #1)",
     "author": "Xiran Jay Zhao",
     "published": 2021,
@@ -1226,6 +1240,20 @@
     "summary": "As usual from the MurderBot series: excellent, fresh and entertaining.",
     "filename": "/Users/remy/dev/remysharp.com/public/books/2018/rogue-protocol-the-murderbot-diaries-3.md",
     "slug": "rogue-protocol-the-murderbot-diaries-3"
+  },
+  {
+    "title": "Saga, Volume 9",
+    "author": "Brian K. Vaughan",
+    "published": 2018,
+    "pages": 152,
+    "goodreads": "https://www.goodreads.com/review/show/2523022408",
+    "goodreads_id": 38812872,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1523009508l/38812872.jpg",
+    "read": "2018-10-28T00:00:00.000Z",
+    "start": "2018-09-08T00:00:00.000Z",
+    "rating": 5,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2018/saga-volume-9.md",
+    "slug": "saga-volume-9"
   },
   {
     "title": "Saga, Vol. 9 (Saga, #9)",
