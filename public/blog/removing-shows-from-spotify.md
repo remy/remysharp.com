@@ -32,7 +32,7 @@ First close Spotify, then in a terminal, run the following commands. Note that i
 ```
 $ cd /Applications/Spotify.app/Contents/Resources/Apps/
 $ cp xpui.spa ~/Desktop/xpui-backup.spa # backups are good
-$ unzip -p xpui.spa xpui.js | sed 's/withQueryParameters(e){return this.queryParameters=e,this}/withQueryParameters(e){return this.queryParameters={...e, types: e.types.replace("episode,", "").replace("show,", "") },this}/' > xpui.js
+unzip -p xpui.spa xpui.js | sed 's/withQueryParameters(e){return this.queryParameters=e,this}/withQueryParameters(e){return this.queryParameters=(e.types?{...e, types: e.types.split(",").filter(_ => !["episode","show"].includes(_)).join(",")}:e),this}/' > xpui.js
 $ zip xpui.spa xpui.js
 ```
 
