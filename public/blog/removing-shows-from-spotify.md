@@ -23,6 +23,8 @@ This to me, falls within the right to repair (which I really don't understand or
 
 ## TL;DR
 
+***Updated 2022-02-22*** - Spotify changed their process, so I've updated the code to strip episodes and shows as of version 1.1.79.763.x.
+
 I only know how to do this on macOS. I've dug a little into Windows, and maybe you might find a way or use something from this post that might help - but I can't see it from the paths I've taken.
 
 First close Spotify, then in a terminal, run the following commands. Note that if any one command breaks/errors, then it's wise to stop and look at the error. The possibilities of error could be location of Spotify being different, or tools having slightly different versions (I'm using zip, unzip and sed - but these for me are all the pre-installed macOS flavours):
@@ -30,15 +32,15 @@ First close Spotify, then in a terminal, run the following commands. Note that i
 ```
 $ cd /Applications/Spotify.app/Contents/Resources/Apps/
 $ cp xpui.spa ~/Desktop/xpui-backup.spa # backups are good
-$ unzip -p xpui.spa xpui.js | sed 's/,show,/,/' > xpui.js
+$ unzip -p xpui.spa xpui.js | sed 's/withQueryParameters(e){return this.queryParameters=e,this}/withQueryParameters(e){return this.queryParameters={...e, types: e.types.replace("episode,", "").replace("show,", "") },this}/' > xpui.js
 $ zip xpui.spa xpui.js
 ```
-
-***Updated 2021-10-13*** - if you also want to remove episodes (which are just a flavour of "shows"), use this line for the unzip: `unzip -p xpui.spa xpui.js | sed 's/,show,/,/' | sed 's/,episode"/"/' > xpui.js`.
 
 You can also download this as a shell script: [spotify-fix](/downloads/spotify-fix) so you can re-run every time Spotify updates (make sure to `chmod u+x spotify-fix` and move to a directory in your `$PATH`).
 
 Now starting Spotify should be completely void of shows and podcasts on the home screen. You can still find them and still play them, but they just won't be vying for your attention.
+
+If this doesn't work for you, or your system is different, look for the `withQueryParameters` method in the `xpui.js` file and modify the `e` object being returned, stripping values from `e.type`.
 
 ## What's actually happening?
 
@@ -87,7 +89,7 @@ However, looking for some of the other parameters (specifically "station") _did_
 types:"album,playlist,artist,show,station,episode"
 ```
 
-So using vim (rather than VS Code as it would try to reformat and I didn't want that), I removed the `show,` part, saved the file and put it back into the `xpui.spa` file using:
+So using vim (rather than VS Code as it would try to reformat and I didn't want that), I removed the `show,` and `,episode` part, saved the file and put it back into the `xpui.spa` file using hacking through their `withQueryParameters` method:
 
 ```sh
 $ zip xpui.spa xpui.js
