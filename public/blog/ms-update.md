@@ -19,7 +19,7 @@ My post in 2020 started stating this, which, as it turns out, wasn't right at al
 
 ## Corrections on diagnosis
 
-After being diagnosed back in 2019, one positive aspect I had to take away from the appointment was that apparently I had no lesions neither on my spine nor brain. During the assessment I undertook an MRI which I would then have again every couple of years (which I think is great treatment but probably a benefit of living in Brighton rather than being special - ie. location privilege).
+After being diagnosed back in 2019, one positive aspect I had to take away from the appointment was that apparently I had no lesions neither on my spine nor brain. During the assessment I undertook an MRI which I would then have again every couple of years (which I think is great treatment but probably a benefit of living in Brighton rather than being special - ie. location privilege, more specifically "postcode lottery").
 
 When I had my second MRI now in November 2021 it turned out that what the neurology consultant had originally dismissed as "probably nothing" turned out to be two lesions on my spine. I remember the consultant telling me the radiologist saying they could see a lesion, but the consultant disagreed. The second scan showed clearly that he was wrong. It also showed a second lesion on the spine that the neurologist was sure was present in 2019.
 
@@ -31,13 +31,13 @@ So that's 4 lesions in the space of a single 10 minute phone call from the neuro
 
 My basic way of understand lesions is that they mess with the neurological pathway and the information sent along the nervous system to the brain. They're also permanent damage, and really, no one wants permanent damage on their brain… or anywhere really.
 
-Although no one has explicitly told me, I know now that my MS is classified as "_active_ relapsing remitting MS". I'm not super sure what that means, and if I'm honest, I'm not sure I'm ready to find out.
+Although no one has explicitly told me, I know now that my MS is classified as _active_ relapsing remitting MS (RRMS). I'm not super sure what that means, and if I'm honest, I'm not sure I'm ready to find out.
 
 ## Doing drugs
 
 The neurologist that I had was going on to retire at the end of 2021 and they had all their cases reviewed during their exit process. Thusly I got a phone call from them in early 2022 explaining that when my case was presented to the board of (I guess, MS slash Doctor types…) people it was decided that I do indeed need to get onto drugs.
 
-From what I understand, there's a lot of [drugs and treatment available for MS](https://www.mssociety.org.uk/about-ms/treatments-and-therapies), but they focus around slowing the progression and reducing the "relapse" part of RRMS (Relapsing remitting MS).
+From what I understand, there's a lot of [drugs and treatment available for MS](https://www.mssociety.org.uk/about-ms/treatments-and-therapies), but they focus around slowing the progression and reducing the "relapse" part of RRMS.
 
 Apparently my particular case gave me ALL the options, so we started at the strongest. There was three options that I needed to consider, one that has a high risk of brain infection if you're [positive for the John Cunningham virus (JVC)](https://mstrust.org.uk/a-z/jc-virus-and-pml) - which I'd never heard of (the virus) and is, from what I understood, benign. Turns out that I _was_ positive and by the sounds of things the brain infection thing was a pretty serious end-game move by Mother Nature so the last two options are injection based and reduce my B cells (which apparently attack the nervous system).
 
