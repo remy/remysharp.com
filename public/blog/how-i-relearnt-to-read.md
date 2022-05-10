@@ -17,7 +17,7 @@ Younger Remy would have never believed that I could read a book this length. It 
 
 As a kid I struggled with reading. It was a long and hard process and it was a vicious cycle that meant that came to _learn_ that reading just wasn't for me.
 
-I remember coming out of school over the ages of 6-10 and our parents would congregate outside the library at the end of the school lane for a natty whilst all the children collected. Amazingly it still stands some 30 years later:
+I remember coming out of school over the ages of 6-10 and our parents would congregate outside the library at the end of the school lane for a natter whilst all the children collected. Amazingly it still stands some 30 years later:
 
 ![My local childhood library](/images/library.jpg)
 
