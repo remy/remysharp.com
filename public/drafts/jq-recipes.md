@@ -704,3 +704,13 @@ def fromBinary:
 ```
 
 [Demo](https://jqterm.com/8a19954ffc3bf1090b29c8b3e29e85ad?query=def%20fromBinary%3A%0A%09reverse%20%7C%20.%20as%20%24_%20%7C%0A%09reduce%20range%28length%29%20as%20%24i%20%28%0A%20%20%20%20%20%200%3B%0A%20%20%20%20%20%20if%20%24_%5B%24i%5D%20%3D%3D%201%20then%0A%20%20%20%20%20%20%20%20.%20%2B%20pow%282%3B%20%24i%29%0A%20%20%20%20%20%20else%0A%20%20%20%20%20%20%20%20.%0A%20%20%20%20%20%20end%0A%09%29%0A%3B%0A%0Asplit%28%22%22%29%20%7C%20map%28tonumber%29%20%7C%20fromBinary&raw-input=true)
+
+---
+
+All the unique domains requested by a web page. Open devtools, open the network tab and hit reload. Then select one entry and "Copy" - "Copy all as HAR":
+
+```
+[.log.entries[].request.url | split("/") | "\(.[0])//\(.[2])"] | unique
+```
+
+[Demo](https://jqterm.com/31a967bf55762b5a25c4551a202a745f?query=%5B.log.entries%5B%5D.request.url%20%7C%20split%28%22%2F%22%29%20%7C%20%22%5C%28.%5B0%5D%29%2F%2F%5C%28.%5B2%5D%29%22%5D%20%7C%20unique)
