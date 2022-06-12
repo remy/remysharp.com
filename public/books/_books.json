@@ -1,5 +1,33 @@
 [
   {
+    "title": "The Wasp Factory",
+    "author": "Iain Banks",
+    "published": 1984,
+    "pages": 184,
+    "goodreads": "https://www.goodreads.com/review/show/4544102396",
+    "goodreads_id": 567678,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1434940562l/567678._SY475_.jpg",
+    "read": "2022-03-09T00:00:00.000Z",
+    "start": "2022-02-11T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2022/the-wasp-factory.md",
+    "slug": "the-wasp-factory"
+  },
+  {
+    "title": "2001: A Space Odyssey (Space Odyssey, #1)",
+    "author": "Arthur C. Clarke",
+    "published": 1968,
+    "pages": 258,
+    "goodreads": "https://www.goodreads.com/review/show/4437489525",
+    "goodreads_id": 46026742,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558985212l/46026742._SY475_.jpg",
+    "read": "2022-02-16T00:00:00.000Z",
+    "start": "2022-01-02T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2022/2001-a-space-odyssey-space-odyssey-1.md",
+    "slug": "2001-a-space-odyssey-space-odyssey-1"
+  },
+  {
     "title": "Klara and the Sun",
     "author": "Kazuo Ishiguro",
     "published": 2021,

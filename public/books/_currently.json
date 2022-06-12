@@ -1,15 +1,28 @@
 [
   {
-    "title": "2001: A Space Odyssey (Space Odyssey, #1)",
-    "author": "Arthur C. Clarke",
-    "pages": 258,
+    "title": "The Audacity",
+    "author": "Katherine Ryan",
+    "pages": 294,
     "read": {},
-    "start": "Sun, 02 Jan 2022 13:21:59 -0800",
+    "start": "Sun, 27 Mar 2022 13:40:34 -0700",
     "rating": 0,
-    "published": 1968,
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558985212l/46026742._SY475_.jpg",
-    "goodreads_id": 46026742,
-    "goodreads": "https://www.goodreads.com/review/show/4437489525",
+    "published": null,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1635924645l/59526416._SY475_.jpg",
+    "goodreads_id": 59526416,
+    "goodreads": "https://www.goodreads.com/review/show/4633289547",
+    "review": {}
+  },
+  {
+    "title": "The Dispossessed",
+    "author": "Ursula K. Le Guin",
+    "pages": 403,
+    "read": {},
+    "start": "Sun, 02 Jan 2022 13:21:43 -0800",
+    "rating": 0,
+    "published": 1974,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1443567763l/26837308._SY475_.jpg",
+    "goodreads_id": 26837308,
+    "goodreads": "https://www.goodreads.com/review/show/4437488155",
     "review": {}
   }
 ]
