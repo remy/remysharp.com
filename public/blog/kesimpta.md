@@ -8,7 +8,7 @@ tags:
 
 # Kesimpta
 
-As much as this sounds like a new webapp (and indeed over a decade ago I owned the domain Kajinka - can't remember what it was though), no, this is the start of my MS drug treatment which, I guess lasts as long as I do.
+As much as this sounds like a new webapp (and indeed over a decade ago I owned the domain Kajinka - can't remember what it was though), no, this is the start of my multiple sclerosis (MS) drug treatment which, I guess lasts as long as I do.
 
 <!--more-->
 
@@ -20,11 +20,13 @@ The last sentence sounds like I risk croaking, I mean that I'll be taking this m
 
 Kesimpta, which of course as an even more obscure medical name (which I either forget or can't spell!) is a monthly injection delivered by what effectively looks like an EpiPen in the thigh, belly or shoulder.
 
-What's convenient about this particular drug is that I can keep the injection pens at home in the fridge and I'll have a 3 monthly supply to self-inject. The other options that the doctors
+What's convenient about this particular drug is that I can keep the injection pens at home in the fridge and I'll have a 3 monthly supply to self-inject. The other options that the doctors offered me both infusion at the hospital either on a monthly or bi-yearly basis, the later requiring that I be in hospital for 4 hours for each session. There's pros and cons to each, and the monthly infusion was ruled out as I carry the [JC virus](https://mstrust.org.uk/a-z/jc-virus-and-pml) which increases the risk of PML - which is frankly frightening.
 
-What it's supposed to do is attack CD20 which surfs on B-cells in my system. Those B-cells are responsible for (wrongly) attacking the protective layer around the nervous system. That damage is irreversible and what (from what I understand) responsible for MS symptoms.
+What it's supposed to do is remove B-cells from my system. B-cells are part of the immune system, but in multiple sclerosis, the immune system attacks the protective layer around nerve cells. That damage is irreversible and what (from what I understand) responsible for MS symptoms.
 
-What this means in practice for my body is that my immune system is purposely reduced (those B-cells are also responsible for immunity), which means apparently no cuddling snotty babies.
+The drugs also known as DMT, try to reduce the chance of a relapse and is supposed to slow down the progression of the disease. Fun stuff.
+
+What this means in practice for my body is that my immune system is purposely reduced (those B-cells are also responsible for immunity), which means apparently no cuddling snotty babies. Though the reality is that with my young kids going to school and bringing back all variations of The Lurgy it's just something I'm going to have to balance in my life.
 
 ## Delivery
 
@@ -64,10 +66,14 @@ I'll always be grateful to the NHS for their role in the UK's health system, and
 
 ## The weeks and months to come
 
-Obviously being week zero, anything could really happen. I'm trying to keep a diary of the injections and experience after.
+Obviously being week zero, anything could really happen. I'm trying to keep a diary of the injections and experience after. There's a pretty long list of side effects (as always) but there's some that are pretty common such as sore throat and runny nose (but with hayfever, how can I tell the difference!).
 
-I'm due for a consultant appointment in mid-October where I'm guessing they'll review how things are going too.
+I'm also due for a consultant appointment in mid-October where I'm guessing they'll review how things are going too.
 
-I am nervous about exposure to potential infections given that my immunity is going to be lower, and this is a genuine concern with [ffconf coming up in November](https://2022.ffconf.org/), but I'll work something out - I can't (continue to) live in a box for the rest of my life!
+I am a little nervous about being in busy public places given that my immunity is going to be lower, and this is a genuine concern with [ffconf coming up in November](https://2022.ffconf.org/), but I'll work something out - I can't (continue to) live in a box for the rest of my life! I've already been to the gym and continue to use the cleaning products and anti-bacteria wipes all over the equipment.
 
 If you have any questions, please feel free to do so in the comments and I'll do my best to reply.
+
+*[MS]: Multiple sclerosis
+*[JC]: John Cunningham
+*[PML]: Progressive Multifocal Leukoencephalopathy
