@@ -1,5 +1,61 @@
 [
   {
+    "title": "Hope to Die (DI Adam Fawley #6)",
+    "author": "Cara Hunter",
+    "published": 2022,
+    "pages": 416,
+    "goodreads": "https://www.goodreads.com/review/show/4208153415",
+    "goodreads_id": 57937375,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1645095042l/57937375._SY475_.jpg",
+    "read": "2022-08-20T00:00:00.000Z",
+    "start": "2021-08-16T00:00:00.000Z",
+    "rating": 5,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2022/hope-to-die-di-adam-fawley-6.md",
+    "slug": "hope-to-die-di-adam-fawley-6"
+  },
+  {
+    "title": "The Frangipani Tree Mystery (Crown Colony #1)",
+    "author": "Ovidia Yu",
+    "published": 2017,
+    "pages": 320,
+    "goodreads": "https://www.goodreads.com/review/show/4437489937",
+    "goodreads_id": 34838331,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1491906687l/34838331._SY475_.jpg",
+    "read": "2022-08-15T00:00:00.000Z",
+    "start": "2022-07-20T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2022/the-frangipani-tree-mystery-crown-colony-1.md",
+    "slug": "the-frangipani-tree-mystery-crown-colony-1"
+  },
+  {
+    "title": "Redwall",
+    "author": "Brian Jacques",
+    "published": 1986,
+    "pages": 356,
+    "goodreads": "https://www.goodreads.com/review/show/4860283413",
+    "goodreads_id": 20209935,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1394255137l/20209935.jpg",
+    "read": "2022-08-15T00:00:00.000Z",
+    "start": "2022-07-20T00:00:00.000Z",
+    "rating": 2,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2022/redwall.md",
+    "slug": "redwall"
+  },
+  {
+    "title": "The Audacity",
+    "author": "Katherine Ryan",
+    "published": "NaN",
+    "pages": 294,
+    "goodreads": "https://www.goodreads.com/review/show/4633289547",
+    "goodreads_id": 59526416,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1635924645l/59526416._SY475_.jpg",
+    "read": "2022-07-20T00:00:00.000Z",
+    "start": "2022-03-27T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2022/the-audacity.md",
+    "slug": "the-audacity"
+  },
+  {
     "title": "The Wasp Factory",
     "author": "Iain Banks",
     "published": 1984,
@@ -868,6 +924,20 @@
     "summary": "Unexpected scary bits!",
     "filename": "/Users/remy/dev/remysharp.com/public/books/2019/harry-potter-and-the-goblet-of-fire.md",
     "slug": "harry-potter-and-the-goblet-of-fire"
+  },
+  {
+    "title": "Harry Potter and the Goblet of Fire (Harry Potter #4)",
+    "author": "J.K. Rowling",
+    "published": 2000,
+    "pages": 633,
+    "goodreads": "https://www.goodreads.com/review/show/2702479594",
+    "goodreads_id": 28754622,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659084192l/28754622._SY475_.jpg",
+    "read": "2019-08-26T00:00:00.000Z",
+    "start": "2019-02-04T00:00:00.000Z",
+    "rating": 5,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2019/harry-potter-and-the-goblet-of-fire-harry-potter-4.md",
+    "slug": "harry-potter-and-the-goblet-of-fire-harry-potter-4"
   },
   {
     "title": "Miss Pettigrew Lives for a Day",
