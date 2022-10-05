@@ -56,6 +56,6 @@ This conference, has been, and now is, known as **ffconf**.
 
 Well. It means what you want it to mean. Seriously. **Let me know what it means to you in the comments**.
 
-To me? I like ***friends forever conf***. Because it reminds me of the new friends I've made over the years, and people our event has help. It reminds me of all your faces:
+To me? I like ***friends forever conf***. Because it reminds me of the new friends I've made over the years, and people our event has helped. It reminds me of all your faces:
 
 ![ffconf 2015](/images/ffconf-2016.jpg)
