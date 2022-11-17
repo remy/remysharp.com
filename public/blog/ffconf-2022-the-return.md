@@ -55,14 +55,16 @@ I'm hugely grateful to those [sponsors that contributed](https://2022.ffconf.org
 
 We also run a [scholarship programme](https://ffconf.org/scholarship/) that individuals can also buy a ticket that's put into our scholarship budget. The budget is used for tickets, travel and hotel for those who need it, and [Julie](https://twitter.com/Julieanne/) does an amazing job of coordinating with the scholarship attendees to arrange this all of this for them.
 
-In particular I wanted to thank these individuals who bought scholarship tickets:
+In particular I wanted to thank these individuals who bought (or donated) scholarship tickets:
 
-- Josh Hudson
 - Glenn Jones
 - Jan Lehnardt
 - David Miller
 - Yann Eves
 - Wayne Durack
+- Josh Hudson
+
+With that, we were able to bring 20 individuals to our event through the scholarship programme.
 
 ## The amazing attendees
 
