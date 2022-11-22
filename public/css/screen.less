@@ -8,6 +8,27 @@ html {
   background-size: 920px 1000px;
 }
 
+html:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 105px;
+  height: 105px;
+  --trans:
+    powderblue 0.75em,
+    pink 0.75em 1.5em,
+    white 1.5em 2.25em,
+    pink 2.25em 3em,
+    powderblue 3em 3.75em,
+    transparent 3.75em;
+  background-image: linear-gradient(
+    -0.375turn,
+    var(--trans)
+  );
+}
+
 body {
   background: var(--c-bg);
   color: var(--c-text);
