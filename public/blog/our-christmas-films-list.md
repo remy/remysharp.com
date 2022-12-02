@@ -160,15 +160,23 @@ mileage may vary!
 * [Home Sweet Home Alone (2021)](https://www.imdb.com/title/tt11012066/)
 * [Silent Night (2021)](https://www.imdb.com/title/tt11628854/)
 
+## 2022
+
+* [Unaccompanied Minors (2006)](https://www.imdb.com/title/tt0488658/)
+* [A Christmas Story Christmas (2022)](https://www.imdb.com/title/tt17220704/)
+* [Spirited (2022)](https://www.imdb.com/title/tt10999120/)
+* [A Boy Called Christmas (2021)](https://www.imdb.com/title/tt10187208/)
+* ...
+
 ## Future Potentials
 
+* [Violent Night (2022)](https://www.imdb.com/title/tt12003946/)
 * [Meet Me in St. Louis (1944)](https://www.imdb.com/title/tt0037059/)
 * [8 Women (2002)](https://www.imdb.com/title/tt0283832/)
 * [How the Grinch Stole Christmas (2000)](https://www.imdb.com/title/tt0170016/)
 * [Love the Coopers (2015)](https://www.imdb.com/title/tt2279339/)
 * [The Family Stone (2005)](https://www.imdb.com/title/tt0356680/)
 * [All Is Bright (2013)](https://www.imdb.com/title/tt1462901/)
-* [Unaccompanied Minors (2006)](https://www.imdb.com/title/tt0488658/)
 * I saw mummy kissing santa
 * Holiday Affair
 
