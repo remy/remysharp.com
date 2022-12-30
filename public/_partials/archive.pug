@@ -1,4 +1,6 @@
-- posts = year ? collections.years[year].slice(0) : Object.keys(collections.years).sort((a, b) => b - a).reduce((acc, curr) => acc.concat(collections.years[curr]), [])
+- posts = year ? collections.years[year] ? collections.years[year].slice(0) : [] : Object.keys(collections.years).sort((a, b) => b - a).reduce((acc, curr) => acc.concat(collections.years[curr]), [])
+
+
 - last = null
 .post.archive-page
   h1.title #{ title || year } archive
