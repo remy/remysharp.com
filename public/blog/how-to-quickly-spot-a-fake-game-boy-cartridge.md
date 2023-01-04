@@ -21,7 +21,7 @@ In many cases, a cheap reproduction cart from somewhere like [AliX](https://www.
 
 The fastest way is usually the screw that holds the shell together. An official cart will have the screw at the bottom of the shell and it needs a "gamebit 3.8mm" screw driver to open it (or apparently a melted Bic Biro).
 
-Below you can see on the right is the original screw location and type, on the right a common reproduction cart.
+Below you can see on the right is the original screw location and type, on the left a common reproduction cart.
 
 ![Comparison back of two gameboy carts](/images/gb-game-back.jpg)
 
