@@ -65,7 +65,7 @@ I also had a one of these adapters which is [intended for online Tetris multipla
 
 But, as this blog post is about failings, yep, this failed too. Frustratingly the logic is sound, but for some reason - that still escapes me, the clock signal from the Game Boy when sending data goes bonkers, in that it suddenly fluctuates which causes the byte parsing to corrupt and I ended up with _ghost gamepad presses_. I tried this across multiple cables, multiple Game Boys (both modded and unmodded) and none worked. Oddly, the only time it worked was with an [Analogue Pocket](https://www.analogue.co/pocket) - but that doesn't make it entirely accessible.
 
-![A Game Boy with a game link connected into a Raspberry Pico with a logic analyser connected](/images/gb-gamepad.jpg)
+![A Game Boy with a game link connected into a Raspberry Pico with a logic analyser connected](/images/gb-gamepad-fail.jpg)
 
 So, lots of failings, and hopefully a few lessons. I'm sure I'll revisit the GB Gamepad (very soon actually - thinking about using an ATtiny85), otherwise even if I end up using one of those many empty shells!
 
