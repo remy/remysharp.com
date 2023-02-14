@@ -1,0 +1,26 @@
+---
+permalink: tif/index.html
+slug: tif
+title: 'Things I Fixed 🔨'
+---
+
+- posts = collections.tif
+- index = 0;
+- post = posts[index]
+
+div.link-listing
+  p Since I've started enjoying refurbishing and fixing things, I thought I'd start taking a record of <em>Things I Fixed</em>.
+  hr
+  ul.tifs
+    while post
+      if post && post.data.date && !post.data.private
+        li
+          div.content
+            p
+              strong= post.data.title
+              span &nbsp;
+              time.date(title=`${ moment(post.data.date).format('D-MMM YYYY') }`) #{ moment(post.data.date).ago() } ago
+            div !{ post.output }
+          p.img
+            img(src=`${post.data.photo}`)
+      - post = posts[index += 1];

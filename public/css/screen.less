@@ -1920,6 +1920,10 @@ h2 > label {
     white-space: nowrap;
   }
 
+  li {
+    list-style: none;
+  }
+
   div.link > div {
     font-size: 80%;
     line-height: 1.4em;
@@ -1959,6 +1963,8 @@ h2 > label {
   }
 }
 
+
+
 // [fragmention] {
 //   background: yellow;
 //   color: black;
@@ -1973,6 +1979,23 @@ h2 > label {
 
   > .video iframe {
     display: block;
+  }
+}
+
+#tif-page .tifs {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: grid;
+    grid-template-columns: 1fr 12rem;
+    border-bottom: 1px solid #aaa;
+    // margin-bottom: 20px;
+    padding: 20px 0;
+
+    img {
+      padding-left: 20px;
+    }
   }
 }
 
