@@ -1,7 +1,6 @@
 ---
 title: 'Testing USB cables for data lines'
 date: '2023-02-27'
-draft: true
 tags:
   - personal
 ---
@@ -37,5 +36,10 @@ In my version, I've included separate LEDs and checks for both the D+ and the D-
 
 The pinout on the USB ports is the important detail, the outside pins (far left and far right) are VCC and ground (which we don't care about). The centre pins are what we're interested in. The centre pins will make up the circuit.
 
+![schematic](/images/schematic-usb.jpg)
 
+## Result
 
+Now I have a simple tool that can help me weed out those pesky power-only USB cables!
+
+![final product](/images/usb-on.jpg)
