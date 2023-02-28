@@ -51,6 +51,7 @@
     "url": "https://github.com/remy/remysharp.com.git"
   },
   "devDependencies": {
+    "@types/node": "^18.11.10",
     "browser-sync": "^2.26.5",
     "chokidar": "^2.1.2",
     "eslint-plugin-node": "^11.0.0",

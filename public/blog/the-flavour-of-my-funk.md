@@ -29,7 +29,7 @@ Well, I personally believe there's not an answer to that question. Not a univers
 
 It's a question that you have to wrangle yourself, for yourself. Only you can decide what the point is.
 
-I have plenty of reasons to exist (because "what's the point" only leads me to "why exist"). My kids first and foremost. It's my kids that saves me from the darkest worst part of dispare. As much as I want to hurt myself (emotionally) it's knowing that I'd cause more pain by not existing that keeps me..."okay".
+I have plenty of reasons to exist (because "what's the point" only leads me to "why exist"). My kids first and foremost. It's my kids that saves me from the darkest worst part of despair. As much as I want to hurt myself (emotionally) it's knowing that I'd cause more pain by not existing that keeps me..."okay".
 
 Seriously, suicide doesn't come into my mind anymore. It hasn't for a solid couple of decades. I'm thankful for that. For my friends reading, I'm not sure if that will shock you or it'll just be that you kinda knew it. That, that end, isn't part of my funk.
 
