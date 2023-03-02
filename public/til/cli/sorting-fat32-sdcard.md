@@ -11,3 +11,5 @@ First you'll need to install fatsort - best method I've found is using https://b
 - Run fatsort as root: `sudo fatsort -D /GAMES/ -a -c -o a /dev/disk2` - this says to only sort /GAMES and all the sub directories (-D), and ascii sort (-a), ignore casing (-c), files and directories are not differentiated (-o a)
 
 Now my /GAMES directory is sorted and easier to navigate 👍
+
+**Updated: 2023-03-02** - there's now a useful [GUI for macOS to sorting FAT 32 files](https://fat-drive-sorter.netlify.app/) 🎉
