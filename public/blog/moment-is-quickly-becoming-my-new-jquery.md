@@ -46,8 +46,8 @@ hbs.registerHelper('matchDate', function (date, match, opts) {
     match
   );
 
-  if (moment(date).format('YYYY-MM-DD') ==
-    moment(matchDate).format('YYYY-MM-DD')) {
+  if (moment(date).format('yyyy-MM-dd') ==
+    moment(matchDate).format('yyyy-MM-dd')) {
 
     return opts.fn(this);
 

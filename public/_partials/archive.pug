@@ -17,6 +17,9 @@
     div.devlog
       input#filter-devlog(checked name="devlog" type="checkbox")
       label(for="filter-devlog") Devlogs
+    div.tif
+      input#filter-tif(checked name="tif" type="checkbox")
+      label(for="filter-tif") TIF
     div.til
       input#filter-til(checked name="til" type="checkbox")
       label(for="filter-til") TIL
@@ -25,20 +28,20 @@
       label(for="filter-book") Books
   while post
     if post.data.date
-      if !year || moment(post.data.date).format('YYYY') == year
+      if !year || moment(post.data.date).format('yyyy') == year
         - month = moment(post.data.date).format('MMMM')
-        - postYear = moment(post.data.date).format('YYYY')
+        - postYear = moment(post.data.date).format('yyyy')
         if !year && last != postYear
           h1.title= postYear
           - last = postYear
         .post-content
           h2= month
           ul
-            while post && month == moment(post.data.date).format('MMMM') && (!year || moment(post.data.date).format('YYYY') == year)
+            while post && month == moment(post.data.date).format('MMMM') && (!year || moment(post.data.date).format('yyyy') == year)
               if post && post.data.date
                 li(data-type=`${post.data.type}`)
                   a(href=`${ post.url }`)= post.data.title
-                  time.date #{ moment(post.data.date).format('D-MMM YYYY')}
+                  time.date #{ moment(post.data.date).format('d-MMM yyyy')}
               - post = posts[index += 1];
       else
         - post = posts[index += 1];

@@ -20,7 +20,8 @@ block content
 
       .post-content.e-content
         != yield
+        img(src=`${photo}`)
 
       if date
         .misc-content
-          p.metadata Learned at <time class="dt-published" datetime="#{ moment(date).format('yyyy-MM-dd HH:mm:ss') }">#{moment(date).format('d-MMM yyyy @ HH:mm')}</time> about #{dirname}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/#{current.inputPath}">Edit this post</a>
+          p.metadata Fixed at <time class="dt-published" datetime="#{ moment(date).format('yyyy-MM-dd HH:mm:ss') }">#{moment(date).format('d-MMM yyyy @ HH:mm')}</time> about #{dirname}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/#{current.inputPath}">Edit this post</a>

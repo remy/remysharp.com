@@ -19,7 +19,7 @@ div.link-listing
             p
               strong= post.data.title
               span &nbsp;
-              time.date(title=`${ moment(post.data.date).format('D-MMM YYYY') }`) #{ moment(post.data.date).ago() } ago
+              <a href="#{post.url }"><time class="date" title="#{ moment(post.data.date).format('d-MMM yyyy') }">#{ moment(post.data.date).ago() } ago</time></a>
             div !{ post.output }
           p.img
             img(src=`${post.data.photo}`)

@@ -11,7 +11,7 @@ block content
     div.warning
      | Draft posts are a work in progress.&nbsp;
      if modified
-       | Last edited #{ moment(modified).format('D-MMM YYYY') }
+       | Last edited #{ moment(modified).format('d-MMM yyyy') }
 
     article.post
       if current.source !== 'index'

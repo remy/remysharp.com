@@ -70,7 +70,7 @@ route.all(
       var requestDate = params.slice(1, 4).join('-');
 
       // compare the date of post _in the same format_ as requestDate
-      if (date.format('YYYY-MM-DD') !== requestDate) {
+      if (date.format('yyyy-MM-dd') !== requestDate) {
         // if it's not good, move on - will likely result in a 404
         return next();
       }
@@ -171,7 +171,7 @@ posts = partial('posts', { filter: function (post) { return post.tags.indexOf(ta
         if post.date
           li
             a(href="#{ post.relative }") #{ post.title }
-            small.date #{ moment(post.date).format('D-MMM YYYY')}
+            small.date #{ moment(post.date).format('d-MMM yyyy')}
 ```
 
 Note that `partial('posts')` is a magic partial that simply returns an array of blog posts with the passed in filter applied.

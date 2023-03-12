@@ -1,5 +1,4 @@
 ---
-date: 2023-02-11
 title: Space Invaders
 photo: /images/tif/2023-02-11-space-invaders.jpg
 ---

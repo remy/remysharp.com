@@ -25,4 +25,4 @@ block content
         p.metadata
           a(href="/links/") Discover more links
           br
-          span Saved <time class="dt-published" datetime="#{ moment(date).format('YYYY-MM-DD HH:mm:ss') }">#{moment(date).format('D-MMM YYYY')}</time> under ##{(tags || []).join(' & #')}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/public/links/#{current.source}.md">Edit this post</a>
+          span Saved <time class="dt-published" datetime="#{ moment(date).format('yyyy-MM-dd HH:mm:ss') }">#{moment(date).format('d-MMM yyyy')}</time> under ##{(tags || []).join(' & #')}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/public/links/#{current.source}.md">Edit this post</a>

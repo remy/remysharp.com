@@ -63,7 +63,7 @@ html#remysharp-com(lang="en")
         h2 Archives
         ul
           li: a(href="/archive") All years
-          - var thisYear = moment().format('YYYY') * 1
+          - var thisYear = moment().format('yyyy') * 1
           while thisYear >= 2006
             li: a(href=`/${ thisYear }`)= thisYear--
       .flex-item.links

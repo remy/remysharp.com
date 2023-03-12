@@ -19,6 +19,6 @@ div.link-listing
       ul
 
     li
-      a(href=`${ post.url }`)= moment(post.date).format('D-MMM YYYY')
+      a(href=`${ post.url }`)= moment(post.date).format('d-MMM yyyy')
     - last = post.data.project
     - post = posts[index += 1];

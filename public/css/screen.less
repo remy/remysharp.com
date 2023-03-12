@@ -498,6 +498,10 @@ form.search label {
     content: '🤔 ';
   }
 
+  .tif label:before {
+    content: '🔨 ';
+  }
+
   .book label:before {
     content: '📖 ';
   }
@@ -1576,6 +1580,10 @@ img[title^='Sample'] {
 
   a[href^='/til/'] ~ time:before {
     content: '🤔 ';
+  }
+
+  a[href^='/tif/'] ~ time:before {
+    content: '🔨 ';
   }
 
   a[href^='/books/'] ~ time:before {

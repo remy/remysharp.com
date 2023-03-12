@@ -33,7 +33,7 @@
               span.tag Talk
             |  &nbsp;
             time(datetime=`${talk.date.start}` title=`${talk.date.start}`)
-              span #{moment(talk.date.start).format('D-MMM YYYY')}&nbsp;
+              span #{moment(talk.date.start).format('d-MMM yyyy')}&nbsp;
             if talk.title
               em= talk.title
             br

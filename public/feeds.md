@@ -4,9 +4,10 @@ This is my page of all the RSS consumable feeds of content I'm generating on the
 
 ## On my blog
 
-- [RSS feed of all my web site's content (blog posts, links, til, books)](/feed.xml)
+- [RSS feed of all my web site's content (blog posts, links, til, tif, books)](/feed.xml)
 - [RSS feed of blog posts](/blog.xml)
-- [RSS feed of Thing I Learned](/til.xml)
+- [RSS feed of Things I Learned](/til.xml)
+- [RSS feed of Things I Fixed](/tif.xml)
 - [RSS feed of my project devlogs](/devlog.xml)
 - [RSS feed of curated links](/links.xml)
 - [RSS feed of my book reviews](/books.xml)

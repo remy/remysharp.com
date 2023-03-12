@@ -23,14 +23,14 @@ block content
           | #{author}
         p
           strong Published
-          | <time class="dt-published" datetime="#{moment(published).format('YYYY')}">#{published}</time>
+          | <time class="dt-published" datetime="#{moment(published).format('yyyy')}">#{published}</time>
         p.p-rating
           strong My rating
           span.rating(data-rating=`${ rating }` aria-label=`${ rating } stars out of 5` title=`${ rating } stars out of 5`)
             span #{rating} / 5
         p
           strong Read
-          | <time datetime="#{moment(read).format('YYYY-MM-DD')}">#{moment(read).format('MMMM YYYY')}</time>
+          | <time datetime="#{moment(read).format('yyyy-MM-dd')}">#{moment(read).format('MMMM yyyy')}</time>
         img.cover(src=`/images/books/${goodreads_id}.jpg` width="64")
 
       .post-content.e-content
@@ -49,4 +49,4 @@ block content
 
       if date
         .misc-content
-          p.metadata Finished reading on <time datetime="#{ moment(read).format('YYYY-MM-DD HH:mm:ss') }">#{moment(read).format('D-MMM YYYY')}</time>, starting on <time datetime="#{ moment(start).format('YYYY-MM-DD HH:mm:ss') }">#{moment(start).format('D-MMM YYYY')}</time>. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/#{current.inputPath}">Edit this review</a>
+          p.metadata Finished reading on <time datetime="#{ moment(read).format('yyyy-MM-dd HH:mm:ss') }">#{moment(read).format('d-MMM yyyy')}</time>, starting on <time datetime="#{ moment(start).format('yyyy-MM-dd HH:mm:ss') }">#{moment(start).format('d-MMM yyyy')}</time>. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/#{current.inputPath}">Edit this review</a>

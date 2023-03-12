@@ -1,5 +1,19 @@
 [
   {
+    "title": "Seveneves",
+    "author": "Neal Stephenson",
+    "published": 2015,
+    "pages": 881,
+    "goodreads": "https://www.goodreads.com/review/show/3100785764",
+    "goodreads_id": 24792435,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457571140l/24792435._SY475_.jpg",
+    "read": "2022-12-10T00:00:00.000Z",
+    "start": "2019-12-26T00:00:00.000Z",
+    "rating": 1,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2022/seveneves.md",
+    "slug": "seveneves"
+  },
+  {
     "title": "Hope to Die (DI Adam Fawley #6)",
     "author": "Cara Hunter",
     "published": 2022,

@@ -20,6 +20,6 @@ div.til-listing
 
     li
       a(href=`${ post.url }`)= post.title
-      time.date= moment(post.date).format('D-MMM YYYY')
+      time.date= moment(post.date).format('d-MMM yyyy')
     - last = post.dirname
     - post = posts[index += 1];

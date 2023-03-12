@@ -41,18 +41,18 @@ layout: public
           - rating = `${ '★'.repeat(review.rating) }${ '☆'.repeat(5 - review.rating)}`
           div(data-id=`${book.slug}`)
             img.cover(width="64" src=`/images/books/${review.goodreads_id}.jpg`)
-            p.when #{moment(review.read).format('D-MMM \'YY')}
+            p.when #{moment(review.read).format('d-MMM \'YY')}
               br
               span(title=`${review.read}`) #{duration(review.start, review.read)}
             p.title
-              a(href=`/books/${moment(review.read).format('YYYY')}/${review.slug || slugify(review.title)}`) #{review.title}
+              a(href=`/books/${moment(review.read).format('yyyy')}/${review.slug || slugify(review.title)}`) #{review.title}
             if review.summary
               p.review-link
                 if review.summary
                   span= review.summary
                 span
                   span 📝
-                  a(href=`/books/${moment(review.read).format('YYYY')}/${review.slug || slugify(review.title)}`) My review
+                  a(href=`/books/${moment(review.read).format('yyyy')}/${review.slug || slugify(review.title)}`) My review
                   if review.spoiler === true
                     span &nbsp;(includes spoilers)
             else

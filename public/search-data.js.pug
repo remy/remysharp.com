@@ -2,7 +2,7 @@
 layout: false
 permalink: /js/search-data.js
 ---
-- var format = _ => ({ url: _.url, date: moment(_.data.date).format('YYYY-MM-DD'), title: _.data.title, text: collections.squash(_.output) });
+- var format = _ => ({ url: _.url, date: moment(_.data.date).format('yyyy-MM-dd'), title: _.data.title, text: collections.squash(_.output) });
 - var data = JSON.stringify(collections.posts.map(format));
 
 | var searchData = !{ data };
