@@ -23,7 +23,7 @@ rss(version='2.0'
       url https://remysharp.com/images/avatar-125.jpg
       width 125
       height 125
-    lastBuildDate #{ moment(posts[0].date).format('ddd, dd MMM yyyy HH:mm:ss +0000') }
+    lastBuildDate #{ moment(posts[0].date).format('EEE, dd MMM yyyy HH:mm:ss +0000') }
     managingEditor remy@remysharp.com (Remy Sharp)
     webMaster remy@remysharp.com (Remy Sharp)
     language en
@@ -37,6 +37,6 @@ rss(version='2.0'
         guid(isPermaLink="false")= post.slug
         link= site_url + post.url
         - var body = post.output
-        pubDate= moment(post.data.date).format('ddd, dd MMM yyyy HH:mm:ss +0000')
+        pubDate= moment(post.data.date).format('EEE, dd MMM yyyy HH:mm:ss +0000')
         description <![CDATA[!{ post.data.rating + ' stars out of 5\n\n---\n\n' + body }]]>
         content:encoded <![CDATA[!{ post.data.rating + ' stars out of 5<br><br><hr><br>' + body.replace(/<img(.*?)src="\//g, '<img$1src="' + site_url + '/').replace(/<a href="\//g, '<a href="' + site_url + '/').replace(/<a href="#/g, '<a href="' + site_url + post.url + '#') }<p><em>Originally published on <a href="#{ site_url }#{ post.url }">Remy Sharp's b:log</a></em></p>]]>
