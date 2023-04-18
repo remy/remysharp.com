@@ -35,7 +35,7 @@ In a totally ideal world, I wanted:
 - Could run on a free hosting platform like Heroku
 - As a bonus, I could hack and improve the system
 
-TL;DR here's the full source of my blog as it is today, on github: [https://github.com/remy/remysharp.com/](github.com/remy/remysharp.com).
+TL;DR here's the full source of my blog as it is today, on github: [https://github.com/remy/remysharp.com/](https://github.com/remy/remysharp.com).
 
 ## Ghost
 
