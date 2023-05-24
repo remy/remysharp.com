@@ -22,6 +22,7 @@ If there's corrosion on the negative battery terminal, you'll possible have prob
 - Power button
 - Shock sensor
 - A button
+- [EEPROM](http://ww1.microchip.com/downloads/en/devicedoc/21189f.pdf) (for game saves)
 
 ## Power button
 
@@ -39,3 +40,10 @@ If there's corrosion on the negative battery terminal, you'll possible have prob
 
 - TP1 is a test point for the A button
 - However, the TP1 has more vias to reach the A button than the A button needs to reach the CPU (which is obviously more important)
+
+## EEPROM
+
+The read and write data lines have vias just under the negative terminal so if there's corrosion in these vias, games won't save. You'll need a cart that reads and writes to the EEPROM, Pokémon Party Mini is a good test case.
+
+If the mini can't talk to the EEPROM, you'll should a visual error on the LCD saying firstly that the EEPROM is full and then later with an error that reads "EEPROM". The clock should also fail to be set.
+
