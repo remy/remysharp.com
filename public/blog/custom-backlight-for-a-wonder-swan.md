@@ -1,6 +1,7 @@
 ---
 title: 'Custom backlight for a Wonder Swan'
 date: '2023-07-12'
+image: /images/ws-mod/12.jpg
 tags:
   - personal
 ---
