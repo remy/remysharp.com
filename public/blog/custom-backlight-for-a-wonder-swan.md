@@ -8,7 +8,7 @@ tags:
 
 # Custom backlight for a Wonder Swan
 
-I've been branching out from my usual Game Boy folly and have been tinkering with the Wonder Swan (an interesting little Japanese exclusive handheld). The original Wonder Swan can do eight shades of grey and has no backlight (very much like the original Game Boys for viewing).
+I've been branching out from my usual Game Boy folly and have been tinkering with the Wonder Swan (an interesting little Japanese exclusive handheld). The original Wonder Swan can do sixteen shades of grey and has no backlight (very much like the original Game Boys for viewing).
 
 Given my experience with Game Boys and recent (basic) electronics, I thought I'd try my hand at a backlight mod (where LEDs are used light up behind the display). I'm pretty happy with the final result and this is how I did it.
 
