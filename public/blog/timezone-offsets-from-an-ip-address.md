@@ -11,7 +11,7 @@ Following on from my [hard](/2023/06/29/ip-to-timezone-the-hard-but-fast-way) an
 
 <!-- more -->
 
-TL:DR; jump to the [spoiler](#the-easy-way) if you can't be bothered to read/listen to me ramble!
+TL:DR; jump to the [spoiler](#temporal-api-working-with-dates-and-times) if you can't be bothered to read/listen to me ramble!
 
 ## The problem isn't timezones, it's day light saving
 
