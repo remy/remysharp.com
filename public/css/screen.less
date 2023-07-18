@@ -9,6 +9,7 @@ html {
 }
 
 html:after {
+  pointer-events: none;
   content: '';
   display: block;
   position: absolute;
@@ -106,6 +107,15 @@ table {
 
   tbody tr:nth-child(2n + 2) {
     background: rgba(0, 0, 0, 0.05);
+  }
+}
+
+table.smaller {
+  td {
+    font-size: 90%;
+  }
+  tbody tr:nth-child(2n + 2) {
+    background: none;
   }
 }
 

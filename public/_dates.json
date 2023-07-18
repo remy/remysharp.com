@@ -1811,7 +1811,10 @@
     "created": "2018-10-05T13:27:55.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
   },
-  "public/blog/custom-backlight-for-a-wonder-swan.md": {},
+  "public/blog/custom-backlight-for-a-wonder-swan.md": {
+    "created": "2023-07-12T22:54:59.000Z",
+    "modified": "2023-07-16T09:52:19.000Z"
+  },
   "public/blog/custom-url-schemes-in-phonegap.md": {
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-20T15:35:42.000Z"
@@ -3889,6 +3892,22 @@
     "created": "2023-05-30T18:50:53.000Z",
     "modified": "2023-05-30T18:50:53.000Z"
   },
+  "public/attic/2006/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2008/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2007/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2014/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
   "public/books/2017/a-boy-made-of-blocks.md": {
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2020-11-06T12:09:51.000Z"
@@ -4396,22 +4415,6 @@
   "public/books/2022/the-wasp-factory.md": {
     "created": "2022-06-12T20:27:50.000Z",
     "modified": "2022-06-12T20:27:50.000Z"
-  },
-  "public/attic/2007/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2006/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2008/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2014/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
   },
   "public/devlog/go-mummy/2020-05-24.md": {
     "created": "2020-05-24T13:47:04.000Z",
