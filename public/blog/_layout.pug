@@ -15,7 +15,6 @@ block meta
   if summary
     - summary = '<meta name="twitter:description" content="' + summary.replace(/"/g, '&quot;').trim() + '">';
     != summary
-  meta(property="og:image" content=`https://remysharp.com/images/cards/og/9-${moment(data.date).modDOY(9)}.jpg`)
   meta(name="twitter:creator" content="@rem")
   meta(name="twitter:title" content=`${title}`)
   meta(name="twitter:site" content="@rem")
@@ -26,9 +25,11 @@ block meta
   if img
     meta(name="twitter:image:src" content=`${img}`)
     meta(name="twitter:card" content="summary_large_image")
+    meta(property="og:image" content=`${img}`)
   else
     meta(name="twitter:image:src" content=`https://remysharp.com/images/cards/${moment(data.date).modDOY(9)}.jpg`)
     meta(name="twitter:card" content="summary")
+    meta(property="og:image" content=`https://remysharp.com/images/cards/og/9-${moment(data.date).modDOY(9)}.jpg`)
 
 block content
   - permalink = url;
