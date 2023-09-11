@@ -168,3 +168,5 @@ With systems like this, where I'm relying on technology to play a key role in my
 I prefer systems that don't require habitual change - i.e. it might be hard to for the loved one to create a new habit that they call someone every morning (though this is obviously an excellent low cost solution).
 
 The risk here is when one part of the system fails. Even in writing this, I can see if the kettle smart plug disconnects, I'm not capturing that event - so that's straight forward for me to add, but obviously less moving parts for critical systems, the better.
+
+The source code is available [on github](https://github.com/remy/kettle-notify).
