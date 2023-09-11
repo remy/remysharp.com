@@ -9,7 +9,7 @@ tags:
 
 Following on from my [hard](/2023/06/29/ip-to-timezone-the-hard-but-fast-way) and [easy way](/2023/07/03/ip-to-timezone-the-30-second-way) of getting timezone from an IP address, having the timezone (as text) is one thing, now finding the actual offset is entirely a different problem.
 
-<!-- more -->
+<!--more-->
 
 TL:DR; jump to the [spoiler](#temporal-api-working-with-dates-and-times) if you can't be bothered to read/listen to me ramble!
 

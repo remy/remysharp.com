@@ -9,7 +9,7 @@ If you're a causal player or casual buyer of retro stuff, particular the Game Bo
 
 This is a non-exhaustive guide, intended for the uninitiated :)
 
-<!-- more -->
+<!--more-->
 
 ## Before we start
 

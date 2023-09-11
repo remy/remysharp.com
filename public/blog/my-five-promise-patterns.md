@@ -16,7 +16,7 @@ There's been some patterns that I use over and over so I wanted to share and doc
 
 *Please note that the examples used are *mostly* based on my real code, but have been simplified for demonstration purposes.*
 
-<!-- more -->
+<!--more-->
 
 ## Library of choice
 

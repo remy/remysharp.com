@@ -13,7 +13,7 @@ The other week I finally pushed full offline access to my blog. I'd taken a lot 
 
 One defining feature I wanted to support was that if you were offline and visited that page isn't cached, I wanted to list recent blog posts you had visited.
 
-<!-- more -->
+<!--more-->
 
 ## The effect
 

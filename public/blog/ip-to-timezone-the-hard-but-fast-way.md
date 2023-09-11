@@ -11,7 +11,7 @@ This week I decided it was time to try to revive some of the casualties from my 
 
 It turned into 3 days of complicated problem solving and working against systems that just didn't want to work the way I needed.
 
-<!-- more -->
+<!--more-->
 
 ## The context
 

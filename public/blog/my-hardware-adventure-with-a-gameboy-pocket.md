@@ -13,7 +13,7 @@ I bought this Gameboy Pocket off eBay in the hope that I could bring it back to 
 
 I'd seen this before and suspected that the game couldn't be loaded due to corruption during boot (on the GB side). I was wrong, but I definitely enjoyed the challenge!
 
-<!-- more -->
+<!--more-->
 
 Opening up the Gameboy up and took a peek, and yep, found game pak loading doberry had been messed with. Bit of a duff job on whoever tried to repair it before me - and it even looks like they spotted there was a short and tried to slice through it with a knife:
 

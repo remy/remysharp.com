@@ -16,7 +16,7 @@ Anything that I rely on for actual long term living I'm am _extremely_ wary of r
 
 So this is how I've solved it myself.
 
-<!-- more -->
+<!--more-->
 
 ## The desired effect
 

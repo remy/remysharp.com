@@ -11,7 +11,7 @@ It's because [Vercel has blocked my account](https://vercel.com) under "fair usa
 
 I had all of 12 hours on a Sunday to prevent people from using the source of the spike - but I suspect they would have blocked my account either way because _normal_ traffic would have tipped me over their limits.
 
-<!-- more -->
+<!--more-->
 
 The trouble is that they've blocked my personal account and personal accounts can't be upgraded to a paid account, you **have** to create a Team and then put your paid instances into the team, and of course that process is nowhere near as automated as their blocking process.
 

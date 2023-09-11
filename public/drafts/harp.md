@@ -17,7 +17,7 @@ This post is a walk through as to how you can do a `git push` and have an automa
 I've broken this post up into sections, and some bits are already familiar,
 just right on to the next.
 
-<!-- more -->
+<!--more-->
 
 ## Topics
 

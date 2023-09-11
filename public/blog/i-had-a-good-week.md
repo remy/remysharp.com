@@ -11,7 +11,7 @@ Though it's only been a few days since [my last entry](https://remysharp.com/202
 
 Again, this is for me and those who know me. The usual tech nonsense will resume (one day!).
 
-<!-- more -->
+<!--more-->
 
 I hadn't written anything on my blog for a while, or at least nothing that had flowed naturally so my "flavour of funk" post did come easily and it was good.
 

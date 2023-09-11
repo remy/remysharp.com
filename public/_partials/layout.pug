@@ -7,6 +7,8 @@ html#remysharp-com(lang="en")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     title= customTitle || title || site_title
     - var desc = title === site_title ? title + ' :: ' + site_description : title || site_description
+    if excerpt
+      - desc = metaExcerpt
     meta(name="source" content="https://github.com/remy/remysharp.com")
     meta(name="description" content=`${desc}`)
     meta(name="author" content="Remy Sharp")

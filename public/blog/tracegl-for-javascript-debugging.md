@@ -14,7 +14,7 @@ In preparing for my new Node workshop (tickets go [on sale Wednesday 10am](https
 
 tracegl was so much more than I realised: it captures full JavaScript state a *all* points of my application's execution - **both** on the server side, but also the client side.
 
-<!-- more -->
+<!--more-->
 
 ## Debugging a real bug with tracegl
 

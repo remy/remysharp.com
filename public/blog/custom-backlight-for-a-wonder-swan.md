@@ -12,7 +12,7 @@ I've been branching out from my usual Game Boy folly and have been tinkering wit
 
 Given my experience with Game Boys and recent (basic) electronics, I thought I'd try my hand at a backlight mod (where LEDs are used light up behind the display). I'm pretty happy with the final result and this is how I did it.
 
-<!-- more -->
+<!--more-->
 
 ## Build steps
 

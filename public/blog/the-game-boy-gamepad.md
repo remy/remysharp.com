@@ -11,7 +11,7 @@ I posted recently about trying to make a [DMG GamePad](https://remysharp.com/202
 
 First try failed, I then pivoted and success! Here's how.
 
-<!-- more -->
+<!--more-->
 
 ## How it works
 

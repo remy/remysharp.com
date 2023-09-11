@@ -13,7 +13,7 @@ The USB (2) port generally have four wires - ground, power and then D+ and D- (f
 
 My problem is that I also have a boat load of _power only_ USB cables - and there's no way to tell using a visual inspection. You can buy tools that tell you if there's a data line, but I can make one fairly simply.
 
-<!-- more -->
+<!--more-->
 
 I should caveat this with the fact that I just happened to have the parts laying around.
 

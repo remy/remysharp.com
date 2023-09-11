@@ -11,7 +11,7 @@ After my wrangle with getting a timezone from an IP address by reducing large da
 
 I totally overlooked the feature (maybe I didn't even look!). So let's implement that and then discover the glaring bug in _all_ of the code so far.
 
-<!-- more -->
+<!--more-->
 
 ## Netlify edge function's geo prop
 
