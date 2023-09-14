@@ -49,4 +49,4 @@ You can sponsor events like ffconf or find many of the other events that are scr
 
 Even if you, dear reader, don't pull the purse strings, you can pass the word inside your company and push to help. Like I said before, this helps real people in our web community.
 
-Get in touch today if you want to [support ffconf]() ❤️
+Get in touch today if you want to [support ffconf](mailto:events@leftlogic.com?subject=Request%20for%20sponsor%20pack%20%5B2023%5D) ❤️
