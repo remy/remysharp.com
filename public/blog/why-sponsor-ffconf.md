@@ -1,7 +1,6 @@
 ---
 title: 'Why sponsor small events (like ffconf)?'
 date: '2023-09-14'
-draft: true
 summary: 'I write this to speak to the companies and individuals who can help support these small events and the real impact it has.'
 nosubscribe: true
 tags:
