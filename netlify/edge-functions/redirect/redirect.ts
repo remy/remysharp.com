@@ -6,7 +6,7 @@ export default async function (req: Request, { next }: Context) {
   try {
     // Get the URL from the query string parameter 'url'
     const url = new URL(req.url);
-    const urlParam = url.searchParams.get('method');
+    const urlParam = url.searchParams.get('url');
     const res = await next({ sendConditionalRequest: true });
 
     if (urlParam === null) {
@@ -19,8 +19,9 @@ export default async function (req: Request, { next }: Context) {
       return res;
     }
 
-    // Make a GET request to the given URL
-    const response = await fetch(urlParam);
+    const targetUrl = new URL(urlParam);
+
+    const response = await fetchWithTimeout(targetUrl, {}, 1000);
 
     // Check the status code of the response
     if (response.status === 200) {
@@ -48,8 +49,7 @@ export default async function (req: Request, { next }: Context) {
       } else {
         // Return an error response if the Wayback Machine does not have a valid snapshot
         console.log('[fail] sending 302 to original URL, unknown');
-        const url = new URL(urlParam);
-        return Response.redirect(url, 302);
+        return Response.redirect(targetUrl, 302);
       }
     }
   } catch (error) {
@@ -62,3 +62,29 @@ export default async function (req: Request, { next }: Context) {
 export const config: Config = {
   path: '/redirect',
 };
+
+async function fetchWithTimeout(uri: URL, options = {}, time = 5000) {
+  const controller = new AbortController();
+  const config = { ...options, signal: controller.signal };
+
+  const timeout = setTimeout(() => {
+    controller.abort();
+  }, time);
+
+  try {
+    const response = await fetch(uri, config);
+    if (!response.ok) {
+      throw new Error(`${response.status}: ${response.statusText}`);
+    }
+    return response;
+  } catch (error) {
+    // When we abort our `fetch`, the controller conveniently throws
+    // a named error, allowing us to handle them separately from
+    // other errors.
+    if (error.name === 'AbortError') {
+      throw new Error('Response timed out');
+    }
+
+    throw new Error(error.message);
+  }
+}
