@@ -4,7 +4,10 @@ const root = new URL('https://remysharp.com');
 
 export default async function (req: Request, { next }: Context) {
   try {
-    if (!req.headers.get('referrer')?.startsWith('https://remysharp.com')) {
+    console.log(
+      `[referrer] ${req.referrer} / header - ${req.headers.get('referer')}`
+    );
+    if (!req.headers.get('referer')?.startsWith('https://remysharp.com')) {
       return new Response(null, { status: 204 });
     }
 
