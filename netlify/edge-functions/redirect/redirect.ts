@@ -1,5 +1,7 @@
 import type { Config, Context } from 'https://edge.netlify.com';
 
+const root = new URL('https://remysharp.com');
+
 export default async function (req: Request, { next }: Context) {
   try {
     // Get the URL from the query string parameter 'url'
@@ -9,7 +11,7 @@ export default async function (req: Request, { next }: Context) {
 
     if (urlParam === null) {
       console.log('[fail] bad usage');
-      return Response.redirect(new URL('/'), 301);
+      return Response.redirect(root, 301);
     }
 
     if (res.status === 304) {
@@ -46,16 +48,14 @@ export default async function (req: Request, { next }: Context) {
       } else {
         // Return an error response if the Wayback Machine does not have a valid snapshot
         console.log('[fail] sending 302 to original URL, unknown');
-        return Response.redirect(urlParam, 302);
+        const url = new URL(urlParam);
+        return Response.redirect(url, 302);
       }
     }
   } catch (error) {
     // Handle any errors that occur during the execution
     console.log('[fail] errored: ' + error.message);
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: error.message }),
-    };
+    return Response.redirect(root, 500);
   }
 }
 
