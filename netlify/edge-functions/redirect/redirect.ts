@@ -21,10 +21,17 @@ export default async function (req: Request, { next }: Context) {
 
     const targetUrl = new URL(urlParam);
 
-    const response = await fetchWithTimeout(targetUrl, {}, 1000);
+    let status = 0;
+
+    try {
+      const response = await fetchWithTimeout(targetUrl, {}, 1000);
+      status = response.status;
+    } catch (_) {
+      status = 400;
+    }
 
     // Check the status code of the response
-    if (response.status === 200) {
+    if (status === 200) {
       console.log('[ok] redirecting to 200 resource');
       return Response.redirect(urlParam, 301);
     } else {
