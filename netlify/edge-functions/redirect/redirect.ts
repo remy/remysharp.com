@@ -1,29 +1,27 @@
 import type { Config, Context } from 'https://edge.netlify.com';
 
-const root = new URL('https://remysharp.com');
+const rootUrl = 'https://remysharp.com';
+
+const root = new URL(rootUrl);
 
 export default async function (req: Request, { next }: Context) {
   try {
-    console.log(
-      `[referrer] ${req.referrer} / header - ${req.headers.get('referer')}`
-    );
-    if (!req.headers.get('referer')?.startsWith('https://remysharp.com')) {
+    if (!req.headers.get('referer')?.startsWith(rootUrl)) {
       return new Response(null, { status: 204 });
     }
 
     // Get the URL from the query string parameter 'url'
     const url = new URL(req.url);
     const urlParam = url.searchParams.get('url');
+    if (urlParam === null) {
+      return new Response(null, { status: 204 });
+    }
+
     const date = url.searchParams.get('date');
     const res = await next({ sendConditionalRequest: true });
 
-    if (urlParam === null) {
-      console.log('[fail] bad usage');
-      return Response.redirect(root, 301);
-    }
-
     if (res.status === 304) {
-      console.log('[cached] returning untouched');
+      // if the client is has a cached version, just let them do it
       return res;
     }
 
@@ -40,21 +38,22 @@ export default async function (req: Request, { next }: Context) {
 
     // Check the status code of the response
     if (status === 200) {
-      console.log('[ok] redirecting to 200 resource');
+      // the target page is fine, so redirect to it as a perma-redirect
       return Response.redirect(urlParam, 301);
     } else {
-      // If the status code is not 200, fetch the Wayback Machine API
+      // If the status code is not 200, fetch the Wayback Machine CDX API
       let waybackUrl = `https://web.archive.org/cdx/search/cdx?output=json&filter=statuscode:200&url=${encodeURIComponent(
         urlParam
       )}&`;
 
+      // then add the date of the blog post (if we can from that) to get an
+      // good representative of the page at the time
       if (date) {
         waybackUrl += `from=${date}&limit=1`;
       } else {
+        // otherwise just take the last 200
         waybackUrl += `limit=-1`;
       }
-
-      console.log(`[request] ${waybackUrl}`);
 
       const waybackResponse = await fetch(waybackUrl);
       const waybackData = (await waybackResponse.json()) as [
@@ -68,11 +67,9 @@ export default async function (req: Request, { next }: Context) {
         const waybackUrl = new URL(
           `https://web.archive.org/web/${waybackData[1][1]}/${waybackData[1][2]}`
         );
-        console.log('[301] redirecting to wayback archive');
         return Response.redirect(waybackUrl, 301);
       } else {
-        // Return an error response if the Wayback Machine does not have a valid snapshot
-        console.log('[fail] sending 302 to original URL, unknown');
+        // fail: sending 302 to original URL, unknown
         return Response.redirect(targetUrl, 302);
       }
     }
