@@ -7,6 +7,8 @@ export default async function (req: Request, { next }: Context) {
     // Get the URL from the query string parameter 'url'
     const url = new URL(req.url);
     const urlParam = url.searchParams.get('url');
+    const date =
+      url.searchParams.get('date') || new Date().toJSON().split('T')[0];
     const res = await next({ sendConditionalRequest: true });
 
     if (urlParam === null) {
@@ -36,21 +38,28 @@ export default async function (req: Request, { next }: Context) {
       return Response.redirect(urlParam, 301);
     } else {
       // If the status code is not 200, fetch the Wayback Machine API
-      const waybackUrl = `https://archive.org/wayback/available?url=${encodeURIComponent(
+      let waybackUrl = `https://web.archive.org/cdx/search/cdx?output=json&showDupeCount=true&filter=statuscode:200&url=${encodeURIComponent(
         urlParam
       )}`;
+
+      if (date) {
+        waybackUrl += `from=${date}&limit=1`;
+      } else {
+        waybackUrl += `limit=-1`;
+      }
+
       const waybackResponse = await fetch(waybackUrl);
-      const waybackData = await waybackResponse.json();
+      const waybackData = (await waybackResponse.json()) as [
+        String[],
+        String[]
+      ];
 
       // Check if the Wayback Machine response includes a value of 200
-      if (
-        waybackData &&
-        waybackData.archived_snapshots &&
-        waybackData.archived_snapshots.closest &&
-        waybackData.archived_snapshots.closest.status === '200'
-      ) {
+      if (waybackData && waybackData.length > 1 && waybackData[1]) {
         // Redirect to the URL from Wayback Machine
-        const waybackUrl = new URL(waybackData.archived_snapshots.closest.url);
+        const waybackUrl = new URL(
+          `https://web.archive.org/web/${waybackData[1][1]}/${waybackData[1][2]}`
+        );
         console.log('[301] redirecting to wayback archive');
         return Response.redirect(waybackUrl, 301);
       } else {
