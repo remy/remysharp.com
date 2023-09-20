@@ -40,7 +40,7 @@ export default async function (req: Request, { next }: Context) {
       // If the status code is not 200, fetch the Wayback Machine API
       let waybackUrl = `https://web.archive.org/cdx/search/cdx?output=json&showDupeCount=true&filter=statuscode:200&url=${encodeURIComponent(
         urlParam
-      )}`;
+      )}&`;
 
       if (date) {
         waybackUrl += `from=${date}&limit=1`;
