@@ -7,8 +7,7 @@ export default async function (req: Request, { next }: Context) {
     // Get the URL from the query string parameter 'url'
     const url = new URL(req.url);
     const urlParam = url.searchParams.get('url');
-    const date =
-      url.searchParams.get('date') || new Date().toJSON().split('T')[0];
+    const date = url.searchParams.get('date');
     const res = await next({ sendConditionalRequest: true });
 
     if (urlParam === null) {
@@ -38,7 +37,7 @@ export default async function (req: Request, { next }: Context) {
       return Response.redirect(urlParam, 301);
     } else {
       // If the status code is not 200, fetch the Wayback Machine API
-      let waybackUrl = `https://web.archive.org/cdx/search/cdx?output=json&showDupeCount=true&filter=statuscode:200&url=${encodeURIComponent(
+      let waybackUrl = `https://web.archive.org/cdx/search/cdx?output=json&filter=statuscode:200&url=${encodeURIComponent(
         urlParam
       )}&`;
 
