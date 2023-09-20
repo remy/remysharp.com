@@ -4,6 +4,10 @@ const root = new URL('https://remysharp.com');
 
 export default async function (req: Request, { next }: Context) {
   try {
+    if (!req.referrer?.startsWith('https://remysharp.com/')) {
+      return new Response(null, { status: 204 });
+    }
+
     // Get the URL from the query string parameter 'url'
     const url = new URL(req.url);
     const urlParam = url.searchParams.get('url');
