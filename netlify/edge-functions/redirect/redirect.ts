@@ -4,7 +4,7 @@ const root = new URL('https://remysharp.com');
 
 export default async function (req: Request, { next }: Context) {
   try {
-    if (!req.referrer?.startsWith('https://remysharp.com/')) {
+    if (!req.headers.get('referrer')?.startsWith('https://remysharp.com')) {
       return new Response(null, { status: 204 });
     }
 
