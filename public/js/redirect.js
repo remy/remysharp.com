@@ -217,7 +217,7 @@ document.body.addEventListener(
       }
 
       const url = new URL(href);
-      const hit = toTest.filter((_) => url.host.includes('/' + _ + '.')).length;
+      const hit = toTest.filter((_) => url.host.includes(_ + '.')).length;
 
       if (!hit) {
         return;
