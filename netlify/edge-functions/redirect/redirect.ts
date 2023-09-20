@@ -48,6 +48,8 @@ export default async function (req: Request, { next }: Context) {
         waybackUrl += `limit=-1`;
       }
 
+      console.log(`[request] ${waybackUrl}`);
+
       const waybackResponse = await fetch(waybackUrl);
       const waybackData = (await waybackResponse.json()) as [
         String[],
