@@ -5,7 +5,7 @@ document.body.addEventListener(
   (event) => {
     if (event.target.nodeName === 'A') {
       /** @type String */
-      const href = event.target.href;
+      const href = event.target.attributes.href;
 
       if (!href.startsWith('http')) {
         // ignore it
