@@ -20,6 +20,8 @@ export default async function (req: Request, { next }: Context) {
     const date = url.searchParams.get('date');
     const res = await next({ sendConditionalRequest: true });
 
+    const useWayback = !!url.searchParams.get('wayback');
+
     if (res.status === 304) {
       // if the client is has a cached version, just let them do it
       return res;
@@ -30,8 +32,11 @@ export default async function (req: Request, { next }: Context) {
     let status = 0;
 
     try {
-      const response = await fetchWithTimeout(targetUrl, {}, 1000);
-      status = response.status;
+      if (!useWayback) {
+        // set a 2s timeout (1s was too tight for some sites)
+        const response = await fetchWithTimeout(targetUrl, {}, 2000);
+        status = response.status;
+      }
     } catch (_) {
       status = 400;
     }
@@ -88,9 +93,7 @@ async function fetchWithTimeout(uri: URL, options = {}, time = 5000) {
   const controller = new AbortController();
   const config = { ...options, signal: controller.signal };
 
-  const timeout = setTimeout(() => {
-    controller.abort();
-  }, time);
+  setTimeout(() => controller.abort(), time);
 
   try {
     const response = await fetch(uri, config);

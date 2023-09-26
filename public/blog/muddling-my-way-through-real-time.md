@@ -284,7 +284,7 @@ As I'm sure many of you know, the node module repository is rife with libraries 
 
 What's particularly useful about many of these libraries is that they provide both sides of the infrastructure required to achieve real time, and usually require very little to get started.
 
-The two libraries that I would encourage you to gravitate towards are [Socket.IO](http://socket.io) (v1.x) and [Primus](http://primus.io).
+The two libraries that I would encourage you to gravitate towards are [Socket.IO](http://socket.io) (v1.x) and [Primus](https://github.com/primus/primus).
 
 ### Socket abstraction
 

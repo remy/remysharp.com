@@ -10,7 +10,7 @@ document.body.addEventListener(
       target = target.closest('a');
     }
 
-    if (target.nodeName === 'A') {
+    if (target && target.nodeName === 'A') {
       /** @type String */
       let href = '';
 
@@ -23,6 +23,11 @@ document.body.addEventListener(
 
       if (!href.startsWith('http')) {
         // ignore it
+        return;
+      }
+
+      if (href.includes('archive.org')) {
+        // don't try to redirect archive links
         return;
       }
 
