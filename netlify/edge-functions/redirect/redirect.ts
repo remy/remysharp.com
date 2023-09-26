@@ -17,7 +17,6 @@ export default async function (req: Request, { next }: Context) {
       return new Response(null, { status: 204 });
     }
 
-    const date = url.searchParams.get('date');
     const res = await next({ sendConditionalRequest: true });
 
     const useWayback = !!url.searchParams.get('wayback');
@@ -53,6 +52,7 @@ export default async function (req: Request, { next }: Context) {
 
       // then add the date of the blog post (if we can from that) to get an
       // good representative of the page at the time
+      const date = url.searchParams.get('date');
       if (date) {
         waybackUrl += `from=${date}&limit=1`;
       } else {
