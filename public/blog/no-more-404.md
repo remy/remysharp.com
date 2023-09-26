@@ -15,7 +15,7 @@ The archive.org is an amazing resource and I've wondered whether I should _alway
 
 <!--more-->
 
-## How I approved this problem
+## How I approached this problem
 
 I went through a number of different ideas, but eventually landed on the following:
 
