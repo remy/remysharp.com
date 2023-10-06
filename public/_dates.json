@@ -1703,7 +1703,10 @@
     "created": "2018-08-23T17:11:15.000Z",
     "modified": "2020-04-09T16:54:58.000Z"
   },
-  "public/blog/coco.md": {},
+  "public/blog/coco.md": {
+    "created": "2023-10-04T16:30:14.000Z",
+    "modified": "2023-10-04T16:30:14.000Z"
+  },
   "public/blog/code-dumper.md": {
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-20T15:54:13.000Z"
@@ -3306,7 +3309,7 @@
   },
   "public/blog/the-game-boy-gamepad.md": {
     "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-09-11T22:41:41.000Z"
+    "modified": "2023-10-06T08:33:46.000Z"
   },
   "public/blog/the-hack-stops-here.md": {
     "created": "2014-09-04T11:12:23.000Z",
@@ -4588,6 +4591,14 @@
     "created": "2020-11-06T19:13:58.000Z",
     "modified": "2020-11-06T19:13:58.000Z"
   },
+  "public/til/data/modifying-autoincrements.md": {
+    "created": "2021-06-18T08:10:17.000Z",
+    "modified": "2021-06-18T08:10:17.000Z"
+  },
+  "public/til/data/postgres-csv-import-with-json.md": {
+    "created": "2021-03-09T12:53:55.000Z",
+    "modified": "2021-03-09T12:53:55.000Z"
+  },
   "public/til/http/curl-s-isnt-as-useful-as-i-thought.md": {
     "created": "2020-05-02T10:20:32.000Z",
     "modified": "2020-05-26T11:26:37.000Z"
@@ -4623,14 +4634,6 @@
   "public/til/node/spawn-sh-on-mac.md": {
     "created": "2020-05-16T14:54:26.000Z",
     "modified": "2020-05-26T11:26:37.000Z"
-  },
-  "public/til/data/modifying-autoincrements.md": {
-    "created": "2021-06-18T08:10:17.000Z",
-    "modified": "2021-06-18T08:10:17.000Z"
-  },
-  "public/til/data/postgres-csv-import-with-json.md": {
-    "created": "2021-03-09T12:53:55.000Z",
-    "modified": "2021-03-09T12:53:55.000Z"
   },
   "public/til/spectrum/48k.md": {
     "created": "2020-06-09T14:55:58.000Z",
