@@ -1,6 +1,7 @@
 ---
 title: 'The Game Boy GamePad'
 date: '2023-01-29'
+draft: true
 tags:
   - personal
 ---

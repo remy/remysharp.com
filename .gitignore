@@ -6,3 +6,6 @@ test/
 _site
 .env
 public/js/version.js
+
+# Local Netlify folder
+.netlify
