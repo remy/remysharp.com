@@ -20,6 +20,641 @@
       "wm-private": false
     }
   ],
+  "getting-daily-notifications-my-parent-is-okay": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Alex Wilson",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d59ba91a15d9bcdf2a51cbc4c24d3790ac60e2115fb9e14b494b3d873e962b29.jpg",
+        "url": "https://mastodon.social/@alexwilson"
+      },
+      "url": "https://front-end.social/@rem/111047288921056369#favorited-by-109313004657399737",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:49Z",
+      "wm-id": 1724183,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111047288921056369/109313004657399737",
+      "wm-target": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Juan Fernandes",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/739c2658ba6ce4991ce5ce7d0d38c3dab6024885bdfd93c51b3b6663e6530d47.jpg",
+        "url": "https://hachyderm.io/@juanfernandes"
+      },
+      "url": "https://front-end.social/@rem/111047288921056369#favorited-by-109427224800226696",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:47Z",
+      "wm-id": 1724181,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111047288921056369/109427224800226696",
+      "wm-target": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Scott",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/ec400d4b3c51127de22c1dd7c8824e5f7a8ce5488d3b1a517d6b086c8a72ef1f.png",
+        "url": "https://toot.scott.ee/@scott"
+      },
+      "url": "https://front-end.social/@rem/111047288921056369#favorited-by-109328515574544970",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:47Z",
+      "wm-id": 1724182,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111047288921056369/109328515574544970",
+      "wm-target": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "bassistance",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/90bf884d7ccbd6f0c938f30135316e1fedd4ae970dba5a27d09ae4641764693b.jpg",
+        "url": "https://chaos.social/@bassistance"
+      },
+      "url": "https://front-end.social/@rem/111047288921056369#favorited-by-109331356539035572",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:44Z",
+      "wm-id": 1724179,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111047288921056369/109331356539035572",
+      "wm-target": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Walter",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/25b78b22d1751396e31e9558c6b3fe942ce0da68203cebec7008820671eaab79.jpg",
+        "url": "https://mastodon.world/@vividvisions"
+      },
+      "url": "https://front-end.social/@rem/111047288921056369#favorited-by-109365010189183779",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:44Z",
+      "wm-id": 1724180,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111047288921056369/109365010189183779",
+      "wm-target": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "why-sponsor-ffconf": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Katie Fenn",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/025c11946c45d353be2631ded38302a7a9c142610cc6411e20df08cb9d8c53f3.jpg",
+        "url": "https://front-end.social/@katiefenn"
+      },
+      "url": "https://front-end.social/@rem/111063470907017220#favorited-by-109338682378924967",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:33Z",
+      "wm-id": 1724170,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111063470907017220/109338682378924967",
+      "wm-target": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Charlie Gerard",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/61aaa08df5887c98c3c43b2bcb0fbed9b073ea59455fa4a78fb9b79820f960c4.png",
+        "url": "https://hachyderm.io/@devdevcharlie"
+      },
+      "url": "https://front-end.social/@rem/111063470907017220#favorited-by-109348895138327712",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:33Z",
+      "wm-id": 1724171,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111063470907017220/109348895138327712",
+      "wm-target": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Letorey",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b134c0c2e776f2db1cf2af7ff4522efd5122fdd093694ba053050a594070af92.jpg",
+        "url": "https://mastodon.social/@dletorey"
+      },
+      "url": "https://front-end.social/@rem/111063470907017220#favorited-by-109293118411674662",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:31Z",
+      "wm-id": 1724169,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111063470907017220/109293118411674662",
+      "wm-target": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Phil Nelson",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/23df4c7a5a8b9821aacac34c1ebe3a11fe203af897b9c53d4f6c844149a4210b.jpg",
+        "url": "https://wrestling.social/@phil"
+      },
+      "url": "https://front-end.social/@rem/111063470907017220#favorited-by-109297348126624283",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:30Z",
+      "wm-id": 1724168,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111063470907017220/109297348126624283",
+      "wm-target": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Alistair Shepherd",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/8f911a0013ec407e4ff84660dea4c1ffa449d75ffc8316eb71736c148e27d15b.jpg",
+        "url": "https://mastodon.scot/@accudio"
+      },
+      "url": "https://front-end.social/@rem/111063470907017220#favorited-by-109288775697156751",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:28Z",
+      "wm-id": 1724166,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111063470907017220/109288775697156751",
+      "wm-target": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "alexolder",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/421da511a602b73eac582444d5708f9a2ed1b53e0a1befe6cef058d562a02f98.jpg",
+        "url": "https://mastodon.social/@alexolder"
+      },
+      "url": "https://front-end.social/@rem/111063470907017220#favorited-by-109319165592741485",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:28Z",
+      "wm-id": 1724167,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111063470907017220/109319165592741485",
+      "wm-target": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/111063470907017220#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2023-10-06T10:48:25Z",
+      "wm-id": 1724164,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111063470907017220/109312840969263891",
+      "wm-target": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/14/why-sponsor-ffconf",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "no-more-404": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Florian Geierstanger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f1c020229c0be53788bfc9693d82f8f2da4362a9e3bcda0ce66402875bb61760.jpg",
+        "url": "https://mastodon.social/@kinoauge"
+      },
+      "url": "https://front-end.social/@rem/111131047529252920#favorited-by-109294894111274110",
+      "published": null,
+      "wm-received": "2023-10-06T10:22:47Z",
+      "wm-id": 1724153,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111131047529252920/109294894111274110",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Russell",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/180b4832158626f389f7706308a09c7e0daa30810d0a45505e04d0128dea7a14.png",
+        "url": "https://mastodon.social/@bamber123"
+      },
+      "url": "https://front-end.social/@rem/111131047529252920#favorited-by-109294017323542964",
+      "published": null,
+      "wm-received": "2023-10-06T10:22:46Z",
+      "wm-id": 1724152,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111131047529252920/109294017323542964",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Susan from NeuStudio",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c7870abb3b3d29def7d0770fb2cf5b8aff2983614c3fca4d31694e7950d0a189.png",
+        "url": "https://fosstodon.org/@SueNeu"
+      },
+      "url": "https://front-end.social/@rem/111131047529252920#favorited-by-109322719690979006",
+      "published": null,
+      "wm-received": "2023-10-06T10:22:44Z",
+      "wm-id": 1724151,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111131047529252920/109322719690979006",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David O'Brien",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e2557a6476cb99d6771a46942521f4e560636bb9eb4e0b7f2225eac9e54cf829.jpg",
+        "url": "https://mastodon.social/@iamdavidobrien"
+      },
+      "url": "https://front-end.social/@rem/111131047529252920#favorited-by-109321352605006233",
+      "published": null,
+      "wm-received": "2023-10-06T10:22:43Z",
+      "wm-id": 1724150,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111131047529252920/109321352605006233",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Katie Fenn",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/025c11946c45d353be2631ded38302a7a9c142610cc6411e20df08cb9d8c53f3.jpg",
+        "url": "https://front-end.social/@katiefenn"
+      },
+      "url": "https://front-end.social/@rem/111131047529252920#favorited-by-109338682378924967",
+      "published": null,
+      "wm-received": "2023-10-06T10:22:42Z",
+      "wm-id": 1724149,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111131047529252920/109338682378924967",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Harald Atteneder",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/346f6dab72c8d53c6ad2eb6e4544117ba9bbdcd3f4eb07e8a9cc7dece70adb34.png",
+        "url": "https://mas.to/@urbantrout"
+      },
+      "url": "https://front-end.social/@rem/111131047529252920#favorited-by-109314522587954050",
+      "published": null,
+      "wm-received": "2023-10-06T10:22:41Z",
+      "wm-id": 1724148,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111131047529252920/109314522587954050",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marsh Gardiner",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/edcd9fde7110624a0cc7367798cd33f0e46d02c628ddae635c21037e5c2292da.jpg",
+        "url": "https://hachyderm.io/@earth2marsh"
+      },
+      "url": "https://front-end.social/@rem/111131047529252920#favorited-by-109374520204974802",
+      "published": null,
+      "wm-received": "2023-10-06T10:22:39Z",
+      "wm-id": 1724146,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111131047529252920/109374520204974802",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Royce Williams",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/9f9c01eaf97306c1c38da4a7b72bc7ea2f6508bde96eaafe3ce421c42d0823be.jpg",
+        "url": "https://infosec.exchange/@tychotithonus"
+      },
+      "url": "https://front-end.social/@rem/111131047529252920#favorited-by-109301116327707978",
+      "published": null,
+      "wm-received": "2023-10-06T10:22:39Z",
+      "wm-id": 1724147,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111131047529252920/109301116327707978",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kai",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fa49d6c8eb7d03d5892077c926da34b326536219682cbb14a58331fbb32507a1.jpg",
+        "url": "https://mastodon.social/@Schweinepriester"
+      },
+      "url": "https://front-end.social/@rem/111131047529252920#favorited-by-109308087884996129",
+      "published": null,
+      "wm-received": "2023-10-06T10:22:37Z",
+      "wm-id": 1724144,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111131047529252920/109308087884996129",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ian Sutherland ????????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/8ad2e4bef4901e0ebaad527a886cdfa6a22d38cf1b616350dc781dc5a42d1aa7.jpg",
+        "url": "https://cosocial.ca/@iansu"
+      },
+      "url": "https://front-end.social/@rem/111131047529252920#favorited-by-110562822173713112",
+      "published": null,
+      "wm-received": "2023-10-06T10:22:37Z",
+      "wm-id": 1724145,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111131047529252920/110562822173713112",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "tomhazledine",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/67a03a8a8cbb481aadab9b3d0cb4dc6d8de0a51ed35f5b7540f4e0b9b2b81708.jpg",
+        "url": "https://mastodon.social/@tomhazledine"
+      },
+      "url": "https://front-end.social/@rem/111131047529252920#favorited-by-109365520768303261",
+      "published": null,
+      "wm-received": "2023-10-06T10:22:35Z",
+      "wm-id": 1724142,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111131047529252920/109365520768303261",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "coco": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Fred Brooker",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/1ead1c6716412a05239a63ee5de3fc2763839abcc9ff47adc80c26a9e60c4261.jpg",
+        "url": "https://witter.cz/@fredbrooker"
+      },
+      "url": "https://front-end.social/@rem/111177704646042733#favorited-by-109774673954983410",
+      "published": null,
+      "wm-received": "2023-10-06T10:21:33Z",
+      "wm-id": 1724135,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111177704646042733/109774673954983410",
+      "wm-target": "https://remysharp.com/2023/10/04/coco",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/04/coco",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "paulcuth",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/762e1f447dc4674709556097cfafef6f407bede68f013649a0255fb1c119f5bc.jpg",
+        "url": "https://mastodon.social/@paulcuth"
+      },
+      "url": "https://front-end.social/@rem/111177704646042733#favorited-by-109295859354337683",
+      "published": null,
+      "wm-received": "2023-10-06T10:21:32Z",
+      "wm-id": 1724134,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111177704646042733/109295859354337683",
+      "wm-target": "https://remysharp.com/2023/10/04/coco",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/04/coco",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian LeRoux ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg",
+        "url": "https://indieweb.social/@brianleroux"
+      },
+      "url": "https://front-end.social/@rem/111177704646042733#favorited-by-109312334322806947",
+      "published": null,
+      "wm-received": "2023-10-06T10:21:31Z",
+      "wm-id": 1724133,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111177704646042733/109312334322806947",
+      "wm-target": "https://remysharp.com/2023/10/04/coco",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/04/coco",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jane Dallaway",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5980ef0248353130158388bb7ea9ae56010b73acb7c57e4bfc2d2168b4e5d7ce.png",
+        "url": "https://mastodon.green/@JaneDallaway"
+      },
+      "url": "https://front-end.social/@rem/111177704646042733#favorited-by-109613792506459701",
+      "published": null,
+      "wm-received": "2023-10-06T10:21:29Z",
+      "wm-id": 1724132,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111177704646042733/109613792506459701",
+      "wm-target": "https://remysharp.com/2023/10/04/coco",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/04/coco",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sophie",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/bc9982878ca1c39bd4b7bcf9f5cccae37a2235005dc7b11bcadf7b45bca05064.jpg",
+        "url": "https://social.lol/@sophie"
+      },
+      "url": "https://front-end.social/@rem/111177704646042733#favorited-by-109513729749989690",
+      "published": null,
+      "wm-received": "2023-10-06T10:21:28Z",
+      "wm-id": 1724131,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111177704646042733/109513729749989690",
+      "wm-target": "https://remysharp.com/2023/10/04/coco",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/04/coco",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ian Sutherland ????????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/8ad2e4bef4901e0ebaad527a886cdfa6a22d38cf1b616350dc781dc5a42d1aa7.jpg",
+        "url": "https://cosocial.ca/@iansu"
+      },
+      "url": "https://front-end.social/@rem/111177704646042733#favorited-by-110562822173713112",
+      "published": null,
+      "wm-received": "2023-10-06T10:21:26Z",
+      "wm-id": 1724130,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111177704646042733/110562822173713112",
+      "wm-target": "https://remysharp.com/2023/10/04/coco",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/04/coco",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lynn Fisher",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/ce3bb756160a12fcdc1a1b9713f9099b3380fd54c9f458b1f47eae24ffbd9161.jpg",
+        "url": "https://front-end.social/@lynnandtonic"
+      },
+      "url": "https://front-end.social/@rem/111177704646042733#favorited-by-109291684517909477",
+      "published": null,
+      "wm-received": "2023-10-06T10:21:25Z",
+      "wm-id": 1724129,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111177704646042733/109291684517909477",
+      "wm-target": "https://remysharp.com/2023/10/04/coco",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/04/coco",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111177704646042733#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2023-10-06T10:21:23Z",
+      "wm-id": 1724127,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111177704646042733/109338564602223384",
+      "wm-target": "https://remysharp.com/2023/10/04/coco",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/04/coco",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nat",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/741b3ef45bab92de92267bcad856bcc8de30b9355132eaf8f45b262c1f9e8900.jpg",
+        "url": "https://cloudisland.nz/@nat"
+      },
+      "url": "https://front-end.social/@rem/111177704646042733#favorited-by-109361066485702967",
+      "published": null,
+      "wm-received": "2023-10-06T10:21:23Z",
+      "wm-id": 1724128,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111177704646042733/109361066485702967",
+      "wm-target": "https://remysharp.com/2023/10/04/coco",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/04/coco",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Beartiger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/9ca91adc353f473aa6f3d137b3a0395ca57250c87f1e34af175a03aae3156f3d.jpg",
+        "url": "https://mastodon.social/@Beartiger"
+      },
+      "url": "https://front-end.social/@rem/111177704646042733#favorited-by-109750478113710135",
+      "published": null,
+      "wm-received": "2023-10-06T10:21:21Z",
+      "wm-id": 1724126,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111177704646042733/109750478113710135",
+      "wm-target": "https://remysharp.com/2023/10/04/coco",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/04/coco",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
   "2023-03-30-75858f69": [
     {
       "type": "entry",

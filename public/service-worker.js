@@ -1,6 +1,6 @@
 /* eslint-env serviceworker */
 
-const prefix = 'v2';
+const prefix = 'v2.1';
 const commit = '%%FILE_HASH%%';
 const version = prefix + '/' + commit;
 
@@ -63,7 +63,7 @@ async function updateStaticCache() {
       .then((cache) =>
         cache.addAll([
           '/images/avatar.jpg',
-          '/images/avatar-300.jpg',
+          '/images/avatar-2023.jpg',
           '/images/background.jpg',
           '/images/search.svg',
         ])
