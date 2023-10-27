@@ -46711,5 +46711,767 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "why-i-stopped-loving-slashes-in-self-closing-tags": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas Steiner :chrome:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/bfc6c0c43c877e20f52745c3797f2df8b399c676f61af5b28b562461b499f345.jpg",
+        "url": "https://toot.cafe/@tomayac"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109288467443856475",
+      "published": null,
+      "wm-received": "2023-10-09T21:18:00Z",
+      "wm-id": 1725191,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109288467443856475",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oiva Eskola",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d8cf551e57a08143048642a845fe87badfbf793c533610e17d68fd64883f388f.png",
+        "url": "https://toot.community/@oivaeskola"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109308249224430866",
+      "published": null,
+      "wm-received": "2023-10-09T18:22:20Z",
+      "wm-id": 1725163,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109308249224430866",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marsh Gardiner",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/edcd9fde7110624a0cc7367798cd33f0e46d02c628ddae635c21037e5c2292da.jpg",
+        "url": "https://hachyderm.io/@earth2marsh"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109374520204974802",
+      "published": null,
+      "wm-received": "2023-10-09T16:22:00Z",
+      "wm-id": 1725130,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109374520204974802",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Filipe Fortes",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/338d3bbbf85bab3d7760a4983214d89ba7a13de309efe82bb986623421ae791e.png",
+        "url": "https://mastodon.social/@fortes"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109325936419697874",
+      "published": null,
+      "wm-received": "2023-10-09T15:49:00Z",
+      "wm-id": 1725119,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109325936419697874",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Elias Seichter",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/028682cb790e4bfbabd8b68aa59cfe15dec24e30486c28041e389fc3851905c5.png",
+        "url": "https://floss.social/@esai"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109336822787095290",
+      "published": null,
+      "wm-received": "2023-10-09T15:48:59Z",
+      "wm-id": 1725118,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109336822787095290",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2023-10-09T15:21:08Z",
+      "wm-id": 1725106,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109363548648925264",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "busticated",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6d417411050b9bb0c5410a4a669d1d73fc9352a6a56ca66265524c1aadfe2315.png",
+        "url": "https://mastodon.social/@busticated"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295592162122409",
+      "published": null,
+      "wm-received": "2023-10-09T14:19:03Z",
+      "wm-id": 1725070,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295592162122409",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "abznak@techhub.social",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fe51dc94b3c6fbb603d3b95967ff476766db32aa6cc341fd02ee4adb655143af.jpg",
+        "url": "https://techhub.social/@abznak"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109362542161358791",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:27Z",
+      "wm-id": 1725059,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109362542161358791",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chee Aun ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fa755647a51dd7e0f1211bd4477da5f862459350b4f063ac31acec113fbb4b55.jpg",
+        "url": "https://mastodon.social/@cheeaun"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295222192024434",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:23Z",
+      "wm-id": 1725057,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295222192024434",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sara Joy ✨",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a06118ca119ec1183309db1aa65689d6bd69349b68713fd0c3f49cc5de8ca683.jpg",
+        "url": "https://front-end.social/@sarajw"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295906487756020",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:23Z",
+      "wm-id": 1725058,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295906487756020",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas Steiner :chrome:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/bfc6c0c43c877e20f52745c3797f2df8b399c676f61af5b28b562461b499f345.jpg",
+        "url": "https://toot.cafe/@tomayac"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109288467443856475",
+      "published": null,
+      "wm-received": "2023-10-09T21:18:00Z",
+      "wm-id": 1725191,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109288467443856475",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oiva Eskola",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d8cf551e57a08143048642a845fe87badfbf793c533610e17d68fd64883f388f.png",
+        "url": "https://toot.community/@oivaeskola"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109308249224430866",
+      "published": null,
+      "wm-received": "2023-10-09T18:22:20Z",
+      "wm-id": 1725163,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109308249224430866",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marsh Gardiner",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/edcd9fde7110624a0cc7367798cd33f0e46d02c628ddae635c21037e5c2292da.jpg",
+        "url": "https://hachyderm.io/@earth2marsh"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109374520204974802",
+      "published": null,
+      "wm-received": "2023-10-09T16:22:00Z",
+      "wm-id": 1725130,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109374520204974802",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Filipe Fortes",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/338d3bbbf85bab3d7760a4983214d89ba7a13de309efe82bb986623421ae791e.png",
+        "url": "https://mastodon.social/@fortes"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109325936419697874",
+      "published": null,
+      "wm-received": "2023-10-09T15:49:00Z",
+      "wm-id": 1725119,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109325936419697874",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Elias Seichter",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/028682cb790e4bfbabd8b68aa59cfe15dec24e30486c28041e389fc3851905c5.png",
+        "url": "https://floss.social/@esai"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109336822787095290",
+      "published": null,
+      "wm-received": "2023-10-09T15:48:59Z",
+      "wm-id": 1725118,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109336822787095290",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2023-10-09T15:21:08Z",
+      "wm-id": 1725106,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109363548648925264",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "busticated",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6d417411050b9bb0c5410a4a669d1d73fc9352a6a56ca66265524c1aadfe2315.png",
+        "url": "https://mastodon.social/@busticated"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295592162122409",
+      "published": null,
+      "wm-received": "2023-10-09T14:19:03Z",
+      "wm-id": 1725070,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295592162122409",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "abznak@techhub.social",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fe51dc94b3c6fbb603d3b95967ff476766db32aa6cc341fd02ee4adb655143af.jpg",
+        "url": "https://techhub.social/@abznak"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109362542161358791",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:27Z",
+      "wm-id": 1725059,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109362542161358791",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chee Aun ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fa755647a51dd7e0f1211bd4477da5f862459350b4f063ac31acec113fbb4b55.jpg",
+        "url": "https://mastodon.social/@cheeaun"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295222192024434",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:23Z",
+      "wm-id": 1725057,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295222192024434",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sara Joy ✨",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a06118ca119ec1183309db1aa65689d6bd69349b68713fd0c3f49cc5de8ca683.jpg",
+        "url": "https://front-end.social/@sarajw"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295906487756020",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:23Z",
+      "wm-id": 1725058,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295906487756020",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas Steiner :chrome:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/bfc6c0c43c877e20f52745c3797f2df8b399c676f61af5b28b562461b499f345.jpg",
+        "url": "https://toot.cafe/@tomayac"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109288467443856475",
+      "published": null,
+      "wm-received": "2023-10-09T21:18:00Z",
+      "wm-id": 1725191,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109288467443856475",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oiva Eskola",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d8cf551e57a08143048642a845fe87badfbf793c533610e17d68fd64883f388f.png",
+        "url": "https://toot.community/@oivaeskola"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109308249224430866",
+      "published": null,
+      "wm-received": "2023-10-09T18:22:20Z",
+      "wm-id": 1725163,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109308249224430866",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marsh Gardiner",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/edcd9fde7110624a0cc7367798cd33f0e46d02c628ddae635c21037e5c2292da.jpg",
+        "url": "https://hachyderm.io/@earth2marsh"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109374520204974802",
+      "published": null,
+      "wm-received": "2023-10-09T16:22:00Z",
+      "wm-id": 1725130,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109374520204974802",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Filipe Fortes",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/338d3bbbf85bab3d7760a4983214d89ba7a13de309efe82bb986623421ae791e.png",
+        "url": "https://mastodon.social/@fortes"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109325936419697874",
+      "published": null,
+      "wm-received": "2023-10-09T15:49:00Z",
+      "wm-id": 1725119,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109325936419697874",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Elias Seichter",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/028682cb790e4bfbabd8b68aa59cfe15dec24e30486c28041e389fc3851905c5.png",
+        "url": "https://floss.social/@esai"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109336822787095290",
+      "published": null,
+      "wm-received": "2023-10-09T15:48:59Z",
+      "wm-id": 1725118,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109336822787095290",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2023-10-09T15:21:08Z",
+      "wm-id": 1725106,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109363548648925264",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "busticated",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6d417411050b9bb0c5410a4a669d1d73fc9352a6a56ca66265524c1aadfe2315.png",
+        "url": "https://mastodon.social/@busticated"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295592162122409",
+      "published": null,
+      "wm-received": "2023-10-09T14:19:03Z",
+      "wm-id": 1725070,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295592162122409",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "abznak@techhub.social",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fe51dc94b3c6fbb603d3b95967ff476766db32aa6cc341fd02ee4adb655143af.jpg",
+        "url": "https://techhub.social/@abznak"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109362542161358791",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:27Z",
+      "wm-id": 1725059,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109362542161358791",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chee Aun ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fa755647a51dd7e0f1211bd4477da5f862459350b4f063ac31acec113fbb4b55.jpg",
+        "url": "https://mastodon.social/@cheeaun"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295222192024434",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:23Z",
+      "wm-id": 1725057,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295222192024434",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sara Joy ✨",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a06118ca119ec1183309db1aa65689d6bd69349b68713fd0c3f49cc5de8ca683.jpg",
+        "url": "https://front-end.social/@sarajw"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295906487756020",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:23Z",
+      "wm-id": 1725058,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295906487756020",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas Steiner :chrome:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/bfc6c0c43c877e20f52745c3797f2df8b399c676f61af5b28b562461b499f345.jpg",
+        "url": "https://toot.cafe/@tomayac"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109288467443856475",
+      "published": null,
+      "wm-received": "2023-10-09T21:18:00Z",
+      "wm-id": 1725191,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109288467443856475",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oiva Eskola",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d8cf551e57a08143048642a845fe87badfbf793c533610e17d68fd64883f388f.png",
+        "url": "https://toot.community/@oivaeskola"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109308249224430866",
+      "published": null,
+      "wm-received": "2023-10-09T18:22:20Z",
+      "wm-id": 1725163,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109308249224430866",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marsh Gardiner",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/edcd9fde7110624a0cc7367798cd33f0e46d02c628ddae635c21037e5c2292da.jpg",
+        "url": "https://hachyderm.io/@earth2marsh"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109374520204974802",
+      "published": null,
+      "wm-received": "2023-10-09T16:22:00Z",
+      "wm-id": 1725130,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109374520204974802",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Filipe Fortes",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/338d3bbbf85bab3d7760a4983214d89ba7a13de309efe82bb986623421ae791e.png",
+        "url": "https://mastodon.social/@fortes"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109325936419697874",
+      "published": null,
+      "wm-received": "2023-10-09T15:49:00Z",
+      "wm-id": 1725119,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109325936419697874",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Elias Seichter",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/028682cb790e4bfbabd8b68aa59cfe15dec24e30486c28041e389fc3851905c5.png",
+        "url": "https://floss.social/@esai"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109336822787095290",
+      "published": null,
+      "wm-received": "2023-10-09T15:48:59Z",
+      "wm-id": 1725118,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109336822787095290",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2023-10-09T15:21:08Z",
+      "wm-id": 1725106,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109363548648925264",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "busticated",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6d417411050b9bb0c5410a4a669d1d73fc9352a6a56ca66265524c1aadfe2315.png",
+        "url": "https://mastodon.social/@busticated"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295592162122409",
+      "published": null,
+      "wm-received": "2023-10-09T14:19:03Z",
+      "wm-id": 1725070,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295592162122409",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "abznak@techhub.social",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fe51dc94b3c6fbb603d3b95967ff476766db32aa6cc341fd02ee4adb655143af.jpg",
+        "url": "https://techhub.social/@abznak"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109362542161358791",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:27Z",
+      "wm-id": 1725059,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109362542161358791",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chee Aun ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fa755647a51dd7e0f1211bd4477da5f862459350b4f063ac31acec113fbb4b55.jpg",
+        "url": "https://mastodon.social/@cheeaun"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295222192024434",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:23Z",
+      "wm-id": 1725057,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295222192024434",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sara Joy ✨",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a06118ca119ec1183309db1aa65689d6bd69349b68713fd0c3f49cc5de8ca683.jpg",
+        "url": "https://front-end.social/@sarajw"
+      },
+      "url": "https://front-end.social/@rem/111205102854790002#favorited-by-109295906487756020",
+      "published": null,
+      "wm-received": "2023-10-09T13:19:23Z",
+      "wm-id": 1725058,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111205102854790002/109295906487756020",
+      "wm-target": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/10/09/why-i-stopped-loving-slashes-in-self-closing-tags",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
