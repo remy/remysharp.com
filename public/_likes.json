@@ -47473,5 +47473,330 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "2023-10-27-kindle": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "alex.tm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/ee1b9d2a2da9dc5e73dedae4da62f826aafbb3516a546f00c3eed4bb75c3a9d0.png",
+        "url": "https://mstdn.ca/@alextm"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109874911097414031",
+      "published": null,
+      "wm-received": "2023-10-29T16:40:47Z",
+      "wm-id": 1732126,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109874911097414031",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Taylor",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a87973169c765d928b1589f99b11b90b00f71367186ddd871c728fb5ea400cec.jpg",
+        "url": "https://mastodon.world/@stillbreathing"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109294483081300453",
+      "published": null,
+      "wm-received": "2023-10-28T18:49:16Z",
+      "wm-id": 1731950,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109294483081300453",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tyler Sticka",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a3e8f10c9190a71c8b5813cb592445962f91252468058abbac98ecff88025553.png",
+        "url": "https://social.lol/@tylersticka"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-110651353810564612",
+      "published": null,
+      "wm-received": "2023-10-27T21:29:15Z",
+      "wm-id": 1731689,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/110651353810564612",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kornel",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/50e688615f07ad85f78a337c8fd70edb26cfd1041f92fa7722b8e447c3dc225d.jpg",
+        "url": "https://mastodon.social/@kornel"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109288859327073373",
+      "published": null,
+      "wm-received": "2023-10-27T20:22:14Z",
+      "wm-id": 1731684,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109288859327073373",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2023-10-27T18:22:24Z",
+      "wm-id": 1731653,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109874328475766981",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jan",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/94385a86d0a91df34c7b3f23d9433008ded38e5424efc65946b2e9fa4d288a77.jpg",
+        "url": "https://social.lol/@janmon"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109613091246776944",
+      "published": null,
+      "wm-received": "2023-10-27T16:26:25Z",
+      "wm-id": 1731594,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109613091246776944",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "hannah aubry",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/7ef317dedfc291ef00b9215a04c7c0ec0937a1b723d751dd47656910daa60d81.jpg",
+        "url": "https://fosstodon.org/@haubles"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109435239762040881",
+      "published": null,
+      "wm-received": "2023-10-27T15:24:02Z",
+      "wm-id": 1731491,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109435239762040881",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jackyalciné",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/26db4c3cce93d4ffaeda0286b51dc4d5532963f0836541b031567c33cff06d1d.png",
+        "url": "https://todon.eu/@jalcine"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109293864709524127",
+      "published": null,
+      "wm-received": "2023-10-27T14:48:34Z",
+      "wm-id": 1731474,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109293864709524127",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jeff",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/0dac888b4be71a99339cc0f561af2161a28b7e8756aff159452d08e86e41c5d7.png",
+        "url": "https://hachyderm.io/@jeffinmotion"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109378820780090903",
+      "published": null,
+      "wm-received": "2023-10-27T14:48:33Z",
+      "wm-id": 1731473,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109378820780090903",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mykal Machon",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/50a6aa422b761c553265b8ba52c2e9aa49327407314a4e9028bc9c3c347ba211.jpg",
+        "url": "https://indieweb.social/@mykalmachon"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109293938816802460",
+      "published": null,
+      "wm-received": "2023-10-27T14:48:31Z",
+      "wm-id": 1731472,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109293938816802460",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Katie Fenn",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/025c11946c45d353be2631ded38302a7a9c142610cc6411e20df08cb9d8c53f3.jpg",
+        "url": "https://front-end.social/@katiefenn"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109338682378924967",
+      "published": null,
+      "wm-received": "2023-10-27T14:48:29Z",
+      "wm-id": 1731471,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109338682378924967",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "filmaj",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d55de2d5175609df5fae51a35e0ba2a3fa3a199fc4b9960fa22c102d0ac1ee5b.png",
+        "url": "https://social.lunchlurkers.com/@filmaj"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109365962138354798",
+      "published": null,
+      "wm-received": "2023-10-27T14:48:28Z",
+      "wm-id": 1731470,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109365962138354798",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mikael Gramont",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/48cce4a67d24eb6cc5700b7279d7e984137a2ad357a6f8e402370f9cdc0660b2.jpg",
+        "url": "https://indieweb.social/@mikamtb"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109348329546844907",
+      "published": null,
+      "wm-received": "2023-10-27T14:19:30Z",
+      "wm-id": 1731465,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109348329546844907",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "John Godsland",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4d72b9675020f7bdd684dc6af329888b05a6f44cbac4bf3794007f8c72b500a7.jpg",
+        "url": "https://mastodonapp.uk/@gozzy"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109389006876578631",
+      "published": null,
+      "wm-received": "2023-10-27T14:19:30Z",
+      "wm-id": 1731466,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109389006876578631",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Saranormal Joy ✨",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f5604d5fbc4547381d39f35350e822f29b9bd5e8401ef9342bbc32881d0895ca.jpg",
+        "url": "https://front-end.social/@sarajw"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109295906487756020",
+      "published": null,
+      "wm-received": "2023-10-27T14:19:28Z",
+      "wm-id": 1731464,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109295906487756020",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nathan Knowler",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/50ce56f39c91e30823b4e4f318af74b4e46c9debc27b9eb5cd70c94af36b7c88.jpg",
+        "url": "https://sunny.garden/@knowler"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109288608398254369",
+      "published": null,
+      "wm-received": "2023-10-27T14:19:27Z",
+      "wm-id": 1731463,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109288608398254369",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ana Rodrigues",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/9d42d260dda7235e88c49246eb617a4598cc5cea0251a0f0caf24496da1afbf9.png",
+        "url": "https://mastodon.social/@ohhelloana"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109288608207722597",
+      "published": null,
+      "wm-received": "2023-10-27T14:19:25Z",
+      "wm-id": 1731462,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109288608207722597",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
