@@ -54,7 +54,7 @@ export default async function (req: Request, { next }: Context) {
       // good representative of the page at the time
       const date = url.searchParams.get('date');
       if (date) {
-        waybackUrl += `from=${date}&limit=1`;
+        waybackUrl += `from=${date.replace(/\D/g, '')}&limit=1`;
       } else {
         // otherwise just take the last 200
         waybackUrl += `limit=-1`;

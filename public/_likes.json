@@ -47797,6 +47797,25 @@
       "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111307320450257088#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2023-11-05T02:49:08Z",
+      "wm-id": 1734437,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111307320450257088/109338564602223384",
+      "wm-target": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2023-10-27-kindle",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }
