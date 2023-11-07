@@ -49,9 +49,11 @@ html#remysharp-com(lang="en")
     //-     }
     //-   }
 
-    // using this method because Firefox doesn't support rel="preload"
-    link(rel="stylesheet" href=`/css/screen.css` media="preload" onload="this.media='all'")
-    link(rel="stylesheet" href=`/css/prism.css` media="preload" onload="this.media='all'")
+
+    link(as="style" href=`/css/screen.css` rel="preload")
+    link(as="style" href=`/css/prism.css` rel="preload")
+    link(rel="stylesheet" href=`/css/screen.css`)
+    link(rel="stylesheet" href=`/css/prism.css`)
 
     script.
       var whenReady = []; // on ready handler
