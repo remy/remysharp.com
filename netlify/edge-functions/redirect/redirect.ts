@@ -57,7 +57,7 @@ export default async function (req: Request, { next }: Context) {
         waybackUrl += `from=${date.replace(/\D/g, '')}&limit=1`;
       } else {
         // otherwise just take the last 200
-        waybackUrl += `limit=-1`;
+        waybackUrl += `limit=1`;
       }
 
       const waybackResponse = await fetch(waybackUrl);

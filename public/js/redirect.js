@@ -25,9 +25,9 @@ document.body.addEventListener(
       const date = hEntry.querySelector('.dt-published[datetime]');
 
       if (date) {
-        target.href = `https://unrot.link/?url=${href}&date=${date.dateTime}`;
+        target.href = `/redirect?url=${href}&date=${date.dateTime}`;
       } else {
-        target.href = `https://unrot.link/?url=${href}`;
+        target.href = `/redirect?url=${href}`;
       }
     }
   },
