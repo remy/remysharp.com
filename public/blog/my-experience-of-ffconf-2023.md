@@ -1,6 +1,7 @@
 ---
 title: 'My experience of ffconf 2023'
 date: '2023-11-15'
+image: /images/ffconf2023.jpg
 tags:
   - personal
 ---
@@ -27,6 +28,14 @@ I know it could be a bit of a cop-out to say "it's all about people" - most thin
 
 We'll also be uploading the videos to YouTube in the coming weeks, so keep an eye on the [ffconf YouTube playlist](https://ffconf.org/videos) or subscribe to the [newsletter](https://ffconf.org/news).
 
+## A personal event
+
+One of the things that makes ffconf so special to many people is how personal the whole event is. Julie and I care very much about how everyone is treated, how we support and use local businesses (how amazing our venue is) and how the event, speakers and the many friend's we've made over the many years have become part of a special family to us.
+
+It's also an honour to share our own family growing in front of you all. Here is the end of 2015 and 2023 side by side:
+
+![](/images/ffconf-before-after.jpg)
+
 ## Some things you said
 
 Beyond the many people I spoke to at the post-social, telling me how much they enjoyed the day or when a specific talk was an extra special highlight for them, I also received a few quotes from attendees:
@@ -48,3 +57,7 @@ Beyond the many people I spoke to at the post-social, telling me how much they e
 As much as I'm trying to resist, I'm already thinking of [2024](https://2024.ffconf.org/) and have started a new list of talk ideas that I'd like to hear - though I really do need to take a break from the conference for a few months (at least until January!).
 
 If you attended and have your own blog post, I'd love if you shared it with me too - we collect all the posts on the [ffconf archive website](https://ffconf.org/articles).
+
+Perhaps maybe we'll see you again at 2024's ffconf?
+
+![](/images/ffconf2023.jpg)
