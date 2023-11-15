@@ -20,7 +20,7 @@ One for the client - that should be thoughtful and careful.
 
 This post is more for my peers, since I live in the *more* open web world (rather than TechBroLand), I regularly see JavaScript being thrown under the bus on twitter amongst my peers.
 
-In truth, I do it too. I've had way too many encounters with web sites that have failed through think through their JavaScript design to be left with a broken page.
+In truth, I do it too. I've had way too many encounters with web sites that have failed to think through their JavaScript design to be left with a broken page.
 
 Or, when those annoying YOU MUST SUBSCRIBE modals appear, I simply block JavaScript for that page, but then half the page doesn't work - including images - which last I checked don't actually require any JavaScript to work.
 
@@ -68,4 +68,4 @@ It looks to be project that's leaning hard on progressive enhancement, which mea
 
 I think we need more of this thoughtful separation in the JavaScript development land.
 
-To my peers: I don't think we need to through *all* of JavaScript under the bus, but just the client side JS when it's pulled off poorly.
+To my peers: I don't think we need to throw *all* of JavaScript under the bus, but just the client side JS when it's pulled off poorly.
