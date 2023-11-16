@@ -38,9 +38,11 @@ This is my own MacOS config file:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <PortName>/dev/tty.wchusbserial1420</PortName>
+  <EspPortName>/dev/tty.wchusbserial1420</EspPortName>
 </Settings>
 ```
+
+*Updated 2023-11-16 to change `PortName` to `EspPortName`*
 
 Using Cspect now will pass the requests directly to the ESP which gives you a much closer experience to the Spectrum hardware.
 
