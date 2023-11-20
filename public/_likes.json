@@ -47817,5 +47817,615 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "my-experience-of-ffconf-2023": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2023-11-15T20:49:08Z",
+      "wm-id": 1738817,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109874328475766981",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dylan",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/57997be373ea3039e4349e6a6d98cc9ec3967daa9d94b0fba7c2da190b1a23a0.png",
+        "url": "https://infosec.exchange/@dylan"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109362543903895658",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:48Z",
+      "wm-id": 1738715,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109362543903895658",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian LeRoux ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg",
+        "url": "https://indieweb.social/@brianleroux"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109312334322806947",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:46Z",
+      "wm-id": 1738714,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109312334322806947",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sudo rm -rf fascism",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4a4c7daa3b1531560e963297393cb0a2becd1744c1d1010e3fe37bae4b415860.png",
+        "url": "https://front-end.social/@misprintedtype"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109642432631039231",
+      "published": null,
+      "wm-received": "2023-11-15T16:58:01Z",
+      "wm-id": 1738683,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109642432631039231",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2023-11-15T20:49:08Z",
+      "wm-id": 1738817,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109874328475766981",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dylan",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/57997be373ea3039e4349e6a6d98cc9ec3967daa9d94b0fba7c2da190b1a23a0.png",
+        "url": "https://infosec.exchange/@dylan"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109362543903895658",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:48Z",
+      "wm-id": 1738715,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109362543903895658",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian LeRoux ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg",
+        "url": "https://indieweb.social/@brianleroux"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109312334322806947",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:46Z",
+      "wm-id": 1738714,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109312334322806947",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sudo rm -rf fascism",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4a4c7daa3b1531560e963297393cb0a2becd1744c1d1010e3fe37bae4b415860.png",
+        "url": "https://front-end.social/@misprintedtype"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109642432631039231",
+      "published": null,
+      "wm-received": "2023-11-15T16:58:01Z",
+      "wm-id": 1738683,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109642432631039231",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2023-11-15T20:49:08Z",
+      "wm-id": 1738817,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109874328475766981",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dylan",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/57997be373ea3039e4349e6a6d98cc9ec3967daa9d94b0fba7c2da190b1a23a0.png",
+        "url": "https://infosec.exchange/@dylan"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109362543903895658",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:48Z",
+      "wm-id": 1738715,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109362543903895658",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian LeRoux ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg",
+        "url": "https://indieweb.social/@brianleroux"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109312334322806947",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:46Z",
+      "wm-id": 1738714,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109312334322806947",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sudo rm -rf fascism",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4a4c7daa3b1531560e963297393cb0a2becd1744c1d1010e3fe37bae4b415860.png",
+        "url": "https://front-end.social/@misprintedtype"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109642432631039231",
+      "published": null,
+      "wm-received": "2023-11-15T16:58:01Z",
+      "wm-id": 1738683,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109642432631039231",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2023-11-15T20:49:08Z",
+      "wm-id": 1738817,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109874328475766981",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dylan",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/57997be373ea3039e4349e6a6d98cc9ec3967daa9d94b0fba7c2da190b1a23a0.png",
+        "url": "https://infosec.exchange/@dylan"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109362543903895658",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:48Z",
+      "wm-id": 1738715,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109362543903895658",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian LeRoux ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg",
+        "url": "https://indieweb.social/@brianleroux"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109312334322806947",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:46Z",
+      "wm-id": 1738714,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109312334322806947",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sudo rm -rf fascism",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4a4c7daa3b1531560e963297393cb0a2becd1744c1d1010e3fe37bae4b415860.png",
+        "url": "https://front-end.social/@misprintedtype"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109642432631039231",
+      "published": null,
+      "wm-received": "2023-11-15T16:58:01Z",
+      "wm-id": 1738683,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109642432631039231",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2023-11-15T20:49:08Z",
+      "wm-id": 1738817,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109874328475766981",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dylan",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/57997be373ea3039e4349e6a6d98cc9ec3967daa9d94b0fba7c2da190b1a23a0.png",
+        "url": "https://infosec.exchange/@dylan"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109362543903895658",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:48Z",
+      "wm-id": 1738715,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109362543903895658",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian LeRoux ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg",
+        "url": "https://indieweb.social/@brianleroux"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109312334322806947",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:46Z",
+      "wm-id": 1738714,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109312334322806947",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sudo rm -rf fascism",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4a4c7daa3b1531560e963297393cb0a2becd1744c1d1010e3fe37bae4b415860.png",
+        "url": "https://front-end.social/@misprintedtype"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109642432631039231",
+      "published": null,
+      "wm-received": "2023-11-15T16:58:01Z",
+      "wm-id": 1738683,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109642432631039231",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2023-11-15T20:49:08Z",
+      "wm-id": 1738817,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109874328475766981",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dylan",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/57997be373ea3039e4349e6a6d98cc9ec3967daa9d94b0fba7c2da190b1a23a0.png",
+        "url": "https://infosec.exchange/@dylan"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109362543903895658",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:48Z",
+      "wm-id": 1738715,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109362543903895658",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian LeRoux ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg",
+        "url": "https://indieweb.social/@brianleroux"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109312334322806947",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:46Z",
+      "wm-id": 1738714,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109312334322806947",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sudo rm -rf fascism",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4a4c7daa3b1531560e963297393cb0a2becd1744c1d1010e3fe37bae4b415860.png",
+        "url": "https://front-end.social/@misprintedtype"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109642432631039231",
+      "published": null,
+      "wm-received": "2023-11-15T16:58:01Z",
+      "wm-id": 1738683,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109642432631039231",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2023-11-15T20:49:08Z",
+      "wm-id": 1738817,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109874328475766981",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dylan",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/57997be373ea3039e4349e6a6d98cc9ec3967daa9d94b0fba7c2da190b1a23a0.png",
+        "url": "https://infosec.exchange/@dylan"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109362543903895658",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:48Z",
+      "wm-id": 1738715,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109362543903895658",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian LeRoux ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg",
+        "url": "https://indieweb.social/@brianleroux"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109312334322806947",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:46Z",
+      "wm-id": 1738714,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109312334322806947",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sudo rm -rf fascism",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4a4c7daa3b1531560e963297393cb0a2becd1744c1d1010e3fe37bae4b415860.png",
+        "url": "https://front-end.social/@misprintedtype"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109642432631039231",
+      "published": null,
+      "wm-received": "2023-11-15T16:58:01Z",
+      "wm-id": 1738683,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109642432631039231",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2023-11-15T20:49:08Z",
+      "wm-id": 1738817,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109874328475766981",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dylan",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/57997be373ea3039e4349e6a6d98cc9ec3967daa9d94b0fba7c2da190b1a23a0.png",
+        "url": "https://infosec.exchange/@dylan"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109362543903895658",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:48Z",
+      "wm-id": 1738715,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109362543903895658",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian LeRoux ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/407287584885d59426bc853871d031f6ef46f745234e10397cfd7116a70344a7.jpg",
+        "url": "https://indieweb.social/@brianleroux"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109312334322806947",
+      "published": null,
+      "wm-received": "2023-11-15T17:29:46Z",
+      "wm-id": 1738714,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109312334322806947",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sudo rm -rf fascism",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4a4c7daa3b1531560e963297393cb0a2becd1744c1d1010e3fe37bae4b415860.png",
+        "url": "https://front-end.social/@misprintedtype"
+      },
+      "url": "https://front-end.social/@rem/111415538765944218#favorited-by-109642432631039231",
+      "published": null,
+      "wm-received": "2023-11-15T16:58:01Z",
+      "wm-id": 1738683,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111415538765944218/109642432631039231",
+      "wm-target": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/15/my-experience-of-ffconf-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

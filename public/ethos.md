@@ -6,9 +6,17 @@ It's far from definitive and not organised well, but it's a start to capture wha
 
 ---
 
+## I don't wear 🌈 items to tell you who's in my bed.
+
+![I don't wear rainbow items to tell you who's in my bed. I wear progress queer flags so the family across the street knows they are safe. So the couple in the restaurant know they aren't alone. So the boy who sees me notice him looking at dresses knows I won't judge. I wear because you make them hide.](/images/i-dont-wear.jpg)
+
+**This** is why I wear these colours.
+
+- Via [D_7OWN on Mastodon](https://front-end.social/@D_70WN@chaos.social/111431115688043108) - 18 Nov 2023
+
 ## We have to _keep_ fighting racism.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/9-lcEqY62j4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=3pQrBLe3IpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > …there's been so many people that say oh it's better now than it was before.
 >
@@ -19,6 +27,8 @@ It's far from definitive and not organised well, but it's a start to capture wha
 > Would you swap places with someone who's black in today's society would you?
 
 - [BT Sport](https://twitter.com/btsport/status/1397107455377690625) - 25 May 2021
+
+_Not the original video as it's been removed, but updated video includes quotes from the original_
 
 ## Dismantling oppression
 

@@ -439,6 +439,114 @@
     "created": "2019-12-27T15:20:07.000Z",
     "modified": "2019-12-27T15:27:13.000Z"
   },
+  "public/tif/2023-02-11-space-invaders.md": {
+    "created": "2023-02-14T22:40:51.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-02-14-super-mario.md": {
+    "created": "2023-02-14T22:40:51.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-02-25-gba-power.md": {
+    "created": "2023-03-01T18:12:21.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-01-joycon.md": {
+    "created": "2023-03-01T18:12:21.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-02-nes-clone.md": {
+    "created": "2023-03-04T11:43:47.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-03-switch.md": {
+    "created": "2023-03-04T11:43:47.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-09-gba.md": {
+    "created": "2023-03-12T23:35:58.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-10-joypad.md": {
+    "created": "2023-03-12T23:35:58.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-12-pebble.md": {
+    "created": "2023-03-12T23:35:58.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-15-ps2.md": {
+    "created": "2023-03-22T20:15:18.000Z",
+    "modified": "2023-03-22T20:15:18.000Z"
+  },
+  "public/tif/2023-03-16-3ds.md": {
+    "created": "2023-03-22T20:15:18.000Z",
+    "modified": "2023-03-22T20:15:18.000Z"
+  },
+  "public/tif/2023-03-21-mario.md": {
+    "created": "2023-03-22T20:15:18.000Z",
+    "modified": "2023-03-22T20:15:18.000Z"
+  },
+  "public/tif/2023-03-26-crystal.md": {
+    "created": "2023-03-30T11:20:08.000Z",
+    "modified": "2023-03-30T11:20:08.000Z"
+  },
+  "public/tif/2023-03-29-joycons.md": {
+    "created": "2023-03-30T11:20:08.000Z",
+    "modified": "2023-03-30T11:20:08.000Z"
+  },
+  "public/tif/2023-04-05-dsl.md": {
+    "created": "2023-04-06T10:59:37.000Z",
+    "modified": "2023-04-06T10:59:37.000Z"
+  },
+  "public/tif/2023-04-05-pebble.md": {
+    "created": "2023-04-06T10:59:37.000Z",
+    "modified": "2023-04-06T10:59:37.000Z"
+  },
+  "public/tif/2023-04-10-glasses.md": {
+    "created": "2023-04-10T20:10:20.000Z",
+    "modified": "2023-04-10T20:10:20.000Z"
+  },
+  "public/tif/2023-04-11-pebble-steel.md": {
+    "created": "2023-04-18T09:29:54.000Z",
+    "modified": "2023-04-18T09:29:54.000Z"
+  },
+  "public/tif/2023-04-19-joycon.md": {
+    "created": "2023-04-20T11:35:29.000Z",
+    "modified": "2023-04-20T11:35:29.000Z"
+  },
+  "public/tif/2023-04-19-pm.md": {
+    "created": "2023-04-20T11:35:29.000Z",
+    "modified": "2023-04-20T11:35:29.000Z"
+  },
+  "public/tif/2023-05-14-pokemon.md": {
+    "created": "2023-05-15T08:35:29.000Z",
+    "modified": "2023-05-15T08:35:29.000Z"
+  },
+  "public/tif/2023-05-15-joycons.md": {
+    "created": "2023-05-15T17:04:52.000Z",
+    "modified": "2023-05-15T17:04:52.000Z"
+  },
+  "public/tif/2023-05-30-wonderswan.md": {
+    "created": "2023-05-30T18:50:53.000Z",
+    "modified": "2023-05-30T18:50:53.000Z"
+  },
+  "public/tif/2023-09-17-pokemon-sapphire.md": {
+    "created": "2023-09-20T14:51:20.000Z",
+    "modified": "2023-09-20T14:51:20.000Z"
+  },
+  "public/tif/2023-10-27-kindle.md": {
+    "created": "2023-10-27T11:43:23.000Z",
+    "modified": "2023-10-27T11:43:23.000Z"
+  },
+  "public/attic/2006/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2007/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
   "public/links/2007-10-05-39887df3.md": {
     "created": "2020-04-22T15:53:04.000Z",
     "modified": "2020-04-22T15:53:04.000Z"
@@ -1350,6 +1458,14 @@
   "public/links/2023-10-04-60cdc285.md": {
     "created": "2023-10-06T09:06:47.000Z",
     "modified": "2023-10-06T09:06:47.000Z"
+  },
+  "public/attic/2008/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2014/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
   },
   "public/blog/2007-moments.md": {
     "created": "2014-09-04T11:12:23.000Z",
@@ -2807,7 +2923,10 @@
     "created": "2016-04-04T15:00:50.000Z",
     "modified": "2019-03-27T10:14:04.000Z"
   },
-  "public/blog/my-experience-of-ffconf-2023.md": {},
+  "public/blog/my-experience-of-ffconf-2023.md": {
+    "created": "2023-11-15T16:25:59.000Z",
+    "modified": "2023-11-15T16:33:51.000Z"
+  },
   "public/blog/my-experience-with-enhance-dot-dev.md": {},
   "public/blog/my-extinguished-kindle.md": {
     "created": "2018-05-18T12:02:32.000Z",
@@ -3539,7 +3658,7 @@
   },
   "public/blog/two-javascripts.md": {
     "created": "2022-10-12T19:24:45.000Z",
-    "modified": "2022-10-12T19:24:45.000Z"
+    "modified": "2023-11-11T20:41:19.000Z"
   },
   "public/blog/universal-launch-images-with-phonegap.md": {
     "created": "2014-09-04T11:12:23.000Z",
@@ -3851,7 +3970,7 @@
   },
   "public/blog/working-with-the-esp-in-cspect.md": {
     "created": "2021-09-09T10:03:16.000Z",
-    "modified": "2021-09-09T10:03:16.000Z"
+    "modified": "2023-11-16T13:15:36.000Z"
   },
   "public/blog/works-offline.md": {
     "created": "2020-07-17T15:13:26.000Z",
@@ -3868,122 +3987,6 @@
   "public/blog/youre-paying-to-speak.md": {
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
-  },
-  "public/tif/2023-02-11-space-invaders.md": {
-    "created": "2023-02-14T22:40:51.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-02-14-super-mario.md": {
-    "created": "2023-02-14T22:40:51.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-02-25-gba-power.md": {
-    "created": "2023-03-01T18:12:21.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-01-joycon.md": {
-    "created": "2023-03-01T18:12:21.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-02-nes-clone.md": {
-    "created": "2023-03-04T11:43:47.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-03-switch.md": {
-    "created": "2023-03-04T11:43:47.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-09-gba.md": {
-    "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-10-joypad.md": {
-    "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-12-pebble.md": {
-    "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-15-ps2.md": {
-    "created": "2023-03-22T20:15:18.000Z",
-    "modified": "2023-03-22T20:15:18.000Z"
-  },
-  "public/tif/2023-03-16-3ds.md": {
-    "created": "2023-03-22T20:15:18.000Z",
-    "modified": "2023-03-22T20:15:18.000Z"
-  },
-  "public/tif/2023-03-21-mario.md": {
-    "created": "2023-03-22T20:15:18.000Z",
-    "modified": "2023-03-22T20:15:18.000Z"
-  },
-  "public/tif/2023-03-26-crystal.md": {
-    "created": "2023-03-30T11:20:08.000Z",
-    "modified": "2023-03-30T11:20:08.000Z"
-  },
-  "public/tif/2023-03-29-joycons.md": {
-    "created": "2023-03-30T11:20:08.000Z",
-    "modified": "2023-03-30T11:20:08.000Z"
-  },
-  "public/tif/2023-04-05-dsl.md": {
-    "created": "2023-04-06T10:59:37.000Z",
-    "modified": "2023-04-06T10:59:37.000Z"
-  },
-  "public/tif/2023-04-05-pebble.md": {
-    "created": "2023-04-06T10:59:37.000Z",
-    "modified": "2023-04-06T10:59:37.000Z"
-  },
-  "public/tif/2023-04-10-glasses.md": {
-    "created": "2023-04-10T20:10:20.000Z",
-    "modified": "2023-04-10T20:10:20.000Z"
-  },
-  "public/tif/2023-04-11-pebble-steel.md": {
-    "created": "2023-04-18T09:29:54.000Z",
-    "modified": "2023-04-18T09:29:54.000Z"
-  },
-  "public/tif/2023-04-19-joycon.md": {
-    "created": "2023-04-20T11:35:29.000Z",
-    "modified": "2023-04-20T11:35:29.000Z"
-  },
-  "public/tif/2023-04-19-pm.md": {
-    "created": "2023-04-20T11:35:29.000Z",
-    "modified": "2023-04-20T11:35:29.000Z"
-  },
-  "public/tif/2023-05-14-pokemon.md": {
-    "created": "2023-05-15T08:35:29.000Z",
-    "modified": "2023-05-15T08:35:29.000Z"
-  },
-  "public/tif/2023-05-15-joycons.md": {
-    "created": "2023-05-15T17:04:52.000Z",
-    "modified": "2023-05-15T17:04:52.000Z"
-  },
-  "public/tif/2023-05-30-wonderswan.md": {
-    "created": "2023-05-30T18:50:53.000Z",
-    "modified": "2023-05-30T18:50:53.000Z"
-  },
-  "public/tif/2023-09-17-pokemon-sapphire.md": {
-    "created": "2023-09-20T14:51:20.000Z",
-    "modified": "2023-09-20T14:51:20.000Z"
-  },
-  "public/tif/2023-10-27-kindle.md": {
-    "created": "2023-10-27T11:43:23.000Z",
-    "modified": "2023-10-27T11:43:23.000Z"
-  },
-  "public/attic/2006/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2007/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2008/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2014/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
   },
   "public/books/2017/a-boy-made-of-blocks.md": {
     "created": "2020-08-05T18:46:45.000Z",
@@ -4297,6 +4300,86 @@
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2020-11-06T12:09:51.000Z"
   },
+  "public/books/2022/2001-a-space-odyssey-space-odyssey-1.md": {
+    "created": "2022-06-12T20:27:50.000Z",
+    "modified": "2022-06-12T20:27:50.000Z"
+  },
+  "public/books/2022/hope-to-die-di-adam-fawley-6.md": {
+    "created": "2022-08-31T11:54:32.000Z",
+    "modified": "2022-08-31T11:54:32.000Z"
+  },
+  "public/books/2022/klara-and-the-sun.md": {
+    "created": "2022-01-29T10:59:28.000Z",
+    "modified": "2022-01-29T10:59:28.000Z"
+  },
+  "public/books/2022/redwall.md": {
+    "created": "2022-08-31T11:54:32.000Z",
+    "modified": "2022-08-31T11:54:32.000Z"
+  },
+  "public/books/2022/seveneves.md": {
+    "created": "2023-03-12T23:35:58.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/books/2022/the-audacity.md": {
+    "created": "2022-08-31T11:54:32.000Z",
+    "modified": "2022-08-31T11:54:32.000Z"
+  },
+  "public/books/2022/the-frangipani-tree-mystery-crown-colony-1.md": {
+    "created": "2022-08-31T11:54:32.000Z",
+    "modified": "2022-08-31T11:54:32.000Z"
+  },
+  "public/books/2022/the-wasp-factory.md": {
+    "created": "2022-06-12T20:27:50.000Z",
+    "modified": "2022-06-12T20:27:50.000Z"
+  },
+  "public/devlog/go-mummy/2020-05-24.md": {
+    "created": "2020-05-24T13:47:04.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-05-25.md": {
+    "created": "2020-05-25T13:02:00.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-01.md": {
+    "created": "2020-06-01T15:36:06.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-03.md": {
+    "created": "2020-06-03T09:22:30.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-07.md": {
+    "created": "2020-06-07T09:00:43.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-15.md": {
+    "created": "2020-06-15T16:41:03.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-25.md": {
+    "created": "2020-06-25T20:56:48.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-07-07.md": {
+    "created": "2020-07-07T08:16:39.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-07-20.md": {
+    "created": "2020-07-20T16:44:32.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-07-28.md": {
+    "created": "2020-07-28T11:41:12.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-08-09.md": {
+    "created": "2020-08-09T14:52:25.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-08-25.md": {
+    "created": "2020-08-25T08:31:53.000Z",
+    "modified": "2020-08-25T08:31:53.000Z"
+  },
   "public/books/2020/a-boy-called-christmas.md": {
     "created": "2021-01-25T21:29:13.000Z",
     "modified": "2021-01-25T21:29:13.000Z"
@@ -4401,6 +4484,42 @@
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2020-11-06T12:09:51.000Z"
   },
+  "public/devlog/marbles2/2020-10-14.md": {
+    "created": "2020-10-14T21:57:41.000Z",
+    "modified": "2020-10-14T22:01:30.000Z"
+  },
+  "public/devlog/marbles2/2020-11-08.md": {
+    "created": "2020-11-08T22:08:50.000Z",
+    "modified": "2020-11-08T22:08:50.000Z"
+  },
+  "public/devlog/marbles2/2020-11-23.md": {
+    "created": "2020-11-23T22:32:57.000Z",
+    "modified": "2020-11-23T22:32:57.000Z"
+  },
+  "public/devlog/marbles2/2021-03-23.md": {
+    "created": "2021-03-23T21:15:39.000Z",
+    "modified": "2021-03-23T21:15:39.000Z"
+  },
+  "public/devlog/marbles2/2021-05-18.md": {
+    "created": "2021-05-18T22:01:57.000Z",
+    "modified": "2021-05-18T22:01:57.000Z"
+  },
+  "public/devlog/marbles2/2021-05-19.md": {
+    "created": "2021-05-19T21:27:05.000Z",
+    "modified": "2021-05-19T21:27:05.000Z"
+  },
+  "public/devlog/marbles2/2021-06-14.md": {
+    "created": "2021-06-14T22:30:53.000Z",
+    "modified": "2021-06-14T22:30:53.000Z"
+  },
+  "public/devlog/marbles2/2021-07-05.md": {
+    "created": "2021-07-05T20:34:48.000Z",
+    "modified": "2021-07-05T20:34:48.000Z"
+  },
+  "public/devlog/marbles2/2021-07-16.md": {
+    "created": "2021-07-16T19:49:47.000Z",
+    "modified": "2021-07-16T19:49:47.000Z"
+  },
   "public/books/2021/84k.md": {
     "created": "2021-06-14T16:27:31.000Z",
     "modified": "2021-06-14T16:27:31.000Z"
@@ -4493,38 +4612,6 @@
     "created": "2021-01-25T21:29:13.000Z",
     "modified": "2021-02-14T11:23:44.000Z"
   },
-  "public/books/2022/2001-a-space-odyssey-space-odyssey-1.md": {
-    "created": "2022-06-12T20:27:50.000Z",
-    "modified": "2022-06-12T20:27:50.000Z"
-  },
-  "public/books/2022/hope-to-die-di-adam-fawley-6.md": {
-    "created": "2022-08-31T11:54:32.000Z",
-    "modified": "2022-08-31T11:54:32.000Z"
-  },
-  "public/books/2022/klara-and-the-sun.md": {
-    "created": "2022-01-29T10:59:28.000Z",
-    "modified": "2022-01-29T10:59:28.000Z"
-  },
-  "public/books/2022/redwall.md": {
-    "created": "2022-08-31T11:54:32.000Z",
-    "modified": "2022-08-31T11:54:32.000Z"
-  },
-  "public/books/2022/seveneves.md": {
-    "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/books/2022/the-audacity.md": {
-    "created": "2022-08-31T11:54:32.000Z",
-    "modified": "2022-08-31T11:54:32.000Z"
-  },
-  "public/books/2022/the-frangipani-tree-mystery-crown-colony-1.md": {
-    "created": "2022-08-31T11:54:32.000Z",
-    "modified": "2022-08-31T11:54:32.000Z"
-  },
-  "public/books/2022/the-wasp-factory.md": {
-    "created": "2022-06-12T20:27:50.000Z",
-    "modified": "2022-06-12T20:27:50.000Z"
-  },
   "public/books/2023/a-man-called-ove.md": {
     "created": "2023-10-06T09:06:47.000Z",
     "modified": "2023-10-06T09:06:47.000Z"
@@ -4549,6 +4636,7 @@
     "created": "2023-10-06T09:06:47.000Z",
     "modified": "2023-10-06T09:06:47.000Z"
   },
+  "public/books/2023/the-murder-of-roger-ackroyd-hercule-poirot-4.md": {},
   "public/books/2023/the-shining-girls.md": {
     "created": "2023-10-06T09:06:47.000Z",
     "modified": "2023-10-06T09:06:47.000Z"
@@ -4560,90 +4648,6 @@
   "public/books/2023/virtual-light-bridge-trilogy-1.md": {
     "created": "2023-10-06T09:06:47.000Z",
     "modified": "2023-10-06T09:06:47.000Z"
-  },
-  "public/devlog/go-mummy/2020-05-24.md": {
-    "created": "2020-05-24T13:47:04.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-05-25.md": {
-    "created": "2020-05-25T13:02:00.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-01.md": {
-    "created": "2020-06-01T15:36:06.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-03.md": {
-    "created": "2020-06-03T09:22:30.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-07.md": {
-    "created": "2020-06-07T09:00:43.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-15.md": {
-    "created": "2020-06-15T16:41:03.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-25.md": {
-    "created": "2020-06-25T20:56:48.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-07-07.md": {
-    "created": "2020-07-07T08:16:39.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-07-20.md": {
-    "created": "2020-07-20T16:44:32.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-07-28.md": {
-    "created": "2020-07-28T11:41:12.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-08-09.md": {
-    "created": "2020-08-09T14:52:25.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-08-25.md": {
-    "created": "2020-08-25T08:31:53.000Z",
-    "modified": "2020-08-25T08:31:53.000Z"
-  },
-  "public/devlog/marbles2/2020-10-14.md": {
-    "created": "2020-10-14T21:57:41.000Z",
-    "modified": "2020-10-14T22:01:30.000Z"
-  },
-  "public/devlog/marbles2/2020-11-08.md": {
-    "created": "2020-11-08T22:08:50.000Z",
-    "modified": "2020-11-08T22:08:50.000Z"
-  },
-  "public/devlog/marbles2/2020-11-23.md": {
-    "created": "2020-11-23T22:32:57.000Z",
-    "modified": "2020-11-23T22:32:57.000Z"
-  },
-  "public/devlog/marbles2/2021-03-23.md": {
-    "created": "2021-03-23T21:15:39.000Z",
-    "modified": "2021-03-23T21:15:39.000Z"
-  },
-  "public/devlog/marbles2/2021-05-18.md": {
-    "created": "2021-05-18T22:01:57.000Z",
-    "modified": "2021-05-18T22:01:57.000Z"
-  },
-  "public/devlog/marbles2/2021-05-19.md": {
-    "created": "2021-05-19T21:27:05.000Z",
-    "modified": "2021-05-19T21:27:05.000Z"
-  },
-  "public/devlog/marbles2/2021-06-14.md": {
-    "created": "2021-06-14T22:30:53.000Z",
-    "modified": "2021-06-14T22:30:53.000Z"
-  },
-  "public/devlog/marbles2/2021-07-05.md": {
-    "created": "2021-07-05T20:34:48.000Z",
-    "modified": "2021-07-05T20:34:48.000Z"
-  },
-  "public/devlog/marbles2/2021-07-16.md": {
-    "created": "2021-07-16T19:49:47.000Z",
-    "modified": "2021-07-16T19:49:47.000Z"
   },
   "public/til/cli/debugging-shell-scripts.md": {
     "created": "2020-05-27T11:57:54.000Z",
@@ -4705,10 +4709,6 @@
     "created": "2020-11-06T19:13:58.000Z",
     "modified": "2020-11-06T19:13:58.000Z"
   },
-  "public/til/http/curl-s-isnt-as-useful-as-i-thought.md": {
-    "created": "2020-05-02T10:20:32.000Z",
-    "modified": "2020-05-26T11:26:37.000Z"
-  },
   "public/til/data/modifying-autoincrements.md": {
     "created": "2021-06-18T08:10:17.000Z",
     "modified": "2021-06-18T08:10:17.000Z"
@@ -4717,13 +4717,9 @@
     "created": "2021-03-09T12:53:55.000Z",
     "modified": "2021-03-09T12:53:55.000Z"
   },
-  "public/til/misc/backticks-in-backticks.md": {
-    "created": "2021-05-05T12:12:46.000Z",
-    "modified": "2021-05-05T12:12:46.000Z"
-  },
-  "public/til/misc/default-layouts-in-11ty.md": {
-    "created": "2023-11-06T10:16:27.000Z",
-    "modified": "2023-11-06T10:16:27.000Z"
+  "public/til/http/curl-s-isnt-as-useful-as-i-thought.md": {
+    "created": "2020-05-02T10:20:32.000Z",
+    "modified": "2020-05-26T11:26:37.000Z"
   },
   "public/til/javascript/new-bytes-from-textencoder.md": {
     "created": "2020-05-09T07:46:07.000Z",
@@ -4812,5 +4808,13 @@
   "public/til/spectrum/screen-clean-up.md": {
     "created": "2020-05-23T10:00:45.000Z",
     "modified": "2020-06-03T14:55:47.000Z"
+  },
+  "public/til/misc/backticks-in-backticks.md": {
+    "created": "2021-05-05T12:12:46.000Z",
+    "modified": "2021-05-05T12:12:46.000Z"
+  },
+  "public/til/misc/default-layouts-in-11ty.md": {
+    "created": "2023-11-06T10:16:27.000Z",
+    "modified": "2023-11-06T10:16:27.000Z"
   }
 }
