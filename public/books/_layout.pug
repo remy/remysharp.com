@@ -11,6 +11,7 @@ block meta
 
 block content
   - permalink = url;
+  - otherBooks = seriesBooks(series, slug)
 
   main.content
     article.post.h-review
@@ -30,7 +31,10 @@ block content
             span #{rating} / 5
         p
           strong Read
-          | <time datetime="#{moment(read).format('yyyy-MM-dd')}">#{moment(read).format('MMMM yyyy')}</time>
+          if Array.isArray(read)
+            | <time datetime="#{moment(read).format('yyyy-MM-dd')}">#{read.map(_ => moment(_).format('MMMM yyyy')).join(', ')}</time>
+          else
+            | <time datetime="#{moment(read).format('yyyy-MM-dd')}">#{moment(read).format('MMMM yyyy')}</time>
         img.cover(src=`/images/books/${goodreads_id}.jpg` width="64")
 
       .post-content.e-content
@@ -44,9 +48,14 @@ block content
         else
           != yield
 
-        p.read-more
-          small More on <a href="#{goodreads}">Goodreads</a>
+        if otherBooks.length > 0
+          p
+            strong Others I've read in the "#{series}" series:
+            ul
+              each book in otherBooks
+                li
+                  a(href=`${filenameToUrl(book.filename)}` title=`${book.title}`)= book.title
 
       if date
         .misc-content
-          p.metadata Finished reading on <time datetime="#{ moment(read).format('yyyy-MM-dd HH:mm:ss') }">#{moment(read).format('d-MMM yyyy')}</time>, starting on <time datetime="#{ moment(start).format('yyyy-MM-dd HH:mm:ss') }">#{moment(start).format('d-MMM yyyy')}</time>. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/#{current.inputPath}">Edit this review</a>
+          p.metadata Last read on <time datetime="#{ moment(lastDate(read)).format('yyyy-MM-dd HH:mm:ss') }">#{moment(lastDate(read)).format('d-MMM yyyy')}</time>, starting on <time datetime="#{ moment(lastDate(start)).format('yyyy-MM-dd HH:mm:ss') }">#{moment(lastDate(start)).format('d-MMM yyyy')}</time>, #{ pages } pages.<br><a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/#{current.inputPath}">Edit this review</a>, <a href="#{goodreads}">Goodreads info</a>

@@ -1,16 +1,21 @@
 ---
-title: "The Wasp Factory"
-author: "Iain Banks"
-published: 1984
+title: The Wasp Factory
+seriesEntry: The Wasp Factory
+series: ''
+author: Iain Banks
 pages: 184
-goodreads: https://www.goodreads.com/review/show/4544102396
-goodreads_id: 567678
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1434940562l/567678._SY475_.jpg
-read: 2022-03-09
-start: 2022-02-11
 rating: 4
+read: 2022-03-08T00:00:00.000Z
+start: 2022-02-17T00:00:00.000Z
+published: 1984
+goodreads: 'https://www.goodreads.com/book/show/567678.The_Wasp_Factory'
+goodreads_id: 567678
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1434940562l/567678._SX315_.jpg
+spoiler: false
+slug: the-wasp-factory
+summary: Unique.
 ---
-
 Unique.
 
 The protagonist, Frank, is most definitely a psychopath and yet one that I could almost understand their weird justifications - and that's credit to Banks, otherwise this could easily have been a story of a complete whack job.

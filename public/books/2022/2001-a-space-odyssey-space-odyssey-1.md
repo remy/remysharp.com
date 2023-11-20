@@ -1,16 +1,22 @@
 ---
-title: "2001: A Space Odyssey (Space Odyssey, #1)"
-author: "Arthur C. Clarke"
-published: 1968
+title: '2001: A Space Odyssey (Space Odyssey, #1)'
+seriesEntry: '2001: A Space Odyssey'
+seriesNumber: '1'
+series: Space Odyssey
+author: Arthur C. Clarke
 pages: 258
-goodreads: https://www.goodreads.com/review/show/4437489525
-goodreads_id: 46026742
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558985212l/46026742._SY475_.jpg
-read: 2022-02-16
-start: 2022-01-02
 rating: 3
+read: 2022-02-16T00:00:00.000Z
+start: 2022-01-14T00:00:00.000Z
+published: 1968
+goodreads: 'https://www.goodreads.com/book/show/46026742-2001'
+goodreads_id: 46026742
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558985212l/46026742._SX315_.jpg
+spoiler: false
+slug: 2001-a-space-odyssey-space-odyssey-1
+summary: 'I wanted to enjoy this, but perhaps too smart for an actual story.'
 ---
-
 I wanted to enjoy this, but perhaps too smart for an actual story.
 
 I hadn't seen the film, nor did I know this book was written in parallel with the screenplay. I had seen scenes with the computer talking to Dave, so expected that to have more significance in the story - but it's kind of brief.

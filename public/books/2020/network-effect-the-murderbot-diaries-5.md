@@ -1,18 +1,22 @@
 ---
-title: "Network Effect (The Murderbot Diaries, #5)"
-author: "Martha Wells"
-published: 2020
+title: 'Network Effect (The Murderbot Diaries, #5)'
+seriesEntry: Network Effect
+seriesNumber: '5'
+series: The Murderbot Diaries
+author: Martha Wells
 pages: 346
-goodreads: https://www.goodreads.com/book/show/52680842-network-effect
-goodreads_id: 52680842
-cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
-read: 2020-07-04
-start: 2020-06-04
 rating: 4
+read: 2020-07-04T00:00:00.000Z
+start: 2020-06-04T00:00:00.000Z
+published: 2020
+goodreads: 'https://www.goodreads.com/book/show/52680842-network-effect'
+goodreads_id: 52680842
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1659761750l/52680842._SX315_.jpg
 spoiler: false
-summary: "Fun stuff, as always, but requires prior knowledge"
+slug: network-effect-the-murderbot-diaries-5
+summary: 'Fun stuff, as always, but requires prior knowledge'
 ---
-
 Fun stuff, as always, but requires prior knowledge
 
 I'm a big fan of the Murderbot Diaries the first story was so fresh and unlike anything I had before so I was particularly excited to read the full length novel by Martha Wells.

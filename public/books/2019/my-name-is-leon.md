@@ -1,18 +1,21 @@
 ---
-title: "My Name is Leon"
-author: "Kit de Waal"
-published: 2016
+title: My Name Is Leon
+seriesEntry: My Name Is Leon
+series: ''
+author: Kit de Waal
 pages: 264
-goodreads: https://www.goodreads.com/book/show/29624348-my-name-is-leon
-goodreads_id: 29624348
-cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
-read: 2019-12-04
-start: 2019-11-29
 rating: 4
+read: 2019-12-03T00:00:00.000Z
+start: 2019-11-28T00:00:00.000Z
+published: 2016
+goodreads: 'https://www.goodreads.com/book/show/29624348-my-name-is-leon'
+goodreads_id: 29624348
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1459010619l/29624348._SX315_.jpg
 spoiler: false
-summary: "Sad. Heart breaking. Beautiful."
+slug: my-name-is-leon
+summary: Sad. Heart breaking. Beautiful.
 ---
-
 Sad. Heart breaking. Beautiful.  
   
 The story of Leon, a (nearly) 10 year old boy who has his family pulled apart. Set during the 80s in England where social services are struggling, the threat of terrorism is present, and racism is still commonplace.  

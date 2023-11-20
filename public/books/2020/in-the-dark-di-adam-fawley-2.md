@@ -1,18 +1,22 @@
 ---
-title: "In the Dark (DI Adam Fawley, #2)"
-author: "Cara Hunter"
-published: 2019
+title: 'In the Dark (DI Adam Fawley, #2)'
+seriesEntry: In the Dark
+seriesNumber: '2'
+series: DI Adam Fawley
+author: Cara Hunter
 pages: 444
-goodreads: https://www.goodreads.com/book/show/37749843-in-the-dark
-goodreads_id: 37749843
-cover: https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png
-read: 2020-02-03
-start: 2020-01-30
 rating: 4
+read: 2020-02-02T00:00:00.000Z
+start: 2020-01-30T00:00:00.000Z
+published: 2019
+goodreads: 'https://www.goodreads.com/book/show/37749843-in-the-dark'
+goodreads_id: 37749843
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1514385428l/37749843._SX315_.jpg
 spoiler: false
-summary: "Kept me guessing and an easy read."
+slug: in-the-dark-di-adam-fawley-2
+summary: Kept me guessing and an easy read.
 ---
-
 Kept me guessing and an easy read.  
   
 The subject matter is pretty dark and has similarities to Room by Emma Donoghue (which the story also acknowledges). However, it's an "easy read" as I'd imagine a "holiday read" would be.  

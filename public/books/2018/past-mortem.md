@@ -1,18 +1,25 @@
 ---
-title: "Past Mortem"
-author: "Ben Elton"
-published: 2004
-pages: 468
-goodreads: https://www.goodreads.com/book/show/18242661-past-mortem
-goodreads_id: 18242661
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1374758264l/18242661._SX98_.jpg
-read: 2018-08-01
-start: 2018-07-31
+title: Past Mortem
+seriesEntry: Past Mortem
+seriesNumber: null
+series: ''
+author: Ben Elton
+pages: 464
 rating: 4
+read: 2018-08-01T00:00:00.000Z
+start: 2018-07-30T00:00:00.000Z
+published: 2004
+goodreads: 'https://www.goodreads.com/book/show/18242661-past-mortem'
+goodreads_id: 18242661
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1374758264l/18242661._SX315_.jpg
 spoiler: false
-summary: "My hospital read! I spent a day and night in hospital for tonsillitis, and managed to read through this book (though there's not a whole lot to do in hospital!)."
+slug: past-mortem
+summary: >-
+  My hospital read! I spent a day and night in hospital for tonsillitis, and
+  managed to read through this book (though there's not a whole lot to do in
+  hospital!).
 ---
-
 My hospital read! I spent a day and night in hospital for tonsillitis, and managed to read through this book (though there's not a whole lot to do in hospital!).  
   
 Originally this book was destined for a 3 star, but the last 5th of the book started to really pull the story together and made for quite a fun and gripping ending.  

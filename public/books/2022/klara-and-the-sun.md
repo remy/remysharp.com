@@ -11,4 +11,12 @@ start: 2022-01-02
 rating: 3
 ---
 
+Interesting ideas, but a little flat.
 
+Klara is, for want of a better expression, a curious Android. The story is told through their perspective, which itself is unique with respect to machines being curious about their surroundings.
+
+It felt like it was set in some kind of 50s America but never really committed to a location or time (though it could have done, it just didn't spike for me).
+
+The story is, kind of lovely, whilst also being a little...dull and predictable. I felt like, though the ending is in some ways beautiful (for Klara), it's also pretty flat.
+
+If you enjoy the kind of story that tells of what it might be like to be a machine being subservient to humans (and happy to be) and the slow going ons being their eyes, then this is for you. For me, a little to...15mph in a 30.

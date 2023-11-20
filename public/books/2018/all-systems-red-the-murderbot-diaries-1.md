@@ -1,18 +1,22 @@
 ---
-title: "All Systems Red (The Murderbot Diaries, #1)"
-author: "Martha Wells"
-published: 2017
+title: 'All Systems Red (The Murderbot Diaries, #1)'
+seriesEntry: All Systems Red
+seriesNumber: '1'
+series: The Murderbot Diaries
+author: Martha Wells
 pages: 152
-goodreads: https://www.goodreads.com/book/show/33387769-all-systems-red
-goodreads_id: 33387769
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1484171419l/33387769._SX98_.jpg
-read: 2018-07-01
-start: 2018-06-30
 rating: 5
+read: 2018-07-01T00:00:00.000Z
+start: 2018-06-30T00:00:00.000Z
+published: 2017
+goodreads: 'https://www.goodreads.com/book/show/33387769-all-systems-red'
+goodreads_id: 33387769
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1484171419l/33387769._SX315_.jpg
 spoiler: false
-summary: "Love it. Witty, humourous, original and fresh."
+slug: all-systems-red-the-murderbot-diaries-1
+summary: 'Love it. Witty, humourous, original and fresh.'
 ---
-
 Love it. Witty, humourous, original and fresh.  
   
 The title of "Murderbot Diaries" is what caught my curiosity. The story is told directly from the point of view of the murderbot which makes for a utterly new take on the alien-type stories where shit (always) goes bad.  

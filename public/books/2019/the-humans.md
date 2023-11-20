@@ -1,18 +1,25 @@
 ---
-title: "The Humans"
-author: "Matt Haig"
-published: 2013
+title: The Humans
+seriesEntry: The Humans
+series: ''
+author: Matt Haig
 pages: 285
-goodreads: https://www.goodreads.com/book/show/16130537-the-humans
-goodreads_id: 16130537
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1353739654l/16130537._SX98_.jpg
-read: 2019-07-06
-start: 2019-07-06T00:00:00Z
 rating: 5
+read:
+  - 2017-04-28T00:00:00.000Z
+  - 2019-07-06T00:00:00.000Z
+start:
+  - 2019-07-03T00:00:00.000Z
+  - 2017-04-20T00:00:00.000Z
+published: 2013
+goodreads: 'https://www.goodreads.com/book/show/16130537-the-humans'
+goodreads_id: 16130537
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1353739654l/16130537._SX315_.jpg
 spoiler: false
-summary: "My first read-twice book. A love letter to humanity."
+slug: the-humans
+summary: My first read-twice book. A love letter to humanity.
 ---
-
 My first read-twice book. A love letter to humanity.  
   
 This is the first time I've read this was 2 years ago, directly after reading Matt Haig's 'How to stay alive', and as such, it was easy to see the relationship between The Humans and Haig's own personal experiences.  

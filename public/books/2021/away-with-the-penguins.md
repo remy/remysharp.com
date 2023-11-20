@@ -11,4 +11,12 @@ start: 2021-11-29
 rating: 4
 ---
 
-Took a while to warm to the characters, but worth it in the end.<br /><i></i><br />The story follows an exceptionally grumpy old lady, very much a stereotypical old person who doesn't trust anyone and exists almost just for themselves.<br /><br />We also meet her grandson who is equally useless in his own ways. These two characters together made it rather difficult to want to keep reading their story, but I'm glad I did persevere.<br /><br />Although the story is a little cliche, around four fifths the way through the book, it does a pretty good job to win me over to the main characters and I want to see them happy by the end of the story.<br /><br />Probably a little bit too long, but worth it for the payoff at the end.
+Took a while to warm to the characters, but worth it in the end.
+
+The story follows an exceptionally grumpy old lady, very much a stereotypical old person who doesn't trust anyone and exists almost just for themselves.
+
+We also meet her grandson who is equally useless in his own ways. These two characters together made it rather difficult to want to keep reading their story, but I'm glad I did persevere.
+
+Although the story is a little cliche, around four fifths the way through the book, it does a pretty good job to win me over to the main characters and I want to see them happy by the end of the story.
+
+Probably a little bit too long, but worth it for the payoff at the end.

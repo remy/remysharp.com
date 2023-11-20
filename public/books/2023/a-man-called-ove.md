@@ -11,4 +11,8 @@ start: 2023-05-09
 rating: 5
 ---
 
-Always fun to have a grumpy, yet lovable character.<br /><i></i><br />In some ways predictable, but it didn't take away from enjoying the story and "watching" as Ove moves through day to day.<br /><br />A good, feel good, story with a healthy dose of complaint at society being mostly crap!
+Always fun to have a grumpy, yet lovable character.
+
+In some ways predictable, but it didn't take away from enjoying the story and "watching" as Ove moves through day to day.
+
+A good, feel good, story with a healthy dose of complaint at society being mostly crap!

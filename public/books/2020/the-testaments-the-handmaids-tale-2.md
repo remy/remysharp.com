@@ -1,18 +1,22 @@
 ---
-title: "The Testaments (The Handmaid's Tale, #2)"
-author: "Margaret Atwood"
-published: 2019
+title: 'The Testaments (The Handmaid''s Tale, #2)'
+seriesEntry: The Testaments
+seriesNumber: '2'
+series: The Handmaid's Tale
+author: Margaret Atwood
 pages: 401
-goodreads: https://www.goodreads.com/book/show/42975938-the-testaments
-goodreads_id: 42975938
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1548966331l/42975938._SX98_.jpg
-read: 2020-01-09
-start: 2020-01-01
 rating: 5
+read: 2020-01-09T00:00:00.000Z
+start: 2020-01-01T00:00:00.000Z
+published: 2019
+goodreads: 'https://www.goodreads.com/book/show/42975938-the-testaments'
+goodreads_id: 42975938
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1548966331l/42975938._SX315_.jpg
 spoiler: true
-summary: "Brutal."
+slug: the-testaments-the-handmaids-tale-2
+summary: Brutal.
 ---
-
 Brutal.  
   
 Having read The Handmaid's Tale in 2017 and watched the TV adaptation (and then the subsequent series 2) - the world of Gilead was still petty fresh in my mind.  

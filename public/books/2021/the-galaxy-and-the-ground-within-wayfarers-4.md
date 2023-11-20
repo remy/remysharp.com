@@ -1,17 +1,22 @@
 ---
-title: "The Galaxy, and the Ground Within (Wayfarers, #4)"
-author: "Becky Chambers"
-published: 2021
-pages: 290
-goodreads: https://www.goodreads.com/review/show/3730642106
-goodreads_id: 54506494
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607369080l/54506494._SY475_.jpg
-read: 2021-04-28
-start: 2021-03-09
+title: 'The Galaxy, and the Ground Within (Wayfarers, #4)'
+seriesEntry: 'The Galaxy, and the Ground Within'
+seriesNumber: '4'
+series: Wayfarers
+author: Becky Chambers
+pages: 264
 rating: 4
+read: 2021-04-28T00:00:00.000Z
+start: 2021-03-09T00:00:00.000Z
+published: 2021
+goodreads: 'https://www.goodreads.com/book/show/54506494-the-galaxy-and-the-ground-within'
+goodreads_id: 54506494
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1607369080l/54506494._SX315_.jpg
+spoiler: false
+slug: the-galaxy-and-the-ground-within-wayfarers-4
 summary: Surprisingly difficult to connect with.
 ---
-
 Surprisingly difficult to connect with.
 
 This is still a well written, interesting, continues the Wayfarer universe and prompts some challenging thoughts.

@@ -1,18 +1,21 @@
 ---
-title: 'The Stone Man'
-author: 'Luke Smitherd'
-published: 2012
+title: The Stone Man
+seriesEntry: The Stone Man
+series: ''
+author: Luke Smitherd
 pages: 320
-goodreads: https://www.goodreads.com/book/show/16299461-the-stone-man
-goodreads_id: 16299461
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1355061975l/16299461._SX98_.jpg
-read: 2020-09-14
-start: 2020-09-07
 rating: 1
+read: 2020-09-10T00:00:00.000Z
+start: 2020-09-07T00:00:00.000Z
+published: 2012
+goodreads: 'https://www.goodreads.com/book/show/16299461-the-stone-man'
+goodreads_id: 16299461
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1355061975l/16299461._SX315_.jpg
 spoiler: false
-summary: "Couldn't get on with this book at all."
+slug: the-stone-man
+summary: Couldn't get on with this book **at all**.
 ---
-
 Couldn't get on with this book **at all**.
 
 Got 20% the way through. Didn't care for the character at all. Felt like there was inconsistencies in his behaviour and I constantly felt like the story was nonsense. This left me utterly unengaged.

@@ -39,20 +39,21 @@ layout: public
         each book in collections.books
           - review = book.data
           - rating = `${ '★'.repeat(review.rating) }${ '☆'.repeat(5 - review.rating)}`
+          - url = book.inputPath ? filenameToUrl(book.inputPath) : '#'
           div(data-id=`${book.slug}`)
             img.cover(width="64" src=`/images/books/${review.goodreads_id}.jpg`)
-            p.when #{moment(review.read).format('d-MMM \'YY')}
+            p.when(data-date=`${firstDate(review.read)}`) #{moment(review.read).format(`d-MMM ''yy`)} #{readCount(review.read)}
               br
-              span(title=`${review.read}`) #{duration(review.start, review.read)}
+              span(title=`${firstDate(review.read)}`) #{duration(review.start, review.read)}
             p.title
-              a(href=`/books/${moment(review.read).format('yyyy')}/${review.slug || slugify(review.title)}`) #{review.title}
+              a(href=`${url}`) #{review.seriesEntry || review.title}
             if review.summary
               p.review-link
                 if review.summary
-                  span= review.summary
+                  span !{review.summary}
                 span
                   span 📝
-                  a(href=`/books/${moment(review.read).format('yyyy')}/${review.slug || slugify(review.title)}`) My review
+                  a(href=`${url}`) My review
                   if review.spoiler === true
                     span &nbsp;(includes spoilers)
             else

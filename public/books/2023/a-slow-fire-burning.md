@@ -11,4 +11,8 @@ start: 2023-06-22
 rating: 4
 ---
 
+Bit of a "beach read", but simple and enjoyable enough.
 
+Most of the characters are a bit tough to swallow, but it reads as intentional.
+
+Not entirely memorable, more on the brain candy side of things.

@@ -1,16 +1,22 @@
 ---
-title: "The Whole Truth (DI Adam Fawley, #5)"
-author: "Cara Hunter"
-published: 2021
-pages: 416
-goodreads: https://www.goodreads.com/review/show/4200451498
-goodreads_id: 49569511
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617287409l/49569511.jpg
-read: 2021-08-30
-start: 2021-08-26
+title: 'The Whole Truth (DI Adam Fawley, #5)'
+seriesEntry: The Whole Truth
+seriesNumber: '5'
+series: DI Adam Fawley
+author: Cara Hunter
+pages: 424
 rating: 5
+read: 2021-08-30T00:00:00.000Z
+start: 2021-08-26T00:00:00.000Z
+published: 2021
+goodreads: 'https://www.goodreads.com/book/show/49569511-the-whole-truth'
+goodreads_id: 49569511
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617287409l/49569511._SX315_.jpg
+spoiler: false
+slug: the-whole-truth-di-adam-fawley-5
+summary: Unstoppable page turner.
 ---
-
 Unstoppable page turner.
 
 I'm not known for reading books quickly - heck, the last book I read was 45 pages (or 80 pages, or 90 pages, or something low according to Kindle) and it took me a week to read.

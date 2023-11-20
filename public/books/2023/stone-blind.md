@@ -11,4 +11,15 @@ start: 2023-05-22
 rating: 4
 ---
 
+Brilliant different perspective on the Madusa myth.
 
+I really liked how the story was told. I was vaguely familiar with the myth, and did a little Wikipedia skimming to get familiar with the greek gods and the Gorgons.
+
+I loved how Haynes took the myth, kept it, from what I could tell, entirely intact, but told it from the sympathetic perspective of not only Medusa, but the women throughout the mythology.
+
+Very early in the book Haynes writes, which captures the tone perfectly:
+
+> This particular monster is assaulted, abused and vilified. And yet, as the story is always told, she is the one you should fear. She is the monster.
+> We’ll see about that.
+
+Excellent stuff.

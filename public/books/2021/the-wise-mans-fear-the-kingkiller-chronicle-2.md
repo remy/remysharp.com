@@ -1,17 +1,22 @@
 ---
-title: "The Wise Man's Fear (The Kingkiller Chronicle, #2)"
-author: "Patrick Rothfuss"
-published: 2011
-pages: 1000
-goodreads: https://www.goodreads.com/review/show/4314687633
-goodreads_id: 11127295
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328041860l/11127295.jpg
-read: 2021-11-29
-start: 2021-10-31
+title: 'The Wise Man''s Fear (The Kingkiller Chronicle, #2)'
+seriesEntry: The Wise Man's Fear
+seriesNumber: '2'
+series: The Kingkiller Chronicle
+author: Patrick Rothfuss
+pages: 1
 rating: 5
-summary: "A wonderful journey into Rothfuss' world."
+read: 2021-11-29T00:00:00.000Z
+start: 2021-10-31T00:00:00.000Z
+published: 2011
+goodreads: 'https://www.goodreads.com/book/show/11127295-the-wise-man-s-fear'
+goodreads_id: 11127295
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328041860l/11127295._SX315_.jpg
+spoiler: false
+slug: the-wise-mans-fear-the-kingkiller-chronicle-2
+summary: A wonderful journey into Rothfuss' world.
 ---
-
 A wonderful journey into Rothfuss' world.
 
 As part two of a three part series covering three days (one book per day), the tone and story continues brilliantly onwards from book one (which I read mid-2019).

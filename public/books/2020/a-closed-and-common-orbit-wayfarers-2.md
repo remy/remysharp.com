@@ -1,18 +1,22 @@
 ---
-title: 'A Closed and Common Orbit (Wayfarers #2)'
-author: 'Becky Chambers'
-published: 2016
+title: 'A Closed and Common Orbit (Wayfarers, #2)'
+seriesEntry: A Closed and Common Orbit
+seriesNumber: '2'
+series: Wayfarers
+author: Becky Chambers
 pages: 385
-goodreads: https://www.goodreads.com/book/show/32716246-a-closed-and-common-orbit
-goodreads_id: 32716246
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1477003603l/32716246._SY475_.jpg
-read: 2020-10-01
-start: 2020-09-15
 rating: 4
+read: 2020-10-01T00:00:00.000Z
+start: 2020-09-15T00:00:00.000Z
+published: 2016
+goodreads: 'https://www.goodreads.com/book/show/32716246-a-closed-and-common-orbit'
+goodreads_id: 32716246
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1477003603l/32716246._SX315_.jpg
 spoiler: false
-summary: 'Enjoyed this story - it had a lot of warmth.'
+slug: a-closed-and-common-orbit-wayfarers-2
+summary: Enjoyed this story - it had a lot of warmth.
 ---
-
 Enjoyed this story - it had a lot of warmth.
 
 I have to admit, I was fairly upset to realise that Wayfarers book 2 did not continue with the characters I'd grown to love so much from Wayfarers book 1. I'm still secretly hoping to find the crew from the Wayfarer again in another book.

@@ -1,16 +1,22 @@
 ---
-title: "A Psalm for the Wild-Built (Monk & Robot, #1)"
-author: "Becky Chambers"
-published: 2021
+title: 'A Psalm for the Wild-Built (Monk & Robot, #1)'
+seriesEntry: A Psalm for the Wild-Built
+seriesNumber: '1'
+series: Monk & Robot
+author: Becky Chambers
 pages: 160
-goodreads: https://www.goodreads.com/review/show/4415229617
-goodreads_id: 40864002
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600789291l/40864002._SY475_.jpg
-read: 2021-12-29
-start: 2021-12-27
 rating: 3
+read: 2021-12-29T00:00:00.000Z
+start: 2021-12-27T00:00:00.000Z
+published: 2021
+goodreads: 'https://www.goodreads.com/book/show/40864002-a-psalm-for-the-wild-built'
+goodreads_id: 40864002
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1600789291l/40864002._SX315_.jpg
+spoiler: false
+slug: a-psalm-for-the-wild-built-monk-and-robot-1
+summary: Lovely but I found the language almost too distracting.
 ---
-
 Lovely but I found the language almost too distracting.
 
 Only right at the end of the book did I consider that maybe I really wasn't the right audience for the story - as it seemed to smack of "millennium type problems". Using air quotes in my description because I'm fairly sure this is a patronising statement I'm making!

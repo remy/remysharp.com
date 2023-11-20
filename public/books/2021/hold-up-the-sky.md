@@ -11,4 +11,12 @@ start: 2021-07-04
 rating: 3
 ---
 
-Interesting mix of ideas.<br /><i></i><br />I'd read the Three Body Problem trilogy so I know that Cixin Liu's style was massive ideas of the cosmic scale and showing me how small we really are - and these short stories continue the theme.<br /><br />What I didn't anticipate in these short stories was the total mix of stories (though that's entirely on me).<br /><br />I didn't personally find any one story punching above the rest. I did, oddly, enjoy the story of the poet challenging the energy being and thusly breaking reality on a galactic scale.<br /><br />Overall, well written, cosmic ideas, but not quite my kind of mind bending.
+Interesting mix of ideas.
+
+I'd read the Three Body Problem trilogy so I know that Cixin Liu's style was massive ideas of the cosmic scale and showing me how small we really are - and these short stories continue the theme.
+
+What I didn't anticipate in these short stories was the total mix of stories (though that's entirely on me).
+
+I didn't personally find any one story punching above the rest. I did, oddly, enjoy the story of the poet challenging the energy being and thusly breaking reality on a galactic scale.
+
+Overall, well written, cosmic ideas, but not quite my kind of mind bending.

@@ -1,21 +1,20 @@
 ---
-title: 'Record of a Spaceborn Few'
-author: 'Becky Chambers'
+title: "Record of a Spaceborn Few (Wayfarers, #3)"
+seriesEntry: "Record of a Spaceborn Few"
+seriesNumber: "3"
+series: "Wayfarers"
+author: "Becky Chambers"
 published: 2018
-pages: 368
+pages: 383
 goodreads: https://www.goodreads.com/book/show/35527724-record-of-a-spaceborn-few
 goodreads_id: 35527724
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1516968507l/35527724._SY475_.jpg
-read: 2020-10-21
-start: 2020-10-02
+cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1516968507l/35527724._SX315_.jpg
+read: 2020-10-21T00:00:00.000Z
+start: 2020-10-02T00:00:00.000Z
 rating: 4
-spoiler: false
-summary: "A zoomed out view of the universe that Chambers' has created mostly from the human species point of view."
 ---
 
 A zoomed out view of the universe that Chambers' has created mostly from the human species point of view.
-
---
 
 After reading Becky Chambers' first book I've been absolutely in love with the universe that they created.
 

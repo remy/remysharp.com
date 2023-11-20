@@ -1,18 +1,22 @@
 ---
-title: "The Cuckoo's Calling (Cormoran Strike, #1)"
-author: "Robert Galbraith"
-published: 2013
-pages: 550
-goodreads: https://www.goodreads.com/book/show/18192717-the-cuckoo-s-calling
-goodreads_id: 18192717
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1373758407l/18192717._SX98_.jpg
-read: 2020-06-03
-start: 2020-05-05
+title: 'The Cuckoo''s Calling (Cormoran Strike, #1)'
+seriesEntry: The Cuckoo's Calling
+seriesNumber: '1'
+series: Cormoran Strike
+author: Robert Galbraith
+pages: 561
 rating: 2
+read: 2020-06-03T00:00:00.000Z
+start: 2020-05-05T00:00:00.000Z
+published: 2013
+goodreads: 'https://www.goodreads.com/book/show/18192717-the-cuckoo-s-calling'
+goodreads_id: 18192717
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1373758407l/18192717._SX315_.jpg
 spoiler: false
-summary: "Pretty much middle of the road read."
+slug: the-cuckoos-calling-cormoran-strike-1
+summary: Pretty much middle of the road read.
 ---
-
 Pretty much middle of the road read.  
   
 I had expected some mildly challenging literary content but this wasn't it. The main character, Cormoran Strike is well drawn, but it sort of reads like the name came first and the whole character was built up around that.  

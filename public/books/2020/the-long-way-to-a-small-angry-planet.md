@@ -1,16 +1,17 @@
 ---
-title: 'The Long Way to a Small, Angry Planet'
-author: 'Becky Chambers'
-published: 2015
+title: "The Long Way to a Small, Angry Planet (Wayfarers, #1)"
+seriesEntry: "The Long Way to a Small, Angry Planet"
+seriesNumber: "1"
+series: "Wayfarers"
+author: "Becky Chambers"
+published: 2014
 pages: 519
 goodreads: https://www.goodreads.com/book/show/25201920-the-long-way-to-a-small-angry-planet
 goodreads_id: 25201920
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1438590529l/25201920._SY475_.jpg
-read: 2020-09-07
-start: 2020-08-30
+cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1438590529l/25201920._SX315_.jpg
+read: 2020-09-07T00:00:00.000Z
+start: 2020-08-30T00:00:00.000Z
 rating: 5
-spoiler: false
-summary: 'This is the first book, that I can remember, that has made me laugh (multiple times) out loud(!) and cry. I loved it.'
 ---
 
 This is the first book, that I can remember, that has made me laugh (multiple times) out loud(!) _and_ cry. _The Long Way to a Small, Angry Planet_ has firmly earned itself a place in my top favourite books of all time.
