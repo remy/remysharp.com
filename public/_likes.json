@@ -48427,5 +48427,102 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "books": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "filmaj",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d55de2d5175609df5fae51a35e0ba2a3fa3a199fc4b9960fa22c102d0ac1ee5b.png",
+        "url": "https://social.lunchlurkers.com/@filmaj"
+      },
+      "url": "https://front-end.social/@rem/111445074564830294#favorited-by-109365962138354798",
+      "published": null,
+      "wm-received": "2023-11-20T23:35:04Z",
+      "wm-id": 1741961,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111445074564830294/109365962138354798",
+      "wm-target": "https://remysharp.com/books",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Neblib",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e45c6788454f4e0535151464ccea33792328310ba337c171058df606edaa0c22.jpg",
+        "url": "https://mastodo.neoliber.al/@Neblib"
+      },
+      "url": "https://front-end.social/@rem/111445074564830294#favorited-by-110545323974677569",
+      "published": null,
+      "wm-received": "2023-11-20T22:35:05Z",
+      "wm-id": 1741942,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111445074564830294/110545323974677569",
+      "wm-target": "https://remysharp.com/books",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marc Littlemore",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/37d343e3802d29b140890f0ffbd0598cf1ff0a242aab0d8368e42ae2c0f804c5.jpg",
+        "url": "https://indieweb.social/@marclittlemore"
+      },
+      "url": "https://front-end.social/@rem/111445074564830294#favorited-by-110731844318290065",
+      "published": null,
+      "wm-received": "2023-11-20T22:35:02Z",
+      "wm-id": 1741940,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111445074564830294/110731844318290065",
+      "wm-target": "https://remysharp.com/books",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas Vander Wal",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a20288c7c48302cf3b9002de081a4210ed926620e7d07668be765d7b46be96ff.png",
+        "url": "https://mastodon.social/@vanderwal"
+      },
+      "url": "https://front-end.social/@rem/111445074564830294#favorited-by-109292234081791847",
+      "published": null,
+      "wm-received": "2023-11-20T22:35:02Z",
+      "wm-id": 1741941,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111445074564830294/109292234081791847",
+      "wm-target": "https://remysharp.com/books",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/262987ea3a44345cb221531f5d20fc5b39871a78db811fc5ac990a130fde5c7a.gif",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111445074564830294#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2023-11-20T22:03:28Z",
+      "wm-id": 1741928,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111445074564830294/109302579306985968",
+      "wm-target": "https://remysharp.com/books",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
