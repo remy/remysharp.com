@@ -38,3 +38,5 @@ So that's where I'm at. So far, it's having no positive impact, and in fact in m
 There's also things I can do that will help regardless: go to bed earlier (I've heard that a lot lately) and I need to do some kind of exercise - anything to help the blood move to my brain.
 
 For now, I'm hoping the next few days the ringing goes down a little, if only for a tiny bit of time. Then I'll be resuming treatment (probably) next Wednesday for a further 6 weeks.
+
+I wrote a final post that explained how the treatment ended for me, you can read it here: [Me & Tinnitus: entry 5](/2022/03/01/me-and-tinnitus-entry-5).{.update}

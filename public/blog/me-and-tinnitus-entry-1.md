@@ -54,3 +54,5 @@ After the introduction call ended a wave of emotion came over me. I felt like I 
 I know why I felt the way I did, it's the potential to managing my tinnitus in some way, if any way, rather than letting it dominate my brain the way it has done for 20 years.
 
 I'll try to continue to share my story, if only to unload my own brain into this corner of the web that I occupy.
+
+I wrote a final post that explained how the treatment ended for me, you can read it here: [Me & Tinnitus: entry 5](/2022/03/01/me-and-tinnitus-entry-5).{.update}

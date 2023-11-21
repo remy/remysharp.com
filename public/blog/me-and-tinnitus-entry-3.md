@@ -49,3 +49,5 @@ The headphones supplied, frustratingly, aren't the best quality. Apparently they
 Worse of all, you can hear the sounds I'm playing from the outside. Specifically I've used the treatment before going to sleep in bed, and Julie who shares the bed with me can hear the sounds whilst they're reading their book. Not the best shared experience!
 
 I'm going to follow up with a bit of a technical post about what's inside the Lenire, but I'll continue my diary of this experience in the hope it can help anyone else and to help me clear out the cobwebs in my head.
+
+I wrote a final post that explained how the treatment ended for me, you can read it here: [Me & Tinnitus: entry 5](/2022/03/01/me-and-tinnitus-entry-5).{.update}

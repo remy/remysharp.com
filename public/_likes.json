@@ -48524,5 +48524,387 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "scraping-goodreads": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hank G ☑️",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/826a97e640354fcf63c71a61d9ee2deb03d9b4b0063bd23d4037f48f3105f83a.jpg",
+        "url": "https://friendica.myportal.social/profile/hankg"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109293399430650396",
+      "published": null,
+      "wm-received": "2023-11-21T14:43:57Z",
+      "wm-id": 1742261,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109293399430650396",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Coleman",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a73d82dc2dc9b1f25d7abac0fdd67e348d03fda78b7e6eb52edc60428d77c7f4.jpg",
+        "url": "https://mastodon.social/@Chris"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109288538740293443",
+      "published": null,
+      "wm-received": "2023-11-21T14:11:53Z",
+      "wm-id": 1742241,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109288538740293443",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Neblib",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e45c6788454f4e0535151464ccea33792328310ba337c171058df606edaa0c22.jpg",
+        "url": "https://mastodo.neoliber.al/@Neblib"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-110545323974677569",
+      "published": null,
+      "wm-received": "2023-11-21T14:11:53Z",
+      "wm-id": 1742242,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/110545323974677569",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "filmaj",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d55de2d5175609df5fae51a35e0ba2a3fa3a199fc4b9960fa22c102d0ac1ee5b.png",
+        "url": "https://social.lunchlurkers.com/@filmaj"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109365962138354798",
+      "published": null,
+      "wm-received": "2023-11-21T13:47:29Z",
+      "wm-id": 1742226,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109365962138354798",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hank G ☑️",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/826a97e640354fcf63c71a61d9ee2deb03d9b4b0063bd23d4037f48f3105f83a.jpg",
+        "url": "https://friendica.myportal.social/profile/hankg"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109293399430650396",
+      "published": null,
+      "wm-received": "2023-11-21T14:43:57Z",
+      "wm-id": 1742261,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109293399430650396",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Coleman",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a73d82dc2dc9b1f25d7abac0fdd67e348d03fda78b7e6eb52edc60428d77c7f4.jpg",
+        "url": "https://mastodon.social/@Chris"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109288538740293443",
+      "published": null,
+      "wm-received": "2023-11-21T14:11:53Z",
+      "wm-id": 1742241,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109288538740293443",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Neblib",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e45c6788454f4e0535151464ccea33792328310ba337c171058df606edaa0c22.jpg",
+        "url": "https://mastodo.neoliber.al/@Neblib"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-110545323974677569",
+      "published": null,
+      "wm-received": "2023-11-21T14:11:53Z",
+      "wm-id": 1742242,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/110545323974677569",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "filmaj",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d55de2d5175609df5fae51a35e0ba2a3fa3a199fc4b9960fa22c102d0ac1ee5b.png",
+        "url": "https://social.lunchlurkers.com/@filmaj"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109365962138354798",
+      "published": null,
+      "wm-received": "2023-11-21T13:47:29Z",
+      "wm-id": 1742226,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109365962138354798",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hank G ☑️",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/826a97e640354fcf63c71a61d9ee2deb03d9b4b0063bd23d4037f48f3105f83a.jpg",
+        "url": "https://friendica.myportal.social/profile/hankg"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109293399430650396",
+      "published": null,
+      "wm-received": "2023-11-21T14:43:57Z",
+      "wm-id": 1742261,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109293399430650396",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Coleman",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a73d82dc2dc9b1f25d7abac0fdd67e348d03fda78b7e6eb52edc60428d77c7f4.jpg",
+        "url": "https://mastodon.social/@Chris"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109288538740293443",
+      "published": null,
+      "wm-received": "2023-11-21T14:11:53Z",
+      "wm-id": 1742241,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109288538740293443",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Neblib",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e45c6788454f4e0535151464ccea33792328310ba337c171058df606edaa0c22.jpg",
+        "url": "https://mastodo.neoliber.al/@Neblib"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-110545323974677569",
+      "published": null,
+      "wm-received": "2023-11-21T14:11:53Z",
+      "wm-id": 1742242,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/110545323974677569",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "filmaj",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d55de2d5175609df5fae51a35e0ba2a3fa3a199fc4b9960fa22c102d0ac1ee5b.png",
+        "url": "https://social.lunchlurkers.com/@filmaj"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109365962138354798",
+      "published": null,
+      "wm-received": "2023-11-21T13:47:29Z",
+      "wm-id": 1742226,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109365962138354798",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hank G ☑️",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/826a97e640354fcf63c71a61d9ee2deb03d9b4b0063bd23d4037f48f3105f83a.jpg",
+        "url": "https://friendica.myportal.social/profile/hankg"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109293399430650396",
+      "published": null,
+      "wm-received": "2023-11-21T14:43:57Z",
+      "wm-id": 1742261,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109293399430650396",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Coleman",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a73d82dc2dc9b1f25d7abac0fdd67e348d03fda78b7e6eb52edc60428d77c7f4.jpg",
+        "url": "https://mastodon.social/@Chris"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109288538740293443",
+      "published": null,
+      "wm-received": "2023-11-21T14:11:53Z",
+      "wm-id": 1742241,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109288538740293443",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Neblib",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e45c6788454f4e0535151464ccea33792328310ba337c171058df606edaa0c22.jpg",
+        "url": "https://mastodo.neoliber.al/@Neblib"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-110545323974677569",
+      "published": null,
+      "wm-received": "2023-11-21T14:11:53Z",
+      "wm-id": 1742242,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/110545323974677569",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "filmaj",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d55de2d5175609df5fae51a35e0ba2a3fa3a199fc4b9960fa22c102d0ac1ee5b.png",
+        "url": "https://social.lunchlurkers.com/@filmaj"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109365962138354798",
+      "published": null,
+      "wm-received": "2023-11-21T13:47:29Z",
+      "wm-id": 1742226,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109365962138354798",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hank G ☑️",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/826a97e640354fcf63c71a61d9ee2deb03d9b4b0063bd23d4037f48f3105f83a.jpg",
+        "url": "https://friendica.myportal.social/profile/hankg"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109293399430650396",
+      "published": null,
+      "wm-received": "2023-11-21T14:43:57Z",
+      "wm-id": 1742261,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109293399430650396",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Coleman",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a73d82dc2dc9b1f25d7abac0fdd67e348d03fda78b7e6eb52edc60428d77c7f4.jpg",
+        "url": "https://mastodon.social/@Chris"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109288538740293443",
+      "published": null,
+      "wm-received": "2023-11-21T14:11:53Z",
+      "wm-id": 1742241,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109288538740293443",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Neblib",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e45c6788454f4e0535151464ccea33792328310ba337c171058df606edaa0c22.jpg",
+        "url": "https://mastodo.neoliber.al/@Neblib"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-110545323974677569",
+      "published": null,
+      "wm-received": "2023-11-21T14:11:53Z",
+      "wm-id": 1742242,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/110545323974677569",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "filmaj",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d55de2d5175609df5fae51a35e0ba2a3fa3a199fc4b9960fa22c102d0ac1ee5b.png",
+        "url": "https://social.lunchlurkers.com/@filmaj"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109365962138354798",
+      "published": null,
+      "wm-received": "2023-11-21T13:47:29Z",
+      "wm-id": 1742226,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109365962138354798",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

@@ -58,3 +58,5 @@ Now that I've got the hearing test I can move to the next part of the Lenire app
 I realised I had already starting to pin some real hope into this treatment because when I read this, even though they said we'd still proceed, I can now see the possibility of it not working for me.
 
 So we'll see. I have my next appointment tomorrow online and I'll find out more about what options there are.
+
+I wrote a final post that explained how the treatment ended for me, you can read it here: [Me & Tinnitus: entry 5](/2022/03/01/me-and-tinnitus-entry-5).{.update}
