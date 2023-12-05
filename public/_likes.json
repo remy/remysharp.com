@@ -461,6 +461,32 @@
       "like-of": "https://remysharp.com/2023/09/26/no-more-404",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": "https://jacky.wtf/about"
+      },
+      "url": "https://jacky.wtf/2023/11/0P8y",
+      "published": "2023-11-23T01:00:42",
+      "wm-received": "2023-11-23T01:01:37Z",
+      "wm-id": 1743428,
+      "wm-source": "https://jacky.wtf/2023/11/0P8y",
+      "wm-target": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-protocol": "webmention",
+      "summary": {
+        "content-type": "text/plain",
+        "value": "I liked the following: ↷"
+      },
+      "like-of": "https://remysharp.com/2023/09/26/no-more-404",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://jacky.wtf/2023/11/0P8y?"
+      }
     }
   ],
   "coco": [
@@ -48903,6 +48929,198 @@
       "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jacob Kanipe-Illig",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mastodon.world/@jacobhyphenated"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109523301473704946",
+      "published": null,
+      "wm-received": "2023-11-22T13:10:20Z",
+      "wm-id": 1743066,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109523301473704946",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "haliphax ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/228b77d961c69780574b98a0db6e59127abebe4467d49471d5e20ae089084284.jpg",
+        "url": "https://hachyderm.io/@haliphax"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109365126807814804",
+      "published": null,
+      "wm-received": "2023-11-21T16:57:27Z",
+      "wm-id": 1742330,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109365126807814804",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Diplo Dino",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/818cd03f302c296c38a641f70428b14a5c9a0a985b8f412fb216b0239e556041.gif",
+        "url": "https://mastodon.social/@Diplodocus"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109423544612781501",
+      "published": null,
+      "wm-received": "2023-11-21T16:57:24Z",
+      "wm-id": 1742329,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109423544612781501",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jacob Kanipe-Illig",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mastodon.world/@jacobhyphenated"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109523301473704946",
+      "published": null,
+      "wm-received": "2023-11-22T13:10:20Z",
+      "wm-id": 1743066,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109523301473704946",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "haliphax ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/228b77d961c69780574b98a0db6e59127abebe4467d49471d5e20ae089084284.jpg",
+        "url": "https://hachyderm.io/@haliphax"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109365126807814804",
+      "published": null,
+      "wm-received": "2023-11-21T16:57:27Z",
+      "wm-id": 1742330,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109365126807814804",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Diplo Dino",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/818cd03f302c296c38a641f70428b14a5c9a0a985b8f412fb216b0239e556041.gif",
+        "url": "https://mastodon.social/@Diplodocus"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109423544612781501",
+      "published": null,
+      "wm-received": "2023-11-21T16:57:24Z",
+      "wm-id": 1742329,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109423544612781501",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jacob Kanipe-Illig",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mastodon.world/@jacobhyphenated"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109523301473704946",
+      "published": null,
+      "wm-received": "2023-11-22T13:10:20Z",
+      "wm-id": 1743066,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109523301473704946",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "haliphax ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/228b77d961c69780574b98a0db6e59127abebe4467d49471d5e20ae089084284.jpg",
+        "url": "https://hachyderm.io/@haliphax"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109365126807814804",
+      "published": null,
+      "wm-received": "2023-11-21T16:57:27Z",
+      "wm-id": 1742330,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109365126807814804",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Diplo Dino",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/818cd03f302c296c38a641f70428b14a5c9a0a985b8f412fb216b0239e556041.gif",
+        "url": "https://mastodon.social/@Diplodocus"
+      },
+      "url": "https://front-end.social/@rem/111448797776028514#favorited-by-109423544612781501",
+      "published": null,
+      "wm-received": "2023-11-21T16:57:24Z",
+      "wm-id": 1742329,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111448797776028514/109423544612781501",
+      "wm-target": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/11/21/scraping-goodreads",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "our-christmas-films-list": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Heather Buchel",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d5e012d63700bb82046a3a800c5fdba573e37d0089487707ee246351b053c88a.jpg",
+        "url": "https://hachyderm.io/@hbuchel"
+      },
+      "url": "https://front-end.social/@rem/111527262063445408#favorited-by-109343279274422902",
+      "published": null,
+      "wm-received": "2023-12-05T10:59:13Z",
+      "wm-id": 1749117,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111527262063445408/109343279274422902",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
       "wm-property": "like-of",
       "wm-private": false
     }
