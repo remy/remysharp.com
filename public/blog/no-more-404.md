@@ -212,6 +212,6 @@ async function fetchWithTimeout(uri: URL, options = {}, time = 5000) {
 
 ## Some examples
 
-- When I wrote about [tracking "noscript"](https://remysharp.com/2009/10/15/the-missing-stat-noscript) (though I've gone off tracking entirely), the web site "Mint" existed, but doesn't anymore, but you can see how it looked back in 2009.
-- I [won an iPod](https://remysharp.com/2006/12/19/css-mastery-ipod-giveaway) in Andy Budd's Christmas competition which was cited in the post, but Andy did a bit of a purge of his blog post (I suspect: making the content more focused around the topics he wants to be associated with). This meant the context was lost.
-- In a (relatively recent) blog post where I described how I built a [hardware hack for the ZX Spectrum Next](https://remysharp.com/2021/10/31/midi-controller-to-ps2-part-2), I linked to a store referencing a specific component and the schematic PDF, both of which are now 404'ing, but through my redirector, I successfully land on the archive copies and get the real context.
+- When I wrote about [tracking "noscript"](/2009/10/15/the-missing-stat-noscript) (though I've gone off tracking entirely), the web site "Mint" existed, but doesn't anymore, but you can see how it looked back in 2009.
+- I [won an iPod](/2006/12/19/css-mastery-ipod-giveaway) in Andy Budd's Christmas competition which was cited in the post, but Andy did a bit of a purge of his blog post (I suspect: making the content more focused around the topics he wants to be associated with). This meant the context was lost.
+- In a (relatively recent) blog post where I described how I built a [hardware hack for the ZX Spectrum Next](/2021/10/31/midi-controller-to-ps2-part-2), I linked to a store referencing a specific component and the schematic PDF, both of which are now 404'ing, but through my redirector, I successfully land on the archive copies and get the real context.
