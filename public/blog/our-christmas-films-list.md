@@ -172,6 +172,8 @@ mileage may vary!
 
 * [Candy Cane Lane (2023)](https://www.imdb.com/title/tt21328106/)
 * [Godmothered (2020)](https://www.imdb.com/title/tt11681250/)
+* [Click and Collect (2018)](https://www.imdb.com/title/tt9217716/)
+* * [White Christmas (1954)](https://www.imdb.com/title/tt0047673/ "White Christmas (1954) - IMDb")
 * [Hogfather (2006)](https://m.imdb.com/title/tt0765458/) (possibly…it's 3 hours!)
 * …more
 
