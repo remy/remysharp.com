@@ -11,7 +11,7 @@ modified: '2020-12-03 09:17:55'
 
 Each year, since 2006, Julie and I have planned a Christmas movie day, where we
 watch a day of Christmas spirited films whilst eating various Christmas type
-food (basically: volauvents). We have a rule that we can't watch the same film
+food (basically: vol-au-vent). We have a rule that we can't watch the same film
 two years in a row, but we're secretly trying to watch different films each
 year. So here's where I ask you: _what films are we missing?_
 
@@ -160,6 +160,8 @@ mileage may vary!
 * [Home Sweet Home Alone (2021)](https://www.imdb.com/title/tt11012066/)
 * [Silent Night (2021)](https://www.imdb.com/title/tt11628854/)
 
+This is the year we started sharing our Christmas Movie day with the kids, so our choices became a little more limited (to appropriate viewing!).
+
 ## 2022
 
 * [Unaccompanied Minors (2006)](https://www.imdb.com/title/tt0488658/)
@@ -171,15 +173,16 @@ mileage may vary!
 ## 2023
 
 * [Candy Cane Lane (2023)](https://www.imdb.com/title/tt21328106/)
-* [Godmothered (2020)](https://www.imdb.com/title/tt11681250/)
+* [Shaun the Sheep: The Flight Before Christmas (2021)](https://www.imdb.com/title/tt15857304/)
 * [Click and Collect (2018)](https://www.imdb.com/title/tt9217716/)
-* * [White Christmas (1954)](https://www.imdb.com/title/tt0047673/ "White Christmas (1954) - IMDb")
-* [Hogfather (2006)](https://m.imdb.com/title/tt0765458/) (possibly…it's 3 hours!)
-* …more
+* [The Bad Guys: A Very Bad Holiday (2023)](https://www.imdb.com/title/tt28863512/)
+* [Godmothered (2020)](https://www.imdb.com/title/tt11681250/)
+* [Violent Night (2022)](https://www.imdb.com/title/tt12003946/)
 
 ## Future Potentials
 
 * [A Christmas Story Christmas (2022)](https://www.imdb.com/title/tt17220704/)
+* [Hogfather (2006)](https://m.imdb.com/title/tt0765458/) (possibly…it's 3 hours!)
 * [Violent Night (2022)](https://www.imdb.com/title/tt12003946/)
 * [Meet Me in St. Louis (1944)](https://www.imdb.com/title/tt0037059/)
 * [8 Women (2002)](https://www.imdb.com/title/tt0283832/)

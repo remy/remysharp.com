@@ -2796,7 +2796,10 @@
     "created": "2022-12-31T17:31:32.000Z",
     "modified": "2022-12-31T17:31:32.000Z"
   },
-  "public/blog/my-2023.md": {},
+  "public/blog/my-2023.md": {
+    "created": "2023-12-05T12:11:50.000Z",
+    "modified": "2023-12-05T12:11:50.000Z"
+  },
   "public/blog/my-big-workshop-tour.md": {
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
@@ -2895,7 +2898,7 @@
   },
   "public/blog/no-more-404.md": {
     "created": "2023-09-26T10:44:37.000Z",
-    "modified": "2023-09-26T10:55:50.000Z"
+    "modified": "2023-12-05T12:11:50.000Z"
   },
   "public/blog/nodejs-rapid-development-nodemon.md": {
     "created": "2014-09-04T11:12:23.000Z",
@@ -2979,7 +2982,7 @@
   },
   "public/blog/our-christmas-films-list.md": {
     "created": "2014-09-04T11:12:23.000Z",
-    "modified": "2022-12-30T19:46:47.000Z"
+    "modified": "2023-12-12T10:16:35.000Z"
   },
   "public/blog/our-london-to-brighton-bike-ride-and-route.md": {
     "created": "2014-09-04T11:12:23.000Z",
@@ -3557,7 +3560,10 @@
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
   },
-  "public/blog/unrot-that-link.md": {},
+  "public/blog/unrot-that-link.md": {
+    "created": "2023-12-05T12:11:50.000Z",
+    "modified": "2023-12-05T12:11:50.000Z"
+  },
   "public/blog/updated-jquery-talk.md": {
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-20T15:35:42.000Z"
@@ -3982,22 +3988,6 @@
     "created": "2023-10-27T11:43:23.000Z",
     "modified": "2023-10-27T11:43:23.000Z"
   },
-  "public/attic/2006/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2007/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2008/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2014/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
   "public/books/2017/a-boy-made-of-blocks.md": {
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2020-11-06T12:09:51.000Z"
@@ -4095,122 +4085,6 @@
     "modified": "2023-11-20T21:39:42.000Z"
   },
   "public/books/2017/the-song-from-somewhere-else.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2019/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/all-the-birds-in-the-sky.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2019/autonomous.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/clawthorn-clement-3.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/deaths-end-remembrance-of-earths-past-3.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/fahrenheit-451.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2019/harry-potter-and-the-goblet-of-fire-harry-potter-4.md": {
-    "created": "2022-08-31T11:54:32.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/harry-potter-and-the-prisoner-of-azkaban-harry-potter-3.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/i-am-legend.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2019/i-had-a-black-dog.md": {
-    "created": "2023-10-06T09:06:47.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/lord-of-the-flies.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2019/meeting-mungo-thunk.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2019/miss-pettigrew-lives-for-a-day.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/my-name-is-leon.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/no-way-out-di-adam-fawley-3.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/recursion.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2019/skipping-christmas-christmas-with-the-kranks.md": {
-    "created": "2023-10-06T09:06:47.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/sleep-change-the-way-you-sleep-with-this-90-minute-read.md": {
-    "created": "2023-10-06T09:06:47.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/the-afterlife-of-walter-augustus.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2019/the-book-of-m.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2019/the-chrysalids.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-12-26T14:29:53.000Z"
-  },
-  "public/books/2019/the-dark-forest-remembrance-of-earths-past-2.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/the-humans.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/the-name-of-the-wind-the-kingkiller-chronicle-1.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/the-passengers.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2019/the-sudden-appearance-of-hope.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2019/the-three-body-problem-remembrance-of-earths-past-1.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/the-truth-pixie-christmas-35.md": {
-    "created": "2023-10-06T09:06:47.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2019/we.md": {
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2020-11-06T12:09:51.000Z"
   },
@@ -4358,6 +4232,122 @@
     "created": "2023-11-20T21:39:42.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
+  "public/books/2019/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/all-the-birds-in-the-sky.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2019/autonomous.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/clawthorn-clement-3.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/deaths-end-remembrance-of-earths-past-3.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/fahrenheit-451.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2019/harry-potter-and-the-goblet-of-fire-harry-potter-4.md": {
+    "created": "2022-08-31T11:54:32.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/harry-potter-and-the-prisoner-of-azkaban-harry-potter-3.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/i-am-legend.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2019/i-had-a-black-dog.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/lord-of-the-flies.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2019/meeting-mungo-thunk.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2019/miss-pettigrew-lives-for-a-day.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/my-name-is-leon.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/no-way-out-di-adam-fawley-3.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/recursion.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2019/skipping-christmas-christmas-with-the-kranks.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/sleep-change-the-way-you-sleep-with-this-90-minute-read.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/the-afterlife-of-walter-augustus.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2019/the-book-of-m.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2019/the-chrysalids.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-12-26T14:29:53.000Z"
+  },
+  "public/books/2019/the-dark-forest-remembrance-of-earths-past-2.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/the-humans.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/the-name-of-the-wind-the-kingkiller-chronicle-1.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/the-passengers.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2019/the-sudden-appearance-of-hope.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2019/the-three-body-problem-remembrance-of-earths-past-1.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/the-truth-pixie-christmas-35.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2019/we.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
   "public/books/2020/a-boy-called-christmas.md": {
     "created": "2021-01-25T21:29:13.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
@@ -4414,6 +4404,10 @@
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2020-11-06T12:09:51.000Z"
   },
+  "public/books/2020/spectrum-machine-language-for-the-absolute-beginner.md": {
+    "created": "2020-08-30T13:46:59.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
   "public/books/2020/stardust.md": {
     "created": "2020-08-30T13:46:59.000Z",
     "modified": "2020-11-06T12:09:51.000Z"
@@ -4429,6 +4423,10 @@
   "public/books/2020/the-little-prince.md": {
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2020/the-long-way-to-a-small,-angry-planet.md": {
+    "created": "2020-09-09T16:28:06.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
   },
   "public/books/2020/the-long-way-to-a-small-angry-planet.md": {
     "created": "2020-09-09T16:28:06.000Z",
@@ -4570,6 +4568,10 @@
     "created": "2022-06-12T20:27:50.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
+  "public/attic/2006/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
   "public/books/2023/a-man-called-ove.md": {
     "created": "2023-10-06T09:06:47.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
@@ -4594,6 +4596,7 @@
     "created": "2023-10-06T09:06:47.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
+  "public/books/2023/system-collapse-the-murderbot-diaries-7.md": {},
   "public/books/2023/the-murder-of-roger-ackroyd-hercule-poirot-4.md": {
     "created": "2023-11-20T21:39:42.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
@@ -4609,6 +4612,18 @@
   "public/books/2023/virtual-light-bridge-trilogy-1.md": {
     "created": "2023-10-06T09:06:47.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/attic/2007/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2008/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2014/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
   },
   "public/devlog/go-mummy/2020-05-24.md": {
     "created": "2020-05-24T13:47:04.000Z",
@@ -4754,10 +4769,6 @@
     "created": "2020-11-06T19:13:58.000Z",
     "modified": "2020-11-06T19:13:58.000Z"
   },
-  "public/til/http/curl-s-isnt-as-useful-as-i-thought.md": {
-    "created": "2020-05-02T10:20:32.000Z",
-    "modified": "2020-05-26T11:26:37.000Z"
-  },
   "public/til/data/modifying-autoincrements.md": {
     "created": "2021-06-18T08:10:17.000Z",
     "modified": "2021-06-18T08:10:17.000Z"
@@ -4765,6 +4776,10 @@
   "public/til/data/postgres-csv-import-with-json.md": {
     "created": "2021-03-09T12:53:55.000Z",
     "modified": "2021-03-09T12:53:55.000Z"
+  },
+  "public/til/http/curl-s-isnt-as-useful-as-i-thought.md": {
+    "created": "2020-05-02T10:20:32.000Z",
+    "modified": "2020-05-26T11:26:37.000Z"
   },
   "public/til/javascript/new-bytes-from-textencoder.md": {
     "created": "2020-05-09T07:46:07.000Z",
