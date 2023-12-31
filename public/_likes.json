@@ -51335,5 +51335,159 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "my-2023": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David Hayes :prami:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/20f5ee9b91a2048c649f5936f9b2edd031cd08bf33d20540bd4d8888f4c18739.png",
+        "url": "https://social.lol/@drhayes"
+      },
+      "url": "https://front-end.social/@rem/111674889627929211#favorited-by-110786396909373840",
+      "published": null,
+      "wm-received": "2023-12-31T17:36:44Z",
+      "wm-id": 1760974,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111674889627929211/110786396909373840",
+      "wm-target": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam Fortuna",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/02ad3295c87946cb4e4974b9c993c9713694e3742656301f52f4fad6c28ec322.jpg",
+        "url": "https://ruby.social/@adam"
+      },
+      "url": "https://front-end.social/@rem/111674889627929211#favorited-by-109351966579303612",
+      "published": null,
+      "wm-received": "2023-12-31T17:36:42Z",
+      "wm-id": 1760973,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111674889627929211/109351966579303612",
+      "wm-target": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christine Sætre",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d1abffc0ffdb9892ffc4d26897721f3872bf8a18b3c459ac6e1e2c30bc23bc42.jpg",
+        "url": "https://techhub.social/@csaetre"
+      },
+      "url": "https://front-end.social/@rem/111674889627929211#favorited-by-109427925370984742",
+      "published": null,
+      "wm-received": "2023-12-31T13:13:47Z",
+      "wm-id": 1760835,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111674889627929211/109427925370984742",
+      "wm-target": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ed Summers",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/578862cd6c2e166318ff52282b598d046422efd82c65feee5c7c95c7bf526dff.jpg",
+        "url": "https://social.coop/@edsu"
+      },
+      "url": "https://front-end.social/@rem/111674889627929211#favorited-by-109298428412423417",
+      "published": null,
+      "wm-received": "2023-12-31T13:13:43Z",
+      "wm-id": 1760833,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111674889627929211/109298428412423417",
+      "wm-target": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David Hayes :prami:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/20f5ee9b91a2048c649f5936f9b2edd031cd08bf33d20540bd4d8888f4c18739.png",
+        "url": "https://social.lol/@drhayes"
+      },
+      "url": "https://front-end.social/@rem/111674889627929211#favorited-by-110786396909373840",
+      "published": null,
+      "wm-received": "2023-12-31T17:36:44Z",
+      "wm-id": 1760974,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111674889627929211/110786396909373840",
+      "wm-target": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam Fortuna",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/02ad3295c87946cb4e4974b9c993c9713694e3742656301f52f4fad6c28ec322.jpg",
+        "url": "https://ruby.social/@adam"
+      },
+      "url": "https://front-end.social/@rem/111674889627929211#favorited-by-109351966579303612",
+      "published": null,
+      "wm-received": "2023-12-31T17:36:42Z",
+      "wm-id": 1760973,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111674889627929211/109351966579303612",
+      "wm-target": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christine Sætre",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d1abffc0ffdb9892ffc4d26897721f3872bf8a18b3c459ac6e1e2c30bc23bc42.jpg",
+        "url": "https://techhub.social/@csaetre"
+      },
+      "url": "https://front-end.social/@rem/111674889627929211#favorited-by-109427925370984742",
+      "published": null,
+      "wm-received": "2023-12-31T13:13:47Z",
+      "wm-id": 1760835,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111674889627929211/109427925370984742",
+      "wm-target": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ed Summers",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/578862cd6c2e166318ff52282b598d046422efd82c65feee5c7c95c7bf526dff.jpg",
+        "url": "https://social.coop/@edsu"
+      },
+      "url": "https://front-end.social/@rem/111674889627929211#favorited-by-109298428412423417",
+      "published": null,
+      "wm-received": "2023-12-31T13:13:43Z",
+      "wm-id": 1760833,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111674889627929211/109298428412423417",
+      "wm-target": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
