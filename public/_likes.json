@@ -51488,6 +51488,44 @@
       "like-of": "https://remysharp.com/2023/12/31/my-2023",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas Steiner :chrome:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/bfc6c0c43c877e20f52745c3797f2df8b399c676f61af5b28b562461b499f345.jpg",
+        "url": "https://toot.cafe/@tomayac"
+      },
+      "url": "https://front-end.social/@rem/111674889627929211#favorited-by-109288467443856475",
+      "published": null,
+      "wm-received": "2024-01-01T08:25:20Z",
+      "wm-id": 1761276,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111674889627929211/109288467443856475",
+      "wm-target": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111674889627929211#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2024-01-01T00:32:31Z",
+      "wm-id": 1761186,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111674889627929211/109874328475766981",
+      "wm-target": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }
