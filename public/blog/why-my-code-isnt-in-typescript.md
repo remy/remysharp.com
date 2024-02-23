@@ -44,9 +44,9 @@ I'm yet to understand whether it's not validated on the example site or if our p
 
 This is probably the hill I'll die on. There are three main blockers I run into on a regular basis:
 
-- I spend more time trying to resolve TypeScript complaints than I do adding code (TODO cite wall of type error and how copliot is being used to explain usually with no good solution)
+- I spend more time trying to resolve TypeScript complaints than I do adding code
 - Our team has lost hours on TypeScript exceptions in staging and production builds (but oddly not offline/local) where some external type was missing or incompatible, another one being that the local environment passes linting but CI doesn't, it shouldn't be so hard
-- Having to rewrite correctly and infallible JavaScript so that it was friendly enough for TypeScript to understand (TODO cite an example)
+- Having to rewrite correctly and infallible JavaScript so that it was friendly enough for TypeScript to understand
 
 I've used TypeScript in a single file app that was being run with Deno. I think I could count the types defined on one hand and it didn't help anyone (but it was a Netlify Edge function, which has to use Deno, so TypeScript was fine to use). In this case, the code is so simplistic that it both doesn't benefit from TypeScript but is a breeze to code: no red snakes.
 
