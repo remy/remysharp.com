@@ -2,7 +2,7 @@
 title: 'How to import arcade fonts as sprites [spectrum]'
 date: 2020-10-25
 tags:
-  - spectrum
+  - retro
 ---
 
 # How to import arcade fonts as sprites

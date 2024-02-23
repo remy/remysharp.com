@@ -3,7 +3,7 @@ title: 'File hacking: fully self contained NextBASIC [spectrum]'
 date: '2021-05-31'
 tags:
   - code
-  - spectrum
+  - retro
 ---
 
 # File hacking: fully self contained NextBASIC [spectrum]

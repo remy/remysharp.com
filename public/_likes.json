@@ -3536,6 +3536,310 @@
       "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ben Seven",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/86d0ab1a0f6dddc35e25528901f1eb3fc9a92e19333e72b628a1240fe153965a.jpg",
+        "url": "https://mastodon.scot/@ben_seven"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109427265793269286",
+      "published": null,
+      "wm-received": "2024-01-15T23:31:05Z",
+      "wm-id": 1767645,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109427265793269286",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nicklas de León Persson",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/feda041d121d13c8daf2e7ced40c96ca85b52ecebc03ae417516bbeb8a91a37e.png",
+        "url": "https://tilde.zone/@takete"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109335781892231992",
+      "published": null,
+      "wm-received": "2024-01-15T07:36:50Z",
+      "wm-id": 1767365,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109335781892231992",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-01-15T00:35:13Z",
+      "wm-id": 1767264,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109302579306985968",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jailandrade",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/3c8730eba41e2b9fef7a16ae65fe5917290a8042e285885f8fa28d8d33a6ab06.png",
+        "url": "https://mastodon.social/@jailandrade"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109296458169040637",
+      "published": null,
+      "wm-received": "2024-01-15T00:00:58Z",
+      "wm-id": 1767261,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109296458169040637",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ben Seven",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/86d0ab1a0f6dddc35e25528901f1eb3fc9a92e19333e72b628a1240fe153965a.jpg",
+        "url": "https://mastodon.scot/@ben_seven"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109427265793269286",
+      "published": null,
+      "wm-received": "2024-01-15T23:31:05Z",
+      "wm-id": 1767645,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109427265793269286",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nicklas de León Persson",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/feda041d121d13c8daf2e7ced40c96ca85b52ecebc03ae417516bbeb8a91a37e.png",
+        "url": "https://tilde.zone/@takete"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109335781892231992",
+      "published": null,
+      "wm-received": "2024-01-15T07:36:50Z",
+      "wm-id": 1767365,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109335781892231992",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-01-15T00:35:13Z",
+      "wm-id": 1767264,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109302579306985968",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jailandrade",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/3c8730eba41e2b9fef7a16ae65fe5917290a8042e285885f8fa28d8d33a6ab06.png",
+        "url": "https://mastodon.social/@jailandrade"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109296458169040637",
+      "published": null,
+      "wm-received": "2024-01-15T00:00:58Z",
+      "wm-id": 1767261,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109296458169040637",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ben Seven",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/86d0ab1a0f6dddc35e25528901f1eb3fc9a92e19333e72b628a1240fe153965a.jpg",
+        "url": "https://mastodon.scot/@ben_seven"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109427265793269286",
+      "published": null,
+      "wm-received": "2024-01-15T23:31:05Z",
+      "wm-id": 1767645,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109427265793269286",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nicklas de León Persson",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/feda041d121d13c8daf2e7ced40c96ca85b52ecebc03ae417516bbeb8a91a37e.png",
+        "url": "https://tilde.zone/@takete"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109335781892231992",
+      "published": null,
+      "wm-received": "2024-01-15T07:36:50Z",
+      "wm-id": 1767365,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109335781892231992",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-01-15T00:35:13Z",
+      "wm-id": 1767264,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109302579306985968",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jailandrade",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/3c8730eba41e2b9fef7a16ae65fe5917290a8042e285885f8fa28d8d33a6ab06.png",
+        "url": "https://mastodon.social/@jailandrade"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109296458169040637",
+      "published": null,
+      "wm-received": "2024-01-15T00:00:58Z",
+      "wm-id": 1767261,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109296458169040637",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ben Seven",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/86d0ab1a0f6dddc35e25528901f1eb3fc9a92e19333e72b628a1240fe153965a.jpg",
+        "url": "https://mastodon.scot/@ben_seven"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109427265793269286",
+      "published": null,
+      "wm-received": "2024-01-15T23:31:05Z",
+      "wm-id": 1767645,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109427265793269286",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nicklas de León Persson",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/feda041d121d13c8daf2e7ced40c96ca85b52ecebc03ae417516bbeb8a91a37e.png",
+        "url": "https://tilde.zone/@takete"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109335781892231992",
+      "published": null,
+      "wm-received": "2024-01-15T07:36:50Z",
+      "wm-id": 1767365,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109335781892231992",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-01-15T00:35:13Z",
+      "wm-id": 1767264,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109302579306985968",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jailandrade",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/3c8730eba41e2b9fef7a16ae65fe5917290a8042e285885f8fa28d8d33a6ab06.png",
+        "url": "https://mastodon.social/@jailandrade"
+      },
+      "url": "https://front-end.social/@rem/111756940504793057#favorited-by-109296458169040637",
+      "published": null,
+      "wm-received": "2024-01-15T00:00:58Z",
+      "wm-id": 1767261,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111756940504793057/109296458169040637",
+      "wm-target": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/08/17/removing-shows-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "me-and-tinnitus-entry-3": [
@@ -48533,6 +48837,1150 @@
       "wm-target": "https://remysharp.com/2023/12/31/my-2023",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2023/12/31/my-2023",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "removing-episodes-audiobooks-and-more-from-spotify": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-07T19:28:55Z",
+      "wm-id": 1778533,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2024-02-05T14:44:31Z",
+      "wm-id": 1777426,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109874328475766981",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-02-05T14:16:07Z",
+      "wm-id": 1777394,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "esmevane, sorry",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/0edcf08a793c19d444a581bf9f9ee9c9f2a55e257fb03b8d45c25a7a3c64511c.png",
+        "url": "https://mastodon.esmevane.com/@ironchamber"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109316421269806073",
+      "published": null,
+      "wm-received": "2024-02-05T14:16:06Z",
+      "wm-id": 1777392,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109316421269806073",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-04T19:23:15Z",
+      "wm-id": 1777128,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James Veitch",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/42c56cd4ccf5b95804047d94ef3dc5378b6db01a5ba285c5d2b4b25480b4ada0.jpg",
+        "url": "https://mastodon.social/@veitch"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109760529972382547",
+      "published": null,
+      "wm-received": "2024-02-04T18:23:40Z",
+      "wm-id": 1777102,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109760529972382547",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gareth Jones ➡️ TFNation 2023",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d066a32657d12a70df62cd2e66af5d7b09bc2ac8a37023cba50c8680faa342f1.jpg",
+        "url": "https://mastodon.social/@4foot30"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109298968178578026",
+      "published": null,
+      "wm-received": "2024-02-04T15:29:26Z",
+      "wm-id": 1777025,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109298968178578026",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oiva Eskola",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d8cf551e57a08143048642a845fe87badfbf793c533610e17d68fd64883f388f.png",
+        "url": "https://toot.community/@oivaeskola"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109308249224430866",
+      "published": null,
+      "wm-received": "2024-02-04T15:29:26Z",
+      "wm-id": 1777026,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109308249224430866",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jon Hicks",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6f0a0adb7f508022af3b006df5f5725c0053a258e6a9549c061b60a9d7db82bf.jpg",
+        "url": "https://mastodon.social/@jonhicks"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109294613077242379",
+      "published": null,
+      "wm-received": "2024-02-04T13:54:50Z",
+      "wm-id": 1776981,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109294613077242379",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Raphael",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e61b90a0d9c7d2029f32839258d78571118e5fd03b8dea8884476687205e601a.jpg",
+        "url": "https://mastodon.sdf.org/@raphael"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109399096001946425",
+      "published": null,
+      "wm-received": "2024-02-04T12:28:21Z",
+      "wm-id": 1776946,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109399096001946425",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-02-04T12:28:18Z",
+      "wm-id": 1776943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-07T19:28:55Z",
+      "wm-id": 1778533,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2024-02-05T14:44:31Z",
+      "wm-id": 1777426,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109874328475766981",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-02-05T14:16:07Z",
+      "wm-id": 1777394,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "esmevane, sorry",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/0edcf08a793c19d444a581bf9f9ee9c9f2a55e257fb03b8d45c25a7a3c64511c.png",
+        "url": "https://mastodon.esmevane.com/@ironchamber"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109316421269806073",
+      "published": null,
+      "wm-received": "2024-02-05T14:16:06Z",
+      "wm-id": 1777392,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109316421269806073",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-04T19:23:15Z",
+      "wm-id": 1777128,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James Veitch",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/42c56cd4ccf5b95804047d94ef3dc5378b6db01a5ba285c5d2b4b25480b4ada0.jpg",
+        "url": "https://mastodon.social/@veitch"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109760529972382547",
+      "published": null,
+      "wm-received": "2024-02-04T18:23:40Z",
+      "wm-id": 1777102,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109760529972382547",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gareth Jones ➡️ TFNation 2023",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d066a32657d12a70df62cd2e66af5d7b09bc2ac8a37023cba50c8680faa342f1.jpg",
+        "url": "https://mastodon.social/@4foot30"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109298968178578026",
+      "published": null,
+      "wm-received": "2024-02-04T15:29:26Z",
+      "wm-id": 1777025,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109298968178578026",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oiva Eskola",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d8cf551e57a08143048642a845fe87badfbf793c533610e17d68fd64883f388f.png",
+        "url": "https://toot.community/@oivaeskola"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109308249224430866",
+      "published": null,
+      "wm-received": "2024-02-04T15:29:26Z",
+      "wm-id": 1777026,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109308249224430866",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jon Hicks",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6f0a0adb7f508022af3b006df5f5725c0053a258e6a9549c061b60a9d7db82bf.jpg",
+        "url": "https://mastodon.social/@jonhicks"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109294613077242379",
+      "published": null,
+      "wm-received": "2024-02-04T13:54:50Z",
+      "wm-id": 1776981,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109294613077242379",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Raphael",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e61b90a0d9c7d2029f32839258d78571118e5fd03b8dea8884476687205e601a.jpg",
+        "url": "https://mastodon.sdf.org/@raphael"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109399096001946425",
+      "published": null,
+      "wm-received": "2024-02-04T12:28:21Z",
+      "wm-id": 1776946,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109399096001946425",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-02-04T12:28:18Z",
+      "wm-id": 1776943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-07T19:28:55Z",
+      "wm-id": 1778533,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2024-02-05T14:44:31Z",
+      "wm-id": 1777426,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109874328475766981",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-02-05T14:16:07Z",
+      "wm-id": 1777394,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "esmevane, sorry",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/0edcf08a793c19d444a581bf9f9ee9c9f2a55e257fb03b8d45c25a7a3c64511c.png",
+        "url": "https://mastodon.esmevane.com/@ironchamber"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109316421269806073",
+      "published": null,
+      "wm-received": "2024-02-05T14:16:06Z",
+      "wm-id": 1777392,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109316421269806073",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-04T19:23:15Z",
+      "wm-id": 1777128,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James Veitch",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/42c56cd4ccf5b95804047d94ef3dc5378b6db01a5ba285c5d2b4b25480b4ada0.jpg",
+        "url": "https://mastodon.social/@veitch"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109760529972382547",
+      "published": null,
+      "wm-received": "2024-02-04T18:23:40Z",
+      "wm-id": 1777102,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109760529972382547",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gareth Jones ➡️ TFNation 2023",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d066a32657d12a70df62cd2e66af5d7b09bc2ac8a37023cba50c8680faa342f1.jpg",
+        "url": "https://mastodon.social/@4foot30"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109298968178578026",
+      "published": null,
+      "wm-received": "2024-02-04T15:29:26Z",
+      "wm-id": 1777025,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109298968178578026",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oiva Eskola",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d8cf551e57a08143048642a845fe87badfbf793c533610e17d68fd64883f388f.png",
+        "url": "https://toot.community/@oivaeskola"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109308249224430866",
+      "published": null,
+      "wm-received": "2024-02-04T15:29:26Z",
+      "wm-id": 1777026,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109308249224430866",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jon Hicks",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6f0a0adb7f508022af3b006df5f5725c0053a258e6a9549c061b60a9d7db82bf.jpg",
+        "url": "https://mastodon.social/@jonhicks"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109294613077242379",
+      "published": null,
+      "wm-received": "2024-02-04T13:54:50Z",
+      "wm-id": 1776981,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109294613077242379",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Raphael",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e61b90a0d9c7d2029f32839258d78571118e5fd03b8dea8884476687205e601a.jpg",
+        "url": "https://mastodon.sdf.org/@raphael"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109399096001946425",
+      "published": null,
+      "wm-received": "2024-02-04T12:28:21Z",
+      "wm-id": 1776946,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109399096001946425",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-02-04T12:28:18Z",
+      "wm-id": 1776943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-07T19:28:55Z",
+      "wm-id": 1778533,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a67a04475d2e985a30f8c8dbca9c3ee46da776919379915a9b62e2e78049ec11.jpg",
+        "url": "https://hachyderm.io/@andydavies"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109874328475766981",
+      "published": null,
+      "wm-received": "2024-02-05T14:44:31Z",
+      "wm-id": 1777426,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109874328475766981",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-02-05T14:16:07Z",
+      "wm-id": 1777394,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "esmevane, sorry",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/0edcf08a793c19d444a581bf9f9ee9c9f2a55e257fb03b8d45c25a7a3c64511c.png",
+        "url": "https://mastodon.esmevane.com/@ironchamber"
+      },
+      "url": "https://front-end.social/@rem/111879160056089655#favorited-by-109316421269806073",
+      "published": null,
+      "wm-received": "2024-02-05T14:16:06Z",
+      "wm-id": 1777392,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111879160056089655/109316421269806073",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-04T19:23:15Z",
+      "wm-id": 1777128,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James Veitch",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/42c56cd4ccf5b95804047d94ef3dc5378b6db01a5ba285c5d2b4b25480b4ada0.jpg",
+        "url": "https://mastodon.social/@veitch"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109760529972382547",
+      "published": null,
+      "wm-received": "2024-02-04T18:23:40Z",
+      "wm-id": 1777102,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109760529972382547",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gareth Jones ➡️ TFNation 2023",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d066a32657d12a70df62cd2e66af5d7b09bc2ac8a37023cba50c8680faa342f1.jpg",
+        "url": "https://mastodon.social/@4foot30"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109298968178578026",
+      "published": null,
+      "wm-received": "2024-02-04T15:29:26Z",
+      "wm-id": 1777025,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109298968178578026",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oiva Eskola",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d8cf551e57a08143048642a845fe87badfbf793c533610e17d68fd64883f388f.png",
+        "url": "https://toot.community/@oivaeskola"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109308249224430866",
+      "published": null,
+      "wm-received": "2024-02-04T15:29:26Z",
+      "wm-id": 1777026,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109308249224430866",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jon Hicks",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6f0a0adb7f508022af3b006df5f5725c0053a258e6a9549c061b60a9d7db82bf.jpg",
+        "url": "https://mastodon.social/@jonhicks"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109294613077242379",
+      "published": null,
+      "wm-received": "2024-02-04T13:54:50Z",
+      "wm-id": 1776981,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109294613077242379",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Raphael",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e61b90a0d9c7d2029f32839258d78571118e5fd03b8dea8884476687205e601a.jpg",
+        "url": "https://mastodon.sdf.org/@raphael"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109399096001946425",
+      "published": null,
+      "wm-received": "2024-02-04T12:28:21Z",
+      "wm-id": 1776946,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109399096001946425",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111873040660627437#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-02-04T12:28:18Z",
+      "wm-id": 1776943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111873040660627437/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "the-doggie-loggie": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Georgimus Prime",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5a8e50f97a10f2ac782ac06d3f95f04c5e56d16764b3b3f6b05504e0eb119438.jpg",
+        "url": "https://mastodon.social/@georgeeyong"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109426685647076359",
+      "published": null,
+      "wm-received": "2024-01-13T11:05:59Z",
+      "wm-id": 1766673,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109426685647076359",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ayo Ayco",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/2ed050d5216d8b490f5c473bf400500be2e70a50066f80490bc4ad4c90a3b7cb.jpg",
+        "url": "https://social.ayco.io/@ayo"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109548151054863448",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:19Z",
+      "wm-id": 1766525,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109548151054863448",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:15Z",
+      "wm-id": 1766523,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Shannon Prickett",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/0794731831549c3f2ed016d07abe797e4840ca97ae0b5816aba9c3bf28694ec6.jpg",
+        "url": "https://petrous.vislae.town/@Binder"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109289336415988625",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:15Z",
+      "wm-id": 1766524,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109289336415988625",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Georgimus Prime",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5a8e50f97a10f2ac782ac06d3f95f04c5e56d16764b3b3f6b05504e0eb119438.jpg",
+        "url": "https://mastodon.social/@georgeeyong"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109426685647076359",
+      "published": null,
+      "wm-received": "2024-01-13T11:05:59Z",
+      "wm-id": 1766673,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109426685647076359",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ayo Ayco",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/2ed050d5216d8b490f5c473bf400500be2e70a50066f80490bc4ad4c90a3b7cb.jpg",
+        "url": "https://social.ayco.io/@ayo"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109548151054863448",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:19Z",
+      "wm-id": 1766525,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109548151054863448",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:15Z",
+      "wm-id": 1766523,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Shannon Prickett",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/0794731831549c3f2ed016d07abe797e4840ca97ae0b5816aba9c3bf28694ec6.jpg",
+        "url": "https://petrous.vislae.town/@Binder"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109289336415988625",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:15Z",
+      "wm-id": 1766524,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109289336415988625",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Georgimus Prime",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5a8e50f97a10f2ac782ac06d3f95f04c5e56d16764b3b3f6b05504e0eb119438.jpg",
+        "url": "https://mastodon.social/@georgeeyong"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109426685647076359",
+      "published": null,
+      "wm-received": "2024-01-13T11:05:59Z",
+      "wm-id": 1766673,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109426685647076359",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ayo Ayco",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/2ed050d5216d8b490f5c473bf400500be2e70a50066f80490bc4ad4c90a3b7cb.jpg",
+        "url": "https://social.ayco.io/@ayo"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109548151054863448",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:19Z",
+      "wm-id": 1766525,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109548151054863448",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:15Z",
+      "wm-id": 1766523,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Shannon Prickett",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/0794731831549c3f2ed016d07abe797e4840ca97ae0b5816aba9c3bf28694ec6.jpg",
+        "url": "https://petrous.vislae.town/@Binder"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109289336415988625",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:15Z",
+      "wm-id": 1766524,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109289336415988625",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Georgimus Prime",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5a8e50f97a10f2ac782ac06d3f95f04c5e56d16764b3b3f6b05504e0eb119438.jpg",
+        "url": "https://mastodon.social/@georgeeyong"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109426685647076359",
+      "published": null,
+      "wm-received": "2024-01-13T11:05:59Z",
+      "wm-id": 1766673,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109426685647076359",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ayo Ayco",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/2ed050d5216d8b490f5c473bf400500be2e70a50066f80490bc4ad4c90a3b7cb.jpg",
+        "url": "https://social.ayco.io/@ayo"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109548151054863448",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:19Z",
+      "wm-id": 1766525,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109548151054863448",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:15Z",
+      "wm-id": 1766523,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Shannon Prickett",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/0794731831549c3f2ed016d07abe797e4840ca97ae0b5816aba9c3bf28694ec6.jpg",
+        "url": "https://petrous.vislae.town/@Binder"
+      },
+      "url": "https://front-end.social/@rem/111744041837371973#favorited-by-109289336415988625",
+      "published": null,
+      "wm-received": "2024-01-12T20:26:15Z",
+      "wm-id": 1766524,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111744041837371973/109289336415988625",
+      "wm-target": "https://remysharp.com/2024/01/11/the-doggie-loggie",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/01/11/the-doggie-loggie",
       "wm-property": "like-of",
       "wm-private": false
     }

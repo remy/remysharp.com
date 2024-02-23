@@ -2,7 +2,7 @@
 title: 'About the LoRes layer 1,0 [spectrum]'
 date: 2020-09-18
 tags:
-  - spectrum
+  - retro
 ---
 
 For the most part I use layer 2 (L2) for my projects on the Spectrum Next, so when I wanted to start incorporating layer 1 (L1) there were some surprises waiting for me.

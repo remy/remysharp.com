@@ -1,5 +1,33 @@
 [
   {
+    "title": "Yellowface",
+    "author": "R.F. Kuang",
+    "published": 2023,
+    "pages": 326,
+    "goodreads": "https://www.goodreads.com/book/show/62966998-yellowface",
+    "goodreads_id": 62966998,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1671436074l/62966998._SX315_.jpg",
+    "read": "2024-02-08T00:00:00.000Z",
+    "start": "2024-01-25T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2024/yellowface.md",
+    "slug": "yellowface"
+  },
+  {
+    "title": "Anxious People",
+    "author": "Fredrik Backman",
+    "published": 2019,
+    "pages": 352,
+    "goodreads": "https://www.goodreads.com/book/show/50272752-anxious-people",
+    "goodreads_id": 50272752,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1620425700l/50272752._SX315_.jpg",
+    "read": "2024-01-24T00:00:00.000Z",
+    "start": "2024-01-06T00:00:00.000Z",
+    "rating": 5,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2024/anxious-people.md",
+    "slug": "anxious-people"
+  },
+  {
     "title": "Born to be Mild: Adventures for the Anxious",
     "author": "Rob Temple",
     "published": null,
@@ -1413,6 +1441,20 @@
     "rating": 5,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2019/i-had-a-black-dog.md",
     "slug": "i-had-a-black-dog"
+  },
+  {
+    "title": "I Had a Black Dog: His Name Was Depression",
+    "author": "Matthew Johnstone",
+    "published": 2005,
+    "pages": 48,
+    "goodreads": "https://www.goodreads.com/book/show/1005996.I_Had_a_Black_Dog",
+    "goodreads_id": 1005996,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356728555l/1005996._SX50_.jpg",
+    "read": "2019-05-02T00:00:00.000Z",
+    "start": "2019-05-02T00:00:00.000Z",
+    "rating": 5,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2019/i-had-a-black-dog-his-name-was-depression.md",
+    "slug": "i-had-a-black-dog-his-name-was-depression"
   },
   {
     "title": "Fahrenheit 451",
