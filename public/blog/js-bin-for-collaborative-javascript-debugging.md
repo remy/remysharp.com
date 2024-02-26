@@ -56,3 +56,5 @@ I've recorded a couple of screencasts showing how it can be used:
 ## Feedback
 
 If anyone has suggestions, feedback, bugs, etc - please let me know!
+
+_Also announced [on Ajaxian](https://web.archive.org/web/20081012014354/http://ajaxian.com/archives/an-interest-twist-on-a-pastebin)_
