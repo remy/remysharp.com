@@ -49984,5 +49984,3237 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "why-my-code-isnt-in-typescript": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "atotic",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://sfba.social/@atotic"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109376991840466163",
+      "published": null,
+      "wm-received": "2024-02-24T23:16:57Z",
+      "wm-id": 1785161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109376991840466163",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109287751678680224",
+      "published": null,
+      "wm-received": "2024-02-24T14:40:05Z",
+      "wm-id": 1785030,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109287751678680224",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/03fc22b439aa4125d96bff800510eefdcdaef2dd232dee7902ddae88e87475a1.jpg",
+        "url": "https://indieweb.social/@Terreii"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294283399285026",
+      "published": null,
+      "wm-received": "2024-02-24T12:06:31Z",
+      "wm-id": 1784978,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294283399285026",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2024-02-24T11:37:12Z",
+      "wm-id": 1784975,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109312840969263891",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Severien",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/79375d985376e4dcb2c41dd709b1f6ce5f82b918ecbbb4f4a58cc97c961cecca.jpg",
+        "url": "https://mastodon.social/@timsev"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294894958528236",
+      "published": null,
+      "wm-received": "2024-02-24T09:09:36Z",
+      "wm-id": 1784943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294894958528236",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Gourlay",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/70e4700f40b01901e751604e11b58053edfc4ac4f4a6e10cdbeecdd94041c927.jpg",
+        "url": "https://bne.social/@colingourlay"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109306625420888333",
+      "published": null,
+      "wm-received": "2024-02-24T01:11:52Z",
+      "wm-id": 1784856,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109306625420888333",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "welt",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c9279880977a112314ce18bfefd551b87b7060022b50da0182a19b663c5799be.png",
+        "url": "https://indieweb.social/@welt"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109296262343938119",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:01Z",
+      "wm-id": 1784813,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109296262343938119",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Fløe",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f5b0c5099663cdf146ff254dee31c5ed098aee97f9cd9d432b40fa47787a6197.png",
+        "url": "https://mastodon.social/@phloe"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109326097897405253",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:00Z",
+      "wm-id": 1784812,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109326097897405253",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Repeter wants an Ukr victory",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/51301d02b6efaac439809864f76d74d5daef13f624ee3eeb693ebc4587e95901.jpg",
+        "url": "https://techhub.social/@psvensson"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109428331856496770",
+      "published": null,
+      "wm-received": "2024-02-23T17:14:47Z",
+      "wm-id": 1784769,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109428331856496770",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-23T16:45:56Z",
+      "wm-id": 1784763,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mamday",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f7d1d7068aa619ea0de8eb5589ae7829a55fa8d5f0bdb6f8dca211e03bd2dc51.jpg",
+        "url": "https://kolektiva.social/@mamday"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109331233136047965",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:07Z",
+      "wm-id": 1784748,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109331233136047965",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Digital Gub ????️‍????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4935f91ba31fdfa16071ace345335e9fda4422f93bd86f89a80029d59875caa9.jpg",
+        "url": "https://bne.social/@ash"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288395437108489",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:06Z",
+      "wm-id": 1784747,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288395437108489",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:05Z",
+      "wm-id": 1784746,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "zxm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/97faa9814dd0464af01bb2c1e00eb0403e6875977f5fdf2ee80a43376292472c.jpg",
+        "url": "https://mastodon.ie/@zxm"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109372102572992937",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:04Z",
+      "wm-id": 1784745,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109372102572992937",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:02Z",
+      "wm-id": 1784744,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109363548648925264",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lou Cyx",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/81723b83b8237919834bd614a311344b23fb424f36873c97fc6e2e0ab0c6e757.png",
+        "url": "https://mastodon.social/@loucyx"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-111269832041749760",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:01Z",
+      "wm-id": 1784743,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/111269832041749760",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2024-02-23T16:18:59Z",
+      "wm-id": 1784742,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109338564602223384",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "atotic",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://sfba.social/@atotic"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109376991840466163",
+      "published": null,
+      "wm-received": "2024-02-24T23:16:57Z",
+      "wm-id": 1785161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109376991840466163",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109287751678680224",
+      "published": null,
+      "wm-received": "2024-02-24T14:40:05Z",
+      "wm-id": 1785030,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109287751678680224",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/03fc22b439aa4125d96bff800510eefdcdaef2dd232dee7902ddae88e87475a1.jpg",
+        "url": "https://indieweb.social/@Terreii"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294283399285026",
+      "published": null,
+      "wm-received": "2024-02-24T12:06:31Z",
+      "wm-id": 1784978,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294283399285026",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2024-02-24T11:37:12Z",
+      "wm-id": 1784975,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109312840969263891",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Severien",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/79375d985376e4dcb2c41dd709b1f6ce5f82b918ecbbb4f4a58cc97c961cecca.jpg",
+        "url": "https://mastodon.social/@timsev"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294894958528236",
+      "published": null,
+      "wm-received": "2024-02-24T09:09:36Z",
+      "wm-id": 1784943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294894958528236",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Gourlay",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/70e4700f40b01901e751604e11b58053edfc4ac4f4a6e10cdbeecdd94041c927.jpg",
+        "url": "https://bne.social/@colingourlay"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109306625420888333",
+      "published": null,
+      "wm-received": "2024-02-24T01:11:52Z",
+      "wm-id": 1784856,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109306625420888333",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "welt",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c9279880977a112314ce18bfefd551b87b7060022b50da0182a19b663c5799be.png",
+        "url": "https://indieweb.social/@welt"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109296262343938119",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:01Z",
+      "wm-id": 1784813,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109296262343938119",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Fløe",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f5b0c5099663cdf146ff254dee31c5ed098aee97f9cd9d432b40fa47787a6197.png",
+        "url": "https://mastodon.social/@phloe"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109326097897405253",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:00Z",
+      "wm-id": 1784812,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109326097897405253",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Repeter wants an Ukr victory",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/51301d02b6efaac439809864f76d74d5daef13f624ee3eeb693ebc4587e95901.jpg",
+        "url": "https://techhub.social/@psvensson"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109428331856496770",
+      "published": null,
+      "wm-received": "2024-02-23T17:14:47Z",
+      "wm-id": 1784769,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109428331856496770",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-23T16:45:56Z",
+      "wm-id": 1784763,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mamday",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f7d1d7068aa619ea0de8eb5589ae7829a55fa8d5f0bdb6f8dca211e03bd2dc51.jpg",
+        "url": "https://kolektiva.social/@mamday"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109331233136047965",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:07Z",
+      "wm-id": 1784748,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109331233136047965",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Digital Gub ????️‍????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4935f91ba31fdfa16071ace345335e9fda4422f93bd86f89a80029d59875caa9.jpg",
+        "url": "https://bne.social/@ash"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288395437108489",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:06Z",
+      "wm-id": 1784747,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288395437108489",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:05Z",
+      "wm-id": 1784746,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "zxm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/97faa9814dd0464af01bb2c1e00eb0403e6875977f5fdf2ee80a43376292472c.jpg",
+        "url": "https://mastodon.ie/@zxm"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109372102572992937",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:04Z",
+      "wm-id": 1784745,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109372102572992937",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:02Z",
+      "wm-id": 1784744,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109363548648925264",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lou Cyx",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/81723b83b8237919834bd614a311344b23fb424f36873c97fc6e2e0ab0c6e757.png",
+        "url": "https://mastodon.social/@loucyx"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-111269832041749760",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:01Z",
+      "wm-id": 1784743,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/111269832041749760",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2024-02-23T16:18:59Z",
+      "wm-id": 1784742,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109338564602223384",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "atotic",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://sfba.social/@atotic"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109376991840466163",
+      "published": null,
+      "wm-received": "2024-02-24T23:16:57Z",
+      "wm-id": 1785161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109376991840466163",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109287751678680224",
+      "published": null,
+      "wm-received": "2024-02-24T14:40:05Z",
+      "wm-id": 1785030,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109287751678680224",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/03fc22b439aa4125d96bff800510eefdcdaef2dd232dee7902ddae88e87475a1.jpg",
+        "url": "https://indieweb.social/@Terreii"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294283399285026",
+      "published": null,
+      "wm-received": "2024-02-24T12:06:31Z",
+      "wm-id": 1784978,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294283399285026",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2024-02-24T11:37:12Z",
+      "wm-id": 1784975,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109312840969263891",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Severien",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/79375d985376e4dcb2c41dd709b1f6ce5f82b918ecbbb4f4a58cc97c961cecca.jpg",
+        "url": "https://mastodon.social/@timsev"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294894958528236",
+      "published": null,
+      "wm-received": "2024-02-24T09:09:36Z",
+      "wm-id": 1784943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294894958528236",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Gourlay",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/70e4700f40b01901e751604e11b58053edfc4ac4f4a6e10cdbeecdd94041c927.jpg",
+        "url": "https://bne.social/@colingourlay"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109306625420888333",
+      "published": null,
+      "wm-received": "2024-02-24T01:11:52Z",
+      "wm-id": 1784856,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109306625420888333",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "welt",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c9279880977a112314ce18bfefd551b87b7060022b50da0182a19b663c5799be.png",
+        "url": "https://indieweb.social/@welt"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109296262343938119",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:01Z",
+      "wm-id": 1784813,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109296262343938119",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Fløe",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f5b0c5099663cdf146ff254dee31c5ed098aee97f9cd9d432b40fa47787a6197.png",
+        "url": "https://mastodon.social/@phloe"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109326097897405253",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:00Z",
+      "wm-id": 1784812,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109326097897405253",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Repeter wants an Ukr victory",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/51301d02b6efaac439809864f76d74d5daef13f624ee3eeb693ebc4587e95901.jpg",
+        "url": "https://techhub.social/@psvensson"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109428331856496770",
+      "published": null,
+      "wm-received": "2024-02-23T17:14:47Z",
+      "wm-id": 1784769,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109428331856496770",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-23T16:45:56Z",
+      "wm-id": 1784763,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mamday",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f7d1d7068aa619ea0de8eb5589ae7829a55fa8d5f0bdb6f8dca211e03bd2dc51.jpg",
+        "url": "https://kolektiva.social/@mamday"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109331233136047965",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:07Z",
+      "wm-id": 1784748,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109331233136047965",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Digital Gub ????️‍????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4935f91ba31fdfa16071ace345335e9fda4422f93bd86f89a80029d59875caa9.jpg",
+        "url": "https://bne.social/@ash"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288395437108489",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:06Z",
+      "wm-id": 1784747,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288395437108489",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:05Z",
+      "wm-id": 1784746,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "zxm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/97faa9814dd0464af01bb2c1e00eb0403e6875977f5fdf2ee80a43376292472c.jpg",
+        "url": "https://mastodon.ie/@zxm"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109372102572992937",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:04Z",
+      "wm-id": 1784745,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109372102572992937",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:02Z",
+      "wm-id": 1784744,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109363548648925264",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lou Cyx",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/81723b83b8237919834bd614a311344b23fb424f36873c97fc6e2e0ab0c6e757.png",
+        "url": "https://mastodon.social/@loucyx"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-111269832041749760",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:01Z",
+      "wm-id": 1784743,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/111269832041749760",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2024-02-23T16:18:59Z",
+      "wm-id": 1784742,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109338564602223384",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "atotic",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://sfba.social/@atotic"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109376991840466163",
+      "published": null,
+      "wm-received": "2024-02-24T23:16:57Z",
+      "wm-id": 1785161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109376991840466163",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109287751678680224",
+      "published": null,
+      "wm-received": "2024-02-24T14:40:05Z",
+      "wm-id": 1785030,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109287751678680224",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/03fc22b439aa4125d96bff800510eefdcdaef2dd232dee7902ddae88e87475a1.jpg",
+        "url": "https://indieweb.social/@Terreii"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294283399285026",
+      "published": null,
+      "wm-received": "2024-02-24T12:06:31Z",
+      "wm-id": 1784978,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294283399285026",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2024-02-24T11:37:12Z",
+      "wm-id": 1784975,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109312840969263891",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Severien",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/79375d985376e4dcb2c41dd709b1f6ce5f82b918ecbbb4f4a58cc97c961cecca.jpg",
+        "url": "https://mastodon.social/@timsev"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294894958528236",
+      "published": null,
+      "wm-received": "2024-02-24T09:09:36Z",
+      "wm-id": 1784943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294894958528236",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Gourlay",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/70e4700f40b01901e751604e11b58053edfc4ac4f4a6e10cdbeecdd94041c927.jpg",
+        "url": "https://bne.social/@colingourlay"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109306625420888333",
+      "published": null,
+      "wm-received": "2024-02-24T01:11:52Z",
+      "wm-id": 1784856,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109306625420888333",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "welt",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c9279880977a112314ce18bfefd551b87b7060022b50da0182a19b663c5799be.png",
+        "url": "https://indieweb.social/@welt"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109296262343938119",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:01Z",
+      "wm-id": 1784813,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109296262343938119",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Fløe",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f5b0c5099663cdf146ff254dee31c5ed098aee97f9cd9d432b40fa47787a6197.png",
+        "url": "https://mastodon.social/@phloe"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109326097897405253",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:00Z",
+      "wm-id": 1784812,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109326097897405253",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Repeter wants an Ukr victory",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/51301d02b6efaac439809864f76d74d5daef13f624ee3eeb693ebc4587e95901.jpg",
+        "url": "https://techhub.social/@psvensson"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109428331856496770",
+      "published": null,
+      "wm-received": "2024-02-23T17:14:47Z",
+      "wm-id": 1784769,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109428331856496770",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-23T16:45:56Z",
+      "wm-id": 1784763,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mamday",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f7d1d7068aa619ea0de8eb5589ae7829a55fa8d5f0bdb6f8dca211e03bd2dc51.jpg",
+        "url": "https://kolektiva.social/@mamday"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109331233136047965",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:07Z",
+      "wm-id": 1784748,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109331233136047965",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Digital Gub ????️‍????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4935f91ba31fdfa16071ace345335e9fda4422f93bd86f89a80029d59875caa9.jpg",
+        "url": "https://bne.social/@ash"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288395437108489",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:06Z",
+      "wm-id": 1784747,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288395437108489",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:05Z",
+      "wm-id": 1784746,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "zxm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/97faa9814dd0464af01bb2c1e00eb0403e6875977f5fdf2ee80a43376292472c.jpg",
+        "url": "https://mastodon.ie/@zxm"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109372102572992937",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:04Z",
+      "wm-id": 1784745,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109372102572992937",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:02Z",
+      "wm-id": 1784744,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109363548648925264",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lou Cyx",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/81723b83b8237919834bd614a311344b23fb424f36873c97fc6e2e0ab0c6e757.png",
+        "url": "https://mastodon.social/@loucyx"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-111269832041749760",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:01Z",
+      "wm-id": 1784743,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/111269832041749760",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2024-02-23T16:18:59Z",
+      "wm-id": 1784742,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109338564602223384",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "atotic",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://sfba.social/@atotic"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109376991840466163",
+      "published": null,
+      "wm-received": "2024-02-24T23:16:57Z",
+      "wm-id": 1785161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109376991840466163",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109287751678680224",
+      "published": null,
+      "wm-received": "2024-02-24T14:40:05Z",
+      "wm-id": 1785030,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109287751678680224",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/03fc22b439aa4125d96bff800510eefdcdaef2dd232dee7902ddae88e87475a1.jpg",
+        "url": "https://indieweb.social/@Terreii"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294283399285026",
+      "published": null,
+      "wm-received": "2024-02-24T12:06:31Z",
+      "wm-id": 1784978,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294283399285026",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2024-02-24T11:37:12Z",
+      "wm-id": 1784975,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109312840969263891",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Severien",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/79375d985376e4dcb2c41dd709b1f6ce5f82b918ecbbb4f4a58cc97c961cecca.jpg",
+        "url": "https://mastodon.social/@timsev"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294894958528236",
+      "published": null,
+      "wm-received": "2024-02-24T09:09:36Z",
+      "wm-id": 1784943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294894958528236",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Gourlay",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/70e4700f40b01901e751604e11b58053edfc4ac4f4a6e10cdbeecdd94041c927.jpg",
+        "url": "https://bne.social/@colingourlay"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109306625420888333",
+      "published": null,
+      "wm-received": "2024-02-24T01:11:52Z",
+      "wm-id": 1784856,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109306625420888333",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "welt",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c9279880977a112314ce18bfefd551b87b7060022b50da0182a19b663c5799be.png",
+        "url": "https://indieweb.social/@welt"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109296262343938119",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:01Z",
+      "wm-id": 1784813,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109296262343938119",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Fløe",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f5b0c5099663cdf146ff254dee31c5ed098aee97f9cd9d432b40fa47787a6197.png",
+        "url": "https://mastodon.social/@phloe"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109326097897405253",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:00Z",
+      "wm-id": 1784812,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109326097897405253",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Repeter wants an Ukr victory",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/51301d02b6efaac439809864f76d74d5daef13f624ee3eeb693ebc4587e95901.jpg",
+        "url": "https://techhub.social/@psvensson"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109428331856496770",
+      "published": null,
+      "wm-received": "2024-02-23T17:14:47Z",
+      "wm-id": 1784769,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109428331856496770",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-23T16:45:56Z",
+      "wm-id": 1784763,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mamday",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f7d1d7068aa619ea0de8eb5589ae7829a55fa8d5f0bdb6f8dca211e03bd2dc51.jpg",
+        "url": "https://kolektiva.social/@mamday"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109331233136047965",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:07Z",
+      "wm-id": 1784748,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109331233136047965",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Digital Gub ????️‍????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4935f91ba31fdfa16071ace345335e9fda4422f93bd86f89a80029d59875caa9.jpg",
+        "url": "https://bne.social/@ash"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288395437108489",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:06Z",
+      "wm-id": 1784747,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288395437108489",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:05Z",
+      "wm-id": 1784746,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "zxm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/97faa9814dd0464af01bb2c1e00eb0403e6875977f5fdf2ee80a43376292472c.jpg",
+        "url": "https://mastodon.ie/@zxm"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109372102572992937",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:04Z",
+      "wm-id": 1784745,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109372102572992937",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:02Z",
+      "wm-id": 1784744,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109363548648925264",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lou Cyx",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/81723b83b8237919834bd614a311344b23fb424f36873c97fc6e2e0ab0c6e757.png",
+        "url": "https://mastodon.social/@loucyx"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-111269832041749760",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:01Z",
+      "wm-id": 1784743,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/111269832041749760",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2024-02-23T16:18:59Z",
+      "wm-id": 1784742,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109338564602223384",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "atotic",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://sfba.social/@atotic"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109376991840466163",
+      "published": null,
+      "wm-received": "2024-02-24T23:16:57Z",
+      "wm-id": 1785161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109376991840466163",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109287751678680224",
+      "published": null,
+      "wm-received": "2024-02-24T14:40:05Z",
+      "wm-id": 1785030,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109287751678680224",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/03fc22b439aa4125d96bff800510eefdcdaef2dd232dee7902ddae88e87475a1.jpg",
+        "url": "https://indieweb.social/@Terreii"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294283399285026",
+      "published": null,
+      "wm-received": "2024-02-24T12:06:31Z",
+      "wm-id": 1784978,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294283399285026",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2024-02-24T11:37:12Z",
+      "wm-id": 1784975,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109312840969263891",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Severien",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/79375d985376e4dcb2c41dd709b1f6ce5f82b918ecbbb4f4a58cc97c961cecca.jpg",
+        "url": "https://mastodon.social/@timsev"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294894958528236",
+      "published": null,
+      "wm-received": "2024-02-24T09:09:36Z",
+      "wm-id": 1784943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294894958528236",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Gourlay",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/70e4700f40b01901e751604e11b58053edfc4ac4f4a6e10cdbeecdd94041c927.jpg",
+        "url": "https://bne.social/@colingourlay"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109306625420888333",
+      "published": null,
+      "wm-received": "2024-02-24T01:11:52Z",
+      "wm-id": 1784856,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109306625420888333",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "welt",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c9279880977a112314ce18bfefd551b87b7060022b50da0182a19b663c5799be.png",
+        "url": "https://indieweb.social/@welt"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109296262343938119",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:01Z",
+      "wm-id": 1784813,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109296262343938119",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Fløe",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f5b0c5099663cdf146ff254dee31c5ed098aee97f9cd9d432b40fa47787a6197.png",
+        "url": "https://mastodon.social/@phloe"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109326097897405253",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:00Z",
+      "wm-id": 1784812,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109326097897405253",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Repeter wants an Ukr victory",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/51301d02b6efaac439809864f76d74d5daef13f624ee3eeb693ebc4587e95901.jpg",
+        "url": "https://techhub.social/@psvensson"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109428331856496770",
+      "published": null,
+      "wm-received": "2024-02-23T17:14:47Z",
+      "wm-id": 1784769,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109428331856496770",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-23T16:45:56Z",
+      "wm-id": 1784763,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mamday",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f7d1d7068aa619ea0de8eb5589ae7829a55fa8d5f0bdb6f8dca211e03bd2dc51.jpg",
+        "url": "https://kolektiva.social/@mamday"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109331233136047965",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:07Z",
+      "wm-id": 1784748,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109331233136047965",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Digital Gub ????️‍????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4935f91ba31fdfa16071ace345335e9fda4422f93bd86f89a80029d59875caa9.jpg",
+        "url": "https://bne.social/@ash"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288395437108489",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:06Z",
+      "wm-id": 1784747,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288395437108489",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:05Z",
+      "wm-id": 1784746,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "zxm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/97faa9814dd0464af01bb2c1e00eb0403e6875977f5fdf2ee80a43376292472c.jpg",
+        "url": "https://mastodon.ie/@zxm"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109372102572992937",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:04Z",
+      "wm-id": 1784745,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109372102572992937",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:02Z",
+      "wm-id": 1784744,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109363548648925264",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lou Cyx",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/81723b83b8237919834bd614a311344b23fb424f36873c97fc6e2e0ab0c6e757.png",
+        "url": "https://mastodon.social/@loucyx"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-111269832041749760",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:01Z",
+      "wm-id": 1784743,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/111269832041749760",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2024-02-23T16:18:59Z",
+      "wm-id": 1784742,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109338564602223384",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "atotic",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://sfba.social/@atotic"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109376991840466163",
+      "published": null,
+      "wm-received": "2024-02-24T23:16:57Z",
+      "wm-id": 1785161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109376991840466163",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109287751678680224",
+      "published": null,
+      "wm-received": "2024-02-24T14:40:05Z",
+      "wm-id": 1785030,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109287751678680224",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/03fc22b439aa4125d96bff800510eefdcdaef2dd232dee7902ddae88e87475a1.jpg",
+        "url": "https://indieweb.social/@Terreii"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294283399285026",
+      "published": null,
+      "wm-received": "2024-02-24T12:06:31Z",
+      "wm-id": 1784978,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294283399285026",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2024-02-24T11:37:12Z",
+      "wm-id": 1784975,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109312840969263891",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Severien",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/79375d985376e4dcb2c41dd709b1f6ce5f82b918ecbbb4f4a58cc97c961cecca.jpg",
+        "url": "https://mastodon.social/@timsev"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294894958528236",
+      "published": null,
+      "wm-received": "2024-02-24T09:09:36Z",
+      "wm-id": 1784943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294894958528236",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Gourlay",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/70e4700f40b01901e751604e11b58053edfc4ac4f4a6e10cdbeecdd94041c927.jpg",
+        "url": "https://bne.social/@colingourlay"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109306625420888333",
+      "published": null,
+      "wm-received": "2024-02-24T01:11:52Z",
+      "wm-id": 1784856,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109306625420888333",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "welt",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c9279880977a112314ce18bfefd551b87b7060022b50da0182a19b663c5799be.png",
+        "url": "https://indieweb.social/@welt"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109296262343938119",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:01Z",
+      "wm-id": 1784813,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109296262343938119",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Fløe",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f5b0c5099663cdf146ff254dee31c5ed098aee97f9cd9d432b40fa47787a6197.png",
+        "url": "https://mastodon.social/@phloe"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109326097897405253",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:00Z",
+      "wm-id": 1784812,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109326097897405253",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Repeter wants an Ukr victory",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/51301d02b6efaac439809864f76d74d5daef13f624ee3eeb693ebc4587e95901.jpg",
+        "url": "https://techhub.social/@psvensson"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109428331856496770",
+      "published": null,
+      "wm-received": "2024-02-23T17:14:47Z",
+      "wm-id": 1784769,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109428331856496770",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-23T16:45:56Z",
+      "wm-id": 1784763,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mamday",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f7d1d7068aa619ea0de8eb5589ae7829a55fa8d5f0bdb6f8dca211e03bd2dc51.jpg",
+        "url": "https://kolektiva.social/@mamday"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109331233136047965",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:07Z",
+      "wm-id": 1784748,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109331233136047965",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Digital Gub ????️‍????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4935f91ba31fdfa16071ace345335e9fda4422f93bd86f89a80029d59875caa9.jpg",
+        "url": "https://bne.social/@ash"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288395437108489",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:06Z",
+      "wm-id": 1784747,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288395437108489",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:05Z",
+      "wm-id": 1784746,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "zxm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/97faa9814dd0464af01bb2c1e00eb0403e6875977f5fdf2ee80a43376292472c.jpg",
+        "url": "https://mastodon.ie/@zxm"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109372102572992937",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:04Z",
+      "wm-id": 1784745,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109372102572992937",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:02Z",
+      "wm-id": 1784744,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109363548648925264",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lou Cyx",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/81723b83b8237919834bd614a311344b23fb424f36873c97fc6e2e0ab0c6e757.png",
+        "url": "https://mastodon.social/@loucyx"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-111269832041749760",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:01Z",
+      "wm-id": 1784743,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/111269832041749760",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2024-02-23T16:18:59Z",
+      "wm-id": 1784742,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109338564602223384",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "atotic",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://sfba.social/@atotic"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109376991840466163",
+      "published": null,
+      "wm-received": "2024-02-24T23:16:57Z",
+      "wm-id": 1785161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109376991840466163",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109287751678680224",
+      "published": null,
+      "wm-received": "2024-02-24T14:40:05Z",
+      "wm-id": 1785030,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109287751678680224",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/03fc22b439aa4125d96bff800510eefdcdaef2dd232dee7902ddae88e87475a1.jpg",
+        "url": "https://indieweb.social/@Terreii"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294283399285026",
+      "published": null,
+      "wm-received": "2024-02-24T12:06:31Z",
+      "wm-id": 1784978,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294283399285026",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2024-02-24T11:37:12Z",
+      "wm-id": 1784975,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109312840969263891",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Severien",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/79375d985376e4dcb2c41dd709b1f6ce5f82b918ecbbb4f4a58cc97c961cecca.jpg",
+        "url": "https://mastodon.social/@timsev"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294894958528236",
+      "published": null,
+      "wm-received": "2024-02-24T09:09:36Z",
+      "wm-id": 1784943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294894958528236",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Gourlay",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/70e4700f40b01901e751604e11b58053edfc4ac4f4a6e10cdbeecdd94041c927.jpg",
+        "url": "https://bne.social/@colingourlay"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109306625420888333",
+      "published": null,
+      "wm-received": "2024-02-24T01:11:52Z",
+      "wm-id": 1784856,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109306625420888333",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "welt",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c9279880977a112314ce18bfefd551b87b7060022b50da0182a19b663c5799be.png",
+        "url": "https://indieweb.social/@welt"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109296262343938119",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:01Z",
+      "wm-id": 1784813,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109296262343938119",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Fløe",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f5b0c5099663cdf146ff254dee31c5ed098aee97f9cd9d432b40fa47787a6197.png",
+        "url": "https://mastodon.social/@phloe"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109326097897405253",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:00Z",
+      "wm-id": 1784812,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109326097897405253",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Repeter wants an Ukr victory",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/51301d02b6efaac439809864f76d74d5daef13f624ee3eeb693ebc4587e95901.jpg",
+        "url": "https://techhub.social/@psvensson"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109428331856496770",
+      "published": null,
+      "wm-received": "2024-02-23T17:14:47Z",
+      "wm-id": 1784769,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109428331856496770",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-23T16:45:56Z",
+      "wm-id": 1784763,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mamday",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f7d1d7068aa619ea0de8eb5589ae7829a55fa8d5f0bdb6f8dca211e03bd2dc51.jpg",
+        "url": "https://kolektiva.social/@mamday"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109331233136047965",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:07Z",
+      "wm-id": 1784748,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109331233136047965",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Digital Gub ????️‍????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4935f91ba31fdfa16071ace345335e9fda4422f93bd86f89a80029d59875caa9.jpg",
+        "url": "https://bne.social/@ash"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288395437108489",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:06Z",
+      "wm-id": 1784747,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288395437108489",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:05Z",
+      "wm-id": 1784746,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "zxm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/97faa9814dd0464af01bb2c1e00eb0403e6875977f5fdf2ee80a43376292472c.jpg",
+        "url": "https://mastodon.ie/@zxm"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109372102572992937",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:04Z",
+      "wm-id": 1784745,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109372102572992937",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:02Z",
+      "wm-id": 1784744,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109363548648925264",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lou Cyx",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/81723b83b8237919834bd614a311344b23fb424f36873c97fc6e2e0ab0c6e757.png",
+        "url": "https://mastodon.social/@loucyx"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-111269832041749760",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:01Z",
+      "wm-id": 1784743,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/111269832041749760",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2024-02-23T16:18:59Z",
+      "wm-id": 1784742,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109338564602223384",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "atotic",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://sfba.social/@atotic"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109376991840466163",
+      "published": null,
+      "wm-received": "2024-02-24T23:16:57Z",
+      "wm-id": 1785161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109376991840466163",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109287751678680224",
+      "published": null,
+      "wm-received": "2024-02-24T14:40:05Z",
+      "wm-id": 1785030,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109287751678680224",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/03fc22b439aa4125d96bff800510eefdcdaef2dd232dee7902ddae88e87475a1.jpg",
+        "url": "https://indieweb.social/@Terreii"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294283399285026",
+      "published": null,
+      "wm-received": "2024-02-24T12:06:31Z",
+      "wm-id": 1784978,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294283399285026",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2024-02-24T11:37:12Z",
+      "wm-id": 1784975,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109312840969263891",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Severien",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/79375d985376e4dcb2c41dd709b1f6ce5f82b918ecbbb4f4a58cc97c961cecca.jpg",
+        "url": "https://mastodon.social/@timsev"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294894958528236",
+      "published": null,
+      "wm-received": "2024-02-24T09:09:36Z",
+      "wm-id": 1784943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294894958528236",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Gourlay",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/70e4700f40b01901e751604e11b58053edfc4ac4f4a6e10cdbeecdd94041c927.jpg",
+        "url": "https://bne.social/@colingourlay"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109306625420888333",
+      "published": null,
+      "wm-received": "2024-02-24T01:11:52Z",
+      "wm-id": 1784856,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109306625420888333",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "welt",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c9279880977a112314ce18bfefd551b87b7060022b50da0182a19b663c5799be.png",
+        "url": "https://indieweb.social/@welt"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109296262343938119",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:01Z",
+      "wm-id": 1784813,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109296262343938119",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Fløe",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f5b0c5099663cdf146ff254dee31c5ed098aee97f9cd9d432b40fa47787a6197.png",
+        "url": "https://mastodon.social/@phloe"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109326097897405253",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:00Z",
+      "wm-id": 1784812,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109326097897405253",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Repeter wants an Ukr victory",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/51301d02b6efaac439809864f76d74d5daef13f624ee3eeb693ebc4587e95901.jpg",
+        "url": "https://techhub.social/@psvensson"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109428331856496770",
+      "published": null,
+      "wm-received": "2024-02-23T17:14:47Z",
+      "wm-id": 1784769,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109428331856496770",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-23T16:45:56Z",
+      "wm-id": 1784763,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mamday",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f7d1d7068aa619ea0de8eb5589ae7829a55fa8d5f0bdb6f8dca211e03bd2dc51.jpg",
+        "url": "https://kolektiva.social/@mamday"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109331233136047965",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:07Z",
+      "wm-id": 1784748,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109331233136047965",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Digital Gub ????️‍????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4935f91ba31fdfa16071ace345335e9fda4422f93bd86f89a80029d59875caa9.jpg",
+        "url": "https://bne.social/@ash"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288395437108489",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:06Z",
+      "wm-id": 1784747,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288395437108489",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:05Z",
+      "wm-id": 1784746,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "zxm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/97faa9814dd0464af01bb2c1e00eb0403e6875977f5fdf2ee80a43376292472c.jpg",
+        "url": "https://mastodon.ie/@zxm"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109372102572992937",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:04Z",
+      "wm-id": 1784745,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109372102572992937",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:02Z",
+      "wm-id": 1784744,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109363548648925264",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lou Cyx",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/81723b83b8237919834bd614a311344b23fb424f36873c97fc6e2e0ab0c6e757.png",
+        "url": "https://mastodon.social/@loucyx"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-111269832041749760",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:01Z",
+      "wm-id": 1784743,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/111269832041749760",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2024-02-23T16:18:59Z",
+      "wm-id": 1784742,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109338564602223384",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "atotic",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://sfba.social/@atotic"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109376991840466163",
+      "published": null,
+      "wm-received": "2024-02-24T23:16:57Z",
+      "wm-id": 1785161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109376991840466163",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave Rupert",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/df90600eac314bfae461e88ce4a64f1853a8f914c25802ed58d55307a0525a72.jpg",
+        "url": "https://mastodon.social/@davatron5000"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109287751678680224",
+      "published": null,
+      "wm-received": "2024-02-24T14:40:05Z",
+      "wm-id": 1785030,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109287751678680224",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christopher",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/03fc22b439aa4125d96bff800510eefdcdaef2dd232dee7902ddae88e87475a1.jpg",
+        "url": "https://indieweb.social/@Terreii"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294283399285026",
+      "published": null,
+      "wm-received": "2024-02-24T12:06:31Z",
+      "wm-id": 1784978,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294283399285026",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2024-02-24T11:37:12Z",
+      "wm-id": 1784975,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109312840969263891",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Severien",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/79375d985376e4dcb2c41dd709b1f6ce5f82b918ecbbb4f4a58cc97c961cecca.jpg",
+        "url": "https://mastodon.social/@timsev"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109294894958528236",
+      "published": null,
+      "wm-received": "2024-02-24T09:09:36Z",
+      "wm-id": 1784943,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109294894958528236",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Gourlay",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/70e4700f40b01901e751604e11b58053edfc4ac4f4a6e10cdbeecdd94041c927.jpg",
+        "url": "https://bne.social/@colingourlay"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109306625420888333",
+      "published": null,
+      "wm-received": "2024-02-24T01:11:52Z",
+      "wm-id": 1784856,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109306625420888333",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "welt",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c9279880977a112314ce18bfefd551b87b7060022b50da0182a19b663c5799be.png",
+        "url": "https://indieweb.social/@welt"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109296262343938119",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:01Z",
+      "wm-id": 1784813,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109296262343938119",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Fløe",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f5b0c5099663cdf146ff254dee31c5ed098aee97f9cd9d432b40fa47787a6197.png",
+        "url": "https://mastodon.social/@phloe"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109326097897405253",
+      "published": null,
+      "wm-received": "2024-02-23T22:11:00Z",
+      "wm-id": 1784812,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109326097897405253",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Repeter wants an Ukr victory",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/51301d02b6efaac439809864f76d74d5daef13f624ee3eeb693ebc4587e95901.jpg",
+        "url": "https://techhub.social/@psvensson"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109428331856496770",
+      "published": null,
+      "wm-received": "2024-02-23T17:14:47Z",
+      "wm-id": 1784769,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109428331856496770",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2024-02-23T16:45:56Z",
+      "wm-id": 1784763,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109293603037070680",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mamday",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f7d1d7068aa619ea0de8eb5589ae7829a55fa8d5f0bdb6f8dca211e03bd2dc51.jpg",
+        "url": "https://kolektiva.social/@mamday"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109331233136047965",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:07Z",
+      "wm-id": 1784748,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109331233136047965",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Digital Gub ????️‍????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4935f91ba31fdfa16071ace345335e9fda4422f93bd86f89a80029d59875caa9.jpg",
+        "url": "https://bne.social/@ash"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288395437108489",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:06Z",
+      "wm-id": 1784747,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288395437108489",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:05Z",
+      "wm-id": 1784746,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "zxm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/97faa9814dd0464af01bb2c1e00eb0403e6875977f5fdf2ee80a43376292472c.jpg",
+        "url": "https://mastodon.ie/@zxm"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109372102572992937",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:04Z",
+      "wm-id": 1784745,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109372102572992937",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin Grubinger",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5e5cc565a57db93d127dfa935a01ef533bca867fa64c31463636f6f53e4e5d88.jpg",
+        "url": "https://mastodon.social/@grooovinger"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109363548648925264",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:02Z",
+      "wm-id": 1784744,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109363548648925264",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lou Cyx",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/81723b83b8237919834bd614a311344b23fb424f36873c97fc6e2e0ab0c6e757.png",
+        "url": "https://mastodon.social/@loucyx"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-111269832041749760",
+      "published": null,
+      "wm-received": "2024-02-23T16:19:01Z",
+      "wm-id": 1784743,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/111269832041749760",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah E Bourne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/09e8ac2ec457b60d41e6c308875f15175312df401d5d4ed3dd182b40441b6dc0.png",
+        "url": "https://mastodon.social/@sbourne"
+      },
+      "url": "https://front-end.social/@rem/111980786322996697#favorited-by-109338564602223384",
+      "published": null,
+      "wm-received": "2024-02-23T16:18:59Z",
+      "wm-id": 1784742,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/111980786322996697/109338564602223384",
+      "wm-target": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/23/why-my-code-isnt-in-typescript",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
