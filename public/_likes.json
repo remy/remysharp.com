@@ -53216,5 +53216,64 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "apple-trying-to-kneecap-the-web-pwas": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "dominik schwind",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f4df3aaf8a021a01077e74a3b57d2f36143860e5bc8383bc2320064cc744f057.jpg",
+        "url": "https://nona.social/@dominik"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109378007769421040",
+      "published": null,
+      "wm-received": "2024-02-28T10:43:15Z",
+      "wm-id": 1786315,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109378007769421040",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Alan Bradburne",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/7f102e4ebe82a302022a23749bc0a4beeae815e1bf002c466a45bb92c3532bff.png",
+        "url": "https://mastodon.social/@alanb"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109337825496787689",
+      "published": null,
+      "wm-received": "2024-02-28T10:43:13Z",
+      "wm-id": 1786314,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109337825496787689",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-02-28T10:43:12Z",
+      "wm-id": 1786313,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

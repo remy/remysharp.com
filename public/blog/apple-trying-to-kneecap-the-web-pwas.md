@@ -9,7 +9,7 @@ tags:
 
 # Apple going to kneecap the web: PWAs
 
-Remember the days that Apple used to pitch itself as *David* in the David and Goliath stories? Well, the tables have turned. Apple, in a short number of days, are going to intentionally kill of PWA support.
+Remember the days that Apple used to pitch itself as *David* in the David and Goliath stories? Well, the tables have turned. Apple, in a short number of days, are going to intentionally kill off PWA support.
 
 This affects developers, businesses *and* users.
 
