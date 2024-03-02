@@ -11,7 +11,8 @@ tags:
 
 Remember the days that Apple used to pitch itself as *David* in the David and Goliath stories? Well, the tables have turned. Apple, in a short number of days, are going to intentionally kill off PWA support.
 
-<div class="update"><strong>2-March 2024:</strong> Apple has backed down (for now), thanks to the efforts of amazing people, but the fight continues. [Read the details](https://open-web-advocacy.org/blog/apple-backs-off-killing-web-apps/)</div>
+<div class="update"><strong>2-March 2024:</strong> Apple has backed down (for now), thanks to the efforts of amazing people, but the fight continues. <a href="https://open-web-advocacy.org/blog/apple-backs-off-killing-web-apps/">Read the details</a>
+</div>
 
 This affects developers, businesses *and* users.
 
