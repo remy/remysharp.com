@@ -1,5 +1,20 @@
 [
   {
+    "title": "What About Men?",
+    "author": "Caitlin Moran",
+    "published": null,
+    "null": null,
+    "pages": 305,
+    "goodreads": "https://www.goodreads.com/book/show/123028135-what-about-men",
+    "goodreads_id": 123028135,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1682052595l/123028135._SX315_.jpg",
+    "read": "2024-03-01T00:00:00.000Z",
+    "start": "2024-02-09T00:00:00.000Z",
+    "rating": 5,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2024/what-about-men.md",
+    "slug": "what-about-men"
+  },
+  {
     "title": "Yellowface",
     "author": "R.F. Kuang",
     "published": 2023,

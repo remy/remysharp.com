@@ -53274,6 +53274,481 @@
       "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Justin (StayGrounded.online)",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e213a8dab462af2e557e2a23bc1ed12bd0637e19df191335ab1d87952d996cc2.png",
+        "url": "https://twit.social/@JustinH"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109447535654354119",
+      "published": null,
+      "wm-received": "2024-03-01T14:44:32Z",
+      "wm-id": 1787465,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109447535654354119",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "haliphax ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/228b77d961c69780574b98a0db6e59127abebe4467d49471d5e20ae089084284.jpg",
+        "url": "https://hachyderm.io/@haliphax"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109365126807814804",
+      "published": null,
+      "wm-received": "2024-03-01T13:09:23Z",
+      "wm-id": 1787431,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109365126807814804",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dylan",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/57997be373ea3039e4349e6a6d98cc9ec3967daa9d94b0fba7c2da190b1a23a0.png",
+        "url": "https://infosec.exchange/@dylan"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109362543903895658",
+      "published": null,
+      "wm-received": "2024-03-01T12:43:05Z",
+      "wm-id": 1787420,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109362543903895658",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Wootton",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://fosstodon.org/@woo"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109347400855329540",
+      "published": null,
+      "wm-received": "2024-03-01T12:43:03Z",
+      "wm-id": 1787419,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109347400855329540",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "busticated",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6d417411050b9bb0c5410a4a669d1d73fc9352a6a56ca66265524c1aadfe2315.png",
+        "url": "https://mastodon.social/@busticated"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109295592162122409",
+      "published": null,
+      "wm-received": "2024-03-01T12:13:23Z",
+      "wm-id": 1787409,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109295592162122409",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stephanie ???? Web Witch",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f17fe6f45bbc5a54282f5d11db5e70d0dac819ef0465d14acc4dd0790b61ae9d.jpg",
+        "url": "https://toot.cafe/@seaotta"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109307726853131450",
+      "published": null,
+      "wm-received": "2024-03-01T11:42:11Z",
+      "wm-id": 1787391,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109307726853131450",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kimberly Blessing",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/278a95c9ee0cc5da45399361a1572c46be267483d7b61f9f2fd82d75c979865c.jpg",
+        "url": "https://jawns.club/@obiwankimberly"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109297325483312866",
+      "published": null,
+      "wm-received": "2024-03-01T11:11:39Z",
+      "wm-id": 1787379,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109297325483312866",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "rootfs :oh_no:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/03aff23252de84a907630cd3478ad455c8c37fec31cefcba82f5c7de67ab3c9b.jpg",
+        "url": "https://mastodon.org.uk/@rootfs"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109293584336761001",
+      "published": null,
+      "wm-received": "2024-03-01T11:11:38Z",
+      "wm-id": 1787378,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109293584336761001",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "laurel :verified_blobcat_blue:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/68ce69a6b2f9885ed98a85ec439344fd3f65209e6292a878fa59f22bf3b0cb8a.png",
+        "url": "https://social.lol/@laurel"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-110656673950206244",
+      "published": null,
+      "wm-received": "2024-03-01T11:09:22Z",
+      "wm-id": 1787376,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/110656673950206244",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jeremiah Lee",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/51db40c79f71dac59f118ed7363990ad5478547258f3072c87b025024f447760.jpg",
+        "url": "https://alpaca.gold/@Jeremiah"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109641878430681293",
+      "published": null,
+      "wm-received": "2024-02-29T05:40:47Z",
+      "wm-id": 1786730,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109641878430681293",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trivikram Kamat",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6c66df7870ea324eae54fe101321d637b8ccbad0ced409c34d3036e45b3e59b0.jpg",
+        "url": "https://fosstodon.org/@trivikram"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109410955832708740",
+      "published": null,
+      "wm-received": "2024-02-29T00:40:09Z",
+      "wm-id": 1786656,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109410955832708740",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Amadeus Maximilian",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/29a6be03a4da0441e11bb11c388eb565eff2285d5edca01333cfed4494eac87d.png",
+        "url": "https://mastodon.design/@amxmln"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109558977821003449",
+      "published": null,
+      "wm-received": "2024-02-28T19:13:44Z",
+      "wm-id": 1786528,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109558977821003449",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "kiwi",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/8f8465eadd92bfea1b5301a946a9225c371e93b0733bbab3c0b85f6e71ee6c1a.jpg",
+        "url": "https://kolektiva.social/@kiwi"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109671784631569731",
+      "published": null,
+      "wm-received": "2024-02-28T17:50:07Z",
+      "wm-id": 1786493,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109671784631569731",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "diekus",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/ba5060844c5b4740ea70a6e80fb7667e0bfcbf43d822f914f9ad2025c64fbf87.jpg",
+        "url": "https://toot.cafe/@diekus"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109292253264520183",
+      "published": null,
+      "wm-received": "2024-02-28T17:14:50Z",
+      "wm-id": 1786469,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109292253264520183",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nathan Knowler",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/50ce56f39c91e30823b4e4f318af74b4e46c9debc27b9eb5cd70c94af36b7c88.jpg",
+        "url": "https://sunny.garden/@knowler"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109288608398254369",
+      "published": null,
+      "wm-received": "2024-02-28T17:14:49Z",
+      "wm-id": 1786468,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109288608398254369",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Robin Millette",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/010c3473e184b1a9306d4c27df36bd8bcc5d16b86245c2564609726791fc0f0f.jpg",
+        "url": "https://jasette.facil.services/@waglo"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109432023730435458",
+      "published": null,
+      "wm-received": "2024-02-28T17:14:47Z",
+      "wm-id": 1786467,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109432023730435458",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bruce B Anderson",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/828928d663324372b6607f4b56083053a3e1a9b29cd37cb0141d68006dd0d791.jpg",
+        "url": "https://mastodon.social/@bahrus"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109298416868882259",
+      "published": null,
+      "wm-received": "2024-02-28T17:14:46Z",
+      "wm-id": 1786466,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109298416868882259",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Troy Younts (main)✅",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6cce242df9cdfa62e04b0b7c50049182d9720b8d2a470ef83b788f4164f06390.jpg",
+        "url": "https://fosstodon.org/@ordabchao23"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109332836945483466",
+      "published": null,
+      "wm-received": "2024-02-28T15:50:45Z",
+      "wm-id": 1786443,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109332836945483466",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tyler Sticka",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a3e8f10c9190a71c8b5813cb592445962f91252468058abbac98ecff88025553.png",
+        "url": "https://social.lol/@tylersticka"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-110651353810564612",
+      "published": null,
+      "wm-received": "2024-02-28T15:50:42Z",
+      "wm-id": 1786442,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/110651353810564612",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "patrislav #RIPNatenom",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/1a2b8b661cc21e1437ad726e5224de78f8fa8ea1ed65879d269857651b4ec589.jpg",
+        "url": "https://chaos.social/@patrislav"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109372515085955011",
+      "published": null,
+      "wm-received": "2024-02-28T15:19:43Z",
+      "wm-id": 1786426,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109372515085955011",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Maxi 8x ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/2f0297839264194b4c1906d517878cc4e44c9dbfc614291a173d932d1eb70663.png",
+        "url": "https://chaos.social/@frumble"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109297426662309248",
+      "published": null,
+      "wm-received": "2024-02-28T15:19:43Z",
+      "wm-id": 1786427,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109297426662309248",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Piepmeier",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4e928683ec9b129840917c926ed96d44f8724e356f88d212a6bb2fa0cc634125.jpg",
+        "url": "https://indieweb.social/@trey"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109288671065684135",
+      "published": null,
+      "wm-received": "2024-02-28T13:17:06Z",
+      "wm-id": 1786360,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109288671065684135",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Open Web Advocacy",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6fcd80657f13875c9a25e91bc950db03a64e3186c77860f120541ac6eaca9af3.jpg",
+        "url": "https://mastodon.social/@owa"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109342110672476626",
+      "published": null,
+      "wm-received": "2024-02-28T12:22:11Z",
+      "wm-id": 1786339,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109342110672476626",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dale Harvey",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/20b256312f227691748c9c37fed6303e3768fef8cff78e2d69bb1eb747351753.jpg",
+        "url": "https://toot.cafe/@dale"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109347345562582837",
+      "published": null,
+      "wm-received": "2024-02-28T11:46:38Z",
+      "wm-id": 1786331,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109347345562582837",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rick Byers",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/577d25f9841a6f0299563be662d55c85ad93a1b813f5f3192e30b48d9de2722a.jpg",
+        "url": "https://toot.cafe/@RickByers"
+      },
+      "url": "https://front-end.social/@rem/112008545276233239#favorited-by-109376110108894528",
+      "published": null,
+      "wm-received": "2024-02-28T11:46:38Z",
+      "wm-id": 1786332,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112008545276233239/109376110108894528",
+      "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }
