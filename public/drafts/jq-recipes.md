@@ -714,3 +714,13 @@ All the unique domains requested by a web page. Open devtools, open the network 
 ```
 
 [Demo](https://jqterm.com/31a967bf55762b5a25c4551a202a745f?query=%5B.log.entries%5B%5D.request.url%20%7C%20split%28%22%2F%22%29%20%7C%20%22%5C%28.%5B0%5D%29%2F%2F%5C%28.%5B2%5D%29%22%5D%20%7C%20unique)
+
+---
+
+Pick every odd element in the array:
+
+```
+to_entries | map(select(.key % 2 == 0).value)
+```
+
+[Demo](https://jqterm.com/92d890e28177ad2d8b8829a82838f967?query=to_entries%20%7C%20map%28select%28.key%20%25%202%20%3D%3D%200%29.value%29)
