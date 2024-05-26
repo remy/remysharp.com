@@ -49677,6 +49677,44 @@
       "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stu Robson",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/7fd1b4db34c45c21b17ac1d298cfe5d579e61b3a54dbbd1575aef5a16e1ad479.jpg",
+        "url": "https://front-end.social/@sturobson"
+      },
+      "url": "https://front-end.social/@rem/112404922560246080#favorited-by-109292569331341193",
+      "published": null,
+      "wm-received": "2024-05-08T13:17:46Z",
+      "wm-id": 1825189,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112404922560246080/109292569331341193",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "HerrHerrmann",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/050c5b63eff8375f390d3529f86beb6a21d98f1a9c97659c8bacd887ab32e5d6.png",
+        "url": "https://mastodon.social/@herrherrmann"
+      },
+      "url": "https://front-end.social/@rem/112404922560246080#favorited-by-109301910272667657",
+      "published": null,
+      "wm-received": "2024-05-08T13:17:44Z",
+      "wm-id": 1825188,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112404922560246080/109301910272667657",
+      "wm-target": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/02/02/removing-episodes-audiobooks-and-more-from-spotify",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "the-doggie-loggie": [
@@ -53747,6 +53785,84 @@
       "wm-target": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2024/02/28/apple-trying-to-kneecap-the-web-pwas",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "css-text-fragment-selector": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sara Joy :happy_pepper:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a06118ca119ec1183309db1aa65689d6bd69349b68713fd0c3f49cc5de8ca683.jpg",
+        "url": "https://front-end.social/@sarajw"
+      },
+      "url": "https://front-end.social/@rem/112286335961482240#favorited-by-109295906487756020",
+      "published": null,
+      "wm-received": "2024-04-18T04:43:18Z",
+      "wm-id": 1810243,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112286335961482240/109295906487756020",
+      "wm-target": "https://remysharp.com/2024/04/17/css-text-fragment-selector",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/04/17/css-text-fragment-selector",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ed Summers",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/578862cd6c2e166318ff52282b598d046422efd82c65feee5c7c95c7bf526dff.jpg",
+        "url": "https://social.coop/@edsu"
+      },
+      "url": "https://front-end.social/@rem/112286335961482240#favorited-by-109298428412423417",
+      "published": null,
+      "wm-received": "2024-04-18T04:43:17Z",
+      "wm-id": 1810242,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112286335961482240/109298428412423417",
+      "wm-target": "https://remysharp.com/2024/04/17/css-text-fragment-selector",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/04/17/css-text-fragment-selector",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zack Boehm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/944d54b8a54768931ff4dd3b0acbc47b3ec29501d4be3ecea33049527b572601.png",
+        "url": "https://mastodon.social/@zackboehm"
+      },
+      "url": "https://front-end.social/@rem/112286335961482240#favorited-by-109288608133872052",
+      "published": null,
+      "wm-received": "2024-04-18T04:43:16Z",
+      "wm-id": 1810241,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112286335961482240/109288608133872052",
+      "wm-target": "https://remysharp.com/2024/04/17/css-text-fragment-selector",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/04/17/css-text-fragment-selector",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Elly Loel ✨????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/2906f05fbc1fff47b76e9bd51804d1618a81be8f3062fc8c5a2e0f18d02f8559.png",
+        "url": "https://front-end.social/@elly"
+      },
+      "url": "https://front-end.social/@rem/112286335961482240#favorited-by-109426807254697808",
+      "published": null,
+      "wm-received": "2024-04-18T04:43:09Z",
+      "wm-id": 1810235,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112286335961482240/109426807254697808",
+      "wm-target": "https://remysharp.com/2024/04/17/css-text-fragment-selector",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/04/17/css-text-fragment-selector",
       "wm-property": "like-of",
       "wm-private": false
     }
