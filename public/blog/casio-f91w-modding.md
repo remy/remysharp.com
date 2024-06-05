@@ -99,6 +99,14 @@ You can see from the angle I've tilted the watch that it's not quite 100% flat t
 
 In the end however, I removed these entirely - but I do think they're a nice idea.
 
+## Making it water proof, to over 500m
+
+Although the f-91 is a measly "water resistant" (though this has been tested to be mostly okay to swim with), you can modify the watch further to make it fully waterproof.
+
+The process involves disassembling the watch, submerging it in olive oil (Extra Virgin … apparently) and whilst in the oil, fully reassemble the watch. The oil creates a seal that prevents the water from penetrating and corroding the PCB - so now it's waterproof (and from photos apparently easier to see underwater).
+
+Here's the story of how one individual tested their [modded watch dropping it to the sea bed](https://forum.tz-uk.com/showthread.php?330958-The-Little-Watch-That-Could)!
+
 ## Misc other modding ideas
 
 There's a couple more mods that might be interesting to play with. Once is a lens replacement (though the only supplier I can find has closed their store as of a year ago, and I can't seem to find anyone else). I've got a couple of Casio watches with broken glass lens (which I was going to harvest the straps), but a new lens would be fun.
