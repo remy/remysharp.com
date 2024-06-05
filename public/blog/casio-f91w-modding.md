@@ -99,7 +99,7 @@ You can see from the angle I've tilted the watch that it's not quite 100% flat t
 
 In the end however, I removed these entirely - but I do think they're a nice idea.
 
-## Making it water proof, to over 500m
+## Making it water proof, to nearly 1000m
 
 Although the f-91 is a measly "water resistant" (though this has been tested to be mostly okay to swim with), you can modify the watch further to make it fully waterproof.
 
