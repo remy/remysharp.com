@@ -3,7 +3,7 @@ a.cta:hover {
   text-decoration: none;
   border: 1px solid var(--c-input-bg);
   display: flex;
-  align-items: center;
+  align-items: stretch;
   padding: 0px;
   background: none;
   color: inherit;
@@ -12,29 +12,30 @@ a.cta:hover {
   border-radius: 2px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: var(--c-bg-cta);
+  gap: 12px;
 
   &:hover {
     border-color: #ccc;
   }
 
   img {
-    max-height: 140px;
-    min-width: 140px;
-    margin-right: 10px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+    object-fit: cover;
+    height: auto;
+    max-height: 200px;
     object-fit: cover;
   }
 
   & > div {
-    padding: 10px;
+    padding: 12px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
   }
 
   p {
     margin: 0;
-    flex-grow: 1;
   }
 
   p:last-child {
