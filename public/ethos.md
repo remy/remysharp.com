@@ -16,7 +16,7 @@ It's far from definitive and not organised well, but it's a start to capture wha
 
 ## We have to _keep_ fighting racism.
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=3pQrBLe3IpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3pQrBLe3IpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 > …there's been so many people that say oh it's better now than it was before.
 >
@@ -56,7 +56,7 @@ Simplicity always wins, and stripping as much back as possible is the way to tha
 
 I know this is (just) a marketing campaign, but it moved me to tears and I love the message it provides and it is one that I would happily play again and again in my head.
 
-<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/koPmuEyP3a0?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="https://www.youtube-nocookie.com/embed/UYaY2Kb_PKI?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ---
 

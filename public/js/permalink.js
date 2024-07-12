@@ -1,4 +1,4 @@
-(function() {
+(function () {
   /* eslint-env browser */
   'use strict';
 
@@ -52,10 +52,10 @@
   }
 
   function permalink() {
-    var $ = function(s) {
+    var $ = function (s) {
       s = s
         .split(',')
-        .map(function(s) {
+        .map(function (s) {
           return '.post-content ' + s;
         })
         .join(',');
@@ -66,7 +66,7 @@
     anchor.className = className;
     anchor.innerHTML = '<span></span>';
 
-    [].forEach.call($('h1,h2,h3,h4,h5,h6'), function(el) {
+    [].forEach.call($('h1,h2,h3,h4,h5,h6'), function (el) {
       if (!el.id) {
         // let's make one
         var id = (el.textContent || el.innerText)
@@ -83,7 +83,7 @@
 
       var clone = anchor.cloneNode(true);
       clone.href = '#' + el.id;
-      clone.setAttribute('aria-label', 'Link to ' + el.textContent);
+      clone.setAttribute('aria-hidden', 'true');
       el.appendChild(clone, el.firstChild);
       count = count + 1;
     });
