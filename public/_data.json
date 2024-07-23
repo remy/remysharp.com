@@ -16,6 +16,10 @@
     "title": "Links",
     "published": true
   },
+  "games": {
+    "title": "Games I've played",
+    "published": true
+  },
   "404": {
     "comments": true
   },

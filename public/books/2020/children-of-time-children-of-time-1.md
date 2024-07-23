@@ -1,8 +1,8 @@
 ---
-title: 'Children of Time (Children of Time #1)'
+title: 'Children of Time (Children of Time, #1)'
 seriesEntry: Children of Time
 seriesNumber: '1'
-series: 'Children of Time #1'
+series: Children of Time
 author: Adrian Tchaikovsky
 pages: 609
 rating: 3
