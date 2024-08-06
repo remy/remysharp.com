@@ -11,4 +11,10 @@ start: 2024-06-02T00:00:00.000Z
 rating: 3
 ---
 
+A romance story, some clever writing, slightly predictable, not entirely my bag.
 
+I think, because I only started reading in the last decade, that I've not read a "proper" romance novel before. 
+
+I can't say that I'm won over by the genre through, but that's my failing and not the book's.
+
+The story does a decent job of not following usual tropes and traps of stereotype literature, and somehow this is the third fiction book this year I've read that's based in the publishing world (unrelated tidbit).

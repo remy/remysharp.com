@@ -115,6 +115,25 @@
       "like-of": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Carsten Bach",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6fc3e003ba14a2c83651ed4b328e33d1b0501623128fecdda60de66a37e64bcf.jpg",
+        "url": "https://dewp.space/@carstingaxion"
+      },
+      "url": "https://front-end.social/@rem/112911280457402509#favorited-by-110728455808990912",
+      "published": null,
+      "wm-received": "2024-08-05T21:56:43Z",
+      "wm-id": 1841737,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112911280457402509/110728455808990912",
+      "wm-target": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/09/11/getting-daily-notifications-my-parent-is-okay",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "why-sponsor-ffconf": [
@@ -56700,6 +56719,236 @@
       "wm-target": "https://remysharp.com/2024/07/05/say-what-on-tinnitus-and-hearing",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2024/07/05/say-what-on-tinnitus-and-hearing",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "screen-reading-eff-eff-conf": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pauxlll Kruczynski",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/f97a1e8b2ecca2c80e7ea1ab1f352d5eab6ac23ebafd9b8d9aeb16901518d404.jpg",
+        "url": "https://mastodon.social/@paulkruczynski"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-109288636299002942",
+      "published": null,
+      "wm-received": "2024-07-28T05:57:06Z",
+      "wm-id": 1840637,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/109288636299002942",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Daniel Göransson",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/cc3a0ea0854c261953f43ce60b160f395e4084ebb91b106e4e47dcc03551514a.png",
+        "url": "https://mastodon.social/@DanielGoransson"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-109507287965925528",
+      "published": null,
+      "wm-received": "2024-07-27T00:52:13Z",
+      "wm-id": 1840518,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/109507287965925528",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eric",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/cb2bbd155b9f19a525ded16dbe1c69b898be4b8a0ce863cfcabd34e6bfa0ff88.jpg",
+        "url": "https://social.ericwbailey.website/@eric"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-109659957564826321",
+      "published": null,
+      "wm-received": "2024-07-26T20:27:57Z",
+      "wm-id": 1840499,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/109659957564826321",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James Basoo",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d3e83be7065701d58a685d4da6f44475e3d8d4b5d7823377d0ad4e4177aa4e6c.jpg",
+        "url": "https://mastodon.social/@Jbasoo"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-109289235092153120",
+      "published": null,
+      "wm-received": "2024-07-26T20:27:57Z",
+      "wm-id": 1840500,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/109289235092153120",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Diplo Dino",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/818cd03f302c296c38a641f70428b14a5c9a0a985b8f412fb216b0239e556041.gif",
+        "url": "https://mastodon.social/@Diplodocus"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-109423544612781501",
+      "published": null,
+      "wm-received": "2024-07-23T18:22:01Z",
+      "wm-id": 1840182,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/109423544612781501",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lewis Dale",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/8dee5f524779a540b5268e7b7707cfbe5705b476513e8a7c0bfbf28ab738621f.jpg",
+        "url": "https://social.lol/@lewis"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-111676812307545010",
+      "published": null,
+      "wm-received": "2024-07-23T16:49:15Z",
+      "wm-id": 1840164,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/111676812307545010",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chee Aun ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fa755647a51dd7e0f1211bd4477da5f862459350b4f063ac31acec113fbb4b55.jpg",
+        "url": "https://mastodon.social/@cheeaun"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-109295222192024434",
+      "published": null,
+      "wm-received": "2024-07-23T16:49:13Z",
+      "wm-id": 1840162,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/109295222192024434",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flaki",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b8305f94a8ab63a02c7632d8b8642bdc7fe25b42a86ecbd593be1d9c85732622.jpg",
+        "url": "https://flaki.social/@flaki"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-109312840969263891",
+      "published": null,
+      "wm-received": "2024-07-23T16:49:13Z",
+      "wm-id": 1840163,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/109312840969263891",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2024-07-23T16:49:12Z",
+      "wm-id": 1840161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/109302579306985968",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Fernando Mateus",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/8b9e6c3330eec2f350eebb5e974202b7395f077f2ad86223e37fabfddf15cf61.jpg",
+        "url": "https://mastodon.social/@fernandomateus"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-109305598564136053",
+      "published": null,
+      "wm-received": "2024-07-23T16:49:11Z",
+      "wm-id": 1840159,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/109305598564136053",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sona",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d7e72ac74df31ccd73c2b27d1d493057e55e8ca91a8614447b6497e3550839a3.jpg",
+        "url": "https://mastodon.world/@sonasoeun"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-109669711492360688",
+      "published": null,
+      "wm-received": "2024-07-23T16:49:11Z",
+      "wm-id": 1840160,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/109669711492360688",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andrew",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/3db0a0c990541430d82b1ad8ad2e62bfc44edf1a5f8bed9282ec45593cbdb2ec.png",
+        "url": "https://mathstodon.xyz/@andrewt"
+      },
+      "url": "https://front-end.social/@rem/112835713253900964#favorited-by-110329121013393570",
+      "published": null,
+      "wm-received": "2024-07-23T16:49:09Z",
+      "wm-id": 1840157,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112835713253900964/110329121013393570",
+      "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
       "wm-property": "like-of",
       "wm-private": false
     }

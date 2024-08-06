@@ -1,5 +1,19 @@
 [
   {
+    "title": "Do Androids Dream of Electric Sheep?",
+    "author": "Philip K. Dick",
+    "published": 1968,
+    "pages": 208,
+    "goodreads": "https://www.goodreads.com/book/show/8883476-do-androids-dream-of-electric-sheep",
+    "goodreads_id": 8883476,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610205242l/8883476._SX315_.jpg",
+    "read": "2024-08-05T00:00:00.000Z",
+    "start": "2024-07-11T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2024/do-androids-dream-of-electric-sheep.md",
+    "slug": "do-androids-dream-of-electric-sheep"
+  },
+  {
     "title": "Book Lovers",
     "author": "Emily Henry",
     "published": 2022,
@@ -1141,7 +1155,7 @@
     "slug": "the-princess-diarist"
   },
   {
-    "title": "Children of Time (Children of Time #1)",
+    "title": "Children of Time (Children of Time, #1)",
     "seriesEntry": "Children of Time",
     "seriesNumber": "1",
     "series": "Children of Time",
