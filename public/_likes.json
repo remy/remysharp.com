@@ -1856,6 +1856,44 @@
       "rels": {
         "canonical": "https://jeremyfelt.com/liked/why-i-write-and-why-i-wont/"
       }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Patrick H. Lauke",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/71467e7fc6cb595b66835765e7e269ec1e43784f5ebb77d98fa0dc3a3ab1fc76.jpg",
+        "url": "https://mastodon.social/@patrick_h_lauke"
+      },
+      "url": "https://front-end.social/@rem/112926233160428258#favorited-by-109288813255314170",
+      "published": null,
+      "wm-received": "2024-08-08T19:57:38Z",
+      "wm-id": 1842383,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112926233160428258/109288813255314170",
+      "wm-target": "https://remysharp.com/2021/11/21/why-i-write-and-when-i-dont",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/11/21/why-i-write-and-when-i-dont",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tereza K",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/ab2e60f0681cce71118a334bf3bda11b281502e49bc6c2f8cc6422fad11e4ae0.jpg",
+        "url": "https://hachyderm.io/@trennikt"
+      },
+      "url": "https://front-end.social/@rem/112926233160428258#favorited-by-112734250698267698",
+      "published": null,
+      "wm-received": "2024-08-08T14:35:02Z",
+      "wm-id": 1842357,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112926233160428258/112734250698267698",
+      "wm-target": "https://remysharp.com/2021/11/21/why-i-write-and-when-i-dont",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/11/21/why-i-write-and-when-i-dont",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "me-and-tinnitus-entry-4": [
@@ -56949,6 +56987,86 @@
       "wm-target": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2024/07/23/screen-reading-eff-eff-conf",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "why-i-write-and-when-i-dont#why-i-wont-write": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Patrick H. Lauke",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/71467e7fc6cb595b66835765e7e269ec1e43784f5ebb77d98fa0dc3a3ab1fc76.jpg",
+        "url": "https://mastodon.social/@patrick_h_lauke"
+      },
+      "url": "https://front-end.social/@rem/112926233160428258#favorited-by-109288813255314170",
+      "published": null,
+      "wm-received": "2024-08-08T19:57:38Z",
+      "wm-id": 1842384,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112926233160428258/109288813255314170",
+      "wm-target": "https://remysharp.com/2021/11/21/why-i-write-and-when-i-dont#why-i-wont-write",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/11/21/why-i-write-and-when-i-dont#why-i-wont-write",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tereza K",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/ab2e60f0681cce71118a334bf3bda11b281502e49bc6c2f8cc6422fad11e4ae0.jpg",
+        "url": "https://hachyderm.io/@trennikt"
+      },
+      "url": "https://front-end.social/@rem/112926233160428258#favorited-by-112734250698267698",
+      "published": null,
+      "wm-received": "2024-08-08T14:35:02Z",
+      "wm-id": 1842358,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112926233160428258/112734250698267698",
+      "wm-target": "https://remysharp.com/2021/11/21/why-i-write-and-when-i-dont#why-i-wont-write",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2021/11/21/why-i-write-and-when-i-dont#why-i-wont-write",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "making-a-dumb-doorbell-smart": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "MichD",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d98aa31f616a11891de3ed01e1f124748ddb1640ec8906ad734d8624e1e29e8f.jpg",
+        "url": "https://mastodon.social/@MichDdev"
+      },
+      "url": "https://front-end.social/@rem/112916207590241617#favorited-by-109313098005142913",
+      "published": null,
+      "wm-received": "2024-08-06T18:22:15Z",
+      "wm-id": 1841845,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112916207590241617/109313098005142913",
+      "wm-target": "https://remysharp.com/2024/08/06/making-a-dumb-doorbell-smart",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/08/06/making-a-dumb-doorbell-smart",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zack Boehm",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/944d54b8a54768931ff4dd3b0acbc47b3ec29501d4be3ecea33049527b572601.png",
+        "url": "https://mastodon.social/@zackboehm"
+      },
+      "url": "https://front-end.social/@rem/112916207590241617#favorited-by-109288608133872052",
+      "published": null,
+      "wm-received": "2024-08-06T17:48:12Z",
+      "wm-id": 1841840,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112916207590241617/109288608133872052",
+      "wm-target": "https://remysharp.com/2024/08/06/making-a-dumb-doorbell-smart",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/08/06/making-a-dumb-doorbell-smart",
       "wm-property": "like-of",
       "wm-private": false
     }
