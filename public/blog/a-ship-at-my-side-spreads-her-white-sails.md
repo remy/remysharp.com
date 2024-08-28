@@ -26,7 +26,7 @@ modified: '2018-08-21 08:46:43'
 
 I've put this on my blog so I can always find it in the future. A friend sent this poem shortly after [Tia](https://remysharp.com/search?q=tia) was born, and had died during delivery.
 
-It struck me extrmely deeply. Mostly, I think, because our daughter had been born, and our lives had not changed one bit. We couldn't bring her home with us, there were no celebrations, no baby clothes. Everything was supposed to change, and yet we had nothing to show for it.
+It struck me extremely deeply. Mostly, I think, because our daughter had been born, and our lives had not changed one bit. We couldn't bring her home with us, there were no celebrations, no baby clothes. Everything was supposed to change, and yet we had nothing to show for it.
 
 This poem gave me something to hold on to. The idea that just because I couldn't see my baby anymore, it didn't mean she didn't hadn't existed. I had watched her at leangth until we had to leave.
 
