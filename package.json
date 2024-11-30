@@ -37,7 +37,6 @@
     "markdown-it-prism": "^2.3.0",
     "markdown-it-task-lists": "^2.1.1",
     "node-fetch": "2.6.6",
-    "nodemon": "^3.1.2",
     "num-words": "^1.2.3",
     "prismjs": "^1.29.0",
     "pug": "^3.0.2",
@@ -58,6 +57,7 @@
     "chokidar": "^3.6.0",
     "eslint-plugin-node": "^11.0.0",
     "js-yaml": "^4.1.0",
+    "nodemon": "^3.1.7",
     "xml2json": "^0.12.0"
   }
 }
