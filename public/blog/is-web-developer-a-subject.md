@@ -1,6 +1,7 @@
 ---
 title: 'Is web developer a "subject"?'
 date: '2024-10-21'
+draft: true
 tags:
   - web
 ---
