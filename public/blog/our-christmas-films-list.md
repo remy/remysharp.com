@@ -165,7 +165,7 @@ This is the year we started sharing our Christmas Movie day with the kids, so ou
 ## 2022
 
 * [Unaccompanied Minors (2006)](https://www.imdb.com/title/tt0488658/)
-* [The Guardians of the Galaxy Holiday Special (2022](https://m.imdb.com/title/tt13623136/)
+* [The Guardians of the Galaxy Holiday Special (2022)](https://m.imdb.com/title/tt13623136/)
 * [Spirited (2022)](https://www.imdb.com/title/tt10999120/)
 * [A Boy Called Christmas (2021)](https://www.imdb.com/title/tt10187208/)
 * [Your Christmas or Mine? (2022)](https://www.imdb.com/title/tt21994906/)
@@ -179,8 +179,19 @@ This is the year we started sharing our Christmas Movie day with the kids, so ou
 * [Godmothered (2020)](https://www.imdb.com/title/tt11681250/)
 * [Violent Night (2022)](https://www.imdb.com/title/tt12003946/)
 
+## 2024
+
+* [Nightmare Before Christmas (1993)](https://www.imdb.com/title/tt0107688/ "The Nightmare Before Christmas (1993) - IMDb")
+* [Babes in Toyland (1934)](https://www.imdb.com/title/tt0024852/)
+* [Genie (2023)](https://www.imdb.com/title/tt24429218/)
+* [Dear Santa (2024)](https://www.imdb.com/title/tt2396431/)
+* [The Holdovers (2023)](https://www.imdb.com/title/tt14849194/)
+
+In 2024 we actively decided to bring back films from previous viewing years where the kids hadn't seen the movies.
+
 ## Future Potentials
 
+* [El Camino Christmas (2017)](https://www.imdb.com/title/tt3255590/)
 * [A Christmas Story Christmas (2022)](https://www.imdb.com/title/tt17220704/)
 * [Hogfather (2006)](https://m.imdb.com/title/tt0765458/) (possibly…it's 3 hours!)
 * [Violent Night (2022)](https://www.imdb.com/title/tt12003946/)
@@ -192,7 +203,6 @@ This is the year we started sharing our Christmas Movie day with the kids, so ou
 * [All Is Bright (2013)](https://www.imdb.com/title/tt1462901/)
 * [Fatman (2020)](https://www.imdb.com/title/tt10310140/)
 * [Silent Night (2023)](https://www.imdb.com/title/tt15799866/)
-* [Genie (2023)](https://www.imdb.com/name/nm0565250/)
 * [Tokyo Godfathers (2003)](https://www.imdb.com/title/tt0388473/)
 * I saw mummy kissing santa
 * Holiday Affair
