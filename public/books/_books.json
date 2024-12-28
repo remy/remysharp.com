@@ -1,5 +1,50 @@
 [
   {
+    "title": "Starter Villain",
+    "author": "John Scalzi",
+    "published": 2023,
+    "pages": 256,
+    "goodreads": "https://www.goodreads.com/book/show/136543153-starter-villain",
+    "goodreads_id": 136543153,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1681992694l/136543153._SX315_.jpg",
+    "read": "2024-12-27T00:00:00.000Z",
+    "start": "2024-11-27T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2024/starter-villain.md",
+    "slug": "starter-villain"
+  },
+  {
+    "title": "The Answer Is No",
+    "author": "Fredrik Backman",
+    "published": 2024,
+    "pages": 68,
+    "goodreads": "https://www.goodreads.com/book/show/219876684-the-answer-is-no",
+    "goodreads_id": 219876684,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1727897163l/219876684._SX315_.jpg",
+    "read": "2024-11-27T00:00:00.000Z",
+    "start": "2024-11-24T00:00:00.000Z",
+    "rating": 2,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2024/the-answer-is-no.md",
+    "slug": "the-answer-is-no"
+  },
+  {
+    "title": "Dune (Dune Chronicles, #1)",
+    "seriesEntry": "Dune",
+    "seriesNumber": "1",
+    "series": "Dune Chronicles",
+    "author": "Frank Herbert",
+    "published": 1965,
+    "pages": 722,
+    "goodreads": "https://www.goodreads.com/book/show/58920062-dune",
+    "goodreads_id": 58920062,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1630705397l/58920062._SX315_.jpg",
+    "read": "2024-11-24T00:00:00.000Z",
+    "start": "2024-08-05T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2024/dune-dune-chronicles-1.md",
+    "slug": "dune-dune-chronicles-1"
+  },
+  {
     "title": "Do Androids Dream of Electric Sheep?",
     "author": "Philip K. Dick",
     "published": 1968,
@@ -1391,8 +1436,8 @@
       "2023-05-26T00:00:00.000Z"
     ],
     "start": [
-      "2019-08-17T00:00:00.000Z",
-      "2022-12-10T00:00:00.000Z"
+      "2022-12-10T00:00:00.000Z",
+      "2019-08-17T00:00:00.000Z"
     ],
     "published": 1938,
     "goodreads": "https://www.goodreads.com/book/show/2277185.Miss_Pettigrew_Lives_for_a_Day",
@@ -1758,8 +1803,8 @@
       "2019-12-13T00:00:00.000Z"
     ],
     "start": [
-      "2018-12-17T00:00:00.000Z",
-      "2019-12-13T00:00:00.000Z"
+      "2019-12-13T00:00:00.000Z",
+      "2018-12-17T00:00:00.000Z"
     ],
     "published": 2018,
     "goodreads": "https://www.goodreads.com/book/show/41443051-the-truth-pixie",
@@ -2750,8 +2795,8 @@
       "2019-07-06T00:00:00.000Z"
     ],
     "start": [
-      "2017-04-20T00:00:00.000Z",
-      "2019-07-03T00:00:00.000Z"
+      "2019-07-03T00:00:00.000Z",
+      "2017-04-20T00:00:00.000Z"
     ],
     "published": 2013,
     "goodreads": "https://www.goodreads.com/book/show/16130537-the-humans",
@@ -2888,8 +2933,8 @@
       "2020-12-31T00:00:00.000Z"
     ],
     "start": [
-      "2016-12-21T00:00:00.000Z",
-      "2020-11-29T00:00:00.000Z"
+      "2020-11-29T00:00:00.000Z",
+      "2016-12-21T00:00:00.000Z"
     ],
     "published": 2016,
     "goodreads": "https://www.goodreads.com/book/show/26805962-a-boy-called-christmas",
