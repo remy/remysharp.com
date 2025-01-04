@@ -51515,5 +51515,45 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "server-isnt-sending-content-length": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "André Claaßen",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/4ad0ca924ffc2fba80c4c3bdb2dbcf0551aa9dc8c884f4d862b5f1bf77755901.png",
+        "url": "https://ruhr.social/@andreclaassen"
+      },
+      "url": "https://front-end.social/@rem/113764725159035865#favorited-by-109363679236147973",
+      "published": null,
+      "wm-received": "2025-01-03T21:13:29Z",
+      "wm-id": 1871766,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/113764725159035865/109363679236147973",
+      "wm-target": "https://remysharp.com/2025/01/03/server-isnt-sending-content-length",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/01/03/server-isnt-sending-content-length",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonas Köritz",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fc30791b1bb8660c66bdd8bab86a342d6400ea579b640ba0ddda072f125230dc.jpg",
+        "url": "https://social.jonaskoeritz.de/@jonas"
+      },
+      "url": "https://front-end.social/@rem/113764725159035865#favorited-by-109383381162129970",
+      "published": null,
+      "wm-received": "2025-01-03T20:20:23Z",
+      "wm-id": 1871757,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/113764725159035865/109383381162129970",
+      "wm-target": "https://remysharp.com/2025/01/03/server-isnt-sending-content-length",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/01/03/server-isnt-sending-content-length",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

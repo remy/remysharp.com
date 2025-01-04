@@ -37,6 +37,13 @@ $ curl -I -X GET example.com
 
 Now we just have the headers and we can check if anything is missing.
 
+---
+
+<div class="update">
+<strong>Note that the information about browsers is completely wrong. I <em>thought</em> the header was being synthesised by the browser, but if you look carefully the header is in the raw response. I'm sure I saw it was being added, but I now suspect I was just confused whilst debugging. I've left this here in case it's at all useful, but keep in mind it's wrong!</strong></div>
+
+**&lt;wrong-content&gt;**
+
 A note about debugging with browser tools: browsers are going to augment the "raw" request. Firstly you have caching in play (so fire up the privacy window and disable caching from the network panel), but also they show you how _they_ interpreted the headers.
 
 This is Firefox for instance on `https://www.google.com`:
@@ -48,6 +55,10 @@ Whereas if we tick that "raw" checkbox, we can see the `content-length` was neve
 ![Firefox raw headers](/images/firefox-headers-raw.png)
 
 Chrome will also add the header (with no option for the original response) but show it as a content length of zero.
+
+**&lt;/wrong-content&gt;**
+
+---
 
 So, make sure you're testing as close to the metal as possible.
 
