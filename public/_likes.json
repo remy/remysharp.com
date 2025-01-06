@@ -51554,6 +51554,25 @@
       "like-of": "https://remysharp.com/2025/01/03/server-isnt-sending-content-length",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Paul Shryock",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/dc1130da292fb10c0b88d81ea863130c61fee31124cdae92c8ef5c6c025b3259.jpg",
+        "url": "https://phpc.social/@paulshryock"
+      },
+      "url": "https://front-end.social/@rem/113764725159035865#favorited-by-111015705424563299",
+      "published": null,
+      "wm-received": "2025-01-05T11:32:29Z",
+      "wm-id": 1872303,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/113764725159035865/111015705424563299",
+      "wm-target": "https://remysharp.com/2025/01/03/server-isnt-sending-content-length",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/01/03/server-isnt-sending-content-length",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }
