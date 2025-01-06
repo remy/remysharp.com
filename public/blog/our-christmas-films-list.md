@@ -185,12 +185,13 @@ This is the year we started sharing our Christmas Movie day with the kids, so ou
 * [Babes in Toyland (1934)](https://www.imdb.com/title/tt0024852/)
 * [Genie (2023)](https://www.imdb.com/title/tt24429218/)
 * [Dear Santa (2024)](https://www.imdb.com/title/tt2396431/)
-* [The Holdovers (2023)](https://www.imdb.com/title/tt14849194/)
+* [Red One (2024)](https://www.imdb.com/title/tt14948432/)
 
 In 2024 we actively decided to bring back films from previous viewing years where the kids hadn't seen the movies.
 
 ## Future Potentials
 
+* [The Holdovers (2023)](https://www.imdb.com/title/tt14849194/)
 * [El Camino Christmas (2017)](https://www.imdb.com/title/tt3255590/)
 * [A Christmas Story Christmas (2022)](https://www.imdb.com/title/tt17220704/)
 * [Hogfather (2006)](https://m.imdb.com/title/tt0765458/) (possibly…it's 3 hours!)
