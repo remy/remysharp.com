@@ -1,5 +1,19 @@
 [
   {
+    "title": "The Echo Wife",
+    "author": "Sarah Gailey",
+    "published": 2021,
+    "pages": 347,
+    "goodreads": "https://www.goodreads.com/book/show/56658158-the-echo-wife",
+    "goodreads_id": 56658158,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610561821l/56658158._SX315_.jpg",
+    "read": "2025-01-07T00:00:00.000Z",
+    "start": "2025-01-01T00:00:00.000Z",
+    "rating": 0,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2025/the-echo-wife.md",
+    "slug": "the-echo-wife"
+  },
+  {
     "title": "Starter Villain",
     "author": "John Scalzi",
     "published": 2023,
@@ -1436,8 +1450,8 @@
       "2023-05-26T00:00:00.000Z"
     ],
     "start": [
-      "2022-12-10T00:00:00.000Z",
-      "2019-08-17T00:00:00.000Z"
+      "2019-08-17T00:00:00.000Z",
+      "2022-12-10T00:00:00.000Z"
     ],
     "published": 1938,
     "goodreads": "https://www.goodreads.com/book/show/2277185.Miss_Pettigrew_Lives_for_a_Day",
@@ -1803,8 +1817,8 @@
       "2019-12-13T00:00:00.000Z"
     ],
     "start": [
-      "2019-12-13T00:00:00.000Z",
-      "2018-12-17T00:00:00.000Z"
+      "2018-12-17T00:00:00.000Z",
+      "2019-12-13T00:00:00.000Z"
     ],
     "published": 2018,
     "goodreads": "https://www.goodreads.com/book/show/41443051-the-truth-pixie",
@@ -2795,8 +2809,8 @@
       "2019-07-06T00:00:00.000Z"
     ],
     "start": [
-      "2019-07-03T00:00:00.000Z",
-      "2017-04-20T00:00:00.000Z"
+      "2017-04-20T00:00:00.000Z",
+      "2019-07-03T00:00:00.000Z"
     ],
     "published": 2013,
     "goodreads": "https://www.goodreads.com/book/show/16130537-the-humans",
@@ -2933,8 +2947,8 @@
       "2020-12-31T00:00:00.000Z"
     ],
     "start": [
-      "2020-11-29T00:00:00.000Z",
-      "2016-12-21T00:00:00.000Z"
+      "2016-12-21T00:00:00.000Z",
+      "2020-11-29T00:00:00.000Z"
     ],
     "published": 2016,
     "goodreads": "https://www.goodreads.com/book/show/26805962-a-boy-called-christmas",
