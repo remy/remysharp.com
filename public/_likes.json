@@ -51669,5 +51669,64 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "what-is-good-web-design-and-bad-web-design": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Frank // Mottokrosh",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/65e8e333b2c853c15f1db16680518c142ff15807d8a0f6e7b451b23a6851ee82.jpg",
+        "url": "https://social.mottokrosh.com/@mottokrosh"
+      },
+      "url": "https://front-end.social/@rem/113833433821070051#favorited-by-112009595676132535",
+      "published": null,
+      "wm-received": "2025-01-17T18:58:02Z",
+      "wm-id": 1876818,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/113833433821070051/112009595676132535",
+      "wm-target": "https://remysharp.com/2025/01/15/what-is-good-web-design-and-bad-web-design",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/01/15/what-is-good-web-design-and-bad-web-design",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Neblib",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/017a5292a4edd2ad09a53d9678237c8c92506f069451710c607b3fd0d2f76cac.png",
+        "url": "https://mastodo.neoliber.al/@Neblib"
+      },
+      "url": "https://front-end.social/@rem/113833433821070051#favorited-by-110545323974677569",
+      "published": null,
+      "wm-received": "2025-01-15T21:18:16Z",
+      "wm-id": 1876007,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/113833433821070051/110545323974677569",
+      "wm-target": "https://remysharp.com/2025/01/15/what-is-good-web-design-and-bad-web-design",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/01/15/what-is-good-web-design-and-bad-web-design",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dominic Mitchell",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/399f056f9992eb61f27338554a9386112d763abe2ba904593f5e2c887f2f57ac.jpg",
+        "url": "https://bsky.app/profile/dom.happygiraffe.net"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lfsag6s2222b#liked_by_did:plc:dp4st3gx52wilrl435ncj7u3",
+      "published": null,
+      "wm-received": "2025-01-15T20:59:12Z",
+      "wm-id": 1876003,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lfsag6s2222b/did%253Aplc%253Adp4st3gx52wilrl435ncj7u3",
+      "wm-target": "https://remysharp.com/2025/01/15/what-is-good-web-design-and-bad-web-design",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/01/15/what-is-good-web-design-and-bad-web-design",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
