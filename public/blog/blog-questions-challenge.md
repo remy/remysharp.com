@@ -11,7 +11,7 @@ I remember seeing something very similar doing the rounds on that site we used t
 
 So here's my hat in the ring.
 
-<!--  -->
+<!-- more -->
 
 ## Why did you start blogging in the first place?
 
