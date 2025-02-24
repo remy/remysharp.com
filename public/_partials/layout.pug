@@ -9,6 +9,9 @@ html#remysharp-com(lang="en")
     - var desc = title === site_title ? title + ' :: ' + site_description : title || site_description
     if excerpt
       - desc = metaExcerpt
+    if summary
+      - desc = summary
+
     meta(name="source" content="https://github.com/remy/remysharp.com")
     meta(name="description" content=`${desc}`)
     meta(name="author" content="Remy Sharp")
