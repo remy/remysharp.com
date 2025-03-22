@@ -15,7 +15,7 @@ That's all changed now.
 
 We, the web people, already knew that companies had, without permission, slurped up all our content to train their LLMs.
 
-To some degree it was legitimate (though I'm not sure the licence on the site would be respected, such as creative commons) - our blog posts were on the open, and pubic web.
+To some degree it was legitimate (though I'm not sure the licence on the site would be respected, such as creative commons) - our blog posts were on the open, and public web.
 
 I'm certainly not justifying the carte blanche scraping and repurposing of our blog posts to help line the already rich pockets of tech bros.
 
