@@ -40,7 +40,7 @@ There's piracy behind closed doors and private use (bad), and there's what Meta 
 
 What are the ramifications?
 
-Actual ROLF. Are you fucking kidding me? Those with power have proven time and time again in this last decade that they're not accountable. The answer to no one. There's no ramifications. None.
+Actual ROFL. Are you fucking kidding me? Those with power have proven time and time again in this last decade that they're not accountable. The answer to no one. There's no ramifications. None.
 
 So. I wanted to mark on my blog, for prosperity's sake, that piracy is dead. Because without an reaction there is no action, ego: piracy doesn't really exist in today's age of AI and the rich and powerful.
 
