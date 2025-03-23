@@ -42,6 +42,6 @@ What are the ramifications?
 
 Actual ROFL. Are you fucking kidding me? Those with power have proven time and time again in this last decade that they're not accountable. The answer to no one. There's no ramifications. None.
 
-So. I wanted to mark on my blog, for prosperity's sake, that piracy is dead. Because without an reaction there is no action, ego: piracy doesn't really exist in today's age of AI and the rich and powerful.
+So. I wanted to mark on my blog, for posterity's sake, that piracy is dead. Because without an reaction there is no action, ergo: piracy doesn't really exist in today's age of AI and the rich and powerful.
 
 Though, I somehow suspect the hammer is being kept on the side just in case us little people step out of line and "pirate" something for our own use.
