@@ -3,7 +3,7 @@
   "description": "Remy Sharp's b:log",
   "main": "./lib/index.js",
   "engines": {
-    "node": "18"
+    "node": "20"
   },
   "prettier": {
     "singleQuote": true,

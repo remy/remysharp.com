@@ -45819,6 +45819,63 @@
       "like-of": "https://remysharp.com/2019/04/15/scratch-kid",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jon",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/2cc7bdd2b3f1c8e5972702d0f5f50893277fdd3467749a546c445c66af90c779.png",
+        "url": "https://mastodon.social/@scrwd"
+      },
+      "url": "https://front-end.social/@rem/114127161008175711#favorited-by-109288830979951165",
+      "published": null,
+      "wm-received": "2025-03-08T18:48:37Z",
+      "wm-id": 1890989,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114127161008175711/109288830979951165",
+      "wm-target": "https://remysharp.com/2019/04/15/scratch-kid",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2019/04/15/scratch-kid",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sara Joy :happy_pepper:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a1193c9b5c0242a99c7c91f3c55c4ec4765c0451c5a65c55a2eb51af89d65ec2.jpg",
+        "url": "https://front-end.social/@sarajw"
+      },
+      "url": "https://front-end.social/@rem/114127161008175711#favorited-by-109295906487756020",
+      "published": null,
+      "wm-received": "2025-03-08T14:58:54Z",
+      "wm-id": 1890853,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114127161008175711/109295906487756020",
+      "wm-target": "https://remysharp.com/2019/04/15/scratch-kid",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2019/04/15/scratch-kid",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chee Aun ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fa755647a51dd7e0f1211bd4477da5f862459350b4f063ac31acec113fbb4b55.jpg",
+        "url": "https://mastodon.social/@cheeaun"
+      },
+      "url": "https://front-end.social/@rem/114127161008175711#favorited-by-109295222192024434",
+      "published": null,
+      "wm-received": "2025-03-08T14:58:51Z",
+      "wm-id": 1890852,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114127161008175711/109295222192024434",
+      "wm-target": "https://remysharp.com/2019/04/15/scratch-kid",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2019/04/15/scratch-kid",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "search-dynamic-shortcut-links": [
@@ -52092,6 +52149,2062 @@
       "wm-target": "https://remysharp.com/2025/02/03/home-assistant-how-get-realtime-electricity-and-gas.md",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2025/02/03/home-assistant-how-get-realtime-electricity-and-gas.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "devs-draw-your-line": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Antoni Kępiński",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/d2ca1d39cd9183d1db3537fc6eb07da1cbd56da25b37a54c75b04f156b4a3fab.jpg",
+        "url": "https://bsky.app/profile/xxczaki.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:sn2lhvyb7oun7elxv2hwg3rx",
+      "published": null,
+      "wm-received": "2025-03-10T13:50:41Z",
+      "wm-id": 1891354,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Asn2lhvyb7oun7elxv2hwg3rx",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "neither local nor real",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/ff24be0083808e0e6edb3b7ab942f174563bc9c882c1790cd06b0c020074e0c7.jpg",
+        "url": "https://bsky.app/profile/jamessocol.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:35b2uplnnngoi5pho3h2whdj",
+      "published": null,
+      "wm-received": "2025-03-10T13:50:40Z",
+      "wm-id": 1891353,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253A35b2uplnnngoi5pho3h2whdj",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stephen Scott",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/b8388107bb92874e46c49617baa53aedf24a1f778fbf17a74cb3571c285f0683.jpg",
+        "url": "https://bsky.app/profile/sassquad.net"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:hkqqtpy6cwwzkljkiexby6n6",
+      "published": null,
+      "wm-received": "2025-03-10T13:15:49Z",
+      "wm-id": 1891338,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Ahkqqtpy6cwwzkljkiexby6n6",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chuck Pierce",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/b9487923b90586770fa2ab5a6fd1236a331b6050b96cb51e455b617a7bd3e735.jpg",
+        "url": "https://bsky.app/profile/charlespierce.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:3iy7xm4thxzodsdj5so7qzwu",
+      "published": null,
+      "wm-received": "2025-03-10T13:15:48Z",
+      "wm-id": 1891337,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253A3iy7xm4thxzodsdj5so7qzwu",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/2f7c0f5d2c43b68cc28843fe3dcebab913cf44e853ea84932c57f1a9c6152dea.jpg",
+        "url": "https://bsky.app/profile/matbush.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:4ftqavkhfliz5ifwvbabpchl",
+      "published": null,
+      "wm-received": "2025-03-10T12:18:40Z",
+      "wm-id": 1891314,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253A4ftqavkhfliz5ifwvbabpchl",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jordana Fung ????????????????",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/ffbb8bd789285fac863dfa59ec6f2066f31d826c4204d9e44dbf7312466a325d.jpg",
+        "url": "https://bsky.app/profile/jordana.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:j6imbcirxltscvh3u6w6thku",
+      "published": null,
+      "wm-received": "2025-03-09T20:18:14Z",
+      "wm-id": 1891218,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Aj6imbcirxltscvh3u6w6thku",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "chiborg",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/af7fb9b6d3ec9aa20472603e74ae4d21130cf2f684e53ab7dad0e53f733ebd2d.jpg",
+        "url": "https://chaos.social/@chiborg"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109308798797741096",
+      "published": null,
+      "wm-received": "2025-03-09T15:56:09Z",
+      "wm-id": 1891195,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109308798797741096",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bill Horsman",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5cb6b9d9d48bbf37b9cf31e1515bf83bc7e447eb34cb5450b6b9711b8bc5fc27.png",
+        "url": "https://mastodon.scot/@billhorsman"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109372087005574216",
+      "published": null,
+      "wm-received": "2025-03-09T12:11:51Z",
+      "wm-id": 1891164,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109372087005574216",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Network == Abstraction Layer",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e8d2f525bc0d8fccf54798cde2601f573b1e45cce28a08a7a28c05a60b9f2a3e.jpg",
+        "url": "https://bsd.network/@overunderlay"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-110502847732242531",
+      "published": null,
+      "wm-received": "2025-03-09T10:47:34Z",
+      "wm-id": 1891154,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/110502847732242531",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jenny Wong",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/abf82e259599c6a0f115de3cb70d655581bf79e0876e244b856899d1e73ad781.jpg",
+        "url": "https://bsky.app/profile/jwo.ng"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:rkcv3raf45wauuy6nmd7xrzi",
+      "published": null,
+      "wm-received": "2025-03-09T06:34:46Z",
+      "wm-id": 1891133,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Arkcv3raf45wauuy6nmd7xrzi",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Donna",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/850eeac8d97af26ecd585266474eaad4e16dadeb60f0d6770d9139ac33834e12.jpg",
+        "url": "https://bsky.app/profile/donnahogan.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:iofoa3hu2j4dnll37lisudyy",
+      "published": null,
+      "wm-received": "2025-03-09T06:06:38Z",
+      "wm-id": 1891126,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Aiofoa3hu2j4dnll37lisudyy",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Taylor Howard",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/caf3279815703c5547c5e8fde5da7fe1d31e406e915622333fbaf684792af54e.jpg",
+        "url": "https://bsky.app/profile/tdh55.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:qstp5fqcknhclvlfhehs7amb",
+      "published": null,
+      "wm-received": "2025-03-09T00:03:53Z",
+      "wm-id": 1891109,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Aqstp5fqcknhclvlfhehs7amb",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "theAdhocracy",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/0838a296bd16bc425cdb9231f002f280fdc8e6ed414508812e518c4895e43ea5.jpg",
+        "url": "https://bsky.app/profile/theadhocracy.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:tjicutk2njrbwj5hpcpgkdev",
+      "published": null,
+      "wm-received": "2025-03-08T22:56:59Z",
+      "wm-id": 1891106,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Atjicutk2njrbwj5hpcpgkdev",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "uncapybarable",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/649925ab98f825f5fdcb1d5dc46dc8db166e06dbb6e288c3d2b8100392358a51.jpg",
+        "url": "https://mastodon.social/@uncapybarable"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109294394407387856",
+      "published": null,
+      "wm-received": "2025-03-08T22:33:35Z",
+      "wm-id": 1891105,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109294394407387856",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "205TF",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/251b4742c90e4a804ff38076f5c789f73f6fdd3e0f1c9d2ce4e51ac37878c11c.jpg",
+        "url": "https://bsky.app/profile/205tf.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:glib2jvqhde2tat43rs3jv3t",
+      "published": null,
+      "wm-received": "2025-03-08T22:23:06Z",
+      "wm-id": 1891104,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Aglib2jvqhde2tat43rs3jv3t",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "LizardLich ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e9cbdeba85d81eb03d4ee5edc98652112f98a159e23e73784f6566070c939e23.png",
+        "url": "https://infosec.exchange/@lizardlich"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-114128968910998431",
+      "published": null,
+      "wm-received": "2025-03-08T21:58:28Z",
+      "wm-id": 1891099,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/114128968910998431",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/5e3f812d346f4b68032b55ce3104cf9e97b4c01a54161e893dfba9f22ec086cd.jpg",
+        "url": "https://bsky.app/profile/adamsea.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:z3e4dqbn5v7ushd3n3nrryr3",
+      "published": null,
+      "wm-received": "2025-03-08T18:54:20Z",
+      "wm-id": 1890990,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Az3e4dqbn5v7ushd3n3nrryr3",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nathan Bottomley",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a8d418f832f6cf3e061a7c4890edd1fe705a3e33db14fe1f22e6dbbb6af37b6c.png",
+        "url": "https://aus.social/@nathanbottomley"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109411025819855468",
+      "published": null,
+      "wm-received": "2025-03-08T18:20:24Z",
+      "wm-id": 1890983,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109411025819855468",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/ec32c985c092efab0f3d51289b20d1d3004b93f5baf1137cde5e546ecf10b0b3.jpg",
+        "url": "https://bsky.app/profile/mulch8888.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:cjbkrufysjfjpkkerzi5y6zs",
+      "published": null,
+      "wm-received": "2025-03-08T18:18:14Z",
+      "wm-id": 1890982,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Acjbkrufysjfjpkkerzi5y6zs",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Troels Thomsen",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mastodon.social/@tt"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109803040176831344",
+      "published": null,
+      "wm-received": "2025-03-08T17:53:36Z",
+      "wm-id": 1890978,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109803040176831344",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam Luptak",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/af43d5558b79b5edc63f3a28ee1250498439612372c4ec78b12ade819301305a.jpg",
+        "url": "https://bsky.app/profile/luptak.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:dtnycu5suqw6uzgsws2yqdbe",
+      "published": null,
+      "wm-received": "2025-03-08T17:49:57Z",
+      "wm-id": 1890972,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Adtnycu5suqw6uzgsws2yqdbe",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bob Monsour",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e1574a3a8665adff3c46d5c3bba9d5a209fe1c64b403509f8c34fb092c075713.png",
+        "url": "https://indieweb.social/@bobmonsour"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109383212345083136",
+      "published": null,
+      "wm-received": "2025-03-08T17:20:43Z",
+      "wm-id": 1890968,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109383212345083136",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Amelia Bellamy-Royds",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/28c3647c2db4806feca362be35e12a8cb93dfeac759fe1785dc6e65927e94463.jpg",
+        "url": "https://front-end.social/@AmeliaBR"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109288745031397981",
+      "published": null,
+      "wm-received": "2025-03-08T16:53:12Z",
+      "wm-id": 1890961,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109288745031397981",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas Vander Wal",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/a20288c7c48302cf3b9002de081a4210ed926620e7d07668be765d7b46be96ff.png",
+        "url": "https://mastodon.social/@vanderwal"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109292234081791847",
+      "published": null,
+      "wm-received": "2025-03-08T16:26:42Z",
+      "wm-id": 1890957,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109292234081791847",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Robb Owen",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/b09d734cf7449ae6f31f532cab49e30c5b2c27600076b6ebc73c87f01e274e95.jpg",
+        "url": "https://bsky.app/profile/robbowen.digital"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:aw5m5n4fdsgfldtaibyvgrp2",
+      "published": null,
+      "wm-received": "2025-03-08T16:22:02Z",
+      "wm-id": 1890943,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Aaw5m5n4fdsgfldtaibyvgrp2",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rick",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/30ce0135793b4fb2b5db62b32e0e16123f1bfeeb8fb7b78bfedf109c7275dece.jpg",
+        "url": "https://bsky.app/profile/distorx2.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:ppncluh7ymqilqsgt5qpqpwc",
+      "published": null,
+      "wm-received": "2025-03-08T16:22:02Z",
+      "wm-id": 1890944,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Appncluh7ymqilqsgt5qpqpwc",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Runako",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/7e9684413358e252dca77c6797238795766cfc1b3cbb95e39c8b76ff37a4e68d.jpg",
+        "url": "https://bsky.app/profile/runakog.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:ktnmattumcouchjrql5v2ciy",
+      "published": null,
+      "wm-received": "2025-03-08T16:22:01Z",
+      "wm-id": 1890942,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Aktnmattumcouchjrql5v2ciy",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Max Elkins",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/f44b4af5c0a17b05210d39d9f68165c41ead28532ab09b154d696969c0397a44.jpg",
+        "url": "https://bsky.app/profile/maxelkins.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:d22e5encgyiiffqskifaz5vn",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:59Z",
+      "wm-id": 1890940,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Ad22e5encgyiiffqskifaz5vn",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kriszti Z.",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/ad2182055491788946dfd303e9a1e834e4835fc2b3877d72a94a4b8c38f54ce7.jpg",
+        "url": "https://bsky.app/profile/krisztinazavecz.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:zaqtue7zlc6herjfxeyczxzb",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:59Z",
+      "wm-id": 1890941,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Azaqtue7zlc6herjfxeyczxzb",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ashlee",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/971fdc5f6c993b0bab0a997c891ea625323f824f80fd9faada5b2c860c37810e.jpg",
+        "url": "https://bsky.app/profile/ashleemboyer.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:6pjsxq4f4wvihelm4lphbk5e",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:58Z",
+      "wm-id": 1890939,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253A6pjsxq4f4wvihelm4lphbk5e",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dave",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/4e9f3118a4051efe06542bd261da89058aa7e48a68975480040d6921f55a4245.jpg",
+        "url": "https://bsky.app/profile/lethalspatula.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:zjmckaxprnusdgfbfxf3bzoh",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:57Z",
+      "wm-id": 1890938,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Azjmckaxprnusdgfbfxf3bzoh",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "フィリイプ",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/32618e0aaed4008e80b87b8cfad5bdcab61bd7cfff05cf874250498088c0026b.jpg",
+        "url": "https://bsky.app/profile/fillip.pro"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:roobm3fweoenatcuemwklmd7",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:56Z",
+      "wm-id": 1890937,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Aroobm3fweoenatcuemwklmd7",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jeremy Thompson",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/f9abc7aa52fda1ec2cdde73897b05105f6908a5bc20fd70c2256a3c722d89e95.jpg",
+        "url": "https://bsky.app/profile/jhthompson.ca"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:lwdezponannqokkcuk7uuew3",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:55Z",
+      "wm-id": 1890934,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Alwdezponannqokkcuk7uuew3",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Johnny Hill",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/466f26b8be71374565b1f5e244abb19e0a1eaa282dbc4e31d7775b52de02b510.jpg",
+        "url": "https://bsky.app/profile/thejohnnyhill.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:gletge5gou6olfyem7d3puip",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:55Z",
+      "wm-id": 1890935,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Agletge5gou6olfyem7d3puip",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pete Codes",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/e6704bd745742cd1fbc1710b4270cd3e930f33260488ad459789c278543c6d43.jpg",
+        "url": "https://bsky.app/profile/petecodes.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:th2nqtejav7bhlcmg6qti53b",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:55Z",
+      "wm-id": 1890936,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Ath2nqtejav7bhlcmg6qti53b",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Agustín Díaz",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/03aa0e2e0b994315f57e64453d63e7a07480defdebaf2d4310040e5c8024b6d1.jpg",
+        "url": "https://bsky.app/profile/adiaz.uy"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:2vxe6pl72ud5prfy4wusjhdg",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:52Z",
+      "wm-id": 1890933,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253A2vxe6pl72ud5prfy4wusjhdg",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Amanda Wowk",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/53a6ec71921ebe6cd33acb5ae7d75b83ef9240b424108fb5e5e4715ed4acd76d.jpg",
+        "url": "https://bsky.app/profile/amandawowk.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:v4omu3b5ffimbr5ikje7pygj",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:51Z",
+      "wm-id": 1890932,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Av4omu3b5ffimbr5ikje7pygj",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/48ca26ee265ca0c385cbc042a19177821f44758702c27732eee035315a8ad562.jpg",
+        "url": "https://bsky.app/profile/dididididyousee.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:6347feewt4dtlgzfxhqovo2c",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:50Z",
+      "wm-id": 1890931,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253A6347feewt4dtlgzfxhqovo2c",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "314rate ????‍☠️",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/9607911a189a0980def4560dc779e26bc1f215092fe06b28fe8b728d68604114.jpg",
+        "url": "https://bsky.app/profile/314rate.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:vgjd7lncihwec2ueqqnzzgsh",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:49Z",
+      "wm-id": 1890930,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Avgjd7lncihwec2ueqqnzzgsh",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Barrow",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/29b052b1b0a8ac2d7f51c55ba50b5b0bc2e13110e2958aacacb51b69f96d7676.jpg",
+        "url": "https://bsky.app/profile/barrowc.co.uk"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:qq6swy5c6p7k4hufkcn2rj5d",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:48Z",
+      "wm-id": 1890928,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Aqq6swy5c6p7k4hufkcn2rj5d",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marius Stuparu",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/3ef26ab0872fd0455fda5383cba59fc7fc1628e44b9ced8fec6029dea6cc58d1.jpg",
+        "url": "https://bsky.app/profile/mariusstuparu.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:o2mgdopxidsh3jeunqur7epc",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:48Z",
+      "wm-id": 1890929,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Ao2mgdopxidsh3jeunqur7epc",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rosa",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/e11fcefbce39db32cad8876cb2b64b140169c1713ca288ada4a30d6b4cb74207.jpg",
+        "url": "https://bsky.app/profile/rosa.codes"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:44vomsny5kg6hof7chvui46h",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:47Z",
+      "wm-id": 1890926,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253A44vomsny5kg6hof7chvui46h",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Trey Willetto",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/fb689edf12ce9f63e90c5c015a99b73e094bcc610d99aa9c5e3ff2f4ac69ea8f.jpg",
+        "url": "https://bsky.app/profile/willetto.digital"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:jfo7yuhwbxjmvi5egmtar6dy",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:47Z",
+      "wm-id": 1890927,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Ajfo7yuhwbxjmvi5egmtar6dy",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Inglis",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/174e87c1bb6f054491503c309f6befd2c12e73d856fd67fe576c21a59604173b.jpg",
+        "url": "https://bsky.app/profile/zch.co"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:xcqhk7rsguwook626u555bv2",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:46Z",
+      "wm-id": 1890925,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Axcqhk7rsguwook626u555bv2",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jmalk",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/187dc7f2f583e473e83f017485cf6d412ad9cbd02b11c8701cefd379cee130c3.jpg",
+        "url": "https://bsky.app/profile/jmalk.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:hvc2xzoi3w3eez6qvmxv6ngz",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:45Z",
+      "wm-id": 1890923,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Ahvc2xzoi3w3eez6qvmxv6ngz",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Teodora Chiosa",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/5ff6b47876b8a90c2828d54f75ec6d61a809d217c850e318b4c2dd8d34a63a6e.jpg",
+        "url": "https://bsky.app/profile/chiosa.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:6zwkktypbbjrjvw56xxgg6dg",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:45Z",
+      "wm-id": 1890924,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253A6zwkktypbbjrjvw56xxgg6dg",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mariano Miguel",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/a1abef9e369a3507b6b4d4cd74ce9870c933debe207e493b5f68c8ad3f1780db.jpg",
+        "url": "https://bsky.app/profile/marianomiguel.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:rjq2az364rsfkpodr3pf7kxt",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:43Z",
+      "wm-id": 1890921,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Arjq2az364rsfkpodr3pf7kxt",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ryan Baird",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/ce8c9d4cc022fec9709be9602931e8c9125d8e90cc2c89236bd9505f6a750dcf.jpg",
+        "url": "https://bsky.app/profile/bairrya.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:n6cr3hruxjt7zq2zvpetfqha",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:43Z",
+      "wm-id": 1890922,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253An6cr3hruxjt7zq2zvpetfqha",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "George Rodier",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/b41edd0ac4efcdbba240dffe5634580f404f94d0a91888835d7fbc1fee8713fa.jpg",
+        "url": "https://bsky.app/profile/georgerodier.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:dk66belhjtfadbud2kpbq6sc",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:42Z",
+      "wm-id": 1890919,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Adk66belhjtfadbud2kpbq6sc",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/dbb92b6c3237f00790a9c8033284d4a9a36617bc101e20cd570f80fcaa151dd3.jpg",
+        "url": "https://bsky.app/profile/victor-gp.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:526hsxlaucfbzvg5ootg5eej",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:42Z",
+      "wm-id": 1890920,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253A526hsxlaucfbzvg5ootg5eej",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jon Mulligan",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/7011de818ba5922ef69261d7443cca9460974337a454f9a46cbebfd25cd9212c.jpg",
+        "url": "https://bsky.app/profile/jonymul.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:gkh5k63bgzvqfsxj2v6j64gc",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:41Z",
+      "wm-id": 1890918,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Agkh5k63bgzvqfsxj2v6j64gc",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "????Winter Ray???? ????????️‍⚧️",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/7cddf0edb401c8decf017da682f6c3c58ea54f5ba3b906b5351bd1b1c42b1ad7.jpg",
+        "url": "https://bsky.app/profile/wintersouls.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:rug7zwrimt2plm5us5zurajj",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:40Z",
+      "wm-id": 1890917,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Arug7zwrimt2plm5us5zurajj",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jeff Bradberry",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/a434df912b54ccacf9635aab810daa99fee70d79565f919f963dceaa74d7cbca.jpg",
+        "url": "https://bsky.app/profile/jeffbradberry.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:6xcylp7bws6tsx5txrsdnlfx",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:39Z",
+      "wm-id": 1890915,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253A6xcylp7bws6tsx5txrsdnlfx",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sam Sinclair",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/af9128c695ebe830e424bc126bc2ce5e4d5d856a797285c82c5bdaa558c4826f.jpg",
+        "url": "https://bsky.app/profile/playleft.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:f7j3r3z72yyi34middgimmen",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:39Z",
+      "wm-id": 1890916,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Af7j3r3z72yyi34middgimmen",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eric Clemmons",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/f0223c3507901a81998ee2f62bfabe9fad762e66e31a3aa1800ec83dcc34394b.jpg",
+        "url": "https://bsky.app/profile/ericclemmons.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:bl43uhh2gyy5xdpzafwhflgi",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:38Z",
+      "wm-id": 1890914,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Abl43uhh2gyy5xdpzafwhflgi",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Greg Daynes",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/a28ad3540570bc5fb73aafa93085e8c39cf3c303b7fd0fa8569729a1884026fb.jpg",
+        "url": "https://bsky.app/profile/gregdaynes.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:xc4vyoifabmibi2du3tvmqgl",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:36Z",
+      "wm-id": 1890913,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Axc4vyoifabmibi2du3tvmqgl",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kiran",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/6c50302bfe9e09a142c072bdf2171713c08131884fa6903d93a41b1dc1fac3a9.jpg",
+        "url": "https://bsky.app/profile/kiranjv.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:sgyq2nj7p5mbv45nmq77rody",
+      "published": null,
+      "wm-received": "2025-03-08T16:21:35Z",
+      "wm-id": 1890912,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Asgyq2nj7p5mbv45nmq77rody",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gareth Jones ➡️ TFNation 2024",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d066a32657d12a70df62cd2e66af5d7b09bc2ac8a37023cba50c8680faa342f1.jpg",
+        "url": "https://mastodon.social/@4foot30"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109298968178578026",
+      "published": null,
+      "wm-received": "2025-03-08T15:26:53Z",
+      "wm-id": 1890898,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109298968178578026",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michael Scharnagl",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/10a799ca246e89dbf789f2b9bbaa32012d6e3b8eafa7065cd1e540d4fc74f934.jpg",
+        "url": "https://mastodon.social/@justmarkup"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109288607351017057",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:47Z",
+      "wm-id": 1890896,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109288607351017057",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chee Aun ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/fa755647a51dd7e0f1211bd4477da5f862459350b4f063ac31acec113fbb4b55.jpg",
+        "url": "https://mastodon.social/@cheeaun"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109295222192024434",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:45Z",
+      "wm-id": 1890895,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109295222192024434",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Al Power",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/cdd6987c3582b077598bcb46dab9e8da980d8dca170e5ba5f5b78c95a43da0e9.jpg",
+        "url": "https://mastodon.social/@alpower"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-113131275132234141",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:19Z",
+      "wm-id": 1890880,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/113131275132234141",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Schofield",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/8daee2e43ad5db5086664e27fc4d6189ae1546a92801fbd0ce6e3e5f384f3f58.jpg",
+        "url": "https://mastodon.social/@urlyman"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109338564626822745",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:19Z",
+      "wm-id": 1890881,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109338564626822745",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stephen Farrugia",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/849cc721fe9e02277a7d9fa5b24b649c2570ef813fa3bbc7d451fea344ebd70a.jpg",
+        "url": "https://hci.social/@fasterandworse"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109382725461191120",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:18Z",
+      "wm-id": 1890879,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109382725461191120",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ana Tudor ????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b79dd28a825dfcb6f20c8d2bfa9b0565d9e0d2e113d0c6b2db5e5fe8bd1516f1.jpg",
+        "url": "https://mastodon.social/@anatudor"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109289827910583255",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:17Z",
+      "wm-id": 1890878,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109289827910583255",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Baldur Bjarnason",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/cc8554ba583793b416ccbb17bc1d574b8c60c5e53c11aabef6c9a8f806a5d4e2.jpg",
+        "url": "https://toot.cafe/@baldur"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109292253091046345",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:16Z",
+      "wm-id": 1890877,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109292253091046345",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "scmbradley",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/333052756c951f26ae30e0761c78775894d505e50221e87a9cebaacf4ebe7ed9.jpg",
+        "url": "https://mathstodon.xyz/@Scmbradley"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109321471549115844",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:15Z",
+      "wm-id": 1890876,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109321471549115844",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Cameron Wardzala",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/e10564b4d374686573c572fa5f3574f14ca52add9498f56afc5d047c6669f9c2.png",
+        "url": "https://mastodon.social/@cwardzala"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109303818248623728",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:14Z",
+      "wm-id": 1890873,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109303818248623728",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Daniel",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/9f873b0555abb0b565d0d1b10ac1304d8285b19490fc1b1e1da7060f177354ba.jpg",
+        "url": "https://social.hnnng.space/@puresick"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-111692642733927468",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:14Z",
+      "wm-id": 1890874,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/111692642733927468",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "wall-e / Daniel",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/ab44be99e92cff4a0f97dbfa34ddf253086ba5d4705a42d2aad9ed44df7589c1.jpg",
+        "url": "https://ioc.exchange/@wall_e"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109348091171282463",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:14Z",
+      "wm-id": 1890875,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109348091171282463",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "MichD",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d98aa31f616a11891de3ed01e1f124748ddb1640ec8906ad734d8624e1e29e8f.jpg",
+        "url": "https://mastodon.social/@MichDdev"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109313098005142913",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:13Z",
+      "wm-id": 1890872,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109313098005142913",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Elizabeth Ayer",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/83fd9b79e77f32a062c988cabbef950d69e3d05374d08ae4228912e1e5c3df4f.png",
+        "url": "https://mastodon.social/@elizayer"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109319895808144438",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:12Z",
+      "wm-id": 1890871,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109319895808144438",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rich Adase",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/ca60d3f98765a39ba613ce0480b289c3dc54bb6b8950f6fdb5cb8618b18a851f.png",
+        "url": "https://mastodon.social/@richroc"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-109376380459448868",
+      "published": null,
+      "wm-received": "2025-03-08T14:59:11Z",
+      "wm-id": 1890870,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/109376380459448868",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rémi Forte",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/9d9c5dd98c380ccf8ca9c82f373bea1ccb6ef0b7ff1d30e08772f3ccebdbc979.jpg",
+        "url": "https://bsky.app/profile/rmfrt.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:7p3f5ytjrm5whf3qex2fuiey",
+      "published": null,
+      "wm-received": "2025-03-16T16:14:17Z",
+      "wm-id": 1893922,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253A7p3f5ytjrm5whf3qex2fuiey",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "André Ruffert",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/4c49bf4966f5f5da80ada6a204758432cfc7330a4e93541f39a89b9cc8232849.jpg",
+        "url": "https://bsky.app/profile/andreruffert.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ljufcypmos2e#liked_by_did:plc:sdt6u6ybm3ck5vueftpvnxms",
+      "published": null,
+      "wm-received": "2025-03-16T14:47:18Z",
+      "wm-id": 1893909,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ljufcypmos2e/did%253Aplc%253Asdt6u6ybm3ck5vueftpvnxms",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Konstantinos Kitsios",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/974495037eeda3f79d72dedd6f7db31278a5308d681560225a1a7c2d739a3081.png",
+        "url": "https://mastodon.social/@kitsiosk"
+      },
+      "url": "https://front-end.social/@rem/114126512364755714#favorited-by-114214010059710184",
+      "published": null,
+      "wm-received": "2025-03-23T22:30:23Z",
+      "wm-id": 1897587,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114126512364755714/114214010059710184",
+      "wm-target": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/08/devs-draw-your-line",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "the-day-piracy-changed": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James :ruby:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/3f862b11177a2237731e74d74ed43468f479b22acf8283a13abf5bea555237ff.jpg",
+        "url": "https://ruby.social/@floehopper"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109310914916270208",
+      "published": null,
+      "wm-received": "2025-03-22T16:55:13Z",
+      "wm-id": 1897206,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109310914916270208",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tristan",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/bf9551c7cb56ca3c4be4bb36abb881185fb4d89d05ba6a742e0cfd2a38eede17.jpg",
+        "url": "https://bsky.app/profile/tristan.ink"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lkxjszm3qc26#liked_by_did:plc:v6chybsoptumpkuvywkub4o5",
+      "published": null,
+      "wm-received": "2025-03-22T16:35:45Z",
+      "wm-id": 1897204,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lkxjszm3qc26/did%253Aplc%253Av6chybsoptumpkuvywkub4o5",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kriszti Z.",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/ad2182055491788946dfd303e9a1e834e4835fc2b3877d72a94a4b8c38f54ce7.jpg",
+        "url": "https://bsky.app/profile/krisztinazavecz.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lkxjszm3qc26#liked_by_did:plc:zaqtue7zlc6herjfxeyczxzb",
+      "published": null,
+      "wm-received": "2025-03-22T16:00:42Z",
+      "wm-id": 1897198,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lkxjszm3qc26/did%253Aplc%253Azaqtue7zlc6herjfxeyczxzb",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/fdcb831cb2852dedbc3270e77e9ecadb1e8bf06afaea4a4bcd8a7852f430248f.jpg",
+        "url": "https://bsky.app/profile/rportelaw.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lkxjszm3qc26#liked_by_did:plc:e47lxqnlekvc4jax7uhi7od5",
+      "published": null,
+      "wm-received": "2025-03-22T14:33:01Z",
+      "wm-id": 1897184,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lkxjszm3qc26/did%253Aplc%253Ae47lxqnlekvc4jax7uhi7od5",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dawn Ahukanna",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/05470784dcdce4f0ee7ca12b1ce68c465a3ef168813eaaaf992343e522348b89.jpg",
+        "url": "https://mastodon.social/@dahukanna"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109399571815313497",
+      "published": null,
+      "wm-received": "2025-03-22T14:16:54Z",
+      "wm-id": 1897183,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109399571815313497",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Joe Gaffey",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/7da57e900fa8f69ececb9ec3106cb541a15b1025b16434c14646b5df00229f7b.jpg",
+        "url": "https://mastodon.social/@joegaffey"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109295592343237392",
+      "published": null,
+      "wm-received": "2025-03-22T14:16:53Z",
+      "wm-id": 1897182,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109295592343237392",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon St.Laurent",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/77259943f6dda800130ad97ec6c4f45dab3a25bce08f286bdf43823f10dbb3cc.jpg",
+        "url": "https://mastodon.social/@simonstl"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109354131204471029",
+      "published": null,
+      "wm-received": "2025-03-22T13:45:11Z",
+      "wm-id": 1897165,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109354131204471029",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jan Lehnardt :couchdb:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d1630de1028ec04a96edcda4ee4b4be17305c7a4869045167c37e2124cbc7960.jpg",
+        "url": "https://narrativ.es/@janl"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109728131648997979",
+      "published": null,
+      "wm-received": "2025-03-22T13:45:08Z",
+      "wm-id": 1897164,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109728131648997979",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "wall-e / Daniel",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/ab44be99e92cff4a0f97dbfa34ddf253086ba5d4705a42d2aad9ed44df7589c1.jpg",
+        "url": "https://ioc.exchange/@wall_e"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109348091171282463",
+      "published": null,
+      "wm-received": "2025-03-22T13:45:07Z",
+      "wm-id": 1897163,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109348091171282463",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Luke",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b686c740966dac93203e65ae34c7a0aa7660eed6fbc00af080c474f760670476.png",
+        "url": "https://social.treehouse.systems/@resavek"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-110095248550701866",
+      "published": null,
+      "wm-received": "2025-03-22T13:45:06Z",
+      "wm-id": 1897162,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/110095248550701866",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "joosteto",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/cbb9071f9e102654e93038a3a6526f6e1d0f7c6ae115899c66bd3bbb9696460d.jpg",
+        "url": "https://mamot.fr/@joosteto"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109459891774359769",
+      "published": null,
+      "wm-received": "2025-03-22T13:45:04Z",
+      "wm-id": 1897161,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109459891774359769",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Josh Bush",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/f38e5092f57d9688e536371117075d2b514924afaa0c914dac1708da6d62775e.jpg",
+        "url": "https://bsky.app/profile/digitalbush.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lkxjszm3qc26#liked_by_did:plc:w7t2tpjtc4srihsu7kxzd22r",
+      "published": null,
+      "wm-received": "2025-03-22T12:38:09Z",
+      "wm-id": 1897137,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lkxjszm3qc26/did%253Aplc%253Aw7t2tpjtc4srihsu7kxzd22r",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ian Wootten ????",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/ac9276bb119da1f86804b5936b6834fe5e7b2d58b9804d94ca711a972cbff478.jpg",
+        "url": "https://bsky.app/profile/iwootten.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lkxjszm3qc26#liked_by_did:plc:backvnj6l2uozas5mtjigh7k",
+      "published": null,
+      "wm-received": "2025-03-22T11:42:00Z",
+      "wm-id": 1897098,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lkxjszm3qc26/did%253Aplc%253Abackvnj6l2uozas5mtjigh7k",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rowan Merewood",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/085a558f56af30bc1337bae53b2571269ab017844d037a6aab4efbf58da746ab.jpg",
+        "url": "https://bsky.app/profile/rowan-m.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lkxjszm3qc26#liked_by_did:plc:7dtviror2bcs32dnngqsf7ay",
+      "published": null,
+      "wm-received": "2025-03-22T11:41:59Z",
+      "wm-id": 1897097,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lkxjszm3qc26/did%253Aplc%253A7dtviror2bcs32dnngqsf7ay",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Arnaud Ruby Rinquin",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/271402c914ff9380e2b5fde9f4a9afb5bcd5bc705bd4bf71e53603e557d00382.jpg",
+        "url": "https://bsky.app/profile/lolcat.host"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lkxjszm3qc26#liked_by_did:plc:vxizjecldw4ka6lk5g46eunj",
+      "published": null,
+      "wm-received": "2025-03-22T11:41:58Z",
+      "wm-id": 1897095,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lkxjszm3qc26/did%253Aplc%253Avxizjecldw4ka6lk5g46eunj",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lex Lofthouse",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/e28dd2d213e6d4e31b642f3c41d6b467b2e0f7ce292d94c77878a23c00ec3be6.jpg",
+        "url": "https://bsky.app/profile/loftio.co.uk"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lkxjszm3qc26#liked_by_did:plc:gtlp2dpfk3y6scnfkyy5tjmd",
+      "published": null,
+      "wm-received": "2025-03-22T11:41:58Z",
+      "wm-id": 1897096,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lkxjszm3qc26/did%253Aplc%253Agtlp2dpfk3y6scnfkyy5tjmd",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Garbee",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/e8d323d201b8049e0f93a2fcfece2375390411f622fe18105641555610664aed.jpg",
+        "url": "https://bsky.app/profile/garbee.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lkxjszm3qc26#liked_by_did:plc:bdtjxghn24ci37axnxeo5fql",
+      "published": null,
+      "wm-received": "2025-03-22T11:41:57Z",
+      "wm-id": 1897094,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lkxjszm3qc26/did%253Aplc%253Abdtjxghn24ci37axnxeo5fql",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Terence Eden",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/dd8dfc1ce8684bec2a5d88b4eced7146e7d7dec4ae64dd8719d46f111d8df082.jpg",
+        "url": "https://bsky.app/profile/edent.tel"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lkxjszm3qc26#liked_by_did:plc:i6misxex577k4q6o7gloen4s",
+      "published": null,
+      "wm-received": "2025-03-22T11:11:47Z",
+      "wm-id": 1897083,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lkxjszm3qc26/did%253Aplc%253Ai6misxex577k4q6o7gloen4s",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steph",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/6c538669c9c54f1da5cc93f4e8e4b06d90d4dd1787d03bb0ccad7e7e2250aeeb.jpg",
+        "url": "https://mstdn.ca/@idoclosecuts"
+      },
+      "url": "https://front-end.social/@rem/114217093201534875#favorited-by-109705085538639411",
+      "published": null,
+      "wm-received": "2025-03-25T11:15:45Z",
+      "wm-id": 1898853,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114217093201534875/109705085538639411",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "JauntyWunderKind",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/9a957eb6bce9389ddb0b06a1cdd6a01a4f5062fea4498e9f5605f4d1659b2935.jpg",
+        "url": "https://bsky.app/profile/jauntywk.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lkxjszm3qc26#liked_by_did:plc:zjbq26wybii5ojoypkso2mso",
+      "published": null,
+      "wm-received": "2025-03-24T17:32:19Z",
+      "wm-id": 1898270,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lkxjszm3qc26/did%253Aplc%253Azjbq26wybii5ojoypkso2mso",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Peter Gassner",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/5fce067fe3171d5470f70d84b513789df49760ce7d1050ad81ad80dd98ac5c28.jpg",
+        "url": "https://mastodon.gassner.io/@peter"
+      },
+      "url": "https://front-end.social/@rem/114217093201534875#favorited-by-109315203692024201",
+      "published": null,
+      "wm-received": "2025-03-24T16:21:44Z",
+      "wm-id": 1898252,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114217093201534875/109315203692024201",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jfroehlich",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/b321d8321d850cd6cad3aa097331c85c77d28798752d09eceaca496d515b1910.png",
+        "url": "https://mastodon.social/@jfroehlich"
+      },
+      "url": "https://front-end.social/@rem/114217093201534875#favorited-by-109291952666240180",
+      "published": null,
+      "wm-received": "2025-03-24T15:52:35Z",
+      "wm-id": 1898240,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114217093201534875/109291952666240180",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Kaj ????????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/102cb7879fd32efa8a70b6ee8280d451e7fa1b7e3363103af60b7dee8dea6789.jpg",
+        "url": "https://mastodon.nu/@rkaj"
+      },
+      "url": "https://front-end.social/@rem/114217093201534875#favorited-by-110339808537840167",
+      "published": null,
+      "wm-received": "2025-03-24T13:34:39Z",
+      "wm-id": 1898131,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114217093201534875/110339808537840167",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Maneesh ???? ????????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/2101f7f2579895943705f27c5a3a6d9cc35dc3b8b0d00567af98964e7efca408.jpg",
+        "url": "https://mstdn.ca/@what_about_second_breakfast"
+      },
+      "url": "https://front-end.social/@rem/114217093201534875#favorited-by-110546538530002259",
+      "published": null,
+      "wm-received": "2025-03-24T12:18:46Z",
+      "wm-id": 1897980,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114217093201534875/110546538530002259",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Peter Rushforth ????????????????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/3ff48d08a59042890b4637e5ff1247a8bcb6f574a63afe67ad9b84871c3fcbe5.jpg",
+        "url": "https://mastodon.social/@prushforth"
+      },
+      "url": "https://front-end.social/@rem/114217093201534875#favorited-by-109295113510598033",
+      "published": null,
+      "wm-received": "2025-03-24T11:48:54Z",
+      "wm-id": 1897893,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114217093201534875/109295113510598033",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jan Lehnardt :couchdb:",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/d1630de1028ec04a96edcda4ee4b4be17305c7a4869045167c37e2124cbc7960.jpg",
+        "url": "https://narrativ.es/@janl"
+      },
+      "url": "https://front-end.social/@rem/114217093201534875#favorited-by-109728131648997979",
+      "published": null,
+      "wm-received": "2025-03-24T11:14:56Z",
+      "wm-id": 1897847,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114217093201534875/109728131648997979",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Greg",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/20a6df4073471e9ca4de8409bf25feafd63b09f0498701771226b1b50a597ffb.jpg",
+        "url": "https://social.coop/@Greg"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109310553664491815",
+      "published": null,
+      "wm-received": "2025-03-23T15:27:51Z",
+      "wm-id": 1897551,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109310553664491815",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Maxim",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/acccfd66b933670c6c15dd6ef387113020dd974842dcd84fae1f714a9a1b8b61.jpg",
+        "url": "https://chaos.social/@maxim"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109308123401585202",
+      "published": null,
+      "wm-received": "2025-03-23T14:00:03Z",
+      "wm-id": 1897521,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109308123401585202",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jnr in life",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/ece12617e1b4a4f2ffb895219694dba5de1723546194b705754494d16df004a4.jpg",
+        "url": "https://mastodon.social/@NigelGreenway"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109337828340810600",
+      "published": null,
+      "wm-received": "2025-03-23T14:00:02Z",
+      "wm-id": 1897520,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109337828340810600",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ciencia Al Poder",
+        "photo": "https://webmention.io/avatar/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://social.wikidex.net/@ciencia"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-111005931133430819",
+      "published": null,
+      "wm-received": "2025-03-23T09:55:55Z",
+      "wm-id": 1897483,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/111005931133430819",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "yuanchuan",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/2b078bf01d454c29967e9dafc34ad3736e5aad7f0d89ac0a644df29eabcabf33.jpg",
+        "url": "https://vis.social/@yuanchuan"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109294139551592715",
+      "published": null,
+      "wm-received": "2025-03-23T08:31:40Z",
+      "wm-id": 1897468,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109294139551592715",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2025-03-23T07:35:04Z",
+      "wm-id": 1897434,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109293603037070680",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Myphatself",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/0af02933adfc921f4d2580100cfa16bf9db1acc810869e37155b36efa80b805b.png",
+        "url": "https://mstdn.social/@Myphatself"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-109357301608907469",
+      "published": null,
+      "wm-received": "2025-03-22T18:37:20Z",
+      "wm-id": 1897239,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/109357301608907469",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
       "wm-property": "like-of",
       "wm-private": false
     }
