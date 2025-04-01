@@ -54207,6 +54207,25 @@
       "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Kaj ????????",
+        "photo": "https://webmention.io/avatar/cdn.masto.host/102cb7879fd32efa8a70b6ee8280d451e7fa1b7e3363103af60b7dee8dea6789.jpg",
+        "url": "https://mastodon.nu/@rkaj"
+      },
+      "url": "https://front-end.social/@rem/114205642289923689#favorited-by-110339808537840167",
+      "published": null,
+      "wm-received": "2025-03-29T00:02:29Z",
+      "wm-id": 1900298,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114205642289923689/110339808537840167",
+      "wm-target": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/03/22/the-day-piracy-changed",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }

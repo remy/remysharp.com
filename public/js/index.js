@@ -474,8 +474,142 @@ if (location.hostname !== 'localhost')
     100
   );
 
+whenReady.push(() => {
+  const article = document.querySelector('article');
+  if (!article) return;
+
+  const walker = document.createTreeWalker(article, NodeFilter.SHOW_TEXT, {
+    acceptNode: (node) => {
+      if (!node.nodeValue.trim()) return NodeFilter.FILTER_REJECT;
+      return NodeFilter.FILTER_ACCEPT;
+    },
+  });
+
+  while (walker.nextNode()) {
+    const node = walker.currentNode;
+    const match = node.nodeValue.match(/(w|W)/);
+    if (match) {
+      const index = match.index;
+      const char = node.nodeValue[index];
+
+      const before = node.nodeValue.slice(0, index);
+      const after = node.nodeValue.slice(index + 1);
+
+      const frag = document.createDocumentFragment();
+      if (before) frag.appendChild(document.createTextNode(before));
+
+      const span = document.createElement('span');
+      span.textContent = char;
+      span.style.cursor = 'pointer';
+      span.title = 'Do not click me, weird shit will happen';
+      span.onclick = wibble;
+      frag.appendChild(span);
+
+      if (after) frag.appendChild(document.createTextNode(after));
+
+      node.parentNode.replaceChild(frag, node);
+      break;
+    }
+  }
+});
+
 if (whenReady.length) {
   whenReady.forEach((fn) => fn());
+}
+
+// now, find the first `w` letter (lower or upper) and make it so that if you click on it, it'll call the `wibble` function. The cursor should also change to a pointer, but it's not a link, and it shouldn't break the word it's part of
+
+function wibble() {
+  if (wibble.running) return;
+  wibble.running = true;
+  const css = `
+    * {
+      cursor: default !important;
+    }
+    span.word {
+      display: inline-block;
+      white-space: nowrap;
+    }
+    span.char {
+      display: inline-block;
+      transition: transform 0.2s;
+      transform-origin: center center;
+      will-change: transform;
+    }
+  `;
+  const style = document.createElement('style');
+  style.textContent = css;
+  document.head.appendChild(style);
+
+  const skipTags = ['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEXTAREA', 'CODE', 'PRE'];
+
+  function wrapCharsByWord(node) {
+    const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, {
+      acceptNode: (n) => {
+        if (!n.textContent.trim()) return NodeFilter.FILTER_REJECT;
+        if (skipTags.includes(n.parentElement.tagName))
+          return NodeFilter.FILTER_REJECT;
+        return NodeFilter.FILTER_ACCEPT;
+      },
+    });
+
+    const toProcess = [];
+    while (walker.nextNode()) toProcess.push(walker.currentNode);
+
+    toProcess.forEach((textNode) => {
+      const frag = document.createDocumentFragment();
+      const parts = textNode.textContent.split(/(\s+)/); // keep spaces
+
+      parts.forEach((part) => {
+        if (/^\s+$/.test(part)) {
+          frag.appendChild(document.createTextNode(part));
+        } else {
+          const wordSpan = document.createElement('span');
+          wordSpan.className = 'word';
+          for (const char of part) {
+            const cSpan = document.createElement('span');
+            cSpan.className = 'char';
+            cSpan.textContent = char;
+            wordSpan.appendChild(cSpan);
+          }
+          frag.appendChild(wordSpan);
+        }
+      });
+
+      textNode.replaceWith(frag);
+    });
+  }
+
+  wrapCharsByWord(document.body);
+
+  const chars = document.querySelectorAll('span.char');
+
+  document.addEventListener('mousemove', (e) => {
+    const lensRadius = 150;
+    const maxScale = 2;
+
+    chars.forEach((span) => {
+      const r = span.getBoundingClientRect();
+      const cx = r.left + r.width / 2;
+      const cy = r.top + r.height / 2;
+
+      const dx = cx - e.clientX;
+      const dy = cy - e.clientY;
+      const dist = Math.sqrt(dx * dx + dy * dy);
+
+      if (dist < lensRadius) {
+        const strength = 1 - dist / lensRadius;
+        const scale = 1 + (maxScale - 1) * strength;
+        const repel = 12 * strength * strength;
+        const tx = (dx / dist) * repel;
+        const ty = (dy / dist) * repel;
+
+        span.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+      } else {
+        span.style.transform = 'none';
+      }
+    });
+  });
 }
 
 whenReady = {
