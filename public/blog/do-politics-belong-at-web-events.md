@@ -33,4 +33,4 @@ Discourse is fine. I was asked how I'd feel if I was at an event that was web ba
 
 What isn't okay, is if I then start to harass the speaker or become violent towards them. It's obvious, but the code of conduct would (and should) eject me immediately (at a bare minimum). Infusing a web talk with your political leaning and ideals does not equate hate speech.
 
-In an excellent talk I saw last week, the first slide, which had nothing to do with the talk itself and not even mention, simply read "protect trans kids". This is part of our web. The web where we hold the door open for others. Because *we* are the web.
+In an excellent talk I saw last week, the first slide, which had nothing to do with the talk itself and not even mentioned, simply read "protect trans kids". This is part of our web. The web where we hold the door open for others. Because *we* are the web.
