@@ -11,7 +11,7 @@ This question has been asked before and discussed before and I've always looked 
 
 <!-- more -->
 
-Firstly there's the simple idea that a web event would be possibly "pure" tech. Certainly FFConf hasn't been 100% technical for over a decade, but the person giving talks always infuses their personality into the their talks. Jokes, fun, passion, excitement, confusion - all of these add to talks, or certainly the ones we host at FFConf.
+Firstly there's the simple idea that a web event would be possibly "pure" tech. Certainly FFConf hasn't been 100% technical for over a decade, but the person giving talks always infuses their personality into their talks. Jokes, fun, passion, excitement, confusion - all of these add to talks, or certainly the ones we host at FFConf.
 
 But perhaps views on politics is somehow different?
 
