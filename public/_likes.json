@@ -54227,5 +54227,1774 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "do-politics-belong-at-web-events": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/f5dc1f00802303fcea347441f7a5379d8202ef3bd50a75438e1131a273e5bf5c.jpg",
+        "url": "https://bsky.app/profile/radinamatic.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:owjl6zx4gqpvefkpldv7qspc",
+      "published": null,
+      "wm-received": "2025-04-14T16:53:43Z",
+      "wm-id": 1904586,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aowjl6zx4gqpvefkpldv7qspc",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ariel Salminen",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/c22f4f6e86b1febe766543c20df16927bd46bc415c173610b0b4aa4b7549e35c.jpg",
+        "url": "https://bsky.app/profile/arie.ls"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:qpsx3s2etvh52nmox2l6so5a",
+      "published": null,
+      "wm-received": "2025-04-13T17:30:15Z",
+      "wm-id": 1904354,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aqpsx3s2etvh52nmox2l6so5a",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Agustín Díaz",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/03aa0e2e0b994315f57e64453d63e7a07480defdebaf2d4310040e5c8024b6d1.jpg",
+        "url": "https://bsky.app/profile/adiaz.uy"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:2vxe6pl72ud5prfy4wusjhdg",
+      "published": null,
+      "wm-received": "2025-04-12T11:44:10Z",
+      "wm-id": 1903858,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A2vxe6pl72ud5prfy4wusjhdg",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Terence Eden",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/dd8dfc1ce8684bec2a5d88b4eced7146e7d7dec4ae64dd8719d46f111d8df082.jpg",
+        "url": "https://bsky.app/profile/edent.tel"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:i6misxex577k4q6o7gloen4s",
+      "published": null,
+      "wm-received": "2025-04-12T11:12:23Z",
+      "wm-id": 1903842,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ai6misxex577k4q6o7gloen4s",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kriszti Z.",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/ad2182055491788946dfd303e9a1e834e4835fc2b3877d72a94a4b8c38f54ce7.jpg",
+        "url": "https://bsky.app/profile/krisztinazavecz.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:zaqtue7zlc6herjfxeyczxzb",
+      "published": null,
+      "wm-received": "2025-04-12T11:12:22Z",
+      "wm-id": 1903841,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Azaqtue7zlc6herjfxeyczxzb",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nicole Sullivan",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/c73faa91c7cff0ddf9ed7088efb0fdbc7f0f325c67d4b441b6c1673e317ece0a.jpg",
+        "url": "https://bsky.app/profile/nicolesullivan.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:ogvr6bniroiguypjgnedto3g",
+      "published": null,
+      "wm-received": "2025-04-12T10:41:40Z",
+      "wm-id": 1903819,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aogvr6bniroiguypjgnedto3g",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Theo Harris",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/6ed169b98375be54607dc816713cf2cbc6ea694d0d37b96c6c7fe8a5d02ba8b4.jpg",
+        "url": "https://bsky.app/profile/theosaurus-rex.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:zodrai25fks4jqpatz3yays2",
+      "published": null,
+      "wm-received": "2025-04-12T10:41:39Z",
+      "wm-id": 1903818,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Azodrai25fks4jqpatz3yays2",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Craig Butcher",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/adfe6fe839396112de873f5eefe977ac4d015f475b7adabac3f7671b62109ede.jpg",
+        "url": "https://bsky.app/profile/craigbutcher.net"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:ovqqfivup2utfmv46pqjtflm",
+      "published": null,
+      "wm-received": "2025-04-12T10:41:37Z",
+      "wm-id": 1903817,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aovqqfivup2utfmv46pqjtflm",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marko Bajlovic",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/091f7506cfd380e2c53f20bed4547eb7a9bbdcfe1206b9c6eda96d7b0e438c38.jpg",
+        "url": "https://bsky.app/profile/marko.tech"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:qwfrxx4xe4sxjjx3hdkohkqn",
+      "published": null,
+      "wm-received": "2025-04-12T03:07:19Z",
+      "wm-id": 1903526,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aqwfrxx4xe4sxjjx3hdkohkqn",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "elle",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/92bb624ca0af0e973cf5d8fa353b5133850c774063be9cca7cd765b5cec6afab.jpg",
+        "url": "https://bsky.app/profile/elle.email"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:52isu377grrhxp2lwoqsrhjy",
+      "published": null,
+      "wm-received": "2025-04-12T03:07:18Z",
+      "wm-id": 1903525,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A52isu377grrhxp2lwoqsrhjy",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mia (luddite)",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/dddac34f2904f295500eae309e9853f5ce1b6bdbbaca941fa7201147ada2a248.jpg",
+        "url": "https://bsky.app/profile/miriam.codes"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:bm5d7drix5fs77sx44xbpyww",
+      "published": null,
+      "wm-received": "2025-04-12T00:52:38Z",
+      "wm-id": 1903417,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Abm5d7drix5fs77sx44xbpyww",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Angie",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/d113c36aa93aad2bb427968a8b4195f567195fb292ab3bb33661a33fa8b50440.jpg",
+        "url": "https://bsky.app/profile/angieherrera.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:xdj6nupsl5yphwh7y7r45zej",
+      "published": null,
+      "wm-received": "2025-04-12T00:24:42Z",
+      "wm-id": 1903390,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Axdj6nupsl5yphwh7y7r45zej",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mark Tomlinson",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/4c9f417d5170001e672afdb16053864d3b28013c9674a215680dc16d8e306863.jpg",
+        "url": "https://bsky.app/profile/marktomlinson.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:cthxjdywgnkfrepeyf7cecx4",
+      "published": null,
+      "wm-received": "2025-04-11T22:35:09Z",
+      "wm-id": 1903274,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Acthxjdywgnkfrepeyf7cecx4",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ilja | Илья",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/e6cde5ee9a36f790140d424ee55830d4e10c57b6e520a4aa87326fee6529b483.jpg",
+        "url": "https://bsky.app/profile/fubits.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:6aglx53tojyuwxwueap5og3h",
+      "published": null,
+      "wm-received": "2025-04-11T20:21:01Z",
+      "wm-id": 1903005,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A6aglx53tojyuwxwueap5og3h",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Florian Sanders",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/e5b12796264ba16f05fd4d1d7e9bc9d6d9645e3eecb6c7fe45e16c44730ded45.jpg",
+        "url": "https://bsky.app/profile/florian-sanders.fr"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:ws7c2rlu2xycv76nvfkv2n6l",
+      "published": null,
+      "wm-received": "2025-04-11T20:21:00Z",
+      "wm-id": 1903004,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aws7c2rlu2xycv76nvfkv2n6l",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Morgan Roderick",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/fc29bdedd895b3f3c9601d7e791d6a32619873e11a7677487a2022f01884fb44.jpg",
+        "url": "https://bsky.app/profile/mroderick.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:pzosa6m74zsppxymuiedmyyo",
+      "published": null,
+      "wm-received": "2025-04-11T19:44:25Z",
+      "wm-id": 1902917,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Apzosa6m74zsppxymuiedmyyo",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "enderchief",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/c05858975e4d0db29951da7b17959326323cc329d52213c78ec91ab8e85d27d4.jpg",
+        "url": "https://bsky.app/profile/enderchief.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:s3n5ne2vn6sl56bv46o7ypbc",
+      "published": null,
+      "wm-received": "2025-04-11T18:29:37Z",
+      "wm-id": 1902701,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253As3n5ne2vn6sl56bv46o7ypbc",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "setmajer.bsky.social",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/e03703a4f9524d6f4b6e16b3cd41b49e9e8ecbe76f78377a81156ac5f7897557.jpg",
+        "url": "https://bsky.app/profile/setmajer.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:yi5csyl4kahn3vloqhvjsd2i",
+      "published": null,
+      "wm-received": "2025-04-11T17:52:45Z",
+      "wm-id": 1902620,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ayi5csyl4kahn3vloqhvjsd2i",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Binh Nguyen",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/ee9e3dc8d9c05ad8f3e4ef5f057a2e3bab11c111ad74e7d37e400a4e280a9b79.jpg",
+        "url": "https://bsky.app/profile/binh.computer"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:hpg3u7olehpjs6sda23xdse6",
+      "published": null,
+      "wm-received": "2025-04-11T17:22:36Z",
+      "wm-id": 1902616,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ahpg3u7olehpjs6sda23xdse6",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian LeRoux",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/df0c12aaaa38be41623206f1e1b90a275b5b16e09ab87fb0a24340849df96e09.jpg",
+        "url": "https://bsky.app/profile/brianleroux.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:ln5noi7iwtx2ysgcwuoruiys",
+      "published": null,
+      "wm-received": "2025-04-11T17:22:23Z",
+      "wm-id": 1902615,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aln5noi7iwtx2ysgcwuoruiys",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mike Aparicio",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/26be4fa5cbffd57fe091ee63e984f81188499a28121a7a648e01cc978ab96d60.jpg",
+        "url": "https://bsky.app/profile/peruvianidol.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:rj7gcscy3x3vskk7y6f2nbx6",
+      "published": null,
+      "wm-received": "2025-04-11T17:22:12Z",
+      "wm-id": 1902605,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Arj7gcscy3x3vskk7y6f2nbx6",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nate Moore",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/67cd5825a03f5b1e53ebb1dbd86ff828c12e1317a12c1fec969bf3c8c2c9bef1.jpg",
+        "url": "https://bsky.app/profile/natemoo.re"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:i2r4fkz7ge35u5tbcj2ntasf",
+      "published": null,
+      "wm-received": "2025-04-11T17:22:12Z",
+      "wm-id": 1902606,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ai2r4fkz7ge35u5tbcj2ntasf",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Katie Sylor-Miller",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/82db58ec4af7b37763e72c4509eaaa0f0449b1931f68b318a3be72953d0155f4.jpg",
+        "url": "https://bsky.app/profile/ksylor.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:36r6afmc6wnkrfb74iu4wpst",
+      "published": null,
+      "wm-received": "2025-04-11T17:22:08Z",
+      "wm-id": 1902604,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A36r6afmc6wnkrfb74iu4wpst",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Keenan Payne",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/89eef02f6d97b7c35afb120011b61155bed3725e3d580abebd165a71ecb9b328.jpg",
+        "url": "https://bsky.app/profile/keenanpayne.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:xu5wkdoyg6uqaehcuago2gin",
+      "published": null,
+      "wm-received": "2025-04-11T17:22:07Z",
+      "wm-id": 1902603,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Axu5wkdoyg6uqaehcuago2gin",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "zetashift",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/24d4c0ea494857a102fd539004772d39784395794946a7656af2b912fb6c7143.jpg",
+        "url": "https://bsky.app/profile/zetashift-01.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:xhdpunifpui6qfzfn2fdq2co",
+      "published": null,
+      "wm-received": "2025-04-11T17:22:06Z",
+      "wm-id": 1902600,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Axhdpunifpui6qfzfn2fdq2co",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Geri Reid",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/07e604bf6038cbcd466ac4f2f2b9cf5b5281ca532efdbf11eb7647667e8577d2.jpg",
+        "url": "https://bsky.app/profile/gerireid.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:ptwmfofnrjepckyhugp4jzbn",
+      "published": null,
+      "wm-received": "2025-04-11T17:22:06Z",
+      "wm-id": 1902602,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aptwmfofnrjepckyhugp4jzbn",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Joni Korpi",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/ec3e283b87130e6a6b9f30984e6abdb4a9b4a2943716f8e8a9178bba9a987d9d.jpg",
+        "url": "https://bsky.app/profile/jonikorpi.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:gwuyxh5ulu5wdi2f5ibth533",
+      "published": null,
+      "wm-received": "2025-04-11T17:22:04Z",
+      "wm-id": 1902598,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Agwuyxh5ulu5wdi2f5ibth533",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gryphon",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/92b7c13bc088983f5b6e3de134411f263004bf39d5074062c5fe99272667f29e.jpg",
+        "url": "https://bsky.app/profile/gryphonmyers.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:zcdo6qoltjzdtr267g2ipv4l",
+      "published": null,
+      "wm-received": "2025-04-11T17:22:04Z",
+      "wm-id": 1902599,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Azcdo6qoltjzdtr267g2ipv4l",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ric Wood",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/0dc7d741ca4d13ebcbc0cdc067478b2754f9fd47712635b40b408d8b38296161.jpg",
+        "url": "https://bsky.app/profile/grislyeye.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:kc6lo2m2mfjzj54humjq4usg",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:58Z",
+      "wm-id": 1902596,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Akc6lo2m2mfjzj54humjq4usg",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian Houska",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/408050db824d111d11f64460dadda2a31efd78750bc40ffc32b0e7dc22d1410e.jpg",
+        "url": "https://bsky.app/profile/houska.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:vtx2ajpaznklfklwbt7heyzu",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:58Z",
+      "wm-id": 1902597,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Avtx2ajpaznklfklwbt7heyzu",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Inglis",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/174e87c1bb6f054491503c309f6befd2c12e73d856fd67fe576c21a59604173b.jpg",
+        "url": "https://bsky.app/profile/zch.co"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:xcqhk7rsguwook626u555bv2",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:57Z",
+      "wm-id": 1902595,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Axcqhk7rsguwook626u555bv2",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "pngwn",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/e6b93256ef616d874355ae34ccccd63aba556bafd3fc2722dd50a52988e275a0.jpg",
+        "url": "https://bsky.app/profile/pngwn.at"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:gnzbim6ejshy66kvxhvrpgps",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:56Z",
+      "wm-id": 1902594,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Agnzbim6ejshy66kvxhvrpgps",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "bryn",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/9f46ac4f64678336fb9010a20d552b76aa98af51638a6ceccad5520f88564e11.jpg",
+        "url": "https://bsky.app/profile/bryn.codes"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:vgti27vqwdnwfh3rn2sijoho",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:55Z",
+      "wm-id": 1902592,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Avgti27vqwdnwfh3rn2sijoho",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ayu (real)",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/9b33da6a3b96dbd488f4eabc173277b7edf728204f20b4395ba6aea48de2917f.jpg",
+        "url": "https://bsky.app/profile/12beesinatrenchco.at"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:eptjgefq4xguhzciebfm4ixg",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:55Z",
+      "wm-id": 1902593,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aeptjgefq4xguhzciebfm4ixg",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "finxol",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/47a5530380abc1f2574c0460f4dca17e53889859a022b788697b244f0a6d1847.jpg",
+        "url": "https://bsky.app/profile/finxol.io"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:hpmpe3pzpdtxbmvhlwrevhju",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:53Z",
+      "wm-id": 1902591,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ahpmpe3pzpdtxbmvhlwrevhju",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jack",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/492f5d9b9e12d58fa1e0bc715f4a6f6643e9d446fad3730436967533b85e8bb7.jpg",
+        "url": "https://bsky.app/profile/jackhpeterson.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:pxrfizqx45aknvaeshcsevzx",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:49Z",
+      "wm-id": 1902590,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Apxrfizqx45aknvaeshcsevzx",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eric Amodio",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/1690201584acdccc48956af4d17bf150d19afa6cf245333b7cfb1c07a65a8f70.jpg",
+        "url": "https://bsky.app/profile/eric.amod.io"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:e2434gbckyh3ifcunha2gh5j",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:48Z",
+      "wm-id": 1902588,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ae2434gbckyh3ifcunha2gh5j",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Heart of a Dog",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/26330eae00e388aebea82d51b3c60f45d222f0559cbda089b51d7840daa9d491.jpg",
+        "url": "https://bsky.app/profile/dogsweat.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:jy2wrndezig37mgonftyonld",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:48Z",
+      "wm-id": 1902589,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ajy2wrndezig37mgonftyonld",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Richard Arugula",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/37a30b96e295d0a0b549cd9624420b84e2a1c4fd0e449247afaf1406e5b171c6.jpg",
+        "url": "https://bsky.app/profile/monkchips.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:hwpqbdt7dsnj4nxj3m2ggu3k",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:46Z",
+      "wm-id": 1902586,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ahwpqbdt7dsnj4nxj3m2ggu3k",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Veni Kunche",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/0698c99dd07d1c3f15cee4887818cc98cf9b256e67a4921b102fd3eb1c4fdc31.jpg",
+        "url": "https://bsky.app/profile/veni.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:4hsqnjpqwr6typ4353xtjpsm",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:46Z",
+      "wm-id": 1902587,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A4hsqnjpqwr6typ4353xtjpsm",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andrew Cherry",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/c7b9f28edc3521c06839aeca2620c366501e9e637c984101073ebbe66e6bcb2f.jpg",
+        "url": "https://bsky.app/profile/kolektiv.xyncro.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:sa762uvwujyv464v5qz7jffq",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:45Z",
+      "wm-id": 1902585,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Asa762uvwujyv464v5qz7jffq",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/71b4ccda8641fb9ace7d1feff10df95751ed260f8e5ad17730242064a9f7b005.jpg",
+        "url": "https://bsky.app/profile/aelvan.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:4xqbuyn36mdlym5jrrdwnzzl",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:43Z",
+      "wm-id": 1902584,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A4xqbuyn36mdlym5jrrdwnzzl",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "????",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/74269a3ece0d1b3167421939f045e9e044b6d892ea38e9f3ca00ee65c3cff176.jpg",
+        "url": "https://bsky.app/profile/vielle.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:4zht3z4caxwrw3dlsybodywc",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:42Z",
+      "wm-id": 1902583,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A4zht3z4caxwrw3dlsybodywc",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/f28df73f294471fbc7a0480880b88a08b1abd3594721829e993614274651128b.jpg",
+        "url": "https://bsky.app/profile/chris-breuer.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:glqvm222gjyppawip6krajqs",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:39Z",
+      "wm-id": 1902581,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aglqvm222gjyppawip6krajqs",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthias Ott",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/a808c5b1e1e8e8eb32a20641dda83936cd3996f1108ca5655abb515c84815783.jpg",
+        "url": "https://bsky.app/profile/matthiasott.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:go53xbllmkjw3vp65vmrcjol",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:39Z",
+      "wm-id": 1902582,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ago53xbllmkjw3vp65vmrcjol",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Miles Sabin",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/108198e3a99f87938764734bb1e8034c964add0f83a9bb8f64e6279eca961432.jpg",
+        "url": "https://bsky.app/profile/milessabin.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:kj7kr6c6lgo3xw5yf4xiran7",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:38Z",
+      "wm-id": 1902580,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Akj7kr6c6lgo3xw5yf4xiran7",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Corey Megown",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/1be8bd13875b2eb96f3cd5a2a35b849350048d4709b945dd03b82395d25f26b9.jpg",
+        "url": "https://bsky.app/profile/cmegown.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:tysdhocvfbqk2rxa2r7kybdu",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:36Z",
+      "wm-id": 1902579,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Atysdhocvfbqk2rxa2r7kybdu",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Coen de Wit",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/11d6a3f5230fa7e6ba76edd9265cd4f1edea45cd8f642f7cb08bb0488dd3fc75.jpg",
+        "url": "https://bsky.app/profile/coendewit.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:7nwdjufair27n77rladcjnhn",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:35Z",
+      "wm-id": 1902578,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A7nwdjufair27n77rladcjnhn",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam Zimman (he/him)",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/497a429f93555af2d570cd4a99fd2b9b566deeb4051e980988f5f421deca81c5.jpg",
+        "url": "https://bsky.app/profile/azimman.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:6u3yoqvholjlszzvtxd5vae2",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:34Z",
+      "wm-id": 1902576,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A6u3yoqvholjlszzvtxd5vae2",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brenda Storer",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/72c0aac9d03554842d222531a0542b582b7cfd08cf0142a3ce9024c23ccc93e8.jpg",
+        "url": "https://bsky.app/profile/brendamarie.nyc"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:zx7zamxmqjz2bsylvqr7csrh",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:34Z",
+      "wm-id": 1902577,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Azx7zamxmqjz2bsylvqr7csrh",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nik",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/2e78ad0ac6f1d174fd36b8265076510db00b21fb3d3c4d47746e93bdbcd5f168.jpg",
+        "url": "https://bsky.app/profile/nikkinak.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:7hfnawzsjjq5epbr64iw7c5x",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:30Z",
+      "wm-id": 1902575,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A7hfnawzsjjq5epbr64iw7c5x",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "adam trabold",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/b0996e538789a18d26c903fd9ab7e1ac73c82fddd25defe63a401ad25da79732.jpg",
+        "url": "https://bsky.app/profile/adamtrabold.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:u63k4nhk7wlkz3uj6j27zy54",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:29Z",
+      "wm-id": 1902574,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Au63k4nhk7wlkz3uj6j27zy54",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "ishyamo",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/a4e2e45096d2ae1c4e91b143aa48ec5c46bdc259b35177d5b4a97475b5d089ed.jpg",
+        "url": "https://bsky.app/profile/ishyamo.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:okvfnkw6j3tyzvgrh5gvzcam",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:28Z",
+      "wm-id": 1902573,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aokvfnkw6j3tyzvgrh5gvzcam",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "uncleserb.bsky.social",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/59e7c080c5033cff7f5034ac7d4694e10b6a07a0de749ecc2d376a97e5575037.jpg",
+        "url": "https://bsky.app/profile/uncleserb.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:oetv526jnlz3xqlzbxifezmk",
+      "published": null,
+      "wm-received": "2025-04-11T17:21:27Z",
+      "wm-id": 1902572,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aoetv526jnlz3xqlzbxifezmk",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "ardalis (Steve Smith)",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/efafb648db60ddf7964d29ee5207e13790fe76cfc32b42053eaae74265ba20ae.jpg",
+        "url": "https://bsky.app/profile/ardalis.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:3vo24c2exro34bgvkqcupbot",
+      "published": null,
+      "wm-received": "2025-04-11T12:52:09Z",
+      "wm-id": 1902552,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A3vo24c2exro34bgvkqcupbot",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "BriGuy",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/9d08d48ade089ae328a42acd1c84f5ff71b96a0e6b7a06c4a93c7c8647b3610b.jpg",
+        "url": "https://bsky.app/profile/brian-mc.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:ofcqonq6b7euxkqbt5xzmpqg",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:59Z",
+      "wm-id": 1902551,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aofcqonq6b7euxkqbt5xzmpqg",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "mkawia",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/4a101df059f9daa57fbf75ed7e517accafb3cfa5a5eddbddf05f98a8bb2821bc.jpg",
+        "url": "https://bsky.app/profile/mkawia.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:7rq2qyrttosvzgpt55kute47",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:57Z",
+      "wm-id": 1902550,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A7rq2qyrttosvzgpt55kute47",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "John Resig",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/06a380512be157aea8902b7261b8a1d3e7f6dd6a1a60155c97e2f55792759c83.jpg",
+        "url": "https://bsky.app/profile/johnresig.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:db72p522vqw4xlvjgm73fvup",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:46Z",
+      "wm-id": 1902541,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Adb72p522vqw4xlvjgm73fvup",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "ravindT~T",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/97652b2d9d1d018bef889945fb04e1efc2352a016e8b263073b2655b326ea14a.jpg",
+        "url": "https://bsky.app/profile/ravind.ooo"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:dq6jaefxy6vc6vvthg57kwvs",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:45Z",
+      "wm-id": 1902540,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Adq6jaefxy6vc6vvthg57kwvs",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Art Duszynski",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/38b772df793a97346a745194b7ea5c3394a79af1f983a43bb5a56504d49e3181.jpg",
+        "url": "https://bsky.app/profile/artduszynski.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:b5dtyi5tmt4n6igpiuxpzepg",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:44Z",
+      "wm-id": 1902538,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ab5dtyi5tmt4n6igpiuxpzepg",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hidde",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/2885987e17c99dea80581d14958f05743ca0eea6cba26f79a0dc382b0f97abbb.jpg",
+        "url": "https://bsky.app/profile/hidde.blog"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:o4xpdlp52ele5fps2dtldgoy",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:44Z",
+      "wm-id": 1902539,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ao4xpdlp52ele5fps2dtldgoy",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tobias Fedder",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/353f7583c7865e934c77899369bd5facd7f23f2cc28ce926ca9456675e50cd46.jpg",
+        "url": "https://bsky.app/profile/tfedder.de"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:a64baelxsmvy6aonnbfhbirv",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:43Z",
+      "wm-id": 1902537,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aa64baelxsmvy6aonnbfhbirv",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bastian Allgeier",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/85728027144e861bad616d827a186c982e65d2a9a16fb29df7f009f622648f53.jpg",
+        "url": "https://bsky.app/profile/bastianallgeier.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:zf7jkzri5w62f4xct4tj4krb",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:42Z",
+      "wm-id": 1902536,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Azf7jkzri5w62f4xct4tj4krb",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/d18734bcc8c18b6e853719ad1b100ea3de1c5335cab7911d4cfafae7a7a51925.jpg",
+        "url": "https://bsky.app/profile/andydavies.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:ccw4zckt3u7hytoxemgoe654",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:39Z",
+      "wm-id": 1902535,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Accw4zckt3u7hytoxemgoe654",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jake•ジェイク",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/ef479e66861c25ef853e87df223c99f71a09087f00212ffb0b9adda513daa534.jpg",
+        "url": "https://bsky.app/profile/jake74.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:cbfhsa7inrg546rogwup6h2m",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:38Z",
+      "wm-id": 1902534,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Acbfhsa7inrg546rogwup6h2m",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rizaldi",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/594a435b63c264cd92633cfc642eaad3e645c8cb00d4447cb4a5cb8f0c5b5c20.jpg",
+        "url": "https://bsky.app/profile/rzldm.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:nrxqgyxc3tf6njqgx734lei7",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:34Z",
+      "wm-id": 1902532,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Anrxqgyxc3tf6njqgx734lei7",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathon Colman",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/d9b3ae0427719f3186449b76c3994139c9c34f2ff5fcf717a91404c23c0363c5.jpg",
+        "url": "https://bsky.app/profile/jonathoncolman.org"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:kt4ldnvqz6yl6ptu7cvi355x",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:34Z",
+      "wm-id": 1902533,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Akt4ldnvqz6yl6ptu7cvi355x",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Carter",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/804b90ef00c002b781b8aa86df711a11c953fcd8b3fa83149c695f2c2f191b1f.jpg",
+        "url": "https://bsky.app/profile/andycarter.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:pv7rlckfik4wolfzl4gdeq7l",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:32Z",
+      "wm-id": 1902531,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Apv7rlckfik4wolfzl4gdeq7l",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kilian Valkhof",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/ce3189fa38315cbd496abe9894573bea8be0ebc95da722ad3757c6de90ecb861.jpg",
+        "url": "https://bsky.app/profile/kilianvalkhof.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:z6uec3g7xgkvxpy442663waq",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:31Z",
+      "wm-id": 1902530,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Az6uec3g7xgkvxpy442663waq",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Laurie Voss",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/a91d9e7c568d5202c957fd8c404a7b22885f04cc399c5b9f64d0ea1889ae93ed.jpg",
+        "url": "https://bsky.app/profile/seldo.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:4w3lx5jmokfvihilz2q562ev",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:30Z",
+      "wm-id": 1902528,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A4w3lx5jmokfvihilz2q562ev",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Katie Fenn",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/af5e7694e7cdcac79f3632b448b369fdbaf3140fe41f73dc5d5ec5532941578d.jpg",
+        "url": "https://bsky.app/profile/katiefenn.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:sj2wilpxhaeitnengiuaoe4o",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:30Z",
+      "wm-id": 1902529,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Asj2wilpxhaeitnengiuaoe4o",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ms. Jen",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/106dc7d5cfd2a318707b12dd397d255b5a3cc059ae0df98ec843633fac951877.jpg",
+        "url": "https://bsky.app/profile/msjen.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:sp34t3qxiiwbrft4c7jycfeo",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:29Z",
+      "wm-id": 1902527,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Asp34t3qxiiwbrft4c7jycfeo",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ashlee",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/971fdc5f6c993b0bab0a997c891ea625323f824f80fd9faada5b2c860c37810e.jpg",
+        "url": "https://bsky.app/profile/ashleemboyer.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:6pjsxq4f4wvihelm4lphbk5e",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:28Z",
+      "wm-id": 1902526,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A6pjsxq4f4wvihelm4lphbk5e",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "seb",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/3252652b9dea2e9e78c75ed42918f7d744e7b90a39655ee2366f6d03bfc423c0.jpg",
+        "url": "https://bsky.app/profile/gir8.it"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:x5wxbhygsaee5lcq2f5an2xo",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:27Z",
+      "wm-id": 1902524,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ax5wxbhygsaee5lcq2f5an2xo",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michael Spellacy (Spell) ????",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/0a08182ada4e7c92a1b1d1508faad3d0b7a2ac8ddf29aa78388f7b2d4de9cd6a.jpg",
+        "url": "https://bsky.app/profile/michaelspellacy.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:4takexkuib3jqikvqvqamaqu",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:27Z",
+      "wm-id": 1902525,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A4takexkuib3jqikvqvqamaqu",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Glenn Gillen",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/4c98db8b5605dd81c5ec658e72001609aa0a4e68cb8ee963299ef0c224419493.jpg",
+        "url": "https://bsky.app/profile/glenngillen.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:6bufmzjxp3hmyy6vaztm2bi3",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:21Z",
+      "wm-id": 1902522,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A6bufmzjxp3hmyy6vaztm2bi3",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "esmevane, sorry",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/d614111d0e41603bee2df33fc0b05a24e0c46dd0a5f5e9f810f08d47a072c880.jpg",
+        "url": "https://bsky.app/profile/esmevane.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:mhy4crmq4dnugv4d5kuwetr7",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:20Z",
+      "wm-id": 1902520,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Amhy4crmq4dnugv4d5kuwetr7",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Oliver Turner",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/f97754f99bc94cfd72168f7394b1f8fa6b93ce318885d82dfeb6e3c5486e132b.jpg",
+        "url": "https://bsky.app/profile/oliverturner.cloud"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:xrzzq56w2gdeo2d4f43va6yy",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:18Z",
+      "wm-id": 1902518,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Axrzzq56w2gdeo2d4f43va6yy",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Orangetronic",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/0388f625f69e0a4a01d9f57da6daa29614c8418b9cc47b92544fa1c1c3e529e9.jpg",
+        "url": "https://bsky.app/profile/orangetronic.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:jm2nvnufwpuwo7t623iplui7",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:18Z",
+      "wm-id": 1902519,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ajm2nvnufwpuwo7t623iplui7",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian Uri!",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/7c5e17b90092c8ffd6bf284e6fce2998e521905a60ff4ac0ed4a770c55560717.jpg",
+        "url": "https://bsky.app/profile/urizone.net"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:oie4i4ixg42k4mjqx22t2fn7",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:17Z",
+      "wm-id": 1902517,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aoie4i4ixg42k4mjqx22t2fn7",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "flootr",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/8a2b9bd86e185af64d4140cdcb22c55acd5b6865e588997ba0cf1874731030a3.jpg",
+        "url": "https://bsky.app/profile/flootr.xyz"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:qlgcnkai5zpvsjpqruwwppoj",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:16Z",
+      "wm-id": 1902515,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aqlgcnkai5zpvsjpqruwwppoj",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Cathy Leamy",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/0a7a611f1b8a81b934f406aa3d3170569e257398acdb259259381a6505d19a42.jpg",
+        "url": "https://bsky.app/profile/metrokitty.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:eqrcca7zy6mk6qrsud6icfwh",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:16Z",
+      "wm-id": 1902516,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aeqrcca7zy6mk6qrsud6icfwh",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Robb Owen",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/b09d734cf7449ae6f31f532cab49e30c5b2c27600076b6ebc73c87f01e274e95.jpg",
+        "url": "https://bsky.app/profile/robbowen.digital"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:aw5m5n4fdsgfldtaibyvgrp2",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:13Z",
+      "wm-id": 1902514,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aaw5m5n4fdsgfldtaibyvgrp2",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Amy Hupe",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/6af0b1837776350be80f634e5846355314616915a4232a14e2ecde6ae2d3b887.jpg",
+        "url": "https://bsky.app/profile/amyhupe.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:zj762du6j3fe4fhkzbh5zgv5",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:11Z",
+      "wm-id": 1902513,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Azj762du6j3fe4fhkzbh5zgv5",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/4bd3d77ac167711da4d93cf920feccde4b3ee1052fbe7c133f88dd6af7b915c4.jpg",
+        "url": "https://bsky.app/profile/bell.bz"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:pzgvqg4ihnaihkrpmxqz5pu6",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:10Z",
+      "wm-id": 1902512,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Apzgvqg4ihnaihkrpmxqz5pu6",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "フィリイプ",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/32618e0aaed4008e80b87b8cfad5bdcab61bd7cfff05cf874250498088c0026b.jpg",
+        "url": "https://bsky.app/profile/fillip.pro"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:roobm3fweoenatcuemwklmd7",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:09Z",
+      "wm-id": 1902511,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aroobm3fweoenatcuemwklmd7",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andrew W Moore (he/him)",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/0219671902b1fec49e518db85de6aa187d7e738497087d90e56f76083e4d0759.jpg",
+        "url": "https://bsky.app/profile/awm22.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:p25shtjha3hul66ahy6gs7qg",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:08Z",
+      "wm-id": 1902510,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ap25shtjha3hul66ahy6gs7qg",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Elwin van Eede",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/e4195c00c0ef5177f832f5ca6175d7f5c3b0e3ce11a69625271d9576e3e051e1.jpg",
+        "url": "https://bsky.app/profile/elwinvaneede.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:7j2dyer2tij344kwdzrwrbzr",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:07Z",
+      "wm-id": 1902508,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253A7j2dyer2tij344kwdzrwrbzr",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Todd",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/638c35f5851e834e22ffe970a00eff1eba1e3f99ef393fa14eb60ebfe2431c00.jpg",
+        "url": "https://bsky.app/profile/toddl.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:gevyqibw5p2xsonkbsbjm5vy",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:07Z",
+      "wm-id": 1902509,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Agevyqibw5p2xsonkbsbjm5vy",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sara Joy ☠️",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/7b9506500b1e5de39a9cb6636eecc57f3b19607ced50e5e7aa4434ad072da381.jpg",
+        "url": "https://bsky.app/profile/sjoy.lol"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:jrzyao2holfkgrsfbq2tue27",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:06Z",
+      "wm-id": 1902507,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Ajrzyao2holfkgrsfbq2tue27",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lexi",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/f90a50982790cf4cbe2669cf1258c3d3f928fc28ea27d038b7d160bf09a2b9a0.jpg",
+        "url": "https://bsky.app/profile/lxqueen.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:kv4maqrjssp545vubxflciiy",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:03Z",
+      "wm-id": 1902506,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Akv4maqrjssp545vubxflciiy",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam Fortuna",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/7bd0ada3d04b1720361c2982cd5a0cc5c90f4191d15dbdb388a4a961df56f1e7.jpg",
+        "url": "https://bsky.app/profile/adamfortuna.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lmjsch6vdk2t#liked_by_did:plc:einchsassxsevi6z6k4mgsft",
+      "published": null,
+      "wm-received": "2025-04-11T12:51:02Z",
+      "wm-id": 1902505,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lmjsch6vdk2t/did%253Aplc%253Aeinchsassxsevi6z6k4mgsft",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "luis",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/dd0f48873bc92cd5843c71231e3728f1331d4913f3b6cc05241ee962ef68a325.jpg",
+        "url": "https://mastodon.social/@luissb"
+      },
+      "url": "https://front-end.social/@rem/114318828762129161#favorited-by-113963035994534210",
+      "published": null,
+      "wm-received": "2025-04-17T17:59:46Z",
+      "wm-id": 1905479,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114318828762129161/113963035994534210",
+      "wm-target": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/07/do-politics-belong-at-web-events",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
