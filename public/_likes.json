@@ -55996,5 +55996,45 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "how-i-made-an-led-driver-smart": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stuart Langridge",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/695200652a6c13aec45b134117c21f1a6fbb769eec8f9bef8d49066278c6d655.png",
+        "url": "https://mastodon.social/@sil"
+      },
+      "url": "https://front-end.social/@rem/114359621010520578#favorited-by-109288538289010595",
+      "published": null,
+      "wm-received": "2025-04-19T07:12:06Z",
+      "wm-id": 1905696,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114359621010520578/109288538289010595",
+      "wm-target": "https://remysharp.com/2025/04/18/how-i-made-an-led-driver-smart",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/18/how-i-made-an-led-driver-smart",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ian Sutherland ????????",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8ad2e4bef4901e0ebaad527a886cdfa6a22d38cf1b616350dc781dc5a42d1aa7.jpg",
+        "url": "https://cosocial.ca/@iansu"
+      },
+      "url": "https://front-end.social/@rem/114359621010520578#favorited-by-110562822173713112",
+      "published": null,
+      "wm-received": "2025-04-18T16:02:49Z",
+      "wm-id": 1905609,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114359621010520578/110562822173713112",
+      "wm-target": "https://remysharp.com/2025/04/18/how-i-made-an-led-driver-smart",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/04/18/how-i-made-an-led-driver-smart",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

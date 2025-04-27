@@ -54,6 +54,9 @@ layout: public
             p.when(data-date=`${firstDate(review.read)}`) #{moment(review.read).format(`d-MMM ''yy`)} #{readCount(review.read)}
               br
               span(title=`${firstDate(review.read)}`) #{duration(review.start, review.read)}
+              if review.clippings
+                br
+                span.clipping-count #{review.clippings.length}
             p.title
               a(href=`${url}`) #{review.seriesEntry || review.title}
             if review.summary
