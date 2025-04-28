@@ -13,7 +13,7 @@ goodreads_id: 31566948
 cover: >-
   https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1471745675l/31566948._SX50_.jpg
 spoiler: false
-slug: sleep-change-the-way-you-sleep-with-this-90-minute-read
+slug: sleep
 summary: >-
   In general, the concepts and ideas are pretty solid. A lot of common sense
   that revolves around using sunlight to help with sleep patterns. Somehow I

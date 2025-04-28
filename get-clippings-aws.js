@@ -28,6 +28,15 @@ const replace = new Map([
   ['Nineteen Eighty-Four (Penguin Modern Classics)', '1984'],
   ['The Audacity: Why Being Too Much Is Exactly Enough', 'The Audacity'],
   ['We (Momentum Classic Science Fiction)', 'We'],
+  ['Binti: The Night Masquerade', 'The Night Masquerade (Binti #3)'],
+  [
+    'Record of a Spaceborn Few: Wayfarers 3',
+    'Record of a Spaceborn Few (Wayfarers, #3)',
+  ],
+  [
+    `James Acaster's Classic Scrapes - The Hilarious Sunday Times Bestseller`,
+    `James Acaster's Classic Scrapes`,
+  ],
 ]);
 
 let files = [];
@@ -104,6 +113,7 @@ async function main() {
   for (const book of result) {
     const { slug, ...rest } = book;
     if (toRemove.has(slug)) {
+      console.warn(`❌ ${slug} (${rest.title})`);
       continue;
     }
     res[slug] = rest;
