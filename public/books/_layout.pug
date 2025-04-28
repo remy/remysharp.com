@@ -6,8 +6,11 @@ block meta
   meta(name="twitter:title" content=`${title}`)
   meta(name="twitter:site" content="@rem")
   meta(name="twitter:domain" content="Remy's b:log")
-  meta(name="twitter:image:src" content=`https://remysharp.com/images/cards/${moment(date).modDOY(9)}.jpg`)
+  meta(name="twitter:image:src" content=`https://remysharp.com/images/books/${goodreads_id}.jpg`)
   meta(name="twitter:card" content="summary")
+  meta(name="og:image" content=`https://remysharp.com/images/books/${goodreads_id}.jpg`)
+  meta(name="og:title" content=`${title}`)
+  meta(name="og:description" content=`My rating: ${rating} / 5`)
 
 block content
   - permalink = url;
