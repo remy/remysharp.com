@@ -57,9 +57,6 @@ layout: public
               if review.clippings
                 br
                 span.clipping-count Highlights #{review.clippings.length}
-              else
-                br
-                span.clipping-count No highlights
             p.title
               a(href=`${url}`) #{review.seriesEntry || review.title}
             if review.summary
