@@ -45,16 +45,23 @@ block content
             summary #{summary}
 
             != yield
+
+            if clippings
+              h3 #{clippings.length} Highlight(s)
+              each clipping in clippings
+                .clipping
+                  p.clipping-meta Location #{clipping.location || clipping.page}
+                  p.clipping-text #{clipping.text}
+
         else
           != yield
 
-
-        if clippings
-          h3 #{clippings.length} Highlight(s)
-          each clipping in clippings
-            .clipping
-              p.clipping-meta Page #{clipping.location || clipping.page}
-              p.clipping-text #{clipping.text}
+          if clippings
+            h3 #{clippings.length} Highlight(s)
+            each clipping in clippings
+              .clipping
+                p.clipping-meta Location #{clipping.location || clipping.page}
+                p.clipping-text #{clipping.text}
 
 
         if otherBooks.length > 0

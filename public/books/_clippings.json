@@ -1,4 +1,52 @@
 {
+  "1984": {
+    "title": "1984",
+    "author": "George Orwell and Thomas Pynchon",
+    "highlights": [
+      {
+        "text": "She was a woman of about thirty, but looking much older. One had the impression that there was dust in the creases of her face.",
+        "note": null,
+        "location": null,
+        "page": 20
+      },
+      {
+        "text": "For whom, for what, was that bird singing? No mate, no rival was watching it. What made it sit at the edge of the lonely wood and pour its music into nothingness?",
+        "note": null,
+        "location": null,
+        "page": 124
+      },
+      {
+        "text": "There were times when the fact of impending death seemed as palpable as the bed they lay on, and they would cling together with a sort of despairing sensuality, like a damned soul grasping at his last morsel of pleasure when the clock is within five minutes of striking.",
+        "note": null,
+        "location": null,
+        "page": 151
+      },
+      {
+        "text": "The solid, contourless body, like a block of granite, and the rasping red skin, bore the same relation to the body of a girl as the rose-hip to the rose. Why should the fruit be held inferior to the flower?",
+        "note": null,
+        "location": null,
+        "page": 219
+      },
+      {
+        "text": "You believe that reality is something objective, external, existing in its own right. You also believe that the nature of reality is self-evident. When you delude yourself into thinking that you see something, you assume that everyone else sees the same thing as you.",
+        "note": null,
+        "location": null,
+        "page": 249
+      },
+      {
+        "text": "You must stop imagining that posterity will vindicate you, Winston. Posterity will never hear of you. You will be lifted clean out from the stream of history. We shall turn you into gas and pour you into the stratosphere.",
+        "note": null,
+        "location": null,
+        "page": 254
+      },
+      {
+        "text": "'Nonsense. The earth is as old as we are, no older. How could it be older? Nothing exists except through human consciousness.'",
+        "note": null,
+        "location": null,
+        "page": 265
+      }
+    ]
+  },
   "piranesi": {
     "author": "Susanna Clarke",
     "title": "Piranesi",
@@ -1477,38 +1525,63 @@
     ]
   },
   "the-humans": {
-    "author": "David Walliams and Tony Ross",
-    "title": "The Ice Monster",
+    "author": "Matt Haig",
+    "title": "The Humans",
     "highlights": [
       {
-        "text": "were forced to work day and night. They had to assemble gentlemen's",
+        "text": "Emily Dickinson), said this: 'I dwell in possibility.' So let us humour ourselves and do the same. Let us open our minds entirely, for what you are about to read will need every prejudice you may have to stand aside in the name of understanding.",
         "note": null,
-        "page": 137
+        "page": 2
       },
       {
-        "text": "\"candles out\", she would stuff one of her pus-sodden old stockings in their mouth.",
+        "text": "But this was England, a part of Earth where thinking about the weather was the chief human activity.",
         "note": null,
-        "page": 147
+        "page": 6
       },
       {
-        "text": "\"POOH!\" complained the one whose nose was now stuck up the other's rear end. Needless to say, this perfect piece of slapstick was greeted by howls of laughter from the crowd. \"HA! HA! HA!\" \"AFTER HER, YOU FOOLS!\" barked Barker.",
+        "text": "So, we must conclude that madness is sometimes a question of time, and sometimes of postcode.",
         "note": null,
-        "page": 480
+        "page": 32
       },
       {
-        "text": "\"HELP! Someone's trodden on me bits!\" The crowd whooped and cheered at this brilliant piece of entertainment.",
+        "text": "he belonged to a special sub-category of human called a 'teenager', the chief characteristics of which were a weakened resistance to gravity, a vocabulary of grunts, a lack of spatial awareness, copious amounts of masturbation, and an unending appetite for cereal.",
         "note": null,
-        "page": 495
+        "page": 72
       },
       {
-        "text": "\"Oh no,\" whispered Dotty to herself. \"I think a bit of wee came out!\"",
+        "text": "'The soul should always stand ajar, ready to welcome the ecstatic experience.'",
         "note": null,
-        "page": 1211
+        "page": 78
       },
       {
-        "text": "\"No, no, no. The Professor Osbert Bertram Cuthbert Farnaby Beverly Smith mammoth!\"",
+        "text": "You can see that for her being a parent is standing on a shore and watching her child in a vulnerable craft, heading out over deeper and deeper water, hoping but not knowing there will be land somewhere ahead.",
         "note": null,
-        "page": 1319
+        "page": 138
+      },
+      {
+        "text": "when you know it is possible for you to feel pain you have no control over. You become vulnerable. Because the possibility of pain is where love stems from.",
+        "note": null,
+        "page": 165
+      },
+      {
+        "text": "Talk about the compression of time through memory.",
+        "note": null,
+        "page": 218
+      },
+      {
+        "text": "And I knew the point of love right then. The point of love was to help you survive.",
+        "note": null,
+        "page": 221
+      },
+      {
+        "text": "The 'pub' was an invention of humans living in England, designed as compensation for the fact that they were humans living in England.",
+        "note": null,
+        "page": 229
+      },
+      {
+        "text": "Happiness is not out here. It is in there.",
+        "note": null,
+        "page": 272
       }
     ]
   },
@@ -1612,24 +1685,44 @@
       }
     ]
   },
-  "meeting-mungo-thunk": {
-    "author": "George Jelinek MD",
-    "title": "Overcoming Multiple Sclerosis",
+  "the-brighton-mermaid": {
+    "author": "Dorothy Koomson",
+    "title": "The Brighton Mermaid",
     "highlights": [
       {
-        "text": "Many other lifestyle modifications affect the ageing process and associated degeneration. For example, daily walking prevents age-related dementia80",
+        "text": "I wouldn't hate her sometimes if I couldn't love her twice as much all the time.",
         "note": null,
-        "page": 664
+        "page": 955
       },
       {
-        "text": "This confirms the belief of many PwMS that significant injury to the CNS can predispose one to MS.",
+        "text": "But the reality, when you're on the other side of the mystery? Not so romantic. Not so charmingly intriguing.",
         "note": null,
-        "page": 693
+        "page": 1064
       },
       {
-        "text": "For most people, if the underlying environmental and lifestyle predisposing factors don't change, they will move on to the typical course of the disease, with progression to disability.",
+        "text": "I could see now that Mum had been 'good' and polite and had kept away from trouble her whole life. She'd experienced racism and prejudice but she – like the rest of us people of colour – had been lied to, had been sold the promise that good behaviour, obedience, never causing trouble or fighting too hard for your rights, would keep you safe, keep you protected. That promise had been broken in the most violent, pugnacious and cruel way, and Mum had never fully recovered from that trauma.",
         "note": null,
-        "page": 722
+        "page": 1492
+      },
+      {
+        "text": "All the millions of fathers who pull their weight and parent their children are never described as amazing because they do stuff for their kids without needing accolades.",
+        "note": null,
+        "page": 4163
+      },
+      {
+        "text": "'I went out with Shane nearly …' I try to calculate it in my head so I don't inadvertently tell my dad I had sex when I was sixteen '…",
+        "note": null,
+        "page": 4277
+      },
+      {
+        "text": "like he knows that's where I love to be held, like he's done this before. He takes a huge breath in and then sighs to release it, almost as though this is everything he's ever wanted.",
+        "note": null,
+        "page": 4313
+      },
+      {
+        "text": "if the other is watching their back or actually examining it for where to stick a knife in.",
+        "note": null,
+        "page": 5508
       }
     ]
   },
@@ -2079,9 +2172,9 @@
       }
     ]
   },
-  "the-five-people-you-meet-in-heaven": {
+  "the-audacity": {
     "author": "Katherine Ryan",
-    "title": "The Audacity: Why Being Too Much Is Exactly Enough",
+    "title": "The Audacity",
     "highlights": [
       {
         "text": "couple's counselling which, from my personal and limited experience, is only helpful in the unlikely scenario that your differences are reconcilable but you both lack communication skills. It's a waste of time if you're already able to articulate quite clearly that you don't like each other and that you're unwilling or unable to change.",
@@ -2910,6 +3003,42 @@
       }
     ]
   },
+  "the-lives-of-tao": {
+    "author": "David Walliams and Tony Ross",
+    "title": "The Ice Monster",
+    "highlights": [
+      {
+        "text": "were forced to work day and night. They had to assemble gentlemen's",
+        "note": null,
+        "page": 137
+      },
+      {
+        "text": "\"candles out\", she would stuff one of her pus-sodden old stockings in their mouth.",
+        "note": null,
+        "page": 147
+      },
+      {
+        "text": "\"POOH!\" complained the one whose nose was now stuck up the other's rear end. Needless to say, this perfect piece of slapstick was greeted by howls of laughter from the crowd. \"HA! HA! HA!\" \"AFTER HER, YOU FOOLS!\" barked Barker.",
+        "note": null,
+        "page": 480
+      },
+      {
+        "text": "\"HELP! Someone's trodden on me bits!\" The crowd whooped and cheered at this brilliant piece of entertainment.",
+        "note": null,
+        "page": 495
+      },
+      {
+        "text": "\"Oh no,\" whispered Dotty to herself. \"I think a bit of wee came out!\"",
+        "note": null,
+        "page": 1211
+      },
+      {
+        "text": "\"No, no, no. The Professor Osbert Bertram Cuthbert Farnaby Beverly Smith mammoth!\"",
+        "note": null,
+        "page": 1319
+      }
+    ]
+  },
   "james-acasters-classic-scrapes": {
     "author": "James Acaster and Josh Widdicombe",
     "title": "James Acaster's Classic Scrapes - The Hilarious Sunday Times Bestseller",
@@ -3241,78 +3370,92 @@
     ]
   },
   "who-sent-clement-clement-1": {
-    "author": "Yevgeny Zamyatin",
     "title": "We (Momentum Classic Science Fiction)",
+    "author": "Yevgeny Zamyatin",
     "highlights": [
       {
         "text": "If they will not understand that we are bringing them a mathematically faultless happiness, our duty will be to force them to be happy.",
         "note": null,
-        "page": 52
+        "location": 52,
+        "page": null
       },
       {
         "text": "But, dear readers, you must think, at least a little. It helps.",
         "note": null,
-        "page": 151
+        "location": 151,
+        "page": null
       },
       {
         "text": "when human beings still lived in the state of freedom, that is, in an unorganized primitive state.",
         "note": null,
-        "page": 176
+        "location": 176,
+        "page": null
       },
       {
         "text": "an ancient sage once said a clever thing (accidentally, beyond doubt).",
         "note": null,
-        "page": 266
+        "location": 266,
+        "page": null
       },
       {
         "text": "The denominator of the fraction of happiness is reduced to zero and the whole fraction is thus converted into a magnificent infiniteness.",
         "note": null,
-        "page": 282
+        "location": 282,
+        "page": null
       },
       {
         "text": "Her voice came from there, from inside, from behind the dark window eyes, where the fireplace was blazing.",
         "note": null,
-        "page": 352
+        "location": 352,
+        "page": null
       },
       {
         "text": "for freedom and crime are as closely related as—well, as the movement of an aero and its speed: if the speed of an aero equals zero, the aero is motionless; if human liberty is equal to zero, man does not commit any crime.",
         "note": null,
-        "page": 433
+        "location": 433,
+        "page": null
       },
       {
         "text": "The way to rid man of criminality is to rid him of freedom.",
         "note": null,
-        "page": 435
+        "location": 435,
+        "page": null
       },
       {
         "text": "It never occurred to me before but it is true: we who live on the earth, we are always walking over a seething red sea of fire which is hidden in the womb of the earth.",
         "note": null,
-        "page": 678
+        "location": 678,
+        "page": null
       },
       {
         "text": "(I still insist that that I of before is the real one; my I of late is, certainly, only an illness.)",
         "note": null,
-        "page": 744
+        "location": 744,
+        "page": null
       },
       {
         "text": "Their lyre is the morning rubbing sound of the electric toothbrushes,",
-        "note": null,
-        "page": 818
+        "note": "Book written in 1921, electric toothbrush was invented in 1954!!!",
+        "location": 818,
+        "page": null
       },
       {
         "text": "Did I not populate these pages, which only recently were white quadrangular deserts,",
         "note": null,
-        "page": 1408
+        "location": 1408,
+        "page": null
       },
       {
         "text": "The greatness of the \"Church of the United Flock\" was known to them. They knew that resignation is virtue, and pride a vice; that \"We\" is from \"God,\" \"I,\" from the devil.",
         "note": null,
-        "page": 1510
+        "location": 1510,
+        "page": null
       },
       {
         "text": "Everything is so novel, so novel it is like a rainstorm, and I am not big enough to embrace it all. I spread out the folds of my unif, my palms—and yet pailfuls splash past me and only drops can reach these pages.…",
         "note": null,
-        "page": 1876
+        "location": 1876,
+        "page": null
       }
     ]
   },
@@ -5320,47 +5463,6 @@
         "text": "\"You're very sneaky,\" she said. I held nothing back. \"I want to marry you. I want to marry you and be that child's father. You don't have to agree to it.",
         "note": null,
         "page": 392
-      }
-    ]
-  },
-  "the-brighton-mermaid": {
-    "author": "George Orwell and Thomas Pynchon",
-    "title": "Nineteen Eighty-Four (Penguin Modern Classics)",
-    "highlights": [
-      {
-        "text": "She was a woman of about thirty, but looking much older. One had the impression that there was dust in the creases of her face.",
-        "note": null,
-        "page": 20
-      },
-      {
-        "text": "For whom, for what, was that bird singing? No mate, no rival was watching it. What made it sit at the edge of the lonely wood and pour its music into nothingness?",
-        "note": null,
-        "page": 124
-      },
-      {
-        "text": "There were times when the fact of impending death seemed as palpable as the bed they lay on, and they would cling together with a sort of despairing sensuality, like a damned soul grasping at his last morsel of pleasure when the clock is within five minutes of striking.",
-        "note": null,
-        "page": 151
-      },
-      {
-        "text": "The solid, contourless body, like a block of granite, and the rasping red skin, bore the same relation to the body of a girl as the rose-hip to the rose. Why should the fruit be held inferior to the flower?",
-        "note": null,
-        "page": 219
-      },
-      {
-        "text": "You believe that reality is something objective, external, existing in its own right. You also believe that the nature of reality is self-evident. When you delude yourself into thinking that you see something, you assume that everyone else sees the same thing as you.",
-        "note": null,
-        "page": 249
-      },
-      {
-        "text": "You must stop imagining that posterity will vindicate you, Winston. Posterity will never hear of you. You will be lifted clean out from the stream of history. We shall turn you into gas and pour you into the stratosphere.",
-        "note": null,
-        "page": 254
-      },
-      {
-        "text": "'Nonsense. The earth is as old as we are, no older. How could it be older? Nothing exists except through human consciousness.'",
-        "note": null,
-        "page": 265
       }
     ]
   },

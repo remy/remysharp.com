@@ -6,9 +6,9 @@ const fixes = require('./_fixes.json');
 // });
 
 const res = [...books, ...fixes.reviews]
-  .map(book => {
+  .map((book) => {
     if (fixes.mods[book.id]) {
-      Object.keys(fixes.mods[book.id]).forEach(key => {
+      Object.keys(fixes.mods[book.id]).forEach((key) => {
         book[key] = fixes.mods[book.id][key];
       });
     }

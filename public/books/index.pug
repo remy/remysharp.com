@@ -56,7 +56,10 @@ layout: public
               span(title=`${firstDate(review.read)}`) #{duration(review.start, review.read)}
               if review.clippings
                 br
-                span.clipping-count #{review.clippings.length}
+                span.clipping-count Highlights #{review.clippings.length}
+              else
+                br
+                span.clipping-count No highlights
             p.title
               a(href=`${url}`) #{review.seriesEntry || review.title}
             if review.summary
