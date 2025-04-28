@@ -51805,6 +51805,25 @@
       "like-of": "https://remysharp.com/books/2018/all-systems-red-the-murderbot-diaries-1",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sebastian Lasse",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/21ca8e53ba0ea9b682329f1cd2443bfded04a1e145a71e53438071bc8b475fb9.png",
+        "url": "https://digitalcourage.social/@sl007"
+      },
+      "url": "https://front-end.social/@rem/114416565543160103#favorited-by-109292282896696627",
+      "published": null,
+      "wm-received": "2025-04-28T16:52:57Z",
+      "wm-id": 1907969,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114416565543160103/109292282896696627",
+      "wm-target": "https://remysharp.com/books/2018/all-systems-red-the-murderbot-diaries-1",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books/2018/all-systems-red-the-murderbot-diaries-1",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "blog-questions-challenge": [

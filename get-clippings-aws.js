@@ -5,7 +5,12 @@ const fg = require('fast-glob');
 const fs = require('fs');
 const path = require('path');
 
-const skip = new Set(['The Time-travelling Caveman']);
+const skip = new Set([
+  'The Time-travelling Caveman',
+  'The Ice Monster',
+  'Minecraft: The Island',
+  'Ready Player Two', // ellis read it!
+]);
 
 const retain = new Set([
   'The Murderbot Diaries',
@@ -22,6 +27,7 @@ const replace = new Map([
   ['Dune', 'Dune (Dune Chronicles, #1)'],
   ['Nineteen Eighty-Four (Penguin Modern Classics)', '1984'],
   ['The Audacity: Why Being Too Much Is Exactly Enough', 'The Audacity'],
+  ['We (Momentum Classic Science Fiction)', 'We'],
 ]);
 
 let files = [];
@@ -40,7 +46,6 @@ async function main() {
 
   const result = clippings
     .filter((_) => _.highlights.length > 0)
-    .filter((_) => !skip.has(_.title))
     .map((book) => {
       const title = decodeHtmlEntities(book.title);
       book.title = title;
@@ -61,6 +66,7 @@ async function main() {
         title: prefix,
       };
     })
+    .filter((_) => !skip.has(_.title))
     .map((book) => {
       if (replace.has(book.title)) {
         book.title = replace.get(book.title);
@@ -82,45 +88,88 @@ async function main() {
       };
     });
 
+  const toRemove = new Set();
+
   for (const book of result) {
-    const { highlights, slug } = book;
-    const file = await findClosestFile(slug);
+    const { highlights, slug, title } = book;
+    const file = await findClosestFile(slug, title);
     if (file) {
       book.slug = path.basename(file, '.md');
+    } else {
+      toRemove.add(book.slug);
     }
   }
 
   const res = {};
   for (const book of result) {
     const { slug, ...rest } = book;
+    if (toRemove.has(slug)) {
+      continue;
+    }
     res[slug] = rest;
   }
   console.log(JSON.stringify(res, null, 2));
 }
 
-async function findClosestFile(slug) {
+async function findClosestFile(titleSlug, title) {
   const normalise = (str) =>
     str
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, '-') // normalise to slug-like
       .replace(/(^-+|-+$)/g, '');
 
-  const target = normalise(slug);
+  const target = normalise(titleSlug);
 
   let bestMatch = null;
   let bestScore = Infinity;
 
-  for (const file of files) {
-    if (file.includes(slug)) {
-      return file;
+  const find = (slug) => {
+    // first check for an exact match
+    for (const file of files) {
+      if (path.basename(file, '.md') === slug) {
+        return file;
+      }
     }
-    const filename = path.basename(file, '.md');
-    const score = levenshteinDistance(normalise(filename), target);
-    if (score < bestScore) {
-      bestScore = score;
-      bestMatch = file;
+
+    if (slug.length > 8) {
+      for (const file of files) {
+        const filename = path.basename(file, '.md');
+        if (filename.startsWith(slug)) {
+          return file;
+        }
+      }
     }
+  };
+
+  let found = find(titleSlug);
+
+  if (found) {
+    return found;
   }
+
+  // try to reslug from the title without brackets
+  const newTitle = title.replace(/\s*\(.*$/, '');
+  const newSlug = slug(newTitle);
+
+  found = find(newSlug);
+
+  if (found) {
+    return found;
+  }
+
+  return null;
+
+  // for (const file of files) {
+  //   // if (file.startsWith(slug)) {
+  //   //   return file;
+  //   // }
+  //   const filename = path.basename(file, '.md');
+  //   const score = levenshteinDistance(normalise(filename), target);
+  //   if (score < bestScore) {
+  //     bestScore = score;
+  //     bestMatch = file;
+  //   }
+  // }
 
   return bestMatch;
 }
@@ -166,7 +215,7 @@ function decodeHtmlEntities(str) {
 
 function slug(s) {
   return slugify(s, {
-    remove: /[*+~.()'"!:@,#]/g,
+    remove: /[*+~.()'"!:@,#?]/g,
   }).toLowerCase();
 }
 
