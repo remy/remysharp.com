@@ -680,7 +680,8 @@ function startScreensaver() {
   let hueIndex = 0;
   const hues = [0, 60, 120, 180, 240, 300];
   function recolour() {
-    const hue = hues[++hueIndex % hues.length];
+    const hue = hues[hueIndex % hues.length];
+    hueIndex++;
     dvd.style.filter = `hue-rotate(${hue}deg) saturate(100)`;
   }
   recolour();
