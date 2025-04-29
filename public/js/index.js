@@ -245,7 +245,30 @@ $('#search').onclick = function (e) {
   }
 };
 
+let idleTimer;
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') {
+    idleTimer = setTimeout(() => {
+      startScreensaver();
+    }, 10000);
+  } else {
+    clearTimeout(idleTimer);
+  }
+});
+
+/**
+ * Handles keyboard shortcuts for toggling plain mode and search.
+ * @param {KeyboardEvent} event
+ */
 $('body').onkeydown = function (event) {
+  if (
+    event.key === 's' &&
+    !['INPUT', 'TEXTAREA'].includes(event.target.tagName)
+  ) {
+    startScreensaver();
+  }
+
   if (event.which === 80 && event.altKey) {
     localStorage.plain = localStorage.plain == 1 ? 0 : 1;
     if (localStorage.plain == 1) {
@@ -488,6 +511,10 @@ whenReady.push(() => {
   while (walker.nextNode()) {
     const node = walker.currentNode;
     const match = node.nodeValue.match(/(w|W)/);
+    if (node.parentElement.tagName === 'A') {
+      // skip if it's a link
+      continue;
+    }
     if (match) {
       const index = match.index;
       const char = node.nodeValue[index];
@@ -610,6 +637,71 @@ function wibble() {
       }
     });
   });
+}
+
+let screensaverActive = false;
+
+function startScreensaver() {
+  if (screensaverActive) return;
+
+  screensaverActive = true;
+
+  // create fullscreen wrapper
+  const screensaver = document.createElement('div');
+  screensaver.id = 'screensaver';
+  screensaver.style.position = 'fixed';
+  screensaver.style.top = '0';
+  screensaver.style.left = '0';
+  screensaver.style.width = '100%';
+  screensaver.style.height = '100%';
+  document.body.appendChild(screensaver);
+
+  screensaver.onclick = function () {
+    screensaverActive = false;
+    document.body.removeChild(screensaver);
+  };
+
+  // create bouncing DVD image
+  const dvd = document.createElement('img');
+  dvd.src = '/images/pixel-me.png';
+  dvd.id = 'dvd';
+  dvd.style.position = 'absolute';
+  dvd.style.width = '200px';
+  dvd.style.height = '200px';
+  dvd.style.willChange = 'transform, filter';
+  screensaver.appendChild(dvd);
+
+  let x = (window.innerWidth / 2).toFixed(0) - 100;
+  let y = 20;
+  let vx = 2;
+  let vy = 2;
+  dvd.style.transform = `translate3d(${x}px,${y}px,0)`;
+
+  let hueIndex = 0;
+  const hues = [0, 60, 120, 180, 240, 300];
+  function recolour() {
+    const hue = hues[++hueIndex % hues.length];
+    dvd.style.filter = `hue-rotate(${hue}deg) saturate(100)`;
+  }
+  recolour();
+
+  function animate() {
+    x += vx;
+    y += vy;
+    let bounced = false;
+    if (x <= 0 || x + 200 >= window.innerWidth) {
+      vx = -vx;
+      bounced = true;
+    }
+    if (y <= 0 || y + 200 >= window.innerHeight) {
+      vy = -vy;
+      bounced = true;
+    }
+    if (bounced) recolour();
+    dvd.style.transform = `translate3d(${x}px,${y}px,0)`;
+    requestAnimationFrame(animate);
+  }
+  requestAnimationFrame(animate);
 }
 
 whenReady = {
