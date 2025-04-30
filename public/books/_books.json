@@ -1490,8 +1490,14 @@
     "author": "Winifred Watson",
     "pages": 234,
     "rating": 5,
-    "read": ["2019-08-24T00:00:00.000Z", "2023-05-26T00:00:00.000Z"],
-    "start": ["2022-12-10T00:00:00.000Z", "2019-08-17T00:00:00.000Z"],
+    "read": [
+      "2019-08-24T00:00:00.000Z",
+      "2023-05-26T00:00:00.000Z"
+    ],
+    "start": [
+      "2022-12-10T00:00:00.000Z",
+      "2019-08-17T00:00:00.000Z"
+    ],
     "published": 1938,
     "goodreads": "https://www.goodreads.com/book/show/2277185.Miss_Pettigrew_Lives_for_a_Day",
     "goodreads_id": 2277185,
@@ -1705,7 +1711,7 @@
     "spoiler": false,
     "slug": "sleep",
     "summary": "In general, the concepts and ideas are pretty solid. A lot of common sense that revolves around using sunlight to help with sleep patterns. Somehow I personally experienced a similar sleeping pattern (sticking to a regular alarm, getting up quickly, getting sunlight) and it worked incredibly well for me for 2 years (until I broke the pattern).",
-    "filename": "/Users/remy/dev/remysharp.com/public/books/2019/sleep-change-the-way-you-sleep-with-this-90-minute-read.md"
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2019/sleep.md"
   },
   {
     "title": "Autonomous",
@@ -1837,8 +1843,14 @@
     "author": "Matt Haig",
     "pages": 119,
     "rating": 4,
-    "read": ["2018-12-17T00:00:00.000Z", "2019-12-13T00:00:00.000Z"],
-    "start": ["2019-12-13T00:00:00.000Z", "2018-12-17T00:00:00.000Z"],
+    "read": [
+      "2018-12-17T00:00:00.000Z",
+      "2019-12-13T00:00:00.000Z"
+    ],
+    "start": [
+      "2019-12-13T00:00:00.000Z",
+      "2018-12-17T00:00:00.000Z"
+    ],
     "published": 2018,
     "goodreads": "https://www.goodreads.com/book/show/41443051-the-truth-pixie",
     "goodreads_id": 41443051,
@@ -2704,8 +2716,14 @@
     "author": "Jonas Jonasson",
     "pages": 434,
     "rating": 3,
-    "read": ["2017-08-19T00:00:00.000Z", "?"],
-    "start": ["2017-08-12T00:00:00.000Z", "2017-08-11T00:00:00.000Z"],
+    "read": [
+      "2017-08-19T00:00:00.000Z",
+      "?"
+    ],
+    "start": [
+      "2017-08-12T00:00:00.000Z",
+      "2017-08-11T00:00:00.000Z"
+    ],
     "published": 2013,
     "goodreads": "https://www.goodreads.com/book/show/20878481-the-girl-who-saved-the-king-of-sweden",
     "goodreads_id": 20878481,
@@ -2817,8 +2835,14 @@
     "author": "Matt Haig",
     "pages": 285,
     "rating": 5,
-    "read": ["2017-04-28T00:00:00.000Z", "2019-07-06T00:00:00.000Z"],
-    "start": ["2019-07-03T00:00:00.000Z", "2017-04-20T00:00:00.000Z"],
+    "read": [
+      "2017-04-28T00:00:00.000Z",
+      "2019-07-06T00:00:00.000Z"
+    ],
+    "start": [
+      "2019-07-03T00:00:00.000Z",
+      "2017-04-20T00:00:00.000Z"
+    ],
     "published": 2013,
     "goodreads": "https://www.goodreads.com/book/show/16130537-the-humans",
     "goodreads_id": 16130537,
@@ -2836,8 +2860,14 @@
     "author": "Mitch Albom",
     "pages": 196,
     "rating": 3,
-    "read": ["2017-04-02T00:00:00.000Z", "?"],
-    "start": ["2017-02-26T00:00:00.000Z", "?"],
+    "read": [
+      "2017-04-02T00:00:00.000Z",
+      "?"
+    ],
+    "start": [
+      "2017-02-26T00:00:00.000Z",
+      "?"
+    ],
     "published": 2003,
     "goodreads": "https://www.goodreads.com/book/show/3431.The_Five_People_You_Meet_in_Heaven",
     "goodreads_id": 3431,
@@ -2943,8 +2973,14 @@
     "author": "Matt Haig",
     "pages": 272,
     "rating": 4,
-    "read": ["2016-12-26T00:00:00.000Z", "2020-12-31T00:00:00.000Z"],
-    "start": ["2020-11-29T00:00:00.000Z", "2016-12-21T00:00:00.000Z"],
+    "read": [
+      "2016-12-26T00:00:00.000Z",
+      "2020-12-31T00:00:00.000Z"
+    ],
+    "start": [
+      "2020-11-29T00:00:00.000Z",
+      "2016-12-21T00:00:00.000Z"
+    ],
     "published": 2016,
     "goodreads": "https://www.goodreads.com/book/show/26805962-a-boy-called-christmas",
     "goodreads_id": 26805962,
