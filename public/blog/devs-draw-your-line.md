@@ -41,7 +41,7 @@ Take a stand, draw a line, and stick to it. Businesses and capitalism will want 
 
 ## Epilogue
 
-Even though Google very recently removed the excellent [uBlock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?pli=1) - it's still very much alive to [block trackers](https://ublockorigin.com/) where the don't belong.
+Even though Google very recently removed the excellent [uBlock Origin](https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?pli=1) - it's still very much alive and available to [block trackers](https://ublockorigin.com/) where they (trackers) don't belong.
 
 Equally, for me, using [NoScript](https://noscript.net/) blocks these in my desktop browser, but I also use [Pi-Hole](https://pi-hole.net/) in our home network, and I've been considering using [NextDNS](https://nextdns.io/?from=4azjnggh) for my mobile outside of my home network.
 

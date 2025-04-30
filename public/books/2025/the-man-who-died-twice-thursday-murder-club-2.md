@@ -14,7 +14,7 @@ start: 2025-01-08T00:00:00.000Z
 rating: 4
 ---
 
-Wreaks of "cosy crime" - and that's good.
+Reeks of "cosy crime" - and that's good.
 
 There's a reason that Richard Osman's series has been a runaway success for many people (or at least I can believe it) - the story is well written, the characters are extremely well drawn and the pages are a pleasure to digest.
 
