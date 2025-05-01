@@ -168,3 +168,9 @@ Now the final format is more like structure JSON (I do some extra work to match 
 ```
 
 So now I have my clippings on [my books like 1984](/books/2018/1984).
+
+---
+
+The one (rather important) bit that I've not quite worked out, is how to fully automate this. I suspect I'll need something either like a headless browser to do the work, or something with my Amazon credentials which isn't ideal.
+
+What _would_ be perfect, is it I could find a way to capture the clippings directly from the Kindle, especially since it's jailbroken now - though I suspect this is an extremely tricky problem to crack.
