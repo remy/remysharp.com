@@ -37,7 +37,7 @@ The simplicity of the task is one that, ideally, wouldn't require the kind rigou
 
 Compound this with the simple fact that both LLMs are not deterministic (ie. if I host a local LLM it's not going to give me the same answer, or rather it won't use the same pathway), and if you're using a remote/online LLM the models update under your feet.
 
-I'm sure this is because I'm not "controlling" the LLM in the best possible way. I recently read Simon Wilison explaining that with 2 years of deep experience with LLMs the power user skill is about controlling the context the LLM has to guide it to the best outcome. 
+I'm sure this is because I'm not "controlling" the LLM in the best possible way. I recently read Simon Willison explaining that with 2 years of deep experience with LLMs the power user skill is about controlling the context the LLM has to guide it to the best outcome. 
 
 But most users aren't power users.
 
