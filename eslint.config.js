@@ -1,15 +1,17 @@
-module.exports = {
-  env: {
-    node: true,
-    es6: true,
+const eslintPluginNode = require('eslint-plugin-node');
+
+module.exports = [
+  {
+    files: ['**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'script',
+    },
+    plugins: {
+      node: eslintPluginNode,
+    },
+    rules: {
+      'no-console': 'off',
+    },
   },
-  rules: {
-    'no-console': 0,
-  },
-  extends: ['eslint:recommended', 'plugin:node/recommended'],
-  parserOptions: {
-    ecmaVersion: 9,
-    sourceType: 'module',
-  },
-  plugins: ['node'],
-};
+];

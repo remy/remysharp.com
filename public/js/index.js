@@ -245,28 +245,22 @@ $('#search').onclick = function (e) {
   }
 };
 
-let idleTimer;
-
-document.addEventListener('visibilitychange', () => {
-  if (document.visibilityState === 'hidden') {
-    idleTimer = setTimeout(() => {
-      startScreensaver();
-    }, 10000);
-  } else {
-    clearTimeout(idleTimer);
-  }
-});
-
 /**
  * Handles keyboard shortcuts for toggling plain mode and search.
  * @param {KeyboardEvent} event
  */
-$('body').onkeydown = function (event) {
+$('body').addEventListener('keydown', (event) => {
   if (
     event.key === 's' &&
     !['INPUT', 'TEXTAREA'].includes(event.target.tagName)
   ) {
     startScreensaver();
+  }
+
+  if (event.key === 'Escape') {
+    if (screensaverActive) {
+      dismissScreensaver();
+    }
   }
 
   if (event.which === 80 && event.altKey) {
@@ -287,7 +281,7 @@ $('body').onkeydown = function (event) {
 
     $('#search').click();
   }
-};
+});
 
 function addFiltering() {
   const filter = $('#filter-posts');
@@ -641,6 +635,38 @@ function wibble() {
 
 let screensaverActive = false;
 
+let idleTimer;
+const maxTimeout = 10 * 60 * 1000; // 10 minutes in milliseconds
+const timeoutIntervals = [10000, 25000, 60000, maxTimeout]; // 10s, 25s, 60s, 10min
+
+// Listen for screensaver dismissal events from other tabs
+window.addEventListener('storage', (e) => {
+  if (e.key === 'screensaver-dismissed' && screensaverActive) {
+    screensaverActive = false;
+    const screensaver = $('#screensaver');
+    if (screensaver) document.body.removeChild(screensaver);
+  }
+});
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'hidden') {
+    idleTimer = setTimeout(() => {
+      startScreensaver();
+    }, timeoutIntervals.shift() || maxTimeout);
+  } else {
+    clearTimeout(idleTimer);
+  }
+});
+
+function dismissScreensaver() {
+  screensaverActive = false;
+  const screensaver = $('#screensaver');
+  if (screensaver) document.body.removeChild(screensaver);
+
+  // Notify other tabs that screensaver was dismissed
+  localStorage.setItem('screensaver-dismissed', Date.now());
+}
+
 function startScreensaver() {
   if (screensaverActive) return;
 
@@ -654,17 +680,23 @@ function startScreensaver() {
   screensaver.style.left = '0';
   screensaver.style.width = '100%';
   screensaver.style.height = '100%';
+
+  // fix the accessibility
+  screensaver.tabindex = 0;
+  screensaver.role = 'button';
+  screensaver.ariaLabel = `Click or hit escape to return to the blog content. When the tab went out of focus, a stupid easter egg was triggered showing Remy's face in 1 bit art bouncing from edge to edge of the screen much like the iconic DVD logo from the 90s. I did consider triggering an audible "boop" each time my face hit the edge of the window, but I can imagine that would get quickly annoying - albeit this overlay is probably already quite annoying!`;
+
   document.body.appendChild(screensaver);
 
   screensaver.onclick = function () {
-    screensaverActive = false;
-    document.body.removeChild(screensaver);
+    dismissScreensaver();
   };
 
   // create bouncing DVD image
   const dvd = document.createElement('img');
   dvd.src = '/images/pixel-me.png';
   dvd.id = 'dvd';
+  dvd.ariaHidden = true;
   dvd.style.position = 'absolute';
   dvd.style.width = '200px';
   dvd.style.height = '200px';

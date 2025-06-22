@@ -65,6 +65,7 @@ async function updateStaticCache() {
           '/images/avatar.jpg',
           '/images/avatar-2023.jpg',
           '/images/background.jpg',
+          '/images/pixel-me.png',
           '/images/search.svg',
         ])
       ),

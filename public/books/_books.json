@@ -1,5 +1,47 @@
 [
   {
+    "title": "The Radleys",
+    "author": "Matt Haig",
+    "published": 2010,
+    "pages": 341,
+    "goodreads": "https://www.goodreads.com/book/show/7989160-the-radleys",
+    "goodreads_id": 7989160,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1271413639l/7989160._SX50_.jpg",
+    "read": "2025-06-18T00:00:00.000Z",
+    "start": "2025-06-16T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2025/the-radleys.md",
+    "slug": "the-radleys"
+  },
+  {
+    "title": "Spike Milligan: Man of Letters",
+    "author": "Spike Milligan",
+    "published": 2013,
+    "pages": 353,
+    "goodreads": "https://www.goodreads.com/book/show/19230533-spike-milligan",
+    "goodreads_id": 19230533,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1410129861l/19230533._SX315_.jpg",
+    "read": "2025-06-16T00:00:00.000Z",
+    "start": "2025-06-13T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2025/spike-milligan-man-of-letters.md",
+    "slug": "spike-milligan-man-of-letters"
+  },
+  {
+    "title": "The Left Hand of Darkness",
+    "author": "Ursula K. Le Guin",
+    "published": 1969,
+    "pages": 290,
+    "goodreads": "https://www.goodreads.com/book/show/43373479-the-left-hand-of-darkness",
+    "goodreads_id": 43373479,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545930468l/43373479._SX315_.jpg",
+    "read": "2025-06-15T00:00:00.000Z",
+    "start": "2025-04-26T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2025/the-left-hand-of-darkness.md",
+    "slug": "the-left-hand-of-darkness"
+  },
+  {
     "title": "Minority Rule: Adventures in the Culture War",
     "author": "Ash Sarkar",
     "published": 2025,
