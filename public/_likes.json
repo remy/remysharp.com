@@ -56802,5 +56802,197 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "unhooking-from-amazon-ebooks": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dan Freeman",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/27b31c2f4a6327d5e1ac0daf4962fa356729009b584339c255c9a3c826e16cf9.jpg",
+        "url": "https://mstdn.social/@dfreeman"
+      },
+      "url": "https://front-end.social/@rem/114768119643668241#favorited-by-110102884249440864",
+      "published": null,
+      "wm-received": "2025-07-02T07:36:22Z",
+      "wm-id": 1921928,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114768119643668241/110102884249440864",
+      "wm-target": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "bassistance",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/90bf884d7ccbd6f0c938f30135316e1fedd4ae970dba5a27d09ae4641764693b.jpg",
+        "url": "https://chaos.social/@bassistance"
+      },
+      "url": "https://front-end.social/@rem/114768119643668241#favorited-by-109331356539035572",
+      "published": null,
+      "wm-received": "2025-07-01T18:40:05Z",
+      "wm-id": 1921811,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114768119643668241/109331356539035572",
+      "wm-target": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "aerobender",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/d23f3a2dc7299bab2c85b83987d9b28b41c7caf083cc20f0a3622c019ac7f8e6.png",
+        "url": "https://mas.to/@aerobender"
+      },
+      "url": "https://front-end.social/@rem/114768119643668241#favorited-by-110452397645263945",
+      "published": null,
+      "wm-received": "2025-06-30T17:04:33Z",
+      "wm-id": 1921565,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114768119643668241/110452397645263945",
+      "wm-target": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jenny Wong",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/69ca23d6edb39a2f77fd94bd1489bf4dfd0dbf24dfca94a7d4739ff0abf4d9ff.jpg",
+        "url": "https://bsky.app/profile/jwo.ng"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lsrd4blfk22r#liked_by_did:plc:rkcv3raf45wauuy6nmd7xrzi",
+      "published": null,
+      "wm-received": "2025-06-29T20:21:41Z",
+      "wm-id": 1921370,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lsrd4blfk22r/did%253Aplc%253Arkcv3raf45wauuy6nmd7xrzi",
+      "wm-target": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "matthewwaller.bsky.social",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/cbd58996f6407ede23e3afbb0ab40801c93c7b312c89db19b84066e451c787de.jpg",
+        "url": "https://bsky.app/profile/matthewwaller.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lsrd4blfk22r#liked_by_did:plc:thjkc4uetnfuqv4fcc3khvqn",
+      "published": null,
+      "wm-received": "2025-06-29T20:21:40Z",
+      "wm-id": 1921369,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lsrd4blfk22r/did%253Aplc%253Athjkc4uetnfuqv4fcc3khvqn",
+      "wm-target": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Boucher",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/541543c3aee939b890993b865ce3c9794d7b5230902ce4f2a05264fa8da6c5f9.jpg",
+        "url": "https://bsky.app/profile/t13r.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lsrd4blfk22r#liked_by_did:plc:6gqysjfl2tie2ijvxq67yymb",
+      "published": null,
+      "wm-received": "2025-06-29T19:54:01Z",
+      "wm-id": 1921363,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lsrd4blfk22r/did%253Aplc%253A6gqysjfl2tie2ijvxq67yymb",
+      "wm-target": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steve",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/389aa8040f378b46da5e6b60dabb1f444164312e09f4f0717fa0487d6d52fbc8.jpg",
+        "url": "https://bsky.app/profile/steve.scot"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lsrd4blfk22r#liked_by_did:plc:4fmjovxmu2fberpzr3euwzqd",
+      "published": null,
+      "wm-received": "2025-06-29T19:54:00Z",
+      "wm-id": 1921362,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lsrd4blfk22r/did%253Aplc%253A4fmjovxmu2fberpzr3euwzqd",
+      "wm-target": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Spiritual Lesbian",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/b01d1c19bb89fa5383324098c43f0035849343a213a1d40839a4529253b53031.png",
+        "url": "https://panelinha.club/@eberfreitas"
+      },
+      "url": "https://front-end.social/@rem/114768119643668241#favorited-by-112550165087364417",
+      "published": null,
+      "wm-received": "2025-06-29T19:49:40Z",
+      "wm-id": 1921358,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114768119643668241/112550165087364417",
+      "wm-target": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rizaldi",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/1a20b5507346a2768b17666b1d1098ed7eb2734f6fa1545b43027141efde1dfb.png",
+        "url": "https://hachyderm.io/@jal"
+      },
+      "url": "https://front-end.social/@rem/114768119643668241#favorited-by-109471468682489730",
+      "published": null,
+      "wm-received": "2025-06-29T19:22:31Z",
+      "wm-id": 1921350,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114768119643668241/109471468682489730",
+      "wm-target": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Luke Dorny",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/b37a05e651b5b37c9d671487f527e3a4c1318cd6540e7d38126fbb63adea3fda.jpg",
+        "url": "https://typo.social/@Luke"
+      },
+      "url": "https://front-end.social/@rem/114768119643668241#favorited-by-109399449652135346",
+      "published": null,
+      "wm-received": "2025-06-29T19:22:31Z",
+      "wm-id": 1921351,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114768119643668241/109399449652135346",
+      "wm-target": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/06/29/unhooking-from-amazon-ebooks",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
