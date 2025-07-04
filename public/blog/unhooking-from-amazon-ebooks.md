@@ -13,6 +13,8 @@ When I read that it was relatively easy to [jailbreak all the Kindle models](htt
 
 Here's how it's going so far. In short: not _quite_ as well as I'd like.
 
+<!-- more -->
+
 ## Jailbreaking
 
 I won't cover the process here, but it wasn't too difficult. You have to properly identify your model (which is tricky enough), and then carefully follow the step by step process. It's lots of reading, clicking, double checking and waiting. The Kindle needs to be connected to the computer doing the work, it's tedious but gives you more features.

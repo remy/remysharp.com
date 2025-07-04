@@ -1,6 +1,6 @@
 # remy sharp's b:log
 
-This code is 100% bespoke, partially inspired by [11ty](https://11ty.io) and by [Harp](http://harpjs.com/).
+This code is 100% bespoke, partially inspired by [11ty](https://11ty.io) and by [Harp](https://web.archive.org/web/20180309072152/http://harpjs.com/).
 
 A few notes:
 
