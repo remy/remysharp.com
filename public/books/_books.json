@@ -5,22 +5,24 @@
     "seriesNumber": "1",
     "series": "Sweetpea",
     "author": "C.J. Skuse",
-    "published": 2017,
     "pages": 480,
-    "goodreads": "https://www.goodreads.com/book/show/33229410-sweetpea",
-    "goodreads_id": 33229410,
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1615820960l/33229410._SX315_.jpg",
+    "rating": 4,
     "read": [
       "2025-06-28T00:00:00.000Z",
       "2025-06-28T00:00:00.000Z"
     ],
     "start": [
-      "2025-06-28T00:00:00.000Z",
-      "2025-06-19T00:00:00.000Z"
+      "2025-06-19T00:00:00.000Z",
+      "2025-06-28T00:00:00.000Z"
     ],
-    "rating": 4,
-    "filename": "/Users/remy/dev/remysharp.com/public/books/2025/sweetpea-sweetpea-1.md",
-    "slug": "sweetpea-sweetpea-1"
+    "published": 2017,
+    "goodreads": "https://www.goodreads.com/book/show/33229410-sweetpea",
+    "goodreads_id": 33229410,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1615820960l/33229410._SX315_.jpg",
+    "spoiler": false,
+    "slug": "sweetpea-sweetpea-1",
+    "summary": "Funny, unwavering and dark.",
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2025/sweetpea-sweetpea-1.md"
   },
   {
     "title": "The Radleys",
