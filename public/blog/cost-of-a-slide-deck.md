@@ -67,7 +67,7 @@ When I started out back in 2008, I was hugely flattered to be asked to speak (as
 
 The next few speaking gigs covered travel (mostly because they were abroad from the UK), and as I was an independent that wasn't representing a product or business. Then the first asked me how much do I charge.
 
-My rate fluctuated around £1,500+VAT (~$2,000) plus expenses. Looking at my peers rates that sounds about right, perhaps a little low today (this was was 2009).
+My rate fluctuated around £1,500+VAT (~$2,000) plus expenses. Looking at my peers rates that sounds about right, perhaps a little low today (this was 2009).
 
 If you've got a record of giving talks (even the same single talk) and it's well received, then to me, as an organiser, that's enough to show that you're a professional and that you should be paid for your time.
 
