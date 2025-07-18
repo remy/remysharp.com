@@ -2127,6 +2127,10 @@
     "created": "2025-01-30T16:22:13.000Z",
     "modified": "2025-01-30T16:22:13.000Z"
   },
+  "public/blog/how-do-i-get-more-women-to-attend.md": {
+    "created": "2025-07-04T10:54:36.000Z",
+    "modified": "2025-07-04T10:54:36.000Z"
+  },
   "public/blog/how-easy-was-easyjet.md": {
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
@@ -4120,22 +4124,6 @@
     "created": "2024-03-27T10:56:27.000Z",
     "modified": "2024-03-27T10:56:27.000Z"
   },
-  "public/attic/2006/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2007/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2008/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2014/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
   "public/books/2017/a-boy-made-of-blocks.md": {
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2020-11-06T12:09:51.000Z"
@@ -4927,6 +4915,22 @@
   "public/devlog/marbles2/2021-07-16.md": {
     "created": "2021-07-16T19:49:47.000Z",
     "modified": "2021-07-16T19:49:47.000Z"
+  },
+  "public/attic/2006/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2007/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2008/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2014/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
   },
   "public/til/cli/debugging-shell-scripts.md": {
     "created": "2020-05-27T11:57:54.000Z",

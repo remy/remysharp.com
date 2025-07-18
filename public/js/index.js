@@ -637,7 +637,7 @@ let screensaverActive = false;
 
 let idleTimer;
 const maxTimeout = 10 * 60 * 1000; // 10 minutes in milliseconds
-const timeoutIntervals = [10000, 25000, 60000, maxTimeout]; // 10s, 25s, 60s, 10min
+const timeoutIntervals = [maxTimeout, maxTimeout * 2, maxTimeout * 30];
 
 // Listen for screensaver dismissal events from other tabs
 window.addEventListener('storage', (e) => {
