@@ -3,7 +3,7 @@ title: 'Vibe coding and Robocop'
 date: 2025-07-18
 tags:
   - web
-image: /images/robocop.jpg
+image: /images/robocop-card.jpg
 ---
 
 # Vibe coding and Robocop
