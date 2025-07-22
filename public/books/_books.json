@@ -1,5 +1,19 @@
 [
   {
+    "title": "Reasons to Be Cheerful",
+    "author": "Nina Stibbe",
+    "published": 2019,
+    "pages": 288,
+    "goodreads": "https://www.goodreads.com/book/show/40664387-reasons-to-be-cheerful",
+    "goodreads_id": 40664387,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552980954l/40664387._SX315_.jpg",
+    "read": "2025-07-21T00:00:00.000Z",
+    "start": "2025-06-28T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2025/reasons-to-be-cheerful.md",
+    "slug": "reasons-to-be-cheerful"
+  },
+  {
     "title": "Sweetpea (Sweetpea, #1)",
     "seriesEntry": "Sweetpea",
     "seriesNumber": "1",
@@ -7,14 +21,8 @@
     "author": "C.J. Skuse",
     "pages": 480,
     "rating": 4,
-    "read": [
-      "2025-06-28T00:00:00.000Z",
-      "2025-06-28T00:00:00.000Z"
-    ],
-    "start": [
-      "2025-06-19T00:00:00.000Z",
-      "2025-06-28T00:00:00.000Z"
-    ],
+    "read": ["2025-06-28T00:00:00.000Z"],
+    "start": ["2025-06-19T00:00:00.000Z"],
     "published": 2017,
     "goodreads": "https://www.goodreads.com/book/show/33229410-sweetpea",
     "goodreads_id": 33229410,
@@ -1557,14 +1565,8 @@
     "author": "Winifred Watson",
     "pages": 234,
     "rating": 5,
-    "read": [
-      "2019-08-24T00:00:00.000Z",
-      "2023-05-26T00:00:00.000Z"
-    ],
-    "start": [
-      "2022-12-10T00:00:00.000Z",
-      "2019-08-17T00:00:00.000Z"
-    ],
+    "read": ["2019-08-24T00:00:00.000Z", "2022-12-26T00:00:00.000Z"],
+    "start": ["2019-08-17T00:00:00.000Z", "2022-12-10T00:00:00.000Z"],
     "published": 1938,
     "goodreads": "https://www.goodreads.com/book/show/2277185.Miss_Pettigrew_Lives_for_a_Day",
     "goodreads_id": 2277185,
@@ -1910,14 +1912,8 @@
     "author": "Matt Haig",
     "pages": 119,
     "rating": 4,
-    "read": [
-      "2018-12-17T00:00:00.000Z",
-      "2019-12-13T00:00:00.000Z"
-    ],
-    "start": [
-      "2019-12-13T00:00:00.000Z",
-      "2018-12-17T00:00:00.000Z"
-    ],
+    "read": ["2018-12-17T00:00:00.000Z", "2019-12-13T00:00:00.000Z"],
+    "start": ["2018-12-17T00:00:00.000Z", "2019-12-13T00:00:00.000Z"],
     "published": 2018,
     "goodreads": "https://www.goodreads.com/book/show/41443051-the-truth-pixie",
     "goodreads_id": 41443051,
@@ -2783,14 +2779,8 @@
     "author": "Jonas Jonasson",
     "pages": 434,
     "rating": 3,
-    "read": [
-      "2017-08-19T00:00:00.000Z",
-      "?"
-    ],
-    "start": [
-      "2017-08-12T00:00:00.000Z",
-      "2017-08-11T00:00:00.000Z"
-    ],
+    "read": ["2017-08-19T00:00:00.000Z", "?"],
+    "start": ["2017-08-12T00:00:00.000Z", "2017-08-11T00:00:00.000Z"],
     "published": 2013,
     "goodreads": "https://www.goodreads.com/book/show/20878481-the-girl-who-saved-the-king-of-sweden",
     "goodreads_id": 20878481,
@@ -2902,14 +2892,8 @@
     "author": "Matt Haig",
     "pages": 285,
     "rating": 5,
-    "read": [
-      "2017-04-28T00:00:00.000Z",
-      "2019-07-06T00:00:00.000Z"
-    ],
-    "start": [
-      "2019-07-03T00:00:00.000Z",
-      "2017-04-20T00:00:00.000Z"
-    ],
+    "read": ["2017-04-28T00:00:00.000Z", "2019-07-06T00:00:00.000Z"],
+    "start": ["2019-07-03T00:00:00.000Z", "2017-04-20T00:00:00.000Z"],
     "published": 2013,
     "goodreads": "https://www.goodreads.com/book/show/16130537-the-humans",
     "goodreads_id": 16130537,
@@ -2927,14 +2911,8 @@
     "author": "Mitch Albom",
     "pages": 196,
     "rating": 3,
-    "read": [
-      "2017-04-02T00:00:00.000Z",
-      "?"
-    ],
-    "start": [
-      "2017-02-26T00:00:00.000Z",
-      "?"
-    ],
+    "read": ["2017-04-02T00:00:00.000Z", "?"],
+    "start": ["2017-02-26T00:00:00.000Z", "?"],
     "published": 2003,
     "goodreads": "https://www.goodreads.com/book/show/3431.The_Five_People_You_Meet_in_Heaven",
     "goodreads_id": 3431,
@@ -3040,14 +3018,8 @@
     "author": "Matt Haig",
     "pages": 272,
     "rating": 4,
-    "read": [
-      "2016-12-26T00:00:00.000Z",
-      "2020-12-31T00:00:00.000Z"
-    ],
-    "start": [
-      "2020-11-29T00:00:00.000Z",
-      "2016-12-21T00:00:00.000Z"
-    ],
+    "read": ["2016-12-26T00:00:00.000Z", "2020-12-31T00:00:00.000Z"],
+    "start": ["2016-12-21T00:00:00.000Z", "2020-11-29T00:00:00.000Z"],
     "published": 2016,
     "goodreads": "https://www.goodreads.com/book/show/26805962-a-boy-called-christmas",
     "goodreads_id": 26805962,

@@ -56994,5 +56994,370 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "vibe-coding-and-robocop": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "richardTowers",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/00f8807d7888ccf341bbcc6c2d5d879b2e53adfcd0f978a2555be0e0311934ae.jpg",
+        "url": "https://hachyderm.io/@richardTowers"
+      },
+      "url": "https://front-end.social/@rem/114874700784750311#favorited-by-109881760482916875",
+      "published": null,
+      "wm-received": "2025-07-19T07:47:48Z",
+      "wm-id": 1925309,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114874700784750311/109881760482916875",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steve Grunwell",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/93e28303506dddf28253f69470be70cdee7202a8039223c80c5f851e494756ec.jpg",
+        "url": "https://phpc.social/@stevegrunwell"
+      },
+      "url": "https://front-end.social/@rem/114874700784750311#favorited-by-110546074935077458",
+      "published": null,
+      "wm-received": "2025-07-19T02:48:11Z",
+      "wm-id": 1925296,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114874700784750311/110546074935077458",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Damien Solimando",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/081e5f52b3549df60c2a54df1a2423ab46ff6fd39f9a05456e57874ea154adbd.jpg",
+        "url": "https://bsky.app/profile/dsolimando.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3luanxni6vc2p#liked_by_did:plc:urlqss3a7aa3cd7riew55kxg",
+      "published": null,
+      "wm-received": "2025-07-18T21:46:31Z",
+      "wm-id": 1925271,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3luanxni6vc2p/did%253Aplc%253Aurlqss3a7aa3cd7riew55kxg",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ian Wootten ????",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/ac9276bb119da1f86804b5936b6834fe5e7b2d58b9804d94ca711a972cbff478.jpg",
+        "url": "https://bsky.app/profile/iwootten.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3luanxni6vc2p#liked_by_did:plc:backvnj6l2uozas5mtjigh7k",
+      "published": null,
+      "wm-received": "2025-07-18T21:14:42Z",
+      "wm-id": 1925269,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3luanxni6vc2p/did%253Aplc%253Abackvnj6l2uozas5mtjigh7k",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Keith J. Grant",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/04a2955c823d004d89e4fc4d81064921a548999651567f8ce371fc18b79f44b8.jpg",
+        "url": "https://bsky.app/profile/keithjgrant.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3luanxni6vc2p#liked_by_did:plc:dx7vvynq7d4cwhxd4k4gesck",
+      "published": null,
+      "wm-received": "2025-07-18T16:39:17Z",
+      "wm-id": 1925222,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3luanxni6vc2p/did%253Aplc%253Adx7vvynq7d4cwhxd4k4gesck",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Surma",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/dbb050ee3f2f79b5a889de78f5c3bd82ecf997de55939b07ce67d8b2aa8bb195.jpg",
+        "url": "https://bsky.app/profile/surma.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3luanxni6vc2p#liked_by_did:plc:2jk7es2j2kibpq34xuglobww",
+      "published": null,
+      "wm-received": "2025-07-18T16:39:16Z",
+      "wm-id": 1925221,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3luanxni6vc2p/did%253Aplc%253A2jk7es2j2kibpq34xuglobww",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ian Ovenden",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/694d3d0a0fd085861e1daabb972ed2aacc77a40b6405c6da08502143c32286fd.jpg",
+        "url": "https://bsky.app/profile/ianovenden.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3luanxni6vc2p#liked_by_did:plc:iv3rbbw4hckauok6maueige6",
+      "published": null,
+      "wm-received": "2025-07-18T16:39:13Z",
+      "wm-id": 1925220,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3luanxni6vc2p/did%253Aplc%253Aiv3rbbw4hckauok6maueige6",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James :ruby:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/3f862b11177a2237731e74d74ed43468f479b22acf8283a13abf5bea555237ff.jpg",
+        "url": "https://ruby.social/@floehopper"
+      },
+      "url": "https://front-end.social/@rem/114874700784750311#favorited-by-109310914916270208",
+      "published": null,
+      "wm-received": "2025-07-18T15:58:17Z",
+      "wm-id": 1925199,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114874700784750311/109310914916270208",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sonneveld",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/454899101b81e36c0d59b70117d5c46f546d6b118a71c5814661a9066e9c89d8.jpg",
+        "url": "https://mastodon.social/@sonneveld"
+      },
+      "url": "https://front-end.social/@rem/114874700784750311#favorited-by-109363874905040192",
+      "published": null,
+      "wm-received": "2025-07-18T14:54:05Z",
+      "wm-id": 1925185,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114874700784750311/109363874905040192",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "alan :blobfoxheadphones:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/2da9df53558aad077328c70f0972aebf45c1db5608d154a5228717c955ed9469.jpg",
+        "url": "https://hachyderm.io/@TheIdOfAlan"
+      },
+      "url": "https://front-end.social/@rem/114874700784750311#favorited-by-109292287361815098",
+      "published": null,
+      "wm-received": "2025-07-18T14:54:03Z",
+      "wm-id": 1925182,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114874700784750311/109292287361815098",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pete",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/6856e93c2203b84c6779f0b8a2b118b37f137d7b2bbf0d0131e5bb064cfb2a36.jpg",
+        "url": "https://masto.hypertelia.com/@pete"
+      },
+      "url": "https://front-end.social/@rem/114874700784750311#favorited-by-113928133175484537",
+      "published": null,
+      "wm-received": "2025-07-18T14:54:03Z",
+      "wm-id": 1925183,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114874700784750311/113928133175484537",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David O'Brien",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/806a29cfd735d52744a88c990e5a1573ceb70dbe976f7b1196742f18ee6d0070.png",
+        "url": "https://mastodon.scot/@se_davidobrien"
+      },
+      "url": "https://front-end.social/@rem/114874700784750311#favorited-by-109386574243856669",
+      "published": null,
+      "wm-received": "2025-07-18T14:54:03Z",
+      "wm-id": 1925184,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114874700784750311/109386574243856669",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "auto-input-grow-with-css-but-is-it-a-bug-2": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Morgan Roderick",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/fc29bdedd895b3f3c9601d7e791d6a32619873e11a7677487a2022f01884fb44.jpg",
+        "url": "https://bsky.app/profile/mroderick.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3luavdoboek2p#liked_by_did:plc:pzosa6m74zsppxymuiedmyyo",
+      "published": null,
+      "wm-received": "2025-07-18T22:16:00Z",
+      "wm-id": 1925277,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3luavdoboek2p/did%253Aplc%253Apzosa6m74zsppxymuiedmyyo",
+      "wm-target": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Paul Campbell",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/18a853aa466b91428302629cd242af8a0177e577018ad507594126f9eaa5db07.png",
+        "url": "https://mastodon.social/@paulca"
+      },
+      "url": "https://front-end.social/@rem/114875237074416319#favorited-by-109297742289775924",
+      "published": null,
+      "wm-received": "2025-07-18T22:04:57Z",
+      "wm-id": 1925274,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114875237074416319/109297742289775924",
+      "wm-target": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "⧖ XELAN-∆.Signal",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/aee94be28b4d73b01c6b8769c453b381d0fd4675b508513b06a37f47341e962b.jpg",
+        "url": "https://bsky.app/profile/xelansignal.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3luavdoboek2p#liked_by_did:plc:ngruv7hbrhtzvnqvjc5il2yg",
+      "published": null,
+      "wm-received": "2025-07-18T18:43:26Z",
+      "wm-id": 1925256,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3luavdoboek2p/did%253Aplc%253Angruv7hbrhtzvnqvjc5il2yg",
+      "wm-target": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Daniel Schildt",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/a45cb79bade7603f52b5b73d142ecdefdda0f5b1c53a73f2f6ade20aa7afbab5.jpg",
+        "url": "https://bsky.app/profile/autiomaa.org"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3luavdoboek2p#liked_by_did:plc:ark7nxcfhgxp4gwdsbzcpnoo",
+      "published": null,
+      "wm-received": "2025-07-18T17:11:34Z",
+      "wm-id": 1925230,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3luavdoboek2p/did%253Aplc%253Aark7nxcfhgxp4gwdsbzcpnoo",
+      "wm-target": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Yo",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/9636bff7a08133c15603487fad33e0c23aebb59f5732e4a1408adcdbef1feb3b.jpg",
+        "url": "https://bsky.app/profile/yoyoyoyo.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3luavdoboek2p#liked_by_did:plc:6zdiiughb4fj2yau6z6f2w5r",
+      "published": null,
+      "wm-received": "2025-07-18T17:11:31Z",
+      "wm-id": 1925228,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3luavdoboek2p/did%253Aplc%253A6zdiiughb4fj2yau6z6f2w5r",
+      "wm-target": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Holger Hellinger",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/f5a7a1c27f4fdc3f49f4790d4c6f374b71ef69eace4ecb514d7f83a08daec6c4.png",
+        "url": "https://hellinger.wtf/@holger"
+      },
+      "url": "https://front-end.social/@rem/114875237074416319#favorited-by-111686747304740473",
+      "published": null,
+      "wm-received": "2025-07-18T17:05:48Z",
+      "wm-id": 1925225,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114875237074416319/111686747304740473",
+      "wm-target": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Neo-Rodneyite ✍????????",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/12077a28b3c149e671f4f75f0e91bea34ae650bd7adb4e1adc64fc86395de086.jpg",
+        "url": "https://todon.eu/@jalcine"
+      },
+      "url": "https://front-end.social/@rem/114875237074416319#favorited-by-109293864709524127",
+      "published": null,
+      "wm-received": "2025-07-18T17:05:44Z",
+      "wm-id": 1925224,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114875237074416319/109293864709524127",
+      "wm-target": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
