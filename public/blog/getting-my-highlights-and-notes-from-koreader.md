@@ -29,7 +29,7 @@ Now the file is waiting to be lifted to my computer.
 
 From the machine I want to upload the JSON file to, I need to run a WebDAV server (a technology I've always known about but never really had an need or use for until now).
 
-There's quite a few options for WebDAV servers, but I wanted something very lightweight and that I could run on the command line. I ended up using a [Go based server](https://github.com/hacdias/webdav), but I had to install it using `go install` ([brew didn't work for me](https://github.com/hacdias/webdav/issues/222)).
+There's quite a few options for WebDAV servers, but I wanted something very lightweight and that I could run on the command line. I ended up using a [Go based server](https://github.com/hacdias/webdav), via `brew install webdav`.
 
 Which ever server you use, you'll need to make sure it has write permissions. To run this go version in write, in the directory I want the JSON file uploaded to, I run:
 
