@@ -56801,6 +56801,63 @@
       "like-of": "https://remysharp.com/2017/12/15/is-jquery-still-relevant",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Florian Schulz",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/d9e1971d7d097a02cbb36db82efd2f3c90f98af0af5dd79d8a457f2623210413.png",
+        "url": "https://mastodon.social/@getflourish"
+      },
+      "url": "https://front-end.social/@rem/114916322255185930#favorited-by-109302252551965383",
+      "published": null,
+      "wm-received": "2025-07-26T07:15:08Z",
+      "wm-id": 1926525,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114916322255185930/109302252551965383",
+      "wm-target": "https://remysharp.com/2017/12/15/is-jquery-still-relevant",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2017/12/15/is-jquery-still-relevant",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/114916322255185930#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2025-07-26T01:13:25Z",
+      "wm-id": 1926509,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114916322255185930/109293603037070680",
+      "wm-target": "https://remysharp.com/2017/12/15/is-jquery-still-relevant",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2017/12/15/is-jquery-still-relevant",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "craignicol",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a99f202b4f08d64b55bb3ca3cd3d9ebbdc0ff8a2b9861cacb07493c8652d20b7.png",
+        "url": "https://glasgow.social/@craignicol"
+      },
+      "url": "https://front-end.social/@rem/114916322255185930#favorited-by-112905042989286006",
+      "published": null,
+      "wm-received": "2025-07-25T23:05:42Z",
+      "wm-id": 1926485,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114916322255185930/112905042989286006",
+      "wm-target": "https://remysharp.com/2017/12/15/is-jquery-still-relevant",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2017/12/15/is-jquery-still-relevant",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "unhooking-from-amazon-ebooks": [
@@ -57223,6 +57280,25 @@
       "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dr. Joachim Schlosser",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/ab6e63a4027e2170a7414bbafe9c1309dc8fa757154e90dd17cfe90155a3ab97.jpg",
+        "url": "https://bsky.app/profile/joachimschlosser.de"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3luanxni6vc2p#liked_by_did:plc:sm5d6bebnwmynkp57abh4ljz",
+      "published": null,
+      "wm-received": "2025-07-23T08:05:23Z",
+      "wm-id": 1925884,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3luanxni6vc2p/did%253Aplc%253Asm5d6bebnwmynkp57abh4ljz",
+      "wm-target": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/18/vibe-coding-and-robocop",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "auto-input-grow-with-css-but-is-it-a-bug-2": [
@@ -57356,6 +57432,46 @@
       "wm-target": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2006/11/27/auto-input-grow-with-css-but-is-it-a-bug-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "getting-my-highlights-and-notes-from-koreader": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/66fced339ce180d1f634b0aac66a3b6c2a6aaed02a6c4d79d7010e7a971c4dd0.jpg",
+        "url": "https://bsky.app/profile/vale.rocks"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lukwam35dc27#liked_by_did:plc:7qg6mz2xtzozxkgbcvf4pdnu",
+      "published": null,
+      "wm-received": "2025-07-23T01:06:08Z",
+      "wm-id": 1925846,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lukwam35dc27/did%253Aplc%253A7qg6mz2xtzozxkgbcvf4pdnu",
+      "wm-target": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "data0",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/f77ed520ef9ec45ca89f1049a560e29251a61fd1eb4d167575c19b5e4fa396eb.png",
+        "url": "https://indieweb.social/@data0"
+      },
+      "url": "https://front-end.social/@rem/114897819011226028#favorited-by-110939542583944997",
+      "published": null,
+      "wm-received": "2025-07-22T17:27:32Z",
+      "wm-id": 1925765,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/114897819011226028/110939542583944997",
+      "wm-target": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
       "wm-property": "like-of",
       "wm-private": false
     }
