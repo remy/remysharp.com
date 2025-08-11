@@ -33,7 +33,7 @@
   },
   "public/work.md": {
     "created": "2015-09-10T10:34:46.000Z",
-    "modified": "2019-06-06T22:57:02.000Z"
+    "modified": "2025-07-29T11:03:05.000Z"
   },
   "public/drafts/Centralised Failure Of IoT.md": {
     "created": "2017-10-25T13:20:53.000Z",
@@ -314,6 +314,130 @@
   "public/drafts/your-own-online-video-course.md": {
     "created": "2017-02-03T13:44:38.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
+  },
+  "public/newsletters/2017-06-30.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-07-28.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-08-25.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-09-29.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-10-28.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-11-24.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-12-29.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-01-26.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-02-27.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-03-30.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-04-27.md": {
+    "created": "2018-05-31T21:09:37.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-05-31.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-06-29.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-07-27.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-08-31.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-09-28.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-10-26.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-11-30.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-12-31.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-12-27T15:20:07.000Z"
+  },
+  "public/newsletters/2019-01-25.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2019-02-22.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2019-03-29.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2019-04-26.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2019-05-31.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2019-06-28.md": {
+    "created": "2019-06-28T07:46:55.000Z",
+    "modified": "2019-06-30T11:55:06.000Z"
+  },
+  "public/newsletters/2019-07-26.md": {
+    "created": "2019-07-26T22:00:54.000Z",
+    "modified": "2019-07-28T20:24:37.000Z"
+  },
+  "public/newsletters/2019-08-30.md": {
+    "created": "2019-08-29T20:03:44.000Z",
+    "modified": "2019-08-29T20:03:44.000Z"
+  },
+  "public/newsletters/2019-09-26.md": {
+    "created": "2019-09-27T12:27:01.000Z",
+    "modified": "2019-09-27T12:27:01.000Z"
+  },
+  "public/newsletters/2019-10-26.md": {
+    "created": "2019-10-26T09:46:20.000Z",
+    "modified": "2019-10-26T09:46:20.000Z"
+  },
+  "public/newsletters/2019-11-29.md": {
+    "created": "2019-11-29T13:49:34.000Z",
+    "modified": "2019-11-29T13:49:34.000Z"
+  },
+  "public/newsletters/2019-12-27.md": {
+    "created": "2019-12-27T15:20:07.000Z",
+    "modified": "2019-12-27T15:27:13.000Z"
   },
   "public/links/2007-10-05-39887df3.md": {
     "created": "2020-04-22T15:53:04.000Z",
@@ -1226,6 +1350,162 @@
   "public/links/2023-10-04-60cdc285.md": {
     "created": "2023-10-06T09:06:47.000Z",
     "modified": "2023-10-06T09:06:47.000Z"
+  },
+  "public/links/2024-02-09-395b2ad3.md": {
+    "created": "2025-07-29T11:03:05.000Z",
+    "modified": "2025-07-29T11:03:05.000Z"
+  },
+  "public/links/2024-04-26-731edafa.md": {
+    "created": "2025-07-29T11:03:05.000Z",
+    "modified": "2025-07-29T11:03:05.000Z"
+  },
+  "public/links/2024-05-08-f220c1f6.md": {
+    "created": "2025-07-29T11:03:05.000Z",
+    "modified": "2025-07-29T11:03:05.000Z"
+  },
+  "public/links/2024-07-26-3326ccec.md": {
+    "created": "2025-07-29T11:03:05.000Z",
+    "modified": "2025-07-29T11:03:05.000Z"
+  },
+  "public/links/2024-08-09-a63eca24.md": {
+    "created": "2025-07-29T11:03:05.000Z",
+    "modified": "2025-07-29T11:03:05.000Z"
+  },
+  "public/links/2024-09-05-769b8034.md": {
+    "created": "2025-07-29T11:03:05.000Z",
+    "modified": "2025-07-29T11:03:05.000Z"
+  },
+  "public/links/2024-11-02-131718ec.md": {
+    "created": "2025-07-29T11:03:05.000Z",
+    "modified": "2025-07-29T11:03:05.000Z"
+  },
+  "public/links/2024-11-05-0827383d.md": {
+    "created": "2025-07-29T11:03:05.000Z",
+    "modified": "2025-07-29T11:03:05.000Z"
+  },
+  "public/links/2025-02-12-9469eb6c.md": {
+    "created": "2025-07-29T11:03:05.000Z",
+    "modified": "2025-07-29T11:03:05.000Z"
+  },
+  "public/tif/2023-02-11-space-invaders.md": {
+    "created": "2023-02-14T22:40:51.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-02-14-super-mario.md": {
+    "created": "2023-02-14T22:40:51.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-02-25-gba-power.md": {
+    "created": "2023-03-01T18:12:21.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-01-joycon.md": {
+    "created": "2023-03-01T18:12:21.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-02-nes-clone.md": {
+    "created": "2023-03-04T11:43:47.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-03-switch.md": {
+    "created": "2023-03-04T11:43:47.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-09-gba.md": {
+    "created": "2023-03-12T23:35:58.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-10-joypad.md": {
+    "created": "2023-03-12T23:35:58.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-12-pebble.md": {
+    "created": "2023-03-12T23:35:58.000Z",
+    "modified": "2023-03-12T23:35:58.000Z"
+  },
+  "public/tif/2023-03-15-ps2.md": {
+    "created": "2023-03-22T20:15:18.000Z",
+    "modified": "2023-03-22T20:15:18.000Z"
+  },
+  "public/tif/2023-03-16-3ds.md": {
+    "created": "2023-03-22T20:15:18.000Z",
+    "modified": "2023-03-22T20:15:18.000Z"
+  },
+  "public/tif/2023-03-21-mario.md": {
+    "created": "2023-03-22T20:15:18.000Z",
+    "modified": "2023-03-22T20:15:18.000Z"
+  },
+  "public/tif/2023-03-26-crystal.md": {
+    "created": "2023-03-30T11:20:08.000Z",
+    "modified": "2023-03-30T11:20:08.000Z"
+  },
+  "public/tif/2023-03-29-joycons.md": {
+    "created": "2023-03-30T11:20:08.000Z",
+    "modified": "2023-03-30T11:20:08.000Z"
+  },
+  "public/tif/2023-04-05-dsl.md": {
+    "created": "2023-04-06T10:59:37.000Z",
+    "modified": "2023-04-06T10:59:37.000Z"
+  },
+  "public/tif/2023-04-05-pebble.md": {
+    "created": "2023-04-06T10:59:37.000Z",
+    "modified": "2023-04-06T10:59:37.000Z"
+  },
+  "public/tif/2023-04-10-glasses.md": {
+    "created": "2023-04-10T20:10:20.000Z",
+    "modified": "2023-04-10T20:10:20.000Z"
+  },
+  "public/tif/2023-04-11-pebble-steel.md": {
+    "created": "2023-04-18T09:29:54.000Z",
+    "modified": "2023-04-18T09:29:54.000Z"
+  },
+  "public/tif/2023-04-19-joycon.md": {
+    "created": "2023-04-20T11:35:29.000Z",
+    "modified": "2023-04-20T11:35:29.000Z"
+  },
+  "public/tif/2023-04-19-pm.md": {
+    "created": "2023-04-20T11:35:29.000Z",
+    "modified": "2023-04-20T11:35:29.000Z"
+  },
+  "public/tif/2023-05-14-pokemon.md": {
+    "created": "2023-05-15T08:35:29.000Z",
+    "modified": "2023-05-15T08:35:29.000Z"
+  },
+  "public/tif/2023-05-15-joycons.md": {
+    "created": "2023-05-15T17:04:52.000Z",
+    "modified": "2023-05-15T17:04:52.000Z"
+  },
+  "public/tif/2023-05-30-wonderswan.md": {
+    "created": "2023-05-30T18:50:53.000Z",
+    "modified": "2023-05-30T18:50:53.000Z"
+  },
+  "public/tif/2023-09-17-pokemon-sapphire.md": {
+    "created": "2023-09-20T14:51:20.000Z",
+    "modified": "2023-09-20T14:51:20.000Z"
+  },
+  "public/tif/2023-10-27-kindle.md": {
+    "created": "2023-10-27T11:43:23.000Z",
+    "modified": "2023-10-27T11:43:23.000Z"
+  },
+  "public/tif/2024-01-06-lights.md": {
+    "created": "2024-01-06T18:37:44.000Z",
+    "modified": "2024-01-06T18:37:44.000Z"
+  },
+  "public/tif/2024-03-27-cricut.md": {
+    "created": "2024-03-27T10:56:27.000Z",
+    "modified": "2024-03-27T10:56:27.000Z"
+  },
+  "public/attic/2006/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2007/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2008/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
   },
   "public/blog/2007-moments.md": {
     "created": "2014-09-04T11:12:23.000Z",
@@ -3877,7 +4157,7 @@
   },
   "public/blog/working-the-command-line.md": {
     "created": "2016-12-08T22:37:25.000Z",
-    "modified": "2019-03-17T22:29:28.000Z"
+    "modified": "2025-07-29T11:03:05.000Z"
   },
   "public/blog/working-with-the-esp-in-cspect.md": {
     "created": "2021-09-09T10:03:16.000Z",
@@ -3898,250 +4178,6 @@
   "public/blog/youre-paying-to-speak.md": {
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
-  },
-  "public/newsletters/2017-06-30.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-07-28.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-08-25.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-09-29.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-10-28.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-11-24.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-12-29.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-01-26.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-02-27.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-03-30.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-04-27.md": {
-    "created": "2018-05-31T21:09:37.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-05-31.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-06-29.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-07-27.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-08-31.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-09-28.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-10-26.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-11-30.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-12-31.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-12-27T15:20:07.000Z"
-  },
-  "public/newsletters/2019-01-25.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2019-02-22.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2019-03-29.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2019-04-26.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2019-05-31.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2019-06-28.md": {
-    "created": "2019-06-28T07:46:55.000Z",
-    "modified": "2019-06-30T11:55:06.000Z"
-  },
-  "public/newsletters/2019-07-26.md": {
-    "created": "2019-07-26T22:00:54.000Z",
-    "modified": "2019-07-28T20:24:37.000Z"
-  },
-  "public/newsletters/2019-08-30.md": {
-    "created": "2019-08-29T20:03:44.000Z",
-    "modified": "2019-08-29T20:03:44.000Z"
-  },
-  "public/newsletters/2019-09-26.md": {
-    "created": "2019-09-27T12:27:01.000Z",
-    "modified": "2019-09-27T12:27:01.000Z"
-  },
-  "public/newsletters/2019-10-26.md": {
-    "created": "2019-10-26T09:46:20.000Z",
-    "modified": "2019-10-26T09:46:20.000Z"
-  },
-  "public/newsletters/2019-11-29.md": {
-    "created": "2019-11-29T13:49:34.000Z",
-    "modified": "2019-11-29T13:49:34.000Z"
-  },
-  "public/newsletters/2019-12-27.md": {
-    "created": "2019-12-27T15:20:07.000Z",
-    "modified": "2019-12-27T15:27:13.000Z"
-  },
-  "public/tif/2023-02-11-space-invaders.md": {
-    "created": "2023-02-14T22:40:51.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-02-14-super-mario.md": {
-    "created": "2023-02-14T22:40:51.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-02-25-gba-power.md": {
-    "created": "2023-03-01T18:12:21.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-01-joycon.md": {
-    "created": "2023-03-01T18:12:21.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-02-nes-clone.md": {
-    "created": "2023-03-04T11:43:47.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-03-switch.md": {
-    "created": "2023-03-04T11:43:47.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-09-gba.md": {
-    "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-10-joypad.md": {
-    "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-12-pebble.md": {
-    "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-15-ps2.md": {
-    "created": "2023-03-22T20:15:18.000Z",
-    "modified": "2023-03-22T20:15:18.000Z"
-  },
-  "public/tif/2023-03-16-3ds.md": {
-    "created": "2023-03-22T20:15:18.000Z",
-    "modified": "2023-03-22T20:15:18.000Z"
-  },
-  "public/tif/2023-03-21-mario.md": {
-    "created": "2023-03-22T20:15:18.000Z",
-    "modified": "2023-03-22T20:15:18.000Z"
-  },
-  "public/tif/2023-03-26-crystal.md": {
-    "created": "2023-03-30T11:20:08.000Z",
-    "modified": "2023-03-30T11:20:08.000Z"
-  },
-  "public/tif/2023-03-29-joycons.md": {
-    "created": "2023-03-30T11:20:08.000Z",
-    "modified": "2023-03-30T11:20:08.000Z"
-  },
-  "public/tif/2023-04-05-dsl.md": {
-    "created": "2023-04-06T10:59:37.000Z",
-    "modified": "2023-04-06T10:59:37.000Z"
-  },
-  "public/tif/2023-04-05-pebble.md": {
-    "created": "2023-04-06T10:59:37.000Z",
-    "modified": "2023-04-06T10:59:37.000Z"
-  },
-  "public/tif/2023-04-10-glasses.md": {
-    "created": "2023-04-10T20:10:20.000Z",
-    "modified": "2023-04-10T20:10:20.000Z"
-  },
-  "public/tif/2023-04-11-pebble-steel.md": {
-    "created": "2023-04-18T09:29:54.000Z",
-    "modified": "2023-04-18T09:29:54.000Z"
-  },
-  "public/tif/2023-04-19-joycon.md": {
-    "created": "2023-04-20T11:35:29.000Z",
-    "modified": "2023-04-20T11:35:29.000Z"
-  },
-  "public/tif/2023-04-19-pm.md": {
-    "created": "2023-04-20T11:35:29.000Z",
-    "modified": "2023-04-20T11:35:29.000Z"
-  },
-  "public/tif/2023-05-14-pokemon.md": {
-    "created": "2023-05-15T08:35:29.000Z",
-    "modified": "2023-05-15T08:35:29.000Z"
-  },
-  "public/tif/2023-05-15-joycons.md": {
-    "created": "2023-05-15T17:04:52.000Z",
-    "modified": "2023-05-15T17:04:52.000Z"
-  },
-  "public/tif/2023-05-30-wonderswan.md": {
-    "created": "2023-05-30T18:50:53.000Z",
-    "modified": "2023-05-30T18:50:53.000Z"
-  },
-  "public/tif/2023-09-17-pokemon-sapphire.md": {
-    "created": "2023-09-20T14:51:20.000Z",
-    "modified": "2023-09-20T14:51:20.000Z"
-  },
-  "public/tif/2023-10-27-kindle.md": {
-    "created": "2023-10-27T11:43:23.000Z",
-    "modified": "2023-10-27T11:43:23.000Z"
-  },
-  "public/tif/2024-01-06-lights.md": {
-    "created": "2024-01-06T18:37:44.000Z",
-    "modified": "2024-01-06T18:37:44.000Z"
-  },
-  "public/tif/2024-03-27-cricut.md": {
-    "created": "2024-03-27T10:56:27.000Z",
-    "modified": "2024-03-27T10:56:27.000Z"
-  },
-  "public/attic/2006/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2007/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2008/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
   },
   "public/attic/2014/info.md": {
     "created": "2016-08-08T13:39:21.000Z",
@@ -4246,150 +4282,6 @@
   "public/books/2017/the-song-from-somewhere-else.md": {
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/1984.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/adrian-mole-the-prostrate-years-adrian-mole-8.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/all-systems-red-the-murderbot-diaries-1.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/artificial-condition-the-murderbot-diaries-2.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/beetle-boy.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/brave-new-world.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/christmas-jars-collectors-edition.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/dogs-of-war.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/exit-strategy-the-murderbot-diaries-4.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/good-omens.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/harry-potter-and-the-chamber-of-secrets-harry-potter-2.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/jessica-jones-vol-2-the-secrets-of-maria-hill.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/neuromancer.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/past-mortem.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/postcards-from-the-edge-suzanne-vale-1.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/rogue-protocol-the-murderbot-diaries-3.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/saga-volume-8.md": {
-    "created": "2023-10-06T09:06:47.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/saga-volume-9.md": {
-    "created": "2022-01-29T10:59:28.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/sex-and-drugs-and-sausage-rolls.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/silent-victim.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/snow-crash.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/stories-of-your-life-and-others.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/the-brighton-mermaid.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/the-catcher-in-the-rye.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/the-dead-fathers-club.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/the-end-specialist.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/the-gift-of-the-magi.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/the-lives-of-tao.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/the-night-masquerade-binti-3.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/the-obesity-code.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/the-power.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/the-unbeatable-squirrel-girl-vol-1-squirrel-power.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/tin-man.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/war-with-the-newts.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2020-11-06T12:09:51.000Z"
-  },
-  "public/books/2018/who-sent-clement-clement-1.md": {
-    "created": "2020-08-05T18:46:45.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2018/wishful-drinking-carrie-fisher.md": {
-    "created": "2023-11-20T21:39:42.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
   },
   "public/books/2019/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes.md": {
     "created": "2020-08-05T18:46:45.000Z",
@@ -4605,6 +4497,150 @@
   },
   "public/books/2020/the-testaments-the-handmaids-tale-2.md": {
     "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/1984.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/adrian-mole-the-prostrate-years-adrian-mole-8.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/all-systems-red-the-murderbot-diaries-1.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/artificial-condition-the-murderbot-diaries-2.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/beetle-boy.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/brave-new-world.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/christmas-jars-collectors-edition.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/dogs-of-war.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/exit-strategy-the-murderbot-diaries-4.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/good-omens.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/harry-potter-and-the-chamber-of-secrets-harry-potter-2.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/jessica-jones-vol-2-the-secrets-of-maria-hill.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/neuromancer.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/past-mortem.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/postcards-from-the-edge-suzanne-vale-1.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/rogue-protocol-the-murderbot-diaries-3.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/saga-volume-8.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/saga-volume-9.md": {
+    "created": "2022-01-29T10:59:28.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/sex-and-drugs-and-sausage-rolls.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/silent-victim.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/snow-crash.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/stories-of-your-life-and-others.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/the-brighton-mermaid.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/the-catcher-in-the-rye.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/the-dead-fathers-club.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/the-end-specialist.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/the-gift-of-the-magi.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/the-lives-of-tao.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/the-night-masquerade-binti-3.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/the-obesity-code.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/the-power.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/the-unbeatable-squirrel-girl-vol-1-squirrel-power.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/tin-man.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/war-with-the-newts.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2020-11-06T12:09:51.000Z"
+  },
+  "public/books/2018/who-sent-clement-clement-1.md": {
+    "created": "2020-08-05T18:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2018/wishful-drinking-carrie-fisher.md": {
+    "created": "2023-11-20T21:39:42.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
   "public/books/2021/84k.md": {
@@ -4975,18 +5011,6 @@
     "created": "2020-07-13T13:19:29.000Z",
     "modified": "2020-07-13T13:19:29.000Z"
   },
-  "public/til/data/modifying-autoincrements.md": {
-    "created": "2021-06-18T08:10:17.000Z",
-    "modified": "2021-06-18T08:10:17.000Z"
-  },
-  "public/til/data/postgres-csv-import-with-json.md": {
-    "created": "2021-03-09T12:53:55.000Z",
-    "modified": "2021-03-09T12:53:55.000Z"
-  },
-  "public/til/http/curl-s-isnt-as-useful-as-i-thought.md": {
-    "created": "2020-05-02T10:20:32.000Z",
-    "modified": "2020-05-26T11:26:37.000Z"
-  },
   "public/til/css/css-calc-divide.md": {
     "created": "2020-05-15T16:27:03.000Z",
     "modified": "2020-05-26T11:26:37.000Z"
@@ -5014,6 +5038,18 @@
   "public/til/css/text-overflow.md": {
     "created": "2020-11-06T19:13:58.000Z",
     "modified": "2020-11-06T19:13:58.000Z"
+  },
+  "public/til/http/curl-s-isnt-as-useful-as-i-thought.md": {
+    "created": "2020-05-02T10:20:32.000Z",
+    "modified": "2020-05-26T11:26:37.000Z"
+  },
+  "public/til/data/modifying-autoincrements.md": {
+    "created": "2021-06-18T08:10:17.000Z",
+    "modified": "2021-06-18T08:10:17.000Z"
+  },
+  "public/til/data/postgres-csv-import-with-json.md": {
+    "created": "2021-03-09T12:53:55.000Z",
+    "modified": "2021-03-09T12:53:55.000Z"
   },
   "public/til/javascript/new-bytes-from-textencoder.md": {
     "created": "2020-05-09T07:46:07.000Z",

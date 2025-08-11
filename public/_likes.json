@@ -902,6 +902,82 @@
       "like-of": "https://remysharp.com/newsletters/2019-09/",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Shaw",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/1a44f85e9f14ff8cba20b787e8c25548b0cc162e3d20d1b7e105ba2c0e2fb09a.jpg",
+        "url": "https://bsky.app/profile/shaw.city"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lvurzdjyxk2u#liked_by_did:plc:cfzewyyzcr75z4t3vhew6o7g",
+      "published": null,
+      "wm-received": "2025-08-08T15:57:49Z",
+      "wm-id": 1929916,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lvurzdjyxk2u/did%253Aplc%253Acfzewyyzcr75z4t3vhew6o7g",
+      "wm-target": "https://remysharp.com/",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "goodreds",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/787aebe1ea72b400342bf195c46cee3704b57e44e951d0f842a9398b97663f0a.jpg",
+        "url": "https://bsky.app/profile/goodreds.net"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lvurzdjyxk2u#liked_by_did:plc:qr6ckguqtamhdfkbacckngjw",
+      "published": null,
+      "wm-received": "2025-08-08T12:26:19Z",
+      "wm-id": 1929872,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lvurzdjyxk2u/did%253Aplc%253Aqr6ckguqtamhdfkbacckngjw",
+      "wm-target": "https://remysharp.com/",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rizaldi",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/594a435b63c264cd92633cfc642eaad3e645c8cb00d4447cb4a5cb8f0c5b5c20.jpg",
+        "url": "https://bsky.app/profile/rzldm.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lvurzdjyxk2u#liked_by_did:plc:nrxqgyxc3tf6njqgx734lei7",
+      "published": null,
+      "wm-received": "2025-08-08T09:06:50Z",
+      "wm-id": 1929843,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lvurzdjyxk2u/did%253Aplc%253Anrxqgyxc3tf6njqgx734lei7",
+      "wm-target": "https://remysharp.com/",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "SimonCox",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/c40396a299647974e85ac2f0a96b06350ec405e35475ac319de1b7604ad8d8ea.jpg",
+        "url": "https://bsky.app/profile/simoncox.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lvurzdjyxk2u#liked_by_did:plc:tki7vwlanxbwrz2er67eaeqa",
+      "published": null,
+      "wm-received": "2025-08-08T08:34:12Z",
+      "wm-id": 1929836,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lvurzdjyxk2u/did%253Aplc%253Atki7vwlanxbwrz2er67eaeqa",
+      "wm-target": "https://remysharp.com/",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "i-had-a-good-week": [
@@ -57472,6 +57548,84 @@
       "wm-target": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "in-the-middle-with-center": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/66fced339ce180d1f634b0aac66a3b6c2a6aaed02a6c4d79d7010e7a971c4dd0.jpg",
+        "url": "https://bsky.app/profile/vale.rocks"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lvt5dgttzk2h#liked_by_did:plc:7qg6mz2xtzozxkgbcvf4pdnu",
+      "published": null,
+      "wm-received": "2025-08-08T00:28:24Z",
+      "wm-id": 1929797,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lvt5dgttzk2h/did%253Aplc%253A7qg6mz2xtzozxkgbcvf4pdnu",
+      "wm-target": "https://remysharp.com/2014/08/15/in-the-middle-with-center",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2014/08/15/in-the-middle-with-center",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Stephens",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/7f1360eb01a47172ed6596463118d0215c28422b3de07a0acc3baf3ec308b91e.jpg",
+        "url": "https://bsky.app/profile/jonathanstephens.us"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lvt5dgttzk2h#liked_by_did:plc:3n6eectnoo457j2ntwycxdzh",
+      "published": null,
+      "wm-received": "2025-08-07T17:01:05Z",
+      "wm-id": 1929634,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lvt5dgttzk2h/did%253Aplc%253A3n6eectnoo457j2ntwycxdzh",
+      "wm-target": "https://remysharp.com/2014/08/15/in-the-middle-with-center",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2014/08/15/in-the-middle-with-center",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kevmarmol",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/90e539bfe078d12826a886f49ee5d7be60ac1e1f608c66c4464d0e7a36aa2eeb.jpg",
+        "url": "https://bsky.app/profile/kevmarmol.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lvt5dgttzk2h#liked_by_did:plc:obsw3rforhyafqr2qihqmywa",
+      "published": null,
+      "wm-received": "2025-08-07T16:26:03Z",
+      "wm-id": 1929631,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lvt5dgttzk2h/did%253Aplc%253Aobsw3rforhyafqr2qihqmywa",
+      "wm-target": "https://remysharp.com/2014/08/15/in-the-middle-with-center",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2014/08/15/in-the-middle-with-center",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/4bd3d77ac167711da4d93cf920feccde4b3ee1052fbe7c133f88dd6af7b915c4.jpg",
+        "url": "https://bsky.app/profile/bell.bz"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lvt5dgttzk2h#liked_by_did:plc:pzgvqg4ihnaihkrpmxqz5pu6",
+      "published": null,
+      "wm-received": "2025-08-07T16:26:01Z",
+      "wm-id": 1929630,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lvt5dgttzk2h/did%253Aplc%253Apzgvqg4ihnaihkrpmxqz5pu6",
+      "wm-target": "https://remysharp.com/2014/08/15/in-the-middle-with-center",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2014/08/15/in-the-middle-with-center",
       "wm-property": "like-of",
       "wm-private": false
     }
