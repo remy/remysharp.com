@@ -57550,6 +57550,82 @@
       "like-of": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Valentin Jacquemin",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/21c81b3d1e1f00cbffb3d1e1b9058cf3978660eaf2c1f6c893fd2d01982a0da3.jpg",
+        "url": "https://bsky.app/profile/jacquemin.ch"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lw4twqsxck2v#liked_by_did:plc:m7up6jcezdrdfbaqrrzmu6w7",
+      "published": null,
+      "wm-received": "2025-08-11T14:34:33Z",
+      "wm-id": 1930502,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lw4twqsxck2v/did%253Aplc%253Am7up6jcezdrdfbaqrrzmu6w7",
+      "wm-target": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/66fced339ce180d1f634b0aac66a3b6c2a6aaed02a6c4d79d7010e7a971c4dd0.jpg",
+        "url": "https://bsky.app/profile/vale.rocks"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lw4twqsxck2v#liked_by_did:plc:7qg6mz2xtzozxkgbcvf4pdnu",
+      "published": null,
+      "wm-received": "2025-08-11T13:33:56Z",
+      "wm-id": 1930495,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lw4twqsxck2v/did%253Aplc%253A7qg6mz2xtzozxkgbcvf4pdnu",
+      "wm-target": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "???? Alex Trost",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/8c9e509ac31879cb4d2ff837e375ad94b7db46b1f168ae30baf92ec1acb05912.jpg",
+        "url": "https://bsky.app/profile/trost.codes"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lw4twqsxck2v#liked_by_did:plc:nvl3yntjuveklffyz7fsfpua",
+      "published": null,
+      "wm-received": "2025-08-11T13:06:41Z",
+      "wm-id": 1930488,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lw4twqsxck2v/did%253Aplc%253Anvl3yntjuveklffyz7fsfpua",
+      "wm-target": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "/bin/man",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/2586ad66ded73bd2595c04505fb27b1af836f51a1b7478cd599bc7a7774139cc.jpg",
+        "url": "https://bsky.app/profile/jcoglan.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lw4twqsxck2v#liked_by_did:plc:6npiot5kep7e23xcbcknoe5t",
+      "published": null,
+      "wm-received": "2025-08-11T13:06:41Z",
+      "wm-id": 1930489,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lw4twqsxck2v/did%253Aplc%253A6npiot5kep7e23xcbcknoe5t",
+      "wm-target": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/07/22/getting-my-highlights-and-notes-from-koreader",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "in-the-middle-with-center": [
