@@ -1,5 +1,36 @@
 [
   {
+    "title": "In Bloom (Sweetpea, #2)",
+    "seriesEntry": "In Bloom",
+    "seriesNumber": "2",
+    "series": "Sweetpea",
+    "author": "C.J. Skuse",
+    "published": 2018,
+    "pages": 432,
+    "goodreads": "https://www.goodreads.com/book/show/38739384-in-bloom",
+    "goodreads_id": 38739384,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1540567987l/38739384._SX315_.jpg",
+    "read": "2025-08-12T00:00:00.000Z",
+    "start": "2025-07-23T00:00:00.000Z",
+    "rating": 0,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2025/in-bloom-sweetpea-2.md",
+    "slug": "in-bloom-sweetpea-2"
+  },
+  {
+    "title": "Reasons to Be Cheerful",
+    "author": "Nina Stibbe",
+    "published": 2019,
+    "pages": 288,
+    "goodreads": "https://www.goodreads.com/book/show/40664387-reasons-to-be-cheerful",
+    "goodreads_id": 40664387,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1552980954l/40664387._SX315_.jpg",
+    "read": "2025-07-21T00:00:00.000Z",
+    "start": "2025-06-28T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2025/reasons-to-be-cheerful.md",
+    "slug": "reasons-to-be-cheerful"
+  },
+  {
     "title": "Sweetpea (Sweetpea, #1)",
     "seriesEntry": "Sweetpea",
     "seriesNumber": "1",
@@ -1562,8 +1593,8 @@
       "2023-05-26T00:00:00.000Z"
     ],
     "start": [
-      "2022-12-10T00:00:00.000Z",
-      "2019-08-17T00:00:00.000Z"
+      "2019-08-17T00:00:00.000Z",
+      "2022-12-10T00:00:00.000Z"
     ],
     "published": 1938,
     "goodreads": "https://www.goodreads.com/book/show/2277185.Miss_Pettigrew_Lives_for_a_Day",
@@ -1915,8 +1946,8 @@
       "2019-12-13T00:00:00.000Z"
     ],
     "start": [
-      "2019-12-13T00:00:00.000Z",
-      "2018-12-17T00:00:00.000Z"
+      "2018-12-17T00:00:00.000Z",
+      "2019-12-13T00:00:00.000Z"
     ],
     "published": 2018,
     "goodreads": "https://www.goodreads.com/book/show/41443051-the-truth-pixie",
@@ -3045,8 +3076,8 @@
       "2020-12-31T00:00:00.000Z"
     ],
     "start": [
-      "2020-11-29T00:00:00.000Z",
-      "2016-12-21T00:00:00.000Z"
+      "2016-12-21T00:00:00.000Z",
+      "2020-11-29T00:00:00.000Z"
     ],
     "published": 2016,
     "goodreads": "https://www.goodreads.com/book/show/26805962-a-boy-called-christmas",

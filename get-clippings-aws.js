@@ -225,7 +225,7 @@ function decodeHtmlEntities(str) {
 
 function slug(s) {
   return slugify(s, {
-    remove: /[*+~.()'"!:@,#?]/g,
+    remove: /[*+~.()'"!:@,#?,]/g,
   }).toLowerCase();
 }
 

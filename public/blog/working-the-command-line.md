@@ -9,17 +9,17 @@ published: true
 ---
 # 📙 Working the Command Line
 
-Huzzah! Yesterday my book, [Working the Command Line](https://abookapart.com/products/working-the-command-line) was published by A Book Apart, and of course I want to tell you all about it!
+Huzzah! Yesterday my book, [Working the Command Line](/cli-book) was published by A Book Apart, and of course I want to tell you all about it!
 
 <!--more-->
 
-[![Working the command line](/images/aba-cli.jpg)](https://abookapart.com/products/working-the-command-line)
+[![Working the command line](/images/aba-cli.jpg)](/cli-book)
 
 ## 👨‍👩‍👧‍👦 Who is the book for?
 
 The book is about the command line and the terminal and aimed squarely at the beginner audience wanting to learn about the command line. I imagine the reader is a designer or front end developer that has probably dabbled a bit in the terminal, but really isn't too comfortable and is interested in learning more.
 
-It's possible you're not the audience because you've followed my blog for a long time and you're already awesome at all the code things, but, before you take off, I'm sure you know web people that could benefit, [so go buy it](https://abookapart.com/products/working-the-command-line)!
+It's possible you're not the audience because you've followed my blog for a long time and you're already awesome at all the code things, but, before you take off, I'm sure you know web people that could benefit, [so go buy it](/cli-book)!
 
 *Is the book Mac specific?* …is a question I've had a few times. It's true that I use a Mac and a lot of the key combinations I mention will be Mac specific, but it does try to cater for Windows, but now Windows has BASH then there's a lot more support (if not 100%) for the commands and tools I write about.
 
@@ -61,4 +61,4 @@ What was particularly flattering for me, was firstly the foreword that [Jeremy K
 
 I'm also working on a complementary video series to the book over at [terminal.training](https://terminal.training). I'm two sections in, again, aimed squarely at the same audience with (estimated) about 3.5 hours of material. If you're interested in getting first notification when this is complete, sign up for mailing list below (it's currently dormant but will post about courses and content).
 
-Oh, also, go buy 👉📙 [**Working the Command Line**](https://abookapart.com/products/working-the-command-line) 🙏👍😍
+Oh, also, go buy 👉📙 [**Working the Command Line**](/cli-book) 🙏👍😍
