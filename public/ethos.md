@@ -6,6 +6,14 @@ It's far from definitive and not organised well, but it's a start to capture wha
 
 ---
 
+## "Agree to disagree" is reserved for things like
+
+!["Agree to disagree" is reserved for things like "I don't like marmite." Not homophobia, transphobia, not human rights. Not basic common decency. We do not have a difference of opinion here. We have a difference in morality. Disagreeing with the validity of someone's identity and the rights and services they deserve or don't deserve because of it is discrimination, not disagreement.](/images/ethos-agree-to-disagree.jpg)
+
+- Via [Heather Paterson on BlueSky](https://bsky.app/profile/heatherpaterson.co.uk) - 3 Aug 2025
+
+---
+
 ## I don't wear 🌈 items to tell you who's in my bed.
 
 ![I don't wear rainbow items to tell you who's in my bed. I wear progress queer flags so the family across the street knows they are safe. So the couple in the restaurant know they aren't alone. So the boy who sees me notice him looking at dresses knows I won't judge. I wear because you make them hide.](/images/i-dont-wear.jpg)
