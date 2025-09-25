@@ -6,12 +6,8 @@ series: Sweetpea
 author: C.J. Skuse
 pages: 480
 rating: 4
-read:
-  - 2025-06-28T00:00:00.000Z
-  - 2025-06-28T00:00:00.000Z
-start:
-  - 2025-06-28T00:00:00.000Z
-  - 2025-06-19T00:00:00.000Z
+read: 2025-06-28T00:00:00.000Z
+start: 2025-06-19T00:00:00.000Z
 published: 2017
 goodreads: 'https://www.goodreads.com/book/show/33229410-sweetpea'
 goodreads_id: 33229410
@@ -27,6 +23,6 @@ Rhiannon, Sweetpea, is according to BuzzFeed, a serial killer - and probably a p
 
 Except as I carried on reading, I realised that what she was doing was listing the things that piss her off all the time and just landed at the inevitable conclusion that the only way to get rid of these things is to get rid of these things. Not unlike a lot of us except we don't go all the the way to fully extinguishing someone.
 
-There were some really funny turns of phrases throughout the book and I just wondered how I could possibly end but suspected it would end the way it did which isn't a bad thing. I definitely plan to read a few more of these books in a series. 
+There were some really funny turns of phrases throughout the book and I just wondered how I could possibly end but suspected it would end the way it did which isn't a bad thing. I definitely plan to read a few more of these books in a series.
 
 Graphic, explicit, raw, quite angry (and annoyed), funny. Good stuff!

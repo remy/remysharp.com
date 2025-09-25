@@ -1,13 +1,12 @@
 /* eslint-env browser */
-
 (() => {
   const $ = (s, context = document) => context.querySelector(s);
 
-  var $results = $('#search-results');
-  var $for = $('#for');
-  var template = $('#result-template').innerHTML;
+  const $results = $('#search-results');
+  const $for = $('#for');
+  const template = $('#result-template').innerHTML;
 
-  var months = [
+  const months = [
     'Jan',
     'Feb',
     'Mar',
@@ -21,6 +20,22 @@
     'Nov',
     'Dec',
   ];
+
+  function cleanQuery(plain) {
+    const string = [...new Set(plain.toLowerCase().split(/\s+/))].join(' ');
+
+    // remove short and less meaningful words
+    const result = string
+      .replace(
+        /\b(\.|,|can|all|out|now|how|one|are|get|use|way|day|got|run|quot|this|that|with|have|from|like|when|just|your|url|some|also|know|there|which|about|though|really|should|because|actually|recently|something|particular|particularly|specifically|the|had|you|your|a|an|and|am|you|I|to|if|of|off|me|my|on|in|it|is|at|as|we|do|be|has|but|was|so|no|not|or|up|for)\b/gi,
+        ''
+      )
+      .replace(/[^\w\s]/gm, ' ')
+      .replace(/\b\w{1,2}\b/gm, '')
+      .replace(/\s{2,}/gm, ' ');
+
+    return result.trim();
+  }
 
   function clean(s) {
     return decodeURIComponent(s).replace(/[<>]/g, () => {
@@ -71,6 +86,8 @@
       }
     }
 
+    const cleanQ = cleanQuery(query);
+
     const re = new RegExp(query.replace(/\s+/g, '|'), 'ig');
     query = query.split(/\s+/);
 
@@ -84,7 +101,14 @@
         if (!titleOnly) {
           const matches = post.text.match(re) || [];
 
-          matches.forEach((m) => (count += m.length < 5 ? 1 : m.length));
+          matches.forEach((m) => {
+            if (cleanQuery.includes) {
+              // boost the score
+              count += m.length < 5 ? 5 : m.length * 5;
+              return;
+            }
+            count += m.length < 5 ? 1 : m.length;
+          });
 
           const urlMatches = post.url.split('/').pop().match(re) || [];
 
@@ -92,7 +116,14 @@
 
           const titleMatches = post.title.toLowerCase().match(re) || [];
 
-          titleMatches.forEach((m) => (count += 100 * m.length));
+          titleMatches.forEach((m) => {
+            if (cleanQ.includes(m.toLowerCase())) {
+              // boost the score
+              count += 500 * m.length;
+              return;
+            }
+            count += 100 * m.length;
+          });
         } else {
           const titleMatches = post.title
             .toLowerCase()
