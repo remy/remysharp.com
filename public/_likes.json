@@ -58087,5 +58087,83 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "signal-pollution": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eystein",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/cc21da322ae88746a46ab29f95857602f6cc5f6173092875ecfa2d66944bf755.jpg",
+        "url": "https://front-end.social/@eys"
+      },
+      "url": "https://front-end.social/@rem/115265906688452674#favorited-by-109292105747293278",
+      "published": null,
+      "wm-received": "2025-09-26T08:59:20Z",
+      "wm-id": 1942214,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115265906688452674/109292105747293278",
+      "wm-target": "https://remysharp.com/2025/09/25/signal-pollution",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/09/25/signal-pollution",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Devin",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/63075100717c38ed3dd9d5f7076b69caeb4b78aae7bf48a037f903d17b041dc0.jpg",
+        "url": "https://bsky.app/profile/dvnrsn.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lzof3gmo5c2u#liked_by_did:plc:iu3be42nzat45qspywvb5mnt",
+      "published": null,
+      "wm-received": "2025-09-25T19:41:52Z",
+      "wm-id": 1942133,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lzof3gmo5c2u/did%253Aplc%253Aiu3be42nzat45qspywvb5mnt",
+      "wm-target": "https://remysharp.com/2025/09/25/signal-pollution",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/09/25/signal-pollution",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brad Frost",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/6e3ac7405045d497072c8529c17c03eaa549db85f0e6bf7e17746abab7128e62.jpg",
+        "url": "https://bsky.app/profile/bradfrost.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3lzof3gmo5c2u#liked_by_did:plc:rmbi5fz2tigqxidqyuncs5xe",
+      "published": null,
+      "wm-received": "2025-09-25T19:41:51Z",
+      "wm-id": 1942132,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3lzof3gmo5c2u/did%253Aplc%253Armbi5fz2tigqxidqyuncs5xe",
+      "wm-target": "https://remysharp.com/2025/09/25/signal-pollution",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/09/25/signal-pollution",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Johan Halse",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/431d559d08db35ee1e9fa38ab5b1daa52dcc58e346072b7053cfa0334a495b8d.jpg",
+        "url": "https://ruby.social/@hejsna"
+      },
+      "url": "https://front-end.social/@rem/115265906688452674#favorited-by-109426675147565713",
+      "published": null,
+      "wm-received": "2025-09-25T17:29:10Z",
+      "wm-id": 1942114,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115265906688452674/109426675147565713",
+      "wm-target": "https://remysharp.com/2025/09/25/signal-pollution",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/09/25/signal-pollution",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
