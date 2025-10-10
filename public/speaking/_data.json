@@ -1575,5 +1575,22 @@
       },
       "url": "https://webclerks.at/"
     }
+  ],
+  "2025": [
+    {
+      "slug": "2025_how_to_fix_a_gameboy",
+      "event": "WDC 2025",
+      "location": "England, Bristol",
+      "title": "How to fix a Game Boy",
+      "year": 2025,
+      "links": [
+        ["slides", "https://speakerdeck.com/rem/how-to-fix-a-game-boy"]
+      ],
+      "date": {
+        "start": "2025-10-10"
+      },
+      "url": "https://webdevconf.com",
+      "extra": "/events/2025"
+    }
   ]
 }
