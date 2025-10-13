@@ -9,6 +9,8 @@ tags:
 
 Very recently I was forced to sign up to Meta due to a product purchase (don't at-me!) and I had forgotten what it was like to be part of the algorithms. Our entire family browse the internet (the web _and_ internet) from behind a DNS proxy that blocks a lot of social media including Facebook/Meta/Insta/whatever it's actually called.
 
+<!-- more -->
+
 Unblocking these different services just to get a physical product to work (naively I thought it worked mostly offline) felt like I was exposing myself to a pretty gross network.
 
 Then had to make an account for my child, whom if there were over the age of 10 and under the age of 13, could be managed under my account. Once they turned 13 (in the eyes of Meta) they were completely unrestricted (which I've got A LOT to say about, but I digress).

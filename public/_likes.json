@@ -58165,5 +58165,121 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Franz Zieris",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mastodon.social/@franzzieris"
+      },
+      "url": "https://front-end.social/@rem/115328017005109749#favorited-by-110918496737750805",
+      "published": null,
+      "wm-received": "2025-10-06T18:46:11Z",
+      "wm-id": 1945661,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115328017005109749/110918496737750805",
+      "wm-target": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hidde ????",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/1b01f4ddeb3be00c18f1653d9d90ebc6bd41563e8d28a0757813ca9941f74ab4.jpg",
+        "url": "https://front-end.social/@hdv"
+      },
+      "url": "https://front-end.social/@rem/115328017005109749#favorited-by-109292541621018376",
+      "published": null,
+      "wm-received": "2025-10-06T17:45:04Z",
+      "wm-id": 1945654,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115328017005109749/109292541621018376",
+      "wm-target": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jrlarsen",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/019780a2b0293f735e352866b63fd1eb51a6c362cf764c3e054da7773b27b008.jpg",
+        "url": "https://bsky.app/profile/jrlarsen.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m2jxq5zvdc2l#liked_by_did:plc:dx4hfgdeyfswmn2muss7gy6s",
+      "published": null,
+      "wm-received": "2025-10-06T16:54:17Z",
+      "wm-id": 1945644,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m2jxq5zvdc2l/did%253Aplc%253Adx4hfgdeyfswmn2muss7gy6s",
+      "wm-target": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/502ff2ff6570ac1107ed6c74f5dfcfb223d007b99da998f5d5cd6f56fa1290f2.jpg",
+        "url": "https://bsky.app/profile/chaosmonster.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m2jxq5zvdc2l#liked_by_did:plc:d5qyrlkgpr3kueeobgfq2pvp",
+      "published": null,
+      "wm-received": "2025-10-06T16:19:41Z",
+      "wm-id": 1945642,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m2jxq5zvdc2l/did%253Aplc%253Ad5qyrlkgpr3kueeobgfq2pvp",
+      "wm-target": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas Vander Wal",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a20288c7c48302cf3b9002de081a4210ed926620e7d07668be765d7b46be96ff.png",
+        "url": "https://mastodon.social/@vanderwal"
+      },
+      "url": "https://front-end.social/@rem/115328017005109749#favorited-by-109292234081791847",
+      "published": null,
+      "wm-received": "2025-10-06T16:08:17Z",
+      "wm-id": 1945640,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115328017005109749/109292234081791847",
+      "wm-target": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "fredrik wallberg",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/0efbca39c0478317dd91e82e32317e8a28b32f9d8e5c27db253329b279c9f7bc.jpg",
+        "url": "https://mastodon.social/@quesebifurcan"
+      },
+      "url": "https://front-end.social/@rem/115328017005109749#favorited-by-109443612088218413",
+      "published": null,
+      "wm-received": "2025-10-06T16:08:17Z",
+      "wm-id": 1945641,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115328017005109749/109443612088218413",
+      "wm-target": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books/2025/empire-of-ai-dreams-and-nightmares-in-sam-altmans-openai",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
