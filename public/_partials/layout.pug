@@ -81,8 +81,18 @@ html#remysharp-com(lang="en")
     script.
       var whenReady = []; // on ready handler
   body(id=`${current.path.join('-')}-page` class=`month-${moment().format('MMMM').toLowerCase()}`)
+
     include page-nav
 
+    //- An experiment in using shadow DOM to isolate styles that causes ad blockers
+    //- template(shadowrootmode="open")
+    //-   style
+    //-     include /css/bear.css
+
+    //-   link(rel="stylesheet" href=`/css/screen.css`)
+    //-   link(rel="stylesheet" href=`/css/prism.css`)
+    //-   div(id=`${current.path.join('-')}-page`)
+    //-     block content
     block content
 
     footer.site-footer.clearfix.flex.subpanel
@@ -99,7 +109,7 @@ html#remysharp-com(lang="en")
       .flex-item.license
         .row
           h2 Remy Sharp
-            img#avatar.u-photo(alt="" src="/images/avatar-2022-square.jpg" width="60")
+            img#avatar.u-photo(alt="" src="/images/avatar-2022-square.avif" width="60")
             include social-badge
         .row.bio.p-note
           include mini-bio
