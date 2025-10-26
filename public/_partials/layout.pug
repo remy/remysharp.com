@@ -72,6 +72,12 @@ html#remysharp-com(lang="en")
     //-     }
     //-   }
 
+    script(async src="https://plausible.io/js/pa-npTOFws3z6KrQS2x14eKf.js")
+    script.
+      // Privacy-friendly analytics by Plausible
+      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+      plausible.init()
+
 
     link(as="style" href=`/css/screen.css` rel="preload")
     link(as="style" href=`/css/prism.css` rel="preload")
@@ -132,7 +138,6 @@ html#remysharp-com(lang="en")
     script.
       if ('serviceWorker' in navigator && location.origin.indexOf('localhost') === -1) navigator.serviceWorker.register('/service-worker.js');
 
-    //- script(defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "fa18b51625b1499ebb904f82a5da5afa"}')
     script(src="/js/version.js")
     script(type="awesome/sauce")
       |
