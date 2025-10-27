@@ -11,7 +11,7 @@ goodreads_id: 38739384
 cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1540567987l/38739384._SX315_.jpg
 read: 2025-08-12T00:00:00.000Z
 start: 2025-07-23T00:00:00.000Z
-rating: 0
+rating: 4
 ---
 
 No quite the same murderfest from Sweetpea 1, but still enjoyably angry at the world.
