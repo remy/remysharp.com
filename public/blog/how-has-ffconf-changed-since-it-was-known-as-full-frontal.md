@@ -1,12 +1,12 @@
 ---
-title: 'How has FFConf since it was known as Full Frontal?'
+title: 'How has FFConf changed since it was known as Full Frontal?'
 date: "2025-10-27"
 image: /images/combined-ffconf-group.avif
 tags:
   - web
 ---
 
-# How has FFConf since it was known as Full Frontal?
+# How has FFConf changed since it was known as Full Frontal?
 
 Besides the [name](https://remysharp.com/2016/07/22/whats-in-a-name), the entire core foundation has changed.
 
