@@ -10,6 +10,10 @@ tags:
 
 # Tasty CookieStore
 
+As a precursor to what you're about to read, I original wrote the majority of this post in February 2019 and in the subsequent 6½ years, this API matured enough that it was worthwhile finishing. I've only updated where appropriate.
+
+---
+
 Firstly, I apologise for the awful post title. Still - my excitement about this browser API is disproportionate to how utterly uncool it really is; the cookie browser API got a serious upgrade.
 
 Fuuuq-king-finally. Amirite?
@@ -31,6 +35,7 @@ A few lowlights:
 - "Session" cookies leak across sessions
 - Non-session cookies require returning to the 70s via time machine to recall the exact date format to make them work
 - Deleting a cookie doesn't delete at all, just sets it to really old - has grandpa been deleted? Who knows.
+- The time format for the expire is exact, get it wrong, no errors, just doesn't work…or is it a session cookie, again who knows.
 - Syntax for setting cookie is brittle, i.e. `Set-Cookie: path=/;token=1234` fails without explanation.
 
 In fact, here's a slide straight out of my "Browsers with Wings" talk from 2010.
@@ -53,16 +58,25 @@ Oh yes, a new store that not _only_ buys and sells your cookies, your cookies co
 
 ![I am excited](/images/excited.gif)
 
-I hear you: _Enough with the crap puns, show me code._
+I hear you: _Enough with the bad puns, show me code._
+
+### The highlights
+
+- store and retrieve is async, which means no blocking the browser.
+- syntax is very simple (by comparison)
+- the API is also available from inside a service worker
+- there are APIs for getting _all_ and getting individual named cookies
+- change events (this is the big one for me)
+- [moved to baseline support in 2025](https://developer.mozilla.org/en-US/docs/Web/API/CookieStore)
 
 ### Getting a cookie
 
 I was going to include how to get a cookie using the current API for comparison - but I decided I didn't hate myself enough, so let's look at getting a cookie.
 
-As a note - all the cookie store methods return promises, so it's async by default (which means no locking up the browser during any deserialisation).
+As a note - all the cookie store methods return promises, so it's async by default (which means no locking up the browser during any deserialization).
 
 ```js
-const token = await cookeStore.get('token');
+const token = await cookieStore.get('token');
 // response:
 {
   "domain": null,
@@ -76,6 +90,37 @@ const token = await cookeStore.get('token');
 ```
 
 That's it.
+
+### Setting cookies
+
+Rather than the strange "set it in the past for session", by _default_ if you set a cookie, it's session based.
+
+Session cookies are very simple:
+
+```js
+await cookieStore.set('token', 'very_secret');
+
+// also works:
+await cookieStore.set({ name: 'token', value: 'very_secret' });
+```
+
+It becomes more interesting for cookies with expiries. A non-session cookie requires that an object is passed in with [options](https://developer.mozilla.org/en-US/docs/Web/API/CookieStore/set#options). In particular, the `expires` must be a unix timestamp, so getting the wrong datetime format only results in an error (thankfully):
+
+```js
+await cookieStore.set({ name: 'token', value: 'very_secret', expires: "next week"});
+// Uncaught (in promise) TypeError: CookieStore.set: 'expires' member of CookieInit is not a finite floating-point value.
+```
+
+_Caveat: it's worth stating that just like the [Storage API](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/storage) values are serialised to strings, so values will need to be appropriately parsed back out._
+
+Setting a cookie for 30 days is immediately (to me) much more intuitive:
+
+```
+const oneDay = 1000 * 60 * 60 * 24
+await cookieStore.set({ name: 'token', value: 'very_secret', expires: Date.now() + oneDay * 30 });
+```
+
+
 
 ## Can I use?
 

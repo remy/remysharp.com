@@ -9,7 +9,7 @@ tags:
   - code
 ---
 
-In our crusade to recreate the [world's first browser](https://worldwideweb.cern.ch/) the question of how search came up.
+In our crusade to recreate the [world's first browser](https://worldwideweb.cern.ch/) (in 2019) the question of how to _search_ came up.
 
 It's an interesting problem because the context for those days, 1989-1990, was that: the web had just been invented/proposed, the first http daemon had been written (and published) and the first browser had been written: WorldWideWeb.
 

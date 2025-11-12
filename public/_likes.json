@@ -58281,5 +58281,26 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "how-has-ffconf-changed-since-it-was-known-as-full-frontal": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Olu",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/e215b0c0271dcb9813a9da363b538298a0b5216fa1d7bdf520bde4003d036b6b.jpg",
+        "url": "https://social.gfsc.studio/@oluOnline"
+      },
+      "url": "https://front-end.social/@rem/115445927942079070#favorited-by-110616421207649966",
+      "published": null,
+      "wm-received": "2025-10-27T15:52:07Z",
+      "wm-id": 1950232,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115445927942079070/110616421207649966",
+      "wm-target": "https://remysharp.com/2025/10/27/how-has-ffconf-changed-since-it-was-known-as-full-frontal",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/10/27/how-has-ffconf-changed-since-it-was-known-as-full-frontal",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
