@@ -12,6 +12,8 @@ A simple but effective fix to working with web components and VS Code. I wanted 
 
 The extremely quick read is, add `/* HTML */` to the front of the template. Case sensitive _and_ space sensitive (though hopefully one day it won't be so strict). Now highlighting and prettier (with save and fix) works.
 
+Note that you need the [es6-string-html](https://marketplace.visualstudio.com/items?itemName=Tobermory.es6-string-html) VS Code extension for this to highlight correct (something I had forgotten I had installed).
+
 <!-- more -->
 
 ## The slightly longer read
