@@ -36,7 +36,7 @@ customElements.define(
 );
 ```
 
-Seen here with VS Code's syntax highlighting:
+Seen here with VS Code's syntax highlighting - note that the template itself is just green, plain text:
 
 ![Although the JavaScript is highlighted, the string of markup applied to the innerHTML is all in green](/images/template-highlight-0.png.avif)
 
@@ -44,11 +44,11 @@ Using a tag function solves the main issue, but requires extra code or a _magic_
 
 ![The syntax is nice and tidy now using a tag function, but my linting is highlighted that the html function is missing](/images/template-highlight-2.png.avif)
 
-VS Code does support highlighting if you give it a hint using a comment, but prettier doesn't format it - close, but still no dice:
+VS Code does support highlighting if you give it a hint using a comment: `/*html*/`, but prettier doesn't format it - close, but still no dice:
 
 ![The syntax is now fully colourised, but not structured in a way that's nice and easy to read](/images/template-highlight-1.png.avif)
 
-Finally, if you get the comment syntax _exactly_ right, that's uppercase and with spaces around the text, then you'll get both highlighting and syntax tidy support without the need for build tools:
+Finally, if you get the comment syntax _exactly_ right, that's uppercase and with spaces around the text, `/* HTML */`, then you'll get both highlighting and syntax tidy support without the need for build tools:
 
 ![The syntax is now fully colourised and it's tidy](/images/template-highlight-3.png.avif)
 
