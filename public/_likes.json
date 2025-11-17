@@ -58360,6 +58360,177 @@
       "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pierre Spring",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/d632fb7a0d13ebe721fe04c0efc19ddb0131867178b07b6f8552ec998aa937ea.jpg",
+        "url": "https://fosstodon.org/@caillou"
+      },
+      "url": "https://front-end.social/@rem/115536273728886563#favorited-by-109485255051589173",
+      "published": null,
+      "wm-received": "2025-11-16T14:19:20Z",
+      "wm-id": 1954118,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115536273728886563/109485255051589173",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mahmood From Gaza????????????",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/41f22044959ae893310d905560027054905b744a74b921f768af17743e619739.jpg",
+        "url": "https://mastodon.scot/@MahmoudGaza"
+      },
+      "url": "https://front-end.social/@rem/115536273728886563#favorited-by-115255572615712272",
+      "published": null,
+      "wm-received": "2025-11-13T22:37:27Z",
+      "wm-id": 1953816,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115536273728886563/115255572615712272",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Cathy Chi (朱永平)",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/a53e19b6b960e9784833eb6b2512d51ab1f9875572aff06f7de877f1f1df8a9b.jpg",
+        "url": "https://bsky.app/profile/cathy-codes.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m5ghaeiems2n#liked_by_did:plc:qsb7jmua53ax3x5kljzjtj5r",
+      "published": null,
+      "wm-received": "2025-11-13T05:45:31Z",
+      "wm-id": 1953711,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m5ghaeiems2n/did%253Aplc%253Aqsb7jmua53ax3x5kljzjtj5r",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kenrick",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/85d50879535a8ca4f161fd522edf34b93008823c9120a91dfdf456c65942664e.jpg",
+        "url": "https://bsky.app/profile/kenrick95.org"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m5ghaeiems2n#liked_by_did:plc:sdrucajkmwyzquirsttcd32f",
+      "published": null,
+      "wm-received": "2025-11-13T05:45:28Z",
+      "wm-id": 1953710,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m5ghaeiems2n/did%253Aplc%253Asdrucajkmwyzquirsttcd32f",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "feedle",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/d95e40a3d14df931814887e0f82a1d91e1c518f703d2a620e953dff9b004f52e.jpg",
+        "url": "https://bsky.app/profile/feedle.world"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m5ghaeiems2n#liked_by_did:plc:agfmq3ftvzc6ohutuue6xadl",
+      "published": null,
+      "wm-received": "2025-11-13T05:45:23Z",
+      "wm-id": 1953709,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m5ghaeiems2n/did%253Aplc%253Aagfmq3ftvzc6ohutuue6xadl",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tobias Fedder",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/353f7583c7865e934c77899369bd5facd7f23f2cc28ce926ca9456675e50cd46.jpg",
+        "url": "https://bsky.app/profile/tfedder.de"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m5ghaeiems2n#liked_by_did:plc:a64baelxsmvy6aonnbfhbirv",
+      "published": null,
+      "wm-received": "2025-11-13T05:45:22Z",
+      "wm-id": 1953708,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m5ghaeiems2n/did%253Aplc%253Aa64baelxsmvy6aonnbfhbirv",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jed Schmidt",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/3bc974d5104509d3828c3fe6a4851f3a9d584de9e7c586bed9ea9c9864491228.jpg",
+        "url": "https://mastodon.social/@jed"
+      },
+      "url": "https://front-end.social/@rem/115536273728886563#favorited-by-109314500654424896",
+      "published": null,
+      "wm-received": "2025-11-12T19:46:28Z",
+      "wm-id": 1953679,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115536273728886563/109314500654424896",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "William Killerud",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/3cab9c6ce601a7e3a40eb43dc6b24fb9639335283452d687dbae79356825bc54.jpg",
+        "url": "https://social.lol/@dub"
+      },
+      "url": "https://front-end.social/@rem/115536273728886563#favorited-by-113040484609911905",
+      "published": null,
+      "wm-received": "2025-11-12T19:46:25Z",
+      "wm-id": 1953677,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115536273728886563/113040484609911905",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kai",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/fa49d6c8eb7d03d5892077c926da34b326536219682cbb14a58331fbb32507a1.jpg",
+        "url": "https://mastodon.social/@Schweinepriester"
+      },
+      "url": "https://front-end.social/@rem/115536273728886563#favorited-by-109308087884996129",
+      "published": null,
+      "wm-received": "2025-11-12T19:46:25Z",
+      "wm-id": 1953678,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115536273728886563/109308087884996129",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }
