@@ -58302,5 +58302,64 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "syntax-highlighting-in-web-component-templates": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Paul Shryock",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/4db6779f2ca3ad9d9cfd636685ea5b7948da4d6f56315c449f9c8d99a70029a4.jpg",
+        "url": "https://phpc.social/@paulshryock"
+      },
+      "url": "https://front-end.social/@rem/115536273728886563#favorited-by-111015705424563299",
+      "published": null,
+      "wm-received": "2025-11-12T14:11:12Z",
+      "wm-id": 1953617,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115536273728886563/111015705424563299",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nick F",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/45d8b03318cd4a217b2dc50d69bf0bed2e93825242dbe401472de8a396f668b8.jpg",
+        "url": "https://mastodon.social/@nickautomatic"
+      },
+      "url": "https://front-end.social/@rem/115536273728886563#favorited-by-109293008411545262",
+      "published": null,
+      "wm-received": "2025-11-12T14:11:08Z",
+      "wm-id": 1953614,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115536273728886563/109293008411545262",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Frank // Mottokrosh",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/65e8e333b2c853c15f1db16680518c142ff15807d8a0f6e7b451b23a6851ee82.jpg",
+        "url": "https://social.mottokrosh.com/@mottokrosh"
+      },
+      "url": "https://front-end.social/@rem/115536273728886563#favorited-by-112009595676132535",
+      "published": null,
+      "wm-received": "2025-11-12T14:11:08Z",
+      "wm-id": 1953615,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115536273728886563/112009595676132535",
+      "wm-target": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/12/syntax-highlighting-in-web-component-templates",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
