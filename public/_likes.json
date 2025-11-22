@@ -58532,5 +58532,140 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "ffconf-2025": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Polhill",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/62f26ec336c10216d947d19412550d46d4061e81c42fb5362e919f4cbca97d4a.jpg",
+        "url": "https://bsky.app/profile/andy-polhill.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m67sb26uy22m#liked_by_did:plc:2bzhkw7eg76poa6l67jaasxo",
+      "published": null,
+      "wm-received": "2025-11-22T17:55:24Z",
+      "wm-id": 1954928,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m67sb26uy22m/did%253Aplc%253A2bzhkw7eg76poa6l67jaasxo",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gears",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/fb9e324822ec19c0b8777c83b1925c2164c36e4eaa90288a4337974eb3b16b34.jpg",
+        "url": "https://bsky.app/profile/gearsco.de"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m67sb26uy22m#liked_by_did:plc:7x6wc6fbj464biqdarmhxucv",
+      "published": null,
+      "wm-received": "2025-11-22T17:55:24Z",
+      "wm-id": 1954929,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m67sb26uy22m/did%253Aplc%253A7x6wc6fbj464biqdarmhxucv",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tim Holman",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/bec0774ce67928bbbfae232debb58883cb0fe1371f912cce45fa0066425eb584.jpg",
+        "url": "https://bsky.app/profile/aussie.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m67sb26uy22m#liked_by_did:plc:h4pl7k7c2726ficaztxio7gr",
+      "published": null,
+      "wm-received": "2025-11-22T17:55:24Z",
+      "wm-id": 1954930,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m67sb26uy22m/did%253Aplc%253Ah4pl7k7c2726ficaztxio7gr",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "El Presidente",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/c7b49587a7de8fd9bffebb17c6701272f026be28151ca238989b099b5ace3ea8.jpg",
+        "url": "https://bsky.app/profile/carvingpumpkins.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m67sb26uy22m#liked_by_did:plc:6rpno7istslzf4nvlyjxj2px",
+      "published": null,
+      "wm-received": "2025-11-22T17:55:15Z",
+      "wm-id": 1954927,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m67sb26uy22m/did%253Aplc%253A6rpno7istslzf4nvlyjxj2px",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dominic Mitchell",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/399f056f9992eb61f27338554a9386112d763abe2ba904593f5e2c887f2f57ac.jpg",
+        "url": "https://bsky.app/profile/dom.happygiraffe.net"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m67sb26uy22m#liked_by_did:plc:dp4st3gx52wilrl435ncj7u3",
+      "published": null,
+      "wm-received": "2025-11-22T13:08:14Z",
+      "wm-id": 1954893,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m67sb26uy22m/did%253Aplc%253Adp4st3gx52wilrl435ncj7u3",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/d18734bcc8c18b6e853719ad1b100ea3de1c5335cab7911d4cfafae7a7a51925.jpg",
+        "url": "https://bsky.app/profile/andydavies.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m67sb26uy22m#liked_by_did:plc:ccw4zckt3u7hytoxemgoe654",
+      "published": null,
+      "wm-received": "2025-11-22T13:08:14Z",
+      "wm-id": 1954894,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m67sb26uy22m/did%253Aplc%253Accw4zckt3u7hytoxemgoe654",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Aura Everitt",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/7446e2d250304534d4f428af5646a883a6a8f698e06aa0e96d10a9ee52cffb4c.jpg",
+        "url": "https://sunny.garden/@aura"
+      },
+      "url": "https://front-end.social/@rem/115594615413415989#favorited-by-115103375053646532",
+      "published": null,
+      "wm-received": "2025-11-22T19:07:14Z",
+      "wm-id": 1954935,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115594615413415989/115103375053646532",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
