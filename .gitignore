@@ -3,6 +3,7 @@ tmp/
 test/
 .vscode
 /demo/
+venv/
 _site
 .env
 public/js/version.js

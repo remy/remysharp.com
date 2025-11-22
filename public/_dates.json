@@ -1031,6 +1031,7 @@
     "created": "2024-11-30T09:37:43.000Z",
     "modified": "2024-11-30T16:32:36.000Z"
   },
+  "public/blog/ffconf-2025.md": {},
   "public/blog/ffconf-v10-updates-my-experience.md": {
     "created": "2018-11-26T12:57:38.000Z",
     "modified": "2019-07-12T18:06:51.000Z"
@@ -4184,18 +4185,6 @@
     "created": "2024-03-27T10:56:27.000Z",
     "modified": "2024-03-27T10:56:27.000Z"
   },
-  "public/attic/2006/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2007/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2014/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
   "public/books/2017/a-boy-made-of-blocks.md": {
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2020-11-06T12:09:51.000Z"
@@ -4740,10 +4729,6 @@
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
-  "public/attic/2008/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
   "public/books/2022/2001-a-space-odyssey-space-odyssey-1.md": {
     "created": "2022-06-12T20:27:50.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
@@ -4920,6 +4905,18 @@
     "created": "2025-03-27T09:03:16.000Z",
     "modified": "2025-03-27T09:03:16.000Z"
   },
+  "public/attic/2006/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2007/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/attic/2014/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
   "public/devlog/go-mummy/2020-05-24.md": {
     "created": "2020-05-24T13:47:04.000Z",
     "modified": "2020-08-12T11:05:55.000Z"
@@ -5004,6 +5001,10 @@
     "created": "2021-07-16T19:49:47.000Z",
     "modified": "2021-07-16T19:49:47.000Z"
   },
+  "public/attic/2008/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
   "public/til/cli/debugging-shell-scripts.md": {
     "created": "2020-05-27T11:57:54.000Z",
     "modified": "2020-05-27T11:57:54.000Z"
@@ -5036,14 +5037,6 @@
     "created": "2020-07-13T13:19:29.000Z",
     "modified": "2020-07-13T13:19:29.000Z"
   },
-  "public/til/data/modifying-autoincrements.md": {
-    "created": "2021-06-18T08:10:17.000Z",
-    "modified": "2021-06-18T08:10:17.000Z"
-  },
-  "public/til/data/postgres-csv-import-with-json.md": {
-    "created": "2021-03-09T12:53:55.000Z",
-    "modified": "2021-03-09T12:53:55.000Z"
-  },
   "public/til/css/css-calc-divide.md": {
     "created": "2020-05-15T16:27:03.000Z",
     "modified": "2020-05-26T11:26:37.000Z"
@@ -5071,6 +5064,14 @@
   "public/til/css/text-overflow.md": {
     "created": "2020-11-06T19:13:58.000Z",
     "modified": "2020-11-06T19:13:58.000Z"
+  },
+  "public/til/data/modifying-autoincrements.md": {
+    "created": "2021-06-18T08:10:17.000Z",
+    "modified": "2021-06-18T08:10:17.000Z"
+  },
+  "public/til/data/postgres-csv-import-with-json.md": {
+    "created": "2021-03-09T12:53:55.000Z",
+    "modified": "2021-03-09T12:53:55.000Z"
   },
   "public/til/http/curl-s-isnt-as-useful-as-i-thought.md": {
     "created": "2020-05-02T10:20:32.000Z",
@@ -5107,10 +5108,6 @@
   "public/til/misc/default-layouts-in-11ty.md": {
     "created": "2023-11-06T10:16:27.000Z",
     "modified": "2023-11-06T10:16:27.000Z"
-  },
-  "public/til/node/spawn-sh-on-mac.md": {
-    "created": "2020-05-16T14:54:26.000Z",
-    "modified": "2020-05-26T11:26:37.000Z"
   },
   "public/til/spectrum/48k.md": {
     "created": "2020-06-09T14:55:58.000Z",
@@ -5171,5 +5168,9 @@
   "public/til/spectrum/screen-clean-up.md": {
     "created": "2020-05-23T10:00:45.000Z",
     "modified": "2020-06-03T14:55:47.000Z"
+  },
+  "public/til/node/spawn-sh-on-mac.md": {
+    "created": "2020-05-16T14:54:26.000Z",
+    "modified": "2020-05-26T11:26:37.000Z"
   }
 }
