@@ -15,8 +15,6 @@ So now as I sit writing this a full eight days later - sat on the side of the sw
 
 <!-- more -->
 
-![The people attending FFConf waving for the camera](/images/ffconf-2025.avif)
-
 ## The talks
 
 Every year it's always an amazing experience, hearing the stories of speakers from across different walks of life.
@@ -47,7 +45,8 @@ Finally to close the event two talks from the vast spread of experience starting
 
 Then to close, we (FFConf) were lucky to have [Sacha Judd](https://2025.ffconf.org/sacha) (because she resides in New Zealand and it's a long old journey) filling our hearts with the joy of what the Good Internet is. Not just a nostalgic memory but alive today and just as weird as always.
 
----
+![The people attending FFConf waving for the camera](/images/ffconf-2025.avif)
+
 
 ## Looking for meaning
 
