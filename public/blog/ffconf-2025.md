@@ -5,6 +5,7 @@ tags:
   - web
   - ffconf
 image: /images/ffconf-2025-thumb.jpg
+description: Reflections on FFConf 2025, covering talks on diversity, data privacy, web components, AI, and the future of the web.
 ---
 
 # FFConf 2025
