@@ -46,6 +46,8 @@ Finally to close the event two talks from the vast spread of experience starting
 
 Then to close, we (FFConf) were lucky to have [Sacha Judd](https://2025.ffconf.org/sacha) (because she resides in New Zealand and it's a long old journey) filling our hearts with the joy of what the Good Internet is. Not just a nostalgic memory but alive today and just as weird as always.
 
+Here are all [the photos from FFConf 2025](https://www.flickr.com/photos/remysharp/albums/72177720330509685/) if you'd like to see the lovely time people had.
+
 ![The people attending FFConf waving for the camera](/images/ffconf-2025.avif)
 
 
