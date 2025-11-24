@@ -58666,6 +58666,63 @@
       "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Seren",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/51939ca9c214196600d0fcaf1e3b02272a699d88021e9097f520b7d823c44b30.jpg",
+        "url": "https://bsky.app/profile/ninjanails.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m67sb26uy22m#liked_by_did:plc:3g22vbjjmisl345ynrkzsmoz",
+      "published": null,
+      "wm-received": "2025-11-24T13:52:39Z",
+      "wm-id": 1955194,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m67sb26uy22m/did%253Aplc%253A3g22vbjjmisl345ynrkzsmoz",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kimberley Cook",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/210cf2f594e118ba65c62d4d1d4fb036dcf73c37885f3355e1c3c8565bfd901d.jpg",
+        "url": "https://bsky.app/profile/kimberleycook.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m67sb26uy22m#liked_by_did:plc:utb4bzv7wl3s42bpdcvcteld",
+      "published": null,
+      "wm-received": "2025-11-23T11:22:48Z",
+      "wm-id": 1954977,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m67sb26uy22m/did%253Aplc%253Autb4bzv7wl3s42bpdcvcteld",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adrian Lansdown",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/949dcac48d02880e32e2cbf77b4b54ae2c7ce6c09c535550977dd013f2155978.png",
+        "url": "https://mastodon.social/@Adrianlan"
+      },
+      "url": "https://front-end.social/@rem/115594615413415989#favorited-by-109400703922394836",
+      "published": null,
+      "wm-received": "2025-11-22T20:08:08Z",
+      "wm-id": 1954939,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115594615413415989/109400703922394836",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }
