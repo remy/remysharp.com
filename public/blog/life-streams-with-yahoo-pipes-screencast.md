@@ -18,10 +18,11 @@ modified: '2014-09-03 16:15:12'
 
 Here's a screencast showing how easy it is to create a stream of your online activity, and the JavaScript required to add the feed to your blog with a bit of sexy icon magic too boot.
 
-[Download the QuickTime screencast, 55Mb, a little over 10 minutes](/images/yahoo-pipes.mov)
-
-
 <!--more-->
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_z8GkDu--mc?si=QwWZ7i6uzGYlVknf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[Download the QuickTime screencast, 55Mb, a little over 10 minutes](/images/yahoo-pipes.mov)
 
 <small>If you can't view the screencast, try [DivX Web Player](http://www.divx.com/divx/webplayer/) for Windows or the Mac.</small>
 

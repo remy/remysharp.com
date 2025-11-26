@@ -58723,6 +58723,44 @@
       "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Liam Duffy",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/b0e54c14a70ebe0d218dba4fc8a338282ba297e3e249bb161455ce6913253432.jpg",
+        "url": "https://bsky.app/profile/liamduffy.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m67sb26uy22m#liked_by_did:plc:d2z64rwczbo4ozypvpodmnw4",
+      "published": null,
+      "wm-received": "2025-11-25T10:31:02Z",
+      "wm-id": 1955366,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m67sb26uy22m/did%253Aplc%253Ad2z64rwczbo4ozypvpodmnw4",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sareh",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/9467338b51c564e73081ea29cc3bbb558d1e8139a06b9f1e97f5206b81021fae.jpg",
+        "url": "https://bsky.app/profile/sareh88.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m67sb26uy22m#liked_by_did:plc:vregpf26lnbxrwqn55azco67",
+      "published": null,
+      "wm-received": "2025-11-25T07:32:18Z",
+      "wm-id": 1955353,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m67sb26uy22m/did%253Aplc%253Avregpf26lnbxrwqn55azco67",
+      "wm-target": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/22/ffconf-2025",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }
