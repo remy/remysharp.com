@@ -1,6 +1,7 @@
 ---
 title: Handing over to the AI for a day
 date: 2025-11-29
+summary: In March 2025, I explored AI development, inspired by local LLMs for generative code tools, to see what it was like.
 tags:
   - web
 ---
