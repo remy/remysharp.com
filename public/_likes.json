@@ -58762,5 +58762,26 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "life-streams-with-yahoo-pipes-screencast": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/d18734bcc8c18b6e853719ad1b100ea3de1c5335cab7911d4cfafae7a7a51925.jpg",
+        "url": "https://bsky.app/profile/andydavies.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m6jkn6usks24#liked_by_did:plc:ccw4zckt3u7hytoxemgoe654",
+      "published": null,
+      "wm-received": "2025-11-26T11:34:50Z",
+      "wm-id": 1955544,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m6jkn6usks24/did%253Aplc%253Accw4zckt3u7hytoxemgoe654",
+      "wm-target": "https://remysharp.com/2007/04/05/life-streams-with-yahoo-pipes-screencast",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2007/04/05/life-streams-with-yahoo-pipes-screencast",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
