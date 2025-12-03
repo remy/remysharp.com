@@ -58783,5 +58783,178 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "handing-over-to-the-ai-for-a-day": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Go4Know",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/91f9c32145f050f22e78dd8067775fa5d041b1bd2de4dae6d27288011950341e.jpg",
+        "url": "https://bsky.app/profile/go4know.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m6ri42dzsc24#liked_by_did:plc:ydqzin7kctnatbefaxcp6f7s",
+      "published": null,
+      "wm-received": "2025-11-30T08:24:54Z",
+      "wm-id": 1956276,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m6ri42dzsc24/did%253Aplc%253Aydqzin7kctnatbefaxcp6f7s",
+      "wm-target": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/115633161998828293#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2025-11-29T17:48:56Z",
+      "wm-id": 1956151,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115633161998828293/109293603037070680",
+      "wm-target": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ted M. Young (he/him) aka @JitterTed",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/bc93cf8267521c8607c84d07863d5868bac6c1611e5a140c21d0e0cf7f9e8520.jpg",
+        "url": "https://bsky.app/profile/ted.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m6ri42dzsc24#liked_by_did:plc:7xzktjqqctkyr3jti5tyem2p",
+      "published": null,
+      "wm-received": "2025-11-29T17:42:27Z",
+      "wm-id": 1956147,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m6ri42dzsc24/did%253Aplc%253A7xzktjqqctkyr3jti5tyem2p",
+      "wm-target": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/69e600ace15f7cb55f5c08c28dbff6eb6162fe63df619403440108c62d57010c.png",
+        "url": "https://fedi.vale.rocks/users/vale"
+      },
+      "url": "https://front-end.social/@rem/115633161998828293#favorited-by-111460277448308485",
+      "published": null,
+      "wm-received": "2025-11-29T16:21:38Z",
+      "wm-id": 1956130,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115633161998828293/111460277448308485",
+      "wm-target": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Fernando Mateus",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/086d89bddc06a3ae7713c0f5f55dd6585195e0a2d19424bfe29447e573e14e3e.jpg",
+        "url": "https://bsky.app/profile/fernandomateus.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m6ri42dzsc24#liked_by_did:plc:roxef7z57cveaejxgghu7i2t",
+      "published": null,
+      "wm-received": "2025-11-29T15:45:43Z",
+      "wm-id": 1956128,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m6ri42dzsc24/did%253Aplc%253Aroxef7z57cveaejxgghu7i2t",
+      "wm-target": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Evil Jim O’Donnell",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/adf37f207fa0ccd78522d9033150219ecaa85c6ecb9e896569d35cda7e04cca7.jpg",
+        "url": "https://bsky.app/profile/eatyourgreens.org.uk"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m6ri42dzsc24#liked_by_did:plc:mvy6jvolas42qzt6yezkyzou",
+      "published": null,
+      "wm-received": "2025-11-29T15:17:24Z",
+      "wm-id": 1956119,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m6ri42dzsc24/did%253Aplc%253Amvy6jvolas42qzt6yezkyzou",
+      "wm-target": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "feedle",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/d95e40a3d14df931814887e0f82a1d91e1c518f703d2a620e953dff9b004f52e.jpg",
+        "url": "https://bsky.app/profile/feedle.world"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m6ri42dzsc24#liked_by_did:plc:agfmq3ftvzc6ohutuue6xadl",
+      "published": null,
+      "wm-received": "2025-11-29T14:43:58Z",
+      "wm-id": 1956110,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m6ri42dzsc24/did%253Aplc%253Aagfmq3ftvzc6ohutuue6xadl",
+      "wm-target": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/66fced339ce180d1f634b0aac66a3b6c2a6aaed02a6c4d79d7010e7a971c4dd0.jpg",
+        "url": "https://bsky.app/profile/vale.rocks"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m6ri42dzsc24#liked_by_did:plc:7qg6mz2xtzozxkgbcvf4pdnu",
+      "published": null,
+      "wm-received": "2025-11-29T13:44:27Z",
+      "wm-id": 1956100,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m6ri42dzsc24/did%253Aplc%253A7qg6mz2xtzozxkgbcvf4pdnu",
+      "wm-target": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jenny Wong",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/69ca23d6edb39a2f77fd94bd1489bf4dfd0dbf24dfca94a7d4739ff0abf4d9ff.jpg",
+        "url": "https://bsky.app/profile/jwo.ng"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m6ri42dzsc24#liked_by_did:plc:rkcv3raf45wauuy6nmd7xrzi",
+      "published": null,
+      "wm-received": "2025-11-29T13:44:27Z",
+      "wm-id": 1956101,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m6ri42dzsc24/did%253Aplc%253Arkcv3raf45wauuy6nmd7xrzi",
+      "wm-target": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/11/29/handing-over-to-the-ai-for-a-day",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
