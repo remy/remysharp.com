@@ -58956,5 +58956,83 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "an-opportunity-to-learn-advent-of-code": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Naulald Shorttown",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/010dc3191091e8611d9d0d09bb995c92cdfad931d772559c1bcd782ee80fd7f6.jpg",
+        "url": "https://bsky.app/profile/frengible.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m743kx6kvs2u#liked_by_did:plc:xuh6g7hnpeorsy5qqlrrwvj4",
+      "published": null,
+      "wm-received": "2025-12-03T22:43:57Z",
+      "wm-id": 1956826,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m743kx6kvs2u/did%253Aplc%253Axuh6g7hnpeorsy5qqlrrwvj4",
+      "wm-target": "https://remysharp.com/2025/12/03/an-opportunity-to-learn-advent-of-code",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/12/03/an-opportunity-to-learn-advent-of-code",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eric Foltin",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c0be7f36dc07f5f7d311882d476def3deca20da00b962975c17c84509b346228.png",
+        "url": "https://mastodon.social/@ericfoltin72"
+      },
+      "url": "https://front-end.social/@rem/115657049831092086#favorited-by-115642037934061439",
+      "published": null,
+      "wm-received": "2025-12-03T20:13:39Z",
+      "wm-id": 1956816,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115657049831092086/115642037934061439",
+      "wm-target": "https://remysharp.com/2025/12/03/an-opportunity-to-learn-advent-of-code",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/12/03/an-opportunity-to-learn-advent-of-code",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ian Wootten ????",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/ac9276bb119da1f86804b5936b6834fe5e7b2d58b9804d94ca711a972cbff478.jpg",
+        "url": "https://bsky.app/profile/iwootten.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3m743kx6kvs2u#liked_by_did:plc:backvnj6l2uozas5mtjigh7k",
+      "published": null,
+      "wm-received": "2025-12-03T19:23:59Z",
+      "wm-id": 1956808,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3m743kx6kvs2u/did%253Aplc%253Abackvnj6l2uozas5mtjigh7k",
+      "wm-target": "https://remysharp.com/2025/12/03/an-opportunity-to-learn-advent-of-code",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/12/03/an-opportunity-to-learn-advent-of-code",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "iamdtms",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/e7a0884d1190dc19d635c5bf00ba578913deb32961f83a8b5fc07f6cdf67e49e.jpg",
+        "url": "https://mas.to/@iamdtms"
+      },
+      "url": "https://front-end.social/@rem/115657049831092086#favorited-by-109824999063382831",
+      "published": null,
+      "wm-received": "2025-12-03T18:37:50Z",
+      "wm-id": 1956797,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115657049831092086/109824999063382831",
+      "wm-target": "https://remysharp.com/2025/12/03/an-opportunity-to-learn-advent-of-code",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2025/12/03/an-opportunity-to-learn-advent-of-code",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
