@@ -12,45 +12,6 @@
 (function () {
   'use strict';
 
-  function sample() {
-    return {
-      repo: 'did:plc:eh5je3z4jszqwmzuciqh6ijz',
-      writes: [
-        {
-          $type: 'com.atproto.repo.applyWrites#create',
-          collection: 'app.bsky.feed.post',
-          rkey: '3m7mr5cg6qs25',
-          value: {
-            $type: 'app.bsky.feed.post',
-            createdAt: '2025-12-10T09:37:23.384Z',
-            text: "I've written a [tamper monkey script](remysharp.com/js/bsky-mark...) that I've got running in the browser that supports writing markdown style links and converts them into fancy links in bluesky.\n\nSadly no support in Mastodon.",
-            facets: [
-              {
-                index: { byteStart: 38, byteEnd: 67 },
-                features: [
-                  {
-                    $type: 'app.bsky.richtext.facet#link',
-                    uri: 'https://remysharp.com/js/bsky-markdown-links-tampermonkey.js',
-                  },
-                ],
-              },
-            ],
-            embed: {
-              $type: 'app.bsky.embed.external',
-              external: {
-                uri: 'https://remysharp.com/js/bsky-mark...',
-                title: '',
-                description: '',
-              },
-            },
-            langs: ['en'],
-          },
-        },
-      ],
-      validate: true,
-    };
-  }
-
   const TARGET_ENDPOINT = '/xrpc/com.atproto.repo.applyWrites';
   const CREATE_POST_TYPE = 'com.atproto.repo.applyWrites#create';
   const POST_COLLECTION = 'app.bsky.feed.post';
@@ -294,6 +255,6 @@
     };
   }
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { convertMarkdownLinksToRichText, sample };
+    module.exports = { convertMarkdownLinksToRichText };
   }
 })();
