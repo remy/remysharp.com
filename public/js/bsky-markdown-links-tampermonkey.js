@@ -12,6 +12,45 @@
 (function () {
   'use strict';
 
+  function sample() {
+    return {
+      repo: 'did:plc:eh5je3z4jszqwmzuciqh6ijz',
+      writes: [
+        {
+          $type: 'com.atproto.repo.applyWrites#create',
+          collection: 'app.bsky.feed.post',
+          rkey: '3m7mr5cg6qs25',
+          value: {
+            $type: 'app.bsky.feed.post',
+            createdAt: '2025-12-10T09:37:23.384Z',
+            text: "I've written a [tamper monkey script](remysharp.com/js/bsky-mark...) that I've got running in the browser that supports writing markdown style links and converts them into fancy links in bluesky.\n\nSadly no support in Mastodon.",
+            facets: [
+              {
+                index: { byteStart: 38, byteEnd: 67 },
+                features: [
+                  {
+                    $type: 'app.bsky.richtext.facet#link',
+                    uri: 'https://remysharp.com/js/bsky-markdown-links-tampermonkey.js',
+                  },
+                ],
+              },
+            ],
+            embed: {
+              $type: 'app.bsky.embed.external',
+              external: {
+                uri: 'https://remysharp.com/js/bsky-mark...',
+                title: '',
+                description: '',
+              },
+            },
+            langs: ['en'],
+          },
+        },
+      ],
+      validate: true,
+    };
+  }
+
   const TARGET_ENDPOINT = '/xrpc/com.atproto.repo.applyWrites';
   const CREATE_POST_TYPE = 'com.atproto.repo.applyWrites#create';
   const POST_COLLECTION = 'app.bsky.feed.post';
@@ -21,16 +60,13 @@
     return /^https?:\/\//i.test(url) ? url : `https://${url}`;
   }
 
-  /**
-   * Converts a Bluesky post JSON by detecting Markdown links [text](url),
-   * stripping the (url) part from the 'text' field, and updating the
-   * 'facets' using correct UTF-8 byte offsets and precise calculation.
-   */
   function convertMarkdownLinksToRichText(json) {
     const encoder = new TextEncoder();
+    const decoder = new TextDecoder();
     const createPostWrite = json.writes.find(
       (write) =>
-        write.$type === CREATE_POST_TYPE && write.collection === POST_COLLECTION
+        write.$type === 'com.atproto.repo.applyWrites#create' &&
+        write.collection === 'app.bsky.feed.post'
     );
 
     if (!createPostWrite) return json;
@@ -38,25 +74,76 @@
     const post = createPostWrite.value;
     let originalText = post.text;
     let currentFacets = post.facets || [];
+
+    // Step 1: Reconstruct full URLs from facets into the text
+    // Work backwards to maintain correct positions
+    const linkFacets = currentFacets
+      .filter((f) =>
+        f.features?.some(
+          (feat) => feat.$type === 'app.bsky.richtext.facet#link'
+        )
+      )
+      .sort((a, b) => b.index.byteStart - a.index.byteStart);
+
+    let reconstructedText = originalText;
+
+    for (const facet of linkFacets) {
+      const { byteStart, byteEnd } = facet.index;
+      const linkFeature = facet.features.find(
+        (f) => f.$type === 'app.bsky.richtext.facet#link'
+      );
+      if (!linkFeature) continue;
+
+      const bytes = encoder.encode(reconstructedText);
+      if (byteEnd > bytes.length) continue;
+
+      const before = decoder.decode(bytes.subarray(0, byteStart));
+      const charStart = before.length;
+
+      const openBracketIndex = reconstructedText.lastIndexOf('[', charStart);
+      const closeBracketIndex = reconstructedText.indexOf(
+        ']',
+        openBracketIndex
+      );
+      const openParenIndex = reconstructedText.indexOf('(', closeBracketIndex);
+      const closeParenIndex = reconstructedText.indexOf(')', openParenIndex);
+
+      if (
+        openBracketIndex === -1 ||
+        closeBracketIndex === -1 ||
+        openParenIndex === -1 ||
+        closeParenIndex === -1
+      ) {
+        continue;
+      }
+
+      const linkText = reconstructedText.slice(
+        openBracketIndex + 1,
+        closeBracketIndex
+      );
+
+      reconstructedText =
+        reconstructedText.slice(0, openBracketIndex) +
+        `[${linkText}](${linkFeature.uri})` +
+        reconstructedText.slice(closeParenIndex + 1);
+    }
+
+    // Step 2: Now parse markdown links from reconstructed text
     const linkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
     const replacements = [];
     let match;
 
-    // 1. Calculate byte properties for all replacements
-    while ((match = linkRegex.exec(originalText)) !== null) {
+    while ((match = linkRegex.exec(reconstructedText)) !== null) {
       const fullMatch = match[0];
       const linkText = match[1];
       const url = match[2];
 
       const byteStartIndex = encoder.encode(
-        originalText.substring(0, match.index)
+        reconstructedText.substring(0, match.index)
       ).length;
-
       const linkTextByteLength = encoder.encode(linkText).length;
-
-      // Calculate the end byte of the original full markdown link using byte lengths
-      const originalLinkByteLength = encoder.encode(fullMatch).length;
-      const removedByteLength = originalLinkByteLength - linkTextByteLength;
+      const fullMatchByteLength = encoder.encode(fullMatch).length;
+      const removedByteLength = fullMatchByteLength - linkTextByteLength;
 
       replacements.push({
         charIndex: match.index,
@@ -66,14 +153,14 @@
         byteStartIndex,
         removedByteLength,
         linkTextByteLength,
-        originalLinkEndByte: byteStartIndex + originalLinkByteLength,
+        originalLinkEndByte: byteStartIndex + fullMatchByteLength,
       });
     }
 
     if (replacements.length === 0) return json;
 
-    // 2. Recalculate and update post.text (using character indices)
-    let newText = originalText;
+    // Step 3: Create new text by stripping markdown syntax
+    let newText = reconstructedText;
     for (let i = replacements.length - 1; i >= 0; i--) {
       const r = replacements[i];
       newText =
@@ -83,44 +170,16 @@
     }
     post.text = newText;
 
-    // 3. Rebuild markdown facets and shift any pre-existing facets accordingly
-    const preservedFacets = [];
-    if (currentFacets.length > 0) {
-      currentFacets.forEach((facet) => {
-        const clone = JSON.parse(JSON.stringify(facet));
-        let shift = 0;
-        let overlapsMarkdown = false;
-
-        for (const r of replacements) {
-          if (
-            clone.index.byteStart >= r.byteStartIndex &&
-            clone.index.byteEnd <= r.originalLinkEndByte
-          ) {
-            overlapsMarkdown = true;
-            break;
-          }
-
-          if (clone.index.byteStart >= r.originalLinkEndByte) {
-            shift += r.removedByteLength;
-          }
-        }
-
-        if (!overlapsMarkdown) {
-          clone.index.byteStart -= shift;
-          clone.index.byteEnd -= shift;
-          preservedFacets.push(clone);
-        }
-      });
-    }
-
-    const markdownFacets = [];
+    // Step 4: Create new facets with corrected byte positions
+    const newFacets = [];
     let cumulativeRemoval = 0;
+
     for (const r of replacements) {
       const byteStart = r.byteStartIndex - cumulativeRemoval;
       const byteEnd = byteStart + r.linkTextByteLength;
       cumulativeRemoval += r.removedByteLength;
 
-      markdownFacets.push({
+      newFacets.push({
         index: { byteStart, byteEnd },
         features: [
           {
@@ -131,7 +190,34 @@
       });
     }
 
-    post.facets = [...preservedFacets, ...markdownFacets].sort(
+    // Step 5: Handle any non-link facets (mentions, tags, etc.)
+    const nonLinkFacets = currentFacets.filter(
+      (f) =>
+        !f.features?.some(
+          (feat) => feat.$type === 'app.bsky.richtext.facet#link'
+        )
+    );
+
+    for (const facet of nonLinkFacets) {
+      let { byteStart, byteEnd } = facet.index;
+      let shift = 0;
+
+      for (const r of replacements) {
+        if (byteStart >= r.originalLinkEndByte) {
+          shift += r.removedByteLength;
+        }
+      }
+
+      newFacets.push({
+        ...facet,
+        index: {
+          byteStart: byteStart - shift,
+          byteEnd: byteEnd - shift,
+        },
+      });
+    }
+
+    post.facets = newFacets.sort(
       (a, b) => a.index.byteStart - b.index.byteStart
     );
     return json;
@@ -206,5 +292,8 @@
       // Send the original fetch call using the two arguments
       return originalFetch.apply(this, [resource, options]);
     };
+  }
+  if (typeof module !== 'undefined' && module.exports) {
+    module.exports = { convertMarkdownLinksToRichText, sample };
   }
 })();
