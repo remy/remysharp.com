@@ -188,6 +188,7 @@
   if (typeof window !== 'undefined' && window.fetch) {
     const originalFetch = window.fetch;
     window.fetch = async function (resource, options) {
+      // the bluesky write posts are always full request objects
       if (resource instanceof Request) {
         let finalResource = resource;
         let isTargetPost = false;
@@ -227,25 +228,6 @@
               e
             );
             return originalFetch.apply(this, [resource]);
-          }
-        }
-      }
-      // Case B: The 'resource' is a URL string (two argument call)
-      else if (typeof resource === 'string' && options) {
-        let url = resource;
-        let isTargetPost =
-          options.method === 'POST' && url.includes(TARGET_ENDPOINT);
-
-        if (isTargetPost && options.body) {
-          try {
-            const originalJson = JSON.parse(options.body);
-            const modifiedJson = convertMarkdownLinksToRichText(originalJson);
-            options.body = JSON.stringify(modifiedJson);
-          } catch (e) {
-            console.error(
-              'Bluesky Link Stripper: JSON modification failed, sending original.',
-              e
-            );
           }
         }
       }
