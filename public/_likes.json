@@ -48104,6 +48104,63 @@
       "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hey it's Jess",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/6102be98b364ad94e5f3436b3ed47a9c97f061837339e1c15c08546643703b5e.jpg",
+        "url": "https://bsky.app/profile/jessthebp.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3manw257ons23#liked_by_did:plc:nfhimvfcmczdotm6r7qhljvj",
+      "published": null,
+      "wm-received": "2025-12-23T19:01:58Z",
+      "wm-id": 1961527,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3manw257ons23/did%253Aplc%253Anfhimvfcmczdotm6r7qhljvj",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Thomas",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/8cb57861b7596ef353cb9ef53f2c863521d72483b81b809fd9ddba0bd49bf1aa.jpg",
+        "url": "https://bsky.app/profile/cthomas.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3manw257ons23#liked_by_did:plc:wp5q6u2422a4cqtfmipebnla",
+      "published": null,
+      "wm-received": "2025-12-23T19:01:58Z",
+      "wm-id": 1961528,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3manw257ons23/did%253Aplc%253Awp5q6u2422a4cqtfmipebnla",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Einar W. Høst",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/296d9441440036fb74003190fad448e2f6c60cf422dd4083b229a8d9e78c89a5.jpg",
+        "url": "https://bsky.app/profile/einarwh.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3manw257ons23#liked_by_did:plc:ckvyfpyt45h2zlnthhygrzeu",
+      "published": null,
+      "wm-received": "2025-12-23T19:01:54Z",
+      "wm-id": 1961525,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3manw257ons23/did%253Aplc%253Ackvyfpyt45h2zlnthhygrzeu",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "unrot-that-link": [
@@ -59031,6 +59088,27 @@
       "wm-target": "https://remysharp.com/2025/12/03/an-opportunity-to-learn-advent-of-code",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2025/12/03/an-opportunity-to-learn-advent-of-code",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "i-am-legend": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "SimonCox",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/c40396a299647974e85ac2f0a96b06350ec405e35475ac319de1b7604ad8d8ea.jpg",
+        "url": "https://bsky.app/profile/simoncox.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mayh3k53zs24#liked_by_did:plc:tki7vwlanxbwrz2er67eaeqa",
+      "published": null,
+      "wm-received": "2025-12-28T01:37:06Z",
+      "wm-id": 1962531,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mayh3k53zs24/did%253Aplc%253Atki7vwlanxbwrz2er67eaeqa",
+      "wm-target": "https://remysharp.com/books/2019/i-am-legend",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books/2019/i-am-legend",
       "wm-property": "like-of",
       "wm-private": false
     }

@@ -1,6 +1,6 @@
 ---
 title: Pebble Steel
-photo: /images/tif/2023-04-11-pebble-steel.jpg
+photo: /images/tif/2023-04-11-pebble-steel.jpg.avif
 ---
 
 I bought a joblot of Pebble watches a while back (only to secure a Pebble Round to gift to my mum), but it also included a Pebble Steel. Though the watched happily charged and turned on, when I unplugged the charging port, the watch immediately died.

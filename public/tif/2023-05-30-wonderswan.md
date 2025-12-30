@@ -1,6 +1,6 @@
 ---
 title: WonderSwan Color
-photo: /images/tif/2023-05-30-wonderswan.jpg
+photo: /images/tif/2023-05-30-wonderswan.jpg.avif
 ---
 
 Slightly branching out from the usual western handhelds, I've seen WonderSwans but never played around. Then managed to pick up a faulty "Color" model for £40 on eBay listed as not working.

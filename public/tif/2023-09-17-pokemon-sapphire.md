@@ -1,6 +1,6 @@
 ---
 title: Pokémon Sapphire
-photo: /images/tif/2023-09-17-pokemon-sapphire.jpg
+photo: /images/tif/2023-09-17-pokemon-sapphire.jpg.avif
 ---
 
 On the Console Repair Discord I'd offered to fix a Pokémon Sapphire cart that was initially not working, but then went to a repair shop and came back with a leg on one of the chips missing.

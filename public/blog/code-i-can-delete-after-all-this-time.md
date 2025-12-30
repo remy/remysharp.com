@@ -21,7 +21,7 @@ Given I've had a bit of time away from the backend, here's an unorganised list o
 - CSS: `text-underline-offset`
 - CSS: `gap`
 - CSS: nested simplified media queries `h1 { font-size: 1rem; @media (min-width: 600px) { font-size: 2rem; } }`
-- CSS: clamp
+- CSS: `clamp`
 - CSS: `content: open-quote` localised quotes
 - JS: `catch` without catching the variable
 - JS: pointer events have improved (though still from experience they're not 100% perfect) but are to replace the double click+touch handlers
