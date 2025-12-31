@@ -1387,6 +1387,114 @@
     "created": "2025-07-29T11:03:05.000Z",
     "modified": "2025-07-29T11:03:05.000Z"
   },
+  "public/tif/2023-02-11-space-invaders.md": {
+    "created": "2023-02-14T22:40:51.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-02-14-super-mario.md": {
+    "created": "2023-02-14T22:40:51.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-02-25-gba-power.md": {
+    "created": "2023-03-01T18:12:21.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-03-01-joycon.md": {
+    "created": "2023-03-01T18:12:21.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-03-02-nes-clone.md": {
+    "created": "2023-03-04T11:43:47.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-03-03-switch.md": {
+    "created": "2023-03-04T11:43:47.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-03-09-gba.md": {
+    "created": "2023-03-12T23:35:58.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-03-10-joypad.md": {
+    "created": "2023-03-12T23:35:58.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-03-12-pebble.md": {
+    "created": "2023-03-12T23:35:58.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-03-15-ps2.md": {
+    "created": "2023-03-22T20:15:18.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-03-16-3ds.md": {
+    "created": "2023-03-22T20:15:18.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-03-21-mario.md": {
+    "created": "2023-03-22T20:15:18.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-03-26-crystal.md": {
+    "created": "2023-03-30T11:20:08.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-03-29-joycons.md": {
+    "created": "2023-03-30T11:20:08.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-04-05-dsl.md": {
+    "created": "2023-04-06T10:59:37.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-04-05-pebble.md": {
+    "created": "2023-04-06T10:59:37.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-04-10-glasses.md": {
+    "created": "2023-04-10T20:10:20.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-04-11-pebble-steel.md": {
+    "created": "2023-04-18T09:29:54.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-04-19-joycon.md": {
+    "created": "2023-04-20T11:35:29.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-04-19-pm.md": {
+    "created": "2023-04-20T11:35:29.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-05-14-pokemon.md": {
+    "created": "2023-05-15T08:35:29.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-05-15-joycons.md": {
+    "created": "2023-05-15T17:04:52.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-05-30-wonderswan.md": {
+    "created": "2023-05-30T18:50:53.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-09-17-pokemon-sapphire.md": {
+    "created": "2023-09-20T14:51:20.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2023-10-27-kindle.md": {
+    "created": "2023-10-27T11:43:23.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2024-01-06-lights.md": {
+    "created": "2024-01-06T18:37:44.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
+  "public/tif/2024-03-27-cricut.md": {
+    "created": "2024-03-27T10:56:27.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
   "public/blog/2007-moments.md": {
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-12-27T15:20:07.000Z"
@@ -1821,7 +1929,7 @@
   },
   "public/blog/code-i-can-delete-after-all-this-time.md": {
     "created": "2025-11-25T12:42:48.000Z",
-    "modified": "2025-11-25T12:42:48.000Z"
+    "modified": "2025-12-30T21:38:10.000Z"
   },
   "public/blog/codeigniter.md": {
     "created": "2014-09-04T11:12:23.000Z",
@@ -2327,7 +2435,10 @@
     "created": "2017-04-11T14:02:23.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
   },
-  "public/blog/how-i-cross-post-from-blue-sky-to-mastodon.md": {},
+  "public/blog/how-i-cross-post-from-blue-sky-to-mastodon.md": {
+    "created": "2025-12-30T21:38:10.000Z",
+    "modified": "2025-12-30T21:38:10.000Z"
+  },
   "public/blog/how-i-failed-the-a.md": {
     "created": "2019-04-04T11:43:56.000Z",
     "modified": "2019-04-04T13:30:33.000Z"
@@ -2934,7 +3045,7 @@
   },
   "public/blog/my-2025.md": {
     "created": "2024-12-31T14:40:23.000Z",
-    "modified": "2025-12-22T11:25:50.000Z"
+    "modified": "2025-12-30T21:38:10.000Z"
   },
   "public/blog/my-big-workshop-tour.md": {
     "created": "2014-09-04T11:12:23.000Z",
@@ -4096,119 +4207,7 @@
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
   },
-  "public/tif/2023-02-11-space-invaders.md": {
-    "created": "2023-02-14T22:40:51.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-02-14-super-mario.md": {
-    "created": "2023-02-14T22:40:51.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-02-25-gba-power.md": {
-    "created": "2023-03-01T18:12:21.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-01-joycon.md": {
-    "created": "2023-03-01T18:12:21.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-02-nes-clone.md": {
-    "created": "2023-03-04T11:43:47.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-03-switch.md": {
-    "created": "2023-03-04T11:43:47.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-09-gba.md": {
-    "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-10-joypad.md": {
-    "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-12-pebble.md": {
-    "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-03-12T23:35:58.000Z"
-  },
-  "public/tif/2023-03-15-ps2.md": {
-    "created": "2023-03-22T20:15:18.000Z",
-    "modified": "2023-03-22T20:15:18.000Z"
-  },
-  "public/tif/2023-03-16-3ds.md": {
-    "created": "2023-03-22T20:15:18.000Z",
-    "modified": "2023-03-22T20:15:18.000Z"
-  },
-  "public/tif/2023-03-21-mario.md": {
-    "created": "2023-03-22T20:15:18.000Z",
-    "modified": "2023-03-22T20:15:18.000Z"
-  },
-  "public/tif/2023-03-26-crystal.md": {
-    "created": "2023-03-30T11:20:08.000Z",
-    "modified": "2023-03-30T11:20:08.000Z"
-  },
-  "public/tif/2023-03-29-joycons.md": {
-    "created": "2023-03-30T11:20:08.000Z",
-    "modified": "2023-03-30T11:20:08.000Z"
-  },
-  "public/tif/2023-04-05-dsl.md": {
-    "created": "2023-04-06T10:59:37.000Z",
-    "modified": "2023-04-06T10:59:37.000Z"
-  },
-  "public/tif/2023-04-05-pebble.md": {
-    "created": "2023-04-06T10:59:37.000Z",
-    "modified": "2023-04-06T10:59:37.000Z"
-  },
-  "public/tif/2023-04-10-glasses.md": {
-    "created": "2023-04-10T20:10:20.000Z",
-    "modified": "2023-04-10T20:10:20.000Z"
-  },
-  "public/tif/2023-04-11-pebble-steel.md": {
-    "created": "2023-04-18T09:29:54.000Z",
-    "modified": "2023-04-18T09:29:54.000Z"
-  },
-  "public/tif/2023-04-19-joycon.md": {
-    "created": "2023-04-20T11:35:29.000Z",
-    "modified": "2023-04-20T11:35:29.000Z"
-  },
-  "public/tif/2023-04-19-pm.md": {
-    "created": "2023-04-20T11:35:29.000Z",
-    "modified": "2023-04-20T11:35:29.000Z"
-  },
-  "public/tif/2023-05-14-pokemon.md": {
-    "created": "2023-05-15T08:35:29.000Z",
-    "modified": "2023-05-15T08:35:29.000Z"
-  },
-  "public/tif/2023-05-15-joycons.md": {
-    "created": "2023-05-15T17:04:52.000Z",
-    "modified": "2023-05-15T17:04:52.000Z"
-  },
-  "public/tif/2023-05-30-wonderswan.md": {
-    "created": "2023-05-30T18:50:53.000Z",
-    "modified": "2023-05-30T18:50:53.000Z"
-  },
-  "public/tif/2023-09-17-pokemon-sapphire.md": {
-    "created": "2023-09-20T14:51:20.000Z",
-    "modified": "2023-09-20T14:51:20.000Z"
-  },
-  "public/tif/2023-10-27-kindle.md": {
-    "created": "2023-10-27T11:43:23.000Z",
-    "modified": "2023-10-27T11:43:23.000Z"
-  },
-  "public/tif/2024-01-06-lights.md": {
-    "created": "2024-01-06T18:37:44.000Z",
-    "modified": "2024-01-06T18:37:44.000Z"
-  },
-  "public/tif/2024-03-27-cricut.md": {
-    "created": "2024-03-27T10:56:27.000Z",
-    "modified": "2024-03-27T10:56:27.000Z"
-  },
   "public/attic/2006/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
-  },
-  "public/attic/2007/info.md": {
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
   },
@@ -4216,9 +4215,97 @@
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
   },
+  "public/attic/2007/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
   "public/attic/2014/info.md": {
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/devlog/go-mummy/2020-05-24.md": {
+    "created": "2020-05-24T13:47:04.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-05-25.md": {
+    "created": "2020-05-25T13:02:00.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-01.md": {
+    "created": "2020-06-01T15:36:06.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-03.md": {
+    "created": "2020-06-03T09:22:30.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-07.md": {
+    "created": "2020-06-07T09:00:43.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-15.md": {
+    "created": "2020-06-15T16:41:03.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-25.md": {
+    "created": "2020-06-25T20:56:48.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-07-07.md": {
+    "created": "2020-07-07T08:16:39.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-07-20.md": {
+    "created": "2020-07-20T16:44:32.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-07-28.md": {
+    "created": "2020-07-28T11:41:12.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-08-09.md": {
+    "created": "2020-08-09T14:52:25.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-08-25.md": {
+    "created": "2020-08-25T08:31:53.000Z",
+    "modified": "2020-08-25T08:31:53.000Z"
+  },
+  "public/devlog/marbles2/2020-10-14.md": {
+    "created": "2020-10-14T21:57:41.000Z",
+    "modified": "2020-10-14T22:01:30.000Z"
+  },
+  "public/devlog/marbles2/2020-11-08.md": {
+    "created": "2020-11-08T22:08:50.000Z",
+    "modified": "2020-11-08T22:08:50.000Z"
+  },
+  "public/devlog/marbles2/2020-11-23.md": {
+    "created": "2020-11-23T22:32:57.000Z",
+    "modified": "2020-11-23T22:32:57.000Z"
+  },
+  "public/devlog/marbles2/2021-03-23.md": {
+    "created": "2021-03-23T21:15:39.000Z",
+    "modified": "2021-03-23T21:15:39.000Z"
+  },
+  "public/devlog/marbles2/2021-05-18.md": {
+    "created": "2021-05-18T22:01:57.000Z",
+    "modified": "2021-05-18T22:01:57.000Z"
+  },
+  "public/devlog/marbles2/2021-05-19.md": {
+    "created": "2021-05-19T21:27:05.000Z",
+    "modified": "2021-05-19T21:27:05.000Z"
+  },
+  "public/devlog/marbles2/2021-06-14.md": {
+    "created": "2021-06-14T22:30:53.000Z",
+    "modified": "2021-06-14T22:30:53.000Z"
+  },
+  "public/devlog/marbles2/2021-07-05.md": {
+    "created": "2021-07-05T20:34:48.000Z",
+    "modified": "2021-07-05T20:34:48.000Z"
+  },
+  "public/devlog/marbles2/2021-07-16.md": {
+    "created": "2021-07-16T19:49:47.000Z",
+    "modified": "2021-07-16T19:49:47.000Z"
   },
   "public/books/2017/a-boy-made-of-blocks.md": {
     "created": "2020-08-05T18:46:45.000Z",
@@ -4943,90 +5030,6 @@
   "public/books/2025/the-time-machine.md": {
     "created": "2025-03-27T09:03:16.000Z",
     "modified": "2025-03-27T09:03:16.000Z"
-  },
-  "public/devlog/go-mummy/2020-05-24.md": {
-    "created": "2020-05-24T13:47:04.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-05-25.md": {
-    "created": "2020-05-25T13:02:00.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-01.md": {
-    "created": "2020-06-01T15:36:06.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-03.md": {
-    "created": "2020-06-03T09:22:30.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-07.md": {
-    "created": "2020-06-07T09:00:43.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-15.md": {
-    "created": "2020-06-15T16:41:03.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-25.md": {
-    "created": "2020-06-25T20:56:48.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-07-07.md": {
-    "created": "2020-07-07T08:16:39.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-07-20.md": {
-    "created": "2020-07-20T16:44:32.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-07-28.md": {
-    "created": "2020-07-28T11:41:12.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-08-09.md": {
-    "created": "2020-08-09T14:52:25.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-08-25.md": {
-    "created": "2020-08-25T08:31:53.000Z",
-    "modified": "2020-08-25T08:31:53.000Z"
-  },
-  "public/devlog/marbles2/2020-10-14.md": {
-    "created": "2020-10-14T21:57:41.000Z",
-    "modified": "2020-10-14T22:01:30.000Z"
-  },
-  "public/devlog/marbles2/2020-11-08.md": {
-    "created": "2020-11-08T22:08:50.000Z",
-    "modified": "2020-11-08T22:08:50.000Z"
-  },
-  "public/devlog/marbles2/2020-11-23.md": {
-    "created": "2020-11-23T22:32:57.000Z",
-    "modified": "2020-11-23T22:32:57.000Z"
-  },
-  "public/devlog/marbles2/2021-03-23.md": {
-    "created": "2021-03-23T21:15:39.000Z",
-    "modified": "2021-03-23T21:15:39.000Z"
-  },
-  "public/devlog/marbles2/2021-05-18.md": {
-    "created": "2021-05-18T22:01:57.000Z",
-    "modified": "2021-05-18T22:01:57.000Z"
-  },
-  "public/devlog/marbles2/2021-05-19.md": {
-    "created": "2021-05-19T21:27:05.000Z",
-    "modified": "2021-05-19T21:27:05.000Z"
-  },
-  "public/devlog/marbles2/2021-06-14.md": {
-    "created": "2021-06-14T22:30:53.000Z",
-    "modified": "2021-06-14T22:30:53.000Z"
-  },
-  "public/devlog/marbles2/2021-07-05.md": {
-    "created": "2021-07-05T20:34:48.000Z",
-    "modified": "2021-07-05T20:34:48.000Z"
-  },
-  "public/devlog/marbles2/2021-07-16.md": {
-    "created": "2021-07-16T19:49:47.000Z",
-    "modified": "2021-07-16T19:49:47.000Z"
   },
   "public/til/cli/debugging-shell-scripts.md": {
     "created": "2020-05-27T11:57:54.000Z",
