@@ -770,10 +770,14 @@ small.date {
   // margin-left: 10px;
 }
 
-.archives,
-.links {
-  a {
-    // border-bottom: none;
+.archives {
+  li {
+    // numerical font-variant for years
+    font-variant-numeric: tabular-nums;
+  }
+  a + small {
+    margin-left: 6px;
+    color: #666;
   }
 }
 
