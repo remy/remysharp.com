@@ -51,9 +51,9 @@ layout: public
           - url = book.inputPath ? filenameToUrl(book.inputPath) : '#'
           div(data-id=`${book.slug}`)
             img.cover(width="64" src=`/images/books/${review.goodreads_id}.jpg`)
-            p.when(data-date=`${firstDate(review.read)}`) #{moment(review.read).format(`d-MMM ''yy`)} #{readCount(review.read)}
+            p.when(data-date=`${moment(review.read).format('yyyy-MM-dd')}`) #{moment(review.read).format(`d-MMM ''yy`)} #{readCount(review.read)}
               br
-              span(title=`${firstDate(review.read)}`) #{duration(review.start, review.read)}
+              span(title=`${moment(review.read).format('yyyy-MM-dd')}`) #{duration(review.start, review.read)}
               if review.clippings
                 br
                 span.clipping-count Highlights #{review.clippings.length}

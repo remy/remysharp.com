@@ -193,23 +193,24 @@ In 2024 we actively decided to bring back films from previous viewing years wher
 
 * [The Apartment (1960)](https://www.imdb.com/title/tt0053604/)
 * [Man vs Baby (2025)](https://www.imdb.com/title/tt35047134/?)
-* [Little Women (1994)](https://www.imdb.com/title/tt0110367/)
-* [Edward Scissorhands (1990)](https://www.imdb.com/title/tt0099487/)
+* [Christmas with the Coopers (2015)](https://www.imdb.com/title/tt2279339/)
 * [The Holdovers (2023)](https://www.imdb.com/title/tt14849194/)
-* [Anna and the Apocalypse (2017)](https://www.imdb.com/title/tt6433880/)
+* [Oh. What. Fun. (2025)](https://www.imdb.com/title/tt31998881/)
 
 Note: we probably won't manage all 6 - so this is the initial list
 
 ## Future Potentials
 
+* [Anna and the Apocalypse (2017)](https://www.imdb.com/title/tt6433880/)
 * [El Camino Christmas (2017)](https://www.imdb.com/title/tt3255590/)
+* [Edward Scissorhands (1990)](https://www.imdb.com/title/tt0099487/)
+* [Little Women (1994)](https://www.imdb.com/title/tt0110367/)
 * [A Christmas Story Christmas (2022)](https://www.imdb.com/title/tt17220704/)
 * [Hogfather (2006)](https://m.imdb.com/title/tt0765458/) (possibly…it's 3 hours!)
 * [Violent Night (2022)](https://www.imdb.com/title/tt12003946/)
 * [Meet Me in St. Louis (1944)](https://www.imdb.com/title/tt0037059/)
 * [8 Women (2002)](https://www.imdb.com/title/tt0283832/)
 * [How the Grinch Stole Christmas (2000)](https://www.imdb.com/title/tt0170016/)
-* [Love the Coopers (2015)](https://www.imdb.com/title/tt2279339/)
 * [The Family Stone (2005)](https://www.imdb.com/title/tt0356680/)
 * [All Is Bright (2013)](https://www.imdb.com/title/tt1462901/)
 * [Fatman (2020)](https://www.imdb.com/title/tt10310140/)

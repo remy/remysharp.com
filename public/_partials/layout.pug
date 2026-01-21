@@ -72,13 +72,6 @@ html#remysharp-com(lang="en")
     //-     }
     //-   }
 
-    script(async src="https://plausible.io/js/pa-npTOFws3z6KrQS2x14eKf.js")
-    script.
-      // Privacy-friendly analytics by Plausible
-      window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
-      plausible.init()
-
-
     link(as="style" href=`/css/screen.css` rel="preload")
     link(as="style" href=`/css/prism.css` rel="preload")
     link(rel="stylesheet" href=`/css/screen.css`)
@@ -108,7 +101,10 @@ html#remysharp-com(lang="en")
           li: a(href="/archive") All years
           - var thisYear = moment().format('yyyy') * 1
           while thisYear >= 2006
-            li: a(href=`/${ thisYear }`)= thisYear--
+            li
+              a(href=`/${ thisYear }`)= thisYear--
+              small(title="published blog posts") ##{ collections.postCountsByYear[thisYear + 1] || 0 }
+
       .flex-item.links
         h2 Links
         include links
