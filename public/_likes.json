@@ -59437,5 +59437,178 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "bytes-i-can-delete-after-all-this-time": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pierre Spring",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/d632fb7a0d13ebe721fe04c0efc19ddb0131867178b07b6f8552ec998aa937ea.jpg",
+        "url": "https://fosstodon.org/@caillou"
+      },
+      "url": "https://front-end.social/@rem/115887569651175513#favorited-by-109485255051589173",
+      "published": null,
+      "wm-received": "2026-01-19T19:31:30Z",
+      "wm-id": 1968884,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115887569651175513/109485255051589173",
+      "wm-target": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mastro.{js,ts}",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/5e2369a8204682e2fda42628ce343ae6992876fe7d9adfe33ba4bf4ec0936101.jpg",
+        "url": "https://bsky.app/profile/mastrojs.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mcchha4epk2o#liked_by_did:plc:slxmn2ejggkwwbzlej2axmx6",
+      "published": null,
+      "wm-received": "2026-01-13T16:11:42Z",
+      "wm-id": 1967750,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mcchha4epk2o/did%253Aplc%253Aslxmn2ejggkwwbzlej2axmx6",
+      "wm-target": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "geeky Chakri ????",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/70c7e5c911f1e9588bda7618624d62df85da1a033d403cb05810294b97e8c0a5.jpg",
+        "url": "https://bsky.app/profile/geekychakri.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mcchha4epk2o#liked_by_did:plc:pa2rujri3s6l3yf5nadbg3bx",
+      "published": null,
+      "wm-received": "2026-01-13T13:56:44Z",
+      "wm-id": 1967723,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mcchha4epk2o/did%253Aplc%253Apa2rujri3s6l3yf5nadbg3bx",
+      "wm-target": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Charles Bauer",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/829faaf439d095b40ecdcaf6b3372c0c5b13a78db28e4671e9668fbad994ce51.png",
+        "url": "https://mastodon.design/@chrlsbr"
+      },
+      "url": "https://front-end.social/@rem/115887569651175513#favorited-by-109288670905265819",
+      "published": null,
+      "wm-received": "2026-01-13T13:55:17Z",
+      "wm-id": 1967721,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/115887569651175513/109288670905265819",
+      "wm-target": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthew Balaam",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/59a8fcfc00b3f12df037fbb475d19f271a98e051ebaaa173645416dedc139656.jpg",
+        "url": "https://bsky.app/profile/matthewbalaam.co.uk"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mcchha4epk2o#liked_by_did:plc:vz5x47jhyqis3y4cwexb6rvr",
+      "published": null,
+      "wm-received": "2026-01-13T12:50:04Z",
+      "wm-id": 1967707,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mcchha4epk2o/did%253Aplc%253Avz5x47jhyqis3y4cwexb6rvr",
+      "wm-target": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas Broyer",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/1daaabac5a81d5a882fc59bb4ec3fc3bd7dd0b7fe8cb69698faea04fd0907e32.jpg",
+        "url": "https://bsky.app/profile/tbroyer.ltgt.net"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mcchha4epk2o#liked_by_did:plc:wwv7b2hkcaghqlyy4mew2tzs",
+      "published": null,
+      "wm-received": "2026-01-13T12:17:01Z",
+      "wm-id": 1967627,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mcchha4epk2o/did%253Aplc%253Awwv7b2hkcaghqlyy4mew2tzs",
+      "wm-target": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/4bd3d77ac167711da4d93cf920feccde4b3ee1052fbe7c133f88dd6af7b915c4.jpg",
+        "url": "https://bsky.app/profile/bell.bz"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mcchha4epk2o#liked_by_did:plc:pzgvqg4ihnaihkrpmxqz5pu6",
+      "published": null,
+      "wm-received": "2026-01-13T12:16:51Z",
+      "wm-id": 1967626,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mcchha4epk2o/did%253Aplc%253Apzgvqg4ihnaihkrpmxqz5pu6",
+      "wm-target": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Altin Selimi",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/92c3ac16e915b48d16db3adc6448cbb07fe5de8d7fb1d8112e42a68825e0a0bc.jpg",
+        "url": "https://bsky.app/profile/altinselimi.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mcchha4epk2o#liked_by_did:plc:44uan4gddbslcixyzpr7pdax",
+      "published": null,
+      "wm-received": "2026-01-13T12:16:50Z",
+      "wm-id": 1967625,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mcchha4epk2o/did%253Aplc%253A44uan4gddbslcixyzpr7pdax",
+      "wm-target": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sujal Gurung",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/44727e8940f7ffdfac498005817306870932067633718b96db464e8686d11d71.jpg",
+        "url": "https://bsky.app/profile/gursuj.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mcchha4epk2o#liked_by_did:plc:vdnihdhuztthebi63rm7foyz",
+      "published": null,
+      "wm-received": "2026-01-13T12:16:43Z",
+      "wm-id": 1967623,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mcchha4epk2o/did%253Aplc%253Avdnihdhuztthebi63rm7foyz",
+      "wm-target": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/01/13/bytes-i-can-delete-after-all-this-time",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

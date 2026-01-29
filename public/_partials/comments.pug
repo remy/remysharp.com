@@ -1,16 +1,16 @@
-#comments.comments
-  h2
-    label(for="commento-textarea-root")= commentsTitle || "Comments"
-  #commento
-  //- data-css-override="/css/commento.css"
-  script(defer async data-no-fonts="true" data-data-page-id=`${url}/` data-auto-init="false" data-domain="remysharp.com" src="/js/commento.js")
-  script(defer async).
-    window.parent = { location: { host: 'remysharp.com', pathname: '#{ url }/' }};
-    function loadCommento() {
-      if (window.commento && window.commento.main) {
-        window.commento.main(() => observerImages())
-      } else {
-        setTimeout(loadCommento, 10);
-      }
-    }
-    setTimeout(loadCommento, 10);
+//- #comments.comments
+//-   h2
+//-     label(for="commento-textarea-root")= commentsTitle || "Comments"
+//-   #commento
+//-   //- data-css-override="/css/commento.css"
+//-   script(defer async data-no-fonts="true" data-data-page-id=`${url}/` data-auto-init="false" data-domain="remysharp.com" src="/js/commento.js")
+//-   script(defer async).
+//-     window.parent = { location: { host: 'remysharp.com', pathname: '#{ url }/' }};
+//-     function loadCommento() {
+//-       if (window.commento && window.commento.main) {
+//-         window.commento.main(() => observerImages())
+//-       } else {
+//-         setTimeout(loadCommento, 10);
+//-       }
+//-     }
+//-     setTimeout(loadCommento, 10);
