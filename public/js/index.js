@@ -255,9 +255,7 @@ $('body').addEventListener('keydown', (event) => {
     !['INPUT', 'TEXTAREA'].includes(event.target.tagName)
   ) {
     startScreensaver();
-  }
-
-  if (event.key === 'Escape') {
+  } else {
     if (screensaverActive) {
       dismissScreensaver();
     }
@@ -661,6 +659,12 @@ document.addEventListener('visibilitychange', () => {
 function dismissScreensaver() {
   screensaverActive = false;
   const screensaver = $('#screensaver');
+
+  // remove event listeners
+  document.removeEventListener('mousemove', dismissScreensaver);
+  document.removeEventListener('mousedown', dismissScreensaver);
+  document.removeEventListener('keydown', dismissScreensaver);
+
   if (screensaver) document.body.removeChild(screensaver);
 
   // Notify other tabs that screensaver was dismissed
@@ -735,6 +739,12 @@ function startScreensaver() {
     requestAnimationFrame(animate);
   }
   requestAnimationFrame(animate);
+
+  setTimeout(() => {
+    document.addEventListener('mousemove', dismissScreensaver);
+    document.addEventListener('mousedown', dismissScreensaver);
+    document.addEventListener('keydown', dismissScreensaver);
+  }, 200);
 }
 
 whenReady = {

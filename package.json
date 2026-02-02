@@ -34,6 +34,7 @@
     "markdown-it": "^14.1.0",
     "markdown-it-abbr": "^2.0.0",
     "markdown-it-attrs": "^4.1.6",
+    "markdown-it-image-figures": "^2.1.1",
     "markdown-it-prism": "^3.0.1",
     "markdown-it-task-lists": "^2.1.1",
     "num-words": "^1.2.3",

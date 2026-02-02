@@ -93,3 +93,14 @@ $ curl -X POST \
 ```
 
 Nice and simple, and I like that my bash code examples can now be safely copied without accidentally messing up the command (and I've dropped in the opacity to try to visually indicate that it's less important than the code).
+
+---
+
+Bonus: even if you paste in the `$`, let's have it do nothing:
+
+```shell
+#!/bin/zsh
+$@
+
+# saved to `$` in your bin path
+```

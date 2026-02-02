@@ -94,6 +94,11 @@ figcaption, .credit {
   font-size: 75%;
   font-style: italic;
   line-height: 1rem;
+  margin: 4px 0;
+}
+
+figure {
+  margin: 0;
 }
 
 table {
@@ -149,14 +154,17 @@ tbody td {
 }
 
 blockquote {
-  background: rgb(235, 235, 235) url(../images/quotes.svg) no-repeat 8px bottom;
+  // background: rgb(235, 235, 235) url(../images/quotes.svg) no-repeat 8px bottom;
   padding: 10px;
   margin: 10px 0;
   // font-size: 95%;
   font-style: italic;
   -webkit-font-smoothing: antialiased;
-  font-family: georgia, times, 'times new roman', serif;
+  font-family: @serif-font;
   border-radius: 2px;
+  font-weight: 500;
+  border-left: 8px solid #ccc;
+  background: rgb(250, 250, 250);
 
   p {
     margin: 18px 0;
@@ -1035,6 +1043,13 @@ details summary:after {
   content: ' (click to expand)';
   font-size: 80%;
   color: var(--c-text-dark-bg);
+}
+
+details.aside {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 #subscribe-form {
