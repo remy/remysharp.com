@@ -50,7 +50,7 @@ layout: public
           - rating = `${ '★'.repeat(review.rating) }${ '☆'.repeat(5 - review.rating)}`
           - url = book.inputPath ? filenameToUrl(book.inputPath) : '#'
           div(data-id=`${book.slug}`)
-            img.cover(width="64" src=`/images/books/${review.goodreads_id}.jpg`)
+            img.cover(width="64" src=`/images/books/${review.goodreads_id}.jpg.avif`)
             p.when(data-date=`${moment(review.read).format('yyyy-MM-dd')}`) #{moment(review.read).format(`d-MMM ''yy`)} #{readCount(review.read)}
               br
               span(title=`${moment(review.read).format('yyyy-MM-dd')}`) #{duration(review.start, review.read)}

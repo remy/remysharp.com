@@ -6,9 +6,9 @@ block meta
   meta(name="twitter:title" content=`${title}`)
   meta(name="twitter:site" content="@rem")
   meta(name="twitter:domain" content="Remy's b:log")
-  meta(name="twitter:image:src" content=`https://remysharp.com/images/books/${goodreads_id}.jpg`)
+  meta(name="twitter:image:src" content=`https://remysharp.com/images/books/${goodreads_id}.jpg.avif`)
   meta(name="twitter:card" content="summary")
-  meta(name="og:image" content=`https://remysharp.com/images/books/${goodreads_id}.jpg`)
+  meta(name="og:image" content=`https://remysharp.com/images/books/${goodreads_id}.jpg.avif`)
   meta(name="og:title" content=`${title}`)
   meta(name="og:description" content=`(${rating}/5) ${summary}`)
   meta(name="description" content=`(${rating}/5) ${summary}`)
@@ -39,7 +39,7 @@ block content
             | <time datetime="#{moment(read).format('yyyy-MM-dd')}">#{read.map(_ => moment(_).format('MMMM yyyy')).join(', ')}</time>
           else
             | <time datetime="#{moment(read).format('yyyy-MM-dd')}">#{moment(read).format('MMMM yyyy')}</time>
-        img.cover(src=`/images/books/${goodreads_id}.jpg` width="64")
+        img.cover(src=`/images/books/${goodreads_id}.jpg.avif` width="64")
 
       .post-content.e-content
         if spoiler
