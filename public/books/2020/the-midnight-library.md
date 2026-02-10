@@ -5,7 +5,7 @@ seriesNumber: '1'
 series: The Midnight World
 author: Matt Haig
 pages: 304
-rating: 0
+rating: 3
 read: 2020-11-03T00:00:00.000Z
 start: 2020-10-22T00:00:00.000Z
 published: 2020
