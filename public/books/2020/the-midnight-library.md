@@ -1,18 +1,23 @@
 ---
-title: "The Midnight Library"
-author: "Matt Haig"
-published: 2020
-pages: 284
-goodreads: https://www.goodreads.com/book/show/51955934-the-midnight-library
-goodreads_id: 51955934
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1583060522l/51955934._SX318_.jpg
-read: 2020-11-03
-start: 2020-10-22
+title: 'The Midnight Library (The Midnight World, #1)'
+seriesEntry: The Midnight Library
+seriesNumber: '1'
+series: The Midnight World
+author: Matt Haig
+pages: 304
 rating: 3
+read: 2020-11-03T00:00:00.000Z
+start: 2020-10-22T00:00:00.000Z
+published: 2020
+goodreads: 'https://www.goodreads.com/book/show/51955934-the-midnight-library'
+goodreads_id: 51955934
+cover: >-
+  https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1583060522l/51955934._SX50_.jpg
 spoiler: true
-summary: "Predictable"
+slug: the-midnight-library
+titleSlug: the-midnight-library-the-midnight-world-1
+summary: Predictable
 ---
-
 Predictable
 
 Whilst I've come to highly respect Matt Haig and his books, even re-reading The Humans (which is unique for me), as I read this book I started to remember what I wasn't so keen on in his last book - which repeats itself in this.
