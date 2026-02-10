@@ -1,5 +1,22 @@
 [
   {
+    "title": "Bear Head (Dogs of War, #2)",
+    "seriesEntry": "Bear Head",
+    "seriesNumber": "2",
+    "series": "Dogs of War",
+    "author": "Adrian Tchaikovsky",
+    "published": 2021,
+    "pages": 400,
+    "goodreads": "https://www.goodreads.com/book/show/55037555-bear-head",
+    "goodreads_id": 55037555,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1597927380l/55037555._SX315_.jpg",
+    "read": "2026-02-02T00:00:00.000Z",
+    "start": "2026-01-02T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2026/bear-head.md",
+    "slug": "bear-head"
+  },
+  {
     "title": "A Very Merry Murder (Malvern Farm Mystery, #6)",
     "seriesEntry": "A Very Merry Murder",
     "seriesNumber": "6",
@@ -1131,20 +1148,24 @@
     "slug": "last-christmas"
   },
   {
-    "title": "The Midnight Library",
+    "title": "The Midnight Library (The Midnight World, #1)",
+    "seriesEntry": "The Midnight Library",
+    "seriesNumber": "1",
+    "series": "The Midnight World",
     "author": "Matt Haig",
-    "published": 2020,
-    "pages": 284,
-    "goodreads": "https://www.goodreads.com/book/show/51955934-the-midnight-library",
-    "goodreads_id": 51955934,
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1583060522l/51955934._SX318_.jpg",
+    "pages": 304,
+    "rating": 0,
     "read": "2020-11-03T00:00:00.000Z",
     "start": "2020-10-22T00:00:00.000Z",
-    "rating": 3,
+    "published": 2020,
+    "goodreads": "https://www.goodreads.com/book/show/51955934-the-midnight-library",
+    "goodreads_id": 51955934,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1583060522l/51955934._SX50_.jpg",
     "spoiler": true,
+    "slug": "the-midnight-library",
+    "titleSlug": "the-midnight-library-the-midnight-world-1",
     "summary": "Predictable",
-    "filename": "/Users/remy/dev/remysharp.com/public/books/2020/the-midnight-library.md",
-    "slug": "the-midnight-library"
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2020/the-midnight-library.md"
   },
   {
     "title": "Record of a Spaceborn Few (Wayfarers, #3)",
@@ -2209,6 +2230,8 @@
   {
     "title": "Dogs of War",
     "author": "Adrian Tchaikovsky",
+    "series": "Dogs of War",
+    "seriesEntry": "Dogs of War",
     "published": 2017,
     "pages": 262,
     "goodreads": "https://www.goodreads.com/book/show/35827220-dogs-of-war",
