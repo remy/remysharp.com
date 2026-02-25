@@ -64,7 +64,7 @@ If all is successful, KOReader should say so. If it fails, it could be related t
 
 The JSON structure is fairly simplistic, but I have this specific [jq transform](https://jqterm.com) to get into the format I use:
 
-```js
+```jq
 def slug:
   ascii_downcase
   | gsub("[^a-z0-9]+"; "-")
@@ -75,6 +75,26 @@ def slug:
     title,
     author,
     highlights: .entries | map({ text, page, note })
+  }
+}
+```
+
+Alternatively, if I'm lifting the annotations (highlights) directly from Calibre, this works:
+
+```jq
+def clean: tostring | gsub("\\\\\\n"; "\n\n") | gsub("[’‘]"; "'"; "g");
+def percent($total): . / $total * 100;
+
+def slug:
+  ascii_downcase
+  | gsub("[^a-z0-9]+"; "-")
+  | gsub("(^-|-$)"; "");
+
+. as $_ | { slug: .stats.title | slug } | {
+  "\(.slug)": {
+    title: $_.stats.title,
+    author: $_.stats.authors,
+    highlights: $_.annotations | to_entries | map(.value | { text: .text | clean, page: "\(.pageno)/\($_.stats.pages)", note: (.note | clean) })
   }
 }
 ```
