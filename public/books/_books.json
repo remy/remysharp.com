@@ -1,5 +1,22 @@
 [
   {
+    "title": "Rivers of London (Rivers of London, #1)",
+    "seriesEntry": "Rivers of London",
+    "seriesNumber": "1",
+    "series": "Rivers of London",
+    "author": "Ben Aaronovitch",
+    "published": 2011,
+    "pages": 392,
+    "goodreads": "https://www.goodreads.com/book/show/9317452-rivers-of-london",
+    "goodreads_id": 9317452,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401385034l/9317452._SX315_.jpg",
+    "read": "2026-02-24T00:00:00.000Z",
+    "start": "2026-02-02T00:00:00.000Z",
+    "rating": 0,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2026/rivers-of-london.md",
+    "slug": "rivers-of-london"
+  },
+  {
     "title": "Bear Head (Dogs of War, #2)",
     "seriesEntry": "Bear Head",
     "seriesNumber": "2",
@@ -1154,7 +1171,7 @@
     "series": "The Midnight World",
     "author": "Matt Haig",
     "pages": 304,
-    "rating": 0,
+    "rating": 3,
     "read": "2020-11-03T00:00:00.000Z",
     "start": "2020-10-22T00:00:00.000Z",
     "published": 2020,
