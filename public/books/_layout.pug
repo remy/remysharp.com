@@ -51,21 +51,21 @@ block content
             != yield
 
             if clippings
-              h3 #{clippings.length} Highlight(s)
+              h3 #{clippings.length} Highlight#{clippings.length === 1 ? '' : 's'}
               each clipping in clippings
                 .clipping
                   p.clipping-meta Location #{clipping.location || clipping.page}
-                  p.clipping-text #{clipping.text}
+                  .clipping-text!= markdown(clipping.text)
 
         else
           != yield
 
           if clippings
-            h3 #{clippings.length} Highlight(s)
+            h3 #{clippings.length} Highlight#{clippings.length === 1 ? '' : 's'}
             each clipping in clippings
               .clipping
                 p.clipping-meta Location #{clipping.location || clipping.page}
-                p.clipping-text #{clipping.text}
+                .clipping-text!= markdown(clipping.text)
 
 
         if otherBooks.length > 0
