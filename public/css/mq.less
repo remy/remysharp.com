@@ -84,11 +84,6 @@
     padding: 10px;
   }
 
-  code,
-  code[class*='language-'] {
-    // font-size: 0.8rem;
-  }
-
   ul {
     padding-left: 20px;
   }
@@ -157,6 +152,35 @@
 
   ul.post-nav li.search a {
     width: 20px;
+  }
+
+  a.cta p.desc,
+  a.cta:hover p.desc {
+    font-size: clamp(1rem, 4vw, 1.4rem);
+    line-height: clamp(1rem, 9vw, 1.4rem);
+  }
+
+  article.post,
+  .post-content {
+    p {
+      font-size: clamp(0.9rem, 6.6vw, 2rem);
+      line-height: clamp(1.6rem, 9.4vw, 3.2rem);
+      text-wrap: balance;
+    }
+
+    li {
+      font-size: clamp(0.9rem, 6.6vw, 2rem);
+      line-height: clamp(1.6rem, 8.6vw, 3.2rem);
+      margin: 12px 0px;
+    }
+
+    ol {
+      padding-left: 2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
   }
 
   #tif-page .tifs li {
