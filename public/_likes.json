@@ -978,6 +978,82 @@
       "like-of": "https://remysharp.com/",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Inglis / Pie",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xcqhk7rsguwook626u555bv2/bafkreicyh6rdyfdmigg3zhtjhou25jvlkxj4m7ij2w2p2lfatabivzqida",
+        "url": "https://bsky.app/profile/zch.co"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mhnsnw3pxc2u#liked_by_did:plc:xcqhk7rsguwook626u555bv2",
+      "published": null,
+      "wm-received": "2026-03-23T07:48:13Z",
+      "wm-id": 1985714,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mhnsnw3pxc2u/did%253Aplc%253Axcqhk7rsguwook626u555bv2",
+      "wm-target": "https://remysharp.com/",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Johan Halse",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/431d559d08db35ee1e9fa38ab5b1daa52dcc58e346072b7053cfa0334a495b8d.jpg",
+        "url": "https://ruby.social/@hejsna"
+      },
+      "url": "https://front-end.social/@rem/116273416445878219#favorited-by-109426675147565713",
+      "published": null,
+      "wm-received": "2026-03-22T20:37:57Z",
+      "wm-id": 1985587,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116273416445878219/109426675147565713",
+      "wm-target": "https://remysharp.com/",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mastro.{js,ts}",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:slxmn2ejggkwwbzlej2axmx6/bafkreicizuiyr3nvt254ufexepmsoerc5gfcpdjg4b43l4hueantbveslm",
+        "url": "https://bsky.app/profile/mastrojs.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mhnsnw3pxc2u#liked_by_did:plc:slxmn2ejggkwwbzlej2axmx6",
+      "published": null,
+      "wm-received": "2026-03-22T18:27:56Z",
+      "wm-id": 1985573,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mhnsnw3pxc2u/did%253Aplc%253Aslxmn2ejggkwwbzlej2axmx6",
+      "wm-target": "https://remysharp.com/",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ana Tudor",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:4hm2yozxzsakerfalloor5s6/bafkreicqw7fxgwhrsestevru7zj4yazlcdfhibmuc2kvnllcf4mwbykeca",
+        "url": "https://bsky.app/profile/anatudor.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mhnsnw3pxc2u#liked_by_did:plc:4hm2yozxzsakerfalloor5s6",
+      "published": null,
+      "wm-received": "2026-03-22T18:27:55Z",
+      "wm-id": 1985572,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mhnsnw3pxc2u/did%253Aplc%253A4hm2yozxzsakerfalloor5s6",
+      "wm-target": "https://remysharp.com/",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "i-had-a-good-week": [
