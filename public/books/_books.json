@@ -1,5 +1,19 @@
 [
   {
+    "title": "Another England: How to Reclaim Our National Story",
+    "author": "Caroline Lucas",
+    "published": 2024,
+    "pages": 305,
+    "goodreads": "https://www.goodreads.com/book/show/195890063-another-england",
+    "goodreads_id": 195890063,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1703403018l/195890063._SX315_.jpg",
+    "read": "2026-04-06T00:00:00.000Z",
+    "start": "2026-02-24T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2026/another-england-how-to-reclaim-our-national-story.md",
+    "slug": "another-england-how-to-reclaim-our-national-story"
+  },
+  {
     "title": "Rivers of London (Rivers of London, #1)",
     "seriesEntry": "Rivers of London",
     "seriesNumber": "1",
@@ -12,7 +26,7 @@
     "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401385034l/9317452._SX315_.jpg",
     "read": "2026-02-24T00:00:00.000Z",
     "start": "2026-02-02T00:00:00.000Z",
-    "rating": 0,
+    "rating": 4,
     "filename": "/Users/remy/dev/remysharp.com/public/books/2026/rivers-of-london.md",
     "slug": "rivers-of-london"
   },
