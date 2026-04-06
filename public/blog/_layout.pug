@@ -3,21 +3,25 @@ extends ../_partials/layout
 block meta
   - permalink = '/' + moment(date).format('yyyy/MM/dd') + '/' + current.source;
   link(rel="canonical" href=`https://remysharp.com${url}`)
+  link(rel="og:url" href=`https://remysharp.com${url}`)
   - var summary = metaExcerpt
   if data.summary
     - summary = data.summary
 
   if summary
-    - summary = '\n    <meta name="twitter:description" content="' + summary  + '">';
+    - summary = '\n    <meta name="og:description" content="' + summary  + '">';
     != summary
 
+  meta(name="og:title" content=`${title}`)
+
   meta(name="twitter:creator" content="@rem")
-  meta(name="twitter:title" content=`${title}`)
   meta(name="twitter:site" content="@rem")
   meta(name="twitter:domain" content="Remy's b:log")
+
   - var img = image;
   - if (!img && yield.indexOf('<img') !== -1) img = (yield.replace(/\n/g, '').match(/<img\b[^>]+?src\s*=\s*['"]?([^\s'"?#>]+)/) || [,])[1];
   - if (img && img.indexOf('http') !== 0) img = site_url + img;
+
   if img
     meta(name="twitter:image:src" content=`${img}`)
     meta(name="twitter:card" content="summary_large_image")
