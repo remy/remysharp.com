@@ -1,9 +1,10 @@
 ---
 title: Apps I use, that you might not know
-date: 2026-03-27
-draft: true
+originalDate: 2026-04-27
+draft: false
 tags:
   - personal
+date: 2026-04-27T09:00:00
 ---
 This is a cheap post to share some of the apps (macos, sorry Windows users) that I use on a fairly regular basis *and* think some of you might not have heard of before (whilst still being useful).
 
