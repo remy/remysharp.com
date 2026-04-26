@@ -12,3 +12,5 @@ public/js/version.js
 .DS_Store
 .obsidian
 *.local.json
+.trash/
+**/.trash/
