@@ -52,20 +52,25 @@ block content
 
             if clippings
               h3 #{clippings.length} Highlight#{clippings.length === 1 ? '' : 's'}
-              each clipping in clippings
+              each clipping, index in clippings
                 .clipping
-                  p.clipping-meta Location #{clipping.location || clipping.page}
+                  p.clipping-meta ##{index + 1}/#{clippings.length} - Location #{clipping.location || clipping.page}
                   .clipping-text!= markdown(clipping.text)
-
+                  if clipping.note && clipping.note.trim() !== 'null'
+                    p.clipping-note
+                      small My note: #{clipping.note}
         else
           != yield
 
           if clippings
             h3 #{clippings.length} Highlight#{clippings.length === 1 ? '' : 's'}
-            each clipping in clippings
+            each clipping, index in clippings
               .clipping
-                p.clipping-meta Location #{clipping.location || clipping.page}
+                p.clipping-meta ##{index + 1}/#{clippings.length} - Location #{clipping.location || clipping.page}
                 .clipping-text!= markdown(clipping.text)
+                if clipping.note && clipping.note.trim() !== 'null'
+                  p.clipping-note
+                    small My note: #{clipping.note}
 
 
         if otherBooks.length > 0

@@ -11,3 +11,6 @@ public/js/version.js
 .netlify
 .DS_Store
 .obsidian
+*.local.json
+.trash/
+**/.trash/
