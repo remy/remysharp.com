@@ -1,6 +1,7 @@
 ---
 title: "devtools: how to query through the shadow DOM"
 date: 2026-05-01
+nosubscribe: true
 tags:
   - code
 ---
