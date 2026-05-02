@@ -8,7 +8,7 @@ tags:
 
 # devtools: how to query through the shadow DOM
 
-This is a literal TIL but was so hand I had to put it my blog so that I wouldn't later forget it.
+This is a literal TIL but was so handy I had to put it my blog so that I wouldn't forget it later.
 
 [Thanks to](https://bsky.app/profile/keithamus.social/post/3mkqqbxnnys27) Big Brain Keith Cirkel for sharing this.
 
