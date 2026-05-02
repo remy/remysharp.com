@@ -16,6 +16,12 @@ As (hopefully) you know, there's the `$` and `$$` functions in devtools. For `qu
 
 Well there's _also_ `$$$` to query _through_ the shadow DOM. This means the query will cut through and into the nested DOM inside of the shadow DOM making it _much_ easier to navigate and search for elements when debugging or styling.
 
+It's worth also adding that, just like `$` and `$$`, this third function *also* takes a second argument for context, so it means this is valid (where `$0` is the currently selected DOM node in the devtools inspector):
+
+```
+$$$('ha-card', $0)
+```
+
 Begs the question: what's going to be lurking inside of `$$$$` in 5 years time!
 
 *[TIL]: Today I learnt
