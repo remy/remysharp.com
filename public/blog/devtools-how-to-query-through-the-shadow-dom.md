@@ -8,13 +8,19 @@ tags:
 
 # devtools: how to query through the shadow DOM
 
-This is a literal TIL but was so hand I had to put it my blog so that I wouldn't later forget it.
+This is a literal TIL but was so handy I had to put it my blog so that I wouldn't forget it later.
 
 [Thanks to](https://bsky.app/profile/keithamus.social/post/3mkqqbxnnys27) Big Brain Keith Cirkel for sharing this.
 
 As (hopefully) you know, there's the `$` and `$$` functions in devtools. For `querySelector` and `querySelectorAll` respectively.
 
 Well there's _also_ `$$$` to query _through_ the shadow DOM. This means the query will cut through and into the nested DOM inside of the shadow DOM making it _much_ easier to navigate and search for elements when debugging or styling.
+
+It's worth also adding that, just like `$` and `$$`, this third function *also* takes a second argument for context, so it means this is valid (where `$0` is the currently selected DOM node in the devtools inspector):
+
+```
+$$$('ha-card', $0)
+```
 
 Begs the question: what's going to be lurking inside of `$$$$` in 5 years time!
 
