@@ -1431,6 +1431,10 @@ a[title='simple-link'] {
   font-size: 90%;
   transition: transform 100ms ease-out;
   cursor: pointer;
+
+  &.inline {
+    display: inline;
+  }
 }
 
 .button:hover {
@@ -2176,4 +2180,31 @@ h2 > label {
   bottom: 0;
   background: black;
   z-index: 10;
+}
+
+.popover-demo {
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  background: var(--c-bg);
+  border: 1px solid var(--c-heading-bg);
+  border-radius: 12px;
+  color: var(--c-text);
+  box-shadow: 0 8px 32px #0000001a;
+  max-width: min(360px, calc(100vw - 2rem));
+  font-family: inherit;
+  font-size: 0.95rem;
+  padding: 0;
+
+  p {
+    margin: 0;
+    padding: 1rem 1.25rem;
+  }
+}
+
+style.visible {
+  display: block;
+  white-space: pre-wrap;
 }
