@@ -21,7 +21,7 @@ Except, I kept noticing that when I dismissed my popover it would sometimes vani
 
 ## On using the wrong tool
 
-It was through a chat with Bramus during a BTConf lunch that it was pointed out that I should be using a `dialog` for a modal.
+It was through a chat with [Bramus](https://www.bram.us/) during a [BTConf](https://beyondtellerrand.com/) lunch that it was pointed out that I should be using a `dialog` for a modal.
 
 I think the reason I didn't think of this earlier is down to the age old problem of naming. I have a mental model that a modal is a different thing from a dialog box. Specifically a dialog lets me set it aside whilst I carry on with what I'm doing.
 
