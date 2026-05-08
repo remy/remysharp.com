@@ -1,6 +1,6 @@
 /* eslint-env service-worker */
 
-const prefix = 'v2.5';
+const prefix = 'v2.5.1';
 const commit = '%%FILE_HASH%%';
 const version = prefix + '/' + commit;
 
