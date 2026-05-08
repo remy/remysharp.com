@@ -5,7 +5,21 @@ const $ = (s, context = document) => context.querySelector(s) || {};
 
 try {
   $$('.needs-js').forEach((_) => _.classList.remove('needs-js'));
-} catch (e) {}
+} catch (e) { }
+
+// --------------- POLYFILLS
+
+if (document.createElement('dialog').closedBy === undefined) {
+  document.body.addEventListener('click', event => {
+    if (event.target.nodeName === 'DIALOG') {
+      if (event.target.getAttribute('closedBy') === 'any') {
+        event.target.close();
+      }
+    }
+  });
+}
+
+// --------------- END OF POLYFILLS
 
 // detect native/existing fragmention support
 function fragmention() {
@@ -306,7 +320,7 @@ function addFiltering() {
         );
       }
     });
-  } catch (e) {}
+  } catch (e) { }
 }
 
 addFiltering();
@@ -429,13 +443,12 @@ async function listPages() {
         return a.published.toJSON() < b.published.toJSON() ? 1 : -1;
       })
       .map((res) => {
-        let html = `<li><a href="${res.url}">${
-          res.title
-        }</a> <small class="date">${formatDate(
-          res.published
-        )} <span title="${res.visited.toString()}">(visited ${daysAgo(
-          res.visited
-        )})</span></small></li>`;
+        let html = `<li><a href="${res.url}">${res.title
+          }</a> <small class="date">${formatDate(
+            res.published
+          )} <span title="${res.visited.toString()}">(visited ${daysAgo(
+            res.visited
+          )})</span></small></li>`;
         return html;
       })
       .join('\n');

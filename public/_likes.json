@@ -61636,5 +61636,140 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "popover-backdrop-anti-pattern": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ilja",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:6aglx53tojyuwxwueap5og3h/bafkreiclnob3mnfvo74an6ugrnbdikrkxcskndjojrdtkwf5vwjuu77z5u",
+        "url": "https://bsky.app/profile/fubits.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:6aglx53tojyuwxwueap5og3h",
+      "published": null,
+      "wm-received": "2026-05-08T19:19:06Z",
+      "wm-id": 1995078,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253A6aglx53tojyuwxwueap5og3h",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/116539717407655525#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2026-05-08T18:32:34Z",
+      "wm-id": 1995074,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116539717407655525/109293603037070680",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James Stuckey Weber",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:r2ujh2xxqbngwq7bjqmklrra/bafkreidtttq5itpkw5dc76kwijk5zdcsncodgjiu6m4xl2k3oyxxuzzthy",
+        "url": "https://bsky.app/profile/jamessw.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:r2ujh2xxqbngwq7bjqmklrra",
+      "published": null,
+      "wm-received": "2026-05-08T17:42:48Z",
+      "wm-id": 1995059,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Ar2ujh2xxqbngwq7bjqmklrra",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "AXME",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:sgqdbqlwdunhsoxo3jdowai2/bafkreifjffbi3hnskovlnz7kbwybedk3lc7tvslhpndekuqg2wchrbqk3i",
+        "url": "https://bsky.app/profile/axme-ai.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:sgqdbqlwdunhsoxo3jdowai2",
+      "published": null,
+      "wm-received": "2026-05-08T17:17:07Z",
+      "wm-id": 1995052,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Asgqdbqlwdunhsoxo3jdowai2",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:pzgvqg4ihnaihkrpmxqz5pu6/bafkreiaapdk2gfx55k2bvki4b3c4azfba5uae6ej43yrgqi3cjwxrvk4ie",
+        "url": "https://bsky.app/profile/bell.bz"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:pzgvqg4ihnaihkrpmxqz5pu6",
+      "published": null,
+      "wm-received": "2026-05-08T16:50:15Z",
+      "wm-id": 1995043,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Apzgvqg4ihnaihkrpmxqz5pu6",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bramus",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:343p6xcgmvkpz5abgezlgyep/bafkreigkuhuvdn6qvnizxa3agd26bvtkc7xmw5uqjnyh3g4zun4bxhzrsq",
+        "url": "https://bsky.app/profile/bram.us"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:343p6xcgmvkpz5abgezlgyep",
+      "published": null,
+      "wm-received": "2026-05-08T16:23:25Z",
+      "wm-id": 1995037,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253A343p6xcgmvkpz5abgezlgyep",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jrlarsen",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:dx4hfgdeyfswmn2muss7gy6s/bafkreifebarzjqzq7kz6uqq4kdtelxbl7y7mof2zrr2cjen3bboophra5a",
+        "url": "https://bsky.app/profile/room51.co.uk"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:dx4hfgdeyfswmn2muss7gy6s",
+      "published": null,
+      "wm-received": "2026-05-08T16:23:23Z",
+      "wm-id": 1995036,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Adx4hfgdeyfswmn2muss7gy6s",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

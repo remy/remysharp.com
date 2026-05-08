@@ -46,8 +46,8 @@ Let's look at the two buttons below. The "click jack" one will show an alert box
 <div id="demo-popover" popover class="popover-demo">
   <p>This is my modal. I don't have a button to dismiss this, but you can click anywhere on the page to dismiss it, and … see what happens.</p>
 </div>
-<button class="button inline" onclick="alert('click jack button got clicked')" id="demo-clickjack">click jack</button>
-<button class="button inline" popovertarget="demo-popover">modal</button>
+<button type="button" class="button inline" onclick="alert('click jack button got clicked')" id="demo-clickjack">click jack</button>
+<button type="button" class="button inline" popovertarget="demo-popover">modal</button>
 
 <style>
 #demo-popover::backdrop {
@@ -94,15 +94,13 @@ This isn't really a demo of click jacking (I've not fully thought though whether
 
 ## Now with a dialog
 
-<dialog id="demo-dialog" class="popover-demo" onclick="if (event.target.nodeName === 'DIALOG') this.close()">
+<dialog id="demo-dialog" class="popover-demo" closedby="any">
   <p>This is my modal. I don't have a button to dismiss this, but you can click anywhere on the page to dismiss it, and … see what happens.</p>
 </dialog>
-<button class="button inline" onclick="alert('click jack button got clicked')" id="demo-modal-clickjack">click jack</button>
-<button class="button inline" command="show-modal" commandfor="demo-dialog">modal</button>
+<button type="button" class="button inline" onclick="alert('click jack button got clicked')" id="demo-modal-clickjack">click jack</button>
+<button type="button" class="button inline" command="show-modal" commandfor="demo-dialog">modal</button>
 
 In this example, when the `::backdrop` is active, it does still have a giant "click jack" button under it (you'll need to inspect the DOM to validate this), but the backdrop _also_ traps the clicks and it doesn't go through.
-
-I also had to add a little bit of JavaScript to allow you to click to dismiss (as that's not a built in feature): `onclick="if (event.target.nodeName === 'DIALOG') this.close()"`.
 
 That said, you can swap this same code to use `popovertarget` and the same problem occurs (because it's not modal, and won't trap the click).
 
