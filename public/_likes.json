@@ -61770,6 +61770,348 @@
       "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Duffeh",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:spulgjrl7sactd23bgqv6jen/bafkreihf42m7kegjr2iu7zucmfcby4dqblokuc7ii3nomjtfv7tod5m6la",
+        "url": "https://bsky.app/profile/duffeh.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:spulgjrl7sactd23bgqv6jen",
+      "published": null,
+      "wm-received": "2026-05-10T21:09:11Z",
+      "wm-id": 1995456,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Aspulgjrl7sactd23bgqv6jen",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steph",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/6c538669c9c54f1da5cc93f4e8e4b06d90d4dd1787d03bb0ccad7e7e2250aeeb.jpg",
+        "url": "https://mstdn.ca/@idoclosecuts"
+      },
+      "url": "https://front-end.social/@rem/116539717407655525#favorited-by-109705085538639411",
+      "published": null,
+      "wm-received": "2026-05-10T11:45:28Z",
+      "wm-id": 1995358,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116539717407655525/109705085538639411",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Troels Thomsen",
+        "photo": "https://avatars.webmention.io/front-end.social/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mastodon.social/@tt"
+      },
+      "url": "https://front-end.social/@rem/116539717407655525#favorited-by-109803040176831344",
+      "published": null,
+      "wm-received": "2026-05-09T21:46:36Z",
+      "wm-id": 1995291,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116539717407655525/109803040176831344",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "quetquetl.bsky.social",
+        "photo": "",
+        "url": "https://bsky.app/profile/quetquetl.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:ysvy6avhkqu5xd2a2uu6vt7s",
+      "published": null,
+      "wm-received": "2026-05-09T20:29:53Z",
+      "wm-id": 1995274,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Aysvy6avhkqu5xd2a2uu6vt7s",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": "https://bsky.app/profile/jarretoshea.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:qzpojkwfeuqank2k55e6lasz",
+      "published": null,
+      "wm-received": "2026-05-09T16:59:45Z",
+      "wm-id": 1995221,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Aqzpojkwfeuqank2k55e6lasz",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kevin Powell",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xbj7qbl7qmoo7dpf5dheplex/bafkreidvcnutqrcf27jf53ft2uhjunj62hx5nx35o5cemqfc2qirktoksa",
+        "url": "https://bsky.app/profile/kevinpowell.co"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:xbj7qbl7qmoo7dpf5dheplex",
+      "published": null,
+      "wm-received": "2026-05-09T16:03:33Z",
+      "wm-id": 1995198,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Axbj7qbl7qmoo7dpf5dheplex",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tyler Sticka",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a3e8f10c9190a71c8b5813cb592445962f91252468058abbac98ecff88025553.png",
+        "url": "https://social.lol/@tylersticka"
+      },
+      "url": "https://front-end.social/@rem/116539717407655525#favorited-by-110651353810564612",
+      "published": null,
+      "wm-received": "2026-05-09T14:11:50Z",
+      "wm-id": 1995180,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116539717407655525/110651353810564612",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "AT",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/5b8274f39f984c64451089420fd817cffcc526f65751db4319d5a142c6eef20f.jpg",
+        "url": "https://mathstodon.xyz/@at"
+      },
+      "url": "https://front-end.social/@rem/116539717407655525#favorited-by-109524736250410380",
+      "published": null,
+      "wm-received": "2026-05-09T11:34:33Z",
+      "wm-id": 1995140,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116539717407655525/109524736250410380",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "DamonHD",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/eb7356a2cb29dd0154a8de170db92dce878f47557b534f91d352f3023fdaf4d8.jpg",
+        "url": "https://mastodon.social/@DamonHD"
+      },
+      "url": "https://front-end.social/@rem/116539717407655525#favorited-by-109353377216112252",
+      "published": null,
+      "wm-received": "2026-05-09T10:59:55Z",
+      "wm-id": 1995135,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116539717407655525/109353377216112252",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Baldur Bjarnason",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/cc8554ba583793b416ccbb17bc1d574b8c60c5e53c11aabef6c9a8f806a5d4e2.jpg",
+        "url": "https://toot.cafe/@baldur"
+      },
+      "url": "https://front-end.social/@rem/116539717407655525#favorited-by-109292253091046345",
+      "published": null,
+      "wm-received": "2026-05-09T10:59:55Z",
+      "wm-id": 1995136,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116539717407655525/109292253091046345",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Liam ????",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:miu2ibvpnguh6cqubcfw4oha/bafkreid22uuu3iqhb45srytl4w6nana6nofpzmrbevqxws5vlxthbwyj4u",
+        "url": "https://bsky.app/profile/liam.nwmr.ch"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:miu2ibvpnguh6cqubcfw4oha",
+      "published": null,
+      "wm-received": "2026-05-09T08:19:24Z",
+      "wm-id": 1995127,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Amiu2ibvpnguh6cqubcfw4oha",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Paolo Giraudi",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:had2xerzxuoy3o7biaylcpfw/bafkreierf3unqtydvmcc4pgwg5bac5r5xc7pizujjtf7fuxl2squrgesxq",
+        "url": "https://bsky.app/profile/paologiraudi.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:had2xerzxuoy3o7biaylcpfw",
+      "published": null,
+      "wm-received": "2026-05-09T07:46:08Z",
+      "wm-id": 1995125,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Ahad2xerzxuoy3o7biaylcpfw",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "konsonantenboy",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/0780eca143465baa5c00c55837b626bd73bb80a90ba990fe4a37469508534c5c.jpg",
+        "url": "https://hachyderm.io/@konsonantenboy"
+      },
+      "url": "https://front-end.social/@rem/116539717407655525#favorited-by-114403771177657355",
+      "published": null,
+      "wm-received": "2026-05-09T06:31:34Z",
+      "wm-id": 1995120,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116539717407655525/114403771177657355",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Christian \"Schepp\" Schaefer",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/76c6b82b9a5e59dfb895c25041f33298bf11f65afd8f8e18e4524a2e80527b82.jpg",
+        "url": "https://mastodon.social/@Schepp"
+      },
+      "url": "https://front-end.social/@rem/116539717407655525#favorited-by-109288510030258685",
+      "published": null,
+      "wm-received": "2026-05-09T06:31:34Z",
+      "wm-id": 1995121,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116539717407655525/109288510030258685",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Alex Russell",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/fddb2c0b0aa0db3f0b5fd8569cee7ae65d76aa83391dde86ddcb018a077d91ed.png",
+        "url": "https://toot.cafe/@slightlyoff"
+      },
+      "url": "https://front-end.social/@rem/116539717407655525#favorited-by-109288485091309086",
+      "published": null,
+      "wm-received": "2026-05-08T21:47:28Z",
+      "wm-id": 1995090,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116539717407655525/109288485091309086",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hidde",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:o4xpdlp52ele5fps2dtldgoy/bafkreie4a3xsdnc3avxvrohwhlc7zju43vwanv66zgjjcxgsghbpzqkaia",
+        "url": "https://bsky.app/profile/hidde.blog"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:o4xpdlp52ele5fps2dtldgoy",
+      "published": null,
+      "wm-received": "2026-05-08T21:23:49Z",
+      "wm-id": 1995086,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Ao4xpdlp52ele5fps2dtldgoy",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pablo Lara H.",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:hb64sgx6mf55gwgyrdfaivsh/bafkreid35mpjp62lmebevizeolb527vxcbb7crozwewdfftoju6goouxlm",
+        "url": "https://bsky.app/profile/pablolarah.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:hb64sgx6mf55gwgyrdfaivsh",
+      "published": null,
+      "wm-received": "2026-05-08T21:23:49Z",
+      "wm-id": 1995087,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Ahb64sgx6mf55gwgyrdfaivsh",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:y4jhcy6vda424i37mf36mflq/bafkreihfiuh767yp2dk5l7jbmhky6n3phzy4ybcetowjy7dc5nyxkl2xui",
+        "url": "https://bsky.app/profile/bdadam.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:y4jhcy6vda424i37mf36mflq",
+      "published": null,
+      "wm-received": "2026-05-08T20:58:20Z",
+      "wm-id": 1995083,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Ay4jhcy6vda424i37mf36mflq",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }
