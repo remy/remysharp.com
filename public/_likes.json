@@ -62112,6 +62112,25 @@
       "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jesse Sutherland",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:yexcapfkucnqipkpedpx2lyi/bafkreiea7bqw5lasszeewa45tq6swutgfpymnfb7hgm7kkzi65jkvdnndu",
+        "url": "https://bsky.app/profile/jsutherland.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mle2zp6llk2i#liked_by_did:plc:yexcapfkucnqipkpedpx2lyi",
+      "published": null,
+      "wm-received": "2026-05-13T04:09:45Z",
+      "wm-id": 1996009,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mle2zp6llk2i/did%253Aplc%253Ayexcapfkucnqipkpedpx2lyi",
+      "wm-target": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/05/08/popover-backdrop-anti-pattern",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }
