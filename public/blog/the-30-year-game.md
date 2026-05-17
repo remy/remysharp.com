@@ -1,9 +1,8 @@
 ---
 title: The 30 year game
-draft: true
 tags:
   - personal
-date: 2026-04-24
+date: 2026-05-17
 ---
 
 # The 30 year game
@@ -18,7 +17,11 @@ The development this iteration of the game, the one in 2026, took me about a wee
 
 I get it, this is a stupidly long blog post. There's no real value buried inside of it, it's pretty much entirely a story of how technology has progressed over 30 years (not really a spoiler) and my journey to evolve a game that I found in 1996.
 
-If you scroll to the end, there's a link to the game download page.
+The latest edition of this game was coded entirely by Claude Code with one strict rule: keep inside of the 32K boundary limit. There was a huge saving that Claude never suggested (1bpp font tiles instead of 2bpp) which bought me 3K - which was enough to add a full tutorial in the game along with additional small features.
+
+I also tried to vibe code another game using the same process only to fail - the key take away for me was that my experience and knowledge was still the guiding light. With the other game, it failed because my knowledge was shallow, so the output was shallow. Sort of obvious on paper, but a useful exercise for me.
+
+Oh, and if you scroll to the end, there's a link to the game download page.
 
 ## 1996
 
@@ -133,6 +136,10 @@ The LLM (Claude Code in my case) was also vital to really quickly turning around
 I was also able to take an existing rust implementation of a Game Boy emulator and layered on an MCP server so that that Claude Code could test, screenshot and probe the memory of the game to see if it was doing what I needed to do.
 
 But the whole process was me just talking back and forth to Claude code in particular to get this game built and the vast majority of it took about a week.
+
+After a couple of rounds of testing, I did notice that the couple of people who tried the game didn't _quite_ know what the goal was. A "how to play" section was needed in the game, but given the constraints of 32K, lumping in a load of text copy wasn't going to work.
+
+One of the biggest wins I had in optimising the codebase was _not_ from Claude. I could see all the text tiles (the tiles that make up the font) were two colours. Whereas a Game Boy tile stores 4 bits of colour in a "pixel", I could see I was wasting a lot of space. GBDK even includes a native function `set_bkg_1bpp_data` that will make use of 1bpp tile data. From this single change (I had to update my tools to generate 1bpp) I was able to unlock over 3K. This space was then used for the tutorial and a number of other small changes (including increasing the pool of "easy game seeds").
 
 ---
 
