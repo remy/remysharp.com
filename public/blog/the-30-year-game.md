@@ -8,7 +8,7 @@ image: /images/remy-2026-gameboy.jpg
 
 # The 30 year game
 
-In the coming days I'm going to release my Game Boy game called Marbles² (or Marbles Squared). It's a port of a game that I originally wrote back in 2002, but is a game that started in my life in (or around) 1996.
+Today I'm releasing my Game Boy game called Marbles² (or Marbles Squared). It's a port of a game that I originally wrote back in 2002, but is a game that started in my life in (or around) 1996.
 
 The development this iteration of the game, the one in 2026, took me about a week and I haven't written a single line of code. Here's how things have changed.
 
