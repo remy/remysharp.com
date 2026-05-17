@@ -3,6 +3,7 @@ title: The 30 year game
 tags:
   - personal
 date: 2026-05-17
+image: /images/remy-2026-gameboy.jpg
 ---
 
 # The 30 year game
