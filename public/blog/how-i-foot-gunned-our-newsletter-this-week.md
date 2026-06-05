@@ -49,3 +49,7 @@ The temporary fix was to add this to the `_dmarc.leftlogic.com` as a TXT:
 I do need to sort out proper SPF records and DKIM and "Easy DMARC" (whatever that is), but next time around I might be a little more careful with what I copy and paste…
 
 (though, who am I kidding!)
+
+*[DMARC]: Domain-based Message Authentication
+*[DKIM]: DomainKeys Identified Mail
+*[SPF]: Sender Policy Framework
