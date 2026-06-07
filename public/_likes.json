@@ -62590,5 +62590,64 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "how-i-foot-gunned-our-newsletter-this-week": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/116702925012722143#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2026-06-07T06:35:05Z",
+      "wm-id": 2001023,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116702925012722143/109302579306985968",
+      "wm-target": "https://remysharp.com/2026/06/05/how-i-foot-gunned-our-newsletter-this-week",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/05/how-i-foot-gunned-our-newsletter-this-week",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ian Sutherland ????????",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8ad2e4bef4901e0ebaad527a886cdfa6a22d38cf1b616350dc781dc5a42d1aa7.jpg",
+        "url": "https://cosocial.ca/@iansu"
+      },
+      "url": "https://front-end.social/@rem/116702925012722143#favorited-by-110562822173713112",
+      "published": null,
+      "wm-received": "2026-06-07T06:35:02Z",
+      "wm-id": 2001022,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116702925012722143/110562822173713112",
+      "wm-target": "https://remysharp.com/2026/06/05/how-i-foot-gunned-our-newsletter-this-week",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/05/how-i-foot-gunned-our-newsletter-this-week",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Paul Kinlan",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:pyiweakbkw2vqgku25f5fy5u/bafkreifdceqlfywovupwesbid2icq3xrdnntulv7gmzajivdu44dhqhkqi",
+        "url": "https://bsky.app/profile/paul.kinlan.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mnmkdz4sz22k#liked_by_did:plc:pyiweakbkw2vqgku25f5fy5u",
+      "published": null,
+      "wm-received": "2026-06-07T01:21:23Z",
+      "wm-id": 2001005,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mnmkdz4sz22k/did%253Aplc%253Apyiweakbkw2vqgku25f5fy5u",
+      "wm-target": "https://remysharp.com/2026/06/05/how-i-foot-gunned-our-newsletter-this-week",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/05/how-i-foot-gunned-our-newsletter-this-week",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

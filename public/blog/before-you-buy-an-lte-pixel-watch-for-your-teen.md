@@ -10,7 +10,7 @@ tags:
 
 The boy is 14 and regularly does long outdoor runs. He tracks his run with Strava by carrying his phone with him. But carrying a phone (because they're bulky) is a pain. He also plans to swim in the sea during summer and we've all said we don't want him having a mobile just left on the beach until he comes back in.
 
-Mum also runs and she's been caught in the past a few miles away without a phone, injured and asking a stranger to use their phone to call me for help (she was okay after some recovery).
+Mum (his, not mine) also runs and she's been caught in the past a few miles away without a phone, injured and asking a stranger to use their phone to call me for help (she was okay after some recovery).
 
 So the agreement was that we'd try to find a smart watch that also has call and text facility (ie. LTE).
 
@@ -40,3 +40,4 @@ Setting the Google account to under 13 so FitBit to work does allow him to regis
 
 Google's Family Link - which we use to manage app access and set limits, doesn't give you _any_ control over a watch. There's no downtime, there's no app limits, nothing. You can see what they've used, but either it's carrying the same limits from the phone, or it's just not possible to change from _unlimited_.
 
+*[LTE]: mobile data
