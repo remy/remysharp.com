@@ -62649,5 +62649,83 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "2026-06-10-f4446f0b": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rik Schennink",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:vf7tv7uq23avbpzkjswlv273/bafkreibge5qwgjyraqbzudhxnjchx2ie3uxysxmubn5urzhykv3hhlvtyq",
+        "url": "https://bsky.app/profile/rikschennink.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mnxrjpdp3c22#liked_by_did:plc:vf7tv7uq23avbpzkjswlv273",
+      "published": null,
+      "wm-received": "2026-06-11T05:43:41Z",
+      "wm-id": 2001803,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mnxrjpdp3c22/did%253Aplc%253Avf7tv7uq23avbpzkjswlv273",
+      "wm-target": "https://remysharp.com/links/2026-06-10-f4446f0b",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-06-10-f4446f0b",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas A. Powell",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:e72loq3wd3ia67vwvb7asz4v/bafkreiglkrne5wzzstesqpat46t6ojrlrjk6hmydbvjg27rzx4se63mt24",
+        "url": "https://bsky.app/profile/tpowell.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mnxrjpdp3c22#liked_by_did:plc:e72loq3wd3ia67vwvb7asz4v",
+      "published": null,
+      "wm-received": "2026-06-10T23:48:10Z",
+      "wm-id": 2001750,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mnxrjpdp3c22/did%253Aplc%253Ae72loq3wd3ia67vwvb7asz4v",
+      "wm-target": "https://remysharp.com/links/2026-06-10-f4446f0b",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-06-10-f4446f0b",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Leatherman",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xpchjovbk6sxl3bv74z7cs54/bafkreie4yypxcxrte6shppdo6glzt7gtmueprazp3xndeksuw2uid2ecfm",
+        "url": "https://bsky.app/profile/zachleat.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mnxrjpdp3c22#liked_by_did:plc:xpchjovbk6sxl3bv74z7cs54",
+      "published": null,
+      "wm-received": "2026-06-10T23:11:52Z",
+      "wm-id": 2001735,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mnxrjpdp3c22/did%253Aplc%253Axpchjovbk6sxl3bv74z7cs54",
+      "wm-target": "https://remysharp.com/links/2026-06-10-f4446f0b",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-06-10-f4446f0b",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:bkkgbu4efkf3l6rdvv6prbwp/bafkreid66d5iugmhfktv6ikswt3ejgw5rel4ybcb4z2eddunvxr7guxq3q",
+        "url": "https://bsky.app/profile/legnonpi.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mnxrjpdp3c22#liked_by_did:plc:bkkgbu4efkf3l6rdvv6prbwp",
+      "published": null,
+      "wm-received": "2026-06-10T23:11:49Z",
+      "wm-id": 2001734,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mnxrjpdp3c22/did%253Aplc%253Abkkgbu4efkf3l6rdvv6prbwp",
+      "wm-target": "https://remysharp.com/links/2026-06-10-f4446f0b",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-06-10-f4446f0b",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
