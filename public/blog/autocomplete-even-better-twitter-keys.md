@@ -23,7 +23,7 @@ There's two versions:
 1. Twitter Keys
 2. Autocomplete for any site
 
-<object width="400" height="300">	<param name="allowfullscreen" value="true" />	<param name="allowscriptaccess" value="always" />	<param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=1787506&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" />	<embed src="http://vimeo.com/moogaloop.swf?clip_id=1787506&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object><br /><a href="http://vimeo.com/1787506?pg=embed&amp;sec=1787506">Twitter Keys via Greasemonkey</a> from <a href="http://vimeo.com/user449465?pg=embed&amp;sec=1787506">Remy Sharp</a> on <a href="http://vimeo.com?pg=embed&amp;sec=1787506">Vimeo</a>.
+<div style="padding:53.85% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1787506?h=049fb9e7a2&amp;title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Twitter Keys via Greasemonkey"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 
 For now you'll have to use [Greasemonkey](https://addons.mozilla.org/firefox/addon/748) to install (rather than a straight plugin), and if you want to add more shortcuts, you'll have to edit the script by hand - though I hope to create an interface soon.
 

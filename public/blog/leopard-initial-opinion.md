@@ -44,18 +44,7 @@ With all the initial chatter about resolution independence, it doesn't look like
 
 There's an odd effect when opening a stack and then moving over it.  I kind of expected the current stack to stay in focus in the Dock.  I've included a quick vid of what I mean (I'm being picky).
 
-<object width="400" height="300" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-  <param name="src" value="/images/stacks.mov" />
-  <param name="controller" value="true" />
-  <param name="autoplay" value="false" />
-  <embed src="/images/stacks.mov"
-    width="400" height="300"
-    controller="true" autoplay="false"
-    scale="tofit" cache="true"
-    pluginspage="http://www.apple.com/quicktime/download/"
-   />
-</object>
-
+<video name="src" value="/images/stacks.mov"></video>
 
 ### Mail's RSS reader
 
@@ -83,17 +72,7 @@ Quickview is really smart and very fast considering it's opening up all kinds of
 
 I think this is the most unexpected feature that I'm using.
 
-<object width="541" height="338" classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-  <param name="src" value="/images/coverflow.mov" />
-  <param name="controller" value="true" />
-  <param name="autoplay" value="false" />
-  <embed src="/images/coverflow.mov"
-    width="541" height="338"
-    controller="true" autoplay="false"
-    scale="tofit" cache="true"
-    pluginspage="http://www.apple.com/quicktime/download/"
-   />
-</object>
+<video name="src" value="/images/coverflow.mov"></video>
 
 ### Network mounting & unmounting
 

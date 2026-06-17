@@ -2003,7 +2003,7 @@ h2 > label {
     }
 
     p + p {
-      margin-top: 8px;
+      margin-top: 16px;
     }
   }
 
@@ -2019,6 +2019,9 @@ h2 > label {
   div.link {
     margin-bottom: 24px;
     margin-left: 20px;
+    &:not(:first-of-type) {
+      margin-top: 40px;
+    }
   }
 
   .link:before {

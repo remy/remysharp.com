@@ -62727,5 +62727,45 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "2026-06-15-e715aced": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michelle Barker",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/7430075ff637e892dcde4c2b240222eff41209111509d14b8f3fffc26ac3909c.jpg",
+        "url": "https://front-end.social/@michelle"
+      },
+      "url": "https://front-end.social/@rem/116753392268475697#favorited-by-109370481765285711",
+      "published": null,
+      "wm-received": "2026-06-15T09:38:33Z",
+      "wm-id": 2002758,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116753392268475697/109370481765285711",
+      "wm-target": "https://remysharp.com/links/2026-06-15-e715aced",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-06-15-e715aced",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jon",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/2cc7bdd2b3f1c8e5972702d0f5f50893277fdd3467749a546c445c66af90c779.png",
+        "url": "https://mastodon.social/@scrwd"
+      },
+      "url": "https://front-end.social/@rem/116753392268475697#favorited-by-109288830979951165",
+      "published": null,
+      "wm-received": "2026-06-15T09:38:32Z",
+      "wm-id": 2002757,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116753392268475697/109288830979951165",
+      "wm-target": "https://remysharp.com/links/2026-06-15-e715aced",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-06-15-e715aced",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

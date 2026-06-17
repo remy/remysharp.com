@@ -21,14 +21,7 @@ The slides were updated for SkillSwap, and then also for the ThoughtWorks talk I
 
 [PDF download](/downloads/dom-toolkit-jquery.pdf)
 
-<div style="width:425px;text-align:left" id="__ss_310357">
-  <object style="margin:0px" width="425" height="355">
-    <param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=dom-scripting-toolkit-jquery-1205765318674445-2"/>
-    <param name="allowFullScreen" value="true" />
-    <param name="allowScriptAccess" value="always" />
-    <embed src="http://static.slideshare.net/swf/ssplayer2.swf?doc=dom-scripting-toolkit-jquery-1205765318674445-2" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed>
-  </object>
-</div>
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/57rWWLqCUiIJL" width="510" height="420"frameborder="0" marginwidth="0" marginheight="0" scrolling="no"style="border: var(--border-1) solid #CCC; border-width:1px; margin-bottom:5px; max-width:100%;"allowfullscreen></iframe><div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/slideshow/dom-scripting-toolkit-jquery/310357" title="dom-scripting-toolkit-jquery" target="_blank">dom-scripting-toolkit-jquery</a></strong>from <strong><a href="https://www.slideshare.net/remy.sharp" target="_blank">Remy Sharp</a></strong></div>
 
 ## Screencasts
 

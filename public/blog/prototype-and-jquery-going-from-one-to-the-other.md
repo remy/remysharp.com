@@ -22,7 +22,7 @@ Below you can find the presentation I put together that goes through the core of
 
 ## [Prototype & jQuery](http://www.slideshare.net/remy.sharp/prototype-jquery-going-from-one-to-the-other)
 
-<object style="margin:0px" width="425" height="355"><param name="movie" value="http://s3.amazonaws.com/slideshare/ssplayer2.swf?doc=prototype-jquery-going-from-one-to-the-other-1193346036472971-5"/><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://s3.amazonaws.com/slideshare/ssplayer2.swf?doc=prototype-jquery-going-from-one-to-the-other-1193346036472971-5" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed></object>
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/H7vJga0G93qIUR" width="510" height="420"frameborder="0" marginwidth="0" marginheight="0" scrolling="no"style="border: var(--border-1) solid #CCC; border-width:1px; margin-bottom:5px; max-width:100%;"allowfullscreen></iframe><div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/slideshow/prototype-jquery-going-from-one-to-the-other/145849" title="prototype-jquery-going-from-one-to-the-other" target="_blank">prototype-jquery-going-from-one-to-the-other</a></strong>from <strong><a href="https://www.slideshare.net/remy.sharp" target="_blank">Remy Sharp</a></strong></div>
 
 You can also download the [Prototype &amp; jQuery slides](http://www.slideshare.net/remy.sharp/prototype-jquery-going-from-one-to-the-other/download) ([mirror](/images/prototype-and-jquery.pdf))
 

@@ -33,9 +33,10 @@ block meta
 
 block content
   - permalink = url;
+  if !data.title
+    - console.log('🚨 No title for ' + current.source);
   - safeTitle = data.title.replace(/'/g, '\\\'')
   - ad = ad ?? 'cli-book'
-  //- - ad = 'ffconf'
 
   include ../_partials/post-nav
 
@@ -57,7 +58,7 @@ block content
           if (!nosubscribe && tags.indexOf('personal') === -1)
             if (!ad)
               - ad = ''
-            if ad
+            if (ad && collections.withAds.includes(current.source))
               != partial('/_partials/ads/' + ad)
           != res[1]
         else

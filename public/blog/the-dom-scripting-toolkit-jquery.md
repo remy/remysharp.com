@@ -21,14 +21,7 @@ If you're reading this blog post, and you did happen to see my presentation, I w
 
 For those just interested in the talk, here are the slides:
 
-<div style="width:425px;text-align:left" id="__ss_310357">
-  <object style="margin:0px" width="425" height="355">
-    <param name="movie" value="http://static.slideshare.net/swf/ssplayer2.swf?doc=dom-scripting-toolkit-jquery-1205765318674445-2"/>
-    <param name="allowFullScreen" value="true" />
-    <param name="allowScriptAccess" value="always" />
-    <embed src="http://static.slideshare.net/swf/ssplayer2.swf?doc=dom-scripting-toolkit-jquery-1205765318674445-2" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></embed>
-  </object>
-</div>
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/57rWWLqCUiIJL" width="510" height="420"frameborder="0" marginwidth="0" marginheight="0" scrolling="no"style="border: var(--border-1) solid #CCC; border-width:1px; margin-bottom:5px; max-width:100%;"allowfullscreen></iframe><div style="margin-bottom:5px"><strong><a href="https://www.slideshare.net/slideshow/dom-scripting-toolkit-jquery/310357" title="dom-scripting-toolkit-jquery" target="_blank">dom-scripting-toolkit-jquery</a></strong>from <strong><a href="https://www.slideshare.net/remy.sharp" target="_blank">Remy Sharp</a></strong></div>
 
 ## Diary of my Experience
 
@@ -64,9 +57,9 @@ In my usual fashion I got lost on the way - pretty tricky given that I even *kne
 
 I wanted to see some of the presentations for that day, but I was up late making changes, and I knew I wouldn't be able to get there early.
 
-I made multiple copies of the presentation and printed it out, and charged the hell out of the laptop.  
+I made multiple copies of the presentation and printed it out, and charged the hell out of the laptop.
 
-I *did* forget a VGA to DVI converter - but thankfully [Joe Walker](http://getahead.org/blog/joe/) (who had stepped in to host the track and [spoke earlier](http://getahead.org/blog/joe/2008/03/05/infoq_interview.html) on [DWR](http://getahead.org/dwr)) lent me one for my laptop.  
+I *did* forget a VGA to DVI converter - but thankfully [Joe Walker](http://getahead.org/blog/joe/) (who had stepped in to host the track and [spoke earlier](http://getahead.org/blog/joe/2008/03/05/infoq_interview.html) on [DWR](http://getahead.org/dwr)) lent me one for my laptop.
 
 Joe introduced me and I went on, a couple of minutes past 14:30.
 
@@ -78,7 +71,7 @@ Once the slides were done, a few questions were asked and the whole talk ended e
 
 In the quintessentially British way, I immediately started putting myself down after the talk.  Although now in retrospect I don't think it was anything groundbreaking, I don't think it was terrible.
 
-Getting home however, I felt depressed and that perhaps the content was too simple for the audience (which I still feel it may have been a bit). 
+Getting home however, I felt depressed and that perhaps the content was too simple for the audience (which I still feel it may have been a bit).
 
 I've written to one of the chaps who organised our track and asked for any feedback that was available.
 
@@ -94,6 +87,6 @@ It's the <code>.queue('fx', [])</code> that will empty out any animations waitin
 
 ### Wrap Up
 
-I did enjoy it in retrospect, and I'm always keen to teach others if I can (pretty much why this blog and [jqueryfordesigners.com](http://jqueryfordesigners.com)) exist.  
+I did enjoy it in retrospect, and I'm always keen to teach others if I can (pretty much why this blog and [jqueryfordesigners.com](http://jqueryfordesigners.com)) exist.
 
 I'll definitely be taking future opportunities that come my way.
