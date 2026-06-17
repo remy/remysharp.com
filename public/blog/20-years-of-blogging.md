@@ -8,7 +8,7 @@ tags:
 
 Today is the anniversary of the [first blog post](/2006/06/17/auto-selecting-navigation) on this website from two decades ago. It was about client side JavaScript to automatically (albeit blindly) select the "active" navigation. Ironically, I'd probably do this on the server side these days.
 
-Admittedly, it's imported from my prior blog and the first time I posted on on this domain was in September, but the post in June counts! But then, my domain was registered a full year before on 13 June 2025 (which neither myself, nor the Internet Archive can remember what was on it!).
+Admittedly, it's imported from my prior blog and the first time I posted on on this domain was in September, but the post in June counts! But then, my domain was registered a full year before on 13 June 2005 (which neither myself, nor the Internet Archive can remember what was on it!).
 
 <!-- more -->
 
