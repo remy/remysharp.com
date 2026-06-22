@@ -1,7 +1,6 @@
 ---
 title: 'FFConf 2026 is live: Things I Learnt'
-date: '2026-06-19'
-draft: true
+date: '2026-06-22'
 image: /images/2026-mood-board.jpg
 tags:
   - code
