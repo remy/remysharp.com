@@ -18,7 +18,8 @@ _Side note: because I got this post through my reader, I didn't happen to clock 
 Here's the original author's code:
 
 ```js
-const signal = F=>(f,G=F)=>F=f?_=>f(G?.()):F?.(); // 33 bytes
+// 33 bytes
+const signal = F=>(f,G=F)=>F=f?_=>f(G?.()):F?.();
 ```
 
 The crux is that it creates a wrapped stack of callbacks. Effectively recursion through locally defined (and overwritten) variables (`G` in this case).
@@ -37,30 +38,33 @@ From there, I "simplified" everything as far as I could so that that all the nea
 
 ```js
 /**
- * The function stores local variables that are overwritten
- * with a call stack of passed in functions. When the argument
- * is falsy, then the stack is unwound.
+ * The function stores local variables that are
+ * overwritten * with a call stack of passed in
+ * functions. When the argument is falsy, then
+ * the stack is unwound.
  *
  * Call stack looks like: four(three(two(one())))
  */
 function signal(/*F*/ callbackStack) {
   return (/*f*/ callback) => {
-    // Each new time the signal singleton is called, it creates
-    // a new copy of the `callbackStack`, originally as an
-    // argument which saves on the `const` part.
+    // Each new time the signal singleton is called, it
+    // creates a new copy of the `callbackStack`,
+    // originally as an argument which saves on the
+    // `const` part.
 
     const localCopy = callbackStack; /*G=F*/
 
-    // if we're passed a callback, then redefine `callbackStack`
-    // with where the local copy is called first, then we run the
-    // callback. Calling this singleton multiple times creates
+    // if we're passed a callback, then redefine
+    // `callbackStack` with where the local copy is
+    // called first, then we run the callback.
+    // Calling this singleton multiple times creates
     // a stack of functions like:
     //
     // four(three(two(one())))
     //
-    // there's also the initial protection with `?.()` to allow
-    // for `callbackStack` to be `undefined`. In the example
-    // below, I've just unrolled the code.
+    // there's also the initial protection with `?.()`
+    // to allow for `callbackStack` to be `undefined`.
+    // In the example below, I've just unrolled the code.
     if (callback) { /*F=f?*/
 
       /*f(G?.())*/
@@ -72,18 +76,19 @@ function signal(/*F*/ callbackStack) {
       }
 
     } else {
-      // otherwise, when called without any arguments, and the
-      // `callbackStack` is executed and overwritten at the same
-      // time.
+      // otherwise, when called without any arguments,
+      // and the `callbackStack` is executed and
+      // overwritten at the same time.
 
       if (callbackStack) {
         callbackStack = callbackStack(); /*F?.()*/
       }
     }
 
-    // the original code returns the `callbackStack` through the
-    // implicit return, but it's not actually used for anything,
-    // it's just a side effect of compressing the code.
+    // the original code returns the `callbackStack`
+    // through the implicit return, but it's not actually
+    // used for anything, it's just a side effect of
+    // compressing the code.
   }
 }
 ```
