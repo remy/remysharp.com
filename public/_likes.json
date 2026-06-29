@@ -63347,5 +63347,64 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "decompressing-33-signal-bytes": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steve Woodson, CPACC",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:wznkfwp7jakqhtw4u7knvvrp/bafkreibewl5t6kixh4mfjf65b3baskuijxpbg4emc2ldf5cygnupnl3ode",
+        "url": "https://bsky.app/profile/stevenwoodson.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mpgbskn2rc23#liked_by_did:plc:wznkfwp7jakqhtw4u7knvvrp",
+      "published": null,
+      "wm-received": "2026-06-29T13:02:59Z",
+      "wm-id": 2005469,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mpgbskn2rc23/did%253Aplc%253Awznkfwp7jakqhtw4u7knvvrp",
+      "wm-target": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mister Wanko",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8ce270f9be5f5430eb6e1a9e3c34b584ce0c316fc791922e449cca2f940700e8.png",
+        "url": "https://mastodon.social/@MisterWanko"
+      },
+      "url": "https://front-end.social/@rem/116832928165622069#favorited-by-109337827362804237",
+      "published": null,
+      "wm-received": "2026-06-29T10:52:47Z",
+      "wm-id": 2005439,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116832928165622069/109337827362804237",
+      "wm-target": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Duffeh",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:spulgjrl7sactd23bgqv6jen/bafkreihf42m7kegjr2iu7zucmfcby4dqblokuc7ii3nomjtfv7tod5m6la",
+        "url": "https://bsky.app/profile/duffeh.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mpgbskn2rc23#liked_by_did:plc:spulgjrl7sactd23bgqv6jen",
+      "published": null,
+      "wm-received": "2026-06-29T10:37:26Z",
+      "wm-id": 2005436,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mpgbskn2rc23/did%253Aplc%253Aspulgjrl7sactd23bgqv6jen",
+      "wm-target": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
