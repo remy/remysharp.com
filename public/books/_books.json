@@ -1,5 +1,22 @@
 [
   {
+    "title": "Platform Decay (The Murderbot Diaries, #8)",
+    "seriesEntry": "Platform Decay",
+    "seriesNumber": "8",
+    "series": "The Murderbot Diaries",
+    "author": "Martha Wells",
+    "published": 2026,
+    "pages": 244,
+    "goodreads": "https://www.goodreads.com/book/show/240019874-platform-decay",
+    "goodreads_id": 240019874,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1758044201l/240019874._SX315_.jpg",
+    "read": "2026-06-26T00:00:00.000Z",
+    "start": "2026-05-15T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2026/platform-decay.md",
+    "slug": "platform-decay"
+  },
+  {
     "title": "When the Cranes Fly South",
     "author": "Lisa Ridzén",
     "published": 2024,

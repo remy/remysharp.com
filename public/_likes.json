@@ -63018,5 +63018,334 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "delicious-like-text-grow-jquery-plugin-2": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jake Archibald",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:l4m7ynxc47wzkgvlyyunx5n2/bafkreifbsxz4stfnpq6i5smnbhzoc65vpp6jdnj6qtcwqfxtvjcaog5s6y",
+        "url": "https://bsky.app/profile/jakearchibald.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mp5idsidsk23#liked_by_did:plc:l4m7ynxc47wzkgvlyyunx5n2",
+      "published": null,
+      "wm-received": "2026-06-26T21:11:49Z",
+      "wm-id": 2004999,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mp5idsidsk23/did%253Aplc%253Al4m7ynxc47wzkgvlyyunx5n2",
+      "wm-target": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hazel Weakly",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xfjf7fkhv6rwsx5e6p2ar37o/bafkreic5a7kinguy6iprcyivwrpwpyvwhnxppo4qs2drhi7vnyoqgd3f44",
+        "url": "https://bsky.app/profile/hazelweakly.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mp5idsidsk23#liked_by_did:plc:xfjf7fkhv6rwsx5e6p2ar37o",
+      "published": null,
+      "wm-received": "2026-06-26T16:30:52Z",
+      "wm-id": 2004955,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mp5idsidsk23/did%253Aplc%253Axfjf7fkhv6rwsx5e6p2ar37o",
+      "wm-target": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Maikel Krause",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:4ut7ydra7j46r5waxq5gx7gj/bafkreifqve2vhezovvczrmypvvkiiezcue7npjxpvhpuksq7pnq6k6wjba",
+        "url": "https://bsky.app/profile/maikelkrause.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mp5idsidsk23#liked_by_did:plc:4ut7ydra7j46r5waxq5gx7gj",
+      "published": null,
+      "wm-received": "2026-06-26T14:41:49Z",
+      "wm-id": 2004921,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mp5idsidsk23/did%253Aplc%253A4ut7ydra7j46r5waxq5gx7gj",
+      "wm-target": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Patrick Brosset",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:vcrxgrk7qttaunjut34oe5oq/bafkreicsgx4oaqbtatg44m557fqinh4zp2e4evaxpqm6rjg65o4vsawrnq",
+        "url": "https://bsky.app/profile/patrickbrosset.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mp5idsidsk23#liked_by_did:plc:vcrxgrk7qttaunjut34oe5oq",
+      "published": null,
+      "wm-received": "2026-06-26T06:04:57Z",
+      "wm-id": 2004850,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mp5idsidsk23/did%253Aplc%253Avcrxgrk7qttaunjut34oe5oq",
+      "wm-target": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Holger Hellinger",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/f5a7a1c27f4fdc3f49f4790d4c6f374b71ef69eace4ecb514d7f83a08daec6c4.png",
+        "url": "https://hellinger.wtf/@holger"
+      },
+      "url": "https://front-end.social/@rem/116813628468785989#favorited-by-111686747304740473",
+      "published": null,
+      "wm-received": "2026-06-26T00:54:04Z",
+      "wm-id": 2004827,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116813628468785989/111686747304740473",
+      "wm-target": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Phil Wolstenholme",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:iu3u7hdwhcwwesftlwyi5ldb/bafkreihvu4ji5txwz5qp7f4iioyb44kbqqdjtxicfbpvh7xz25zmnj2xlm",
+        "url": "https://bsky.app/profile/wolstenhol.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mp5idsidsk23#liked_by_did:plc:iu3u7hdwhcwwesftlwyi5ldb",
+      "published": null,
+      "wm-received": "2026-06-25T23:03:01Z",
+      "wm-id": 2004814,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mp5idsidsk23/did%253Aplc%253Aiu3u7hdwhcwwesftlwyi5ldb",
+      "wm-target": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "ffconf-2026-is-live-things-i-learnt": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kolombiken",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a19413415c6d2496fd97547b2f0b5b0970c2431e0edc820176a26b39f120d52b.jpg",
+        "url": "https://front-end.social/@kolombiken"
+      },
+      "url": "https://front-end.social/@rem/116794387068717903#favorited-by-113254859888289164",
+      "published": null,
+      "wm-received": "2026-06-23T21:02:56Z",
+      "wm-id": 2004446,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116794387068717903/113254859888289164",
+      "wm-target": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ana Rodrigues",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:ywso5zb7zpnxtyk5hpqetiwh/bafkreic6iq43lvjo356s2eetcptnjmy7ux6a43tuf3laihhaiwhbrbmwtq",
+        "url": "https://bsky.app/profile/ohhelloana.blog"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mov5pfkz3227#liked_by_did:plc:ywso5zb7zpnxtyk5hpqetiwh",
+      "published": null,
+      "wm-received": "2026-06-23T10:04:44Z",
+      "wm-id": 2004313,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mov5pfkz3227/did%253Aplc%253Aywso5zb7zpnxtyk5hpqetiwh",
+      "wm-target": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Manuel Matuzović",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:77nhxdei7vwjw5qdipxazguw/bafkreid2ax6jks64wx74job62ndwoa6paorfaz2j4hriyiy65qqlljaghq",
+        "url": "https://bsky.app/profile/matuzo.at"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mov5pfkz3227#liked_by_did:plc:77nhxdei7vwjw5qdipxazguw",
+      "published": null,
+      "wm-received": "2026-06-22T22:35:32Z",
+      "wm-id": 2004230,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mov5pfkz3227/did%253Aplc%253A77nhxdei7vwjw5qdipxazguw",
+      "wm-target": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mark Robbins",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:kheptiglgv237xgikvch5tvj/bafkreigat4kiazyihgzpzyaeudmkjnsgbfzbhldnv2keeayvz4v2rljxki",
+        "url": "https://bsky.app/profile/goodemailcode.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mov5pfkz3227#liked_by_did:plc:kheptiglgv237xgikvch5tvj",
+      "published": null,
+      "wm-received": "2026-06-22T22:35:28Z",
+      "wm-id": 2004229,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mov5pfkz3227/did%253Aplc%253Akheptiglgv237xgikvch5tvj",
+      "wm-target": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Cyd Stumpel",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:qi3skamii7zymgxvmie5ipxd/bafkreiex47zny46jmycekxhdxwz6ea5gczvcu2jhqmwf234vgf3gu7z5e4",
+        "url": "https://bsky.app/profile/cydstumpel.nl"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mov5pfkz3227#liked_by_did:plc:qi3skamii7zymgxvmie5ipxd",
+      "published": null,
+      "wm-received": "2026-06-22T22:35:27Z",
+      "wm-id": 2004228,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mov5pfkz3227/did%253Aplc%253Aqi3skamii7zymgxvmie5ipxd",
+      "wm-target": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Derek Pennycuff",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/5e1d1e76a1e3e4272748e9633a3eeea23c3fa3abf2f8c7a7c51730ce20f8e56a.jpg",
+        "url": "https://mastodon.social/@dap6000"
+      },
+      "url": "https://front-end.social/@rem/116794387068717903#favorited-by-109303308354500065",
+      "published": null,
+      "wm-received": "2026-06-22T15:19:27Z",
+      "wm-id": 2004197,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116794387068717903/109303308354500065",
+      "wm-target": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/22/ffconf-2026-is-live-things-i-learnt",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "2026-06-19-efb870ce": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sacha Judd",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:fa7ya3d2x3yckk4bdgiulqe3/bafkreicfkevqv5pv26asy2oxnl7oacrwtj4j7onh56q75lkfevbf7ogriy",
+        "url": "https://bsky.app/profile/sachajudd.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mon5hw3dpk2a#liked_by_did:plc:fa7ya3d2x3yckk4bdgiulqe3",
+      "published": null,
+      "wm-received": "2026-06-19T22:08:38Z",
+      "wm-id": 2003871,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mon5hw3dpk2a/did%253Aplc%253Afa7ya3d2x3yckk4bdgiulqe3",
+      "wm-target": "https://remysharp.com/links/2026-06-19-efb870ce",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-06-19-efb870ce",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "neither local nor real",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:35b2uplnnngoi5pho3h2whdj/bafkreia3nmizs2chgmop7lsmbybbuxvndxg2i5nhnhpdk5pnlywpwlb7wy",
+        "url": "https://bsky.app/profile/jamessocol.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mon5hw3dpk2a#liked_by_did:plc:35b2uplnnngoi5pho3h2whdj",
+      "published": null,
+      "wm-received": "2026-06-19T12:19:49Z",
+      "wm-id": 2003712,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mon5hw3dpk2a/did%253Aplc%253A35b2uplnnngoi5pho3h2whdj",
+      "wm-target": "https://remysharp.com/links/2026-06-19-efb870ce",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-06-19-efb870ce",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Decker harrison",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/3eff68451e744542b4e2b3b3f16fd79c16ac1a4e266b017e02d1c6507b654438.png",
+        "url": "https://mas.to/@deckerharrison"
+      },
+      "url": "https://front-end.social/@rem/116776328544670284#favorited-by-109632570896320852",
+      "published": null,
+      "wm-received": "2026-06-19T11:40:31Z",
+      "wm-id": 2003705,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116776328544670284/109632570896320852",
+      "wm-target": "https://remysharp.com/links/2026-06-19-efb870ce",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-06-19-efb870ce",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Charlie O’Hara",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/176201386e499082b9e9d35655330db6e5035669230f185976510c53bba28b53.jpg",
+        "url": "https://indieweb.social/@awfulwoman"
+      },
+      "url": "https://front-end.social/@rem/116776328544670284#favorited-by-113081218384351805",
+      "published": null,
+      "wm-received": "2026-06-19T11:05:19Z",
+      "wm-id": 2003704,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116776328544670284/113081218384351805",
+      "wm-target": "https://remysharp.com/links/2026-06-19-efb870ce",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-06-19-efb870ce",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Wil van der Tuin",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:wt4zkfjpeoufxg7c2jedqf36/bafkreihj53g5sihzuhkv6gt4schtxmmsh6y3ns35qtwgxord5jx6iy5tc4",
+        "url": "https://bsky.app/profile/wil.vandertuin.nl"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mon5hw3dpk2a#liked_by_did:plc:wt4zkfjpeoufxg7c2jedqf36",
+      "published": null,
+      "wm-received": "2026-06-19T11:00:06Z",
+      "wm-id": 2003703,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mon5hw3dpk2a/did%253Aplc%253Awt4zkfjpeoufxg7c2jedqf36",
+      "wm-target": "https://remysharp.com/links/2026-06-19-efb870ce",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-06-19-efb870ce",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
