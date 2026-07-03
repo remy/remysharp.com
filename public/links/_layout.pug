@@ -12,14 +12,21 @@ block meta
 block content
   - permalink = url;
   - safeTitle = data.title.replace(/'/g, '\\\'')
+  - renderedContent = (yield || '').replace(/<p><em>Source:[\s\S]*?<\/em><\/p>\s*$/i, '')
 
   main.content
-    article.post.h-entry
+    article.post.h-entry.link-post
       h1.title.p-name
-        a(href=`${data.url}` title=`Permanent Link: ${title}`).u-url.u-uid= title
+        a(href=`${data.url}` title=`Permanent Link: ${title}`).u-url.u-uid= `Bookmark: ${title}`
 
       .post-content.e-content
-        != yield
+        != renderedContent
+
+        footer
+          p
+            strong Original link:
+            br
+            a.bookmark.link(href=`${data.url}` title=`${title}`).u-url.u-uid= compressUrl(data.url)
 
       .misc-content
         p.metadata

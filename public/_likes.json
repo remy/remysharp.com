@@ -63133,6 +63133,25 @@
       "like-of": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:y2sgewpgdhfgxz67hcfqw6o4/bafkreibgpzg2uhm4p2cfrd6tgax4ldkaopitquphuwpwmep6rugh77ouya",
+        "url": "https://bsky.app/profile/beckylo97.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mp5idsidsk23#liked_by_did:plc:y2sgewpgdhfgxz67hcfqw6o4",
+      "published": null,
+      "wm-received": "2026-06-29T20:08:37Z",
+      "wm-id": 2005579,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mp5idsidsk23/did%253Aplc%253Ay2sgewpgdhfgxz67hcfqw6o4",
+      "wm-target": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2006/11/27/delicious-like-text-grow-jquery-plugin-2",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "ffconf-2026-is-live-things-i-learnt": [
@@ -63403,6 +63422,84 @@
       "wm-target": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:ruvun7xr3pfuz3jwvs2uou4o/bafkreigz6kystl5y6rq73x6is5j5pesvria7evrojijfftdtm555nyk2rm",
+        "url": "https://bsky.app/profile/randomduck10.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mpgbskn2rc23#liked_by_did:plc:ruvun7xr3pfuz3jwvs2uou4o",
+      "published": null,
+      "wm-received": "2026-06-29T20:40:23Z",
+      "wm-id": 2005583,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mpgbskn2rc23/did%253Aplc%253Aruvun7xr3pfuz3jwvs2uou4o",
+      "wm-target": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:y2sgewpgdhfgxz67hcfqw6o4/bafkreibgpzg2uhm4p2cfrd6tgax4ldkaopitquphuwpwmep6rugh77ouya",
+        "url": "https://bsky.app/profile/beckylo97.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mpgbskn2rc23#liked_by_did:plc:y2sgewpgdhfgxz67hcfqw6o4",
+      "published": null,
+      "wm-received": "2026-06-29T20:05:07Z",
+      "wm-id": 2005578,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mpgbskn2rc23/did%253Aplc%253Ay2sgewpgdhfgxz67hcfqw6o4",
+      "wm-target": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/06/29/decompressing-33-signal-bytes",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "2026-07-01-8272e198": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ant Stanley",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:dycs4ftbbdwaozxtvqi26sof/bafkreifqazqpg4ee23xyshxjpipvotxepnm6a7ui6dfeflfwz36ddbpdky",
+        "url": "https://bsky.app/profile/iamstan.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mpmdlvy44k2b#liked_by_did:plc:dycs4ftbbdwaozxtvqi26sof",
+      "published": null,
+      "wm-received": "2026-07-01T21:01:46Z",
+      "wm-id": 2006071,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mpmdlvy44k2b/did%253Aplc%253Adycs4ftbbdwaozxtvqi26sof",
+      "wm-target": "https://remysharp.com/links/2026-07-01-8272e198",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-07-01-8272e198",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Evil Jim O’Donnell",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:mvy6jvolas42qzt6yezkyzou/bafkreihrtr3s3bwdrhsmqfbdxhki3ycpmvpyq74rx6o7sc26khjxjrt5qu",
+        "url": "https://bsky.app/profile/eatyourgreens.org.uk"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mpmdlvy44k2b#liked_by_did:plc:mvy6jvolas42qzt6yezkyzou",
+      "published": null,
+      "wm-received": "2026-07-01T20:31:06Z",
+      "wm-id": 2006065,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mpmdlvy44k2b/did%253Aplc%253Amvy6jvolas42qzt6yezkyzou",
+      "wm-target": "https://remysharp.com/links/2026-07-01-8272e198",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-07-01-8272e198",
       "wm-property": "like-of",
       "wm-private": false
     }
