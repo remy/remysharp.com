@@ -8,10 +8,8 @@ pages: 196
 rating: 3
 read:
   - 2017-04-02T00:00:00.000Z
-  - '?'
 start:
   - 2017-02-26T00:00:00.000Z
-  - '?'
 published: 2003
 goodreads: 'https://www.goodreads.com/book/show/3431.The_Five_People_You_Meet_in_Heaven'
 goodreads_id: 3431

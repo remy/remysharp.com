@@ -65,10 +65,10 @@ title: 'Books I Read 📖'
                 if review.summary
                   span !{review.summary}
                 span
-                  span 📝
-                  a(href=`${url}`) My review
                   if review.spoiler === true
-                    span &nbsp;(includes spoilers)
+                    span ⚠️&nbsp;
+                    em review includes spoilers
+                    span &nbsp;⚠️
             else
               p.review-link.no-review &nbsp;
 
