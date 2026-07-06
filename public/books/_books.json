@@ -1,5 +1,19 @@
 [
   {
+    "title": "Fundamentally",
+    "author": "Nussaibah Younis",
+    "published": 2025,
+    "pages": 352,
+    "goodreads": "https://www.goodreads.com/book/show/213870133-fundamentally",
+    "goodreads_id": 213870133,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1724179089l/213870133._SX315_.jpg",
+    "read": "2026-07-06T00:00:00.000Z",
+    "start": "2026-06-27T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2026/fundamentally.md",
+    "slug": "fundamentally"
+  },
+  {
     "title": "Platform Decay (The Murderbot Diaries, #8)",
     "seriesEntry": "Platform Decay",
     "seriesNumber": "8",
