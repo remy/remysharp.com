@@ -7,7 +7,7 @@ venv/
 _site
 .env
 public/js/version.js
-
+.stFolder/
 .netlify
 .DS_Store
 .obsidian
