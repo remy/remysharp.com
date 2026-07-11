@@ -67,3 +67,11 @@ for (const element of document.querySelectorAll("mdn-*")) {
 ```
 
 This feels like a relatively cheap change to add support for wildcards, and gives the `querySelectorAll` a nice little boost, along with the benefits Lea already outlined in the github issue she raised.
+
+## Would it be valid?
+
+I swear I found the documentation that read that the `*` asterisk was reserved for the universal selector (i.e. match all things), but I can't find it any more.
+
+However, the from my memory, the parser only allows an asterisk _after_ a space, to indicate it's a universal selector, so `foo*` or `foo-*` would not match in the parser.
+
+Equally, it's allowed in the attribute selector, but [only when followed](https://www.w3.org/TR/selectors-4/#attribute-substrings) by `=`, but attribute selector already has wildcard support. But maybe this would be extended to cover "glob" like support, so I could do `.foo*bar` to match `.foo-dont-do-it-bar`. Again, the current parser doesn't allow for this, so that means it's available for use.
