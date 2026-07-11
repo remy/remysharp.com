@@ -63503,5 +63503,30 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "2026-06-05-ee9041b8": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James",
+        "photo": "https://avatars.webmention.io/lionsmane.us-east.host.bsky.network/1ac3a5dbdde697880c8c44539a96b6306f7e6f60779763f77d53f13395c7d788.jpg",
+        "url": "https://bsky.app/profile/nonzerosumjames.bsky.social"
+      },
+      "url": "https://bsky.app/profile/did:plc:kmwems6tpvudwvlxisswue6a/post/3mnlizqbupox2#liked_by_did:plc:quozz3hcdgl7dmc3ovdg42ap",
+      "published": null,
+      "wm-received": "2026-07-11T00:21:56Z",
+      "wm-id": 2011390,
+      "wm-source": "https://bsky.brid.gy/convert/web/at://did:plc:quozz3hcdgl7dmc3ovdg42ap/app.bsky.feed.like/3mqdfg3suyb2m",
+      "wm-target": "https://remysharp.com/links/2026-06-05-ee9041b8",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<a href=\"https://remysharp.com/links/2026-06-05-ee9041b8\">likes this.</a>",
+        "text": "likes this."
+      },
+      "like-of": "https://remysharp.com/links/2026-06-05-ee9041b8",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

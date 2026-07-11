@@ -14,3 +14,5 @@ public/js/version.js
 *.local.json
 .trash/
 **/.trash/
+*sync-conflict-*
+design-review/
