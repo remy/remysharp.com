@@ -1575,6 +1575,18 @@
     "created": "2026-07-01T20:16:14.000Z",
     "modified": "2026-07-01T20:16:14.000Z"
   },
+  "public/links/2026-07-08-05cd4aed.md": {
+    "created": "2026-07-09T08:41:21.000Z",
+    "modified": "2026-07-09T08:41:21.000Z"
+  },
+  "public/links/2026-07-09-221b1dd2.md": {
+    "created": "2026-07-09T08:41:21.000Z",
+    "modified": "2026-07-09T08:41:21.000Z"
+  },
+  "public/links/2026-07-09-9fd775a9.md": {
+    "created": "2026-07-09T16:54:45.000Z",
+    "modified": "2026-07-09T16:54:45.000Z"
+  },
   "public/blog/20-years-of-blogging.md": {
     "created": "2026-06-17T13:22:55.000Z",
     "modified": "2026-06-17T13:44:15.000Z"
@@ -4284,6 +4296,10 @@
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-20T15:54:13.000Z"
   },
+  "public/blog/wildcards-in-css.md": {
+    "created": "2026-07-11T12:03:19.000Z",
+    "modified": "2026-07-11T12:25:38.000Z"
+  },
   "public/blog/will-apples-os-x-be-stopping-at-106.md": {
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-20T15:35:42.000Z"
@@ -4360,6 +4376,10 @@
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
   },
+  "public/attic/2007/info.md": {
+    "created": "2016-08-08T13:39:21.000Z",
+    "modified": "2016-08-08T13:39:21.000Z"
+  },
   "public/attic/2008/info.md": {
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
@@ -4367,6 +4387,90 @@
   "public/attic/2014/info.md": {
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
+  },
+  "public/devlog/go-mummy/2020-05-24.md": {
+    "created": "2020-05-24T13:47:04.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-05-25.md": {
+    "created": "2020-05-25T13:02:00.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-01.md": {
+    "created": "2020-06-01T15:36:06.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-03.md": {
+    "created": "2020-06-03T09:22:30.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-07.md": {
+    "created": "2020-06-07T09:00:43.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-15.md": {
+    "created": "2020-06-15T16:41:03.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-06-25.md": {
+    "created": "2020-06-25T20:56:48.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-07-07.md": {
+    "created": "2020-07-07T08:16:39.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-07-20.md": {
+    "created": "2020-07-20T16:44:32.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-07-28.md": {
+    "created": "2020-07-28T11:41:12.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-08-09.md": {
+    "created": "2020-08-09T14:52:25.000Z",
+    "modified": "2020-08-12T11:05:55.000Z"
+  },
+  "public/devlog/go-mummy/2020-08-25.md": {
+    "created": "2020-08-25T08:31:53.000Z",
+    "modified": "2020-08-25T08:31:53.000Z"
+  },
+  "public/devlog/marbles2/2020-10-14.md": {
+    "created": "2020-10-14T21:57:41.000Z",
+    "modified": "2020-10-14T22:01:30.000Z"
+  },
+  "public/devlog/marbles2/2020-11-08.md": {
+    "created": "2020-11-08T22:08:50.000Z",
+    "modified": "2020-11-08T22:08:50.000Z"
+  },
+  "public/devlog/marbles2/2020-11-23.md": {
+    "created": "2020-11-23T22:32:57.000Z",
+    "modified": "2020-11-23T22:32:57.000Z"
+  },
+  "public/devlog/marbles2/2021-03-23.md": {
+    "created": "2021-03-23T21:15:39.000Z",
+    "modified": "2021-03-23T21:15:39.000Z"
+  },
+  "public/devlog/marbles2/2021-05-18.md": {
+    "created": "2021-05-18T22:01:57.000Z",
+    "modified": "2021-05-18T22:01:57.000Z"
+  },
+  "public/devlog/marbles2/2021-05-19.md": {
+    "created": "2021-05-19T21:27:05.000Z",
+    "modified": "2021-05-19T21:27:05.000Z"
+  },
+  "public/devlog/marbles2/2021-06-14.md": {
+    "created": "2021-06-14T22:30:53.000Z",
+    "modified": "2021-06-14T22:30:53.000Z"
+  },
+  "public/devlog/marbles2/2021-07-05.md": {
+    "created": "2021-07-05T20:34:48.000Z",
+    "modified": "2021-07-05T20:34:48.000Z"
+  },
+  "public/devlog/marbles2/2021-07-16.md": {
+    "created": "2021-07-16T19:49:47.000Z",
+    "modified": "2021-07-16T19:49:47.000Z"
   },
   "public/books/2017/a-boy-made-of-blocks.md": {
     "created": "2020-08-05T18:46:45.000Z",
@@ -4611,10 +4715,6 @@
   "public/books/2018/wishful-drinking-carrie-fisher.md": {
     "created": "2023-11-20T21:39:42.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/attic/2007/info.md": {
-    "created": "2016-08-08T13:39:21.000Z",
-    "modified": "2016-08-08T13:39:21.000Z"
   },
   "public/books/2019/a-brief-history-of-everyone-who-ever-lived-the-stories-in-our-genes.md": {
     "created": "2020-08-05T18:46:45.000Z",
@@ -4992,38 +5092,6 @@
     "created": "2023-10-06T09:06:47.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
-  "public/books/2026/a-very-merry-murder-malvern-farm-mystery-6.md": {
-    "created": "2026-01-03T13:16:51.000Z",
-    "modified": "2026-01-03T13:16:51.000Z"
-  },
-  "public/books/2026/another-england-how-to-reclaim-our-national-story.md": {
-    "created": "2026-04-06T14:37:31.000Z",
-    "modified": "2026-04-06T14:37:31.000Z"
-  },
-  "public/books/2026/bear-head.md": {
-    "created": "2026-02-10T12:20:03.000Z",
-    "modified": "2026-02-10T12:20:03.000Z"
-  },
-  "public/books/2026/fundamentally.md": {
-    "created": "2026-07-06T11:52:07.000Z",
-    "modified": "2026-07-06T11:52:07.000Z"
-  },
-  "public/books/2026/lost-lambs.md": {
-    "created": "2026-05-06T09:40:47.000Z",
-    "modified": "2026-05-06T09:40:47.000Z"
-  },
-  "public/books/2026/platform-decay.md": {
-    "created": "2026-06-29T10:09:31.000Z",
-    "modified": "2026-06-29T10:09:31.000Z"
-  },
-  "public/books/2026/rivers-of-london.md": {
-    "created": "2026-02-25T09:52:32.000Z",
-    "modified": "2026-02-25T09:52:32.000Z"
-  },
-  "public/books/2026/when-the-cranes-fly-south.md": {
-    "created": "2026-05-15T08:56:48.000Z",
-    "modified": "2026-05-15T08:56:48.000Z"
-  },
   "public/books/2024/anxious-people.md": {
     "created": "2024-02-23T12:08:30.000Z",
     "modified": "2024-02-23T12:08:30.000Z"
@@ -5075,90 +5143,6 @@
   "public/books/2024/yellowface.md": {
     "created": "2024-02-23T12:08:30.000Z",
     "modified": "2024-02-23T12:08:30.000Z"
-  },
-  "public/devlog/go-mummy/2020-05-24.md": {
-    "created": "2020-05-24T13:47:04.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-05-25.md": {
-    "created": "2020-05-25T13:02:00.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-01.md": {
-    "created": "2020-06-01T15:36:06.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-03.md": {
-    "created": "2020-06-03T09:22:30.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-07.md": {
-    "created": "2020-06-07T09:00:43.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-15.md": {
-    "created": "2020-06-15T16:41:03.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-06-25.md": {
-    "created": "2020-06-25T20:56:48.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-07-07.md": {
-    "created": "2020-07-07T08:16:39.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-07-20.md": {
-    "created": "2020-07-20T16:44:32.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-07-28.md": {
-    "created": "2020-07-28T11:41:12.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-08-09.md": {
-    "created": "2020-08-09T14:52:25.000Z",
-    "modified": "2020-08-12T11:05:55.000Z"
-  },
-  "public/devlog/go-mummy/2020-08-25.md": {
-    "created": "2020-08-25T08:31:53.000Z",
-    "modified": "2020-08-25T08:31:53.000Z"
-  },
-  "public/devlog/marbles2/2020-10-14.md": {
-    "created": "2020-10-14T21:57:41.000Z",
-    "modified": "2020-10-14T22:01:30.000Z"
-  },
-  "public/devlog/marbles2/2020-11-08.md": {
-    "created": "2020-11-08T22:08:50.000Z",
-    "modified": "2020-11-08T22:08:50.000Z"
-  },
-  "public/devlog/marbles2/2020-11-23.md": {
-    "created": "2020-11-23T22:32:57.000Z",
-    "modified": "2020-11-23T22:32:57.000Z"
-  },
-  "public/devlog/marbles2/2021-03-23.md": {
-    "created": "2021-03-23T21:15:39.000Z",
-    "modified": "2021-03-23T21:15:39.000Z"
-  },
-  "public/devlog/marbles2/2021-05-18.md": {
-    "created": "2021-05-18T22:01:57.000Z",
-    "modified": "2021-05-18T22:01:57.000Z"
-  },
-  "public/devlog/marbles2/2021-05-19.md": {
-    "created": "2021-05-19T21:27:05.000Z",
-    "modified": "2021-05-19T21:27:05.000Z"
-  },
-  "public/devlog/marbles2/2021-06-14.md": {
-    "created": "2021-06-14T22:30:53.000Z",
-    "modified": "2021-06-14T22:30:53.000Z"
-  },
-  "public/devlog/marbles2/2021-07-05.md": {
-    "created": "2021-07-05T20:34:48.000Z",
-    "modified": "2021-07-05T20:34:48.000Z"
-  },
-  "public/devlog/marbles2/2021-07-16.md": {
-    "created": "2021-07-16T19:49:47.000Z",
-    "modified": "2021-07-16T19:49:47.000Z"
   },
   "public/books/2025/butter.md": {
     "created": "2025-12-06T15:48:29.000Z",
@@ -5215,6 +5199,38 @@
   "public/books/2025/the-time-machine.md": {
     "created": "2025-03-27T09:03:16.000Z",
     "modified": "2025-03-27T09:03:16.000Z"
+  },
+  "public/books/2026/a-very-merry-murder-malvern-farm-mystery-6.md": {
+    "created": "2026-01-03T13:16:51.000Z",
+    "modified": "2026-01-03T13:16:51.000Z"
+  },
+  "public/books/2026/another-england-how-to-reclaim-our-national-story.md": {
+    "created": "2026-04-06T14:37:31.000Z",
+    "modified": "2026-04-06T14:37:31.000Z"
+  },
+  "public/books/2026/bear-head.md": {
+    "created": "2026-02-10T12:20:03.000Z",
+    "modified": "2026-02-10T12:20:03.000Z"
+  },
+  "public/books/2026/fundamentally.md": {
+    "created": "2026-07-06T11:52:07.000Z",
+    "modified": "2026-07-06T11:52:07.000Z"
+  },
+  "public/books/2026/lost-lambs.md": {
+    "created": "2026-05-06T09:40:47.000Z",
+    "modified": "2026-05-06T09:40:47.000Z"
+  },
+  "public/books/2026/platform-decay.md": {
+    "created": "2026-06-29T10:09:31.000Z",
+    "modified": "2026-06-29T10:09:31.000Z"
+  },
+  "public/books/2026/rivers-of-london.md": {
+    "created": "2026-02-25T09:52:32.000Z",
+    "modified": "2026-02-25T09:52:32.000Z"
+  },
+  "public/books/2026/when-the-cranes-fly-south.md": {
+    "created": "2026-05-15T08:56:48.000Z",
+    "modified": "2026-05-15T08:56:48.000Z"
   },
   "public/til/cli/debugging-shell-scripts.md": {
     "created": "2020-05-27T11:57:54.000Z",
@@ -5276,10 +5292,6 @@
     "created": "2020-11-06T19:13:58.000Z",
     "modified": "2020-11-06T19:13:58.000Z"
   },
-  "public/til/http/curl-s-isnt-as-useful-as-i-thought.md": {
-    "created": "2020-05-02T10:20:32.000Z",
-    "modified": "2020-05-26T11:26:37.000Z"
-  },
   "public/til/data/modifying-autoincrements.md": {
     "created": "2021-06-18T08:10:17.000Z",
     "modified": "2021-06-18T08:10:17.000Z"
@@ -5287,6 +5299,10 @@
   "public/til/data/postgres-csv-import-with-json.md": {
     "created": "2021-03-09T12:53:55.000Z",
     "modified": "2021-03-09T12:53:55.000Z"
+  },
+  "public/til/http/curl-s-isnt-as-useful-as-i-thought.md": {
+    "created": "2020-05-02T10:20:32.000Z",
+    "modified": "2020-05-26T11:26:37.000Z"
   },
   "public/til/javascript/new-bytes-from-textencoder.md": {
     "created": "2020-05-09T07:46:07.000Z",

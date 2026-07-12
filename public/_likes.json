@@ -63528,5 +63528,121 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "wildcards-in-css": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:gfbpa2xkolzc6uk76ea6chjc/bafkreid26kegmp4xbshw3vqbmnra4avnj7zme6dq3a5byvmaeccyecu5ra",
+        "url": "https://bsky.app/profile/htmlandbacon.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mqemrlku7k2b#liked_by_did:plc:gfbpa2xkolzc6uk76ea6chjc",
+      "published": null,
+      "wm-received": "2026-07-12T09:31:21Z",
+      "wm-id": 2011526,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mqemrlku7k2b/did%253Aplc%253Agfbpa2xkolzc6uk76ea6chjc",
+      "wm-target": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andrew F",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xkgokneb3dqrgv55j2yxxont/bafkreihjb6dphzb4mkgp5uyjonvtwwfmoxht6z7kajkllnzm3mjt5o7c3u",
+        "url": "https://bsky.app/profile/aftd.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mqemrlku7k2b#liked_by_did:plc:xkgokneb3dqrgv55j2yxxont",
+      "published": null,
+      "wm-received": "2026-07-11T18:14:29Z",
+      "wm-id": 2011455,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mqemrlku7k2b/did%253Aplc%253Axkgokneb3dqrgv55j2yxxont",
+      "wm-target": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jack",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:pxrfizqx45aknvaeshcsevzx/bafkreifcq35cj4mknrecbe3d7czz2niuilxnfwf6aftowaospye4pdokcu",
+        "url": "https://bsky.app/profile/jackhpeterson.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mqemrlku7k2b#liked_by_did:plc:pxrfizqx45aknvaeshcsevzx",
+      "published": null,
+      "wm-received": "2026-07-11T16:50:33Z",
+      "wm-id": 2011449,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mqemrlku7k2b/did%253Aplc%253Apxrfizqx45aknvaeshcsevzx",
+      "wm-target": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/116901254037887101#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2026-07-11T14:29:54Z",
+      "wm-id": 2011426,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116901254037887101/109302579306985968",
+      "wm-target": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julian Cataldo",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xizpkdrydlllidij3x53mksb/bafkreigwk35dxhomcidg5dnhazppn2kd4r5s7nexzbz2nvokkj3y57edie",
+        "url": "https://bsky.app/profile/juliancataldo.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mqemrlku7k2b#liked_by_did:plc:xizpkdrydlllidij3x53mksb",
+      "published": null,
+      "wm-received": "2026-07-12T12:59:46Z",
+      "wm-id": 2011547,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mqemrlku7k2b/did%253Aplc%253Axizpkdrydlllidij3x53mksb",
+      "wm-target": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Schalk Neethling",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:brimpw7k46xczmr4pqst45df/bafkreigw4mrrjvfowze53dsjpj7pxvbzyoiya2hxwlplbqv6zvpmkaic7e",
+        "url": "https://bsky.app/profile/schalkneethling.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mqemrlku7k2b#liked_by_did:plc:brimpw7k46xczmr4pqst45df",
+      "published": null,
+      "wm-received": "2026-07-12T11:02:55Z",
+      "wm-id": 2011529,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mqemrlku7k2b/did%253Aplc%253Abrimpw7k46xczmr4pqst45df",
+      "wm-target": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
