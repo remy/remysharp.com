@@ -12,7 +12,7 @@ block meta
 block content
   - permalink = url;
   - safeTitle = data.title.replace(/'/g, '\\\'')
-  - renderedContent = (yield || '').replace(/<p><em>Source:[\s\S]*?<\/em><\/p>\s*$/i, '')
+  - renderedContent = (yield || '').replace(/<p><em>Source:[\s\S]*?<\/em><\/p>\s*$/i, '').replace(/<p><em>Original link:[\s\S]*?<\/em><\/p>\s*$/i, '')
 
   main.content
     article.post.h-entry.link-post
