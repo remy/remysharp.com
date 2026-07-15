@@ -63797,6 +63797,160 @@
       "like-of": "https://remysharp.com/2019/05/21/all-i-want-for-christmas",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Johnson",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:jed5ql6g2tkli7nhnvuya3sh/bafkreibpj7rdplqk3kjvb5s6gtoicjha3qpx4xmyh5ehubf2lmi7baukb4",
+        "url": "https://bsky.app/profile/defaced.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mqemrlku7k2b#liked_by_did:plc:jed5ql6g2tkli7nhnvuya3sh",
+      "published": null,
+      "wm-received": "2026-07-13T10:13:42Z",
+      "wm-id": 2011735,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mqemrlku7k2b/did%253Aplc%253Ajed5ql6g2tkli7nhnvuya3sh",
+      "wm-target": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michael R. Lorek",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:4ppawhey2qo2gm3nj4zlvyit/bafkreigjrucxic3rom5yaciyxii5w44rxi7eip6t277iepumqu3qmluy3y",
+        "url": "https://bsky.app/profile/onlinedesign.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mqemrlku7k2b#liked_by_did:plc:4ppawhey2qo2gm3nj4zlvyit",
+      "published": null,
+      "wm-received": "2026-07-13T06:09:08Z",
+      "wm-id": 2011695,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mqemrlku7k2b/did%253Aplc%253A4ppawhey2qo2gm3nj4zlvyit",
+      "wm-target": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "meduz'",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c414b3e78be828a3ca1d05cd22c79f8465c9cc19b81e96fae76ede2b6b8d3b61.jpg",
+        "url": "https://m.nintendojo.fr/@meduz"
+      },
+      "url": "https://front-end.social/@rem/116901254037887101#favorited-by-109288760010633373",
+      "published": null,
+      "wm-received": "2026-07-12T17:01:31Z",
+      "wm-id": 2011603,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116901254037887101/109288760010633373",
+      "wm-target": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "2026-07-12-4e9c9652": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ian Sutherland ????????",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8ad2e4bef4901e0ebaad527a886cdfa6a22d38cf1b616350dc781dc5a42d1aa7.jpg",
+        "url": "https://cosocial.ca/@iansu"
+      },
+      "url": "https://front-end.social/@rem/116908231492190785#favorited-by-110562822173713112",
+      "published": null,
+      "wm-received": "2026-07-12T19:14:45Z",
+      "wm-id": 2011629,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116908231492190785/110562822173713112",
+      "wm-target": "https://remysharp.com/links/2026-07-12-4e9c9652",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-07-12-4e9c9652",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Derek Pennycuff",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/5e1d1e76a1e3e4272748e9633a3eeea23c3fa3abf2f8c7a7c51730ce20f8e56a.jpg",
+        "url": "https://mastodon.social/@dap6000"
+      },
+      "url": "https://front-end.social/@rem/116908231492190785#favorited-by-109303308354500065",
+      "published": null,
+      "wm-received": "2026-07-12T19:14:42Z",
+      "wm-id": 2011628,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116908231492190785/109303308354500065",
+      "wm-target": "https://remysharp.com/links/2026-07-12-4e9c9652",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-07-12-4e9c9652",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Daniel Barber",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/6bd727c19645e6181edfba722997db6e135dd0eb736867e139dcad6a69090c06.gif",
+        "url": "https://magrathea.space/users/db"
+      },
+      "url": "https://front-end.social/@rem/116908231492190785#favorited-by-115302068398074042",
+      "published": null,
+      "wm-received": "2026-07-12T18:40:50Z",
+      "wm-id": 2011619,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116908231492190785/115302068398074042",
+      "wm-target": "https://remysharp.com/links/2026-07-12-4e9c9652",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-07-12-4e9c9652",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steven Robertson",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/6c0d3266cbb2121b610a371c382ac98dc604023127e7ebae1fbc363e9ef19a45.png",
+        "url": "https://hachyderm.io/@stever"
+      },
+      "url": "https://front-end.social/@rem/116908231492190785#favorited-by-109605395188314131",
+      "published": null,
+      "wm-received": "2026-07-12T18:09:35Z",
+      "wm-id": 2011612,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/116908231492190785/109605395188314131",
+      "wm-target": "https://remysharp.com/links/2026-07-12-4e9c9652",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-07-12-4e9c9652",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Alena Jacíková",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:q67wsjebqri2xhmjiulf64su/bafkreia6tuf2j42r7b5karawaurhdow4piwfsdb2nrvs4voh2r5tsqz7se",
+        "url": "https://bsky.app/profile/ell2cz.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mqhkc2fccc2t#liked_by_did:plc:q67wsjebqri2xhmjiulf64su",
+      "published": null,
+      "wm-received": "2026-07-12T16:46:19Z",
+      "wm-id": 2011598,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mqhkc2fccc2t/did%253Aplc%253Aq67wsjebqri2xhmjiulf64su",
+      "wm-target": "https://remysharp.com/links/2026-07-12-4e9c9652",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/links/2026-07-12-4e9c9652",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }
