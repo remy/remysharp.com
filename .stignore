@@ -1,7 +1,5 @@
-/.git/
-/_site/
-/node_modules/
-.DS_Store
-/venv
-/.vscode
-/.github
+*
+!/public/blog
+!/public/links
+!/public/books
+!/public/images
