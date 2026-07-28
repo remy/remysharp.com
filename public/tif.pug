@@ -21,6 +21,7 @@ div.link-listing
               span &nbsp;
               <a href="#{post.url }"><time class="date" title="#{ moment(post.data.date).format('d-MMM yyyy') }">#{ moment(post.data.date).ago() } ago</time></a>
             div !{ post.output }
-          p.img
-            img(src=`${post.data.photo}`)
+          if post.data.photo
+            p.img
+              img(src=`${post.data.photo}`)
       - post = posts[index += 1];

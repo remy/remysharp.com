@@ -20,7 +20,8 @@ block content
 
       .post-content.e-content
         != yield
-        img(src=`${photo}`)
+        if photo
+          img(src=`${photo}`)
 
       if date
         .misc-content
