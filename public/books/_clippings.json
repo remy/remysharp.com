@@ -6385,5 +6385,26 @@
         "note": "null"
       }
     ]
+  },
+  "human-software": {
+    "title": "Human Software",
+    "author": "Richard Bown",
+    "highlights": [
+      {
+        "text": "They had started talking over a shared hatred of server virtualisation.",
+        "page": "105/1167",
+        "note": "That's a specific audience!"
+      },
+      {
+        "text": "But practically, we know that systems evolve from compromise and necessity.",
+        "page": "490/1167",
+        "note": "null"
+      },
+      {
+        "text": "HR has asked all staff members to provide a CV and evidence of their accomplishments in the last two years.",
+        "page": "538/1167",
+        "note": "At which point, instead yiu fresh your CV and find a better paid job."
+      }
+    ]
   }
 }

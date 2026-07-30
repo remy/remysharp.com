@@ -1,5 +1,33 @@
 [
   {
+    "title": "Human Software",
+    "author": "Richard W. Bown",
+    "published": 2025,
+    "pages": 304,
+    "goodreads": "https://www.goodreads.com/book/show/242045354-human-software",
+    "goodreads_id": 242045354,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1758776540l/242045354._SX315_.jpg",
+    "read": "2026-07-30T00:00:00.000Z",
+    "start": "2026-07-15T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2026/human-software.md",
+    "slug": "human-software"
+  },
+  {
+    "title": "The Air Raid Book Club",
+    "author": "Annie Lyons",
+    "published": 2023,
+    "pages": 336,
+    "goodreads": "https://www.goodreads.com/book/show/63017306-the-air-raid-book-club",
+    "goodreads_id": 63017306,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1675645090l/63017306._SX315_.jpg",
+    "read": "2026-07-15T00:00:00.000Z",
+    "start": "2026-07-06T00:00:00.000Z",
+    "rating": 3,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2026/the-air-raid-book-club.md",
+    "slug": "the-air-raid-book-club"
+  },
+  {
     "title": "Fundamentally",
     "author": "Nussaibah Younis",
     "published": 2025,
@@ -2989,12 +3017,10 @@
     "pages": 434,
     "rating": 3,
     "read": [
-      "2017-08-19T00:00:00.000Z",
-      "?"
+      "2017-08-19T00:00:00.000Z"
     ],
     "start": [
-      "2017-08-11T00:00:00.000Z",
-      "2017-08-12T00:00:00.000Z"
+      "2017-08-11T00:00:00.000Z"
     ],
     "published": 2013,
     "goodreads": "https://www.goodreads.com/book/show/20878481-the-girl-who-saved-the-king-of-sweden",
@@ -3133,12 +3159,10 @@
     "pages": 196,
     "rating": 3,
     "read": [
-      "2017-04-02T00:00:00.000Z",
-      "?"
+      "2017-04-02T00:00:00.000Z"
     ],
     "start": [
-      "2017-02-26T00:00:00.000Z",
-      "?"
+      "2017-02-26T00:00:00.000Z"
     ],
     "published": 2003,
     "goodreads": "https://www.goodreads.com/book/show/3431.The_Five_People_You_Meet_in_Heaven",
