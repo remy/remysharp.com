@@ -47986,6 +47986,63 @@
       "like-of": "https://remysharp.com/books",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Martin",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:d5qyrlkgpr3kueeobgfq2pvp/bafkreiev6t7h7welp5pqb6hebxbuk4zja27lslzsxjmk7rfm6rhy6cw75e",
+        "url": "https://bsky.app/profile/chaosmonster.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrpyhukeys27#liked_by_did:plc:d5qyrlkgpr3kueeobgfq2pvp",
+      "published": null,
+      "wm-received": "2026-07-28T20:29:33Z",
+      "wm-id": 2014758,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrpyhukeys27/did%253Aplc%253Ad5qyrlkgpr3kueeobgfq2pvp",
+      "wm-target": "https://remysharp.com/books",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sarah Drasner",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:wovfeu2jgwq6bb2smkfz3vgu/bafkreicojkfr5arcj3x6wohg4wziokqkoycda6oqgzhzntwftsy3idchde",
+        "url": "https://bsky.app/profile/sarahedo.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrpyhukeys27#liked_by_did:plc:wovfeu2jgwq6bb2smkfz3vgu",
+      "published": null,
+      "wm-received": "2026-07-28T19:26:43Z",
+      "wm-id": 2014742,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrpyhukeys27/did%253Aplc%253Awovfeu2jgwq6bb2smkfz3vgu",
+      "wm-target": "https://remysharp.com/books",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Seb Lee-Delisle",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:gdbp75g6cq7oq5ueruwdkzga/bafkreiew67rbw3wjrzo6aojtze3fbdncmg5rrmubw7k7f56fssydxr63pe",
+        "url": "https://bsky.app/profile/seblee.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrpyhukeys27#liked_by_did:plc:gdbp75g6cq7oq5ueruwdkzga",
+      "published": null,
+      "wm-received": "2026-07-28T19:26:42Z",
+      "wm-id": 2014741,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrpyhukeys27/did%253Aplc%253Agdbp75g6cq7oq5ueruwdkzga",
+      "wm-target": "https://remysharp.com/books",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "scraping-goodreads": [
