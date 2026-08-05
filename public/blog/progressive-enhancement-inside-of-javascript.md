@@ -1,10 +1,9 @@
 ---
 title: Progressive Enhancement inside of JavaScript
-date: 2026-05-11
+date: 2026-08-05
 tags:
   - web
 ad: false
-draft: true
 ---
 
 # Progressive Enhancement inside of JavaScript
@@ -39,12 +38,8 @@ The result is that, even over a GPRS connection, the full interactivity still wo
 
 This particular project is designed not to have a backend at all (that's just a constraint I set myself). Though I can see how this could actually upload the markdown to a server for rendering. I imagine I can use [Netlify ODB](https://docs.netlify.com/build/configure-builds/on-demand-builders/) - though I haven't measured the timings, I'd bet that it's still faster than 2 minutes over GPRS.
 
-That approach is being the bread and butter of the web _and_ progressive enhancement. However, this post was about the small optimisations I could make _within_ the JavaScript to improve a client-side interactive experience.
-
 ---
 
-This is not a new method by any measure at all. I was only reminded of it because I was on a train. Admittedly my daily client work is deep in backend API work, so I don't often get to take a closer look at front end JavaScript so much these days.
-
-Whilst I was on the train, I ran into multiple web sites that had form inputs that either couldn't be submitted or broke the page entirely because of the slow connection and the assumed reliance on _all_ the JavaScript being fully loaded.
+This is not a new method by any measure at all. I was only reminded of it because I was on a train. Admittedly my daily client work is deep in backend API work, so I don't often get to take a closer look at front end JavaScript so much these days!
 
 *[ODB]: On-demand Builder
