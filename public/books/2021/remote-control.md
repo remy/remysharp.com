@@ -13,10 +13,10 @@ rating: 3
 
 Interesting, but found I got lost in the timeline of the story quite often.
 
-I _really_ wanted to enjoy Remote Control a lot more than I did. It was well written and initially the character of Fatima, aka Sankofa, aka _"adopted daughter of the Angel of Death"_ was really interesting. I wanted to know more about them.
+I _really_ wanted to enjoy Remote Control a lot more than I did. It was well written and initially the character of Fatima, aka Sankofa, aka _"adopted daughter of the Angel of Death"_ was fascinating. I wanted to know more about them.
 
-If I'm honest though, I completely lost track of the timeline, I think half way through the book I jumped around in time and I wasn't sure if the story was being told from the past or the present and it left me a little confused as to where the character was up to.
+If I'm honest though, I completely lost track of the timeline, I think halfway through the book I jumped around in time and I wasn't sure if the story was being told from the past or the present and it left me a little confused as to where the character was up to.
 
 It was also strange (to me certainly) that Sankofa's family could be killed and they live in their mother's home whilst the mother's body is rotting (maggot detail to boot) - and yet this doesn't phase Sankofa - or at least it didn't come across to me.
 
-Still, as I said, the story was well written and though I couldn't entire emphasis with the character, Sankofa is an interesting character all the same - even if I'm left wanting to know a _lot_ more about them. (and like, what was the deal with the fox??!)
+Still, as I said, the story was well written and though I couldn't have entire emphasis with the character, Sankofa is an interesting character all the same - even if I'm left wanting to know a _lot_ more about them. (and like, what was the deal with the fox??!)
