@@ -48043,6 +48043,25 @@
       "like-of": "https://remysharp.com/books",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marco Mezzavilla",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:nykjaibtu4x5cmbqww4v447k/bafkreic54o5a4ln6dbpddsgocn2fbtlccfjx67gc7d4hr6o23xrmck4bki",
+        "url": "https://bsky.app/profile/marcomezzavilla.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrpyhukeys27#liked_by_did:plc:nykjaibtu4x5cmbqww4v447k",
+      "published": null,
+      "wm-received": "2026-08-03T19:42:06Z",
+      "wm-id": 2015825,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrpyhukeys27/did%253Aplc%253Anykjaibtu4x5cmbqww4v447k",
+      "wm-target": "https://remysharp.com/books",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/books",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "scraping-goodreads": [
@@ -64063,6 +64082,903 @@
       "wm-target": "https://remysharp.com/2026/07/24/when-do-web-component",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2026/07/24/when-do-web-component",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "progressive-enhancement-inside-of-javascript": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Cathy",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:qsb7jmua53ax3x5kljzjtj5r/bafkreihfs33im22ajz7jse3eukg5b6raiaf7c7xdy6erz5u3qnuofuhtmi",
+        "url": "https://bsky.app/profile/cathy-codes.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:qsb7jmua53ax3x5kljzjtj5r",
+      "published": null,
+      "wm-received": "2026-08-06T10:52:50Z",
+      "wm-id": 2016432,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Aqsb7jmua53ax3x5kljzjtj5r",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michaël Vanderheyden",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xetli7nktzsvhl74bhl4r4yx/bafkreife33jtukgp5uszhogca2r3ei4lmx37ri2f3ohpi2ipqjy3w66r7u",
+        "url": "https://bsky.app/profile/th3s4mur41.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:xetli7nktzsvhl74bhl4r4yx",
+      "published": null,
+      "wm-received": "2026-08-06T10:21:20Z",
+      "wm-id": 2016401,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Axetli7nktzsvhl74bhl4r4yx",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Peter Grucza",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:n4gdjsxxm3ltkyczw5rfuguj/bafkreiapw6o5ipcasesu2nedos2t4hc3j57aqkops3cwhdmisskfoeenbe",
+        "url": "https://bsky.app/profile/pgrucza.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:n4gdjsxxm3ltkyczw5rfuguj",
+      "published": null,
+      "wm-received": "2026-08-06T00:12:53Z",
+      "wm-id": 2016330,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253An4gdjsxxm3ltkyczw5rfuguj",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "vielle ????",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:4zht3z4caxwrw3dlsybodywc/bafkreihdvyivxbehld2wwb6bkcacujusahqghebgrwug3ymwvhnbjxqhpu",
+        "url": "https://bsky.app/profile/vielle.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:4zht3z4caxwrw3dlsybodywc",
+      "published": null,
+      "wm-received": "2026-08-05T23:02:37Z",
+      "wm-id": 2016322,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253A4zht3z4caxwrw3dlsybodywc",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Anton ????????????????",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/cf0bd98a0257df7872813128a05b0b899fb4444aee3727412d93be082e70be13.jpg",
+        "url": "https://mastodon.online/@atjn"
+      },
+      "url": "https://front-end.social/@rem/117042143946409124#favorited-by-109333543286048848",
+      "published": null,
+      "wm-received": "2026-08-05T21:54:24Z",
+      "wm-id": 2016316,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117042143946409124/109333543286048848",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Tijhof",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c070ecc02a223955fa3835dc8508640b0a1a88223c2d963d599356c9f65c0916.jpg",
+        "url": "https://fosstodon.org/@krinkle"
+      },
+      "url": "https://front-end.social/@rem/117042143946409124#favorited-by-109293603037070680",
+      "published": null,
+      "wm-received": "2026-08-05T21:19:07Z",
+      "wm-id": 2016312,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117042143946409124/109293603037070680",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:y4jhcy6vda424i37mf36mflq/bafkreihfiuh767yp2dk5l7jbmhky6n3phzy4ybcetowjy7dc5nyxkl2xui",
+        "url": "https://bsky.app/profile/bdadam.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:y4jhcy6vda424i37mf36mflq",
+      "published": null,
+      "wm-received": "2026-08-05T20:06:23Z",
+      "wm-id": 2016300,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Ay4jhcy6vda424i37mf36mflq",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dan Beddows",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:r4obmg3zhzvnj4pxsaqtixb7/bafkreiesummepol2v4hg353djajoin7lhdadxq2depdkem633m22llg3wm",
+        "url": "https://bsky.app/profile/danbeddows.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:r4obmg3zhzvnj4pxsaqtixb7",
+      "published": null,
+      "wm-received": "2026-08-05T15:32:41Z",
+      "wm-id": 2016230,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Ar4obmg3zhzvnj4pxsaqtixb7",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:pzgvqg4ihnaihkrpmxqz5pu6/bafkreiaapdk2gfx55k2bvki4b3c4azfba5uae6ej43yrgqi3cjwxrvk4ie",
+        "url": "https://bsky.app/profile/bell.bz"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:pzgvqg4ihnaihkrpmxqz5pu6",
+      "published": null,
+      "wm-received": "2026-08-05T14:02:52Z",
+      "wm-id": 2016212,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Apzgvqg4ihnaihkrpmxqz5pu6",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Davies",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:ccw4zckt3u7hytoxemgoe654/bafkreibthta5fiablcbztoiuclttohjox4ilrok6eex2qd42sxvgrhzuny",
+        "url": "https://bsky.app/profile/andydavies.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:ccw4zckt3u7hytoxemgoe654",
+      "published": null,
+      "wm-received": "2026-08-05T12:32:25Z",
+      "wm-id": 2016175,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Accw4zckt3u7hytoxemgoe654",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Joel",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:uadg5rghbytnpom6xe3xknqy/bafkreicog2f2jmy7zl5icb64sqapg7ztfuc2jsekxvkkwng6stpzou5re4",
+        "url": "https://bsky.app/profile/jgarplind.eurosky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:uadg5rghbytnpom6xe3xknqy",
+      "published": null,
+      "wm-received": "2026-08-05T12:32:25Z",
+      "wm-id": 2016176,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Auadg5rghbytnpom6xe3xknqy",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lars Hanisch",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:3bmkbznkbh6zdbcelgeocvwa/bafkreiayuesvijktsmwmaltk7ixjbbf2efek2iolg24a7vuui7q6u23spe",
+        "url": "https://bsky.app/profile/flensrocker.de"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:3bmkbznkbh6zdbcelgeocvwa",
+      "published": null,
+      "wm-received": "2026-08-05T11:58:54Z",
+      "wm-id": 2016148,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253A3bmkbznkbh6zdbcelgeocvwa",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brian Milne",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:q2nqsia2zwarz5oqa6wym45t/bafkreiggwvlixld67ylaxcram7cqktlof7imqev72f57tkwu5e7435bthi",
+        "url": "https://bsky.app/profile/briandmilne.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:q2nqsia2zwarz5oqa6wym45t",
+      "published": null,
+      "wm-received": "2026-08-05T11:24:58Z",
+      "wm-id": 2016138,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Aq2nqsia2zwarz5oqa6wym45t",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jean Carlos Morla · Conditec",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:asodcn76lcar32eawgwza3os/bafkreihdu7svdmxxke2j3uowr5kvyswa4tkbsfqzgn555hiiddbkh4wpaq",
+        "url": "https://bsky.app/profile/yankeemorla.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:asodcn76lcar32eawgwza3os",
+      "published": null,
+      "wm-received": "2026-08-05T11:24:56Z",
+      "wm-id": 2016137,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Aasodcn76lcar32eawgwza3os",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "fry69",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:web:fry69.dev/bafkreicxcocpyrg7bl4to3e6ncrizsove7lbi3swq3yhmn3x77h6ii3z2i",
+        "url": "https://bsky.app/profile/fry69.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:web:fry69.dev",
+      "published": null,
+      "wm-received": "2026-08-05T10:26:41Z",
+      "wm-id": 2016132,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aweb%253Afry69.dev",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ilja",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:6aglx53tojyuwxwueap5og3h/bafkreiclnob3mnfvo74an6ugrnbdikrkxcskndjojrdtkwf5vwjuu77z5u",
+        "url": "https://bsky.app/profile/fubits.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:6aglx53tojyuwxwueap5og3h",
+      "published": null,
+      "wm-received": "2026-08-05T10:26:39Z",
+      "wm-id": 2016131,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253A6aglx53tojyuwxwueap5og3h",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Marvin Hagemeister",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:qxrys7rkfs6q6zg3gqhij4gp/bafkreidpwounrag7idbpxlk3hymzx3kvme436ir5kissgx2unmaz7arheu",
+        "url": "https://bsky.app/profile/marvinh.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:qxrys7rkfs6q6zg3gqhij4gp",
+      "published": null,
+      "wm-received": "2026-08-05T10:26:35Z",
+      "wm-id": 2016130,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Aqxrys7rkfs6q6zg3gqhij4gp",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bobby Jack",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:lohty74lt55wjfuj65kizooa/bafkreiceyl43mfskcdlu7cizlz6yz7kfbtqm6ue52nl27yq6wyds23tgkm",
+        "url": "https://bsky.app/profile/bobbyjack.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:lohty74lt55wjfuj65kizooa",
+      "published": null,
+      "wm-received": "2026-08-05T10:26:31Z",
+      "wm-id": 2016129,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Alohty74lt55wjfuj65kizooa",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mastro.{js,ts}",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:slxmn2ejggkwwbzlej2axmx6/bafkreicizuiyr3nvt254ufexepmsoerc5gfcpdjg4b43l4hueantbveslm",
+        "url": "https://bsky.app/profile/mastrojs.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:slxmn2ejggkwwbzlej2axmx6",
+      "published": null,
+      "wm-received": "2026-08-05T10:26:29Z",
+      "wm-id": 2016128,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Aslxmn2ejggkwwbzlej2axmx6",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Nodaldot",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:zdm6uqbpyqgj3l3hso3qy2hv/bafkreihbo6cmcgwec2gdsv3chvy6bqrx4rnzauntvovl2uvrthrausr4qq",
+        "url": "https://bsky.app/profile/nodaldot.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:zdm6uqbpyqgj3l3hso3qy2hv",
+      "published": null,
+      "wm-received": "2026-08-05T09:54:08Z",
+      "wm-id": 2016122,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Azdm6uqbpyqgj3l3hso3qy2hv",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tobias Fedder",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:a64baelxsmvy6aonnbfhbirv/bafkreigcjhsxk6uz4plibvdto6t23vicadmispnvgq2hlpj23x2fyilngy",
+        "url": "https://bsky.app/profile/tfedder.de"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:a64baelxsmvy6aonnbfhbirv",
+      "published": null,
+      "wm-received": "2026-08-05T09:54:08Z",
+      "wm-id": 2016123,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Aa64baelxsmvy6aonnbfhbirv",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stuart Langridge",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:y52xi2qdwcfsjkrno3aykkhc/bafkreiakpmfei5j6asycfke34nwmb2l2lbw42wg22bic7m5azmii64iflq",
+        "url": "https://bsky.app/profile/sil.kryogenix.org"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:y52xi2qdwcfsjkrno3aykkhc",
+      "published": null,
+      "wm-received": "2026-08-05T09:26:04Z",
+      "wm-id": 2016120,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Ay52xi2qdwcfsjkrno3aykkhc",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "2026-07-30-pokemon-emerald": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Anneke",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/cf2c28fdea2e613608a429c30c654af979607caca6055ec2bf37d08b21bb5468.jpg",
+        "url": "https://front-end.social/@Anneke"
+      },
+      "url": "https://front-end.social/@rem/117011546024585878#favorited-by-109326794976300711",
+      "published": null,
+      "wm-received": "2026-08-01T18:28:59Z",
+      "wm-id": 2015384,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117011546024585878/109326794976300711",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Shaw",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:cfzewyyzcr75z4t3vhew6o7g/bafkreiesdeglqoec252nsbmpugpzfzrh3vutlta4wdjv6g3wdfbkluewnu",
+        "url": "https://bsky.app/profile/shaw.city"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrxfp3iyps2z#liked_by_did:plc:cfzewyyzcr75z4t3vhew6o7g",
+      "published": null,
+      "wm-received": "2026-07-31T17:55:55Z",
+      "wm-id": 2015191,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrxfp3iyps2z/did%253Aplc%253Acfzewyyzcr75z4t3vhew6o7g",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Seb Lee-Delisle",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:gdbp75g6cq7oq5ueruwdkzga/bafkreiew67rbw3wjrzo6aojtze3fbdncmg5rrmubw7k7f56fssydxr63pe",
+        "url": "https://bsky.app/profile/seblee.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:gdbp75g6cq7oq5ueruwdkzga",
+      "published": null,
+      "wm-received": "2026-07-31T14:00:40Z",
+      "wm-id": 2015136,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Agdbp75g6cq7oq5ueruwdkzga",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steve Woodson, CPACC",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:wznkfwp7jakqhtw4u7knvvrp/bafkreibewl5t6kixh4mfjf65b3baskuijxpbg4emc2ldf5cygnupnl3ode",
+        "url": "https://bsky.app/profile/stevenwoodson.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:wznkfwp7jakqhtw4u7knvvrp",
+      "published": null,
+      "wm-received": "2026-07-31T12:36:56Z",
+      "wm-id": 2015128,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Awznkfwp7jakqhtw4u7knvvrp",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ant Stanley",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:dycs4ftbbdwaozxtvqi26sof/bafkreifzjsqsa3tesvau4sitdqvhcap3uspmjpmrlaascobsbpyqklawtq",
+        "url": "https://bsky.app/profile/iamstan.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:dycs4ftbbdwaozxtvqi26sof",
+      "published": null,
+      "wm-received": "2026-07-31T11:29:40Z",
+      "wm-id": 2015075,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Adycs4ftbbdwaozxtvqi26sof",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Wes Souza",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:4qy26t5ss4zosz2mi3hdzuq3/bafkreiebnoc2or7gnhhobwws44jrkrdb3htdtaqyf3ihkket5eyqnc3kz4",
+        "url": "https://bsky.app/profile/wes.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:4qy26t5ss4zosz2mi3hdzuq3",
+      "published": null,
+      "wm-received": "2026-07-31T10:57:54Z",
+      "wm-id": 2015074,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253A4qy26t5ss4zosz2mi3hdzuq3",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jack Franklin",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:imamkyyqwpri2ealj35o5lob/bafkreicioruvnglluisx4ww6c5eeibagvutzdzugw6bzhyq7covlpjclbi",
+        "url": "https://bsky.app/profile/jackf.io"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:imamkyyqwpri2ealj35o5lob",
+      "published": null,
+      "wm-received": "2026-07-31T10:24:07Z",
+      "wm-id": 2015071,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Aimamkyyqwpri2ealj35o5lob",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Smylers",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:pjz3dytmsnz3oek5bx3cz5c3/bafkreib3g3ur4mhlenae6lhe7tu5rnlofnfez2tzj7cfem64colic4iyji",
+        "url": "https://bsky.app/profile/smylers.uk"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:pjz3dytmsnz3oek5bx3cz5c3",
+      "published": null,
+      "wm-received": "2026-07-31T09:00:56Z",
+      "wm-id": 2015065,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Apjz3dytmsnz3oek5bx3cz5c3",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/117011546024585878#favorited-by-109302579306985968",
+      "published": null,
+      "wm-received": "2026-07-31T08:29:57Z",
+      "wm-id": 2015064,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117011546024585878/109302579306985968",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "MichD",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/d98aa31f616a11891de3ed01e1f124748ddb1640ec8906ad734d8624e1e29e8f.jpg",
+        "url": "https://mastodon.social/@MichDdev"
+      },
+      "url": "https://front-end.social/@rem/117011546024585878#favorited-by-109313098005142913",
+      "published": null,
+      "wm-received": "2026-07-31T07:05:05Z",
+      "wm-id": 2015062,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117011546024585878/109313098005142913",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pez Pengelly",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8cc1868e39471fe6f0d42db9849b8f121d32cbac5b540cbaf97861c18643c1d7.png",
+        "url": "https://mastodon.social/@pezillionaire"
+      },
+      "url": "https://front-end.social/@rem/117011546024585878#favorited-by-109288770632377261",
+      "published": null,
+      "wm-received": "2026-07-31T05:23:30Z",
+      "wm-id": 2015049,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117011546024585878/109288770632377261",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sara M",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:lz3iwqbv6dbuofm46ot3bnkg/bafkreigblfe3bc2pzwikyh74hgg2dptwwvztrmqgaxln6mhrx3qgs35hu4",
+        "url": "https://bsky.app/profile/anthocyanina.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:lz3iwqbv6dbuofm46ot3bnkg",
+      "published": null,
+      "wm-received": "2026-07-31T02:20:45Z",
+      "wm-id": 2015041,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Alz3iwqbv6dbuofm46ot3bnkg",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kisei",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/234c3add1a16ea10795d726292f83576d92666c645cba84b0966a0932c41e2f3.png",
+        "url": "https://mstdn.social/@drkisei"
+      },
+      "url": "https://front-end.social/@rem/117011546024585878#favorited-by-116821332280415161",
+      "published": null,
+      "wm-received": "2026-07-31T02:20:31Z",
+      "wm-id": 2015040,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117011546024585878/116821332280415161",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:v3mi3m5j6nupjpcms7mytr4j/bafkreidelveguesbudvis4hf4rosu4yudbdijfkaxpgcpwvgzkeqiu6xdq",
+        "url": "https://bsky.app/profile/wildrummy.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:v3mi3m5j6nupjpcms7mytr4j",
+      "published": null,
+      "wm-received": "2026-07-31T01:44:47Z",
+      "wm-id": 2015039,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Av3mi3m5j6nupjpcms7mytr4j",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "HTeuMeuLeu",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/3225fbc3b19c387f7949beed0c2784770b4acf71b7288d41e6d66c8683f799df.png",
+        "url": "https://mastodon.social/@HTeuMeuLeu"
+      },
+      "url": "https://front-end.social/@rem/117011546024585878#favorited-by-109302083710129908",
+      "published": null,
+      "wm-received": "2026-07-31T00:55:06Z",
+      "wm-id": 2015036,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117011546024585878/109302083710129908",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Schofield",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8daee2e43ad5db5086664e27fc4d6189ae1546a92801fbd0ce6e3e5f384f3f58.jpg",
+        "url": "https://mastodon.social/@urlyman"
+      },
+      "url": "https://front-end.social/@rem/117011546024585878#favorited-by-109338564626822745",
+      "published": null,
+      "wm-received": "2026-07-30T23:52:50Z",
+      "wm-id": 2015033,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117011546024585878/109338564626822745",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kwon",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/61eecf0e80937f09bf7bb648ea49e49b44dbf3ee60b44bfceab6fc9ddee828b5.jpg",
+        "url": "https://mastodon.social/@rjkwon"
+      },
+      "url": "https://front-end.social/@rem/117011546024585878#favorited-by-109300108102703693",
+      "published": null,
+      "wm-received": "2026-07-30T23:52:50Z",
+      "wm-id": 2015034,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117011546024585878/109300108102703693",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Evil Jim O’Donnell",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:mvy6jvolas42qzt6yezkyzou/bafkreihrtr3s3bwdrhsmqfbdxhki3ycpmvpyq74rx6o7sc26khjxjrt5qu",
+        "url": "https://bsky.app/profile/eatyourgreens.org.uk"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:mvy6jvolas42qzt6yezkyzou",
+      "published": null,
+      "wm-received": "2026-07-30T22:37:42Z",
+      "wm-id": 2015028,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Amvy6jvolas42qzt6yezkyzou",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David ????️‍????????????‍⬛????????????",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:kzoy4wiouudc3skbrfwdz7rt/bafkreie6t7j5k4twbcks6fsxea2skcnlcyist4mlruer27tylolmyxj534",
+        "url": "https://bsky.app/profile/blue-labs.org"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:kzoy4wiouudc3skbrfwdz7rt",
+      "published": null,
+      "wm-received": "2026-07-30T22:05:35Z",
+      "wm-id": 2015026,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Akzoy4wiouudc3skbrfwdz7rt",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ville Vanninen",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:soovh5v22jrqjc3yponzgjnj/bafkreifo2g74rwbgavr4zte5qemmpzkiv6ffh355wbpdogni45jdkr3lpy",
+        "url": "https://bsky.app/profile/sakamies.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:soovh5v22jrqjc3yponzgjnj",
+      "published": null,
+      "wm-received": "2026-07-30T21:32:39Z",
+      "wm-id": 2015010,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Asoovh5v22jrqjc3yponzgjnj",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "peruho",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:ezu4twnwrmbcdsjbajiqmnv6/bafkreibn3m5ck26htzj5lhpmmgvdtzkesbr4ex2tqqodbmxaghxmee7cxm",
+        "url": "https://bsky.app/profile/peruho.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:ezu4twnwrmbcdsjbajiqmnv6",
+      "published": null,
+      "wm-received": "2026-07-30T21:32:39Z",
+      "wm-id": 2015011,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Aezu4twnwrmbcdsjbajiqmnv6",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Fyrd",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:uviwovtwaypg2lil4a6bdapd/bafkreicyaylet46tvwsxvxntjgq2bfw7vk2b6d2j2uli62l3stgtpedjlu",
+        "url": "https://bsky.app/profile/alexis.deveria.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:uviwovtwaypg2lil4a6bdapd",
+      "published": null,
+      "wm-received": "2026-07-30T21:32:38Z",
+      "wm-id": 2015009,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Auviwovtwaypg2lil4a6bdapd",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "shardcore",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:mr3kh3ms4rihxtc7eoqqsv3k/bafkreifm7dqi5yrt6twalyhlulahegu24f2mmda5jt5tuvuloqzkzzpity",
+        "url": "https://bsky.app/profile/shardcore.org"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:mr3kh3ms4rihxtc7eoqqsv3k",
+      "published": null,
+      "wm-received": "2026-07-30T21:32:37Z",
+      "wm-id": 2015008,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Amr3kh3ms4rihxtc7eoqqsv3k",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mark Fraser",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:zgfongymbkd2mgornerhc4ix/bafkreialsnyfaz7yekxbxpf4fy6zgneokziwpyssnt5sp642gujkpd5sjy",
+        "url": "https://bsky.app/profile/mfraz74.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:zgfongymbkd2mgornerhc4ix",
+      "published": null,
+      "wm-received": "2026-07-30T21:32:35Z",
+      "wm-id": 2015006,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Azgfongymbkd2mgornerhc4ix",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jrlarsen",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:dx4hfgdeyfswmn2muss7gy6s/bafkreifebarzjqzq7kz6uqq4kdtelxbl7y7mof2zrr2cjen3bboophra5a",
+        "url": "https://bsky.app/profile/room51.co.uk"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mrvdfj5qyk2z#liked_by_did:plc:dx4hfgdeyfswmn2muss7gy6s",
+      "published": null,
+      "wm-received": "2026-07-30T21:32:35Z",
+      "wm-id": 2015007,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mrvdfj5qyk2z/did%253Aplc%253Adx4hfgdeyfswmn2muss7gy6s",
+      "wm-target": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/tif/2026-07-30-pokemon-emerald",
       "wm-property": "like-of",
       "wm-private": false
     }
