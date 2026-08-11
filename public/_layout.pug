@@ -1,5 +1,11 @@
 extends _partials/layout
 
+
+block meta
+  if current.data.is == "books"
+    meta(name="og:description" content=`Reviews and ratings for all the ${collections.books.length} books I've read since 2017`)
+
+
 block content
   main.content
     if current.source === 'index'
