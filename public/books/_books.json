@@ -1,5 +1,22 @@
 [
   {
+    "title": "Three Men in a Boat (Three Men, #1)",
+    "seriesEntry": "Three Men in a Boat",
+    "seriesNumber": "1",
+    "series": "Three Men",
+    "author": "Jerome K. Jerome",
+    "published": 1889,
+    "pages": 185,
+    "goodreads": "https://www.goodreads.com/book/show/4921.Three_Men_in_a_Boat",
+    "goodreads_id": 4921,
+    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1699561681l/4921._SX315_.jpg",
+    "read": "2026-08-09T00:00:00.000Z",
+    "start": "2026-07-30T00:00:00.000Z",
+    "rating": 4,
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2026/three-men-in-a-boat.md",
+    "slug": "three-men-in-a-boat"
+  },
+  {
     "title": "Human Software",
     "author": "Richard W. Bown",
     "published": 2025,
