@@ -1,8 +1,12 @@
 [
   {
-    "title": "The Talented Mr. Ripley (Ripley, #1)",
-    "cover": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1746213953l/2247142._SX50_.jpg",
-    "goodreads": "https://www.goodreads.com/book/show/2247142.The_Talented_Mr_Ripley",
-    "author": "Patricia Highsmith"
+    "slug": "i-who-have-never-known-men",
+    "title": "I Who Have Never Known Men",
+    "author": "Jacqueline Harpman, Sophie Mackintosh, Ros Schwartz",
+    "cover": "/images/books/book-692.avif",
+    "id": "book-692",
+    "pages": "?",
+    "started": null,
+    "published": 1995
   }
 ]
