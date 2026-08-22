@@ -1,12 +1,11 @@
 [
   {
+    "id": "book-692",
     "slug": "i-who-have-never-known-men",
     "title": "I Who Have Never Known Men",
     "author": "Jacqueline Harpman, Sophie Mackintosh, Ros Schwartz",
     "cover": "/images/books/book-692.avif",
-    "id": "book-692",
-    "pages": "?",
-    "started": null,
+    "started": "2026-08-20 23:00:00+00:00",
     "published": 1995
   }
 ]

@@ -18,8 +18,10 @@ title: 'Books I Read 📖'
           img(width="64" src=`${book.cover}`)
           div
             p.title
-              a(href=`${book.goodreads}` target="_blank")= book.title
+              strong= book.title
             p.by By #{book.author}
+            p
+              small Published #{book.published}
 
   .post-content
     h2 Previously
@@ -52,7 +54,7 @@ title: 'Books I Read 📖'
           - rating = `${ '★'.repeat(review.rating) }${ '☆'.repeat(5 - review.rating)}`
           - url = book.inputPath ? filenameToUrl(book.inputPath) : '#'
           div(data-id=`${book.slug}`)
-            img.cover(width="64" src=`/images/books/${review.goodreads_id}.avif`)
+            img.cover(width="64" src=`/images/books/${review.id || review.goodreads_id}.avif`)
             p.when(data-date=`${moment(review.read).format('yyyy-MM-dd')}`) #{moment(review.read).format(`d-MMM ''yy`)} #{readCount(review.read)}
               br
               span(title=`${moment(review.read).format('yyyy-MM-dd')}`) #{duration(review.start, review.read)}

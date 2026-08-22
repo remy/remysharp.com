@@ -1,14 +1,48 @@
 ---
-title: "Three Men in a Boat"
-author: "Jerome K. Jerome"
-published: 1889
-pages: 185
-goodreads: https://www.goodreads.com/book/show/4921.Three_Men_in_a_Boat
-goodreads_id: 4921
-cover: https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1699561681l/4921._SX315_.jpg
-read: 2026-08-09T00:00:00.000Z
-start: 2026-07-30T00:00:00.000Z
+id: book-469
+title: Three Men in a Boat
+pages: 206
 rating: 4
+published: 1889
+start: '2026-07-30 21:46:14.641000+00:00'
+read: '2026-08-09 21:41:19.264000+00:00'
+cover: /images/books/book-469.avif
+slug: three-men-in-a-boat
+clippings:
+  - page: 21
+    text: >-
+      There were no more diseases after zymosis, so I concluded there was
+      nothing else the matter with me.
+  - page: 31
+    text: And don’t stuff up your head with things you don’t understand.”
+  - page: 88
+    text: >-
+      Rainwater is the chief article of diet at supper. The bread is two-thirds
+      rainwater, the beefsteak-pie is exceedingly rich in it, and the jam, and
+      the butter, and the salt, and the coffee have all combined with it to make
+      soup.
+    note: hashtag camping
+  - page: 230
+    text: >-
+      But who wants to be foretold the weather? It is bad enough when it comes,
+      without our having the misery of knowing about it beforehand.
+  - page: 527
+    text: >-
+      Harris said that the danger about desert islands, as far as he had heard,
+      was that they were so damp: but George said no, not if properly drained.
+  - page: 780
+    text: ye miserable, long-nosed, dirty-looking scoundrel,
+    note: the dog to the kettle!
+  - page: 806
+    text: >-
+      George suggested walking back to Henley and assaulting a policeman, and so
+      getting a night’s lodging in the station-house. But then there was the
+      thought, “Suppose he only hits us back and refuses to lock us up!”\
+
+      We could not pass the whole night fighting policemen. Besides, we did not
+      want to overdo the thing and get six months.
+    note: This book is full of stupid and delightful lines like this.
+
 ---
 
 Really enjoyed it. Lots of stupid tales - surprisingly fresh for 1889.
