@@ -63871,6 +63871,25 @@
       "like-of": "https://remysharp.com/2026/07/11/wildcards-in-css",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lea Verou, PhD",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:eagnfcoqnbtzpkglrtej6ayg/bafkreifqblqmhftcg7nlualjssskxth7dll6q5najlfee26yuzfkq2vm64",
+        "url": "https://bsky.app/profile/lea.verou.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mtkbqgsaf22d#liked_by_did:plc:eagnfcoqnbtzpkglrtej6ayg",
+      "published": null,
+      "wm-received": "2026-08-20T22:48:38Z",
+      "wm-id": 2024956,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mtkbqgsaf22d/did%253Aplc%253Aeagnfcoqnbtzpkglrtej6ayg",
+      "wm-target": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/07/11/wildcards-in-css",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "2026-07-12-4e9c9652": [
@@ -64499,6 +64518,139 @@
       "wm-received": "2026-08-05T09:26:04Z",
       "wm-id": 2016120,
       "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253Ay52xi2qdwcfsjkrno3aykkhc",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:4v5fmlg5l2ejyxnzumnzqtyp/bafkreihqafp2wntkwo4mzxmkf2qgej67t6kezfssxb55k34uzifwxtrb5a",
+        "url": "https://bsky.app/profile/michalhorak.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mtgj3yay7s2e#liked_by_did:plc:4v5fmlg5l2ejyxnzumnzqtyp",
+      "published": null,
+      "wm-received": "2026-08-20T13:03:12Z",
+      "wm-id": 2024852,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mtgj3yay7s2e/did%253Aplc%253A4v5fmlg5l2ejyxnzumnzqtyp",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vinkius",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:wl4yqrcbtaaykjpslissa4in/bafkreih5thp4hzzzujr67d3kkm7xtz2mbo2ohd5lsn3dgxcmq7tngy4xpm",
+        "url": "https://bsky.app/profile/vinkius-mcp-ai.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mtgj3yay7s2e#liked_by_did:plc:wl4yqrcbtaaykjpslissa4in",
+      "published": null,
+      "wm-received": "2026-08-19T13:23:33Z",
+      "wm-id": 2024466,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mtgj3yay7s2e/did%253Aplc%253Awl4yqrcbtaaykjpslissa4in",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jfroehlich",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/b321d8321d850cd6cad3aa097331c85c77d28798752d09eceaca496d515b1910.png",
+        "url": "https://mastodon.social/@jfroehlich"
+      },
+      "url": "https://front-end.social/@rem/117121671786968448#favorited-by-109291952666240180",
+      "published": null,
+      "wm-received": "2026-08-19T11:29:48Z",
+      "wm-id": 2024445,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117121671786968448/109291952666240180",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "DHeadshot's Alt",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/2ce37e836fc1cd7092dfc5df37e1ebd17765c18802fe9e2e54709381e71ef3cd.jpg",
+        "url": "https://topspicy.social/@ddlyh"
+      },
+      "url": "https://front-end.social/@rem/117121671786968448#favorited-by-109337549552443617",
+      "published": null,
+      "wm-received": "2026-08-19T10:55:16Z",
+      "wm-id": 2024440,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117121671786968448/109337549552443617",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bundyo",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/56d5b96865c7c882366927b94acc6e029ea2394a6f1e51055e8d6e636a350960.jpg",
+        "url": "https://bundyo.com/@bundyo"
+      },
+      "url": "https://front-end.social/@rem/117121671786968448#favorited-by-109337536556824554",
+      "published": null,
+      "wm-received": "2026-08-19T10:55:12Z",
+      "wm-id": 2024439,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117121671786968448/109337536556824554",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:adozrdwbzo67xzu7pl23wkyq/bafkreibg4ykl2oyzp5h26ilnyyun3kqk4aimonqfzy35bf4ded32uotqiy",
+        "url": "https://bsky.app/profile/nonzerosumjames.mastodon.social.ap.brid.gy"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mtgj3yay7s2e#liked_by_did:plc:adozrdwbzo67xzu7pl23wkyq",
+      "published": null,
+      "wm-received": "2026-08-19T10:39:06Z",
+      "wm-id": 2024436,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mtgj3yay7s2e/did%253Aplc%253Aadozrdwbzo67xzu7pl23wkyq",
+      "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "startyparty",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:n5rvzal42653bux7x2mt65gy/bafkreieshf3u5u7wdw6zffl7vv43txm4rniye3iewjrbjfitab4d4jogd4",
+        "url": "https://bsky.app/profile/startyparty.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3msd6wudexk25#liked_by_did:plc:n5rvzal42653bux7x2mt65gy",
+      "published": null,
+      "wm-received": "2026-08-15T14:23:32Z",
+      "wm-id": 2023448,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3msd6wudexk25/did%253Aplc%253An5rvzal42653bux7x2mt65gy",
       "wm-target": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2026/08/05/progressive-enhancement-inside-of-javascript",
