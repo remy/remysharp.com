@@ -22,7 +22,10 @@ clippings:
 seriesEntry: The Talented Mr Ripley
 seriesNumber: '1'
 series: Ripley
-
+identifiers:
+  isbn: 9780099282877
+  hardcover: the-talented-mr-ripley
+  goodreads: 45415375
 ---
 
 Really enjoyed it, weirdly relatable and kept coming back for more.

@@ -77,4 +77,6 @@ block content
 
       if date
         .misc-content
-          p.metadata Last read on <time datetime="#{ moment(lastDate(read)).format('yyyy-MM-dd HH:mm:ss') }">#{moment(lastDate(read)).format('d-MMM yyyy')}</time>, starting on <time datetime="#{ moment(lastDate(start)).format('yyyy-MM-dd HH:mm:ss') }">#{moment(lastDate(start)).format('d-MMM yyyy')}</time>, #{ pages } pages.<br><a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/#{current.inputPath}">Edit this review</a>!{ goodreads ? ` | <a target="_blank" rel="noopener" href="${goodreads}">Goodreads page</a>` : '' }
+          p.metadata Last read on <time datetime="#{ moment(lastDate(read)).format('yyyy-MM-dd HH:mm:ss') }">#{moment(lastDate(read)).format('d-MMM yyyy')}</time>, starting on <time datetime="#{ moment(lastDate(start)).format('yyyy-MM-dd HH:mm:ss') }">#{moment(lastDate(start)).format('d-MMM yyyy')}</time>, #{ pages } pages.<br><a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/#{current.inputPath}">Edit this review</a> !{ goodreads ? ` | <a target="_blank" rel="noopener" href="${goodreads}">Goodreads page</a>` : '' }
+
+          //- !{ identifiers.goodreads ? ` | <a target="_blank" rel="noopener" href="https://www.goodreads.com/book/show/${identifiers.goodreads}">Goodreads page</a>` : '' }!{ identifiers.isbn ? ` | ISBN ${isbn}` : '' }

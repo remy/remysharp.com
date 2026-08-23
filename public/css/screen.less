@@ -2042,12 +2042,19 @@ h2 > label {
 
     p {
       grid-column: 2;
+      font-size: clamp(0.8rem, 3vw, 1rem);
+      line-height: clamp(0.8rem, 4vw, 1.6rem);
+    }
+
+    @media only screen and (min-width: 720px) {
+      strong {
+        width: 100px;
+      }
     }
 
     strong {
-      // margin-right: 4px;
+      margin-right: 4px;
       display: inline-block;
-      width: 130px;
 
       &:after {
         content: ': ';
