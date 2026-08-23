@@ -1,6 +1,7 @@
 ---
 id: book-133
 title: 'The Talented Mr Ripley (Ripley, #1)'
+author: Patricia Highsmith
 pages: 282
 rating: 4
 published: 1955

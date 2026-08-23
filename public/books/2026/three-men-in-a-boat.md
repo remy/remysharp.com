@@ -1,6 +1,7 @@
 ---
 id: book-469
 title: Three Men in a Boat
+author: Jerome K. Jerome
 pages: 206
 rating: 4
 published: 1889
