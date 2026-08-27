@@ -9,7 +9,7 @@ tags:
 
 # 16 for Tia
 
-Tia would have turned 16 this year. Another marker that wouldn't come to be. After Tia was lost and born to stillbirth on 31 August 2010, we quickly had a slew of _firsts_. The first Christmas without her. First mother's day. First birthday. First day at nursery, first day of school. Not turning 10. 16 is another big age. Then so is 18 and all the others.
+[Tia](/search?q=tag:tia) would have turned 16 this year. Another marker that wouldn't come to be. After Tia was lost and born to stillbirth on 31 August 2010, we quickly had a slew of _firsts_. The first Christmas without her. First mother's day. First birthday. First day at nursery, first day of school. Not turning 10. 16 is another big age. Then so is 18 and all the others.
 
 As a family, we always try to mark her _day_ with something we do together. Something special. For her 10th year, Julie ran ten 10K runs. We were all incredibly proud.
 

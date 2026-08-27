@@ -86,6 +86,41 @@
       }
     }
 
+    if (query.startsWith('tag:')) {
+      titleOnly = true;
+      query = query.replace(/^tag:\s?/, '');
+
+      if (!query.trim()) {
+        return;
+      }
+
+      const res = window.searchData
+        .filter((post) => {
+          if (post.t && post.t.includes(query)) {
+            return post;
+          }
+          return false;
+        });
+
+      if (res.length === 0) {
+        $results.innerHTML = 'No posts tagged with "' + query + '"';
+        return;
+      }
+
+      var html = res
+        .sort((a, b) => {
+          if (a.date === b.date) {
+            return a.title > b.title ? -1 : 1;
+          }
+          return a.date > b.date ? -1 : 1;
+        })
+        .slice(0, 20)
+        .map((res) => interpolate(template, res))
+        .join('');
+      $results.innerHTML = html;
+      return;
+    }
+
     const cleanQ = cleanQuery(query);
 
     const re = new RegExp(query.replace(/\s+/g, '|'), 'ig');
@@ -160,9 +195,8 @@
       .slice(0, 20)
       .map((res) => {
         const d = new Date(res.date);
-        res.niceDate = `${d.getDate()}-${
-          months[d.getMonth()]
-        } ${d.getFullYear()}`;
+        res.niceDate = `${d.getDate()}-${months[d.getMonth()]
+          } ${d.getFullYear()}`;
         return res;
       })
       .map((res) => interpolate(template, res))
