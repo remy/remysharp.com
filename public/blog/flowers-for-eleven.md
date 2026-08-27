@@ -3,6 +3,7 @@ title: 'Flowers for Eleven'
 date: '2021-08-30'
 tags:
   - personal
+  - tia
 summary: 'This year has been different. As each year has always been different. No different bad or different good. Different… peaceful.'
 ---
 

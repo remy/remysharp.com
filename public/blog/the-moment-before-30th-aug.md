@@ -4,6 +4,7 @@ summary: "It's not fair. It's never fair when a child goes before its parents. I
 date: 2024-08-30
 tags:
 - personal
+- tia
 ---
 
 # The moment before: 30th Aug

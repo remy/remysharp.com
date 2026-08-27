@@ -3,6 +3,7 @@ title: Fifteen
 date: 2025-08-30
 tags:
   - personal
+  - tia
 ---
 
 I'd been waiting for the grief to find me. I wasn't actively looking for it, I know which memories to poke to feel real pain, but I wanted to create space for it to find me, and throughout the month of August, this year, it couldn't find me. Until today. 30th August. This day is the knife edge. The day, 15 years ago, that [Tia](https://remysharp.com/search?q=tia) still had a heartbeat, still kicked, was on her way. Julie was in (long) labour. On this same day, at some point, her heart gave out, she died before she could take her first breath and the midwives had to tell us that they couldn't find that heartbeat any more. Julie was in labour, so  Tia was coming. Except that her delivery at 3am on 31st August would be the other side of our lives. The side we live on today: our derailed and rebuilt lives that exist in now.

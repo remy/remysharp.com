@@ -4,6 +4,7 @@ summary: Unedited stream of thinking about my lost girl
 date: "2019-08-24 09:31:43"
 tags:
 - personal
+- tia
 ---
 
 # The ninth August

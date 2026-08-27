@@ -4,6 +4,7 @@ summary: 'Some raw feelings I needed to put into my blog. Content warning: still
 date: 2020-08-13
 tags:
   - personal
+  - tia
 ---
 
 # Ten
