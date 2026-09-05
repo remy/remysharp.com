@@ -10,7 +10,8 @@
     "trailingComma": "es5"
   },
   "scripts": {
-    "dev": "nodemon -w lib/ lib/dev.js",
+    "dev": "npm run clean-sync-conflict; nodemon -w lib/ lib/dev.js",
+    "clean-sync-conflict": "find . -type f -name '*.sync-conflict*' -delete",
     "update": "node lib/currently-reading.js",
     "links": "node lib/links.js",
     "version": "sh bin/hashit.sh",
@@ -49,8 +50,8 @@
   },
   "type": "commonjs",
   "devDependencies": {
+    "@11ty/eleventy-dev-server": "^2.0.8",
     "@types/node": "^25.0.3",
-    "browser-sync": "^3.0.4",
     "chokidar": "^5.0.0",
     "eslint-plugin-node": "^11.0.0",
     "js-yaml": "^4.1.0",
