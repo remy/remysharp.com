@@ -87,11 +87,11 @@ block content
                   span &nbsp;&bullet;&nbsp;ISBN #{identifiers.isbn}
                 if identifiers.storygraph
                   span &nbsp;&bullet;&nbsp;
-                  a(target="_blank" rel="noopener" href="https://www.storygraph.com/books/{{identifiers.storygraph}}") Storygraph
+                  a(target="_blank" rel="noopener" href=`https://app.thestorygraph.com/books/${identifiers.storygraph}`) Storygraph
                 if identifiers.hardcover
                   span &nbsp;&bullet;&nbsp;
-                  a(target="_blank" rel="noopener" href="https://hardcover.app/books/{{identifiers.hardcover}}") Hardcover
+                  a(target="_blank" rel="noopener" href=`https://hardcover.app/books/${identifiers.hardcover}`) Hardcover
 
                 if identifiers.goodreads
                   span &nbsp;&bullet;&nbsp;
-                  a(target="_blank" rel="noopener" href="https://www.goodreads.com/book/show/{{identifiers.goodreads}}") Goodreads
+                  a(target="_blank" rel="noopener" href=`https://www.goodreads.com/book/show/${identifiers.goodreads}`) Goodreads
