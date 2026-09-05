@@ -50,9 +50,9 @@ Bleak. Engaging. Thought provoking. Sad.
 
 This was recommended as something like if you enjoy Silo (the Wool trilogy - which I own, but hadn't read - but _have_ watched the TV series). I'm going to say this up front: it's only like Silo in respect to being in a deep hole and not really knowing why.
 
-The story is written first hand from our unnamed protagonist as her last mark in the world. A world, which she's the last person left. Initially I found the style off putting, because it's a non-stop run of sentences. No chapters. No breaks. Just stream of conciousness. However, as I got to know the character, it felt natural and sort of ended up working.
+The story is written first hand from our unnamed protagonist as her last mark in the world. A world, which she's the last person left. Initially I found the style off putting, because it's a non-stop run of sentences. No chapters. No breaks. Just stream of consciousness. However, as I got to know the character, it felt natural and sort of ended up working.
 
-The title also did accidentally draw me into the assumption that _not knowing men_ is core to the story, but really it's not. I certainly comes up, but it's not the core tennant.
+The title also did accidentally draw me into the assumption that _not knowing men_ is core to the story, but really it's not. I certainly comes up, but it's not the core tenant.
 
 It's one of the last quotes in the books that stood out to me the most:
 
