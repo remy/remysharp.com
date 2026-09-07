@@ -1,6 +1,7 @@
 ---
 title: "I'm not done using AI"
 date: '2026-08-13'
+draft: true
 tags:
   - web
 ---

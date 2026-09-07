@@ -15,6 +15,7 @@ block meta
   meta(name="og:title" content=`${title}`)
   meta(property="og:site_name" content="Remy's b:log")
   meta(property="og:type" content="article")
+  meta(name="og:author" content="Remy Sharp")
 
   - var img = image;
   - if (!img && yield.indexOf('<img') !== -1) img = (yield.replace(/\n/g, '').match(/<img\b[^>]+?src\s*=\s*['"]?([^\s'"?#>]+)/) || [,])[1];

@@ -1,4 +1,5 @@
 - latest = collections.latest
+- book = collections.currentlyReading[0]
 
 h1.title
   img.icon.photo(alt="Remy Sharp's blog" src="/images/avatar-2022-square.avif" height=50 width=50)
@@ -38,7 +39,6 @@ article.post.lists#elsewhere
   header.post-header
     h2.title Remy Elsewhere
   .post-content
-    ul.flickr
     ul.links
       li
         a(href="https://leftlogic.com" rel="me" title="my business: hire me") Left Logic
@@ -73,3 +73,23 @@ article.post.lists#elsewhere
       li
         a(href="/speaking/" rel="me" title="my conf talks") Speaking
         | &nbsp;- my conf talks
+    div#currently
+      #currentlyReading
+        h3 Reading
+        .track
+          div.cover
+            img(width="64" src=`${book.cover}`)
+          p
+            span.title= book.title
+            span.by By #{book.author}
+
+      #recentlyListening
+        script(src="/js/spin.mjs")
+
+      #currentlyLinking
+        h3 Linking
+        div
+          p
+            a.title(href=`${collections.links[0].url}`)= collections.links[0].data.title
+            span.by By&nbsp;
+              a.by(href=`${collections.links[0].data.url}`)= collections.links[0].data.url.split('/')[2]
