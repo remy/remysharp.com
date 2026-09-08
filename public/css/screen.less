@@ -1030,7 +1030,96 @@ abbr {
   border-bottom: 1px dotted rgb(0, 0, 0);
 }
 
+@keyframes sheen {
+
+  0%,
+  70% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: -50% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body>p:first-child {
+    animation: none;
+  }
+}
+
+@property --wire {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
 #notice {
+  background: var(--c-bg-alt);
+  padding: 20px;
+}
+
+.wire {
+  margin: 0 0;
+  padding: 1.15rem 1.4rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  color: #f4f4f5;
+  text-wrap: balance;
+
+  background:
+    linear-gradient(#141419, #141419) padding-box,
+    conic-gradient(from var(--wire),
+      #ff2d95, #a855f7, #22d3ee, #ff2d95) border-box;
+
+  animation: wire-spin 5s linear infinite;
+
+  a {
+    color: #22d3ee;
+    font-weight: 700;
+
+    text-decoration: none;
+    border-bottom: 2px solid #ff2d95;
+    padding-bottom: 1px;
+
+    &:hover {
+      background: unset;
+      color: #ff2d95;
+      border-bottom-color: #22d3ee;
+    }
+  }
+}
+
+@keyframes wire-spin {
+  to {
+    --wire: 360deg;
+  }
+}
+
+@keyframes sheen {
+
+  0%,
+  70% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: -50% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #notice {
+    animation: none;
+  }
+}
+
+
+
+
+#_notice {
   font-weight: 200;
   box-shadow: 0px 0px 46px -7px rgba(255, 249, 51, 0.42);
   position: static;
