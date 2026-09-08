@@ -1,9 +1,9 @@
 ---
 title: 'Before you buy an LTE Pixel Watch (for your teen)'
-date: 2026-04-20
-draft: true
+date: 2026-09-07
 tags:
   - personal
+  - iot
 ---
 
 # Before you buy an LTE Pixel Watch (for your teen)
@@ -30,6 +30,8 @@ There are hack work arounds, but yikes, tech support isn't fun.
 
 eSIM's in the UK *for smart watches* are only available for EE and Vodaphone - it's a mobile number pairing thing and it does also cost extra. EE for instance is an additional £7 _on top of_ your existing subscription.
 
+There's a hack where you get an eSIM from Vodaphone, activate it on the watch using an old version of the Pixel Watch software. I looked like it would work (or I dreamt it) and then it didn't. So…wasted money, for science, I guess 🤷
+
 ## 2. FitBit routines aren't available
 
 The primary exercise app is FitBit, which the kid needs to make an account for, except FitBit doesn't recognise over 13 years olds with supervised accounts. So either their account needs to be _under_ 13 OR unsupervised (i.e. no tracking and managing their screen time - which for a 13 year old, they're still a child, so nope).
@@ -39,5 +41,13 @@ Setting the Google account to under 13 so FitBit to work does allow him to regis
 ## 3. Family supervision isn't comprehensive
 
 Google's Family Link - which we use to manage app access and set limits, doesn't give you _any_ control over a watch. There's no downtime, there's no app limits, nothing. You can see what they've used, but either it's carrying the same limits from the phone, or it's just not possible to change from _unlimited_.
+
+---
+
+## Bottom line
+
+Probably wait until they're sixteen. Otherwise it's an overpowered smart watch (which have been banned at our schools now anyway).
+
+As for us, the boy got a second hand pixel (and I failed to hook it up to SMS), so he's just got a slightly more connected watch (a bad thing) than what he had before.
 
 *[LTE]: mobile data

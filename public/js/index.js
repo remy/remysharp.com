@@ -326,7 +326,7 @@ function addFiltering() {
 addFiltering();
 
 // if we're on the homepage, then load flickr images
-if ($$('#index-page').length) {
+if ($$('#index-page ul.flickr').length) {
   loadFlickr();
 }
 

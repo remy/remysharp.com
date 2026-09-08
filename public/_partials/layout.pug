@@ -54,13 +54,14 @@ html#remysharp-com(lang="en")
     link(rel="alternate" type="application/rss+xml" title="Remy Sharp's b:ooks" href="/books.xml")
     //- link(rel="alternate" type="application/rss+xml" title="Remy Sharp's v:log" href="https://www.youtube.com/feeds/videos.xml?playlist_id=PLXmT1r4krsTr8vT7enGZSsENjE2jyTsgW")
 
-    style
-      include /css/bear.css
+    if site_version == "1"
+      style
+        include /css/bear.css
 
-    link(as="style" href=`/css/screen.css` rel="preload")
-    link(as="style" href=`/css/prism.css` rel="preload")
-    link(rel="stylesheet" href=`/css/screen.css?1`)
-    link(rel="stylesheet" href=`/css/prism.css`)
+      link(as="style" href=`/css/screen.css` rel="preload")
+      link(as="style" href=`/css/prism.css` rel="preload")
+      link(rel="stylesheet" href=`/css/screen.css?1`)
+      link(rel="stylesheet" href=`/css/prism.css`)
 
     script.
       var whenReady = []; // on ready handler
@@ -82,13 +83,14 @@ html#remysharp-com(lang="en")
     footer.site-footer.clearfix.flex.subpanel
       .flex-item.archives
         h2 Archives
-        ul
+        ul.archive-links
           li: a(href="/archive") All years
           - var thisYear = moment().format('yyyy') * 1
           while thisYear >= 2006
             li
               a(href=`/${ thisYear }`)= thisYear--
-              small(title="published blog posts") ##{ collections.postCountsByYear[thisYear + 1] || 0 }
+              small(title="published blog posts") #{' '}##{ collections.postCountsByYear[thisYear + 1] || 0 }
+                span #{' '}posts
 
       .flex-item.links
         h2 Links
@@ -112,12 +114,13 @@ html#remysharp-com(lang="en")
         :marked
           All code and content for this blog is available as [open source on GitHub](https://github.com/remy/remysharp.com).
 
-    block scripts
-      script(src=`/js/permalink.js`)
-      script(src=`/js/index.js?2`)
-      script(src=`/js/redirect.js`)
-    script.
-      if ('serviceWorker' in navigator && location.origin.indexOf('localhost') === -1) navigator.serviceWorker.register('/service-worker.js');
+    if site_version == "1"
+      block scripts
+        script(src=`/js/permalink.js`)
+        script(src=`/js/index.js?2`)
+        script(src=`/js/redirect.js`)
+      script.
+        if ('serviceWorker' in navigator && location.origin.indexOf('localhost') === -1) navigator.serviceWorker.register('/service-worker.js');
 
     script(src="/js/version.js")
     script(type="awesome/sauce")
