@@ -1,6 +1,6 @@
-public/blog/_obsidian-templates/
+public/blog/_*
 !/public/blog
-!/public/links
 !/public/books
+/public/images/book/
 !/public/images
 *
