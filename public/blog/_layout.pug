@@ -4,6 +4,8 @@ block meta
   - permalink = '/' + moment(date).format('yyyy/MM/dd') + '/' + current.source;
   link(rel="canonical" href=`https://remysharp.com${url}`)
   link(rel="og:url" href=`https://remysharp.com${url}`)
+  if site_version == "2"
+    link(rel="stylesheet" href="/css/v2/article.css")
   - var summary = metaExcerpt
   if data.summary
     - summary = data.summary

@@ -1,0 +1,76 @@
+/* add the LibreBaskerville-VariableFont_wght.ttf fonts */
+
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('./fonts/LibreBaskerville-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LibreBaskerville';
+  src: url('./fonts/LibreBaskerville-Italic-VariableFont_wght.woff2')
+    format('woff2');
+  font-weight: 100 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LibreFranklin';
+  src: url('./fonts/LibreFranklin-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'LibreFranklin';
+  src: url('./fonts/LibreFranklin-Italic-VariableFont_wght.woff2')
+    format('woff2');
+  font-weight: 100 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SplineSansMono';
+  src: url('./fonts/SplineSansMono-VariableFont_wght.woff2') format('woff2');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SplineSansMono';
+  src: url('./fonts/SplineSansMono-Italic-VariableFont_wght.woff2')
+    format('woff2');
+  font-weight: 100 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'F37ZagmaText';
+  src: url('./fonts/F37ZagmaText-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'F37ZagmaMono';
+  src: url('./fonts/F37ZagmaMono-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'F37ZagmaMono';
+  src: url('./fonts/F37ZagmaMono-Bold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: oblique;
+  font-display: swap;
+}

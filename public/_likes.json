@@ -65459,5 +65459,45 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "before-you-buy-an-lte-pixel-watch-for-your-teen": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Alex ????",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/bfc9ac3a926c9cc37f6a6efbd87aa9a98b47cbf3656ce5234b56e68a04fca8b2.jpg",
+        "url": "https://social.tchncs.de/@mojoaxel"
+      },
+      "url": "https://front-end.social/@rem/117230408254580116#favorited-by-109579741067259964",
+      "published": null,
+      "wm-received": "2026-09-08T06:48:49Z",
+      "wm-id": 2030299,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117230408254580116/109579741067259964",
+      "wm-target": "https://remysharp.com/2026/09/07/before-you-buy-an-lte-pixel-watch-for-your-teen",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/07/before-you-buy-an-lte-pixel-watch-for-your-teen",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sephster",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/9ffd5aa256a7e7eac4ab50c35b71704151d419d2383a80f90ddd688aaaebfb2f.jpg",
+        "url": "https://fosstodon.org/@sephster"
+      },
+      "url": "https://front-end.social/@rem/117230408254580116#favorited-by-110067843873753186",
+      "published": null,
+      "wm-received": "2026-09-07T18:25:48Z",
+      "wm-id": 2030228,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117230408254580116/110067843873753186",
+      "wm-target": "https://remysharp.com/2026/09/07/before-you-buy-an-lte-pixel-watch-for-your-teen",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/07/before-you-buy-an-lte-pixel-watch-for-your-teen",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
