@@ -25,7 +25,7 @@ article.post
     p
       a(href=`${latest.url}`) Read the rest of this entry &raquo;
 
-article.post.lists
+section.post.lists
   header.post-header
     h2.title Recently Updated
   .post-content
@@ -35,7 +35,7 @@ article.post.lists
           a(href=`${ post.url }`)= post.data.title
           small &nbsp; updated #{ moment(post.data.modified).format('d-MMM yyyy') }
 
-article.post.lists#elsewhere
+section.post.lists#elsewhere
   header.post-header
     h2.title Remy Elsewhere
   .post-content
