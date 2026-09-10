@@ -58,6 +58,10 @@ main.content {
       max-width: 60ch;
     }
 
+    p:has(video) {
+      max-width: unset;
+    }
+
     ul,
     ol {
       padding-left: 20px;

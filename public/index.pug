@@ -1,9 +1,9 @@
 - latest = collections.latest
 - book = collections.currentlyReading[0]
 
-h1.title
+.welcome
   img.icon.photo(alt="Remy Sharp's blog" src="/images/avatar-2022-square.avif" height=50 width=50)
-  | &nbsp;Welcome!
+  h1.title Welcome!
 
 .post-content.addr
   :marked
@@ -67,16 +67,16 @@ section.post.lists#elsewhere
       //- li
         a(href="http://jqueryfordesigners.com" rel="me" title="tutorials &amp; screencasts") jQuery for Designers
         | &nbsp;- tutorials &amp; screencasts
-      //- li
-        a(href="http://www.ihatemusic.com" rel="me" title="old skool palm apps") Palm Apps
-        | &nbsp;- old skool palm apps
       li
         a(href="/speaking/" rel="me" title="my conf talks") Speaking
         | &nbsp;- my conf talks
+      li
+        a(href="http://marbles2.com" rel="me") Marbles#[sup 2]
+        | &nbsp;- my game
     div#currently
       #currentlyReading
         h3 Reading
-        .track
+        .book
           div.cover
             img(width="64" src=`${book.cover}`)
           p
