@@ -2,6 +2,16 @@
   display: grid;
   gap: clamp(1rem, 4vw, 2rem);
 
+  .misc-content {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+
+    p {
+      margin: 0;
+    }
+  }
+
   @media (min-width: 768px) {
     grid-template-areas: '. header' 'meta body';
     grid-template-columns: minmax(150px, 1fr) 3fr;
@@ -43,7 +53,8 @@ main.content {
     h6,
     p,
     ul,
-    ol {
+    ol,
+    hr {
       max-width: 60ch;
     }
 
@@ -59,16 +70,31 @@ main.content {
         border-radius: 4px;
       }
       figcaption {
-        font-family: var(--f-mono);
+        font-family: var(--f-text);
         font-size: 90%;
         text-align: center;
         opacity: 0.8;
 
+        @property --_w {
+          syntax: '<length>';
+          inherits: true;
+        }
+        @property --_o {
+          syntax: '<number>';
+          inherits: true;
+        }
+        @property --_l {
+          syntax: '<number>';
+          inherits: true;
+        }
+
         @media (min-width: 768px) {
-          left: -216px;
+          --_w: 180px;
+          --_l: calc((var(--_w) + 16px) * -1);
+          left: var(--_l);
+          width: var(--_w);
           position: absolute;
           top: 0;
-          width: 200px;
           text-align: right;
           border-top: 2px solid;
           padding-top: 12px;
@@ -95,9 +121,13 @@ main.content {
 
   .webmentions {
     display: flex;
-    gap: 4px;
+    flex-direction: column;
+    gap: 8px;
     flex-wrap: wrap;
-    align-items: center;
+
+    & > * {
+      margin: 0;
+    }
 
     div {
       display: flex;
