@@ -12,21 +12,21 @@
     'LibreFranklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen- Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   --f-article: 'NotoSerif', 'Times New Roman', Times, serif;
-  --f-heading: 'SplineSansMono', 'Courier New', Courier, monospace;
-  --f-mono: 'SplineSansMono', 'Courier New', Courier, monospace;
+  --f-heading: 'F37ZagmaMono', 'Courier New', Courier, monospace;
+  --f-mono: 'F37ZagmaMono', 'Courier New', Courier, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --c-bg: #1a1a1a;
-    --c-bg: #000;
-    --c-bg-alt: hsl(375, 1%, 12%);
-    --c-bg-alt: none;
-    --c-text-primary: #d1d0d0;
-    --c-text-primary: #c6c6c6;
-    --c-text-heading: #d1d0d0;
-  }
+/* @media (prefers-color-scheme: dark) { */
+:root {
+  --c-bg: #1a1a1a;
+  --c-bg: #000;
+  --c-bg-alt: hsl(375, 1%, 12%);
+  --c-bg-alt: none;
+  --c-text-primary: #d1d0d0;
+  --c-text-primary: #c6c6c6;
+  --c-text-heading: #d1d0d0;
 }
+/* } */
 
 * {
   box-sizing: border-box;

@@ -7,6 +7,8 @@ block meta
   meta(name="og:author" content="Remy Sharp")
   meta(name="og:site_name" content="Remy's b:log")
   meta(name="og:image" content=`https://remysharp.com/images/cards/${moment(date).modDOY(9)}.jpg`)
+  if site_version == "2"
+    link(rel="stylesheet" href="/css/v2/article.css")
 
 block content
   - permalink = url;
@@ -24,4 +26,6 @@ block content
 
       if date
         .misc-content
-          p.metadata Fixed at <time class="dt-published" datetime="#{ moment(date).format('yyyy-MM-dd HH:mm:ss') }">#{moment(date).format('d-MMM yyyy @ HH:mm')}</time> about #{dirname}. <a target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/#{current.inputPath}">Edit this post</a>
+          p.metadata Fixed on <time class="dt-published" datetime="#{ moment(date).format('yyyy-MM-dd HH:mm:ss') }">#{moment(date).format('d-MMM yyyy')}</time>
+
+          p #[a(target="_blank" rel="noopener" href="https://github.com/remy/remysharp.com/blob/main/#{current.inputPath}") Edit this post]
