@@ -20,4 +20,4 @@ The story is told a message delivered to us - and by "us" the message hopes to b
 
 The mission is entirely a discovery exercise, not "the Earth is doomed, we must quickly find new home" which so many stories would shoot for. So the book tells of the crew landing across four different planets and what they find and tell of their enthusiasm in science and real human struggles in confined spaces.
 
-This is a gentle and easy read, and for me, treated as something to tide me over until the next novel length Wayfarers is released - but equally a solid story on it's own merits.
+This is a gentle and easy read, and for me, treated as something to tide me over until the next novel length Wayfarers is released - but equally a solid story on its own merits.
