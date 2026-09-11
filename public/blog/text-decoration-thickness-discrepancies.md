@@ -19,27 +19,6 @@ In this instance, I'm using `text-decoration-thickness` on my titles, and wanted
 
 On blog post headings are marked up as `h1 > a.permalink(href)`. The effect is: the title is not visibly underlined, and when you hover, the underline eases in over 50ms to a thickness of 4px.
 
----
-title: 'text-decoration-thickness discrepancies'
-date: '2026-09-10 21:00:00'
-tags:
-  - web
-  - css
-  - quirks
----
-
-# text-decoration-thickness discrepancies
-
-I'm in the process of (attempting) to redesign this blog, and in doing so, I'm using a few of the new bits (to me) of CSS to make things fancy.
-
-In this instance, I'm using `text-decoration-thickness` on my titles, and wanted to document the quirks I noticed.
-
-<!-- more -->
-
-## What I'm doing
-
-On blog post headings are marked up as `h1 > a.permalink(href)`. The effect is: the title is not visibly underlined, and when you hover, the underline eases in over 50ms to a thickness of 4px.
-
 ```css
 
 a {
@@ -67,19 +46,6 @@ It does exactly what I expected. And actually until I switched to give a cursory
 ## What Safari does
 
 Safari doesn't animate the transition from `text-decoration-thickness: 0px` to `4px` - it just jumps into place.
-
-<video controls src="/images/text-decoration-thickness-safari.mp4"></video>
-
-## What Chrome does
-
-My daily browser is Firefox, but I have a tendency to (lazily) assume that things "just work" in Chrome. Not a great strategy, eh?
-
-Chrome has no animation, but moreover, a `text-decoration-thickness` of zero height is… still there.
-
-<video controls src="/images/text-decoration-thickness-chrome.mp4"></video>
-
-Ah well, I guess it's a progressive enhancement.
-just jumps into place.
 
 <video controls src="/images/text-decoration-thickness-safari.mp4"></video>
 
