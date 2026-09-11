@@ -26,7 +26,7 @@ On blog post headings are marked up as `h1 > a.permalink(href)`. The effect is: 
 a {
   text-decoration-thickness: 0;
   transition: text-decoration-thickness 200ms ease-out;
-  
+
   &:hover {
     text-decoration-thickness: 4px;
   }
@@ -58,5 +58,7 @@ My daily browser is Firefox, but I have a tendency to (lazily) assume that thing
 Chrome has no animation, but moreover, a `text-decoration-thickness` of zero height is… still there.
 
 <video controls src="/images/text-decoration-thickness-chrome.mp4"></video>
+
+A note [on Chrome's implementation](https://bsky.app/profile/patrickbrosset.com/post/3mvaa3gy5uc2b), it was spec compliant, then it wasn't - so, I guess it's playing catchup.
 
 Ah well, I guess it's a progressive enhancement.
