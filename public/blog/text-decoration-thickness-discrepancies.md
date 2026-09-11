@@ -15,6 +15,8 @@ In this instance, I'm using `text-decoration-thickness` on my titles, and wanted
 
 <!-- more -->
 
+**Worth adding** this is the state at time of writing on stable releases (ie. non-preview builds). That time of writing: September 2026.
+
 ## What I'm doing
 
 On blog post headings are marked up as `h1 > a.permalink(href)`. The effect is: the title is not visibly underlined, and when you hover, the underline eases in over 50ms to a thickness of 4px.
