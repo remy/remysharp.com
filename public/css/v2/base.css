@@ -477,7 +477,7 @@ body > footer {
   }
 
   @media (min-width: 768px) {
-    main {
+    main.content {
       display: grid;
       gap: var(--m-body);
       grid-template-areas:
