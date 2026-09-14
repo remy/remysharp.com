@@ -33,7 +33,8 @@ block content
   - safeTitle = data.title.replace(/'/g, '\\\'')
   - ad = ad ?? 'cli-book'
 
-  include ../_partials/post-nav
+  include ../_partials/notice
+
 
   main.content
     if data.draft
@@ -66,7 +67,7 @@ block content
           p.update Drafts may be incomplete or entirely abandoned, so please forgive me. If you find an issue with a draft, or would like to see me write about something specifically, please try #[a(href="http://github.com/remy/remysharp.com/issues/new") raising an issue].
       else
         .misc-content
-          p.metadata #[time.dt-published(datetime=`${ moment(date).format('yyyy-MM-dd HH:mm:ss') }`) #{moment(date).format('d-MMM yyyy')}]
+          p.metadata Posted #[time.dt-published(datetime=`${ moment(date).format('yyyy-MM-dd HH:mm:ss') }`) #{moment(date).format('d-MMM yyyy')}]
           p.tags Tags:#{' '}
             for tag in tags
               a(href=`/search?q=tag:${tag}`).tag= `#${tag}`
@@ -74,9 +75,10 @@ block content
 
           if likes
             .webmentions
-              h3 Webmentions
               p 👍 #{likes} likes
               div !{likeImages}
 
       if comments != false
         include ../_partials/comments
+
+      include ../_partials/post-nav

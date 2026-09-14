@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'NotoSerif';
-  src: url('./fonts/NotoSerif.woff2') format('woff2');
+  src: url('./fonts/NotoSerif.latin.nowdth.woff2') format('woff2');
   font-weight: 100 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'NotoSerif';
-  src: url('./fonts/NotoSerif-Italic.woff2') format('woff2');
+  src: url('./fonts/NotoSerif-Italic.latin.nowdth.woff2') format('woff2');
   font-weight: 100 400;
   font-style: italic;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'VictorMono';
-  src: url('./fonts/VictorMono-VariableFont_wght.ttf') format('truetype');
+  src: url('./fonts/VictorMonoXH_XHGT-wght.woff2') format('woff2');
   font-weight: 100 700;
   font-style: normal;
   font-display: swap;
@@ -24,24 +24,7 @@
 
 @font-face {
   font-family: 'VictorMono';
-  src: url('./fonts/VictorMono-Italic-VariableFont_wght.ttf') format('truetype');
-  font-weight: 100 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LibreBaskerville';
-  src: url('./fonts/LibreBaskerville-VariableFont_wght.woff2') format('woff2');
-  font-weight: 100 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'LibreBaskerville';
-  src: url('./fonts/LibreBaskerville-Italic-VariableFont_wght.woff2')
-    format('woff2');
+  src: url('./fonts/VictorMonoXH-Italic_XHGT-wght.woff2') format('woff2');
   font-weight: 100 700;
   font-style: italic;
   font-display: swap;
@@ -49,7 +32,7 @@
 
 @font-face {
   font-family: 'LibreFranklin';
-  src: url('./fonts/LibreFranklin-VariableFont_wght.woff2') format('woff2');
+  src: url('./fonts/LibreFranklinTab[wght].woff2') format('woff2');
   font-weight: 100 700;
   font-style: normal;
   font-display: swap;
@@ -57,50 +40,8 @@
 
 @font-face {
   font-family: 'LibreFranklin';
-  src: url('./fonts/LibreFranklin-Italic-VariableFont_wght.woff2')
-    format('woff2');
+  src: url('./fonts/LibreFranklinTab-Italic[wght].woff2') format('woff2');
   font-weight: 100 700;
   font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SplineSansMono';
-  src: url('./fonts/SplineSansMono-VariableFont_wght.woff2') format('woff2');
-  font-weight: 100 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'SplineSansMono';
-  src: url('./fonts/SplineSansMono-Italic-VariableFont_wght.woff2')
-    format('woff2');
-  font-weight: 100 700;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'F37ZagmaText';
-  src: url('./fonts/F37ZagmaText-Book.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'F37ZagmaMono';
-  src: url('./fonts/F37ZagmaMono-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'F37ZagmaMono';
-  src: url('./fonts/F37ZagmaMono-Bold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: oblique;
   font-display: swap;
 }

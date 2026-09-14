@@ -3,7 +3,7 @@
 
 .welcome
   img.icon.photo(alt="Remy Sharp's blog" src="/images/avatar-2022-square.avif" height=50 width=50)
-  h1.title Welcome!
+  h1.title Welcome to Rem's place.
 
 .post-content.addr
   :marked
@@ -86,10 +86,10 @@ section.post.lists#elsewhere
       #recentlyListening
         script(src="/js/spin.mjs")
 
-      #currentlyLinking
-        h3 Linking
-        div
-          p
-            a.title(href=`${collections.links[0].url}`)= collections.links[0].data.title
-            span.by By&nbsp;
-              a.by(href=`${collections.links[0].data.url}`)= collections.links[0].data.url.split('/')[2]
+      //- #currentlyLinking
+      //-   h3 Linking
+      //-   div
+      //-     p
+      //-       a.title(href=`${collections.links[0].url}`)= collections.links[0].data.title
+      //-       span.by By&nbsp;
+      //-         a.by(href=`${collections.links[0].data.url}`)= collections.links[0].data.url.split('/')[2]

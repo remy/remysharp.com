@@ -61,12 +61,12 @@ html#remysharp-com(lang="en")
       link(as="style" href=`/css/screen.css` rel="preload")
       link(as="style" href=`/css/prism.css` rel="preload")
       link(rel="stylesheet" href=`/css/screen.css?2`)
-      link(rel="stylesheet" href=`/css/prism.css`)
     if site_version == "2"
       link(as="style" href=`/css/v2/base.css` rel="preload")
       link(rel="stylesheet" href=`/css/v2/base.css`)
       link(rel="stylesheet" href="/css/v2/article.css")
 
+    link(rel="stylesheet" href=`/css/prism.css`)
 
     script.
       var whenReady = []; // on ready handler
@@ -103,8 +103,8 @@ html#remysharp-com(lang="en")
       .flex-item.license
         .row.social
           h2 Remy Sharp
-            img#avatar.u-photo(alt="" src="/images/avatar-2022-square.avif" width="60")
-            include social-badge
+          img#avatar.u-photo(alt="" src="/images/avatar-2022-square.avif" width="60")
+          include social-badge
         .row.bio.p-note
           include mini-bio
         //- h2
