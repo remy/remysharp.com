@@ -8,7 +8,7 @@ if site_version == "1"
 else
   .welcome
     img.icon.photo(alt="" src="/images/avatar-2022-square.avif" height=50 width=50)
-    h1 Welcome to my blog!
+    h1 Welcome #[span.has-space to my blog.]
 
 .post-content.addr
   :marked
@@ -30,20 +30,21 @@ article.post
     p
       a(href=`${latest.url}`) Read the rest of this entry &raquo;
 
-section.post.lists
-  header.post-header
-    h2.title Recently Updated
-  .post-content
-    ul
-      each post in collections.recent
-        li
-          a(href=`${ post.url }`)= post.data.title
-          small &nbsp; updated #{ moment(post.data.modified).format('d-MMM yyyy') }
+section.list-col
+  section.post.lists
+    header.post-header
+      h2.title Recently Updated
+    .post-content
+      ul
+        each post in collections.recent
+          li
+            a(href=`${ post.url }`)= post.data.title
+            small &nbsp; updated #{ moment(post.data.modified).format('d-MMM yyyy') }
 
-section.post.lists#elsewhere
-  header.post-header
-    h2.title Remy Elsewhere
-  .post-content
+  section.post.lists#elsewhere
+    header.post-header
+      h2.title Remy Elsewhere
+    .post-content
     ul.links
       li
         a(href="https://leftlogic.com" rel="me" title="my business: hire me") Left Logic
@@ -78,23 +79,37 @@ section.post.lists#elsewhere
       li
         a(href="http://marbles2.com" rel="me") Marbles#[sup 2]
         | &nbsp;- my game
-    div#currently
-      #currentlyReading
-        h3 Reading
-        .book
-          div.cover
-            img(width="64" src=`${book.cover}`)
-          p
-            span.title= book.title
-            span.by By #{book.author}
+    if site_version == "1"
+      div#currently
+          #currentlyReading
+            h3 Reading
+            .book
+              div.cover
+                img(width="64" src=`${book.cover}`)
+              p
+                span.title= book.title
+                span.by By #{book.author}
 
-      #recentlyListening
-        script(src="/js/spin.mjs")
+          #recentlyListening
+            script(src="/js/spin.mjs")
+if site_version != "1"
+  div#currently
+    #currentlyReading
+      h3 Reading
+      .book
+        div.cover
+          img(width="64" src=`${book.cover}`)
+        p
+          span.title= book.title
+          span.by By #{book.author}
 
-      //- #currentlyLinking
-      //-   h3 Linking
-      //-   div
-      //-     p
-      //-       a.title(href=`${collections.links[0].url}`)= collections.links[0].data.title
-      //-       span.by By&nbsp;
-      //-         a.by(href=`${collections.links[0].data.url}`)= collections.links[0].data.url.split('/')[2]
+    #recentlyListening
+      script(src="/js/spin.mjs")
+
+        //- #currentlyLinking
+        //-   h3 Linking
+        //-   div
+        //-     p
+        //-       a.title(href=`${collections.links[0].url}`)= collections.links[0].data.title
+        //-       span.by By&nbsp;
+        //-         a.by(href=`${collections.links[0].data.url}`)= collections.links[0].data.url.split('/')[2]
