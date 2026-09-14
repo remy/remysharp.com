@@ -1,5 +1,5 @@
 ---
-title: Redesign '26 - picking fonts
+title: Redesign '26
 date: 2026-09-14
 tags:
   - fonts
@@ -46,3 +46,31 @@ There's been a flurry of conversation about light/dark toggles from the web comm
 With this in mind, I finally settled (maybe controversially) on _no light mode_. Just dark. No toggle. No theme. Simples. Intentional.
 
 I had also picked out the orange from avatar (found at the bottom of the site linking to Bluesky) as my main accent - for links primarily (and because I really like strong orange), I think it looks strong.
+
+![A screenshot of the blog, dark black background, slightly off white text set in a serif font and a hazmat orange for links](/images/redesign-26-text.avif "I appreciate this looks pretty bare at this point, but this is my base.")
+
+## Picking fonts
+
+I've been all over the shop with fonts. I've lost track of the sites I've visited, and I was completely open to paying for a font (strong believer in supporting artists where I can), but I never found anything that sat quite right.
+
+I'm not entirely sure I'm completely settled, but right now, the fonts I've got are:
+
+- Noto Serif for the article content
+- Libre Franklin for the UI elements (footer content, welcome text)
+- Victor Mono for code _and_ headings
+
+I also intentionally picked fonts that all had variable functions, ideally around the weight. Initially I'd downloaded the ttf files from [Google Fonts](https://fonts.google.com/) but the footprint is pretty big and I didn't understand why I was serving ttf instead of woff2.
+
+One search later, I was converting the files from 200kb+ down to 80kb. Still pretty big I think, but a lot better.
+
+Then there was Noto Serif (with the italics) was weighing in a 1.8mb. Not cool. I found some code that could strip out a lot of the extra glyphs that I didn't need and it got the total down to 80kb a nice saving of 1.72mb.
+
+I also wanted a few tweaks to the Libre Franklin - I wanted `tabular-nums` and it doesn't include them (I use this in the column of years in the footer), and I wanted to add support for variable X height on the Victor Mono.
+
+I'm not familiar enough with how font internals work (yet!) so I tried some generated code against it and it seems to work (I need to give this a detailed test to be sure), but here's the scripts if anyone is interested: [glyph-reducer.sh](https://gist.github.com/remy/e178c21675f13439d7fd74595ef45215#file-glyph-reducer-sh), [add_tnum.py](https://gist.github.com/remy/e178c21675f13439d7fd74595ef45215#file-add_tnum-py) and [add_xhgt.py](https://gist.github.com/remy/e178c21675f13439d7fd74595ef45215#file-add_xhgt-py). Worth adding: I've only tested on the specific fonts I'm using - your mileage may vary.
+
+---
+
+I'm far from done. The root/homepage is an absolute mess (with a horizontal scrollbar 🤢), and I really need to think about the navigation I had (I'm probably going to relocate it).
+
+It's definitely frustrating because I know in my mind what looks good, but I'm not quite able to transfer that to the browser. Let's see how long this takes me!
