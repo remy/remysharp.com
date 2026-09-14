@@ -1,6 +1,7 @@
 ---
 title: 'AI for alt text?'
 date: '2026-09-12'
+draft: true
 tags:
   - web
   - a11y
