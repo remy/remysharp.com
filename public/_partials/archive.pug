@@ -8,25 +8,26 @@
   - index = 0;
   - post = posts[index]
   div#filter-posts.needs-js.filter-group.misc-content
+    style .count { display: none; }
     span Filter posts:
     div.blog
       input#filter-blog-posts(checked name="blog" type="checkbox")
-      label(for="filter-blog-posts") Blog posts (#{totals.blog || 0})
+      label(for="filter-blog-posts") Blog #[span.count posts (#{totals.blog || 0})]
     div.links
       input#filter-links(checked name="link" type="checkbox")
-      label(for="filter-links") Links (#{totals.link || 0})
+      label(for="filter-links") Links #[span.count (#{totals.link || 0})]
     div.book
       input#filter-book(checked name="book" type="checkbox")
-      label(for="filter-book") Books (#{totals.book || 0})
+      label(for="filter-book") Books #[span.count (#{totals.book || 0})]
     div.tif
       input#filter-tif(checked name="tif" type="checkbox")
-      label(for="filter-tif") TIF (#{totals.tif || 0})
+      label(for="filter-tif") TIF #[span.count (#{totals.tif || 0})]
     div.til
       input#filter-til(checked name="til" type="checkbox")
-      label(for="filter-til") TIL (#{totals.til || 0})
+      label(for="filter-til") TIL #[span.count (#{totals.til || 0})]
     div.devlog
       input#filter-devlog(checked name="devlog" type="checkbox")
-      label(for="filter-devlog") Devlogs (#{totals.devlog || 0})
+      label(for="filter-devlog") Devlogs #[span.count (#{totals.devlog || 0})]
   while post
     if post.data.date
       if !year || moment(post.data.date).format('yyyy') == year
