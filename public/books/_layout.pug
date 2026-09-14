@@ -81,17 +81,15 @@ block content
             span Last read on <time datetime="#{ moment(lastDate(read)).format('yyyy-MM-dd HH:mm:ss') }">#{moment(lastDate(read)).format('d-MMM yyyy')}</time>, starting on <time datetime="#{ moment(lastDate(start)).format('yyyy-MM-dd HH:mm:ss') }">#{moment(lastDate(start)).format('d-MMM yyyy')}</time>, #{ pages } pages.<br>!{ goodreads ? ` | <a target="_blank" rel="noopener" href="${goodreads}">Goodreads page</a>` : '' }
 
             if identifiers
-              span Read it
-              span
+              p.metadata.elsewhere
                 if identifiers.isbn
-                  span &nbsp;&bullet;&nbsp;ISBN #{identifiers.isbn}
+                  span ISBN #{identifiers.isbn}
                 if identifiers.storygraph
-                  span &nbsp;&bullet;&nbsp;
-                  a(target="_blank" rel="noopener" href=`https://app.thestorygraph.com/books/${identifiers.storygraph}`) Storygraph
+                  span
+                    a(target="_blank" rel="noopener" href=`https://app.thestorygraph.com/books/${identifiers.storygraph}`) Storygraph
                 if identifiers.hardcover
-                  span &nbsp;&bullet;&nbsp;
-                  a(target="_blank" rel="noopener" href=`https://hardcover.app/books/${identifiers.hardcover}`) Hardcover
-
+                  span
+                    a(target="_blank" rel="noopener" href=`https://hardcover.app/books/${identifiers.hardcover}`) Hardcover
                 if identifiers.goodreads
-                  span &nbsp;&bullet;&nbsp;
-                  a(target="_blank" rel="noopener" href=`https://www.goodreads.com/book/show/${identifiers.goodreads}`) Goodreads
+                  span
+                    a(target="_blank" rel="noopener" href=`https://www.goodreads.com/book/show/${identifiers.goodreads}`) Goodreads

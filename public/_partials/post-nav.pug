@@ -1,5 +1,4 @@
 if current.slug
-  include notice
   nav.main-nav.clearfix.subpanel
     include search
     - const [prev, next] = collections.nextPrev(current.slug)
@@ -11,9 +10,9 @@ if current.slug
       //-     span.liked
       li.left.search: a#search(href="#search") Search
       //- li.offline-indicator
-      if prev
-        li.prev: a(href=`${ prev.url }` title=`${ prev.data.title }`) Previous
-      if next
-        li.next: a(href=`${ next.url }` title=`${ next.data.title }`) Next
-      else
-        li Latest
+      //- if prev
+      //-   li.prev: a(href=`${ prev.url }` title=`${ prev.data.title }`) Previous
+      //- if next
+      //-   li.next: a(href=`${ next.url }` title=`${ next.data.title }`) Next
+      //- else
+      //-   li Latest

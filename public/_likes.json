@@ -65499,5 +65499,197 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "text-decoration-thickness-discrepancies": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kolombiken",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a19413415c6d2496fd97547b2f0b5b0970c2431e0edc820176a26b39f120d52b.jpg",
+        "url": "https://front-end.social/@kolombiken"
+      },
+      "url": "https://front-end.social/@rem/117248984411690796#favorited-by-113254859888289164",
+      "published": null,
+      "wm-received": "2026-09-11T19:42:57Z",
+      "wm-id": 2031207,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117248984411690796/113254859888289164",
+      "wm-target": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Agustin Capeletto",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:mhu5ya2asqislku2audcqmtm/bafkreiaaiilz32uaafee3afxzlkxd2bssvxftru3ljfqqqyrgyjmkxzgiy",
+        "url": "https://bsky.app/profile/lowpoly.gg"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mv72d2jc2c23#liked_by_did:plc:mhu5ya2asqislku2audcqmtm",
+      "published": null,
+      "wm-received": "2026-09-11T09:17:35Z",
+      "wm-id": 2031056,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mv72d2jc2c23/did%253Aplc%253Amhu5ya2asqislku2audcqmtm",
+      "wm-target": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ana Rodrigues",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:ywso5zb7zpnxtyk5hpqetiwh/bafkreic6iq43lvjo356s2eetcptnjmy7ux6a43tuf3laihhaiwhbrbmwtq",
+        "url": "https://bsky.app/profile/ohhelloana.blog"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mv72d2jc2c23#liked_by_did:plc:ywso5zb7zpnxtyk5hpqetiwh",
+      "published": null,
+      "wm-received": "2026-09-11T08:23:01Z",
+      "wm-id": 2031041,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mv72d2jc2c23/did%253Aplc%253Aywso5zb7zpnxtyk5hpqetiwh",
+      "wm-target": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/69e600ace15f7cb55f5c08c28dbff6eb6162fe63df619403440108c62d57010c.png",
+        "url": "https://fedi.vale.rocks/users/vale"
+      },
+      "url": "https://front-end.social/@rem/117248984411690796#favorited-by-111460277448308485",
+      "published": null,
+      "wm-received": "2026-09-11T08:21:10Z",
+      "wm-id": 2031040,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117248984411690796/111460277448308485",
+      "wm-target": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jenny Wong",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:rkcv3raf45wauuy6nmd7xrzi/bafkreifqgvlu52wyoj5b4rmdsbqvopbpe3ylg5ci7tx4acxwzxp34qvveq",
+        "url": "https://bsky.app/profile/jwo.ng"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mv72d2jc2c23#liked_by_did:plc:rkcv3raf45wauuy6nmd7xrzi",
+      "published": null,
+      "wm-received": "2026-09-11T06:51:13Z",
+      "wm-id": 2031019,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mv72d2jc2c23/did%253Aplc%253Arkcv3raf45wauuy6nmd7xrzi",
+      "wm-target": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "London Web Standards",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/cce1263b602e764a3dfab12aaa74333c8e20d2d0585bd2b3d65af886a2637c61.png",
+        "url": "https://mastodon.world/@webstandards"
+      },
+      "url": "https://front-end.social/@rem/117248984411690796#favorited-by-109824940934688110",
+      "published": null,
+      "wm-received": "2026-09-10T22:12:46Z",
+      "wm-id": 2030973,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117248984411690796/109824940934688110",
+      "wm-target": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julio J. ????",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/d6ad23908707eb08ab408abc345a8f288c5d322c2464c034523b3d218a99b512.png",
+        "url": "https://hachyderm.io/@j3j5"
+      },
+      "url": "https://front-end.social/@rem/117248984411690796#favorited-by-109319791253609008",
+      "published": null,
+      "wm-received": "2026-09-10T22:12:45Z",
+      "wm-id": 2030972,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117248984411690796/109319791253609008",
+      "wm-target": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sebastian",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/6bb03d9c7797e25de615720b163677d332018fac42db7a655decc9c8ce0ca6f4.png",
+        "url": "https://mastodon.online/@sherold"
+      },
+      "url": "https://front-end.social/@rem/117248984411690796#favorited-by-109308313265744710",
+      "published": null,
+      "wm-received": "2026-09-10T22:12:43Z",
+      "wm-id": 2030970,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117248984411690796/109308313265744710",
+      "wm-target": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rasmus Kaj ????????",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/b60d0d51b2ff0bd51a6af0b51dc270881bac190e686f4aec5364421d733a3db1.jpg",
+        "url": "https://mastodon.nu/@rkaj"
+      },
+      "url": "https://front-end.social/@rem/117248984411690796#favorited-by-110339808537840167",
+      "published": null,
+      "wm-received": "2026-09-10T22:12:43Z",
+      "wm-id": 2030971,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117248984411690796/110339808537840167",
+      "wm-target": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Gabor Lenard",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/f58d8ff8f137aa126c219daf696dfd9752ba7f40c6c3d85dca02dbe7507fca00.jpg",
+        "url": "https://mastodon.social/@zengabor"
+      },
+      "url": "https://front-end.social/@rem/117248984411690796#favorited-by-109295861741654438",
+      "published": null,
+      "wm-received": "2026-09-12T15:00:35Z",
+      "wm-id": 2031452,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117248984411690796/109295861741654438",
+      "wm-target": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

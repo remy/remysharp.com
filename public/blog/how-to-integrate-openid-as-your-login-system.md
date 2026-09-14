@@ -29,15 +29,14 @@ To get going, here's my copy of [SimpleOpenID.class.php](/downloads/SimpleOpenID
 
 ## Database Setup: Say Goodbye to Password Storage
 
-<script src="/js/prettify.packed.js" type="text/javascript" charset="utf-8"></script>
-
 Again, I'm assuming for simplicity that we're using OpenID as our exclusive way in to the web site.  For example (my site) [Todged](http://todged.com) does this, and so does another site: [Jyte](http://jyte.com).
 
 The result is the database table that holds the user details doesn't need to hold a password field.  It's a tricky concept to get around, but it's refreshing once you *get it*.
 
 You need all the usual tables you would have in place, with the following additionals:
 
-<pre><code class="prettyprint">alter table user_profile add column identity char(255) not null;
+```sql
+alter table user_profile add column identity char(255) not null;
 
 create table user_openids
 (
@@ -48,7 +47,8 @@ create table user_openids
 
   primary key (id),
   index openid (openid)
-);</code></pre>
+);
+```
 
 The <code>identity</code> field on <code>user_profile</code> (or what ever you name your table) is the key to allowing users to have multiple OpenIDs pointing to one single identity.
 
@@ -86,28 +86,29 @@ Note that this is the code (pretty much) directly from the [Todged login process
 
 ### The Initial Login Request
 
-<pre><code class="prettyprint">$openid = new SimpleOpenID;
+```php
+$openid = new SimpleOpenID;
 // $_REQUEST['openid'] is the input field the user submitted
-$openid-&gt;SetIdentity($_REQUEST['openid']);
+$openid->SetIdentity($_REQUEST['openid']);
 
 // ApprovedURL is the url we want to call back to
-$openid-&gt;SetApprovedURL('http://todged.com/login');
-$openid-&gt;SetTrustRoot('http://todged.com');
+$openid->SetApprovedURL('http://todged.com/login');
+$openid->SetTrustRoot('http://todged.com');
 
 // I'm also requesting their email address for the creation of their new profile
-$openid-&gt;SetOptionalFields('email');
+$openid->SetOptionalFields('email');
 
 // User::GetOpenIDServer checks the database table 'user_openids' for the
 // user's openid and the associated identity, which saves having to run
 // a separate HTTP request if it's not available (see else case).
 if (list($server, $identity) = User::GetOpenIDServer($_REQUEST['openid'])) {
-  $openid-&gt;SetOpenIDServer($server);
-  $openid-&gt;SetIdentity($identity);
+  $openid->SetOpenIDServer($server);
+  $openid->SetIdentity($identity);
 } else {
   //
-  if ($server = $openid-&gt;GetOpenIDServer()) {
+  if ($server = $openid->GetOpenIDServer()) {
     // just used to optimise the process
-    $identity = $openid-&gt;GetIdentity();
+    $identity = $openid->GetIdentity();
 
     // we're now creating a relationship between the user's OpenID and their
     // *real* identity which can be used in subsequent logins to save time.
@@ -120,16 +121,17 @@ if (list($server, $identity) = User::GetOpenIDServer($_REQUEST['openid'])) {
 }
 
 // send the user to their OpenID provider for authentication
-$openid-&gt;Redirect();
-</code></pre>
+$openid->Redirect();
+```
 
 ### Handling the OpenID Server Response
 
-<pre><code class="prettyprint">$openid = new SimpleOpenID;
+```php
+$openid = new SimpleOpenID;
 $identity = $_GET['openid_identity'];
 
-$openid-&gt;SetIdentity($identity);
-$ok = $openid-&gt;ValidateWithServer();
+$openid->SetIdentity($identity);
+$ok = $openid->ValidateWithServer();
 
 if ($ok) {
   /**
@@ -141,19 +143,19 @@ if ($ok) {
 
   // tries to load a user profile using their openid identity,
   // standard stuff, that would normally be by username.
-  if (!$User-&gt;LoadUserByOpenID($identity)) {
+  if (!$User->LoadUserByOpenID($identity)) {
     // create a new user
-    $User-&gt;CreateUserFromOpenID($identity, $_GET['openid_sreg_email']);
+    $User->CreateUserFromOpenID($identity, $_GET['openid_sreg_email']);
 
     // ask the user, as a once off, to prove they're human.
     Utility::Redirect('/activate');
   } else {
     // redirect the user to their home page
-    Utility::Redirect('/' . $User-&gt;username);
+    Utility::Redirect('/' . $User->username);
   }
-} else if ($openid-&gt;IsError() == true) {
+} else if ($openid->IsError() == true) {
   // There was a problem logging in.  This is captured in $error (do a var_dump for details)
-  $error = $openid-&gt;GetError();
+  $error = $openid->GetError();
 
   $msg = "OpenID auth problem\nCode: {$error['code']}\nDescription: {$error['description']}\nOpenID: {$identity}\n";
 
@@ -162,7 +164,8 @@ if ($ok) {
 } else {
   // General error, not due to comms
   $Error = 'Authorisation failed, please check the credentials entered and double check the use of caplocks.';
-}</code></pre>
+}
+```
 
 ## How to Test OpenID
 
@@ -180,11 +183,15 @@ This bug might not just be exclusive to SimpleOpenID, since WordPress HTML isn't
 
 It's because WordPress includes the OpenID as:
 
-<pre><code>&lt;link rel='openid.server' href='http://remysharp.wordpress.com/?openidserver=1' /&gt;</code></pre>
+```html
+<link rel="openid.server" href="http://remysharp.wordpress.com/?openidserver=1" />
+```
 
 Rather than:
 
-<pre><code>&lt;link rel=<strong>"</strong>openid.server<strong>"</strong> href=<strong>"</strong>http://remysharp.wordpress.com/?openidserver=1<strong>"</strong> /&gt;</code></pre>
+```html
+<link rel="openid.server" href="http://remysharp.wordpress.com/?openidserver=1" />
+```
 
 The trick is to make sure your parser isn't picky about XHTML.
 
