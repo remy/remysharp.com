@@ -1,0 +1,2 @@
+[context."feat/2026-design"].environment]
+  RS_SITE_VERSION = "2"

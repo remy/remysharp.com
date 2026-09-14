@@ -1,9 +1,14 @@
 - latest = collections.latest
 - book = collections.currentlyReading[0]
 
-h1.welcome.title
-  img.icon.photo(alt="Remy Sharp's blog" src="/images/avatar-2022-square.avif" height=50 width=50)
-  | &nbsp;Welcome!
+if site_version == "1"
+  h1.welcome.title
+    img.icon.photo(alt="Remy Sharp's blog" src="/images/avatar-2022-square.avif" height=50 width=50)
+    | &nbsp;Welcome!
+else
+  .welcome
+    img.icon.photo(alt="" src="/images/avatar-2022-square.avif" height=50 width=50)
+    h1 Welcome to my blog!
 
 .post-content.addr
   :marked

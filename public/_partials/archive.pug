@@ -8,7 +8,8 @@
   - index = 0;
   - post = posts[index]
   div#filter-posts.needs-js.filter-group.misc-content
-    style .count { display: none; }
+    if site_version == "1"
+      style .count { display: none; }
     span Filter posts:
     div.blog
       input#filter-blog-posts(checked name="blog" type="checkbox")

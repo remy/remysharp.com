@@ -44,11 +44,21 @@
       return playTime > twoDaysAgo;
     }).sort((a, b) => parseInt(b.date.uts) - parseInt(a.date.uts));
 
-
     const last = recentTracks[0];
+
     const getText = input => input['#text'];
-    const artist = getText(last.artist);
+    let artist = getText(last.artist);
     const album = getText(last.album);
+
+    // search for the album in the other recentTracks,
+    // and if the artist isn't the same, then we'll
+    // change it to "various artists"
+    for (const track of recentTracks) {
+      if (getText(track.album) === album && getText(track.artist) !== artist) {
+        artist = 'Various Artists';
+        break;
+      }
+    }
 
     const cover = getText(last.image.pop());
 

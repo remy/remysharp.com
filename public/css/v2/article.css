@@ -46,6 +46,16 @@ main.content {
     font-family: var(--f-article);
     hyphens: auto;
 
+    @media (min-width: 768px) {
+      p {
+        line-height: 28px;
+      }
+      p,
+      li {
+        font-size-adjust: 0.6;
+      }
+    }
+
     h1,
     h2,
     h3,
@@ -84,7 +94,7 @@ main.content {
     position: relative;
     img {
       max-width: 100%;
-      border-radius: 4px;
+      border-radius: 8px;
       border: 1px solid var(--c-input-bg);
     }
     figcaption {

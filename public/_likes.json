@@ -1722,6 +1722,26 @@
       "like-of": "https://remysharp.com/2023/01/23/hardware-failures",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Arnor",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/1404be16fbc62fd300c2fd4189fb5309948bf0289a4f7f23b2af4ae579149512.jpg",
+        "url": "https://twitter.com/arnorhs"
+      },
+      "url": "https://twitter.com/rem/status/1617871574992031745#favorited-by-14807054",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2023-01-24T14:11:27Z",
+      "wm-id": 1604876,
+      "wm-source": "https://brid.gy/like/twitter/rem/1617871574992031745/14807054",
+      "wm-target": "https://remysharp.com/2023/01/23/hardware-failures",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2023/01/23/hardware-failures",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "my-2022": [
@@ -41042,6 +41062,66 @@
       "like-of": "https://remysharp.com/2019/07/23/analytics-logs-and-metrics",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kyle Mitofsky",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/797b730743e3815f89ec08c6ca436701aa5f74ef7370e91c4419b80b918fef64.jpg",
+        "url": "https://twitter.com/KyleMitBTV"
+      },
+      "url": "https://twitter.com/rem/status/1171741826237251584#favorited-by-331207312",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-09-11T13:07:32Z",
+      "wm-id": 688755,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1171741826237251584/331207312",
+      "wm-target": "https://remysharp.com/2019/07/23/analytics-logs-and-metrics",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2019/07/23/analytics-logs-and-metrics",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Phil Hawksworth",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/fd1185da1ed09664bc011181408cfd1571fc310d9fccaa93ee40f50c93cedd54.jpg",
+        "url": "https://twitter.com/philhawksworth"
+      },
+      "url": "https://twitter.com/rem/status/1171741826237251584#favorited-by-7655012",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-09-11T11:40:07Z",
+      "wm-id": 688705,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1171741826237251584/7655012",
+      "wm-target": "https://remysharp.com/2019/07/23/analytics-logs-and-metrics",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2019/07/23/analytics-logs-and-metrics",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mark Boulton",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/f61302fab955516e0594bda5215cd7afd9628d440a271bc4d22aeabfdae7a336.png",
+        "url": "https://twitter.com/markboulton"
+      },
+      "url": "https://twitter.com/rem/status/1171741826237251584#favorited-by-14112756",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-09-11T11:12:03Z",
+      "wm-id": 688693,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1171741826237251584/14112756",
+      "wm-target": "https://remysharp.com/2019/07/23/analytics-logs-and-metrics",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2019/07/23/analytics-logs-and-metrics",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "progressive-enhancement": [
@@ -41678,6 +41758,66 @@
       "wm-received": "2019-06-20T11:15:44Z",
       "wm-id": 629542,
       "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1141648471482687488/607075116",
+      "wm-target": "https://remysharp.com/about",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/about",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Holger Bartel",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/592535dc857345dd207fd60638dac39139891257ffe2400f476a70ca705647be.jpg",
+        "url": "https://twitter.com/foobartel"
+      },
+      "url": "https://twitter.com/rem/status/1177534697997590528#favorited-by-205651658",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-09-27T11:14:21Z",
+      "wm-id": 699791,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1177534697997590528/205651658",
+      "wm-target": "https://remysharp.com/about",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/about",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Scott Leitch",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/13d6dfb2ade324254800a9247c8ac9c5fb3a15fb22d347548f85db4e0ab1472a.jpg",
+        "url": "https://twitter.com/ScottsWebDev"
+      },
+      "url": "https://twitter.com/rem/status/1177534697997590528#favorited-by-335584701",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-09-27T11:14:20Z",
+      "wm-id": 699789,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1177534697997590528/335584701",
+      "wm-target": "https://remysharp.com/about",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/about",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dr Mark Everitt",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/8b1a12a69cfe4a497f92e182f8c53b3a651388f2389d03c39c303e4587391741.jpg",
+        "url": "https://twitter.com/qubyte"
+      },
+      "url": "https://twitter.com/rem/status/1177534697997590528#favorited-by-19335843",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-09-27T11:14:20Z",
+      "wm-id": 699790,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1177534697997590528/19335843",
       "wm-target": "https://remysharp.com/about",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/about",
@@ -48313,6 +48453,686 @@
       "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthew Phillips",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/7f1c6a494baefe9a0aa65e64940368c2bc66d13f2ef1ab53acfb11b408e8557d.jpg",
+        "url": "https://bsky.app/profile/fancypenguin.party"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ldvg5hiuov25#liked_by_did:plc:eu6cezqsf5yocjsyc7mgkued",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2025-01-01T21:01:44Z",
+      "wm-id": 1871298,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ldvg5hiuov25/did%253Aplc%253Aeu6cezqsf5yocjsyc7mgkued",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "_tomrip",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/1fd63709ba446277543438105f33add763d65065eea2378d883e14d84b24ca9a.jpg",
+        "url": "https://bsky.app/profile/tomrip.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ldvg5hiuov25#liked_by_did:plc:fsgmcb2vlx2fbz3f2nbxkre5",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2025-01-01T21:01:43Z",
+      "wm-id": 1871297,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ldvg5hiuov25/did%253Aplc%253Afsgmcb2vlx2fbz3f2nbxkre5",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Thomas Beduneau",
+        "photo": "https://avatars.webmention.io/cdn.bsky.app/eb6e03e5df3132f2bbee69675c38534ea2557d4b2923575432c88ab4d74bf8a4.jpg",
+        "url": "https://bsky.app/profile/enwin.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3ldvg5hiuov25#liked_by_did:plc:u25tcwh4f6rbmmop5dcee6c5",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2025-01-01T21:01:42Z",
+      "wm-id": 1871296,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3ldvg5hiuov25/did%253Aplc%253Au25tcwh4f6rbmmop5dcee6c5",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Robin Osborne",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/187cd642fef66a1de2f5b7d08ada0e7b489fd731add39f03a1552fb60f5cc0e1.jpg",
+        "url": "https://hachyderm.io/@rposbo"
+      },
+      "url": "https://front-end.social/@rem/113696476057709201#favorited-by-109627042183172576",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2024-12-22T20:59:37Z",
+      "wm-id": 1869241,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/113696476057709201/109627042183172576",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "kevin ???? ✨ (he/him)",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/5cada0e9211cb02f4c1a4a6bc0a8e3144562dbcb21b37b9276e90704eb646c1a.jpg",
+        "url": "https://fosstodon.org/@KevinGimbel"
+      },
+      "url": "https://front-end.social/@rem/113696476057709201#favorited-by-109644508447239851",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2024-12-22T17:18:47Z",
+      "wm-id": 1869217,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/113696476057709201/109644508447239851",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andri 🇮🇸🇩🇰",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/70b7c1795e910b3e8f1ece448e320d7b662dfabe060b913d720c5d9f90ce0095.jpg",
+        "url": "https://twitter.com/andrioid"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-14566494",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T20:39:35Z",
+      "wm-id": 948552,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/14566494",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stefan",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/cafd8bf6a633bee5c42f76ed0f47eb1c60410880623e326fb6bf4b21768bcd37.jpg",
+        "url": "https://twitter.com/stnwk"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-1419078584",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T19:47:31Z",
+      "wm-id": 948529,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/1419078584",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Šime Vidas",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/09bb4880190585b5e89c617e2b0fc0af42f2bd0b1eefa64fa76f35eb307555a6.jpeg",
+        "url": "https://twitter.com/simevidas"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-175727560",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T19:47:31Z",
+      "wm-id": 948530,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/175727560",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Elrick Ryan 🇲🇸",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/176c40079ef432e9ced8ecff19984f58e6c33d3cd7d67ceeda2b6ea561a1f229.jpg",
+        "url": "https://twitter.com/elrickvm"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-818728921",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T18:47:58Z",
+      "wm-id": 948508,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/818728921",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Olena Sovyn",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/14b6fa4acef33759b60224d40d61a34922cdd2b9180f8f086e11a9b5211990ec.jpg",
+        "url": "https://twitter.com/frontendgirl"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-3323126609",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T18:47:57Z",
+      "wm-id": 948506,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/3323126609",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Seren Davies",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/cf1b6b3553d194c3cd1f96b66df2db3d9706bff4e195b20e04e688ba34ae7bc5.jpg",
+        "url": "https://twitter.com/ninjanails"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-167740453",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T18:47:57Z",
+      "wm-id": 948507,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/167740453",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dan Doomscrollin' DeFelippi",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/0211c7d183509c7aa0facda9c1082d17bf0a76ae0b0e4c36c9fb3dfe58ee04bb.png",
+        "url": "https://twitter.com/ExpertDan"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-17566946",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T17:43:58Z",
+      "wm-id": 948472,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/17566946",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julie Sharp",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/0d42737f1c79cd0804d885dee8f4567bbb6adabb28bf4c9edc6c199b1e120925.jpg",
+        "url": "https://twitter.com/Julieanne"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-1235161",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T15:40:34Z",
+      "wm-id": 948352,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/1235161",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Natalia",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/5fbba645186903637c44de774962aa5de9c6f853c95c272768d2003a4ec4437e.jpg",
+        "url": "https://twitter.com/lil_natw"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-436677975",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T15:40:29Z",
+      "wm-id": 948351,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/436677975",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Алка Поне",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/4c123033759887236705321d2e27d6078dab511fe52da20d15674d9cf0f13f54.jpg",
+        "url": "https://twitter.com/nikcname"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-171406617",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T13:34:17Z",
+      "wm-id": 948200,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/171406617",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ruben Duiveman",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/8a4a902c99d851ac7413ad3b66be9c9da2ba683d5fbb00af7ac530e7e6a49e91.jpg",
+        "url": "https://twitter.com/rubenduiveman"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-159565214",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T10:36:45Z",
+      "wm-id": 948063,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/159565214",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Timo Obereder",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/22539c941529db91319a59be8d7c89a6c19ff49793a2c1f5ec9ddb6e5a6aa230.jpg",
+        "url": "https://twitter.com/defuex"
+      },
+      "url": "https://twitter.com/rem/status/1338419132413472768#favorited-by-4402849155",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2020-12-14T09:52:30Z",
+      "wm-id": 948037,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1338419132413472768/4402849155",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Javier Montes",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/11d635c96a8c980ac7999f9e7404f16cb49927c033a5d2b242fa9e4ebed37402.jpg",
+        "url": "https://twitter.com/montesremotedev"
+      },
+      "url": "https://twitter.com/rem/status/1207748258560462848#favorited-by-17389744",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-20T17:58:34Z",
+      "wm-id": 736364,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1207748258560462848/17389744",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthew Higley",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/dd51caa7f3266b4b19c54036819c344e2841399298cb2bbc8e5efa059f4264bf.jpg",
+        "url": "https://twitter.com/matthewhigley"
+      },
+      "url": "https://twitter.com/rem/status/1207748258560462848#favorited-by-57697513",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-20T17:16:10Z",
+      "wm-id": 736353,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1207748258560462848/57697513",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jane Dallaway",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/950d0fabdd55f3fc1500703b999725f810f999785b662d17ad7b9b300d710d10.jpg",
+        "url": "https://twitter.com/JaneDallaway"
+      },
+      "url": "https://twitter.com/rem/status/1207748258560462848#favorited-by-415612602",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-20T08:11:43Z",
+      "wm-id": 736190,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1207748258560462848/415612602",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julian Nicholls",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/08be147b742316e905b6a22762b9fbec91166e62bda1d4cf8357bf6511311a7e.jpeg",
+        "url": "https://twitter.com/ReallyBigShoeUK"
+      },
+      "url": "https://twitter.com/rem/status/1207748258560462848#favorited-by-166715448",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-19T21:47:21Z",
+      "wm-id": 736068,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1207748258560462848/166715448",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matt Bee",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/37b538b1e72f54944115a66c42a879d3dff184e5af1be8097ffd8804f7e0ad75.jpeg",
+        "url": "https://twitter.com/mattbee"
+      },
+      "url": "https://twitter.com/rem/status/1207748258560462848#favorited-by-12492952",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-19T20:52:43Z",
+      "wm-id": 736046,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1207748258560462848/12492952",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julie Sharp",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/0d42737f1c79cd0804d885dee8f4567bbb6adabb28bf4c9edc6c199b1e120925.jpg",
+        "url": "https://twitter.com/Julieanne"
+      },
+      "url": "https://twitter.com/rem/status/1207748258560462848#favorited-by-1235161",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-19T20:05:03Z",
+      "wm-id": 736031,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1207748258560462848/1235161",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Katie Fenn",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/7ea20c8a25b199601b610891ba9d5b8e0e98c4a55ac8b61d056c615c8a8f56f0.jpg",
+        "url": "https://twitter.com/katie_fenn"
+      },
+      "url": "https://twitter.com/rem/status/1207748258560462848#favorited-by-14979616",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-19T20:04:39Z",
+      "wm-id": 736030,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1207748258560462848/14979616",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julie Sharp",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/0d42737f1c79cd0804d885dee8f4567bbb6adabb28bf4c9edc6c199b1e120925.jpg",
+        "url": "https://twitter.com/Julieanne"
+      },
+      "url": "https://twitter.com/rem/status/1207625437532360704#favorited-by-1235161",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-19T12:35:03Z",
+      "wm-id": 735945,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1207625437532360704/1235161",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julian Nicholls",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/08be147b742316e905b6a22762b9fbec91166e62bda1d4cf8357bf6511311a7e.jpeg",
+        "url": "https://twitter.com/ReallyBigShoeUK"
+      },
+      "url": "https://twitter.com/rem/status/1207625437532360704#favorited-by-166715448",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-19T12:00:17Z",
+      "wm-id": 735940,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1207625437532360704/166715448",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jane Dallaway",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/950d0fabdd55f3fc1500703b999725f810f999785b662d17ad7b9b300d710d10.jpg",
+        "url": "https://twitter.com/JaneDallaway"
+      },
+      "url": "https://twitter.com/rem/status/1207625437532360704#favorited-by-415612602",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-19T12:00:04Z",
+      "wm-id": 735939,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1207625437532360704/415612602",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Yuriy Markov",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/dd8d3cbbad9961ad9026e8387a311adcd53ded6efad0c8caa1aa8e456b03eadf.jpg",
+        "url": "https://twitter.com/markov_yuriy"
+      },
+      "url": "https://twitter.com/rem/status/1206203478256869376#favorited-by-733108825",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-16T14:50:30Z",
+      "wm-id": 734978,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1206203478256869376/733108825",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tamas Piros",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/a4f6598e4642f265e62365394807fe108fd0390f17884b6311e27d2ac8164c8d.jpg",
+        "url": "https://twitter.com/tpiros"
+      },
+      "url": "https://twitter.com/rem/status/1206203478256869376#favorited-by-1698969272",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-16T14:07:52Z",
+      "wm-id": 734961,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1206203478256869376/1698969272",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dan Jenkins",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/3fb480fcd9550b1ddc870a83300a8ef9e6e914281a4eefb091944716f1b5f1bc.jpg",
+        "url": "https://twitter.com/dan_jenkins"
+      },
+      "url": "https://twitter.com/rem/status/1206203478256869376#favorited-by-16101889",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-16T12:29:46Z",
+      "wm-id": 734934,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1206203478256869376/16101889",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mark Fraser",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/8ddd71cc07bbb26d5853881138bd805a9cd775e4e64aa74448dd26d123a5fdc8.png",
+        "url": "https://twitter.com/mfraz74"
+      },
+      "url": "https://twitter.com/rem/status/1206203478256869376#favorited-by-22135485",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-16T11:34:17Z",
+      "wm-id": 734926,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1206203478256869376/22135485",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julie Sharp",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/0d42737f1c79cd0804d885dee8f4567bbb6adabb28bf4c9edc6c199b1e120925.jpg",
+        "url": "https://twitter.com/Julieanne"
+      },
+      "url": "https://twitter.com/rem/status/1206203478256869376#favorited-by-1235161",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-16T10:52:42Z",
+      "wm-id": 734906,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1206203478256869376/1235161",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julian Nicholls",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/08be147b742316e905b6a22762b9fbec91166e62bda1d4cf8357bf6511311a7e.jpeg",
+        "url": "https://twitter.com/ReallyBigShoeUK"
+      },
+      "url": "https://twitter.com/rem/status/1206203478256869376#favorited-by-166715448",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-15T17:33:26Z",
+      "wm-id": 734496,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1206203478256869376/166715448",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "const Andrei;",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/7f8cbb37bf7f4151f26c2556877c5cb28c6530caf22a870c76e4894818ab4dc8.jpg",
+        "url": "https://twitter.com/andreicon_"
+      },
+      "url": "https://twitter.com/rem/status/1206203478256869376#favorited-by-2807407417",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-12-15T17:32:58Z",
+      "wm-id": 734495,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1206203478256869376/2807407417",
+      "wm-target": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2010/11/29/our-christmas-films-list",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ],
   "unrot-that-link": [
@@ -50765,6 +51585,66 @@
       "wm-received": "2024-06-05T20:35:01Z",
       "wm-id": 1833520,
       "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/112565761671198215/109296966547130430",
+      "wm-target": "https://remysharp.com/2024/05/25/casio-f91w-modding",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/05/25/casio-f91w-modding",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "paulcuth",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/762e1f447dc4674709556097cfafef6f407bede68f013649a0255fb1c119f5bc.jpg",
+        "url": "https://mastodon.social/@paulcuth"
+      },
+      "url": "https://front-end.social/@rem/113203327303109239#favorited-by-109295859354337683",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2024-09-26T11:48:15Z",
+      "wm-id": 1849370,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/113203327303109239/109295859354337683",
+      "wm-target": "https://remysharp.com/2024/05/25/casio-f91w-modding",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/05/25/casio-f91w-modding",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Katie Fenn",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/5cc53d05cbd0e851f3cce10915695ec98724e34a734d6e81d328513ca43499e2.jpg",
+        "url": "https://front-end.social/@katiefenn"
+      },
+      "url": "https://front-end.social/@rem/113203327303109239#favorited-by-109338682378924967",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2024-09-26T10:45:09Z",
+      "wm-id": 1849365,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/113203327303109239/109338682378924967",
+      "wm-target": "https://remysharp.com/2024/05/25/casio-f91w-modding",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2024/05/25/casio-f91w-modding",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lewis Dale",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8dee5f524779a540b5268e7b7707cfbe5705b476513e8a7c0bfbf28ab738621f.jpg",
+        "url": "https://social.lol/@lewis"
+      },
+      "url": "https://front-end.social/@rem/113203327303109239#favorited-by-111676812307545010",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2024-09-26T10:45:09Z",
+      "wm-id": 1849366,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/113203327303109239/111676812307545010",
       "wm-target": "https://remysharp.com/2024/05/25/casio-f91w-modding",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2024/05/25/casio-f91w-modding",
@@ -65688,6 +66568,297 @@
       "wm-target": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
       "wm-protocol": "webmention",
       "like-of": "https://remysharp.com/2026/09/10/text-decoration-thickness-discrepancies",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "redesign-26": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "beyond tellerrand",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8a13412dae04039ee7c7c8fdeeeb8604e37b1366223bad664b82624fa9453c41.png",
+        "url": "https://mastodon.social/@btconf"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-109292227369717823",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T11:59:06Z",
+      "wm-id": 2031999,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/109292227369717823",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andrew",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:t7yczu5u66fn7vfkq4a6e6rj/bafkreig3qwrn4wquic2qh7nytetoivw4v7zj7js2k7ilkyeaxkpaj3qje4",
+        "url": "https://bsky.app/profile/andrewt.net"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:t7yczu5u66fn7vfkq4a6e6rj",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T11:37:18Z",
+      "wm-id": 2031992,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253At7yczu5u66fn7vfkq4a6e6rj",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rowan Merewood",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:7dtviror2bcs32dnngqsf7ay/bafkreie5mowkaqwaz674hsuvomiyb6wb3anvjud65rqyqvdwgg47cij7ra",
+        "url": "https://bsky.app/profile/rowan.fyi"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:7dtviror2bcs32dnngqsf7ay",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T11:37:15Z",
+      "wm-id": 2031991,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253A7dtviror2bcs32dnngqsf7ay",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James :ruby:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/3f862b11177a2237731e74d74ed43468f479b22acf8283a13abf5bea555237ff.jpg",
+        "url": "https://ruby.social/@floehopper"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-109310914916270208",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T11:30:37Z",
+      "wm-id": 2031990,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/109310914916270208",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Duffeh",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:spulgjrl7sactd23bgqv6jen/bafkreihf42m7kegjr2iu7zucmfcby4dqblokuc7ii3nomjtfv7tod5m6la",
+        "url": "https://bsky.app/profile/duffeh.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:spulgjrl7sactd23bgqv6jen",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T11:09:36Z",
+      "wm-id": 2031987,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253Aspulgjrl7sactd23bgqv6jen",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michael Harley",
+        "photo": "https://avatars.webmention.io/michaelharley.net/9d877b708614b8f23bb7afe1ac76b334ee646b40a4d31c80544a0c3f478a74a7.png",
+        "url": "https://michaelharley.net"
+      },
+      "url": "https://michaelharley.net/likes/2026/09/14/redesign-26-blog/",
+      "published": "2026-09-14T06:05:35-04:00",
+      "published_ts": 1789380335,
+      "wm-received": "2026-09-14T10:11:44Z",
+      "wm-id": 2031965,
+      "wm-source": "https://michaelharley.net/likes/2026/09/14/redesign-26-blog/",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<a href=\"https://michaelharley.net\">Michael Harley</a>\n      \n      liked <a class=\"u-like-of\" href=\"https://remysharp.com/2026/09/14/redesign-26\">Redesign '26 [blog]</a>",
+        "text": "Michael Harley\n      \n      liked Redesign '26 [blog]"
+      },
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://michaelharley.net/likes/2026/09/14/redesign-26-blog/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-109302579306985968",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:56:58Z",
+      "wm-id": 2031960,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/109302579306985968",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Wingo",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a2271da3588bdc0eeab978c49c0f1bae2a447ee9bde4c81ef90cf851d4890b7e.jpg",
+        "url": "https://mastodon.social/@wingo"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-109337825598859561",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:56:58Z",
+      "wm-id": 2031961,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/109337825598859561",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/69e600ace15f7cb55f5c08c28dbff6eb6162fe63df619403440108c62d57010c.png",
+        "url": "https://fedi.vale.rocks/users/vale"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-111460277448308485",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:56:57Z",
+      "wm-id": 2031959,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/111460277448308485",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "SimonCox",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:tki7vwlanxbwrz2er67eaeqa/bafkreiabali2634y2slw3yiixyfgxibw6qhnvmp6imzbvyuflezvkjg4em",
+        "url": "https://bsky.app/profile/simoncox.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:tki7vwlanxbwrz2er67eaeqa",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:52:09Z",
+      "wm-id": 2031957,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253Atki7vwlanxbwrz2er67eaeqa",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:7qg6mz2xtzozxkgbcvf4pdnu/bafkreiav5vj6xi33c7pcr2wtl3bqxsynlgd7rwdpvetnik75nte4ms5xzy",
+        "url": "https://bsky.app/profile/vale.rocks"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:7qg6mz2xtzozxkgbcvf4pdnu",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:52:08Z",
+      "wm-id": 2031955,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253A7qg6mz2xtzozxkgbcvf4pdnu",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matt Seymour",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:su22o65vdzzdspxq4hugauqp/bafkreigoaj3zxlycig5besnwi6tpj7rax3j5rrrbvkhwrwytm5rihlproi",
+        "url": "https://bsky.app/profile/developer-matt.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:su22o65vdzzdspxq4hugauqp",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:52:08Z",
+      "wm-id": 2031956,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253Asu22o65vdzzdspxq4hugauqp",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kolombiken",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a19413415c6d2496fd97547b2f0b5b0970c2431e0edc820176a26b39f120d52b.jpg",
+        "url": "https://front-end.social/@kolombiken"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-113254859888289164",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T13:35:10Z",
+      "wm-id": 2032022,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/113254859888289164",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "full-frontal-javascript-conference": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Frontend Love",
+        "photo": "https://avatars.webmention.io/pbs.twimg.com/7e781835bd4da9d7e9fcce72fc82d7943e5f18f0d3567f3949df10199fbd4441.png",
+        "url": "https://twitter.com/Frontend_Love"
+      },
+      "url": "https://twitter.com/rem/status/1151433482566021120#favorited-by-922806360332472327",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2019-07-17T11:04:15Z",
+      "wm-id": 648882,
+      "wm-source": "https://brid-gy.appspot.com/like/twitter/rem/1151433482566021120/922806360332472327",
+      "wm-target": "https://remysharp.com/2009/04/20/full-frontal-javascript-conference",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2009/04/20/full-frontal-javascript-conference",
       "wm-property": "like-of",
       "wm-private": false
     }
