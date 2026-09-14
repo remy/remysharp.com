@@ -33,6 +33,7 @@ block content
   - safeTitle = data.title.replace(/'/g, '\\\'')
   - ad = ad ?? 'cli-book'
 
+  include ../_partials/post-nav
   include ../_partials/notice
 
 
@@ -80,5 +81,3 @@ block content
 
       if comments != false
         include ../_partials/comments
-
-      include ../_partials/post-nav
