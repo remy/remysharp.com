@@ -65691,5 +65691,274 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "redesign-26": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kolombiken",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a19413415c6d2496fd97547b2f0b5b0970c2431e0edc820176a26b39f120d52b.jpg",
+        "url": "https://front-end.social/@kolombiken"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-113254859888289164",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T13:35:10Z",
+      "wm-id": 2032022,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/113254859888289164",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "beyond tellerrand",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8a13412dae04039ee7c7c8fdeeeb8604e37b1366223bad664b82624fa9453c41.png",
+        "url": "https://mastodon.social/@btconf"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-109292227369717823",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T11:59:06Z",
+      "wm-id": 2031999,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/109292227369717823",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andrew",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:t7yczu5u66fn7vfkq4a6e6rj/bafkreig3qwrn4wquic2qh7nytetoivw4v7zj7js2k7ilkyeaxkpaj3qje4",
+        "url": "https://bsky.app/profile/andrewt.net"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:t7yczu5u66fn7vfkq4a6e6rj",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T11:37:18Z",
+      "wm-id": 2031992,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253At7yczu5u66fn7vfkq4a6e6rj",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rowan Merewood",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:7dtviror2bcs32dnngqsf7ay/bafkreie5mowkaqwaz674hsuvomiyb6wb3anvjud65rqyqvdwgg47cij7ra",
+        "url": "https://bsky.app/profile/rowan.fyi"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:7dtviror2bcs32dnngqsf7ay",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T11:37:15Z",
+      "wm-id": 2031991,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253A7dtviror2bcs32dnngqsf7ay",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James :ruby:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/3f862b11177a2237731e74d74ed43468f479b22acf8283a13abf5bea555237ff.jpg",
+        "url": "https://ruby.social/@floehopper"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-109310914916270208",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T11:30:37Z",
+      "wm-id": 2031990,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/109310914916270208",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Duffeh",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:spulgjrl7sactd23bgqv6jen/bafkreihf42m7kegjr2iu7zucmfcby4dqblokuc7ii3nomjtfv7tod5m6la",
+        "url": "https://bsky.app/profile/duffeh.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:spulgjrl7sactd23bgqv6jen",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T11:09:36Z",
+      "wm-id": 2031987,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253Aspulgjrl7sactd23bgqv6jen",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michael Harley",
+        "photo": "https://avatars.webmention.io/michaelharley.net/9d877b708614b8f23bb7afe1ac76b334ee646b40a4d31c80544a0c3f478a74a7.png",
+        "url": "https://michaelharley.net"
+      },
+      "url": "https://michaelharley.net/likes/2026/09/14/redesign-26-blog/",
+      "published": "2026-09-14T06:05:35-04:00",
+      "published_ts": 1789380335,
+      "wm-received": "2026-09-14T10:11:44Z",
+      "wm-id": 2031965,
+      "wm-source": "https://michaelharley.net/likes/2026/09/14/redesign-26-blog/",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<a href=\"https://michaelharley.net\">Michael Harley</a>\n      \n      liked <a class=\"u-like-of\" href=\"https://remysharp.com/2026/09/14/redesign-26\">Redesign '26 [blog]</a>",
+        "text": "Michael Harley\n      \n      liked Redesign '26 [blog]"
+      },
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://michaelharley.net/likes/2026/09/14/redesign-26-blog/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Simon Cox :SEO:",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/c25f602d3ff14afc9b47c9d29f45d1f796b6a9108acc745ca0af7967b4294f18.jpg",
+        "url": "https://seocommunity.social/@simoncox"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-109302579306985968",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:56:58Z",
+      "wm-id": 2031960,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/109302579306985968",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Wingo",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/a2271da3588bdc0eeab978c49c0f1bae2a447ee9bde4c81ef90cf851d4890b7e.jpg",
+        "url": "https://mastodon.social/@wingo"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-109337825598859561",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:56:58Z",
+      "wm-id": 2031961,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/109337825598859561",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/69e600ace15f7cb55f5c08c28dbff6eb6162fe63df619403440108c62d57010c.png",
+        "url": "https://fedi.vale.rocks/users/vale"
+      },
+      "url": "https://front-end.social/@rem/117268684225194415#favorited-by-111460277448308485",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:56:57Z",
+      "wm-id": 2031959,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117268684225194415/111460277448308485",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "SimonCox",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:tki7vwlanxbwrz2er67eaeqa/bafkreiabali2634y2slw3yiixyfgxibw6qhnvmp6imzbvyuflezvkjg4em",
+        "url": "https://bsky.app/profile/simoncox.com"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:tki7vwlanxbwrz2er67eaeqa",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:52:09Z",
+      "wm-id": 2031957,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253Atki7vwlanxbwrz2er67eaeqa",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:7qg6mz2xtzozxkgbcvf4pdnu/bafkreiav5vj6xi33c7pcr2wtl3bqxsynlgd7rwdpvetnik75nte4ms5xzy",
+        "url": "https://bsky.app/profile/vale.rocks"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:7qg6mz2xtzozxkgbcvf4pdnu",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:52:08Z",
+      "wm-id": 2031955,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253A7qg6mz2xtzozxkgbcvf4pdnu",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matt Seymour",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:su22o65vdzzdspxq4hugauqp/bafkreigoaj3zxlycig5besnwi6tpj7rax3j5rrrbvkhwrwytm5rihlproi",
+        "url": "https://bsky.app/profile/developer-matt.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mvhsbgb5js2x#liked_by_did:plc:su22o65vdzzdspxq4hugauqp",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-14T09:52:08Z",
+      "wm-id": 2031956,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mvhsbgb5js2x/did%253Aplc%253Asu22o65vdzzdspxq4hugauqp",
+      "wm-target": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/14/redesign-26",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
