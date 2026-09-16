@@ -60,7 +60,7 @@
       }
     }
 
-    const cover = getText(last.image.pop());
+    const cover = last.image.find(_ => _.size == 'large')['#text'];
 
     const data = {
       artist, album, cover
@@ -74,7 +74,7 @@
     return data;
   }
 
-  const { album, track, cover, when, artist } = await getRecent();
+  const { album, track, cover, artist } = await getRecent();
 
   function linkAlbum(albumUrl, album) {
     if (albumUrl) {
