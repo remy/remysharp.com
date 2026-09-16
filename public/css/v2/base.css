@@ -515,7 +515,7 @@ body > footer {
       max-width: 80ch;
     }
 
-    article {
+    article:not(.lists) {
       grid-area: post;
     }
 
