@@ -24,7 +24,26 @@
     Oxygen- Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   --f-article: 'NotoSerif', 'Times New Roman', Times, serif;
   --f-heading: 'VictorMono', 'Courier New', Courier, monospace;
+
   --f-mono: 'VictorMono', 'Courier New', Courier, monospace;
+  --f-mono-size: 0.85rem;
+  --f-mono-weight: 700;
+  --f-mono-line-height: 2;
+  --f-mono-adjust: 0.65;
+
+  --f-mono_u:
+    'Ubuntu Mono', menlo, monaco, consolas, courier, 'courier new',
+    'lucida console', monospace;
+  --f-mono_u-size: 1.1rem;
+  --f-mono_u-weight: 400;
+  --f-mono_u-line-height: 1.4;
+  --f-mono_u-adjust: none;
+
+  /* --f-mono: var(--f-mono_u);
+  --f-mono-size: var(--f-mono_u-size);
+  --f-mono-weight: var(--f-mono_u-weight);
+  --f-mono-line-height: var(--f-mono_u-line-height);
+  --f-mono-adjust: var(--f-mono_u-adjust); */
 }
 
 @media (prefers-contrast: more) {
@@ -207,16 +226,17 @@ code {
   font-family: var(--f-mono);
   color: var(--c-text-primary);
   font-feature-settings: 'ss02' 1;
-  font-weight: 700;
   font-style: normal;
-  font-size: 0.85rem;
+  font-weight: var(--f-mono-weight);
+  font-size: var(--f-mono-size);
   font-variant-alternates: styleset(set-2);
 }
 
 pre {
   background: var(--c-bg-alt);
   padding: clamp(0.8rem, 1.4vw, 1rem) clamp(1rem, 1.5vw, 1.2rem);
-  line-height: 1.6;
+  line-height: var(--f-mono-line-height);
+  font-size: var(--f-mono-size);
 
   position: relative;
   border-radius: 4px;
@@ -245,15 +265,15 @@ pre {
 :not(pre) > code {
   white-space: preserve-breaks;
   color: var(--c-text-alt);
-  font-size-adjust: 0.65;
-  font-weight: 700;
+  font-size-adjust: var(--f-mono-adjust);
+  font-weight: var(--f-mono-weight);
   font-variation-settings: 'XHGT' 562;
   letter-spacing: 0.02rem;
 }
 
 blockquote {
   margin: 1rem 0;
-  max-width: 67ch; /* 🤷 */
+  /* max-width: 67ch; */
   padding: 1rem;
   border-radius: 4px;
   border-left: 8px solid var(--c-alt);
@@ -295,7 +315,7 @@ nav {
 
 body:not(#index-page) > footer {
   margin-top: 4rem;
-  border-top: 4px solid var(--c-alt);
+  border-top: 6px double var(--c-alt);
   padding-top: 4rem;
 }
 
@@ -502,7 +522,8 @@ body > footer {
 
     #currently {
       grid-area: currently;
-      justify-self: end;
+      padding: 0;
+      /* justify-self: end; */
 
       #currentlyReading h3 {
         margin-top: 0;
@@ -514,11 +535,11 @@ body > footer {
       max-width: 80ch;
     }
 
-    article {
+    article:not(.lists) {
       grid-area: post;
     }
 
-    .list {
+    .lists {
       grid-area: list;
     }
 
