@@ -1,6 +1,9 @@
 .h-entry {
   display: grid;
-  gap: clamp(1rem, 4vw, 2rem);
+
+  @media (min-width: 768px) {
+    gap: clamp(1rem, 4vw, 2rem);
+  }
   grid-template-columns: minmax(0, 1fr);
 
   .misc-content {
@@ -46,13 +49,14 @@ main.content {
     font-family: var(--f-article);
     hyphens: auto;
 
+    & > :first-child {
+      color: #eee;
+    }
+
     @media (min-width: 768px) {
+      font-size-adjust: 0.6;
       p {
         line-height: 28px;
-      }
-      p,
-      li {
-        font-size-adjust: 0.6;
       }
     }
 
@@ -75,6 +79,7 @@ main.content {
     h4,
     h5,
     h6 {
+      font-size-adjust: unset;
       margin-top: 1.6rem;
       margin-bottom: 0;
       word-spacing: -0.3rem;
@@ -90,10 +95,34 @@ main.content {
     padding-left: 20px;
   }
 
+  img {
+    border-radius: 8px;
+    border: 1px solid var(--c-input-bg);
+
+    &[src$='.png'] {
+      border: 0;
+    }
+  }
+
+  p:has(> img + img) {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+
+    img {
+      flex: 1;
+      min-width: 0;
+    }
+  }
+
   figure {
     position: relative;
     img {
+      width: 100%;
       max-width: 100%;
+      height: auto;
+      /* max-height: 80vh; */
+      aspect-ratio: auto;
       border-radius: 8px;
       border: 1px solid var(--c-input-bg);
     }
