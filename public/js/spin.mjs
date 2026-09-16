@@ -4,6 +4,18 @@
     return new Promise(resolve => setTimeout(resolve, ms));
   }
 
+  function findMostListenedTo(tracks) {
+    const res = tracks.reduce((acc, track) => {
+      const album = track.album['#text'];
+      acc[album] = {
+        ...track,
+        count: (acc[album]?.count || 0) + 1
+      }
+      return acc;
+    }, {});
+    return Object.entries(res).sort((a, b) => b[1].count - a[1].count)[0][1];
+  }
+
   async function getRecent() {
     let store = localStorage.getItem('lastfmRecentlyPlayed');
 
@@ -44,7 +56,8 @@
       return playTime > twoDaysAgo;
     }).sort((a, b) => parseInt(b.date.uts) - parseInt(a.date.uts));
 
-    const last = recentTracks[0];
+    // TODO decide what if there's no recent tracks?
+    const last = findMostListenedTo(recentTracks) || recentTracks[0];
 
     const getText = input => input['#text'];
     let artist = getText(last.artist);
