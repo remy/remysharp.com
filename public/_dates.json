@@ -19,7 +19,10 @@
     "created": "2018-09-02T21:17:52.000Z",
     "modified": "2019-11-22T18:17:22.000Z"
   },
-  "public/sample.md": {},
+  "public/sample.md": {
+    "created": "2026-09-14T08:45:09.000Z",
+    "modified": "2026-09-14T08:45:09.000Z"
+  },
   "public/tmp-gb.md": {
     "created": "2023-03-12T23:35:58.000Z",
     "modified": "2023-03-12T23:35:58.000Z"
@@ -172,7 +175,10 @@
     "created": "2025-05-31T14:35:42.000Z",
     "modified": "2025-05-31T16:02:12.000Z"
   },
-  "public/blog/ai-for-alt-text.md": {},
+  "public/blog/ai-for-alt-text.md": {
+    "created": "2026-09-14T08:45:09.000Z",
+    "modified": "2026-09-14T09:20:22.000Z"
+  },
   "public/blog/air-textmate-bundle.md": {
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
@@ -1115,7 +1121,7 @@
   },
   "public/blog/how-to-integrate-openid-as-your-login-system.md": {
     "created": "2014-09-04T11:12:23.000Z",
-    "modified": "2019-03-20T15:54:13.000Z"
+    "modified": "2026-09-14T08:45:09.000Z"
   },
   "public/blog/how-to-make-a-cms-editor-more-usable.md": {
     "created": "2014-09-04T11:12:23.000Z",
@@ -1929,6 +1935,10 @@
     "created": "2014-12-03T21:58:32.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
   },
+  "public/blog/redesign-26.md": {
+    "created": "2026-09-14T08:45:09.000Z",
+    "modified": "2026-09-14T09:08:28.000Z"
+  },
   "public/blog/reduce-spread-and-the-path-to-unique.md": {
     "created": "2019-06-15T10:28:34.000Z",
     "modified": "2019-06-15T12:51:16.000Z"
@@ -2192,6 +2202,10 @@
   "public/blog/testing-usb-cables-for-data-lines.md": {
     "created": "2023-02-27T15:57:51.000Z",
     "modified": "2023-09-11T22:41:41.000Z"
+  },
+  "public/blog/text-decoration-thickness-discrepancies.md": {
+    "created": "2026-09-10T21:54:45.000Z",
+    "modified": "2026-09-11T09:35:51.000Z"
   },
   "public/blog/textmate-tagging-with-simple-tagging.md": {
     "created": "2014-09-04T11:12:23.000Z",
@@ -3112,130 +3126,6 @@
   "public/drafts/your-own-online-video-course.md": {
     "created": "2017-02-03T13:44:38.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
-  },
-  "public/newsletters/2017-06-30.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-07-28.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-08-25.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-09-29.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-10-28.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-11-24.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2017-12-29.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-01-26.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-02-27.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-03-30.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-04-27.md": {
-    "created": "2018-05-31T21:09:37.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-05-31.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-06-29.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-07-27.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-08-31.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-09-28.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-10-26.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-11-30.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2018-12-31.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-12-27T15:20:07.000Z"
-  },
-  "public/newsletters/2019-01-25.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2019-02-22.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2019-03-29.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2019-04-26.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2019-05-31.md": {
-    "created": "2019-06-06T22:57:02.000Z",
-    "modified": "2019-06-28T07:46:55.000Z"
-  },
-  "public/newsletters/2019-06-28.md": {
-    "created": "2019-06-28T07:46:55.000Z",
-    "modified": "2019-06-30T11:55:06.000Z"
-  },
-  "public/newsletters/2019-07-26.md": {
-    "created": "2019-07-26T22:00:54.000Z",
-    "modified": "2019-07-28T20:24:37.000Z"
-  },
-  "public/newsletters/2019-08-30.md": {
-    "created": "2019-08-29T20:03:44.000Z",
-    "modified": "2019-08-29T20:03:44.000Z"
-  },
-  "public/newsletters/2019-09-26.md": {
-    "created": "2019-09-27T12:27:01.000Z",
-    "modified": "2019-09-27T12:27:01.000Z"
-  },
-  "public/newsletters/2019-10-26.md": {
-    "created": "2019-10-26T09:46:20.000Z",
-    "modified": "2019-10-26T09:46:20.000Z"
-  },
-  "public/newsletters/2019-11-29.md": {
-    "created": "2019-11-29T13:49:34.000Z",
-    "modified": "2019-11-29T13:49:34.000Z"
-  },
-  "public/newsletters/2019-12-27.md": {
-    "created": "2019-12-27T15:20:07.000Z",
-    "modified": "2019-12-27T15:27:13.000Z"
   },
   "public/links/2007-10-05-39887df3.md": {
     "created": "2020-04-22T15:53:04.000Z",
@@ -4317,6 +4207,130 @@
     "created": "2026-09-08T12:11:19.000Z",
     "modified": "2026-09-08T12:11:19.000Z"
   },
+  "public/newsletters/2017-06-30.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-07-28.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-08-25.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-09-29.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-10-28.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-11-24.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2017-12-29.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-01-26.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-02-27.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-03-30.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-04-27.md": {
+    "created": "2018-05-31T21:09:37.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-05-31.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-06-29.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-07-27.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-08-31.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-09-28.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-10-26.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-11-30.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2018-12-31.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-12-27T15:20:07.000Z"
+  },
+  "public/newsletters/2019-01-25.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2019-02-22.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2019-03-29.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2019-04-26.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2019-05-31.md": {
+    "created": "2019-06-06T22:57:02.000Z",
+    "modified": "2019-06-28T07:46:55.000Z"
+  },
+  "public/newsletters/2019-06-28.md": {
+    "created": "2019-06-28T07:46:55.000Z",
+    "modified": "2019-06-30T11:55:06.000Z"
+  },
+  "public/newsletters/2019-07-26.md": {
+    "created": "2019-07-26T22:00:54.000Z",
+    "modified": "2019-07-28T20:24:37.000Z"
+  },
+  "public/newsletters/2019-08-30.md": {
+    "created": "2019-08-29T20:03:44.000Z",
+    "modified": "2019-08-29T20:03:44.000Z"
+  },
+  "public/newsletters/2019-09-26.md": {
+    "created": "2019-09-27T12:27:01.000Z",
+    "modified": "2019-09-27T12:27:01.000Z"
+  },
+  "public/newsletters/2019-10-26.md": {
+    "created": "2019-10-26T09:46:20.000Z",
+    "modified": "2019-10-26T09:46:20.000Z"
+  },
+  "public/newsletters/2019-11-29.md": {
+    "created": "2019-11-29T13:49:34.000Z",
+    "modified": "2019-11-29T13:49:34.000Z"
+  },
+  "public/newsletters/2019-12-27.md": {
+    "created": "2019-12-27T15:20:07.000Z",
+    "modified": "2019-12-27T15:27:13.000Z"
+  },
   "public/tif/2023-02-11-space-invaders.md": {
     "created": "2023-02-14T22:40:51.000Z",
     "modified": "2025-12-30T21:38:10.000Z"
@@ -4441,11 +4455,11 @@
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
   },
-  "public/attic/2008/info.md": {
+  "public/attic/2014/info.md": {
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
   },
-  "public/attic/2014/info.md": {
+  "public/attic/2008/info.md": {
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
   },
@@ -5333,6 +5347,18 @@
     "created": "2021-05-21T11:39:58.000Z",
     "modified": "2021-05-21T11:39:58.000Z"
   },
+  "public/til/computing/all-the-things-you-didnt-ask-about-ps2-keyboards.md": {
+    "created": "2021-05-11T18:15:16.000Z",
+    "modified": "2021-09-02T20:01:36.000Z"
+  },
+  "public/til/computing/fast-mod.md": {
+    "created": "2020-09-10T09:50:29.000Z",
+    "modified": "2020-09-10T10:05:37.000Z"
+  },
+  "public/til/computing/index-bitmaps.md": {
+    "created": "2020-07-13T13:19:29.000Z",
+    "modified": "2020-07-13T13:19:29.000Z"
+  },
   "public/til/css/css-calc-divide.md": {
     "created": "2020-05-15T16:27:03.000Z",
     "modified": "2020-05-26T11:26:37.000Z"
@@ -5360,18 +5386,6 @@
   "public/til/css/text-overflow.md": {
     "created": "2020-11-06T19:13:58.000Z",
     "modified": "2020-11-06T19:13:58.000Z"
-  },
-  "public/til/computing/all-the-things-you-didnt-ask-about-ps2-keyboards.md": {
-    "created": "2021-05-11T18:15:16.000Z",
-    "modified": "2021-09-02T20:01:36.000Z"
-  },
-  "public/til/computing/fast-mod.md": {
-    "created": "2020-09-10T09:50:29.000Z",
-    "modified": "2020-09-10T10:05:37.000Z"
-  },
-  "public/til/computing/index-bitmaps.md": {
-    "created": "2020-07-13T13:19:29.000Z",
-    "modified": "2020-07-13T13:19:29.000Z"
   },
   "public/til/data/modifying-autoincrements.md": {
     "created": "2021-06-18T08:10:17.000Z",

@@ -31,7 +31,7 @@ article.post
       a(href=`${latest.url}`) Read the rest of this entry &raquo;
 
 section.list-col
-  section.post.lists
+  article.post.lists
     header.post-header
       h2.title Recently Updated
     .post-content
@@ -41,57 +41,57 @@ section.list-col
             a(href=`${ post.url }`)= post.data.title
             small &nbsp; updated #{ moment(post.data.modified).format('d-MMM yyyy') }
 
-  section.post.lists#elsewhere
+  article.post.lists#elsewhere
     header.post-header
       h2.title Remy Elsewhere
     .post-content
-    ul.links
-      li
-        a(href="https://leftlogic.com" rel="me" title="my business: hire me") Left Logic
-        | &nbsp;- my business: hire me
-      li
-        a(href="https://github.com/remy/" rel="me" title="Fork me!") @remy on Github
-        | &nbsp;- fork me!
-      li
-        a(href="https://bsky.app/profile/remysharp.com" rel="me" title="bloot, bloot") @rem on Bluesky
-        | &nbsp;- bloot, bloot
-      li
-        a(href="https://front-end.social/@rem" rel="me" title="toot, toot") @rem on Mastodon
-        | &nbsp;- toot, toot
-      li
-        a(href="/books" rel="me" title="some for fun, some for geek") Reading
-        | &nbsp;- ssssssh
-      //- li
-      //-   a(href="https://www.twitch.tv/remysharp" rel="me" title="link goodness") Streaming
-      //-   | &nbsp;- bug squishing live
-      li
-        a(href="/links" title="link goodness") Bookmarks
-        | &nbsp;- linky goodness
-      li
-        a(href="https://flickr.com/photos/remysharp" rel="me" title="some for fun, some for geek") Flickr
-        | &nbsp;- some for fun, some for geek
-      //- li
-        a(href="http://jqueryfordesigners.com" rel="me" title="tutorials &amp; screencasts") jQuery for Designers
-        | &nbsp;- tutorials &amp; screencasts
-      li
-        a(href="/speaking/" rel="me" title="my conf talks") Speaking
-        | &nbsp;- my conf talks
-      li
-        a(href="http://marbles2.com" rel="me") Marbles#[sup 2]
-        | &nbsp;- my game
-    if site_version == "1"
-      div#currently
-          #currentlyReading
-            h3 Reading
-            .book
-              div.cover
-                img(width="64" src=`${book.cover}`)
-              p
-                span.title= book.title
-                span.by By #{book.author}
+      ul.links
+        li
+          a(href="https://leftlogic.com" rel="me" title="my business: hire me") Left Logic
+          | &nbsp;- my business: hire me
+        li
+          a(href="https://github.com/remy/" rel="me" title="Fork me!") @remy on Github
+          | &nbsp;- fork me!
+        li
+          a(href="https://bsky.app/profile/remysharp.com" rel="me" title="bloot, bloot") @rem on Bluesky
+          | &nbsp;- bloot, bloot
+        li
+          a(href="https://front-end.social/@rem" rel="me" title="toot, toot") @rem on Mastodon
+          | &nbsp;- toot, toot
+        li
+          a(href="/books" rel="me" title="some for fun, some for geek") Reading
+          | &nbsp;- ssssssh
+        //- li
+        //-   a(href="https://www.twitch.tv/remysharp" rel="me" title="link goodness") Streaming
+        //-   | &nbsp;- bug squishing live
+        li
+          a(href="/links" title="link goodness") Bookmarks
+          | &nbsp;- linky goodness
+        li
+          a(href="https://flickr.com/photos/remysharp" rel="me" title="some for fun, some for geek") Flickr
+          | &nbsp;- some for fun, some for geek
+        //- li
+          a(href="http://jqueryfordesigners.com" rel="me" title="tutorials &amp; screencasts") jQuery for Designers
+          | &nbsp;- tutorials &amp; screencasts
+        li
+          a(href="/speaking/" rel="me" title="my conf talks") Speaking
+          | &nbsp;- my conf talks
+        li
+          a(href="http://marbles2.com" rel="me") Marbles#[sup 2]
+          | &nbsp;- my game
+      if site_version == "1"
+        div#currently
+            #currentlyReading
+              h3 Reading
+              .book
+                div.cover
+                  img(width="64" src=`${book.cover}`)
+                p
+                  span.title= book.title
+                  span.by By #{book.author}
 
-          #recentlyListening
-            script(src="/js/spin.mjs")
+            #recentlyListening
+              script(src="/js/spin.mjs")
 if site_version != "1"
   div#currently
     #currentlyReading
