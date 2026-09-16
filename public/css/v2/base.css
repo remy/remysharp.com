@@ -253,10 +253,11 @@ pre {
 
 blockquote {
   margin: 1rem 0;
-  max-width: 67ch; /* 🤷 */
   padding: 1rem;
   border-radius: 4px;
   border-left: 8px solid var(--c-alt);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
   font-style: italic;
   text-wrap: balance;
   color: var(--c-text-alt);
@@ -805,4 +806,25 @@ iframe {
   margin: 1rem 0;
   min-width: 60vw;
   aspect-ratio: auto;
+}
+
+#ethos-page {
+  /* max-width: 60ch; */
+  img {
+    max-width: 660px;
+  }
+}
+
+.video {
+  position: relative;
+  padding-top: 62%;
+  height: 0;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
 }

@@ -54,12 +54,9 @@ main.content {
     }
 
     @media (min-width: 768px) {
+      font-size-adjust: 0.6;
       p {
         line-height: 28px;
-      }
-      p,
-      li {
-        font-size-adjust: 0.6;
       }
     }
 
@@ -82,6 +79,7 @@ main.content {
     h4,
     h5,
     h6 {
+      font-size-adjust: unset;
       margin-top: 1.6rem;
       margin-bottom: 0;
       word-spacing: -0.3rem;

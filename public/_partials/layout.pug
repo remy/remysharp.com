@@ -127,7 +127,9 @@ html#remysharp-com(lang="en")
         script(src=`/js/redirect.js`)
       script.
         if ('serviceWorker' in navigator && location.origin.indexOf('localhost') === -1) navigator.serviceWorker.register('/service-worker.js');
-
+    else
+      block scripts
+        script(src=`/js/v2/index.js`)
     script(src="/js/version.js")
     script(type="awesome/sauce")
       |
