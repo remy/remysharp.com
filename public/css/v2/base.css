@@ -38,6 +38,26 @@
   box-sizing: border-box;
 }
 
+strike,
+del {
+  text-decoration-thickness: 3px;
+}
+
+strong {
+  font-weight: 700;
+  color: var(--c-text-heading);
+}
+
+blockquote strong {
+  color: inherit;
+}
+
+iframe {
+  margin: 1rem 0;
+  min-width: 60vw;
+  aspect-ratio: auto;
+}
+
 body {
   font: 100%/1.5 var(--f-text);
   font-weight: 400;
@@ -260,7 +280,7 @@ blockquote {
   border-bottom-left-radius: 0;
   font-style: italic;
   text-wrap: balance;
-  color: var(--c-text-alt);
+  /* color: var(--c-text-alt); */
   background: var(--c-blockquote-bg);
 
   :first-child {
@@ -301,7 +321,8 @@ body:not(#index-page) > footer {
 }
 
 body > footer {
-  margin-top: 2rem;
+  max-width: 1280px;
+  margin: 2rem auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   position: relative;
@@ -342,6 +363,8 @@ body > footer {
     width: 60px;
   }
 }
+
+/* individual page customisations */
 
 #search-results {
   padding-left: 0;
@@ -436,6 +459,7 @@ body > footer {
       border-box;
   animation: wire-spin 5s linear infinite;
 }
+
 .wire a {
   color: #22d3ee;
   font-weight: 700;
@@ -443,10 +467,12 @@ body > footer {
   border-bottom: 2px solid #ff2d95;
   padding-bottom: 1px;
 }
+
 .wire a:hover {
   color: #ff2d95;
   border-bottom-color: #22d3ee;
 }
+
 @keyframes wire-spin {
   to {
     --wire: 360deg;
@@ -559,133 +585,6 @@ footer .social {
   }
 }
 
-/* taken from social.less - I liked it as it was */
-footer .social-badge {
-  margin: 0;
-  padding: 0;
-  font:
-    normal normal normal 11px/18px 'Helvetica Neue',
-    Arial,
-    sans-serif;
-  color: #333;
-  white-space: nowrap;
-
-  a {
-    outline: 0;
-    text-decoration: none;
-    border-color: transparent;
-    border-bottom: 0;
-
-    &:hover {
-      background: none;
-    }
-  }
-
-  #count {
-    background: white;
-  }
-
-  #count,
-  .btn,
-  .btn .label,
-  .btn-o,
-  .count-o {
-    display: inline-block;
-    vertical-align: top;
-  }
-  .btn-o {
-    max-width: 100%;
-  }
-  a.btn {
-    position: relative;
-    height: 20px;
-    box-sizing: border-box;
-    padding: 1px 8px 1px 6px;
-    background-color: rgb(49, 117, 159);
-    color: #fff;
-    border-radius: 3px;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  a.btn:active,
-  a.btn:focus,
-  a.btn:hover {
-    background-color: #0c7abf;
-  }
-  a.btn:active {
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
-  }
-  a.btn i {
-    position: relative;
-    top: 3px;
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background: transparent 0 0 no-repeat;
-    background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20600%20530%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M135.72%2044.03C202.216%2093.951%20273.74%20195.17%20300%20249.49c26.262-54.316%2097.782-155.54%20164.28-205.46C512.26%208.009%20590-19.862%20590%2068.825c0%2017.712-10.155%20148.79-16.111%20170.07-20.703%2073.984-96.144%2092.854-163.25%2081.433%20117.3%2019.964%20147.14%2086.092%2082.697%20152.22-122.39%20125.59-175.91-31.511-189.63-71.766-2.514-7.38-3.69-10.832-3.708-7.896-.017-2.936-1.193.516-3.707%207.896-13.714%2040.255-67.233%20197.36-189.63%2071.766-64.444-66.128-34.605-132.26%2082.697-152.22-67.108%2011.421-142.55-7.45-163.25-81.433C20.15%20217.613%209.997%2086.535%209.997%2068.825c0-88.687%2077.742-60.816%20125.72-24.795z%22/%3E%3C/svg%3E');
-  }
-  a.btn .label {
-    margin-left: 3px;
-    white-space: nowrap;
-  }
-  a.btn .label b {
-    font-weight: 500;
-    white-space: nowrap;
-  }
-  .aria {
-    position: absolute;
-    left: -999em;
-  }
-  .count-o {
-    position: relative;
-    background: fff;
-    border: #8799a6 solid 1px;
-    border-radius: 3px;
-    visibility: hidden;
-    min-height: 18px;
-    min-width: 15px;
-    text-align: center;
-  }
-  #count {
-    white-space: nowrap;
-    color: #292f33;
-  }
-  #count:focus,
-  #count:hover {
-    color: #333;
-    text-decoration: underline;
-  }
-  .ncount .count-o {
-    display: none;
-  }
-  &.count-ready .count-o {
-    visibility: visible;
-  }
-  .count-o i,
-  .count-o u {
-    position: absolute;
-    line-height: 0;
-    width: 0;
-    height: 0;
-    left: 0;
-    top: 50%;
-    margin: -4px 0 0 -4px;
-    border: 4px transparent solid;
-    border-right-color: #66757f;
-    border-left: 0;
-  }
-  .count-o u {
-    margin-left: -3px;
-    border-right-color: #fff;
-  }
-  &.hcount .count-o {
-    margin: 0 0 0 5px;
-  }
-  &.hcount #count {
-    padding: 0 5px;
-  }
-}
-
 .h-entry h1.title:first-of-type,
 .post-header h2 {
   margin: 0;
@@ -708,15 +607,16 @@ footer .social-badge {
   align-items: center;
   gap: 20px;
   width: 100%;
-}
-.welcome img {
-  height: 100%;
-  width: auto;
-  border-radius: 4px;
-}
-.welcome h1 {
-  font-size: 70cqh; /* 25px */
-  margin: 0;
+
+  img {
+    height: 100%;
+    width: auto;
+    border-radius: 4px;
+  }
+  h1 {
+    font-size: 70cqh; /* 25px */
+    margin: 0;
+  }
 }
 
 video {
@@ -779,11 +679,6 @@ video {
   }
 }
 
-strike,
-del {
-  text-decoration-thickness: 3px;
-}
-
 .has-space {
   display: none;
   @media (min-width: 768px) {
@@ -791,21 +686,6 @@ del {
       display: revert;
     }
   }
-}
-
-strong {
-  font-weight: 700;
-  color: var(--c-text-heading);
-}
-
-blockquote strong {
-  color: inherit;
-}
-
-iframe {
-  margin: 1rem 0;
-  min-width: 60vw;
-  aspect-ratio: auto;
 }
 
 #ethos-page {
@@ -826,5 +706,38 @@ iframe {
     left: 0;
     height: 100%;
     width: 100%;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 150%;
+  }
+}
+
+@media (min-width: 2900px) {
+  html:after {
+    content: '';
+    background: transparent url(/images/why-so-wide.avif) no-repeat bottom right;
+    background-size: contain;
+    z-index: 10000;
+    width: 300px;
+    height: 300px;
+    display: block;
+    bottom: 0;
+    margin-top: -180px;
+    position: fixed;
+    left: clamp(2900px, 100vw, calc(100vw - 300px));
+    /* pointer-events: none; */
+  }
+
+  html:after:hover {
+    background-image: url(/images/why-so-wide-bubble.avif);
   }
 }

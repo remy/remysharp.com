@@ -48,12 +48,13 @@ main.content {
     color: var(--c-text-primary);
     font-family: var(--f-article);
     hyphens: auto;
+    max-width: 1280px;
 
     & > :first-child {
       color: #eee;
     }
 
-    @media (min-width: 768px) {
+    @media (768px <= width <= 1280px) {
       font-size-adjust: 0.6;
       p {
         line-height: 28px;
@@ -69,6 +70,7 @@ main.content {
     p,
     ul,
     ol,
+    blockquote,
     hr {
       max-width: 60ch;
     }
@@ -80,7 +82,7 @@ main.content {
     h5,
     h6 {
       font-size-adjust: unset;
-      margin-top: 1.6rem;
+      margin-top: 2rem;
       margin-bottom: 0;
       word-spacing: -0.3rem;
     }
@@ -102,6 +104,10 @@ main.content {
     &[src$='.png'] {
       border: 0;
     }
+  }
+
+  .pin {
+    max-width: 60ch;
   }
 
   p:has(> img + img) {
