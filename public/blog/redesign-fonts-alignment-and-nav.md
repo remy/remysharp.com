@@ -66,7 +66,7 @@ It was [Jake](https://jakearchibald.com/) taking a peek on the train that spotte
 
 I was using `p, li { font-size-adjust: 0.6; }` (I think I was adjusting the blog post text size to match the UI font) which caused the problem.
 
-When the `ul` or `blockquote` has a `max-width: 60ch` this is defined by the width of the characters. Let's say a single `ch` is `10px`. However
+When the `ul` or `blockquote` has a `max-width: 60ch` this is defined by the width of the characters. Let's say a single `ch` is `10px`. However, adding the `font-size-adjustment` was causing the width calculation to change, and thus confusing me with it's slightly more narrow element (whilst the font looked _nearly_ the same).
 
 ## Navigation
 
