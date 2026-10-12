@@ -66065,5 +66065,247 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "my-ai-policy.md": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:7qg6mz2xtzozxkgbcvf4pdnu/bafkreiav5vj6xi33c7pcr2wtl3bqxsynlgd7rwdpvetnik75nte4ms5xzy",
+        "url": "https://bsky.app/profile/vale.rocks"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mxo7wbnfhk2o#liked_by_did:plc:7qg6mz2xtzozxkgbcvf4pdnu",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T13:02:39Z",
+      "wm-id": 2039767,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mxo7wbnfhk2o/did%253Aplc%253A7qg6mz2xtzozxkgbcvf4pdnu",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "strongest",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xii4sqia2qghaapnhx55onlq/bafkreigpgieb5yz36k3z3ffijbr5vw3vruehtafhfhteev42uxjxjqabtu",
+        "url": "https://bsky.app/profile/strongest.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mxo7wbnfhk2o#liked_by_did:plc:xii4sqia2qghaapnhx55onlq",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T13:02:37Z",
+      "wm-id": 2039764,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mxo7wbnfhk2o/did%253Aplc%253Axii4sqia2qghaapnhx55onlq",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Markwell",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:drmapaqcbslzqxcw7dy74fbx/bafkreibptj64hih2br3wfzp4eq2jj65j2a5hukniiu2dcwue2nacnqaosa",
+        "url": "https://bsky.app/profile/jot.is"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mxo7wbnfhk2o#liked_by_did:plc:drmapaqcbslzqxcw7dy74fbx",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T13:02:37Z",
+      "wm-id": 2039765,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mxo7wbnfhk2o/did%253Aplc%253Adrmapaqcbslzqxcw7dy74fbx",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Florian Sanders",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:ws7c2rlu2xycv76nvfkv2n6l/bafkreiezoxywy6eyowmsupa3tiocspcctsytwlcry5ij4rohakqhm32cqa",
+        "url": "https://bsky.app/profile/florian-sanders.fr"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mxo7wbnfhk2o#liked_by_did:plc:ws7c2rlu2xycv76nvfkv2n6l",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T13:02:37Z",
+      "wm-id": 2039766,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mxo7wbnfhk2o/did%253Aplc%253Aws7c2rlu2xycv76nvfkv2n6l",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Smith",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/9496f856656c498d1a07f860358f76a1364a11edebd3805007ba97bacabe68cd.gif",
+        "url": "https://mastodon.social/@chris22smith"
+      },
+      "url": "https://front-end.social/@rem/117427270760690229#favorited-by-110492406615351281",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T12:47:41Z",
+      "wm-id": 2039759,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117427270760690229/110492406615351281",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Schofield",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8daee2e43ad5db5086664e27fc4d6189ae1546a92801fbd0ce6e3e5f384f3f58.jpg",
+        "url": "https://mastodon.social/@urlyman"
+      },
+      "url": "https://front-end.social/@rem/117427270760690229#favorited-by-109338564626822745",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T12:47:40Z",
+      "wm-id": 2039758,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117427270760690229/109338564626822745",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dennis Frank",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/9829abef91331a92cebd7a7497cfa0b2c26ed6928a7d163c5e148d9082d6fb17.jpg",
+        "url": "https://mastodon.social/@freshmango"
+      },
+      "url": "https://front-end.social/@rem/117427270760690229#favorited-by-109294613022126534",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T10:36:05Z",
+      "wm-id": 2039713,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117427270760690229/109294613022126534",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stuart Longland (VK4MSL)",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/b8342599699c234f44777656f683889aeb056edd0cae451d8f5cc66a608c328d.jpg",
+        "url": "https://mastodon.longlandclan.id.au/@stuartl"
+      },
+      "url": "https://front-end.social/@rem/117427270760690229#favorited-by-109574184078568058",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T10:36:04Z",
+      "wm-id": 2039712,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117427270760690229/109574184078568058",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chee Aun 🤔",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/fa755647a51dd7e0f1211bd4477da5f862459350b4f063ac31acec113fbb4b55.jpg",
+        "url": "https://mastodon.social/@cheeaun"
+      },
+      "url": "https://front-end.social/@rem/117427270760690229#favorited-by-109295222192024434",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T10:01:50Z",
+      "wm-id": 2039707,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117427270760690229/109295222192024434",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andrew",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/3305a66939aa97dd92952800cf54b76a4d491c896dd120174b58951f4c2ab1f0.jpg",
+        "url": "https://mathstodon.xyz/@andrewt"
+      },
+      "url": "https://front-end.social/@rem/117427270760690229#favorited-by-110329121013393570",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T10:01:41Z",
+      "wm-id": 2039705,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117427270760690229/110329121013393570",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bramus",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/ac3e7f6962763f9136ff9d9d753d229c6282e8767a71750415f40f078c914129.jpg",
+        "url": "https://front-end.social/@bramus"
+      },
+      "url": "https://front-end.social/@rem/117427270760690229#favorited-by-109330142125669429",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T10:01:41Z",
+      "wm-id": 2039706,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117427270760690229/109330142125669429",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/69e600ace15f7cb55f5c08c28dbff6eb6162fe63df619403440108c62d57010c.png",
+        "url": "https://fedi.vale.rocks/users/vale"
+      },
+      "url": "https://front-end.social/@rem/117427270760690229#favorited-by-111460277448308485",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T10:01:33Z",
+      "wm-id": 2039704,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117427270760690229/111460277448308485",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }
