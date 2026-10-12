@@ -40,7 +40,7 @@ That's to say, the actual implementation details don't concern me *too* much. In
 
 My point: it's not a hill I care to die on.
 
-On that note, I genuinely think we, the web community, need to back of shaming other developers for their choices. Regardless of whether it's using an LLM or using React, or Tailwind, or jQuery. It's an ugliness that doesn't sit well whilst trying to create an open and progressive community. I'm certainly guilty of this and I'm trying to get better.
+On that note, I genuinely think we, the web community, need to back off shaming other developers for their choices. Regardless of whether it's using an LLM or using React, or Tailwind, or jQuery. It's an ugliness that doesn't sit well whilst trying to create an open and progressive community. I'm certainly guilty of this and I'm trying to get better.
 
 There's so many people that aren't the hard core tech bros pushing an agenda, and whom just want to make things. I recently heard of a new developer who wanted to share their web site with their peers in a "show off your work" channel. The channel was intended to be supportive, but because they had used React and hosted on Vercel, they held it back for fear of shaming. They weren't there banging a drum about how others should use these options, but just that they were chuffed to have made a thing, and yet we'd made them feel that they couldn't.
 
