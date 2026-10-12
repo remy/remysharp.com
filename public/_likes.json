@@ -65960,5 +65960,110 @@
       "wm-property": "like-of",
       "wm-private": false
     }
+  ],
+  "redesign-fonts-alignment-and-nav": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Vale",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:7qg6mz2xtzozxkgbcvf4pdnu/bafkreiav5vj6xi33c7pcr2wtl3bqxsynlgd7rwdpvetnik75nte4ms5xzy",
+        "url": "https://bsky.app/profile/vale.rocks"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mwgqvor3c22n#liked_by_did:plc:7qg6mz2xtzozxkgbcvf4pdnu",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-27T01:41:26Z",
+      "wm-id": 2035956,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mwgqvor3c22n/did%253Aplc%253A7qg6mz2xtzozxkgbcvf4pdnu",
+      "wm-target": "https://remysharp.com/2026/09/26/redesign-fonts-alignment-and-nav",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/26/redesign-fonts-alignment-and-nav",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Affective Old Truant",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:xcrjvrubyf4c7cxemwekc752/bafkreieer5rgxek763xfs2l42gml5lkwpdhsvbarth7qwh2gn7bm3dgqni",
+        "url": "https://bsky.app/profile/effectivealtruist.bsky.social"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mwgqvor3c22n#liked_by_did:plc:xcrjvrubyf4c7cxemwekc752",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-26T22:11:12Z",
+      "wm-id": 2035944,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mwgqvor3c22n/did%253Aplc%253Axcrjvrubyf4c7cxemwekc752",
+      "wm-target": "https://remysharp.com/2026/09/26/redesign-fonts-alignment-and-nav",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/26/redesign-fonts-alignment-and-nav",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Luke Dorny",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/08a909d3c8331175e83bd7b19a223f925967e62c72fb1a4d730f6e81947384d6.gif",
+        "url": "https://typo.social/@Luke"
+      },
+      "url": "https://front-end.social/@rem/117338393657157014#favorited-by-109399449652135346",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-26T17:39:49Z",
+      "wm-id": 2035897,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117338393657157014/109399449652135346",
+      "wm-target": "https://remysharp.com/2026/09/26/redesign-fonts-alignment-and-nav",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/26/redesign-fonts-alignment-and-nav",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan Schofield",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/8daee2e43ad5db5086664e27fc4d6189ae1546a92801fbd0ce6e3e5f384f3f58.jpg",
+        "url": "https://mastodon.social/@urlyman"
+      },
+      "url": "https://front-end.social/@rem/117338393657157014#favorited-by-109338564626822745",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-09-26T17:07:06Z",
+      "wm-id": 2035889,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117338393657157014/109338564626822745",
+      "wm-target": "https://remysharp.com/2026/09/26/redesign-fonts-alignment-and-nav",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/09/26/redesign-fonts-alignment-and-nav",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "2026-09-28-ddc968f8": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "dan",
+        "photo": "https://avatars.webmention.io/danielpietzsch.com/0d424d0e6dafcbee01bd6fab659d270346609890eee0af4e7aee6a707488efdc.jpg",
+        "url": "https://feed.city/c/dan"
+      },
+      "url": "https://feed.city/c/dan/likes/feed_entries/1596571",
+      "published": "2026-09-28T20:15:47",
+      "published_ts": 1790626547,
+      "wm-received": "2026-09-28T20:15:49Z",
+      "wm-id": 2036440,
+      "wm-source": "https://feed.city/c/dan/likes/feed_entries/1596571",
+      "wm-target": "https://remysharp.com/links/2026-09-28-ddc968f8",
+      "wm-protocol": "webmention",
+      "name": "dan liked “There are no \"rogue\" AI agents [link]” by remy sharp's b:log (via FeedCity)",
+      "like-of": "https://remysharp.com/links/2026-09-28-ddc968f8",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
   ]
 }

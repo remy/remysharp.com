@@ -1,5 +1,41 @@
 [
   {
+    "id": "book-o-119",
+    "title": "Tell Me Everything (Amgash, #5)",
+    "author": "Elizabeth Strout",
+    "pages": 267,
+    "rating": 2,
+    "published": 2024,
+    "start": "2026-09-20T00:00:00.000Z",
+    "read": "2026-10-09T00:00:00.000Z",
+    "cover": "/images/books/book-o-119.avif",
+    "slug": "tell-me-everything-amgash-5",
+    "identifiers": {
+      "isbn": "9780593446096",
+      "asin": null,
+      "goodreads": "62292074",
+      "hardcover": "tell-me-everything-2024"
+    },
+    "clippings": [
+      {
+        "page": 291,
+        "text": "\"Okay, Helen is dying.",
+        "note": "I have no idea who Helen is..!",
+        "chapterIndex": 12
+      },
+      {
+        "page": 484,
+        "text": "I told him I knew just what he meant, that’s why I always preferred to sit on the aisle, in case I had to get up, but I told him it was no problem, I’d sit by the window. So I did.\"",
+        "note": "Hoping there is some big twist to mundane story. I’d hate to be a fly on that wall!",
+        "chapterIndex": 20
+      }
+    ],
+    "seriesEntry": "Tell Me Everything",
+    "seriesNumber": "5",
+    "series": "Amgash",
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2026/tell-me-everything-amgash-5.md"
+  },
+  {
     "id": "book-695",
     "title": "Dungeon Crawler Carl (Dungeon Crawler Carl, #1)",
     "author": "Matt Dinniman",
@@ -209,8 +245,8 @@
     "read": "2026-06-26T00:00:00.000Z",
     "start": "2026-05-15T00:00:00.000Z",
     "rating": 3,
-    "filename": "/Users/remy/dev/remysharp.com/public/books/2026/platform-decay.md",
-    "slug": "platform-decay"
+    "filename": "/Users/remy/dev/remysharp.com/public/books/2026/platform-decay-the-murderbot-diaries-8.md",
+    "slug": "platform-decay-the-murderbot-diaries-8"
   },
   {
     "title": "When the Cranes Fly South",

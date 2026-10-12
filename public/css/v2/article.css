@@ -1,4 +1,5 @@
-.h-entry {
+.h-entry,
+article.post:not(:has(.h-entry)) {
   display: grid;
 
   @media (min-width: 768px) {
@@ -72,7 +73,7 @@ main.content {
     ol,
     blockquote,
     hr {
-      max-width: 60ch;
+      max-width: var(--s-60ch);
     }
 
     h1,
@@ -107,7 +108,7 @@ main.content {
   }
 
   .pin {
-    max-width: 60ch;
+    max-width: var(--s-60ch);
   }
 
   p:has(> img + img) {

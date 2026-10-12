@@ -19,6 +19,8 @@
 
   --m-body: clamp(1rem, 4vw, 3rem);
 
+  --s-60ch: 37.5rem; /* Approx. 60 characters */
+
   --f-text:
     'LibreFranklin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen- Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
@@ -222,6 +224,14 @@ h6 {
   }
 }
 
+h1 a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 pre,
 code {
   font-family: var(--f-mono);
@@ -306,11 +316,16 @@ nav {
   ul {
     width: 100%;
     padding: 0;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: 1fr repeat(4, auto);
     margin: 0;
     list-style: none;
     gap: 8px;
+
+    li span {
+      min-width: 8ch;
+      display: inline-block;
+    }
   }
 }
 
@@ -322,6 +337,7 @@ body:not(#index-page) > footer {
 
 body > footer {
   max-width: 1280px;
+  max-width: var(--s-60ch);
   margin: 2rem auto;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -330,7 +346,7 @@ body > footer {
   .license {
     grid-column: 1 / span 2;
     * {
-      max-width: 60ch;
+      max-width: var(--s-60ch);
     }
   }
 
@@ -440,7 +456,7 @@ body > footer {
 }
 
 #notice {
-  max-width: 60ch;
+  max-width: var(--s-60ch);
   margin: 0 auto;
 }
 
@@ -583,6 +599,12 @@ footer .social {
   & > div {
     grid-area: stats;
   }
+
+  .social-badge {
+    font-size: 0.8rem;
+    display: flex;
+    gap: 8px;
+  }
 }
 
 .h-entry h1.title:first-of-type,
@@ -709,7 +731,7 @@ video {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1300px) {
   html {
     font-size: 125%;
   }
@@ -739,5 +761,16 @@ video {
 
   html:after:hover {
     background-image: url(/images/why-so-wide-bubble.avif);
+  }
+}
+
+nav.main-nav {
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) minmax(0, 3fr);
+  grid-template-areas: '. nav';
+  gap: clamp(1rem, 4vw, 2rem);
+
+  ul {
+    grid-area: nav;
   }
 }

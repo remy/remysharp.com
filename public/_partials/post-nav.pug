@@ -1,18 +1,31 @@
 if current.slug
   nav.main-nav.clearfix.subpanel
-    include search
     - const [prev, next] = collections.nextPrev(current.slug)
     //- The actual links
-    ul.post-nav
-      li.left.home: a(href="/") Home
-      //- li.left.donate
-      //-   a(href="https://www.paypal.me/rem" target="_blank" title="Show your thanks")
-      //-     span.liked
-      li.left.search: a#search(href="#search") Search
-      li.offline-indicator
-      if prev
-        li.prev: a(href=`${ prev.url }` title=`${ prev.data.title }`) Previous
-      if next
-        li.next: a(href=`${ next.url }` title=`${ next.data.title }`) Next
-      else
-        li Latest
+    if site_version == "1"
+      include search
+      ul.post-nav
+        li.left.home: a(href="/") Home
+        //- li.left.donate
+        //-   a(href="https://www.paypal.me/rem" target="_blank" title="Show your thanks")
+        //-     span.liked
+        li.left.search: a#search(href="#search") Search
+        li.offline-indicator
+        if prev
+          li.prev: a(href=`${ prev.url }` title=`${ prev.data.title }`) Previous
+        if next
+          li.next: a(href=`${ next.url }` title=`${ next.data.title }`) Next
+        else
+          li Latest
+    else
+      ul.post-nav
+        li: strong Read more
+        if prev
+          li.prev
+            span Previous:
+            a(href=`${ prev.url }` title=`${ prev.data.title }`) #{prev.data.title}
+        if next
+          li.next
+            span Next:
+            a(href=`${ next.url }` title=`${ next.data.title }`) #{next.data.title}
+      //- TODO 5 years ago, 10 years ago, 20 years ago

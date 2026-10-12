@@ -1,11 +1,13 @@
 [
   {
-    "id": "book-701",
-    "slug": "tell-me-everything",
-    "title": "Tell Me Everything",
-    "author": "Elizabeth Strout",
-    "cover": "/images/books/book-701.avif",
-    "started": null,
-    "published": 2024
+    "id": "book-o-408",
+    "slug": "the-correspondent",
+    "title": "The Correspondent",
+    "author": "Virginia Evans",
+    "cover": "/images/books/book-o-408.avif",
+    "pages": 285,
+    "started": "2026-10-09T00:00:00.000Z",
+    "published": 2025,
+    "progress": 27
   }
 ]

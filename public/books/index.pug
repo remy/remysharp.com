@@ -8,7 +8,7 @@ title: 'Books I Read 📖'
   h1.title Books
   div.post-content
     :markdown
-      These are the books I'm currently reading, and have read with my reviews on [Goodreads](https://www.goodreads.com/remysharp).
+      These are the books I'm currently reading, and have read with my reviews here, and syndicated to [RSS](/books.xml), [Storygraph](https://app.thestorygraph.com/profile/remysharp), [Hardcover](https://hardcover.app/@remysharp) and [Goodreads](https://www.goodreads.com/remysharp).
 
   if _currently.length
     .post-content.currently-reading
@@ -17,23 +17,23 @@ title: 'Books I Read 📖'
         div
           img(width="64" src=`${book.cover}`)
           div
-            p.title
-              strong= book.title
+            p.title: strong= book.title
             p.by By #{book.author}
             p
               small Published #{book.published}
+              br
+              small Progress #{book.progress}%
 
   .post-content
-    h2 Previously
-
-    p
-      em My rating system:
+    h2 My rating system
     ul.rating-system
       li ★☆☆☆☆ &nbsp; I want to have my time back
       li ★★☆☆☆ &nbsp; I was hoping for more, maybe skip the book
       li ★★★☆☆ &nbsp; It was good, or decent and worthwhile
       li ★★★★☆ &nbsp; Really enjoyed it, a strong recommendation
       li ★★★★★ &nbsp; I loved it - a must read, and it moved me in some way
+
+    h2 Previously
 
     .review-grid
       header
