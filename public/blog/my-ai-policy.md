@@ -14,6 +14,8 @@ That's been true for the last few years but as an senior (and old) developer I t
 
 Fair notice: this post will only briefly cover any policy I personally hold and quickly move into my opinions about LLMs and our community.
 
+<!-- more -->
+
 ## On this blog
 
 Yeah, no. My words are mine. They might be regurgitated in your LLM chat session, but every typo, grammar failure and angry word is mine here.
