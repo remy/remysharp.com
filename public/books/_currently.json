@@ -1,13 +1,13 @@
 [
   {
-    "id": "book-o-408",
-    "slug": "the-correspondent",
-    "title": "The Correspondent",
-    "author": "Virginia Evans",
-    "cover": "/images/books/book-o-408.avif",
-    "pages": 285,
-    "started": "2026-10-09T00:00:00.000Z",
-    "published": 2025,
-    "progress": 27
+    "id": "book-o-425",
+    "slug": "as-you-wake-break-the-shell",
+    "title": "As You Wake, Break the Shell",
+    "author": "Becky Chambers",
+    "cover": "/images/books/book-o-425.avif",
+    "pages": 480,
+    "started": "2026-10-15T00:00:00.000Z",
+    "published": 2026,
+    "progress": 2
   }
 ]
