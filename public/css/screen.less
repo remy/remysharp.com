@@ -540,14 +540,20 @@ form.search label {
     flex-wrap: wrap;
     margin-bottom: 0;
     padding-bottom: 10px !important;
+    gap: 4px;
+    top: -28px;
 
     span {
       display: block;
       width: 100%;
     }
 
+    .count {
+      display: none;
+    }
+
     div {
-      margin-right: 20px;
+      // margin-right: 20px;
     }
   }
 }
@@ -680,7 +686,11 @@ time {
 #elsewhere .post-content {
   overflow: hidden;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: 720px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
   gap: 20px;
 }
 
@@ -1836,6 +1846,11 @@ video {
 .webmentions {
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
+
+  @media (min-width: 720px) {
+    flex-direction: row;
+  }
 }
 
 .webmentions p {
@@ -1846,8 +1861,11 @@ video {
 
 .webmentions div {
   flex-grow: 1;
-  margin-left: 20px;
   line-height: 0;
+
+  @media (min-width: 720px) {
+    margin-left: 20px;
+  }
 }
 
 .webmentions .more-likes {
@@ -2347,6 +2365,7 @@ style.visible {
   }
 }
 
-.archive-links li span {
+.archive-links li span,
+.archive-links .count {
   display: none;
 }

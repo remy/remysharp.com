@@ -66306,6 +66306,149 @@
       "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
       "wm-property": "like-of",
       "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "dan",
+        "photo": "https://danielpietzsch.com/assets/images/avatar-2026.jpg",
+        "url": "https://feed.city/c/dan"
+      },
+      "url": "https://feed.city/c/dan/likes/feed_entries/1624125",
+      "published": "2026-10-13T04:23:43",
+      "published_ts": 1791865423,
+      "wm-received": "2026-10-13T04:23:45Z",
+      "wm-id": 2040067,
+      "wm-source": "https://feed.city/c/dan/likes/feed_entries/1624125",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-protocol": "webmention",
+      "name": "dan liked “My AI policy [blog]” by remy sharp's b:log (via FeedCity)",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy.md",
+      "wm-property": "like-of",
+      "wm-private": false
+    }
+  ],
+  "my-ai-policy": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "John Brooks",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/dfe29f2cd2d71c453f6a59fe0c2832fb01011b8c9a996f0f32dbf2c96f9d1c1f.jpg",
+        "url": "https://mastodon.social/@pupismyname"
+      },
+      "url": "https://front-end.social/@rem/117427270760690229#favorited-by-109288832816005366",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-14T13:49:20Z",
+      "wm-id": 2040561,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117427270760690229/109288832816005366",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "bigblind",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:a6f5g75twzn6uuh662mydrvl/bafkreih3lwjq63fojrkpnauuagddioevyahdaetxjiwmbhcj7buksjxl34",
+        "url": "https://bsky.app/profile/bigblind.me"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mxo7wbnfhk2o#liked_by_did:plc:a6f5g75twzn6uuh662mydrvl",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T12:02:50Z",
+      "wm-id": 2040145,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mxo7wbnfhk2o/did%253Aplc%253Aa6f5g75twzn6uuh662mydrvl",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hidde",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:o4xpdlp52ele5fps2dtldgoy/bafkreie4a3xsdnc3avxvrohwhlc7zju43vwanv66zgjjcxgsghbpzqkaia",
+        "url": "https://bsky.app/profile/hidde.blog"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mxo7wbnfhk2o#liked_by_did:plc:o4xpdlp52ele5fps2dtldgoy",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-13T08:44:35Z",
+      "wm-id": 2040127,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mxo7wbnfhk2o/did%253Aplc%253Ao4xpdlp52ele5fps2dtldgoy",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ant Stanley",
+        "photo": "https://cdn.bsky.app/img/avatar/plain/did:plc:dycs4ftbbdwaozxtvqi26sof/bafkreifzjsqsa3tesvau4sitdqvhcap3uspmjpmrlaascobsbpyqklawtq",
+        "url": "https://bsky.app/profile/iamstan.dev"
+      },
+      "url": "https://bsky.app/profile/remysharp.com/post/3mxo7wbnfhk2o#liked_by_did:plc:dycs4ftbbdwaozxtvqi26sof",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T17:56:51Z",
+      "wm-id": 2039864,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:bgiuklsedj6jytu5w5stv7cn/at%253A%252F%252Fdid%253Aplc%253Abgiuklsedj6jytu5w5stv7cn%252Fapp.bsky.feed.post%252F3mxo7wbnfhk2o/did%253Aplc%253Adycs4ftbbdwaozxtvqi26sof",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Erik Vorhes",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/2baa8ea4016e02bfb79039378ee82a9e7b8f3ce6d1002d42f77d3fe37e8c528d.jpg",
+        "url": "https://typo.social/@erikvorhes"
+      },
+      "url": "https://front-end.social/@rem/117427270760690229#favorited-by-109921457026539108",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T17:06:31Z",
+      "wm-id": 2039846,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117427270760690229/109921457026539108",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Šime Vidas",
+        "photo": "https://avatars.webmention.io/cdn.masto.host/4b680cc96b2d3c9597233800c6d56eb97b35f7a3cf6402b401a281d0cad2a9a0.jpg",
+        "url": "https://mastodon.social/@simevidas"
+      },
+      "url": "https://front-end.social/@rem/117427270760690229#favorited-by-109376842381535564",
+      "published": null,
+      "published_ts": null,
+      "wm-received": "2026-10-12T16:33:26Z",
+      "wm-id": 2039830,
+      "wm-source": "https://brid.gy/like/mastodon/@rem@front-end.social/117427270760690229/109376842381535564",
+      "wm-target": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-protocol": "webmention",
+      "like-of": "https://remysharp.com/2026/10/12/my-ai-policy",
+      "wm-property": "like-of",
+      "wm-private": false
     }
   ]
 }

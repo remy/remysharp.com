@@ -1648,7 +1648,10 @@
     "created": "2024-12-31T14:40:23.000Z",
     "modified": "2026-08-27T16:16:07.000Z"
   },
-  "public/blog/my-ai-policy.md": {},
+  "public/blog/my-ai-policy.md": {
+    "created": "2026-10-12T09:24:20.000Z",
+    "modified": "2026-10-14T19:05:03.000Z"
+  },
   "public/blog/my-big-workshop-tour.md": {
     "created": "2014-09-04T11:12:23.000Z",
     "modified": "2019-03-17T22:29:28.000Z"
@@ -4477,11 +4480,11 @@
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
   },
-  "public/attic/2014/info.md": {
+  "public/attic/2008/info.md": {
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
   },
-  "public/attic/2008/info.md": {
+  "public/attic/2014/info.md": {
     "created": "2016-08-08T13:39:21.000Z",
     "modified": "2016-08-08T13:39:21.000Z"
   },
@@ -4945,6 +4948,50 @@
     "created": "2020-08-05T18:46:45.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
+  "public/books/2023/a-man-called-ove.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2023/a-slow-fire-burning.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2023/murder-in-the-family.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2023/piranesi.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2023/shades-of-grey-shades-of-grey-1.md": {
+    "created": "2023-10-31T13:46:45.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2023/stone-blind.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2023/system-collapse-the-murderbot-diaries-7.md": {
+    "created": "2023-12-18T10:11:39.000Z",
+    "modified": "2023-12-18T10:11:39.000Z"
+  },
+  "public/books/2023/the-murder-of-roger-ackroyd-hercule-poirot-4.md": {
+    "created": "2023-11-20T21:39:42.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2023/the-shining-girls.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2023/the-thursday-murder-club-thursday-murder-club-1.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
+  "public/books/2023/virtual-light-bridge-trilogy-1.md": {
+    "created": "2023-10-06T09:06:47.000Z",
+    "modified": "2023-11-20T21:39:42.000Z"
+  },
   "public/books/2021/84k.md": {
     "created": "2021-06-14T16:27:31.000Z",
     "modified": "2021-06-14T16:27:31.000Z"
@@ -5029,38 +5076,6 @@
     "created": "2021-01-25T21:29:13.000Z",
     "modified": "2021-02-14T11:23:44.000Z"
   },
-  "public/books/2022/2001-a-space-odyssey-space-odyssey-1.md": {
-    "created": "2022-06-12T20:27:50.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2022/hope-to-die-di-adam-fawley-6.md": {
-    "created": "2022-08-31T11:54:32.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2022/klara-and-the-sun.md": {
-    "created": "2022-01-29T10:59:28.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2022/redwall.md": {
-    "created": "2022-08-31T11:54:32.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2022/seveneves.md": {
-    "created": "2023-03-12T23:35:58.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2022/the-audacity.md": {
-    "created": "2022-08-31T11:54:32.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2022/the-frangipani-tree-mystery-crown-colony-1.md": {
-    "created": "2022-08-31T11:54:32.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2022/the-wasp-factory.md": {
-    "created": "2022-06-12T20:27:50.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
   "public/books/2024/anxious-people.md": {
     "created": "2024-02-23T12:08:30.000Z",
     "modified": "2024-02-23T12:08:30.000Z"
@@ -5113,48 +5128,36 @@
     "created": "2024-02-23T12:08:30.000Z",
     "modified": "2024-02-23T12:08:30.000Z"
   },
-  "public/books/2023/a-man-called-ove.md": {
-    "created": "2023-10-06T09:06:47.000Z",
+  "public/books/2022/2001-a-space-odyssey-space-odyssey-1.md": {
+    "created": "2022-06-12T20:27:50.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
-  "public/books/2023/a-slow-fire-burning.md": {
-    "created": "2023-10-06T09:06:47.000Z",
+  "public/books/2022/hope-to-die-di-adam-fawley-6.md": {
+    "created": "2022-08-31T11:54:32.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
-  "public/books/2023/murder-in-the-family.md": {
-    "created": "2023-10-06T09:06:47.000Z",
+  "public/books/2022/klara-and-the-sun.md": {
+    "created": "2022-01-29T10:59:28.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
-  "public/books/2023/piranesi.md": {
-    "created": "2023-10-06T09:06:47.000Z",
+  "public/books/2022/redwall.md": {
+    "created": "2022-08-31T11:54:32.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
-  "public/books/2023/shades-of-grey-shades-of-grey-1.md": {
-    "created": "2023-10-31T13:46:45.000Z",
+  "public/books/2022/seveneves.md": {
+    "created": "2023-03-12T23:35:58.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
-  "public/books/2023/stone-blind.md": {
-    "created": "2023-10-06T09:06:47.000Z",
+  "public/books/2022/the-audacity.md": {
+    "created": "2022-08-31T11:54:32.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
-  "public/books/2023/system-collapse-the-murderbot-diaries-7.md": {
-    "created": "2023-12-18T10:11:39.000Z",
-    "modified": "2023-12-18T10:11:39.000Z"
-  },
-  "public/books/2023/the-murder-of-roger-ackroyd-hercule-poirot-4.md": {
-    "created": "2023-11-20T21:39:42.000Z",
+  "public/books/2022/the-frangipani-tree-mystery-crown-colony-1.md": {
+    "created": "2022-08-31T11:54:32.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
-  "public/books/2023/the-shining-girls.md": {
-    "created": "2023-10-06T09:06:47.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2023/the-thursday-murder-club-thursday-murder-club-1.md": {
-    "created": "2023-10-06T09:06:47.000Z",
-    "modified": "2023-11-20T21:39:42.000Z"
-  },
-  "public/books/2023/virtual-light-bridge-trilogy-1.md": {
-    "created": "2023-10-06T09:06:47.000Z",
+  "public/books/2022/the-wasp-factory.md": {
+    "created": "2022-06-12T20:27:50.000Z",
     "modified": "2023-11-20T21:39:42.000Z"
   },
   "public/books/2025/butter.md": {
@@ -5261,6 +5264,10 @@
     "created": "2026-07-30T17:29:14.000Z",
     "modified": "2026-07-30T17:29:14.000Z"
   },
+  "public/books/2026/the-correspondent.md": {
+    "created": "2026-10-16T20:57:38.000Z",
+    "modified": "2026-10-16T20:57:38.000Z"
+  },
   "public/books/2026/the-talented-mr-ripley-ripley-1.md": {
     "created": "2026-08-22T22:24:34.000Z",
     "modified": "2026-08-23T14:40:56.000Z"
@@ -5357,18 +5364,6 @@
     "created": "2021-07-16T19:49:47.000Z",
     "modified": "2021-07-16T19:49:47.000Z"
   },
-  "public/til/computing/all-the-things-you-didnt-ask-about-ps2-keyboards.md": {
-    "created": "2021-05-11T18:15:16.000Z",
-    "modified": "2021-09-02T20:01:36.000Z"
-  },
-  "public/til/computing/fast-mod.md": {
-    "created": "2020-09-10T09:50:29.000Z",
-    "modified": "2020-09-10T10:05:37.000Z"
-  },
-  "public/til/computing/index-bitmaps.md": {
-    "created": "2020-07-13T13:19:29.000Z",
-    "modified": "2020-07-13T13:19:29.000Z"
-  },
   "public/til/cli/debugging-shell-scripts.md": {
     "created": "2020-05-27T11:57:54.000Z",
     "modified": "2020-05-27T11:57:54.000Z"
@@ -5388,6 +5383,18 @@
   "public/til/cli/when-fd-shows-no-files.md": {
     "created": "2021-05-21T11:39:58.000Z",
     "modified": "2021-05-21T11:39:58.000Z"
+  },
+  "public/til/computing/all-the-things-you-didnt-ask-about-ps2-keyboards.md": {
+    "created": "2021-05-11T18:15:16.000Z",
+    "modified": "2021-09-02T20:01:36.000Z"
+  },
+  "public/til/computing/fast-mod.md": {
+    "created": "2020-09-10T09:50:29.000Z",
+    "modified": "2020-09-10T10:05:37.000Z"
+  },
+  "public/til/computing/index-bitmaps.md": {
+    "created": "2020-07-13T13:19:29.000Z",
+    "modified": "2020-07-13T13:19:29.000Z"
   },
   "public/til/css/css-calc-divide.md": {
     "created": "2020-05-15T16:27:03.000Z",
