@@ -13,7 +13,7 @@
     "dev": "npm run clean-sync-conflict; nodemon -w lib/ lib/dev.js",
     "find-conflicts": "find . -type f -name '*.sync-conflict*'",
     "clean-sync-conflict": "find . -type f -name '*.sync-conflict*' -delete",
-    "update": "node lib/currently-reading.js",
+    "update": "node lib/bookorbit.mjs",
     "links": "node lib/links.js",
     "version": "sh bin/hashit.sh",
     "build": "npm run version; npm run links; node lib/index.js",
