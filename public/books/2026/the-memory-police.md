@@ -53,8 +53,8 @@ I did find I was trying to make sense of it, wondering if the protagonist was st
 
 It’s a good story, and engagingly written, but hard to apply to the real world.
 
-Although the questions that are repeatedly raisdd about the idea of memory and how these have different meaning to different people was definitely food for thought.
+Although the questions that are repeatedly raised about the idea of memory and how these have different meaning to different people was definitely food for thought.
 
-Also worth adding, as surreal as it wss, it managed to be equally bleak!
+Also worth adding, as surreal as it was, it managed to be equally bleak!
 
 A good read, though not quite suited to the poolside holiday I read it from!
