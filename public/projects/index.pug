@@ -1,5 +1,10 @@
 - var order = [2, 1, 0];
-- var categories = ['Brings income', 'Free & popular', 'Internal'];
+- var categories = ['Brings income', 'Free', 'Internal'];
+
+- const dead = _data.filter(project => project.dead);
+- const active = _data.filter(project => !project.dead);
+
+pre= JSON.stringify(dead, null, 2)
 
 .post
   h1.title Projects
@@ -12,8 +17,15 @@
         .projects-group
           p
             strong= categories[i]
-          each project in _data.slice(0).sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
+          each project in active.slice(0).sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
             if project.category === index
+              p.project
+                img(width="16" height="16" src=`/images/favicons/${project.image}`)
+                a.name(href=project.url)= project.name
+      .project-group
+        p
+          strong Dead
+            each project in dead.slice(0).sort((a, b) => a.name.toLowerCase() < b.name.toLowerCase() ? -1 : 1)
               p.project
                 img(width="16" height="16" src=`/images/favicons/${project.image}`)
                 a.name(href=project.url)= project.name

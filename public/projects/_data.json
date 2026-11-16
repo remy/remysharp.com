@@ -3,11 +3,12 @@
     "name": "cron.jobs",
     "url": "https://cron.jobs",
     "image": "cronjobs.png",
-    "category": 0
+    "category": 0,
+    "dead": true
   },
   {
     "name": "forbind",
-    "url": "https://forbind.io",
+    "url": "https://forbind.app",
     "image": "forbind.png",
     "category": 0
   },
@@ -21,13 +22,15 @@
     "name": "VAT MOSS API",
     "url": "https://taxtools.io",
     "image": "taxtools.png",
-    "category": 0
+    "category": 0,
+    "dead": true
   },
   {
     "name": "TAXDO",
     "url": "https://taxdo.app",
     "image": "taxdo.png",
-    "category": 0
+    "category": 0,
+    "dead": true
   },
   {
     "name": "nodemon",
@@ -49,9 +52,10 @@
   },
   {
     "name": "jsonbin",
-    "url": "https://jsonbin.com",
+    "url": "https://jsonbin.org",
     "image": "jsonbin.png",
-    "category": 1
+    "category": 1,
+    "dead": true
   },
   {
     "name": "webmention.app",
@@ -78,15 +82,9 @@
     "category": 2
   },
   {
-    "name": "ffconf",
+    "name": "FFConf",
     "url": "https://ffconf.org",
     "image": "ffconf.png",
-    "category": 2
-  },
-  {
-    "name": "Next.js training",
-    "url": "https://next.training.leftlogic.com",
-    "image": "next-training.png",
     "category": 2
   },
   {
@@ -99,7 +97,8 @@
     "name": "Confwall",
     "url": "https://confwall.com",
     "image": "confwall.png",
-    "category": 2
+    "category": 2,
+    "dead": true
   },
   {
     "name": "remy sharp's b:log",
@@ -111,7 +110,8 @@
     "name": "Snap Bird",
     "url": "https://snapbird.org",
     "image": "snapbird.png",
-    "category": 2
+    "category": 2,
+    "dead": true
   },
   {
     "name": "JS Bin",

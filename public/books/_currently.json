@@ -1,13 +1,13 @@
 [
   {
-    "id": "book-o-430",
-    "slug": "yesteryear",
-    "title": "Yesteryear",
-    "author": "Caro Claire Burke",
-    "cover": "/images/books/book-o-430.avif",
-    "pages": 391,
-    "started": "2026-11-01T00:00:00.000Z",
-    "published": 2026,
-    "progress": 79
+    "id": "book-o-302",
+    "slug": "death-of-the-author",
+    "title": "Death of the Author",
+    "author": "Nnedi Okorafor",
+    "cover": "/images/books/book-o-302.avif",
+    "pages": 435,
+    "started": "2026-11-05T00:00:00.000Z",
+    "published": 2025,
+    "progress": 25
   }
 ]
